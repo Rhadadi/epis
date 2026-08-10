@@ -1869,11 +1869,9 @@ function crumbs(){
 
 function focus(id){
   if(!pos[id])return;
-  const p=px(id),v=viewportBox(),b=bounds();
-  if(b.w*sc>v.width||b.h*sc>v.height){
-    sc=Math.max(.12,Math.min(sc,v.width/Math.max(b.w,1),v.height/Math.max(b.h,1)));
-  }
-  tx=v.left+v.width/2-(p.x+NW/2)*sc;
+  const p=px(id),v=viewportBox();
+  const workingX=innerWidth<640?.32:.38;
+  tx=v.left+v.width*workingX-(p.x+NW/2)*sc;
   ty=v.top+v.height/2-(p.y+NH/2)*sc;
   constrainToViewport();
   apply(true);
