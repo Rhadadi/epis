@@ -11,6 +11,8 @@ This guide is written for someone who wants to **master** the subject, not just 
 
 It runs to about 130,000 words across sixteen chapters, a glossary, and a reading list. Every chapter is heavily cross-linked, so you can follow a concept wherever it leads.
 
+Every chapter is also available as narrated audio, about 14 hours in all. Use the **[audio player](audio/index.html)**, which has section markers and remembers your place, or see [the audio edition](audio/README.md) for the track list and for how the narration was made.
+
 ---
 
 ## Contents
@@ -117,6 +119,7 @@ You can read the guide from start to finish. If you have a particular goal, thes
 - **"Critical-thinking lesson"** boxes draw out the practical upshot of theoretical ideas.
 - **"Check your understanding"** questions end each chapter. Try to answer each one in writing before opening the answer, which is hidden in a collapsible section.
 - **Further reading** lists at the end of each chapter point to the best sources, from short introductions to classic papers.
+- **Audio** links at the top of each chapter lead to a narrated version. It is adapted for listening: citations and links are dropped, formulas and tables are put into words, and the review questions become a spoken quiz with time to think.
 
 ---
 

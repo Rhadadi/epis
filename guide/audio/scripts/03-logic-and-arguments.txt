@@ -167,9 +167,9 @@ The same conditional expresses both. In "If it is a square, it is a rectangle": 
 @item Buying a lottery ticket, for winning the lottery. Necessary? Yes. Sufficient? No.
 @item Decapitation, for death. Necessary? No. Sufficient? Yes.
 Confusing necessary and sufficient conditions produces many bad arguments.
-@item "Hard work is necessary for success, so if I work hard I'll succeed." — Treating necessary as sufficient.
-@item "Smoking is sufficient to raise cancer risk, so if I don't smoke, my risk won't rise." — Treating sufficient as necessary.
-@item "Money doesn't guarantee happiness, so it doesn't matter for happiness." — Denying sufficiency, then wrongly concluding it is not a contributing factor.
+@item "Hard work is necessary for success, so if I work hard I'll succeed." Treating necessary as sufficient.
+@item "Smoking is sufficient to raise cancer risk, so if I don't smoke, my risk won't rise." Treating sufficient as necessary.
+@item "Money doesn't guarantee happiness, so it doesn't matter for happiness." Denying sufficiency, then wrongly concluding it is not a contributing factor.
 Many real causes are neither necessary nor sufficient but are INUS conditions: an Insufficient but Non-redundant part of a condition that is itself Unnecessary but Sufficient. A short circuit is an INUS condition of a house fire: it is not sufficient alone, you need flammable material and oxygen, not necessary, fires have other causes, but it is a non-redundant part of one sufficient set of conditions.
 @section Valid argument forms
 These patterns are valid. Learn to recognize them in ordinary language.
@@ -327,7 +327,7 @@ Example.
 @pause 0.3
 @quote "Abortion should be illegal because it is the killing of a human being."
 @pause 0.3
-The unstated premise is roughly "Killing a human being should be illegal." But this is not quite right either: killing in self-defense is legal. So the premise must be something like "Intentionally killing an innocent human being should be illegal." Now the argument is clearer, and so are the points of dispute: is a fetus a "human being" in the morally relevant sense — a question about the concept of person, see Chapter four — and are there exceptions? Whatever your view, the reconstruction reveals the real structure of the debate.
+The unstated premise is roughly "Killing a human being should be illegal." But this is not quite right either: killing in self-defense is legal. So the premise must be something like "Intentionally killing an innocent human being should be illegal." Now the argument is clearer, and so are the points of dispute: is a fetus a "human being" in the morally relevant sense, a question about the concept of person, and are there exceptions? Whatever your view, the reconstruction reveals the real structure of the debate.
 @subsection The principle of charity
 The principle of charity says: interpret others' statements in the most reasonable way available, attributing true beliefs and valid reasoning to them where you can. The term was introduced by Neil L. Wilson and developed by Donald Davidson and W V O Quine as a principle of interpretation: to understand what someone means at all, you must assume that most of their beliefs are true and reasonable.
 Charity is not just politeness. There are three good reasons for it.
@@ -343,7 +343,7 @@ Two structural distinctions are key.
 @item Convergent premises each independently support the conclusion. "The restaurant has great reviews" and "My friend loved it" are separate reasons to try it.
 Linked premises are attacked by knocking out any one of them. Convergent reasons must each be answered.
 A simple map, using the motorway example.
-When you map an argument, you usually discover that A the argument has more hidden premises than you thought, B many of the words are rhetoric that supports nothing, and C the disagreement concentrates on one or two premises. That discovery is the goal.
+When you map an argument, you usually discover that first, the argument has more hidden premises than you thought, second, many of the words are rhetoric that supports nothing, and third, the disagreement concentrates on one or two premises. That discovery is the goal.
 @section The Toulmin model
 The philosopher Stephen Toulmin, in The Uses of Argument, argued that formal logic was a poor model of how arguments work in law, science, and everyday life. He proposed a model with six parts.
 @item One. Claim: the conclusion being argued for.
@@ -369,9 +369,9 @@ When you encounter an argument, ask the Toulmin questions: What is the claim? Wh
 @section Dialectical moves
 Arguments occur in dialogue. Beyond checking validity, skilled reasoners use a set of standard moves.
 Counterexample. To refute a universal claim, "All X are Y", produce an X that is not Y. To refute a definition, "X is Y", produce a case of X that is not Y, the definition is too narrow, or a case of Y that is not X — too broad. This is the Socratic method.
-Reductio. Show that a claim leads to an absurd or unacceptable consequence. "If lying is always wrong, then you must tell the murderer at the door where your friend is hiding." — The case comes from Benjamin Constant's objection to Kant, which Kant answered in "On a Supposed Right to Lie from Philanthropy," seventeen ninety-seven
+Reductio. Show that a claim leads to an absurd or unacceptable consequence. "If lying is always wrong, then you must tell the murderer at the door where your friend is hiding." The case comes from Benjamin Constant's objection to Kant, which Kant answered in "On a Supposed Right to Lie from Philanthropy," seventeen ninety-seven.
 Parity of reasoning. Show that the same form of reasoning would support an absurd conclusion. Gaunilo of Marmoutiers used this against Anselm's ontological argument for God: if Anselm's reasoning works, it would also prove the existence of a perfect island.
-Distinction. Show that an argument depends on running together two things that should be kept apart. "You say 'people have a right to their opinion,' but that is ambiguous between A a legal right to express an opinion and B a claim that all opinions are equally reasonable. A is true; B is false." Drawing distinctions is often the most constructive move in a dispute.
+Distinction. Show that an argument depends on running together two things that should be kept apart. "You say 'people have a right to their opinion,' but that is ambiguous between first, a legal right to express an opinion and second, a claim that all opinions are equally reasonable. A is true; B is false." Drawing distinctions is often the most constructive move in a dispute.
 Burden shifting and burden identification. Ask who needs to prove what.
 Conceding and qualifying. Grant the part of the opposing view that is right. It is honest, it shows you understand the view, and it isolates the real disagreement.
 Turning the tables — the tu quoque in its legitimate form. If an opponent's argument relies on a principle that also undermines their own position, pointing this out is a legitimate test of consistency. It becomes a fallacy only when used to dismiss a claim rather than to test the principle.

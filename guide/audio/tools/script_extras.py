@@ -197,7 +197,14 @@ TABLES = {
         "Explanation": "{0}: {2}",
     },
     "14": {
-        "System 1 (Type 1)": "{0} versus {1:l}.",
+        "System 1 (Type 1)": [
+            "System one is fast. System two is slow.",
+            "System one is automatic and effortless. System two is deliberate and effortful.",
+            "System one is intuitive and associative. System two is rule-based and reflective.",
+            "System one operates in parallel. System two operates serially.",
+            "System one does not require working memory. System two does.",
+            "System one generates impressions and feelings. System two can endorse or override those impressions.",
+        ],
         "Bias": "{0}. {1} For example: {2}",
     },
     "15": {
@@ -218,6 +225,8 @@ REPLACE = {
     ],
     "09": [
         ("0.9¹⁰ ≈ 0.35", "0.9 to the power of 10, which is about 0.35"),
+        ("1. About 1455. 2. About 6,650 km (estimates vary). 3. 8,849 m (2020 survey). 4. 206. 5. About 384,400 km. 6. 1739. 7. About 343 m/s. 8. 1724. 9. 193. 10. About 980 CE.",
+         "1. About 1455.\n2. About 6,650 km (estimates vary).\n3. 8,849 m.\n4. 206.\n5. About 384,400 km.\n6. 1739.\n7. About 343 m/s.\n8. 1724.\n9. 193.\n10. About 980 CE."),
         ("(low P(E | not-H))", "(that is, if P(E | not-H) is low)"),
     ],
     "03": [

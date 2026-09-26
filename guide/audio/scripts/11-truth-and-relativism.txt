@@ -130,11 +130,11 @@ Relativism is usually wrong as a general theory of truth, but it is motivated by
 @item Four. Power shapes what is accepted as knowledge. Who gets believed, whose testimony is taken seriously, and which questions get investigated are affected by social power. Again, this is a fact about the social production and recognition of knowledge, not a proof that truth is relative.
 @pause 0.3
 @cue Diagnosing "That's true for you." When someone says this, ask which of the following they mean.
-@item "That's your opinion, and you're entitled to it." — A claim about rights of expression, not about truth.
-@item "You have your reasons, and I have mine." — A claim about justification. Both of you might be justified by your own evidence; at most one of you is right.
-@item "This is a matter of taste or perspective." — Possibly correct, for questions of taste.
-@item "There is no fact of the matter." — A strong claim that needs argument, and it is implausible for factual questions such as "Did the vaccine trial show a reduction in hospitalizations?"
-@item "I don't want to argue about it." — Often the real meaning, and a reasonable one sometimes. But say so directly.
+@item "That's your opinion, and you're entitled to it." A claim about rights of expression, not about truth.
+@item "You have your reasons, and I have mine." A claim about justification. Both of you might be justified by your own evidence; at most one of you is right.
+@item "This is a matter of taste or perspective." Possibly correct, for questions of taste.
+@item "There is no fact of the matter." A strong claim that needs argument, and it is implausible for factual questions such as "Did the vaccine trial show a reduction in hospitalizations?"
+@item "I don't want to argue about it." Often the real meaning, and a reasonable one sometimes. But say so directly.
 @pause 0.3
 @section Social constructionism
 Social constructionism holds that some things we take to be natural or inevitable are in fact products of human social practices, and could have been otherwise.

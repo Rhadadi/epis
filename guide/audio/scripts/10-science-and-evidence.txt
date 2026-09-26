@@ -64,8 +64,8 @@ Neither "stick with the theory" nor "abandon it" is automatically rational when 
 @section Ad hoc hypotheses
 An ad hoc hypothesis is one introduced solely to save a theory from refutation, with no independent evidence or testable consequences of its own.
 Compare two responses to a failed prediction.
-@item Legitimate: "There must be an unseen planet at this position, with this mass." — Testable: look there.
-@item Ad hoc: "The prediction failed because the skeptics' negative energy disrupted the psychic's powers." — Untestable: no independent way to detect negative energy.
+@item Legitimate: "There must be an unseen planet at this position, with this mass." Testable: look there.
+@item Ad hoc: "The prediction failed because the skeptics' negative energy disrupted the psychic's powers." Untestable: no independent way to detect negative energy.
 More examples of ad hoc rescues.
 @item An astrologer whose prediction fails says the client's birth time must have been recorded incorrectly.
 @item A doomsday prophet whose predicted date passes announces that the faithful's prayers postponed the end. Leon Festinger, Henry Riecken, and Stanley Schachter studied a group that did this in When Prophecy Fails, nineteen fifty-six. After the predicted flood did not come, many members became more committed and began seeking converts.

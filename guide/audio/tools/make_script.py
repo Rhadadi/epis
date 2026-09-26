@@ -92,7 +92,8 @@ def money(amount, unit, cents_word):
     return out + (f" and {words(cents)} {cents_word}" if cents else "")
 
 UNITS = {"kg": "kilograms", "km": "kilometers", "cm": "centimeters", "mm": "millimeters",
-         "mph": "miles per hour", "ms": "milliseconds", "°C": "degrees Celsius",
+         "mph": "miles per hour", "ms": "milliseconds", "m/s": "meters per second", "m": "meters",
+         "°C": "degrees Celsius",
          "°F": "degrees Fahrenheit"}
 
 
@@ -113,7 +114,7 @@ def say_numbers(t):
                lambda m: (f"{cardinal(m.group(1))} divided by {cardinal(m.group(2))}"
                           if "." in m.group(1) + m.group(2) else m.group(0)), t)
     t = re.sub(NUM + r"\s?%", lambda m: cardinal(m.group(1)) + " percent", t)
-    t = re.sub(r"(\d+(?:\.\d+)?)\s?(°C|°F|kg|km|cm|mm|mph|ms)\b",
+    t = re.sub(NUM + r"\s?(°C|°F|kg|km|cm|mm|mph|ms|m/s|m)(?![\w/])",
                lambda m: cardinal(m.group(1)) + " " + UNITS[m.group(2)], t)
     t = re.sub(r"(\d+)\s?°", lambda m: cardinal(m.group(1)) + " degrees", t)
     t = re.sub(r"(?<=\bat )(\d{1,2}):(\d{2})\b",
@@ -302,6 +303,7 @@ def parenthetical(inner, chapter):
     core = re.sub(r"\*[^*]*\*|\"[^\"]*\"|“[^”]*”", " ", c)
     ordinary = [w for w in re.findall(r"\b[a-z][a-z'-]+\b", core) if w not in CITATION_WORDS]
     sentence = re.search(r"[.!?][\"']?$", plain) and len(plain.split()) >= 6
+    plain = re.sub(r"[,;]\s*see( also)?\s[^,;]*$", "", plain).strip()
     if sentence or len(ordinary) >= 5:
         return re.sub(r",?\s*(§+\s?[\d–-]+|ch\.\s?\d+|p\.\s?\d+)\s*(?=[.]?$)", "", plain)
     if re.match(r"(?i)(see|compare|cf\.)\s", plain) or re.search(r"\bch\.|§|\bpp?\.\s?\d", plain):
@@ -323,8 +325,34 @@ def parenthetical(inner, chapter):
     return plain
 
 
+ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"]
+
+
+def ordinal_lists(t):
+    """(a) ... (b) ... (c) inside one sentence become first, second, third.
+
+    A mark that opens an item ("(a) it tests") becomes "first,"; a mark that
+    only refers back ("among (a), (b), and (c)") becomes "the first".
+    """
+    def spoken(sentence):
+        def one(m):
+            word = ORDINALS[ord(m.group(1)) - 97]
+            opens_item = re.match(r"\s+(?!(?:or|and)\b)\w", sentence[m.end():])
+            return word + ", " if opens_item else "the " + word
+        return re.sub(r"\(([a-h])\)", one, sentence).replace(",  ", ", ")
+
+    out = []
+    for sentence in re.split(r"(?<=[.!?])\s+", t):
+        marks = re.findall(r"\(([a-h])\)", sentence)
+        if len(marks) >= 2 and marks[:2] == ["a", "b"] and not sentence.startswith("(a)"):
+            sentence = spoken(sentence)
+        out.append(sentence)
+    return " ".join(out)
+
+
 def flatten_parens(t, chapter):
     """Replace (...) groups, innermost first, following `parenthetical`."""
+    t = ordinal_lists(t)
     verbs = r"(?:is|are|was|were|has|have|had|can|could|might|may|must|would|should|will|does|do|did|involves|seems|fails|holds)\b"
     t = re.sub(r"(^|[.!?:;]\s+|[“\"])\(([a-hA-H])\)\s(?=" + verbs + ")", lambda m: f"{m.group(1)}{m.group(2).upper()} ", t)
     t = re.sub(r"(^|[.!?:;]\s+|[“\"])\(([a-hA-H])\)\s", lambda m: f"{m.group(1)}{m.group(2).upper()}: ", t)
@@ -341,7 +369,7 @@ def flatten_parens(t, chapter):
         if inner is None or inner == "":
             t = before.rstrip() + after
             continue
-        if re.search(r"[.!?][\"']?$", inner) and (before.rstrip().endswith((".", "!", "?", ":")) or not before.strip()):
+        if re.search(r"[.!?][\"']?$", inner) and (re.search(r"[.!?:][\"']?$", before.rstrip()) or not before.strip()):
             t = before.rstrip() + " " + inner + " " + after.lstrip()  # a sentence on its own
         elif re.search(r"[.!?]$", inner):
             t = before.rstrip() + " — " + inner.rstrip(".") + " — " + after.lstrip()
@@ -725,6 +753,20 @@ def chapter_script(path):
                     first = False
                 i = j + 1
                 continue
+        if not in_review and (s.startswith("<details>") or s.startswith("</details>")):
+            flush()  # a hidden answer in the text: give the listener time first
+            m = re.search(r"<summary>(.*?)</summary>", s)
+            if s.startswith("<details>"):
+                out.append("@think 5")
+            if m:
+                out.append(f"@label {end(speak(m.group(1), chapter))}")
+            i += 1
+            continue
+        if not in_review and re.fullmatch(r"<summary>(.*?)</summary>", s):
+            flush()
+            out.append(f"@label {end(speak(re.sub(r'</?summary>', '', s), chapter))}")
+            i += 1
+            continue
         if s.startswith("|"):
             flush()
             j = i

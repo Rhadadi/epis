@@ -43,7 +43,7 @@ Pattern: Deflect criticism by pointing out that the critic, or someone else, doe
 @item Tu quoque — "you too": "You tell me to quit smoking, but you smoked for twenty years."
 @item Whataboutism: responding to criticism with "What about…?" "You're criticizing our country's human rights record? What about yours?" The term is associated with Cold War exchanges in which criticism of Soviet abuses was answered by pointing to racial injustice in the United States.
 What goes wrong: the critic's hypocrisy doesn't make the criticism false. Both parties may be doing something wrong.
-Legitimate cousin: pointing out inconsistency is legitimate when A it tests whether the critic sincerely holds the principle they invoke, B it tests whether the principle is being applied consistently, a form of parity of reasoning, or C the question is precisely whether a standard is being applied fairly.
+Legitimate cousin: pointing out inconsistency is legitimate when first, it tests whether the critic sincerely holds the principle they invoke, second, it tests whether the principle is being applied consistently, a form of parity of reasoning, or third, the question is precisely whether a standard is being applied fairly.
 Response: "Maybe we're both wrong about that. But let's deal with this issue first, and then we can discuss the other one."
 @subsection Genetic fallacy
 Pattern: Judge a claim by its origin rather than its merits. P originated in, or is held because of, source S; S is bad — or good; therefore P is false — or true.
@@ -52,14 +52,14 @@ Examples.
 @item "That holiday has pagan roots, so it's wrong to celebrate it."
 @item "The idea of human rights was invented by Europeans, so it doesn't apply elsewhere."
 What goes wrong: the process by which an idea was discovered is different from the process by which it is justified. The philosopher Hans Reichenbach distinguished the context of discovery from the context of justification. Kekulé's theory was accepted because of chemical evidence, not because of his dream.
-Legitimate cousin: the origin of a belief can be relevant to whether we should trust it, when the belief is held only because of that origin and the origin is unreliable. If the only reason you believe something is a rumor, then learning that the rumor was invented undermines your belief. Debunking arguments — for example, evolutionary debunking arguments about moral beliefs, see Moral knowledge — argue that a belief was produced by a process unconnected to its truth. These are legitimate forms of argument, but they undercut justification; they don't show the belief is false.
+Legitimate cousin: the origin of a belief can be relevant to whether we should trust it, when the belief is held only because of that origin and the origin is unreliable. If the only reason you believe something is a rumor, then learning that the rumor was invented undermines your belief. Debunking arguments — for example, evolutionary debunking arguments about moral beliefs — argue that a belief was produced by a process unconnected to its truth. These are legitimate forms of argument, but they undercut justification; they don't show the belief is false.
 Response: "That's interesting history, but what's the evidence for or against it now?"
 @subsection Appeal to authority
 Pattern — fallacious form: Authority A says P; therefore P, where A's authority is irrelevant, disputed, or used to end inquiry. John Locke called this argumentum ad verecundiam, "argument from respect" — Essay.
 Examples.
 @item "A famous actor says this diet cures cancer."
-@item "A Nobel Prize-winning physicist says this nutritional supplement works." — Outside their field: see Expertise and its limits.
-@item "Experts say…" — Which experts? Where?
+@item "A Nobel Prize-winning physicist says this nutritional supplement works." Outside their field: see Expertise and its limits.
+@item "Experts say…" Which experts? Where?
 @item "Scientist X disagrees with the consensus, so the question is open."
 What goes wrong: authority is a source of evidence only when the authority really has expertise on this question, is trustworthy, and represents the state of expert opinion.
 Legitimate cousin: appeal to genuine expert consensus is not a fallacy. It is how rational people learn most of what they know. Walton's critical questions for appeals to expert opinion.
@@ -74,10 +74,10 @@ Response: "Is that person an expert in this specific field? What do most experts
 Pattern: Many, or most, people believe P; therefore P. Also called argumentum ad populum or the bandwagon fallacy.
 Examples: "Millions of people use homeopathy; it must work." "Everyone knows that…" "Most people in this town think the new factory will be a disaster."
 What goes wrong: popularity is not truth. Majorities have believed many false things. And popularity is especially weak evidence when beliefs are not independent.
-Legitimate cousin: popularity can be evidence: A: when many people have independently examined the question with relevant competence — the wisdom of crowds; B: when the question is about popularity or social convention — which side of the road to drive on, what a word means; C: as weak evidence of quality when you have nothing else — a busy restaurant.
+Legitimate cousin: popularity can be evidence: first, when many people have independently examined the question with relevant competence — the wisdom of crowds; second, when the question is about popularity or social convention — which side of the road to drive on, what a word means; third, as weak evidence of quality when you have nothing else — a busy restaurant.
 Response: "Why do they believe it? Have they looked at the evidence independently, or are they following each other?"
 @subsection Appeal to tradition and appeal to novelty
-Appeal to tradition — argumentum ad antiquitatem: P has long been believed or done; therefore P is true or good. "We've always done it this way." "This remedy has been used for thousands of years, so it must work." — Bloodletting was used for over two thousand years
+Appeal to tradition — argumentum ad antiquitatem: P has long been believed or done; therefore P is true or good. "We've always done it this way." "This remedy has been used for thousands of years, so it must work." Bloodletting was used for over two thousand years.
 Appeal to novelty — argumentum ad novitatem: P is new; therefore P is better. "It's the latest approach, so it must be an improvement."
 Legitimate cousins: long-standing practices may encode accumulated wisdom that no one can fully articulate. Chesterton's fence — G K Chesterton, The Thing, nineteen twenty-nine: if you come across a fence in the middle of a road and can't see why it's there, don't remove it until you find out why it was put up. Conservatives in the tradition of Edmund Burke and economists such as Friedrich Hayek have made related arguments about social institutions. And newer scientific results often are better, when they build on and correct older ones. The fallacy lies in treating age or novelty as sufficient by themselves.
 Response: "What's the reason for the tradition — or the new approach? Does it still apply?"
@@ -143,7 +143,7 @@ Legitimate cousin: some circularity may be unavoidable at the foundations of kno
 Response: "Would someone who doubts your conclusion accept your premise? Why?"
 @subsection Loaded question
 Pattern: A question that presupposes something unproven, so that any direct answer concedes it. Also called the complex question.
-Examples: "Have you stopped cheating on your exams?" — Yes or no, you admit you cheated — "Why is the government covering up the truth about this?" "How much did the new policy damage the economy?"
+Examples: "Have you stopped cheating on your exams?" Yes or no, you admit you cheated. "Why is the government covering up the truth about this?" "How much did the new policy damage the economy?"
 Response: reject the presupposition. "I don't accept that I ever cheated." "What's the evidence that there is a cover-up?"
 @subsection False dilemma
 Pattern: Either A or B; not A; therefore B, when A and B are not the only options. Also called a false dichotomy or black-and-white thinking.
@@ -168,7 +168,7 @@ Legitimate cousin: slippery slope arguments are not always fallacious. Legal pre
 Response: "What's the mechanism that gets us from A to B? How likely is each step? Could we stop at A?"
 @subsection Hasty generalization
 Pattern: Draw a general conclusion from a sample that is too small or unrepresentative.
-Examples: "My grandfather smoked all his life and lived to ninety-five, so smoking can't be that bad." — Also a case of survivorship bias — "I met two rude people from that city; everyone there is rude." "The first three reviews are negative, so the book must be bad."
+Examples: "My grandfather smoked all his life and lived to ninety-five, so smoking can't be that bad." Also a case of survivorship bias. "I met two rude people from that city; everyone there is rude." "The first three reviews are negative, so the book must be bad."
 What goes wrong: see Strength and cogency and The law of small numbers.
 Related: the anecdotal fallacy: using a vivid personal experience or story in place of systematic evidence.
 Response: "How many cases is that based on? Were they representative? What does the larger data show?"
@@ -192,20 +192,20 @@ Response: "Was this pattern predicted before you looked, or found afterwards? Ho
 Pattern: Apply a rule or standard to others while exempting yourself or a favored case, without justifying the exception.
 Examples.
 @item "Conflict-of-interest rules are important, but my situation is different."
-@item "Psychic abilities can't be demonstrated in controlled tests, because the skeptical atmosphere interferes with them." — Also an ad hoc hypothesis.
+@item "Psychic abilities can't be demonstrated in controlled tests, because the skeptical atmosphere interferes with them." Also an ad hoc hypothesis.
 @item "All the other studies on this treatment are flawed, but the one that supports it is sound."
 Legitimate cousin: exceptions are legitimate when they are justified by a relevant difference. The fallacy is exempting something without explaining what makes it different.
 Response: "What's the relevant difference that justifies treating this case differently?"
 @subsection No true Scotsman
 Pattern: When confronted with a counterexample to a generalization about a group, redefine the group to exclude it.
 Antony Flew gave the example. Hamish McDonald, a Scotsman, reads a newspaper story about a sex criminal in Brighton and declares, "No Scotsman would do such a thing." The next day he reads about a man from Aberdeen who has done something even worse. Instead of revising his view, he says, "No true Scotsman would do such a thing."
-Other examples: "No real scientist doubts X." — Defining "real scientist" as someone who accepts X — "Real democracy has never been tried."
+Other examples: "No real scientist doubts X." Defining "real scientist" as someone who accepts X. "Real democracy has never been tried."
 What goes wrong: the generalization becomes true by definition and empty of content.
 Legitimate cousin: some categories do have genuine defining criteria. "No true vegetarian eats beef" is not a fallacy, because not eating meat is what "vegetarian" means. The question is whether the criterion was part of the concept before the counterexample appeared, or was invented to exclude it.
 Response: "Was that part of the definition before, or are you adding it now to exclude this case?"
 @subsection Moving the goalposts
 Pattern: After evidence meeting a stated standard is provided, raise the standard.
-Example: "Show me a transitional fossil between fish and land animals." — Tiktaalik is shown — "Well, now show me the transitional fossils between Tiktaalik and its ancestors." — An old joke among paleontologists: every time you find a transitional fossil, you create two new gaps
+Example: "Show me a transitional fossil between fish and land animals." Tiktaalik is shown. "Well, now show me the transitional fossils between Tiktaalik and its ancestors." An old joke among paleontologists: every time you find a transitional fossil, you create two new gaps.
 Response: "Before I show you, tell me what evidence would change your mind." Agreeing on the evidentiary standard in advance is the best defense.
 @subsection Argument from ignorance
 Pattern: P has not been proven false; therefore P is true. Or: P has not been proven true; therefore P is false. Also called argumentum ad ignorantiam.
@@ -213,7 +213,7 @@ Examples.
 @item "No one has proven that ghosts don't exist, so they do."
 @item "No one has proven this chemical is safe, so it's dangerous."
 @item The argument from incredulity — from personal incredulity: "I can't imagine how the eye could have evolved, so it didn't."
-@item God of the gaps: "Science can't explain X, so it must be a divine act." — Many religious thinkers have criticized this argument too, since the gaps tend to shrink.
+@item God of the gaps: "Science can't explain X, so it must be a divine act." Many religious thinkers have criticized this argument too, since the gaps tend to shrink.
 What goes wrong: absence of proof isn't proof of absence, in general. And one's inability to imagine something is a fact about one's imagination, not about the world.
 Legitimate cousins.
 @item Absence of evidence can be evidence of absence when we would expect to have found evidence if the claim were true. A thorough search that finds no tumor is good evidence there is no tumor. Walton calls this knowledge-based reasoning or the lack-of-knowledge inference: "If P were true, I would know it; I don't know it; so P is false" is reasonable when the first premise is.
@@ -221,7 +221,7 @@ Legitimate cousins.
 Response: "If it were true, would we expect to have found evidence of it by now? Who has the burden of proof here, and why?"
 @subsection The middle ground fallacy
 Pattern: There are two positions, A and B; therefore the truth lies somewhere in between. Also called argument to moderation or the golden mean fallacy.
-Example: "Some say vaccines cause autism, others say they don't. The truth is probably that they cause some autism." — The evidence strongly supports "they don't."
+Example: "Some say vaccines cause autism, others say they don't. The truth is probably that they cause some autism." The evidence strongly supports "they don't."
 What goes wrong: the truth doesn't depend on where the extremes happen to be. By inventing an extreme position, anyone could shift the "middle" toward their view.
 Legitimate cousin: compromise is often a good practical solution in negotiation, where the aim is agreement, not truth. And moderate positions often are correct, but because of the evidence for them, not because they are in the middle.
 Response: "Being in the middle doesn't make a position right. What does the evidence show?"
@@ -244,7 +244,7 @@ Response: "Forget what we've already spent. If we were starting today, knowing w
 Pattern: Argue from an analogy between two things that differ in ways relevant to the conclusion. Also called weak analogy.
 Examples.
 @item "Employees are like nails: just as nails must be hit on the head to make them work, so must employees."
-@item "The government should be run like a household: a household can't keep borrowing, so neither can a government." — Governments differ from households in relevant ways: they can issue currency, tax, and exist indefinitely. Whether government borrowing is wise is a real question, but the household analogy doesn't settle it.
+@item "The government should be run like a household: a household can't keep borrowing, so neither can a government." Governments differ from households in relevant ways: they can issue currency, tax, and exist indefinitely. Whether government borrowing is wise is a real question, but the household analogy doesn't settle it.
 Evaluating analogies: list the relevant similarities and the relevant differences. Does the conclusion depend on a feature the two cases share, or on one where they differ?
 A special case: reductio ad Hitlerum, a term coined by the political philosopher Leo Strauss in nineteen fifty-one. "Hitler was a vegetarian — or loved dogs, or promoted anti-smoking campaigns; therefore vegetarianism is bad." This is guilt by association. The lawyer Mike Godwin formulated Godwin's law: "As an online discussion grows longer, the probability of a comparison involving Nazis or Hitler approaches one."
 Response: "In what relevant respects are these cases alike, and in what respects are they different?"
@@ -258,7 +258,7 @@ These fallacies exploit unclear language.
 @subsection Equivocation
 Pattern: Use a word in two different senses within an argument, so that the argument seems valid but isn't.
 Examples.
-@item "The end of a thing is its perfection. Death is the end of life. So death is the perfection of life." — "End" means goal in the first premise and termination in the second.
+@item "The end of a thing is its perfection. Death is the end of life. So death is the perfection of life." "End" means goal in the first premise and termination in the second.
 @item "Evolution is only a theory. A theory is just a guess. So evolution is just a guess."
 @item "Nothing is better than eternal happiness. A ham sandwich is better than nothing. So a ham sandwich is better than eternal happiness."
 @item "The law of gravity is a law; laws require a lawgiver; so gravity requires a lawgiver."
@@ -269,7 +269,7 @@ Example: According to the historian Herodotus, Histories, King Croesus of Lydia 
 Response: "Which reading do you mean?"
 @subsection Composition and division
 Composition: Every part of X has property P; therefore X has P.
-@item "Every player on the team is excellent, so the team is excellent." — They might not play well together.
+@item "Every player on the team is excellent, so the team is excellent." They might not play well together.
 @item "Each of these expenses is small, so the total is small."
 @item "Atoms are colorless. Cats are made of atoms. So cats are colorless."
 Division: X has property P; therefore every part of X has P.
@@ -282,7 +282,7 @@ Pattern: Advance a bold, controversial claim — the bailey; when challenged, re
 The philosopher Nicholas Shackel named this tactic after a medieval castle design: a motte is a fortified tower on a mound, easy to defend but unpleasant to live in; a bailey is the pleasant, productive, but hard-to-defend land around it. When attackers come, the defenders retreat to the motte; when they leave, they return to the bailey.
 Examples.
 @item Bailey: "Astrology can predict your future and reveal your personality." Motte: "Astrology is just a tool for self-reflection."
-@item Bailey: "Reality is socially constructed," meaning that the facts of physics are created by social agreement. Motte: "Our concepts and categories are shaped by social factors." — Shackel's own example.
+@item Bailey: "Reality is socially constructed," meaning that the facts of physics are created by social agreement. Motte: "Our concepts and categories are shaped by social factors." Shackel's own example.
 @item Bailey: "This supplement boosts your immune system and prevents illness." Motte: "It contains vitamins that are part of a healthy diet."
 What goes wrong: the motte is defended, but it is the bailey that does the work in the argument, and the bailey has never been defended.
 Response: "I agree with the modest claim. But earlier you said something stronger. Are you still claiming that?" Pin down which claim is actually being defended.
@@ -293,7 +293,7 @@ Response: find and read the original source.
 @section Causal and statistical fallacies
 @subsection Post hoc ergo propter hoc
 Pattern: B happened after A; therefore A caused B. "After this, therefore because of this."
-Examples: "I wore my lucky socks and we won." "After the new mayor took office, crime fell." — Perhaps crime was falling nationwide — "I took this remedy and my cold went away in a week."
+Examples: "I wore my lucky socks and we won." "After the new mayor took office, crime fell." Perhaps crime was falling nationwide. "I took this remedy and my cold went away in a week."
 What goes wrong: many things happen after A. Temporal order is necessary for causation, causes precede effects, but far from sufficient. Colds go away on their own; crime rates fluctuate; see Regression to the mean.
 Response: "What would have happened without A? Is there a comparison group?"
 @subsection Correlation implies causation
@@ -302,7 +302,7 @@ What goes wrong: correlations can be due to reverse causation, confounding, chan
 Response: "Could B cause A? Could something else cause both? Could this be chance? How were the cases selected?"
 @subsection Single cause fallacy
 Pattern: Assume that an outcome has one simple cause when it results from several jointly. Also called causal oversimplification.
-Examples: "The First World War was caused by the assassination of Archduke Franz Ferdinand." — A trigger, among many causes: alliances, militarism, imperial rivalries, nationalism — "The reason the company failed was the new CEO." "Obesity is caused by laziness."
+Examples: "The First World War was caused by the assassination of Archduke Franz Ferdinand." A trigger, among many causes: alliances, militarism, imperial rivalries, nationalism. "The reason the company failed was the new CEO." "Obesity is caused by laziness."
 Response: "Is that the only cause, or one among several? What else had to be true for it to have that effect?"
 @subsection Base rate fallacy
 Pattern: Ignore the prior probability, base rate, when judging the probability of a specific case.
@@ -321,8 +321,8 @@ Response: "Do we have individual-level data, or only group averages?"
 Pattern: Draw conclusions from the cases that "survived" some selection process, ignoring those that didn't.
 Examples.
 @item During the Second World War, the statistician Abraham Wald, working with the Statistical Research Group at Columbia University, analyzed how to protect bombers. A naive approach would add armor where returning planes showed the most bullet holes. Wald's insight, in the version usually told, was that the armor belonged where returning planes had no holes, because planes hit there did not return.
-@item "They don't make things like they used to." — The old things that survive are the durable ones; the shoddy ones were thrown away long ago.
-@item "Bill Gates and Mark Zuckerberg dropped out of college and became billionaires, so dropping out is a good strategy." — We don't hear about the many dropouts who didn't.
+@item "They don't make things like they used to." The old things that survive are the durable ones; the shoddy ones were thrown away long ago.
+@item "Bill Gates and Mark Zuckerberg dropped out of college and became billionaires, so dropping out is a good strategy." We don't hear about the many dropouts who didn't.
 @item Mutual fund performance statistics that exclude funds that closed because of poor performance make the survivors look better than the average fund was.
 Response: "What about the cases we don't see? What happened to the ones that didn't make it?"
 @subsection Regression fallacy
@@ -338,7 +338,7 @@ The Gish gallop. Named by the anthropologist Eugenie Scott after the creationist
 Sealioning. From a twenty fourteen Wondermark comic by David Malki: persistently and politely demanding evidence and debate, while ignoring answers and showing no real interest in understanding, in order to exhaust the other person. It mimics genuine inquiry. Response: point to answers already given, and disengage if the requests continue in bad faith.
 Kafkatrapping. A term coined by the software developer Eric S. Raymond, after Kafka's The Trial: treating the denial of an accusation as proof of guilt. "Your denial that you're biased just proves how biased you are." The claim becomes unfalsifiable. Response: "What would count as evidence that I'm not?"
 Thought-terminating clichés. A term from the psychiatrist Robert Jay Lifton — Thought Reform and the Psychology of Totalism, nineteen sixty-one — who studied indoctrination: short, catchy phrases that shut down thought and discussion. "It is what it is." "Everything happens for a reason." "That's just your opinion." "Do your own research." "Trust the process." Response: ask what the phrase means in this case, and whether it answers the question.
-Deepities. Daniel Dennett's term for a statement that seems profound because it is ambiguous: on one reading it is true but trivial; on another it would be earth-shattering if true, but it is false. Dennett's example: "Love is just a word." — True of the word "love," which is a word; false, and profound-sounding, about love itself — Response: separate the two readings and evaluate each.
+Deepities. Daniel Dennett's term for a statement that seems profound because it is ambiguous: on one reading it is true but trivial; on another it would be earth-shattering if true, but it is false. Dennett's example: "Love is just a word." True of the word "love," which is a word; false, and profound-sounding, about love itself. Response: separate the two readings and evaluate each.
 Proof by assertion — argumentum ad nauseam. Repeating a claim until it is accepted, regardless of contradiction. It exploits the illusory truth effect.
 False balance. Presenting two positions as equally supported when the evidence overwhelmingly favors one.
 Shifting the burden of proof. "Prove me wrong!"

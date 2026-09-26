@@ -55,7 +55,7 @@ Lexical definition. Reports how a word is actually used in a language community,
 Stipulative definition. Introduces a new term, or a new meaning for an old one, by fiat. It is neither true nor false, only more or less useful. "Let's call these particles 'quarks.'" Stipulations are legitimate if they are announced openly and used consistently.
 Precising definition. Narrows the meaning of a vague term for a particular purpose. "For this study, a household is 'in poverty' if its income is below sixty percent of the national median." This is common in law, science, and policy. It is legitimate, but conclusions drawn under one precising definition cannot automatically be carried over to the ordinary meaning of the word, and different definitions can give very different results.
 Theoretical definition. Defines a term by embedding it in a theory. "Heat is the average kinetic energy of molecules." "Water is H two O." Theoretical definitions can be revised when theories change.
-Operational definition. Defines a term by the procedure used to measure it. "Intelligence is what IQ tests measure." — The psychologist Edwin Boring wrote in nineteen twenty-three that "intelligence is what the tests test." — Operational definitions make concepts measurable. They also create a risk: the measurement can drift away from the thing we actually care about. This is the insight behind Goodhart's law, in the form given by the anthropologist Marilyn Strathern: "When a measure becomes a target, it ceases to be a good measure." If a hospital is judged by waiting times, it may shorten waiting times in ways that do not improve care — such as reclassifying patients. If schools are judged by test scores, they may teach to the test.
+Operational definition. Defines a term by the procedure used to measure it. "Intelligence is what IQ tests measure." The psychologist Edwin Boring wrote in nineteen twenty-three that "intelligence is what the tests test." Operational definitions make concepts measurable. They also create a risk: the measurement can drift away from the thing we actually care about. This is the insight behind Goodhart's law, in the form given by the anthropologist Marilyn Strathern: "When a measure becomes a target, it ceases to be a good measure." If a hospital is judged by waiting times, it may shorten waiting times in ways that do not improve care — such as reclassifying patients. If schools are judged by test scores, they may teach to the test.
 Persuasive definition. Charles Stevenson identified definitions that keep a word's emotional force while changing its descriptive meaning, in order to influence attitudes. "Real freedom means economic security." "True democracy is rule by the virtuous." "Taxation is theft." The word's positive or negative charge is transferred to the new content. Persuasive definitions are often disguised as lexical definitions, and that disguise is what makes them illegitimate. When you meet a phrase like "real X," "true X," or "X, properly understood," check for one.
 Ostensive definition. Defines by pointing at examples. "That is red." All language learning begins with ostension, but ostension alone is ambiguous: pointing at a red ball could be teaching "red," "ball," "round," or "toy."
 Extensional, enumerative, definition. Lists the members of a class. "The Nordic countries are Denmark, Finland, Iceland, Norway, and Sweden."
@@ -90,22 +90,22 @@ What follows for critical thinking.
 A word or sentence is ambiguous when it has two or more distinct meanings. This is different from being vague, which is having unclear boundaries. Ambiguity is the raw material of the fallacy of equivocation.
 Lexical ambiguity: a single word has several meanings.
 @item "bank" — riverbank, financial institution.
-@item "The judge found the argument sound." — Logically valid with true premises, or merely reasonable?
+@item "The judge found the argument sound." Logically valid with true premises, or merely reasonable?
 Syntactic ambiguity — amphiboly: the sentence structure allows several readings.
-@item "I saw the man with the telescope." — Who has the telescope?
+@item "I saw the man with the telescope." Who has the telescope?
 @item "Flying planes can be dangerous."
 @item The newspaper headline "Squad Helps Dog Bite Victim."
 Scope ambiguity: the relative order of "all," "some," "not," "only," and modal words is unclear.
-@item "Everyone didn't come." — Nobody came, or not everyone came?
-@item "You can't be too careful." — Is carefulness always good, or can it be excessive?
+@item "Everyone didn't come." Nobody came, or not everyone came?
+@item "You can't be too careful." Is carefulness always good, or can it be excessive?
 Collective versus distributive readings.
-@item "The students lifted the piano." — Together, or each one individually?
-@item "Americans eat more hot dogs than anyone else." — As a whole nation, or per person?
+@item "The students lifted the piano." Together, or each one individually?
+@item "Americans eat more hot dogs than anyone else." As a whole nation, or per person?
 This ambiguity underlies the fallacies of composition and division.
 Process versus product.
 @item "The observation was careful", the act of observing, versus "the observation was surprising" — what was observed.
 Type versus token.
-@item "We drove the same car." — The same model, or the very same vehicle?
+@item "We drove the same car." The same model, or the very same vehicle?
 @subsection A list of dangerous words
 Some words cause so much confusion in public debate that it is worth memorizing their different senses.
 @item Theory. Sense one: A well-tested explanatory framework — the theory of evolution, the germ theory of disease. Sense two: A hunch or guess — "I have a theory about why he's late". The typical confusion: "Evolution is just a theory."
@@ -136,7 +136,7 @@ For critical thinkers, the most important point is not the theory of vagueness b
 The continuum fallacy — also called the fallacy of the beard, or the line-drawing fallacy — reasons: there is no sharp line between X and Y, so there is no real difference between X and Y.
 @item "There's no precise moment when day becomes night, so day and night are the same."
 @item "There's no exact income at which someone becomes rich, so the distinction between rich and poor is meaningless."
-@item "You can't say exactly when a fetus becomes conscious, so there's no difference between a zygote and a newborn." — Whatever one's view on abortion, this particular argument is fallacious.
+@item "You can't say exactly when a fetus becomes conscious, so there's no difference between a zygote and a newborn." Whatever one's view on abortion, this particular argument is fallacious.
 The fact that a boundary is vague does not mean there is no difference between clear cases on either side. Law handles vagueness with bright-line rules: you can vote at eighteen, not seventeen years and three hundred sixty-four days. The line is arbitrary in its exact placement but not arbitrary in existing, and having some line is better than having none. The continuum fallacy is closely related to some forms of the slippery slope.
 @section Verbal disputes
 A dispute is merely verbal when the parties agree on all the relevant facts but use a key word differently, so that their apparent disagreement is only about which words to use.

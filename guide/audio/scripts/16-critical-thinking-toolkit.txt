@@ -122,7 +122,7 @@ For scientific or statistical claims.
 @section Step six: Find the crux
 A crux is a point on which the disagreement depends: if it were settled one way, one party would change their mind.
 Ask: "What would change your mind?" Ask it of the other person, and of yourself. If the honest answer is "nothing," you have learned that the belief is not being held on the basis of evidence, and further argument about evidence may be pointless. If there is an answer, you have found a crux, and you can look for evidence on that specific point.
-Double crux. The Center for Applied Rationality developed a technique called double crux for productive disagreement. Two people who disagree about a claim each look for a further, more concrete proposition such that A if it were true, they would believe the claim, and if false, they wouldn't; and B they disagree about it. When both people's beliefs about the claim depend on the same further proposition, it is a double crux: a shared, often testable question on which their disagreement turns.
+Double crux. The Center for Applied Rationality developed a technique called double crux for productive disagreement. Two people who disagree about a claim each look for a further, more concrete proposition such that first, if it were true, they would believe the claim, and if false, they wouldn't; and second, they disagree about it. When both people's beliefs about the claim depend on the same further proposition, it is a double crux: a shared, often testable question on which their disagreement turns.
 @pause 0.3
 @voice1 "Our company should switch to a four-day work week."
 @voice2 "I disagree."
@@ -187,7 +187,7 @@ A policy proposal that has answered these five questions is far stronger than on
 Before presenting your argument, write down the three strongest objections you can think of, and answer them. Better still, show your argument to someone who disagrees and ask them to find its weakest point. A premortem helps: imagine that your argument has been decisively refuted. What was the refutation?
 Addressing objections openly has three benefits: it improves the argument, it shows that you understand the other side, building trust, and it deprives critics of easy responses.
 @subsection Qualify appropriately
-State your conclusion with the degree of confidence your evidence supports, and note the conditions under which it holds — the Toulmin qualifier and rebuttal; see The Toulmin model.
+State your conclusion with the degree of confidence your evidence supports, and note the conditions under which it holds — the Toulmin qualifier and rebuttal.
 @item Overclaiming — "This proves…", "It's obvious that…", "Everyone knows…" — invites refutation and damages your credibility when a single counterexample appears.
 @item Underclaiming, "It might possibly be the case that perhaps…", makes the argument useless.
 @item Good qualification is specific: "In cities with good public transport, congestion charges have reduced traffic by roughly a fifth; the effect would probably be smaller here, because fewer drivers have alternatives."
@@ -217,7 +217,7 @@ General principles.
 @item One. Whoever makes a claim bears the burden of supporting it. This is Hitchens's razor, below, and it is the default in most rational discussion. "Prove me wrong" is not an argument.
 @item Two. Extraordinary claims bear a heavier burden than ordinary ones, because their prior probability is lower.
 @item Three. Context sets presumptions. In criminal law, the prosecution bears the burden, and the defendant is presumed innocent. In medicine, a new treatment must show it is safe and effective before approval. In science, a new hypothesis must show it does better than the established one. These presumptions reflect judgments about which errors are worse.
-@item Four. Burden of proof is not the same as standard of proof. The burden says who must provide evidence; the standard says how much is needed — beyond reasonable doubt, balance of probabilities, and so on; see Epistemic institutions.
+@item Four. Burden of proof is not the same as standard of proof. The burden says who must provide evidence; the standard says how much is needed — beyond reasonable doubt, balance of probabilities, and so on.
 @item Five. Burdens can shift. Once one party presents evidence that meets a reasonable standard, the burden shifts to the other to rebut it.
 Russell's teapot illustrates the default: an unfalsifiable claim that cannot be disproved does not thereby earn belief.
 Burden of proof games. Watch for.
@@ -229,10 +229,10 @@ In practical decisions, it is often better to set burdens aside and ask directly
 A razor is a rule of thumb that lets you "shave off" unlikely explanations or unnecessary claims. None is infallible. Each is a heuristic, not a law.
 @item Ockham's razor. Statement: Do not multiply entities beyond necessity. Associated with William of Ockham, around twelve eighty-seven to thirteen forty-seven; the famous wording is later. Use: Prefer the simpler explanation, other things being equal. Caution: "Other things being equal" is crucial. Simplicity is a tiebreaker, not a trump card. Einstein's principle, as often paraphrased: make things as simple as possible, but no simpler.
 @item Hume's maxim. Statement: "A wise man proportions his belief to the evidence." "No testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact." Use: Weigh the probability that the testimony is mistaken against the improbability of the event. Caution: Requires honest estimates of both.
-@item The Sagan standard. Statement: "Extraordinary claims require extraordinary evidence." — Popularized by Carl Sagan in the television series Cosmos, nineteen eighty; similar formulations appear in Marcello Truzzi, Laplace, and Hume. Use: Low prior probability requires a large likelihood ratio. Caution: "Extraordinary" must mean improbable given background knowledge, not merely unfamiliar or unwelcome.
+@item The Sagan standard. Statement: "Extraordinary claims require extraordinary evidence." Popularized by Carl Sagan in the television series Cosmos, nineteen eighty; similar formulations appear in Marcello Truzzi, Laplace, and Hume. Use: Low prior probability requires a large likelihood ratio. Caution: "Extraordinary" must mean improbable given background knowledge, not merely unfamiliar or unwelcome.
 @item Hitchens's razor. Statement: "What can be asserted without evidence can also be dismissed without evidence." Use: The burden of proof lies with the claimant. Caution: Dismissing an unsupported claim is not the same as proving it false.
 @item Russell's teapot. Statement: An unfalsifiable claim doesn't deserve belief just because it can't be disproved. Use: Resisting burden-shifting. Caution: See above.
-@item Hanlon's razor. Statement: "Never attribute to malice that which is adequately explained by stupidity." — Published by Robert J. Hanlon in nineteen eighty; similar sayings are much older. Use: A check against conspiratorial thinking: incompetence and accident are common. Caution: Malice does exist; the razor is about which explanation to try first.
+@item Hanlon's razor. Statement: "Never attribute to malice that which is adequately explained by stupidity." Published by Robert J. Hanlon in nineteen eighty; similar sayings are much older. Use: A check against conspiratorial thinking: incompetence and accident are common. Caution: Malice does exist; the razor is about which explanation to try first.
 @item Chesterton's fence. Statement: Don't remove a fence until you know why it was put up. Use: Before changing a rule or institution, understand its purpose. Caution: Some fences really are pointless; the principle requires inquiry, not preservation.
 @item Popper's falsifiability. Statement: A claim that no possible observation could contradict says nothing about the world. Use: Ask "What would show this to be false?" Caution: Not a complete criterion of meaning or science.
 @item Alder's razor — "Newton's flaming laser sword" Statement: "What cannot be settled by experiment or observation is not worth debating." Use: Focus debate on questions evidence can settle. Caution: Too strong as a general rule: ethics and mathematics are worth debating.
@@ -244,7 +244,7 @@ A razor is a rule of thumb that lets you "shave off" unlikely explanations or un
 In The Demon-Haunted World, chapter twelve, "The Fine Art of Baloney Detection," the astronomer Carl Sagan proposed a set of "tools for skeptical thinking." Paraphrased.
 @item One. Wherever possible there must be independent confirmation of the "facts."
 @item Two. Encourage substantive debate on the evidence by knowledgeable proponents of all points of view.
-@item Three. Arguments from authority carry little weight: "authorities" have made mistakes in the past. Sagan meant that authority is not a substitute for evidence; see Appeal to authority for when deference is reasonable.
+@item Three. Arguments from authority carry little weight: "authorities" have made mistakes in the past. — Sagan meant that authority is not a substitute for evidence.
 @item Four. Spin more than one hypothesis. Think of all the different ways something could be explained, then think of tests by which you might systematically disprove each.
 @item Five. Try not to get overly attached to a hypothesis just because it's yours.
 @item Six. Quantify. If whatever it is you're explaining has some measure attached to it, you'll be better able to discriminate among competing hypotheses.
@@ -284,7 +284,7 @@ Douglas Walton and Erik Krabbe distinguished types of dialogue with different go
 @item Deliberation: Decide what to do.
 @item Negotiation: Reach a deal both parties accept.
 @item Eristic — quarrel: Defeat the other party; vent hostility.
-Many fallacies involve an illicit shift from one type to another, for example from a persuasion dialogue about facts to a negotiation — "let's split the difference" on a factual question; see The middle ground fallacy — or from inquiry to quarrel. When a discussion goes wrong, ask: what are we actually trying to do here?
+Many fallacies involve an illicit shift from one type to another, for example from a persuasion dialogue about facts to a negotiation, "let's split the difference" on a factual question, or from inquiry to quarrel. When a discussion goes wrong, ask: what are we actually trying to do here?
 @subsection Practical conduct
 @item Listen first. Ask questions before stating your view.
 @item Separate the person from the position. Criticize ideas, not people.
@@ -376,15 +376,15 @@ Step three: Map. A reconstruction.
 @aside Premise three: If a significant fraction of civilizations at our stage reach maturity, and a significant fraction of mature civilizations run many such "ancestor simulations," then the number of simulated minds with experiences like ours vastly exceeds the number of non-simulated minds.
 @aside Premise four: The indifference principle: if you know that a fraction x of all observers with experiences like yours are simulated, and you have no other evidence about which kind you are, your credence that you are simulated should be about x.
 @pause 0.4
-@aside Conclusion: At least one of the following is true: A: almost no civilizations reach maturity; B: almost no mature civilizations run ancestor simulations; C: we are almost certainly simulated.
+@aside Conclusion: At least one of the following is true: first, almost no civilizations reach maturity; second, almost no mature civilizations run ancestor simulations; third, we are almost certainly simulated.
 @pause 0.3
 Step four: Evaluate. The argument is valid, given the premises — it's essentially a probabilistic disjunction. So assess the premises.
 @item Premise one is a contested thesis in the philosophy of mind. If consciousness requires biology — as some argue, for example John Searle — simulated people would not be conscious, and the argument fails.
 @item Premise two is an empirical prediction about future technology. Some argue that simulating a whole world in detail may be infeasible; Bostrom replies that a simulation only needs to render what observers perceive.
 @item Premise four raises the reference class problem: what counts as an observer "with experiences like yours"? And it assumes you have no evidence distinguishing the cases.
 @item Alternative B may be more plausible than it first appears: mature civilizations might have ethical or practical reasons not to run such simulations.
-Step six: Find the cruxes. Whether substrate independence is true; how to assign credences among A, B, and C.
-Step seven: Conclude. The argument is a clever and valid probabilistic structure, but its conclusion, the disjunction, is much weaker than the popular summary "we're probably in a simulation." Its force depends on contested premises in philosophy of mind and on speculative predictions. A reasonable response is to accept that the disjunction is interesting, while assigning substantial credence to A or B, or doubting premise one. Note also David Chalmers's point that even if C were true, most of our beliefs about our world might still be true. This case shows how a valid argument with a startling conclusion can be defused by examining its premises, not by rejecting its logic.
+Step six: Find the cruxes. Whether substrate independence is true; how to assign credences among the first, the second, and the third.
+Step seven: Conclude. The argument is a clever and valid probabilistic structure, but its conclusion, the disjunction, is much weaker than the popular summary "we're probably in a simulation." Its force depends on contested premises in philosophy of mind and on speculative predictions. A reasonable response is to accept that the disjunction is interesting, while assigning substantial credence to the first or the second, or doubting premise one. Note also David Chalmers's point that even if C were true, most of our beliefs about our world might still be true. This case shows how a valid argument with a startling conclusion can be defused by examining its premises, not by rejecting its logic.
 @subsection Case study five: An online dispute
 @pause 0.3
 @label Post.

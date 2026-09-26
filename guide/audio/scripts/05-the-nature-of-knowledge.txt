@@ -27,7 +27,7 @@ A historical note: the label "the traditional analysis" is somewhat misleading. 
 Let us look at each condition.
 @subsection The truth condition
 You cannot know something false. If you say "I knew the bridge was safe," and it collapsed, you did not know. You only thought you knew. "Know" is a factive verb: "S knows that p" entails p. Other factive verbs include realize, see that, remember that, discover, and regret. By contrast, believe, think, suspect, claim, and feel sure are not factive.
-Sometimes people say things like "In the Middle Ages everyone knew the Earth was flat." — That claim is itself a myth: educated medieval Europeans knew the Earth was round — Such uses are projective: the speaker reports what people took themselves to know, as if in scare quotes.
+Sometimes people say things like "In the Middle Ages everyone knew the Earth was flat." That claim is itself a myth: educated medieval Europeans knew the Earth was round. Such uses are projective: the speaker reports what people took themselves to know, as if in scare quotes.
 @pause 0.3
 @cue Here's the critical-thinking lesson.
 Notice factive verbs used to smuggle in a claim. "As she realized, the policy was a failure" presupposes the policy was a failure. "Critics have revealed that…" presupposes that what they said is true. Neutral alternatives: "argued," "claimed," "alleged."

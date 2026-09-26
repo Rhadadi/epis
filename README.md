@@ -16,6 +16,9 @@ intellectual virtue, the psychology of reasoning, a field guide to fallacies,
 and a practical toolkit for analyzing discussions and framing arguments, with
 worked examples and self-check questions throughout.
 
+Every chapter also has a narrated audio version, about 14 hours in all, with a
+[player page](guide/audio/index.html) and the [track list](guide/audio/README.md).
+
 Start with the [guide's contents page](guide/README.md).
 
 ## Features

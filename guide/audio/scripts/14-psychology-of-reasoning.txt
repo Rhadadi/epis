@@ -26,18 +26,19 @@ A debate runs through this field about how to interpret the evidence of human er
 Each position contains truth. The sections below try to present the evidence in a way that respects all three.
 @section Dual-process theories
 Many psychologists distinguish two kinds of thinking, popularized by Daniel Kahneman, using the labels System one and System two introduced by Keith Stanovich and Richard West.
-@item Fast versus slow.
-@item Automatic, effortless versus deliberate, effortful.
-@item Intuitive, associative versus rule-based, reflective.
-@item Operates in parallel versus operates serially.
-@item Does not require working memory versus requires working memory.
-@item Generates impressions and feelings versus can endorse or override those impressions.
+@item System one is fast. System two is slow.
+@item System one is automatic and effortless. System two is deliberate and effortful.
+@item System one is intuitive and associative. System two is rule-based and reflective.
+@item System one operates in parallel. System two operates serially.
+@item System one does not require working memory. System two does.
+@item System one generates impressions and feelings. System two can endorse or override those impressions.
 System one recognizes faces, reads emotions, completes "bread and…", drives a car on an empty road, and answers "two plus two." System two multiplies seventeen times twenty-four, checks a complex argument, fills in a tax form, and resists an impulse.
 The Cognitive Reflection Test measures the tendency to override an intuitive but wrong answer. Try it.
 @item One. A bat and a ball cost one dollar and ten cents in total. The bat costs one dollar more than the ball. How much does the ball cost?
 @item Two. If it takes five machines five minutes to make five widgets, how long would it take one hundred machines to make one hundred widgets?
 @item Three. In a lake, there is a patch of lily pads. Every day, the patch doubles in size. If it takes forty-eight days for the patch to cover the entire lake, how long would it take for the patch to cover half of the lake?
-Answers
+@think 5
+@label Answers.
 @item One. five cents — not ten cents: if the ball were ten cents, the bat would be one dollar and ten cents, and the total one dollar and twenty cents.
 @item Two. five minutes — each machine makes one widget in five minutes.
 @item Three. forty-seven days — the day before it covers the whole lake, it covers half.
@@ -54,8 +55,8 @@ Availability is shaped by media coverage, which selects for rarity and drama —
 @subsection Representativeness
 The representativeness heuristic: judging the probability that something belongs to a category by how much it resembles the typical member of that category.
 It produces.
-@item Base rate neglect — the engineer or lawyer and cab problems; see Chapter nine.
-@item The conjunction fallacy — Linda; see Chapter nine.
+@item Base rate neglect — the engineer or lawyer and cab problems.
+@item The conjunction fallacy — Linda.
 @item Misconceptions of chance: people judge the coin-flip sequence H-T-H-T-T-H to be more likely than H-H-H-T-T-T, although both are equally likely, because the first "looks random."
 @item The law of small numbers: expecting small samples to resemble the population.
 @subsection Anchoring
@@ -104,7 +105,8 @@ The selection task. You are shown four cards. Each has a letter on one side and 
 @aside E K four seven.
 @pause 0.3
 Rule: "If a card has a vowel on one side, then it has an even number on the other side." Which cards must you turn over to test whether the rule is true?
-Answer
+@think 5
+@label Answer.
 E and seven. E, because if it has an odd number, the rule is false. And seven, because if it has a vowel on the other side, the rule is false. Most people choose E and four, but the four cannot refute the rule — the rule says nothing about what's behind even numbers. In Wason's studies, fewer than ten percent of participants chose correctly. This is the logic of modus tollens: to test "if P then Q," look for not Q cases, and check that they are not P.
 Interestingly, people do much better with a logically equivalent version about social rules. "If a person is drinking beer, they must be over eighteen." Cards: beer, cola, twenty-five years old, sixteen years old. Most people correctly check beer and sixteen. Leda Cosmides argued that humans have specialized reasoning for detecting cheaters on social contracts.
 Joshua Klayman and Young-Won Ha pointed out that testing cases your hypothesis predicts will succeed, a positive test strategy, is not always irrational. It is often a good strategy, and it fails mainly when the true rule is broader than your hypothesis, as in the two to four-six task. The lesson is not "never seek confirmation" but "make sure you also look for disconfirmation."

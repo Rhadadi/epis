@@ -283,8 +283,18 @@ For each question, give a range that you are ninety percent confident contains t
 @item Eight. The year Immanuel Kant was born.
 @item Nine. The number of member states of the United Nations.
 @item Ten. The year Ibn Sīnā, Avicenna, was born.
-Answers
-@item One. About fourteen fifty-five. two. About six, six hundred fifty kilometers — estimates vary. three. eight thousand eight hundred forty-nine m. four. two hundred six. five. About three hundred eighty-four, four hundred kilometers. six. seventeen thirty-nine. seven. About three hundred forty-three m or s. eight. seventeen twenty-four. nine. one hundred ninety-three. ten. About nine eighty CE.
+@think 5
+@label Answers.
+@item One. About fourteen fifty-five.
+@item Two. About six thousand six hundred fifty kilometers — estimates vary.
+@item Three. eight thousand eight hundred forty-nine meters.
+@item Four. two hundred six.
+@item Five. About three hundred eighty-four thousand four hundred kilometers.
+@item Six. seventeen thirty-nine.
+@item Seven. About three hundred forty-three meters per second.
+@item Eight. seventeen twenty-four.
+@item Nine. one hundred ninety-three.
+@item Ten. About nine eighty CE.
 Most people who try exercises like this find that far fewer than nine of their "ninety percent" ranges contain the answer. Their ranges are too narrow, because they are overconfident. The remedy is to widen your ranges until you are genuinely surprised when the answer falls outside them.
 @section Statistics and significance
 Much of the evidence in public debates comes as statistics. You don't need to be a statistician to evaluate it, but you need to understand a few concepts, and avoid a few misunderstandings.
