@@ -1,0 +1,542 @@
+# Chapter 5. What Is Knowledge?
+
+[← Previous: Language, Concepts, and Definitions](04-language-concepts-and-definitions.md) · [Contents](README.md) · [Next: Justification →](06-justification.md)
+
+---
+
+> "True opinions are a fine thing and do all sorts of good so long as they stay in their place, but they will not stay long. They run away from a man's mind; so they are not worth much until you tether them by working out the reason."
+> — Plato, *Meno* 97e–98a
+
+> "Knowledge and action are the central relations between mind and world. In action, world is adapted to mind. In knowledge, mind is adapted to world."
+> — Timothy Williamson, *Knowledge and Its Limits* (2000)
+
+What is the difference between *knowing* something and merely *believing* it, or getting it right by luck? This is the oldest question in epistemology. It is the subject of Plato's *Theaetetus*, and in the second half of the 20th century it became the most intensely studied question in the field.
+
+It matters for critical thinking in a practical way. Knowledge is what we want from our sources, our experts, and ourselves. When we ask "Does she really *know* that, or is she guessing?" or "Did the pundit who predicted the crash know something, or did he get lucky?", we are asking the questions of this chapter. The concepts developed here, such as reliability, sensitivity, safety, epistemic luck, and defeaters, are precise tools for judging sources and claims.
+
+---
+
+## In this chapter
+
+- [The tripartite analysis](#the-tripartite-analysis)
+- [The Gettier problem](#the-gettier-problem)
+- [Responses to Gettier](#responses-to-gettier)
+- [The inescapability of Gettier problems](#the-inescapability-of-gettier-problems)
+- [Epistemic luck](#epistemic-luck)
+- [The value of knowledge](#the-value-of-knowledge)
+- [Understanding and wisdom](#understanding-and-wisdom)
+- [Knowledge-how revisited](#knowledge-how-revisited)
+- [Knowledge, assertion, and action](#knowledge-assertion-and-action)
+- [Knowing that you know](#knowing-that-you-know)
+- [Why do we have the concept of knowledge?](#why-do-we-have-the-concept-of-knowledge)
+- [Summary of theories](#summary-of-theories)
+- [Check your understanding](#check-your-understanding)
+- [Further reading](#further-reading)
+
+---
+
+## The tripartite analysis
+
+The classical analysis, often traced to Plato's *Meno* and *Theaetetus* (see [Chapter 2](02-history-of-epistemology.md#plato)), says that knowledge is **justified true belief** (JTB):
+
+> **S knows that p if and only if:**
+> 1. p is true;
+> 2. S believes that p;
+> 3. S is justified in believing that p.
+
+In the mid-20th century, versions were defended by A. J. Ayer (*The Problem of Knowledge*, 1956: knowledge requires that "what one is said to know be true," that one "be sure of it," and that one "have the right to be sure") and Roderick Chisholm (*Perceiving*, 1957: the subject must have "adequate evidence").
+
+A historical note: the label "the traditional analysis" is somewhat misleading. Julien Dutant ("The Legend of the Justified True Belief Analysis," 2015) argues that before the 20th century, most philosophers (Descartes, Locke) held a much stricter, **infallibilist** view: knowledge requires grounds that *guarantee* truth. The JTB analysis was only briefly the consensus when Gettier attacked it.
+
+Let us look at each condition.
+
+### The truth condition
+
+You cannot know something false. If you say "I knew the bridge was safe," and it collapsed, you did not know. You only thought you knew. "Know" is a **factive** verb: "S knows that p" entails p. Other factive verbs include *realize*, *see that*, *remember that*, *discover*, and *regret*. By contrast, *believe*, *think*, *suspect*, *claim*, and *feel sure* are not factive.
+
+Sometimes people say things like "In the Middle Ages everyone *knew* the Earth was flat." (That claim is itself a myth: educated medieval Europeans knew the Earth was round.) Such uses are **projective**: the speaker reports what people *took* themselves to know, as if in scare quotes.
+
+> **Critical-thinking lesson.** Notice factive verbs used to smuggle in a claim. "As she *realized*, the policy was a failure" presupposes the policy was a failure. "Critics have *revealed* that..." presupposes that what they said is true. Neutral alternatives: "argued," "claimed," "alleged."
+
+### The belief condition
+
+Must you believe what you know? Usually, yes. It would be odd to say "I know it's Tuesday, but I don't believe it is."
+
+Colin Radford ("Knowledge—By Examples," 1966) challenged this with the **unconfident examinee**. Jean is asked the date of Queen Elizabeth I's death. He feels he is guessing and answers "1603," which is correct. He had learned English history years ago and forgotten that he had learned it. He gets many other dates right in the same "guessing" way. Radford argued Jean knows the answers without believing them. Most epistemologists reply that Jean has a weak, dispositional belief, or that he doesn't quite know. The belief condition survives, but the case shows that knowledge and *confidence* can come apart.
+
+Expressions like "I don't *believe* it, I *know* it" do not really deny belief. They emphasize that the speaker has more than mere belief.
+
+### The justification condition
+
+Why add justification? Because true belief can be a matter of luck.
+
+- A gambler feels certain that the horse named "Lucky Star" will win, and it does. He had a true belief, but he did not know.
+- A patient believes she will recover because her horoscope says so, and she does. She did not know.
+- Plato's jury in the *Theaetetus* reaches a true verdict by being persuaded by rhetoric. It did not know.
+
+In each case, the belief was true, but not *because of* anything that connected it to the truth. The justification condition is supposed to supply that connection: the belief must be held for good reasons.
+
+The three conditions look individually necessary and jointly sufficient. Then, in 1963, a three-page paper showed that they are not sufficient.
+
+---
+
+## The Gettier problem
+
+Edmund Gettier's "Is Justified True Belief Knowledge?" (*Analysis* 23, 1963) relies on two principles that JTB theorists accepted:
+
+1. **Fallibility.** You can be justified in believing something false.
+2. **Closure of justification under deduction.** If you are justified in believing p, and p entails q, and you deduce q from p and accept q as a result, then you are justified in believing q.
+
+With these, Gettier constructed cases of justified true belief that are not knowledge.
+
+### Gettier's original cases
+
+**Case I: The job and the coins.** Smith and Jones have applied for the same job. Smith has strong evidence for the proposition:
+
+> (d) Jones is the man who will get the job, and Jones has ten coins in his pocket.
+
+(The company president told Smith that Jones would be selected, and Smith counted the coins in Jones's pocket ten minutes ago.) Proposition (d) entails:
+
+> (e) The man who will get the job has ten coins in his pocket.
+
+Smith sees the entailment and accepts (e) on the grounds of (d). So Smith is justified in believing (e). But, unknown to Smith, *Smith himself* will get the job, and, also unknown to Smith, *Smith himself* has ten coins in his pocket. So (e) is true. Smith has a justified true belief in (e), but he clearly does not *know* (e). What makes (e) true (Smith's coins) has nothing to do with what makes Smith believe it (Jones's coins).
+
+**Case II: The Ford and Barcelona.** Smith has strong evidence that:
+
+> (f) Jones owns a Ford.
+
+(Jones has always owned a Ford for as long as Smith has known him, and just offered Smith a ride while driving a Ford.) Smith has another friend, Brown, whose whereabouts he has no idea about. Smith picks three place names at random and constructs three propositions:
+
+> (g) Either Jones owns a Ford, or Brown is in Boston.
+> (h) Either Jones owns a Ford, or Brown is in Barcelona.
+> (i) Either Jones owns a Ford, or Brown is in Brest-Litovsk.
+
+Each follows from (f). Smith accepts all three, and is justified in doing so. But Jones does not own a Ford; he is driving a rented car. And by sheer coincidence, Brown is in Barcelona. So (h) is true, and Smith has a justified true belief in (h). He does not know (h).
+
+### More Gettier cases
+
+Gettier-style cases had been noticed before 1963, and many more have been constructed since. They are worth knowing, because different cases defeat different proposed solutions.
+
+**The stopped clock** (Bertrand Russell, *Human Knowledge*, 1948). A man looks at a clock that has always been reliable. It reads 2:00, so he believes it is 2:00. It is 2:00. But the clock stopped exactly twelve hours ago. He has a justified true belief but does not know the time.
+
+**The mirage and the smoke** (Dharmottara, 8th century CE). A desert traveler sees a mirage of water; when he reaches the spot, he finds water hidden under a rock. In another of Dharmottara's examples, a person sees what looks like smoke rising, and infers a fire. The "smoke" is actually a swarm of insects, but there *is* a fire, just lit, whose smoke has not yet risen. Both beliefs are true and grounded in appearances, but they are not knowledge.
+
+**The sheep in the field** (Roderick Chisholm, *Theory of Knowledge*, 2nd ed. 1977). A man looks into a field and sees what he takes to be a sheep. It is actually a dog disguised as a sheep. But there is a sheep in the field, hidden behind a hill. His belief "There is a sheep in the field" is justified and true, but not knowledge.
+
+**Fake barn country** (Alvin Goldman, "Discrimination and Perceptual Knowledge," 1976, crediting Carl Ginet). Henry is driving through the countryside with his son and points out objects: "That's a cow," "That's a tractor," "That's a barn." Unknown to Henry, he is in a region where the locals have put up many papier-mâché barn façades that look exactly like real barns from the road. The one Henry happens to be looking at is the only real barn in the area. Does Henry know that it is a barn? Most people say no. His perceptual belief is true and justified, but it would have been false had he looked at any of the nearby façades. This case is important because **Henry makes no inference from a false belief**. His belief is formed directly by perception.
+
+**The absent Nogot** (Keith Lehrer, "Knowledge, Truth and Evidence," 1965). Mr. Nogot, who works in your office, has given you excellent evidence that he owns a Ford. You infer that someone in the office owns a Ford. Nogot doesn't own a Ford, but another officemate, Mr. Havit, does, though you have no evidence of it. A variant: you never form the belief that Nogot owns a Ford; you go directly from the evidence to "someone in the office owns a Ford." This variant is designed to defeat the [no false lemmas](#no-false-lemmas) response.
+
+**The doctor's diagnosis** (Linda Zagzebski, 1994). Dr. Jones, a highly competent physician, has excellent evidence that her patient Smith has virus X: textbook symptoms and positive lab tests. Her belief is justified. In fact, Smith's symptoms are caused by an unknown virus Y. But Smith *also* happens to have just contracted virus X, too recently for it to cause symptoms or show up on tests. Dr. Jones's belief that Smith has virus X is justified and true, but it is not knowledge.
+
+### What the cases have in common
+
+Linda Zagzebski ("The Inescapability of Gettier Problems," 1994) identified a recipe for building Gettier cases:
+
+1. Start with a case of **justified false belief**: the subject's good grounds lead them astray through some bit of bad luck (the clock stopped; the "sheep" is a dog; Jones's Ford is rented).
+2. Add a bit of **good luck** that makes the belief true anyway, for reasons unconnected to the subject's grounds (it happens to be 2:00; a real sheep is behind the hill; Brown happens to be in Barcelona).
+
+The result is a belief that is true, and justified, but true **by luck**: the good luck cancels the bad luck. The belief is "right for the wrong reasons." Knowledge seems to require that a belief be true *because of* the way it was formed, not by accident. This insight organizes the whole post-Gettier literature: every proposed solution is an attempt to say precisely what kind of connection between belief and truth rules out this luck.
+
+> **Everyday Gettier cases.** A commentator predicts a stock market crash based on a flawed economic model; the market crashes for unrelated reasons; the commentator is hailed as a prophet. A friend says the restaurant is closed on Mondays because she saw a "closed" sign, which was actually left up from a holiday; but the restaurant is in fact closed on Mondays. Whenever someone is "right for the wrong reasons," you have a Gettier-type case. Lesson: **a correct prediction or claim is not, by itself, evidence that the source knows.** Judge sources by their track records and methods, not by single hits. See [Calibration and scoring rules](09-induction-probability-bayes.md#calibration-and-scoring-rules).
+
+---
+
+## Responses to Gettier
+
+### No false lemmas
+
+Michael Clark ("Knowledge and Grounds: A Comment on Mr. Gettier's Paper," 1963) noticed that in both of Gettier's cases, Smith reasons from a *false* premise (a "lemma"): that Jones will get the job; that Jones owns a Ford. Proposal:
+
+> S knows that p iff S has a justified true belief that p, and S's belief is not inferred from any false belief.
+
+**Problems.** Fake barn country: Henry infers nothing; he just sees. Lehrer's variant of the Nogot case: the subject reasons directly from evidence without forming the false intermediate belief. And the proposal is too strong. Jennifer Nagel (*Knowledge: A Very Short Introduction*, ch. 4) describes a detective investigating an assault in broad daylight who has a dozen eyewitnesses, physical evidence, the victim's statement, and a confession. One of the twelve witnesses was lying about having been there. The detective's belief that the suspect did it rests partly on a false belief (that all twelve witnesses saw it), yet she plainly knows. One rotten plank does not make a heavily reinforced bridge unsafe. Defenders then tried requiring that the knower not *essentially* rely on any falsehood, but spelling out "essential reliance" proved very difficult.
+
+### Defeasibility theories
+
+Keith Lehrer and Thomas Paxson ("Knowledge: Undefeated Justified True Belief," 1969) and Peter Klein (1971) proposed:
+
+> S knows that p iff S has a justified true belief that p, and there is no true proposition d (a **defeater**) such that, if d were added to S's evidence, S would no longer be justified in believing p.
+
+In Gettier's Case II, the defeater is "Jones does not own a Ford." If Smith had learned this, he would no longer be justified in believing (h). In fake barn country, the defeater is "This region is full of barn façades."
+
+**Problem: misleading defeaters.** Lehrer and Paxson's own case: you see Tom Grabit, whom you know well, steal a book from the library. You know Tom stole it. But Tom's mother has told people that Tom was miles away that day and that his identical twin John was in the library. Unknown to you, Tom has no twin; his mother is delusional. The true proposition "Tom's mother said that John was in the library" would, if added to your evidence, defeat your justification. So the simple defeasibility theory says you don't know. But intuitively you do: the defeater is **misleading**. Distinguishing genuine from misleading defeaters without circularity proved very difficult. (See also [Defeaters](06-justification.md#defeaters).)
+
+### The causal theory
+
+Alvin Goldman ("A Causal Theory of Knowing," 1967) proposed:
+
+> S knows that p iff the fact that p is causally connected in an "appropriate" way with S's believing p.
+
+In Case II, Brown's being in Barcelona played no role in causing Smith's belief. In the stopped clock case, the actual time did not cause the clock's reading. The causal theory explains why these are not knowledge.
+
+**Problems.**
+- Knowledge of **mathematics** and logic: the fact that 7 + 5 = 12 does not seem to cause anything.
+- Knowledge of **universal generalizations** ("All humans are mortal") and of **the future** ("The sun will rise tomorrow"): the future cannot cause present beliefs.
+- **Fake barns**: the real barn *does* cause Henry's belief in the normal perceptual way. Yet he doesn't know.
+- "Appropriate" does a lot of unexplained work, and it is hard to say what makes a causal chain appropriate without using the concept of knowledge itself.
+
+A virtue of the causal theory is that it drops the requirement that the knower be able to justify the belief. Most educated adults know that Julius Caesar was assassinated, though few remember where they learned it. On the causal theory, what matters is that their belief is linked to the event by a real causal chain: eyewitnesses, ancient historians, centuries of books, and forgotten teachers. The idea is not only Western. As Jennifer Nagel notes (*Knowledge*, ch. 4), the 14th-century Indian philosopher Gaṅgeśa had already developed a detailed causal theory of knowledge.
+
+### Reliabilism
+
+Goldman developed the causal theory into **reliabilism**, which became one of the most influential theories in epistemology ("Discrimination and Perceptual Knowledge," 1976; "What Is Justified Belief?," 1979; *Epistemology and Cognition*, 1986). Related ideas come from D. M. Armstrong's "thermometer" model (*Belief, Truth and Knowledge*, 1973: a belief is knowledge when it is like a reading from a reliable thermometer) and, earlier, from F. P. Ramsey (1929).
+
+> S knows that p iff p is true, S believes p, and S's belief was produced by a **reliable** belief-forming process: one that tends to produce true beliefs.
+
+Vision in good light, memory of recent events, competent deduction, and trustworthy testimony are reliable processes. Wishful thinking, guessing, reading tea leaves, and hasty generalization are not.
+
+To handle fake barns, Goldman required **local** reliability, or the ability to **discriminate** the actual state of affairs from **relevant alternatives**. In fake barn country, Henry's visual barn recognition cannot discriminate real barns from façades, which are relevant alternatives in that environment. So he doesn't know. In ordinary countryside, the same perceptual process gives knowledge.
+
+Reliabilism is an **externalist** theory: what makes a belief knowledge can be outside the subject's awareness. Henry need not know that his process is reliable; it just has to *be* reliable. See [Internalism and externalism](06-justification.md#internalism-and-externalism).
+
+**Problems.**
+- **The generality problem** (Earl Conee and Richard Feldman, 1998; noted by Goldman himself in 1979). Any belief is produced by a particular token process, which belongs to many types: "vision," "vision in daylight," "vision of large objects at 50 meters," "vision of barn-shaped objects in this county on Tuesdays." These types have very different reliability. Which type determines whether the belief is knowledge? Without a principled answer, reliabilism is incomplete.
+- **Reliability without awareness.** Keith Lehrer's **Truetemp** case (*Theory of Knowledge*, 1990): without his knowledge, Mr. Truetemp has had a device implanted in his head that accurately measures the temperature and causes him to form beliefs about it. He believes "It is 34 °C" and is right, as he always is, but he has no idea why he has these beliefs and has never checked them. Does he know the temperature? Many people say no. Laurence BonJour's **Norman the clairvoyant** makes a similar point (see [Test cases for internalism and externalism](06-justification.md#test-cases-for-internalism-and-externalism)).
+- **The threshold problem.** How reliable is reliable enough? Nagel (*Knowledge*, ch. 4) presses the point with a lottery. You hold one ticket in a fair lottery of a thousand; the draw has happened, but the result isn't announced. Your belief "my ticket lost" was formed by a process that is 99.9% reliable, yet most people say you don't *know* you lost. Make the lottery a million tickets and the verdict doesn't change. So is 99.9999% reliability required? Then ordinary perception, which fails more often than one time in a million, would not give knowledge, and we slide toward skepticism. The threshold seems to need to be very high and quite low at the same time. See also [Knowledge, assertion, and action](#knowledge-assertion-and-action).
+- **The value problem**: see [The value of knowledge](#the-value-of-knowledge).
+
+### Sensitivity and tracking
+
+Robert Nozick (*Philosophical Explanations*, 1981), building on Fred Dretske ("Conclusive Reasons," 1971), proposed that knowledge **tracks** the truth:
+
+> S knows that p iff:
+> 1. p is true;
+> 2. S believes p;
+> 3. **Sensitivity**: if p were false, S would not believe p;
+> 4. **Adherence**: if p were true, S would believe p.
+
+The key condition is **sensitivity**. These are **counterfactual** conditionals, evaluated by considering the *nearest* possible worlds where p is false.
+
+Nozick relativized the conditions to the **method** used to form the belief, because of cases like this one. A grandmother in hospital sees her grandson standing by her bed, and believes he is well. But her family has agreed that if he were ill, they would keep it from her and tell her he was fine. So if he weren't well, she would still believe he was: her belief is insensitive. Yet surely, looking at him, she knows he is well. Nozick's answer: in the counterfactual situation, she would be using a different method (trusting her family's reassurance) rather than the method she actually used (looking at him). Sensitivity should be assessed holding the method fixed. This leads the tracking theory, like reliabilism, into the question of how to individuate methods, a version of the generality problem.
+
+A tracker is like a good diagnostician: someone who would diagnose a disease if the patient had it and would not if the patient didn't. Nagel's illustration (*Knowledge*, ch. 5): a doctor whose diagnoses reliably track which patients have hepatitis A knows when a patient has it, even if she can't say what cues she is responding to, and even if she is wrong about how she does it.
+
+In the stopped clock case, if it were not 2:00, the man would still believe it is 2:00 (the clock would still say so). His belief is **insensitive**, so it isn't knowledge. In fake barn country, if Henry were looking at a façade rather than a barn, he would still believe "That's a barn." Insensitive; not knowledge. Sensitivity handles many cases elegantly.
+
+**The price: closure fails.** You believe you have hands. If you didn't have hands (say, you had lost them in an accident), you would not believe you had hands. So your belief is sensitive, and you know you have hands. You also believe you are not a handless **brain in a vat** being fed experiences of having hands (see [The brain in a vat](08-skepticism.md#the-brain-in-a-vat)). If you *were* such a brain, you would still believe you were not. So that belief is insensitive, and you *don't* know you are not a brain in a vat.
+
+So you know you have hands, but you don't know something that obviously follows from it. The **closure principle**, that if you know p and know that p entails q, you know q (or are in a position to), fails. Nozick accepted this conclusion and saw it as a solution to skepticism. See [Denying closure](08-skepticism.md#denying-closure). Keith DeRose called the resulting combination an "abominable conjunction": *"I know I have hands, but I don't know I'm not a handless brain in a vat."*
+
+**Further problems.**
+- **Saul Kripke's red barn** (from lectures, published in *Philosophical Troubles*, 2011). In fake barn country, suppose all the façades are green and the one real barn is red. Henry believes "That is a red barn." That belief is sensitive: if it weren't a red barn, it would be a green façade, and he wouldn't believe "red barn." But his belief "That is a barn" is insensitive. So the tracking theory says Henry knows "That is a red barn" but not "That is a barn," which seems absurd.
+- **Inductive knowledge.** Ernest Sosa's **trash chute** case ("How to Defeat Opposition to Moore," 1999): I drop a bag of trash down the chute in my high-rise building and believe it is now in the basement. If it weren't (if it had snagged on the way down), I would still believe it was. So my belief is insensitive. But surely I know where my trash is.
+
+### Safety
+
+In response, Ernest Sosa (1999), Timothy Williamson (*Knowledge and Its Limits*, 2000), and Duncan Pritchard (*Epistemic Luck*, 2005) proposed a different modal condition:
+
+> **Safety**: S's belief that p is safe iff in (nearly) all nearby possible worlds in which S believes p (in the same way), p is true.
+
+In other words, a safe belief *could not easily have been false*. Where sensitivity looks at the nearest worlds where **p is false** and asks whether you would still believe p, safety looks at nearby worlds where **you believe p** and asks whether p is still true.
+
+| | Question it asks | Stopped clock | Fake barns | Trash chute | "I'm not a brain in a vat" |
+|---|---|---|---|---|---|
+| **Sensitivity** | If p were false, would you still believe p? | Insensitive: not knowledge | Insensitive: not knowledge | Insensitive: *not* knowledge (bad result) | Insensitive: not knowledge |
+| **Safety** | Could you easily have believed p while p was false? | Unsafe: not knowledge | Unsafe: not knowledge | Safe: knowledge | Safe (brain-in-vat worlds are far away): knowledge |
+
+Safety handles the trash chute and keeps closure, so it supports a [Moorean](08-skepticism.md#mooreanism) response to skepticism: I *do* know I'm not a brain in a vat, because in all nearby worlds where I believe it, it's true.
+
+**Problems.** What counts as "nearby"? The notion is vague, and critics worry that it gets fixed to deliver the desired verdicts. And beliefs in **necessary truths** are automatically safe (they are true in every world), even if formed by a lucky guess. So safety theorists must add further conditions, such as that the *way* the belief was formed would not easily have produced false beliefs in similar propositions.
+
+### Virtue-theoretic accounts
+
+**Virtue epistemology** locates knowledge in the exercise of intellectual abilities, or virtues. Ernest Sosa's **AAA model** (*A Virtue Epistemology*, 2007) uses an archer as an analogy. A shot can be:
+
+- **Accurate**: it hits the target.
+- **Adroit**: it manifests the archer's skill.
+- **Apt**: it is accurate *because* it is adroit; its success manifests the skill.
+
+A skilled archer's shot might be accurate and adroit but not apt: a gust of wind blows the arrow off course, and a second gust blows it back onto the target. The success is lucky, not creditable to the skill.
+
+Knowledge, Sosa proposes, is **apt belief**: belief that is true *because* it manifests the believer's cognitive competence. In Gettier cases, the belief is true, and formed competently, but its truth is due to luck (the second gust), not to competence. John Greco (*Achieving Knowledge*, 2010) develops a similar view: knowledge is a cognitive **achievement**, success through ability for which the believer deserves **credit**.
+
+**Problems.**
+- **Fake barns.** Henry's belief *is* true because of his competent perception; nothing like a second gust intervenes. Sosa bites the bullet: Henry has **animal knowledge** (apt belief) but lacks **reflective knowledge** (apt belief aptly endorsed from a second-order perspective), since he could not competently assess whether his first-order belief was apt.
+- **Testimony.** Jennifer Lackey ("Why We Don't Deserve Credit for Everything We Know," 2007) points out that when you arrive at a train station in Chicago and ask a passer-by for directions to the Sears Tower, you come to know where it is. But your true belief is creditable mainly to the *informant's* competence, not yours. So the credit view seems to deny knowledge from testimony.
+
+Duncan Pritchard (*The Nature and Value of Knowledge*, with Alan Millar and Adrian Haddock, 2010) proposes **anti-luck virtue epistemology**: knowledge requires *both* a safety condition (to exclude luck) *and* an ability condition (the belief must be significantly creditable to cognitive ability).
+
+Responsibilist virtue epistemologists (Linda Zagzebski, *Virtues of the Mind*, 1996) focus on traits of character like open-mindedness and intellectual courage. See [Virtue epistemology](13-virtues-and-ethics-of-belief.md#virtue-epistemology).
+
+### Knowledge first
+
+Timothy Williamson (*Knowledge and Its Limits*, 2000) drew a radical lesson from the decades of failure: **stop trying to analyze knowledge**. Knowledge is not a composite of belief plus truth plus something else. It is a basic mental state in its own right, the most general **factive mental state** (like *seeing that*, *remembering that*, and *realizing that*, all of which are ways of knowing).
+
+On this **knowledge-first** view, knowledge explains the other epistemic notions rather than the other way around:
+
+- **Evidence**: E = K. Your evidence is all and only what you know.
+- **Justification**: a belief is justified when it is supported by your evidence, that is, by your knowledge. Some knowledge-first theorists (Alexander Bird, 2007) say a justified belief is one that would be knowledge in normal circumstances.
+- **Assertion**: you should assert only what you know. See [Knowledge, assertion, and action](#knowledge-assertion-and-action).
+- **Belief**: belief is a state that *aims* at knowledge; a belief that falls short of knowledge is in some way defective. In Williamson's words, "believing p is, roughly, treating p as if one knew p."
+
+But isn't belief obviously the simpler notion, since every case of knowledge is a case of belief and not vice versa? Jennifer Nagel (*Knowledge*, ch. 4) answers with an analogy. There are far more roughly round things than perfect circles, yet the concept of a circle is more basic: "roughly circular" is defined in terms of the circle, not the other way around. Knowing may be like the circle, the ideal, with believing as an approximation that aims at it. Being more common does not make a concept more fundamental.
+
+Some supporting evidence comes from psychology. Across cultures, children learn and use the verb "know" earlier and more often than "think," and even chimpanzees can track what a rival does or does not know, although no non-human animal has been shown to track another's *false belief*. Representing knowledge seems to be cognitively simpler than representing mere belief (see [Mindreading: how we attribute knowledge](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)). Critics reply that the order in which we learn concepts need not reveal which is metaphysically basic: children talk about salt long before they learn about sodium.
+
+Why does analysis fail? Williamson argues that knowledge is **prime**: it cannot be decomposed into an internal component (belief, justification as it seems from inside) and an external component (truth, reliability of the environment). Gettier cases exploit the gap between these two components, and there is no way to close it from the inside.
+
+**Objections.** Many find E = K too restrictive. Can't a false belief be based on evidence? (A brain in a vat has the same experiences as you; doesn't it have the same evidence?) See [The new evil demon problem](06-justification.md#test-cases-for-internalism-and-externalism).
+
+Other philosophers draw a different lesson from the failure of analysis. Matt Weiner suggests that our use of "know" is guided by a set of handy but mutually inconsistent principles, so no definition can capture all our intuitions; trying is like identifying the make and model of a car assembled from scrap parts. Still others suggest turning away from knowledge to questions about what it is reasonable to believe. Knowledge-first theorists reply that resistance to analysis can be a sign that we have reached something fundamental.
+
+---
+
+## The inescapability of Gettier problems
+
+Linda Zagzebski (1994) argued that no analysis of the form "true belief + X" can escape Gettier cases, unless X guarantees truth.
+
+The argument is a dilemma:
+
+1. **Suppose X does not entail truth.** Then there are possible cases where a belief has X but is false (someone has good reasons but bad luck). Take such a case and add a stroke of good luck that makes the belief true, independently of X. The result has true belief + X but is not knowledge. So the analysis fails.
+2. **Suppose X does entail truth.** Then the truth condition is redundant, and we are committed to **infallibilism**: knowledge requires grounds that guarantee truth. But then we know very little, since almost none of our grounds guarantee truth. This leads toward [skepticism](08-skepticism.md).
+
+Zagzebski's own solution was to require that the belief be true *because of* the exercise of intellectual virtue, which, if interpreted strictly, entails truth. This anticipates the virtue-theoretic accounts. Others took the argument as support for knowledge-first epistemology.
+
+The **lesson for critical thinking** is sobering: even perfectly good reasoning can yield beliefs that are right only by accident. You cannot tell from the inside whether you are in a Gettier case. This is one reason why [fallibilism](06-justification.md#fallibilism) and [intellectual humility](13-virtues-and-ethics-of-belief.md#epistemic-humility-and-confidence) are appropriate.
+
+---
+
+## Epistemic luck
+
+Duncan Pritchard (*Epistemic Luck*, 2005) distinguished kinds of luck that do and do not undermine knowledge.
+
+**Luck compatible with knowledge:**
+- **Content luck**: it is lucky that p is true at all. (You survive a plane crash by luck; you know you survived.)
+- **Capacity luck**: it is lucky that you have the capacity to know. (You are lucky to be alive and to have working eyes.)
+- **Evidential luck**: it is lucky that you acquired the evidence. (A detective stumbles across a vital clue by chance; she can still know who did it.)
+- **Doxastic luck**: it is lucky that you believe p given the evidence (a controversial category).
+
+**Luck incompatible with knowledge:**
+- **Veritic luck**: given how the belief was formed, it is a matter of luck that it is *true*. It could easily have been false. This is the kind of luck in Gettier cases. Pritchard further divides it:
+  - **Intervening luck**: something intervenes between belief and fact (the clock stopped; the sheep was a dog; Jones's Ford was rented). Most Gettier cases.
+  - **Environmental luck**: nothing goes wrong in the causal chain, but the environment makes it easy to be wrong (fake barns).
+- **Reflective luck**: from the subject's own reflective standpoint, it is lucky that the belief is true. (Truetemp, Norman.) Whether this undermines knowledge divides internalists from externalists.
+
+**Anti-luck epistemology** holds that the job of a theory of knowledge is to exclude veritic luck. Safety is the most popular way of doing this.
+
+---
+
+## The value of knowledge
+
+Why do we care about knowledge, rather than just true belief? This is the **Meno problem**, from the passage in Plato's *Meno* quoted at the top of this chapter. A person with a true belief about the road to Larissa will get you there as reliably as someone who knows the road. So what does knowledge add?
+
+The problem is especially sharp for reliabilism, as Linda Zagzebski ("The Search for the Source of Epistemic Good," 2003), Jonathan Kvanvig (*The Value of Knowledge and the Pursuit of Understanding*, 2003), and Ward Jones (1997) pointed out. Their illustration is the **swamping problem**. A cup of excellent espresso from a reliable espresso machine is no better than an identical cup from an unreliable machine. The reliability of the source is valuable only as a means to good coffee, and once you have the good coffee, the value of reliability is "swamped." Likewise, if knowledge is just true belief from a reliable process, and reliability matters only as a means to truth, then once you have a true belief, knowledge seems to add nothing.
+
+Proposed answers:
+
+1. **Stability** (Plato's own answer). Knowledge is tied down; true belief "runs away." Williamson gives an example: a burglar who *knows* there is a diamond in the house will keep searching longer, and be less easily discouraged by misleading evidence, than one who merely truly believes it. Knowledge is more **robust**.
+2. **Achievement** (Greco, Sosa). Knowledge is a cognitive *achievement*: success because of ability. Achievements have value in themselves beyond the value of their results, as an earned victory is better than a lucky win.
+3. **The conditional probability solution** (Alvin Goldman and Erik Olsson, 2009). A true belief produced by a reliable process makes it more likely that your *future* beliefs of the same kind will also be true. The espresso machine is valuable for tomorrow's coffee.
+4. **Understanding is what matters** (Kvanvig). Perhaps knowledge is not, after all, distinctively valuable. What we really prize is **understanding**, which is discussed in the next section.
+5. **Knowledge first** (Williamson). Knowledge is valuable as the fundamental relation between mind and world. The question of what it adds to true belief assumes the wrong order of explanation.
+
+Pritchard distinguishes three versions of the value problem: explaining why knowledge is more valuable than true belief (primary); why it is more valuable than any proper subset of its parts, such as justified true belief (secondary); and why it is valuable *in kind*, not just in degree (tertiary). Each proposed answer handles some versions better than others.
+
+---
+
+## Understanding and wisdom
+
+Many philosophers now think that **understanding**, not knowledge, is the central epistemic good, especially in science and education.
+
+**Understanding-why** is grasping *why* something is the case: its causes, explanations, or reasons. You may *know that* the sky is blue (someone told you) without *understanding why* (Rayleigh scattering of short wavelengths).
+
+**Objectual understanding** is understanding a subject matter as a whole: understanding the French Revolution, understanding evolutionary biology, understanding your friend.
+
+How does understanding differ from knowledge?
+
+- **It involves grasping connections.** Understanding requires seeing how pieces of information fit together, explanatory and probabilistic relations, not just a collection of facts. Stephen Grimm and others describe it as grasping dependence relations.
+- **It comes in degrees** more obviously than knowledge. You can understand the Revolution more or less deeply.
+- **It may tolerate some luck.** Kvanvig (2003) imagined someone who learns about the Comanche from a book full of fabrications, where the parts about the Comanche happen to be accurate. Kvanvig thinks the reader understands, though she may not know; Pritchard disagrees.
+- **It may tolerate some falsehood.** Catherine Elgin (*True Enough*, 2017) argues that scientific understanding relies on models and idealizations that are, strictly, false (frictionless planes, ideal gases, perfectly rational agents). These are "felicitous falsehoods" that *enable* understanding by highlighting what matters.
+
+> **Test your understanding (literally).** You understand something when you can (1) explain it in your own words, (2) explain *why* it is so, (3) apply it to new cases, (4) answer "what if things were different?" questions, and (5) see how it connects to other things you know. You merely know it when you can repeat it. The "Check your understanding" sections of this guide aim at understanding, not recall.
+
+The **illusion of explanatory depth** (Rozenblit and Keil, 2002) shows how easily we confuse familiarity with understanding. People rate their understanding of how a zipper, flush toilet, or bicycle works as high, until asked to explain it step by step, after which their ratings drop sharply. See [Overconfidence and the illusion of explanatory depth](14-psychology-of-reasoning.md#overconfidence-and-the-illusion-of-explanatory-depth).
+
+**Wisdom** is harder still to define. Proposed accounts include:
+
+- **Humility theories**: wisdom is knowing the limits of your knowledge (Socrates). But a person who knows only that they know nothing is not thereby wise.
+- **Epistemic accuracy theories**: the wise person believes in proportion to evidence (Sharon Ryan, "What Is Wisdom?," 1999).
+- **Knowledge-of-how-to-live theories**: wisdom is knowing what matters and how to live well (Aristotle's *phronēsis*, practical wisdom; Robert Nozick, "What Is Wisdom and Why Do Philosophers Love It So?," 1989).
+- **Hybrid theories**: Ryan's later "deep rationality" account (2012) combines well-founded beliefs about how to live with the disposition to act on them.
+
+---
+
+## Knowledge-how revisited
+
+In [Chapter 1](01-what-is-epistemology.md#knowledge-how) we met the debate between **Ryle's anti-intellectualism** (knowing how is an ability, not knowledge of facts) and **Stanley and Williamson's intellectualism** (knowing how is a kind of knowing that).
+
+Cases that pull in each direction:
+
+- **For intellectualism: the ski instructor.** A ski instructor may know how to perform a complex jump she cannot perform herself (perhaps because of an injury). If knowing how were simply an ability, she wouldn't know how. So knowing how is not the same as being able.
+- **For intellectualism: the pianist who loses her hands.** She knows how to play the sonata but no longer can.
+- **For anti-intellectualism: the lucky novice.** Someone performs a difficult skating move once, by fluke. Having the ability once doesn't seem enough for knowing how; but knowing a proposition about the move isn't enough either. Know-how seems to require reliable skill.
+- **For anti-intellectualism: skilled coping.** Expert performers (athletes, musicians, drivers) often cannot articulate what they know. Hubert Dreyfus argued that expertise is largely non-propositional. Michael Polanyi (*The Tacit Dimension*, 1966) wrote: "we can know more than we can tell."
+
+For our purposes, the relevance is this: **critical thinking is a skill**. Knowing the names of fallacies is propositional knowledge; noticing a fallacy in the middle of a heated conversation, or catching your own motivated reasoning, is knowing how. Skills are built by deliberate practice with feedback, which is why [Chapter 16](16-critical-thinking-toolkit.md) includes worked cases and daily practices.
+
+---
+
+## Knowledge, assertion, and action
+
+Knowledge seems to play special roles in communication and action.
+
+**The knowledge norm of assertion** (Williamson, 2000): *One must: assert p only if one knows p.* Evidence for it:
+
+1. **Challenges.** When someone asserts something, it is natural to reply "How do you know?" or "Do you know that?" These challenges presuppose that assertion requires knowledge.
+2. **Moore's paradox.** G. E. Moore noticed that it is absurd to say "It's raining, but I don't believe it's raining," even though the statement could be true. A parallel absurdity arises with knowledge: "It's raining, but I don't know that it's raining." If assertion requires knowledge, then asserting the first conjunct represents you as knowing it, which the second conjunct denies.
+3. **Lottery assertions.** You hold one ticket in a fair lottery of a million tickets. The probability your ticket will lose is 0.999999. Yet it seems improper for a friend to tell you flatly, "Your ticket will lose," before the draw. Why? The knowledge norm explains it: nobody *knows* the ticket will lose, however probable it is.
+
+Rival norms have been proposed: a **truth norm** (assert only what is true), a **justified or reasonable belief norm** (Jennifer Lackey, Jonathan Kvanvig), and context-dependent norms. The debate is instructive about everyday speech. Whatever the right norm, sincere assertion carries **responsibility**: when you assert, you give others your word (J. L. Austin), and they are entitled to rely on you. Asserting things you do not know, as if you did, is a failure of [epistemic responsibility](13-virtues-and-ethics-of-belief.md#the-ethics-of-belief-clifford-and-james).
+
+**The knowledge norm of action** (John Hawthorne and Jason Stanley, "Knowledge and Action," 2008): *treat p as a reason for acting only if you know p.* If a surgeon operates without checking the chart, and it turns out to be the right kidney, we still criticize her: she didn't know. This norm links knowledge to [pragmatic encroachment](13-virtues-and-ethics-of-belief.md#pragmatic-encroachment): if the stakes of acting on p rise, the evidence needed to know p may rise too.
+
+---
+
+## Knowing that you know
+
+If you know something, do you also know that you know it? The **KK principle** (defended by Jaakko Hintikka, *Knowledge and Belief*, 1962) says yes: Kp → KKp.
+
+The principle is attractive to internalists: knowledge, like justification, should be available to reflection. But it faces problems:
+
+- **Animals and children** know things but lack the concept of knowledge, so they cannot know that they know.
+- **Regress.** If knowing p requires knowing that you know p, it seems to require knowing that you know that you know p, and so on.
+- **Williamson's anti-luminosity argument** (*Knowledge and Its Limits*, 2000). Call a condition **luminous** if whenever it obtains, you are in a position to know it obtains. Williamson argues that almost no conditions are luminous, not even "I feel cold." Imagine a morning that warms very gradually from freezing to hot, and you attend closely to how you feel each millisecond. At some point you stop feeling cold, but the change between successive moments is too small for you to discriminate. Knowledge requires a **margin for error**: to know you feel cold at time t, you must also feel cold at nearby times, or else your belief is not safe. Following the chain, if "feeling cold" were luminous, you would feel cold all the way to the end, which is false. So there are moments when you feel cold without being in a position to know it. If Williamson is right, **you can know without knowing that you know**.
+
+**Lesson for critical thinking:** the feeling of knowing is not a reliable guide to knowing. People feel certain of false memories (see [Memory](07-sources-of-knowledge.md#memory)), and they can know things they feel unsure of (the unconfident examinee). Externalist theories of knowledge predict exactly this gap between knowledge and our awareness of it.
+
+---
+
+## Why do we have the concept of knowledge?
+
+Edward Craig (*Knowledge and the State of Nature*, 1990) proposed a different approach. Instead of analyzing the concept of knowledge through cases, ask what the concept is *for*. Imagine a community of humans in a "state of nature" who need information about their environment. Each can observe only a small part of the world, so they must rely on others. They will need a way to identify **good informants**: people who are likely to be right about the question at hand, and whom they can recognize as such.
+
+Craig's hypothesis: the concept of knowledge evolved to **flag reliable informants**. "She knows" roughly means "she's someone you can rely on about this."
+
+This explains many features of knowledge:
+- Why it requires **truth** (bad information is useless).
+- Why it requires **reliability** (we need informants who will be right, not lucky).
+- Why it is **context-sensitive** (how reliable an informant must be depends on what is at stake). See [Contextualism](08-skepticism.md#contextualism).
+- Why **testimony** is central (knowledge is a social tool from the start). See [Chapter 12](12-social-epistemology.md).
+
+Craig's approach, sometimes called **genealogical** or **functional**, has influenced Bernard Williams (*Truth and Truthfulness*, 2002) and Miranda Fricker (*Epistemic Injustice*, 2007), who uses it to explain why wrongly discounting someone as an informant is a distinctive injustice. See [Epistemic injustice](12-social-epistemology.md#epistemic-injustice).
+
+**Objections** (several summarized by Jennifer Nagel, *Knowledge*, ch. 6):
+- **Knowers can be bad informants.** A knower may be secretive, or a liar.
+- **Gettier cases.** The Gettier victim has a justified true belief and in one sense would serve as a good informant, since he gets it right, yet we judge that he doesn't know. Craig's account has trouble explaining why.
+- **Evolutionary evidence.** Our closest animal relatives can distinguish knowledge from ignorance, but not in the way Craig's story makes basic. In experiments, chimpanzees are poor at using knowledgeable versus ignorant helpers who give clues about hidden food, yet a subordinate chimpanzee readily keeps track of whether a dominant rival knows where food is hidden (Brian Hare, Josep Call, and Michael Tomasello, 2001). The link between knowing and *acting* seems more basic than the link between knowing and *informing*.
+
+---
+
+## Summary of theories
+
+| Theory | Key condition (beyond true belief) | Handles Gettier's cases? | Handles fake barns? | Main problem |
+|---|---|---|---|---|
+| JTB | Justification | No | No | Gettier cases |
+| No false lemmas (Clark) | Not inferred from falsehood | Yes | No | Fake barns; Lehrer's Nogot variant |
+| Defeasibility (Lehrer and Paxson, Klein) | No undefeated true defeaters | Yes | Yes | Misleading defeaters (Grabit) |
+| Causal (Goldman 1967) | Appropriate causal connection | Yes | No | Mathematics, generalizations, the future |
+| Reliabilism (Goldman, Armstrong) | Reliable process (locally) | Mostly | Yes (with discrimination) | Generality problem; Truetemp; value problem |
+| Sensitivity (Nozick, Dretske) | Wouldn't believe p if p were false | Yes | Yes | Denies closure; red barn; trash chute |
+| Safety (Sosa, Williamson, Pritchard) | Couldn't easily have been wrong | Yes | Yes | Vagueness of "nearby"; necessary truths |
+| Virtue (Sosa, Greco, Zagzebski) | True because of competence | Yes | Disputed | Fake barns; testimonial knowledge |
+| Anti-luck virtue (Pritchard) | Safety + ability | Yes | Yes | Complexity |
+| Knowledge first (Williamson) | None: knowledge is unanalyzable | N/A | N/A | Seems to give up; E = K is controversial |
+| Infallibilism | Grounds guarantee truth | Yes | Yes | Leads to skepticism |
+
+---
+
+## Check your understanding
+
+**1.** Build your own Gettier case using Zagzebski's recipe.
+
+<details>
+<summary>Answer (one example)</summary>
+
+Justified false belief: Maria checks the weather app, which says it is 20 °C; she believes it is 20 °C. The app has frozen and is showing yesterday's data (bad luck). Good luck: today's temperature happens also to be 20 °C. Her belief is justified and true, but she doesn't know the temperature.
+</details>
+
+**2.** Which of the theories in this chapter explains why the stopped clock case is not knowledge? Which explain the fake barn case?
+
+<details>
+<summary>Answer</summary>
+
+Stopped clock: the causal theory (the time didn't cause the reading), defeasibility (the true proposition "the clock has stopped" defeats), sensitivity (if it weren't 2:00, he'd still believe it was), safety (he could easily have been wrong), and virtue accounts (the truth isn't due to competence). No false lemmas arguably handles it if he implicitly believes "this clock is working." Fake barns: reliabilism with discrimination, sensitivity, safety, and defeasibility; *not* no false lemmas or the causal theory; virtue accounts only with qualifications.
+</details>
+
+**3.** Explain the difference between sensitivity and safety, with an example where they give different verdicts.
+
+<details>
+<summary>Answer</summary>
+
+Sensitivity: in the nearest worlds where p is false, would you still believe p? Safety: in nearby worlds where you believe p, is p true? The trash chute case: if the trash hadn't reached the basement (a remote possibility), I would still believe it had, so the belief is insensitive; but in all nearby worlds where I believe it reached the basement, it did, so it is safe. Sensitivity says I don't know; safety says I do. The same divergence arises with "I am not a brain in a vat."
+</details>
+
+**4.** A financial pundit correctly predicted the last recession. Is this good evidence that the pundit knows how to predict recessions?
+
+<details>
+<summary>Answer</summary>
+
+Not by itself. The prediction might be a Gettier-type hit: right for the wrong reasons, or right by luck. Many pundits predict recessions every year (an old joke says economists have predicted nine of the last five recessions). To judge the pundit's knowledge, you need the full track record, including false alarms, and some check on whether the reasoning was sound. This is a question of reliability and calibration, not a single success.
+</details>
+
+**5.** What is the swamping problem, and how does the achievement view answer it?
+
+<details>
+<summary>Answer</summary>
+
+If reliability is valuable only as a means to true belief, then once a belief is true, its having been reliably produced adds no value (like a good espresso from a reliable machine versus the same espresso from an unreliable one). The achievement view says knowledge is a success due to ability, and such achievements have value beyond their products, just as a victory earned by skill is more valuable than the same result obtained by luck.
+</details>
+
+**6.** Why does Williamson think you can know something without knowing that you know it?
+
+<details>
+<summary>Answer</summary>
+
+Because knowledge requires a margin for error (safety): you know p only if you couldn't easily have been wrong. Near the boundary of a gradually changing condition, you can be in the condition while any belief that you are in it would be unsafe, since nearby cases fall on the other side. So the condition isn't "luminous." Applied to knowledge itself, this means you can know p in circumstances where you are not in a position to know that you know p.
+</details>
+
+**7.** Give one example each of content luck, evidential luck, and veritic luck.
+
+<details>
+<summary>Answer</summary>
+
+Content luck: it's lucky that I won the lottery, but I know I won (I checked the official results). Evidential luck: I happen to overhear a conversation revealing the surprise party; I now know about it. Veritic luck: I guess the answer to a quiz question and happen to be right; I didn't know.
+</details>
+
+**8.** How would Craig's account of the concept of knowledge explain the lottery assertion puzzle?
+
+<details>
+<summary>Answer</summary>
+
+On Craig's view, a knower is a reliable informant about whether p. Before the draw, no one can be an informant on *which* ticket will lose, because they have no information discriminating this ticket from the winner. Probability alone, without discriminating information, doesn't make someone a good informant. So we don't treat anyone as knowing that a particular ticket will lose, and flat assertions that it will are inappropriate.
+</details>
+
+---
+
+## Further reading
+
+**The essential papers** (all short)
+- Edmund Gettier, "Is Justified True Belief Knowledge?" *Analysis* 23 (1963). Three pages.
+- Alvin Goldman, "A Causal Theory of Knowing," *Journal of Philosophy* 64 (1967); "Discrimination and Perceptual Knowledge," *Journal of Philosophy* 73 (1976); "What Is Justified Belief?" (1979).
+- Linda Zagzebski, "The Inescapability of Gettier Problems," *Philosophical Quarterly* 44 (1994).
+- Ernest Sosa, "How to Defeat Opposition to Moore," *Philosophical Perspectives* 13 (1999).
+
+**Books**
+- Robert Nozick, *Philosophical Explanations* (Harvard University Press, 1981), ch. 3.
+- Timothy Williamson, *Knowledge and Its Limits* (Oxford University Press, 2000). Demanding but central.
+- Duncan Pritchard, *Epistemic Luck* (Oxford University Press, 2005).
+- Ernest Sosa, *A Virtue Epistemology: Apt Belief and Reflective Knowledge* (Oxford University Press, 2007).
+- Jonathan Kvanvig, *The Value of Knowledge and the Pursuit of Understanding* (Cambridge University Press, 2003).
+- Edward Craig, *Knowledge and the State of Nature* (Oxford University Press, 1990).
+- Robert Shope, *The Analysis of Knowing: A Decade of Research* (Princeton University Press, 1983). The encyclopedic survey of post-Gettier proposals.
+
+**Surveys**
+- Jonathan Jenkins Ichikawa and Matthias Steup, "The Analysis of Knowledge," *Stanford Encyclopedia of Philosophy*.
+- Duncan Pritchard, John Turri, and J. Adam Carter, "The Value of Knowledge," *Stanford Encyclopedia of Philosophy*.
+- Jennifer Nagel, *Knowledge: A Very Short Introduction* (2014), chs. 4–5.
+
+---
+
+[← Previous: Language, Concepts, and Definitions](04-language-concepts-and-definitions.md) · [Contents](README.md) · [Next: Justification →](06-justification.md)

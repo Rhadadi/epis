@@ -1,0 +1,297 @@
+@title Chapter 12 — Social Epistemology: Knowing Together
+@chime
+@opening Chapter twelve. Social Epistemology: Knowing Together.
+@pause 1.2
+@quote "He who knows only his own side of the case, knows little of that."
+@attr John Stuart Mill, On Liberty.
+@pause 0.8
+@quote "The essence of journalism is a discipline of verification."
+@attr Bill Kovach and Tom Rosenstiel, The Elements of Journalism.
+@pause 0.8
+Traditional epistemology pictured a lone knower: Descartes in his room, doubting everything and rebuilding knowledge from his own resources. But almost nothing you know was acquired that way. You know because you trust teachers, textbooks, doctors, journalists, maps, encyclopedias, scientists, and friends. You live inside a vast social system for producing and sharing knowledge.
+Social epistemology studies that system. It asks: When should we trust others? How can a non-expert choose between experts? What should you do when someone as smart and well-informed as you disagrees? How do communities go wrong, through echo chambers, cascades, propaganda, and prejudice? How should institutions be designed to produce knowledge? These are the questions that matter most for understanding public debates.
+@pause 0.6
+Almost everything you know, you know because someone told you. This chapter is about knowing together.
+We'll ask when it's rational to trust others, how a non-expert can choose between experts, and what to do when a thoughtful person disagrees with you. We'll look at epistemic injustice, at echo chambers and information cascades, at the wisdom and the madness of crowds, and at misinformation, propaganda, and conspiracy theories.
+We'll finish with the institutions that let a whole society know things, and with a new question: what happens to our knowledge when we rely on artificial intelligence?
+@section Why knowledge is social
+John Locke expressed the individualist ideal: "we may as rationally hope to see with other men's eyes, as to know by other men's understanding" — Essay. On this view, taking something on someone else's word is at best a substitute for knowledge.
+John Hardwig argued the opposite. He described a physics experiment reported in a paper with ninety-nine authors, in which no single author could vouch for every part of the work; each relied on the others' competence and honesty. Since then, the scale has grown: the twenty twelve papers announcing the discovery of the Higgs boson at CERN each had thousands of authors. Hardwig concluded that rational belief often requires deference: a rational layperson recognizes that they are epistemically dependent on experts, and appropriately defers to them. In a complex society, refusing to trust anyone is not autonomy but ignorance.
+Several lines of thought support the social view.
+@item Testimony is a basic source of knowledge.
+@item The division of cognitive labor: a scientific community does better when its members pursue different approaches, even when some individuals are following approaches that seem individually less promising.
+@item Veritistic social epistemology — Alvin Goldman, Knowledge in a Social World, nineteen ninety-nine: social practices and institutions can be evaluated by how well they promote true belief and reduce error across a community.
+@item Knowledge as a social concept. Edward Craig's account suggests that the concept of knowledge exists in order to identify good informants.
+@section Trust and epistemic dependence
+To trust someone is to accept vulnerability to them. Annette Baier distinguished trust from mere reliance: I rely on my alarm clock, but I trust my friend. When trust is betrayed, we feel not just disappointment, as with a broken clock, but betrayal, because we expected goodwill.
+Onora O'Neill's BBC Reith Lectures made a point that has become central to discussions of public trust: what matters is not trust as an attitude, but trustworthiness as a property of those we trust. We should aim for intelligent trust, which is placed in those who are actually trustworthy and withheld from those who aren't. She also argued that demands for transparency do not automatically produce trustworthiness: publishing masses of information that no one can assess may make deception easier, not harder.
+So the question is not "How much should I trust?" but "Whom should I trust, about what, and how much?" Trustworthiness has several components.
+@item Competence: does the source know the subject?
+@item Honesty: does the source say what it believes?
+@item Reliability: does the source have a good track record?
+@item Good faith: does the source have your interests, or the truth, at heart, rather than interests that conflict with them?
+Elizabeth Anderson argued that ordinary people, without scientific training, can make reasonable judgments about scientific testimony by using second-order criteria that are accessible to them.
+@item One. Expertise: Does the person have relevant credentials? Do they publish in peer-reviewed venues in the relevant field?
+@item Two. Honesty: Is there evidence of conflicts of interest, fraud, misrepresentation of others' views, or cherry-picking?
+@item Three. Epistemic responsibility: Do they respond to criticism? Do they submit their claims to peer review? Do they engage with counter-evidence, or do they evade it? Do they keep repeating claims that have been refuted?
+@item Four. Consensus: Where do most qualified experts stand? Is there a genuine consensus, or real ongoing debate among qualified people?
+Anderson noted that these criteria can be applied by a person with a high school education and access to the internet.
+@section Experts and novices
+@subsection The novice-expert problem
+Suppose you are not an expert, and two people presenting themselves as experts disagree. Perhaps two doctors give conflicting advice, or two economists make opposite predictions. You can't assess the evidence directly; that's why you need experts. How can you rationally decide whom to believe?
+This is the novice or two-expert problem, posed by Alvin Goldman in "Experts: Which Ones Should You Trust?". Goldman identified five sources of evidence available to a novice.
+A: Arguments presented by the contending experts. You may not be able to evaluate the substance of their arguments, but you may be able to see which expert gives better rebuttals: which one answers the other's objections directly, and which one evades them. Goldman calls this dialectical superiority. Caution: rhetorical skill is not the same as expertise.
+B: Agreement from other experts. How many other experts agree with each? Caution: numbers matter only if the agreeing experts are independent. A thousand followers of a single guru who accept whatever he says add no evidence beyond the guru's own. Agreement is strong evidence when experts reached their views separately, through their own examination of the evidence.
+C: Appraisals by meta-experts. Credentials, degrees, academic positions, publication records, professional honors, and ratings by other experts. These are imperfect but real signals.
+D: Evidence of interests and biases. Does an expert have a financial stake, an ideological commitment, or a career investment in a particular answer? Such interests don't make someone wrong, but they are a reason for extra scrutiny.
+E: Track records. Goldman argued this is the most important. Even a novice can sometimes check an expert's past claims. You can't evaluate an astronomer's theory, but you can check whether the eclipse she predicted occurred. Goldman distinguishes esoteric statements, which only experts can assess, from exoteric ones, which laypeople can check, and notes that many expert claims eventually produce exoteric consequences.
+@subsection Expertise and its limits
+What is expertise? Harry Collins and Robert Evans distinguish contributory expertise — the ability to do the science: to design experiments, publish, advance the field — from interactional expertise — fluency in the language of a field without the ability to contribute to it, as a good science journalist or sociologist of science may have. They also warn against the "problem of extension": extending the right to make technical judgments to people who lack the relevant expertise.
+Expertise has limits of domain. A great physicist is not thereby an expert in nutrition or epidemiology. There is a recurring pattern sometimes called the "Nobel disease": distinguished scientists who embrace poorly supported ideas outside their field. The two-time Nobel laureate Linus Pauling promoted megadoses of vitamin C for colds and cancer beyond what the evidence supported. Kary Mullis, who won the Nobel Prize for inventing the polymerase chain reaction, denied that HIV causes AIDS. The philosopher Nathan Ballantyne calls this epistemic trespassing: making judgments in a field where one lacks competence, while relying on authority earned elsewhere.
+Expertise has limits of predictability. Philip Tetlock collected tens of thousands of predictions from hundreds of experts on political and economic questions over two decades. On long-range forecasts, the experts did little better than chance, and worse than simple statistical rules. He found a difference between hedgehogs, who "know one big thing" and extend it confidently, and foxes, who "know many things," draw on many sources, and are comfortable with doubt. Foxes forecast better. This fits the conditions for reliable expert intuition identified by Kahneman and Klein: regular environments and rapid feedback. Politics and long-range economics offer neither.
+Expertise is still real. In domains with established knowledge and reliable methods, such as medicine, engineering, chemistry, and structural geology, experts know vastly more than novices. The failures of expert prediction in chaotic domains do not show that expert knowledge is worthless elsewhere. Tom Nichols argues that the collapse of trust in expertise is a serious threat, and that the right response to experts' fallibility is better use of expertise, not its rejection.
+@subsection "Do your own research"
+The slogan "do your own research" appeals to a real value, epistemic autonomy. But for a novice, "research" usually means searching the internet for claims one can't evaluate. Nathan Ballantyne, Jared Celniker, and David Dunning argue that for most people on most technical questions, the best "research" is research into which sources are trustworthy, not an attempt to evaluate the primary evidence. The skill that matters is source evaluation.
+@item Lateral reading. Sam Wineburg and Sarah McGrew, Stanford History Education Group, compared how professional fact-checkers, historians, and university students evaluated unfamiliar websites. Students and even historians tended to read vertically, staying on the site and judging it by its appearance and content. Fact-checkers read laterally: they almost immediately opened new tabs to see what other sources said about the site and its sponsors. The fact-checkers reached better judgments faster.
+@item SIFT, a method developed by Mike Caulfield: Stop; Investigate the source; Find better coverage; Trace claims, quotes, and media to their original context.
+@section Peer disagreement
+You carefully work out that your share of the restaurant bill is forty-three dollars. Your friend, who is just as good at mental arithmetic as you and has the same information, carefully works out that it is forty-five dollars. What should you believe?
+This example comes from David Christensen. It introduces one of the most discussed problems in contemporary epistemology: peer disagreement. An epistemic peer on a question is someone who has roughly the same evidence and is roughly as competent at evaluating it as you are.
+In the restaurant case, almost everyone agrees you should lower your confidence and recalculate. The hard question is what to do in cases like politics, philosophy, religion, or economics, where you disagree with intelligent, informed people and have discussed the matter at length.
+@subsection Conciliationism
+Conciliationism, or the equal weight view, holds that when you learn that a peer disagrees, you should move substantially toward their view, giving their opinion roughly the same weight as your own. Adam Elga and David Christensen defended versions. The key principle is independence: when assessing how much to trust your peer's judgment, you shouldn't rely on the very reasoning that is in dispute. You can't simply say, "But my reasoning shows that the answer is forty-three dollars, so my friend must have made a mistake," because your friend can say exactly the same.
+Objections.
+@item Spinelessness. Conciliationism seems to require suspending judgment on almost every contested question in politics, philosophy, and religion, since there are intelligent, informed people on every side.
+@item Self-undermining. Conciliationism itself is disputed by epistemic peers. So by its own lights, conciliationists should lose confidence in conciliationism.
+@item Extreme cases. If your friend says the share is four hundred fifty dollars, you can reasonably conclude that they have made a mistake. Conciliationists accept this: in extreme cases, the disagreement itself is evidence that the peer is not functioning properly on this occasion.
+@subsection Steadfastness
+Steadfast views hold that you may, at least sometimes, keep your belief in the face of peer disagreement. Thomas Kelly and Peter van Inwagen have defended versions. Arguments include.
+@item Asymmetric access. You have direct access to your own reasoning and evidence, but not to your peer's. You know you are not joking, drunk, or careless, but you can't be sure the same is true of them.
+@item The right reasons view. If your reasoning was in fact correct, the evidence supports your view, and learning that someone else reasoned badly doesn't change what the evidence supports.
+Objection. From the inside, both parties think they are the one who reasoned correctly. A rule that says "stay steadfast if you're right" can't be followed by anyone who is unsure whether they are right, which is to say, everyone.
+@subsection The total evidence view
+Thomas Kelly proposed a middle position. What you should believe depends on all your evidence: both the first-order evidence about the question and the higher-order evidence provided by the fact that a peer disagrees. Sometimes the first-order evidence is so strong that disagreement should move you only a little; sometimes it is weak, and disagreement should move you a lot. How much weight to give a peer's view depends on the case.
+@subsection Higher-order evidence
+Higher-order evidence is evidence about your own capacity to evaluate evidence. Christensen gives examples.
+@item The hypoxic pilot. You are a pilot calculating whether you have enough fuel to reach a more distant airport. You work it out and conclude you do. Then you remember that at this altitude, you may be suffering from hypoxia, which impairs reasoning without the sufferer noticing. Your calculation seems fine to you. Should you trust it?
+@item The drug. You are told you have been given a drug that, half the time, subtly impairs logical reasoning without your noticing.
+Most people think you should lower your confidence, even though your first-order reasoning is in fact correct. But this creates puzzles. If the evidence really does support your conclusion, why should evidence about you change what you should believe about fuel? Some philosophers, Maria Lasonen-Aarnio, defend level-splitting: you may believe the conclusion while believing your evidence may not support it. Others argue that this combination, "P, but my evidence probably doesn't support P," is irrational.
+The practical point. We have abundant higher-order evidence about human reasoning in general: people are subject to motivated reasoning, confirmation bias, and overconfidence, especially about politically and personally charged topics. This is a reason to hold our views on such topics with less confidence than they feel as though they deserve.
+@subsection Uniqueness and permissivism
+Is there always exactly one rational response to a body of evidence?
+@item The uniqueness thesis: for any body of evidence and any proposition, there is exactly one rational attitude to take. If so, when peers with the same evidence disagree, at least one of them is being irrational.
+@item Permissivism: sometimes more than one attitude is rational. Different reasonable standards — for example, different weightings of simplicity against fit to data — can lead rational people to different conclusions from the same evidence.
+If permissivism is true, reasonable disagreement is possible without anyone being irrational. That fits a common experience, but it raises a worry: if more than one belief is permitted, isn't the choice between them arbitrary?
+@subsection Deep disagreement
+Sometimes disagreement goes down to the foundations: the parties disagree not only about a conclusion but about what counts as evidence or which sources are authoritative — scripture versus science, a party's leader versus independent media. Robert Fogelin argued that such disagreements cannot be resolved by argument, because argument requires shared standards. This connects with Wittgenstein's idea of hinge propositions.
+Deep disagreements are hard, but not always hopeless. Strategies include.
+@item Finding shared commitments, however basic, and reasoning from them.
+@item Immanent critique: arguing from within the other person's framework, showing that it leads, by its own standards, to conclusions they reject.
+@item Appealing to practical reasons for shared methods. Michael Lynch argues that in a pluralistic society, we have practical and political reasons to adopt public, checkable methods — observation, experiment, logic — as the common currency of debate, because they are the methods whose results can be shared across frameworks.
+@item Patience and relationships, since change in fundamental frameworks tends to happen through trust built over time, not through single arguments.
+@section Why reasonable people disagree
+John Rawls, in Political Liberalism, gave a list he called the burdens of judgment: reasons why sincere, reasonable people, using their reason conscientiously, will still disagree. This list is invaluable for approaching disagreements charitably.
+@item One. The evidence is conflicting and complex, and hard to assess.
+@item Two. Even when we agree on what considerations are relevant, we may weigh them differently.
+@item Three. Our concepts are vague and subject to hard cases.
+@item Four. Our total experience shapes how we assess evidence and weigh values, and people's life experiences differ.
+@item Five. There are often different kinds of normative considerations on both sides of an issue, and it is hard to make an overall assessment.
+@item Six. Any system of social institutions can admit only some values; we must select, and value conflicts may have no single right answer.
+The burdens of judgment do not imply that every view is equally reasonable. But they explain why you should expect intelligent, well-meaning people to disagree with you, and why disagreement alone is not evidence that the other side is stupid or malicious. That is the first step toward productive discussion.
+@section Epistemic injustice
+Miranda Fricker — Epistemic Injustice: Power and the Ethics of Knowing, two thousand seven — identified a distinctive kind of wrong: a wrong done to someone in their capacity as a knower. She distinguished two forms.
+@subsection Testimonial injustice
+Testimonial injustice occurs when a speaker receives less credibility than they deserve because of identity prejudice in the hearer: prejudice based on race, gender, class, accent, age, religion, disability, or other features of social identity.
+Fricker's central literary example is Tom Robinson in Harper Lee's To Kill a Mockingbird: a Black man in nineteen thirties Alabama, falsely accused, whose truthful testimony is disbelieved by an all-white jury because of racial prejudice. Another of her examples is from The Talented Mister Ripley: Marge Sherwood suspects, correctly, that Tom Ripley has murdered her fiancé; her suspicions are dismissed by her fiancé's father with the line, "Marge, there's female intuition, and then there are facts."
+Testimonial injustice harms the speaker, who is wronged as a knower, and it harms the hearer and the community, who lose access to true information.
+A documented real-world example: a twenty sixteen study — Kelly Hoffman and colleagues, PNAS — found that a substantial proportion of white medical students and residents surveyed endorsed false beliefs about biological differences between Black and white people — for instance, that Black people's skin is thicker — and that those who endorsed such beliefs rated a Black patient's pain as lower and made less accurate treatment recommendations.
+@subsection Hermeneutical injustice
+Hermeneutical injustice occurs when a gap in a society's shared concepts leaves someone unable to make sense of, or communicate, an important area of their own social experience, because their group has been excluded from the processes that shape those concepts.
+Fricker's example: before the term sexual harassment was coined in the mid-nineteen seventies in the United States, women who experienced unwanted sexual attention at work lacked a shared concept for what was happening to them. It was often dismissed as flirtation or as a personal problem. Once the concept existed, it became possible to recognize the experience as a distinct wrong, to describe it, and to seek remedies. Fricker gives a similar account of postnatal depression before it was widely recognized.
+@subsection Related ideas
+@item Credibility excess — José Medina, The Epistemology of Resistance, twenty thirteen: giving someone more credibility than they deserve because of their identity, which can also cause harm, for example by inflating the confidence of the privileged.
+@item Testimonial smothering: a speaker truncates their own testimony because they expect the audience won't understand or will misuse it.
+@item Contributory injustice: hearers refuse to use the interpretive resources that marginalized groups have developed.
+Fricker proposed a corresponding virtue, testimonial justice: a reflexive, critical awareness of how prejudice may be distorting your credibility judgments, and the habit of correcting for it.
+@pause 0.3
+@aside For critical thinkers, the lesson cuts two ways. Credibility should be assigned on the basis of competence and sincerity on the question at hand, not identity. Discounting someone because of who they are is a reasoning error, as well as a moral one. But so is automatically deferring to someone because of who they are, without attention to their competence and evidence. Both are failures of calibration.
+@pause 0.3
+@section Standpoint and feminist epistemology
+Feminist epistemology asks how gender, and social position more generally, affects the production of knowledge. Lorraine Code posed the question in the title of a nineteen eighty-one paper: "Is the Sex of the Knower Epistemologically Significant?"
+Some well-documented examples of androcentric, male-centered, bias in knowledge production.
+@item Medical research historically underrepresented women. In the United States, the NIH Revitalization Act of nineteen ninety-three required that women and minorities be included in clinical research funded by the National Institutes of Health. Drug doses, symptoms, and side effects had often been characterized mainly in men. Heart attack symptoms, for instance, can present differently in women, and this was long underappreciated.
+@item Crash-test design relied for decades mainly on dummies based on an average male body. A University of Virginia study found that belted female drivers had substantially higher odds of severe injury than belted male drivers in comparable crashes. Caroline Criado Perez's Invisible Women documents many such data gaps.
+@item Textbook narratives. The anthropologist Emily Martin showed how descriptions of fertilization in biology textbooks cast the sperm as active and heroic and the egg as passive, reflecting gender stereotypes more than the biology, in which the egg plays an active role.
+Standpoint theory — Nancy Hartsock, nineteen eighty-three; Sandra Harding, Whose Science? Whose Knowledge? nineteen ninety-one; Patricia Hill Collins, Black Feminist Thought, nineteen ninety — makes two main claims.
+@item One. The situated knowledge thesis: social position shapes what one experiences, notices, and can know.
+@item Two. The epistemic advantage thesis: marginalized social positions can offer epistemic advantages on certain questions, particularly about the workings of social power, because those who are disadvantaged by a social order often have to understand both their own perspective and that of the dominant group. W E B Du Bois — The Souls of Black Folk, nineteen oh-three — described a related "double consciousness," and Collins described the "outsider within" position of Black women domestic workers who observed white families intimately while remaining outsiders.
+Standpoint theorists emphasize that the advantage is not automatic. It is an achievement that requires critical reflection, often collective, on one's experience. Alison Wylie defends a careful version that avoids claiming automatic privilege.
+Objections. Critics worry about essentialism, treating "women's experience" as uniform, about relativism — if knowledge is situated, is there objective knowledge? — and about how to adjudicate between standpoints. Defenders reply that standpoint theory is a claim about where to look for evidence that dominant perspectives have missed, and that the evidence found must still be tested. In this sense standpoint theory is a contribution to objectivity, as in Harding's strong objectivity and Helen Longino's account of objectivity through diverse critical communities.
+@section Echo chambers and epistemic bubbles
+The philosopher C Thi Nguyen drew a distinction that clarifies much confused discussion about polarization.
+An epistemic bubble is a social information network in which other voices are not heard, through omission. Your friends share your views; your news feed shows you what you already like. Bubbles can arise innocently, from ordinary social sorting. They are fragile: exposure to other views and evidence can pop them.
+An echo chamber is a social structure in which other voices are actively discredited. Members are taught that outsiders are untrustworthy, malicious, or corrupt. The key mechanism is the manipulation of trust, not the omission of information. An echo chamber is not fragile: when members encounter contrary views, the chamber has already prepared them to reject them. Worse, it may have predicted the contrary views, "the mainstream media will tell you that…", so their appearance confirms the chamber's worldview. Nguyen calls this a disagreement-reinforcement mechanism. Cults and some political movements operate this way.
+The distinction has practical consequences.
+@item Bubbles are fixed by exposure.
+@item Echo chambers are not fixed by exposure, which can make them stronger. They are fixed by rebuilding trust. Nguyen suggests something like a "social-epistemic reboot": a person must be willing to temporarily re-extend trust to sources they were taught to distrust.
+Nguyen discusses the case of Derek Black, the son of the founder of the white nationalist website Stormfront, and himself a rising figure in the movement. At college, he was invited by a classmate to weekly Shabbat dinners, where, over many months, he developed friendships with people outside the movement, and eventually engaged with their arguments. He publicly renounced white nationalism in twenty thirteen. The story is told in Eli Saslow's Rising Out of Hatred, twenty eighteen. Arguments mattered, but they could only work after trust had been built.
+The empirical picture of "filter bubbles." Eli Pariser warned that personalization algorithms would isolate people in bubbles. The evidence is more mixed than the popular picture suggests.
+@item Matthew Gentzkow and Jesse Shapiro found that ideological segregation in online news consumption in the US was low compared with segregation in face-to-face networks.
+@item In large experiments conducted with Meta during the twenty twenty US election, reducing users' exposure to content from like-minded sources on Facebook, or changing their feeds to chronological order, changed what they saw but had no measurable effect on their political polarization over the three-month study period.
+@item Christopher Bail and colleagues paid Twitter users to follow a bot that retweeted messages from the opposing political side. Republicans who followed a liberal bot became more conservative; Democrats who followed a conservative bot became slightly more liberal — the latter effect was not statistically significant.
+This is consistent with Nguyen's point: mere exposure to the other side, especially in a hostile, performative environment, does not produce understanding. The conditions under which people encounter opposing views matter a great deal.
+@section Conformity, cascades, and herding
+@subsection Conformity
+In Solomon Asch's famous experiments, participants were asked to say which of three lines matched a reference line in length. The task was easy: alone, people almost never erred. But each participant was placed in a group of confederates who, on certain trials, unanimously gave the same wrong answer. About a third of participants' responses on these trials conformed to the obviously wrong majority, and about three-quarters of participants conformed at least once. When just one other person in the group gave the correct answer, conformity dropped sharply.
+@pause 0.3
+@cue The lesson.
+a single dissenting voice can free others to report what they actually see. If you believe the group is wrong, saying so may matter more than you think.
+@pause 0.3
+Pluralistic ignorance occurs when most members of a group privately reject a norm but wrongly believe that most others accept it, and so go along with it. Deborah Prentice and Dale Miller found that many university students were privately less comfortable with campus drinking practices than they believed their peers were.
+@subsection Information cascades
+Suppose two restaurants, A and B, are side by side. You have a small private reason to think A is better. But you see that the two people ahead of you have both gone into B. You might reasonably infer that they had private information favoring B, and that the combined evidence favors B over your own weak signal. So you go into B. The next person sees three people choose B, and follows, and so on. Soon everyone is going to B, even if most people's private information favored A.
+This is an information cascade. Each individual's choice is rational given what they see. But once a cascade starts, people stop acting on their private information, so their choices carry no new information, and the cascade can lock in a mistake. Cascades are also fragile: a small piece of new public information can reverse them.
+Timur Kuran and Cass Sunstein described availability cascades, in which a belief becomes more plausible the more it is repeated in public discourse, as each repetition makes it more available and each person's expression is partly driven by the desire to fit in.
+@pause 0.3
+@cue The lesson.
+the fact that many people believe something is weaker evidence than it appears when their beliefs are not independent. Ask whether the crowd has independent information, or whether each member is copying the others.
+@pause 0.3
+@section The wisdom and madness of crowds
+@subsection The wisdom of crowds
+In nineteen oh-six, at a livestock fair in Plymouth, England, Francis Galton collected about eight hundred entries in a competition to guess the weight of an ox after slaughter and dressing. Few individuals guessed accurately, but the median of the guesses was one thousand two hundred seven pounds; the actual weight was one thousand one hundred ninety-eight pounds. The collective judgment was remarkably accurate.
+The mathematical basis for this effect was discovered earlier. The Condorcet jury theorem states: if each voter in a group independently has a probability greater than one half of being right on a yes or no question, then the probability that the majority is right increases with the size of the group, approaching certainty. But if each voter's probability of being right is less than one half, the majority becomes more likely to be wrong as the group grows.
+James Surowiecki identified conditions for crowd wisdom.
+@item One. Diversity of opinion — people have different private information.
+@item Two. Independence — people's opinions are not determined by those around them.
+@item Three. Decentralization — people draw on local knowledge.
+@item Four. Aggregation — some mechanism turns private judgments into a collective decision.
+When these conditions fail, crowds fail. Jan Lorenz and colleagues showed experimentally that when people could see others' estimates, the diversity of estimates shrank and the crowd's accuracy got worse, even as participants became more confident.
+Prediction markets, in which people bet on outcomes, and forecasting tournaments use aggregation to produce accurate predictions. The economist Friedrich Hayek argued that market prices aggregate knowledge dispersed among millions of people, knowledge that no central planner could ever collect.
+@subsection The madness of crowds
+Charles Mackay's Extraordinary Popular Delusions and the Madness of Crowds catalogued financial bubbles, witch hunts, and crazes. Modern historians, such as Anne Goldgar in Tulipmania, two thousand seven, argue that some of his stories, including the Dutch tulip mania, were exaggerated.
+Groups can go wrong in characteristic ways.
+@item Groupthink. Irving Janis analyzed foreign policy fiascos, such as the Bay of Pigs invasion, in which cohesive groups of intelligent advisers suppressed doubts, created an illusion of unanimity, and failed to consider alternatives. Remedies include assigning a devil's advocate, having members form independent judgments before discussion, bringing in outside experts, and having leaders withhold their own view at first.
+@item Group polarization. When like-minded people deliberate together, they tend to end up with more extreme views than they started with — Cass Sunstein, Going to Extremes, two thousand nine. In an experiment in Colorado, groups of liberals from Boulder and conservatives from Colorado Springs discussed issues such as climate change and affirmative action. After deliberation, the liberal groups became more liberal and the conservative groups more conservative, and each group became more internally uniform — David Schkade, Cass Sunstein, and Reid Hastie, two thousand seven.
+@item Cascades and conformity, as above.
+The key difference between wise and mad crowds is independence. A crowd of independent judges aggregates information; a crowd of people imitating each other amplifies error.
+@section Group knowledge and belief
+Can a group, such as a court, a scientific committee, a government, or a corporation, believe or know something?
+@item Summativism: a group believes p if and only if all or most of its members believe p.
+@item Non-summativism — Margaret Gilbert, On Social Facts, nineteen eighty-nine: a group can believe p through joint acceptance, even if no member personally believes p. A committee may officially accept a finding that each member privately doubts.
+@subsection The discursive dilemma
+Aggregating individual judgments into group judgments raises a startling problem, first noticed in law and generalized by Philip Pettit and Christian List.
+Three judges must decide whether a defendant is liable for breach of contract. The law says the defendant is liable if and only if there was a valid contract and the defendant breached it.
+@item Judge one. Valid contract? Yes. Breach? Yes. Liable? Yes.
+@item Judge two. Valid contract? Yes. Breach? No. Liable? No.
+@item Judge three. Valid contract? No. Breach? Yes. Liable? No.
+@item Majority. Valid contract? Yes. Breach? Yes. Liable? No.
+Each judge is individually consistent. But the majority accepts both premises and rejects the conclusion that follows from them. Majority voting on each proposition produces an inconsistent group view. The court must choose between a premise-based procedure — vote on the premises, derive the conclusion: liable — and a conclusion-based procedure — vote on the conclusion: not liable. List and Pettit proved an impossibility theorem: no aggregation procedure can satisfy a set of apparently reasonable conditions and always produce consistent group judgments.
+The lesson for institutions: how a group reaches decisions affects what it concludes, and there is no neutral, obviously correct procedure. The lesson for debates: "the public believes X" or "the committee concluded Y" may conceal a more complicated pattern of individual views.
+@section Misinformation, disinformation, and propaganda
+@subsection Definitions
+@item Misinformation: false or misleading information, regardless of intent.
+@item Disinformation: false or misleading information spread deliberately to deceive.
+@item Malinformation: true information used to cause harm, such as leaked private information — Claire Wardle and Hossein Derakhshan, Information Disorder, Council of Europe, twenty seventeen.
+@item Fake news: Axel Gelfert defines it as the deliberate presentation of typically false or misleading claims as news, where the claims are misleading by design.
+@subsection How falsehood spreads
+A large study of news stories shared on Twitter from two thousand six to twenty seventeen found that false news spread "farther, faster, deeper, and more broadly than the truth," and that false stories were about seventy percent more likely to be retweeted than true ones. False news was more novel and inspired more surprise and disgust. Automated bots spread true and false news at similar rates, so the difference was due to human sharing.
+Other mechanisms.
+@item The illusory truth effect — Lynn Hasher, David Goldstein, and Thomas Toppino, nineteen seventy-seven: repeated statements are judged more likely to be true, simply because repetition makes them feel familiar. Lisa Fazio and colleagues found that this happens even when people know the correct answer.
+@item The continued influence effect: misinformation continues to influence people's reasoning after it has been corrected and they remember the correction. Corrections work better when they provide an alternative explanation to fill the gap left by the retracted claim.
+@item Inattention. Gordon Pennycook and David Rand found that susceptibility to fake news headlines was better predicted by a tendency not to think carefully than by partisan motivated reasoning, and that simple prompts asking people to consider accuracy reduced their sharing of false headlines. The relative roles of inattention and motivated reasoning are debated.
+@subsection Countermeasures
+@item Debunking: correcting after the fact, ideally with a clear alternative explanation, leading with the truth rather than repeating the myth.
+@item Prebunking or inoculation — William McGuire, nineteen sixty-one; Sander van der Linden, Jon Roozenbeek, and colleagues: exposing people in advance to weakened forms of manipulative techniques so that they recognize them later. The online game Bad News, in which players act as fake news producers, was found to reduce players' susceptibility to misinformation techniques.
+@item Accuracy nudges: prompting people to think about whether content is true before sharing.
+@item The "backfire effect", in which corrections supposedly strengthen false beliefs, was widely reported after a twenty ten study, Brendan Nyhan and Jason Reifler, but later large studies found it to be rare. Corrections generally work, at least partly.
+@subsection Propaganda
+Propaganda is communication designed to shape beliefs and actions, typically by bypassing rational evaluation. Walter Lippmann described the "manufacture of consent." Edward Bernays, a pioneer of public relations, published a book frankly titled Propaganda. Edward Herman and Noam Chomsky proposed a "propaganda model" in which the structure of commercial mass media — ownership, advertising, reliance on official sources, "flak," and a unifying ideology — filters news without any need for direct censorship.
+Jason Stanley argued that the most dangerous propaganda is undermining propaganda: communication that presents itself as embodying an ideal — such as freedom, security, or reason — while working to erode that very ideal.
+Christopher Paul and Miriam Matthews of the RAND Corporation described a modern style of state propaganda as a "firehose of falsehood": high volume, multichannel, rapid, continuous, and repetitive, with no commitment to objective reality and no commitment to consistency. Its aim is often not to make people believe a particular falsehood, but to create confusion and exhaustion, so that people stop believing it is possible to know what is true. Hannah Arendt's observation, quoted at the start of Chapter eleven, describes the goal.
+@section Conspiracy theories
+A conspiracy theory, in the neutral sense, is an explanation of an event that cites the secret action of a relatively small group of agents as its main cause.
+Some conspiracies are real. The Watergate break-in and cover-up. The Tuskegee syphilis study, in which the US Public Health Service observed the progression of untreated syphilis in hundreds of Black men while withholding effective treatment from them after penicillin became available. The tobacco industry's decades-long concealment of what its own research showed about smoking and cancer. The Volkswagen emissions scandal, in which the company installed software to cheat emissions tests. Given this history, dismissing every conspiracy claim as irrational would itself be irrational.
+The particularist view holds that conspiracy theories should be evaluated one by one, on their evidence, like any other explanation. The generalist view holds that there are features common to many conspiracy theories that make them, as a class, epistemically suspect.
+Keeley identified features of unwarranted conspiracy theories.
+@item Errant data. They focus on anomalies in the official account, "unexplained" details. But every real event, examined closely, has unexplained details. Messiness is normal.
+@item Self-sealing. Evidence against the theory is reinterpreted as evidence for it: the absence of evidence shows how good the cover-up is. The theory becomes unfalsifiable.
+@item Growth. To accommodate contrary evidence, the conspiracy must keep expanding to include more people: the scientists, the journalists, the fact-checkers, the government agencies of rival countries.
+@item Competence. The conspirators must be both incredibly powerful and competent, to keep the secret, and strangely careless — to leave the clues the theorist has found.
+The physicist David Robert Grimes modeled how long conspiracies involving many people could stay secret, based on the rate at which real conspiracies were exposed. He estimated that a faked moon landing, requiring the silence of an estimated four hundred eleven thousand NASA employees and contractors, would have been exposed within about four years. The model is rough, but the principle is sound: the more people a secret requires, the less likely it is to hold.
+Quassim Cassam argues that many popular conspiracy theories are best understood not as sincere attempts at explanation but as forms of political propaganda, and characterizes them as typically speculative, contrarian, esoteric, amateurish, and "premodern" — assuming that significant events must be intended by someone.
+Psychology. Karen Douglas, Robbie Sutton, and Aleksandra Cichocka suggest that conspiracy beliefs appeal to epistemic needs, for understanding and certainty, existential needs, for security and control, and social needs — for a positive image of oneself and one's group. Researchers have also documented a proportionality bias: people feel that big events must have big causes, which makes lone gunmen and random accidents feel unsatisfying. Michael Wood, Karen Douglas, and Robbie Sutton found that people who believed Princess Diana was murdered were more likely also to believe she faked her own death. This suggests that for some believers, what matters is not any specific theory but a general conviction that the official story is false.
+Evaluating a conspiracy claim.
+@item One. Is there positive evidence for the conspiracy, or only anomalies in the official account?
+@item Two. Is the theory falsifiable? What evidence would count against it?
+@item Three. How many people would have to keep the secret, for how long?
+@item Four. Does the theory require the conspirators to be both omnipotent and incompetent?
+@item Five. Does it keep growing to absorb contrary evidence?
+@item Six. Who promotes it, and what is their track record?
+@item Seven. Compare explanations: which is simpler and better supported?
+@item Eight. Have independent investigators — journalists, courts, rival governments, academic researchers — with an incentive to expose the conspiracy examined it?
+@section Epistemic institutions
+Societies build institutions to produce, check, store, and distribute knowledge. Their design matters as much as individual reasoning.
+@item Science: peer review, replication, open publication, organized skepticism. Peer review is imperfect, it rarely catches fraud and can be conservative, but it provides a first check.
+@item Journalism: "The essence of journalism is a discipline of verification" — Kovach and Rosenstiel. Good journalism involves independent sourcing, fact-checking, corrections policies, and the separation of news from opinion.
+@item Courts: adversarial examination, rules of evidence, cross-examination, appeals, and standards of proof calibrated to the stakes. Criminal cases require proof beyond reasonable doubt; most civil cases require proof on the balance of probabilities — a preponderance of the evidence. These standards embody a judgment about the relative costs of different errors. As William Blackstone put it: "It is better that ten guilty persons escape, than that one innocent suffer."
+@item Encyclopedias and Wikipedia: Wikipedia's core policies of neutral point of view, verifiability, claims must be attributable to reliable published sources, and no original research are an explicit social epistemology. A two thousand five study in Nature, Jim Giles, found that Wikipedia's science articles contained errors at a rate not far above that of Encyclopaedia Britannica — on average about four inaccuracies per article compared with about three. Its reliability varies by topic and it can be vandalized, but its transparency — edit histories, talk pages, citations — lets readers check.
+@item Markets: prices aggregate dispersed information, Hayek, though markets are also subject to bubbles and herding.
+@item Statistical agencies, libraries, universities, and archives: preserve and certify information across time.
+Jonathan Rauch describes the network of these institutions as a "reality-based community" governed by two rules: the fallibilist rule — no one gets the final say; any claim can be challenged — and the empirical rule — no one has personal authority; claims must be checkable by others, regardless of who makes them. Knowledge, on this view, is not what any individual believes, but what survives this social process of checking.
+What makes an institution epistemically good? Drawing on the ideas in this chapter.
+@item One. Independence of judgment among its members.
+@item Two. Diversity of perspectives, methods, and backgrounds.
+@item Three. Incentives to find and correct errors, including rewards for criticism.
+@item Four. Transparency of methods and evidence, so that outsiders can check.
+@item Five. Accountability: errors have consequences, and corrections are published.
+@item Six. Resistance to capture by interests that benefit from particular answers.
+@section Epistemic autonomy and artificial intelligence
+@subsection Autonomy and dependence
+Kant's motto Sapere aude, "Have courage to use your own understanding", expresses the ideal of epistemic autonomy: thinking for yourself. But Hardwig showed that rational people must depend on others. Linda Zagzebski went further, arguing that when we have good reason to think an authority is more likely to be right than we are, we should let the authority's belief replace our own reasons — her preemption thesis.
+How can autonomy and dependence be reconciled? A common answer is that autonomy does not mean believing only what you have personally verified. It means managing your dependence responsibly: choosing whom to trust on the basis of their trustworthiness, monitoring sources for signs of unreliability, understanding enough to follow and question expert reasoning, and knowing the limits of your own competence. An autonomous thinker depends on others, but knowingly and critically.
+@subsection Artificial intelligence and the information environment
+New technologies are changing the conditions of social knowledge.
+Deepfakes. Regina Rini argues that video and audio recordings have served as an epistemic backstop for testimony: when people's reports conflicted, recordings could settle the matter. Realistic synthetic media undermine this backstop. They also create what legal scholars Robert Chesney and Danielle Citron call the "liar's dividend": once it is known that recordings can be faked, people can dismiss genuine recordings as fakes.
+Recommendation algorithms shape what information people see, typically optimizing for engagement rather than accuracy. Their effects on belief and polarization are still being studied, and as noted above, the evidence is more mixed than many popular accounts suggest.
+Large language models and other AI systems are increasingly used as sources of information. They raise new questions for the epistemology of testimony.
+@item Their outputs are fluent and confident in tone, whether or not they are accurate. They can produce plausible but false statements, including fabricated citations — often called "hallucinations".
+@item A human speaker who asserts something takes responsibility for it and can be held accountable. Whether, and in what sense, an AI system can assert or be accountable is debated.
+@item Their reliability varies greatly by topic and task, and they can reflect biases in their training data. They may also tend to agree with the user's framing of a question.
+@item People are prone to automation bias: over-relying on automated aids and failing to notice their errors.
+Sensible practices when using AI systems as sources: treat their output as a starting point, not an endpoint; check important claims, and especially citations, against primary or reputable sources; ask for sources and reasoning, then verify them; be especially careful where you cannot evaluate the answer yourself; and apply the same questions you would ask of any source: What is its track record on this kind of question? How would it know? What would it get wrong? This advice applies to every AI assistant, including the one that helped draft this guide.
+@section Quick review
+Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.
+@pause 0.8
+@question Question one. What is Hardwig's argument that rational belief often requires deference?
+@think 5
+@answer Answer. Modern knowledge is produced by divisions of cognitive labor so extensive that no individual can check more than a tiny part of it; even the authors of a scientific paper rely on each other. So a rational layperson who refused to believe anything they couldn't personally verify would believe almost nothing. Rationality requires trusting reliable others.
+@pause 0.8
+@question Question two. A novice must choose between two doctors who disagree. List three of Goldman's sources of evidence she could use.
+@think 5
+@answer Here's what to notice. Any three of: A: which doctor responds better to the other's arguments; B: how many other independent doctors agree with each; C: credentials and professional standing; D: conflicts of interest or biases; E: past track records, including checkable predictions.
+@pause 0.8
+@question Question three. Why is agreement among many people weak evidence when their beliefs are not independent?
+@think 5
+@answer The answer. Because if people are copying each other — following a leader, joining a cascade, repeating the same source — their agreement contains little more information than the original source. Independent agreement is strong evidence because it would be unlikely if the claim were false; dependent agreement is what you would expect whether or not it is true.
+@pause 0.8
+@question Question four. Explain the restaurant bill case and what conciliationists and steadfasters say about it.
+@think 5
+@answer Here's my answer. You calculate your share as forty-three dollars; an equally competent friend with the same information gets forty-five dollars. Conciliationists say you should significantly lower your confidence, since you have no independent reason to think you, rather than your friend, made the error. Most steadfasters agree in this case, because the disagreement is evidence of a calculation error somewhere; the dispute is about harder cases — politics, philosophy — where the parties have reflected at length.
+@pause 0.8
+@question Question five. Distinguish testimonial from hermeneutical injustice, with an example of each.
+@think 5
+@answer Here's the answer. Testimonial injustice: a speaker is given less credibility than deserved because of identity prejudice — for example, a patient's report of pain discounted because of their race. Hermeneutical injustice: a gap in shared concepts leaves someone unable to understand or communicate their experience because their group was excluded from shaping those concepts — for example, experiences of sexual harassment before the concept existed.
+@pause 0.8
+@question Question six. What's the difference between an epistemic bubble and an echo chamber? Why does it matter?
+@think 5
+@answer Answer. A bubble omits other voices; an echo chamber actively discredits them by manipulating trust. Bubbles can be burst by exposure to other views; echo chambers are strengthened by exposure, since members have been prepared to reject outsiders. Addressing an echo chamber requires rebuilding trust, not just supplying information.
+@pause 0.8
+@question Question seven. Why did the crowd's estimate of the ox's weight work so well, and when would it fail?
+@think 5
+@answer Here's what to notice. The guesses were diverse and independent, so individual errors in different directions largely canceled out when aggregated — by the median. It would fail if people's guesses were influenced by each other, reducing independence, or if most people shared the same systematic bias.
+@pause 0.8
+@question Question eight. Apply Keeley's criteria to the claim that "the nineteen sixty-nine moon landing was faked."
+@think 5
+@answer The answer. It relies on errant data — flag "waving," missing stars in photos — each of which has a mundane explanation. It is self-sealing — evidence such as retroreflectors left on the Moon, independent tracking of the missions by other countries including the Soviet Union, and returned samples are dismissed as part of the fake. It requires an enormous number of conspirators, hundreds of thousands, to keep a secret for decades, including a geopolitical rival with every incentive to expose it. And it requires the conspirators to be capable of faking everything perfectly yet careless enough to leave "clues."
+@section End of chapter twelve
+That's the end of chapter twelve. We've seen how much knowledge depends on communities. In chapter thirteen we turn to the character of the individual thinker, with intellectual virtue and the ethics of belief.

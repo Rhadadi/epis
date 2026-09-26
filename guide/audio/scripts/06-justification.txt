@@ -1,0 +1,301 @@
+@title Chapter 6 — Justification: The Structure of Good Reasons
+@chime
+@opening Chapter six. Justification: The Structure of Good Reasons.
+@pause 1.2
+@quote "I beseech you, in the bowels of Christ, think it possible you may be mistaken."
+@attr Oliver Cromwell, letter to the General Assembly of the Church of Scotland.
+@pause 0.8
+@quote "We are like sailors who have to rebuild their ship on the open sea."
+@attr Otto Neurath.
+@pause 0.8
+Even if knowledge cannot be defined as justified true belief, justification is a central epistemic concept in its own right. In everyday life, we rarely know for certain whether a belief is true; what we can assess is whether it is reasonable, well-supported, warranted by the evidence. When you ask "Is that a fair conclusion?" or "What grounds do you have for that?", you are asking about justification.
+This chapter covers the main theories: what justification is, how it can be lost, defeaters, how reasons can be structured without regress or circularity — foundationalism, coherentism, infinitism, and hybrids — whether justification depends only on what is "inside" the mind, internalism versus externalism, and what it means to say we can know despite the possibility of error — fallibilism.
+@pause 0.6
+A belief can be true by luck. What makes a belief reasonable is something else: justification. This chapter is about the structure of good reasons.
+We'll start with defeaters, the considerations that can undercut a reason you thought you had. Then comes an ancient puzzle. If every belief needs a reason, and every reason needs another reason, where does it stop? The main answers, foundationalism, coherentism, infinitism, and their hybrids, each paint a different picture of how our beliefs hang together.
+After that we'll look at the great debate between internalists and externalists, and we'll end with fallibilism: the idea that you can know things without being certain of them.
+@section What justification is
+Justification is a normative property of beliefs: a justified belief is one it is epistemically appropriate, reasonable, or permissible to hold. Beyond that point of agreement, there are several conceptions. William Alston distinguished many of them, and later argued that philosophers have been talking about different "epistemic desiderata" under one name.
+@item Deontological. A belief is justified when holding it violates no epistemic duty; the believer is blameless. Associated with: Descartes, Locke, Chisholm.
+@item Evidentialist. A belief is justified when it fits the believer's evidence. Associated with: Conee and Feldman.
+@item Reliabilist. A belief is justified when it was produced by a truth-conducive process. Associated with: Goldman.
+@item Virtue-theoretic. A belief is justified when it manifests intellectual competence or virtue. Associated with: Sosa, Zagzebski.
+@item Coherentist. A belief is justified when it coheres with the believer's system of beliefs. Associated with: BonJour, Lehrer.
+Justification comes in degrees. One belief can be better justified than another, and a belief can be somewhat justified without being justified enough to count as knowledge.
+@subsection Propositional and doxastic justification
+Two things are called "justification," and it is important to keep them apart.
+@item Propositional justification, Goldman: ex ante justification, is having good reasons available for believing p, whether or not you actually believe p, or believe it for those reasons.
+@item Doxastic justification, ex post justification, is a property of an actual belief: it is held on the basis of good reasons.
+A detective has strong evidence that the butler committed the crime: fingerprints, motive, no alibi. She believes the butler did it. But she believes it because she dislikes butlers, not because of the evidence. She has propositional justification, the evidence supports her conclusion, but her belief lacks doxastic justification — it isn't based on the evidence.
+What does it take for a belief to be based on a reason? This is the problem of the basing relation. The most natural answer is causal: the reason must cause, or sustain, the belief. Keith Lehrer's gypsy lawyer challenges this. A lawyer becomes convinced of his client's innocence through a fortune-teller's card reading. Later he examines the evidence and sees that it conclusively proves the client innocent, but his belief is still causally sustained by the cards; if the evidence fell apart, he would still believe. Lehrer argued that the lawyer's belief is justified by the evidence anyway, because he understands how the evidence supports it. Most philosophers disagree, but the case shows that the basing relation is subtle.
+@pause 0.3
+@cue Here's the critical-thinking lesson.
+It is not enough that good reasons exist for your conclusion. Ask whether they are the reasons you actually hold it for. If you would believe the same thing even if those reasons evaporated, your belief is not really based on them. That is a warning sign of motivated reasoning.
+@pause 0.3
+@subsection Prima facie and all-things-considered justification
+A belief is prima facie justified, "at first sight", if it has some justification that could be overridden. It is ultima facie or all-things-considered justified if it remains justified after everything relevant is taken into account. Seeing that a wall looks red gives you prima facie justification to believe it is red. Learning that it is lit by red light may take that justification away. Justification that can be lost this way is defeasible.
+@section Defeaters
+A defeater is a consideration that reduces or removes the justification of a belief. John Pollock distinguished two main kinds, and the distinction is one of the most useful tools in this guide.
+Rebutting defeaters are reasons to believe the conclusion is false.
+@pause 0.3
+@aside You believe the bird on the fence is a crow. An experienced birdwatcher standing beside you says, "That's a raven: look at the wedge-shaped tail." Her testimony is a reason to think your belief is false.
+@pause 0.3
+Undercutting defeaters are reasons to think your grounds do not support the conclusion in this case, without being reasons to think the conclusion false.
+@pause 0.3
+@aside Pollock's example: a widget on the assembly line looks red, so you believe it is red. Then you learn that the widgets are being illuminated by a red light, which makes widgets of any color look red. You now have no reason to think the widget is red. But you have no reason to think it isn't red either. Your grounds have been undercut.
+@pause 0.3
+Other kinds.
+@item Higher-order defeaters: evidence that your reasoning is impaired. You learn that you've been given a drug that causes subtle reasoning errors, or you are a pilot at high altitude where hypoxia impairs judgment without your noticing. Should you lower your confidence in a calculation that seems perfectly sound? David Christensen and others argue yes.
+@item Defeater defeaters: considerations that restore justification. You learn that the red light was switched off an hour ago, before the widget was inspected.
+@item Normative defeaters: evidence you should have had or considered, even if you didn't. A doctor who fails to read the lab results that were on her desk cannot claim her diagnosis was justified simply because she didn't know about them.
+@item Misleading defeaters: true propositions that would defeat your justification but point away from the truth. The Tom Grabit case in Chapter five.
+@pause 0.3
+@cue Using defeaters in discussion.
+When you criticize an argument, be clear about which kind of defeater you are offering. "Your conclusion is false because…" is a rebutting defeater and puts a burden on you to support it. "Your evidence doesn't support your conclusion because…" is an undercutting defeater, and it may be enough to show the argument fails without your having to prove the opposite. Many debates go wrong because a critic offers an undercutter and the other side hears a rebutter: "So you think the vaccine is dangerous?" "No, I think this particular study doesn't show it's safe for this group."
+@pause 0.3
+@section The regress problem
+Suppose you believe that it will rain tomorrow. Why? Because the forecast says so. Why believe the forecast? Because forecasts from this service are usually accurate. Why believe that? Because you have checked them against the weather many times. Why trust your memory of those checks? … and so on.
+If every justified belief needs to be justified by another justified belief, then either.
+@item One. The chain ends in beliefs that are justified without being justified by other beliefs — foundationalism.
+@item Two. The chain circles back, so that beliefs ultimately support each other — coherentism.
+@item Three. The chain goes on forever without repeating — infinitism; or.
+@item Four. The chain ends in beliefs that are not justified at all, in which case, it seems, nothing supported by them is justified either — skepticism.
+Aristotle posed this problem in the Posterior Analytics and gave the first foundationalist answer. It has been the organizing problem of the theory of justification ever since.
+@section Agrippa's trilemma
+The ancient skeptic Agrippa — first century CE, known through Sextus Empiricus, Outlines of Pyrrhonism — formulated five modes for inducing suspension of judgment.
+@item One. Disagreement: on any question, people disagree.
+@item Two. Infinite regress: any reason offered needs a further reason.
+@item Three. Relativity: things appear differently relative to different observers and circumstances.
+@item Four. Hypothesis — assumption: the dogmatist stops the regress by simply assuming something without argument.
+@item Five. Circularity — reciprocity: the reason offered for a claim depends on the claim itself.
+Modes two, four, and five form a trilemma: every attempt to justify a belief ends in an infinite regress, an arbitrary assumption, or a circle. None seems satisfactory. The German philosopher Hans Albert called it the Münchhausen trilemma, after Baron Münchhausen, who claimed to have pulled himself and his horse out of a swamp by his own hair.
+@item Stop at an assumption: that's foundationalism. The foundations are not arbitrary; they are justified non-inferentially — by experience or intuition.
+@item Circle: that's coherentism. Justification is holistic, not linear; mutual support is not viciously circular.
+@item Regress: that's infinitism. An infinite chain of available reasons is not vicious; it is what justification is.
+@item Accept that nothing is justified: that's skepticism, or critical rationalism. We should suspend judgment, skepticism, or rationality does not require justification, only openness to criticism — critical rationalism.
+@section Foundationalism
+Foundationalism holds that justified beliefs come in two kinds.
+@item Basic beliefs: justified non-inferentially, not on the basis of other beliefs. Their justification comes from experience, intuition, or their own nature.
+@item Non-basic beliefs: justified by being properly inferred, ultimately, from basic beliefs.
+The image is a building: the foundations bear the weight of the upper floors and do not rest on anything further. Descartes used exactly this image.
+@subsection Classical foundationalism
+Classical foundationalism — Descartes, and in various forms Locke, Russell, and C I Lewis — sets a high bar. Basic beliefs must be infallible, indubitable, or incorrigible. Typical candidates are.
+@item Beliefs about one's current mental states: "I seem to see something red," "I am in pain."
+@item Self-evident truths: "two plus two equals four," "Nothing can be both red and green all over."
+Non-basic beliefs must follow from basic beliefs by deduction, or, in later versions, by strong inference.
+@subsection Modest foundationalism
+Most contemporary foundationalists are modest foundationalists — Robert Audi, James Pryor, Michael Huemer. They relax the requirements.
+@item Basic beliefs need only be prima facie justified. They can be fallible and defeasible.
+@item Ordinary perceptual beliefs can be basic. "There's a cup on the table" can be justified directly by your visual experience, without inference from "I seem to see a cup."
+@item Non-basic beliefs can be justified by inductive and abductive inference, not just deduction.
+James Pryor and others argue that some justification must be immediate, not based on other beliefs, and that perceptual experience provides it. This is the most widely held view of the structure of justification today.
+@subsection Objections to foundationalism
+One. Self-referential incoherence — against classical foundationalism. Alvin Plantinga pointed out that the principle of classical foundationalism, "A belief is justified only if it is self-evident, incorrigible, or evident to the senses, or inferred from such beliefs," is itself neither self-evident, incorrigible, nor evident to the senses, and cannot be inferred from such beliefs. So by its own standard, no one is justified in accepting it.
+Two. Too little foundation — against classical foundationalism. If basic beliefs are only about one's own mental states, and inference must be deductive, then almost nothing about the external world can be justified. Classical foundationalism leads to skepticism.
+Three. The Sellarsian dilemma. What justifies a basic belief? Presumably an experience. Now.
+@item If the experience has propositional content, it represents that something is so, then it is the kind of thing that can be correct or incorrect, and it needs justification itself. So it cannot be a foundation.
+@item If the experience has no propositional content, it is a raw sensation, then it cannot stand in logical relations to beliefs, so it cannot justify anything.
+This is Sellars's attack on the Myth of the Given. Modest foundationalists reply that experiences have propositional content but are not beliefs, so they are not the kind of state that needs justification, though they can be accurate or inaccurate. John McDowell argues that experience is already conceptual and can therefore justify.
+Four. The arbitrariness objection — Laurence BonJour, The Structure of Empirical Knowledge, nineteen eighty-five. What makes a basic belief likely to be true? If there is a reason, then the belief is justified by that reason and is not basic. If there is no reason, the belief's justification is arbitrary.
+Five. The speckled hen. You glance at a hen with forty-eight speckles. Your visual experience in some sense presents all forty-eight speckles. But you are not justified in believing "the hen has forty-eight speckles," though you would be justified in believing "the hen has three speckles" if it had three. So what feature of experience justifies basic beliefs? Not merely what the experience presents.
+@section Coherentism
+Coherentism denies that any beliefs are basic. A belief is justified by its coherence with the believer's whole system of beliefs. Support is mutual and holistic, not linear.
+The image is Neurath's boat, or Quine's web of belief, in which beliefs support each other like the strands of a net.
+What is coherence? More than mere consistency — no contradictions. Laurence BonJour — The Structure of Empirical Knowledge, nineteen eighty-five — lists.
+@item Logical consistency.
+@item Probabilistic consistency: not believing things that are jointly very improbable.
+@item Inferential connections: beliefs entail or support one another.
+@item Explanatory relations: beliefs explain one another. Coherence is increased when a system is unified by good explanations.
+@item Few anomalies: few unexplained facts.
+Keith Lehrer and Donald Davidson defended other forms. Davidson's slogan: "nothing can count as a reason for holding a belief except another belief."
+Why isn't this viciously circular? Coherentists answer that justification is not a linear relation passed along a chain. It is a holistic property of a whole system, which individual beliefs inherit by fitting into it. Think of a jigsaw puzzle: no single piece is the foundation, but when all the pieces fit together into a clear picture, you are confident that each is in the right place.
+A classic argument for the power of coherence comes from C I Lewis — An Analysis of Knowledge and Valuation, nineteen forty-six. Several independent witnesses, each of limited reliability, give the same detailed account of an event. Even though no single witness is very trustworthy, the agreement of their stories is hard to explain unless the account is true. Courts rely on this reasoning every day. Note the essential condition: independence. If the witnesses conferred, or all read the same newspaper, their agreement is much weaker evidence.
+@subsection Objections to coherentism
+One. The isolation, or input, objection. A system of beliefs could be perfectly coherent yet completely disconnected from reality. A detailed novel is coherent. So is a well-developed paranoid delusion, and so is an elaborate conspiracy theory. Coherence alone cannot guarantee contact with the world. BonJour's response was an observation requirement: a justified system must contain beliefs that attribute reliability to spontaneous, non-inferential observational beliefs, so that experience has a way to enter and disrupt the system. Critics replied that this concedes much to foundationalism. BonJour himself later became a foundationalist.
+Two. The alternative systems objection. For any coherent system, there could be another, incompatible system that is equally coherent. Which one is justified? Coherence alone cannot say.
+Three. The truth-connection problem. Why should coherence make a belief more likely to be true? Formal epistemologists have proved that, surprisingly, there is no measure of coherence that in general raises the probability of truth, other things being equal — Luc Bovens and Stephan Hartmann, Bayesian Epistemology, two thousand three; Erik Olsson, Against Coherence, two thousand five. Coherence among independent sources does raise probability, as in Lewis's witnesses. But coherence produced by a single source, or by the believer's own imagination, does not.
+@pause 0.3
+@cue Here's the critical-thinking lesson.
+Coherence is not enough. Conspiracy theories are often highly coherent: every fact is explained, every anomaly absorbed, every counter-argument anticipated. That coherence is part of their appeal. But coherence among beliefs that were built to fit together is weak evidence. Ask: do the parts of this story come from independent sources that could have disagreed? Does the story make risky predictions that could fail? Does it have input from observation that isn't already interpreted through the theory?
+@pause 0.3
+@section Infinitism
+Infinitism, defended by Peter Klein, accepts the regress horn: a belief is justified when there is an infinite, non-repeating chain of reasons available to the believer.
+Klein argues from two principles.
+@item The Principle of Avoiding Circularity: no reason can appear earlier in its own chain of support.
+@item The Principle of Avoiding Arbitrariness: every reason must itself have a further reason available. There are no stopping points where a reason is simply accepted.
+Together these principles imply that the chain of reasons must be infinite.
+Objections and replies.
+@item Finite minds. We cannot hold infinitely many beliefs. Klein's reply: the reasons need only be available, not consciously believed. You have a disposition to produce a further reason when challenged.
+@item The no-source objection. If no link in the chain has justification independently, adding more links cannot generate it, just as an infinite chain of people borrowing money from the next person never produces any actual money. Klein's reply: justification is not transmitted from a source; it emerges and increases as the chain is extended. It is never complete.
+Infinitism fits naturally with fallibilism. It implies that justification is always provisional and that inquiry never ends, since there is always a further reason to seek. Its critics regard this as an admission that nothing is ever fully justified.
+@section Foundherentism
+Susan Haack proposed a hybrid called foundherentism. It agrees with foundationalism that experience contributes to justification without itself needing justification from beliefs. It agrees with coherentism that beliefs support one another mutually, and that no class of beliefs is basic.
+Her model is a crossword puzzle. The reasonableness of an entry depends on.
+@item One. How well it fits its clue — the analog of experiential evidence.
+@item Two. How well it fits the intersecting entries — the analog of mutual support among beliefs.
+@item Three. How reasonable those intersecting entries are, independently of the entry in question.
+@item Four. How much of the puzzle has been completed — the comprehensiveness of the evidence.
+A crossword entry can be well supported even though it relies on other entries that rely on it, without vicious circularity, because each entry is also anchored by its own clue. This is an attractive picture of how scientific and detective reasoning actually works.
+@section Critical rationalism
+The critical rationalists, Karl Popper, Hans Albert, and W W Bartley, took a different route. They argued that the whole search for justification, "justificationism", is a mistake, and that the Münchhausen trilemma shows it cannot succeed.
+On their view.
+@item We can never justify a belief in the sense of showing it to be true or probable.
+@item But we can criticize beliefs: test them, look for contradictions, try to refute them.
+@item Rationality consists not in holding justified beliefs but in holding beliefs open to criticism and preferring those that have survived the most severe criticism so far.
+Bartley developed pan-critical rationalism, or comprehensively critical rationalism, which holds everything open to criticism, including rationalism itself. He argued this avoids the charge that rationalism rests on an irrational commitment, a charge often used to claim that reason and faith are on equal footing.
+Objection. When critical rationalists say it is rational to prefer the theory that has survived criticism best, critics reply that this sounds like justification under a different name. Alan Musgrave, a critical rationalist, accepts this: it is reasonable to believe the best-tested theory, even though its survival doesn't prove it true or even probable. The critical rationalist's lasting contribution is the insight that criticism, not proof, drives the growth of knowledge.
+@section Comparing the structures
+@item Are some beliefs basic? Foundationalism: Yes. Coherentism: No. Infinitism: No. Foundherentism: No, but experience is a non-belief input. Critical rationalism: No.
+@item Shape of support. Foundationalism: Pyramid. Coherentism: Web. Infinitism: Endless chain. Foundherentism: Crossword. Critical rationalism: No positive support, only surviving criticism.
+@item Answer to the regress. Foundationalism: It ends in basic beliefs. Coherentism: Justification is holistic. Infinitism: Endless regress is not vicious. Foundherentism: Experience anchors; beliefs interlock. Critical rationalism: Give up justification.
+@item Main objection. Foundationalism: Sellarsian dilemma; arbitrariness. Coherentism: Isolation; alternative systems. Infinitism: Finite minds; no source. Foundherentism: Vagueness. Critical rationalism: It smuggles justification back.
+@item Key figures. Foundationalism: Aristotle, Descartes, Audi, Pryor. Coherentism: Neurath, Quine, BonJour, Lehrer. Infinitism: Klein. Foundherentism: Haack. Critical rationalism: Popper, Albert, Bartley.
+@section Internalism and externalism
+A second great divide concerns what kind of thing can justify a belief.
+Internalism holds that justification depends only on factors internal to the subject's perspective. Externalism holds that it can depend on factors external to that perspective, such as the actual reliability of the process that produced the belief, which the subject may know nothing about.
+Jennifer Nagel opens the debate with a simple test. You know that Mount Everest is the tallest mountain in the world. How did you learn it? Unless something memorable happened at the time, you almost certainly can't say. Memory researchers call this source amnesia: we retain facts long after forgetting where they came from. If challenged, you might only be able to say that it feels familiar, and feelings of familiarity can mislead — many people "know" that Sydney is the capital of Australia; it is Canberra. Do you nonetheless know it?
+@item The internalist says your knowledge depends on grounds available to you. Some internalists bite the bullet and say that most of us, strictly speaking, don't know such facts; we speak loosely, as when we call France "hexagonal." Others say you do have accessible grounds: you know your memory is generally good, and that you have met the fact repeatedly in reliable-seeming places.
+@item The externalist says that if the fact is true and your belief is connected to it in the right way, through a reliable chain of teachers and books, you know, whether or not you can reconstruct the connection.
+The debate is a modern descendant of the contrast between Descartes' first-person and Locke's third-person approaches to knowledge.
+@subsection Access internalism and mentalism
+There are two main forms of internalism.
+@item Access internalism — Roderick Chisholm, Laurence BonJour in his internalist phase: what justifies a belief must be accessible to the subject by reflection alone. You should be able to tell, by thinking about it, whether and why your belief is justified.
+@item Mentalism: justification supervenes on the subject's mental states. Any two people alike in all their mental states are alike in what they are justified in believing.
+Motivations for internalism.
+@item One. Responsibility. Justification seems connected to responsibility and blame, and you can only be responsible for what you have access to.
+@item Two. The first-person perspective. From the inside, the question "Should I believe this?" can only be answered by consulting what is available to me.
+@item Three. The new evil demon intuition.
+@subsection The case for externalism
+Motivations for externalism — Alvin Goldman, Fred Dretske, Alvin Plantinga, Ernest Sosa.
+@item One. Animals and young children know things — the dog knows its owner is at the door — though they cannot reflect on their reasons.
+@item Two. The regress of access. If you must be aware of your justifiers, and aware that they justify, you need justified beliefs about your justifiers, which need further justifiers, and so on.
+@item Three. The truth connection. The point of justification is to make true belief more likely. But whether a process is truth-conducive is a fact about the world, not about your mental states. Internal factors alone cannot guarantee a connection to truth.
+@item Four. Ordinary knowledge is full of it. Most of us cannot explain why our memory or perception is reliable, but we know things by them.
+@subsection Test cases for internalism and externalism
+These thought experiments are the main battleground.
+Norman the clairvoyant. Norman has a completely reliable power of clairvoyance, but he has no evidence for or against the general possibility of clairvoyance, or that he himself has it. One day, he comes to believe, through his power, that the President is in New York City. The belief is true, and it was formed by a reliable process. Is Norman justified? BonJour says no: from Norman's own perspective, the belief came from nowhere, and it would be irresponsible for him to hold it. If so, reliability is not sufficient for justification.
+Samantha the clairvoyant. BonJour's sharper case adds counter-evidence. Samantha believes she has a clairvoyant power to sense where the President is, though she has never tested it and has no reason to think clairvoyance is possible. One day she believes the President is in New York, despite reading in the newspaper and seeing live on television that he is in Washington. In fact, the news reports were staged for security reasons, the President is in New York, and her power, however it works, is genuinely reliable. Externalist theories seem to say she knows. But she is being plainly irrational: she is ignoring strong evidence against her belief. Externalists have replied in several ways: accept that she knows, and blame our contrary intuition on unfamiliarity with paranormal powers; argue that her overall method, which includes ignoring counter-evidence, is unreliable, since people who ignore evidence usually go wrong — though this brings back the generality problem; or add a no-defeater condition: reliability plus no accessible counter-evidence that it would be irrational to ignore. Internalists ask why, if accessible counter-evidence matters, accessible supporting evidence shouldn't matter too.
+Truetemp — Keith Lehrer, Theory of Knowledge, nineteen ninety. A device secretly implanted in Mister Truetemp's head reliably causes him to form true beliefs about the temperature. He has no idea why he has these beliefs and never checks them. Is he justified in believing "It is thirty-four degrees Celsius"? Many say no, for the same reason as Norman.
+The new evil demon problem. Imagine your exact mental duplicate in a world controlled by a Cartesian demon. Your duplicate has the same experiences, the same memories, and reasons in exactly the same way as you. But in the demon world, all your duplicate's perceptual beliefs are false, and the processes that produce them are completely unreliable. Is your duplicate less justified than you? Most people say no: your duplicate is doing everything right and is just unlucky. But reliabilism says the duplicate is unjustified. This is the strongest argument for internalism about justification.
+Externalist responses.
+@item Normal-worlds reliabilism: a process justifies if it is reliable in "normal worlds," those consistent with our general beliefs about the actual world. Perception is reliable in normal worlds, so the demon-world duplicate is justified.
+@item Distinguishing concepts: the duplicate is blameless, an internalist notion, but lacks warrant or knowledge — externalist notions. Perhaps both sides are right about different concepts.
+@item Proper functionalism — Alvin Plantinga, Warrant and Proper Function, nineteen ninety-three: a belief has warrant if it is produced by cognitive faculties functioning properly in an appropriate environment, according to a design plan successfully aimed at truth. Norman's clairvoyance isn't part of any design plan, so his belief lacks warrant.
+@item Hybrid views: William Alston held that the grounds of a justified belief must be accessible, but their adequacy, whether they are reliable indicators of truth, need not be. Sosa distinguishes animal knowledge, externalist, from reflective knowledge — involving an internalist perspective on one's own reliability.
+Two further points from the debate.
+@item The generality problem is everyone's problem. Internalists press the generality problem against reliabilism: which description of a belief-forming process determines its reliability? But, as Nagel notes, internalists need to distinguish having good evidence from believing because of it — the basing relation. A juror who has strong evidence of guilt but convicts out of racial prejudice believes the right thing for the wrong reason. To criticize the juror, internalists too must describe the process that actually produced the belief, at the right level of generality.
+@item Two ways of thinking. Psychologists distinguish fast, automatic cognition — recognizing a friend's face, recalling that seven times eleven equals seventy-seven — from slow, controlled reasoning in which we work through steps we can inspect. Accessible reasons are essential to the second kind of thinking, which is why internalist requirements feel compelling when we reflect carefully or must defend our views. Yet automatic cognition is also widely accepted as a source of knowledge. A possible compromise: first-person access to evidence matters because it is essential to the reliable functioning of reflective thought, not because it is a condition on all knowledge.
+@pause 0.3
+@cue The practical upshot.
+For evaluating your own beliefs, you must use internalist tools: you can only consult the reasons and evidence available to you. For evaluating sources — instruments, experts, institutions, methods — externalist questions are crucial: Is this source actually reliable? What is its track record? A method can feel convincing from the inside — astrology, a hunch, a charismatic guru — and be unreliable in fact.
+@pause 0.3
+@section Evidentialism
+Evidentialism is the leading internalist theory. Earl Conee and Richard Feldman state it as.
+@pause 0.3
+@aside A doxastic attitude D toward proposition p is epistemically justified for S at time t if and only if having D toward p fits the evidence S has at t.
+@pause 0.3
+Key features.
+@item Doxastic attitudes include belief, disbelief, and suspension of judgment — and, in some versions, degrees of belief. Evidentialism says which one is justified: believe if the evidence supports p, disbelieve if it supports not-p, suspend if it is balanced or insufficient.
+@item Synchronic: justification depends on the evidence you have now, not how you got it.
+@item Evidence you have, not evidence that exists somewhere.
+Open questions for evidentialists.
+@item What is evidence? Experiences? Beliefs? Known facts — E equals K? Conee and Feldman say mental states.
+@item What is "fit"? Probabilistic support? Explanatory relations? Kevin McCain develops an explanationist answer: evidence supports p when p is part of the best explanation of the evidence available.
+@item Evidence you should have had. Suppose you avoid reading the report that you know contains bad news about your investment. Your belief that the investment is fine fits your evidence, because you've carefully kept your evidence limited. Are you justified? Hilary Kornblith and others argue that justification also depends on responsible inquiry. Evidentialists reply that this is a failure of epistemic responsibility, which is distinct from justification. Either way, willful ignorance is an epistemic failing.
+Evidentialism is close to Hume's maxim that "a wise man proportions his belief to the evidence" and to Clifford's principle. It is the view most critical-thinking courses implicitly assume.
+@section Reliabilism about justification
+Process reliabilism is the leading externalist theory of justification.
+@pause 0.3
+@aside A belief is justified if and only if it is produced by a reliable belief-forming process, one that produces a high proportion of true beliefs.
+@pause 0.3
+For inferential beliefs, Goldman adds that the process must be conditionally reliable — it tends to produce true outputs when given true inputs, as deduction does — and that the inputs must themselves be justified.
+Goldman's examples of unreliable processes: "confused reasoning, wishful thinking, reliance on emotional attachment, mere hunch or guesswork, and hasty generalization." Reliable ones: "standard perceptual processes, remembering, good reasoning, and introspection."
+Reliabilism faces the objections described above — the generality problem, Norman, Truetemp, the new evil demon. In later work, Goldman developed versions to meet them.
+Reliabilism has one great virtue for critical thinking: it tells us to evaluate methods, not just individual beliefs. The key question becomes: how reliable is the process that produced this belief? A belief formed by a reliable method can be trusted even if you can't personally reconstruct the reasoning. A belief formed by an unreliable method should be doubted even when it feels compelling.
+@section Phenomenal conservatism
+Michael Huemer proposed a simple and influential principle.
+@pause 0.3
+@cue Phenomenal conservatism.
+If it seems to S that p, then, in the absence of defeaters, S thereby has at least some degree of justification for believing that p.
+@pause 0.3
+"Seemings" include perceptual seemings, it looks as if there is a cat, memory seemings, intellectual seemings — it seems that two plus two equals four, or that torturing for fun is wrong — and introspective seemings.
+Huemer offers a self-defeat argument: all our beliefs, including the belief that phenomenal conservatism is false, ultimately rest on how things seem to us. So anyone who rejects the principle undermines their own grounds for rejecting it.
+Related views: James Pryor's dogmatism, which says that perceptual experience gives immediate prima facie justification without needing any prior justification to think perception is reliable, and Richard Swinburne's principle of credulity, which applies the same idea to religious experience.
+Objections.
+@item Cognitive penetration. Susanna Siegel imagines Jack, who fears Jill is angry at him. When he sees her, her face looks angry to him, because his fear has shaped his perception. Does the seeming justify his belief? Intuitively, no; it is contaminated by his prior fear. If seemings can be shaped by bias, prejudice, and wishful thinking, phenomenal conservatism seems to give unearned justification to biased perception.
+@item Too permissive. To a committed conspiracy theorist, it seems that the evidence points to a cover-up. Does the conspiracy theorist thereby have justification? Huemer answers that the justification is only prima facie and is easily defeated by counter-evidence. Critics reply that such people often don't recognize defeaters.
+A related, older idea is epistemic conservatism: you are justified in continuing to believe what you already believe, unless you have a positive reason to change. It explains why we don't need to re-justify every belief constantly, but it risks entrenching whatever we happen to believe first.
+@section The problem of the criterion
+Roderick Chisholm — The Problem of the Criterion, nineteen seventy-three — drawing on Sextus Empiricus and Montaigne, posed a basic puzzle about how epistemology can even begin. There are two questions.
+@item A: What do we know? What is the extent of our knowledge?
+@item B: How are we to decide whether we know? What are the criteria of knowledge?
+It seems we can't answer A without first answering — B: to sort knowledge from non-knowledge, we need a criterion. And we can't answer B without first answering — A: to test a criterion, we need clear cases of knowledge to check it against. There are three responses.
+@item One. Skepticism: we can answer neither, so we know nothing.
+@item Two. Methodism: start with B, a criterion, and use it to determine what we know. Descartes, clear and distinct perception, and Locke, empiricism, were methodists. The risk: a bad criterion rules out obvious knowledge. Hume's empiricist criterion seemed to rule out knowledge of causation and the external world.
+@item Three. Particularism: start with A, clear particular cases of knowledge, "I know I have hands", and derive criteria from them. Reid, Moore, and Chisholm were particularists. The risk: we may start with cases that aren't knowledge at all.
+Chisholm defended particularism, admitting that he could not refute the skeptic but only choose differently. In practice, most philosophers use a reflective equilibrium between cases and criteria, adjusting each in light of the other.
+This puzzle has the same shape as the problem of evaluating sources in everyday life: to know which experts are reliable, you need to know what's true; to know what's true, you rely on experts.
+@section Deontology and doxastic voluntarism
+The deontological conception of justification treats it in terms of duties and permissions: a belief is justified when holding it is epistemically permissible, when the believer violates no epistemic duty and is blameless. This conception is natural. We say things like "You shouldn't believe everything you read," and we blame people for credulity.
+But it faces a problem. "Ought" implies "can." If we have duties about what to believe, then we must be able to control what we believe. Do we?
+Direct doxastic voluntarism, the view that we can believe at will, seems false. Try to believe, right now, that you are on the moon, or that two plus two equals five. You can say the words, but you cannot make yourself believe them. Bernard Williams argued that it is not merely a contingent fact that we can't believe at will: belief aims at truth, and if you knew you had acquired a belief by an act of will, regardless of the truth, you could not regard it as a belief about how things are.
+William Alston concluded that since we lack voluntary control over our beliefs, the deontological conception must be abandoned.
+Replies.
+@item Indirect control. We can't choose beliefs directly, but we control what evidence we gather, what we pay attention to, which sources we consult, how long we deliberate, and what intellectual habits we cultivate. Pascal advised the unbeliever who wanted faith to "take holy water, have Masses said," and so on. Our duties may be duties of inquiry, not directly of belief.
+@item Compatibilist control: beliefs are "free" in the sense that matters if they are responsive to reasons, as actions are free in the compatibilist sense when they respond to reasons.
+@item Answerability: we are responsible for beliefs not because we choose them but because they reflect our own judgment about what is true. We can properly be asked for our reasons, and criticized when they are bad, as with emotions like resentment.
+@pause 0.3
+@cue The practical upshot.
+You cannot decide to believe something. But you are responsible for your habits of inquiry: whether you seek out counter-evidence, whether you consult reliable sources, whether you check claims before sharing them. Epistemic responsibility is mostly about these indirect choices.
+@pause 0.3
+@section Fallibilism
+Fallibilism is the view that we can have knowledge, or justified belief, even though our grounds do not guarantee the truth of what we believe. We can know p even though, given our evidence, it is possible that p is false. The term was coined by Charles Sanders Peirce, who wrote that "people cannot attain absolute certainty concerning questions of fact."
+Fallibilism is the dominant view in contemporary epistemology, and it is essential to critical thinking. Almost all our knowledge, including scientific knowledge, is fallible. Evidence makes conclusions probable, not certain.
+Fallibilism must be distinguished from positions it is often confused with.
+@item Fallibilism: We can know p even though we might be wrong.
+@item Infallibilism: Knowledge requires grounds that make error impossible.
+@item Skepticism: Since we might be wrong, we don't know — infallibilism plus our grounds are fallible.
+@item Relativism: There is no objective truth to be wrong about.
+@item Dogmatism — everyday sense: Refusing to consider that we might be wrong.
+Fallibilism is not the view that we should doubt everything, or that all views are equally good, or that confidence is always inappropriate. A fallibilist can be highly confident that the Earth orbits the Sun, and right to be. The point is that confidence should be proportioned to evidence, and even well-established beliefs remain open in principle to revision.
+A puzzle for fallibilists. David Lewis noted that fallibilism sounds odd when said aloud: "If you are a contented fallibilist, I implore you to be honest, be naive, hear it afresh. 'He knows, yet he has not eliminated all possibilities of error.' Even if you've numbed your ears, doesn't this overt, explicit fallibilism still sound wrong?" Statements of the form "I know that p, but I might be wrong" are called concessive knowledge attributions. Philosophers debate whether their oddness is merely conversational — it's misleading to draw attention to a remote possibility — or whether it reveals something about knowledge itself. Lewis's answer was contextualism.
+@pause 0.3
+@cue The practical core of fallibilism.
+Cromwell's plea, "think it possible you may be mistaken," is sometimes called Cromwell's rule in statistics: never assign a probability of exactly zero or one to an empirical proposition, because then no evidence could ever change your mind. A fallibilist holds beliefs firmly enough to act on them and loosely enough to revise them. In a discussion, the fallibilist question is: What evidence would change my mind? If the answer is "nothing," the belief is being held as a dogma, not as a conclusion.
+@pause 0.3
+@section Quick review
+Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.
+@pause 0.8
+@question Question one. Distinguish propositional from doxastic justification with an example of your own.
+@think 5
+@answer Answer. Propositional: you have good reasons available for p. Doxastic: your actual belief in p is based on good reasons. Example: a juror has heard strong DNA evidence of guilt but votes guilty because the defendant "looks shifty." She has propositional justification for the verdict, but her belief is not doxastically justified.
+@pause 0.8
+@question Question two. Classify each as a rebutting or undercutting defeater. You believe your friend is at home because her car is in the driveway. A: You learn she lent her car to her brother this week. B: You get a text from her saying she's at the airport.
+@think 5
+@answer Here's what to notice. A: Undercutting: it removes the support the car gave, without showing she is not at home. B: Rebutting: it is direct evidence that she is not at home.
+@pause 0.8
+@question Question three. State Agrippa's trilemma and the theory that embraces each horn.
+@think 5
+@answer The answer. Every justification ends in an infinite regress, a circle, or an unjustified assumption. Infinitism embraces the regress; coherentism embraces a, holistic, circle; foundationalism stops at "assumptions," which it argues are non-arbitrary basic beliefs. Skepticism and critical rationalism take the trilemma to show that positive justification is unavailable.
+@pause 0.8
+@question Question four. What is the Sellarsian dilemma, and how do modest foundationalists reply?
+@think 5
+@answer Here's my answer. Experience either has propositional content, and so needs justification itself, or lacks it — and so cannot logically support beliefs. Either way it cannot be a foundation. Modest foundationalists reply that experiences have propositional content but are not beliefs; they can be accurate or inaccurate, but they are not the kind of state that needs justification. They can confer justification without requiring it.
+@pause 0.8
+@question Question five. Why is the coherence of a conspiracy theory weak evidence of its truth?
+@think 5
+@answer Here's the answer. Because coherence increases the probability of truth only when the cohering pieces come from independent sources. Conspiracy theories are typically built to fit: facts are selected and interpreted through the theory, anomalies are absorbed by adding auxiliary claims, and counter-evidence is reinterpreted as part of the cover-up. That kind of coherence can be manufactured for almost any story. Formal results in Bayesian epistemology confirm that coherence alone is not truth-conducive.
+@pause 0.8
+@question Question six. What is the new evil demon problem, and which theory does it target?
+@think 5
+@answer Answer. Your mental duplicate in a demon world has the same experiences and reasons in the same way, but all their perceptual beliefs are false and produced by unreliable processes. Intuitively, the duplicate is as justified as you are. This targets reliabilism, which implies that the duplicate is unjustified, and supports internalism.
+@pause 0.8
+@question Question seven. Can you be blamed for a belief if you cannot choose what to believe?
+@think 5
+@answer Here's what to notice. Arguably yes. You control your inquiry: what evidence you seek, what you attend to, which sources you trust. On a compatibilist view, beliefs are free when they respond to reasons. On Hieronymi's view, you are answerable for your beliefs because they express your own judgment, just as you are answerable for your resentment or admiration.
+@pause 0.8
+@question Question eight. Is "I know that vaccines don't cause autism, but I could be wrong" coherent?
+@think 5
+@answer The answer. On a fallibilist view, yes. Knowledge does not require the impossibility of error, and the evidence against a vaccine-autism link is very strong — large studies involving millions of children, and the original nineteen ninety-eight paper was retracted after it was found to be fraudulent. But the sentence sounds odd, and some philosophers, Lewis, take the oddness seriously. A more natural way to express the same fallibilist stance: "The evidence is overwhelming, and I'd need extraordinary new evidence to change my mind."
+@section End of chapter six
+That's the end of chapter six. We've looked at how reasons fit together. In chapter seven we'll look at where they come from: perception, memory, introspection, reason, and testimony.

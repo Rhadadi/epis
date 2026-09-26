@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mastering Epistemology — Audio Edition</title>
+<meta name="description" content="Listen to the sixteen chapters of the Mastering Epistemology guide, with section markers and resume.">
+<style>
+  :root {
+    --bg: #f7f5f0; --panel: #ffffff; --text: #1d1b18; --muted: #6a645b; --line: #e3ddd2;
+    --accent: #7a4b1e; --accent-soft: #f1e6d8; --focus: #b36b25;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161412; --panel: #201d1a; --text: #ece7df; --muted: #a39b8f; --line: #36312b;
+            --accent: #e0a868; --accent-soft: #3a2d1f; --focus: #f0b878; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.55 Georgia, "Iowan Old Style", "Palatino Linotype", serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  a { color: var(--accent); }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .now { position: sticky; top: 0; z-index: 2; margin-bottom: 20px; box-shadow: 0 4px 16px rgb(0 0 0 / 6%); }
+  .now h2 { font-size: 1.15rem; margin: 0 0 2px; }
+  .now .section { color: var(--muted); font-size: .95rem; min-height: 1.5em; }
+  audio { width: 100%; margin: 10px 0 8px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-family: system-ui, sans-serif; }
+  button, select { font: inherit; font-size: .9rem; color: var(--text); background: var(--accent-soft);
+                   border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+  button:hover, select:hover { border-color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 760px) { .grid { grid-template-columns: 1.1fr 1fr; } }
+  h3 { font-size: 1rem; margin: 0 0 8px; font-family: system-ui, sans-serif; letter-spacing: .02em; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li button { width: 100%; text-align: left; background: none; border: 0; border-radius: 8px;
+              padding: 7px 8px; display: flex; gap: 10px; align-items: baseline; }
+  li button:hover { background: var(--accent-soft); }
+  li button[aria-current="true"] { background: var(--accent-soft); font-weight: bold; }
+  .num { color: var(--muted); min-width: 1.6em; font-variant-numeric: tabular-nums; }
+  .t { flex: 1; }
+  .dur, .time { color: var(--muted); font-size: .85rem; font-family: system-ui, sans-serif;
+                font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .note { color: var(--muted); font-size: .9rem; margin-top: 24px; }
+  .empty { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mastering Epistemology — Audio Edition</h1>
+  <p class="sub">Sixteen narrated chapters on knowledge, evidence, and critical thinking.
+    <a href="../README.md">Read the written guide</a> · <a href="README.md">How the audio was made</a></p>
+
+  <section class="panel now" aria-label="Now playing">
+    <h2 id="now-title">Choose a chapter</h2>
+    <div class="section" id="now-section"></div>
+    <audio id="audio" controls preload="metadata"></audio>
+    <div class="controls">
+      <button id="prev" title="Previous chapter">⏮ Chapter</button>
+      <button id="back" title="Back 15 seconds">↺ 15 s</button>
+      <button id="fwd" title="Forward 30 seconds">30 s ↻</button>
+      <button id="next" title="Next chapter">Chapter ⏭</button>
+      <label>Speed
+        <select id="rate">
+          <option>0.8</option><option>0.9</option><option selected>1</option>
+          <option>1.1</option><option>1.25</option><option>1.5</option><option>1.75</option>
+        </select>
+      </label>
+      <a id="read" href="../README.md">Read this chapter</a>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="panel" aria-labelledby="ch-h"><h3 id="ch-h">Chapters</h3><ol id="chapters"></ol></section>
+    <section class="panel" aria-labelledby="sec-h"><h3 id="sec-h">Sections in this chapter</h3><ol id="sections"></ol></section>
+  </div>
+
+  <p class="note">The narration is generated with a synthetic voice (the open Kokoro-82M text-to-speech model),
+    from scripts adapted for listening. The page remembers where you stopped in each chapter.
+    Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip back and forward.</p>
+</main>
+
+<script src="tracks.js"></script>
+<script>
+(function () {
+  var tracks = window.TRACKS || [];
+  var audio = document.getElementById("audio");
+  var chapterList = document.getElementById("chapters");
+  var sectionList = document.getElementById("sections");
+  var nowTitle = document.getElementById("now-title");
+  var nowSection = document.getElementById("now-section");
+  var read = document.getElementById("read");
+  var rate = document.getElementById("rate");
+  var current = -1;
+
+  function store(key, value) {
+    try { if (value === undefined) return localStorage.getItem(key); localStorage.setItem(key, value); }
+    catch (e) { return null; }
+  }
+  function clock(sec) {
+    sec = Math.max(0, Math.round(sec));
+    var h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+    return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0");
+  }
+  function length(sec) {
+    var m = Math.round(sec / 60);
+    return m >= 60 ? Math.floor(m / 60) + " h " + (m % 60) + " min" : m + " min";
+  }
+  function item(list, label, meta, onClick) {
+    var li = document.createElement("li"), b = document.createElement("button");
+    b.type = "button";
+    b.innerHTML = '<span class="num"></span><span class="t"></span><span class="dur"></span>';
+    b.querySelector(".num").textContent = label[0];
+    b.querySelector(".t").textContent = label[1];
+    b.querySelector(".dur").textContent = meta;
+    b.addEventListener("click", onClick);
+    li.appendChild(b); list.appendChild(li);
+    return b;
+  }
+
+  if (!tracks.length) {
+    chapterList.innerHTML = '<li class="empty">No audio files found. Run tools/narrate.py to build them.</li>';
+    return;
+  }
+
+  var chapterButtons = tracks.map(function (t, i) {
+    var title = t.title.replace(/^Chapter \d+ — /, "");
+    return item(chapterList, [String(i + 1), title], length(t.duration), function () { load(i, true); });
+  });
+  var sectionButtons = [];
+
+  function load(i, play) {
+    if (i < 0 || i >= tracks.length) return;
+    if (current >= 0) store("epis-audio-pos-" + tracks[current].file, String(audio.currentTime));
+    current = i;
+    var t = tracks[i];
+    audio.src = t.file;
+    audio.playbackRate = parseFloat(rate.value);
+    nowTitle.textContent = t.title;
+    read.href = t.text;
+    chapterButtons.forEach(function (b, k) { b.setAttribute("aria-current", k === i ? "true" : "false"); });
+    sectionList.innerHTML = "";
+    sectionButtons = t.sections.map(function (s, k) {
+      var name = k === 0 ? "Opening" : s.title;
+      return item(sectionList, ["", name], clock(s.start), function () {
+        audio.currentTime = s.start; audio.play();
+      });
+    });
+    var saved = parseFloat(store("epis-audio-pos-" + t.file) || "0");
+    audio.addEventListener("loadedmetadata", function once() {
+      audio.removeEventListener("loadedmetadata", once);
+      if (saved > 5 && saved < t.duration - 5) audio.currentTime = saved;
+      audio.playbackRate = parseFloat(rate.value);
+    });
+    history.replaceState(null, "", "#" + String(i + 1).padStart(2, "0"));
+    store("epis-audio-last", String(i));
+    if (play) audio.play();
+  }
+
+  audio.addEventListener("timeupdate", function () {
+    if (current < 0) return;
+    var secs = tracks[current].sections, at = 0;
+    for (var k = 0; k < secs.length; k++) if (secs[k].start <= audio.currentTime + 0.5) at = k;
+    sectionButtons.forEach(function (b, k) { b.setAttribute("aria-current", k === at ? "true" : "false"); });
+    nowSection.textContent = at > 0 ? secs[at].title : "";
+    if (Math.floor(audio.currentTime) % 5 === 0) store("epis-audio-pos-" + tracks[current].file, String(audio.currentTime));
+  });
+  audio.addEventListener("ended", function () {
+    store("epis-audio-pos-" + tracks[current].file, "0");
+    if (current + 1 < tracks.length) load(current + 1, true);
+  });
+  document.getElementById("prev").onclick = function () { load(current - 1, true); };
+  document.getElementById("next").onclick = function () { load(current + 1, true); };
+  document.getElementById("back").onclick = function () { audio.currentTime = Math.max(0, audio.currentTime - 15); };
+  document.getElementById("fwd").onclick = function () { audio.currentTime = audio.currentTime + 30; };
+  rate.value = store("epis-audio-rate") || "1";
+  rate.onchange = function () { audio.playbackRate = parseFloat(rate.value); store("epis-audio-rate", rate.value); };
+  document.addEventListener("keydown", function (e) {
+    if (/INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName) || e.metaKey || e.ctrlKey) return;
+    if (e.key === "k" || e.key === " ") { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); }
+    if (e.key === "j") audio.currentTime = Math.max(0, audio.currentTime - 15);
+    if (e.key === "l") audio.currentTime = audio.currentTime + 30;
+  });
+  window.addEventListener("pagehide", function () {
+    if (current >= 0) store("epis-audio-pos-" + tracks[current].file, String(audio.currentTime));
+  });
+
+  var fromHash = parseInt(location.hash.slice(1), 10);
+  var last = parseInt(store("epis-audio-last") || "0", 10);
+  load(fromHash >= 1 && fromHash <= tracks.length ? fromHash - 1 : (last >= 0 && last < tracks.length ? last : 0), false);
+})();
+</script>
+</body>
+</html>
