@@ -97,6 +97,8 @@ In each case, we have no neutral standpoint from which to say which appearance i
 
 **Is Pyrrhonism self-refuting?** "If you claim to know that nothing can be known, you contradict yourself." Sextus anticipated this. The Pyrrhonist does not *assert* that nothing can be known. Skeptical statements are reports of how things *appear* to the skeptic at the moment. And skeptical arguments, Sextus said, are like **purgatives** that expel themselves along with the humors they purge: they cancel the dogmatist's beliefs and then cancel themselves. Sextus also compares them to a ladder that one kicks away after climbing it, an image Wittgenstein later borrowed at the end of the *Tractatus*.
 
+Skepticism was not only a Greek phenomenon. In India, **Śrīharṣa** (usually dated to the 12th century) taught, in *The Sweets of Refutation*, techniques for refuting any positive theory, many of them exploiting the difficulty of defining our terms, and promised his readers "the joy of universal conquest" in debate (see [Epistemology in India](02-history-of-epistemology.md#epistemology-in-india)). In Europe, Sextus's works were rediscovered and printed in the 1560s and inspired Montaigne. By Descartes' time, as he noted, skepticism was vigorously alive again.
+
 Pyrrhonism has modern defenders, notably Robert Fogelin (*Pyrrhonian Reflections on Knowledge and Justification*, 1994), who argues that the regress argument, properly understood, shows that our justificatory practices cannot meet the standards they set themselves.
 
 ---
@@ -169,6 +171,8 @@ Moore claimed this proof was perfectly rigorous: the premises are known, and the
 2. If I know I have hands, then I know I'm not a handless BIV.
 3. Therefore, I know I'm not a handless BIV.
 
+Notice what Moore did *not* do: he did not try to prove that he had hands, or that he was not dreaming. He distinguished **having conclusive evidence** from **being able to prove**: "I have, no doubt, conclusive reasons for asserting that I am not now dreaming; I have conclusive evidence that I am awake: but that is a very different thing from being able to prove it. I could not tell you what all my evidence is; and I should require to do this at least, in order to give you a proof." Moore allowed that particular doubts can be settled by particular checks (if someone suspects your hands are prosthetic, let them examine your hands), but he denied that there is any all-purpose proof that would dispel every conceivable doubt, and he denied that knowledge requires one. As Jennifer Nagel observes (*Knowledge*, ch. 2), proof has a natural role in supporting general philosophical claims such as "external objects exist," but "here is a hand" is so basic that there is nothing simpler and better known from which to prove it, much as axioms are not proved in mathematics.
+
 Moore's key point is about **relative certainty**. He was more certain that he had hands than he was of any premise in any skeptical argument. When a valid argument leads from premises to an absurd conclusion, it is rational to reject the least plausible premise, and the skeptic's premises are less plausible than "I have hands." (Recall: "one person's modus ponens is another person's modus tollens"; see [Valid argument forms](03-logic-and-arguments.md#valid-argument-forms).)
 
 **Objections.**
@@ -196,7 +200,7 @@ What makes an alternative relevant? There are two broad answers:
 - **Objective**: an alternative is relevant if it has a real chance of obtaining in the actual situation (Goldman). This yields externalist relevant alternatives theory.
 - **Contextual**: an alternative is relevant if it is salient in the conversational context or taken seriously by the people discussing it. This leads to contextualism.
 
-Dretske combined relevant alternatives with denial of closure. Stine argued that relevant alternatives theory, combined with contextualism, can preserve closure.
+Dretske combined relevant alternatives with denial of closure. Stine argued that relevant alternatives theory, combined with contextualism, can preserve closure. Her 1976 paper is usually credited with the first clear formulation of contextualism: "It is an essential characteristic of our concept of knowledge that tighter criteria are appropriate in different contexts. It is one thing in a street encounter, another in a classroom, another in a law court—and who is to say it cannot be another in a philosophical discussion?" Her second point was that within a single context we must stick to one standard: once we are worrying about disguised mules, we can no longer say the zoo visitor knows it's a zebra.
 
 ### Contextualism
 
@@ -205,6 +209,8 @@ Dretske combined relevant alternatives with denial of closure. Stine argued that
 In an ordinary context, the standards are low. "I know I have hands" is true. In a philosophy seminar where the BIV hypothesis has been raised, the standards rise. "I know I have hands" becomes false, because in that context, knowing requires ruling out the BIV possibility, which I cannot do.
 
 So the skeptic is right, *in the skeptic's context*. But this does not threaten ordinary knowledge claims made in ordinary contexts. There is no single context-independent answer to "Do I know I have hands?"
+
+Jennifer Nagel's illustration (*Knowledge*, ch. 7) uses height. A man who is six feet tall is tall for an American man and short for a professional basketball player. Sports fans who say "he isn't tall" and the man who describes himself as tall on his dating profile are both speaking truly, and neither should accuse the other of saying something false: each must respect the other's context. For the contextualist, the everyday speaker and the skeptic are in the same situation. Asking which one "really" captures knowledge, once and for all, is like asking which day is *really* "tomorrow." Note that contextualism is a theory about the **language** of knowledge attribution, not a complete theory of knowledge. It can be combined with internalist accounts (higher standards require more evidence) or externalist ones (higher standards require tracking the truth across a wider range of circumstances).
 
 **DeRose's bank cases** ("Contextualism and Knowledge Attributions," 1992):
 - **Case A (low stakes).** On a Friday afternoon, Keith and his wife drive past the bank to deposit their paychecks. The lines are long. Nothing much depends on depositing the checks immediately. Keith says, "I know the bank will be open tomorrow; I was there two Saturdays ago." Intuitively, what he says is true.
@@ -225,7 +231,11 @@ Stewart Cohen's **airport case** ("Contextualism, Skepticism, and the Structure 
 
 A rival to contextualism explains the bank cases differently. **Subject-sensitive invariantism** or **interest-relative invariantism** (John Hawthorne, *Knowledge and Lotteries*, 2004; Jason Stanley, *Knowledge and Practical Interests*, 2005; Jeremy Fantl and Matthew McGrath, *Knowledge in an Uncertain World*, 2009) says "know" has a fixed meaning (invariantism), but whether a *subject* knows depends partly on the subject's own **practical stakes**. In Case B, Keith really doesn't know, because more is at stake for him. This is called **pragmatic encroachment**, and it is discussed in [Chapter 13](13-virtues-and-ethics-of-belief.md#pragmatic-encroachment).
 
-**Classical invariantism** holds that the standards for knowledge are fixed and do not depend on stakes or context. *Skeptical* invariantists (Peter Unger, *Ignorance*, 1975) set them very high, so we know almost nothing. *Moderate* invariantists (Timothy Williamson) set them at ordinary levels and explain the bank intuitions by other means, such as our tendency to be more cautious when more is at stake.
+Nagel (*Knowledge*, ch. 7) gives a sharp pair of cases. Lee is leaving work. In one version, a colleague asks whether the supply-room door is still locked, because she left her jacket inside; Lee says, "Yes, I know, I locked it myself half an hour ago." In the other version, police officers tell him an armed man is loose in the building and ask whether the supply room's back exit is locked; Lee says, "I don't know. I locked it half an hour ago, but I wasn't watching the whole time." Both answers sound right, though his evidence is the same. The contextualist says the standards for the *word* "know" differ between the two conversations. The interest-relative invariantist says something stronger: Lee *really does* know in the first case and *really doesn't* in the second, because what is at stake for him differs.
+
+Critics point to odd consequences. If stakes determine knowledge, it should sound fine to say "The waiter doesn't know whether the sandwich is tuna or chicken, but he *would* have known if one of his customers didn't have a fish allergy." It sounds strange. And if Lee simply knows in the low-stakes case, why can a skeptic so easily talk us out of saying so?
+
+**Classical invariantism** holds that the standards for knowledge are fixed and do not depend on stakes or context. *Skeptical* invariantists (Peter Unger, *Ignorance*, 1975) set them very high, so we know almost nothing. *Moderate* invariantists (Timothy Williamson) set them at ordinary levels and explain the bank intuitions by other means, such as our tendency to be more cautious when more is at stake. Nagel defends a psychological version of this reply: when we evaluate someone after considering a possibility of error, a robust bias called **epistemic egocentrism** makes us judge them as if *they* were also worried about that possibility and irresponsibly ignoring it. On this view, the skeptical and high-stakes intuitions are partly cognitive illusions, like a visual illusion that persists even when we know it's an illusion. See [Mindreading: how we attribute knowledge](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge).
 
 ### Semantic externalism
 
@@ -284,6 +294,14 @@ Perhaps we can't *prove* that the external world exists, but its existence is th
 **P. F. Strawson** (*Skepticism and Naturalism: Some Varieties*, 1985) argued that belief in the external world, like belief in other minds and induction, is not something we have the option of giving up, so arguments for or against it are "idle."
 
 **Transcendental arguments** (Kant; Strawson, *Individuals*, 1959) try to show that what the skeptic doubts is a necessary condition of the skeptic's own thought or experience. For example, self-conscious experience requires an objective world distinct from one's experiences of it. Barry Stroud ("Transcendental Arguments," 1968) argued that such arguments at best establish that we must *believe* in an external world, not that it exists.
+
+### Diagnosing skepticism's appeal
+
+Some philosophers give up on refuting the skeptic on the skeptic's own terms. If you accept only premises the skeptic grants, you will never climb out of the pit. Instead, they start from common sense and try to explain *why* skeptical arguments are so seductive, as a defense against them.
+
+- **An immune system gone wrong.** Timothy Williamson has compared skepticism to an **autoimmune disease**. We have a healthy capacity to suspend a particular belief temporarily and check whether it fits with the rest of what we know; it weeds out inconsistent and ungrounded beliefs. Skepticism is this protective mechanism running out of control: once we suspend belief in the entire outer world, nothing is left to check anything against, and the reasonable beliefs can no longer be supported.
+- **A questionable model of the mind.** Many skeptical arguments assume a model inherited from the Stoics: we first receive *impressions*, and then, as a separate step, decide whether to accept them. If dreams and waking experiences deliver indistinguishable impressions, the second step seems hopeless (Nagel, *Knowledge*, ch. 2). Direct realism, disjunctivism, and externalism all reject parts of this model (see [Chapter 7](07-sources-of-knowledge.md#perception)).
+- **Psychological biases.** Thinking about a possibility of error, even a remote one, sharply reduces our willingness to credit people with knowledge, perhaps through a bias that makes it hard to evaluate someone who hasn't considered the possibility we have in mind (see [Mindreading: how we attribute knowledge](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)).
 
 ### A summary of the responses
 
@@ -456,6 +474,7 @@ The BIV argument relies on the mere possibility of an undetectable scenario and 
 - Keith DeRose, *The Case for Contextualism* (Oxford University Press, 2009).
 - Duncan Pritchard, *Epistemic Angst: Radical Skepticism and the Groundlessness of Our Believing* (Princeton University Press, 2015).
 - Duncan Pritchard, *Scepticism: A Very Short Introduction* (Oxford University Press, 2019).
+- Jennifer Nagel, *Knowledge: A Very Short Introduction* (Oxford University Press, 2014), chs. 2 and 7: skepticism, contextualism, and interest-relative invariantism in brief.
 - David Chalmers, *Reality+: Virtual Worlds and the Problems of Philosophy* (W. W. Norton, 2022).
 
 **On denial and manufactured doubt**

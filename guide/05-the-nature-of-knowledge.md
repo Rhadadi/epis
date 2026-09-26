@@ -150,7 +150,7 @@ Michael Clark ("Knowledge and Grounds: A Comment on Mr. Gettier's Paper," 1963) 
 
 > S knows that p iff S has a justified true belief that p, and S's belief is not inferred from any false belief.
 
-**Problems.** Fake barn country: Henry infers nothing; he just sees. Lehrer's variant of the Nogot case: the subject reasons directly from evidence without forming the false intermediate belief. And the proposal may be too strong: if a detective's reasoning uses ten premises and one irrelevant one is false, the detective can still know the conclusion.
+**Problems.** Fake barn country: Henry infers nothing; he just sees. Lehrer's variant of the Nogot case: the subject reasons directly from evidence without forming the false intermediate belief. And the proposal is too strong. Jennifer Nagel (*Knowledge: A Very Short Introduction*, ch. 4) describes a detective investigating an assault in broad daylight who has a dozen eyewitnesses, physical evidence, the victim's statement, and a confession. One of the twelve witnesses was lying about having been there. The detective's belief that the suspect did it rests partly on a false belief (that all twelve witnesses saw it), yet she plainly knows. One rotten plank does not make a heavily reinforced bridge unsafe. Defenders then tried requiring that the knower not *essentially* rely on any falsehood, but spelling out "essential reliance" proved very difficult.
 
 ### Defeasibility theories
 
@@ -174,7 +174,9 @@ In Case II, Brown's being in Barcelona played no role in causing Smith's belief.
 - Knowledge of **mathematics** and logic: the fact that 7 + 5 = 12 does not seem to cause anything.
 - Knowledge of **universal generalizations** ("All humans are mortal") and of **the future** ("The sun will rise tomorrow"): the future cannot cause present beliefs.
 - **Fake barns**: the real barn *does* cause Henry's belief in the normal perceptual way. Yet he doesn't know.
-- "Appropriate" does a lot of unexplained work.
+- "Appropriate" does a lot of unexplained work, and it is hard to say what makes a causal chain appropriate without using the concept of knowledge itself.
+
+A virtue of the causal theory is that it drops the requirement that the knower be able to justify the belief. Most educated adults know that Julius Caesar was assassinated, though few remember where they learned it. On the causal theory, what matters is that their belief is linked to the event by a real causal chain: eyewitnesses, ancient historians, centuries of books, and forgotten teachers. The idea is not only Western. As Jennifer Nagel notes (*Knowledge*, ch. 4), the 14th-century Indian philosopher Gaṅgeśa had already developed a detailed causal theory of knowledge.
 
 ### Reliabilism
 
@@ -191,6 +193,7 @@ Reliabilism is an **externalist** theory: what makes a belief knowledge can be o
 **Problems.**
 - **The generality problem** (Earl Conee and Richard Feldman, 1998; noted by Goldman himself in 1979). Any belief is produced by a particular token process, which belongs to many types: "vision," "vision in daylight," "vision of large objects at 50 meters," "vision of barn-shaped objects in this county on Tuesdays." These types have very different reliability. Which type determines whether the belief is knowledge? Without a principled answer, reliabilism is incomplete.
 - **Reliability without awareness.** Keith Lehrer's **Truetemp** case (*Theory of Knowledge*, 1990): without his knowledge, Mr. Truetemp has had a device implanted in his head that accurately measures the temperature and causes him to form beliefs about it. He believes "It is 34 °C" and is right, as he always is, but he has no idea why he has these beliefs and has never checked them. Does he know the temperature? Many people say no. Laurence BonJour's **Norman the clairvoyant** makes a similar point (see [Test cases for internalism and externalism](06-justification.md#test-cases-for-internalism-and-externalism)).
+- **The threshold problem.** How reliable is reliable enough? Nagel (*Knowledge*, ch. 4) presses the point with a lottery. You hold one ticket in a fair lottery of a thousand; the draw has happened, but the result isn't announced. Your belief "my ticket lost" was formed by a process that is 99.9% reliable, yet most people say you don't *know* you lost. Make the lottery a million tickets and the verdict doesn't change. So is 99.9999% reliability required? Then ordinary perception, which fails more often than one time in a million, would not give knowledge, and we slide toward skepticism. The threshold seems to need to be very high and quite low at the same time. See also [Knowledge, assertion, and action](#knowledge-assertion-and-action).
 - **The value problem**: see [The value of knowledge](#the-value-of-knowledge).
 
 ### Sensitivity and tracking
@@ -203,7 +206,11 @@ Robert Nozick (*Philosophical Explanations*, 1981), building on Fred Dretske ("C
 > 3. **Sensitivity**: if p were false, S would not believe p;
 > 4. **Adherence**: if p were true, S would believe p.
 
-(Nozick relativized these to the method used to form the belief.) The key condition is **sensitivity**. These are **counterfactual** conditionals, evaluated by considering the *nearest* possible worlds where p is false.
+The key condition is **sensitivity**. These are **counterfactual** conditionals, evaluated by considering the *nearest* possible worlds where p is false.
+
+Nozick relativized the conditions to the **method** used to form the belief, because of cases like this one. A grandmother in hospital sees her grandson standing by her bed, and believes he is well. But her family has agreed that if he were ill, they would keep it from her and tell her he was fine. So if he weren't well, she would still believe he was: her belief is insensitive. Yet surely, looking at him, she knows he is well. Nozick's answer: in the counterfactual situation, she would be using a different method (trusting her family's reassurance) rather than the method she actually used (looking at him). Sensitivity should be assessed holding the method fixed. This leads the tracking theory, like reliabilism, into the question of how to individuate methods, a version of the generality problem.
+
+A tracker is like a good diagnostician: someone who would diagnose a disease if the patient had it and would not if the patient didn't. Nagel's illustration (*Knowledge*, ch. 5): a doctor whose diagnoses reliably track which patients have hepatitis A knows when a patient has it, even if she can't say what cues she is responding to, and even if she is wrong about how she does it.
 
 In the stopped clock case, if it were not 2:00, the man would still believe it is 2:00 (the clock would still say so). His belief is **insensitive**, so it isn't knowledge. In fake barn country, if Henry were looking at a façade rather than a barn, he would still believe "That's a barn." Insensitive; not knowledge. Sensitivity handles many cases elegantly.
 
@@ -261,11 +268,17 @@ On this **knowledge-first** view, knowledge explains the other epistemic notions
 - **Evidence**: E = K. Your evidence is all and only what you know.
 - **Justification**: a belief is justified when it is supported by your evidence, that is, by your knowledge. Some knowledge-first theorists (Alexander Bird, 2007) say a justified belief is one that would be knowledge in normal circumstances.
 - **Assertion**: you should assert only what you know. See [Knowledge, assertion, and action](#knowledge-assertion-and-action).
-- **Belief**: belief is a state that *aims* at knowledge; a belief that falls short of knowledge is in some way defective.
+- **Belief**: belief is a state that *aims* at knowledge; a belief that falls short of knowledge is in some way defective. In Williamson's words, "believing p is, roughly, treating p as if one knew p."
+
+But isn't belief obviously the simpler notion, since every case of knowledge is a case of belief and not vice versa? Jennifer Nagel (*Knowledge*, ch. 4) answers with an analogy. There are far more roughly round things than perfect circles, yet the concept of a circle is more basic: "roughly circular" is defined in terms of the circle, not the other way around. Knowing may be like the circle, the ideal, with believing as an approximation that aims at it. Being more common does not make a concept more fundamental.
+
+Some supporting evidence comes from psychology. Across cultures, children learn and use the verb "know" earlier and more often than "think," and even chimpanzees can track what a rival does or does not know, although no non-human animal has been shown to track another's *false belief*. Representing knowledge seems to be cognitively simpler than representing mere belief (see [Mindreading: how we attribute knowledge](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)). Critics reply that the order in which we learn concepts need not reveal which is metaphysically basic: children talk about salt long before they learn about sodium.
 
 Why does analysis fail? Williamson argues that knowledge is **prime**: it cannot be decomposed into an internal component (belief, justification as it seems from inside) and an external component (truth, reliability of the environment). Gettier cases exploit the gap between these two components, and there is no way to close it from the inside.
 
 **Objections.** Many find E = K too restrictive. Can't a false belief be based on evidence? (A brain in a vat has the same experiences as you; doesn't it have the same evidence?) See [The new evil demon problem](06-justification.md#test-cases-for-internalism-and-externalism).
+
+Other philosophers draw a different lesson from the failure of analysis. Matt Weiner suggests that our use of "know" is guided by a set of handy but mutually inconsistent principles, so no definition can capture all our intuitions; trying is like identifying the make and model of a car assembled from scrap parts. Still others suggest turning away from knowledge to questions about what it is reasonable to believe. Knowledge-first theorists reply that resistance to analysis can be a sign that we have reached something fundamental.
 
 ---
 
@@ -408,6 +421,11 @@ This explains many features of knowledge:
 - Why **testimony** is central (knowledge is a social tool from the start). See [Chapter 12](12-social-epistemology.md).
 
 Craig's approach, sometimes called **genealogical** or **functional**, has influenced Bernard Williams (*Truth and Truthfulness*, 2002) and Miranda Fricker (*Epistemic Injustice*, 2007), who uses it to explain why wrongly discounting someone as an informant is a distinctive injustice. See [Epistemic injustice](12-social-epistemology.md#epistemic-injustice).
+
+**Objections** (several summarized by Jennifer Nagel, *Knowledge*, ch. 6):
+- **Knowers can be bad informants.** A knower may be secretive, or a liar.
+- **Gettier cases.** The Gettier victim has a justified true belief and in one sense would serve as a good informant, since he gets it right, yet we judge that he doesn't know. Craig's account has trouble explaining why.
+- **Evolutionary evidence.** Our closest animal relatives can distinguish knowledge from ignorance, but not in the way Craig's story makes basic. In experiments, chimpanzees are poor at using knowledgeable versus ignorant helpers who give clues about hidden food, yet a subordinate chimpanzee readily keeps track of whether a dominant rival knows where food is hidden (Brian Hare, Josep Call, and Michael Tomasello, 2001). The link between knowing and *acting* seems more basic than the link between knowing and *informing*.
 
 ---
 

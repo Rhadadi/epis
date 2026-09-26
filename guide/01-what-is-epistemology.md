@@ -97,6 +97,10 @@ To say what we know, it seems we need a criterion for picking out knowledge. To 
 
 English uses the single word "know" for quite different things. Many other languages separate them: French has *savoir* and *connaître*, German *wissen* and *kennen*, Persian *dānestan* (دانستن) and *shenākhtan* (شناختن).
 
+The concept itself seems to be universal. "Know" is among the ten most common verbs in English, and linguists working on the "Natural Semantic Metalanguage" project (Anna Wierzbicka, Cliff Goddard, and colleagues) list KNOW and THINK among a small set of meanings, fewer than a hundred, that appear to have an exact equivalent in every human language studied. Many words you might expect to be universal are not: some languages have no single verb for "go" or "eat." Jennifer Nagel (*Knowledge: A Very Short Introduction*, 2014, ch. 1) takes this as a hint that the contrast between knowing and merely thinking is basic to human life, not a philosopher's invention.
+
+Knowledge is also different from **facts**. Nagel's example: shake a sealed box containing a coin and put it down. The coin has landed heads or tails; that is a fact. But until someone looks, no one knows which. Writing "heads" on one slip of paper and "tails" on another puts the fact on paper without putting it into anyone's knowledge. Knowledge always belongs to someone: a person, or a group whose members pool what they know (an orchestra knows how to play a symphony that no single player could).
+
 ### Propositional knowledge
 
 **Propositional knowledge** is *knowing that* something is the case.

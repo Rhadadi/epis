@@ -60,7 +60,7 @@ It runs to about 130,000 words across sixteen chapters, a glossary, and a readin
 
 | | | |
 |---|---|---|
-| 17 | [Glossary](17-glossary.md) | Nearly 200 key terms, each linked to its full explanation |
+| 17 | [Glossary](17-glossary.md) | 200 key terms, each linked to its full explanation |
 | 18 | [Reading List and Study Plan](18-reading-list.md) | The best books by level; primary texts; non-Western traditions; free resources; a twelve-week study plan |
 
 ---
@@ -104,6 +104,8 @@ You can read the guide from start to finish. If you have a particular goal, thes
 **Understanding public debates**: [4](04-language-concepts-and-definitions.md) → [11](11-truth-and-relativism.md) → [12](12-social-epistemology.md) → [14](14-psychology-of-reasoning.md) (motivated reasoning, identity) → [15](15-fallacies.md) → [16](16-critical-thinking-toolkit.md)
 
 **Twelve-week structured course**: see [the study plan](18-reading-list.md#a-twelve-week-study-plan).
+
+**Reading Jennifer Nagel's *Knowledge: A Very Short Introduction* alongside the guide**: see the [section-by-section reading map](18-reading-list.md#reading-map-nagels-knowledge-a-very-short-introduction).
 
 ---
 

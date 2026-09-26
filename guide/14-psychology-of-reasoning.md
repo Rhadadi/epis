@@ -28,6 +28,7 @@ This chapter surveys the most important findings and, crucially, what can be don
 - [Overconfidence and the illusion of explanatory depth](#overconfidence-and-the-illusion-of-explanatory-depth)
 - [The Dunning-Kruger effect and its critics](#the-dunning-kruger-effect-and-its-critics)
 - [Identity-protective cognition](#identity-protective-cognition)
+- [Mindreading: how we attribute knowledge](#mindreading-how-we-attribute-knowledge)
 - [The argumentative theory of reasoning](#the-argumentative-theory-of-reasoning)
 - [Ecological rationality](#ecological-rationality)
 - [Replication and the psychology of psychology](#replication-and-the-psychology-of-psychology)
@@ -296,6 +297,31 @@ A striking finding (Kahan and colleagues, *Nature Climate Change*, 2012): Americ
 - **Trusted messengers.** People accept information more readily from sources they see as sharing their values.
 - **Self-affirmation.** In studies by Geoffrey Cohen, Joshua Aronson, and Claude Steele (2000), people who first wrote about an important value unrelated to the issue (affirming their identity) were then more open to evidence that challenged their views on a contested issue.
 - **Keep your identity small.** The programmer and essayist Paul Graham ("Keep Your Identity Small," 2009) observed that discussions of religion and politics tend to be unproductive because they engage people's identities, and advised: "the more labels you have for yourself, the dumber they make you." Holding beliefs as conclusions rather than as parts of who you are makes it easier to change them.
+
+---
+
+## Mindreading: how we attribute knowledge
+
+Every day we judge, instantly and without calculation, whether someone *knows* something or merely *thinks* it: whether the colleague knows about the meeting, whether the driver has seen the cyclist. Psychologists call the capacity behind such judgments **mindreading** (or "theory of mind"): attributing hidden mental states such as wanting, believing, knowing, and pretending to others, on the basis of subtle cues like gaze and facial expression. Jennifer Nagel (*Knowledge: A Very Short Introduction*, ch. 8) argues that epistemologists should study this capacity, because our intuitions about cases like Gettier's are its products.
+
+**Knowledge is easier to represent than belief.**
+- Chimpanzees keep track of whether a rival knows or doesn't know where food is hidden (Brian Hare, Josep Call, and Michael Tomasello, 2001), but no non-human animal has convincingly passed a test requiring it to track another's **false belief**.
+- Human children pass explicit false-belief tests only around age four or five. In a classic version (the "unexpected contents" task, developed by Josef Perner, Heinz Wimmer, and colleagues in the 1980s), a child is shown a candy box, guesses it contains candy, and discovers it contains pencils. Most three-year-olds then say that another child who hasn't looked will *know* it contains pencils, and many even say that they themselves thought all along that it contained pencils. Most five-year-olds get both questions right. (Studies suggest that infants have some implicit sensitivity to false beliefs, but the scope and robustness of this capacity are debated.)
+- Children in very different societies, from large cities to hunter-gatherer communities such as the Baka of Cameroon (Jeremy Avis and Paul Harris, 1991), pass through the same stages.
+- Children learn and use "know" earlier and more often than "think."
+
+To represent a false belief, you must hold in mind two pictures of the world at once, how it is and how someone takes it to be, and suppress the first. Knowledge, which must match the world, needs only one. Knowledge-first epistemologists cite these findings in support of their view (see [Knowledge first](05-the-nature-of-knowledge.md#knowledge-first)).
+
+**The brain has specialized equipment for it.** Reading stories about what characters think, want, and know selectively activates brain regions including the **right temporo-parietal junction** (Rebecca Saxe and Nancy Kanwisher, 2003), and damaging or temporarily disrupting this region impairs judgments that depend on others' beliefs.
+
+**It has natural limits.**
+- **Capacity.** We can track only a few levels of nested mental states. "Davis thinks that Lee knows that Smith doesn't want Jones to find out about the job" is four levels; studies suggest most adults begin to fail at around five.
+- **Epistemic egocentrism** (the **curse of knowledge**). It is hard to set aside what you know when judging someone who knows less. In experimental markets, traders with private information failed to discount it when predicting how less-informed traders would behave, even when it cost them money (Colin Camerer, George Loewenstein, and Martin Weber, 1989). Once we know the outcome of a decision, we find it hard to judge the decision by what the decision-maker could have known ([hindsight bias](#other-well-documented-biases)). Unlike many biases, egocentrism resists warnings and financial incentives.
+
+**Why it matters for epistemology and critical thinking.**
+- Nagel suggests that egocentrism may explain the intuitions behind skepticism and contextualism. Once *we* are thinking about disguised mules or tricky lighting, we evaluate the naive zoo visitor or shopper as though *they* were entertaining those possibilities and irresponsibly ignoring them, and so we withdraw knowledge from them (see [Thought experiments and intuitions](04-language-concepts-and-definitions.md#thought-experiments-and-intuitions) and [Subject-sensitive invariantism](08-skepticism.md#subject-sensitive-invariantism)). If so, some of those intuitions are illusions to be handled with care.
+- The curse of knowledge makes experts poor judges of what novices understand, a major obstacle to good teaching and clear writing. Test your explanations on real beginners.
+- When judging whether someone "should have known," ask what they could actually have known at the time, not what you know now.
 
 ---
 

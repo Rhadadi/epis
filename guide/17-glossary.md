@@ -112,6 +112,10 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Crux.** A point on which a disagreement depends; settling it would change someone's mind. → [Ch. 16](16-critical-thinking-toolkit.md#step-6-find-the-crux)
 
+**Curse of knowledge.** See *Epistemic egocentrism*.
+
+**Cynical Theory.** Nagel's name for the view that "knowledge" is merely a label for the opinions of the powerful. → [Ch. 11](11-truth-and-relativism.md#the-cynical-theory-of-knowledge)
+
 ## D
 
 **De re / de dicto.** The distinction between a claim about a thing (de re) and a claim about a proposition or description (de dicto). → [Ch. 3](03-logic-and-arguments.md#modal-logic-basics)
@@ -154,9 +158,13 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Epistemic bubble.** An information network from which other voices are omitted, but not discredited. → [Ch. 12](12-social-epistemology.md#echo-chambers-and-epistemic-bubbles)
 
+**Epistemic egocentrism.** The difficulty of setting aside one's own knowledge when judging someone who knows less; also called the curse of knowledge. → [Ch. 14](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)
+
 **Epistemic injustice.** A wrong done to someone in their capacity as a knower, in testimonial or hermeneutical forms. → [Ch. 12](12-social-epistemology.md#epistemic-injustice)
 
 **Epistemic luck.** Luck in how a belief comes to be true. Veritic luck is incompatible with knowledge. → [Ch. 5](05-the-nature-of-knowledge.md#epistemic-luck)
+
+**Epistemic vigilance.** The largely unconscious monitoring of informants for competence and honesty. → [Ch. 7](07-sources-of-knowledge.md#reductionism)
 
 **Epistemology.** The study of knowledge, belief, evidence, justification, and rationality. → [Ch. 1](01-what-is-epistemology.md)
 
@@ -179,6 +187,8 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 **Fallibilism.** The view that we can know (or justifiably believe) something even though our grounds don't guarantee its truth. → [Ch. 6](06-justification.md#fallibilism)
 
 **Falsifiability.** Popper's criterion: a theory is scientific if some possible observation could refute it. → [Ch. 10](10-science-and-evidence.md#popper-and-falsificationism)
+
+**False-belief task.** A test of whether someone can attribute a mistaken belief to another; children typically pass explicit versions around age four or five. → [Ch. 14](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)
 
 **Family resemblance.** Wittgenstein's term for a concept whose instances share overlapping similarities but no single common feature. → [Ch. 4](04-language-concepts-and-definitions.md#family-resemblance-and-prototypes)
 
@@ -228,6 +238,8 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Intellectual virtue.** A character trait or ability that makes someone a good thinker, such as open-mindedness or intellectual courage. → [Ch. 13](13-virtues-and-ethics-of-belief.md#a-catalogue-of-intellectual-virtues)
 
+**Interest-relative invariantism.** The view that "know" has a fixed meaning but whether a subject knows depends partly on what is at stake for that subject. Also called subject-sensitive invariantism. → [Ch. 8](08-skepticism.md#subject-sensitive-invariantism)
+
 **Internalism.** The view that justification depends only on factors internal to the subject's perspective. → [Ch. 6](06-justification.md#internalism-and-externalism)
 
 **Is–ought gap.** Hume's observation that no normative conclusion follows from purely factual premises. → [Ch. 4](04-language-concepts-and-definitions.md#facts-values-and-the-is-ought-gap)
@@ -263,6 +275,8 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 **Masked man fallacy.** Substituting co-referring terms inside a belief or knowledge context. → [Ch. 4](04-language-concepts-and-definitions.md#the-masked-man-fallacy)
 
 **Meno problem.** Why is knowledge more valuable than true belief? → [Ch. 5](05-the-nature-of-knowledge.md#the-value-of-knowledge)
+
+**Mindreading.** The capacity to attribute mental states such as knowing, believing, and wanting to others; the source of our intuitions about who knows what. → [Ch. 14](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)
 
 **Modus ponens.** "If P then Q; P; therefore Q." **Modus tollens.** "If P then Q; not Q; therefore not P." → [Ch. 3](03-logic-and-arguments.md#valid-argument-forms)
 
@@ -338,6 +352,8 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Reductio ad absurdum.** Refuting a claim by showing it leads to a contradiction or absurdity. → [Ch. 3](03-logic-and-arguments.md#valid-argument-forms)
 
+**Reductionism (about testimony).** The view that testimonial justification reduces to perception, memory, and inference. *Global* reductionism appeals to the general track record of testimony; *local* reductionism requires specific reasons to trust each speaker. → [Ch. 7](07-sources-of-knowledge.md#reductionism)
+
 **Reflective equilibrium.** Adjusting principles and case judgments against each other until they cohere. → [Ch. 4](04-language-concepts-and-definitions.md#reflective-equilibrium)
 
 **Regress problem.** If every justified belief requires justification from another, the chain must end, circle, or go on forever. → [Ch. 6](06-justification.md#the-regress-problem)
@@ -375,6 +391,8 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 **Sorites paradox.** The paradox of the heap, arising from vague predicates. → [Ch. 4](04-language-concepts-and-definitions.md#vagueness-and-the-sorites-paradox)
 
 **Soundness.** A deductive argument is sound if it is valid and its premises are true. → [Ch. 3](03-logic-and-arguments.md#validity-and-soundness)
+
+**Source amnesia.** Remembering a fact while forgetting where one learned it; a key test case for internalism. → [Ch. 6](06-justification.md#internalism-and-externalism)
 
 **Standpoint theory.** The view that social position shapes knowledge and that marginalized positions can offer epistemic advantages. → [Ch. 12](12-social-epistemology.md#standpoint-and-feminist-epistemology)
 

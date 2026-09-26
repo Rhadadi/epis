@@ -15,6 +15,7 @@ This appendix gathers the best books and resources for going deeper, arranged by
 
 - [How to read philosophy](#how-to-read-philosophy)
 - [Level 1: Start here](#level-1-start-here)
+- [Reading map: Nagel's *Knowledge: A Very Short Introduction*](#reading-map-nagels-knowledge-a-very-short-introduction)
 - [Level 2: Textbooks and classics](#level-2-textbooks-and-classics)
 - [Level 3: Advanced and specialist](#level-3-advanced-and-specialist)
 - [Anthologies and reference works](#anthologies-and-reference-works)
@@ -73,6 +74,53 @@ Accessible books that require no background. If you read only five books, choose
 - Cailin O'Connor and James Owen Weatherall, *The Misinformation Age* (Yale University Press, 2019).
 - Carl Bergstrom and Jevin West, *Calling Bullshit* (Random House, 2020).
 - Harry Frankfurt, *On Bullshit* (Princeton University Press, 2005). About 70 small pages.
+
+---
+
+## Reading map: Nagel's *Knowledge: A Very Short Introduction*
+
+Jennifer Nagel's *Knowledge: A Very Short Introduction* (Oxford University Press, 2014) is the best short book on the subject, and a natural companion to this guide. Read a section of Nagel, then the matching guide sections for more detail, further arguments, and exercises. The guide draws on Nagel's arguments and examples in the places listed here, always with a citation.
+
+| Nagel's chapter and section | Matching guide sections |
+|---|---|
+| **1. Introduction** | |
+| Searching for knowledge; Knowledge and the knower | [Three kinds of knowing](01-what-is-epistemology.md#three-kinds-of-knowing); [Group knowledge and belief](12-social-epistemology.md#group-knowledge-and-belief) |
+| Spotting the difference (the Cynical Theory; "know" in every language) | [Three kinds of knowing](01-what-is-epistemology.md#three-kinds-of-knowing); [The "Cynical Theory" of knowledge](11-truth-and-relativism.md#the-cynical-theory-of-knowledge) |
+| Knowing vs thinking (factivity; Protagoras) | [The truth condition](05-the-nature-of-knowledge.md#the-truth-condition); [Protagoras and the self-refutation argument](11-truth-and-relativism.md#protagoras-and-the-self-refutation-argument) |
+| **2. Scepticism** | |
+| Can you be sure? | [Why study skepticism?](08-skepticism.md#why-study-skepticism); [Cartesian skepticism](08-skepticism.md#cartesian-skepticism) |
+| The historical roots of scepticism | [The Hellenistic schools](02-history-of-epistemology.md#the-hellenistic-schools); [Pyrrhonian skepticism](08-skepticism.md#pyrrhonian-skepticism) |
+| Old challenges, fresh replies (Moore, Russell, Putnam, Chalmers, Williamson) | [Mooreanism](08-skepticism.md#mooreanism); [Abductive responses](08-skepticism.md#abductive-responses); [Semantic externalism](08-skepticism.md#semantic-externalism); [The simulation argument](08-skepticism.md#the-simulation-argument); [Diagnosing skepticism's appeal](08-skepticism.md#diagnosing-skepticisms-appeal) |
+| **3. Rationalism and empiricism** | |
+| The Early Modern period | [The early modern revolution](02-history-of-epistemology.md#the-early-modern-revolution) |
+| The rationalism of René Descartes | [Descartes and the quest for certainty](02-history-of-epistemology.md#descartes-and-the-quest-for-certainty); [Classical foundationalism](06-justification.md#classical-foundationalism) |
+| The empiricism of John Locke | [Locke](02-history-of-epistemology.md#locke); [Locke: testimony gives only probability](07-sources-of-knowledge.md#locke-testimony-gives-only-probability) |
+| **4. The analysis of knowledge** | |
+| Gettier's challenge | [The Gettier problem](05-the-nature-of-knowledge.md#the-gettier-problem); [No false lemmas](05-the-nature-of-knowledge.md#no-false-lemmas) |
+| The causal theory of knowledge | [The causal theory](05-the-nature-of-knowledge.md#the-causal-theory); [Reliabilism](05-the-nature-of-knowledge.md#reliabilism) |
+| No way out? | [The inescapability of Gettier problems](05-the-nature-of-knowledge.md#the-inescapability-of-gettier-problems) |
+| Can knowing be analysed at all? (knowledge first; ancient Gettier cases) | [Knowledge first](05-the-nature-of-knowledge.md#knowledge-first); [Epistemology in India](02-history-of-epistemology.md#epistemology-in-india) |
+| **5. Internalism and externalism** | |
+| The first-person point of view | [Internalism and externalism](06-justification.md#internalism-and-externalism) |
+| Nozick's tracking theory | [Sensitivity and tracking](05-the-nature-of-knowledge.md#sensitivity-and-tracking) |
+| The Generality Problem | [Reliabilism](05-the-nature-of-knowledge.md#reliabilism); [Test cases for internalism and externalism](06-justification.md#test-cases-for-internalism-and-externalism) |
+| Questionable methods (BonJour's clairvoyant; two ways of thinking) | [Test cases for internalism and externalism](06-justification.md#test-cases-for-internalism-and-externalism); [Dual-process theories](14-psychology-of-reasoning.md#dual-process-theories) |
+| **6. Testimony** | |
+| They told you so | [Testimony](07-sources-of-knowledge.md#testimony) |
+| No way to know (Locke) | [Locke: testimony gives only probability](07-sources-of-knowledge.md#locke-testimony-gives-only-probability) |
+| The middle ground: reductionism | [Reductionism](07-sources-of-knowledge.md#reductionism) |
+| Testimony as a distinctive source of knowledge (Gautama, Lackey, Wikipedia, Craig) | [Anti-reductionism](07-sources-of-knowledge.md#anti-reductionism); [Transmission and generation](07-sources-of-knowledge.md#transmission-and-generation); [Why do we have the concept of knowledge?](05-the-nature-of-knowledge.md#why-do-we-have-the-concept-of-knowledge) |
+| **7. Shifting standards?** | |
+| Counting on context | [Contextualism](08-skepticism.md#contextualism) |
+| The emergence of contextualism | [The closure argument](08-skepticism.md#the-closure-argument); [Relevant alternatives](08-skepticism.md#relevant-alternatives) |
+| Interest-relative invariantism | [Subject-sensitive invariantism](08-skepticism.md#subject-sensitive-invariantism); [Pragmatic encroachment](13-virtues-and-ethics-of-belief.md#pragmatic-encroachment) |
+| Old-fashioned invariantism, again? | [Subject-sensitive invariantism](08-skepticism.md#subject-sensitive-invariantism) (moderate invariantism) |
+| **8. Knowing about knowing** | |
+| Epistemology's raw materials; Reading minds | [Mindreading: how we attribute knowledge](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge) |
+| Challenges to the case method | [Thought experiments and intuitions](04-language-concepts-and-definitions.md#thought-experiments-and-intuitions) |
+| Impressions of knowledge, and knowledge itself | [Thought experiments and intuitions](04-language-concepts-and-definitions.md#thought-experiments-and-intuitions); [Reflective equilibrium](04-language-concepts-and-definitions.md#reflective-equilibrium) |
+
+Topics this guide covers that Nagel's short book does not (or only briefly): logic and argument ([Ch. 3](03-logic-and-arguments.md)), language and definitions ([Ch. 4](04-language-concepts-and-definitions.md)), justification's structure ([Ch. 6](06-justification.md)), perception, memory, and introspection ([Ch. 7](07-sources-of-knowledge.md)), probability and statistics ([Ch. 9](09-induction-probability-bayes.md)), philosophy of science ([Ch. 10](10-science-and-evidence.md)), theories of truth ([Ch. 11](11-truth-and-relativism.md)), social epistemology ([Ch. 12](12-social-epistemology.md)), intellectual virtue ([Ch. 13](13-virtues-and-ethics-of-belief.md)), cognitive biases ([Ch. 14](14-psychology-of-reasoning.md)), fallacies ([Ch. 15](15-fallacies.md)), and practical method ([Ch. 16](16-critical-thinking-toolkit.md)).
 
 ---
 

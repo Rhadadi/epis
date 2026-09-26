@@ -228,6 +228,25 @@ Most of what you know comes from testimony. You know your date of birth, the sha
 
 The central question: **what justifies believing what others tell us?**
 
+First, what counts as testimony? If someone says "I have a hoarse voice" and you hear that their voice is hoarse, you learn something by *perception*: the sentence "Smith got the job," said in the same voice, would have taught you the same thing. Testimony proper is when the *content* of what is said does the work: you understand what the speaker says and take their word for it (Jennifer Nagel, *Knowledge*, ch. 6).
+
+### Locke: testimony gives only probability
+
+At one extreme, John Locke held that testimony **never** gives knowledge. For Locke, knowledge requires certainty, and what others tell us is at best highly probable. If you see a man walk across a frozen lake, you know it; if someone tells you she saw it, you may reasonably judge it very likely, but you do not know it (*Essay*, IV.xv–xvi).
+
+Locke recommended proportioning confidence in testimony to its fit with your own experience and to six further considerations (IV.xv.4):
+
+1. The **number** of witnesses.
+2. Their **integrity**.
+3. Their **skill** (competence to observe).
+4. Their **purpose** in reporting it (in the case of written testimony, the design of the author).
+5. The **consistency** of the report's parts and circumstances.
+6. Any **contrary** testimony.
+
+His most famous illustration concerns the King of Siam (IV.xv.5). A Dutch ambassador told the king that in Holland, water became so hard in cold weather that men, and even an elephant, could walk on it. The king replied: "Hitherto I have believed the strange things you have told me, because I look upon you as a sober fair man, but now I am sure you lie." Given a lifetime of tropical experience, Locke thought the king's response reasonable. The story is a vivid lesson in how **prior plausibility** shapes the evaluation of testimony (compare [Hume on miracles](02-history-of-epistemology.md#hume) and [Evidence and confirmation](09-induction-probability-bayes.md#evidence-and-confirmation)), and a warning that a rational prior can still be wrong when experience is narrow.
+
+Locke's position is radical. It implies that you don't know where you were born, that Antarctica exists, or that Locke himself ever lived. His reason, that testimony can always be overturned by later contrary reports, seems to prove too much, as Nagel observes: perception and memory can also be undermined later, and Locke still counted them as sources of knowledge. If the later doubt is misleading, it doesn't show that you never knew.
+
 ### Reductionism
 
 **Reductionism** holds that testimonial justification reduces to other sources: perception, memory, and inference. You are justified in believing testimony only if you have independent, non-testimonial reasons to think the speaker is reliable.
@@ -236,11 +255,13 @@ David Hume stated a **global** version in the *Enquiry* (Section X): our trust i
 
 **Objections.** Coady argued that no individual has observed nearly enough cases to support a global inference about the reliability of testimony. Most of what anyone has checked has been checked against *other* testimony. And young children learn language and a vast amount of information by trusting what they are told long before they could possibly have evidence of reliability.
 
-Elizabeth Fricker ("Against Gullibility," 1994) proposed **local reductionism**: for each particular piece of testimony, the hearer needs positive reasons to trust *this* speaker on *this* topic, which can come from monitoring the speaker for signs of insincerity or incompetence. This is more plausible for adults, though critics doubt that we usually have such reasons.
+Elizabeth Fricker ("Against Gullibility," 1994) proposed **local reductionism**: for each particular piece of testimony, the hearer needs positive reasons to trust *this* speaker on *this* topic, which can come from monitoring the speaker for signs of insincerity or incompetence. This is more plausible for adults, though critics doubt that we usually have such reasons. The two versions come apart in a simple case: lost in a strange city, you ask a passing stranger for directions. The global reductionist says you can gain knowledge, since you have a standing reason to trust testimony in general; the local reductionist says you have at best a lucky true belief, since you have no specific reason to trust this stranger.
+
+Why might testimony call for more caution than perception? Nagel (*Knowledge*, ch. 6) suggests a contrast with honeybees. A bee that learns the location of nectar from another bee's dance can fly there as if it had been there itself, a kind of "cognition by proxy." Bee signals can be faulty, as eyes can, but bees cannot deliberately deceive. Human informants are free agents with their own purposes, and some of them lie. On the other hand, perhaps we are more careful than we seem. Research on **epistemic vigilance** (Dan Sperber and colleagues, "Epistemic Vigilance," 2010; Hugo Mercier, *Not Born Yesterday*, 2020) suggests that people constantly, and mostly unconsciously, monitor speakers for competence and honesty and check what they are told against what they already believe. Even young children prefer informants who have been accurate in the past.
 
 ### Anti-reductionism
 
-**Anti-reductionism** holds that testimony is a basic source of justification in its own right, like perception and memory. Thomas Reid argued that we have a natural **principle of credulity** (a disposition to believe what we are told) matched by a **principle of veracity** (a disposition to tell the truth), both given by nature.
+**Anti-reductionism** (also called the **direct** or **default** view) holds that testimony is a basic source of justification in its own right, like perception and memory. The view is ancient. In the *Nyāya Sūtra* (c. 2nd century CE), **Akṣapāda Gautama** treated testimony (*śabda*) as a distinct means of knowledge, not a form of inference: we do not reason "Lee said Smith got the job; Lee is reliable; so Smith got the job," but come to know it simply by understanding what a knowledgeable speaker says. The Nyāya tradition added that knowledge can come from anyone who knows and intends to share it, sage or foreigner alike (Nagel, *Knowledge*, ch. 6). Thomas Reid argued that we have a natural **principle of credulity** (a disposition to believe what we are told) matched by a **principle of veracity** (a disposition to tell the truth), both given by nature.
 
 Tyler Burge ("Content Preservation," 1993) proposed the **Acceptance Principle**: "A person is entitled to accept as true something that is presented as true and that is intelligible to him, unless there are stronger reasons not to do so." Testimony is justified **by default**, and the default can be defeated.
 
@@ -256,7 +277,14 @@ Jennifer Lackey (*Learning from Words*, 2008) proposed a **dualist** view that c
 
 Does testimony only **transmit** knowledge, like a pipe carrying water, or can it **generate** it?
 
-The **transmission view** says a hearer can come to know p through testimony only if the speaker knows p. Jennifer Lackey (*Learning from Words*, 2008) offered a counterexample, the **creationist teacher**. Stella is a devoutly religious biology teacher who does not believe in evolution. But she recognizes that the scientific evidence supports it and conscientiously teaches it accurately to her students. The students come to know that humans evolved from earlier species, though Stella neither believes nor knows it. So testimony can generate knowledge the speaker lacks. What matters is that the testimony is a reliable conduit of information, not that the speaker has knowledge.
+The **transmission view** says a hearer can come to know p through testimony only if the speaker knows p. Plato's jury example already points this way (see [Plato](02-history-of-epistemology.md#plato)): jurors persuaded by a lawyer who has no idea whether his client is innocent don't come to know that he is, even if he is. Lackey describes the transmission view with the image of a **bucket brigade**: to pass you a full bucket of water, I must have a full bucket; and if I pass it, then, spills aside, yours will be full too. "Spills" include mishearing, and doubts, even unreasonable ones, that stop you from accepting what you're told.
+
+Jennifer Lackey (*Learning from Words*, 2008) offered a counterexample, the **creationist teacher**. Stella is a devoutly religious biology teacher who does not believe in evolution. But she recognizes that the scientific evidence supports it and conscientiously teaches it accurately to her students. The students come to know that humans evolved from earlier species, though Stella neither believes nor knows it. So testimony can generate knowledge the speaker lacks. What matters is that the testimony is a reliable conduit of information, not that the speaker has knowledge.
+
+**Groups can fill the bucket together.** Nagel (*Knowledge*, ch. 6) gives the example of a Wikipedia article. The editor who first wrote a particular sentence may have been unsure of a detail, but after the sentence has been checked and corrected by many editors, the article as a whole may be reliable enough to give readers knowledge. How each theory treats this case is revealing:
+- A **Lockean** says readers get only probable opinion.
+- A **reductionist** says readers gain knowledge only if they have reasons to trust Wikipedia, such as the 2005 *Nature* study comparing its accuracy with *Encyclopaedia Britannica* (see [Epistemic institutions](12-social-epistemology.md#epistemic-institutions)) or their own experience of checking it.
+- A **direct theorist** can say that even a naive twelve-year-old gains knowledge, as long as the site's quality controls are actually working, though traditional versions would require some individual contributor to know the fact.
 
 ### Evaluating testimony in practice
 
