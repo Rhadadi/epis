@@ -1,0 +1,316 @@
+@title Chapter 10 — Science, Evidence, and Explanation
+@chime
+@opening Chapter ten. Science, Evidence, and Explanation.
+@pause 1.2
+@quote "The first principle is that you must not fool yourself — and you are the easiest person to fool."
+@attr Richard Feynman, "Cargo Cult Science"
+@pause 0.8
+@quote "Our knowledge can only be finite, while our ignorance must necessarily be infinite."
+@attr Karl Popper, "On the Sources of Knowledge and of Ignorance", in Conjectures and Refutations.
+@pause 0.8
+Science is humanity's most successful method for gaining knowledge about the natural world. But what exactly is the method? Why does it work? How should a non-scientist decide what to believe when scientists disagree, when a new study contradicts an old one, or when someone claims that "the science isn't settled"?
+This chapter covers the philosophy of science most useful for critical thinking: what distinguishes science from pseudoscience, how theories are tested and how they change, how to reason about explanations and causes, how to read the hierarchy of evidence, and what the replication crisis does and doesn't show.
+@pause 0.6
+Science is our most successful way of finding things out. But what exactly makes it work?
+In this chapter we'll meet the philosophers who tried to answer that question: Popper and falsification, Kuhn and his paradigms, Lakatos, Feyerabend, and others. We'll ask what makes one explanation better than another, whether we should believe in things we can't observe, and how to get from correlation to causation.
+Then we'll look at science as a human institution: the role of values, what a scientific consensus is worth, the replication crisis, and how to tell science from pseudoscience.
+@section What makes science special?
+A common answer is "science proves things." It doesn't, at least not in the mathematician's sense. Scientific conclusions are fallible and revisable. What makes science special is not certainty but a set of practices that detect and correct error better than any alternative.
+@item Testing claims against observation, especially observation designed to catch the claim out.
+@item Controls, randomization, and blinding to exclude alternative explanations and the investigator's own biases.
+@item Quantification and precision, which make predictions risky and errors visible.
+@item Public methods and data, so that others can check.
+@item Replication by independent investigators.
+@item Organized criticism: peer review, competing research groups, conferences, and a reward system that credits people for refuting others.
+The sociologist Robert K. Merton described four norms of science, often remembered as CUDOS: Communism, findings are shared property, Universalism — claims are judged by impersonal criteria, not by who makes them — Disinterestedness — scientists act for the benefit of the common enterprise — and Organized Skepticism — all claims are subjected to critical scrutiny. Real science often falls short of these norms, but they describe the ideal that makes it work.
+The historian Naomi Oreskes argues that the trustworthiness of science comes not from any single method, but from its social character: claims are vetted by a diverse community of experts through sustained critical scrutiny. This ties the philosophy of science to social epistemology.
+@section The demarcation problem
+What separates science from pseudoscience — astrology, homeopathy, creationism presented as science — and from non-science — mathematics, ethics, art? This is the demarcation problem.
+Karl Popper proposed falsifiability as the criterion — below. Many philosophers now think no single criterion works. Larry Laudan argued that no set of necessary and sufficient conditions separates science from non-science. More recent work treats "science" as a family resemblance concept: there is no single defining feature, but there are clear cases on either side and a cluster of relevant features.
+Paul Thagard offered a useful diagnosis: a theory is pseudoscientific if it has been less progressive than alternative theories over a long period, faces many unsolved problems, and its community shows little concern with developing the theory to solve those problems, confirming it, or comparing it with alternatives. Astrology has barely changed in two thousand years, while astronomy has been transformed. Warning signs of pseudoscience are listed at the end of this chapter.
+@section Inductivism and its limits
+The popular picture of science, often traced, somewhat unfairly, to Francis Bacon, is inductivism: scientists collect observations without prejudice, and theories emerge from the facts by generalization.
+This picture has serious problems.
+@item One. Observation is selective. Karl Popper used to begin lectures by telling his audience: "Take pencil and paper; carefully observe, and write down what you have observed!" They would ask: observe what? Observation needs a question, an interest, a hypothesis. There is no such thing as observation without selection.
+@item Two. Theories go beyond observation. Theories posit unobservable entities — atoms, genes, gravitational fields — that no number of observations could be generalized into.
+@item Three. The problem of induction. Even the simplest generalization from observed cases goes beyond the evidence.
+@section Popper and falsificationism
+Karl Popper — Logik der Forschung, nineteen thirty-four; English, The Logic of Scientific Discovery, nineteen fifty-nine; Conjectures and Refutations, nineteen sixty-three — turned the inductivist picture upside down.
+The asymmetry. No number of observations can prove a universal law true: after seeing a thousand white swans, the next might be black. Europeans believed all swans were white until Dutch explorers encountered black swans in Western Australia in sixteen ninety-seven. But a single genuine counterexample can prove a universal law false. Verification and falsification are asymmetric. The logic of falsification is modus tollens: if the theory is true, we will observe O; we do not observe O; so the theory is false.
+The criterion. A theory is scientific if and only if it is falsifiable: it forbids certain possible observations. The more it forbids, the more it says about the world, and the better it is, provided it survives testing.
+Bold conjectures. Science progresses not by piling up confirmations — which are easy to find for almost any theory — but by proposing bold conjectures that make risky predictions, and then trying hard to refute them. A theory that survives severe tests is corroborated, but never proven.
+Popper's contrast. Popper's formative experience came in Vienna around nineteen nineteen. Einstein's general relativity predicted that starlight passing near the Sun would be bent by a specific amount. Arthur Eddington's nineteen nineteen eclipse expedition tested the prediction, and it could easily have failed. By contrast, the psychological theories of Freud and Alfred Adler seemed able to explain any human behavior. Popper's example: a man pushes a child into water intending to drown it; another man sacrifices his life to save a child. Freud's theory explains the first as repression and the second as sublimation; Adler's theory explains the first as a feeling of inferiority needing to prove itself by crime, and the second as the same feeling needing to prove itself by daring. Popper recalled describing a case to Adler, who analyzed it confidently "in the light of my thousandfold experience." Popper replied: "And with this new case, I suppose, your experience has become thousand-and-one-fold." He concluded that the apparent strength of such theories, that they were always confirmed, was actually their weakness.
+@pause 0.3
+@cue Here's the critical-thinking lesson.
+A theory that can explain every possible outcome explains nothing. When someone's view is confirmed by whatever happens — "If the market goes up, that proves my theory; if it goes down, that proves it too" — ask: What observation would show you were wrong? If there is none, the view is not being tested by evidence at all. In Bayesian terms, evidence that would be expected whether or not the theory is true has a likelihood ratio of one.
+@pause 0.3
+Problems for falsificationism.
+@item One. The Duhem-Quine problem: theories are never tested alone — next section.
+@item Two. Scientists rightly don't abandon theories at the first anomaly. Every major theory has faced anomalies throughout its history. If scientists had followed naive falsificationism, Newton's theory would have been rejected at birth.
+@item Three. Probabilistic hypotheses, "this coin is fair", are not strictly falsified by any finite observation.
+@item Four. Existential claims, "there exist black holes", cannot be falsified by any finite set of observations, yet they are scientific.
+@item Five. The role of confirmation. Wesley Salmon argued that when we rely on a well-corroborated theory to build a bridge, we treat its past success as evidence of future success, which is induction.
+Popper himself was aware of most of these problems and developed a more sophisticated position. His lasting insights are that testability is a virtue, that risky predictions are the strongest evidence, and that criticism drives the growth of knowledge.
+@section The Duhem-Quine problem
+The French physicist Pierre Duhem — The Aim and Structure of Physical Theory, nineteen oh-six — observed that "an experiment in physics can never condemn an isolated hypothesis but only a whole theoretical group." To derive a prediction from a theory, you always need auxiliary hypotheses: about initial conditions, about the instruments, about the absence of interfering factors. When the prediction fails, logic tells you that something in the group is false, but not what. W V O Quine extended this to all beliefs: our statements face the tribunal of experience "only as a corporate body".
+Neptune and Vulcan. In the eighteen forties, the orbit of Uranus deviated from what Newtonian mechanics predicted. Should astronomers have rejected Newton? Urbain Le Verrier, and independently John Couch Adams, instead questioned an auxiliary assumption, that there were no other significant masses nearby. Le Verrier calculated where an unseen planet would have to be to cause the deviation. In eighteen forty-six, Johann Galle pointed his telescope at the predicted position and found Neptune, within about one degree. Newton was triumphantly vindicated.
+Then Le Verrier tried the same move with another anomaly: the orbit of Mercury precessed slightly faster than Newtonian theory predicted. In eighteen fifty-nine he proposed a small planet, Vulcan, orbiting inside Mercury's orbit. Astronomers searched for decades, and several claimed sightings. Vulcan does not exist. The anomaly was finally explained in nineteen fifteen by Einstein's general relativity, which replaced Newtonian gravitation.
+The same strategy, protect the theory by revising an auxiliary, succeeded brilliantly once and failed once. Logic alone could not tell which case was which.
+A modern example. In twenty eleven, the OPERA experiment reported neutrinos apparently traveling faster than light, which would contradict special relativity. Rather than abandon relativity, the physicists themselves suspected an error in the experimental setup and asked others to find it. In twenty twelve, the anomaly was traced to a loose fiber-optic cable and a clock problem.
+@pause 0.3
+@cue The lessons.
+Neither "stick with the theory" nor "abandon it" is automatically rational when a prediction fails. The rational question is: which of the assumptions in play is most doubtful, given everything else we know? A theory with an enormous track record, relativity, warrants suspicion of the equipment first. What makes a rescue legitimate is that the revised auxiliary hypothesis is independently testable: Neptune could be looked for. That leads to the next section.
+@pause 0.3
+@section Ad hoc hypotheses
+An ad hoc hypothesis is one introduced solely to save a theory from refutation, with no independent evidence or testable consequences of its own.
+Compare two responses to a failed prediction.
+@item Legitimate: "There must be an unseen planet at this position, with this mass." — Testable: look there.
+@item Ad hoc: "The prediction failed because the skeptics' negative energy disrupted the psychic's powers." — Untestable: no independent way to detect negative energy.
+More examples of ad hoc rescues.
+@item An astrologer whose prediction fails says the client's birth time must have been recorded incorrectly.
+@item A doomsday prophet whose predicted date passes announces that the faithful's prayers postponed the end. Leon Festinger, Henry Riecken, and Stanley Schachter studied a group that did this in When Prophecy Fails, nineteen fifty-six. After the predicted flood did not come, many members became more committed and began seeking converts.
+@item Philip Henry Gosse's "Omphalos" hypothesis: God created the world recently, complete with fossils and geological strata that make it look ancient.
+Criteria for telling a legitimate modification from an ad hoc one.
+@item One. Independent testability: does the modification have consequences beyond the anomaly it was introduced to explain?
+@item Two. Novel predictions: does it predict something new that is then confirmed?
+@item Three. Content: does it make the theory say more, or less? Ad hoc rescues usually drain content — "the effect only appears when no skeptic is watching".
+@item Four. Track record: does the theory need a new rescue after every test?
+In Bayesian terms, an ad hoc auxiliary usually has a low prior probability and does nothing to raise it, so a theory that needs many of them becomes steadily less probable. Imre Lakatos made these ideas central to his account of science.
+@section Kuhn and paradigms
+Thomas Kuhn's The Structure of Scientific Revolutions is one of the most cited academic books of the twentieth century. Kuhn, a physicist turned historian, argued that the real history of science looked nothing like the textbook picture of steady accumulation or Popper's picture of constant attempted refutation.
+Paradigms. A mature science is organized around a paradigm: a set of shared achievements — exemplars, like Newton's Principia or Lavoisier's chemistry — that define the legitimate problems and methods of a field. In the nineteen sixty-nine postscript, Kuhn distinguished two senses: the disciplinary matrix — shared laws, models, values, and techniques — and exemplars — concrete problem-solutions students learn from.
+Normal science. Most of the time, scientists do normal science: "puzzle-solving" within the paradigm, extending it and fitting nature to it. They do not try to refute the paradigm. When a result fails to fit, it is usually treated as a puzzle to be solved, or a failure of the scientist, not a refutation of the paradigm.
+Anomaly and crisis. Sometimes anomalies accumulate that resist solution. Confidence in the paradigm erodes; scientists start proposing radical alternatives. This is a crisis.
+Revolution. A new paradigm emerges and eventually wins acceptance. Examples: the Copernican revolution, Earth-centered to Sun-centered astronomy, the chemical revolution, Lavoisier's oxygen theory replacing phlogiston, the Darwinian revolution, the Einsteinian revolution, and, in the nineteen sixties, plate tectonics, which vindicated Alfred Wegener's rejected nineteen twelve hypothesis of continental drift after evidence from seafloor spreading and magnetic striping of the ocean floor accumulated.
+Incommensurability. Kuhn argued that competing paradigms are partly incommensurable: they use key terms in different senses, "mass" means something different for Newton and Einstein, they recognize different problems as important, and they apply different standards. So there is no neutral algorithm for choosing between them. "The proponents of competing paradigms practice their trades in different worlds." Joseph Priestley, who first isolated oxygen, never accepted Lavoisier's interpretation and died defending phlogiston.
+Theory choice without an algorithm. In "Objectivity, Value Judgment, and Theory Choice", Kuhn listed five values all scientists use to evaluate theories: accuracy, consistency, scope, simplicity, and fruitfulness. These are shared, but they can conflict, and scientists weigh them differently. So theory choice is rational but not mechanical, and reasonable scientists can disagree for a time.
+Max Planck offered a darker view: "A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die, and a new generation grows up that is familiar with it." There is some empirical support for a mild version of this. Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found that after the premature death of a star life scientist, publications by outsiders to the star's field increase, and the new work is disproportionately well cited.
+Was Kuhn a relativist? Many readers took Kuhn to show that science is irrational, driven by sociology rather than evidence. Kuhn denied this. He held that later theories are better puzzle-solvers than earlier ones and that science does make progress, though not necessarily toward "the truth" in a metaphysical sense.
+@pause 0.3
+@cue Here are the critical-thinking lessons from Kuhn.
+Anomalies do not immediately refute established theories, and they shouldn't. Experts working within a framework can be slow to see its problems. But the frameworks do change, and they change mainly through the accumulation of evidence that the old framework cannot handle, not through outsiders declaring that "science is just a paradigm."
+@pause 0.3
+@section Lakatos and research programmes
+Imre Lakatos tried to combine Popper's rationalism with Kuhn's history.
+A research programme consists of.
+@item A hard core of central assumptions that the programme's supporters decide not to question — for Newtonian mechanics, the three laws of motion and the law of gravitation. This is protected by a negative heuristic: don't aim criticism at the hard core.
+@item A protective belt of auxiliary hypotheses, which absorbs the blows of anomalies and is modified as needed.
+@item A positive heuristic: a plan for developing the programme, telling researchers which problems to tackle and how to build more sophisticated models.
+A research programme is.
+@item Progressive if its modifications lead to novel predictions, some of which are confirmed. The Newtonian prediction of Neptune is the classic example.
+@item Degenerating if its modifications are merely ad hoc patches that accommodate known facts without predicting anything new, or if its predictions keep failing and the theory lags behind the facts.
+It is rational to work on progressive programmes and to abandon degenerating ones, though Lakatos admitted there is no precise time limit, since a degenerating programme can sometimes recover — atomism was out of favor for long periods. Paul Feyerabend pressed this point against him.
+Lakatos's framework is useful beyond science. Any belief system can be assessed by asking whether its responses to challenges are progressive or degenerating. Does it make new, testable claims that turn out to be true? Or does it only ever explain away the evidence after the fact?
+@section Feyerabend and Laudan
+Paul Feyerabend argued, from historical case studies such as Galileo's defense of Copernicanism, that every proposed methodological rule has been broken by great scientists, often with good results. His provocative slogan was that the only principle that does not inhibit progress is "anything goes." He later explained that this was "the terrified exclamation of a rationalist who takes a closer look at history." He defended methodological pluralism and criticized what he saw as scientific chauvinism. Feyerabend is often misread as simply anti-science. A better reading: there is no fixed, algorithmic scientific method, and good science requires judgment, creativity, and tolerance for unorthodox ideas.
+Larry Laudan proposed that science is best understood as organized into research traditions and that progress should be measured by problem-solving effectiveness: how many empirical and conceptual problems a tradition solves, compared with its rivals. Laudan is also the source of the pessimistic meta-induction.
+Bayesian philosophy of science offers a unifying framework. Many of the insights above can be expressed in Bayesian terms: risky predictions give large likelihood ratios — Popper; failed predictions spread their blame across the hypotheses and auxiliaries in proportion to their prior probabilities — Duhem-Quine, as analyzed by Jon Dorling in nineteen seventy-nine and Michael Strevens in two thousand one; ad hoc hypotheses have low priors — Lakatos; and scientists with different priors can reasonably disagree until evidence accumulates — Kuhn.
+@section Inference to the best explanation
+Inference to the best explanation, IBE, or abduction, is inferring that a hypothesis is true because it provides the best explanation of the available evidence. Charles Sanders Peirce described abduction; Gilbert Harman named IBE; Peter Lipton developed the most thorough account.
+IBE is everywhere: in science, medicine, diagnosis, law — which story best explains the evidence? — history, detective work, car repair, and everyday life — the best explanation of the wet street is that it rained.
+What makes an explanation "best"? The standard explanatory virtues.
+@item Scope. Question to ask: How much of the evidence does it explain? Example: Natural selection explains biogeography, fossils, anatomy, embryology, vestigial organs.
+@item Precision. Question to ask: Does it explain the details, quantitatively? Example: General relativity predicts Mercury's precession to within observational error.
+@item Simplicity — parsimony. Question to ask: Does it avoid unnecessary assumptions and entities? Example: One common cause rather than many coincidences. See Ockham's razor.
+@item Unification. Question to ask: Does it bring apparently different phenomena under one account? Example: Newton unified falling apples and orbiting planets.
+@item Mechanism. Question to ask: Does it specify how the cause produces the effect? Example: Germ theory identifies the microorganisms that cause disease.
+@item Fit with background knowledge. Question to ask: Is it consistent with what we already know well? Example: A diagnosis consistent with the patient's history and physiology.
+@item Fertility. Question to ask: Does it suggest new predictions and research? Example: Plate tectonics predicted patterns of earthquakes and seafloor magnetism.
+@item Few ad hoc assumptions. Question to ask: Does it need special pleading to handle awkward facts? Example: See Ad hoc hypotheses.
+Lipton distinguished the likeliest explanation, the most probable given the evidence, from the loveliest — the one that would provide the most understanding. IBE claims that loveliness is a guide to likeliness.
+Darwin's IBE. Darwin explicitly argued this way in the Origin of Species: "It can hardly be supposed that a false theory would explain, in so satisfactory a manner as does the theory of natural selection, the several large classes of facts above specified."
+Semmelweis and childbed fever. A classic case — analyzed by Carl Hempel in Philosophy of Natural Science, nineteen sixty-six. In the eighteen forties at the Vienna General Hospital, women in the First Maternity Division, staffed by doctors and medical students, died of puerperal, "childbed", fever at a far higher rate than women in the Second Division, staffed by midwives. Ignaz Semmelweis tested one hypothesis after another: "epidemic influences", but these would affect both divisions, overcrowding, the Second Division was more crowded, rough examinations, the psychological effect of the priest's procession with a bell through the First Division, rerouting the priest made no difference, delivery position. None explained the pattern. Then his colleague Jakob Kolletschka was cut by a student's scalpel during an autopsy and died of an illness with the same symptoms. Semmelweis hypothesized that "cadaveric matter," carried on the hands of doctors and students who came straight from autopsies, caused the fever. He required handwashing with chlorinated lime, and mortality in the First Division fell dramatically, to around the level of the Second. His explanation was the best: it explained the difference between divisions, Kolletschka's death, and the effect of the intervention. Tragically, his colleagues largely rejected his findings, partly because they had no theory of germs to explain why it worked, and partly because it implied that doctors were killing their patients. Semmelweis died in an asylum in eighteen sixty-five.
+Objections to IBE.
+@item The "best of a bad lot" problem — Bas van Fraassen, Laws and Symmetry, nineteen eighty-nine: IBE can only select the best among the hypotheses we have thought of. If the true explanation isn't among them, the best available one may be false. Before concluding, ask: have I considered enough alternatives?
+@item Why is loveliness a guide to truth? Why should the world be simple, unified, or explicable? Some answer that the explanatory virtues have proven reliable in the history of science; others give Bayesian reasons — simpler hypotheses often make sharper predictions, and so gain more when those predictions succeed.
+@item Stories are seductive. People find explanations satisfying for reasons that have nothing to do with truth: coherence with what they want to believe, narrative appeal, familiarity. The best explanation to us may not be the best explanation of the evidence.
+@pause 0.3
+@cue Using IBE well.
+Generate rivals before judging: list at least three alternative explanations, including boring ones — chance, measurement error, selection effects. Test the rivals against each other: which evidence would one predict and the other not? Ask about the evidence you'd expect but don't see. Beware of explanations that explain too much — they may be unfalsifiable. Hold the conclusion with confidence proportional to how much better the best explanation is than the runner-up.
+@pause 0.3
+@section Theory-ladenness of observation
+Observations are not simply given. As Norwood Russell Hanson and Thomas Kuhn argued, what we observe depends partly on the concepts and theories we bring to it.
+@item A trained radiologist sees a tumor in an X-ray where a layperson sees a blur.
+@item When Galileo showed his colleagues the moons of Jupiter through his telescope, some saw nothing, and some doubted that the telescope gave a true picture of the heavens at all. To accept what the telescope showed, they needed a theory of optics that assured them it did not create illusions.
+@item Measurements rely on theories of the measuring instruments. A thermometer reading assumes a theory of thermal expansion.
+Theory-ladenness is real but has limits. Observations can surprise theories, which could not happen if theory completely determined observation. Anomalies that nobody expected, like the precession of Mercury or the cosmic microwave background, forced changes of theory. And as Jerry Fodor noted, some perceptual processes, as in the Müller-Lyer illusion, are resistant to belief.
+@pause 0.3
+@cue A practical point.
+"The facts" presented in a debate are often already interpreted. Unemployment figures depend on the definition of "unemployed"; crime statistics depend on reporting and recording practices; a "rise in diagnoses" may reflect a change in diagnostic criteria rather than a change in the disease. Ask: What assumptions went into producing this number?
+@pause 0.3
+@section Underdetermination
+A theory is underdetermined by the evidence if the evidence is also compatible with rival theories.
+@item Transient underdetermination: the evidence currently available doesn't decide between rivals, but future evidence may. This is common and unproblematic.
+@item Permanent underdetermination: two theories are empirically equivalent, so no possible evidence could ever decide between them. Bas van Fraassen gives the example of Newtonian mechanics combined with different hypotheses about the absolute velocity of the center of mass of the universe; all make the same predictions.
+The Duhem-Quine thesis implies a kind of underdetermination: since a failed prediction can always be accommodated by revising some auxiliary hypothesis, any theory can in principle be saved.
+Does underdetermination mean all theories are equally good? No. Larry Laudan and Jarrett Leplin argued that underdetermination by logic, a theory can be saved, does not imply underdetermination by reasonable standards — a theory should be saved. A theory kept alive only by an ever-growing collection of ad hoc hypotheses is not as good as one that predicts the evidence naturally. Laudan called the view that underdetermination makes all theories equally rational the egalitarian thesis, and argued it is false.
+@pause 0.3
+@aside In debates, "the data are consistent with my view too" is a common move. It may be true. But consistency is cheap. The relevant questions are: which view predicted the data rather than accommodating it afterward? Which is simpler? Which requires fewer ad hoc assumptions?
+@pause 0.3
+@section Scientific realism and anti-realism
+Do our best scientific theories describe reality, including unobservable entities like electrons, genes, and dark matter? Or are they merely useful instruments for predicting observations?
+Scientific realism holds that our best theories are approximately true, and that the unobservable entities they posit really exist.
+The main argument for realism is the no-miracles argument: "Realism is the only philosophy that doesn't make the success of science a miracle." If electrons don't exist, it would be an astonishing coincidence that theories about electrons let us build computers, lasers, and electron microscopes.
+The main argument against realism is the pessimistic meta-induction. The history of science is full of theories that were empirically successful but are now considered false, and whose central terms don't refer to anything: the crystalline spheres of ancient astronomy, the humoral theory of medicine, phlogiston, caloric, heat as a fluid, the electromagnetic and optical ether, spontaneous generation, vital forces. By induction from this history, our current successful theories will probably turn out false too.
+Positions in the debate.
+@item Constructive empiricism — Bas van Fraassen, The Scientific Image, nineteen eighty: the aim of science is empirical adequacy, getting the observable phenomena right, not truth about unobservables. Accepting a theory involves believing only that it is empirically adequate.
+@item Instrumentalism: theories are tools for prediction and control, not descriptions.
+@item Structural realism: what survives theory change is mathematical structure, not claims about the nature of entities. Augustin-Jean Fresnel's theory of light as vibrations in an elastic ether was abandoned, but his equations were carried over intact into Maxwell's electromagnetic theory. So we should be realists about the structure our theories describe.
+@item Entity realism: we are entitled to believe in entities we can manipulate to intervene in other processes, whatever our theories say about them. Of electrons and positrons, which physicists "spray" onto niobium balls to change their charge, Hacking wrote: "if you can spray them, then they are real."
+@item Selective realism — Philip Kitcher, Stathis Psillos: be realist about the parts of past theories that were actually responsible for their successes. Those parts have generally been retained.
+The debate matters for critical thinking in a subtle way. A healthy attitude toward science combines confidence in well-established findings, the no-miracles intuition, with humility about theoretical details at the frontier — the pessimistic intuition. The observable, predictive core of mature science — vaccines prevent disease, the Earth is billions of years old, CO two traps heat — is far more secure than speculative interpretations at the edges.
+@section Causation and causal inference
+Many of the most important questions in public life are causal. Does this drug cure the disease? Does this policy reduce crime? Does social media cause depression? Does immigration lower wages? Causal claims are also among the easiest to get wrong.
+@subsection Hume and the regularity view
+David Hume argued that we never observe causal necessity. We observe only that events of one type are constantly conjoined with events of another type, that they are contiguous in space and time, and that the cause comes first. The regularity theory of causation says that causation just is this pattern.
+Problems: many regularities are not causal. Night regularly follows day, but day doesn't cause night. A falling barometer is regularly followed by storms, but the barometer doesn't cause storms; both are caused by falling air pressure.
+@subsection Mill's methods
+John Stuart Mill systematized methods for identifying causes.
+@item One. Method of agreement: if all cases where the effect occurs share only one factor, that factor is probably the cause. All the wedding guests who got food poisoning ate the prawns.
+@item Two. Method of difference: if a case where the effect occurs and a case where it doesn't differ in only one factor, that factor is probably the cause — or part of it. Two guests ate identical meals, except that one ate the prawns and got sick. This is the logic of the controlled experiment.
+@item Three. Joint method of agreement and difference: combining both.
+@item Four. Method of residues: subtract the effects of known causes; what remains is due to the remaining factors. The discovery of Neptune used this reasoning: subtract the known planets' influence on Uranus, and the residual deviation points to an unknown cause.
+@item Five. Method of concomitant variation: if an effect varies when a factor varies, they are causally connected. The more prawns guests ate, the sicker they were — a dose-response relationship.
+Mill's methods are sound in principle but need care: they assume you have identified all the relevant candidate factors, and real effects often have multiple causes.
+@subsection Counterfactuals and interventions
+The counterfactual theory: roughly, C caused E if, had C not occurred, E would not have occurred. Aspirin caused my headache to go away if, had I not taken it, the headache would have persisted. This captures the idea behind controlled experiments: compare what happened with what would have happened otherwise.
+It faces problems of preemption and overdetermination. Suzy and Billy both throw rocks at a bottle; Suzy's arrives first and shatters it. Suzy's throw caused the shattering, but if she hadn't thrown, Billy's rock would have shattered it anyway. Two assassins shoot a victim at the same instant, each shot fatal: neither shot is necessary, but both seem to be causes.
+The interventionist theory — James Woodward, Making Things Happen, two thousand three; Judea Pearl, Causality, two thousand — holds that X causes Y if an intervention that changes X — while leaving everything else that doesn't depend on X alone — would change Y. This is the idea of causation as a handle for manipulation, and it underlies modern causal inference.
+Pearl describes a ladder of causation.
+@item One. Association — seeing: What does observing X tell me about Y? "Patients who took the drug recovered more often."
+@item Two. Intervention — doing: What would happen to Y if I made X happen? "If we give the drug, will patients recover more often?"
+@item Three. Counterfactuals — imagining: What would have happened if X had been different? "Would this patient have recovered without the drug?"
+Statistics alone climbs only the first rung. Climbing higher requires causal assumptions, often represented as diagrams showing which variables affect which.
+@subsection Correlation and causation
+"Correlation does not imply causation" is the most famous slogan in critical thinking. More precisely: when A and B are correlated, there are several possible explanations, and "A causes B" is only one of them.
+@item A causes B: Smoking causes lung cancer.
+@item Reverse causation: Cities with more firefighters at a fire see more damage. The size of the fire causes both; firefighters don't cause damage. Or: people who are depressed use social media differently, rather than, or as well as, social media causing depression.
+@item Confounding — common cause: Ice cream sales and drownings rise together; hot weather causes both.
+@item Chance: Across years, the number of films Nicolas Cage appeared in correlated with the number of people who drowned by falling into swimming pools — from Tyler Vigen's Spurious Correlations. Search enough variables and some will correlate by coincidence.
+@item Selection effects or collider bias: Among hospitalized patients, two unrelated diseases can appear negatively correlated, because having either one can get you admitted.
+@item Bidirectional causation: Poverty and poor health each worsen the other.
+The HRT lesson. For decades, large observational studies such as the Nurses' Health Study found that women taking hormone replacement therapy, HRT, after menopause had lower rates of heart disease. Many doctors recommended HRT partly for heart protection. Then the Women's Health Initiative, a large randomized controlled trial, reported in two thousand two that combined HRT did not protect against heart disease, and in fact slightly increased the risk of heart attacks, strokes, and breast cancer. The observational association had been largely due to confounding: women who chose to take HRT were, on average, healthier, wealthier, and more health-conscious — the healthy user effect. The picture has since become more nuanced, with the timing of HRT relative to menopause appearing to matter, but the core lesson stands.
+Sunscreen and skin cancer. Some studies have found that people who use more sunscreen have higher rates of melanoma. Does sunscreen cause cancer? No: people who spend more time in intense sun use more sunscreen. Sun exposure confounds the association.
+Checklist for a causal claim based on correlation.
+@item One. Could B cause A instead?
+@item Two. What third factor could cause both? Were such factors measured and controlled for?
+@item Three. Could the correlation be due to chance? How many variables were examined?
+@item Four. How were the cases selected? Could the selection itself create the correlation?
+@item Five. Is there a dose-response relationship? Did the cause come first?
+@item Six. Is there a plausible mechanism?
+@item Seven. Has the finding been confirmed by experiments or natural experiments?
+@subsection Randomized controlled trials and the hierarchy of evidence
+The best tool for establishing causation is the randomized controlled trial — RCT.
+@item Control group: compare people who receive the treatment with similar people who don't.
+@item Randomization: assign people to groups by chance. This breaks the link between the treatment and every possible confounder, known or unknown. On average, the groups will be alike in age, health, wealth, motivation, genetics, and everything else, so any difference in outcomes can be attributed to the treatment.
+@item Blinding: participants, and ideally researchers and assessors, don't know who received the treatment, preventing placebo effects and observer bias from creating differences.
+Historical milestones: James Lind's seventeen forty-seven comparison of six treatments for scurvy on board HMS Salisbury, which found that citrus fruit worked — controlled, but not randomized; and the British Medical Research Council's nineteen forty-eight trial of streptomycin for tuberculosis, designed with the statistician Austin Bradford Hill, often cited as the first modern randomized controlled trial.
+The hierarchy of evidence, as commonly taught in evidence-based medicine — from strongest to weakest, for questions about treatment effects.
+@item One. Systematic reviews and meta-analyses of randomized controlled trials.
+@item Two. Randomized controlled trials.
+@item Three. Cohort studies — following groups with and without an exposure over time.
+@item Four. Case-control studies — comparing people with a condition to people without it, looking back for differences in exposure.
+@item Five. Case series and case reports.
+@item Six. Expert opinion, mechanistic reasoning, and anecdote.
+The hierarchy is a useful default, not an absolute rule.
+@item Some questions can't be answered by RCTs. You can't randomize people to smoke for thirty years. A famous satirical paper found no RCTs of parachutes and concluded, tongue in cheek, that their effectiveness was unproven. When an effect is enormous and obvious, observational evidence can suffice.
+@item External validity. In twenty eighteen, researchers actually ran a randomized trial of parachutes — Robert Yeh and colleagues, BMJ: participants jumped from aircraft with or without parachutes, and there was no difference in death or injury. The aircraft were parked on the ground, and participants jumped about point six meters. The trial was internally valid, and useless for the question that matters. The satire makes a serious point: a trial shows what worked for its population, in its conditions. Nancy Cartwright and Jeremy Hardie stress that "it worked there" does not guarantee "it will work here" unless the causal factors that made it work are also present here.
+@item Natural experiments can approach the strength of RCTs. In London in eighteen fifty-four, John Snow traced a cholera outbreak to the Broad Street water pump. In his "Grand Experiment," he compared households supplied by the Southwark and Vauxhall water company, which drew water from sewage-contaminated parts of the Thames, with households supplied by the Lambeth company, which had moved its intake upstream. The households were intermixed in the same neighborhoods, similar in other respects, and mostly unaware of which company supplied them. Deaths from cholera were many times higher among Southwark and Vauxhall customers.
+@subsection The Bradford Hill criteria
+How do you establish causation when RCTs are impossible? In nineteen sixty-five, Austin Bradford Hill, "The Environment and Disease: Association or Causation?", listed nine "viewpoints" for judging whether an observed association is causal.
+@item One. Strength: large effects are less likely to be due to confounding. Heavy smokers had many times the lung cancer risk of non-smokers.
+@item Two. Consistency: the association appears in different populations, places, and study designs.
+@item Three. Specificity: the exposure is associated with a specific disease — weakest criterion.
+@item Four. Temporality: the cause precedes the effect. The only essential criterion.
+@item Five. Biological gradient: dose-response. More exposure, more effect.
+@item Six. Plausibility: a plausible mechanism exists.
+@item Seven. Coherence: the causal interpretation fits with what is known about the disease.
+@item Eight. Experiment: removing the exposure reduces the effect — for example, people who quit smoking have lower risk.
+@item Nine. Analogy: similar causes have similar effects.
+Hill insisted these were not a checklist: "None of my nine viewpoints can bring indisputable evidence for or against the cause-and-effect hypothesis and none can be required as a sine qua non."
+Smoking and lung cancer is the great example. Richard Doll and Bradford Hill's case-control study and their British Doctors Study established the link with strength, consistency, temporality, and dose-response, without any randomized trial. The tobacco industry's defense was "correlation is not causation." Remarkably, the great statistician R A Fisher — himself a smoker, and a paid consultant to the tobacco industry — argued in the late nineteen fifties that a genetic factor might cause both a craving for smoking and a susceptibility to cancer. The hypothesis was not absurd in principle, but it could not account for the full pattern of evidence, such as the falling risk among people who quit. Even brilliant experts can be wrong, especially where their interests or habits are involved.
+@section Values in science
+Is science value-free? Scientists should not let their political or personal preferences decide what the evidence shows. But philosophers have argued that values enter science in legitimate ways.
+Inductive risk. Richard Rudner argued that no scientific hypothesis is ever completely verified. So in accepting a hypothesis, a scientist must decide that the evidence is sufficiently strong, and "how sure we need to be before we accept a hypothesis will depend on how serious a mistake would be." We would demand much stronger evidence before concluding that a drug ingredient is not toxic than before concluding that a batch of belt buckles is not defective. Carl Hempel called this inductive risk. Heather Douglas — Science, Policy, and the Value-Free Ideal, two thousand nine — developed the argument: values legitimately play an indirect role in deciding how much evidence is enough, especially where the consequences of error are serious, but they should not play a direct role, treating a preferred conclusion as a reason to believe it.
+Objectivity as a social achievement. Helen Longino argued that individual scientists cannot be free of bias, but a scientific community can achieve objectivity if it has: recognized venues for criticism, uptake of criticism, the community actually changes in response, shared public standards, and "tempered equality of intellectual authority" among qualified members, including those with different perspectives.
+Epistemic values, such as Kuhn's accuracy, consistency, scope, simplicity, and fruitfulness, are values too. They help decide between theories, and they are part of what makes science rational.
+Conflicts of interest. Funding sources can affect results. A Cochrane systematic review found that drug and device studies sponsored by manufacturers more often had favorable efficacy results and conclusions than studies with other sponsors. This does not mean industry-funded research is worthless. It means that the source of funding is relevant background information, and that independent replication is especially important.
+@section Scientific consensus
+A scientific consensus exists when the great majority of experts in a field agree on a conclusion, usually as a result of many studies converging. For example, surveys of the climate science literature have found that the great majority of papers expressing a position on the cause of recent global warming attribute it to human activity — John Cook and colleagues, twenty thirteen, reported ninety-seven percent of such abstracts. National academies of science around the world have issued statements to the same effect.
+Why consensus matters to non-experts. Most of us cannot evaluate the primary evidence in climatology, immunology, or particle physics. The existence of a consensus is itself strong evidence, provided it arises for the right reasons. Boaz Miller argues that consensus is a good indicator of knowledge when it rests on apparent consilience of evidence — multiple independent lines of evidence point the same way — social calibration, experts share standards of evidence and interpretation, and social diversity — the consensus includes people with different backgrounds, interests, and methods, so it isn't the product of a shared bias.
+Consensus has been wrong. Alfred Wegener's continental drift was rejected for about half a century. The Australian doctors Barry Marshall and Robin Warren proposed in the early nineteen eighties that most stomach ulcers were caused by the bacterium Helicobacter pylori, not by stress or acid. They met widespread skepticism. Marshall famously drank a culture of the bacterium in nineteen eighty-four, developed gastritis, and treated it with antibiotics. They received the Nobel Prize in two thousand five.
+What follows? Two things.
+@item One. The base rate matters. Mature scientific consensus is overturned much less often than it is confirmed, and when it is overturned, the old view usually survives as an approximation — Newtonian mechanics is still used to send spacecraft to other planets.
+@item Two. The corrections came from within science, through evidence. Wegener was vindicated by oceanographic data, Marshall by experiments and trials. The lesson of these episodes is "follow the evidence," not "ignore the consensus."
+The Galileo gambit — "They laughed at Galileo, and he was right, so they're laughing at me and I must be right" — ignores this. As Carl Sagan put it in Broca's Brain: "The fact that some geniuses were laughed at does not imply that all who are laughed at are geniuses. They laughed at Columbus, they laughed at Fulton, they laughed at the Wright brothers. But they also laughed at Bozo the Clown."
+@section The replication crisis
+Since the early twenty tens, many fields have discovered that a large share of published findings do not replicate when independent researchers repeat the studies.
+@item The Open Science Collaboration attempted to replicate one hundred studies published in major psychology journals. Of the original studies, ninety-seven percent had reported significant results; only about thirty-six percent of the replications did, and the average effect size in the replications was about half the original.
+@item In cancer biology, scientists at the biotechnology company Amgen reported — C Glenn Begley and Lee Ellis, Nature, twenty twelve — that they could confirm the findings of only six of fifty-three "landmark" preclinical studies. Researchers at Bayer reported similar problems.
+@item Some famous findings in psychology have failed large-scale replications, including ego depletion — the idea that willpower is a limited resource that gets "used up"; a large multi-lab replication in twenty sixteen found an effect near zero — and power posing — the claim that adopting expansive postures raises testosterone and risk-taking; one of the original authors, Dana Carney, publicly stated in twenty sixteen that she no longer believed the effect was real.
+Causes.
+@item Publication bias — the file drawer problem, as Robert Rosenthal called it in nineteen seventy-nine: studies with significant results are more likely to be published; null results end up in the file drawer. The published literature therefore over-represents positive findings.
+@item P-hacking and the garden of forking paths.
+@item Low statistical power: small studies that can only detect effects if they are exaggerated by chance.
+@item HARKing — Hypothesizing After the Results are Known; Norbert Kerr, nineteen ninety-eight: presenting a post hoc finding as if it had been predicted.
+@item Incentives: careers depend on publishing novel, positive results.
+@item Fraud, which is rare but real: the social psychologist Diederik Stapel fabricated data in dozens of papers, discovered in twenty eleven; Andrew Wakefield's nineteen ninety-eight paper claiming a link between the MMR vaccine and autism was retracted in twenty ten after investigations found serious misconduct.
+Reforms include pre-registration of studies, registered reports — journals accept papers for publication based on their methods, before results are known — open data and code, larger samples, and large multi-lab replication projects.
+@pause 0.3
+@cue What the crisis shows, and what it doesn't.
+It shows that a single study, especially a small, surprising one, rarely settles anything; that published literature is biased toward positive results; and that the headline claims of popular science books deserve caution. It does not show that science is unreliable in general. Replication rates vary greatly across fields — they are much higher for well-established findings in physics, chemistry, and many areas of medicine. And the crisis was discovered by scientists, using scientific methods — replication, meta-analysis, statistics — and is being addressed by scientific reform. That is the self-correction the method promises, working imperfectly and slowly, but working.
+@pause 0.3
+@section Pseudoscience and how to spot it
+No single criterion separates science from pseudoscience, but the warning signs cluster. Adapted from Carl Sagan, Mario Bunge, and Scott Lilienfeld and colleagues.
+@item One. Unfalsifiability. The claim is compatible with every possible outcome.
+@item Two. Ad hoc rescues. Failures are explained away with untestable excuses — "the energy was disturbed," "you didn't believe enough".
+@item Three. Reliance on testimonials and anecdotes rather than controlled studies.
+@item Four. No self-correction. The doctrine is essentially unchanged after decades or centuries, despite new evidence. Astrology is still based on a system set out in antiquity.
+@item Five. Reversal of the burden of proof. "You can't prove it doesn't work."
+@item Six. Scientific-sounding jargon without precise meaning — "quantum healing," "energy fields," "toxins," "vibrations".
+@item Seven. Isolation from other sciences. The claims don't connect with, and often contradict, well-established physics, chemistry, and biology.
+@item Eight. Extraordinary claims on weak evidence.
+@item Nine. The persecution narrative. "The establishment is suppressing this".
+@item Ten. Emphasis on confirmation rather than attempted refutation.
+@item Eleven. Avoidance of peer review and independent testing.
+@item Twelve. Financial incentives tied to belief — products, courses, consultations.
+@item Thirteen. Appeals to ancient wisdom or to nature as guarantees of truth.
+Homeopathy illustrates several of these. It holds that substances causing symptoms in healthy people cure similar symptoms in the sick, and that dilution increases potency. A common homeopathic dilution, "thirty C," means diluting by a factor of one hundred, thirty times over: a total dilution of ten to the power of sixty. For comparison, a mole of a substance contains about six times ten to the power of twenty-three molecules. At thirty C, the chance that a dose contains even a single molecule of the original substance is effectively zero. The claimed mechanism contradicts basic chemistry, and systematic reviews have not found effects beyond placebo — for example, Australia's National Health and Medical Research Council concluded in twenty fifteen that there were no health conditions for which there was reliable evidence that homeopathy was effective.
+Astrology has been tested. In a double-blind study published in Nature, astrologers were unable to match natal charts to the correct personality profiles better than chance.
+Part of astrology's apparent success is the Forer effect — or Barnum effect. In nineteen forty-eight the psychologist Bertram Forer gave his students a personality test and then gave each of them a "personalized" description. In fact, every student received the same description, assembled largely from a newsstand astrology book — "You have a great need for other people to like and admire you… At times you are extroverted, affable, sociable, while at other times you are introverted, wary, reserved…". Students rated its accuracy, on average, at about four point three on a scale of zero to five. Vague, flattering, and double-sided statements feel personally accurate to almost everyone.
+@section Quick review
+Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.
+@pause 0.8
+@question Question one. Explain the asymmetry between verification and falsification, and why it isn't the whole story.
+@think 5
+@answer Answer. No number of confirming instances proves a universal law, but one counterexample logically refutes it. It isn't the whole story because of the Duhem-Quine problem: predictions depend on auxiliary assumptions, so a failed prediction may refute an auxiliary rather than the theory. Also, probabilistic and existential hypotheses aren't strictly falsifiable, and scientists reasonably retain theories in the face of some anomalies.
+@pause 0.8
+@question Question two. When Uranus's orbit didn't match Newtonian predictions, astronomers postulated a new planet. Was this ad hoc? Why or why not?
+@think 5
+@answer Here's what to notice. No. The hypothesis was independently testable: it predicted a planet of a certain mass at a certain position, which could be looked for, and it was found. An ad hoc hypothesis has no consequences beyond saving the theory.
+@pause 0.8
+@question Question three. What distinguishes a progressive from a degenerating research programme?
+@think 5
+@answer The answer. A progressive programme's modifications predict novel facts, some of which are confirmed. A degenerating programme's modifications only accommodate known facts after the event, and its predictions fail or lag behind the evidence.
+@pause 0.8
+@question Question four. "Children who eat breakfast do better at school, so schools should provide breakfast to improve grades." Give three alternative explanations for the correlation.
+@think 5
+@answer Here's my answer. Confounding: families with more resources and stability both provide breakfast and support schoolwork. Confounding by health or sleep: well-rested, healthy children are more likely to eat breakfast and to concentrate. Reverse causation or selection: motivated, organized children may be more likely to get up in time for breakfast. The claim may still be true — and there is some experimental evidence on school breakfast programs — but the correlation alone doesn't establish it.
+@pause 0.8
+@question Question five. Why does randomization matter in a controlled trial?
+@think 5
+@answer Here's the answer. It makes the treatment and control groups similar, on average, in all respects, including factors nobody thought to measure. This breaks any systematic link between the treatment and confounders, so differences in outcome can be attributed to the treatment — up to chance, which statistics can quantify.
+@pause 0.8
+@question Question six. What are the no-miracles argument and the pessimistic meta-induction?
+@think 5
+@answer Answer. No-miracles: the success of science would be a miracle unless our theories were approximately true, so they probably are. Pessimistic meta-induction: many past successful theories were false — phlogiston, ether, caloric — so our current successful theories are probably false too. Structural realism and selective realism try to accommodate both.
+@pause 0.8
+@question Question seven. Someone says: "Scientists were wrong about ulcers and continental drift, so I don't trust the scientific consensus on vaccines." Evaluate.
+@think 5
+@answer Here's what to notice. The premise is true, but the conclusion doesn't follow. Consensus is sometimes overturned, but much less often than it is confirmed; the base rate matters. The corrections came from new evidence within science, not from rejecting science. The consensus on vaccine safety rests on many independent lines of evidence — large observational studies of millions, trials, surveillance systems in many countries. The appropriate response to fallibility is to follow the evidence, which here strongly supports the consensus, not to reject it wholesale. There is also an asymmetry test: would the speaker apply the same reasoning to reject consensus claims they like?
+@pause 0.8
+@question Question eight. Why is the Forer effect relevant to evaluating personality tests, astrology, and "cold reading" by psychics?
+@think 5
+@answer The answer. Because vague, general, and double-sided descriptions feel personally accurate to almost everyone. A subjective sense of "that's so me" is therefore no evidence that the method has any real diagnostic power. The proper test is whether people can pick out their own description from others' better than chance, under blind conditions.
+@section End of chapter ten
+That's the end of chapter ten. Science aims at the truth. But what is truth? Is it objective, or relative to cultures and individuals? That's the subject of chapter eleven.

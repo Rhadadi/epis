@@ -1,0 +1,376 @@
+# Pronunciations for names and terms the default dictionary gets wrong.
+# Format: word or phrase <TAB> /misaki phonemes/  or  word <TAB> respelling
+# Phonemes use misaki's US set: A = "ay", I = "eye", O = "oh", W = "ow", Y = "oy",
+# ˈ primary stress and ˌ secondary stress, written before the stressed vowel.
+# Possessive 's is added automatically.
+
+# Latin and other phrases
+a priori	/ˌɑ pɹiˈɔɹi/
+a posteriori	/ˌɑ pɑstˌɛɹiˈɔɹi/
+prima facie	/pɹˌImə fˈAʃi/
+de re	/dˌA ɹˈA/
+de dicto	/dˌA dˈɪktO/
+tu quoque	/tˌu kwˈOkwi/
+ad verecundiam	/ˌæd vˌɛɹəkˈʊndiəm/
+ad populum	/ˌæd pˈɑpjələm/
+ad antiquitatem	/ˌæd ˌæntɪkwɪtˈɑtəm/
+ad novitatem	/ˌæd nˌOvɪtˈɑtəm/
+ad misericordiam	/ˌæd mˌɪzəɹɪkˈɔɹdiəm/
+ad consequentiam	/ˌæd kˌɑnsəkwˈɛnʃiəm/
+ad ignorantiam	/ˌæd ˌɪɡnəɹˈænʃiəm/
+ad Hitlerum	/ˌæd hɪtlˈɛɹəm/
+petitio principii	/pətˈɪʃiO pɹɪnsˈɪpiI/
+simpliciter	/sɪmplˈɪsɪtəɹ/
+sorites	/səɹˈItiz/
+sōros	/sˈOɹOs/
+epochē	/ˌɛpOkˈA/
+isostheneia	/ˌIsOsθˈɛniə/
+ataraxia	/ˌætəɹˈæksiə/
+epistēmē	/ˌɛpɪstˈAmA/
+phronēsis	/fɹOnˈisɪs/
+phantasia katalēptikē	/fæntˈAziə kˌætəlˈɛptɪkA/
+pithanon	/pɪθˈænɑn/
+aitias logismos	/ˈItiəs lˈɑɡɪsmˌOs/
+Sapere aude	/sˈɑpəɹA ˈWdA/
+si fallor, sum	/sˌi fˈɑlɔɹ, sˈʊm/
+genius malignus	/ʤˈiniəs məlˈɪɡnəs/
+esse est percipi	/ˈɛsA ɛst pˈɛɹʧɪpi/
+sensus divinitatis	/sˈɛnsʊs dɪvˌɪnɪtˈɑtɪs/
+adaequatio rei et intellectus	/ˌædAkwˈɑtiO ɹˈAi ɛt ˌɪntɛlˈɛktʊs/
+Nihil est in intellectu quod non prius fuerit in sensu	/nˈɪhɪl ˈɛst ɪn ˌɪntɛlˈɛktu kwˈɔd nˈOn pɹˈiʊs fˈuɛɹɪt ɪn sˈɛnsu/
+nihil est in intellectu quod non prius fuerit in sensu	/nˈɪhɪl ˈɛst ɪn ˌɪntɛlˈɛktu kwˈɔd nˈOn pɹˈiʊs fˈuɛɹɪt ɪn sˈɛnsu/
+Que sais-je	/kə sˌA ʒˈə/
+Je pense, donc je suis	/ʒə pˈɑns, dˈɔŋk ʒə swˈi/
+La neige est blanche	/lɑ nˈɛʒ ɛ blˈɑnʃ/
+savoir	/sævwˈɑɹ/
+connaître	/kɔnˈɛtɹə/
+wissen	/vˈɪsən/
+kennen	/kˈɛnən/
+Erkenntnistheorie	/ɛɹkˈɛntnɪs tˌAOɹˈi/
+Logik der Forschung	/lˈOɡɪk dɛɹ fˈɔɹʃʊŋ/
+Bedeutung	/bədˈYtʊŋ/
+Sinn	/zˈɪn/
+Essai philosophique sur les probabilités	/ɛsˈA fˌiləzɔfˈik sˈʊɹ lA pɹˌɔbæbˌilitˈA/
+Tractatus Logico-Philosophicus	/tɹæktˈɑtəs lˌOʤɪkO fˌɪləsˈɑfɪkəs/
+Tractatus	/tɹæktˈɑtəs/
+Novum Organum	/nˈOvəm ˈɔɹɡənəm/
+Nicomachean	/nˌɪkOməkˈiən/
+Begriffsschrift	/bəɡɹˈɪfsʃɹɪft/
+Principia	/pɹɪnkˈɪpiə/
+
+# Sanskrit, Arabic, Persian and Chinese terms
+pramāṇa	/pɹəmˈɑnə/
+pramāṇas	/pɹəmˈɑnəz/
+pratyakṣa	/pɹətjˈɑkʃə/
+anumāna	/ənumˈɑnə/
+śabda	/ʃˈʌbdə/
+upamāna	/upəmˈɑnə/
+arthāpatti	/ɑɹtˈɑpəti/
+anupalabdhi	/ənupəlˈʌbdi/
+anekāntavāda	/ənˌAkɑntəvˈɑdə/
+syādvāda	/sjɑdvˈɑdə/
+hetvābhāsa	/hˌAtvɑbˈɑsə/
+darśanas	/dˈɑɹʃənəz/
+Nyāya	/njˈɑjə/
+Navya-Nyāya	/nˈævjə njˈɑjə/
+Nyāya Sūtra	/njˈɑjə sˈutɹə/
+Cārvāka	/ʧˈɑɹvəkə/
+Sāṃkhya	/sˈɑŋkjə/
+Mīmāṃsā	/mˈimɑmsɑ/
+Bhāṭṭa	/bˈɑtə/
+Madhyamaka	/mˌɑdjəmˈɑkə/
+Vigrahavyāvartanī	/vˌɪɡɹəhəvjˌɑvəɹtənˈi/
+Khaṇḍanakhaṇḍakhādya	/kˌʌndənəkˌʌndəkˈɑdjə/
+Tattvacintāmaṇi	/tˌætvəʧɪntˈɑməni/
+Gaṅgeśa	/ɡˈɑŋɡAʃə/
+Śrīharṣa	/ʃɹihˈɑɹʃə/
+Nāgārjuna	/nɑɡˈɑɹʤunə/
+Dignāga	/dɪɡnˈɑɡə/
+Dharmakīrti	/dˌɑɹməkˈiɹti/
+Dharmottara	/dˌɑɹmOtˈɑɹə/
+Akṣapāda	/ˌʌkʃəpˈɑdə/
+Gautama	/ɡˈWtəmə/
+Devadatta	/dˌAvədˈɑtə/
+ʿilm	/ˈɪlm/
+ḥuḍūrī	/hˌudʊɹˈi/
+ḥuṣūlī	/hˌusʊlˈi/
+iʿtibār	/ˌɪtɪbˈɑɹ/
+Kitāb	/kɪtˈɑb/
+Kitāb al-Manāẓir	/kɪtˈɑb ˌæl mənˈɑzɪɹ/
+al-Shifāʾ	/ˌæl ʃɪfˈɑ/
+al-Munqidh min al-Ḍalāl	/ˌæl mˈʊnkɪð mɪn ˌæl dˌɑlˈɑl/
+al-Falāsifa	/ˌæl fəlˈɑsɪfə/
+Tahāfut	/təhˈɑfʊt/
+Tahāfut al-Falāsifa	/təhˈɑfʊt ˌæl fəlˈɑsɪfə/
+Al-Ghazālī	/ˌæl ɡəzˈɑli/
+al-Ghazālī	/ˌæl ɡəzˈɑli/
+al-Haytham	/ˌæl hˈAθəm/
+Ibn	/ˈɪbən/
+Sīnā	/sˈinɑ/
+Rushd	/ɹˈʊʃd/
+Suhrawardī	/sˌuɹəwɑɹdˈi/
+Shihāb	/ʃɪhˈɑb/
+Ishrāqī	/ɪʃɹˈɑki/
+Ṣadrā	/sˈɑdɹɑ/
+Mullā	/mʊlˈɑ/
+Mehdi	/mˈɛhdi/
+Ha'iri	/hɑˈiɹi/
+Yazdi	/jˈæzdi/
+Bukhara	/bukˈɑɹə/
+Khorasan	/kˌɔɹəsˈɑn/
+Tus	/tˈus/
+dānestan	/dɑnɛstˈæn/
+shenākhtan	/ʃɛnɑktˈæn/
+Mozi	/mˈOzə/
+Mohists	/mˈOɪsts/
+Mohist	/mˈOɪst/
+Huizi	/hwˈAzə/
+Xunzi	/ʃˈʊnzə/
+Zhuangzi	/ʤwˈɑŋzə/
+Zhuang Zhou	/ʤwˈɑŋ ʤˈO/
+Jiebi	/ʤjˈAbi/
+sān biǎo	/sˈɑn bjˈW/
+Confucius	/kənfjˈuʃəs/
+
+# Ancient and medieval names
+Theaetetus	/θˌiətˈitəs/
+Protagoras	/pɹOtˈæɡəɹəs/
+Protagorean	/pɹOtˌæɡəɹˈiən/
+Euthyphro	/jˈuθɪfɹO/
+Meno	/mˈinO/
+Eubulides	/jubjˈulɪdiz/
+Epimenides	/ˌɛpɪmˈɛnɪdiz/
+Carneades	/kɑɹnˈiədiz/
+Arcesilaus	/ˌɑɹsɛsɪlˈAəs/
+Pyrrhonian	/pɪɹˈOniən/
+Pyrrhonists	/pˈɪɹənɪsts/
+Pyrrho	/pˈɪɹO/
+Citium	/sˈɪʃiəm/
+Laertius	/lAˈɜɹʃiəs/
+Presocratics	/pɹˌisəkɹˈætɪks/
+Gorgias	/ɡˈɔɹʤiəs/
+Aquinas	/əkwˈInəs/
+Ockham	/ˈɑkəm/
+Autrecourt	/ˈOtɹəkˌʊɹ/
+Gaunilo	/ɡˈWnɪlO/
+Marmoutiers	/mɑɹmutjˈA/
+Sebond	/səbˈɑnd/
+Montaigne	/mɑntˈAn/
+Michel	/miʃˈɛl/
+René	/ɹənˈA/
+Antoine	/æntwˈɑn/
+Arnauld	/ɑɹnˈO/
+Bellarmine	/bˈɛlɑɹmin/
+Tycho	/tˈikO/
+Copernicus	/kOpˈɜɹnɪkəs/
+Copernicanism	/kOpˈɜɹnɪkənˌɪzəm/
+
+# Modern names
+Nagel	/nˈAɡəl/
+Gettier	/ɡɛtjˈA/
+Peirce	/pˈɜɹs/
+Kahneman	/kˈɑnəmən/
+Tversky	/tvˈɛɹski/
+Lehrer	/lˈɪɹəɹ/
+Dretske	/dɹˈɛtski/
+Gigerenzer	/ɡˈɪɡəɹˌɛntsəɹ/
+Chisholm	/ʧˈɪzəm/
+Truetemp	/tɹˈu tˌɛmp/
+Toulmin	/tˈulmɪn/
+Lakatos	/lˈækətɑʃ/
+DeRose	/dəɹˈOz/
+Duhem	/dujˈɛm/
+Feyerabend	/fˈIəɹˌɑbənt/
+Stanovich	/stˈænəvɪʧ/
+Kvanvig	/kvˈɑnvɪɡ/
+Frege	/fɹˈAɡə/
+Gottlob	/ɡˈɑtlOp/
+Kripke	/kɹˈɪpki/
+Neurath	/nˈYɹɑt/
+Baehr	/bˈɛɹ/
+Semmelweis	/zˈɛməlvˌIs/
+Ignaz	/ˈɪɡnɑts/
+Kolletschka	/kɑlˈɛʧkə/
+Kahan	/kˈAən/
+Ayer	/ˈɛɹ/
+Conee	/kˈOni/
+Audi	/ˈɔdi/
+Nguyen	/wˈɪn/
+Thi	/tˈi/
+Leibniz	/lˈIbnɪts/
+Gottfried	/ɡˈɑtfɹid/
+Wilhelm	/vˈɪlhɛlm/
+Wason	/wˈAsən/
+Hempel	/hˈɛmpəl/
+Laplace	/ləplˈɑs/
+Pierre-Simon	/pjˈɛɹ simˈOn/
+Fogelin	/fˈOɡəlɪn/
+Vogel	/vˈOɡəl/
+Chalmers	/ʧˈɑməɹz/
+Hayek	/hˈIɛk/
+Münchhausen	/mˈʌnʧhWzən/
+Immanuel	/ɪmˈænjuəl/
+Imre	/ˈɪmɹA/
+Boghossian	/bOɡˈOsiən/
+Searle	/sˈɜɹl/
+Le Verrier	/lə vɛɹjˈA/
+Urbain	/ʊɹbˈæn/
+Lavoisier	/ləvwˈɑziA/
+Polanyi	/pOlˈænji/
+Tomasello	/tˌɑməsˈɛlO/
+Coliva	/kOlˈivə/
+Oreskes	/ɔɹˈɛskiz/
+Eemeren	/ˈAməɹən/
+Grootendorst	/ɡɹˈOtəndˌɔɹst/
+Haack	/hˈæk/
+Kovach	/kˈOvæʧ/
+Inwagen	/ˈɪnwAɡən/
+Quassim	/kˈɑsɪm/
+Hegel	/hˈAɡəl/
+Whewell	/hjˈuəl/
+Longino	/lɑnʤˈinO/
+Müller-Lyer	/mjˈuləɹ lˈIəɹ/
+Sokal	/sOkˈɑl/
+Mercier	/mɛɹsjˈA/
+Slovic	/slˈOvɪk/
+Gilovich	/ɡɪlˈOvɪʧ/
+Sloman	/slˈOmən/
+Planck	/plˈɑŋk/
+Judea	/ʤudˈAə/
+Southwark	/sˈʌðəɹk/
+Cochrane	/kˈɑkɹən/
+Nicod	/nikˈO/
+Julien	/ʒuljˈæn/
+Dutant	/dutˈɑn/
+Schopenhauer	/ʃˈOpənhWəɹ/
+Kierkegaard	/kˈɪɹkəɡɑɹd/
+Søren	/sˈɜɹən/
+Ducasse	/dukˈæs/
+Helmholtz	/hˈɛlmhOlts/
+Neisser	/nˈIsəɹ/
+Gazzaniga	/ɡˌæzənˈiɡə/
+Schwitzgebel	/ʃwˈɪtsɡˌAbəl/
+Lobachevsky	/lˌObəʧˈɛfski/
+János	/jˈɑnOʃ/
+Bolyai	/bˈOljI/
+Riemann	/ɹˈimɑn/
+Benacerraf	/bənˈæsəɹæf/
+Arendt	/ˈɑɹənt/
+Dialetheism	/dˌIəlˈiθiˌɪzəm/
+dialetheism	/dˌIəlˈiθiˌɪzəm/
+Caltech	/kˈæltɛk/
+Wierzbicka	/vjɛʒbˈitskə/
+Panglossians	/pæŋɡlˈɑsiənz/
+Birte	/bˈɪɹtə/
+Englich	/ˈɛŋlɪʃ/
+Mussweiler	/mˈʊsvIləɹ/
+Cosmides	/kˈɑzmɪdiz/
+Tofighbakhsh	/tOfˈiɡbɑkʃ/
+Keil	/kˈIl/
+Gignac	/ʒɪnjˈæk/
+Marcin	/mˈɑɹʧɪn/
+Zajenkowski	/zˌAjɛŋkˈɔfski/
+Josef	/jˈOzɛf/
+Perner	/pˈɛɹnəɹ/
+Heinz	/hˈInts/
+Wimmer	/vˈɪməɹ/
+Sperber	/spˈɛɹbəɹ/
+Stéphane	/stefˈæn/
+Flyvbjerg	/flˈubjɛɹ/
+Atul	/ˈʌtʊl/
+Gawande	/ɡəwˈɑndA/
+MacCoun	/məkˈun/
+Johann	/jˈOhɑn/
+Jakob	/jˈɑkOp/
+Augustin-Jean	/ˈOɡʊstæn ʒˈɑn/
+Fresnel	/fɹAnˈɛl/
+Stathis	/stˈɑθɪs/
+Psillos	/psˈilOs/
+Diederik	/dˈidəɹɪk/
+Stapel	/stˈɑpəl/
+Bunge	/bˈʊŋɡA/
+Kolmogorov	/kˌɔlməɡˈɔɹəf/
+Mises	/mˈizəz/
+Finetti	/fɪnˈɛti/
+Hoffrage	/hˈɔfɹɑɡə/
+Glymour	/ɡlˈɪməɹ/
+Hertwig	/hˈɛɹtvɪk/
+Sanjurjo	/sænhˈʊɹhO/
+Dershowitz	/dˈɜɹʃəwɪts/
+Simonsohn	/sˈImənsOn/
+Gelman	/ɡˈɛlmən/
+Rosch	/ɹˈOʃ/
+Machery	/mɑʃəɹˈi/
+Haslanger	/hˈæslæŋəɹ/
+Cappelen	/kˈɑpələn/
+Hermagoras	/hɜɹmˈæɡəɹəs/
+Kialo	/kiˈɑlO/
+Truzzi	/tɹˈutsi/
+Haidt	/hˈIt/
+Twenge	/twˈɛŋi/
+Przybylski	/pʃəbˈɪlski/
+Braghieri	/bɹɑɡjˈɛɹi/
+Ro'ee	/ɹˈOi/
+Makarin	/məkˈɑɹɪn/
+Yucatán	/jˌukətˈæn/
+Chicxulub	/ʧˈikʃulub/
+Fabrizio	/fɑbɹˈitsiO/
+Macagno	/məkˈɑnjO/
+Kekulé	/kˈAkəlA/
+Volokh	/vˈOlək/
+Niño	/nˈinjO/
+Kafkatrapping	/kˈɑfkətɹˌæpɪŋ/
+Deepities	/dˈipɪtiz/
+Olsson	/ˈʊlsɔn/
+Siegel	/sˈiɡəl/
+Baier	/bˈIəɹ/
+Onora	/ənˈɔɹə/
+Lasonen-Aarnio	/lˈɑsOnɛn ˈɑɹniO/
+Criado	/kɹiˈɑdO/
+Du Bois	/du bˈYs/
+Gentzkow	/ɡˈɛntskW/
+Timur	/tɪmˈʊɹ/
+Kuran	/kʊɹˈɑn/
+Condorcet	/kɑndɔɹsˈA/
+Surowiecki	/sˌʊɹOwˈɪki/
+Schkade	/ʃkˈAdi/
+Hossein	/hOsˈAn/
+Derakhshan	/dɛɹɑkʃˈɑn/
+Gelfert	/ɡˈɛlfəɹt/
+Fazio	/fˈɑziO/
+Roozenbeek	/ɹˈOzənbˌAk/
+Nyhan	/nˈIən/
+Reifler	/ɹˈIfləɹ/
+Bernays	/bəɹnˈAz/
+Cichocka	/ʧɪhˈɔtskə/
+Rauch	/ɹˈWk/
+Rini	/ɹˈini/
+Galef	/ɡˈAləf/
+Pritchard	/pɹˈɪʧəɹd/
+Zagzebski	/zæɡzˈɛbski/
+BonJour	/bɑnʒˈʊɹ/
+Kuhn	/kˈun/
+Kant	/kˈɑnt/
+Descartes	/dAkˈɑɹt/
+Nietzsche	/nˈiʧə/
+Goethe	/ɡˈɜɹtə/
+Wittgenstein	/vˈɪtɡənʃtˌIn/
+Foucault	/fukˈO/
+Eliezer	/ɛliˈɛzəɹ/
+Yudkowsky	/jʊdkˈWski/
+Popper	/pˈɑpəɹ/
+Tetlock	/tˈɛtlɑk/
+Bostrom	/bˈɑstɹəm/
+Sosa	/sˈOsə/
+Plantinga	/plˈæntɪŋɡə/
+Moorean	/mˈʊɹiən/
+Mooreanism	/mˈʊɹiənˌɪzəm/
+neo-Mooreanism	/nˌiO mˈʊɹiənˌɪzəm/
+Foundherentism	/fˌWndhˈɪɹəntˌɪzəm/
+foundherentism	/fˌWndhˈɪɹəntˌɪzəm/
+Myside	/mˈI sˌId/
+myside	/mˈI sˌId/
+mindreading	/mˈInd ɹˌidɪŋ/
+Mindreading	/mˈInd ɹˌidɪŋ/
+envatted	/ɛnvˈætɪd/
+mmHg	/mˈɪlɪmˌitəɹz əv mˈɜɹkjəɹi/

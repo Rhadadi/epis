@@ -1,0 +1,417 @@
+@title Chapter 3 — Logic and the Anatomy of Arguments
+@chime
+@opening Chapter three. Logic and the Anatomy of Arguments.
+@pause 1.2
+@quote "Contrariwise, if it was so, it might be; and if it were so, it would be; but as it isn't, it ain't. That's logic."
+@attr Tweedledee, in Lewis Carroll, Through the Looking-Glass.
+@pause 0.8
+@quote "One person's modus ponens is another person's modus tollens."
+@attr A saying among philosophers.
+@pause 0.8
+Epistemology asks when beliefs are justified. Very often, a belief is justified because it is supported by other beliefs through reasoning. Logic is the study of which patterns of reasoning are good, that is, which patterns transmit support from premises to conclusions. This chapter teaches you to identify arguments, put them in standard form, test them for validity and strength, find hidden premises, and map complex reasoning. These are the core technical skills of critical thinking. You will use them in every later chapter.
+@pause 0.6
+This chapter is your workshop. You'll learn to take an argument apart: to find its premises and its conclusion, to tell deduction from induction and abduction, and to see the difference between an argument that is valid and one that is sound.
+We'll go through the handful of argument forms you can always trust, and the look-alikes that fool people every day. Then we'll practise on real arguments: filling in hidden premises, reading opponents charitably, and mapping the structure of a debate.
+One note for listeners. The written chapter uses some logical symbols and a truth table. In this recording I'll say them in plain words.
+@section What an argument is and is not
+In logic, an argument is not a quarrel. It is a set of statements in which some, the premises, are offered as reasons for another — the conclusion.
+@pause 0.3
+@aside Premise: All mammals breathe air.
+@aside Premise: Whales are mammals.
+@aside Conclusion: Therefore, whales breathe air.
+@pause 0.3
+Many things that look like arguments are not.
+@item Assertions. "Taxes are too high." A claim with no reasons given.
+@item Explanations. "The glass broke because it fell on the tiles." This does not try to prove that the glass broke — we already know it did. It tells us why. The difference matters: in an argument, the premises are supposed to be better known than the conclusion; in an explanation, the thing explained, the explanandum, is usually already accepted. The same "because" sentence can be either, depending on context.
+@item Illustrations. "Many birds cannot fly, for example, penguins and ostriches." The example illustrates rather than proves.
+@item Conditionals. "If it rains, the match will be cancelled." This does not assert that it will rain or that the match is cancelled. It asserts a relation. A conditional can be a premise in an argument but is not itself an argument.
+@item Reports of belief. "I think the economy will recover." A statement about someone's mental state.
+@item Rhetoric. "Any decent person knows this policy is a disaster!" Emotional pressure, not reasons.
+Indicator words help you find the parts of an argument.
+@item therefore, so, thus, hence, consequently, it follows that, which shows that, we can conclude that, accordingly: because, since, for, given that, as shown by, the reason is that, in view of, seeing that, assuming that.
+Indicators are useful but unreliable. "Since" can mean "from the time that," and many arguments use no indicator words at all. The real test is to ask: what is this person trying to get me to believe, and what are they offering in support of it?
+@section Standard form
+To evaluate an argument, first put it in standard form: number the premises, put the conclusion last, and draw a line between them.
+@pause 0.3
+@aside A newspaper editorial says: "We should not build the new motorway. It will destroy ancient woodland, and the traffic studies show it will only relieve congestion for about five years before new traffic fills it up. Besides, the money would do more good in public transport."
+@pause 0.3
+In standard form.
+@item One. The new motorway would destroy ancient woodland.
+@item Two. The motorway would relieve congestion for only about five years — because of induced demand.
+@item Three. The same money would produce more benefit if spent on public transport.
+@item Four. Unstated, We should not undertake a project whose harms and opportunity costs outweigh its benefits.
+@item Five. Unstated, The harms and opportunity costs of the motorway outweigh its benefits.
+----- C. We should not build the new motorway.
+Notice that the reconstruction had to add premises four and five, which the editorial assumed but did not state. Supplying these missing premises fairly is one of the most important skills in critical thinking.
+Standard form also exposes the argument's structure. Premises one to three are not independent reasons that each alone would justify the conclusion. They jointly support premise five, which with premise four yields the conclusion. That structure tells you where to aim criticism: someone who wants to build the motorway must dispute one, two, or three, or argue that the benefits are larger than the editorial suggests, which would undermine premise five.
+@section Deduction, induction, and abduction
+Arguments are traditionally divided by the kind of support the premises are meant to give the conclusion.
+Deductive arguments aim to show that the conclusion must be true if the premises are. The link is necessary.
+@pause 0.3
+@aside All metals conduct electricity. Copper is a metal. So copper conducts electricity.
+@pause 0.3
+Inductive arguments aim to show that the conclusion is probably true given the premises. The link is one of probability. Typical forms.
+@item Enumerative induction — generalization from a sample: "Every emerald examined so far has been green, so all emeralds are green."
+@item Statistical syllogism — from a general rate to a case: "ninety percent of patients with these symptoms have flu; this patient has these symptoms; so this patient probably has flu."
+@item Argument from analogy: "Rats and humans share relevant physiology; this drug damages rat livers; so it will probably damage human livers."
+@item Prediction: "The sun has risen every day in recorded history, so it will rise tomorrow."
+Abductive arguments, a term from Charles Sanders Peirce, often called inference to the best explanation — IBE, a term from Gilbert Harman, nineteen sixty-five — conclude that a hypothesis is true because it would best explain the evidence.
+@pause 0.3
+@aside The kitchen window is broken, there is mud on the floor, and the jewelry box is empty. The best explanation is a burglary. So there was probably a burglary.
+@pause 0.3
+Sherlock Holmes calls his method "deduction," but it is almost always abduction. When he tells Watson "You have been in Afghanistan, I perceive," he is inferring the best explanation of Watson's tan, bearing, and injured arm.
+@item Direction. Deduction: From general to particular, or rule to case — typically. Induction: From observed cases to general or future claims. Abduction: From evidence to its best explanation.
+@item Support. Deduction: Necessary — if valid. Induction: Probabilistic. Abduction: Probabilistic, explanatory.
+@item Can the premises be true and the conclusion false? Deduction: Not if valid. Induction: Yes. Abduction: Yes.
+@item Adding premises. Deduction: Cannot make a valid argument invalid — monotonic. Induction: Can strengthen or weaken the inference — non-monotonic. Abduction: Can overturn the best explanation — non-monotonic.
+@item Extends knowledge? Deduction: Makes explicit what is implicit in the premises. Induction: Goes beyond the premises. Abduction: Goes beyond the premises and introduces new hypotheses.
+@item Key figure. Deduction: Aristotle, Frege. Induction: Hume, Mill. Abduction: Peirce, Harman, Lipton.
+The "general to particular" slogan for deduction is only a rough guide. "Socrates is a man and Socrates is mortal, so something is both a man and mortal" is deductive and goes from particular to general.
+The row about monotonicity is worth remembering. Deduction is monotonic: if premises P deductively entail C, then P plus any further premises still entail C. Non-deductive reasoning is non-monotonic: "Tweety is a bird, so Tweety flies" is a good inference, but add "Tweety is a penguin" and it fails. Most real-world reasoning is non-monotonic, which is why defeaters matter so much in epistemology.
+@pause 0.3
+@cue A connection worth making.
+Induction raises one of philosophy's most famous problems: how can it be rational to go beyond our evidence? Abduction is central to science and detective work; see Inference to the best explanation.
+@pause 0.3
+@section Validity and soundness
+A deductive argument is valid if and only if it is impossible for all its premises to be true and its conclusion false. Validity is about form, not content. It concerns the connection between premises and conclusion, not whether the premises are actually true.
+A valid argument with false premises.
+@pause 0.3
+@aside All fish can fly. All dogs are fish. So all dogs can fly.
+@pause 0.3
+This is valid: if the premises were true, the conclusion would have to be. It is just not a good argument, because its premises are false.
+An invalid argument with true premises and a true conclusion.
+@pause 0.3
+@aside All dogs are mammals. Some mammals are pets. So some dogs are pets.
+@pause 0.3
+Every statement is true, but the argument is invalid. The premises do not guarantee the conclusion. Compare a parallel argument with the same form: "All dogs are mammals. Some mammals are whales. So some dogs are whales." True premises, false conclusion. Since the form can lead from truth to falsehood, it is invalid.
+An argument is sound if it is valid and all its premises are true. A sound argument's conclusion must be true.
+@item A valid argument with all its premises true is sound, so its conclusion is guaranteed to be true.
+@item A valid argument with at least one false premise is unsound: its conclusion may be true or false.
+@item And an invalid argument is unsound either way, whether its premises are true or not: its conclusion may be true or false.
+Four facts about validity that people often get wrong.
+@item One. A valid argument can have a false conclusion — if a premise is false.
+@item Two. An invalid argument can have a true conclusion. Invalidity does not show the conclusion is false; it shows the argument fails to establish it. Concluding that a claim is false because an argument for it is bad is the fallacy fallacy.
+@item Three. If an argument is valid and its conclusion is false, at least one premise is false. This is the engine of refutation.
+@item Four. Validity is not the same as persuasiveness. A valid argument can be useless if its premises are more doubtful than its conclusion.
+@subsection The method of counterexample
+To show an argument form is invalid, find a counterexample: an argument with the same form, obviously true premises, and an obviously false conclusion. This is sometimes called refutation by logical analogy or parity of reasoning.
+@pause 0.3
+@aside "Successful people wake up early. I wake up early. So I will be successful."
+@aside Same form: "Cats have four legs. My table has four legs. So my table is a cat."
+@pause 0.3
+The second argument has the same form and clearly fails, so the form is invalid. This technique is powerful in real discussions because it requires no technical vocabulary. You simply say: "By that reasoning, we could also conclude…"
+@section Strength and cogency
+Inductive and abductive arguments are not valid or invalid. They are strong or weak. An argument is strong if, assuming the premises are true, the conclusion is probably true. It is cogent if it is strong and its premises are true — or acceptable. Cogency plays the role for induction that soundness plays for deduction.
+Strength comes in degrees. Compare.
+@pause 0.3
+@aside A: I surveyed five people at a gym; four exercise daily. So about eighty percent of the population exercises daily.
+@aside B: A randomized national survey of ten thousand adults found twenty-three percent exercise daily — plus or minus one percent. So about twenty-three percent of adults exercise daily.
+@pause 0.3
+A is very weak — tiny, biased sample. B is strong.
+The strength of an inductive generalization depends on.
+@item Sample size. Larger samples reduce random error.
+@item Representativeness. Is the sample free of selection bias? A sample of gym-goers is not representative of the population on exercise habits.
+@item Variety. Were instances observed under many different conditions?
+@item The strength of the claim. "Most emeralds are green" is easier to support than "All emeralds are green."
+@item Background knowledge. Do we know of a mechanism? Do we know that this kind of property tends to be uniform across a kind? Copper's conductivity is uniform; people's political opinions are not.
+The strength of an argument from analogy depends on the number and relevance of the similarities, the number and relevance of the differences, and the diversity of the cases compared. Rats and humans share liver enzymes relevant to drug metabolism; they differ in many other ways, some of which may matter.
+The strength of an abductive argument depends on whether the hypothesis is the best of the available explanations, which requires comparing it against rivals. An explanation can look good until someone thinks of a better alternative. That is the most common failure mode of abductive reasoning.
+@section Propositional logic
+Propositional logic, also called sentential logic, studies how the truth of compound statements depends on the truth of their parts. It is the simplest modern logic, and it is enough to analyze a great many everyday arguments.
+@subsection Connectives and truth tables
+Let P and Q stand for any propositions. The main connectives are.
+@item Negation: not P, which is true when P is false.
+@item Conjunction: P and Q, which is true when both are true.
+@item Disjunction: P or Q — inclusive, which is true when at least one is true.
+@item Conditional: if P then Q, which is true when not — P true and Q false.
+@item Biconditional: P if and only if Q, which is true when P and Q have the same truth value.
+The full truth table.
+@aside Reading the table row by row would be tedious, so here is what it shows.
+@item Not P flips the truth value of P.
+@item P and Q is true only when both are true.
+@item P or Q is false only when both are false.
+@item If P then Q is false in just one case: when P is true and Q is false.
+@item And P if and only if Q is true exactly when P and Q have the same truth value.
+Note that logical "or" is inclusive: "P or Q" is true when both are true. Ordinary English sometimes uses an exclusive "or" — "soup or salad" usually means not both. When analyzing an argument, check which is meant. An argument that depends on exclusive "or" when only inclusive "or" is justified commits the fallacy of affirming a disjunct.
+Two useful equivalences, De Morgan's laws.
+@item Not both P and Q is equivalent to not P or not Q: "It's not true that both P and Q" means "Either not P or not Q."
+@item Not either P or Q is equivalent to not P and not Q: "Neither P nor Q" means "Not P and not Q."
+Everyday mistakes with negation are common. "It's not true that all politicians are corrupt" does not mean "No politicians are corrupt." It means "Some politicians are not corrupt."
+@subsection The conditional
+The conditional "if P then Q" is the most important and most misunderstood connective. P is the antecedent; Q is the consequent.
+The truth table says that if P, then Q is false only when P is true and Q is false. This material conditional gives some odd results: "If the moon is made of cheese, then two plus two equals five" comes out true, because the antecedent is false. These are the paradoxes of material implication. Ordinary English conditionals are more complicated, and logicians have developed alternative theories — strict conditionals, counterfactual conditionals, probabilistic accounts. For evaluating arguments, the key facts hold on all theories.
+@item If if P, then Q is true and P is true, then Q is true.
+@item If if P, then Q is true and Q is false, then P is false.
+@item if P, then Q does not imply if Q, then P — its converse.
+@item if P, then Q does not imply if not P, then not Q — its inverse.
+@item if P, then Q is equivalent to if not Q, then not P — its contrapositive.
+@item If it's a dog, it's a mammal. Form: if P, then Q. Equivalent to the original? original.
+@item If it's a mammal, it's a dog. Form: if Q, then P — converse. Equivalent to the original? No.
+@item If it's not a dog, it's not a mammal. Form: if not P, then not Q — inverse. Equivalent to the original? No.
+@item If it's not a mammal, it's not a dog. Form: if not Q, then not P — contrapositive. Equivalent to the original? Yes.
+Many English expressions are conditionals in disguise.
+@item "Q if P" equals if P, then Q.
+@item "P only if Q" equals if P, then Q — note: if not Q, then P.
+@item "P unless Q" equals if not Q, then P — equivalently, P or Q.
+@item "No P without Q" equals if P, then Q.
+@item "All P are Q" equals for any x, if x is P then x is Q.
+"Only if" trips up almost everyone. "You can vote only if you are registered" means: if you vote, then you are registered. It does not mean that being registered guarantees you can vote — you might also need to be of age.
+@subsection Necessary and sufficient conditions
+Conditionals express necessary and sufficient conditions, the most useful concepts for analyzing definitions and claims.
+@item P is sufficient for Q if P's being true guarantees Q's being true: if P, then Q.
+@item Q is necessary for P if P cannot be true without Q: if P, then Q.
+The same conditional expresses both. In "If it is a square, it is a rectangle": being a square is sufficient for being a rectangle; being a rectangle is necessary for being a square.
+@item Oxygen, for fire. Necessary? Yes. Sufficient? No — also need fuel, heat.
+@item Being a square, for being a rectangle. Necessary? No. Sufficient? Yes.
+@item Having three sides, for being a triangle — closed plane figure with straight sides. Necessary? Yes. Sufficient? Yes.
+@item Buying a lottery ticket, for winning the lottery. Necessary? Yes. Sufficient? No.
+@item Decapitation, for death. Necessary? No. Sufficient? Yes.
+Confusing necessary and sufficient conditions produces many bad arguments.
+@item "Hard work is necessary for success, so if I work hard I'll succeed." — Treating necessary as sufficient.
+@item "Smoking is sufficient to raise cancer risk, so if I don't smoke, my risk won't rise." — Treating sufficient as necessary.
+@item "Money doesn't guarantee happiness, so it doesn't matter for happiness." — Denying sufficiency, then wrongly concluding it is not a contributing factor.
+Many real causes are neither necessary nor sufficient but are INUS conditions: an Insufficient but Non-redundant part of a condition that is itself Unnecessary but Sufficient. A short circuit is an INUS condition of a house fire: it is not sufficient alone, you need flammable material and oxygen, not necessary, fires have other causes, but it is a non-redundant part of one sufficient set of conditions.
+@section Valid argument forms
+These patterns are valid. Learn to recognize them in ordinary language.
+Modus ponens — affirming the antecedent
+@pause 0.3
+@aside If P then Q. P. Therefore Q.
+@aside If it's raining, the ground is wet. It's raining. So the ground is wet.
+@pause 0.3
+Modus tollens — denying the consequent
+@pause 0.3
+@aside If P then Q. Not Q. Therefore not P.
+@aside If the patient had measles, she would have a rash. She has no rash. So she doesn't have measles.
+@pause 0.3
+Modus tollens is the logical form of falsification in science: if the theory is true, we will observe O; we don't observe O; so the theory is false.
+Hypothetical syllogism — chain argument
+@pause 0.3
+@aside If P then Q. If Q then R. Therefore if P then R.
+@pause 0.3
+Disjunctive syllogism
+@pause 0.3
+@aside P or Q. Not P. Therefore Q.
+@aside The keys are in my coat or on the table. They're not in my coat. So they're on the table.
+@pause 0.3
+Constructive dilemma
+@pause 0.3
+@aside If P then R. If Q then S. P or Q. Therefore R or S.
+@pause 0.3
+Reductio ad absurdum — reduction to absurdity; indirect proof
+@pause 0.3
+@aside Assume P. Derive a contradiction, or something clearly false, from P. Therefore not P.
+@pause 0.3
+The classic example is the proof that the square root of two is irrational: assume the square root of two is a fraction, a over b, in lowest terms. Then a squared equals two b squared, so a is even. Write a as two k. Then four k squared equals two b squared, so b squared equals two k squared, so b is even too. But then a over b was not in lowest terms: a contradiction. So the square root of two is not a ratio of whole numbers.
+Reductio is also the most powerful informal move in philosophical argument. You accept your opponent's claim for the sake of argument, then show that it leads to a conclusion they would reject. Socrates' elenchus is a series of reductios.
+Conjunction, simplification, addition — trivial but useful
+@pause 0.3
+@aside P. Q. So P and Q.
+@aside P and Q. So P.
+@aside P. So P or Q.
+@pause 0.3
+@pause 0.3
+@aside "One person's modus ponens is another person's modus tollens." If you have a valid argument "If P then Q; P; so Q," and someone finds Q unbelievable, they may run the argument in reverse: "If P then Q; not Q; so not P." Logic tells you that P and Q stand or fall together. It does not tell you which way to go. That depends on whether you are more confident of P or of not Q G E Moore used exactly this structure against skepticism: the skeptic argues "If I can't rule out dreaming, I don't know I have hands; I can't rule it out; so I don't know I have hands." Moore replied: "I do know I have hands; so either I can rule out dreaming or the first premise is false."
+@pause 0.3
+@section Formal fallacies
+A formal fallacy is an argument whose form is invalid. These are the most common. Each has a valid twin that it resembles.
+Affirming the consequent
+@pause 0.3
+@aside If P then Q. Q. Therefore P.
+@aside If he's a spy, he'd be nervous. He's nervous. So he's a spy.
+@pause 0.3
+Invalid: he could be nervous for other reasons. This fallacy is extremely common in reasoning about evidence: "If my hypothesis is true, we'd see this result; we see the result; so my hypothesis is true." The result confirms the hypothesis only to the extent that it is more likely under the hypothesis than under the alternatives.
+Denying the antecedent
+@pause 0.3
+@aside If P then Q. Not P. Therefore not Q.
+@aside If you smoke, you'll damage your lungs. You don't smoke. So you won't damage your lungs.
+@pause 0.3
+Invalid: air pollution, asbestos, and other causes exist.
+Affirming a disjunct
+@pause 0.3
+@aside P or Q. P. Therefore not Q.
+@aside Either she's smart or she works hard. She's smart. So she doesn't work hard.
+@pause 0.3
+Invalid for inclusive "or."
+Undistributed middle
+@pause 0.3
+@aside All A are B. All C are B. Therefore all A are C.
+@aside All communists support public healthcare. My senator supports public healthcare. So my senator is a communist.
+@pause 0.3
+This is the structure of guilt by association.
+Illicit conversion
+@pause 0.3
+@aside All A are B. Therefore all B are A.
+@aside All terrorists are extremists, so all extremists are terrorists.
+@pause 0.3
+Quantifier shift
+@pause 0.3
+@aside Everyone has a mother. Therefore there is someone who is everyone's mother.
+@aside In symbols: for every x there is some y who is x's mother. That does not entail that there is some y who, for every x, is x's mother. Invalid.
+@pause 0.3
+A famous version appears in arguments like: "Every event has a cause, so there is something that is the cause of every event." The premise, even if true, does not yield the conclusion.
+The modal fallacy
+@pause 0.3
+@aside Necessarily, if I know P then P is true. I know P. Therefore, P is necessarily true.
+@pause 0.3
+Invalid: from "necessarily, if K then P" and K, only P follows, not "necessarily P". The fallacy confuses the necessity of the consequence with the necessity of the consequent. It turns up in arguments about fate and foreknowledge — "If God knows I will do X, then necessarily I will do X".
+@section Categorical logic and syllogisms
+Aristotle's logic deals with four kinds of categorical propositions.
+@item A — universal affirmative: All S are P. For example: All humans are mortal.
+@item E — universal negative: No S are P. For example: No reptiles are mammals.
+@item I — particular affirmative: Some S are P. For example: Some birds are flightless.
+@item O — particular negative: Some S are not P. For example: Some politicians are not honest.
+The square of opposition shows their relations. A and O are contradictories, exactly one is true, as are E and I. So to refute "All swans are white" A, you need only one black swan — O. To refute "No vaccines cause side effects" E, you need just one that does — I. This simple point is often missed in debates: a universal claim is refuted by a single counterexample, but it takes much more than one example to establish a universal claim.
+A categorical syllogism has two premises and a conclusion, each a categorical proposition, with three terms. The most famous valid form is called Barbara — the vowels encode AAA.
+@pause 0.3
+@aside All M are P. All S are M. Therefore all S are P.
+@aside All mammals are warm-blooded. All whales are mammals. So all whales are warm-blooded.
+@pause 0.3
+You can test syllogisms with Venn diagrams or with the traditional rules.
+@item One. The middle term must be distributed, refer to all members of its class, at least once. Violating this gives the undistributed middle.
+@item Two. A term distributed in the conclusion must be distributed in its premise. Violating this is illicit major or illicit minor.
+@item Three. Two negative premises yield no conclusion.
+@item Four. A negative premise requires a negative conclusion, and vice versa.
+Syllogistic logic is limited — it cannot handle relations like "taller than," or multiple quantifiers — which is why it was replaced by predicate logic. But the A, E, I, and O forms and the square of opposition remain handy for spotting everyday errors.
+@section Predicate logic and quantifiers
+Predicate logic, first-order logic, invented by Frege in eighteen seventy-nine, analyzes sentences into predicates, names, variables, and quantifiers.
+@item Universal quantifier for every x: "for all x"
+@item Existential quantifier there is some x such that: "there exists an x" — at least one.
+@item "All humans are mortal" becomes: for every x, if x is human, then x is mortal.
+@item "Some birds cannot fly" becomes: there is some x such that x is a bird and x does not fly.
+@item "Everyone loves someone" becomes: for every x, there is some y such that x loves y.
+@item "Someone is loved by everyone" becomes: there is some y such that, for every x, x loves y.
+The last two show why quantifier order matters, and why the quantifier shift fallacy is a fallacy. "Everyone loves someone" is plausible; "there is someone everyone loves" is not.
+Scope ambiguity arises in ordinary language from quantifiers and negation.
+@item "Everybody didn't pass the test." Does it mean nobody passed, or not everybody passed?
+@item "A woman gives birth in the UK every thirty seconds." There is not one very tired woman, there is some x such that for every t, but a birth every thirty seconds by some woman or other — for every t, there is some x such that.
+@item "All that glitters is not gold." Shakespeare meant "Not all that glitters is gold."
+A useful rule: when a claim contains "all," "some," "every," "no," or "not," ask whether its meaning changes if you move these words around. If it does, check which reading the arguer needs, and whether the evidence supports that reading.
+Two useful equivalences.
+@item "Not everything is P" is equivalent to "Something is not P."
+@item "Nothing is P" is equivalent to "Everything is not P."
+@section Modal logic basics
+Modal logic adds operators for necessity and possibility.
+@item necessarily P: "necessarily P" — P is true in every possible world.
+@item possibly P: "possibly P" — P is true in at least one possible world.
+@item "Necessarily P" is equivalent to "not possibly not P"
+A possible world is a complete way things could have been. Talk of possible worlds, developed by Saul Kripke, David Lewis, and others, makes modal claims precise. "Napoleon could have won at Waterloo" means that in some possible world he did.
+Modal logic matters for epistemology because.
+@item The necessary-contingent distinction is modal.
+@item Many analyses of knowledge use modal conditions: sensitivity — "if P were false, you would not believe P" — and safety — "in nearby possible worlds where you believe P, P is true".
+@item Epistemic logic treats "S knows that P", KP, and "S believes that P", BP, as modal operators. It asks, for example, whether if KP, then KKP — if you know, do you know that you know?
+The de re or de dicto distinction is also modal. "The number of planets is necessarily greater than seven." De dicto — about the statement: "Necessarily, the number of planets is greater than seven." False, since there could have been fewer planets. De re — about the thing: "The number of planets, namely eight, is such that it is necessarily greater than seven." True. The same ambiguity arises with belief: "Lois believes Superman can fly" versus "Lois believes of Clark Kent, who is Superman, that he can fly."
+@section Paradoxes as stress tests
+A paradox is an apparently valid argument from apparently true premises to an apparently false or contradictory conclusion. Paradoxes are valuable because they show that something we confidently believe must be wrong. Working through them sharpens logical skill. Several appear throughout this guide.
+@item The liar paradox. "This sentence is false." If true, it is false; if false, it is true. Discussed in Chapter eleven.
+@item The sorites paradox — paradox of the heap. One grain of sand is not a heap; adding one grain to a non-heap never makes a heap; so no amount of sand is a heap.
+@item The lottery paradox and the preface paradox. Rational belief seems to be closed under conjunction, yet it can be rational to believe each of many propositions while also believing that at least one of them is false.
+@item The paradox of the ravens. A green apple seems to confirm "All ravens are black."
+@item The surprise examination paradox. A teacher announces a surprise exam next week. Students reason it cannot be Friday, they would know by Thursday evening, so not Thursday either, and so on; so there can be no surprise exam. Then the exam on Wednesday surprises them. The paradox shows how knowledge of one's own future knowledge can go wrong.
+@item Moore's paradox. "It's raining, but I don't believe it's raining." Not contradictory, yet absurd to assert.
+When confronted with a paradox, there are exactly three options: reject a premise, reject the reasoning, show it is invalid, or accept the conclusion. Mapping which option each theorist takes is a good way to organize a debate.
+@section Reconstructing real arguments
+Real arguments come in messy prose, with premises unstated, repetition, rhetoric, and asides. Before you can evaluate them, you must reconstruct them. Here is a method.
+@subsection Finding the conclusion
+Ask: What is the main point? What would the speaker most want me to accept? Test candidates with the "therefore" test: put "therefore" before your candidate conclusion and "because" before the rest. Which arrangement makes sense?
+Conclusions are often.
+@item Stated at the beginning, in essays and editorials, or at the end — in speeches.
+@item Recommendations, "we should…", or evaluations — "this is wrong…".
+@item Implicit, especially in rhetorical questions — "Do we really want our children exposed to this?" means "We should not expose our children to this".
+@subsection Supplying missing premises
+An argument with unstated premises is an enthymeme. Almost all everyday arguments are enthymemes. "She must be rich; she drives a Ferrari" assumes "Anyone who drives a Ferrari is rich" — or, more plausibly, "Most people who drive Ferraris are rich".
+When you supply a missing premise, follow two principles.
+@item One. Make the argument valid — or strong. The premise should bridge the gap between stated premises and conclusion.
+@item Two. Make the premise as plausible as possible. Choose the most reasonable premise that does the job and that the arguer would plausibly accept.
+These can conflict. "Anyone who drives a Ferrari is rich" makes the argument valid but is false — the car could be borrowed or leased. "Most people who drive Ferraris are rich" is more plausible but makes the argument only inductively strong. Usually the second choice is fairer. The general lesson: the hidden premise is often where the real disagreement lies. Bringing it into the open is often the most useful contribution you can make to a discussion.
+Example.
+@pause 0.3
+@quote "Abortion should be illegal because it is the killing of a human being."
+@pause 0.3
+The unstated premise is roughly "Killing a human being should be illegal." But this is not quite right either: killing in self-defense is legal. So the premise must be something like "Intentionally killing an innocent human being should be illegal." Now the argument is clearer, and so are the points of dispute: is a fetus a "human being" in the morally relevant sense — a question about the concept of person, see Chapter four — and are there exceptions? Whatever your view, the reconstruction reveals the real structure of the debate.
+@subsection The principle of charity
+The principle of charity says: interpret others' statements in the most reasonable way available, attributing true beliefs and valid reasoning to them where you can. The term was introduced by Neil L. Wilson and developed by Donald Davidson and W V O Quine as a principle of interpretation: to understand what someone means at all, you must assume that most of their beliefs are true and reasonable.
+Charity is not just politeness. There are three good reasons for it.
+@item One. Accuracy. People usually mean something sensible. If your reconstruction makes someone sound foolish, it is probably wrong.
+@item Two. Efficiency. Refuting a weak version of an argument proves nothing, because the strong version remains. You have wasted your time.
+@item Three. Learning. You only learn from an opposing view if you engage with its best version.
+A strong form of charity is steelmanning: constructing the strongest version of an opposing argument, even stronger than the one its proponent gave. It is the opposite of the straw man.
+Charity has limits. You should not attribute to people views they plainly do not hold, and you should not "rescue" an argument by replacing it with a different one and then claim the original was good.
+@subsection Argument mapping
+An argument map is a diagram of the structure of reasoning. It shows how premises support conclusions, how objections attack premises, and how rebuttals answer objections. Argument mapping is one of the few critical-thinking interventions with good evidence of effectiveness; studies of university courses built around it — for example, by Tim van Gelder and colleagues at the University of Melbourne — have reported larger gains in critical-thinking test scores than conventional instruction.
+Two structural distinctions are key.
+@item Linked premises work only together. "All men are mortal" and "Socrates is a man" jointly support "Socrates is mortal"; neither does alone.
+@item Convergent premises each independently support the conclusion. "The restaurant has great reviews" and "My friend loved it" are separate reasons to try it.
+Linked premises are attacked by knocking out any one of them. Convergent reasons must each be answered.
+A simple map, using the motorway example.
+When you map an argument, you usually discover that A the argument has more hidden premises than you thought, B many of the words are rhetoric that supports nothing, and C the disagreement concentrates on one or two premises. That discovery is the goal.
+@section The Toulmin model
+The philosopher Stephen Toulmin, in The Uses of Argument, argued that formal logic was a poor model of how arguments work in law, science, and everyday life. He proposed a model with six parts.
+@item One. Claim: the conclusion being argued for.
+@item Two. Data — or grounds: the facts offered in support.
+@item Three. Warrant: the general principle that licenses the step from data to claim.
+@item Four. Backing: support for the warrant itself.
+@item Five. Qualifier: the degree of confidence — "probably," "presumably," "certainly".
+@item Six. Rebuttal: the conditions under which the claim would not hold — exceptions.
+Toulmin's own example.
+@pause 0.3
+@aside Data. Harry was born in Bermuda.
+@aside Warrant. A man born in Bermuda will generally be a British subject.
+@aside Backing. The relevant British nationality statutes and legal provisions.
+@aside Qualifier. So, presumably
+@aside Claim. Harry is a British subject
+@aside Rebuttal. unless both his parents were aliens, or he has become a naturalized American, and so on.
+@pause 0.3
+The Toulmin model has three advantages over standard form for everyday reasoning.
+@item It makes the warrant explicit. The warrant is usually the unstated premise, and it is usually where the argument is weakest.
+@item It builds in qualifiers, reminding you that most real arguments establish their conclusions only with some degree of probability.
+@item It builds in rebuttals, reminding you that most real warrants have exceptions. That makes it a good model of defeasible reasoning.
+When you encounter an argument, ask the Toulmin questions: What is the claim? What are the data? What warrant connects them? Why should I accept the warrant? How confident is the claim? What would defeat it?
+@section Dialectical moves
+Arguments occur in dialogue. Beyond checking validity, skilled reasoners use a set of standard moves.
+Counterexample. To refute a universal claim, "All X are Y", produce an X that is not Y. To refute a definition, "X is Y", produce a case of X that is not Y, the definition is too narrow, or a case of Y that is not X — too broad. This is the Socratic method.
+Reductio. Show that a claim leads to an absurd or unacceptable consequence. "If lying is always wrong, then you must tell the murderer at the door where your friend is hiding." — The case comes from Benjamin Constant's objection to Kant, which Kant answered in "On a Supposed Right to Lie from Philanthropy," seventeen ninety-seven
+Parity of reasoning. Show that the same form of reasoning would support an absurd conclusion. Gaunilo of Marmoutiers used this against Anselm's ontological argument for God: if Anselm's reasoning works, it would also prove the existence of a perfect island.
+Distinction. Show that an argument depends on running together two things that should be kept apart. "You say 'people have a right to their opinion,' but that is ambiguous between A a legal right to express an opinion and B a claim that all opinions are equally reasonable. A is true; B is false." Drawing distinctions is often the most constructive move in a dispute.
+Burden shifting and burden identification. Ask who needs to prove what.
+Conceding and qualifying. Grant the part of the opposing view that is right. It is honest, it shows you understand the view, and it isolates the real disagreement.
+Turning the tables — the tu quoque in its legitimate form. If an opponent's argument relies on a principle that also undermines their own position, pointing this out is a legitimate test of consistency. It becomes a fallacy only when used to dismiss a claim rather than to test the principle.
+@section Quick review
+Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.
+@pause 0.8
+@question Question one. Is this an argument or an explanation? "The dinosaurs went extinct because an asteroid struck the Yucatán sixty-six million years ago."
+@think 5
+@answer Answer. Usually an explanation: it assumes that the dinosaurs went extinct and says why. In a debate among paleontologists about whether the asteroid was the cause, the same sentence could be the conclusion of an argument supported by evidence such as the iridium layer and the Chicxulub crater.
+@pause 0.8
+@question Question two. Valid or invalid? "If the defendant was at the scene, his fingerprints would be on the gun. His fingerprints are on the gun. So he was at the scene."
+@think 5
+@answer Here's what to notice. Invalid. It affirms the consequent. The fingerprints could have got there in other ways — he handled the gun earlier, or someone planted them. Note, though, that the fingerprints are still evidence that he was at the scene. The deductive form is invalid, but the inductive support may be considerable.
+@pause 0.8
+@question Question three. Write the converse, inverse, and contrapositive of: "If a number is divisible by four, it is even." Which are true?
+@think 5
+@answer The answer. Converse: "If a number is even, it is divisible by four." False. Inverse: "If a number is not divisible by four, it is not even." False. Contrapositive: "If a number is not even, it is not divisible by four." True, and equivalent to the original.
+@pause 0.8
+@question Question four. "You can get a good job only if you have a degree." Does this mean that having a degree guarantees a good job?
+@think 5
+@answer Here's my answer. No. "P only if Q" means if P, then Q: having a degree is necessary for a good job, not sufficient. Whether even the necessity claim is true is a separate question.
+@pause 0.8
+@question Question five. Identify the formal fallacy: "All good scientists are skeptical. Mark is skeptical. So Mark is a good scientist."
+@think 5
+@answer Here's the answer. Undistributed middle — equivalently, affirming the consequent in predicate form. Being skeptical is necessary for being a good scientist, according to the premise, not sufficient.
+@pause 0.8
+@question Question six. What's wrong with: "Every person has a purpose, so there is one purpose that every person has"?
+@think 5
+@answer Answer. Quantifier shift: from for every x, there is some y such that, y is x's purpose, to there is some y such that for every x, y is x's purpose. Each person could have a different purpose.
+@pause 0.8
+@question Question seven. Supply the missing premise and evaluate: "Of course that article is wrong. It was written by a climate activist."
+@think 5
+@answer Here's what to notice. Missing premise: "Articles written by climate activists are, always or usually, wrong." Stated this way, the premise is plainly unjustified. It is a form of ad hominem or genetic fallacy. A more charitable premise, "Activists may have motivations that make them less careful about accuracy," could justify extra scrutiny of the article's claims, but it cannot show that the article is wrong. The right response is to check the claims.
+@pause 0.8
+@question Question eight. Put this in Toulmin form: "We should bring umbrellas; the forecast says eighty percent chance of rain."
+@think 5
+@answer The answer. Data: the forecast gives an eighty percent chance of rain. Warrant: when rain is likely, it is wise to bring umbrellas. Backing: forecasts at this confidence level are reasonably well calibrated, and getting soaked is unpleasant while umbrellas cost little. Qualifier: probably. Claim: we should bring umbrellas. Rebuttal: unless we will be indoors the whole time, or it is too windy for umbrellas.
+@pause 0.8
+@question Question nine. Explain how a single argument can be used both by a skeptic and by an anti-skeptic.
+@think 5
+@answer Here's my answer. If if P, then Q is accepted, the skeptic reasons from P to Q by modus ponens, and the anti-skeptic reasons from not Q to not P by modus tollens. The skeptic: "If I can't rule out dreaming, I don't know I have hands; I can't rule it out; so I don't know." Moore: "If I can't rule out dreaming, I don't know I have hands; I do know I have hands; so I can rule it out — somehow." Logic fixes that P and Q stand or fall together; our relative confidence determines which direction to go.
+@section End of chapter three
+That's the end of chapter three. You now have the tools to dissect an argument. But arguments are made of words, and words can mislead. In chapter four we'll look at language, concepts, and definitions.
