@@ -79,7 +79,7 @@ Anderson noted that these criteria can be applied by a person with a high school
 
 ## Experts and novices
 
-### The novice–expert problem
+### The novice-expert problem
 
 Suppose you are not an expert, and two people presenting themselves as experts disagree. Perhaps two doctors give conflicting advice, or two economists make opposite predictions. You can't assess the evidence directly; that's why you need experts. How can you rationally decide whom to believe?
 

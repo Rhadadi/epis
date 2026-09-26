@@ -5,6 +5,19 @@ arguments, objections, examples, and practical applications.
 
 Live site: [epis.duckdns.org](https://epis.duckdns.org)
 
+## Study guide
+
+The [`guide/`](guide/README.md) folder contains **Mastering Epistemology**, a
+long-form companion to the explorer: sixteen cross-linked chapters plus a
+glossary and a reading list with a twelve-week study plan. It covers the
+theory of knowledge, justification, skepticism, logic, probability and Bayesian
+reasoning, philosophy of science, truth and relativism, social epistemology,
+intellectual virtue, the psychology of reasoning, a field guide to fallacies,
+and a practical toolkit for analyzing discussions and framing arguments, with
+worked examples and self-check questions throughout.
+
+Start with the [guide's contents page](guide/README.md).
+
 ## Features
 
 - English and Persian reading modes
@@ -29,3 +42,6 @@ Then open <http://localhost:8000>.
 The application is intentionally distributed as a single static `index.html`
 file. Its content, styles, data, and interaction logic are all self-contained;
 only the web fonts are loaded externally.
+
+The study guide is plain Markdown in `guide/`, one file per chapter, and
+renders directly on GitHub.
