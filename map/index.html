@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#081821">
 <title>Concept Map · Mastering Epistemology</title>
 <meta name="description" content="An interactive, bilingual (English and Persian) map of 135 concepts in epistemology.">
@@ -155,10 +155,10 @@ body.fa .blk p b{color:var(--cyan)}
 .learn a:active{background:var(--panel2)}
 .learn a b{display:block;color:var(--brass);font-weight:500;margin-bottom:2px}
 
-#find{position:fixed;inset:0;z-index:50;background:var(--search-bg);display:none;flex-direction:column;padding:14px}
+#find{position:fixed;inset:0;z-index:50;background:var(--search-bg);display:none;flex-direction:column;padding:14px;overscroll-behavior:contain}
 #find.on{display:flex}
 #q{width:100%;background:var(--panel);border:1px solid var(--brass);color:var(--paper);
-  font-family:var(--disp);font-size:16px;padding:12px;outline:none}
+  font-family:var(--disp);font-size:16px;padding:12px}
 body.fa #q{font-family:var(--fa);direction:rtl;text-align:right}
 #res{margin-top:10px;overflow-y:auto;flex:1}
 .hit{padding:11px 12px;border:1px solid var(--rule);background:var(--panel);margin-bottom:6px;cursor:pointer}
@@ -206,7 +206,7 @@ a.brand:hover span,a.brand:focus-visible span{text-decoration:underline}
 
 
 <div id="find" role="dialog" aria-modal="true" aria-label="Search concepts">
-  <input id="q" autocomplete="off" aria-label="Search concepts">
+  <input id="q" name="concept-search" autocomplete="off" aria-label="Search concepts">
   <div id="res"></div>
 </div>
 
@@ -215,6 +215,7 @@ a.brand:hover span,a.brand:focus-visible span{text-decoration:underline}
 const {N,R,UI}=window.EPIS;
 let LANG="en";
 try{const s=localStorage.getItem("epistemology-lang");if(s==="fa"||s==="en")LANG=s;}catch(_){/* storage may be unavailable */}
+try{const s=new URLSearchParams(location.search).get("lang");if(s==="fa"||s==="en")LANG=s;}catch(_){/* older browsers */}
 const T=k=>UI[LANG][k];
 const title=id=>(LANG==="fa"&&N[id].tf)?N[id].tf:N[id].t;
 
@@ -257,8 +258,14 @@ function applyTheme(preference,persist=true){
   document.querySelector('meta[name="theme-color"]').content=resolved==="dark"?"#081821":"#F6F3EC";
   const next=preference==="system"?"light":preference==="light"?"dark":"system";
   themeButton.innerHTML=ICONS[preference];
-  themeButton.setAttribute("aria-label",`Theme: ${preference}. Activate for ${next} theme.`);
-  themeButton.title=`Theme: ${preference} · next: ${next}`;
+  if(LANG==="fa"){
+    const names={system:"خودکار",light:"روشن",dark:"تیره"};
+    themeButton.setAttribute("aria-label",`پوسته: ${names[preference]}. تغییر به ${names[next]}.`);
+    themeButton.title=`پوسته: ${names[preference]}`;
+  }else{
+    themeButton.setAttribute("aria-label",`Theme: ${preference}. Activate for ${next} theme.`);
+    themeButton.title=`Theme: ${preference} · next: ${next}`;
+  }
   if(persist){try{localStorage.setItem("epistemology-theme",preference);}catch(_){/* storage may be unavailable */}}
   if(Object.keys(pos).length)render();
 }
@@ -344,13 +351,14 @@ function render(){
     const labelButton=el.querySelector(".lab"),infoButton=el.querySelector(".info");
     labelButton.querySelector("i").textContent=title(id);
     labelButton.setAttribute("aria-label",kids
-      ? `${title(id)}. ${expanded.has(id)?"Collapse":"Expand"} ${kids} subtopics.`
-      : `Open full entry for ${title(id)}`);
+      ? (LANG==="fa"?`${title(id)}. ${expanded.has(id)?"بستن":"بازکردن"} ${kids} زیرموضوع.`
+                    :`${title(id)}. ${expanded.has(id)?"Collapse":"Expand"} ${kids} subtopics.`)
+      : (LANG==="fa"?`خواندن مدخل کامل ${title(id)}`:`Open full entry for ${title(id)}`));
     labelButton.title=kids
-      ? `${expanded.has(id)?"Collapse":"Expand"} ${kids} subtopics`
-      : "Open full entry";
+      ? (LANG==="fa"?`${expanded.has(id)?"بستن":"بازکردن"} ${kids} زیرموضوع`:`${expanded.has(id)?"Collapse":"Expand"} ${kids} subtopics`)
+      : (LANG==="fa"?"خواندن مدخل کامل":"Open full entry");
     if(kids)labelButton.setAttribute("aria-expanded",expanded.has(id)?"true":"false");
-    infoButton.setAttribute("aria-label",`Open full entry for ${title(id)}`);
+    infoButton.setAttribute("aria-label",LANG==="fa"?`خواندن مدخل کامل ${title(id)}`:`Open full entry for ${title(id)}`);
     labelButton.addEventListener("click",()=>{
       if(!kids){openSheet(id);return;}
       sel=id;
@@ -434,6 +442,7 @@ function setLang(next){
   LANG=next;
   try{localStorage.setItem("epistemology-lang",LANG);}catch(_){/* storage may be unavailable */}
   document.documentElement.lang=LANG;
+  document.documentElement.dir=LANG==="fa"?"rtl":"ltr";
   document.body.classList.toggle("fa",LANG==="fa");
   document.querySelectorAll("[data-lang]").forEach(b=>{
     const on=b.dataset.lang===LANG;
@@ -442,6 +451,17 @@ function setLang(next){
   });
   document.getElementById("hint").innerHTML=T("hint").replace("for the full entry","to read the full entry");
   document.getElementById("q").placeholder=T("find");
+  const fa=LANG==="fa";
+  document.getElementById("searchbtn").setAttribute("aria-label",fa?"جست‌وجوی مفاهیم":"Search concepts");
+  document.getElementById("searchbtn").title=fa?"جست‌وجو":"Search concepts";
+  document.getElementById("ctrl").setAttribute("aria-label",fa?"ابزارهای نقشه":"Map controls");
+  [["zin","بزرگ‌نمایی","Zoom in"],["zout","کوچک‌نمایی","Zoom out"],
+   ["fit","جادادن نقشه در صفحه","Fit map to screen"],["rst","بازنشانی نقشه","Reset map"]].forEach(([id,faLabel,enLabel])=>{
+    const el=document.getElementById(id),label=fa?faLabel:enLabel;el.setAttribute("aria-label",label);el.title=label;
+  });
+  document.getElementById("find").setAttribute("aria-label",fa?"جست‌وجوی مفاهیم":"Search concepts");
+  document.getElementById("q").setAttribute("aria-label",fa?"جست‌وجوی مفاهیم":"Search concepts");
+  applyTheme(THEME_PREF,false);
   render();
   requestAnimationFrame(()=>fitVisible(false,readableScaleFloor()));
   const f=document.getElementById("find");

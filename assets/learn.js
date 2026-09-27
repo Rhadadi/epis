@@ -11,6 +11,16 @@
   var ROOT = SCRIPT ? new URL("../", SCRIPT).href : new URL("./", location.href).href;
   var DAY = 86400000;
   var INTERVALS = [1, 3, 7, 16, 35, 90]; // days before a question returns, by box
+  var FA = document.documentElement.lang === "fa";
+  var SEARCH_TEXT = FA ? {
+    label: "جست‌وجو", input: "جست‌وجوی راهنما…",
+    hint: "در فصل‌ها، ۱۹۷ اصطلاح واژه‌نامه و ۱۳۵ مفهوم جست‌وجو کنید. مفاهیم را می‌توانید به فارسی نیز بیابید.",
+    none: "نتیجه‌ای یافت نشد", offline: "جست‌وجو تا زمانی که راهنما را برای مطالعهٔ آفلاین ذخیره نکنید، بدون اینترنت در دسترس نیست."
+  } : {
+    label: "Search", input: "Search the guide…",
+    hint: "Search the chapters, the 197 glossary terms and the 135 concepts. Persian works for concepts.",
+    none: "Nothing found for", offline: "Search is not available offline until the guide has been saved for offline reading."
+  };
 
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   var cache = {};
@@ -69,7 +79,8 @@
 
   /* ------------------------------------------------------------ search */
   var modal = null, input = null, list = null, results = [], active = 0;
-  var KIND = { c: "Concept", g: "Glossary", s: "Section", ch: "Chapter" };
+  var KIND = FA ? { c: "مفهوم", g: "واژه‌نامه", s: "بخش", ch: "فصل" }
+                : { c: "Concept", g: "Glossary", s: "Section", ch: "Chapter" };
   var WEIGHT = { c: 3, g: 2.6, ch: 2.4, s: 1 };
   function fold(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[’']/g, "'"); }
   function score(item, q, words) {
@@ -99,13 +110,13 @@
   }
   function run() {
     var q = fold(input.value.trim());
-    if (q.length < 2) { list.innerHTML = '<p class="sx-hint">Search the chapters, the 197 glossary terms and the 135 concepts. Persian works for concepts.</p>'; results = []; return; }
+    if (q.length < 2) { list.innerHTML = '<p class="sx-hint">' + SEARCH_TEXT.hint + "</p>"; results = []; return; }
     getJSON("search.json").then(function (all) {
       var words = q.split(/\s+/).filter(Boolean);
       results = all.map(function (it) { return { it: it, s: score(it, q, words) }; }).filter(function (r) { return r.s > 0; })
         .sort(function (a, b) { return b.s - a.s; }).slice(0, 40);
       active = 0;
-      if (!results.length) { list.innerHTML = '<p class="sx-hint">Nothing found for “' + esc(input.value) + "”.</p>"; return; }
+      if (!results.length) { list.innerHTML = '<p class="sx-hint">' + SEARCH_TEXT.none + ' «' + esc(input.value) + "».</p>"; return; }
       list.innerHTML = results.map(function (r, i) {
         var it = r.it;
         return '<a class="sx-item" role="option" id="sx-' + i + '" href="' + ROOT + esc(it.u) + '"' + (i === 0 ? ' aria-selected="true"' : "") + ">" +
@@ -113,7 +124,7 @@
           "<b>" + esc(it.t) + (it.f ? ' <span lang="fa">' + esc(it.f) + "</span>" : "") + "</b>" +
           '<span class="sx-x">' + snippet(it, words) + "</span></a>";
       }).join("");
-    }).catch(function () { list.innerHTML = '<p class="sx-hint">Search is not available offline until the guide has been saved for offline reading.</p>'; });
+    }).catch(function () { list.innerHTML = '<p class="sx-hint">' + SEARCH_TEXT.offline + "</p>"; });
   }
   function move(d) {
     if (!results.length) return;
@@ -127,9 +138,9 @@
   function openSearch() {
     if (!modal) {
       modal = el("div", "sx");
-      modal.innerHTML = '<div class="sx-box" role="dialog" aria-label="Search"><div class="sx-in">' +
+      modal.innerHTML = '<div class="sx-box" role="dialog" aria-label="' + SEARCH_TEXT.label + '"><div class="sx-in">' +
         '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>' +
-        '<input type="search" placeholder="Search the guide…" aria-label="Search the guide" role="combobox" aria-expanded="true" aria-controls="sx-list" autocomplete="off">' +
+        '<input type="search" name="site-search" placeholder="' + SEARCH_TEXT.input + '" aria-label="' + SEARCH_TEXT.input + '" role="combobox" aria-expanded="true" aria-controls="sx-list" autocomplete="off">' +
         '<kbd>Esc</kbd></div><div class="sx-list" id="sx-list" role="listbox"></div></div>';
       document.body.appendChild(modal);
       input = modal.querySelector("input");

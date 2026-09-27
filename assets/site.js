@@ -43,8 +43,14 @@
     if (btn) {
       var next = pref === "system" ? "light" : pref === "light" ? "dark" : "system";
       btn.innerHTML = ICON[pref];
-      btn.setAttribute("aria-label", "Theme: " + (shade || pref) + ". Switch to " + next + ".");
-      btn.title = "Theme: " + (shade || pref);
+      if (doc.lang === "fa") {
+        var names = { system: "خودکار", light: "روشن", dark: "تیره", sepia: "سپیا", black: "سیاه" };
+        btn.setAttribute("aria-label", "پوسته: " + names[shade || pref] + ". تغییر به " + names[next] + ".");
+        btn.title = "پوسته: " + names[shade || pref];
+      } else {
+        btn.setAttribute("aria-label", "Theme: " + (shade || pref) + ". Switch to " + next + ".");
+        btn.title = "Theme: " + (shade || pref);
+      }
     }
     if (persist) { store("epistemology-theme", pref); store("epis-shade", shade); store("epis-prefs-ts", String(Date.now())); document.dispatchEvent(new Event("epis:prefs")); }
     document.dispatchEvent(new Event("epis:theme"));
@@ -116,6 +122,8 @@
   function setLang(lang) {
     if (lang !== "fa") lang = "en";
     doc.dataset.lang = lang;
+    doc.lang = lang;
+    doc.dir = lang === "fa" ? "rtl" : "ltr";
     store("epistemology-lang", lang);
     document.querySelectorAll("[data-set-lang]").forEach(function (b) {
       var on = b.getAttribute("data-set-lang") === lang;
@@ -124,7 +132,8 @@
     });
   }
   if (document.querySelector("[data-set-lang]")) {
-    setLang(doc.dataset.lang || "en");
+    var requestedLang = new URLSearchParams(location.search).get("lang");
+    setLang(requestedLang === "fa" ? "fa" : (doc.dataset.lang || "en"));
     document.querySelectorAll("[data-set-lang]").forEach(function (b) {
       b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang")); });
     });

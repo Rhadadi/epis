@@ -11,6 +11,7 @@ Reads
 
 Writes
     index.html                          the starting page
+    fa/index.html                       the Persian starting page
     guide/index.html, guide/NN-*.html   the guide as web pages
     guide/audio/index.html, about.html  the audio player and how the audio was made
     concepts/index.html, concepts/*.html one readable page per concept, English and Persian
@@ -45,6 +46,7 @@ TOOLS = Path(__file__).resolve().parent
 SITE = "Mastering Epistemology"
 EPUB_NAME = "mastering-epistemology.epub"
 LIVE = "https://rhadadi.github.io/epis/"
+FA_SITE = "تسلط بر معرفت‌شناسی"
 REPO = "https://github.com/Rhadadi/epis"
 
 PARTS = [
@@ -56,6 +58,62 @@ PARTS = [
     ("", "Appendices", [17, 18]),
 ]
 PART_OF = {n: (roman, name) for roman, name, nums in PARTS for n in nums}
+
+FA_PART_NAMES = {
+    "I": "مبانی",
+    "II": "هستهٔ معرفت‌شناسی",
+    "III": "شواهد، علم و حقیقت",
+    "IV": "معرفت در جامعه و ذهن",
+    "V": "کاربرد",
+    "": "پیوست‌ها",
+}
+
+FA_CHAPTERS = {
+    1: ("معرفت‌شناسی چیست؟", "پرسش‌های بنیادی؛ سه گونهٔ دانستن؛ باور، درجهٔ باور و پذیرش؛ معرفت پیشین، تحلیلی و ضروری؛ دلایل معرفتی در برابر دلایل عملی؛ نقشهٔ این حوزه"),
+    2: ("تاریخ نظریهٔ معرفت", "از پیشاسقراطیان، سقراط، افلاطون و ارسطو تا سنت‌های هندی، اسلامی و چینی؛ و از دکارت، لاک، هیوم، رید و کانت تا عمل‌گرایی، پوپر، ویتگنشتاین، کواین و گتیه"),
+    3: ("منطق و کالبدشناسی استدلال", "قیاس، استقرا و استنتاج به بهترین تبیین؛ اعتبار و استحکام؛ شرط‌های لازم و کافی؛ صورت‌های معتبر و مغالطه‌های صوری؛ مقدمه‌های پنهان؛ اصل خیرخواهی؛ نقشهٔ استدلال و مدل تولمین"),
+    4: ("زبان، مفاهیم و تعریف‌ها", "معنا و مرجع؛ انواع تعریف؛ ابهام و واگی؛ نزاع‌های لفظی؛ زبان باردار و قاب‌بندی؛ مفاهیم مناقشه‌برانگیز؛ شکاف هست–باید؛ آزمون‌های فکری و تعادل تأملی"),
+    5: ("معرفت چیست؟", "باور صادق موجه؛ مسئلهٔ گتیه؛ وثاقت‌گرایی، حساسیت، ایمنی، فضیلت و نظریه‌های معرفت‌نخست؛ بخت معرفتی؛ ارزش معرفت؛ فهم و خرد"),
+    6: ("توجیه: ساختار دلایل خوب", "ابطال‌کننده‌ها؛ مسئلهٔ تسلسل؛ مبناگرایی، انسجام‌گرایی، تسلسل‌گرایی و رویکردهای ترکیبی؛ درون‌گرایی در برابر برون‌گرایی؛ شواهدگرایی؛ مسئلهٔ معیار و خطاپذیری"),
+    7: ("منابع معرفت", "ادراک، حافظه، درون‌نگری، عقل و گواهی: هریک چگونه کار می‌کند و چگونه از کار می‌افتد؛ علم حضوری؛ چه زمانی به شهود اعتماد کنیم"),
+    8: ("شکاکیت و پاسخ‌های آن", "شکاکیت پیرونی و دکارتی؛ مغز در خمره؛ استدلال بستار؛ مور، زمینه‌گرایی، معرفت‌شناسی لولایی و پاسخ‌های دیگر؛ شکاکیت سالم در برابر شکاکیت فرساینده"),
+    9: ("استقرا، احتمال و استدلال بیزی", "مسئلهٔ هیوم؛ سبزآبی و کلاغ‌ها؛ احتمال؛ قضیهٔ بیز با مثال‌های حل‌شده؛ نرخ‌های پایه، مغالطهٔ عطف، مسئلهٔ مونتی‌هال، بازگشت به میانگین، پارادوکس سیمپسون؛ کالیبراسیون، مقدار p و ریسک"),
+    10: ("علم، شواهد و تبیین", "ابطال‌پذیری؛ دوئم–کواین؛ کون و لاکاتوش؛ استنتاج به بهترین تبیین؛ واقع‌گرایی؛ علیت، همبستگی و آزمایش‌های تصادفی؛ ارزش‌ها در علم؛ اجماع؛ بحران تکرارپذیری و تشخیص شبه‌علم"),
+    11: ("حقیقت، نسبی‌گرایی و عینیت", "نظریه‌های حقیقت؛ پارادوکس دروغ‌گو؛ نسبی‌گرایی و منتقدانش؛ ساخت اجتماعی؛ عینیت و منظر؛ پساحقیقت و مهمل‌گویی"),
+    12: ("معرفت‌شناسی اجتماعی: باهم دانستن", "اعتماد و تخصص؛ انتخاب میان کارشناسان؛ اختلاف همتایان؛ بی‌عدالتی معرفتی؛ نظریهٔ موقعیت؛ اتاق‌های پژواک، آبشارهای اطلاعاتی و خرد جمعی؛ اطلاعات نادرست، تبلیغات و نظریه‌های توطئه؛ نهادها و هوش مصنوعی"),
+    13: ("فضیلت فکری و اخلاق باور", "کلیفورد در برابر جیمز؛ فضیلت‌ها و رذیلت‌های فکری؛ فروتنی و گشوده‌ذهنی؛ ملاحظات عملی و اخلاقی در اسناد معرفت؛ ایمان، عقل و معرفت‌شناسی دینی"),
+    14: ("روان‌شناسی استدلال: ذهن در عمل", "نظریه‌های دوفرایندی؛ میان‌برهای ذهنی و سوگیری‌ها؛ سوگیری تأییدی و سوگیری جانب خود؛ استدلال انگیزه‌مند؛ اعتمادبه‌نفس بیش‌ازحد؛ شناخت هویت‌محافظ؛ نظریهٔ استدلالی؛ روش‌های مؤثر سوگیری‌زدایی و اَبَرپیش‌بینی"),
+    15: ("راهنمای میدانی مغالطه‌ها", "بیش از چهل مغالطه و فن بلاغی؛ برای هریک مثال، خویشاوند مشروع، روش پاسخ‌گویی و تمرین‌های کاربردی"),
+    16: ("جعبه‌ابزار متفکر نقاد", "روشی هفت‌مرحله‌ای برای تحلیل هر گفت‌وگو؛ نظریهٔ موضع‌ها؛ یافتن نقطهٔ گرهی؛ صورت‌بندی استدلال‌های خود؛ بار اثبات؛ تیغ‌های فلسفی؛ اخلاق گفت‌وگو؛ پنج مطالعهٔ موردی و فهرست‌های وارسی"),
+    17: ("واژه‌نامه", "۲۰۰ اصطلاح کلیدی، هریک پیوندخورده به توضیح کامل خود"),
+    18: ("فهرست مطالعه و برنامهٔ یادگیری", "بهترین کتاب‌ها به تفکیک سطح؛ متون دست‌اول؛ سنت‌های غیرغربی؛ منابع رایگان و یک برنامهٔ مطالعهٔ دوازده‌هفته‌ای"),
+}
+
+FA_ART_ALT = {
+    "home": "سرگردان بر فراز دریای مه، اثر کاسپار داوید فریدریش (حدود ۱۸۱۸)",
+    "guide": "ستاره‌شناس، اثر یوهانس ورمیر (حدود ۱۶۶۸)",
+    "map": "نقشهٔ منظومهٔ کوپرنیکی، اثر آندریاس سلاریوس (۱۶۶۰)",
+    "audio": "صدای اربابش، اثر فرانسیس بارو (۱۸۹۸–۹۹)",
+    "cave": "غار افلاطون، اثر یان سانردام (۱۶۰۴)",
+    "ch01": "جغرافی‌دان، اثر یوهانس ورمیر (حدود ۱۶۶۹)",
+    "ch02": "مرگ سقراط، اثر ژاک‑لویی داوید (۱۷۸۷)",
+    "ch03": "درس آناتومی دکتر تولپ، اثر رمبرانت (۱۶۳۲)",
+    "ch04": "برج بابل، اثر پیتر بروگل پدر (۱۵۶۳)",
+    "ch05": "ملنکولی ۱، اثر آلبرشت دورر (۱۵۱۴)",
+    "ch06": "پل متحرک، اثر جووانی باتیستا پیرانزی (۱۷۶۱)",
+    "ch07": "پرترهٔ آرنولفینی، اثر یان فان آیک (۱۴۳۴)",
+    "ch08": "تردید توماس قدیس، اثر کاراواجو (حدود ۱۶۰۱–۰۲)",
+    "ch09": "تأثر، طلوع آفتاب، اثر کلود مونه (۱۸۷۲)",
+    "ch10": "آزمایش پرنده در پمپ هوا، اثر جوزف رایت دربی (۱۷۶۸)",
+    "ch11": "طلوع زمین، عکس ویلیام آندرز، آپولو ۸ (۱۹۶۸)",
+    "ch12": "مکتب آتن، اثر رافائل (۱۵۰۹–۱۵۱۱)",
+    "ch13": "طوفان در دریای جلیل، اثر رمبرانت (۱۶۳۳)",
+    "ch14": "خواب عقل هیولاها می‌زاید، اثر فرانسیسکو گویا (۱۷۹۹)",
+    "ch15": "ماهران ورق، اثر کاراواجو (حدود ۱۵۹۵)",
+    "ch16": "سفیران، اثر هانس هولباین پسر (۱۵۳۳)",
+    "ch17": "کتابدار، اثر جوزپه آرچیمبولدو (حدود ۱۵۶۶)",
+    "ch18": "کرم کتاب، اثر کارل اشپیتسوگ (حدود ۱۸۵۰)",
+}
 
 # Concept-map branches: the guide chapter that covers each one, and its artwork.
 BRANCH_CHAPTER = {"root": 1, "trilemma": 6, "know": 5, "truth": 11, "sources": 7, "skep": 8, "formal": 9,
@@ -195,9 +253,9 @@ class Art:
         i = self.info.get(key, {})
         return f"{i.get('title', '')} by {i.get('artist', '')} ({i.get('date', '')})"
 
-    def img(self, key, root, sizes="100vw", cls="art", eager=False):
+    def img(self, key, root, sizes="100vw", cls="art", eager=False, alt=None):
         return (f'<img class="{cls}" src="{self.src(key, root)}" srcset="{self.srcset(key, root)}" sizes="{sizes}" '
-                f'alt="{attr(self.alt(key))}"' + (' fetchpriority="high"' if eager else ' loading="lazy"') +
+                f'alt="{attr(self.alt(key) if alt is None else alt)}"' + (' fetchpriority="high"' if eager else ' loading="lazy"') +
                 ' decoding="async">')
 
 
@@ -386,6 +444,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <header class="bar {bar}">
   <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
   <nav aria-label="Site">{links}</nav>
+  <a class="langlink" href="{root}fa/" hreflang="fa" lang="fa" aria-label="نسخهٔ فارسی سایت">فا</a>
   <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
   <button class="tbtn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
 </header>
@@ -430,8 +489,98 @@ def footer(root):
 </footer>"""
 
 
+def shell_fa(*, title, desc, body, hero_img=None, extra_head="", bar="solid"):
+    """Persian counterpart of the public site shell.
+
+    The long-form guide and narration are still English, but the redesigned
+    landing experience and the already-bilingual concept explorer are exposed
+    through a complete RTL shell rather than an English page with a token link.
+    """
+    root = "../"
+    nav = [
+        ("#course", "book", "دوره"),
+        (f"{root}concepts/?lang=fa", "grid", "مفاهیم"),
+        (f"{root}map/?lang=fa", "map", "نقشه"),
+        (f"{root}guide/audio/", "phones", "شنیدن"),
+        (f"{root}account/", "user", "مطالعهٔ من"),
+    ]
+    links = "".join(f'<a href="{href}">{icon(ic)}<span>{label}</span></a>' for href, ic, label in nav)
+    preload = (f'<link rel="preload" as="image" href="{hero_img[0]}" imagesrcset="{hero_img[1]}" imagesizes="100vw">'
+               if hero_img else "")
+    full_title = title if title == FA_SITE else f"{title} · {FA_SITE}"
+    return f"""<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light" data-lang="fa">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{esc(full_title)}</title>
+<meta name="description" content="{attr(desc)}">
+<meta name="theme-color" content="#F6F3EC">
+<meta property="og:title" content="{attr(full_title)}">
+<meta property="og:description" content="{attr(desc)}">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{root}assets/icon-192.png">
+<link rel="manifest" href="{root}manifest.webmanifest">
+<link rel="stylesheet" href="{root}assets/fonts/fonts.css">
+<link rel="stylesheet" href="{root}assets/site.css">
+{preload}{extra_head}
+<script>{BOOT}</script>
+</head>
+<body class="site-fa">
+<a class="skip" href="#main">پرش به محتوا</a>
+<header class="bar {bar}">
+  <a class="brand" href="" aria-label="{FA_SITE}، صفحهٔ اصلی">{LOGO}<span><b>{FA_SITE}</b><small>راهنما · نقشه · صوت</small></span></a>
+  <nav aria-label="بخش‌های سایت">{links}</nav>
+  <a class="langlink" href="../" hreflang="en" lang="en" aria-label="English version">EN</a>
+  <button class="tbtn" id="search" type="button" aria-label="جست‌وجوی راهنما" title="جست‌وجو">{icon("search")}</button>
+  <button class="tbtn" id="theme" type="button" aria-label="پوستهٔ رنگی"></button>
+  <button class="tbtn" id="menu" type="button" aria-label="فهرست" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
+</header>
+<nav class="mnav" id="mnav" aria-label="فهرست" hidden>{links}<span class="sep"></span>
+  <a href="{root}notes/">{icon("pen")}<span>یادداشت‌ها</span></a>
+  <a href="{root}review/">{icon("review")}<span>مرور پرسش‌ها</span></a></nav>
+{body}
+{footer_fa(root)}
+<script src="{root}assets/site.js" defer></script>
+<script src="{root}assets/notes.js" defer></script>
+<script src="{root}assets/learn.js" defer></script>
+<script src="{root}assets/ai-config.js" defer></script>
+<script src="{root}assets/account.js" defer></script>
+<script src="{root}assets/ai.js" defer></script>
+</body>
+</html>
+"""
+
+
+def footer_fa(root):
+    return f"""<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="{root}fa/">{LOGO}<span><b>{FA_SITE}</b></span></a>
+      <p>راهنمایی جامع برای معرفت، شواهد و تفکر نقادانه؛ همراه با نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی.</p>
+      <p>آثار هنری در مالکیت عمومی‌اند و از ویکی‌انبار گرفته شده‌اند (<a href="{root}credits.html">منابع و مجوزها</a>). متن فصل‌ها و نسخهٔ صوتی فعلاً انگلیسی‌اند.</p>
+    </div>
+    <div><h3>مطالعه</h3><ul>
+      <li><a href="#course">معرفی دوره</a></li>
+      <li><a href="{root}guide/">فهرست راهنمای انگلیسی</a></li>
+      <li><a href="{root}guide/01-what-is-epistemology.html">شروع از فصل ۱</a></li>
+      <li><a href="{root}guide/17-glossary.html">واژه‌نامهٔ انگلیسی</a></li>
+      <li><a href="{root}guide/{EPUB_NAME}" download>دانلود راهنما با قالب EPUB</a></li></ul></div>
+    <div><h3>کاوش</h3><ul>
+      <li><a href="{root}map/?lang=fa">نقشهٔ مفاهیم</a></li>
+      <li><a href="{root}concepts/?lang=fa">هر ۱۳۵ مفهوم به فارسی</a></li>
+      <li><a href="{root}guide/audio/">نسخهٔ صوتی انگلیسی</a></li>
+      <li><a href="{root}account/">مطالعهٔ من و ورود به حساب</a></li>
+      <li><a href="{root}notes/">یادداشت‌ها و نشانه‌گذاری‌ها</a></li>
+      <li><a href="{root}review/">مرور پرسش‌ها</a></li>
+      <li><a href="{REPO}">کد منبع در گیت‌هاب</a></li></ul></div>
+  </div>
+</footer>"""
+
+
 def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=None, facts=None, actions=None, extra="",
-         title_html=None):
+         title_html=None, image_alt=None, plate_html=None):
     parts = [f'<div class="kicker">{kicker}</div>' if kicker else "",
              title_html or f"<h1>{title}</h1>",
              f'<p class="dek">{dek}</p>' if dek else "",
@@ -440,8 +589,8 @@ def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=Non
              extra,
              ('<div class="facts">' + "".join(f"<span>{f}</span>" for f in facts) + "</div>") if facts else "",
              ('<div class="actions">' + actions + "</div>") if actions else ""]
-    plate = f'<div class="plate">{art.caption(key)}</div>' if art.has(key) else ""
-    image = art.img(key, root, eager=True) if art.has(key) else ""
+    plate = f'<div class="plate">{plate_html if plate_html is not None else art.caption(key)}</div>' if art.has(key) else ""
+    image = art.img(key, root, eager=True, alt=image_alt) if art.has(key) else ""
     return (f'<header class="hero {cls}" style="--art:{art.color(key)};--focus:{art.focus(key)}">{image}'
             f'<div class="hero-in">{"".join(parts)}{plate}</div></header>')
 
@@ -455,9 +604,9 @@ def label(art, key):
             f'<p><cite>{art.caption(key)}{place}.</cite> {esc(i["note"])}</p></div>')
 
 
-def tile(art, key, root, href, kicker, title, sub="", cls="tile"):
+def tile(art, key, root, href, kicker, title, sub="", cls="tile", image_alt=None):
     return (f'<a class="{cls}" href="{href}" style="background:{art.color(key)}">'
-            f'{art.img(key, root, sizes="(max-width:700px) 100vw, 50vw", cls="")}'
+            f'{art.img(key, root, sizes="(max-width:700px) 100vw, 50vw", cls="", alt=image_alt)}'
             f'<span class="kicker">{kicker}</span><b>{title}</b>{f"<span class=sub>{sub}</span>" if sub else ""}</a>')
 
 
@@ -833,7 +982,8 @@ def build_concepts(C, chapters, md, art, pages):
                      "objections and replies, common confusions, and a question to check yourself.",
                 actions=f'{switch}<a class="btn" href="../map/">{icon("map")} Open the map</a><a class="btn" href="root.html">Start at the root</a>')
     body = (f'{head}{label(art, "elephant")}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px">'
-            f'<div class="filter"><input id="cfilter" type="search" placeholder="Filter concepts, thinkers, terms…" aria-label="Filter concepts"></div>'
+            f'<div class="filter"><input id="cfilter" name="concept-filter" type="search" autocomplete="off" '
+            f'placeholder="Filter concepts, thinkers, terms…" aria-label="Filter concepts"></div>'
             f'{"".join(blocks)}</main>')
     pages.append((ROOT / "concepts" / "index.html", root, "All concepts",
                   "Every concept in the epistemology map as a readable page, in English and Persian.", body, "concepts", "elephant"))
@@ -851,12 +1001,50 @@ def chapter_card(art, ch, root):
             f'<div class="body"><h4>{esc(ch.title)}</h4><p>{esc(blurb)}</p><div class="meta">{meta}</div></div></a>')
 
 
+def fa_digits(value):
+    return str(value).translate(str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹"))
+
+
+def fa_duration(seconds):
+    minutes = int(round(seconds / 60))
+    hours, minutes = divmod(minutes, 60)
+    if hours and minutes:
+        return f"{fa_digits(hours)} ساعت و {fa_digits(minutes)} دقیقه"
+    if hours:
+        return f"{fa_digits(hours)} ساعت"
+    return f"{fa_digits(minutes)} دقیقه"
+
+
+def chapter_card_fa(art, ch, root):
+    title, blurb = FA_CHAPTERS[ch.num]
+    label = f"فصل {fa_digits(ch.num)}" if ch.num <= 16 else "پیوست"
+    meta = f'<span>{icon("clock")} {fa_digits(ch.minutes)} دقیقه مطالعه</span>'
+    if ch.track:
+        meta += f'<span>{icon("phones")} {fa_duration(ch.track["duration"])} صوت</span>'
+    meta += '<span class="langnote" lang="en" dir="ltr">EN</span>'
+    return (f'<a class="card" href="{root}guide/{ch.href}" hreflang="en"><div class="pic" '
+            f'style="--art:{art.color(ch.art)};--focus:{art.focus(ch.art)}">'
+            f'{art.img(ch.art, root, sizes="(max-width:600px) 100vw, 320px", cls="", alt=FA_ART_ALT[ch.art])}<span class="num">{label}</span></div>'
+            f'<div class="body"><h4>{esc(title)}</h4><p>{esc(blurb)}</p><div class="meta">{meta}</div></div></a>')
+
+
 def contents_parts(art, chapters, root):
     out = []
     for roman, name, nums in PARTS:
         cards = "".join(chapter_card(art, chapters[n], root) for n in nums)
         out.append(f'<section class="part"><header><span class="kicker">{"Part " + roman if roman else "Also"}</span>'
                    f'<h3>{esc(name)}</h3></header><div class="grid">{cards}</div></section>')
+    return "".join(out)
+
+
+def contents_parts_fa(art, chapters, root):
+    out = []
+    part_numbers = {"I": "۱", "II": "۲", "III": "۳", "IV": "۴", "V": "۵"}
+    for roman, _name, nums in PARTS:
+        cards = "".join(chapter_card_fa(art, chapters[n], root) for n in nums)
+        kicker = f"بخش {part_numbers[roman]}" if roman else "همچنین"
+        out.append(f'<section class="part"><header><span class="kicker">{kicker}</span>'
+                   f'<h3>{FA_PART_NAMES[roman]}</h3></header><div class="grid">{cards}</div></section>')
     return "".join(out)
 
 
@@ -950,6 +1138,66 @@ def build_home(art, chapters, md, total_audio, n_concepts):
             f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">Learning paths</span>'
             f'<h2>Short on time?</h2></div><p>Follow a path through the chapters that fits your goal.</p></div><div class="paths">{"".join(paths)}</div></div></section>'
             f'</main>')
+    return body
+
+
+def build_home_fa(art, chapters, total_audio, n_concepts):
+    root = "../"
+    fa_total_audio = "۱۴ ساعت و نیم"
+    paths = [
+        ("مسیر فشردهٔ تفکر نقادانه", "حدود ۱۰ ساعت", [1, 3, 4, 9, 14, 15, 16]),
+        ("فلسفهٔ معرفت", "۸ فصل منتخب", [1, 2, 5, 6, 7, 8, 11, 13]),
+        ("علم، داده و شواهد", "۶ فصل منتخب", [3, 9, 10, 12, 14, 16]),
+        ("فهم مناظره‌های عمومی", "۶ فصل منتخب", [4, 11, 12, 14, 15, 16]),
+    ]
+    path_cards = []
+    for name, note, nums in paths:
+        chips = "".join(f'<li><a href="{root}guide/{chapters[n].href}" hreflang="en" '
+                        f'title="{attr(FA_CHAPTERS[n][0])}">{fa_digits(n)}</a></li>' for n in nums)
+        path_cards.append(f'<div class="path"><h4>{name}</h4><p>{note}</p><ol>{chips}</ol></div>')
+
+    head = hero(
+        art, "home", root,
+        kicker="یک دورهٔ رایگان در نظریهٔ معرفت",
+        title="از کجا می‌دانید؟",
+        lede=(f"<b>{FA_SITE}</b> راهنمایی جامع برای معرفت، شواهد و تفکر نقادانه است: "
+              f"شانزده فصل مصور، نقشهٔ دوزبانه‌ای با {fa_digits(n_concepts)} مفهوم و {fa_total_audio} نسخهٔ صوتی."),
+        facts=[
+            f"{icon('book')} ۱۶ فصل",
+            f"{icon('map')} {fa_digits(n_concepts)} مفهوم · انگلیسی و فارسی",
+            f"{icon('phones')} {fa_total_audio} نسخهٔ صوتی",
+        ],
+        actions=(f'<a class="btn primary" href="#course">معرفی فصل‌ها {icon("back")}</a>'
+                 f'<a class="btn" href="{root}map/?lang=fa">{icon("map")} کاوش نقشه</a>'
+                 f'<a class="btn" href="{root}guide/audio/">{icon("phones")} شنیدن</a>'),
+        image_alt=FA_ART_ALT["home"],
+        plate_html="کاسپار داوید فریدریش، <i>سرگردان بر فراز دریای مه</i>، حدود ۱۸۱۸",
+    )
+    doors = (f'<div class="doors">'
+             + tile(art, "guide", root, "#course", "بخوانید", "راهنمای جامع",
+                    "شانزده فصل، از مسئلهٔ گتیه تا قضیهٔ بیز، با مثال‌های حل‌شده و خودآزمایی.", cls="tile door", image_alt=FA_ART_ALT["guide"])
+             + tile(art, "map", root, f"{root}map/?lang=fa", "کاوش کنید", "نقشهٔ مفاهیم",
+                    f"{fa_digits(n_concepts)} ایده در نقشه‌ای زنده که می‌توانید آن را جابه‌جا و باز کنید؛ هر مفهوم مدخلی کامل به انگلیسی و فارسی دارد.", cls="tile door", image_alt=FA_ART_ALT["map"])
+             + tile(art, "audio", root, f"{root}guide/audio/", "بشنوید", "نسخهٔ صوتی",
+                    f"روایت انگلیسی همهٔ فصل‌ها، در مجموع {fa_total_audio}، با نشانگرهای بخش و آزمون پایان هر فصل.", cls="tile door", image_alt=FA_ART_ALT["audio"])
+             + "</div>")
+    stats = (f'<div class="statline"><div><b>۱۶</b><span>فصل در پنج بخش</span></div>'
+             f'<div><b>{fa_digits(n_concepts)}</b><span>مفهوم به انگلیسی و فارسی</span></div>'
+             f'<div><b>۱۴٫۵</b><span>ساعت روایت صوتی</span></div>'
+             f'<div><b>۲۰۰</b><span>اصطلاح در واژه‌نامه</span></div></div>')
+    body = (f'{head}<main id="main">'
+            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">سه راه برای ورود</span>'
+            f'<h2>بخوانید، روی نقشه ببینید، یا بشنوید</h2></div><p>همان ایده‌ها، در سه قالب. از هر جا که برایتان مناسب‌تر است آغاز کنید؛ همه‌چیز به هم پیوند دارد.</p></div>{doors}'
+            f'<div style="margin-top:28px">{stats}</div></div></section>'
+            f'<section class="section alt" id="course"><div class="wrap"><div class="section-head"><div><span class="kicker">دوره</span>'
+            f'<h2>شانزده فصل، هریک همراه با یک شاهکار</h2></div><p>هر فصل با نقاشی یا عکسی آغاز می‌شود که پرسش آن را مجسم می‌کند؛ از <i>مکتب آتن</i> رافائل تا عکس <i>طلوع زمین</i>.</p></div>'
+            f'<div class="translation-note"><b>یادداشت زبان</b><span>عنوان‌ها و معرفی‌ها در این صفحه فارسی‌اند؛ متن کامل فصل‌ها فعلاً به انگلیسی باز می‌شود.</span></div>'
+            f'{contents_parts_fa(art, chapters, root)}</div></section>'
+            f'<section class="quoteband"><img src="{art.src("cave", root, 2000)}" alt="غار افلاطون، اثر یان سانردام" loading="lazy">'
+            f'<div class="wrap"><blockquote><p>«وظیفهٔ کسی که نوشته‌های دانشمندان را بررسی می‌کند، اگر هدفش یافتن حقیقت است، این است که خود را دشمن هرآنچه می‌خواند بسازد.»</p><footer>— ابن هیثم، <i>الشکوک علی بطلمیوس</i>، حدود ۱۰۲۵ میلادی</footer></blockquote></div></section>'
+            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">مسیرهای یادگیری</span>'
+            f'<h2>وقت کمی دارید؟</h2></div><p>مسیری را در میان فصل‌ها انتخاب کنید که با هدفتان جور باشد.</p></div>'
+            f'<div class="paths">{"".join(path_cards)}</div></div></section></main>')
     return body
 
 
@@ -1240,7 +1488,7 @@ MANIFEST = {
 
 def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
-    paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
+    paths = ["", "index.html", "fa/", "fa/index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
              "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
              "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js", "notes/", "review/", "account/",
              "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
@@ -1451,6 +1699,7 @@ def main():
         build_chapter(ch, chapters, md, art, later, C)
     guide_index = build_guide_index(art, chapters, md, total_label)
     home = build_home(art, chapters, md, total_label, len(C.N))
+    home_fa = build_home_fa(art, chapters, total_label, len(C.N))
     svgs = render_mermaid(md)
     for path, page, root, ch, desc in later:
         page = place_diagrams(page, md, svgs)
@@ -1460,7 +1709,15 @@ def main():
                                       body=place_diagrams(guide_index, md, svgs), current="guide",
                                       hero_img=(art.src("guide", "../"), art.srcset("guide", "../")), bar="clear"))
     write(ROOT / "index.html", shell(root="", title=SITE, desc="A free, complete guide to epistemology and critical thinking: illustrated chapters, a bilingual concept map, and a narrated audio edition.",
-                                     body=home, hero_img=(art.src("home", ""), art.srcset("home", "")), bar="clear"))
+                                     body=home, hero_img=(art.src("home", ""), art.srcset("home", "")),
+                                     extra_head='<link rel="alternate" hreflang="fa" href="fa/">', bar="clear"))
+    write(ROOT / "fa" / "index.html", shell_fa(
+        title=FA_SITE,
+        desc="راهنمای رایگان معرفت‌شناسی و تفکر نقادانه، همراه با نقشهٔ مفاهیم به زبان فارسی.",
+        body=home_fa,
+        hero_img=(art.src("home", "../"), art.srcset("home", "../")),
+        bar="clear",
+    ))
 
     print("concepts")
     pages = []
