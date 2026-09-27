@@ -783,6 +783,39 @@ html[data-focus] .chat{top:10px}
 @media(min-width:1180px){body.chat-open .page,body.chat-open .cpage{margin-right:440px;margin-left:0}}
 @media print{.chat{display:none!important}}
 
+
+/* chat, second pass: readable answers, Persian, follow-ups, phones */
+.chat .m{font-family:'Space Grotesk','Vazirmatn',system-ui,sans-serif;font-size:.97rem;line-height:1.6}
+.chat .m :dir(rtl),.chat .m[dir="rtl"]{font-family:'Vazirmatn','Space Grotesk',system-ui,sans-serif;line-height:1.95}
+.chat .m ul:dir(rtl),.chat .m ol:dir(rtl){padding-left:0;padding-right:1.3em}
+.chat .m blockquote:dir(rtl){border-left:0;border-right:3px solid var(--accent);padding-left:0;padding-right:10px}
+.chat .m.a{max-width:100%;width:100%;padding:2px 2px 4px;background:none;border:0;border-radius:0}
+.chat .m.u{max-width:88%;border-radius:16px 16px 4px 16px;background:var(--accent-wash)}
+.chat .m.u blockquote{font-size:.88rem;opacity:.85}
+.chat .m .acts{margin-top:6px}
+.chat .follow{display:flex;gap:6px;overflow-x:auto;margin:10px -2px 0;padding:0 2px 4px;scrollbar-width:none}
+.chat .follow::-webkit-scrollbar{display:none}
+.chat .follow button{flex:none;height:32px;padding:0 12px;border:1px solid var(--rule-2);border-radius:999px;background:var(--surface);color:var(--ink);
+  font:500 .82rem 'Space Grotesk','Vazirmatn',sans-serif;cursor:pointer;white-space:nowrap}
+.chat .follow button:hover{border-color:var(--accent)}
+.chat .follow button[data-act="retry"]{border-color:var(--accent);color:var(--accent)}
+.chat footer{align-items:center;flex-wrap:wrap}
+.chat .depth{display:inline-flex;padding:2px;border:1px solid var(--rule);border-radius:999px}
+.chat .depth[hidden]{display:none}
+.chat .depth button{height:24px;padding:0 10px;border:0;border-radius:999px;background:none;color:var(--dim);font:600 .72rem var(--sans);cursor:pointer;text-decoration:none}
+.chat .depth button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chat .eng{flex-basis:100%;order:3;opacity:.8}
+.chat textarea{font-size:16px}
+@media(max-width:600px){
+  .chat header{padding:16px 10px 8px 14px}
+  .chat header .kicker{display:none}
+  .chat header b{font-size:1.1rem}
+  .chat header select{height:32px;font-size:16px;max-width:9.5em}
+  .chat .msgs{padding:12px 14px}
+  .chat .setup select,.chat .setup input{font-size:16px}
+  .chat .quote{margin-bottom:6px}
+}
+
 @media print{.bar,.dock,.listen,.side,.pager,.foot,.hear,.mini-toc,.readbar,.rpanel,.toast,.leftchip{display:none!important}.hero{min-height:0;color:#000;background:none}.hero::after,.hero img{display:none}
   .hero-in{padding:0}.prose{font-size:11pt}}
 

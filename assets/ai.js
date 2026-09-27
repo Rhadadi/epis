@@ -104,12 +104,16 @@
       "Be concise: short paragraphs, plain words, and a concrete example when it helps. Use Markdown lightly (bold, short lists).",
       "When you draw on a section of the page, name it in double square brackets, exactly as titled, like [[The Gettier problem]].",
       "Reply in the language the reader writes in; if they write in Persian, answer in Persian.",
+      settings().depth === "deep"
+        ? "Think carefully before answering: test the claim against objections and counter-examples, separate what the text says from your own view, and say how confident you are. Stay focused; length is fine when it earns its place."
+        : "Keep answers short, about 150 words or fewer, unless the reader asks for more.",
       MODE_RULES[mode] || ""].join(" ").trim();
   }
 
   /* ------------------------------------------------------------ chats kept per page */
   function chats() { return json("epis-chats", {}); }
-  function chat() { return chats()[pageKey] || { mode: "explain", messages: [] }; }
+  var live = null; // the conversation while an answer is streaming in
+  function chat() { return live || chats()[pageKey] || { mode: "explain", messages: [] }; }
   function saveChat(c) {
     var all = chats();
     c.updated = Date.now();
@@ -129,25 +133,25 @@
       .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>")
       .replace(/\[\[([^\]]+)\]\]/g, function (m, t) {
         var id = headIds[t.trim().toLowerCase()];
-        return id ? '<a class="cite" href="#' + id + '">' + t + "</a>" : '<span class="cite">' + t + "</span>";
+        return id ? '<a class="cite" href="#' + id + '">' + t + "</a>" : t;
       })
       .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
   }
   function md(text) {
     var lines = esc(text).split("\n"), out = [], list = null, code = null, para = [];
-    function flush() { if (para.length) { out.push("<p>" + inline(para.join("<br>")) + "</p>"); para = []; } }
+    function flush() { if (para.length) { out.push('<p dir="auto">' + inline(para.join("<br>")) + "</p>"); para = []; } }
     function endList() { if (list) { out.push("</" + list + ">"); list = null; } }
     lines.forEach(function (l) {
       if (code !== null) { if (/^```/.test(l)) { out.push("<pre><code>" + code.join("\n") + "</code></pre>"); code = null; } else code.push(l); return; }
       if (/^```/.test(l)) { flush(); endList(); code = []; return; }
       var h = l.match(/^(#{1,4})\s+(.*)/), ul = l.match(/^\s*[-*•]\s+(.*)/), ol = l.match(/^\s*\d+[.)]\s+(.*)/);
-      if (h) { flush(); endList(); out.push("<h4>" + inline(h[2]) + "</h4>"); }
+      if (h) { flush(); endList(); out.push('<h4 dir="auto">' + inline(h[2]) + "</h4>"); }
       else if (ul || ol) {
         flush();
         var kind = ul ? "ul" : "ol";
-        if (list !== kind) { endList(); out.push("<" + kind + ">"); list = kind; }
-        out.push("<li>" + inline((ul || ol)[1]) + "</li>");
-      } else if (/^&gt;\s?/.test(l)) { flush(); endList(); out.push("<blockquote>" + inline(l.replace(/^&gt;\s?/, "")) + "</blockquote>"); }
+        if (list !== kind) { endList(); out.push("<" + kind + ' dir="auto">'); list = kind; }
+        out.push('<li dir="auto">' + inline((ul || ol)[1]) + "</li>");
+      } else if (/^&gt;\s?/.test(l)) { flush(); endList(); out.push('<blockquote dir="auto">' + inline(l.replace(/^&gt;\s?/, "")) + "</blockquote>"); }
       else if (!l.trim()) { flush(); endList(); }
       else { endList(); para.push(l); }
     });
@@ -192,7 +196,7 @@
       messages: messages.map(function (m) { return { role: m.role, content: m.content }; }),
       cache_control: { type: "ephemeral" }
     };
-    if (eng.model !== "claude-haiku-4-5") body.output_config = { effort: "low" };
+    if (eng.model !== "claude-haiku-4-5") body.output_config = { effort: settings().depth === "deep" ? "high" : "low" };
     var headers = { "content-type": "application/json", "x-api-key": eng.key, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" };
     if (withFallbacks && eng.model === "claude-opus-5") { body.fallbacks = "default"; headers["anthropic-beta"] = "server-side-fallback-2026-07-01"; }
     var stop = "";
@@ -262,7 +266,9 @@
       '<div class="msgs" aria-live="polite"></div>' +
       '<form><div class="quote" hidden></div><textarea rows="2" placeholder="Ask about this page…" aria-label="Your question"></textarea>' +
       '<button type="submit" class="send" aria-label="Send"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>' +
-      '<footer><span class="eng"></span><span><button type="button" data-act="new">New chat</button> · <a href="' + ROOT + 'account/#ai">Settings</a></span></footer>';
+      '<footer><span class="eng"></span><span class="depth" role="group" aria-label="How much thinking">' +
+      '<button type="button" data-depth="quick">Quick</button><button type="button" data-depth="deep">Thorough</button></span>' +
+      '<span><button type="button" data-act="new">New</button> · <a href="' + ROOT + 'account/#ai">Settings</a></span></footer>';
     document.body.appendChild(panel);
     panel.querySelector("header b").textContent = pageTitle();
     var sel = panel.querySelector("select");
@@ -281,6 +287,8 @@
     ta.addEventListener("input", function () { ta.style.height = "auto"; ta.style.height = Math.min(160, ta.scrollHeight) + "px"; });
     panel.querySelector("form").addEventListener("submit", function (e) { e.preventDefault(); if (abort) { abort.abort(); } else submit(); });
     panel.addEventListener("click", function (e) {
+      var d = e.target.closest("[data-depth]");
+      if (d) { var st = settings(); st.depth = d.getAttribute("data-depth") === "deep" ? "deep" : "quick"; saveSettings(st); paintFooter(); return; }
       var b = e.target.closest("[data-act]");
       if (!b) return;
       var act = b.getAttribute("data-act"), i = +b.getAttribute("data-i");
@@ -290,6 +298,14 @@
       else if (act === "copy") { navigator.clipboard && navigator.clipboard.writeText(c.messages[i].content); b.textContent = "Copied"; }
       else if (act === "save") { saveToNotes(c.messages[i - 1], c.messages[i]); b.textContent = "Saved"; }
       else if (act === "unquote") { pendingQuote = ""; paint(); }
+      else if (act === "follow") { ta.value = b.getAttribute("data-text"); submit(); }
+      else if (act === "retry") {
+        var cc = chat(), lastUser = null;
+        while (cc.messages.length && cc.messages[cc.messages.length - 1].role === "assistant") cc.messages.pop();
+        if (cc.messages.length) lastUser = cc.messages.pop();
+        saveChat(cc);
+        if (lastUser) { ta.value = lastUser.content; submit(); }
+      }
       else if (act === "setup") {
         var f = panel.querySelector(".setup"), prov = f.querySelector("[name=prov]").value, key = f.querySelector("[name=key]").value.trim();
         var model = f.querySelector("[name=model]").value.trim(), msg = f.querySelector(".msg");
@@ -310,7 +326,21 @@
     document.body.classList.add("chat-open");
     if (launcher) launcher.setAttribute("aria-expanded", "true");
     paint();
-    setTimeout(function () { panel.querySelector("textarea").focus(); }, 50);
+    fitKeyboard();
+    // On phones, don't pop the keyboard up over the answer; tap the box to type.
+    if (!matchMedia("(pointer: coarse)").matches) setTimeout(function () { panel.querySelector("textarea").focus(); }, 50);
+  }
+  // iPhone and Android keyboards cover fixed panels; lift the sheet above the keyboard instead.
+  function fitKeyboard() {
+    var vv = window.visualViewport;
+    if (!panel || !vv || window.innerWidth > 600) { if (panel) { panel.style.bottom = ""; panel.style.maxHeight = ""; } return; }
+    var covered = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+    panel.style.bottom = covered ? covered + "px" : "";
+    panel.style.maxHeight = covered ? (vv.height - 12) + "px" : "";
+  }
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", fitKeyboard);
+    window.visualViewport.addEventListener("scroll", fitKeyboard);
   }
   function close() {
     if (!panel) return;
@@ -318,11 +348,46 @@
     document.body.classList.remove("chat-open");
     if (launcher) { launcher.setAttribute("aria-expanded", "false"); launcher.focus(); }
   }
+  var FOLLOW = [["Simpler, please", "Explain that more simply, with an everyday example."],
+    ["An example", "Give me a concrete, real-life example."],
+    ["Strongest objection", "What is the strongest objection to this, and the best reply?"],
+    ["Quiz me", "Ask me one question to check I understood this."],
+    ["به فارسی", "این را به فارسی توضیح بده."]];
+  function paintFooter() {
+    var eng = engine(), dep = panel.querySelector(".depth"), deep = settings().depth === "deep";
+    panel.querySelector(".eng").textContent = eng.label;
+    dep.hidden = !(eng.kind === "anthropic" && eng.model !== "claude-haiku-4-5");
+    dep.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", (b.getAttribute("data-depth") === "deep") === deep ? "true" : "false"); });
+  }
+  function msgHTML(m, i, isLast, busy) {
+    if (m.role === "user") return '<div class="m u" dir="auto">' + md(m.content) + "</div>";
+    if (m.handoff) return '<div class="m a">' + handoffHTML(m.handoff) + "</div>";
+    var html = '<div class="m a">' + (m.content ? md(m.content) : '<span class="typing" aria-label="Thinking"><i></i><i></i><i></i></span>');
+    if (m.content && !(isLast && busy)) {
+      html += '<div class="acts"><button type="button" data-act="copy" data-i="' + i + '">Copy</button><button type="button" data-act="save" data-i="' + i + '">Save to notebook</button></div>';
+      if (isLast) {
+        html += '<div class="follow">' + (m.error ? '<button type="button" data-act="retry">Try again</button>' : "") +
+          FOLLOW.map(function (f) { return '<button type="button" data-act="follow" data-text="' + esc(f[1]) + '">' + esc(f[0]) + "</button>"; }).join("") + "</div>";
+      }
+    }
+    return html + "</div>";
+  }
+  function nearBottom(box) { return box.scrollHeight - box.scrollTop - box.clientHeight < 90; }
+  function updateLast() {
+    // While an answer streams in, redraw only that message, and follow it only if you are at the bottom.
+    var box = panel.querySelector(".msgs"), c = chat(), els = box.querySelectorAll(".m");
+    if (!els.length) return paint();
+    var stick = nearBottom(box), m = c.messages[c.messages.length - 1];
+    var tmp = document.createElement("div");
+    tmp.innerHTML = msgHTML(m, c.messages.length - 1, true, !!abort);
+    els[els.length - 1].replaceWith(tmp.firstChild);
+    if (stick) box.scrollTop = box.scrollHeight;
+  }
   function paint() {
     if (!panel || panel.hidden) return;
     var c = chat(), eng = engine(), box = panel.querySelector(".msgs");
     panel.querySelector("select").value = c.mode || "explain";
-    panel.querySelector(".eng").textContent = eng.label;
+    paintFooter();
     panel.querySelector("textarea").placeholder = MODES[c.mode || "explain"].hint + "…";
     var q = panel.querySelector(".quote");
     q.hidden = !pendingQuote;
@@ -350,12 +415,7 @@
         '<div class="sugg">' + suggestions().map(function (s) { return '<button type="button" data-act="suggest">' + esc(s) + "</button>"; }).join("") + "</div></div>";
       return;
     }
-    box.innerHTML = c.messages.map(function (m, i) {
-      if (m.role === "user") return '<div class="m u">' + md(m.content) + "</div>";
-      if (m.handoff) return '<div class="m a">' + handoffHTML(m.handoff) + "</div>";
-      return '<div class="m a">' + (m.content ? md(m.content) : '<span class="typing"><i></i><i></i><i></i></span>') +
-        (m.content ? '<div class="acts"><button type="button" data-act="copy" data-i="' + i + '">Copy</button><button type="button" data-act="save" data-i="' + i + '">Save to notebook</button></div>' : "") + "</div>";
-    }).join("");
+    box.innerHTML = c.messages.map(function (m, i) { return msgHTML(m, i, i === c.messages.length - 1, !!abort); }).join("");
     box.scrollTop = box.scrollHeight;
   }
   function saveToNotes(q, a) {
@@ -397,29 +457,33 @@
     pendingQuote = "";
     var reply = { role: "assistant", content: "", t: Date.now() };
     c.messages.push(reply);
-    saveChat(c); paint();
+    saveChat(c);
+    abort = new AbortController();
+    live = c;
+    paint();
     var sec = currentSection();
     var context = "Page: " + pageTitle() + " (" + location.href.split("#")[0] + ")\n\n" +
       (eng.full ? fullText() : "Section: " + sec.title + "\n\n" + sec.text);
-    var history = c.messages.slice(0, -1).filter(function (m) { return !m.handoff; }).slice(-16);
-    abort = new AbortController();
+    var history = c.messages.slice(0, -1).filter(function (m) { return !m.handoff && !m.error; }).slice(-16);
     panel.classList.add("busy");
     var last = 0;
     var onText = function (t) {
       reply.content += t;
-      if (Date.now() - last > 60) { last = Date.now(); paint(); }
+      if (Date.now() - last > 80) { last = Date.now(); updateLast(); }
     };
     var ask = eng.kind === "anthropic" ? askAnthropic(eng, systemPrompt(c.mode), context, history, onText, abort.signal, true)
       : askOpenAI(eng, systemPrompt(c.mode), context, history, onText, abort.signal);
     ask.catch(function (e) {
       if (e.name === "AbortError") { reply.content += reply.content ? "\n\n*(stopped)*" : "*(stopped)*"; return; }
+      reply.error = true;
       reply.content += (reply.content ? "\n\n" : "") + "**Couldn't get an answer.** " +
         (e instanceof TypeError ? "The service could not be reached (check your connection, or whether the service allows requests from a web page)." : e.message);
     }).then(function () {
       abort = null;
+      live = null;
       panel.classList.remove("busy");
       if (!reply.content) reply.content = "*(no answer)*";
-      saveChat(c); paint();
+      saveChat(c); updateLast();
     });
   }
 
@@ -428,10 +492,9 @@
     explain: function (text) {
       pendingQuote = text.trim();
       open();
-      var ta = panel.querySelector("textarea");
-      ta.value = "Explain this in simple terms and say why it matters here.";
-      ta.focus();
-      ta.select();
+      if (abort) return;
+      panel.querySelector("textarea").value = "Explain this in simple terms and say why it matters here.";
+      submit();
     }
   };
   if (launcher) launcher.addEventListener("click", function () { if (panel && !panel.hidden) close(); else open(); });
