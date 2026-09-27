@@ -37,6 +37,9 @@ It writes:
 - `guide/audio/index.html` and `guide/audio/about.html`: the player and how the audio was made.
 - `concepts/index.html` and `concepts/<id>.html`: the concept index and one page per concept (English and Persian).
 - `credits.html`, `404.html` and `.nojekyll`.
+- `guide/mastering-epistemology.epub`: the whole guide as an EPUB for e-readers.
+- `manifest.webmanifest` and `offline.json`: the app manifest, and the list of files that
+  "Save the whole guide for offline reading" fetches.
 - `assets/art/<key>-{640,1200,2000}.jpg`: the artwork, cropped and resized.
 - `assets/diagrams/<hash>-{light,dark}.svg`: rendered diagrams.
 
@@ -80,3 +83,15 @@ that concept in view.
 The fonts are self-hosted from `assets/fonts/` (from the `@fontsource`
 packages), all under the SIL Open Font License; the licences are in
 `assets/fonts/licenses/`.
+
+## Reading settings, focus mode and offline reading
+
+All of this runs in the reader's browser and is stored there (`localStorage`):
+
+- `assets/site.js` builds the reading-settings panel (the **Aa** button: text size,
+  line spacing, line length, typeface, theme), focus mode (**F**, or the button next
+  to **Aa**; **Esc** leaves it), the reading-progress bar, and the "Continue reading"
+  prompts on chapter pages, the start page and the contents page.
+- `sw.js` (hand-written, at the site root) is the service worker. Pages, styles and
+  scripts come from the network first and from the cache when offline; images and
+  fonts come from the cache first; audio is never cached.

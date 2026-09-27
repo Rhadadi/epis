@@ -20,7 +20,10 @@ and [epis.duckdns.org](https://epis.duckdns.org) (self-hosted).
 
 Other features:
 
-- Light and dark themes that follow the system setting, with a manual toggle
+- Reading settings (text size, spacing, line length, typeface, light, sepia, dark and black themes)
+  and a distraction-free focus mode (press F on a chapter)
+- Remembers where you stopped reading, and can save the whole guide for offline reading
+- An [EPUB edition](guide/mastering-epistemology.epub) for e-readers
 - Responsive layout for desktop, tablet and phone
 - Keyboard-friendly controls and reduced-motion support
 - Self-hosted fonts and no third-party requests, so the site also works offline

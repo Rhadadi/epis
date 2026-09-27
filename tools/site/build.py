@@ -30,6 +30,7 @@ import os
 import re
 import subprocess
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 from markdown_it import MarkdownIt
@@ -42,6 +43,8 @@ ART_DIR = ASSETS / "art"
 DIAGRAMS = ASSETS / "diagrams"
 TOOLS = Path(__file__).resolve().parent
 SITE = "Mastering Epistemology"
+EPUB_NAME = "mastering-epistemology.epub"
+LIVE = "https://rhadadi.github.io/epis/"
 REPO = "https://github.com/Rhadadi/epis"
 
 PARTS = [
@@ -82,6 +85,8 @@ def icon(name, cls="icon"):
         "play": '<path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/>',
         "pin": '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
         "ext": '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+        "focus": '<path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/><path d="M9 9h6M9 12h6M9 15h4"/>',
+        "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
     }
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
@@ -94,10 +99,16 @@ FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect wi
            '<path d="M4.8 16c3.1-5 6.9-7.5 11.2-7.5S24.1 11 27.2 16c-3.1 5-6.9 7.5-11.2 7.5S7.9 21 4.8 16z" fill="none" stroke="#E8EEF1" stroke-width="1.6"/>'
            '<circle cx="16" cy="16" r="4" fill="#F2B84B"/></svg>\n')
 
-BOOT = ('(function(){var d=document.documentElement,p="system";try{p=localStorage.getItem("epistemology-theme")||"system"}catch(e){}'
+BOOT = ('(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};'
+        'var p=g("epistemology-theme")||"system",sh=g("epis-shade")||"";'
         'var k=p==="dark"||(p==="system"&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);'
-        'd.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);'
-        'try{if(localStorage.getItem("epistemology-lang")==="fa")d.setAttribute("data-lang","fa")}catch(e){}})();')
+        'if(sh==="sepia")k=false;if(sh==="black")k=true;'
+        'd.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);if(sh)d.setAttribute("data-shade",sh);'
+        'if(g("epistemology-lang")==="fa")d.setAttribute("data-lang","fa");'
+        'try{var r=JSON.parse(g("epis-reader")||"{}");if(r.scale)d.style.setProperty("--read-scale",r.scale);'
+        'if(r.lead)d.style.setProperty("--read-lead",r.lead);if(r.width)d.setAttribute("data-width",r.width);'
+        'if(r.font)d.setAttribute("data-font",r.font)}catch(e){}'
+        'if(g("epis-focus")==="1"&&/\\/guide\\/\\d\\d-[^\\/.]+(\\.html)?$/.test(location.pathname))d.setAttribute("data-focus","")})();')
 
 
 # ----------------------------------------------------------------------------- data
@@ -330,7 +341,7 @@ def polish(body):
 
 # ----------------------------------------------------------------------------- page shell
 
-def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid"):
+def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False):
     nav = [("guide", f"{root}guide/", "book", "Guide"), ("concepts", f"{root}concepts/", "grid", "Concepts"),
            ("map", f"{root}map/", "map", "Map"), ("audio", f"{root}guide/audio/", "phones", "Listen")]
     here = ' aria-current="page"'
@@ -339,6 +350,10 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
     preload = (f'<link rel="preload" as="image" href="{hero_img[0]}" imagesrcset="{hero_img[1]}" imagesizes="100vw">'
                if hero_img else "")
     full_title = title if title == SITE else f"{title} · {SITE}"
+    reader_btn = ('<button class="tbtn rbtn" id="reader" type="button" aria-label="Reading settings" title="Reading settings (A)" '
+                  'aria-expanded="false" aria-controls="rpanel">Aa</button>') if reader else ""
+    focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="Focus mode" title="Focus mode (F)">'
+                 f'{icon("focus")}</button>') if focus else ""
     return f"""<!doctype html>
 <html lang="en" data-theme="light">
 <head>
@@ -350,6 +365,8 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <meta property="og:title" content="{attr(full_title)}">
 <meta property="og:description" content="{attr(desc)}">
 <link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{root}assets/icon-192.png">
+<link rel="manifest" href="{root}manifest.webmanifest">
 <link rel="stylesheet" href="{root}assets/fonts/fonts.css">
 <link rel="stylesheet" href="{root}assets/site.css">
 {preload}{extra_head}
@@ -360,7 +377,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <header class="bar {bar}">
   <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
   <nav aria-label="Site">{links}</nav>
-  <button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
+  {focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
 </header>
 {body}
 {footer(root)}
@@ -382,7 +399,8 @@ def footer(root):
       <li><a href="{root}guide/">Contents</a></li>
       <li><a href="{root}guide/01-what-is-epistemology.html">Start with chapter 1</a></li>
       <li><a href="{root}guide/17-glossary.html">Glossary</a></li>
-      <li><a href="{root}guide/18-reading-list.html">Reading list and study plan</a></li></ul></div>
+      <li><a href="{root}guide/18-reading-list.html">Reading list and study plan</a></li>
+      <li><a href="{root}guide/{EPUB_NAME}" download>EPUB for e-readers</a></li></ul></div>
     <div><h3>Explore</h3><ul>
       <li><a href="{root}map/">Concept map</a></li>
       <li><a href="{root}concepts/">All 135 concepts</a></li>
@@ -554,6 +572,10 @@ def build_chapter(ch, chapters, md, art, svgs_later):
         dek, cite = md.inline(epigraphs[0][0]), md.inline(epigraphs[0][1])
     head = hero(art, ch.art, root, kicker=kicker, title=esc(ch.title), dek=dek, cite=cite, facts=facts, actions=actions)
 
+    listen_link = (f'<button type="button" data-listen>{icon("phones")} Listen</button>' if ch.track else "")
+    focus_head = (f'<div class="focus-head"><span class="kicker">{kicker}</span><div class="ftitle" role="heading" aria-level="1">{esc(ch.title)}</div>'
+                  f'<div class="fmeta"><span>{ch.minutes} min read</span>{listen_link}'
+                  f'<button type="button" data-focus-toggle>Leave focus mode</button></div></div>')
     prev_ch, next_ch = chapters.get(ch.num - 1), chapters.get(ch.num + 1)
     pager = '<nav class="pager" aria-label="Chapters">'
     pager += (tile(art, prev_ch.art, root, prev_ch.href, f"← Previous · {prev_ch.label}", esc(prev_ch.title)) if prev_ch
@@ -564,7 +586,7 @@ def build_chapter(ch, chapters, md, art, svgs_later):
     page = (f"{head}{label(art, ch.art)}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="In this chapter">'
             f'<span class="kicker">In this chapter</span><ol>{toc}</ol></nav></aside>'
-            f'<article>{listen_card}<details class="mini-toc"><summary>In this chapter</summary><ol>{toc}</ol></details>'
+            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{listen_card}<details class="mini-toc"><summary>In this chapter</summary><ol>{toc}</ol></details>'
             f'<div class="prose">{more_quotes}{body}</div></article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
     svgs_later.append((GUIDE / ch.href, page, root, ch, desc))
@@ -797,7 +819,7 @@ def chapter_card(art, ch, root):
     if ch.track:
         meta += f'<span>{icon("phones")} {minutes_label(ch.track["duration"])}</span>'
     blurb = re.sub(r"\*([^*]+)\*", r"\1", ch.blurb)
-    return (f'<a class="card" href="{root}guide/{ch.href}"><div class="pic" style="--art:{art.color(ch.art)};--focus:{art.focus(ch.art)}">'
+    return (f'<a class="card" href="{root}guide/{ch.href}" data-slug="{ch.slug}"><div class="pic" style="--art:{art.color(ch.art)};--focus:{art.focus(ch.art)}">'
             f'{art.img(ch.art, root, sizes="(max-width:600px) 100vw, 320px", cls="")}<span class="num">{ch.label.upper()}</span></div>'
             f'<div class="body"><h4>{esc(ch.title)}</h4><p>{esc(blurb)}</p><div class="meta">{meta}</div></div></a>')
 
@@ -842,9 +864,10 @@ def build_guide_index(art, chapters, md, total_audio):
                 dek=md.inline(q) if q else None, cite=md.inline(c) if c else None,
                 facts=[f"{icon('book')} 16 chapters", f"{icon('clock')} about 130,000 words", f"{icon('phones')} {total_audio} of audio"],
                 actions=f'<a class="btn primary" href="01-what-is-epistemology.html">Start with chapter 1 {icon("arrow")}</a>'
-                        f'<a class="btn" href="audio/">{icon("phones")} Listen</a>')
+                        f'<a class="btn" href="audio/">{icon("phones")} Listen</a>'
+                        f'<a class="btn" href="{EPUB_NAME}" download>{icon("download")} EPUB</a>')
     body = (f'{head}{label(art, "guide")}'
-            f'<main id="main"><div class="wrap" style="padding-top:34px"><div class="prose" style="max-width:46rem">{intro_html}</div></div>'
+            f'<main id="main"><div class="wrap" style="padding-top:34px"><div id="resume"></div><div class="prose" style="max-width:46rem">{intro_html}</div></div>'
             f'<section class="section" style="padding-top:40px"><div class="wrap">{contents_parts(art, chapters, root)}</div></section>'
             f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">How the ideas connect</span>'
             f'<h2>One question, many branches</h2></div><p>Every chapter answers part of a single question: what should I believe, and how sure should I be?</p></div>'
@@ -888,7 +911,7 @@ def build_home(art, chapters, md, total_audio, n_concepts):
     stats = (f'<div class="statline"><div><b>16</b><span>chapters in five parts</span></div><div><b>{n_concepts}</b><span>concepts, in English and Persian</span></div>'
              f'<div><b>14½</b><span>hours of narration</span></div><div><b>200</b><span>glossary terms</span></div></div>')
     body = (f'{head}<main id="main">'
-            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">Three ways in</span>'
+            f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">Three ways in</span>'
             f'<h2>Read it, map it, or hear it</h2></div><p>The same ideas, three ways. Start wherever suits you; everything is cross-linked.</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
             f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">The course</span>'
@@ -962,7 +985,7 @@ def build_credits(art):
                      f'<a href="{attr(src)}" rel="noopener">Wikimedia Commons</a>.</p></div></div>')
     head = hero(art, "ch18", root, kicker="Credits", title="Artwork, sound and type", cls="band")
     faces = [("Cormorant Garamond", "cormorant-garamond"), ("Source Serif 4", "source-serif-4"), ("Space Grotesk", "space-grotesk"),
-             ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn")]
+             ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Atkinson Hyperlegible", "atkinson-hyperlegible")]
     names = [f'<a href="assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
     fonts = ", ".join(names[:-1]) + " and " + names[-1]
     body = (f'{head}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px"><div class="prose" style="max-width:46rem">'
@@ -986,6 +1009,195 @@ def build_404(art):
                 lede="The page you were looking for isn't on this site. Perhaps it was only ever an appearance.",
                 actions='<a class="btn primary" href="./">Go to the start</a>')
     return f'<main id="main">{head}</main>'
+
+
+# ----------------------------------------------------------------------------- offline, app manifest, EPUB
+
+MANIFEST = {
+    "name": SITE, "short_name": "Epistemology", "description": "A complete guide to knowledge, evidence, and critical thinking.",
+    "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#F6F3EC", "theme_color": "#0A1620",
+    "icons": [{"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+              {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png"},
+              {"src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}],
+}
+
+
+def build_offline_list():
+    """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
+    paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
+             "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
+             "assets/site.css", "assets/site.js", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
+             "manifest.webmanifest", "assets/icon-192.png"]
+    paths += sorted(f"guide/{p.name}" for p in GUIDE.glob("[01][0-9]-*.html"))
+    paths += sorted(f"concepts/{p.name}" for p in (ROOT / "concepts").glob("*.html"))
+    paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
+    paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
+    paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
+    return list(dict.fromkeys(paths))
+
+
+VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+
+class XHTML(HTMLParser):
+    """Re-serialise HTML fragments as well-formed XHTML for the EPUB."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.out, self.stack = [], []
+
+    def handle_starttag(self, tag, attrs):
+        a = "".join(f' {k}="{html.escape(v if v is not None else k, quote=True)}"' for k, v in attrs)
+        if tag in VOID:
+            self.out.append(f"<{tag}{a}/>")
+        else:
+            self.out.append(f"<{tag}{a}>")
+            self.stack.append(tag)
+
+    def handle_startendtag(self, tag, attrs):
+        a = "".join(f' {k}="{html.escape(v if v is not None else k, quote=True)}"' for k, v in attrs)
+        self.out.append(f"<{tag}{a}/>")
+
+    def handle_endtag(self, tag):
+        if tag in VOID or tag not in self.stack:
+            return
+        while self.stack:
+            t = self.stack.pop()
+            self.out.append(f"</{t}>")
+            if t == tag:
+                break
+
+    def handle_data(self, data):
+        self.out.append(html.escape(data, quote=False))
+
+    def result(self):
+        while self.stack:
+            self.out.append(f"</{self.stack.pop()}>")
+        return "".join(self.out)
+
+
+def xhtml(fragment):
+    x = XHTML()
+    x.feed(re.sub(r"<!--.*?-->", "", fragment, flags=re.S))
+    x.close()
+    return x.result()
+
+
+EPUB_CSS = """body{font-family:serif;line-height:1.5;margin:0 4%}
+h1{font-size:1.9em;line-height:1.15;margin:0.4em 0 0.2em}
+h2{font-size:1.4em;margin:1.6em 0 0.5em;page-break-after:avoid}
+h3{font-size:1.15em;margin:1.3em 0 0.4em;page-break-after:avoid}
+p{margin:0 0 0.8em}
+blockquote{margin:1em 1.5em;font-style:italic}
+table{border-collapse:collapse;margin:1em 0;font-size:0.9em}
+th,td{border:1px solid #999;padding:0.3em 0.5em;vertical-align:top;text-align:left}
+.kicker{font-family:sans-serif;font-size:0.75em;letter-spacing:0.12em;text-transform:uppercase;color:#8A4F00}
+figure.cover{margin:0 0 1em;text-align:center}
+figure.cover img{max-width:100%}
+figcaption{font-size:0.8em;color:#555;font-style:italic}
+.note{font-family:sans-serif;font-size:0.85em;border:1px solid #ccc;padding:0.5em 0.8em}
+code{font-family:monospace;font-size:0.9em}
+"""
+
+
+def epub_links(href):
+    """Links inside the EPUB: between chapters stay inside the book, everything else goes to the website."""
+    if re.match(r"^[a-z]+:", href) or href.startswith("#"):
+        return href
+    path, _, frag = href.partition("#")
+    frag = "#" + frag if frag else ""
+    m = re.match(r"^(\d\d-[\w-]+)\.md$", path)
+    if m:
+        return m.group(1) + ".xhtml" + frag
+    if path == "../index.html":
+        return LIVE + "map/" + frag
+    if path == "README.md":
+        return LIVE + "guide/" + frag
+    if path.startswith("audio/"):
+        return LIVE + "guide/" + (path.replace("README.md", "about.html")) + frag
+    if path == "../README.md":
+        return REPO + "#readme"
+    return LIVE + "guide/" + href
+
+
+def build_epub(chapters, art):
+    """The whole guide as an EPUB 3 book, written by hand so no extra tools are needed."""
+    import zipfile
+    md = Markdown()
+    try:
+        modified = subprocess.run(["git", "log", "-1", "--format=%cI", "--", "guide"], cwd=ROOT, capture_output=True,
+                                  text=True, check=True).stdout.strip()
+        stamp = modified[:19] + "Z" if modified else "2026-01-01T00:00:00Z"
+    except (OSError, subprocess.CalledProcessError):
+        stamp = "2026-01-01T00:00:00Z"
+    docs, nav, images = [], [], []
+    for n, ch in sorted(chapters.items()):
+        body, heads = md.render(clean_chapter_markdown(ch.text), epub_links)
+        body = re.sub(r"<!--MERMAID:\w+-->",
+                      f'<p class="note">This diagram is in the web edition: <a href="{LIVE}guide/{ch.href}">{html.escape(ch.title)}</a>.</p>', body)
+        pic = ""
+        if (ART_DIR / f"{ch.art}-640.jpg").exists():
+            images.append(ch.art)
+            cap = art.caption(ch.art) if hasattr(art, "caption") else ""
+            pic = (f'<figure class="cover"><img src="images/{ch.art}.jpg" alt="{attr(art.alt(ch.art))}"/>'
+                   f'{f"<figcaption>{cap}</figcaption>" if cap else ""}</figure>')
+        roman, part = PART_OF.get(ch.num, ("", ""))
+        kicker = f"Part {roman} · {part} · Chapter {ch.num}" if roman else "Appendix"
+        name = f"{ch.slug}.xhtml"
+        page = (f'<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
+                f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
+                f'<head><meta charset="utf-8"/><title>{html.escape(ch.title)}</title><link rel="stylesheet" href="book.css"/></head>'
+                f'<body><section epub:type="chapter">{pic}<p class="kicker">{html.escape(kicker)}</p><h1>{html.escape(ch.title)}</h1>'
+                f'{xhtml(body)}</section></body></html>')
+        docs.append((name, page))
+        subs = "".join(f'<li><a href="{name}#{slug}">{html.escape(plain)}</a></li>' for level, slug, plain, _ in heads if level == 2)
+        nav.append(f'<li><a href="{name}">{html.escape(ch.label + ": " + ch.title if ch.num <= 16 else ch.title)}</a>'
+                   f'{f"<ol>{subs}</ol>" if subs else ""}</li>')
+    cover = ("<?xml version='1.0' encoding='utf-8'?>\n<!DOCTYPE html>\n"
+             '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
+             '<head><meta charset="utf-8"/><title>Cover</title><link rel="stylesheet" href="book.css"/></head>'
+             '<body><section epub:type="cover"><figure class="cover"><img src="images/cover.jpg" alt="Caspar David Friedrich, Wanderer above the Sea of Fog"/></figure>'
+             f'<h1>{SITE}</h1><p>A complete guide to knowledge, evidence, and critical thinking.</p>'
+             f'<p>The illustrated web edition, the concept map and the audio: <a href="{LIVE}">{LIVE}</a></p></section></body></html>')
+    nav_doc = ("<?xml version='1.0' encoding='utf-8'?>\n<!DOCTYPE html>\n"
+               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
+               '<head><meta charset="utf-8"/><title>Contents</title><link rel="stylesheet" href="book.css"/></head>'
+               f'<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>{"".join(nav)}</ol></nav></body></html>')
+    items = ['<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
+             '<item id="css" href="book.css" media-type="text/css"/>',
+             '<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>',
+             '<item id="cover-image" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image"/>']
+    items += [f'<item id="img-{k}" href="images/{k}.jpg" media-type="image/jpeg"/>' for k in images]
+    items += [f'<item id="c{i}" href="{name}" media-type="application/xhtml+xml"/>' for i, (name, _) in enumerate(docs)]
+    spine = '<itemref idref="cover"/><itemref idref="nav"/>' + "".join(f'<itemref idref="c{i}"/>' for i in range(len(docs)))
+    opf = ('<?xml version="1.0" encoding="utf-8"?>\n'
+           '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">'
+           '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
+           '<dc:identifier id="uid">urn:uuid:5f0c7c1e-3f47-4c55-9a0c-6d2a9b1e7e11</dc:identifier>'
+           f'<dc:title>{SITE}</dc:title><dc:creator>{SITE}</dc:creator><dc:language>en</dc:language>'
+           f'<dc:source>{LIVE}</dc:source><meta property="dcterms:modified">{stamp}</meta></metadata>'
+           f'<manifest>{"".join(items)}</manifest><spine>{spine}</spine></package>')
+    container = ('<?xml version="1.0" encoding="utf-8"?>\n<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
+                 '<rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>')
+    out = GUIDE / EPUB_NAME
+    fixed = (2026, 1, 1, 0, 0, 0)
+
+    def add(z, name, data, compress=True):
+        info = zipfile.ZipInfo(name, fixed)
+        info.compress_type = zipfile.ZIP_DEFLATED if compress else zipfile.ZIP_STORED
+        z.writestr(info, data)
+    with zipfile.ZipFile(out, "w") as z:
+        add(z, "mimetype", "application/epub+zip", compress=False)
+        add(z, "META-INF/container.xml", container)
+        add(z, "OEBPS/content.opf", opf)
+        add(z, "OEBPS/nav.xhtml", nav_doc)
+        add(z, "OEBPS/cover.xhtml", cover)
+        add(z, "OEBPS/book.css", EPUB_CSS)
+        add(z, "OEBPS/images/cover.jpg", (ART_DIR / "home-1200.jpg").read_bytes(), compress=False)
+        for k in images:
+            add(z, f"OEBPS/images/{k}.jpg", (ART_DIR / f"{k}-640.jpg").read_bytes(), compress=False)
+        for name, page in docs:
+            add(z, f"OEBPS/{name}", page)
+    return out
 
 
 # ----------------------------------------------------------------------------- main
@@ -1025,7 +1237,7 @@ def main():
     for path, page, root, ch, desc in later:
         page = place_diagrams(page, md, svgs)
         write(path, shell(root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=page,
-                          current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear"))
+                          current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True))
     write(GUIDE / "index.html", shell(root="../", title="The guide", desc="Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
                                       body=place_diagrams(guide_index, md, svgs), current="guide",
                                       hero_img=(art.src("guide", "../"), art.srcset("guide", "../")), bar="clear"))
@@ -1037,7 +1249,7 @@ def main():
     build_concepts(C, chapters, md, art, pages)
     for path, root, title, desc, body, current, key in pages:
         write(path, shell(root=root, title=title, desc=desc, body=body, current=current,
-                          hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear"))
+                          hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear", reader=True))
 
     print("audio, credits")
     write(GUIDE / "audio" / "index.html", shell(root="../../", title="Listen", desc="The narrated audio edition of Mastering Epistemology.",
@@ -1050,6 +1262,11 @@ def main():
     write(ROOT / "404.html", shell(root="", title="Page not found", desc="Page not found.", body=build_404(art), bar="clear")
           .replace("<meta charset=\"utf-8\">", "<meta charset=\"utf-8\">\n" + BASE_404, 1))
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
+
+    print("offline, epub")
+    write(ROOT / "manifest.webmanifest", json.dumps(MANIFEST, indent=2) + "\n")
+    write(ROOT / "offline.json", json.dumps(build_offline_list(), indent=0) + "\n")
+    build_epub(chapters, art)
     print(f"done: {len(chapters)} chapters, {len(pages)} concept pages")
 
 
