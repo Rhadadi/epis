@@ -419,7 +419,7 @@
 - Bertrand Russell, *The Problems of Philosophy* (1912), chs. 1–4.
 - J. L. Austin, *Sense and Sensibilia* (Oxford University Press, 1962).
 - Tim Crane and Craig French, "The Problem of Perception," *Stanford Encyclopedia of Philosophy*.
-- Christopher Chabris and Daniel Simons, *The Invisible Gorilla* (Crown, 2010). به فارسی هم ترجمه شده است.
+- Christopher Chabris and Daniel Simons, *The Invisible Gorilla* (Crown, 2010).
 
 **حافظه**
 - Elizabeth Loftus and Katherine Ketcham, *The Myth of Repressed Memory* (St. Martin's, 1994).

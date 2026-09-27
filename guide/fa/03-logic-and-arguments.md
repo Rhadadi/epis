@@ -651,7 +651,7 @@ flowchart LR
 - Graham Priest, *Logic: A Very Short Introduction* (Oxford University Press, 2nd ed. 2017).
 
 **درس‌نامه‌ها**
-- Irving Copi, Carl Cohen, and Victor Rodych, *Introduction to Logic* (Routledge, 15th ed. 2019). درس‌نامهٔ جامعِ کلاسیک؛ ویراست‌های پیشینش به فارسی هم ترجمه شده است.
+- Irving Copi, Carl Cohen, and Victor Rodych, *Introduction to Logic* (Routledge, 15th ed. 2019). درس‌نامهٔ جامعِ کلاسیک.
 - Patrick Hurley and Lori Watson, *A Concise Introduction to Logic* (Cengage, 13th ed. 2018).
 - P. D. Magnus and others, *forall x: Calgary* (درس‌نامهٔ رایگان و آزادِ منطقِ صوری، برخط).
 - Paul Tomassi, *Logic* (Routledge, 1999).
