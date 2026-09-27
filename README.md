@@ -12,6 +12,7 @@ and [epis.duckdns.org](https://epis.duckdns.org) (self-hosted).
 | Page | Where | What it is |
 | --- | --- | --- |
 | Start | [`/`](https://rhadadi.github.io/epis/) | The starting page: what the guide covers and where to begin. |
+| فارسی | [`/fa/`](https://rhadadi.github.io/epis/fa/) | The Persian edition of the whole site, right to left: the guide, concepts, notebook, review, study companion and account pages, with the same paths under `/fa/`. The **فا** / **EN** button in the header switches between the two editions on any page. The narration stays in English. |
 | The guide | [`/guide/`](https://rhadadi.github.io/epis/guide/) | The contents, then one web page per chapter, each headed by a painting or photograph chosen for its topic. Every chapter has a contents sidebar, and the sixteen main chapters have a built-in audio player that can jump to any section. |
 | Concepts | [`/concepts/`](https://rhadadi.github.io/epis/concepts/) | One readable page per concept, in English or Persian: the idea, examples, objections, common mistakes and self-check questions, linked to the chapter that covers it. |
 | Map | [`/map/`](https://rhadadi.github.io/epis/map/) | The interactive concept map with its floating, expandable nodes. Selecting a concept opens its page. `/map/#<id>` opens the map at that concept. |
@@ -67,6 +68,8 @@ Then open <http://localhost:8000>.
 ```
 index.html, credits.html, 404.html    starting page, credits, "not found" page
 guide/*.md                            the guide (source of truth)
+guide/fa/*.md                         the Persian translation of the guide
+fa/                                   the Persian edition of every page (generated)
 guide/*.html, guide/index.html        the guide as web pages (generated)
 guide/audio/                          MP3s, tracks.js, player page, narration scripts
 concepts/                             one page per concept (generated)

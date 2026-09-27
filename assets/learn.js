@@ -138,7 +138,7 @@
       modal = el("div", "sx");
       modal.innerHTML = '<div class="sx-box" role="dialog" aria-label="' + T("Search", "جست‌وجو") + '"><div class="sx-in">' +
         '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>' +
-        '<input type="search" placeholder="' + T("Search the guide…", "جست‌وجو در راهنما…") + '" aria-label="' + T("Search the guide", "جست‌وجو در راهنما") + '" role="combobox" aria-expanded="true" aria-controls="sx-list" autocomplete="off">' +
+        '<input type="search" name="site-search" placeholder="' + T("Search the guide…", "جست‌وجو در راهنما…") + '" aria-label="' + T("Search the guide", "جست‌وجو در راهنما") + '" role="combobox" aria-expanded="true" aria-controls="sx-list" autocomplete="off">' +
         '<kbd>Esc</kbd></div><div class="sx-list" id="sx-list" role="listbox"></div></div>';
       document.body.appendChild(modal);
       input = modal.querySelector("input");

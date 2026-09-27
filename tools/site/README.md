@@ -26,6 +26,8 @@ python3 tools/site/build.py
 It reads:
 
 - `guide/NN-*.md` and `guide/README.md`: the guide. The Markdown stays the source of truth and still reads well on GitHub.
+- `guide/fa/NN-*.md` and `guide/fa/README.md`: the Persian translation, with the same file names. A chapter
+  that has no translation yet is shown in English, with a note, on the Persian site.
 - `guide/audio/tracks.js`: the audio tracks, with the start time of every section.
 - `assets/data/concepts.js`: the concept map's data, shared with `map/index.html`.
 - `tools/site/art.json` and `assets/art/*.jpg`: the artwork.
@@ -42,6 +44,18 @@ It writes:
   "Save the whole guide for offline reading" fetches.
 - `assets/art/<key>-{640,1200,2000}.jpg`: the artwork, cropped and resized.
 - `assets/diagrams/<hash>-{light,dark}.svg`: rendered diagrams.
+- `fa/...`: the Persian edition of all of the above, at the same paths under `fa/`, plus
+  `fa/guide/mastering-epistemology-fa.epub` and `assets/data/{terms,search,questions}-fa.json`.
+
+## The Persian edition
+
+`build.py` builds the site twice, once per language. Interface text in the generator is written as
+`L("English", "فارسی")`, and the scripts in `assets/` use `T("English", "فارسی")`, choosing by the
+page's `lang`. A Persian chapter must keep the English chapter's headings in the same order: the
+build matches them by position, so that section links, the audio section markers and saved reading
+positions stay the same in both languages (it warns when the structure differs). Persian glossary
+entries are written as `**فارسی (English).** definition`; the English name gives the entry its
+link target. Artwork captions in Persian are the `fa` fields in `art.json`.
 
 Diagrams are cached by the hash of their source. Only a new or changed diagram
 needs Node, with the `mermaid` (version 11) and `playwright-core` packages, and

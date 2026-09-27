@@ -41,6 +41,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);fon
 img,svg,video{max-width:100%}
 a{color:inherit}
 button{font:inherit;color:inherit}
+a,button{touch-action:manipulation}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
 .skip{position:absolute;left:8px;top:8px;z-index:100;background:var(--accent);color:var(--accent-ink);padding:8px 14px;font-family:var(--sans);transform:translateY(-300%)}
 .skip:focus{transform:none}
@@ -56,7 +57,7 @@ html[dir="rtl"] .skip{left:auto;right:8px}
   -webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px)}
 .bar.clear{color:#fff;border-bottom:1px solid transparent;
   background:linear-gradient(rgba(5,10,16,.55),rgba(5,10,16,0))}
-.brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;min-width:0}
+.brand{display:flex;align-items:center;gap:10px;margin-right:0;margin-inline-end:auto;text-decoration:none;min-width:0}
 .brand svg{width:28px;height:28px;flex:none}
 .brand b{font-family:var(--display);font-size:1.28rem;font-weight:600;letter-spacing:.005em;white-space:nowrap;line-height:1}
 .brand small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;opacity:.7;margin-top:3px}
@@ -628,7 +629,7 @@ body.sx-open{overflow:hidden}
 .sx-box{width:min(680px,100%);max-height:78vh;display:flex;flex-direction:column;border:1px solid var(--rule-2);border-radius:18px;background:var(--surface);
   box-shadow:var(--shadow-lg);overflow:hidden;font-family:var(--sans)}
 .sx-in{display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--rule)}
-.sx-in input{flex:1;height:58px;border:0;background:transparent;color:var(--ink);font:1.1rem var(--sans);outline:none}
+.sx-in input{flex:1;height:58px;border:0;background:transparent;color:var(--ink);font:1.1rem var(--sans)}
 .sx-in kbd{font-family:var(--mono);font-size:.7rem;padding:3px 6px;border:1px solid var(--rule-2);border-radius:6px;color:var(--dim)}
 .sx-list{overflow:auto;padding:6px}
 .sx-hint{margin:14px 12px;color:var(--dim);font-size:.9rem}
@@ -841,6 +842,9 @@ html[lang="fa"] .brand b{font-weight:700;font-size:1.1rem}
 html[lang="fa"] .focus-head .ftitle,html[lang="fa"] .mynotes h2,html[lang="fa"] .deeper h2,html[lang="fa"] .acc-card h2,
 html[lang="fa"] .section-head h2,html[lang="fa"] .rpanel h2,html[lang="fa"] .nb-page h2{font-weight:800;line-height:1.4}
 html[lang="fa"] .card .body h4,html[lang="fa"] .tile b{font-weight:700;line-height:1.5}
+html[lang="fa"] .door b{line-height:1.4}
+html[lang="fa"] .card .meta{flex-wrap:wrap}
+html[lang="fa"] .quoteband p{font-style:normal;line-height:1.65}
 html[lang="fa"] .en-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;opacity:.85;margin-top:-.2em}
 html[lang="fa"] .fa-pending{margin:0 0 26px;padding:14px 18px;border:1px dashed var(--accent);border-radius:12px;background:var(--accent-wash);font-size:.95rem}
 html[lang="fa"] .rv-stats b,html[lang="fa"] .acc-tile b{font-family:'Vazirmatn',sans-serif;font-weight:800}

@@ -137,7 +137,8 @@
     });
   }
   if (document.querySelector("[data-set-lang]")) {
-    setLang(doc.dataset.lang || "en");
+    var requestedLang = new URLSearchParams(location.search).get("lang");
+    setLang(requestedLang === "fa" ? "fa" : (doc.dataset.lang || "en"));
     document.querySelectorAll("[data-set-lang]").forEach(function (b) {
       b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang")); });
     });

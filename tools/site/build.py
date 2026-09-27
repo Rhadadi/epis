@@ -11,6 +11,7 @@ Reads
 
 Writes
     index.html                          the starting page
+    fa/index.html                       the Persian starting page
     guide/index.html, guide/NN-*.html   the guide as web pages
     guide/audio/index.html, about.html  the audio player and how the audio was made
     concepts/index.html, concepts/*.html one readable page per concept, English and Persian
@@ -85,6 +86,11 @@ def home(root):
     return root + ("fa/" if LANG == "fa" else "")
 
 
+def map_url(root, frag=""):
+    """The concept map (shared by both languages), opened in the language being built."""
+    return f"{root}map/" + ("?lang=fa" if LANG == "fa" else "") + (f"#{frag}" if frag else "")
+
+
 def site_name():
     return L(SITE, SITE_FA)
 
@@ -102,6 +108,27 @@ def part_label(roman, name):
         word, fa_name = PARTS_FA.get(roman, ("", name))
         return (f"بخش {word}" if word else "پیوست‌ها"), fa_name
     return (f"Part {roman}" if roman else "Also"), name
+
+FA_CHAPTERS = {
+    1: ("معرفت‌شناسی چیست؟", "پرسش‌های بنیادی؛ سه گونهٔ دانستن؛ باور، درجهٔ باور و پذیرش؛ معرفت پیشین، تحلیلی و ضروری؛ دلایل معرفتی در برابر دلایل عملی؛ نقشهٔ این حوزه"),
+    2: ("تاریخ نظریهٔ معرفت", "از پیشاسقراطیان، سقراط، افلاطون و ارسطو تا سنت‌های هندی، اسلامی و چینی؛ و از دکارت، لاک، هیوم، رید و کانت تا عمل‌گرایی، پوپر، ویتگنشتاین، کواین و گتیه"),
+    3: ("منطق و کالبدشناسی استدلال", "قیاس، استقرا و استنتاج به بهترین تبیین؛ اعتبار و استحکام؛ شرط‌های لازم و کافی؛ صورت‌های معتبر و مغالطه‌های صوری؛ مقدمه‌های پنهان؛ اصل خیرخواهی؛ نقشهٔ استدلال و مدل تولمین"),
+    4: ("زبان، مفاهیم و تعریف‌ها", "معنا و مرجع؛ انواع تعریف؛ ابهام و واگی؛ نزاع‌های لفظی؛ زبان باردار و قاب‌بندی؛ مفاهیم مناقشه‌برانگیز؛ شکاف هست–باید؛ آزمون‌های فکری و تعادل تأملی"),
+    5: ("معرفت چیست؟", "باور صادق موجه؛ مسئلهٔ گتیه؛ وثاقت‌گرایی، حساسیت، ایمنی، فضیلت و نظریه‌های معرفت‌نخست؛ بخت معرفتی؛ ارزش معرفت؛ فهم و خرد"),
+    6: ("توجیه: ساختار دلایل خوب", "ابطال‌کننده‌ها؛ مسئلهٔ تسلسل؛ مبناگرایی، انسجام‌گرایی، تسلسل‌گرایی و رویکردهای ترکیبی؛ درون‌گرایی در برابر برون‌گرایی؛ شواهدگرایی؛ مسئلهٔ معیار و خطاپذیری"),
+    7: ("منابع معرفت", "ادراک، حافظه، درون‌نگری، عقل و گواهی: هریک چگونه کار می‌کند و چگونه از کار می‌افتد؛ علم حضوری؛ چه زمانی به شهود اعتماد کنیم"),
+    8: ("شکاکیت و پاسخ‌های آن", "شکاکیت پیرونی و دکارتی؛ مغز در خمره؛ استدلال بستار؛ مور، زمینه‌گرایی، معرفت‌شناسی لولایی و پاسخ‌های دیگر؛ شکاکیت سالم در برابر شکاکیت فرساینده"),
+    9: ("استقرا، احتمال و استدلال بیزی", "مسئلهٔ هیوم؛ سبزآبی و کلاغ‌ها؛ احتمال؛ قضیهٔ بیز با مثال‌های حل‌شده؛ نرخ‌های پایه، مغالطهٔ عطف، مسئلهٔ مونتی‌هال، بازگشت به میانگین، پارادوکس سیمپسون؛ کالیبراسیون، مقدار p و ریسک"),
+    10: ("علم، شواهد و تبیین", "ابطال‌پذیری؛ دوئم–کواین؛ کون و لاکاتوش؛ استنتاج به بهترین تبیین؛ واقع‌گرایی؛ علیت، همبستگی و آزمایش‌های تصادفی؛ ارزش‌ها در علم؛ اجماع؛ بحران تکرارپذیری و تشخیص شبه‌علم"),
+    11: ("حقیقت، نسبی‌گرایی و عینیت", "نظریه‌های حقیقت؛ پارادوکس دروغ‌گو؛ نسبی‌گرایی و منتقدانش؛ ساخت اجتماعی؛ عینیت و منظر؛ پساحقیقت و مهمل‌گویی"),
+    12: ("معرفت‌شناسی اجتماعی: باهم دانستن", "اعتماد و تخصص؛ انتخاب میان کارشناسان؛ اختلاف همتایان؛ بی‌عدالتی معرفتی؛ نظریهٔ موقعیت؛ اتاق‌های پژواک، آبشارهای اطلاعاتی و خرد جمعی؛ اطلاعات نادرست، تبلیغات و نظریه‌های توطئه؛ نهادها و هوش مصنوعی"),
+    13: ("فضیلت فکری و اخلاق باور", "کلیفورد در برابر جیمز؛ فضیلت‌ها و رذیلت‌های فکری؛ فروتنی و گشوده‌ذهنی؛ ملاحظات عملی و اخلاقی در اسناد معرفت؛ ایمان، عقل و معرفت‌شناسی دینی"),
+    14: ("روان‌شناسی استدلال: ذهن در عمل", "نظریه‌های دوفرایندی؛ میان‌برهای ذهنی و سوگیری‌ها؛ سوگیری تأییدی و سوگیری جانب خود؛ استدلال انگیزه‌مند؛ اعتمادبه‌نفس بیش‌ازحد؛ شناخت هویت‌محافظ؛ نظریهٔ استدلالی؛ روش‌های مؤثر سوگیری‌زدایی و اَبَرپیش‌بینی"),
+    15: ("راهنمای میدانی مغالطه‌ها", "بیش از چهل مغالطه و فن بلاغی؛ برای هریک مثال، خویشاوند مشروع، روش پاسخ‌گویی و تمرین‌های کاربردی"),
+    16: ("جعبه‌ابزار متفکر نقاد", "روشی هفت‌مرحله‌ای برای تحلیل هر گفت‌وگو؛ نظریهٔ موضع‌ها؛ یافتن نقطهٔ گرهی؛ صورت‌بندی استدلال‌های خود؛ بار اثبات؛ تیغ‌های فلسفی؛ اخلاق گفت‌وگو؛ پنج مطالعهٔ موردی و فهرست‌های وارسی"),
+    17: ("واژه‌نامه", "۲۰۰ اصطلاح کلیدی، هریک پیوندخورده به توضیح کامل خود"),
+    18: ("فهرست مطالعه و برنامهٔ یادگیری", "بهترین کتاب‌ها به تفکیک سطح؛ متون دست‌اول؛ سنت‌های غیرغربی؛ منابع رایگان و یک برنامهٔ مطالعهٔ دوازده‌هفته‌ای"),
+}
 
 # Concept-map branches: the guide chapter that covers each one, and its artwork.
 BRANCH_CHAPTER = {"root": 1, "trilemma": 6, "know": 5, "truth": 11, "sources": 7, "skep": 8, "formal": 9,
@@ -255,9 +282,9 @@ class Art:
             return f"«{i.get('title', '')}» اثر {i.get('artist', '')} ({i.get('date', '')})"
         return f"{i.get('title', '')} by {i.get('artist', '')} ({i.get('date', '')})"
 
-    def img(self, key, root, sizes="100vw", cls="art", eager=False):
+    def img(self, key, root, sizes="100vw", cls="art", eager=False, alt=None):
         return (f'<img class="{cls}" src="{self.src(key, root)}" srcset="{self.srcset(key, root)}" sizes="{sizes}" '
-                f'alt="{attr(self.alt(key))}"' + (' fetchpriority="high"' if eager else ' loading="lazy"') +
+                f'alt="{attr(self.alt(key) if alt is None else alt)}"' + (' fetchpriority="high"' if eager else ' loading="lazy"') +
                 ' decoding="async">')
 
 
@@ -319,7 +346,7 @@ def guide_links(prefix=""):
         if path == "audio/README.md":
             return "audio/about.html" + frag
         if path == "../index.html":
-            return "../map/" + frag
+            return map_url(up(1), frag[1:])
         if path == "../README.md":
             return REPO + "#readme"
         m = re.match(r"^(\d\d-[\w-]+)\.md$", path)
@@ -411,7 +438,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
           alt=None, bilingual=False):
     h = home(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
-           ("map", f"{root}map/", "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن")),
+           ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن")),
            ("account", f"{h}account/", "user", L("My study", "مطالعهٔ من"))]
     here = ' aria-current="page"'
     links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
@@ -491,7 +518,7 @@ def footer(root):
       <li><a href="{h}guide/18-reading-list.html">{L("Reading list and study plan", "فهرست مطالعه و برنامهٔ درسی")}</a></li>
       <li><a href="{epub}" download>{L("EPUB for e-readers", "نسخهٔ EPUB برای کتاب‌خوان")}</a></li></ul></div>
     <div><h3>{L("Explore", "کاوش")}</h3><ul>
-      <li><a href="{root}map/">{L("Concept map", "نقشهٔ مفاهیم")}</a></li>
+      <li><a href="{map_url(root)}">{L("Concept map", "نقشهٔ مفاهیم")}</a></li>
       <li><a href="{h}concepts/">{L("All 135 concepts", "همهٔ ۱۳۵ مفهوم")}</a></li>
       <li><a href="{h}guide/audio/">{L("Audio edition", "نسخهٔ صوتی (انگلیسی)")}</a></li>
       <li><a href="{h}account/">{L("My study (sign in)", "مطالعهٔ من (ورود)")}</a></li>
@@ -503,7 +530,7 @@ def footer(root):
 
 
 def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=None, facts=None, actions=None, extra="",
-         title_html=None):
+         title_html=None, image_alt=None, plate_html=None):
     parts = [f'<div class="kicker">{kicker}</div>' if kicker else "",
              title_html or f"<h1>{title}</h1>",
              f'<p class="dek">{dek}</p>' if dek else "",
@@ -512,8 +539,8 @@ def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=Non
              extra,
              ('<div class="facts">' + "".join(f"<span>{f}</span>" for f in facts) + "</div>") if facts else "",
              ('<div class="actions">' + actions + "</div>") if actions else ""]
-    plate = f'<div class="plate">{art.caption(key)}</div>' if art.has(key) else ""
-    image = art.img(key, root, eager=True) if art.has(key) else ""
+    plate = f'<div class="plate">{plate_html if plate_html is not None else art.caption(key)}</div>' if art.has(key) else ""
+    image = art.img(key, root, eager=True, alt=image_alt) if art.has(key) else ""
     return (f'<header class="hero {cls}" style="--art:{art.color(key)};--focus:{art.focus(key)}">{image}'
             f'<div class="hero-in">{"".join(parts)}{plate}</div></header>')
 
@@ -528,9 +555,9 @@ def label(art, key):
             f'<p><cite>{art.caption(key)}{place}.</cite> {esc(i["note"])}</p></div>')
 
 
-def tile(art, key, root, href, kicker, title, sub="", cls="tile"):
+def tile(art, key, root, href, kicker, title, sub="", cls="tile", image_alt=None):
     return (f'<a class="{cls}" href="{href}" style="background:{art.color(key)}">'
-            f'{art.img(key, root, sizes="(max-width:700px) 100vw, 50vw", cls="")}'
+            f'{art.img(key, root, sizes="(max-width:700px) 100vw, 50vw", cls="", alt=image_alt)}'
             f'<span class="kicker">{kicker}</span><b>{title}</b>{f"<span class=sub>{sub}</span>" if sub else ""}</a>')
 
 
@@ -547,6 +574,8 @@ class Chapter:
         first = self.text.split("\n", 1)[0].lstrip("# ").strip()
         m = re.match(r"(?:Chapter|فصل)\s*[\d۰-۹]+[.:]\s+(.*)", first)
         self.title = m.group(1) if m else first
+        if fallback and self.num in FA_CHAPTERS:
+            self.title = FA_CHAPTERS[self.num][0]  # the Persian title, even before the chapter is translated
         self.art = f"ch{self.num:02d}"
         self.href = f"{self.slug}.html"
         if self.lang == "fa":
@@ -961,7 +990,8 @@ def build_concepts(C, chapters, md, art, pages):
                      "objections and replies, common confusions, and a question to check yourself.",
                 actions=f'{switch}<a class="btn" href="../map/">{icon("map")} Open the map</a><a class="btn" href="root.html">Start at the root</a>')
     body = (f'{head}{label(art, "elephant")}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px">'
-            f'<div class="filter"><input id="cfilter" type="search" placeholder="Filter concepts, thinkers, terms…" aria-label="Filter concepts"></div>'
+            f'<div class="filter"><input id="cfilter" name="concept-filter" type="search" autocomplete="off" '
+            f'placeholder="Filter concepts, thinkers, terms…" aria-label="Filter concepts"></div>'
             f'{"".join(blocks)}</main>')
     pages.append((ROOT / "concepts" / "index.html", root, "All concepts",
                   "Every concept in the epistemology map as a readable page, in English and Persian.", body, "concepts", "elephant"))
@@ -989,7 +1019,7 @@ def build_concepts_fa(C, chapters, md, art, pages):
         extra = (f'<div class="crumbs">{crumbs or "<span>نقشهٔ مفاهیم</span>"}</div>'
                  f'<h1>{esc(C.title(cid, "fa"))}</h1><div class="en-title" lang="en" dir="ltr">{esc(C.title(cid))}</div>'
                  f'<div class="who" dir="ltr">{esc(who)}</div>'
-                 f'<div class="actions"><a class="btn" href="{root}map/#{cid}" data-set-site-lang="fa">{icon("pin")} نمایش روی نقشه</a>'
+                 f'<div class="actions"><a class="btn" href="{map_url(root, cid)}" data-set-site-lang="fa">{icon("pin")} نمایش روی نقشه</a>'
                  f'<a class="btn" href="{root}concepts/{cid}.html" lang="en" data-set-site-lang="en">English</a></div>')
         head = hero(art, key, root, kicker="", title="", cls="band", title_html=extra)
         entry = f'<div class="entry"><div class="l-fa" lang="fa" dir="rtl">{concept_body(C, cid, "fa")}</div></div>'
@@ -1058,9 +1088,9 @@ def build_concepts_fa(C, chapters, md, art, pages):
     head = hero(art, "elephant", root, kicker="نقشهٔ مفاهیم به صورت صفحه", title="همهٔ مفاهیم", cls="short",
                 lede=f"{num(135)} مفهوم در معرفت‌شناسی، هر یک با مدخلی کامل: مسئله‌ای که حل می‌کند، ایدهٔ اصلی، "
                      "اعتراض‌ها و پاسخ‌ها، اشتباه‌های رایج، و پرسشی برای خودآزمایی.",
-                actions=f'<a class="btn" href="{root}map/" data-set-site-lang="fa">{icon("map")} باز کردنِ نقشه</a><a class="btn" href="root.html">آغاز از ریشه</a>')
+                actions=f'<a class="btn" href="{map_url(root)}" data-set-site-lang="fa">{icon("map")} باز کردنِ نقشه</a><a class="btn" href="root.html">آغاز از ریشه</a>')
     body = (f'{head}{label(art, "elephant")}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px">'
-            f'<div class="filter"><input id="cfilter" type="search" placeholder="صافیِ مفاهیم، اندیشمندان، اصطلاحات…" aria-label="صافیِ مفاهیم"></div>'
+            f'<div class="filter"><input id="cfilter" name="concept-filter" type="search" autocomplete="off" placeholder="صافیِ مفاهیم، اندیشمندان، اصطلاحات…" aria-label="صافیِ مفاهیم"></div>'
             f'{"".join(blocks)}</main>')
     pages.append((OUT() / "concepts" / "index.html", root, "همهٔ مفاهیم",
                   "همهٔ مفاهیمِ نقشهٔ معرفت‌شناسی، هر یک در صفحه‌ای خواندنی.", body, "concepts", "elephant"))
@@ -1073,7 +1103,8 @@ FA_HEADS = {}  # (chapter, section id) -> Persian section title
 
 def title_html(ch):
     """A chapter title; an English one on a Persian page keeps its own direction."""
-    return f'<span dir="ltr" lang="en">{esc(ch.title)}</span>' if getattr(ch, "fallback", False) else esc(ch.title)
+    english = getattr(ch, "fallback", False) and ch.num not in FA_CHAPTERS
+    return f'<span dir="ltr" lang="en">{esc(ch.title)}</span>' if english else esc(ch.title)
 
 
 def chapter_card(art, ch, root):
@@ -1171,13 +1202,13 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                 facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('map')} {L(f'{n_concepts} concepts · English &amp; فارسی', f'{n_c} مفهوم · فارسی و English')}",
                        f"{icon('phones')} {total_audio} {L('audio', 'صوت')}"],
                 actions=(f'<a class="btn primary" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
-                         f'<a class="btn" href="{root}map/">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
+                         f'<a class="btn" href="{map_url(root)}">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
                          f'<a class="btn" href="{h}guide/audio/">{icon("phones")} {L("Listen", "شنیدن")}</a>'))
     doors = (f'<div class="doors">'
              + tile(art, "guide", root, f"{h}guide/", L("Read", "بخوانید"), L("The guide", "راهنما"),
                     L("Sixteen chapters, from the Gettier problem to Bayes' theorem, with worked examples and self-checks.",
                       "شانزده فصل، از مسئلهٔ گتیه تا قضیهٔ بیز، با مثال‌های حل‌شده و خودآزمایی."), cls="tile door")
-             + tile(art, "map", root, f"{root}map/", L("Explore", "کاوش کنید"), L("The concept map", "نقشهٔ مفاهیم"),
+             + tile(art, "map", root, map_url(root), L("Explore", "کاوش کنید"), L("The concept map", "نقشهٔ مفاهیم"),
                     L(f"{n_concepts} ideas as a living map you can pan and expand, in English and Persian, each with a full entry.",
                       f"{n_c} ایده در نقشه‌ای زنده که می‌توانید جابه‌جا و باز کنید، به فارسی و انگلیسی، هر یک با مدخلی کامل."), cls="tile door")
              + tile(art, "audio", root, f"{h}guide/audio/", L("Listen", "بشنوید"), L("The audio edition", "نسخهٔ صوتی"),
@@ -1503,7 +1534,7 @@ def deeper_box(ch, C, root):
     lang = "fa" if LANG == "fa" else "en"
     chips = "".join(f'<a href="../concepts/{cid}.html" data-term="{attr(next((k for k, v in LEARN["terms"].items() if v.get("c") == cid), ""))}">'
                     f'{esc(C.title(cid, lang))}</a>' for cid in ids)
-    links = [f'<a href="{root}map/#{branch}">{icon("map")} {L("Explore this part of the concept map", "این بخش از نقشهٔ مفاهیم را ببینید")}</a>'] if branch else []
+    links = [f'<a href="{map_url(root, branch)}">{icon("map")} {L("Explore this part of the concept map", "این بخش از نقشهٔ مفاهیم را ببینید")}</a>'] if branch else []
     if any(q["ch"] == ch.num for q in LEARN["questions"]):
         links.append(f'<a href="../review/#{ch.slug}">{icon("clock")} {L("Practise this chapter&#39;s questions", "تمرینِ پرسش‌های این فصل")}</a>')
     return (f'<section class="deeper"><span class="kicker">{L("Go deeper", "عمیق‌تر شوید")}</span><h2>{L("Concepts from this chapter", "مفاهیمِ این فصل")}</h2>'
