@@ -15,6 +15,10 @@
   var FILE = "epis-sync.json";
   var SCRIPT = document.currentScript && document.currentScript.src;
   var ROOT = SCRIPT ? new URL("../", SCRIPT).href : new URL("./", location.href).href;
+  var FA = document.documentElement.lang === "fa";
+  var HOME = ROOT + (FA ? "fa/" : "");
+  function T(en, fa) { return FA ? fa : en; }
+  function N(x) { return FA ? String(x).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }) : String(x); }
 
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { if (v === null || v === undefined) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { /* ignore */ } }
@@ -197,7 +201,7 @@
   function paintLink(navLink) {
     var u = user();
     var label = navLink.querySelector("span");
-    if (label) label.textContent = u ? (u.given_name || (u.name || "").split(" ")[0] || "Account") : "Sign in";
+    if (label) label.textContent = u ? (u.given_name || (u.name || "").split(" ")[0] || T("Account", "حساب")) : T("Sign in", "ورود");
     navLink.classList.toggle("signed-in", !!u);
     if (u && u.picture) {
       var img = navLink.querySelector("img.av");
@@ -228,7 +232,8 @@
   function ago(t) {
     if (!t) return "never";
     var m = Math.round((Date.now() - t) / 60000);
-    return m < 1 ? "just now" : m < 60 ? m + " min ago" : m < 1440 ? Math.round(m / 60) + " h ago" : new Date(t).toLocaleDateString();
+    return m < 1 ? T("just now", "همین حالا") : m < 60 ? N(m) + T(" min ago", " دقیقه پیش") : m < 1440 ? N(Math.round(m / 60)) + T(" h ago", " ساعت پیش")
+      : new Date(t).toLocaleDateString(FA ? "fa-IR" : undefined);
   }
   function counts() {
     var notes = window.EpisNotes ? window.EpisNotes.live(window.EpisNotes.load()) : [];
@@ -246,25 +251,30 @@
     var card = u
       ? '<div class="acc-user">' + (u.picture ? '<img alt="" referrerpolicy="no-referrer" src="' + esc(u.picture) + '">' : "") +
         "<div><b>" + esc(u.name || u.email) + "</b><span>" + esc(u.email || "") + "</span></div></div>" +
-        '<p class="acc-sync">' + (st.busy ? "Syncing…" : st.error ? "Last sync failed: " + esc(st.error) : "Synced " + ago(st.at)) +
-        (st.pending && !token() ? " · sign-in needs renewing to sync new changes" : "") + "</p>" +
-        '<div class="acc-actions">' + (token() ? '<button type="button" class="btn primary" data-act="sync">Sync now</button>'
-          : '<button type="button" class="btn primary" data-act="renew">Reconnect to sync</button>') +
-        '<button type="button" class="btn" data-act="signout">Sign out</button></div>'
-      : '<p>Sign in to keep your reading progress, highlights and notes, review deck, reading settings and AI keys in your own Google Drive, ' +
-        "so they follow you to any device. Without signing in, everything still works, but stays in this browser only.</p>" +
-        '<button type="button" class="gbtn" data-act="signin"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.9 6.1C12.4 13.7 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.6 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>Sign in with Google</button>' +
-        '<p class="acc-fine">Google asks for permission to see your name and email, and to use a private app folder in your Drive. ' +
-        "The site can't see any of your other files, and there is no server of ours in between.</p>";
+        '<p class="acc-sync">' + (st.busy ? T("Syncing…", "در حال همگام‌سازی…") : st.error ? T("Last sync failed: ", "آخرین همگام‌سازی ناموفق بود: ") + esc(st.error)
+          : (st.at ? T("Synced ", "همگام‌سازی: ") + ago(st.at) : T("Not synced yet", "هنوز همگام‌سازی نشده"))) +
+        (st.pending && !token() ? T(" · sign-in needs renewing to sync new changes", " · برای همگام‌سازیِ تغییراتِ تازه باید دوباره وصل شوید") : "") + "</p>" +
+        '<div class="acc-actions">' + (token() ? '<button type="button" class="btn primary" data-act="sync">' + T("Sync now", "همگام‌سازی") + '</button>'
+          : '<button type="button" class="btn primary" data-act="renew">' + T("Reconnect to sync", "اتصالِ دوباره برای همگام‌سازی") + '</button>') +
+        '<button type="button" class="btn" data-act="signout">' + T("Sign out", "خروج") + '</button></div>'
+      : '<p>' + T("Sign in to keep your reading progress, highlights and notes, review deck, reading settings and AI keys in your own Google Drive, " +
+        "so they follow you to any device. Without signing in, everything still works, but stays in this browser only.",
+        "وارد شوید تا پیشرفتِ خواندن، نشانه‌گذاری‌ها و یادداشت‌ها، دستهٔ مرور، تنظیماتِ خواندن و کلیدهای هوش مصنوعی در گوگل‌درایوِ خودتان نگه داشته شوند " +
+        "و در هر دستگاهی همراهتان باشند. بی‌ورود هم همه‌چیز کار می‌کند، ولی فقط در همین مرورگر می‌ماند.") + "</p>" +
+        '<button type="button" class="gbtn" data-act="signin"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.6 13.3l7.9 6.1C12.4 13.7 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.6 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>' + T("Sign in with Google", "ورود با حساب گوگل") + '</button>' +
+        '<p class="acc-fine">' + T("Google asks for permission to see your name and email, and to use a private app folder in your Drive. " +
+        "The site can't see any of your other files, and there is no server of ours in between.",
+        "گوگل اجازه می‌خواهد نام و ایمیلتان را ببیند و از پوشه‌ای خصوصی در درایوتان استفاده کند. " +
+        "این سایت هیچ‌یک از دیگر پرونده‌هایتان را نمی‌بیند و هیچ سروری از ما در این میان نیست.") + "</p>";
     host.querySelector("[data-slot=signin]").innerHTML = card;
     host.querySelector("[data-slot=study]").innerHTML =
-      '<a class="acc-tile" href="' + ROOT + 'notes/"><b>' + c.hl + "</b><span>highlights and notes</span><em>Open your notebook →</em></a>" +
-      '<a class="acc-tile" href="' + ROOT + 'review/"><b>' + c.due + "</b><span>questions due for review</span><em>" + c.deck + " in your deck →</em></a>" +
-      '<a class="acc-tile" href="' + ROOT + 'guide/"><b>' + c.read + "</b><span>chapters finished</span><em>" + c.started + " started →</em></a>";
+      '<a class="acc-tile" href="' + HOME + 'notes/"><b>' + N(c.hl) + "</b><span>" + T("highlights and notes", "نشانه‌گذاری و یادداشت") + "</span><em>" + T("Open your notebook →", "باز کردنِ دفترچه ←") + "</em></a>" +
+      '<a class="acc-tile" href="' + HOME + 'review/"><b>' + N(c.due) + "</b><span>" + T("questions due for review", "پرسشِ آمادهٔ مرور") + "</span><em>" + N(c.deck) + T(" in your deck →", " در دستهٔ شما ←") + "</em></a>" +
+      '<a class="acc-tile" href="' + HOME + 'guide/"><b>' + N(c.read) + "</b><span>" + T("chapters finished", "فصلِ تمام‌شده") + "</span><em>" + N(c.started) + T(" started →", " آغازشده ←") + "</em></a>";
     var err = host.querySelector("[data-slot=error]");
     var e = "";
     try { e = sessionStorage.getItem("epis-oauth-error") || ""; sessionStorage.removeItem("epis-oauth-error"); } catch (x) { /* ignore */ }
-    if (e && !/interaction_required|login_required|consent_required/.test(e)) err.innerHTML = '<p class="acc-err">Google sign-in did not complete: ' + esc(e) + "</p>";
+    if (e && !/interaction_required|login_required|consent_required/.test(e)) err.innerHTML = '<p class="acc-err">' + T("Google sign-in did not complete: ", "ورود با گوگل کامل نشد: ") + esc(e) + "</p>";
   }
   host.addEventListener("click", function (e) {
     var b = e.target.closest("[data-act]");
@@ -272,14 +282,14 @@
     var act = b.getAttribute("data-act");
     if (act === "signin") signIn({ back: location.href });
     else if (act === "renew") signIn({ back: location.href });
-    else if (act === "signout") { if (confirm("Sign out? Your notes stay in this browser and in your Google Drive; your AI keys are removed from this browser.")) signOut(); }
+    else if (act === "signout") { if (confirm(T("Sign out? Your notes stay in this browser and in your Google Drive; your AI keys are removed from this browser.", "خارج می‌شوید؟ یادداشت‌هایتان در این مرورگر و در گوگل‌درایو می‌مانند؛ کلیدهای هوش مصنوعی از این مرورگر پاک می‌شوند."))) signOut(); }
     else if (act === "sync") sync();
     else if (act === "export") {
       var a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob([JSON.stringify(localState(), null, 1)], { type: "application/json" }));
       a.download = "epistemology-backup.json"; document.body.appendChild(a); a.click(); a.remove();
     } else if (act === "wipe") {
-      if (!confirm("Delete all your progress, notes, review deck, chats and settings from this browser? Anything already synced stays in your Google Drive.")) return;
+      if (!confirm(T("Delete all your progress, notes, review deck, chats and settings from this browser? Anything already synced stays in your Google Drive.", "همهٔ پیشرفت، یادداشت‌ها، دستهٔ مرور، گفت‌وگوها و تنظیمات از این مرورگر پاک شوند؟ آنچه همگام‌سازی شده در گوگل‌درایو می‌ماند."))) return;
       ["epis-notes", "epis-progress", "epis-review", "epis-reader", "epis-shade", "epis-prefs-ts", "epis-ai", "epis-chats", "epis-focus"].forEach(function (k) { set(k, null); });
       location.reload();
     }

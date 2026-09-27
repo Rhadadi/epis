@@ -35,16 +35,23 @@ const themes = {
   const browser = await chromium.launch(opts);
   const page = await browser.newPage();
   await page.setContent(`<html><head><style>${fontsCss}</style></head><body><p style="font-family:'Source Serif 4'">Aa <i>Aa</i></p></body></html>`);
-  await page.evaluate(async () => { await document.fonts.load("15px 'Source Serif 4'"); await document.fonts.ready; });
+  await page.evaluate(async () => {
+    await document.fonts.load("15px 'Source Serif 4'");
+    await document.fonts.load("14px Vazirmatn", "معرفت");
+    await document.fonts.ready;
+  });
   await page.addScriptTag({ content: mermaidJs });
   for (const [mode, vars] of Object.entries(themes)) {
     for (const [id, code] of Object.entries(jobs)) {
+      // Persian diagrams are set in Vazirmatn, which has the Arabic-script glyphs.
+      const fa = /[\u0600-\u06FF]/.test(code);
+      const themeVars = fa ? { ...vars, fontFamily: "Vazirmatn, 'Source Serif 4', sans-serif", fontSize: "14px" } : vars;
       const svg = await page.evaluate(async ({ id, code, vars, mode }) => {
         mermaid.initialize({ startOnLoad: false, theme: "base", themeVariables: vars, securityLevel: "strict",
                              flowchart: { htmlLabels: false, curve: "basis" } });
         const { svg } = await mermaid.render(`dg-${id}-${mode}`, code);
         return svg;
-      }, { id, code, vars, mode });
+      }, { id, code, vars: themeVars, mode });
       fs.writeFileSync(path.join(outDir, `${id}-${mode}.svg`), svg);
       console.log(`  diagram ${id} (${mode})`);
     }

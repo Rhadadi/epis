@@ -10,6 +10,10 @@
   var doc = document.documentElement;
   var SCRIPT = document.currentScript && document.currentScript.src;
   var ROOT = SCRIPT ? new URL("../", SCRIPT).href : new URL("./", location.href).href;
+  var FA = doc.lang === "fa";
+  var HOME = ROOT + (FA ? "fa/" : "");
+  function T(en, fa) { return FA ? fa : en; }
+  var COLOR_NAMES = { yellow: T("yellow", "زرد"), green: T("green", "سبز"), blue: T("blue", "آبی"), pink: T("pink", "صورتی") };
   var KEY = "epis-notes";
   var COLORS = ["yellow", "green", "blue", "pink"];
   var CTX = 32;
@@ -24,7 +28,7 @@
   }
   function save(d, quiet) {
     d.updated = Date.now();
-    try { localStorage.setItem(KEY, JSON.stringify(d)); } catch (e) { alert("Your browser storage is full, so this note could not be saved."); }
+    try { localStorage.setItem(KEY, JSON.stringify(d)); } catch (e) { alert(T("Your browser storage is full, so this note could not be saved.", "حافظهٔ مرورگر پر است و این یادداشت ذخیره نشد.")); }
     if (!quiet) document.dispatchEvent(new CustomEvent("epis:notes"));
   }
   function live(d) {
@@ -52,7 +56,7 @@
     var h1 = document.querySelector(".focus-head .ftitle") || document.querySelector(".hero h1:not(.l-fa)") || document.querySelector("h1");
     var kicker = document.querySelector(".focus-head .kicker") || document.querySelector(".hero .kicker");
     var label = kicker ? kicker.textContent.replace(/^.*·\s*/, "") : "";
-    return { title: h1 ? h1.textContent.trim() : document.title, label: article ? label : "Concept" };
+    return { title: h1 ? h1.textContent.trim() : document.title, label: article ? label : T("Concept", "مفهوم") };
   }
 
   /* ------------------------------------------------------------ text index */
@@ -159,7 +163,7 @@
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; }
   function dots(current) {
     return COLORS.map(function (c) {
-      return '<button type="button" class="dot c-' + c + '" data-color="' + c + '" aria-label="Highlight ' + c + '"' +
+      return '<button type="button" class="dot c-' + c + '" data-color="' + c + '" aria-label="' + T("Highlight ", "نشانه‌گذاری ") + COLOR_NAMES[c] + '"' +
         (current === c ? ' aria-pressed="true"' : "") + "></button>";
     }).join("");
   }
@@ -174,9 +178,9 @@
       toolbar = el("div", "hl-ui hl-bar");
       toolbar.setAttribute("role", "toolbar");
       toolbar.setAttribute("aria-label", "Highlight");
-      toolbar.innerHTML = dots() + '<span class="sep"></span><button type="button" data-act="note">' + ICON_NOTE + "<span>Note</span></button>" +
-        '<button type="button" data-act="explain" title="Ask the study companion">' + ICON_ASK + "<span>Explain</span></button>" +
-        '<button type="button" data-act="copy" aria-label="Copy quote">' + ICON_COPY + "</button>";
+      toolbar.innerHTML = dots() + '<span class="sep"></span><button type="button" data-act="note">' + ICON_NOTE + "<span>" + T("Note", "یادداشت") + "</span></button>" +
+        '<button type="button" data-act="explain" title="' + T("Ask the study companion", "پرسش از همراهِ مطالعه") + '">' + ICON_ASK + "<span>" + T("Explain", "توضیح") + "</span></button>" +
+        '<button type="button" data-act="copy" aria-label="' + T("Copy quote", "رونوشت از نقل‌قول") + '">' + ICON_COPY + "</button>";
       toolbar.addEventListener("mousedown", function (e) { e.preventDefault(); });
       // A tap on the toolbar can clear the selection before the click lands; keep the toolbar up meanwhile.
       toolbar.addEventListener("pointerdown", function () { holdUntil = Date.now() + 900; });
@@ -230,7 +234,7 @@
 
   // Widen a selection to whole words, and drop spaces at either end.
   function snap(t, span) {
-    var word = /[\p{L}\p{N}’'\-]/u;
+    var word = /[\p{L}\p{N}\p{M}\u200c’'\-]/u;
     while (span[0] > 0 && word.test(t[span[0] - 1]) && word.test(t[span[0]])) span[0]--;
     while (span[1] < t.length && word.test(t[span[1]]) && word.test(t[span[1] - 1])) span[1]++;
     while (span[0] < span[1] && /\s/.test(t[span[0]])) span[0]++;
@@ -284,8 +288,9 @@
   }
   function copyQuote(text) {
     var info = pageInfo();
-    var out = "“" + text.trim().replace(/\s+/g, " ") + "” — " + info.title + ", Mastering Epistemology (" + location.href.split("#")[0] + ")";
-    if (navigator.clipboard) navigator.clipboard.writeText(out).then(function () { flash("Quote copied"); }, function () { flash("Could not copy"); });
+    var out = FA ? "«" + text.trim().replace(/\s+/g, " ") + "» — " + info.title + "، تسلط بر معرفت‌شناسی (" + location.href.split("#")[0] + ")"
+      : "“" + text.trim().replace(/\s+/g, " ") + "” — " + info.title + ", Mastering Epistemology (" + location.href.split("#")[0] + ")";
+    if (navigator.clipboard) navigator.clipboard.writeText(out).then(function () { flash(T("Quote copied", "نقل‌قول رونوشت شد")); }, function () { flash(T("Could not copy", "رونوشت انجام نشد")); });
   }
   var flashEl = null;
   function flash(msg) {
@@ -305,7 +310,7 @@
     if (!pop) {
       pop = el("div", "hl-ui hl-pop");
       pop.setAttribute("role", "dialog");
-      pop.setAttribute("aria-label", "Highlight and note");
+      pop.setAttribute("aria-label", T("Highlight and note", "نشانه‌گذاری و یادداشت"));
       pop.addEventListener("click", function (e) {
         var b = e.target.closest("button");
         if (!b || !popId) return;
@@ -320,10 +325,10 @@
     }
     popId = id;
     pop.innerHTML = '<div class="row">' + dots(it.color) + '<span class="sep"></span>' +
-      '<button type="button" data-act="copy" aria-label="Copy quote" title="Copy quote">' + ICON_COPY + "</button>" +
-      '<button type="button" data-act="delete" aria-label="Delete highlight" title="Delete highlight">' + ICON_TRASH + "</button></div>" +
-      '<textarea rows="4" placeholder="Write a note… (saved as you type)" aria-label="Note"></textarea>' +
-      '<div class="hl-foot"><a href="' + ROOT + 'notes/">Notebook</a><button type="button" data-act="done">Done</button></div>';
+      '<button type="button" data-act="copy" aria-label="' + T("Copy quote", "رونوشت از نقل‌قول") + '" title="' + T("Copy quote", "رونوشت از نقل‌قول") + '">' + ICON_COPY + "</button>" +
+      '<button type="button" data-act="delete" aria-label="' + T("Delete highlight", "حذفِ نشانه‌گذاری") + '" title="' + T("Delete highlight", "حذفِ نشانه‌گذاری") + '">' + ICON_TRASH + "</button></div>" +
+      '<textarea rows="4" placeholder="' + T("Write a note… (saved as you type)", "یادداشتی بنویسید… (همزمان ذخیره می‌شود)") + '" aria-label="' + T("Note", "یادداشت") + '"></textarea>' +
+      '<div class="hl-foot"><a href="' + HOME + 'notes/">' + T("Notebook", "دفترچه") + '</a><button type="button" data-act="done">' + T("Done", "تمام") + '</button></div>';
     var ta = pop.querySelector("textarea");
     ta.value = it.note || "";
     var t = 0;
@@ -349,7 +354,7 @@
     var page = article.closest(".page");
     if (!margin) {
       margin = el("aside", "hl-ui mnotes");
-      margin.setAttribute("aria-label", "Your notes");
+      margin.setAttribute("aria-label", T("Your notes", "یادداشت‌های شما"));
       page.appendChild(margin);
       margin.addEventListener("click", function (e) {
         var c = e.target.closest("[data-open]");
@@ -378,10 +383,13 @@
   function pageNotes() {
     if (!article) return;
     var box = el("section", "mynotes");
-    box.innerHTML = '<span class="kicker">Your notes</span><h2>In your own words</h2>' +
-      '<p>Summarise the chapter, or write down what you want to remember or question. Saved in this browser as you type.</p>' +
-      '<textarea rows="6" aria-label="Your notes on this chapter" placeholder="What is the main idea? What convinced you, and what didn’t?"></textarea>' +
-      '<p class="hint"><a href="' + ROOT + 'notes/">Open your notebook</a> to see every highlight and note, and to export them.</p>';
+    box.innerHTML = '<span class="kicker">' + T("Your notes", "یادداشت‌های شما") + '</span><h2>' + T("In your own words", "به زبانِ خودتان") + '</h2>' +
+      '<p>' + T("Summarise the chapter, or write down what you want to remember or question. Saved in this browser as you type.",
+        "فصل را خلاصه کنید، یا آنچه را می‌خواهید به یاد بسپارید یا زیرِ سؤال ببرید بنویسید. همزمان در همین مرورگر ذخیره می‌شود.") + '</p>' +
+      '<textarea rows="6" aria-label="' + T("Your notes on this chapter", "یادداشت‌های شما دربارهٔ این فصل") + '" placeholder="' +
+      T("What is the main idea? What convinced you, and what didn’t?", "ایدهٔ اصلی چیست؟ چه چیزی قانعتان کرد و چه چیزی نه؟") + '"></textarea>' +
+      '<p class="hint"><a href="' + HOME + 'notes/">' + T("Open your notebook", "دفترچه‌تان را باز کنید") + '</a>' +
+      T(" to see every highlight and note, and to export them.", " تا همهٔ نشانه‌گذاری‌ها و یادداشت‌ها را ببینید و برون‌بری کنید.") + '</p>';
     article.appendChild(box);
     var ta = box.querySelector("textarea"), id = "page:" + pageKey;
     var it = load().items[id];
@@ -437,7 +445,8 @@
   if (book) {
     var q = document.getElementById("nb-q"), colorSel = "all";
     function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-    function when(t) { try { return new Date(t).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }); } catch (e) { return ""; } }
+    function when(t) { try { return new Date(t).toLocaleDateString(FA ? "fa-IR" : undefined, { day: "numeric", month: "short", year: "numeric" }); } catch (e) { return ""; } }
+    function N(x) { return FA ? String(x).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }) : String(x); }
     function order(a, b) {
       var ga = /^guide\//.test(a.href) ? 0 : 1, gb = /^guide\//.test(b.href) ? 0 : 1;
       return ga - gb || String(a.href).localeCompare(String(b.href), undefined, { numeric: true });
@@ -455,32 +464,35 @@
         return [i.exact, i.note, i.text, i.q, i.a, i.pageTitle, i.sectionTitle].join(" ").toLowerCase().indexOf(term) >= 0;
       });
       document.getElementById("nb-count").textContent = items.length ?
-        items.filter(function (i) { return (i.type || "highlight") === "highlight"; }).length + " highlights · " + items.filter(function (i) { return i.note || i.text; }).length + " notes" : "";
+        N(items.filter(function (i) { return (i.type || "highlight") === "highlight"; }).length) + T(" highlights · ", " نشانه‌گذاری · ") +
+        N(items.filter(function (i) { return i.note || i.text; }).length) + T(" notes", " یادداشت") : "";
       if (!items.length) {
-        book.innerHTML = '<div class="nb-empty"><h2>Nothing here yet</h2><p>Select any sentence in a chapter or concept page and choose a colour to highlight it, ' +
-          'or <b>Note</b> to write about it. Your highlights and notes collect here.</p><p><a class="btn primary" href="' + ROOT + 'guide/01-what-is-epistemology.html">Start with chapter 1</a></p></div>';
+        book.innerHTML = '<div class="nb-empty"><h2>' + T("Nothing here yet", "هنوز چیزی اینجا نیست") + '</h2><p>' +
+          T("Select any sentence in a chapter or concept page and choose a colour to highlight it, or <b>Note</b> to write about it. Your highlights and notes collect here.",
+            "هر جمله‌ای را در یک فصل یا صفحهٔ مفهوم انتخاب کنید و رنگی برگزینید تا نشانه‌گذاری شود، یا <b>یادداشت</b> را بزنید تا دربارهٔ آن بنویسید. نشانه‌گذاری‌ها و یادداشت‌هایتان اینجا جمع می‌شوند.") +
+          '</p><p><a class="btn primary" href="' + HOME + 'guide/01-what-is-epistemology.html">' + T("Start with chapter 1", "آغاز از فصل ۱") + '</a></p></div>';
         return;
       }
-      if (!shown.length) { book.innerHTML = '<p class="nb-none">No highlights or notes match.</p>'; return; }
+      if (!shown.length) { book.innerHTML = '<p class="nb-none">' + T("No highlights or notes match.", "هیچ نشانه‌گذاری یا یادداشتی پیدا نشد.") + '</p>'; return; }
       book.innerHTML = groups(shown).map(function (list) {
         var head = list[0];
         var page = list.filter(function (i) { return i.type === "page"; })[0];
         var hl = list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; });
         var answer = function (i) {
-          return '<article class="nb-item nb-ai"><span class="kicker">Study companion</span>' + (i.q ? '<p class="nb-q">' + esc(i.q).replace(/\n/g, "<br>") + "</p>" : "") +
+          return '<article class="nb-item nb-ai"><span class="kicker">' + T("Study companion", "همراهِ مطالعه") + '</span>' + (i.q ? '<p class="nb-q">' + esc(i.q).replace(/\n/g, "<br>") + "</p>" : "") +
             '<p class="nb-note">' + esc(i.a).replace(/\n/g, "<br>") + '</p><footer>' + when(i.created) +
-            ' · <button type="button" data-del="' + esc(i.id) + '">Delete</button></footer></article>';
+            ' · <button type="button" data-del="' + esc(i.id) + '">' + T("Delete", "حذف") + '</button></footer></article>';
         };
         return '<section class="nb-page"><header><span class="kicker">' + esc(head.pageLabel) + '</span><h2><a href="' + ROOT + esc(head.href) + '">' +
           esc(head.pageTitle) + "</a></h2></header>" +
-          (page && page.text ? '<div class="nb-mine"><span class="kicker">In your own words</span><p>' + esc(page.text).replace(/\n/g, "<br>") + "</p></div>" : "") +
+          (page && page.text ? '<div class="nb-mine"><span class="kicker">' + T("In your own words", "به زبانِ خودتان") + '</span><p>' + esc(page.text).replace(/\n/g, "<br>") + "</p></div>" : "") +
           hl.map(function (i) {
             if (i.type === "ai") return answer(i);
             return '<article class="nb-item c-' + esc(i.color) + '"><blockquote>' + esc(i.exact) + "</blockquote>" +
               (i.note ? '<p class="nb-note">' + esc(i.note).replace(/\n/g, "<br>") + "</p>" : "") +
               '<footer>' + (i.sectionTitle ? esc(i.sectionTitle) + " · " : "") + when(i.created) +
-              ' · <a href="' + ROOT + esc(i.href) + "#hl-" + esc(i.id) + '">Open in context</a>' +
-              ' · <button type="button" data-del="' + esc(i.id) + '">Delete</button></footer></article>';
+              ' · <a href="' + ROOT + esc(i.href) + "#hl-" + esc(i.id) + '">' + T("Open in context", "دیدن در متن") + '</a>' +
+              ' · <button type="button" data-del="' + esc(i.id) + '">' + T("Delete", "حذف") + '</button></footer></article>';
           }).join("") + "</section>";
       }).join("");
     }
@@ -492,13 +504,14 @@
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
     }
     function markdown() {
-      var out = ["# My notes on Mastering Epistemology", "", "Exported " + new Date().toLocaleString() + " from " + ROOT, ""];
+      var out = [T("# My notes on Mastering Epistemology", "# یادداشت‌های من دربارهٔ «تسلط بر معرفت‌شناسی»"), "",
+        T("Exported ", "برون‌بری در ") + new Date().toLocaleString(FA ? "fa-IR" : undefined) + T(" from ", " از ") + ROOT, ""];
       groups(live(load())).forEach(function (list) {
         out.push("## " + list[0].pageTitle + (list[0].pageLabel ? " (" + list[0].pageLabel + ")" : ""), "", ROOT + list[0].href, "");
-        list.filter(function (i) { return i.type === "page" && i.text; }).forEach(function (i) { out.push("**In my own words:** " + i.text, ""); });
+        list.filter(function (i) { return i.type === "page" && i.text; }).forEach(function (i) { out.push(T("**In my own words:** ", "**به زبانِ خودم:** ") + i.text, ""); });
         var sec = null;
         list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; }).forEach(function (i) {
-          if (i.type === "ai") { out.push("**Asked:** " + (i.q || ""), "", i.a || "", ""); return; }
+          if (i.type === "ai") { out.push(T("**Asked:** ", "**پرسش:** ") + (i.q || ""), "", i.a || "", ""); return; }
           if (i.sectionTitle && i.sectionTitle !== sec) { sec = i.sectionTitle; out.push("### " + sec, ""); }
           out.push("> " + i.exact.replace(/\s+/g, " "), "");
           if (i.note) out.push(i.note, "");
@@ -508,7 +521,7 @@
     }
     book.addEventListener("click", function (e) {
       var b = e.target.closest("[data-del]");
-      if (!b || !confirm("Delete this highlight and its note?")) return;
+      if (!b || !confirm(T("Delete this highlight and its note?", "این نشانه‌گذاری و یادداشتش حذف شود؟"))) return;
       var d = load(); d.items[b.getAttribute("data-del")] = { id: b.getAttribute("data-del"), deleted: true, updated: Date.now() }; save(d);
     });
     q.addEventListener("input", render);
@@ -530,8 +543,8 @@
         var incoming = JSON.parse(txt);
         if (!incoming || !incoming.items) throw new Error("not a notes file");
         save(merge(load(), incoming));
-        alert("Imported. Notes you already had were kept; where both copies had a note, the newer one won.");
-      }).catch(function () { alert("That file doesn't look like an exported notes file (.json)."); });
+        alert(T("Imported. Notes you already had were kept; where both copies had a note, the newer one won.", "درون‌بری شد. یادداشت‌های قبلی حفظ شدند؛ هر جا هر دو نسخه یادداشت داشتند، نسخهٔ تازه‌تر ماند."));
+      }).catch(function () { alert(T("That file doesn't look like an exported notes file (.json).", "این پرونده به پروندهٔ برون‌بری‌شدهٔ یادداشت‌ها (.json) نمی‌ماند.")); });
       file.value = "";
     };
     document.addEventListener("epis:notes", render);

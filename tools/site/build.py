@@ -43,7 +43,9 @@ ART_DIR = ASSETS / "art"
 DIAGRAMS = ASSETS / "diagrams"
 TOOLS = Path(__file__).resolve().parent
 SITE = "Mastering Epistemology"
+SITE_FA = "تسلط بر معرفت‌شناسی"
 EPUB_NAME = "mastering-epistemology.epub"
+EPUB_NAME_FA = "mastering-epistemology-fa.epub"
 LIVE = "https://rhadadi.github.io/epis/"
 REPO = "https://github.com/Rhadadi/epis"
 
@@ -56,6 +58,50 @@ PARTS = [
     ("", "Appendices", [17, 18]),
 ]
 PART_OF = {n: (roman, name) for roman, name, nums in PARTS for n in nums}
+PARTS_FA = {"I": ("یکم", "بنیادها"), "II": ("دوم", "هستهٔ معرفت‌شناسی"), "III": ("سوم", "شواهد، علم و حقیقت"),
+            "IV": ("چهارم", "معرفت در جامعه و در ذهن"), "V": ("پنجم", "عمل"), "": ("", "پیوست‌ها")}
+
+# The site is built twice: in English at the root, and in Persian under fa/. LANG says which.
+LANG = "en"
+FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+
+
+def L(en, fa):
+    """The English or the Persian version of a piece of text, for the language being built."""
+    return fa if LANG == "fa" else en
+
+
+def num(x):
+    return str(x).translate(FA_DIGITS) if LANG == "fa" else str(x)
+
+
+def up(n):
+    """Relative path from a page n folders deep (in the English layout) back to the site root."""
+    return "../" * (n + (1 if LANG == "fa" else 0))
+
+
+def home(root):
+    """From the site root to the home of the language being built."""
+    return root + ("fa/" if LANG == "fa" else "")
+
+
+def site_name():
+    return L(SITE, SITE_FA)
+
+
+def OUT():
+    return ROOT / "fa" if LANG == "fa" else ROOT
+
+
+def SRC():
+    return GUIDE / "fa" if LANG == "fa" else GUIDE
+
+
+def part_label(roman, name):
+    if LANG == "fa":
+        word, fa_name = PARTS_FA.get(roman, ("", name))
+        return (f"بخش {word}" if word else "پیوست‌ها"), fa_name
+    return (f"Part {roman}" if roman else "Also"), name
 
 # Concept-map branches: the guide chapter that covers each one, and its artwork.
 BRANCH_CHAPTER = {"root": 1, "trilemma": 6, "know": 5, "truth": 11, "sources": 7, "skep": 8, "formal": 9,
@@ -92,8 +138,11 @@ def icon(name, cls="icon"):
         "user": '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
         "chat": '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/>',
         "menu": '<path d="M4 7h16M4 12h16M4 17h16"/>',
+        "globe": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/>',
         "review": '<path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6"/><path d="M4 4v4.6h4.6"/><path d="M12 8v4l3 2"/>',
     }
+    if name in ("arrow", "back") and cls == "icon":
+        cls = "icon flip"  # arrows point the other way in right-to-left pages
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
 
@@ -110,7 +159,7 @@ BOOT = ('(function(){var d=document.documentElement,g=function(k){try{return loc
         'var k=p==="dark"||(p==="system"&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);'
         'if(sh==="sepia")k=false;if(sh==="black")k=true;'
         'd.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);if(sh)d.setAttribute("data-shade",sh);'
-        'if(g("epistemology-lang")==="fa")d.setAttribute("data-lang","fa");'
+        'if(d.lang==="fa"||(g("epistemology-lang")==="fa"&&d.getAttribute("data-bilingual")!==null))d.setAttribute("data-lang","fa");'
         'try{var r=JSON.parse(g("epis-reader")||"{}");if(r.scale)d.style.setProperty("--read-scale",r.scale);'
         'if(r.lead)d.style.setProperty("--read-lead",r.lead);if(r.width)d.setAttribute("data-width",r.width);'
         'if(r.font)d.setAttribute("data-font",r.font)}catch(e){}'
@@ -139,6 +188,8 @@ def words(text):
 
 def minutes_label(sec):
     m = round(sec / 60)
+    if LANG == "fa":
+        return f"{num(m // 60)} ساعت و {num(m % 60)} دقیقه" if m >= 60 else f"{num(m)} دقیقه"
     return f"{m // 60} h {m % 60:02d} min" if m >= 60 else f"{m} min"
 
 
@@ -185,14 +236,23 @@ class Art:
     def srcset(self, key, root):
         return ", ".join(f"{root}assets/art/{key}-{w}.jpg {w}w" for w in self.SIZES)
 
-    def caption(self, key, italic=True):
+    def meta(self, key):
         i = self.info.get(key, {})
+        return i.get("fa", i) if LANG == "fa" else i
+
+    def caption(self, key, italic=True):
+        i = self.meta(key)
+        if LANG == "fa":
+            bits = [esc(i.get("artist", "")), f"«{esc(i.get('title', ''))}»", esc(i.get("date", ""))]
+            return "، ".join(b for b in bits if b and b != "«»")
         title = f"<i>{esc(i.get('title', ''))}</i>" if italic else esc(i.get("title", ""))
         bits = [esc(i.get("artist", "")), title, esc(i.get("date", ""))]
         return ", ".join(b for b in bits if b)
 
     def alt(self, key):
-        i = self.info.get(key, {})
+        i = self.meta(key)
+        if LANG == "fa":
+            return f"«{i.get('title', '')}» اثر {i.get('artist', '')} ({i.get('date', '')})"
         return f"{i.get('title', '')} by {i.get('artist', '')} ({i.get('date', '')})"
 
     def img(self, key, root, sizes="100vw", cls="art", eager=False):
@@ -269,7 +329,7 @@ def guide_links(prefix=""):
     return rewrite
 
 
-def render_mermaid(md):
+def render_mermaid(md, prune=True):
     """Render diagrams missing from the cache; returns hash -> (light svg, dark svg) or None."""
     DIAGRAMS.mkdir(parents=True, exist_ok=True)
     todo = {h: src for h, src in md.mermaid.items()
@@ -283,7 +343,7 @@ def render_mermaid(md):
             print(f"  warning: could not render {len(todo)} diagram(s) ({e}); they will be shown as text")
         finally:
             job.unlink(missing_ok=True)
-    for old in DIAGRAMS.glob("*.svg"):
+    for old in DIAGRAMS.glob("*.svg") if prune else []:
         if old.stem.rsplit("-", 1)[0] not in md.mermaid:
             old.unlink()
     out = {}
@@ -347,24 +407,30 @@ def polish(body):
 
 # ----------------------------------------------------------------------------- page shell
 
-def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False):
-    nav = [("guide", f"{root}guide/", "book", "Guide"), ("concepts", f"{root}concepts/", "grid", "Concepts"),
-           ("map", f"{root}map/", "map", "Map"), ("audio", f"{root}guide/audio/", "phones", "Listen"),
-           ("account", f"{root}account/", "user", "My study")]
+def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
+          alt=None, bilingual=False):
+    h = home(root)
+    nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
+           ("map", f"{root}map/", "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن")),
+           ("account", f"{h}account/", "user", L("My study", "مطالعهٔ من"))]
     here = ' aria-current="page"'
     links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
                     for key, href, ic, label in nav)
     preload = (f'<link rel="preload" as="image" href="{hero_img[0]}" imagesrcset="{hero_img[1]}" imagesizes="100vw">'
                if hero_img else "")
-    full_title = title if title == SITE else f"{title} · {SITE}"
-    reader_btn = ('<button class="tbtn rbtn" id="reader" type="button" aria-label="Reading settings" title="Reading settings (A)" '
-                  'aria-expanded="false" aria-controls="rpanel">Aa</button>')
-    ask_btn = (f'<button class="tbtn" id="ask" type="button" aria-expanded="false" aria-label="Ask the study companion" title="Ask about this page (I)">'
-               f'{icon("chat")}</button>') if reader else ""
-    focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="Focus mode" title="Focus mode (F)">'
-                 f'{icon("focus")}</button>') if focus else ""
+    full_title = title if title == site_name() else f"{title} · {site_name()}"
+    reader_btn = (f'<button class="tbtn rbtn" id="reader" type="button" aria-label="{L("Reading settings", "تنظیمات خواندن")}" '
+                  f'title="{L("Reading settings (A)", "تنظیمات خواندن (A)")}" aria-expanded="false" aria-controls="rpanel">Aa</button>')
+    ask_btn = (f'<button class="tbtn" id="ask" type="button" aria-expanded="false" aria-label="{L("Ask the study companion", "پرسش از همراهِ مطالعه")}" '
+               f'title="{L("Ask about this page (I)", "دربارهٔ این صفحه بپرسید (I)")}">{icon("chat")}</button>') if reader else ""
+    focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="{L("Focus mode", "حالت تمرکز")}" '
+                 f'title="{L("Focus mode (F)", "حالت تمرکز (F)")}">{icon("focus")}</button>') if focus else ""
+    lang_btn = (f'<a class="tbtn lang" id="lang" href="{alt}" hreflang="{L("fa", "en")}" lang="{L("fa", "en")}" '
+                f'data-set-site-lang="{L("fa", "en")}" title="{L("فارسی", "English")}">{L("فا", "EN")}</a>') if alt else ""
+    alt_link = f'<link rel="alternate" hreflang="{L("fa", "en")}" href="{alt}">' if alt else ""
+    attrs = ' lang="fa" dir="rtl" data-lang="fa"' if LANG == "fa" else ' lang="en"'
     return f"""<!doctype html>
-<html lang="en" data-theme="light">
+<html{attrs} data-theme="light"{" data-bilingual" if bilingual else ""}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -376,21 +442,23 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{root}assets/icon-192.png">
 <link rel="manifest" href="{root}manifest.webmanifest">
+{alt_link}
 <link rel="stylesheet" href="{root}assets/fonts/fonts.css">
 <link rel="stylesheet" href="{root}assets/site.css">
 {preload}{extra_head}
 <script>{BOOT}</script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">{L("Skip to content", "رفتن به متن")}</a>
 <header class="bar {bar}">
-  <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
-  <nav aria-label="Site">{links}</nav>
-  <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
-  <button class="tbtn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
+  <a class="brand" href="{h}" aria-label="{site_name()}, {L("home", "صفحهٔ نخست")}">{LOGO}<span><b>{site_name()}</b><small>{L("Guide · Map · Audio", "راهنما · نقشه · صوت")}</small></span></a>
+  <nav class="site-nav" aria-label="{L("Site", "سایت")}">{links}</nav>
+  <button class="tbtn" id="search" type="button" aria-label="{L("Search the guide", "جست‌وجو در راهنما")}" title="{L("Search (/)", "جست‌وجو (/)")}">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}{lang_btn}<button class="tbtn" id="theme" type="button" aria-label="{L("Theme", "پوسته")}"></button>
+  <button class="tbtn" id="menu" type="button" aria-label="{L("Menu", "فهرست")}" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
 </header>
-<nav class="mnav" id="mnav" aria-label="Menu" hidden>{links}<span class="sep"></span>
-  <a href="{root}notes/">{icon("pen")}<span>Notebook</span></a><a href="{root}review/">{icon("review")}<span>Review questions</span></a></nav>
+<nav class="mnav" id="mnav" aria-label="{L("Menu", "فهرست")}" hidden>{links}<span class="sep"></span>
+  <a href="{h}notes/">{icon("pen")}<span>{L("Notebook", "دفترچه")}</span></a><a href="{h}review/">{icon("review")}<span>{L("Review questions", "مرور پرسش‌ها")}</span></a>
+  {f'<a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else ""}</nav>
 {body}
 {footer(root)}
 <script src="{root}assets/site.js" defer></script>
@@ -405,27 +473,31 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 
 
 def footer(root):
+    h = home(root)
+    epub = f"{h}guide/{EPUB_NAME_FA if LANG == 'fa' else EPUB_NAME}"
     return f"""<footer class="foot">
   <div class="wrap">
     <div>
-      <a class="brand" href="{root}">{LOGO}<span><b>{SITE}</b></span></a>
-      <p>A complete guide to knowledge, evidence, and critical thinking, with a bilingual concept map and a narrated audio edition.</p>
-      <p>Artwork: public domain, via Wikimedia Commons (<a href="{root}credits.html">credits</a>). The narration uses a synthetic voice.</p>
+      <a class="brand" href="{h}">{LOGO}<span><b>{site_name()}</b></span></a>
+      <p>{L("A complete guide to knowledge, evidence, and critical thinking, with a bilingual concept map and a narrated audio edition.",
+            "راهنمایی کامل دربارهٔ معرفت، شواهد و تفکر نقادانه، با نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی.")}</p>
+      <p>{L(f'Artwork: public domain, via Wikimedia Commons (<a href="{h}credits.html">credits</a>). The narration uses a synthetic voice.',
+            f'آثار هنری: مالکیت عمومی، از ویکی‌انبار (<a href="{h}credits.html">منابع</a>). روایت صوتی با صدای ساختگی و به زبان انگلیسی است.')}</p>
     </div>
-    <div><h3>Read</h3><ul>
-      <li><a href="{root}guide/">Contents</a></li>
-      <li><a href="{root}guide/01-what-is-epistemology.html">Start with chapter 1</a></li>
-      <li><a href="{root}guide/17-glossary.html">Glossary</a></li>
-      <li><a href="{root}guide/18-reading-list.html">Reading list and study plan</a></li>
-      <li><a href="{root}guide/{EPUB_NAME}" download>EPUB for e-readers</a></li></ul></div>
-    <div><h3>Explore</h3><ul>
-      <li><a href="{root}map/">Concept map</a></li>
-      <li><a href="{root}concepts/">All 135 concepts</a></li>
-      <li><a href="{root}guide/audio/">Audio edition</a></li>
-      <li><a href="{root}account/">My study (sign in)</a></li>
-      <li><a href="{root}notes/">Your notebook</a></li>
-      <li><a href="{root}review/">Review questions</a></li>
-      <li><a href="{REPO}">Source on GitHub</a></li></ul></div>
+    <div><h3>{L("Read", "خواندن")}</h3><ul>
+      <li><a href="{h}guide/">{L("Contents", "فهرست مطالب")}</a></li>
+      <li><a href="{h}guide/01-what-is-epistemology.html">{L("Start with chapter 1", "آغاز از فصل ۱")}</a></li>
+      <li><a href="{h}guide/17-glossary.html">{L("Glossary", "واژه‌نامه")}</a></li>
+      <li><a href="{h}guide/18-reading-list.html">{L("Reading list and study plan", "فهرست مطالعه و برنامهٔ درسی")}</a></li>
+      <li><a href="{epub}" download>{L("EPUB for e-readers", "نسخهٔ EPUB برای کتاب‌خوان")}</a></li></ul></div>
+    <div><h3>{L("Explore", "کاوش")}</h3><ul>
+      <li><a href="{root}map/">{L("Concept map", "نقشهٔ مفاهیم")}</a></li>
+      <li><a href="{h}concepts/">{L("All 135 concepts", "همهٔ ۱۳۵ مفهوم")}</a></li>
+      <li><a href="{h}guide/audio/">{L("Audio edition", "نسخهٔ صوتی (انگلیسی)")}</a></li>
+      <li><a href="{h}account/">{L("My study (sign in)", "مطالعهٔ من (ورود)")}</a></li>
+      <li><a href="{h}notes/">{L("Your notebook", "دفترچهٔ شما")}</a></li>
+      <li><a href="{h}review/">{L("Review questions", "مرور پرسش‌ها")}</a></li>
+      <li><a href="{REPO}">{L("Source on GitHub", "کد منبع در گیت‌هاب")}</a></li></ul></div>
   </div>
 </footer>"""
 
@@ -447,11 +519,12 @@ def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=Non
 
 
 def label(art, key):
-    i = art.info.get(key, {})
+    i = art.meta(key)
     if not i.get("note"):
         return ""
-    place = f", {esc(i['place'])}" if i.get("place") else ""
-    return (f'<div class="art-label"><span class="kicker">On the cover</span>'
+    sep = L(", ", "، ")
+    place = f"{sep}{esc(i['place'])}" if i.get("place") else ""
+    return (f'<div class="art-label"><span class="kicker">{L("On the cover", "روی جلد")}</span>'
             f'<p><cite>{art.caption(key)}{place}.</cite> {esc(i["note"])}</p></div>')
 
 
@@ -464,27 +537,32 @@ def tile(art, key, root, href, kicker, title, sub="", cls="tile"):
 # ----------------------------------------------------------------------------- guide
 
 class Chapter:
-    def __init__(self, path):
+    def __init__(self, path, fallback=False):
         self.path = path
         self.num = int(path.name[:2])
         self.slug = path.stem
         self.text = path.read_text(encoding="utf-8")
+        self.fallback = fallback  # a Persian page showing the English text until the translation exists
+        self.lang = "en" if fallback else LANG
         first = self.text.split("\n", 1)[0].lstrip("# ").strip()
-        m = re.match(r"Chapter \d+\.\s+(.*)", first)
+        m = re.match(r"(?:Chapter|فصل)\s*[\d۰-۹]+[.:]\s+(.*)", first)
         self.title = m.group(1) if m else first
         self.art = f"ch{self.num:02d}"
         self.href = f"{self.slug}.html"
-        self.minutes = max(1, round(words(self.text) / 230))
+        if self.lang == "fa":
+            self.minutes = max(1, round(len(re.findall(r"\w+", self.text)) / 200))
+        else:
+            self.minutes = max(1, round(words(self.text) / 230))
         self.blurb = ""
         self.track = None
 
     @property
     def label(self):
-        return f"Chapter {self.num}" if self.num <= 16 else "Appendix"
+        return (f"فصل {num(self.num)}" if self.num <= 16 else "پیوست") if LANG == "fa" else (f"Chapter {self.num}" if self.num <= 16 else "Appendix")
 
 
 def read_blurbs(chapters):
-    readme = (GUIDE / "README.md").read_text(encoding="utf-8")
+    readme = (SRC() / "README.md").read_text(encoding="utf-8")
     for row in re.findall(r"^\|\s*(\d+)\s*\|\s*\[[^\]]*\]\([^)]*\)\s*\|\s*(.*?)\s*\|\s*$", readme, re.M):
         n = int(row[0])
         if n in chapters:
@@ -519,9 +597,9 @@ def clean_chapter_markdown(text):
     text = text.split("\n", 1)[1]  # title goes in the hero
     text = "\n".join(l for l in text.split("\n")
                      if not (l.startswith("[") and "](README.md)" in l)
-                     and not l.startswith("**Audio:**")
+                     and not l.startswith(("**Audio:**", "**صوت:**"))
                      and l.strip() != "---")
-    text = re.sub(r"\n## In this (?:chapter|appendix)\n.*?(?=\n## )", "\n", text, flags=re.S)
+    text = re.sub(r"\n## (?:In this (?:chapter|appendix)|در این (?:فصل|پیوست))\n.*?(?=\n## )", "\n", text, flags=re.S)
     return text
 
 
@@ -545,31 +623,55 @@ def match_audio(ch, heads):
     return {h[1]: s["start"] for h, s in zip(h2, secs)}
 
 
+EN_HEADS = {}  # chapter number -> headings of the English text, so Persian pages can reuse its section ids
+
+
 def build_chapter(ch, chapters, md, art, svgs_later, C):
-    root = "../"
+    root = up(1)
     text, epigraphs = split_epigraphs(ch.text)
     body_md = clean_chapter_markdown(text)
     body, heads = md.render(body_md, guide_links())
+    if LANG == "fa" and not ch.fallback and ch.num in EN_HEADS:
+        # Persian headings get the English section ids, so links, audio markers and highlights line up.
+        en = EN_HEADS[ch.num]
+        if [h[0] for h in heads] != [h[0] for h in en]:
+            print(f"  note: fa/{ch.slug}: heading structure differs from the English ({len(heads)} vs {len(en)})")
+        mapped = []
+        for i, h in enumerate(heads):
+            if i < len(en) and en[i][0] == h[0]:
+                body = body.replace(f'<h{h[0]} id="{h[1]}">', f'<h{h[0]} id="\x00{en[i][1]}">', 1)
+                mapped.append((h[0], en[i][1], h[2], h[3]))
+            else:
+                mapped.append(h)
+        body = body.replace('id="\x00', 'id="')
+        heads = mapped
+    if LANG == "en":
+        EN_HEADS[ch.num] = heads
+    elif not ch.fallback:
+        for h in heads:
+            FA_HEADS[(ch.num, h[1])] = h[2]
     body = polish(body)
-    at = match_audio(ch, heads)
+    at = match_audio(EN_CHAPTERS.get(ch.num, ch), EN_HEADS.get(ch.num, heads))
 
     def h2(m):
         slug, inner = m.group(1), m.group(2)
         hear = ""
         if slug in at:
-            hear = (f'<button class="hear" type="button" data-at="{at[slug]}" title="Listen from this section">'
-                    f'{icon("phones")}<span>Listen</span></button>')
+            hear = (f'<button class="hear" type="button" data-at="{at[slug]}" title="{L("Listen from this section", "شنیدن از این بخش (انگلیسی)")}">'
+                    f'{icon("phones")}<span>{L("Listen", "شنیدن")}</span></button>')
         return f'<h2 id="{slug}"><span class="ht">{inner}</span>{hear}</h2>'
     body = re.sub(r'<h2 id="([^"]+)">(.*?)</h2>', h2, body)
     if ch.num == 17:
-        body = re.sub(r'<h2 id="([a-z])"><span class="ht">([A-Z])</span></h2>', r'<h2 id="\1" class="glossary-letter">\2</h2>', body)
+        body = re.sub(r'<h2 id="([^"]{1,3})"><span class="ht">([^<]{1,3})</span></h2>', r'<h2 id="\1" class="glossary-letter">\2</h2>', body)
     body = re.sub(r"^<p>", '<p class="lede">', body, count=1)
     if ch.num <= 16:
         body = link_terms(body)
     else:
-        body = re.sub(r"<p><strong>(.+?)\.</strong>",
-                      lambda m: (f'<p id="{LEARN["glossary_ids"][html.unescape(strip_tags(m.group(1)))]}" class="gterm"><strong>{m.group(1)}.</strong>'
-                                 if html.unescape(strip_tags(m.group(1))) in LEARN["glossary_ids"] else m.group(0)), body)
+        def gterm(m):
+            key = html.unescape(strip_tags(m.group(1)))
+            gid = LEARN["glossary_ids"].get(key)
+            return f'<p id="{gid}" class="gterm"><strong>{m.group(1)}.</strong>' if gid else m.group(0)
+        body = re.sub(r"<p><strong>(.+?)\.</strong>", gterm, body)
     collect_sections(ch, body)
 
     more_quotes = "".join(
@@ -578,45 +680,71 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     toc_items = [(slug, inner) for level, slug, plain, inner in heads if level == 2]
     toc = "".join(f'<li><a href="#{slug}">{re.sub(r"<[^>]+>", "", inner)}</a></li>' for slug, inner in toc_items)
     roman, part = PART_OF.get(ch.num, ("", ""))
-    kicker = (f"Part {roman} · {part} · Chapter {ch.num}" if roman else "Appendix")
-    facts = [f"{icon('clock')} {ch.minutes} min read"]
-    listen_card, actions = "", f'<a class="btn primary" href="#main">Start reading {icon("arrow")}</a>'
+    if roman:
+        pl, pn = part_label(roman, part)
+        kicker = f"{pl} · {pn} · {ch.label}"
+    else:
+        kicker = L("Appendix", "پیوست")
+    facts = [f"{icon('clock')} {num(ch.minutes)} {L('min read', 'دقیقه مطالعه')}"]
+    listen_card, actions = "", f'<a class="btn primary" href="#main">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
     if ch.track:
-        facts.append(f"{icon('phones')} {minutes_label(ch.track['duration'])} audio")
-        sections = [{"t": "Opening" if i == 0 else s["title"], "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
+        facts.append(f"{icon('phones')} {minutes_label(ch.track['duration'])} {L('audio', 'صوت انگلیسی')}")
+        titles = {}
+        if LANG == "fa":
+            by_time = {t: s for s, t in at.items()}
+            fa_title = {slug: re.sub(r"<[^>]+>", "", inner) for level, slug, plain, inner in heads if level == 2}
+            titles = {t: fa_title.get(s, "") for t, s in by_time.items()}
+        def sec_title(i, s):
+            if i == 0:
+                return L("Opening", "آغاز")
+            if LANG == "fa":
+                return titles.get(s["start"]) or ("پایان و آزمونک" if s["title"].startswith("End of chapter") else s["title"])
+            return s["title"]
+        sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
         chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{int(s["s"] // 60)}:{int(s["s"] % 60):02d}</small></button>'
                         for s in sections)
-        listen_card = (f'<section class="listen" data-audio="audio/{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
-                       f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections))}" aria-label="Listen to this chapter">'
-                       f'<button class="play" type="button" aria-label="Play the narrated chapter">{icon("play", "icon i-play")}'
+        listen_card = (f'<section class="listen" data-audio="{root}guide/audio/{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
+                       f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
+                       f'aria-label="{L("Listen to this chapter", "شنیدن این فصل")}">'
+                       f'<button class="play" type="button" aria-label="{L("Play the narrated chapter", "پخش روایت صوتی فصل")}">{icon("play", "icon i-play")}'
                        f'<svg class="icon i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor" stroke="none"/></svg></button>'
-                       f'<span class="kicker">Listen · {minutes_label(ch.track["duration"])} · narrated</span>'
-                       f'<h2>Hear this chapter read aloud <span class="resume" style="font-weight:400;color:var(--dim)"></span></h2>'
+                       f'<span class="kicker">{L("Listen", "شنیدن")} · {minutes_label(ch.track["duration"])} · {L("narrated", "روایت به انگلیسی")}</span>'
+                       f'<h2>{L("Hear this chapter read aloud", "این فصل را بشنوید")} <span class="resume" style="font-weight:400;color:var(--dim)"></span></h2>'
                        f'<div class="row">{chips}</div></section>')
-        actions += f'<button class="btn" type="button" data-listen>{icon("phones")} Listen</button>'
+        actions += f'<button class="btn" type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>'
     dek = cite = None
     if epigraphs:
         dek, cite = md.inline(epigraphs[0][0]), md.inline(epigraphs[0][1])
-    head = hero(art, ch.art, root, kicker=kicker, title=esc(ch.title), dek=dek, cite=cite, facts=facts, actions=actions)
+        if ch.fallback:
+            dek, cite = f'<span dir="ltr" lang="en">{dek}</span>', f'<span dir="ltr" lang="en">{cite}</span>'
+    head = hero(art, ch.art, root, kicker=kicker, title=title_html(ch), dek=dek, cite=cite, facts=facts, actions=actions)
 
-    listen_link = (f'<button type="button" data-listen>{icon("phones")} Listen</button>' if ch.track else "")
-    focus_head = (f'<div class="focus-head"><span class="kicker">{kicker}</span><div class="ftitle" role="heading" aria-level="1">{esc(ch.title)}</div>'
-                  f'<div class="fmeta"><span>{ch.minutes} min read</span>{listen_link}'
-                  f'<button type="button" data-focus-toggle>Leave focus mode</button></div></div>')
+    listen_link = (f'<button type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>' if ch.track else "")
+    focus_head = (f'<div class="focus-head"><span class="kicker">{kicker}</span><div class="ftitle" role="heading" aria-level="1">{title_html(ch)}</div>'
+                  f'<div class="fmeta"><span>{num(ch.minutes)} {L("min read", "دقیقه مطالعه")}</span>{listen_link}'
+                  f'<button type="button" data-focus-toggle>{L("Leave focus mode", "خروج از حالت تمرکز")}</button></div></div>')
     prev_ch, next_ch = chapters.get(ch.num - 1), chapters.get(ch.num + 1)
-    pager = '<nav class="pager" aria-label="Chapters">'
-    pager += (tile(art, prev_ch.art, root, prev_ch.href, f"← Previous · {prev_ch.label}", esc(prev_ch.title)) if prev_ch
-              else tile(art, "guide", root, "./", "← Contents", "The guide"))
-    pager += (tile(art, next_ch.art, root, next_ch.href, f"Next · {next_ch.label} →", esc(next_ch.title), cls="tile next") if next_ch
-              else tile(art, "home", root, "../", "Home →", SITE, cls="tile next"))
+    prev_w, next_w = L("← Previous", "→ قبلی"), L("Next", "بعدی")
+    pager = f'<nav class="pager" aria-label="{L("Chapters", "فصل‌ها")}">'
+    pager += (tile(art, prev_ch.art, root, prev_ch.href, f"{prev_w} · {prev_ch.label}", esc(prev_ch.title)) if prev_ch
+              else tile(art, "guide", root, "./", L("← Contents", "→ فهرست"), L("The guide", "راهنما")))
+    pager += (tile(art, next_ch.art, root, next_ch.href, f"{next_w} · {next_ch.label} {L('→', '←')}", esc(next_ch.title), cls="tile next") if next_ch
+              else tile(art, "home", root, "../", L("Home →", "صفحهٔ نخست ←"), site_name(), cls="tile next"))
     pager += "</nav>"
+    notice = ""
+    prose_attrs = ""
+    if ch.fallback:
+        notice = ('<div class="fa-pending" dir="rtl" lang="fa"><b>ترجمهٔ این فصل در راه است.</b> '
+                  'تا آماده شود، متن انگلیسی را می‌بینید. بقیهٔ سایت به فارسی است.</div>')
+        prose_attrs = ' dir="ltr" lang="en"'
+    in_ch = L("In this chapter", "در این فصل")
     page = (f"{head}{label(art, ch.art)}"
-            f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="In this chapter">'
-            f'<span class="kicker">In this chapter</span><ol>{toc}</ol></nav></aside>'
-            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{listen_card}<details class="mini-toc"><summary>In this chapter</summary><ol>{toc}</ol></details>'
-            f'<div class="prose">{more_quotes}{body}</div>{deeper_box(ch, C) if ch.num <= 16 else ""}</article></main>{pager}')
+            f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
+            f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
+            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{notice}{listen_card}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
+            f'<div class="prose"{prose_attrs}>{more_quotes}{body}</div>{deeper_box(ch, C, root) if ch.num <= 16 else ""}</article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
-    svgs_later.append((GUIDE / ch.href, page, root, ch, desc))
+    svgs_later.append((OUT() / "guide" / ch.href, page, root, ch, desc))
 
 
 # ----------------------------------------------------------------------------- concepts
@@ -839,29 +967,137 @@ def build_concepts(C, chapters, md, art, pages):
                   "Every concept in the epistemology map as a readable page, in English and Persian.", body, "concepts", "elephant"))
 
 
+def build_concepts_fa(C, chapters, md, art, pages):
+    root = up(1)
+    idx = guide_heading_index(EN_CHAPTERS, md)
+    order = []
+
+    def walk(cid):
+        order.append(cid)
+        for c in C.N[cid].get("c", []):
+            if c in C.N:
+                walk(c)
+    walk("root")
+    for cid in order:
+        n = C.N[cid]
+        branch = C.branch(cid)
+        key = BRANCH_ART.get(branch, "home")
+        chn = BRANCH_CHAPTER.get(branch, 1)
+        route = C.route(cid)[:-1]
+        crumbs = "".join(f'<a href="{a}.html">{esc(C.title(a, "fa"))}</a><span>‹</span>' for a in route)
+        who = n.get("w", "")
+        extra = (f'<div class="crumbs">{crumbs or "<span>نقشهٔ مفاهیم</span>"}</div>'
+                 f'<h1>{esc(C.title(cid, "fa"))}</h1><div class="en-title" lang="en" dir="ltr">{esc(C.title(cid))}</div>'
+                 f'<div class="who" dir="ltr">{esc(who)}</div>'
+                 f'<div class="actions"><a class="btn" href="{root}map/#{cid}" data-set-site-lang="fa">{icon("pin")} نمایش روی نقشه</a>'
+                 f'<a class="btn" href="{root}concepts/{cid}.html" lang="en" data-set-site-lang="en">English</a></div>')
+        head = hero(art, key, root, kicker="", title="", cls="band", title_html=extra)
+        entry = f'<div class="entry"><div class="l-fa" lang="fa" dir="rtl">{concept_body(C, cid, "fa")}</div></div>'
+        side = []
+        kids = [k for k in n.get("c", []) if k in C.N]
+        if kids:
+            li = "".join(f'<li><a href="{k}.html"><b>{esc(C.title(k, "fa"))}</b><small>{esc(strip_tags(C.line(k, "fa")))}</small></a></li>' for k in kids)
+            side.append(f'<section class="box"><h2>عمیق‌تر شوید · {num(len(kids))}</h2><ul>{li}</ul></section>')
+        links = [k for k in n.get("k", []) if k in C.N]
+        if links:
+            li = "".join(f'<li><a href="{k}.html"><b>↖ {esc(C.title(k, "fa"))}</b></a></li>' for k in links)
+            side.append(f'<section class="box"><h2>پیوندها در سراسر نقشه</h2><ul>{li}</ul></section>')
+        ch = chapters[chn]
+        sec = best_section(n["t"], chn, idx) if cid != "root" else None
+        if sec:
+            ch = chapters[sec[0]]
+            head_fa = next((h[2] for h in EN_HEADS.get(sec[0], []) if h[1] == sec[1]), sec[2])
+            href = f"../guide/{ch.href}#{sec[1]}"
+            where = f"§ {esc(FA_HEADS.get((sec[0], sec[1]), head_fa))}"
+        else:
+            href, where = f"../guide/{ch.href}", "خواندنِ فصل"
+        side.append(f'<section class="box"><h2>در راهنما</h2>'
+                    f'<a class="guidebox" href="{href}"><img src="{art.src(ch.art, root, 640)}" alt="" loading="lazy">'
+                    f'<span><small>{ch.label}</small><b>{esc(ch.title)}</b><small style="text-transform:none;letter-spacing:0">{where}</small></span></a></section>')
+        q = n.get("q") or n["t"]
+        side.append(f'<section class="box"><h2>مطالعهٔ بیشتر</h2><ul>'
+                    f'<li><a href="https://fa.wikipedia.org/w/index.php?search={attr(C.title(cid, "fa").replace(" ", "+"))}" rel="noopener"><b>ویکی‌پدیای فارسی ↗</b><small>پیش‌زمینه و مطالعهٔ بیشتر</small></a></li>'
+                    f'<li><a href="https://plato.stanford.edu/search/searcher.py?query={attr(q.replace(" ", "+"))}" rel="noopener"><b>دانشنامهٔ فلسفهٔ استنفورد ↗</b><small>مقاله‌های مرجعِ داوری‌شده (انگلیسی)</small></a></li>'
+                    f'</ul></section>')
+        par = C.parent.get(cid)
+        sibs = [s_ for s_ in C.N[par]["c"] if s_ in C.N] if par else []
+        i = sibs.index(cid) if cid in sibs else -1
+        prev_id = sibs[i - 1] if i > 0 else None
+        next_id = sibs[i + 1] if 0 <= i < len(sibs) - 1 else (kids[0] if kids else None)
+        sib = '<nav class="sibs" aria-label="مفاهیمِ هم‌جوار">'
+        if prev_id:
+            sib += f'<a href="{prev_id}.html"><small>→ قبلی</small><b>{esc(C.title(prev_id, "fa"))}</b></a>'
+        elif par:
+            sib += f'<a href="{par}.html"><small>↑ بالاتر</small><b>{esc(C.title(par, "fa"))}</b></a>'
+        if next_id:
+            sib += f'<a class="n" href="{next_id}.html"><small>بعدی ←</small><b>{esc(C.title(next_id, "fa"))}</b></a>'
+        sib += "</nav>"
+        body = (f"{head}<main id=\"main\" class=\"cpage\">{entry}<aside class=\"aside\">{''.join(side)}</aside></main>{sib}")
+        desc = strip_tags(C.line(cid, "fa")) or f"{C.title(cid, 'fa')}: مفهومی در معرفت‌شناسی."
+        pages.append((OUT() / "concepts" / f"{cid}.html", root, f"{C.title(cid, 'fa')} · مفاهیم", desc, body, "concepts", key))
+
+    branches = [b for b in C.N["root"]["c"] if b in C.N]
+    blocks = []
+    for b in branches:
+        members = []
+
+        def walk2(cid, depth):
+            for c in C.N[cid].get("c", []):
+                if c in C.N:
+                    members.append((c, depth))
+                    walk2(c, depth + 1)
+        walk2(b, 0)
+        hay = lambda cid: attr((C.title(cid) + " " + C.title(cid, "fa") + " " + strip_tags(C.line(cid, "fa")) + " " + C.N[cid].get("q", "")).lower())
+        items = "".join(f'<a class="{"d3" if d else ""}" href="{c}.html" data-hay="{hay(c)}"><b>{esc(C.title(c, "fa"))}</b>'
+                        f'<small>{esc(strip_tags(C.line(c, "fa")))}</small></a>' for c, d in members)
+        key = BRANCH_ART.get(b, "home")
+        blocks.append(f'<section class="branch" data-hay="{hay(b)}"><header><img src="{art.src(key, root, 640)}" alt="" loading="lazy">'
+                      f'<div><a href="{b}.html"><b>{esc(C.title(b, "fa"))}</b></a>'
+                      f'<p>{esc(strip_tags(C.line(b, "fa")))}</p></div></header>'
+                      f'<div class="clist">{items}</div></section>')
+    head = hero(art, "elephant", root, kicker="نقشهٔ مفاهیم به صورت صفحه", title="همهٔ مفاهیم", cls="short",
+                lede=f"{num(135)} مفهوم در معرفت‌شناسی، هر یک با مدخلی کامل: مسئله‌ای که حل می‌کند، ایدهٔ اصلی، "
+                     "اعتراض‌ها و پاسخ‌ها، اشتباه‌های رایج، و پرسشی برای خودآزمایی.",
+                actions=f'<a class="btn" href="{root}map/" data-set-site-lang="fa">{icon("map")} باز کردنِ نقشه</a><a class="btn" href="root.html">آغاز از ریشه</a>')
+    body = (f'{head}{label(art, "elephant")}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px">'
+            f'<div class="filter"><input id="cfilter" type="search" placeholder="صافیِ مفاهیم، اندیشمندان، اصطلاحات…" aria-label="صافیِ مفاهیم"></div>'
+            f'{"".join(blocks)}</main>')
+    pages.append((OUT() / "concepts" / "index.html", root, "همهٔ مفاهیم",
+                  "همهٔ مفاهیمِ نقشهٔ معرفت‌شناسی، هر یک در صفحه‌ای خواندنی.", body, "concepts", "elephant"))
+
+
+FA_HEADS = {}  # (chapter, section id) -> Persian section title
+
+
 # ----------------------------------------------------------------------------- other pages
 
+def title_html(ch):
+    """A chapter title; an English one on a Persian page keeps its own direction."""
+    return f'<span dir="ltr" lang="en">{esc(ch.title)}</span>' if getattr(ch, "fallback", False) else esc(ch.title)
+
+
 def chapter_card(art, ch, root):
-    meta = f'<span>{icon("clock")} {ch.minutes} min</span>'
+    meta = f'<span>{icon("clock")} {num(ch.minutes)} {L("min", "دقیقه")}</span>'
     if ch.track:
         meta += f'<span>{icon("phones")} {minutes_label(ch.track["duration"])}</span>'
     blurb = re.sub(r"\*([^*]+)\*", r"\1", ch.blurb)
-    return (f'<a class="card" href="{root}guide/{ch.href}" data-slug="{ch.slug}"><div class="pic" style="--art:{art.color(ch.art)};--focus:{art.focus(ch.art)}">'
+    return (f'<a class="card" href="{home(root)}guide/{ch.href}" data-slug="{ch.slug}"><div class="pic" style="--art:{art.color(ch.art)};--focus:{art.focus(ch.art)}">'
             f'{art.img(ch.art, root, sizes="(max-width:600px) 100vw, 320px", cls="")}<span class="num">{ch.label.upper()}</span></div>'
-            f'<div class="body"><h4>{esc(ch.title)}</h4><p>{esc(blurb)}</p><div class="meta">{meta}</div></div></a>')
+            f'<div class="body"><h4>{title_html(ch)}</h4><p>{esc(blurb)}</p><div class="meta">{meta}</div></div></a>')
 
 
 def contents_parts(art, chapters, root):
     out = []
     for roman, name, nums in PARTS:
         cards = "".join(chapter_card(art, chapters[n], root) for n in nums)
-        out.append(f'<section class="part"><header><span class="kicker">{"Part " + roman if roman else "Also"}</span>'
-                   f'<h3>{esc(name)}</h3></header><div class="grid">{cards}</div></section>')
+        pl, pn = part_label(roman, name)
+        out.append(f'<section class="part"><header><span class="kicker">{pl}</span>'
+                   f'<h3>{esc(pn)}</h3></header><div class="grid">{cards}</div></section>')
     return "".join(out)
 
 
 def readme_sections(md):
-    text = (GUIDE / "README.md").read_text(encoding="utf-8")
+    text = (SRC() / "README.md").read_text(encoding="utf-8")
     parts = re.split(r"^## ", text, flags=re.M)
     intro = parts[0]
     secs = {p.split("\n", 1)[0].strip(): p.split("\n", 1)[1] for p in parts[1:]}
@@ -869,160 +1105,198 @@ def readme_sections(md):
 
 
 def build_guide_index(art, chapters, md, total_audio):
-    root = "../"
+    root = up(1)
     intro, secs = readme_sections(md)
     intro = re.sub(r"^# .*\n", "", intro)
     intro, quotes = split_epigraphs(intro)
-    intro = "\n".join(l for l in intro.split("\n") if l.strip() not in ("---",) and not l.startswith("**A complete"))
+    intro = "\n".join(l for l in intro.split("\n") if l.strip() not in ("---",) and not l.startswith(("**A complete", "**راهنمای کامل")))
     intro_html, _ = md.render(intro, guide_links())
     intro_html = re.sub(r"^<p>", '<p class="lede">', intro_html.strip(), count=1)
-    def sec(name):
-        body = secs.get(name, "")
+    def sec(en, fa):
+        body = secs.get(L(en, fa), "")
         body = "\n".join(l for l in body.split("\n") if l.strip() != "---")
         h, _ = md.render(body, guide_links())
         return polish(h)
-    paths = sec("Learning paths")
-    how = sec("How each chapter works")
-    connect = sec("How the ideas connect")
-    companion = sec("The companion explorer")
-    sources = sec("A note on sources and accuracy")
+    paths = sec("Learning paths", "مسیرهای یادگیری")
+    how = sec("How each chapter works", "هر فصل چگونه کار می‌کند")
+    connect = sec("How the ideas connect", "ایده‌ها چگونه به هم می‌پیوندند")
+    companion = sec("The companion explorer", "نقشهٔ همراه")
+    sources = sec("A note on sources and accuracy", "دربارهٔ منابع و دقت")
     q, c = quotes[0] if quotes else ("", "")
-    head = hero(art, "guide", root, kicker="The guide · sixteen chapters, a glossary and a reading list", title="Mastering Epistemology",
+    epub = EPUB_NAME_FA if LANG == "fa" else EPUB_NAME
+    head = hero(art, "guide", root, kicker=L("The guide · sixteen chapters, a glossary and a reading list", "راهنما · شانزده فصل، واژه‌نامه و فهرست مطالعه"),
+                title=site_name(),
                 dek=md.inline(q) if q else None, cite=md.inline(c) if c else None,
-                facts=[f"{icon('book')} 16 chapters", f"{icon('clock')} about 130,000 words", f"{icon('phones')} {total_audio} of audio"],
-                actions=f'<a class="btn primary" href="01-what-is-epistemology.html">Start with chapter 1 {icon("arrow")}</a>'
-                        f'<a class="btn" href="audio/">{icon("phones")} Listen</a>'
-                        f'<a class="btn" href="{EPUB_NAME}" download>{icon("download")} EPUB</a>')
+                facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('clock')} {L('about 130,000 words', 'حدود ۱۳۰ هزار واژه')}",
+                       f"{icon('phones')} {total_audio} {L('of audio', 'صوت انگلیسی')}"],
+                actions=f'<a class="btn primary" href="01-what-is-epistemology.html">{L("Start with chapter 1", "آغاز از فصل ۱")} {icon("arrow")}</a>'
+                        f'<a class="btn" href="audio/">{icon("phones")} {L("Listen", "شنیدن")}</a>'
+                        f'<a class="btn" href="{epub}" download>{icon("download")} EPUB</a>')
+    h2s = 'style="border:0;padding:0;margin-top:0"'
     body = (f'{head}{label(art, "guide")}'
             f'<main id="main"><div class="wrap" style="padding-top:34px"><div id="resume"></div><div class="prose" style="max-width:46rem">{intro_html}</div></div>'
             f'<section class="section" style="padding-top:40px"><div class="wrap">{contents_parts(art, chapters, root)}</div></section>'
-            f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">How the ideas connect</span>'
-            f'<h2>One question, many branches</h2></div><p>Every chapter answers part of a single question: what should I believe, and how sure should I be?</p></div>'
+            f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("How the ideas connect", "پیوند ایده‌ها")}</span>'
+            f'<h2>{L("One question, many branches", "یک پرسش، شاخه‌های بسیار")}</h2></div><p>{L("Every chapter answers part of a single question: what should I believe, and how sure should I be?", "هر فصل به بخشی از یک پرسش پاسخ می‌دهد: چه باید باور کنم، و تا چه اندازه مطمئن؟")}</p></div>'
             f'<div class="prose" style="max-width:none">{connect}</div></div></section>'
-            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">Learning paths</span>'
-            f'<h2>Where to start</h2></div></div><div class="prose" style="max-width:52rem">{paths}</div></div></section>'
+            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("Learning paths", "مسیرهای یادگیری")}</span>'
+            f'<h2>{L("Where to start", "از کجا شروع کنیم")}</h2></div></div><div class="prose" style="max-width:52rem">{paths}</div></div></section>'
             f'<section class="section alt"><div class="wrap" style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">'
-            f'<div class="prose"><h2 style="border:0;padding:0;margin-top:0">How each chapter works</h2>{how}</div>'
-            f'<div class="prose"><h2 style="border:0;padding:0;margin-top:0">The companion map</h2>{companion}'
-            f'<h2 style="border:0;padding:0">A note on sources</h2>{sources}</div></div></section></main>')
+            f'<div class="prose"><h2 {h2s}>{L("How each chapter works", "هر فصل چگونه کار می‌کند")}</h2>{how}</div>'
+            f'<div class="prose"><h2 {h2s}>{L("The companion map", "نقشهٔ همراه")}</h2>{companion}'
+            f'<h2 style="border:0;padding:0">{L("A note on sources", "دربارهٔ منابع")}</h2>{sources}</div></div></section></main>')
     return body
 
 
 def build_home(art, chapters, md, total_audio, n_concepts):
-    root = ""
+    root = up(0)
+    h = home(root)
     intro, secs = readme_sections(md)
-    paths_md = secs.get("Learning paths", "")
+    paths_md = secs.get(L("Learning paths", "مسیرهای یادگیری"), "")
     paths = []
-    for m in re.finditer(r"^\*\*(.+?)\*\*(.*?):\s*(.+)$", paths_md, re.M):
+    for m in re.finditer(r"^\*\*(.+?)\*\*(.*?)[:：]\s*(.+)$", paths_md, re.M):
         name, note, seq = m.group(1), m.group(2).strip(" ()"), m.group(3)
         nums = re.findall(r"\[(\d+)\]\((\d\d-[\w-]+)\.md", seq)
         if not nums:
             continue
-        chips = "".join(f'<li><a href="guide/{slug}.html" title="{attr(chapters[int(n)].title)}">{n}</a></li>' for n, slug in nums)
+        chips = "".join(f'<li><a href="{h}guide/{slug}.html" title="{attr(chapters[int(n)].title)}">{n}</a></li>' for n, slug in nums)
         paths.append(f'<div class="path"><h4>{esc(name)}</h4><p>{esc(note)}</p><ol>{chips}</ol></div>')
-    head = hero(art, "home", root, kicker="A free course in the theory of knowledge", title="How do you know?",
-                lede=(f"<b>{SITE}</b> is a complete guide to knowledge, evidence, and critical thinking: sixteen illustrated chapters, "
-                      f"a bilingual map of {n_concepts} concepts, and {total_audio} of narrated audio."),
-                facts=[f"{icon('book')} 16 chapters", f"{icon('map')} {n_concepts} concepts · English &amp; فارسی", f"{icon('phones')} {total_audio} audio"],
-                actions=(f'<a class="btn primary" href="guide/01-what-is-epistemology.html">Start reading {icon("arrow")}</a>'
-                         f'<a class="btn" href="map/">{icon("map")} Explore the map</a>'
-                         f'<a class="btn" href="guide/audio/">{icon("phones")} Listen</a>'))
+    n_c = num(n_concepts)
+    head = hero(art, "home", root, kicker=L("A free course in the theory of knowledge", "دوره‌ای رایگان در نظریهٔ معرفت"),
+                title=L("How do you know?", "از کجا می‌دانید؟"),
+                lede=L(f"<b>{SITE}</b> is a complete guide to knowledge, evidence, and critical thinking: sixteen illustrated chapters, "
+                       f"a bilingual map of {n_concepts} concepts, and {total_audio} of narrated audio.",
+                       f"<b>{SITE_FA}</b> راهنمایی کامل دربارهٔ معرفت، شواهد و تفکر نقادانه است: شانزده فصلِ مصوّر، "
+                       f"نقشهٔ دوزبانهٔ {n_c} مفهوم، و {total_audio} روایت صوتی به انگلیسی."),
+                facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('map')} {L(f'{n_concepts} concepts · English &amp; فارسی', f'{n_c} مفهوم · فارسی و English')}",
+                       f"{icon('phones')} {total_audio} {L('audio', 'صوت')}"],
+                actions=(f'<a class="btn primary" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
+                         f'<a class="btn" href="{root}map/">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
+                         f'<a class="btn" href="{h}guide/audio/">{icon("phones")} {L("Listen", "شنیدن")}</a>'))
     doors = (f'<div class="doors">'
-             + tile(art, "guide", root, "guide/", "Read", "The guide",
-                    "Sixteen chapters, from the Gettier problem to Bayes' theorem, with worked examples and self-checks.", cls="tile door")
-             + tile(art, "map", root, "map/", "Explore", "The concept map",
-                    f"{n_concepts} ideas as a living map you can pan and expand, in English and Persian, each with a full entry.", cls="tile door")
-             + tile(art, "audio", root, "guide/audio/", "Listen", "The audio edition",
-                    f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.", cls="tile door")
+             + tile(art, "guide", root, f"{h}guide/", L("Read", "بخوانید"), L("The guide", "راهنما"),
+                    L("Sixteen chapters, from the Gettier problem to Bayes' theorem, with worked examples and self-checks.",
+                      "شانزده فصل، از مسئلهٔ گتیه تا قضیهٔ بیز، با مثال‌های حل‌شده و خودآزمایی."), cls="tile door")
+             + tile(art, "map", root, f"{root}map/", L("Explore", "کاوش کنید"), L("The concept map", "نقشهٔ مفاهیم"),
+                    L(f"{n_concepts} ideas as a living map you can pan and expand, in English and Persian, each with a full entry.",
+                      f"{n_c} ایده در نقشه‌ای زنده که می‌توانید جابه‌جا و باز کنید، به فارسی و انگلیسی، هر یک با مدخلی کامل."), cls="tile door")
+             + tile(art, "audio", root, f"{h}guide/audio/", L("Listen", "بشنوید"), L("The audio edition", "نسخهٔ صوتی"),
+                    L(f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.",
+                      f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio} به انگلیسی، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
              + "</div>")
-    stats = (f'<div class="statline"><div><b>16</b><span>chapters in five parts</span></div><div><b>{n_concepts}</b><span>concepts, in English and Persian</span></div>'
-             f'<div><b>14½</b><span>hours of narration</span></div><div><b>200</b><span>glossary terms</span></div></div>')
+    stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
+             f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
+             f'<div><b>{L("14½", "۱۴٫۵")}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
     body = (f'{head}<main id="main">'
-            f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">Three ways in</span>'
-            f'<h2>Read it, map it, or hear it</h2></div><p>The same ideas, three ways. Start wherever suits you; everything is cross-linked.</p></div>{doors}'
+            f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
+            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
-            f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">The course</span>'
-            f'<h2>Sixteen chapters, each with a masterpiece</h2></div><p>Every chapter opens with a painting or photograph that captures its question, '
-            f'from Raphael\'s <i>School of Athens</i> to the <i>Earthrise</i> photograph.</p></div>{contents_parts(art, chapters, root)}</div></section>'
+            f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("The course", "دوره")}</span>'
+            f'<h2>{L("Sixteen chapters, each with a masterpiece", "شانزده فصل، هر یک با یک شاهکار")}</h2></div><p>'
+            + L("Every chapter opens with a painting or photograph that captures its question, from Raphael's <i>School of Athens</i> to the <i>Earthrise</i> photograph.",
+                "هر فصل با نقاشی یا عکسی آغاز می‌شود که پرسشِ آن را در خود دارد، از «مکتب آتن» رافائل تا عکسِ «طلوع زمین».")
+            + f'</p></div>{contents_parts(art, chapters, root)}</div></section>'
             f'<section class="quoteband"><img src="{art.src("cave", root, 2000)}" alt="{attr(art.alt("cave"))}" loading="lazy">'
-            f'<div class="wrap"><blockquote><p>“The duty of the man who investigates the writings of scientists, if learning the truth is his goal, '
-            f'is to make himself an enemy of all that he reads.”</p><footer>— Ibn al-Haytham, Doubts Concerning Ptolemy, c. 1025</footer></blockquote></div></section>'
-            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">Learning paths</span>'
-            f'<h2>Short on time?</h2></div><p>Follow a path through the chapters that fits your goal.</p></div><div class="paths">{"".join(paths)}</div></div></section>'
+            f'<div class="wrap"><blockquote><p>'
+            + L("“The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads.”",
+                "«وظیفهٔ کسی که نوشته‌های دانشمندان را می‌کاود، اگر هدفش شناختِ حقیقت است، این است که خود را دشمنِ هر آنچه می‌خوانَد کند.»")
+            + f'</p><footer>{L("— Ibn al-Haytham, Doubts Concerning Ptolemy, c. 1025", "— ابن هیثم، «الشکوک علی بطلمیوس»، حدود ۱۰۲۵")}</footer></blockquote></div></section>'
+            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("Learning paths", "مسیرهای یادگیری")}</span>'
+            f'<h2>{L("Short on time?", "وقت کمی دارید؟")}</h2></div><p>{L("Follow a path through the chapters that fits your goal.", "مسیری از میان فصل‌ها را دنبال کنید که با هدفتان جور است.")}</p></div><div class="paths">{"".join(paths)}</div></div></section>'
             f'</main>')
     return body
 
 
 def build_audio_page(art, chapters, tracks):
-    root = "../../"
-    head = hero(art, "audio", root, kicker="The audio edition", title="Listen", cls="short",
-                lede="Every chapter of the guide, narrated. Pick up where you left off, jump to any section, and change the speed. "
-                     "Each chapter ends with a spoken quiz, with time to think.",
-                facts=[f"{icon('phones')} {minutes_label(sum(t['duration'] for t in tracks))}", "16 chapters", "MP3 with chapter markers"])
-    data = [{"file": t["file"], "title": t["title"], "duration": t["duration"], "page": f"../{t['text'][3:].replace('.md', '.html')}",
-             "sections": t["sections"]} for t in tracks]
+    root = up(2)
+    head = hero(art, "audio", root, kicker=L("The audio edition", "نسخهٔ صوتی"), title=L("Listen", "شنیدن"), cls="short",
+                lede=L("Every chapter of the guide, narrated. Pick up where you left off, jump to any section, and change the speed. "
+                       "Each chapter ends with a spoken quiz, with time to think.",
+                       "همهٔ فصل‌های راهنما، روایت‌شده به زبان انگلیسی. از همان‌جا که ماندید ادامه دهید، به هر بخش بپرید و سرعت را تغییر دهید. "
+                       "هر فصل با آزمونکی شفاهی پایان می‌یابد که فرصتِ فکرکردن می‌دهد."),
+                facts=[f"{icon('phones')} {minutes_label(sum(t['duration'] for t in tracks))}", L("16 chapters", "۱۶ فصل"),
+                       L("MP3 with chapter markers", "MP3 با نشانگرِ فصل‌ها")])
+    prefix = "" if LANG == "en" else f"{root}guide/audio/"
+    data = [{"file": prefix + t["file"], "title": (t["title"] if LANG == "en" else f"{chapters[int(t['file'][:2])].label} — {chapters[int(t['file'][:2])].title}"),
+             "duration": t["duration"], "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"]} for t in tracks]
     thumbs = [art.src(f"ch{i + 1:02d}", root, 640) for i in range(len(tracks))]
     body = (f'{head}<main id="main" class="wrap" style="padding-bottom:80px">'
-            f'<section class="player" id="player" aria-label="Player"><span class="kicker" style="color:var(--accent)">Now playing</span>'
-            f'<h2>Choose a chapter</h2><div class="sec"></div><audio controls preload="metadata"></audio>'
-            f'<div class="ctl"><button id="prev" type="button">⏮ Chapter</button><button id="back" type="button">↺ 15 s</button>'
-            f'<button id="fwd" type="button">30 s ↻</button><button id="next" type="button">Chapter ⏭</button>'
-            f'<label>Speed <select id="rate"><option>0.8</option><option>0.9</option><option selected>1</option><option>1.1</option>'
+            f'<section class="player" id="player" aria-label="{L("Player", "پخش‌کننده")}"><span class="kicker" style="color:var(--accent)">{L("Now playing", "در حال پخش")}</span>'
+            f'<h2>{L("Choose a chapter", "یک فصل انتخاب کنید")}</h2><div class="sec"></div><audio controls preload="metadata"></audio>'
+            f'<div class="ctl" dir="ltr"><button id="prev" type="button">⏮ {L("Chapter", "فصل")}</button><button id="back" type="button">↺ 15 s</button>'
+            f'<button id="fwd" type="button">30 s ↻</button><button id="next" type="button">{L("Chapter", "فصل")} ⏭</button>'
+            f'<label>{L("Speed", "سرعت")} <select id="rate"><option>0.8</option><option>0.9</option><option selected>1</option><option>1.1</option>'
             f'<option>1.25</option><option>1.5</option><option>1.75</option></select></label>'
-            f'<a class="btn" id="read" href="../01-what-is-epistemology.html" style="min-height:40px">{icon("book")} Read this chapter</a></div></section>'
-            f'<div class="tracks"><section><h2 class="kicker" style="color:var(--dim)">Chapters</h2><ol id="chapters"></ol></section>'
-            f'<section class="secs"><h2 class="kicker" style="color:var(--dim)">Sections in this chapter</h2><ol id="sections"></ol></section></div>'
-            f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">The narration is generated with a synthetic voice, the open Kokoro-82M '
-            f'text-to-speech model, from scripts adapted for listening. <a href="about.html">How the audio was made</a>. '
-            f'Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.</p></main>'
+            f'<a class="btn" id="read" href="../01-what-is-epistemology.html" style="min-height:40px">{icon("book")} {L("Read this chapter", "خواندن این فصل")}</a></div></section>'
+            f'<div class="tracks"><section><h2 class="kicker" style="color:var(--dim)">{L("Chapters", "فصل‌ها")}</h2><ol id="chapters"></ol></section>'
+            f'<section class="secs"><h2 class="kicker" style="color:var(--dim)">{L("Sections in this chapter", "بخش‌های این فصل")}</h2><ol id="sections"></ol></section></div>'
+            f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
+            + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
+                '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
+                'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
+                'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. <a href="about.html">صوت چگونه ساخته شد</a>. '
+                'صفحه‌کلید: <kbd>k</kbd> یا فاصله برای پخش و توقف، <kbd>j</kbd> و <kbd>l</kbd> برای جابه‌جایی.')
+            + '</p></main>'
             f'<script>window.TRACKS={json.dumps(data, ensure_ascii=False)};window.TRACK_ART={json.dumps(thumbs)};</script>')
     return body
 
 
 def build_audio_about(art, md):
-    root = "../../"
-    text = (GUIDE / "audio" / "README.md").read_text(encoding="utf-8")
+    root = up(2)
+    src = SRC() / "audio-README.md" if LANG == "fa" else GUIDE / "audio" / "README.md"
+    if not src.exists():
+        src = GUIDE / "audio" / "README.md"
+    text = src.read_text(encoding="utf-8")
     text = re.sub(r"^# .*\n", "", text)
 
     def links(href):
         if href == "index.html":
             return "./"
         if href.endswith(".mp3"):
-            return href
+            return href if LANG == "en" else f"{root}guide/audio/{href}"
         if href.startswith(("scripts/", "tools/")):
             return f"{REPO}/tree/main/guide/audio/{href}"
         return href
     body_html, heads = md.render(text, links)
-    head = hero(art, "audio", root, kicker="The audio edition", title="How the audio was made", cls="band")
+    head = hero(art, "audio", root, kicker=L("The audio edition", "نسخهٔ صوتی"), title=L("How the audio was made", "صوت چگونه ساخته شد"), cls="band")
     return (f'{head}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px">'
             f'<div class="prose" style="max-width:46rem;margin:0 auto">{polish(body_html)}</div></main>')
 
 
 def build_credits(art):
-    root = ""
+    root = up(0)
     cards = []
     for key, i in art.info.items():
         if not art.has(key):
             continue
         c = art.credits.get(key, {})
         src = c.get("source") or ""
-        place = f" {esc(i['place'])}." if i.get("place") else ""
+        meta = art.meta(key)
+        place = f" {esc(meta['place'])}." if meta.get("place") else ""
+        lic = c.get("license") or "Public domain"
+        if LANG == "fa" and lic.lower().startswith("public domain"):
+            lic = "مالکیت عمومی"
         cards.append(f'<div class="credit"><img src="{art.src(key, root, 640)}" alt="" loading="lazy"><div><b>{art.caption(key)}</b>'
-                     f'<p>{place.strip()} {esc(c.get("license") or "Public domain")}, via '
-                     f'<a href="{attr(src)}" rel="noopener">Wikimedia Commons</a>.</p></div></div>')
-    head = hero(art, "ch18", root, kicker="Credits", title="Artwork, sound and type", cls="band")
+                     f'<p>{place.strip()} {esc(lic)}{L(", via ", "، از ")}'
+                     f'<a href="{attr(src)}" rel="noopener">{L("Wikimedia Commons", "ویکی‌انبار")}</a>.</p></div></div>')
+    head = hero(art, "ch18", root, kicker=L("Credits", "منابع"), title=L("Artwork, sound and type", "آثار هنری، صدا و حروف"), cls="band")
     faces = [("Cormorant Garamond", "cormorant-garamond"), ("Source Serif 4", "source-serif-4"), ("Space Grotesk", "space-grotesk"),
              ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Atkinson Hyperlegible", "atkinson-hyperlegible")]
-    names = [f'<a href="assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
-    fonts = ", ".join(names[:-1]) + " and " + names[-1]
+    names = [f'<a href="{root}assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
+    fonts = L(", ".join(names[:-1]) + " and " + names[-1], "، ".join(names[:-1]) + " و " + names[-1])
+    audio = f"{home(root)}guide/audio/about.html"
     body = (f'{head}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px"><div class="prose" style="max-width:46rem">'
-            f'<p class="lede">The paintings, prints and photographs on this site are in the public domain. The images come from Wikimedia Commons; '
-            f'follow each link for the source file and its description.</p></div>'
-            f'<div class="credits">{"".join(cards)}</div>'
-            f'<div class="prose" style="max-width:46rem;margin-top:40px"><h2>Sound</h2><p>The audio edition is narrated by a synthetic voice: '
-            f'the <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> text-to-speech model (Apache License 2.0), with pronunciation by '
-            f'<a href="https://github.com/hexgrad/misaki">misaki</a>. See <a href="guide/audio/about.html">how the audio was made</a>.</p>'
-            f'<h2>Type</h2><p>{fonts}, all under the SIL Open Font License (follow a name for its licence).</p></div></main>')
+            + L('<p class="lede">The paintings, prints and photographs on this site are in the public domain. The images come from Wikimedia Commons; '
+                'follow each link for the source file and its description.</p>',
+                '<p class="lede">نقاشی‌ها، چاپ‌ها و عکس‌های این سایت در مالکیت عمومی‌اند. تصاویر از ویکی‌انبار آمده‌اند؛ '
+                'برای دیدنِ پروندهٔ اصلی و توضیحِ آن، پیوندِ هر مورد را دنبال کنید.</p>')
+            + f'</div><div class="credits">{"".join(cards)}</div>'
+            f'<div class="prose" style="max-width:46rem;margin-top:40px"><h2>{L("Sound", "صدا")}</h2><p>'
+            + L(f'The audio edition is narrated by a synthetic voice: the <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> text-to-speech model '
+                f'(Apache License 2.0), with pronunciation by <a href="https://github.com/hexgrad/misaki">misaki</a>. See <a href="{audio}">how the audio was made</a>.',
+                f'نسخهٔ صوتی (به انگلیسی) با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> '
+                f'(مجوز آپاچی ۲٫۰)، با تلفظِ <a href="https://github.com/hexgrad/misaki">misaki</a>. <a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
+            + f'</p><h2>{L("Type", "حروف")}</h2><p>{fonts}{L(", all under the SIL Open Font License (follow a name for its licence).", "؛ همه با مجوزِ SIL Open Font License (برای دیدنِ مجوز، روی نام کلیک کنید).")}</p></div></main>')
     return body
 
 
@@ -1032,21 +1306,23 @@ BASE_404 = ('<script>(function(){var p=location.pathname.split("/"),b="/";'
 
 
 def build_notebook(art):
-    root = "../"
-    head = hero(art, "ch18", root, kicker="Your notebook", title="Highlights and notes", cls="band",
-                lede="Everything you have highlighted or written, from every chapter and concept page. "
-                     "It is kept in this browser; export it to keep a copy or to move it to another device.")
+    root = up(1)
+    head = hero(art, "ch18", root, kicker=L("Your notebook", "دفترچهٔ شما"), title=L("Highlights and notes", "نشانه‌گذاری‌ها و یادداشت‌ها"), cls="band",
+                lede=L("Everything you have highlighted or written, from every chapter and concept page. "
+                       "It is kept in this browser; export it to keep a copy or to move it to another device.",
+                       "هر آنچه در فصل‌ها و صفحه‌های مفاهیم نشانه‌گذاری کرده یا نوشته‌اید. "
+                       "در همین مرورگر نگه داشته می‌شود؛ برای داشتنِ نسخهٔ پشتیبان یا بردن به دستگاهی دیگر، آن را برون‌بری کنید."))
     filters = ""
     for c in ("all", "yellow", "green", "blue", "pink"):
         cls = "" if c == "all" else f' class="c-{c}"'
         filters += (f'<button type="button" data-filter="{c}" aria-pressed="{"true" if c == "all" else "false"}"{cls}>'
-                    f'{"All" if c == "all" else ""}<span class="sr">{c}</span></button>')
+                    f'{L("All", "همه") if c == "all" else ""}<span class="sr">{c}</span></button>')
     return (f'{head}<main id="main" class="wrap notebook-page">'
-            f'<div class="nb-tools"><input id="nb-q" type="search" placeholder="Search your notes" aria-label="Search your notes">'
-            f'<div class="nb-filters" role="group" aria-label="Filter by colour">{filters}</div>'
+            f'<div class="nb-tools"><input id="nb-q" type="search" placeholder="{L("Search your notes", "جست‌وجو در یادداشت‌ها")}" aria-label="{L("Search your notes", "جست‌وجو در یادداشت‌ها")}">'
+            f'<div class="nb-filters" role="group" aria-label="{L("Filter by colour", "صافی بر اساس رنگ")}">{filters}</div>'
             f'<div class="nb-actions"><button type="button" id="nb-md">{icon("download")} Markdown</button>'
-            f'<button type="button" id="nb-json">{icon("download")} Backup (.json)</button>'
-            f'<button type="button" id="nb-import">Import backup</button><input id="nb-file" type="file" accept=".json,application/json" hidden></div>'
+            f'<button type="button" id="nb-json">{icon("download")} {L("Backup (.json)", "پشتیبان (.json)")}</button>'
+            f'<button type="button" id="nb-import">{L("Import backup", "درون‌بری پشتیبان")}</button><input id="nb-file" type="file" accept=".json,application/json" hidden></div>'
             f'<p id="nb-count" class="nb-count"></p></div>'
             f'<div id="notebook" aria-live="polite"></div></main>')
 
@@ -1066,7 +1342,24 @@ TERM_SKIP = {"acceptance", "ambiguity", "analytic", "anchoring", "argument", "be
              "overconfidence", "paradigm", "proposition", "safety", "sensitivity", "skepticism", "synthetic", "testimony",
              "tracking", "truth", "understanding", "vagueness", "validity", "soundness", "warrant", "memory", "perception",
              "introspection", "calibration", "reason", "knowledge", "confounding"}
-LEARN = {"terms": {}, "forms": {}, "regex": None, "deeper": {}, "search": [], "questions": [], "glossary_ids": {}}
+TERM_SKIP_FA = {"باور", "معرفت", "شاهد", "شواهد", "استدلال", "توجیه", "حقیقت", "صدق", "ادراک", "ادراک حسی", "حافظه", "گواهی",
+                "درون‌نگری", "عقل", "فهم", "استقرا", "قیاس", "مغالطه", "پارادایم", "گزاره", "ایمنی", "حساسیت", "شکاکیت",
+                "معرفت‌شناسی", "اعتبار", "درستی", "ابهام", "پذیرش", "تحلیلی", "ترکیبی", "کالیبراسیون", "ضمانت", "ردیابی",
+                "هنجاری", "ممکن", "دانش", "علم", "باور صادق", "نظریه", "اطمینان", "یقین", "پیش‌فرض", "اعتماد", "تبیین"}
+LEARN = {}
+EN_CHAPTERS = {}
+
+
+def reset_learning():
+    LEARN.clear()
+    LEARN.update({"terms": {}, "forms": {}, "regex": None, "deeper": {}, "search": [], "questions": [], "glossary_ids": {}})
+
+
+reset_learning()
+
+
+def lang_prefix():
+    return "fa/" if LANG == "fa" else ""
 
 
 def plain_inline(md, text):
@@ -1075,49 +1368,62 @@ def plain_inline(md, text):
 
 def prepare_learning(md, C, chapters):
     """Collect the glossary and the concepts into one set of terms, and decide which concepts each chapter covers."""
-    terms, seen = {}, {}
-    text = (GUIDE / "17-glossary.md").read_text(encoding="utf-8")
+    terms, seen, by_en = {}, {}, {}
+    P = lang_prefix()
+    text = (SRC() / "17-glossary.md").read_text(encoding="utf-8") if (SRC() / "17-glossary.md").exists() else ""
+    norm = lambda t: re.sub(r"^the\s+", "", re.sub(r"\s*\(.*?\)", "", t.lower().replace("’", "'"))).strip()
     for m in re.finditer(r"^\*\*(.+?)\.\*\*\s*(.*)$", text, re.M):
         term, rest = m.group(1), m.group(2)
         definition, _, where = rest.partition("→")
         link = re.search(r"\[([^\]]+)\]\((\d\d-[\w-]+)\.md(#[\w-]*)?\)", where)
-        name = plain_inline(md, term)
-        gid = "g-" + github_slug(name, seen)
-        LEARN["glossary_ids"][name] = gid
-        terms[gid] = {"id": gid, "t": name, "d": re.sub(r"</?a\b[^>]*>", "", md.inline(definition.strip())),
-                      "g": f"guide/17-glossary.html#{gid}",
-                      "s": f"guide/{link.group(2)}.html{link.group(3) or ''}" if link else "", "sl": link.group(1) if link else ""}
-    norm = lambda t: re.sub(r"^the\s+", "", re.sub(r"\s*\(.*?\)", "", t.lower().replace("’", "'"))).strip()
-    by_name = {norm(v["t"]): k for k, v in terms.items()}
-    idx = guide_heading_index(chapters, md)
+        full = plain_inline(md, term)
+        if LANG == "fa":
+            eng = re.search(r"\(([^()]*[A-Za-z][^()]*)\)\s*$", full)
+            en_name = eng.group(1).strip() if eng else full
+            name = re.sub(r"\s*\([^()]*[A-Za-z][^()]*\)\s*$", "", full).strip()
+            gid = "g-" + github_slug(plain_inline(md, en_name), {})
+        else:
+            en_name, name = full, full
+            gid = "g-" + github_slug(name, seen)
+        LEARN["glossary_ids"][full] = gid
+        by_en[norm(en_name)] = gid
+        terms[gid] = {"id": gid, "t": name, "e": en_name if LANG == "fa" else "",
+                      "d": re.sub(r"</?a\b[^>]*>", "", md.inline(definition.strip())),
+                      "g": f"{P}guide/17-glossary.html#{gid}",
+                      "s": f"{P}guide/{link.group(2)}.html{link.group(3) or ''}" if link else "", "sl": link.group(1) if link else ""}
+    idx = guide_heading_index(EN_CHAPTERS or chapters, md)
     deeper = {}
+    lang = "fa" if LANG == "fa" else "en"
     for cid, n in C.N.items():
         if cid == "root" or cid in BRANCH_CHAPTER:
             continue
         branch = C.branch(cid)
         sec = best_section(C.title(cid), BRANCH_CHAPTER.get(branch, 1), idx)
-        num = sec[0] if sec else BRANCH_CHAPTER.get(branch, 1)
-        deeper.setdefault(num, []).append(cid)
-        where = f"guide/{chapters[sec[0]].href}#{sec[1]}" if sec else ""
-        key = by_name.get(norm(C.title(cid))) or by_name.get(re.sub(r"s$", "", norm(C.title(cid))))
+        num_ = sec[0] if sec else BRANCH_CHAPTER.get(branch, 1)
+        deeper.setdefault(num_, []).append(cid)
+        where = f"{P}guide/{chapters[sec[0]].href}#{sec[1]}" if sec else ""
+        key = by_en.get(norm(C.title(cid))) or by_en.get(re.sub(r"s$", "", norm(C.title(cid))))
+        other = C.title(cid, "en" if lang == "fa" else "fa")
         if key:
-            terms[key].update(c=cid, f=C.title(cid, "fa"))
+            terms[key].update(c=cid, f=other)
             terms[key]["s"] = terms[key]["s"] or where
         elif not C.title(cid).endswith("?"):
             tid = "c-" + cid
-            terms[tid] = {"id": tid, "t": C.title(cid), "f": C.title(cid, "fa"), "d": C.line(cid), "c": cid, "s": where,
-                          "sl": f"Ch. {sec[0]}" if sec else ""}
-            by_name[norm(C.title(cid))] = tid
+            terms[tid] = {"id": tid, "t": C.title(cid, lang), "f": other, "d": C.line(cid, lang), "c": cid, "s": where,
+                          "sl": (L(f"Ch. {sec[0]}", f"فصل {num(sec[0])}") if sec else "")}
+            by_en[norm(C.title(cid))] = tid
     forms = {}
+    skip = TERM_SKIP_FA if LANG == "fa" else TERM_SKIP
     for tid, v in terms.items():
         f = norm(v["t"])
-        if len(f) < 4 or f in TERM_SKIP or " vs " in f or "≠" in f:
+        if len(f) < 4 or f in skip or " vs " in f or "≠" in f or " در برابر " in f:
             continue
         forms.setdefault(f, tid)
     LEARN.update(terms=terms, forms=forms, deeper=deeper)
     alts = sorted(forms, key=len, reverse=True)
-    pattern = "|".join(re.escape(a).replace("'", "['’]") for a in alts)
-    LEARN["regex"] = re.compile(r"(?<![\w-])(?:" + pattern + r")(?:e?s)?(?![\w-])", re.I)
+    pattern = "|".join(re.escape(a).replace("'", "['’]") for a in alts) or "(?!)"
+    suffix = r"(?:‌?ها(?:ی)?)?" if LANG == "fa" else r"(?:e?s)?"
+    LEARN["regex"] = re.compile(r"(?<![\w-])(?:" + pattern + r")" + suffix + r"(?![\w-])", re.I)
 
 
 SKIP_TAGS = {"a", "h1", "h2", "h3", "h4", "h5", "h6", "code", "pre", "summary", "button", "figure", "svg", "script", "style", "blockquote"}
@@ -1130,7 +1436,8 @@ def link_terms(body):
 
     def repl(m):
         found = m.group(0).lower().replace("’", "'")
-        tid = forms.get(found) or forms.get(re.sub(r"e?s$", "", found)) or forms.get(found[:-1])
+        tid = (forms.get(found) or forms.get(re.sub(r"e?s$", "", found)) or forms.get(found[:-1])
+               or forms.get(re.sub(r"‌?ها(?:ی)?$", "", found)))
         if not tid or tid in used:
             return m.group(0)
         used.add(tid)
@@ -1151,80 +1458,94 @@ def link_terms(body):
 
 def collect_sections(ch, body):
     """Search entries for a chapter's sections, and its self-check questions."""
-    LEARN["search"].append({"k": "ch", "t": ch.title, "c": ch.label, "u": f"guide/{ch.href}", "x": html.unescape(strip_tags(ch.blurb.replace("*", "")))})
+    P = lang_prefix()
+    LEARN["search"].append({"k": "ch", "t": ch.title, "c": ch.label, "u": f"{P}guide/{ch.href}", "x": html.unescape(strip_tags(ch.blurb.replace("*", "")))})
     for chunk in re.split(r'(?=<h2 id=")', body):
         m = re.match(r'<h2 id="([^"]+)"[^>]*>(.*?)</h2>', chunk, re.S)
         if not m:
             continue
         title = html.unescape(strip_tags(re.sub(r"<button.*?</button>", "", m.group(2), flags=re.S)))
         text = html.unescape(strip_tags(re.sub(r"<button.*?</button>", "", chunk[m.end():], flags=re.S)))
-        LEARN["search"].append({"k": "s", "t": title, "c": f"{ch.label}: {ch.title}", "u": f"guide/{ch.href}#{m.group(1)}", "x": text})
+        LEARN["search"].append({"k": "s", "t": title, "c": f"{ch.label}: {ch.title}", "u": f"{P}guide/{ch.href}#{m.group(1)}", "x": text})
         if '<p class="q">' in chunk:
             for q in re.finditer(r'<p class="q"><span class="n">(\d+)</span>(.*?)</p>\s*((?:(?!<p class="q">).)*?)<details>\s*<summary>.*?</summary>(.*?)</details>',
                                  chunk, re.S):
-                LEARN["questions"].append({"id": f"{ch.slug}-q{q.group(1)}", "n": int(q.group(1)), "ch": ch.num, "label": ch.label,
-                                           "title": ch.title, "u": f"guide/{ch.href}#{m.group(1)}", "sec": title,
+                LEARN["questions"].append({"id": f"{ch.slug}-q{int(q.group(1))}", "n": int(q.group(1)), "ch": ch.num, "label": ch.label,
+                                           "title": ch.title, "u": f"{P}guide/{ch.href}#{m.group(1)}", "sec": title,
                                            "q": q.group(2) + q.group(3), "a": q.group(4).strip()})
 
 
 def write_learning_data(C):
+    sfx = "-fa" if LANG == "fa" else ""
+    P = lang_prefix()
+    lang = "fa" if LANG == "fa" else "en"
+    other = "en" if lang == "fa" else "fa"
     terms = {k: {kk: vv for kk, vv in v.items() if vv} for k, v in LEARN["terms"].items()}
-    write(ASSETS / "data" / "terms.json", json.dumps(terms, ensure_ascii=False, separators=(",", ":")))
+    write(ASSETS / "data" / f"terms{sfx}.json", json.dumps(terms, ensure_ascii=False, separators=(",", ":")))
     search = list(LEARN["search"])
     for v in LEARN["terms"].values():
         if v["id"].startswith("g-"):
-            search.append({"k": "g", "t": v["t"], "u": v["g"], "x": html.unescape(strip_tags(v["d"]))})
+            search.append({"k": "g", "t": v["t"], "f": v.get("e", ""), "u": v["g"], "x": html.unescape(strip_tags(v["d"]))})
     for cid in C.N:
         if cid == "root":
             continue
-        search.append({"k": "c", "t": C.title(cid), "f": C.title(cid, "fa"), "u": f"concepts/{cid}.html",
-                       "x": html.unescape(strip_tags(C.line(cid))), "y": html.unescape(strip_tags(C.line(cid, "fa")))})
-    write(ASSETS / "data" / "search.json", json.dumps(search, ensure_ascii=False, separators=(",", ":")))
-    write(ASSETS / "data" / "questions.json", json.dumps(LEARN["questions"], ensure_ascii=False, separators=(",", ":")))
+        search.append({"k": "c", "t": C.title(cid, lang), "f": C.title(cid, other), "u": f"{P}concepts/{cid}.html",
+                       "x": html.unescape(strip_tags(C.line(cid, lang))), "y": html.unescape(strip_tags(C.line(cid, other)))})
+    write(ASSETS / "data" / f"search{sfx}.json", json.dumps(search, ensure_ascii=False, separators=(",", ":")))
+    write(ASSETS / "data" / f"questions{sfx}.json", json.dumps(LEARN["questions"], ensure_ascii=False, separators=(",", ":")))
 
 
-def deeper_box(ch, C):
+def deeper_box(ch, C, root):
     ids = LEARN["deeper"].get(ch.num, [])
     branch = next((b for b, n in BRANCH_CHAPTER.items() if n == ch.num), None)
     if not ids and not branch:
         return ""
+    lang = "fa" if LANG == "fa" else "en"
     chips = "".join(f'<a href="../concepts/{cid}.html" data-term="{attr(next((k for k, v in LEARN["terms"].items() if v.get("c") == cid), ""))}">'
-                    f'{esc(C.title(cid))}</a>' for cid in ids)
-    links = [f'<a href="../map/#{branch}">{icon("map")} Explore this part of the concept map</a>'] if branch else []
+                    f'{esc(C.title(cid, lang))}</a>' for cid in ids)
+    links = [f'<a href="{root}map/#{branch}">{icon("map")} {L("Explore this part of the concept map", "این بخش از نقشهٔ مفاهیم را ببینید")}</a>'] if branch else []
     if any(q["ch"] == ch.num for q in LEARN["questions"]):
-        links.append(f'<a href="../review/#{ch.slug}">{icon("clock")} Practise this chapter\'s questions</a>')
-    return (f'<section class="deeper"><span class="kicker">Go deeper</span><h2>Concepts from this chapter</h2>'
-            f'<p>Each has its own page with the key idea, objections and replies, common mistakes, and a self-check, in English and Persian.</p>'
+        links.append(f'<a href="../review/#{ch.slug}">{icon("clock")} {L("Practise this chapter&#39;s questions", "تمرینِ پرسش‌های این فصل")}</a>')
+    return (f'<section class="deeper"><span class="kicker">{L("Go deeper", "عمیق‌تر شوید")}</span><h2>{L("Concepts from this chapter", "مفاهیمِ این فصل")}</h2>'
+            f'<p>{L("Each has its own page with the key idea, objections and replies, common mistakes, and a self-check, in English and Persian.", "هر یک صفحهٔ خود را دارد، با ایدهٔ اصلی، اعتراض‌ها و پاسخ‌ها، خطاهای رایج و یک خودآزمایی.")}</p>'
             f'<div class="chips">{chips}</div><div class="more">{"".join(links)}</div></section>')
 
 
 def build_account(art):
-    root = "../"
-    head = hero(art, "ch01", root, kicker="My study", title="Your progress, notes and AI companion", cls="band",
-                lede="Sign in with Google to carry everything between your devices, and to use your own Claude or ChatGPT key with the study companion.")
+    root = up(1)
+    head = hero(art, "ch01", root, kicker=L("My study", "مطالعهٔ من"), title=L("Your progress, notes and AI companion", "پیشرفت، یادداشت‌ها و همراهِ هوشمندِ شما"), cls="band",
+                lede=L("Sign in with Google to carry everything between your devices, and to use your own Claude or ChatGPT key with the study companion.",
+                       "با حساب گوگل وارد شوید تا همه‌چیز میان دستگاه‌هایتان جابه‌جا شود، و بتوانید کلیدِ Claude یا ChatGPT خودتان را برای همراهِ مطالعه به کار ببرید."))
     return (f'{head}<main id="main" class="wrap account-page"><div id="account">'
             f'<div data-slot="error"></div>'
-            f'<section class="acc-card"><span class="kicker">Account</span><h2>Sign in</h2><div data-slot="signin"></div></section>'
-            f'<section class="acc-card"><span class="kicker">Your study</span><h2>Where you are</h2><div id="resume"></div>'
+            f'<section class="acc-card"><span class="kicker">{L("Account", "حساب")}</span><h2>{L("Sign in", "ورود")}</h2><div data-slot="signin"></div></section>'
+            f'<section class="acc-card"><span class="kicker">{L("Your study", "مطالعهٔ شما")}</span><h2>{L("Where you are", "کجا هستید")}</h2><div id="resume"></div>'
             f'<div class="acc-tiles" data-slot="study"></div></section>'
-            f'<section class="acc-card" id="ai"><span class="kicker">Study companion</span><h2>AI assistant</h2>'
-            f'<p>On every chapter and concept page, the {icon("chat")} button (or the <b>Explain</b> button that appears when you select text) '
-            f'opens a companion that has read the page. It can explain, quiz you, question you Socratically, or argue the other side.</p>'
-            f'<div id="ai-settings"></div></section>'
-            f'<section class="acc-card"><span class="kicker">Your data</span><h2>Export or delete</h2>'
-            f'<p>Everything is stored in this browser and, when you are signed in, in a private app folder in your Google Drive that only this site can open. '
-            f'There is no server of ours.</p><div class="acc-actions"><button type="button" class="btn" data-act="export">{icon("download")} Download everything (.json)</button>'
-            f'<button type="button" class="btn" data-act="wipe">Delete from this browser</button></div></section>'
+            f'<section class="acc-card" id="ai"><span class="kicker">{L("Study companion", "همراهِ مطالعه")}</span><h2>{L("AI assistant", "دستیار هوشمند")}</h2>'
+            + L(f'<p>On every chapter and concept page, the {icon("chat")} button (or the <b>Explain</b> button that appears when you select text) '
+                f'opens a companion that has read the page. It can explain, quiz you, question you Socratically, or argue the other side.</p>',
+                f'<p>در هر فصل و صفحهٔ مفهوم، دکمهٔ {icon("chat")} (یا دکمهٔ <b>توضیح</b> که هنگامِ انتخابِ متن ظاهر می‌شود) '
+                f'همراهی را باز می‌کند که صفحه را خوانده است. می‌تواند توضیح دهد، از شما آزمون بگیرد، به شیوهٔ سقراطی پرسش کند، یا از طرفِ مقابل دفاع کند.</p>')
+            + f'<div id="ai-settings"></div></section>'
+            f'<section class="acc-card"><span class="kicker">{L("Your data", "داده‌های شما")}</span><h2>{L("Export or delete", "برون‌بری یا حذف")}</h2>'
+            + L('<p>Everything is stored in this browser and, when you are signed in, in a private app folder in your Google Drive that only this site can open. '
+                'There is no server of ours.</p>',
+                '<p>همه‌چیز در همین مرورگر ذخیره می‌شود و، وقتی وارد شده باشید، در پوشه‌ای خصوصی در گوگل‌درایوِ شما که فقط این سایت می‌تواند بازش کند. '
+                'ما هیچ سروری نداریم.</p>')
+            + f'<div class="acc-actions"><button type="button" class="btn" data-act="export">{icon("download")} {L("Download everything (.json)", "دریافتِ همه‌چیز (.json)")}</button>'
+            f'<button type="button" class="btn" data-act="wipe">{L("Delete from this browser", "حذف از این مرورگر")}</button></div></section>'
             f'</div></main>')
 
 
 def build_review(art):
-    root = "../"
-    head = hero(art, "ch13", root, kicker="Practice", title="Review questions", cls="band",
-                lede="The self-check questions from every chapter, brought back just before you are likely to forget them. "
-                     "Answer honestly: questions you get right come back later and later; the ones you miss come back tomorrow.")
+    root = up(1)
+    head = hero(art, "ch13", root, kicker=L("Practice", "تمرین"), title=L("Review questions", "مرور پرسش‌ها"), cls="band",
+                lede=L("The self-check questions from every chapter, brought back just before you are likely to forget them. "
+                       "Answer honestly: questions you get right come back later and later; the ones you miss come back tomorrow.",
+                       "پرسش‌های خودآزماییِ همهٔ فصل‌ها، درست پیش از آنکه احتمالاً فراموششان کنید، دوباره پیش رویتان می‌آیند. "
+                       "صادقانه پاسخ دهید: پرسش‌هایی که درست جواب می‌دهید دیرتر و دیرتر برمی‌گردند؛ آن‌هایی که از دست می‌دهید فردا."))
     return (f'{head}<main id="main" class="wrap review-page"><div id="review" aria-live="polite">'
-            f'<p class="nb-none">Loading questions…</p></div></main>')
+            f'<p class="nb-none">{L("Loading questions…", "در حال بارگذاری پرسش‌ها…")}</p></div></main>')
 
 
 # ----------------------------------------------------------------------------- offline, app manifest, EPUB
@@ -1240,13 +1561,17 @@ MANIFEST = {
 
 def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
-    paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
-             "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
-             "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js", "notes/", "review/", "account/",
-             "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
-             "manifest.webmanifest", "assets/icon-192.png"]
-    paths += sorted(f"guide/{p.name}" for p in GUIDE.glob("[01][0-9]-*.html"))
-    paths += sorted(f"concepts/{p.name}" for p in (ROOT / "concepts").glob("*.html"))
+    pages = ["", "index.html", "guide/", "guide/index.html", "concepts/", "credits.html", "guide/audio/", "guide/audio/index.html",
+             "guide/audio/about.html", "notes/", "review/", "account/"]
+    paths = list(pages) + ["fa/" + p for p in pages]
+    paths += ["map/", "map/index.html", "guide/audio/tracks.js",
+              "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
+              "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json",
+              "assets/data/terms-fa.json", "assets/data/search-fa.json", "assets/data/questions-fa.json",
+              "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css", "manifest.webmanifest", "assets/icon-192.png"]
+    for base in ("", "fa/"):
+        paths += sorted(f"{base}guide/{p.name}" for p in (ROOT / base / "guide").glob("[01][0-9]-*.html"))
+        paths += sorted(f"{base}concepts/{p.name}" for p in (ROOT / base / "concepts").glob("*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
@@ -1316,8 +1641,18 @@ code{font-family:monospace;font-size:0.9em}
 """
 
 
+EPUB_CSS_FA = """html,body{direction:rtl}
+body{line-height:1.9}
+th,td{text-align:right}
+blockquote{font-style:normal}
+em,i,cite{font-style:normal}
+.kicker{letter-spacing:0;text-transform:none}
+"""
+
+
 def epub_links(href):
     """Links inside the EPUB: between chapters stay inside the book, everything else goes to the website."""
+    live = LIVE + lang_prefix()
     if re.match(r"^[a-z]+:", href) or href.startswith("#"):
         return href
     path, _, frag = href.partition("#")
@@ -1325,15 +1660,15 @@ def epub_links(href):
     m = re.match(r"^(\d\d-[\w-]+)\.md$", path)
     if m:
         return m.group(1) + ".xhtml" + frag
-    if path == "../index.html":
+    if path in ("../index.html", "../../index.html"):
         return LIVE + "map/" + frag
     if path == "README.md":
-        return LIVE + "guide/" + frag
+        return live + "guide/" + frag
     if path.startswith("audio/"):
-        return LIVE + "guide/" + (path.replace("README.md", "about.html")) + frag
-    if path == "../README.md":
+        return live + "guide/" + (path.replace("README.md", "about.html")) + frag
+    if path in ("../README.md", "../../README.md"):
         return REPO + "#readme"
-    return LIVE + "guide/" + href
+    return live + "guide/" + href
 
 
 def build_epub(chapters, art):
@@ -1347,10 +1682,13 @@ def build_epub(chapters, art):
     except (OSError, subprocess.CalledProcessError):
         stamp = "2026-01-01T00:00:00Z"
     docs, nav, images = [], [], []
+    LANGATTR = 'lang="fa" xml:lang="fa" dir="rtl"' if LANG == "fa" else 'lang="en" xml:lang="en"'
+    rtl_spine = ' page-progression-direction="rtl"' if LANG == "fa" else ""
     for n, ch in sorted(chapters.items()):
         body, heads = md.render(clean_chapter_markdown(ch.text), epub_links)
         body = re.sub(r"<!--MERMAID:\w+-->",
-                      f'<p class="note">This diagram is in the web edition: <a href="{LIVE}guide/{ch.href}">{html.escape(ch.title)}</a>.</p>', body)
+                      L(f'<p class="note">This diagram is in the web edition: <a href="{LIVE}guide/{ch.href}">{html.escape(ch.title)}</a>.</p>',
+                        f'<p class="note">این نمودار در نسخهٔ وب آمده است: <a href="{LIVE}fa/guide/{ch.href}">{html.escape(ch.title)}</a>.</p>'), body)
         pic = ""
         if (ART_DIR / f"{ch.art}-640.jpg").exists():
             images.append(ch.art)
@@ -1358,10 +1696,14 @@ def build_epub(chapters, art):
             pic = (f'<figure class="cover"><img src="images/{ch.art}.jpg" alt="{attr(art.alt(ch.art))}"/>'
                    f'{f"<figcaption>{cap}</figcaption>" if cap else ""}</figure>')
         roman, part = PART_OF.get(ch.num, ("", ""))
-        kicker = f"Part {roman} · {part} · Chapter {ch.num}" if roman else "Appendix"
+        if roman:
+            pl, pn = part_label(roman, part)
+            kicker = f"{pl} · {pn} · {ch.label}"
+        else:
+            kicker = L("Appendix", "پیوست")
         name = f"{ch.slug}.xhtml"
         page = (f'<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
-                f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
+                f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" {LANGATTR}>'
                 f'<head><meta charset="utf-8"/><title>{html.escape(ch.title)}</title><link rel="stylesheet" href="book.css"/></head>'
                 f'<body><section epub:type="chapter">{pic}<p class="kicker">{html.escape(kicker)}</p><h1>{html.escape(ch.title)}</h1>'
                 f'{xhtml(body)}</section></body></html>')
@@ -1370,15 +1712,15 @@ def build_epub(chapters, art):
         nav.append(f'<li><a href="{name}">{html.escape(ch.label + ": " + ch.title if ch.num <= 16 else ch.title)}</a>'
                    f'{f"<ol>{subs}</ol>" if subs else ""}</li>')
     cover = ("<?xml version='1.0' encoding='utf-8'?>\n<!DOCTYPE html>\n"
-             '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
-             '<head><meta charset="utf-8"/><title>Cover</title><link rel="stylesheet" href="book.css"/></head>'
-             '<body><section epub:type="cover"><figure class="cover"><img src="images/cover.jpg" alt="Caspar David Friedrich, Wanderer above the Sea of Fog"/></figure>'
-             f'<h1>{SITE}</h1><p>A complete guide to knowledge, evidence, and critical thinking.</p>'
-             f'<p>The illustrated web edition, the concept map and the audio: <a href="{LIVE}">{LIVE}</a></p></section></body></html>')
+             f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" {LANGATTR}>'
+             f'<head><meta charset="utf-8"/><title>{L("Cover", "جلد")}</title><link rel="stylesheet" href="book.css"/></head>'
+             f'<body><section epub:type="cover"><figure class="cover"><img src="images/cover.jpg" alt="{attr(art.alt("home"))}"/></figure>'
+             f'<h1>{site_name()}</h1><p>{L("A complete guide to knowledge, evidence, and critical thinking.", "راهنمایی کامل دربارهٔ معرفت، شواهد و تفکر نقادانه.")}</p>'
+             f'<p>{L("The illustrated web edition, the concept map and the audio:", "نسخهٔ مصوّرِ وب، نقشهٔ مفاهیم و نسخهٔ صوتی:")} <a href="{LIVE}{lang_prefix()}">{LIVE}{lang_prefix()}</a></p></section></body></html>')
     nav_doc = ("<?xml version='1.0' encoding='utf-8'?>\n<!DOCTYPE html>\n"
-               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
-               '<head><meta charset="utf-8"/><title>Contents</title><link rel="stylesheet" href="book.css"/></head>'
-               f'<body><nav epub:type="toc" id="toc"><h1>Contents</h1><ol>{"".join(nav)}</ol></nav></body></html>')
+               f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" {LANGATTR}>'
+               f'<head><meta charset="utf-8"/><title>{L("Contents", "فهرست")}</title><link rel="stylesheet" href="book.css"/></head>'
+               f'<body><nav epub:type="toc" id="toc"><h1>{L("Contents", "فهرست")}</h1><ol>{"".join(nav)}</ol></nav></body></html>')
     items = ['<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
              '<item id="css" href="book.css" media-type="text/css"/>',
              '<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>',
@@ -1389,13 +1731,14 @@ def build_epub(chapters, art):
     opf = ('<?xml version="1.0" encoding="utf-8"?>\n'
            '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">'
            '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
-           '<dc:identifier id="uid">urn:uuid:5f0c7c1e-3f47-4c55-9a0c-6d2a9b1e7e11</dc:identifier>'
-           f'<dc:title>{SITE}</dc:title><dc:creator>{SITE}</dc:creator><dc:language>en</dc:language>'
-           f'<dc:source>{LIVE}</dc:source><meta property="dcterms:modified">{stamp}</meta></metadata>'
-           f'<manifest>{"".join(items)}</manifest><spine>{spine}</spine></package>')
+           f'<dc:identifier id="uid">urn:uuid:5f0c7c1e-3f47-4c55-9a0c-6d2a9b1e7e{L("11", "fa")}</dc:identifier>'
+           f'<dc:title>{site_name()}</dc:title><dc:creator>{site_name()}</dc:creator><dc:language>{L("en", "fa")}</dc:language>'
+           f'<dc:source>{LIVE}{lang_prefix()}</dc:source><meta property="dcterms:modified">{stamp}</meta></metadata>'
+           f'<manifest>{"".join(items)}</manifest><spine{rtl_spine}>{spine}</spine></package>')
     container = ('<?xml version="1.0" encoding="utf-8"?>\n<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
                  '<rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>')
-    out = GUIDE / EPUB_NAME
+    out = OUT() / "guide" / L(EPUB_NAME, EPUB_NAME_FA)
+    out.parent.mkdir(parents=True, exist_ok=True)
     fixed = (2026, 1, 1, 0, 0, 0)
 
     def add(z, name, data, compress=True):
@@ -1408,7 +1751,7 @@ def build_epub(chapters, art):
         add(z, "OEBPS/content.opf", opf)
         add(z, "OEBPS/nav.xhtml", nav_doc)
         add(z, "OEBPS/cover.xhtml", cover)
-        add(z, "OEBPS/book.css", EPUB_CSS)
+        add(z, "OEBPS/book.css", EPUB_CSS + L("", EPUB_CSS_FA))
         add(z, "OEBPS/images/cover.jpg", (ART_DIR / "home-1200.jpg").read_bytes(), compress=False)
         for k in images:
             add(z, f"OEBPS/images/{k}.jpg", (ART_DIR / f"{k}-640.jpg").read_bytes(), compress=False)
@@ -1424,75 +1767,117 @@ def write(path, text):
     path.write_text(text, encoding="utf-8")
 
 
-def main():
-    art = Art()
-    print("artwork")
-    art.derive()
-    (ASSETS / "favicon.svg").write_text(FAVICON, encoding="utf-8")
-    md = Markdown()
+def page(rel, **kw):
+    """Write one page of the language being built, with a link to the same page in the other language."""
+    path = OUT() / rel
+    other = (ROOT / "fa" / rel) if LANG == "en" else (ROOT / rel)
+    alt = os.path.relpath(other, path.parent).replace(os.sep, "/")
+    if alt.endswith("index.html"):
+        alt = alt[:-len("index.html")] or "./"
+    write(path, shell(alt=alt, **kw))
+
+
+def load_chapters(tracks):
     chapters = {}
     for p in sorted(GUIDE.glob("[01][0-9]-*.md")):
-        ch = Chapter(p)
+        if LANG == "fa":
+            fa = GUIDE / "fa" / p.name
+            ch = Chapter(fa) if fa.exists() else Chapter(p, fallback=True)
+        else:
+            ch = Chapter(p)
         chapters[ch.num] = ch
     read_blurbs(chapters)
-    tracks = load_js_json(GUIDE / "audio" / "tracks.js", "window.TRACKS =")
     for t in tracks:
         n = int(t["file"][:2])
         if n in chapters:
             chapters[n].track = t
-    total = sum(t["duration"] for t in tracks)
-    total_label = f"{int(total // 3600)}½ hours" if 0.25 <= (total / 3600) % 1 < 0.75 else f"{round(total / 3600)} hours"
-    C = Concepts()
+    return chapters
 
-    print("guide")
+
+def build_language(art, md, C, tracks):
+    reset_learning()
+    chapters = load_chapters(tracks)
+    if LANG == "en":
+        EN_CHAPTERS.clear()
+        EN_CHAPTERS.update(chapters)
+    total = sum(t["duration"] for t in tracks)
+    half = 0.25 <= (total / 3600) % 1 < 0.75
+    total_label = (f"{int(total // 3600)}½ hours" if half else f"{round(total / 3600)} hours") if LANG == "en" else \
+        (f"{num(int(total // 3600))}٫۵ ساعت" if half else f"{num(round(total / 3600))} ساعت")
+
+    print(f"[{LANG}] guide")
     later = []
     prepare_learning(md, C, chapters)
     for ch in chapters.values():
         build_chapter(ch, chapters, md, art, later, C)
     guide_index = build_guide_index(art, chapters, md, total_label)
-    home = build_home(art, chapters, md, total_label, len(C.N))
-    svgs = render_mermaid(md)
-    for path, page, root, ch, desc in later:
-        page = place_diagrams(page, md, svgs)
-        write(path, shell(root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=page,
-                          current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True))
-    write(GUIDE / "index.html", shell(root="../", title="The guide", desc="Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
-                                      body=place_diagrams(guide_index, md, svgs), current="guide",
-                                      hero_img=(art.src("guide", "../"), art.srcset("guide", "../")), bar="clear"))
-    write(ROOT / "index.html", shell(root="", title=SITE, desc="A free, complete guide to epistemology and critical thinking: illustrated chapters, a bilingual concept map, and a narrated audio edition.",
-                                     body=home, hero_img=(art.src("home", ""), art.srcset("home", "")), bar="clear"))
+    home_page = build_home(art, chapters, md, total_label, len(C.N))
+    svgs = render_mermaid(md, prune=False)
+    r1, r0, r2 = up(1), up(0), up(2)
+    for path, body, root, ch, desc in later:
+        body = place_diagrams(body, md, svgs)
+        page(f"guide/{ch.href}", root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=body,
+             current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True)
+    page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
+         desc=L("Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
+                "فهرستِ «تسلط بر معرفت‌شناسی»: شانزده فصل دربارهٔ معرفت، شواهد و تفکر نقادانه."),
+         body=place_diagrams(guide_index, md, svgs), current="guide", hero_img=(art.src("guide", r1), art.srcset("guide", r1)), bar="clear")
+    page("index.html", root=r0, title=site_name(),
+         desc=L("A free, complete guide to epistemology and critical thinking: illustrated chapters, a bilingual concept map, and a narrated audio edition.",
+                "راهنمایی رایگان و کامل دربارهٔ معرفت‌شناسی و تفکر نقادانه: فصل‌های مصوّر، نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی."),
+         body=home_page, hero_img=(art.src("home", r0), art.srcset("home", r0)), bar="clear")
 
-    print("concepts")
+    print(f"[{LANG}] concepts")
     pages = []
-    build_concepts(C, chapters, md, art, pages)
+    (build_concepts if LANG == "en" else build_concepts_fa)(C, chapters, md, art, pages)
     for path, root, title, desc, body, current, key in pages:
-        write(path, shell(root=root, title=title, desc=desc, body=body, current=current,
-                          hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear", reader=True))
+        page(str(path.relative_to(OUT())), root=root, title=title, desc=desc, body=body, current=current,
+             hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear", reader=True, bilingual=(LANG == "en"))
 
-    print("audio, credits")
-    write(GUIDE / "audio" / "index.html", shell(root="../../", title="Listen", desc="The narrated audio edition of Mastering Epistemology.",
-                                                body=build_audio_page(art, chapters, tracks), current="audio",
-                                                hero_img=(art.src("audio", "../../"), art.srcset("audio", "../../")), bar="clear"))
-    write(GUIDE / "audio" / "about.html", shell(root="../../", title="How the audio was made", desc="How the narrated audio edition was produced.",
-                                                body=build_audio_about(art, md), current="audio", bar="clear"))
-    write(ROOT / "notes" / "index.html", shell(root="../", title="Notebook", desc="Your highlights and notes.",
-                                               body=build_notebook(art), current="account", bar="clear"))
-    write(ROOT / "credits.html", shell(root="", title="Credits", desc="Credits for the artwork, audio and fonts on this site.",
-                                       body=build_credits(art), bar="clear"))
+    print(f"[{LANG}] audio, credits, study pages")
+    page("guide/audio/index.html", root=r2, title=L("Listen", "شنیدن"), desc=L("The narrated audio edition of Mastering Epistemology.", "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»."),
+         body=build_audio_page(art, chapters, tracks), current="audio", hero_img=(art.src("audio", r2), art.srcset("audio", r2)), bar="clear")
+    page("guide/audio/about.html", root=r2, title=L("How the audio was made", "صوت چگونه ساخته شد"),
+         desc=L("How the narrated audio edition was produced.", "نسخهٔ صوتی چگونه ساخته شد."), body=build_audio_about(art, md), current="audio", bar="clear")
+    page("notes/index.html", root=r1, title=L("Notebook", "دفترچه"), desc=L("Your highlights and notes.", "نشانه‌گذاری‌ها و یادداشت‌های شما."),
+         body=build_notebook(art), current="account", bar="clear")
+    page("credits.html", root=r0, title=L("Credits", "منابع"), desc=L("Credits for the artwork, audio and fonts on this site.", "منابعِ آثار هنری، صدا و قلم‌های این سایت."),
+         body=build_credits(art), bar="clear")
+    page("review/index.html", root=r1, title=L("Review questions", "مرور پرسش‌ها"),
+         desc=L("Spaced review of the guide's self-check questions.", "مرورِ فاصله‌دارِ پرسش‌های خودآزماییِ راهنما."), body=build_review(art), current="account", bar="clear")
+    page("account/index.html", root=r1, title=L("My study", "مطالعهٔ من"),
+         desc=L("Sign in, sync your notes and progress, and set up the AI study companion.", "ورود، همگام‌سازیِ یادداشت‌ها و پیشرفت، و راه‌اندازیِ همراهِ هوشمندِ مطالعه."),
+         body=build_account(art), current="account", bar="clear")
+    write_learning_data(C)
+    build_epub(chapters, art)
+    return chapters, pages
+
+
+def main():
+    global LANG
+    art = Art()
+    print("artwork")
+    art.derive()
+    (ASSETS / "favicon.svg").write_text(FAVICON, encoding="utf-8")
+    md = Markdown()
+    tracks = load_js_json(GUIDE / "audio" / "tracks.js", "window.TRACKS =")
+    C = Concepts()
+    LANG = "en"
+    chapters, pages = build_language(art, md, C, tracks)
     write(ROOT / "404.html", shell(root="", title="Page not found", desc="Page not found.", body=build_404(art), bar="clear")
           .replace("<meta charset=\"utf-8\">", "<meta charset=\"utf-8\">\n" + BASE_404, 1))
+    LANG = "fa"
+    fa_chapters, _ = build_language(art, md, C, tracks)
+    LANG = "en"
+    render_mermaid(md, prune=True)
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
-
-    write(ROOT / "review" / "index.html", shell(root="../", title="Review questions", desc="Spaced review of the guide's self-check questions.",
-                                                body=build_review(art), current="account", bar="clear"))
-    write(ROOT / "account" / "index.html", shell(root="../", title="My study", desc="Sign in, sync your notes and progress, and set up the AI study companion.",
-                                                 body=build_account(art), current="account", bar="clear"))
-    write_learning_data(C)
-    print("offline, epub")
+    print("offline")
     write(ROOT / "manifest.webmanifest", json.dumps(MANIFEST, indent=2) + "\n")
     write(ROOT / "offline.json", json.dumps(build_offline_list(), indent=0) + "\n")
-    build_epub(chapters, art)
-    print(f"done: {len(chapters)} chapters, {len(pages)} concept pages")
+    done = sum(1 for c in fa_chapters.values() if not c.fallback)
+    print(f"done: {len(chapters)} chapters ({done} translated into Persian), {len(pages)} concept pages")
+
+
 
 
 if __name__ == "__main__":

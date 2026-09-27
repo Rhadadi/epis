@@ -10,7 +10,14 @@
       "date": "c. 1818",
       "place": "Hamburger Kunsthalle",
       "note": "A lone figure looks out over a landscape he can only partly see. Epistemology starts in the same place: with what we can make out, and what the fog still hides.",
-      "focus": "50% 28%"
+      "focus": "50% 28%",
+      "fa": {
+        "artist": "کاسپار داوید فریدریش",
+        "title": "سرگردان بر فراز دریای مه",
+        "date": "حدود ۱۸۱۸",
+        "place": "کونست‌هاله، هامبورگ",
+        "note": "مردی تنها به منظره‌ای می‌نگرد که فقط بخشی از آن را می‌بیند. معرفت‌شناسی از همین‌جا آغاز می‌شود: از آنچه می‌توانیم تشخیص دهیم و آنچه مه هنوز پنهان کرده است."
+      }
     },
     "guide": {
       "wiki": [
@@ -21,7 +28,14 @@
       "date": "c. 1668",
       "place": "Musée du Louvre, Paris",
       "note": "A scholar reaches for a celestial globe with a book open beside him: learning from books and learning from the world in a single gesture.",
-      "focus": "62% 45%"
+      "focus": "62% 45%",
+      "fa": {
+        "artist": "یوهانس ورمیر",
+        "title": "ستاره‌شناس",
+        "date": "حدود ۱۶۶۸",
+        "place": "موزهٔ لوور، پاریس",
+        "note": "دانشمندی دست به سوی کرهٔ سماوی دراز می‌کند و کتابی در کنارش گشوده است: آموختن از کتاب و آموختن از جهان در یک حرکت."
+      }
     },
     "map": {
       "wiki": [
@@ -38,7 +52,14 @@
         0.03,
         0.95,
         0.97
-      ]
+      ],
+      "fa": {
+        "artist": "آندریاس سلاریوس",
+        "title": "نقشهٔ کیهانِ کوپرنیکی، از اطلس «هارمونیا ماکروکوزمیکا»",
+        "date": "۱۶۶۰",
+        "place": "",
+        "note": "اطلس آسمانی سلاریوس الگوهای رقیبِ کیهان را کنار هم می‌گذاشت. نقشهٔ مفاهیم همین کار را برای نظریه‌های رقیبِ معرفت می‌کند."
+      }
     },
     "audio": {
       "wiki": [
@@ -49,7 +70,14 @@
       "date": "1898–99",
       "place": "",
       "note": "Nipper the dog, said to be listening to a recording of his late master's voice: perhaps the most famous picture of listening ever painted.",
-      "focus": "50% 42%"
+      "focus": "50% 42%",
+      "fa": {
+        "artist": "فرانسیس بارو",
+        "title": "صدای صاحبش",
+        "date": "۱۸۹۸–۱۸۹۹",
+        "place": "",
+        "note": "نیپر، سگی که گفته‌اند به ضبطِ صدای صاحبِ درگذشته‌اش گوش می‌دهد: شاید مشهورترین تصویرِ «شنیدن» که تاکنون کشیده شده است."
+      }
     },
     "ch01": {
       "wiki": [
@@ -60,7 +88,14 @@
       "date": "c. 1669",
       "place": "Städel Museum, Frankfurt",
       "note": "A scholar pauses over his charts, dividers in hand, and looks up as if struck by a thought. This chapter draws the map of the field.",
-      "focus": "55% 38%"
+      "focus": "55% 38%",
+      "fa": {
+        "artist": "یوهانس ورمیر",
+        "title": "جغرافی‌دان",
+        "date": "حدود ۱۶۶۹",
+        "place": "موزهٔ اشتدل، فرانکفورت",
+        "note": "دانشمندی با پرگار در دست بر نقشه‌هایش درنگ می‌کند و سر بلند می‌کند، گویی فکری به ذهنش رسیده است. این فصل نقشهٔ این حوزه را می‌کشد."
+      }
     },
     "ch02": {
       "wiki": [
@@ -71,7 +106,14 @@
       "date": "1787",
       "place": "The Metropolitan Museum of Art, New York",
       "note": "Condemned for impiety and for corrupting the young, Socrates keeps arguing until he takes the hemlock. The history of the theory of knowledge begins with his questions.",
-      "focus": "62% 45%"
+      "focus": "62% 45%",
+      "fa": {
+        "artist": "ژاک‌لویی داوید",
+        "title": "مرگ سقراط",
+        "date": "۱۷۸۷",
+        "place": "موزهٔ هنر متروپولیتن، نیویورک",
+        "note": "سقراط که به بی‌دینی و فاسدکردنِ جوانان محکوم شده، تا لحظهٔ نوشیدنِ شوکران به استدلال ادامه می‌دهد. تاریخِ نظریهٔ معرفت با پرسش‌های او آغاز می‌شود."
+      }
     },
     "ch03": {
       "wiki": [
@@ -82,7 +124,14 @@
       "date": "1632",
       "place": "Mauritshuis, The Hague",
       "note": "Dr Tulp lays bare the muscles of the forearm while his audience leans in to see. An argument can be dissected the same way, layer by layer.",
-      "focus": "50% 48%"
+      "focus": "50% 48%",
+      "fa": {
+        "artist": "رامبرانت فان راین",
+        "title": "درسِ کالبدشناسیِ دکتر نیکولاس تولپ",
+        "date": "۱۶۳۲",
+        "place": "موریتس‌هاوس، لاهه",
+        "note": "دکتر تولپ ماهیچه‌های ساعد را می‌گشاید و حاضران خم شده‌اند تا ببینند. استدلال را هم می‌توان همین‌طور، لایه به لایه، کالبدشکافی کرد."
+      }
     },
     "ch04": {
       "wiki": [
@@ -93,7 +142,14 @@
       "date": "1563",
       "place": "Kunsthistorisches Museum, Vienna",
       "note": "The builders' great project collapses once they can no longer understand one another's words. Many arguments fail the same way.",
-      "focus": "50% 42%"
+      "focus": "50% 42%",
+      "fa": {
+        "artist": "پیتر بروگل مهتر",
+        "title": "برج بابل",
+        "date": "۱۵۶۳",
+        "place": "موزهٔ تاریخ هنر، وین",
+        "note": "طرحِ بزرگِ سازندگان همین که دیگر سخنِ یکدیگر را نمی‌فهمند فرو می‌ریزد. بسیاری از بحث‌ها هم به همین شکل شکست می‌خورند."
+      }
     },
     "ch05": {
       "wiki": [
@@ -110,7 +166,14 @@
         0.05,
         0.935,
         0.95
-      ]
+      ],
+      "fa": {
+        "artist": "آلبرشت دورر",
+        "title": "مالیخولیا ۱",
+        "date": "۱۵۱۴",
+        "place": "حکاکی",
+        "note": "نبوغی بالدار میان ابزارهای سنجش (پرگار، ترازو، ساعت شنی، مربعِ جادویی) نشسته و در برابر پرسشی که هنوز پاسخش را نمی‌داند درمانده است. معرفت دقیقاً چیست؟"
+      }
     },
     "ch06": {
       "file": [
@@ -132,7 +195,14 @@
         0.06,
         0.925,
         0.94
-      ]
+      ],
+      "fa": {
+        "artist": "جووانی باتیستا پیرانزی",
+        "title": "پلِ متحرک، لوحهٔ هفتم از «زندان‌های خیالی»",
+        "date": "۱۷۶۱",
+        "place": "اچینگ",
+        "note": "پله به پله‌ای دیگر می‌رسد و پل به پلی دیگر، و هیچ چیز گویی بر زمین استوار نیست. پیرانزی مسئلهٔ تسلسل را به صورتِ معماری کشیده است."
+      }
     },
     "ch07": {
       "wiki": [
@@ -143,7 +213,14 @@
       "date": "1434",
       "place": "The National Gallery, London",
       "note": "Above the mirror van Eyck wrote Johannes de eyck fuit hic, “Jan van Eyck was here,” and the mirror shows the room as a witness saw it: perception and testimony in one picture.",
-      "focus": "50% 32%"
+      "focus": "50% 32%",
+      "fa": {
+        "artist": "یان فان آیک",
+        "title": "پرترهٔ آرنولفینی",
+        "date": "۱۴۳۴",
+        "place": "نگارخانهٔ ملی، لندن",
+        "note": "فان آیک بالای آینه نوشته است «یان فان آیک اینجا بود»، و آینه اتاق را همان‌گونه نشان می‌دهد که شاهدی آن را دیده است: ادراک و گواهی در یک تصویر."
+      }
     },
     "ch08": {
       "wiki": [
@@ -154,7 +231,14 @@
       "date": "c. 1601–02",
       "place": "Sanssouci Picture Gallery, Potsdam",
       "note": "Thomas will not believe until he has touched the wound: the skeptic's demand for evidence, taken literally.",
-      "focus": "45% 40%"
+      "focus": "45% 40%",
+      "fa": {
+        "artist": "کاراواجو",
+        "title": "ناباوریِ توماس قدیس",
+        "date": "حدود ۱۶۰۱–۱۶۰۲",
+        "place": "نگارخانهٔ سان‌سوسی، پوتسدام",
+        "note": "توماس تا زخم را لمس نکند باور نمی‌کند: مطالبهٔ شاهد از سوی شکاک، به معنای تحت‌اللفظی."
+      }
     },
     "ch09": {
       "wiki": [
@@ -165,7 +249,14 @@
       "date": "1872",
       "place": "Musée Marmottan Monet, Paris",
       "note": "The sun has risen every morning so far. Hume asked what, exactly, entitles us to expect that it will rise tomorrow.",
-      "focus": "45% 42%"
+      "focus": "45% 42%",
+      "fa": {
+        "artist": "کلود مونه",
+        "title": "امپرسیون، طلوع آفتاب",
+        "date": "۱۸۷۲",
+        "place": "موزهٔ مارموتان مونه، پاریس",
+        "note": "خورشید تاکنون هر صبح طلوع کرده است. هیوم پرسید دقیقاً چه چیزی به ما حق می‌دهد انتظار داشته باشیم فردا هم طلوع کند."
+      }
     },
     "ch10": {
       "wiki": [
@@ -176,7 +267,14 @@
       "date": "1768",
       "place": "The National Gallery, London",
       "note": "A travelling lecturer pumps the air out of a flask to show what happens to a bird without it: science as public demonstration, dramatic, persuasive and not without cost.",
-      "focus": "50% 44%"
+      "focus": "50% 44%",
+      "fa": {
+        "artist": "جوزف رایت اهلِ داربی",
+        "title": "آزمایشی بر پرنده‌ای در پمپِ هوا",
+        "date": "۱۷۶۸",
+        "place": "نگارخانهٔ ملی، لندن",
+        "note": "سخنرانی دوره‌گرد هوای یک ظرف را بیرون می‌کشد تا نشان دهد بی‌هوا بر سرِ پرنده چه می‌آید: علم به‌مثابهٔ نمایشی عمومی، پرشور، قانع‌کننده و نه بی‌هزینه."
+      }
     },
     "ch11": {
       "wiki": [
@@ -187,7 +285,14 @@
       "date": "24 December 1968",
       "place": "NASA",
       "note": "The Earth seen from lunar orbit: as close as anyone had come to what the philosopher Thomas Nagel called the view from nowhere.",
-      "focus": "50% 40%"
+      "focus": "50% 40%",
+      "fa": {
+        "artist": "ویلیام اندرز، آپولو ۸",
+        "title": "طلوع زمین",
+        "date": "۲۴ دسامبر ۱۹۶۸",
+        "place": "ناسا",
+        "note": "زمین از مدارِ ماه: نزدیک‌ترین جایی که کسی تا آن زمان به آنچه تامس نیگل «نگاه از ناکجا» می‌نامید رسیده بود."
+      }
     },
     "ch12": {
       "wiki": [
@@ -198,7 +303,14 @@
       "date": "1509–1511",
       "place": "Apostolic Palace, Vatican City",
       "note": "Plato and Aristotle at the centre, surrounded by generations of thinkers in conversation and dispute: knowledge as something a community builds together.",
-      "focus": "50% 58%"
+      "focus": "50% 58%",
+      "fa": {
+        "artist": "رافائل",
+        "title": "مکتب آتن",
+        "date": "۱۵۰۹–۱۵۱۱",
+        "place": "کاخ حواری، واتیکان",
+        "note": "افلاطون و ارسطو در میانه، و نسل‌هایی از اندیشمندان در گفت‌وگو و مناقشه گرداگردشان: معرفت به‌مثابهٔ چیزی که جامعه‌ای با هم می‌سازد."
+      }
     },
     "ch13": {
       "wiki": [
@@ -209,7 +321,14 @@
       "date": "1633",
       "place": "stolen from the Isabella Stewart Gardner Museum, Boston, in 1990",
       "note": "A ship in a storm recalls William Clifford's shipowner, who let an unseaworthy vessel sail because he had talked himself into believing it was safe.",
-      "focus": "45% 38%"
+      "focus": "45% 38%",
+      "fa": {
+        "artist": "رامبرانت فان راین",
+        "title": "توفان در دریای جلیل",
+        "date": "۱۶۳۳",
+        "place": "در ۱۹۹۰ از موزهٔ ایزابلا استوارت گاردنر، بوستون، ربوده شد",
+        "note": "کشتی‌ای در توفان، کشتی‌دارِ ویلیام کلیفورد را به یاد می‌آورد که کشتیِ ناایمنی را روانهٔ دریا کرد، چون خود را قانع کرده بود که ایمن است."
+      }
     },
     "ch14": {
       "wiki": [
@@ -226,7 +345,14 @@
         0.03,
         0.965,
         0.97
-      ]
+      ],
+      "fa": {
+        "artist": "فرانسیسکو گویا",
+        "title": "خوابِ عقل هیولا می‌زاید، لوحهٔ ۴۳ از «هوس‌ها»",
+        "date": "۱۷۹۹",
+        "place": "اچینگ و آکواتینت",
+        "note": "وقتی عقل به خواب می‌رود، جغدها و خفاش‌ها هجوم می‌آورند. روان‌شناسیِ استدلال بررسی می‌کند که وقتی اندیشیدنِ دقیق خاموش می‌شود چه چیزی جایش را پر می‌کند."
+      }
     },
     "ch15": {
       "wiki": [
@@ -239,7 +365,14 @@
       "date": "c. 1595",
       "place": "Kimbell Art Museum, Fort Worth",
       "note": "An accomplice reads the young man's cards and signals, while the cheat reaches behind his back for a hidden card. Fallacies are tricks of the same kind, played with arguments.",
-      "focus": "50% 35%"
+      "focus": "50% 35%",
+      "fa": {
+        "artist": "کاراواجو",
+        "title": "قماربازانِ متقلب",
+        "date": "حدود ۱۵۹۵",
+        "place": "موزهٔ هنر کیمبل، فورت‌ورث",
+        "note": "همدستی کارت‌های مرد جوان را می‌خواند و علامت می‌دهد، و متقلب دست پشتِ کمرش برده تا کارتی پنهان بیرون بکشد. مغالطه‌ها هم ترفندهایی از همین دست‌اند، با استدلال."
+      }
     },
     "ch16": {
       "wiki": [
@@ -250,7 +383,14 @@
       "date": "1533",
       "place": "The National Gallery, London",
       "note": "Two envoys stand among the instruments of their age (globes, sundials, a lute), while a stretched skull resolves only when you change your point of view: an emblem for a toolkit.",
-      "focus": "50% 45%"
+      "focus": "50% 45%",
+      "fa": {
+        "artist": "هانس هولباین جوان",
+        "title": "سفیران",
+        "date": "۱۵۳۳",
+        "place": "نگارخانهٔ ملی، لندن",
+        "note": "دو فرستاده میان ابزارهای روزگارشان (کره‌ها، ساعت‌های آفتابی، عود) ایستاده‌اند، و جمجمه‌ای کشیده فقط وقتی شکلِ واقعی‌اش را نشان می‌دهد که زاویهٔ دیدتان را عوض کنید: نمادی برای یک جعبه‌ابزار."
+      }
     },
     "ch17": {
       "wiki": [
@@ -263,7 +403,14 @@
       "date": "c. 1566",
       "place": "Skokloster Castle, Sweden",
       "note": "A portrait assembled entirely from books: the right emblem for a glossary.",
-      "focus": "50% 38%"
+      "focus": "50% 38%",
+      "fa": {
+        "artist": "جوزپه آرچیمبولدو",
+        "title": "کتابدار",
+        "date": "حدود ۱۵۶۶",
+        "place": "قلعهٔ اسکوکلوستر، سوئد",
+        "note": "پرتره‌ای که یکسره از کتاب ساخته شده است: نمادی درخور برای یک واژه‌نامه."
+      }
     },
     "ch18": {
       "wiki": [
@@ -276,7 +423,14 @@
       "date": "c. 1850",
       "place": "Museum Georg Schäfer, Schweinfurt",
       "note": "High on a library ladder, a scholar reads with a book under each arm and another between his knees. Begin with one book at a time.",
-      "focus": "50% 30%"
+      "focus": "50% 30%",
+      "fa": {
+        "artist": "کارل اشپیتسوگ",
+        "title": "کرمِ کتاب",
+        "date": "حدود ۱۸۵۰",
+        "place": "موزهٔ گئورگ شفر، شواینفورت",
+        "note": "دانشمندی بالای نردبانِ کتابخانه کتاب می‌خواند، با کتابی زیرِ هر بغل و یکی میان زانوانش. هر بار با یک کتاب آغاز کنید."
+      }
     },
     "elephant": {
       "file": [
@@ -296,7 +450,14 @@
         0.04,
         0.97,
         0.96
-      ]
+      ],
+      "fa": {
+        "artist": "هانابوسا ایتچو",
+        "title": "راهبانِ نابینا فیل را وارسی می‌کنند",
+        "date": "دورهٔ ادو",
+        "place": "چاپ باسمه‌ای",
+        "note": "هر راهب بخشی را لمس می‌کند و جانوری متفاوت را توصیف می‌کند. نقشهٔ مفاهیم دوازده زاویه از این دست به یک پرسش پیش می‌نهد."
+      }
     },
     "cave": {
       "wiki": [
@@ -313,7 +474,14 @@
         0.08,
         0.98,
         0.84
-      ]
+      ],
+      "fa": {
+        "artist": "یان سانردام، از روی اثر کورنلیس فان هارلم",
+        "title": "غار افلاطون",
+        "date": "۱۶۰۴",
+        "place": "حکاکی",
+        "note": "زندانیان سایه‌های روی دیوار را واقعیت می‌پندارند: کهن‌ترین تصویرِ فلسفه از شکافِ میان نمود و معرفت."
+      }
     }
   }
 }

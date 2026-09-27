@@ -12,20 +12,24 @@
   var SCRIPT = document.currentScript && document.currentScript.src;
   var ROOT = SCRIPT ? new URL("../", SCRIPT).href : new URL("./", location.href).href;
   var CONFIG = window.EPIS_AI_CONFIG || {};
+  var FA = document.documentElement.lang === "fa";
+  var HOME = ROOT + (FA ? "fa/" : "");
+  function T(en, fa) { return FA ? fa : en; }
+  function N(x) { return FA ? String(x).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }) : String(x); }
 
   var MODELS = {
     anthropic: [
-      { id: "claude-opus-5", name: "Claude Opus 5", note: "best answers · roughly $0.17 for the first question in a chapter, about 4¢ for each follow-up" },
-      { id: "claude-sonnet-5", name: "Claude Sonnet 5", note: "fast and strong · roughly 7¢ for the first question in a chapter, 1–2¢ after" },
-      { id: "claude-haiku-4-5", name: "Claude Haiku 4.5", note: "quickest and cheapest · roughly 3–4¢ for the first question in a chapter, under 1¢ after" }
+      { id: "claude-opus-5", name: "Claude Opus 5", note: T("best answers · roughly $0.17 for the first question in a chapter, about 4¢ for each follow-up", "بهترین پاسخ‌ها · حدودِ ۱۷ سنت برای نخستین پرسش در هر فصل و حدودِ ۴ سنت برای هر پرسشِ بعدی") },
+      { id: "claude-sonnet-5", name: "Claude Sonnet 5", note: T("fast and strong · roughly 7¢ for the first question in a chapter, 1–2¢ after", "سریع و قوی · حدودِ ۷ سنت برای نخستین پرسش در هر فصل و ۱ تا ۲ سنت پس از آن") },
+      { id: "claude-haiku-4-5", name: "Claude Haiku 4.5", note: T("quickest and cheapest · roughly 3–4¢ for the first question in a chapter, under 1¢ after", "سریع‌ترین و ارزان‌ترین · حدودِ ۳ تا ۴ سنت برای نخستین پرسش در هر فصل و کمتر از ۱ سنت پس از آن") }
     ],
     openai: ["gpt-5", "gpt-5-mini", "gpt-4.1", "gpt-4.1-mini", "gpt-4o-mini"]
   };
   var MODES = {
-    explain: { label: "Explain", hint: "Ask anything about this page" },
-    socratic: { label: "Socratic tutor", hint: "It answers with questions that lead you there" },
-    debate: { label: "Debate me", hint: "State a view; it argues the other side" },
-    quiz: { label: "Quiz me", hint: "It asks, you answer, it grades" }
+    explain: { label: T("Explain", "توضیح"), hint: T("Ask anything about this page", "هر پرسشی دربارهٔ این صفحه بپرسید") },
+    socratic: { label: T("Socratic tutor", "معلمِ سقراطی"), hint: T("It answers with questions that lead you there", "با پرسش شما را به پاسخ می‌رساند") },
+    debate: { label: T("Debate me", "با من مناظره کن"), hint: T("State a view; it argues the other side", "دیدگاهی بگویید؛ از طرفِ مقابل دفاع می‌کند") },
+    quiz: { label: T("Quiz me", "از من بپرس"), hint: T("It asks, you answer, it grades", "می‌پرسد، پاسخ می‌دهید، ارزیابی می‌کند") }
   };
   var MODE_RULES = {
     explain: "",
@@ -55,13 +59,13 @@
       if (s.provider === "anthropic") {
         var m = s.models.anthropic || "claude-opus-5";
         var info = MODELS.anthropic.filter(function (x) { return x.id === m; })[0];
-        return { kind: "anthropic", key: s.keys.anthropic, model: m, label: (info ? info.name : m) + " · your key", full: true };
+        return { kind: "anthropic", key: s.keys.anthropic, model: m, label: (info ? info.name : m) + T(" · your key", " · کلیدِ شما"), full: true };
       }
-      if (s.provider === "openai") return { kind: "openai", base: "https://api.openai.com/v1", key: s.keys.openai, model: s.models.openai || "gpt-5-mini", label: (s.models.openai || "gpt-5-mini") + " · your key", full: true };
+      if (s.provider === "openai") return { kind: "openai", base: "https://api.openai.com/v1", key: s.keys.openai, model: s.models.openai || "gpt-5-mini", label: (s.models.openai || "gpt-5-mini") + T(" · your key", " · کلیدِ شما"), full: true };
       return { kind: "openai", base: (s.base || "").replace(/\/+$/, ""), key: s.keys.compat, model: s.models.compat || "", label: (s.models.compat || "model") + " · " + (s.base || "").replace(/^https?:\/\//, "").split("/")[0], full: true };
     }
-    if (CONFIG.freeBase) return { kind: "openai", base: CONFIG.freeBase.replace(/\/+$/, ""), key: CONFIG.freeKey || "", model: CONFIG.freeModel || "", label: CONFIG.freeName || "Free assistant", full: false };
-    return { kind: "handoff", label: "Free: continue in ChatGPT or Claude", full: false };
+    if (CONFIG.freeBase) return { kind: "openai", base: CONFIG.freeBase.replace(/\/+$/, ""), key: CONFIG.freeKey || "", model: CONFIG.freeModel || "", label: CONFIG.freeName || T("Free assistant", "دستیارِ رایگان"), full: false };
+    return { kind: "handoff", label: T("Free: continue in ChatGPT or Claude", "رایگان: ادامه در ChatGPT یا Claude"), full: false };
   }
 
   /* ------------------------------------------------------------ the page as context */
@@ -87,7 +91,7 @@
       });
       return out.join("\n\n");
     }
-    if (concept) return blockText(concept.querySelector(".l-en") || concept);
+    if (concept) return blockText(concept.querySelector(FA ? ".l-fa" : ".l-en") || concept);
     return "";
   }
   function currentSection() {
@@ -96,14 +100,15 @@
     for (var i = 0; i < heads.length; i++) if (heads[i].getBoundingClientRect().top < window.innerHeight * 0.4) cur = heads[i];
     var parts = [], el = cur ? cur.nextElementSibling : article.querySelector(".prose").firstElementChild;
     while (el && el.tagName !== "H2") { parts.push(blockText(el)); el = el.nextElementSibling; }
-    return { title: cur ? (cur.querySelector(".ht") || cur).textContent.trim() : "Introduction", text: parts.join("\n\n").slice(0, 7000) };
+    return { title: cur ? (cur.querySelector(".ht") || cur).textContent.trim() : T("Introduction", "مقدمه"), text: parts.join("\n\n").slice(0, 7000) };
   }
   function systemPrompt(mode) {
     return ["You are a patient, rigorous study companion for \"Mastering Epistemology\", a free guide to epistemology and critical thinking.",
       "The reader is on the page given below. Ground your answers in it and say so when you go beyond it.",
       "Be concise: short paragraphs, plain words, and a concrete example when it helps. Use Markdown lightly (bold, short lists).",
       "When you draw on a section of the page, name it in double square brackets, exactly as titled, like [[The Gettier problem]].",
-      "Reply in the language the reader writes in; if they write in Persian, answer in Persian.",
+      FA ? "The reader is using the Persian edition, and the page below is in Persian. Reply in Persian (fluent, natural Persian, with English terms in parentheses only where they help), unless the reader writes in another language."
+        : "Reply in the language the reader writes in; if they write in Persian, answer in Persian.",
       settings().depth === "deep"
         ? "Think carefully before answering: test the claim against objections and counter-examples, separate what the text says from your own view, and say how confident you are. Stay focused; length is fine when it earns its place."
         : "Keep answers short, about 150 words or fewer, unless the reader asks for more.",
@@ -182,9 +187,9 @@
     return res.text().then(function (t) {
       var m = t;
       try { var j = JSON.parse(t); m = (j.error && (j.error.message || j.error.type)) || t; } catch (e) { /* not JSON */ }
-      var e2 = new Error(res.status === 401 || res.status === 403 ? who + " rejected the key (" + res.status + "): " + m
-        : res.status === 429 ? who + " says there are too many requests or the account is out of credit. " + m
-        : who + " returned an error (" + res.status + "): " + m);
+      var e2 = new Error(res.status === 401 || res.status === 403 ? who + T(" rejected the key (", " کلید را نپذیرفت (") + N(res.status) + "): " + m
+        : res.status === 429 ? who + T(" says there are too many requests or the account is out of credit. ", ": درخواست‌ها زیاد است یا اعتبارِ حساب تمام شده. ") + m
+        : who + T(" returned an error (", " خطا داد (") + N(res.status) + "): " + m);
       e2.status = res.status;
       throw e2;
     });
@@ -208,8 +213,8 @@
         else if (ev.type === "message_delta" && ev.delta && ev.delta.stop_reason) stop = ev.delta.stop_reason;
         else if (ev.type === "error") throw new Error("Anthropic: " + (ev.error && ev.error.message || "error"));
       }).then(function () {
-        if (stop === "refusal") onText("\n\n*The model declined to answer this.*");
-        else if (stop === "max_tokens") onText("\n\n*(The answer was cut off at the length limit.)*");
+        if (stop === "refusal") onText("\n\n*" + T("The model declined to answer this.", "مدل از پاسخ به این پرسش خودداری کرد.") + "*");
+        else if (stop === "max_tokens") onText("\n\n*(" + T("The answer was cut off at the length limit.", "پاسخ در سقفِ طول قطع شد.") + ")*");
       });
     }).catch(function (e) {
       // If the optional fallback setting is what failed, try once more without it.
@@ -225,7 +230,7 @@
       messages: [{ role: "system", content: system + "\n\n<page>\n" + context + "\n</page>" }].concat(messages.map(function (m) { return { role: m.role, content: m.content }; })) };
     if (!eng.model) delete body.model;
     return fetch(eng.base + "/chat/completions", { method: "POST", headers: headers, body: JSON.stringify(body), signal: signal }).then(function (res) {
-      if (!res.ok) return httpError(res, eng.full ? "The AI service" : "The free assistant");
+      if (!res.ok) return httpError(res, eng.full ? T("The AI service", "سرویسِ هوش مصنوعی") : T("The free assistant", "دستیارِ رایگان"));
       return readSSE(res, function (data) {
         if (data === "[DONE]") return;
         var ev; try { ev = JSON.parse(data); } catch (e) { return; }
@@ -238,10 +243,10 @@
   function testKey(provider, key, base) {
     if (provider === "anthropic") {
       return fetch("https://api.anthropic.com/v1/models", { headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" } })
-        .then(function (r) { if (!r.ok) return httpError(r, "Anthropic"); return "The key works."; });
+        .then(function (r) { if (!r.ok) return httpError(r, "Anthropic"); return T("The key works.", "کلید کار می‌کند."); });
     }
     var url = (provider === "openai" ? "https://api.openai.com/v1" : (base || "").replace(/\/+$/, "")) + "/models";
-    return fetch(url, { headers: key ? { Authorization: "Bearer " + key } : {} }).then(function (r) { if (!r.ok) return httpError(r, "The service"); return "The key works."; });
+    return fetch(url, { headers: key ? { Authorization: "Bearer " + key } : {} }).then(function (r) { if (!r.ok) return httpError(r, T("The service", "سرویس")); return T("The key works.", "کلید کار می‌کند."); });
   }
 
   /* ------------------------------------------------------------ the chat panel */
@@ -250,6 +255,9 @@
   var CHAT_ICON = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>';
   function suggestions() {
     var t = pageTitle();
+    if (FA) return article
+      ? ["این فصل را در پنج نکته خلاصه کن", "قوی‌ترین اعتراض به ایدهٔ اصلیِ این فصل چیست؟", "یک مثالِ واقعی از «" + t.replace(/[؟?.:].*$/, "") + "» بزن", "Explain this chapter simply, in English"]
+      : ["«" + t + "» را طوری توضیح بده که انگار تازه با فلسفه آشنا شده‌ام", "بهترین اعتراض به آن چیست و بهترین پاسخ کدام است؟", "این مفهوم با کدام ایده‌های دیگرِ کتاب پیوند دارد؟", "Explain this concept in English"];
     return article
       ? ["Summarise this chapter in five points", "What is the strongest objection to the main idea here?", "Give me a real-life example of " + t.replace(/[?.:].*$/, "").toLowerCase(), "این فصل را به زبان ساده به فارسی توضیح بده"]
       : ["Explain " + t + " as if I were new to philosophy", "What is the best objection to it, and the best reply?", "How does this connect to other ideas in the guide?", "این مفهوم را به فارسی توضیح بده"];
@@ -257,18 +265,18 @@
   function build() {
     panel = document.createElement("aside");
     panel.className = "chat";
-    panel.setAttribute("aria-label", "Study companion");
+    panel.setAttribute("aria-label", T("Study companion", "همراهِ مطالعه"));
     panel.hidden = true;
     panel.innerHTML =
-      '<header><div><span class="kicker">Study companion</span><b></b></div>' +
-      '<select aria-label="Mode">' + Object.keys(MODES).map(function (k) { return '<option value="' + k + '">' + MODES[k].label + "</option>"; }).join("") + "</select>" +
-      '<button type="button" class="grow" aria-label="Expand">⤢</button><button type="button" class="x" aria-label="Close">✕</button></header>' +
+      '<header><div><span class="kicker">' + T("Study companion", "همراهِ مطالعه") + '</span><b></b></div>' +
+      '<select aria-label="' + T("Mode", "حالت") + '">' + Object.keys(MODES).map(function (k) { return '<option value="' + k + '">' + MODES[k].label + "</option>"; }).join("") + "</select>" +
+      '<button type="button" class="grow" aria-label="' + T("Expand", "بزرگ‌تر") + '">⤢</button><button type="button" class="x" aria-label="' + T("Close", "بستن") + '">✕</button></header>' +
       '<div class="msgs" aria-live="polite"></div>' +
-      '<form><div class="quote" hidden></div><textarea rows="2" placeholder="Ask about this page…" aria-label="Your question"></textarea>' +
-      '<button type="submit" class="send" aria-label="Send"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>' +
-      '<footer><span class="eng"></span><span class="depth" role="group" aria-label="How much thinking">' +
-      '<button type="button" data-depth="quick">Quick</button><button type="button" data-depth="deep">Thorough</button></span>' +
-      '<span><button type="button" data-act="new">New</button> · <a href="' + ROOT + 'account/#ai">Settings</a></span></footer>';
+      '<form><div class="quote" hidden></div><textarea rows="2" dir="auto" placeholder="' + T("Ask about this page…", "دربارهٔ این صفحه بپرسید…") + '" aria-label="' + T("Your question", "پرسشِ شما") + '"></textarea>' +
+      '<button type="submit" class="send" aria-label="' + T("Send", "فرستادن") + '"><svg class="icon flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>' +
+      '<footer><span class="eng"></span><span class="depth" role="group" aria-label="' + T("How much thinking", "میزانِ تأمل") + '">' +
+      '<button type="button" data-depth="quick">' + T("Quick", "سریع") + '</button><button type="button" data-depth="deep">' + T("Thorough", "دقیق") + '</button></span>' +
+      '<span><button type="button" data-act="new">' + T("New", "تازه") + '</button> · <a href="' + HOME + 'account/#ai">' + T("Settings", "تنظیمات") + '</a></span></footer>';
     document.body.appendChild(panel);
     panel.querySelector("header b").textContent = pageTitle();
     var sel = panel.querySelector("select");
@@ -295,8 +303,8 @@
       var c = chat();
       if (act === "new") { if (abort) abort.abort(); saveChat({ mode: c.mode, messages: [] }); paint(); }
       else if (act === "suggest") { ta.value = b.textContent; submit(); }
-      else if (act === "copy") { navigator.clipboard && navigator.clipboard.writeText(c.messages[i].content); b.textContent = "Copied"; }
-      else if (act === "save") { saveToNotes(c.messages[i - 1], c.messages[i]); b.textContent = "Saved"; }
+      else if (act === "copy") { navigator.clipboard && navigator.clipboard.writeText(c.messages[i].content); b.textContent = T("Copied", "رونوشت شد"); }
+      else if (act === "save") { saveToNotes(c.messages[i - 1], c.messages[i]); b.textContent = T("Saved", "ذخیره شد"); }
       else if (act === "unquote") { pendingQuote = ""; paint(); }
       else if (act === "follow") { ta.value = b.getAttribute("data-text"); submit(); }
       else if (act === "retry") {
@@ -309,14 +317,14 @@
       else if (act === "setup") {
         var f = panel.querySelector(".setup"), prov = f.querySelector("[name=prov]").value, key = f.querySelector("[name=key]").value.trim();
         var model = f.querySelector("[name=model]").value.trim(), msg = f.querySelector(".msg");
-        if (!key) { msg.textContent = "Paste your key first."; return; }
+        if (!key) { msg.textContent = T("Paste your key first.", "نخست کلید را بچسبانید."); return; }
         var st = settings(), kind = prov === "openrouter" ? "compat" : prov;
         st.provider = kind; st.keys[kind] = key;
         if (model) st.models[kind] = model;
         if (prov === "openrouter") st.base = "https://openrouter.ai/api/v1";
-        msg.textContent = "Checking the key…";
+        msg.textContent = T("Checking the key…", "در حال بررسیِ کلید…");
         testKey(kind, key, st.base).then(function () { saveSettings(st); paint(); },
-          function (err) { msg.textContent = err instanceof TypeError ? "Could not reach the service." : err.message; });
+          function (err) { msg.textContent = err instanceof TypeError ? T("Could not reach the service.", "به سرویس دسترسی نشد.") : err.message; });
       }
     });
   }
@@ -348,7 +356,12 @@
     document.body.classList.remove("chat-open");
     if (launcher) { launcher.setAttribute("aria-expanded", "false"); launcher.focus(); }
   }
-  var FOLLOW = [["Simpler, please", "Explain that more simply, with an everyday example."],
+  var FOLLOW = FA ? [["ساده‌تر", "این را ساده‌تر و با یک مثالِ روزمره توضیح بده."],
+    ["یک مثال", "یک مثالِ واقعی و ملموس بزن."],
+    ["قوی‌ترین اعتراض", "قوی‌ترین اعتراض به این چیست و بهترین پاسخ به آن کدام است؟"],
+    ["از من بپرس", "یک پرسش از من بپرس تا ببینی درست فهمیده‌ام یا نه."],
+    ["In English", "Explain that in English."]]
+    : [["Simpler, please", "Explain that more simply, with an everyday example."],
     ["An example", "Give me a concrete, real-life example."],
     ["Strongest objection", "What is the strongest objection to this, and the best reply?"],
     ["Quiz me", "Ask me one question to check I understood this."],
@@ -362,11 +375,11 @@
   function msgHTML(m, i, isLast, busy) {
     if (m.role === "user") return '<div class="m u" dir="auto">' + md(m.content) + "</div>";
     if (m.handoff) return '<div class="m a">' + handoffHTML(m.handoff) + "</div>";
-    var html = '<div class="m a">' + (m.content ? md(m.content) : '<span class="typing" aria-label="Thinking"><i></i><i></i><i></i></span>');
+    var html = '<div class="m a">' + (m.content ? md(m.content) : '<span class="typing" aria-label="' + T("Thinking", "در حال فکر") + '"><i></i><i></i><i></i></span>');
     if (m.content && !(isLast && busy)) {
-      html += '<div class="acts"><button type="button" data-act="copy" data-i="' + i + '">Copy</button><button type="button" data-act="save" data-i="' + i + '">Save to notebook</button></div>';
+      html += '<div class="acts"><button type="button" data-act="copy" data-i="' + i + '">' + T("Copy", "رونوشت") + '</button><button type="button" data-act="save" data-i="' + i + '">' + T("Save to notebook", "ذخیره در دفترچه") + "</button></div>";
       if (isLast) {
-        html += '<div class="follow">' + (m.error ? '<button type="button" data-act="retry">Try again</button>' : "") +
+        html += '<div class="follow">' + (m.error ? '<button type="button" data-act="retry">' + T("Try again", "دوباره") + "</button>" : "") +
           FOLLOW.map(function (f) { return '<button type="button" data-act="follow" data-text="' + esc(f[1]) + '">' + esc(f[0]) + "</button>"; }).join("") + "</div>";
       }
     }
@@ -391,27 +404,33 @@
     panel.querySelector("textarea").placeholder = MODES[c.mode || "explain"].hint + "…";
     var q = panel.querySelector(".quote");
     q.hidden = !pendingQuote;
-    if (pendingQuote) q.innerHTML = "<span>“" + esc(pendingQuote.slice(0, 220)) + (pendingQuote.length > 220 ? "…" : "") + '”</span><button type="button" data-act="unquote" aria-label="Remove quote">✕</button>';
+    if (pendingQuote) q.innerHTML = "<span>“" + esc(pendingQuote.slice(0, 220)) + (pendingQuote.length > 220 ? "…" : "") + '”</span><button type="button" data-act="unquote" aria-label="' + T("Remove quote", "حذفِ نقل‌قول") + '">✕</button>';
     if (!c.messages.length) {
       if (signedIn() && eng.kind !== "anthropic" && !eng.full) {
         // Signed in but no key yet: set it up right here, without leaving the page.
         var prov = (panel.querySelector(".setup select[name=prov]") || {}).value || "anthropic";
         var modelField = prov === "anthropic"
           ? '<select name="model">' + MODELS.anthropic.map(function (m) { return '<option value="' + m.id + '">' + m.name + "</option>"; }).join("") + "</select>"
-          : '<input name="model" placeholder="' + (prov === "openai" ? "gpt-5-mini" : "model name, e.g. from openrouter.ai/models") + '" autocomplete="off">';
-        box.innerHTML = '<div class="empty"><p>Add your own API key once to chat here. It is saved to your Google Drive, so every device you sign in on has it.</p>' +
-          '<div class="setup"><b>Your key</b><div class="row"><select name="prov" aria-label="Provider">' +
+          : '<input name="model" dir="ltr" placeholder="' + (prov === "openai" ? "gpt-5-mini" : T("model name, e.g. from openrouter.ai/models", "نامِ مدل، مثلاً از openrouter.ai/models")) + '" autocomplete="off">';
+        box.innerHTML = '<div class="empty"><p>' + T("Add your own API key once to chat here. It is saved to your Google Drive, so every device you sign in on has it.",
+          "یک بار کلیدِ API خودتان را وارد کنید تا همین‌جا گفت‌وگو کنید. کلید در گوگل‌درایوتان ذخیره می‌شود و در هر دستگاهی که با آن وارد شوید در دسترس است.") + "</p>" +
+          '<div class="setup"><b>' + T("Your key", "کلیدِ شما") + '</b><div class="row"><select name="prov" aria-label="' + T("Provider", "سرویس‌دهنده") + '">' +
           [["anthropic", "Claude"], ["openai", "ChatGPT"], ["openrouter", "OpenRouter"]].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === prov ? " selected" : "") + ">" + o[1] + "</option>"; }).join("") +
-          '</select>' + modelField + '</div><div class="row"><input name="key" type="password" autocomplete="off" spellcheck="false" aria-label="API key" placeholder="Paste your API key">' +
-          '<button type="button" data-act="setup">Save</button></div><p class="msg">Tip: give the key a monthly spending limit with the provider.</p></div>' +
-          '<p class="fine">No key? Just ask below and your question is prepared for the free ChatGPT or Claude website.</p></div>';
+          '</select>' + modelField + '</div><div class="row"><input name="key" type="password" dir="ltr" autocomplete="off" spellcheck="false" aria-label="' + T("API key", "کلیدِ API") + '" placeholder="' + T("Paste your API key", "کلیدِ API را بچسبانید") + '">' +
+          '<button type="button" data-act="setup">' + T("Save", "ذخیره") + '</button></div><p class="msg">' + T("Tip: give the key a monthly spending limit with the provider.", "نکته: نزدِ سرویس‌دهنده برای کلید سقفِ هزینهٔ ماهانه بگذارید.") + "</p></div>" +
+          '<p class="fine">' + T("No key? Just ask below and your question is prepared for the free ChatGPT or Claude website.", "کلید ندارید؟ همین پایین بپرسید تا پرسشتان برای وبگاهِ رایگانِ ChatGPT یا Claude آماده شود.") + "</p></div>";
         return;
       }
-      box.innerHTML = '<div class="empty"><p>' + (article ? "Ask anything about this chapter. I have read it, so questions can be as specific as you like."
-          : "Ask anything about this concept.") + "</p>" +
-        (eng.kind === "handoff" ? '<p class="fine">' + (signedIn() ? "Add your own Claude or ChatGPT key in " : "Sign in and add your own Claude or ChatGPT key in ") +
-          '<a href="' + ROOT + 'account/#ai">My study</a> to chat here. For now, your question is prepared for the free ChatGPT or Claude website.</p>'
-          : !eng.full ? '<p class="fine">You are using the free assistant, which sees the section you are reading. <a href="' + ROOT + 'account/#ai">Sign in and add a key</a> for answers that draw on the whole chapter.</p>' : "") +
+      box.innerHTML = '<div class="empty"><p>' + (article ? T("Ask anything about this chapter. I have read it, so questions can be as specific as you like.",
+            "هر پرسشی دربارهٔ این فصل دارید بپرسید. آن را خوانده‌ام، پس پرسش‌ها می‌توانند هر قدر بخواهید دقیق باشند.")
+          : T("Ask anything about this concept.", "هر پرسشی دربارهٔ این مفهوم دارید بپرسید.")) + "</p>" +
+        (eng.kind === "handoff" ? '<p class="fine">' + (signedIn() ? T("Add your own Claude or ChatGPT key in ", "کلیدِ Claude یا ChatGPT خودتان را در ")
+            : T("Sign in and add your own Claude or ChatGPT key in ", "وارد شوید و کلیدِ Claude یا ChatGPT خودتان را در ")) +
+          '<a href="' + HOME + 'account/#ai">' + T("My study", "مطالعهٔ من") + "</a>" +
+          T(" to chat here. For now, your question is prepared for the free ChatGPT or Claude website.", " بیفزایید تا همین‌جا گفت‌وگو کنید. فعلاً پرسشتان برای وبگاهِ رایگانِ ChatGPT یا Claude آماده می‌شود.") + "</p>"
+          : !eng.full ? '<p class="fine">' + T("You are using the free assistant, which sees the section you are reading. ", "از دستیارِ رایگان استفاده می‌کنید که فقط بخشی را که می‌خوانید می‌بیند. ") +
+            '<a href="' + HOME + 'account/#ai">' + T("Sign in and add a key", "وارد شوید و کلید بیفزایید") + "</a>" +
+            T(" for answers that draw on the whole chapter.", " تا پاسخ‌ها بر کلِ فصل تکیه کنند.") + "</p>" : "") +
         '<div class="sugg">' + suggestions().map(function (s) { return '<button type="button" data-act="suggest">' + esc(s) + "</button>"; }).join("") + "</div></div>";
       return;
     }
@@ -421,13 +440,19 @@
   function saveToNotes(q, a) {
     if (!window.EpisNotes || !a) return;
     var d = window.EpisNotes.load(), now = Date.now(), id = "ai" + now.toString(36);
-    d.items[id] = { id: id, type: "ai", page: pageKey, pageTitle: pageTitle(), pageLabel: article ? "Chapter" : "Concept",
+    d.items[id] = { id: id, type: "ai", page: pageKey, pageTitle: pageTitle(), pageLabel: article ? T("Chapter", "فصل") : T("Concept", "مفهوم"),
       href: pageKey + ".html", q: q ? q.content : "", a: a.content, created: now, updated: now };
     window.EpisNotes.save(d);
   }
   function handoff(question) {
     var sec = currentSection();
-    var prompt = (MODE_RULES[chat().mode] ? MODE_RULES[chat().mode] + "\n\n" : "") +
+    var prompt = FA
+      ? (MODE_RULES[chat().mode] ? MODE_RULES[chat().mode] + "\n\n" : "") +
+        "دارم «" + pageTitle() + "» را در کتابِ «تسلط بر معرفت‌شناسی» می‌خوانم (" + location.href.split("#")[0] + ")" +
+        (sec.title && article ? "، بخشِ «" + sec.title + "»" : "") + ".\n\n" +
+        (pendingQuote ? "متن:\n«" + pendingQuote + "»\n\n" : "متنی که می‌خوانم:\n\"\"\"\n" + sec.text.slice(0, 2500) + "\n\"\"\"\n\n") +
+        "پرسشِ من: " + question + "\n\nلطفاً به فارسی پاسخ بده."
+      : (MODE_RULES[chat().mode] ? MODE_RULES[chat().mode] + "\n\n" : "") +
       "I'm studying \"" + pageTitle() + "\" in Mastering Epistemology (" + location.href.split("#")[0] + ")" +
       (sec.title && article ? ", section \"" + sec.title + "\"" : "") + ".\n\n" +
       (pendingQuote ? "The passage:\n\"" + pendingQuote + "\"\n\n" : "Here is the text I'm reading:\n\"\"\"\n" + sec.text.slice(0, 2500) + "\n\"\"\"\n\n") +
@@ -437,16 +462,17 @@
   }
   function handoffHTML(prompt) {
     var q = encodeURIComponent(prompt);
-    return '<div class="handoff"><p>I copied your question, with the passage, to the clipboard. Open a free assistant and it will be filled in (or just paste):</p>' +
-      '<a class="btn" target="_blank" rel="noopener" href="https://chatgpt.com/?q=' + q + '">Open in ChatGPT</a>' +
-      '<a class="btn" target="_blank" rel="noopener" href="https://claude.ai/new?q=' + q + '">Open in Claude</a></div>';
+    return '<div class="handoff"><p>' + T("I copied your question, with the passage, to the clipboard. Open a free assistant and it will be filled in (or just paste):",
+        "پرسشتان را همراه با متن رونوشت کردم. یک دستیارِ رایگان را باز کنید تا پرسش در آن نوشته شود (یا خودتان بچسبانید):") + "</p>" +
+      '<a class="btn" target="_blank" rel="noopener" href="https://chatgpt.com/?q=' + q + '">' + T("Open in ChatGPT", "باز کردن در ChatGPT") + "</a>" +
+      '<a class="btn" target="_blank" rel="noopener" href="https://claude.ai/new?q=' + q + '">' + T("Open in Claude", "باز کردن در Claude") + "</a></div>";
   }
   function submit() {
     var ta = panel.querySelector("textarea"), text = ta.value.trim();
     if (!text || abort) return;
     ta.value = ""; ta.style.height = "auto";
     var c = chat(), eng = engine();
-    var content = pendingQuote ? "About this passage:\n> " + pendingQuote.replace(/\n+/g, " ") + "\n\n" + text : text;
+    var content = pendingQuote ? T("About this passage:", "دربارهٔ این متن:") + "\n> " + pendingQuote.replace(/\n+/g, " ") + "\n\n" + text : text;
     c.messages.push({ role: "user", content: content, t: Date.now() });
     if (eng.kind === "handoff") {
       c.messages.push({ role: "assistant", content: "", handoff: handoff(text), t: Date.now() });
@@ -474,15 +500,16 @@
     var ask = eng.kind === "anthropic" ? askAnthropic(eng, systemPrompt(c.mode), context, history, onText, abort.signal, true)
       : askOpenAI(eng, systemPrompt(c.mode), context, history, onText, abort.signal);
     ask.catch(function (e) {
-      if (e.name === "AbortError") { reply.content += reply.content ? "\n\n*(stopped)*" : "*(stopped)*"; return; }
+      if (e.name === "AbortError") { var st = "*(" + T("stopped", "متوقف شد") + ")*"; reply.content += reply.content ? "\n\n" + st : st; return; }
       reply.error = true;
-      reply.content += (reply.content ? "\n\n" : "") + "**Couldn't get an answer.** " +
-        (e instanceof TypeError ? "The service could not be reached (check your connection, or whether the service allows requests from a web page)." : e.message);
+      reply.content += (reply.content ? "\n\n" : "") + T("**Couldn't get an answer.** ", "**پاسخی دریافت نشد.** ") +
+        (e instanceof TypeError ? T("The service could not be reached (check your connection, or whether the service allows requests from a web page).",
+          "به سرویس دسترسی نشد (اتصالتان را بررسی کنید، یا اینکه آیا سرویس درخواست از صفحهٔ وب را می‌پذیرد).") : e.message);
     }).then(function () {
       abort = null;
       live = null;
       panel.classList.remove("busy");
-      if (!reply.content) reply.content = "*(no answer)*";
+      if (!reply.content) reply.content = "*(" + T("no answer", "بی‌پاسخ") + ")*";
       saveChat(c); updateLast();
     });
   }
@@ -493,7 +520,7 @@
       pendingQuote = text.trim();
       open();
       if (abort) return;
-      panel.querySelector("textarea").value = "Explain this in simple terms and say why it matters here.";
+      panel.querySelector("textarea").value = T("Explain this in simple terms and say why it matters here.", "این را به زبانِ ساده توضیح بده و بگو چرا اینجا اهمیت دارد.");
       submit();
     }
   };
@@ -510,34 +537,37 @@
   function renderSettings() {
     var s = settings(), inAcc = signedIn();
     if (!inAcc) {
-      host.innerHTML = '<p>Signed out, the chat on every chapter uses the free option: ' +
-        (CONFIG.freeBase ? "<b>" + esc(CONFIG.freeName || "the free assistant") + "</b>, which sees the section you are reading."
-          : "your question and the passage are prepared for the free ChatGPT or Claude website.") +
-        "</p><p>Sign in above to use your own Claude or ChatGPT key. The chat then reads the whole chapter, answers right on the page, and your key is kept in your Google Drive so you only enter it once.</p>";
+      host.innerHTML = "<p>" + T("Signed out, the chat on every chapter uses the free option: ", "بی‌ورود، گفت‌وگوی هر فصل از گزینهٔ رایگان استفاده می‌کند: ") +
+        (CONFIG.freeBase ? "<b>" + esc(CONFIG.freeName || T("the free assistant", "دستیارِ رایگان")) + "</b>" + T(", which sees the section you are reading.", "، که بخشی را که می‌خوانید می‌بیند.")
+          : T("your question and the passage are prepared for the free ChatGPT or Claude website.", "پرسش و متنِ شما برای وبگاهِ رایگانِ ChatGPT یا Claude آماده می‌شود.")) +
+        "</p><p>" + T("Sign in above to use your own Claude or ChatGPT key. The chat then reads the whole chapter, answers right on the page, and your key is kept in your Google Drive so you only enter it once.",
+          "بالاتر وارد شوید تا از کلیدِ Claude یا ChatGPT خودتان استفاده کنید. آن‌وقت گفت‌وگو کلِ فصل را می‌خواند، همین‌جا روی صفحه پاسخ می‌دهد و کلیدتان در گوگل‌درایو نگه داشته می‌شود تا فقط یک بار واردش کنید.") + "</p>";
       return;
     }
     var p = s.provider;
     var models = p === "anthropic"
       ? '<select id="ai-model">' + MODELS.anthropic.map(function (m) { return '<option value="' + m.id + '"' + ((s.models.anthropic || "claude-opus-5") === m.id ? " selected" : "") + ">" + m.name + "</option>"; }).join("") + "</select>"
-      : '<input id="ai-model" list="ai-models" value="' + esc(s.models[p] || (p === "openai" ? "gpt-5-mini" : "")) + '" placeholder="' + (p === "openai" ? "gpt-5-mini" : "model name") + '" autocomplete="off">' +
+      : '<input id="ai-model" dir="ltr" list="ai-models" value="' + esc(s.models[p] || (p === "openai" ? "gpt-5-mini" : "")) + '" placeholder="' + (p === "openai" ? "gpt-5-mini" : T("model name", "نامِ مدل")) + '" autocomplete="off">' +
         '<datalist id="ai-models">' + (p === "openai" ? MODELS.openai.map(function (m) { return '<option value="' + m + '">'; }).join("") : "") + "</datalist>";
     var note = p === "anthropic" ? (MODELS.anthropic.filter(function (m) { return m.id === (s.models.anthropic || "claude-opus-5"); })[0] || {}).note
-      : p === "openai" ? "Type any model your OpenAI account can use. Prices are on openai.com/api/pricing."
-      : "Any service that speaks the OpenAI chat format and allows requests from web pages: OpenRouter (https://openrouter.ai/api/v1), or Ollama or LM Studio on your own computer (for example http://localhost:11434/v1).";
+      : p === "openai" ? T("Type any model your OpenAI account can use. Prices are on openai.com/api/pricing.", "نامِ هر مدلی را که حسابِ OpenAI شما به آن دسترسی دارد بنویسید. قیمت‌ها در openai.com/api/pricing آمده است.")
+      : T("Any service that speaks the OpenAI chat format and allows requests from web pages: OpenRouter (https://openrouter.ai/api/v1), or Ollama or LM Studio on your own computer (for example http://localhost:11434/v1).",
+        "هر سرویسی که قالبِ گفت‌وگوی OpenAI را می‌فهمد و درخواست از صفحهٔ وب را می‌پذیرد: OpenRouter (https://openrouter.ai/api/v1)، یا Ollama یا LM Studio روی رایانهٔ خودتان (برای نمونه http://localhost:11434/v1).");
     host.innerHTML =
-      '<div class="seg" role="group" aria-label="Provider">' +
-      [["anthropic", "Claude"], ["openai", "ChatGPT"], ["compat", "Other"]].map(function (o) {
+      '<div class="seg" role="group" aria-label="' + T("Provider", "سرویس‌دهنده") + '">' +
+      [["anthropic", "Claude"], ["openai", "ChatGPT"], ["compat", T("Other", "دیگر")]].map(function (o) {
         return '<button type="button" data-prov="' + o[0] + '" aria-pressed="' + (p === o[0]) + '">' + o[1] + "</button>";
       }).join("") + "</div>" +
-      (p === "compat" ? '<label>Service address<input id="ai-base" value="' + esc(s.base || "") + '" placeholder="https://openrouter.ai/api/v1"></label>' : "") +
-      '<label>API key<span class="keyrow"><input id="ai-key" type="password" autocomplete="off" spellcheck="false" value="' + esc(s.keys[p] || "") + '" placeholder="' +
-      (p === "anthropic" ? "sk-ant-…" : p === "openai" ? "sk-…" : "optional for local services") + '"><button type="button" data-act="show">Show</button></span></label>' +
-      "<label>Model" + models + "</label>" + '<p class="fine">' + esc(note || "") + "</p>" +
-      '<div class="acc-actions"><button type="button" class="btn primary" data-act="save">Save</button><button type="button" class="btn" data-act="test">Test the key</button>' +
-      (s.keys[p] ? '<button type="button" class="btn" data-act="remove">Remove key</button>' : "") + '</div><p class="ai-msg" aria-live="polite"></p>' +
-      '<p class="fine">Get a key at ' + (p === "openai" ? '<a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">platform.openai.com</a>'
+      (p === "compat" ? "<label>" + T("Service address", "نشانیِ سرویس") + '<input id="ai-base" dir="ltr" value="' + esc(s.base || "") + '" placeholder="https://openrouter.ai/api/v1"></label>' : "") +
+      "<label>" + T("API key", "کلیدِ API") + '<span class="keyrow"><input id="ai-key" type="password" dir="ltr" autocomplete="off" spellcheck="false" value="' + esc(s.keys[p] || "") + '" placeholder="' +
+      (p === "anthropic" ? "sk-ant-…" : p === "openai" ? "sk-…" : T("optional for local services", "برای سرویس‌های محلی اختیاری")) + '"><button type="button" data-act="show">' + T("Show", "نمایش") + "</button></span></label>" +
+      "<label>" + T("Model", "مدل") + models + "</label>" + '<p class="fine">' + esc(note || "") + "</p>" +
+      '<div class="acc-actions"><button type="button" class="btn primary" data-act="save">' + T("Save", "ذخیره") + '</button><button type="button" class="btn" data-act="test">' + T("Test the key", "آزمودنِ کلید") + "</button>" +
+      (s.keys[p] ? '<button type="button" class="btn" data-act="remove">' + T("Remove key", "حذفِ کلید") + "</button>" : "") + '</div><p class="ai-msg" aria-live="polite"></p>' +
+      '<p class="fine">' + T("Get a key at ", "کلید را از ") + (p === "openai" ? '<a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">platform.openai.com</a>'
         : '<a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>') +
-      ". Give it a monthly spending limit. The key goes only to that provider, straight from your browser, and is stored in your Google Drive's private app folder and in this browser until you sign out.</p>";
+      T(". Give it a monthly spending limit. The key goes only to that provider, straight from your browser, and is stored in your Google Drive's private app folder and in this browser until you sign out.",
+        " بگیرید و برایش سقفِ هزینهٔ ماهانه بگذارید. کلید فقط، مستقیم از مرورگرتان، به همان سرویس‌دهنده فرستاده می‌شود و تا وقتی خارج نشده‌اید در پوشهٔ خصوصیِ برنامه در گوگل‌درایو و در همین مرورگر می‌ماند.") + "</p>";
   }
   host.addEventListener("click", function (e) {
     var b = e.target.closest("button");
@@ -546,19 +576,18 @@
     if (b.hasAttribute("data-prov")) { s.provider = b.getAttribute("data-prov"); saveSettings(s); renderSettings(); return; }
     var act = b.getAttribute("data-act");
     var key = host.querySelector("#ai-key"), model = host.querySelector("#ai-model"), base = host.querySelector("#ai-base");
-    if (act === "show") { key.type = key.type === "password" ? "text" : "password"; b.textContent = key.type === "password" ? "Show" : "Hide"; }
+    if (act === "show") { key.type = key.type === "password" ? "text" : "password"; b.textContent = key.type === "password" ? T("Show", "نمایش") : T("Hide", "پنهان"); }
     else if (act === "save") {
       s.keys[s.provider] = key.value.trim();
       s.models[s.provider] = model.value.trim();
       if (base) s.base = base.value.trim();
       saveSettings(s);
-      msg.textContent = "Saved." + (window.EpisAccount && window.EpisAccount.token() ? " It will sync to your Google Drive." : "");
       renderSettings();
-      host.querySelector(".ai-msg").textContent = "Saved.";
+      host.querySelector(".ai-msg").textContent = T("Saved.", "ذخیره شد.") + (window.EpisAccount && window.EpisAccount.token() ? T(" It will sync to your Google Drive.", " با گوگل‌درایو همگام می‌شود.") : "");
     } else if (act === "test") {
-      msg.textContent = "Testing…";
+      msg.textContent = T("Testing…", "در حال آزمودن…");
       testKey(s.provider, key.value.trim(), base ? base.value.trim() : s.base).then(function (m) { msg.textContent = m; },
-        function (err) { msg.textContent = err instanceof TypeError ? "Could not reach the service from this page." : err.message; });
+        function (err) { msg.textContent = err instanceof TypeError ? T("Could not reach the service from this page.", "از این صفحه به سرویس دسترسی نشد.") : err.message; });
     } else if (act === "remove") { delete s.keys[s.provider]; saveSettings(s); renderSettings(); }
   });
   document.addEventListener("epis:account", renderSettings);
