@@ -178,12 +178,14 @@
         '<button type="button" data-act="explain" title="Ask the study companion">' + ICON_ASK + "<span>Explain</span></button>" +
         '<button type="button" data-act="copy" aria-label="Copy quote">' + ICON_COPY + "</button>";
       toolbar.addEventListener("mousedown", function (e) { e.preventDefault(); });
+      // A tap on the toolbar can clear the selection before the click lands; keep the toolbar up meanwhile.
+      toolbar.addEventListener("pointerdown", function () { holdUntil = Date.now() + 900; });
       toolbar.addEventListener("click", function (e) {
         var b = e.target.closest("button");
         if (!b || !savedRange) return;
-        if (b.getAttribute("data-act") === "copy") { copyQuote(savedRange.toString()); hideToolbar(); return; }
+        if (b.getAttribute("data-act") === "copy") { copyQuote(wholeWords(savedRange)); hideToolbar(); return; }
         if (b.getAttribute("data-act") === "explain") {
-          var quote = savedRange.toString();
+          var quote = wholeWords(savedRange);
           window.getSelection().removeAllRanges(); hideToolbar();
           if (window.EpisAI) window.EpisAI.explain(quote);
           return;
@@ -197,8 +199,12 @@
     }
     savedRange = range.cloneRange();
     toolbar.hidden = false;
-    var r = range.getBoundingClientRect(), w = toolbar.offsetWidth, h = toolbar.offsetHeight;
+    // On phones and tablets the system's own Copy / Look Up menu sits next to the selection,
+    // so the toolbar docks at the bottom of the screen instead.
     var touch = matchMedia("(pointer: coarse)").matches;
+    toolbar.classList.toggle("docked", touch);
+    if (touch) { toolbar.style.top = ""; toolbar.style.left = ""; return; }
+    var r = range.getBoundingClientRect(), w = toolbar.offsetWidth, h = toolbar.offsetHeight;
     var top = touch ? r.bottom + 12 : r.top - h - 10;
     if (top < 70) top = r.bottom + 12;
     toolbar.style.top = (top + window.scrollY) + "px";
@@ -212,26 +218,37 @@
     if (!range.toString().trim()) return null;
     return range;
   }
-  var selTimer = 0;
+  var selTimer = 0, holdUntil = 0;
   function onSelection() {
     clearTimeout(selTimer);
     selTimer = setTimeout(function () {
       var range = selectionInContainer();
-      if (range) showToolbar(range); else if (!(toolbar && toolbar.matches(":hover"))) hideToolbar();
+      if (range) showToolbar(range);
+      else if (Date.now() > holdUntil && !(toolbar && toolbar.matches(":hover"))) hideToolbar();
     }, 180);
+  }
+
+  // Widen a selection to whole words, and drop spaces at either end.
+  function snap(t, span) {
+    var word = /[\p{L}\p{N}’'\-]/u;
+    while (span[0] > 0 && word.test(t[span[0] - 1]) && word.test(t[span[0]])) span[0]--;
+    while (span[1] < t.length && word.test(t[span[1]]) && word.test(t[span[1] - 1])) span[1]++;
+    while (span[0] < span[1] && /\s/.test(t[span[0]])) span[0]++;
+    while (span[1] > span[0] && /\s/.test(t[span[1] - 1])) span[1]--;
+    return span[1] > span[0] ? span : null;
+  }
+  function wholeWords(range) {
+    var idx = indexText(container), span = rangeOffsets(idx, range);
+    span = span && snap(idx.text, span);
+    return span ? idx.text.slice(span[0], span[1]) : range.toString();
   }
 
   function create(range, color) {
     var idx = indexText(container), span = rangeOffsets(idx, range);
     if (!span) return null;
     var t = idx.text, now = Date.now(), info = pageInfo();
-    // Snap to whole words, and drop spaces at either end.
-    var word = /[\p{L}\p{N}’'\-]/u;
-    while (span[0] > 0 && word.test(t[span[0] - 1]) && word.test(t[span[0]])) span[0]--;
-    while (span[1] < t.length && word.test(t[span[1]]) && word.test(t[span[1] - 1])) span[1]++;
-    while (span[0] < span[1] && /\s/.test(t[span[0]])) span[0]++;
-    while (span[1] > span[0] && /\s/.test(t[span[1] - 1])) span[1]--;
-    if (span[1] <= span[0]) return null;
+    span = snap(t, span);
+    if (!span) return null;
     var node = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
     var sec = sectionFor(node);
     var item = {

@@ -82,6 +82,19 @@
   window.addEventListener("scroll", barState, { passive: true });
   window.addEventListener("resize", barState);
 
+  /* ------------------------------------------------------------ phone menu */
+  var menuBtn = document.getElementById("menu"), mnav = document.getElementById("mnav");
+  if (menuBtn && mnav) {
+    var setMenu = function (open) {
+      mnav.hidden = !open;
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open && bar) bar.classList.add("peek");
+    };
+    menuBtn.addEventListener("click", function (e) { e.stopPropagation(); setMenu(mnav.hidden); });
+    document.addEventListener("click", function (e) { if (!mnav.hidden && !mnav.contains(e.target)) setMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !mnav.hidden) { setMenu(false); menuBtn.focus(); } });
+  }
+
   /* ------------------------------------------------------------ contents rail */
   var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
   if (tocLinks.length) {

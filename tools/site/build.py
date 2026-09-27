@@ -91,6 +91,8 @@ def icon(name, cls="icon"):
         "search": '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
         "user": '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
         "chat": '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/>',
+        "menu": '<path d="M4 7h16M4 12h16M4 17h16"/>',
+        "review": '<path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6"/><path d="M4 4v4.6h4.6"/><path d="M12 8v4l3 2"/>',
     }
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
@@ -356,7 +358,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
                if hero_img else "")
     full_title = title if title == SITE else f"{title} · {SITE}"
     reader_btn = ('<button class="tbtn rbtn" id="reader" type="button" aria-label="Reading settings" title="Reading settings (A)" '
-                  'aria-expanded="false" aria-controls="rpanel">Aa</button>') if reader else ""
+                  'aria-expanded="false" aria-controls="rpanel">Aa</button>')
     ask_btn = (f'<button class="tbtn" id="ask" type="button" aria-expanded="false" aria-label="Ask the study companion" title="Ask about this page (I)">'
                f'{icon("chat")}</button>') if reader else ""
     focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="Focus mode" title="Focus mode (F)">'
@@ -385,7 +387,10 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
   <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
   <nav aria-label="Site">{links}</nav>
   <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
+  <button class="tbtn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
 </header>
+<nav class="mnav" id="mnav" aria-label="Menu" hidden>{links}<span class="sep"></span>
+  <a href="{root}notes/">{icon("pen")}<span>Notebook</span></a><a href="{root}review/">{icon("review")}<span>Review questions</span></a></nav>
 {body}
 {footer(root)}
 <script src="{root}assets/site.js" defer></script>

@@ -192,10 +192,10 @@
   window.EpisAccount = { signedIn: signedIn, user: user, token: token, signIn: signIn, signOut: signOut, sync: sync, status: status };
 
   /* ------------------------------------------------------------ on every page */
-  var navLink = document.querySelector('.bar nav a[href$="account/"]');
-  function paintNav() {
+  var navLinks = document.querySelectorAll('.bar nav a[href$="account/"], #mnav a[href$="account/"]');
+  function paintNav() { Array.prototype.forEach.call(navLinks, paintLink); }
+  function paintLink(navLink) {
     var u = user();
-    if (!navLink) return;
     var label = navLink.querySelector("span");
     if (label) label.textContent = u ? (u.given_name || (u.name || "").split(" ")[0] || "Account") : "Sign in";
     navLink.classList.toggle("signed-in", !!u);

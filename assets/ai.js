@@ -258,7 +258,7 @@
     panel.innerHTML =
       '<header><div><span class="kicker">Study companion</span><b></b></div>' +
       '<select aria-label="Mode">' + Object.keys(MODES).map(function (k) { return '<option value="' + k + '">' + MODES[k].label + "</option>"; }).join("") + "</select>" +
-      '<button type="button" class="x" aria-label="Close">✕</button></header>' +
+      '<button type="button" class="grow" aria-label="Expand">⤢</button><button type="button" class="x" aria-label="Close">✕</button></header>' +
       '<div class="msgs" aria-live="polite"></div>' +
       '<form><div class="quote" hidden></div><textarea rows="2" placeholder="Ask about this page…" aria-label="Your question"></textarea>' +
       '<button type="submit" class="send" aria-label="Send"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>' +
@@ -269,6 +269,10 @@
     sel.value = chat().mode || "explain";
     sel.addEventListener("change", function () { var c = chat(); c.mode = sel.value; saveChat(c); paint(); });
     panel.querySelector(".x").addEventListener("click", close);
+    panel.querySelector(".grow").addEventListener("click", function () { panel.classList.toggle("tall"); });
+    panel.addEventListener("change", function (e) {
+      if (e.target.matches(".setup select[name=prov]")) paint();
+    });
     var ta = panel.querySelector("textarea");
     ta.addEventListener("keydown", function (e) {
       if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); submit(); }
@@ -286,6 +290,18 @@
       else if (act === "copy") { navigator.clipboard && navigator.clipboard.writeText(c.messages[i].content); b.textContent = "Copied"; }
       else if (act === "save") { saveToNotes(c.messages[i - 1], c.messages[i]); b.textContent = "Saved"; }
       else if (act === "unquote") { pendingQuote = ""; paint(); }
+      else if (act === "setup") {
+        var f = panel.querySelector(".setup"), prov = f.querySelector("[name=prov]").value, key = f.querySelector("[name=key]").value.trim();
+        var model = f.querySelector("[name=model]").value.trim(), msg = f.querySelector(".msg");
+        if (!key) { msg.textContent = "Paste your key first."; return; }
+        var st = settings(), kind = prov === "openrouter" ? "compat" : prov;
+        st.provider = kind; st.keys[kind] = key;
+        if (model) st.models[kind] = model;
+        if (prov === "openrouter") st.base = "https://openrouter.ai/api/v1";
+        msg.textContent = "Checking the key…";
+        testKey(kind, key, st.base).then(function () { saveSettings(st); paint(); },
+          function (err) { msg.textContent = err instanceof TypeError ? "Could not reach the service." : err.message; });
+      }
     });
   }
   function open() {
@@ -312,6 +328,20 @@
     q.hidden = !pendingQuote;
     if (pendingQuote) q.innerHTML = "<span>“" + esc(pendingQuote.slice(0, 220)) + (pendingQuote.length > 220 ? "…" : "") + '”</span><button type="button" data-act="unquote" aria-label="Remove quote">✕</button>';
     if (!c.messages.length) {
+      if (signedIn() && eng.kind !== "anthropic" && !eng.full) {
+        // Signed in but no key yet: set it up right here, without leaving the page.
+        var prov = (panel.querySelector(".setup select[name=prov]") || {}).value || "anthropic";
+        var modelField = prov === "anthropic"
+          ? '<select name="model">' + MODELS.anthropic.map(function (m) { return '<option value="' + m.id + '">' + m.name + "</option>"; }).join("") + "</select>"
+          : '<input name="model" placeholder="' + (prov === "openai" ? "gpt-5-mini" : "model name, e.g. from openrouter.ai/models") + '" autocomplete="off">';
+        box.innerHTML = '<div class="empty"><p>Add your own API key once to chat here. It is saved to your Google Drive, so every device you sign in on has it.</p>' +
+          '<div class="setup"><b>Your key</b><div class="row"><select name="prov" aria-label="Provider">' +
+          [["anthropic", "Claude"], ["openai", "ChatGPT"], ["openrouter", "OpenRouter"]].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === prov ? " selected" : "") + ">" + o[1] + "</option>"; }).join("") +
+          '</select>' + modelField + '</div><div class="row"><input name="key" type="password" autocomplete="off" spellcheck="false" aria-label="API key" placeholder="Paste your API key">' +
+          '<button type="button" data-act="setup">Save</button></div><p class="msg">Tip: give the key a monthly spending limit with the provider.</p></div>' +
+          '<p class="fine">No key? Just ask below and your question is prepared for the free ChatGPT or Claude website.</p></div>';
+        return;
+      }
       box.innerHTML = '<div class="empty"><p>' + (article ? "Ask anything about this chapter. I have read it, so questions can be as specific as you like."
           : "Ask anything about this concept.") + "</p>" +
         (eng.kind === "handoff" ? '<p class="fine">' + (signedIn() ? "Add your own Claude or ChatGPT key in " : "Sign in and add your own Claude or ChatGPT key in ") +
