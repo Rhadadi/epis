@@ -664,7 +664,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     text, epigraphs = split_epigraphs(ch.text)
     body_md = clean_chapter_markdown(text)
     body, heads = md.render(body_md, guide_links())
-    if LANG == "fa" and not ch.fallback and ch.num in EN_HEADS:
+    if LANG == "fa" and not ch.fallback and ch.num in EN_HEADS and ch.num != 17:  # the glossary has its own letters
         # Persian headings get the English section ids, so links, audio markers and highlights line up.
         en = EN_HEADS[ch.num]
         if [h[0] for h in heads] != [h[0] for h in en]:
@@ -1450,13 +1450,13 @@ def prepare_learning(md, C, chapters):
     forms = {}
     skip = TERM_SKIP_FA if LANG == "fa" else TERM_SKIP
     for tid, v in terms.items():
-        f = norm(v["t"])
+        f = norm(v["t"]).replace("\u0650", "")  # the ezafe kasra is written inconsistently in Persian
         if len(f) < 4 or f in skip or " vs " in f or "≠" in f or " در برابر " in f:
             continue
         forms.setdefault(f, tid)
     LEARN.update(terms=terms, forms=forms, deeper=deeper)
     alts = sorted(forms, key=len, reverse=True)
-    pattern = "|".join(re.escape(a).replace("'", "['’]") for a in alts) or "(?!)"
+    pattern = "|".join(re.escape(a).replace("'", "['’]").replace("\\ ", "\u0650?\\ ") for a in alts) or "(?!)"
     suffix = r"(?:‌?ها(?:ی)?)?" if LANG == "fa" else r"(?:e?s)?"
     LEARN["regex"] = re.compile(r"(?<![\w-])(?:" + pattern + r")" + suffix + r"(?![\w-])", re.I)
 
@@ -1470,7 +1470,7 @@ def link_terms(body):
     forms = LEARN["forms"]
 
     def repl(m):
-        found = m.group(0).lower().replace("’", "'")
+        found = m.group(0).lower().replace("’", "'").replace("\u0650", "")
         tid = (forms.get(found) or forms.get(re.sub(r"e?s$", "", found)) or forms.get(found[:-1])
                or forms.get(re.sub(r"‌?ها(?:ی)?$", "", found)))
         if not tid or tid in used:
