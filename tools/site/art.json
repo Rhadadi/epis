@@ -1,49 +1,115 @@
 {
-  "_about": "Header artwork for the site. Each entry names Wikipedia articles (tried in order) whose lead image is the work, or Wikimedia Commons files (tried first). tools/site/fetch_art.py downloads them into assets/art/ and records credits; the Fetch artwork workflow runs it on GitHub when this file changes.",
+  "_about": "Artwork for the site. Each entry names Wikimedia Commons files or Wikipedia articles (the lead image is used), tried in order; tools/site/fetch_art.py downloads them into assets/art/ and records credits, and the Fetch artwork workflow runs it on GitHub when this file changes. The remaining fields are the caption shown on the site: artist, title, date, place, a note on why the image was chosen, the focal point for cropping (CSS object-position), and an optional crop box [left, top, right, bottom] as fractions, used to trim scan margins.",
   "images": {
     "home": {
       "wiki": [
         "Wanderer above the Sea of Fog"
-      ]
+      ],
+      "artist": "Caspar David Friedrich",
+      "title": "Wanderer above the Sea of Fog",
+      "date": "c. 1818",
+      "place": "Hamburger Kunsthalle",
+      "note": "A lone figure looks out over a landscape he can only partly see. Epistemology starts in the same place: with what we can make out, and what the fog still hides.",
+      "focus": "50% 28%"
     },
     "guide": {
       "wiki": [
         "The Astronomer (Vermeer)"
-      ]
+      ],
+      "artist": "Johannes Vermeer",
+      "title": "The Astronomer",
+      "date": "c. 1668",
+      "place": "Musée du Louvre, Paris",
+      "note": "A scholar reaches for a celestial globe with a book open beside him: learning from books and learning from the world in a single gesture.",
+      "focus": "62% 45%"
     },
     "map": {
       "wiki": [
         "Harmonia Macrocosmica"
+      ],
+      "artist": "Andreas Cellarius",
+      "title": "Planisphaerium Copernicanum, from Harmonia Macrocosmica",
+      "date": "1660",
+      "place": "",
+      "note": "Cellarius's atlas of the heavens set rival models of the cosmos side by side. The concept map does the same for rival theories of knowledge.",
+      "focus": "50% 50%",
+      "crop": [
+        0.05,
+        0.03,
+        0.95,
+        0.97
       ]
     },
     "audio": {
       "wiki": [
         "His Master's Voice"
-      ]
+      ],
+      "artist": "Francis Barraud",
+      "title": "His Master's Voice",
+      "date": "1898–99",
+      "place": "",
+      "note": "Nipper the dog, said to be listening to a recording of his late master's voice: perhaps the most famous picture of listening ever painted.",
+      "focus": "50% 42%"
     },
     "ch01": {
       "wiki": [
         "The Geographer"
-      ]
+      ],
+      "artist": "Johannes Vermeer",
+      "title": "The Geographer",
+      "date": "c. 1669",
+      "place": "Städel Museum, Frankfurt",
+      "note": "A scholar pauses over his charts, dividers in hand, and looks up as if struck by a thought. This chapter draws the map of the field.",
+      "focus": "55% 38%"
     },
     "ch02": {
       "wiki": [
         "The Death of Socrates"
-      ]
+      ],
+      "artist": "Jacques-Louis David",
+      "title": "The Death of Socrates",
+      "date": "1787",
+      "place": "The Metropolitan Museum of Art, New York",
+      "note": "Condemned for impiety and for corrupting the young, Socrates keeps arguing until he takes the hemlock. The history of the theory of knowledge begins with his questions.",
+      "focus": "62% 45%"
     },
     "ch03": {
       "wiki": [
         "The Anatomy Lesson of Dr. Nicolaes Tulp"
-      ]
+      ],
+      "artist": "Rembrandt van Rijn",
+      "title": "The Anatomy Lesson of Dr Nicolaes Tulp",
+      "date": "1632",
+      "place": "Mauritshuis, The Hague",
+      "note": "Dr Tulp lays bare the muscles of the forearm while his audience leans in to see. An argument can be dissected the same way, layer by layer.",
+      "focus": "50% 48%"
     },
     "ch04": {
       "wiki": [
         "The Tower of Babel (Bruegel)"
-      ]
+      ],
+      "artist": "Pieter Bruegel the Elder",
+      "title": "The Tower of Babel",
+      "date": "1563",
+      "place": "Kunsthistorisches Museum, Vienna",
+      "note": "The builders' great project collapses once they can no longer understand one another's words. Many arguments fail the same way.",
+      "focus": "50% 42%"
     },
     "ch05": {
       "wiki": [
         "Melencolia I"
+      ],
+      "artist": "Albrecht Dürer",
+      "title": "Melencolia I",
+      "date": "1514",
+      "place": "engraving",
+      "note": "A winged genius sits among instruments of measurement (compass, scale, hourglass, magic square), stalled before a question she cannot yet answer. What, exactly, is knowledge?",
+      "focus": "50% 42%",
+      "crop": [
+        0.065,
+        0.05,
+        0.935,
+        0.95
       ]
     },
     "ch06": {
@@ -54,46 +120,112 @@
       ],
       "wiki": [
         "Imaginary Prisons"
+      ],
+      "artist": "Giovanni Battista Piranesi",
+      "title": "The Drawbridge, plate VII of the Imaginary Prisons (Carceri d'invenzione)",
+      "date": "1761",
+      "place": "etching",
+      "note": "Stairs lead to further stairs and bridges to further bridges, and nothing seems to rest on the ground. Piranesi drew the regress problem as architecture.",
+      "focus": "50% 45%",
+      "crop": [
+        0.075,
+        0.06,
+        0.925,
+        0.94
       ]
     },
     "ch07": {
       "wiki": [
         "Arnolfini Portrait"
-      ]
+      ],
+      "artist": "Jan van Eyck",
+      "title": "The Arnolfini Portrait",
+      "date": "1434",
+      "place": "The National Gallery, London",
+      "note": "Above the mirror van Eyck wrote Johannes de eyck fuit hic, “Jan van Eyck was here,” and the mirror shows the room as a witness saw it: perception and testimony in one picture.",
+      "focus": "50% 32%"
     },
     "ch08": {
       "wiki": [
         "The Incredulity of Saint Thomas (Caravaggio)"
-      ]
+      ],
+      "artist": "Caravaggio",
+      "title": "The Incredulity of Saint Thomas",
+      "date": "c. 1601–02",
+      "place": "Sanssouci Picture Gallery, Potsdam",
+      "note": "Thomas will not believe until he has touched the wound: the skeptic's demand for evidence, taken literally.",
+      "focus": "45% 40%"
     },
     "ch09": {
       "wiki": [
         "Impression, Sunrise"
-      ]
+      ],
+      "artist": "Claude Monet",
+      "title": "Impression, Sunrise",
+      "date": "1872",
+      "place": "Musée Marmottan Monet, Paris",
+      "note": "The sun has risen every morning so far. Hume asked what, exactly, entitles us to expect that it will rise tomorrow.",
+      "focus": "45% 42%"
     },
     "ch10": {
       "wiki": [
         "An Experiment on a Bird in the Air Pump"
-      ]
+      ],
+      "artist": "Joseph Wright of Derby",
+      "title": "An Experiment on a Bird in the Air Pump",
+      "date": "1768",
+      "place": "The National Gallery, London",
+      "note": "A travelling lecturer pumps the air out of a flask to show what happens to a bird without it: science as public demonstration, dramatic, persuasive and not without cost.",
+      "focus": "50% 44%"
     },
     "ch11": {
       "wiki": [
         "Earthrise"
-      ]
+      ],
+      "artist": "William Anders, Apollo 8",
+      "title": "Earthrise",
+      "date": "24 December 1968",
+      "place": "NASA",
+      "note": "The Earth seen from lunar orbit: as close as anyone had come to what the philosopher Thomas Nagel called the view from nowhere.",
+      "focus": "50% 40%"
     },
     "ch12": {
       "wiki": [
         "The School of Athens"
-      ]
+      ],
+      "artist": "Raphael",
+      "title": "The School of Athens",
+      "date": "1509–1511",
+      "place": "Apostolic Palace, Vatican City",
+      "note": "Plato and Aristotle at the centre, surrounded by generations of thinkers in conversation and dispute: knowledge as something a community builds together.",
+      "focus": "50% 58%"
     },
     "ch13": {
       "wiki": [
         "The Storm on the Sea of Galilee"
-      ]
+      ],
+      "artist": "Rembrandt van Rijn",
+      "title": "The Storm on the Sea of Galilee",
+      "date": "1633",
+      "place": "stolen from the Isabella Stewart Gardner Museum, Boston, in 1990",
+      "note": "A ship in a storm recalls William Clifford's shipowner, who let an unseaworthy vessel sail because he had talked himself into believing it was safe.",
+      "focus": "45% 38%"
     },
     "ch14": {
       "wiki": [
         "The Sleep of Reason Produces Monsters"
+      ],
+      "artist": "Francisco Goya",
+      "title": "The Sleep of Reason Produces Monsters, plate 43 of Los Caprichos",
+      "date": "1799",
+      "place": "etching and aquatint",
+      "note": "When reason sleeps, owls and bats crowd in. The psychology of reasoning studies what fills the space when careful thought switches off.",
+      "focus": "50% 38%",
+      "crop": [
+        0.035,
+        0.03,
+        0.965,
+        0.97
       ]
     },
     "ch15": {
@@ -101,26 +233,50 @@
         "The Cheat with the Ace of Diamonds",
         "The Cheat with the Ace of Clubs",
         "The Cardsharps"
-      ]
+      ],
+      "artist": "Caravaggio",
+      "title": "The Cardsharps",
+      "date": "c. 1595",
+      "place": "Kimbell Art Museum, Fort Worth",
+      "note": "An accomplice reads the young man's cards and signals, while the cheat reaches behind his back for a hidden card. Fallacies are tricks of the same kind, played with arguments.",
+      "focus": "50% 35%"
     },
     "ch16": {
       "wiki": [
         "The Ambassadors (Holbein)"
-      ]
+      ],
+      "artist": "Hans Holbein the Younger",
+      "title": "The Ambassadors",
+      "date": "1533",
+      "place": "The National Gallery, London",
+      "note": "Two envoys stand among the instruments of their age (globes, sundials, a lute), while a stretched skull resolves only when you change your point of view: an emblem for a toolkit.",
+      "focus": "50% 45%"
     },
     "ch17": {
       "wiki": [
         "The Librarian (Arcimboldo)",
         "The Librarian (painting)",
         "Giuseppe Arcimboldo"
-      ]
+      ],
+      "artist": "Giuseppe Arcimboldo",
+      "title": "The Librarian",
+      "date": "c. 1566",
+      "place": "Skokloster Castle, Sweden",
+      "note": "A portrait assembled entirely from books: the right emblem for a glossary.",
+      "focus": "50% 38%"
     },
     "ch18": {
       "wiki": [
         "The Bookworm (Spitzweg)",
         "The Bookworm (painting)",
         "Carl Spitzweg"
-      ]
+      ],
+      "artist": "Carl Spitzweg",
+      "title": "The Bookworm",
+      "date": "c. 1850",
+      "place": "Museum Georg Schäfer, Schweinfurt",
+      "note": "High on a library ladder, a scholar reads with a book under each arm and another between his knees. Begin with one book at a time.",
+      "focus": "50% 30%"
     },
     "elephant": {
       "file": [
@@ -128,11 +284,35 @@
       ],
       "wiki": [
         "Blind men and an elephant"
+      ],
+      "artist": "Hanabusa Itchō",
+      "title": "Blind Monks Examining an Elephant",
+      "date": "Edo period",
+      "place": "woodblock print",
+      "note": "Each monk touches one part and describes a different animal. The concept map offers twelve such angles on a single question.",
+      "focus": "50% 50%",
+      "crop": [
+        0.03,
+        0.04,
+        0.97,
+        0.96
       ]
     },
     "cave": {
       "wiki": [
         "Allegory of the cave"
+      ],
+      "artist": "Jan Saenredam, after Cornelis van Haarlem",
+      "title": "Plato's Cave",
+      "date": "1604",
+      "place": "engraving",
+      "note": "Prisoners take shadows on a wall for reality: philosophy's oldest image of the gap between appearance and knowledge.",
+      "focus": "50% 50%",
+      "crop": [
+        0.02,
+        0.08,
+        0.98,
+        0.84
       ]
     }
   }
