@@ -11,7 +11,7 @@ This guide is written for someone who wants to **master** the subject, not just 
 
 It runs to about 130,000 words across sixteen chapters, a glossary, and a reading list. Every chapter is heavily cross-linked, so you can follow a concept wherever it leads.
 
-Every chapter is also available as narrated audio, about 14 hours in all. Use the **[audio player](audio/index.html)**, which has section markers and remembers your place, or see [the audio edition](audio/README.md) for the track list and for how the narration was made.
+Every chapter is also available as narrated audio, about 14½ hours in all. Use the **[audio player](audio/index.html)**, which has section markers and remembers your place, or see [the audio edition](audio/README.md) for the track list and for how the narration was made.
 
 ---
 

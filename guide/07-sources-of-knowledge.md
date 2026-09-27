@@ -2,6 +2,8 @@
 
 [← Previous: Justification](06-justification.md) · [Contents](README.md) · [Next: Skepticism and Its Answers →](08-skepticism.md)
 
+**Audio:** [listen to this chapter](audio/07-sources-of-knowledge.mp3) (52 min, narrated) · [open in the player](audio/index.html#07)
+
 ---
 
 > "Why, sir, should I believe the faculty of reason more than that of perception? They came both out of the same shop."

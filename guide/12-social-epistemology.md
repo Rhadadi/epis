@@ -2,6 +2,8 @@
 
 [← Previous: Truth, Relativism, and Objectivity](11-truth-and-relativism.md) · [Contents](README.md) · [Next: Intellectual Virtue and the Ethics of Belief →](13-virtues-and-ethics-of-belief.md)
 
+**Audio:** [listen to this chapter](audio/12-social-epistemology.mp3) (1 h 1 min, narrated) · [open in the player](audio/index.html#12)
+
 ---
 
 > "He who knows only his own side of the case, knows little of that."

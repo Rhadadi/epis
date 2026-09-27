@@ -228,6 +228,7 @@ REPLACE = {
         ("1. About 1455. 2. About 6,650 km (estimates vary). 3. 8,849 m (2020 survey). 4. 206. 5. About 384,400 km. 6. 1739. 7. About 343 m/s. 8. 1724. 9. 193. 10. About 980 CE.",
          "1. About 1455.\n2. About 6,650 km (estimates vary).\n3. 8,849 m.\n4. 206.\n5. About 384,400 km.\n6. 1739.\n7. About 343 m/s.\n8. 1724.\n9. 193.\n10. About 980 CE."),
         ("(low P(E | not-H))", "(that is, if P(E | not-H) is low)"),
+        ("- Prior odds Blue:Green = 15:85.", "- Prior odds, blue to green, are 15:85."),
     ],
     "03": [
         ("assume √2 = a/b in lowest terms; then a² = 2b², so *a* is even, so *a* = 2k, so 4k² = 2b², so b² = 2k², so *b* is even; but then a/b was not in lowest terms, a contradiction.",

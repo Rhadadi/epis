@@ -4,7 +4,26 @@ Every chapter of the guide is also available as a narrated audio track. Listen i
 
 > The narration is generated with a synthetic voice, the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model. It was not read by a person.
 
-<!-- TRACKS -->
+| | Chapter | Length |
+|---|---|---|
+| 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 35 min |
+| 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 11 min |
+| 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 49 min |
+| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 46 min |
+| 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 56 min |
+| 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 54 min |
+| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 52 min |
+| 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 54 min |
+| 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 5 min |
+| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 6 min |
+| 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 41 min |
+| 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 1 min |
+| 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 47 min |
+| 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 59 min |
+| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min |
+| 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min |
+
+Total: 14 h 33 min.
 
 ---
 
@@ -27,7 +46,7 @@ Monotone text-to-speech comes from three things: every sentence has the same sha
 1. **Several voices.** The narrator (Kokoro's `af_heart` voice) reads the main text. Quotations from philosophers and scientists are read in a second voice (`am_michael`), and the narrator then says who said it. In dialogues, each speaker has their own voice (`am_puck`, and the British `bf_emma`, which also gets British pronunciation). The argument between two friends in Chapter 1 and the social-media thread in Chapter 16 sound like people talking.
 2. **Pacing and structure you can hear.** A soft two-note chime and a pause mark each new section. Headings are read a little more slowly. Example arguments and other set-off passages are read slightly slower, with space around them. List items and table rows have shorter gaps than paragraphs. Sentences and clauses get real pauses. A quieter single bell introduces each "critical-thinking lesson" box, and the narrator names the box: "Here's the critical-thinking lesson."
 3. **Accurate pronunciation.** Words are converted to sounds by [misaki](https://github.com/hexgrad/misaki), the grapheme-to-phoneme system Kokoro was trained with. It gets part-of-speech tags from a bundled tagger, so that "a", "the", "read" and "live" come out right in context. A pronunciation lexicon ([`tools/lexicon.txt`](tools/lexicon.txt)) covers about 350 names and terms that dictionaries get wrong, including Gettier, Peirce, Nagel, Lakatos, Frege, Semmelweis, Theaetetus, *a priori*, *tu quoque*, Nyāya, *pramāṇa*, al-Ghazālī, Suhrawardī and Zhuangzi.
-4. **Consistent sound.** Each track starts and ends with silence and is normalized to −18 LUFS, a comfortable speech level that makes chapters equally loud. Tracks are encoded as 40 kbps mono MP3 and tagged with title, album and track number. Each section is a chapter marker in the MP3.
+4. **Consistent sound.** Each track starts and ends with silence and is normalized to −18 LUFS, a comfortable speech level that makes chapters equally loud, with a limiter keeping peaks below full scale. Tracks are encoded as 40 kbps mono MP3 and tagged with title, album and track number. Each section is a chapter marker in the MP3.
 
 The voice is synthetic, so expect occasional oddities: a stress on the wrong syllable, a flat reading of a joke, or a rare mispronounced name. The written chapter is always the reference.
 

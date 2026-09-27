@@ -2,6 +2,8 @@
 
 [← Previous: What Is Knowledge?](05-the-nature-of-knowledge.md) · [Contents](README.md) · [Next: The Sources of Knowledge →](07-sources-of-knowledge.md)
 
+**Audio:** [listen to this chapter](audio/06-justification.mp3) (54 min, narrated) · [open in the player](audio/index.html#06)
+
 ---
 
 > "I beseech you, in the bowels of Christ, think it possible you may be mistaken."

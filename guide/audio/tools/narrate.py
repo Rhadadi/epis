@@ -329,13 +329,15 @@ def master(audio, out_mp3, title, track, total, sections):
         chain = "highpass=f=60"
         measure = subprocess.run(
             ["ffmpeg", "-hide_banner", "-nostats", "-i", str(wav), "-af",
-             f"{chain},loudnorm=I=-18:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+             f"{chain},loudnorm=I=-18:TP=-2:LRA=11:print_format=json", "-f", "null", "-"],
             capture_output=True, text=True, check=True).stderr
         stats = json.loads(measure[measure.rindex("{"):measure.rindex("}") + 1])
-        norm = (f"{chain},loudnorm=I=-18:TP=-1.5:LRA=11:linear=true:"
+        norm = (f"{chain},loudnorm=I=-18:TP=-2:LRA=11:linear=true:"
                 f"measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
                 f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
-                f"offset={stats['target_offset']}")
+                f"offset={stats['target_offset']},"
+                # MP3 encoding adds overshoot, so peaks are held about 2 dB below full scale
+                "alimiter=limit=0.79:level=false")
         duration = len(audio) / SR
         meta = Path(tmp) / "meta.txt"
         lines = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=Mastering Epistemology",
