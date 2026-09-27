@@ -117,14 +117,14 @@
   "credit": "https://artsandculture.google.com/asset/melencolia-i/_AGDdr3EHmNGyA"
  },
  "ch06": {
-  "file": "Giovanni_Battista_Piranesi_-_Le_Carceri_d'Invenzione_-_Second_Edition_-_1761_-_01_-_Title_Plate.jpg",
-  "article": "https://en.wikipedia.org/wiki/Carceri_d%27invenzione",
-  "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi_-_Le_Carceri_d%27Invenzione_-_Second_Edition_-_1761_-_01_-_Title_Plate.jpg",
-  "width": 1551,
+  "file": "Giovanni Battista Piranesi - Le Carceri d'Invenzione - Second Edition - 1761 - 07 - The Drawbridge.jpg",
+  "article": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Piranesi_-_Le_Carceri_d%27Invenzione_-_Second_Edition_-_1761_-_07_-_The_Drawbridge.jpg",
+  "width": 1539,
   "height": 2000,
-  "color": "#958d7d",
+  "color": "#928979",
   "artist": "Giovanni Battista Piranesi",
-  "object": "Le Carceri d'Invenzione, plate I: Title Platelabel QS:Len,\"Le Carceri d'Invenzione, plate I: Title Plate\"label QS:Lde,\"Le Carceri d'Invenzione, 1. Platte: Titelplatte\"label QS:Lfr,\"Le Carceri d'Invenzione, planche I : Frontispice\"",
+  "object": "Le Carceri d'Invenzione, plate VII: The Drawbridge",
   "date": "1761date QS:P571,+1761-00-00T00:00:00Z/9",
   "license": "Public domain",
   "credit": "Princeton University Art Museum"
@@ -273,17 +273,17 @@
   "credit": "https://img.nzz.ch/2017/5/30/f4c7775a-04f1-4880-bb21-a0d9903fa054.jpeg"
  },
  "elephant": {
-  "file": "Blind_men_and_elephant4.jpg",
-  "article": "https://en.wikipedia.org/wiki/Blind_men_and_an_elephant",
-  "source": "https://commons.wikimedia.org/wiki/File:Blind_men_and_elephant4.jpg",
-  "width": 750,
-  "height": 1034,
-  "color": "#7d7d7d",
-  "artist": "Illustrator unknown",
-  "object": "Blind men and elephant4",
-  "date": "1907",
+  "file": "Blind monks examining an elephant.jpg",
+  "article": null,
+  "source": "https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg",
+  "width": 2400,
+  "height": 1739,
+  "color": "#c8b086",
+  "artist": "Hanabusa Itchō",
+  "object": "Blind monks examining an elephant",
+  "date": "1888",
   "license": "Public domain",
-  "credit": "From The Heath readers by grades, D.C. Heath and Company (Boston), p. 69."
+  "credit": "This image is available from the United States Library of Congress's Prints and Photographs division under the digital ID cph.3g08725.This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing."
  },
  "cave": {
   "file": "Platon_Cave_Sanraedam_1604.jpg",
@@ -297,5 +297,18 @@
   "date": "1604date QS:P571,+1604-00-00T00:00:00Z/9",
   "license": "Public domain",
   "credit": "British Museum https://www.britishmuseum.org/collection/object/P_1852-1211-120"
+ },
+ "ch15": {
+  "file": "Caravaggio_-_The_Cardsharps_(1596-97)_Kimbell_Art_Museum.jpg",
+  "article": "https://en.wikipedia.org/wiki/The_Cardsharps",
+  "source": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_The_Cardsharps_(1596-97)_Kimbell_Art_Museum.jpg",
+  "width": 2400,
+  "height": 1725,
+  "color": "#402f20",
+  "artist": "Caravaggio",
+  "object": "Italian: I bari The Cardsharpstitle QS:P1476,it:\"I bari \"label QS:Lit,\"I bari \"label QS:Les,\"Jugadores de cartas\"label QS:Lhu,\"Hamiskártyások\"label QS:Lhr,\"Kartaši\"label QS:Lru,\"Шулера\"label QS:Lth,\"คนโกงไพ่\"label QS:Lde,\"Die Falschspieler\"label QS:Lpt,\"Os Trapaceiros\"label QS:Lbr,\"I bari\"label QS:Lhy,\"Խաղանենգները (Կարավաջո)\"label QS:Lzh,\"老千 (卡拉瓦乔)\"label QS:Lfr,\"Les Tricheurs\"label QS:Lsl,\"Kvartopirci (Caravaggio)\"label QS:Lja,\"トランプ詐欺師\"label QS:Lml,\"ദി കാർഡ്‌ഷാർപ്‌സ്\"label QS:Lla,\"Paginarum lusores\"label QS:Lsv,\"Falskspelarna\"label QS:Lpl,\"Grający w karty\"label QS:Lhe,\"המרמים במשחק הקלפים\"label QS:Lnl,\"The Cardsharps\"label QS:Larz,\"شارب (لوحه)\"label QS:Lavk,\"Liwusik (trutca ke Caravaggio)\"label QS:Lsh,\"Kartaši\"label QS:Len,\"The Cardsharps\"label QS:Lca,\"Jugadors de cartes\"",
+  "date": "between circa 1596 and circa 1597date QS:P,+1596-00-00T00:00:00Z/8,P1319,+1596-00-00T00:00:00Z/9,P1326,+1597-00-00T00:00:00Z/9,P1480,Q5727902",
+  "license": "Public domain",
+  "credit": "Kimbell Art Museum"
  }
 }
