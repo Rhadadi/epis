@@ -1,0 +1,509 @@
+/* Mastering Epistemology — highlights and notes.
+
+   Select text in a chapter or concept page to highlight it or add a note. Each
+   highlight is stored with the words around it, so it finds its place again after
+   the text is edited. Everything lives in this browser (localStorage key
+   "epis-notes"); the Notebook page (notes/) lists, searches, exports and imports it.
+   Other scripts can listen for the "epis:notes" event and use window.EpisNotes. */
+(function () {
+  "use strict";
+  var doc = document.documentElement;
+  var SCRIPT = document.currentScript && document.currentScript.src;
+  var ROOT = SCRIPT ? new URL("../", SCRIPT).href : new URL("./", location.href).href;
+  var KEY = "epis-notes";
+  var COLORS = ["yellow", "green", "blue", "pink"];
+  var CTX = 32;
+
+  /* ------------------------------------------------------------ storage */
+  function load() {
+    try {
+      var d = JSON.parse(localStorage.getItem(KEY) || "null");
+      if (d && d.items) return d;
+    } catch (e) { /* fall through */ }
+    return { v: 1, items: {} };
+  }
+  function save(d, quiet) {
+    d.updated = Date.now();
+    try { localStorage.setItem(KEY, JSON.stringify(d)); } catch (e) { alert("Your browser storage is full, so this note could not be saved."); }
+    if (!quiet) document.dispatchEvent(new CustomEvent("epis:notes"));
+  }
+  function live(d) {
+    return Object.keys(d.items).map(function (k) { return d.items[k]; }).filter(function (i) { return !i.deleted; });
+  }
+  // Merge two note sets item by item, keeping the most recently changed version (used by import and sync).
+  function merge(a, b) {
+    var out = { v: 1, items: {} };
+    [a, b].forEach(function (d) {
+      Object.keys((d && d.items) || {}).forEach(function (k) {
+        var it = d.items[k], cur = out.items[k];
+        if (!cur || (it.updated || 0) > (cur.updated || 0)) out.items[k] = it;
+      });
+    });
+    return out;
+  }
+  function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+  window.EpisNotes = { load: load, save: save, merge: merge, live: live };
+
+  /* ------------------------------------------------------------ which page is this */
+  var article = document.querySelector("article[data-slug]");
+  var container = article ? article.querySelector(".prose") : document.querySelector(".cpage .entry");
+  var pageKey = decodeURIComponent(location.href.split(/[?#]/)[0].slice(ROOT.length)).replace(/\.html$/, "").replace(/(^|\/)index$/, "$1");
+  function pageInfo() {
+    var h1 = document.querySelector(".focus-head .ftitle") || document.querySelector(".hero h1:not(.l-fa)") || document.querySelector("h1");
+    var kicker = document.querySelector(".focus-head .kicker") || document.querySelector(".hero .kicker");
+    var label = kicker ? kicker.textContent.replace(/^.*·\s*/, "") : "";
+    return { title: h1 ? h1.textContent.trim() : document.title, label: article ? label : "Concept" };
+  }
+
+  /* ------------------------------------------------------------ text index */
+  function indexText(root) {
+    var nodes = [], pos = 0;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        var p = n.parentElement;
+        if (!p || p.closest("button, figure.diagram, script, style, .hl-ui, .mynotes")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var n;
+    while ((n = walker.nextNode())) { nodes.push({ n: n, start: pos, end: pos + n.data.length }); pos += n.data.length; }
+    return { nodes: nodes, text: nodes.map(function (x) { return x.n.data; }).join("") };
+  }
+  function rangeOffsets(idx, range) {
+    var first = null, last = null;
+    for (var i = 0; i < idx.nodes.length; i++) {
+      var x = idx.nodes[i];
+      if (!range.intersectsNode(x.n)) continue;
+      if (!first) first = x;
+      last = x;
+    }
+    if (!first) return null;
+    var s = first.start + (first.n === range.startContainer ? range.startOffset : 0);
+    var e = last.start + (last.n === range.endContainer ? range.endOffset : last.n.data.length);
+    return e > s ? [s, e] : null;
+  }
+  function common(a, b, fromEnd) {
+    var n = 0, la = a.length, lb = b.length;
+    while (n < la && n < lb && (fromEnd ? a[la - 1 - n] === b[lb - 1 - n] : a[n] === b[n])) n++;
+    return n;
+  }
+  function locate(idx, q) {
+    var t = idx.text, whole = t.indexOf(q.prefix + q.exact + q.suffix);
+    if (whole >= 0) return [whole + q.prefix.length, whole + q.prefix.length + q.exact.length];
+    var best = -1, score = -1, i = t.indexOf(q.exact);
+    while (i >= 0) {
+      var sc = common(t.slice(Math.max(0, i - CTX), i), q.prefix, true) + common(t.slice(i + q.exact.length, i + q.exact.length + CTX), q.suffix, false);
+      if (sc > score) { score = sc; best = i; }
+      i = t.indexOf(q.exact, i + 1);
+    }
+    return best >= 0 ? [best, best + q.exact.length] : null;
+  }
+  function wrap(idx, span, item) {
+    var parts = [];
+    idx.nodes.forEach(function (x) {
+      var a = Math.max(span[0], x.start), b = Math.min(span[1], x.end);
+      if (b > a && x.n.data.slice(a - x.start, b - x.start).trim()) parts.push([x.n, a - x.start, b - x.start]);
+    });
+    var marks = [];
+    parts.forEach(function (p) {
+      var node = p[0], a = p[1], b = p[2];
+      if (a > 0) { node = node.splitText(a); b -= a; }
+      if (b < node.data.length) node.splitText(b);
+      var m = document.createElement("mark");
+      m.className = "hl c-" + (item.color || "yellow");
+      m.setAttribute("data-hl", item.id);
+      node.parentNode.insertBefore(m, node);
+      m.appendChild(node);
+      marks.push(m);
+    });
+    if (marks.length) {
+      marks[0].id = "hl-" + item.id;
+      marks[marks.length - 1].classList.add("hl-end");
+      if (item.note) marks[marks.length - 1].classList.add("has-note");
+    }
+    return marks;
+  }
+  function unwrap(id) {
+    document.querySelectorAll('mark[data-hl="' + id + '"]').forEach(function (m) {
+      var p = m.parentNode;
+      while (m.firstChild) p.insertBefore(m.firstChild, m);
+      p.removeChild(m);
+      p.normalize();
+    });
+  }
+  function sectionFor(el) {
+    var node = el, h = null;
+    var heads = container.querySelectorAll("h2[id]");
+    for (var i = 0; i < heads.length; i++) {
+      if (heads[i].compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING) h = heads[i]; else break;
+    }
+    return h ? { id: h.id, title: (h.querySelector(".ht") || h).textContent.trim() } : { id: "", title: "" };
+  }
+
+  /* ------------------------------------------------------------ highlights on the page */
+  var unplaced = [];
+  function paint() {
+    if (!container) return;
+    var d = load();
+    unplaced = [];
+    live(d).filter(function (i) { return i.page === pageKey && i.type !== "page"; })
+      .sort(function (a, b) { return a.created - b.created; })
+      .forEach(function (item) {
+        var idx = indexText(container), span = locate(idx, item);
+        if (span) wrap(idx, span, item); else unplaced.push(item);
+      });
+    layoutMargin();
+  }
+
+  var toolbar = null, pop = null, savedRange = null;
+  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; }
+  function dots(current) {
+    return COLORS.map(function (c) {
+      return '<button type="button" class="dot c-' + c + '" data-color="' + c + '" aria-label="Highlight ' + c + '"' +
+        (current === c ? ' aria-pressed="true"' : "") + "></button>";
+    }).join("");
+  }
+  var ICON_NOTE = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>';
+  var ICON_COPY = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>';
+  var ICON_TRASH = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
+
+  function hideToolbar() { if (toolbar) toolbar.hidden = true; }
+  function showToolbar(range) {
+    if (!toolbar) {
+      toolbar = el("div", "hl-ui hl-bar");
+      toolbar.setAttribute("role", "toolbar");
+      toolbar.setAttribute("aria-label", "Highlight");
+      toolbar.innerHTML = dots() + '<span class="sep"></span><button type="button" data-act="note">' + ICON_NOTE + "<span>Note</span></button>" +
+        '<button type="button" data-act="copy" aria-label="Copy quote">' + ICON_COPY + "</button>";
+      toolbar.addEventListener("mousedown", function (e) { e.preventDefault(); });
+      toolbar.addEventListener("click", function (e) {
+        var b = e.target.closest("button");
+        if (!b || !savedRange) return;
+        if (b.getAttribute("data-act") === "copy") { copyQuote(savedRange.toString()); hideToolbar(); return; }
+        var item = create(savedRange, b.getAttribute("data-color") || "yellow");
+        window.getSelection().removeAllRanges();
+        hideToolbar();
+        if (item && b.getAttribute("data-act") === "note") openPop(item.id, true);
+      });
+      document.body.appendChild(toolbar);
+    }
+    savedRange = range.cloneRange();
+    toolbar.hidden = false;
+    var r = range.getBoundingClientRect(), w = toolbar.offsetWidth, h = toolbar.offsetHeight;
+    var touch = matchMedia("(pointer: coarse)").matches;
+    var top = touch ? r.bottom + 12 : r.top - h - 10;
+    if (top < 70) top = r.bottom + 12;
+    toolbar.style.top = (top + window.scrollY) + "px";
+    toolbar.style.left = Math.max(8, Math.min(window.innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + window.scrollX + "px";
+  }
+  function selectionInContainer() {
+    var sel = window.getSelection();
+    if (!container || !sel || sel.isCollapsed || !sel.rangeCount) return null;
+    var range = sel.getRangeAt(0);
+    if (!container.contains(range.commonAncestorContainer)) return null;
+    if (!range.toString().trim()) return null;
+    return range;
+  }
+  var selTimer = 0;
+  function onSelection() {
+    clearTimeout(selTimer);
+    selTimer = setTimeout(function () {
+      var range = selectionInContainer();
+      if (range) showToolbar(range); else if (!(toolbar && toolbar.matches(":hover"))) hideToolbar();
+    }, 180);
+  }
+
+  function create(range, color) {
+    var idx = indexText(container), span = rangeOffsets(idx, range);
+    if (!span) return null;
+    var t = idx.text, now = Date.now(), info = pageInfo();
+    // Snap to whole words, and drop spaces at either end.
+    var word = /[\p{L}\p{N}’'\-]/u;
+    while (span[0] > 0 && word.test(t[span[0] - 1]) && word.test(t[span[0]])) span[0]--;
+    while (span[1] < t.length && word.test(t[span[1]]) && word.test(t[span[1] - 1])) span[1]++;
+    while (span[0] < span[1] && /\s/.test(t[span[0]])) span[0]++;
+    while (span[1] > span[0] && /\s/.test(t[span[1] - 1])) span[1]--;
+    if (span[1] <= span[0]) return null;
+    var node = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
+    var sec = sectionFor(node);
+    var item = {
+      id: uid(), type: "highlight", page: pageKey, pageTitle: info.title, pageLabel: info.label, href: pageKey + (pageKey.indexOf("/") < 0 || /\/$/.test(pageKey) ? "" : ".html"),
+      section: sec.id, sectionTitle: sec.title, exact: t.slice(span[0], span[1]),
+      prefix: t.slice(Math.max(0, span[0] - CTX), span[0]), suffix: t.slice(span[1], span[1] + CTX),
+      color: color, note: "", created: now, updated: now
+    };
+    var d = load(); d.items[item.id] = item; save(d);
+    wrap(idx, span, item);
+    layoutMargin();
+    return item;
+  }
+  function update(id, fields) {
+    var d = load(), it = d.items[id];
+    if (!it) return;
+    Object.keys(fields).forEach(function (k) { it[k] = fields[k]; });
+    it.updated = Date.now();
+    save(d);
+    var marks = document.querySelectorAll('mark[data-hl="' + id + '"]');
+    marks.forEach(function (m) { COLORS.forEach(function (c) { m.classList.remove("c-" + c); }); m.classList.add("c-" + it.color); });
+    if (marks.length) marks[marks.length - 1].classList.toggle("has-note", !!it.note);
+    layoutMargin();
+  }
+  function remove(id) {
+    var d = load(), it = d.items[id];
+    if (!it) return;
+    d.items[id] = { id: id, deleted: true, updated: Date.now() };
+    save(d);
+    unwrap(id);
+    closePop();
+    layoutMargin();
+  }
+  function copyQuote(text) {
+    var info = pageInfo();
+    var out = "“" + text.trim().replace(/\s+/g, " ") + "” — " + info.title + ", Mastering Epistemology (" + location.href.split("#")[0] + ")";
+    if (navigator.clipboard) navigator.clipboard.writeText(out).then(function () { flash("Quote copied"); }, function () { flash("Could not copy"); });
+  }
+  var flashEl = null;
+  function flash(msg) {
+    if (!flashEl) { flashEl = el("div", "hl-ui hl-flash"); flashEl.setAttribute("role", "status"); document.body.appendChild(flashEl); }
+    flashEl.textContent = msg;
+    flashEl.classList.add("on");
+    setTimeout(function () { flashEl.classList.remove("on"); }, 1600);
+  }
+
+  /* ------------------------------------------------------------ the note popover */
+  var popId = null;
+  function closePop() { if (pop) { pop.hidden = true; popId = null; } }
+  function openPop(id, focusNote) {
+    var it = load().items[id];
+    var mark = document.getElementById("hl-" + id);
+    if (!it || !mark) return;
+    if (!pop) {
+      pop = el("div", "hl-ui hl-pop");
+      pop.setAttribute("role", "dialog");
+      pop.setAttribute("aria-label", "Highlight and note");
+      pop.addEventListener("click", function (e) {
+        var b = e.target.closest("button");
+        if (!b || !popId) return;
+        if (b.hasAttribute("data-color")) {
+          update(popId, { color: b.getAttribute("data-color") });
+          pop.querySelectorAll(".dot").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        } else if (b.getAttribute("data-act") === "delete") remove(popId);
+        else if (b.getAttribute("data-act") === "copy") copyQuote(load().items[popId].exact);
+        else if (b.getAttribute("data-act") === "done") closePop();
+      });
+      document.body.appendChild(pop);
+    }
+    popId = id;
+    pop.innerHTML = '<div class="row">' + dots(it.color) + '<span class="sep"></span>' +
+      '<button type="button" data-act="copy" aria-label="Copy quote" title="Copy quote">' + ICON_COPY + "</button>" +
+      '<button type="button" data-act="delete" aria-label="Delete highlight" title="Delete highlight">' + ICON_TRASH + "</button></div>" +
+      '<textarea rows="4" placeholder="Write a note… (saved as you type)" aria-label="Note"></textarea>' +
+      '<div class="hl-foot"><a href="' + ROOT + 'notes/">Notebook</a><button type="button" data-act="done">Done</button></div>';
+    var ta = pop.querySelector("textarea");
+    ta.value = it.note || "";
+    var t = 0;
+    ta.addEventListener("input", function () { var id2 = popId; clearTimeout(t); t = setTimeout(function () { update(id2, { note: ta.value }); }, 350); });
+    ta.addEventListener("blur", function () { if (popId && (load().items[popId] || {}).note !== ta.value) update(popId, { note: ta.value }); });
+    pop.hidden = false;
+    var sheet = window.innerWidth < 600;
+    pop.classList.toggle("sheet", sheet);
+    if (!sheet) {
+      var r = mark.getBoundingClientRect(), w = pop.offsetWidth;
+      var below = r.bottom + 10;
+      var top = below + pop.offsetHeight > window.innerHeight ? r.top - pop.offsetHeight - 10 : below;
+      pop.style.top = (Math.max(70, top) + window.scrollY) + "px";
+      pop.style.left = Math.max(8, Math.min(window.innerWidth - w - 8, r.left)) + window.scrollX + "px";
+    } else { pop.style.top = ""; pop.style.left = ""; }
+    if (focusNote) ta.focus({ preventScroll: true });
+  }
+
+  /* ------------------------------------------------------------ margin notes (wide screens) */
+  var margin = null;
+  function layoutMargin() {
+    if (!article) return;
+    var page = article.closest(".page");
+    if (!margin) {
+      margin = el("aside", "hl-ui mnotes");
+      margin.setAttribute("aria-label", "Your notes");
+      page.appendChild(margin);
+      margin.addEventListener("click", function (e) {
+        var c = e.target.closest("[data-open]");
+        if (c) openPop(c.getAttribute("data-open"), true);
+      });
+    }
+    margin.innerHTML = "";
+    if (getComputedStyle(margin).display === "none") return;
+    var base = margin.getBoundingClientRect().top, floor = 0;
+    live(load()).filter(function (i) { return i.page === pageKey && i.note && i.type !== "page"; })
+      .map(function (i) { var m = document.getElementById("hl-" + i.id); return m ? { i: i, top: m.getBoundingClientRect().top - base } : null; })
+      .filter(Boolean).sort(function (a, b) { return a.top - b.top; })
+      .forEach(function (x) {
+        var c = el("button", "mnote c-" + x.i.color);
+        c.type = "button";
+        c.setAttribute("data-open", x.i.id);
+        c.textContent = x.i.note;
+        var top = Math.max(x.top, floor);
+        c.style.top = top + "px";
+        margin.appendChild(c);
+        floor = top + c.offsetHeight + 10;
+      });
+  }
+
+  /* ------------------------------------------------------------ your notes on this chapter */
+  function pageNotes() {
+    if (!article) return;
+    var box = el("section", "mynotes");
+    box.innerHTML = '<span class="kicker">Your notes</span><h2>In your own words</h2>' +
+      '<p>Summarise the chapter, or write down what you want to remember or question. Saved in this browser as you type.</p>' +
+      '<textarea rows="6" aria-label="Your notes on this chapter" placeholder="What is the main idea? What convinced you, and what didn’t?"></textarea>' +
+      '<p class="hint"><a href="' + ROOT + 'notes/">Open your notebook</a> to see every highlight and note, and to export them.</p>';
+    article.appendChild(box);
+    var ta = box.querySelector("textarea"), id = "page:" + pageKey;
+    var it = load().items[id];
+    ta.value = it && !it.deleted ? it.text || "" : "";
+    var t = 0;
+    ta.addEventListener("input", function () {
+      clearTimeout(t);
+      t = setTimeout(function () {
+        var d = load(), info = pageInfo(), now = Date.now(), cur = d.items[id];
+        d.items[id] = { id: id, type: "page", page: pageKey, pageTitle: info.title, pageLabel: info.label, href: pageKey + ".html",
+          text: ta.value, created: cur && cur.created || now, updated: now };
+        save(d);
+      }, 400);
+    });
+  }
+
+  /* ------------------------------------------------------------ wiring */
+  if (container) {
+    paint();
+    pageNotes();
+    document.addEventListener("selectionchange", onSelection);
+    container.addEventListener("click", function (e) {
+      var m = e.target.closest("mark[data-hl]");
+      if (m && !selectionInContainer()) { e.preventDefault(); openPop(m.getAttribute("data-hl")); }
+    });
+    document.addEventListener("mousedown", function (e) {
+      if (pop && !pop.hidden && !pop.contains(e.target) && !e.target.closest("mark[data-hl], .mnote")) closePop();
+    });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closePop(); hideToolbar(); } });
+    var relayout = 0;
+    var later = function () { clearTimeout(relayout); relayout = setTimeout(layoutMargin, 150); };
+    window.addEventListener("resize", later);
+    if ("ResizeObserver" in window) new ResizeObserver(later).observe(container);
+    window.addEventListener("load", later);
+    var m = location.hash.match(/^#hl-(\w+)/);
+    if (m) {
+      var target = document.getElementById("hl-" + m[1]);
+      if (target) setTimeout(function () {
+        target.scrollIntoView({ block: "center" });
+        document.querySelectorAll('mark[data-hl="' + m[1] + '"]').forEach(function (x) { x.classList.add("pulse"); });
+      }, 300);
+    }
+    // Keep other open tabs in step.
+    window.addEventListener("storage", function (e) {
+      if (e.key !== KEY) return;
+      document.querySelectorAll("mark[data-hl]").forEach(function (x) { unwrap(x.getAttribute("data-hl")); });
+      paint();
+    });
+  }
+
+  /* ------------------------------------------------------------ the notebook page */
+  var book = document.getElementById("notebook");
+  if (book) {
+    var q = document.getElementById("nb-q"), colorSel = "all";
+    function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function when(t) { try { return new Date(t).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }); } catch (e) { return ""; } }
+    function order(a, b) {
+      var ga = /^guide\//.test(a.href) ? 0 : 1, gb = /^guide\//.test(b.href) ? 0 : 1;
+      return ga - gb || String(a.href).localeCompare(String(b.href), undefined, { numeric: true });
+    }
+    function groups(items) {
+      var g = {};
+      items.forEach(function (i) { (g[i.page] = g[i.page] || []).push(i); });
+      return Object.keys(g).map(function (k) { return g[k]; }).sort(function (a, b) { return order(a[0], b[0]); });
+    }
+    function render() {
+      var items = live(load()), term = (q.value || "").trim().toLowerCase();
+      var shown = items.filter(function (i) {
+        if (colorSel !== "all" && (i.type === "page" || i.color !== colorSel)) return false;
+        if (!term) return true;
+        return [i.exact, i.note, i.text, i.pageTitle, i.sectionTitle].join(" ").toLowerCase().indexOf(term) >= 0;
+      });
+      document.getElementById("nb-count").textContent = items.length ?
+        items.filter(function (i) { return i.type !== "page"; }).length + " highlights · " + items.filter(function (i) { return i.note || i.text; }).length + " notes" : "";
+      if (!items.length) {
+        book.innerHTML = '<div class="nb-empty"><h2>Nothing here yet</h2><p>Select any sentence in a chapter or concept page and choose a colour to highlight it, ' +
+          'or <b>Note</b> to write about it. Your highlights and notes collect here.</p><p><a class="btn primary" href="' + ROOT + 'guide/01-what-is-epistemology.html">Start with chapter 1</a></p></div>';
+        return;
+      }
+      if (!shown.length) { book.innerHTML = '<p class="nb-none">No highlights or notes match.</p>'; return; }
+      book.innerHTML = groups(shown).map(function (list) {
+        var head = list[0];
+        var page = list.filter(function (i) { return i.type === "page"; })[0];
+        var hl = list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; });
+        return '<section class="nb-page"><header><span class="kicker">' + esc(head.pageLabel) + '</span><h2><a href="' + ROOT + esc(head.href) + '">' +
+          esc(head.pageTitle) + "</a></h2></header>" +
+          (page && page.text ? '<div class="nb-mine"><span class="kicker">In your own words</span><p>' + esc(page.text).replace(/\n/g, "<br>") + "</p></div>" : "") +
+          hl.map(function (i) {
+            return '<article class="nb-item c-' + esc(i.color) + '"><blockquote>' + esc(i.exact) + "</blockquote>" +
+              (i.note ? '<p class="nb-note">' + esc(i.note).replace(/\n/g, "<br>") + "</p>" : "") +
+              '<footer>' + (i.sectionTitle ? esc(i.sectionTitle) + " · " : "") + when(i.created) +
+              ' · <a href="' + ROOT + esc(i.href) + "#hl-" + esc(i.id) + '">Open in context</a>' +
+              ' · <button type="button" data-del="' + esc(i.id) + '">Delete</button></footer></article>';
+          }).join("") + "</section>";
+      }).join("");
+    }
+    function download(name, type, text) {
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([text], { type: type }));
+      a.download = name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    }
+    function markdown() {
+      var out = ["# My notes on Mastering Epistemology", "", "Exported " + new Date().toLocaleString() + " from " + ROOT, ""];
+      groups(live(load())).forEach(function (list) {
+        out.push("## " + list[0].pageTitle + (list[0].pageLabel ? " (" + list[0].pageLabel + ")" : ""), "", ROOT + list[0].href, "");
+        list.filter(function (i) { return i.type === "page" && i.text; }).forEach(function (i) { out.push("**In my own words:** " + i.text, ""); });
+        var sec = null;
+        list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; }).forEach(function (i) {
+          if (i.sectionTitle && i.sectionTitle !== sec) { sec = i.sectionTitle; out.push("### " + sec, ""); }
+          out.push("> " + i.exact.replace(/\s+/g, " "), "");
+          if (i.note) out.push(i.note, "");
+        });
+      });
+      return out.join("\n");
+    }
+    book.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-del]");
+      if (!b || !confirm("Delete this highlight and its note?")) return;
+      var d = load(); d.items[b.getAttribute("data-del")] = { id: b.getAttribute("data-del"), deleted: true, updated: Date.now() }; save(d);
+    });
+    q.addEventListener("input", render);
+    document.querySelectorAll("[data-filter]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        colorSel = b.getAttribute("data-filter");
+        document.querySelectorAll("[data-filter]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        render();
+      });
+    });
+    document.getElementById("nb-md").onclick = function () { download("epistemology-notes.md", "text/markdown", markdown()); };
+    document.getElementById("nb-json").onclick = function () { download("epistemology-notes.json", "application/json", JSON.stringify(load(), null, 1)); };
+    var file = document.getElementById("nb-file");
+    document.getElementById("nb-import").onclick = function () { file.click(); };
+    file.onchange = function () {
+      var f = file.files[0];
+      if (!f) return;
+      f.text().then(function (txt) {
+        var incoming = JSON.parse(txt);
+        if (!incoming || !incoming.items) throw new Error("not a notes file");
+        save(merge(load(), incoming));
+        alert("Imported. Notes you already had were kept; where both copies had a note, the newer one won.");
+      }).catch(function () { alert("That file doesn't look like an exported notes file (.json)."); });
+      file.value = "";
+    };
+    document.addEventListener("epis:notes", render);
+    window.addEventListener("storage", function (e) { if (e.key === KEY) render(); });
+    render();
+  }
+})();

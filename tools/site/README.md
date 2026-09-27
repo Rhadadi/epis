@@ -95,3 +95,7 @@ All of this runs in the reader's browser and is stored there (`localStorage`):
 - `sw.js` (hand-written, at the site root) is the service worker. Pages, styles and
   scripts come from the network first and from the cache when offline; images and
   fonts come from the cache first; audio is never cached.
+- `assets/notes.js` handles highlights and notes. Each highlight is saved with the
+  quoted words and some text on either side, so it finds its place again after a
+  chapter is edited. `notes/index.html` (the Notebook) lists, searches, exports and
+  imports them. They are kept under the `localStorage` key `epis-notes`.

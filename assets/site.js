@@ -84,20 +84,19 @@
 
   /* ------------------------------------------------------------ contents rail */
   var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[href^='#']"));
-  if (tocLinks.length && "IntersectionObserver" in window) {
+  if (tocLinks.length) {
     var byId = {};
     tocLinks.forEach(function (a) { byId[decodeURIComponent(a.getAttribute("href").slice(1))] = a; });
-    var visible = {};
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting ? e.boundingClientRect.top : undefined; });
-      var heads = Object.keys(byId), current = null;
-      for (var i = 0; i < heads.length; i++) {
-        var el = document.getElementById(heads[i]);
-        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.35) current = heads[i];
-      }
+    var heads = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    var spyQueued = false;
+    var spy = function () {
+      spyQueued = false;
+      var current = null;
+      for (var i = 0; i < heads.length; i++) if (heads[i].getBoundingClientRect().top < window.innerHeight * 0.35) current = heads[i].id;
       tocLinks.forEach(function (a) { a.classList.toggle("on", byId[current] === a); });
-    }, { rootMargin: "0px 0px -60% 0px" });
-    Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+    };
+    window.addEventListener("scroll", function () { if (!spyQueued) { spyQueued = true; requestAnimationFrame(spy); } }, { passive: true });
+    spy();
   }
 
   /* ------------------------------------------------------------ concept language */

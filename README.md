@@ -23,6 +23,8 @@ Other features:
 - Reading settings (text size, spacing, line length, typeface, light, sepia, dark and black themes)
   and a distraction-free focus mode (press F on a chapter)
 - Remembers where you stopped reading, and can save the whole guide for offline reading
+- Highlights and notes: select any passage to highlight it or write a note; the [Notebook](https://rhadadi.github.io/epis/notes/)
+  collects them, with search and export to Markdown or a backup file
 - An [EPUB edition](guide/mastering-epistemology.epub) for e-readers
 - Responsive layout for desktop, tablet and phone
 - Keyboard-friendly controls and reduced-motion support

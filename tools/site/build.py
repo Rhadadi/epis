@@ -87,6 +87,7 @@ def icon(name, cls="icon"):
         "ext": '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
         "focus": '<path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/><path d="M9 9h6M9 12h6M9 15h4"/>',
         "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
+        "pen": '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
     }
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
@@ -343,7 +344,8 @@ def polish(body):
 
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False):
     nav = [("guide", f"{root}guide/", "book", "Guide"), ("concepts", f"{root}concepts/", "grid", "Concepts"),
-           ("map", f"{root}map/", "map", "Map"), ("audio", f"{root}guide/audio/", "phones", "Listen")]
+           ("map", f"{root}map/", "map", "Map"), ("audio", f"{root}guide/audio/", "phones", "Listen"),
+           ("notes", f"{root}notes/", "pen", "Notes")]
     here = ' aria-current="page"'
     links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
                     for key, href, ic, label in nav)
@@ -382,6 +384,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 {body}
 {footer(root)}
 <script src="{root}assets/site.js" defer></script>
+<script src="{root}assets/notes.js" defer></script>
 </body>
 </html>
 """
@@ -1004,6 +1007,26 @@ BASE_404 = ('<script>(function(){var p=location.pathname.split("/"),b="/";'
             'document.write(\'<base href="\'+b+\'">\')})();</script>')
 
 
+def build_notebook(art):
+    root = "../"
+    head = hero(art, "ch18", root, kicker="Your notebook", title="Highlights and notes", cls="band",
+                lede="Everything you have highlighted or written, from every chapter and concept page. "
+                     "It is kept in this browser; export it to keep a copy or to move it to another device.")
+    filters = ""
+    for c in ("all", "yellow", "green", "blue", "pink"):
+        cls = "" if c == "all" else f' class="c-{c}"'
+        filters += (f'<button type="button" data-filter="{c}" aria-pressed="{"true" if c == "all" else "false"}"{cls}>'
+                    f'{"All" if c == "all" else ""}<span class="sr">{c}</span></button>')
+    return (f'{head}<main id="main" class="wrap notebook-page">'
+            f'<div class="nb-tools"><input id="nb-q" type="search" placeholder="Search your notes" aria-label="Search your notes">'
+            f'<div class="nb-filters" role="group" aria-label="Filter by colour">{filters}</div>'
+            f'<div class="nb-actions"><button type="button" id="nb-md">{icon("download")} Markdown</button>'
+            f'<button type="button" id="nb-json">{icon("download")} Backup (.json)</button>'
+            f'<button type="button" id="nb-import">Import backup</button><input id="nb-file" type="file" accept=".json,application/json" hidden></div>'
+            f'<p id="nb-count" class="nb-count"></p></div>'
+            f'<div id="notebook" aria-live="polite"></div></main>')
+
+
 def build_404(art):
     head = hero(art, "cave", "", kicker="Error 404", title="Only shadows here",
                 lede="The page you were looking for isn't on this site. Perhaps it was only ever an appearance.",
@@ -1026,7 +1049,7 @@ def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
     paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
              "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
-             "assets/site.css", "assets/site.js", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
+             "assets/site.css", "assets/site.js", "assets/notes.js", "notes/", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
              "manifest.webmanifest", "assets/icon-192.png"]
     paths += sorted(f"guide/{p.name}" for p in GUIDE.glob("[01][0-9]-*.html"))
     paths += sorted(f"concepts/{p.name}" for p in (ROOT / "concepts").glob("*.html"))
@@ -1257,6 +1280,8 @@ def main():
                                                 hero_img=(art.src("audio", "../../"), art.srcset("audio", "../../")), bar="clear"))
     write(GUIDE / "audio" / "about.html", shell(root="../../", title="How the audio was made", desc="How the narrated audio edition was produced.",
                                                 body=build_audio_about(art, md), current="audio", bar="clear"))
+    write(ROOT / "notes" / "index.html", shell(root="../", title="Notebook", desc="Your highlights and notes.",
+                                               body=build_notebook(art), current="notes", bar="clear"))
     write(ROOT / "credits.html", shell(root="", title="Credits", desc="Credits for the artwork, audio and fonts on this site.",
                                        body=build_credits(art), bar="clear"))
     write(ROOT / "404.html", shell(root="", title="Page not found", desc="Page not found.", body=build_404(art), bar="clear")

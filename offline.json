@@ -13,6 +13,8 @@
 "guide/audio/tracks.js",
 "assets/site.css",
 "assets/site.js",
+"assets/notes.js",
+"notes/",
 "assets/favicon.svg",
 "assets/data/concepts.js",
 "assets/fonts/fonts.css",
