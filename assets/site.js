@@ -46,7 +46,7 @@
       btn.setAttribute("aria-label", "Theme: " + (shade || pref) + ". Switch to " + next + ".");
       btn.title = "Theme: " + (shade || pref);
     }
-    if (persist) { store("epistemology-theme", pref); store("epis-shade", shade); }
+    if (persist) { store("epistemology-theme", pref); store("epis-shade", shade); store("epis-prefs-ts", String(Date.now())); document.dispatchEvent(new Event("epis:prefs")); }
     document.dispatchEvent(new Event("epis:theme"));
   }
   applyTheme(doc.dataset.themePreference || store("epistemology-theme") || "system", false);
@@ -301,6 +301,8 @@
     if (r.width) doc.dataset.width = r.width; else delete doc.dataset.width;
     if (r.font) doc.dataset.font = r.font; else delete doc.dataset.font;
     store("epis-reader", JSON.stringify(r));
+    store("epis-prefs-ts", String(Date.now()));
+    document.dispatchEvent(new Event("epis:prefs"));
   }
   var article = document.querySelector("article[data-slug]");
   var readerBtn = document.getElementById("reader");
@@ -489,6 +491,7 @@
       img: thumb ? new URL(thumb, location.href).href : ""
     };
     store("epis-progress", JSON.stringify(all));
+    document.dispatchEvent(new Event("epis:progress"));
   }
   function progress(e) {
     if (!article) return;

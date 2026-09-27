@@ -146,7 +146,7 @@
     if (!container) return;
     var d = load();
     unplaced = [];
-    live(d).filter(function (i) { return i.page === pageKey && i.type !== "page"; })
+    live(d).filter(function (i) { return i.page === pageKey && (i.type || "highlight") === "highlight"; })
       .sort(function (a, b) { return a.created - b.created; })
       .forEach(function (item) {
         var idx = indexText(container), span = locate(idx, item);
@@ -165,6 +165,7 @@
   }
   var ICON_NOTE = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>';
   var ICON_COPY = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>';
+  var ICON_ASK = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>';
   var ICON_TRASH = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
 
   function hideToolbar() { if (toolbar) toolbar.hidden = true; }
@@ -174,12 +175,19 @@
       toolbar.setAttribute("role", "toolbar");
       toolbar.setAttribute("aria-label", "Highlight");
       toolbar.innerHTML = dots() + '<span class="sep"></span><button type="button" data-act="note">' + ICON_NOTE + "<span>Note</span></button>" +
+        '<button type="button" data-act="explain" title="Ask the study companion">' + ICON_ASK + "<span>Explain</span></button>" +
         '<button type="button" data-act="copy" aria-label="Copy quote">' + ICON_COPY + "</button>";
       toolbar.addEventListener("mousedown", function (e) { e.preventDefault(); });
       toolbar.addEventListener("click", function (e) {
         var b = e.target.closest("button");
         if (!b || !savedRange) return;
         if (b.getAttribute("data-act") === "copy") { copyQuote(savedRange.toString()); hideToolbar(); return; }
+        if (b.getAttribute("data-act") === "explain") {
+          var quote = savedRange.toString();
+          window.getSelection().removeAllRanges(); hideToolbar();
+          if (window.EpisAI) window.EpisAI.explain(quote);
+          return;
+        }
         var item = create(savedRange, b.getAttribute("data-color") || "yellow");
         window.getSelection().removeAllRanges();
         hideToolbar();
@@ -334,7 +342,7 @@
     margin.innerHTML = "";
     if (getComputedStyle(margin).display === "none") return;
     var base = margin.getBoundingClientRect().top, floor = 0;
-    live(load()).filter(function (i) { return i.page === pageKey && i.note && i.type !== "page"; })
+    live(load()).filter(function (i) { return i.page === pageKey && i.note && (i.type || "highlight") === "highlight"; })
       .map(function (i) { var m = document.getElementById("hl-" + i.id); return m ? { i: i, top: m.getBoundingClientRect().top - base } : null; })
       .filter(Boolean).sort(function (a, b) { return a.top - b.top; })
       .forEach(function (x) {
@@ -427,10 +435,10 @@
       var shown = items.filter(function (i) {
         if (colorSel !== "all" && (i.type === "page" || i.color !== colorSel)) return false;
         if (!term) return true;
-        return [i.exact, i.note, i.text, i.pageTitle, i.sectionTitle].join(" ").toLowerCase().indexOf(term) >= 0;
+        return [i.exact, i.note, i.text, i.q, i.a, i.pageTitle, i.sectionTitle].join(" ").toLowerCase().indexOf(term) >= 0;
       });
       document.getElementById("nb-count").textContent = items.length ?
-        items.filter(function (i) { return i.type !== "page"; }).length + " highlights · " + items.filter(function (i) { return i.note || i.text; }).length + " notes" : "";
+        items.filter(function (i) { return (i.type || "highlight") === "highlight"; }).length + " highlights · " + items.filter(function (i) { return i.note || i.text; }).length + " notes" : "";
       if (!items.length) {
         book.innerHTML = '<div class="nb-empty"><h2>Nothing here yet</h2><p>Select any sentence in a chapter or concept page and choose a colour to highlight it, ' +
           'or <b>Note</b> to write about it. Your highlights and notes collect here.</p><p><a class="btn primary" href="' + ROOT + 'guide/01-what-is-epistemology.html">Start with chapter 1</a></p></div>';
@@ -441,10 +449,16 @@
         var head = list[0];
         var page = list.filter(function (i) { return i.type === "page"; })[0];
         var hl = list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; });
+        var answer = function (i) {
+          return '<article class="nb-item nb-ai"><span class="kicker">Study companion</span>' + (i.q ? '<p class="nb-q">' + esc(i.q).replace(/\n/g, "<br>") + "</p>" : "") +
+            '<p class="nb-note">' + esc(i.a).replace(/\n/g, "<br>") + '</p><footer>' + when(i.created) +
+            ' · <button type="button" data-del="' + esc(i.id) + '">Delete</button></footer></article>';
+        };
         return '<section class="nb-page"><header><span class="kicker">' + esc(head.pageLabel) + '</span><h2><a href="' + ROOT + esc(head.href) + '">' +
           esc(head.pageTitle) + "</a></h2></header>" +
           (page && page.text ? '<div class="nb-mine"><span class="kicker">In your own words</span><p>' + esc(page.text).replace(/\n/g, "<br>") + "</p></div>" : "") +
           hl.map(function (i) {
+            if (i.type === "ai") return answer(i);
             return '<article class="nb-item c-' + esc(i.color) + '"><blockquote>' + esc(i.exact) + "</blockquote>" +
               (i.note ? '<p class="nb-note">' + esc(i.note).replace(/\n/g, "<br>") + "</p>" : "") +
               '<footer>' + (i.sectionTitle ? esc(i.sectionTitle) + " · " : "") + when(i.created) +
@@ -467,6 +481,7 @@
         list.filter(function (i) { return i.type === "page" && i.text; }).forEach(function (i) { out.push("**In my own words:** " + i.text, ""); });
         var sec = null;
         list.filter(function (i) { return i.type !== "page"; }).sort(function (a, b) { return a.created - b.created; }).forEach(function (i) {
+          if (i.type === "ai") { out.push("**Asked:** " + (i.q || ""), "", i.a || "", ""); return; }
           if (i.sectionTitle && i.sectionTitle !== sec) { sec = i.sectionTitle; out.push("### " + sec, ""); }
           out.push("> " + i.exact.replace(/\s+/g, " "), "");
           if (i.note) out.push(i.note, "");

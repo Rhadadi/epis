@@ -89,6 +89,8 @@ def icon(name, cls="icon"):
         "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
         "pen": '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
         "search": '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
+        "user": '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+        "chat": '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/>',
     }
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
@@ -346,7 +348,7 @@ def polish(body):
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False):
     nav = [("guide", f"{root}guide/", "book", "Guide"), ("concepts", f"{root}concepts/", "grid", "Concepts"),
            ("map", f"{root}map/", "map", "Map"), ("audio", f"{root}guide/audio/", "phones", "Listen"),
-           ("notes", f"{root}notes/", "pen", "Notes")]
+           ("account", f"{root}account/", "user", "My study")]
     here = ' aria-current="page"'
     links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
                     for key, href, ic, label in nav)
@@ -355,6 +357,8 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
     full_title = title if title == SITE else f"{title} · {SITE}"
     reader_btn = ('<button class="tbtn rbtn" id="reader" type="button" aria-label="Reading settings" title="Reading settings (A)" '
                   'aria-expanded="false" aria-controls="rpanel">Aa</button>') if reader else ""
+    ask_btn = (f'<button class="tbtn" id="ask" type="button" aria-expanded="false" aria-label="Ask the study companion" title="Ask about this page (I)">'
+               f'{icon("chat")}</button>') if reader else ""
     focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="Focus mode" title="Focus mode (F)">'
                  f'{icon("focus")}</button>') if focus else ""
     return f"""<!doctype html>
@@ -380,13 +384,16 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <header class="bar {bar}">
   <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
   <nav aria-label="Site">{links}</nav>
-  <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
+  <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
 </header>
 {body}
 {footer(root)}
 <script src="{root}assets/site.js" defer></script>
 <script src="{root}assets/notes.js" defer></script>
 <script src="{root}assets/learn.js" defer></script>
+<script src="{root}assets/ai-config.js" defer></script>
+<script src="{root}assets/account.js" defer></script>
+<script src="{root}assets/ai.js" defer></script>
 </body>
 </html>
 """
@@ -410,6 +417,7 @@ def footer(root):
       <li><a href="{root}map/">Concept map</a></li>
       <li><a href="{root}concepts/">All 135 concepts</a></li>
       <li><a href="{root}guide/audio/">Audio edition</a></li>
+      <li><a href="{root}account/">My study (sign in)</a></li>
       <li><a href="{root}notes/">Your notebook</a></li>
       <li><a href="{root}review/">Review questions</a></li>
       <li><a href="{REPO}">Source on GitHub</a></li></ul></div>
@@ -1185,6 +1193,26 @@ def deeper_box(ch, C):
             f'<div class="chips">{chips}</div><div class="more">{"".join(links)}</div></section>')
 
 
+def build_account(art):
+    root = "../"
+    head = hero(art, "ch01", root, kicker="My study", title="Your progress, notes and AI companion", cls="band",
+                lede="Sign in with Google to carry everything between your devices, and to use your own Claude or ChatGPT key with the study companion.")
+    return (f'{head}<main id="main" class="wrap account-page"><div id="account">'
+            f'<div data-slot="error"></div>'
+            f'<section class="acc-card"><span class="kicker">Account</span><h2>Sign in</h2><div data-slot="signin"></div></section>'
+            f'<section class="acc-card"><span class="kicker">Your study</span><h2>Where you are</h2><div id="resume"></div>'
+            f'<div class="acc-tiles" data-slot="study"></div></section>'
+            f'<section class="acc-card" id="ai"><span class="kicker">Study companion</span><h2>AI assistant</h2>'
+            f'<p>On every chapter and concept page, the {icon("chat")} button (or the <b>Explain</b> button that appears when you select text) '
+            f'opens a companion that has read the page. It can explain, quiz you, question you Socratically, or argue the other side.</p>'
+            f'<div id="ai-settings"></div></section>'
+            f'<section class="acc-card"><span class="kicker">Your data</span><h2>Export or delete</h2>'
+            f'<p>Everything is stored in this browser and, when you are signed in, in a private app folder in your Google Drive that only this site can open. '
+            f'There is no server of ours.</p><div class="acc-actions"><button type="button" class="btn" data-act="export">{icon("download")} Download everything (.json)</button>'
+            f'<button type="button" class="btn" data-act="wipe">Delete from this browser</button></div></section>'
+            f'</div></main>')
+
+
 def build_review(art):
     root = "../"
     head = hero(art, "ch13", root, kicker="Practice", title="Review questions", cls="band",
@@ -1209,7 +1237,7 @@ def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
     paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
              "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
-             "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "notes/", "review/",
+             "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js", "notes/", "review/", "account/",
              "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
              "manifest.webmanifest", "assets/icon-192.png"]
     paths += sorted(f"guide/{p.name}" for p in GUIDE.glob("[01][0-9]-*.html"))
@@ -1443,7 +1471,7 @@ def main():
     write(GUIDE / "audio" / "about.html", shell(root="../../", title="How the audio was made", desc="How the narrated audio edition was produced.",
                                                 body=build_audio_about(art, md), current="audio", bar="clear"))
     write(ROOT / "notes" / "index.html", shell(root="../", title="Notebook", desc="Your highlights and notes.",
-                                               body=build_notebook(art), current="notes", bar="clear"))
+                                               body=build_notebook(art), current="account", bar="clear"))
     write(ROOT / "credits.html", shell(root="", title="Credits", desc="Credits for the artwork, audio and fonts on this site.",
                                        body=build_credits(art), bar="clear"))
     write(ROOT / "404.html", shell(root="", title="Page not found", desc="Page not found.", body=build_404(art), bar="clear")
@@ -1451,7 +1479,9 @@ def main():
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
 
     write(ROOT / "review" / "index.html", shell(root="../", title="Review questions", desc="Spaced review of the guide's self-check questions.",
-                                                body=build_review(art), current="notes", bar="clear"))
+                                                body=build_review(art), current="account", bar="clear"))
+    write(ROOT / "account" / "index.html", shell(root="../", title="My study", desc="Sign in, sync your notes and progress, and set up the AI study companion.",
+                                                 body=build_account(art), current="account", bar="clear"))
     write_learning_data(C)
     print("offline, epub")
     write(ROOT / "manifest.webmanifest", json.dumps(MANIFEST, indent=2) + "\n")

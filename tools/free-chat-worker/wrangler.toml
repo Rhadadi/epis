@@ -1,0 +1,12 @@
+name = "epis-free-chat"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[ai]
+binding = "AI"
+
+[vars]
+# A Workers AI text model. Check https://developers.cloudflare.com/workers-ai/models/ for current names.
+MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+# Only these sites may use the endpoint (comma-separated, no trailing slash).
+ALLOWED_ORIGINS = "https://rhadadi.github.io,https://epis.duckdns.org"

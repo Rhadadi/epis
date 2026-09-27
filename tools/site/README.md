@@ -104,3 +104,23 @@ All of this runs in the reader's browser and is stored there (`localStorage`):
   self-check answers, and the review page `review/` (questions in
   `assets/data/questions.json`; the schedule is kept under `epis-review`). `build.py`
   links the first mention of each term in a chapter and writes these three files.
+
+## Sign-in, sync and the study companion
+
+- `assets/account.js`: Google sign-in using OAuth 2.0 for client-side apps. Google
+  returns to `oauth-callback.html` with a one-hour access token. The only data
+  permission is `drive.appdata`, a private folder in the reader's own Drive where
+  everything is merged into one file, `epis-sync.json`. The client ID is at the top
+  of the file; there is no client secret anywhere, and none is needed.
+  Google Cloud setup (project `rumiai-507316`): enable the Google Drive API; on the
+  OAuth consent screen, add the scopes `openid`, `email`, `profile` and
+  `.../auth/drive.appdata`, and add readers as test users while the app is in
+  testing; the OAuth client needs the JavaScript origin `https://rhadadi.github.io`
+  and the redirect URI `https://rhadadi.github.io/epis/oauth-callback.html` (add the
+  same two for any other address the site is served from, over HTTPS).
+- `assets/ai.js`: the chat panel. With the reader's own key it calls the Anthropic
+  Messages API or any OpenAI-compatible chat API directly from the browser,
+  streaming, with the page text as (cached) context. Without a key it uses the free
+  endpoint in `assets/ai-config.js`, or hands the question to the free ChatGPT or
+  Claude website. `tools/free-chat-worker/` is an optional free endpoint on
+  Cloudflare Workers AI.

@@ -29,6 +29,11 @@ Other features:
 - Key terms in the chapters show their definition on hover; search (press /) covers chapters, glossary and concepts
 - Self-check questions you can mark "Got it" or "Not yet", with a [review page](https://rhadadi.github.io/epis/review/)
   that brings them back on a spaced schedule
+- **My study** ([/account/](https://rhadadi.github.io/epis/account/)): sign in with Google to sync progress, notes,
+  the review deck, settings and AI keys through a private app folder in your own Google Drive (no server)
+- A study companion on every chapter and concept page: chat about the page, or select text and press
+  **Explain**. With your own Claude or ChatGPT key it answers on the page; without one it prepares the
+  question for the free ChatGPT or Claude website (or uses a free endpoint, see `tools/free-chat-worker/`)
 - Responsive layout for desktop, tablet and phone
 - Keyboard-friendly controls and reduced-motion support
 - Self-hosted fonts and no third-party requests, so the site also works offline
