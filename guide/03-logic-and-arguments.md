@@ -2,6 +2,8 @@
 
 [← Previous: A History of the Theory of Knowledge](02-history-of-epistemology.md) · [Contents](README.md) · [Next: Language, Concepts, and Definitions →](04-language-concepts-and-definitions.md)
 
+**Audio:** [listen to this chapter](audio/03-logic-and-arguments.mp3) (49 min, narrated) · [open in the player](audio/index.html#03)
+
 ---
 
 > "Contrariwise, if it was so, it might be; and if it were so, it would be; but as it isn't, it ain't. That's logic."

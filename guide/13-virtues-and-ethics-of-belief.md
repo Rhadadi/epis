@@ -2,6 +2,8 @@
 
 [← Previous: Social Epistemology](12-social-epistemology.md) · [Contents](README.md) · [Next: The Psychology of Reasoning →](14-psychology-of-reasoning.md)
 
+**Audio:** [listen to this chapter](audio/13-virtues-and-ethics-of-belief.mp3) (47 min, narrated) · [open in the player](audio/index.html#13)
+
 ---
 
 > "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence."

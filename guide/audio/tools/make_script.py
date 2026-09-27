@@ -117,7 +117,7 @@ def say_numbers(t):
     t = re.sub(NUM + r"\s?(°C|°F|kg|km|cm|mm|mph|ms|m/s|m)(?![\w/])",
                lambda m: cardinal(m.group(1)) + " " + UNITS[m.group(2)], t)
     t = re.sub(r"(\d+)\s?°", lambda m: cardinal(m.group(1)) + " degrees", t)
-    t = re.sub(r"(?<=\bat )(\d{1,2}):(\d{2})\b",
+    t = re.sub(r"(?<![\d.:])\b([01]?\d|2[0-3]):([0-5]\d)\b(?![.:]\d)",  # clock times: 9:15, 2:00
                lambda m: words(int(m.group(1))) + " " + ("o'clock" if m.group(2) == "00" else
                ("oh " + words(int(m.group(2))) if m.group(2)[0] == "0" else words(int(m.group(2))))), t)
     t = re.sub(r"\b(1\d|20)(\d0)s\s?[–-]\s?(\d0)s\b", lambda m: m.group(1) + m.group(2) + "s to "
@@ -126,7 +126,7 @@ def say_numbers(t):
     t = re.sub(r"\b([1-9]0)s\b", lambda m: (words(int(m.group(1))) + "s").replace("ys", "ies"), t)
     t = re.sub(r"\b(\d+)(?:st|nd|rd|th)\s?[–-]\s?(\d+)(st|nd|rd|th)\b",
                lambda m: m.group(1) + m.group(3) + " to " + m.group(2) + m.group(3), t)
-    t = re.sub(r"(?<![\w.:])" + NUM + r"\s?:\s?" + NUM + r"(?![\w.:])",
+    t = re.sub(r"(?<![\w.:])" + NUM + r"\s?:\s?" + NUM + r"(?![\w:]|\.\d)",
                lambda m: f"{cardinal(m.group(1))} to {cardinal(m.group(2))}", t)  # odds, ratios
     t = re.sub(r"\b(\d+)(st|nd|rd|th)\b", lambda m: words(int(m.group(1)), to="ordinal"), t)
     t = re.sub(r"(?<![\d.])(\d+)/(\d+)(?![\d.])", lambda m: fraction(m.group(1), m.group(2)), t)

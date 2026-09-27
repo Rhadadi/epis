@@ -80,7 +80,7 @@ Contemporary discussion puts the skeptical argument in a particularly clean form
 If S knows that p, and S knows that p entails q, then S knows that q — or is in a position to know q.
 @pause 0.3
 A more careful version, due to Timothy Williamson and John Hawthorne: if you know p, and you competently deduce q from p, thereby coming to believe q while retaining your knowledge of p, then you know q.
-Closure seems obviously correct: deduction is a way of extending knowledge. If you know the train leaves at nine fifteen and you know it takes twenty minutes to reach the station, you can know you must leave by eight: fifty-five.
+Closure seems obviously correct: deduction is a way of extending knowledge. If you know the train leaves at nine fifteen and you know it takes twenty minutes to reach the station, you can know you must leave by eight fifty-five.
 Now the argument.
 @item One. I don't know that I am not a, handless, brain in a vat.
 @item Two. If I know that I have hands, then I know that I am not a handless brain in a vat. By closure: having hands entails not being a handless brain in a vat.

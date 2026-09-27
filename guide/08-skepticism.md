@@ -2,6 +2,8 @@
 
 [← Previous: The Sources of Knowledge](07-sources-of-knowledge.md) · [Contents](README.md) · [Next: Induction, Probability, and Bayesian Reasoning →](09-induction-probability-bayes.md)
 
+**Audio:** [listen to this chapter](audio/08-skepticism.mp3) (54 min, narrated) · [open in the player](audio/index.html#08)
+
 ---
 
 > "If you tried to doubt everything you would not get as far as doubting anything. The game of doubting itself presupposes certainty."

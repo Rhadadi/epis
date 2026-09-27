@@ -2,6 +2,8 @@
 
 [Contents](README.md) · [Next: A History of the Theory of Knowledge →](02-history-of-epistemology.md)
 
+**Audio:** [listen to this chapter](audio/01-what-is-epistemology.mp3) (35 min, narrated) · [open in the player](audio/index.html#01)
+
 ---
 
 > "All men by nature desire to know."

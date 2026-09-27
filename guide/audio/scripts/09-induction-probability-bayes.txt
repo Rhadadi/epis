@@ -138,13 +138,13 @@ Gigerenzer and Ulrich Hoffrage showed that people reason much better when the sa
 @pause 0.3
 Practical rule: whenever you face a problem of this kind, translate probabilities into counts of people, or cases, out of a round number. It makes the structure obvious.
 @subsection The odds form and likelihood ratios
-Bayes' theorem has a simpler form using odds instead of probabilities. Odds are the ratio of the probability that something is true to the probability that it is false: a probability of point two is odds of point two to point eight, or one: four.
+Bayes' theorem has a simpler form using odds instead of probabilities. Odds are the ratio of the probability that something is true to the probability that it is false: a probability of point two is odds of point two to point eight, or one to four.
 @pause 0.3
 @aside Posterior odds equals Prior odds times Likelihood ratio.
 @aside where the likelihood ratio, or Bayes factor, equals the probability of E given H divided by the probability of E given not H.
 @pause 0.3
 In the mammography example.
-@item Prior odds equals one: ninety-nine.
+@item Prior odds equals one to ninety-nine.
 @item Likelihood ratio equals point nine zero divided by point zero nine equals ten.
 @item Posterior odds equals ten to ninety-nine, which is a probability of ten out of one hundred nine approximately nine point two percent.
 The odds form reveals the two things that matter, separately.
@@ -211,7 +211,7 @@ People tend to ignore the prior probability, base rate, and focus on the specifi
 @aside A cab was involved in a hit-and-run accident at night. Two cab companies operate in the city: eighty-five percent of cabs are Green and fifteen percent are Blue. A witness identified the cab as Blue. Tested under similar conditions, the witness correctly identifies each color eighty percent of the time. What is the probability that the cab was Blue?
 @pause 0.3
 Most people answer eighty percent. The correct answer.
-@item Prior odds Blue: Green equals fifteen: eighty-five.
+@item Prior odds, blue to green, are fifteen to eighty-five.
 @item Likelihood ratio equals point eight divided by point two equals four.
 @item Posterior odds equals sixty to eighty-five, a probability of sixty out of one hundred forty-five approximately forty-one percent.
 It is more likely that the cab was Green, despite the witness. In natural frequencies: of one hundred cabs, fifteen are Blue, and the witness calls twelve of them Blue; eighty-five are Green, and the witness calls seventeen of them Blue. Of the twenty-nine cabs called Blue, only twelve are.

@@ -2,6 +2,8 @@
 
 [← Previous: A Field Guide to Fallacies](15-fallacies.md) · [Contents](README.md) · [Next: Glossary →](17-glossary.md)
 
+**Audio:** [listen to this chapter](audio/16-critical-thinking-toolkit.mp3) (1 h 1 min, narrated) · [open in the player](audio/index.html#16)
+
 ---
 
 > "You should attempt to re-express your target's position so clearly, vividly, and fairly that your target says, 'Thanks, I wish I'd thought of putting it that way.'"

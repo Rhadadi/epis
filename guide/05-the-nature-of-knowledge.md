@@ -2,6 +2,8 @@
 
 [← Previous: Language, Concepts, and Definitions](04-language-concepts-and-definitions.md) · [Contents](README.md) · [Next: Justification →](06-justification.md)
 
+**Audio:** [listen to this chapter](audio/05-the-nature-of-knowledge.mp3) (56 min, narrated) · [open in the player](audio/index.html#05)
+
 ---
 
 > "True opinions are a fine thing and do all sorts of good so long as they stay in their place, but they will not stay long. They run away from a man's mind; so they are not worth much until you tether them by working out the reason."

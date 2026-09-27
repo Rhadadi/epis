@@ -2,6 +2,8 @@
 
 [← Previous: Logic and the Anatomy of Arguments](03-logic-and-arguments.md) · [Contents](README.md) · [Next: What Is Knowledge? →](05-the-nature-of-knowledge.md)
 
+**Audio:** [listen to this chapter](audio/04-language-concepts-and-definitions.mp3) (46 min, narrated) · [open in the player](audio/index.html#04)
+
 ---
 
 > "Philosophy is a battle against the bewitchment of our intelligence by means of language."

@@ -2,6 +2,8 @@
 
 [← Previous: The Psychology of Reasoning](14-psychology-of-reasoning.md) · [Contents](README.md) · [Next: The Critical Thinker's Toolkit →](16-critical-thinking-toolkit.md)
 
+**Audio:** [listen to this chapter](audio/15-fallacies.mp3) (57 min, narrated) · [open in the player](audio/index.html#15)
+
 ---
 
 > "It would be a very good thing if every trick could receive some short and obviously appropriate name, so that when a man used this or that particular trick, he could be at once reproached for it."

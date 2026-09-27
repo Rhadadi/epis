@@ -2,6 +2,8 @@
 
 [← Previous: Skepticism and Its Answers](08-skepticism.md) · [Contents](README.md) · [Next: Science, Evidence, and Explanation →](10-science-and-evidence.md)
 
+**Audio:** [listen to this chapter](audio/09-induction-probability-bayes.mp3) (1 h 5 min, narrated) · [open in the player](audio/index.html#09)
+
 ---
 
 > "A wise man, therefore, proportions his belief to the evidence."

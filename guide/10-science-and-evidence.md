@@ -2,6 +2,8 @@
 
 [← Previous: Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.md) · [Contents](README.md) · [Next: Truth, Relativism, and Objectivity →](11-truth-and-relativism.md)
 
+**Audio:** [listen to this chapter](audio/10-science-and-evidence.mp3) (1 h 6 min, narrated) · [open in the player](audio/index.html#10)
+
 ---
 
 > "The first principle is that you must not fool yourself—and you are the easiest person to fool."

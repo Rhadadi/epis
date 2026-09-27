@@ -23,6 +23,7 @@
   a { color: var(--accent); }
   .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
   .now { position: sticky; top: 0; z-index: 2; margin-bottom: 20px; box-shadow: 0 4px 16px rgb(0 0 0 / 6%); }
+  @media (max-width: 600px) { .now { position: static; } }
   .now h2 { font-size: 1.15rem; margin: 0 0 2px; }
   .now .section { color: var(--muted); font-size: .95rem; min-height: 1.5em; }
   audio { width: 100%; margin: 10px 0 8px; }

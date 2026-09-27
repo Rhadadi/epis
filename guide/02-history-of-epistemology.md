@@ -2,6 +2,8 @@
 
 [← Previous: What Is Epistemology?](01-what-is-epistemology.md) · [Contents](README.md) · [Next: Logic and the Anatomy of Arguments →](03-logic-and-arguments.md)
 
+**Audio:** [listen to this chapter](audio/02-history-of-epistemology.mp3) (1 h 11 min, narrated) · [open in the player](audio/index.html#02)
+
 ---
 
 > "The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato."

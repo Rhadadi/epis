@@ -2,6 +2,8 @@
 
 [← Previous: Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.md) · [Contents](README.md) · [Next: A Field Guide to Fallacies →](15-fallacies.md)
 
+**Audio:** [listen to this chapter](audio/14-psychology-of-reasoning.mp3) (59 min, narrated) · [open in the player](audio/index.html#14)
+
 ---
 
 > "The human understanding when it has once adopted an opinion ... draws all things else to support and agree with it."

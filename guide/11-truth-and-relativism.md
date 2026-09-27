@@ -2,6 +2,8 @@
 
 [← Previous: Science, Evidence, and Explanation](10-science-and-evidence.md) · [Contents](README.md) · [Next: Social Epistemology →](12-social-epistemology.md)
 
+**Audio:** [listen to this chapter](audio/11-truth-and-relativism.mp3) (41 min, narrated) · [open in the player](audio/index.html#11)
+
 ---
 
 > "To say of what is that it is not, or of what is not that it is, is false, while to say of what is that it is, and of what is not that it is not, is true."
