@@ -26,6 +26,9 @@ Other features:
 - Highlights and notes: select any passage to highlight it or write a note; the [Notebook](https://rhadadi.github.io/epis/notes/)
   collects them, with search and export to Markdown or a backup file
 - An [EPUB edition](guide/mastering-epistemology.epub) for e-readers
+- Key terms in the chapters show their definition on hover; search (press /) covers chapters, glossary and concepts
+- Self-check questions you can mark "Got it" or "Not yet", with a [review page](https://rhadadi.github.io/epis/review/)
+  that brings them back on a spaced schedule
 - Responsive layout for desktop, tablet and phone
 - Keyboard-friendly controls and reduced-motion support
 - Self-hosted fonts and no third-party requests, so the site also works offline

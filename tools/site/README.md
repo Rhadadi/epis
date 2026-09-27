@@ -99,3 +99,8 @@ All of this runs in the reader's browser and is stored there (`localStorage`):
   quoted words and some text on either side, so it finds its place again after a
   chapter is edited. `notes/index.html` (the Notebook) lists, searches, exports and
   imports them. They are kept under the `localStorage` key `epis-notes`.
+- `assets/learn.js` adds the term cards (from `assets/data/terms.json`: the glossary plus the
+  concepts), search (`assets/data/search.json`), the "Got it / Not yet" buttons under
+  self-check answers, and the review page `review/` (questions in
+  `assets/data/questions.json`; the schedule is kept under `epis-review`). `build.py`
+  links the first mention of each term in a chapter and writes these three files.

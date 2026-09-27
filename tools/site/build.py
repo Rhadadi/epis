@@ -88,6 +88,7 @@ def icon(name, cls="icon"):
         "focus": '<path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/><path d="M9 9h6M9 12h6M9 15h4"/>',
         "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
         "pen": '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
+        "search": '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
     }
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>'
 
@@ -379,12 +380,13 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <header class="bar {bar}">
   <a class="brand" href="{root}" aria-label="{SITE}, home">{LOGO}<span><b>{SITE}</b><small>Guide · Map · Audio</small></span></a>
   <nav aria-label="Site">{links}</nav>
-  {focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
+  <button class="tbtn" id="search" type="button" aria-label="Search the guide" title="Search (/)">{icon("search")}</button>{focus_btn}{reader_btn}<button class="tbtn" id="theme" type="button" aria-label="Theme"></button>
 </header>
 {body}
 {footer(root)}
 <script src="{root}assets/site.js" defer></script>
 <script src="{root}assets/notes.js" defer></script>
+<script src="{root}assets/learn.js" defer></script>
 </body>
 </html>
 """
@@ -408,6 +410,8 @@ def footer(root):
       <li><a href="{root}map/">Concept map</a></li>
       <li><a href="{root}concepts/">All 135 concepts</a></li>
       <li><a href="{root}guide/audio/">Audio edition</a></li>
+      <li><a href="{root}notes/">Your notebook</a></li>
+      <li><a href="{root}review/">Review questions</a></li>
       <li><a href="{REPO}">Source on GitHub</a></li></ul></div>
   </div>
 </footer>"""
@@ -528,7 +532,7 @@ def match_audio(ch, heads):
     return {h[1]: s["start"] for h, s in zip(h2, secs)}
 
 
-def build_chapter(ch, chapters, md, art, svgs_later):
+def build_chapter(ch, chapters, md, art, svgs_later, C):
     root = "../"
     text, epigraphs = split_epigraphs(ch.text)
     body_md = clean_chapter_markdown(text)
@@ -547,6 +551,13 @@ def build_chapter(ch, chapters, md, art, svgs_later):
     if ch.num == 17:
         body = re.sub(r'<h2 id="([a-z])"><span class="ht">([A-Z])</span></h2>', r'<h2 id="\1" class="glossary-letter">\2</h2>', body)
     body = re.sub(r"^<p>", '<p class="lede">', body, count=1)
+    if ch.num <= 16:
+        body = link_terms(body)
+    else:
+        body = re.sub(r"<p><strong>(.+?)\.</strong>",
+                      lambda m: (f'<p id="{LEARN["glossary_ids"][html.unescape(strip_tags(m.group(1)))]}" class="gterm"><strong>{m.group(1)}.</strong>'
+                                 if html.unescape(strip_tags(m.group(1))) in LEARN["glossary_ids"] else m.group(0)), body)
+    collect_sections(ch, body)
 
     more_quotes = "".join(
         f'<blockquote class="quote"><p>{md.inline(q)}</p><span class="by">— {md.inline(c)}</span></blockquote>'
@@ -590,7 +601,7 @@ def build_chapter(ch, chapters, md, art, svgs_later):
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="In this chapter">'
             f'<span class="kicker">In this chapter</span><ol>{toc}</ol></nav></aside>'
             f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{listen_card}<details class="mini-toc"><summary>In this chapter</summary><ol>{toc}</ol></details>'
-            f'<div class="prose">{more_quotes}{body}</div></article></main>{pager}')
+            f'<div class="prose">{more_quotes}{body}</div>{deeper_box(ch, C) if ch.num <= 16 else ""}</article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
     svgs_later.append((GUIDE / ch.href, page, root, ch, desc))
 
@@ -1034,6 +1045,155 @@ def build_404(art):
     return f'<main id="main">{head}</main>'
 
 
+# ----------------------------------------------------------------------------- terms, search and questions
+
+# Everyday words that are glossary terms too; linking every mention of them would be noise.
+TERM_SKIP = {"acceptance", "ambiguity", "analytic", "anchoring", "argument", "belief", "contingent", "crux", "deduction",
+             "evidence", "epistemology", "fallacy", "heuristic", "induction", "justification", "normative", "open-mindedness",
+             "overconfidence", "paradigm", "proposition", "safety", "sensitivity", "skepticism", "synthetic", "testimony",
+             "tracking", "truth", "understanding", "vagueness", "validity", "soundness", "warrant", "memory", "perception",
+             "introspection", "calibration", "reason", "knowledge", "confounding"}
+LEARN = {"terms": {}, "forms": {}, "regex": None, "deeper": {}, "search": [], "questions": [], "glossary_ids": {}}
+
+
+def plain_inline(md, text):
+    return html.unescape(strip_tags(md.inline(text)))
+
+
+def prepare_learning(md, C, chapters):
+    """Collect the glossary and the concepts into one set of terms, and decide which concepts each chapter covers."""
+    terms, seen = {}, {}
+    text = (GUIDE / "17-glossary.md").read_text(encoding="utf-8")
+    for m in re.finditer(r"^\*\*(.+?)\.\*\*\s*(.*)$", text, re.M):
+        term, rest = m.group(1), m.group(2)
+        definition, _, where = rest.partition("→")
+        link = re.search(r"\[([^\]]+)\]\((\d\d-[\w-]+)\.md(#[\w-]*)?\)", where)
+        name = plain_inline(md, term)
+        gid = "g-" + github_slug(name, seen)
+        LEARN["glossary_ids"][name] = gid
+        terms[gid] = {"id": gid, "t": name, "d": re.sub(r"</?a\b[^>]*>", "", md.inline(definition.strip())),
+                      "g": f"guide/17-glossary.html#{gid}",
+                      "s": f"guide/{link.group(2)}.html{link.group(3) or ''}" if link else "", "sl": link.group(1) if link else ""}
+    norm = lambda t: re.sub(r"^the\s+", "", re.sub(r"\s*\(.*?\)", "", t.lower().replace("’", "'"))).strip()
+    by_name = {norm(v["t"]): k for k, v in terms.items()}
+    idx = guide_heading_index(chapters, md)
+    deeper = {}
+    for cid, n in C.N.items():
+        if cid == "root" or cid in BRANCH_CHAPTER:
+            continue
+        branch = C.branch(cid)
+        sec = best_section(C.title(cid), BRANCH_CHAPTER.get(branch, 1), idx)
+        num = sec[0] if sec else BRANCH_CHAPTER.get(branch, 1)
+        deeper.setdefault(num, []).append(cid)
+        where = f"guide/{chapters[sec[0]].href}#{sec[1]}" if sec else ""
+        key = by_name.get(norm(C.title(cid))) or by_name.get(re.sub(r"s$", "", norm(C.title(cid))))
+        if key:
+            terms[key].update(c=cid, f=C.title(cid, "fa"))
+            terms[key]["s"] = terms[key]["s"] or where
+        elif not C.title(cid).endswith("?"):
+            tid = "c-" + cid
+            terms[tid] = {"id": tid, "t": C.title(cid), "f": C.title(cid, "fa"), "d": C.line(cid), "c": cid, "s": where,
+                          "sl": f"Ch. {sec[0]}" if sec else ""}
+            by_name[norm(C.title(cid))] = tid
+    forms = {}
+    for tid, v in terms.items():
+        f = norm(v["t"])
+        if len(f) < 4 or f in TERM_SKIP or " vs " in f or "≠" in f:
+            continue
+        forms.setdefault(f, tid)
+    LEARN.update(terms=terms, forms=forms, deeper=deeper)
+    alts = sorted(forms, key=len, reverse=True)
+    pattern = "|".join(re.escape(a).replace("'", "['’]") for a in alts)
+    LEARN["regex"] = re.compile(r"(?<![\w-])(?:" + pattern + r")(?:e?s)?(?![\w-])", re.I)
+
+
+SKIP_TAGS = {"a", "h1", "h2", "h3", "h4", "h5", "h6", "code", "pre", "summary", "button", "figure", "svg", "script", "style", "blockquote"}
+
+
+def link_terms(body):
+    """Link the first mention of each glossary term or concept in a chapter to its definition."""
+    used, depth = set(), 0
+    forms = LEARN["forms"]
+
+    def repl(m):
+        found = m.group(0).lower().replace("’", "'")
+        tid = forms.get(found) or forms.get(re.sub(r"e?s$", "", found)) or forms.get(found[:-1])
+        if not tid or tid in used:
+            return m.group(0)
+        used.add(tid)
+        t = LEARN["terms"][tid]
+        href = f"../concepts/{t['c']}.html" if t.get("c") else f"17-glossary.html#{tid}"
+        return f'<a class="term" href="{href}" data-term="{tid}">{m.group(0)}</a>'
+    out = []
+    for part in re.split(r"(<[^>]+>)", body):
+        if part.startswith("<"):
+            tag = re.match(r"</?\s*([a-zA-Z0-9]+)", part)
+            if tag and tag.group(1).lower() in SKIP_TAGS and not part.endswith("/>"):
+                depth += -1 if part.startswith("</") else 1
+            out.append(part)
+        else:
+            out.append(LEARN["regex"].sub(repl, part) if depth == 0 and part.strip() else part)
+    return "".join(out)
+
+
+def collect_sections(ch, body):
+    """Search entries for a chapter's sections, and its self-check questions."""
+    LEARN["search"].append({"k": "ch", "t": ch.title, "c": ch.label, "u": f"guide/{ch.href}", "x": html.unescape(strip_tags(ch.blurb.replace("*", "")))})
+    for chunk in re.split(r'(?=<h2 id=")', body):
+        m = re.match(r'<h2 id="([^"]+)"[^>]*>(.*?)</h2>', chunk, re.S)
+        if not m:
+            continue
+        title = html.unescape(strip_tags(re.sub(r"<button.*?</button>", "", m.group(2), flags=re.S)))
+        text = html.unescape(strip_tags(re.sub(r"<button.*?</button>", "", chunk[m.end():], flags=re.S)))
+        LEARN["search"].append({"k": "s", "t": title, "c": f"{ch.label}: {ch.title}", "u": f"guide/{ch.href}#{m.group(1)}", "x": text})
+        if '<p class="q">' in chunk:
+            for q in re.finditer(r'<p class="q"><span class="n">(\d+)</span>(.*?)</p>\s*((?:(?!<p class="q">).)*?)<details>\s*<summary>.*?</summary>(.*?)</details>',
+                                 chunk, re.S):
+                LEARN["questions"].append({"id": f"{ch.slug}-q{q.group(1)}", "n": int(q.group(1)), "ch": ch.num, "label": ch.label,
+                                           "title": ch.title, "u": f"guide/{ch.href}#{m.group(1)}", "sec": title,
+                                           "q": q.group(2) + q.group(3), "a": q.group(4).strip()})
+
+
+def write_learning_data(C):
+    terms = {k: {kk: vv for kk, vv in v.items() if vv} for k, v in LEARN["terms"].items()}
+    write(ASSETS / "data" / "terms.json", json.dumps(terms, ensure_ascii=False, separators=(",", ":")))
+    search = list(LEARN["search"])
+    for v in LEARN["terms"].values():
+        if v["id"].startswith("g-"):
+            search.append({"k": "g", "t": v["t"], "u": v["g"], "x": html.unescape(strip_tags(v["d"]))})
+    for cid in C.N:
+        if cid == "root":
+            continue
+        search.append({"k": "c", "t": C.title(cid), "f": C.title(cid, "fa"), "u": f"concepts/{cid}.html",
+                       "x": html.unescape(strip_tags(C.line(cid))), "y": html.unescape(strip_tags(C.line(cid, "fa")))})
+    write(ASSETS / "data" / "search.json", json.dumps(search, ensure_ascii=False, separators=(",", ":")))
+    write(ASSETS / "data" / "questions.json", json.dumps(LEARN["questions"], ensure_ascii=False, separators=(",", ":")))
+
+
+def deeper_box(ch, C):
+    ids = LEARN["deeper"].get(ch.num, [])
+    branch = next((b for b, n in BRANCH_CHAPTER.items() if n == ch.num), None)
+    if not ids and not branch:
+        return ""
+    chips = "".join(f'<a href="../concepts/{cid}.html" data-term="{attr(next((k for k, v in LEARN["terms"].items() if v.get("c") == cid), ""))}">'
+                    f'{esc(C.title(cid))}</a>' for cid in ids)
+    links = [f'<a href="../map/#{branch}">{icon("map")} Explore this part of the concept map</a>'] if branch else []
+    if any(q["ch"] == ch.num for q in LEARN["questions"]):
+        links.append(f'<a href="../review/#{ch.slug}">{icon("clock")} Practise this chapter\'s questions</a>')
+    return (f'<section class="deeper"><span class="kicker">Go deeper</span><h2>Concepts from this chapter</h2>'
+            f'<p>Each has its own page with the key idea, objections and replies, common mistakes, and a self-check, in English and Persian.</p>'
+            f'<div class="chips">{chips}</div><div class="more">{"".join(links)}</div></section>')
+
+
+def build_review(art):
+    root = "../"
+    head = hero(art, "ch13", root, kicker="Practice", title="Review questions", cls="band",
+                lede="The self-check questions from every chapter, brought back just before you are likely to forget them. "
+                     "Answer honestly: questions you get right come back later and later; the ones you miss come back tomorrow.")
+    return (f'{head}<main id="main" class="wrap review-page"><div id="review" aria-live="polite">'
+            f'<p class="nb-none">Loading questions…</p></div></main>')
+
+
 # ----------------------------------------------------------------------------- offline, app manifest, EPUB
 
 MANIFEST = {
@@ -1049,7 +1209,8 @@ def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
     paths = ["", "index.html", "guide/", "guide/index.html", "concepts/", "map/", "map/index.html", "credits.html",
              "guide/audio/", "guide/audio/index.html", "guide/audio/about.html", "guide/audio/tracks.js",
-             "assets/site.css", "assets/site.js", "assets/notes.js", "notes/", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
+             "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "notes/", "review/",
+             "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json", "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css",
              "manifest.webmanifest", "assets/icon-192.png"]
     paths += sorted(f"guide/{p.name}" for p in GUIDE.glob("[01][0-9]-*.html"))
     paths += sorted(f"concepts/{p.name}" for p in (ROOT / "concepts").glob("*.html"))
@@ -1252,8 +1413,9 @@ def main():
 
     print("guide")
     later = []
+    prepare_learning(md, C, chapters)
     for ch in chapters.values():
-        build_chapter(ch, chapters, md, art, later)
+        build_chapter(ch, chapters, md, art, later, C)
     guide_index = build_guide_index(art, chapters, md, total_label)
     home = build_home(art, chapters, md, total_label, len(C.N))
     svgs = render_mermaid(md)
@@ -1288,6 +1450,9 @@ def main():
           .replace("<meta charset=\"utf-8\">", "<meta charset=\"utf-8\">\n" + BASE_404, 1))
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
 
+    write(ROOT / "review" / "index.html", shell(root="../", title="Review questions", desc="Spaced review of the guide's self-check questions.",
+                                                body=build_review(art), current="notes", bar="clear"))
+    write_learning_data(C)
     print("offline, epub")
     write(ROOT / "manifest.webmanifest", json.dumps(MANIFEST, indent=2) + "\n")
     write(ROOT / "offline.json", json.dumps(build_offline_list(), indent=0) + "\n")
