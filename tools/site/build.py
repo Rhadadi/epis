@@ -86,6 +86,10 @@ def home(root):
     return root + ("fa/" if LANG == "fa" else "")
 
 
+def mmss(seconds):
+    return f"{int(seconds // 60)}:{int(seconds % 60):02d}"
+
+
 def map_url(root, frag=""):
     """The concept map (shared by both languages), opened in the language being built."""
     return f"{root}map/" + ("?lang=fa" if LANG == "fa" else "") + (f"#{frag}" if frag else "")
@@ -730,7 +734,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                 return titles.get(s["start"]) or ("پایان و آزمونک" if s["title"].startswith("End of chapter") else s["title"])
             return s["title"]
         sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
-        chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{int(s["s"] // 60)}:{int(s["s"] % 60):02d}</small></button>'
+        chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{num(mmss(s["s"]))}</small></button>'
                         for s in sections)
         listen_card = (f'<section class="listen" data-audio="{root}guide/audio/{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
                        f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
