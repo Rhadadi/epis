@@ -1,0 +1,29 @@
+{
+  "_about": "Header artwork for the site. Each entry names Wikipedia articles (tried in order) whose lead image is the work, or a Wikimedia Commons file. tools/site/fetch_art.py downloads them into assets/art/ and records credits; the Fetch artwork workflow runs it on GitHub when this file changes.",
+  "images": {
+    "home":  {"wiki": ["Wanderer above the Sea of Fog"]},
+    "guide": {"wiki": ["The Astronomer (Vermeer)"]},
+    "map":   {"wiki": ["Harmonia Macrocosmica"]},
+    "audio": {"wiki": ["His Master's Voice"]},
+    "ch01":  {"wiki": ["The Geographer"]},
+    "ch02":  {"wiki": ["The Death of Socrates"]},
+    "ch03":  {"wiki": ["The Anatomy Lesson of Dr. Nicolaes Tulp"]},
+    "ch04":  {"wiki": ["The Tower of Babel (Bruegel)"]},
+    "ch05":  {"wiki": ["Melencolia I"]},
+    "ch06":  {"wiki": ["Imaginary Prisons", "Carceri d'invenzione"]},
+    "ch07":  {"wiki": ["Arnolfini Portrait"]},
+    "ch08":  {"wiki": ["The Incredulity of Saint Thomas (Caravaggio)"]},
+    "ch09":  {"wiki": ["Impression, Sunrise"]},
+    "ch10":  {"wiki": ["An Experiment on a Bird in the Air Pump"]},
+    "ch11":  {"wiki": ["Earthrise"]},
+    "ch12":  {"wiki": ["The School of Athens"]},
+    "ch13":  {"wiki": ["The Storm on the Sea of Galilee"]},
+    "ch14":  {"wiki": ["The Sleep of Reason Produces Monsters"]},
+    "ch15":  {"wiki": ["The Cheat with the Ace of Diamonds"]},
+    "ch16":  {"wiki": ["The Ambassadors (Holbein)"]},
+    "ch17":  {"wiki": ["The Librarian (Arcimboldo)", "The Librarian (painting)", "Giuseppe Arcimboldo"]},
+    "ch18":  {"wiki": ["The Bookworm (Spitzweg)", "The Bookworm (painting)", "Carl Spitzweg"]},
+    "elephant": {"wiki": ["Blind men and an elephant"]},
+    "cave":  {"wiki": ["Allegory of the cave"]}
+  }
+}
