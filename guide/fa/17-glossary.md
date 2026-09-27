@@ -380,7 +380,7 @@
 
 **معرفت‌شناسیِ لولا (Hinge epistemology).** این دیدگاه، برگرفته از *در بابِ یقین*ِ ویتگنشتاین، که بعضی گزاره‌ها پیش‌فرضِ هر پژوهشی‌اند و خودشان موضوعِ شک یا شاهد نیستند. → [فصل ۸](08-skepticism.md#hinge-epistemology)
 
-**معرفت‌شناسیِ معرفت‌ـ‌نخست (Knowledge-first epistemology).** دیدگاهِ ویلیامسون که معرفت پایه و تحلیل‌ناپذیر است و باور، شاهد و توجیه را توضیح می‌دهد. → [فصل ۵](05-the-nature-of-knowledge.md#knowledge-first)
+**معرفت‌شناسیِ معرفت‌نخست (Knowledge-first epistemology).** دیدگاهِ ویلیامسون که معرفت پایه و تحلیل‌ناپذیر است و باور، شاهد و توجیه را توضیح می‌دهد. → [فصل ۵](05-the-nature-of-knowledge.md#knowledge-first)
 
 **مغالطه (Fallacy).** الگوی رایجی از استدلالِ بد که قانع‌کننده به نظر می‌رسد. → [فصل ۱۵](15-fallacies.md#how-to-use-this-field-guide)
 

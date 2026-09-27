@@ -85,7 +85,7 @@
 | چالشِ گتیه | [مسئلهٔ گتیه](05-the-nature-of-knowledge.md#the-gettier-problem)؛ [بی مقدمهٔ نادرست](05-the-nature-of-knowledge.md#no-false-lemmas) |
 | نظریهٔ علّیِ معرفت | [نظریهٔ علّی](05-the-nature-of-knowledge.md#the-causal-theory)؛ [وثاقت‌گرایی](05-the-nature-of-knowledge.md#reliabilism) |
 | راهِ فراری نیست؟ | [گریزناپذیریِ مسئله‌های گتیه](05-the-nature-of-knowledge.md#the-inescapability-of-gettier-problems) |
-| آیا اصلاً می‌شود دانستن را تحلیل کرد؟ (معرفت‌ـ‌نخست؛ موردهای گتیهٔ باستانی) | [معرفت‌ـ‌نخست](05-the-nature-of-knowledge.md#knowledge-first)؛ [معرفت‌شناسی در هند](02-history-of-epistemology.md#epistemology-in-india) |
+| آیا اصلاً می‌شود دانستن را تحلیل کرد؟ (معرفت‌نخست؛ موردهای گتیهٔ باستانی) | [معرفت‌نخست](05-the-nature-of-knowledge.md#knowledge-first)؛ [معرفت‌شناسی در هند](02-history-of-epistemology.md#epistemology-in-india) |
 | **۵. درون‌گرایی و برون‌گرایی** (Internalism and externalism) | |
 | زاویهٔ دیدِ اول‌شخص | [درون‌گرایی و برون‌گرایی](06-justification.md#internalism-and-externalism) |
 | نظریهٔ ردگیریِ نوزیک | [حساسیت و ردگیری](05-the-nature-of-knowledge.md#sensitivity-and-tracking) |
