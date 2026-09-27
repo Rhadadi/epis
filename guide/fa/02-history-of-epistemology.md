@@ -550,7 +550,7 @@
 **سنت‌های غیرغربی**
 - Jonardon Ganeri, *Philosophy in Classical India* (Routledge, 2001).
 - Stephen Phillips, "Epistemology in Classical Indian Philosophy," *Stanford Encyclopedia of Philosophy*.
-- Mehdi Ha'iri Yazdi, *The Principles of Epistemology in Islamic Philosophy: Knowledge by Presence* (SUNY Press, 1992). اصلِ فارسیِ این اثر از مهدی حائری یزدی با عنوانِ «علمِ حضوری» شناخته می‌شود.
+- Mehdi Ha'iri Yazdi, *The Principles of Epistemology in Islamic Philosophy: Knowledge by Presence* (SUNY Press, 1992). شرحی به زبانِ فلسفهٔ تحلیلی از علمِ حضوری، به قلمِ مهدی حائری یزدی.
 - Al-Ghazālī, *Deliverance from Error*، ترجمهٔ R. J. McCarthy. متنِ اصلی: *المنقذ من الضلال*.
 - Bryan Van Norden, *Introduction to Classical Chinese Philosophy* (Hackett, 2011).
 
