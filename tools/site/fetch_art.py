@@ -95,7 +95,8 @@ def main():
 
 
 def fetch_one(key, spec, credits):
-    candidates = [(spec["file"], None)] if spec.get("file") else []
+    files = spec.get("file") or []
+    candidates = [(f, None) for f in ([files] if isinstance(files, str) else files)]
     for title in spec.get("wiki", []):
         found = lead_image(title)
         if found:
