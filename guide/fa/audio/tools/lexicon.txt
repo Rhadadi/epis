@@ -1,421 +1,64 @@
-# Pronunciation fixes for the Persian narration.
+# Spoken forms for the Persian narration.
 #
-# One entry per line: the word, a tab, and its pronunciation in IPA between
-# slashes. Only the sounds of Persian may be used: a e ɑ i o u, b p t d k ɡ q ʔ
-# f v s z ʃ ʒ x h tʃ dʒ m n l r j, and ˈ before the stressed syllable.
+# One entry per line: the word or phrase as it appears in a script, a tab, and
+# what the voice should say instead. Matching ignores case for Latin script.
 #
-# A single Persian word is compiled into espeak-ng's Persian dictionary, so the
-# fix also reaches the word with suffixes and the ezafe (گتیه، گتیه‌ای، گتیهٔ).
-# Latin-script terms, and Persian compounds written with a space or ZWNJ, are
-# replaced by the given phonemes wherever they appear exactly as written.
-#
-# Latin-script words that are not listed here are said with espeak-ng's English
-# pronunciation, mapped to the nearest Persian sounds.
+# Latin, German, French and Greek expressions are written here in Persian
+# letters, with vowel marks where they help, so that the Iranian voice says them
+# the way an Iranian reader would. English terms are left to the voice itself.
+# To fix any other word the voice gets wrong, add it here with a respelling
+# (for example with vowel marks: گتیه → گِتیه).
 
-# --- Names
-
-گتیه	/ɡetˈije/
-دانستن	/dɑnˈestan/
-
-# --- Terms in Latin script, as an Iranian reader says them
-
-a priori	/ɑ priˈori/
-a posteriori	/ɑ posteriˈori/
-ad hoc	/ɑd hˈɑk/
-ad misericordiam	/ɑd mizerikˈordiɑm/
-adaequatio rei et intellectus	/ɑdekvˈɑtio rˈei et intelˈektus/
-adverbialism	/advˈerbiɑlizm/
-aitias logismos	/ajtˈiɑs loɡˈizmos/
-Analysis	/anˈalisis/
-anti-intellectualism	/ˌantiintelˈektʃuɑlizm/
-argumentum ad antiquitatem	/ɑrɡumˈentum ɑd ɑntikvitˈɑtem/
-argumentum ad consequentiam	/ɑrɡumˈentum ɑd konsekvˈentiɑm/
-argumentum ad ignorantiam	/ɑrɡumˈentum ɑd iɡnorˈɑntiɑm/
-argumentum ad nauseam	/ɑrɡumˈentum ɑd nˈozeɑm/
-argumentum ad novitatem	/ɑrɡumˈentum ɑd novitˈɑtem/
-argumentum ad populum	/ɑrɡumˈentum ɑd pˈopulum/
-argumentum ad verecundiam	/ɑrɡumˈentum ɑd verekˈundiɑm/
-Bedeutung	/bedˈojtunɡ/
-cogito	/kˈoɡito/
-Conspiracy theories	/kɑnspˈiresi tˈioriz/
-connaître	/konˈetr/
-cum hoc ergo propter hoc	/kum hˈɑk ˈerɡo prˈopter hˈɑk/
-CUDOS	/kˈudos/
-cynicism	/sˈinisizm/
-de dicto	/de dˈikto/
-de re	/de rˈe/
-dicto simpliciter	/dˈikto simplˈisiter/
-dispositional	/dispozˈiʃenɑl/
-donc je suis	/donk ʒe sˈui/
-dysphemism	/dˈisfemizm/
-elenchus	/elˈenkus/
-enthymeme	/ˈentimim/
-epistemology	/epistemˈɑlodʒi/
-ergo sum	/ˈerɡo sˈum/
-Erkenntnistheorie	/erkˈentnisteoˌri/
-esse est percipi	/ˈesse ˈest pˈerkipi/
-euphemism	/jˈufemizm/
-ex ante	/eks ˈɑnte/
-ex falso quodlibet	/eks fˈɑlso kvˈodlibet/
-ex post	/eks pˈost/
-foundherentism	/fɑundhˈirentizm/
-genius malignus	/ˈɡenius mɑlˈiɡnus/
-HARKing	/hˈɑrkinɡ/
-IARPA	/ɑjˈɑrpɑ/
-intellectualism	/intelˈektʃuɑlizm/
-je pense	/ʒe pˈɑns/
-Kialo	/kiˈɑlo/
-La neige est blanche	/lɑ nˈeʒ e blˈɑnʃ/
-modus ponens	/mˈodus pˈonens/
-modus tollens	/mˈodus tˈollens/
-monotonic	/monotˈɑnik/
-Myth of the Given	/mˈis ov de ɡˈiven/
-nihil est in intellectu quod non sit prius in sensu	/nˈihil ˈest in intelˈektu kvod non sit prˈius in sˈensu/
-OPERA	/ˈopera/
-perspectivism	/perspˈektivizm/
-petitio principii	/petˈitio prinsˈipii/
-phantasia katalēptikē	/fɑntɑzˈiɑ kɑtɑleptiˈke/
-pithanon	/pitɑˈnon/
-post hoc ergo propter hoc	/post hˈɑk ˈerɡo prˈopter hˈɑk/
-pramā	/prɑmˈɑ/
-prima facie	/prˈimɑ fˈɑsie/
-principle of charity	/prˈinsipel ov tʃˈeriti/
-prototype theory	/prˈototɑjp tˈiori/
-Que sais-je	/ke sˈeʒ/
-Rationale	/rɑʃenˈɑl/
-rebuttal	/ribˈɑtɑl/
-reductio ad absurdum	/redˈuktio ɑd absˈurdum/
-reductio ad Hitlerum	/redˈuktio ɑd hitlˈerum/
-reliabilism	/rilˈɑjabilizm/
-Sapere aude	/sˈɑpere ˈɑude/
-savoir	/sɑvuˈɑr/
-sensus divinitatis	/sˈensus divinitˈɑtis/
-si fallor	/si fˈɑllor/
-sine qua non	/sˈine kvɑ nˈon/
-Sinn	/zˈin/
-stasis	/stˈɑsis/
-steelmanning	/stˈilmaninɡ/
-sum	/sˈum/
-supervenes	/supervˈinz/
-tu quoque	/tu kvˈokve/
-veritism	/vˈeritizm/
-warrant	/vˈɑrent/
-whataboutism	/vɑtebˈɑutizm/
-
-# --- Persian words espeak-ng misreads
-
-نظریه	/nazariˈje/
-فرضیه	/farziˈje/
-قضیه	/qaziˈje/
-پایه	/pɑˈje/
-آزمون	/ɑzˈmun/
-تغییر	/taqˈjir/
-تبیین	/tabˈjin/
-تبیینی	/tabjiˈni/
-تعیین	/taʔˈjin/
-تأمل	/taʔamˈmol/
-تأملی	/taʔammoˈli/
-اولیه	/avvaliˈje/
-ابداکشن	/abdɑkˈʃen/
-ایدئالیسم	/ideʔɑˈlism/
-پراگماتیسم	/prɑɡmɑˈtism/
-پیرونیسم	/piroˈnism/
-موریسم	/muˈrism/
-نوموریسم	/nomuˈrism/
-فیزیکالیسم	/fizikɑˈlism/
-کوگیتو	/koɡiˈto/
-اپیستمه	/episteˈme/
-لوگوس	/loˈɡos/
-دوکسا	/dokˈsɑ/
-اپوخه	/epoˈxe/
-آتاراکسیا	/ɑtɑrɑkˈsiɑ/
-ایسوستنیا	/isostenˈiɑ/
-آپوریا	/ɑpoˈriɑ/
-فرونسیس	/froneˈsis/
-تخنه	/texˈne/
-آپولوژی	/ɑpoloˈʒi/
-پرامانا	/prɑmɑˈnɑ/
-پراماناها	/prɑmɑnɑˈhɑ/
-پراماناهای	/prɑmɑnɑˈhɑje/
-پرامانایی	/prɑmɑnɑˈji/
-توتولوژی	/totoloˈʒi/
-صددرصد	/saddarˈsad/
-جست‌وجو	/dʒostoˈdʒu/
-جست‌وجوی	/dʒostoˈdʒuje/
-حمل‌ونقل	/hamloˈnaql/
-سیاه‌وسفید	/sijɑhoseˈfid/
-نااقلیدسی	/nɑʔoqliˈdosi/
-فرااستقرای	/farɑʔesteqˈrɑje/
-ترومپ	/toˈrump/
-کالریک	/kɑloˈrik/
-فلوژیستون	/floʒisˈton/
-
-# --- Names
-
-آبرامسون	/ɑbrɑmˈson/
-آدلر	/ɑdˈler/
-آرکسیلائوس	/ɑrkesilɑˈʔos/
-آرنت	/ɑˈrent/
-آرنو	/ɑrˈno/
-آرنیو	/ɑrˈnio/
-آرونسون	/ɑronˈson/
-آزولی	/ɑzoˈli/
-آستانه	/ɑstɑˈne/
-آگوستین	/ɑɡusˈtin/
-آگوستن	/ɑɡusˈten/
-آلدر	/ɑlˈder/
-آلستون	/ɑlesˈton/
-آلفانو	/ɑlfɑˈno/
-آلوی	/ɑloˈj/
-آنسلم	/ɑnˈselm/
-آنگر	/ɑnˈɡer/
-آئودی	/ɑʔuˈdi/
-آیر	/ɑˈjer/
-آینسیدموس	/ɑjnesiˈdemus/
-اپیمنیدس	/epimeˈnides/
-اتوس	/eˈtos/
-ادینگتون	/edinɡˈton/
-اسپربر	/esperˈber/
-استاپل	/estɑˈpel/
-استانوویچ	/estɑnoˈvitʃ/
-استراترن	/estrɑˈtern/
-استراسن	/estrɑˈsen/
-استراود	/estˈrɑud/
-استرجن	/esterˈdʒen/
-استرونز	/estˈrons/
-استوارت	/estuˈɑrt/
-اسلوویک	/esloˈvik/
-اسلومن	/eslˈomen/
-اسنایدر	/esnɑˈjder/
-اسنودن	/esnoˈden/
-اسونسون	/esvenˈson/
-امپیریکوس	/empiriˈkus/
-اندل	/enˈdel/
-اوبرین	/obˈrin/
-اوربن	/urˈben/
-اورسکس	/oresˈkes/
-اوکام	/oˈkɑm/
-اوترکوری	/otrekuˈri/
-اوثوفرون	/usufˈron/
-اولریک	/olˈrik/
-اولریش	/olˈriʃ/
-اولسون	/olˈson/
-اونیل	/oˈnil/
-ائوبولیدس	/eʔuboˈlides/
-ایگناتس	/iɡˈnɑts/
-اینواگن	/inˈvɑɡen/
-ایوانز	/iˈvɑnz/
-بارتلت	/bɑrˈtlet/
-بارتلی	/bɑrtˈli/
-بارکلی	/bɑrkˈli/
-بارنوم	/bɑrˈnum/
-براندولینی	/brɑndoliˈni/
-برنیز	/berˈnejz/
-برادفورد	/brɑdˈford/
-بروشه	/broˈʃe/
-بروکنر	/brukˈner/
-بریث‌ویت	/brejsˈvejt/
-بریر	/breˈjer/
-بلارمینو	/belɑrmiˈno/
-بلکستون	/blaksˈton/
-بلنتاین	/balenˈtɑjn/
-بلنشارد	/blanˈʃɑrd/
-بلیک	/bleˈjk/
-بئر	/beˈʔer/
-بوستروم	/bostˈrom/
-باستروم	/bɑstˈrom/
-بوغوسیان	/boqosiˈɑn/
-بولینجر	/bolinˈdʒer/
-بونجور	/bonˈdʒur/
-بونفرونی	/bonferoˈni/
-بونگه	/bunˈɡe/
-بویکاف	/bojˈkɑf/
-بویوئی	/bojoˈʔi/
-بیرته	/bejrˈte/
-تاجفل	/tɑdʒˈfel/
-تارسکی	/tɑrsˈki/
-تامس	/tɑˈmas/
-تانزینی	/tɑnziˈni/
-تتلاک	/tetˈlɑk/
-تئتتوس	/teʔeteˈtus/
-توپینو	/topiˈno/
-تورسکی	/tversˈki/
-تولمین	/tulˈmin/
-تولوینگ	/tolˈvinɡ/
-توماسلو	/tomɑseˈlo/
-جاشوا	/dʒɑʃuˈɑ/
-جونز	/dʒonz/
-جیسن	/dʒejˈsen/
-چالمرز	/tʃɑlˈmerz/
-چسترتون	/tʃesterˈton/
-چیخوتسکا	/tʃixotsˈkɑ/
-چیکشولوب	/tʃikʃoˈlub/
-درتسکی	/dretsˈki/
-درشوویتز	/derʃoˈvits/
-دروزنین	/drozˈnin/
-دریفوس	/drejˈfus/
-دمستس	/demˈsets/
-دنت	/deˈnet/
-دوئم	/duˈʔem/
-دوبوردیو	/doburˈdio/
-دوکاس	/duˈkɑs/
-دیتلم	/ditˈlem/
-دیگناگه	/diɡnɑˈɡe/
-دیوگنس	/dioɡˈnes/
-دیویدسن	/devidˈson/
-رادنر	/rɑdˈner/
-رایشنباخ	/rɑjʃenˈbɑx/
-رایفلر	/rɑjˈfler/
-رایل	/rɑjl/
-رورتی	/rorˈti/
-روزنبیک	/rozenˈbik/
-روزنبلیت	/rozenˈblit/
-روزنستیل	/rozenesˈtil/
-ریکن	/riˈken/
-زاگزبسکی	/zɑɡzebsˈki/
-زملوایس	/zemelˈvɑjs/
-ژیناک	/ʒiˈnɑk/
-سانستاین	/sɑnesˈtɑjn/
-سانخورخو	/sɑnxorˈxo/
-ساوانت	/sɑˈvɑnt/
-ساوت‌وارک	/sɑusˈvɑrk/
-سبون	/seˈbon/
-سکستوس	/seksˈtus/
-سلارز	/seˈlɑrz/
-سلنیکر	/selˈniker/
-سندرز	/sanˈderz/
-سوریتس	/soˈrites/
-سوکال	/soˈkɑl/
-سوینبرن	/svinˈbern/
-سیترون	/sitˈron/
-سیسرو	/siseˈro/
-سیگن	/sejˈɡan/
-سیمپسون	/simpˈson/
-شاکتر	/ʃɑkˈter/
-شرودر	/ʃroˈder/
-شرودینگر	/ʃrodinˈɡer/
-شورویکی	/ʃuroˈviki/
-شوتسگبل	/ʃotsˈɡebel/
-فانتل	/fɑnˈtel/
-فایرابند	/fɑjerɑˈbend/
-فرگه	/freˈɡe/
-فرنباخ	/fernˈbɑx/
-فرنل	/freˈnel/
-فریکر	/friˈker/
-فستینگر	/festinˈɡer/
-فسفروس	/fosfoˈros/
-فلدمن	/feldˈman/
-فلو	/flu/
-فلیوبیرگ	/flivˈbjerɡ/
-فوگلین	/foɡeˈlin/
-فورر	/foˈrer/
-فینتی	/fineˈti/
-کارنئادس	/kɑrneʔɑˈdes/
-کاسموس	/kɑsˈmos/
-کانویشر	/kɑnviˈʃer/
-کایبرگ	/kɑjˈberɡ/
-کرامول	/krɑmˈvel/
-کروگر	/kruˈɡer/
-کریپکی	/kripˈki/
-کریسپین	/krisˈpin/
-کریستنسن	/kristenˈsen/
-کریگ	/kreɡ/
-کسنوفانس	/ksenofɑˈnes/
-کلیفورد	/kliˈford/
-کلیمن	/kleˈjman/
-کمرر	/kaˈmerer/
-کواین	/koˈvɑjn/
-کوپرنیک	/koperˈnik/
-کوپرنیکی	/koperniˈki/
-کورنبلیث	/kornˈblis/
-کوندا	/kunˈdɑ/
-کونویگ	/konˈviɡ/
-کوهن	/kuhn/
-کیتیونی	/kitijoˈni/
-کیچر	/kiˈtʃer/
-گازانیگا	/ɡɑzɑniˈɡɑ/
-گالیسون	/ɡɑliˈson/
-گتیه‌ای	/ɡetijeˈʔi/
-گرکو	/ɡreˈko/
-گلدمن	/ɡoldˈman/
-گلفرت	/ɡelˈfert/
-گنتزکاو	/ɡentsˈkɑv/
-گودمن	/ɡudˈman/
-گونیلوی	/ɡoniloˈj/
-گیگرنزر	/ɡiɡerenˈtser/
-گیلوویچ	/ɡiloˈvitʃ/
-لاپوشانی	/lɑpuʃɑˈni/
-لاودن	/lɑuˈdan/
-لاووازیه	/lɑvuɑzˈje/
-لرر	/leˈrer/
-لباچفسکی	/lobɑtʃefsˈki/
-لووریه	/loverˈje/
-لیپتن	/lipˈten/
-لیپتون	/lipˈton/
-لیفتون	/lifˈton/
-لیلینفلد	/lilienˈfeld/
-مارموتیه	/mɑrmutˈje/
-ماسگریو	/mɑsˈɡrejv/
-مک‌گراث	/makˈɡras/
-منون	/meˈnon/
-موسوایلر	/musvɑjˈler/
-مونتنی	/monteˈni/
-نویرات	/nojˈrɑt/
-نیایا	/njɑˈjɑ/
-نیایای	/njɑjɑˈje/
-نیسبت	/nisˈbet/
-نیگل	/niˈɡel/
-نیکرسون	/nikerˈson/
-نیکوماخوس	/nikoˈmɑxos/
-واسرستاین	/vɑserˈstɑjn/
-واسون	/vɑˈson/
-والونه	/vɑloˈne/
-ولترستورف	/voltersˈtorf/
-ولوخ	/voˈlox/
-وگنر	/veɡeˈner/
-ویتگنشتاین	/vitɡenʃˈtɑjn/
-ویتگنشتاینی	/vitɡenʃtɑjˈni/
-ویرژبیتسکا	/virʒbitsˈkɑ/
-ویکستد	/viksˈted/
-ویگرهه‌ویاورتنی	/viɡrahe vjɑvartaˈni/
-هاثورن	/hɑˈsorn/
-هاراوی	/hɑrɑˈvi/
-هارمن	/hɑrˈman/
-هاردویگ	/hɑrdˈviɡ/
-هسپروس	/hespeˈros/
-هشر	/haˈʃer/
-همپل	/hemˈpel/
-هنلن	/henˈlon/
-هوفراگه	/hofrɑˈɡe/
-هیومر	/hjuˈmer/
-هیرونیمی	/hieroniˈmi/
-یوانیدیس	/joɑniˈdis/
-یودکوفسکی	/judkofsˈki/
-یوزپ	/joˈzep/
-یوهانسون	/johɑnˈson/
-پاتنم	/pɑtˈnam/
-پارمنیدس	/pɑrmeˈnides/
-پاریزر	/pɑriˈzer/
-پاولینگ	/pɑˈlinɡ/
-پرایر	/prɑˈjer/
-پروتاگوراس	/protɑɡoˈrɑs/
-پرلموتر	/perlˈmuter/
-پرونین	/proˈnin/
-پریچارد	/priˈtʃɑrd/
-پسیلوس	/pesiˈlos/
-پشیبیلسکی	/pʃebilsˈki/
-پکسون	/pakˈson/
-پلنتینگا	/plantinˈɡɑ/
-پنی‌کوک	/peniˈkuk/
-پوپر	/poˈper/
-پیترز	/piˈterz/
-پیرون	/piˈron/
-ککوله	/kekuˈle/
-ویلیام	/viljˈɑm/
-ویلیامسون	/viljɑmˈson/
-مانتی	/mɑnˈti/
-فریر	/feriˈer/
-فرانک	/ferˈɑnk/
-نیوتن	/nijuˈton/
-اینشتین	/ajnʃˈtajn/
-ضد	/zˈedd/
+a posteriori	آ پُستریوری
+a priori	آ پریوری
+ad hoc	اَد هاک
+ad misericordiam	اَد میزِریکوردیام
+adaequatio rei et intellectus	آدِکواتیو رِئی اِت اینتِلِکتوس
+aitias logismos	آیتیاس لوگیزموس
+argumentum ad antiquitatem	آرگومِنتوم اَد آنتیکویتاتِم
+argumentum ad consequentiam	آرگومِنتوم اَد کُنسِکوِنتیام
+argumentum ad ignorantiam	آرگومِنتوم اَد ایگنورانتیام
+argumentum ad nauseam	آرگومِنتوم اَد نوزِئام
+argumentum ad novitatem	آرگومِنتوم اَد نُویتاتِم
+argumentum ad populum	آرگومِنتوم اَد پوپولوم
+argumentum ad verecundiam	آرگومِنتوم اَد وِرِکوندیام
+Bedeutung	بِدویتونگ
+cogito	کُگیتو
+connaître	کُنِتر
+cum hoc ergo propter hoc	کوم هاک اِرگو پروپتِر هاک
+de dicto	دِ دیکتو
+de re	دِ رِ
+dicto simpliciter	دیکتو سیمپلیسیتِر
+donc je suis	دُنک ژِ سوئی
+elenchus	اِلِنکوس
+ergo sum	اِرگو سوم
+Erkenntnistheorie	اِرکِنتنیس‌تئوری
+esse est percipi	اِسه اِست پِرکیپی
+ex ante	اِکس آنته
+ex falso quodlibet	اِکس فالسو کوودلیبِت
+ex post	اِکس پُست
+genius malignus	گِنیوس مالیگنوس
+je pense	ژِ پانس
+kennen	کِنِن
+La neige est blanche	لا نِژ اِ بلانش
+modus ponens	مودوس پونِنس
+modus tollens	مودوس تولِنس
+nihil est in intellectu quod non sit prius in sensu	نیهیل اِست این اینتِلِکتو کوود نُن سیت پریوس این سِنسو
+petitio principii	پِتیتیو پرینسیپیی
+phantasia katalēptikē	فانتازیا کاتالِپتیکه
+pithanon	پیتانون
+post hoc ergo propter hoc	پُست هاک اِرگو پروپتِر هاک
+pramā	پراما
+prima facie	پریما فاسیه
+Que sais-je	کِ سِژ
+reductio ad absurdum	رِدوکتیو اَد اَبسوردوم
+reductio ad Hitlerum	رِدوکتیو اَد هیتلِروم
+Sapere aude	ساپِره آوده
+savoir	ساوُوار
+sensus divinitatis	سِنسوس دیوینیتاتیس
+si fallor	سی فالور
+sine qua non	سینه کوا نُن
+Sinn	زین
+sum	سوم
+tu quoque	تو کووُکوه
+wissen	ویسِن

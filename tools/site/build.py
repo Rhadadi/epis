@@ -1284,7 +1284,7 @@ def build_audio_page(art, chapters, tracks):
             f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
             + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
-                fa_audio('روایت با صداهای ساختگیِ فارسی، با مدل‌های متن‌به‌گفتارِ متن‌باز، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
+                fa_audio('روایت با صدای ساختگیِ «فرید» از Azure AI Speech مایکروسافت، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
                          'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
                          'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. ')
                 + '<a href="about.html">صوت چگونه ساخته شد</a>. '
@@ -1358,12 +1358,8 @@ def build_credits(art):
 
 
 FA_VOICES_CREDIT = (
-    'نسخهٔ صوتیِ فارسی با صداهای ساختگی روایت شده است: راوی صدای «گنجی (ادبی)» است و در گفت‌وگوها صدای «گنجی» هم می‌آید، '
-    'از صداهای فارسیِ <a href="https://github.com/rhasspy/piper">Piper</a> که با داده‌های '
-    '<a href="https://tts.datacula.com/">Datacula</a> (مالکیت عمومی، CC0) آموزش دیده‌اند؛ نقل‌قول‌ها را صدای «خدیجه» می‌خواند، '
-    'مدلی از نوعِ <a href="https://github.com/shivammehta25/Matcha-TTS">Matcha-TTS</a> ساختهٔ علی محمودی که با '
-    '<a href="https://github.com/k2-fsa/sherpa-onnx">sherpa-onnx</a> منتشر شده است. تلفظ با '
-    '<a href="https://github.com/espeak-ng/espeak-ng">eSpeak NG</a> و واژه‌نامه‌ای از اصلاح‌ها ساخته می‌شود. ')
+    'نسخهٔ صوتیِ فارسی را صدای ساختگیِ «فرید» (fa-IR-FaridNeural) از سرویسِ '
+    '<a href="https://learn.microsoft.com/azure/ai-services/speech-service/">Azure AI Speech</a>ِ مایکروسافت روایت کرده است. ')
 
 
 BASE_404 = ('<script>(function(){var p=location.pathname.split("/"),b="/";'
