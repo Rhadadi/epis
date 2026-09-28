@@ -64,8 +64,9 @@ PARTS_FA = {"I": ("یکم", "بنیادها"), "II": ("دوم", "هستهٔ مع
 
 # The site is built twice: in English at the root, and in Persian under fa/. LANG says which.
 LANG = "en"
-# Whether the Persian edition has its own narration (guide/fa/audio/tracks.js). Without it,
-# Persian pages play the English narration and say so.
+# The chapters that have Persian narration (guide/fa/audio/tracks.js), by number, and whether
+# there are any. Persian pages of the other chapters play the English narration and say so.
+FA_TRACKS = {}
 FA_AUDIO = False
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
@@ -89,14 +90,29 @@ def home(root):
     return root + ("fa/" if LANG == "fa" else "")
 
 
-def audio_dir(root):
-    """Folder of the MP3s for the language being built, from the site root."""
-    return f"{root}guide/fa/audio/" if LANG == "fa" and FA_AUDIO else f"{root}guide/audio/"
+def audio_dir(root, track=None):
+    """Folder of a track's MP3, from the site root: the Persian narration's or the English one's."""
+    return f"{root}guide/fa/audio/" if LANG == "fa" and track and track.get("fa") else f"{root}guide/audio/"
 
 
-def fa_audio(native, english):
-    """Persian wording for the audio: one text when the narration is Persian, another when it is English."""
-    return native if FA_AUDIO else english
+def fa_audio(native, english, partial=None):
+    """Persian wording about the whole audio edition: when every chapter has Persian narration,
+    when none has, and (partial, defaulting to native) while some chapters have it."""
+    if len(FA_TRACKS) >= 16:
+        return native
+    if FA_TRACKS:
+        return native if partial is None else partial
+    return english
+
+
+def fa_voice(ch):
+    """Whether this chapter's page plays Persian narration."""
+    return LANG == "fa" and bool(ch.track) and bool(ch.track.get("fa"))
+
+
+def ch_audio(ch, native, english):
+    """Persian wording about one chapter's audio: Persian narration or English."""
+    return native if fa_voice(ch) else english
 
 
 def mmss(seconds):
@@ -526,7 +542,7 @@ def footer(root):
       <p>{L("A complete guide to knowledge, evidence, and critical thinking, with a bilingual concept map and a narrated audio edition.",
             "راهنمایی کامل دربارهٔ معرفت، شواهد و تفکر نقادانه، با نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی.")}</p>
       <p>{L(f'Artwork: public domain, via Wikimedia Commons (<a href="{h}credits.html">credits</a>). The narration uses a synthetic voice.',
-            f'آثار هنری: مالکیت عمومی، از ویکی‌انبار (<a href="{h}credits.html">منابع</a>). روایت صوتی با صدای ساختگی و به زبان {fa_audio("فارسی", "انگلیسی")} است.')}</p>
+            f'آثار هنری: مالکیت عمومی، از ویکی‌انبار (<a href="{h}credits.html">منابع</a>). روایت صوتی با صدای ساختگی و به زبان {fa_audio("فارسی", "انگلیسی", "فارسی است؛ فصل‌هایی که صدای فارسی‌شان هنوز آماده نیست به انگلیسی روایت می‌شوند")}{fa_audio(" است", " است", "")}.')}</p>
     </div>
     <div><h3>{L("Read", "خواندن")}</h3><ul>
       <li><a href="{h}guide/">{L("Contents", "فهرست مطالب")}</a></li>
@@ -697,7 +713,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
         for h in heads:
             FA_HEADS[(ch.num, h[1])] = h[2]
     body = polish(body)
-    if LANG == "fa" and FA_AUDIO:
+    if fa_voice(ch):
         at = match_audio(ch, heads)  # the Persian narration follows the Persian headings
     else:
         at = match_audio(EN_CHAPTERS.get(ch.num, ch), EN_HEADS.get(ch.num, heads))
@@ -706,7 +722,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
         slug, inner = m.group(1), m.group(2)
         hear = ""
         if slug in at:
-            hear = (f'<button class="hear" type="button" data-at="{at[slug]}" title="{L("Listen from this section", fa_audio("شنیدن از این بخش", "شنیدن از این بخش (انگلیسی)"))}">'
+            hear = (f'<button class="hear" type="button" data-at="{at[slug]}" title="{L("Listen from this section", ch_audio(ch, "شنیدن از این بخش", "شنیدن از این بخش (انگلیسی)"))}">'
                     f'{icon("phones")}<span>{L("Listen", "شنیدن")}</span></button>')
         return f'<h2 id="{slug}"><span class="ht">{inner}</span>{hear}</h2>'
     body = re.sub(r'<h2 id="([^"]+)">(.*?)</h2>', h2, body)
@@ -737,27 +753,27 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     facts = [f"{icon('clock')} {num(ch.minutes)} {L('min read', 'دقیقه مطالعه')}"]
     listen_card, actions = "", f'<a class="btn primary" href="#main">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
     if ch.track:
-        facts.append(f"{icon('phones')} {minutes_label(ch.track['duration'])} {L('audio', fa_audio('صوت', 'صوت انگلیسی'))}")
+        facts.append(f"{icon('phones')} {minutes_label(ch.track['duration'])} {L('audio', ch_audio(ch, 'صوت', 'صوت انگلیسی'))}")
         titles = {}
-        if LANG == "fa" and not FA_AUDIO:
+        if LANG == "fa" and not fa_voice(ch):
             by_time = {t: s for s, t in at.items()}
             fa_title = {slug: re.sub(r"<[^>]+>", "", inner) for level, slug, plain, inner in heads if level == 2}
             titles = {t: fa_title.get(s, "") for t, s in by_time.items()}
         def sec_title(i, s):
             if i == 0:
                 return L("Opening", "آغاز")
-            if LANG == "fa" and not FA_AUDIO:
+            if LANG == "fa" and not fa_voice(ch):
                 return titles.get(s["start"]) or ("پایان و آزمونک" if s["title"].startswith("End of chapter") else s["title"])
             return s["title"]
         sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
         chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{num(mmss(s["s"]))}</small></button>'
                         for s in sections)
-        listen_card = (f'<section class="listen" data-audio="{audio_dir(root)}{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
+        listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
                        f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
                        f'aria-label="{L("Listen to this chapter", "شنیدن این فصل")}">'
                        f'<button class="play" type="button" aria-label="{L("Play the narrated chapter", "پخش روایت صوتی فصل")}">{icon("play", "icon i-play")}'
                        f'<svg class="icon i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor" stroke="none"/></svg></button>'
-                       f'<span class="kicker">{L("Listen", "شنیدن")} · {minutes_label(ch.track["duration"])} · {L("narrated", fa_audio("روایت‌شده", "روایت به انگلیسی"))}</span>'
+                       f'<span class="kicker">{L("Listen", "شنیدن")} · {minutes_label(ch.track["duration"])} · {L("narrated", ch_audio(ch, "روایت‌شده", "روایت به انگلیسی"))}</span>'
                        f'<h2>{L("Hear this chapter read aloud", "این فصل را بشنوید")} <span class="resume" style="font-weight:400;color:var(--dim)"></span></h2>'
                        f'<div class="row">{chips}</div></section>')
         actions += f'<button class="btn" type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>'
@@ -1218,7 +1234,7 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                 lede=L(f"<b>{SITE}</b> is a complete guide to knowledge, evidence, and critical thinking: sixteen illustrated chapters, "
                        f"a bilingual map of {n_concepts} concepts, and {total_audio} of narrated audio.",
                        f"<b>{SITE_FA}</b> راهنمایی کامل دربارهٔ معرفت، شواهد و تفکر نقادانه است: شانزده فصلِ مصوّر، "
-                       f"نقشهٔ دوزبانهٔ {n_c} مفهوم، و {total_audio} روایت صوتی{fa_audio('', ' به انگلیسی')}."),
+                       f"نقشهٔ دوزبانهٔ {n_c} مفهوم، و {total_audio} روایت صوتی{fa_audio('', ' به انگلیسی', ' به فارسی و انگلیسی')}."),
                 facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('map')} {L(f'{n_concepts} concepts · English &amp; فارسی', f'{n_c} مفهوم · فارسی و English')}",
                        f"{icon('phones')} {total_audio} {L('audio', 'صوت')}"],
                 actions=(f'<a class="btn primary" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
@@ -1233,11 +1249,11 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                       f"{n_c} ایده در نقشه‌ای زنده که می‌توانید جابه‌جا و باز کنید، به فارسی و انگلیسی، هر یک با مدخلی کامل."), cls="tile door")
              + tile(art, "audio", root, f"{h}guide/audio/", L("Listen", "بشنوید"), L("The audio edition", "نسخهٔ صوتی"),
                     L(f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.",
-                      f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio}{fa_audio('', ' به انگلیسی')}، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
+                      f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio}{fa_audio('', ' به انگلیسی', ' به فارسی یا انگلیسی')}، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
              + "</div>")
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
-             f'<div><b>{L("14½", "۱۴٫۵")}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
+             f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
     body = (f'{head}<main id="main">'
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
             f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
@@ -1263,12 +1279,16 @@ def build_audio_page(art, chapters, tracks):
     head = hero(art, "audio", root, kicker=L("The audio edition", "نسخهٔ صوتی"), title=L("Listen", "شنیدن"), cls="short",
                 lede=L("Every chapter of the guide, narrated. Pick up where you left off, jump to any section, and change the speed. "
                        "Each chapter ends with a spoken quiz, with time to think.",
-                       f"همهٔ فصل‌های راهنما، روایت‌شده به زبان {fa_audio('فارسی', 'انگلیسی')}. از همان‌جا که ماندید ادامه دهید، به هر بخش بپرید و سرعت را تغییر دهید. "
+                       f"همهٔ فصل‌های راهنما، روایت‌شده به زبان {fa_audio('فارسی', 'انگلیسی', f'فارسی ({num(len(FA_TRACKS))} فصل تا اینجا؛ فصل‌های دیگر فعلاً به انگلیسی)')}. از همان‌جا که ماندید ادامه دهید، به هر بخش بپرید و سرعت را تغییر دهید. "
                        "هر فصل با آزمونکی شفاهی پایان می‌یابد که فرصتِ فکرکردن می‌دهد."),
                 facts=[f"{icon('phones')} {minutes_label(sum(t['duration'] for t in tracks))}", L("16 chapters", "۱۶ فصل"),
                        L("MP3 with chapter markers", "MP3 با نشانگرِ فصل‌ها")])
-    prefix = "" if LANG == "en" else audio_dir(root)
-    data = [{"file": prefix + t["file"], "title": (t["title"] if LANG == "en" else f"{chapters[int(t['file'][:2])].label} — {chapters[int(t['file'][:2])].title}"),
+    def title(t):
+        if LANG == "en":
+            return t["title"]
+        ch = chapters[int(t["file"][:2])]
+        return f"{ch.label} — {ch.title}" + ("" if t.get("fa") or not FA_AUDIO else " (به انگلیسی)")
+    data = [{"file": ("" if LANG == "en" else audio_dir(root, t)) + t["file"], "title": title(t),
              "duration": t["duration"], "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"]} for t in tracks]
     thumbs = [art.src(f"ch{i + 1:02d}", root, 640) for i in range(len(tracks))]
     body = (f'{head}<main id="main" class="wrap" style="padding-bottom:80px">'
@@ -1286,7 +1306,9 @@ def build_audio_page(art, chapters, tracks):
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
                 fa_audio('روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ»، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
                          'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
-                         'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. ')
+                         'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. ',
+                         'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ»، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
+                         'روایتِ فارسی فصل‌به‌فصل آماده می‌شود؛ تا آن زمان فصل‌های دیگر با روایتِ انگلیسیِ مدلِ Kokoro-82M پخش می‌شوند. ')
                 + '<a href="about.html">صوت چگونه ساخته شد</a>. '
                 'صفحه‌کلید: <kbd>k</kbd> یا فاصله برای پخش و توقف، <kbd>j</kbd> و <kbd>l</kbd> برای جابه‌جایی.')
             + '</p></main>'
@@ -1309,8 +1331,8 @@ def build_audio_about(art, md):
         if href == "../../audio/README.md":  # from the Persian audio notes to the English ones
             return f"{root}guide/audio/about.html"
         if href.endswith(".mp3"):
-            return href if LANG == "en" else f"{audio_dir(root)}{href}"
-        if href.startswith(("scripts/", "tools/")):
+            return href if LANG == "en" else f"{root}guide/{'fa/' if FA_AUDIO else ''}audio/{href}"
+        if href.startswith(("scripts/", "tools/", "transcripts/")):
             return f"{REPO}/tree/main/guide/{'fa/' if LANG == 'fa' and FA_AUDIO else ''}audio/{href}"
         return href
     body_html, heads = md.render(text, links)
@@ -1361,7 +1383,8 @@ FA_VOICES_CREDIT = (
     'نسخهٔ صوتیِ فارسی با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ '
     '<a href="https://huggingface.co/Reza2kn/Gooya-Bozorg-v1.5">گویا بزرگ ۱٫۵</a>، که همان '
     '<a href="https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi">Chatterbox-TTS-Persian-Farsi</a> '
-    '(مدلِ Chatterbox از Resemble AI، آموزش‌دیده برای فارسی) است، با مجوزِ CC BY-NC 4.0 (فقط برای استفادهٔ غیرتجاری). '
+    '(مدلِ Chatterbox از Resemble AI، آموزش‌دیده برای فارسی) است، با مجوزِ CC BY-NC 4.0 (فقط برای استفادهٔ غیرتجاری)، '
+    'همراه با رمزگشای صدای <a href="https://huggingface.co/ResembleAI/chatterbox-turbo">Chatterbox Turbo</a> (مجوزِ MIT). '
     'صدای راوی از صدای گوینده‌ای ایرانی در مجموعه‌دادهٔ '
     '<a href="https://huggingface.co/datasets/MahtaFetrat/Mana-TTS">Mana-TTS</a> (مالکیتِ عمومی، CC0) الگو گرفته است. ')
 
@@ -1921,7 +1944,7 @@ def build_language(art, md, C, tracks):
 
 
 def main():
-    global LANG, FA_AUDIO
+    global LANG, FA_AUDIO, FA_TRACKS
     art = Art()
     print("artwork")
     art.derive()
@@ -1930,14 +1953,17 @@ def main():
     tracks = load_js_json(GUIDE / "audio" / "tracks.js", "window.TRACKS =")
     fa_js = GUIDE / "fa" / "audio" / "tracks.js"
     fa_tracks = load_js_json(fa_js, "window.TRACKS =") if fa_js.exists() else []
-    FA_AUDIO = bool(fa_tracks)
+    for t in fa_tracks:
+        t["fa"] = True
+    FA_TRACKS = {int(t["file"][:2]): t for t in fa_tracks}
+    FA_AUDIO = bool(FA_TRACKS)
     C = Concepts()
     LANG = "en"
     chapters, pages = build_language(art, md, C, tracks)
     write(ROOT / "404.html", shell(root="", title="Page not found", desc="Page not found.", body=build_404(art), bar="clear")
           .replace("<meta charset=\"utf-8\">", "<meta charset=\"utf-8\">\n" + BASE_404, 1))
     LANG = "fa"
-    fa_chapters, _ = build_language(art, md, C, fa_tracks or tracks)
+    fa_chapters, _ = build_language(art, md, C, [FA_TRACKS.get(int(t["file"][:2]), t) for t in tracks])
     LANG = "en"
     render_mermaid(md, prune=True)
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")

@@ -622,10 +622,7 @@ def main():
         return
     for s in scripts:
         narrate_one(s, out_dir, workers, threads)
-    if len(list(out_dir.glob("[01][0-9]-*.mp3"))) == 16:
-        build_index(out_dir)
-    else:
-        print("tracks.js is written once all 16 chapters exist (or run --index)")
+        build_index(out_dir)  # the site takes each chapter's Persian narration as soon as it exists
 
 
 if __name__ == "__main__":
