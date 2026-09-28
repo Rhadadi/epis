@@ -19,26 +19,30 @@ of the Mana-TTS dataset (huggingface.co/datasets/MahtaFetrat/Mana-TTS, file
 559-81.wav), which is public domain (CC0). Chatterbox also adds Resemble AI's
 inaudible watermark to what it generates.
 
-To run faster on an ordinary processor, two parts of the model are swapped
-for lighter ones: the speech decoder is the two-step "meanflow" decoder of
-Chatterbox Turbo (huggingface.co/ResembleAI/chatterbox-turbo, MIT licence),
-which turns the same speech tokens into sound, and the Persian text-to-token
-model runs with 8-bit weights. Together they halve the rendering time, and a
-speech recogniser understands the result as well as the original setup's.
+To run faster on an ordinary processor, the speech decoder is swapped for the
+two-step "meanflow" decoder of Chatterbox Turbo
+(huggingface.co/ResembleAI/chatterbox-turbo, MIT licence), which turns the
+same speech tokens into sound in a fifth of the time. A speech recogniser
+understands its output as well as the original decoder's. (8-bit or bfloat16
+weights for the Persian text-to-token model were tried too: 8-bit garbles
+many sentences, and bfloat16 is slower on a CPU without native support.)
 
 Needs: the chatterbox-tts package (with torch), soundfile, numpy and ffmpeg,
 and the Gooya weights folder (its inference.py, ve.safetensors,
 t3_fa.safetensors, s3gen.safetensors, grapheme_mtl_merged_expanded_v1.json) in
 $GOOYA_DIR. The Turbo decoder is downloaded from Hugging Face, or read from
 $MEANFLOW_DECODER. A GPU is used when there is one. On a four-core CPU the
-model still runs about three times slower than real time, so a chapter takes
-a few hours there.
+model runs about four times slower than real time, so a chapter takes a few
+hours there.
 
 Long paragraphs are cut into pieces of a few sentences, the length the model
-reads well. Each piece is checked: if its length does not fit the amount of
-text (the model skipped words or ran on), it is generated again with another
-seed. Pieces are cached in $NARRATE_CACHE (default: tools/.narrate-cache), so
-an interrupted run carries on where it stopped and editing a script only
+reads well. Each piece is checked, and generated again with another seed if
+it fails: its length must fit the amount of text (the model skipped words or
+ran on otherwise), and, when $NARRATE_ASR points to a sherpa-onnx Whisper
+model folder (for example sherpa-onnx-whisper-turbo, with the sherpa-onnx
+package installed), a transcription of it must match the text closely. Pieces
+are cached in $NARRATE_CACHE (default: tools/.narrate-cache), so an
+interrupted run carries on where it stopped and editing a script only
 re-renders the changed lines.
 
 lexicon.txt gives spoken forms for words the voice would otherwise misread,
@@ -210,23 +214,16 @@ def load(threads):
         return decode(speech_tokens=speech_tokens[speech_tokens < 6561], **kw)
     s3gen.inference = inference
     _TTS.s3gen = s3gen.to(device).eval()
-    if int8():
-        _TTS.t3.tfmr = torch.ao.quantization.quantize_dynamic(_TTS.t3.tfmr, {torch.nn.Linear}, dtype=torch.qint8)
     _TTS.prepare_conditionals(str(REFERENCE), exaggeration=0.5)
     assert _TTS.sr == SR
-
-
-@functools.cache
-def int8():
-    """8-bit weights on a CPU only; a GPU is fast enough without them."""
-    import torch
-    return not torch.cuda.is_available()
+    if ASR_DIR:
+        load_asr(threads)
 
 
 @functools.cache
 def setup():
     """What, besides the text, decides how a piece sounds."""
-    return [MODEL + ("+int8" if int8() else ""), hashlib.sha1(REFERENCE.read_bytes()).hexdigest(), CFG_WEIGHT, TEMPERATURE]
+    return [MODEL, hashlib.sha1(REFERENCE.read_bytes()).hexdigest(), CFG_WEIGHT, TEMPERATURE]
 
 
 def cache_key(text, exaggeration):
@@ -270,6 +267,59 @@ def misfit(text, audio):
     return score, ok
 
 
+# ---------------------------------------------------------------------------
+# Optional check by speech recognition: does a take say what the text says?
+
+
+ASR_DIR = os.environ.get("NARRATE_ASR")
+_ASR = None
+
+
+def load_asr(threads):
+    global _ASR
+    import sherpa_onnx
+    d = Path(ASR_DIR)
+    _ASR = sherpa_onnx.OfflineRecognizer.from_whisper(
+        encoder=str(next(d.glob("*encoder*.onnx"))), decoder=str(next(d.glob("*decoder*.onnx"))),
+        tokens=str(next(d.glob("*tokens.txt"))), language="fa", task="transcribe", num_threads=threads or 2)
+
+
+def transcribe(audio):
+    import librosa
+    a = librosa.resample(audio, orig_sr=SR, target_sr=16000)
+    a = np.concatenate([np.zeros(8000), a, np.zeros(16000)]).astype(np.float32)
+    stream = _ASR.create_stream()
+    stream.accept_waveform(16000, a)
+    _ASR.decode_stream(stream)
+    return stream.result.text
+
+
+def comparable(s):
+    """Persian letters only: no vowel marks, punctuation, spaces or Latin, one form of ی and ک."""
+    s = re.sub("[ً-ٰٟٔ]", "", s).replace("ي", "ی").replace("ك", "ک").replace("ة", "ه")
+    return "".join(c for c in s if "؀" <= c <= "ۿ" and unicodedata.category(c).startswith("L"))
+
+
+def cer(text, heard):
+    """Character error rate of a transcription, on Persian letters."""
+    r, h = comparable(text), comparable(heard)
+    prev = list(range(len(h) + 1))
+    for i in range(1, len(r) + 1):
+        cur = [i] + [0] * len(h)
+        for j in range(1, len(h) + 1):
+            cur[j] = min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (r[i - 1] != h[j - 1]))
+        prev = cur
+    return prev[-1] / max(1, len(r))
+
+
+def mismatch(text, audio):
+    """Error rate of the take's transcription and whether it is acceptable. Short lines and
+    lines with Latin letters are judged more loosely: the recogniser spells those freely."""
+    rate = cer(text, transcribe(audio))
+    limit = 0.45 if len(comparable(text)) < 20 or re.search("[A-Za-z]", text) else 0.3
+    return rate, rate <= limit
+
+
 def generate(job):
     """Worker: generate one piece, retrying with new seeds if it looks wrong, and cache it."""
     import torch
@@ -285,6 +335,9 @@ def generate(job):
             continue
         audio = trim(wav.squeeze(0).cpu().numpy().astype(np.float32))
         score, ok = misfit(text, audio)
+        if _ASR is not None and len(audio):
+            rate, heard_ok = mismatch(text, audio)
+            score, ok = rate + score / 10, ok and heard_ok  # the transcription decides; length breaks ties
         if best is None or score < best[1]:
             best = (audio, score, ok)
         if ok:
