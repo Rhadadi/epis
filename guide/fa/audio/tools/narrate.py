@@ -1,26 +1,45 @@
 #!/usr/bin/env python3
-"""Render the Persian narration scripts to MP3 with Microsoft Azure AI Speech.
+"""Render the Persian narration scripts to MP3 with Gooya Bozorg, a Persian Chatterbox model.
 
-    python3 narrate.py 01                 # one chapter
-    python3 narrate.py --all --jobs 6     # every chapter, six requests at a time
+    python3 narrate.py 01                  # one chapter
+    python3 narrate.py --all               # every chapter
     python3 narrate.py --say "متن" out.wav --role quote   # one line to a WAV file
-    python3 narrate.py --index            # rebuild tracks.js for the player from the MP3s
+    python3 narrate.py 01 --plan           # show how the script is cut up, render nothing
+    python3 narrate.py --index             # rebuild tracks.js for the player from the MP3s
 
 This is the Persian counterpart of guide/audio/tools/narrate.py and reads the
-same script format (see make_script.py). The narration uses Azure's Iranian
-Persian neural voice fa-IR-FaridNeural. Azure has one other Persian voice
-(Dilara), but it does not sound Iranian, so Farid reads everything:
-quotations and the two speakers of a dialogue get a slightly different pitch
-and pace, so the ear can still tell them apart.
+same script format (see make_script.py).
 
-Needs: the environment variables AZURE_SPEECH_KEY and AZURE_SPEECH_REGION,
-the Python packages requests, soundfile and numpy, and ffmpeg. The key is read
-from the environment only; it is never written anywhere.
+The voice is Gooya Bozorg v1.5 (huggingface.co/Reza2kn/Gooya-Bozorg-v1.5), a
+byte-identical repackaging of Thomcles/Chatterbox-TTS-Persian-Farsi: Resemble
+AI's Chatterbox multilingual model fine-tuned on Persian, licensed CC BY-NC 4.0
+(non-commercial use, with attribution). It clones the voice of a short
+reference recording. voice/narrator.flac is ten seconds of the Iranian narrator
+of the Mana-TTS dataset (huggingface.co/datasets/MahtaFetrat/Mana-TTS, file
+559-81.wav), which is public domain (CC0). Chatterbox also adds Resemble AI's
+inaudible watermark to what it generates.
 
-Each cue (a paragraph, a heading, a list item) is one request, so Azure can
-phrase whole paragraphs naturally. Rendered cues are cached in $NARRATE_CACHE
-(default: tools/.narrate-cache), so after editing a script only the changed
-lines are sent again.
+To run faster on an ordinary processor, two parts of the model are swapped
+for lighter ones: the speech decoder is the two-step "meanflow" decoder of
+Chatterbox Turbo (huggingface.co/ResembleAI/chatterbox-turbo, MIT licence),
+which turns the same speech tokens into sound, and the Persian text-to-token
+model runs with 8-bit weights. Together they halve the rendering time, and a
+speech recogniser understands the result as well as the original setup's.
+
+Needs: the chatterbox-tts package (with torch), soundfile, numpy and ffmpeg,
+and the Gooya weights folder (its inference.py, ve.safetensors,
+t3_fa.safetensors, s3gen.safetensors, grapheme_mtl_merged_expanded_v1.json) in
+$GOOYA_DIR. The Turbo decoder is downloaded from Hugging Face, or read from
+$MEANFLOW_DECODER. A GPU is used when there is one. On a four-core CPU the
+model still runs about three times slower than real time, so a chapter takes
+a few hours there.
+
+Long paragraphs are cut into pieces of a few sentences, the length the model
+reads well. Each piece is checked: if its length does not fit the amount of
+text (the model skipped words or ran on), it is generated again with another
+seed. Pieces are cached in $NARRATE_CACHE (default: tools/.narrate-cache), so
+an interrupted run carries on where it stopped and editing a script only
+re-renders the changed lines.
 
 lexicon.txt gives spoken forms for words the voice would otherwise misread,
 mostly Latin, German and French expressions, which are written in Persian
@@ -28,53 +47,64 @@ letters so that they are said the way an Iranian reader says them.
 """
 
 import argparse
+import functools
 import hashlib
-import html
-import io
 import json
+import math
 import os
 import re
 import subprocess
 import sys
 import tempfile
 import time
-from concurrent.futures import ThreadPoolExecutor
+import unicodedata
 from pathlib import Path
 
 import numpy as np
 import soundfile as sf
 
+os.environ.setdefault("TQDM_DISABLE", "1")  # the model draws a progress bar for every sentence
+
 HERE = Path(__file__).resolve().parent
 AUDIO = HERE.parent
 SCRIPTS = AUDIO / "scripts"
 CACHE = Path(os.environ.get("NARRATE_CACHE", HERE / ".narrate-cache"))
+REFERENCE = HERE / "voice" / "narrator.flac"
 SR = 24000
 
 ALBUM = "تسلط بر معرفت‌شناسی (نسخهٔ صوتی)"
-VOICE = "fa-IR-FaridNeural"
+MODEL = "gooya-bozorg-v1.5+turbo-meanflow-decoder"
+CFG_WEIGHT = 0.5      # the model's defaults, as in the approved sample
+TEMPERATURE = 0.8
+MAX_CHARS = 220       # longest piece of text read in one go
+PIECE_GAP = 0.30      # seconds between the pieces of one paragraph
+TRIES = 4             # generations per piece before keeping the best one
 
-# role: (pitch, rate, seconds of silence before, seconds after)
+# role: (exaggeration, pitch in semitones, tempo, seconds of silence before, seconds after)
+# Exaggeration is Chatterbox's expressiveness setting (0.5 is neutral). There is
+# one narrator, so the two speakers of a dialogue are told apart by a small
+# pitch shift, and quotations by a slightly slower pace.
 STYLE = {
-    "say":        ("+0%", "+0%", 0.00, 0.75),
-    "item":       ("+0%", "+0%", 0.00, 0.50),
-    "aside":      ("+0%", "-5%", 0.00, 0.50),
-    "opening":    ("+0%", "-10%", 0.30, 0.00),
-    "section":    ("+0%", "-6%", 0.45, 0.95),
-    "subsection": ("+0%", "-5%", 0.85, 0.60),
-    "quote":      ("-6%", "-4%", 0.20, 0.40),
-    "attr":       ("+0%", "+0%", 0.00, 0.40),
-    "cue":        ("+0%", "-3%", 0.20, 0.30),
-    "label":      ("+0%", "+0%", 0.10, 0.25),
-    "voice1":     ("+7%", "+3%", 0.00, 0.40),
-    "voice2":     ("-9%", "-3%", 0.00, 0.40),
-    "voice3":     ("+3%", "+0%", 0.00, 0.40),
-    "question":   ("+0%", "-3%", 0.00, 0.20),
-    "answer":     ("+0%", "+0%", 0.00, 0.75),
+    "say":        (0.50, 0.0, 1.00, 0.00, 0.75),
+    "item":       (0.50, 0.0, 1.00, 0.00, 0.50),
+    "aside":      (0.50, 0.0, 0.97, 0.00, 0.50),
+    "opening":    (0.50, 0.0, 0.95, 0.30, 0.00),
+    "section":    (0.50, 0.0, 0.96, 0.45, 0.95),
+    "subsection": (0.50, 0.0, 0.97, 0.85, 0.60),
+    "quote":      (0.50, 0.0, 0.96, 0.20, 0.40),
+    "attr":       (0.50, 0.0, 1.00, 0.00, 0.40),
+    "cue":        (0.50, 0.0, 0.97, 0.20, 0.30),
+    "label":      (0.50, 0.0, 1.00, 0.10, 0.25),
+    "voice1":     (0.60, 1.5, 1.02, 0.00, 0.40),
+    "voice2":     (0.45, -1.5, 0.98, 0.00, 0.40),
+    "voice3":     (0.55, 0.8, 1.00, 0.00, 0.40),
+    "question":   (0.50, 0.0, 0.97, 0.00, 0.20),
+    "answer":     (0.50, 0.0, 1.00, 0.00, 0.75),
 }
 
 
 # ---------------------------------------------------------------------------
-# Text to SSML
+# Text
 
 
 def load_lexicon():
@@ -93,50 +123,118 @@ _keys = sorted(LEXICON, key=len, reverse=True)
 LEX_RE = re.compile(r"(?<![\w'])(" + "|".join(re.escape(k) for k in _keys) + r")(?![\w'])", re.IGNORECASE) if _keys else None
 
 
-def ssml(text, role):
-    pitch, rate, _, _ = STYLE[role]
-    body = html.escape(text, quote=False)
-    if LEX_RE:
-        body = LEX_RE.sub(lambda m: f'<sub alias="{html.escape(LEXICON[m.group(1).lower()])}">{m.group(1)}</sub>', body)
-    return ('<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="fa-IR">'
-            f'<voice name="{VOICE}"><prosody pitch="{pitch}" rate="{rate}">{body}</prosody></voice></speak>')
+def respell(text):
+    return LEX_RE.sub(lambda m: LEXICON[m.group(1).lower()], text) if LEX_RE else text
+
+
+def sentences(text):
+    out, start = [], 0
+    for m in re.finditer(r'[.!?؟]+[»"]?(?=\s|$)', text):
+        out.append(text[start:m.end()].strip())
+        start = m.end()
+    out.append(text[start:].strip())
+    return [s for s in out if s]
+
+
+def split_long(s):
+    """Cut a sentence longer than MAX_CHARS at semicolons, then commas, then a space."""
+    if len(s) <= MAX_CHARS:
+        return [s]
+    for sep in ("؛ ", "، ", ": ", ", "):
+        parts = s.split(sep)
+        if len(parts) == 1:
+            continue
+        out, cur = [], ""
+        for i, p in enumerate(parts):
+            piece = p + (sep.strip() if i < len(parts) - 1 else "")
+            if cur and len(cur) + 1 + len(piece) > MAX_CHARS:
+                out.append(cur)
+                cur = piece
+            else:
+                cur = f"{cur} {piece}".strip()
+        out.append(cur)
+        return [y for x in out for y in split_long(x)]
+    mid = len(s) // 2
+    cut = min((i for i, c in enumerate(s) if c == " "), key=lambda i: abs(i - mid), default=None)
+    if cut is None:
+        return [s]
+    return split_long(s[:cut]) + split_long(s[cut + 1:])
+
+
+def pieces(text):
+    """A cue's text as the pieces the model reads: whole sentences, grouped up to MAX_CHARS."""
+    out = []
+    for s in (y for x in sentences(respell(text)) for y in split_long(x)):
+        if out and len(out[-1]) + 1 + len(s) <= MAX_CHARS and out[-1][-1] in ".!?؟»\"":
+            out[-1] = f"{out[-1]} {s}"
+        else:
+            out.append(s)
+    # A piece cut at a semicolon or comma keeps a rising, unfinished tone.
+    return [re.sub(r"[،؛:]$", ",", p) for p in out]
+
+
+def letters(text):
+    return sum(1 for c in text if unicodedata.category(c).startswith("L"))
 
 
 # ---------------------------------------------------------------------------
-# Azure
+# The model (loaded once in each worker process)
 
 
-def synthesize(doc):
-    """SSML to 24 kHz mono float audio, with retries for throttling and network errors."""
-    import requests
-    key, region = os.environ.get("AZURE_SPEECH_KEY"), os.environ.get("AZURE_SPEECH_REGION")
-    if not key or not region:
-        sys.exit("set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION")
-    url = f"https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
-    headers = {"Ocp-Apim-Subscription-Key": key, "Content-Type": "application/ssml+xml",
-               "X-Microsoft-OutputFormat": "riff-24khz-16bit-mono-pcm", "User-Agent": "mastering-epistemology-audio"}
-    for attempt in range(8):
-        try:
-            r = requests.post(url, data=doc.encode("utf-8"), headers=headers, timeout=180)
-        except requests.RequestException as e:
-            wait = 2 ** attempt
-            print(f"  network error ({e.__class__.__name__}), retrying in {wait}s", flush=True)
-            time.sleep(wait)
-            continue
-        if r.status_code == 200:
-            audio, sr = sf.read(io.BytesIO(r.content), dtype="float32")
-            assert sr == SR
-            return audio
-        if r.status_code in (429, 500, 502, 503, 504):
-            wait = float(r.headers.get("Retry-After") or 2 ** attempt)
-            time.sleep(min(wait, 60))
-            continue
-        raise RuntimeError(f"Azure TTS error {r.status_code}: {r.text[:300]}")
-    raise RuntimeError("Azure TTS: too many retries")
+_TTS = None
 
 
-def trim(audio, threshold=0.003, keep=0.05):
-    """Cut the silence Azure leaves at both ends, keeping a little air; pauses are ours to set."""
+def load(threads):
+    global _TTS
+    import torch
+    if threads:
+        torch.set_num_threads(threads)
+    model_dir = os.environ.get("GOOYA_DIR")
+    if not model_dir or not (Path(model_dir) / "t3_fa.safetensors").exists():
+        sys.exit("set GOOYA_DIR to a folder with the Gooya Bozorg v1.5 files (huggingface.co/Reza2kn/Gooya-Bozorg-v1.5)")
+    sys.path.insert(0, model_dir)
+    from inference import load_model  # Gooya's loader
+    from chatterbox.models.s3gen import S3Gen
+    from safetensors.torch import load_file
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    _TTS = load_model(Path(model_dir), device)
+    decoder = os.environ.get("MEANFLOW_DECODER")
+    if not decoder:
+        from huggingface_hub import hf_hub_download
+        decoder = hf_hub_download("ResembleAI/chatterbox-turbo", "s3gen_meanflow.safetensors")
+    s3gen = S3Gen(meanflow=True)
+    s3gen.load_state_dict(load_file(decoder), strict=True)
+    _TTS.s3gen = s3gen.to(device).eval()
+    if int8():
+        _TTS.t3.tfmr = torch.ao.quantization.quantize_dynamic(_TTS.t3.tfmr, {torch.nn.Linear}, dtype=torch.qint8)
+    _TTS.prepare_conditionals(str(REFERENCE), exaggeration=0.5)
+    assert _TTS.sr == SR
+
+
+@functools.cache
+def int8():
+    """8-bit weights on a CPU only; a GPU is fast enough without them."""
+    import torch
+    return not torch.cuda.is_available()
+
+
+@functools.cache
+def setup():
+    """What, besides the text, decides how a piece sounds."""
+    return [MODEL + ("+int8" if int8() else ""), hashlib.sha1(REFERENCE.read_bytes()).hexdigest(), CFG_WEIGHT, TEMPERATURE]
+
+
+def cache_key(text, exaggeration):
+    spec = json.dumps(setup() + [text, exaggeration], ensure_ascii=False)
+    return hashlib.sha1(spec.encode()).hexdigest()
+
+
+def cache_path(key):
+    return CACHE / key[:2] / f"{key}.flac"
+
+
+def trim(audio, threshold=0.004, keep=0.05):
+    """Cut the silence at both ends, keeping a little air; pauses are ours to set."""
     idx = np.where(np.abs(audio) > threshold)[0]
     if len(idx) == 0:
         return audio[:0]
@@ -144,17 +242,81 @@ def trim(audio, threshold=0.003, keep=0.05):
     return audio[a:b]
 
 
-def speak(text, role):
-    doc = ssml(text, role)
-    key = hashlib.sha1(doc.encode()).hexdigest()
-    path = CACHE / key[:2] / f"{key}.flac"
-    if path.exists():
-        audio, _ = sf.read(path, dtype="float32")
-        return audio
-    audio = trim(synthesize(doc))
+def longest_gap(audio, frame=0.05, threshold=0.004):
+    n = int(frame * SR)
+    if len(audio) < n:
+        return 0.0
+    quiet = np.abs(audio[: len(audio) // n * n]).reshape(-1, n).max(axis=1) < threshold
+    run = best = 0
+    for q in quiet:
+        run = run + 1 if q else 0
+        best = max(best, run)
+    return best * frame
+
+
+def misfit(text, audio):
+    """How far a take's length is from what the text needs (0 is spot on), and whether it is acceptable."""
+    dur = len(audio) / SR
+    expected = 0.25 + letters(text) / 8.5  # the narrator reads about 8.5 letters a second
+    if dur == 0:
+        return math.inf, False
+    score = abs(math.log(dur / expected))
+    ok = 0.6 * expected - 0.3 <= dur <= 1.6 * expected + 0.8 and longest_gap(audio) < 1.6
+    return score, ok
+
+
+def generate(job):
+    """Worker: generate one piece, retrying with new seeds if it looks wrong, and cache it."""
+    import torch
+    text, exaggeration, key = job
+    best = None
+    for attempt in range(TRIES):
+        torch.manual_seed(int(key[:8], 16) + attempt)
+        wav = _TTS.generate(text=text, language_id=None, exaggeration=exaggeration,
+                            cfg_weight=CFG_WEIGHT, temperature=TEMPERATURE)
+        audio = trim(wav.squeeze(0).cpu().numpy().astype(np.float32))
+        score, ok = misfit(text, audio)
+        if best is None or score < best[1]:
+            best = (audio, score, ok)
+        if ok:
+            break
+    path = cache_path(key)
     path.parent.mkdir(parents=True, exist_ok=True)
-    sf.write(path, audio, SR, format="FLAC", subtype="PCM_16")
-    return audio
+    tmp = path.with_suffix(f".{os.getpid()}.tmp")
+    sf.write(tmp, best[0], SR, format="FLAC", subtype="PCM_16")
+    os.replace(tmp, path)
+    return key, len(best[0]) / SR, best[2], attempt + 1, text
+
+
+def run_jobs(jobs, workers, threads, log):
+    """Generate every uncached piece, in several processes when asked."""
+    if not jobs:
+        return
+    start, done, spoken = time.time(), 0, 0.0
+
+    def report(result):
+        nonlocal done, spoken
+        _, dur, ok, tries, text = result
+        done += 1
+        spoken += dur
+        if not ok:
+            log(f"  kept a doubtful take after {tries} tries: {text[:60]}…")
+        if done % 10 == 0 or done == len(jobs):
+            elapsed = time.time() - start
+            eta = elapsed / done * (len(jobs) - done)
+            log(f"  {done}/{len(jobs)} pieces, {spoken / 60:.1f} min of speech in {elapsed / 60:.0f} min"
+                f" (about {eta / 3600:.1f} h left)")
+
+    if workers <= 1:
+        if _TTS is None:
+            load(threads)
+        for job in jobs:
+            report(generate(job))
+        return
+    import multiprocessing as mp
+    with mp.get_context("spawn").Pool(workers, initializer=load, initargs=(threads,)) as pool:
+        for result in pool.imap_unordered(generate, jobs):
+            report(result)
 
 
 # ---------------------------------------------------------------------------
@@ -188,6 +350,19 @@ def silence(sec):
     return np.zeros(int(round(sec * SR)), dtype=np.float32)
 
 
+def shape(audio, semitones, tempo):
+    """Shift pitch and change pace with ffmpeg (resampling for pitch, WSOLA for pace)."""
+    if not semitones and tempo == 1.0 or not len(audio):
+        return audio
+    ratio = 2 ** (semitones / 12)
+    chain = f"asetrate={round(SR * ratio)},aresample={SR},atempo={tempo / ratio:.5f}"
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-",
+         "-af", chain, "-f", "f32le", "-ar", str(SR), "-ac", "1", "-"],
+        input=audio.astype(np.float32).tobytes(), capture_output=True, check=True).stdout
+    return np.frombuffer(out, dtype=np.float32).copy()
+
+
 # ---------------------------------------------------------------------------
 # Rendering
 
@@ -203,26 +378,46 @@ def parse(script):
             cues.append((m.group(1), (m.group(2) or "").strip()))
         else:
             cues.append(("say", line))
-    return cues
-
-
-def render(script, jobs=4, log=None):
-    """Script text to (audio, title, sections), where sections are (title, seconds)."""
-    cues = parse(script)
     for kind, _ in cues:
         if kind not in STYLE and kind not in ("title", "pause", "think", "chime"):
             raise ValueError(f"unknown cue @{kind}")
-    spoken = [(k, t) for k, t in cues if k in STYLE and t]
-    with ThreadPoolExecutor(jobs) as pool:  # fetch every line first, several at a time
-        results = dict(zip(spoken, pool.map(lambda c: speak(c[1], c[0]), spoken)))
-    if log:
-        log(f"{len(spoken)} lines")
+    return cues
 
-    pieces, sections, title = [silence(0.8)], [], ""
-    length = [len(pieces[0])]
+
+def plan(cues):
+    """Each spoken cue as a list of (piece text, exaggeration, cache key)."""
+    out = {}
+    for kind, text in cues:
+        if kind in STYLE and text and (kind, text) not in out:
+            exaggeration = STYLE[kind][0]
+            out[(kind, text)] = [(p, exaggeration, cache_key(p, exaggeration)) for p in pieces(text)]
+    return out
+
+
+def speak(parts, kind):
+    _, semitones, tempo, _, _ = STYLE[kind]
+    audio = []
+    for i, (_, _, key) in enumerate(parts):
+        if i:
+            audio.append(silence(PIECE_GAP))
+        audio.append(sf.read(cache_path(key), dtype="float32")[0])
+    return shape(np.concatenate(audio), semitones, tempo)
+
+
+def render(script, workers, threads, log):
+    """Script text to (audio, title, sections), where sections are (title, seconds)."""
+    cues = parse(script)
+    parts = plan(cues)
+    jobs = {key: (text, ex, key) for ps in parts.values() for text, ex, key in ps}
+    todo = [job for key, job in jobs.items() if not cache_path(key).exists()]
+    log(f"{len(parts)} lines, {len(jobs)} pieces, {len(todo)} to generate")
+    run_jobs(todo, workers, threads, log)
+
+    out, sections, title = [silence(0.8)], [], ""
+    length = [len(out[0])]
 
     def add(a):
-        pieces.append(a)
+        out.append(a)
         length[0] += len(a)
 
     for kind, text in cues:
@@ -233,7 +428,7 @@ def render(script, jobs=4, log=None):
         elif kind == "chime":
             add(chime())
         elif kind in STYLE:
-            _, _, before, after = STYLE[kind]
+            _, _, _, before, after = STYLE[kind]
             if kind == "section":
                 add(silence(0.9))
                 sections.append((text, length[0] / SR))
@@ -245,10 +440,10 @@ def render(script, jobs=4, log=None):
                 add(bell())
             add(silence(before))
             if text:
-                add(results[(kind, text)])
+                add(speak(parts[(kind, text)], kind))
             add(silence(after))
     add(silence(1.5))
-    return np.concatenate(pieces), title, sections
+    return np.concatenate(out), title, sections
 
 
 def master(audio, out_mp3, title, track, total, sections):
@@ -271,7 +466,8 @@ def master(audio, out_mp3, title, track, total, sections):
         meta = Path(tmp) / "meta.txt"
         lines = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=تسلط بر معرفت‌شناسی",
                  f"track={track}/{total}", "genre=Audiobook", "language=fas",
-                 "comment=Narrated with the Microsoft Azure AI Speech neural voice fa-IR-FaridNeural."]
+                 "comment=Narrated with Gooya Bozorg v1.5 (Chatterbox Persian, CC BY-NC 4.0),"
+                 " voice cloned from the CC0 Mana-TTS narrator."]
         for k, (name, start) in enumerate(sections):
             stop = sections[k + 1][1] if k + 1 < len(sections) else duration
             lines += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}",
@@ -285,12 +481,12 @@ def master(audio, out_mp3, title, track, total, sections):
     return duration
 
 
-def narrate_one(script_path, out_dir, jobs):
+def narrate_one(script_path, out_dir, workers, threads):
     name = script_path.stem
 
     def log(msg):
         print(f"[{name}] {msg}", flush=True)
-    audio, title, sections = render(script_path.read_text(encoding="utf-8"), jobs, log)
+    audio, title, sections = render(script_path.read_text(encoding="utf-8"), workers, threads, log)
     duration = master(audio, out_dir / f"{name}.mp3", title, int(name[:2]), 16, sections)
     log(f"done: {duration / 60:.1f} min")
 
@@ -322,15 +518,25 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("chapters", nargs="*", help="chapter numbers, e.g. 01 05")
     ap.add_argument("--all", action="store_true")
-    ap.add_argument("--jobs", type=int, default=4, help="requests to Azure at a time")
+    ap.add_argument("--workers", type=int, default=0,
+                    help="model processes (default: 1 on a GPU, one per two CPU cores otherwise)")
     ap.add_argument("--out", default=str(AUDIO))
     ap.add_argument("--say", nargs=2, metavar=("TEXT", "WAV"))
     ap.add_argument("--role", default="say", help="role for --say (say, quote, voice1, voice2...)")
+    ap.add_argument("--plan", action="store_true", help="only show how the scripts are cut into pieces")
     ap.add_argument("--index", action="store_true", help="only rebuild tracks.js")
     args = ap.parse_args()
 
+    workers = args.workers
+    if not workers:
+        import torch
+        workers = 1 if torch.cuda.is_available() else max(1, (os.cpu_count() or 2) // 2)
+    threads = max(1, (os.cpu_count() or 1) // workers)
+
     if args.say:
-        sf.write(args.say[1], speak(args.say[0], args.role), SR)
+        parts = [(p, STYLE[args.role][0], cache_key(p, STYLE[args.role][0])) for p in pieces(args.say[0])]
+        run_jobs([p for p in parts if not cache_path(p[2]).exists()], 1, os.cpu_count(), print)
+        sf.write(args.say[1], speak(parts, args.role), SR)
         return
     out_dir = Path(args.out)
     if args.index:
@@ -341,9 +547,21 @@ def main():
         scripts = [s for s in scripts if s.name[:2] in args.chapters]
     if not scripts:
         sys.exit("no scripts selected")
+    if args.plan:
+        for s in scripts:
+            parts = plan(parse(s.read_text(encoding="utf-8")))
+            ps = [p for v in parts.values() for p in v]
+            chars = sum(len(p[0]) for p in ps)
+            cached = sum(cache_path(p[2]).exists() for p in ps)
+            print(f"{s.stem}: {len(ps)} pieces, {chars} characters, about "
+                  f"{sum(0.25 + letters(p[0]) / 8.5 for p in ps) / 60:.0f} min of speech, {cached} cached")
+        return
     for s in scripts:
-        narrate_one(s, out_dir, args.jobs)
-    build_index(out_dir)
+        narrate_one(s, out_dir, workers, threads)
+    if len(list(out_dir.glob("[01][0-9]-*.mp3"))) == 16:
+        build_index(out_dir)
+    else:
+        print("tracks.js is written once all 16 chapters exist (or run --index)")
 
 
 if __name__ == "__main__":

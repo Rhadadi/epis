@@ -1284,7 +1284,7 @@ def build_audio_page(art, chapters, tracks):
             f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
             + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
-                fa_audio('روایت با صدای ساختگیِ «فرید» از Azure AI Speech مایکروسافت، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
+                fa_audio('روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ»، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
                          'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
                          'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. ')
                 + '<a href="about.html">صوت چگونه ساخته شد</a>. '
@@ -1358,8 +1358,12 @@ def build_credits(art):
 
 
 FA_VOICES_CREDIT = (
-    'نسخهٔ صوتیِ فارسی را صدای ساختگیِ «فرید» (fa-IR-FaridNeural) از سرویسِ '
-    '<a href="https://learn.microsoft.com/azure/ai-services/speech-service/">Azure AI Speech</a>ِ مایکروسافت روایت کرده است. ')
+    'نسخهٔ صوتیِ فارسی با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ '
+    '<a href="https://huggingface.co/Reza2kn/Gooya-Bozorg-v1.5">گویا بزرگ ۱٫۵</a>، که همان '
+    '<a href="https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi">Chatterbox-TTS-Persian-Farsi</a> '
+    '(مدلِ Chatterbox از Resemble AI، آموزش‌دیده برای فارسی) است، با مجوزِ CC BY-NC 4.0 (فقط برای استفادهٔ غیرتجاری). '
+    'صدای راوی از صدای گوینده‌ای ایرانی در مجموعه‌دادهٔ '
+    '<a href="https://huggingface.co/datasets/MahtaFetrat/Mana-TTS">Mana-TTS</a> (مالکیتِ عمومی، CC0) الگو گرفته است. ')
 
 
 BASE_404 = ('<script>(function(){var p=location.pathname.split("/"),b="/";'
