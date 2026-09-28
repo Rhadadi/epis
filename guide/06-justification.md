@@ -194,7 +194,7 @@ This is Sellars's attack on the **Myth of the Given** (see [Chapter 2](02-histor
 The image is Neurath's boat (see [Chapter 2](02-history-of-epistemology.md#logical-positivism)), or Quine's **web of belief**, in which beliefs support each other like the strands of a net.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["Fingerprints on the gun"] <--> B["Suspect was at the scene"]
     B <--> C["Witness saw a tall man leave"]
     C <--> D["Suspect is tall"]

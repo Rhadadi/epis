@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Signing in · Mastering Epistemology</title>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F6F3EC;color:#1B2730;font:18px/1.6 Georgia,serif}
+  @media(prefers-color-scheme:dark){body{background:#0A1620;color:#E8EEF1}}
+  main{max-width:30rem;padding:24px;text-align:center}
+  a{color:inherit}
+</style>
+</head>
+<body>
+<main><p id="msg">Signing you in…</p></main>
+<script>
+/* Google sends the reader back here after sign-in (OAuth 2.0 for client-side
+   apps). The access token arrives in the URL fragment, which never reaches any
+   server. It is checked against the state saved before leaving, stored in this
+   browser, and the reader is sent back to the page they came from. */
+(function () {
+  var msg = document.getElementById("msg");
+  var h = new URLSearchParams(location.hash.slice(1));
+  history.replaceState(null, "", location.pathname);
+  var saved = {};
+  try { saved = JSON.parse(sessionStorage.getItem("epis-oauth") || "{}"); sessionStorage.removeItem("epis-oauth"); } catch (e) { /* ignore */ }
+  var home = new URL("./", location.href).href;
+  var back = saved.back && saved.back.indexOf(home) === 0 ? saved.back : home;
+  // Readers of the Persian edition come back to a page under fa/.
+  var fa = back.indexOf(home + "fa/") === 0;
+  function T(en, f) { return fa ? f : en; }
+  if (fa) { document.documentElement.lang = "fa"; document.documentElement.dir = "rtl"; msg.textContent = "در حال ورود…"; }
+  function done(error) {
+    if (error) { try { sessionStorage.setItem("epis-oauth-error", error); } catch (e) { /* ignore */ } }
+    location.replace(back);
+  }
+  if (h.get("error")) return done(saved.silent ? "" : h.get("error"));
+  if (!h.get("access_token") || !saved.state || h.get("state") !== saved.state) {
+    msg.innerHTML = T("Sign-in could not be completed. ", "ورود کامل نشد. ") + '<a href="' + home + (fa ? "fa/" : "") + 'account/">' + T("Try again", "دوباره تلاش کنید") + "</a>.";
+    return;
+  }
+  var access = h.get("access_token");
+  var exp = Date.now() + (parseInt(h.get("expires_in"), 10) || 3600) * 1000;
+  var scopes = h.get("scope") || "";
+  fetch("https://www.googleapis.com/oauth2/v3/userinfo", { headers: { Authorization: "Bearer " + access } })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (u) {
+      localStorage.setItem("epis-token", JSON.stringify({ access: access, exp: exp, scopes: scopes }));
+      localStorage.setItem("epis-user", JSON.stringify({ sub: u.sub, name: u.name, given_name: u.given_name, email: u.email, picture: u.picture }));
+      done(scopes.indexOf("drive.appdata") < 0 ? T("Google Drive permission was not granted, so your data can't be synced. Sign in again and allow it.",
+        "اجازهٔ گوگل‌درایو داده نشد، پس داده‌هایتان همگام نمی‌شوند. دوباره وارد شوید و اجازه دهید.") : "");
+    })
+    .catch(function () { done(T("could not read your Google profile", "نمایهٔ گوگلِ شما خوانده نشد")); });
+})();
+</script>
+</body>
+</html>

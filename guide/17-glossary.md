@@ -68,7 +68,7 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Brier score.** A measure of the accuracy of probabilistic forecasts: the mean squared difference between forecast probabilities and outcomes. → [Ch. 9](09-induction-probability-bayes.md#calibration-and-scoring-rules)
 
-**Bullshit** (technical sense). Speech produced with indifference to whether it is true (Frankfurt). → [Ch. 11](11-truth-and-relativism.md#frankfurt-on-bullshit)
+**Bullshit (technical sense).** Speech produced with indifference to whether it is true (Frankfurt). → [Ch. 11](11-truth-and-relativism.md#frankfurt-on-bullshit)
 
 **Burden of proof.** The obligation to support a claim; the party who bears it loses if no decisive argument is given. → [Ch. 16](16-critical-thinking-toolkit.md#burden-of-proof)
 
@@ -132,7 +132,7 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Disjunctivism.** The view that veridical perception and hallucination are fundamentally different kinds of mental state. → [Ch. 7](07-sources-of-knowledge.md#disjunctivism)
 
-**Dogmatism** (Pryor's technical sense). The view that perceptual experience gives immediate prima facie justification, without prior justification that perception is reliable. → [Ch. 8](08-skepticism.md#dogmatism)
+**Dogmatism (Pryor's technical sense).** The view that perceptual experience gives immediate prima facie justification, without prior justification that perception is reliable. → [Ch. 8](08-skepticism.md#dogmatism)
 
 **Doxastic.** Pertaining to belief (from Greek *doxa*). The doxastic attitudes are belief, disbelief, and suspension of judgment. → [Ch. 1](01-what-is-epistemology.md#belief-credence-and-acceptance)
 
@@ -256,7 +256,7 @@ Short definitions of the key terms used in this guide. Each entry links to the s
 
 **Knowledge by acquaintance.** Direct familiarity with a thing, person, or experience (Russell). → [Ch. 1](01-what-is-epistemology.md#knowledge-by-acquaintance)
 
-**Knowledge by presence** (*ʿilm ḥuḍūrī*). Knowledge in which the object is immediately present to the knower without representation (Suhrawardī). → [Ch. 7](07-sources-of-knowledge.md#knowledge-by-presence)
+**Knowledge by presence (*ʿilm ḥuḍūrī*).** Knowledge in which the object is immediately present to the knower without representation (Suhrawardī). → [Ch. 7](07-sources-of-knowledge.md#knowledge-by-presence)
 
 **Knowledge-first epistemology.** Williamson's view that knowledge is basic and unanalyzable, and explains belief, evidence, and justification. → [Ch. 5](05-the-nature-of-knowledge.md#knowledge-first)
 

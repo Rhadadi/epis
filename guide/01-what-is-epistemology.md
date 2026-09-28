@@ -300,7 +300,7 @@ Other candidate epistemic goals include **knowledge**, **understanding**, **wisd
 Contemporary epistemology has many branches. They are best thought of as different angles on the same subject.
 
 ```mermaid
-flowchart TD
+flowchart LR
     E["EPISTEMOLOGY"]
     E --> T["Traditional or core epistemology"]
     E --> F["Formal epistemology"]

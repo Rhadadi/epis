@@ -125,7 +125,7 @@ You can read the guide from start to finish. If you have a particular goal, thes
 
 ## The companion explorer
 
-This guide accompanies the interactive, bilingual (English and Persian) **concept explorer** at the root of this repository ([`index.html`](../index.html); live at [epis.duckdns.org](https://epis.duckdns.org)). The explorer gives a map-based overview, with learning cards and self-checks for each concept. This guide provides the long-form explanations, arguments, history, examples, and practice behind those cards. The two can be used together: explore the map to see where a concept sits, then read the corresponding section here to master it.
+This guide accompanies the interactive, bilingual (English and Persian) **concept explorer** in this repository ([`map/`](../map/index.html); live at [epis.duckdns.org/map/](https://epis.duckdns.org/map/)). The explorer gives a map-based overview, with learning cards and self-checks for each concept. This guide provides the long-form explanations, arguments, history, examples, and practice behind those cards. The two can be used together: explore the map to see where a concept sits, then read the corresponding section here to master it.
 
 ---
 
