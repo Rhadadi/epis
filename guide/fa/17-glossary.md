@@ -14,27 +14,27 @@
 
 **ابداکشن (Abduction).** رسیدن به یک فرضیه به این دلیل که بهترین توضیح برای شواهد است؛ به آن استنتاج از راهِ بهترین تبیین هم می‌گویند. → [فصل ۳](03-logic-and-arguments.md#deduction-induction-and-abduction)، [فصل ۱۰](10-science-and-evidence.md#inference-to-the-best-explanation)
 
-**آبشارِ اطلاعاتی (Information cascade).** وضعی که در آن آدم‌ها از انتخابِ دیگران پیروی می‌کنند و اطلاعاتِ خودشان را نادیده می‌گیرند، طوری که خطاها می‌توانند قفل شوند. → [فصل ۱۲](12-social-epistemology.md#conformity-cascades-and-herding)
+**آبشارِ اطلاعاتی (Information cascade).** وضعی که در آن آدم‌ها از انتخابِ دیگران پیروی می‌کنند و اطلاعاتِ خودشان را نادیده می‌گیرند، و به این ترتیب ممکن است خطایی ماندگار شود. → [فصل ۱۲](12-social-epistemology.md#conformity-cascades-and-herding)
 
-**ابطال‌پذیری (Falsifiability).** معیارِ پوپر: نظریه‌ای علمی است اگر مشاهده‌ای ممکن بتواند ردش کند. → [فصل ۱۰](10-science-and-evidence.md#popper-and-falsificationism)
+**ابطال‌پذیری (Falsifiability).** معیارِ پوپر: نظریه‌ای علمی است که مشاهده‌ای ممکن بتواند ردش کند. → [فصل ۱۰](10-science-and-evidence.md#popper-and-falsificationism)
 
-**ابطال‌کننده (Defeater).** ملاحظه‌ای که توجیهِ یک باور را از بین می‌برد یا کم می‌کند. ابطال‌کننده‌های ردکننده دلیل‌هایی علیهِ نتیجه‌اند؛ ابطال‌کننده‌های سست‌کننده دلیل‌هایی علیهِ پشتیبانی. → [فصل ۶](06-justification.md#defeaters)
+**ابطال‌کننده (Defeater).** ملاحظه‌ای که توجیهِ یک باور را از بین می‌برد یا کم می‌کند. ابطال‌کنندهٔ ردکننده دلیلی علیهِ خودِ نتیجه است؛ ابطال‌کنندهٔ سست‌کننده دلیلی علیهِ پیوندِ شاهد با نتیجه. → [فصل ۶](06-justification.md#defeaters)
 
 **ابهام (Ambiguity).** داشتنِ دو یا چند معنای جدا (واژگانی، ساختاری، دامنه‌ای، جمعی/توزیعی). با گنگی فرق دارد. → [فصل ۴](04-language-concepts-and-definitions.md#ambiguity)
 
-**اتاقِ پژواک (Echo chamber).** ساختاری اجتماعی که در آن صداهای بیرونی فعالانه بی‌اعتبار می‌شوند. مقایسه کنید با حبابِ معرفتی. → [فصل ۱۲](12-social-epistemology.md#echo-chambers-and-epistemic-bubbles)
+**اتاقِ پژواک (Echo chamber).** ساختاری اجتماعی که در آن صداهای بیرونی عمداً بی‌اعتبار می‌شوند. مقایسه کنید با حبابِ معرفتی. → [فصل ۱۲](12-social-epistemology.md#echo-chambers-and-epistemic-bubbles)
 
 **اثرِ حقیقتِ موهوم (Illusory truth effect).** جمله‌هایی که تکرار شده‌اند درست‌تر به نظر می‌رسند. → [فصل ۱۴](14-psychology-of-reasoning.md#fluency-and-the-illusory-truth-effect)
 
-**اثرِ دانینگ‌ـ‌کروگر (Dunning–Kruger effect).** این یافته که کم‌عملکردها توانِ خودشان را بیش از حد تخمین می‌زنند؛ تفسیرش محلِ بحث است. → [فصل ۱۴](14-psychology-of-reasoning.md#the-dunning-kruger-effect-and-its-critics)
+**اثرِ دانینگ‌ـ‌کروگر (Dunning–Kruger effect).** این یافته که کسانی که ضعیف عمل می‌کنند توانِ خودشان را بیش از واقع تخمین می‌زنند؛ تفسیرش محلِ بحث است. → [فصل ۱۴](14-psychology-of-reasoning.md#the-dunning-kruger-effect-and-its-critics)
 
-**اثرِ قاب‌بندی (Framing effect).** انتخاب‌های متفاوتی که توصیف‌های منطقاً هم‌ارز از گزینه‌های یکسان پدید می‌آورند. → [فصل ۱۴](14-psychology-of-reasoning.md#framing-effects)
+**اثرِ قاب‌بندی (Framing effect).** اینکه توصیف‌های منطقاً هم‌ارز از گزینه‌های یکسان به انتخاب‌های متفاوتی بینجامند. → [فصل ۱۴](14-psychology-of-reasoning.md#framing-effects)
 
 **اجماعِ علمی (Consensus, scientific).** توافقِ بیشترِ کارشناسانِ یک رشته، که معمولاً از هم‌گراییِ رشته‌های مستقلِ شواهد پدید می‌آید. → [فصل ۱۰](10-science-and-evidence.md#scientific-consensus)
 
 **احتمالِ پیشین (Prior probability).** احتمالِ یک فرضیه پیش از در نظر گرفتنِ شاهدِ تازه. → [فصل ۹](09-induction-probability-bayes.md#bayes-theorem)
 
-**اختلافِ عمیق (Deep disagreement).** اختلاف بر سرِ اینکه چه چیزی شاهد یا مرجع حساب می‌شود، طوری که دو طرف هیچ زمینهٔ مشترکی برای استدلال ندارند. → [فصل ۱۲](12-social-epistemology.md#deep-disagreement)
+**اختلافِ عمیق (Deep disagreement).** اختلاف بر سرِ اینکه چه چیزی شاهد یا مرجع به حساب می‌آید، طوری که دو طرف هیچ زمینهٔ مشترکی برای استدلال ندارند. → [فصل ۱۲](12-social-epistemology.md#deep-disagreement)
 
 **اختلافِ همتایان (Peer disagreement).** اختلاف با کسی که همان شواهد را دارد و به همان اندازه تواناست. → [فصل ۱۲](12-social-epistemology.md#peer-disagreement)
 
@@ -44,9 +44,9 @@
 
 **استدلال (Argument).** مجموعه‌ای از جمله‌ها که در آن بعضی (مقدمه‌ها) به‌عنوانِ دلیل برای دیگری (نتیجه) آورده می‌شوند. → [فصل ۳](03-logic-and-arguments.md#what-an-argument-is-and-is-not)
 
-**استدلالِ انگیزه‌مند (Motivated reasoning).** استدلالی که میل به رسیدن به نتیجه‌ای خاص آن را می‌راند. → [فصل ۱۴](14-psychology-of-reasoning.md#motivated-reasoning)
+**استدلالِ انگیزه‌مند (Motivated reasoning).** استدلالی که موتورش میل به رسیدن به نتیجه‌ای خاص است. → [فصل ۱۴](14-psychology-of-reasoning.md#motivated-reasoning)
 
-**استدلالِ معجزه‌نبودن (No-miracles argument).** موفقیتِ علم معجزه می‌بود مگر آنکه نظریه‌هایمان تقریباً درست باشند. → [فصل ۱۰](10-science-and-evidence.md#scientific-realism-and-anti-realism)
+**استدلالِ معجزه‌نبودن (No-miracles argument).** موفقیتِ علم معجزه بود، مگر اینکه نظریه‌هایمان تقریباً درست باشند. → [فصل ۱۰](10-science-and-evidence.md#scientific-realism-and-anti-realism)
 
 **استقرا (Induction).** استدلال از موردهای مشاهده‌شده به نتیجه‌های کلی یا به موردهای مشاهده‌نشده. → [فصل ۳](03-logic-and-arguments.md#deduction-induction-and-abduction)، [فصل ۹](09-induction-probability-bayes.md#humes-problem-of-induction)
 
@@ -72,7 +72,7 @@
 
 **امکانی (Contingent).** درست، اما می‌توانست نادرست باشد. → [فصل ۱](01-what-is-epistemology.md#necessary-and-contingent)
 
-**انسجام‌گرایی (Coherentism).** این دیدگاه که باورها با جور بودنشان با کلِ یک نظامِ باورها موجه می‌شوند، نه با بنیادهای پایه. → [فصل ۶](06-justification.md#coherentism)
+**انسجام‌گرایی (Coherentism).** این دیدگاه که باورها از راهِ جور بودن با کلِ یک نظامِ باورها موجه می‌شوند، نه با تکیه بر باورهای پایه. → [فصل ۶](06-justification.md#coherentism)
 
 **ایمنی (Safety).** باوری ایمن است اگر به‌آسانی نمی‌توانست نادرست باشد: در جهان‌های نزدیکی که آن را باور دارید، درست است. → [فصل ۵](05-the-nature-of-knowledge.md#safety)
 
@@ -80,7 +80,7 @@
 
 **بارِ اثبات (Burden of proof).** وظیفهٔ پشتیبانی از یک ادعا؛ اگر استدلالِ قاطعی در کار نباشد، طرفی که این بار را دارد می‌بازد. → [فصل ۱۶](16-critical-thinking-toolkit.md#burden-of-proof)
 
-**بازگشت به میانگین (Regression to the mean).** مقدارهای افراطی معمولاً با مقدارهایی نزدیک‌تر به میانگین دنبال می‌شوند. → [فصل ۹](09-induction-probability-bayes.md#regression-to-the-mean)
+**بازگشت به میانگین (Regression to the mean).** بعد از مقدارهای افراطی، معمولاً مقدارهایی نزدیک‌تر به میانگین می‌آید. → [فصل ۹](09-induction-probability-bayes.md#regression-to-the-mean)
 
 **باور (Belief).** نگرشِ درست دانستنِ یک گزاره. → [فصل ۱](01-what-is-epistemology.md#belief-credence-and-acceptance)
 
@@ -94,7 +94,7 @@
 
 **بحرانِ تکرارپذیری (Replication crisis).** این کشف که بسیاری از یافته‌های منتشرشده تکرار نمی‌شوند. → [فصل ۱۰](10-science-and-evidence.md#the-replication-crisis)
 
-**بختِ معرفتی (Epistemic luck).** بخت در اینکه یک باور چطور درست از آب درمی‌آید. بختِ صدقی با معرفت جور نیست. → [فصل ۵](05-the-nature-of-knowledge.md#epistemic-luck)
+**بختِ معرفتی (Epistemic luck).** نقشِ بخت در درست از آب درآمدنِ یک باور. بختِ صدقی با معرفت جمع نمی‌شود. → [فصل ۵](05-the-nature-of-knowledge.md#epistemic-luck)
 
 **برساخت‌گراییِ اجتماعی (Social constructionism).** این دیدگاه که بعضی چیزهایی که طبیعی دانسته می‌شوند ساختهٔ رفتارهای اجتماعی‌اند. → [فصل ۱۱](11-truth-and-relativism.md#social-constructionism)
 
@@ -102,11 +102,11 @@
 
 **برهانِ خلف (Reductio ad absurdum).** رد کردنِ یک ادعا با نشان دادنِ اینکه به تناقض یا بی‌معنایی می‌رسد. → [فصل ۳](03-logic-and-arguments.md#valid-argument-forms)
 
-**بسامدهای طبیعی (Natural frequencies).** نشان دادنِ احتمال‌ها به شکلِ شمارِ موردها («۹ از ۹۸»)، که استدلال را بهتر می‌کند. → [فصل ۹](09-induction-probability-bayes.md#natural-frequencies)
+**بسامدهای طبیعی (Natural frequencies).** نشان دادنِ احتمال‌ها به شکلِ تعدادِ موردها («۹ از ۹۸»)، که استدلال را آسان‌تر می‌کند. → [فصل ۹](09-induction-probability-bayes.md#natural-frequencies)
 
 **بی‌عدالتیِ گواهی (Testimonial injustice).** دادنِ اعتباری کمتر از حقِ گوینده به‌خاطرِ پیش‌داوریِ هویتی. → [فصل ۱۲](12-social-epistemology.md#testimonial-injustice)
 
-**بی‌عدالتیِ معرفتی (Epistemic injustice).** ظلمی که به کسی در مقامِ یک داننده می‌شود، به شکلِ گواهی یا تفسیری. → [فصل ۱۲](12-social-epistemology.md#epistemic-injustice)
+**بی‌عدالتیِ معرفتی (Epistemic injustice).** ظلمی که به کسی در مقامِ داننده می‌شود؛ دو شکلِ اصلی‌اش گواهی و تفسیری است. → [فصل ۱۲](12-social-epistemology.md#epistemic-injustice)
 
 ## پ
 
@@ -152,15 +152,15 @@
 
 **تعادلِ تأملی (Reflective equilibrium).** تنظیمِ اصل‌ها و داوری‌های موردی در برابرِ هم تا با هم جور شوند. → [فصل ۴](04-language-concepts-and-definitions.md#reflective-equilibrium)
 
-**تعیّن‌ناقص (Underdetermination).** وضعی که در آن شواهد با نظریه‌های رقیب هم جور است. → [فصل ۱۰](10-science-and-evidence.md#underdetermination)
+**تعیّن‌ناقص (Underdetermination).** وضعی که در آن شواهدِ موجود با نظریه‌های رقیب هم جور درمی‌آید. → [فصل ۱۰](10-science-and-evidence.md#underdetermination)
 
-**توجیه (Justification).** ویژگی‌ای که باور وقتی دارد که به دلیل‌های خوب داشته شود یا به شکلِ درست شکل گرفته باشد. توجیهِ گزاره‌ای یعنی داشتنِ دلیل‌های خوبِ در دسترس؛ توجیهِ باوری یعنی باور کردن به‌خاطرِ دلیل‌های خوب. → [فصل ۶](06-justification.md#what-justification-is)
+**توجیه (Justification).** ویژگی‌ای که باور وقتی دارد که به دلیل‌های خوب پذیرفته شده یا از راهِ درست شکل گرفته باشد. توجیهِ گزاره‌ای یعنی داشتنِ دلیل‌های خوبِ در دسترس؛ توجیهِ باوری یعنی باور کردن به‌خاطرِ دلیل‌های خوب. → [فصل ۶](06-justification.md#what-justification-is)
 
 **توسل به جهل (Argument from ignorance).** نتیجه گرفتنِ اینکه چیزی درست است چون نادرستی‌اش ثابت نشده، یا برعکس. → [فصل ۱۵](15-fallacies.md#argument-from-ignorance)
 
-**توهمِ عمقِ تبیینی (Illusion of explanatory depth).** باور به اینکه طرزِ کارِ چیزها را خیلی بهتر از آنچه واقعاً می‌فهمیم می‌فهمیم. → [فصل ۱۴](14-psychology-of-reasoning.md#overconfidence-and-the-illusion-of-explanatory-depth)
+**توهمِ عمقِ تبیینی (Illusion of explanatory depth).** این خیال که طرزِ کارِ چیزها را خیلی بهتر از آنچه واقعاً می‌فهمیم، می‌فهمیم. → [فصل ۱۴](14-psychology-of-reasoning.md#overconfidence-and-the-illusion-of-explanatory-depth)
 
-**تیغِ اوکام (Ockham's razor).** موجودات را بیش از ضرورت زیاد نکن؛ با فرضِ برابریِ باقی چیزها، تبیین‌های ساده‌تر را ترجیح بده. → [فصل ۱۶](16-critical-thinking-toolkit.md#philosophical-razors-and-heuristics)
+**تیغِ اوکام (Ockham's razor).** موجودات را بیش از ضرورت زیاد نکن؛ اگر همه‌چیز برابر است، توضیحِ ساده‌تر را ترجیح بده. → [فصل ۱۶](16-critical-thinking-toolkit.md#philosophical-razors-and-heuristics)
 
 ## ث
 
@@ -168,7 +168,7 @@
 
 ## ج
 
-**جزم‌گرایی (Dogmatism, Pryor's technical sense).** به معنای فنیِ پرایر: این دیدگاه که تجربهٔ ادراکی توجیهِ فوری و در نگاهِ نخست می‌دهد، بی‌نیاز به توجیهِ قبلی برای قابل‌اعتماد بودنِ ادراک. → [فصل ۸](08-skepticism.md#dogmatism)
+**جزم‌گرایی (Dogmatism, Pryor's technical sense).** به معنای فنیِ پرایر: این دیدگاه که تجربهٔ ادراکی بی‌واسطه و در نگاهِ نخست توجیه می‌آورد، بی‌آنکه از قبل لازم باشد قابل‌اعتماد بودنِ ادراک را موجه کرده باشیم. → [فصل ۸](08-skepticism.md#dogmatism)
 
 ## چ
 
@@ -190,13 +190,13 @@
 
 ## خ
 
-**خردِ جمعی (Wisdom of crowds).** دقتِ جمع‌بندیِ داوری‌های مستقل. → [فصل ۱۲](12-social-epistemology.md#the-wisdom-and-madness-of-crowds)
+**خردِ جمعی (Wisdom of crowds).** دقیق بودنِ جمع‌بندیِ داوری‌های مستقلِ آدم‌های زیاد. → [فصل ۱۲](12-social-epistemology.md#the-wisdom-and-madness-of-crowds)
 
 **خطاپذیرگرایی (Fallibilism).** این دیدگاه که می‌توانیم چیزی را بدانیم (یا موجه باور کنیم) حتی اگر پشتوانه‌هایمان درستی‌اش را تضمین نکنند. → [فصل ۶](06-justification.md#fallibilism)
 
 **خطرِ استقرایی (Inductive risk).** خطرِ اشتباه در پذیرفتن یا رد کردنِ یک فرضیه؛ پیامدهایش روی اینکه چه اندازه شاهد باید خواست اثر می‌گذارد. → [فصل ۱۰](10-science-and-evidence.md#values-in-science)
 
-**خودمحوریِ معرفتی (Epistemic egocentrism).** سختیِ کنار گذاشتنِ دانسته‌های خود وقتی دربارهٔ کسی که کمتر می‌داند داوری می‌کنیم؛ به آن نفرینِ دانش هم می‌گویند. → [فصل ۱۴](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)
+**خودمحوریِ معرفتی (Epistemic egocentrism).** اینکه وقتی دربارهٔ کسی که کمتر از ما می‌داند داوری می‌کنیم، سخت است دانسته‌های خودمان را کنار بگذاریم؛ به آن نفرینِ دانش هم می‌گویند. → [فصل ۱۴](14-psychology-of-reasoning.md#mindreading-how-we-attribute-knowledge)
 
 ## د
 
@@ -212,7 +212,7 @@
 
 **درون‌گراییِ دسترسی (Access internalism).** این دیدگاه که هر چیزی که باوری را موجه می‌کند باید با تأمل در دسترسِ خودِ باورکننده باشد. → [فصل ۶](06-justification.md#access-internalism-and-mentalism)
 
-**دژ و کشتزار (Motte and bailey).** مطرح کردنِ ادعایی جسورانه و عقب‌نشینی به ادعایی فروتنانه وقتی به چالش کشیده می‌شود. → [فصل ۱۵](15-fallacies.md#motte-and-bailey)
+**دژ و کشتزار (Motte and bailey).** مطرح کردنِ ادعایی جسورانه و عقب نشستن به ادعایی فروتنانه وقتی کسی آن را به چالش می‌کشد. → [فصل ۱۵](15-fallacies.md#motte-and-bailey)
 
 ## ذ
 
@@ -232,15 +232,15 @@
 
 ## س
 
-**سازش‌گرایی (Conciliationism).** این دیدگاه که وقتی می‌فهمید یک همتای معرفتی با شما مخالف است، باید به‌طورِ جدی به سوی دیدگاهِ او حرکت کنید. → [فصل ۱۲](12-social-epistemology.md#conciliationism)
+**سازش‌گرایی (Conciliationism).** این دیدگاه که وقتی می‌فهمید یک همتای معرفتی با شما مخالف است، باید نظرتان را به‌طورِ جدی به دیدگاهِ او نزدیک کنید. → [فصل ۱۲](12-social-epistemology.md#conciliationism)
 
 **سبزآبی (Grue).** محمولِ گودمن (سبز اگر پیش از زمانِ t بررسی شود، وگرنه آبی) که معمای تازهٔ استقرا را نشان می‌دهد. → [فصل ۹](09-induction-probability-bayes.md#goodmans-new-riddle-of-induction)
 
-**سوگیریِ بازماندگی (Survivorship bias).** نتیجه گرفتن از موردهایی که از یک فرایندِ گزینش جان به در برده‌اند، و نادیده گرفتنِ آن‌هایی که نبرده‌اند. → [فصل ۱۵](15-fallacies.md#survivorship-bias)
+**سوگیریِ بازماندگی (Survivorship bias).** نتیجه گرفتن از موردهایی که از یک صافی جان به در برده‌اند، و نادیده گرفتنِ آن‌هایی که از آن نگذشته‌اند. → [فصل ۱۵](15-fallacies.md#survivorship-bias)
 
 **سوگیریِ تأییدی (Confirmation bias).** گرایش به جست‌وجو، تفسیر و به یاد آوردنِ اطلاعات به شکلی که باورهای موجود را تأیید کند. → [فصل ۱۴](14-psychology-of-reasoning.md#confirmation-bias-and-myside-bias)
 
-**سوگیریِ جانبِ خود (Myside bias).** ارزیابی و ساختنِ شواهد به شکلی که به سودِ نظرهای خودمان سوگیری دارد. → [فصل ۱۴](14-psychology-of-reasoning.md#confirmation-bias-and-myside-bias)
+**سوگیریِ جانبِ خود (Myside bias).** ارزیابی و ساختنِ شواهد به شکلی که به سودِ نظرهای خودمان باشد. → [فصل ۱۴](14-psychology-of-reasoning.md#confirmation-bias-and-myside-bias)
 
 **سه‌راهیِ آگریپا (Agrippa's trilemma).** این استدلال که هر تلاشی برای توجیه یا به تسلسلِ بی‌پایان می‌رسد، یا به دور، یا به یک فرضِ دلبخواهی. به آن سه‌راهیِ مونشهاوزن هم می‌گویند. → [فصل ۶](06-justification.md#agrippas-trilemma)
 
@@ -256,7 +256,7 @@
 
 **شرطِ لازم (Necessary condition).** Q برای P لازم است اگر P بی Q نتواند درست باشد. → [فصل ۳](03-logic-and-arguments.md#necessary-and-sufficient-conditions)
 
-**شرطی‌سازی (Conditionalization).** به‌روز کردنِ درجه‌های باور به این شکل که احتمالِ تازهٔ H برابرِ احتمالِ شرطیِ قبلیِ H با فرضِ شاهدِ آموخته‌شده شود. → [فصل ۹](09-induction-probability-bayes.md#conditionalization)
+**شرطی‌سازی (Conditionalization).** به‌روز کردنِ درجه‌های باور به این شکل که احتمالِ تازهٔ H برابر شود با احتمالِ قبلیِ H به شرطِ شاهدی که تازه به دست آمده است. → [فصل ۹](09-induction-probability-bayes.md#conditionalization)
 
 **شکافِ هست و باید (Is–ought gap).** مشاهدهٔ هیوم که هیچ نتیجهٔ هنجاری‌ای از مقدمه‌های صرفاً واقعی به دست نمی‌آید. → [فصل ۴](04-language-concepts-and-definitions.md#facts-values-and-the-is-ought-gap)
 
@@ -266,7 +266,7 @@
 
 **شواهدگرایی (Evidentialism).** این دیدگاه که باوری موجه است اگر و فقط اگر با شواهدِ باورکننده جور باشد. → [فصل ۶](06-justification.md#evidentialism)
 
-**شیبِ لغزنده (Slippery slope).** استدلال کردن که قدمِ اول به زنجیره‌ای از پیامدها می‌رسد که به فاجعه ختم می‌شود؛ گاهی مغالطه است، گاهی نه. → [فصل ۱۵](15-fallacies.md#slippery-slope)
+**شیبِ لغزنده (Slippery slope).** این استدلال که قدمِ اول زنجیره‌ای از پیامدها را راه می‌اندازد که به فاجعه ختم می‌شود؛ گاهی مغالطه است و گاهی نه. → [فصل ۱۵](15-fallacies.md#slippery-slope)
 
 ## ض
 
@@ -276,7 +276,7 @@
 
 ## ع
 
-**عقلانیتِ بوم‌شناختی (Ecological rationality).** این دیدگاه که میان‌برهای ذهنی وقتی عقلانی‌اند که با ساختارِ محیط سازگار باشند. → [فصل ۱۴](14-psychology-of-reasoning.md#ecological-rationality)
+**عقلانیتِ بوم‌شناختی (Ecological rationality).** این دیدگاه که میان‌برهای ذهنی وقتی عقلانی‌اند که با ساختارِ محیط جور باشند. → [فصل ۱۴](14-psychology-of-reasoning.md#ecological-rationality)
 
 **عقل‌گرایی (Rationalism).** این دیدگاه که عقل سرچشمهٔ مهمی از معرفت است، از جمله معرفتِ پیشینِ پرمحتوا. → [فصل ۲](02-history-of-epistemology.md#the-early-modern-revolution)، [فصل ۷](07-sources-of-knowledge.md#rationalism-and-empiricism-about-the-a-priori)
 
@@ -324,7 +324,7 @@
 
 ## گ
 
-**گروه‌اندیشی (Groupthink).** گرایشِ یک گروهِ منسجم به سرکوبِ مخالفت و در نظر نگرفتنِ بدیل‌ها. → [فصل ۱۲](12-social-epistemology.md#the-wisdom-and-madness-of-crowds)
+**گروه‌اندیشی (Groupthink).** گرایشِ یک گروهِ یکدل به خفه کردنِ مخالفت و در نظر نگرفتنِ راه‌های دیگر. → [فصل ۱۲](12-social-epistemology.md#the-wisdom-and-madness-of-crowds)
 
 **گزاره (Proposition).** آنچه یک جملهٔ خبری بیان می‌کند؛ حاملِ درستی و نادرستی. → [فصل ۱](01-what-is-epistemology.md#the-basic-vocabulary)
 
@@ -334,7 +334,7 @@
 
 **گواهی (Testimony).** باور کردنِ چیزی چون کسی به شما گفته است. → [فصل ۷](07-sources-of-knowledge.md#testimony)
 
-**گوش‌به‌زنگیِ معرفتی (Epistemic vigilance).** زیرِ نظر گرفتنِ عمدتاً ناآگاهانهٔ آگاه‌کنندگان از نظرِ توانایی و صداقت. → [فصل ۷](07-sources-of-knowledge.md#reductionism)
+**گوش‌به‌زنگیِ معرفتی (Epistemic vigilance).** سنجیدنِ توانایی و صداقتِ خبررسانان، که بیشتر ناآگاهانه انجام می‌شود. → [فصل ۷](07-sources-of-knowledge.md#reductionism)
 
 ## ل
 
@@ -342,13 +342,13 @@
 
 ## م
 
-**مبنا‌انسجام‌گرایی (Foundherentism).** ترکیبِ هاک از مبناگرایی و انسجام‌گرایی، با الگوی جدولِ کلمات. → [فصل ۶](06-justification.md#foundherentism)
+**مبنا‌انسجام‌گرایی (Foundherentism).** ترکیبِ سوزان هاک از مبناگرایی و انسجام‌گرایی، با الگوی جدولِ کلمات متقاطع. → [فصل ۶](06-justification.md#foundherentism)
 
 **مبناگرایی (Foundationalism).** این دیدگاه که باورهای موجه در نهایت بر باورهای پایه‌ای تکیه دارند که بی‌استنتاج موجه‌اند. → [فصل ۶](06-justification.md#foundationalism)
 
 **محافظه‌کاریِ پدیداری (Phenomenal conservatism).** اگر به نظرِ S برسد که p، آنگاه S به همین دلیل مقداری توجیه برای p دارد، مگر آنکه ابطال‌کننده‌ای در کار باشد. → [فصل ۶](06-justification.md#phenomenal-conservatism)
 
-**مخدوش‌گری (Confounding).** عاملِ سومی که علتِ هر دو متغیرِ همبسته است و همبستگیِ گمراه‌کننده‌ای می‌سازد. → [فصل ۱۰](10-science-and-evidence.md#correlation-and-causation)
+**مخدوش‌گری (Confounding).** وجودِ عاملِ سومی که علتِ هر دو متغیرِ همبسته است و همبستگیِ گمراه‌کننده‌ای پدید می‌آورد. → [فصل ۱۰](10-science-and-evidence.md#correlation-and-causation)
 
 **مدلِ تولمین (Toulmin model).** مدلی از استدلال با ادعا، داده، مجوز، پشتوانه، قید و ردیه. → [فصل ۳](03-logic-and-arguments.md#the-toulmin-model)
 
@@ -390,13 +390,13 @@
 
 **مغالطهٔ عطف (Conjunction fallacy).** محتمل‌تر دانستنِ یک عطف (الف و ب) از یکی از اجزایش. → [فصل ۹](09-induction-probability-bayes.md#the-conjunction-fallacy)
 
-**مغالطهٔ مردِ نقاب‌دار (Masked man fallacy).** جایگزین کردنِ دو نامِ هم‌مصداق در بافتِ باور یا دانستن. → [فصل ۴](04-language-concepts-and-definitions.md#the-masked-man-fallacy)
+**مغالطهٔ مردِ نقاب‌دار (Masked man fallacy).** جابه‌جا کردنِ دو نام که به یک چیز اشاره دارند، در جمله‌ای دربارهٔ باور یا دانستن. → [فصل ۴](04-language-concepts-and-definitions.md#the-masked-man-fallacy)
 
 **مغز در خمره (Brain in a vat).** سناریویی شکاکانه که در آن مغزی بی‌بدن تجربه‌هایی رایانه‌ساخته دریافت می‌کند که از زندگیِ عادی قابلِ تشخیص نیستند. → [فصل ۸](08-skepticism.md#the-brain-in-a-vat)
 
-**مفهومِ ذاتاً مناقشه‌برانگیز (Essentially contested concept).** مفهومی که کاربردِ درستش ذاتاً محلِ بحث است، مثلِ دموکراسی یا عدالت (گالی). → [فصل ۴](04-language-concepts-and-definitions.md#essentially-contested-concepts)
+**مفهومِ ذاتاً مناقشه‌برانگیز (Essentially contested concept).** مفهومی که ذاتاً بر سرِ کاربردِ درستش اختلاف هست، مثلِ دموکراسی یا عدالت (گالی). → [فصل ۴](04-language-concepts-and-definitions.md#essentially-contested-concepts)
 
-**مقدارِ p (P-value).** احتمالِ به دست آمدنِ داده‌هایی دست‌کم به اندازهٔ داده‌های مشاهده‌شده افراطی، با فرضِ فرضیهٔ صفر و مدل. احتمالِ درست بودنِ فرضیهٔ صفر نیست. → [فصل ۹](09-induction-probability-bayes.md#p-values)
+**مقدارِ p (P-value).** احتمالِ اینکه، اگر فرضیهٔ صفر و مدل درست باشند، داده‌هایی دست‌کم به اندازهٔ داده‌های مشاهده‌شده افراطی به دست بیاید. احتمالِ درست بودنِ فرضیهٔ صفر نیست. → [فصل ۹](09-induction-probability-bayes.md#p-values)
 
 **موردِ گتیه (Gettier case).** موردی از باورِ صادقِ موجه که معرفت نیست، چون باور از روی بخت درست است. → [فصل ۵](05-the-nature-of-knowledge.md#the-gettier-problem)
 
@@ -438,11 +438,11 @@
 
 **نفرینِ دانش (Curse of knowledge).** نگاه کنید به *خودمحوریِ معرفتی*.
 
-**نفوذِ ملاحظه‌های اخلاقی (Moral encroachment).** این دیدگاه که ملاحظه‌های اخلاقی می‌توانند روی آنچه در باورش موجه‌ایم اثر بگذارند. → [فصل ۱۳](13-virtues-and-ethics-of-belief.md#moral-encroachment)
+**نفوذِ ملاحظه‌های اخلاقی (Moral encroachment).** این دیدگاه که ملاحظه‌های اخلاقی می‌توانند در اینکه به چه چیزی موجهانه باور داریم اثر بگذارند. → [فصل ۱۳](13-virtues-and-ethics-of-belief.md#moral-encroachment)
 
-**نفوذِ ملاحظه‌های عملی (Pragmatic encroachment).** این دیدگاه که اهمیتِ عملیِ یک موضوع روی اینکه کسی می‌داند یا موجه است اثر می‌گذارد. → [فصل ۱۳](13-virtues-and-ethics-of-belief.md#pragmatic-encroachment)
+**نفوذِ ملاحظه‌های عملی (Pragmatic encroachment).** این دیدگاه که اهمیتِ عملیِ یک موضوع در اینکه کسی می‌داند یا موجه است اثر دارد. → [فصل ۱۳](13-virtues-and-ethics-of-belief.md#pragmatic-encroachment)
 
-**نقشه‌کشیِ استدلال (Argument mapping).** کشیدنِ نمودارِ ساختارِ استدلال: مقدمه‌ها، نتیجه‌ها، اعتراض‌ها و جواب‌ها. → [فصل ۳](03-logic-and-arguments.md#argument-mapping)
+**نقشهٔ استدلال (Argument mapping).** کشیدنِ نمودارِ ساختارِ یک استدلال: مقدمه‌ها، نتیجه‌ها، اعتراض‌ها و جواب‌ها. → [فصل ۳](03-logic-and-arguments.md#argument-mapping)
 
 **نقطهٔ گرهی (Crux).** نکته‌ای که اختلاف به آن بستگی دارد؛ روشن شدنش نظرِ کسی را عوض می‌کند. → [فصل ۱۶](16-critical-thinking-toolkit.md#step-6-find-the-crux)
 
@@ -450,7 +450,7 @@
 
 ## و
 
-**واقعیت‌نما (Factive).** فعل یا حالتی که درستیِ متممش را لازم دارد: «می‌داند که p» مستلزمِ p است. → [فصل ۵](05-the-nature-of-knowledge.md#the-truth-condition)
+**واقعیت‌نما (Factive).** فعل یا حالتی که لازمه‌اش درستیِ متممش است: از «می‌داند که p» نتیجه می‌شود که p. → [فصل ۵](05-the-nature-of-knowledge.md#the-truth-condition)
 
 **وثاقت‌گرایی (Reliabilism).** این دیدگاه که معرفت یا توجیه به این بستگی دارد که باور از فرایندی قابل‌اعتماد پدید آمده باشد. → [فصل ۵](05-the-nature-of-knowledge.md#reliabilism)، [فصل ۶](06-justification.md#reliabilism-about-justification)
 
