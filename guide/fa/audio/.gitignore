@@ -1,0 +1,4 @@
+tools/voices/
+tools/.narrate-cache/
+tools/.espeak/
+tools/__pycache__/
