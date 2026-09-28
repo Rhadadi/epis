@@ -204,6 +204,11 @@ def load(threads):
         decoder = hf_hub_download("ResembleAI/chatterbox-turbo", "s3gen_meanflow.safetensors")
     s3gen = S3Gen(meanflow=True)
     s3gen.load_state_dict(load_file(decoder), strict=True)
+    decode = s3gen.inference
+
+    def inference(speech_tokens, **kw):  # like Turbo, pass on speech tokens only, no control tokens
+        return decode(speech_tokens=speech_tokens[speech_tokens < 6561], **kw)
+    s3gen.inference = inference
     _TTS.s3gen = s3gen.to(device).eval()
     if int8():
         _TTS.t3.tfmr = torch.ao.quantization.quantize_dynamic(_TTS.t3.tfmr, {torch.nn.Linear}, dtype=torch.qint8)
@@ -272,14 +277,20 @@ def generate(job):
     best = None
     for attempt in range(TRIES):
         torch.manual_seed(int(key[:8], 16) + attempt)
-        wav = _TTS.generate(text=text, language_id=None, exaggeration=exaggeration,
-                            cfg_weight=CFG_WEIGHT, temperature=TEMPERATURE)
+        try:
+            wav = _TTS.generate(text=text, language_id=None, exaggeration=exaggeration,
+                                cfg_weight=CFG_WEIGHT, temperature=TEMPERATURE)
+        except Exception as e:  # a bad draw; try another seed
+            print(f"  generation failed ({e.__class__.__name__}: {e}), retrying: {text[:60]}", flush=True)
+            continue
         audio = trim(wav.squeeze(0).cpu().numpy().astype(np.float32))
         score, ok = misfit(text, audio)
         if best is None or score < best[1]:
             best = (audio, score, ok)
         if ok:
             break
+    if best is None:
+        raise RuntimeError(f"could not generate: {text}")
     path = cache_path(key)
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(f".{os.getpid()}.tmp")
