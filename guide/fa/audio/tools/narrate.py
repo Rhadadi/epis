@@ -72,6 +72,7 @@ os.environ.setdefault("TQDM_DISABLE", "1")  # the model draws a progress bar for
 HERE = Path(__file__).resolve().parent
 AUDIO = HERE.parent
 SCRIPTS = AUDIO / "scripts"
+SYNC = AUDIO / "sync"
 CACHE = Path(os.environ.get("NARRATE_CACHE", HERE / ".narrate-cache"))
 REFERENCE = HERE / "voice" / "narrator.flac"
 SR = 24000
@@ -533,16 +534,20 @@ def speak(parts, kind):
     return shape(np.concatenate(audio), semitones, tempo)
 
 
-def render(script, workers, threads, log):
-    """Script text to (audio, title, sections), where sections are (title, seconds)."""
+def render(script, workers, threads, log, generate=True):
+    """Script text to (audio, title, sections, spans): sections are (title, seconds), for the MP3's
+    chapter markers; spans are the spoken lines with their times, for read-along and EPUB Media Overlays.
+    With generate=False every piece must already be in the cache."""
     cues = parse(script)
     parts = plan(cues)
     jobs = {key: (text, ex, key) for ps in parts.values() for text, ex, key in ps}
     todo = [job for key, job in jobs.items() if not cache_path(key).exists()]
     log(f"{len(parts)} lines, {len(jobs)} pieces, {len(todo)} to generate")
+    if todo and not generate:
+        raise SystemExit(f"{len(todo)} pieces are not in the cache; render the chapter first")
     run_jobs(todo, workers, threads, log)
 
-    out, sections, title = [silence(0.8)], [], ""
+    out, sections, spans, title = [silence(0.8)], [], [], ""
     length = [len(out[0])]
 
     def add(a):
@@ -569,10 +574,20 @@ def render(script, workers, threads, log):
                 add(bell())
             add(silence(before))
             if text:
+                begin = length[0] / SR
                 add(speak(parts[(kind, text)], kind))
+                spans.append({"kind": kind, "text": text, "begin": round(begin, 3), "end": round(length[0] / SR, 3)})
             add(silence(after))
     add(silence(1.5))
-    return np.concatenate(out), title, sections
+    return np.concatenate(out), title, sections, spans
+
+
+def write_sync(name, title, spans, duration):
+    """sync/NN-*.json: every spoken line of a chapter with its start and end in the MP3, in seconds."""
+    SYNC.mkdir(exist_ok=True)
+    (SYNC / f"{name}.json").write_text(json.dumps(
+        {"file": f"{name}.mp3", "title": title, "duration": round(duration, 3), "lines": spans},
+        ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
 
 
 def master(audio, out_mp3, title, track, total, sections):
@@ -615,9 +630,22 @@ def narrate_one(script_path, out_dir, workers, threads):
 
     def log(msg):
         print(f"[{name}] {msg}", flush=True)
-    audio, title, sections = render(script_path.read_text(encoding="utf-8"), workers, threads, log)
+    audio, title, sections, spans = render(script_path.read_text(encoding="utf-8"), workers, threads, log)
     duration = master(audio, out_dir / f"{name}.mp3", title, int(name[:2]), 16, sections)
+    write_sync(name, title, spans, duration)
     log(f"done: {duration / 60:.1f} min")
+
+
+def sync_only(script_path, out_dir):
+    """Rebuild a narrated chapter's sync file from the cache, without generating or re-encoding anything,
+    and check it against the MP3's length."""
+    name = script_path.stem
+    audio, title, _, spans = render(script_path.read_text(encoding="utf-8"), 1, 1, lambda m: None, generate=False)
+    duration = len(audio) / SR
+    mp3 = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                str(out_dir / f"{name}.mp3")], capture_output=True, text=True, check=True).stdout)
+    write_sync(name, title, spans, duration)
+    print(f"{name}: {len(spans)} lines, {duration:.2f} s rendered, MP3 {mp3:.2f} s (difference {mp3 - duration:+.3f} s)")
 
 
 def build_index(out_dir):
@@ -654,6 +682,7 @@ def main():
     ap.add_argument("--role", default="say", help="role for --say (say, quote, voice1, voice2...)")
     ap.add_argument("--plan", action="store_true", help="only show how the scripts are cut into pieces")
     ap.add_argument("--index", action="store_true", help="only rebuild tracks.js")
+    ap.add_argument("--sync", action="store_true", help="only rebuild the sync files of narrated chapters from the cache")
     args = ap.parse_args()
 
     workers = args.workers
@@ -676,6 +705,11 @@ def main():
         scripts = [s for s in scripts if s.name[:2] in args.chapters]
     if not scripts:
         sys.exit("no scripts selected")
+    if args.sync:
+        for s in scripts:
+            if (out_dir / f"{s.stem}.mp3").exists():
+                sync_only(s, out_dir)
+        return
     if args.plan:
         for s in scripts:
             parts = plan(parse(s.read_text(encoding="utf-8")))
