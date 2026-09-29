@@ -378,9 +378,21 @@ def run_jobs(jobs, workers, threads, log):
             report(generate(job))
         return
     import multiprocessing as mp
-    with mp.get_context("spawn").Pool(workers, initializer=load, initargs=(threads,)) as pool:
-        for result in pool.imap_unordered(generate, jobs):
-            report(result)
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+    from concurrent.futures.process import BrokenProcessPool
+    pending = list(jobs)
+    for _ in range(5):
+        try:
+            # A worker's memory creeps up over a long run, so each one is replaced after 30 pieces.
+            with ProcessPoolExecutor(workers, mp_context=mp.get_context("spawn"), initializer=load, initargs=(threads,),
+                                     max_tasks_per_child=30) as pool:
+                for future in as_completed([pool.submit(generate, job) for job in pending]):
+                    report(future.result())
+            return
+        except BrokenProcessPool:  # a worker was killed, usually for lack of memory: start again from the cache
+            pending = [job for job in pending if not cache_path(job[2]).exists()]
+            log(f"  a worker died; restarting the workers for the {len(pending)} pieces left")
+    raise RuntimeError("the workers keep dying")
 
 
 # ---------------------------------------------------------------------------
