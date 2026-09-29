@@ -83,6 +83,7 @@ TEMPERATURE = 0.8
 MAX_CHARS = 220       # longest piece of text read in one go
 PIECE_GAP = 0.30      # seconds between the pieces of one paragraph
 TRIES = 4             # generations per piece before keeping the best one
+BATCH = 60            # pieces per set of worker processes
 
 # role: (exaggeration, pitch in semitones, tempo, seconds of silence before, seconds after)
 # Exaggeration is Chatterbox's expressiveness setting (0.5 is neutral). There is
@@ -218,6 +219,19 @@ def load(threads):
     assert _TTS.sr == SR
     if ASR_DIR:
         load_asr(threads)
+    release_memory()
+
+
+def release_memory():
+    """Hand the memory freed while loading (the weight files, the unused original decoder) back to
+    the system; otherwise each worker keeps several gigabytes it no longer needs."""
+    import ctypes
+    import gc
+    gc.collect()
+    try:
+        ctypes.CDLL("libc.so.6").malloc_trim(0)
+    except OSError:  # not glibc
+        pass
 
 
 @functools.cache
@@ -380,19 +394,22 @@ def run_jobs(jobs, workers, threads, log):
     import multiprocessing as mp
     from concurrent.futures import ProcessPoolExecutor, as_completed
     from concurrent.futures.process import BrokenProcessPool
-    pending = list(jobs)
-    for _ in range(5):
-        try:
-            # A worker's memory creeps up over a long run, so each one is replaced after 30 pieces.
-            with ProcessPoolExecutor(workers, mp_context=mp.get_context("spawn"), initializer=load, initargs=(threads,),
-                                     max_tasks_per_child=30) as pool:
-                for future in as_completed([pool.submit(generate, job) for job in pending]):
-                    report(future.result())
+    failures = 0
+    while True:
+        pending = [job for job in jobs if not cache_path(job[2]).exists()]
+        if not pending:
             return
-        except BrokenProcessPool:  # a worker was killed, usually for lack of memory: start again from the cache
-            pending = [job for job in pending if not cache_path(job[2]).exists()]
-            log(f"  a worker died; restarting the workers for the {len(pending)} pieces left")
-    raise RuntimeError("the workers keep dying")
+        # A worker's memory creeps up over a long run, so fresh workers take each batch of pieces.
+        batch = pending[:BATCH]
+        try:
+            with ProcessPoolExecutor(workers, mp_context=mp.get_context("spawn"), initializer=load, initargs=(threads,)) as pool:
+                for future in as_completed([pool.submit(generate, job) for job in batch]):
+                    report(future.result())
+        except BrokenProcessPool:  # a worker was killed, usually for lack of memory: carry on from the cache
+            failures += 1
+            if failures > 5:
+                raise RuntimeError("the workers keep dying")
+            log("  a worker died; starting new workers")
 
 
 # ---------------------------------------------------------------------------
