@@ -1,0 +1,5 @@
+chapter 4: 1 changed segments, about 135 credits; 117,280 left
+  segment 8/44 (second): 2,215 characters, cost 134, request pjDbtHES97e0Kt7fFU5W
+[mp3 @ 0x55c0c514af00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4353156864 >= 4352620016
+[mp3 @ 0x55c0c514af00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4353156864 >= 4352958704
+chapter 4: replaced segments 8; to publish: /home/user/epis/guide/fa/audio/tools/.eleven/publish/04-language-concepts-and-definitions.mp3 (22.7 MB) and /home/user/epis/guide/fa/audio/tools/.eleven/publish/sync/04-language-concepts-and-definitions.json
