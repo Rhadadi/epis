@@ -1,36 +1,53 @@
 #!/usr/bin/env python3
-"""Narrate the Persian chapters with ElevenLabs, carefully and resumably.
+"""Narrate the Persian chapters with ElevenLabs, in two voices, carefully and resumably.
 
-    python3 eleven_narrate.py --dry-run          # exact characters and predicted credits; no generation
-    python3 eleven_narrate.py --test             # one request of exactly 1,000 characters from chapter 1
-    python3 eleven_narrate.py --chapter 3        # narrate one chapter
-    python3 eleven_narrate.py --all              # narrate every chapter
-    python3 eleven_narrate.py --all --resume     # the same; chunks already made are never made again
+    python3 eleven_narrate.py --dry-run               # characters, requests and predicted credits; no generation
+    python3 eleven_narrate.py --test                  # one request of exactly 1,000 characters from chapter 1
+    python3 eleven_narrate.py --chapter 1 --sample 4000   # the start of chapter 1 (about 4,000 characters) as a preview
+    python3 eleven_narrate.py --chapter 3             # narrate one chapter
+    python3 eleven_narrate.py --all                   # narrate every chapter
+    python3 eleven_narrate.py --all --resume          # the same; segments already made are never made again
 
 The text is the one the Gooya narration speaks (scripts/NN-*.txt, as in
-transcripts/): section titles, paragraphs, quotations and quiz lines, one
-paragraph each. A chapter is cut into chunks of about 4,000 to 6,000
-characters, only between paragraphs or sentences and preferably where a new
-section starts, so that a bad take costs little to redo. Each chunk is sent
-with the request IDs of the chunks before it (ElevenLabs request stitching),
-so voice, pace and intonation run on across the joins. Chunks are saved
-separately and joined without re-encoding into one MP3 per chapter.
+transcripts/). Two voices read it. The main voice (a male narrator) reads
+nearly everything; the second voice (female) reads the quotations, the
+second speaker in dialogues, and the quiz questions, so the quiz sounds like
+a conversation: she asks, there is time to think, he answers. ROLES below says
+which lines go to the second voice.
 
-Everything about the voice is fixed in the manifest at the first generation:
-voice, model, voice settings, output format. Later runs refuse to go on with
+A chapter becomes a row of segments, each read by one voice: a new segment
+starts where the voice changes, where a section starts, and at the quiz's
+thinking time, and a long run is cut, only between paragraphs or sentences,
+at about 5,000 characters, so a bad take costs little to redo. Between
+segments come silence and, at each section, the same soft chime as the Gooya
+edition; these are made here with ffmpeg and cost nothing. Each segment is
+sent with the request IDs of the same voice's previous segments (ElevenLabs
+request stitching), so voice, pace and intonation run on across the joins.
+
+Segments are generated with the timestamps endpoint, which returns the time
+of every character; from it come the start and end of each spoken line,
+written to a sync file like the Gooya edition's (for read-along and EPUB 3
+Media Overlays). Segments are saved separately and joined without re-encoding
+into one MP3 per chapter, with the chapter's title, tags and a marker for
+each section.
+
+Everything about the voices is fixed in the manifest at the first generation:
+voices, model, voice settings, output format. Later runs refuse to go on with
 anything different, so the whole book sounds the same.
 
-Money: before every chapter (and every chunk) the subscription is read, and
+Money: before every chapter (and every segment) the subscription is read, and
 nothing is generated unless the remaining credits cover it; usage beyond the
 plan's credits (overage) is never used, even where the account allows it.
 
-Needs: the requests package and ffmpeg; ELEVENLABS_API_KEY and
-ELEVENLABS_VOICE_ID in the environment (the key is only read from there and
-never written anywhere); optionally ELEVENLABS_MODEL_ID.
-State lives in tools/.eleven/: manifest.json, chunks/ and chapters/.
+Needs: the requests package and ffmpeg; ELEVENLABS_API_KEY in the
+environment (the key is only read from there and never written anywhere).
+Voices and model can be changed with --voice, --voice2 and --model before the
+first generation. State lives in tools/.eleven/: manifest.json, segments/ and
+chapters/ (each chapter's MP3 and sync file, for review before publishing).
 """
 
 import argparse
+import base64
 import datetime
 import hashlib
 import json
@@ -46,13 +63,20 @@ AUDIO = HERE.parent
 SCRIPTS = AUDIO / "scripts"
 STATE = Path(os.environ.get("ELEVEN_STATE", HERE / ".eleven"))
 MANIFEST = STATE / "manifest.json"
+SEGMENTS = STATE / "segments"
+CHAPTERS = STATE / "chapters"
 API = "https://api.elevenlabs.io/v1"
 
 MODEL = os.environ.get("ELEVENLABS_MODEL_ID", "eleven_v4_turbo")
+VOICES = {"main": "VKDkQOjcRZb7aNtJGaWt", "second": "ndcUYGFbbd96WXiZVVaQ"}
+ROLES = {"quote": "second", "voice2": "second", "voice3": "second", "question": "second"}  # everything else: main
 OUTPUT = "mp3_44100_128"
-MIN_CHUNK, TARGET_CHUNK, MAX_CHUNK = 4000, 5000, 6000
+MAX_SEGMENT, TARGET_SEGMENT = 6000, 5000
 TEST_CHARS = 1000
+GAP = 0.35         # seconds of silence where the voice changes
+LONG_PAUSE = 1.5   # pauses at least this long (the quiz's thinking time) become silence between segments
 
+ALBUM = "تسلط بر معرفت‌شناسی (نسخهٔ صوتی)"
 
 
 def parse(script):
@@ -73,12 +97,8 @@ def parse(script):
 
 def paragraphs(script_path):
     """The chapter as spoken paragraphs: [(kind, text)], in order."""
-    out = []
-    for kind, text in parse(script_path.read_text(encoding="utf-8")):
-        if kind in ("title", "pause", "think", "chime") or not text:
-            continue
-        out.append((kind, text.strip()))
-    return out
+    return [(k, t.strip()) for k, t in parse(script_path.read_text(encoding="utf-8"))
+            if k not in ("title", "pause", "think", "chime") and t]
 
 
 def sentences(text):
@@ -90,37 +110,75 @@ def sentences(text):
     return [p for p in parts if p]
 
 
-def chunks(paras):
-    """Group paragraphs into chunks of about TARGET_CHUNK characters (never above MAX_CHUNK), cutting only
-    between paragraphs, or between sentences inside a paragraph that is too long by itself. Once a chunk
-    has MIN_CHUNK characters, a new section starts a new chunk."""
-    units = []  # (text, starts_section)
-    for kind, text in paras:
-        if len(text) <= MAX_CHUNK:
-            units.append((text, kind == "section"))
+def plan_chapter(script_path):
+    """The chapter as a row of segments:
+        {"type": "speech", "role": "main"|"second", "lines": [(kind, text), ...]}
+        {"type": "silence", "seconds": x}   {"type": "chime"}
+    plus its title and the section markers [(title, index of the first segment of the section)]."""
+    title, segs, markers = "", [], []
+    cur, pending = None, 0.0
+
+    def flush():
+        nonlocal cur
+        if cur:
+            segs.append(cur)
+        cur = None
+
+    def pause(seconds):
+        if segs and segs[-1]["type"] == "silence":
+            segs[-1]["seconds"] = max(segs[-1]["seconds"], seconds)
+        else:
+            segs.append({"type": "silence", "seconds": seconds})
+
+    for kind, text in parse(script_path.read_text(encoding="utf-8")):
+        if kind == "title":
+            title = text
             continue
-        cur = ""
-        for s in sentences(text):
-            if cur and len(cur) + 1 + len(s) > MAX_CHUNK:
-                units.append((cur, False))
-                cur = s
-            else:
-                cur = f"{cur} {s}".strip()
-        units.append((cur, False))
-    out, cur = [], []
-    size = lambda parts: sum(len(p) for p in parts) + 2 * max(0, len(parts) - 1)
-    for text, section in units:
-        if cur and (size(cur + [text]) > MAX_CHUNK
-                    or (size(cur) >= TARGET_CHUNK)
-                    or (section and size(cur) >= MIN_CHUNK)):
-            out.append("\n\n".join(cur))
-            cur = []
-        cur.append(text)
-    if cur:
-        out.append("\n\n".join(cur))
-    if len(out) > 1 and len(out[-1]) < 1500 and len(out[-2]) + 2 + len(out[-1]) <= MAX_CHUNK:
-        out[-2:] = [out[-2] + "\n\n" + out[-1]]  # no tiny last chunk
-    return out
+        if kind in ("pause", "think"):
+            pending = max(pending, float(text))
+            if pending >= LONG_PAUSE:
+                flush()
+                pause(pending)
+                pending = 0.0
+            continue
+        if kind == "chime":
+            flush()
+            pause(max(pending, 0.3))
+            segs.append({"type": "chime"})
+            pending = 0.0
+            continue
+        if not text:
+            continue
+        role = ROLES.get(kind, "main")
+        if kind == "section":
+            flush()
+            pause(0.9)
+            markers.append((text, len(segs)))
+            segs.append({"type": "chime"})
+            pause(0.45)
+            pending = 0.0
+        elif kind == "opening":
+            markers.append((text, 0))
+        size = sum(len(t) + 2 for _, t in cur["lines"]) if cur else 0
+        if cur and (cur["role"] != role or size + len(text) > MAX_SEGMENT or size >= TARGET_SEGMENT):
+            voice_change = cur["role"] != role
+            flush()
+            if voice_change or pending:
+                pause(max(pending, GAP if voice_change else 0.0))
+        if not cur:
+            cur = {"type": "speech", "role": role, "lines": []}
+        cur["lines"].append((kind, text))
+        pending = 0.0
+    flush()
+    pause(1.5)
+    for s in segs:  # a paragraph too long for one request is cut between sentences
+        if s["type"] == "speech" and len(seg_text(s)) > MAX_SEGMENT:
+            raise SystemExit(f"a paragraph in {script_path.name} is longer than {MAX_SEGMENT} characters; split it in the script")
+    return title, segs, markers
+
+
+def seg_text(seg):
+    return "\n\n".join(t for _, t in seg["lines"])
 
 
 def test_text(paras, n=TEST_CHARS):
@@ -168,13 +226,6 @@ def key():
     return k
 
 
-def voice_id(args):
-    v = args.voice or os.environ.get("ELEVENLABS_VOICE_ID")
-    if not v:
-        raise SystemExit("set ELEVENLABS_VOICE_ID (or pass --voice)")
-    return v
-
-
 def call(method, path, **kw):
     import requests
     headers = {"xi-api-key": key(), **kw.pop("headers", {})}
@@ -208,24 +259,39 @@ def subscription():
 def voice_settings(vid):
     r = call("GET", f"/voices/{vid}/settings")
     if r.status_code != 200:
-        raise SystemExit(f"could not read the voice's settings: {r.status_code} {r.text[:300]}")
+        raise SystemExit(f"could not read the settings of voice {vid}: {r.status_code} {r.text[:300]}")
     return r.json()
 
 
-def speak(text, vid, settings, seed, previous=(), next_text=None):
-    """One generation. Returns (mp3 bytes, request id, character cost, all response headers)."""
+def cost_of(headers):
+    h = {k.lower(): v for k, v in headers.items()}
+    cost = h.get("character-cost") or h.get("x-character-count")
+    return h, h.get("request-id") or h.get("x-request-id"), int(cost) if cost and cost.isdigit() else None
+
+
+def speak(text, vid, settings, seed):
+    """One plain generation (used by --test). Returns (mp3 bytes, request id, character cost, headers)."""
+    body = {"text": text, "model_id": MODEL, "voice_settings": settings, "seed": seed}
+    r = call("POST", f"/text-to-speech/{vid}", params={"output_format": OUTPUT}, json=body, headers={"Accept": "audio/mpeg"})
+    if r.status_code != 200:
+        raise RuntimeError(f"generation failed: {r.status_code} {r.text[:400]}")
+    h, request_id, cost = cost_of(r.headers)
+    return r.content, request_id, cost, h
+
+
+def speak_timed(text, vid, settings, seed, previous=(), next_text=None):
+    """One generation with character timings. Returns (mp3 bytes, alignment, request id, character cost)."""
     body = {"text": text, "model_id": MODEL, "voice_settings": settings, "seed": seed}
     if previous:
         body["previous_request_ids"] = list(previous)[-3:]
     if next_text:
         body["next_text"] = next_text
-    r = call("POST", f"/text-to-speech/{vid}", params={"output_format": OUTPUT}, json=body,
-             headers={"Accept": "audio/mpeg"})
+    r = call("POST", f"/text-to-speech/{vid}/with-timestamps", params={"output_format": OUTPUT}, json=body)
     if r.status_code != 200:
         raise RuntimeError(f"generation failed: {r.status_code} {r.text[:400]}")
-    h = {k.lower(): v for k, v in r.headers.items()}
-    cost = h.get("character-cost") or h.get("x-character-count")
-    return r.content, h.get("request-id") or h.get("x-request-id"), int(cost) if cost and cost.isdigit() else None, h
+    data = r.json()
+    _, request_id, cost = cost_of(r.headers)
+    return base64.b64decode(data["audio_base64"]), data.get("alignment") or data.get("normalized_alignment"), request_id, cost
 
 
 # ---------------------------------------------------------------------------
@@ -245,19 +311,26 @@ def save_manifest(m):
     os.replace(tmp, MANIFEST)
 
 
-def lock_settings(m, vid):
-    """The first generation fixes voice, model, settings and format; later runs must match them."""
-    if "voice" not in m:
-        m.update({"voice": vid, "model": MODEL, "output_format": OUTPUT, "voice_settings": voice_settings(vid)})
+def lock_settings(m):
+    """The first generation fixes voices, model, settings and format; later runs must match them."""
+    want = {"voices": VOICES, "model": MODEL, "output_format": OUTPUT, "roles": ROLES}
+    if "voices" not in m:
+        m.update(want)
+        m["voice_settings"] = {role: voice_settings(v) for role, v in VOICES.items()}
         save_manifest(m)
-    elif (m["voice"], m["model"], m["output_format"]) != (vid, MODEL, OUTPUT):
-        raise SystemExit(f"the manifest was made with voice {m['voice']}, model {m['model']}, {m['output_format']}; "
-                         f"refusing to mix in voice {vid}, model {MODEL}, {OUTPUT}")
+    else:
+        have = {k: m.get(k) for k in want}
+        if have != want:
+            raise SystemExit(f"the manifest was made with {have}; refusing to mix in {want}")
     return m["voice_settings"]
 
 
 def sha1(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+
+def seg_key(seg):
+    return sha1(json.dumps([VOICES[seg["role"]], MODEL, OUTPUT, seg_text(seg)], ensure_ascii=False))
 
 
 def rate(m):
@@ -271,34 +344,81 @@ def now():
 
 
 # ---------------------------------------------------------------------------
+# Sound made here: silence and the chime, in the same MP3 format as ElevenLabs'
+
+
+def ffmpeg(*args):
+    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", *args], check=True)
+
+
+def sound_file(seg):
+    SEGMENTS.mkdir(parents=True, exist_ok=True)
+    enc = ["-ar", "44100", "-ac", "1", "-c:a", "libmp3lame", "-b:a", "128k"]
+    if seg["type"] == "silence":
+        path = SEGMENTS / f"silence-{seg['seconds']:.2f}.mp3"
+        if not path.exists():
+            ffmpeg("-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", f"{seg['seconds']:.2f}", *enc, str(path))
+    else:  # two soft ascending notes, like a small bell (the Gooya edition's chime)
+        path = SEGMENTS / "chime.mp3"
+        if not path.exists():
+            expr = ("0.075*exp(-t/0.35)*min(1,t/0.006)*(sin(2*PI*659.25*t)+0.35*sin(4*PI*659.25*t))"
+                    "+gt(t,0.16)*0.06*exp(-(t-0.16)/0.40)*min(1,(t-0.16)/0.006)*(sin(2*PI*987.77*(t-0.16))+0.35*sin(4*PI*987.77*(t-0.16)))")
+            ffmpeg("-f", "lavfi", "-i", f"aevalsrc='{expr}':s=44100:d=1.75", *enc, str(path))
+    return path
+
+
+def duration(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True, check=True).stdout
+    return float(out)
+
+
+def line_times(seg, alignment, seconds):
+    """Start and end of each line of a segment, in seconds from the segment's start, from the
+    character timings (or, failing those, in proportion to the characters over the segment's length)."""
+    text = seg_text(seg)
+    spans, pos = [], 0
+    for _, t in seg["lines"]:
+        spans.append((pos, pos + len(t) - 1))
+        pos += len(t) + 2
+    chars = alignment.get("characters") if alignment else None
+    starts = alignment.get("character_start_times_seconds") if alignment else None
+    ends = alignment.get("character_end_times_seconds") if alignment else None
+    if chars and len(chars) == len(text):
+        return [(starts[a], ends[b]) for a, b in spans]
+    return [(seconds * a / len(text), seconds * (b + 1) / len(text)) for a, b in spans]
+
+
+# ---------------------------------------------------------------------------
 # Modes
 
 
-def plan():
-    """Every chapter's chunks, exactly as they would be sent."""
-    return {int(p.name[:2]): (p, chunks(paragraphs(p))) for p in sorted(SCRIPTS.glob("[01][0-9]-*.txt"))}
+def chapters_to_do(args):
+    return [args.chapter] if args.chapter else sorted(int(p.name[:2]) for p in SCRIPTS.glob("[01][0-9]-*.txt"))
 
 
 def dry_run(m):
-    r = rate(m)
-    total = 0
-    print(f"{'ch':>2}  {'chunks':>6}  {'characters':>10}  {'credits':>9}  chunk sizes")
-    for n, (p, cs) in plan().items():
-        chars = sum(len(c) for c in cs)
+    r, total, requests_ = rate(m), 0, 0
+    print(f"{'ch':>2}  {'requests':>8}  {'main':>7}  {'second':>7}  {'characters':>10}  {'credits':>8}")
+    for n in chapters_to_do(argparse.Namespace(chapter=None)):
+        _, segs, _ = plan_chapter(script(n))
+        speech = [s for s in segs if s["type"] == "speech"]
+        by = {role: sum(len(seg_text(s)) for s in speech if s["role"] == role) for role in ("main", "second")}
+        chars = sum(by.values())
         total += chars
-        print(f"{n:>2}  {len(cs):>6}  {chars:>10,}  {round(chars * r):>9,}  {', '.join(str(len(c)) for c in cs)}")
-    print(f"all {total:,} characters, about {round(total * r):,} credits at {r:g} credits per character"
-          + ("" if m.get("test") else " (assumed; --test measures it)"))
+        requests_ += len(speech)
+        print(f"{n:>2}  {len(speech):>8}  {by['main']:>7,}  {by['second']:>7,}  {chars:>10,}  {round(chars * r):>8,}")
+    print(f"all: {requests_} requests, {total:,} characters, about {round(total * r):,} credits at "
+          f"{r * 1000:g} credits per 1,000 characters" + ("" if m.get("test") else " (assumed; --test measures it)"))
     if os.environ.get("ELEVENLABS_API_KEY"):
         s = subscription()
-        print(f"available now: {s['remaining']:,} of {s['limit']:,} credits ({s['tier']})")
-    return total
+        print(f"available now: {s['remaining']:,} of {s['limit']:,} credits ({s['tier']}); "
+              f"enough for {s['remaining'] / max(1, total * r):.1f} times the whole book")
 
 
 def test(m, args):
-    vid = voice_id(args)
-    paras = paragraphs(script(1))
-    text = test_text(paras)
+    vid = args.voice or VOICES["main"]
+    text = test_text(paragraphs(script(1)))
     before = subscription()
     print(f"before: {before['used']:,} of {before['limit']:,} credits used, {before['remaining']:,} left "
           f"(tier {before['tier']}, overage possible: {before['can_extend']}, allowed: {before['allowed_to_extend']})")
@@ -314,106 +434,129 @@ def test(m, args):
     out.write_bytes(audio)
     (STATE / "test-1000.txt").write_text(text, encoding="utf-8")
     per_char = (cost or charged) / len(text)
+    try:
+        seconds = duration(out)
+    except (OSError, ValueError, subprocess.CalledProcessError):
+        seconds = 0.0
     m["test"] = {"when": now(), "voice": vid, "model": MODEL, "output_format": OUTPUT, "voice_settings": settings,
                  "characters": len(text), "request_id": request_id, "character_cost_header": cost,
                  "used_before": before["used"], "used_after": after["used"], "charged": charged,
-                 "credits_per_char": per_char, "file": str(out), "headers_seen": sorted(headers)}
-    save_manifest(m)
-    try:
-        duration = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)],
-                                        capture_output=True, text=True).stdout or 0)
-    except (OSError, ValueError):  # no ffprobe here
-        duration = 0.0
-    m["test"]["seconds"] = duration
+                 "credits_per_char": per_char, "file": str(out), "seconds": seconds, "headers_seen": sorted(headers)}
     save_manifest(m)
     print(f"submitted: {len(text):,} characters; request id {request_id}; character-cost header {cost}")
     print(f"charged (usage after minus before): {charged:,} credits; {per_char * 1000:g} credits per 1,000 characters")
-    print(f"audio: {out} ({duration:.1f} s, {len(audio):,} bytes)")
+    print(f"audio: {out} ({seconds:.1f} s, {len(audio):,} bytes)")
     print(f"after: {after['used']:,} of {after['limit']:,} used, {after['remaining']:,} left")
-    total = 0
-    for n, (p, cs) in plan().items():
-        chars = sum(len(c) for c in cs)
-        total += chars
-        print(f"  chapter {n:>2}: {chars:>6,} characters, about {round(chars * per_char):>7,} credits")
-    print(f"  all 16: {total:,} characters, about {round(total * per_char):,} credits")
-    left, covered, upto = after["remaining"], 0, 0
-    for n, (p, cs) in plan().items():
-        need = sum(len(c) for c in cs) * per_char
-        if covered + need > left:
-            break
-        covered += need
-        upto = n
-    print(f"the {after['remaining']:,} credits left cover {left / per_char:,.0f} characters: "
-          f"{100 * min(1, left / per_char / total):.0f}% of the book, chapters 1 to {upto} in full" if upto else
-          f"the {after['remaining']:,} credits left cover {left / per_char:,.0f} characters "
-          f"({100 * min(1, left / per_char / total):.0f}% of the book), less than chapter 1")
+    dry_run(m)
 
 
-def narrate_chapter(n, m, vid, settings):
-    p, cs = plan()[n]
-    CH = STATE / "chunks"
-    CH.mkdir(parents=True, exist_ok=True)
-    entries = {(c["chapter"], c["chunk"]): c for c in m["chunks"]}
-    todo = []
-    for k, text in enumerate(cs, 1):
-        e = entries.get((n, k))
-        done = e and e["status"] == "done" and e["text_sha1"] == sha1(text) and (CH / e["file"]).exists()
-        if not done:
-            todo.append(k)
-    need = sum(len(cs[k - 1]) for k in todo) * rate(m)
-    s = subscription()
-    print(f"chapter {n}: {len(cs)} chunks, {len(todo)} to generate, about {round(need):,} credits; {s['remaining']:,} left")
-    if need > s["remaining"]:
-        raise SystemExit(f"chapter {n} needs about {round(need):,} credits but only {s['remaining']:,} are left; "
+def narrate_chapter(n, m, settings, sample=None):
+    """Generate a chapter's missing segments (or, with sample, only its first ~sample characters), then join
+    them into one MP3 with tags and section markers, and write its sync file."""
+    path = script(n)
+    title, segs, markers = plan_chapter(path)
+    SEGMENTS.mkdir(parents=True, exist_ok=True)
+    entries = {c["key"]: c for c in m["chunks"] if "key" in c}
+    speech = [s for s in segs if s["type"] == "speech"]
+    if sample:
+        chosen, count = [], 0
+        for s in speech:
+            if count >= sample:
+                break
+            chosen.append(s)
+            count += len(seg_text(s))
+        last = segs.index(chosen[-1])
+        segs = segs[:last + 1] + [{"type": "silence", "seconds": 1.5}]
+        markers = [(t, i) for t, i in markers if i <= last]
+        speech = chosen
+
+    def done(s):
+        e = entries.get(seg_key(s))
+        return e and e["status"] == "done" and (SEGMENTS / e["file"]).exists()
+    todo = [s for s in speech if not done(s)]
+    need = sum(len(seg_text(s)) for s in todo) * rate(m)
+    sub = subscription()
+    print(f"chapter {n}: {len(speech)} segments, {len(todo)} to generate, about {round(need):,} credits; {sub['remaining']:,} left")
+    if need > sub["remaining"]:
+        raise SystemExit(f"chapter {n} needs about {round(need):,} credits but only {sub['remaining']:,} are left; "
                          "stopping without generating (no overage)")
-    for k, text in enumerate(cs, 1):
-        e = entries.get((n, k))
-        if k not in todo:
+    history = {"main": [], "second": []}  # request ids of each voice's segments, for stitching
+    for k, s in enumerate(speech, 1):
+        key_ = seg_key(s)
+        text = seg_text(s)
+        if done(s):
+            history[s["role"]].append(entries[key_].get("request_id"))
             continue
-        s = subscription()
-        if len(text) * rate(m) > s["remaining"]:
-            raise SystemExit(f"only {s['remaining']:,} credits left, not enough for chunk {k}; stopping (no overage)")
-        previous = [entries[(n, j)]["request_id"] for j in range(max(1, k - 3), k)
-                    if (n, j) in entries and entries[(n, j)].get("request_id")]
-        next_text = cs[k][:500] if k < len(cs) else None
-        name = f"{n:02d}-c{k:02d}.mp3"
-        entry = {"chapter": n, "chunk": k, "characters": len(text), "text_sha1": sha1(text), "file": name,
-                 "status": "generating", "request_id": None, "character_cost": None, "when": now()}
-        if e:
-            m["chunks"].remove(e)
-        m["chunks"].append(entry)
-        entries[(n, k)] = entry
+        if len(text) * rate(m) > subscription()["remaining"]:
+            raise SystemExit(f"not enough credits left for segment {k}; stopping (no overage)")
+        nxt = next((t for t in speech[k:] if t["role"] == s["role"]), None)
+        name = f"{n:02d}-{key_[:12]}.mp3"
+        entry = {"key": key_, "chapter": n, "chunk": k, "voice": VOICES[s["role"]], "role": s["role"], "characters": len(text),
+                 "text_sha1": sha1(text), "file": name, "status": "generating", "request_id": None, "character_cost": None,
+                 "when": now()}
+        m["chunks"] = [c for c in m["chunks"] if c.get("key") != key_] + [entry]
+        entries[key_] = entry
         save_manifest(m)
         stitch = m.get("stitching", True)
+        previous = [r for r in history[s["role"]] if r][-3:] if stitch else []
+        next_text = seg_text(nxt)[:500] if stitch and nxt else None
         try:
             try:
-                audio, request_id, cost, _ = speak(text, vid, settings, seed=n * 100 + k,
-                                                   previous=previous if stitch else (), next_text=next_text if stitch else None)
+                audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]],
+                                                                 seed=n * 1000 + k, previous=previous, next_text=next_text)
             except RuntimeError as err:
                 if stitch and re.search(r"previous_request_ids|next_text|stitch", str(err), re.I):
                     m["stitching"] = False  # this model does not take request stitching; go on without it, and say so
                     save_manifest(m)
                     print(f"  the model does not accept request stitching ({err}); continuing without it", flush=True)
-                    audio, request_id, cost, _ = speak(text, vid, settings, seed=n * 100 + k)
+                    audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]], seed=n * 1000 + k)
                 else:
                     raise
         except RuntimeError as err:
             entry["status"] = f"failed: {err}"
             save_manifest(m)
-            raise SystemExit(f"chapter {n} chunk {k}: {err}")
-        (CH / name).write_bytes(audio)
+            raise SystemExit(f"chapter {n} segment {k}: {err}")
+        (SEGMENTS / name).write_bytes(audio)
+        (SEGMENTS / (name[:-4] + ".json")).write_text(json.dumps(alignment or {}), encoding="utf-8")
         entry.update(status="done", request_id=request_id, character_cost=cost, when=now())
         save_manifest(m)
-        print(f"  chunk {k}/{len(cs)}: {len(text):,} characters, cost {cost}, request {request_id}", flush=True)
-    # one MP3 per chapter, joined without re-encoding
-    out_dir = STATE / "chapters"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    listing = STATE / f"{n:02d}-list.txt"
-    listing.write_text("".join(f"file '{(CH / f'{n:02d}-c{k:02d}.mp3').as_posix()}'\n" for k in range(1, len(cs) + 1)), encoding="utf-8")
-    out = out_dir / f"{p.stem}.mp3"
-    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(listing),
-                    "-c", "copy", str(out)], check=True)
-    print(f"chapter {n}: {out}")
+        history[s["role"]].append(request_id)
+        print(f"  segment {k}/{len(speech)} ({s['role']}): {len(text):,} characters, cost {cost}, request {request_id}", flush=True)
+
+    # join: speech, silence and chimes, without re-encoding; sections become chapter markers
+    files, lines, clock, starts = [], [], 0.0, {}
+    for i, s in enumerate(segs):
+        starts[i] = clock
+        if s["type"] == "speech":
+            f = SEGMENTS / entries[seg_key(s)]["file"]
+            align_file = f.with_suffix(".json")
+            alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
+            for (kind, text), (b, e) in zip(s["lines"], line_times(s, alignment, duration(f))):
+                lines.append({"kind": kind, "text": text, "begin": round(clock + b, 3), "end": round(clock + e, 3)})
+        else:
+            f = sound_file(s)
+        files.append(f)
+        clock += duration(f)
+    CHAPTERS.mkdir(parents=True, exist_ok=True)
+    stem = path.stem + ("-sample" if sample else "")
+    listing = CHAPTERS / f"{stem}.txt"
+    listing.write_text("".join(f"file '{f.resolve().as_posix()}'\n" for f in files), encoding="utf-8")
+    meta = CHAPTERS / f"{stem}.meta"
+    tags = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=تسلط بر معرفت‌شناسی", f"track={n}/16",
+            "genre=Audiobook", "language=fas",
+            f"comment=Narrated with ElevenLabs ({MODEL}); voices {VOICES['main']} and {VOICES['second']}."]
+    marks = [(t, starts[i]) for t, i in markers]
+    for k, (name, start) in enumerate(marks):
+        stop = marks[k + 1][1] if k + 1 < len(marks) else clock
+        tags += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}", f"END={int(stop * 1000)}", f"title={name}"]
+    meta.write_text("\n".join(tags) + "\n", encoding="utf-8")
+    out = CHAPTERS / f"{stem}.mp3"
+    ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
+           "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(out))
+    (CHAPTERS / f"{stem}.json").write_text(json.dumps(
+        {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3), "lines": lines},
+        ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
+    print(f"chapter {n}: {out} ({clock / 60:.1f} min) and its sync file")
 
 
 def main():
@@ -424,12 +567,18 @@ def main():
     g.add_argument("--test", action="store_true", help=f"generate exactly {TEST_CHARS} characters from chapter 1 and report the cost")
     g.add_argument("--chapter", type=int, help="narrate one chapter")
     g.add_argument("--all", action="store_true", help="narrate every chapter")
-    ap.add_argument("--resume", action="store_true", help="carry on from the manifest (chunks already made are always kept)")
-    ap.add_argument("--voice", help="voice id (default: $ELEVENLABS_VOICE_ID)")
+    ap.add_argument("--resume", action="store_true", help="carry on from the manifest (segments already made are always kept)")
+    ap.add_argument("--sample", type=int, help="with --chapter: only the first ~N characters, as a preview")
+    ap.add_argument("--voice", help=f"main voice (default {VOICES['main']}); for --test, the voice to test")
+    ap.add_argument("--voice2", help=f"second voice (default {VOICES['second']})")
     ap.add_argument("--model", help=f"model id (default: $ELEVENLABS_MODEL_ID or {MODEL})")
     args = ap.parse_args()
     if args.model:
         MODEL = args.model
+    if args.voice and not args.test:
+        VOICES["main"] = args.voice
+    if args.voice2:
+        VOICES["second"] = args.voice2
     m = load_manifest()
     if args.dry_run:
         dry_run(m)
@@ -438,10 +587,9 @@ def main():
     else:
         if not m.get("test"):
             raise SystemExit("run --test first, so the cost per character is measured")
-        vid = voice_id(args)
-        settings = lock_settings(m, vid)
-        for n in ([args.chapter] if args.chapter else sorted(plan())):
-            narrate_chapter(n, m, vid, settings)
+        settings = lock_settings(m)
+        for n in chapters_to_do(args):
+            narrate_chapter(n, m, settings, sample=args.sample if args.chapter else None)
 
 
 if __name__ == "__main__":
