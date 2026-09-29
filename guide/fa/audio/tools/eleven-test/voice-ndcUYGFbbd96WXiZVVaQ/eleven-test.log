@@ -1,2 +1,23 @@
 before: 204 of 130,574 credits used, 130,370 left (tier creator, overage possible: False, allowed: False)
-could not read the voice's settings: 400 {"detail":{"type":"not_found","code":"voice_not_found","message":"A voice with ID 'ndcUYGFbbd96WXiZVVaQ' was not found.","status":"voice_id_not_found","request_id":"5dea6560306744dfa111b812646c894d"}}
+submitted: 1,000 characters; request id Qqn5BDoG5O0l9vRyn0JE; character-cost header 61
+charged (usage after minus before): 61 credits; 61 credits per 1,000 characters
+audio: /home/user/epis/guide/fa/audio/tools/.eleven/test-1000.mp3 (0.0 s, 1,662,685 bytes)
+after: 265 of 130,574 used, 130,309 left
+  chapter  1: 29,864 characters, about   1,822 credits
+  chapter  2: 59,774 characters, about   3,646 credits
+  chapter  3: 40,894 characters, about   2,495 credits
+  chapter  4: 39,342 characters, about   2,400 credits
+  chapter  5: 48,302 characters, about   2,946 credits
+  chapter  6: 44,668 characters, about   2,725 credits
+  chapter  7: 43,817 characters, about   2,673 credits
+  chapter  8: 45,508 characters, about   2,776 credits
+  chapter  9: 54,442 characters, about   3,321 credits
+  chapter 10: 56,220 characters, about   3,429 credits
+  chapter 11: 35,104 characters, about   2,141 credits
+  chapter 12: 51,898 characters, about   3,166 credits
+  chapter 13: 38,551 characters, about   2,352 credits
+  chapter 14: 51,092 characters, about   3,117 credits
+  chapter 15: 47,529 characters, about   2,899 credits
+  chapter 16: 52,553 characters, about   3,206 credits
+  all 16: 739,558 characters, about 45,113 credits
+the 130,309 credits left cover 2,136,213 characters: 100% of the book, chapters 1 to 16 in full
