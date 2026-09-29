@@ -657,22 +657,52 @@ def mp3_frames(data):
     return out
 
 
-def resume_frame(fr, first):
-    """The first frame, from index first on, where a file's own frames can take over again after other audio:
-    neither it nor any frame after it borrows audio data from before it (a frame may borrow up to 255 bytes;
-    one without audio data borrows nothing that matters). None if there is none within about a second."""
-    for f0 in range(max(1, first), min(len(fr), first + 40)):
-        avail = 0
-        for j in range(f0, len(fr)):
-            _, _, borrows, bits, room = fr[j]
-            if bits and borrows > avail:
-                break
-            avail += room
-            if avail >= 255:
-                return f0
-        else:
-            return f0
-    return None
+def self_contained(fr, f0):
+    """Can a file's own frames take over again at frame f0, after other audio? Neither f0 nor any frame after
+    it may borrow audio data from before f0 (a frame may borrow up to 255 bytes from the frames before it;
+    one without audio data borrows nothing that matters)."""
+    avail = 0
+    for j in range(f0, len(fr)):
+        _, _, borrows, bits, room = fr[j]
+        if bits and borrows > avail:
+            return False
+        avail += room
+        if avail >= 255:
+            return True
+    return True
+
+
+def resume_frame(fr, first, limit=40):
+    """The first self-contained frame from index first on, within limit frames; None if there is none."""
+    return next((f0 for f0 in range(max(1, first), min(len(fr), first + limit)) if self_contained(fr, f0)), None)
+
+
+def donor_frames(data, fr, f0):
+    """Silent frames to put just before frame f0 of a file, after other audio, carrying the audio data that f0
+    and the frames after it borrow from the frames before f0 (at 48 kbit/s nearly every frame borrows), so
+    that they decode exactly as they did in the file. Each donor is a frame with no audio data (silence,
+    24 ms) whose data area holds those bytes."""
+    need, avail = 0, 0
+    for j in range(f0, len(fr)):
+        _, _, borrows, bits, room = fr[j]
+        if bits:
+            need = max(need, borrows - avail)
+        avail += room
+        if avail >= 255:
+            break
+    if need <= 0:
+        return b"", 0
+    stream = b"".join(data[off + length - room:off + length] for off, length, _, _, room in fr[max(1, f0 - 3):f0])
+    off, length, _, _, room = fr[f0]
+    header = bytearray(data[off:off + length - room])  # f0's own header (and CRC) and side information
+    header[2] &= ~0x02                                  # no padding byte: every donor is the same length
+    head_len = len(header)
+    size = 72 * 48000 // 24000
+    k = -(-need // (size - head_len))
+    area = bytearray((size - head_len) * k)
+    area[len(area) - need:] = stream[len(stream) - need:]
+    hdr = bytes(header[:head_len - 9]) + bytes(9)  # side information all zero: no audio data, silence
+    return b"".join(hdr + bytes(area[i * (size - head_len):(i + 1) * (size - head_len)]) for i in range(k)), k
 
 
 def pcm(path, start, seconds):
@@ -688,7 +718,7 @@ def pcm(path, start, seconds):
 
 
 def quiet(samples, level=0.01):
-    return not samples or max(abs(x) for x in samples) < level
+    return len(samples) > 0 and max(abs(x) for x in samples) < level
 
 
 def splice_frames(published, pieces, out, tags, meta, old_audio=None):
@@ -697,10 +727,12 @@ def splice_frames(published, pieces, out, tags, meta, old_audio=None):
     published audio and file the audio that goes in their place (or None for nothing).
 
     Each piece is encoded once, together with the published audio around it out to quiet places on both
-    sides: from a quiet frame at or before its begin, and up to the first frame after its end that is quiet
-    and borrows no audio data from frames before it (resume_frame), where the published frames take over
-    again. So a join never cuts into speech, and the few milliseconds an encoder adds at the end fall in a
-    quiet moment. old_audio(start, seconds) gives the published audio (default: decoded from the file).
+    sides: from a quiet frame at or before its begin, and up to the first quiet frame after its end (a pause),
+    where the published frames take over again. Just before that frame go one or two silent donor frames
+    carrying the audio data it and the frames after it borrow from the frames that were cut out
+    (donor_frames), so the published audio from there on decodes exactly as before. A join never cuts into
+    speech; the encoder's few milliseconds of padding and the donors' 24 ms each lengthen a pause.
+    old_audio(start, seconds) gives the published audio (default: decoded from the file).
     tags(moved) gives the ffmetadata text (tags and section markers) for the result. Returns moved (a time
     in the published audio -> the same moment in the result) and, for each piece, where its file's audio
     starts in the result."""
@@ -718,27 +750,27 @@ def splice_frames(published, pieces, out, tags, meta, old_audio=None):
         before = old_audio(max(0.0, b - 3.2), min(b, 3.2))
         t0 = max(0.0, b - 3.2)
         fb = frame_at(b)
-        while fb > max(at, frame_at(b - 3.0)) and not quiet(before[max(0, int((start_of(fb) - FRAME - t0) * 24000)):
-                                                                 max(0, int(((fb - 1) * FRAME + FRAME - t0) * 24000))]):
+        # (quiet for three frames either side: a decoder carries some of each frame into the next)
+        while fb > max(at, frame_at(b - 3.0)) and not quiet(before[max(0, int((start_of(fb) - 3 * FRAME - t0) * 24000)):
+                                                                 max(0, int(((fb - 1) * FRAME + 3 * FRAME - t0) * 24000))]):
             fb -= 1
         while fb > max(1, at) and (fb - 1) * FRAME > b:  # the piece's audio must not start after b
             fb -= 1
         if fb < at or (fb - 1) * FRAME > b + 1e-6:
             raise SystemExit(f"the replaced stretches at {b:.2f} s overlap")
-        # a quiet frame to go back to, at most 15 s after e, that borrows nothing from before it
+        # a quiet frame to go back to, at most 15 s after e (a pause); the frames there borrow audio data from the
+        # frames before them, which donor_frames supplies
         after = old_audio(e, 15.0)
-        f0, j = None, frame_at(e) + 1
-        while j < len(fr) and start_of(j) < e + 14.9:
-            j = resume_frame(fr, j)
-            if j is None:
+        f0 = None
+        for level in (0.01, 0.02, 0.04):
+            f0 = next((j for j in range(frame_at(e + 3 * FRAME) + 1, min(len(fr), frame_at(e + 14.9)))
+                       if quiet(after[int((start_of(j) - 3 * FRAME - e) * 24000):
+                                      int((start_of(j) + 3 * FRAME - e) * 24000)], level)), None)
+            if f0:
                 break
-            a = int((start_of(j) - FRAME - e) * 24000)
-            if a >= 0 and quiet(after[a:a + int(3 * FRAME * 24000)]):
-                f0 = j
-                break
-            j += 1
         if f0 is None:
             raise SystemExit(f"no quiet place to join the audio within 15 s after {e:.2f} s")
+        donors, k_donors = donor_frames(old, fr, f0)
         # the piece: published audio from fb's own start to b, the new audio, published audio from e to f0
         lead_from = (fb - 1) * FRAME
         head = before[int((lead_from - t0) * 24000):int((b - t0) * 24000)] if b > lead_from else []
@@ -761,8 +793,9 @@ def splice_frames(published, pieces, out, tags, meta, old_audio=None):
         nf = mp3_frames(new)[1:]  # without its Xing/Info frame
         raw.append(old[fr[at][0]:fr[fb][0]])
         raw.append(new[nf[0][0]:nf[-1][0] + nf[-1][1]])
+        raw.append(donors)
         content.append(b + extra * FRAME)  # the piece's lead-in makes up for the file's, so its audio lands at b
-        extra += fb + len(nf) - f0
+        extra += fb + len(nf) + k_donors - f0
         jumps.append((start_of(f0), extra * FRAME))
         at = f0
     raw.append(old[fr[at][0]:audio_end])
