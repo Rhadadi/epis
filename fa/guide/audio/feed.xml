@@ -49,5 +49,17 @@
 <pubDate>Thu, 01 Jan 2026 03:00:00 +0000</pubDate>
 <itunes:duration>4039</itunes:duration>
 </item>
+<item>
+<title>فصل ۴: زبان، مفهوم‌ها و تعریف‌ها</title>
+<itunes:title>زبان، مفهوم‌ها و تعریف‌ها</itunes:title>
+<itunes:episode>4</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>معنا و مصداق؛ انواعِ تعریف؛ ابهام و گنگی؛ نزاع‌های لفظی؛ زبانِ جهت‌دار و قاب‌بندی؛ مفهوم‌هایی که ذاتاً محلِ اختلاف‌اند؛ مهندسیِ مفهومی متنِ فصل: https://rhadadi.github.io/epis/fa/guide/04-language-concepts-and-definitions.html</description>
+<link>https://rhadadi.github.io/epis/fa/guide/04-language-concepts-and-definitions.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/fa/audio/04-language-concepts-and-definitions.mp3" length="22752959" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-fa-04</guid>
+<pubDate>Thu, 01 Jan 2026 04:00:00 +0000</pubDate>
+<itunes:duration>3792</itunes:duration>
+</item>
 </channel>
 </rss>

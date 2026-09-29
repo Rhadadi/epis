@@ -2,7 +2,7 @@
 
 [← قبلی: منطق و کالبدشناسیِ استدلال](03-logic-and-arguments.md) · [فهرست](README.md) · [بعدی: معرفت چیست؟ ←](05-the-nature-of-knowledge.md)
 
-**صوت:** [شنیدنِ این فصل](audio/04-language-concepts-and-definitions.mp3) (۴۶ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#04)
+**صوت:** [شنیدنِ این فصل](audio/04-language-concepts-and-definitions.mp3) (۱ ساعت و ۳ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#04)
 
 ---
 
