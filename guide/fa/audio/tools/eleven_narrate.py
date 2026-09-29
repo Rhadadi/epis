@@ -9,11 +9,14 @@
     python3 eleven_narrate.py --all --resume          # the same; segments already made are never made again
 
 The text is the one the Gooya narration speaks (scripts/NN-*.txt, as in
-transcripts/). Two voices read it. The main voice (a male narrator) reads
-nearly everything; the second voice (female) reads the quotations, the
-second speaker in dialogues, and the quiz questions, so the quiz sounds like
-a conversation: she asks, there is time to think, he answers. ROLES below says
-which lines go to the second voice.
+transcripts/). Two narrators share it, so the listener gets a break from each
+voice: the main voice (male) opens the chapter; after that the sections
+alternate, the second voice (female) taking the first section, the main voice
+the next, and so on, each reading its own section title. A quotation is read
+by the voice that is not narrating the section; in dialogues the first
+speaker is the male voice and the second the female; in the quiz she asks,
+there is time to think, and he answers; he also closes the chapter
+(role_of below).
 
 A chapter becomes a row of segments, each read by one voice: a new segment
 starts where the voice changes, where a section starts, and at the quiz's
@@ -69,7 +72,7 @@ API = "https://api.elevenlabs.io/v1"
 
 MODEL = os.environ.get("ELEVENLABS_MODEL_ID", "eleven_v4_turbo")
 VOICES = {"main": "VKDkQOjcRZb7aNtJGaWt", "second": "ndcUYGFbbd96WXiZVVaQ"}
-ROLES = {"quote": "second", "voice2": "second", "voice3": "second", "question": "second"}  # everything else: main
+SCHEME = "alternate-sections-v1"  # who reads what; see role_of
 OUTPUT = "mp3_44100_128"
 MAX_SEGMENT, TARGET_SEGMENT = 6000, 5000
 TEST_CHARS = 1000
@@ -117,6 +120,10 @@ def plan_chapter(script_path):
     plus its title and the section markers [(title, index of the first segment of the section)]."""
     title, segs, markers = "", [], []
     cur, pending = None, 0.0
+    cues = parse(script_path.read_text(encoding="utf-8"))
+    sections = [i for i, (k, _) in enumerate(cues) if k == "section"]
+    quiz = {i for i in sections if any(k == "question" for k, _ in cues[i + 1:next((j for j in sections if j > i), len(cues))])}
+    narrator, count = "main", 0
 
     def flush():
         nonlocal cur
@@ -130,7 +137,11 @@ def plan_chapter(script_path):
         else:
             segs.append({"type": "silence", "seconds": seconds})
 
-    for kind, text in parse(script_path.read_text(encoding="utf-8")):
+    for i, (kind, text) in enumerate(cues):
+        if kind == "section":
+            count += 1
+            last = i == sections[-1] and not quiz & {i}
+            narrator = "main" if i in quiz or last else ("second" if count % 2 else "main")
         if kind == "title":
             title = text
             continue
@@ -149,7 +160,7 @@ def plan_chapter(script_path):
             continue
         if not text:
             continue
-        role = ROLES.get(kind, "main")
+        role = role_of(kind, narrator)
         if kind == "section":
             flush()
             pause(0.9)
@@ -175,6 +186,13 @@ def plan_chapter(script_path):
         if s["type"] == "speech" and len(seg_text(s)) > MAX_SEGMENT:
             raise SystemExit(f"a paragraph in {script_path.name} is longer than {MAX_SEGMENT} characters; split it in the script")
     return title, segs, markers
+
+
+def role_of(kind, narrator):
+    """Which voice reads a line, given the voice narrating the section."""
+    other = "second" if narrator == "main" else "main"
+    return {"quote": other, "voice1": "main", "voice2": "second", "voice3": other,
+            "question": "second", "answer": "main"}.get(kind, narrator)
 
 
 def seg_text(seg):
@@ -313,7 +331,7 @@ def save_manifest(m):
 
 def lock_settings(m):
     """The first generation fixes voices, model, settings and format; later runs must match them."""
-    want = {"voices": VOICES, "model": MODEL, "output_format": OUTPUT, "roles": ROLES}
+    want = {"voices": VOICES, "model": MODEL, "output_format": OUTPUT, "scheme": SCHEME}
     if "voices" not in m:
         m.update(want)
         m["voice_settings"] = {role: voice_settings(v) for role, v in VOICES.items()}
@@ -532,7 +550,8 @@ def narrate_chapter(n, m, settings, sample=None):
             align_file = f.with_suffix(".json")
             alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
             for (kind, text), (b, e) in zip(s["lines"], line_times(s, alignment, duration(f))):
-                lines.append({"kind": kind, "text": text, "begin": round(clock + b, 3), "end": round(clock + e, 3)})
+                lines.append({"kind": kind, "text": text, "begin": round(clock + b, 3), "end": round(clock + e, 3),
+                              "voice": s["role"]})
         else:
             f = sound_file(s)
         files.append(f)
@@ -554,9 +573,31 @@ def narrate_chapter(n, m, settings, sample=None):
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
            "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(out))
     (CHAPTERS / f"{stem}.json").write_text(json.dumps(
-        {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3), "lines": lines},
+        {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3),
+         "narration": {"engine": "ElevenLabs", "model": MODEL, "voices": VOICES}, "lines": lines},
         ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
     print(f"chapter {n}: {out} ({clock / 60:.1f} min) and its sync file")
+
+
+def import_segments(m, src):
+    """Take over segments generated elsewhere: their files and manifest entries. Segments are keyed by
+    voice, model, format and text, so only those identical to what a chapter needs are ever used."""
+    other = json.loads((src / "manifest.json").read_text(encoding="utf-8"))
+    SEGMENTS.mkdir(parents=True, exist_ok=True)
+    have = {c.get("key") for c in m["chunks"]}
+    taken = 0
+    for c in other.get("chunks", []):
+        f = src / "segments" / c.get("file", "")
+        if c.get("status") == "done" and c.get("key") and c["key"] not in have and f.exists():
+            for g in (f, f.with_suffix(".json")):
+                if g.exists():
+                    (SEGMENTS / g.name).write_bytes(g.read_bytes())
+            m["chunks"].append(c)
+            taken += 1
+    if other.get("stitching") is False:
+        m["stitching"] = False
+    save_manifest(m)
+    print(f"imported {taken} segments from {src}")
 
 
 def main():
@@ -572,6 +613,7 @@ def main():
     ap.add_argument("--voice", help=f"main voice (default {VOICES['main']}); for --test, the voice to test")
     ap.add_argument("--voice2", help=f"second voice (default {VOICES['second']})")
     ap.add_argument("--model", help=f"model id (default: $ELEVENLABS_MODEL_ID or {MODEL})")
+    ap.add_argument("--import-segments", metavar="DIR", help="reuse segments made elsewhere (DIR/manifest.json and DIR/segments/)")
     args = ap.parse_args()
     if args.model:
         MODEL = args.model
@@ -580,6 +622,8 @@ def main():
     if args.voice2:
         VOICES["second"] = args.voice2
     m = load_manifest()
+    if args.import_segments:
+        import_segments(m, Path(args.import_segments))
     if args.dry_run:
         dry_run(m)
     elif args.test:
