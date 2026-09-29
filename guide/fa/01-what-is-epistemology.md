@@ -2,7 +2,7 @@
 
 [فهرست](README.md) · [بعدی: تاریخِ نظریهٔ معرفت ←](02-history-of-epistemology.md)
 
-**صوت:** [شنیدنِ این فصل](audio/01-what-is-epistemology.mp3) (۳۵ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#01)
+**صوت:** [شنیدنِ این فصل](audio/01-what-is-epistemology.mp3) (۴۸ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#01)
 
 ---
 

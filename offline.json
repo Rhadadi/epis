@@ -26,6 +26,7 @@
 "map/",
 "map/index.html",
 "guide/audio/tracks.js",
+"guide/fa/audio/tracks.js",
 "assets/site.css",
 "assets/site.js",
 "assets/notes.js",
