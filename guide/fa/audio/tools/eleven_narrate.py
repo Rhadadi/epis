@@ -66,6 +66,7 @@ AUDIO = HERE.parent
 SCRIPTS = AUDIO / "scripts"
 STATE = Path(os.environ.get("ELEVEN_STATE", HERE / ".eleven"))
 MANIFEST = STATE / "manifest.json"
+TEST_RESULT = HERE / "eleven-test" / "manifest.json"  # the committed --test measurement
 SEGMENTS = STATE / "segments"
 CHAPTERS = STATE / "chapters"
 API = "https://api.elevenlabs.io/v1"
@@ -352,8 +353,11 @@ def seg_key(seg):
 
 
 def rate(m):
-    """Credits per character: measured by --test, else assumed 1."""
+    """Credits per character: measured by --test (here, or in the committed result for the same model), else assumed 1."""
     t = m.get("test")
+    if not (t and t.get("credits_per_char")) and TEST_RESULT.exists():
+        t = json.loads(TEST_RESULT.read_text(encoding="utf-8")).get("test")
+        t = t if t and t.get("model") == MODEL else None
     return t["credits_per_char"] if t and t.get("credits_per_char") else 1.0
 
 
@@ -427,7 +431,7 @@ def dry_run(m):
         requests_ += len(speech)
         print(f"{n:>2}  {len(speech):>8}  {by['main']:>7,}  {by['second']:>7,}  {chars:>10,}  {round(chars * r):>8,}")
     print(f"all: {requests_} requests, {total:,} characters, about {round(total * r):,} credits at "
-          f"{r * 1000:g} credits per 1,000 characters" + ("" if m.get("test") else " (assumed; --test measures it)"))
+          f"{r * 1000:g} credits per 1,000 characters" + (" (measured by --test)" if r != 1.0 else " (assumed; --test measures it)"))
     if os.environ.get("ELEVENLABS_API_KEY"):
         s = subscription()
         print(f"available now: {s['remaining']:,} of {s['limit']:,} credits ({s['tier']}); "
