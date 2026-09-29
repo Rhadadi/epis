@@ -158,6 +158,87 @@
     });
   });
 
+  /* ------------------------------------------------------------ audio for offline listening */
+  // A chapter's MP3 can be saved on this device, one chapter at a time: the page puts the whole
+  // file into the "epis-audio-v1" cache, and sw.js plays it from there (seeking included).
+  var AUDIO_CACHE = "epis-audio-v1";
+  var canSaveAudio = "caches" in window && "serviceWorker" in navigator && window.isSecureContext;
+  var SAVE_ICON = {
+    save: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
+    saved: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+  };
+  function absUrl(f) { return new URL(f, location.href).href.split(/[?#]/)[0]; }
+  function megabytes(bytes) { return N(Math.max(1, Math.round(bytes / 1048576))) + T(" MB", " مگابایت"); }
+  // The Persian and the English narration of a chapter share a file name; each keeps its own place.
+  function posKey(f) { return "epis-audio-pos-" + (/\/fa\/audio\//.test(f) ? "fa-" : "") + String(f).split("/").pop(); }
+  function audioSaved(f) {
+    if (!canSaveAudio) return Promise.resolve(false);
+    return caches.open(AUDIO_CACHE).then(function (c) { return c.match(absUrl(f)); })
+      .then(function (r) { return !!r; }, function () { return false; });
+  }
+  function saveAudio(f, progress) {
+    var url = absUrl(f);
+    if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function () { /* best effort */ });
+    return fetch(url, { cache: "no-cache" }).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      if (!res.body || !res.body.getReader) return res.blob();
+      var total = parseInt(res.headers.get("Content-Length") || "0", 10), got = 0, chunks = [], reader = res.body.getReader();
+      function pump() {
+        return reader.read().then(function (r) {
+          if (r.done) return new Blob(chunks, { type: "audio/mpeg" });
+          chunks.push(r.value);
+          got += r.value.length;
+          if (progress && total) progress(got / total);
+          return pump();
+        });
+      }
+      return pump();
+    }).then(function (blob) {
+      return caches.open(AUDIO_CACHE).then(function (c) {
+        return c.put(url, new Response(blob, { headers: { "Content-Type": "audio/mpeg", "Content-Length": String(blob.size) } }));
+      });
+    });
+  }
+  function removeAudio(f) { return caches.open(AUDIO_CACHE).then(function (c) { return c.delete(absUrl(f)); }); }
+  // A button that saves one chapter's audio for offline listening, or removes it again. A compact
+  // button shows only its icon (and the percentage while saving); its label goes to screen readers.
+  function saveButton(btn, file, size, compact, onChange) {
+    var state = "save";
+    function show(st, pct) {
+      state = st;
+      btn.setAttribute("data-state", st);
+      btn.disabled = st === "busy";
+      var label = st === "saved" ? T("Saved for offline listening · remove", "ذخیره‌شده برای شنیدنِ بی‌اینترنت · حذف")
+        : st === "busy" ? T("Saving… ", "در حالِ ذخیره… ") + N(Math.round((pct || 0) * 100)) + T("%", "٪")
+        : st === "error" ? T("Couldn't save; try again", "ذخیره نشد؛ دوباره امتحان کنید")
+        : T("Save for offline listening", "ذخیره برای شنیدنِ بی‌اینترنت") + (size ? " (" + megabytes(size) + ")" : "");
+      var icon = SAVE_ICON[st === "saved" ? "saved" : "save"];
+      if (compact) {
+        btn.innerHTML = st === "busy" ? "<small>" + N(Math.round((pct || 0) * 100)) + T("%", "٪") + "</small>" : icon;
+        btn.setAttribute("aria-label", label);
+        btn.title = label;
+      } else btn.innerHTML = icon + "<span>" + label + "</span>";
+      if (onChange) onChange(st);
+    }
+    btn.save = function () {
+      if (state === "saved" || state === "busy") return Promise.resolve();
+      show("busy", 0);
+      return saveAudio(file, function (p) { show("busy", p); })
+        .then(function () { show("saved"); }, function () { show("error"); });
+    };
+    btn.addEventListener("click", function () {
+      if (state === "saved") removeAudio(file).then(function () { show("save"); });
+      else btn.save();
+    });
+    show("save");
+    audioSaved(file).then(function (yes) { if (yes) show("saved"); });
+    return btn;
+  }
+  function offlineNote() {
+    return navigator.onLine ? "" : T("This chapter isn't saved on this device, and there's no connection.",
+                                     "این فصل روی این دستگاه ذخیره نشده است و اینترنت هم وصل نیست.");
+  }
+
   /* ------------------------------------------------------------ audio dock (chapter pages) */
   var card = document.querySelector(".listen[data-audio]");
   var dock = null, audio = null, sections = [], trackKey = "";
@@ -197,6 +278,7 @@
       if (Math.floor(audio.currentTime) % 5 === 0) store(trackKey, String(audio.currentTime));
     });
     audio.addEventListener("ended", function () { store(trackKey, "0"); });
+    audio.addEventListener("error", function () { var m = offlineNote(); if (m) dock.querySelector(".s").textContent = m; });
     audio.addEventListener("play", function () { card.classList.add("playing"); card.querySelector(".play").setAttribute("aria-label", T("Pause", "توقف")); });
     audio.addEventListener("pause", function () { card.classList.remove("playing"); card.querySelector(".play").setAttribute("aria-label", T("Play the narrated chapter", "پخش روایت صوتی فصل")); });
     window.addEventListener("pagehide", function () { if (audio.currentTime > 5) store(trackKey, String(audio.currentTime)); });
@@ -220,7 +302,14 @@
   }
   if (card) {
     try { sections = JSON.parse(card.getAttribute("data-sections") || "[]"); } catch (e) { sections = []; }
-    trackKey = "epis-audio-pos-" + card.getAttribute("data-audio").split("/").pop();
+    trackKey = posKey(card.getAttribute("data-audio"));
+    if (canSaveAudio) {
+      var sb = document.createElement("button");
+      sb.type = "button";
+      sb.className = "save-audio";
+      card.insertBefore(sb, card.querySelector(".row"));
+      saveButton(sb, card.getAttribute("data-audio"), parseInt(card.getAttribute("data-size") || "0", 10), false);
+    }
     var play = card.querySelector(".play");
     var saved = parseFloat(store(trackKey) || "0");
     if (saved > 20) card.querySelector(".resume").textContent = T("Resume from ", "ادامه از ") + clock(saved);
@@ -239,13 +328,13 @@
 
   /* ------------------------------------------------------------ full player (audio page) */
   var player = document.getElementById("player");
-  function base(f) { return String(f).split("/").pop(); }
   if (player && window.TRACKS) {
     var tracks = window.TRACKS, cur = -1;
     var pa = player.querySelector("audio"), rate = player.querySelector("#rate");
     var list = document.getElementById("chapters"), secs = document.getElementById("sections");
     var title = player.querySelector("h2"), secLabel = player.querySelector(".sec"), readLink = document.getElementById("read");
     var art = window.TRACK_ART || {};
+    var saveButtons = [];
     var chapterButtons = tracks.map(function (t, i) {
       var li = document.createElement("li"), b = document.createElement("button");
       b.type = "button";
@@ -256,12 +345,38 @@
       b.querySelector(".d").textContent = N(Math.round(t.duration / 60)) + T(" min", " دقیقه");
       b.addEventListener("click", function () { load(i, true); });
       li.appendChild(b); list.appendChild(li);
+      if (canSaveAudio) {
+        var sb = document.createElement("button");
+        sb.type = "button";
+        sb.className = "save-audio compact";
+        li.appendChild(sb);
+        saveButtons.push(saveButton(sb, t.file, t.size || 0, true, function (st) { li.toggleAttribute("data-saved", st === "saved"); }));
+      }
       return b;
     });
+    if (canSaveAudio) {
+      // Save every chapter not yet saved, one after another.
+      var all = document.createElement("button"), total = tracks.reduce(function (a, t) { return a + (t.size || 0); }, 0);
+      all.type = "button";
+      all.className = "save-all";
+      all.innerHTML = SAVE_ICON.save + "<span>" + T("Save all chapters for offline listening", "ذخیرهٔ همهٔ فصل‌ها برای شنیدنِ بی‌اینترنت") +
+        (total ? " (" + megabytes(total) + ")" : "") + "</span>";
+      all.addEventListener("click", function () {
+        all.disabled = true;
+        saveButtons.reduce(function (p, sb) { return p.then(function () { return sb.save(); }); }, Promise.resolve())
+          .then(function () { all.disabled = false; });
+      });
+      list.parentNode.insertBefore(all, list);
+    }
+    function markOffline() { list.classList.toggle("offline", !navigator.onLine); }
+    window.addEventListener("online", markOffline);
+    window.addEventListener("offline", markOffline);
+    markOffline();
+    pa.addEventListener("error", function () { var m = offlineNote(); if (m) secLabel.textContent = m; });
     var secButtons = [];
     function load(i, autoplay) {
       if (i < 0 || i >= tracks.length) return;
-      if (cur >= 0) store("epis-audio-pos-" + base(tracks[cur].file), String(pa.currentTime));
+      if (cur >= 0) store(posKey(tracks[cur].file), String(pa.currentTime));
       cur = i;
       var t = tracks[i];
       pa.src = t.file;
@@ -279,7 +394,7 @@
         li.appendChild(b); secs.appendChild(li);
         return b;
       });
-      var saved = parseFloat(store("epis-audio-pos-" + base(t.file)) || "0");
+      var saved = parseFloat(store(posKey(t.file)) || "0");
       pa.addEventListener("loadedmetadata", function once() {
         pa.removeEventListener("loadedmetadata", once);
         if (saved > 5 && saved < t.duration - 5) pa.currentTime = saved;
@@ -295,10 +410,10 @@
       for (var k = 0; k < ss.length; k++) if (ss[k].start <= pa.currentTime + 0.5) at = k;
       secButtons.forEach(function (b, k) { b.setAttribute("aria-current", k === at ? "true" : "false"); });
       secLabel.textContent = at > 0 ? ss[at].title : "";
-      if (Math.floor(pa.currentTime) % 5 === 0) store("epis-audio-pos-" + base(tracks[cur].file), String(pa.currentTime));
+      if (Math.floor(pa.currentTime) % 5 === 0) store(posKey(tracks[cur].file), String(pa.currentTime));
     });
     pa.addEventListener("ended", function () {
-      store("epis-audio-pos-" + base(tracks[cur].file), "0");
+      store(posKey(tracks[cur].file), "0");
       if (cur + 1 < tracks.length) load(cur + 1, true);
     });
     document.getElementById("prev").onclick = function () { load(cur - 1, true); };
@@ -313,7 +428,7 @@
       if (e.key === "j") pa.currentTime = Math.max(0, pa.currentTime - 15);
       if (e.key === "l") pa.currentTime = pa.currentTime + 30;
     });
-    window.addEventListener("pagehide", function () { if (cur >= 0) store("epis-audio-pos-" + base(tracks[cur].file), String(pa.currentTime)); });
+    window.addEventListener("pagehide", function () { if (cur >= 0) store(posKey(tracks[cur].file), String(pa.currentTime)); });
     var fromHash = parseInt(location.hash.slice(1), 10), last = parseInt(store("epis-audio-last") || "0", 10);
     load(fromHash >= 1 && fromHash <= tracks.length ? fromHash - 1 : (last >= 0 && last < tracks.length ? last : 0), false);
   }
@@ -443,7 +558,7 @@
       var ch = new MessageChannel();
       ch.port1.onmessage = function (e) {
         var d = e.data || {};
-        if (d.done) { note.textContent = T("Saved. The guide, the concepts and the map now open without a connection (the audio needs one).", "ذخیره شد. راهنما، مفاهیم و نقشه اکنون بدون اینترنت هم باز می‌شوند (صوت به اینترنت نیاز دارد)."); btn.disabled = false; }
+        if (d.done) { note.textContent = T("Saved. The guide, the concepts and the map now open without a connection. To listen offline too, save chapters from the audio page or a chapter's Listen card.", "ذخیره شد. راهنما، مفاهیم و نقشه اکنون بدون اینترنت هم باز می‌شوند. برای شنیدنِ بی‌اینترنت، فصل‌ها را از صفحهٔ صوت یا کادرِ «شنیدن» در هر فصل ذخیره کنید."); btn.disabled = false; }
         else if (d.error) { note.textContent = T("Could not save everything: ", "همه‌چیز ذخیره نشد: ") + d.error; btn.disabled = false; }
         else note.textContent = T("Saving… ", "در حال ذخیره… ") + N(d.n) + T(" of ", " از ") + N(d.of);
       };

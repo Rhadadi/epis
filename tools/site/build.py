@@ -105,6 +105,12 @@ def fa_audio(native, english, partial=None):
     return english
 
 
+def track_bytes(t):
+    """Size of a track's MP3, for the buttons that save it for offline listening."""
+    path = (GUIDE / "fa" / "audio" if t.get("fa") else GUIDE / "audio") / t["file"]
+    return path.stat().st_size if path.exists() else 0
+
+
 def fa_voice(ch):
     """Whether this chapter's page plays Persian narration."""
     return LANG == "fa" and bool(ch.track) and bool(ch.track.get("fa"))
@@ -768,7 +774,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
         sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
         chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{num(mmss(s["s"]))}</small></button>'
                         for s in sections)
-        listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-thumb="{art.src(ch.art, root, 640)}" '
+        listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-size="{track_bytes(ch.track)}" data-thumb="{art.src(ch.art, root, 640)}" '
                        f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
                        f'aria-label="{L("Listen to this chapter", "شنیدن این فصل")}">'
                        f'<button class="play" type="button" aria-label="{L("Play the narrated chapter", "پخش روایت صوتی فصل")}">{icon("play", "icon i-play")}'
@@ -1289,7 +1295,7 @@ def build_audio_page(art, chapters, tracks):
         ch = chapters[int(t["file"][:2])]
         return f"{ch.label} — {ch.title}" + ("" if t.get("fa") or not FA_AUDIO else " (به انگلیسی)")
     data = [{"file": ("" if LANG == "en" else audio_dir(root, t)) + t["file"], "title": title(t),
-             "duration": t["duration"], "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"]} for t in tracks]
+             "duration": t["duration"], "size": track_bytes(t), "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"]} for t in tracks]
     thumbs = [art.src(f"ch{i + 1:02d}", root, 640) for i in range(len(tracks))]
     body = (f'{head}<main id="main" class="wrap" style="padding-bottom:80px">'
             f'<section class="player" id="player" aria-label="{L("Player", "پخش‌کننده")}"><span class="kicker" style="color:var(--accent)">{L("Now playing", "در حال پخش")}</span>'

@@ -4,9 +4,12 @@
    show at once) and from the cache when there is not. Images and fonts come from
    the cache first. "Save the whole guide for offline reading" in the reading
    settings sends a message here to fetch everything listed in offline.json.
-   Audio is never cached: the files are large and are streamed in ranges. */
+   Audio is large, so it is saved only when asked, one chapter at a time: the
+   page puts the whole MP3 into the AUDIO cache, and from then on it is played
+   from there, including the byte ranges a player asks for when it seeks. */
 
 const CACHE = "epis-v1";
+const AUDIO = "epis-audio-v1";
 const BASE = new URL("./", self.location).href;
 
 self.addEventListener("install", () => self.skipWaiting());
@@ -14,12 +17,38 @@ self.addEventListener("activate", (event) => event.waitUntil(self.clients.claim(
 
 self.addEventListener("fetch", (event) => {
   const req = event.request;
-  if (req.method !== "GET" || req.headers.has("range")) return;
+  if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (!url.href.startsWith(BASE) || /\.(mp3|epub)$/i.test(url.pathname)) return;
+  if (!url.href.startsWith(BASE)) return;
+  if (/\.mp3$/i.test(url.pathname)) { event.respondWith(audio(req, url)); return; }
+  if (req.headers.has("range") || /\.epub$/i.test(url.pathname)) return;
   if (/\.(jpe?g|png|webp|svg|woff2)$/i.test(url.pathname)) event.respondWith(cacheFirst(req, url));
   else event.respondWith(networkFirst(req));
 });
+
+// A saved chapter comes from the audio cache, whole or in the byte range asked for; any other
+// MP3 streams from the network as usual.
+async function audio(req, url) {
+  const hit = await (await caches.open(AUDIO)).match(url.origin + url.pathname);
+  if (!hit) return fetch(req);
+  const body = await hit.blob();
+  const size = body.size;
+  const headers = { "Content-Type": hit.headers.get("Content-Type") || "audio/mpeg", "Accept-Ranges": "bytes" };
+  const m = /^bytes=(\d*)-(\d*)$/.exec((req.headers.get("range") || "").trim());
+  if (!m || (m[1] === "" && m[2] === "")) {
+    return new Response(body, { status: 200, headers: { ...headers, "Content-Length": String(size) } });
+  }
+  let start, end;
+  if (m[1] === "") { start = Math.max(0, size - Number(m[2])); end = size - 1; }  // the last n bytes
+  else { start = Number(m[1]); end = m[2] === "" ? size - 1 : Math.min(Number(m[2]), size - 1); }
+  if (start >= size || start > end) {
+    return new Response(null, { status: 416, headers: { ...headers, "Content-Range": `bytes */${size}` } });
+  }
+  return new Response(body.slice(start, end + 1), {
+    status: 206,
+    headers: { ...headers, "Content-Range": `bytes ${start}-${end}/${size}`, "Content-Length": String(end - start + 1) },
+  });
+}
 
 async function networkFirst(req) {
   const cache = await caches.open(CACHE);

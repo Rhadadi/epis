@@ -523,6 +523,20 @@ html[data-lang="fa"] .l-en,html:not([data-lang="fa"]) .l-fa{display:none!importa
 .tracks li b{font-family:var(--sans);font-weight:600;font-size:.95rem;display:block}
 .tracks li small{font-family:var(--mono);font-size:.7rem;color:var(--faint)}
 .tracks .secs button{grid-template-columns:1fr auto;padding:9px 12px}
+/* saving audio for offline listening */
+.save-audio,.save-all{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--rule-2);background:transparent;border-radius:999px;
+  padding:6px 12px;font-family:var(--sans);font-size:.8rem;color:var(--dim);cursor:pointer}
+.save-audio:hover,.save-all:hover{border-color:var(--accent);color:var(--ink)}
+.save-audio[data-state="saved"]{color:var(--accent);border-color:var(--accent)}
+.save-audio:disabled,.save-all:disabled{cursor:progress;opacity:.8}
+.save-audio .icon,.save-all .icon{width:15px;height:15px}
+.listen .save-audio{grid-column:2;justify-self:start}
+.save-all{margin:0 0 10px}
+.tracks #chapters li{display:flex;align-items:center;gap:4px}
+.tracks #chapters li>button:first-child{flex:1;min-width:0}
+.tracks li button.save-audio.compact{width:36px;height:36px;flex:none;display:grid;place-items:center;padding:0;border-radius:50%}
+.save-audio.compact small{font-family:var(--mono);font-size:.62rem;color:var(--ink)}
+#chapters.offline li:not([data-saved])>button:first-child{opacity:.45}
 
 /* credits */
 .credits{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
