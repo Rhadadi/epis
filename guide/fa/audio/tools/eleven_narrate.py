@@ -630,13 +630,157 @@ def is_web(path):
     return (int(s.get("sample_rate", 0)), int(s.get("channels", 0)), int(s.get("bit_rate", 0))) == (24000, 1, 48000)
 
 
-def frames_span(enc, original):
-    """For an MP3 in the site's format, spliced in frame by frame: the seconds its frames take up (576 samples
-    each at 24 kHz, its encoder delay and padding included) and the seconds from where it is put in to where
-    the original's audio starts. Every piece has the same encoder delay as the file it goes into, and the
-    concat demuxer cuts that file by frame times that include the delay, so the audio lands where the
-    replaced segment's did: 0."""
-    return int(stream(enc)["nb_read_packets"]) * 576 / 24000, 0.0
+FRAME = 576 / 24000   # seconds of audio in each frame of the site's MP3s (MPEG-2 layer III, 24 kHz)
+DELAY = 1105 / 24000  # LAME's encoder and decoder delay: silence before a file's audio, which players skip
+
+
+def mp3_frames(data):
+    """The frames of an MP3 in the site's format: (offset, length, main_data_begin, part2_3_length, room), where
+    main_data_begin is how many bytes of audio data the frame borrows from the frames before it (the bit
+    reservoir), part2_3_length how many bits of audio data it has, and room its own bytes for audio data.
+    The first frame of a file written by ffmpeg is the Xing/Info frame, which holds no audio."""
+    i, out = 0, []
+    if data[:3] == b"ID3":
+        i = 10 + ((data[6] << 21) | (data[7] << 14) | (data[8] << 7) | data[9])
+    while i + 6 <= len(data):
+        h = int.from_bytes(data[i:i + 4], "big")
+        if (h >> 21) != 0x7FF or (h >> 19) & 3 != 2 or (h >> 17) & 3 != 1 or (h >> 12) & 15 in (0, 15) or (h >> 10) & 3 == 3:
+            if out:
+                break  # the end of the frames (a tag after them, or nothing)
+            i += 1
+            continue
+        rate = [0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160][(h >> 12) & 15] * 1000
+        length = 72 * rate // [22050, 24000, 16000][(h >> 10) & 3] + ((h >> 9) & 1)
+        side = i + 4 + (0 if (h >> 16) & 1 else 2)
+        out.append((i, length, data[side], ((data[side + 1] & 0x7F) << 5) | (data[side + 2] >> 3), i + length - side - 9))
+        i += length
+    return out
+
+
+def resume_frame(fr, first):
+    """The first frame, from index first on, where a file's own frames can take over again after other audio:
+    neither it nor any frame after it borrows audio data from before it (a frame may borrow up to 255 bytes;
+    one without audio data borrows nothing that matters). None if there is none within about a second."""
+    for f0 in range(max(1, first), min(len(fr), first + 40)):
+        avail = 0
+        for j in range(f0, len(fr)):
+            _, _, borrows, bits, room = fr[j]
+            if bits and borrows > avail:
+                break
+            avail += room
+            if avail >= 255:
+                return f0
+        else:
+            return f0
+    return None
+
+
+def pcm(path, start, seconds):
+    """Mono float samples at 24 kHz of a stretch of a file, decoded from 2 s earlier so that the MP3 decoder
+    has the frames it borrows from."""
+    import array
+    lead = min(2.0, max(0.0, start))
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start - lead:.4f}", "-t", f"{seconds + lead:.4f}", "-i", str(path),
+                          "-f", "f32le", "-ac", "1", "-ar", "24000", "-"], capture_output=True, check=True).stdout
+    a = array.array("f")
+    a.frombytes(raw)
+    return a[int(round(lead * 24000)):int(round(lead * 24000)) + int(round(seconds * 24000))]
+
+
+def quiet(samples, level=0.01):
+    return not samples or max(abs(x) for x in samples) < level
+
+
+def splice_frames(published, pieces, out, tags, meta, old_audio=None):
+    """Replace stretches of a published MP3 in the site's format with other audio, re-encoding as little as
+    possible and joining MP3 frames: pieces are (begin, end, file), where begin and end are times in the
+    published audio and file the audio that goes in their place (or None for nothing).
+
+    Each piece is encoded once, together with the published audio around it out to quiet places on both
+    sides: from a quiet frame at or before its begin, and up to the first frame after its end that is quiet
+    and borrows no audio data from frames before it (resume_frame), where the published frames take over
+    again. So a join never cuts into speech, and the few milliseconds an encoder adds at the end fall in a
+    quiet moment. old_audio(start, seconds) gives the published audio (default: decoded from the file).
+    tags(moved) gives the ffmetadata text (tags and section markers) for the result. Returns moved (a time
+    in the published audio -> the same moment in the result) and, for each piece, where its file's audio
+    starts in the result."""
+    old = published.read_bytes()
+    fr = mp3_frames(old)
+    audio_end = fr[-1][0] + fr[-1][1]
+    old_audio = old_audio or (lambda start, seconds: pcm(published, start, seconds))
+    frame_at = lambda t: max(1, int((t + DELAY) / FRAME) + 1)      # frame j holds (j-1)*FRAME - DELAY onward
+    start_of = lambda j: (j - 1) * FRAME - DELAY
+    raw, at, extra, jumps, content = [old[:fr[1][0]]], 1, 0, [], []
+    work = out.parent / (out.stem + "-pieces")
+    work.mkdir(parents=True, exist_ok=True)
+    for i, (b, e, f) in enumerate(sorted(pieces, key=lambda p: p[0])):
+        # a quiet frame to start from, at most 3 s before b; its first DELAY seconds become the encoder's lead-in
+        before = old_audio(max(0.0, b - 3.2), min(b, 3.2))
+        t0 = max(0.0, b - 3.2)
+        fb = frame_at(b)
+        while fb > max(at, frame_at(b - 3.0)) and not quiet(before[max(0, int((start_of(fb) - FRAME - t0) * 24000)):
+                                                                 max(0, int(((fb - 1) * FRAME + FRAME - t0) * 24000))]):
+            fb -= 1
+        while fb > max(1, at) and (fb - 1) * FRAME > b:  # the piece's audio must not start after b
+            fb -= 1
+        if fb < at or (fb - 1) * FRAME > b + 1e-6:
+            raise SystemExit(f"the replaced stretches at {b:.2f} s overlap")
+        # a quiet frame to go back to, at most 15 s after e, that borrows nothing from before it
+        after = old_audio(e, 15.0)
+        f0, j = None, frame_at(e) + 1
+        while j < len(fr) and start_of(j) < e + 14.9:
+            j = resume_frame(fr, j)
+            if j is None:
+                break
+            a = int((start_of(j) - FRAME - e) * 24000)
+            if a >= 0 and quiet(after[a:a + int(3 * FRAME * 24000)]):
+                f0 = j
+                break
+            j += 1
+        if f0 is None:
+            raise SystemExit(f"no quiet place to join the audio within 15 s after {e:.2f} s")
+        # the piece: published audio from fb's own start to b, the new audio, published audio from e to f0
+        lead_from = (fb - 1) * FRAME
+        head = before[int((lead_from - t0) * 24000):int((b - t0) * 24000)] if b > lead_from else []
+        tail = after[:int((start_of(f0) - e) * 24000)]
+        inputs = []
+        for name, samples, file in (("head", head, None), ("new", None, f), ("tail", tail, None)):
+            if file:
+                inputs += ["-i", str(file)]
+            elif samples is not None and len(samples):
+                (work / f"{i}-{name}.f32").write_bytes(bytes(memoryview(samples)))
+                inputs += ["-f", "f32le", "-ar", "24000", "-ac", "1", "-i", str(work / f"{i}-{name}.f32")]
+        enc = work / f"{i}.mp3"
+        n_in = inputs.count("-i")
+        if not n_in:
+            raise SystemExit(f"nothing to put in at {b:.2f} s")
+        chain = "".join(f"[{k}:a]aformat=sample_fmts=fltp:sample_rates=24000:channel_layouts=mono[a{k}];" for k in range(n_in))
+        ffmpeg(*inputs, "-filter_complex", chain + "".join(f"[a{k}]" for k in range(n_in)) + f"concat=n={n_in}:v=0:a=1[out]",
+               "-map", "[out]", *WEB, str(enc))
+        new = enc.read_bytes()
+        nf = mp3_frames(new)[1:]  # without its Xing/Info frame
+        raw.append(old[fr[at][0]:fr[fb][0]])
+        raw.append(new[nf[0][0]:nf[-1][0] + nf[-1][1]])
+        content.append(b + extra * FRAME)  # the piece's lead-in makes up for the file's, so its audio lands at b
+        extra += fb + len(nf) - f0
+        jumps.append((start_of(f0), extra * FRAME))
+        at = f0
+    raw.append(old[fr[at][0]:audio_end])
+
+    def moved(t):
+        return t + next((s for start, s in reversed(jumps) if t >= start - 1e-6), 0.0)
+
+    joined = out.with_suffix(".joined.mp3")
+    joined.write_bytes(b"".join(raw))
+    meta.write_text(tags(moved), encoding="utf-8")
+    # rewrap: fresh tags, section markers and Xing header (frame count); the audio frames are copied as they are
+    ffmpeg("-i", str(joined), "-i", str(meta), "-map", "0:a", "-map_metadata", "1", "-map_chapters", "1", "-c", "copy",
+           "-id3v2_version", "3", str(out))
+    joined.unlink()
+    for p in work.iterdir():
+        p.unlink()
+    work.rmdir()
+    return moved, content
 
 
 def write_sync(path, sync):
@@ -694,39 +838,27 @@ def patch_chapter(n, m, settings):
     chapters = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_chapters", "-of", "json", str(published)],
                                          capture_output=True, text=True, check=True).stdout).get("chapters", [])
     copy = is_web(published)
-    pieces = {}  # k: (file as spliced in, seconds it takes up in the result, seconds before the segment's own audio)
-    for k, _, _ in changed:
-        if copy:  # encode only the new segment, once, to the site's format; the rest is kept as it is
-            enc = CHAPTERS / f"{path.stem}-patch-{k}.mp3"
-            ffmpeg("-i", str(new_files[k]), "-map", "0:a", "-map_metadata", "-1", *WEB, str(enc))
-            pieces[k] = (enc, *frames_span(enc, new_files[k]))
-        else:
-            pieces[k] = (new_files[k], duration(new_files[k]), 0.0)
-    cuts = [(p["begin"], p["end"], k, pieces[k][1]) for k, _, p in changed]
-
-    def moved(t):
-        return t + sum(d - (e - b) for b, e, _, d in cuts if e <= t + 1e-6)
-
-    end = moved(sync["duration"])
-    meta.write_text(ffmetadata(n, title, [(c["tags"]["title"], moved(float(c["start_time"]))) for c in chapters], end),
-                    encoding="utf-8")
-    kept = [(at, b) for at, b in zip([0.0] + [e for _, e, _, _ in cuts], [b for b, _, _, _ in cuts] + [None])]
+    starts = {}  # k: where the new segment's own audio starts in the result
     if copy:
-        # without re-encoding: the published MP3 is cut between frames (every 24 ms) at the edges of each replaced
-        # segment, where the chapter is quiet, and the new segments' frames are put in between
-        listing = []
-        for i, (a, b) in enumerate(kept):
-            if b is None or b - a > 0.001:
-                listing.append(f"file '{published.resolve().as_posix()}'")
-                listing += [f"inpoint {a:.3f}"] if a else []
-                listing += [f"outpoint {b:.3f}"] if b is not None else []
-            if i < len(cuts):
-                listing.append(f"file '{pieces[cuts[i][2]][0].resolve().as_posix()}'")
-        lst = CHAPTERS / f"{path.stem}-patch.txt"
-        lst.write_text("\n".join(listing) + "\n", encoding="utf-8")
-        ffmpeg("-f", "concat", "-safe", "0", "-i", str(lst), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
-               "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(web))
+        # without re-encoding what is kept: the new segments are encoded once, to the site's format, with only
+        # the moments around them out to quiet places, and MP3 frames are joined (splice_frames)
+        pieces = [(p["begin"], p["end"], new_files[k]) for k, _, p in changed]
+        moved, content = splice_frames(published, pieces, web,
+                                       lambda moved: ffmetadata(n, title, [(c["tags"]["title"], moved(float(c["start_time"])))
+                                                                           for c in chapters], moved(sync["duration"])), meta)
+        starts = {k: content[i] for i, (k, _, _) in enumerate(changed)}
+        end = moved(sync["duration"])
     else:  # a full-quality source: decode, splice and encode once to the site's format
+        cuts = [(p["begin"], p["end"], k, duration(new_files[k])) for k, _, p in changed]
+
+        def moved(t):
+            return t + sum(d - (e - b) for b, e, _, d in cuts if e <= t + 1e-6)
+
+        starts = {k: moved(p["begin"]) for k, _, p in changed}
+        end = moved(sync["duration"])
+        meta.write_text(ffmetadata(n, title, [(c["tags"]["title"], moved(float(c["start_time"]))) for c in chapters], end),
+                        encoding="utf-8")
+        kept = [(at, b) for at, b in zip([0.0] + [e for _, e, _, _ in cuts], [b for b, _, _, _ in cuts] + [None])]
         fmt = "aformat=sample_fmts=fltp:sample_rates=24000:channel_layouts=mono"
         inputs, parts, labels = ["-i", str(published)], [], []
         olds = [i for i, (a, b) in enumerate(kept) if b is None or b - a > 0.001]  # the stretches of old audio kept
@@ -749,14 +881,14 @@ def patch_chapter(n, m, settings):
         f = new_files[k]
         align_file = f.with_suffix(".json")
         alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
-        start = moved(p["begin"]) + pieces[k][2]
+        start = starts[k]
         for i, (kind, text), (b, e) in zip(range(*p["lines"]), s["lines"], line_times(s, alignment, duration(f))):
             lines[i] = {"kind": kind, "text": text, "begin": round(start + b, 3), "end": round(start + e, 3), "voice": s["role"]}
     replaced = {k: entries[seg_key(s)].get("request_id") for k, s, _ in changed}
     segments = []
     for c, q in sorted(spans.items()):
-        b = moved(q["begin"])
-        e = b + pieces[c][1] if c in replaced else moved(q["end"])
+        b = starts[c] if c in replaced else moved(q["begin"])
+        e = b + duration(new_files[c]) if c in replaced else moved(q["end"])
         segments.append(dict(q, begin=round(b, 3), end=round(e, 3), request_id=replaced.get(c, q.get("request_id"))))
     sync.update(title=title, duration=round(end, 3), lines=lines, segments=segments)
     write_sync(PUBLISH / "sync" / f"{path.stem}.json", sync)
