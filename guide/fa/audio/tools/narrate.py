@@ -303,7 +303,18 @@ def transcribe(audio):
     stream = _ASR.create_stream()
     stream.accept_waveform(16000, a)
     _ASR.decode_stream(stream)
-    return stream.result.text
+    return spell_digits(stream.result.text)
+
+
+def spell_digits(text):
+    """The recogniser writes numbers in digits, the scripts in words (make_script.py): spell them
+    out the same way, so a correctly read year does not count as a mistake."""
+    try:
+        from num2words import num2words
+    except ImportError:
+        return text
+    digits = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789")
+    return re.sub(r"[0-9۰-۹٠-٩]+", lambda m: f" {num2words(int(m.group(0).translate(digits)), lang='fa')} ", text)
 
 
 def comparable(s):
