@@ -1424,10 +1424,10 @@ def build_audio_page(art, chapters, tracks, feed=None):
             f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
             + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
-                fa_audio('روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ»، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
+                fa_audio(f'روایت با صداهای ساختگی ({fa_engines_phrase()})، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
                          'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
                          'این مدل صدای فارسی ندارد، به همین دلیل روایت به زبان انگلیسی است. ',
-                         'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ»، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
+                         f'روایت با صداهای ساختگی ({fa_engines_phrase()})، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
                          'روایتِ فارسی فصل‌به‌فصل آماده می‌شود؛ تا آن زمان فصل‌های دیگر با روایتِ انگلیسیِ مدلِ Kokoro-82M پخش می‌شوند. ')
                 + '<a href="about.html">صوت چگونه ساخته شد</a>. '
                 'صفحه‌کلید: <kbd>k</kbd> یا فاصله برای پخش و توقف، <kbd>j</kbd> و <kbd>l</kbd> برای جابه‌جایی.')
@@ -1492,15 +1492,55 @@ def build_credits(art):
             f'<div class="prose" style="max-width:46rem;margin-top:40px"><h2>{L("Sound", "صدا")}</h2><p>'
             + L(f'The audio edition is narrated by a synthetic voice: the <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> text-to-speech model '
                 f'(Apache License 2.0), with pronunciation by <a href="https://github.com/hexgrad/misaki">misaki</a>. See <a href="{audio}">how the audio was made</a>.',
-                fa_audio(FA_VOICES_CREDIT + 'نسخهٔ صوتیِ انگلیسی', 'نسخهٔ صوتی (به انگلیسی)') +
+                fa_audio(fa_voices_credit() + 'نسخهٔ صوتیِ انگلیسی', 'نسخهٔ صوتی (به انگلیسی)') +
                 f' با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> '
                 f'(مجوز آپاچی ۲٫۰)، با تلفظِ <a href="https://github.com/hexgrad/misaki">misaki</a>. <a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
             + f'</p><h2>{L("Type", "حروف")}</h2><p>{fonts}{L(", all under the SIL Open Font License (follow a name for its licence).", "؛ همه با مجوزِ SIL Open Font License (برای دیدنِ مجوز، روی نام کلیک کنید).")}</p></div></main>')
     return body
 
 
-FA_VOICES_CREDIT = (
-    'نسخهٔ صوتیِ فارسی با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ '
+def fa_engines():
+    """Which Persian chapters each narration engine made, from the sync files: {"ElevenLabs": [1], "Gooya": [2, 3]}."""
+    out = {}
+    for n, t in sorted(FA_TRACKS.items()):
+        p = GUIDE / "fa" / "audio" / "sync" / (t["file"][:-4] + ".json")
+        engine = (json.loads(p.read_text(encoding="utf-8")).get("narration") or {}).get("engine", "Gooya") if p.exists() else "Gooya"
+        out.setdefault(engine, []).append(n)
+    return out
+
+
+def fa_engines_phrase():
+    """«ElevenLabs با دو راوی برای فصلِ ۱؛ مدلِ گویا بزرگ برای فصل‌های ۲ و ۳»."""
+    names = {"ElevenLabs": "ElevenLabs با دو راوی", "Gooya": "مدلِ فارسیِ «گویا بزرگ»"}
+    engines = fa_engines()
+    if len(engines) == 1:
+        return names.get(next(iter(engines)), next(iter(engines)))
+    return "؛ ".join(f"{names.get(e, e)} برای {fa_chapters_phrase(ns)}" for e, ns in engines.items())
+
+
+def fa_chapters_phrase(nums):
+    """«فصلِ ۱» or «فصل‌های ۲ و ۳»."""
+    nums = [num(n) for n in nums]
+    if len(nums) == 1:
+        return f"فصلِ {nums[0]}"
+    return "فصل‌های " + "، ".join(nums[:-1]) + " و " + nums[-1]
+
+
+def fa_voices_credit():
+    """Credits for the Persian narration, chapter by chapter engine."""
+    engines = fa_engines()
+    eleven, gooya = engines.get("ElevenLabs", []), engines.get("Gooya", [])
+    out = ""
+    if eleven:
+        out += (f'روایتِ فارسیِ {fa_chapters_phrase(eleven)} را دو صدای ساختگیِ <a href="https://elevenlabs.io">ElevenLabs</a> '
+                'خوانده‌اند: صدای مردانه راویِ اصلی است و صدای زنانه بخش‌ها را به نوبت با او می‌خواند. ')
+    if gooya:
+        out += ((f"روایتِ فارسیِ {fa_chapters_phrase(gooya)} را " if eleven else "نسخهٔ صوتیِ فارسی را ") + FA_GOOYA_CREDIT)
+    return out
+
+
+FA_GOOYA_CREDIT = (
+    'صدایی ساختگی خوانده است: مدلِ متن‌به‌گفتارِ '
     '<a href="https://huggingface.co/Reza2kn/Gooya-Bozorg-v1.5">گویا بزرگ ۱٫۵</a>، که همان '
     '<a href="https://huggingface.co/Thomcles/Chatterbox-TTS-Persian-Farsi">Chatterbox-TTS-Persian-Farsi</a> '
     '(مدلِ Chatterbox از Resemble AI، آموزش‌دیده برای فارسی) است، با مجوزِ CC BY-NC 4.0 (فقط برای استفادهٔ غیرتجاری)، '
