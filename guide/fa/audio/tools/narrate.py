@@ -217,8 +217,6 @@ def load(threads):
     _TTS.s3gen = s3gen.to(device).eval()
     _TTS.prepare_conditionals(str(REFERENCE), exaggeration=0.5)
     assert _TTS.sr == SR
-    if ASR_DIR:
-        load_asr(threads)
     release_memory()
 
 
@@ -334,65 +332,87 @@ def mismatch(text, audio):
     return rate, rate <= limit
 
 
-def generate(job):
-    """Worker: generate one piece, retrying with new seeds if it looks wrong, and cache it."""
+def take(job):
+    """Worker: one take of a piece, with this attempt's seed."""
     import torch
-    text, exaggeration, key = job
-    best = None
-    for attempt in range(TRIES):
-        torch.manual_seed(int(key[:8], 16) + attempt)
-        try:
-            wav = _TTS.generate(text=text, language_id=None, exaggeration=exaggeration,
-                                cfg_weight=CFG_WEIGHT, temperature=TEMPERATURE)
-        except Exception as e:  # a bad draw; try another seed
-            print(f"  generation failed ({e.__class__.__name__}: {e}), retrying: {text[:60]}", flush=True)
-            continue
-        audio = trim(wav.squeeze(0).cpu().numpy().astype(np.float32))
-        score, ok = misfit(text, audio)
-        if _ASR is not None and len(audio):
-            rate, heard_ok = mismatch(text, audio)
-            score, ok = rate + score / 10, ok and heard_ok  # the transcription decides; length breaks ties
-        if best is None or score < best[1]:
-            best = (audio, score, ok)
-        if ok:
-            break
-    if best is None:
-        raise RuntimeError(f"could not generate: {text}")
+    text, exaggeration, key, attempt = job
+    torch.manual_seed(int(key[:8], 16) + attempt)
+    try:
+        wav = _TTS.generate(text=text, language_id=None, exaggeration=exaggeration,
+                            cfg_weight=CFG_WEIGHT, temperature=TEMPERATURE)
+    except Exception as e:  # a bad draw; the next attempt has another seed
+        return job, None, f"{e.__class__.__name__}: {e}"
+    return job, trim(wav.squeeze(0).cpu().numpy().astype(np.float32)), None
+
+
+def judge(text, audio):
+    """How far a take is from right (lower is better), and whether it is acceptable."""
+    score, ok = misfit(text, audio)
+    if _ASR is not None and len(audio):
+        rate, heard_ok = mismatch(text, audio)
+        score, ok = rate + score / 10, ok and heard_ok  # the transcription decides; length breaks ties
+    return score, ok
+
+
+def save(key, audio):
     path = cache_path(key)
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(f".{os.getpid()}.tmp")
-    sf.write(tmp, best[0], SR, format="FLAC", subtype="PCM_16")
+    sf.write(tmp, audio, SR, format="FLAC", subtype="PCM_16")
     os.replace(tmp, path)
-    return key, len(best[0]) / SR, best[2], attempt + 1, text
 
 
 def run_jobs(jobs, workers, threads, log):
-    """Generate every uncached piece, in several processes when asked."""
+    """Generate every uncached piece, in several processes when asked.
+
+    The workers only make takes; this process judges each one (the speech
+    recogniser runs once, here, rather than in every worker, to save memory)
+    and asks for another take with a new seed until one is acceptable or
+    TRIES are used up, keeping the best."""
     if not jobs:
         return
+    if ASR_DIR and _ASR is None:
+        load_asr(2)
     start, done, spoken = time.time(), 0, 0.0
+    best = {}
 
-    def report(result):
+    def settle(result):
+        """Judge a take; return the next take to ask for, or None when the piece is finished."""
         nonlocal done, spoken
-        _, dur, ok, tries, text = result
+        (text, exaggeration, key, attempt), audio, error = result
+        if error:
+            log(f"  generation failed ({error}): {text[:60]}")
+        else:
+            score, ok = judge(text, audio)
+            if key not in best or score < best[key][1]:
+                best[key] = (audio, score, ok)
+        if not (key in best and best[key][2]) and attempt + 1 < TRIES:
+            return text, exaggeration, key, attempt + 1
+        if key not in best:
+            raise RuntimeError(f"could not generate: {text}")
+        audio, _, ok = best.pop(key)
+        save(key, audio)
         done += 1
-        spoken += dur
+        spoken += len(audio) / SR
         if not ok:
-            log(f"  kept a doubtful take after {tries} tries: {text[:60]}…")
+            log(f"  kept a doubtful take after {attempt + 1} tries: {text[:60]}…")
         if done % 10 == 0 or done == len(jobs):
             elapsed = time.time() - start
             eta = elapsed / done * (len(jobs) - done)
             log(f"  {done}/{len(jobs)} pieces, {spoken / 60:.1f} min of speech in {elapsed / 60:.0f} min"
                 f" (about {eta / 3600:.1f} h left)")
+        return None
 
     if workers <= 1:
         if _TTS is None:
             load(threads)
-        for job in jobs:
-            report(generate(job))
+        for text, exaggeration, key in jobs:
+            job = (text, exaggeration, key, 0)
+            while job:
+                job = settle(take(job))
         return
     import multiprocessing as mp
-    from concurrent.futures import ProcessPoolExecutor, as_completed
+    from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
     from concurrent.futures.process import BrokenProcessPool
     failures = 0
     while True:
@@ -403,8 +423,13 @@ def run_jobs(jobs, workers, threads, log):
         batch = pending[:BATCH]
         try:
             with ProcessPoolExecutor(workers, mp_context=mp.get_context("spawn"), initializer=load, initargs=(threads,)) as pool:
-                for future in as_completed([pool.submit(generate, job) for job in batch]):
-                    report(future.result())
+                running = {pool.submit(take, (text, ex, key, 0)) for text, ex, key in batch}
+                while running:
+                    finished, running = wait(running, return_when=FIRST_COMPLETED)
+                    for future in finished:
+                        job = settle(future.result())
+                        if job:
+                            running.add(pool.submit(take, job))
         except BrokenProcessPool:  # a worker was killed, usually for lack of memory: carry on from the cache
             failures += 1
             if failures > 5:
