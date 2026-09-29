@@ -25,5 +25,17 @@
 <pubDate>Thu, 01 Jan 2026 01:00:00 +0000</pubDate>
 <itunes:duration>2851</itunes:duration>
 </item>
+<item>
+<title>فصل ۲: تاریخِ نظریهٔ معرفت</title>
+<itunes:title>تاریخِ نظریهٔ معرفت</itunes:title>
+<itunes:episode>2</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>از پیشاسقراطیان، سقراط، افلاطون و ارسطو، با گذر از سنت‌های هندی، اسلامی و چینی، تا دکارت، لاک، هیوم، رید و کانت، و از آنجا تا گتیه، کواین و امروز متنِ فصل: https://rhadadi.github.io/epis/fa/guide/02-history-of-epistemology.html</description>
+<link>https://rhadadi.github.io/epis/fa/guide/02-history-of-epistemology.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/fa/audio/02-history-of-epistemology.mp3" length="28212780" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-fa-02</guid>
+<pubDate>Thu, 01 Jan 2026 02:00:00 +0000</pubDate>
+<itunes:duration>5642</itunes:duration>
+</item>
 </channel>
 </rss>

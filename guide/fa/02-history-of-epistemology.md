@@ -2,7 +2,7 @@
 
 [← قبلی: معرفت‌شناسی چیست؟](01-what-is-epistemology.md) · [فهرست](README.md) · [بعدی: منطق و کالبدشناسیِ استدلال ←](03-logic-and-arguments.md)
 
-**صوت:** [شنیدنِ این فصل](audio/02-history-of-epistemology.mp3) (۱ ساعت و ۱۱ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#02)
+**صوت:** [شنیدنِ این فصل](audio/02-history-of-epistemology.mp3) (۱ ساعت و ۳۴ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#02)
 
 ---
 
