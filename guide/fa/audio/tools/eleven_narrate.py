@@ -572,6 +572,7 @@ def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries):
     text = seg_text(s)
     if len(text) * rate(m) > subscription()["remaining"]:
         raise SystemExit(f"not enough credits left for segment {k}; stopping (no overage)")
+    SEGMENTS.mkdir(parents=True, exist_ok=True)  # before paying for audio that could not be saved
     name = f"{n:02d}-{key_[:12]}.mp3"
     entry = {"key": key_, "chapter": n, "chunk": k, "voice": VOICES[s["role"]], "role": s["role"], "characters": len(text),
              "text_sha1": sha1(text), "file": name, "status": "generating", "request_id": None, "character_cost": None,
