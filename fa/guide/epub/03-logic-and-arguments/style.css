@@ -9,6 +9,17 @@ p{margin:0 0 .8em}
 .attr{margin:0 1.5em 1em;color:#555;font-size:.9em}
 .label,.question{font-weight:bold}
 .dialogue{margin-right:1.2em}
-.dialogue::before{content:"— "}
 .item{margin-right:1em}
+.who{font-weight:bold;color:#6b4b2a}
+.v2{border-right:3px solid #c9a27a;padding-right:.6em}
 .-epub-media-overlay-active{background-color:#fde68a;color:#111;border-radius:4px}
+.title-page{text-align:center;margin-top:18%}
+.title-page .book{font-size:2em;font-weight:bold;margin:0 0 .3em}
+.title-page .sub{color:#555;margin:0 0 2.5em}
+.title-page .chapter{font-size:1.4em;margin:0 0 .4em}
+.title-page .kind{color:#555}
+.colophon h2{font-size:1.2em;margin-top:1.4em}
+.colophon p,.colophon li{font-size:.95em}
+.cover{text-align:center;margin:0;padding:0}
+.cover img{max-width:100%;max-height:100vh}
+pre.license{white-space:pre-wrap;text-align:left;font-size:.8em;font-family:serif}

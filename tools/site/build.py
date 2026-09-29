@@ -1995,17 +1995,35 @@ def chapter_sync(ch):
 
 def readalong_lines(sync, times=False):
     """The narration's lines as XHTML, one element per spoken line, with ids l0001… (and, for the web
-    page, their times). The same markup goes into the EPUB, where the Media Overlay points at the ids."""
+    page, their times). The same markup goes into the EPUB, where the Media Overlay points at the ids.
+    Dialogue lines carry their speaker's label from the chapter (الف, ب), which is not spoken; lines read
+    by the second narrator are marked, so a reader can see the voices take turns."""
     out = []
     tag = {"opening": ("h1", ""), "section": ("h2", ""), "subsection": ("h3", ""), "quote": ("p", "quote"),
            "attr": ("p", "attr"), "cue": ("p", "label"), "label": ("p", "label"), "question": ("p", "question"),
            "answer": ("p", "answer"), "item": ("p", "item"), "aside": ("p", "aside")}
+    who = {"voice1": "الف", "voice2": "ب", "voice3": "ج"}
     for i, line in enumerate(sync["lines"], 1):
         kind = line["kind"]
-        el, cls = tag.get(kind, ("p", "dialogue" if kind.startswith("voice") else ""))
+        el, cls = tag.get(kind, ("p", "dialogue" if kind in who else ""))
+        classes = " ".join(c for c in ("line", cls, "v2" if line.get("voice") == "second" else "") if c)
         at = f' data-b="{line["begin"]}" data-e="{line["end"]}"' if times else ""
-        out.append(f'<{el} id="l{i:04d}" class="line{" " + cls if cls else ""}"{at}>{html.escape(line["text"], quote=False)}</{el}>')
+        label = f'<span class="who">{who[kind]}:</span> ' if kind in who else ""
+        out.append(f'<{el} id="l{i:04d}" class="{classes}"{at}>{label}{html.escape(line["text"], quote=False)}</{el}>')
     return "".join(out)
+
+
+def narration_credit(sync):
+    """Who narrates a chapter, for its read-along page and EPUB: (Persian credit, narrators, rights)."""
+    n = sync.get("narration") or {}
+    if n.get("engine") == "ElevenLabs":
+        return ("روایت با دو صدای ساختگیِ ElevenLabs: صدای مردانه راویِ اصلی است و صدای زنانه بخش‌ها را به نوبت با او می‌خواند، "
+                "نقل‌قول‌ها و پرسش‌های آزمونک را می‌خواند، و در گفت‌وگوها نقشِ «ب» را دارد.",
+                ["صدای ساختگیِ مردانه (ElevenLabs)", "صدای ساختگیِ زنانه (ElevenLabs)"],
+                "روایت: صداهای ساختگیِ ElevenLabs.")
+    return ("روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ فارسیِ «گویا بزرگ ۱٫۵» (Chatterbox، آموزش‌دیده برای فارسی).",
+            ["صدای ساختگی (گویا بزرگ ۱٫۵)"],
+            "روایت: مدلِ «گویا بزرگ ۱٫۵»، مجوزِ CC BY-NC 4.0 (فقط استفادهٔ غیرتجاری).")
 
 
 def clock_value(sec):
@@ -2025,26 +2043,66 @@ p{margin:0 0 .8em}
 .attr{margin:0 1.5em 1em;color:#555;font-size:.9em}
 .label,.question{font-weight:bold}
 .dialogue{margin-right:1.2em}
-.dialogue::before{content:"— "}
 .item{margin-right:1em}
+.who{font-weight:bold;color:#6b4b2a}
+.v2{border-right:3px solid #c9a27a;padding-right:.6em}
 .-epub-media-overlay-active{background-color:#fde68a;color:#111;border-radius:4px}
+.title-page{text-align:center;margin-top:18%}
+.title-page .book{font-size:2em;font-weight:bold;margin:0 0 .3em}
+.title-page .sub{color:#555;margin:0 0 2.5em}
+.title-page .chapter{font-size:1.4em;margin:0 0 .4em}
+.title-page .kind{color:#555}
+.colophon h2{font-size:1.2em;margin-top:1.4em}
+.colophon p,.colophon li{font-size:.95em}
+.cover{text-align:center;margin:0;padding:0}
+.cover img{max-width:100%;max-height:100vh}
+pre.license{white-space:pre-wrap;text-align:left;font-size:.8em;font-family:serif}
 """
 
 
 def build_readalong(ch, sync, art, stamp):
     """For a narrated Persian chapter: a read-along web page, and the parts of a chapter EPUB 3 with
-    Media Overlays (text, SMIL timing, package, font, cover), which the page's "EPUB" button packs
-    together with the MP3 in the reader's browser (so the site keeps one copy of the audio)."""
+    Media Overlays, which the page's "EPUB" button packs together with the MP3 in the reader's browser
+    (so the site keeps one copy of the audio). The EPUB stands on its own as a published ebook: cover,
+    title page, the chapter with its synchronized narration, a colophon with credits and licences, a table
+    of contents and landmarks, and full publication and accessibility metadata."""
+    import uuid
     title = f"{ch.label}: {ch.title}"
     audio = sync["file"]
     body = readalong_lines(sync)
     parts = OUT() / "guide" / "epub" / ch.slug
     x = lambda v: html.escape(str(v), quote=True)
+    credit, narrators, narration_rights = narration_credit(sync)
+    blurb = html.unescape(strip_tags(Markdown().inline(ch.blurb))) if ch.blurb else ""
     heads = [(i, l["text"]) for i, l in enumerate(sync["lines"], 1) if l["kind"] == "section"]
-    chapter = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
-               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">'
-               f'<head><meta charset="utf-8"/><title>{x(title)}</title><link rel="stylesheet" href="style.css"/></head>'
-               f'<body><section epub:type="chapter">{body}</section></body></html>')
+    uid = uuid.uuid5(uuid.NAMESPACE_URL, f"{LIVE}fa/guide/{ch.href}#readalong")
+    doc = lambda name, t, inner, epub_type="": (
+        '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
+        '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">'
+        f'<head><meta charset="utf-8"/><title>{x(t)}</title><link rel="stylesheet" href="style.css"/></head>'
+        f'<body{f" epub:type={chr(34)}{epub_type}{chr(34)}" if epub_type else ""}>{inner}</body></html>')
+    cover = doc("cover", "جلد", f'<section class="cover" epub:type="cover"><img src="cover.jpg" alt="{x(art.alt("audio"))}"/></section>')
+    titlepage = doc("title", SITE_FA, '<section class="title-page" epub:type="titlepage">'
+                    f'<p class="book">{x(SITE_FA)}</p><p class="sub">راهنمای کاملِ معرفت، شواهد و تفکرِ نقادانه</p>'
+                    f'<p class="chapter">{x(title)}</p><p class="kind">کتابِ صوتی همراه با متن</p></section>')
+    chapter = doc("chapter", title, f'<section epub:type="chapter" role="doc-chapter">{body}</section>', "bodymatter")
+    how = ("این فایل متن و روایتِ فصل را با هم دارد. در برنامه‌هایی که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را "
+           "پشتیبانی می‌کنند، مانندِ Apple Books و Thorium Reader، دکمهٔ پخش را بزنید: روایت شروع می‌شود و جمله‌ای که خوانده می‌شود "
+           "رنگی می‌شود. در برنامه‌های دیگر، متن مثلِ هر کتابِ الکترونیکی خوانده می‌شود.")
+    colophon = doc("colophon", "دربارهٔ این کتاب", '<section class="colophon" epub:type="colophon">'
+                   '<h1>دربارهٔ این کتاب</h1>'
+                   f'<p>{x(title)}، از «{x(SITE_FA)}»{("؛ " + x(blurb)) if blurb else ""}</p>'
+                   f'<h2>چگونه بشنوید و بخوانید</h2><p>{x(how)}</p>'
+                   '<h2>متن</h2><p>متنِ این کتاب همان است که روایت می‌کند: متنِ فصل، که برای شنیدن تنظیم شده است. عددها و نمادها به کلمه '
+                   'درآمده‌اند، جدول‌ها جمله‌به‌جمله خوانده می‌شوند، نمودارها کنار گذاشته شده‌اند، و فصل با آزمونکی شفاهی تمام می‌شود. '
+                   'در گفت‌وگوها نامِ گوینده («الف»، «ب») فقط نوشته شده و خوانده نمی‌شود.</p>'
+                   f'<h2>روایت</h2><p>{x(credit)}</p>'
+                   '<h2>تصویرِ جلد و قلم</h2><ul>'
+                   f'<li>تصویرِ جلد: {art.caption("audio")}؛ مالکیتِ عمومی، از ویکی‌انبار.</li>'
+                   '<li>قلم: Vazirmatn، با <a href="license.xhtml">مجوزِ SIL Open Font License 1.1</a>.</li></ul>'
+                   f'<p>شناسه: urn:uuid:{uid}</p></section>')
+    ofl = (ASSETS / "fonts" / "licenses" / "vazirmatn-OFL.txt").read_text(encoding="utf-8")
+    license_doc = doc("license", "مجوزِ قلم", f'<section epub:type="appendix"><h1>مجوزِ قلمِ Vazirmatn</h1><pre class="license" lang="en" xml:lang="en" dir="ltr">{x(ofl)}</pre></section>')
     smil = ('<?xml version="1.0" encoding="utf-8"?>\n'
             '<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">'
             '<body><seq id="chapter-seq" epub:textref="chapter.xhtml" epub:type="chapter">'
@@ -2053,46 +2111,72 @@ def build_readalong(ch, sync, art, stamp):
                       for i, l in enumerate(sync["lines"], 1))
             + "</seq></body></smil>")
     duration = clock_value(sync["duration"])
+    access = ("متنِ کامل همراه با روایتِ هم‌زمان (EPUB 3 Media Overlays): می‌توان فقط خواند، فقط شنید، یا هر دو را با هم؛ "
+              "فهرستِ مطالب و عنوان‌های بخش‌ها برای جابه‌جایی آمده‌اند. تنها تصویر، جلد است و متنِ جایگزین دارد.")
+    meta = [f'<dc:identifier id="uid">urn:uuid:{uid}</dc:identifier>',
+            f'<dc:title id="t1">{x(title)}</dc:title>', '<meta refines="#t1" property="title-type">main</meta>',
+            f'<dc:title id="t2">{x(SITE_FA)}</dc:title>', '<meta refines="#t2" property="title-type">collection</meta>',
+            '<dc:language>fa</dc:language>', f'<dc:creator>{x(SITE_FA)}</dc:creator>', f'<dc:publisher>{x(SITE_FA)}</dc:publisher>',
+            f'<dc:description>{x(blurb or title)}</dc:description>',
+            '<dc:subject>معرفت‌شناسی</dc:subject>', '<dc:subject>فلسفه</dc:subject>', '<dc:subject>تفکرِ نقادانه</dc:subject>',
+            f'<dc:rights>{x("متن: «" + SITE_FA + "». " + narration_rights + " تصویرِ جلد: مالکیتِ عمومی. قلم: Vazirmatn (SIL OFL 1.1).")}</dc:rights>',
+            f'<meta property="dcterms:modified">{stamp}</meta>',
+            f'<meta property="belongs-to-collection" id="series">{x(SITE_FA)}</meta>',
+            '<meta refines="#series" property="collection-type">series</meta>',
+            f'<meta refines="#series" property="group-position">{ch.num}</meta>',
+            f'<meta property="media:duration" refines="#overlay">{duration}</meta>', f'<meta property="media:duration">{duration}</meta>',
+            *[f'<meta property="media:narrator">{x(n)}</meta>' for n in narrators],
+            '<meta property="media:active-class">-epub-media-overlay-active</meta>',
+            *[f'<meta property="schema:accessMode">{v}</meta>' for v in ("textual", "auditory", "visual")],
+            *[f'<meta property="schema:accessModeSufficient">{v}</meta>' for v in ("textual", "auditory")],
+            *[f'<meta property="schema:accessibilityFeature">{v}</meta>'
+              for v in ("synchronizedAudioText", "tableOfContents", "readingOrder", "structuralNavigation", "alternativeText")],
+            '<meta property="schema:accessibilityHazard">none</meta>',
+            f'<meta property="schema:accessibilitySummary">{x(access)}</meta>']
+    items = ['<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
+             '<item id="cover-page" href="cover.xhtml" media-type="application/xhtml+xml"/>',
+             '<item id="title-page" href="title.xhtml" media-type="application/xhtml+xml"/>',
+             '<item id="chapter" href="chapter.xhtml" media-type="application/xhtml+xml" media-overlay="overlay"/>',
+             '<item id="colophon" href="colophon.xhtml" media-type="application/xhtml+xml"/>',
+             '<item id="license" href="license.xhtml" media-type="application/xhtml+xml"/>',
+             '<item id="overlay" href="chapter.smil" media-type="application/smil+xml"/>',
+             f'<item id="audio" href="audio/{x(audio)}" media-type="audio/mpeg"/>',
+             '<item id="css" href="style.css" media-type="text/css"/>',
+             '<item id="font" href="fonts/vazirmatn.woff2" media-type="font/woff2"/>',
+             '<item id="font-latin" href="fonts/vazirmatn-latin.woff2" media-type="font/woff2"/>',
+             '<item id="cover" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>']
+    spine = ('<itemref idref="cover-page"/><itemref idref="title-page"/><itemref idref="chapter"/>'
+             '<itemref idref="colophon"/><itemref idref="license" linear="no"/>')
     opf = ('<?xml version="1.0" encoding="utf-8"?>\n'
            '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="fa" dir="rtl">'
-           '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
-           f'<dc:identifier id="uid">urn:epis:readalong:fa:{ch.num:02d}</dc:identifier>'
-           f'<dc:title>{x(title)}</dc:title><dc:language>fa</dc:language><dc:creator>{x(SITE_FA)}</dc:creator>'
-           f'<dc:source>{x(LIVE + "fa/guide/" + ch.href)}</dc:source>'
-           '<dc:rights>متن: راهنمای «تسلط بر معرفت‌شناسی». روایت: صدای ساختگیِ مدلِ «گویا بزرگ» (CC BY-NC 4.0).</dc:rights>'
-           f'<meta property="dcterms:modified">{stamp}</meta>'
-           f'<meta property="media:duration" refines="#overlay">{duration}</meta>'
-           f'<meta property="media:duration">{duration}</meta>'
-           '<meta property="media:narrator">صدای ساختگی (گویا بزرگ)</meta>'
-           '<meta property="media:active-class">-epub-media-overlay-active</meta>'
-           '</metadata><manifest>'
-           '<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>'
-           '<item id="chapter" href="chapter.xhtml" media-type="application/xhtml+xml" media-overlay="overlay"/>'
-           '<item id="overlay" href="chapter.smil" media-type="application/smil+xml"/>'
-           f'<item id="audio" href="audio/{x(audio)}" media-type="audio/mpeg"/>'
-           '<item id="css" href="style.css" media-type="text/css"/>'
-           '<item id="font" href="fonts/vazirmatn.woff2" media-type="font/woff2"/>'
-           '<item id="font-latin" href="fonts/vazirmatn-latin.woff2" media-type="font/woff2"/>'
-           '<item id="cover" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>'
-           '</manifest><spine page-progression-direction="rtl"><itemref idref="chapter"/></spine></package>')
+           f'<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">{"".join(meta)}</metadata>'
+           f'<manifest>{"".join(items)}</manifest><spine page-progression-direction="rtl">{spine}</spine></package>')
     nav = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
            '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">'
-           f'<head><meta charset="utf-8"/><title>فهرست</title></head><body><nav epub:type="toc" id="toc"><h1>فهرست</h1><ol>'
+           '<head><meta charset="utf-8"/><title>فهرست</title><link rel="stylesheet" href="style.css"/></head><body>'
+           '<nav epub:type="toc" id="toc" role="doc-toc"><h1>فهرست</h1><ol>'
+           f'<li><a href="title.xhtml">{x(SITE_FA)}</a></li>'
            f'<li><a href="chapter.xhtml">{x(title)}</a>'
            + (f'<ol>{"".join(f"<li><a href={chr(34)}chapter.xhtml#l{i:04d}{chr(34)}>{x(t)}</a></li>" for i, t in heads)}</ol>' if heads else "")
-           + '</li></ol></nav></body></html>')
+           + '</li><li><a href="colophon.xhtml">دربارهٔ این کتاب</a></li></ol></nav>'
+           '<nav epub:type="landmarks" id="landmarks" hidden="hidden"><h2>راهنما</h2><ol>'
+           '<li><a epub:type="cover" href="cover.xhtml">جلد</a></li>'
+           '<li><a epub:type="titlepage" href="title.xhtml">صفحهٔ عنوان</a></li>'
+           '<li><a epub:type="bodymatter" href="chapter.xhtml">آغازِ متن</a></li>'
+           '<li><a epub:type="colophon" href="colophon.xhtml">دربارهٔ این کتاب</a></li></ol></nav></body></html>')
     container = ('<?xml version="1.0" encoding="utf-8"?>\n<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
                  '<rootfiles><rootfile full-path="OEBPS/package.opf" media-type="application/oebps-package+xml"/></rootfiles></container>')
-    for name, text in (("container.xml", container), ("package.opf", opf), ("nav.xhtml", nav), ("chapter.xhtml", chapter),
-                       ("chapter.smil", smil), ("style.css", READALONG_CSS)):
+    texts = (("container.xml", container), ("package.opf", opf), ("nav.xhtml", nav), ("cover.xhtml", cover),
+             ("title.xhtml", titlepage), ("chapter.xhtml", chapter), ("colophon.xhtml", colophon), ("license.xhtml", license_doc),
+             ("chapter.smil", smil), ("style.css", READALONG_CSS))
+    for name, text in texts:
         write(parts / name, text)
     up4 = "../../../../"  # from fa/guide/epub/<chapter>/ to the site root
-    files = [["META-INF/container.xml", "container.xml"], ["OEBPS/package.opf", "package.opf"], ["OEBPS/nav.xhtml", "nav.xhtml"],
-             ["OEBPS/chapter.xhtml", "chapter.xhtml"], ["OEBPS/chapter.smil", "chapter.smil"], ["OEBPS/style.css", "style.css"],
-             ["OEBPS/fonts/vazirmatn.woff2", up4 + "assets/fonts/vazirmatn-arabic-wght-normal.woff2"],
-             ["OEBPS/fonts/vazirmatn-latin.woff2", up4 + "assets/fonts/vazirmatn-latin-wght-normal.woff2"],
-             ["OEBPS/cover.jpg", up4 + "assets/art/audiobook-cover.jpg"],
-             [f"OEBPS/audio/{audio}", up4 + f"guide/fa/audio/{audio}"]]
+    files = [["META-INF/container.xml", "container.xml"]] + [[f"OEBPS/{name}", name] for name, _ in texts[1:]]
+    files += [["OEBPS/fonts/vazirmatn.woff2", up4 + "assets/fonts/vazirmatn-arabic-wght-normal.woff2"],
+              ["OEBPS/fonts/vazirmatn-latin.woff2", up4 + "assets/fonts/vazirmatn-latin-wght-normal.woff2"],
+              ["OEBPS/cover.jpg", up4 + "assets/art/audiobook-cover.jpg"],
+              [f"OEBPS/audio/{audio}", up4 + f"guide/fa/audio/{audio}"]]
     write(parts / "files.json", json.dumps({"name": f"{ch.slug}-readalong-fa.epub", "files": files}, indent=0) + "\n")
 
     root = up(2)
@@ -2100,7 +2184,8 @@ def build_readalong(ch, sync, art, stamp):
     head = hero(art, ch.art, root, kicker=f'{L("Read along", "خواندن همراه با صدا")} · {ch.label}', title=html.escape(ch.title), cls="band")
     page_body = head + (
         f'<main id="main" class="wrap readalong" style="padding-top:26px;padding-bottom:90px">'
-        f'<p class="ra-note">{L("The text follows the narration: the line being read is highlighted. Tap a line to listen from there.", "متن همراهِ روایت پیش می‌رود و خطی که خوانده می‌شود رنگی است. روی هر خط بزنید تا از همان‌جا بشنوید.")}</p>'
+        f'<p class="ra-note">{L("The text follows the narration: the line being read is highlighted. Tap a line to listen from there.", "متن همراهِ روایت پیش می‌رود و خطی که خوانده می‌شود رنگی است. روی هر خط بزنید تا از همان‌جا بشنوید.")}'
+        f' {html.escape(credit)}{" خط‌هایی که صدای دوم می‌خواند، در کنارشان خطی رنگی دارند." if sync.get("narration") else ""}</p>'
         f'<div class="ra-bar" role="region" aria-label="{L("Player", "پخش‌کننده")}">'
         f'<audio controls preload="metadata" src="{root}guide/fa/audio/{audio}"></audio>'
         f'<div class="ra-tools"><label>{L("Speed", "سرعت")} <select class="ra-rate">'
