@@ -844,7 +844,9 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
         sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
         chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{num(mmss(s["s"]))}</small></button>'
                         for s in sections)
-        listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-size="{track_bytes(ch.track)}" data-thumb="{art.src(ch.art, root, 640)}" '
+        readalong_attrs = (f'data-readalong="listen/{ch.slug}.html" data-epub="epub/{ch.slug}/files.json" '
+                           if chapter_sync(ch) else "")
+        listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-size="{track_bytes(ch.track)}" {readalong_attrs}data-thumb="{art.src(ch.art, root, 640)}" '
                        f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
                        f'aria-label="{L("Listen to this chapter", "شنیدن این فصل")}">'
                        f'<button class="play" type="button" aria-label="{L("Play the narrated chapter", "پخش روایت صوتی فصل")}">{icon("play", "icon i-play")}'
@@ -1403,7 +1405,8 @@ def build_audio_page(art, chapters, tracks, feed=None):
         ch = chapters[int(t["file"][:2])]
         return f"{ch.label} — {ch.title}" + ("" if t.get("fa") or not FA_AUDIO else " (به انگلیسی)")
     data = [{"file": ("" if LANG == "en" else audio_dir(root, t)) + t["file"], "title": title(t),
-             "duration": t["duration"], "size": track_bytes(t), "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"]} for t in tracks]
+             "duration": t["duration"], "size": track_bytes(t), "page": f"../{t['text'][3:].replace('.md', '.html')}", "sections": t["sections"],
+             "readalong": (f"../listen/{t['file'][:-4]}.html" if chapter_sync(chapters[int(t["file"][:2])]) else "")} for t in tracks]
     thumbs = [art.src(f"ch{i + 1:02d}", root, 640) for i in range(len(tracks))]
     body = (f'{head}<main id="main" class="wrap" style="padding-bottom:80px">'
             f'<section class="player" id="player" aria-label="{L("Player", "پخش‌کننده")}"><span class="kicker" style="color:var(--accent)">{L("Now playing", "در حال پخش")}</span>'
@@ -1413,6 +1416,7 @@ def build_audio_page(art, chapters, tracks, feed=None):
             f'<label>{L("Speed", "سرعت")} <select id="rate"><option>0.8</option><option>0.9</option><option selected>1</option><option>1.1</option>'
             f'<option>1.25</option><option>1.5</option><option>1.75</option></select></label>'
             f'<a class="btn" id="read" href="../01-what-is-epistemology.html" style="min-height:40px">{icon("book")} {L("Read this chapter", "خواندن این فصل")}</a>'
+            f'<a class="btn" id="ra" href="" hidden style="min-height:40px">{L("Read along", "خواندن همراه با صدا")}</a>'
             f'<a class="btn" id="dl" href="" download style="min-height:40px" title="{L("Download this chapter as an MP3 file", "دریافتِ این فصل به صورتِ فایلِ MP3")}">{icon("download")} MP3</a></div></section>'
             f'<div class="tracks"><section><h2 class="kicker" style="color:var(--dim)">{L("Chapters", "فصل‌ها")}</h2><ol id="chapters"></ol></section>'
             f'<section class="secs"><h2 class="kicker" style="color:var(--dim)">{L("Sections in this chapter", "بخش‌های این فصل")}</h2><ol id="sections"></ol></section></div>'
@@ -1778,6 +1782,7 @@ def build_offline_list():
     for base in ("", "fa/"):
         paths += sorted(f"{base}guide/{p.name}" for p in (ROOT / base / "guide").glob("[01][0-9]-*.html"))
         paths += sorted(f"{base}concepts/{p.name}" for p in (ROOT / base / "concepts").glob("*.html"))
+    paths += sorted(f"fa/guide/listen/{p.name}" for p in (ROOT / "fa" / "guide" / "listen").glob("*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
@@ -1966,6 +1971,152 @@ def build_epub(chapters, art):
     return out
 
 
+# ----------------------------------------------------------------------------- read-along (Persian narration)
+
+def sync_stamp(ch):
+    """When a chapter's sync file last changed in git, as the EPUB's modification date (stable across builds)."""
+    try:
+        out = subprocess.run(["git", "log", "-1", "--format=%cI", "--", f"guide/fa/audio/sync/{ch.slug}.json"], cwd=ROOT,
+                             capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    if not out:
+        return None
+    return datetime.fromisoformat(out).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def chapter_sync(ch):
+    """The Persian narration's line timings for a chapter (guide/fa/audio/sync/), when it has them."""
+    if not fa_voice(ch):
+        return None
+    p = GUIDE / "fa" / "audio" / "sync" / f"{ch.slug}.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
+def readalong_lines(sync, times=False):
+    """The narration's lines as XHTML, one element per spoken line, with ids l0001… (and, for the web
+    page, their times). The same markup goes into the EPUB, where the Media Overlay points at the ids."""
+    out = []
+    tag = {"opening": ("h1", ""), "section": ("h2", ""), "subsection": ("h3", ""), "quote": ("p", "quote"),
+           "attr": ("p", "attr"), "cue": ("p", "label"), "label": ("p", "label"), "question": ("p", "question"),
+           "answer": ("p", "answer"), "item": ("p", "item"), "aside": ("p", "aside")}
+    for i, line in enumerate(sync["lines"], 1):
+        kind = line["kind"]
+        el, cls = tag.get(kind, ("p", "dialogue" if kind.startswith("voice") else ""))
+        at = f' data-b="{line["begin"]}" data-e="{line["end"]}"' if times else ""
+        out.append(f'<{el} id="l{i:04d}" class="line{" " + cls if cls else ""}"{at}>{html.escape(line["text"], quote=False)}</{el}>')
+    return "".join(out)
+
+
+def clock_value(sec):
+    h, rest = divmod(sec, 3600)
+    m, s = divmod(rest, 60)
+    return f"{int(h)}:{int(m):02d}:{s:06.3f}"
+
+
+READALONG_CSS = """@font-face{font-family:"Vazirmatn";font-weight:100 900;src:url(fonts/vazirmatn.woff2) format("woff2")}
+@font-face{font-family:"Vazirmatn";font-weight:100 900;src:url(fonts/vazirmatn-latin.woff2) format("woff2");unicode-range:U+0000-024F}
+body{font-family:"Vazirmatn",serif;line-height:1.95;text-align:right;margin:0 5%}
+h1{font-size:1.6em;line-height:1.4;margin:1.2em 0 .8em}
+h2{font-size:1.3em;margin:1.6em 0 .5em}
+h3{font-size:1.1em;margin:1.3em 0 .4em}
+p{margin:0 0 .8em}
+.quote{margin:1em 1.5em .3em;font-size:1.05em}
+.attr{margin:0 1.5em 1em;color:#555;font-size:.9em}
+.label,.question{font-weight:bold}
+.dialogue{margin-right:1.2em}
+.dialogue::before{content:"— "}
+.item{margin-right:1em}
+.-epub-media-overlay-active{background-color:#fde68a;color:#111;border-radius:4px}
+"""
+
+
+def build_readalong(ch, sync, art, stamp):
+    """For a narrated Persian chapter: a read-along web page, and the parts of a chapter EPUB 3 with
+    Media Overlays (text, SMIL timing, package, font, cover), which the page's "EPUB" button packs
+    together with the MP3 in the reader's browser (so the site keeps one copy of the audio)."""
+    title = f"{ch.label}: {ch.title}"
+    audio = sync["file"]
+    body = readalong_lines(sync)
+    parts = OUT() / "guide" / "epub" / ch.slug
+    x = lambda v: html.escape(str(v), quote=True)
+    heads = [(i, l["text"]) for i, l in enumerate(sync["lines"], 1) if l["kind"] == "section"]
+    chapter = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
+               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">'
+               f'<head><meta charset="utf-8"/><title>{x(title)}</title><link rel="stylesheet" href="style.css"/></head>'
+               f'<body><section epub:type="chapter">{body}</section></body></html>')
+    smil = ('<?xml version="1.0" encoding="utf-8"?>\n'
+            '<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">'
+            '<body><seq id="chapter-seq" epub:textref="chapter.xhtml" epub:type="chapter">'
+            + "".join(f'<par id="p{i:04d}"><text src="chapter.xhtml#l{i:04d}"/>'
+                      f'<audio src="audio/{x(audio)}" clipBegin="{l["begin"]:.3f}s" clipEnd="{l["end"]:.3f}s"/></par>'
+                      for i, l in enumerate(sync["lines"], 1))
+            + "</seq></body></smil>")
+    duration = clock_value(sync["duration"])
+    opf = ('<?xml version="1.0" encoding="utf-8"?>\n'
+           '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="fa" dir="rtl">'
+           '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">'
+           f'<dc:identifier id="uid">urn:epis:readalong:fa:{ch.num:02d}</dc:identifier>'
+           f'<dc:title>{x(title)}</dc:title><dc:language>fa</dc:language><dc:creator>{x(SITE_FA)}</dc:creator>'
+           f'<dc:source>{x(LIVE + "fa/guide/" + ch.href)}</dc:source>'
+           '<dc:rights>متن: راهنمای «تسلط بر معرفت‌شناسی». روایت: صدای ساختگیِ مدلِ «گویا بزرگ» (CC BY-NC 4.0).</dc:rights>'
+           f'<meta property="dcterms:modified">{stamp}</meta>'
+           f'<meta property="media:duration" refines="#overlay">{duration}</meta>'
+           f'<meta property="media:duration">{duration}</meta>'
+           '<meta property="media:narrator">صدای ساختگی (گویا بزرگ)</meta>'
+           '<meta property="media:active-class">-epub-media-overlay-active</meta>'
+           '</metadata><manifest>'
+           '<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>'
+           '<item id="chapter" href="chapter.xhtml" media-type="application/xhtml+xml" media-overlay="overlay"/>'
+           '<item id="overlay" href="chapter.smil" media-type="application/smil+xml"/>'
+           f'<item id="audio" href="audio/{x(audio)}" media-type="audio/mpeg"/>'
+           '<item id="css" href="style.css" media-type="text/css"/>'
+           '<item id="font" href="fonts/vazirmatn.woff2" media-type="font/woff2"/>'
+           '<item id="font-latin" href="fonts/vazirmatn-latin.woff2" media-type="font/woff2"/>'
+           '<item id="cover" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>'
+           '</manifest><spine page-progression-direction="rtl"><itemref idref="chapter"/></spine></package>')
+    nav = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
+           '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="fa" xml:lang="fa" dir="rtl">'
+           f'<head><meta charset="utf-8"/><title>فهرست</title></head><body><nav epub:type="toc" id="toc"><h1>فهرست</h1><ol>'
+           f'<li><a href="chapter.xhtml">{x(title)}</a>'
+           + (f'<ol>{"".join(f"<li><a href={chr(34)}chapter.xhtml#l{i:04d}{chr(34)}>{x(t)}</a></li>" for i, t in heads)}</ol>' if heads else "")
+           + '</li></ol></nav></body></html>')
+    container = ('<?xml version="1.0" encoding="utf-8"?>\n<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
+                 '<rootfiles><rootfile full-path="OEBPS/package.opf" media-type="application/oebps-package+xml"/></rootfiles></container>')
+    for name, text in (("container.xml", container), ("package.opf", opf), ("nav.xhtml", nav), ("chapter.xhtml", chapter),
+                       ("chapter.smil", smil), ("style.css", READALONG_CSS)):
+        write(parts / name, text)
+    up4 = "../../../../"  # from fa/guide/epub/<chapter>/ to the site root
+    files = [["META-INF/container.xml", "container.xml"], ["OEBPS/package.opf", "package.opf"], ["OEBPS/nav.xhtml", "nav.xhtml"],
+             ["OEBPS/chapter.xhtml", "chapter.xhtml"], ["OEBPS/chapter.smil", "chapter.smil"], ["OEBPS/style.css", "style.css"],
+             ["OEBPS/fonts/vazirmatn.woff2", up4 + "assets/fonts/vazirmatn-arabic-wght-normal.woff2"],
+             ["OEBPS/fonts/vazirmatn-latin.woff2", up4 + "assets/fonts/vazirmatn-latin-wght-normal.woff2"],
+             ["OEBPS/cover.jpg", up4 + "assets/art/audiobook-cover.jpg"],
+             [f"OEBPS/audio/{audio}", up4 + f"guide/fa/audio/{audio}"]]
+    write(parts / "files.json", json.dumps({"name": f"{ch.slug}-readalong-fa.epub", "files": files}, indent=0) + "\n")
+
+    root = up(2)
+    size = megabytes(track_bytes(ch.track))
+    head = hero(art, ch.art, root, kicker=f'{L("Read along", "خواندن همراه با صدا")} · {ch.label}', title=html.escape(ch.title), cls="band")
+    page_body = head + (
+        f'<main id="main" class="wrap readalong" style="padding-top:26px;padding-bottom:90px">'
+        f'<p class="ra-note">{L("The text follows the narration: the line being read is highlighted. Tap a line to listen from there.", "متن همراهِ روایت پیش می‌رود و خطی که خوانده می‌شود رنگی است. روی هر خط بزنید تا از همان‌جا بشنوید.")}</p>'
+        f'<div class="ra-bar" role="region" aria-label="{L("Player", "پخش‌کننده")}">'
+        f'<audio controls preload="metadata" src="{root}guide/fa/audio/{audio}"></audio>'
+        f'<div class="ra-tools"><label>{L("Speed", "سرعت")} <select class="ra-rate">'
+        + "".join(f"<option{' selected' if v == '1' else ''}>{v}</option>" for v in ("0.8", "0.9", "1", "1.1", "1.25", "1.5", "1.75"))
+        + '</select></label>'
+        f'<button type="button" class="btn" data-epub="../epub/{ch.slug}/files.json">{icon("download")} EPUB ({size})</button>'
+        f'<a class="btn" href="../{ch.href}">{icon("book")} {L("Chapter text", "متنِ فصل")}</a></div>'
+        f'<p class="note" data-epub-note hidden></p></div>'
+        f'<article class="ra-text" lang="fa" dir="rtl">{readalong_lines(sync, times=True)}</article>'
+        f'<p class="ra-foot">{L("The EPUB holds this text and the narration together, with the same highlighting, for offline reading in apps that support EPUB 3 read-aloud (Media Overlays), such as Apple Books or Thorium Reader.", "فایلِ EPUB همین متن و روایت را با همین رنگی‌شدنِ خط‌ها در خود دارد، برای خواندن و شنیدنِ بی‌اینترنت در برنامه‌هایی که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را پشتیبانی می‌کنند، مانند Apple Books یا Thorium Reader.")}</p>'
+        '</main>')
+    page(f"guide/listen/{ch.slug}.html", other_rel=f"guide/{ch.href}", root=root, title=L(f"Read along: {title}", f"خواندن همراه با صدا: {title}"),
+         desc=L("The chapter's text, highlighted as the narration reads it.", "متنِ فصل، همراه با روایت، خط‌به‌خط."),
+         body=page_body, current="audio", bar="clear")
+
+
 # ----------------------------------------------------------------------------- main
 
 def write(path, text):
@@ -1973,10 +2124,11 @@ def write(path, text):
     path.write_text(text, encoding="utf-8")
 
 
-def page(rel, **kw):
-    """Write one page of the language being built, with a link to the same page in the other language."""
+def page(rel, other_rel=None, **kw):
+    """Write one page of the language being built, with a link to the same page in the other language
+    (or to other_rel there, for a page that exists in one language only)."""
     path = OUT() / rel
-    other = (ROOT / "fa" / rel) if LANG == "en" else (ROOT / rel)
+    other = (ROOT / "fa" / (other_rel or rel)) if LANG == "en" else (ROOT / (other_rel or rel))
     alt = os.path.relpath(other, path.parent).replace(os.sep, "/")
     if alt.endswith("index.html"):
         alt = alt[:-len("index.html")] or "./"
@@ -2056,6 +2208,12 @@ def build_language(art, md, C, tracks):
          body=build_account(art), current="account", bar="clear")
     write_learning_data(C)
     build_epub(chapters, art)
+    if LANG == "fa":
+        stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        for ch in chapters.values():
+            sync = chapter_sync(ch)
+            if sync:
+                build_readalong(ch, sync, art, sync_stamp(ch) or stamp)
     return chapters, pages
 
 

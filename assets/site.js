@@ -325,6 +325,94 @@
     });
   }
 
+  // A chapter as an EPUB 3 with Media Overlays: its text, the SMIL timing and the rest are small files the
+  // site builds (listed in files.json); the MP3 is the chapter's own, from the cache when it is saved.
+  function downloadEpub(listUrl, say) {
+    var base = absUrl(listUrl);
+    return fetch(base).then(function (r) { return r.json(); }).then(function (spec) {
+      var entries = [{ name: "mimetype", blob: new Blob(["application/epub+zip"]) }];
+      return spec.files.reduce(function (p, f) {
+        return p.then(function () {
+          var url = new URL(f[1], base).href;
+          var get = /\.mp3$/i.test(url)
+            ? chapterBlob(url, function (x) { say(T("Collecting the audio… ", "در حالِ آماده کردنِ صدا… ") + N(Math.round(x * 100)) + T("%", "٪")); })
+            : fetch(url).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.blob(); });
+          return get.then(function (blob) { entries.push({ name: f[0], blob: blob }); });
+        });
+      }, Promise.resolve()).then(function () {
+        say(T("Packing…", "در حالِ بسته‌بندی…"));
+        return Promise.all(entries.map(function (e) {
+          return e.blob.arrayBuffer().then(function (buf) { return { name: e.name, blob: e.blob, crc: crc32(new Uint8Array(buf)) }; });
+        }));
+      }).then(function (files) {
+        var zip = zipBlob(files), url = URL.createObjectURL(new Blob([zip], { type: "application/epub+zip" })), a = document.createElement("a");
+        a.href = url;
+        a.download = spec.name;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 120000);
+      });
+    });
+  }
+  function epubButton(btn, listUrl, note) {
+    btn.addEventListener("click", function () {
+      btn.disabled = true;
+      if (note) note.hidden = false;
+      var say = function (m) { if (note) note.textContent = m; };
+      downloadEpub(listUrl, say).then(function () { say(T("Your download has started.", "دریافت شروع شد.")); },
+                                      function () { say(T("The download failed; try again.", "دریافت انجام نشد؛ دوباره امتحان کنید.")); })
+        .then(function () { btn.disabled = false; });
+    });
+  }
+  document.querySelectorAll("button[data-epub]").forEach(function (b) {
+    epubButton(b, b.getAttribute("data-epub"), document.querySelector("[data-epub-note]"));
+  });
+
+  /* ------------------------------------------------------------ read-along page */
+  // The narration's text, one element per spoken line with its times; the line being read is marked
+  // and kept in view (unless the reader has just scrolled), and a tap on a line plays from there.
+  var raText = document.querySelector(".ra-text");
+  if (raText) {
+    var ra = document.querySelector(".ra-bar audio"), raRate = document.querySelector(".ra-rate");
+    var raLines = Array.prototype.slice.call(raText.querySelectorAll(".line")), raNow = -1, lastScroll = 0;
+    var raKey = posKey(ra.getAttribute("src"));
+    raRate.value = store("epis-audio-rate") || "1";
+    raRate.addEventListener("change", function () { ra.playbackRate = parseFloat(raRate.value); store("epis-audio-rate", raRate.value); });
+    ra.addEventListener("loadedmetadata", function () {
+      ra.playbackRate = parseFloat(raRate.value);
+      var saved = parseFloat(store(raKey) || "0");
+      if (saved > 5 && saved < ra.duration - 5 && !ra.currentTime) ra.currentTime = saved;
+    });
+    window.addEventListener("wheel", function () { lastScroll = Date.now(); }, { passive: true });
+    window.addEventListener("touchmove", function () { lastScroll = Date.now(); }, { passive: true });
+    ra.addEventListener("timeupdate", function () {
+      var t = ra.currentTime, lo = 0, hi = raLines.length - 1, at = -1;
+      while (lo <= hi) {  // the last line that has begun
+        var mid = (lo + hi) >> 1;
+        if (parseFloat(raLines[mid].getAttribute("data-b")) <= t + 0.05) { at = mid; lo = mid + 1; } else hi = mid - 1;
+      }
+      if (at !== raNow) {
+        if (raNow >= 0) raLines[raNow].classList.remove("now");
+        raNow = at;
+        if (at >= 0) {
+          raLines[at].classList.add("now");
+          if (!ra.paused && Date.now() - lastScroll > 4000) raLines[at].scrollIntoView({ block: "center", behavior: "smooth" });
+        }
+      }
+      if (Math.floor(t) % 5 === 0) store(raKey, String(t));
+    });
+    ra.addEventListener("ended", function () { store(raKey, "0"); });
+    ra.addEventListener("error", function () { var m = offlineNote(); if (m) { var n = document.querySelector("[data-epub-note]"); n.hidden = false; n.textContent = m; } });
+    window.addEventListener("pagehide", function () { if (ra.currentTime > 5) store(raKey, String(ra.currentTime)); });
+    raText.addEventListener("click", function (e) {
+      var line = e.target.closest(".line");
+      if (!line || (window.getSelection && String(window.getSelection()).length)) return;
+      ra.currentTime = parseFloat(line.getAttribute("data-b"));
+      ra.play();
+    });
+  }
+
   /* ------------------------------------------------------------ audio dock (chapter pages) */
   var card = document.querySelector(".listen[data-audio]");
   var dock = null, audio = null, sections = [], trackKey = "";
@@ -405,6 +493,23 @@
     mp3.setAttribute("download", card.getAttribute("data-title").replace(/[\\/:*?"<>|]+/g, " ").replace(/\s+/g, " ").trim() + ".mp3");
     mp3.innerHTML = SAVE_ICON.save + "<span>" + T("Download MP3", "دریافتِ MP3") + "</span>";
     acts.appendChild(mp3);
+    if (card.hasAttribute("data-readalong")) {
+      var ral = document.createElement("a");
+      ral.className = "save-audio";
+      ral.href = card.getAttribute("data-readalong");
+      ral.innerHTML = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg><span>' + T("Read along", "خواندن همراه با صدا") + "</span>";
+      acts.appendChild(ral);
+      var eb = document.createElement("button");
+      eb.type = "button";
+      eb.className = "save-audio";
+      eb.innerHTML = SAVE_ICON.save + "<span>" + T("EPUB with audio", "EPUB همراه با صدا") + "</span>";
+      acts.appendChild(eb);
+      var en = document.createElement("p");
+      en.className = "note epub-note";
+      en.hidden = true;
+      acts.appendChild(en);
+      epubButton(eb, card.getAttribute("data-epub"), en);
+    }
     var play = card.querySelector(".play");
     var saved = parseFloat(store(trackKey) || "0");
     if (saved > 20) card.querySelector(".resume").textContent = T("Resume from ", "ادامه از ") + clock(saved);
@@ -500,6 +605,8 @@
       pa.src = t.file;
       var dl = document.getElementById("dl");
       if (dl) { dl.href = t.file; dl.setAttribute("download", audioFileName(i, t)); }
+      var raLink = document.getElementById("ra");
+      if (raLink) { raLink.hidden = !t.readalong; if (t.readalong) raLink.href = t.readalong; }
       title.textContent = t.title;
       readLink.href = t.page;
       chapterButtons.forEach(function (b, k) { b.setAttribute("aria-current", k === i ? "true" : "false"); });

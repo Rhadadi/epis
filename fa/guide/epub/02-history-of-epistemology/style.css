@@ -1,0 +1,14 @@
+@font-face{font-family:"Vazirmatn";font-weight:100 900;src:url(fonts/vazirmatn.woff2) format("woff2")}
+@font-face{font-family:"Vazirmatn";font-weight:100 900;src:url(fonts/vazirmatn-latin.woff2) format("woff2");unicode-range:U+0000-024F}
+body{font-family:"Vazirmatn",serif;line-height:1.95;text-align:right;margin:0 5%}
+h1{font-size:1.6em;line-height:1.4;margin:1.2em 0 .8em}
+h2{font-size:1.3em;margin:1.6em 0 .5em}
+h3{font-size:1.1em;margin:1.3em 0 .4em}
+p{margin:0 0 .8em}
+.quote{margin:1em 1.5em .3em;font-size:1.05em}
+.attr{margin:0 1.5em 1em;color:#555;font-size:.9em}
+.label,.question{font-weight:bold}
+.dialogue{margin-right:1.2em}
+.dialogue::before{content:"— "}
+.item{margin-right:1em}
+.-epub-media-overlay-active{background-color:#fde68a;color:#111;border-radius:4px}
