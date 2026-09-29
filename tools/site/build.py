@@ -1452,7 +1452,7 @@ def build_audio_about(art, md):
             return f"{root}guide/audio/about.html"
         if href.endswith(".mp3"):
             return href if LANG == "en" else f"{root}guide/{'fa/' if FA_AUDIO else ''}audio/{href}"
-        if href.startswith(("scripts/", "tools/", "transcripts/")):
+        if href.startswith(("scripts/", "tools/", "transcripts/", "sync/")):
             return f"{REPO}/tree/main/guide/{'fa/' if LANG == 'fa' and FA_AUDIO else ''}audio/{href}"
         return href
     body_html, heads = md.render(text, links)
