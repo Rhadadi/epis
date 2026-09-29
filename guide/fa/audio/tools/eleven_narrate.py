@@ -618,6 +618,27 @@ def ffmetadata(n, title, marks, end):
     return "\n".join(tags) + "\n"
 
 
+def stream(path):
+    return json.loads(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-count_packets", "-show_entries",
+                                      "stream=sample_rate,channels,bit_rate,nb_read_packets", "-of", "json", str(path)],
+                                     capture_output=True, text=True, check=True).stdout)["streams"][0]
+
+
+def is_web(path):
+    """Is this MP3 already in the site's format (WEB), so that it can be cut and joined without re-encoding?"""
+    s = stream(path)
+    return (int(s.get("sample_rate", 0)), int(s.get("channels", 0)), int(s.get("bit_rate", 0))) == (24000, 1, 48000)
+
+
+def frames_span(enc, original):
+    """For an MP3 in the site's format, spliced in frame by frame: the seconds its frames take up (576 samples
+    each at 24 kHz, its encoder delay and padding included) and the seconds from where it is put in to where
+    the original's audio starts. Every piece has the same encoder delay as the file it goes into, and the
+    concat demuxer cuts that file by frame times that include the delay, so the audio lands where the
+    replaced segment's did: 0."""
+    return int(stream(enc)["nb_read_packets"]) * 576 / 24000, 0.0
+
+
 def write_sync(path, sync):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(sync, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
@@ -666,36 +687,61 @@ def patch_chapter(n, m, settings):
         new_files[k] = SEGMENTS / entries[seg_key(s)]["file"]
 
     # splice: the published audio with each changed span replaced; everything after it moves by the difference
-    cuts = [(p["begin"], p["end"], k, duration(new_files[k])) for k, _, p in changed]
+    CHAPTERS.mkdir(parents=True, exist_ok=True)
+    web = PUBLISH / f"{path.stem}.mp3"
+    web.parent.mkdir(parents=True, exist_ok=True)
+    meta = CHAPTERS / f"{path.stem}-patch.meta"
+    chapters = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_chapters", "-of", "json", str(published)],
+                                         capture_output=True, text=True, check=True).stdout).get("chapters", [])
+    copy = is_web(published)
+    pieces = {}  # k: (file as spliced in, seconds it takes up in the result, seconds before the segment's own audio)
+    for k, _, _ in changed:
+        if copy:  # encode only the new segment, once, to the site's format; the rest is kept as it is
+            enc = CHAPTERS / f"{path.stem}-patch-{k}.mp3"
+            ffmpeg("-i", str(new_files[k]), "-map", "0:a", "-map_metadata", "-1", *WEB, str(enc))
+            pieces[k] = (enc, *frames_span(enc, new_files[k]))
+        else:
+            pieces[k] = (new_files[k], duration(new_files[k]), 0.0)
+    cuts = [(p["begin"], p["end"], k, pieces[k][1]) for k, _, p in changed]
 
     def moved(t):
         return t + sum(d - (e - b) for b, e, _, d in cuts if e <= t + 1e-6)
 
-    fmt = "aformat=sample_fmts=fltp:sample_rates=24000:channel_layouts=mono"
-    kept = [(at, b) for at, b in zip([0.0] + [e for _, e, _, _ in cuts], [b for b, _, _, _ in cuts] + [None])]
-    inputs, parts, labels = ["-i", str(published)], [], []
-    olds = [i for i, (a, b) in enumerate(kept) if b is None or b - a > 0.001]  # the stretches of old audio kept
-    parts.append(f"[0:a]asplit={len(olds)}" + "".join(f"[o{i}]" for i in olds) if len(olds) > 1 else f"[0:a]anull[o{olds[0]}]")
-    for i, (a, b) in enumerate(kept):
-        if i in olds:
-            parts.append(f"[o{i}]atrim=start={a}" + (f":end={b}" if b is not None else "") + f",asetpts=PTS-STARTPTS,{fmt}[p{i}]")
-            labels.append(f"[p{i}]")
-        if i < len(cuts):
-            inputs += ["-i", str(new_files[cuts[i][2]])]
-            parts.append(f"[{i + 1}:a]{fmt}[n{i}]")
-            labels.append(f"[n{i}]")
-    parts.append("".join(labels) + f"concat=n={len(labels)}:v=0:a=1[out]")
-    chapters = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_chapters", "-of", "json", str(published)],
-                                         capture_output=True, text=True, check=True).stdout).get("chapters", [])
     end = moved(sync["duration"])
-    meta = CHAPTERS / f"{path.stem}-patch.meta"
-    meta.parent.mkdir(parents=True, exist_ok=True)
     meta.write_text(ffmetadata(n, title, [(c["tags"]["title"], moved(float(c["start_time"]))) for c in chapters], end),
                     encoding="utf-8")
-    web = PUBLISH / f"{path.stem}.mp3"
-    web.parent.mkdir(parents=True, exist_ok=True)
-    ffmpeg(*inputs, "-i", str(meta), "-filter_complex", ";".join(parts), "-map", "[out]", "-map_metadata", str(len(cuts) + 1),
-           "-map_chapters", str(len(cuts) + 1), *WEB, "-id3v2_version", "3", str(web))
+    kept = [(at, b) for at, b in zip([0.0] + [e for _, e, _, _ in cuts], [b for b, _, _, _ in cuts] + [None])]
+    if copy:
+        # without re-encoding: the published MP3 is cut between frames (every 24 ms) at the edges of each replaced
+        # segment, where the chapter is quiet, and the new segments' frames are put in between
+        listing = []
+        for i, (a, b) in enumerate(kept):
+            if b is None or b - a > 0.001:
+                listing.append(f"file '{published.resolve().as_posix()}'")
+                listing += [f"inpoint {a:.3f}"] if a else []
+                listing += [f"outpoint {b:.3f}"] if b is not None else []
+            if i < len(cuts):
+                listing.append(f"file '{pieces[cuts[i][2]][0].resolve().as_posix()}'")
+        lst = CHAPTERS / f"{path.stem}-patch.txt"
+        lst.write_text("\n".join(listing) + "\n", encoding="utf-8")
+        ffmpeg("-f", "concat", "-safe", "0", "-i", str(lst), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
+               "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(web))
+    else:  # a full-quality source: decode, splice and encode once to the site's format
+        fmt = "aformat=sample_fmts=fltp:sample_rates=24000:channel_layouts=mono"
+        inputs, parts, labels = ["-i", str(published)], [], []
+        olds = [i for i, (a, b) in enumerate(kept) if b is None or b - a > 0.001]  # the stretches of old audio kept
+        parts.append(f"[0:a]asplit={len(olds)}" + "".join(f"[o{i}]" for i in olds) if len(olds) > 1 else f"[0:a]anull[o{olds[0]}]")
+        for i, (a, b) in enumerate(kept):
+            if i in olds:
+                parts.append(f"[o{i}]atrim=start={a}" + (f":end={b}" if b is not None else "") + f",asetpts=PTS-STARTPTS,{fmt}[p{i}]")
+                labels.append(f"[p{i}]")
+            if i < len(cuts):
+                inputs += ["-i", str(new_files[cuts[i][2]])]
+                parts.append(f"[{i + 1}:a]{fmt}[n{i}]")
+                labels.append(f"[n{i}]")
+        parts.append("".join(labels) + f"concat=n={len(labels)}:v=0:a=1[out]")
+        ffmpeg(*inputs, "-i", str(meta), "-filter_complex", ";".join(parts), "-map", "[out]", "-map_metadata", str(len(cuts) + 1),
+               "-map_chapters", str(len(cuts) + 1), *WEB, "-id3v2_version", "3", str(web))
 
     # the sync file: new times for the replaced lines, moved times for the rest
     lines = [dict(o, begin=round(moved(o["begin"]), 3), end=round(moved(o["end"]), 3)) for o in old]
@@ -703,14 +749,14 @@ def patch_chapter(n, m, settings):
         f = new_files[k]
         align_file = f.with_suffix(".json")
         alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
-        start = moved(p["begin"])
+        start = moved(p["begin"]) + pieces[k][2]
         for i, (kind, text), (b, e) in zip(range(*p["lines"]), s["lines"], line_times(s, alignment, duration(f))):
             lines[i] = {"kind": kind, "text": text, "begin": round(start + b, 3), "end": round(start + e, 3), "voice": s["role"]}
     replaced = {k: entries[seg_key(s)].get("request_id") for k, s, _ in changed}
     segments = []
     for c, q in sorted(spans.items()):
         b = moved(q["begin"])
-        e = b + duration(new_files[c]) if c in replaced else moved(q["end"])
+        e = b + pieces[c][1] if c in replaced else moved(q["end"])
         segments.append(dict(q, begin=round(b, 3), end=round(e, 3), request_id=replaced.get(c, q.get("request_id"))))
     sync.update(title=title, duration=round(end, 3), lines=lines, segments=segments)
     write_sync(PUBLISH / "sync" / f"{path.stem}.json", sync)
