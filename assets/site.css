@@ -977,6 +977,7 @@ html[dir="rtl"] .mnav{right:auto;left:8px}
 .ra-text .quote{margin-inline:1.5em;font-size:1.12rem}
 .ra-text .attr{margin-inline:1.5em;color:var(--dim);font-size:.92rem}
 .ra-text .label,.ra-text .question{font-weight:600}
-.ra-text .dialogue::before{content:"— "}
+.ra-text .who{font-weight:600;color:var(--accent)}
+.ra-text .v2{border-inline-start:3px solid color-mix(in srgb,var(--accent) 45%,transparent);padding-inline-start:10px}
 .ra-foot{color:var(--dim);font-size:.9rem;margin-top:30px}
 .listen .epub-note{flex-basis:100%;margin:0;font-family:var(--sans);font-size:.8rem;color:var(--dim)}

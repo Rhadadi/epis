@@ -6,8 +6,9 @@
 
 The transcripts (../transcripts/NN-*.md) are made from the narration scripts,
 so they follow the audio line by line: section titles become headings,
-quotations block quotes and the speakers of a dialogue lines that start with a
-dash. Pauses, chimes and the thinking time in the quiz are not written down.
+quotations block quotes, and the lines of a dialogue carry the speaker's label
+from the chapter (الف, ب), which the audio does not say. Pauses, chimes and the
+thinking time in the quiz are not written down.
 Latin, German and French expressions keep their own spelling here; the audio
 says them as lexicon.txt spells them in Persian letters.
 
@@ -82,8 +83,8 @@ def transcript(script_path, track):
                 out[-1:] = [">", f"> — {text}", ""]
             else:
                 out += [f"— {text}", ""]
-        elif kind.startswith("voice"):
-            out += [f"— {text}", ""]
+        elif kind.startswith("voice"):  # the speaker's label from the chapter; it is not spoken
+            out += [f"**{ {'voice1': 'الف', 'voice2': 'ب'}.get(kind, 'ج') }:** {text}", ""]
         else:  # say, item, aside, question, answer
             out += [text, ""]
         prev = kind
