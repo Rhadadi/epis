@@ -31,6 +31,8 @@ import os
 import re
 import subprocess
 import sys
+from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -109,6 +111,73 @@ def track_bytes(t):
     """Size of a track's MP3, for the buttons that save it for offline listening."""
     path = (GUIDE / "fa" / "audio" if t.get("fa") else GUIDE / "audio") / t["file"]
     return path.stat().st_size if path.exists() else 0
+
+
+def megabytes(n):
+    return f"{num(max(1, round(n / 1048576)))} {L('MB', 'مگابایت')}"
+
+
+def audiobook_cover():
+    """A square cover for podcast and audiobook apps, cut from the middle of the audio page's artwork."""
+    src, out = ART_DIR / "audio.jpg", ART_DIR / "audiobook-cover.jpg"
+    if out.exists() and out.stat().st_mtime >= src.stat().st_mtime:
+        return
+    img = Image.open(src).convert("RGB")
+    side = min(img.size)
+    left, top = (img.width - side) // 2, (img.height - side) // 2
+    img = img.crop((left, top, left + side, top + side)).resize((1400, 1400), Image.LANCZOS)
+    img.save(out, "JPEG", quality=82, optimize=True, progressive=True)
+
+
+FEED_EPOCH = datetime(2026, 1, 1, tzinfo=timezone.utc)
+
+
+def build_feed(chapters, tracks, md):
+    """The audiobook as a podcast feed (guide/audio/feed.xml), so a podcast app can subscribe to it,
+    download the chapters, play them offline and keep its place. The Persian feed lists only the
+    chapters narrated in Persian; new ones appear in subscribers' apps as they are published.
+    Returns the feed's address, or None when there is nothing to list."""
+    fa = LANG == "fa"
+    items = [t for t in tracks if t.get("fa")] if fa else list(tracks)
+    if not items:
+        return None
+    site = LIVE + ("fa/" if fa else "")
+    feed = site + "guide/audio/feed.xml"
+    cover = LIVE + "assets/art/audiobook-cover.jpg"
+    x = lambda v: html.escape(str(v), quote=True)
+    title = L(f"{SITE} (audiobook)", f"{SITE_FA} (کتاب صوتی)")
+    about = L("The narrated edition of Mastering Epistemology, a free, complete guide to knowledge, evidence and critical "
+              "thinking: sixteen chapters, each ending with a spoken quiz. Narrated with a synthetic voice.",
+              "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»، راهنمایی رایگان و کامل دربارهٔ معرفت، شواهد و تفکرِ نقادانه: "
+              "شانزده فصل، هر کدام با آزمونکی شفاهی در پایان. روایت با صدایی ساختگی است.")
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">',
+           "<channel>",
+           f"<title>{x(title)}</title>", f"<link>{x(site + 'guide/audio/')}</link>",
+           f'<atom:link href="{x(feed)}" rel="self" type="application/rss+xml"/>',
+           f"<language>{'fa' if fa else 'en'}</language>", f"<description>{x(about)}</description>",
+           f"<itunes:author>{x(L(SITE, SITE_FA))}</itunes:author>", f"<itunes:summary>{x(about)}</itunes:summary>",
+           f'<itunes:image href="{x(cover)}"/>',
+           f"<image><url>{x(cover)}</url><title>{x(title)}</title><link>{x(site)}</link></image>",
+           '<itunes:category text="Society &amp; Culture"><itunes:category text="Philosophy"/></itunes:category>',
+           "<itunes:explicit>false</itunes:explicit>", "<itunes:type>serial</itunes:type>"]
+    for t in items:
+        n = int(t["file"][:2])
+        ch = chapters[n]
+        mp3 = LIVE + ("guide/fa/audio/" if t.get("fa") else "guide/audio/") + t["file"]
+        text = site + "guide/" + ch.href
+        blurb = html.unescape(strip_tags(md.inline(ch.blurb))) if ch.blurb else ""
+        note = blurb + (" " if blurb else "") + L(f"Read the chapter: {text}", f"متنِ فصل: {text}")
+        out += ["<item>", f"<title>{x(ch.label + ': ' + ch.title)}</title>", f"<itunes:title>{x(ch.title)}</itunes:title>",
+                f"<itunes:episode>{n}</itunes:episode>", "<itunes:episodeType>full</itunes:episodeType>",
+                f"<description>{x(note)}</description>", f"<link>{x(text)}</link>",
+                f'<enclosure url="{x(mp3)}" length="{track_bytes(t)}" type="audio/mpeg"/>',
+                f'<guid isPermaLink="false">epis-{"fa" if fa else "en"}-{n:02d}</guid>',
+                f"<pubDate>{format_datetime(FEED_EPOCH + timedelta(hours=n))}</pubDate>",  # in chapter order
+                f"<itunes:duration>{round(t['duration'])}</itunes:duration>", "</item>"]
+    out += ["</channel>", "</rss>"]
+    write(ROOT / ("fa" if fa else "") / "guide" / "audio" / "feed.xml", "\n".join(out) + "\n")
+    return feed
 
 
 def fa_voice(ch):
@@ -198,6 +267,7 @@ def icon(name, cls="icon"):
         "pin": '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
         "ext": '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
         "focus": '<path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/><path d="M9 9h6M9 12h6M9 15h4"/>',
+        "rss": '<path d="M5 5a14 14 0 0 1 14 14M5 11a8 8 0 0 1 8 8"/><circle cx="6" cy="18" r="1.4"/>',
         "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
         "pen": '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
         "search": '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
@@ -1280,7 +1350,45 @@ def build_home(art, chapters, md, total_audio, n_concepts):
     return body
 
 
-def build_audio_page(art, chapters, tracks):
+def audiobook_section(tracks, feed):
+    """Three ways to take the audiobook along: saved in this browser, downloaded as a ZIP, or in a podcast app."""
+    size = megabytes(sum(track_bytes(t) for t in tracks))
+    feed = feed or LIVE + "guide/audio/feed.xml"
+    partial = LANG == "fa" and FA_AUDIO and len(FA_TRACKS) < 16
+    mixed = " فصل‌هایی که هنوز روایتِ فارسی ندارند، با روایتِ انگلیسی می‌آیند." if partial else ""
+    growing = (f" این خوراک فعلاً {num(len(FA_TRACKS))} فصلِ روایت‌شده به فارسی را دارد و هر فصلِ تازه، همین‌که روایت شود، "
+               "در برنامهٔ شما هم ظاهر می‌شود.") if partial else ""
+    box = lambda ic, h, p, actions: (f'<div class="ab">{icon(ic)}<h3>{h}</h3><p>{p}</p>{actions}</div>')
+    return (f'<section class="audiobook" id="audiobook" aria-labelledby="ab-h"><h2 id="ab-h">'
+            f'{L("Take the audiobook with you", "کتاب صوتی را همراه داشته باشید")}</h2><div class="ab-grid">'
+            + box("phones", L("Listen offline here", "شنیدنِ بی‌اینترنت در همین‌جا"),
+                  L("Save the chapters in this browser; they then play on this page without a connection. "
+                    "Single chapters can be saved from the list above.",
+                    "فصل‌ها را در همین مرورگر ذخیره کنید تا در همین صفحه بدون اینترنت هم پخش شوند. "
+                    "هر فصل را جداگانه هم می‌توانید از فهرستِ بالا ذخیره کنید.") + mixed,
+                  f'<button type="button" class="btn" data-save-all hidden>{L("Save all chapters", "ذخیرهٔ همهٔ فصل‌ها")} ({size})</button>'
+                  f'<p class="note" data-save-all-note hidden></p>')
+            + box("download", L("Download the audiobook", "دریافتِ کتاب صوتی"),
+                  L("Every chapter as an MP3 file, with a playlist, in one ZIP file for any music or audiobook app; each file carries "
+                    "markers for its sections. For one chapter, use MP3 under Now playing.",
+                    "همهٔ فصل‌ها به صورتِ فایل‌های MP3، همراه با فهرستِ پخش، در یک فایلِ ZIP، برای هر برنامهٔ موسیقی یا کتابِ صوتی؛ "
+                    "هر فایل نشانگرِ بخش‌هایش را دارد. برای یک فصل، دکمهٔ MP3 را در کادرِ «در حال پخش» بزنید.") + mixed,
+                  f'<button type="button" class="btn" data-zip>{L("Download ZIP", "دریافتِ ZIP")} ({size})</button>'
+                  f'<p class="note" data-zip-note hidden></p>')
+            + box("rss", L("In your podcast app", "در برنامهٔ پادکست"),
+                  L("Subscribe to the audiobook's feed in Apple Podcasts, Pocket Casts, AntennaPod or any podcast app: it downloads the "
+                    "chapters, plays them offline and remembers your place. In apps other than Apple Podcasts, choose to add a podcast "
+                    "by its address and paste the feed address.",
+                    "خوراکِ کتابِ صوتی را در Apple Podcasts، Pocket Casts، AntennaPod یا هر برنامهٔ پادکستِ دیگری دنبال کنید: برنامه فصل‌ها را "
+                    "دریافت می‌کند، بی‌اینترنت پخش می‌کند و یادش می‌ماند تا کجا گوش داده‌اید. در برنامه‌های دیگر، گزینهٔ افزودنِ پادکست با "
+                    "نشانی را بزنید و نشانیِ خوراک را بچسبانید.") + growing,
+                  f'<div class="row"><a class="btn" href="podcast://{feed.split("://", 1)[1]}">{L("Open in Apple Podcasts", "باز کردن در Apple Podcasts")}</a>'
+                  f'<button type="button" class="btn" data-copy="{feed}">{L("Copy the feed address", "کپیِ نشانیِ خوراک")}</button></div>'
+                  f'<p class="note feed" dir="ltr">{feed}</p>')
+            + '</div></section>')
+
+
+def build_audio_page(art, chapters, tracks, feed=None):
     root = up(2)
     head = hero(art, "audio", root, kicker=L("The audio edition", "نسخهٔ صوتی"), title=L("Listen", "شنیدن"), cls="short",
                 lede=L("Every chapter of the guide, narrated. Pick up where you left off, jump to any section, and change the speed. "
@@ -1304,9 +1412,11 @@ def build_audio_page(art, chapters, tracks):
             f'<button id="fwd" type="button">30 s ↻</button><button id="next" type="button">{L("Chapter", "فصل")} ⏭</button>'
             f'<label>{L("Speed", "سرعت")} <select id="rate"><option>0.8</option><option>0.9</option><option selected>1</option><option>1.1</option>'
             f'<option>1.25</option><option>1.5</option><option>1.75</option></select></label>'
-            f'<a class="btn" id="read" href="../01-what-is-epistemology.html" style="min-height:40px">{icon("book")} {L("Read this chapter", "خواندن این فصل")}</a></div></section>'
+            f'<a class="btn" id="read" href="../01-what-is-epistemology.html" style="min-height:40px">{icon("book")} {L("Read this chapter", "خواندن این فصل")}</a>'
+            f'<a class="btn" id="dl" href="" download style="min-height:40px" title="{L("Download this chapter as an MP3 file", "دریافتِ این فصل به صورتِ فایلِ MP3")}">{icon("download")} MP3</a></div></section>'
             f'<div class="tracks"><section><h2 class="kicker" style="color:var(--dim)">{L("Chapters", "فصل‌ها")}</h2><ol id="chapters"></ol></section>'
             f'<section class="secs"><h2 class="kicker" style="color:var(--dim)">{L("Sections in this chapter", "بخش‌های این فصل")}</h2><ol id="sections"></ol></section></div>'
+            + audiobook_section(tracks, feed) +
             f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
             + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
@@ -1932,7 +2042,7 @@ def build_language(art, md, C, tracks):
 
     print(f"[{LANG}] audio, credits, study pages")
     page("guide/audio/index.html", root=r2, title=L("Listen", "شنیدن"), desc=L("The narrated audio edition of Mastering Epistemology.", "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»."),
-         body=build_audio_page(art, chapters, tracks), current="audio", hero_img=(art.src("audio", r2), art.srcset("audio", r2)), bar="clear")
+         body=build_audio_page(art, chapters, tracks, build_feed(chapters, tracks, md)), current="audio", hero_img=(art.src("audio", r2), art.srcset("audio", r2)), bar="clear")
     page("guide/audio/about.html", root=r2, title=L("How the audio was made", "صوت چگونه ساخته شد"),
          desc=L("How the narrated audio edition was produced.", "نسخهٔ صوتی چگونه ساخته شد."), body=build_audio_about(art, md), current="audio", bar="clear")
     page("notes/index.html", root=r1, title=L("Notebook", "دفترچه"), desc=L("Your highlights and notes.", "نشانه‌گذاری‌ها و یادداشت‌های شما."),
@@ -1954,6 +2064,7 @@ def main():
     art = Art()
     print("artwork")
     art.derive()
+    audiobook_cover()
     (ASSETS / "favicon.svg").write_text(FAVICON, encoding="utf-8")
     md = Markdown()
     tracks = load_js_json(GUIDE / "audio" / "tracks.js", "window.TRACKS =")

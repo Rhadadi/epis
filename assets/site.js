@@ -239,6 +239,92 @@
                                      "این فصل روی این دستگاه ذخیره نشده است و اینترنت هم وصل نیست.");
   }
 
+  /* ------------------------------------------------------------ the audiobook as a ZIP download */
+  // Built here in the browser from the chapter MP3s (saved ones come from the cache), so the site
+  // does not have to host a second copy of the audio. Stored, not compressed: MP3s don't shrink.
+  function audioFileName(i, t) {
+    var name = String(t.title).replace(/^(Chapter \d+|فصل [۰-۹]+)\s*[—:]\s*/, "").replace(/[\\/:*?"<>|]+/g, " ").replace(/\s+/g, " ").trim();
+    return String(i + 1).padStart(2, "0") + " - " + name + ".mp3";
+  }
+  var CRC_TABLE = null;
+  function crc32(bytes) {
+    if (!CRC_TABLE) {
+      CRC_TABLE = new Uint32Array(256);
+      for (var n = 0; n < 256; n++) { var c = n; for (var k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; CRC_TABLE[n] = c >>> 0; }
+    }
+    var crc = 0xFFFFFFFF;
+    for (var i = 0; i < bytes.length; i++) crc = CRC_TABLE[(crc ^ bytes[i]) & 0xFF] ^ (crc >>> 8);
+    return (crc ^ 0xFFFFFFFF) >>> 0;
+  }
+  function zipBlob(files) {  // files: [{name, blob, crc}]
+    var enc = new TextEncoder(), parts = [], central = [], offset = 0, now = new Date();
+    var time = (now.getHours() << 11) | (now.getMinutes() << 5) | (now.getSeconds() >> 1);
+    var date = ((now.getFullYear() - 1980) << 9) | ((now.getMonth() + 1) << 5) | now.getDate();
+    files.forEach(function (f) {
+      var name = enc.encode(f.name), size = f.blob.size, h = new DataView(new ArrayBuffer(30)), c = new DataView(new ArrayBuffer(46));
+      [[0, 0x04034b50, 4], [4, 20, 2], [6, 0x0800, 2], [8, 0, 2], [10, time, 2], [12, date, 2], [14, f.crc, 4], [18, size, 4], [22, size, 4],
+       [26, name.length, 2], [28, 0, 2]].forEach(function (x) { if (x[2] === 4) h.setUint32(x[0], x[1], true); else h.setUint16(x[0], x[1], true); });
+      [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [8, 0x0800, 2], [10, 0, 2], [12, time, 2], [14, date, 2], [16, f.crc, 4], [20, size, 4],
+       [24, size, 4], [28, name.length, 2], [30, 0, 2], [32, 0, 2], [34, 0, 2], [36, 0, 2], [38, 0, 4], [42, offset, 4]]
+        .forEach(function (x) { if (x[2] === 4) c.setUint32(x[0], x[1], true); else c.setUint16(x[0], x[1], true); });
+      parts.push(h.buffer, name, f.blob);
+      central.push(c.buffer, name);
+      offset += 30 + name.length + size;
+    });
+    var cd = central.reduce(function (a, p) { return a + p.byteLength; }, 0), e = new DataView(new ArrayBuffer(22));
+    e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true);
+    e.setUint32(12, cd, true); e.setUint32(16, offset, true);
+    return new Blob(parts.concat(central, [e.buffer]), { type: "application/zip" });
+  }
+  function chapterBlob(f, progress) {
+    var fromCache = canSaveAudio ? caches.open(AUDIO_CACHE).then(function (c) { return c.match(absUrl(f)); }) : Promise.resolve(null);
+    return fromCache.then(function (hit) {
+      if (hit) return hit.blob();
+      return fetch(absUrl(f)).then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        if (!res.body || !res.body.getReader) return res.blob();
+        var total = parseInt(res.headers.get("Content-Length") || "0", 10), got = 0, chunks = [], reader = res.body.getReader();
+        function pump() {
+          return reader.read().then(function (r) {
+            if (r.done) return new Blob(chunks, { type: "audio/mpeg" });
+            chunks.push(r.value); got += r.value.length;
+            if (total) progress(got / total);
+            return pump();
+          });
+        }
+        return pump();
+      });
+    });
+  }
+  function downloadAudiobook(tracks, say) {
+    var folder = T("Mastering Epistemology - audiobook", "تسلط بر معرفت‌شناسی - کتاب صوتی") + "/", files = [], playlist = ["#EXTM3U"];
+    return tracks.reduce(function (p, t, i) {
+      return p.then(function () {
+        var head = T("Collecting chapter ", "در حالِ آماده کردنِ فصلِ ") + N(i + 1) + T(" of ", " از ") + N(tracks.length);
+        say(head + T("…", "…"));
+        return chapterBlob(t.file, function (x) { say(head + " · " + N(Math.round(x * 100)) + T("%", "٪")); })
+          .then(function (blob) { return blob.arrayBuffer().then(function (buf) { return { blob: blob, crc: crc32(new Uint8Array(buf)) }; }); })
+          .then(function (f) {
+            var name = audioFileName(i, t);
+            files.push({ name: folder + name, blob: f.blob, crc: f.crc });
+            playlist.push("#EXTINF:" + Math.round(t.duration) + "," + t.title, name);
+          });
+      });
+    }, Promise.resolve()).then(function () {
+      var m3u = new Blob([playlist.join("\r\n") + "\r\n"], { type: "application/vnd.apple.mpegurl" });
+      return m3u.arrayBuffer().then(function (buf) {
+        files.push({ name: folder + "playlist.m3u8", blob: m3u, crc: crc32(new Uint8Array(buf)) });
+        var url = URL.createObjectURL(zipBlob(files)), a = document.createElement("a");
+        a.href = url;
+        a.download = T("mastering-epistemology-audiobook.zip", "mastering-epistemology-audiobook-fa.zip");
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 120000);
+      });
+    });
+  }
+
   /* ------------------------------------------------------------ audio dock (chapter pages) */
   var card = document.querySelector(".listen[data-audio]");
   var dock = null, audio = null, sections = [], trackKey = "";
@@ -303,13 +389,22 @@
   if (card) {
     try { sections = JSON.parse(card.getAttribute("data-sections") || "[]"); } catch (e) { sections = []; }
     trackKey = posKey(card.getAttribute("data-audio"));
+    var acts = document.createElement("div");
+    acts.className = "listen-actions";
+    card.insertBefore(acts, card.querySelector(".row"));
     if (canSaveAudio) {
       var sb = document.createElement("button");
       sb.type = "button";
       sb.className = "save-audio";
-      card.insertBefore(sb, card.querySelector(".row"));
+      acts.appendChild(sb);
       saveButton(sb, card.getAttribute("data-audio"), parseInt(card.getAttribute("data-size") || "0", 10), false);
     }
+    var mp3 = document.createElement("a");
+    mp3.className = "save-audio mp3";
+    mp3.href = card.getAttribute("data-audio");
+    mp3.setAttribute("download", card.getAttribute("data-title").replace(/[\\/:*?"<>|]+/g, " ").replace(/\s+/g, " ").trim() + ".mp3");
+    mp3.innerHTML = SAVE_ICON.save + "<span>" + T("Download MP3", "دریافتِ MP3") + "</span>";
+    acts.appendChild(mp3);
     var play = card.querySelector(".play");
     var saved = parseFloat(store(trackKey) || "0");
     if (saved > 20) card.querySelector(".resume").textContent = T("Resume from ", "ادامه از ") + clock(saved);
@@ -354,20 +449,43 @@
       }
       return b;
     });
-    if (canSaveAudio) {
-      // Save every chapter not yet saved, one after another.
-      var all = document.createElement("button"), total = tracks.reduce(function (a, t) { return a + (t.size || 0); }, 0);
-      all.type = "button";
-      all.className = "save-all";
-      all.innerHTML = SAVE_ICON.save + "<span>" + T("Save all chapters for offline listening", "ذخیرهٔ همهٔ فصل‌ها برای شنیدنِ بی‌اینترنت") +
-        (total ? " (" + megabytes(total) + ")" : "") + "</span>";
-      all.addEventListener("click", function () {
-        all.disabled = true;
-        saveButtons.reduce(function (p, sb) { return p.then(function () { return sb.save(); }); }, Promise.resolve())
-          .then(function () { all.disabled = false; });
+    // The audiobook section: save every chapter here, download them all as a ZIP, copy the podcast feed.
+    var saveAll = document.querySelector("[data-save-all]");
+    if (saveAll && canSaveAudio) {
+      var saveNote = document.querySelector("[data-save-all-note]");
+      saveAll.hidden = false;
+      saveAll.addEventListener("click", function () {
+        saveAll.disabled = true;
+        saveNote.hidden = false;
+        saveButtons.reduce(function (p, sb, k) {
+          return p.then(function () {
+            saveNote.textContent = T("Saving chapter ", "در حالِ ذخیرهٔ فصلِ ") + N(k + 1) + T(" of ", " از ") + N(saveButtons.length) + T("…", "…");
+            return sb.save();
+          });
+        }, Promise.resolve()).then(function () {
+          saveAll.disabled = false;
+          var missing = saveButtons.filter(function (sb) { return sb.getAttribute("data-state") !== "saved"; }).length;
+          saveNote.textContent = missing ? T("Some chapters couldn't be saved; try again.", "چند فصل ذخیره نشد؛ دوباره امتحان کنید.")
+            : T("All chapters are saved on this device.", "همهٔ فصل‌ها روی این دستگاه ذخیره شده‌اند.");
+        });
       });
-      list.parentNode.insertBefore(all, list);
     }
+    var zipBtn = document.querySelector("[data-zip]");
+    if (zipBtn) zipBtn.addEventListener("click", function () {
+      var note = document.querySelector("[data-zip-note]");
+      zipBtn.disabled = true;
+      note.hidden = false;
+      downloadAudiobook(tracks, function (msg) { note.textContent = msg; })
+        .then(function () { note.textContent = T("Your download has started.", "دریافت شروع شد."); },
+              function () { note.textContent = T("The download failed; check the connection and try again.", "دریافت انجام نشد؛ اتصال را بررسی کنید و دوباره امتحان کنید."); })
+        .then(function () { zipBtn.disabled = false; });
+    });
+    document.querySelectorAll("[data-copy]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var done = function () { var t = b.textContent; b.textContent = T("Copied", "کپی شد"); setTimeout(function () { b.textContent = t; }, 1600); };
+        if (navigator.clipboard) navigator.clipboard.writeText(b.getAttribute("data-copy")).then(done, function () { /* ignore */ });
+      });
+    });
     function markOffline() { list.classList.toggle("offline", !navigator.onLine); }
     window.addEventListener("online", markOffline);
     window.addEventListener("offline", markOffline);
@@ -380,6 +498,8 @@
       cur = i;
       var t = tracks[i];
       pa.src = t.file;
+      var dl = document.getElementById("dl");
+      if (dl) { dl.href = t.file; dl.setAttribute("download", audioFileName(i, t)); }
       title.textContent = t.title;
       readLink.href = t.page;
       chapterButtons.forEach(function (b, k) { b.setAttribute("aria-current", k === i ? "true" : "false"); });

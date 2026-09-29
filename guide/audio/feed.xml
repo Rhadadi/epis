@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Mastering Epistemology (audiobook)</title>
+<link>https://rhadadi.github.io/epis/guide/audio/</link>
+<atom:link href="https://rhadadi.github.io/epis/guide/audio/feed.xml" rel="self" type="application/rss+xml"/>
+<language>en</language>
+<description>The narrated edition of Mastering Epistemology, a free, complete guide to knowledge, evidence and critical thinking: sixteen chapters, each ending with a spoken quiz. Narrated with a synthetic voice.</description>
+<itunes:author>Mastering Epistemology</itunes:author>
+<itunes:summary>The narrated edition of Mastering Epistemology, a free, complete guide to knowledge, evidence and critical thinking: sixteen chapters, each ending with a spoken quiz. Narrated with a synthetic voice.</itunes:summary>
+<itunes:image href="https://rhadadi.github.io/epis/assets/art/audiobook-cover.jpg"/>
+<image><url>https://rhadadi.github.io/epis/assets/art/audiobook-cover.jpg</url><title>Mastering Epistemology (audiobook)</title><link>https://rhadadi.github.io/epis/</link></image>
+<itunes:category text="Society &amp; Culture"><itunes:category text="Philosophy"/></itunes:category>
+<itunes:explicit>false</itunes:explicit>
+<itunes:type>serial</itunes:type>
+<item>
+<title>Chapter 1: What Is Epistemology?</title>
+<itunes:title>What Is Epistemology?</itunes:title>
+<itunes:episode>1</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>The central questions; three kinds of knowing; belief, credence, and acceptance; the a priori, analytic, and necessary; epistemic versus practical reasons; the map of the field Read the chapter: https://rhadadi.github.io/epis/guide/01-what-is-epistemology.html</description>
+<link>https://rhadadi.github.io/epis/guide/01-what-is-epistemology.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/01-what-is-epistemology.mp3" length="10535714" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-01</guid>
+<pubDate>Thu, 01 Jan 2026 01:00:00 +0000</pubDate>
+<itunes:duration>2107</itunes:duration>
+</item>
+<item>
+<title>Chapter 2: A History of the Theory of Knowledge</title>
+<itunes:title>A History of the Theory of Knowledge</itunes:title>
+<itunes:episode>2</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>From the Presocratics, Socrates, Plato, and Aristotle through Indian, Islamic, and Chinese traditions, Descartes, Locke, Hume, Reid, and Kant, to pragmatism, Popper, Wittgenstein, Quine, and Gettier Read the chapter: https://rhadadi.github.io/epis/guide/02-history-of-epistemology.html</description>
+<link>https://rhadadi.github.io/epis/guide/02-history-of-epistemology.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/02-history-of-epistemology.mp3" length="21259194" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-02</guid>
+<pubDate>Thu, 01 Jan 2026 02:00:00 +0000</pubDate>
+<itunes:duration>4252</itunes:duration>
+</item>
+<item>
+<title>Chapter 3: Logic and the Anatomy of Arguments</title>
+<itunes:title>Logic and the Anatomy of Arguments</itunes:title>
+<itunes:episode>3</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Deduction, induction, and abduction; validity and soundness; conditionals and necessary/sufficient conditions; valid forms and formal fallacies; hidden premises; charity; argument mapping; the Toulmin model Read the chapter: https://rhadadi.github.io/epis/guide/03-logic-and-arguments.html</description>
+<link>https://rhadadi.github.io/epis/guide/03-logic-and-arguments.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/03-logic-and-arguments.mp3" length="14773234" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-03</guid>
+<pubDate>Thu, 01 Jan 2026 03:00:00 +0000</pubDate>
+<itunes:duration>2954</itunes:duration>
+</item>
+<item>
+<title>Chapter 4: Language, Concepts, and Definitions</title>
+<itunes:title>Language, Concepts, and Definitions</itunes:title>
+<itunes:episode>4</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Sense and reference; kinds of definition; ambiguity and vagueness; verbal disputes; loaded language and framing; contested concepts; the is–ought gap; thought experiments; reflective equilibrium Read the chapter: https://rhadadi.github.io/epis/guide/04-language-concepts-and-definitions.html</description>
+<link>https://rhadadi.github.io/epis/guide/04-language-concepts-and-definitions.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/04-language-concepts-and-definitions.mp3" length="13826167" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-04</guid>
+<pubDate>Thu, 01 Jan 2026 04:00:00 +0000</pubDate>
+<itunes:duration>2765</itunes:duration>
+</item>
+<item>
+<title>Chapter 5: What Is Knowledge?</title>
+<itunes:title>What Is Knowledge?</itunes:title>
+<itunes:episode>5</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Justified true belief; the Gettier problem; reliabilism, sensitivity, safety, virtue, and knowledge-first theories; epistemic luck; the value of knowledge; understanding and wisdom Read the chapter: https://rhadadi.github.io/epis/guide/05-the-nature-of-knowledge.html</description>
+<link>https://rhadadi.github.io/epis/guide/05-the-nature-of-knowledge.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/05-the-nature-of-knowledge.mp3" length="16844070" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-05</guid>
+<pubDate>Thu, 01 Jan 2026 05:00:00 +0000</pubDate>
+<itunes:duration>3368</itunes:duration>
+</item>
+<item>
+<title>Chapter 6: Justification: The Structure of Good Reasons</title>
+<itunes:title>Justification: The Structure of Good Reasons</itunes:title>
+<itunes:episode>6</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Defeaters; the regress problem; foundationalism, coherentism, infinitism, and their hybrids; internalism versus externalism; evidentialism; the problem of the criterion; fallibilism Read the chapter: https://rhadadi.github.io/epis/guide/06-justification.html</description>
+<link>https://rhadadi.github.io/epis/guide/06-justification.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/06-justification.mp3" length="16232421" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-06</guid>
+<pubDate>Thu, 01 Jan 2026 06:00:00 +0000</pubDate>
+<itunes:duration>3246</itunes:duration>
+</item>
+<item>
+<title>Chapter 7: The Sources of Knowledge</title>
+<itunes:title>The Sources of Knowledge</itunes:title>
+<itunes:episode>7</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Perception, memory, introspection, reason, and testimony: how each works and how each fails; knowledge by presence; when to trust intuition Read the chapter: https://rhadadi.github.io/epis/guide/07-sources-of-knowledge.html</description>
+<link>https://rhadadi.github.io/epis/guide/07-sources-of-knowledge.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/07-sources-of-knowledge.mp3" length="15529714" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-07</guid>
+<pubDate>Thu, 01 Jan 2026 07:00:00 +0000</pubDate>
+<itunes:duration>3106</itunes:duration>
+</item>
+<item>
+<title>Chapter 8: Skepticism and Its Answers</title>
+<itunes:title>Skepticism and Its Answers</itunes:title>
+<itunes:episode>8</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Pyrrhonian and Cartesian skepticism; the brain in a vat; the closure argument; Moore, contextualism, hinge epistemology, and other responses; healthy versus corrosive skepticism Read the chapter: https://rhadadi.github.io/epis/guide/08-skepticism.html</description>
+<link>https://rhadadi.github.io/epis/guide/08-skepticism.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/08-skepticism.mp3" length="16063360" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-08</guid>
+<pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate>
+<itunes:duration>3212</itunes:duration>
+</item>
+<item>
+<title>Chapter 9: Induction, Probability, and Bayesian Reasoning</title>
+<itunes:title>Induction, Probability, and Bayesian Reasoning</itunes:title>
+<itunes:episode>9</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Hume’s problem; grue and the ravens; probability; Bayes’ theorem with worked examples; base rates, the conjunction fallacy, Monty Hall, regression to the mean, Simpson’s paradox; calibration; p-values and risk Read the chapter: https://rhadadi.github.io/epis/guide/09-induction-probability-bayes.html</description>
+<link>https://rhadadi.github.io/epis/guide/09-induction-probability-bayes.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/09-induction-probability-bayes.mp3" length="19548621" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-09</guid>
+<pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
+<itunes:duration>3909</itunes:duration>
+</item>
+<item>
+<title>Chapter 10: Science, Evidence, and Explanation</title>
+<itunes:title>Science, Evidence, and Explanation</itunes:title>
+<itunes:episode>10</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Falsifiability; Duhem–Quine; Kuhn and Lakatos; inference to the best explanation; realism; causation, correlation, and randomized trials; values in science; consensus; the replication crisis; spotting pseudoscience Read the chapter: https://rhadadi.github.io/epis/guide/10-science-and-evidence.html</description>
+<link>https://rhadadi.github.io/epis/guide/10-science-and-evidence.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/10-science-and-evidence.mp3" length="19673684" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-10</guid>
+<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+<itunes:duration>3934</itunes:duration>
+</item>
+<item>
+<title>Chapter 11: Truth, Relativism, and Objectivity</title>
+<itunes:title>Truth, Relativism, and Objectivity</itunes:title>
+<itunes:episode>11</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Theories of truth; the liar paradox; relativism and its critics; social construction; objectivity and perspective; post-truth and bullshit Read the chapter: https://rhadadi.github.io/epis/guide/11-truth-and-relativism.html</description>
+<link>https://rhadadi.github.io/epis/guide/11-truth-and-relativism.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/11-truth-and-relativism.mp3" length="12327778" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-11</guid>
+<pubDate>Thu, 01 Jan 2026 11:00:00 +0000</pubDate>
+<itunes:duration>2465</itunes:duration>
+</item>
+<item>
+<title>Chapter 12: Social Epistemology: Knowing Together</title>
+<itunes:title>Social Epistemology: Knowing Together</itunes:title>
+<itunes:episode>12</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Trust and expertise; choosing between experts; peer disagreement; epistemic injustice; standpoint theory; echo chambers; cascades and crowds; misinformation, propaganda, and conspiracy theories; institutions; AI Read the chapter: https://rhadadi.github.io/epis/guide/12-social-epistemology.html</description>
+<link>https://rhadadi.github.io/epis/guide/12-social-epistemology.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/12-social-epistemology.mp3" length="18160937" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-12</guid>
+<pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
+<itunes:duration>3632</itunes:duration>
+</item>
+<item>
+<title>Chapter 13: Intellectual Virtue and the Ethics of Belief</title>
+<itunes:title>Intellectual Virtue and the Ethics of Belief</itunes:title>
+<itunes:episode>13</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Clifford versus James; intellectual virtues and vices; humility and open-mindedness; pragmatic and moral encroachment; faith, reason, and religious epistemology Read the chapter: https://rhadadi.github.io/epis/guide/13-virtues-and-ethics-of-belief.html</description>
+<link>https://rhadadi.github.io/epis/guide/13-virtues-and-ethics-of-belief.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/13-virtues-and-ethics-of-belief.mp3" length="13983733" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-13</guid>
+<pubDate>Thu, 01 Jan 2026 13:00:00 +0000</pubDate>
+<itunes:duration>2796</itunes:duration>
+</item>
+<item>
+<title>Chapter 14: The Psychology of Reasoning: How Minds Actually Work</title>
+<itunes:title>The Psychology of Reasoning: How Minds Actually Work</itunes:title>
+<itunes:episode>14</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>Dual-process theories; heuristics and biases; confirmation and myside bias; motivated reasoning; overconfidence; identity-protective cognition; the argumentative theory; what debiasing works; superforecasting Read the chapter: https://rhadadi.github.io/epis/guide/14-psychology-of-reasoning.html</description>
+<link>https://rhadadi.github.io/epis/guide/14-psychology-of-reasoning.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/14-psychology-of-reasoning.mp3" length="17805875" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-14</guid>
+<pubDate>Thu, 01 Jan 2026 14:00:00 +0000</pubDate>
+<itunes:duration>3561</itunes:duration>
+</item>
+<item>
+<title>Chapter 15: A Field Guide to Fallacies</title>
+<itunes:title>A Field Guide to Fallacies</itunes:title>
+<itunes:episode>15</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>More than forty fallacies and rhetorical tactics, each with examples, its legitimate cousin, and how to respond; practice exercises Read the chapter: https://rhadadi.github.io/epis/guide/15-fallacies.html</description>
+<link>https://rhadadi.github.io/epis/guide/15-fallacies.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/15-fallacies.mp3" length="17089600" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-15</guid>
+<pubDate>Thu, 01 Jan 2026 15:00:00 +0000</pubDate>
+<itunes:duration>3418</itunes:duration>
+</item>
+<item>
+<title>Chapter 16: The Critical Thinker&#x27;s Toolkit: Analyzing Discussions and Framing Arguments</title>
+<itunes:title>The Critical Thinker&#x27;s Toolkit: Analyzing Discussions and Framing Arguments</itunes:title>
+<itunes:episode>16</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>A seven-step method for analyzing any discussion; stasis theory; finding the crux; framing your own arguments; burden of proof; razors; the ethics of discussion; five worked case studies; checklists Read the chapter: https://rhadadi.github.io/epis/guide/16-critical-thinking-toolkit.html</description>
+<link>https://rhadadi.github.io/epis/guide/16-critical-thinking-toolkit.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/audio/16-critical-thinking-toolkit.mp3" length="18287702" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-en-16</guid>
+<pubDate>Thu, 01 Jan 2026 16:00:00 +0000</pubDate>
+<itunes:duration>3657</itunes:duration>
+</item>
+</channel>
+</rss>

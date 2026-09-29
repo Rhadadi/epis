@@ -2,6 +2,8 @@
 
 Every chapter of the guide is also available as a narrated audio track. Listen in the **[audio player](index.html)**, which has section markers, playback speed and resume. You can also open the MP3 files directly: each one carries chapter markers that podcast and audiobook apps can use.
 
+To take the audiobook with you, the player page offers three ways: save the chapters in your browser for offline listening, download them all as one ZIP of MP3 files with a playlist, or subscribe in a podcast app to the feed `https://rhadadi.github.io/epis/guide/audio/feed.xml`.
+
 > The narration is generated with a synthetic voice, the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model. It was not read by a person.
 
 | | Chapter | Length |

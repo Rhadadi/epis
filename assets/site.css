@@ -530,13 +530,25 @@ html[data-lang="fa"] .l-en,html:not([data-lang="fa"]) .l-fa{display:none!importa
 .save-audio[data-state="saved"]{color:var(--accent);border-color:var(--accent)}
 .save-audio:disabled,.save-all:disabled{cursor:progress;opacity:.8}
 .save-audio .icon,.save-all .icon{width:15px;height:15px}
-.listen .save-audio{grid-column:2;justify-self:start}
 .save-all{margin:0 0 10px}
 .tracks #chapters li{display:flex;align-items:center;gap:4px}
 .tracks #chapters li>button:first-child{flex:1;min-width:0}
 .tracks li button.save-audio.compact{width:36px;height:36px;flex:none;display:grid;place-items:center;padding:0;border-radius:50%}
 .save-audio.compact small{font-family:var(--mono);font-size:.62rem;color:var(--ink)}
 #chapters.offline li:not([data-saved])>button:first-child{opacity:.45}
+/* the audiobook: offline, download, podcast */
+.audiobook{margin-top:40px}
+.audiobook>h2{font-family:var(--display);font-size:1.7rem;font-weight:600;margin:0 0 14px}
+.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.ab{border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:18px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.ab>.icon{width:26px;height:26px;color:var(--accent)}
+.ab h3{font-family:var(--sans);font-size:1.02rem;font-weight:600;margin:0}
+.ab p{margin:0;font-size:.92rem;line-height:1.55;color:var(--dim)}
+.ab .row{display:flex;flex-wrap:wrap;gap:8px}
+.ab .note{font-family:var(--sans);font-size:.82rem;color:var(--ink-2)}
+.ab .note.feed{font-family:var(--mono);font-size:.72rem;color:var(--faint);word-break:break-all}
+.listen .listen-actions{grid-column:2;display:flex;flex-wrap:wrap;gap:8px}
+.save-audio.mp3{text-decoration:none}
 
 /* credits */
 .credits{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
