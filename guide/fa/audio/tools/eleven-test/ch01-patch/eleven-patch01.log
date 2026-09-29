@@ -1,0 +1,20 @@
+chapter 1: 1 changed segments, about 24 credits; 128,375 left
+Traceback (most recent call last):
+  File "/home/user/epis/guide/fa/audio/tools/eleven_narrate.py", line 782, in <module>
+    main()
+  File "/home/user/epis/guide/fa/audio/tools/eleven_narrate.py", line 775, in main
+    patch_chapter(args.patch, m, settings)
+  File "/home/user/epis/guide/fa/audio/tools/eleven_narrate.py", line 664, in patch_chapter
+    make_segment(n, k, len(speech), s, nxt, before, m, settings, entries)
+  File "/home/user/epis/guide/fa/audio/tools/eleven_narrate.py", line 601, in make_segment
+    (SEGMENTS / name).write_bytes(audio)
+  File "/usr/lib/python3.11/pathlib.py", line 1067, in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/epis/guide/fa/audio/tools/.eleven/segments/01-5791996aaabc.mp3'
+chapter 1: 1 changed segments, about 24 credits; 128,351 left
+  segment 1/40 (main): 398 characters, cost 24, request JULUFBqluqFzvJkh3edg
+chapter 1: replaced segments 1; to publish: /home/user/epis/guide/fa/audio/tools/.eleven/publish/01-what-is-epistemology.mp3 (17.4 MB) and /home/user/epis/guide/fa/audio/tools/.eleven/publish/sync/01-what-is-epistemology.json
