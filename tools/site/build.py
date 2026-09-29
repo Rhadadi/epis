@@ -149,7 +149,7 @@ def build_feed(chapters, tracks, md):
     about = L("The narrated edition of Mastering Epistemology, a free, complete guide to knowledge, evidence and critical "
               "thinking: sixteen chapters, each ending with a spoken quiz. Narrated with a synthetic voice.",
               "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»، راهنمایی رایگان و کامل دربارهٔ معرفت، شواهد و تفکرِ نقادانه: "
-              "شانزده فصل، هر کدام با آزمونکی شفاهی در پایان. روایت با صدایی ساختگی است.")
+              "شانزده فصل، هر کدام با آزمونکی شفاهی در پایان. روایت با صداهای ساختگی است.")
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">',
            "<channel>",

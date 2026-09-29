@@ -13,7 +13,9 @@ Latin, German and French expressions keep their own spelling here; the audio
 says them as lexicon.txt spells them in Persian letters.
 
 When a chapter's MP3 is listed in ../tracks.js, the transcript starts with its
-length and the start time of each section.
+length and the start time of each section. When the chapter has two narrators
+(its ../sync/NN-*.json names two voices), the list also says which voice reads
+each section.
 """
 
 import json
@@ -53,6 +55,28 @@ def tracks():
     return {t["file"][:-4]: t for t in json.loads(js[js.index("["):js.rindex("]") + 1])}
 
 
+VOICE_NAMES = {"main": "صدای مردانه", "second": "صدای زنانه"}
+TWO_VOICES = ("راویان: دو صدای ساختگی، یکی مردانه و یکی زنانه. صدای مردانه فصل را آغاز می‌کند و می‌بندد، "
+              "و بخش‌ها به نوبت میانِ دو صدا می‌چرخند. نقل‌قول را صدایی می‌خواند که راویِ آن بخش نیست؛ "
+              "در گفت‌وگوها «الف» صدای مردانه است و «ب» صدای زنانه؛ و در آزمونِ شفاهیِ پایانِ فصل "
+              "صدای زنانه می‌پرسد و صدای مردانه پاسخ می‌دهد.")
+
+
+def narrators(name):
+    """The voice that reads each section title (and the opening, under ""), for a chapter with two narrators."""
+    path = AUDIO / "sync" / f"{name}.json"
+    if not path.exists():
+        return {}
+    sync = json.loads(path.read_text(encoding="utf-8"))
+    if len(sync.get("narration", {}).get("voices", {})) < 2 or not sync["lines"]:
+        return {}
+    who = {"": sync["lines"][0].get("voice")}
+    for line in sync["lines"]:
+        if line["kind"] == "section":
+            who.setdefault(line["text"], line.get("voice"))
+    return who
+
+
 def transcript(script_path, track):
     cues = parse(script_path.read_text(encoding="utf-8"))
     name = script_path.stem
@@ -61,9 +85,14 @@ def transcript(script_path, track):
     out.append(f"متنِ روایتِ صوتیِ این فصل، همان‌طور که شنیده می‌شود. متنِ نوشتاری: [{title.split(':')[0]}](../../{name}.md).")
     out.append("")
     if track:
+        who = narrators(name)
         out.append(f"فایلِ صوتی: [{name}.mp3](../{name}.mp3)، {length(track['duration'])}.")
         out.append("")
-        out += [f"- {clock(s['start'])} {'آغاز' if i == 0 else s['title']}" for i, s in enumerate(track["sections"])]
+        if who:
+            out += [TWO_VOICES, ""]
+        for i, s in enumerate(track["sections"]):
+            voice = VOICE_NAMES.get(who.get("" if i == 0 else s["title"]))
+            out.append(f"- {clock(s['start'])} {'آغاز' if i == 0 else s['title']}" + (f" ({voice})" if voice else ""))
         out.append("")
     out += ["---", ""]
     prev = None
