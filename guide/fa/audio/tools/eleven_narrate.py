@@ -53,8 +53,18 @@ OUTPUT = "mp3_44100_128"
 MIN_CHUNK, TARGET_CHUNK, MAX_CHUNK = 4000, 5000, 6000
 TEST_CHARS = 1000
 
-sys.path.insert(0, str(HERE))
-from narrate import parse  # noqa: E402  (the script format)
+
+
+def parse(script):
+    """The narration script format (see make_script.py): `@cue text` lines, or plain lines to say."""
+    cues = []
+    for line in script.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        m = re.match(r"^@(\w+)(?:\s+(.*))?$", line)
+        cues.append((m.group(1), (m.group(2) or "").strip()) if m else ("say", line))
+    return cues
 
 
 # ---------------------------------------------------------------------------
@@ -309,8 +319,13 @@ def test(m, args):
                  "used_before": before["used"], "used_after": after["used"], "charged": charged,
                  "credits_per_char": per_char, "file": str(out), "headers_seen": sorted(headers)}
     save_manifest(m)
-    duration = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)],
-                                    capture_output=True, text=True).stdout or 0)
+    try:
+        duration = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)],
+                                        capture_output=True, text=True).stdout or 0)
+    except (OSError, ValueError):  # no ffprobe here
+        duration = 0.0
+    m["test"]["seconds"] = duration
+    save_manifest(m)
     print(f"submitted: {len(text):,} characters; request id {request_id}; character-cost header {cost}")
     print(f"charged (usage after minus before): {charged:,} credits; {per_char * 1000:g} credits per 1,000 characters")
     print(f"audio: {out} ({duration:.1f} s, {len(audio):,} bytes)")
