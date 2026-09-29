@@ -1453,5 +1453,18 @@
 "end": 2899.304,
 "voice": "main"
 }
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 0.0,
+"end": 36.362,
+"lines": [
+0,
+3
+],
+"request_id": "N0pE9HzRv2HzPV8hthhI"
+}
 ]
 }

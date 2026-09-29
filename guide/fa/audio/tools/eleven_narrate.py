@@ -7,6 +7,7 @@
     python3 eleven_narrate.py --chapter 3             # narrate one chapter
     python3 eleven_narrate.py --all                   # narrate every chapter
     python3 eleven_narrate.py --all --resume          # the same; segments already made are never made again
+    python3 eleven_narrate.py --patch 1               # re-narrate only what changed in published chapter 1
 
 The text is the one the Gooya narration speaks (scripts/NN-*.txt, as in
 transcripts/). Two narrators share it, so the listener gets a break from each
@@ -32,7 +33,14 @@ of every character; from it come the start and end of each spoken line,
 written to a sync file like the Gooya edition's (for read-along and EPUB 3
 Media Overlays). Segments are saved separately and joined without re-encoding
 into one MP3 per chapter, with the chapter's title, tags and a marker for
-each section.
+each section. The copy for the site (publish/) is that MP3 encoded once more,
+as mono at 48 kbit/s (WEB), so that the whole book fits on GitHub Pages; its
+sync file also records where each segment lies in the audio.
+
+--patch N is for a chapter already on the site whose script has been
+corrected: it narrates only the segments whose text changed, with the same
+voices and settings, and splices them into the published audio in place of
+the old ones, moving the times of everything after them.
 
 Everything about the voices is fixed in the manifest at the first generation:
 voices, model, voice settings, output format. Later runs refuse to go on with
@@ -45,8 +53,9 @@ plan's credits (overage) is never used, even where the account allows it.
 Needs: the requests package and ffmpeg; ELEVENLABS_API_KEY in the
 environment (the key is only read from there and never written anywhere).
 Voices and model can be changed with --voice, --voice2 and --model before the
-first generation. State lives in tools/.eleven/: manifest.json, segments/ and
-chapters/ (each chapter's MP3 and sync file, for review before publishing).
+first generation. State lives in tools/.eleven/: manifest.json, segments/,
+chapters/ (each chapter's full-quality MP3 and sync file) and publish/ (the
+copies that go to ../ and ../sync/).
 """
 
 import argparse
@@ -69,6 +78,7 @@ MANIFEST = STATE / "manifest.json"
 TEST_RESULT = HERE / "eleven-test" / "manifest.json"  # the committed --test measurement
 SEGMENTS = STATE / "segments"
 CHAPTERS = STATE / "chapters"
+PUBLISH = STATE / "publish"  # what goes on the site: NN-*.mp3 and sync/NN-*.json
 API = "https://api.elevenlabs.io/v1"
 
 MODEL = os.environ.get("ELEVENLABS_MODEL_ID", "eleven_v4_turbo")
@@ -77,6 +87,9 @@ SCHEME = "alternate-sections-v1"  # who reads what; see role_of
 OUTPUT = "mp3_44100_128"
 MAX_SEGMENT, TARGET_SEGMENT = 6000, 5000
 TEST_CHARS = 1000
+# The published copy of a chapter: mono MP3 at 48 kbit/s and 24 kHz, near the site's other audio (40 kbit/s),
+# so the whole book (about 20 hours) stays within what GitHub Pages serves; 128 kbit/s would be over 1 GB.
+WEB = ["-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "48k"]
 GAP = 0.35         # seconds of silence where the voice changes
 LONG_PAUSE = 1.5   # pauses at least this long (the quiz's thinking time) become silence between segments
 
@@ -504,83 +517,204 @@ def narrate_chapter(n, m, settings, sample=None):
                          "stopping without generating (no overage)")
     history = {"main": [], "second": []}  # request ids of each voice's segments, for stitching
     for k, s in enumerate(speech, 1):
-        key_ = seg_key(s)
-        text = seg_text(s)
         if done(s):
-            history[s["role"]].append(entries[key_].get("request_id"))
+            history[s["role"]].append(entries[seg_key(s)].get("request_id"))
             continue
-        if len(text) * rate(m) > subscription()["remaining"]:
-            raise SystemExit(f"not enough credits left for segment {k}; stopping (no overage)")
         nxt = next((t for t in speech[k:] if t["role"] == s["role"]), None)
-        name = f"{n:02d}-{key_[:12]}.mp3"
-        entry = {"key": key_, "chapter": n, "chunk": k, "voice": VOICES[s["role"]], "role": s["role"], "characters": len(text),
-                 "text_sha1": sha1(text), "file": name, "status": "generating", "request_id": None, "character_cost": None,
-                 "when": now()}
-        m["chunks"] = [c for c in m["chunks"] if c.get("key") != key_] + [entry]
-        entries[key_] = entry
-        save_manifest(m)
-        stitch = m.get("stitching", True)
-        previous = [r for r in history[s["role"]] if r][-3:] if stitch else []
-        next_text = seg_text(nxt)[:500] if stitch and nxt else None
-        try:
-            try:
-                audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]],
-                                                                 seed=n * 1000 + k, previous=previous, next_text=next_text)
-            except RuntimeError as err:
-                if stitch and re.search(r"previous_request_ids|next_text|stitch", str(err), re.I):
-                    m["stitching"] = False  # this model does not take request stitching; go on without it, and say so
-                    save_manifest(m)
-                    print(f"  the model does not accept request stitching ({err}); continuing without it", flush=True)
-                    audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]], seed=n * 1000 + k)
-                else:
-                    raise
-        except RuntimeError as err:
-            entry["status"] = f"failed: {err}"
-            save_manifest(m)
-            raise SystemExit(f"chapter {n} segment {k}: {err}")
-        (SEGMENTS / name).write_bytes(audio)
-        (SEGMENTS / (name[:-4] + ".json")).write_text(json.dumps(alignment or {}), encoding="utf-8")
-        entry.update(status="done", request_id=request_id, character_cost=cost, when=now())
-        save_manifest(m)
-        history[s["role"]].append(request_id)
-        print(f"  segment {k}/{len(speech)} ({s['role']}): {len(text):,} characters, cost {cost}, request {request_id}", flush=True)
+        history[s["role"]].append(make_segment(n, k, len(speech), s, nxt, history[s["role"]], m, settings, entries))
 
     # join: speech, silence and chimes, without re-encoding; sections become chapter markers
-    files, lines, clock, starts = [], [], 0.0, {}
+    files, lines, clock, starts, spans = [], [], 0.0, {}, []
     for i, s in enumerate(segs):
         starts[i] = clock
         if s["type"] == "speech":
-            f = SEGMENTS / entries[seg_key(s)]["file"]
+            entry = entries[seg_key(s)]
+            f = SEGMENTS / entry["file"]
+            d = duration(f)
             align_file = f.with_suffix(".json")
             alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
-            for (kind, text), (b, e) in zip(s["lines"], line_times(s, alignment, duration(f))):
+            spans.append({"chunk": len(spans) + 1, "voice": s["role"], "begin": round(clock, 3), "end": round(clock + d, 3),
+                          "lines": [len(lines), len(lines) + len(s["lines"])], "request_id": entry.get("request_id")})
+            for (kind, text), (b, e) in zip(s["lines"], line_times(s, alignment, d)):
                 lines.append({"kind": kind, "text": text, "begin": round(clock + b, 3), "end": round(clock + e, 3),
                               "voice": s["role"]})
         else:
             f = sound_file(s)
+            d = duration(f)
         files.append(f)
-        clock += duration(f)
+        clock += d
     CHAPTERS.mkdir(parents=True, exist_ok=True)
     stem = path.stem + ("-sample" if sample else "")
     listing = CHAPTERS / f"{stem}.txt"
     listing.write_text("".join(f"file '{f.resolve().as_posix()}'\n" for f in files), encoding="utf-8")
     meta = CHAPTERS / f"{stem}.meta"
-    tags = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=تسلط بر معرفت‌شناسی", f"track={n}/16",
-            "genre=Audiobook", "language=fas",
-            f"comment=Narrated with ElevenLabs ({MODEL}); voices {VOICES['main']} and {VOICES['second']}."]
     marks = [(t, starts[i]) for t, i in markers]
-    for k, (name, start) in enumerate(marks):
-        stop = marks[k + 1][1] if k + 1 < len(marks) else clock
-        tags += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}", f"END={int(stop * 1000)}", f"title={name}"]
-    meta.write_text("\n".join(tags) + "\n", encoding="utf-8")
+    meta.write_text(ffmetadata(n, title, marks, clock), encoding="utf-8")
     out = CHAPTERS / f"{stem}.mp3"
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
            "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(out))
-    (CHAPTERS / f"{stem}.json").write_text(json.dumps(
-        {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3),
-         "narration": {"engine": "ElevenLabs", "model": MODEL, "voices": VOICES}, "lines": lines},
-        ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
+    sync = {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3),
+            "narration": {"engine": "ElevenLabs", "model": MODEL, "voices": VOICES}, "lines": lines, "segments": spans}
+    write_sync(CHAPTERS / f"{stem}.json", sync)
     print(f"chapter {n}: {out} ({clock / 60:.1f} min) and its sync file")
+    if not sample:  # the copy for the site
+        web = PUBLISH / f"{path.stem}.mp3"
+        web.parent.mkdir(parents=True, exist_ok=True)
+        ffmpeg("-i", str(out), "-map", "0:a", "-map_metadata", "0", "-map_chapters", "0", *WEB, "-id3v2_version", "3", str(web))
+        write_sync(PUBLISH / "sync" / f"{path.stem}.json", sync)
+        print(f"to publish: {web} ({web.stat().st_size / 1e6:.1f} MB) and {PUBLISH / 'sync' / (path.stem + '.json')}")
+
+
+def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries):
+    """Generate speech segment k of chapter n (s; nxt is the same voice's next segment) and record it in the
+    manifest; previous_ids are the request ids of the same voice's earlier segments, for stitching."""
+    key_ = seg_key(s)
+    text = seg_text(s)
+    if len(text) * rate(m) > subscription()["remaining"]:
+        raise SystemExit(f"not enough credits left for segment {k}; stopping (no overage)")
+    name = f"{n:02d}-{key_[:12]}.mp3"
+    entry = {"key": key_, "chapter": n, "chunk": k, "voice": VOICES[s["role"]], "role": s["role"], "characters": len(text),
+             "text_sha1": sha1(text), "file": name, "status": "generating", "request_id": None, "character_cost": None,
+             "when": now()}
+    m["chunks"] = [c for c in m["chunks"] if c.get("key") != key_] + [entry]
+    entries[key_] = entry
+    save_manifest(m)
+    stitch = m.get("stitching", True)
+    previous = [r for r in previous_ids if r][-3:] if stitch else []
+    next_text = seg_text(nxt)[:500] if stitch and nxt else None
+    try:
+        try:
+            audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]],
+                                                             seed=n * 1000 + k, previous=previous, next_text=next_text)
+        except RuntimeError as err:
+            if stitch and re.search(r"previous_request_ids|next_text|stitch", str(err), re.I):
+                m["stitching"] = False  # this model does not take request stitching; go on without it, and say so
+                save_manifest(m)
+                print(f"  the model does not accept request stitching ({err}); continuing without it", flush=True)
+                audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]], seed=n * 1000 + k)
+            else:
+                raise
+    except RuntimeError as err:
+        entry["status"] = f"failed: {err}"
+        save_manifest(m)
+        raise SystemExit(f"chapter {n} segment {k}: {err}")
+    (SEGMENTS / name).write_bytes(audio)
+    (SEGMENTS / (name[:-4] + ".json")).write_text(json.dumps(alignment or {}), encoding="utf-8")
+    entry.update(status="done", request_id=request_id, character_cost=cost, when=now())
+    save_manifest(m)
+    print(f"  segment {k}/{total} ({s['role']}): {len(text):,} characters, cost {cost}, request {request_id}", flush=True)
+    return request_id
+
+
+def ffmetadata(n, title, marks, end):
+    """Tags and section markers ([(title, start seconds)]) for ffmpeg."""
+    tags = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=تسلط بر معرفت‌شناسی", f"track={n}/16",
+            "genre=Audiobook", "language=fas",
+            f"comment=Narrated with ElevenLabs ({MODEL}); voices {VOICES['main']} and {VOICES['second']}."]
+    for k, (name, start) in enumerate(marks):
+        stop = marks[k + 1][1] if k + 1 < len(marks) else end
+        tags += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}", f"END={int(stop * 1000)}", f"title={name}"]
+    return "\n".join(tags) + "\n"
+
+
+def write_sync(path, sync):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(sync, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
+
+
+def patch_chapter(n, m, settings):
+    """Re-narrate only the segments of a published chapter whose text has changed in the script, and splice
+    them into the published audio (../NN-*.mp3 with its sync file); everything else is kept as it is. A
+    segment can be replaced only where the sync file records its place in the audio ("segments")."""
+    path = script(n)
+    title, segs, markers = plan_chapter(path)
+    speech = [s for s in segs if s["type"] == "speech"]
+    published = AUDIO / f"{path.stem}.mp3"
+    sync = json.loads((AUDIO / "sync" / f"{path.stem}.json").read_text(encoding="utf-8"))
+    old = sync["lines"]
+    if [o["kind"] for o in old] != [k for s in speech for k, _ in s["lines"]]:
+        raise SystemExit(f"chapter {n}: lines were added, removed or moved since it was published; "
+                         f"narrate it again with --chapter {n}")
+    spans = {p["chunk"]: p for p in sync.get("segments", [])}
+    changed, first = [], 0
+    for k, s in enumerate(speech, 1):
+        rng = [first, first + len(s["lines"])]
+        first = rng[1]
+        if all(old[i]["text"] == t for i, (_, t) in zip(range(*rng), s["lines"])):
+            continue
+        p = spans.get(k)
+        if not p or p.get("lines") != rng or p.get("voice") != s["role"]:
+            raise SystemExit(f"chapter {n}: segment {k} changed, but the sync file does not record where it lies in the audio")
+        changed.append((k, s, p))
+    if not changed:
+        print(f"chapter {n}: no text has changed since it was published")
+        return
+    entries = {c["key"]: c for c in m["chunks"] if "key" in c}
+    need = sum(len(seg_text(s)) for _, s, _ in changed) * rate(m)
+    sub = subscription()
+    print(f"chapter {n}: {len(changed)} changed segments, about {round(need):,} credits; {sub['remaining']:,} left")
+    if need > sub["remaining"]:
+        raise SystemExit("not enough credits; stopping without generating (no overage)")
+    new_files = {}
+    for k, s, p in changed:
+        e = entries.get(seg_key(s))
+        if not (e and e["status"] == "done" and (SEGMENTS / e["file"]).exists()):
+            nxt = next((t for t in speech[k:] if t["role"] == s["role"]), None)
+            before = [q.get("request_id") for c, q in sorted(spans.items()) if c < k and q["voice"] == s["role"]]
+            make_segment(n, k, len(speech), s, nxt, before, m, settings, entries)
+        new_files[k] = SEGMENTS / entries[seg_key(s)]["file"]
+
+    # splice: the published audio with each changed span replaced; everything after it moves by the difference
+    cuts = [(p["begin"], p["end"], k, duration(new_files[k])) for k, _, p in changed]
+
+    def moved(t):
+        return t + sum(d - (e - b) for b, e, _, d in cuts if e <= t + 1e-6)
+
+    fmt = "aformat=sample_fmts=fltp:sample_rates=24000:channel_layouts=mono"
+    kept = [(at, b) for at, b in zip([0.0] + [e for _, e, _, _ in cuts], [b for b, _, _, _ in cuts] + [None])]
+    inputs, parts, labels = ["-i", str(published)], [], []
+    olds = [i for i, (a, b) in enumerate(kept) if b is None or b - a > 0.001]  # the stretches of old audio kept
+    parts.append(f"[0:a]asplit={len(olds)}" + "".join(f"[o{i}]" for i in olds) if len(olds) > 1 else f"[0:a]anull[o{olds[0]}]")
+    for i, (a, b) in enumerate(kept):
+        if i in olds:
+            parts.append(f"[o{i}]atrim=start={a}" + (f":end={b}" if b is not None else "") + f",asetpts=PTS-STARTPTS,{fmt}[p{i}]")
+            labels.append(f"[p{i}]")
+        if i < len(cuts):
+            inputs += ["-i", str(new_files[cuts[i][2]])]
+            parts.append(f"[{i + 1}:a]{fmt}[n{i}]")
+            labels.append(f"[n{i}]")
+    parts.append("".join(labels) + f"concat=n={len(labels)}:v=0:a=1[out]")
+    chapters = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_chapters", "-of", "json", str(published)],
+                                         capture_output=True, text=True, check=True).stdout).get("chapters", [])
+    end = moved(sync["duration"])
+    meta = CHAPTERS / f"{path.stem}-patch.meta"
+    meta.parent.mkdir(parents=True, exist_ok=True)
+    meta.write_text(ffmetadata(n, title, [(c["tags"]["title"], moved(float(c["start_time"]))) for c in chapters], end),
+                    encoding="utf-8")
+    web = PUBLISH / f"{path.stem}.mp3"
+    web.parent.mkdir(parents=True, exist_ok=True)
+    ffmpeg(*inputs, "-i", str(meta), "-filter_complex", ";".join(parts), "-map", "[out]", "-map_metadata", str(len(cuts) + 1),
+           "-map_chapters", str(len(cuts) + 1), *WEB, "-id3v2_version", "3", str(web))
+
+    # the sync file: new times for the replaced lines, moved times for the rest
+    lines = [dict(o, begin=round(moved(o["begin"]), 3), end=round(moved(o["end"]), 3)) for o in old]
+    for k, s, p in changed:
+        f = new_files[k]
+        align_file = f.with_suffix(".json")
+        alignment = json.loads(align_file.read_text(encoding="utf-8")) if align_file.exists() else {}
+        start = moved(p["begin"])
+        for i, (kind, text), (b, e) in zip(range(*p["lines"]), s["lines"], line_times(s, alignment, duration(f))):
+            lines[i] = {"kind": kind, "text": text, "begin": round(start + b, 3), "end": round(start + e, 3), "voice": s["role"]}
+    replaced = {k: entries[seg_key(s)].get("request_id") for k, s, _ in changed}
+    segments = []
+    for c, q in sorted(spans.items()):
+        b = moved(q["begin"])
+        e = b + duration(new_files[c]) if c in replaced else moved(q["end"])
+        segments.append(dict(q, begin=round(b, 3), end=round(e, 3), request_id=replaced.get(c, q.get("request_id"))))
+    sync.update(title=title, duration=round(end, 3), lines=lines, segments=segments)
+    write_sync(PUBLISH / "sync" / f"{path.stem}.json", sync)
+    print(f"chapter {n}: replaced segments {', '.join(str(k) for k, _, _ in changed)}; "
+          f"to publish: {web} ({web.stat().st_size / 1e6:.1f} MB) and {PUBLISH / 'sync' / (path.stem + '.json')}")
 
 
 def import_segments(m, src):
@@ -612,6 +746,7 @@ def main():
     g.add_argument("--test", action="store_true", help=f"generate exactly {TEST_CHARS} characters from chapter 1 and report the cost")
     g.add_argument("--chapter", type=int, help="narrate one chapter")
     g.add_argument("--all", action="store_true", help="narrate every chapter")
+    g.add_argument("--patch", type=int, metavar="N", help="re-narrate only what changed in published chapter N, and splice it in")
     ap.add_argument("--resume", action="store_true", help="carry on from the manifest (segments already made are always kept)")
     ap.add_argument("--sample", type=int, help="with --chapter: only the first ~N characters, as a preview")
     ap.add_argument("--voice", help=f"main voice (default {VOICES['main']}); for --test, the voice to test")
@@ -636,6 +771,9 @@ def main():
         if not m.get("test"):
             raise SystemExit("run --test first, so the cost per character is measured")
         settings = lock_settings(m)
+        if args.patch:
+            patch_chapter(args.patch, m, settings)
+            return
         for n in chapters_to_do(args):
             narrate_chapter(n, m, settings, sample=args.sample if args.chapter else None)
 
