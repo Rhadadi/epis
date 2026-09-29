@@ -1,0 +1,12 @@
+chapter 2: 4 changed segments, about 961 credits; 119,238 left
+  segment 6/41 (second): 5,280 characters, cost 319, request 1Gxjw45w1RHTQTPyD7LL
+  segment 7/41 (second): 5,086 characters, cost 308, request 0LqlsnKHlDpI0Vh4483M
+  segment 19/41 (main): 5,162 characters, cost 312, request 8DQXctz0qhBMXGBMkkyB
+  segment 38/41 (main): 228 characters, cost 14, request O0MM5YSV6hRc9Bo5rmE4
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2102575104 >= 2102066480
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2102575104 >= 2102405168
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 55454726880 >= 55454091248
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 55454726880 >= 55454429936
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 77965300224 >= 77964946832
+[mp3 @ 0x55a31d729600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 77965300224 >= 77965285520
+chapter 2: replaced segments 6, 7, 19, 38; to publish: /home/user/epis/guide/fa/audio/tools/.eleven/publish/02-history-of-epistemology.mp3 (33.7 MB) and /home/user/epis/guide/fa/audio/tools/.eleven/publish/sync/02-history-of-epistemology.json

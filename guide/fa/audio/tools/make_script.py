@@ -205,29 +205,47 @@ LATIN = {"a priori", "a posteriori", "modus ponens", "modus tollens", "reductio 
          "post hoc ergo propter hoc", "cum hoc ergo propter hoc", "non sequitur", "petitio principii",
          "ceteris paribus", "de re", "de dicto", "prima facie", "sine qua non", "ex ante", "ex post",
          "sensus divinitatis", "genius malignus", "cogito", "si fallor", "sapere aude", "esse est percipi",
-         "ex falso quodlibet", "dicto simpliciter", "adaequatio rei et intellectus", "elenchus",
+         "ex falso quodlibet", "dicto simpliciter", "adaequatio rei et intellectus",
          "argumentum ad verecundiam", "argumentum ad populum", "argumentum ad novitatem",
          "argumentum ad nauseam", "argumentum ad ignorantiam", "argumentum ad consequentiam",
          "argumentum ad antiquitatem", "reductio ad hitlerum",
          "nihil est in intellectu quod non sit prius in sensu"}
+GREEK = {"elenchus", "aitias logismos", "phantasia katalēptikē", "pithanon", "epistēmē", "doxa", "technē",
+         "logos", "eudaimonia", "ataraxia", "epochē"}
+GERMAN = {"sinn", "bedeutung", "erkenntnistheorie", "wissenschaft", "verstehen", "lebenswelt"}
+JOURNALS = {"analysis", "nature", "science", "mind", "nous"}  # cited by name: «در مجلهٔ …»
 LANGUAGE_WORDS = ("انگلیسی", "لاتین", "یونانی", "آلمانی", "فرانسوی")
+
+
+def language_of(key):
+    """The language to name for a foreign term (key: lower case), matching whole expressions or their start."""
+    for words, name in ((LATIN, "لاتین"), (GREEK, "یونانی"), (GERMAN, "آلمانی")):
+        if any(key == w or key.startswith(w + ",") or key.startswith(w + " ") for w in words):
+            return name
+    return "انگلیسی"
 
 
 class Chapter:
     def __init__(self, number):
         self.chapter = f"{number:02d}"
-        self.seen = set()  # foreign terms already introduced
+        self.seen = set()  # foreign terms already introduced in a bracket
+        self.inline = set()  # foreign terms already said in the running text
 
     def foreign(self, term, before):
-        """How a bracketed foreign term is read: the first time with its language, then not at all."""
+        """How a bracketed foreign term is read: the first time with its language, then not at all; a term
+        already said in the running text is said again plainly."""
         key = term.lower().strip("*_ ")
         if key in self.seen:
             return None
         self.seen.add(key)
         term = term.strip("*_ ")
+        if key in self.inline:
+            return term
         if any(w in before[-40:] for w in LANGUAGE_WORDS):
             return term  # the sentence already says which language it is
-        return ("به لاتین " if key in LATIN else "به انگلیسی ") + term
+        if key in JOURNALS:
+            return "در مجلهٔ " + term
+        return f"به {language_of(key)} " + term
 
 
 def latin_run(s):
@@ -394,6 +412,8 @@ def speak(t, ch, cell=False):
     t = re.sub(r"^\*\(([^()]{1,25})\)\*\s+", r"\1: ", t)  # «۴. *(ناگفته)* ...» in a premise list
     t = re.sub(r"\*\(([^()]*)\)\*", r"(\1)", t)
     t = flatten_parens(t, ch)  # before italics go: a title in *italics* marks a citation
+    # a foreign term said in the running text (in italics, not in a bracket) has been introduced too
+    ch.inline.update(m.lower().strip() for m in re.findall(r"(?<![\w*])\*([A-Za-z][^*\n]*?)\*(?!\*)", t))
     t = re.sub(r"\*\*|__", "", t)
     t = re.sub(r"(?<![\w*])\*(?![\s*])([^*\n]+?)(?<![\s*])\*(?!\*)", r"\1", t)
     t = t.replace("’", "'").replace("‘", "'").replace("“", "«").replace("”", "»")
