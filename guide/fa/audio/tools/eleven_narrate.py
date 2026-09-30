@@ -92,6 +92,56 @@ TEST_CHARS = 1000
 WEB = ["-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "48k"]
 GAP = 0.35         # seconds of silence where the voice changes
 LONG_PAUSE = 1.5   # pauses at least this long (the quiz's thinking time) become silence between segments
+AUTO_CHIME = True  # a chime before every section
+QUOTE_GAP = (0.35, 0.35)  # silence before a quotation and after it (before its source is named)
+
+# Editions. v1 reads the narration scripts (scripts/) as they are. v2 reads the speech text (narration/): the
+# scripts rewritten for the ear, in shorter sentences, terms and meaning kept; pauses become real silence at
+# the places marked, a chime only where the text asks for one (the chapter's opening, the quiz, the end),
+# more room around quotations, shorter segments, and a slightly quicker pace (the voices' speed setting).
+# Spellings that help the voices say a word (aliases.txt) change only what is sent, never the text shown.
+NARRATION = AUDIO / "narration"
+EDITIONS = {
+    "v1": dict(SCHEME="alternate-sections-v1", MAX_SEGMENT=6000, TARGET_SEGMENT=5000, LONG_PAUSE=1.5, AUTO_CHIME=True,
+               QUOTE_GAP=(0.35, 0.35), SPEED=None, SCRIPT_DIR=AUDIO / "scripts"),
+    "v2": dict(SCHEME="alternate-sections-v2", MAX_SEGMENT=5000, TARGET_SEGMENT=4000, LONG_PAUSE=0.5, AUTO_CHIME=False,
+               QUOTE_GAP=(0.8, 0.5), SPEED=1.04, SCRIPT_DIR=NARRATION),
+}
+EDITION, SPEED = "v1", None
+ALIASES_FILE = HERE / "aliases.txt"
+
+
+def set_edition(name, script_dir=None):
+    global EDITION
+    EDITION = name
+    for k, v in EDITIONS[name].items():
+        globals()[k] = v
+    if script_dir:
+        globals()["SCRIPT_DIR"] = Path(script_dir)
+
+
+def load_aliases():
+    """written form -> spoken form, one pair per line, tab-separated (# for comments); used by edition v2."""
+    if not ALIASES_FILE.exists():
+        return []
+    pairs = []
+    for line in ALIASES_FILE.read_text(encoding="utf-8").splitlines():
+        if line.strip() and not line.startswith("#") and "\t" in line:
+            a, b = line.split("\t", 1)
+            pairs.append((a.strip(), b.strip()))
+    return sorted(pairs, key=lambda p: -len(p[0]))  # longer forms first
+
+
+ALIASES = []
+
+
+def spoken(text):
+    """A line as it is sent to the voices: in edition v2, with its aliases."""
+    if EDITION == "v1":
+        return text
+    for a, b in ALIASES:
+        text = text.replace(a, b)
+    return text
 
 ALBUM = "تسلط بر معرفت‌شناسی (نسخهٔ صوتی)"
 
@@ -177,19 +227,30 @@ def plan_chapter(script_path):
         role = role_of(kind, narrator)
         if kind == "section":
             flush()
-            pause(0.9)
-            markers.append((text, len(segs)))
-            segs.append({"type": "chime"})
-            pause(0.45)
+            if AUTO_CHIME:
+                pause(0.9)
+                markers.append((text, len(segs)))
+                segs.append({"type": "chime"})
+                pause(0.45)
+            else:  # v2: a pause, and a chime only where the text has one (just before)
+                pause(0.45 if segs and segs[-1]["type"] == "chime" else max(pending, 1.2))
+                after_chime = len(segs) > 1 and segs[-1]["type"] == "silence" and segs[-2]["type"] == "chime"
+                markers.append((text, len(segs) - 2 if after_chime else len(segs)))  # the section begins with its chime
             pending = 0.0
         elif kind == "opening":
             markers.append((text, 0))
-        size = sum(len(t) + 2 for _, t in cur["lines"]) if cur else 0
-        if cur and (cur["role"] != role or size + len(text) > MAX_SEGMENT or size >= TARGET_SEGMENT):
+        size = sum(len(spoken(t)) + 2 for _, t in cur["lines"]) if cur else 0
+        if cur and (cur["role"] != role or size + len(spoken(text)) > MAX_SEGMENT or size >= TARGET_SEGMENT):
             voice_change = cur["role"] != role
+            last_kind = cur["lines"][-1][0]
             flush()
             if voice_change or pending:
-                pause(max(pending, GAP if voice_change else 0.0))
+                g = GAP if voice_change else 0.0
+                if voice_change and kind == "quote":
+                    g = max(g, QUOTE_GAP[0])  # room before a quotation
+                if voice_change and last_kind == "quote":
+                    g = max(g, QUOTE_GAP[1])  # and after it, before its source
+                pause(max(pending, g))
         if not cur:
             cur = {"type": "speech", "role": role, "lines": []}
         cur["lines"].append((kind, text))
@@ -210,7 +271,8 @@ def role_of(kind, narrator):
 
 
 def seg_text(seg):
-    return "\n\n".join(t for _, t in seg["lines"])
+    """A segment's text as sent to the voices (the lines, with their aliases in edition v2)."""
+    return "\n\n".join(spoken(t) for _, t in seg["lines"])
 
 
 def test_text(paras, n=TEST_CHARS):
@@ -241,7 +303,7 @@ def test_text(paras, n=TEST_CHARS):
 
 
 def script(n):
-    found = sorted(SCRIPTS.glob(f"{int(n):02d}-*.txt"))
+    found = sorted(globals().get("SCRIPT_DIR", SCRIPTS).glob(f"{int(n):02d}-*.txt"))
     if not found:
         raise SystemExit(f"no script for chapter {n}")
     return found[0]
@@ -349,11 +411,16 @@ def lock_settings(m):
     if "voices" not in m:
         m.update(want)
         m["voice_settings"] = {role: voice_settings(v) for role, v in VOICES.items()}
+        if SPEED:
+            for s in m["voice_settings"].values():
+                s["speed"] = SPEED
         save_manifest(m)
     else:
         have = {k: m.get(k) for k in want}
         if have != want:
             raise SystemExit(f"the manifest was made with {have}; refusing to mix in {want}")
+        if SPEED and any(s.get("speed") != SPEED for s in m["voice_settings"].values()):
+            raise SystemExit(f"the manifest's voices are not set to speed {SPEED}; refusing to mix")
     return m["voice_settings"]
 
 
@@ -414,8 +481,9 @@ def line_times(seg, alignment, seconds):
     text = seg_text(seg)
     spans, pos = [], 0
     for _, t in seg["lines"]:
-        spans.append((pos, pos + len(t) - 1))
-        pos += len(t) + 2
+        n = len(spoken(t))  # positions in the text as sent
+        spans.append((pos, pos + n - 1))
+        pos += n + 2
     chars = alignment.get("characters") if alignment else None
     starts = alignment.get("character_start_times_seconds") if alignment else None
     ends = alignment.get("character_end_times_seconds") if alignment else None
@@ -554,7 +622,8 @@ def narrate_chapter(n, m, settings, sample=None):
     ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-i", str(meta), "-map", "0:a", "-map_metadata", "1",
            "-map_chapters", "1", "-c", "copy", "-id3v2_version", "3", str(out))
     sync = {"file": f"{path.stem}.mp3", "title": title, "duration": round(clock, 3),
-            "narration": {"engine": "ElevenLabs", "model": MODEL, "voices": VOICES}, "lines": lines, "segments": spans}
+            "narration": {"engine": "ElevenLabs", "model": MODEL, "voices": VOICES, "edition": EDITION,
+                          **({"speed": SPEED} if SPEED else {})}, "lines": lines, "segments": spans}
     write_sync(CHAPTERS / f"{stem}.json", sync)
     print(f"chapter {n}: {out} ({clock / 60:.1f} min) and its sync file")
     if not sample:  # the copy for the site
@@ -963,6 +1032,9 @@ def main():
     g.add_argument("--chapter", type=int, help="narrate one chapter")
     g.add_argument("--all", action="store_true", help="narrate every chapter")
     g.add_argument("--patch", type=int, metavar="N", help="re-narrate only what changed in published chapter N, and splice it in")
+    ap.add_argument("--edition", choices=sorted(EDITIONS), default="v1",
+                    help="v1: the narration scripts as they are (scripts/); v2: the speech text (narration/), see the notes above")
+    ap.add_argument("--scripts", metavar="DIR", help="read the chapters' text from DIR instead of the edition's folder")
     ap.add_argument("--redo", type=int, nargs="+", default=[], metavar="K",
                     help="with --patch: also re-narrate these segments (numbers from the sync file), as a new take")
     ap.add_argument("--resume", action="store_true", help="carry on from the manifest (segments already made are always kept)")
@@ -972,6 +1044,9 @@ def main():
     ap.add_argument("--model", help=f"model id (default: $ELEVENLABS_MODEL_ID or {MODEL})")
     ap.add_argument("--import-segments", metavar="DIR", help="reuse segments made elsewhere (DIR/manifest.json and DIR/segments/)")
     args = ap.parse_args()
+    set_edition(args.edition, args.scripts)
+    if args.edition != "v1":
+        ALIASES[:] = load_aliases()
     if args.model:
         MODEL = args.model
     if args.voice and not args.test:

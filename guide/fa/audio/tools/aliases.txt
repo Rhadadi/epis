@@ -1,0 +1,4 @@
+# Spellings that help the voices say a word, for narration edition v2 (eleven_narrate.py --edition v2).
+# One pair per line: the word as written, a tab, the spelling sent to ElevenLabs. Only what is sent changes;
+# transcripts, read-along pages and EPUBs show the word as written. Add a pair only after hearing the voice
+# get the word wrong, and check the new spelling in a short take before narrating chapters with it.

@@ -1,0 +1,73 @@
+{
+ "chunks": [],
+ "test": {
+  "when": "2026-09-29T13:07:23+00:00",
+  "voice": "VKDkQOjcRZb7aNtJGaWt",
+  "model": "eleven_v4_turbo",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+   "stability": 0.5,
+   "use_speaker_boost": true,
+   "similarity_boost": 0.75,
+   "style": 0.0,
+   "speed": 1.0
+  },
+  "characters": 1000,
+  "request_id": "jZYNlZqp9gS64iIsEhdf",
+  "character_cost_header": 61,
+  "used_before": 143,
+  "used_after": 204,
+  "charged": 61,
+  "credits_per_char": 0.061,
+  "file": "/home/user/epis/guide/fa/audio/tools/.eleven/test-1000.mp3",
+  "headers_seen": [
+   "access-control-allow-headers",
+   "access-control-allow-methods",
+   "access-control-allow-origin",
+   "access-control-expose-headers",
+   "access-control-max-age",
+   "alt-svc",
+   "character-cost",
+   "collect-preference",
+   "content-length",
+   "content-type",
+   "current-concurrent-requests",
+   "date",
+   "history-item-id",
+   "maximum-concurrent-requests",
+   "request-id",
+   "server",
+   "strict-transport-security",
+   "tts-latency-ms",
+   "vary",
+   "via",
+   "workspace-concurrent-requests",
+   "x-region",
+   "x-trace-id"
+  ],
+  "seconds": 0.0
+ },
+ "voices": {
+  "main": "VKDkQOjcRZb7aNtJGaWt",
+  "second": "ndcUYGFbbd96WXiZVVaQ"
+ },
+ "model": "eleven_v4_turbo",
+ "output_format": "mp3_44100_128",
+ "scheme": "alternate-sections-v2",
+ "voice_settings": {
+  "main": {
+   "stability": 0.5,
+   "use_speaker_boost": true,
+   "similarity_boost": 0.75,
+   "style": 0.0,
+   "speed": 1.04
+  },
+  "second": {
+   "stability": 0.5,
+   "use_speaker_boost": true,
+   "similarity_boost": 0.75,
+   "style": 0.0,
+   "speed": 1.04
+  }
+ }
+}
