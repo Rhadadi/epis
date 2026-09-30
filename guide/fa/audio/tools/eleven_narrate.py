@@ -565,9 +565,11 @@ def narrate_chapter(n, m, settings, sample=None):
         print(f"to publish: {web} ({web.stat().st_size / 1e6:.1f} MB) and {PUBLISH / 'sync' / (path.stem + '.json')}")
 
 
-def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries):
+def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries, seed=None):
     """Generate speech segment k of chapter n (s; nxt is the same voice's next segment) and record it in the
-    manifest; previous_ids are the request ids of the same voice's earlier segments, for stitching."""
+    manifest; previous_ids are the request ids of the same voice's earlier segments, for stitching. The seed
+    is n * 1000 + k unless another is given (a new take of the same text)."""
+    seed = seed or n * 1000 + k
     key_ = seg_key(s)
     text = seg_text(s)
     if len(text) * rate(m) > subscription()["remaining"]:
@@ -586,13 +588,13 @@ def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries):
     try:
         try:
             audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]],
-                                                             seed=n * 1000 + k, previous=previous, next_text=next_text)
+                                                             seed=seed, previous=previous, next_text=next_text)
         except RuntimeError as err:
             if stitch and re.search(r"previous_request_ids|next_text|stitch", str(err), re.I):
                 m["stitching"] = False  # this model does not take request stitching; go on without it, and say so
                 save_manifest(m)
                 print(f"  the model does not accept request stitching ({err}); continuing without it", flush=True)
-                audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]], seed=n * 1000 + k)
+                audio, alignment, request_id, cost = speak_timed(text, VOICES[s["role"]], settings[s["role"]], seed=seed)
             else:
                 raise
     except RuntimeError as err:
@@ -821,10 +823,11 @@ def write_sync(path, sync):
     path.write_text(json.dumps(sync, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
 
 
-def patch_chapter(n, m, settings):
-    """Re-narrate only the segments of a published chapter whose text has changed in the script, and splice
-    them into the published audio (../NN-*.mp3 with its sync file); everything else is kept as it is. A
-    segment can be replaced only where the sync file records its place in the audio ("segments")."""
+def patch_chapter(n, m, settings, redo=()):
+    """Re-narrate only the segments of a published chapter whose text has changed in the script (and those
+    numbered in redo, as a new take with another seed: a word skipped, say), and splice them into the
+    published audio (../NN-*.mp3 with its sync file); everything else is kept as it is. A segment can be
+    replaced only where the sync file records its place in the audio ("segments")."""
     path = script(n)
     title, segs, markers = plan_chapter(path)
     speech = [s for s in segs if s["type"] == "speech"]
@@ -839,7 +842,7 @@ def patch_chapter(n, m, settings):
     for k, s in enumerate(speech, 1):
         rng = [first, first + len(s["lines"])]
         first = rng[1]
-        if all(old[i]["text"] == t for i, (_, t) in zip(range(*rng), s["lines"])):
+        if k not in redo and all(old[i]["text"] == t for i, (_, t) in zip(range(*rng), s["lines"])):
             continue
         p = spans.get(k)
         if not p or p.get("lines") != rng or p.get("voice") != s["role"]:
@@ -857,10 +860,11 @@ def patch_chapter(n, m, settings):
     new_files = {}
     for k, s, p in changed:
         e = entries.get(seg_key(s))
-        if not (e and e["status"] == "done" and (SEGMENTS / e["file"]).exists()):
+        if k in redo or not (e and e["status"] == "done" and (SEGMENTS / e["file"]).exists()):
             nxt = next((t for t in speech[k:] if t["role"] == s["role"]), None)
             before = [q.get("request_id") for c, q in sorted(spans.items()) if c < k and q["voice"] == s["role"]]
-            make_segment(n, k, len(speech), s, nxt, before, m, settings, entries)
+            make_segment(n, k, len(speech), s, nxt, before, m, settings, entries,
+                         seed=n * 1000 + k + 500 if k in redo else None)
         new_files[k] = SEGMENTS / entries[seg_key(s)]["file"]
 
     # splice: the published audio with each changed span replaced; everything after it moves by the difference
@@ -959,6 +963,8 @@ def main():
     g.add_argument("--chapter", type=int, help="narrate one chapter")
     g.add_argument("--all", action="store_true", help="narrate every chapter")
     g.add_argument("--patch", type=int, metavar="N", help="re-narrate only what changed in published chapter N, and splice it in")
+    ap.add_argument("--redo", type=int, nargs="+", default=[], metavar="K",
+                    help="with --patch: also re-narrate these segments (numbers from the sync file), as a new take")
     ap.add_argument("--resume", action="store_true", help="carry on from the manifest (segments already made are always kept)")
     ap.add_argument("--sample", type=int, help="with --chapter: only the first ~N characters, as a preview")
     ap.add_argument("--voice", help=f"main voice (default {VOICES['main']}); for --test, the voice to test")
@@ -984,7 +990,7 @@ def main():
             raise SystemExit("run --test first, so the cost per character is measured")
         settings = lock_settings(m)
         if args.patch:
-            patch_chapter(args.patch, m, settings)
+            patch_chapter(args.patch, m, settings, redo=set(args.redo))
             return
         for n in chapters_to_do(args):
             narrate_chapter(n, m, settings, sample=args.sample if args.chapter else None)

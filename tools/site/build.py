@@ -2147,7 +2147,8 @@ def build_readalong(ch, sync, art, stamp):
             '<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">'
             '<body><seq id="chapter-seq" epub:textref="chapter.xhtml" epub:type="chapter">'
             + "".join(f'<par id="p{i:04d}"><text src="chapter.xhtml#l{i:04d}"/>'
-                      f'<audio src="audio/{x(audio)}" clipBegin="{l["begin"]:.3f}s" clipEnd="{l["end"]:.3f}s"/></par>'
+                      # a clip must not be empty (EPUB 3): a line the audio has no time for gets a millisecond
+                      f'<audio src="audio/{x(audio)}" clipBegin="{l["begin"]:.3f}s" clipEnd="{max(l["end"], l["begin"] + 0.001):.3f}s"/></par>'
                       for i, l in enumerate(sync["lines"], 1))
             + "</seq></body></smil>")
     duration = clock_value(sync["duration"])
