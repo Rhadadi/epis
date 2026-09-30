@@ -638,6 +638,7 @@ def footer(root):
       <li><a href="{h}review/">{L("Review questions", "مرور پرسش‌ها")}</a></li>
       <li><a href="{REPO}">{L("Source on GitHub", "کد منبع در گیت‌هاب")}</a></li></ul></div>
   </div>
+  <div class="wrap legal"><a href="{h}privacy.html">{L("Privacy policy", "سیاستِ حریم خصوصی")}</a><span aria-hidden="true">·</span><a href="{h}terms.html">{L("Terms of service", "شرایطِ استفاده")}</a><span aria-hidden="true">·</span><a href="{h}credits.html">{L("Credits", "منابع")}</a></div>
 </footer>"""
 
 
@@ -1358,6 +1359,7 @@ def build_home(art, chapters, md, total_audio, n_concepts):
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
             f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
+            + about_site(root) +
             f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("The course", "دوره")}</span>'
             f'<h2>{L("Sixteen chapters, each with a masterpiece", "شانزده فصل، هر یک با یک شاهکار")}</h2></div><p>'
             + L("Every chapter opens with a painting or photograph that captures its question, from Raphael's <i>School of Athens</i> to the <i>Earthrise</i> photograph.",
@@ -1372,6 +1374,39 @@ def build_home(art, chapters, md, total_audio, n_concepts):
             f'<h2>{L("Short on time?", "وقت کمی دارید؟")}</h2></div><p>{L("Follow a path through the chapters that fits your goal.", "مسیری از میان فصل‌ها را دنبال کنید که با هدفتان جور است.")}</p></div><div class="paths">{"".join(paths)}</div></div></section>'
             f'</main>')
     return body
+
+
+def about_site(root):
+    """On the home page: what the site does, including what Google sign-in is for, with the privacy policy and terms."""
+    h = home(root)
+    items = [
+        (L("Read, explore and listen", "بخوانید، کاوش کنید و بشنوید"),
+         L("A free guide to knowledge, evidence and critical thinking: sixteen chapters with self-checks, a glossary, a map of the concepts in "
+           "English and Persian, and every chapter narrated, to play here, offline, or in a podcast app.",
+           "راهنمایی رایگان دربارهٔ معرفت، شواهد و تفکرِ نقادانه: شانزده فصل با خودآزمایی، واژه‌نامه، نقشهٔ مفاهیم به فارسی و انگلیسی، و "
+           "روایتِ صوتیِ همهٔ فصل‌ها برای شنیدن در همین‌جا، بی‌اینترنت، یا در برنامهٔ پادکست.")),
+        (L("Study tools", "ابزارهای مطالعه"),
+         L("Highlights and notes, reading progress, spaced review questions, and an optional AI study companion that answers questions about "
+           "the page you are reading, using your own Claude or ChatGPT API key. Everything works without an account and is kept in your browser.",
+           "نشانه‌گذاری و یادداشت، پیشرفتِ خواندن، پرسش‌های مرورِ فاصله‌دار، و همراهِ هوشمندِ مطالعهٔ اختیاری که با کلیدِ API خودتان برای "
+           "Claude یا ChatGPT به پرسش‌هایتان دربارهٔ صفحه‌ای که می‌خوانید پاسخ می‌دهد. همه‌چیز بدونِ حساب کار می‌کند و در مرورگرتان می‌ماند.")),
+        (L("Optional Google sign-in", "ورودِ اختیاری با حساب گوگل"),
+         L("Sign in with Google to keep your progress, notes, review deck and settings in sync across your devices. The site uses your name, "
+           "email and picture only to show who is signed in, and saves your study data in a private app folder in your own Google Drive; "
+           "it cannot see your other files. There is no server of ours, no ads and no tracking.",
+           "با حساب گوگل وارد شوید تا پیشرفت، یادداشت‌ها، دستهٔ مرور و تنظیماتتان در همهٔ دستگاه‌هایتان هماهنگ بماند. سایت نام، ایمیل و "
+           "تصویرتان را فقط برای نشان دادنِ حسابِ واردشده به کار می‌برد و داده‌های مطالعه را در پوشه‌ای خصوصی در گوگل‌درایوِ خودتان ذخیره "
+           "می‌کند؛ پرونده‌های دیگرتان را نمی‌بیند. هیچ سروری از ما، هیچ تبلیغ و هیچ ردیابی‌ای در کار نیست.")),
+    ]
+    cards = "".join(f'<div class="about-item"><h3>{t}</h3><p>{p}</p></div>' for t, p in items)
+    links = (f'<p class="about-links"><a href="{h}privacy.html">{L("Privacy policy", "سیاستِ حریم خصوصی")}</a>'
+             f'<span aria-hidden="true">·</span><a href="{h}terms.html">{L("Terms of service", "شرایطِ استفاده")}</a>'
+             f'<span aria-hidden="true">·</span><a href="{h}account/">{L("Sign in and sync", "ورود و همگام‌سازی")}</a></p>')
+    lede = L(f"{SITE} is a free, open-source web app for learning epistemology and critical thinking.",
+             f"{SITE_FA} وب‌سایتی رایگان و متن‌باز برای آموختنِ معرفت‌شناسی و تفکرِ نقادانه است.")
+    return (f'<section class="section" id="about"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("About this site", "دربارهٔ این سایت")}</span>'
+            f'<h2>{L("What this site does", "این سایت چه می‌کند")}</h2></div><p>{lede}</p></div>'
+            f'<div class="about-grid">{cards}</div>{links}</div></section>')
 
 
 def audiobook_section(tracks, feed):
@@ -1559,6 +1594,201 @@ def build_credits(art):
                 f'(مجوز آپاچی ۲٫۰)، با تلفظِ <a href="https://github.com/hexgrad/misaki">misaki</a>. <a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
             + f'</p><h2>{L("Type", "حروف")}</h2><p>{fonts}{L(", all under the SIL Open Font License (follow a name for its licence).", "؛ همه با مجوزِ SIL Open Font License (برای دیدنِ مجوز، روی نام کلیک کنید).")}</p></div></main>')
     return body
+
+
+POLICY_DATE = ("30 September 2026", "۳۰ سپتامبر ۲۰۲۶ (۸ مهر ۱۴۰۵)")
+ISSUES = REPO + "/issues"
+
+
+def legal_page(art, root, kicker, title, sections, rel):
+    """A plain page of numbered sections: [(heading, html)], in the language being built (rel: its path)."""
+    head = hero(art, "ch18", root, kicker=kicker, title=title, cls="band")
+    toc = "".join(f'<li><a href="#s{i}">{h}</a></li>' for i, (h, _) in enumerate(sections, 1))
+    body = "".join(f'<h2 id="s{i}">{h}</h2>{html_}' for i, (h, html_) in enumerate(sections, 1))
+    date = L(f"Last updated: {POLICY_DATE[0]}", f"آخرین به‌روزرسانی: {POLICY_DATE[1]}")
+    note = ("" if LANG == "en" else
+            f'<p class="note">این ترجمهٔ فارسیِ متنِ انگلیسی است؛ اگر میانِ دو متن اختلافی باشد، <a href="../{rel}" lang="en">متنِ انگلیسی</a> '
+            'ملاک است.</p>')
+    return (f'{head}<main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px"><div class="prose" style="max-width:46rem">'
+            f'<p class="note"><b>{date}</b></p>{note}<nav aria-label="{L("On this page", "در این صفحه")}"><ol>{toc}</ol></nav>{body}</div></main>')
+
+
+def build_privacy(art):
+    root = up(0)
+    h = home(root)
+    signin = f'<a href="{h}account/">{L("My study", "مطالعهٔ من")}</a>'
+    return legal_page(art, root, L("Privacy", "حریم خصوصی"), L("Privacy policy", "سیاستِ حریم خصوصی"), [
+        (L("Who we are", "ما که هستیم"),
+         L(f"<p><b>{SITE}</b> (<a href=\"{LIVE}\">{LIVE}</a>, in English and Persian) is a free, open-source guide to epistemology and critical "
+           f"thinking: sixteen chapters, a concept map, an audio edition, and optional study tools. It is a static website hosted on GitHub Pages. "
+           f"We run no server of our own, and we (the site's author) never receive your personal data. The source code is public on "
+           f"<a href=\"{REPO}\">GitHub</a>, so you can check everything this page says.</p>",
+           f"<p><b>{SITE_FA}</b> (<a href=\"{LIVE}fa/\">{LIVE}fa/</a>، به فارسی و انگلیسی) راهنمایی رایگان و متن‌باز دربارهٔ معرفت‌شناسی و تفکرِ نقادانه است: "
+           f"شانزده فصل، نقشهٔ مفاهیم، نسخهٔ صوتی و ابزارهای اختیاریِ مطالعه. این سایتی ایستا است که روی GitHub Pages میزبانی می‌شود. "
+           f"ما هیچ سروری نداریم و ما (نویسندهٔ سایت) هرگز داده‌های شخصیِ شما را دریافت نمی‌کنیم. کدِ منبع در "
+           f"<a href=\"{REPO}\">گیت‌هاب</a> عمومی است، پس می‌توانید درستیِ همهٔ آنچه در این صفحه آمده را خودتان وارسی کنید.</p>")),
+        (L("In short", "به‌طورِ خلاصه"),
+         L("<ul><li>You can use the whole site without an account.</li>"
+           "<li>There are no ads, no analytics, no tracking cookies, and no third-party trackers.</li>"
+           "<li>If you sign in with Google, your study data is saved in a private app folder in <i>your own</i> Google Drive, which only this site "
+           "can open. It is not sent to us or to anyone else.</li>"
+           "<li>We do not sell, rent or share personal data, and we do not use it for advertising.</li></ul>",
+           "<ul><li>همهٔ سایت را بدونِ حساب کاربری می‌توانید به کار ببرید.</li>"
+           "<li>هیچ تبلیغ، آمارگیری، کوکیِ ردیابی یا ردیابِ شخصِ ثالثی در کار نیست.</li>"
+           "<li>اگر با حساب گوگل وارد شوید، داده‌های مطالعه‌تان در پوشه‌ای خصوصی در گوگل‌درایوِ <i>خودتان</i> ذخیره می‌شود که فقط همین سایت "
+           "می‌تواند بازش کند. این داده‌ها نه برای ما فرستاده می‌شوند و نه برای کسِ دیگری.</li>"
+           "<li>ما داده‌های شخصی را نمی‌فروشیم، اجاره نمی‌دهیم، با کسی در میان نمی‌گذاریم و برای تبلیغ به کار نمی‌بریم.</li></ul>")),
+        (L("What stays in your browser", "آنچه در مرورگرِ شما می‌ماند"),
+         L("<p>So that you can pick up where you left off, the site stores these in your browser's local storage: your reading progress, "
+           "highlights and notes, your review deck, your reading and theme settings, your AI study companion settings and chats, and, if you choose "
+           "to save them, chapters and audio for offline use. This data stays on your device. You can remove it at any time by clearing this "
+           "site's data in your browser settings.</p>",
+           "<p>برای اینکه بتوانید از همان‌جا که ماندید ادامه دهید، سایت این‌ها را در حافظهٔ محلیِ مرورگرتان نگه می‌دارد: پیشرفتِ خواندن، "
+           "نشانه‌گذاری‌ها و یادداشت‌ها، دستهٔ مرور، تنظیماتِ خواندن و ظاهر، تنظیمات و گفت‌وگوهای همراهِ هوشمندِ مطالعه، و اگر خودتان بخواهید، "
+           "فصل‌ها و صوت برای استفادهٔ بی‌اینترنت. این داده‌ها روی دستگاهِ شما می‌مانند و هر وقت بخواهید، با پاک کردنِ دادهٔ این سایت در "
+           "تنظیماتِ مرورگر، حذف می‌شوند.</p>")),
+        (L("Google sign-in (optional)", "ورود با حساب گوگل (اختیاری)"),
+         L(f"<p>Signing in (on {signin}) lets your study data follow you to other browsers and devices. Sign-in uses Google's OAuth 2.0 in your "
+           "browser and asks for these permissions:</p><ul>"
+           "<li><b>Your name, email address and profile picture</b> (the <code>openid</code>, <code>email</code> and <code>profile</code> scopes), "
+           "used only to show which account is signed in. They are kept in your browser.</li>"
+           "<li><b>A private app folder in your Google Drive</b> (the <code>drive.appdata</code> scope), used to create, read and update one "
+           "file, <code>epis-sync.json</code>, that holds the study data listed above. This folder is hidden and separate from your files: "
+           "the site cannot see, open or change any other file in your Drive.</li></ul>"
+           "<p>Your browser talks to Google directly. The access token Google issues is short-lived, is kept in your browser, and is sent only "
+           "to Google's servers. Your profile picture is loaded from Google. We never see your Google data, your token or your synced file.</p>"
+           "<p>The use and transfer of information received from Google APIs by this site adheres to the "
+           "<a href=\"https://developers.google.com/terms/api-services-user-data-policy\">Google API Services User Data Policy</a>, including "
+           "the Limited Use requirements. Google user data is used only to provide the sign-in and sync features described here; it is not "
+           "used for advertising, not sold, not transferred to anyone, and not read by any person.</p>",
+           f"<p>ورود (در صفحهٔ {signin}) باعث می‌شود داده‌های مطالعه‌تان در مرورگرها و دستگاه‌های دیگر هم همراهتان باشد. ورود با OAuth 2.0ِ گوگل "
+           "در خودِ مرورگرتان انجام می‌شود و این اجازه‌ها را می‌خواهد:</p><ul>"
+           "<li><b>نام، نشانیِ ایمیل و تصویرِ نمایه</b> (دامنه‌های <code>openid</code>، <code>email</code> و <code>profile</code>)، فقط برای "
+           "اینکه نشان داده شود کدام حساب وارد شده است. این‌ها در مرورگرِ شما می‌مانند.</li>"
+           "<li><b>یک پوشهٔ خصوصیِ برنامه در گوگل‌درایوِ شما</b> (دامنهٔ <code>drive.appdata</code>)، برای ساختن، خواندن و به‌روز کردنِ یک "
+           "پرونده، <code>epis-sync.json</code>، که داده‌های مطالعهٔ بالا را نگه می‌دارد. این پوشه پنهان و جدا از پرونده‌های شماست: سایت هیچ "
+           "پروندهٔ دیگری را در درایوتان نمی‌بیند، باز نمی‌کند و تغییر نمی‌دهد.</li></ul>"
+           "<p>مرورگرِ شما مستقیم با گوگل گفت‌وگو می‌کند. توکنِ دسترسی‌ای که گوگل می‌دهد کوتاه‌عمر است، در مرورگرِ شما می‌ماند و فقط به "
+           "سرورهای گوگل فرستاده می‌شود. تصویرِ نمایه‌تان از گوگل بارگذاری می‌شود. ما هرگز داده‌های گوگلِ شما، توکن یا پروندهٔ همگام‌سازی‌تان را نمی‌بینیم.</p>"
+           "<p>استفاده و انتقالِ اطلاعاتی که این سایت از APIهای گوگل دریافت می‌کند، از "
+           "<a href=\"https://developers.google.com/terms/api-services-user-data-policy\">سیاستِ دادهٔ کاربرانِ خدماتِ API گوگل</a>، از جمله "
+           "الزام‌های «استفادهٔ محدود»، پیروی می‌کند. دادهٔ کاربرانِ گوگل فقط برای ورود و همگام‌سازی‌ای که اینجا شرح داده شد به کار می‌رود؛ "
+           "برای تبلیغ به کار نمی‌رود، فروخته نمی‌شود، به کسی منتقل نمی‌شود و هیچ انسانی آن را نمی‌خواند.</p>")),
+        (L("Removing your data and access", "حذفِ داده‌ها و دسترسی"),
+         L("<ul><li><b>Sign out</b> on the My study page: this revokes the site's access token and removes your profile and AI keys from the browser.</li>"
+           "<li><b>Delete the synced file</b>: in Google Drive, open Settings, then Manage apps, find this site's app, and choose "
+           "“Delete hidden app data”.</li>"
+           "<li><b>Remove the site's access to your Google account</b> at any time at "
+           "<a href=\"https://myaccount.google.com/permissions\">myaccount.google.com/permissions</a>.</li>"
+           "<li><b>Clear the data in your browser</b> by clearing this site's data in your browser settings.</li></ul>",
+           "<ul><li><b>خروج</b> در صفحهٔ «مطالعهٔ من»: توکنِ دسترسیِ سایت باطل می‌شود و نمایه و کلیدهای هوش مصنوعی از مرورگر پاک می‌شوند.</li>"
+           "<li><b>حذفِ پروندهٔ همگام‌سازی</b>: در گوگل‌درایو، «تنظیمات» و بعد «مدیریتِ برنامه‌ها» را باز کنید، برنامهٔ این سایت را پیدا کنید و "
+           "«حذفِ دادهٔ پنهانِ برنامه» را بزنید.</li>"
+           "<li><b>برداشتنِ دسترسیِ سایت به حساب گوگلتان</b>، هر وقت بخواهید، در "
+           "<a href=\"https://myaccount.google.com/permissions\">myaccount.google.com/permissions</a>.</li>"
+           "<li><b>پاک کردنِ داده‌ها در مرورگر</b> با پاک کردنِ دادهٔ این سایت در تنظیماتِ مرورگر.</li></ul>")),
+        (L("The AI study companion (optional)", "همراهِ هوشمندِ مطالعه (اختیاری)"),
+         L("<p>The chat panel can answer questions about the page you are reading. If you add your own API key for Anthropic (Claude), OpenAI "
+           "(ChatGPT), OpenRouter or another OpenAI-compatible service, your browser sends your questions, the chat so far and the text of the "
+           "page you are reading directly to that provider, and that provider's privacy policy and terms apply to them. Your key is stored in "
+           "your browser and, if you are signed in, in your own Drive sync file; it is sent only to the provider it belongs to.</p>"
+           "<p>Without a key, the panel can prepare your question for you to paste into the ChatGPT or Claude website yourself. If a free "
+           "on-page assistant is offered, the service answering is named in the chat panel, and your questions and the page text are sent "
+           "to it. Please do not enter sensitive personal information in the chat.</p>",
+           "<p>کادرِ گفت‌وگو می‌تواند به پرسش‌هایتان دربارهٔ صفحه‌ای که می‌خوانید پاسخ دهد. اگر کلیدِ API خودتان را برای Anthropic (Claude)، "
+           "OpenAI (ChatGPT)، OpenRouter یا خدمتِ سازگارِ دیگری وارد کنید، مرورگرتان پرسش‌ها، گفت‌وگوی تا آن لحظه و متنِ صفحه‌ای را که "
+           "می‌خوانید مستقیم برای همان خدمت می‌فرستد، و سیاستِ حریم خصوصی و شرایطِ همان خدمت دربارهٔ آن‌ها صدق می‌کند. کلیدتان در مرورگرتان و، "
+           "اگر وارد شده باشید، در پروندهٔ همگام‌سازیِ درایوِ خودتان نگه داشته می‌شود و فقط برای خدمتی فرستاده می‌شود که کلید از آنِ آن است.</p>"
+           "<p>بدونِ کلید، کادرِ گفت‌وگو می‌تواند پرسشتان را آماده کند تا خودتان آن را در وب‌سایتِ ChatGPT یا Claude بچسبانید. اگر دستیارِ "
+           "رایگانی روی همین صفحه در دسترس باشد، نامِ خدمتی که پاسخ می‌دهد در کادرِ گفت‌وگو آمده است و پرسش‌ها و متنِ صفحه برای آن فرستاده "
+           "می‌شود. لطفاً اطلاعاتِ شخصیِ حساس را در گفت‌وگو ننویسید.</p>")),
+        (L("Hosting", "میزبانی"),
+         L("<p>GitHub Pages serves this site's files. Like any web host, GitHub may process technical data such as your IP address when your "
+           "browser requests a page; see the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">"
+           "GitHub General Privacy Statement</a>. Fonts, images and audio are served from this site itself, not from other services.</p>",
+           "<p>پرونده‌های این سایت را GitHub Pages ارائه می‌کند. مانندِ هر میزبانِ وب، گیت‌هاب ممکن است وقتی مرورگرتان صفحه‌ای را درخواست "
+           "می‌کند، داده‌های فنی‌ای مانندِ نشانیِ IP را پردازش کند؛ "
+           "<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">بیانیهٔ حریم خصوصیِ گیت‌هاب</a> "
+           "را ببینید. قلم‌ها، تصویرها و صوت از خودِ همین سایت ارائه می‌شوند، نه از خدماتِ دیگر.</p>")),
+        (L("Children", "کودکان"),
+         L("<p>The site is an educational resource for a general audience and is not directed at children under 13. We do not knowingly "
+           "collect personal information from children.</p>",
+           "<p>این سایت منبعی آموزشی برای عمومِ مخاطبان است و برای کودکانِ زیرِ ۱۳ سال طراحی نشده است. ما آگاهانه اطلاعاتِ شخصیِ کودکان را "
+           "گردآوری نمی‌کنیم.</p>")),
+        (L("Changes to this policy", "تغییرِ این سیاست"),
+         L("<p>If this policy changes, the new version will be posted on this page with a new date. The history of every change is public "
+           f"in the site's <a href=\"{REPO}\">source repository</a>.</p>",
+           "<p>اگر این سیاست تغییر کند، نسخهٔ تازه با تاریخِ تازه در همین صفحه منتشر می‌شود. تاریخچهٔ همهٔ تغییرها در "
+           f"<a href=\"{REPO}\">مخزنِ کدِ منبعِ سایت</a> عمومی است.</p>")),
+        (L("Contact", "تماس"),
+         L(f"<p>Questions about privacy, or a request about your data: please open an issue at <a href=\"{ISSUES}\">{ISSUES}</a>.</p>",
+           f"<p>برای پرسش دربارهٔ حریم خصوصی یا درخواستی دربارهٔ داده‌هایتان، لطفاً در <a href=\"{ISSUES}\">{ISSUES}</a> یک issue باز کنید.</p>")),
+    ], "privacy.html")
+
+
+def build_terms(art):
+    root = up(0)
+    h = home(root)
+    privacy = f'<a href="{h}privacy.html">{L("Privacy policy", "سیاستِ حریم خصوصی")}</a>'
+    return legal_page(art, root, L("Terms", "شرایط"), L("Terms of service", "شرایطِ استفاده"), [
+        (L("Agreement", "پذیرش"),
+         L(f"<p>These terms apply to your use of <b>{SITE}</b> at <a href=\"{LIVE}\">{LIVE}</a>, in English and Persian (the “site”). By "
+           f"using the site you agree to them. How the site handles your data is described in the {privacy}, which is part of these terms.</p>",
+           f"<p>این شرایط دربارهٔ استفادهٔ شما از <b>{SITE_FA}</b> در <a href=\"{LIVE}\">{LIVE}</a>، به فارسی و انگلیسی («سایت»)، صدق می‌کند. "
+           f"با استفاده از سایت این شرایط را می‌پذیرید. شیوهٔ رفتارِ سایت با داده‌هایتان در {privacy} آمده است که بخشی از همین شرایط است.</p>")),
+        (L("The service", "خدمت"),
+         L("<p>The site is a free educational resource: a guide to epistemology and critical thinking, a concept map, a narrated audio "
+           "edition, and optional study tools (progress, notes, review questions, Google sign-in and sync, and an AI study companion). It is "
+           "provided free of charge, and features may change or be withdrawn at any time.</p>",
+           "<p>سایت منبعی آموزشیِ رایگان است: راهنمایی دربارهٔ معرفت‌شناسی و تفکرِ نقادانه، نقشهٔ مفاهیم، نسخهٔ صوتیِ روایت‌شده و ابزارهای "
+           "اختیاریِ مطالعه (پیشرفت، یادداشت‌ها، پرسش‌های مرور، ورود با گوگل و همگام‌سازی، و همراهِ هوشمندِ مطالعه). سایت رایگان ارائه می‌شود "
+           "و ویژگی‌هایش ممکن است هر زمان تغییر کنند یا برداشته شوند.</p>")),
+        (L("Your Google account", "حساب گوگلِ شما"),
+         L("<p>Signing in is optional. When you sign in with Google, you remain responsible for your Google account and bound by Google's "
+           "terms. Your synced study data is stored in your own Google Drive, and you can delete it and revoke the site's access at any time, "
+           f"as the {privacy} explains.</p>",
+           "<p>ورود اختیاری است. وقتی با حساب گوگل وارد می‌شوید، مسئولیتِ حساب گوگلتان با خودتان است و شرایطِ گوگل درباره‌اش صدق می‌کند. "
+           f"داده‌های همگام‌شدهٔ مطالعه‌تان در گوگل‌درایوِ خودتان ذخیره می‌شود و هر وقت بخواهید، می‌توانید آن را حذف کنید و دسترسیِ سایت را بردارید؛ "
+           f"{privacy} شیوه‌اش را توضیح می‌دهد.</p>")),
+        (L("The AI study companion", "همراهِ هوشمندِ مطالعه"),
+         L("<p>If you use your own API key with Anthropic, OpenAI, OpenRouter or another provider, you use that provider's service under "
+           "its terms, and any charges it makes are yours. Keep your keys private. AI answers can be wrong or incomplete: check them against "
+           "the guide and other sources, and do not rely on them for medical, legal, financial or other professional advice.</p>",
+           "<p>اگر کلیدِ API خودتان را با Anthropic، OpenAI، OpenRouter یا خدمتِ دیگری به کار ببرید، از خدمتِ آن شرکت طبقِ شرایطِ خودش "
+           "استفاده می‌کنید و هزینه‌هایی که می‌گیرد بر عهدهٔ شماست. کلیدهایتان را پنهان نگه دارید. پاسخ‌های هوش مصنوعی ممکن است نادرست یا "
+           "ناقص باشند: آن‌ها را با راهنما و منابعِ دیگر بسنجید و برای مشاورهٔ پزشکی، حقوقی، مالی یا هر مشاورهٔ تخصصیِ دیگری به آن‌ها "
+           "تکیه نکنید.</p>")),
+        (L("Content and copyright", "محتوا و حقِ نشر"),
+         L(f"<p>The guide's text belongs to its author. You are welcome to read it, link to it, and quote short passages with a link to the "
+           f"source. The artwork is in the public domain, the fonts are under the SIL Open Font License, and the audio is narrated by synthetic "
+           f"voices; see the <a href=\"{h}credits.html\">credits</a>. The source code is published on <a href=\"{REPO}\">GitHub</a>.</p>",
+           f"<p>متنِ راهنما از آنِ نویسنده‌اش است. می‌توانید آن را بخوانید، به آن پیوند دهید و بخش‌های کوتاهی از آن را همراه با پیوند به منبع "
+           f"نقل کنید. آثارِ هنری در مالکیتِ عمومی‌اند، قلم‌ها با مجوزِ SIL Open Font License منتشر شده‌اند و صوت را صداهای ساختگی روایت "
+           f"کرده‌اند؛ <a href=\"{h}credits.html\">منابع</a> را ببینید. کدِ منبع در <a href=\"{REPO}\">گیت‌هاب</a> منتشر شده است.</p>")),
+        (L("Acceptable use", "استفادهٔ مجاز"),
+         L("<p>Please do not use the site in a way that breaks the law, interferes with the site or with other people's use of it, tries to "
+           "get around its security, or uses someone else's account or API key without permission.</p>",
+           "<p>لطفاً سایت را طوری به کار نبرید که قانون را زیرِ پا بگذارد، در کارِ سایت یا استفادهٔ دیگران از آن اختلال ایجاد کند، بخواهد "
+           "امنیتش را دور بزند، یا بی‌اجازه از حساب یا کلیدِ API کسِ دیگری استفاده کند.</p>")),
+        (L("No warranty", "بدونِ ضمانت"),
+         L("<p>The site and everything on it are provided “as is”, without warranties of any kind. The guide is for education; it is "
+           "written with care, but it may contain errors.</p>",
+           "<p>سایت و همهٔ محتوایش «همان‌طور که هست» و بدونِ هیچ‌گونه ضمانتی ارائه می‌شود. راهنما برای آموزش است؛ با دقت نوشته شده، اما "
+           "ممکن است خطا داشته باشد.</p>")),
+        (L("Limitation of liability", "محدودیتِ مسئولیت"),
+         L("<p>To the extent permitted by law, the site's author is not liable for any loss or damage arising from your use of the site, "
+           "including the loss of data stored in your browser or your Google Drive, or charges made by an AI provider.</p>",
+           "<p>تا جایی که قانون اجازه می‌دهد، نویسندهٔ سایت مسئولِ هیچ زیان یا خسارتی نیست که از استفادهٔ شما از سایت پیش بیاید، از جمله از "
+           "دست رفتنِ داده‌هایی که در مرورگر یا گوگل‌درایوتان ذخیره شده‌اند، یا هزینه‌هایی که یک خدمتِ هوش مصنوعی می‌گیرد.</p>")),
+        (L("Changes and ending", "تغییر و پایان"),
+         L("<p>These terms may be updated; the new version will be posted on this page with a new date. You can stop using the site at any "
+           f"time and remove your data as the {privacy} describes.</p>",
+           "<p>این شرایط ممکن است به‌روز شوند؛ نسخهٔ تازه با تاریخِ تازه در همین صفحه منتشر می‌شود. هر وقت بخواهید می‌توانید استفاده از سایت "
+           f"را کنار بگذارید و داده‌هایتان را همان‌طور که {privacy} می‌گوید حذف کنید.</p>")),
+        (L("Contact", "تماس"),
+         L(f"<p>Questions about these terms: please open an issue at <a href=\"{ISSUES}\">{ISSUES}</a>.</p>",
+           f"<p>برای پرسش دربارهٔ این شرایط، لطفاً در <a href=\"{ISSUES}\">{ISSUES}</a> یک issue باز کنید.</p>")),
+    ], "terms.html")
 
 
 def fa_engines():
@@ -2412,6 +2642,12 @@ def build_language(art, md, C, tracks):
          body=build_notebook(art), current="account", bar="clear")
     page("credits.html", root=r0, title=L("Credits", "منابع"), desc=L("Credits for the artwork, audio and fonts on this site.", "منابعِ آثار هنری، صدا و قلم‌های این سایت."),
          body=build_credits(art), bar="clear")
+    page("privacy.html", root=r0, title=L("Privacy policy", "سیاستِ حریم خصوصی"),
+         desc=L(f"How {SITE} handles your data: no tracking, and Google sign-in that keeps your study data in your own Google Drive.",
+                f"شیوهٔ رفتارِ {SITE_FA} با داده‌های شما: بدونِ ردیابی، و ورود با گوگل که داده‌های مطالعه را در گوگل‌درایوِ خودتان نگه می‌دارد."),
+         body=build_privacy(art), bar="clear")
+    page("terms.html", root=r0, title=L("Terms of service", "شرایطِ استفاده"),
+         desc=L(f"The terms for using {SITE}.", f"شرایطِ استفاده از {SITE_FA}."), body=build_terms(art), bar="clear")
     page("review/index.html", root=r1, title=L("Review questions", "مرور پرسش‌ها"),
          desc=L("Spaced review of the guide's self-check questions.", "مرورِ فاصله‌دارِ پرسش‌های خودآزماییِ راهنما."), body=build_review(art), current="account", bar="clear")
     page("account/index.html", root=r1, title=L("My study", "مطالعهٔ من"),

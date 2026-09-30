@@ -265,7 +265,9 @@
         '<p class="acc-fine">' + T("Google asks for permission to see your name and email, and to use a private app folder in your Drive. " +
         "The site can't see any of your other files, and there is no server of ours in between.",
         "گوگل اجازه می‌خواهد نام و ایمیلتان را ببیند و از پوشه‌ای خصوصی در درایوتان استفاده کند. " +
-        "این سایت هیچ‌یک از دیگر پرونده‌هایتان را نمی‌بیند و هیچ سروری از ما در این میان نیست.") + "</p>";
+        "این سایت هیچ‌یک از دیگر پرونده‌هایتان را نمی‌بیند و هیچ سروری از ما در این میان نیست.") +
+        ' <a href="' + HOME + 'privacy.html">' + T("Privacy policy", "سیاستِ حریم خصوصی") + '</a> · <a href="' + HOME + 'terms.html">' +
+        T("Terms of service", "شرایطِ استفاده") + "</a></p>";
     host.querySelector("[data-slot=signin]").innerHTML = card;
     host.querySelector("[data-slot=study]").innerHTML =
       '<a class="acc-tile" href="' + HOME + 'notes/"><b>' + N(c.hl) + "</b><span>" + T("highlights and notes", "نشانه‌گذاری و یادداشت") + "</span><em>" + T("Open your notebook →", "باز کردنِ دفترچه ←") + "</em></a>" +

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
+  <title id="t">Mastering Epistemology</title>
+  <rect width="120" height="120" rx="26" fill="#0A1620"/>
+  <!-- the site's mark: an eye in a lens, its pupil the light of understanding -->
+  <circle cx="60" cy="60" r="41" fill="none" stroke="#E8EEF1" stroke-opacity=".5" stroke-width="3"/>
+  <path d="M29.5 60C38 46.4 48.4 39.6 60 39.6S82 46.4 90.5 60C82 73.6 71.6 80.4 60 80.4S38 73.6 29.5 60z" fill="none" stroke="#E8EEF1" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="60" cy="60" r="10.5" fill="#F2B84B"/>
+  <circle cx="64" cy="56" r="2.6" fill="#FFF7E3" fill-opacity=".9"/>
+</svg>
