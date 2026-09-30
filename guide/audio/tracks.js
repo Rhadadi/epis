@@ -452,7 +452,7 @@ window.TRACKS = [
   "file": "07-sources-of-knowledge.mp3",
   "text": "../07-sources-of-knowledge.md",
   "title": "Chapter 7 — The Sources of Knowledge",
-  "duration": 3105.7,
+  "duration": 3376.1,
   "sections": [
    {
     "title": "Chapter seven. The Sources of Knowledge.",
@@ -460,47 +460,47 @@ window.TRACKS = [
    },
    {
     "title": "Basic and derived sources",
-    "start": 101.7
+    "start": 114.3
    },
    {
     "title": "Perception",
-    "start": 209.6
+    "start": 230.4
    },
    {
     "title": "Memory",
-    "start": 886.8
+    "start": 975.9
    },
    {
     "title": "Introspection and self-knowledge",
-    "start": 1133.2
+    "start": 1234.3
    },
    {
     "title": "Reason and the a priori",
-    "start": 1339.3
+    "start": 1453.5
    },
    {
     "title": "Testimony",
-    "start": 1641.7
+    "start": 1786.6
    },
    {
     "title": "Inference",
-    "start": 2410.0
+    "start": 2619.1
    },
    {
     "title": "Knowledge by presence",
-    "start": 2478.3
+    "start": 2689.4
    },
    {
     "title": "Intuition, emotion, and other candidate sources",
-    "start": 2635.7
+    "start": 2855.2
    },
    {
     "title": "Quick review",
-    "start": 2781.2
+    "start": 3018.8
    },
    {
     "title": "End of chapter seven",
-    "start": 3087.7
+    "start": 3356.1
    }
   ]
  },

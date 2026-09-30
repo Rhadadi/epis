@@ -14,7 +14,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 50 min | ElevenLabs |
 | 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 1 h 2 min | ElevenLabs |
 | 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 58 min | ElevenLabs |
-| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 52 min | Kokoro |
+| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 56 min | ElevenLabs |
 | 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 54 min | Kokoro |
 | 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 5 min | Kokoro |
 | 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 6 min | Kokoro |
@@ -25,7 +25,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min | Kokoro |
 | 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
 
-Total: 15 h 4 min.
+Total: 15 h 8 min.
 
 ---
 
