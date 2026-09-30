@@ -1,0 +1,2376 @@
+{
+"file": "08-skepticism.mp3",
+"title": "Chapter 8 — Skepticism and Its Answers",
+"duration": 3480.529,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter eight. Skepticism and Its Answers.",
+"begin": 2.116,
+"end": 5.796,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"If you tried to doubt everything you would not get as far as doubting anything. The game of doubting itself presupposes certainty.\"",
+"begin": 7.053,
+"end": 16.413,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Ludwig Wittgenstein, On Certainty, section one hundred fifteen.",
+"begin": 17.006,
+"end": 21.886,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"Let us not pretend to doubt in philosophy what we do not doubt in our hearts.\"",
+"begin": 22.753,
+"end": 28.113,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Charles Sanders Peirce, \"Some Consequences of Four Incapacities\"",
+"begin": 28.709,
+"end": 33.749,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Skepticism in philosophy is the view that we know much less than we think, perhaps nothing at all. Skeptical arguments are not an eccentric sideshow. They are some of the most powerful arguments in philosophy, built from premises that seem obviously true. Studying them shows you what you assume when you claim to know anything.",
+"begin": 34.612,
+"end": 56.492,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "There is also a practical reason. A cheap version of the skeptic's move turns up constantly in real debates: \"You can't rule out X, so you don't really know.\" \"You can't prove the vaccine is one hundred percent safe.\" \"You can't be certain the climate models are right.\" \"How do you know the historians aren't lying?\" Once you understand philosophical skepticism, you can recognize when such moves are serious, when they prove far too much, and how to respond.",
+"begin": 56.852,
+"end": 86.212,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Can you know that you're not dreaming right now? Can you rule out that your brain is floating in a vat, wired to a computer that feeds you a perfect illusion? If you can't, the skeptic says, then you don't really know that you have hands, or that you're listening to this recording.",
+"begin": 86.883,
+"end": 102.963,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In this chapter we'll take the skeptic seriously. We'll meet the ancient Pyrrhonists, Descartes and his evil demon, and the modern brain in a vat. Then we'll work through the best replies: Moore's defence of common sense, contextualism, hinge epistemology, and more.",
+"begin": 103.443,
+"end": 121.283,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "We'll finish by separating healthy skepticism, which every critical thinker needs, from the corrosive kind that dissolves all trust.",
+"begin": 121.523,
+"end": 129.763,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Why study skepticism?",
+"begin": 131.03,
+"end": 132.79,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A skeptical argument is a paradox: plausible premises, valid reasoning, unacceptable conclusion. Since the conclusion, \"I don't know I have hands\", is hard to accept, at least one premise must be false, or the reasoning must be flawed. But which one? Each answer commits you to a view about what knowledge is. That is why the history of epistemology is, to a large extent, a history of responses to skepticism.",
+"begin": 133.878,
+"end": 162.758,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Barry Stroud — The Significance of Philosophical Scepticism, nineteen eighty-four — argued that skepticism is not a strange hypothesis dreamed up by philosophers, but something that follows naturally from ordinary ideas about knowledge that we find hard to give up. Taking it seriously is therefore a way of examining those ideas.",
+"begin": 163.558,
+"end": 184.198,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Varieties of skepticism",
+"begin": 185.469,
+"end": 187.309,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Skepticism comes in many forms.",
+"begin": 188.395,
+"end": 191.035,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "By scope.",
+"begin": 191.355,
+"end": 192.355,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Global skepticism: we know nothing — or nothing about the world beyond our own minds.",
+"begin": 192.635,
+"end": 198.915,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Local skepticism: we lack knowledge in a particular domain, such as the external world, other minds, the past, the future, induction, morality, religion, or the future of the stock market.",
+"begin": 199.275,
+"end": 212.915,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "By strength.",
+"begin": 213.275,
+"end": 214.355,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Knowledge skepticism: we don't know, though our beliefs may be reasonable.",
+"begin": 214.635,
+"end": 219.115,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Justification skepticism: our beliefs are not even justified. This is much more radical: it says we have no more reason to believe we have hands than that we don't.",
+"begin": 219.755,
+"end": 230.675,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "By attitude.",
+"begin": 231.035,
+"end": 232.155,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Pyrrhonian skepticism: suspend judgment about everything, including whether knowledge is possible.",
+"begin": 232.395,
+"end": 238.715,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Academic skepticism: argue that nothing can be known — or, on some interpretations, only argue against those who claim knowledge — while allowing persuasive impressions to guide action.",
+"begin": 239.035,
+"end": 250.875,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Cartesian, methodological, skepticism: use doubt as a tool for finding certainty, not as a final position.",
+"begin": 251.435,
+"end": 259.035,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Mitigated skepticism — Hume: accept the skeptical arguments in theory, but recognize that nature compels belief in practice, and be modest.",
+"begin": 259.675,
+"end": 269.795,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Philosophical versus ordinary skepticism. Philosophical skepticism questions whether we can know anything in a domain. Ordinary skepticism doubts particular claims on specific grounds — \"I'm skeptical about that study because the sample was tiny\". The second is essential to critical thinking. The first is a philosophical puzzle. Confusing them produces bad arguments, discussed in Healthy and corrosive skepticism.",
+"begin": 270.155,
+"end": 297.515,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Pyrrhonian skepticism",
+"begin": 298.789,
+"end": 300.389,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sextus Empiricus defined skepticism in the Outlines of Pyrrhonism as.",
+"begin": 301.479,
+"end": 306.679,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"an ability to set out oppositions among things which appear and are thought of in any way at all, an ability by which, because of the equipollence in the opposed objects and accounts, we come first to suspension of judgement and afterwards to tranquillity.\"",
+"begin": 307.566,
+"end": 324.286,
+"voice": "third"
+},
+{
+"kind": "say",
+"text": "The key terms.",
+"begin": 324.78,
+"end": 325.9,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Equipollence — isostheneia: for any argument on one side, there is an equally strong argument on the other.",
+"begin": 326.38,
+"end": 334.02,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Suspension of judgment — epochē: withholding both belief and disbelief.",
+"begin": 334.3,
+"end": 340.06,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Tranquillity — ataraxia: the peace of mind that follows, as a shadow follows a body.",
+"begin": 340.3,
+"end": 346.78,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Pyrrhonists developed standard patterns of argument, the modes, for producing equipollence.",
+"begin": 347.1,
+"end": 352.7,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Ten Modes of Aenesidemus, first century BCE, show how appearances vary with.",
+"begin": 353.02,
+"end": 359.22,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Differences among animals — what seems pleasant to one species is unpleasant to another.",
+"begin": 359.5,
+"end": 366.1,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Differences among humans.",
+"begin": 366.38,
+"end": 369.06,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Differences among the senses — a painting looks three-dimensional but feels flat.",
+"begin": 369.34,
+"end": 375.82,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Circumstances — health or illness, waking or sleeping, youth or age.",
+"begin": 376.02,
+"end": 382.78,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Positions, distances, and places — a tower looks round from afar and square up close.",
+"begin": 382.86,
+"end": 390.7,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Mixtures — we never perceive things pure, but always through air, light, and our own bodily states.",
+"begin": 390.78,
+"end": 399.02,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. Quantities and compositions — a little wine strengthens, a lot weakens.",
+"begin": 399.1,
+"end": 405.18,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Relativity — everything appears relative to something.",
+"begin": 405.66,
+"end": 410.3,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Nine. Frequency — comets astonish us because they are rare; the sun does not.",
+"begin": 410.38,
+"end": 416.62,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ten. Customs, laws, and beliefs — what one culture condemns, another approves.",
+"begin": 416.7,
+"end": 423.26,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In each case, we have no neutral standpoint from which to say which appearance is correct. So we should suspend judgment about how things really are.",
+"begin": 423.5,
+"end": 432.54,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Five Modes of Agrippa — disagreement, regress, relativity, hypothesis, circularity — are more abstract and more powerful. Together they form Agrippa's trilemma, which we examined in Chapter six.",
+"begin": 433.1,
+"end": 447.82,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Can a Pyrrhonist live? The obvious objection is the apraxia, \"inaction\", charge: without beliefs, you cannot act. Why eat, if you don't believe food nourishes? Sextus replied that the skeptic lives by appearances, without dogmatic belief. He follows the \"fourfold observances\": the guidance of nature, perception and thought, the necessity of feelings, hunger leads to food, the tradition of laws and customs, and instruction in skills. The skeptic eats because he is hungry and food appears nourishing, without asserting that it is nourishing in reality.",
+"begin": 448.38,
+"end": 486.22,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Is Pyrrhonism self-refuting? \"If you claim to know that nothing can be known, you contradict yourself.\" Sextus anticipated this. The Pyrrhonist does not assert that nothing can be known. Skeptical statements are reports of how things appear to the skeptic at the moment. And skeptical arguments, Sextus said, are like purgatives that expel themselves along with the humors they purge: they cancel the dogmatist's beliefs and then cancel themselves. Sextus also compares them to a ladder that one kicks away after climbing it, an image Wittgenstein later borrowed at the end of the Tractatus.",
+"begin": 486.54,
+"end": 524.62,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Skepticism was not only a Greek phenomenon. In India, Śrīharṣa, usually dated to the twelfth century, taught, in The Sweets of Refutation, techniques for refuting any positive theory, many of them exploiting the difficulty of defining our terms, and promised his readers \"the joy of universal conquest\" in debate. In Europe, Sextus's works were rediscovered and printed in the fifteen sixties and inspired Montaigne. By Descartes' time, as he noted, skepticism was vigorously alive again.",
+"begin": 525.5,
+"end": 560.54,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pyrrhonism has modern defenders, notably Robert Fogelin — Pyrrhonian Reflections on Knowledge and Justification, nineteen ninety-four — who argues that the regress argument, properly understood, shows that our justificatory practices cannot meet the standards they set themselves.",
+"begin": 561.26,
+"end": 579.02,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Cartesian skepticism",
+"begin": 580.206,
+"end": 581.806,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Descartes' skepticism differs from Pyrrhonism. It is methodological: Descartes doubts in order to find what cannot be doubted. But his arguments outlived his solution, and they define the modern problem of the external world.",
+"begin": 582.896,
+"end": 598.296,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The dream argument, set out as an argument.",
+"begin": 598.816,
+"end": 602.136,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. If I know that I am sitting by the fire, then I can rule out that I am only dreaming that I am.",
+"begin": 602.576,
+"end": 609.256,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. I cannot rule out that I am only dreaming — there are no certain marks distinguishing waking from dreaming.",
+"begin": 609.696,
+"end": 616.576,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Therefore, I do not know that I am sitting by the fire.",
+"begin": 617.456,
+"end": 621.696,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections and replies. Dreams are usually less coherent than waking life, and in the Sixth Meditation Descartes himself notes that memory links waking experiences together in a way it never links dreams. J L Austin pointed out that we do have ways of telling dreams from waking. But the skeptic needs only a possible dream exactly like waking life, and the fact that we sometimes dream without realizing it shows that dreaming, from the inside, can seem real.",
+"begin": 622.656,
+"end": 653.376,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The evil demon argument has the same structure but greater scope. A demon powerful enough to deceive me about everything, including my arithmetic, would produce experiences exactly like those I actually have. Since I cannot rule out the demon, I cannot know anything the demon could make me falsely believe. Modern philosophy replaced the demon with a scientific version.",
+"begin": 654.336,
+"end": 678.176,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The brain in a vat",
+"begin": 679.445,
+"end": 680.885,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The contemporary version of Cartesian skepticism was popularized by Hilary Putnam, though Gilbert Harman had described the scenario earlier, and it later inspired films like The Matrix.",
+"begin": 681.979,
+"end": 693.419,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Imagine that an evil scientist has removed your brain from your body and placed it in a vat of nutrients that keeps it alive. The nerve endings are connected to a supercomputer that sends electrical impulses exactly like those the brain would normally receive. The computer simulates a complete world: when you \"try to raise your hand,\" the computer produces the experience of seeing and feeling your hand rise. You have no idea that anything is amiss.",
+"begin": 694.139,
+"end": 723.339,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Everything would seem exactly as it does now. So, the skeptic argues, you cannot tell that you are not a brain in a vat — brain in a vat. And if you cannot tell that, how can you know that you have hands, that you are reading this page, or that there is a world outside your mind at all?",
+"begin": 723.899,
+"end": 742.459,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The brain in a vat scenario is the standard skeptical hypothesis. Its power comes from being designed to fit all possible evidence. Any experience you could appeal to in order to show you are not a brain in a vat would be one the computer could provide.",
+"begin": 742.939,
+"end": 758.299,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "The closure argument",
+"begin": 759.562,
+"end": 760.842,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Contemporary discussion puts the skeptical argument in a particularly clean form. It relies on the closure principle.",
+"begin": 761.913,
+"end": 769.953,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Closure.",
+"begin": 770.393,
+"end": 771.193,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If S knows that p, and S knows that p entails q, then S knows that q — or is in a position to know q.",
+"begin": 771.866,
+"end": 780.746,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A more careful version, due to Timothy Williamson and John Hawthorne: if you know p, and you competently deduce q from p, thereby coming to believe q while retaining your knowledge of p, then you know q.",
+"begin": 781.386,
+"end": 795.786,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Closure seems obviously correct: deduction is a way of extending knowledge. If you know the train leaves at nine fifteen and you know it takes twenty minutes to reach the station, you can know you must leave by eight fifty-five.",
+"begin": 796.186,
+"end": 810.506,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now the argument.",
+"begin": 810.586,
+"end": 811.866,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. I don't know that I am not a, handless, brain in a vat.",
+"begin": 812.186,
+"end": 816.826,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. If I know that I have hands, then I know that I am not a handless brain in a vat. By closure: having hands entails not being a handless brain in a vat.",
+"begin": 817.386,
+"end": 828.586,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Therefore, I don't know that I have hands.",
+"begin": 829.146,
+"end": 832.826,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Premise one seems true — the scenario is designed to be undetectable. Premise two follows from closure. The argument is a simple modus tollens. Yet the conclusion seems absurd.",
+"begin": 833.306,
+"end": 845.786,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Dretske's zebra. Fred Dretske gave a more homely example. At the zoo, you see black-and-white striped animals in a pen marked \"Zebras.\" You know they are zebras. Being zebras entails that they are not mules cleverly painted by the zoo authorities to look like zebras. Do you know that? You haven't checked. You haven't examined the animals closely. It seems you don't. So either you don't know they are zebras after all, or closure fails.",
+"begin": 846.426,
+"end": 876.106,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The skeptical argument presents a trilemma: deny premise one, claim we can know we are not brains in vats, deny premise two, deny closure, or accept the conclusion — skepticism. Every response to skepticism takes one of these routes, or argues that the argument equivocates.",
+"begin": 876.586,
+"end": 896.506,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Responses to skepticism",
+"begin": 897.776,
+"end": 899.536,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Mooreanism",
+"begin": 900.624,
+"end": 901.504,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "G E Moore's response was to turn the argument around. In \"Proof of an External World\", he held up his hands and said.",
+"begin": 902.374,
+"end": 910.334,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Here is one hand.",
+"begin": 910.534,
+"end": 912.934,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Here is another.",
+"begin": 913.014,
+"end": 914.934,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Therefore, there are at least two external objects.",
+"begin": 915.174,
+"end": 919.414,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Moore claimed this proof was perfectly rigorous: the premises are known, and the conclusion follows. Against the closure argument, a Moorean reasons.",
+"begin": 919.654,
+"end": 929.414,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. I know I have hands.",
+"begin": 929.574,
+"end": 932.134,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. If I know I have hands, then I know I'm not a handless brain in a vat.",
+"begin": 932.294,
+"end": 937.654,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Therefore, I know I'm not a handless brain in a vat.",
+"begin": 937.854,
+"end": 942.534,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Notice what Moore did not do: he did not try to prove that he had hands, or that he was not dreaming. He distinguished having conclusive evidence from being able to prove: \"I have, no doubt, conclusive reasons for asserting that I am not now dreaming; I have conclusive evidence that I am awake: but that is a very different thing from being able to prove it. I could not tell you what all my evidence is; and I should require to do this at least, in order to give you a proof.\" Moore allowed that particular doubts can be settled by particular checks — if someone suspects your hands are prosthetic, let them examine your hands — but he denied that there is any all-purpose proof that would dispel every conceivable doubt, and he denied that knowledge requires one. As Jennifer Nagel observes, proof has a natural role in supporting general philosophical claims such as \"external objects exist,\" but \"here is a hand\" is so basic that there is nothing simpler and better known from which to prove it, much as axioms are not proved in mathematics.",
+"begin": 942.614,
+"end": 1006.454,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Moore's key point is about relative certainty. He was more certain that he had hands than he was of any premise in any skeptical argument. When a valid argument leads from premises to an absurd conclusion, it is rational to reject the least plausible premise, and the skeptic's premises are less plausible than \"I have hands.\" — Recall: \"one person's modus ponens is another person's modus tollens\"",
+"begin": 1006.534,
+"end": 1032.494,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 1032.774,
+"end": 1033.814,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Question-begging. Moore's proof assumes what the skeptic questions. Its premises are acceptable only if you already accept that there is an external world.",
+"begin": 1034.054,
+"end": 1043.974,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Transmission failure. Crispin Wright argues that Moore's proof fails to transmit warrant from premises to conclusion. My perceptual warrant for \"Here is a hand\" presupposes that I have some warrant to believe there is an external world. So the proof cannot be the source of that warrant.",
+"begin": 1044.214,
+"end": 1062.454,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Dialectical ineffectiveness. Even if Moore knows he has hands, his proof won't persuade anyone who doubts it.",
+"begin": 1062.494,
+"end": 1069.414,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Neo-Mooreanism. Contemporary Mooreans — Ernest Sosa, James Pryor, and others — accept that the proof is dialectically ineffective against a committed skeptic but argue that Moore nonetheless knows he is not a brain in a vat, because his belief is safe: in all nearby possible worlds where he believes it, it is true.",
+"begin": 1069.494,
+"end": 1092.614,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Denying closure",
+"begin": 1093.494,
+"end": 1094.614,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Fred Dretske and Robert Nozick accepted premise one and denied closure. On Nozick's tracking theory, I know I have hands because if I didn't have hands, I wouldn't believe I did. But I don't know I'm not a brain in a vat, because if I were one, I would still believe I wasn't. So I know \"I have hands\" but not the obvious consequence \"I am not a handless brain in a vat.\" Knowledge is not closed under known entailment.",
+"begin": 1095.419,
+"end": 1125.139,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This lets us keep ordinary knowledge and grant the skeptic that we can't know the skeptical hypothesis is false. The cost is high. Keith DeRose calls the result an abominable conjunction: \"I know I have hands, but I don't know I'm not a handless brain in a vat.\" Most epistemologists find closure too plausible to give up.",
+"begin": 1125.499,
+"end": 1147.859,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Relevant alternatives",
+"begin": 1148.379,
+"end": 1149.819,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The relevant alternatives theory says.",
+"begin": 1150.694,
+"end": 1153.294,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "To know p, you must be able to rule out every relevant alternative to p, but not every alternative whatever.",
+"begin": 1153.574,
+"end": 1160.934,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "At the zoo, relevant alternatives to \"That's a zebra\" include \"That's a horse\" or \"That's an antelope,\" which you can rule out by looking. \"That's a cleverly painted mule\" is not relevant in normal circumstances. It would become relevant if there were reason to suspect fraud: if, for example, the zoo had been caught painting mules before, or if you were in fake barn country.",
+"begin": 1161.254,
+"end": 1186.374,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What makes an alternative relevant? There are two broad answers.",
+"begin": 1186.854,
+"end": 1191.214,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Objective: an alternative is relevant if it has a real chance of obtaining in the actual situation — Goldman. This yields externalist relevant alternatives theory.",
+"begin": 1191.494,
+"end": 1202.454,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contextual: an alternative is relevant if it is salient in the conversational context or taken seriously by the people discussing it. This leads to contextualism.",
+"begin": 1203.094,
+"end": 1213.654,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Dretske combined relevant alternatives with denial of closure. Stine argued that relevant alternatives theory, combined with contextualism, can preserve closure. Her nineteen seventy-six paper is usually credited with the first clear formulation of contextualism: \"It is an essential characteristic of our concept of knowledge that tighter criteria are appropriate in different contexts. It is one thing in a street encounter, another in a classroom, another in a law court — and who is to say it cannot be another in a philosophical discussion?\" Her second point was that within a single context we must stick to one standard: once we are worrying about disguised mules, we can no longer say the zoo visitor knows it's a zebra.",
+"begin": 1214.534,
+"end": 1260.694,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Contextualism",
+"begin": 1261.654,
+"end": 1262.694,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Epistemic contextualism — Stewart Cohen, Keith DeRose, David Lewis — holds that the word \"know\" is context-sensitive. The standards a subject must meet for \"S knows that p\" to be true vary with the context of the person attributing knowledge, as the standards for \"tall\" or \"flat\" vary with context. \"Flat\" means one thing for a road and another for a table surface in a physics lab.",
+"begin": 1263.569,
+"end": 1291.009,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In an ordinary context, the standards are low. \"I know I have hands\" is true. In a philosophy seminar where the brain in a vat hypothesis has been raised, the standards rise. \"I know I have hands\" becomes false, because in that context, knowing requires ruling out the brain in a vat possibility, which I cannot do.",
+"begin": 1291.329,
+"end": 1312.449,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "So the skeptic is right, in the skeptic's context. But this does not threaten ordinary knowledge claims made in ordinary contexts. There is no single context-independent answer to \"Do I know I have hands?\"",
+"begin": 1313.089,
+"end": 1326.849,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Jennifer Nagel's illustration uses height. A man who is six feet tall is tall for an American man and short for a professional basketball player. Sports fans who say \"he isn't tall\" and the man who describes himself as tall on his dating profile are both speaking truly, and neither should accuse the other of saying something false: each must respect the other's context. For the contextualist, the everyday speaker and the skeptic are in the same situation. Asking which one \"really\" captures knowledge, once and for all, is like asking which day is really \"tomorrow.\" Note that contextualism is a theory about the language of knowledge attribution, not a complete theory of knowledge. It can be combined with internalist accounts, higher standards require more evidence, or externalist ones — higher standards require tracking the truth across a wider range of circumstances.",
+"begin": 1327.409,
+"end": 1383.649,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "DeRose's bank cases.",
+"begin": 1384.609,
+"end": 1386.209,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Case A — low stakes. On a Friday afternoon, Keith and his wife drive past the bank to deposit their paychecks. The lines are long. Nothing much depends on depositing the checks immediately. Keith says, \"I know the bank will be open tomorrow; I was there two Saturdays ago.\" Intuitively, what he says is true.",
+"begin": 1386.849,
+"end": 1407.569,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Case B — high stakes. Same situation, but a large bill is due, and if the checks aren't deposited before Monday, it will bounce, with serious consequences. Keith's wife points out that banks sometimes change their hours. Keith says, \"Well, no, I don't know the bank will be open tomorrow. Let's go in and make sure.\" This also seems true.",
+"begin": 1408.369,
+"end": 1431.409,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Keith's evidence is the same in both cases. The contextualist explains the difference by the change in standards.",
+"begin": 1431.889,
+"end": 1438.929,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "David Lewis's \"Elusive Knowledge\" offers a precise version: S knows p if and only if S's evidence eliminates every possibility in which not-p, \"Psst! — except for those possibilities that we are properly ignoring.\" Lewis gives rules for which possibilities may be properly ignored. The rule of attention is the source of skepticism's power: a possibility that is mentioned or attended to cannot be properly ignored. So when the skeptic raises the brain in a vat possibility, it becomes relevant, and knowledge \"vanishes.\" Knowledge is elusive: examine it closely, and it disappears.",
+"begin": 1439.249,
+"end": 1481.169,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Stewart Cohen's airport case: Mary and John, at the Los Angeles airport, want to know whether a flight stops in Chicago. A passenger, Smith, checks his printed itinerary and says, \"Yes, I know, it stops in Chicago.\" Mary and John have a very important business meeting in Chicago. Mary asks, \"How reliable is that itinerary? It could contain a misprint; they could have changed the schedule.\" They agree that Smith doesn't really know, and decide to check with the airline agent.",
+"begin": 1481.649,
+"end": 1512.769,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections to contextualism.",
+"begin": 1513.249,
+"end": 1515.089,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Semantic blindness. If \"know\" is context-sensitive, ordinary speakers don't seem to realize it. Nobody resolves skeptical anxiety by saying \"Oh, your 'know' just has a different meaning from mine.\"",
+"begin": 1515.809,
+"end": 1529.249,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Disanalogies with other context-sensitive words. With \"tall,\" we can easily say \"He's tall for a jockey.\" Nothing similar works naturally with \"know.\"",
+"begin": 1530.049,
+"end": 1540.529,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Does it concede too much? Many feel the skeptic's claim is that we don't know even by ordinary standards, and contextualism doesn't answer that.",
+"begin": 1540.493,
+"end": 1550.733,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Subject-sensitive invariantism",
+"begin": 1551.213,
+"end": 1553.293,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A rival to contextualism explains the bank cases differently. Subject-sensitive invariantism or interest-relative invariantism — John Hawthorne, Knowledge and Lotteries, two thousand four; Jason Stanley, Knowledge and Practical Interests, two thousand five; Jeremy Fantl and Matthew McGrath, Knowledge in an Uncertain World, two thousand nine — says \"know\" has a fixed meaning, invariantism, but whether a subject knows depends partly on the subject's own practical stakes. In Case B, Keith really doesn't know, because more is at stake for him. This is called pragmatic encroachment, and it is discussed in Chapter thirteen.",
+"begin": 1554.155,
+"end": 1596.635,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Nagel gives a sharp pair of cases. Lee is leaving work. In one version, a colleague asks whether the supply-room door is still locked, because she left her jacket inside; Lee says, \"Yes, I know, I locked it myself half an hour ago.\" In the other version, police officers tell him an armed man is loose in the building and ask whether the supply room's back exit is locked; Lee says, \"I don't know. I locked it half an hour ago, but I wasn't watching the whole time.\" Both answers sound right, though his evidence is the same. The contextualist says the standards for the word \"know\" differ between the two conversations. The interest-relative invariantist says something stronger: Lee really does know in the first case and really doesn't in the second, because what is at stake for him differs.",
+"begin": 1597.195,
+"end": 1645.755,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Critics point to odd consequences. If stakes determine knowledge, it should sound fine to say \"The waiter doesn't know whether the sandwich is tuna or chicken, but he would have known if one of his customers didn't have a fish allergy.\" It sounds strange. And if Lee simply knows in the low-stakes case, why can a skeptic so easily talk us out of saying so?",
+"begin": 1645.995,
+"end": 1667.275,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Classical invariantism holds that the standards for knowledge are fixed and do not depend on stakes or context. Skeptical invariantists set them very high, so we know almost nothing. Moderate invariantists, Timothy Williamson, set them at ordinary levels and explain the bank intuitions by other means, such as our tendency to be more cautious when more is at stake. Nagel defends a psychological version of this reply: when we evaluate someone after considering a possibility of error, a robust bias called epistemic egocentrism makes us judge them as if they were also worried about that possibility and irresponsibly ignoring it. On this view, the skeptical and high-stakes intuitions are partly cognitive illusions, like a visual illusion that persists even when we know it's an illusion.",
+"begin": 1667.755,
+"end": 1717.595,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Semantic externalism",
+"begin": 1718.475,
+"end": 1720.075,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Hilary Putnam offered an ingenious argument that we cannot be brains in a vat, based on semantic externalism: the meaning of our words depends on our causal connections with things in our environment.",
+"begin": 1720.869,
+"end": 1733.509,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A brain that has always been in a vat has never interacted with real vats, brains, or trees. Its word \"vat\" is causally connected only to the computer's electrical impulses, or to features of the simulated world. So when the brain in a vat thinks \"I am a brain in a vat,\" its words \"brain\" and \"vat\" refer to simulated brains and vats, vats-in-the-image, and what it thinks is false, since it is not a simulated brain in a simulated vat. On the other hand, if I am not a brain in a vat, then \"I am a brain in a vat\" is simply false. Either way, \"I am a brain in a vat\" is false. So I am not a brain in a vat.",
+"begin": 1734.069,
+"end": 1778.149,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 1779.109,
+"end": 1780.309,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The argument works only for brains that have always been envatted. A brain that was envatted last night would still have words connected to real vats.",
+"begin": 1780.629,
+"end": 1789.629,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Even if it shows that I cannot truly think \"I am a brain in a vat,\" it may not show that I know I'm not in some skeptical scenario.",
+"begin": 1789.909,
+"end": 1797.829,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Anthony Brueckner and others have argued that to use the argument, I must know what my words refer to, which I can only know if I already know I am not a brain in a vat.",
+"begin": 1798.389,
+"end": 1809.269,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Hinge epistemology",
+"begin": 1809.829,
+"end": 1811.189,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Wittgenstein's On Certainty suggested a very different kind of response. Moore claimed to know that he had hands. Wittgenstein argued that this is a misuse of \"know.\" \"Know\" is appropriate where there is a possibility of giving grounds, of checking, of being wrong in an intelligible way. But propositions like \"I have two hands,\" \"The Earth has existed for a long time,\" or \"My name is Ludwig Wittgenstein\" are not conclusions from evidence. They are the framework within which we give evidence at all. They are hinges on which our questions and doubts turn.",
+"begin": 1812.062,
+"end": 1851.182,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "\"The questions that we raise and our doubts depend on the fact that some propositions are exempt from doubt, are as it were like hinges on which those turn.\"",
+"begin": 1851.262,
+"end": 1861.222,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "\"If you tried to doubt everything you would not get as far as doubting anything. The game of doubting itself presupposes certainty.\"",
+"begin": 1861.502,
+"end": 1869.982,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "On this view, the skeptic's mistake is to treat hinges as if they were ordinary empirical hypotheses in need of evidence. Doubt requires reasons; a doubt that could not in principle be resolved by any evidence is not a real doubt.",
+"begin": 1870.302,
+"end": 1885.542,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Contemporary hinge epistemologists develop this in different ways.",
+"begin": 1885.822,
+"end": 1889.902,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Crispin Wright: we have a non-evidential entitlement to trust hinge propositions, \"cornerstones\", because inquiry would be impossible otherwise.",
+"begin": 1890.382,
+"end": 1899.902,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Duncan Pritchard: hinge commitments are not beliefs at all, so they fall outside the scope of the closure principle. Pritchard combines this with epistemological disjunctivism.",
+"begin": 1900.382,
+"end": 1911.102,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Annalisa Coliva: accepting hinges is constitutive of epistemic rationality itself.",
+"begin": 1911.582,
+"end": 1917.742,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objection. Hinge epistemology can seem to concede that we don't know the hinges. And it raises a worry about relativism: if different communities have different hinges — Wittgenstein discusses a king brought up to believe the world began with him — is there any rational way to adjudicate between them? This connects to the problem of deep disagreement: disagreements so fundamental that the parties share no common ground from which to argue.",
+"begin": 1918.302,
+"end": 1946.062,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Dogmatism",
+"begin": 1946.622,
+"end": 1947.422,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "James Pryor defends dogmatism — a technical term, not the everyday vice. When you have an experience as of having hands, that experience gives you immediate prima facie justification to believe you have hands. You do not need prior, independent justification for believing you are not a brain in a vat. Your perceptual justification can then extend, via closure, to \"I am not a brain in a vat.\" This is a form of phenomenal conservatism and of modest foundationalism.",
+"begin": 1948.291,
+"end": 1981.171,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objection: easy knowledge. Stewart Cohen argued that such views make knowledge too easy. A table looks red to me. So, by dogmatism, I am justified in believing it is red. It follows that it is not a white table lit by red light. So I have learned, just by looking, that I'm not being fooled by lighting, which seems absurd. Jonathan Vogel described a bootstrapping case: Roxanne has a reliable gas gauge but no evidence that it is reliable. She looks at it repeatedly, each time forming the belief \"The tank is full\" and noting \"The gauge says full, and the tank is full.\" After many repetitions, she concludes that the gauge is reliable. She has used the gauge to certify itself, which is clearly illegitimate.",
+"begin": 1982.051,
+"end": 2032.411,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Epistemological disjunctivism",
+"begin": 2032.931,
+"end": 2034.851,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Duncan Pritchard, developing ideas from John McDowell, argues that in paradigm cases of perceptual knowledge, your rational support is factive and reflectively accessible: your reason for believing there is a hand is that you see that there is a hand, and you can know this by reflection. Since seeing that there is a hand entails there is a hand, your reason entails that you are not a handless brain in a vat. So you can know, on the basis of reasons available to you, that you are not a brain in a vat.",
+"begin": 2035.722,
+"end": 2068.322,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objection: the access problem. If your reason in the good case is reflectively accessible and entails the truth, why can't you tell, by reflection, whether you are in the good case or the bad case? Pritchard replies that reflective accessibility does not require being able to introspectively distinguish the good case from the bad one.",
+"begin": 2068.762,
+"end": 2090.362,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Abductive responses",
+"begin": 2090.842,
+"end": 2092.282,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Perhaps we can't prove that the external world exists, but its existence is the best explanation of our experiences. Russell made this argument in The Problems of Philosophy. If a cat appears in one part of the room and later in another, the simplest explanation is that a real cat moved; the alternative, that cat-appearances pop in and out of existence in the right patterns, is gratuitously complicated. Jonathan Vogel develops this: the \"real world hypothesis\" is simpler and more explanatory than any skeptical hypothesis, because a skeptical hypothesis that fits all our evidence must duplicate the explanatory structure of the real-world hypothesis and then add something extra — the vat, the computer, the scientist.",
+"begin": 2093.166,
+"end": 2142.486,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections. Why think that simplicity and explanatory power are guides to truth, rather than to convenience? And that question may itself be one the skeptic can press.",
+"begin": 2142.846,
+"end": 2153.966,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Naturalist and pragmatist responses",
+"begin": 2154.686,
+"end": 2157.006,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Hume held that skeptical arguments are unanswerable in theory and irrelevant in practice. \"Nature is always too strong for principle.\" After a few hours of backgammon and conversation with friends, skeptical doubts seem \"cold, and strained, and ridiculous.\"",
+"begin": 2157.871,
+"end": 2175.791,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Peirce distinguished real doubt, which arises from a specific surprise or problem and motivates inquiry, from \"paper doubt,\" which is merely professed. You cannot doubt something simply by resolving to. Descartes' universal doubt is a pretense.",
+"begin": 2176.191,
+"end": 2192.671,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Quine argued that skeptical doubts arise from within science: we know about illusions and the unreliability of the senses only because science has taught us. So the skeptic is \"overreacting,\" and we are entitled to use science to answer the doubts it raises. This is the naturalized approach.",
+"begin": 2192.911,
+"end": 2211.951,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "P F Strawson argued that belief in the external world, like belief in other minds and induction, is not something we have the option of giving up, so arguments for or against it are \"idle.\"",
+"begin": 2212.191,
+"end": 2224.111,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Transcendental arguments try to show that what the skeptic doubts is a necessary condition of the skeptic's own thought or experience. For example, self-conscious experience requires an objective world distinct from one's experiences of it. Barry Stroud argued that such arguments at best establish that we must believe in an external world, not that it exists.",
+"begin": 2224.511,
+"end": 2247.311,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Diagnosing skepticism's appeal",
+"begin": 2247.791,
+"end": 2249.951,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Some philosophers give up on refuting the skeptic on the skeptic's own terms. If you accept only premises the skeptic grants, you will never climb out of the pit. Instead, they start from common sense and try to explain why skeptical arguments are so seductive, as a defense against them.",
+"begin": 2250.815,
+"end": 2269.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "An immune system gone wrong. Timothy Williamson has compared skepticism to an autoimmune disease. We have a healthy capacity to suspend a particular belief temporarily and check whether it fits with the rest of what we know; it weeds out inconsistent and ungrounded beliefs. Skepticism is this protective mechanism running out of control: once we suspend belief in the entire outer world, nothing is left to check anything against, and the reasonable beliefs can no longer be supported.",
+"begin": 2270.255,
+"end": 2302.015,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A questionable model of the mind. Many skeptical arguments assume a model inherited from the Stoics: we first receive impressions, and then, as a separate step, decide whether to accept them. If dreams and waking experiences deliver indistinguishable impressions, the second step seems hopeless. Direct realism, disjunctivism, and externalism all reject parts of this model.",
+"begin": 2302.495,
+"end": 2328.215,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Psychological biases. Thinking about a possibility of error, even a remote one, sharply reduces our willingness to credit people with knowledge, perhaps through a bias that makes it hard to evaluate someone who hasn't considered the possibility we have in mind.",
+"begin": 2328.735,
+"end": 2345.095,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "A summary of the responses",
+"begin": 2345.615,
+"end": 2347.295,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Mooreanism or neo-Mooreanism. Premise rejected in the closure argument: Premise one — we do know we're not brains in vats. Main figures: Moore, Sosa, Pryor. Main cost: Seems question-begging.",
+"begin": 2348.173,
+"end": 2365.133,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Denying closure. Premise rejected in the closure argument: Premise two. Main figures: Dretske, Nozick. Main cost: Abominable conjunctions.",
+"begin": 2365.533,
+"end": 2377.613,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Relevant alternatives. Premise rejected in the closure argument: Premise one or two, depending on version. Main figures: Dretske, Goldman, Stine. Main cost: What makes alternatives relevant?",
+"begin": 2377.933,
+"end": 2392.653,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contextualism. Premise rejected in the closure argument: Neither absolutely; the argument is sound only in high-standards contexts. Main figures: DeRose, Cohen, Lewis. Main cost: Semantic blindness.",
+"begin": 2393.133,
+"end": 2409.733,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Subject-sensitive invariantism. Premise rejected in the closure argument: Premise one in low-stakes situations. Main figures: Hawthorne, Stanley. Main cost: Knowledge varies with practical interests.",
+"begin": 2410.093,
+"end": 2425.053,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Semantic externalism. Premise rejected in the closure argument: Premise one. Main figures: Putnam. Main cost: Limited scope.",
+"begin": 2425.613,
+"end": 2436.253,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Hinge epistemology. Premise rejected in the closure argument: Premise one is misconceived; hinges aren't objects of knowledge. Main figures: Wittgenstein, Wright, Pritchard, Coliva. Main cost: Concession? Relativism?",
+"begin": 2436.573,
+"end": 2453.973,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Dogmatism. Premise rejected in the closure argument: Premise one. Main figures: Pryor. Main cost: Easy knowledge; bootstrapping.",
+"begin": 2454.173,
+"end": 2465.173,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Epistemological disjunctivism. Premise rejected in the closure argument: Premise one. Main figures: McDowell, Pritchard. Main cost: Access problem.",
+"begin": 2465.453,
+"end": 2477.493,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Abduction. Premise rejected in the closure argument: Premise one. Main figures: Russell, Vogel, BonJour. Main cost: Is simplicity truth-conducive?",
+"begin": 2477.773,
+"end": 2490.333,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Skepticism. Premise rejected in the closure argument: None: accept the conclusion. Main figures: Sextus, Unger, Fogelin. Main cost: We know nothing.",
+"begin": 2490.653,
+"end": 2503.453,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Skepticism about induction, other minds, and the past",
+"begin": 2504.725,
+"end": 2508.565,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The external world is not the only target.",
+"begin": 2509.636,
+"end": 2512.516,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Induction. Hume's problem: nothing in our past experience logically guarantees that the future will resemble the past, and any argument from experience that it will is circular. This is covered in detail in Hume's problem of induction.",
+"begin": 2513.156,
+"end": 2528.516,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Other minds. You directly experience your own thoughts and feelings. You observe only other people's behavior. How do you know they have minds at all, rather than being sophisticated automata, or \"philosophical zombies\" behaving exactly as if conscious but with no inner experience?",
+"begin": 2529.156,
+"end": 2547.276,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The argument from analogy — John Stuart Mill: others are like me in body and behavior; in my case, behavior is caused by mental states; so probably theirs is too. Objection: an inductive generalization from a single case, my own, is very weak.",
+"begin": 2547.636,
+"end": 2565.556,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Inference to the best explanation: the hypothesis that others have minds best explains their behavior.",
+"begin": 2566.196,
+"end": 2572.516,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Wittgensteinian responses: mental concepts are learned and applied on the basis of behavioral criteria; the skeptic's question misunderstands how they work. We do not infer that someone is in pain from their screaming; we see their pain.",
+"begin": 2572.836,
+"end": 2588.196,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The problem of other minds has taken on new life with artificial intelligence. When a chatbot produces fluent, apparently emotional language, is there anyone \"home\"? The behavioral criteria that serve us well with humans may not transfer. This is an open question.",
+"begin": 2588.276,
+"end": 2605.596,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The past. Bertrand Russell: \"There is no logical impossibility in the hypothesis that the world sprang into being five minutes ago, exactly as it then was, with a population that 'remembered' a wholly unreal past.\" Every memory, record, fossil, and photograph would be exactly as it is now. So how do we know the five-minute hypothesis is false? The responses parallel those for the external world. God created the world recently but with the appearance of age, including fossils and Adam's navel. It is unfalsifiable by design, which is exactly what is wrong with it as a scientific hypothesis.",
+"begin": 2605.956,
+"end": 2645.556,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Reason itself. In the Treatise — \"Of scepticism with regard to reason\" — Hume argued that since we know our reasoning is fallible, we should lower our confidence in any conclusion to account for the possibility of error; then lower it again for the possibility of error in that assessment; and so on, until nothing is left. He thought only nature saves us from this regress. The modern debate about higher-order evidence revisits this issue.",
+"begin": 2646.276,
+"end": 2674.156,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Morality. Moral skepticism holds that we have no moral knowledge, either because there are no moral facts or because we could not know them.",
+"begin": 2674.516,
+"end": 2683.396,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "The simulation argument",
+"begin": 2684.578,
+"end": 2686.098,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The philosopher Nick Bostrom offered an argument that looks like skepticism but is structured differently. He argued that at least one of the following is true.",
+"begin": 2687.19,
+"end": 2696.63,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Almost all civilizations at our level of development go extinct before becoming technologically mature — \"posthuman\".",
+"begin": 2697.27,
+"end": 2706.15,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Almost no technologically mature civilizations are interested in running detailed simulations of their ancestors.",
+"begin": 2706.23,
+"end": 2714.03,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. We are almost certainly living in a computer simulation.",
+"begin": 2714.31,
+"end": 2718.47,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The reasoning: if and are false, then mature civilizations will run enormous numbers of ancestor simulations, and simulated minds like ours will vastly outnumber non-simulated ones. By a principle of indifference, you should then think it very likely that you are one of the simulated ones.",
+"begin": 2719.11,
+"end": 2738.07,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The simulation argument differs from the brain in a vat argument in two ways. It is probabilistic, not a mere possibility claim, and it does not conclude that we are simulated, only that one of the three disjuncts is true. David Chalmers argues that even if we are in a simulation, most of our beliefs are true. The simulation hypothesis is a hypothesis about what the physical world is made of, computation, not a hypothesis that the physical world is unreal. On this view, tables are real; they are just digital.",
+"begin": 2738.63,
+"end": 2773.19,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The argument is a useful exercise in evaluating reasoning. It is analyzed step by step in Case study four.",
+"begin": 2773.27,
+"end": 2780.71,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Healthy and corrosive skepticism",
+"begin": 2781.989,
+"end": 2784.389,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Philosophical skepticism is a theoretical puzzle. In everyday life, the word \"skeptic\" names several very different attitudes.",
+"begin": 2785.463,
+"end": 2794.023,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Scientific, or organized, skepticism is the practice of proportioning belief to evidence, withholding belief when evidence is inadequate, and holding conclusions provisionally. Carl Sagan, Martin Gardner, and the founders of the Committee for the Scientific Investigation of Claims of the Paranormal — nineteen seventy-six, now the Committee for Skeptical Inquiry — used \"skepticism\" in this sense. The sociologist Robert K. Merton listed organized skepticism among the four norms of science. This is the healthy kind. It applies to particular claims, on the basis of specific reasons, and its conclusions are revisable.",
+"begin": 2794.583,
+"end": 2834.503,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Cynicism is a blanket distrust of all sources and institutions. It feels like skepticism, but it is lazy: it requires no investigation. Paradoxically, people who distrust all mainstream sources often become highly credulous toward alternative ones. Distrusting everything gives you no way to distinguish better sources from worse.",
+"begin": 2835.223,
+"end": 2857.783,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Denialism is the selective, motivated rejection of well-established findings: that smoking causes cancer, that HIV causes AIDS, that the Earth is warming because of human activity. Pascal Diethelm and Martin McKee identified five characteristic tactics, later summarized by the researcher John Cook as FLICC.",
+"begin": 2858.423,
+"end": 2881.543,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fake experts: presenting people without relevant expertise as authorities.",
+"begin": 2882.263,
+"end": 2887.223,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Logical fallacies: straw men, red herrings, false analogies.",
+"begin": 2887.783,
+"end": 2892.503,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Impossible expectations: demanding a level of certainty science can never provide.",
+"begin": 2892.983,
+"end": 2898.783,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Cherry picking: highlighting the few studies or data points that fit.",
+"begin": 2899.063,
+"end": 2903.503,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Conspiracy theories: claiming the consensus is the product of a cover-up.",
+"begin": 2903.783,
+"end": 2908.863,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Manufactured doubt. Naomi Oreskes and Erik Conway documented how the tobacco industry, and later others, deliberately funded doubt about scientific findings. A nineteen sixty-nine memo by an executive of the Brown and Williamson tobacco company stated: \"Doubt is our product since it is the best means of competing with the 'body of fact' that exists in the mind of the general public.\" The strategy does not require proving that smoking is safe. It requires only persuading the public that \"the science isn't settled.\"",
+"begin": 2909.303,
+"end": 2942.503,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "How to tell healthy skepticism from its imitations",
+"begin": 2943.383,
+"end": 2946.583,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Symmetry test. Does the skeptic apply the same standards to claims they like as to claims they dislike? Demanding overwhelming proof for unwelcome conclusions while accepting welcome ones on thin evidence is a double standard. The blogger Scott Alexander coined the phrase \"isolated demands for rigor\" for this pattern.",
+"begin": 2947.448,
+"end": 2968.488,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Specificity test. Is the doubt based on specific reasons — a flaw in the study, a conflict of interest, a failed replication — or on the bare possibility of error? \"You can't be one hundred percent sure\" is true of every empirical claim, so it cannot discriminate between good and bad ones. Demanding certainty is the impossible-expectations tactic, a form of the nirvana fallacy.",
+"begin": 2969.048,
+"end": 2995.368,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Revisability test. What evidence would the skeptic accept? If no possible evidence would change their mind, the doubt is not skepticism but dogma.",
+"begin": 2996.008,
+"end": 3006.728,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Alternative test. Does the skeptic hold the alternative view to the same standard? Doubting the consensus while accepting a fringe alternative on much weaker evidence is not skepticism.",
+"begin": 3007.368,
+"end": 3019.808,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Consequences test. Does the doubt, if applied consistently, destroy knowledge the skeptic relies on every day? The philosopher's skeptical arguments are a reminder that global doubt proves too much. If \"you can't rule out that the data are fabricated\" were enough to reject climate science, it would also be enough to reject every medical treatment the skeptic uses.",
+"begin": 3020.168,
+"end": 3043.768,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "The lesson of philosophical skepticism for critical thinking.",
+"begin": 3044.488,
+"end": 3048.168,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Philosophical skepticism shows that certainty is almost never available. It does not show that all beliefs are equally reasonable. The fact that we can't rule out being brains in vats gives no reason to prefer one conspiracy theory over one scientific theory, since the skeptical hypothesis undermines both equally. Knowledge, as most epistemologists understand it, is compatible with the possibility of error. The practical question is never \"Could this be wrong?\" — yes, always — but \"How strong is the evidence, compared with the alternatives?\"",
+"begin": 3048.829,
+"end": 3085.389,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 3088.744,
+"end": 3089.544,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 3090.625,
+"end": 3105.665,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. State the closure argument for skepticism and identify which premise each of these rejects: Moore, Nozick, the contextualist.",
+"begin": 3106.534,
+"end": 3117.174,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. I don't know I'm not a brain in a vat. If I know I have hands, I know I'm not a brain in a vat. So I don't know I have hands. Moore rejects: I know I have hands, so by closure I know I'm not a brain in a vat. Nozick rejects: closure fails. The contextualist says the argument is sound in high-standards contexts and is false in ordinary ones, so the conclusion doesn't threaten ordinary knowledge claims.",
+"begin": 3122.26,
+"end": 3154.5,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. How does the Pyrrhonist answer the charge that one cannot live without beliefs?",
+"begin": 3155.383,
+"end": 3161.383,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. The Pyrrhonist lives by appearances, following nature, feelings, customs, and skills, without asserting that things really are as they appear. He eats because he is hungry and food appears nourishing, not because he dogmatically believes food nourishes.",
+"begin": 3166.459,
+"end": 3185.419,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. Explain DeRose's bank cases. How does contextualism explain them? How does subject-sensitive invariantism explain them differently?",
+"begin": 3186.286,
+"end": 3196.846,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. In the low-stakes case, \"I know the bank will be open tomorrow\" seems true; in the high-stakes case, with the same evidence, \"I don't know\" seems true. Contextualism: the attributor's context raises the standards for \"know\" in the high-stakes case, so the sentence expresses a different proposition. Subject-sensitive invariantism: \"know\" means the same, but whether the subject knows depends on the subject's stakes, so Keith actually knows in Case A and doesn't know in Case B.",
+"begin": 3201.933,
+"end": 3236.653,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. What is Putnam's argument that we are not brains in vats, and what is one limitation?",
+"begin": 3237.538,
+"end": 3244.738,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. By semantic externalism, a lifelong brain in a vat's word \"vat\" refers to simulated vats, so its thought \"I am a brain in a vat\" is false; if I'm not a brain in a vat, the thought is also false; so it is false either way. Limitation: it doesn't apply to a recently envatted brain, whose words still refer to real vats. It also may not rule out other skeptical scenarios.",
+"begin": 3249.816,
+"end": 3278.696,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. What is the \"easy knowledge\" problem for dogmatism?",
+"begin": 3279.569,
+"end": 3284.609,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. If a perceptual experience of p immediately justifies p without prior justification that one's perception is working, then one can use perceptions to justify beliefs that one's perception is not being fooled. The table looks red, so it's red, so it's not a white table under red light. Or one can bootstrap a source's reliability from its own outputs — Vogel's gas gauge. This seems illegitimately easy.",
+"begin": 3289.678,
+"end": 3319.438,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. A commentator says, \"You can't prove that the new medicine is completely safe, so it's reckless to approve it.\" Using this chapter, diagnose the argument.",
+"begin": 3320.32,
+"end": 3332.32,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. It demands certainty, impossible expectations or nirvana fallacy, and implicitly relies on infallibilism: if knowledge or justified action required ruling out every possibility of harm, no medicine, food, or activity could ever be approved. The relevant question is comparative: how strong is the evidence of safety and benefit, relative to the risks of the alternatives — including not treating? The argument also fails the consequences test: applied consistently, it would condemn the treatments the commentator already accepts.",
+"begin": 3337.404,
+"end": 3374.204,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. How does hinge epistemology respond to the skeptic, and what is one worry about it?",
+"begin": 3375.073,
+"end": 3382.033,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. It holds that certain propositions — such as \"I have hands\" or \"the world has existed for a long time\" — are not conclusions from evidence but the framework that makes evidence and doubt possible; doubting them is not a coherent move in the practice of giving reasons. Worries: it seems to concede that we don't know the hinges; and if different communities have different hinges, it may lead to relativism and to deep disagreements that reason cannot resolve.",
+"begin": 3387.115,
+"end": 3420.155,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. Why is Bostrom's simulation argument different from the brain-in-a-vat argument?",
+"begin": 3421.022,
+"end": 3427.742,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. The brain in a vat argument relies on the mere possibility of an undetectable scenario and concludes we lack knowledge. Bostrom's argument is probabilistic and disjunctive: it concludes that at least one of three claims is true, and only one of them is that we are probably simulated. Also, following Chalmers, being in a simulation might not make most of our beliefs false.",
+"begin": 3432.751,
+"end": 3459.311,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter eight",
+"begin": 3462.661,
+"end": 3464.101,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter eight. Next we turn from certainty to probability: how to reason well when you can't be sure. Chapter nine covers the problem of induction, and the power of Bayes' theorem.",
+"begin": 3465.195,
+"end": 3479.035,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 5.825,
+"lines": [
+0,
+1
+],
+"request_id": "1JCKJNWmbWH11EIBRqor"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 7.053,
+"end": 16.457,
+"lines": [
+1,
+2
+],
+"request_id": "HkSoHj4whWna2PtvfJy9"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 17.006,
+"end": 21.917,
+"lines": [
+2,
+3
+],
+"request_id": "tSUy6S2HKWkcBgwWoplE"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 22.753,
+"end": 28.16,
+"lines": [
+3,
+4
+],
+"request_id": "gUQpJItcLhxaGKCD6xQu"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 28.709,
+"end": 33.776,
+"lines": [
+4,
+5
+],
+"request_id": "VbqvVtUYyCwWajHFY65N"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 34.612,
+"end": 86.256,
+"lines": [
+5,
+7
+],
+"request_id": "iwg0bP6oIik4VsnbaDnD"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 86.883,
+"end": 129.802,
+"lines": [
+7,
+10
+],
+"request_id": "dwSau2dlY2SkzDfxE05L"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 131.03,
+"end": 132.833,
+"lines": [
+10,
+11
+],
+"request_id": "gbUBxygEsRUdiaHHHcep"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 133.878,
+"end": 184.242,
+"lines": [
+11,
+13
+],
+"request_id": "IVmfIeuiNLTIzBeQyVWy"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 185.469,
+"end": 187.35,
+"lines": [
+13,
+14
+],
+"request_id": "1x5QA3L2T7L5LmZsud9o"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 188.395,
+"end": 297.561,
+"lines": [
+14,
+27
+],
+"request_id": "840azXpGuqHRlYk7EoqM"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 298.789,
+"end": 300.434,
+"lines": [
+27,
+28
+],
+"request_id": "PN1WxFmeKGgzEbxILYsG"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 301.479,
+"end": 306.73,
+"lines": [
+28,
+29
+],
+"request_id": "2Kr95qwfqNoMxn1xh9hZ"
+},
+{
+"chunk": 14,
+"voice": "third",
+"begin": 307.566,
+"end": 324.232,
+"lines": [
+29,
+30
+],
+"request_id": "srcuqW2JAUBA6SsWGlpB"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 324.78,
+"end": 578.978,
+"lines": [
+30,
+52
+],
+"request_id": "d1Ijak83FG5Ai0Zh8LXg"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 580.206,
+"end": 581.851,
+"lines": [
+52,
+53
+],
+"request_id": "kkK5x7tcv96Xqs304HaQ"
+},
+{
+"chunk": 17,
+"voice": "main",
+"begin": 582.896,
+"end": 678.217,
+"lines": [
+53,
+60
+],
+"request_id": "Vs0a631JaEorBh8kuUro"
+},
+{
+"chunk": 18,
+"voice": "second",
+"begin": 679.445,
+"end": 680.934,
+"lines": [
+60,
+61
+],
+"request_id": "EvJQLGdFp1AzgwCcJGxT"
+},
+{
+"chunk": 19,
+"voice": "second",
+"begin": 681.979,
+"end": 758.335,
+"lines": [
+61,
+65
+],
+"request_id": "8pUVUdqSf58fR06SwHgM"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 759.562,
+"end": 760.869,
+"lines": [
+65,
+66
+],
+"request_id": "A6m6XZMYYbKHFFHKQyeM"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 761.913,
+"end": 771.239,
+"lines": [
+66,
+68
+],
+"request_id": "I7fCF9wmc4tvL8oOuJ0F"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 771.866,
+"end": 896.549,
+"lines": [
+68,
+78
+],
+"request_id": "x3jbFtduSAyuzMpUV6v0"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 897.776,
+"end": 899.579,
+"lines": [
+78,
+79
+],
+"request_id": "JXNWXgeQZo72oN6TQjIj"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 900.624,
+"end": 901.538,
+"lines": [
+79,
+80
+],
+"request_id": "6IM3obDhociujaM1xqeM"
+},
+{
+"chunk": 25,
+"voice": "main",
+"begin": 902.374,
+"end": 1094.583,
+"lines": [
+80,
+96
+],
+"request_id": "fEN5KWMwxhpNyYfoxt03"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 1095.419,
+"end": 1149.858,
+"lines": [
+96,
+99
+],
+"request_id": "0nYjbAr4LZ6ZHs5hHkl0"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1150.694,
+"end": 1262.733,
+"lines": [
+99,
+107
+],
+"request_id": "65ozshr8Vl4wrK8fq10J"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1263.569,
+"end": 1540.493,
+"lines": [
+107,
+120
+],
+"request_id": "ltgB5ot14W8LVhjnm3ru"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1540.493,
+"end": 1553.319,
+"lines": [
+120,
+122
+],
+"request_id": "kx2prd7una7JDJL7RmKG"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1554.155,
+"end": 1720.033,
+"lines": [
+122,
+127
+],
+"request_id": "vAtvCOoxwDxSMERIvJSl"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1720.869,
+"end": 1811.226,
+"lines": [
+127,
+134
+],
+"request_id": "RJ4bRo0bHFEwoVwuflwa"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1812.062,
+"end": 1947.455,
+"lines": [
+134,
+144
+],
+"request_id": "cfcfRns4NuptLZBDXPo4"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1948.291,
+"end": 2034.887,
+"lines": [
+144,
+147
+],
+"request_id": "ZvrvVp5Yt9BGr45AXrBd"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 2035.722,
+"end": 2092.33,
+"lines": [
+147,
+150
+],
+"request_id": "tN8zZpGX1UlmAc6evzwt"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 2093.166,
+"end": 2157.035,
+"lines": [
+150,
+153
+],
+"request_id": "fuZXck91FHPcQDhyQxg8"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 2157.871,
+"end": 2249.979,
+"lines": [
+153,
+159
+],
+"request_id": "5LYzHgJTjUHVBzNPhglG"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 2250.815,
+"end": 2347.337,
+"lines": [
+159,
+164
+],
+"request_id": "MxUsOElm2Zk2s4bMvJJm"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 2348.173,
+"end": 2503.497,
+"lines": [
+164,
+175
+],
+"request_id": "uMu764T5G1q7FKyRixhX"
+},
+{
+"chunk": 39,
+"voice": "second",
+"begin": 2504.725,
+"end": 2508.591,
+"lines": [
+175,
+176
+],
+"request_id": "MzQQ4JCS3l06tOr2cykm"
+},
+{
+"chunk": 40,
+"voice": "second",
+"begin": 2509.636,
+"end": 2683.35,
+"lines": [
+176,
+186
+],
+"request_id": "vqnKsZcnamjyxZjlyGCH"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 2684.578,
+"end": 2686.145,
+"lines": [
+186,
+187
+],
+"request_id": "d4cMKy2oDcgw9XIl8m4R"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 2687.19,
+"end": 2780.761,
+"lines": [
+187,
+194
+],
+"request_id": "GsAK9NTXZDCUrLM2BWu5"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 2781.989,
+"end": 2784.418,
+"lines": [
+194,
+195
+],
+"request_id": "KFZQElcb4ON0VDcTvTLF"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2785.463,
+"end": 2946.612,
+"lines": [
+195,
+206
+],
+"request_id": "v31uDoH1hVLj8llzLUU3"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2947.448,
+"end": 3048.202,
+"lines": [
+206,
+212
+],
+"request_id": "2tHHaUDSSJUyrvYZaKJn"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 3048.829,
+"end": 3085.427,
+"lines": [
+212,
+213
+],
+"request_id": "jx1qX0qWIoiMkgQ0z0Qi"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 3088.744,
+"end": 3089.58,
+"lines": [
+213,
+214
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 48,
+"voice": "main",
+"begin": 3090.625,
+"end": 3105.698,
+"lines": [
+214,
+215
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 49,
+"voice": "second",
+"begin": 3106.534,
+"end": 3117.218,
+"lines": [
+215,
+216
+],
+"request_id": "KcwScRR8aHNVksrJ68kZ"
+},
+{
+"chunk": 50,
+"voice": "main",
+"begin": 3122.26,
+"end": 3154.547,
+"lines": [
+216,
+217
+],
+"request_id": "7uoKalgMQlKDiAm4Fpfl"
+},
+{
+"chunk": 51,
+"voice": "second",
+"begin": 3155.383,
+"end": 3161.417,
+"lines": [
+217,
+218
+],
+"request_id": "ipVkESSgrTpeUUZHcU27"
+},
+{
+"chunk": 52,
+"voice": "main",
+"begin": 3166.459,
+"end": 3185.45,
+"lines": [
+218,
+219
+],
+"request_id": "zGNnCMuy7dypIvTMBTy2"
+},
+{
+"chunk": 53,
+"voice": "second",
+"begin": 3186.286,
+"end": 3196.891,
+"lines": [
+219,
+220
+],
+"request_id": "OEV7knDWQAOacSx1aTox"
+},
+{
+"chunk": 54,
+"voice": "main",
+"begin": 3201.933,
+"end": 3236.702,
+"lines": [
+220,
+221
+],
+"request_id": "Ey7squJGMlrJ1LjyGKPk"
+},
+{
+"chunk": 55,
+"voice": "second",
+"begin": 3237.538,
+"end": 3244.774,
+"lines": [
+221,
+222
+],
+"request_id": "Z1BgM59xOOLZtLaff42y"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 3249.816,
+"end": 3278.733,
+"lines": [
+222,
+223
+],
+"request_id": "QKQnESvEB0hHSxFguYgZ"
+},
+{
+"chunk": 57,
+"voice": "second",
+"begin": 3279.569,
+"end": 3284.637,
+"lines": [
+223,
+224
+],
+"request_id": "ZiYt53KsAAm4DYLHfzoR"
+},
+{
+"chunk": 58,
+"voice": "main",
+"begin": 3289.678,
+"end": 3319.484,
+"lines": [
+224,
+225
+],
+"request_id": "1dyPeWG6rlqXG877Y3ug"
+},
+{
+"chunk": 59,
+"voice": "second",
+"begin": 3320.32,
+"end": 3332.362,
+"lines": [
+225,
+226
+],
+"request_id": "8UnXrNquwd3ca5jK4VBd"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 3337.404,
+"end": 3374.237,
+"lines": [
+226,
+227
+],
+"request_id": "DgkWSeTrgx7Q5Tpf5MYs"
+},
+{
+"chunk": 61,
+"voice": "second",
+"begin": 3375.073,
+"end": 3382.073,
+"lines": [
+227,
+228
+],
+"request_id": "jhcoC2Rt7b8Gl47gomEZ"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 3387.115,
+"end": 3420.186,
+"lines": [
+228,
+229
+],
+"request_id": "CqZRKn4XxphRG9JIWjHa"
+},
+{
+"chunk": 63,
+"voice": "second",
+"begin": 3421.022,
+"end": 3427.709,
+"lines": [
+229,
+230
+],
+"request_id": "AQAmEF7CYVBrnYsCbecW"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3432.751,
+"end": 3459.344,
+"lines": [
+230,
+231
+],
+"request_id": "U6kIUK1RXD4ksA4kM5fZ"
+},
+{
+"chunk": 65,
+"voice": "main",
+"begin": 3462.661,
+"end": 3464.15,
+"lines": [
+231,
+232
+],
+"request_id": "vyEIMAmJdmCEjAeKQqlt"
+},
+{
+"chunk": 66,
+"voice": "main",
+"begin": 3465.195,
+"end": 3478.988,
+"lines": [
+232,
+233
+],
+"request_id": "MUHoqkWpXEcIjoC7UHjj"
+}
+]
+}

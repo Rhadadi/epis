@@ -508,7 +508,7 @@ window.TRACKS = [
   "file": "08-skepticism.mp3",
   "text": "../08-skepticism.md",
   "title": "Chapter 8 — Skepticism and Its Answers",
-  "duration": 3212.4,
+  "duration": 3480.6,
   "sections": [
    {
     "title": "Chapter eight. Skepticism and Its Answers.",
@@ -516,51 +516,51 @@ window.TRACKS = [
    },
    {
     "title": "Why study skepticism?",
-    "start": 118.6
+    "start": 131.0
    },
    {
     "title": "Varieties of skepticism",
-    "start": 171.1
+    "start": 185.4
    },
    {
     "title": "Pyrrhonian skepticism",
-    "start": 280.6
+    "start": 298.8
    },
    {
     "title": "Cartesian skepticism",
-    "start": 534.0
+    "start": 580.2
    },
    {
     "title": "The brain in a vat",
-    "start": 624.6
+    "start": 679.4
    },
    {
     "title": "The closure argument",
-    "start": 703.0
+    "start": 759.5
    },
    {
     "title": "Responses to skepticism",
-    "start": 828.3
+    "start": 897.8
    },
    {
     "title": "Skepticism about induction, other minds, and the past",
-    "start": 2299.0
+    "start": 2504.7
    },
    {
     "title": "The simulation argument",
-    "start": 2472.5
+    "start": 2684.6
    },
    {
     "title": "Healthy and corrosive skepticism",
-    "start": 2568.1
+    "start": 2782.0
    },
    {
     "title": "Quick review",
-    "start": 2862.4
+    "start": 3086.4
    },
    {
     "title": "End of chapter eight",
-    "start": 3194.2
+    "start": 3460.4
    }
   ]
  },
