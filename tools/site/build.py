@@ -1808,7 +1808,7 @@ def en_chapters_phrase(nums, fa=False):
             runs.append((start, n))
             start = None
     d = (lambda x: num(x)) if fa else str
-    parts = [d(a) if a == b else f"{d(a)}–{d(b)}" for a, b in runs]
+    parts = [x for a, b in runs for x in ([d(a)] if a == b else [d(a), d(b)] if b == a + 1 else [f"{d(a)}–{d(b)}"])]
     if fa:
         return ("فصلِ " if len(nums) == 1 else "فصل‌های ") + ("، ".join(parts[:-1]) + " و " + parts[-1] if len(parts) > 1 else parts[0])
     return ("chapter " if len(nums) == 1 else "chapters ") + (", ".join(parts[:-1]) + " and " + parts[-1] if len(parts) > 1 else parts[0])
