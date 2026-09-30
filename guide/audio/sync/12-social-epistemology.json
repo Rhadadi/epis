@@ -1,0 +1,2804 @@
+{
+"file": "12-social-epistemology.mp3",
+"title": "Chapter 12 — Social Epistemology: Knowing Together",
+"duration": 3884.748,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter twelve. Social Epistemology: Knowing Together.",
+"begin": 2.116,
+"end": 6.916,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"He who knows only his own side of the case, knows little of that.\"",
+"begin": 8.176,
+"end": 12.896,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "John Stuart Mill, On Liberty.",
+"begin": 13.479,
+"end": 16.199,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"The essence of journalism is a discipline of verification.\"",
+"begin": 17.084,
+"end": 21.404,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Bill Kovach and Tom Rosenstiel, The Elements of Journalism.",
+"begin": 21.917,
+"end": 26.477,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Traditional epistemology pictured a lone knower: Descartes in his room, doubting everything and rebuilding knowledge from his own resources. But almost nothing you know was acquired that way. You know because you trust teachers, textbooks, doctors, journalists, maps, encyclopedias, scientists, and friends. You live inside a vast social system for producing and sharing knowledge.",
+"begin": 27.35,
+"end": 54.63,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Social epistemology studies that system. It asks: When should we trust others? How can a non-expert choose between experts? What should you do when someone as smart and well-informed as you disagrees? How do communities go wrong, through echo chambers, cascades, propaganda, and prejudice? How should institutions be designed to produce knowledge? These are the questions that matter most for understanding public debates.",
+"begin": 55.27,
+"end": 83.83,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Almost everything you know, you know because someone told you. This chapter is about knowing together.",
+"begin": 84.506,
+"end": 91.706,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "We'll ask when it's rational to trust others, how a non-expert can choose between experts, and what to do when a thoughtful person disagrees with you. We'll look at epistemic injustice, at echo chambers and information cascades, at the wisdom and the madness of crowds, and at misinformation, propaganda, and conspiracy theories.",
+"begin": 91.946,
+"end": 114.026,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "We'll finish with the institutions that let a whole society know things, and with a new question: what happens to our knowledge when we rely on artificial intelligence?",
+"begin": 114.266,
+"end": 124.346,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Why knowledge is social",
+"begin": 125.623,
+"end": 127.383,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "John Locke expressed the individualist ideal: \"we may as rationally hope to see with other men's eyes, as to know by other men's understanding\" — Essay. On this view, taking something on someone else's word is at best a substitute for knowledge.",
+"begin": 128.47,
+"end": 145.75,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "John Hardwig argued the opposite. He described a physics experiment reported in a paper with ninety-nine authors, in which no single author could vouch for every part of the work; each relied on the others' competence and honesty. Since then, the scale has grown: the twenty twelve papers announcing the discovery of the Higgs boson at CERN each had thousands of authors. Hardwig concluded that rational belief often requires deference: a rational layperson recognizes that they are epistemically dependent on experts, and appropriately defers to them. In a complex society, refusing to trust anyone is not autonomy but ignorance.",
+"begin": 146.07,
+"end": 187.51,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Several lines of thought support the social view.",
+"begin": 188.07,
+"end": 190.63,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Testimony is a basic source of knowledge.",
+"begin": 191.11,
+"end": 193.83,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The division of cognitive labor: a scientific community does better when its members pursue different approaches, even when some individuals are following approaches that seem individually less promising.",
+"begin": 194.07,
+"end": 206.27,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Veritistic social epistemology — Alvin Goldman, Knowledge in a Social World, nineteen ninety-nine: social practices and institutions can be evaluated by how well they promote true belief and reduce error across a community.",
+"begin": 206.55,
+"end": 221.91,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Knowledge as a social concept. Edward Craig's account suggests that the concept of knowledge exists in order to identify good informants.",
+"begin": 222.23,
+"end": 231.27,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Trust and epistemic dependence",
+"begin": 232.542,
+"end": 234.862,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "To trust someone is to accept vulnerability to them. Annette Baier distinguished trust from mere reliance: I rely on my alarm clock, but I trust my friend. When trust is betrayed, we feel not just disappointment, as with a broken clock, but betrayal, because we expected goodwill.",
+"begin": 235.938,
+"end": 256.578,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Onora O'Neill's BBC Reith Lectures made a point that has become central to discussions of public trust: what matters is not trust as an attitude, but trustworthiness as a property of those we trust. We should aim for intelligent trust, which is placed in those who are actually trustworthy and withheld from those who aren't. She also argued that demands for transparency do not automatically produce trustworthiness: publishing masses of information that no one can assess may make deception easier, not harder.",
+"begin": 256.698,
+"end": 289.858,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "So the question is not \"How much should I trust?\" but \"Whom should I trust, about what, and how much?\" Trustworthiness has several components.",
+"begin": 290.178,
+"end": 300.178,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Competence: does the source know the subject?",
+"begin": 300.738,
+"end": 303.698,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Honesty: does the source say what it believes?",
+"begin": 304.258,
+"end": 307.298,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Reliability: does the source have a good track record?",
+"begin": 307.858,
+"end": 311.538,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Good faith: does the source have your interests, or the truth, at heart, rather than interests that conflict with them?",
+"begin": 311.858,
+"end": 319.058,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Elizabeth Anderson argued that ordinary people, without scientific training, can make reasonable judgments about scientific testimony by using second-order criteria that are accessible to them.",
+"begin": 319.698,
+"end": 331.458,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Expertise: Does the person have relevant credentials? Do they publish in peer-reviewed venues in the relevant field?",
+"begin": 331.618,
+"end": 340.178,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Honesty: Is there evidence of conflicts of interest, fraud, misrepresentation of others' views, or cherry-picking?",
+"begin": 340.338,
+"end": 348.898,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Epistemic responsibility: Do they respond to criticism? Do they submit their claims to peer review? Do they engage with counter-evidence, or do they evade it? Do they keep repeating claims that have been refuted?",
+"begin": 349.098,
+"end": 363.538,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Consensus: Where do most qualified experts stand? Is there a genuine consensus, or real ongoing debate among qualified people?",
+"begin": 363.618,
+"end": 374.018,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Anderson noted that these criteria can be applied by a person with a high school education and access to the internet.",
+"begin": 374.258,
+"end": 380.978,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Experts and novices",
+"begin": 382.25,
+"end": 384.01,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The novice-expert problem",
+"begin": 385.097,
+"end": 386.857,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Suppose you are not an expert, and two people presenting themselves as experts disagree. Perhaps two doctors give conflicting advice, or two economists make opposite predictions. You can't assess the evidence directly; that's why you need experts. How can you rationally decide whom to believe?",
+"begin": 387.736,
+"end": 407.336,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This is the novice or two-expert problem, posed by Alvin Goldman in \"Experts: Which Ones Should You Trust?\". Goldman identified five sources of evidence available to a novice.",
+"begin": 407.416,
+"end": 419.896,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A: Arguments presented by the contending experts. You may not be able to evaluate the substance of their arguments, but you may be able to see which expert gives better rebuttals: which one answers the other's objections directly, and which one evades them. Goldman calls this dialectical superiority. Caution: rhetorical skill is not the same as expertise.",
+"begin": 420.296,
+"end": 444.296,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "B: Agreement from other experts. How many other experts agree with each? Caution: numbers matter only if the agreeing experts are independent. A thousand followers of a single guru who accept whatever he says add no evidence beyond the guru's own. Agreement is strong evidence when experts reached their views separately, through their own examination of the evidence.",
+"begin": 445.096,
+"end": 470.176,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "C: Appraisals by meta-experts. Credentials, degrees, academic positions, publication records, professional honors, and ratings by other experts. These are imperfect but real signals.",
+"begin": 470.696,
+"end": 484.856,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "D: Evidence of interests and biases. Does an expert have a financial stake, an ideological commitment, or a career investment in a particular answer? Such interests don't make someone wrong, but they are a reason for extra scrutiny.",
+"begin": 485.736,
+"end": 501.736,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "E: Track records. Goldman argued this is the most important. Even a novice can sometimes check an expert's past claims. You can't evaluate an astronomer's theory, but you can check whether the eclipse she predicted occurred. Goldman distinguishes esoteric statements, which only experts can assess, from exoteric ones, which laypeople can check, and notes that many expert claims eventually produce exoteric consequences.",
+"begin": 502.216,
+"end": 530.376,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Expertise and its limits",
+"begin": 531.336,
+"end": 533.176,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What is expertise? Harry Collins and Robert Evans distinguish contributory expertise — the ability to do the science: to design experiments, publish, advance the field — from interactional expertise — fluency in the language of a field without the ability to contribute to it, as a good science journalist or sociologist of science may have. They also warn against the \"problem of extension\": extending the right to make technical judgments to people who lack the relevant expertise.",
+"begin": 534.047,
+"end": 566.287,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Expertise has limits of domain. A great physicist is not thereby an expert in nutrition or epidemiology. There is a recurring pattern sometimes called the \"Nobel disease\": distinguished scientists who embrace poorly supported ideas outside their field. The two-time Nobel laureate Linus Pauling promoted megadoses of vitamin C for colds and cancer beyond what the evidence supported. Kary Mullis, who won the Nobel Prize for inventing the polymerase chain reaction, denied that HIV causes AIDS. The philosopher Nathan Ballantyne calls this epistemic trespassing: making judgments in a field where one lacks competence, while relying on authority earned elsewhere.",
+"begin": 566.607,
+"end": 612.167,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Expertise has limits of predictability. Philip Tetlock collected tens of thousands of predictions from hundreds of experts on political and economic questions over two decades. On long-range forecasts, the experts did little better than chance, and worse than simple statistical rules. He found a difference between hedgehogs, who \"know one big thing\" and extend it confidently, and foxes, who \"know many things,\" draw on many sources, and are comfortable with doubt. Foxes forecast better. This fits the conditions for reliable expert intuition identified by Kahneman and Klein: regular environments and rapid feedback. Politics and long-range economics offer neither.",
+"begin": 612.527,
+"end": 657.807,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Expertise is still real. In domains with established knowledge and reliable methods, such as medicine, engineering, chemistry, and structural geology, experts know vastly more than novices. The failures of expert prediction in chaotic domains do not show that expert knowledge is worthless elsewhere. Tom Nichols argues that the collapse of trust in expertise is a serious threat, and that the right response to experts' fallibility is better use of expertise, not its rejection.",
+"begin": 658.527,
+"end": 689.967,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "\"Do your own research\"",
+"begin": 690.447,
+"end": 691.967,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The slogan \"do your own research\" appeals to a real value, epistemic autonomy. But for a novice, \"research\" usually means searching the internet for claims one can't evaluate. Nathan Ballantyne, Jared Celniker, and David Dunning argue that for most people on most technical questions, the best \"research\" is research into which sources are trustworthy, not an attempt to evaluate the primary evidence. The skill that matters is source evaluation.",
+"begin": 692.767,
+"end": 724.567,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Lateral reading. Sam Wineburg and Sarah McGrew, Stanford History Education Group, compared how professional fact-checkers, historians, and university students evaluated unfamiliar websites. Students and even historians tended to read vertically, staying on the site and judging it by its appearance and content. Fact-checkers read laterally: they almost immediately opened new tabs to see what other sources said about the site and its sponsors. The fact-checkers reached better judgments faster.",
+"begin": 725.087,
+"end": 757.967,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "SIFT, a method developed by Mike Caulfield: Stop; Investigate the source; Find better coverage; Trace claims, quotes, and media to their original context.",
+"begin": 759.007,
+"end": 771.487,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Peer disagreement",
+"begin": 772.754,
+"end": 774.034,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "You carefully work out that your share of the restaurant bill is forty-three dollars. Your friend, who is just as good at mental arithmetic as you and has the same information, carefully works out that it is forty-five dollars. What should you believe?",
+"begin": 775.105,
+"end": 790.585,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This example comes from David Christensen. It introduces one of the most discussed problems in contemporary epistemology: peer disagreement. An epistemic peer on a question is someone who has roughly the same evidence and is roughly as competent at evaluating it as you are.",
+"begin": 791.025,
+"end": 808.865,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In the restaurant case, almost everyone agrees you should lower your confidence and recalculate. The hard question is what to do in cases like politics, philosophy, religion, or economics, where you disagree with intelligent, informed people and have discussed the matter at length.",
+"begin": 809.425,
+"end": 826.985,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Conciliationism",
+"begin": 827.425,
+"end": 828.625,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Conciliationism, or the equal weight view, holds that when you learn that a peer disagrees, you should move substantially toward their view, giving their opinion roughly the same weight as your own. Adam Elga and David Christensen defended versions. The key principle is independence: when assessing how much to trust your peer's judgment, you shouldn't rely on the very reasoning that is in dispute. You can't simply say, \"But my reasoning shows that the answer is forty-three dollars, so my friend must have made a mistake,\" because your friend can say exactly the same.",
+"begin": 829.492,
+"end": 865.772,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 866.292,
+"end": 867.412,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Spinelessness. Conciliationism seems to require suspending judgment on almost every contested question in politics, philosophy, and religion, since there are intelligent, informed people on every side.",
+"begin": 867.732,
+"end": 881.972,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Self-undermining. Conciliationism itself is disputed by epistemic peers. So by its own lights, conciliationists should lose confidence in conciliationism.",
+"begin": 882.052,
+"end": 893.812,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Extreme cases. If your friend says the share is four hundred fifty dollars, you can reasonably conclude that they have made a mistake. Conciliationists accept this: in extreme cases, the disagreement itself is evidence that the peer is not functioning properly on this occasion.",
+"begin": 893.892,
+"end": 912.252,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Steadfastness",
+"begin": 912.292,
+"end": 913.252,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Steadfast views hold that you may, at least sometimes, keep your belief in the face of peer disagreement. Thomas Kelly and Peter van Inwagen have defended versions. Arguments include.",
+"begin": 914.129,
+"end": 927.169,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Asymmetric access. You have direct access to your own reasoning and evidence, but not to your peer's. You know you are not joking, drunk, or careless, but you can't be sure the same is true of them.",
+"begin": 927.729,
+"end": 941.369,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The right reasons view. If your reasoning was in fact correct, the evidence supports your view, and learning that someone else reasoned badly doesn't change what the evidence supports.",
+"begin": 941.809,
+"end": 952.849,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objection. From the inside, both parties think they are the one who reasoned correctly. A rule that says \"stay steadfast if you're right\" can't be followed by anyone who is unsure whether they are right, which is to say, everyone.",
+"begin": 953.569,
+"end": 968.369,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The total evidence view",
+"begin": 969.249,
+"end": 970.689,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Thomas Kelly proposed a middle position. What you should believe depends on all your evidence: both the first-order evidence about the question and the higher-order evidence provided by the fact that a peer disagrees. Sometimes the first-order evidence is so strong that disagreement should move you only a little; sometimes it is weak, and disagreement should move you a lot. How much weight to give a peer's view depends on the case.",
+"begin": 971.572,
+"end": 999.892,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Higher-order evidence",
+"begin": 1000.372,
+"end": 1001.732,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Higher-order evidence is evidence about your own capacity to evaluate evidence. Christensen gives examples.",
+"begin": 1002.606,
+"end": 1009.966,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The hypoxic pilot. You are a pilot calculating whether you have enough fuel to reach a more distant airport. You work it out and conclude you do. Then you remember that at this altitude, you may be suffering from hypoxia, which impairs reasoning without the sufferer noticing. Your calculation seems fine to you. Should you trust it?",
+"begin": 1010.766,
+"end": 1032.686,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The drug. You are told you have been given a drug that, half the time, subtly impairs logical reasoning without your noticing.",
+"begin": 1033.566,
+"end": 1041.566,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Most people think you should lower your confidence, even though your first-order reasoning is in fact correct. But this creates puzzles. If the evidence really does support your conclusion, why should evidence about you change what you should believe about fuel? Some philosophers, Maria Lasonen-Aarnio, defend level-splitting: you may believe the conclusion while believing your evidence may not support it. Others argue that this combination, \"P, but my evidence probably doesn't support P,\" is irrational.",
+"begin": 1042.126,
+"end": 1074.286,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The practical point. We have abundant higher-order evidence about human reasoning in general: people are subject to motivated reasoning, confirmation bias, and overconfidence, especially about politically and personally charged topics. This is a reason to hold our views on such topics with less confidence than they feel as though they deserve.",
+"begin": 1075.246,
+"end": 1097.086,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Uniqueness and permissivism",
+"begin": 1098.126,
+"end": 1099.886,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Is there always exactly one rational response to a body of evidence?",
+"begin": 1100.748,
+"end": 1105.628,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The uniqueness thesis: for any body of evidence and any proposition, there is exactly one rational attitude to take. If so, when peers with the same evidence disagree, at least one of them is being irrational.",
+"begin": 1106.108,
+"end": 1120.988,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Permissivism: sometimes more than one attitude is rational. Different reasonable standards — for example, different weightings of simplicity against fit to data — can lead rational people to different conclusions from the same evidence.",
+"begin": 1121.468,
+"end": 1136.428,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If permissivism is true, reasonable disagreement is possible without anyone being irrational. That fits a common experience, but it raises a worry: if more than one belief is permitted, isn't the choice between them arbitrary?",
+"begin": 1136.668,
+"end": 1151.228,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Deep disagreement",
+"begin": 1152.188,
+"end": 1153.308,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sometimes disagreement goes down to the foundations: the parties disagree not only about a conclusion but about what counts as evidence or which sources are authoritative — scripture versus science, a party's leader versus independent media. Robert Fogelin argued that such disagreements cannot be resolved by argument, because argument requires shared standards. This connects with Wittgenstein's idea of hinge propositions.",
+"begin": 1154.194,
+"end": 1182.874,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Deep disagreements are hard, but not always hopeless. Strategies include.",
+"begin": 1183.314,
+"end": 1189.154,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Finding shared commitments, however basic, and reasoning from them.",
+"begin": 1189.474,
+"end": 1193.554,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Immanent critique: arguing from within the other person's framework, showing that it leads, by its own standards, to conclusions they reject.",
+"begin": 1194.114,
+"end": 1202.914,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Appealing to practical reasons for shared methods. Michael Lynch argues that in a pluralistic society, we have practical and political reasons to adopt public, checkable methods — observation, experiment, logic — as the common currency of debate, because they are the methods whose results can be shared across frameworks.",
+"begin": 1203.474,
+"end": 1224.794,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Patience and relationships, since change in fundamental frameworks tends to happen through trust built over time, not through single arguments.",
+"begin": 1225.154,
+"end": 1233.874,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Why reasonable people disagree",
+"begin": 1235.148,
+"end": 1237.228,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "John Rawls, in Political Liberalism, gave a list he called the burdens of judgment: reasons why sincere, reasonable people, using their reason conscientiously, will still disagree. This list is invaluable for approaching disagreements charitably.",
+"begin": 1238.309,
+"end": 1255.109,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. The evidence is conflicting and complex, and hard to assess.",
+"begin": 1256.069,
+"end": 1261.189,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Even when we agree on what considerations are relevant, we may weigh them differently.",
+"begin": 1261.589,
+"end": 1267.029,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Our concepts are vague and subject to hard cases.",
+"begin": 1267.829,
+"end": 1272.429,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Our total experience shapes how we assess evidence and weigh values, and people's life experiences differ.",
+"begin": 1272.869,
+"end": 1280.149,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. There are often different kinds of normative considerations on both sides of an issue, and it is hard to make an overall assessment.",
+"begin": 1281.029,
+"end": 1289.309,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Any system of social institutions can admit only some values; we must select, and value conflicts may have no single right answer.",
+"begin": 1289.749,
+"end": 1299.509,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The burdens of judgment do not imply that every view is equally reasonable. But they explain why you should expect intelligent, well-meaning people to disagree with you, and why disagreement alone is not evidence that the other side is stupid or malicious. That is the first step toward productive discussion.",
+"begin": 1300.229,
+"end": 1318.629,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Epistemic injustice",
+"begin": 1319.889,
+"end": 1321.569,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Miranda Fricker — Epistemic Injustice: Power and the Ethics of Knowing, two thousand seven — identified a distinctive kind of wrong: a wrong done to someone in their capacity as a knower. She distinguished two forms.",
+"begin": 1322.658,
+"end": 1338.018,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Testimonial injustice",
+"begin": 1338.258,
+"end": 1339.938,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Testimonial injustice occurs when a speaker receives less credibility than they deserve because of identity prejudice in the hearer: prejudice based on race, gender, class, accent, age, religion, disability, or other features of social identity.",
+"begin": 1340.813,
+"end": 1358.933,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Fricker's central literary example is Tom Robinson in Harper Lee's To Kill a Mockingbird: a Black man in nineteen thirties Alabama, falsely accused, whose truthful testimony is disbelieved by an all-white jury because of racial prejudice. Another of her examples is from The Talented Mister Ripley: Marge Sherwood suspects, correctly, that Tom Ripley has murdered her fiancé; her suspicions are dismissed by her fiancé's father with the line, \"Marge, there's female intuition, and then there are facts.\"",
+"begin": 1359.373,
+"end": 1393.533,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Testimonial injustice harms the speaker, who is wronged as a knower, and it harms the hearer and the community, who lose access to true information.",
+"begin": 1394.413,
+"end": 1404.013,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A documented real-world example: a twenty sixteen study — Kelly Hoffman and colleagues, PNAS — found that a substantial proportion of white medical students and residents surveyed endorsed false beliefs about biological differences between Black and white people — for instance, that Black people's skin is thicker — and that those who endorsed such beliefs rated a Black patient's pain as lower and made less accurate treatment recommendations.",
+"begin": 1404.893,
+"end": 1433.453,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Hermeneutical injustice",
+"begin": 1434.333,
+"end": 1435.853,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Hermeneutical injustice occurs when a gap in a society's shared concepts leaves someone unable to make sense of, or communicate, an important area of their own social experience, because their group has been excluded from the processes that shape those concepts.",
+"begin": 1436.735,
+"end": 1453.415,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Fricker's example: before the term sexual harassment was coined in the mid-nineteen seventies in the United States, women who experienced unwanted sexual attention at work lacked a shared concept for what was happening to them. It was often dismissed as flirtation or as a personal problem. Once the concept existed, it became possible to recognize the experience as a distinct wrong, to describe it, and to seek remedies. Fricker gives a similar account of postnatal depression before it was widely recognized.",
+"begin": 1453.775,
+"end": 1487.135,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Related ideas",
+"begin": 1487.535,
+"end": 1488.655,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Credibility excess — José Medina, The Epistemology of Resistance, twenty thirteen: giving someone more credibility than they deserve because of their identity, which can also cause harm, for example by inflating the confidence of the privileged.",
+"begin": 1489.528,
+"end": 1506.248,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Testimonial smothering: a speaker truncates their own testimony because they expect the audience won't understand or will misuse it.",
+"begin": 1506.568,
+"end": 1515.168,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contributory injustice: hearers refuse to use the interpretive resources that marginalized groups have developed.",
+"begin": 1515.448,
+"end": 1522.728,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Fricker proposed a corresponding virtue, testimonial justice: a reflexive, critical awareness of how prejudice may be distorting your credibility judgments, and the habit of correcting for it.",
+"begin": 1523.368,
+"end": 1535.528,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "For critical thinkers, the lesson cuts two ways. Credibility should be assigned on the basis of competence and sincerity on the question at hand, not identity. Discounting someone because of who they are is a reasoning error, as well as a moral one. But so is automatically deferring to someone because of who they are, without attention to their competence and evidence. Both are failures of calibration.",
+"begin": 1536.088,
+"end": 1561.608,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Standpoint and feminist epistemology",
+"begin": 1562.88,
+"end": 1565.52,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Feminist epistemology asks how gender, and social position more generally, affects the production of knowledge. Lorraine Code posed the question in the title of a nineteen eighty-one paper: \"Is the Sex of the Knower Epistemologically Significant?\"",
+"begin": 1566.616,
+"end": 1581.862,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Some well-documented examples of androcentric, male-centered, bias in knowledge production.",
+"begin": 1581.919,
+"end": 1589.296,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Medical research historically underrepresented women. In the United States, the NIH Revitalization Act of nineteen ninety-three required that women and minorities be included in clinical research funded by the National Institutes of Health. Drug doses, symptoms, and side effects had often been characterized mainly in men. Heart attack symptoms, for instance, can present differently in women, and this was long underappreciated.",
+"begin": 1589.736,
+"end": 1617.576,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Crash-test design relied for decades mainly on dummies based on an average male body. A University of Virginia study found that belted female drivers had substantially higher odds of severe injury than belted male drivers in comparable crashes. Caroline Criado Perez's Invisible Women documents many such data gaps.",
+"begin": 1617.656,
+"end": 1639.216,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Textbook narratives. The anthropologist Emily Martin showed how descriptions of fertilization in biology textbooks cast the sperm as active and heroic and the egg as passive, reflecting gender stereotypes more than the biology, in which the egg plays an active role.",
+"begin": 1639.656,
+"end": 1657.016,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Standpoint theory — Nancy Hartsock, nineteen eighty-three; Sandra Harding, Whose Science? Whose Knowledge? nineteen ninety-one; Patricia Hill Collins, Black Feminist Thought, nineteen ninety — makes two main claims.",
+"begin": 1657.896,
+"end": 1672.856,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The situated knowledge thesis: social position shapes what one experiences, notices, and can know.",
+"begin": 1672.936,
+"end": 1680.936,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. The epistemic advantage thesis: marginalized social positions can offer epistemic advantages on certain questions, particularly about the workings of social power, because those who are disadvantaged by a social order often have to understand both their own perspective and that of the dominant group. W E B Du Bois — The Souls of Black Folk, nineteen oh-three — described a related \"double consciousness,\" and Collins described the \"outsider within\" position of Black women domestic workers who observed white families intimately while remaining outsiders.",
+"begin": 1681.096,
+"end": 1716.856,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Standpoint theorists emphasize that the advantage is not automatic. It is an achievement that requires critical reflection, often collective, on one's experience. Alison Wylie defends a careful version that avoids claiming automatic privilege.",
+"begin": 1717.416,
+"end": 1733.576,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections. Critics worry about essentialism, treating \"women's experience\" as uniform, about relativism — if knowledge is situated, is there objective knowledge? — and about how to adjudicate between standpoints. Defenders reply that standpoint theory is a claim about where to look for evidence that dominant perspectives have missed, and that the evidence found must still be tested. In this sense standpoint theory is a contribution to objectivity, as in Harding's strong objectivity and Helen Longino's account of objectivity through diverse critical communities.",
+"begin": 1733.656,
+"end": 1771.416,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Echo chambers and epistemic bubbles",
+"begin": 1772.591,
+"end": 1775.151,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The philosopher C Thi Nguyen drew a distinction that clarifies much confused discussion about polarization.",
+"begin": 1776.222,
+"end": 1782.942,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "An epistemic bubble is a social information network in which other voices are not heard, through omission. Your friends share your views; your news feed shows you what you already like. Bubbles can arise innocently, from ordinary social sorting. They are fragile: exposure to other views and evidence can pop them.",
+"begin": 1783.422,
+"end": 1804.742,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "An echo chamber is a social structure in which other voices are actively discredited. Members are taught that outsiders are untrustworthy, malicious, or corrupt. The key mechanism is the manipulation of trust, not the omission of information. An echo chamber is not fragile: when members encounter contrary views, the chamber has already prepared them to reject them. Worse, it may have predicted the contrary views, \"the mainstream media will tell you that…\", so their appearance confirms the chamber's worldview. Nguyen calls this a disagreement-reinforcement mechanism. Cults and some political movements operate this way.",
+"begin": 1805.022,
+"end": 1846.502,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The distinction has practical consequences.",
+"begin": 1846.782,
+"end": 1849.262,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Bubbles are fixed by exposure.",
+"begin": 1849.902,
+"end": 1851.902,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Echo chambers are not fixed by exposure, which can make them stronger. They are fixed by rebuilding trust. Nguyen suggests something like a \"social-epistemic reboot\": a person must be willing to temporarily re-extend trust to sources they were taught to distrust.",
+"begin": 1852.622,
+"end": 1870.142,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Nguyen discusses the case of Derek Black, the son of the founder of the white nationalist website Stormfront, and himself a rising figure in the movement. At college, he was invited by a classmate to weekly Shabbat dinners, where, over many months, he developed friendships with people outside the movement, and eventually engaged with their arguments. He publicly renounced white nationalism in twenty thirteen. The story is told in Eli Saslow's Rising Out of Hatred, twenty eighteen. Arguments mattered, but they could only work after trust had been built.",
+"begin": 1870.222,
+"end": 1906.062,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The empirical picture of \"filter bubbles.\" Eli Pariser warned that personalization algorithms would isolate people in bubbles. The evidence is more mixed than the popular picture suggests.",
+"begin": 1906.622,
+"end": 1918.782,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Matthew Gentzkow and Jesse Shapiro found that ideological segregation in online news consumption in the US was low compared with segregation in face-to-face networks.",
+"begin": 1919.422,
+"end": 1930.142,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In large experiments conducted with Meta during the twenty twenty US election, reducing users' exposure to content from like-minded sources on Facebook, or changing their feeds to chronological order, changed what they saw but had no measurable effect on their political polarization over the three-month study period.",
+"begin": 1930.222,
+"end": 1950.062,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Christopher Bail and colleagues paid Twitter users to follow a bot that retweeted messages from the opposing political side. Republicans who followed a liberal bot became more conservative; Democrats who followed a conservative bot became slightly more liberal — the latter effect was not statistically significant.",
+"begin": 1950.382,
+"end": 1969.782,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "This is consistent with Nguyen's point: mere exposure to the other side, especially in a hostile, performative environment, does not produce understanding. The conditions under which people encounter opposing views matter a great deal.",
+"begin": 1970.142,
+"end": 1985.182,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Conformity, cascades, and herding",
+"begin": 1986.377,
+"end": 1989.177,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Conformity",
+"begin": 1990.269,
+"end": 1991.069,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In Solomon Asch's famous experiments, participants were asked to say which of three lines matched a reference line in length. The task was easy: alone, people almost never erred. But each participant was placed in a group of confederates who, on certain trials, unanimously gave the same wrong answer. About a third of participants' responses on these trials conformed to the obviously wrong majority, and about three-quarters of participants conformed at least once. When just one other person in the group gave the correct answer, conformity dropped sharply.",
+"begin": 1991.941,
+"end": 2029.021,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "The lesson.",
+"begin": 2029.461,
+"end": 2030.261,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "a single dissenting voice can free others to report what they actually see. If you believe the group is wrong, saying so may matter more than you think.",
+"begin": 2030.916,
+"end": 2040.596,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pluralistic ignorance occurs when most members of a group privately reject a norm but wrongly believe that most others accept it, and so go along with it. Deborah Prentice and Dale Miller found that many university students were privately less comfortable with campus drinking practices than they believed their peers were.",
+"begin": 2041.156,
+"end": 2060.956,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Information cascades",
+"begin": 2060.996,
+"end": 2063.156,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Suppose two restaurants, A and B, are side by side. You have a small private reason to think A is better. But you see that the two people ahead of you have both gone into B. You might reasonably infer that they had private information favoring B, and that the combined evidence favors B over your own weak signal. So you go into B. The next person sees three people choose B, and follows, and so on. Soon everyone is going to B, even if most people's private information favored A.",
+"begin": 2064.039,
+"end": 2097.719,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This is an information cascade. Each individual's choice is rational given what they see. But once a cascade starts, people stop acting on their private information, so their choices carry no new information, and the cascade can lock in a mistake. Cascades are also fragile: a small piece of new public information can reverse them.",
+"begin": 2098.279,
+"end": 2121.119,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Timur Kuran and Cass Sunstein described availability cascades, in which a belief becomes more plausible the more it is repeated in public discourse, as each repetition makes it more available and each person's expression is partly driven by the desire to fit in.",
+"begin": 2121.479,
+"end": 2138.319,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "The lesson.",
+"begin": 2138.759,
+"end": 2139.639,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "the fact that many people believe something is weaker evidence than it appears when their beliefs are not independent. Ask whether the crowd has independent information, or whether each member is copying the others.",
+"begin": 2140.317,
+"end": 2154.077,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The wisdom and madness of crowds",
+"begin": 2155.337,
+"end": 2157.977,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The wisdom of crowds",
+"begin": 2159.073,
+"end": 2160.753,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In nineteen oh-six, at a livestock fair in Plymouth, England, Francis Galton collected about eight hundred entries in a competition to guess the weight of an ox after slaughter and dressing. Few individuals guessed accurately, but the median of the guesses was one thousand two hundred seven pounds; the actual weight was one thousand one hundred ninety-eight pounds. The collective judgment was remarkably accurate.",
+"begin": 2161.633,
+"end": 2188.113,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The mathematical basis for this effect was discovered earlier. The Condorcet jury theorem states: if each voter in a group independently has a probability greater than one half of being right on a yes or no question, then the probability that the majority is right increases with the size of the group, approaching certainty. But if each voter's probability of being right is less than one half, the majority becomes more likely to be wrong as the group grows.",
+"begin": 2188.673,
+"end": 2216.993,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "James Surowiecki identified conditions for crowd wisdom.",
+"begin": 2217.553,
+"end": 2220.993,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Diversity of opinion — people have different private information.",
+"begin": 2221.633,
+"end": 2226.513,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Independence — people's opinions are not determined by those around them.",
+"begin": 2227.073,
+"end": 2232.593,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Decentralization — people draw on local knowledge.",
+"begin": 2232.913,
+"end": 2237.473,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Aggregation — some mechanism turns private judgments into a collective decision.",
+"begin": 2238.033,
+"end": 2244.193,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "When these conditions fail, crowds fail. Jan Lorenz and colleagues showed experimentally that when people could see others' estimates, the diversity of estimates shrank and the crowd's accuracy got worse, even as participants became more confident.",
+"begin": 2244.433,
+"end": 2260.113,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Prediction markets, in which people bet on outcomes, and forecasting tournaments use aggregation to produce accurate predictions. The economist Friedrich Hayek argued that market prices aggregate knowledge dispersed among millions of people, knowledge that no central planner could ever collect.",
+"begin": 2260.593,
+"end": 2278.593,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The madness of crowds",
+"begin": 2279.073,
+"end": 2280.753,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Charles Mackay's Extraordinary Popular Delusions and the Madness of Crowds catalogued financial bubbles, witch hunts, and crazes. Modern historians, such as Anne Goldgar in Tulipmania, two thousand seven, argue that some of his stories, including the Dutch tulip mania, were exaggerated.",
+"begin": 2281.639,
+"end": 2300.759,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Groups can go wrong in characteristic ways.",
+"begin": 2301.559,
+"end": 2304.799,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Groupthink. Irving Janis analyzed foreign policy fiascos, such as the Bay of Pigs invasion, in which cohesive groups of intelligent advisers suppressed doubts, created an illusion of unanimity, and failed to consider alternatives. Remedies include assigning a devil's advocate, having members form independent judgments before discussion, bringing in outside experts, and having leaders withhold their own view at first.",
+"begin": 2305.239,
+"end": 2333.119,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Group polarization. When like-minded people deliberate together, they tend to end up with more extreme views than they started with — Cass Sunstein, Going to Extremes, two thousand nine. In an experiment in Colorado, groups of liberals from Boulder and conservatives from Colorado Springs discussed issues such as climate change and affirmative action. After deliberation, the liberal groups became more liberal and the conservative groups more conservative, and each group became more internally uniform — David Schkade, Cass Sunstein, and Reid Hastie, two thousand seven.",
+"begin": 2333.559,
+"end": 2371.399,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Cascades and conformity, as above.",
+"begin": 2371.439,
+"end": 2374.439,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The key difference between wise and mad crowds is independence. A crowd of independent judges aggregates information; a crowd of people imitating each other amplifies error.",
+"begin": 2374.839,
+"end": 2387.079,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Group knowledge and belief",
+"begin": 2388.349,
+"end": 2390.029,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Can a group, such as a court, a scientific committee, a government, or a corporation, believe or know something?",
+"begin": 2391.118,
+"end": 2398.958,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Summativism: a group believes p if and only if all or most of its members believe p.",
+"begin": 2399.838,
+"end": 2406.878,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Non-summativism — Margaret Gilbert, On Social Facts, nineteen eighty-nine: a group can believe p through joint acceptance, even if no member personally believes p. A committee may officially accept a finding that each member privately doubts.",
+"begin": 2407.598,
+"end": 2424.718,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The discursive dilemma",
+"begin": 2425.198,
+"end": 2426.558,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Aggregating individual judgments into group judgments raises a startling problem, first noticed in law and generalized by Philip Pettit and Christian List.",
+"begin": 2427.429,
+"end": 2437.589,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Three judges must decide whether a defendant is liable for breach of contract. The law says the defendant is liable if and only if there was a valid contract and the defendant breached it.",
+"begin": 2437.909,
+"end": 2449.429,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Judge one. Valid contract? Yes. Breach? Yes. Liable? Yes.",
+"begin": 2450.069,
+"end": 2456.709,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Judge two. Valid contract? Yes. Breach? No. Liable? No.",
+"begin": 2457.029,
+"end": 2463.789,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Judge three. Valid contract? No. Breach? Yes. Liable? No.",
+"begin": 2464.069,
+"end": 2470.629,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Majority. Valid contract? Yes. Breach? Yes. Liable? No.",
+"begin": 2471.189,
+"end": 2477.989,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Each judge is individually consistent. But the majority accepts both premises and rejects the conclusion that follows from them. Majority voting on each proposition produces an inconsistent group view. The court must choose between a premise-based procedure — vote on the premises, derive the conclusion: liable — and a conclusion-based procedure — vote on the conclusion: not liable. List and Pettit proved an impossibility theorem: no aggregation procedure can satisfy a set of apparently reasonable conditions and always produce consistent group judgments.",
+"begin": 2478.309,
+"end": 2515.029,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The lesson for institutions: how a group reaches decisions affects what it concludes, and there is no neutral, obviously correct procedure. The lesson for debates: \"the public believes X\" or \"the committee concluded Y\" may conceal a more complicated pattern of individual views.",
+"begin": 2515.349,
+"end": 2534.309,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Misinformation, disinformation, and propaganda",
+"begin": 2535.576,
+"end": 2538.936,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Definitions",
+"begin": 2540.016,
+"end": 2540.816,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Misinformation: false or misleading information, regardless of intent.",
+"begin": 2541.688,
+"end": 2546.728,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Disinformation: false or misleading information spread deliberately to deceive.",
+"begin": 2547.368,
+"end": 2552.808,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Malinformation: true information used to cause harm, such as leaked private information — Claire Wardle and Hossein Derakhshan, Information Disorder, Council of Europe, twenty seventeen.",
+"begin": 2553.368,
+"end": 2565.688,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fake news: Axel Gelfert defines it as the deliberate presentation of typically false or misleading claims as news, where the claims are misleading by design.",
+"begin": 2566.488,
+"end": 2576.968,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "How falsehood spreads",
+"begin": 2577.688,
+"end": 2579.208,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A large study of news stories shared on Twitter from two thousand six to twenty seventeen found that false news spread \"farther, faster, deeper, and more broadly than the truth,\" and that false stories were about seventy percent more likely to be retweeted than true ones. False news was more novel and inspired more surprise and disgust. Automated bots spread true and false news at similar rates, so the difference was due to human sharing.",
+"begin": 2580.088,
+"end": 2609.688,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Other mechanisms.",
+"begin": 2610.248,
+"end": 2611.568,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The illusory truth effect — Lynn Hasher, David Goldstein, and Thomas Toppino, nineteen seventy-seven: repeated statements are judged more likely to be true, simply because repetition makes them feel familiar. Lisa Fazio and colleagues found that this happens even when people know the correct answer.",
+"begin": 2611.848,
+"end": 2631.448,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The continued influence effect: misinformation continues to influence people's reasoning after it has been corrected and they remember the correction. Corrections work better when they provide an alternative explanation to fill the gap left by the retracted claim.",
+"begin": 2631.928,
+"end": 2647.968,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Inattention. Gordon Pennycook and David Rand found that susceptibility to fake news headlines was better predicted by a tendency not to think carefully than by partisan motivated reasoning, and that simple prompts asking people to consider accuracy reduced their sharing of false headlines. The relative roles of inattention and motivated reasoning are debated.",
+"begin": 2648.488,
+"end": 2671.488,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Countermeasures",
+"begin": 2672.008,
+"end": 2672.968,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Debunking: correcting after the fact, ideally with a clear alternative explanation, leading with the truth rather than repeating the myth.",
+"begin": 2673.842,
+"end": 2683.602,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Prebunking or inoculation — William McGuire, nineteen sixty-one; Sander van der Linden, Jon Roozenbeek, and colleagues: exposing people in advance to weakened forms of manipulative techniques so that they recognize them later. The online game Bad News, in which players act as fake news producers, was found to reduce players' susceptibility to misinformation techniques.",
+"begin": 2684.082,
+"end": 2708.722,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Accuracy nudges: prompting people to think about whether content is true before sharing.",
+"begin": 2709.682,
+"end": 2715.362,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The \"backfire effect\", in which corrections supposedly strengthen false beliefs, was widely reported after a twenty ten study, Brendan Nyhan and Jason Reifler, but later large studies found it to be rare. Corrections generally work, at least partly.",
+"begin": 2716.242,
+"end": 2732.802,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Propaganda",
+"begin": 2733.762,
+"end": 2734.562,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Propaganda is communication designed to shape beliefs and actions, typically by bypassing rational evaluation. Walter Lippmann described the \"manufacture of consent.\" Edward Bernays, a pioneer of public relations, published a book frankly titled Propaganda. Edward Herman and Noam Chomsky proposed a \"propaganda model\" in which the structure of commercial mass media — ownership, advertising, reliance on official sources, \"flak,\" and a unifying ideology — filters news without any need for direct censorship.",
+"begin": 2735.438,
+"end": 2771.998,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Jason Stanley argued that the most dangerous propaganda is undermining propaganda: communication that presents itself as embodying an ideal — such as freedom, security, or reason — while working to erode that very ideal.",
+"begin": 2772.558,
+"end": 2787.518,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Christopher Paul and Miriam Matthews of the RAND Corporation described a modern style of state propaganda as a \"firehose of falsehood\": high volume, multichannel, rapid, continuous, and repetitive, with no commitment to objective reality and no commitment to consistency. Its aim is often not to make people believe a particular falsehood, but to create confusion and exhaustion, so that people stop believing it is possible to know what is true. Hannah Arendt's observation, quoted at the start of Chapter eleven, describes the goal.",
+"begin": 2788.078,
+"end": 2823.278,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Conspiracy theories",
+"begin": 2824.542,
+"end": 2825.902,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A conspiracy theory, in the neutral sense, is an explanation of an event that cites the secret action of a relatively small group of agents as its main cause.",
+"begin": 2826.998,
+"end": 2837.398,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Some conspiracies are real. The Watergate break-in and cover-up. The Tuskegee syphilis study, in which the US Public Health Service observed the progression of untreated syphilis in hundreds of Black men while withholding effective treatment from them after penicillin became available. The tobacco industry's decades-long concealment of what its own research showed about smoking and cancer. The Volkswagen emissions scandal, in which the company installed software to cheat emissions tests. Given this history, dismissing every conspiracy claim as irrational would itself be irrational.",
+"begin": 2837.718,
+"end": 2874.758,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The particularist view holds that conspiracy theories should be evaluated one by one, on their evidence, like any other explanation. The generalist view holds that there are features common to many conspiracy theories that make them, as a class, epistemically suspect.",
+"begin": 2874.838,
+"end": 2891.638,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Keeley identified features of unwarranted conspiracy theories.",
+"begin": 2891.718,
+"end": 2895.558,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Errant data. They focus on anomalies in the official account, \"unexplained\" details. But every real event, examined closely, has unexplained details. Messiness is normal.",
+"begin": 2896.118,
+"end": 2909.398,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Self-sealing. Evidence against the theory is reinterpreted as evidence for it: the absence of evidence shows how good the cover-up is. The theory becomes unfalsifiable.",
+"begin": 2909.718,
+"end": 2921.838,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Growth. To accommodate contrary evidence, the conspiracy must keep expanding to include more people: the scientists, the journalists, the fact-checkers, the government agencies of rival countries.",
+"begin": 2922.198,
+"end": 2934.838,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Competence. The conspirators must be both incredibly powerful and competent, to keep the secret, and strangely careless — to leave the clues the theorist has found.",
+"begin": 2935.398,
+"end": 2946.958,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The physicist David Robert Grimes modeled how long conspiracies involving many people could stay secret, based on the rate at which real conspiracies were exposed. He estimated that a faked moon landing, requiring the silence of an estimated four hundred eleven thousand NASA employees and contractors, would have been exposed within about four years. The model is rough, but the principle is sound: the more people a secret requires, the less likely it is to hold.",
+"begin": 2947.238,
+"end": 2976.918,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Quassim Cassam argues that many popular conspiracy theories are best understood not as sincere attempts at explanation but as forms of political propaganda, and characterizes them as typically speculative, contrarian, esoteric, amateurish, and \"premodern\" — assuming that significant events must be intended by someone.",
+"begin": 2976.998,
+"end": 2998.347,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Psychology. Karen Douglas, Robbie Sutton, and Aleksandra Cichocka suggest that conspiracy beliefs appeal to epistemic needs, for understanding and certainty, existential needs, for security and control, and social needs — for a positive image of oneself and one's group. Researchers have also documented a proportionality bias: people feel that big events must have big causes, which makes lone gunmen and random accidents feel unsatisfying. Michael Wood, Karen Douglas, and Robbie Sutton found that people who believed Princess Diana was murdered were more likely also to believe she faked her own death. This suggests that for some believers, what matters is not any specific theory but a general conviction that the official story is false.",
+"begin": 2998.415,
+"end": 3049.878,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Evaluating a conspiracy claim.",
+"begin": 3049.958,
+"end": 3052.918,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Is there positive evidence for the conspiracy, or only anomalies in the official account?",
+"begin": 3052.998,
+"end": 3059.752,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Is the theory falsifiable? What evidence would count against it?",
+"begin": 3059.787,
+"end": 3065.067,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. How many people would have to keep the secret, for how long?",
+"begin": 3065.124,
+"end": 3069.985,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Does the theory require the conspirators to be both omnipotent and incompetent?",
+"begin": 3070.038,
+"end": 3076.438,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Does it keep growing to absorb contrary evidence?",
+"begin": 3076.491,
+"end": 3081.215,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Who promotes it, and what is their track record?",
+"begin": 3081.272,
+"end": 3085.598,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. Compare explanations: which is simpler and better supported?",
+"begin": 3085.631,
+"end": 3091.025,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Have independent investigators — journalists, courts, rival governments, academic researchers — with an incentive to expose the conspiracy examined it?",
+"begin": 3091.087,
+"end": 3102.758,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Epistemic institutions",
+"begin": 3103.869,
+"end": 3105.629,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Societies build institutions to produce, check, store, and distribute knowledge. Their design matters as much as individual reasoning.",
+"begin": 3106.717,
+"end": 3115.917,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Science: peer review, replication, open publication, organized skepticism. Peer review is imperfect, it rarely catches fraud and can be conservative, but it provides a first check.",
+"begin": 3116.317,
+"end": 3130.237,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Journalism: \"The essence of journalism is a discipline of verification\" — Kovach and Rosenstiel. Good journalism involves independent sourcing, fact-checking, corrections policies, and the separation of news from opinion.",
+"begin": 3130.317,
+"end": 3144.957,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Courts: adversarial examination, rules of evidence, cross-examination, appeals, and standards of proof calibrated to the stakes. Criminal cases require proof beyond reasonable doubt; most civil cases require proof on the balance of probabilities — a preponderance of the evidence. These standards embody a judgment about the relative costs of different errors. As William Blackstone put it: \"It is better that ten guilty persons escape, than that one innocent suffer.\"",
+"begin": 3145.277,
+"end": 3176.637,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Encyclopedias and Wikipedia: Wikipedia's core policies of neutral point of view, verifiability, claims must be attributable to reliable published sources, and no original research are an explicit social epistemology. A two thousand five study in Nature, Jim Giles, found that Wikipedia's science articles contained errors at a rate not far above that of Encyclopaedia Britannica — on average about four inaccuracies per article compared with about three. Its reliability varies by topic and it can be vandalized, but its transparency — edit histories, talk pages, citations — lets readers check.",
+"begin": 3176.717,
+"end": 3218.277,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Markets: prices aggregate dispersed information, Hayek, though markets are also subject to bubbles and herding.",
+"begin": 3218.637,
+"end": 3226.637,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Statistical agencies, libraries, universities, and archives: preserve and certify information across time.",
+"begin": 3226.957,
+"end": 3234.517,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Jonathan Rauch describes the network of these institutions as a \"reality-based community\" governed by two rules: the fallibilist rule — no one gets the final say; any claim can be challenged — and the empirical rule — no one has personal authority; claims must be checkable by others, regardless of who makes them. Knowledge, on this view, is not what any individual believes, but what survives this social process of checking.",
+"begin": 3234.797,
+"end": 3262.797,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What makes an institution epistemically good? Drawing on the ideas in this chapter.",
+"begin": 3263.757,
+"end": 3268.957,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Independence of judgment among its members.",
+"begin": 3269.757,
+"end": 3273.037,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Diversity of perspectives, methods, and backgrounds.",
+"begin": 3273.757,
+"end": 3278.477,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Incentives to find and correct errors, including rewards for criticism.",
+"begin": 3278.557,
+"end": 3283.917,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Transparency of methods and evidence, so that outsiders can check.",
+"begin": 3284.557,
+"end": 3289.597,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Accountability: errors have consequences, and corrections are published.",
+"begin": 3290.237,
+"end": 3295.997,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Resistance to capture by interests that benefit from particular answers.",
+"begin": 3297.037,
+"end": 3301.837,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Epistemic autonomy and artificial intelligence",
+"begin": 3303.027,
+"end": 3306.227,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Autonomy and dependence",
+"begin": 3307.311,
+"end": 3309.151,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Kant's motto Sapere aude, \"Have courage to use your own understanding\", expresses the ideal of epistemic autonomy: thinking for yourself. But Hardwig showed that rational people must depend on others. Linda Zagzebski went further, arguing that when we have good reason to think an authority is more likely to be right than we are, we should let the authority's belief replace our own reasons — her preemption thesis.",
+"begin": 3310.028,
+"end": 3337.868,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How can autonomy and dependence be reconciled? A common answer is that autonomy does not mean believing only what you have personally verified. It means managing your dependence responsibly: choosing whom to trust on the basis of their trustworthiness, monitoring sources for signs of unreliability, understanding enough to follow and question expert reasoning, and knowing the limits of your own competence. An autonomous thinker depends on others, but knowingly and critically.",
+"begin": 3338.188,
+"end": 3369.508,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Artificial intelligence and the information environment",
+"begin": 3370.028,
+"end": 3373.068,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "New technologies are changing the conditions of social knowledge.",
+"begin": 3373.949,
+"end": 3378.189,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Deepfakes. Regina Rini argues that video and audio recordings have served as an epistemic backstop for testimony: when people's reports conflicted, recordings could settle the matter. Realistic synthetic media undermine this backstop. They also create what legal scholars Robert Chesney and Danielle Citron call the \"liar's dividend\": once it is known that recordings can be faked, people can dismiss genuine recordings as fakes.",
+"begin": 3378.669,
+"end": 3407.629,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Recommendation algorithms shape what information people see, typically optimizing for engagement rather than accuracy. Their effects on belief and polarization are still being studied, and as noted above, the evidence is more mixed than many popular accounts suggest.",
+"begin": 3408.189,
+"end": 3425.949,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Large language models and other AI systems are increasingly used as sources of information. They raise new questions for the epistemology of testimony.",
+"begin": 3426.509,
+"end": 3435.949,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Their outputs are fluent and confident in tone, whether or not they are accurate. They can produce plausible but false statements, including fabricated citations — often called \"hallucinations\".",
+"begin": 3436.429,
+"end": 3449.069,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A human speaker who asserts something takes responsibility for it and can be held accountable. Whether, and in what sense, an AI system can assert or be accountable is debated.",
+"begin": 3449.469,
+"end": 3460.989,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Their reliability varies greatly by topic and task, and they can reflect biases in their training data. They may also tend to agree with the user's framing of a question.",
+"begin": 3461.229,
+"end": 3471.829,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "People are prone to automation bias: over-relying on automated aids and failing to notice their errors.",
+"begin": 3472.109,
+"end": 3479.069,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sensible practices when using AI systems as sources: treat their output as a starting point, not an endpoint; check important claims, and especially citations, against primary or reputable sources; ask for sources and reasoning, then verify them; be especially careful where you cannot evaluate the answer yourself; and apply the same questions you would ask of any source: What is its track record on this kind of question? How would it know? What would it get wrong? This advice applies to every AI assistant, including the one that helped draft this guide.",
+"begin": 3479.709,
+"end": 3518.349,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 3521.698,
+"end": 3522.498,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 3523.579,
+"end": 3538.619,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. What is Hardwig's argument that rational belief often requires deference?",
+"begin": 3539.487,
+"end": 3545.647,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Modern knowledge is produced by divisions of cognitive labor so extensive that no individual can check more than a tiny part of it; even the authors of a scientific paper rely on each other. So a rational layperson who refused to believe anything they couldn't personally verify would believe almost nothing. Rationality requires trusting reliable others.",
+"begin": 3550.72,
+"end": 3575.12,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. A novice must choose between two doctors who disagree. List three of Goldman's sources of evidence she could use.",
+"begin": 3576.007,
+"end": 3585.047,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Any three of: A: which doctor responds better to the other's arguments; B: how many other independent doctors agree with each; C: credentials and professional standing; D: conflicts of interest or biases; E: past track records, including checkable predictions.",
+"begin": 3590.139,
+"end": 3613.819,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. Why is agreement among many people weak evidence when their beliefs are not independent?",
+"begin": 3614.694,
+"end": 3621.974,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Because if people are copying each other — following a leader, joining a cascade, repeating the same source — their agreement contains little more information than the original source. Independent agreement is strong evidence because it would be unlikely if the claim were false; dependent agreement is what you would expect whether or not it is true.",
+"begin": 3627.05,
+"end": 3649.77,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. Explain the restaurant bill case and what conciliationists and steadfasters say about it.",
+"begin": 3650.638,
+"end": 3657.758,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. You calculate your share as forty-three dollars; an equally competent friend with the same information gets forty-five dollars. Conciliationists say you should significantly lower your confidence, since you have no independent reason to think you, rather than your friend, made the error. Most steadfasters agree in this case, because the disagreement is evidence of a calculation error somewhere; the dispute is about harder cases — politics, philosophy — where the parties have reflected at length.",
+"begin": 3662.838,
+"end": 3695.078,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. Distinguish testimonial from hermeneutical injustice, with an example of each.",
+"begin": 3695.961,
+"end": 3702.761,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Testimonial injustice: a speaker is given less credibility than deserved because of identity prejudice — for example, a patient's report of pain discounted because of their race. Hermeneutical injustice: a gap in shared concepts leaves someone unable to understand or communicate their experience because their group was excluded from shaping those concepts — for example, experiences of sexual harassment before the concept existed.",
+"begin": 3707.847,
+"end": 3738.567,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. What's the difference between an epistemic bubble and an echo chamber? Why does it matter?",
+"begin": 3739.429,
+"end": 3746.709,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. A bubble omits other voices; an echo chamber actively discredits them by manipulating trust. Bubbles can be burst by exposure to other views; echo chambers are strengthened by exposure, since members have been prepared to reject outsiders. Addressing an echo chamber requires rebuilding trust, not just supplying information.",
+"begin": 3751.784,
+"end": 3775.224,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. Why did the crowd's estimate of the ox's weight work so well, and when would it fail?",
+"begin": 3776.104,
+"end": 3783.224,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. The guesses were diverse and independent, so individual errors in different directions largely canceled out when aggregated — by the median. It would fail if people's guesses were influenced by each other, reducing independence, or if most people shared the same systematic bias.",
+"begin": 3788.304,
+"end": 3808.384,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. Apply Keeley's criteria to the claim that \"the nineteen sixty-nine moon landing was faked.\"",
+"begin": 3809.254,
+"end": 3816.854,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. It relies on errant data — flag \"waving,\" missing stars in photos — each of which has a mundane explanation. It is self-sealing — evidence such as retroreflectors left on the Moon, independent tracking of the missions by other countries including the Soviet Union, and returned samples are dismissed as part of the fake. It requires an enormous number of conspirators, hundreds of thousands, to keep a secret for decades, including a geopolitical rival with every incentive to expose it. And it requires the conspirators to be capable of faking everything perfectly yet careless enough to leave \"clues.\"",
+"begin": 3821.923,
+"end": 3863.363,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter twelve",
+"begin": 3866.723,
+"end": 3868.323,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter twelve. We've seen how much knowledge depends on communities. In chapter thirteen we turn to the character of the individual thinker, with intellectual virtue and the ethics of belief.",
+"begin": 3869.414,
+"end": 3883.254,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 6.949,
+"lines": [
+0,
+1
+],
+"request_id": "N0IlDXYUcFWZe3aC4Fvx"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 8.176,
+"end": 12.931,
+"lines": [
+1,
+2
+],
+"request_id": "LxVE6zsRcdCeIBRLvbwA"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 13.479,
+"end": 16.248,
+"lines": [
+2,
+3
+],
+"request_id": "bAt1QmNQDeCsrp0Y9xZu"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 17.084,
+"end": 21.368,
+"lines": [
+3,
+4
+],
+"request_id": "o0itwUohzp1GyK1D6zx8"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 21.917,
+"end": 26.514,
+"lines": [
+4,
+5
+],
+"request_id": "djmGLvvasX7A08OJCC6G"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 27.35,
+"end": 83.879,
+"lines": [
+5,
+7
+],
+"request_id": "LYa3Q0Q9oNjrzaJe2LRe"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 84.506,
+"end": 124.395,
+"lines": [
+7,
+10
+],
+"request_id": "VLHrjaytMz6Pk7HJjGAz"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 125.623,
+"end": 127.425,
+"lines": [
+10,
+11
+],
+"request_id": "dI7LFDmQTV48ZcWqU7um"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 128.47,
+"end": 231.314,
+"lines": [
+11,
+18
+],
+"request_id": "T3I34MN6t9f53OvS7atg"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 232.542,
+"end": 234.893,
+"lines": [
+18,
+19
+],
+"request_id": "eQZPu6oxgqrrxVNzOJph"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 235.938,
+"end": 381.022,
+"lines": [
+19,
+32
+],
+"request_id": "GjFWksZfDW5q7VaLm8tE"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 382.25,
+"end": 384.052,
+"lines": [
+32,
+33
+],
+"request_id": "4wXj1hrRkK9wSc2P4MHo"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 385.097,
+"end": 386.9,
+"lines": [
+33,
+34
+],
+"request_id": "kLQ9y6qUgkQ1IVe5SEP2"
+},
+{
+"chunk": 14,
+"voice": "main",
+"begin": 387.736,
+"end": 533.211,
+"lines": [
+34,
+42
+],
+"request_id": "9oCaPGrTOEvz7Vmm72kD"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 534.047,
+"end": 691.931,
+"lines": [
+42,
+47
+],
+"request_id": "qBAzRYMMpmuFhkKW5uWY"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 692.767,
+"end": 771.527,
+"lines": [
+47,
+50
+],
+"request_id": "v2NCm162U7Y5nR21Zcy1"
+},
+{
+"chunk": 17,
+"voice": "main",
+"begin": 772.754,
+"end": 774.06,
+"lines": [
+50,
+51
+],
+"request_id": "N2VehSneBxTVz4ErHKhV"
+},
+{
+"chunk": 18,
+"voice": "main",
+"begin": 775.105,
+"end": 828.656,
+"lines": [
+51,
+55
+],
+"request_id": "QZ9raejKhYsnXMwnG9lP"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 829.492,
+"end": 913.293,
+"lines": [
+55,
+61
+],
+"request_id": "DipWslLasgQeS6m6tAXo"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 914.129,
+"end": 970.736,
+"lines": [
+61,
+66
+],
+"request_id": "KonwrqzAnMPduYmYu6Nr"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 971.572,
+"end": 1001.77,
+"lines": [
+66,
+68
+],
+"request_id": "nasla5Gks5o4TaKE23LG"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 1002.606,
+"end": 1099.912,
+"lines": [
+68,
+74
+],
+"request_id": "hwNcFiXfKCEf7elMe2rt"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 1100.748,
+"end": 1153.358,
+"lines": [
+74,
+79
+],
+"request_id": "PUXcSAoXpTKOyso7uvkC"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 1154.194,
+"end": 1233.92,
+"lines": [
+79,
+85
+],
+"request_id": "XLy1ZINljQTk9sdSIZHC"
+},
+{
+"chunk": 25,
+"voice": "second",
+"begin": 1235.148,
+"end": 1237.264,
+"lines": [
+85,
+86
+],
+"request_id": "pTJHEO0VQxCOlLcmk5tQ"
+},
+{
+"chunk": 26,
+"voice": "second",
+"begin": 1238.309,
+"end": 1318.661,
+"lines": [
+86,
+94
+],
+"request_id": "t1gQX9SFiMyhJip3ptxf"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1319.889,
+"end": 1321.613,
+"lines": [
+94,
+95
+],
+"request_id": "8qDcraWQplq7H2N92Jlw"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1322.658,
+"end": 1339.977,
+"lines": [
+95,
+97
+],
+"request_id": "AyQqCfHnoSiax9Yll7sS"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1340.813,
+"end": 1435.899,
+"lines": [
+97,
+102
+],
+"request_id": "BFLubpk0vKUrNZyIOlJS"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1436.735,
+"end": 1488.692,
+"lines": [
+102,
+105
+],
+"request_id": "nxbT0DEZiERvkx6KCLVk"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1489.528,
+"end": 1561.652,
+"lines": [
+105,
+110
+],
+"request_id": "CpkwWjLwLmoJibXd8x7f"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1562.88,
+"end": 1565.571,
+"lines": [
+110,
+111
+],
+"request_id": "hhousR1Lo8yIj3cqIBeE"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1566.616,
+"end": 1771.363,
+"lines": [
+111,
+121
+],
+"request_id": "bfyciT6VQQFNkT2brevs"
+},
+{
+"chunk": 34,
+"voice": "second",
+"begin": 1772.591,
+"end": 1775.177,
+"lines": [
+121,
+122
+],
+"request_id": "a9vNNcwPibzoEE9HQZbG"
+},
+{
+"chunk": 35,
+"voice": "second",
+"begin": 1776.222,
+"end": 1985.149,
+"lines": [
+122,
+134
+],
+"request_id": "hwok3shbexph12XuYCmb"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1986.377,
+"end": 1989.224,
+"lines": [
+134,
+135
+],
+"request_id": "AqoEHeDMnMHTwNkyfVBn"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 1990.269,
+"end": 1991.105,
+"lines": [
+135,
+136
+],
+"request_id": "ioilKsOpnpnHJa41Sbzv"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 1991.941,
+"end": 2030.289,
+"lines": [
+136,
+138
+],
+"request_id": "Nj9251W02YQcZnWJRuzc"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 2030.916,
+"end": 2063.203,
+"lines": [
+138,
+141
+],
+"request_id": "g4YGnGNKfibeczzsbke2"
+},
+{
+"chunk": 40,
+"voice": "main",
+"begin": 2064.039,
+"end": 2139.69,
+"lines": [
+141,
+145
+],
+"request_id": "VKLOj1ExJV46CkuAhTp6"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 2140.317,
+"end": 2154.109,
+"lines": [
+145,
+146
+],
+"request_id": "fasNNoE1JWrvkIAg6Px6"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 2155.337,
+"end": 2158.028,
+"lines": [
+146,
+147
+],
+"request_id": "jalBM6AvssdXvGlFyqGf"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 2159.073,
+"end": 2160.797,
+"lines": [
+147,
+148
+],
+"request_id": "OzC4RbmKbdOTVzreZ7vu"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2161.633,
+"end": 2280.803,
+"lines": [
+148,
+158
+],
+"request_id": "9NmMkEXv5CQcIk3vUDBt"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2281.639,
+"end": 2387.122,
+"lines": [
+158,
+164
+],
+"request_id": "a3wrWn1TaG6dGEzzpxE0"
+},
+{
+"chunk": 46,
+"voice": "second",
+"begin": 2388.349,
+"end": 2390.073,
+"lines": [
+164,
+165
+],
+"request_id": "AuO0GsElUAuRQYKRqus0"
+},
+{
+"chunk": 47,
+"voice": "second",
+"begin": 2391.118,
+"end": 2426.593,
+"lines": [
+165,
+169
+],
+"request_id": "zWK1CZb5QPufntUb3XvC"
+},
+{
+"chunk": 48,
+"voice": "second",
+"begin": 2427.429,
+"end": 2534.348,
+"lines": [
+169,
+177
+],
+"request_id": "3scLykE8oKq35k1McCzo"
+},
+{
+"chunk": 49,
+"voice": "main",
+"begin": 2535.576,
+"end": 2538.971,
+"lines": [
+177,
+178
+],
+"request_id": "fivd4KL6Y4x8AdVHUe2V"
+},
+{
+"chunk": 50,
+"voice": "main",
+"begin": 2540.016,
+"end": 2540.852,
+"lines": [
+178,
+179
+],
+"request_id": "UIWyvVKT50JFM2g9EL8x"
+},
+{
+"chunk": 51,
+"voice": "main",
+"begin": 2541.688,
+"end": 2579.252,
+"lines": [
+179,
+184
+],
+"request_id": "xAHnfAky0MQNWZCpArwJ"
+},
+{
+"chunk": 52,
+"voice": "main",
+"begin": 2580.088,
+"end": 2673.006,
+"lines": [
+184,
+190
+],
+"request_id": "hXhPdcZvwktTPQX0wanv"
+},
+{
+"chunk": 53,
+"voice": "main",
+"begin": 2673.842,
+"end": 2734.602,
+"lines": [
+190,
+195
+],
+"request_id": "ikMVub6Yi8a3Kt3IYQhu"
+},
+{
+"chunk": 54,
+"voice": "main",
+"begin": 2735.438,
+"end": 2823.314,
+"lines": [
+195,
+198
+],
+"request_id": "W9N2Hh53OV8VdkMCy7ho"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 2824.542,
+"end": 2825.953,
+"lines": [
+198,
+199
+],
+"request_id": "wXgpT0yBMc6brQAqPBR5"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 2826.998,
+"end": 3102.642,
+"lines": [
+199,
+219
+],
+"request_id": "XMtc5yK9veg6mBnGIFV6"
+},
+{
+"chunk": 57,
+"voice": "second",
+"begin": 3103.869,
+"end": 3105.672,
+"lines": [
+219,
+220
+],
+"request_id": "2yWEyuQEXBRpzD0L8Nix"
+},
+{
+"chunk": 58,
+"voice": "second",
+"begin": 3106.717,
+"end": 3301.799,
+"lines": [
+220,
+235
+],
+"request_id": "f9PKNQIoDDZECwNeO2GP"
+},
+{
+"chunk": 59,
+"voice": "main",
+"begin": 3303.027,
+"end": 3306.266,
+"lines": [
+235,
+236
+],
+"request_id": "qcMX8Y47iex6EScHFC2J"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 3307.311,
+"end": 3309.192,
+"lines": [
+236,
+237
+],
+"request_id": "ZnLIwsZbVgACLVdG8iGa"
+},
+{
+"chunk": 61,
+"voice": "main",
+"begin": 3310.028,
+"end": 3373.113,
+"lines": [
+237,
+240
+],
+"request_id": "rdsBf5nTBuRLa2yp0Xtj"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 3373.949,
+"end": 3518.38,
+"lines": [
+240,
+249
+],
+"request_id": "xWQQbeTR90h2pxWInbjg"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 3521.698,
+"end": 3522.534,
+"lines": [
+249,
+250
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3523.579,
+"end": 3538.651,
+"lines": [
+250,
+251
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 65,
+"voice": "second",
+"begin": 3539.487,
+"end": 3545.678,
+"lines": [
+251,
+252
+],
+"request_id": "TsOyeqBVUWzXd9S16suH"
+},
+{
+"chunk": 66,
+"voice": "main",
+"begin": 3550.72,
+"end": 3575.171,
+"lines": [
+252,
+253
+],
+"request_id": "5wNvc72VIfPszzM1YE59"
+},
+{
+"chunk": 67,
+"voice": "second",
+"begin": 3576.007,
+"end": 3585.097,
+"lines": [
+253,
+254
+],
+"request_id": "KdNi0prmNPTstbrd5UvR"
+},
+{
+"chunk": 68,
+"voice": "main",
+"begin": 3590.139,
+"end": 3613.858,
+"lines": [
+254,
+255
+],
+"request_id": "obmBilXNYhlSGw0zEaSU"
+},
+{
+"chunk": 69,
+"voice": "second",
+"begin": 3614.694,
+"end": 3622.008,
+"lines": [
+255,
+256
+],
+"request_id": "ySe6nUNTAmaXLJbo9VYC"
+},
+{
+"chunk": 70,
+"voice": "main",
+"begin": 3627.05,
+"end": 3649.802,
+"lines": [
+256,
+257
+],
+"request_id": "RqFRQBGRXFseMTe9RMEk"
+},
+{
+"chunk": 71,
+"voice": "second",
+"begin": 3650.638,
+"end": 3657.796,
+"lines": [
+257,
+258
+],
+"request_id": "YXgr1ZWgs9RkksAZc00C"
+},
+{
+"chunk": 72,
+"voice": "main",
+"begin": 3662.838,
+"end": 3695.125,
+"lines": [
+258,
+259
+],
+"request_id": "v5wRCwbe3JGuXUII20iJ"
+},
+{
+"chunk": 73,
+"voice": "second",
+"begin": 3695.961,
+"end": 3702.805,
+"lines": [
+259,
+260
+],
+"request_id": "6ODGNf1wm7Ajez2HoaD3"
+},
+{
+"chunk": 74,
+"voice": "main",
+"begin": 3707.847,
+"end": 3738.593,
+"lines": [
+260,
+261
+],
+"request_id": "nQ0p2rtVsv5DqwSw7vZb"
+},
+{
+"chunk": 75,
+"voice": "second",
+"begin": 3739.429,
+"end": 3746.743,
+"lines": [
+261,
+262
+],
+"request_id": "3ecKuxSR0Zf0QQonpYh9"
+},
+{
+"chunk": 76,
+"voice": "main",
+"begin": 3751.784,
+"end": 3775.269,
+"lines": [
+262,
+263
+],
+"request_id": "EaliAp5nV133FkCSI7og"
+},
+{
+"chunk": 77,
+"voice": "second",
+"begin": 3776.104,
+"end": 3783.262,
+"lines": [
+263,
+264
+],
+"request_id": "LJdHNDO4Jj305lvGywSN"
+},
+{
+"chunk": 78,
+"voice": "main",
+"begin": 3788.304,
+"end": 3808.418,
+"lines": [
+264,
+265
+],
+"request_id": "v3sTnZgdd6ZhneW9j4uq"
+},
+{
+"chunk": 79,
+"voice": "second",
+"begin": 3809.254,
+"end": 3816.882,
+"lines": [
+265,
+266
+],
+"request_id": "bpoJ4pyXlc5kVWry9Xo8"
+},
+{
+"chunk": 80,
+"voice": "main",
+"begin": 3821.923,
+"end": 3863.406,
+"lines": [
+266,
+267
+],
+"request_id": "Ojtvp2fmwSiqEk3e98ud"
+},
+{
+"chunk": 81,
+"voice": "main",
+"begin": 3866.723,
+"end": 3868.369,
+"lines": [
+267,
+268
+],
+"request_id": "aGitMQIINcmrizDnwpkF"
+},
+{
+"chunk": 82,
+"voice": "main",
+"begin": 3869.414,
+"end": 3883.207,
+"lines": [
+268,
+269
+],
+"request_id": "SFEpn8wRbHAd8PLWXyV2"
+}
+]
+}

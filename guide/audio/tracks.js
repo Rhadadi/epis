@@ -784,7 +784,7 @@ window.TRACKS = [
   "file": "12-social-epistemology.mp3",
   "text": "../12-social-epistemology.md",
   "title": "Chapter 12 — Social Epistemology: Knowing Together",
-  "duration": 3631.8,
+  "duration": 3884.8,
   "sections": [
    {
     "title": "Chapter twelve. Social Epistemology: Knowing Together.",
@@ -792,71 +792,71 @@ window.TRACKS = [
    },
    {
     "title": "Why knowledge is social",
-    "start": 111.6
+    "start": 125.6
    },
    {
     "title": "Trust and epistemic dependence",
-    "start": 215.6
+    "start": 232.5
    },
    {
     "title": "Experts and novices",
-    "start": 355.1
+    "start": 382.2
    },
    {
     "title": "Peer disagreement",
-    "start": 709.8
+    "start": 772.7
    },
    {
     "title": "Why reasonable people disagree",
-    "start": 1142.4
+    "start": 1235.1
    },
    {
     "title": "Epistemic injustice",
-    "start": 1222.7
+    "start": 1319.9
    },
    {
     "title": "Standpoint and feminist epistemology",
-    "start": 1453.3
+    "start": 1562.9
    },
    {
     "title": "Echo chambers and epistemic bubbles",
-    "start": 1655.9
+    "start": 1772.6
    },
    {
     "title": "Conformity, cascades, and herding",
-    "start": 1863.2
+    "start": 1986.4
    },
    {
     "title": "The wisdom and madness of crowds",
-    "start": 2023.5
+    "start": 2155.3
    },
    {
     "title": "Group knowledge and belief",
-    "start": 2240.9
+    "start": 2388.3
    },
    {
     "title": "Misinformation, disinformation, and propaganda",
-    "start": 2372.5
+    "start": 2535.6
    },
    {
     "title": "Conspiracy theories",
-    "start": 2646.4
+    "start": 2824.5
    },
    {
     "title": "Epistemic institutions",
-    "start": 2906.3
+    "start": 3103.8
    },
    {
     "title": "Epistemic autonomy and artificial intelligence",
-    "start": 3088.7
+    "start": 3303.0
    },
    {
     "title": "Quick review",
-    "start": 3290.9
+    "start": 3519.4
    },
    {
     "title": "End of chapter twelve",
-    "start": 3612.8
+    "start": 3864.4
    }
   ]
  },
