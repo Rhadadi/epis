@@ -97,5 +97,17 @@
 <pubDate>Thu, 01 Jan 2026 07:00:00 +0000</pubDate>
 <itunes:duration>4062</itunes:duration>
 </item>
+<item>
+<title>فصل ۸: شکاکیت و پاسخ‌هایش</title>
+<itunes:title>شکاکیت و پاسخ‌هایش</itunes:title>
+<itunes:episode>8</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>شکاکیتِ پیرونی و دکارتی؛ مغز در خمره؛ استدلالِ انسداد؛ مور، زمینه‌گرایی، معرفت‌شناسیِ لولا و پاسخ‌های دیگر؛ شکاکیتِ سالم در برابرِ شکاکیتِ ویرانگر متنِ فصل: https://rhadadi.github.io/epis/fa/guide/08-skepticism.html</description>
+<link>https://rhadadi.github.io/epis/fa/guide/08-skepticism.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/fa/audio/08-skepticism.mp3" length="27439552" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-fa-08</guid>
+<pubDate>Thu, 01 Jan 2026 08:00:00 +0000</pubDate>
+<itunes:duration>4573</itunes:duration>
+</item>
 </channel>
 </rss>

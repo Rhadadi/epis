@@ -2,7 +2,7 @@
 
 [← قبلی: سرچشمه‌های معرفت](07-sources-of-knowledge.md) · [فهرست](README.md) · [بعدی: استقرا، احتمال و استدلالِ بیزی ←](09-induction-probability-bayes.md)
 
-**صوت:** [شنیدنِ این فصل](audio/08-skepticism.mp3) (۵۴ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#08)
+**صوت:** [شنیدنِ این فصل](audio/08-skepticism.mp3) (۱ ساعت و ۱۶ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#08)
 
 ---
 
