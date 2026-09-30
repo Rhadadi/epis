@@ -2,7 +2,7 @@
 
 [← قبلی: استقرا، احتمال و استدلالِ بیزی](09-induction-probability-bayes.md) · [فهرست](README.md) · [بعدی: حقیقت، نسبی‌گرایی و عینیت ←](11-truth-and-relativism.md)
 
-**صوت:** [شنیدنِ این فصل](audio/10-science-and-evidence.mp3) (۱ ساعت و ۶ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#10)
+**صوت:** [شنیدنِ این فصل](audio/10-science-and-evidence.mp3) (۱ ساعت و ۳۱ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#10)
 
 ---
 

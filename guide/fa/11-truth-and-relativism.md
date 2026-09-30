@@ -2,7 +2,7 @@
 
 [← قبلی: علم، شواهد و تبیین](10-science-and-evidence.md) · [فهرست](README.md) · [بعدی: معرفت‌شناسی اجتماعی ←](12-social-epistemology.md)
 
-**صوت:** [شنیدنِ این فصل](audio/11-truth-and-relativism.mp3) (۴۱ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#11)
+**صوت:** [شنیدنِ این فصل](audio/11-truth-and-relativism.mp3) (۵۹ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#11)
 
 ---
 

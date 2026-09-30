@@ -2,7 +2,7 @@
 
 [← قبلی: تاریخِ نظریهٔ معرفت](02-history-of-epistemology.md) · [فهرست](README.md) · [بعدی: زبان، مفهوم‌ها و تعریف‌ها ←](04-language-concepts-and-definitions.md)
 
-**صوت:** [شنیدنِ این فصل](audio/03-logic-and-arguments.mp3) (۱ ساعت و ۷ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#03)
+**صوت:** [شنیدنِ این فصل](audio/03-logic-and-arguments.mp3) (۱ ساعت و ۸ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#03)
 
 ---
 
