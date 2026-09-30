@@ -2,7 +2,7 @@
 
 [← قبلی: روان‌شناسیِ استدلال](14-psychology-of-reasoning.md) · [فهرست](README.md) · [بعدی: جعبه‌ابزارِ متفکرِ نقاد ←](16-critical-thinking-toolkit.md)
 
-**صوت:** [شنیدنِ این فصل](audio/15-fallacies.mp3) (۵۷ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#15)
+**صوت:** [شنیدنِ این فصل](audio/15-fallacies.mp3) (۱ ساعت و ۱۸ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#15)
 
 ---
 

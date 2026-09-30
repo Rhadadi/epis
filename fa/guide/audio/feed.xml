@@ -181,5 +181,29 @@
 <pubDate>Thu, 01 Jan 2026 14:00:00 +0000</pubDate>
 <itunes:duration>5000</itunes:duration>
 </item>
+<item>
+<title>فصل ۱۵: راهنمای میدانیِ مغالطه‌ها</title>
+<itunes:title>راهنمای میدانیِ مغالطه‌ها</itunes:title>
+<itunes:episode>15</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>بیش از چهل مغالطه و ترفندِ بلاغی، هر کدام با مثال، با شکلِ درست و مشروعش، و با راهِ جواب دادن به آن؛ تمرین‌ها متنِ فصل: https://rhadadi.github.io/epis/fa/guide/15-fallacies.html</description>
+<link>https://rhadadi.github.io/epis/fa/guide/15-fallacies.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/fa/audio/15-fallacies.mp3" length="27997041" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-fa-15</guid>
+<pubDate>Thu, 01 Jan 2026 15:00:00 +0000</pubDate>
+<itunes:duration>4666</itunes:duration>
+</item>
+<item>
+<title>فصل ۱۶: جعبه‌ابزارِ متفکرِ نقاد: تحلیلِ گفت‌وگوها و ساختنِ استدلال</title>
+<itunes:title>جعبه‌ابزارِ متفکرِ نقاد: تحلیلِ گفت‌وگوها و ساختنِ استدلال</itunes:title>
+<itunes:episode>16</itunes:episode>
+<itunes:episodeType>full</itunes:episodeType>
+<description>روشی هفت‌مرحله‌ای برای تحلیلِ هر بحث؛ نظریهٔ نقطهٔ نزاع؛ پیدا کردنِ گرهِ اختلاف؛ ساختنِ استدلالِ خودتان؛ بارِ اثبات؛ تیغ‌های فلسفی؛ اخلاقِ گفت‌وگو؛ مطالعه‌های موردی متنِ فصل: https://rhadadi.github.io/epis/fa/guide/16-critical-thinking-toolkit.html</description>
+<link>https://rhadadi.github.io/epis/fa/guide/16-critical-thinking-toolkit.html</link>
+<enclosure url="https://rhadadi.github.io/epis/guide/fa/audio/16-critical-thinking-toolkit.mp3" length="31448253" type="audio/mpeg"/>
+<guid isPermaLink="false">epis-fa-16</guid>
+<pubDate>Thu, 01 Jan 2026 16:00:00 +0000</pubDate>
+<itunes:duration>5241</itunes:duration>
+</item>
 </channel>
 </rss>

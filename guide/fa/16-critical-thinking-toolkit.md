@@ -2,7 +2,7 @@
 
 [← قبلی: راهنمای میدانیِ مغالطه‌ها](15-fallacies.md) · [فهرست](README.md) · [بعدی: واژه‌نامه ←](17-glossary.md)
 
-**صوت:** [شنیدنِ این فصل](audio/16-critical-thinking-toolkit.mp3) (۱ ساعت و ۱ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#16)
+**صوت:** [شنیدنِ این فصل](audio/16-critical-thinking-toolkit.mp3) (۱ ساعت و ۲۷ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#16)
 
 ---
 
