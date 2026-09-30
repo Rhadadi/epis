@@ -954,6 +954,12 @@ html[dir="rtl"] .toc ol{border-left:0;border-right:1px solid var(--rule)}
 html[dir="rtl"] .toc li a{padding:6px 14px 6px 0;margin-left:0;margin-right:-1px;border-left:0;border-right:2px solid transparent}
 html[dir="rtl"] .toc li a.on{border-right-color:var(--accent)}
 html[dir="rtl"] .side .left{padding-left:0;padding-right:16px}
+/* phones and tablets: the side column is only the time left, a small line just above the chapter links */
+@media(max-width:1119px){.page{padding-top:16px;gap:0}.side .left,html[dir="rtl"] .side .left{margin:0 0 4px;padding:0}
+  .chnav{margin-bottom:16px}article .listen{margin-bottom:20px}.mini-toc{margin-bottom:22px}}
+/* phones: the painting's caption is given in full just below the hero, so not in it as well */
+@media(max-width:820px){.hero:has(+ .art-label) .plate{display:none}}
+@media(max-width:600px){.hero-in{padding-bottom:30px}}
 html[dir="rtl"] .prose:not([dir="ltr"]) ul,html[dir="rtl"] .prose:not([dir="ltr"]) ol{padding-left:0;padding-right:1.35em}
 html[dir="rtl"] .prose:not([dir="ltr"]) blockquote{padding:.15em 1.3em .15em 0;border-left:0;border-right:3px solid var(--accent)}
 html[dir="rtl"] .prose:not([dir="ltr"]) blockquote.quote{border:0;padding:0;text-align:right}
