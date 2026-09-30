@@ -1479,7 +1479,7 @@ def build_audio_page(art, chapters, tracks, feed=None):
             f'<section class="secs"><h2 class="kicker" style="color:var(--dim)">{L("Sections in this chapter", "بخش‌های این فصل")}</h2><ol id="sections"></ol></section></div>'
             + audiobook_section(tracks, feed) +
             f'<p style="color:var(--dim);font-size:.95rem;margin-top:30px">'
-            + L('The narration is generated with a synthetic voice, the open Kokoro-82M text-to-speech model, from scripts adapted for listening. '
+            + L(re.sub(r"<[^>]+>", "", en_voices_credit()) + 'The scripts are adapted for listening. '
                 '<a href="about.html">How the audio was made</a>. Keyboard: <kbd>k</kbd> or space to play and pause, <kbd>j</kbd> and <kbd>l</kbd> to skip.',
                 fa_audio(f'روایت با صداهای ساختگی ({fa_engines_phrase()})، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. ',
                          'روایت با صدایی ساختگی، با مدلِ متن‌به‌گفتارِ متن‌باز Kokoro-82M، از متن‌هایی ساخته شده که برای شنیدن بازنویسی شده‌اند. '
@@ -1587,11 +1587,8 @@ def build_credits(art):
                 'برای دیدنِ پروندهٔ اصلی و توضیحِ آن، پیوندِ هر مورد را دنبال کنید.</p>')
             + f'</div><div class="credits">{"".join(cards)}</div>'
             f'<div class="prose" style="max-width:46rem;margin-top:40px"><h2>{L("Sound", "صدا")}</h2><p>'
-            + L(f'The audio edition is narrated by a synthetic voice: the <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> text-to-speech model '
-                f'(Apache License 2.0), with pronunciation by <a href="https://github.com/hexgrad/misaki">misaki</a>. See <a href="{audio}">how the audio was made</a>.',
-                fa_audio(fa_voices_credit() + 'نسخهٔ صوتیِ انگلیسی', 'نسخهٔ صوتی (به انگلیسی)') +
-                f' با صدایی ساختگی روایت شده است: مدلِ متن‌به‌گفتارِ <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> '
-                f'(مجوز آپاچی ۲٫۰)، با تلفظِ <a href="https://github.com/hexgrad/misaki">misaki</a>. <a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
+            + L(f'{en_voices_credit()}See <a href="{audio}">how the audio was made</a>.',
+                fa_audio(fa_voices_credit(), '') + en_voices_credit() + f'<a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
             + f'</p><h2>{L("Type", "حروف")}</h2><p>{fonts}{L(", all under the SIL Open Font License (follow a name for its licence).", "؛ همه با مجوزِ SIL Open Font License (برای دیدنِ مجوز، روی نام کلیک کنید).")}</p></div></main>')
     return body
 
@@ -1789,6 +1786,62 @@ def build_terms(art):
          L(f"<p>Questions about these terms: please open an issue at <a href=\"{ISSUES}\">{ISSUES}</a>.</p>",
            f"<p>برای پرسش دربارهٔ این شرایط، لطفاً در <a href=\"{ISSUES}\">{ISSUES}</a> یک issue باز کنید.</p>")),
     ], "terms.html")
+
+
+def en_engines():
+    """Which English chapters each narration engine made, from the sync files: {"ElevenLabs": [1], "Kokoro": [2, 3]}."""
+    out = {}
+    for mp3 in sorted((GUIDE / "audio").glob("[01][0-9]-*.mp3")):
+        p = GUIDE / "audio" / "sync" / (mp3.stem + ".json")
+        engine = (json.loads(p.read_text(encoding="utf-8")).get("narration") or {}).get("engine") if p.exists() else None
+        out.setdefault(engine or "Kokoro", []).append(int(mp3.name[:2]))
+    return out
+
+
+def en_chapters_phrase(nums, fa=False):
+    """«chapter 1», «chapters 1–3 and 5» (runs as ranges); in Persian with Persian digits."""
+    runs, start = [], None
+    for i, n in enumerate(nums):
+        if start is None:
+            start = n
+        if i + 1 == len(nums) or nums[i + 1] != n + 1:
+            runs.append((start, n))
+            start = None
+    d = (lambda x: num(x)) if fa else str
+    parts = [d(a) if a == b else f"{d(a)}–{d(b)}" for a, b in runs]
+    if fa:
+        return ("فصلِ " if len(nums) == 1 else "فصل‌های ") + ("، ".join(parts[:-1]) + " و " + parts[-1] if len(parts) > 1 else parts[0])
+    return ("chapter " if len(nums) == 1 else "chapters ") + (", ".join(parts[:-1]) + " and " + parts[-1] if len(parts) > 1 else parts[0])
+
+
+KOKORO = ('<a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> text-to-speech model (Apache License 2.0), '
+          'with pronunciation by <a href="https://github.com/hexgrad/misaki">misaki</a>')
+KOKORO_FA = ('مدلِ متن‌به‌گفتارِ <a href="https://huggingface.co/hexgrad/Kokoro-82M">Kokoro-82M</a> (مجوز آپاچی ۲٫۰)، '
+             'با تلفظِ <a href="https://github.com/hexgrad/misaki">misaki</a>')
+
+
+def en_voices_credit():
+    """Credits for the English narration, chapter by chapter engine (in the language being built)."""
+    e = en_engines()
+    eleven, kokoro = e.get("ElevenLabs", []), e.get("Kokoro", [])
+    if LANG == "fa":
+        out = ""
+        if eleven:
+            out += ((f"{en_chapters_phrase(eleven, True)} نسخهٔ صوتیِ انگلیسی را " if kokoro else "نسخهٔ صوتیِ انگلیسی را ")
+                    + 'سه صدای ساختگیِ <a href="https://elevenlabs.io">ElevenLabs</a> خوانده‌اند: آرتور راوی است، '
+                    'جین هر بخشِ سوم و پرسش‌های آزمونک را می‌خواند، و آدام استون نقل‌قول‌ها را. ')
+        if kokoro:
+            out += ("فصل‌های دیگرِ آن را " if eleven else "نسخهٔ صوتیِ انگلیسی را ") + f"صدایی ساختگی روایت کرده است: {KOKORO_FA}. "
+        return out
+    out = ""
+    if eleven:
+        who = en_chapters_phrase(eleven) if kokoro else "The English audio edition"
+        out += (f'{who[0].upper() + who[1:]} {"is" if len(eleven) == 1 and kokoro else "are" if kokoro else "is"} read by three synthetic '
+                '<a href="https://elevenlabs.io">ElevenLabs</a> voices: Arthur narrates, Jane reads every third section and asks the quiz '
+                'questions, and Adam Stone reads the quotations. ')
+    if kokoro:
+        out += ("The other chapters are" if eleven else "The audio edition is") + f" narrated by a synthetic voice: the {KOKORO}. "
+    return out
 
 
 def fa_engines():

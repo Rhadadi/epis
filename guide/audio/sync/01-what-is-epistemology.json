@@ -1,0 +1,2165 @@
+{
+"file": "01-what-is-epistemology.mp3",
+"title": "Chapter 1 — What Is Epistemology?",
+"duration": 2314.658,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "say",
+"text": "Welcome to Mastering Epistemology, the audio edition of a complete guide to knowledge, evidence, and critical thinking.",
+"begin": 0.0,
+"end": 7.68,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This recording follows the written guide closely. A few things change for the ear: diagrams are left out, tables are read row by row, links become plain words, and each chapter ends with a spoken quiz, with time for you to think.",
+"begin": 8.0,
+"end": 23.48,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The narration is generated with a synthetic voice.",
+"begin": 23.76,
+"end": 26.72,
+"voice": "main"
+},
+{
+"kind": "opening",
+"text": "Chapter one. What Is Epistemology?",
+"begin": 29.571,
+"end": 32.771,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"All men by nature desire to know.\"",
+"begin": 34.038,
+"end": 37.478,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Aristotle, Metaphysics.",
+"begin": 38.06,
+"end": 40.22,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"The first principle is that you must not fool yourself — and you are the easiest person to fool.\"",
+"begin": 41.091,
+"end": 48.211,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Richard Feynman, Caltech commencement address.",
+"begin": 48.797,
+"end": 51.997,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Epistemology is the branch of philosophy that studies knowledge, belief, evidence, justification, and rationality. The word comes from the Greek epistēmē — knowledge, understanding — and logos — account, study. The Scottish philosopher James Frederick Ferrier coined the English term in his Institutes of Metaphysic. German philosophers call the field Erkenntnistheorie, \"theory of cognition.\"",
+"begin": 52.872,
+"end": 81.032,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Most disciplines study some part of the world. Epistemology studies how we come to know anything about the world. For that reason it sits under every other field. Physicists, historians, judges, doctors, and journalists all make claims to know things, and each of them relies, usually without saying so, on assumptions about what counts as good evidence and when a belief is warranted. Epistemology makes those assumptions explicit and tests them.",
+"begin": 81.672,
+"end": 112.152,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This chapter gives you the basic vocabulary and the overall map. Every later chapter builds on it.",
+"begin": 112.552,
+"end": 118.712,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Here's the plan. We'll start with a dinner-table argument about a diet, and find six separate epistemological problems hiding inside it.",
+"begin": 119.38,
+"end": 127.62,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then we'll meet the big questions of the field, three different kinds of knowing, and the difference between believing something, being fairly confident of it, and merely accepting it for the sake of argument.",
+"begin": 128.1,
+"end": 140.02,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "After that come three great distinctions that philosophers have argued over for centuries, a billionaire who offers to pay you to believe that the moon is made of cheese, and a map of the whole field. We'll finish by reading a single news headline through twelve different epistemic lenses.",
+"begin": 140.26,
+"end": 157.62,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Why epistemology matters for critical thinking",
+"begin": 158.877,
+"end": 161.837,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Critical thinking is applied epistemology. When you ask \"Is this true?\", \"How do they know that?\", \"Why should I trust this source?\", or \"What would change my mind?\", you are asking epistemological questions. You are just asking them quickly and informally.",
+"begin": 162.926,
+"end": 179.726,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Take a disagreement that could happen at any dinner table.",
+"begin": 180.286,
+"end": 183.406,
+"voice": "main"
+},
+{
+"kind": "voice1",
+"text": "\"That new diet works. My cousin lost ten kilograms in two months.\"",
+"begin": 183.824,
+"end": 188.784,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"Anecdotes aren't evidence.\"",
+"begin": 189.205,
+"end": 191.285,
+"voice": "second"
+},
+{
+"kind": "voice1",
+"text": "\"So you think my cousin is lying?\"",
+"begin": 191.713,
+"end": 194.193,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"No, but one case proves nothing.\"",
+"begin": 194.612,
+"end": 197.732,
+"voice": "second"
+},
+{
+"kind": "voice1",
+"text": "\"Well, the scientists said eggs were bad and then said they were fine, so why trust them?\"",
+"begin": 198.165,
+"end": 204.485,
+"voice": "third"
+},
+{
+"kind": "say",
+"text": "This short exchange contains at least six epistemological problems.",
+"begin": 204.904,
+"end": 209.544,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The status of testimony. A believes something because a cousin said it. When is testimony a good reason?",
+"begin": 209.944,
+"end": 218.424,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Induction from a single case. Can one instance support a general claim?",
+"begin": 218.904,
+"end": 224.664,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Causal inference. Even if the cousin lost weight, did the diet cause it?",
+"begin": 225.544,
+"end": 231.144,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. A misunderstanding of B's claim. B said \"one case proves nothing\"; A heard \"your cousin is lying.\" That is a straw man, or at least a failure of the principle of charity.",
+"begin": 232.104,
+"end": 245.624,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Trust in expertise. Does the fact that scientists revised a view mean they are unreliable, or is revision a sign that a self-correcting method is working?",
+"begin": 246.584,
+"end": 257.544,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Standards of evidence. \"Anecdotes aren't evidence\" is itself too strong. Anecdotes are weak evidence, not zero evidence.",
+"begin": 258.504,
+"end": 268.504,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Someone who has studied epistemology does not \"win\" such arguments by knowing clever terms. They can see the structure of the disagreement: what is being claimed, what would support it, where the parties actually differ, and what would settle the matter. That is the skill this guide is designed to build.",
+"begin": 269.384,
+"end": 288.184,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "There are three further reasons to study the field.",
+"begin": 288.664,
+"end": 291.304,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Self-defense. People who want your money, your vote, or your loyalty exploit predictable weaknesses in human reasoning. Knowing the weaknesses and the standard tricks is protective.",
+"begin": 292.024,
+"end": 303.784,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Better collective decisions. Democracies, courts, scientific communities, and companies are systems for producing knowledge together. Understanding social epistemology shows why these systems work when they work and why they fail.",
+"begin": 304.664,
+"end": 320.664,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Intellectual honesty. Epistemology teaches you to hold beliefs with the right degree of confidence, not more and not less. This is a moral achievement as well as an intellectual one.",
+"begin": 321.144,
+"end": 333.384,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The central questions",
+"begin": 334.655,
+"end": 336.015,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Epistemology is organized around a handful of big questions. Almost every topic in this guide is an attempt to answer one of them.",
+"begin": 337.11,
+"end": 345.71,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What is knowledge? How does it differ from true belief, lucky guessing, or opinion? That's the analysis of knowledge, in Chapter five.",
+"begin": 346.07,
+"end": 355.31,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What makes a belief justified or reasonable? That's the theory of justification, in Chapter six.",
+"begin": 355.67,
+"end": 361.91,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Where does knowledge come from? Perception, memory, reason, testimony? That's the sources of knowledge, in Chapter seven.",
+"begin": 362.55,
+"end": 370.71,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Can we know anything at all? How far does our knowledge reach? That's the problem of skepticism, in Chapter eight.",
+"begin": 371.35,
+"end": 378.55,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "How can past experience justify beliefs about the future? That's the problem of induction, in Chapter nine.",
+"begin": 379.27,
+"end": 386.35,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "How should we reason under uncertainty? That's probability and Bayesian epistemology, in Chapter nine.",
+"begin": 386.71,
+"end": 393.63,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What makes science a reliable way of knowing? That's philosophy of science, in Chapter ten.",
+"begin": 393.99,
+"end": 399.75,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What is truth? Is it objective? That's theories of truth; relativism, in Chapter eleven.",
+"begin": 400.47,
+"end": 407.03,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "When should we trust others? What should we do when experts or peers disagree? That's social epistemology, in Chapter twelve.",
+"begin": 407.75,
+"end": 416.35,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What intellectual character traits make a good thinker? Do we have duties about what to believe? That's virtue epistemology; the ethics of belief, in Chapter thirteen.",
+"begin": 416.71,
+"end": 427.79,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "How do real human minds reason, and how do they go wrong? That's naturalized epistemology; the psychology of reasoning, in Chapter fourteen.",
+"begin": 428.15,
+"end": 437.83,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Two questions come before all the others, and philosophers have argued about their order for two thousand five hundred years.",
+"begin": 438.31,
+"end": 445.27,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "What do we know? — the extent of knowledge.",
+"begin": 445.99,
+"end": 449.15,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "How do we know? — the criteria of knowledge.",
+"begin": 449.51,
+"end": 452.47,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "To say what we know, it seems we need a criterion for picking out knowledge. To test a criterion, it seems we need some clear cases of knowledge to check it against. This circle is called the problem of the criterion. It is a good first example of how epistemology works: a simple question leads quickly to a deep structural puzzle.",
+"begin": 453.35,
+"end": 474.71,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Three kinds of knowing",
+"begin": 475.977,
+"end": 477.417,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "English uses the single word \"know\" for quite different things. Many other languages separate them: French has savoir and connaître, German wissen and kennen, Persian dānestan and shenākhtan.",
+"begin": 478.511,
+"end": 493.471,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The concept itself seems to be universal. \"Know\" is among the ten most common verbs in English, and linguists working on the \"Natural Semantic Metalanguage\" project — Anna Wierzbicka, Cliff Goddard, and colleagues — list KNOW and THINK among a small set of meanings, fewer than a hundred, that appear to have an exact equivalent in every human language studied. Many words you might expect to be universal are not: some languages have no single verb for \"go\" or \"eat.\" Jennifer Nagel takes this as a hint that the contrast between knowing and merely thinking is basic to human life, not a philosopher's invention.",
+"begin": 493.871,
+"end": 534.031,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Knowledge is also different from facts. Nagel's example: shake a sealed box containing a coin and put it down. The coin has landed heads or tails; that is a fact. But until someone looks, no one knows which. Writing \"heads\" on one slip of paper and \"tails\" on another puts the fact on paper without putting it into anyone's knowledge. Knowledge always belongs to someone: a person, or a group whose members pool what they know — an orchestra knows how to play a symphony that no single player could.",
+"begin": 534.671,
+"end": 569.631,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Propositional knowledge",
+"begin": 570.351,
+"end": 571.631,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Propositional knowledge is knowing that something is the case.",
+"begin": 572.5,
+"end": 576.1,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "I know that Paris is the capital of France.",
+"begin": 576.66,
+"end": 579.38,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "She knows that the train leaves at nine fifteen.",
+"begin": 579.94,
+"end": 582.82,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "We know that smoking causes cancer.",
+"begin": 583.38,
+"end": 585.7,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What is known here is a proposition: something that can be true or false. Propositional knowledge is the main topic of traditional epistemology, and when this guide says \"knowledge\" without qualification, it means this kind. Chapter five asks what it consists in.",
+"begin": 586.26,
+"end": 604.02,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Knowledge-how",
+"begin": 604.5,
+"end": 605.22,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Knowledge-how, practical knowledge, is knowing how to do something.",
+"begin": 606.093,
+"end": 610.333,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "I know how to ride a bicycle.",
+"begin": 610.973,
+"end": 613.373,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "She knows how to comfort a crying child.",
+"begin": 613.453,
+"end": 616.493,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A chess master knows how to exploit a weak pawn structure.",
+"begin": 616.573,
+"end": 620.533,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Gilbert Ryle, in \"Knowing How and Knowing That\" and The Concept of Mind, argued that knowing how is a distinct kind of knowledge and cannot be reduced to knowing facts. His argument: if every intelligent action required first considering a proposition, then considering that proposition intelligently would require considering another proposition first, and so on forever. So some intelligence must be in the doing itself. This is anti-intellectualism.",
+"begin": 620.973,
+"end": 653.053,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Jason Stanley and Timothy Williamson defended intellectualism: knowing how to ride a bicycle is knowing, of some way w, that w is a way for you to ride a bicycle, grasped under a \"practical mode of presentation.\" The debate continues. For critical thinkers, the practical upshot is clear enough: reasoning well is partly a skill. You can know all the rules of logic and still reason badly in a heated argument, just as you can know the physics of cycling and still fall off. Skills need practice. That is why this guide includes exercises.",
+"begin": 653.133,
+"end": 691.813,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Knowledge by acquaintance",
+"begin": 691.853,
+"end": 693.293,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Knowledge by acquaintance is direct familiarity with a thing, person, place, or experience.",
+"begin": 694.178,
+"end": 700.738,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "I know Tehran — I have lived there.",
+"begin": 701.058,
+"end": 703.618,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "I know the taste of saffron.",
+"begin": 703.938,
+"end": 705.618,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "I know my sister.",
+"begin": 706.178,
+"end": 707.138,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bertrand Russell distinguished \"knowledge by acquaintance\" from \"knowledge by description\". You might know a great many facts about Napoleon, knowledge by description, without ever having been acquainted with him.",
+"begin": 707.698,
+"end": 719.778,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A famous thought experiment presses on this distinction. Frank Jackson's Mary's room: Mary is a brilliant scientist who knows every physical fact about color vision but has lived her whole life in a black-and-white room. When she steps outside and sees a red rose for the first time, does she learn something new? Many people say yes: she learns what it is like to see red. If so, there is knowledge that no amount of propositional description delivers. Jackson used the case to argue against physicalism in philosophy of mind, and later changed his mind. The case is still a sharp illustration of acquaintance.",
+"begin": 720.258,
+"end": 760.098,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Islamic philosophical tradition makes a related distinction between knowledge by presence, ʿilm ḥuḍūrī, and acquired, representational knowledge — ʿilm ḥuṣūlī. It is discussed in Chapter seven.",
+"begin": 760.658,
+"end": 773.698,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "A connection worth making.",
+"begin": 774.578,
+"end": 776.338,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Other forms: knowing who, knowing where, knowing whether, knowing why — \"knowledge-wh\". Many philosophers analyze these as propositional: to know where the keys are is to know, of some place, that the keys are there. Knowing why is closely tied to understanding, which some argue is more valuable than knowledge.",
+"begin": 777.012,
+"end": 800.372,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Belief, credence, and acceptance",
+"begin": 801.646,
+"end": 804.526,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Knowledge involves belief, so we need to be clear about what belief is.",
+"begin": 805.616,
+"end": 811.056,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Belief is the attitude of taking something to be true. If you believe that it is raining, you represent the world as including rain, you are disposed to say \"It's raining\" if asked sincerely, to carry an umbrella if you care about staying dry, and to be surprised if you walk out and find the street dry. Beliefs are commonly understood as dispositional: you believe right now that two plus two equals four even though you were not thinking about it a moment ago.",
+"begin": 811.376,
+"end": 840.576,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Belief is an all-or-nothing notion in ordinary talk: you believe, disbelieve, or suspend judgment. There are three basic doxastic attitudes — from Greek doxa, opinion.",
+"begin": 840.696,
+"end": 853.216,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Belief that p.",
+"begin": 853.856,
+"end": 855.776,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Disbelief that p — believing not-p.",
+"begin": 856.416,
+"end": 860.456,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Suspension of judgment about p — neither.",
+"begin": 860.816,
+"end": 864.576,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "But belief also comes in degrees. You are more confident that the sun will rise tomorrow than that your team will win on Saturday. A credence — or degree of belief, subjective probability — is a number between zero and one representing how confident you are. Credence one is certainty that p, zero is certainty that not-p, and point five is maximal uncertainty between the two. Bayesian epistemology, covered in Chapter nine, is largely a theory of how credences should behave.",
+"begin": 865.136,
+"end": 898.096,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How full belief relates to credence is a live question. A natural answer, the Lockean thesis, says you believe p when your credence in p is above some threshold — say point nine five. It runs into the lottery paradox.",
+"begin": 898.176,
+"end": 913.056,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Acceptance is different from belief. To accept a proposition is to adopt it as a premise for reasoning and acting in some context, whether or not you believe it. Examples.",
+"begin": 913.616,
+"end": 924.896,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A defense lawyer accepts that her client is innocent for the purpose of building the defense, whatever she privately believes.",
+"begin": 925.376,
+"end": 932.176,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "An engineer accepts that air resistance is negligible when doing a quick calculation.",
+"begin": 932.656,
+"end": 937.536,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A negotiator accepts the other side's figures \"for the sake of argument.\"",
+"begin": 938.016,
+"end": 942.176,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Distinguishing belief from acceptance clears up many confused discussions. \"You're assuming X!\" is not a refutation when the other person has only accepted X for the sake of argument. Likewise, a scientific model is usually accepted, not believed. Everyone knows the ideal gas law is false in detail; it is accepted as a useful approximation.",
+"begin": 942.736,
+"end": 966.096,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Other attitudes that are not belief: supposition, \"suppose the moon were made of cheese\", imagination, hope, assumption, faith, on some analyses, and conjecture. Keep them apart. Much bad reasoning slides from \"it's possible that…\", a supposition, to \"it's likely that…\", a credence, to \"it's the case that…\" — a belief.",
+"begin": 966.216,
+"end": 991.616,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The basic vocabulary",
+"begin": 992.81,
+"end": 994.25,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "These terms appear throughout the guide. Full definitions are in the Glossary.",
+"begin": 995.344,
+"end": 999.664,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Proposition. What a declarative sentence expresses; the kind of thing that can be true or false. \"Snow is white\" and \"La neige est blanche\" express the same proposition.",
+"begin": 1000.144,
+"end": 1011.904,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Truth. On the most common view, a proposition is true when things are as it says they are. Aristotle put it this way: \"To say of what is that it is not, or of what is not that it is, is false, while to say of what is that it is, and of what is not that it is not, is true\" — Metaphysics gamma seven. The theories are compared in Chapter eleven.",
+"begin": 1012.224,
+"end": 1036.384,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Evidence. Whatever makes a proposition more or less likely to be true for you, or supports it. Philosophers disagree about what evidence is: experiences? mental states? known facts? Timothy Williamson's slogan is \"E equals K\": your evidence is your knowledge. A useful working idea from probability: E is evidence for H when E is more probable if H is true than if H is false.",
+"begin": 1036.704,
+"end": 1064.904,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Justification. The property a belief has when it is held for good reasons, or formed in the right way, so that holding it is epistemically appropriate. A justified belief can still be false: a detective can be justified in believing the butler did it and turn out to be wrong.",
+"begin": 1065.264,
+"end": 1082.304,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Rationality. Close to justification but broader. Epistemic rationality concerns believing in line with evidence; practical rationality concerns acting well given one's goals and beliefs. Philosophers also distinguish rationality as internal coherence — not believing contradictions, updating on evidence — from reasonableness in a wider sense.",
+"begin": 1083.024,
+"end": 1106.584,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Warrant. Alvin Plantinga's term for \"whatever it is that turns true belief into knowledge\". It is a placeholder term: saying something has warrant does not yet say what warrant is.",
+"begin": 1106.944,
+"end": 1119.424,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Certainty. Two senses. Psychological certainty is a feeling of total confidence; people feel certain about many false things. Epistemic certainty is the highest possible degree of justification, where there is no possibility of error given your evidence. Few beliefs are epistemically certain.",
+"begin": 1119.824,
+"end": 1139.104,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Fallibilism. The view that we can know something even though our justification does not guarantee its truth. Nearly all contemporary epistemologists are fallibilists.",
+"begin": 1139.824,
+"end": 1150.344,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Defeater. A consideration that removes or weakens the justification for a belief.",
+"begin": 1150.704,
+"end": 1156.464,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Reasons. Philosophers distinguish three senses.",
+"begin": 1156.864,
+"end": 1160.304,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A normative reason counts in favor of believing or doing something. \"The dark clouds are a reason to believe it will rain.\"",
+"begin": 1160.784,
+"end": 1168.344,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A motivating reason is the consideration in light of which someone actually believes or acts. \"She believed it would rain because she saw clouds.\"",
+"begin": 1168.384,
+"end": 1177.344,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "An explanatory reason explains why something happened, whether or not anyone was reasoning. \"The bridge collapsed because of metal fatigue.\"",
+"begin": 1177.984,
+"end": 1186.664,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A belief can have a good normative reason available and yet be held for a bad motivating reason. That difference underlies the distinction between propositional and doxastic justification.",
+"begin": 1187.024,
+"end": 1198.544,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Three great distinctions",
+"begin": 1199.726,
+"end": 1201.486,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Three distinctions divide up the kinds of truth and knowledge. They are easy to confuse, and some of the most important arguments in philosophy turn on keeping them apart.",
+"begin": 1202.573,
+"end": 1213.453,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "A priori and a posteriori",
+"begin": 1213.933,
+"end": 1216.173,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This distinction is about how a proposition is known.",
+"begin": 1217.045,
+"end": 1220.605,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A proposition is known a priori if it can be known independently of experience, other than the experience needed to acquire the concepts. Examples: \"All bachelors are unmarried,\" \"seven plus five equals twelve,\" \"If A is taller than B and B is taller than C, then A is taller than C.\"",
+"begin": 1220.885,
+"end": 1242.885,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A proposition is known a posteriori, empirically, if knowing it requires experience of the world. Examples: \"Water boils at one hundred degrees Celsius at sea level,\" \"Canberra is the capital of Australia,\" \"There are more than a million species of insects.\"",
+"begin": 1243.205,
+"end": 1261.285,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "\"Independent of experience\" does not mean you could know it with no experience at all. You needed experience to learn what \"bachelor\" means. The point is that once you understand the proposition, no further observation is needed to know it is true.",
+"begin": 1261.765,
+"end": 1276.485,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Analytic and synthetic",
+"begin": 1277.125,
+"end": 1278.725,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This distinction is about what makes a proposition true, or in Kant's formulation, about the relation between subject and predicate.",
+"begin": 1279.608,
+"end": 1288.568,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A proposition is analytic if it is true in virtue of meaning alone, or, Kant, if the predicate is \"contained in\" the concept of the subject. \"All bachelors are unmarried\": the concept bachelor already contains unmarried.",
+"begin": 1288.888,
+"end": 1305.928,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A proposition is synthetic if its truth depends on how the world is, not just on meanings. \"All bachelors are messy\" — false, but synthetic — or \"The cat is on the mat.\"",
+"begin": 1306.248,
+"end": 1319.208,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Kant introduced the distinction in the Critique of Pure Reason. W V O Quine's \"Two Dogmas of Empiricism\" famously attacked it, arguing that no one had given a non-circular account of \"true in virtue of meaning.\"",
+"begin": 1319.768,
+"end": 1334.608,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Necessary and contingent",
+"begin": 1335.048,
+"end": 1336.808,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This distinction is about the modal status of a proposition: whether it could have been otherwise.",
+"begin": 1337.678,
+"end": 1343.798,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A necessary truth could not have been false: it is true in every possible world. \"two plus two equals four,\" \"Nothing is red all over and green all over at the same time.\"",
+"begin": 1344.078,
+"end": 1356.158,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A contingent truth is true but could have been false. \"Napoleon lost at Waterloo,\" \"There is a laptop on my desk.\"",
+"begin": 1356.718,
+"end": 1365.398,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Putting the three distinctions together",
+"begin": 1365.758,
+"end": 1367.678,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "For a long time philosophers assumed these three lined up neatly: a priori equals analytic equals necessary, and a posteriori equals synthetic equals contingent. Two philosophers showed that the alignment fails.",
+"begin": 1368.555,
+"end": 1384.555,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Kant argued there are synthetic a priori truths: propositions that tell us something substantive about the world yet can be known without experience. His examples were the truths of arithmetic and geometry — \"seven plus five equals twelve\"; \"the shortest distance between two points is a straight line\" — and fundamental principles such as \"every event has a cause.\" Explaining how synthetic a priori knowledge is possible was the central project of the Critique of Pure Reason.",
+"begin": 1385.035,
+"end": 1416.115,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Saul Kripke, in Naming and Necessity, argued for.",
+"begin": 1416.475,
+"end": 1420.235,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Necessary a posteriori truths. \"Water is H two O\" and \"Hesperus is Phosphorus\" — the evening star is the morning star; both are Venus. If water is H two O, it could not have been anything else, so the truth is necessary. But we discovered it by chemistry, not by reflection, so it is known a posteriori.",
+"begin": 1420.275,
+"end": 1443.115,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contingent a priori truths. If you fix the meaning of \"one meter\" as \"the length of stick S at time t zero,\" you know a priori that stick S is one meter long at t zero, yet it is contingent, since the stick could have been longer.",
+"begin": 1443.755,
+"end": 1460.155,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Necessary. A priori: \"two plus two equals four\"; \"All bachelors are unmarried\". A posteriori: \"Water is H two O\" — Kripke.",
+"begin": 1460.875,
+"end": 1472.235,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contingent. A priori: \"Stick S is one meter long at t zero\" — Kripke; controversial. A posteriori: \"Paris is the capital of France\".",
+"begin": 1472.555,
+"end": 1484.555,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Why this matters for critical thinking.",
+"begin": 1485.035,
+"end": 1487.115,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Many arguments quietly depend on one of these distinctions. \"You can't prove that from the armchair!\" asserts that a claim is a posteriori. \"That's true by definition!\" asserts that it is analytic, and often hides a persuasive definition. \"That's just how things happen to be\" asserts contingency. When you hear such a move, ask which distinction is in play and whether the classification is correct.",
+"begin": 1487.778,
+"end": 1513.378,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Epistemic reasons versus practical reasons",
+"begin": 1514.632,
+"end": 1517.672,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Suppose a billionaire offers you one million dollars to believe that the moon is made of cheese. You have an excellent practical reason to have the belief. But you have no epistemic reason to think it is true, and in fact you probably cannot believe it at will. Try.",
+"begin": 1518.759,
+"end": 1536.599,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This thought experiment illustrates a central idea.",
+"begin": 1537.079,
+"end": 1540.519,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Epistemic reasons bear on whether a proposition is true: evidence, arguments, reliable testimony.",
+"begin": 1540.599,
+"end": 1548.199,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Practical, or pragmatic, reasons bear on whether it would be good or useful to have a belief: comfort, reward, social belonging, motivation.",
+"begin": 1548.279,
+"end": 1558.999,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Philosophers have noticed that when we deliberate about whether to believe p, the question seems to collapse immediately into the question whether p is true. Nishi Shah called this the transparency of belief. That feature suggests belief is constitutively aimed at truth in a way that desire and hope are not.",
+"begin": 1559.479,
+"end": 1580.599,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Practical reasons for belief still matter in debates.",
+"begin": 1580.679,
+"end": 1584.306,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pascal's Wager is the most famous practical argument for belief: if God exists, belief brings infinite reward; if not, you lose little. So, Pascal argued, you should try to believe.",
+"begin": 1584.332,
+"end": 1598.079,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "William James's \"The Will to Believe\" argued that when a choice is \"live, forced, and momentous\" and evidence cannot settle it, our \"passional nature\" may legitimately decide.",
+"begin": 1598.119,
+"end": 1610.359,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Motivated reasoning is the psychological phenomenon of practical reasons leaking into belief without our noticing. We believe what we want to be true, or what our group believes.",
+"begin": 1610.439,
+"end": 1622.359,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "A practical tip.",
+"begin": 1622.439,
+"end": 1623.879,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In a heated discussion, ask yourself: \"Would I still believe this if it were inconvenient for me or my side?\" If you would not, your belief may be resting on practical rather than epistemic reasons.",
+"begin": 1624.555,
+"end": 1637.835,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Epistemology is normative",
+"begin": 1639.105,
+"end": 1641.105,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Some fields are descriptive: they describe how things are. Psychology describes how people actually reason. Epistemology is largely normative: it concerns how people ought to reason, what they are entitled to believe, and what counts as good evidence.",
+"begin": 1642.188,
+"end": 1659.668,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Ethics asks \"What should I do?\" Epistemology asks \"What should I believe?\" Parallel concepts show up on both sides.",
+"begin": 1659.948,
+"end": 1668.988,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, right or wrong action. In epistemology, justified or unjustified belief.",
+"begin": 1669.068,
+"end": 1676.428,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, moral duty. In epistemology, epistemic duty — for example, to consider evidence.",
+"begin": 1676.508,
+"end": 1683.988,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, moral virtue — courage, honesty. In epistemology, intellectual virtue — open-mindedness, intellectual honesty.",
+"begin": 1684.188,
+"end": 1694.388,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, moral responsibility and blame. In epistemology, epistemic responsibility and blame.",
+"begin": 1694.588,
+"end": 1702.268,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, consequentialism: maximize good outcomes. In epistemology, veritism: maximize true beliefs, minimize false ones.",
+"begin": 1702.348,
+"end": 1712.908,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In ethics, deontology: follow duties. In epistemology, deontological justification: meet your epistemic obligations.",
+"begin": 1713.068,
+"end": 1722.868,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The parallel is not perfect. We usually cannot choose our beliefs directly, which raises the problem of doxastic voluntarism. But it is illuminating. Chapter thirteen develops it.",
+"begin": 1723.148,
+"end": 1735.308,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What is the goal of believing? The most popular answer is truth: we want to believe truths and avoid believing falsehoods. William James noticed that these are two separate commandments, \"Believe truth!\" and \"Shun error!\", and that they pull in different directions. If you only cared about believing truths, you would believe everything. If you only cared about avoiding error, you would believe nothing. Every epistemic standard is a trade-off between the two. The same trade-off appears in statistics as the balance between false positives and false negatives, and in law as the standard of proof — \"beyond reasonable doubt\" favors avoiding false convictions over securing true ones.",
+"begin": 1735.388,
+"end": 1779.428,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Other candidate epistemic goals include knowledge, understanding, wisdom, and significant truth — not just any truth; knowing the number of grains of sand on a beach is not valuable. These are discussed in The value of knowledge.",
+"begin": 1779.468,
+"end": 1794.508,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "The map of the field",
+"begin": 1795.683,
+"end": 1796.883,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Contemporary epistemology has many branches. They are best thought of as different angles on the same subject.",
+"begin": 1797.956,
+"end": 1805.076,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Traditional, core, epistemology. The analysis of knowledge, justification, sources, skepticism.",
+"begin": 1805.636,
+"end": 1813.156,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Formal epistemology. Uses mathematics — probability theory, logic, decision theory — to model belief and reasoning.",
+"begin": 1813.716,
+"end": 1822.116,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Philosophy of science. How scientific knowledge is produced and justified.",
+"begin": 1822.596,
+"end": 1827.836,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Social epistemology. Knowledge as produced and shared by communities; testimony, expertise, disagreement, institutions.",
+"begin": 1828.116,
+"end": 1837.356,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Virtue epistemology. Focuses on the intellectual character of the knower.",
+"begin": 1837.636,
+"end": 1842.436,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Naturalized epistemology. Treats epistemology as continuous with empirical science, especially psychology.",
+"begin": 1842.996,
+"end": 1850.556,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Feminist and standpoint epistemology. How social position affects knowledge.",
+"begin": 1850.836,
+"end": 1855.956,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Moral, religious, and mathematical epistemology. How we can know moral truths, religious claims, and mathematical facts.",
+"begin": 1856.436,
+"end": 1864.356,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Applied epistemology. Epistemology of law — standards of proof, eyewitness testimony — medicine, evidence-based medicine, journalism, education, and artificial intelligence.",
+"begin": 1864.756,
+"end": 1877.716,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "How the pieces connect: one news story, twelve questions",
+"begin": 1878.988,
+"end": 1883.548,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "To see how everything fits together, imagine reading this headline.",
+"begin": 1884.63,
+"end": 1888.87,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"New study: People who drink coffee live longer.\"",
+"begin": 1889.75,
+"end": 1893.51,
+"voice": "third"
+},
+{
+"kind": "say",
+"text": "A trained epistemic eye will ask.",
+"begin": 1894.008,
+"end": 1896.488,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. What exactly is claimed? \"Live longer\" than whom? By how much? Is the claim causal, \"coffee makes you live longer\", or merely correlational — \"coffee drinkers happen to live longer\"?",
+"begin": 1897.048,
+"end": 1910.808,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Who is telling me? A journalist summarizing a press release summarizing a paper. Every link in the chain of testimony can distort.",
+"begin": 1911.448,
+"end": 1920.728,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. How was the study done? An observational study of five hundred thousand people or a randomized trial of fifty?",
+"begin": 1921.368,
+"end": 1929.688,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Could something else explain the pattern? Perhaps healthier, wealthier people drink more coffee.",
+"begin": 1929.768,
+"end": 1936.568,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. How big is the effect? A one percent reduction in relative risk is very different from a fifty percent reduction.",
+"begin": 1936.648,
+"end": 1945.048,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Does this fit with other evidence? One study against a hundred contrary ones should move you little.",
+"begin": 1945.128,
+"end": 1952.248,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. What do experts say?",
+"begin": 1952.568,
+"end": 1954.808,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Has it been replicated?",
+"begin": 1955.368,
+"end": 1957.288,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Nine. Do I want it to be true? I love coffee.",
+"begin": 1957.848,
+"end": 1961.928,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ten. Am I seeing only the results that get headlines?",
+"begin": 1962.248,
+"end": 1966.048,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eleven. How confident should I be, and what would change my mind?",
+"begin": 1966.328,
+"end": 1970.848,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Twelve. Does it matter for what I do? High stakes may call for more evidence.",
+"begin": 1971.128,
+"end": 1976.888,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A full worked analysis of this kind of headline is in Case study three.",
+"begin": 1977.208,
+"end": 1981.448,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 1984.81,
+"end": 1985.61,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 1986.691,
+"end": 2001.731,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. Classify each as propositional knowledge, knowledge-how, or knowledge by acquaintance: A: Ali knows the smell of rain on dry earth. B: Ali knows that petrichor is caused partly by plant oils and geosmin. C: Ali knows how to predict rain from the sky's color.",
+"begin": 2002.599,
+"end": 2024.919,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. A: Acquaintance. B: Propositional. C: Knowledge-how. On the intellectualist view, C might reduce to propositional knowledge of a way of predicting rain, and one could argue that A involves propositional knowledge too. The categories are a starting point, not a final theory.",
+"begin": 2030.002,
+"end": 2052.802,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. Classify \"All vixens are female foxes\" by the three distinctions.",
+"begin": 2053.669,
+"end": 2060.069,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. A priori, knowable by understanding the words, analytic, true in virtue of meaning, necessary — could not be false. It is the standard case where all three line up.",
+"begin": 2065.136,
+"end": 2080.336,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. Why is \"Water is H two O\" philosophically interesting?",
+"begin": 2081.202,
+"end": 2087.042,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Kripke argued it is necessary — in every possible world, water is H two O, since that is what water is — but known only a posteriori — through chemistry. That breaks the old assumption that all necessary truths are known a priori.",
+"begin": 2092.121,
+"end": 2110.201,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. A friend says: \"I believe in the lucky charm because it makes me calmer before exams.\" What kind of reason is this, and what is the problem?",
+"begin": 2111.086,
+"end": 2121.726,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. It is a practical reason: it concerns the benefits of having the belief, not evidence that the charm is lucky. The friend may be confusing \"believing the charm works\" with \"carrying the charm is calming.\" The calming effect could be real, the belief might function like a placebo, even if the charm has no causal power over exam outcomes. This is a good example of why the practical-epistemic distinction matters.",
+"begin": 2126.811,
+"end": 2155.291,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. What is the difference between believing a proposition and accepting it? Give an example from science.",
+"begin": 2156.173,
+"end": 2164.173,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. To believe p is to take p to be true. To accept p is to adopt it as a premise for reasoning or acting in some context, whether or not you believe it. A physicist accepts that a planet is a point mass when calculating its orbit, knowing that planets are not point masses.",
+"begin": 2169.26,
+"end": 2189.74,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. Explain William James's two commandments and why they conflict.",
+"begin": 2190.602,
+"end": 2196.362,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. \"Believe truth!\" and \"Shun error!\" If you maximize the first, you should believe as much as possible to catch every truth, and you will also catch many falsehoods. If you maximize the second, you should believe nothing and so avoid all error, and you will also miss every truth. Rational belief requires balancing the two. The balance can reasonably shift with context, such as the cost of errors.",
+"begin": 2201.443,
+"end": 2230.003,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. In the dinner-table dialogue at the start of this chapter, B says \"Anecdotes aren't evidence.\" Is B right?",
+"begin": 2230.883,
+"end": 2240.323,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Not quite. An anecdote is evidence in the probabilistic sense, since a cousin's weight loss is somewhat more likely if the diet works than if it doesn't. But it is very weak evidence. It is one case, it has no control group, it may reflect selection, we hear about successes, and other causes may explain it. A better statement: \"One anecdote is far too weak to establish that the diet works.\"",
+"begin": 2245.329,
+"end": 2275.089,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter one",
+"begin": 2278.452,
+"end": 2279.892,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter one. You now have the basic vocabulary: knowledge and belief, credence and acceptance, evidence and justification, and three great distinctions. Every written chapter also ends with suggestions for further reading, if you want to go deeper.",
+"begin": 2280.986,
+"end": 2299.306,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Next, in chapter two, we'll see where these ideas came from, with a tour of two and a half thousand years of thinking about knowledge, from Greece, India, China, and the Islamic world to the present day.",
+"begin": 2299.866,
+"end": 2313.146,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 0.0,
+"end": 26.749,
+"lines": [
+0,
+3
+],
+"request_id": "isfb1tcjVt0XbGhkzDaU"
+},
+{
+"chunk": 2,
+"voice": "main",
+"begin": 29.571,
+"end": 32.81,
+"lines": [
+3,
+4
+],
+"request_id": "26xvNMGTfGvhUDxovPjl"
+},
+{
+"chunk": 3,
+"voice": "third",
+"begin": 34.038,
+"end": 37.512,
+"lines": [
+4,
+5
+],
+"request_id": "Os1jVQXOVlPOoQDSyJJT"
+},
+{
+"chunk": 4,
+"voice": "main",
+"begin": 38.06,
+"end": 40.255,
+"lines": [
+5,
+6
+],
+"request_id": "10K07YzzJPhpPtosPSoE"
+},
+{
+"chunk": 5,
+"voice": "third",
+"begin": 41.091,
+"end": 48.248,
+"lines": [
+6,
+7
+],
+"request_id": "vLfKHzIxi64hmVehLkBd"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 48.797,
+"end": 52.036,
+"lines": [
+7,
+8
+],
+"request_id": "qHh8G0LXyjDl9EDeYuiy"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 52.872,
+"end": 118.753,
+"lines": [
+8,
+11
+],
+"request_id": "nlJxw5aSkvXXrkn1pDHS"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 119.38,
+"end": 157.649,
+"lines": [
+11,
+14
+],
+"request_id": "KmZUxbyqgFHoXjHq2inG"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 158.877,
+"end": 161.881,
+"lines": [
+14,
+15
+],
+"request_id": "5jItZ8HSewKd0RZ7ae0I"
+},
+{
+"chunk": 10,
+"voice": "main",
+"begin": 162.926,
+"end": 183.432,
+"lines": [
+15,
+17
+],
+"request_id": "0xFujOQqIRulV4h907tK"
+},
+{
+"chunk": 11,
+"voice": "third",
+"begin": 183.824,
+"end": 188.813,
+"lines": [
+17,
+18
+],
+"request_id": "G39U8ge1kBJYimv8EgRn"
+},
+{
+"chunk": 12,
+"voice": "second",
+"begin": 189.205,
+"end": 191.321,
+"lines": [
+18,
+19
+],
+"request_id": "WoaRIvh9CdGbD69yZMu3"
+},
+{
+"chunk": 13,
+"voice": "third",
+"begin": 191.713,
+"end": 194.22,
+"lines": [
+19,
+20
+],
+"request_id": "Sr1YSuUsjngZCrvfOEBM"
+},
+{
+"chunk": 14,
+"voice": "second",
+"begin": 194.612,
+"end": 197.773,
+"lines": [
+20,
+21
+],
+"request_id": "3l2XSZWzgTkGVw1wWIge"
+},
+{
+"chunk": 15,
+"voice": "third",
+"begin": 198.165,
+"end": 204.513,
+"lines": [
+21,
+22
+],
+"request_id": "otzqsOzV85JJNSOiQEGj"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 204.904,
+"end": 333.427,
+"lines": [
+22,
+34
+],
+"request_id": "fWNia1E1qJkaOULEJCco"
+},
+{
+"chunk": 17,
+"voice": "second",
+"begin": 334.655,
+"end": 336.065,
+"lines": [
+34,
+35
+],
+"request_id": "IwFnvGdLRIfLNJLqbkqd"
+},
+{
+"chunk": 18,
+"voice": "second",
+"begin": 337.11,
+"end": 474.749,
+"lines": [
+35,
+51
+],
+"request_id": "JMDgWesFdRphgUBXmDAv"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 475.977,
+"end": 477.466,
+"lines": [
+51,
+52
+],
+"request_id": "VlC0LFKRnwQ7qRbmez59"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 478.511,
+"end": 571.664,
+"lines": [
+52,
+56
+],
+"request_id": "O4SOoDxZP0ZaO8aSWdND"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 572.5,
+"end": 605.257,
+"lines": [
+56,
+62
+],
+"request_id": "tSRAhXpFIFGNKIvMhMmL"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 606.093,
+"end": 693.342,
+"lines": [
+62,
+69
+],
+"request_id": "nt7ZhDevndx3BzQbfyLF"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 694.178,
+"end": 776.385,
+"lines": [
+69,
+77
+],
+"request_id": "44pHPICB6VrKfyf3UlZx"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 777.012,
+"end": 800.418,
+"lines": [
+77,
+78
+],
+"request_id": "WLGYl9EfHhcqWGnKanh3"
+},
+{
+"chunk": 25,
+"voice": "main",
+"begin": 801.646,
+"end": 804.571,
+"lines": [
+78,
+79
+],
+"request_id": "CkNU4w9o3i0ejhSaoi3u"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 805.616,
+"end": 991.582,
+"lines": [
+79,
+93
+],
+"request_id": "isJEbXlTtY4omrW70tZA"
+},
+{
+"chunk": 27,
+"voice": "second",
+"begin": 992.81,
+"end": 994.299,
+"lines": [
+93,
+94
+],
+"request_id": "AbqiKHVjemi2honL12yH"
+},
+{
+"chunk": 28,
+"voice": "second",
+"begin": 995.344,
+"end": 1198.498,
+"lines": [
+94,
+109
+],
+"request_id": "xYZHlYWQe3ajdMjuV0bN"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1199.726,
+"end": 1201.528,
+"lines": [
+109,
+110
+],
+"request_id": "oXZJfdLAGrscJbm6CD6X"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1202.573,
+"end": 1216.209,
+"lines": [
+110,
+112
+],
+"request_id": "iTItCFAdX4vN1bigjCpr"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1217.045,
+"end": 1278.772,
+"lines": [
+112,
+117
+],
+"request_id": "fGIRVsTho8oJsmbiFjTj"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1279.608,
+"end": 1336.842,
+"lines": [
+117,
+122
+],
+"request_id": "e7f94W2V3x0niINxH4nk"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1337.678,
+"end": 1367.719,
+"lines": [
+122,
+126
+],
+"request_id": "nKHRJ6piKNwb7h19NMxv"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 1368.555,
+"end": 1487.151,
+"lines": [
+126,
+134
+],
+"request_id": "1AYhftCtfLI4inPTMpWO"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 1487.778,
+"end": 1513.404,
+"lines": [
+134,
+135
+],
+"request_id": "NjBnXw9SKiRwq3w3y8ek"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1514.632,
+"end": 1517.714,
+"lines": [
+135,
+136
+],
+"request_id": "FlfuB3sStNnzdcrY3XkL"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 1518.759,
+"end": 1623.928,
+"lines": [
+136,
+146
+],
+"request_id": "Q8WnwoLT2tTocXuM3HcX"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 1624.555,
+"end": 1637.878,
+"lines": [
+146,
+147
+],
+"request_id": "osznVLTp9sDMMpVXE9eO"
+},
+{
+"chunk": 39,
+"voice": "second",
+"begin": 1639.105,
+"end": 1641.143,
+"lines": [
+147,
+148
+],
+"request_id": "kGlsiZ5Vp8b10mdO7Kxe"
+},
+{
+"chunk": 40,
+"voice": "second",
+"begin": 1642.188,
+"end": 1794.456,
+"lines": [
+148,
+159
+],
+"request_id": "jgjoPLPdXsrQvCs2u7ee"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 1795.683,
+"end": 1796.911,
+"lines": [
+159,
+160
+],
+"request_id": "dlZS2LjgksWavmMbPn3K"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 1797.956,
+"end": 1877.76,
+"lines": [
+160,
+170
+],
+"request_id": "XSlyEaeJOTSdUY33Ynxn"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 1878.988,
+"end": 1883.585,
+"lines": [
+170,
+171
+],
+"request_id": "6kE3PGWJEPiZfo7o9P5c"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 1884.63,
+"end": 1888.914,
+"lines": [
+171,
+172
+],
+"request_id": "FRl5CB1ytvhZTPNZ0hDn"
+},
+{
+"chunk": 45,
+"voice": "third",
+"begin": 1889.75,
+"end": 1893.46,
+"lines": [
+172,
+173
+],
+"request_id": "HWpgBhhVP4OyAuG7yT7G"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 1894.008,
+"end": 1981.492,
+"lines": [
+173,
+187
+],
+"request_id": "NemmhjeTyCgofz36BXhP"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 1984.81,
+"end": 1985.646,
+"lines": [
+187,
+188
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 48,
+"voice": "main",
+"begin": 1986.691,
+"end": 2001.763,
+"lines": [
+188,
+189
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 49,
+"voice": "second",
+"begin": 2002.599,
+"end": 2024.96,
+"lines": [
+189,
+190
+],
+"request_id": "Ra9LvX22zwEJ6bl0g3Yn"
+},
+{
+"chunk": 50,
+"voice": "main",
+"begin": 2030.002,
+"end": 2052.833,
+"lines": [
+190,
+191
+],
+"request_id": "k7An2yvkcwLZpIsiHOEl"
+},
+{
+"chunk": 51,
+"voice": "second",
+"begin": 2053.669,
+"end": 2060.095,
+"lines": [
+191,
+192
+],
+"request_id": "KQEpl9niQNHmTDGMFKQM"
+},
+{
+"chunk": 52,
+"voice": "main",
+"begin": 2065.136,
+"end": 2080.366,
+"lines": [
+192,
+193
+],
+"request_id": "gEZ9QNiRj6PryxhPXVaR"
+},
+{
+"chunk": 53,
+"voice": "second",
+"begin": 2081.202,
+"end": 2087.079,
+"lines": [
+193,
+194
+],
+"request_id": "Kss7fB1CkSYuAlodg4Zr"
+},
+{
+"chunk": 54,
+"voice": "main",
+"begin": 2092.121,
+"end": 2110.25,
+"lines": [
+194,
+195
+],
+"request_id": "MqZZtalLSVNrWEA6y12J"
+},
+{
+"chunk": 55,
+"voice": "second",
+"begin": 2111.086,
+"end": 2121.77,
+"lines": [
+195,
+196
+],
+"request_id": "PzHhYVEawF9w6aJILwQU"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 2126.811,
+"end": 2155.337,
+"lines": [
+196,
+197
+],
+"request_id": "nQORM6bpj5VVE3BMiLSu"
+},
+{
+"chunk": 57,
+"voice": "second",
+"begin": 2156.173,
+"end": 2164.219,
+"lines": [
+197,
+198
+],
+"request_id": "2AAEgFG5Xvgnr9s0edlo"
+},
+{
+"chunk": 58,
+"voice": "main",
+"begin": 2169.26,
+"end": 2189.767,
+"lines": [
+198,
+199
+],
+"request_id": "4eK2SeCATDWwB97D4U8x"
+},
+{
+"chunk": 59,
+"voice": "second",
+"begin": 2190.602,
+"end": 2196.402,
+"lines": [
+199,
+200
+],
+"request_id": "RlKgoH5drsOd1XgoBf08"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 2201.443,
+"end": 2230.047,
+"lines": [
+200,
+201
+],
+"request_id": "N0hoRonA1zdDHJgvozP3"
+},
+{
+"chunk": 61,
+"voice": "second",
+"begin": 2230.883,
+"end": 2240.287,
+"lines": [
+201,
+202
+],
+"request_id": "YVp1mHvgVeVOuERv3NeD"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 2245.329,
+"end": 2275.135,
+"lines": [
+202,
+203
+],
+"request_id": "2Dt01OhfrOwJwpaxdfR6"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 2278.452,
+"end": 2279.941,
+"lines": [
+203,
+204
+],
+"request_id": "wdGWRkCOhoLgC0k9pai1"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 2280.986,
+"end": 2313.117,
+"lines": [
+204,
+206
+],
+"request_id": "89bzAg1NASHQQjN6IFcV"
+}
+]
+}

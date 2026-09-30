@@ -4,7 +4,7 @@ window.TRACKS = [
   "file": "01-what-is-epistemology.mp3",
   "text": "../01-what-is-epistemology.md",
   "title": "Chapter 1 — What Is Epistemology?",
-  "duration": 2106.8,
+  "duration": 2314.7,
   "sections": [
    {
     "title": "Chapter one. What Is Epistemology?",
@@ -12,51 +12,51 @@ window.TRACKS = [
    },
    {
     "title": "Why epistemology matters for critical thinking",
-    "start": 147.3
+    "start": 158.9
    },
    {
     "title": "The central questions",
-    "start": 301.7
+    "start": 334.6
    },
    {
     "title": "Three kinds of knowing",
-    "start": 430.7
+    "start": 476.0
    },
    {
     "title": "Belief, credence, and acceptance",
-    "start": 725.7
+    "start": 801.6
    },
    {
     "title": "The basic vocabulary",
-    "start": 898.6
+    "start": 992.8
    },
    {
     "title": "Three great distinctions",
-    "start": 1096.3
+    "start": 1199.7
    },
    {
     "title": "Epistemic reasons versus practical reasons",
-    "start": 1380.2
+    "start": 1514.6
    },
    {
     "title": "Epistemology is normative",
-    "start": 1495.9
+    "start": 1639.1
    },
    {
     "title": "The map of the field",
-    "start": 1640.5
+    "start": 1795.7
    },
    {
     "title": "How the pieces connect: one news story, twelve questions",
-    "start": 1719.8
+    "start": 1879.0
    },
    {
     "title": "Quick review",
-    "start": 1812.5
+    "start": 1982.5
    },
    {
     "title": "End of chapter one",
-    "start": 2071.5
+    "start": 2276.2
    }
   ]
  },

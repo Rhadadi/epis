@@ -4,30 +4,42 @@ Every chapter of the guide is also available as a narrated audio track. Listen i
 
 To take the audiobook with you, the player page offers three ways: save the chapters in your browser for offline listening, download them all as one ZIP of MP3 files with a playlist, or subscribe in a podcast app to the feed `https://epis.duckdns.org/guide/audio/feed.xml`.
 
-> The narration is generated with a synthetic voice, the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model. It was not read by a person.
+> The chapters marked ElevenLabs are read by three synthetic [ElevenLabs](https://elevenlabs.io) voices: Arthur narrates, Jane reads every third section and asks the quiz questions, and Adam Stone reads the quotations. The other chapters are narrated by the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model, and will be replaced one by one. None of it was read by a person.
 
-| | Chapter | Length |
-|---|---|---|
-| 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 35 min |
-| 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 11 min |
-| 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 49 min |
-| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 46 min |
-| 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 56 min |
-| 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 54 min |
-| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 52 min |
-| 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 54 min |
-| 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 5 min |
-| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 6 min |
-| 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 41 min |
-| 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 1 min |
-| 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 47 min |
-| 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 59 min |
-| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min |
-| 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min |
+| | Chapter | Length | Narration |
+|---|---|---|---|
+| 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 39 min | ElevenLabs |
+| 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 11 min | Kokoro |
+| 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 49 min | Kokoro |
+| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 46 min | Kokoro |
+| 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 56 min | Kokoro |
+| 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 54 min | Kokoro |
+| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 52 min | Kokoro |
+| 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 54 min | Kokoro |
+| 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 5 min | Kokoro |
+| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 6 min | Kokoro |
+| 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 41 min | Kokoro |
+| 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 1 min | Kokoro |
+| 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 47 min | Kokoro |
+| 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 59 min | Kokoro |
+| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min | Kokoro |
+| 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
 
-Total: 14 h 33 min.
+Total: 14 h 37 min.
 
 ---
+
+## The ElevenLabs edition
+
+The chapters are being re-recorded one at a time with [ElevenLabs](https://elevenlabs.io) (the `eleven_v4_turbo` model), from the same narration scripts described below. Three voices share the reading:
+
+- **Arthur**, an American male voice, is the narrator and reads most of the text, and every quiz answer.
+- **Jane**, a British female voice, reads every third section and asks the quiz questions. In dialogues she is the second speaker.
+- **Adam Stone**, a British male voice, reads the quotations from philosophers and scientists, and the first speaker in dialogues.
+
+Instead of chimes between sections, each heading is followed by a pause (a second after a section heading, a little less after smaller ones). A chime is kept at the opening, before the quiz and before the last section. Each chapter is checked by transcribing it back with a speech-recognition model and comparing the result with the script. The tool is `guide/fa/audio/tools/eleven_narrate.py --edition en`, shared with the Persian edition.
+
+The sections below describe how the scripts are written, and how the Kokoro chapters were voiced.
 
 ## What changes when the guide is read aloud
 
