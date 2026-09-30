@@ -40,7 +40,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from eleven_narrate import DELAY, FRAME, WEB, chain_reservoir, donor_frames, ffmpeg, mp3_frames, write_sync  # noqa: E402
+from eleven_narrate import DELAY, FRAME, WEB, chain_reservoir, donor_frames, ffmpeg, frame_size, mp3_frames, write_sync  # noqa: E402
 
 AUDIO = Path(__file__).resolve().parent.parent
 RATE = 24000
@@ -244,7 +244,7 @@ def insert(path, sync, cuts, a):
     off, length, _, _, room = fr[1]
     head = bytearray(old[off:off + length - room])
     head[2] &= ~0x02
-    silent = bytes(head[:len(head) - 9]) + bytes(9) + bytes(72 * 48000 // RATE - len(head))  # no audio data: silence
+    silent = bytes(head[:len(head) - 9]) + bytes(9) + bytes(frame_size(old, fr[1][0]) - len(head))  # no audio data: silence
 
     # the stretches to encode again: from a quiet frame before the first cut into speech to one after the
     # last, merging cuts that are close; a cut into silence inside such a stretch goes in with it

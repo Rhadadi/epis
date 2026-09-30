@@ -107,17 +107,38 @@ EDITIONS = {
     "v2": dict(SCHEME="alternate-sections-v2", MAX_SEGMENT=5000, TARGET_SEGMENT=4000, LONG_PAUSE=0.5, AUTO_CHIME=False,
                QUOTE_GAP=(0.8, 0.5), SPEED=1.04, SCRIPT_DIR=NARRATION),
 }
+# The English edition (guide/audio): the English narration scripts as they are, read by three voices. Arthur
+# narrates (two sections in three, the opening, the quiz's answers and the end), Jane takes every third section
+# and asks the quiz's questions, and Adam Stone reads the quotations; in a dialogue Adam Stone and Jane are the
+# first and second speakers (the narrator is never one of them). As in
+# v2, pauses are real silence and a chime marks only the opening, the quiz and the end; and every heading ends
+# its request and is followed by silence (HEADING_PAUSE), so a title never runs into its first sentence.
+# The published copy is 40 kbit/s, like the site's earlier English audio, to keep the site under 1 GB.
+REPO = HERE.parents[2].parent
+EN_AUDIO = REPO / "guide" / "audio"
+EDITIONS["en"] = dict(
+    SCHEME="three-voices-en", MAX_SEGMENT=5000, TARGET_SEGMENT=4000, LONG_PAUSE=0.5, AUTO_CHIME=False, QUOTE_GAP=(0.8, 0.5),
+    SPEED=None, SCRIPT_DIR=EN_AUDIO / "scripts", CHIME_QUIZ_END=True, THIRD_SECTION="second",
+    HEADING_PAUSE={"section": 1.0, "subsection": 0.8, "cue": 0.6, "label": 0.6},
+    VOICES={"main": "C1npRmjB19a6yNkEucvx", "second": "RILOU7YmBhvwJGDGjNmP", "third": "NFG5qt843uXKj4pFvR7C"},
+    VOICE_NAMES={"main": "Arthur", "second": "Jane", "third": "Adam Stone"},
+    WEB=["-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "40k"],
+    ALBUM="Mastering Epistemology (audio edition)", ARTIST="Mastering Epistemology", LANGUAGE="eng",
+    AUDIO=EN_AUDIO, STATE=Path(os.environ.get("ELEVEN_STATE_EN", HERE / ".eleven-en")))
+CHIME_QUIZ_END, THIRD_SECTION, HEADING_PAUSE, VOICE_NAMES = False, None, {}, {}
+ARTIST, LANGUAGE = "تسلط بر معرفت‌شناسی", "fas"
 EDITION, SPEED = "v1", None
 ALIASES_FILE = HERE / "aliases.txt"
 
 
 def set_edition(name, script_dir=None):
-    global EDITION
+    global EDITION, MANIFEST, SEGMENTS, CHAPTERS, PUBLISH
     EDITION = name
     for k, v in EDITIONS[name].items():
         globals()[k] = v
     if script_dir:
         globals()["SCRIPT_DIR"] = Path(script_dir)
+    MANIFEST, SEGMENTS, CHAPTERS, PUBLISH = STATE / "manifest.json", STATE / "segments", STATE / "chapters", STATE / "publish"
 
 
 def load_aliases():
@@ -205,7 +226,10 @@ def plan_chapter(script_path):
         if kind == "section":
             count += 1
             last = i == sections[-1] and not quiz & {i}
-            narrator = "main" if i in quiz or last else ("second" if count % 2 else "main")
+            if THIRD_SECTION:  # the main voice reads two sections in three
+                narrator = "main" if i in quiz or last else ("second" if count % 3 == 2 else "main")
+            else:
+                narrator = "main" if i in quiz or last else ("second" if count % 2 else "main")
         if kind == "title":
             title = text
             continue
@@ -227,8 +251,8 @@ def plan_chapter(script_path):
         role = role_of(kind, narrator)
         if kind == "section":
             flush()
-            if AUTO_CHIME:
-                pause(0.9)
+            if AUTO_CHIME or (CHIME_QUIZ_END and (i in quiz or i == sections[-1])):
+                pause(0.9 if AUTO_CHIME else max(pending, 1.0))
                 markers.append((text, len(segs)))
                 segs.append({"type": "chime"})
                 pause(0.45)
@@ -255,6 +279,9 @@ def plan_chapter(script_path):
             cur = {"type": "speech", "role": role, "lines": []}
         cur["lines"].append((kind, text))
         pending = 0.0
+        if kind in HEADING_PAUSE:  # a heading ends its request, and silence follows it
+            flush()
+            pause(HEADING_PAUSE[kind])
     flush()
     pause(1.5)
     for s in segs:  # a paragraph too long for one request is cut between sentences
@@ -265,6 +292,9 @@ def plan_chapter(script_path):
 
 def role_of(kind, narrator):
     """Which voice reads a line, given the voice narrating the section."""
+    if "third" in VOICES:  # quotations are the third voice's; in a dialogue the narrator is never a speaker
+        return {"quote": "third", "voice1": "third", "voice2": "second", "voice3": "main",
+                "question": "second", "answer": "main"}.get(kind, narrator)
     other = "second" if narrator == "main" else "main"
     return {"quote": other, "voice1": "main", "voice2": "second", "voice3": other,
             "question": "second", "answer": "main"}.get(kind, narrator)
@@ -502,17 +532,17 @@ def chapters_to_do(args):
 
 def dry_run(m):
     r, total, requests_ = rate(m), 0, 0
-    print(f"{'ch':>2}  {'requests':>8}  {'main':>7}  {'second':>7}  {'characters':>10}  {'credits':>8}")
+    print(f"{'ch':>2}  {'requests':>8}  " + "".join(f"{r:>7}  " for r in VOICES) + f"{'characters':>10}  {'credits':>8}")
     for n in chapters_to_do(argparse.Namespace(chapter=None)):
         if not sorted(globals().get("SCRIPT_DIR", SCRIPTS).glob(f"{n:02d}-*.txt")):
             continue  # edition v2: only the chapters that have a speech text yet
         _, segs, _ = plan_chapter(script(n))
         speech = [s for s in segs if s["type"] == "speech"]
-        by = {role: sum(len(seg_text(s)) for s in speech if s["role"] == role) for role in ("main", "second")}
+        by = {role: sum(len(seg_text(s)) for s in speech if s["role"] == role) for role in VOICES}
         chars = sum(by.values())
         total += chars
         requests_ += len(speech)
-        print(f"{n:>2}  {len(speech):>8}  {by['main']:>7,}  {by['second']:>7,}  {chars:>10,}  {round(chars * r):>8,}")
+        print(f"{n:>2}  {len(speech):>8}  " + "".join(f"{by[x]:>7,}  " for x in VOICES) + f"{chars:>10,}  {round(chars * r):>8,}")
     print(f"all: {requests_} requests, {total:,} characters, about {round(total * r):,} credits at "
           f"{r * 1000:g} credits per 1,000 characters" + (" (measured by --test)" if r != 1.0 else " (assumed; --test measures it)"))
     if os.environ.get("ELEVENLABS_API_KEY"):
@@ -585,7 +615,7 @@ def narrate_chapter(n, m, settings, sample=None):
     if need > sub["remaining"]:
         raise SystemExit(f"chapter {n} needs about {round(need):,} credits but only {sub['remaining']:,} are left; "
                          "stopping without generating (no overage)")
-    history = {"main": [], "second": []}  # request ids of each voice's segments, for stitching
+    history = {role: [] for role in VOICES}  # request ids of each voice's segments, for stitching
     for k, s in enumerate(speech, 1):
         if done(s):
             history[s["role"]].append(entries[seg_key(s)].get("request_id"))
@@ -682,9 +712,10 @@ def make_segment(n, k, total, s, nxt, previous_ids, m, settings, entries, seed=N
 
 def ffmetadata(n, title, marks, end):
     """Tags and section markers ([(title, start seconds)]) for ffmpeg."""
-    tags = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", "artist=تسلط بر معرفت‌شناسی", f"track={n}/16",
-            "genre=Audiobook", "language=fas",
-            f"comment=Narrated with ElevenLabs ({MODEL}); voices {VOICES['main']} and {VOICES['second']}."]
+    voices = [f"{VOICE_NAMES.get(r, r)} ({v})" if VOICE_NAMES else v for r, v in VOICES.items()]
+    tags = [";FFMETADATA1", f"title={title}", f"album={ALBUM}", f"artist={ARTIST}", f"track={n}/16",
+            "genre=Audiobook", f"language={LANGUAGE}",
+            f"comment=Narrated with ElevenLabs ({MODEL}); voices {', '.join(voices[:-1])} and {voices[-1]}."]
     for k, (name, start) in enumerate(marks):
         stop = marks[k + 1][1] if k + 1 < len(marks) else end
         tags += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}", f"END={int(stop * 1000)}", f"title={name}"]
@@ -700,7 +731,14 @@ def stream(path):
 def is_web(path):
     """Is this MP3 already in the site's format (WEB), so that it can be cut and joined without re-encoding?"""
     s = stream(path)
-    return (int(s.get("sample_rate", 0)), int(s.get("channels", 0)), int(s.get("bit_rate", 0))) == (24000, 1, 48000)
+    rate = int(WEB[WEB.index("-b:a") + 1].rstrip("k")) * 1000
+    return (int(s.get("sample_rate", 0)), int(s.get("channels", 0)), int(s.get("bit_rate", 0))) == (24000, 1, rate)
+
+
+def frame_size(data, off):
+    """The length, without a padding byte, of the MPEG-2 layer III frame at off (from its bitrate)."""
+    rate = [0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160][(data[off + 2] >> 4) & 15] * 1000
+    return 72 * rate // 24000
 
 
 FRAME = 576 / 24000   # seconds of audio in each frame of the site's MP3s (MPEG-2 layer III, 24 kHz)
@@ -770,7 +808,7 @@ def donor_frames(data, fr, f0):
     header = bytearray(data[off:off + length - room])  # f0's own header (and CRC) and side information
     header[2] &= ~0x02                                  # no padding byte: every donor is the same length
     head_len = len(header)
-    size = 72 * 48000 // 24000
+    size = frame_size(data, off)
     k = -(-need // (size - head_len))
     area = bytearray((size - head_len) * k)
     area[len(area) - need:] = stream[len(stream) - need:]
@@ -1072,7 +1110,7 @@ def main():
     ap.add_argument("--import-segments", metavar="DIR", help="reuse segments made elsewhere (DIR/manifest.json and DIR/segments/)")
     args = ap.parse_args()
     set_edition(args.edition, args.scripts)
-    if args.edition != "v1":
+    if args.edition == "v2":
         ALIASES[:] = load_aliases()
     if args.model:
         MODEL = args.model
