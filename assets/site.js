@@ -448,7 +448,7 @@
     audio.addEventListener("timeupdate", function () {
       var i = sectionAt(audio.currentTime);
       dock.querySelector(".s").textContent = (sections[i] ? sections[i].t : "") + " · " + clock(audio.currentTime);
-      document.querySelectorAll(".listen .chip").forEach(function (c, k) { c.classList.toggle("on", k === i); });
+      document.querySelectorAll(".listen .lsecs button").forEach(function (c, k) { c.classList.toggle("on", k === i); });
       if (Math.floor(audio.currentTime) % 5 === 0) store(trackKey, String(audio.currentTime));
     });
     audio.addEventListener("ended", function () { store(trackKey, "0"); });
@@ -477,9 +477,12 @@
   if (card) {
     try { sections = JSON.parse(card.getAttribute("data-sections") || "[]"); } catch (e) { sections = []; }
     trackKey = posKey(card.getAttribute("data-audio"));
-    var acts = document.createElement("div");
-    acts.className = "listen-actions";
-    card.insertBefore(acts, card.querySelector(".row"));
+    // the small menu: saving and downloading the chapter, reading along, its sections
+    var acts = card.querySelector(".lacts"), more = card.querySelector(".more"), menu = card.querySelector(".lmenu");
+    var openMenu = function (on) { menu.hidden = !on; more.setAttribute("aria-expanded", String(on)); };
+    more.addEventListener("click", function (e) { e.stopPropagation(); openMenu(menu.hidden); });
+    document.addEventListener("click", function (e) { if (!menu.hidden && !menu.contains(e.target)) openMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !menu.hidden) { openMenu(false); more.focus(); } });
     if (canSaveAudio) {
       var sb = document.createElement("button");
       sb.type = "button";
@@ -522,39 +525,25 @@
       b.addEventListener("click", function () { play.click(); });
     });
     document.querySelectorAll("[data-at]").forEach(function (b) {
-      b.addEventListener("click", function () { playFrom(parseFloat(b.getAttribute("data-at"))); });
+      b.addEventListener("click", function () { openMenu(false); playFrom(parseFloat(b.getAttribute("data-at"))); });
     });
   }
 
-  /* ------------------------------------------------------------ full player (audio page) */
-  var player = document.getElementById("player");
-  if (player && window.TRACKS) {
-    var tracks = window.TRACKS, cur = -1;
-    var pa = player.querySelector("audio"), rate = player.querySelector("#rate");
-    var list = document.getElementById("chapters"), secs = document.getElementById("sections");
-    var title = player.querySelector("h2"), secLabel = player.querySelector(".sec"), readLink = document.getElementById("read");
-    var art = window.TRACK_ART || {};
-    var saveButtons = [];
-    var chapterButtons = tracks.map(function (t, i) {
-      var li = document.createElement("li"), b = document.createElement("button");
-      b.type = "button";
-      b.innerHTML = '<img alt="" loading="lazy"><span><b></b><small></small></span><small class="d"></small>';
-      b.querySelector("img").src = art[i] || "";
-      b.querySelector("b").textContent = t.title.replace(/^(Chapter \d+|فصل [۰-۹]+|پیوست) — /, "");
-      b.querySelector("span small").textContent = T("Chapter ", "فصل ") + N(i + 1);
-      b.querySelector(".d").textContent = N(Math.round(t.duration / 60)) + T(" min", " دقیقه");
-      b.addEventListener("click", function () { load(i, true); });
-      li.appendChild(b); list.appendChild(li);
-      if (canSaveAudio) {
-        var sb = document.createElement("button");
-        sb.type = "button";
-        sb.className = "save-audio compact";
-        li.appendChild(sb);
-        saveButtons.push(saveButton(sb, t.file, t.size || 0, true, function (st) { li.toggleAttribute("data-saved", st === "saved"); }));
-      }
-      return b;
+  /* ------------------------------------------------------------ the chapters list at the top of a chapter */
+  document.querySelectorAll("details.chlist").forEach(function (d) {
+    document.addEventListener("click", function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && d.open) { d.open = false; d.querySelector("summary").focus(); }
     });
-    // The audiobook section: save every chapter here, download them all as a ZIP, copy the podcast feed.
+    d.addEventListener("toggle", function () {  // the current chapter in view
+      var cur = d.open && d.querySelector("[aria-current]");
+      if (cur) cur.scrollIntoView({ block: "center" });
+    });
+  });
+
+  /* ------------------------------------------------------------ the audiobook section (audio and download pages) */
+  // save every chapter here, download them all as a ZIP, copy the podcast feed
+  function audiobookTools(tracks, saveButtons) {
     var saveAll = document.querySelector("[data-save-all]");
     if (saveAll && canSaveAudio) {
       var saveNote = document.querySelector("[data-save-all-note]");
@@ -591,6 +580,77 @@
         if (navigator.clipboard) navigator.clipboard.writeText(b.getAttribute("data-copy")).then(done, function () { /* ignore */ });
       });
     });
+  }
+
+  /* ------------------------------------------------------------ download page: every chapter's files */
+  var dlList = document.getElementById("dl-list");
+  if (dlList && window.TRACKS) {
+    var dlSave = [];
+    window.TRACKS.forEach(function (t, i) {
+      var li = document.createElement("li");
+      li.innerHTML = '<span class="n"></span><span class="t"><a></a><small></small></span><span class="a"></span>';
+      li.querySelector(".n").textContent = N(i + 1);
+      var a = li.querySelector(".t a");
+      a.textContent = t.title.replace(/^(Chapter \d+|فصل [۰-۹]+|پیوست) — /, "");
+      a.href = t.page;
+      li.querySelector(".t small").textContent = N(Math.round(t.duration / 60)) + T(" min · ", " دقیقه · ") + N(Math.round((t.size || 0) / 1e6)) + T(" MB", " مگابایت");
+      var acts = li.querySelector(".a");
+      if (canSaveAudio) {
+        var sb = document.createElement("button");
+        sb.type = "button";
+        sb.className = "save-audio compact";
+        acts.appendChild(sb);
+        dlSave.push(saveButton(sb, t.file, t.size || 0, true, function (st) { li.toggleAttribute("data-saved", st === "saved"); }));
+      }
+      var mp3 = document.createElement("a");
+      mp3.className = "save-audio compact";
+      mp3.href = t.file;
+      mp3.setAttribute("download", audioFileName(i, t));
+      mp3.textContent = "MP3";
+      acts.appendChild(mp3);
+      if (t.epub) {
+        var eb = document.createElement("button");
+        eb.type = "button";
+        eb.className = "save-audio compact";
+        eb.textContent = "EPUB";
+        eb.title = T("EPUB with the narration, read along", "EPUB همراه با روایت، خواندن همراه با صدا");
+        acts.appendChild(eb);
+        epubButton(eb, t.epub, document.querySelector("[data-epub-note]"));
+      }
+      dlList.appendChild(li);
+    });
+    audiobookTools(window.TRACKS, dlSave);
+  }
+
+  /* ------------------------------------------------------------ full player (audio page) */
+  var player = document.getElementById("player");
+  if (player && window.TRACKS) {
+    var tracks = window.TRACKS, cur = -1;
+    var pa = player.querySelector("audio"), rate = player.querySelector("#rate");
+    var list = document.getElementById("chapters"), secs = document.getElementById("sections");
+    var title = player.querySelector("h2"), secLabel = player.querySelector(".sec"), readLink = document.getElementById("read");
+    var art = window.TRACK_ART || {};
+    var saveButtons = [];
+    var chapterButtons = tracks.map(function (t, i) {
+      var li = document.createElement("li"), b = document.createElement("button");
+      b.type = "button";
+      b.innerHTML = '<img alt="" loading="lazy"><span><b></b><small></small></span><small class="d"></small>';
+      b.querySelector("img").src = art[i] || "";
+      b.querySelector("b").textContent = t.title.replace(/^(Chapter \d+|فصل [۰-۹]+|پیوست) — /, "");
+      b.querySelector("span small").textContent = T("Chapter ", "فصل ") + N(i + 1);
+      b.querySelector(".d").textContent = N(Math.round(t.duration / 60)) + T(" min", " دقیقه");
+      b.addEventListener("click", function () { load(i, true); });
+      li.appendChild(b); list.appendChild(li);
+      if (canSaveAudio) {
+        var sb = document.createElement("button");
+        sb.type = "button";
+        sb.className = "save-audio compact";
+        li.appendChild(sb);
+        saveButtons.push(saveButton(sb, t.file, t.size || 0, true, function (st) { li.toggleAttribute("data-saved", st === "saved"); }));
+      }
+      return b;
+    });
+    audiobookTools(tracks, saveButtons);
     function markOffline() { list.classList.toggle("offline", !navigator.onLine); }
     window.addEventListener("online", markOffline);
     window.addEventListener("offline", markOffline);
@@ -661,13 +721,17 @@
   }
   /* ------------------------------------------------------------ reading settings */
   var SIZES = [0.85, 0.92, 1, 1.08, 1.16, 1.25, 1.35];
-  var LEADS = { compact: 1.55, normal: 1.74, airy: 1.95 };
+  // line spacing is kept by name; the CSS gives each language its own values (Persian script needs more room)
+  function leadName(v) {
+    return typeof v === "number" ? (v < 1.7 ? "compact" : v > 1.8 ? "airy" : "normal") : (v || "normal");
+  }
   function readerPrefs() {
     try { return JSON.parse(store("epis-reader") || "{}") || {}; } catch (e) { return {}; }
   }
   function applyReader(r) {
     if (r.scale && r.scale !== 1) doc.style.setProperty("--read-scale", r.scale); else doc.style.removeProperty("--read-scale");
-    if (r.lead && r.lead !== LEADS.normal) doc.style.setProperty("--read-lead", r.lead); else doc.style.removeProperty("--read-lead");
+    doc.style.removeProperty("--read-lead");
+    if (leadName(r.lead) !== "normal") doc.dataset.lead = leadName(r.lead); else delete doc.dataset.lead;
     if (r.width) doc.dataset.width = r.width; else delete doc.dataset.width;
     if (r.font) doc.dataset.font = r.font; else delete doc.dataset.font;
     store("epis-reader", JSON.stringify(r));
@@ -691,7 +755,7 @@
   }
   function buildPanel() {
     var r = readerPrefs();
-    var lead = r.lead === LEADS.compact ? "compact" : r.lead === LEADS.airy ? "airy" : "normal";
+    var lead = leadName(r.lead);
     var scale = r.scale || 1;
     panel = document.createElement("div");
     panel.className = "rpanel";
@@ -708,7 +772,8 @@
       '<output aria-live="polite"></output><button type="button" class="sz" data-size="1" aria-label="' + T("Larger text", "متن بزرگ‌تر") + '">A+</button></div></div>' +
       seg(T("Line spacing", "فاصلهٔ سطرها"), [["lead", "compact", T("Compact", "فشرده")], ["lead", "normal", T("Normal", "معمولی")], ["lead", "airy", T("Airy", "باز")]], lead) +
       seg(T("Line length", "پهنای سطر"), [["width", "narrow", T("Narrow", "باریک")], ["width", "", T("Normal", "معمولی")], ["width", "wide", T("Wide", "پهن")]], r.width || "") +
-      (FA ? seg("قلم", [["font", "", "وزیرمتن"], ["font", "readable", "خواناتر"]], r.font || "")
+      (FA ? seg("قلم", [["font", "", "وزیرمتن", "font-family:'Vazirmatn',sans-serif"], ["font", "naskh", "نسخ", "font-family:'Noto Naskh Arabic',serif"],
+          ["font", "sans", "قلمِ دستگاه", "font-family:system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif"]], r.font === "naskh" || r.font === "sans" ? r.font : "")
         : seg("Typeface", [["font", "", "Serif", "font-family:var(--serif)"], ["font", "sans", "Sans", "font-family:system-ui,sans-serif"],
           ["font", "readable", "Readable", "font-family:'Atkinson Hyperlegible',sans-serif"]], r.font || "")) +
       '<div class="row"><span>' + T("Theme", "پوسته") + '</span><div class="swatches">' +
@@ -733,7 +798,7 @@
         r.scale = SIZES[Math.max(0, Math.min(SIZES.length - 1, i + parseInt(b.getAttribute("data-size"), 10)))];
         applyReader(r); showSize();
       } else if (b.hasAttribute("data-lead")) {
-        r.lead = LEADS[b.getAttribute("data-lead")]; applyReader(r);
+        r.lead = b.getAttribute("data-lead"); applyReader(r);
       } else if (b.hasAttribute("data-width")) {
         r.width = b.getAttribute("data-width"); applyReader(r);
       } else if (b.hasAttribute("data-font")) {
@@ -752,11 +817,13 @@
   function syncPanel() {
     if (!panel) return;
     var r = readerPrefs();
-    var lead = r.lead === LEADS.compact ? "compact" : r.lead === LEADS.airy ? "airy" : "normal";
+    var lead = leadName(r.lead);
     var mark = function (attr, value) {
       panel.querySelectorAll("[data-" + attr + "]").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-" + attr) === value); });
     };
-    mark("lead", lead); mark("width", r.width || ""); mark("font", r.font || ""); mark("shade-choice", themeChoice());
+    mark("lead", lead); mark("width", r.width || ""); mark("shade-choice", themeChoice());
+    // each language offers its own typefaces; one chosen in the other language shows as the default here
+    mark("font", FA ? (r.font === "naskh" || r.font === "sans" ? r.font : "") : (r.font === "naskh" ? "" : r.font || ""));
     var f = panel.querySelector(".wide-btn[data-focus-toggle]");
     if (f) f.textContent = focused() ? T("Leave focus mode", "خروج از حالت تمرکز") : T("Read in focus mode", "خواندن در حالت تمرکز");
   }
@@ -776,8 +843,8 @@
   }
 
   /* ------------------------------------------------------------ offline copy */
-  function saveOffline(btn) {
-    var note = panel.querySelector("[data-offline-note]");
+  function saveOffline(btn, note) {
+    note = note || panel.querySelector("[data-offline-note]");
     note.hidden = false;
     note.textContent = T("Preparing…", "در حال آماده‌سازی…");
     btn.disabled = true;
@@ -792,6 +859,11 @@
       reg.active.postMessage({ type: "save-offline" }, [ch.port2]);
     }).catch(function () { note.textContent = T("Offline reading isn't available in this browser.", "خواندنِ بی‌اینترنت در این مرورگر در دسترس نیست."); btn.disabled = false; });
   }
+  // the same, from a button on a page (the download page)
+  document.querySelectorAll("[data-offline-page]").forEach(function (b) {
+    if (!("serviceWorker" in navigator)) { b.hidden = true; return; }
+    b.addEventListener("click", function () { saveOffline(b, document.querySelector("[data-offline-page-note]")); });
+  });
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
     window.addEventListener("load", function () {
       navigator.serviceWorker.register(ROOT + "sw.js", { scope: ROOT }).catch(function () { /* offline support is optional */ });

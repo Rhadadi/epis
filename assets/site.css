@@ -149,17 +149,58 @@ html[dir="rtl"] .skip{left:auto;right:8px}
   .mini-toc ol{margin:0;padding:0 16px 14px 34px;font-family:var(--sans);font-size:.93rem}
   .mini-toc li{padding:3px 0}.mini-toc a{color:var(--ink-2);text-decoration:none}}
 
+/* ---------------------------------------------------------------- chapter navigation (top of each chapter) */
+.chnav{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin:0 0 22px;font-family:var(--sans)}
+.chnav>a{display:flex;align-items:center;gap:10px;min-width:0;padding:6px 4px;color:var(--ink-2);text-decoration:none;border-radius:10px}
+.chnav>a:hover{color:var(--ink)}
+.chnav .next{justify-content:flex-end;text-align:end}
+.chnav .ar{font-size:1.1rem;color:var(--accent)}
+.chnav .w{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.chnav .w small{font-size:.72rem;color:var(--dim)}
+.chnav .w b{font-weight:600;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chlist>summary{list-style:none;display:flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--rule-2);border-radius:999px;
+  cursor:pointer;font-size:.9rem;color:var(--ink-2);background:var(--surface)}
+.chlist>summary::-webkit-details-marker{display:none}
+.chlist>summary:hover,.chlist[open]>summary{border-color:var(--accent);color:var(--ink)}
+.chlist>summary .icon{width:17px;height:17px}
+.chlist>ol{position:absolute;z-index:30;top:calc(100% + 6px);left:50%;transform:translateX(-50%);width:min(440px,calc(100vw - 32px));
+  max-height:min(70vh,560px);overflow:auto;margin:0;padding:8px;list-style:none;border:1px solid var(--rule);border-radius:14px;
+  background:var(--surface);box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.chlist li a{display:flex;gap:12px;align-items:baseline;padding:8px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none;font-size:.92rem;line-height:1.4}
+.chlist li a:hover{background:var(--accent-wash);color:var(--ink)}
+.chlist li a[aria-current]{background:var(--accent-wash);color:var(--ink);font-weight:600}
+.chlist li small{flex:none;min-width:5.2em;font-size:.72rem;color:var(--dim)}
+.chlist li.all{border-top:1px solid var(--rule);margin-top:6px;padding-top:6px}
+.chlist li.all a{color:var(--accent)}
+@media(max-width:560px){.chnav .w small{display:none}.chnav .w b{font-size:.84rem}.chlist>summary{padding:8px 12px}.chlist>summary span{font-size:.86rem}}
+
 /* ---------------------------------------------------------------- listen card and dock */
-.listen{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:center;padding:18px 20px;margin:0 0 34px;
-  border:1px solid var(--rule);border-radius:14px;background:var(--surface);box-shadow:var(--shadow)}
-.listen .play{grid-row:span 2;width:58px;height:58px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);
+.listen{position:relative;display:flex;align-items:center;gap:14px;padding:10px 12px;margin:0 0 30px;
+  border:1px solid var(--rule);border-radius:999px;background:var(--surface);box-shadow:var(--shadow)}
+.listen .play{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);
   display:grid;place-items:center;cursor:pointer;transition:transform .15s ease}
 .listen .play:hover{transform:scale(1.05)}
-.listen .play svg{width:24px;height:24px;fill:currentColor;stroke:none}
+.listen .play svg{width:20px;height:20px;fill:currentColor;stroke:none}
 .listen .play .i-pause{display:none}.listen.playing .play .i-play{display:none}.listen.playing .play .i-pause{display:block}
-.listen .kicker{color:var(--accent);font-size:.66rem}
-.listen h2{font-family:var(--sans);font-size:1.05rem;font-weight:600;margin:0;line-height:1.3}
-.listen .row{grid-column:1/-1;display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:thin}
+.listen .lt{flex:1;min-width:0;display:flex;flex-direction:column;font-family:var(--sans);line-height:1.3}
+.listen .lt b{font-weight:600;font-size:.98rem;color:var(--ink)}
+.listen .lt>span{font-size:.8rem;color:var(--dim)}
+.listen .resume:not(:empty)::before{content:" · "}
+.listen .more{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--rule-2);background:transparent;color:var(--ink-2);
+  display:grid;place-items:center;cursor:pointer}
+.listen .more:hover,.listen .more[aria-expanded="true"]{border-color:var(--accent);color:var(--ink)}
+.listen .more .icon{width:20px;height:20px}
+.listen .lmenu{position:absolute;z-index:30;top:calc(100% + 8px);inset-inline-end:0;width:min(360px,calc(100vw - 32px));max-height:min(70vh,520px);
+  overflow:auto;padding:14px;border:1px solid var(--rule);border-radius:14px;background:var(--surface);box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.listen .lacts{display:flex;flex-direction:column;gap:6px}
+.listen .lacts .save-audio{justify-content:flex-start;border-radius:10px;width:100%}
+.listen .lmenu .kicker{margin:14px 0 6px;color:var(--dim);font-size:.66rem}
+.listen .lsecs{list-style:none;margin:0;padding:0}
+.listen .lsecs button{width:100%;display:flex;justify-content:space-between;gap:12px;padding:7px 8px;border:0;border-radius:8px;background:none;
+  font:inherit;font-family:var(--sans);font-size:.88rem;color:var(--ink-2);text-align:start;cursor:pointer}
+.listen .lsecs button:hover{background:var(--accent-wash);color:var(--ink)}
+.listen .lsecs button.on{color:var(--ink);font-weight:600}
+.listen .lsecs small{font-family:var(--mono);font-size:.72rem;color:var(--faint);flex:none}
 .chip{flex:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule-2);background:transparent;border-radius:999px;
   padding:6px 12px;font-family:var(--sans);font-size:.82rem;cursor:pointer;color:var(--ink-2);text-decoration:none;white-space:nowrap}
 .chip:hover{border-color:var(--accent);color:var(--ink)}
@@ -259,6 +300,8 @@ html[data-width="narrow"]{--measure:35rem}
 html[data-width="wide"]{--measure:48rem}
 html[data-font="sans"]{--read-font:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif}
 html[data-font="readable"]{--read-font:'Atkinson Hyperlegible',system-ui,sans-serif}
+html[data-lead="compact"]{--read-lead:1.55}
+html[data-lead="airy"]{--read-lead:1.95}
 html[data-shade="sepia"]{
   --bg:#F3EAD6; --bg-2:#EADDC2; --surface:#FAF3E3; --surface-2:#EFE3CA;
   --ink:#3A2E22; --ink-2:#4E3F30; --dim:#6E5C48; --faint:#94826C;
@@ -537,6 +580,26 @@ html[data-lang="fa"] .l-en,html:not([data-lang="fa"]) .l-fa{display:none!importa
 .save-audio.compact small{font-family:var(--mono);font-size:.62rem;color:var(--ink)}
 #chapters.offline li:not([data-saved])>button:first-child{opacity:.45}
 /* the audiobook: offline, download, podcast */
+/* download page */
+.dl-page .audiobook{margin-top:10px}
+.dl-sec{margin-top:44px}
+.dl-sec>h2{font-family:var(--display);font-size:1.7rem;font-weight:600;margin:0 0 14px}
+.dl-legend{color:var(--dim);font-size:.95rem;margin:0 0 12px}
+.dl-list{list-style:none;margin:0;padding:0;border:1px solid var(--rule);border-radius:14px;background:var(--surface)}
+.dl-list li{display:grid;grid-template-columns:2.2em 1fr auto;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--rule)}
+.dl-list li:first-child{border-top:0}
+.dl-list .n{font-family:var(--mono);color:var(--faint);font-size:.85rem}
+.dl-list .t{display:flex;flex-direction:column;min-width:0}
+.dl-list .t a{color:var(--ink);text-decoration:none;font-weight:500;overflow:hidden;text-overflow:ellipsis}
+.dl-list .t a:hover{color:var(--accent)}
+.dl-list .t small{color:var(--dim);font-size:.8rem}
+.dl-list .a{display:flex;gap:6px;align-items:center}
+.dl-list .save-audio.compact{min-width:40px;height:36px;padding:0 10px;justify-content:center;font-family:var(--mono);font-size:.74rem}
+.dl-list button.save-audio.compact{width:36px;padding:0;border-radius:50%}
+.dl-list button.save-audio.compact:not(:empty):not(:has(svg)){width:auto;padding:0 10px;border-radius:999px}
+.dl-list li[data-saved] .n{color:var(--accent)}
+.dl-other{color:var(--dim);font-size:.95rem;margin-top:30px}
+@media(max-width:560px){.dl-list li{grid-template-columns:1.6em 1fr;}.dl-list .a{grid-column:2}}
 .audiobook{margin-top:40px}
 .audiobook>h2{font-family:var(--display);font-size:1.7rem;font-weight:600;margin:0 0 14px}
 .ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
@@ -547,7 +610,6 @@ html[data-lang="fa"] .l-en,html:not([data-lang="fa"]) .l-fa{display:none!importa
 .ab .row{display:flex;flex-wrap:wrap;gap:8px}
 .ab .note{font-family:var(--sans);font-size:.82rem;color:var(--ink-2)}
 .ab .note.feed{font-family:var(--mono);font-size:.72rem;color:var(--faint);word-break:break-all}
-.listen .listen-actions{grid-column:2;display:flex;flex-wrap:wrap;gap:8px}
 a.save-audio{text-decoration:none}
 
 /* credits */
@@ -852,8 +914,12 @@ html[lang="fa"] *{letter-spacing:normal!important}
 html[lang="fa"] body{font-size:17px;line-height:1.8}
 html[lang="fa"] em,html[lang="fa"] i,html[lang="fa"] cite{font-style:normal}
 html[lang="fa"] em{font-weight:600}
+/* Persian typefaces in the reader settings: Vazirmatn (default), Naskh (a book face), the device's own */
 html[lang="fa"][data-font="readable"]{--read-font:'Vazirmatn','Atkinson Hyperlegible',sans-serif}
-html[lang="fa"][data-font="sans"]{--read-font:'Vazirmatn',system-ui,sans-serif}
+html[lang="fa"][data-font="naskh"]{--read-font:'Noto Naskh Arabic','Vazirmatn',serif}
+html[lang="fa"][data-font="sans"]{--read-font:system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif}
+html[lang="fa"][data-lead="compact"]{--read-lead:1.8}
+html[lang="fa"][data-lead="airy"]{--read-lead:2.3}
 html[lang="fa"] .prose{font-size:calc(1.06rem * var(--read-scale,1));line-height:var(--read-lead,2)}
 html[lang="fa"] .prose[lang="en"]{font-family:var(--read-font,'Source Serif 4',Georgia,serif);line-height:var(--read-lead,1.74)}
 html[lang="fa"] .prose h2{font-weight:800;font-size:clamp(1.55rem,2.8vw,2.05rem);line-height:1.45}
@@ -980,4 +1046,4 @@ html[dir="rtl"] .mnav{right:auto;left:8px}
 .ra-text .who{font-weight:600;color:var(--accent)}
 .ra-text .v2{border-inline-start:3px solid color-mix(in srgb,var(--accent) 45%,transparent);padding-inline-start:10px}
 .ra-foot{color:var(--dim);font-size:.9rem;margin-top:30px}
-.listen .epub-note{flex-basis:100%;margin:0;font-family:var(--sans);font-size:.8rem;color:var(--dim)}
+.listen .epub-note{margin:4px 2px 0;font-family:var(--sans);font-size:.8rem;color:var(--dim)}

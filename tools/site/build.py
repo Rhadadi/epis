@@ -269,6 +269,7 @@ def icon(name, cls="icon"):
         "focus": '<path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/><path d="M9 9h6M9 12h6M9 15h4"/>',
         "rss": '<path d="M5 5a14 14 0 0 1 14 14M5 11a8 8 0 0 1 8 8"/><circle cx="6" cy="18" r="1.4"/>',
         "download": '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
+        "save": '<path d="M5 4h11l3 3v13H5z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/>',
         "pen": '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',
         "search": '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>',
         "user": '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
@@ -297,7 +298,8 @@ BOOT = ('(function(){var d=document.documentElement,g=function(k){try{return loc
         'd.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);if(sh)d.setAttribute("data-shade",sh);'
         'if(d.lang==="fa"||(g("epistemology-lang")==="fa"&&d.getAttribute("data-bilingual")!==null))d.setAttribute("data-lang","fa");'
         'try{var r=JSON.parse(g("epis-reader")||"{}");if(r.scale)d.style.setProperty("--read-scale",r.scale);'
-        'if(r.lead)d.style.setProperty("--read-lead",r.lead);if(r.width)d.setAttribute("data-width",r.width);'
+        'var L=r.lead;if(typeof L==="number")L=L<1.7?"compact":L>1.8?"airy":"";if(L&&L!=="normal")d.setAttribute("data-lead",L);'
+        'if(r.width)d.setAttribute("data-width",r.width);'
         'if(r.font)d.setAttribute("data-font",r.font)}catch(e){}'
         'if(g("epis-focus")==="1"&&/\\/guide\\/\\d\\d-[^\\/.]+(\\.html)?$/.test(location.pathname))d.setAttribute("data-focus","")})();')
 
@@ -548,6 +550,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
     h = home(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
            ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن")),
+           ("download", f"{h}guide/download.html", "download", L("Download", "دریافت")),
            ("account", f"{h}account/", "user", L("My study", "مطالعهٔ من"))]
     here = ' aria-current="page"'
     links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
@@ -842,18 +845,24 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                 return titles.get(s["start"]) or ("پایان و آزمونک" if s["title"].startswith("End of chapter") else s["title"])
             return s["title"]
         sections = [{"t": sec_title(i, s), "s": s["start"]} for i, s in enumerate(ch.track["sections"])]
-        chips = "".join(f'<button class="chip" type="button" data-at="{s["s"]}">{esc(s["t"])} <small>{num(mmss(s["s"]))}</small></button>'
-                        for s in sections)
+        secs = "".join(f'<li><button type="button" data-at="{s["s"]}"><span>{esc(s["t"])}</span><small>{num(mmss(s["s"]))}</small></button></li>'
+                       for s in sections)
         readalong_attrs = (f'data-readalong="listen/{ch.slug}.html" data-epub="epub/{ch.slug}/files.json" '
                            if chapter_sync(ch) else "")
+        # one slim row: play, what it is, and a small menu (save, download, read along, EPUB, the sections)
         listen_card = (f'<section class="listen" data-audio="{audio_dir(root, ch.track)}{ch.track["file"]}" data-size="{track_bytes(ch.track)}" {readalong_attrs}data-thumb="{art.src(ch.art, root, 640)}" '
                        f'data-title="{attr(ch.label + ": " + ch.title)}" data-sections="{attr(json.dumps(sections, ensure_ascii=False))}" '
                        f'aria-label="{L("Listen to this chapter", "شنیدن این فصل")}">'
                        f'<button class="play" type="button" aria-label="{L("Play the narrated chapter", "پخش روایت صوتی فصل")}">{icon("play", "icon i-play")}'
                        f'<svg class="icon i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor" stroke="none"/></svg></button>'
-                       f'<span class="kicker">{L("Listen", "شنیدن")} · {minutes_label(ch.track["duration"])} · {L("narrated", ch_audio(ch, "روایت‌شده", "روایت به انگلیسی"))}</span>'
-                       f'<h2>{L("Hear this chapter read aloud", "این فصل را بشنوید")} <span class="resume" style="font-weight:400;color:var(--dim)"></span></h2>'
-                       f'<div class="row">{chips}</div></section>')
+                       f'<div class="lt"><b>{L("Listen to this chapter", "شنیدنِ این فصل")}</b>'
+                       f'<span>{minutes_label(ch.track["duration"])} · {L("narrated", ch_audio(ch, "روایت‌شده", "روایت به انگلیسی"))}<span class="resume"></span></span></div>'
+                       f'<button class="more" type="button" aria-expanded="false" aria-haspopup="true" '
+                       f'aria-label="{L("Sections, download and more", "بخش‌ها، دریافت و بیشتر")}" title="{L("Sections, download and more", "بخش‌ها، دریافت و بیشتر")}">'
+                       f'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="currentColor" stroke="none"/>'
+                       f'<circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></button>'
+                       f'<div class="lmenu" hidden><div class="lacts"></div>'
+                       f'<p class="kicker">{L("Sections", "بخش‌ها")}</p><ol class="lsecs">{secs}</ol></div></section>')
         actions += f'<button class="btn" type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>'
     dek = cite = None
     if epigraphs:
@@ -867,6 +876,19 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                   f'<div class="fmeta"><span>{num(ch.minutes)} {L("min read", "دقیقه مطالعه")}</span>{listen_link}'
                   f'<button type="button" data-focus-toggle>{L("Leave focus mode", "خروج از حالت تمرکز")}</button></div></div>')
     prev_ch, next_ch = chapters.get(ch.num - 1), chapters.get(ch.num + 1)
+    # at the top of every chapter: the chapter before, every chapter, the chapter after
+    here_ = ' aria-current="page"'
+    all_chs = "".join(f'<li><a href="{c.href}"{here_ if c.num == ch.num else ""}><small>{c.label}</small><span>{esc(c.title)}</span></a></li>'
+                      for _, c in sorted(chapters.items()))
+    arrow_p, arrow_n = L("←", "→"), L("→", "←")
+    side = lambda c, cls, word, arrow, rel: (
+        f'<a class="{cls}" href="{c.href}" rel="{rel}" title="{attr(c.label + ": " + c.title)}"><span class="ar" aria-hidden="true">{arrow}</span>'
+        f'<span class="w"><small>{word}</small><b>{c.label}</b></span></a>' if c else f'<span class="{cls}"></span>')
+    chnav = (f'<nav class="chnav" aria-label="{L("Chapters", "فصل‌ها")}">'
+             + side(prev_ch, "prev", L("Previous", "قبلی"), arrow_p, "prev")
+             + f'<details class="chlist"><summary>{icon("book")}<span>{L("Chapters", "فصل‌ها")}</span></summary>'
+               f'<ol>{all_chs}<li class="all"><a href="./">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></li></ol></details>'
+             + side(next_ch, "next", L("Next", "بعدی"), arrow_n, "next") + "</nav>")
     prev_w, next_w = L("← Previous", "→ قبلی"), L("Next", "بعدی")
     pager = f'<nav class="pager" aria-label="{L("Chapters", "فصل‌ها")}">'
     pager += (tile(art, prev_ch.art, root, prev_ch.href, f"{prev_w} · {prev_ch.label}", esc(prev_ch.title)) if prev_ch
@@ -884,7 +906,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     page = (f"{head}{label(art, ch.art)}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
             f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
-            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{notice}{listen_card}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
+            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{chnav}{notice}{listen_card}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
             f'<div class="prose"{prose_attrs}>{more_quotes}{body}</div>{deeper_box(ch, C, root) if ch.num <= 16 else ""}</article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
     svgs_later.append((OUT() / "guide" / ch.href, page, root, ch, desc))
@@ -1436,6 +1458,45 @@ def build_audio_page(art, chapters, tracks, feed=None):
     return body
 
 
+def build_download_page(art, chapters, tracks, feed):
+    """Everything to take away, in one place (linked from the main menu): the audiobook (offline, ZIP,
+    podcast), each chapter's MP3 and read-along EPUB, the guide as an EPUB, and offline reading."""
+    root = up(1)
+    head = hero(art, "audio", root, kicker=L("Take it with you", "همراه داشته باشید"), title=L("Download", "دریافت"), cls="short",
+                lede=L("The audiobook, the e-book and offline reading, in one place.",
+                       "کتاب صوتی، کتاب الکترونیکی و خواندنِ بی‌اینترنت، یک‌جا."))
+    epub = EPUB_NAME_FA if LANG == "fa" else EPUB_NAME
+    data = []
+    for t in tracks:
+        ch = chapters[int(t["file"][:2])]
+        data.append({"file": audio_dir(root, t) + t["file"], "title": f"{ch.label} — {ch.title}", "duration": t["duration"],
+                     "size": track_bytes(t), "page": ch.href, "epub": f"epub/{ch.slug}/files.json" if chapter_sync(ch) else ""})
+    has_ra = any(d["epub"] for d in data)
+    ra_text = L("One EPUB per chapter, with the audio inside: the text is highlighted as it is read (EPUB 3 read-aloud), "
+                "and a player at the start of the chapter plays it in any reader. Choose EPUB next to a chapter below.",
+                "برای هر فصل یک EPUB که صدا هم در آن است: متن همراهِ خواندن نشان داده می‌شود (خواندنِ همراه با صدای EPUB 3) "
+                "و در آغازِ فصل پخش‌کننده‌ای هست که در هر کتاب‌خوانی صدا را پخش می‌کند. دکمهٔ EPUB را کنارِ هر فصل در پایین بزنید.")
+    ebook = (f'<section class="dl-sec" aria-labelledby="dl-eb"><h2 id="dl-eb">{L("The e-book", "کتاب الکترونیکی")}</h2>'
+             f'<div class="ab-grid"><div class="ab">{icon("book")}<h3>{L("The guide as an EPUB", "راهنما به صورت EPUB")}</h3>'
+             f'<p>{L("Every chapter, for Apple Books, Kobo, Thorium, Calibre or any e-reader.", "همهٔ فصل‌ها، برای Apple Books، کوبو، Thorium، Calibre یا هر کتاب‌خوانِ دیگر.")}</p>'
+             f'<a class="btn" href="{epub}" download>{icon("download")} {L("Download EPUB", "دریافتِ EPUB")}</a></div>'
+             + (f'<div class="ab">{icon("phones")}<h3>{L("Chapters with their narration", "فصل‌ها همراه با روایت")}</h3>'
+                f'<p>{ra_text}</p><p class="note" data-epub-note hidden></p></div>' if has_ra else "")
+             + f'<div class="ab">{icon("save")}<h3>{L("Read without a connection", "خواندنِ بی‌اینترنت")}</h3>'
+               f'<p>{L("Save the whole site in this browser: the guide, the concepts and the map then open offline.", "کلِ سایت را در همین مرورگر ذخیره کنید تا راهنما، مفاهیم و نقشه بدون اینترنت هم باز شوند.")}</p>'
+               f'<button type="button" class="btn" data-offline-page>{L("Save for offline reading", "ذخیره برای خواندنِ بی‌اینترنت")}</button>'
+               f'<p class="note" data-offline-page-note hidden></p></div></div></section>')
+    listing = (f'<section class="dl-sec" aria-labelledby="dl-ch"><h2 id="dl-ch">{L("Chapter by chapter", "فصل به فصل")}</h2>'
+               f'<p class="dl-legend">{L("Save a chapter for offline listening here, download its MP3", "هر فصل را برای شنیدنِ بی‌اینترنت در همین‌جا ذخیره کنید، MP3 آن را دریافت کنید")}'
+               f'{L(", or its EPUB with the narration.", " یا EPUBِ همراه با روایتش را.") if has_ra else L(".", ".")}</p><ol class="dl-list" id="dl-list"></ol></section>')
+    other = (f'<p class="dl-other">{L("The narration in Persian is on the ", "روایتِ انگلیسی در ")}'
+             f'<a href="{L("../fa/guide/download.html", "../../guide/download.html")}" lang="{L("fa", "en")}">{L("Persian download page", "صفحهٔ دریافتِ انگلیسی")}</a>'
+             f'{L(".", " است.")}</p>')
+    return (f'{head}<main id="main" class="wrap dl-page" style="padding-bottom:80px">'
+            + audiobook_section(tracks, feed) + ebook + listing + other + '</main>'
+            f'<script>window.TRACKS={json.dumps(data, ensure_ascii=False)};</script>')
+
+
 def build_audio_about(art, md):
     root = up(2)
     if LANG == "fa":
@@ -1479,7 +1540,8 @@ def build_credits(art):
                      f'<a href="{attr(src)}" rel="noopener">{L("Wikimedia Commons", "ویکی‌انبار")}</a>.</p></div></div>')
     head = hero(art, "ch18", root, kicker=L("Credits", "منابع"), title=L("Artwork, sound and type", "آثار هنری، صدا و حروف"), cls="band")
     faces = [("Cormorant Garamond", "cormorant-garamond"), ("Source Serif 4", "source-serif-4"), ("Space Grotesk", "space-grotesk"),
-             ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Atkinson Hyperlegible", "atkinson-hyperlegible")]
+             ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Noto Naskh Arabic", "noto-naskh-arabic"),
+             ("Atkinson Hyperlegible", "atkinson-hyperlegible")]
     names = [f'<a href="{root}assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
     fonts = L(", ".join(names[:-1]) + " and " + names[-1], "، ".join(names[:-1]) + " و " + names[-1])
     audio = f"{home(root)}guide/audio/about.html"
@@ -1810,7 +1872,7 @@ MANIFEST = {
 
 def build_offline_list():
     """Everything "Save the whole guide for offline reading" fetches, relative to the site root."""
-    pages = ["", "index.html", "guide/", "guide/index.html", "concepts/", "credits.html", "guide/audio/", "guide/audio/index.html",
+    pages = ["", "index.html", "guide/", "guide/index.html", "concepts/", "credits.html", "guide/audio/", "guide/audio/index.html", "guide/download.html",
              "guide/audio/about.html", "notes/", "review/", "account/"]
     paths = list(pages) + ["fa/" + p for p in pages]
     paths += ["map/", "map/index.html", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
@@ -2319,8 +2381,13 @@ def build_language(art, md, C, tracks):
              hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear", reader=True, bilingual=(LANG == "en"))
 
     print(f"[{LANG}] audio, credits, study pages")
+    feed = build_feed(chapters, tracks, md)
     page("guide/audio/index.html", root=r2, title=L("Listen", "شنیدن"), desc=L("The narrated audio edition of Mastering Epistemology.", "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»."),
-         body=build_audio_page(art, chapters, tracks, build_feed(chapters, tracks, md)), current="audio", hero_img=(art.src("audio", r2), art.srcset("audio", r2)), bar="clear")
+         body=build_audio_page(art, chapters, tracks, feed), current="audio", hero_img=(art.src("audio", r2), art.srcset("audio", r2)), bar="clear")
+    page("guide/download.html", root=r1, title=L("Download", "دریافت"),
+         desc=L("Download the audiobook, the EPUB and the podcast feed, and save the guide for offline reading.",
+                "دریافتِ کتاب صوتی، EPUB و خوراکِ پادکست، و ذخیرهٔ راهنما برای خواندنِ بی‌اینترنت."),
+         body=build_download_page(art, chapters, tracks, feed), current="download", hero_img=(art.src("audio", r1), art.srcset("audio", r1)), bar="clear")
     page("guide/audio/about.html", root=r2, title=L("How the audio was made", "صوت چگونه ساخته شد"),
          desc=L("How the narrated audio edition was produced.", "نسخهٔ صوتی چگونه ساخته شد."), body=build_audio_about(art, md), current="audio", bar="clear")
     page("notes/index.html", root=r1, title=L("Notebook", "دفترچه"), desc=L("Your highlights and notes.", "نشانه‌گذاری‌ها و یادداشت‌های شما."),
