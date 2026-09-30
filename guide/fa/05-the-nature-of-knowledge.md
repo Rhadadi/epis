@@ -2,7 +2,7 @@
 
 [← قبلی: زبان، مفهوم‌ها و تعریف‌ها](04-language-concepts-and-definitions.md) · [فهرست](README.md) · [بعدی: توجیه ←](06-justification.md)
 
-**صوت:** [شنیدنِ این فصل](audio/05-the-nature-of-knowledge.mp3) (۵۶ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#05)
+**صوت:** [شنیدنِ این فصل](audio/05-the-nature-of-knowledge.mp3) (۱ ساعت و ۱۷ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#05)
 
 ---
 

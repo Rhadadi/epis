@@ -2,7 +2,7 @@
 
 [← قبلی: توجیه](06-justification.md) · [فهرست](README.md) · [بعدی: شکاکیت و پاسخ‌هایش ←](08-skepticism.md)
 
-**صوت:** [شنیدنِ این فصل](audio/07-sources-of-knowledge.mp3) (۵۲ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#07)
+**صوت:** [شنیدنِ این فصل](audio/07-sources-of-knowledge.mp3) (۱ ساعت و ۸ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#07)
 
 ---
 

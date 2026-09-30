@@ -2,7 +2,7 @@
 
 [← قبلی: معرفت چیست؟](05-the-nature-of-knowledge.md) · [فهرست](README.md) · [بعدی: سرچشمه‌های معرفت ←](07-sources-of-knowledge.md)
 
-**صوت:** [شنیدنِ این فصل](audio/06-justification.mp3) (۵۴ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#06)
+**صوت:** [شنیدنِ این فصل](audio/06-justification.mp3) (۱ ساعت و ۱۲ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#06)
 
 ---
 
