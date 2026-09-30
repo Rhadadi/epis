@@ -208,7 +208,7 @@ window.TRACKS = [
   "file": "04-language-concepts-and-definitions.mp3",
   "text": "../04-language-concepts-and-definitions.md",
   "title": "Chapter 4 — Language, Concepts, and Definitions",
-  "duration": 2764.8,
+  "duration": 3023.0,
   "sections": [
    {
     "title": "Chapter four. Language, Concepts, and Definitions.",
@@ -216,79 +216,79 @@ window.TRACKS = [
    },
    {
     "title": "Why language is an epistemic issue",
-    "start": 114.2
+    "start": 126.1
    },
    {
     "title": "Use and mention",
-    "start": 179.7
+    "start": 195.0
    },
    {
     "title": "Sense and reference",
-    "start": 234.0
+    "start": 252.9
    },
    {
     "title": "Kinds of definition",
-    "start": 384.5
+    "start": 422.3
    },
    {
     "title": "Rules for good definitions",
-    "start": 591.2
+    "start": 643.9
    },
    {
     "title": "Necessary and sufficient conditions and their limits",
-    "start": 671.2
+    "start": 734.2
    },
    {
     "title": "Family resemblance and prototypes",
-    "start": 761.4
+    "start": 827.9
    },
    {
     "title": "Ambiguity",
-    "start": 882.0
+    "start": 958.9
    },
    {
     "title": "Vagueness and the sorites paradox",
-    "start": 1136.8
+    "start": 1255.8
    },
    {
     "title": "Verbal disputes",
-    "start": 1316.9
+    "start": 1455.9
    },
    {
     "title": "Loaded language, euphemism, and framing",
-    "start": 1479.6
+    "start": 1632.9
    },
    {
     "title": "Essentially contested concepts",
-    "start": 1600.3
+    "start": 1760.1
    },
    {
     "title": "Thick and thin concepts",
-    "start": 1695.3
+    "start": 1868.0
    },
    {
     "title": "Facts, values, and the is-ought gap",
-    "start": 1759.8
+    "start": 1941.7
    },
    {
     "title": "Thought experiments and intuitions",
-    "start": 1913.9
+    "start": 2109.7
    },
    {
     "title": "Reflective equilibrium",
-    "start": 2246.1
+    "start": 2466.3
    },
    {
     "title": "Conceptual engineering",
-    "start": 2343.6
+    "start": 2565.9
    },
    {
     "title": "Quick review",
-    "start": 2440.5
+    "start": 2665.0
    },
    {
     "title": "End of chapter four",
-    "start": 2746.0
+    "start": 3002.3
    }
   ]
  },

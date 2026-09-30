@@ -11,7 +11,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 39 min | ElevenLabs |
 | 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 17 min | ElevenLabs |
 | 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 56 min | ElevenLabs |
-| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 46 min | Kokoro |
+| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 50 min | ElevenLabs |
 | 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 56 min | Kokoro |
 | 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 54 min | Kokoro |
 | 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 52 min | Kokoro |
@@ -25,7 +25,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min | Kokoro |
 | 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
 
-Total: 14 h 49 min.
+Total: 14 h 54 min.
 
 ---
 
