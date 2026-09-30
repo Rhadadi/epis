@@ -924,7 +924,7 @@ window.TRACKS = [
   "file": "14-psychology-of-reasoning.mp3",
   "text": "../14-psychology-of-reasoning.md",
   "title": "Chapter 14 — The Psychology of Reasoning: How Minds Actually Work",
-  "duration": 3560.7,
+  "duration": 3791.0,
   "sections": [
    {
     "title": "Chapter fourteen. The Psychology of Reasoning: How Minds Actually Work.",
@@ -932,79 +932,79 @@ window.TRACKS = [
    },
    {
     "title": "Why psychology matters to epistemology",
-    "start": 117.4
+    "start": 129.7
    },
    {
     "title": "Dual-process theories",
-    "start": 222.6
+    "start": 236.6
    },
    {
     "title": "Heuristics and biases",
-    "start": 402.9
+    "start": 434.6
    },
    {
     "title": "Confirmation bias and myside bias",
-    "start": 936.8
+    "start": 1005.8
    },
    {
     "title": "Motivated reasoning",
-    "start": 1167.9
+    "start": 1257.1
    },
    {
     "title": "Belief perseverance and biased assimilation",
-    "start": 1326.9
+    "start": 1428.1
    },
    {
     "title": "Fluency and the illusory truth effect",
-    "start": 1434.4
+    "start": 1537.4
    },
    {
     "title": "Overconfidence and the illusion of explanatory depth",
-    "start": 1521.5
+    "start": 1628.4
    },
    {
     "title": "The Dunning-Kruger effect and its critics",
-    "start": 1668.4
+    "start": 1786.3
    },
    {
     "title": "Identity-protective cognition",
-    "start": 1823.7
+    "start": 1943.9
    },
    {
     "title": "Mindreading: how we attribute knowledge",
-    "start": 1999.1
+    "start": 2124.8
    },
    {
     "title": "The argumentative theory of reasoning",
-    "start": 2248.9
+    "start": 2393.9
    },
    {
     "title": "Ecological rationality",
-    "start": 2385.3
+    "start": 2536.6
    },
    {
     "title": "Replication and the psychology of psychology",
-    "start": 2538.2
+    "start": 2698.6
    },
    {
     "title": "Debiasing: what works",
-    "start": 2667.0
+    "start": 2825.0
    },
    {
     "title": "The scout mindset",
-    "start": 2935.9
+    "start": 3110.5
    },
    {
     "title": "Forecasting and superforecasters",
-    "start": 3039.5
+    "start": 3220.1
    },
    {
     "title": "Quick review",
-    "start": 3239.9
+    "start": 3441.2
    },
    {
     "title": "End of chapter fourteen",
-    "start": 3542.6
+    "start": 3772.3
    }
   ]
  },
