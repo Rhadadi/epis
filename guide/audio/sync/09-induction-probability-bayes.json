@@ -1,0 +1,3200 @@
+{
+"file": "09-induction-probability-bayes.mp3",
+"title": "Chapter 9 — Induction, Probability, and Bayesian Reasoning",
+"duration": 4227.056,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter nine. Induction, Probability, and Bayesian Reasoning.",
+"begin": 2.116,
+"end": 6.996,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"A wise man, therefore, proportions his belief to the evidence.\"",
+"begin": 8.255,
+"end": 12.895,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "David Hume, An Enquiry Concerning Human Understanding, section X.",
+"begin": 13.479,
+"end": 18.599,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"Probability theory is nothing but common sense reduced to calculation.\"",
+"begin": 19.461,
+"end": 24.661,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Pierre-Simon Laplace, Essai philosophique sur les probabilités.",
+"begin": 25.26,
+"end": 29.58,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Almost everything we believe about the world goes beyond what we have observed. We believe the sun will rise tomorrow, that the medicine will work as it did in trials, that the bridge will hold, that the polls tell us something about the election. None of this follows deductively from our evidence. It is inductive, and it is uncertain.",
+"begin": 30.459,
+"end": 51.819,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This chapter covers two things. First, the philosophical problem of induction: can reasoning from the observed to the unobserved be justified at all? Second, the practical tools for reasoning well under uncertainty: probability theory, Bayes' theorem, and the statistical concepts you need to read evidence critically. If you master only one technical tool from this guide, make it the odds form of Bayes' theorem. It will change how you think about evidence.",
+"begin": 52.379,
+"end": 82.219,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Every day you reason from what you've seen to what you haven't. The sun has always risen, so it will rise tomorrow. But why is that reasonable? David Hume argued that it can't be justified without going in a circle. We'll start with his problem, and with some famous puzzles that make it even harder.",
+"begin": 82.887,
+"end": 102.487,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then we'll get practical. You'll learn the basics of probability and Bayes' theorem, the single most useful tool for thinking about evidence, and we'll work through examples, including a medical test result that most people, and many doctors, misread.",
+"begin": 102.727,
+"end": 118.327,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Finally we'll tour the classic errors of probabilistic reasoning, from base-rate neglect to the Monty Hall problem, and see what statistical significance does and doesn't tell you. Don't worry about the numbers. I'll talk you through them slowly.",
+"begin": 118.567,
+"end": 132.887,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Kinds of non-deductive inference",
+"begin": 134.165,
+"end": 136.325,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Non-deductive, ampliative, inferences go beyond their premises. The main types.",
+"begin": 137.404,
+"end": 143.964,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Enumerative induction: every observed A has been B, so all As are B — or the next A will be B.",
+"begin": 144.444,
+"end": 153.164,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Statistical generalization: sixty-two percent of a random sample of voters support the measure, so about sixty-two percent of all voters do.",
+"begin": 153.724,
+"end": 163.204,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Statistical syllogism — direct inference: ninety-five percent of As are B; this is an A; so, probably, this is B.",
+"begin": 163.484,
+"end": 173.724,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Argument from analogy: X and Y share properties P, Q, R; X has S; so Y probably has S.",
+"begin": 174.204,
+"end": 183.564,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Causal inference: A and B are correlated, and alternative explanations are excluded, so A causes B.",
+"begin": 184.044,
+"end": 192.284,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Inference to the best explanation — abduction: H best explains the evidence, so H is probably true.",
+"begin": 192.764,
+"end": 200.604,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The statistical syllogism raises the reference class problem. What is the probability that Ali, a forty-five-year-old man who smokes and runs marathons, will have a heart attack in the next ten years? It depends on the reference class: forty-five-year-old men, smokers, marathon runners, forty-five-year-old male smoking marathon runners — a class with very few members. Each class has a different frequency. There is often no single correct answer, and choosing a reference class is a judgment call. In practice, look for the narrowest class that still has enough data to give a reliable frequency, and check whether different reasonable classes give very different answers.",
+"begin": 201.084,
+"end": 243.884,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Hume's problem of induction",
+"begin": 245.159,
+"end": 246.999,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "David Hume posed the problem in the Treatise and more clearly in the Enquiry. Set out as an argument.",
+"begin": 248.085,
+"end": 255.565,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. All inferences from experience to the unobserved presuppose the uniformity principle: that the unobserved will resemble the observed — the future will resemble the past.",
+"begin": 256.005,
+"end": 268.165,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. The uniformity principle cannot be known a priori, because its denial is not contradictory. We can perfectly well conceive that bread, which has always nourished us, will poison us tomorrow.",
+"begin": 268.645,
+"end": 281.725,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. The uniformity principle cannot be established by experience, because any argument from experience would be an inductive argument, which presupposes the uniformity principle. That would be circular.",
+"begin": 282.245,
+"end": 295.485,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Therefore, the uniformity principle has no rational justification, and neither do inferences that rely on it.",
+"begin": 296.005,
+"end": 304.165,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Hume did not conclude that we should stop reasoning inductively. He concluded that we can't stop: \"All inferences from experience, therefore, are effects of custom, not of reasoning.\" Nature has made us form expectations from repeated experience, as it has made us breathe.",
+"begin": 304.645,
+"end": 322.805,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Bertrand Russell's chicken dramatizes the problem: the chicken fed every day by the farmer comes to expect food whenever the farmer appears, until the day the farmer wrings its neck. Its inductive inference was as good as ours. The philosopher C D Broad called induction \"the glory of science\" and \"the scandal of philosophy.\"",
+"begin": 323.285,
+"end": 345.045,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Responses to Hume",
+"begin": 346.305,
+"end": 347.585,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "One. The inductive justification of induction. \"Induction has worked well in the past, so it will work well in the future.\" This is circular, as Hume said. Some philosophers — R B Braithwaite, Max Black, James Van Cleve — argued that it is only rule-circular, using the rule it justifies, not premise-circular, assuming its conclusion as a premise, and that rule-circularity is not vicious. Wesley Salmon replied with the counter-inductivist: someone who uses the rule \"expect the opposite of what has happened before\" can argue, with equal rule-circularity, \"counter-induction has failed in the past, so it will succeed in the future.\" If rule-circular arguments work for induction, they work for counter-induction too.",
+"begin": 348.656,
+"end": 396.816,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Two. The dissolution. P F Strawson argued that asking whether induction is rational is like asking whether the law is legal. Being \"reasonable\" about matters of fact simply means proportioning belief to inductive evidence. There is no higher standard for induction to meet. Critics reply that we can still ask whether this practice leads to truth, and Strawson's point does not answer that.",
+"begin": 397.456,
+"end": 422.976,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Three. Pragmatic vindication. Hans Reichenbach argued that we cannot prove induction will succeed, but we can show that if any method can discover the regularities of nature, such as the limiting frequency of an event, induction will. So induction is the best bet. Objections: infinitely many other rules share this property, and the argument says nothing about the short run, which is all we ever have.",
+"begin": 423.376,
+"end": 450.656,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Four. Popper's rejection. Karl Popper argued that science does not use induction at all. Scientists propose bold conjectures and try to refute them by deduction — modus tollens. A theory that survives is corroborated, but corroboration says nothing about its future success. Objection: when an engineer must decide which bridge design to build, relying on the best-corroborated theory is rational only if corroboration indicates future reliability, and that is induction under another name.",
+"begin": 450.736,
+"end": 483.936,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Five. The material theory of induction. John Norton argues that there is no single, universal inductive rule to justify. Each inductive inference is licensed by specific background facts. We infer that all samples of bismuth melt at two hundred seventy-one degrees Celsius from a few samples, because we know that samples of a chemical element generally share melting points. We do not infer that all samples of wax melt at the same temperature, because we know wax is a variable mixture. The problem of induction then becomes a series of local questions about particular background facts, not one global question.",
+"begin": 484.656,
+"end": 524.656,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Six. Inference to the best explanation. D M Armstrong — What Is a Law of Nature? nineteen eighty-three — argued that the best explanation of observed regularities is that there are laws of nature, and laws hold in the future too. Objection: why trust inference to the best explanation? It is itself an ampliative inference.",
+"begin": 525.136,
+"end": 549.016,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Seven. Externalism. Reliabilists say: if nature is in fact uniform, then induction is a reliable process, and beliefs formed by it are justified and can be knowledge, whether or not we can prove that nature is uniform. We don't need to justify induction to use it justifiably. This is the externalist move against many skeptical problems.",
+"begin": 549.536,
+"end": 573.856,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Eight. Bayesian convergence. Bayesians show that agents who start with different prior probabilities, but who update on the same evidence by the rules of probability, will tend to converge on the same conclusions as evidence accumulates, provided their priors are not dogmatic — they do not assign probability zero to the truth. This \"merger of opinion\" is reassuring. But it does not answer Hume, because it requires priors that already favor uniformity.",
+"begin": 574.336,
+"end": 603.936,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "The practical upshot.",
+"begin": 604.416,
+"end": 605.856,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Hume's problem is not a reason to distrust induction in everyday life. It is a reminder that inductive conclusions are always fallible, that the strength of an induction depends on background knowledge about what kinds of things are uniform, and that a long run of past success is not a guarantee — ask the chicken, or any investor in two thousand seven. The lesson of the Norton-style view is especially useful: whenever you generalize, ask what background facts make this kind of property uniform across this kind of case?",
+"begin": 606.433,
+"end": 640.593,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Goodman's new riddle of induction",
+"begin": 641.855,
+"end": 644.015,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Nelson Goodman argued that Hume's problem is not the deepest one. Even if we accept that induction is legitimate, we need to know which generalizations to project from the evidence, and the evidence alone cannot tell us.",
+"begin": 645.094,
+"end": 658.534,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Define a new predicate, grue.",
+"begin": 659.014,
+"end": 661.334,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "An object is grue if and only if it is first examined before time t — say, January one, two thousand one hundred — and is green, or is not examined before t and is blue.",
+"begin": 661.814,
+"end": 675.094,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Every emerald examined so far has been green. Since they were all examined before t, every emerald examined so far has also been grue. So our evidence equally supports.",
+"begin": 675.334,
+"end": 687.574,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "H one: All emeralds are green.",
+"begin": 687.654,
+"end": 690.694,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "H two: All emeralds are grue.",
+"begin": 690.814,
+"end": 693.814,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "But these hypotheses make conflicting predictions about emeralds first examined after t: H one says they will be green, H two says they will be blue. The same evidence, and the same inductive rule, support incompatible predictions. Why is it rational to project \"green\" and not \"grue\"?",
+"begin": 693.894,
+"end": 713.414,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "\"Because 'grue' is defined in terms of time, and 'green' isn't.\" Goodman's reply: that depends on which predicates you start with. Define \"bleen\" as \"examined before t and blue, or not examined before t and green.\" Then \"green\" can be defined as \"grue if examined before t, and bleen otherwise.\" Relative to grue or bleen speakers, green is the gerrymandered, time-dependent predicate.",
+"begin": 713.454,
+"end": 741.814,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Goodman's own answer was entrenchment: we project predicates that have a history of successful projection in our linguistic community. W V O Quine suggested that \"green\" picks out a natural kind, a real similarity in nature, and that our innate sense of similarity, shaped by evolution, tends to track natural kinds.",
+"begin": 742.294,
+"end": 763.774,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Why grue matters for critical thinking.",
+"begin": 764.294,
+"end": 766.934,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Data never speak for themselves. Any finite set of observations is consistent with infinitely many generalizations. Which one we project depends on our choice of categories and our background assumptions. Statisticians face the same problem in curve-fitting: infinitely many curves pass through any finite set of points. Choosing an overly complicated curve that fits the data perfectly, overfitting, usually produces terrible predictions.",
+"begin": 767.334,
+"end": 795.814,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Beware gerrymandered categories. \"This team has never lost a Tuesday night home game in October when the temperature was below ten degrees Celsius\" is a grue-like predicate. Look through enough data and you can always find a pattern, but gerrymandered patterns do not project.",
+"begin": 796.774,
+"end": 814.374,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Machine learning faces the new riddle directly. The \"no free lunch\" theorems show that no learning algorithm is better than any other averaged over all possible problems. Learning works only because algorithms have inductive biases that fit the structure of the actual world.",
+"begin": 815.094,
+"end": 833.014,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The paradox of the ravens",
+"begin": 834.194,
+"end": 836.034,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Carl Hempel discovered a puzzle about confirmation using three plausible principles.",
+"begin": 837.12,
+"end": 842.48,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Nicod's criterion: an observation of an A that is B confirms \"All As are B.\" A black raven confirms \"All ravens are black.\"",
+"begin": 843.2,
+"end": 854.48,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. The equivalence condition: whatever confirms a hypothesis also confirms any logically equivalent hypothesis.",
+"begin": 855.2,
+"end": 863.04,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Logical equivalence: \"All ravens are black\" is equivalent to its contrapositive, \"All non-black things are non-ravens.\"",
+"begin": 863.76,
+"end": 872.72,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Now: a white shoe is a non-black non-raven. By Nicod's criterion, it confirms \"All non-black things are non-ravens.\" By the equivalence condition, it confirms \"All ravens are black.\" So you can do ornithology without leaving your room, by looking at white shoes, green leaves, and red books. That seems absurd.",
+"begin": 873.52,
+"end": 895.84,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Responses.",
+"begin": 896.56,
+"end": 897.68,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Hempel accepted the conclusion. The white shoe really does confirm the hypothesis. Our intuition that it doesn't is misled by background knowledge — we already know there are far more non-black things than ravens.",
+"begin": 898.0,
+"end": 911.4,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The Bayesian solution, developed by I J Good and others, agrees that the white shoe confirms, but explains why the confirmation is negligible. Because non-black things vastly outnumber ravens, finding that a randomly chosen non-black thing is not a raven is almost exactly as likely whether or not all ravens are black. The likelihood ratio is extremely close to one. By contrast, finding that a randomly chosen raven is black is noticeably more likely if all ravens are black than if some are not.",
+"begin": 911.76,
+"end": 945.0,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "How the evidence was gathered matters. If you sample from ravens and check their color, a black one confirms substantially. If you sample from non-black things and check whether they are ravens, a non-raven confirms minutely. If you pick up an object already knowing it is a white shoe, it tells you nothing about ravens at all. I J Good showed that in some background situations, even a black raven can disconfirm \"All ravens are black.\"",
+"begin": 945.28,
+"end": 973.36,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The lesson: whether an observation is evidence for a hypothesis, and how much, depends on background knowledge and on the procedure that produced the observation. This is one of the most important ideas in the theory of evidence. It returns in the Monty Hall problem, in selection effects, and throughout the analysis of scientific studies.",
+"begin": 973.76,
+"end": 993.76,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Probability: the basics",
+"begin": 995.03,
+"end": 997.11,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The rules of probability",
+"begin": 998.191,
+"end": 999.791,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Andrey Kolmogorov axiomatized probability theory. For any events, or propositions, A and B.",
+"begin": 1000.673,
+"end": 1008.113,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Non-negativity: the probability of A is at least zero.",
+"begin": 1008.673,
+"end": 1013.633,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Normalization: the probability of something certain equals one.",
+"begin": 1014.113,
+"end": 1019.073,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Additivity: if A and B cannot both be true, the probability of A or B equals the probability of A plus the probability of B.",
+"begin": 1019.553,
+"end": 1029.953,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Everything else follows. Useful consequences.",
+"begin": 1030.353,
+"end": 1033.553,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Complement: the probability of not A equals one minus the probability of A.",
+"begin": 1033.953,
+"end": 1039.473,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "General addition: the probability of A or B equals the probability of A plus the probability of B minus the probability of A and B.",
+"begin": 1039.953,
+"end": 1050.033,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The conjunction rule: the probability of A and B is at most the probability of A, and the probability of A and B is at most the probability of B. A conjunction can never be more probable than either of its parts.",
+"begin": 1050.273,
+"end": 1065.153,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Conditional probability and independence",
+"begin": 1065.393,
+"end": 1067.953,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The conditional probability of A given B is.",
+"begin": 1068.826,
+"end": 1072.146,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "the probability of A given B equals the probability of A and B divided by the probability of B.",
+"begin": 1072.186,
+"end": 1080.106,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It is the probability of A if we restrict attention to cases where B is true.",
+"begin": 1080.146,
+"end": 1085.786,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A and B are independent if the probability of A given B equals the probability of A: learning B tells you nothing about A. For independent events, the probability of A and B equals the probability of A times the probability of B. For dependent events, the probability of A and B equals the probability of A times the probability of B given A.",
+"begin": 1085.866,
+"end": 1113.306,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Warning: the probability of A given B is not the same as the probability of B given A. The probability that someone is a professional basketball player given that they are over two meters tall is small; the probability that someone is over two meters tall given that they are a professional basketball player is large. Confusing the two is the root of the prosecutor's fallacy and base rate neglect. It is sometimes called the fallacy of the transposed conditional or confusion of the inverse.",
+"begin": 1113.786,
+"end": 1146.053,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Compounding. When many conditions must all hold, their probabilities multiply, if independent, and the result shrinks fast. If a plan requires ten independent steps each ninety percent likely to succeed, the probability that all succeed is point nine to the power of ten, which is about point three five. This matters when evaluating detailed forecasts, elaborate plans, and conspiracy theories that require many separate things to be true: each detail makes the story more vivid and less probable.",
+"begin": 1146.159,
+"end": 1180.186,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "What is probability?",
+"begin": 1180.266,
+"end": 1182.186,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The rules are uncontroversial. What probability is is not. The main interpretations.",
+"begin": 1182.981,
+"end": 1190.461,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Classical. Probability is the ratio of favorable to equally possible cases. Key figures: Laplace. Good for: Dice, cards, lotteries. Problem: What makes cases \"equally possible\"? Paradoxes of indifference.",
+"begin": 1190.741,
+"end": 1208.581,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Frequentist. Probability is long-run relative frequency in a series of trials. Key figures: Venn, von Mises, Reichenbach. Good for: Repeatable experiments; statistics. Problem: Single events — \"Will this candidate win?\"",
+"begin": 1209.221,
+"end": 1226.901,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Propensity. Probability is a physical tendency of a setup to produce outcomes. Key figures: Popper. Good for: Quantum events; single-case chances. Problem: Hard to specify or measure.",
+"begin": 1227.461,
+"end": 1242.261,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Subjective — Bayesian. Probability is a rational agent's degree of belief. Key figures: Ramsey, de Finetti, Savage. Good for: Any uncertain proposition. Problem: Seems too subjective; where do priors come from?",
+"begin": 1242.901,
+"end": 1260.261,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Logical or evidential. Probability is the degree to which evidence supports a hypothesis. Key figures: Keynes, Carnap. Good for: Measuring evidential support. Problem: Hard to define non-arbitrarily.",
+"begin": 1260.981,
+"end": 1276.781,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In practice, different questions call for different interpretations. \"The probability of rolling a six is one sixth\" is naturally classical or frequentist. \"The probability that the defendant is guilty\" is naturally subjective or evidential.",
+"begin": 1277.221,
+"end": 1292.341,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Even everyday probability statements can be misunderstood. When a forecast says \"thirty percent chance of rain tomorrow,\" people have interpreted it as meaning it will rain thirty percent of the time, or over thirty percent of the area, or that thirty percent of forecasters expect rain. The intended meaning is that on days with this forecast, it rains at the location on about thirty percent of them. Always ask: probability of what, out of what?",
+"begin": 1292.901,
+"end": 1321.061,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Bayes' theorem",
+"begin": 1322.318,
+"end": 1323.278,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bayes' theorem tells you how to update the probability of a hypothesis H in light of evidence E. It is named after Thomas Bayes, whose essay on the subject was published posthumously in seventeen sixty-three by his friend Richard Price, and it was developed independently and more fully by Pierre-Simon Laplace.",
+"begin": 1324.356,
+"end": 1345.116,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "the probability of H given E equals the probability of E given H times the probability of H divided by the probability of E.",
+"begin": 1345.556,
+"end": 1356.116,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "where the probability of E equals the probability of E given H times the probability of H plus the probability of E given not H times the probability of not H.",
+"begin": 1356.756,
+"end": 1370.516,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The terms.",
+"begin": 1370.996,
+"end": 1372.156,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of H is the prior: how probable H was before considering E.",
+"begin": 1372.596,
+"end": 1378.436,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of E given H is the likelihood: how probable the evidence would be if H were true.",
+"begin": 1379.316,
+"end": 1386.716,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of E given not H: how probable the evidence would be if H were false.",
+"begin": 1387.156,
+"end": 1393.396,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of H given E is the posterior: how probable H is after taking E into account.",
+"begin": 1394.196,
+"end": 1402.116,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In words: how much you should believe a hypothesis after seeing evidence depends on how much you believed it before, and on how much more expected the evidence is if the hypothesis is true than if it is false.",
+"begin": 1402.596,
+"end": 1416.756,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The medical test example",
+"begin": 1417.236,
+"end": 1418.676,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This is the most famous illustration, from Gerd Gigerenzer's work with physicians.",
+"begin": 1419.546,
+"end": 1425.306,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "For women aged fifty in a certain region who take part in routine screening.",
+"begin": 1425.386,
+"end": 1430.426,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "The probability that a woman has breast cancer is one percent — the prevalence, or base rate.",
+"begin": 1430.506,
+"end": 1437.146,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "If a woman has breast cancer, the probability that she tests positive is ninety percent — the sensitivity.",
+"begin": 1437.226,
+"end": 1444.586,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "If a woman does not have breast cancer, the probability that she nevertheless tests positive is nine percent — the false positive rate.",
+"begin": 1444.666,
+"end": 1453.426,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "A woman tests positive. What is the probability that she actually has breast cancer?",
+"begin": 1453.866,
+"end": 1459.386,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "When Gigerenzer posed this question to one hundred sixty gynecologists in a training session, only about one in five chose the right answer. Many believed it was about ninety percent, or eighty-one percent. Let us compute.",
+"begin": 1460.106,
+"end": 1474.346,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of H equals point zero one; the probability of not H equals point nine nine.",
+"begin": 1474.986,
+"end": 1482.746,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of E given H equals point nine zero.",
+"begin": 1482.826,
+"end": 1487.306,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of E given not H equals point zero nine.",
+"begin": 1487.386,
+"end": 1492.106,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of E equals point nine zero times point zero one plus point zero nine times point nine nine equals point zero zero nine plus point zero eight nine one equals point zero nine eight one.",
+"begin": 1492.186,
+"end": 1507.146,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "the probability of H given E equals point zero zero nine divided by point zero nine eight one approximately point zero nine two, or about nine percent.",
+"begin": 1507.186,
+"end": 1519.466,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "So only about one in eleven women who test positive has cancer. The test is accurate, but the disease is rare, so false positives from the large healthy population swamp the true positives from the small sick population.",
+"begin": 1519.626,
+"end": 1535.346,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Natural frequencies",
+"begin": 1535.866,
+"end": 1537.226,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Gigerenzer and Ulrich Hoffrage showed that people reason much better when the same information is presented as natural frequencies rather than probabilities.",
+"begin": 1538.09,
+"end": 1547.93,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Think of one thousand women.",
+"begin": 1548.49,
+"end": 1550.37,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "ten of them have breast cancer. Of these ten, nine test positive.",
+"begin": 1550.65,
+"end": 1556.01,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "nine hundred ninety do not have breast cancer. Of these, about eighty-nine test positive anyway.",
+"begin": 1556.17,
+"end": 1563.13,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "So nine plus eighty-nine equals ninety-eight women test positive, and only nine of them have cancer.",
+"begin": 1563.29,
+"end": 1570.41,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "nine out of ninety-eight approximately nine percent.",
+"begin": 1570.65,
+"end": 1574.73,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Practical rule: whenever you face a problem of this kind, translate probabilities into counts of people, or cases, out of a round number. It makes the structure obvious.",
+"begin": 1574.89,
+"end": 1586.89,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The odds form and likelihood ratios",
+"begin": 1587.37,
+"end": 1589.85,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bayes' theorem has a simpler form using odds instead of probabilities. Odds are the ratio of the probability that something is true to the probability that it is false: a probability of point two is odds of point two to point eight, or one to four.",
+"begin": 1590.727,
+"end": 1608.327,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Posterior odds equals Prior odds times Likelihood ratio.",
+"begin": 1608.647,
+"end": 1613.087,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "where the likelihood ratio, or Bayes factor, equals the probability of E given H divided by the probability of E given not H.",
+"begin": 1613.287,
+"end": 1623.047,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In the mammography example.",
+"begin": 1623.367,
+"end": 1624.927,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Prior odds equals one to ninety-nine.",
+"begin": 1625.127,
+"end": 1628.047,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Likelihood ratio equals point nine zero divided by point zero nine equals ten.",
+"begin": 1628.327,
+"end": 1634.447,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Posterior odds equals ten to ninety-nine, which is a probability of ten out of one hundred nine approximately nine point two percent.",
+"begin": 1634.727,
+"end": 1643.527,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The odds form reveals the two things that matter, separately.",
+"begin": 1644.247,
+"end": 1648.007,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Where you started — the prior odds. A rare disease, an improbable claim, or an unusual event starts with low odds.",
+"begin": 1648.647,
+"end": 1658.007,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. How diagnostic the evidence is — the likelihood ratio. This measures how much more likely the evidence is if the hypothesis is true than if it is false.",
+"begin": 1658.647,
+"end": 1669.367,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It also makes updating on multiple pieces of evidence easy. If the woman takes a second, independent test and it is also positive, multiply again: ten to ninety-nine times ten equals one hundred to ninety-nine, about fifty percent. A third independent positive: one thousand to ninety-nine, about ninety-one percent.",
+"begin": 1669.847,
+"end": 1691.927,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A rough guide to the strength of evidence, loosely following the statistician Harold Jeffreys.",
+"begin": 1692.647,
+"end": 1698.007,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A likelihood ratio of one: None: the evidence is equally expected either way.",
+"begin": 1698.567,
+"end": 1704.567,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A likelihood ratio of one to three: Weak, barely worth mentioning.",
+"begin": 1705.127,
+"end": 1710.007,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A likelihood ratio of three to ten: Moderate.",
+"begin": 1710.567,
+"end": 1714.007,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A likelihood ratio of ten to one hundred: Strong.",
+"begin": 1714.487,
+"end": 1718.247,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A likelihood ratio of Over one hundred: Very strong.",
+"begin": 1718.727,
+"end": 1722.927,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Ratios below one are evidence against H, with the same scale applied to the reciprocal.",
+"begin": 1723.287,
+"end": 1728.967,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Evidence and confirmation",
+"begin": 1729.687,
+"end": 1731.287,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bayesian reasoning gives a precise definition: E is evidence for H if and only if E is more probable if H is true than if H is false, that is, if the likelihood ratio is greater than one. Equivalently, E raises the probability of H: the probability of H given E is greater than the probability of H.",
+"begin": 1732.153,
+"end": 1755.673,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This definition has powerful consequences for critical thinking.",
+"begin": 1756.233,
+"end": 1759.753,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. \"Consistent with\" is not \"evidence for.\" If E is equally likely whether or not H is true, E is no evidence for H, however well it \"fits.\" A horoscope that says \"you will face challenges this week\" fits everyone's week. Its likelihood ratio is one.",
+"begin": 1760.393,
+"end": 1780.073,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Evidence is always comparative. To know whether E supports H, you must ask how likely E would be under the alternatives. A suspect's nervousness in an interview is evidence of guilt only to the extent that guilty people are more often nervous in interviews than innocent people are.",
+"begin": 1780.233,
+"end": 1799.113,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Surprising predictions are strong evidence. If H predicts something that would be very unlikely otherwise — that is, if the probability of E given not H is low — confirming it gives a large likelihood ratio. This is why a risky, specific prediction that comes true is worth more than a vague one.",
+"begin": 1799.313,
+"end": 1820.473,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Absence of evidence can be evidence of absence, when the evidence would be expected if H were true. If there were an elephant in your room, you would see it. Not seeing one is strong evidence there isn't one. But not finding a particular fossil is weak evidence that the species never existed, because fossilization is rare.",
+"begin": 1820.553,
+"end": 1841.513,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Anecdotes are weak evidence, not zero evidence. A single testimonial that a remedy worked has a likelihood ratio only slightly above one, since people recover from most ailments anyway and we hear more about successes than failures.",
+"begin": 1841.593,
+"end": 1857.993,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Extraordinary claims require extraordinary evidence. A claim with very low prior odds needs an enormous likelihood ratio to become probable. This is the Bayesian content of Hume's argument about miracles and of Carl Sagan's maxim.",
+"begin": 1858.073,
+"end": 1874.393,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. Independent evidence multiplies; dependent evidence doesn't. Ten news stories that all repeat the same press release are one piece of evidence, not ten. Double-counting dependent evidence is one of the commonest errors in everyday reasoning.",
+"begin": 1875.113,
+"end": 1891.113,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Cromwell's rule. If your prior probability is exactly zero or exactly one, no evidence can ever change it — multiply zero by anything and you get zero. The statistician Dennis Lindley named this after Oliver Cromwell's plea to \"think it possible you may be mistaken.\" Never assign an empirical claim a probability of exactly zero or one.",
+"begin": 1891.673,
+"end": 1917.193,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Bayesian epistemology",
+"begin": 1918.38,
+"end": 1919.9,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Bayesian epistemology takes probability theory to be a theory of rational belief. Its main claims.",
+"begin": 1920.993,
+"end": 1927.953,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Probabilism: rational degrees of belief, credences, obey the axioms of probability.",
+"begin": 1928.433,
+"end": 1935.313,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Conditionalization: rational agents update their credences by Bayes' rule when they learn new evidence.",
+"begin": 1935.873,
+"end": 1943.433,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Credences and coherence",
+"begin": 1943.713,
+"end": 1945.473,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Why should credences obey the laws of probability? The classic argument is the Dutch book argument.",
+"begin": 1946.358,
+"end": 1952.518,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Suppose your credence that it will rain tomorrow is point six and your credence that it will not rain is also point six. These violate the axioms, since they should sum to one. A credence of point six means you consider it fair to pay sixty cents for a ticket that pays one dollar if the proposition is true. So a bookie can sell you both tickets for one dollar and twenty cents total. Whatever the weather, exactly one ticket pays one dollar. You are guaranteed to lose twenty cents. A set of bets that guarantees a loss is called a Dutch book. The theorem: your credences are immune to Dutch books if and only if they obey the probability axioms.",
+"begin": 1953.158,
+"end": 1996.758,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Critics object that the argument concerns betting behavior, not belief, and that you could avoid Dutch books simply by refusing to bet. James Joyce gave a purely epistemic argument instead: if your credences violate the axioms, there is always another set of credences that is more accurate, closer to the truth, however the world turns out. Incoherent credences are accuracy-dominated.",
+"begin": 1997.238,
+"end": 2022.598,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Conditionalization",
+"begin": 2023.158,
+"end": 2024.358,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Conditionalization says: if you learn E, and nothing else, your new credence in any hypothesis H should equal your old conditional credence in H given E.",
+"begin": 2025.221,
+"end": 2036.741,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "the new probability of H equals the old probability of H given E.",
+"begin": 2037.381,
+"end": 2041.941,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Richard Jeffrey generalized this for cases where learning is uncertain. His example: you look at a piece of cloth by candlelight. It seems green but could be blue. You don't become certain it is green; your credence in \"green\" merely shifts from, say, point three to point seven. Jeffrey conditionalization spreads this change through your other beliefs.",
+"begin": 2042.821,
+"end": 2066.741,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "the new probability of H equals the old probability of H given E times the new probability of E plus the old probability of H given not E times the new probability of not E.",
+"begin": 2066.981,
+"end": 2079.221,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The problem of the priors",
+"begin": 2080.101,
+"end": 2081.381,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Bayes' theorem tells you how to update, but not where to start. Where do prior probabilities come from?",
+"begin": 2082.247,
+"end": 2089.127,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Subjective Bayesians say any coherent prior is rationally permissible, and that the data will eventually swamp differences in priors — the convergence results mentioned above.",
+"begin": 2090.007,
+"end": 2101.007,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Objective Bayesians — E T Jaynes, Jon Williamson — say rational priors should be as uninformative as possible, for example by using the principle of indifference, assign equal probability to each possibility, or maximum entropy methods.",
+"begin": 2101.447,
+"end": 2118.247,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The principle of indifference leads to paradoxes. Bas van Fraassen's cube factory: a factory produces cubes with sides between zero and one centimeters long. What is the probability that a cube has a side of at most point five centimeters? Indifference over side length says one half. But the same cubes have faces between zero and one centimeters squared in area, and a side of at most point five centimeters means a face of at most point two five centimeters squared, so indifference over face area says one quarter. Indifference over volume, at most point one two five centimeters cubed, says one eighth. Same event, three different \"uninformative\" probabilities.",
+"begin": 2118.727,
+"end": 2167.127,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "In practice, good priors come from base rates: how often things of this kind turn out to be true. Daniel Kahneman calls this taking the outside view. Before evaluating the specific features of a case, the \"inside view\", ask how often similar cases succeed. How often are start-ups of this kind still operating after five years? How often do major infrastructure projects finish on budget? Rarely, according to Bent Flyvbjerg's studies of hundreds of projects. How often do dramatic single studies in this field replicate? The inside view tends to be optimistic and overconfident; the outside view corrects it.",
+"begin": 2168.087,
+"end": 2211.047,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The problem of old evidence",
+"begin": 2212.007,
+"end": 2213.767,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Clark Glymour found a puzzle for Bayesian confirmation theory. The anomalous precession of Mercury's perihelion was known decades before Einstein. When Einstein showed in nineteen fifteen that general relativity explained it, physicists rightly regarded this as strong evidence for the theory. But on the Bayesian account, since the evidence was already known, its probability was one, so the probability of H given E equals the probability of H: no confirmation at all. Proposed solutions include asking what one's credence would have been without knowing E, a counterfactual prior, and treating what is learned as the logical fact that H entails E.",
+"begin": 2214.635,
+"end": 2258.475,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Full belief and degrees of belief",
+"begin": 2259.749,
+"end": 2262.069,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How does all-or-nothing belief relate to credence? The most natural answer is the Lockean thesis — Richard Foley: you should believe p if and only if your credence in p exceeds some high threshold, such as point nine five. Two famous paradoxes make trouble for this.",
+"begin": 2263.144,
+"end": 2282.584,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The lottery paradox — Henry Kyburg, Probability and the Logic of Rational Belief, nineteen sixty-one. In a fair lottery with one thousand tickets and one winner, your credence that ticket number one will lose is point nine nine nine, above the threshold. So you should believe ticket number one will lose. The same holds for ticket number two, number three, and so on to number one thousand. If rational belief is closed under conjunction — if you believe p and believe q, you should believe p and q — you should believe that all one thousand tickets will lose. But you know that one will win. So rational belief would be inconsistent.",
+"begin": 2282.664,
+"end": 2325.571,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Responses.",
+"begin": 2325.997,
+"end": 2326.611,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Reject closure under conjunction — Kyburg's own choice: you may believe each ticket will lose without believing they all will.",
+"begin": 2326.797,
+"end": 2335.024,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Reject the Lockean thesis: high probability is not enough for belief. Many knowledge-first theorists say you shouldn't believe your ticket will lose, since you don't know it will.",
+"begin": 2335.064,
+"end": 2346.224,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Give up full belief as a basic notion and work only with credences — Richard Jeffrey.",
+"begin": 2346.264,
+"end": 2352.464,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The preface paradox. An author has carefully checked every claim in her book and believes each one. But in the preface, she writes, \"Any errors that remain are my own,\" because she reasonably believes that in a long book, at least one claim is false. Her beliefs are jointly inconsistent, yet each seems rational. Unlike the lottery, this case involves beliefs based on good evidence, not mere statistics.",
+"begin": 2352.504,
+"end": 2379.064,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Lesson for critical thinking: it can be rational to be confident of each of your beliefs individually and also confident that some of them are wrong. The more claims a position involves, the more likely it is that at least one is false. Humility about a whole body of belief is compatible with confidence in each part, and it is exactly what fallibilism recommends.",
+"begin": 2379.144,
+"end": 2401.944,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Common errors in probabilistic reasoning",
+"begin": 2403.135,
+"end": 2405.775,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Humans are not natural probabilists. These errors are well documented. The psychology behind them is discussed in Chapter fourteen.",
+"begin": 2406.87,
+"end": 2416.23,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Base rate neglect",
+"begin": 2416.31,
+"end": 2417.43,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "People tend to ignore the prior probability, base rate, and focus on the specific evidence. The mammography problem is one example. Another is Amos Tversky and Daniel Kahneman's cab problem.",
+"begin": 2418.312,
+"end": 2432.072,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "A cab was involved in a hit-and-run accident at night. Two cab companies operate in the city: eighty-five percent of cabs are Green and fifteen percent are Blue. A witness identified the cab as Blue. Tested under similar conditions, the witness correctly identifies each color eighty percent of the time. What is the probability that the cab was Blue?",
+"begin": 2432.152,
+"end": 2455.512,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Most people answer eighty percent. The correct answer.",
+"begin": 2455.632,
+"end": 2459.552,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Prior odds, blue to green, are fifteen to eighty-five.",
+"begin": 2459.592,
+"end": 2463.992,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Likelihood ratio equals point eight divided by point two equals four.",
+"begin": 2464.072,
+"end": 2469.072,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Posterior odds equals sixty to eighty-five, a probability of sixty out of one hundred forty-five approximately forty-one percent.",
+"begin": 2469.112,
+"end": 2478.272,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It is more likely that the cab was Green, despite the witness. In natural frequencies: of one hundred cabs, fifteen are Blue, and the witness calls twelve of them Blue; eighty-five are Green, and the witness calls seventeen of them Blue. Of the twenty-nine cabs called Blue, only twelve are.",
+"begin": 2478.312,
+"end": 2498.045,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The conjunction fallacy",
+"begin": 2498.099,
+"end": 2499.992,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The conjunction rule says the probability of A and B is at most the probability of A. Tversky and Kahneman's Linda problem showed that people violate it systematically.",
+"begin": 2500.859,
+"end": 2512.779,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Linda is thirty-one years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.",
+"begin": 2513.499,
+"end": 2530.019,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Which is more probable?",
+"begin": 2530.379,
+"end": 2531.659,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "A: Linda is a bank teller.",
+"begin": 2532.299,
+"end": 2534.619,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "B: Linda is a bank teller and is active in the feminist movement.",
+"begin": 2535.339,
+"end": 2539.899,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In one version, eighty-five percent of respondents chose B. But B cannot be more probable than A, since every feminist bank teller is a bank teller. People judge by representativeness — how well Linda matches the image of a feminist — rather than by probability.",
+"begin": 2540.699,
+"end": 2558.619,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Gerd Gigerenzer and Ralph Hertwig argued that many participants interpret \"probable\" in a non-mathematical sense — plausible, believable — and that the error shrinks dramatically when the question is posed in frequencies — \"Out of one hundred people like Linda, how many are bank tellers? How many are bank tellers and feminists?\". Both points are valuable. The practical lesson stands: adding detail makes a story more convincing and less probable. Beware of vivid, detailed scenarios in forecasting, in court, and in conspiracy theories.",
+"begin": 2559.339,
+"end": 2596.059,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The gambler's fallacy and the hot hand",
+"begin": 2597.019,
+"end": 2599.499,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The gambler's fallacy is the belief that after a run of one outcome, the opposite is \"due.\" After five reds in roulette, black is no more likely than before: each spin is independent. On August eighteen, nineteen thirteen, at the Monte Carlo Casino, black reportedly came up twenty-six times in a row, and gamblers lost heavily betting on red, believing it was overdue.",
+"begin": 2600.385,
+"end": 2625.985,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The opposite belief, that a player who has made several shots in a row is more likely to make the next one, the hot hand, was famously declared a fallacy by Thomas Gilovich, Robert Vallone, and Amos Tversky, who found no evidence of it in basketball shooting data. But in twenty eighteen, Joshua Miller and Adam Sanjurjo showed that the original analysis contained a subtle statistical bias: in a finite sequence, the proportion of successes that follow a streak of successes is expected to be below the overall success rate, even for a random process. Correcting for this bias, they found evidence of a modest hot hand after all. The story is itself a lesson: findings about biases can be biased, and even celebrated results deserve scrutiny.",
+"begin": 2626.545,
+"end": 2675.185,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The prosecutor's fallacy",
+"begin": 2676.065,
+"end": 2677.585,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The prosecutor's fallacy confuses the probability of evidence given innocent with the probability of innocent given evidence.",
+"begin": 2678.465,
+"end": 2686.705,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The tragic case of Sally Clark in England illustrates it. In nineteen ninety-nine she was convicted of murdering her two infant sons, both of whom had died suddenly. A pediatrician, Sir Roy Meadow, testified that the chance of two sudden infant deaths, SIDS, in a family like hers was about one in seventy-three million. He obtained this by squaring the estimated probability of one SIDS death — one in eight thousand five hundred forty-three. The figure was presented as if it were the probability that she was innocent. There were two errors.",
+"begin": 2686.785,
+"end": 2724.305,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The independence assumption was false. Genetic and environmental factors make a second SIDS death in a family more likely after a first. Squaring the probability was unjustified.",
+"begin": 2724.385,
+"end": 2737.265,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. The prosecutor's fallacy. Even if two SIDS deaths are very rare, so are two murders of infants by their mother. The relevant question is which explanation is more probable, given that two babies died. The statistician Ray Hill later estimated that, given two sudden infant deaths in a family, natural causes were several times more likely than double murder.",
+"begin": 2737.345,
+"end": 2762.625,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Royal Statistical Society issued a public statement in two thousand one criticizing the statistical evidence. Sally Clark's conviction was quashed on appeal in two thousand three. She died in two thousand seven.",
+"begin": 2762.705,
+"end": 2776.505,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A related error appeared in the O J Simpson trial. Defense lawyer Alan Dershowitz argued that only a tiny fraction of men who batter their wives go on to murder them, so the history of abuse was irrelevant. But the relevant question is not the probability that a batterer will murder his wife; it is the probability that the batterer is the murderer, given that the wife was murdered. Gerd Gigerenzer estimated from the available statistics that this probability is roughly eight in nine. Always condition on everything you know.",
+"begin": 2776.545,
+"end": 2810.065,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The Monty Hall problem",
+"begin": 2810.145,
+"end": 2811.985,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "On a game show, there are three doors. Behind one is a car; behind the others, goats. You pick door one. The host, who knows where the car is and always opens a door with a goat, opens door three to reveal a goat. He offers you the chance to switch to door two. Should you?",
+"begin": 2812.865,
+"end": 2833.185,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Yes. Switching wins with probability two thirds. Your first pick had a one third chance of being right, and nothing the host does changes that, since he can always open a goat door. The remaining two thirds is now concentrated on door two.",
+"begin": 2833.585,
+"end": 2849.665,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If this seems wrong, imagine one hundred doors. You pick one. The host opens ninety-eight others, all with goats, leaving your door and door fifty-seven. Would you switch?",
+"begin": 2849.985,
+"end": 2862.385,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "When Marilyn vos Savant gave the correct answer in her Parade magazine column in nineteen ninety, she received thousands of letters, many from people with PhDs, insisting she was wrong.",
+"begin": 2862.705,
+"end": 2874.625,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The deep lesson: the host's action is evidence, and its value depends on the process that produced it. If the host opened a door at random and it happened to show a goat, the odds would be one half each. The same observation, a goat behind door three, has different evidential value depending on how it was generated.",
+"begin": 2875.025,
+"end": 2895.185,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Regression to the mean",
+"begin": 2895.905,
+"end": 2897.265,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "When a variable is partly due to chance, extreme values tend to be followed by values closer to the average. Francis Galton discovered this in eighteen eighty-six while studying heights: very tall parents tend to have children who are tall, but less tall than themselves. He called it \"regression towards mediocrity.\"",
+"begin": 2898.129,
+"end": 2918.769,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Regression to the mean is responsible for a great many false causal conclusions.",
+"begin": 2919.249,
+"end": 2924.209,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Kahneman's flight instructors. Daniel Kahneman recalled instructors in the Israeli Air Force who believed that praise made cadets perform worse and criticism made them perform better. After an exceptionally good landing, they praised the cadet, and the next landing was usually worse; after a terrible one, they shouted, and the next was usually better. But this is exactly what regression predicts, regardless of praise or blame. Exceptional performances are partly luck, and luck doesn't repeat reliably.",
+"begin": 2925.169,
+"end": 2958.289,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The \"Sports Illustrated cover jinx.\" Athletes appear on the cover after an exceptional season, and then their performance declines.",
+"begin": 2959.329,
+"end": 2967.569,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Medical treatments. People seek treatment when their symptoms are at their worst. Many conditions fluctuate, so symptoms often improve afterwards whatever the treatment. This is one reason controlled trials are needed.",
+"begin": 2968.689,
+"end": 2982.849,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Policy. Speed cameras placed at sites that had an unusually bad accident year will be followed by fewer accidents, partly because of regression, whatever the cameras do.",
+"begin": 2983.409,
+"end": 2994.729,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The law of small numbers",
+"begin": 2995.329,
+"end": 2997.009,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Tversky and Kahneman found that people, including trained scientists, expect small samples to resemble the population closely. But small samples vary much more than large ones.",
+"begin": 2997.891,
+"end": 3009.571,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The hospital problem. A large hospital has about forty-five births a day, a small one about fifteen. Over a year, which recorded more days on which more than sixty percent of the babies born were boys? Most people say \"about the same.\" The answer is the small hospital, because small samples fluctuate more.",
+"begin": 3010.531,
+"end": 3031.891,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Kidney cancer rates. Among US counties, those with the lowest rates of kidney cancer are mostly rural and sparsely populated. It is tempting to explain this by clean rural living. But the counties with the highest rates are also mostly rural and sparsely populated. Small populations produce extreme rates in both directions.",
+"begin": 3032.851,
+"end": 3055.131,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Small schools. Wainer describes how the observation that many of the best-performing schools were small led to large investments in creating small schools. But the worst-performing schools were also disproportionately small.",
+"begin": 3055.651,
+"end": 3069.811,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Lesson: before explaining an extreme result, ask whether it comes from a small sample. Extreme results from small samples are expected by chance alone.",
+"begin": 3070.771,
+"end": 3080.931,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Simpson's paradox",
+"begin": 3081.971,
+"end": 3083.171,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A trend that appears in every subgroup can reverse when the groups are combined.",
+"begin": 3084.042,
+"end": 3089.002,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Berkeley admissions. Overall, the University of California, Berkeley admitted about forty-four percent of male graduate applicants and about thirty-five percent of female applicants, suggesting discrimination against women. But when Peter Bickel and colleagues examined individual departments, most admitted women at equal or higher rates. The overall gap arose because women disproportionately applied to more competitive departments with lower admission rates for everyone.",
+"begin": 3089.322,
+"end": 3119.082,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Kidney stones. A study compared two treatments.",
+"begin": 3119.722,
+"end": 3123.522,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Small stones. Treatment A — open surgery: ninety-three percent. Treatment B — percutaneous: eighty-seven percent.",
+"begin": 3123.802,
+"end": 3133.162,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Large stones. Treatment A — open surgery: seventy-three percent. Treatment B — percutaneous: sixty-nine percent.",
+"begin": 3133.322,
+"end": 3143.002,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "All stones. Treatment A — open surgery: seventy-eight percent. Treatment B — percutaneous: eighty-three percent.",
+"begin": 3143.082,
+"end": 3152.522,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Treatment A is better for small stones and for large stones, but B looks better overall, because doctors used A more for the harder large-stone cases.",
+"begin": 3152.682,
+"end": 3163.162,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Which comparison should you trust? Probability alone cannot say. It depends on the causal structure. In the kidney stone case, stone size affects both the choice of treatment and the outcome, so you should compare within stone sizes. In other cases, the aggregated figure is correct. Judea Pearl argues that Simpson's paradox can only be resolved with causal reasoning.",
+"begin": 3163.482,
+"end": 3188.362,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Calibration and scoring rules",
+"begin": 3189.551,
+"end": 3191.631,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A person is well calibrated if, of all the things they say they are seventy percent sure of, about seventy percent turn out to be true; of all the things they are ninety percent sure of, about ninety percent turn out true; and so on.",
+"begin": 3192.712,
+"end": 3208.352,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Most people are overconfident: of the things they are \"ninety percent sure\" of, far fewer than ninety percent are true. Some professionals who receive rapid, precise feedback are remarkably well calibrated. US weather forecasters are a classic example: when they say seventy percent chance of rain, it rains about seventy percent of the time.",
+"begin": 3208.792,
+"end": 3231.672,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Scoring rules measure the accuracy of probabilistic forecasts. The most common is the Brier score: for each forecast, take the squared difference between the probability you gave and what happened — one if it happened, zero if not — and average over all forecasts.",
+"begin": 3232.152,
+"end": 3249.832,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A perfect forecaster scores zero.",
+"begin": 3250.472,
+"end": 3252.712,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Someone who always says fifty percent scores point two five.",
+"begin": 3253.272,
+"end": 3257.192,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Someone who always says one hundred percent and is wrong half the time scores point five.",
+"begin": 3257.512,
+"end": 3262.392,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The Brier score is a proper scoring rule: you get the best expected score by reporting your true credences. It rewards both calibration, your probabilities match frequencies, and resolution — you distinguish events that happen from those that don't, instead of always saying the base rate. Philip Tetlock's forecasting tournaments use it.",
+"begin": 3263.272,
+"end": 3284.432,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "A calibration exercise",
+"begin": 3284.952,
+"end": 3286.472,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "For each question, give a range that you are ninety percent confident contains the true answer. Don't look anything up. If you are well calibrated, about nine of your ten ranges should contain the answer.",
+"begin": 3287.353,
+"end": 3300.953,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. The year Gutenberg's Bible was printed.",
+"begin": 3301.033,
+"end": 3304.793,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. The length of the Nile, in kilometers.",
+"begin": 3304.873,
+"end": 3308.633,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. The height of Mount Everest, in meters.",
+"begin": 3308.833,
+"end": 3312.633,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. The number of bones in the adult human body.",
+"begin": 3312.713,
+"end": 3316.713,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. The average distance from the Earth to the Moon, in kilometers.",
+"begin": 3316.793,
+"end": 3321.833,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. The year Hume's A Treatise of Human Nature was first published.",
+"begin": 3321.913,
+"end": 3327.353,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. The speed of sound in air at twenty degrees Celsius, in meters per second.",
+"begin": 3327.433,
+"end": 3333.393,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eight. The year Immanuel Kant was born.",
+"begin": 3333.433,
+"end": 3336.873,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nine. The number of member states of the United Nations.",
+"begin": 3336.953,
+"end": 3340.993,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Ten. The year Ibn Sīnā, Avicenna, was born.",
+"begin": 3341.033,
+"end": 3345.353,
+"voice": "second"
+},
+{
+"kind": "label",
+"text": "Answers.",
+"begin": 3350.439,
+"end": 3351.319,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. About fourteen fifty-five.",
+"begin": 3351.98,
+"end": 3355.26,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. About six thousand six hundred fifty kilometers — estimates vary.",
+"begin": 3355.42,
+"end": 3360.7,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. eight thousand eight hundred forty-nine meters.",
+"begin": 3360.78,
+"end": 3364.86,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. two hundred six.",
+"begin": 3364.94,
+"end": 3367.34,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. About three hundred eighty-four thousand four hundred kilometers.",
+"begin": 3367.42,
+"end": 3372.38,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. seventeen thirty-nine.",
+"begin": 3372.46,
+"end": 3375.26,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. About three hundred forty-three meters per second.",
+"begin": 3375.34,
+"end": 3379.5,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eight. seventeen twenty-four.",
+"begin": 3379.58,
+"end": 3382.3,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nine. one hundred ninety-three.",
+"begin": 3382.38,
+"end": 3385.1,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Ten. About nine eighty CE.",
+"begin": 3385.18,
+"end": 3387.9,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Most people who try exercises like this find that far fewer than nine of their \"ninety percent\" ranges contain the answer. Their ranges are too narrow, because they are overconfident. The remedy is to widen your ranges until you are genuinely surprised when the answer falls outside them.",
+"begin": 3388.62,
+"end": 3406.46,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Statistics and significance",
+"begin": 3407.726,
+"end": 3409.726,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Much of the evidence in public debates comes as statistics. You don't need to be a statistician to evaluate it, but you need to understand a few concepts, and avoid a few misunderstandings.",
+"begin": 3410.808,
+"end": 3423.368,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "P-values",
+"begin": 3423.448,
+"end": 3424.248,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A p-value is the probability, assuming the null hypothesis is true, usually \"there is no effect\", and assuming the statistical model is correct, of obtaining data at least as extreme as the data actually observed.",
+"begin": 3425.123,
+"end": 3439.603,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "By convention — dating back to R A Fisher in the nineteen twenties — results with p is less than point zero five are called statistically significant.",
+"begin": 3440.083,
+"end": 3449.523,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The p-value is widely misunderstood. In twenty sixteen, the American Statistical Association took the unusual step of publishing a statement on p-values — Ronald Wasserstein and Nicole Lazar. Among its principles.",
+"begin": 3450.163,
+"end": 3465.123,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A p-value is not the probability that the null hypothesis is true, or that the results were produced by chance alone. That is the transposed conditional again: the probability of data given null is not the probability of null given data.",
+"begin": 3465.603,
+"end": 3481.363,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Scientific conclusions should not be based only on whether a p-value passes a threshold.",
+"begin": 3481.683,
+"end": 3487.123,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A p-value does not measure the size of an effect or the importance of a result.",
+"begin": 3487.363,
+"end": 3492.403,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "By itself, a p-value does not provide a good measure of evidence for a hypothesis.",
+"begin": 3492.643,
+"end": 3498.123,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "\"Statistically significant\" does not mean \"important.\" With a very large sample, a tiny, practically irrelevant effect can be highly significant. With a small sample, a large, important effect may fail to reach significance. \"Not statistically significant\" does not mean \"no effect.\" It may mean the study was too small to detect one.",
+"begin": 3498.403,
+"end": 3521.083,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Confidence intervals and effect sizes",
+"begin": 3521.443,
+"end": 3523.763,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Two things are more informative than a p-value.",
+"begin": 3524.65,
+"end": 3527.53,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Effect size: how big is the difference? A drug that lowers blood pressure by one mmHg and one that lowers it by twenty mmHg can have the same p-value in different studies.",
+"begin": 3528.01,
+"end": 3541.29,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Confidence interval: a range of values consistent with the data. A ninety-five percent confidence interval is produced by a procedure that, in repeated sampling, captures the true value ninety-five percent of the time. A narrow interval indicates a precise estimate; a wide one indicates uncertainty. If the interval runs from \"a small harm\" to \"a large benefit,\" the study hasn't settled much.",
+"begin": 3541.61,
+"end": 3568.21,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Relative and absolute risk",
+"begin": 3568.81,
+"end": 3570.33,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Health news often reports relative risk reductions because they sound impressive. Always ask for the absolute figures.",
+"begin": 3571.122,
+"end": 3578.962,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"This drug cuts your risk of a heart attack by fifty percent!\"",
+"begin": 3579.847,
+"end": 3584.167,
+"voice": "third"
+},
+{
+"kind": "say",
+"text": "If the risk falls from two in one thousand to one in one thousand, that is a fifty percent relative risk reduction, but a point one percentage point absolute reduction. The number needed to treat, NNT, is one thousand: a thousand people must take the drug for one to avoid a heart attack. Now weigh that against the side effects.",
+"begin": 3584.679,
+"end": 3607.599,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A historical example: in nineteen ninety-five, the UK Committee on Safety of Medicines warned that certain third-generation oral contraceptives doubled the risk of potentially life-threatening blood clots. \"Doubled\", a one hundred percent relative increase, meant a rise from about one in seven thousand women to two in seven thousand. The scare led many women to stop taking the pill, and it was followed by an estimated increase of about thirteen thousand abortions in England and Wales the following year, as well as additional births and teenage pregnancies. Pregnancy itself carries a higher risk of blood clots than the pill did.",
+"begin": 3607.879,
+"end": 3648.199,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Rule: when you hear \"X increases, or decreases, the risk of Y by Z percent,\" ask \"From what, to what?\"",
+"begin": 3648.839,
+"end": 3658.199,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Multiple comparisons and p-hacking",
+"begin": 3659.079,
+"end": 3661.399,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If you test twenty hypotheses that are all false, at the point zero five significance level, you should expect about one \"significant\" result by chance alone. If you test many hypotheses and report only the significant ones, you will \"discover\" effects that don't exist. The webcomic xkcd illustrated this with scientists who test whether jelly beans cause acne, find nothing, test twenty colors separately, and find that green jelly beans \"cause\" acne at p is less than point zero five, which the newspapers duly report.",
+"begin": 3662.263,
+"end": 3697.943,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "P-hacking is the practice, often unconscious, of exploiting flexibility in data analysis until a significant result appears: trying different subsets of the data, different outcome measures, different control variables, or stopping data collection when p dips below point zero five. Joseph Simmons, Leif Nelson, and Uri Simonsohn showed how powerful this is. Using flexible but common analytic choices, they \"demonstrated\" that listening to the Beatles song \"When I'm Sixty-Four\" made participants literally younger — by about a year and a half, in chronological age — an impossible result.",
+"begin": 3698.423,
+"end": 3738.023,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Andrew Gelman and Eric Loken call the broader problem the garden of forking paths: even without deliberate fishing, researchers make many data-dependent choices, each of which could have gone another way, so a reported p-value can be much less meaningful than it looks.",
+"begin": 3738.263,
+"end": 3755.343,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Remedies include pre-registration, publicly specifying hypotheses and analyses before collecting data, corrections for multiple comparisons, such as the Bonferroni correction, and replication.",
+"begin": 3755.623,
+"end": 3768.423,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Why most published findings might be false",
+"begin": 3768.983,
+"end": 3771.783,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "John Ioannidis's famous paper \"Why Most Published Research Findings Are False\" is essentially a Bayesian argument. Suppose that in some field.",
+"begin": 3772.656,
+"end": 3782.816,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "ten percent of the hypotheses researchers test are true — the base rate.",
+"begin": 3782.896,
+"end": 3787.376,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Studies have eighty percent power — the probability of detecting a true effect.",
+"begin": 3787.936,
+"end": 3792.976,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The significance threshold is point zero five.",
+"begin": 3793.216,
+"end": 3796.656,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Out of one thousand hypotheses tested: one hundred are true, and eighty of them give significant results. nine hundred are false, and forty-five of them give significant results by chance. So of the one hundred twenty-five significant results, forty-five, thirty-six percent, are false. If power is a more realistic thirty-five percent, only thirty-five true effects are detected, and forty-five of the eighty significant results, fifty-six percent, are false. Add p-hacking and publication bias, and the proportion rises further.",
+"begin": 3796.736,
+"end": 3832.656,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The lesson is not that science is unreliable. It is that a single significant result, especially a surprising one in a field with low prior plausibility and small studies, is weak evidence. Replication, large samples, and prior plausibility all matter.",
+"begin": 3832.736,
+"end": 3849.696,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 3853.061,
+"end": 3853.861,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 3854.942,
+"end": 3869.982,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. State Hume's problem of induction in three steps.",
+"begin": 3870.851,
+"end": 3875.811,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Inductive inference presupposes that the unobserved resembles the observed. This can't be proven a priori, since its denial is conceivable. It can't be proven from experience without circularity. So induction has no rational foundation.",
+"begin": 3880.882,
+"end": 3898.322,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. Explain why \"grue\" poses a problem even for someone who accepts induction.",
+"begin": 3899.193,
+"end": 3905.833,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. The same evidence — all emeralds examined so far are green, and therefore grue — supports incompatible generalizations. Induction alone can't tell us which predicate to project. We need an account of which categories are \"projectible,\" and that account can't be read off the evidence.",
+"begin": 3910.922,
+"end": 3931.642,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. A test for a rare disease — prevalence one in one thousand — has sensitivity ninety-nine percent and a false positive rate of two percent. You test positive. Roughly how likely are you to have the disease? Use natural frequencies.",
+"begin": 3932.526,
+"end": 3950.366,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Of one hundred thousand people, one hundred have the disease and ninety-nine test positive. Of ninety-nine thousand nine hundred who don't, two percent — one thousand nine hundred ninety-eight — test positive. So ninety-nine of about two thousand ninety-seven positives have the disease: about four point seven percent. A positive result raises the probability almost fifty-fold, but it is still more likely that you don't have the disease. A second, independent test would help a lot — likelihood ratio point nine nine divided by point zero two approximately fifty each time.",
+"begin": 3955.435,
+"end": 3995.675,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. What is the likelihood ratio of a piece of evidence that is \"consistent with\" a hypothesis but equally consistent with its negation?",
+"begin": 3996.552,
+"end": 4006.632,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. It provides no evidence either way, however well it \"fits.\"",
+"begin": 4011.703,
+"end": 4016.823,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. Why is a vivid, detailed scenario often less probable than a plain one?",
+"begin": 4017.685,
+"end": 4024.405,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Because each added detail is an extra conjunct, and the probability of A and B is at most the probability of A. Detail increases representativeness and plausibility, which makes the story feel more likely, while its probability can only fall.",
+"begin": 4029.492,
+"end": 4048.132,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. A school introduces a new program for its lowest-scoring students, and next year their scores rise. What alternative explanation should you consider first?",
+"begin": 4049.006,
+"end": 4061.086,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Regression to the mean. Students selected for extremely low scores partly had bad luck on the test; on average, their next scores will be closer to the mean regardless of the program. A comparison group of similarly selected students without the program is needed.",
+"begin": 4066.168,
+"end": 4083.848,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. A newspaper reports: \"Eating processed meat increases your risk of bowel cancer by eighteen percent.\" What should you ask?",
+"begin": 4084.715,
+"end": 4094.795,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. \"From what, to what?\" An eighteen percent relative increase in a lifetime risk of, say, five or six percent amounts to an absolute increase of about one percentage point. You would also ask how much meat was involved, whether the association is causal — observational data, possible confounding — and what the uncertainty is. For reference: the International Agency for Research on Cancer reported an eighteen percent increased risk per fifty g of processed meat eaten daily.",
+"begin": 4099.866,
+"end": 4134.346,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. In Simpson's paradox, how do you decide whether to trust the aggregated or the separated data?",
+"begin": 4135.21,
+"end": 4142.89,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. By the causal structure. If the grouping variable — for example, stone size — is a common cause of both the treatment choice and the outcome, compare within groups. If the grouping variable is itself caused by the treatment, a mediator, the aggregate may be the right comparison. Statistics alone can't decide; you need a causal model.",
+"begin": 4147.958,
+"end": 4171.718,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question nine. Why does Cromwell's rule matter for open-mindedness?",
+"begin": 4172.591,
+"end": 4177.711,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. Because a prior of exactly zero or one can never be changed by any evidence under Bayesian updating. To remain responsive to evidence, you must leave at least some probability for being wrong. A belief held with literal certainty is immune to evidence, which is the formal definition of a closed mind.",
+"begin": 4182.779,
+"end": 4204.059,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter nine",
+"begin": 4207.412,
+"end": 4208.932,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter nine. If you'd like to see the formulas and worked examples on the page, the written chapter has them all. In chapter ten we'll put these ideas to work in the most successful knowledge-producing enterprise we have: science.",
+"begin": 4210.024,
+"end": 4225.544,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 7.027,
+"lines": [
+0,
+1
+],
+"request_id": "OfM4YVhGY7swriZucABj"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 8.255,
+"end": 12.931,
+"lines": [
+1,
+2
+],
+"request_id": "GUeI22sdKNjXbyuo90iE"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 13.479,
+"end": 18.625,
+"lines": [
+2,
+3
+],
+"request_id": "TC4ienOstQacy6XSsqp7"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 19.461,
+"end": 24.712,
+"lines": [
+3,
+4
+],
+"request_id": "mejZoKGLV1UOHnhKCj15"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 25.26,
+"end": 29.623,
+"lines": [
+4,
+5
+],
+"request_id": "eKh8gEe79jVzpdyHF2SM"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 30.459,
+"end": 82.26,
+"lines": [
+5,
+7
+],
+"request_id": "NlsxbA27a2gGRtfKKbCg"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 82.887,
+"end": 132.937,
+"lines": [
+7,
+10
+],
+"request_id": "taQ0bOuxb6gvIL87dHj1"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 134.165,
+"end": 136.359,
+"lines": [
+10,
+11
+],
+"request_id": "YFVTEi5yGMWHHbcBh1DZ"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 137.404,
+"end": 243.931,
+"lines": [
+11,
+19
+],
+"request_id": "Sr4mrHt4j6n1zvMCsSKZ"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 245.159,
+"end": 247.04,
+"lines": [
+19,
+20
+],
+"request_id": "D8B2WAOUr5O8qHOhcVQL"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 248.085,
+"end": 345.078,
+"lines": [
+20,
+27
+],
+"request_id": "0CQ5MbIOVBFcB6w0KwrY"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 346.305,
+"end": 347.611,
+"lines": [
+27,
+28
+],
+"request_id": "dlsgdoIOkSywQ9YrZU4O"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 348.656,
+"end": 605.806,
+"lines": [
+28,
+37
+],
+"request_id": "vsgCRbnixTHzPuEa1LCF"
+},
+{
+"chunk": 14,
+"voice": "main",
+"begin": 606.433,
+"end": 640.627,
+"lines": [
+37,
+38
+],
+"request_id": "6tiWg4n50KDUA9vL9CTj"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 641.855,
+"end": 644.049,
+"lines": [
+38,
+39
+],
+"request_id": "Hgxt5ImML0lgeRkTZegU"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 645.094,
+"end": 832.967,
+"lines": [
+39,
+52
+],
+"request_id": "xTLuk9mJarS34cUmtz7r"
+},
+{
+"chunk": 17,
+"voice": "second",
+"begin": 834.194,
+"end": 836.075,
+"lines": [
+52,
+53
+],
+"request_id": "nEG16jp7TrXI0focgFSj"
+},
+{
+"chunk": 18,
+"voice": "second",
+"begin": 837.12,
+"end": 993.802,
+"lines": [
+53,
+63
+],
+"request_id": "HeADV9tbrMNowfkyIcNY"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 995.03,
+"end": 997.146,
+"lines": [
+63,
+64
+],
+"request_id": "5R2S96twu2Cl6IRVNhIN"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 998.191,
+"end": 999.837,
+"lines": [
+64,
+65
+],
+"request_id": "4vetAmuCAQUeaVyRJm3S"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 1000.673,
+"end": 1067.99,
+"lines": [
+65,
+74
+],
+"request_id": "wEJYBtQSof1OrC4RvtW4"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 1068.826,
+"end": 1182.145,
+"lines": [
+74,
+81
+],
+"request_id": "7wx0jyaaCeH3ZsQzNb3a"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 1182.981,
+"end": 1321.091,
+"lines": [
+81,
+89
+],
+"request_id": "HQGRCLmNkjYOosiQLVqn"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 1322.318,
+"end": 1323.311,
+"lines": [
+89,
+90
+],
+"request_id": "n27Y2dLRi0gdDiq0Z1kN"
+},
+{
+"chunk": 25,
+"voice": "main",
+"begin": 1324.356,
+"end": 1418.71,
+"lines": [
+90,
+100
+],
+"request_id": "6GJfqCeqT3Eo7IBfJCiy"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 1419.546,
+"end": 1537.254,
+"lines": [
+100,
+114
+],
+"request_id": "ZLpDDTpNgiOJ7MCVwdjB"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1538.09,
+"end": 1589.891,
+"lines": [
+114,
+122
+],
+"request_id": "9MWd1olWjV0DJMX4CbkO"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1590.727,
+"end": 1731.318,
+"lines": [
+122,
+141
+],
+"request_id": "gm4CYFSBYuWDhkNgfG7c"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1732.153,
+"end": 1917.153,
+"lines": [
+141,
+151
+],
+"request_id": "Ih2JiLlW04GJKPhl2H7J"
+},
+{
+"chunk": 30,
+"voice": "second",
+"begin": 1918.38,
+"end": 1919.948,
+"lines": [
+151,
+152
+],
+"request_id": "99kseh1JkpUolWxUKQaq"
+},
+{
+"chunk": 31,
+"voice": "second",
+"begin": 1920.993,
+"end": 1945.522,
+"lines": [
+152,
+156
+],
+"request_id": "mY4ulRTxcW96P4CoWiwG"
+},
+{
+"chunk": 32,
+"voice": "second",
+"begin": 1946.358,
+"end": 2024.385,
+"lines": [
+156,
+160
+],
+"request_id": "wOoBWWO1Ocf6k8DfohSk"
+},
+{
+"chunk": 33,
+"voice": "second",
+"begin": 2025.221,
+"end": 2081.411,
+"lines": [
+160,
+165
+],
+"request_id": "v4Pp9vyvYIgxgXgdarhN"
+},
+{
+"chunk": 34,
+"voice": "second",
+"begin": 2082.247,
+"end": 2213.799,
+"lines": [
+165,
+171
+],
+"request_id": "OknOHrWGVkeCkFwbXn0x"
+},
+{
+"chunk": 35,
+"voice": "second",
+"begin": 2214.635,
+"end": 2258.521,
+"lines": [
+171,
+172
+],
+"request_id": "XvkWO6Vr6xYSmmqnLAuw"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 2259.749,
+"end": 2262.1,
+"lines": [
+172,
+173
+],
+"request_id": "V5Y1QYPzI1D3FqNfn6U0"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 2263.144,
+"end": 2401.907,
+"lines": [
+173,
+181
+],
+"request_id": "Chz5eU0tTI71HOV7AnNz"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 2403.135,
+"end": 2405.825,
+"lines": [
+181,
+182
+],
+"request_id": "eCE0nh1NQwBCZ6iIEd9P"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 2406.87,
+"end": 2417.476,
+"lines": [
+182,
+184
+],
+"request_id": "JPa8fBjWOpWCNbb2kLbN"
+},
+{
+"chunk": 40,
+"voice": "main",
+"begin": 2418.312,
+"end": 2500.023,
+"lines": [
+184,
+192
+],
+"request_id": "aN1dwZGVb8ORkJNLxRvZ"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 2500.859,
+"end": 2599.549,
+"lines": [
+192,
+200
+],
+"request_id": "dq6SrjDlkM92pH2uSRWG"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 2600.385,
+"end": 2677.629,
+"lines": [
+200,
+203
+],
+"request_id": "jb4pTwo2kefwsoWwhAe6"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 2678.465,
+"end": 2812.029,
+"lines": [
+203,
+210
+],
+"request_id": "YkIfgjHsUeZbVBES2bVD"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2812.865,
+"end": 2897.293,
+"lines": [
+210,
+216
+],
+"request_id": "ilkey7lTTGyhoAZt7Coj"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2898.129,
+"end": 2997.055,
+"lines": [
+216,
+223
+],
+"request_id": "y14IJF8H0iqfTYn9XbTD"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 2997.891,
+"end": 3083.207,
+"lines": [
+223,
+229
+],
+"request_id": "TGDgXYhpH6JromBPoCtm"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 3084.042,
+"end": 3188.323,
+"lines": [
+229,
+237
+],
+"request_id": "2wkn1fRyqFuVsVlERgx4"
+},
+{
+"chunk": 48,
+"voice": "second",
+"begin": 3189.551,
+"end": 3191.667,
+"lines": [
+237,
+238
+],
+"request_id": "4H46hgLDq988IPCPg84n"
+},
+{
+"chunk": 49,
+"voice": "second",
+"begin": 3192.712,
+"end": 3286.518,
+"lines": [
+238,
+246
+],
+"request_id": "eNcKUwi3nmsAF278ZVSU"
+},
+{
+"chunk": 50,
+"voice": "second",
+"begin": 3287.353,
+"end": 3345.398,
+"lines": [
+246,
+257
+],
+"request_id": "tLPBRpdaW67aQ6MYSyYO"
+},
+{
+"chunk": 51,
+"voice": "second",
+"begin": 3350.439,
+"end": 3351.353,
+"lines": [
+257,
+258
+],
+"request_id": "5ITb7taqy4J8kXO71HNQ"
+},
+{
+"chunk": 52,
+"voice": "second",
+"begin": 3351.98,
+"end": 3406.498,
+"lines": [
+258,
+269
+],
+"request_id": "jkzRrPnQwjSqOBxE0frN"
+},
+{
+"chunk": 53,
+"voice": "main",
+"begin": 3407.726,
+"end": 3409.763,
+"lines": [
+269,
+270
+],
+"request_id": "eK0UdUe4yljFDGbbpKgf"
+},
+{
+"chunk": 54,
+"voice": "main",
+"begin": 3410.808,
+"end": 3424.287,
+"lines": [
+270,
+272
+],
+"request_id": "BZn3ao14RG3l4phdeeWk"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 3425.123,
+"end": 3523.814,
+"lines": [
+272,
+281
+],
+"request_id": "asum48N3bPD6VVQhP2nd"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 3524.65,
+"end": 3570.286,
+"lines": [
+281,
+285
+],
+"request_id": "PUm6pwWoJV48JRlUaOKS"
+},
+{
+"chunk": 57,
+"voice": "main",
+"begin": 3571.122,
+"end": 3579.011,
+"lines": [
+285,
+286
+],
+"request_id": "GJgJamHA8mU90ZmopoHp"
+},
+{
+"chunk": 58,
+"voice": "third",
+"begin": 3579.847,
+"end": 3584.131,
+"lines": [
+286,
+287
+],
+"request_id": "iIzQvWMJkfUVywHTem0v"
+},
+{
+"chunk": 59,
+"voice": "main",
+"begin": 3584.679,
+"end": 3661.427,
+"lines": [
+287,
+291
+],
+"request_id": "wuiwfhhunFiUYYyI6eu8"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 3662.263,
+"end": 3771.82,
+"lines": [
+291,
+296
+],
+"request_id": "Wx3i9VubHbWfcAjWuMLQ"
+},
+{
+"chunk": 61,
+"voice": "main",
+"begin": 3772.656,
+"end": 3849.744,
+"lines": [
+296,
+302
+],
+"request_id": "OgKz102Ec7KXQL7t97Zs"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 3853.061,
+"end": 3853.897,
+"lines": [
+302,
+303
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 3854.942,
+"end": 3870.015,
+"lines": [
+303,
+304
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 64,
+"voice": "second",
+"begin": 3870.851,
+"end": 3875.84,
+"lines": [
+304,
+305
+],
+"request_id": "qhKCtodEekHEmmOJ5EcQ"
+},
+{
+"chunk": 65,
+"voice": "main",
+"begin": 3880.882,
+"end": 3898.358,
+"lines": [
+305,
+306
+],
+"request_id": "WZthlnt9Vj3HZTRoWW4W"
+},
+{
+"chunk": 66,
+"voice": "second",
+"begin": 3899.193,
+"end": 3905.881,
+"lines": [
+306,
+307
+],
+"request_id": "CZ4JrWDPf4Vyp2BJJq0n"
+},
+{
+"chunk": 67,
+"voice": "main",
+"begin": 3910.922,
+"end": 3931.69,
+"lines": [
+307,
+308
+],
+"request_id": "q4TkrQwGmYtxtj8z9Mp8"
+},
+{
+"chunk": 68,
+"voice": "second",
+"begin": 3932.526,
+"end": 3950.393,
+"lines": [
+308,
+309
+],
+"request_id": "mbrvL4MQOP80qEzww1MG"
+},
+{
+"chunk": 69,
+"voice": "main",
+"begin": 3955.435,
+"end": 3995.716,
+"lines": [
+309,
+310
+],
+"request_id": "uXUhPFTo0oh5P1dkAhhJ"
+},
+{
+"chunk": 70,
+"voice": "second",
+"begin": 3996.552,
+"end": 4006.661,
+"lines": [
+310,
+311
+],
+"request_id": "8JjGTWDfznrSbyot8tLm"
+},
+{
+"chunk": 71,
+"voice": "main",
+"begin": 4011.703,
+"end": 4016.849,
+"lines": [
+311,
+312
+],
+"request_id": "dqb7NZBCloAmP2zs3efb"
+},
+{
+"chunk": 72,
+"voice": "second",
+"begin": 4017.685,
+"end": 4024.451,
+"lines": [
+312,
+313
+],
+"request_id": "avNqAG57t14e2GToKyO9"
+},
+{
+"chunk": 73,
+"voice": "main",
+"begin": 4029.492,
+"end": 4048.17,
+"lines": [
+313,
+314
+],
+"request_id": "MHn0t7CQZvJknZtSTqz6"
+},
+{
+"chunk": 74,
+"voice": "second",
+"begin": 4049.006,
+"end": 4061.127,
+"lines": [
+314,
+315
+],
+"request_id": "JHtr2BLdAQOkgB1CSS49"
+},
+{
+"chunk": 75,
+"voice": "main",
+"begin": 4066.168,
+"end": 4083.879,
+"lines": [
+315,
+316
+],
+"request_id": "dMvPX35lXrPVSh4p1l42"
+},
+{
+"chunk": 76,
+"voice": "second",
+"begin": 4084.715,
+"end": 4094.824,
+"lines": [
+316,
+317
+],
+"request_id": "9vtK2Vg9fvs0ozG4unJ7"
+},
+{
+"chunk": 77,
+"voice": "main",
+"begin": 4099.866,
+"end": 4134.374,
+"lines": [
+317,
+318
+],
+"request_id": "Dgbzf4qYMerWKPHbXovP"
+},
+{
+"chunk": 78,
+"voice": "second",
+"begin": 4135.21,
+"end": 4142.916,
+"lines": [
+318,
+319
+],
+"request_id": "Y22JGJ827HzjZNMoP9yx"
+},
+{
+"chunk": 79,
+"voice": "main",
+"begin": 4147.958,
+"end": 4171.755,
+"lines": [
+319,
+320
+],
+"request_id": "EgTk7SjcDVhRCypvd0jx"
+},
+{
+"chunk": 80,
+"voice": "second",
+"begin": 4172.591,
+"end": 4177.737,
+"lines": [
+320,
+321
+],
+"request_id": "DI2yzetZAJW1gOTwgbyb"
+},
+{
+"chunk": 81,
+"voice": "main",
+"begin": 4182.779,
+"end": 4204.095,
+"lines": [
+321,
+322
+],
+"request_id": "Y90bpSkgDyaUc0mU6IG3"
+},
+{
+"chunk": 82,
+"voice": "main",
+"begin": 4207.412,
+"end": 4208.98,
+"lines": [
+322,
+323
+],
+"request_id": "QyhJz3tU3y5wSrasdjsw"
+},
+{
+"chunk": 83,
+"voice": "main",
+"begin": 4210.024,
+"end": 4225.515,
+"lines": [
+323,
+324
+],
+"request_id": "n7Tb2Z4sYMoqtbuLVelr"
+}
+]
+}

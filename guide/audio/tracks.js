@@ -568,7 +568,7 @@ window.TRACKS = [
   "file": "09-induction-probability-bayes.mp3",
   "text": "../09-induction-probability-bayes.md",
   "title": "Chapter 9 — Induction, Probability, and Bayesian Reasoning",
-  "duration": 3909.4,
+  "duration": 4227.1,
   "sections": [
    {
     "title": "Chapter nine. Induction, Probability, and Bayesian Reasoning.",
@@ -576,59 +576,59 @@ window.TRACKS = [
    },
    {
     "title": "Kinds of non-deductive inference",
-    "start": 125.7
+    "start": 134.1
    },
    {
     "title": "Hume's problem of induction",
-    "start": 223.9
+    "start": 245.1
    },
    {
     "title": "Responses to Hume",
-    "start": 319.4
+    "start": 346.3
    },
    {
     "title": "Goodman's new riddle of induction",
-    "start": 594.3
+    "start": 641.8
    },
    {
     "title": "The paradox of the ravens",
-    "start": 774.3
+    "start": 834.2
    },
    {
     "title": "Probability: the basics",
-    "start": 922.8
+    "start": 995.0
    },
    {
     "title": "Bayes' theorem",
-    "start": 1215.7
+    "start": 1322.3
    },
    {
     "title": "Bayesian epistemology",
-    "start": 1760.5
+    "start": 1918.4
    },
    {
     "title": "Full belief and degrees of belief",
-    "start": 2073.1
+    "start": 2259.7
    },
    {
     "title": "Common errors in probabilistic reasoning",
-    "start": 2207.2
+    "start": 2403.1
    },
    {
     "title": "Calibration and scoring rules",
-    "start": 2939.4
+    "start": 3189.5
    },
    {
     "title": "Statistics and significance",
-    "start": 3135.5
+    "start": 3407.7
    },
    {
     "title": "Quick review",
-    "start": 3561.6
+    "start": 3850.8
    },
    {
     "title": "End of chapter nine",
-    "start": 3888.5
+    "start": 4205.1
    }
   ]
  },
