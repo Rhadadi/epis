@@ -864,7 +864,7 @@ window.TRACKS = [
   "file": "13-virtues-and-ethics-of-belief.mp3",
   "text": "../13-virtues-and-ethics-of-belief.md",
   "title": "Chapter 13 — Intellectual Virtue and the Ethics of Belief",
-  "duration": 2796.4,
+  "duration": 3020.6,
   "sections": [
    {
     "title": "Chapter thirteen. Intellectual Virtue and the Ethics of Belief.",
@@ -872,51 +872,51 @@ window.TRACKS = [
    },
    {
     "title": "The ethics of belief: Clifford and James",
-    "start": 108.6
+    "start": 120.1
    },
    {
     "title": "Practical reasons for belief",
-    "start": 510.9
+    "start": 559.2
    },
    {
     "title": "Virtue epistemology",
-    "start": 688.3
+    "start": 750.2
    },
    {
     "title": "A catalogue of intellectual virtues",
-    "start": 857.4
+    "start": 932.6
    },
    {
     "title": "Intellectual vices",
-    "start": 1140.8
+    "start": 1247.6
    },
    {
     "title": "Epistemic humility and confidence",
-    "start": 1277.3
+    "start": 1394.3
    },
    {
     "title": "Open-mindedness and its limits",
-    "start": 1407.0
+    "start": 1535.2
    },
    {
     "title": "Pragmatic encroachment",
-    "start": 1566.8
+    "start": 1707.2
    },
    {
     "title": "Moral encroachment",
-    "start": 1696.7
+    "start": 1842.9
    },
    {
     "title": "Faith, reason, and religious epistemology",
-    "start": 1826.9
+    "start": 1971.8
    },
    {
     "title": "Quick review",
-    "start": 2500.1
+    "start": 2693.3
    },
    {
     "title": "End of chapter thirteen",
-    "start": 2779.5
+    "start": 3001.8
    }
   ]
  },
