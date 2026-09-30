@@ -110,7 +110,7 @@ def say_numbers(t):
     t = t.replace("50/50", "fifty-fifty").replace("9/11", "nine eleven")
     t = re.sub(r"\b([A-Z]{1,3})(\d)\b", lambda m: " ".join(m.group(1)) + " " + m.group(2), t)
     t = re.sub(r"\b(\d+)([A-Z])\b", r"\1 \2", t)
-    t = re.sub(r"(?<![\w.])" + NUM + r"\s?/\s?" + NUM + r"(?![\w.])",
+    t = re.sub(r"(?<![\w.])" + NUM + r"\s?/\s?" + NUM + r"(?!\w|\.\d)",
                lambda m: (f"{cardinal(m.group(1))} divided by {cardinal(m.group(2))}"
                           if "." in m.group(1) + m.group(2) else m.group(0)), t)
     t = re.sub(NUM + r"\s?%", lambda m: cardinal(m.group(1)) + " percent", t)
@@ -129,7 +129,7 @@ def say_numbers(t):
     t = re.sub(r"(?<![\w.:])" + NUM + r"\s?:\s?" + NUM + r"(?![\w:]|\.\d)",
                lambda m: f"{cardinal(m.group(1))} to {cardinal(m.group(2))}", t)  # odds, ratios
     t = re.sub(r"\b(\d+)(st|nd|rd|th)\b", lambda m: words(int(m.group(1)), to="ordinal"), t)
-    t = re.sub(r"(?<![\d.])(\d+)/(\d+)(?![\d.])", lambda m: fraction(m.group(1), m.group(2)), t)
+    t = re.sub(r"(?<![\d.])(\d+)/(\d+)(?!\d|\.\d)", lambda m: fraction(m.group(1), m.group(2)), t)
     t = re.sub(r"\b(\d{3,4})\s(BCE|CE|BC|AD)\b", lambda m: year(m.group(1)) + " " + m.group(2), t)
     t = re.sub(r"(?<![\d,.])\b(1[0-9]\d\d|20\d\d)\b(?![,.]\d)", lambda m: year(m.group(1)), t)
     t = re.sub(r"(?<![\w.])" + NUM + r"(?![\w])", lambda m: cardinal(m.group(1)), t)
