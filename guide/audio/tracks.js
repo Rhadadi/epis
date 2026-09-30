@@ -728,7 +728,7 @@ window.TRACKS = [
   "file": "11-truth-and-relativism.mp3",
   "text": "../11-truth-and-relativism.md",
   "title": "Chapter 11 — Truth, Relativism, and Objectivity",
-  "duration": 2465.3,
+  "duration": 2705.4,
   "sections": [
    {
     "title": "Chapter eleven. Truth, Relativism, and Objectivity.",
@@ -736,47 +736,47 @@ window.TRACKS = [
    },
    {
     "title": "Why truth matters",
-    "start": 128.4
+    "start": 141.7
    },
    {
     "title": "Truth-bearers",
-    "start": 190.7
+    "start": 207.2
    },
    {
     "title": "Theories of truth",
-    "start": 254.2
+    "start": 273.4
    },
    {
     "title": "The liar paradox",
-    "start": 844.5
+    "start": 946.8
    },
    {
     "title": "Realism and anti-realism",
-    "start": 982.1
+    "start": 1103.6
    },
    {
     "title": "Relativism",
-    "start": 1048.7
+    "start": 1170.3
    },
    {
     "title": "Social constructionism",
-    "start": 1614.2
+    "start": 1781.0
    },
    {
     "title": "Perspectivism and objectivity",
-    "start": 1793.8
+    "start": 1970.9
    },
    {
     "title": "Post-truth and bullshit",
-    "start": 1941.3
+    "start": 2134.0
    },
    {
     "title": "Quick review",
-    "start": 2150.5
+    "start": 2362.9
    },
    {
     "title": "End of chapter eleven",
-    "start": 2447.2
+    "start": 2685.3
    }
   ]
  },

@@ -1,0 +1,1951 @@
+{
+"file": "11-truth-and-relativism.mp3",
+"title": "Chapter 11 — Truth, Relativism, and Objectivity",
+"duration": 2705.424,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter eleven. Truth, Relativism, and Objectivity.",
+"begin": 2.116,
+"end": 6.596,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"To say of what is that it is not, or of what is not that it is, is false, while to say of what is that it is, and of what is not that it is not, is true.\"",
+"begin": 7.863,
+"end": 20.743,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Aristotle, Metaphysics gamma seven.",
+"begin": 21.342,
+"end": 24.542,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"The ideal subject of totalitarian rule is not the convinced Nazi or the convinced Communist, but people for whom the distinction between fact and fiction — that is, the reality of experience — and the distinction between true and false — that is, the standards of thought — no longer exist.\"",
+"begin": 25.417,
+"end": 45.897,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Hannah Arendt, The Origins of Totalitarianism.",
+"begin": 46.393,
+"end": 50.073,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Truth is the goal of belief. It is what we aim at when we inquire, what we promise when we assert, and what we lose when we are deceived. But what is truth? Is it correspondence with reality? Coherence among beliefs? Usefulness? Or is \"true\" just a device for agreement, with nothing substantial to say about it?",
+"begin": 50.939,
+"end": 73.659,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "These questions might seem abstract, but claims about truth come up constantly in public argument: \"That's true for you, but not for me.\" \"There's no such thing as objective truth.\" \"Everyone has their own truth.\" \"We live in a post-truth era.\" A critical thinker needs to be able to say what such claims mean, whether they are coherent, and what grain of insight they may contain.",
+"begin": 73.979,
+"end": 98.539,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What is truth, and does it matter? In this chapter we'll look at the main theories of truth, from the idea that truth is correspondence with the facts to the view that there's much less to truth than philosophers once thought. We'll meet the liar paradox, a sentence that seems to be true if and only if it's false.",
+"begin": 99.213,
+"end": 120.013,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then we'll take on relativism, the claim that truth is relative to cultures or to individuals. We'll separate the versions that are plausible from the ones that defeat themselves, look at what social construction really means, and end with post-truth politics, and with what the philosopher Harry Frankfurt called bullshit.",
+"begin": 120.253,
+"end": 140.413,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Why truth matters",
+"begin": 141.688,
+"end": 143.288,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bernard Williams identified two basic virtues of truth.",
+"begin": 144.379,
+"end": 148.139,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Accuracy: taking care to get things right, doing the work needed to find out.",
+"begin": 148.779,
+"end": 154.299,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Sincerity: saying what you actually believe.",
+"begin": 154.939,
+"end": 158.539,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A society in which these virtues decay cannot function. Trade, science, law, medicine, friendship, and democratic self-government all depend on people generally trying to find the truth and generally telling it. Williams also noted a tension in modern culture: an intense demand for truthfulness — we want to see through deception and expose hidden agendas — combined with suspicion of truth itself — the idea that \"truth\" is just what the powerful say. If the suspicion wins, the demand for truthfulness has nothing left to demand.",
+"begin": 158.859,
+"end": 195.339,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Harry Frankfurt made a simpler point: people who say they don't care about truth rely on it every time they cross a road, take a medicine, or check their bank balance.",
+"begin": 195.979,
+"end": 205.979,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Truth-bearers",
+"begin": 207.256,
+"end": 208.216,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What kinds of things are true or false? Candidates.",
+"begin": 209.293,
+"end": 212.973,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Sentences — \"Snow is white\". But the same sentence can be true in one context and false in another, \"I am hungry\", and sentences in different languages can say the same thing.",
+"begin": 213.373,
+"end": 225.373,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Statements or utterances: sentences as used on particular occasions.",
+"begin": 225.613,
+"end": 230.853,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Propositions: the contents expressed by sentences, what is said. \"Snow is white\" and \"La neige est blanche\" express the same proposition. Most philosophers treat propositions as the primary truth-bearers.",
+"begin": 231.053,
+"end": 245.293,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Beliefs: true when their content is true.",
+"begin": 245.533,
+"end": 248.653,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "This matters for the relativist slogan \"true for me.\" A proposition like \"I am hungry\" is not true for me and false for you. The sentence expresses different propositions when we each say it — \"Ali is hungry,\" \"Sara is hungry\" — and each proposition is simply true or false. Much apparent relativity dissolves once we specify the proposition fully.",
+"begin": 248.893,
+"end": 272.173,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Theories of truth",
+"begin": 273.45,
+"end": 274.81,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The correspondence theory",
+"begin": 275.905,
+"end": 277.425,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The oldest and most intuitive theory: a proposition is true if and only if it corresponds to the facts, to the way the world is.",
+"begin": 278.309,
+"end": 288.549,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Aristotle's definition, quoted above, is often read this way. Thomas Aquinas defined truth as adaequatio rei et intellectus, the \"adequation\", conformity, of thing and intellect. In the twentieth century, Bertrand Russell and the early Wittgenstein developed detailed versions. Wittgenstein's Tractatus held that a proposition is a picture of a possible state of affairs, true when its elements are arranged as the objects in the world are.",
+"begin": 288.869,
+"end": 319.509,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 320.389,
+"end": 321.269,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What is correspondence? What relation holds between a sentence, or a thought, and a fact? A picture resembles what it depicts, but \"The cat is on the mat\" doesn't resemble a cat on a mat.",
+"begin": 321.909,
+"end": 335.509,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What are facts? If facts are just \"true propositions,\" the theory is circular. And what facts correspond to negative truths, \"There is no elephant in this room\", general truths, \"All ravens are black\", or truths about the future, about possibility, or about morality?",
+"begin": 336.229,
+"end": 355.909,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Access. We can never step outside our beliefs to compare them with the facts. All we can ever compare a belief with is another belief or experience. This objection led some to the coherence theory.",
+"begin": 356.389,
+"end": 369.509,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Defenders reply that we don't need to step outside our beliefs to have true beliefs, only to check them in some absolute way, and nobody needs that. Truthmaker theory develops a modern version: every truth is made true by something in the world.",
+"begin": 370.069,
+"end": 386.389,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The coherence theory",
+"begin": 387.269,
+"end": 388.549,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A proposition is true if and only if it coheres with a system of propositions. Idealists such as F H Bradley and Brand Blanshard held versions of this view, as did some logical positivists — Otto Neurath.",
+"begin": 389.433,
+"end": 404.873,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The motivation is the access objection above: since we can only compare beliefs with beliefs, truth must be a relation among beliefs.",
+"begin": 405.433,
+"end": 415.033,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 415.513,
+"end": 416.393,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Which system? A consistent fairy tale is a coherent system. So is a consistent set of false beliefs. Many incompatible systems can each be coherent. If truth is coherence with a system, contradictory propositions could both be true. Defenders specify \"the\" system, perhaps the one that would be accepted by an ideally complete inquiry, but that moves toward the pragmatist view.",
+"begin": 416.873,
+"end": 443.353,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The confusion of truth and justification. Coherence is a plausible theory of justification. But justification and truth come apart: a belief can be justified and false. The coherence theory of truth seems to confuse the test of truth with its nature.",
+"begin": 444.313,
+"end": 461.833,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Pragmatist theories",
+"begin": 462.873,
+"end": 464.073,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The pragmatists connected truth to inquiry and practice.",
+"begin": 464.953,
+"end": 469.273,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Charles Sanders Peirce: \"The opinion which is fated to be ultimately agreed to by all who investigate, is what we mean by the truth, and the object represented in this opinion is the real.\" Truth is the end of inquiry: what inquirers would agree on if inquiry were pursued indefinitely.",
+"begin": 469.753,
+"end": 490.473,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "William James was more provocative: \"The true is only the expedient in our way of thinking.\" True ideas are those we can \"assimilate, validate, corroborate and verify.\" Critics, including Russell and G E Moore, accused James of saying that whatever is useful to believe is true, which would make \"Santa Claus exists\" true for children. James protested that he meant usefulness in the long run and on the whole, including usefulness in dealing with reality, but the charge stuck.",
+"begin": 490.673,
+"end": 524.553,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "John Dewey preferred to talk of warranted assertibility rather than truth: what inquiry, properly conducted, entitles us to assert.",
+"begin": 525.033,
+"end": 534.313,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Later pragmatists: Hilary Putnam's \"internal realism\" identified truth with idealized rational acceptability: what would be justified under epistemically ideal conditions. Richard Rorty — Philosophy and the Mirror of Nature, nineteen seventy-nine; Contingency, Irony, and Solidarity, nineteen eighty-nine — went further, suggesting that \"truth\" is merely a compliment we pay to beliefs that work for us, and that we should stop trying to have a theory of it at all.",
+"begin": 534.793,
+"end": 566.393,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections. It seems possible for there to be truths that no inquiry could ever discover: the exact number of hairs on Julius Caesar's head on the morning of the Ides of March. The pragmatist theory seems to imply that such propositions are neither true nor false. And if truth is what inquirers would agree on, whose inquiry, and under what conditions? Specifying \"ideal conditions\" without appealing to truth is difficult.",
+"begin": 567.353,
+"end": 595.833,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The lasting pragmatist insight is Peirce's link between truth and inquiry: the point of the concept of truth is to mark what we are trying to get right, and what could show us to be wrong.",
+"begin": 596.713,
+"end": 607.913,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Tarski's semantic theory",
+"begin": 608.873,
+"end": 610.553,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Polish logician Alfred Tarski gave the first mathematically precise definition of truth, for formal languages. Its core is the T-schema — or Convention T.",
+"begin": 611.422,
+"end": 622.702,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "\"S\" is true if and only if S.",
+"begin": 623.262,
+"end": 626.382,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "\"Snow is white\" is true if and only if snow is white.",
+"begin": 627.022,
+"end": 631.622,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Any adequate definition of truth for a language must imply every instance of this schema. Tarski showed how to define truth for a formal language recursively, in terms of a relation he called satisfaction — roughly, of predicates by objects. To avoid the liar paradox, he required that truth for a language be defined in a metalanguage, not in the language itself.",
+"begin": 631.902,
+"end": 656.422,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Tarski's theory is sometimes seen as a precise version of the correspondence theory, and sometimes as a precursor of deflationism.",
+"begin": 656.702,
+"end": 665.062,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Deflationism",
+"begin": 665.502,
+"end": 666.462,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Deflationary theories hold that there is nothing substantial to say about the nature of truth. The T-schema says almost everything there is to say.",
+"begin": 667.324,
+"end": 676.364,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The redundancy theory: \"It is true that Caesar was murdered\" means no more than \"Caesar was murdered.\" Adding \"it is true that\" adds nothing.",
+"begin": 677.004,
+"end": 687.164,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The disquotational theory — W V O Quine: \"true\" is a device for disquotation, for moving from talking about a sentence to talking about the world. Saying \"'Snow is white' is true\" is a roundabout way of saying snow is white.",
+"begin": 687.484,
+"end": 703.644,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Minimalism: the whole theory of truth consists of the infinitely many instances of the schema \"The proposition that p is true if and only if p.\"",
+"begin": 704.284,
+"end": 714.844,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Why have the word \"true\" at all, if it adds nothing? Because it allows generalization and blind endorsement. You cannot say \"Everything the Pope says is so\" without a truth predicate, since you don't know what all the Pope's statements are. \"Everything the Pope says is true\" does the job. Likewise: \"What she said was true,\" \"Most of the book is true,\" \"Always tell the truth.\"",
+"begin": 715.164,
+"end": 739.964,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections. Critics argue that deflationism cannot explain why truth is the aim of belief and assertion, or why true beliefs tend to help us achieve our goals, since those explanations seem to need a substantive connection between truth and the world. Deflationists reply that the explanations can be given in terms of the T-schema instances — \"If you believe the bridge will hold, and it will hold, then you'll get across\".",
+"begin": 740.604,
+"end": 766.844,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Truth pluralism",
+"begin": 767.484,
+"end": 768.604,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Alethic pluralism — Crispin Wright, Truth and Objectivity, nineteen ninety-two; Michael Lynch, Truth as One and Many, two thousand nine — proposes that truth may be realized differently in different domains. In the domain of physical objects, truth may consist in correspondence; in mathematics, in coherence with axioms or provability; in morality or comedy, in something like superwarranted assertibility — what would remain warranted however inquiry proceeds. What all these have in common is that they play the same functional role: truth is what we aim at in belief, what is preserved by valid inference, what is objective in the sense that believing doesn't make it so.",
+"begin": 769.489,
+"end": 817.089,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Comparing the theories",
+"begin": 818.049,
+"end": 819.329,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Correspondence. Truth is agreement with facts. Main strength: Captures the core intuition: truth depends on the world. Main problem: What are correspondence and facts?",
+"begin": 820.193,
+"end": 834.353,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Coherence. Truth is coherence with a system of beliefs. Main strength: We can only compare beliefs with beliefs. Main problem: Many coherent systems; confuses truth with justification.",
+"begin": 834.833,
+"end": 849.713,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pragmatist. Truth is what inquiry would ultimately converge on; what works. Main strength: Links truth to inquiry and practice. Main problem: Undiscoverable truths; usefulness isn't truth.",
+"begin": 850.593,
+"end": 865.793,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Semantic — Tarski. Truth is defined recursively via satisfaction, meeting Convention T. Main strength: Precise; avoids paradox. Main problem: Only for formal languages; is it a theory of what truth is?",
+"begin": 866.753,
+"end": 883.953,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Deflationary. Truth is nothing substantial: a device of disquotation and generalization. Main strength: Simple; explains the uses of \"true\" Main problem: May not explain truth's role in success and inquiry.",
+"begin": 884.433,
+"end": 900.913,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pluralist. Truth is different properties in different domains, playing one role. Main strength: Handles mathematics, morals, and physics differently. Main problem: Is it really one concept?",
+"begin": 901.393,
+"end": 915.153,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "What matters for critical thinking.",
+"begin": 916.193,
+"end": 918.193,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "You don't need to settle which theory is right to use the concept well. Almost every theory accepts the T-schema: \"p\" is true if and only if p. This alone refutes the most common relativist slogans. If \"the Earth is round\" is true if and only if the Earth is round, then its truth depends on the shape of the Earth, not on who believes it. Believing doesn't make it so.",
+"begin": 918.857,
+"end": 945.577,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The liar paradox",
+"begin": 946.834,
+"end": 948.274,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The most famous paradox about truth is attributed to the ancient philosopher Eubulides of Miletus — fourth century BCE. A version is also associated with Epimenides the Cretan, who is said to have claimed that \"all Cretans are liars.\" The strengthened form is.",
+"begin": 949.368,
+"end": 967.688,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "L, This sentence is false.",
+"begin": 968.328,
+"end": 971.088,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If L is true, then what it says is the case, so it is false. If L is false, then what it says is not the case, so it is not false, so it is true. L is true if and only if it is false. Contradiction.",
+"begin": 971.368,
+"end": 988.888,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The liar paradox is not a trick. It shows that the T-schema, which almost every theory of truth accepts, leads to contradiction when applied to a language that can talk about its own sentences. Responses include.",
+"begin": 989.448,
+"end": 1003.448,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Tarski's hierarchy: a language cannot contain its own truth predicate. Truth for language L zero is defined in a metalanguage L one, truth for L one in L two, and so on. L is not a well-formed sentence. Objection: natural languages do seem to contain their own truth predicates.",
+"begin": 1004.008,
+"end": 1025.528,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Truth-value gaps: some sentences, including L, are neither true nor false; they are \"ungrounded.\" Objection: the strengthened liar: \"This sentence is not true.\" If it is neither true nor false, then it is not true, which is what it says, so it seems to be true.",
+"begin": 1026.248,
+"end": 1046.488,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Dialetheism: some contradictions are true. L is both true and false. This requires a paraconsistent logic, in which a contradiction does not imply everything — in classical logic, from a contradiction you can derive any statement whatsoever, a principle called ex falso quodlibet.",
+"begin": 1047.208,
+"end": 1067.768,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Contextualist and revision theories — Anil Gupta and Nuel Belnap, The Revision Theory of Truth, nineteen ninety-three.",
+"begin": 1068.328,
+"end": 1077.128,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "No solution commands general agreement. Related paradoxes, such as Russell's paradox in set theory, Curry's paradox, and Grelling's paradox — is \"heterological,\" meaning \"not true of itself,\" heterological? — led to some of the deepest results of twentieth-century logic, including Gödel's incompleteness theorems and Tarski's theorem on the undefinability of truth.",
+"begin": 1077.288,
+"end": 1102.408,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Realism and anti-realism",
+"begin": 1103.673,
+"end": 1105.833,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Theories of truth connect to a larger debate about realism.",
+"begin": 1106.913,
+"end": 1110.433,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Realism about a domain — the external world, the past, mathematics, morality — holds that statements in that domain are true or false independently of our ability to know which. There is a fact of the matter about the number of hairs on Caesar's head, whether or not anyone can find out.",
+"begin": 1111.153,
+"end": 1129.873,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Anti-realism, in Michael Dummett's influential version, holds that the meaning of a statement is given by the conditions under which we could recognize it as true, its assertibility conditions, not by conditions that might obtain undetectably. For statements whose truth we could never in principle verify, the principle of bivalence, every statement is either true or false, may fail. Dummett's view was motivated partly by intuitionism in mathematics, which holds that a mathematical statement is true only if it can be proved.",
+"begin": 1130.673,
+"end": 1164.633,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Scientific realism and anti-realism are discussed in Chapter ten.",
+"begin": 1164.993,
+"end": 1169.073,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Relativism",
+"begin": 1170.338,
+"end": 1171.218,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Relativism is the view that truth, knowledge, justification, or values are relative to some framework — a culture, a person, a language, a conceptual scheme, a historical period — so that there is no framework-independent standard.",
+"begin": 1172.297,
+"end": 1189.337,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Protagoras and the self-refutation argument",
+"begin": 1189.817,
+"end": 1192.537,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The earliest known relativist was Protagoras: \"Man is the measure of all things.\" In the Theaetetus, Plato has Socrates develop a famous objection, the peritrope — \"turning around\".",
+"begin": 1193.404,
+"end": 1206.684,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Protagoras says that whatever seems true to anyone is true for them.",
+"begin": 1207.564,
+"end": 1212.844,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Most people believe that Protagoras's doctrine is false.",
+"begin": 1213.564,
+"end": 1217.884,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. So, by Protagoras's own doctrine, his doctrine is false for them, and since they are the majority, it is false for more people than it is true for.",
+"begin": 1218.444,
+"end": 1228.684,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Worse: Protagoras must admit that his opponents' belief, that his doctrine is false, is true. So he must grant that his own doctrine is false.",
+"begin": 1229.324,
+"end": 1239.964,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In modern form, the self-refutation argument runs: the claim \"All truth is relative\" is either absolutely true or only relatively true.",
+"begin": 1240.604,
+"end": 1250.124,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it is absolutely true, then at least one truth is not relative, and the claim is false.",
+"begin": 1250.604,
+"end": 1256.124,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it is only relatively true, true for relativists, then it is compatible with the claim being false for everyone else, and the relativist has given the non-relativist no reason to accept it.",
+"begin": 1256.604,
+"end": 1268.124,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sophisticated relativists have replies. They can restrict their relativism to particular domains — morality, taste, aesthetics — avoiding global self-refutation. Or they can argue that the self-refutation argument begs the question by assuming a non-relative concept of truth.",
+"begin": 1268.764,
+"end": 1287.324,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Varieties of relativism",
+"begin": 1288.124,
+"end": 1289.884,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It helps to separate different claims that are all called \"relativism\".",
+"begin": 1290.762,
+"end": 1294.842,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Descriptive cultural relativism. Claim: Different cultures have different beliefs and values. Assessment: True, and an empirical fact of great importance. But it says nothing about whether any of those beliefs are true.",
+"begin": 1295.402,
+"end": 1311.162,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Relativism about taste. Claim: \"Cilantro is delicious\" is true relative to a standard of taste. Assessment: Plausible. There may be no fact about deliciousness independent of tasters. This is the strongest case for relativism.",
+"begin": 1311.482,
+"end": 1328.922,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Moral relativism. Claim: Moral claims are true or false only relative to a culture or individual. Assessment: Hotly debated. Faces the problem that it seems to make moral reformers — abolitionists, suffragists — automatically wrong by the standards of their own societies, and that it makes cross-cultural moral criticism impossible.",
+"begin": 1329.242,
+"end": 1353.002,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Epistemic relativism. Claim: What counts as good evidence or justification is relative to a framework, with no framework-neutral way to compare frameworks. Assessment: Serious and much discussed.",
+"begin": 1353.562,
+"end": 1368.402,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Alethic, truth, relativism. Claim: Truth itself is relative. \"The Earth is round\" is true for some people and false for others. Assessment: Faces the self-refutation argument and conflicts with the T-schema. Very few philosophers defend global truth relativism.",
+"begin": 1368.682,
+"end": 1388.842,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Conceptual relativism. Claim: Different languages or conceptual schemes carve up the world differently. Assessment: Contains insight but is limited: Donald Davidson argued that a truly untranslatable conceptual scheme could not even be recognized as a scheme.",
+"begin": 1389.322,
+"end": 1407.882,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The \"Cynical Theory\" of knowledge",
+"begin": 1408.442,
+"end": 1410.282,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A related view holds that \"knowledge\" is just a status label: the name we give to the opinions of the powerful — Nobel laureates and CEOs in one society, high priests and elders in another — while the opinions of underdogs are dismissed as superstition. Jennifer Nagel calls this the Cynical Theory. It contains truths: calling something knowledge ranks it highly, power and knowledge help each other, and our judgments of who knows can be biased by social status. But as a theory of what knowledge is, it fails. We routinely distinguish between knowing and merely seeming to know, even among the powerful: experts once widely thought to know things have been shown wrong, and Nobel laureates can be challenged. And \"know\" is not reserved for elites. It is one of the commonest verbs in every language, used for what ordinary people see, hear, and remember: what you had for dinner, whether you are wearing shoes.",
+"begin": 1411.161,
+"end": 1472.921,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Nagel also notes a problem Plato found for Protagoras. If things are for each person as they seem, no one can ever be mistaken. But then what about the moment when it seems to you that you were mistaken? One ancient escape was to make truth relative to each person at each moment, so that it is true-for-you-now that you-a-moment-ago erred. Splintering the self into momentary fragments is a high price for a theory of knowledge.",
+"begin": 1473.241,
+"end": 1502.001,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Boghossian's critique of epistemic relativism",
+"begin": 1502.521,
+"end": 1505.401,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Paul Boghossian — Fear of Knowledge: Against Relativism and Constructivism, two thousand six — gave an influential analysis of epistemic relativism. His example: in the early seventeenth century, Cardinal Bellarmine refused to accept Galileo's telescopic observations as evidence about the heavens, holding that Scripture was a better source of knowledge about the celestial realm. Was Bellarmine's epistemic system simply different from Galileo's, with no fact about which was better?",
+"begin": 1506.273,
+"end": 1537.553,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The epistemic relativist says that claims like \"Observation justifies beliefs about the heavens\" are not true or false absolutely, but only relative to an epistemic system. So we should say: \"According to Galileo's system, observation justifies…; according to Bellarmine's system, Scripture justifies…\"",
+"begin": 1537.633,
+"end": 1558.193,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Boghossian argues that this position is unstable. If no epistemic system is more correct than another, then the relativist cannot say that relativism itself is better supported than absolutism. Moreover, when we try to state what an epistemic system is, we find it consists of general principles — \"If a telescope shows p, you are justified in believing p\" — and these seem to be either true or false. If they are false in general, then the relativist's claim that each person's system is \"right for them\" collapses; if some are true, relativism is false.",
+"begin": 1558.233,
+"end": 1595.793,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The relativist's strongest argument is the no neutral justification argument: to show that one epistemic system is better than another, you must use some epistemic system, which begs the question against the other. Boghossian replies that this form of circularity afflicts all fundamental justification, and that it doesn't follow that no system is objectively better. We can still note that one system has led to far more successful predictions and technologies than another, and that even the defender of the rival system typically relies on the first when it matters — Bellarmine, presumably, used his eyes to cross the street.",
+"begin": 1596.353,
+"end": 1634.513,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "What relativism gets right",
+"begin": 1635.393,
+"end": 1637.073,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Relativism is usually wrong as a general theory of truth, but it is motivated by real insights that a critical thinker should keep.",
+"begin": 1637.956,
+"end": 1646.756,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Many claims are implicitly relative, and making the relativity explicit resolves disputes. \"It's cold\" is relative to a place and person. \"Tea is better than coffee\" is relative to taste. \"The law requires X\" is relative to a jurisdiction. \"Motion\" is relative to a frame of reference, as physics teaches, but that doesn't make physics relativist: the laws relating the frames are absolute.",
+"begin": 1647.236,
+"end": 1674.996,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Cultural humility. What seems obvious in one culture may be parochial. Before condemning an unfamiliar practice, understand it, including the reasons its participants give for it.",
+"begin": 1675.876,
+"end": 1688.596,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Background assumptions shape judgment. People from different backgrounds may weigh the same evidence differently because of different prior beliefs. That is a fact about justification, not about truth. Two people with different evidence can both be justified in holding incompatible beliefs; they cannot both be right.",
+"begin": 1689.476,
+"end": 1710.116,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Power shapes what is accepted as knowledge. Who gets believed, whose testimony is taken seriously, and which questions get investigated are affected by social power. Again, this is a fact about the social production and recognition of knowledge, not a proof that truth is relative.",
+"begin": 1711.076,
+"end": 1729.796,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Diagnosing \"That's true for you.\" When someone says this, ask which of the following they mean.",
+"begin": 1730.756,
+"end": 1736.996,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"That's your opinion, and you're entitled to it.\" A claim about rights of expression, not about truth.",
+"begin": 1737.665,
+"end": 1744.425,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"You have your reasons, and I have mine.\" A claim about justification. Both of you might be justified by your own evidence; at most one of you is right.",
+"begin": 1744.705,
+"end": 1754.865,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"This is a matter of taste or perspective.\" Possibly correct, for questions of taste.",
+"begin": 1755.345,
+"end": 1760.985,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"There is no fact of the matter.\" A strong claim that needs argument, and it is implausible for factual questions such as \"Did the vaccine trial show a reduction in hospitalizations?\"",
+"begin": 1761.265,
+"end": 1772.505,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"I don't want to argue about it.\" Often the real meaning, and a reasonable one sometimes. But say so directly.",
+"begin": 1772.785,
+"end": 1779.745,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Social constructionism",
+"begin": 1781.002,
+"end": 1782.602,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Social constructionism holds that some things we take to be natural or inevitable are in fact products of human social practices, and could have been otherwise.",
+"begin": 1783.693,
+"end": 1794.173,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Ian Hacking — The Social Construction of What? nineteen ninety-nine — brought clarity to a heated debate by asking: what is said to be socially constructed? He distinguished.",
+"begin": 1794.493,
+"end": 1806.053,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ideas and classifications: our concept of \"child abuse,\" \"refugee,\" or \"attention deficit disorder\" was shaped by historical and social forces. This is nearly always true.",
+"begin": 1806.333,
+"end": 1819.493,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Objects: the things classified. Some objects are socially constructed in a strong sense: money, marriage, borders, corporations, and laws exist only because people collectively treat them as existing. The philosopher John Searle — The Construction of Social Reality, nineteen ninety-five — called these institutional facts, created by collective acceptance of rules of the form \"X counts as Y in context C\" — this piece of paper counts as a twenty-euro note in the eurozone.",
+"begin": 1819.853,
+"end": 1853.573,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Facts and knowledge themselves: the strong constructionist claim that scientific facts — quarks, DNA — are constructed by social negotiation rather than discovered. This is much more controversial.",
+"begin": 1853.933,
+"end": 1867.773,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Hacking also observed that classifications of people can have looping effects: once people are classified — as having a certain disorder, identity, or status — they may change their behavior in response to the classification, which changes the kind itself. Classifications of quarks don't affect quarks. Classifications of people affect people.",
+"begin": 1868.093,
+"end": 1890.333,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Social constructionist claims are often made to argue that something is not inevitable and can be changed. Hacking noted that constructionist arguments typically have the form: X need not have existed, or need not be as it is; X is bad as it is; we would be better off if X were done away with or radically transformed. Critical thinking requires keeping these steps separate. That a classification has a social history does not show it is arbitrary or false; that money is socially constructed does not mean your debts aren't real.",
+"begin": 1890.973,
+"end": 1926.253,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The science wars and the Sokal hoax. In the nineteen nineties, disputes over strong constructionism about science became heated. In nineteen ninety-six, the physicist Alan Sokal submitted a deliberately nonsensical article, \"Transgressing the Boundaries: Towards a Transformative Hermeneutics of Quantum Gravity,\" to the cultural studies journal Social Text, which published it. He then revealed the hoax, arguing that the journal had published it because it flattered the editors' ideological preconceptions. The episode is often cited in debates about standards in academic publishing — and Sokal's own point was about sloppy reasoning, not about the legitimacy of studying science socially.",
+"begin": 1926.893,
+"end": 1969.773,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Perspectivism and objectivity",
+"begin": 1970.965,
+"end": 1973.125,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What is objectivity? The word is used in several senses.",
+"begin": 1974.204,
+"end": 1979.004,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Ontological: something is objective if it exists independently of what anyone thinks. The mass of the Earth is objective in this sense; the value of a currency is not.",
+"begin": 1979.404,
+"end": 1992.364,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Epistemic: a judgment is objective if it is made without bias, based on evidence, in a way others could check.",
+"begin": 1992.844,
+"end": 2001.724,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Procedural: a procedure is objective if its results don't depend on who carries it out — a standardized test, a double-blind trial.",
+"begin": 2002.204,
+"end": 2011.964,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Thomas Nagel described objectivity as the attempt to transcend one's particular perspective, to form a conception of the world that includes oneself as one element among many, \"a view from nowhere.\" He argued that this is valuable but can never be complete, since subjective points of view are also part of reality.",
+"begin": 2012.844,
+"end": 2033.404,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The historians Lorraine Daston and Peter Galison showed that the ideal of objectivity itself has a history. In scientific atlases of the eighteenth and nineteenth centuries, they trace a shift from \"truth-to-nature\" — drawing the idealized, typical specimen — to \"mechanical objectivity\", letting photographs and machines record without human interference, to \"trained judgment\" — relying on experts' educated interpretation. Each ideal addressed a particular danger.",
+"begin": 2033.484,
+"end": 2065.164,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Standpoint theory and feminist epistemology argue that objectivity is not achieved by pretending to have no perspective. Sandra Harding argued for strong objectivity: examining the social values and interests that shape research, especially from the perspective of marginalized groups whose situations may reveal things invisible from dominant positions. Donna Haraway criticized the \"god trick\" of claiming to see everything from nowhere, and argued for \"situated knowledges\" that are accountable for their perspective.",
+"begin": 2065.644,
+"end": 2098.204,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "These views can be read as extensions, not denials, of objectivity. Recall Nietzsche's version of perspectivism: \"the more eyes, different eyes, we can use to observe one thing, the more complete will our 'concept' of this thing, our 'objectivity,' be.\" Recall also the parable of the blind men and the elephant: each perspective captures part of the truth, and combining perspectives gets closer to the whole. Perspectivism in this sense is not relativism. It presupposes that there is one elephant.",
+"begin": 2098.924,
+"end": 2132.764,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Post-truth and bullshit",
+"begin": 2134.021,
+"end": 2135.861,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In twenty sixteen, Oxford Dictionaries chose \"post-truth\" as its word of the year, defining it as \"relating to or denoting circumstances in which objective facts are less influential in shaping public opinion than appeals to emotion and personal belief.\"",
+"begin": 2136.947,
+"end": 2154.907,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Frankfurt on bullshit",
+"begin": 2155.427,
+"end": 2156.947,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The philosopher Harry Frankfurt drew a precise and useful distinction between lying and bullshit.",
+"begin": 2157.819,
+"end": 2164.539,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The liar cares about the truth, in a sense. To lie, you must know, or believe, what is true, and deliberately say the opposite. The liar is \"responding to the truth,\" trying to lead you away from it.",
+"begin": 2164.619,
+"end": 2179.232,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The bullshitter is indifferent to truth. What they say may be true or false; they don't care, because their aim is something else: to impress, to persuade, to fill airtime, to create an impression of themselves. \"It is just this lack of connection to a concern with truth — this indifference to how things really are — that I regard as of the essence of bullshit.\"",
+"begin": 2179.286,
+"end": 2203.259,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Frankfurt concluded that \"bullshit is a greater enemy of the truth than lies are,\" because the liar still plays the game of truth, and can be caught out in it, while the bullshitter abandons it altogether. When bullshit becomes widespread, people lose the habit of asking whether claims are true at all.",
+"begin": 2203.339,
+"end": 2221.899,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "G A Cohen identified a second kind, common in academia: unclarifiable unclarity, text that is obscure not because its ideas are deep but because it has no clear content. His test: if adding or removing a \"not\" makes no difference to how plausible a sentence seems, the sentence may be bullshit.",
+"begin": 2221.979,
+"end": 2243.099,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Brandolini's law",
+"begin": 2243.179,
+"end": 2244.699,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Italian programmer Alberto Brandolini proposed what is now called Brandolini's law, or the bullshit asymmetry principle: \"The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it.\" This asymmetry is structural: a false claim takes seconds to make and share; checking and refuting it takes research. It explains why misinformation spreads and why the burden of proof matters so much.",
+"begin": 2245.564,
+"end": 2276.004,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Is there anything new in post-truth?",
+"begin": 2276.444,
+"end": 2278.764,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Lee McIntyre argues that post-truth is not simply lying, which is as old as politics, but the subordination of truth to political allegiance: the idea that one's side can choose its own facts, and that a factual claim should be accepted or rejected depending on whether it helps or hurts one's team. He traces its roots to cognitive biases, the decline of traditional media gatekeepers, the rise of social media, and a vulgarized form of postmodern skepticism about truth.",
+"begin": 2279.628,
+"end": 2311.708,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Others — for example, Hugo Mercier, Not Born Yesterday, twenty twenty — argue that people are less gullible than the post-truth narrative suggests, and that much apparent acceptance of falsehoods is expressive, signaling group loyalty, rather than sincere belief.",
+"begin": 2312.028,
+"end": 2328.748,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "What to do.",
+"begin": 2329.628,
+"end": 2330.508,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Separate truth, the property, from certainty, a state of mind, and consensus — a social fact. Uncertainty and disagreement don't show there is no truth. Ask of any claim: Is the speaker trying to get it right? If not, what are they trying to do? Don't let the difficulty of refuting nonsense, Brandolini's law, push you into cynicism. Rely on sources with good track records and on institutions whose job is checking.",
+"begin": 2331.167,
+"end": 2361.887,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 2365.231,
+"end": 2366.031,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 2367.112,
+"end": 2382.152,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. State the T-schema and explain how it bears on the claim that \"truth is relative.\"",
+"begin": 2383.02,
+"end": 2389.82,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. \"p\" is true if and only if p. For example, \"Water boils at one hundred degrees Celsius at sea level\" is true if and only if water boils at one hundred degrees Celsius at sea level. So the truth of the sentence depends on how things are with water, not on who believes it. If truth were relative to believers, the T-schema would fail, since the sentence could be \"true for\" someone while water did not boil at that temperature.",
+"begin": 2394.906,
+"end": 2426.106,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. What is the main objection to the coherence theory of truth?",
+"begin": 2426.984,
+"end": 2432.104,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. There can be many internally coherent but mutually incompatible systems — a consistent novel, a consistent set of false beliefs — so coherence alone can't be what truth is. The theory seems to confuse a test of justification with the nature of truth.",
+"begin": 2437.172,
+"end": 2456.132,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. How does deflationism explain the usefulness of the word \"true,\" if truth has no substantial nature?",
+"begin": 2456.999,
+"end": 2464.999,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. \"True\" is a logical device for generalization and endorsement without repetition: \"Everything she said is true,\" \"The theorem is true,\" \"Always tell the truth.\" These can't easily be expressed without a truth predicate, since we can't list all the propositions involved.",
+"begin": 2470.087,
+"end": 2489.687,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. Reconstruct the self-refutation argument against global truth relativism.",
+"begin": 2490.567,
+"end": 2496.967,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. \"All truth is relative\" is either absolutely true or relatively true. If absolutely true, there is at least one absolute truth, so the claim is false. If only relatively true, true for relativists, it may be false for non-relativists, and the relativist has no non-relative ground to ask them to accept it. Either way the global thesis fails.",
+"begin": 2502.034,
+"end": 2528.194,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. \"Different cultures have different moral beliefs, so there is no objective morality.\" Evaluate.",
+"begin": 2528.993,
+"end": 2536.913,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. The premise, descriptive relativism, is true, but the conclusion doesn't follow. Different cultures also had different beliefs about the shape of the Earth and the causes of disease, without showing there is no fact about those things. Disagreement is compatible with one view being right. Also, much apparent moral disagreement reflects different factual beliefs — for example, about the afterlife or about the effects of a practice — combined with shared values. Moral objectivity may still be false, but this argument doesn't show it.",
+"begin": 2542.002,
+"end": 2577.922,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. What is the difference between lying and bullshit, according to Frankfurt?",
+"begin": 2578.808,
+"end": 2584.808,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. The liar knows the truth and tries to lead others away from it; the liar is still oriented toward truth. The bullshitter is indifferent to whether what they say is true; they are pursuing some other goal — impressing, persuading, filling space. Frankfurt thinks bullshit is more corrosive because it abandons the practice of caring about truth.",
+"begin": 2589.884,
+"end": 2613.164,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. Distinguish perspectivism from relativism.",
+"begin": 2614.047,
+"end": 2618.687,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Perspectivism holds that knowledge is always from some perspective and that combining more perspectives gives a more complete, more objective, understanding of a single reality. Relativism holds that truth itself varies with perspective, with no single reality that all perspectives are about. The blind men and the elephant illustrate perspectivism: there is one elephant.",
+"begin": 2623.765,
+"end": 2650.805,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. Give an example of a socially constructed fact that is nonetheless objective in the sense that your believing otherwise doesn't change it.",
+"begin": 2651.69,
+"end": 2661.53,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. The fact that you owe your bank five thousand euros. Money, debts, and banks exist only because of collective human practices — they are institutional facts. But given those practices, the debt is real whether or not you believe in it.",
+"begin": 2666.527,
+"end": 2684.287,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter eleven",
+"begin": 2687.634,
+"end": 2689.314,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter eleven. In chapter twelve we'll look at knowledge as a social achievement: trust, expertise, disagreement, and the ways communities come to know things, or fail to.",
+"begin": 2690.403,
+"end": 2703.923,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 6.635,
+"lines": [
+0,
+1
+],
+"request_id": "bheVs7orAOF6sVBD7rUs"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 7.863,
+"end": 20.793,
+"lines": [
+1,
+2
+],
+"request_id": "969s4fKDGxEKZ12G46fz"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 21.342,
+"end": 24.581,
+"lines": [
+2,
+3
+],
+"request_id": "jtgFaAibUyChLWApwF7C"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 25.417,
+"end": 45.845,
+"lines": [
+3,
+4
+],
+"request_id": "1SjohcyMyLon4JaNlxzK"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 46.393,
+"end": 50.103,
+"lines": [
+4,
+5
+],
+"request_id": "Vtm1fuDxqrYvNpzhGMM0"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 50.939,
+"end": 98.586,
+"lines": [
+5,
+7
+],
+"request_id": "dqPdQ1Aqgrpdqqn1il81"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 99.213,
+"end": 140.46,
+"lines": [
+7,
+9
+],
+"request_id": "blLK4GVlL1YtijCYGhGs"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 141.688,
+"end": 143.334,
+"lines": [
+9,
+10
+],
+"request_id": "Xc3bewNMV6IW3GW6X1XS"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 144.379,
+"end": 206.028,
+"lines": [
+10,
+15
+],
+"request_id": "WCRwZEwPquCwfeyZX8rJ"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 207.256,
+"end": 208.248,
+"lines": [
+15,
+16
+],
+"request_id": "uqf5STLn3Nv8oPwN5ENS"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 209.293,
+"end": 272.222,
+"lines": [
+16,
+22
+],
+"request_id": "xLUMQH3B3XF0j2ysO421"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 273.45,
+"end": 274.86,
+"lines": [
+22,
+23
+],
+"request_id": "VYDbR8Rm3ZM70Xdy2hAb"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 275.905,
+"end": 277.473,
+"lines": [
+23,
+24
+],
+"request_id": "IhQjOveMApWiP4gs5go8"
+},
+{
+"chunk": 14,
+"voice": "main",
+"begin": 278.309,
+"end": 388.598,
+"lines": [
+24,
+32
+],
+"request_id": "3O2xndULiBhf6AYjH6UV"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 389.433,
+"end": 464.118,
+"lines": [
+32,
+38
+],
+"request_id": "NlNiOOmRP1ZZbIdFrwkz"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 464.953,
+"end": 610.586,
+"lines": [
+38,
+46
+],
+"request_id": "B6wUyHASNcFr7GNhqx8e"
+},
+{
+"chunk": 17,
+"voice": "main",
+"begin": 611.422,
+"end": 666.488,
+"lines": [
+46,
+52
+],
+"request_id": "fjut5mEisJTgUdPP0ZPR"
+},
+{
+"chunk": 18,
+"voice": "main",
+"begin": 667.324,
+"end": 768.653,
+"lines": [
+52,
+59
+],
+"request_id": "Y2cFU1p3S5v5QCEApCgi"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 769.489,
+"end": 819.357,
+"lines": [
+59,
+61
+],
+"request_id": "0qrJelSVPdQat6gbpUGg"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 820.193,
+"end": 918.23,
+"lines": [
+61,
+68
+],
+"request_id": "GcgZcAnAMEntiClX4RaM"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 918.857,
+"end": 945.607,
+"lines": [
+68,
+69
+],
+"request_id": "longi4LNpn0SEv1Y5mty"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 946.834,
+"end": 948.323,
+"lines": [
+69,
+70
+],
+"request_id": "Sjpy3J3PjBuAd4UZSVxC"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 949.368,
+"end": 1102.446,
+"lines": [
+70,
+79
+],
+"request_id": "qqvDDWttYo7aP70vz2MW"
+},
+{
+"chunk": 24,
+"voice": "second",
+"begin": 1103.673,
+"end": 1105.868,
+"lines": [
+79,
+80
+],
+"request_id": "bGHgsLnN6FaJQexqkVib"
+},
+{
+"chunk": 25,
+"voice": "second",
+"begin": 1106.913,
+"end": 1169.11,
+"lines": [
+80,
+84
+],
+"request_id": "HVRLrH7iju66nR43FEMs"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 1170.338,
+"end": 1171.252,
+"lines": [
+84,
+85
+],
+"request_id": "1lvS5eLCcmfK5urMos4W"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1172.297,
+"end": 1192.568,
+"lines": [
+85,
+87
+],
+"request_id": "U5CXgqlHe4DWWJwiOXUN"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1193.404,
+"end": 1289.927,
+"lines": [
+87,
+97
+],
+"request_id": "iwV9CiAKnWfqg3nRKCyH"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1290.762,
+"end": 1410.325,
+"lines": [
+97,
+105
+],
+"request_id": "HSMPrzdTuwuNqUKMRCaC"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1411.161,
+"end": 1505.437,
+"lines": [
+105,
+108
+],
+"request_id": "Cv7zzCDksfr4CGDqJ2rM"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1506.273,
+"end": 1637.12,
+"lines": [
+108,
+113
+],
+"request_id": "z2FhKlUUs2gRtbQFrlew"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1637.956,
+"end": 1737.038,
+"lines": [
+113,
+119
+],
+"request_id": "YjMRs05ra4TRsDBZnmHH"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1737.665,
+"end": 1779.775,
+"lines": [
+119,
+124
+],
+"request_id": "wxhmePWbmFfSaf95FyUA"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 1781.002,
+"end": 1782.648,
+"lines": [
+124,
+125
+],
+"request_id": "K5sP3NkyVCz6W9wQvbf3"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 1783.693,
+"end": 1969.737,
+"lines": [
+125,
+133
+],
+"request_id": "AOOZPgUzHJsqZqfDrKDm"
+},
+{
+"chunk": 36,
+"voice": "second",
+"begin": 1970.965,
+"end": 1973.159,
+"lines": [
+133,
+134
+],
+"request_id": "JY8mYoaxYw5PUUmVkycd"
+},
+{
+"chunk": 37,
+"voice": "second",
+"begin": 1974.204,
+"end": 2132.793,
+"lines": [
+134,
+142
+],
+"request_id": "gZVSIiBbq3LKvGHMjHSG"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 2134.021,
+"end": 2135.902,
+"lines": [
+142,
+143
+],
+"request_id": "vRMW1LAZSyQSSBbrU0jt"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 2136.947,
+"end": 2156.983,
+"lines": [
+143,
+145
+],
+"request_id": "a4Vgmi0OqqUZ711MN0C1"
+},
+{
+"chunk": 40,
+"voice": "main",
+"begin": 2157.819,
+"end": 2244.728,
+"lines": [
+145,
+151
+],
+"request_id": "EDnStoUnQ6BA95kFXgUM"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 2245.564,
+"end": 2278.792,
+"lines": [
+151,
+153
+],
+"request_id": "oE2Fj4IC6g8BMmouvZ4Q"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 2279.628,
+"end": 2330.54,
+"lines": [
+153,
+156
+],
+"request_id": "phFFGzuDMLMXm5FFaJAH"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 2331.167,
+"end": 2361.913,
+"lines": [
+156,
+157
+],
+"request_id": "CuFtO2ZmKwdD2VuMkrv2"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2365.231,
+"end": 2366.067,
+"lines": [
+157,
+158
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2367.112,
+"end": 2382.184,
+"lines": [
+158,
+159
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 46,
+"voice": "second",
+"begin": 2383.02,
+"end": 2389.864,
+"lines": [
+159,
+160
+],
+"request_id": "Tdoo0KeFObE8gRHvX6Yt"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 2394.906,
+"end": 2426.149,
+"lines": [
+160,
+161
+],
+"request_id": "Kr5cYc1bMhWOI9EdRKiq"
+},
+{
+"chunk": 48,
+"voice": "second",
+"begin": 2426.984,
+"end": 2432.131,
+"lines": [
+161,
+162
+],
+"request_id": "E1eRnLXnbFCa34m5jNIf"
+},
+{
+"chunk": 49,
+"voice": "main",
+"begin": 2437.172,
+"end": 2456.163,
+"lines": [
+162,
+163
+],
+"request_id": "ndCWAcLGqhMXdehbVE5u"
+},
+{
+"chunk": 50,
+"voice": "second",
+"begin": 2456.999,
+"end": 2465.045,
+"lines": [
+163,
+164
+],
+"request_id": "hRRHkXJ4lLxsLfWXGaBN"
+},
+{
+"chunk": 51,
+"voice": "main",
+"begin": 2470.087,
+"end": 2489.731,
+"lines": [
+164,
+165
+],
+"request_id": "THt1r6VVKys4MKSA3cnV"
+},
+{
+"chunk": 52,
+"voice": "second",
+"begin": 2490.567,
+"end": 2496.993,
+"lines": [
+165,
+166
+],
+"request_id": "aOhv4dNwC4KWlyIOTlfV"
+},
+{
+"chunk": 53,
+"voice": "main",
+"begin": 2502.034,
+"end": 2528.157,
+"lines": [
+166,
+167
+],
+"request_id": "6UpUcNNGIdvwt2eFq68j"
+},
+{
+"chunk": 54,
+"voice": "second",
+"begin": 2528.993,
+"end": 2536.96,
+"lines": [
+167,
+168
+],
+"request_id": "5bcOJB1cbXb0KIuVU0IN"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 2542.002,
+"end": 2577.972,
+"lines": [
+168,
+169
+],
+"request_id": "H5gjsp0ZQyK9RsEBgp2U"
+},
+{
+"chunk": 56,
+"voice": "second",
+"begin": 2578.808,
+"end": 2584.842,
+"lines": [
+169,
+170
+],
+"request_id": "gG3iLFd7iHEcXFCB5jey"
+},
+{
+"chunk": 57,
+"voice": "main",
+"begin": 2589.884,
+"end": 2613.211,
+"lines": [
+170,
+171
+],
+"request_id": "Zj1h4eTqW7x4RvRTdG6x"
+},
+{
+"chunk": 58,
+"voice": "second",
+"begin": 2614.047,
+"end": 2618.723,
+"lines": [
+171,
+172
+],
+"request_id": "LBQXkWsnTRCnYYTpJ1dZ"
+},
+{
+"chunk": 59,
+"voice": "main",
+"begin": 2623.765,
+"end": 2650.854,
+"lines": [
+172,
+173
+],
+"request_id": "cvU6z4jStGx1tvbPholr"
+},
+{
+"chunk": 60,
+"voice": "second",
+"begin": 2651.69,
+"end": 2661.486,
+"lines": [
+173,
+174
+],
+"request_id": "4GNc0e9MSnzEOteg6tWu"
+},
+{
+"chunk": 61,
+"voice": "main",
+"begin": 2666.527,
+"end": 2684.317,
+"lines": [
+174,
+175
+],
+"request_id": "oUACmqiCdMNozR9zCuJG"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 2687.634,
+"end": 2689.358,
+"lines": [
+175,
+176
+],
+"request_id": "jFznHCev8tPDeFBVPQgq"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 2690.403,
+"end": 2703.882,
+"lines": [
+176,
+177
+],
+"request_id": "Kcvh2vXyVUbGaR2kHXZy"
+}
+]
+}
