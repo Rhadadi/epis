@@ -296,7 +296,7 @@ window.TRACKS = [
   "file": "05-the-nature-of-knowledge.mp3",
   "text": "../05-the-nature-of-knowledge.md",
   "title": "Chapter 5 — What Is Knowledge?",
-  "duration": 3368.5,
+  "duration": 3749.3,
   "sections": [
    {
     "title": "Chapter five. What Is Knowledge?",
@@ -304,59 +304,59 @@ window.TRACKS = [
    },
    {
     "title": "The tripartite analysis",
-    "start": 122.1
+    "start": 138.8
    },
    {
     "title": "The Gettier problem",
-    "start": 354.8
+    "start": 398.3
    },
    {
     "title": "Responses to Gettier",
-    "start": 774.2
+    "start": 869.5
    },
    {
     "title": "The inescapability of Gettier problems",
-    "start": 1874.9
+    "start": 2113.3
    },
    {
     "title": "Epistemic luck",
-    "start": 1966.1
+    "start": 2208.9
    },
    {
     "title": "The value of knowledge",
-    "start": 2062.3
+    "start": 2311.1
    },
    {
     "title": "Understanding and wisdom",
-    "start": 2228.1
+    "start": 2484.8
    },
    {
     "title": "Knowledge-how revisited",
-    "start": 2402.2
+    "start": 2668.3
    },
    {
     "title": "Knowledge, assertion, and action",
-    "start": 2504.0
+    "start": 2778.0
    },
    {
     "title": "Knowing that you know",
-    "start": 2625.6
+    "start": 2920.4
    },
    {
     "title": "Why do we have the concept of knowledge?",
-    "start": 2733.7
+    "start": 3039.3
    },
    {
     "title": "Summary of theories",
-    "start": 2868.8
+    "start": 3176.3
    },
    {
     "title": "Quick review",
-    "start": 3016.5
+    "start": 3353.5
    },
    {
     "title": "End of chapter five",
-    "start": 3346.9
+    "start": 3725.7
    }
   ]
  },
