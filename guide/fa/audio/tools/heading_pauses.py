@@ -86,7 +86,7 @@ def silence_at(a, t, step=0.005):
 class Aligner:
     """Where words start and end: CTC forced alignment with a Persian wav2vec2 model (letters of the Persian
     alphabet; m3hrdadfi/wav2vec2-large-xlsr-persian-v3 from Hugging Face). The sync file's timestamps can
-    be 0.15 s out either way, which is more than the gap between two words."""
+    be 0.15 s out either way, more than the gap between two words, and now and then a second."""
     FOLD = str.maketrans({"ي": "ی", "ك": "ک", "ة": "ه", "ۀ": "ه", "أ": "ا", "إ": "ا", "ؤ": "و"})
 
     def __init__(self, model_dir):
@@ -109,9 +109,9 @@ class Aligner:
         return out
 
     def spans(self, a, t0, t1, words):
-        """(start, end) of each word in a[t0:t1]."""
+        """(start, end, confidence) of each word in a[t0:t1], which must hold these words and no others."""
         torch = self.torch
-        x = torch.from_numpy(a[int(t0 * RATE):int(t1 * RATE)].copy())
+        x = torch.from_numpy(a[max(0, int(t0 * RATE)):int(t1 * RATE)].copy())
         y = self.ta.functional.resample(x, RATE, 16000)
         y = (y - y.mean()) / (y.std() + 1e-7)
         with torch.inference_mode():
@@ -120,34 +120,47 @@ class Aligner:
         ali, scores = self.ta.functional.forced_align(lp, torch.tensor([tokens]), blank=0)
         step = (t1 - t0) / lp.shape[1]
         out, cur = [], []
-        for sp in self.ta.functional.merge_tokens(ali[0], scores[0].exp()):
-            if sp.token == self.vocab["|"]:
-                out.append((cur[0].start, cur[-1].end))
+        for sp in self.ta.functional.merge_tokens(ali[0], scores[0].exp()) + [None]:
+            if sp is None or sp.token == self.vocab["|"]:
+                out.append((t0 + cur[0].start * step, t0 + cur[-1].end * step, float(np.mean([c.score for c in cur]))))
                 cur = []
             else:
                 cur.append(sp)
-        out.append((cur[0].start, cur[-1].end))
-        return [(t0 + b * step, t0 + e * step) for b, e in out]
+        return out
 
-    def boundary(self, a, h, n):
-        """The end of heading h's last word and the start of the next line's first word, or None."""
+    def boundary(self, a, h, n, p=None):
+        """The end of heading h's last word and the start of the next line's first word, or None where the
+        words cannot be placed with confidence. The sync file's times can be a second out, so the audio
+        aligned runs from the line before the heading (p) to the end of the next line (as much of them as
+        the model can spell): a window that starts or ends inside other words would be forced onto them."""
         hw, nw = self.words(h["text"]), self.words(n["text"])
         if not hw or None in hw or not nw or nw[0] is None:
             return None
-        said = n["end"] - n["begin"]
-        k = max(1, min(len(nw), int(len(nw) * 1.5 / max(said, 0.1)) + 1))  # about 1.5 s of the next line
-        if None in nw[:k]:
-            k = nw.index(None)
-        t1 = n["begin"] + min(said, 1.5 * k / max(1, int(len(nw) * 1.5 / max(said, 0.1)) + 1)) + 0.15
-        s = self.spans(a, h["begin"] - 0.15, t1, hw + nw[:k])
-        return s[len(hw) - 1][1], s[len(hw)][0]
+        nw = nw[:nw.index(None)] if None in nw else nw
+        t1 = n["end"] + 0.3
+        if len(nw) < len(self.words(n["text"])):  # up to a word the model cannot spell: that share of the line
+            t1 = n["begin"] + (n["end"] - n["begin"]) * len(nw) / len(self.words(n["text"]))
+        pw, t0 = [], h["begin"] - 0.3
+        if p:
+            words, said = self.words(p["text"]), max(0.1, p["end"] - p["begin"])
+            j = len(words)
+            while j > 0 and words[j - 1] is not None:  # the words after its last one the model cannot spell
+                j -= 1
+            if j < len(words):
+                pw = words[j:][-max(1, int(len(words) * min(1.0, 8.0 / said))):]  # about 8 s at most
+                t0 = p["end"] - said * len(pw) / len(words) - 0.3
+        s = self.spans(a, t0, t1, pw + hw + nw)
+        heading = s[len(pw):len(pw) + len(hw)]
+        if min(c for _, _, c in heading) < 0.2:  # a word of the heading not found where the window says
+            return None
+        return heading[-1][1], s[len(pw) + len(hw)][0]
 
 
-def find_cut(a, h, n, aligner):
+def find_cut(a, h, n, aligner, p=None):
     """Where to open the pause after heading h, and how much silence is already there: (time, seconds,
     whether the words were placed by the aligner). Between the heading's last word and the next line's
     first: the middle of the longest silence there, or else where the sound dips."""
-    b = aligner.boundary(a, h, n) if aligner else None
+    b = aligner.boundary(a, h, n, p) if aligner else None
     if b:
         he, nb = b
         lo, hi = min(he, nb - 0.02), nb + 0.01
@@ -166,18 +179,19 @@ def find_cut(a, h, n, aligner):
         s = silence_at(a, lo + (best[1] + best[0] / 2) * 0.005)
         if s:
             return (s[0] + s[1]) / 2, s[1] - s[0], bool(b)
-    # the voice runs on: cut where the sound dips between the two words. A CTC model marks a word's last
-    # letter early and its first letter at or a little after the sound starts, so the dip is looked for
-    # from the heading's last letter up to the next word's first. Where there is a clear dip, the cut goes
-    # at its start: a soft first sound of the next word (h, v, f) lies in the dip and must follow the pause
-    # whole. Without a clear dip, the cut goes at the quietest moment.
+    # the voice runs on: cut just before the next word, where the sound dips. A CTC model marks a word's
+    # first letter at or a little after the sound starts, and its last letter early, so the heading's
+    # last sound may still be going on well after its last letter: a cut closer to the heading can leave
+    # the end of its last vowel, alone, after the pause. Within the last 70 ms before the next word, where
+    # there is a clear dip the cut goes at its start (a soft first sound, h or v, must follow the pause
+    # whole); otherwise at the quietest moment.
     if b:
-        lo, hi = min(max(he, nb - 0.3), nb - 0.02), nb + 0.01
+        lo, hi = min(max(he, nb - 0.07), nb - 0.02), nb + 0.01
     i0, i1 = int(lo * RATE), int(hi * RATE)
     win, hop = int(0.010 * RATE), int(0.0025 * RATE)
     e = np.array([10 * np.log10(float(np.mean(a[i:i + win] ** 2)) + 1e-12) for i in range(i0, max(i0 + 1, i1 - win), hop)])
     k = int(np.argmin(e))
-    if b and len(e) > 4 and np.median(e) - e[k] >= 10:
+    if b and len(e) > 4 and np.max(e) - e[k] >= 10:
         while k > 0 and e[k - 1] <= e.min() + 3:
             k -= 1
     return (i0 + k * hop + win // 2) / RATE, 0.0, bool(b)
@@ -208,7 +222,7 @@ def plan(a, sync, aligner=None):
         want = target(h, n)
         if not want:
             continue
-        cut, have, aligned = find_cut(a, h, n, aligner)
+        cut, have, aligned = find_cut(a, h, n, aligner, lines[i - 1] if i else None)
         add = want - have
         if add < FRAME:
             continue
