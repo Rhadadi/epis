@@ -636,7 +636,7 @@ window.TRACKS = [
   "file": "10-science-and-evidence.mp3",
   "text": "../10-science-and-evidence.md",
   "title": "Chapter 10 — Science, Evidence, and Explanation",
-  "duration": 3934.3,
+  "duration": 4194.7,
   "sections": [
    {
     "title": "Chapter ten. Science, Evidence, and Explanation.",
@@ -644,83 +644,83 @@ window.TRACKS = [
    },
    {
     "title": "What makes science special?",
-    "start": 106.7
+    "start": 117.5
    },
    {
     "title": "The demarcation problem",
-    "start": 211.9
+    "start": 227.9
    },
    {
     "title": "Inductivism and its limits",
-    "start": 284.4
+    "start": 304.7
    },
    {
     "title": "Popper and falsificationism",
-    "start": 346.7
+    "start": 372.1
    },
    {
     "title": "The Duhem-Quine problem",
-    "start": 604.0
+    "start": 647.0
    },
    {
     "title": "Ad hoc hypotheses",
-    "start": 776.3
+    "start": 835.1
    },
    {
     "title": "Kuhn and paradigms",
-    "start": 900.5
+    "start": 964.0
    },
    {
     "title": "Lakatos and research programmes",
-    "start": 1153.5
+    "start": 1237.0
    },
    {
     "title": "Feyerabend and Laudan",
-    "start": 1260.7
+    "start": 1341.3
    },
    {
     "title": "Inference to the best explanation",
-    "start": 1366.2
+    "start": 1454.8
    },
    {
     "title": "Theory-ladenness of observation",
-    "start": 1709.4
+    "start": 1824.9
    },
    {
     "title": "Underdetermination",
-    "start": 1805.2
+    "start": 1923.9
    },
    {
     "title": "Scientific realism and anti-realism",
-    "start": 1912.8
+    "start": 2029.7
    },
    {
     "title": "Causation and causal inference",
-    "start": 2098.2
+    "start": 2222.6
    },
    {
     "title": "Values in science",
-    "start": 2874.5
+    "start": 3072.6
    },
    {
     "title": "Scientific consensus",
-    "start": 3010.5
+    "start": 3219.9
    },
    {
     "title": "The replication crisis",
-    "start": 3178.9
+    "start": 3394.2
    },
    {
     "title": "Pseudoscience and how to spot it",
-    "start": 3389.3
+    "start": 3612.0
    },
    {
     "title": "Quick review",
-    "start": 3594.3
+    "start": 3827.6
    },
    {
     "title": "End of chapter ten",
-    "start": 3916.8
+    "start": 4175.1
    }
   ]
  },

@@ -1,0 +1,2815 @@
+{
+"file": "10-science-and-evidence.mp3",
+"title": "Chapter 10 — Science, Evidence, and Explanation",
+"duration": 4194.691,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter ten. Science, Evidence, and Explanation.",
+"begin": 2.116,
+"end": 6.436,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"The first principle is that you must not fool yourself — and you are the easiest person to fool.\"",
+"begin": 7.706,
+"end": 14.826,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Richard Feynman, \"Cargo Cult Science\"",
+"begin": 15.412,
+"end": 18.452,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"Our knowledge can only be finite, while our ignorance must necessarily be infinite.\"",
+"begin": 19.331,
+"end": 25.571,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Karl Popper, \"On the Sources of Knowledge and of Ignorance\", in Conjectures and Refutations.",
+"begin": 26.07,
+"end": 32.55,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Science is humanity's most successful method for gaining knowledge about the natural world. But what exactly is the method? Why does it work? How should a non-scientist decide what to believe when scientists disagree, when a new study contradicts an old one, or when someone claims that \"the science isn't settled\"?",
+"begin": 33.437,
+"end": 54.317,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This chapter covers the philosophy of science most useful for critical thinking: what distinguishes science from pseudoscience, how theories are tested and how they change, how to reason about explanations and causes, how to read the hierarchy of evidence, and what the replication crisis does and doesn't show.",
+"begin": 54.397,
+"end": 75.277,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Science is our most successful way of finding things out. But what exactly makes it work?",
+"begin": 75.938,
+"end": 82.738,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In this chapter we'll meet the philosophers who tried to answer that question: Popper and falsification, Kuhn and his paradigms, Lakatos, Feyerabend, and others. We'll ask what makes one explanation better than another, whether we should believe in things we can't observe, and how to get from correlation to causation.",
+"begin": 82.818,
+"end": 104.018,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then we'll look at science as a human institution: the role of values, what a scientific consensus is worth, the replication crisis, and how to tell science from pseudoscience.",
+"begin": 104.098,
+"end": 116.258,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "What makes science special?",
+"begin": 117.525,
+"end": 119.365,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A common answer is \"science proves things.\" It doesn't, at least not in the mathematician's sense. Scientific conclusions are fallible and revisable. What makes science special is not certainty but a set of practices that detect and correct error better than any alternative.",
+"begin": 120.451,
+"end": 139.651,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Testing claims against observation, especially observation designed to catch the claim out.",
+"begin": 140.211,
+"end": 146.011,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Controls, randomization, and blinding to exclude alternative explanations and the investigator's own biases.",
+"begin": 146.291,
+"end": 153.851,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Quantification and precision, which make predictions risky and errors visible.",
+"begin": 154.131,
+"end": 159.011,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Public methods and data, so that others can check.",
+"begin": 159.491,
+"end": 162.811,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Replication by independent investigators.",
+"begin": 163.091,
+"end": 165.811,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Organized criticism: peer review, competing research groups, conferences, and a reward system that credits people for refuting others.",
+"begin": 166.291,
+"end": 175.251,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The sociologist Robert K. Merton described four norms of science, often remembered as CUDOS: Communism, findings are shared property, Universalism — claims are judged by impersonal criteria, not by who makes them — Disinterestedness — scientists act for the benefit of the common enterprise — and Organized Skepticism — all claims are subjected to critical scrutiny. Real science often falls short of these norms, but they describe the ideal that makes it work.",
+"begin": 175.571,
+"end": 208.371,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The historian Naomi Oreskes argues that the trustworthiness of science comes not from any single method, but from its social character: claims are vetted by a diverse community of experts through sustained critical scrutiny. This ties the philosophy of science to social epistemology.",
+"begin": 208.691,
+"end": 226.691,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The demarcation problem",
+"begin": 227.944,
+"end": 229.464,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What separates science from pseudoscience — astrology, homeopathy, creationism presented as science — and from non-science — mathematics, ethics, art? This is the demarcation problem.",
+"begin": 230.557,
+"end": 244.557,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Karl Popper proposed falsifiability as the criterion — below. Many philosophers now think no single criterion works. Larry Laudan argued that no set of necessary and sufficient conditions separates science from non-science. More recent work treats \"science\" as a family resemblance concept: there is no single defining feature, but there are clear cases on either side and a cluster of relevant features.",
+"begin": 245.117,
+"end": 272.917,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Paul Thagard offered a useful diagnosis: a theory is pseudoscientific if it has been less progressive than alternative theories over a long period, faces many unsolved problems, and its community shows little concern with developing the theory to solve those problems, confirming it, or comparing it with alternatives. Astrology has barely changed in two thousand years, while astronomy has been transformed. Warning signs of pseudoscience are listed at the end of this chapter.",
+"begin": 273.197,
+"end": 303.437,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Inductivism and its limits",
+"begin": 304.692,
+"end": 306.772,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The popular picture of science, often traced, somewhat unfairly, to Francis Bacon, is inductivism: scientists collect observations without prejudice, and theories emerge from the facts by generalization.",
+"begin": 307.853,
+"end": 322.253,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This picture has serious problems.",
+"begin": 322.573,
+"end": 324.813,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Observation is selective. Karl Popper used to begin lectures by telling his audience: \"Take pencil and paper; carefully observe, and write down what you have observed!\" They would ask: observe what? Observation needs a question, an interest, a hypothesis. There is no such thing as observation without selection.",
+"begin": 325.453,
+"end": 348.893,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Theories go beyond observation. Theories posit unobservable entities — atoms, genes, gravitational fields — that no number of observations could be generalized into.",
+"begin": 349.293,
+"end": 362.373,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. The problem of induction. Even the simplest generalization from observed cases goes beyond the evidence.",
+"begin": 362.813,
+"end": 370.893,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Popper and falsificationism",
+"begin": 372.167,
+"end": 374.167,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Karl Popper — Logik der Forschung, nineteen thirty-four; English, The Logic of Scientific Discovery, nineteen fifty-nine; Conjectures and Refutations, nineteen sixty-three — turned the inductivist picture upside down.",
+"begin": 375.249,
+"end": 391.489,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The asymmetry. No number of observations can prove a universal law true: after seeing a thousand white swans, the next might be black. Europeans believed all swans were white until Dutch explorers encountered black swans in Western Australia in sixteen ninety-seven. But a single genuine counterexample can prove a universal law false. Verification and falsification are asymmetric. The logic of falsification is modus tollens: if the theory is true, we will observe O; we do not observe O; so the theory is false.",
+"begin": 391.969,
+"end": 429.809,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The criterion. A theory is scientific if and only if it is falsifiable: it forbids certain possible observations. The more it forbids, the more it says about the world, and the better it is, provided it survives testing.",
+"begin": 429.889,
+"end": 446.209,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bold conjectures. Science progresses not by piling up confirmations — which are easy to find for almost any theory — but by proposing bold conjectures that make risky predictions, and then trying hard to refute them. A theory that survives severe tests is corroborated, but never proven.",
+"begin": 446.289,
+"end": 466.209,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Popper's contrast. Popper's formative experience came in Vienna around nineteen nineteen. Einstein's general relativity predicted that starlight passing near the Sun would be bent by a specific amount. Arthur Eddington's nineteen nineteen eclipse expedition tested the prediction, and it could easily have failed. By contrast, the psychological theories of Freud and Alfred Adler seemed able to explain any human behavior. Popper's example: a man pushes a child into water intending to drown it; another man sacrifices his life to save a child. Freud's theory explains the first as repression and the second as sublimation; Adler's theory explains the first as a feeling of inferiority needing to prove itself by crime, and the second as the same feeling needing to prove itself by daring. Popper recalled describing a case to Adler, who analyzed it confidently \"in the light of my thousandfold experience.\" Popper replied: \"And with this new case, I suppose, your experience has become thousand-and-one-fold.\" He concluded that the apparent strength of such theories, that they were always confirmed, was actually their weakness.",
+"begin": 466.329,
+"end": 538.249,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Here's the critical-thinking lesson.",
+"begin": 538.289,
+"end": 540.609,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A theory that can explain every possible outcome explains nothing. When someone's view is confirmed by whatever happens — \"If the market goes up, that proves my theory; if it goes down, that proves it too\" — ask: What observation would show you were wrong? If there is none, the view is not being tested by evidence at all. In Bayesian terms, evidence that would be expected whether or not the theory is true has a likelihood ratio of one.",
+"begin": 541.205,
+"end": 570.725,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Problems for falsificationism.",
+"begin": 571.685,
+"end": 573.605,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The Duhem-Quine problem: theories are never tested alone — next section.",
+"begin": 574.325,
+"end": 580.565,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Scientists rightly don't abandon theories at the first anomaly. Every major theory has faced anomalies throughout its history. If scientists had followed naive falsificationism, Newton's theory would have been rejected at birth.",
+"begin": 581.205,
+"end": 596.165,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Probabilistic hypotheses, \"this coin is fair\", are not strictly falsified by any finite observation.",
+"begin": 596.885,
+"end": 604.885,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Existential claims, \"there exist black holes\", cannot be falsified by any finite set of observations, yet they are scientific.",
+"begin": 605.685,
+"end": 615.845,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. The role of confirmation. Wesley Salmon argued that when we rely on a well-corroborated theory to build a bridge, we treat its past success as evidence of future success, which is induction.",
+"begin": 616.725,
+"end": 630.205,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Popper himself was aware of most of these problems and developed a more sophisticated position. His lasting insights are that testability is a virtue, that risky predictions are the strongest evidence, and that criticism drives the growth of knowledge.",
+"begin": 630.565,
+"end": 645.765,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The Duhem-Quine problem",
+"begin": 647.027,
+"end": 648.627,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The French physicist Pierre Duhem — The Aim and Structure of Physical Theory, nineteen oh-six — observed that \"an experiment in physics can never condemn an isolated hypothesis but only a whole theoretical group.\" To derive a prediction from a theory, you always need auxiliary hypotheses: about initial conditions, about the instruments, about the absence of interfering factors. When the prediction fails, logic tells you that something in the group is false, but not what. W V O Quine extended this to all beliefs: our statements face the tribunal of experience \"only as a corporate body\".",
+"begin": 649.718,
+"end": 690.918,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Neptune and Vulcan. In the eighteen forties, the orbit of Uranus deviated from what Newtonian mechanics predicted. Should astronomers have rejected Newton? Urbain Le Verrier, and independently John Couch Adams, instead questioned an auxiliary assumption, that there were no other significant masses nearby. Le Verrier calculated where an unseen planet would have to be to cause the deviation. In eighteen forty-six, Johann Galle pointed his telescope at the predicted position and found Neptune, within about one degree. Newton was triumphantly vindicated.",
+"begin": 691.878,
+"end": 730.358,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Then Le Verrier tried the same move with another anomaly: the orbit of Mercury precessed slightly faster than Newtonian theory predicted. In eighteen fifty-nine he proposed a small planet, Vulcan, orbiting inside Mercury's orbit. Astronomers searched for decades, and several claimed sightings. Vulcan does not exist. The anomaly was finally explained in nineteen fifteen by Einstein's general relativity, which replaced Newtonian gravitation.",
+"begin": 731.318,
+"end": 761.798,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The same strategy, protect the theory by revising an auxiliary, succeeded brilliantly once and failed once. Logic alone could not tell which case was which.",
+"begin": 762.598,
+"end": 774.118,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A modern example. In twenty eleven, the OPERA experiment reported neutrinos apparently traveling faster than light, which would contradict special relativity. Rather than abandon relativity, the physicists themselves suspected an error in the experimental setup and asked others to find it. In twenty twelve, the anomaly was traced to a loose fiber-optic cable and a clock problem.",
+"begin": 774.598,
+"end": 800.038,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "The lessons.",
+"begin": 800.518,
+"end": 801.398,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Neither \"stick with the theory\" nor \"abandon it\" is automatically rational when a prediction fails. The rational question is: which of the assumptions in play is most doubtful, given everything else we know? A theory with an enormous track record, relativity, warrants suspicion of the equipment first. What makes a rescue legitimate is that the revised auxiliary hypothesis is independently testable: Neptune could be looked for. That leads to the next section.",
+"begin": 802.064,
+"end": 833.824,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Ad hoc hypotheses",
+"begin": 835.082,
+"end": 836.602,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "An ad hoc hypothesis is one introduced solely to save a theory from refutation, with no independent evidence or testable consequences of its own.",
+"begin": 837.695,
+"end": 847.215,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Compare two responses to a failed prediction.",
+"begin": 847.695,
+"end": 850.615,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Legitimate: \"There must be an unseen planet at this position, with this mass.\" Testable: look there.",
+"begin": 850.895,
+"end": 858.295,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ad hoc: \"The prediction failed because the skeptics' negative energy disrupted the psychic's powers.\" Untestable: no independent way to detect negative energy.",
+"begin": 858.575,
+"end": 869.575,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "More examples of ad hoc rescues.",
+"begin": 870.015,
+"end": 872.535,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "An astrologer whose prediction fails says the client's birth time must have been recorded incorrectly.",
+"begin": 872.815,
+"end": 878.655,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A doomsday prophet whose predicted date passes announces that the faithful's prayers postponed the end. Leon Festinger, Henry Riecken, and Stanley Schachter studied a group that did this in When Prophecy Fails, nineteen fifty-six. After the predicted flood did not come, many members became more committed and began seeking converts.",
+"begin": 878.895,
+"end": 900.335,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Philip Henry Gosse's \"Omphalos\" hypothesis: God created the world recently, complete with fossils and geological strata that make it look ancient.",
+"begin": 900.895,
+"end": 910.695,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Criteria for telling a legitimate modification from an ad hoc one.",
+"begin": 911.135,
+"end": 915.135,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Independent testability: does the modification have consequences beyond the anomaly it was introduced to explain?",
+"begin": 915.775,
+"end": 923.375,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Novel predictions: does it predict something new that is then confirmed?",
+"begin": 924.015,
+"end": 929.135,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Content: does it make the theory say more, or less? Ad hoc rescues usually drain content — \"the effect only appears when no skeptic is watching\".",
+"begin": 929.775,
+"end": 941.695,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Track record: does the theory need a new rescue after every test?",
+"begin": 941.775,
+"end": 947.135,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In Bayesian terms, an ad hoc auxiliary usually has a low prior probability and does nothing to raise it, so a theory that needs many of them becomes steadily less probable. Imre Lakatos made these ideas central to his account of science.",
+"begin": 947.455,
+"end": 962.735,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Kuhn and paradigms",
+"begin": 963.997,
+"end": 965.517,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Thomas Kuhn's The Structure of Scientific Revolutions is one of the most cited academic books of the twentieth century. Kuhn, a physicist turned historian, argued that the real history of science looked nothing like the textbook picture of steady accumulation or Popper's picture of constant attempted refutation.",
+"begin": 966.609,
+"end": 986.529,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Paradigms. A mature science is organized around a paradigm: a set of shared achievements — exemplars, like Newton's Principia or Lavoisier's chemistry — that define the legitimate problems and methods of a field. In the nineteen sixty-nine postscript, Kuhn distinguished two senses: the disciplinary matrix — shared laws, models, values, and techniques — and exemplars — concrete problem-solutions students learn from.",
+"begin": 987.409,
+"end": 1016.449,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Normal science. Most of the time, scientists do normal science: \"puzzle-solving\" within the paradigm, extending it and fitting nature to it. They do not try to refute the paradigm. When a result fails to fit, it is usually treated as a puzzle to be solved, or a failure of the scientist, not a refutation of the paradigm.",
+"begin": 1017.409,
+"end": 1039.009,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Anomaly and crisis. Sometimes anomalies accumulate that resist solution. Confidence in the paradigm erodes; scientists start proposing radical alternatives. This is a crisis.",
+"begin": 1039.489,
+"end": 1053.169,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Revolution. A new paradigm emerges and eventually wins acceptance. Examples: the Copernican revolution, Earth-centered to Sun-centered astronomy, the chemical revolution, Lavoisier's oxygen theory replacing phlogiston, the Darwinian revolution, the Einsteinian revolution, and, in the nineteen sixties, plate tectonics, which vindicated Alfred Wegener's rejected nineteen twelve hypothesis of continental drift after evidence from seafloor spreading and magnetic striping of the ocean floor accumulated.",
+"begin": 1053.649,
+"end": 1087.569,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Incommensurability. Kuhn argued that competing paradigms are partly incommensurable: they use key terms in different senses, \"mass\" means something different for Newton and Einstein, they recognize different problems as important, and they apply different standards. So there is no neutral algorithm for choosing between them. \"The proponents of competing paradigms practice their trades in different worlds.\" Joseph Priestley, who first isolated oxygen, never accepted Lavoisier's interpretation and died defending phlogiston.",
+"begin": 1088.529,
+"end": 1123.169,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Theory choice without an algorithm. In \"Objectivity, Value Judgment, and Theory Choice\", Kuhn listed five values all scientists use to evaluate theories: accuracy, consistency, scope, simplicity, and fruitfulness. These are shared, but they can conflict, and scientists weigh them differently. So theory choice is rational but not mechanical, and reasonable scientists can disagree for a time.",
+"begin": 1124.129,
+"end": 1152.789,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Max Planck offered a darker view: \"A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die, and a new generation grows up that is familiar with it.\" There is some empirical support for a mild version of this. Pierre Azoulay, Christian Fons-Rosen, and Joshua Graff Zivin found that after the premature death of a star life scientist, publications by outsiders to the star's field increase, and the new work is disproportionately well cited.",
+"begin": 1152.889,
+"end": 1187.979,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Was Kuhn a relativist? Many readers took Kuhn to show that science is irrational, driven by sociology rather than evidence. Kuhn denied this. He held that later theories are better puzzle-solvers than earlier ones and that science does make progress, though not necessarily toward \"the truth\" in a metaphysical sense.",
+"begin": 1188.029,
+"end": 1210.409,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Here are the critical-thinking lessons from Kuhn.",
+"begin": 1210.849,
+"end": 1213.649,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Anomalies do not immediately refute established theories, and they shouldn't. Experts working within a framework can be slow to see its problems. But the frameworks do change, and they change mainly through the accumulation of evidence that the old framework cannot handle, not through outsiders declaring that \"science is just a paradigm.\"",
+"begin": 1214.224,
+"end": 1235.744,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Lakatos and research programmes",
+"begin": 1237.002,
+"end": 1239.162,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Imre Lakatos tried to combine Popper's rationalism with Kuhn's history.",
+"begin": 1240.242,
+"end": 1245.202,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A research programme consists of.",
+"begin": 1245.442,
+"end": 1247.602,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A hard core of central assumptions that the programme's supporters decide not to question — for Newtonian mechanics, the three laws of motion and the law of gravitation. This is protected by a negative heuristic: don't aim criticism at the hard core.",
+"begin": 1248.002,
+"end": 1263.882,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A protective belt of auxiliary hypotheses, which absorbs the blows of anomalies and is modified as needed.",
+"begin": 1264.082,
+"end": 1270.602,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A positive heuristic: a plan for developing the programme, telling researchers which problems to tackle and how to build more sophisticated models.",
+"begin": 1270.802,
+"end": 1279.882,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A research programme is.",
+"begin": 1280.082,
+"end": 1281.842,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Progressive if its modifications lead to novel predictions, some of which are confirmed. The Newtonian prediction of Neptune is the classic example.",
+"begin": 1282.162,
+"end": 1291.362,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Degenerating if its modifications are merely ad hoc patches that accommodate known facts without predicting anything new, or if its predictions keep failing and the theory lags behind the facts.",
+"begin": 1291.602,
+"end": 1304.002,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "It is rational to work on progressive programmes and to abandon degenerating ones, though Lakatos admitted there is no precise time limit, since a degenerating programme can sometimes recover — atomism was out of favor for long periods. Paul Feyerabend pressed this point against him.",
+"begin": 1304.242,
+"end": 1321.922,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Lakatos's framework is useful beyond science. Any belief system can be assessed by asking whether its responses to challenges are progressive or degenerating. Does it make new, testable claims that turn out to be true? Or does it only ever explain away the evidence after the fact?",
+"begin": 1322.162,
+"end": 1340.082,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Feyerabend and Laudan",
+"begin": 1341.336,
+"end": 1342.936,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Paul Feyerabend argued, from historical case studies such as Galileo's defense of Copernicanism, that every proposed methodological rule has been broken by great scientists, often with good results. His provocative slogan was that the only principle that does not inhibit progress is \"anything goes.\" He later explained that this was \"the terrified exclamation of a rationalist who takes a closer look at history.\" He defended methodological pluralism and criticized what he saw as scientific chauvinism. Feyerabend is often misread as simply anti-science. A better reading: there is no fixed, algorithmic scientific method, and good science requires judgment, creativity, and tolerance for unorthodox ideas.",
+"begin": 1344.026,
+"end": 1393.906,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Larry Laudan proposed that science is best understood as organized into research traditions and that progress should be measured by problem-solving effectiveness: how many empirical and conceptual problems a tradition solves, compared with its rivals. Laudan is also the source of the pessimistic meta-induction.",
+"begin": 1394.346,
+"end": 1413.706,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bayesian philosophy of science offers a unifying framework. Many of the insights above can be expressed in Bayesian terms: risky predictions give large likelihood ratios — Popper; failed predictions spread their blame across the hypotheses and auxiliaries in proportion to their prior probabilities — Duhem-Quine, as analyzed by Jon Dorling in nineteen seventy-nine and Michael Strevens in two thousand one; ad hoc hypotheses have low priors — Lakatos; and scientists with different priors can reasonably disagree until evidence accumulates — Kuhn.",
+"begin": 1414.586,
+"end": 1453.546,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Inference to the best explanation",
+"begin": 1454.811,
+"end": 1456.891,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Inference to the best explanation, IBE, or abduction, is inferring that a hypothesis is true because it provides the best explanation of the available evidence. Charles Sanders Peirce described abduction; Gilbert Harman named IBE; Peter Lipton developed the most thorough account.",
+"begin": 1457.972,
+"end": 1477.372,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "IBE is everywhere: in science, medicine, diagnosis, law — which story best explains the evidence? — history, detective work, car repair, and everyday life — the best explanation of the wet street is that it rained.",
+"begin": 1477.652,
+"end": 1493.652,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What makes an explanation \"best\"? The standard explanatory virtues.",
+"begin": 1494.132,
+"end": 1498.852,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Scope. Question to ask: How much of the evidence does it explain? Example: Natural selection explains biogeography, fossils, anatomy, embryology, vestigial organs.",
+"begin": 1499.412,
+"end": 1512.372,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Precision. Question to ask: Does it explain the details, quantitatively? Example: General relativity predicts Mercury's precession to within observational error.",
+"begin": 1512.612,
+"end": 1524.012,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Simplicity — parsimony. Question to ask: Does it avoid unnecessary assumptions and entities? Example: One common cause rather than many coincidences. See Ockham's razor.",
+"begin": 1524.292,
+"end": 1537.492,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Unification. Question to ask: Does it bring apparently different phenomena under one account? Example: Newton unified falling apples and orbiting planets.",
+"begin": 1537.572,
+"end": 1548.772,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Mechanism. Question to ask: Does it specify how the cause produces the effect? Example: Germ theory identifies the microorganisms that cause disease.",
+"begin": 1548.932,
+"end": 1559.732,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fit with background knowledge. Question to ask: Is it consistent with what we already know well? Example: A diagnosis consistent with the patient's history and physiology.",
+"begin": 1560.212,
+"end": 1571.412,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fertility. Question to ask: Does it suggest new predictions and research? Example: Plate tectonics predicted patterns of earthquakes and seafloor magnetism.",
+"begin": 1571.652,
+"end": 1582.212,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Few ad hoc assumptions. Question to ask: Does it need special pleading to handle awkward facts? Example: See Ad hoc hypotheses.",
+"begin": 1582.772,
+"end": 1592.572,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Lipton distinguished the likeliest explanation, the most probable given the evidence, from the loveliest — the one that would provide the most understanding. IBE claims that loveliness is a guide to likeliness.",
+"begin": 1592.852,
+"end": 1606.332,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Darwin's IBE. Darwin explicitly argued this way in the Origin of Species: \"It can hardly be supposed that a false theory would explain, in so satisfactory a manner as does the theory of natural selection, the several large classes of facts above specified.\"",
+"begin": 1606.612,
+"end": 1623.252,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Semmelweis and childbed fever. A classic case — analyzed by Carl Hempel in Philosophy of Natural Science, nineteen sixty-six. In the eighteen forties at the Vienna General Hospital, women in the First Maternity Division, staffed by doctors and medical students, died of puerperal, \"childbed\", fever at a far higher rate than women in the Second Division, staffed by midwives. Ignaz Semmelweis tested one hypothesis after another: \"epidemic influences\", but these would affect both divisions, overcrowding, the Second Division was more crowded, rough examinations, the psychological effect of the priest's procession with a bell through the First Division, rerouting the priest made no difference, delivery position. None explained the pattern. Then his colleague Jakob Kolletschka was cut by a student's scalpel during an autopsy and died of an illness with the same symptoms. Semmelweis hypothesized that \"cadaveric matter,\" carried on the hands of doctors and students who came straight from autopsies, caused the fever. He required handwashing with chlorinated lime, and mortality in the First Division fell dramatically, to around the level of the Second. His explanation was the best: it explained the difference between divisions, Kolletschka's death, and the effect of the intervention. Tragically, his colleagues largely rejected his findings, partly because they had no theory of germs to explain why it worked, and partly because it implied that doctors were killing their patients. Semmelweis died in an asylum in eighteen sixty-five.",
+"begin": 1623.812,
+"end": 1724.052,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections to IBE.",
+"begin": 1725.012,
+"end": 1726.852,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The \"best of a bad lot\" problem — Bas van Fraassen, Laws and Symmetry, nineteen eighty-nine: IBE can only select the best among the hypotheses we have thought of. If the true explanation isn't among them, the best available one may be false. Before concluding, ask: have I considered enough alternatives?",
+"begin": 1727.412,
+"end": 1748.932,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Why is loveliness a guide to truth? Why should the world be simple, unified, or explicable? Some answer that the explanatory virtues have proven reliable in the history of science; others give Bayesian reasons — simpler hypotheses often make sharper predictions, and so gain more when those predictions succeed.",
+"begin": 1748.898,
+"end": 1770.258,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Stories are seductive. People find explanations satisfying for reasons that have nothing to do with truth: coherence with what they want to believe, narrative appeal, familiarity. The best explanation to us may not be the best explanation of the evidence.",
+"begin": 1771.138,
+"end": 1788.098,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Using IBE well.",
+"begin": 1789.058,
+"end": 1790.978,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Generate rivals before judging: list at least three alternative explanations, including boring ones — chance, measurement error, selection effects. Test the rivals against each other: which evidence would one predict and the other not? Ask about the evidence you'd expect but don't see. Beware of explanations that explain too much — they may be unfalsifiable. Hold the conclusion with confidence proportional to how much better the best explanation is than the runner-up.",
+"begin": 1791.634,
+"end": 1823.634,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Theory-ladenness of observation",
+"begin": 1824.888,
+"end": 1827.048,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Observations are not simply given. As Norwood Russell Hanson and Thomas Kuhn argued, what we observe depends partly on the concepts and theories we bring to it.",
+"begin": 1828.127,
+"end": 1839.007,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A trained radiologist sees a tumor in an X-ray where a layperson sees a blur.",
+"begin": 1839.327,
+"end": 1844.727,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "When Galileo showed his colleagues the moons of Jupiter through his telescope, some saw nothing, and some doubted that the telescope gave a true picture of the heavens at all. To accept what the telescope showed, they needed a theory of optics that assured them it did not create illusions.",
+"begin": 1845.087,
+"end": 1862.167,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Measurements rely on theories of the measuring instruments. A thermometer reading assumes a theory of thermal expansion.",
+"begin": 1862.527,
+"end": 1869.247,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Theory-ladenness is real but has limits. Observations can surprise theories, which could not happen if theory completely determined observation. Anomalies that nobody expected, like the precession of Mercury or the cosmic microwave background, forced changes of theory. And as Jerry Fodor noted, some perceptual processes, as in the Müller-Lyer illusion, are resistant to belief.",
+"begin": 1869.887,
+"end": 1895.887,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "A practical point.",
+"begin": 1896.847,
+"end": 1898.047,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "\"The facts\" presented in a debate are often already interpreted. Unemployment figures depend on the definition of \"unemployed\"; crime statistics depend on reporting and recording practices; a \"rise in diagnoses\" may reflect a change in diagnostic criteria rather than a change in the disease. Ask: What assumptions went into producing this number?",
+"begin": 1898.71,
+"end": 1922.63,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Underdetermination",
+"begin": 1923.892,
+"end": 1925.092,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A theory is underdetermined by the evidence if the evidence is also compatible with rival theories.",
+"begin": 1926.165,
+"end": 1932.605,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Transient underdetermination: the evidence currently available doesn't decide between rivals, but future evidence may. This is common and unproblematic.",
+"begin": 1932.885,
+"end": 1943.165,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Permanent underdetermination: two theories are empirically equivalent, so no possible evidence could ever decide between them. Bas van Fraassen gives the example of Newtonian mechanics combined with different hypotheses about the absolute velocity of the center of mass of the universe; all make the same predictions.",
+"begin": 1943.445,
+"end": 1963.085,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Duhem-Quine thesis implies a kind of underdetermination: since a failed prediction can always be accommodated by revising some auxiliary hypothesis, any theory can in principle be saved.",
+"begin": 1963.365,
+"end": 1975.845,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Does underdetermination mean all theories are equally good? No. Larry Laudan and Jarrett Leplin argued that underdetermination by logic, a theory can be saved, does not imply underdetermination by reasonable standards — a theory should be saved. A theory kept alive only by an ever-growing collection of ad hoc hypotheses is not as good as one that predicts the evidence naturally. Laudan called the view that underdetermination makes all theories equally rational the egalitarian thesis, and argued it is false.",
+"begin": 1976.405,
+"end": 2010.005,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "In debates, \"the data are consistent with my view too\" is a common move. It may be true. But consistency is cheap. The relevant questions are: which view predicted the data rather than accommodating it afterward? Which is simpler? Which requires fewer ad hoc assumptions?",
+"begin": 2010.245,
+"end": 2028.485,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Scientific realism and anti-realism",
+"begin": 2029.74,
+"end": 2032.54,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Do our best scientific theories describe reality, including unobservable entities like electrons, genes, and dark matter? Or are they merely useful instruments for predicting observations?",
+"begin": 2033.633,
+"end": 2046.433,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Scientific realism holds that our best theories are approximately true, and that the unobservable entities they posit really exist.",
+"begin": 2046.633,
+"end": 2055.153,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The main argument for realism is the no-miracles argument: \"Realism is the only philosophy that doesn't make the success of science a miracle.\" If electrons don't exist, it would be an astonishing coincidence that theories about electrons let us build computers, lasers, and electron microscopes.",
+"begin": 2055.233,
+"end": 2074.513,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The main argument against realism is the pessimistic meta-induction. The history of science is full of theories that were empirically successful but are now considered false, and whose central terms don't refer to anything: the crystalline spheres of ancient astronomy, the humoral theory of medicine, phlogiston, caloric, heat as a fluid, the electromagnetic and optical ether, spontaneous generation, vital forces. By induction from this history, our current successful theories will probably turn out false too.",
+"begin": 2074.593,
+"end": 2109.713,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Positions in the debate.",
+"begin": 2110.033,
+"end": 2111.633,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Constructive empiricism — Bas van Fraassen, The Scientific Image, nineteen eighty: the aim of science is empirical adequacy, getting the observable phenomena right, not truth about unobservables. Accepting a theory involves believing only that it is empirically adequate.",
+"begin": 2111.913,
+"end": 2130.673,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Instrumentalism: theories are tools for prediction and control, not descriptions.",
+"begin": 2130.753,
+"end": 2136.913,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Structural realism: what survives theory change is mathematical structure, not claims about the nature of entities. Augustin-Jean Fresnel's theory of light as vibrations in an elastic ether was abandoned, but his equations were carried over intact into Maxwell's electromagnetic theory. So we should be realists about the structure our theories describe.",
+"begin": 2136.993,
+"end": 2159.673,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Entity realism: we are entitled to believe in entities we can manipulate to intervene in other processes, whatever our theories say about them. Of electrons and positrons, which physicists \"spray\" onto niobium balls to change their charge, Hacking wrote: \"if you can spray them, then they are real.\"",
+"begin": 2159.713,
+"end": 2178.753,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Selective realism — Philip Kitcher, Stathis Psillos: be realist about the parts of past theories that were actually responsible for their successes. Those parts have generally been retained.",
+"begin": 2178.833,
+"end": 2191.113,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The debate matters for critical thinking in a subtle way. A healthy attitude toward science combines confidence in well-established findings, the no-miracles intuition, with humility about theoretical details at the frontier — the pessimistic intuition. The observable, predictive core of mature science — vaccines prevent disease, the Earth is billions of years old, CO two traps heat — is far more secure than speculative interpretations at the edges.",
+"begin": 2191.153,
+"end": 2221.393,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Causation and causal inference",
+"begin": 2222.576,
+"end": 2224.896,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Many of the most important questions in public life are causal. Does this drug cure the disease? Does this policy reduce crime? Does social media cause depression? Does immigration lower wages? Causal claims are also among the easiest to get wrong.",
+"begin": 2225.972,
+"end": 2243.932,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Hume and the regularity view",
+"begin": 2244.372,
+"end": 2246.292,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "David Hume argued that we never observe causal necessity. We observe only that events of one type are constantly conjoined with events of another type, that they are contiguous in space and time, and that the cause comes first. The regularity theory of causation says that causation just is this pattern.",
+"begin": 2247.158,
+"end": 2267.398,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Problems: many regularities are not causal. Night regularly follows day, but day doesn't cause night. A falling barometer is regularly followed by storms, but the barometer doesn't cause storms; both are caused by falling air pressure.",
+"begin": 2268.278,
+"end": 2285.718,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Mill's methods",
+"begin": 2286.198,
+"end": 2287.158,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "John Stuart Mill systematized methods for identifying causes.",
+"begin": 2288.039,
+"end": 2292.559,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Method of agreement: if all cases where the effect occurs share only one factor, that factor is probably the cause. All the wedding guests who got food poisoning ate the prawns.",
+"begin": 2292.999,
+"end": 2305.639,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Method of difference: if a case where the effect occurs and a case where it doesn't differ in only one factor, that factor is probably the cause — or part of it. Two guests ate identical meals, except that one ate the prawns and got sick. This is the logic of the controlled experiment.",
+"begin": 2306.519,
+"end": 2326.599,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Joint method of agreement and difference: combining both.",
+"begin": 2327.559,
+"end": 2332.279,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Method of residues: subtract the effects of known causes; what remains is due to the remaining factors. The discovery of Neptune used this reasoning: subtract the known planets' influence on Uranus, and the residual deviation points to an unknown cause.",
+"begin": 2333.239,
+"end": 2351.399,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Method of concomitant variation: if an effect varies when a factor varies, they are causally connected. The more prawns guests ate, the sicker they were — a dose-response relationship.",
+"begin": 2351.959,
+"end": 2364.919,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Mill's methods are sound in principle but need care: they assume you have identified all the relevant candidate factors, and real effects often have multiple causes.",
+"begin": 2365.879,
+"end": 2375.879,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Counterfactuals and interventions",
+"begin": 2376.839,
+"end": 2378.999,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The counterfactual theory: roughly, C caused E if, had C not occurred, E would not have occurred. Aspirin caused my headache to go away if, had I not taken it, the headache would have persisted. This captures the idea behind controlled experiments: compare what happened with what would have happened otherwise.",
+"begin": 2379.886,
+"end": 2401.726,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "It faces problems of preemption and overdetermination. Suzy and Billy both throw rocks at a bottle; Suzy's arrives first and shatters it. Suzy's throw caused the shattering, but if she hadn't thrown, Billy's rock would have shattered it anyway. Two assassins shoot a victim at the same instant, each shot fatal: neither shot is necessary, but both seem to be causes.",
+"begin": 2401.806,
+"end": 2425.606,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The interventionist theory — James Woodward, Making Things Happen, two thousand three; Judea Pearl, Causality, two thousand — holds that X causes Y if an intervention that changes X — while leaving everything else that doesn't depend on X alone — would change Y. This is the idea of causation as a handle for manipulation, and it underlies modern causal inference.",
+"begin": 2425.886,
+"end": 2450.046,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pearl describes a ladder of causation.",
+"begin": 2450.526,
+"end": 2452.926,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Association — seeing: What does observing X tell me about Y? \"Patients who took the drug recovered more often.\"",
+"begin": 2453.566,
+"end": 2462.286,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Intervention — doing: What would happen to Y if I made X happen? \"If we give the drug, will patients recover more often?\"",
+"begin": 2462.926,
+"end": 2472.326,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Counterfactuals — imagining: What would have happened if X had been different? \"Would this patient have recovered without the drug?\"",
+"begin": 2472.686,
+"end": 2481.606,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Statistics alone climbs only the first rung. Climbing higher requires causal assumptions, often represented as diagrams showing which variables affect which.",
+"begin": 2481.886,
+"end": 2492.446,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Correlation and causation",
+"begin": 2492.766,
+"end": 2494.446,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "\"Correlation does not imply causation\" is the most famous slogan in critical thinking. More precisely: when A and B are correlated, there are several possible explanations, and \"A causes B\" is only one of them.",
+"begin": 2495.321,
+"end": 2510.561,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "A causes B: Smoking causes lung cancer.",
+"begin": 2511.081,
+"end": 2514.961,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Reverse causation: Cities with more firefighters at a fire see more damage. The size of the fire causes both; firefighters don't cause damage. Or: people who are depressed use social media differently, rather than, or as well as, social media causing depression.",
+"begin": 2515.401,
+"end": 2534.081,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Confounding — common cause: Ice cream sales and drownings rise together; hot weather causes both.",
+"begin": 2534.521,
+"end": 2542.281,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Chance: Across years, the number of films Nicolas Cage appeared in correlated with the number of people who drowned by falling into swimming pools — from Tyler Vigen's Spurious Correlations. Search enough variables and some will correlate by coincidence.",
+"begin": 2542.761,
+"end": 2558.921,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Selection effects or collider bias: Among hospitalized patients, two unrelated diseases can appear negatively correlated, because having either one can get you admitted.",
+"begin": 2559.881,
+"end": 2571.041,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Bidirectional causation: Poverty and poor health each worsen the other.",
+"begin": 2571.481,
+"end": 2576.881,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The HRT lesson. For decades, large observational studies such as the Nurses' Health Study found that women taking hormone replacement therapy, HRT, after menopause had lower rates of heart disease. Many doctors recommended HRT partly for heart protection. Then the Women's Health Initiative, a large randomized controlled trial, reported in two thousand two that combined HRT did not protect against heart disease, and in fact slightly increased the risk of heart attacks, strokes, and breast cancer. The observational association had been largely due to confounding: women who chose to take HRT were, on average, healthier, wealthier, and more health-conscious — the healthy user effect. The picture has since become more nuanced, with the timing of HRT relative to menopause appearing to matter, but the core lesson stands.",
+"begin": 2577.401,
+"end": 2633.401,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Sunscreen and skin cancer. Some studies have found that people who use more sunscreen have higher rates of melanoma. Does sunscreen cause cancer? No: people who spend more time in intense sun use more sunscreen. Sun exposure confounds the association.",
+"begin": 2634.361,
+"end": 2652.641,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Checklist for a causal claim based on correlation.",
+"begin": 2653.161,
+"end": 2656.481,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Could B cause A instead?",
+"begin": 2656.921,
+"end": 2659.961,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. What third factor could cause both? Were such factors measured and controlled for?",
+"begin": 2660.841,
+"end": 2667.001,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Could the correlation be due to chance? How many variables were examined?",
+"begin": 2667.481,
+"end": 2672.601,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. How were the cases selected? Could the selection itself create the correlation?",
+"begin": 2673.481,
+"end": 2678.921,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Is there a dose-response relationship? Did the cause come first?",
+"begin": 2679.561,
+"end": 2684.841,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Is there a plausible mechanism?",
+"begin": 2685.161,
+"end": 2688.121,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. Has the finding been confirmed by experiments or natural experiments?",
+"begin": 2688.441,
+"end": 2693.801,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Randomized controlled trials and the hierarchy of evidence",
+"begin": 2694.281,
+"end": 2697.881,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The best tool for establishing causation is the randomized controlled trial — RCT.",
+"begin": 2698.684,
+"end": 2704.604,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Control group: compare people who receive the treatment with similar people who don't.",
+"begin": 2704.924,
+"end": 2710.124,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Randomization: assign people to groups by chance. This breaks the link between the treatment and every possible confounder, known or unknown. On average, the groups will be alike in age, health, wealth, motivation, genetics, and everything else, so any difference in outcomes can be attributed to the treatment.",
+"begin": 2710.444,
+"end": 2731.164,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Blinding: participants, and ideally researchers and assessors, don't know who received the treatment, preventing placebo effects and observer bias from creating differences.",
+"begin": 2731.484,
+"end": 2742.684,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Historical milestones: James Lind's seventeen forty-seven comparison of six treatments for scurvy on board HMS Salisbury, which found that citrus fruit worked — controlled, but not randomized; and the British Medical Research Council's nineteen forty-eight trial of streptomycin for tuberculosis, designed with the statistician Austin Bradford Hill, often cited as the first modern randomized controlled trial.",
+"begin": 2743.004,
+"end": 2769.244,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The hierarchy of evidence, as commonly taught in evidence-based medicine — from strongest to weakest, for questions about treatment effects.",
+"begin": 2769.804,
+"end": 2777.884,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Systematic reviews and meta-analyses of randomized controlled trials.",
+"begin": 2778.524,
+"end": 2783.804,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Randomized controlled trials.",
+"begin": 2784.364,
+"end": 2787.284,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Cohort studies — following groups with and without an exposure over time.",
+"begin": 2787.564,
+"end": 2793.084,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Case-control studies — comparing people with a condition to people without it, looking back for differences in exposure.",
+"begin": 2793.644,
+"end": 2801.484,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Case series and case reports.",
+"begin": 2801.804,
+"end": 2804.684,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Expert opinion, mechanistic reasoning, and anecdote.",
+"begin": 2805.244,
+"end": 2809.564,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The hierarchy is a useful default, not an absolute rule.",
+"begin": 2810.124,
+"end": 2813.964,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Some questions can't be answered by RCTs. You can't randomize people to smoke for thirty years. A famous satirical paper found no RCTs of parachutes and concluded, tongue in cheek, that their effectiveness was unproven. When an effect is enormous and obvious, observational evidence can suffice.",
+"begin": 2814.284,
+"end": 2834.044,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "External validity. In twenty eighteen, researchers actually ran a randomized trial of parachutes — Robert Yeh and colleagues, BMJ: participants jumped from aircraft with or without parachutes, and there was no difference in death or injury. The aircraft were parked on the ground, and participants jumped about point six meters. The trial was internally valid, and useless for the question that matters. The satire makes a serious point: a trial shows what worked for its population, in its conditions. Nancy Cartwright and Jeremy Hardie stress that \"it worked there\" does not guarantee \"it will work here\" unless the causal factors that made it work are also present here.",
+"begin": 2834.604,
+"end": 2879.724,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Natural experiments can approach the strength of RCTs. In London in eighteen fifty-four, John Snow traced a cholera outbreak to the Broad Street water pump. In his \"Grand Experiment,\" he compared households supplied by the Southwark and Vauxhall water company, which drew water from sewage-contaminated parts of the Thames, with households supplied by the Lambeth company, which had moved its intake upstream. The households were intermixed in the same neighborhoods, similar in other respects, and mostly unaware of which company supplied them. Deaths from cholera were many times higher among Southwark and Vauxhall customers.",
+"begin": 2880.204,
+"end": 2920.124,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The Bradford Hill criteria",
+"begin": 2920.604,
+"end": 2922.204,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "How do you establish causation when RCTs are impossible? In nineteen sixty-five, Austin Bradford Hill, \"The Environment and Disease: Association or Causation?\", listed nine \"viewpoints\" for judging whether an observed association is causal.",
+"begin": 2922.998,
+"end": 2940.758,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Strength: large effects are less likely to be due to confounding. Heavy smokers had many times the lung cancer risk of non-smokers.",
+"begin": 2941.238,
+"end": 2950.838,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Consistency: the association appears in different populations, places, and study designs.",
+"begin": 2951.718,
+"end": 2958.998,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Specificity: the exposure is associated with a specific disease — weakest criterion.",
+"begin": 2959.478,
+"end": 2966.518,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Temporality: the cause precedes the effect. The only essential criterion.",
+"begin": 2967.398,
+"end": 2973.718,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Biological gradient: dose-response. More exposure, more effect.",
+"begin": 2974.598,
+"end": 2980.438,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Plausibility: a plausible mechanism exists.",
+"begin": 2981.398,
+"end": 2985.398,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. Coherence: the causal interpretation fits with what is known about the disease.",
+"begin": 2986.358,
+"end": 2992.478,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eight. Experiment: removing the exposure reduces the effect — for example, people who quit smoking have lower risk.",
+"begin": 2992.918,
+"end": 3001.078,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nine. Analogy: similar causes have similar effects.",
+"begin": 3001.958,
+"end": 3006.118,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Hill insisted these were not a checklist: \"None of my nine viewpoints can bring indisputable evidence for or against the cause-and-effect hypothesis and none can be required as a sine qua non.\"",
+"begin": 3006.998,
+"end": 3019.158,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Smoking and lung cancer is the great example. Richard Doll and Bradford Hill's case-control study and their British Doctors Study established the link with strength, consistency, temporality, and dose-response, without any randomized trial. The tobacco industry's defense was \"correlation is not causation.\" Remarkably, the great statistician R A Fisher — himself a smoker, and a paid consultant to the tobacco industry — argued in the late nineteen fifties that a genetic factor might cause both a craving for smoking and a susceptibility to cancer. The hypothesis was not absurd in principle, but it could not account for the full pattern of evidence, such as the falling risk among people who quit. Even brilliant experts can be wrong, especially where their interests or habits are involved.",
+"begin": 3020.118,
+"end": 3071.398,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Values in science",
+"begin": 3072.653,
+"end": 3074.013,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Is science value-free? Scientists should not let their political or personal preferences decide what the evidence shows. But philosophers have argued that values enter science in legitimate ways.",
+"begin": 3075.109,
+"end": 3088.629,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Inductive risk. Richard Rudner argued that no scientific hypothesis is ever completely verified. So in accepting a hypothesis, a scientist must decide that the evidence is sufficiently strong, and \"how sure we need to be before we accept a hypothesis will depend on how serious a mistake would be.\" We would demand much stronger evidence before concluding that a drug ingredient is not toxic than before concluding that a batch of belt buckles is not defective. Carl Hempel called this inductive risk. Heather Douglas — Science, Policy, and the Value-Free Ideal, two thousand nine — developed the argument: values legitimately play an indirect role in deciding how much evidence is enough, especially where the consequences of error are serious, but they should not play a direct role, treating a preferred conclusion as a reason to believe it.",
+"begin": 3089.109,
+"end": 3146.309,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objectivity as a social achievement. Helen Longino argued that individual scientists cannot be free of bias, but a scientific community can achieve objectivity if it has: recognized venues for criticism, uptake of criticism, the community actually changes in response, shared public standards, and \"tempered equality of intellectual authority\" among qualified members, including those with different perspectives.",
+"begin": 3147.269,
+"end": 3176.469,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Epistemic values, such as Kuhn's accuracy, consistency, scope, simplicity, and fruitfulness, are values too. They help decide between theories, and they are part of what makes science rational.",
+"begin": 3177.429,
+"end": 3190.629,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Conflicts of interest. Funding sources can affect results. A Cochrane systematic review found that drug and device studies sponsored by manufacturers more often had favorable efficacy results and conclusions than studies with other sponsors. This does not mean industry-funded research is worthless. It means that the source of funding is relevant background information, and that independent replication is especially important.",
+"begin": 3191.589,
+"end": 3218.709,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Scientific consensus",
+"begin": 3219.905,
+"end": 3221.505,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A scientific consensus exists when the great majority of experts in a field agree on a conclusion, usually as a result of many studies converging. For example, surveys of the climate science literature have found that the great majority of papers expressing a position on the cause of recent global warming attribute it to human activity — John Cook and colleagues, twenty thirteen, reported ninety-seven percent of such abstracts. National academies of science around the world have issued statements to the same effect.",
+"begin": 3222.596,
+"end": 3254.596,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Why consensus matters to non-experts. Most of us cannot evaluate the primary evidence in climatology, immunology, or particle physics. The existence of a consensus is itself strong evidence, provided it arises for the right reasons. Boaz Miller argues that consensus is a good indicator of knowledge when it rests on apparent consilience of evidence — multiple independent lines of evidence point the same way — social calibration, experts share standards of evidence and interpretation, and social diversity — the consensus includes people with different backgrounds, interests, and methods, so it isn't the product of a shared bias.",
+"begin": 3255.076,
+"end": 3296.676,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Consensus has been wrong. Alfred Wegener's continental drift was rejected for about half a century. The Australian doctors Barry Marshall and Robin Warren proposed in the early nineteen eighties that most stomach ulcers were caused by the bacterium Helicobacter pylori, not by stress or acid. They met widespread skepticism. Marshall famously drank a culture of the bacterium in nineteen eighty-four, developed gastritis, and treated it with antibiotics. They received the Nobel Prize in two thousand five.",
+"begin": 3297.636,
+"end": 3331.636,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What follows? Two things.",
+"begin": 3331.716,
+"end": 3333.996,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The base rate matters. Mature scientific consensus is overturned much less often than it is confirmed, and when it is overturned, the old view usually survives as an approximation — Newtonian mechanics is still used to send spacecraft to other planets.",
+"begin": 3334.276,
+"end": 3351.396,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. The corrections came from within science, through evidence. Wegener was vindicated by oceanographic data, Marshall by experiments and trials. The lesson of these episodes is \"follow the evidence,\" not \"ignore the consensus.\"",
+"begin": 3352.356,
+"end": 3368.196,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Galileo gambit — \"They laughed at Galileo, and he was right, so they're laughing at me and I must be right\" — ignores this. As Carl Sagan put it in Broca's Brain: \"The fact that some geniuses were laughed at does not imply that all who are laughed at are geniuses. They laughed at Columbus, they laughed at Fulton, they laughed at the Wright brothers. But they also laughed at Bozo the Clown.\"",
+"begin": 3368.676,
+"end": 3392.996,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The replication crisis",
+"begin": 3394.194,
+"end": 3395.874,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Since the early twenty tens, many fields have discovered that a large share of published findings do not replicate when independent researchers repeat the studies.",
+"begin": 3396.963,
+"end": 3406.723,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The Open Science Collaboration attempted to replicate one hundred studies published in major psychology journals. Of the original studies, ninety-seven percent had reported significant results; only about thirty-six percent of the replications did, and the average effect size in the replications was about half the original.",
+"begin": 3407.283,
+"end": 3427.443,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "In cancer biology, scientists at the biotechnology company Amgen reported — C Glenn Begley and Lee Ellis, Nature, twenty twelve — that they could confirm the findings of only six of fifty-three \"landmark\" preclinical studies. Researchers at Bayer reported similar problems.",
+"begin": 3427.763,
+"end": 3446.883,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Some famous findings in psychology have failed large-scale replications, including ego depletion — the idea that willpower is a limited resource that gets \"used up\"; a large multi-lab replication in twenty sixteen found an effect near zero — and power posing — the claim that adopting expansive postures raises testosterone and risk-taking; one of the original authors, Dana Carney, publicly stated in twenty sixteen that she no longer believed the effect was real.",
+"begin": 3447.043,
+"end": 3478.083,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Causes.",
+"begin": 3478.563,
+"end": 3479.523,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Publication bias — the file drawer problem, as Robert Rosenthal called it in nineteen seventy-nine: studies with significant results are more likely to be published; null results end up in the file drawer. The published literature therefore over-represents positive findings.",
+"begin": 3479.843,
+"end": 3497.203,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "P-hacking and the garden of forking paths.",
+"begin": 3497.283,
+"end": 3500.483,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Low statistical power: small studies that can only detect effects if they are exaggerated by chance.",
+"begin": 3500.563,
+"end": 3507.523,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "HARKing — Hypothesizing After the Results are Known; Norbert Kerr, nineteen ninety-eight: presenting a post hoc finding as if it had been predicted.",
+"begin": 3507.563,
+"end": 3517.363,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Incentives: careers depend on publishing novel, positive results.",
+"begin": 3517.683,
+"end": 3522.323,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Fraud, which is rare but real: the social psychologist Diederik Stapel fabricated data in dozens of papers, discovered in twenty eleven; Andrew Wakefield's nineteen ninety-eight paper claiming a link between the MMR vaccine and autism was retracted in twenty ten after investigations found serious misconduct.",
+"begin": 3522.963,
+"end": 3543.683,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Reforms include pre-registration of studies, registered reports — journals accept papers for publication based on their methods, before results are known — open data and code, larger samples, and large multi-lab replication projects.",
+"begin": 3544.003,
+"end": 3560.003,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "What the crisis shows, and what it doesn't.",
+"begin": 3560.643,
+"end": 3563.523,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "It shows that a single study, especially a small, surprising one, rarely settles anything; that published literature is biased toward positive results; and that the headline claims of popular science books deserve caution. It does not show that science is unreliable in general. Replication rates vary greatly across fields — they are much higher for well-established findings in physics, chemistry, and many areas of medicine. And the crisis was discovered by scientists, using scientific methods — replication, meta-analysis, statistics — and is being addressed by scientific reform. That is the self-correction the method promises, working imperfectly and slowly, but working.",
+"begin": 3564.121,
+"end": 3610.761,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Pseudoscience and how to spot it",
+"begin": 3612.029,
+"end": 3614.349,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "No single criterion separates science from pseudoscience, but the warning signs cluster. Adapted from Carl Sagan, Mario Bunge, and Scott Lilienfeld and colleagues.",
+"begin": 3615.425,
+"end": 3626.865,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Unfalsifiability. The claim is compatible with every possible outcome.",
+"begin": 3627.425,
+"end": 3632.865,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Ad hoc rescues. Failures are explained away with untestable excuses — \"the energy was disturbed,\" \"you didn't believe enough\".",
+"begin": 3633.345,
+"end": 3642.385,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Reliance on testimonials and anecdotes rather than controlled studies.",
+"begin": 3642.945,
+"end": 3647.985,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. No self-correction. The doctrine is essentially unchanged after decades or centuries, despite new evidence. Astrology is still based on a system set out in antiquity.",
+"begin": 3648.545,
+"end": 3660.385,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Reversal of the burden of proof. \"You can't prove it doesn't work.\"",
+"begin": 3660.945,
+"end": 3665.825,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Scientific-sounding jargon without precise meaning — \"quantum healing,\" \"energy fields,\" \"toxins,\" \"vibrations\".",
+"begin": 3666.145,
+"end": 3674.785,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. Isolation from other sciences. The claims don't connect with, and often contradict, well-established physics, chemistry, and biology.",
+"begin": 3675.345,
+"end": 3684.745,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Extraordinary claims on weak evidence.",
+"begin": 3685.025,
+"end": 3688.585,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Nine. The persecution narrative. \"The establishment is suppressing this\".",
+"begin": 3688.865,
+"end": 3693.985,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ten. Emphasis on confirmation rather than attempted refutation.",
+"begin": 3694.065,
+"end": 3698.385,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eleven. Avoidance of peer review and independent testing.",
+"begin": 3698.865,
+"end": 3702.705,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Twelve. Financial incentives tied to belief — products, courses, consultations.",
+"begin": 3703.185,
+"end": 3709.465,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Thirteen. Appeals to ancient wisdom or to nature as guarantees of truth.",
+"begin": 3709.745,
+"end": 3714.945,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Homeopathy illustrates several of these. It holds that substances causing symptoms in healthy people cure similar symptoms in the sick, and that dilution increases potency. A common homeopathic dilution, \"thirty C,\" means diluting by a factor of one hundred, thirty times over: a total dilution of ten to the power of sixty. For comparison, a mole of a substance contains about six times ten to the power of twenty-three molecules. At thirty C, the chance that a dose contains even a single molecule of the original substance is effectively zero. The claimed mechanism contradicts basic chemistry, and systematic reviews have not found effects beyond placebo — for example, Australia's National Health and Medical Research Council concluded in twenty fifteen that there were no health conditions for which there was reliable evidence that homeopathy was effective.",
+"begin": 3715.345,
+"end": 3769.905,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Astrology has been tested. In a double-blind study published in Nature, astrologers were unable to match natal charts to the correct personality profiles better than chance.",
+"begin": 3770.385,
+"end": 3780.945,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Part of astrology's apparent success is the Forer effect — or Barnum effect. In nineteen forty-eight the psychologist Bertram Forer gave his students a personality test and then gave each of them a \"personalized\" description. In fact, every student received the same description, assembled largely from a newsstand astrology book — \"You have a great need for other people to like and admire you… At times you are extroverted, affable, sociable, while at other times you are introverted, wary, reserved…\". Students rated its accuracy, on average, at about four point three on a scale of zero to five. Vague, flattering, and double-sided statements feel personally accurate to almost everyone.",
+"begin": 3781.105,
+"end": 3826.625,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 3829.891,
+"end": 3830.691,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 3831.771,
+"end": 3846.811,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. Explain the asymmetry between verification and falsification, and why it isn't the whole story.",
+"begin": 3847.68,
+"end": 3855.6,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. No number of confirming instances proves a universal law, but one counterexample logically refutes it. It isn't the whole story because of the Duhem-Quine problem: predictions depend on auxiliary assumptions, so a failed prediction may refute an auxiliary rather than the theory. Also, probabilistic and existential hypotheses aren't strictly falsifiable, and scientists reasonably retain theories in the face of some anomalies.",
+"begin": 3860.689,
+"end": 3890.769,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. When Uranus's orbit didn't match Newtonian predictions, astronomers postulated a new planet. Was this ad hoc? Why or why not?",
+"begin": 3891.644,
+"end": 3903.084,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. No. The hypothesis was independently testable: it predicted a planet of a certain mass at a certain position, which could be looked for, and it was found. An ad hoc hypothesis has no consequences beyond saving the theory.",
+"begin": 3908.153,
+"end": 3925.673,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. What distinguishes a progressive from a degenerating research programme?",
+"begin": 3926.544,
+"end": 3932.464,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. A progressive programme's modifications predict novel facts, some of which are confirmed. A degenerating programme's modifications only accommodate known facts after the event, and its predictions fail or lag behind the evidence.",
+"begin": 3937.541,
+"end": 3953.861,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. \"Children who eat breakfast do better at school, so schools should provide breakfast to improve grades.\" Give three alternative explanations for the correlation.",
+"begin": 3954.73,
+"end": 3966.25,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. Confounding: families with more resources and stability both provide breakfast and support schoolwork. Confounding by health or sleep: well-rested, healthy children are more likely to eat breakfast and to concentrate. Reverse causation or selection: motivated, organized children may be more likely to get up in time for breakfast. The claim may still be true — and there is some experimental evidence on school breakfast programs — but the correlation alone doesn't establish it.",
+"begin": 3971.318,
+"end": 4004.358,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. Why does randomization matter in a controlled trial?",
+"begin": 4005.224,
+"end": 4010.264,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. It makes the treatment and control groups similar, on average, in all respects, including factors nobody thought to measure. This breaks any systematic link between the treatment and confounders, so differences in outcome can be attributed to the treatment — up to chance, which statistics can quantify.",
+"begin": 4015.334,
+"end": 4036.054,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. What are the no-miracles argument and the pessimistic meta-induction?",
+"begin": 4036.937,
+"end": 4042.777,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. No-miracles: the success of science would be a miracle unless our theories were approximately true, so they probably are. Pessimistic meta-induction: many past successful theories were false — phlogiston, ether, caloric — so our current successful theories are probably false too. Structural realism and selective realism try to accommodate both.",
+"begin": 4047.856,
+"end": 4073.536,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. Someone says: \"Scientists were wrong about ulcers and continental drift, so I don't trust the scientific consensus on vaccines.\" Evaluate.",
+"begin": 4074.423,
+"end": 4085.463,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. The premise is true, but the conclusion doesn't follow. Consensus is sometimes overturned, but much less often than it is confirmed; the base rate matters. The corrections came from new evidence within science, not from rejecting science. The consensus on vaccine safety rests on many independent lines of evidence — large observational studies of millions, trials, surveillance systems in many countries. The appropriate response to fallibility is to follow the evidence, which here strongly supports the consensus, not to reject it wholesale. There is also an asymmetry test: would the speaker apply the same reasoning to reject consensus claims they like?",
+"begin": 4090.54,
+"end": 4135.98,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. Why is the Forer effect relevant to evaluating personality tests, astrology, and \"cold reading\" by psychics?",
+"begin": 4136.856,
+"end": 4146.296,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Because vague, general, and double-sided descriptions feel personally accurate to almost everyone. A subjective sense of \"that's so me\" is therefore no evidence that the method has any real diagnostic power. The proper test is whether people can pick out their own description from others' better than chance, under blind conditions.",
+"begin": 4151.301,
+"end": 4174.021,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter ten",
+"begin": 4177.371,
+"end": 4178.811,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter ten. Science aims at the truth. But what is truth? Is it objective, or relative to cultures and individuals? That's the subject of chapter eleven.",
+"begin": 4179.905,
+"end": 4193.185,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 6.478,
+"lines": [
+0,
+1
+],
+"request_id": "41F2FojHpcb5kcxY3v22"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 7.706,
+"end": 14.864,
+"lines": [
+1,
+2
+],
+"request_id": "vLfKHzIxi64hmVehLkBd"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 15.412,
+"end": 18.495,
+"lines": [
+2,
+3
+],
+"request_id": "v5TqK88CKgiK3q4W9AIu"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 19.331,
+"end": 25.522,
+"lines": [
+3,
+4
+],
+"request_id": "PYJ7LXjOgN3HG4qmTJHN"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 26.07,
+"end": 32.601,
+"lines": [
+4,
+5
+],
+"request_id": "UCSZZ4Y9AHegXvQAcsc5"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 33.437,
+"end": 75.311,
+"lines": [
+5,
+7
+],
+"request_id": "1ObAZd8Wlo4SAs1nSe7d"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 75.938,
+"end": 116.297,
+"lines": [
+7,
+10
+],
+"request_id": "5X28XNAAJxpxhU53Wswn"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 117.525,
+"end": 119.406,
+"lines": [
+10,
+11
+],
+"request_id": "aErMCqmqep4tu7yIy3xB"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 120.451,
+"end": 226.717,
+"lines": [
+11,
+20
+],
+"request_id": "XGKBQ0kVpWoXmHFlzxkR"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 227.944,
+"end": 229.512,
+"lines": [
+20,
+21
+],
+"request_id": "zc2y06O6JcubBwfrDJFJ"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 230.557,
+"end": 303.464,
+"lines": [
+21,
+24
+],
+"request_id": "uPLQJOj7IDMQNJ3i7HkO"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 304.692,
+"end": 306.808,
+"lines": [
+24,
+25
+],
+"request_id": "Ob80mdaGnimh2NHW565w"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 307.853,
+"end": 370.939,
+"lines": [
+25,
+30
+],
+"request_id": "gprqvxjNpmVETtqTKadK"
+},
+{
+"chunk": 14,
+"voice": "main",
+"begin": 372.167,
+"end": 374.204,
+"lines": [
+30,
+31
+],
+"request_id": "HBPeJuZyVgMu2fHnXoWJ"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 375.249,
+"end": 540.578,
+"lines": [
+31,
+37
+],
+"request_id": "3d6MiqDodH528ePcH1yh"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 541.205,
+"end": 645.799,
+"lines": [
+37,
+45
+],
+"request_id": "jpdn86ygEXU4mrD5VI4A"
+},
+{
+"chunk": 17,
+"voice": "second",
+"begin": 647.027,
+"end": 648.673,
+"lines": [
+45,
+46
+],
+"request_id": "j6DvdUZ71cYG9Oi1fEBW"
+},
+{
+"chunk": 18,
+"voice": "second",
+"begin": 649.718,
+"end": 801.437,
+"lines": [
+46,
+52
+],
+"request_id": "3gzXi1RIfPPr9kSQDuWb"
+},
+{
+"chunk": 19,
+"voice": "second",
+"begin": 802.064,
+"end": 833.855,
+"lines": [
+52,
+53
+],
+"request_id": "L67zwWBp5VWqgAEgWMKA"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 835.082,
+"end": 836.65,
+"lines": [
+53,
+54
+],
+"request_id": "kJ9A3bnd5ghlIKaJtab6"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 837.695,
+"end": 962.769,
+"lines": [
+54,
+68
+],
+"request_id": "rt2OPdIknb9kcctWk2eE"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 963.997,
+"end": 965.564,
+"lines": [
+68,
+69
+],
+"request_id": "1xQQZJesbdbmnw0VVJEa"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 966.609,
+"end": 1213.597,
+"lines": [
+69,
+79
+],
+"request_id": "TArEBrxXr389qCTlIbM8"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 1214.224,
+"end": 1235.775,
+"lines": [
+79,
+80
+],
+"request_id": "zkaYam29wezySYEyQ3kz"
+},
+{
+"chunk": 25,
+"voice": "second",
+"begin": 1237.002,
+"end": 1239.197,
+"lines": [
+80,
+81
+],
+"request_id": "FTizJb4HZ5Zy2ub1lzSB"
+},
+{
+"chunk": 26,
+"voice": "second",
+"begin": 1240.242,
+"end": 1340.108,
+"lines": [
+81,
+91
+],
+"request_id": "ZPhOxXqKU6yyDMgbFMel"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1341.336,
+"end": 1342.981,
+"lines": [
+91,
+92
+],
+"request_id": "Xlt4j8xI0yRogtK4Ie34"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1344.026,
+"end": 1453.584,
+"lines": [
+92,
+95
+],
+"request_id": "3KUNYaOL3RVPpMrt1HJ4"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1454.811,
+"end": 1456.927,
+"lines": [
+95,
+96
+],
+"request_id": "FXX3MVaGnvF12wE9RvmX"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1457.972,
+"end": 1748.898,
+"lines": [
+96,
+112
+],
+"request_id": "O7WOf67qIcBr0LT88S81"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1748.898,
+"end": 1791.007,
+"lines": [
+112,
+115
+],
+"request_id": "5Z6pZ8oVpuHUxU1671Ay"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1791.634,
+"end": 1823.66,
+"lines": [
+115,
+116
+],
+"request_id": "neRYZ4WcDS5xYORQwOsw"
+},
+{
+"chunk": 33,
+"voice": "second",
+"begin": 1824.888,
+"end": 1827.082,
+"lines": [
+116,
+117
+],
+"request_id": "WenH7G17FJNSKWt5Z0ss"
+},
+{
+"chunk": 34,
+"voice": "second",
+"begin": 1828.127,
+"end": 1898.083,
+"lines": [
+117,
+123
+],
+"request_id": "UkkgqnBsXIhdULVwKavy"
+},
+{
+"chunk": 35,
+"voice": "second",
+"begin": 1898.71,
+"end": 1922.664,
+"lines": [
+123,
+124
+],
+"request_id": "6j7WHFZmG6mKbv6CNJ4P"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1923.892,
+"end": 1925.12,
+"lines": [
+124,
+125
+],
+"request_id": "c1XNjw19llNXGQPrk05l"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 1926.165,
+"end": 2028.513,
+"lines": [
+125,
+131
+],
+"request_id": "lbFKy5C9cxSj0rlIKJWQ"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 2029.74,
+"end": 2032.588,
+"lines": [
+131,
+132
+],
+"request_id": "gWc5sc5004PuKLwLVLUB"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 2033.633,
+"end": 2221.349,
+"lines": [
+132,
+143
+],
+"request_id": "BJxNwNnRdfdbWqw0WyLB"
+},
+{
+"chunk": 40,
+"voice": "second",
+"begin": 2222.576,
+"end": 2224.927,
+"lines": [
+143,
+144
+],
+"request_id": "dGCgODs2PK3zaAK9hzUi"
+},
+{
+"chunk": 41,
+"voice": "second",
+"begin": 2225.972,
+"end": 2246.322,
+"lines": [
+144,
+146
+],
+"request_id": "f7m1l1uVztTYf0O5KoI3"
+},
+{
+"chunk": 42,
+"voice": "second",
+"begin": 2247.158,
+"end": 2287.203,
+"lines": [
+146,
+149
+],
+"request_id": "rBDnIqR0C0E3D86SwIA8"
+},
+{
+"chunk": 43,
+"voice": "second",
+"begin": 2288.039,
+"end": 2379.05,
+"lines": [
+149,
+157
+],
+"request_id": "BpVXCsHJbWZf1Qf8AvjL"
+},
+{
+"chunk": 44,
+"voice": "second",
+"begin": 2379.886,
+"end": 2494.485,
+"lines": [
+157,
+166
+],
+"request_id": "L7N71r3JzeQcy3HFWH0B"
+},
+{
+"chunk": 45,
+"voice": "second",
+"begin": 2495.321,
+"end": 2697.848,
+"lines": [
+166,
+184
+],
+"request_id": "JeqkCZon0TaMrnIuUxgl"
+},
+{
+"chunk": 46,
+"voice": "second",
+"begin": 2698.684,
+"end": 2922.162,
+"lines": [
+184,
+201
+],
+"request_id": "TprXuPGKj4VA8b0cXcId"
+},
+{
+"chunk": 47,
+"voice": "second",
+"begin": 2922.998,
+"end": 3071.425,
+"lines": [
+201,
+213
+],
+"request_id": "4nNi4bierPxHF7Mxhj01"
+},
+{
+"chunk": 48,
+"voice": "main",
+"begin": 3072.653,
+"end": 3074.064,
+"lines": [
+213,
+214
+],
+"request_id": "tTTQn9q4MnqVRazs9E0A"
+},
+{
+"chunk": 49,
+"voice": "main",
+"begin": 3075.109,
+"end": 3218.678,
+"lines": [
+214,
+219
+],
+"request_id": "IT3J6nRgZs9r1sOwbJjT"
+},
+{
+"chunk": 50,
+"voice": "main",
+"begin": 3219.905,
+"end": 3221.551,
+"lines": [
+219,
+220
+],
+"request_id": "NkN3tM5bTeQ3whpQubGC"
+},
+{
+"chunk": 51,
+"voice": "main",
+"begin": 3222.596,
+"end": 3392.967,
+"lines": [
+220,
+227
+],
+"request_id": "ucrra34p790nAa8toBxJ"
+},
+{
+"chunk": 52,
+"voice": "second",
+"begin": 3394.194,
+"end": 3395.918,
+"lines": [
+227,
+228
+],
+"request_id": "Oa6CwK3XxMOuYCVvtCzR"
+},
+{
+"chunk": 53,
+"voice": "second",
+"begin": 3396.963,
+"end": 3563.494,
+"lines": [
+228,
+241
+],
+"request_id": "ibxwJVuDSM6b7Jjy302h"
+},
+{
+"chunk": 54,
+"voice": "second",
+"begin": 3564.121,
+"end": 3610.802,
+"lines": [
+241,
+242
+],
+"request_id": "dJNbBRellpwf3kt2DOnA"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 3612.029,
+"end": 3614.38,
+"lines": [
+242,
+243
+],
+"request_id": "7zL2RUdOSBdhNecrGcax"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 3615.425,
+"end": 3826.573,
+"lines": [
+243,
+260
+],
+"request_id": "9Um0SPmnfL5pfNOjW1Xl"
+},
+{
+"chunk": 57,
+"voice": "main",
+"begin": 3829.891,
+"end": 3830.727,
+"lines": [
+260,
+261
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 58,
+"voice": "main",
+"begin": 3831.771,
+"end": 3846.844,
+"lines": [
+261,
+262
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 59,
+"voice": "second",
+"begin": 3847.68,
+"end": 3855.647,
+"lines": [
+262,
+263
+],
+"request_id": "eVLOuyz8AkHFPzvPkswA"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 3860.689,
+"end": 3890.808,
+"lines": [
+263,
+264
+],
+"request_id": "YXADqc9agydy84f0hPoh"
+},
+{
+"chunk": 61,
+"voice": "second",
+"begin": 3891.644,
+"end": 3903.112,
+"lines": [
+264,
+265
+],
+"request_id": "kwtkK2gSU8ykBwyHGzTz"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 3908.153,
+"end": 3925.708,
+"lines": [
+265,
+266
+],
+"request_id": "UJTpZf8anGZwMmRVZaY6"
+},
+{
+"chunk": 63,
+"voice": "second",
+"begin": 3926.544,
+"end": 3932.5,
+"lines": [
+266,
+267
+],
+"request_id": "Rzg0do82e9kmarYmYHOt"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3937.541,
+"end": 3953.894,
+"lines": [
+267,
+268
+],
+"request_id": "5SUjZdeSXpRp5Im55mBk"
+},
+{
+"chunk": 65,
+"voice": "second",
+"begin": 3954.73,
+"end": 3966.276,
+"lines": [
+268,
+269
+],
+"request_id": "wn0SI2GHwcuN1TS4b6JE"
+},
+{
+"chunk": 66,
+"voice": "main",
+"begin": 3971.318,
+"end": 4004.389,
+"lines": [
+269,
+270
+],
+"request_id": "qWODSLWttL5W4Q6XaBzp"
+},
+{
+"chunk": 67,
+"voice": "second",
+"begin": 4005.224,
+"end": 4010.292,
+"lines": [
+270,
+271
+],
+"request_id": "fpMeITJeROL8AehnMCzH"
+},
+{
+"chunk": 68,
+"voice": "main",
+"begin": 4015.334,
+"end": 4036.101,
+"lines": [
+271,
+272
+],
+"request_id": "D4OQMmkZRInpM6h9wsiT"
+},
+{
+"chunk": 69,
+"voice": "second",
+"begin": 4036.937,
+"end": 4042.815,
+"lines": [
+272,
+273
+],
+"request_id": "TTLYPYoVRKhAZ9hDUJj8"
+},
+{
+"chunk": 70,
+"voice": "main",
+"begin": 4047.856,
+"end": 4073.587,
+"lines": [
+273,
+274
+],
+"request_id": "PpuP2CEp6QznT1QwbBiG"
+},
+{
+"chunk": 71,
+"voice": "second",
+"begin": 4074.423,
+"end": 4085.499,
+"lines": [
+274,
+275
+],
+"request_id": "OIHMDnYDDFQwBQEyXTen"
+},
+{
+"chunk": 72,
+"voice": "main",
+"begin": 4090.54,
+"end": 4136.02,
+"lines": [
+275,
+276
+],
+"request_id": "hyS2Eo6qgvSwPRzP0ifJ"
+},
+{
+"chunk": 73,
+"voice": "second",
+"begin": 4136.856,
+"end": 4146.26,
+"lines": [
+276,
+277
+],
+"request_id": "WfCPQ8SEyq81nmNwa8ay"
+},
+{
+"chunk": 74,
+"voice": "main",
+"begin": 4151.301,
+"end": 4174.054,
+"lines": [
+277,
+278
+],
+"request_id": "YEVNfq2OkGLbjVXRGCay"
+},
+{
+"chunk": 75,
+"voice": "main",
+"begin": 4177.371,
+"end": 4178.86,
+"lines": [
+278,
+279
+],
+"request_id": "6IDk06ipbAb15hF46uqK"
+},
+{
+"chunk": 76,
+"voice": "main",
+"begin": 4179.905,
+"end": 4193.149,
+"lines": [
+279,
+280
+],
+"request_id": "iiK02DlADo0bfLUcxb7n"
+}
+]
+}

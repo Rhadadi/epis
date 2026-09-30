@@ -17,7 +17,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 56 min | ElevenLabs |
 | 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 58 min | ElevenLabs |
 | 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 10 min | ElevenLabs |
-| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 6 min | Kokoro |
+| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 10 min | ElevenLabs |
 | 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 41 min | Kokoro |
 | 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 1 min | Kokoro |
 | 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 47 min | Kokoro |
@@ -25,7 +25,7 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min | Kokoro |
 | 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
 
-Total: 15 h 18 min.
+Total: 15 h 22 min.
 
 ---
 
