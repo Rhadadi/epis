@@ -24,6 +24,7 @@ that has them is left as it is.
 
     python3 heading_pauses.py --model DIR 01 02 ...    # add the pauses to these chapters
     python3 heading_pauses.py --model DIR --check 01   # only report the pause after each heading
+    python3 heading_pauses.py --repair 01 02 ...       # make every join decodable by libmpg123 too
 
 Needs numpy, torch, torchaudio and transformers, ffmpeg, and the model
 m3hrdadfi/wav2vec2-large-xlsr-persian-v3 (Hugging Face) in DIR.
@@ -39,7 +40,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from eleven_narrate import DELAY, FRAME, WEB, donor_frames, ffmpeg, mp3_frames, write_sync  # noqa: E402
+from eleven_narrate import DELAY, FRAME, WEB, chain_reservoir, donor_frames, ffmpeg, mp3_frames, write_sync  # noqa: E402
 
 AUDIO = Path(__file__).resolve().parent.parent
 RATE = 24000
@@ -330,7 +331,7 @@ def insert(path, sync, cuts, a):
                   meta.read_text(encoding="utf-8"), flags=re.M)
     meta.write_text(text, encoding="utf-8")
     joined, out = tmp / "joined.mp3", tmp / "out.mp3"
-    joined.write_bytes(b"".join(raw))
+    joined.write_bytes(chain_reservoir(b"".join(raw))[0])
     ffmpeg("-i", str(joined), "-i", str(meta), "-map", "0:a", "-map_metadata", "1", "-map_chapters", "1", "-c", "copy",
            "-id3v2_version", "3", str(out))
     out.replace(path)
@@ -369,7 +370,23 @@ def main():
     ap.add_argument("--check", action="store_true", help="only report")
     ap.add_argument("--model", default=os.environ.get("HEADING_ALIGN_MODEL"),
                     help="the Persian wav2vec2 CTC model's directory (or HEADING_ALIGN_MODEL)")
+    ap.add_argument("--repair", action="store_true",
+                    help="only make the borrowed audio data of published chapters reachable frame by frame (chain_reservoir)")
     args = ap.parse_args()
+    if args.repair:
+        for n in args.chapters:
+            path = next(AUDIO.glob(f"{int(n):02d}-*.mp3"))
+            data, changed = chain_reservoir(path.read_bytes())
+            if changed:
+                tmp = path.with_suffix(".chain.mp3")
+                tmp.write_bytes(data)
+                out = path.with_suffix(".out.mp3")
+                ffmpeg("-i", str(tmp), "-map", "0:a", "-map_metadata", "0", "-map_chapters", "0", "-c", "copy",
+                       "-id3v2_version", "3", str(out))
+                out.replace(path)
+                tmp.unlink()
+            print(f"{path.stem}: {changed} frames changed")
+        return
     if not args.model:
         raise SystemExit("needs --model: a download of m3hrdadfi/wav2vec2-large-xlsr-persian-v3")
     aligner = Aligner(args.model)

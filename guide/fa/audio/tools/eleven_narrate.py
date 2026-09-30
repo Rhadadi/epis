@@ -775,7 +775,32 @@ def donor_frames(data, fr, f0):
     area = bytearray((size - head_len) * k)
     area[len(area) - need:] = stream[len(stream) - need:]
     hdr = bytes(header[:head_len - 9]) + bytes(9)  # side information all zero: no audio data, silence
-    return b"".join(hdr + bytes(area[i * (size - head_len):(i + 1) * (size - head_len)]) for i in range(k)), k
+    room = size - head_len
+    # each donor after the first says it starts its (empty) audio data at the first donor's: some decoders
+    # (libmpg123) let a frame borrow only from the frame just before it and what that one borrowed
+    return b"".join(hdr[:head_len - 9] + bytes([min(255, i * room)]) + hdr[head_len - 8:] + bytes(area[i * room:(i + 1) * room])
+                    for i in range(k)), k
+
+
+def chain_reservoir(data):
+    """Make every frame's borrowed audio data reachable frame by frame, as some decoders (libmpg123) need:
+    they copy a frame's borrowed bytes only from the frame just before it and what that frame borrowed, so
+    a frame after one that borrows nothing (a silent or donor frame) may reach back no further than that
+    frame's own data area. Frames without audio data (all silent here) are made to borrow as far back as
+    the frame after them needs; nothing else changes, and every decoder decodes them as before (silence).
+    Returns the patched data and how many frames changed."""
+    data = bytearray(data)
+    fr = mp3_frames(bytes(data))
+    changed = 0
+    for j in range(len(fr) - 2, 0, -1):
+        off, length, borrows, bits, room = fr[j]
+        need = data[fr[j + 1][0] + 4 + (0 if data[fr[j + 1][0] + 1] & 1 else 2)]  # the next frame's main_data_begin, as patched
+        if bits == 0 and need > room + borrows:
+            side = off + 4 + (0 if data[off + 1] & 1 else 2)
+            data[side] = min(255, need - room)
+            fr[j] = (off, length, data[side], bits, room)
+            changed += 1
+    return bytes(data), changed
 
 
 def pcm(path, start, seconds):
@@ -877,7 +902,7 @@ def splice_frames(published, pieces, out, tags, meta, old_audio=None):
         return t + next((s for start, s in reversed(jumps) if t >= start - 1e-6), 0.0)
 
     joined = out.with_suffix(".joined.mp3")
-    joined.write_bytes(b"".join(raw))
+    joined.write_bytes(chain_reservoir(b"".join(raw))[0])
     meta.write_text(tags(moved), encoding="utf-8")
     # rewrap: fresh tags, section markers and Xing header (frame count); the audio frames are copied as they are
     ffmpeg("-i", str(joined), "-i", str(meta), "-map", "0:a", "-map_metadata", "1", "-map_chapters", "1", "-c", "copy",
