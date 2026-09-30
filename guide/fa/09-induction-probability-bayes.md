@@ -2,7 +2,7 @@
 
 [← قبلی: شکاکیت و پاسخ‌هایش](08-skepticism.md) · [فهرست](README.md) · [بعدی: علم، شواهد و تبیین ←](10-science-and-evidence.md)
 
-**صوت:** [شنیدنِ این فصل](audio/09-induction-probability-bayes.mp3) (۱ ساعت و ۵ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#09)
+**صوت:** [شنیدنِ این فصل](audio/09-induction-probability-bayes.mp3) (۱ ساعت و ۲۹ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#09)
 
 ---
 
