@@ -70,7 +70,10 @@ def check(n):
     for term in sorted(bold):
         t = bare(term)
         if t and t in spoken_a and t not in spoken_b:
-            fail(f"term dropped: {term}")
+            # "X (Y)" may be said "X, or Y" (يا): each part kept is enough
+            parts = [bare(p) for p in re.split(r"[()]", term) if bare(p)]
+            if len(parts) < 2 or any(p not in spoken_b for p in parts):
+                fail(f"term dropped: {term}")
     for lat in sorted(set(re.findall(r"[A-Za-zÀ-ÿĀ-žēīōū][A-Za-zÀ-ÿĀ-žēīōū'’ .,-]*[A-Za-zÀ-ÿĀ-žēīōū]", body_a))):
         if bare(lat) not in spoken_b:
             fail(f"Latin-script term dropped: {lat}")
