@@ -2,7 +2,7 @@
 
 [← قبلی: معرفت‌شناسی اجتماعی](12-social-epistemology.md) · [فهرست](README.md) · [بعدی: روان‌شناسیِ استدلال ←](14-psychology-of-reasoning.md)
 
-**صوت:** [شنیدنِ این فصل](audio/13-virtues-and-ethics-of-belief.mp3) (۴۷ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#13)
+**صوت:** [شنیدنِ این فصل](audio/13-virtues-and-ethics-of-belief.mp3) (۱ ساعت و ۳ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#13)
 
 ---
 

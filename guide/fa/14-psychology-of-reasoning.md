@@ -2,7 +2,7 @@
 
 [← قبلی: فضیلتِ فکری و اخلاقِ باور](13-virtues-and-ethics-of-belief.md) · [فهرست](README.md) · [بعدی: راهنمای میدانیِ مغالطه‌ها ←](15-fallacies.md)
 
-**صوت:** [شنیدنِ این فصل](audio/14-psychology-of-reasoning.mp3) (۵۹ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#14)
+**صوت:** [شنیدنِ این فصل](audio/14-psychology-of-reasoning.mp3) (۱ ساعت و ۲۳ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#14)
 
 ---
 

@@ -2,7 +2,7 @@
 
 [← قبلی: حقیقت، نسبی‌گرایی و عینیت](11-truth-and-relativism.md) · [فهرست](README.md) · [بعدی: فضیلتِ فکری و اخلاقِ باور ←](13-virtues-and-ethics-of-belief.md)
 
-**صوت:** [شنیدنِ این فصل](audio/12-social-epistemology.mp3) (۱ ساعت و ۱ دقیقه، روایت به انگلیسی) · [باز کردن در پخش‌کننده](audio/index.html#12)
+**صوت:** [شنیدنِ این فصل](audio/12-social-epistemology.mp3) (۱ ساعت و ۲۴ دقیقه) · [باز کردن در پخش‌کننده](audio/index.html#12)
 
 ---
 
