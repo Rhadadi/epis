@@ -120,6 +120,16 @@ def transcript(script_path, track):
     return "\n".join(out).rstrip() + "\n"
 
 
+def spoken_text(script):
+    """What the chapter's audio says: its speech text (narration/, edition v2) once the audio was made from
+    it, as its sync file records; otherwise the narration script."""
+    v2, sync = AUDIO / "narration" / script.name, AUDIO / "sync" / f"{script.stem}.json"
+    if v2.exists() and sync.exists():
+        if json.loads(sync.read_text(encoding="utf-8")).get("narration", {}).get("edition") == "v2":
+            return v2
+    return script
+
+
 def main():
     wanted = set(sys.argv[1:])
     known = tracks()
@@ -127,7 +137,7 @@ def main():
     for s in sorted((AUDIO / "scripts").glob("[01][0-9]-*.txt")):
         if wanted and s.name[:2] not in wanted:
             continue
-        (OUT / f"{s.stem}.md").write_text(transcript(s, known.get(s.stem)), encoding="utf-8")
+        (OUT / f"{s.stem}.md").write_text(transcript(spoken_text(s), known.get(s.stem)), encoding="utf-8")
         print(f"transcripts/{s.stem}.md")
 
 

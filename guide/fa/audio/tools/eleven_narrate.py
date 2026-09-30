@@ -504,6 +504,8 @@ def dry_run(m):
     r, total, requests_ = rate(m), 0, 0
     print(f"{'ch':>2}  {'requests':>8}  {'main':>7}  {'second':>7}  {'characters':>10}  {'credits':>8}")
     for n in chapters_to_do(argparse.Namespace(chapter=None)):
+        if not sorted(globals().get("SCRIPT_DIR", SCRIPTS).glob(f"{n:02d}-*.txt")):
+            continue  # edition v2: only the chapters that have a speech text yet
         _, segs, _ = plan_chapter(script(n))
         speech = [s for s in segs if s["type"] == "speech"]
         by = {role: sum(len(seg_text(s)) for s in speech if s["role"] == role) for role in ("main", "second")}
