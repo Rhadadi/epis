@@ -128,7 +128,7 @@ window.TRACKS = [
   "file": "03-logic-and-arguments.mp3",
   "text": "../03-logic-and-arguments.md",
   "title": "Chapter 3 — Logic and the Anatomy of Arguments",
-  "duration": 2954.3,
+  "duration": 3333.2,
   "sections": [
    {
     "title": "Chapter three. Logic and the Anatomy of Arguments.",
@@ -136,71 +136,71 @@ window.TRACKS = [
    },
    {
     "title": "What an argument is and is not",
-    "start": 101.7
+    "start": 109.0
    },
    {
     "title": "Standard form",
-    "start": 223.5
+    "start": 248.1
    },
    {
     "title": "Deduction, induction, and abduction",
-    "start": 327.2
+    "start": 360.6
    },
    {
     "title": "Validity and soundness",
-    "start": 560.3
+    "start": 619.3
    },
    {
     "title": "Strength and cogency",
-    "start": 747.5
+    "start": 823.3
    },
    {
     "title": "Propositional logic",
-    "start": 881.6
+    "start": 960.4
    },
    {
     "title": "Valid argument forms",
-    "start": 1263.2
+    "start": 1430.4
    },
    {
     "title": "Formal fallacies",
-    "start": 1439.3
+    "start": 1639.4
    },
    {
     "title": "Categorical logic and syllogisms",
-    "start": 1593.6
+    "start": 1806.9
    },
    {
     "title": "Predicate logic and quantifiers",
-    "start": 1725.8
+    "start": 1960.6
    },
    {
     "title": "Modal logic basics",
-    "start": 1842.1
+    "start": 2093.1
    },
    {
     "title": "Paradoxes as stress tests",
-    "start": 1947.3
+    "start": 2213.1
    },
    {
     "title": "Reconstructing real arguments",
-    "start": 2053.5
+    "start": 2332.1
    },
    {
     "title": "The Toulmin model",
-    "start": 2371.9
+    "start": 2684.2
    },
    {
     "title": "Dialectical moves",
-    "start": 2484.7
+    "start": 2813.7
    },
    {
     "title": "Quick review",
-    "start": 2610.3
+    "start": 2945.2
    },
    {
     "title": "End of chapter three",
-    "start": 2935.5
+    "start": 3313.1
    }
   ]
  },
