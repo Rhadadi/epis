@@ -1,0 +1,2676 @@
+{
+"file": "06-justification.mp3",
+"title": "Chapter 6 — Justification: The Structure of Good Reasons",
+"duration": 3467.546,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter six. Justification: The Structure of Good Reasons.",
+"begin": 2.116,
+"end": 7.076,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"I beseech you, in the bowels of Christ, think it possible you may be mistaken.\"",
+"begin": 8.333,
+"end": 14.493,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Oliver Cromwell, letter to the General Assembly of the Church of Scotland.",
+"begin": 15.073,
+"end": 19.793,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"We are like sailors who have to rebuild their ship on the open sea.\"",
+"begin": 20.663,
+"end": 25.463,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Otto Neurath.",
+"begin": 25.966,
+"end": 27.246,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Even if knowledge cannot be defined as justified true belief, justification is a central epistemic concept in its own right. In everyday life, we rarely know for certain whether a belief is true; what we can assess is whether it is reasonable, well-supported, warranted by the evidence. When you ask \"Is that a fair conclusion?\" or \"What grounds do you have for that?\", you are asking about justification.",
+"begin": 28.108,
+"end": 55.948,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This chapter covers the main theories: what justification is, how it can be lost, defeaters, how reasons can be structured without regress or circularity — foundationalism, coherentism, infinitism, and hybrids — whether justification depends only on what is \"inside\" the mind, internalism versus externalism, and what it means to say we can know despite the possibility of error — fallibilism.",
+"begin": 56.348,
+"end": 84.588,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A belief can be true by luck. What makes a belief reasonable is something else: justification. This chapter is about the structure of good reasons.",
+"begin": 85.264,
+"end": 95.584,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "We'll start with defeaters, the considerations that can undercut a reason you thought you had. Then comes an ancient puzzle. If every belief needs a reason, and every reason needs another reason, where does it stop? The main answers, foundationalism, coherentism, infinitism, and their hybrids, each paint a different picture of how our beliefs hang together.",
+"begin": 95.984,
+"end": 119.424,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "After that we'll look at the great debate between internalists and externalists, and we'll end with fallibilism: the idea that you can know things without being certain of them.",
+"begin": 119.984,
+"end": 130.464,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "What justification is",
+"begin": 131.736,
+"end": 133.416,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Justification is a normative property of beliefs: a justified belief is one it is epistemically appropriate, reasonable, or permissible to hold. Beyond that point of agreement, there are several conceptions. William Alston distinguished many of them, and later argued that philosophers have been talking about different \"epistemic desiderata\" under one name.",
+"begin": 134.504,
+"end": 157.384,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Deontological. A belief is justified when holding it violates no epistemic duty; the believer is blameless. Associated with: Descartes, Locke, Chisholm.",
+"begin": 158.024,
+"end": 170.344,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Evidentialist. A belief is justified when it fits the believer's evidence. Associated with: Conee and Feldman.",
+"begin": 171.064,
+"end": 179.064,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Reliabilist. A belief is justified when it was produced by a truth-conducive process. Associated with: Goldman.",
+"begin": 179.784,
+"end": 188.104,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Virtue-theoretic. A belief is justified when it manifests intellectual competence or virtue. Associated with: Sosa, Zagzebski.",
+"begin": 188.904,
+"end": 198.824,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Coherentist. A belief is justified when it coheres with the believer's system of beliefs. Associated with: BonJour, Lehrer.",
+"begin": 199.624,
+"end": 208.744,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Justification comes in degrees. One belief can be better justified than another, and a belief can be somewhat justified without being justified enough to count as knowledge.",
+"begin": 209.624,
+"end": 220.784,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Propositional and doxastic justification",
+"begin": 221.224,
+"end": 223.864,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Two things are called \"justification,\" and it is important to keep them apart.",
+"begin": 224.731,
+"end": 229.651,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Propositional justification, Goldman: ex ante justification, is having good reasons available for believing p, whether or not you actually believe p, or believe it for those reasons.",
+"begin": 229.851,
+"end": 242.331,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Doxastic justification, ex post justification, is a property of an actual belief: it is held on the basis of good reasons.",
+"begin": 242.571,
+"end": 251.611,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A detective has strong evidence that the butler committed the crime: fingerprints, motive, no alibi. She believes the butler did it. But she believes it because she dislikes butlers, not because of the evidence. She has propositional justification, the evidence supports her conclusion, but her belief lacks doxastic justification — it isn't based on the evidence.",
+"begin": 251.851,
+"end": 275.371,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What does it take for a belief to be based on a reason? This is the problem of the basing relation. The most natural answer is causal: the reason must cause, or sustain, the belief. Keith Lehrer's gypsy lawyer challenges this. A lawyer becomes convinced of his client's innocence through a fortune-teller's card reading. Later he examines the evidence and sees that it conclusively proves the client innocent, but his belief is still causally sustained by the cards; if the evidence fell apart, he would still believe. Lehrer argued that the lawyer's belief is justified by the evidence anyway, because he understands how the evidence supports it. Most philosophers disagree, but the case shows that the basing relation is subtle.",
+"begin": 275.851,
+"end": 321.291,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Here's the critical-thinking lesson.",
+"begin": 321.531,
+"end": 323.291,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It is not enough that good reasons exist for your conclusion. Ask whether they are the reasons you actually hold it for. If you would believe the same thing even if those reasons evaporated, your belief is not really based on them. That is a warning sign of motivated reasoning.",
+"begin": 323.944,
+"end": 341.864,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Prima facie and all-things-considered justification",
+"begin": 342.344,
+"end": 345.864,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A belief is prima facie justified, \"at first sight\", if it has some justification that could be overridden. It is ultima facie or all-things-considered justified if it remains justified after everything relevant is taken into account. Seeing that a wall looks red gives you prima facie justification to believe it is red. Learning that it is lit by red light may take that justification away. Justification that can be lost this way is defeasible.",
+"begin": 346.749,
+"end": 376.989,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Defeaters",
+"begin": 378.253,
+"end": 379.213,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A defeater is a consideration that reduces or removes the justification of a belief. John Pollock distinguished two main kinds, and the distinction is one of the most useful tools in this guide.",
+"begin": 380.291,
+"end": 393.211,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Rebutting defeaters are reasons to believe the conclusion is false.",
+"begin": 393.651,
+"end": 397.971,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "You believe the bird on the fence is a crow. An experienced birdwatcher standing beside you says, \"That's a raven: look at the wedge-shaped tail.\" Her testimony is a reason to think your belief is false.",
+"begin": 398.051,
+"end": 411.251,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Undercutting defeaters are reasons to think your grounds do not support the conclusion in this case, without being reasons to think the conclusion false.",
+"begin": 411.411,
+"end": 420.451,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Pollock's example: a widget on the assembly line looks red, so you believe it is red. Then you learn that the widgets are being illuminated by a red light, which makes widgets of any color look red. You now have no reason to think the widget is red. But you have no reason to think it isn't red either. Your grounds have been undercut.",
+"begin": 420.531,
+"end": 441.731,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Other kinds.",
+"begin": 441.851,
+"end": 443.051,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Higher-order defeaters: evidence that your reasoning is impaired. You learn that you've been given a drug that causes subtle reasoning errors, or you are a pilot at high altitude where hypoxia impairs judgment without your noticing. Should you lower your confidence in a calculation that seems perfectly sound? David Christensen and others argue yes.",
+"begin": 443.091,
+"end": 465.371,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Defeater defeaters: considerations that restore justification. You learn that the red light was switched off an hour ago, before the widget was inspected.",
+"begin": 465.411,
+"end": 475.491,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Normative defeaters: evidence you should have had or considered, even if you didn't. A doctor who fails to read the lab results that were on her desk cannot claim her diagnosis was justified simply because she didn't know about them.",
+"begin": 475.571,
+"end": 489.531,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Misleading defeaters: true propositions that would defeat your justification but point away from the truth. The Tom Grabit case in Chapter five.",
+"begin": 489.571,
+"end": 499.371,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "Using defeaters in discussion.",
+"begin": 499.411,
+"end": 501.651,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "When you criticize an argument, be clear about which kind of defeater you are offering. \"Your conclusion is false because…\" is a rebutting defeater and puts a burden on you to support it. \"Your evidence doesn't support your conclusion because…\" is an undercutting defeater, and it may be enough to show the argument fails without your having to prove the opposite. Many debates go wrong because a critic offers an undercutter and the other side hears a rebutter: \"So you think the vaccine is dangerous?\" \"No, I think this particular study doesn't show it's safe for this group.\"",
+"begin": 502.23,
+"end": 538.07,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "The regress problem",
+"begin": 539.324,
+"end": 540.604,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Suppose you believe that it will rain tomorrow. Why? Because the forecast says so. Why believe the forecast? Because forecasts from this service are usually accurate. Why believe that? Because you have checked them against the weather many times. Why trust your memory of those checks? … and so on.",
+"begin": 541.675,
+"end": 560.795,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "If every justified belief needs to be justified by another justified belief, then either.",
+"begin": 561.115,
+"end": 567.475,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. The chain ends in beliefs that are justified without being justified by other beliefs — foundationalism.",
+"begin": 567.755,
+"end": 575.035,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. The chain circles back, so that beliefs ultimately support each other — coherentism.",
+"begin": 575.595,
+"end": 582.075,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. The chain goes on forever without repeating — infinitism; or.",
+"begin": 582.395,
+"end": 588.355,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. The chain ends in beliefs that are not justified at all, in which case, it seems, nothing supported by them is justified either — skepticism.",
+"begin": 588.635,
+"end": 598.555,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Aristotle posed this problem in the Posterior Analytics and gave the first foundationalist answer. It has been the organizing problem of the theory of justification ever since.",
+"begin": 599.195,
+"end": 609.995,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Agrippa's trilemma",
+"begin": 611.265,
+"end": 612.625,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The ancient skeptic Agrippa — first century CE, known through Sextus Empiricus, Outlines of Pyrrhonism — formulated five modes for inducing suspension of judgment.",
+"begin": 613.721,
+"end": 625.001,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Disagreement: on any question, people disagree.",
+"begin": 625.641,
+"end": 629.961,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Infinite regress: any reason offered needs a further reason.",
+"begin": 630.601,
+"end": 635.401,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Relativity: things appear differently relative to different observers and circumstances.",
+"begin": 636.041,
+"end": 642.281,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Hypothesis — assumption: the dogmatist stops the regress by simply assuming something without argument.",
+"begin": 642.921,
+"end": 650.441,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Circularity — reciprocity: the reason offered for a claim depends on the claim itself.",
+"begin": 651.081,
+"end": 657.881,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Modes two, four, and five form a trilemma: every attempt to justify a belief ends in an infinite regress, an arbitrary assumption, or a circle. None seems satisfactory. The German philosopher Hans Albert called it the Münchhausen trilemma, after Baron Münchhausen, who claimed to have pulled himself and his horse out of a swamp by his own hair.",
+"begin": 658.441,
+"end": 682.041,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Stop at an assumption: that's foundationalism. The foundations are not arbitrary; they are justified non-inferentially — by experience or intuition.",
+"begin": 682.761,
+"end": 693.001,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Circle: that's coherentism. Justification is holistic, not linear; mutual support is not viciously circular.",
+"begin": 693.641,
+"end": 702.281,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Regress: that's infinitism. An infinite chain of available reasons is not vicious; it is what justification is.",
+"begin": 702.601,
+"end": 711.201,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Accept that nothing is justified: that's skepticism, or critical rationalism. We should suspend judgment, skepticism, or rationality does not require justification, only openness to criticism — critical rationalism.",
+"begin": 711.481,
+"end": 727.081,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Foundationalism",
+"begin": 728.346,
+"end": 729.466,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Foundationalism holds that justified beliefs come in two kinds.",
+"begin": 730.54,
+"end": 734.94,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Basic beliefs: justified non-inferentially, not on the basis of other beliefs. Their justification comes from experience, intuition, or their own nature.",
+"begin": 735.26,
+"end": 745.82,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Non-basic beliefs: justified by being properly inferred, ultimately, from basic beliefs.",
+"begin": 746.54,
+"end": 752.94,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The image is a building: the foundations bear the weight of the upper floors and do not rest on anything further. Descartes used exactly this image.",
+"begin": 753.42,
+"end": 762.98,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Classical foundationalism",
+"begin": 763.34,
+"end": 764.86,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Classical foundationalism — Descartes, and in various forms Locke, Russell, and C I Lewis — sets a high bar. Basic beliefs must be infallible, indubitable, or incorrigible. Typical candidates are.",
+"begin": 765.727,
+"end": 781.967,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Beliefs about one's current mental states: \"I seem to see something red,\" \"I am in pain.\"",
+"begin": 782.287,
+"end": 788.607,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Self-evident truths: \"two plus two equals four,\" \"Nothing can be both red and green all over.\"",
+"begin": 789.327,
+"end": 796.287,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Non-basic beliefs must follow from basic beliefs by deduction, or, in later versions, by strong inference.",
+"begin": 797.007,
+"end": 804.727,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Modest foundationalism",
+"begin": 805.167,
+"end": 806.607,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Most contemporary foundationalists are modest foundationalists — Robert Audi, James Pryor, Michael Huemer. They relax the requirements.",
+"begin": 807.471,
+"end": 817.031,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Basic beliefs need only be prima facie justified. They can be fallible and defeasible.",
+"begin": 817.311,
+"end": 823.071,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Ordinary perceptual beliefs can be basic. \"There's a cup on the table\" can be justified directly by your visual experience, without inference from \"I seem to see a cup.\"",
+"begin": 823.551,
+"end": 834.711,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Non-basic beliefs can be justified by inductive and abductive inference, not just deduction.",
+"begin": 835.071,
+"end": 841.071,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "James Pryor and others argue that some justification must be immediate, not based on other beliefs, and that perceptual experience provides it. This is the most widely held view of the structure of justification today.",
+"begin": 841.711,
+"end": 855.551,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Objections to foundationalism",
+"begin": 855.871,
+"end": 857.711,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "One. Self-referential incoherence — against classical foundationalism. Alvin Plantinga pointed out that the principle of classical foundationalism, \"A belief is justified only if it is self-evident, incorrigible, or evident to the senses, or inferred from such beliefs,\" is itself neither self-evident, incorrigible, nor evident to the senses, and cannot be inferred from such beliefs. So by its own standard, no one is justified in accepting it.",
+"begin": 858.593,
+"end": 889.793,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Two. Too little foundation — against classical foundationalism. If basic beliefs are only about one's own mental states, and inference must be deductive, then almost nothing about the external world can be justified. Classical foundationalism leads to skepticism.",
+"begin": 890.273,
+"end": 907.953,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Three. The Sellarsian dilemma. What justifies a basic belief? Presumably an experience. Now.",
+"begin": 908.913,
+"end": 916.913,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "If the experience has propositional content, it represents that something is so, then it is the kind of thing that can be correct or incorrect, and it needs justification itself. So it cannot be a foundation.",
+"begin": 917.393,
+"end": 930.393,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "If the experience has no propositional content, it is a raw sensation, then it cannot stand in logical relations to beliefs, so it cannot justify anything.",
+"begin": 930.753,
+"end": 940.953,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "This is Sellars's attack on the Myth of the Given. Modest foundationalists reply that experiences have propositional content but are not beliefs, so they are not the kind of state that needs justification, though they can be accurate or inaccurate. John McDowell argues that experience is already conceptual and can therefore justify.",
+"begin": 941.313,
+"end": 962.713,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Four. The arbitrariness objection — Laurence BonJour, The Structure of Empirical Knowledge, nineteen eighty-five. What makes a basic belief likely to be true? If there is a reason, then the belief is justified by that reason and is not basic. If there is no reason, the belief's justification is arbitrary.",
+"begin": 963.233,
+"end": 984.313,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Five. The speckled hen. You glance at a hen with forty-eight speckles. Your visual experience in some sense presents all forty-eight speckles. But you are not justified in believing \"the hen has forty-eight speckles,\" though you would be justified in believing \"the hen has three speckles\" if it had three. So what feature of experience justifies basic beliefs? Not merely what the experience presents.",
+"begin": 984.833,
+"end": 1011.073,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Coherentism",
+"begin": 1012.349,
+"end": 1013.389,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Coherentism denies that any beliefs are basic. A belief is justified by its coherence with the believer's whole system of beliefs. Support is mutual and holistic, not linear.",
+"begin": 1014.465,
+"end": 1027.825,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The image is Neurath's boat, or Quine's web of belief, in which beliefs support each other like the strands of a net.",
+"begin": 1027.905,
+"end": 1035.905,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What is coherence? More than mere consistency — no contradictions. Laurence BonJour — The Structure of Empirical Knowledge, nineteen eighty-five — lists.",
+"begin": 1036.385,
+"end": 1048.145,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Logical consistency.",
+"begin": 1048.465,
+"end": 1050.105,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Probabilistic consistency: not believing things that are jointly very improbable.",
+"begin": 1050.385,
+"end": 1055.505,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Inferential connections: beliefs entail or support one another.",
+"begin": 1056.065,
+"end": 1060.745,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Explanatory relations: beliefs explain one another. Coherence is increased when a system is unified by good explanations.",
+"begin": 1061.025,
+"end": 1070.145,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Few anomalies: few unexplained facts.",
+"begin": 1070.465,
+"end": 1073.825,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Keith Lehrer and Donald Davidson defended other forms. Davidson's slogan: \"nothing can count as a reason for holding a belief except another belief.\"",
+"begin": 1074.385,
+"end": 1084.425,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Why isn't this viciously circular? Coherentists answer that justification is not a linear relation passed along a chain. It is a holistic property of a whole system, which individual beliefs inherit by fitting into it. Think of a jigsaw puzzle: no single piece is the foundation, but when all the pieces fit together into a clear picture, you are confident that each is in the right place.",
+"begin": 1084.785,
+"end": 1110.385,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A classic argument for the power of coherence comes from C I Lewis — An Analysis of Knowledge and Valuation, nineteen forty-six. Several independent witnesses, each of limited reliability, give the same detailed account of an event. Even though no single witness is very trustworthy, the agreement of their stories is hard to explain unless the account is true. Courts rely on this reasoning every day. Note the essential condition: independence. If the witnesses conferred, or all read the same newspaper, their agreement is much weaker evidence.",
+"begin": 1110.945,
+"end": 1148.065,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Objections to coherentism",
+"begin": 1148.385,
+"end": 1150.065,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "One. The isolation, or input, objection. A system of beliefs could be perfectly coherent yet completely disconnected from reality. A detailed novel is coherent. So is a well-developed paranoid delusion, and so is an elaborate conspiracy theory. Coherence alone cannot guarantee contact with the world. BonJour's response was an observation requirement: a justified system must contain beliefs that attribute reliability to spontaneous, non-inferential observational beliefs, so that experience has a way to enter and disrupt the system. Critics replied that this concedes much to foundationalism. BonJour himself later became a foundationalist.",
+"begin": 1150.929,
+"end": 1196.169,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Two. The alternative systems objection. For any coherent system, there could be another, incompatible system that is equally coherent. Which one is justified? Coherence alone cannot say.",
+"begin": 1196.449,
+"end": 1209.249,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Three. The truth-connection problem. Why should coherence make a belief more likely to be true? Formal epistemologists have proved that, surprisingly, there is no measure of coherence that in general raises the probability of truth, other things being equal — Luc Bovens and Stephan Hartmann, Bayesian Epistemology, two thousand three; Erik Olsson, Against Coherence, two thousand five. Coherence among independent sources does raise probability, as in Lewis's witnesses. But coherence produced by a single source, or by the believer's own imagination, does not.",
+"begin": 1209.809,
+"end": 1247.209,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Here's the critical-thinking lesson.",
+"begin": 1247.489,
+"end": 1249.409,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Coherence is not enough. Conspiracy theories are often highly coherent: every fact is explained, every anomaly absorbed, every counter-argument anticipated. That coherence is part of their appeal. But coherence among beliefs that were built to fit together is weak evidence. Ask: do the parts of this story come from independent sources that could have disagreed? Does the story make risky predictions that could fail? Does it have input from observation that isn't already interpreted through the theory?",
+"begin": 1250.064,
+"end": 1283.584,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Infinitism",
+"begin": 1284.859,
+"end": 1285.819,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Infinitism, defended by Peter Klein, accepts the regress horn: a belief is justified when there is an infinite, non-repeating chain of reasons available to the believer.",
+"begin": 1286.896,
+"end": 1298.016,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Klein argues from two principles.",
+"begin": 1298.576,
+"end": 1300.736,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The Principle of Avoiding Circularity: no reason can appear earlier in its own chain of support.",
+"begin": 1301.216,
+"end": 1307.576,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The Principle of Avoiding Arbitrariness: every reason must itself have a further reason available. There are no stopping points where a reason is simply accepted.",
+"begin": 1307.856,
+"end": 1317.936,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Together these principles imply that the chain of reasons must be infinite.",
+"begin": 1318.416,
+"end": 1323.456,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objections and replies.",
+"begin": 1323.936,
+"end": 1325.616,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Finite minds. We cannot hold infinitely many beliefs. Klein's reply: the reasons need only be available, not consciously believed. You have a disposition to produce a further reason when challenged.",
+"begin": 1326.256,
+"end": 1339.936,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The no-source objection. If no link in the chain has justification independently, adding more links cannot generate it, just as an infinite chain of people borrowing money from the next person never produces any actual money. Klein's reply: justification is not transmitted from a source; it emerges and increases as the chain is extended. It is never complete.",
+"begin": 1340.656,
+"end": 1364.576,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Infinitism fits naturally with fallibilism. It implies that justification is always provisional and that inquiry never ends, since there is always a further reason to seek. Its critics regard this as an admission that nothing is ever fully justified.",
+"begin": 1365.056,
+"end": 1381.456,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Foundherentism",
+"begin": 1382.713,
+"end": 1383.833,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Susan Haack proposed a hybrid called foundherentism. It agrees with foundationalism that experience contributes to justification without itself needing justification from beliefs. It agrees with coherentism that beliefs support one another mutually, and that no class of beliefs is basic.",
+"begin": 1384.908,
+"end": 1404.348,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Her model is a crossword puzzle. The reasonableness of an entry depends on.",
+"begin": 1404.988,
+"end": 1410.108,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. How well it fits its clue — the analog of experiential evidence.",
+"begin": 1410.748,
+"end": 1415.708,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. How well it fits the intersecting entries — the analog of mutual support among beliefs.",
+"begin": 1416.268,
+"end": 1422.748,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. How reasonable those intersecting entries are, independently of the entry in question.",
+"begin": 1423.068,
+"end": 1429.268,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. How much of the puzzle has been completed — the comprehensiveness of the evidence.",
+"begin": 1429.628,
+"end": 1435.308,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A crossword entry can be well supported even though it relies on other entries that rely on it, without vicious circularity, because each entry is also anchored by its own clue. This is an attractive picture of how scientific and detective reasoning actually works.",
+"begin": 1435.708,
+"end": 1452.348,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Critical rationalism",
+"begin": 1453.531,
+"end": 1454.971,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The critical rationalists, Karl Popper, Hans Albert, and W W Bartley, took a different route. They argued that the whole search for justification, \"justificationism\", is a mistake, and that the Münchhausen trilemma shows it cannot succeed.",
+"begin": 1456.065,
+"end": 1473.145,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "On their view.",
+"begin": 1473.585,
+"end": 1474.705,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "We can never justify a belief in the sense of showing it to be true or probable.",
+"begin": 1475.025,
+"end": 1480.105,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "But we can criticize beliefs: test them, look for contradictions, try to refute them.",
+"begin": 1480.385,
+"end": 1486.385,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Rationality consists not in holding justified beliefs but in holding beliefs open to criticism and preferring those that have survived the most severe criticism so far.",
+"begin": 1487.105,
+"end": 1498.185,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Bartley developed pan-critical rationalism, or comprehensively critical rationalism, which holds everything open to criticism, including rationalism itself. He argued this avoids the charge that rationalism rests on an irrational commitment, a charge often used to claim that reason and faith are on equal footing.",
+"begin": 1498.625,
+"end": 1519.985,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Objection. When critical rationalists say it is rational to prefer the theory that has survived criticism best, critics reply that this sounds like justification under a different name. Alan Musgrave, a critical rationalist, accepts this: it is reasonable to believe the best-tested theory, even though its survival doesn't prove it true or even probable. The critical rationalist's lasting contribution is the insight that criticism, not proof, drives the growth of knowledge.",
+"begin": 1520.465,
+"end": 1551.985,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Comparing the structures",
+"begin": 1553.241,
+"end": 1554.681,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Are some beliefs basic? Foundationalism: Yes. Coherentism: No. Infinitism: No. Foundherentism: No, but experience is a non-belief input. Critical rationalism: No.",
+"begin": 1555.775,
+"end": 1572.375,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Shape of support. Foundationalism: Pyramid. Coherentism: Web. Infinitism: Endless chain. Foundherentism: Crossword. Critical rationalism: No positive support, only surviving criticism.",
+"begin": 1572.815,
+"end": 1589.335,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Answer to the regress. Foundationalism: It ends in basic beliefs. Coherentism: Justification is holistic. Infinitism: Endless regress is not vicious. Foundherentism: Experience anchors; beliefs interlock. Critical rationalism: Give up justification.",
+"begin": 1589.775,
+"end": 1610.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Main objection. Foundationalism: Sellarsian dilemma; arbitrariness. Coherentism: Isolation; alternative systems. Infinitism: Finite minds; no source. Foundherentism: Vagueness. Critical rationalism: It smuggles justification back.",
+"begin": 1611.215,
+"end": 1631.255,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Key figures. Foundationalism: Aristotle, Descartes, Audi, Pryor. Coherentism: Neurath, Quine, BonJour, Lehrer. Infinitism: Klein. Foundherentism: Haack. Critical rationalism: Popper, Albert, Bartley.",
+"begin": 1631.695,
+"end": 1650.335,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Internalism and externalism",
+"begin": 1651.513,
+"end": 1653.833,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A second great divide concerns what kind of thing can justify a belief.",
+"begin": 1654.909,
+"end": 1659.549,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Internalism holds that justification depends only on factors internal to the subject's perspective. Externalism holds that it can depend on factors external to that perspective, such as the actual reliability of the process that produced the belief, which the subject may know nothing about.",
+"begin": 1660.269,
+"end": 1678.669,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Jennifer Nagel opens the debate with a simple test. You know that Mount Everest is the tallest mountain in the world. How did you learn it? Unless something memorable happened at the time, you almost certainly can't say. Memory researchers call this source amnesia: we retain facts long after forgetting where they came from. If challenged, you might only be able to say that it feels familiar, and feelings of familiarity can mislead — many people \"know\" that Sydney is the capital of Australia; it is Canberra. Do you nonetheless know it?",
+"begin": 1679.149,
+"end": 1715.949,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The internalist says your knowledge depends on grounds available to you. Some internalists bite the bullet and say that most of us, strictly speaking, don't know such facts; we speak loosely, as when we call France \"hexagonal.\" Others say you do have accessible grounds: you know your memory is generally good, and that you have met the fact repeatedly in reliable-seeming places.",
+"begin": 1716.829,
+"end": 1741.029,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The externalist says that if the fact is true and your belief is connected to it in the right way, through a reliable chain of teachers and books, you know, whether or not you can reconstruct the connection.",
+"begin": 1741.469,
+"end": 1753.909,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The debate is a modern descendant of the contrast between Descartes' first-person and Locke's third-person approaches to knowledge.",
+"begin": 1754.349,
+"end": 1762.069,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Access internalism and mentalism",
+"begin": 1762.589,
+"end": 1765.069,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "There are two main forms of internalism.",
+"begin": 1765.956,
+"end": 1768.356,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Access internalism — Roderick Chisholm, Laurence BonJour in his internalist phase: what justifies a belief must be accessible to the subject by reflection alone. You should be able to tell, by thinking about it, whether and why your belief is justified.",
+"begin": 1768.916,
+"end": 1786.356,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Mentalism: justification supervenes on the subject's mental states. Any two people alike in all their mental states are alike in what they are justified in believing.",
+"begin": 1786.836,
+"end": 1797.796,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Motivations for internalism.",
+"begin": 1798.756,
+"end": 1800.596,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Responsibility. Justification seems connected to responsibility and blame, and you can only be responsible for what you have access to.",
+"begin": 1801.476,
+"end": 1810.836,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. The first-person perspective. From the inside, the question \"Should I believe this?\" can only be answered by consulting what is available to me.",
+"begin": 1811.796,
+"end": 1821.396,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. The new evil demon intuition.",
+"begin": 1822.356,
+"end": 1825.396,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The case for externalism",
+"begin": 1826.276,
+"end": 1827.796,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Motivations for externalism — Alvin Goldman, Fred Dretske, Alvin Plantinga, Ernest Sosa.",
+"begin": 1828.676,
+"end": 1835.956,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Animals and young children know things — the dog knows its owner is at the door — though they cannot reflect on their reasons.",
+"begin": 1836.836,
+"end": 1845.076,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. The regress of access. If you must be aware of your justifiers, and aware that they justify, you need justified beliefs about your justifiers, which need further justifiers, and so on.",
+"begin": 1845.956,
+"end": 1859.476,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. The truth connection. The point of justification is to make true belief more likely. But whether a process is truth-conducive is a fact about the world, not about your mental states. Internal factors alone cannot guarantee a connection to truth.",
+"begin": 1859.956,
+"end": 1876.516,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Ordinary knowledge is full of it. Most of us cannot explain why our memory or perception is reliable, but we know things by them.",
+"begin": 1877.476,
+"end": 1886.516,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Test cases for internalism and externalism",
+"begin": 1887.476,
+"end": 1890.436,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "These thought experiments are the main battleground.",
+"begin": 1891.318,
+"end": 1894.198,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Norman the clairvoyant. Norman has a completely reliable power of clairvoyance, but he has no evidence for or against the general possibility of clairvoyance, or that he himself has it. One day, he comes to believe, through his power, that the President is in New York City. The belief is true, and it was formed by a reliable process. Is Norman justified? BonJour says no: from Norman's own perspective, the belief came from nowhere, and it would be irresponsible for him to hold it. If so, reliability is not sufficient for justification.",
+"begin": 1895.078,
+"end": 1932.518,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Samantha the clairvoyant. BonJour's sharper case adds counter-evidence. Samantha believes she has a clairvoyant power to sense where the President is, though she has never tested it and has no reason to think clairvoyance is possible. One day she believes the President is in New York, despite reading in the newspaper and seeing live on television that he is in Washington. In fact, the news reports were staged for security reasons, the President is in New York, and her power, however it works, is genuinely reliable. Externalist theories seem to say she knows. But she is being plainly irrational: she is ignoring strong evidence against her belief. Externalists have replied in several ways: accept that she knows, and blame our contrary intuition on unfamiliarity with paranormal powers; argue that her overall method, which includes ignoring counter-evidence, is unreliable, since people who ignore evidence usually go wrong — though this brings back the generality problem; or add a no-defeater condition: reliability plus no accessible counter-evidence that it would be irrational to ignore. Internalists ask why, if accessible counter-evidence matters, accessible supporting evidence shouldn't matter too.",
+"begin": 1932.998,
+"end": 2013.078,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Truetemp — Keith Lehrer, Theory of Knowledge, nineteen ninety. A device secretly implanted in Mister Truetemp's head reliably causes him to form true beliefs about the temperature. He has no idea why he has these beliefs and never checks them. Is he justified in believing \"It is thirty-four degrees Celsius\"? Many say no, for the same reason as Norman.",
+"begin": 2014.118,
+"end": 2038.198,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The new evil demon problem. Imagine your exact mental duplicate in a world controlled by a Cartesian demon. Your duplicate has the same experiences, the same memories, and reasons in exactly the same way as you. But in the demon world, all your duplicate's perceptual beliefs are false, and the processes that produce them are completely unreliable. Is your duplicate less justified than you? Most people say no: your duplicate is doing everything right and is just unlucky. But reliabilism says the duplicate is unjustified. This is the strongest argument for internalism about justification.",
+"begin": 2039.158,
+"end": 2079.798,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Externalist responses.",
+"begin": 2080.678,
+"end": 2082.278,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Normal-worlds reliabilism: a process justifies if it is reliable in \"normal worlds,\" those consistent with our general beliefs about the actual world. Perception is reliable in normal worlds, so the demon-world duplicate is justified.",
+"begin": 2082.998,
+"end": 2098.758,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Distinguishing concepts: the duplicate is blameless, an internalist notion, but lacks warrant or knowledge — externalist notions. Perhaps both sides are right about different concepts.",
+"begin": 2099.558,
+"end": 2112.798,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Proper functionalism — Alvin Plantinga, Warrant and Proper Function, nineteen ninety-three: a belief has warrant if it is produced by cognitive faculties functioning properly in an appropriate environment, according to a design plan successfully aimed at truth. Norman's clairvoyance isn't part of any design plan, so his belief lacks warrant.",
+"begin": 2113.238,
+"end": 2136.438,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Hybrid views: William Alston held that the grounds of a justified belief must be accessible, but their adequacy, whether they are reliable indicators of truth, need not be. Sosa distinguishes animal knowledge, externalist, from reflective knowledge — involving an internalist perspective on one's own reliability.",
+"begin": 2136.918,
+"end": 2157.878,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Two further points from the debate.",
+"begin": 2158.918,
+"end": 2160.998,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The generality problem is everyone's problem. Internalists press the generality problem against reliabilism: which description of a belief-forming process determines its reliability? But, as Nagel notes, internalists need to distinguish having good evidence from believing because of it — the basing relation. A juror who has strong evidence of guilt but convicts out of racial prejudice believes the right thing for the wrong reason. To criticize the juror, internalists too must describe the process that actually produced the belief, at the right level of generality.",
+"begin": 2161.318,
+"end": 2199.078,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two ways of thinking. Psychologists distinguish fast, automatic cognition — recognizing a friend's face, recalling that seven times eleven equals seventy-seven — from slow, controlled reasoning in which we work through steps we can inspect. Accessible reasons are essential to the second kind of thinking, which is why internalist requirements feel compelling when we reflect carefully or must defend our views. Yet automatic cognition is also widely accepted as a source of knowledge. A possible compromise: first-person access to evidence matters because it is essential to the reliable functioning of reflective thought, not because it is a condition on all knowledge.",
+"begin": 2199.04,
+"end": 2243.52,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "The practical upshot.",
+"begin": 2244.4,
+"end": 2245.76,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "For evaluating your own beliefs, you must use internalist tools: you can only consult the reasons and evidence available to you. For evaluating sources — instruments, experts, institutions, methods — externalist questions are crucial: Is this source actually reliable? What is its track record? A method can feel convincing from the inside — astrology, a hunch, a charismatic guru — and be unreliable in fact.",
+"begin": 2246.426,
+"end": 2276.666,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Evidentialism",
+"begin": 2277.93,
+"end": 2278.97,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Evidentialism is the leading internalist theory. Earl Conee and Richard Feldman state it as.",
+"begin": 2280.046,
+"end": 2286.806,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "A doxastic attitude D toward proposition p is epistemically justified for S at time t if and only if having D toward p fits the evidence S has at t.",
+"begin": 2287.086,
+"end": 2300.726,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Key features.",
+"begin": 2301.246,
+"end": 2302.206,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Doxastic attitudes include belief, disbelief, and suspension of judgment — and, in some versions, degrees of belief. Evidentialism says which one is justified: believe if the evidence supports p, disbelieve if it supports not-p, suspend if it is balanced or insufficient.",
+"begin": 2302.766,
+"end": 2323.166,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Synchronic: justification depends on the evidence you have now, not how you got it.",
+"begin": 2324.046,
+"end": 2329.726,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Evidence you have, not evidence that exists somewhere.",
+"begin": 2330.206,
+"end": 2333.646,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Open questions for evidentialists.",
+"begin": 2334.606,
+"end": 2337.046,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What is evidence? Experiences? Beliefs? Known facts — E equals K? Conee and Feldman say mental states.",
+"begin": 2337.326,
+"end": 2346.526,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What is \"fit\"? Probabilistic support? Explanatory relations? Kevin McCain develops an explanationist answer: evidence supports p when p is part of the best explanation of the evidence available.",
+"begin": 2347.166,
+"end": 2360.926,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Evidence you should have had. Suppose you avoid reading the report that you know contains bad news about your investment. Your belief that the investment is fine fits your evidence, because you've carefully kept your evidence limited. Are you justified? Hilary Kornblith and others argue that justification also depends on responsible inquiry. Evidentialists reply that this is a failure of epistemic responsibility, which is distinct from justification. Either way, willful ignorance is an epistemic failing.",
+"begin": 2361.806,
+"end": 2393.966,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Evidentialism is close to Hume's maxim that \"a wise man proportions his belief to the evidence\" and to Clifford's principle. It is the view most critical-thinking courses implicitly assume.",
+"begin": 2394.846,
+"end": 2407.166,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Reliabilism about justification",
+"begin": 2408.359,
+"end": 2410.759,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Process reliabilism is the leading externalist theory of justification.",
+"begin": 2411.833,
+"end": 2416.673,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "A belief is justified if and only if it is produced by a reliable belief-forming process, one that produces a high proportion of true beliefs.",
+"begin": 2416.953,
+"end": 2427.113,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "For inferential beliefs, Goldman adds that the process must be conditionally reliable — it tends to produce true outputs when given true inputs, as deduction does — and that the inputs must themselves be justified.",
+"begin": 2427.433,
+"end": 2441.553,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Goldman's examples of unreliable processes: \"confused reasoning, wishful thinking, reliance on emotional attachment, mere hunch or guesswork, and hasty generalization.\" Reliable ones: \"standard perceptual processes, remembering, good reasoning, and introspection.\"",
+"begin": 2441.833,
+"end": 2461.873,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Reliabilism faces the objections described above — the generality problem, Norman, Truetemp, the new evil demon. In later work, Goldman developed versions to meet them.",
+"begin": 2462.153,
+"end": 2474.433,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Reliabilism has one great virtue for critical thinking: it tells us to evaluate methods, not just individual beliefs. The key question becomes: how reliable is the process that produced this belief? A belief formed by a reliable method can be trusted even if you can't personally reconstruct the reasoning. A belief formed by an unreliable method should be doubted even when it feels compelling.",
+"begin": 2474.713,
+"end": 2500.633,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Phenomenal conservatism",
+"begin": 2501.904,
+"end": 2503.664,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Michael Huemer proposed a simple and influential principle.",
+"begin": 2504.751,
+"end": 2508.511,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "Phenomenal conservatism.",
+"begin": 2509.151,
+"end": 2510.991,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "If it seems to S that p, then, in the absence of defeaters, S thereby has at least some degree of justification for believing that p.",
+"begin": 2511.647,
+"end": 2521.087,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "\"Seemings\" include perceptual seemings, it looks as if there is a cat, memory seemings, intellectual seemings — it seems that two plus two equals four, or that torturing for fun is wrong — and introspective seemings.",
+"begin": 2521.807,
+"end": 2537.327,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Huemer offers a self-defeat argument: all our beliefs, including the belief that phenomenal conservatism is false, ultimately rest on how things seem to us. So anyone who rejects the principle undermines their own grounds for rejecting it.",
+"begin": 2537.967,
+"end": 2553.567,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Related views: James Pryor's dogmatism, which says that perceptual experience gives immediate prima facie justification without needing any prior justification to think perception is reliable, and Richard Swinburne's principle of credulity, which applies the same idea to religious experience.",
+"begin": 2554.287,
+"end": 2573.087,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Objections.",
+"begin": 2573.727,
+"end": 2574.807,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Cognitive penetration. Susanna Siegel imagines Jack, who fears Jill is angry at him. When he sees her, her face looks angry to him, because his fear has shaped his perception. Does the seeming justify his belief? Intuitively, no; it is contaminated by his prior fear. If seemings can be shaped by bias, prejudice, and wishful thinking, phenomenal conservatism seems to give unearned justification to biased perception.",
+"begin": 2575.087,
+"end": 2604.767,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Too permissive. To a committed conspiracy theorist, it seems that the evidence points to a cover-up. Does the conspiracy theorist thereby have justification? Huemer answers that the justification is only prima facie and is easily defeated by counter-evidence. Critics reply that such people often don't recognize defeaters.",
+"begin": 2605.487,
+"end": 2626.767,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A related, older idea is epistemic conservatism: you are justified in continuing to believe what you already believe, unless you have a positive reason to change. It explains why we don't need to re-justify every belief constantly, but it risks entrenching whatever we happen to believe first.",
+"begin": 2627.087,
+"end": 2646.287,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "The problem of the criterion",
+"begin": 2647.562,
+"end": 2649.322,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Roderick Chisholm — The Problem of the Criterion, nineteen seventy-three — drawing on Sextus Empiricus and Montaigne, posed a basic puzzle about how epistemology can even begin. There are two questions.",
+"begin": 2650.41,
+"end": 2664.09,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A: What do we know? What is the extent of our knowledge?",
+"begin": 2664.57,
+"end": 2668.57,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "B: How are we to decide whether we know? What are the criteria of knowledge?",
+"begin": 2669.13,
+"end": 2674.33,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "It seems we can't answer A without first answering — B: to sort knowledge from non-knowledge, we need a criterion. And we can't answer B without first answering — A: to test a criterion, we need clear cases of knowledge to check it against. There are three responses.",
+"begin": 2674.81,
+"end": 2692.01,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Skepticism: we can answer neither, so we know nothing.",
+"begin": 2692.57,
+"end": 2696.97,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Methodism: start with B, a criterion, and use it to determine what we know. Descartes, clear and distinct perception, and Locke, empiricism, were methodists. The risk: a bad criterion rules out obvious knowledge. Hume's empiricist criterion seemed to rule out knowledge of causation and the external world.",
+"begin": 2697.53,
+"end": 2719.81,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Particularism: start with A, clear particular cases of knowledge, \"I know I have hands\", and derive criteria from them. Reid, Moore, and Chisholm were particularists. The risk: we may start with cases that aren't knowledge at all.",
+"begin": 2720.09,
+"end": 2737.13,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Chisholm defended particularism, admitting that he could not refute the skeptic but only choose differently. In practice, most philosophers use a reflective equilibrium between cases and criteria, adjusting each in light of the other.",
+"begin": 2737.37,
+"end": 2751.61,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This puzzle has the same shape as the problem of evaluating sources in everyday life: to know which experts are reliable, you need to know what's true; to know what's true, you rely on experts.",
+"begin": 2752.17,
+"end": 2764.09,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Deontology and doxastic voluntarism",
+"begin": 2765.349,
+"end": 2768.229,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The deontological conception of justification treats it in terms of duties and permissions: a belief is justified when holding it is epistemically permissible, when the believer violates no epistemic duty and is blameless. This conception is natural. We say things like \"You shouldn't believe everything you read,\" and we blame people for credulity.",
+"begin": 2769.319,
+"end": 2792.279,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "But it faces a problem. \"Ought\" implies \"can.\" If we have duties about what to believe, then we must be able to control what we believe. Do we?",
+"begin": 2792.399,
+"end": 2803.199,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Direct doxastic voluntarism, the view that we can believe at will, seems false. Try to believe, right now, that you are on the moon, or that two plus two equals five. You can say the words, but you cannot make yourself believe them. Bernard Williams argued that it is not merely a contingent fact that we can't believe at will: belief aims at truth, and if you knew you had acquired a belief by an act of will, regardless of the truth, you could not regard it as a belief about how things are.",
+"begin": 2803.639,
+"end": 2836.079,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "William Alston concluded that since we lack voluntary control over our beliefs, the deontological conception must be abandoned.",
+"begin": 2836.119,
+"end": 2844.599,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Replies.",
+"begin": 2844.679,
+"end": 2845.839,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Indirect control. We can't choose beliefs directly, but we control what evidence we gather, what we pay attention to, which sources we consult, how long we deliberate, and what intellectual habits we cultivate. Pascal advised the unbeliever who wanted faith to \"take holy water, have Masses said,\" and so on. Our duties may be duties of inquiry, not directly of belief.",
+"begin": 2845.879,
+"end": 2872.039,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Compatibilist control: beliefs are \"free\" in the sense that matters if they are responsive to reasons, as actions are free in the compatibilist sense when they respond to reasons.",
+"begin": 2872.119,
+"end": 2883.599,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Answerability: we are responsible for beliefs not because we choose them but because they reflect our own judgment about what is true. We can properly be asked for our reasons, and criticized when they are bad, as with emotions like resentment.",
+"begin": 2883.639,
+"end": 2899.239,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "The practical upshot.",
+"begin": 2899.319,
+"end": 2900.919,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "You cannot decide to believe something. But you are responsible for your habits of inquiry: whether you seek out counter-evidence, whether you consult reliable sources, whether you check claims before sharing them. Epistemic responsibility is mostly about these indirect choices.",
+"begin": 2901.577,
+"end": 2919.417,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Fallibilism",
+"begin": 2920.673,
+"end": 2921.553,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Fallibilism is the view that we can have knowledge, or justified belief, even though our grounds do not guarantee the truth of what we believe. We can know p even though, given our evidence, it is possible that p is false. The term was coined by Charles Sanders Peirce, who wrote that \"people cannot attain absolute certainty concerning questions of fact.\"",
+"begin": 2922.632,
+"end": 2946.952,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Fallibilism is the dominant view in contemporary epistemology, and it is essential to critical thinking. Almost all our knowledge, including scientific knowledge, is fallible. Evidence makes conclusions probable, not certain.",
+"begin": 2947.072,
+"end": 2961.432,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Fallibilism must be distinguished from positions it is often confused with.",
+"begin": 2962.392,
+"end": 2967.032,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Fallibilism: We can know p even though we might be wrong.",
+"begin": 2967.512,
+"end": 2972.032,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Infallibilism: Knowledge requires grounds that make error impossible.",
+"begin": 2972.472,
+"end": 2977.032,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Skepticism: Since we might be wrong, we don't know — infallibilism plus our grounds are fallible.",
+"begin": 2977.912,
+"end": 2985.072,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Relativism: There is no objective truth to be wrong about.",
+"begin": 2985.512,
+"end": 2989.792,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Dogmatism — everyday sense: Refusing to consider that we might be wrong.",
+"begin": 2990.232,
+"end": 2995.832,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Fallibilism is not the view that we should doubt everything, or that all views are equally good, or that confidence is always inappropriate. A fallibilist can be highly confident that the Earth orbits the Sun, and right to be. The point is that confidence should be proportioned to evidence, and even well-established beliefs remain open in principle to revision.",
+"begin": 2996.312,
+"end": 3017.632,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A puzzle for fallibilists. David Lewis noted that fallibilism sounds odd when said aloud: \"If you are a contented fallibilist, I implore you to be honest, be naive, hear it afresh. 'He knows, yet he has not eliminated all possibilities of error.' Even if you've numbed your ears, doesn't this overt, explicit fallibilism still sound wrong?\" Statements of the form \"I know that p, but I might be wrong\" are called concessive knowledge attributions. Philosophers debate whether their oddness is merely conversational — it's misleading to draw attention to a remote possibility — or whether it reveals something about knowledge itself. Lewis's answer was contextualism.",
+"begin": 3018.152,
+"end": 3064.272,
+"voice": "second"
+},
+{
+"kind": "cue",
+"text": "The practical core of fallibilism.",
+"begin": 3064.792,
+"end": 3067.192,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Cromwell's plea, \"think it possible you may be mistaken,\" is sometimes called Cromwell's rule in statistics: never assign a probability of exactly zero or one to an empirical proposition, because then no evidence could ever change your mind. A fallibilist holds beliefs firmly enough to act on them and loosely enough to revise them. In a discussion, the fallibilist question is: What evidence would change my mind? If the answer is \"nothing,\" the belief is being held as a dogma, not as a conclusion.",
+"begin": 3067.847,
+"end": 3102.007,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Quick review",
+"begin": 3105.358,
+"end": 3106.158,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Now it's your turn. Here are some questions to check your understanding. After each one I'll leave a few seconds of quiet so you can think. If you want longer, pause the recording and try answering out loud, or in writing, before you hear mine.",
+"begin": 3107.239,
+"end": 3122.279,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. Distinguish propositional from doxastic justification with an example of your own.",
+"begin": 3123.148,
+"end": 3129.868,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Propositional: you have good reasons available for p. Doxastic: your actual belief in p is based on good reasons. Example: a juror has heard strong DNA evidence of guilt but votes guilty because the defendant \"looks shifty.\" She has propositional justification for the verdict, but her belief is not doxastically justified.",
+"begin": 3134.955,
+"end": 3159.915,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. Classify each as a rebutting or undercutting defeater. You believe your friend is at home because her car is in the driveway. A: You learn she lent her car to her brother this week. B: You get a text from her saying she's at the airport.",
+"begin": 3160.79,
+"end": 3178.23,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. A: Undercutting: it removes the support the car gave, without showing she is not at home. B: Rebutting: it is direct evidence that she is not at home.",
+"begin": 3183.308,
+"end": 3196.668,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. State Agrippa's trilemma and the theory that embraces each horn.",
+"begin": 3197.544,
+"end": 3203.304,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Every justification ends in an infinite regress, a circle, or an unjustified assumption. Infinitism embraces the regress; coherentism embraces a, holistic, circle; foundationalism stops at \"assumptions,\" which it argues are non-arbitrary basic beliefs. Skepticism and critical rationalism take the trilemma to show that positive justification is unavailable.",
+"begin": 3208.385,
+"end": 3236.145,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. What is the Sellarsian dilemma, and how do modest foundationalists reply?",
+"begin": 3237.016,
+"end": 3243.496,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. Experience either has propositional content, and so needs justification itself, or lacks it — and so cannot logically support beliefs. Either way it cannot be a foundation. Modest foundationalists reply that experiences have propositional content but are not beliefs; they can be accurate or inaccurate, but they are not the kind of state that needs justification. They can confer justification without requiring it.",
+"begin": 3248.588,
+"end": 3278.988,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. Why is the coherence of a conspiracy theory weak evidence of its truth?",
+"begin": 3279.856,
+"end": 3286.096,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Because coherence increases the probability of truth only when the cohering pieces come from independent sources. Conspiracy theories are typically built to fit: facts are selected and interpreted through the theory, anomalies are absorbed by adding auxiliary claims, and counter-evidence is reinterpreted as part of the cover-up. That kind of coherence can be manufactured for almost any story. Formal results in Bayesian epistemology confirm that coherence alone is not truth-conducive.",
+"begin": 3291.167,
+"end": 3325.247,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. What is the new evil demon problem, and which theory does it target?",
+"begin": 3326.119,
+"end": 3332.359,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Your mental duplicate in a demon world has the same experiences and reasons in the same way, but all their perceptual beliefs are false and produced by unreliable processes. Intuitively, the duplicate is as justified as you are. This targets reliabilism, which implies that the duplicate is unjustified, and supports internalism.",
+"begin": 3337.43,
+"end": 3361.27,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. Can you be blamed for a belief if you cannot choose what to believe?",
+"begin": 3362.142,
+"end": 3367.662,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Arguably yes. You control your inquiry: what evidence you seek, what you attend to, which sources you trust. On a compatibilist view, beliefs are free when they respond to reasons. On Hieronymi's view, you are answerable for your beliefs because they express your own judgment, just as you are answerable for your resentment or admiration.",
+"begin": 3372.748,
+"end": 3397.868,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. Is \"I know that vaccines don't cause autism, but I could be wrong\" coherent?",
+"begin": 3398.74,
+"end": 3405.94,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. On a fallibilist view, yes. Knowledge does not require the impossibility of error, and the evidence against a vaccine-autism link is very strong — large studies involving millions of children, and the original nineteen ninety-eight paper was retracted after it was found to be fraudulent. But the sentence sounds odd, and some philosophers, Lewis, take the oddness seriously. A more natural way to express the same fallibilist stance: \"The evidence is overwhelming, and I'd need extraordinary new evidence to change my mind.\"",
+"begin": 3410.939,
+"end": 3447.019,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter six",
+"begin": 3450.384,
+"end": 3451.904,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter six. We've looked at how reasons fit together. In chapter seven we'll look at where they come from: perception, memory, introspection, reason, and testimony.",
+"begin": 3452.996,
+"end": 3466.036,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 7.105,
+"lines": [
+0,
+1
+],
+"request_id": "bh3P4tsdiZzErkwF8XhO"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 8.333,
+"end": 14.524,
+"lines": [
+1,
+2
+],
+"request_id": "0mZbY7vR6gXzGCzFkhO4"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 15.073,
+"end": 19.827,
+"lines": [
+2,
+3
+],
+"request_id": "rZu1zuODSR55SQfxMv4H"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 20.663,
+"end": 25.417,
+"lines": [
+3,
+4
+],
+"request_id": "cMuo1QimdTflQfSGyV62"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 25.966,
+"end": 27.272,
+"lines": [
+4,
+5
+],
+"request_id": "DMlUdQygVulh9njZeKOS"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 28.108,
+"end": 84.637,
+"lines": [
+5,
+7
+],
+"request_id": "SxkLZSfq9jDOaD9uFkGf"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 85.264,
+"end": 130.508,
+"lines": [
+7,
+10
+],
+"request_id": "AGq0RvmPcDNLWc2QPGrt"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 131.736,
+"end": 133.46,
+"lines": [
+10,
+11
+],
+"request_id": "t0EY6IhSPwSHIS6oq4bS"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 134.504,
+"end": 223.896,
+"lines": [
+11,
+19
+],
+"request_id": "jWktcwqkqENtylfMJqff"
+},
+{
+"chunk": 10,
+"voice": "main",
+"begin": 224.731,
+"end": 323.318,
+"lines": [
+19,
+25
+],
+"request_id": "Y00ztPO69KP8BqzIvnfo"
+},
+{
+"chunk": 11,
+"voice": "main",
+"begin": 323.944,
+"end": 345.913,
+"lines": [
+25,
+27
+],
+"request_id": "yKTM9PJ7y76spAOOgTeG"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 346.749,
+"end": 377.025,
+"lines": [
+27,
+28
+],
+"request_id": "BTJA2TQ6h1VkUf7UDPAU"
+},
+{
+"chunk": 13,
+"voice": "second",
+"begin": 378.253,
+"end": 379.246,
+"lines": [
+28,
+29
+],
+"request_id": "6fzLe5iTH6XgywE1t4nO"
+},
+{
+"chunk": 14,
+"voice": "second",
+"begin": 380.291,
+"end": 501.603,
+"lines": [
+29,
+40
+],
+"request_id": "dkyDXXKt7cTOz9K5ZfUc"
+},
+{
+"chunk": 15,
+"voice": "second",
+"begin": 502.23,
+"end": 538.096,
+"lines": [
+40,
+41
+],
+"request_id": "ylF0YOuz4Sfgi9YWUfZq"
+},
+{
+"chunk": 16,
+"voice": "main",
+"begin": 539.324,
+"end": 540.63,
+"lines": [
+41,
+42
+],
+"request_id": "8XfAbQIYylljNMZTScQN"
+},
+{
+"chunk": 17,
+"voice": "main",
+"begin": 541.675,
+"end": 610.038,
+"lines": [
+42,
+49
+],
+"request_id": "niVZrzK1acd2XMbesLPE"
+},
+{
+"chunk": 18,
+"voice": "main",
+"begin": 611.265,
+"end": 612.676,
+"lines": [
+49,
+50
+],
+"request_id": "xJyJ1ihPEn8rbQpadtt2"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 613.721,
+"end": 727.118,
+"lines": [
+50,
+61
+],
+"request_id": "UlW7MY90qQqM2zh2FApT"
+},
+{
+"chunk": 20,
+"voice": "second",
+"begin": 728.346,
+"end": 729.496,
+"lines": [
+61,
+62
+],
+"request_id": "6ViUTc7wtrFVAvy0B8wy"
+},
+{
+"chunk": 21,
+"voice": "second",
+"begin": 730.54,
+"end": 764.891,
+"lines": [
+62,
+67
+],
+"request_id": "WACkFsUucrSYYNR4M6wl"
+},
+{
+"chunk": 22,
+"voice": "second",
+"begin": 765.727,
+"end": 806.635,
+"lines": [
+67,
+72
+],
+"request_id": "CiQub3dmPZ7bMMHx9w6Q"
+},
+{
+"chunk": 23,
+"voice": "second",
+"begin": 807.471,
+"end": 857.757,
+"lines": [
+72,
+78
+],
+"request_id": "ZXCOESN6hB1U02RXoIhe"
+},
+{
+"chunk": 24,
+"voice": "second",
+"begin": 858.593,
+"end": 1011.122,
+"lines": [
+78,
+86
+],
+"request_id": "IuOsKHNZWLUXaeRKeYlw"
+},
+{
+"chunk": 25,
+"voice": "main",
+"begin": 1012.349,
+"end": 1013.42,
+"lines": [
+86,
+87
+],
+"request_id": "IxQR3CiwcD0JgeKM8jhq"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 1014.465,
+"end": 1150.093,
+"lines": [
+87,
+99
+],
+"request_id": "Oa4E61vboQ9Y4RU0JTyB"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1150.929,
+"end": 1249.437,
+"lines": [
+99,
+103
+],
+"request_id": "CWRv7oKIzafGQyx6epwD"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1250.064,
+"end": 1283.631,
+"lines": [
+103,
+104
+],
+"request_id": "DTJYw03zIbFmUph5X8VV"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1284.859,
+"end": 1285.851,
+"lines": [
+104,
+105
+],
+"request_id": "ECNsQwrUAZyjgH31OHXK"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1286.896,
+"end": 1381.486,
+"lines": [
+105,
+114
+],
+"request_id": "TYJICTDSugKNvjBz4IXp"
+},
+{
+"chunk": 31,
+"voice": "second",
+"begin": 1382.713,
+"end": 1383.863,
+"lines": [
+114,
+115
+],
+"request_id": "V9GGV9qBYHJHr2E9Hx9q"
+},
+{
+"chunk": 32,
+"voice": "second",
+"begin": 1384.908,
+"end": 1452.304,
+"lines": [
+115,
+122
+],
+"request_id": "0zh4zFBJxGIS1MgeIJIt"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1453.531,
+"end": 1455.02,
+"lines": [
+122,
+123
+],
+"request_id": "g3MqxYuPUQ7bbDdABH2n"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 1456.065,
+"end": 1552.013,
+"lines": [
+123,
+130
+],
+"request_id": "xDI2mxmht0akpP9FOi7i"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 1553.241,
+"end": 1554.73,
+"lines": [
+130,
+131
+],
+"request_id": "2y9niwDh6KrG7KdXyhiI"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1555.775,
+"end": 1650.286,
+"lines": [
+131,
+136
+],
+"request_id": "kL2XOdTwf0irg1Ayq59m"
+},
+{
+"chunk": 37,
+"voice": "second",
+"begin": 1651.513,
+"end": 1653.864,
+"lines": [
+136,
+137
+],
+"request_id": "81IoS3fKzEzq6L07hImh"
+},
+{
+"chunk": 38,
+"voice": "second",
+"begin": 1654.909,
+"end": 1765.12,
+"lines": [
+137,
+144
+],
+"request_id": "8lDwFQL27UW3T99hZbll"
+},
+{
+"chunk": 39,
+"voice": "second",
+"begin": 1765.956,
+"end": 1827.84,
+"lines": [
+144,
+152
+],
+"request_id": "2cUW3uvT44jurzPxWy3p"
+},
+{
+"chunk": 40,
+"voice": "second",
+"begin": 1828.676,
+"end": 1890.482,
+"lines": [
+152,
+158
+],
+"request_id": "9nth61DJVhevaMqiDtjx"
+},
+{
+"chunk": 41,
+"voice": "second",
+"begin": 1891.318,
+"end": 2199.04,
+"lines": [
+158,
+170
+],
+"request_id": "XoOnnbr0UrwLrjGDKRAB"
+},
+{
+"chunk": 42,
+"voice": "second",
+"begin": 2199.04,
+"end": 2245.799,
+"lines": [
+170,
+172
+],
+"request_id": "u6qbi46S8P2s8oq3oY6J"
+},
+{
+"chunk": 43,
+"voice": "second",
+"begin": 2246.426,
+"end": 2276.702,
+"lines": [
+172,
+173
+],
+"request_id": "zDnHLJa7iuHDZXNbwgvZ"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2277.93,
+"end": 2279.001,
+"lines": [
+173,
+174
+],
+"request_id": "QfnLsousAXYT9lBiZEPG"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2280.046,
+"end": 2407.131,
+"lines": [
+174,
+185
+],
+"request_id": "nu88doTs4Bl1gGDqthrc"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 2408.359,
+"end": 2410.789,
+"lines": [
+185,
+186
+],
+"request_id": "MWf8G3qgv6QpbbdVX7CE"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 2411.833,
+"end": 2500.676,
+"lines": [
+186,
+192
+],
+"request_id": "qphNfzRVYjIBsRPGkPOU"
+},
+{
+"chunk": 48,
+"voice": "second",
+"begin": 2501.904,
+"end": 2503.706,
+"lines": [
+192,
+193
+],
+"request_id": "fTj7Ij0BFU4yvZ4zjpbw"
+},
+{
+"chunk": 49,
+"voice": "second",
+"begin": 2504.751,
+"end": 2511.02,
+"lines": [
+193,
+195
+],
+"request_id": "ByHKactJqRZxyKmVV4Yj"
+},
+{
+"chunk": 50,
+"voice": "second",
+"begin": 2511.647,
+"end": 2646.335,
+"lines": [
+195,
+203
+],
+"request_id": "7C5pRehMds0VwPZWaCcZ"
+},
+{
+"chunk": 51,
+"voice": "main",
+"begin": 2647.562,
+"end": 2649.365,
+"lines": [
+203,
+204
+],
+"request_id": "qC7YX6eWkioJaShbpiZR"
+},
+{
+"chunk": 52,
+"voice": "main",
+"begin": 2650.41,
+"end": 2764.121,
+"lines": [
+204,
+213
+],
+"request_id": "xWg2S1dczMNEeVGA2ooe"
+},
+{
+"chunk": 53,
+"voice": "main",
+"begin": 2765.349,
+"end": 2768.274,
+"lines": [
+213,
+214
+],
+"request_id": "yb0kh1WrbDzvruWaNnS8"
+},
+{
+"chunk": 54,
+"voice": "main",
+"begin": 2769.319,
+"end": 2900.95,
+"lines": [
+214,
+223
+],
+"request_id": "QnoEU4GLt6DxVMu2sQGm"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 2901.577,
+"end": 2919.445,
+"lines": [
+223,
+224
+],
+"request_id": "xNBCzFXCP6CgnldRd1Iu"
+},
+{
+"chunk": 56,
+"voice": "second",
+"begin": 2920.673,
+"end": 2921.587,
+"lines": [
+224,
+225
+],
+"request_id": "EQYetiqKWOEV0V56jOd1"
+},
+{
+"chunk": 57,
+"voice": "second",
+"begin": 2922.632,
+"end": 3067.22,
+"lines": [
+225,
+236
+],
+"request_id": "rjMY4qkG3UAMS5rpg7Rd"
+},
+{
+"chunk": 58,
+"voice": "second",
+"begin": 3067.847,
+"end": 3102.041,
+"lines": [
+236,
+237
+],
+"request_id": "9vPz9lSeiELgM5bPqfLZ"
+},
+{
+"chunk": 59,
+"voice": "main",
+"begin": 3105.358,
+"end": 3106.194,
+"lines": [
+237,
+238
+],
+"request_id": "B7wCSeTEOZOIgHx2XhNT"
+},
+{
+"chunk": 60,
+"voice": "main",
+"begin": 3107.239,
+"end": 3122.312,
+"lines": [
+238,
+239
+],
+"request_id": "Vxa9jcTxG53DKUqiWGdw"
+},
+{
+"chunk": 61,
+"voice": "second",
+"begin": 3123.148,
+"end": 3129.913,
+"lines": [
+239,
+240
+],
+"request_id": "sJaKWLvQusj8ULDq6o9f"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 3134.955,
+"end": 3159.954,
+"lines": [
+240,
+241
+],
+"request_id": "aDY7aeK9H6eGj3sfkMcb"
+},
+{
+"chunk": 63,
+"voice": "second",
+"begin": 3160.79,
+"end": 3178.266,
+"lines": [
+241,
+242
+],
+"request_id": "C05VTZIg18NXSsgtRpML"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3183.308,
+"end": 3196.709,
+"lines": [
+242,
+243
+],
+"request_id": "izqGjlmkbcBExirVkYBd"
+},
+{
+"chunk": 65,
+"voice": "second",
+"begin": 3197.544,
+"end": 3203.344,
+"lines": [
+243,
+244
+],
+"request_id": "quJAlRuTIh3RIAv9quBt"
+},
+{
+"chunk": 66,
+"voice": "main",
+"begin": 3208.385,
+"end": 3236.18,
+"lines": [
+244,
+245
+],
+"request_id": "7JIh4iBBsc79mW7S4ZfN"
+},
+{
+"chunk": 67,
+"voice": "second",
+"begin": 3237.016,
+"end": 3243.546,
+"lines": [
+245,
+246
+],
+"request_id": "U6pkr3Gb97tgelMWsiq2"
+},
+{
+"chunk": 68,
+"voice": "main",
+"begin": 3248.588,
+"end": 3279.02,
+"lines": [
+246,
+247
+],
+"request_id": "AZ4yHDw1jc3tiauOxr7n"
+},
+{
+"chunk": 69,
+"voice": "second",
+"begin": 3279.856,
+"end": 3286.126,
+"lines": [
+247,
+248
+],
+"request_id": "foJxGJbeiZxOUeJRs8Ng"
+},
+{
+"chunk": 70,
+"voice": "main",
+"begin": 3291.167,
+"end": 3325.283,
+"lines": [
+248,
+249
+],
+"request_id": "lMo4VoHbETuLWRkLujIH"
+},
+{
+"chunk": 71,
+"voice": "second",
+"begin": 3326.119,
+"end": 3332.389,
+"lines": [
+249,
+250
+],
+"request_id": "TVoIUmhcKIDZmS05ginw"
+},
+{
+"chunk": 72,
+"voice": "main",
+"begin": 3337.43,
+"end": 3361.306,
+"lines": [
+250,
+251
+],
+"request_id": "LRDhfxaWulfXIbwh6lAl"
+},
+{
+"chunk": 73,
+"voice": "second",
+"begin": 3362.142,
+"end": 3367.706,
+"lines": [
+251,
+252
+],
+"request_id": "GyTxVM1wJfcHg6g6Ikma"
+},
+{
+"chunk": 74,
+"voice": "main",
+"begin": 3372.748,
+"end": 3397.904,
+"lines": [
+252,
+253
+],
+"request_id": "xih0x8GcruC0QfiRB9uz"
+},
+{
+"chunk": 75,
+"voice": "second",
+"begin": 3398.74,
+"end": 3405.897,
+"lines": [
+253,
+254
+],
+"request_id": "HqIuXPJfvm5a8wMTPMGh"
+},
+{
+"chunk": 76,
+"voice": "main",
+"begin": 3410.939,
+"end": 3447.066,
+"lines": [
+254,
+255
+],
+"request_id": "F04TaQuDE0iAawG908uV"
+},
+{
+"chunk": 77,
+"voice": "main",
+"begin": 3450.384,
+"end": 3451.951,
+"lines": [
+255,
+256
+],
+"request_id": "NT0VlkcZaWVpfnjyLN04"
+},
+{
+"chunk": 78,
+"voice": "main",
+"begin": 3452.996,
+"end": 3466.005,
+"lines": [
+256,
+257
+],
+"request_id": "tzMWInuEA2sl0iGvOC9i"
+}
+]
+}

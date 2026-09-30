@@ -364,7 +364,7 @@ window.TRACKS = [
   "file": "06-justification.mp3",
   "text": "../06-justification.md",
   "title": "Chapter 6 — Justification: The Structure of Good Reasons",
-  "duration": 3246.1,
+  "duration": 3467.6,
   "sections": [
    {
     "title": "Chapter six. Justification: The Structure of Good Reasons.",
@@ -372,79 +372,79 @@ window.TRACKS = [
    },
    {
     "title": "What justification is",
-    "start": 119.8
+    "start": 131.7
    },
    {
     "title": "Defeaters",
-    "start": 353.7
+    "start": 378.2
    },
    {
     "title": "The regress problem",
-    "start": 514.4
+    "start": 539.3
    },
    {
     "title": "Agrippa's trilemma",
-    "start": 583.2
+    "start": 611.2
    },
    {
     "title": "Foundationalism",
-    "start": 691.2
+    "start": 728.3
    },
    {
     "title": "Coherentism",
-    "start": 956.2
+    "start": 1012.3
    },
    {
     "title": "Infinitism",
-    "start": 1212.0
+    "start": 1284.8
    },
    {
     "title": "Foundherentism",
-    "start": 1306.9
+    "start": 1382.7
    },
    {
     "title": "Critical rationalism",
-    "start": 1376.0
+    "start": 1453.5
    },
    {
     "title": "Comparing the structures",
-    "start": 1469.5
+    "start": 1553.2
    },
    {
     "title": "Internalism and externalism",
-    "start": 1555.3
+    "start": 1651.5
    },
    {
     "title": "Evidentialism",
-    "start": 2132.2
+    "start": 2277.9
    },
    {
     "title": "Reliabilism about justification",
-    "start": 2253.7
+    "start": 2408.3
    },
    {
     "title": "Phenomenal conservatism",
-    "start": 2345.1
+    "start": 2501.9
    },
    {
     "title": "The problem of the criterion",
-    "start": 2486.7
+    "start": 2647.5
    },
    {
     "title": "Deontology and doxastic voluntarism",
-    "start": 2598.3
+    "start": 2765.3
    },
    {
     "title": "Fallibilism",
-    "start": 2743.8
+    "start": 2920.6
    },
    {
     "title": "Quick review",
-    "start": 2910.8
+    "start": 3103.1
    },
    {
     "title": "End of chapter six",
-    "start": 3228.4
+    "start": 3448.1
    }
   ]
  },
