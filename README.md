@@ -4,33 +4,33 @@ A complete, illustrated guide to epistemology and critical thinking: sixteen
 chapters with a glossary and reading list, a bilingual (English and Persian)
 map of 135 concepts, and a narrated audio edition.
 
-Live site: [rhadadi.github.io/epis](https://rhadadi.github.io/epis/) (GitHub Pages)
+Live site: [epis.duckdns.org](https://epis.duckdns.org/) (GitHub Pages with a custom domain; rhadadi.github.io/epis redirects there)
 and [epis.duckdns.org](https://epis.duckdns.org) (self-hosted).
 
 ## The site
 
 | Page | Where | What it is |
 | --- | --- | --- |
-| Start | [`/`](https://rhadadi.github.io/epis/) | The starting page: what the guide covers and where to begin. |
-| فارسی | [`/fa/`](https://rhadadi.github.io/epis/fa/) | The Persian edition of the whole site, right to left: the guide, concepts, notebook, review, study companion and account pages, with the same paths under `/fa/`. The **فا** / **EN** button in the header switches between the two editions on any page. The narration stays in English. |
-| The guide | [`/guide/`](https://rhadadi.github.io/epis/guide/) | The contents, then one web page per chapter, each headed by a painting or photograph chosen for its topic. Every chapter has a contents sidebar, and the sixteen main chapters have a built-in audio player that can jump to any section. |
-| Concepts | [`/concepts/`](https://rhadadi.github.io/epis/concepts/) | One readable page per concept, in English or Persian: the idea, examples, objections, common mistakes and self-check questions, linked to the chapter that covers it. |
-| Map | [`/map/`](https://rhadadi.github.io/epis/map/) | The interactive concept map with its floating, expandable nodes. Selecting a concept opens its page. `/map/#<id>` opens the map at that concept. |
-| Listen | [`/guide/audio/`](https://rhadadi.github.io/epis/guide/audio/) | The audio edition: 16 chapters, about 14½ hours, with chapter and section navigation. |
-| Credits | [`/credits.html`](https://rhadadi.github.io/epis/credits.html) | The artwork, with sources and licences, plus the voice and fonts. |
+| Start | [`/`](https://epis.duckdns.org/) | The starting page: what the guide covers and where to begin. |
+| فارسی | [`/fa/`](https://epis.duckdns.org/fa/) | The Persian edition of the whole site, right to left: the guide, concepts, notebook, review, study companion and account pages, with the same paths under `/fa/`. The **فا** / **EN** button in the header switches between the two editions on any page. The narration stays in English. |
+| The guide | [`/guide/`](https://epis.duckdns.org/guide/) | The contents, then one web page per chapter, each headed by a painting or photograph chosen for its topic. Every chapter has a contents sidebar, and the sixteen main chapters have a built-in audio player that can jump to any section. |
+| Concepts | [`/concepts/`](https://epis.duckdns.org/concepts/) | One readable page per concept, in English or Persian: the idea, examples, objections, common mistakes and self-check questions, linked to the chapter that covers it. |
+| Map | [`/map/`](https://epis.duckdns.org/map/) | The interactive concept map with its floating, expandable nodes. Selecting a concept opens its page. `/map/#<id>` opens the map at that concept. |
+| Listen | [`/guide/audio/`](https://epis.duckdns.org/guide/audio/) | The audio edition: 16 chapters, about 14½ hours, with chapter and section navigation. |
+| Credits | [`/credits.html`](https://epis.duckdns.org/credits.html) | The artwork, with sources and licences, plus the voice and fonts. |
 
 Other features:
 
 - Reading settings (text size, spacing, line length, typeface, light, sepia, dark and black themes)
   and a distraction-free focus mode (press F on a chapter)
 - Remembers where you stopped reading, and can save the whole guide for offline reading
-- Highlights and notes: select any passage to highlight it or write a note; the [Notebook](https://rhadadi.github.io/epis/notes/)
+- Highlights and notes: select any passage to highlight it or write a note; the [Notebook](https://epis.duckdns.org/notes/)
   collects them, with search and export to Markdown or a backup file
 - An [EPUB edition](guide/mastering-epistemology.epub) for e-readers
 - Key terms in the chapters show their definition on hover; search (press /) covers chapters, glossary and concepts
-- Self-check questions you can mark "Got it" or "Not yet", with a [review page](https://rhadadi.github.io/epis/review/)
+- Self-check questions you can mark "Got it" or "Not yet", with a [review page](https://epis.duckdns.org/review/)
   that brings them back on a spaced schedule
-- **My study** ([/account/](https://rhadadi.github.io/epis/account/)): sign in with Google to sync progress, notes,
+- **My study** ([/account/](https://epis.duckdns.org/account/)): sign in with Google to sync progress, notes,
   the review deck, settings and AI keys through a private app folder in your own Google Drive (no server)
 - A study companion on every chapter and concept page: chat about the page, or select text and press
   **Explain**. With your own Claude or ChatGPT key it answers on the page; without one it prepares the

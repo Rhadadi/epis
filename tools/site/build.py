@@ -49,7 +49,7 @@ SITE = "Mastering Epistemology"
 SITE_FA = "تسلط بر معرفت‌شناسی"
 EPUB_NAME = "mastering-epistemology.epub"
 EPUB_NAME_FA = "mastering-epistemology-fa.epub"
-LIVE = "https://rhadadi.github.io/epis/"
+LIVE = "https://epis.duckdns.org/"  # GitHub Pages, custom domain (CNAME)
 REPO = "https://github.com/Rhadadi/epis"
 
 PARTS = [
