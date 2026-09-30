@@ -64,7 +64,7 @@ window.TRACKS = [
   "file": "02-history-of-epistemology.mp3",
   "text": "../02-history-of-epistemology.md",
   "title": "Chapter 2 — A History of the Theory of Knowledge",
-  "duration": 4251.5,
+  "duration": 4646.9,
   "sections": [
    {
     "title": "Chapter two. A History of the Theory of Knowledge.",
@@ -72,55 +72,55 @@ window.TRACKS = [
    },
    {
     "title": "Ancient Greece",
-    "start": 118.3
+    "start": 124.9
    },
    {
     "title": "Epistemology in India",
-    "start": 884.7
+    "start": 956.4
    },
    {
     "title": "Epistemology in the Islamic world",
-    "start": 1145.8
+    "start": 1244.9
    },
    {
     "title": "Epistemology in China",
-    "start": 1331.8
+    "start": 1441.4
    },
    {
     "title": "Medieval and Renaissance Europe",
-    "start": 1443.5
+    "start": 1571.1
    },
    {
     "title": "The early modern revolution",
-    "start": 1605.9
+    "start": 1743.8
    },
    {
     "title": "The nineteenth century",
-    "start": 2610.2
+    "start": 2851.4
    },
    {
     "title": "The twentieth century",
-    "start": 2913.6
+    "start": 3178.5
    },
    {
     "title": "Contemporary directions",
-    "start": 3489.3
+    "start": 3806.7
    },
    {
     "title": "Timeline",
-    "start": 3595.9
+    "start": 3915.3
    },
    {
     "title": "Recurring patterns in the history",
-    "start": 3847.6
+    "start": 4199.6
    },
    {
     "title": "Quick review",
-    "start": 3938.6
+    "start": 4302.7
    },
    {
     "title": "End of chapter two",
-    "start": 4231.3
+    "start": 4625.4
    }
   ]
  },
