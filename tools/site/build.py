@@ -2156,6 +2156,9 @@ p{margin:0 0 .8em}
 .title-page .kind{color:#555}
 .colophon h2{font-size:1.2em;margin-top:1.4em}
 .colophon p,.colophon li{font-size:.95em}
+.player{margin:.6em 0 1.6em;padding:.6em .8em;border:1px solid #d8c9b5;border-radius:10px;text-align:center}
+.player p{margin:0 0 .4em;font-size:.9em;color:#555}
+.player audio{width:100%}
 .cover{text-align:center;margin:0;padding:0}
 .cover img{max-width:100%;max-height:100vh}
 pre.license{white-space:pre-wrap;text-align:left;font-size:.8em;font-family:serif}
@@ -2187,10 +2190,17 @@ def build_readalong(ch, sync, art, stamp):
     titlepage = doc("title", SITE_FA, '<section class="title-page" epub:type="titlepage">'
                     f'<p class="book">{x(SITE_FA)}</p><p class="sub">راهنمای کاملِ معرفت، شواهد و تفکرِ نقادانه</p>'
                     f'<p class="chapter">{x(title)}</p><p class="kind">کتابِ صوتی همراه با متن</p></section>')
-    chapter = doc("chapter", title, f'<section epub:type="chapter" role="doc-chapter">{body}</section>', "bodymatter")
-    how = ("این فایل متن و روایتِ فصل را با هم دارد. در برنامه‌هایی که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را "
-           "پشتیبانی می‌کنند، مانندِ Apple Books و Thorium Reader، دکمهٔ پخش را بزنید: روایت شروع می‌شود و جمله‌ای که خوانده می‌شود "
-           "رنگی می‌شود. در برنامه‌های دیگر، متن مثلِ هر کتابِ الکترونیکی خوانده می‌شود.")
+    # a plain player at the start: every reader that plays audio shows it (Apple Books plays read-along only in
+    # fixed-layout books, so there this is the way to listen); where Media Overlays work, the text follows the voice
+    player = (f'<aside class="player" epub:type="sidebar" aria-label="روایتِ صوتیِ این فصل"><p>روایتِ صوتیِ این فصل · {x(minutes_label(sync["duration"]))}</p>'
+              f'<audio controls="controls" preload="metadata" src="audio/{x(audio)}"><p>این برنامه صدا را پخش نمی‌کند؛ '
+              f'فایلِ صوتی در همین کتاب است.</p></audio></aside>')
+    chapter = doc("chapter", title, f'<section epub:type="chapter" role="doc-chapter">{player}{body}</section>', "bodymatter")
+    how = ("این فایل متن و روایتِ فصل را با هم دارد. در آغازِ فصل پخش‌کننده‌ای هست که در هر برنامه‌ای که صدا پخش می‌کند، "
+           "از جمله Apple Books، روایت را پخش می‌کند. در برنامه‌هایی که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را در "
+           "کتاب‌های معمولی پشتیبانی می‌کنند، مانندِ Thorium Reader، دکمهٔ پخشِ خودِ برنامه را بزنید: روایت شروع می‌شود و جمله‌ای که "
+           "خوانده می‌شود رنگی می‌شود. (Apple Books این همراهی را فقط در کتاب‌های با صفحه‌آراییِ ثابت نشان می‌دهد.) "
+           "در برنامه‌های بی‌صدا، متن مثلِ هر کتابِ الکترونیکی خوانده می‌شود.")
     colophon = doc("colophon", "دربارهٔ این کتاب", '<section class="colophon" epub:type="colophon">'
                    '<h1>دربارهٔ این کتاب</h1>'
                    f'<p>{x(title)}، از «{x(SITE_FA)}»{("؛ " + x(blurb)) if blurb else ""}</p>'
@@ -2298,7 +2308,7 @@ def build_readalong(ch, sync, art, stamp):
         f'<a class="btn" href="../{ch.href}">{icon("book")} {L("Chapter text", "متنِ فصل")}</a></div>'
         f'<p class="note" data-epub-note hidden></p></div>'
         f'<article class="ra-text" lang="fa" dir="rtl">{readalong_lines(sync, times=True)}</article>'
-        f'<p class="ra-foot">{L("The EPUB holds this text and the narration together, with the same highlighting, for offline reading in apps that support EPUB 3 read-aloud (Media Overlays), such as Apple Books or Thorium Reader.", "فایلِ EPUB همین متن و روایت را با همین رنگی‌شدنِ خط‌ها در خود دارد، برای خواندن و شنیدنِ بی‌اینترنت در برنامه‌هایی که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را پشتیبانی می‌کنند، مانند Apple Books یا Thorium Reader.")}</p>'
+        f'<p class="ra-foot">{L("The EPUB holds this text and the narration together, for reading and listening offline. A player at the start of the chapter plays the narration in any e-reader, Apple Books included; the lines are highlighted as they are read in apps that support EPUB 3 read-aloud (Media Overlays) in ordinary books, such as Thorium Reader. Apple Books highlights along only in fixed-layout books.", "فایلِ EPUB همین متن و روایت را با هم دارد، برای خواندن و شنیدنِ بی‌اینترنت. پخش‌کننده‌ای در آغازِ فصل روایت را در هر کتاب‌خوانی، از جمله Apple Books، پخش می‌کند؛ رنگی‌شدنِ خط‌ها همراهِ خواندن در برنامه‌هایی کار می‌کند که «خواندنِ همراه با صدا»ی EPUB 3 (Media Overlays) را در کتاب‌های معمولی پشتیبانی می‌کنند، مانند Thorium Reader. Apple Books این همراهی را فقط در کتاب‌های با صفحه‌آراییِ ثابت نشان می‌دهد.")}</p>'
         '</main>')
     page(f"guide/listen/{ch.slug}.html", other_rel=f"guide/{ch.href}", root=root, title=L(f"Read along: {title}", f"خواندن همراه با صدا: {title}"),
          desc=L("The chapter's text, highlighted as the narration reads it.", "متنِ فصل، همراه با روایت، خط‌به‌خط."),

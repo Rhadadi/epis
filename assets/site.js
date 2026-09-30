@@ -262,9 +262,11 @@
     var date = ((now.getFullYear() - 1980) << 9) | ((now.getMonth() + 1) << 5) | now.getDate();
     files.forEach(function (f) {
       var name = enc.encode(f.name), size = f.blob.size, h = new DataView(new ArrayBuffer(30)), c = new DataView(new ArrayBuffer(46));
-      [[0, 0x04034b50, 4], [4, 20, 2], [6, 0x0800, 2], [8, 0, 2], [10, time, 2], [12, date, 2], [14, f.crc, 4], [18, size, 4], [22, size, 4],
+      // the UTF-8 flag only for names that need it: plain ASCII names (every name in an EPUB) carry no flags at all
+      var utf8 = /[^\x00-\x7f]/.test(f.name) ? 0x0800 : 0;
+      [[0, 0x04034b50, 4], [4, 20, 2], [6, utf8, 2], [8, 0, 2], [10, time, 2], [12, date, 2], [14, f.crc, 4], [18, size, 4], [22, size, 4],
        [26, name.length, 2], [28, 0, 2]].forEach(function (x) { if (x[2] === 4) h.setUint32(x[0], x[1], true); else h.setUint16(x[0], x[1], true); });
-      [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [8, 0x0800, 2], [10, 0, 2], [12, time, 2], [14, date, 2], [16, f.crc, 4], [20, size, 4],
+      [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [8, utf8, 2], [10, 0, 2], [12, time, 2], [14, date, 2], [16, f.crc, 4], [20, size, 4],
        [24, size, 4], [28, name.length, 2], [30, 0, 2], [32, 0, 2], [34, 0, 2], [36, 0, 2], [38, 0, 4], [42, offset, 4]]
         .forEach(function (x) { if (x[2] === 4) c.setUint32(x[0], x[1], true); else c.setUint16(x[0], x[1], true); });
       parts.push(h.buffer, name, f.blob);
