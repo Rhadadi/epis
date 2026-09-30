@@ -1596,6 +1596,14 @@ def fa_voices_credit():
     if eleven:
         out += (f'روایتِ فارسیِ {fa_chapters_phrase(eleven)} را دو صدای ساختگیِ <a href="https://elevenlabs.io">ElevenLabs</a> '
                 'خوانده‌اند: صدای مردانه راویِ اصلی است و صدای زنانه بخش‌ها را به نوبت با او می‌خواند. ')
+        sync = {n: json.loads((GUIDE / "fa" / "audio" / "sync" / (FA_TRACKS[n]["file"][:-4] + ".json")).read_text(encoding="utf-8"))
+                for n in eleven}
+        v2 = [n for n in eleven if sync[n].get("narration", {}).get("edition") == "v2"]
+        if v2:
+            out += (f'متنِ {fa_chapters_phrase(v2)} پیش از روایت برای گوش بازنویسی شده است: جمله‌های کوتاه‌تر و مکث‌های واقعی، '
+                    'با همان عنوان‌ها، نقل‌قول‌ها و اصطلاح‌ها. ')
+        if all(sync[n].get("heading_pauses") for n in eleven):
+            out += 'پس از هر عنوان مکثی در صدا گذاشته شده است، تا عنوان به جملهٔ بعد نچسبد. '
     if gooya:
         out += ((f"روایتِ فارسیِ {fa_chapters_phrase(gooya)} را " if eleven else "نسخهٔ صوتیِ فارسی را ") + FA_GOOYA_CREDIT)
     return out
