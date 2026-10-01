@@ -1,0 +1,429 @@
+{
+  "chapter": "08-skepticism",
+  "section": "healthy-and-corrosive-skepticism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How can doubt discriminate evidential failures without automatically certifying an alternative?"
+  ],
+  "sources": [
+    {
+      "key": "comesana-klein2026",
+      "used_for": [
+        "Give the doubt a target",
+        "Doubt does not certify the alternative",
+        "A philosophical possibility is not particular evidence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Philosophically interesting forms of skepticism claim that we do not know propositions which we ordinarily think we do know.",
+          "corpus_chunk": 29392
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They do not know it because they are not justified in believing it, and knowledge requires justification.[2] Of course, they are not justified in disbelieving that proposition either.",
+          "corpus_chunk": 29393
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Suspension of judgment is thus a bona fide doxastic attitude alongside belief and disbelief, and is not to be equated with the failure to adopt any doxastic attitude.[3] Because it is a genuine doxastic attitude, suspension of judgment (just like belief and disbelief, and unlike the failure to form any doxastic",
+          "corpus_chunk": 29394
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Many philosophers also recognize fine-grained attitudes.",
+          "corpus_chunk": 29394
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "We will examine the bearing of the sensitivity condition on skeptical arguments assuming that it applies to justification.",
+          "corpus_chunk": 29396
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Philosophical skepticism, then, differs from ordinary skepticism at least regarding the field of propositions to which it is claimed to apply.",
+          "corpus_chunk": 29397
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "CP2 claims that we are not justified in denying the skeptical hypothesis—in other words, that we are not justified in believing that we are not being deceived.",
+          "corpus_chunk": 29428
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "We have just seen (while examining Nozick’s account of knowledge) that this requirement is arguably too strong.",
+          "corpus_chunk": 29428
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "But even more importantly, were that a requirement of knowledge (or justification), then we have seen that closure would fail and, consequently, the basis for the first premise in the CP-style argument for Cartesian Skepticism would be forfeited.[12] Ernest Sosa has argued for three interrelated theses regarding CP2",
+          "corpus_chunk": 29430
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "A subjunctive conditional \\(A \\rightarrow B\\) is true if and only if B is true in the closest (or all the closest) possible worlds where A is true.",
+          "corpus_chunk": 29431
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The match might have failed to lit because it was wet while either of us struck it.",
+          "corpus_chunk": 29431
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "This means that Sosa cannot accept the possible worlds semantics for subjunctive conditionals briefly sketched above, at least if we assume that every world is closer to itself than any other word.",
+          "corpus_chunk": 29433
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Sosa’s idea, then, is that we can explain away the temptation to think that CP2 is true by noticing that although safety and sensitivity are easily confused with one another, my belief that I am not the victim of a skeptical scenario is insensitive but safe, and that whereas sensitivity is not a condition on",
+          "corpus_chunk": 29434
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Unbeknownst to me, Andy doesn’t want Michael to go to the party, so he also tells Judy that if she sees Michael she should tell him the same thing she tells everybody else (that the party is at the house down the left road), but she should immediately phone Andy so that the party can be moved to Adam’s house, which is",
+          "corpus_chunk": 29435
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "So far, we have argued that there are dangers in defending CP2 by appealing to the sensitivity condition, and that Sosa’s attack on CP2 might itself be subject to doubt.",
+          "corpus_chunk": 29436
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Let us take a closer look at the first step, the claim that there is an epistemic symmetry between the good case and the skeptical scenario.",
+          "corpus_chunk": 29437
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In the good case, for instance, we know mundane propositions such as the proposition that we have hands.",
+          "corpus_chunk": 29438
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Given CP, in the good case we are justified in believing that we are not in the skeptical case.",
+          "corpus_chunk": 29438
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "For even granting (as we must) that in the skeptical scenario we do not know that we are not in the skeptical scenario, it doesn’t follow that in the ordinary case we do not know that we are not in the skeptical scenario, not even assuming that we have the same evidence in both cases.",
+          "corpus_chunk": 29440
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Now, the skeptic can then reply that not all skeptical scenarios are such that external worlds propositions are false in them.",
+          "corpus_chunk": 29441
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Therefore, it can be held that there is an asymmetry between the good case and the skeptical scenario even if we grant that we have the same evidence in both cases.",
+          "corpus_chunk": 29442
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "We noted then that there is at least another possibility: it might be that we must be antecedently justified in believing q in order to be justified in believing some p which entails it.",
+          "corpus_chunk": 29443
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "On one version of this view, put forward by Crispin Wright 2004, our entitlement to accept that we are not in a skeptical scenario does not depend on our having any kind of evidence, either empirical or a priori (see also Coliva 2015 for a development of a view in this neighborhood).",
+          "corpus_chunk": 29444
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Roughly, what we are calling justification Wright calls “warrant”.",
+          "corpus_chunk": 29444
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "On another version of the view, although we do not have empirical evidence for the proposition that we are not in a skeptical scenario, we do have a kind of justification for it which does not rest exclusively on the fact that if we didn’t then we wouldn’t be justified in believing anything.",
+          "corpus_chunk": 29446
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Now, we can use that rule “online”, when we do in fact have an experience with the content that there is something red in front of us, or “offline”, assuming for the sake of argument that we have an experience with the content that there is something red in front of us to see what follows from it.",
+          "corpus_chunk": 29447
+        }
+      ],
+      "annotation": "Separates the scope of skeptical attitudes, closure, transmission, error requirements, evidential symmetry, and contextualist replies."
+    },
+    {
+      "key": "morison2026",
+      "used_for": [
+        "Revisability concerns the route to a conclusion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "When you investigate whether P, there are three possibilities: (i) you discover something (you find that the reasons for believing one of P and not-P outweigh any reasons for believing the other), or (ii) you deny that it is possible to discover whether P, or (iii) you find that so far, the reasons for believing that",
+          "corpus_chunk": 33067
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "If Pyrrhonian Skeptics are still investigating any matter you like, there is no distinctive set of beliefs which mark them out as a school.",
+          "corpus_chunk": 33067
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Sextus’ answer is that it is an ability or skill (I 8), not a set of beliefs.",
+          "corpus_chunk": 33068
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "How does it come about that someone acquires the skeptical skill?",
+          "corpus_chunk": 33074
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So begins the quest for finding the answer and ridding oneself of the irksome ‘trouble’ that such questions induce.",
+          "corpus_chunk": 33075
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In other words, Sextus is primarily offering ‘a narrative history of the experiences of those who became the first to practice the skeptic philosophy’ (288), rather than an account of how anyone at any time might find themselves becoming a skeptic.",
+          "corpus_chunk": 33076
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "But rather than this making them even more troubled, they discovered—to their surprise—that in fact tranquillity followed after all!",
+          "corpus_chunk": 33077
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "More succinctly, Sextus says that tranquillity follows suspension of judgment ‘as a shadow follows a body’ (I 29; for the same image, cf.",
+          "corpus_chunk": 33077
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "But then how can Sextus, consistently with this, claim that the goal of the Skeptic is tranquillity?",
+          "corpus_chunk": 33079
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "That thought is missing because of course the Skeptic does not have any beliefs about what is good or bad, and indeed Sextus himself touts Pyrrhonism as having the advantage over other philosophies, and over the belief systems of ordinary people, that Pyrrhonists shed the additional opinion that each of these things",
+          "corpus_chunk": 33080
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "It can’t promise you freedom from your back pain or an irrational fear of death.",
+          "corpus_chunk": 33080
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In the taxonomy of Svavarsson 2024, some commentators opt for the view that Pyrrhonian investigations are unlike normal ones, because they are not undertaken for the sake of discovering the truth (Palmer 2000); others that the Skeptics do investigate in the ordinary sense, because investigation should be understood",
+          "corpus_chunk": 33082
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A Skeptic must become a global skeptic, and not just a local one.",
+          "corpus_chunk": 33083
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "And quite apart from the apparent unavailability of this particular belief to the Skeptic, there is also the general worry that Skeptics have no beliefs whatsoever (thus precluding them from believing that no enquiry will ever produce an answer).",
+          "corpus_chunk": 33084
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Since Skeptics spend their time taking the dogmatists to task for settling on their beliefs too quickly and not persevering in their enquiries, it is a natural question to wonder whether the Skeptics themselves have any beliefs—if so, they seem open to the very charges they level at the dogmatists.",
+          "corpus_chunk": 33085
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Presumably, the Skeptic is doing the second thing, not the first.",
+          "corpus_chunk": 33085
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "This was a common charge levelled against the Skeptics by their opponents in antiquity (see Vogt 1998: 2010).",
+          "corpus_chunk": 33086
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "The question of how to interpret this little paragraph, and thus settle the question of whether the Skeptic has any beliefs, is the question that much contemporary scholarship concerning Sextus has focussed on (see for instance the papers collected in Burnyeat and Frede 1997; with Fine 2000; Barnes 2007; Perin 2010b),",
+          "corpus_chunk": 33088
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "In 1979, Michael Frede argued that the sceptics thought that even if one suspended judgment on all matters, at least suspended judgment in the sense in which they recommend that one suspend judgment, one would still have many beliefs and views, quite enough, at any rate, to lead a worthwhile life.",
+          "corpus_chunk": 33089
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "Frede argues that what is meant is that the Skeptic accepts the judgment of phantasia; at least, he raises no objection against its verdict; if it says things are thus or thus, he does not challenge this.",
+          "corpus_chunk": 33090
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "Texts such as I 13, I 22, and I 29–30 emphasize that the impressions are forced on us.",
+          "corpus_chunk": 33090
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "These beliefs are not forced upon one, but arise through the rational weighing up of evidence on either side of a question.",
+          "corpus_chunk": 33091
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "If the belief that P has been formed ‘on reasoned grounds’—‘as a result of marshalling arguments or considerations in favour of P’ (Morison 2011: 266), or perhaps as a result of simply thinking that there are such grounds without having yet marshalled them—then this belief counts as a belief of the sort the Skeptic",
+          "corpus_chunk": 33093
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "Contrast: someone believing that it is day outside on the basis of performing a calculation about the sun’s position at that precise time relative to their position on the earth (Morison 2011: 267).",
+          "corpus_chunk": 33094
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "Frede’s proposal was rejected by Jonathan Barnes and Myles Burnyeat, who argued that Pyrrhonian Skepticism involves rejecting all beliefs.",
+          "corpus_chunk": 33099
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "According to Burnyeat, what is going on when the Skeptic assents in accordance with the appearances is that the Skeptic is merely ‘acknowledging that this is indeed how the thing appears to one at the moment’ (Burnyeat 1980: 43); but Skeptics and dogmatists dispute ‘whether any proposition or class of propositions can",
+          "corpus_chunk": 33100
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "Jonathan Barnes has a slightly different interpretation of the pronouncements of the Skeptic: when the Skeptic sees the tower in the distance and it appears round, the Skeptic may utter the sentence “The tower seems round”: he thereby expresses his πάθος [feeling], but he does not state that he is experiencing a",
+          "corpus_chunk": 33101
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "Barnes and Burnyeat have the same goal: to deny that any utterances the Skeptic makes which have the form ‘X appears F’ commit the Skeptic to having any beliefs.",
+          "corpus_chunk": 33102
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "What do Barnes and Burnyeat say about the kind of life the Skeptic leads?",
+          "corpus_chunk": 33102
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "In uttering these phrases [the Skeptical phrases: see below 3.6] they say what is apparent to themselves and report their own feelings without holding opinions (ἀδοξάστως), affirming nothing about external objects (PH I 15).",
+          "corpus_chunk": 33104
+        },
+        {
+          "locator": "§ 3.4.3",
+          "basis": "full text",
+          "excerpt": "Finally, it is worth noting another position that some scholars have taken: when Skeptics acknowledge that things appear thus-and-so to them, their pronouncements line up very simply with beliefs that they have, namely ‘beliefs about the ways things appear to [them] to be’ (Perin 2010b: 161, following Fine 2000: 104).",
+          "corpus_chunk": 33105
+        },
+        {
+          "locator": "§ 3.4.3",
+          "basis": "full text",
+          "excerpt": "Frede’s position allows the Skeptic to have ordinary beliefs such as ‘it is day outside’, ‘I am hungry’, ‘the library closes at 6.00 p.m.’, etc. whereas the interpreters under discussion allow to the Skeptic only beliefs such as ‘it seems to be daytime outside’, ‘I feel hungry’, ‘the library appears to close at 6.00",
+          "corpus_chunk": 33106
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "Unfortunately, he doesn’t say why the phrase cannot mean this.",
+          "corpus_chunk": 33111
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "Specifically, no one would think that it meant acknowledging or judging that one has the impression that P.",
+          "corpus_chunk": 33112
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "Sextus clearly intends this to be so: in the first sense of dogma, a dogma is assent to anything, and in the second sense it is assent to a certain subclass of things (‘some unclear object of investigation in the sciences’).",
+          "corpus_chunk": 33114
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "So Skeptics do not assent to anything unclear or non-apparent.",
+          "corpus_chunk": 33114
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "It is not difficult to put this in terms of impressions: Sextus is saying that the forbidden kind of dogma involves assenting to impressions which are not clear.",
+          "corpus_chunk": 33116
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "Thus, to assent to one of these impressions is to go beyond appearances; it is no longer a matter of responding, passively and without an act of the will, to the weight or pull of the appearances, but rather a matter of going beyond how things appear; in such cases, one’s assent is instead dictated by certain",
+          "corpus_chunk": 33117
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "In I 13 Sextus dresses this point up in Stoic garb, presumably in order to send the message that the Stoics have to acknowledge the existence of the kinds of belief the Skeptic has.",
+          "corpus_chunk": 33118
+        },
+        {
+          "locator": "§ 3.4.4",
+          "basis": "full text",
+          "excerpt": "es it can also seem as though the rational thing to do is to suspend judgment in the face of these equally strong competing interpretations. (See O’Donnell 2025 for the view that all these competing interpretations collapse into one.)",
+          "corpus_chunk": 33119
+        }
+      ],
+      "annotation": "Explains Sextus’s investigative ability, tranquillity, modes, and the competing interpretations of skeptical belief."
+    }
+  ]
+}

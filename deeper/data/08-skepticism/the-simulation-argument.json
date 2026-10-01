@@ -1,0 +1,169 @@
+{
+  "chapter": "08-skepticism",
+  "section": "the-simulation-argument",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which assumptions connect conscious simulations, observer proportions, and personal credence, and what does the disjunction conclude?"
+  ],
+  "sources": [
+    {
+      "key": "bostrom2003",
+      "used_for": [
+        "A conditional population argument",
+        "Consciousness is an assumption",
+        "From proportions to your probability",
+        "What must be checked in the reasoning",
+        "A simulation need not abolish inquiry",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "BY NICK BOSTROM [Published in Philosophical Quarterly (2003) Vol. 53, No. 211, pp. 243‐255.",
+          "corpus_chunk": 51136
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Let us suppose for a moment that these predictions are correct.",
+          "corpus_chunk": 51136
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Therefore, if we don’t think that we are currently living in a computer simulation, we are not entitled to believe that we will have descendants who will run lots of such simulations of their forebears.",
+          "corpus_chunk": 51138
+        },
+        {
+          "locator": "§ II",
+          "basis": "full text",
+          "excerpt": "First, we formulate an assumption that we need to import from the philosophy of mind in order to get the argument started.",
+          "corpus_chunk": 51138
+        },
+        {
+          "locator": "§ II",
+          "basis": "full text",
+          "excerpt": "The idea is that mental states can supervene on any of a broad class of physical substrates.",
+          "corpus_chunk": 51139
+        },
+        {
+          "locator": "§ II",
+          "basis": "full text",
+          "excerpt": "Moreover, we need not assume that in order to create a mind on a computer it would be sufficient to program it in such a way that it behaves like a human in all situations, including passing the Turing test etc.",
+          "corpus_chunk": 51141
+        },
+        {
+          "locator": "§ IV",
+          "basis": "full text",
+          "excerpt": "We can draw this conclusion even while leaving a substantial margin of error in all our estimates.  Posthuman civilizations would have enough computing power to run hugely many ancestor‐simulations even while using only a tiny fraction of their resources for that purpose.",
+          "corpus_chunk": 51153
+        },
+        {
+          "locator": "§ IV",
+          "basis": "full text",
+          "excerpt": "Let us introduce the following notation: Pf : Fraction of all human‐level technological civilizations that survive to reach a posthuman stage N : Average number of ancestor‐simulations run by a posthuman civilization H : Average number of individuals that have lived in a civilization before it reaches a posthuman",
+          "corpus_chunk": 51154
+        },
+        {
+          "locator": "§ IV",
+          "basis": "full text",
+          "excerpt": "By inspecting (*) we can then see that at least one of the following three propositions must be true: (1) 0Pf (2) 0If (3) 1simf V.",
+          "corpus_chunk": 51155
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "By inspecting (*) we can then see that at least one of the following three propositions must be true: (1) 0Pf (2) 0If (3) 1simf V.",
+          "corpus_chunk": 51155
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "The first case, which is the easiest, is where all the minds in question are like your own in the sense that they are exactly qualitatively identical to yours: they have exactly the same information and the same experiences that you have.",
+          "corpus_chunk": 51156
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "A detailed defense of a stronger principle, which implies the above stance for both cases as trivial special instances, has been given in the literature.11 Space does not permit a recapitulation of that defense here, but we can bring out one of the underlying intuitions by bringing to our attention to an analogous",
+          "corpus_chunk": 51157
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "Then, quite clearly, unless you have had your DNA sequenced, it is rational to assign a credence of x% to the hypothesis that you have S.",
+          "corpus_chunk": 51157
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "Bostrom, “The Doomsday argument, Adam & Eve, UN++, and Quantum Joe.” Synthese 127(3): 359‐387 (2001); and most fully in my book Anthropic Bias: Observation Selection Effects in Science and Philosophy, Routledge, New York, 2002. 9 not in general prescribe indifference between hypotheses when you lack specific",
+          "corpus_chunk": 51159
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "The Doomsday argument rests on a much stronger and more controversial premiss, namely that one should reason as if one were a random sample from the set of all people who will ever have lived (past, present, and future) even though we know that we are living in the early twenty‐first century rather than at some point",
+          "corpus_chunk": 51160
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "If they bet on not being in a simulation, then almost everyone will lose.",
+          "corpus_chunk": 51160
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "Leslie, “Is the End of the World Nigh? ” Philosophical Quarterly 40, 158: 65‐72 (1990). 10 must give a high credence to DOOM, the hypothesis that humankind will go extinct before reaching a posthuman level: 1)0",
+          "corpus_chunk": 51162
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "Proposition (1) doesn’t by itself imply that we are likely to go extinct soon, only that we are unlikely to reach a posthuman stage.",
+          "corpus_chunk": 51162
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "Such nanobots, designed for malicious ends, could cause the extinction of all life on our planet.14 The second alternative in the simulation argument’s conclusion is that the fraction of posthuman civilizations that are interested in running ancestor‐ simulation is negligibly small.",
+          "corpus_chunk": 51164
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "Virtually no posthuman civilizations decide to use their resources to run large numbers of ancestor‐simulations.",
+          "corpus_chunk": 51164
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "One can speculate that advanced civilizations all develop along a trajectory that leads to the recognition of an ethical prohibition against running ancestor‐simulations because of the suffering that is inflicted on the inhabitants of the simulation.",
+          "corpus_chunk": 51166
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "Of course, this hypothesis can be seriously entertained only at those times when you are not currently suffering.",
+          "corpus_chunk": 51173
+        },
+        {
+          "locator": "§ VI",
+          "basis": "full text",
+          "excerpt": "The chief empirical importance of (3) at the current time seems to lie in its role in the tripartite conclusion established above.15 We may hope that (3) is true since that would decrease the probability of (1), although if computational constraints make it likely that simulators would terminate a simulation before it",
+          "corpus_chunk": 51175
+        },
+        {
+          "locator": "§ VII",
+          "basis": "full text",
+          "excerpt": "Hanson, “How to Live in a Simulation.” Journal of Evolution and Technology, vol. 7 (2001). 14 VII.",
+          "corpus_chunk": 51175
+        }
+      ],
+      "annotation": "The openly available primary simulation paper; specifies consciousness, observer proportions, indifference, and a disjunctive conclusion."
+    }
+  ]
+}

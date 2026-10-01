@@ -500,6 +500,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/fall2024/entries/protagoras/"
   },
+  "bostrom2003": {
+    "type": "article",
+    "authors": [
+      "Bostrom, Nick"
+    ],
+    "year": 2003,
+    "title": "Are You Living in a Computer Simulation?",
+    "container": "The Philosophical Quarterly",
+    "volume": "53",
+    "issue": "211",
+    "pages": "243–255",
+    "doi": "10.1111/1467-9213.00309",
+    "access": "open",
+    "verified": "Publication details checked against Crossref; title checked against the author's openly available PDF, whose cited passages were read, 2026-10-01",
+    "url": "https://simulation-argument.com/simulation.pdf",
+    "corpus_doc": 262
+  },
   "bourdeau2026": {
     "type": "entry",
     "authors": [

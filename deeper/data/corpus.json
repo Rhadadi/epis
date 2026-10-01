@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 271 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 272 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -2670,6 +2670,16 @@
    "edition": "Summer 2020 Edition",
    "url": "https://plato.stanford.edu/archives/sum2020/entries/wisdom/",
    "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Are You Living in a Computer Simulation?",
+   "authors": "Bostrom, Nick",
+   "year": "2003",
+   "source": "The Philosophical Quarterly",
+   "doi": "10.1111/1467-9213.00309",
+   "url": "https://simulation-argument.com/simulation.pdf",
+   "license": "open-access",
    "retrieved": "2026-10-01"
   }
  ]
