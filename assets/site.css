@@ -1058,7 +1058,7 @@ html[dir="rtl"] .mnav{right:auto;left:8px}
 .readalong{max-width:46rem}
 .ra-title{font-family:var(--display);font-size:2.2rem;font-weight:600;margin:4px 0 6px;line-height:1.2}
 .ra-note{color:var(--dim);font-size:.95rem;margin:0 0 14px}
-.ra-bar{position:sticky;top:var(--bar-h);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--rule);margin-bottom:18px}
+.ra-bar{position:sticky;top:var(--bar-h);z-index:5;background:var(--bg);padding:10px;border-bottom:1px solid var(--rule);margin:0 -10px 18px}
 .ra-bar audio{width:100%}
 .ra-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px;font-family:var(--sans);font-size:.88rem}
 .ra-tools select{height:36px;border-radius:8px;border:1px solid var(--rule-2);background:transparent;color:var(--ink)}
@@ -1073,5 +1073,6 @@ html[dir="rtl"] .mnav{right:auto;left:8px}
 .ra-text .label,.ra-text .question{font-weight:600}
 .ra-text .who{font-weight:600;color:var(--accent)}
 .ra-text .v2{border-inline-start:3px solid color-mix(in srgb,var(--accent) 45%,transparent);padding-inline-start:10px}
+.ra-text .v3{border-inline-start:3px dotted color-mix(in srgb,var(--ink-2) 50%,transparent);padding-inline-start:10px}
 .ra-foot{color:var(--dim);font-size:.9rem;margin-top:30px}
 .listen .epub-note{margin:4px 2px 0;font-family:var(--sans);font-size:.8rem;color:var(--dim)}

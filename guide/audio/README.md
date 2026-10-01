@@ -4,6 +4,8 @@ Every chapter of the guide is also available as a narrated audio track. Listen i
 
 To take the audiobook with you, the player page offers three ways: save the chapters in your browser for offline listening, download them all as one ZIP of MP3 files with a playlist, or subscribe in a podcast app to the feed `https://epis.duckdns.org/guide/audio/feed.xml`.
 
+Each chapter also has a **read-along** page, where the text follows the narration and the line being read is highlighted (tap a line to listen from there), and an **EPUB with audio**: the same text and narration as one ebook, for reading and listening offline. In e-readers that support EPUB 3 read-aloud (Media Overlays), such as Thorium Reader, the text is highlighted as it is read; elsewhere, Apple Books included, a player at the start of the chapter plays the narration. Both are in the menu (⋯) of each chapter's listen card, and the EPUBs are also on the [download page](../download.html).
+
 > The narration is read by three synthetic [ElevenLabs](https://elevenlabs.io) voices: Arthur narrates, Jane reads every third section and asks the quiz questions, and Adam Stone reads the quotations. None of it was read by a person.
 
 | | Chapter | Length |
@@ -70,7 +72,7 @@ The voice is synthetic, so expect occasional oddities: a stress on the wrong syl
 |---|---|
 | `NN-*.mp3` | One track per chapter, with chapter markers |
 | `index.html`, `tracks.js` | The player page and its track list with section times |
-| `sync/NN-*.json` | Where each line of the script falls in the ElevenLabs recording, and which voice reads it |
+| `sync/NN-*.json` | Where each line of the script falls in the ElevenLabs recording, and which voice reads it; the read-along pages and EPUBs are built from these |
 | `scripts/NN-*.txt` | The narration scripts: what is read, in which voice, with which pauses |
 | `tools/make_script.py` | Converts a chapter's markdown into a narration script |
 | `tools/script_extras.py` | Hand-written intros and outros, table readings, and spoken rewrites of formulas |

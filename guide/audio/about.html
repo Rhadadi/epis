@@ -30,6 +30,7 @@
   <a href="../../fa/guide/audio/about.html" data-set-site-lang="fa" lang="fa"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>فارسی</span></a></nav>
 <header class="hero band" style="--art:#534445;--focus:50% 42%"><div class="hero-art"><img class="art" src="../../assets/art/audio-1200.jpg" srcset="../../assets/art/audio-640.jpg 640w, ../../assets/art/audio-1200.jpg 1200w, ../../assets/art/audio-2000.jpg 2000w" sizes="100vw" alt="His Master&#x27;s Voice by Francis Barraud (1898–99)" fetchpriority="high" decoding="async"></div><div class="hero-in"><div class="kicker">The audio edition</div><h1>How the audio was made</h1><div class="plate">Francis Barraud, <i>His Master&#x27;s Voice</i>, 1898–99</div></div></header><main id="main" class="wrap" style="padding-top:36px;padding-bottom:80px"><div class="prose" style="max-width:46rem;margin:0 auto"><p>Every chapter of the guide is also available as a narrated audio track. Listen in the <strong><a href="./">audio player</a></strong>, which has section markers, playback speed and resume. You can also open the MP3 files directly: each one carries chapter markers that podcast and audiobook apps can use.</p>
 <p>To take the audiobook with you, the player page offers three ways: save the chapters in your browser for offline listening, download them all as one ZIP of MP3 files with a playlist, or subscribe in a podcast app to the feed <code>https://epis.duckdns.org/guide/audio/feed.xml</code>.</p>
+<p>Each chapter also has a <strong>read-along</strong> page, where the text follows the narration and the line being read is highlighted (tap a line to listen from there), and an <strong>EPUB with audio</strong>: the same text and narration as one ebook, for reading and listening offline. In e-readers that support EPUB 3 read-aloud (Media Overlays), such as Thorium Reader, the text is highlighted as it is read; elsewhere, Apple Books included, a player at the start of the chapter plays the narration. Both are in the menu (⋯) of each chapter’s listen card, and the EPUBs are also on the <a href="../download.html">download page</a>.</p>
 <blockquote>
 <p>The narration is read by three synthetic <a href="https://elevenlabs.io">ElevenLabs</a> voices: Arthur narrates, Jane reads every third section and asks the quiz questions, and Adam Stone reads the quotations. None of it was read by a person.</p>
 </blockquote>
@@ -174,7 +175,7 @@
 </tr>
 <tr>
 <td><code>sync/NN-*.json</code></td>
-<td>Where each line of the script falls in the ElevenLabs recording, and which voice reads it</td>
+<td>Where each line of the script falls in the ElevenLabs recording, and which voice reads it; the read-along pages and EPUBs are built from these</td>
 </tr>
 <tr>
 <td><code>scripts/NN-*.txt</code></td>
