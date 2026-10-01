@@ -108,8 +108,8 @@ and `pypi.org` with `files.pythonhosted.org` for installing.
 
 **OpenAlex.** Eight articles come through OpenAlex, which needs an API key (`SEARCHBOT_OPENALEX_KEY`). Get your
 own at <https://openalex.org> and set it as an environment variable or agent secret, never in a file. To check
-it is set without printing it: `[ -n "${SEARCHBOT_OPENALEX_KEY:-}" ] && echo present`. Without it those eight
-are reported missing; the pages that cite them were already checked.
+it is set without printing it: `[ -n "${SEARCHBOT_OPENALEX_KEY:-}" ] && echo present`. A test rebuild on
+2026-10-01 fetched all eight without a key, so treat the key as optional unless `--report` says otherwise.
 
 **Hosts that refused downloads (403) from the original research container:** philpapers.org (most often),
 onlinelibrary.wiley.com, read.dukeupress.edu, escholarship.org, www.tandfonline.com, www.sciencedirect.com,
