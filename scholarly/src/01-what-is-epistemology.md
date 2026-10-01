@@ -4,7 +4,7 @@ status: draft
 updated: 2026-10-01
 ---
 
-This companion follows Chapter 1 section by section. It goes further into each topic, lays out where scholars disagree, and points out where the chapter simplifies. Every note points to a work whose details have been checked. Open-access sources are preferred, so most notes lead to a text you can read free online: the *Stanford Encyclopedia of Philosophy* is cited in the dated edition consulted, which will not change under the link. Short quotations are given in the authors' own words; everything else is paraphrase.
+Come here when a section of the chapter didn't click, or felt as if something was missing. Each section of the chapter has a matching section here, and the link at the end of each chapter section brings you straight to it. A section starts with the idea **in short**, then explains it again **step by step** with fresh examples, clears up **common confusions**, gives you exercises to **try yourself**, and shows **what the chapter leaves out**. Only then does it turn to where philosophers disagree, what the chapter simplifies, and **where to go next**. Every note points to a work whose details have been checked. Open-access sources are preferred, so most notes lead to a text you can read free online: the *Stanford Encyclopedia of Philosophy* is cited in the dated edition consulted, which will not change under the link. Short quotations are given in the authors' own words; everything else is paraphrase.
 
 ## Why epistemology matters for critical thinking
 
@@ -214,58 +214,161 @@ Plantinga uses "warrant" for whatever turns true belief into knowledge [@plantin
 
 ## Three great distinctions
 
-### A priori and a posteriori
+> **In short.** The chapter introduces three pairs of words that sound alike but answer three different questions about a statement. *A priori / a posteriori* asks **how you could come to know it**: by thinking, or by looking at the world. *Analytic / synthetic* asks **what makes it true**: the meanings of its words alone, or also how the world is. *Necessary / contingent* asks **whether it could have been false**. For a long time philosophers assumed the three always give the same answer. The most interesting work in this area comes from the cases where they don't.
 
-Steup and Neta define a priori justification as justification that "does not depend on any experience". They add that the word "experience" needs care. If it means only perception, then introspection and memory would count as a priori sources: you could know a priori that you are thirsty. On the strict usage, which the chapter follows, a priori justification comes from the use of reason alone [@steup-neta2025, § 5.4].
+### Why this section is hard
 
-Kant drew a further distinction that the chapter does not mention. *Pure* a priori knowledge has no empirical element mixed in. *Impure* a priori knowledge does. His example is "Every change has a cause": it is a priori, but impure, "because change is a conception which can only be derived from experience" [@kant1787, Introduction, B 3]. The chapter's example "every event has a cause" belongs in the same family.
+Most people find this section hard for three reasons. The examples the chapter starts with ("All bachelors are unmarried", "7 + 5 = 12") come out the same way on all three tests, which hides how different the tests are. The words are Latin and Kantian, not everyday English. And each word is ordinary in other senses: "necessary" also means "required", and "a priori" is used loosely to mean "assumed in advance". It helps to keep one question attached to each pair:
 
-Philosophers disagree about what a priori justification consists in. Bruce Russell lists three views [@russell-bruce2024, § 3]:
+- **A priori / a posteriori** asks *how someone could know it*. Quick test: could you know it in an armchair, once you understand the words, without checking anything?
+- **Analytic / synthetic** asks *what makes it true*. Quick test: is it true just because of what the words mean?
+- **Necessary / contingent** asks *whether it could have been otherwise*. Quick test: is there any way the world could have gone in which it is false?
 
-1. It is not significantly different from empirical justification.
-2. It rests on a distinctive mental state, a rational intuition or insight, which provides evidence.
-3. It is an entitlement to believe certain propositions without any evidence.
+The first is about **knowledge**, the second about **meaning**, the third about **reality and possibility**. Different questions, so in principle different answers.
 
-Timothy Williamson goes further. He argues that much of our knowledge, such as knowledge of what would happen in counterfactual situations, is "armchair" knowledge that fits neither category well, and that the distinction "doesn't cut at the epistemic joints" [@mallozzi-etal2024, § 4.2].
+### The idea, step by step
 
-### Analytic and synthetic
+#### 1. A priori and a posteriori: how could you know it?
 
-Kant's formulation, quoted by Georges Rey: in an analytic judgment the predicate "belongs to the subject A as something that is (covertly) contained in this concept A". In a synthetic judgment it "lies entirely outside the concept A, though to be sure it stands in connection with it" [@rey2026, § 1.1]. Rey notes that the notion has precursors in Leibniz, and in Locke's and Hume's talk of "relations of ideas" [@rey2026, § 1.1]. Hume's version, often called **Hume's fork**, divides all objects of inquiry into two kinds:
+Try the **armchair test**. Sit with your eyes closed, understand the sentence, and ask whether you could know it is true without any further observation.
 
-- **Relations of ideas**, which are "discoverable by the mere operation of thought". His examples are geometry, algebra and arithmetic, such as "That three times five is equal to the half of thirty".
-- **Matters of fact**, which are not established in the same way.
+- "If Ana is taller than Ben and Ben is taller than Carl, then Ana is taller than Carl." You can know this in the armchair. **A priori.**
+- "Ana is taller than Ben." You would have to look, or ask. **A posteriori.**
 
-[@hume1748, IV.i.20–21]. Hume's fork, unlike Kant's scheme, leaves no room for synthetic a priori knowledge.
+Two clarifications prevent most mistakes.
 
-Kant's argument that "7 + 5 = 12" is synthetic runs in two steps [@kant1787, Introduction, B 15–16; @shabel2025, § 2.2]:
+**Experience can be needed to understand a sentence without being needed to justify it.** You needed experience to learn the word "taller". But once you have it, nothing further has to be observed. Steup and Neta define a priori justification as justification that "does not depend on any experience", and note that on the strict use of the term, introspection and memory count as experience too: knowing that you are thirsty is not a priori [@steup-neta2025, § 5.4].
 
-- **Negative.** However long we analyse the concept of the sum of seven and five, we will not find twelve in it.
-- **Positive.** To reach twelve we must turn to intuition. Kant's example is counting on five fingers, adding the units one by one to the concept of seven.
+**Kant distinguished pure from impure a priori knowledge.** "Every change has a cause" is, for Kant, a priori but *impure*, because the concept of change can only be acquired from experience [@kant1787, Introduction, B 3]. The chapter's own example, "every event has a cause", belongs here. Hume disagreed sharply about such principles. He argued that no reasoning "*a priori*" could ever reveal what causes what: "A man must be very sagacious who could discover by reasoning that crystal is the effect of heat, and ice of cold" [@hume1748, IV.i.23–25].
 
-Quine's attack in "Two Dogmas" had two parts [@quine1951; @rey2026, §§ 3.4–3.6]:
+#### 2. Analytic and synthetic: what makes it true?
 
-- **Circularity.** The notions of analyticity, synonymy and meaning can each be explained only by appeal to the others. Rey describes them as "bringing in each other's laundry".
-- **Confirmation holism.** "Our statements about the external world face the tribunal of sense experience not individually, but only as a corporate body." On this view no statement is immune to revision. Statements that seem analytic are simply central in the "web of belief" and are given up only under extreme pressure.
+Try the **dictionary test**: is the sentence true just because of what its words mean?
 
-Rey points out problems with this explanation, including that centrality and apparent analyticity do not line up closely [@rey2026, § 3.6.1].
+Kant's own pair of examples is the clearest. "All bodies are extended" is analytic: to find the predicate, I only have to unpack my concept of a body, which already includes extension, shape and impenetrability. "All bodies are heavy" is synthetic: weight is "something totally different from that which I think in the mere conception of a body", and I learn it by observation [@kant1787, Introduction, B 11–12].
 
-### Kripke's examples, and the disputes about them
+Notice a trap here. Kant says analytic judgments are known a priori, "a necessity which I could never learn from experience" [@kant1787, Introduction, B 11–12]. So for Kant, analytic truths automatically pass the armchair test too. That is one reason the pairs get confused. The tests are different even when they agree.
 
-Kant held that whatever is a priori is necessary, and that whatever is necessary is known a priori. That rules out the necessary a posteriori. Kripke's way of finding necessary truths that are known a posteriori combines two premises [@mallozzi-etal2024, § 2.3]:
+The dictionary test is harder to apply than it looks. Georges Rey points to sentences that seem as "true by meaning" as any, but where nothing is obviously "contained" in anything: "If Bob is married to Sue, then Sue is married to Bob", or "If something is red, then it's colored". What does *red* contain besides *colored*? "It is hard to see what else to 'add' – except red itself!" [@rey2026, § 1.2]. Frege's response was to build modern symbolic logic and then count as analytic the truths that turn into truths of logic once definitions are substituted for the words they define. This replaced Kant's picture of concepts contained in concepts [@rey2026, § 1.2].
 
-- **A modal premise** of the form "If *p*, then necessarily *p*", for example "If Hesperus = Phosphorus, then necessarily Hesperus = Phosphorus". Kripke says this is known "by a priori philosophical analysis".
-- **An empirical premise**, *p* itself, for example "Hesperus = Phosphorus", which is discovered by observation.
+#### 3. Necessary and contingent: could it have been otherwise?
 
-Both of Kripke's novel categories are disputed:
+Try the **story test**: can you tell a consistent story about how the world might have gone in which the sentence is false?
 
-- **The necessary a posteriori.** Some philosophers (Salmon, Soames) argue that the *proposition* that Hesperus is Phosphorus is the same as the proposition that Hesperus is Hesperus, and so is knowable a priori. What is learned a posteriori is that the *sentence* "Hesperus = Phosphorus" is true. Joseph LaPorte describes the claim that rigidity yields necessary a posteriori propositions as "controversial, though common". He calls the corresponding claim about sentences "less problematic" [@laporte2026, § 3.1]. For "Water is H₂O" to be necessary, both of its terms must be rigid designators if either is. If both are rigid and the identity is true, it is necessary [@laporte2026, § 3.3; @kripke1980].
-- **The contingent a priori.** Kripke's examples are "perhaps more controversial" than his examples of the necessary a posteriori. Donnellan and others deny that they are genuine. Even those who accept them often find them insignificant: not "scary", in Donnellan's word [@laporte2026, § 3.2]. Bruce Russell explains the standard metre case. The phrase "one metre" rigidly designates the length that stick *S* actually had at *t₀*, while "the length of *S* at *t₀*" names different lengths in other possible worlds [@russell-bruce2024, § 2].
+- "Napoleon lost at Waterloo." Easy story: the Prussians arrive late. **Contingent.**
+- "7 + 5 = 12." No story makes it false. **Necessary.**
+
+Philosophers talk about this using **possible worlds**: a necessary truth is true in every possible world; a contingent truth is true in ours but false in some other.
+
+The chapter's "necessary" means *metaphysically* necessary. There are several kinds of necessity, and confusing them causes trouble:
+
+- **Logical or conceptual** necessity: denying it is a contradiction.
+- **Metaphysical** necessity: it could not have been otherwise, whatever the laws of nature were.
+- **Physical** (or nomological) necessity: it follows from the laws of nature, but the laws themselves might have been different.
+
+Philosophers disagree about how these relate. Some think metaphysical and logical necessity coincide, others that metaphysical and physical necessity coincide, and some doubt that metaphysical necessity is a separate notion at all [@mallozzi-etal2024, § 1].
+
+**Necessity is not the "must" of "it must be raining".** That "must" is *epistemic*: it says what follows from what you know, and philosophers studying necessity usually set it aside, since it depends on the knower [@mallozzi-etal2024, § 1].
+
+#### 4. Why the three come apart
+
+Here is the chapter's table again, cell by cell, with the reason each case is placed where it is.
+
+**Necessary and a priori ("7 + 5 = 12").** The traditional case. Kant's twist is that it is *synthetic*. However long you analyse "the sum of seven and five", the concept *twelve* is not in it; to get there you must count, for instance on your fingers, adding units one at a time [@kant1787, Introduction, B 15–16; @shabel2025, § 2.2]. He says the same about geometry: "A straight line between two points is the shortest" is synthetic, because *straight* is a quality and *shortest* is a quantity [@kant1787, Introduction, B 16]. If Kant is right, there is **synthetic a priori** knowledge: substantial truths about the world, knowable by reason. Empiricists deny this is possible. Rationalists offer further candidates, such as "If a ball is green all over, then it doesn't have black spots" [@steup-neta2025, § 5.4].
+
+**Necessary but a posteriori ("Water is H₂O").** How can something be necessary yet only discoverable by experiment? The standard answer has two steps. First, the word "water" is introduced to refer to *the stuff, whatever it is,* that fills the lakes, falls as rain and quenches thirst. That much we know by understanding the word. Second, chemistry discovers what that stuff essentially is. The meaning is knowable a priori, "the essence of water must be discovered empirically" [@russell-bruce2024, § 2]. Since the essence could not have been different, the truth is necessary; since it had to be discovered, it is a posteriori. Kripke made the pattern explicit: we know a priori that *if* water is H₂O, it is necessarily H₂O, and we learn by experiment that it *is* [@mallozzi-etal2024, § 2.3; @kripke1980].
+
+There is a further way to see why the case feels puzzling. In one sense it is conceivable that water is not H₂O: before chemistry, it *might have turned out* that the watery stuff was something else. In another sense it is not: given that the watery stuff is H₂O, there is no possible world in which *water* is something else. David Chalmers calls these **primary** and **secondary** conceivability, and builds his "two-dimensional" semantics on the difference [@mallozzi-etal2024, § 4.1; @schroeter2021, preamble].
+
+**Contingent but a priori ("Stick S is one metre long at t₀").** Suppose "one metre" is *defined* as the length of stick S at time t₀. Then you know without measuring that S is one metre long at t₀. But the stick could have been longer, if it had been heated, so the truth is contingent [@russell-bruce2024, § 2]. This case is more controversial than the water case. Many deny that it is genuinely a priori, and even those who accept it find it of little consequence [@laporte2026, § 3.2].
+
+**Contingent and a posteriori ("Paris is the capital of France").** The ordinary case: discovered by looking, and could have been otherwise.
+
+### Common confusions
+
+- **"A priori" means "innate" or "known before birth".** No. Russell made the point in 1912: knowledge that is *logically* independent of experience is still "elicited and caused by experience". It would be absurd to think "babies are born with a knowledge of everything which men know". That is why philosophers stopped calling such knowledge "innate" and said "*a priori*" instead [@russell1912, ch. VII].
+- **"A priori" means certain, or can never be revised.** No. Traditionally, a priori meant *justified independently of experience*. Rey notes that Quine and the positivists before him "casually" changed this to *unrevisable in the light of experience*, which would make anyone who calls something a priori claim to be infallible about it [@rey2026, § 3.6.1]. You can make a mistake in an a priori subject; a long sum can be added wrongly.
+- **Analytic means obvious, and synthetic means surprising.** No. Some analyses are long and informative; that they can be informative at all is the old "paradox of analysis" [@rey2026, § 3.1]. And some synthetic claims are as safe as anything: "There have been black dogs" is not analytic, but no one would give it up [@rey2026, § 3.6.1].
+- **Necessary means "certain", and contingent means "uncertain" or "random".** No. These are claims about the world, not about our confidence. You are certain that Paris is the capital of France, yet it is contingent. A necessary mathematical truth can be unproven and unknown to everyone.
+- **"True by definition" ends an argument.** Only about words. A definition can make "All bachelors are unmarried" true. It cannot make any claim about the world true; it can only decide what a word will mean. When someone says a contested claim is "true by definition", ask whether they are defining a word or smuggling in a claim. The chapter's link to [persuasive definition](04-language-concepts-and-definitions.md#kinds-of-definition) is the place to follow this up.
+
+### Try it yourself
+
+For each sentence, classify it on all three distinctions before opening the answer.
+
+**1.** "All squares have four sides."
+
+<details>
+<summary>Answer</summary>
+
+A priori, analytic and necessary. Like "All bachelors are unmarried", it is a case where all three line up: having four sides is part of what *square* means.
+</details>
+
+**2.** "Rubies are red." And: "Rubies are made of aluminium oxide (Al₂O₃)."
+
+<details>
+<summary>Answer</summary>
+
+A trick pair. Gemologists seem to treat redness as part of what "ruby" means, so the first may be knowable a priori. The second can only be known by chemistry, and many philosophers hold that it is nonetheless necessary, like "Water is H₂O". So the notion of a ruby looks like a hybrid: its colour knowable a priori, its material essence only empirically [@russell-bruce2024, §§ 1–2].
+</details>
+
+**3.** "I exist." (Said or thought by you.)
+
+<details>
+<summary>Answer</summary>
+
+You can know it without any observation of the world, so it is plausibly a priori. But you might never have existed, so it is contingent. Philosophers recognised the "plausible contingency" of a priori statements like "I exist" long before Kripke's examples [@laporte2026, § 3.2].
+</details>
+
+**4.** "Heat turns water into steam."
+
+<details>
+<summary>Answer</summary>
+
+A posteriori and synthetic: Hume's point is that no amount of reasoning about heat alone would reveal this effect [@hume1748, IV.i.23–25]. Whether it is necessary depends on which necessity you mean. It is physically necessary, given the laws of nature. But it is not logically necessary: denying it involves no contradiction, and for Hume "the contrary of every matter of fact is still possible" [@hume1748, IV.i.21].
+</details>
+
+**5.** "Nothing can be red all over and green all over at the same time."
+
+<details>
+<summary>Answer</summary>
+
+Necessary, and knowable a priori. Whether it is analytic is the interesting question. It does not seem true just by unpacking definitions, which makes it a favourite rationalist candidate for synthetic a priori knowledge, like the green ball with no black spots [@steup-neta2025, § 5.4].
+</details>
+
+**6.** A friend says: "It's just a contingent fact that you got the job, so you didn't really earn it."
+
+<details>
+<summary>Answer</summary>
+
+The argument confuses *contingent* with *unearned* or *random*. Almost everything that happens is contingent: it could have gone otherwise. That says nothing about whether it was deserved. The distinction is about possibility, not about luck or merit.
+</details>
+
+### What the chapter leaves out
+
+- **How we know what is necessary.** The chapter tells you which truths are necessary, but not how anyone could know that a truth holds in *every* possible world. The main proposal is that **conceivability** guides us: if you can coherently conceive a situation, that is evidence that it is possible. The central problem is explaining how a fact about our minds can tell us about mind-independent possibility [@mallozzi-etal2024, § 4.1].
+- **The kinds of necessity** described above, and the disputes about whether "metaphysical" necessity is a separate kind at all [@mallozzi-etal2024, § 1].
+- **Frege's revision of "analytic"** in terms of logic and definitions, and the hopes, centred on Frege's program, of reducing mathematics to logic. That program was damaged by Russell's paradox [@rey2026, §§ 1.2, 3.2].
+- **The reply to Quine.** Grice and Strawson (1956), and later Putnam, argued that a distinction which ordinary speakers draw so readily and agree about so widely, "Lawyers are attorneys", "A fortnight is a period of fourteen days", is unlikely to have "no basis at all in fact" [@rey2026, § 3.5]. Since then, the debate has been mostly about the epistemology of analyticity: how we justify beliefs in necessary truths [@rey2026, § 2].
+- **Non-Euclidean geometry and Kant.** It is often said that the discovery of non-Euclidean geometries refuted Kant's view that geometry is synthetic a priori. Contemporary Kant scholars broadly oppose that "long-standard story" [@shabel2025, § 3.1]. Rey adds that the usual example misreads the history: non-Euclidean geometries were developed as pure mathematics in the 19th century, and Einstein argued that physics supported one of them [@rey2026, § 3.4].
+
+### Where philosophers disagree
+
+- **What a priori justification is.** Bruce Russell lists three views: that it is not very different from empirical justification; that it rests on rational intuition or insight; and that it is an entitlement to believe without evidence [@russell-bruce2024, § 3]. Timothy Williamson argues that much knowledge, such as knowledge of counterfactuals, is "armchair" knowledge that fits neither side, and that the distinction "doesn't cut at the epistemic joints" [@mallozzi-etal2024, § 4.2].
+- **Whether the analytic/synthetic distinction survives Quine.** Quine argued that the notions of analyticity, synonymy and meaning only explain one another, "bringing in each other's laundry" in Rey's phrase. He also argued that "our statements about the external world face the tribunal of sense experience not individually, but only as a corporate body" [@quine1951; @rey2026, §§ 3.4–3.5]. Rey points out that Quine offered no argument for this holism, and that mathematics has virtually never been revised on empirical grounds [@rey2026, § 3.4].
+- **Whether Kripke's examples work.** Some philosophers (Salmon, Soames) argue that the *proposition* that Hesperus is Phosphorus is the same as the proposition that Hesperus is Hesperus, and so is knowable a priori; only the *sentence* is learned a posteriori. LaPorte calls the usual claim "controversial, though common" [@laporte2026, § 3.1]. Others hold that "Water is H₂O" is contingent, and that the necessary truth is the more general one that a kind of matter's essence is its composition [@russell-bruce2024, § 2].
 
 ### What the chapter simplifies
 
-- **"Kant introduced the distinction."** Kant gave the analytic/synthetic distinction its modern form, but it has precursors in Leibniz, Locke and Hume [@rey2026, § 1.1].
-- **The two-by-two table.** Placing "Water is H₂O" and "Hesperus is Phosphorus" in the necessary a posteriori cell is standard. Whether it is the *proposition* or only the *sentence* that is a posteriori is disputed. The contingent a priori cell is more controversial still [@laporte2026, §§ 3.1–3.2].
-- **Three independent distinctions.** Some philosophers doubt that the a priori/a posteriori line marks a deep epistemic difference at all [@mallozzi-etal2024, § 4.2].
+- **"Kant introduced the distinction."** Kant gave it its modern form, but it has precursors in Leibniz, and in Locke's and Hume's "relations of ideas" [@rey2026, § 1.1]. Hume's fork divides the objects of reason into **relations of ideas**, "discoverable by the mere operation of thought", and **matters of fact** [@hume1748, IV.i.20–21]. It leaves no room for the synthetic a priori.
+- **The table.** Placing "Water is H₂O" and "Hesperus is Phosphorus" in the necessary a posteriori cell is standard, but contested as noted above. The contingent a priori cell is more contested still [@laporte2026, §§ 3.1–3.2].
+
+### Where to go next
+
+- **Start here, free:** Bruce Russell's entry "A Priori Justification and Knowledge", sections 1–2, which works through examples like rubies and water [@russell-bruce2024]. Then the opening sections of Rey's "The Analytic/Synthetic Distinction" [@rey2026, § 1].
+- **Kant in his own words:** the Introduction to the *Critique of Pure Reason*, sections I–V. Kant also introduces the distinction in the Preamble to the shorter *Prolegomena* [@kant1787; @shabel2025, § 2.2].
+- **Kripke:** *Naming and Necessity*, Lecture I [@kripke1980].
+- **In this guide:** [Reason and the a priori](07-sources-of-knowledge.md#reason-and-the-a-priori) in Chapter 7; [Quine and naturalized epistemology](02-history-of-epistemology.md#quine-and-naturalized-epistemology) in Chapter 2.
 
 ## Epistemic reasons versus practical reasons
 

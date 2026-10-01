@@ -37,6 +37,29 @@ updated: 2026-10-01
 Ryle argued that knowing how is not a matter of knowing facts [@ryle1949, ch. 2].
 ```
 
+### Section structure
+
+The reader arrives from a chapter section because it didn't click, or felt incomplete. Each section
+therefore teaches first and surveys the literature second, in this order:
+
+1. `> **In short.**` The point of the chapter section in four to six plain sentences, from a different
+   angle than the chapter. Rendered as a callout.
+2. `### Why this section is hard` What usually trips readers up, and one question or test to hold on to.
+3. `### The idea, step by step` The concepts one at a time (`####` subheadings), each with new everyday
+   examples and a simple test the reader can apply.
+4. `### Common confusions` A list of the usual misreadings, each named in bold and corrected.
+5. `### Try it yourself` Numbered exercises (`**1.** ...`), each followed by an answer in
+   `<details><summary>Answer</summary>...</details>`. Include at least one trick case and one
+   everyday-argument case.
+6. `### What the chapter leaves out` Topics, positions and history the chapter skips.
+7. `### Where philosophers disagree` The live debates, with the main positions and objections.
+8. `### What the chapter simplifies` Where the chapter's wording is looser than the literature.
+9. `### Where to go next` A reading path: a free first reading, then primary texts, then the related
+   sections of the guide (as links to `NN-*.md#anchor`, which become links to the chapter pages).
+
+Explanations and invented examples need no citation; every claim about what a philosopher held, what
+a study found or what the literature says does. Aim for 2,000–3,000 words a section.
+
 - **Citations** are `[@key]`, `[@key, locator]` or several separated by `;`. Each becomes a numbered
   note; the notes and the full references of the works cited follow each section, and a
   bibliography ends the page.

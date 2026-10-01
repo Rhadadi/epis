@@ -2413,7 +2413,7 @@ def scholarly_links(ch, body):
         m = re.match(r'<h2 id="([^"]+)"', part)
         if m and m.group(1) in comp["sections"]:
             parts[i] = (part.rstrip() + f'\n<p class="sch-link"><a href="../scholarly/{ch.slug}.html#{m.group(1)}">'
-                        f'<span>Scholarly discussion &amp; sources</span> <span aria-hidden="true">→</span></a></p>\n')
+                        f'<span>Go deeper on this section</span> <span aria-hidden="true">→</span></a></p>\n')
     return "".join(parts)
 
 
@@ -2605,9 +2605,9 @@ def build_scholarly(chapters, md, art):
         toc = "".join(f'<li><a href="#{h[1]}">{h[3]}</a></li>' for h in heads if h[0] == 2)
         draft = comp["meta"].get("status") != "published"
         updated = comp["meta"].get("updated", "")
-        lede = ("Extended discussion, the scholarly debate and sources for each section of the chapter. "
-                "The chapter stays the readable version; this page is for going further.")
-        head = hero(art, ch.art, root, kicker=f"Scholarly companion · {ch.label}", title=html.escape(ch.title), cls="band", lede=lede)
+        lede = ("Each section of the chapter explained again from the start, with examples, common confusions, "
+                "exercises, what the chapter leaves out, and the scholarly debate with its sources.")
+        head = hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=html.escape(ch.title), cls="band", lede=lede)
         note = (f'<p class="sch-status{" draft" if draft else ""}">'
                 + ("Draft: not yet reviewed, and not linked from the live site. " if draft else "")
                 + (f"Updated {html.escape(updated)}. " if updated else "")
@@ -2616,19 +2616,19 @@ def build_scholarly(chapters, md, art):
                      f'<span class="kicker">Sections</span><ol>{toc}<li><a href="#bibliography">Bibliography</a></li></ol></nav></aside>'
                      f'<article class="scholarly">{note}<details class="mini-toc"><summary>Sections</summary><ol>{toc}</ol></details>'
                      f'<div class="prose">{body}</div></article></main>')
-        page(f"scholarly/{slug}.html", other_rel=f"guide/{ch.href}", root=root, title=f"Scholarly companion: {ch.label}: {ch.title}",
-             desc=f"Scholarly discussion and sources for {ch.label}, {ch.title}.", body=page_body, current="guide",
+        page(f"scholarly/{slug}.html", other_rel=f"guide/{ch.href}", root=root, title=f"Deeper study: {ch.label}: {ch.title}",
+             desc=f"{ch.label}, {ch.title}, explained further: examples, exercises, debates and sources.", body=page_body, current="guide",
              hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True)
         built.add(f"{slug}.html")
     if built:
         rows = "".join(f'<li><a href="{s}.html">{html.escape(c.label)}: {html.escape(c.title)}</a></li>'
                        for c in sorted(chapters.values(), key=lambda c: c.num) for s in [c.slug] if f"{s}.html" in built)
-        idx = (hero(art, "guide", up(1), kicker="Scholarly companions", title="Going further", cls="band",
-                    lede="For each chapter, a companion page with the scholarly discussion behind it: the debates, the qualifications "
-                         "the chapter leaves out, and the primary and secondary sources.")
+        idx = (hero(art, "guide", up(1), kicker="Deeper study", title="Going deeper", cls="band",
+                    lede="For each chapter, a companion that explains every section again, with examples and exercises, "
+                         "fills in what the chapter leaves out, and gives the debates and sources behind it.")
                + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px"><ul class="sch-index">{rows}</ul></main>')
-        page("scholarly/index.html", other_rel="guide/index.html", root=up(1), title="Scholarly companions",
-             desc="Scholarly discussion and sources for the chapters of the guide.", body=idx, current="guide",
+        page("scholarly/index.html", other_rel="guide/index.html", root=up(1), title="Deeper study",
+             desc="Every chapter of the guide explained further, with examples, exercises, debates and sources.", body=idx, current="guide",
              hero_img=(art.src("guide", up(1)), art.srcset("guide", up(1))), bar="clear")
         built.add("index.html")
     for p in SCHOLARLY.glob("*.html"):  # a companion no longer built (a draft, after a preview) leaves no page behind
