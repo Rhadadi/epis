@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 272 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 270 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -969,26 +969,6 @@
    "doi": "10.15173/jhap.v5i5.3204",
    "url": "https://doi.org/10.15173/jhap.v5i5.3204",
    "license": "CC-BY-NC",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "The Knowledge Argument Is an Argument about Knowledge",
-   "authors": "Crane, Tim",
-   "year": "2019",
-   "source": "Cambridge University Press eBooks",
-   "doi": "10.1017/9781316494134.002",
-   "url": "https://www.cambridge.org/core/books/knowledge-argument/knowledge-argument-is-an-argument-about-knowledge/8CEC0ED38306AA466612CFA210F7219D",
-   "license": "open-access",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Knowing the Answer",
-   "authors": "Schaffer, Jonathan",
-   "year": "2007",
-   "source": "Philosophy and Phenomenological Research",
-   "doi": "10.1111/j.1933-1592.2007.00081.x",
-   "url": "http://hdl.handle.net/1885/18397",
-   "license": "open-access",
    "retrieved": "2026-10-01"
   },
   {

@@ -22,7 +22,9 @@ class P(HTMLParser):
                     u = part.strip().split(" ")[0]
                     if u: self.refs.append((tag, k, u))
 
-pages = [p for p in ROOT.rglob("*.html") if not SKIP & set(p.relative_to(ROOT).parts)]
+# hidden directories (.git, a .venv with its packages' test pages) are not part of the site
+pages = [p for p in ROOT.rglob("*.html")
+         if not SKIP & set(p.relative_to(ROOT).parts) and not any(x.startswith(".") for x in p.relative_to(ROOT).parts)]
 parsed = {}
 for p in pages:
     x = P(); x.feed(p.read_text(encoding="utf-8")); parsed[p] = x

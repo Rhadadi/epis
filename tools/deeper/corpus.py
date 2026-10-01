@@ -2,7 +2,7 @@
 import csv, json, os, sys, datetime
 from urllib.parse import urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from corpus_lib import ROOT, TOPIC_DIR
+from corpus_lib import ROOT, TOPIC_DIR, c
 BASE = TOPIC_DIR
 OUT = f"{ROOT}/deeper/data/corpus.json"
 HOSTS = {"plato.stanford.edu": "The Stanford Encyclopedia of Philosophy", "www.gutenberg.org": "Project Gutenberg", "archive.org": "Internet Archive", "iep.utm.edu": "Internet Encyclopedia of Philosophy",
@@ -11,7 +11,13 @@ PARTIAL = {"Doxastic Deliberation": "repository record only; the article itself 
            "Choosing and refusing: doxastic voluntarism and folk psychology": "abstract only"}
 INDEX = {f: os.path.join(dp, f) for dp, _, fs in os.walk(f"{BASE}/oa") for f in fs}
 docs = []
+# only what was actually indexed: a download that yielded no passages (a login wall, a bare repository record)
+# was never part of the research corpus
+INDEXED = {os.path.basename(r["source_file"]) for r in c.execute("SELECT source_file FROM docs WHERE n_chunks > 0")}
 for r in csv.DictReader(open(f"{BASE}/oa_metadata.csv")):
+    if r["file"] not in INDEXED:
+        print("not indexed, left out:", r["title"][:80])
+        continue
     path = INDEX[r["file"]]
     url = r["link"] or (f"https://doi.org/{r['doi']}" if r["doi"] else "")
     d = {"title": r["title"], "authors": r["authors"], "year": r["year"],

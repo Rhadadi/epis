@@ -62,36 +62,54 @@ tools/deeper/check.sh          # builds strictly, runs frozen.py and check_links
 
 ### 3.2 The research corpus (needed to write new pages)
 
-The pages are researched from one corpus of 272 open texts: 210 Stanford Encyclopedia of Philosophy entries,
-17 IEP entries, 20 Project Gutenberg books, Internet Archive scans and some open-access articles. It is listed
+The pages are researched from one corpus of 270 open texts: 210 Stanford Encyclopedia of Philosophy entries,
+17 IEP entries, 20 Project Gutenberg books, 8 Internet Archive scans and 15 open-access articles. It is listed
 in `deeper/data/corpus.json`. The texts themselves are **not** in this repository, because SEP, IEP and
 several articles may be read freely but not redistributed. A new machine fetches them again:
 
 ```sh
 # next to the epis checkout
-git clone -b epis-evidence https://github.com/Rhadadi/search-bot && cd search-bot
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt fastembed
-.venv/bin/python scripts/embed_server.py &        # embeddings on 127.0.0.1:8082 (downloads BAAI/bge-base-en-v1.5)
-cd ../epis
+git clone -b epis-evidence https://github.com/Rhadadi/search-bot
+python3 -m venv search-bot/.venv && search-bot/.venv/bin/pip install -r search-bot/requirements.txt
+cd epis
 cp tools/deeper/sb.env.example ~/.config/epis-sb.env   # edit SEARCHBOT_DIR; keep it outside the repo
 . ~/.config/epis-sb.env
-../search-bot/.venv/bin/python tools/deeper/rebuild_corpus.py --dry-run   # shows the 272 targets
-../search-bot/.venv/bin/python tools/deeper/rebuild_corpus.py             # fetches and indexes them (about an hour on a CPU)
+python3 tools/deeper/lexical_embed_server.py &          # embedding server on :8082, no download (see below)
+P=../search-bot/.venv/bin/python
+$P tools/deeper/rebuild_corpus.py --check-hosts   # every source host reachable?
+$P tools/deeper/rebuild_corpus.py --dry-run       # the 270 targets
+$P tools/deeper/rebuild_corpus.py                 # fetch and index; ends with the coverage report
+$P tools/deeper/rebuild_corpus.py --report        # any time: what is missing, by name; exit 1 if anything is
+$P tools/deeper/find.py 'gettier AND luck' '%' 8 900   # a smoke test
 ```
+
+The download step tolerates failures batch by batch, so a quiet run proves nothing: the closing `--report`
+is the test. It lists each missing document with its link and exits 1 until the corpus is complete.
+
+**Embeddings.** search-bot's indexer stores a vector for every passage, so it needs an embedding server, but
+none of the tools here use the vectors: they search the full-text index. `lexical_embed_server.py` (standard
+library only) answers the indexer with hashed word vectors and needs no download. search-bot's own
+`scripts/embed_server.py` (`pip install fastembed`) serves the real model, BAAI/bge-base-en-v1.5, but downloads
+it from Hugging Face's CDN (`huggingface.co` redirecting to `*.hf.co` hosts such as `us.aws.cdn.hf.co`), which
+sandbox proxies often refuse. Use the real model only if you want search-bot's semantic search, and then
+rebuild the corpus with it, since the two kinds of vector do not mix.
 
 From then on, run every tool in `tools/deeper/` with the search-bot Python
 (`../search-bot/.venv/bin/python`) and with `sb.env` sourced. SEP entries are fetched from the same archived
-edition the pages cite, so excerpts in existing provenance files still match. Passage numbers
-(`corpus_chunk`) will differ from those already recorded; they belong to the snapshot they were checked
-against, and nothing needs regenerating.
+edition the pages cite, so excerpts in existing provenance files still match. A test rebuild of two sources
+matched all 55 of their recorded excerpts. Passage numbers (`corpus_chunk`) will differ from those already
+recorded. They belong to the snapshot they were checked against, so nothing needs regenerating; do not
+regenerate `corpus.json` or provenance files as part of setup.
 
-Hosts the corpus needs: `plato.stanford.edu`, `iep.utm.edu`, `www.gutenberg.org`, `archive.org`,
-`en.wikisource.org`, `www.ebi.ac.uk`, `api.openalex.org`, `api.crossref.org`, `openlibrary.org`, `doi.org`,
-`huggingface.co` (the embedding model), `pypi.org`.
+Hosts the corpus needs: `plato.stanford.edu`, `iep.utm.edu`, `www.gutenberg.org`, `archive.org` (and the
+`*.archive.org` hosts it redirects downloads to), `en.wikisource.org`, `www.ebi.ac.uk`, `api.openalex.org`,
+`api.crossref.org`, `openlibrary.org`, `doi.org` and the publisher or repository hosts OpenAlex points to,
+and `pypi.org` with `files.pythonhosted.org` for installing.
 
-**OpenAlex.** Ten articles come through OpenAlex, which needs an API key (`SEARCHBOT_OPENALEX_KEY`). Get your
-own at <https://openalex.org> and set it as an environment variable or agent secret, never in a file. Without
-it those ten are reported as "catalogue only" and skipped; the pages that cite them were already checked.
+**OpenAlex.** Eight articles come through OpenAlex, which needs an API key (`SEARCHBOT_OPENALEX_KEY`). Get your
+own at <https://openalex.org> and set it as an environment variable or agent secret, never in a file. To check
+it is set without printing it: `[ -n "${SEARCHBOT_OPENALEX_KEY:-}" ] && echo present`. Without it those eight
+are reported missing; the pages that cite them were already checked.
 
 **Hosts that refused downloads (403) from the original research container:** philpapers.org (most often),
 onlinelibrary.wiley.com, read.dukeupress.edu, escholarship.org, www.tandfonline.com, www.sciencedirect.com,
@@ -103,15 +121,19 @@ otherwise cite such works through a secondary source.
 Codex reads `AGENTS.md` at the repository root, which points here.
 
 - **Codex cloud** (chatgpt.com/codex): connect GitHub, choose `rhadadi/epis`, and create an environment
-  ([docs](https://developers.openai.com/codex/cloud/environments)). Setup scripts have network access, but the
-  agent phase is **offline by default**, and secrets are available only during setup. So either do the corpus
-  build in the setup script (clone search-bot, `pip install`, start the embedding server, run
-  `rebuild_corpus.py`), or turn on agent internet access with a domain allowlist of the hosts above. Put
-  `SEARCHBOT_OPENALEX_KEY` in the environment's secrets. Codex cloud containers are temporary, so the corpus is
-  rebuilt for each task unless you cache it.
+  ([docs](https://developers.openai.com/codex/cloud/environments)). Use this as the setup script:
+
+  ```sh
+  WORKSPACE=/workspace bash /workspace/epis/tools/deeper/codex_setup.sh
+  ```
+
+  It installs the site and research tools, runs `check.sh`, starts the lexical embedding server, tests the
+  hosts, fetches what is missing from the corpus and prints the coverage report. Re-running it is safe. Put
+  `SEARCHBOT_OPENALEX_KEY` in the environment's secrets and the hosts of 3.2 in its internet-access
+  allowlist. Background processes do not survive into later sessions: restart the embedding server (the
+  script's middle step) before fetching new texts. Searching and checking an existing corpus need no server.
 - **Codex CLI** (`npm install -g @openai/codex`, <https://github.com/openai/codex>): runs on your own machine
-  with your network. Do 3.1 and 3.2 once, then run `codex` in the epis directory. This is the simpler route
-  for a long job like this one.
+  with your network. Do 3.1 and 3.2 once, then run `codex` in the epis directory.
 
 ## 4. The loop, one chapter at a time
 
@@ -177,7 +199,9 @@ Look at a finished chapter before starting: `deeper/src/03-logic-and-arguments/`
 | `prov2.py SPEC...` | Write and check provenance files from specs |
 | `srcadd.py`, `register_all.py` | Add bibliography entries from the corpus, Crossref or Open Library |
 | `acquire_json.py FILE` | Fetch and index new open texts |
-| `rebuild_corpus.py` | Recreate the whole corpus on a new machine |
+| `rebuild_corpus.py` | Recreate the corpus on a new machine; `--check-hosts`, `--report` |
+| `lexical_embed_server.py` | Embedding server that needs no model download |
+| `codex_setup.sh` | Whole setup for a sandboxed agent (Codex cloud) |
 | `corpus.py` | Regenerate `deeper/data/corpus.json` |
 | `check.sh` | Strict build, frozen check, link check, EPUB timestamp restore |
 | `specs/02–04.txt` | The evidence specs for chapters 2–4 (chapter 1 was made with earlier scripts) |
