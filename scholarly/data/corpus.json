@@ -1,0 +1,587 @@
+{
+  "name": "search/epistemology",
+  "note": "The texts the chapter companions were researched from. All are open access, free to read or in the public domain; the corpus itself is not redistributed here.",
+  "documents": [
+    {
+      "title": "Epistemology",
+      "authors": "Steup, Matthias; Ram Neta",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2025/entries/epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Critical Thinking",
+      "authors": "Hitchcock, David",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/critical-thinking/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemological Problems of Testimony",
+      "authors": "Leonard, Nick",
+      "year": "2023",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2023/entries/testimony-episprob/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Ancient Skepticism",
+      "authors": "Vogt, Katja",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2026/entries/skepticism-ancient/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Metaepistemology",
+      "authors": "Carter, J. Adam; Ernest Sosa",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2026/entries/metaepistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Knowledge How",
+      "authors": "Pavese, Carlotta",
+      "year": "2022",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2022/entries/knowledge-how/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Knowledge by Acquaintance vs. Description",
+      "authors": "Hasan, Ali; Richard Fumerton",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/knowledge-acquaindescrip/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Qualia: The Knowledge Argument",
+      "authors": "Nida-Rümelin, Martine; Donnchadh O Conaill",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2026/entries/qualia-knowledge/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Understanding",
+      "authors": "Grimm, Stephen",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2025/entries/understanding/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Analysis of Knowledge",
+      "authors": "Ichikawa, Jonathan; Matthias Steup",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2026/entries/knowledge-analysis/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Belief",
+      "authors": "Schwitzgebel, Eric",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2024/entries/belief/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Formal Representations of Belief",
+      "authors": "Genin, Konstantin; Franz Huber",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2026/entries/formal-belief/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Bayesian Epistemology",
+      "authors": "Lin, Hanti",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemology-bayesian/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemic Paradoxes",
+      "authors": "Sorensen, Roy",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2024/entries/epistemic-paradoxes/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Propositions",
+      "authors": "McGrath, Matthew; Devin Frank",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2024/entries/propositions/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Truth",
+      "authors": "Glanzberg, Michael",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2025/entries/truth/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Correspondence Theory of Truth",
+      "authors": "David, Marian",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2025/entries/truth-correspondence/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Evidence",
+      "authors": "Kelly, Thomas",
+      "year": "2016",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2016/entries/evidence/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Certainty",
+      "authors": "Reed, Baron",
+      "year": "2022",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2022/entries/certainty/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Reasons for Action: Justification, Motivation, Explanation",
+      "authors": "Alvarez, Maria; Jonathan Way",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2024/entries/reasons-just-vs-expl/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Epistemic Basing Relation",
+      "authors": "Korcz, Keith Allen",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2026/entries/basing-epistemic/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Defeasible Reasoning",
+      "authors": "Koons, Robert",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2025/entries/reasoning-defeasible/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "A Priori Justification and Knowledge",
+      "authors": "Russell, Bruce",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/apriori/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Analytic/Synthetic Distinction",
+      "authors": "Rey, Georges",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2026/entries/analytic-synthetic/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Rigid Designators",
+      "authors": "LaPorte, Joseph",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2026/entries/rigid-designators/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Two-Dimensional Semantics",
+      "authors": "Schroeter, Laura",
+      "year": "2021",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2021/entries/two-dimensional-semantics/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Kant’s Philosophy of Mathematics",
+      "authors": "Shabel, Lisa",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2025/entries/kant-mathematics/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Epistemology of Modality",
+      "authors": "Mallozzi, Antonella, Anand Vaidya,; Michael Wallner",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/modality-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Pascal’s Wager",
+      "authors": "Hájek, Alan",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/pascal-wager/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Ethics of Belief",
+      "authors": "Chignell, Andrew",
+      "year": "2018",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2018/entries/ethics-belief/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Doxastic Voluntarism",
+      "authors": "Boespflug, Mark; Elizabeth Jackson",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2024/entries/doxastic-voluntarism/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Naturalism in Epistemology",
+      "authors": "Rysiew, Patrick",
+      "year": "2021",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2021/entries/epistemology-naturalized/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemic Utility Arguments for Epistemic Norms",
+      "authors": "Pettigrew, Richard",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemic-utility/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Value of Knowledge",
+      "authors": "Pritchard, Duncan, John Turri,; J. Adam Carter",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2025/entries/knowledge-value/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Virtue Epistemology",
+      "authors": "Turri, John, Mark Alfano,; John Greco",
+      "year": "2021",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2021/entries/epistemology-virtue/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Social Epistemology",
+      "authors": "O’Connor, Cailin, Sanford Goldberg,; Alvin Goldman",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2026/entries/epistemology-social/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Feminist Epistemology and Philosophy of Science",
+      "authors": "Anderson, Elizabeth",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2024/entries/feminism-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Formal Epistemology",
+      "authors": "Weisberg, Jonathan",
+      "year": "2021",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2021/entries/formal-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Moral Epistemology",
+      "authors": "Campbell, Richmond",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/moral-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Epistemology of Religion",
+      "authors": "Forrest, Peter",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2025/entries/religion-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemology in Classical Indian Philosophy",
+      "authors": "Phillips, Stephen; Anand Vaidya",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2026/entries/epistemology-india/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemology in Chinese Philosophy",
+      "authors": "Rošker, Jana",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2025/entries/chinese-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Suhrawardi",
+      "authors": "Marcotte, Roxanne",
+      "year": "2025",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2025/entries/suhrawardi/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Imagination",
+      "authors": "Munro, Daniel, Shen-yi Liao,; Tamar Gendler",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/spr2026/entries/imagination/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Faith",
+      "authors": "Bishop, John; Daniel J. McKaughan",
+      "year": "2023",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2023/entries/faith/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Scientific Objectivity",
+      "authors": "Reiss, Julian; Jan Sprenger",
+      "year": "2020",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/win2020/entries/scientific-objectivity/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Epistemic Contextualism",
+      "authors": "Rysiew, Patrick",
+      "year": "2026",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/fall2026/entries/contextualism-epistemology/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Problems of Philosophy",
+      "authors": "Russell, Bertrand",
+      "year": "1912",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/5827",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Mysticism and Logic and Other Essays",
+      "authors": "Russell, Bertrand",
+      "year": "1918",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/25447",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "An Enquiry Concerning Human Understanding",
+      "authors": "Hume, David",
+      "year": "1748",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/9662",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Will to Believe, and Other Essays in Popular Philosophy",
+      "authors": "James, William",
+      "year": "1897",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/26659",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Pascal's Pensées",
+      "authors": "Pascal, Blaise; Eliot, T. S. (Thomas Stearns), 1888-1965 [Author of introduction, etc.]",
+      "year": "1670",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The Critique of Pure Reason",
+      "authors": "Kant, Immanuel",
+      "year": "1781",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/4280",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "An Essay Concerning Humane Understanding, Volume 2\n MDCXC, Based on the 2nd Edition, Books 3 and 4",
+      "authors": "Locke, John",
+      "year": "1690",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/10616",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Sextus Empiricus and Greek Scepticism",
+      "authors": "Patrick, Mary Mills",
+      "year": "1899",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/17556",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Theaetetus",
+      "authors": "Plato, 428? BCE-348? BCE",
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/1726",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Lectures and Essays, Volume 2",
+      "authors": "Clifford, William Kingdon",
+      "year": "1879",
+      "source": "Internet Archive",
+      "url": "https://archive.org/details/lecturesessaysby02clif",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Institutes of Metaphysic: The Theory of Knowing and Being",
+      "authors": "Ferrier, James Frederick",
+      "year": "1856",
+      "source": "Internet Archive",
+      "url": "https://archive.org/details/institutesofmeta00ferr",
+      "license": "public-domain",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Problem of the Criterion",
+      "source": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/problem-of-the-criterion/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Fallibilism",
+      "source": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/fallibil/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Ferrier, James Frederick",
+      "source": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/ferrier/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "The association between exaggeration in health related science news and academic press releases: retrospective observational study",
+      "authors": "Sumner, Petroc; Vivian-Griffiths, Solveiga; Boivin, Jacky; Williams, Andy; Venetis, Christos A.; et al.",
+      "year": "2014",
+      "source": "BMJ",
+      "doi": "10.1136/bmj.g7015",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4262123/fullTextXML",
+      "license": "CC-BY",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Influence of medical journal press releases on the quality of associated newspaper coverage: retrospective cohort study",
+      "authors": "Schwartz, Lisa M.; Woloshin, Steven; Andrews, Alice; Stukel, Therese A.",
+      "year": "2012",
+      "source": "BMJ",
+      "doi": "10.1136/bmj.d8164",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3267473/fullTextXML",
+      "license": "CC-BY-NC",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Why Most Published Research Findings Are False",
+      "authors": "Ioannidis, John P. A.",
+      "year": "2005",
+      "source": "PLoS Medicine",
+      "doi": "10.1371/journal.pmed.0020124",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1182327/fullTextXML",
+      "license": "CC-BY",
+      "retrieved": "2026-10-01"
+    },
+    {
+      "title": "Self-Knowledge",
+      "authors": "Gertler, Brie",
+      "year": "2024",
+      "source": "The Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/archives/sum2024/entries/self-knowledge/",
+      "license": "free-to-read",
+      "retrieved": "2026-10-01"
+    }
+  ]
+}

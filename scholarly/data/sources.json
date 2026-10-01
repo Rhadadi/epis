@@ -1,7 +1,297 @@
 {
+  "alston1988": {
+    "type": "article",
+    "authors": [
+      "Alston, William P."
+    ],
+    "year": 1988,
+    "title": "The Deontological Conception of Epistemic Justification",
+    "container": "Philosophical Perspectives",
+    "volume": "2",
+    "pages": "257–99",
+    "doi": "10.2307/2214077",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI; end page from the SEP bibliographies, 2026-10-01"
+  },
+  "alvarez-way2024": {
+    "type": "entry",
+    "authors": [
+      "Alvarez, Maria",
+      "Way, Jonathan"
+    ],
+    "year": 2024,
+    "title": "Reasons for Action: Justification, Motivation, Explanation",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/reasons-just-vs-expl/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "anderson2024": {
+    "type": "entry",
+    "authors": [
+      "Anderson, Elizabeth"
+    ],
+    "year": 2024,
+    "title": "Feminist Epistemology and Philosophy of Science",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/feminism-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "berker2013": {
+    "type": "article",
+    "authors": [
+      "Berker, Selim"
+    ],
+    "year": 2013,
+    "title": "Epistemic Teleology and the Separateness of Propositions",
+    "container": "Philosophical Review",
+    "volume": "122",
+    "issue": "3",
+    "pages": "337–93",
+    "doi": "10.1215/00318108-2087645",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "bishop-mckaughan2023": {
+    "type": "entry",
+    "authors": [
+      "Bishop, John",
+      "McKaughan, Daniel J."
+    ],
+    "year": 2023,
+    "title": "Faith",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/faith/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
+  "boespflug-jackson2024": {
+    "type": "entry",
+    "authors": [
+      "Boespflug, Mark",
+      "Jackson, Elizabeth"
+    ],
+    "year": 2024,
+    "title": "Doxastic Voluntarism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/doxastic-voluntarism/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
+  "bratman1992": {
+    "type": "article",
+    "authors": [
+      "Bratman, Michael E."
+    ],
+    "year": 1992,
+    "title": "Practical Reasoning and Acceptance in a Context",
+    "container": "Mind",
+    "volume": "101",
+    "issue": "401",
+    "pages": "1–16",
+    "doi": "10.1093/mind/101.401.1",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "campbell2024": {
+    "type": "entry",
+    "authors": [
+      "Campbell, Richmond"
+    ],
+    "year": 2024,
+    "title": "Moral Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/moral-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "carter-sosa2026": {
+    "type": "entry",
+    "authors": [
+      "Carter, J. Adam",
+      "Sosa, Ernest"
+    ],
+    "year": 2026,
+    "title": "Metaepistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/metaepistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "chignell2018": {
+    "type": "entry",
+    "authors": [
+      "Chignell, Andrew"
+    ],
+    "year": 2018,
+    "title": "The Ethics of Belief",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2018 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2018/entries/ethics-belief/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2018 Edition; full text read, 2026-10-01"
+  },
+  "chisholm1973": {
+    "type": "book",
+    "authors": [
+      "Chisholm, Roderick M."
+    ],
+    "year": 1973,
+    "title": "The Problem of the Criterion",
+    "place": "Milwaukee",
+    "publisher": "Marquette University Press",
+    "isbn": "9780874621389",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "clifford1879": {
+    "type": "chapter",
+    "authors": [
+      "Clifford, William Kingdon"
+    ],
+    "year": 1879,
+    "original_year": 1877,
+    "title": "The Ethics of Belief",
+    "container": "Lectures and Essays, vol. 2",
+    "editors": [
+      "Stephen, Leslie",
+      "Pollock, Frederick"
+    ],
+    "place": "London",
+    "publisher": "Macmillan",
+    "url": "https://archive.org/details/lecturesessaysby02clif",
+    "access": "public-domain",
+    "verified": "Internet Archive scan and its catalogue record (London: Macmillan, 1879, vol. 2); essay begins p. 177; full text read, 2026-10-01"
+  },
+  "cohen1992": {
+    "type": "book",
+    "authors": [
+      "Cohen, L. Jonathan"
+    ],
+    "year": 1992,
+    "title": "An Essay on Belief and Acceptance",
+    "place": "Oxford",
+    "publisher": "Clarendon Press",
+    "isbn": "9780198242949",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "david2025": {
+    "type": "entry",
+    "authors": [
+      "David, Marian"
+    ],
+    "year": 2025,
+    "title": "The Correspondence Theory of Truth",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/truth-correspondence/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
+  },
+  "ferrier1856": {
+    "type": "book",
+    "authors": [
+      "Ferrier, James Frederick"
+    ],
+    "year": 1856,
+    "title": "Institutes of Metaphysic: The Theory of Knowing and Being",
+    "edition": "2nd ed. (1st ed. 1854)",
+    "place": "Edinburgh",
+    "publisher": "William Blackwood and Sons",
+    "url": "https://archive.org/details/institutesofmeta00ferr",
+    "access": "public-domain",
+    "verified": "Internet Archive scan (title page: second edition) and catalogue record (Edinburgh: W. Blackwood, 1856); first edition 1854 per the IEP entry; full text read, 2026-10-01"
+  },
+  "forrest2025": {
+    "type": "entry",
+    "authors": [
+      "Forrest, Peter"
+    ],
+    "year": 2025,
+    "title": "The Epistemology of Religion",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2025/entries/religion-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "fricker2007": {
+    "type": "book",
+    "authors": [
+      "Fricker, Miranda"
+    ],
+    "year": 2007,
+    "title": "Epistemic Injustice: Power and the Ethics of Knowing",
+    "place": "Oxford",
+    "publisher": "Oxford University Press",
+    "isbn": "9780198237907",
+    "doi": "10.1093/acprof:oso/9780198237907.001.0001",
+    "verified": "Open Library edition record for the ISBN; DOI from the SEP bibliography, 2026-10-01"
+  },
+  "geninhuber2026": {
+    "type": "entry",
+    "authors": [
+      "Genin, Konstantin",
+      "Huber, Franz"
+    ],
+    "year": 2026,
+    "title": "Formal Representations of Belief",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/formal-belief/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
   "gettier1963": {
     "type": "article",
-    "authors": ["Gettier, Edmund L."],
+    "authors": [
+      "Gettier, Edmund L."
+    ],
     "year": 1963,
     "title": "Is Justified True Belief Knowledge?",
     "container": "Analysis",
@@ -12,15 +302,978 @@
     "access": "subscription",
     "verified": "Crossref record for the DOI, 2026-10-01"
   },
+  "glanzberg2025": {
+    "type": "entry",
+    "authors": [
+      "Glanzberg, Michael"
+    ],
+    "year": 2025,
+    "title": "Truth",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/truth/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "goldman1999": {
+    "type": "book",
+    "authors": [
+      "Goldman, Alvin I."
+    ],
+    "year": 1999,
+    "title": "Knowledge in a Social World",
+    "place": "Oxford",
+    "publisher": "Clarendon Press",
+    "isbn": "9780198237778",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "grimm2025": {
+    "type": "entry",
+    "authors": [
+      "Grimm, Stephen"
+    ],
+    "year": 2025,
+    "title": "Understanding",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2025/entries/understanding/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "haeriyazdi1992": {
+    "type": "book",
+    "authors": [
+      "Ha'iri Yazdi, Mehdi"
+    ],
+    "year": 1992,
+    "title": "The Principles of Epistemology in Islamic Philosophy: Knowledge by Presence",
+    "place": "Albany",
+    "publisher": "State University of New York Press",
+    "isbn": "9780791409473",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "hajek2024": {
+    "type": "entry",
+    "authors": [
+      "Hájek, Alan"
+    ],
+    "year": 2024,
+    "title": "Pascal’s Wager",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/pascal-wager/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "hasan-fumerton2024": {
+    "type": "entry",
+    "authors": [
+      "Hasan, Ali",
+      "Fumerton, Richard"
+    ],
+    "year": 2024,
+    "title": "Knowledge by Acquaintance vs. Description",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/knowledge-acquaindescrip/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "hetherington-iep": {
+    "type": "entry",
+    "authors": [
+      "Hetherington, Stephen"
+    ],
+    "title": "Fallibilism",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/fallibil/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "hitchcock2024": {
+    "type": "entry",
+    "authors": [
+      "Hitchcock, David"
+    ],
+    "year": 2024,
+    "title": "Critical Thinking",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/critical-thinking/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "hume1748": {
+    "type": "book",
+    "authors": [
+      "Hume, David"
+    ],
+    "year": 1902,
+    "original_year": 1748,
+    "title": "An Enquiry Concerning Human Understanding",
+    "edition": "Edited by L. A. Selby-Bigge from the posthumous edition of 1777. 2nd ed.",
+    "url": "https://www.gutenberg.org/ebooks/9662",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #9662, full text and title page read; cited by section and part, 2026-10-01"
+  },
+  "ichikawa-steup2026": {
+    "type": "entry",
+    "authors": [
+      "Ichikawa, Jonathan Jenkins",
+      "Steup, Matthias"
+    ],
+    "year": 2026,
+    "title": "The Analysis of Knowledge",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/knowledge-analysis/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "ioannidis2005": {
+    "type": "article",
+    "authors": [
+      "Ioannidis, John P. A."
+    ],
+    "year": 2005,
+    "title": "Why Most Published Research Findings Are False",
+    "container": "PLoS Medicine",
+    "volume": "2",
+    "issue": "8",
+    "pages": "e124",
+    "doi": "10.1371/journal.pmed.0020124",
+    "access": "open-access",
+    "url": "https://europepmc.org/article/PMC/PMC1182327",
+    "verified": "Crossref record for the DOI; full text (CC BY) read through Europe PMC, PMC1182327, 2026-10-01"
+  },
+  "jackson1982": {
+    "type": "article",
+    "authors": [
+      "Jackson, Frank"
+    ],
+    "year": 1982,
+    "title": "Epiphenomenal Qualia",
+    "container": "Philosophical Quarterly",
+    "volume": "32",
+    "issue": "127",
+    "pages": "127–36",
+    "doi": "10.2307/2960077",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI; end page from the SEP bibliographies, 2026-10-01"
+  },
+  "james1897": {
+    "type": "book",
+    "authors": [
+      "James, William"
+    ],
+    "year": 1897,
+    "title": "The Will to Believe, and Other Essays in Popular Philosophy",
+    "place": "New York",
+    "publisher": "Longmans, Green, and Co.",
+    "url": "https://www.gutenberg.org/ebooks/26659",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #26659, full text and title page read; a 1912 impression of the 1897 edition, with the original page numbers, by which it is cited, 2026-10-01"
+  },
+  "kant1787": {
+    "type": "book",
+    "authors": [
+      "Kant, Immanuel"
+    ],
+    "year": "1781/1787",
+    "title": "Critique of Pure Reason",
+    "translator": "J. M. D. Meiklejohn",
+    "url": "https://www.gutenberg.org/ebooks/4280",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #4280, full text and title page read; Meiklejohn's translation; cited by the pages of the second (B) edition, 2026-10-01"
+  },
+  "keefe-iep": {
+    "type": "entry",
+    "authors": [
+      "Keefe, Jenny"
+    ],
+    "title": "Ferrier, James Frederick",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/ferrier/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "kelly2016": {
+    "type": "entry",
+    "authors": [
+      "Kelly, Thomas"
+    ],
+    "year": 2016,
+    "title": "Evidence",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2016 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2016/entries/evidence/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2016 Edition; full text read, 2026-10-01"
+  },
+  "kim1988": {
+    "type": "article",
+    "authors": [
+      "Kim, Jaegwon"
+    ],
+    "year": 1988,
+    "title": "What Is ‘Naturalized Epistemology’?",
+    "container": "Philosophical Perspectives",
+    "volume": "2",
+    "pages": "381–",
+    "doi": "10.2307/2214082",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI (start page only; the SEP bibliographies disagree on the end page), 2026-10-01"
+  },
+  "koons2025": {
+    "type": "entry",
+    "authors": [
+      "Koons, Robert"
+    ],
+    "year": 2025,
+    "title": "Defeasible Reasoning",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/reasoning-defeasible/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
+  },
+  "kripke1980": {
+    "type": "book",
+    "authors": [
+      "Kripke, Saul A."
+    ],
+    "year": 1980,
+    "title": "Naming and Necessity",
+    "place": "Cambridge, MA",
+    "publisher": "Harvard University Press",
+    "isbn": "9780674598454",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "laporte2026": {
+    "type": "entry",
+    "authors": [
+      "LaPorte, Joseph"
+    ],
+    "year": 2026,
+    "title": "Rigid Designators",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/rigid-designators/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "leonard2023": {
+    "type": "entry",
+    "authors": [
+      "Leonard, Nick"
+    ],
+    "year": 2023,
+    "title": "Epistemological Problems of Testimony",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2023/entries/testimony-episprob/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2023 Edition; full text read, 2026-10-01"
+  },
+  "lin2024": {
+    "type": "entry",
+    "authors": [
+      "Lin, Hanti"
+    ],
+    "year": 2024,
+    "title": "Bayesian Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemology-bayesian/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "locke1690": {
+    "type": "book",
+    "authors": [
+      "Locke, John"
+    ],
+    "year": 1690,
+    "title": "An Essay Concerning Humane Understanding, Volume 2 (Books III and IV)",
+    "edition": "Text of the 2nd edition",
+    "url": "https://www.gutenberg.org/ebooks/10616",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #10616, full text and title page read; cited by book, chapter and section, 2026-10-01"
+  },
+  "mallozzi-etal2024": {
+    "type": "entry",
+    "authors": [
+      "Mallozzi, Antonella",
+      "Vaidya, Anand",
+      "Wallner, Michael"
+    ],
+    "year": 2024,
+    "title": "The Epistemology of Modality",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/modality-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "marcotte2025": {
+    "type": "entry",
+    "authors": [
+      "Marcotte, Roxanne"
+    ],
+    "year": 2025,
+    "title": "Suhrawardi",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/suhrawardi/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2025 Edition; full text read, 2026-10-01"
+  },
+  "mccain-iep": {
+    "type": "entry",
+    "authors": [
+      "McCain, Kevin"
+    ],
+    "title": "Problem of the Criterion",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/problem-of-the-criterion/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "mcgrath-frank2024": {
+    "type": "entry",
+    "authors": [
+      "McGrath, Matthew",
+      "Frank, Devin"
+    ],
+    "year": 2024,
+    "title": "Propositions",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/propositions/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "munro-etal2026": {
+    "type": "entry",
+    "authors": [
+      "Munro, Daniel",
+      "Liao, Shen-yi",
+      "Gendler, Tamar"
+    ],
+    "year": 2026,
+    "title": "Imagination",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/imagination/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
+  "nidarumelin-oconaill2026": {
+    "type": "entry",
+    "authors": [
+      "Nida-Rümelin, Martine",
+      "O Conaill, Donnchadh"
+    ],
+    "year": 2026,
+    "title": "Qualia: The Knowledge Argument",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/qualia-knowledge/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "oconnor-etal2026": {
+    "type": "entry",
+    "authors": [
+      "O’Connor, Cailin",
+      "Goldberg, Sanford",
+      "Goldman, Alvin"
+    ],
+    "year": 2026,
+    "title": "Social Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/epistemology-social/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "pascal1670": {
+    "type": "book",
+    "authors": [
+      "Pascal, Blaise"
+    ],
+    "year": 1958,
+    "original_year": 1670,
+    "title": "Pascal's Pensées",
+    "edition": "Introduction by T. S. Eliot",
+    "place": "New York",
+    "publisher": "E. P. Dutton",
+    "url": "https://www.gutenberg.org/ebooks/18269",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #18269, full text and title page read; cited by fragment number, 2026-10-01"
+  },
+  "pavese2022": {
+    "type": "entry",
+    "authors": [
+      "Pavese, Carlotta"
+    ],
+    "year": 2022,
+    "title": "Knowledge How",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2022 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2022/entries/knowledge-how/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2022 Edition; full text read, 2026-10-01"
+  },
+  "pettigrew2024": {
+    "type": "entry",
+    "authors": [
+      "Pettigrew, Richard"
+    ],
+    "year": 2024,
+    "title": "Epistemic Utility Arguments for Epistemic Norms",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemic-utility/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "phillips-vaidya2026": {
+    "type": "entry",
+    "authors": [
+      "Phillips, Stephen",
+      "Vaidya, Anand"
+    ],
+    "year": 2026,
+    "title": "Epistemology in Classical Indian Philosophy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/epistemology-india/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "plantinga1993": {
+    "type": "book",
+    "authors": [
+      "Plantinga, Alvin"
+    ],
+    "year": 1993,
+    "title": "Warrant: The Current Debate",
+    "place": "New York",
+    "publisher": "Oxford University Press",
+    "doi": "10.1093/0195078624.001.0001",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "plato-theaetetus": {
+    "type": "book",
+    "authors": [
+      "Plato"
+    ],
+    "title": "Theaetetus",
+    "translator": "Benjamin Jowett",
+    "url": "https://www.gutenberg.org/ebooks/1726",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #1726, full text and title page read; cited by the standard Stephanus pages, which this edition does not print, 2026-10-01"
+  },
+  "pritchard-etal2025": {
+    "type": "entry",
+    "authors": [
+      "Pritchard, Duncan",
+      "Turri, John",
+      "Carter, J. Adam"
+    ],
+    "year": 2025,
+    "title": "The Value of Knowledge",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/knowledge-value/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "quine1951": {
+    "type": "article",
+    "authors": [
+      "Quine, W. V."
+    ],
+    "year": 1951,
+    "title": "Two Dogmas of Empiricism",
+    "container": "Philosophical Review",
+    "volume": "60",
+    "issue": "1",
+    "pages": "20–43",
+    "doi": "10.2307/2181906",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI; end page from the SEP bibliographies, 2026-10-01"
+  },
+  "reed2022": {
+    "type": "entry",
+    "authors": [
+      "Reed, Baron"
+    ],
+    "year": 2022,
+    "title": "Certainty",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2022 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2022/entries/certainty/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2022 Edition; full text read, 2026-10-01"
+  },
+  "reiss-sprenger2020": {
+    "type": "entry",
+    "authors": [
+      "Reiss, Julian",
+      "Sprenger, Jan"
+    ],
+    "year": 2020,
+    "title": "Scientific Objectivity",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2020 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2020/entries/scientific-objectivity/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2020 Edition; full text read, 2026-10-01"
+  },
+  "rey2026": {
+    "type": "entry",
+    "authors": [
+      "Rey, Georges"
+    ],
+    "year": 2026,
+    "title": "The Analytic/Synthetic Distinction",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/analytic-synthetic/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "rosker2025": {
+    "type": "entry",
+    "authors": [
+      "Rošker, Jana S."
+    ],
+    "year": 2025,
+    "title": "Epistemology in Chinese Philosophy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/chinese-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
+  },
+  "russell-bruce2024": {
+    "type": "entry",
+    "authors": [
+      "Russell, Bruce"
+    ],
+    "year": 2024,
+    "title": "A Priori Justification and Knowledge",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/apriori/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "russell1911": {
+    "type": "article",
+    "authors": [
+      "Russell, Bertrand"
+    ],
+    "year": 1911,
+    "title": "Knowledge by Acquaintance and Knowledge by Description",
+    "container": "Proceedings of the Aristotelian Society",
+    "volume": "11",
+    "pages": "108–28",
+    "doi": "10.1093/aristotelian/11.1.108",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
   "russell1912": {
     "type": "book",
-    "authors": ["Russell, Bertrand"],
+    "authors": [
+      "Russell, Bertrand"
+    ],
     "year": 1912,
     "title": "The Problems of Philosophy",
-    "place": "London",
-    "publisher": "Williams and Norgate",
     "url": "https://www.gutenberg.org/ebooks/5827",
     "access": "public-domain",
-    "verified": "Project Gutenberg eBook #5827, full text, 2026-10-01"
+    "verified": "Project Gutenberg eBook #5827, full text and title page read; cited by chapter, 2026-10-01"
+  },
+  "ryle1946": {
+    "type": "article",
+    "authors": [
+      "Ryle, Gilbert"
+    ],
+    "year": 1946,
+    "title": "Knowing How and Knowing That: The Presidential Address",
+    "container": "Proceedings of the Aristotelian Society",
+    "volume": "46",
+    "pages": "1–16",
+    "doi": "10.1093/aristotelian/46.1.1",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "ryle1949": {
+    "type": "book",
+    "authors": [
+      "Ryle, Gilbert"
+    ],
+    "year": 1949,
+    "title": "The Concept of Mind",
+    "place": "London",
+    "publisher": "Hutchinson",
+    "url": "https://openlibrary.org/works/OL4294274W",
+    "access": "catalogue",
+    "verified": "Open Library work record (first published 1949; Hutchinson); pages as quoted in the SEP entry “Knowledge How”, 2026-10-01"
+  },
+  "rysiew2021": {
+    "type": "entry",
+    "authors": [
+      "Rysiew, Patrick"
+    ],
+    "year": 2021,
+    "title": "Naturalism in Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2021/entries/epistemology-naturalized/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2021 Edition; full text read, 2026-10-01"
+  },
+  "rysiew2026": {
+    "type": "entry",
+    "authors": [
+      "Rysiew, Patrick"
+    ],
+    "year": 2026,
+    "title": "Epistemic Contextualism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/contextualism-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "schwartz2012": {
+    "type": "article",
+    "authors": [
+      "Schwartz, Lisa M.",
+      "Woloshin, Steven",
+      "Andrews, Alice",
+      "Stukel, Therese A."
+    ],
+    "year": 2012,
+    "title": "Influence of Medical Journal Press Releases on the Quality of Associated Newspaper Coverage: Retrospective Cohort Study",
+    "container": "BMJ",
+    "volume": "344",
+    "pages": "d8164",
+    "doi": "10.1136/bmj.d8164",
+    "access": "open-access",
+    "url": "https://europepmc.org/article/PMC/PMC3267473",
+    "verified": "Crossref record for the DOI; full text (CC BY-NC) read through Europe PMC, PMC3267473, 2026-10-01"
+  },
+  "schwitzgebel2024": {
+    "type": "entry",
+    "authors": [
+      "Schwitzgebel, Eric"
+    ],
+    "year": 2024,
+    "title": "Belief",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2024/entries/belief/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2024 Edition; full text read, 2026-10-01"
+  },
+  "shabel2025": {
+    "type": "entry",
+    "authors": [
+      "Shabel, Lisa"
+    ],
+    "year": 2025,
+    "title": "Kant’s Philosophy of Mathematics",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/kant-mathematics/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "shah2003": {
+    "type": "article",
+    "authors": [
+      "Shah, Nishi"
+    ],
+    "year": 2003,
+    "title": "How Truth Governs Belief",
+    "container": "Philosophical Review",
+    "volume": "112",
+    "issue": "4",
+    "pages": "447–82",
+    "doi": "10.1215/00318108-112-4-447",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "sorensen2024": {
+    "type": "entry",
+    "authors": [
+      "Sorensen, Roy"
+    ],
+    "year": 2024,
+    "title": "Epistemic Paradoxes",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/epistemic-paradoxes/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "stanley-williamson2001": {
+    "type": "article",
+    "authors": [
+      "Stanley, Jason",
+      "Williamson, Timothy"
+    ],
+    "year": 2001,
+    "title": "Knowing How",
+    "container": "Journal of Philosophy",
+    "volume": "98",
+    "issue": "8",
+    "pages": "411–44",
+    "doi": "10.2307/2678403",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI (which misspells Williamson), 2026-10-01"
+  },
+  "steup-neta2025": {
+    "type": "entry",
+    "authors": [
+      "Steup, Matthias",
+      "Neta, Ram"
+    ],
+    "year": 2025,
+    "title": "Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "sumner2014": {
+    "type": "article",
+    "authors": [
+      "Sumner, Petroc",
+      "Vivian-Griffiths, Solveiga",
+      "Boivin, Jacky",
+      "Williams, Andy",
+      "Venetis, Christos A.",
+      "Davies, Aimée",
+      "Ogden, Jack",
+      "Whelan, Leanne",
+      "Hughes, Bethan",
+      "Dalton, Bethan",
+      "Boy, Fred",
+      "Chambers, Christopher D."
+    ],
+    "year": 2014,
+    "title": "The Association between Exaggeration in Health Related Science News and Academic Press Releases: Retrospective Observational Study",
+    "container": "BMJ",
+    "volume": "349",
+    "pages": "g7015",
+    "doi": "10.1136/bmj.g7015",
+    "access": "open-access",
+    "url": "https://europepmc.org/article/PMC/PMC4262123",
+    "verified": "Crossref record for the DOI; full text (CC BY) and author names read through Europe PMC, PMC4262123, 2026-10-01"
+  },
+  "turri-etal2021": {
+    "type": "entry",
+    "authors": [
+      "Turri, John",
+      "Alfano, Mark",
+      "Greco, John"
+    ],
+    "year": 2021,
+    "title": "Virtue Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2021/entries/epistemology-virtue/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2021 Edition; full text read, 2026-10-01"
+  },
+  "vogt2026": {
+    "type": "entry",
+    "authors": [
+      "Vogt, Katja"
+    ],
+    "year": 2026,
+    "title": "Ancient Skepticism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/skepticism-ancient/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "weisberg2021": {
+    "type": "entry",
+    "authors": [
+      "Weisberg, Jonathan"
+    ],
+    "year": 2021,
+    "title": "Formal Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2021/entries/formal-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2021 Edition; full text read, 2026-10-01"
+  },
+  "williams1973": {
+    "type": "book",
+    "authors": [
+      "Williams, Bernard"
+    ],
+    "year": 1973,
+    "title": "Problems of the Self",
+    "place": "Cambridge",
+    "publisher": "Cambridge University Press",
+    "isbn": "9780521290609",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "williamson2000": {
+    "type": "book",
+    "authors": [
+      "Williamson, Timothy"
+    ],
+    "year": 2000,
+    "title": "Knowledge and Its Limits",
+    "place": "Oxford",
+    "publisher": "Oxford University Press",
+    "isbn": "9780198250432",
+    "verified": "Open Library edition record for the ISBN, 2026-10-01"
   }
 }

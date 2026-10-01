@@ -2469,7 +2469,7 @@ def full_ref(src):
     if src.get("url"):
         label = {"open-access": "Full text (open access)", "public-domain": "Full text (public domain)"}.get(src.get("access"), "Stable link")
         ids.append(f'<a href="{x(src["url"])}">{label}</a>')
-    return f"{x(who).rstrip('.')}. {year}. {body}" + (" " + " · ".join(ids) if ids else "")
+    return f"{x(who).rstrip('.')}. {year.rstrip('.')}. {body}" + (" " + " · ".join(ids) if ids else "")
 
 
 def companion_problems(ch, comp, chapter_heads, sources, prov):
@@ -2530,7 +2530,7 @@ def companion_body(ch, comp, md, sources, prov, root):
             if km:
                 items.append((km.group(1), (km.group(2) or "").strip()))
         groups.append(items)
-        return f"CITEMARK{len(groups) - 1}Z"
+        return f"\u2045CITEMARK{len(groups) - 1}Z\u2046"  # bracketed by punctuation so a quote before it still closes
     text = re.sub(r"[ \t]*" + CITE.pattern, mark, comp["text"])  # a note number sits right after the word
     def rewrite(href):
         m = re.match(r"^(\d\d-[\w-]+)\.md(#.*)?$", href)
@@ -2561,7 +2561,7 @@ def companion_body(ch, comp, md, sources, prov, root):
                 bits.append(f'<a href="#src-{sid or "intro"}-{k}">{html.escape(short_cite(src))}</a>' + (f", {html.escape(loc)}" if loc else ""))
             notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="Back to the text">↩</a></li>')
             return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="Note {n}">{n}</a></sup>'
-        part = re.sub(r"CITEMARK(\d+)Z", cite, part)
+        part = re.sub(r"\u2045CITEMARK(\d+)Z\u2046", cite, part)
         if m:
             part = part.replace(m.group(0), f'<h2 id="{sid}"><span class="ht">{m.group(2)}</span></h2>'
                                 f'<p class="sch-back"><a href="../guide/{ch.href}#{sid}"><span aria-hidden="true">←</span> This section in the chapter</a></p>', 1)

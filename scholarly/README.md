@@ -16,6 +16,7 @@ writes the chapter page, never to the Markdown. `tools/site/frozen.py` checks th
 | `src/NN-*.md` | A companion, one per chapter, named like the chapter |
 | `data/sources.json` | The shared bibliography: every work any companion cites, with verified details |
 | `data/NN-*.json` | Provenance for one companion: for each section, the research questions asked and, for each source cited, what it was used for and the evidence behind it |
+| `data/corpus.json` | The research corpus: every text the companions were researched from, with its link, licence and retrieval date |
 | `NN-*.html`, `index.html` | Generated pages (do not edit) |
 
 ## Writing a companion
@@ -56,14 +57,24 @@ Ryle argued that knowing how is not a matter of knowing facts [@ryle1949, ch. 2]
     "three-kinds-of-knowing": {
       "questions": ["What is Ryle's argument against intellectualism about knowing how?"],
       "sources": [
-        {"key": "ryle1949", "used_for": ["Ryle's regress argument"],
-         "evidence": [{"locator": "ch. 2", "basis": "full text", "note": "the regress argument itself"}],
-         "annotation": "One line for the reader on why this source matters."}
+        {"key": "pavese2022", "used_for": ["Ryle's regress argument"],
+         "evidence": [{"locator": "§ 1", "basis": "full text", "corpus_chunk": 684,
+                       "excerpt": "it would be a logical impossibility for anyone ever to break into the circle"}],
+         "annotation": "One line for the reader on why this source matters."},
+        {"key": "ryle1949", "used_for": ["the regress argument, pp. 19–20"],
+         "evidence": [{"locator": "pp. 19–20", "basis": "secondary",
+                       "note": "Quoted in the SEP entry “Knowledge How” (pavese2022); the book itself was not read"}],
+         "annotation": "Ryle's classic statement of anti-intellectualism."}
       ]
     }
   }
 }
 ```
+
+An `excerpt` is the source's own words, copied from the passage that supports the claim; `corpus_chunk`
+numbers that passage in the research corpus snapshot (`corpus` at the top of the file), while the
+locator and excerpt identify it in the source itself. A top-level `not_verified_here` list records
+claims in the chapter that the research did not check.
 
 `basis` says how the claim was checked: `full text` (the work itself was read), `secondary` (through
 a named secondary source, which is then cited too), or `catalogue` (the bibliographic record only, for

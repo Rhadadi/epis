@@ -1,0 +1,2619 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "updated": "2026-10-01",
+  "method": "Research questions were run through an evidence-only retrieval tool (a fork of search-bot with a research_section tool) over one shared corpus of open-access and public-domain texts. Every excerpt below was checked, word for word, against the corpus passage it cites when this file was generated.",
+  "corpus": {
+    "name": "search/epistemology",
+    "documents": 65,
+    "passages": 14446,
+    "snapshot": "2026-10-01",
+    "manifest": "corpus.json",
+    "note": "corpus_chunk numbers identify passages in this snapshot only; the locator and excerpt identify them in the source itself."
+  },
+  "not_verified_here": [
+    "The chapter's account of the Natural Semantic Metalanguage findings on KNOW and THINK (Wierzbicka, Goddard), via Nagel 2014: not checked for this companion.",
+    "Whether any writer used the word 'epistemology' in print before Ferrier: not investigated."
+  ],
+  "sections": {
+    "why-epistemology-matters-for-critical-thinking": {
+      "questions": [
+        "How do philosophers define critical thinking, and how does it relate to epistemology?",
+        "Who coined the word epistemology? Ferrier's Institutes of Metaphysic and the divisions epistemology agnoiology ontology",
+        "When is testimony a good reason to believe? Reductionism and anti-reductionism about testimonial justification",
+        "Are anecdotes evidence? A single case as weak evidence, likelihood ratio and incremental confirmation",
+        "Should the strength of our assent match the strength of the evidence? Degrees of assent and the ethics of proportioning belief"
+      ],
+      "sources": [
+        {
+          "key": "hitchcock2024",
+          "used_for": [
+            "contested definition; careful goal-directed thinking",
+            "dispositions as well as abilities",
+            "standardized tests"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "careful thinking directed to a goal",
+              "corpus_chunk": 208
+            },
+            {
+              "locator": "§ 8.1",
+              "basis": "full text",
+              "excerpt": "willingness to suspend judgment, trust in reason, wanting evidence for one’s beliefs, and seeking the truth",
+              "corpus_chunk": 256
+            },
+            {
+              "locator": "§ 8.2",
+              "basis": "full text",
+              "excerpt": "willingness to abandon nonproductive strategies",
+              "corpus_chunk": 262
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Standardized tests have been developed to assess the degree to which a person possesses such dispositions and abilities",
+              "corpus_chunk": 208
+            }
+          ],
+          "annotation": "The standard survey of the critical thinking literature, its definitions and dispositions."
+        },
+        {
+          "key": "carter-sosa2026",
+          "used_for": [
+            "'theory of knowledge' is an inaccurate label; character traits as a topic"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "This definition, though common, is of course inaccurate",
+              "corpus_chunk": 871
+            }
+          ],
+          "annotation": "Survey of metaepistemology: what epistemology is about and how to do it."
+        },
+        {
+          "key": "keefe-iep",
+          "used_for": [
+            "Ferrier the first philosopher in English to use 'epistemology'",
+            "epistemology grounds his metaphysics"
+          ],
+          "evidence": [
+            {
+              "locator": "“Idealist Metaphysics”",
+              "basis": "full text",
+              "excerpt": "he was the first philosopher in English to call the philosophy of knowledge “epistemology.”",
+              "corpus_chunk": 14176
+            },
+            {
+              "locator": "“Idealist Metaphysics”",
+              "basis": "full text",
+              "excerpt": "it is important to secure of the laws of thought before making any positive statements about reality",
+              "corpus_chunk": 14176
+            }
+          ],
+          "annotation": "Reference entry on Ferrier; careful about what it claims for the word."
+        },
+        {
+          "key": "ferrier1856",
+          "used_for": [
+            "epistemology, agnoiology and ontology as the three divisions of philosophy"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 61",
+              "basis": "full text",
+              "excerpt": "The Epistemology, or theory of knowledge ; secondly^ The Agnoiology, or theory of ignorance ; and, thirdly, The Ontology, or theory of being",
+              "corpus_chunk": 12439,
+              "note": "OCR text of the 1856 second edition; the quotation in the companion corrects the OCR punctuation"
+            }
+          ],
+          "annotation": "The book in which the English word entered philosophy."
+        },
+        {
+          "key": "locke1690",
+          "used_for": [
+            "testimony as one of two grounds of probability; criteria for weighing witnesses"
+          ],
+          "evidence": [
+            {
+              "locator": "IV.xv.4",
+              "basis": "full text",
+              "excerpt": "In the testimony of others is to be considered: 1. The number. 2. The integrity. 3. The skill of the witnesses.",
+              "corpus_chunk": 7840
+            }
+          ],
+          "annotation": "Locke's early theory of when testimony gives reason to believe."
+        },
+        {
+          "key": "leonard2023",
+          "used_for": [
+            "reductionism (Hume) and non-reductionism (Reid)",
+            "gullibility objection (anonymous blogger)"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "Reductionist views trace at least as far back as David Hume’s (1740, 1748)",
+              "corpus_chunk": 344
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "we have a defeasible but presumptive right to believe what people tell us",
+              "corpus_chunk": 361
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "it permits hearers to be irrationally gullible",
+              "corpus_chunk": 363
+            }
+          ],
+          "annotation": "The standard survey of the epistemology of testimony."
+        },
+        {
+          "key": "oconnor-etal2026",
+          "used_for": [
+            "Coady's skepticism objection to reductionism"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "denying anti-reductionism is a recipe for skepticism",
+              "corpus_chunk": 4520
+            }
+          ],
+          "annotation": "Survey of social epistemology."
+        },
+        {
+          "key": "hume1748",
+          "used_for": [
+            "'A wise man ... proportions his belief to the evidence'"
+          ],
+          "evidence": [
+            {
+              "locator": "X.i",
+              "basis": "full text",
+              "excerpt": "A wise man, therefore, proportions his belief to the evidence.",
+              "corpus_chunk": 6924
+            },
+            {
+              "locator": "X.i",
+              "basis": "full text",
+              "excerpt": "all imaginable degrees of assurance",
+              "corpus_chunk": 6924
+            }
+          ],
+          "annotation": "Hume's essay on miracles, the classic source of the proportioning principle."
+        },
+        {
+          "key": "kelly2016",
+          "used_for": [
+            "rational thinkers respect their evidence; rationality no guarantee of correctness"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "rationality is no guarantee of correctness",
+              "corpus_chunk": 2145
+            }
+          ],
+          "annotation": "Survey of philosophical theories of evidence."
+        },
+        {
+          "key": "weisberg2021",
+          "used_for": [
+            "incremental confirmation c(H,E) = p(H|E) − p(H)"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "evidence confirms a hypothesis to the extent that it increases its probability",
+              "corpus_chunk": 5286
+            }
+          ],
+          "annotation": "Introduction to formal epistemology; used for the probabilistic account of confirmation."
+        }
+      ]
+    },
+    "the-central-questions": {
+      "questions": [
+        "What is the problem of the criterion? Particularism, methodism and the wheel",
+        "What are the central questions of epistemology: the nature, sources, structure and extent of knowledge?",
+        "Plato's Theaetetus: knowledge as perception, true judgement, true judgement with an account"
+      ],
+      "sources": [
+        {
+          "key": "chisholm1973",
+          "used_for": [
+            "Chisholm's assessment of the problem"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 1",
+              "basis": "secondary",
+              "note": "Quoted in the IEP entry “Problem of the Criterion” (mccain-iep); the book itself was not read for this companion"
+            }
+          ],
+          "annotation": "The modern classic statement of the problem."
+        },
+        {
+          "key": "mccain-iep",
+          "used_for": [
+            "the two questions and the circle",
+            "history from Sextus to Mercier and Coffey",
+            "Chisholm's three responses; Amico; 'no solution'",
+            "one problem or several"
+          ],
+          "evidence": [
+            {
+              "locator": "introduction",
+              "basis": "full text",
+              "excerpt": "“one of the most important and one of the most difficult of all the problems of philosophy.”",
+              "corpus_chunk": 14064
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "It comes to us from Book 2 of Sextus Empiricus’ Outlines of Pyrrhonism",
+              "corpus_chunk": 14066
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "philosophers largely seemed to lose interest in the Problem of the Criterion until the modern period",
+              "corpus_chunk": 14066
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "Perhaps the Problem of the Criterion is rather a set of related problems.",
+              "corpus_chunk": 14068
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "there are only three responses to the Problem of the Criterion: particularism, methodism, and skepticism",
+              "corpus_chunk": 14075
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Robert Amico (1988b) argues that Chisholm’s “solution” is clearly unacceptable",
+              "corpus_chunk": 14087
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "“the problem of the criterion has no solution” (1988, 234)",
+              "corpus_chunk": 14088
+            }
+          ],
+          "annotation": "Clear encyclopedia treatment of the problem and its history."
+        },
+        {
+          "key": "vogt2026",
+          "used_for": [
+            "Epicurus's kanôn and kritêrion; Zeno's cognitive impression"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "The notion of a criterion is introduced into Hellenistic discussions by Epicurus, who speaks about the kanôn (literally measuring stick) and kritêrion",
+              "corpus_chunk": 45
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "Zeno argues that a certain kind of impression—namely a cognitive impression (phantasia katalêptikê)—is the criterion of truth",
+              "corpus_chunk": 45
+            }
+          ],
+          "annotation": "Survey of ancient skepticism; the origin of the idea of a criterion."
+        },
+        {
+          "key": "carter-sosa2026",
+          "used_for": [
+            "methodism and foundationalism in Descartes and Hume",
+            "the choice recurs beyond knowledge",
+            "'theory of knowledge' an oversimplification"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "Descartes and Hume opt for foundationalism by way of taking the particular methodist starting point",
+              "corpus_chunk": 902
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "including, e.g., epistemic justification, understanding, intellectual virtues",
+              "corpus_chunk": 902
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "even if strictly speaking an oversimplified picture",
+              "corpus_chunk": 897
+            },
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "Epistemologists are interested, for one thing, in epistemic justification, understanding, rationality, and their associated norms",
+              "corpus_chunk": 871
+            }
+          ],
+          "annotation": "Survey of metaepistemology."
+        },
+        {
+          "key": "plato-theaetetus",
+          "used_for": [
+            "the jurors objection and the third definition"
+          ],
+          "evidence": [
+            {
+              "locator": "201c–d",
+              "basis": "full text",
+              "excerpt": "true opinion, combined with definition or rational explanation, is knowledge",
+              "corpus_chunk": 12271,
+              "note": "Jowett translation; the Gutenberg text has no Stephanus numbers, which are supplied from the standard edition"
+            },
+            {
+              "locator": "201a–c",
+              "basis": "full text",
+              "excerpt": "the orator cannot convey a true knowledge of crimes at which the judges were not present",
+              "corpus_chunk": 11949,
+              "note": "From Jowett's introduction, which summarizes the dialogue"
+            }
+          ],
+          "annotation": "The first sustained attempt to define knowledge."
+        }
+      ]
+    },
+    "three-kinds-of-knowing": {
+      "questions": [
+        "What did Russell mean by knowledge by acquaintance and knowledge by description?",
+        "Mary's room: what does the knowledge argument show, and how have physicalists replied?",
+        "Knowledge by presence in Islamic philosophy: Suhrawardi's ilm huduri and self-awareness",
+        "Is understanding a kind of knowledge? Knowing why, explanatory understanding and its value"
+      ],
+      "sources": [
+        {
+          "key": "steup-neta2025",
+          "used_for": [
+            "connaître/savoir, cognitio/scientia; lexicon not decisive",
+            "Stanley and Williamson on knowing-wh"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "is not something that can be determined solely by appeal to the lexicon of any particular natural language",
+              "corpus_chunk": 509
+            },
+            {
+              "locator": "§ 2.2",
+              "basis": "full text",
+              "excerpt": "This view was elaborated in considerable detail by Stanley and Williamson 2001",
+              "corpus_chunk": 514
+            }
+          ],
+          "annotation": "The main SEP survey of epistemology."
+        },
+        {
+          "key": "ryle1949",
+          "used_for": [
+            "the regress argument, pp. 19–20"
+          ],
+          "evidence": [
+            {
+              "locator": "pp. 19–20",
+              "basis": "secondary",
+              "note": "Quoted in the SEP entry “Knowledge How” (pavese2022, § 1, corpus chunk 684); the book itself was not read"
+            }
+          ],
+          "annotation": "Ryle's classic statement of anti-intellectualism."
+        },
+        {
+          "key": "pavese2022",
+          "used_for": [
+            "Ryle's regress quotation",
+            "reconstruction disputed; the regress applies to Ryle too",
+            "swimming case and practical modes of presentation; critics",
+            "few identify knowledge-how with abilities",
+            "psychologists' use of Ryle"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "it would be a logical impossibility for anyone ever to break into the circle",
+              "corpus_chunk": 684
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "Exactly how to reconstruct Ryle’s argument is a matter of controversy",
+              "corpus_chunk": 684
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "any regress generated for the intellectualist is generated for Ryle as well",
+              "corpus_chunk": 692
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "If thrown in the swimming pool, I might still drown.",
+              "corpus_chunk": 700
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Koethe (2002: 327) worries that practical modes of presentation smuggle in an antecedent notion of knowledge-how",
+              "corpus_chunk": 701
+            },
+            {
+              "locator": "§ 8.2",
+              "basis": "full text",
+              "excerpt": "few theorists nowadays identify knowledge-how with bare abilities",
+              "corpus_chunk": 767
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Even psychologists and neuroscientists have explicitly appealed to Ryle’s classical distinction",
+              "corpus_chunk": 681
+            }
+          ],
+          "annotation": "The standard survey of the knowledge-how debate."
+        },
+        {
+          "key": "ryle1946",
+          "used_for": [
+            "first appearance of the regress argument"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 22 (as cited)",
+              "basis": "secondary",
+              "note": "Pavese cites “Ryle 1946: 22” for the regress (corpus chunk 684); details from Crossref"
+            }
+          ],
+          "annotation": "Ryle's presidential address to the Aristotelian Society."
+        },
+        {
+          "key": "stanley-williamson2001",
+          "used_for": [
+            "intellectualism; practical modes of presentation"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Position as summarized in pavese2022 § 2 and pritchard-etal2025 § 5 (corpus chunks 700, 4686); details from Crossref"
+            }
+          ],
+          "annotation": "The paper that revived intellectualism."
+        },
+        {
+          "key": "russell1912",
+          "used_for": [
+            "Russell's definition of acquaintance; the objects of acquaintance",
+            "Bismarck; physical objects known by description",
+            "principle of acquaintance"
+          ],
+          "evidence": [
+            {
+              "locator": "ch. V",
+              "basis": "full text",
+              "excerpt": "we have acquaintance in memory with things which have been data either of the outer senses or of the inner sense",
+              "corpus_chunk": 5774
+            },
+            {
+              "locator": "ch. V",
+              "basis": "full text",
+              "excerpt": "it is probable, though not certain, that we have acquaintance with Self",
+              "corpus_chunk": 5774
+            },
+            {
+              "locator": "ch. V",
+              "basis": "full text",
+              "excerpt": "His body, as a physical object, and still more his mind, were only known as the body and the mind connected with these sense-data.",
+              "corpus_chunk": 5780
+            },
+            {
+              "locator": "ch. V",
+              "basis": "full text",
+              "excerpt": "Every proposition which we can understand must be composed wholly of constituents with which we are acquainted",
+              "corpus_chunk": 5787
+            }
+          ],
+          "annotation": "Russell's own introduction to the distinction; free online."
+        },
+        {
+          "key": "hasan-fumerton2024",
+          "used_for": [
+            "Russell's definition (1912: 78)",
+            "knowledge by acquaintance independent of knowledge of truths",
+            "candidates for acquaintance; Johnston on physical objects"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "without the intermediary of any process of inference or any knowledge of truths",
+              "corpus_chunk": 1337
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "logically independent of knowledge of truths",
+              "corpus_chunk": 1348
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "some have recently defended the view that we can be acquainted with physical objects in perception",
+              "corpus_chunk": 1345
+            }
+          ],
+          "annotation": "The standard survey of acquaintance and description."
+        },
+        {
+          "key": "russell1911",
+          "used_for": [
+            "the earlier paper on the distinction"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Cited as Russell 1910–11 in hasan-fumerton2024 § 1 (corpus chunk 1337); details from Crossref"
+            }
+          ],
+          "annotation": "Russell's original paper on the distinction."
+        },
+        {
+          "key": "jackson1982",
+          "used_for": [
+            "the Mary case"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Jackson's passage is quoted at length in nidarumelin-oconaill2026 § 2 (corpus chunk 1467); details from Crossref"
+            }
+          ],
+          "annotation": "The source of the Mary case."
+        },
+        {
+          "key": "nidarumelin-oconaill2026",
+          "used_for": [
+            "ability hypothesis; acquaintance hypothesis",
+            "82% survey",
+            "Jackson's change of mind"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.3",
+              "basis": "full text",
+              "excerpt": "“knowing what an experience is like is the same as knowing how to imagine having the experience”",
+              "corpus_chunk": 1498
+            },
+            {
+              "locator": "§ 4.3",
+              "basis": "full text",
+              "excerpt": "which is neither propositional knowledge nor identical to a bundle of abilities",
+              "corpus_chunk": 1498
+            },
+            {
+              "locator": "§ 4.1",
+              "basis": "full text",
+              "excerpt": "82% of respondents in a survey answered that Mary in the room would not know what it is like to see red",
+              "corpus_chunk": 1494
+            },
+            {
+              "locator": "§ 5",
+              "basis": "full text",
+              "excerpt": "But Jackson changed his mind.",
+              "corpus_chunk": 1552
+            },
+            {
+              "locator": "§ 5",
+              "basis": "full text",
+              "excerpt": "it can be answered by endorsing strong representationalism",
+              "corpus_chunk": 1552
+            }
+          ],
+          "annotation": "The standard survey of the knowledge argument."
+        },
+        {
+          "key": "marcotte2025",
+          "used_for": [
+            "Suhrawardi's knowledge by presence against representational epistemology"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "‘knowledge by presence’ (‘ilm huduri)",
+              "corpus_chunk": 6596
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "he criticizes and then rejects Avicenna’s Peripatetic ‘representational’ epistemology",
+              "corpus_chunk": 6596
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "intellection as “the presence (hudur) of a thing for a self (dhat)”",
+              "corpus_chunk": 6601
+            }
+          ],
+          "annotation": "Survey of Suhrawardi's philosophy, including his epistemology."
+        },
+        {
+          "key": "haeriyazdi1992",
+          "used_for": [
+            "pointer to the book-length treatment"
+          ],
+          "evidence": [
+            {
+              "locator": "whole book",
+              "basis": "catalogue",
+              "note": "Cited as further reading only; Open Library record checked"
+            }
+          ],
+          "annotation": "Book-length study of knowledge by presence in the Islamic tradition."
+        },
+        {
+          "key": "ichikawa-steup2026",
+          "used_for": [
+            "knowing-wh as knowing the answer"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "one knows these things by knowing the proposition that is the answer to the embedded question",
+              "corpus_chunk": 1578
+            }
+          ],
+          "annotation": "The standard survey of the analysis of knowledge."
+        },
+        {
+          "key": "grimm2025",
+          "used_for": [
+            "understanding and luck; transmission by testimony"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.3",
+              "basis": "full text",
+              "excerpt": "philosophers such as Pritchard and Alison Hills hold that understanding does tolerate certain kinds of luck",
+              "corpus_chunk": 1733
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "Zagzebski argues that the kind of “seeing” or “grasping” that seems integral to understanding is something a person can only do “first hand”",
+              "corpus_chunk": 1743
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "Others have argued that understanding is not, in fact, so difficult to transmit.",
+              "corpus_chunk": 1743
+            }
+          ],
+          "annotation": "The standard survey of understanding."
+        },
+        {
+          "key": "pritchard-etal2025",
+          "used_for": [
+            "three views on understanding and luck"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4",
+              "basis": "full text",
+              "excerpt": "strong compatibilism (e.g., Kvanvig 2003; Rohwer 2014), moderate compatibilism (e.g., Pritchard 2010a: ch. 4) and incompatibilism",
+              "corpus_chunk": 4683
+            }
+          ],
+          "annotation": "Survey of the value of knowledge."
+        }
+      ]
+    },
+    "belief-credence-and-acceptance": {
+      "questions": [
+        "What is acceptance, as distinct from belief? Acceptance in a context and acceptance of scientific theories",
+        "How do imagination, supposition and faith differ from belief?"
+      ],
+      "sources": [
+        {
+          "key": "schwitzgebel2024",
+          "used_for": [
+            "occurrent vs dispositional belief",
+            "dispositionalism vs representationalism",
+            "acceptance; van Fraassen; Bratman's ladder"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "Suppose Harry thinks plaid ties are hideous.",
+              "corpus_chunk": 1016
+            },
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "stored in their memory or “belief box”",
+              "corpus_chunk": 1016
+            },
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "a strict dispositionalism may entail the impossibility of occurrent belief",
+              "corpus_chunk": 1017
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "the disposition to exhibit surprise should the falsity of P make itself evident",
+              "corpus_chunk": 981
+            },
+            {
+              "locator": "§ 2.4",
+              "basis": "full text",
+              "excerpt": "acceptance involves a decision to cease inquiry and to act as though the matter is settled",
+              "corpus_chunk": 1034
+            },
+            {
+              "locator": "§ 2.4",
+              "basis": "full text",
+              "excerpt": "Van Fraassen (1980) has argued that the former attitude is common in science",
+              "corpus_chunk": 1035
+            },
+            {
+              "locator": "§ 2.4",
+              "basis": "full text",
+              "excerpt": "The ladder case, due to Bratman (1999), may involve belief without acceptance",
+              "corpus_chunk": 1035
+            }
+          ],
+          "annotation": "The standard survey of belief."
+        },
+        {
+          "key": "lin2024",
+          "used_for": [
+            "Probabilism and conditionalization"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "According to the first norm, called Probabilism",
+              "corpus_chunk": 1819
+            }
+          ],
+          "annotation": "Survey of Bayesian epistemology."
+        },
+        {
+          "key": "pettigrew2024",
+          "used_for": [
+            "Lockean thesis named after Locke, formulated by Foley; a family of norms"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.2",
+              "basis": "full text",
+              "excerpt": "it was formulated explicitly by Richard Foley (1992)",
+              "corpus_chunk": 4215
+            },
+            {
+              "locator": "§ 4.2",
+              "basis": "full text",
+              "excerpt": "the Lockean Thesis is a family of putative norms",
+              "corpus_chunk": 4215
+            }
+          ],
+          "annotation": "Survey of epistemic utility theory."
+        },
+        {
+          "key": "sorensen2024",
+          "used_for": [
+            "lottery paradox; agglomeration; Kyburg",
+            "preface paradox (Makinson, Wilder)"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "Given a lottery with 100 tickets and exactly one winner",
+              "corpus_chunk": 2051
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "Kyburg rejects agglomeration.",
+              "corpus_chunk": 2053
+            },
+            {
+              "locator": "§ 4",
+              "basis": "full text",
+              "excerpt": "The preface paradox does not rely on a probabilistic acceptance rule.",
+              "corpus_chunk": 2054
+            }
+          ],
+          "annotation": "Survey of epistemic paradoxes."
+        },
+        {
+          "key": "geninhuber2026",
+          "used_for": [
+            "lottery due to Kyburg",
+            "Douven's restriction; Korb's counterexample"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.2.2",
+              "basis": "full text",
+              "excerpt": "the well-known Lottery paradox, due originally to Kyburg (1961, 1997)",
+              "corpus_chunk": 1256
+            },
+            {
+              "locator": "§ 4.2.2",
+              "basis": "full text",
+              "excerpt": "All proposals of this kind are vitiated by the following sort of example due to Korb (1992).",
+              "corpus_chunk": 1258
+            }
+          ],
+          "annotation": "Survey of formal models of belief."
+        },
+        {
+          "key": "bratman1992",
+          "used_for": [
+            "acceptance in a context"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Cited for acceptance in chignell2018 § 7 (corpus chunk 3878); the ladder case itself is from Bratman 1999 per schwitzgebel2024 § 2.4; details from Crossref"
+            }
+          ],
+          "annotation": "Bratman's paper on acceptance in practical reasoning."
+        },
+        {
+          "key": "cohen1992",
+          "used_for": [
+            "Cohen's definition of acceptance, p. 4"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 4",
+              "basis": "secondary",
+              "note": "Quoted in bishop-mckaughan2023 § 8 (corpus chunk 6199); details from Open Library"
+            }
+          ],
+          "annotation": "The main book-length treatment of acceptance."
+        },
+        {
+          "key": "bishop-mckaughan2023",
+          "used_for": [
+            "Cohen's definition quoted",
+            "non-doxastic venture models of faith; Alston on acceptance"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "‘to have or adopt a policy of deeming, positing, or postulating that p",
+              "corpus_chunk": 6199
+            },
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "whether or not one feels it to be true that p",
+              "corpus_chunk": 6199
+            },
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "William Alston (1996) suggests that faith may involve an active ‘acceptance’ rather than purely receptive belief",
+              "corpus_chunk": 6199
+            },
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "a ‘non-doxastic’ venture model of faith",
+              "corpus_chunk": 6198
+            }
+          ],
+          "annotation": "Survey of philosophical accounts of faith."
+        },
+        {
+          "key": "chignell2018",
+          "used_for": [
+            "acceptance is a technical notion"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 7",
+              "basis": "full text",
+              "excerpt": "acceptance is typically a technical notion and characterizations of its nature and ethics differ radically in the literature",
+              "corpus_chunk": 3878
+            }
+          ],
+          "annotation": "The standard survey of the ethics of belief."
+        },
+        {
+          "key": "munro-etal2026",
+          "used_for": [
+            "imagination vs supposition; imaginative resistance; quarantining"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.5",
+              "basis": "full text",
+              "excerpt": "while attempting to imagine morally repugnant propositions (e.g., that female infanticide is morally right) generates imaginative resistance, supposing them does not",
+              "corpus_chunk": 6289
+            },
+            {
+              "locator": "§ 2.5",
+              "basis": "full text",
+              "excerpt": "Others are skeptical that there are genuine discontinuities between imagination and supposition.",
+              "corpus_chunk": 6290
+            },
+            {
+              "locator": "§ 2.1",
+              "basis": "full text",
+              "excerpt": "Tamar Szabó Gendler’s (2003) notion of imaginative quarantining",
+              "corpus_chunk": 6262
+            }
+          ],
+          "annotation": "Survey of imagination."
+        },
+        {
+          "key": "boespflug-jackson2024",
+          "used_for": [
+            "Booth: suspension is contingently involuntary"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "both are contingently involuntary",
+              "corpus_chunk": 4104
+            }
+          ],
+          "annotation": "Survey of doxastic voluntarism."
+        },
+        {
+          "key": "ichikawa-steup2026",
+          "used_for": [
+            "Gettier's three formulations"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "one was given in terms of “believes”, one in terms of “accepts”, and one in terms of “is sure that”",
+              "corpus_chunk": 1588
+            }
+          ],
+          "annotation": "The standard survey of the analysis of knowledge."
+        },
+        {
+          "key": "gettier1963",
+          "used_for": [
+            "the three formulations"
+          ],
+          "evidence": [
+            {
+              "locator": "pp. 121–22",
+              "basis": "secondary",
+              "note": "As reported in ichikawa-steup2026 § 1.2 (corpus chunk 1588); details from Crossref"
+            }
+          ],
+          "annotation": "The paper that refuted the justified-true-belief analysis."
+        }
+      ]
+    },
+    "the-basic-vocabulary": {
+      "questions": [
+        "What are propositions? Bearers of truth value and objects of belief",
+        "What is truth? The correspondence theory and Aristotle's definition",
+        "What is evidence? Mental states, propositions, knowledge, and the E=K thesis",
+        "Propositional versus doxastic justification and the basing relation",
+        "Certainty and fallibilism: psychological versus epistemic certainty",
+        "Defeaters: rebutting and undercutting defeat",
+        "Normative, motivating and explanatory reasons",
+        "What is warrant in Plantinga's sense, the property that turns true belief into knowledge?"
+      ],
+      "sources": [
+        {
+          "key": "mcgrath-frank2024",
+          "used_for": [
+            "roles of propositions; Lewis's 'jumble'; definition",
+            "structured propositions"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "“the conception we associate with the word ‘proposition’ may be something of a jumble of conflicting desiderata,”",
+              "corpus_chunk": 2246
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Propositions, we shall say, are the sharable objects of the attitudes and the primary bearers of truth and falsity.",
+              "corpus_chunk": 2246
+            },
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "Propositions are structured if they have constituents",
+              "corpus_chunk": 2354
+            }
+          ],
+          "annotation": "The standard survey of propositions."
+        },
+        {
+          "key": "david2025",
+          "used_for": [
+            "Aristotle's definition minimal; deflationary reading; Plato's formulations"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "virtually identical formulations can be found in Plato (Cratylus 385b2, Sophist 263b)",
+              "corpus_chunk": 2395
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "a muted, relatively minimal version of a correspondence theory",
+              "corpus_chunk": 2395
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "it has also been claimed as a precursor of deflationary theories of truth",
+              "corpus_chunk": 2396
+            }
+          ],
+          "annotation": "The standard survey of the correspondence theory."
+        },
+        {
+          "key": "glanzberg2025",
+          "used_for": [
+            "Tarski and the Aristotelian slogan; correspondence without facts"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "as Tarski (1944) and others have suggested",
+              "corpus_chunk": 2572
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "the notion of correspondence as discussed in section 1.1 loses substance",
+              "corpus_chunk": 2572
+            }
+          ],
+          "annotation": "The standard survey of truth."
+        },
+        {
+          "key": "kelly2016",
+          "used_for": [
+            "views of what evidence is",
+            "E=K: evidence never rules out a truth",
+            "evidence as sign (Hacking)",
+            "rebutting and undercutting defeaters; defeater defeat"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Russell, the greatest empiricist of the first half of the twentieth century, tended to think of evidence as sense data",
+              "corpus_chunk": 2123
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "one's evidence consists of the totality of propositions that one knows (Williamson 2000)",
+              "corpus_chunk": 2124
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "one's evidence consists exclusively of one's current mental states (Conee and Feldman 2004)",
+              "corpus_chunk": 2124
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "if evidence consists of facts or known propositions, then no body of evidence rules out any truth",
+              "corpus_chunk": 2178
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "‘the evidence of one thing that points beyond itself’",
+              "corpus_chunk": 2178
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "evidence which suggests that you are a pathological liar constitutes an undercutting defeater",
+              "corpus_chunk": 2132
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "In principle, there is no limit to the complexity of the relations of defeat",
+              "corpus_chunk": 2133
+            }
+          ],
+          "annotation": "Survey of philosophical theories of evidence."
+        },
+        {
+          "key": "williamson2000",
+          "used_for": [
+            "E = K"
+          ],
+          "evidence": [
+            {
+              "locator": "ch. 9 (as cited)",
+              "basis": "secondary",
+              "note": "Williamson's view as reported in kelly2016 (corpus chunks 2124, 2166); details from Open Library"
+            }
+          ],
+          "annotation": "The source of the thesis that one's evidence is one's knowledge."
+        },
+        {
+          "key": "steup-neta2025",
+          "used_for": [
+            "internalism and externalism; BIV; accessibility vs mentalist internalism; Williamson's evidentialism"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.3",
+              "basis": "full text",
+              "excerpt": "This view is what has come to be called “internalism” about justification.",
+              "corpus_chunk": 531
+            },
+            {
+              "locator": "§ 3.3",
+              "basis": "full text",
+              "excerpt": "Let’s call the former accessibility internalism and the latter mentalist internalism.",
+              "corpus_chunk": 533
+            },
+            {
+              "locator": "§ 3.3",
+              "basis": "full text",
+              "excerpt": "Williamson (2002) defends a version of evidentialism on which evidence is not shared by you and your corresponding BIV",
+              "corpus_chunk": 533
+            }
+          ],
+          "annotation": "The main SEP survey of epistemology."
+        },
+        {
+          "key": "reed2022",
+          "used_for": [
+            "psychological vs epistemic certainty; non-iteration",
+            "Russell's definition"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "a subject’s being certain that p does not entail that she is certain that she is certain that p",
+              "corpus_chunk": 2808
+            },
+            {
+              "locator": "§ 2.3",
+              "basis": "full text",
+              "excerpt": "“A proposition is certain when it has the highest degree of credibility, either intrinsically or as a result of argument”",
+              "corpus_chunk": 2825
+            }
+          ],
+          "annotation": "Survey of certainty."
+        },
+        {
+          "key": "rysiew2026",
+          "used_for": [
+            "concessive knowledge attributions; Lewis 'sounds contradictory'"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 5.1",
+              "basis": "full text",
+              "excerpt": "To speak of fallible knowledge, of knowledge despite uneliminated possibilities of error, just sounds contradictory.",
+              "corpus_chunk": 6075
+            }
+          ],
+          "annotation": "Survey of epistemic contextualism."
+        },
+        {
+          "key": "hetherington-iep",
+          "used_for": [
+            "fallibilism the majority view; CKAs do not show infallibilism"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "Few epistemologists will think so.",
+              "corpus_chunk": 14019
+            },
+            {
+              "locator": "§ 9",
+              "basis": "full text",
+              "excerpt": "most epistemologists, it seems, accept that when people do gain knowledge, this usually, maybe always, involves fallibility",
+              "corpus_chunk": 14024
+            }
+          ],
+          "annotation": "Encyclopedia entry on fallibilism by one of its main defenders."
+        },
+        {
+          "key": "koons2025",
+          "used_for": [
+            "Pollock's two kinds of defeater"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "Pollock distinguished between two kinds of defeaters of a defeasible inference",
+              "corpus_chunk": 2872
+            }
+          ],
+          "annotation": "Survey of defeasible reasoning."
+        },
+        {
+          "key": "alvarez-way2024",
+          "used_for": [
+            "normative, motivating, explanatory reasons; Scanlon's phrase"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "“a consideration that counts in favour of” someone’s acting in a certain way",
+              "corpus_chunk": 3021
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "recent authors tend to distinguish motivating and explanatory reasons",
+              "corpus_chunk": 3021
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "the distinction is now accepted by most if not all contemporary philosophers who write on this topic",
+              "corpus_chunk": 3021
+            }
+          ],
+          "annotation": "Survey of reasons for action."
+        },
+        {
+          "key": "plantinga1993",
+          "used_for": [
+            "warrant as what turns true belief into knowledge"
+          ],
+          "evidence": [
+            {
+              "locator": "ch. 1 (as cited)",
+              "basis": "secondary",
+              "note": "Plantinga's usage as reported in forrest2025 § 6 and hetherington-iep § 9 (corpus chunks 5665, 14027); details from Crossref"
+            }
+          ],
+          "annotation": "Plantinga's survey of theories of warrant."
+        },
+        {
+          "key": "forrest2025",
+          "used_for": [
+            "two uses of 'warrant'"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 6",
+              "basis": "full text",
+              "excerpt": "the term “warrant” used elsewhere in philosophy as a synonym for “justified”",
+              "corpus_chunk": 5665
+            }
+          ],
+          "annotation": "Survey of the epistemology of religion."
+        },
+        {
+          "key": "ichikawa-steup2026",
+          "used_for": [
+            "Plantinga's proper-function condition; Zagzebski's recipe"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 7",
+              "basis": "full text",
+              "excerpt": "for a belief to be knowledge the subject’s belief-producing faculties must be working properly in an appropriate environment",
+              "corpus_chunk": 1637
+            }
+          ],
+          "annotation": "The standard survey of the analysis of knowledge."
+        }
+      ]
+    },
+    "three-great-distinctions": {
+      "questions": [
+        "What is a priori knowledge? Independence of experience and the role of enabling experience",
+        "Kant's analytic and synthetic judgments and the synthetic a priori",
+        "Quine's Two Dogmas: the attack on the analytic/synthetic distinction",
+        "Kripke on the necessary a posteriori and the contingent a priori",
+        "Hume's fork: relations of ideas and matters of fact"
+      ],
+      "sources": [
+        {
+          "key": "steup-neta2025",
+          "used_for": [
+            "definition of a priori justification; strict sense of 'experience'"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 5.4",
+              "basis": "full text",
+              "excerpt": "S’s justification for believing that p does not depend on any experience",
+              "corpus_chunk": 580
+            },
+            {
+              "locator": "§ 5.4",
+              "basis": "full text",
+              "excerpt": "the strict use of the term restricts a priori justification to justification derived solely from the use of reason",
+              "corpus_chunk": 580
+            }
+          ],
+          "annotation": "The main SEP survey of epistemology."
+        },
+        {
+          "key": "kant1787",
+          "used_for": [
+            "pure and impure a priori (B 3)",
+            "7 + 5 = 12 (B 15–16)"
+          ],
+          "evidence": [
+            {
+              "locator": "Introduction, B 3",
+              "basis": "full text",
+              "excerpt": "the proposition, “Every change has a cause,” is a proposition à priori, but impure, because change is a conception which can only be derived from experience",
+              "corpus_chunk": 9332
+            },
+            {
+              "locator": "Introduction, B 15–16",
+              "basis": "full text",
+              "excerpt": "add the units contained in the five given in the intuition, to the conception of seven",
+              "corpus_chunk": 9355
+            }
+          ],
+          "annotation": "Kant's own statement of the distinctions."
+        },
+        {
+          "key": "russell-bruce2024",
+          "used_for": [
+            "three views of a priori justification",
+            "the standard metre"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "A third view is that a person can be a priori entitled to believe certain propositions independently of any evidence",
+              "corpus_chunk": 2681
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "“The length of S in the actual world at \\(t_0\\)” rigidly designates that length",
+              "corpus_chunk": 2668
+            }
+          ],
+          "annotation": "Survey of a priori justification."
+        },
+        {
+          "key": "mallozzi-etal2024",
+          "used_for": [
+            "Williamson: armchair knowledge; the distinction doesn't cut at the joints",
+            "Kant: a priori coincides with necessary; Kripke conditionals"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.2",
+              "basis": "full text",
+              "excerpt": "In Williamson’s terminology, the kind of knowledge in question is “armchair”.",
+              "corpus_chunk": 3690
+            },
+            {
+              "locator": "§ 4.2",
+              "basis": "full text",
+              "excerpt": "it “doesn’t cut at the epistemic joints”",
+              "corpus_chunk": 3690
+            },
+            {
+              "locator": "§ 2.3",
+              "basis": "full text",
+              "excerpt": "Kant famously argued that what is a priori coincides with what is necessary",
+              "corpus_chunk": 3648
+            },
+            {
+              "locator": "§ 2.3",
+              "basis": "full text",
+              "excerpt": "something we know “by a priori philosophical analysis”",
+              "corpus_chunk": 3648
+            }
+          ],
+          "annotation": "Survey of the epistemology of modality."
+        },
+        {
+          "key": "rey2026",
+          "used_for": [
+            "Kant's containment formulation",
+            "precursors (Leibniz, Locke, Hume)",
+            "Quine: holism, web of belief, circularity",
+            "problems for centrality"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "Either the predicate B belongs to the subject A as something that is (covertly) contained in this concept A",
+              "corpus_chunk": 3123
+            },
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "there are precursors of the contemporary notion of the analytic in Leibniz, and in Locke and Hume in their talk of “relations of ideas,”",
+              "corpus_chunk": 3123
+            },
+            {
+              "locator": "§ 3.4",
+              "basis": "full text",
+              "excerpt": "Our statements about the external world face the tribunal of sense experience not individually, but only as a corporate body.",
+              "corpus_chunk": 3175
+            },
+            {
+              "locator": "§ 3.5",
+              "basis": "full text",
+              "excerpt": "bringing in each other’s laundry",
+              "corpus_chunk": 3189
+            },
+            {
+              "locator": "§ 3.6.1",
+              "basis": "full text",
+              "excerpt": "centrality and the appearance of analyticity don’t seem to be so closely related",
+              "corpus_chunk": 3193
+            }
+          ],
+          "annotation": "The standard survey of the analytic/synthetic distinction."
+        },
+        {
+          "key": "hume1748",
+          "used_for": [
+            "Hume's fork"
+          ],
+          "evidence": [
+            {
+              "locator": "IV.i.20",
+              "basis": "full text",
+              "excerpt": "Propositions of this kind are discoverable by the mere operation of thought",
+              "corpus_chunk": 6726
+            },
+            {
+              "locator": "IV.i.20",
+              "basis": "full text",
+              "excerpt": "That three times five is equal to the half of thirty",
+              "corpus_chunk": 6726
+            }
+          ],
+          "annotation": "Hume's division of the objects of reason."
+        },
+        {
+          "key": "shabel2025",
+          "used_for": [
+            "Kant's two-step argument about 7 + 5 = 12"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.2",
+              "basis": "full text",
+              "excerpt": "“no matter how long I analyze my concept of such a possible sum [of seven and five] I will still not find twelve in it”",
+              "corpus_chunk": 3368
+            }
+          ],
+          "annotation": "Survey of Kant's philosophy of mathematics."
+        },
+        {
+          "key": "quine1951",
+          "used_for": [
+            "the attack on the analytic/synthetic distinction"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Quine's arguments as reported and quoted in rey2026 §§ 3.4–3.6 (corpus chunks 3175, 3189, 3193); details from Crossref"
+            }
+          ],
+          "annotation": "Quine's classic paper."
+        },
+        {
+          "key": "laporte2026",
+          "used_for": [
+            "necessary a posteriori disputed for propositions, less so for sentences",
+            "contingent a priori more controversial; Donnellan",
+            "rigidity and 'Water = H2O'"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "So it is controversial, though common, to say that rigidity assures that the proposition Hesperus = Phosphorus is necessarily true and a posteriori.",
+              "corpus_chunk": 3571
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "it may be less problematic or less controversial to say that rigidity assures that the sentence",
+              "corpus_chunk": 3571
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "Kripke’s examples of the contingent a priori are perhaps more controversial than his examples of the necessary a posteriori.",
+              "corpus_chunk": 3576
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "They are not “scary,” as Donnellan puts it",
+              "corpus_chunk": 3576
+            },
+            {
+              "locator": "§ 3.3",
+              "basis": "full text",
+              "excerpt": "both designators must be rigid if either is",
+              "corpus_chunk": 3582
+            }
+          ],
+          "annotation": "Survey of rigid designation."
+        },
+        {
+          "key": "kripke1980",
+          "used_for": [
+            "the necessary a posteriori and the contingent a priori"
+          ],
+          "evidence": [
+            {
+              "locator": "Lectures I and III (as cited)",
+              "basis": "secondary",
+              "note": "Kripke's examples as reported in laporte2026 §§ 3.1–3.3 and russell-bruce2024 § 2; details from Open Library"
+            }
+          ],
+          "annotation": "Kripke's lectures."
+        }
+      ]
+    },
+    "epistemic-reasons-versus-practical-reasons": {
+      "questions": [
+        "Pascal's wager: the argument and the main objections",
+        "Clifford's ethics of belief: the shipowner and the evidentialist principle",
+        "James's will to believe: genuine options and the passional nature",
+        "Can we believe at will? Doxastic voluntarism and Williams's argument",
+        "Evidentialism versus pragmatism about reasons for belief; the transparency of belief and the wrong kind of reasons"
+      ],
+      "sources": [
+        {
+          "key": "boespflug-jackson2024",
+          "used_for": [
+            "Alston's psychological argument",
+            "Williams's conceptual argument; Winters; Bennett's Credamites",
+            "Peels and Reisner cases",
+            "belief's truth aim (Shah)",
+            "Ghazali, Kalamas; Pascal's holy water; recasting as acceptance"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "Can you, at this moment, start to believe that the U.S. is still a colony of Great Britain, just by deciding to do so",
+              "corpus_chunk": 4100
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "Williams argues that belief at will would require the ability to believe p regardless of whether p is true.",
+              "corpus_chunk": 4106
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "you could have the ability to believe p at will, but not realize you have this ability",
+              "corpus_chunk": 4106
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "Credamites can occasionally will themselves to immediately acquire beliefs.",
+              "corpus_chunk": 4107
+            },
+            {
+              "locator": "§ 4.4",
+              "basis": "full text",
+              "excerpt": "Peels’ case is one in which the truth depends on the belief",
+              "corpus_chunk": 4132
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "(see Moran 1988; Shah 2003; Shah & Velleman 2005",
+              "corpus_chunk": 4105
+            },
+            {
+              "locator": "§ 7",
+              "basis": "full text",
+              "excerpt": "similar pragmatic arguments exist in the Islamic tradition (see Al-Ghazālī 1105 [1991: chapter IV]) and in the Buddhist tradition (in the discourse to the Kālāmas",
+              "corpus_chunk": 4158
+            },
+            {
+              "locator": "§ 7",
+              "basis": "full text",
+              "excerpt": "they could be framed differently: e.g., reasons to make a religious commitment or to accept that God exists",
+              "corpus_chunk": 4158
+            }
+          ],
+          "annotation": "Survey of doxastic voluntarism."
+        },
+        {
+          "key": "alston1988",
+          "used_for": [
+            "the argument against deontological justification"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "As reported and quoted in boespflug-jackson2024 § 3.1 (corpus chunk 4100); details from Crossref"
+            }
+          ],
+          "annotation": "Alston's argument that we cannot believe at will."
+        },
+        {
+          "key": "williams1973",
+          "used_for": [
+            "'Deciding to Believe'"
+          ],
+          "evidence": [
+            {
+              "locator": "ch. 9",
+              "basis": "secondary",
+              "note": "As reported in boespflug-jackson2024 § 3.2 (corpus chunk 4105); details from Open Library"
+            }
+          ],
+          "annotation": "Williams's argument that believing at will is impossible."
+        },
+        {
+          "key": "shah2003",
+          "used_for": [
+            "belief's constitutive connection to truth"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Cited among defenders of belief's truth aim in boespflug-jackson2024 § 3.2 (corpus chunk 4105); the article was not read; details from Crossref. The companion does not attribute the word 'transparency' to Shah."
+            }
+          ],
+          "annotation": "A central statement of how truth governs belief."
+        },
+        {
+          "key": "hajek2024",
+          "used_for": [
+            "four arguments; the third is 'the Wager'",
+            "prudential reasons; Hacking",
+            "hamburger / mixed strategies objection"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "it is only the third of these that is traditionally referred to as “Pascal’s Wager”",
+              "corpus_chunk": 3412
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "he seeks to provide prudential reasons rather than evidential reasons for believing in God",
+              "corpus_chunk": 3414
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "“the first well-understood contribution to decision theory”",
+              "corpus_chunk": 3415
+            },
+            {
+              "locator": "§ 5.4",
+              "basis": "full text",
+              "excerpt": "So ignoring the Wager and having a hamburger has the same expectation as outright wagering for God.",
+              "corpus_chunk": 3454
+            }
+          ],
+          "annotation": "The standard survey of Pascal's Wager."
+        },
+        {
+          "key": "pascal1670",
+          "used_for": [
+            "holy water advice"
+          ],
+          "evidence": [
+            {
+              "locator": "fr. 233",
+              "basis": "full text",
+              "note": "Gutenberg text: “by acting as if they believed, taking the holy water, having masses said, etc.” (Trotter translation in the 1958 Dutton edition)"
+            }
+          ],
+          "annotation": "Pascal's text."
+        },
+        {
+          "key": "chignell2018",
+          "used_for": [
+            "the shipowner; Clifford's verdicts",
+            "moderate sufficiency later in the essay",
+            "practical non-evidentialism"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "“he had no right to believe on such evidence as was before him.”",
+              "corpus_chunk": 3797
+            },
+            {
+              "locator": "§ 1.1",
+              "basis": "full text",
+              "excerpt": "In the later part of his essay Clifford puts forward a view about what it is for evidence to be “sufficient” that suggests a more moderate stance.",
+              "corpus_chunk": 3800
+            },
+            {
+              "locator": "§ 6.1",
+              "basis": "full text",
+              "excerpt": "A convenient label that captures both broadly pragmatist and broadly Kantian theories is Practical Non-Evidentialism",
+              "corpus_chunk": 3869
+            }
+          ],
+          "annotation": "The standard survey of the ethics of belief."
+        },
+        {
+          "key": "clifford1879",
+          "used_for": [
+            "Clifford's principle, p. 186",
+            "'one long sin against mankind', pp. 186–87"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 186",
+              "basis": "full text",
+              "excerpt": "it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evi- dence",
+              "corpus_chunk": 13613
+            },
+            {
+              "locator": "pp. 186–87",
+              "basis": "full text",
+              "excerpt": "the life of that man is one long sin against mankind",
+              "corpus_chunk": 13613
+            }
+          ],
+          "annotation": "Clifford's essay, in the collected edition."
+        },
+        {
+          "key": "james1897",
+          "used_for": [
+            "genuine options, pp. 3–4",
+            "the thesis, p. 11",
+            "on Pascal, p. 6"
+          ],
+          "evidence": [
+            {
+              "locator": "pp. 3–4",
+              "basis": "full text",
+              "excerpt": "we may call an option a _genuine_ option when it is of the forced, living, and momentous kind",
+              "corpus_chunk": 10824
+            },
+            {
+              "locator": "p. 11",
+              "basis": "full text",
+              "excerpt": "Our passional nature not only lawfully may, but must, decide an option between propositions",
+              "corpus_chunk": 10842
+            },
+            {
+              "locator": "p. 6",
+              "basis": "full text",
+              "excerpt": "would lack the inner soul of faith's reality",
+              "corpus_chunk": 10830
+            },
+            {
+              "locator": "p. 6",
+              "basis": "full text",
+              "excerpt": "the option offered to the will by Pascal is not a living option",
+              "corpus_chunk": 10830
+            }
+          ],
+          "annotation": "James's essay, with the original pagination."
+        }
+      ]
+    },
+    "epistemology-is-normative": {
+      "questions": [
+        "Is epistemology normative? Naturalized epistemology and Kim's objection",
+        "The deontological conception of epistemic justification and its problems",
+        "What is the aim of belief and of inquiry? Truth, knowledge, understanding; veritism and epistemic value",
+        "Epistemic consequentialism and its critics; the trade-off between believing truths and avoiding errors"
+      ],
+      "sources": [
+        {
+          "key": "rysiew2021",
+          "used_for": [
+            "Quine: 'a chapter of psychology', meager input and torrential output",
+            "Kim's objection",
+            "Quine: 'The normative is naturalized, not dropped'",
+            "later Quine on other sciences"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Epistemology, or something like it, simply falls into place as a chapter of psychology",
+              "corpus_chunk": 4385
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "The relation between the meager input and the torrential output",
+              "corpus_chunk": 4386
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "For epistemology to go out of the business of justification is for it to go out of business. (Kim 1988: 391)",
+              "corpus_chunk": 4396
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "“[t]he normative is naturalized, not dropped” (1990: 229)",
+              "corpus_chunk": 4417
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "It is the technology of truth-seeking",
+              "corpus_chunk": 4417
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "in later writings Quine cites other sciences as being relevant to epistemology naturalized",
+              "corpus_chunk": 4386
+            }
+          ],
+          "annotation": "The standard survey of naturalized epistemology."
+        },
+        {
+          "key": "kim1988",
+          "used_for": [
+            "Kim's objection to Quine"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 391",
+              "basis": "secondary",
+              "note": "Quoted in rysiew2021 § 3.1 and kelly2016 § 1 (corpus chunks 4396, 2128); details from Crossref"
+            }
+          ],
+          "annotation": "Kim's classic objection to naturalized epistemology."
+        },
+        {
+          "key": "kelly2016",
+          "used_for": [
+            "Kim on the normativity of evidence"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "A strictly nonnormative concept of evidence is not our concept of evidence; it is something that we do not understand.",
+              "corpus_chunk": 2128
+            }
+          ],
+          "annotation": "Survey of philosophical theories of evidence."
+        },
+        {
+          "key": "steup-neta2025",
+          "used_for": [
+            "objections to deontological justification; SLJ",
+            "epistemic consequentialism; Berker; permissivism"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "are akin not to actions but rather things such as digestive processes",
+              "corpus_chunk": 525
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "This claim is typically supported by describing cases involving either a benighted, culturally isolated society or subjects who are cognitively deficient.",
+              "corpus_chunk": 526
+            },
+            {
+              "locator": "§ 3.1",
+              "basis": "full text",
+              "excerpt": "S believes that p in a way that makes it sufficiently likely that her belief is true",
+              "corpus_chunk": 527
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "a particular way of forming one’s beliefs about the world is epistemically permissible just in so far as it promotes the possession of true belief and the avoidance of false belief",
+              "corpus_chunk": 487
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "see Berker 2013, which develops a line of argument found in Firth 1978",
+              "corpus_chunk": 487
+            },
+            {
+              "locator": "§ 1.2",
+              "basis": "full text",
+              "excerpt": "Permissivists argue that it does",
+              "corpus_chunk": 488
+            }
+          ],
+          "annotation": "The main SEP survey of epistemology."
+        },
+        {
+          "key": "alston1988",
+          "used_for": [
+            "the control objection"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "Cited for the control objection in steup-neta2025 § 3.1 (corpus chunk 525)"
+            }
+          ],
+          "annotation": "Alston's argument against deontological justification."
+        },
+        {
+          "key": "berker2013",
+          "used_for": [
+            "argument against epistemic consequentialism"
+          ],
+          "evidence": [
+            {
+              "locator": "whole article",
+              "basis": "secondary",
+              "note": "As reported in steup-neta2025 § 1.2 (corpus chunks 487–88); details from Crossref"
+            }
+          ],
+          "annotation": "Berker's critique of epistemic teleology."
+        },
+        {
+          "key": "chignell2018",
+          "used_for": [
+            "veritism and value monism",
+            "other aims of belief",
+            "timing disanalogy with ethics"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.4",
+              "basis": "full text",
+              "excerpt": "A prominent kind of monism, often called “veritism”, says that truth is the fundamental doxastic good",
+              "corpus_chunk": 3818
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "A common candidate here, of course, is knowledge itself",
+              "corpus_chunk": 3831
+            },
+            {
+              "locator": "§ 3.2",
+              "basis": "full text",
+              "excerpt": "a belief’s success at achieving its aim is typically evaluated by epistemologists all at once in the moment it is formed",
+              "corpus_chunk": 3834
+            }
+          ],
+          "annotation": "The standard survey of the ethics of belief."
+        },
+        {
+          "key": "pritchard-etal2025",
+          "used_for": [
+            "Meno; swamping problem",
+            "grains of sand; pro tanto value of true belief"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Going all the way back to Plato’s Meno",
+              "corpus_chunk": 4632
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "this problem has been called the “swamping problem”",
+              "corpus_chunk": 4640
+            },
+            {
+              "locator": "§ 8",
+              "basis": "full text",
+              "excerpt": "no fully rational agent is curious about the measurements of every grain of sand on a given beach",
+              "corpus_chunk": 4708
+            }
+          ],
+          "annotation": "Survey of the value of knowledge."
+        },
+        {
+          "key": "james1897",
+          "used_for": [
+            "the two commandments, pp. 17–18",
+            "'impossible to go with Clifford', p. 18"
+          ],
+          "evidence": [
+            {
+              "locator": "pp. 17–18",
+              "basis": "full text",
+              "excerpt": "they are not two ways of stating an identical commandment, they are two separable laws",
+              "corpus_chunk": 10854
+            },
+            {
+              "locator": "p. 18",
+              "basis": "full text",
+              "excerpt": "I myself find it impossible to go with Clifford.",
+              "corpus_chunk": 10855
+            }
+          ],
+          "annotation": "James's essay, with the original pagination."
+        },
+        {
+          "key": "pettigrew2024",
+          "used_for": [
+            "Jamesian epistemic utility; expectation theorem; Lockean threshold W/(R+W)"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4",
+              "basis": "full text",
+              "excerpt": "I’ll call this the Jamesian Epistemic Utility assumption",
+              "corpus_chunk": 4211
+            },
+            {
+              "locator": "§ 4.2",
+              "basis": "full text",
+              "excerpt": "If \\(p \\gt \\frac{W}{R+W}\\), then believing \\(X\\) uniquely maximizes expected epistemic utility.",
+              "corpus_chunk": 4214,
+              "note": "The 0.75 and 0.5 examples in the companion are arithmetic from this formula"
+            }
+          ],
+          "annotation": "Survey of epistemic utility theory."
+        }
+      ]
+    },
+    "the-map-of-the-field": {
+      "questions": [
+        "What is formal epistemology?",
+        "What is social epistemology?",
+        "Virtue epistemology: reliabilist and responsibilist versions",
+        "Feminist and standpoint epistemology",
+        "Epistemology in other traditions: Indian pramana theory and Chinese epistemology",
+        "Moral and religious epistemology"
+      ],
+      "sources": [
+        {
+          "key": "carter-sosa2026",
+          "used_for": [
+            "Sturgeon's 2×2 matrix"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2.2",
+              "basis": "full text",
+              "excerpt": "Formal work on rational belief and its revision (C)",
+              "corpus_chunk": 892
+            },
+            {
+              "locator": "§ 2.2",
+              "basis": "full text",
+              "excerpt": "Keith Lehrer’s work on comparative confidence",
+              "corpus_chunk": 891
+            }
+          ],
+          "annotation": "Survey of metaepistemology."
+        },
+        {
+          "key": "weisberg2021",
+          "used_for": [
+            "scope of formal epistemology"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "questions about decision-making (§5.1) or the meaning of hypothetical language (§5.3)",
+              "corpus_chunk": 5275
+            }
+          ],
+          "annotation": "Introduction to formal epistemology."
+        },
+        {
+          "key": "oconnor-etal2026",
+          "used_for": [
+            "individualism corrected",
+            "Goldman's veritism; testimony; science; Gilbert's plural subjects",
+            "Fricker's two injustices"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Until recently, epistemology—the study of (the nature, sources, and pursuit of) knowledge—was heavily individualistic in focus.",
+              "corpus_chunk": 4506
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Goldman’s “veritistic” approach, which focuses on the reliability with which various social practices produce true beliefs",
+              "corpus_chunk": 4514
+            },
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Margaret Gilbert (1989) made a forceful case for the existence of “plural subjects,”",
+              "corpus_chunk": 4515
+            },
+            {
+              "locator": "§ 5.3",
+              "basis": "full text",
+              "excerpt": "(Fricker’s example is the experience of women before the term “sexual harassment” was coined.)",
+              "corpus_chunk": 4586
+            }
+          ],
+          "annotation": "The standard survey of social epistemology."
+        },
+        {
+          "key": "goldman1999",
+          "used_for": [
+            "veritistic social epistemology"
+          ],
+          "evidence": [
+            {
+              "locator": "p. 5 (as cited)",
+              "basis": "secondary",
+              "note": "As reported in oconnor-etal2026 § 2 (corpus chunk 4514); details from Open Library"
+            }
+          ],
+          "annotation": "The book that set the agenda for veritistic social epistemology."
+        },
+        {
+          "key": "fricker2007",
+          "used_for": [
+            "testimonial and hermeneutical injustice"
+          ],
+          "evidence": [
+            {
+              "locator": "whole book",
+              "basis": "secondary",
+              "note": "As reported in oconnor-etal2026 § 5.3 and anderson2024 § 9 (corpus chunks 4586, 5243); details from Open Library"
+            }
+          ],
+          "annotation": "The book that introduced the concept of epistemic injustice."
+        },
+        {
+          "key": "turri-etal2021",
+          "used_for": [
+            "reliabilists and responsibilists; critics of the taxonomy",
+            "Sosa's apt belief"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "Virtue reliabilists (e.g., Goldman, Greco, and Sosa)",
+              "corpus_chunk": 4762
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "it is plausible that a complete epistemology must feature both faculty-virtues and trait-virtues",
+              "corpus_chunk": 4763
+            },
+            {
+              "locator": "§ 5",
+              "basis": "full text",
+              "excerpt": "Apt belief, then, is belief that is true because competent.",
+              "corpus_chunk": 4776
+            }
+          ],
+          "annotation": "Survey of virtue epistemology."
+        },
+        {
+          "key": "anderson2024",
+          "used_for": [
+            "situated knowledge; three approaches",
+            "a branch of social epistemology"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "The central concept of feminist epistemology is of situated knowledge",
+              "corpus_chunk": 5140
+            },
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "feminist standpoint theory, feminist postmodernism, and feminist empiricism—which have converged over time",
+              "corpus_chunk": 5140
+            },
+            {
+              "locator": "§ 1",
+              "basis": "full text",
+              "excerpt": "It is thus a branch of social epistemology.",
+              "corpus_chunk": 5144
+            }
+          ],
+          "annotation": "Survey of feminist epistemology."
+        },
+        {
+          "key": "campbell2024",
+          "used_for": [
+            "how moral knowledge is possible"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "How is moral knowledge possible?",
+              "corpus_chunk": 5434
+            }
+          ],
+          "annotation": "Survey of moral epistemology."
+        },
+        {
+          "key": "forrest2025",
+          "used_for": [
+            "reformed epistemology widens evidence; Alston on religious experience"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 7",
+              "basis": "full text",
+              "excerpt": "Reformed epistemology might be thought of as a modification of evidentialism in which the permissible kinds of evidence are expanded.",
+              "corpus_chunk": 5670
+            }
+          ],
+          "annotation": "Survey of the epistemology of religion."
+        },
+        {
+          "key": "phillips-vaidya2026",
+          "used_for": [
+            "pramāṇa-śāstra; twenty centuries",
+            "Nāgārjuna's regress and self-certification",
+            "testimony: Nyāya vs Vaiśeṣika/Yogācāra"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "Theory of knowledge, pramāṇa-śāstra, is a rich genre of Sanskrit literature, spanning almost twenty centuries",
+              "corpus_chunk": 5016
+            },
+            {
+              "locator": "§ 3",
+              "basis": "full text",
+              "excerpt": "Mīmāṃsā and Vedānta philosophers argue that such a threat of regress shows that knowledge is self-certifying, svataḥ prāmāṇya",
+              "corpus_chunk": 5035
+            },
+            {
+              "locator": "§ 6",
+              "basis": "full text",
+              "excerpt": "Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p",
+              "corpus_chunk": 5074
+            }
+          ],
+          "annotation": "Survey of classical Indian epistemology."
+        },
+        {
+          "key": "rosker2025",
+          "used_for": [
+            "knowledge from moral training; onto-epistemology"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "knowledge has been understood in a much broader sense, namely as something which also (or primarily) stems from moral training",
+              "corpus_chunk": 4879
+            },
+            {
+              "locator": "§ 2.3",
+              "basis": "full text",
+              "excerpt": "In the Chinese holistic tradition epistemology is inseparable from ontology",
+              "corpus_chunk": 4920
+            }
+          ],
+          "annotation": "Survey of Chinese epistemology."
+        },
+        {
+          "key": "rysiew2021",
+          "used_for": [
+            "later Quine and other sciences"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "in later writings Quine cites other sciences as being relevant to epistemology naturalized",
+              "corpus_chunk": 4386
+            }
+          ],
+          "annotation": "The standard survey of naturalized epistemology."
+        }
+      ]
+    },
+    "how-the-pieces-connect-one-news-story-twelve-questions": {
+      "questions": [
+        "Do press releases exaggerate health research? Causal claims from correlational studies in news coverage",
+        "Why might most published research findings be false?",
+        "Knowledge from the news: testimony through intermediaries, trust in experts and higher-order evidence"
+      ],
+      "sources": [
+        {
+          "key": "steup-neta2025",
+          "used_for": [
+            "journalism as testimony"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 5.5",
+              "basis": "full text",
+              "excerpt": "articles by journalists, delivery of information on television, radio",
+              "corpus_chunk": 584
+            }
+          ],
+          "annotation": "The main SEP survey of epistemology."
+        },
+        {
+          "key": "leonard2023",
+          "used_for": [
+            "transmission vs generation of testimonial knowledge"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 2",
+              "basis": "full text",
+              "excerpt": "Gretchen does not know that the bakery is closed",
+              "corpus_chunk": 368
+            }
+          ],
+          "annotation": "The standard survey of the epistemology of testimony."
+        },
+        {
+          "key": "sumner2014",
+          "used_for": [
+            "sample",
+            "rates of exaggeration",
+            "news follows press releases; little effect on uptake",
+            "conclusion on press releases"
+          ],
+          "evidence": [
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "Press releases (n=462) on biomedical and health related science issued by 20 leading UK universities in 2011",
+              "corpus_chunk": 14250
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "news stories (n=668)",
+              "corpus_chunk": 14250
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "40% (95% confidence interval 33% to 46%) of the press releases contained exaggerated advice",
+              "corpus_chunk": 14250
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "58% (95% confidence interval 48% to 68%), 81% (70% to 93%), and 86% (77% to 95%) of news stories",
+              "corpus_chunk": 14251
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "17% (10% to 24%), 18% (9% to 27%), and 10% (0% to 19%)",
+              "corpus_chunk": 14251
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "there was little evidence that exaggeration in press releases increased the uptake of news",
+              "corpus_chunk": 14251
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "Improving the accuracy of academic press releases could represent a key opportunity for reducing misleading health related news",
+              "corpus_chunk": 14252
+            }
+          ],
+          "annotation": "Observational study of exaggeration in university press releases and health news."
+        },
+        {
+          "key": "schwartz2012",
+          "used_for": [
+            "absolute risks 53% vs 9%",
+            "conclusion"
+          ],
+          "evidence": [
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "9% of stories quantified the main result with absolute risks when this information was not in the press release, 53% did so when it was in the press release",
+              "corpus_chunk": 14200
+            },
+            {
+              "locator": "abstract",
+              "basis": "full text",
+              "excerpt": "High quality press releases issued by medical journals seem to make the quality of associated newspaper stories better",
+              "corpus_chunk": 14201
+            }
+          ],
+          "annotation": "Retrospective cohort study of journal press releases and newspaper coverage."
+        },
+        {
+          "key": "ioannidis2005",
+          "used_for": [
+            "PPV formula",
+            "corollaries",
+            "'It can be proven that most claimed research findings are false'"
+          ],
+          "evidence": [
+            {
+              "locator": "“Modeling the Framework”",
+              "basis": "full text",
+              "excerpt": "PPV = (1 - β)R/(R - βR + α). A research finding is thus more likely true than false if (1 - β)R > α.",
+              "corpus_chunk": 14302
+            },
+            {
+              "locator": "corollary 1",
+              "basis": "full text",
+              "excerpt": "Corollary 1: The smaller the studies conducted in a scientific field, the less likely the research findings are to be true.",
+              "corpus_chunk": 14312
+            },
+            {
+              "locator": "corollary 4",
+              "basis": "full text",
+              "excerpt": "Corollary 4: The greater the flexibility in designs, definitions, outcomes, and analytical modes in a scientific field",
+              "corpus_chunk": 14315
+            },
+            {
+              "locator": "corollary 5",
+              "basis": "full text",
+              "excerpt": "Corollary 5: The greater the financial and other interests and prejudices in a scientific field",
+              "corpus_chunk": 14317
+            },
+            {
+              "locator": "corollary 6",
+              "basis": "full text",
+              "excerpt": "Corollary 6: The hotter a scientific field",
+              "corpus_chunk": 14318
+            },
+            {
+              "locator": "introduction",
+              "basis": "full text",
+              "excerpt": "It can be proven that most claimed research findings are false.",
+              "corpus_chunk": 14299
+            }
+          ],
+          "annotation": "The paper behind much of the replication debate."
+        },
+        {
+          "key": "reiss-sprenger2020",
+          "used_for": [
+            "p-hacking inflates false positives"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.2.2",
+              "basis": "full text",
+              "excerpt": "increase the type I error rate, which measures the rate at which false hypotheses are accepted, substantially over its nominal 5% level",
+              "corpus_chunk": 6480
+            }
+          ],
+          "annotation": "Survey of scientific objectivity."
+        },
+        {
+          "key": "chignell2018",
+          "used_for": [
+            "higher-order evidence"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4.3",
+              "basis": "full text",
+              "excerpt": "knowing that a peer disagrees with you is a piece of higher-order evidence regarding your first-order belief",
+              "corpus_chunk": 3851
+            }
+          ],
+          "annotation": "The standard survey of the ethics of belief."
+        },
+        {
+          "key": "kelly2016",
+          "used_for": [
+            "evidence is not a neutral arbiter"
+          ],
+          "evidence": [
+            {
+              "locator": "§ 4",
+              "basis": "full text",
+              "excerpt": "complications with this simple picture—some more serious than others—abound",
+              "corpus_chunk": 2206
+            }
+          ],
+          "annotation": "Survey of philosophical theories of evidence."
+        },
+        {
+          "key": "oconnor-etal2026",
+          "used_for": [
+            "social epistemology studies systems"
+          ],
+          "evidence": [
+            {
+              "locator": "preamble",
+              "basis": "full text",
+              "excerpt": "investigating the epistemic effects of social interactions, practices, norms, and systems",
+              "corpus_chunk": 4506
+            }
+          ],
+          "annotation": "The standard survey of social epistemology."
+        }
+      ]
+    }
+  }
+}
