@@ -214,6 +214,8 @@ Look at a finished chapter before starting: `deeper/src/03-logic-and-arguments/`
   found but not the whole, shorten it or split it into two evidence lines.
 - A citation that opens the paragraph straight after a block (`[@key, § 1]`) is moved onto the block's title.
 - Do not add a manual "Sources for this layer" line; the build adds Re-learn's sources itself.
+- A source is matched to its corpus text by URL, `corpus_url`, DOI or exact title. Never pin a database id
+  (`corpus_doc`): ids differ from machine to machine, and on another machine it names a different text.
 - Known corpus quirk: in *Mysticism and Logic* (key `russell1918`) the passages of chapter X carry the locator
   "XII. Illusions, Hallucinations, And Dreams". Cite them as `ch. X`.
 

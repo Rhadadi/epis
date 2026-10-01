@@ -52,8 +52,8 @@ def keydocs(key, src=None):
     if not ids and s.get("title"):
         t = norm(s["title"])
         ids = {d["id"] for d in docs() if norm(d["title"]) == t}
-    if s.get("corpus_doc"):
-        ids.add(s["corpus_doc"])
+    # a "corpus_doc" id would name a document in one machine's database only, so it is not honoured:
+    # give the source the url (or "corpus_url") of the text in the corpus instead
     return ids
 
 _chunk_cache = {}
