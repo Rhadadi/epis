@@ -1,0 +1,118 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "knowing-that-you-know",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do positive introspection, external conditions and knowledge of safety interact?"
+  ],
+  "sources": [
+    {
+      "key": "rendsvig-etal2025",
+      "used_for": [
+        "A claim at two levels",
+        "Why repeated introspection is not a free assumption",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 2.6 Principles of Knowledge and Belief",
+          "basis": "full text",
+          "excerpt": "They are commonly interpreted as governing of principled access to own mental states.",
+          "corpus_chunk": 50482
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "A claim at two levels",
+        "A condition can hold without a certificate"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 1.2 The Belief Condition",
+          "basis": "full text",
+          "excerpt": "Radford makes the following two claims about this example: Albert does not believe (E).",
+          "corpus_chunk": 2330
+        },
+        {
+          "locator": "§ § 1.2 The Belief Condition",
+          "basis": "full text",
+          "excerpt": "Alternatively, one might deny (b), arguing that Albert’s correct answer is not an expression of knowledge, perhaps because it is insufficiently confident.",
+          "corpus_chunk": 2332
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "An example of a safe belief that is not sensitive, according to Sosa, is the belief that a distant skeptical scenario does not obtain.",
+          "corpus_chunk": 2361
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "epi-luck-iep",
+      "used_for": [
+        "A condition can hold without a certificate",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Although there remains broad disagreement over how exactly to formulate the condition needed to rule out knowledge-destroying epistemic luck in a theory of knowledge, there is widespread consensus that whatever the correct condition is, S does not need to know that that condition has been met in order to know that p.",
+          "corpus_chunk": 43207
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "All that (K) requires for S to know that p is that conditions (i)-(iv) be met.",
+          "corpus_chunk": 43207
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "weisberg2021",
+      "used_for": [
+        "Margins for error",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 4.3 Self-Knowledge",
+          "basis": "full text",
+          "excerpt": "Even if we can’t know some things, might we at least have unlimited access to our own knowledge?",
+          "corpus_chunk": 3638
+        },
+        {
+          "locator": "§ § 4.3 Self-Knowledge",
+          "basis": "full text",
+          "excerpt": "You didn’t know there were 967 jellybeans, because there could easily have been 968 jellybeans without you noticing the difference.",
+          "corpus_chunk": 3639
+        },
+        {
+          "locator": "§ § 4.3 Self-Knowledge",
+          "basis": "full text",
+          "excerpt": "The idea is that knowledge requires a margin for error, a margin of at least one jellybean in our example.",
+          "corpus_chunk": 3639
+        },
+        {
+          "locator": "§ § 4.3 Self-Knowledge",
+          "basis": "full text",
+          "excerpt": "Set \\(n\\) high enough and the jellybeans even outnumber the particles in the universe!",
+          "corpus_chunk": 3640
+        },
+        {
+          "locator": "§ § 4.3 Self-Knowledge",
+          "basis": "full text",
+          "excerpt": "So the driving premise of this skeptical argument entails the KK thesis, which we’ve seen reason to reject.",
+          "corpus_chunk": 3641
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

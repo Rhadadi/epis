@@ -3800,6 +3800,19 @@
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #25447; preface dated London, September 1917; chapter X reprints \"Knowledge by Acquaintance and Knowledge by Description\" (Proceedings of the Aristotelian Society, 1910–11); full text read, 2026-10-01"
   },
+  "ryan2020": {
+    "type": "entry",
+    "authors": [
+      "Ryan, Sharon"
+    ],
+    "year": 2020,
+    "title": "Wisdom",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2020 Edition",
+    "url": "https://plato.stanford.edu/archives/sum2020/entries/wisdom/",
+    "access": "free",
+    "verified": "Title, author and revision date checked in the downloaded archived entry; first published 2007, substantive revision 2013, archived Summer 2020 edition; full text read 2026-10-01."
+  },
   "ryle1946": {
     "type": "article",
     "authors": [

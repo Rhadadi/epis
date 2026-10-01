@@ -1,0 +1,110 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "knowledge-assertion-and-action",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What evidence favors a knowledge norm, and how do alternatives explain the same cases?"
+  ],
+  "sources": [
+    {
+      "key": "pagin-marsili2025",
+      "used_for": [
+        "What a norm of assertion regulates",
+        "A conversational challenge is not a proof",
+        "Error and blameworthiness",
+        "The audience can change the focus",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 5.1.4 Which Norm of Assertion?",
+          "basis": "full text",
+          "excerpt": "Further conversational patterns supporting (KNA) have been proposed, e.g., by Benton (2011).",
+          "corpus_chunk": 38185
+        },
+        {
+          "locator": "§ § 5.1.4 Which Norm of Assertion?",
+          "basis": "full text",
+          "excerpt": "It does not seem, by contrast, that the speaker has to prove that she knows (rather than merely believe) that what she said is true.",
+          "corpus_chunk": 38187
+        },
+        {
+          "locator": "§ § 5.1.4 Which Norm of Assertion?",
+          "basis": "full text",
+          "excerpt": "For instance, it appears that any linguistic phenomenon that can be explained by appeal to a knowledge norm can be equally well explained by appeal to the view that asserters represent themselves as knowing what they say, although there is no norm (cf.",
+          "corpus_chunk": 38188
+        },
+        {
+          "locator": "§ § 5.1.4 Which Norm of Assertion?",
+          "basis": "full text",
+          "excerpt": "If someone asks you the time, it seems perfectly appropriate for you to respond “4.35 pm”.",
+          "corpus_chunk": 38189
+        },
+        {
+          "locator": "§ § 5.1.4 Which Norm of Assertion?",
+          "basis": "full text",
+          "excerpt": "Their proposals are similar to (KNA), but set the condition in relation to the transmission of knowledge to the hearer.",
+          "corpus_chunk": 38191
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "pritchard-etal2025",
+      "used_for": [
+        "Action and probability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 6. Other Accounts of the Value of Knowledge",
+          "basis": "full text",
+          "excerpt": "Moreover, were this agent to use this belief as a premise in her practical reasoning, and so infer that she should throw the ticket away without checking the lottery results in the paper for example, then we would regard her reasoning as problematic.",
+          "corpus_chunk": 5090
+        },
+        {
+          "locator": "§ § 6. Other Accounts of the Value of Knowledge",
+          "basis": "full text",
+          "excerpt": "If the agent had formed her true belief by reading the results in a reliable newspaper, for example, then she would count as knowing the target proposition and can then infer that she should throw the ticket away without criticism.",
+          "corpus_chunk": 5091
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Action and probability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 12. Pragmatic Encroachment",
+          "basis": "full text",
+          "excerpt": "Traditional approaches to knowledge have it that knowledge has to do with factors like truth and justification.",
+          "corpus_chunk": 2399
+        },
+        {
+          "locator": "§ § 12. Pragmatic Encroachment",
+          "basis": "full text",
+          "excerpt": "This difference, according to pragmatic encroachment, might make it the case that Daniel knows, but Sandra does not.[36] Pragmatic encroachment can be motivated by intuitions about cases.",
+          "corpus_chunk": 2401
+        },
+        {
+          "locator": "§ § 12. Pragmatic Encroachment",
+          "basis": "full text",
+          "excerpt": "Other, more broadly theoretical, arguments for pragmatic encroachment have been offered as well.",
+          "corpus_chunk": 2402
+        },
+        {
+          "locator": "§ § 12. Pragmatic Encroachment",
+          "basis": "full text",
+          "excerpt": "Pragmatic encroachment on knowledge is deeply controversial.",
+          "corpus_chunk": 2404
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

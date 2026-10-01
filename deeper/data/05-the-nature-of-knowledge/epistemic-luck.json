@@ -1,0 +1,233 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "epistemic-luck",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do evidential, veritic, modal and reflective luck differ, and why is safety disputed?"
+  ],
+  "sources": [
+    {
+      "key": "epi-luck-iep",
+      "used_for": [
+        "Luck before the evidence, or luck after it?",
+        "Do not confuse a lucky fact with a lucky belief",
+        "The paradox of rejecting all epistemic luck",
+        "Historical development without a single settled taxonomy",
+        "Evidence-based veritic luck",
+        "Modal veritic luck",
+        "Strong and weak safety",
+        "A stable truth can still be epistemically disconnected",
+        "Justification-oriented luck",
+        "Reflective luck and the external world",
+        "Probability and the explanation of success",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.d",
+          "basis": "full text",
+          "excerpt": "If all forms of epistemic luck are incompatible with knowledge, as the incompatibility thesis maintains, skepticism is correct and the knowledge thesis is false.",
+          "corpus_chunk": 43184
+        },
+        {
+          "locator": "§ 2.e",
+          "basis": "full text",
+          "excerpt": "Peter Unger (1968) was the first epistemologist to note that not all forms of epistemic luck are incompatible with knowledge.",
+          "corpus_chunk": 43185
+        },
+        {
+          "locator": "§ 2.e",
+          "basis": "full text",
+          "excerpt": "Suppose S is shot in the head but the bullet narrowly misses all vital regions of the brain required for conceptual thought and knowledge.",
+          "corpus_chunk": 43185
+        },
+        {
+          "locator": "§ 2.f.i",
+          "basis": "full text",
+          "excerpt": "Engel characterizes these two types of luck as follows: (EL) A person S is evidentially lucky in believing that p in circumstances C if and only if it is just a matter of luck that S has the evidence e for p that she does, but given her evidence e, it is not a matter of luck that her belief that p is true in C.",
+          "corpus_chunk": 43188
+        },
+        {
+          "locator": "§ 2.f.ii",
+          "basis": "full text",
+          "excerpt": "Hamid Vahid (2001) maintains that there are two types of knowledge-destroying epistemic luck.",
+          "corpus_chunk": 43191
+        },
+        {
+          "locator": "§ 2.f.ii",
+          "basis": "full text",
+          "excerpt": "Had she turned on the TV like she usually does, she would not have been justified in holding that belief.",
+          "corpus_chunk": 43191
+        },
+        {
+          "locator": "§ 2.f.iii",
+          "basis": "full text",
+          "excerpt": "Duncan Pritchard (2003) agrees that, of these types of luck, only veritic luck is incompatible with knowledge, but he replaces Engel’s evidence-based characterization of veritic luck with the following modal analysis: (MVL) For all agents S and propositions p, the truth of S’s belief that p is veritically lucky if and only if S’s belief that p is true in",
+          "corpus_chunk": 43193
+        },
+        {
+          "locator": "§ 2.g",
+          "basis": "full text",
+          "excerpt": "The post-Gettier literature is rife with attempts at supplementing or amending the traditional JTB-analysis with a satisfactory anti-luck constraint on knowledge.",
+          "corpus_chunk": 43194
+        },
+        {
+          "locator": "§ 2.g.i",
+          "basis": "full text",
+          "excerpt": "S’s belief that p is sensitive to p’s truth-value if and only if S would not believe that p if p were false (that is, if and only if S does not believe p in any of the closest ~p-worlds).",
+          "corpus_chunk": 43195
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Thus, they embrace closure failure because they think that it accurately captures our actual epistemic situation.",
+          "corpus_chunk": 43198
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Were every golfer to shoot a hole-in-one on Flowering Crabapple in Round One of the Masters in defiance of the astronomical odds against it, I would still believe that they were not going to do so.",
+          "corpus_chunk": 43200
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Considerations such as these have led a number of epistemologists (Sosa 1999 & 2000, Williamson 2000a & 2000b, Pritchard 2005) to replace the sensitivity condition with some sort of safety condition.",
+          "corpus_chunk": 43201
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Driving through Fake Barn County, Mary is unaware that the most of the barn-looking structures are façades.",
+          "corpus_chunk": 43201
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Many epistemologists (though not all) insist that people do not know their lottery tickets will lose, prior to hearing the announced results.",
+          "corpus_chunk": 43203
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "Then, Smith’s true belief that J or ~G will be safe, but veritically lucky nonetheless, because given Smith’s evidence, it is just a matter of luck that J or ~G is true.",
+          "corpus_chunk": 43204
+        },
+        {
+          "locator": "§ 2.g.ii",
+          "basis": "full text",
+          "excerpt": "But MVL entails that Smith’s belief is not veritically lucky.",
+          "corpus_chunk": 43204
+        },
+        {
+          "locator": "§ 2.h",
+          "basis": "full text",
+          "excerpt": "The paradox of epistemic luck dissolves once we recognize that the incompatibility thesis is false.",
+          "corpus_chunk": 43206
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Although there remains broad disagreement over how exactly to formulate the condition needed to rule out knowledge-destroying epistemic luck in a theory of knowledge, there is widespread consensus that whatever the correct condition is, S does not need to know that that condition has been met in order to know that p.",
+          "corpus_chunk": 43207
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "All that (K) requires for S to know that p is that conditions (i)-(iv) be met.",
+          "corpus_chunk": 43207
+        },
+        {
+          "locator": "§ 3.b",
+          "basis": "full text",
+          "excerpt": "Even if veritic luck poses no special problem for reflectively knowing that one knows, Duncan Pritchard contends that another more worrisome kind of epistemic luck does preclude such knowledge.",
+          "corpus_chunk": 43231
+        },
+        {
+          "locator": "§ 3.b",
+          "basis": "full text",
+          "excerpt": "After all, for every malevolent demon world where we are systematically deceived, there is a corresponding benevolent demon world that is just as close, reflectively, in which the benevolent demon sees to it that all of our commonsense beliefs are true.] Pritchard thinks that reflective luck is not incompatible with ordinary knowledge (he thinks only",
+          "corpus_chunk": 43233
+        },
+        {
+          "locator": "§ 3.b",
+          "basis": "full text",
+          "excerpt": "Since radical skeptical hypotheses are incompatible with virtually all of the ordinary propositions we routinely take ourselves to know, if we lack reflective knowledge that radical skeptical hypotheses are false, then we lack reflective knowledge of the most mundane of ordinary propositions.",
+          "corpus_chunk": 43235
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Do not confuse a lucky fact with a lucky belief",
+        "The cause can be right while the environment is dangerous",
+        "Evidence-based veritic luck",
+        "Modal veritic luck",
+        "Reflective luck and the external world",
+        "A changed circumstance can change the method's standing",
+        "Risk as another vocabulary",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "Given this further assumption, James’s belief in (d) is true.",
+          "corpus_chunk": 2352
+        },
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.",
+          "corpus_chunk": 2354
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "It is also externalist in the “state” sense, since the truth of the relevant counterfactuals will depend on features outside the subject.",
+          "corpus_chunk": 2362
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "Evaluating analyses of knowledge that incorporate safety conditions can be difficult, given the vagueness of the stated “nearby” condition.",
+          "corpus_chunk": 2364
+        },
+        {
+          "locator": "§ § 5.3 Relevant Alternatives",
+          "basis": "full text",
+          "excerpt": "A third approach to modal conditions on knowledge worthy of mention is the requirement that for a subject to know that P, they must rule out all “relevant alternatives”—that is, they must be able to rule out any relevant possibility in which P is false.",
+          "corpus_chunk": 2368
+        },
+        {
+          "locator": "§ § 6.2 Causal Theories of Knowledge",
+          "basis": "full text",
+          "excerpt": "Henry sees a real barn, and that’s why he believes there is a barn nearby.",
+          "corpus_chunk": 2374
+        },
+        {
+          "locator": "§ § 8. Epistemic Luck",
+          "basis": "full text",
+          "excerpt": "The anti-luck condition, like the safety condition of the previous section, is vague as stated.",
+          "corpus_chunk": 2383
+        },
+        {
+          "locator": "§ § 8. Epistemic Luck",
+          "basis": "full text",
+          "excerpt": "But unless we are to capitulate to radical skepticism, it seems that this sort of luck, too, ought to be considered compatible with knowledge.[29] Duncan Pritchard (2016) suggests that it might be better to express some of these ideas in terms of risk, rather than luck: one’s belief isn’t knowledge if there was too much risk of one having formed a false",
+          "corpus_chunk": 2385
+        },
+        {
+          "locator": "§ § 8. Epistemic Luck",
+          "basis": "full text",
+          "excerpt": "And if it is to serve in the analysis of knowledge, it is also important to explain the relevant notion of luck or risk without invoking knowledge.",
+          "corpus_chunk": 2386
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "the-value-of-knowledge",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which value problem does each proposal answer, and what assumptions drive the swamping argument?"
+  ],
+  "sources": [
+    {
+      "key": "pritchard-etal2025",
+      "used_for": [
+        "Two successful guides",
+        "Three questions hidden in one",
+        "A process and its product",
+        "Plato's question and the held-fixed comparison",
+        "Stability is a capacity to withstand misleading changes",
+        "The swamping argument unpacked",
+        "Is value exhausted when the end is absent as well?",
+        "The machine-product picture",
+        "Final value and intrinsic value",
+        "The achievement proposal",
+        "Environmental luck presses on achievement",
+        "Understanding as a competing good",
+        "The object of evaluation can be larger than one belief",
+        "Knowledge and practical reasoning",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 1. Value problems",
+          "basis": "full text",
+          "excerpt": "In Plato’s Meno, Socrates raises the question of why knowledge is more valuable than mere true belief.",
+          "corpus_chunk": 5031
+        },
+        {
+          "locator": "§ § 1. Value problems",
+          "basis": "full text",
+          "excerpt": "Mere true belief at this point might be lost, since one might lose all confidence that this is the right way to go.",
+          "corpus_chunk": 5032
+        },
+        {
+          "locator": "§ § 1. Value problems",
+          "basis": "full text",
+          "excerpt": "However, it requires further development to answer the secondary value problem.",
+          "corpus_chunk": 5032
+        },
+        {
+          "locator": "§ § 1. Value problems",
+          "basis": "full text",
+          "excerpt": "The tertiary value problem pertains to why knowledge is qualitatively better than any epistemic standing falling short of knowledge.",
+          "corpus_chunk": 5033
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "The first contemporary wave of work on the value problem largely concerned whether this problem raised a distinctive difficulty for reliabilist accounts of knowledge—i.e., those views which essentially define knowledge as reliably-formed true belief.",
+          "corpus_chunk": 5036
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "In defense of this claim, she offers the analogy of a cup of coffee.",
+          "corpus_chunk": 5036
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "Elsewhere in the literature (e.g., Kvanvig 2003), this problem has been called the “swamping problem”, on account of how the value of true belief ‘swamps’ the value of the true belief being produced in a reliable (i.e., truth-conducive) way.",
+          "corpus_chunk": 5038
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "It’s actually not clear that this is a problem that is specific to reliabilism.",
+          "corpus_chunk": 5038
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "Adam Carter and Benjamin Jarvis (2012) have argued, there are reasons to be suspicious of a key premise driving the swamping argument.",
+          "corpus_chunk": 5039
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "However, as they argue, the Swamping Thesis and the Swamping Thesis Complement, along with other plausible premises, jointly entail the unpalatable conclusion that non-factive epistemic properties—most notably, justification—are never epistemically valuable properties of a belief.",
+          "corpus_chunk": 5041
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "Brown 2012; Davis, & Jäger 2012; Hovarth 2009; Piller 2009).",
+          "corpus_chunk": 5041
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "For example, agent reliabilism (e.g., Greco 1999, 2000) might be thought to be untouched by this sort of argument.",
+          "corpus_chunk": 5043
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "Plausibly, however, one might argue that the reliable traits that make up an agent’s cognitive character have some value independently of the instrumental value they possess in virtue of being reliable—i.e., that they have some final or intrinsic value.",
+          "corpus_chunk": 5044
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "It is not clear what exactly Zagzebski means by this point, but she thinks it shows that even where the reliable process is independently valuable—i.e., independently of its being reliable—it still doesn’t follow that the value of the cause will transfer to add value to the effect.",
+          "corpus_chunk": 5045
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "On this picture, then, we are not to understand knowledge as a state consisting of a known belief, but rather as a state which consists of both the true belief and the source from which that true belief was acquired.",
+          "corpus_chunk": 5046
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "In particular, if the process by which one gained the true belief is an epistemic virtue—a character trait which is both reliable and intrinsically valuable—then this can ensure that the value of the knowing state in this case is more valuable than any corresponding state which simply consisted of a true belief.",
+          "corpus_chunk": 5047
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "Rather than treating the extra value of knowledge over true belief as deriving simply from the agent’s attainment of the target true belief, however, Riggs and Greco instead argue that we should regard the agent’s knowing as the state the agent is in when she is responsible for her true belief.",
+          "corpus_chunk": 5048
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "If one holds that there is only intrinsic and instrumental value, then this conception of value is compelling, since objects with the same intrinsic properties trivially have the same amount of intrinsic value, and they also plausibly have the same amount of instrumental value as well (at least in the same sort of environment).",
+          "corpus_chunk": 5051
+        },
+        {
+          "locator": "§ § 2. Reliabilism and the Meno Problem",
+          "basis": "full text",
+          "excerpt": "For criticism of this account of final value, see Bradley (2002).",
+          "corpus_chunk": 5051
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "Value thesis Achievements are finally valuable (i.e., valuable for their own sake) in a way that mere lucky successes are not.",
+          "corpus_chunk": 5063
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "As regards the value thesis, one might object that some successes that are because of ability—i.e., achievements, on this view—are too trivial or easy or wicked to count as finally valuable.",
+          "corpus_chunk": 5065
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "There are two key problems with the claim that knowledge involves cognitive achievement.",
+          "corpus_chunk": 5067
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "The archer’s success is thus lucky in the sense that it could very easily have been a failure.",
+          "corpus_chunk": 5067
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "Achievements, then, are, it seems, compatible with luck of this ‘environmental’ form even though they are not compatible with luck of the standard ‘intervening’ form.",
+          "corpus_chunk": 5069
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "Nevertheless, his belief is subject to environmental luck in that he is, unbeknownst to him, in barn façade county in which every other barn-shaped object is a barn façade.",
+          "corpus_chunk": 5070
+        },
+        {
+          "locator": "§ § 3. Virtue Epistemology and the Value Problem",
+          "basis": "full text",
+          "excerpt": "Robust virtue epistemologists have made a number of salient points regarding this case.",
+          "corpus_chunk": 5070
+        },
+        {
+          "locator": "§ § 4. Understanding and Epistemic Value",
+          "basis": "full text",
+          "excerpt": "The two usages of the term ‘understanding’ in ordinary language that Kvanvig focuses on—and which he regards as being especially important to epistemology—are when understanding is claimed for some object, such as some subject matter, and when it involves understanding that something is the case.",
+          "corpus_chunk": 5076
+        },
+        {
+          "locator": "§ § 4. Understanding and Epistemic Value",
+          "basis": "full text",
+          "excerpt": "This requirement entails that understanding is directly factive in the case of propositional understanding and indirectly factive in the case of objectual understanding—i.e., the agent needs to have at least mostly true beliefs about the target subject matter in order to be truly said to have objectual understanding of that subject matter.",
+          "corpus_chunk": 5077
+        },
+        {
+          "locator": "§ § 6. Other Accounts of the Value of Knowledge",
+          "basis": "full text",
+          "excerpt": "Moreover, were this agent to use this belief as a premise in her practical reasoning, and so infer that she should throw the ticket away without checking the lottery results in the paper for example, then we would regard her reasoning as problematic.",
+          "corpus_chunk": 5090
+        },
+        {
+          "locator": "§ § 6. Other Accounts of the Value of Knowledge",
+          "basis": "full text",
+          "excerpt": "If the agent had formed her true belief by reading the results in a reliable newspaper, for example, then she would count as knowing the target proposition and can then infer that she should throw the ticket away without criticism.",
+          "corpus_chunk": 5091
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "plato-meno",
+      "used_for": [
+        "Plato's question and the held-fixed comparison",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "97a–c",
+          "basis": "full text",
+          "excerpt": "If a man knew the way to Larisa, or anywhere else, and went to the place and led others thither, would he not be a right and good guide?",
+          "corpus_chunk": 19259
+        },
+        {
+          "locator": "97a–c",
+          "basis": "full text",
+          "excerpt": "SOCRATES: Then right opinion is not less useful than knowledge?",
+          "corpus_chunk": 19259
+        },
+        {
+          "locator": "97e–98a",
+          "basis": "full text",
+          "excerpt": "SOCRATES: I mean to say that they are not very valuable possessions if they are at liberty, for they will walk off like runaway slaves; but when fastened, they are of great value, for they are really beautiful works of art.",
+          "corpus_chunk": 19261
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

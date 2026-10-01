@@ -1,0 +1,60 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "knowledge-how-revisited",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do general and circumstantial ability, generic know-how and regress arguments differ?"
+  ],
+  "sources": [
+    {
+      "key": "pavese2022",
+      "used_for": [
+        "General ability and present opportunity",
+        "Knowing how oneself and knowing how someone could",
+        "One successful attempt is not enough",
+        "The regress argument has several targets",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 1. The Regress Argument",
+          "basis": "full text",
+          "excerpt": "Ryle’s most famous objection to intellectualist accounts of skills and knowledge-how is that they lead to a vicious regress: The consideration of propositions is itself an operation the execution of which can be more or less intelligent, less or more stupid.",
+          "corpus_chunk": 1557
+        },
+        {
+          "locator": "§ § 1.1 The Contemplation Argument",
+          "basis": "full text",
+          "excerpt": "The contemplation argument assumes for reductio that for any action to be intelligently executed, a prior theoretical operation of “contemplating” has to be performed first : Contemplation premise (CP): In order to employ one’s knowledge that p, one must contemplate the proposition p.",
+          "corpus_chunk": 1558
+        },
+        {
+          "locator": "§ § 1.3 A Revival of the Regress Argument",
+          "basis": "full text",
+          "excerpt": "If intellectualism is true, that would in turn require manifesting one’s knowledge-that.",
+          "corpus_chunk": 1567
+        },
+        {
+          "locator": "§ § 4.1 The Details of the Intellectualist Proposal",
+          "basis": "full text",
+          "excerpt": "The linguistic argument concludes that Intellectualism is true: Intellectualism about knowing how S knows how to Φ just in case S knows a proposition answering the question “how to Φ”.",
+          "corpus_chunk": 1588
+        },
+        {
+          "locator": "§ § 5. The Action Theory Argument and the Question of Joint Action",
+          "basis": "full text",
+          "excerpt": "Ryle is often interpreted as claiming that knowledge-how ascriptions are nothing more than ascriptions of an ability or a complex of dispositions to act in a skilled or intelligent manner (though see Hornsby 2011: 82 and Waights Hickman 2019 for dissent).",
+          "corpus_chunk": 1608
+        },
+        {
+          "locator": "§ § 5. The Action Theory Argument and the Question of Joint Action",
+          "basis": "full text",
+          "excerpt": "By contrast, anti-intellectualists argue that it is important to distinguish between knowing how to perform a task, which corresponds to a general ability, and being (actually and circumstantially) able to perform it (Noë 2005; Glick 2012; Setiya 2012).",
+          "corpus_chunk": 1609
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

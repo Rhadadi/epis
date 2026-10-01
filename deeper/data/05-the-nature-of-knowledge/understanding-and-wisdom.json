@@ -1,0 +1,128 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "understanding-and-wisdom",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes explanatory grasp, truth constraints and wise self-assessment?"
+  ],
+  "sources": [
+    {
+      "key": "grimm2025",
+      "used_for": [
+        "An answer and a connection",
+        "Why idealizations are a puzzle",
+        "The route to understanding can matter",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 2.1 Objects of Understanding",
+          "basis": "full text",
+          "excerpt": "What you grasp, when you understand why the metal began to rust, are not primarily relationships among your beliefs or their contents.",
+          "corpus_chunk": 2717
+        },
+        {
+          "locator": "§ § 2.3 Normativity of Understanding",
+          "basis": "full text",
+          "excerpt": "Suppose you accurately grasp that your house burned down because of faulty wiring.",
+          "corpus_chunk": 2738
+        },
+        {
+          "locator": "§ § 4.2 Understanding and Idealization",
+          "basis": "full text",
+          "excerpt": "A longstanding puzzle in the philosophy of science concerns how idealized models and representations (“idealizations”, for short) allow cognitive access to the world.",
+          "corpus_chunk": 2762
+        },
+        {
+          "locator": "§ § 4.2 Understanding and Idealization",
+          "basis": "full text",
+          "excerpt": "Understanding is the epistemic benefit we receive from idealizations, and understanding and truth can come apart.",
+          "corpus_chunk": 2762
+        },
+        {
+          "locator": "§ § 4.2 Understanding and Idealization",
+          "basis": "full text",
+          "excerpt": "According to Angela Potochnik (2017), this is because the systems studied by scientists are enormously complex networks of causal patterns and interactions.",
+          "corpus_chunk": 2764
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "ryan2020",
+      "used_for": [
+        "Wisdom includes assessment of oneself",
+        "Rationality without perfection",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § Preamble",
+          "basis": "full text",
+          "excerpt": "Philosophers, psychologists, spiritual leaders, poets, novelists, life coaches, and a variety of other important thinkers have tried to understand the concept of wisdom.",
+          "corpus_chunk": 51095
+        },
+        {
+          "locator": "§ § 1. Wisdom as Epistemic Humility",
+          "basis": "full text",
+          "excerpt": "This is a tempting and popular interpretation because Socrates certainly thinks he has shown that the epistemically arrogant poets, politicians, and craftsmen lack wisdom.",
+          "corpus_chunk": 51098
+        },
+        {
+          "locator": "§ § 1. Wisdom as Epistemic Humility",
+          "basis": "full text",
+          "excerpt": "Thus, (H1) is not an acceptable interpretation of Socrates' view.",
+          "corpus_chunk": 51098
+        },
+        {
+          "locator": "§ § 1. Wisdom as Epistemic Humility",
+          "basis": "full text",
+          "excerpt": "Unfortunately, this interpretation is not any better than (H1).",
+          "corpus_chunk": 51100
+        },
+        {
+          "locator": "§ § 3. Wisdom as Knowledge",
+          "basis": "full text",
+          "excerpt": "An alternative approach to wisdom focuses on the more positive idea that wise people are very knowledgeable people.",
+          "corpus_chunk": 51110
+        },
+        {
+          "locator": "§ § 4. Hybrid Theory",
+          "basis": "full text",
+          "excerpt": "But, since truth is a necessary condition for knowledge, bad epistemic luck is sufficient to undermine a claim to knowledge.",
+          "corpus_chunk": 51128
+        },
+        {
+          "locator": "§ § 5. Wisdom as Rationality",
+          "basis": "full text",
+          "excerpt": "But, ordinarily, feeling deeply sad or extremely angry is not an appropriate emotion to spilled milk.",
+          "corpus_chunk": 51131
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "pritchard-etal2025",
+      "used_for": [
+        "The route to understanding can matter",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 4. Understanding and Epistemic Value",
+          "basis": "full text",
+          "excerpt": "The two usages of the term ‘understanding’ in ordinary language that Kvanvig focuses on—and which he regards as being especially important to epistemology—are when understanding is claimed for some object, such as some subject matter, and when it involves understanding that something is the case.",
+          "corpus_chunk": 5076
+        },
+        {
+          "locator": "§ § 4. Understanding and Epistemic Value",
+          "basis": "full text",
+          "excerpt": "This requirement entails that understanding is directly factive in the case of propositional understanding and indirectly factive in the case of objectual understanding—i.e., the agent needs to have at least mostly true beliefs about the target subject matter in order to be truly said to have objectual understanding of that subject matter.",
+          "corpus_chunk": 5077
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

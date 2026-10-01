@@ -1,0 +1,246 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "responses-to-gettier",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which relation between belief and truth does each response require, and where do the views disagree?"
+  ],
+  "sources": [
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Identify the gap before repairing it",
+        "An ingredient and a connection are different",
+        "First strategy: restrict the route through falsehood",
+        "Third strategy: connect the belief to its cause",
+        "Fourth strategy: evaluate the process",
+        "Fifth strategy: sensitivity",
+        "Sixth strategy: safety",
+        "Seventh strategy: success through competence",
+        "Eighth strategy: reverse the explanatory order",
+        "Conditions of knowledge and methods for checking them",
+        "The views compared",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 3. Counterexamples to the Tripartite Analysis",
+          "basis": "full text",
+          "excerpt": "Gettier presented two cases in which a true belief is inferred from a justified false belief, including this one: Let us suppose that Smith has strong evidence for the following proposition: (f) Jones owns a Ford. … Smith has another friend, Brown, of whose whereabouts he is totally ignorant.",
+          "corpus_chunk": 2348
+        },
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "One natural idea was to add the following fourth condition to the traditional analysis: S’s belief that P is not inferred from any falsehood.[11] The subjects of Gettier’s cases straightforwardly violated this condition.",
+          "corpus_chunk": 2351
+        },
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "However, this “no false lemmas” proposal is not widely accepted.",
+          "corpus_chunk": 2351
+        },
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "Given this further assumption, James’s belief in (d) is true.",
+          "corpus_chunk": 2352
+        },
+        {
+          "locator": "§ § 4. No False Lemmas",
+          "basis": "full text",
+          "excerpt": "Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.",
+          "corpus_chunk": 2354
+        },
+        {
+          "locator": "§ § 5.1 Sensitivity",
+          "basis": "full text",
+          "excerpt": "Another candidate fourth condition on knowledge is sensitivity.",
+          "corpus_chunk": 2356
+        },
+        {
+          "locator": "§ § 5.1 Sensitivity",
+          "basis": "full text",
+          "excerpt": "For if there were no water there, you would have held the same belief on the same grounds—viz., the mirage.",
+          "corpus_chunk": 2357
+        },
+        {
+          "locator": "§ § 5.1 Sensitivity",
+          "basis": "full text",
+          "excerpt": "But this counterfactual may be false, depending on the details of the case.",
+          "corpus_chunk": 2357
+        },
+        {
+          "locator": "§ § 5.1 Sensitivity",
+          "basis": "full text",
+          "excerpt": "Assume that ordinary subjects know at least many of the things we typically take them to know.",
+          "corpus_chunk": 2359
+        },
+        {
+          "locator": "§ § 5.1 Sensitivity",
+          "basis": "full text",
+          "excerpt": "So given the sensitivity condition, George cannot know that he is not in such a scenario.",
+          "corpus_chunk": 2359
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "Although few epistemologists today endorse a sensitivity condition on knowledge, the idea that knowledge requires a subject to stand in a particular modal relation to the proposition known remains a popular one.",
+          "corpus_chunk": 2361
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "An example of a safe belief that is not sensitive, according to Sosa, is the belief that a distant skeptical scenario does not obtain.",
+          "corpus_chunk": 2361
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "It is also externalist in the “state” sense, since the truth of the relevant counterfactuals will depend on features outside the subject.",
+          "corpus_chunk": 2362
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "Evaluating analyses of knowledge that incorporate safety conditions can be difficult, given the vagueness of the stated “nearby” condition.",
+          "corpus_chunk": 2364
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "Neta and Rohrbaugh 2004:399) argue that safety conditions fare poorly with respect to some versions of Ginet’s barn facade cases.",
+          "corpus_chunk": 2365
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "Not all further clarifications of a safety condition will be suitable for the use of the latter in an analysis of knowledge.",
+          "corpus_chunk": 2365
+        },
+        {
+          "locator": "§ § 5.2 Safety",
+          "basis": "full text",
+          "excerpt": "One may have to decide whether safety obtains by first deciding whether knowledge obtains, rather than vice versa.",
+          "corpus_chunk": 2366
+        },
+        {
+          "locator": "§ § 6.1 Reliabilist Theories of Knowledge",
+          "basis": "full text",
+          "excerpt": "Part of what is problematic about lucky guesses is precisely that they are so lucky: such guesses are formed in a way such that it is unlikely that they should turn out true.",
+          "corpus_chunk": 2372
+        },
+        {
+          "locator": "§ § 6.1 Reliabilist Theories of Knowledge",
+          "basis": "full text",
+          "excerpt": "Given this view, Simple K-Reliabilism and the JTB theory are equivalent.",
+          "corpus_chunk": 2372
+        },
+        {
+          "locator": "§ § 6.2 Causal Theories of Knowledge",
+          "basis": "full text",
+          "excerpt": "Another move in a similar spirit to K-reliabilism replaces the justification clause in the JTB theory with a condition requiring a causal connection between the belief and the fact believed;[22] this is the approach of Goldman (1967, 1976).[23] Goldman’s own causal theory is a sophisticated one; we will not engage with its details here.",
+          "corpus_chunk": 2374
+        },
+        {
+          "locator": "§ § 6.2 Causal Theories of Knowledge",
+          "basis": "full text",
+          "excerpt": "Henry sees a real barn, and that’s why he believes there is a barn nearby.",
+          "corpus_chunk": 2374
+        },
+        {
+          "locator": "§ § 8. Epistemic Luck",
+          "basis": "full text",
+          "excerpt": "If the problem illustrated by Gettier cases is that JTB and JTB+ analyses are compatible with a degree of epistemic luck that is inconsistent with knowledge, a natural idea is to amend one’s analysis of knowledge by including an explicit “anti-luck” condition.",
+          "corpus_chunk": 2383
+        },
+        {
+          "locator": "§ § 10.1 The “AAA” Evaluations",
+          "basis": "full text",
+          "excerpt": "Sosa has often (e.g., Sosa 2007: ch. 2) made use of an analogy of a skilled archer shooting at a target; we may find it instructive as well.",
+          "corpus_chunk": 2390
+        },
+        {
+          "locator": "§ § 10.1 The “AAA” Evaluations",
+          "basis": "full text",
+          "excerpt": "For example, if a skillful shot is diverted by an unexpected gust of wind, then redirected towards the target by a second lucky gust, its ultimate accuracy does not manifest the skill, but rather reflects the lucky coincidence of the wind.",
+          "corpus_chunk": 2391
+        },
+        {
+          "locator": "§ § 10.1 The “AAA” Evaluations",
+          "basis": "full text",
+          "excerpt": "This is in some respects similar to the anti-luck condition we have examined above, in that it legislates that the relation between justification and truth be no mere coincidence.",
+          "corpus_chunk": 2392
+        },
+        {
+          "locator": "§ § 10.2 Fake Barn Cases",
+          "basis": "full text",
+          "excerpt": "Understanding knowledge as apt belief accommodates Gettier’s traditional counterexamples to the JTB theory rather straightforwardly.",
+          "corpus_chunk": 2393
+        },
+        {
+          "locator": "§ § 10.2 Fake Barn Cases",
+          "basis": "full text",
+          "excerpt": "Suppose we say the accuracy of Henry’s belief manifests his competence as a perceiver.",
+          "corpus_chunk": 2394
+        },
+        {
+          "locator": "§ § 10.2 Fake Barn Cases",
+          "basis": "full text",
+          "excerpt": "According to a second, subtly different strategy, Henry retains a barn-recognition competence, his current location notwithstanding, but, due to the ubiquity of fake barns, his competence does not manifest itself in his belief, since its truth is attributable more to luck than to his skill in recognizing barns.[32] Third, Sosa’s own response to the problem",
+          "corpus_chunk": 2395
+        },
+        {
+          "locator": "§ § 11. Knowledge First",
+          "basis": "full text",
+          "excerpt": "Not every concept is analyzable into more fundamental terms.",
+          "corpus_chunk": 2396
+        },
+        {
+          "locator": "§ § 11. Knowledge First",
+          "basis": "full text",
+          "excerpt": "Knowledge might figure into some analyses, but it will do so in the analysans, not in the analysandum.[33] There is no very straightforward argument for this conclusion; its case consists largely in the attempted demonstration of the theoretical success of the knowledge first stance.",
+          "corpus_chunk": 2397
+        },
+        {
+          "locator": "§ § 11. Knowledge First",
+          "basis": "full text",
+          "excerpt": "S knows that P if and only if S’s total evidence includes the proposition that P.",
+          "corpus_chunk": 2397
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    },
+    {
+      "key": "epi-luck-iep",
+      "used_for": [
+        "Second strategy: rule out hidden defeat",
+        "The views compared",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.d.iii",
+          "basis": "full text",
+          "excerpt": "For example, Roderick Chisholm (1964) and Peter Klein (1971) have characterized defeaters as follows: (D1) When evidence e justifies S in believing that p, then proposition d is a defeater for S’s justification if and only if (i) d is true and (ii) the conjunction of d and e does not justify S in believing that p.",
+          "corpus_chunk": 43140
+        },
+        {
+          "locator": "§ 1.d.iii",
+          "basis": "full text",
+          "excerpt": "I justifiedly believe that Tom Grabit stole the book, and he did.",
+          "corpus_chunk": 43140
+        },
+        {
+          "locator": "§ 1.d.iii",
+          "basis": "full text",
+          "excerpt": "Lehrer and Paxson argue that the fact that it is true that a delusional mental patient uttered false statements about Tom Grabit’s location on the day of the theft should not defeat my knowledge that Tom Stole the book.",
+          "corpus_chunk": 43142
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "chapter": "05-the-nature-of-knowledge",
+  "section": "the-inescapability-of-gettier-problems",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which analyses does Zagzebski’s recipe target, and which strategies lie outside its scope?"
+  ],
+  "sources": [
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Why a new ingredient can leave the same problem",
+        "What the argument does not establish",
+        "Truth-entailing justification is not automatically skepticism",
+        "Giving up decomposition need not mean giving up explanation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "Zagzebski suggested that no analysis sufficiently similar to the JTB analysis could ever avoid the problems highlighted by Gettier’s cases.",
+          "corpus_chunk": 2376
+        },
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "Plantinga added a fourth condition, according to which, for a belief to be knowledge the subject’s belief-producing faculties must be working properly in an appropriate environment.",
+          "corpus_chunk": 2378
+        },
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "Perhaps this is an unusual instance in which Mary’s husband’s brother, who looks a lot like the husband, is in the living room, and Mary concludes, on the basis of the proper function of her visual capacity, that her husband is in the living room.",
+          "corpus_chunk": 2379
+        },
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "The argument generalizes against all “non-redundant” JTB+X analyses.",
+          "corpus_chunk": 2379
+        },
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "If it does, then it will of course be impossible to start with a case that has justified false belief.",
+          "corpus_chunk": 2381
+        },
+        {
+          "locator": "§ § 7. Is Knowledge Analyzable?",
+          "basis": "full text",
+          "excerpt": "This condition entails both belief and truth, and so is not susceptible to Zagzebski’s recipe.",
+          "corpus_chunk": 2381
+        },
+        {
+          "locator": "§ § 8. Epistemic Luck",
+          "basis": "full text",
+          "excerpt": "If the problem illustrated by Gettier cases is that JTB and JTB+ analyses are compatible with a degree of epistemic luck that is inconsistent with knowledge, a natural idea is to amend one’s analysis of knowledge by including an explicit “anti-luck” condition.",
+          "corpus_chunk": 2383
+        }
+      ],
+      "annotation": "Checked corpus passages supporting the distinctions and competing accounts discussed on this page."
+    }
+  ]
+}

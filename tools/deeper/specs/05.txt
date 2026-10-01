@@ -1,0 +1,251 @@
+== 05-the-nature-of-knowledge/the-tripartite-analysis
+Q: What does the analysis claim, and how do truth, belief and kinds of justification differ?
+@ichikawa-steup2026 | § § Preamble | The propositional knowledge that is the analysandum of the analysis of knowledge literature is paradigmatically expressed in English by sentences of the form “S knows that P”, where “S” refers to the knowing subject, and “P” expresses the proposition that is known.
+@ichikawa-steup2026 | § § Preamble | For example, it might be that there are possible cases of knowledge without J, or vice versa.
+@ichikawa-steup2026 | § § 1. Knowledge as Justified True Belief | Much of the 20th century literature on the analysis of knowledge began with a critique of a three-part “traditional” analysis of knowledge.
+@ichikawa-steup2026 | § § 1.1 The Truth Condition | Most epistemologists agree that what is false cannot be known.
+@ichikawa-steup2026 | § § 1.1 The Truth Condition | Allan Hazlett (2010) argues on the basis of data like this that “knows” is not a factive verb.[2] Hazlett’s diagnosis is deeply controversial; most epistemologists will treat such knowledge ascriptions as a kind of exaggeration, and not as literally true.
+@ichikawa-steup2026 | § § 1.2 The Belief Condition | The belief condition is only slightly more controversial than the truth condition.
+@ichikawa-steup2026 | § § 1.2 The Belief Condition | The standard response is that Walter’s avowal of disbelief is not literally true; what Walter wishes to convey by saying, “I don’t believe it”, is not that he really does not believe that his house has burned down, but rather that he finds it hard to come to terms with what he sees.
+@ichikawa-steup2026 | § § 1.2 The Belief Condition | Radford makes the following two claims about this example: Albert does not believe (E).
+@ichikawa-steup2026 | § § 1.3 The “Justification” Condition | The standard answer rationale has to do with cases where a belief might be true even though it is formed improperly.
+@ichikawa-steup2026 | § § 1.3.1 The “Justification” Label | Although “justification” is the standard contemporary name for the condition in question, this label is a relatively recent (20th century) development, and the name can carry some potentially misleading connotations, especially for those not already versed in the literature.
+@ichikawa-steup2026 | § § 1.3.1 The “Justification” Label | This might be so, even if S has not engaged in a project of actively justifying their belief.
+@ichikawa-steup2026 | § § 1.3.3 Kinds of Justification | It is worth noting that one might distinguish between two importantly different notions of justification, standardly referred to as “propositional justification” and “doxastic justification” (sometimes “ex ante” justification and “ex post” justification, respectively).[8] Unlike that between internalist and externalist approaches to justification, the
+@ichikawa-steup2026 | § § 1.3.3 Kinds of Justification | The precise relation between propositional and doxastic justification is subject to controversy, but it is uncontroversial that the two notions can come apart.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | It is nearly universally accepted amongst contemporary epistemologists that there are counterexamples to the analysis of knowledge as justified true belief.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | As indicated in §1.3, one role of the justification condition was to rule out lucky guesses as cases of knowledge.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/the-gettier-problem
+Q: How do justified true beliefs fail to be knowledge, and what do the counterexamples establish?
+@ichikawa-steup2026 | § § Preamble | The propositional knowledge that is the analysandum of the analysis of knowledge literature is paradigmatically expressed in English by sentences of the form “S knows that P”, where “S” refers to the knowing subject, and “P” expresses the proposition that is known.
+@ichikawa-steup2026 | § § Preamble | For example, it might be that there are possible cases of knowledge without J, or vice versa.
+@ichikawa-steup2026 | § § 1. Knowledge as Justified True Belief | Much of the 20th century literature on the analysis of knowledge began with a critique of a three-part “traditional” analysis of knowledge.
+@ichikawa-steup2026 | § § 1.3 The “Justification” Condition | The standard answer rationale has to do with cases where a belief might be true even though it is formed improperly.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | It is nearly universally accepted amongst contemporary epistemologists that there are counterexamples to the analysis of knowledge as justified true belief.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | It’s typically thought to be intuitive that in Dharmottara’s case, one does not know that there is water at the location in question.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | However, let it be so that Socrates is in fact running in Rome; however, you do not know this.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | Gettier presented two cases in which a true belief is inferred from a justified false belief, including this one: Let us suppose that Smith has strong evidence for the following proposition: (f) Jones owns a Ford. … Smith has another friend, Brown, of whose whereabouts he is totally ignorant.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | First, Jones does not own a Ford, but is at present driving a rented car.
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | As indicated in §1.3, one role of the justification condition was to rule out lucky guesses as cases of knowledge.
+@ichikawa-steup2026 | § § 4. No False Lemmas | However, this “no false lemmas” proposal is not widely accepted.
+@ichikawa-steup2026 | § § 4. No False Lemmas | Given this further assumption, James’s belief in (d) is true.
+@ichikawa-steup2026 | § § 4. No False Lemmas | Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.
+@ichikawa-steup2026 | § § 4. No False Lemmas | His belief does not appear to be the result of any inference from a falsehood.
+@ichikawa-steup2026 | § § 6.2 Causal Theories of Knowledge | Henry sees a real barn, and that’s why he believes there is a barn nearby.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Gettier’s paper launched a flurry of philosophical activity by epistemologists attempting to revise the JTB theory, usually by adding one or more conditions, to close the gap between knowledge and justified true belief.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Zagzebski suggested that no analysis sufficiently similar to the JTB analysis could ever avoid the problems highlighted by Gettier’s cases.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Perhaps this is an unusual instance in which Mary’s husband’s brother, who looks a lot like the husband, is in the living room, and Mary concludes, on the basis of the proper function of her visual capacity, that her husband is in the living room.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | If it does, then it will of course be impossible to start with a case that has justified false belief.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | If the problem illustrated by Gettier cases is that JTB and JTB+ analyses are compatible with a degree of epistemic luck that is inconsistent with knowledge, a natural idea is to amend one’s analysis of knowledge by including an explicit “anti-luck” condition.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | The anti-luck condition, like the safety condition of the previous section, is vague as stated.
+@ichikawa-steup2026 | § § 9. Methodological Options | As our discussion so far makes clear, one standard way of evaluating attempted analyses of knowledge has given a central role to testing it against intuitions about cases.
+@ichikawa-steup2026 | § § 9. Methodological Options | Craig defends an account of knowledge that is designed to fill this role, even though it is susceptible to intuitive counterexamples.
+@ichikawa-steup2026 | § § 10. Virtue-Theoretic Approaches | The virtue-theoretic approach to knowledge is in some respects similar to the safety and anti-luck approaches.
+@ichikawa-steup2026 | § § 11. Knowledge First | Not every concept is analyzable into more fundamental terms.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@plato-theaetetus | 201a–c | Do you imagine that there are any teachers in the world so clever as to be able to convince others of the truth about acts of robbery or violence, of which they were not eye-witnesses, while a little water is flowing in the clepsydra?
+A @plato-theaetetus: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/responses-to-gettier
+Q: Which relation between belief and truth does each response require, and where do the views disagree?
+@ichikawa-steup2026 | § § 3. Counterexamples to the Tripartite Analysis | Gettier presented two cases in which a true belief is inferred from a justified false belief, including this one: Let us suppose that Smith has strong evidence for the following proposition: (f) Jones owns a Ford. … Smith has another friend, Brown, of whose whereabouts he is totally ignorant.
+@ichikawa-steup2026 | § § 4. No False Lemmas | One natural idea was to add the following fourth condition to the traditional analysis: S’s belief that P is not inferred from any falsehood.[11] The subjects of Gettier’s cases straightforwardly violated this condition.
+@ichikawa-steup2026 | § § 4. No False Lemmas | However, this “no false lemmas” proposal is not widely accepted.
+@ichikawa-steup2026 | § § 4. No False Lemmas | Given this further assumption, James’s belief in (d) is true.
+@ichikawa-steup2026 | § § 4. No False Lemmas | Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.
+@ichikawa-steup2026 | § § 5.1 Sensitivity | Another candidate fourth condition on knowledge is sensitivity.
+@ichikawa-steup2026 | § § 5.1 Sensitivity | For if there were no water there, you would have held the same belief on the same grounds—viz., the mirage.
+@ichikawa-steup2026 | § § 5.1 Sensitivity | But this counterfactual may be false, depending on the details of the case.
+@ichikawa-steup2026 | § § 5.1 Sensitivity | Assume that ordinary subjects know at least many of the things we typically take them to know.
+@ichikawa-steup2026 | § § 5.1 Sensitivity | So given the sensitivity condition, George cannot know that he is not in such a scenario.
+@ichikawa-steup2026 | § § 5.2 Safety | Although few epistemologists today endorse a sensitivity condition on knowledge, the idea that knowledge requires a subject to stand in a particular modal relation to the proposition known remains a popular one.
+@ichikawa-steup2026 | § § 5.2 Safety | An example of a safe belief that is not sensitive, according to Sosa, is the belief that a distant skeptical scenario does not obtain.
+@ichikawa-steup2026 | § § 5.2 Safety | It is also externalist in the “state” sense, since the truth of the relevant counterfactuals will depend on features outside the subject.
+@ichikawa-steup2026 | § § 5.2 Safety | Evaluating analyses of knowledge that incorporate safety conditions can be difficult, given the vagueness of the stated “nearby” condition.
+@ichikawa-steup2026 | § § 5.2 Safety | Neta and Rohrbaugh 2004:399) argue that safety conditions fare poorly with respect to some versions of Ginet’s barn facade cases.
+@ichikawa-steup2026 | § § 5.2 Safety | Not all further clarifications of a safety condition will be suitable for the use of the latter in an analysis of knowledge.
+@ichikawa-steup2026 | § § 5.2 Safety | One may have to decide whether safety obtains by first deciding whether knowledge obtains, rather than vice versa.
+@ichikawa-steup2026 | § § 6.1 Reliabilist Theories of Knowledge | Part of what is problematic about lucky guesses is precisely that they are so lucky: such guesses are formed in a way such that it is unlikely that they should turn out true.
+@ichikawa-steup2026 | § § 6.1 Reliabilist Theories of Knowledge | Given this view, Simple K-Reliabilism and the JTB theory are equivalent.
+@ichikawa-steup2026 | § § 6.2 Causal Theories of Knowledge | Another move in a similar spirit to K-reliabilism replaces the justification clause in the JTB theory with a condition requiring a causal connection between the belief and the fact believed;[22] this is the approach of Goldman (1967, 1976).[23] Goldman’s own causal theory is a sophisticated one; we will not engage with its details here.
+@ichikawa-steup2026 | § § 6.2 Causal Theories of Knowledge | Henry sees a real barn, and that’s why he believes there is a barn nearby.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | If the problem illustrated by Gettier cases is that JTB and JTB+ analyses are compatible with a degree of epistemic luck that is inconsistent with knowledge, a natural idea is to amend one’s analysis of knowledge by including an explicit “anti-luck” condition.
+@ichikawa-steup2026 | § § 10.1 The “AAA” Evaluations | Sosa has often (e.g., Sosa 2007: ch. 2) made use of an analogy of a skilled archer shooting at a target; we may find it instructive as well.
+@ichikawa-steup2026 | § § 10.1 The “AAA” Evaluations | For example, if a skillful shot is diverted by an unexpected gust of wind, then redirected towards the target by a second lucky gust, its ultimate accuracy does not manifest the skill, but rather reflects the lucky coincidence of the wind.
+@ichikawa-steup2026 | § § 10.1 The “AAA” Evaluations | This is in some respects similar to the anti-luck condition we have examined above, in that it legislates that the relation between justification and truth be no mere coincidence.
+@ichikawa-steup2026 | § § 10.2 Fake Barn Cases | Understanding knowledge as apt belief accommodates Gettier’s traditional counterexamples to the JTB theory rather straightforwardly.
+@ichikawa-steup2026 | § § 10.2 Fake Barn Cases | Suppose we say the accuracy of Henry’s belief manifests his competence as a perceiver.
+@ichikawa-steup2026 | § § 10.2 Fake Barn Cases | According to a second, subtly different strategy, Henry retains a barn-recognition competence, his current location notwithstanding, but, due to the ubiquity of fake barns, his competence does not manifest itself in his belief, since its truth is attributable more to luck than to his skill in recognizing barns.[32] Third, Sosa’s own response to the problem
+@ichikawa-steup2026 | § § 11. Knowledge First | Not every concept is analyzable into more fundamental terms.
+@ichikawa-steup2026 | § § 11. Knowledge First | Knowledge might figure into some analyses, but it will do so in the analysans, not in the analysandum.[33] There is no very straightforward argument for this conclusion; its case consists largely in the attempted demonstration of the theoretical success of the knowledge first stance.
+@ichikawa-steup2026 | § § 11. Knowledge First | S knows that P if and only if S’s total evidence includes the proposition that P.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@epi-luck-iep | § 1.d.iii | For example, Roderick Chisholm (1964) and Peter Klein (1971) have characterized defeaters as follows: (D1) When evidence e justifies S in believing that p, then proposition d is a defeater for S’s justification if and only if (i) d is true and (ii) the conjunction of d and e does not justify S in believing that p.
+@epi-luck-iep | § 1.d.iii | I justifiedly believe that Tom Grabit stole the book, and he did.
+@epi-luck-iep | § 1.d.iii | Lehrer and Paxson argue that the fact that it is true that a delusional mental patient uttered false statements about Tom Grabit’s location on the day of the theft should not defeat my knowledge that Tom Stole the book.
+A @epi-luck-iep: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/the-inescapability-of-gettier-problems
+Q: Which analyses does Zagzebski’s recipe target, and which strategies lie outside its scope?
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Zagzebski suggested that no analysis sufficiently similar to the JTB analysis could ever avoid the problems highlighted by Gettier’s cases.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Plantinga added a fourth condition, according to which, for a belief to be knowledge the subject’s belief-producing faculties must be working properly in an appropriate environment.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | Perhaps this is an unusual instance in which Mary’s husband’s brother, who looks a lot like the husband, is in the living room, and Mary concludes, on the basis of the proper function of her visual capacity, that her husband is in the living room.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | The argument generalizes against all “non-redundant” JTB+X analyses.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | If it does, then it will of course be impossible to start with a case that has justified false belief.
+@ichikawa-steup2026 | § § 7. Is Knowledge Analyzable? | This condition entails both belief and truth, and so is not susceptible to Zagzebski’s recipe.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | If the problem illustrated by Gettier cases is that JTB and JTB+ analyses are compatible with a degree of epistemic luck that is inconsistent with knowledge, a natural idea is to amend one’s analysis of knowledge by including an explicit “anti-luck” condition.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/epistemic-luck
+Q: How do evidential, veritic, modal and reflective luck differ, and why is safety disputed?
+@ichikawa-steup2026 | § § 4. No False Lemmas | Given this further assumption, James’s belief in (d) is true.
+@ichikawa-steup2026 | § § 4. No False Lemmas | Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.
+@ichikawa-steup2026 | § § 5.2 Safety | It is also externalist in the “state” sense, since the truth of the relevant counterfactuals will depend on features outside the subject.
+@ichikawa-steup2026 | § § 5.2 Safety | Evaluating analyses of knowledge that incorporate safety conditions can be difficult, given the vagueness of the stated “nearby” condition.
+@ichikawa-steup2026 | § § 5.3 Relevant Alternatives | A third approach to modal conditions on knowledge worthy of mention is the requirement that for a subject to know that P, they must rule out all “relevant alternatives”—that is, they must be able to rule out any relevant possibility in which P is false.
+@ichikawa-steup2026 | § § 6.2 Causal Theories of Knowledge | Henry sees a real barn, and that’s why he believes there is a barn nearby.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | The anti-luck condition, like the safety condition of the previous section, is vague as stated.
+@ichikawa-steup2026 | § § 8. Epistemic Luck | But unless we are to capitulate to radical skepticism, it seems that this sort of luck, too, ought to be considered compatible with knowledge.[29] Duncan Pritchard (2016) suggests that it might be better to express some of these ideas in terms of risk, rather than luck: one’s belief isn’t knowledge if there was too much risk of one having formed a false
+@ichikawa-steup2026 | § § 8. Epistemic Luck | And if it is to serve in the analysis of knowledge, it is also important to explain the relevant notion of luck or risk without invoking knowledge.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@epi-luck-iep | § 2.d | If all forms of epistemic luck are incompatible with knowledge, as the incompatibility thesis maintains, skepticism is correct and the knowledge thesis is false.
+@epi-luck-iep | § 2.e | Peter Unger (1968) was the first epistemologist to note that not all forms of epistemic luck are incompatible with knowledge.
+@epi-luck-iep | § 2.e | Suppose S is shot in the head but the bullet narrowly misses all vital regions of the brain required for conceptual thought and knowledge.
+@epi-luck-iep | § 2.f.i | Engel characterizes these two types of luck as follows: (EL) A person S is evidentially lucky in believing that p in circumstances C if and only if it is just a matter of luck that S has the evidence e for p that she does, but given her evidence e, it is not a matter of luck that her belief that p is true in C.
+@epi-luck-iep | § 2.f.ii | Hamid Vahid (2001) maintains that there are two types of knowledge-destroying epistemic luck.
+@epi-luck-iep | § 2.f.ii | Had she turned on the TV like she usually does, she would not have been justified in holding that belief.
+@epi-luck-iep | § 2.f.iii | Duncan Pritchard (2003) agrees that, of these types of luck, only veritic luck is incompatible with knowledge, but he replaces Engel’s evidence-based characterization of veritic luck with the following modal analysis: (MVL) For all agents S and propositions p, the truth of S’s belief that p is veritically lucky if and only if S’s belief that p is true in
+@epi-luck-iep | § 2.g | The post-Gettier literature is rife with attempts at supplementing or amending the traditional JTB-analysis with a satisfactory anti-luck constraint on knowledge.
+@epi-luck-iep | § 2.g.i | S’s belief that p is sensitive to p’s truth-value if and only if S would not believe that p if p were false (that is, if and only if S does not believe p in any of the closest ~p-worlds).
+@epi-luck-iep | § 2.g.ii | Thus, they embrace closure failure because they think that it accurately captures our actual epistemic situation.
+@epi-luck-iep | § 2.g.ii | Were every golfer to shoot a hole-in-one on Flowering Crabapple in Round One of the Masters in defiance of the astronomical odds against it, I would still believe that they were not going to do so.
+@epi-luck-iep | § 2.g.ii | Considerations such as these have led a number of epistemologists (Sosa 1999 & 2000, Williamson 2000a & 2000b, Pritchard 2005) to replace the sensitivity condition with some sort of safety condition.
+@epi-luck-iep | § 2.g.ii | Driving through Fake Barn County, Mary is unaware that the most of the barn-looking structures are façades.
+@epi-luck-iep | § 2.g.ii | Many epistemologists (though not all) insist that people do not know their lottery tickets will lose, prior to hearing the announced results.
+@epi-luck-iep | § 2.g.ii | Then, Smith’s true belief that J or ~G will be safe, but veritically lucky nonetheless, because given Smith’s evidence, it is just a matter of luck that J or ~G is true.
+@epi-luck-iep | § 2.g.ii | But MVL entails that Smith’s belief is not veritically lucky.
+@epi-luck-iep | § 2.h | The paradox of epistemic luck dissolves once we recognize that the incompatibility thesis is false.
+@epi-luck-iep | § 3 | Although there remains broad disagreement over how exactly to formulate the condition needed to rule out knowledge-destroying epistemic luck in a theory of knowledge, there is widespread consensus that whatever the correct condition is, S does not need to know that that condition has been met in order to know that p.
+@epi-luck-iep | § 3 | All that (K) requires for S to know that p is that conditions (i)-(iv) be met.
+@epi-luck-iep | § 3.b | Even if veritic luck poses no special problem for reflectively knowing that one knows, Duncan Pritchard contends that another more worrisome kind of epistemic luck does preclude such knowledge.
+@epi-luck-iep | § 3.b | After all, for every malevolent demon world where we are systematically deceived, there is a corresponding benevolent demon world that is just as close, reflectively, in which the benevolent demon sees to it that all of our commonsense beliefs are true.] Pritchard thinks that reflective luck is not incompatible with ordinary knowledge (he thinks only
+@epi-luck-iep | § 3.b | Since radical skeptical hypotheses are incompatible with virtually all of the ordinary propositions we routinely take ourselves to know, if we lack reflective knowledge that radical skeptical hypotheses are false, then we lack reflective knowledge of the most mundane of ordinary propositions.
+A @epi-luck-iep: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/the-value-of-knowledge
+Q: Which value problem does each proposal answer, and what assumptions drive the swamping argument?
+@pritchard-etal2025 | § § 1. Value problems | In Plato’s Meno, Socrates raises the question of why knowledge is more valuable than mere true belief.
+@pritchard-etal2025 | § § 1. Value problems | Mere true belief at this point might be lost, since one might lose all confidence that this is the right way to go.
+@pritchard-etal2025 | § § 1. Value problems | However, it requires further development to answer the secondary value problem.
+@pritchard-etal2025 | § § 1. Value problems | The tertiary value problem pertains to why knowledge is qualitatively better than any epistemic standing falling short of knowledge.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | The first contemporary wave of work on the value problem largely concerned whether this problem raised a distinctive difficulty for reliabilist accounts of knowledge—i.e., those views which essentially define knowledge as reliably-formed true belief.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | In defense of this claim, she offers the analogy of a cup of coffee.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | Elsewhere in the literature (e.g., Kvanvig 2003), this problem has been called the “swamping problem”, on account of how the value of true belief ‘swamps’ the value of the true belief being produced in a reliable (i.e., truth-conducive) way.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | It’s actually not clear that this is a problem that is specific to reliabilism.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | Adam Carter and Benjamin Jarvis (2012) have argued, there are reasons to be suspicious of a key premise driving the swamping argument.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | However, as they argue, the Swamping Thesis and the Swamping Thesis Complement, along with other plausible premises, jointly entail the unpalatable conclusion that non-factive epistemic properties—most notably, justification—are never epistemically valuable properties of a belief.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | Brown 2012; Davis, & Jäger 2012; Hovarth 2009; Piller 2009).
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | For example, agent reliabilism (e.g., Greco 1999, 2000) might be thought to be untouched by this sort of argument.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | Plausibly, however, one might argue that the reliable traits that make up an agent’s cognitive character have some value independently of the instrumental value they possess in virtue of being reliable—i.e., that they have some final or intrinsic value.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | It is not clear what exactly Zagzebski means by this point, but she thinks it shows that even where the reliable process is independently valuable—i.e., independently of its being reliable—it still doesn’t follow that the value of the cause will transfer to add value to the effect.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | On this picture, then, we are not to understand knowledge as a state consisting of a known belief, but rather as a state which consists of both the true belief and the source from which that true belief was acquired.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | In particular, if the process by which one gained the true belief is an epistemic virtue—a character trait which is both reliable and intrinsically valuable—then this can ensure that the value of the knowing state in this case is more valuable than any corresponding state which simply consisted of a true belief.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | Rather than treating the extra value of knowledge over true belief as deriving simply from the agent’s attainment of the target true belief, however, Riggs and Greco instead argue that we should regard the agent’s knowing as the state the agent is in when she is responsible for her true belief.
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | If one holds that there is only intrinsic and instrumental value, then this conception of value is compelling, since objects with the same intrinsic properties trivially have the same amount of intrinsic value, and they also plausibly have the same amount of instrumental value as well (at least in the same sort of environment).
+@pritchard-etal2025 | § § 2. Reliabilism and the Meno Problem | For criticism of this account of final value, see Bradley (2002).
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | Value thesis Achievements are finally valuable (i.e., valuable for their own sake) in a way that mere lucky successes are not.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | As regards the value thesis, one might object that some successes that are because of ability—i.e., achievements, on this view—are too trivial or easy or wicked to count as finally valuable.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | There are two key problems with the claim that knowledge involves cognitive achievement.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | The archer’s success is thus lucky in the sense that it could very easily have been a failure.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | Achievements, then, are, it seems, compatible with luck of this ‘environmental’ form even though they are not compatible with luck of the standard ‘intervening’ form.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | Nevertheless, his belief is subject to environmental luck in that he is, unbeknownst to him, in barn façade county in which every other barn-shaped object is a barn façade.
+@pritchard-etal2025 | § § 3. Virtue Epistemology and the Value Problem | Robust virtue epistemologists have made a number of salient points regarding this case.
+@pritchard-etal2025 | § § 4. Understanding and Epistemic Value | The two usages of the term ‘understanding’ in ordinary language that Kvanvig focuses on—and which he regards as being especially important to epistemology—are when understanding is claimed for some object, such as some subject matter, and when it involves understanding that something is the case.
+@pritchard-etal2025 | § § 4. Understanding and Epistemic Value | This requirement entails that understanding is directly factive in the case of propositional understanding and indirectly factive in the case of objectual understanding—i.e., the agent needs to have at least mostly true beliefs about the target subject matter in order to be truly said to have objectual understanding of that subject matter.
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | Moreover, were this agent to use this belief as a premise in her practical reasoning, and so infer that she should throw the ticket away without checking the lottery results in the paper for example, then we would regard her reasoning as problematic.
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | If the agent had formed her true belief by reading the results in a reliable newspaper, for example, then she would count as knowing the target proposition and can then infer that she should throw the ticket away without criticism.
+A @pritchard-etal2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@plato-meno | 97a–c | If a man knew the way to Larisa, or anywhere else, and went to the place and led others thither, would he not be a right and good guide?
+@plato-meno | 97a–c | SOCRATES: Then right opinion is not less useful than knowledge?
+@plato-meno | 97e–98a | SOCRATES: I mean to say that they are not very valuable possessions if they are at liberty, for they will walk off like runaway slaves; but when fastened, they are of great value, for they are really beautiful works of art.
+A @plato-meno: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/understanding-and-wisdom
+Q: What distinguishes explanatory grasp, truth constraints and wise self-assessment?
+@grimm2025 | § § 2.1 Objects of Understanding | What you grasp, when you understand why the metal began to rust, are not primarily relationships among your beliefs or their contents.
+@grimm2025 | § § 2.3 Normativity of Understanding | Suppose you accurately grasp that your house burned down because of faulty wiring.
+@grimm2025 | § § 4.2 Understanding and Idealization | A longstanding puzzle in the philosophy of science concerns how idealized models and representations (“idealizations”, for short) allow cognitive access to the world.
+@grimm2025 | § § 4.2 Understanding and Idealization | Understanding is the epistemic benefit we receive from idealizations, and understanding and truth can come apart.
+@grimm2025 | § § 4.2 Understanding and Idealization | According to Angela Potochnik (2017), this is because the systems studied by scientists are enormously complex networks of causal patterns and interactions.
+A @grimm2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@ryan2020 | § § Preamble | Philosophers, psychologists, spiritual leaders, poets, novelists, life coaches, and a variety of other important thinkers have tried to understand the concept of wisdom.
+@ryan2020 | § § 1. Wisdom as Epistemic Humility | This is a tempting and popular interpretation because Socrates certainly thinks he has shown that the epistemically arrogant poets, politicians, and craftsmen lack wisdom.
+@ryan2020 | § § 1. Wisdom as Epistemic Humility | Thus, (H1) is not an acceptable interpretation of Socrates' view.
+@ryan2020 | § § 1. Wisdom as Epistemic Humility | Unfortunately, this interpretation is not any better than (H1).
+@ryan2020 | § § 3. Wisdom as Knowledge | An alternative approach to wisdom focuses on the more positive idea that wise people are very knowledgeable people.
+@ryan2020 | § § 4. Hybrid Theory | But, since truth is a necessary condition for knowledge, bad epistemic luck is sufficient to undermine a claim to knowledge.
+@ryan2020 | § § 5. Wisdom as Rationality | But, ordinarily, feeling deeply sad or extremely angry is not an appropriate emotion to spilled milk.
+A @ryan2020: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@pritchard-etal2025 | § § 4. Understanding and Epistemic Value | The two usages of the term ‘understanding’ in ordinary language that Kvanvig focuses on—and which he regards as being especially important to epistemology—are when understanding is claimed for some object, such as some subject matter, and when it involves understanding that something is the case.
+@pritchard-etal2025 | § § 4. Understanding and Epistemic Value | This requirement entails that understanding is directly factive in the case of propositional understanding and indirectly factive in the case of objectual understanding—i.e., the agent needs to have at least mostly true beliefs about the target subject matter in order to be truly said to have objectual understanding of that subject matter.
+A @pritchard-etal2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/knowledge-how-revisited
+Q: How do general and circumstantial ability, generic know-how and regress arguments differ?
+@pavese2022 | § § 1. The Regress Argument | Ryle’s most famous objection to intellectualist accounts of skills and knowledge-how is that they lead to a vicious regress: The consideration of propositions is itself an operation the execution of which can be more or less intelligent, less or more stupid.
+@pavese2022 | § § 1.1 The Contemplation Argument | The contemplation argument assumes for reductio that for any action to be intelligently executed, a prior theoretical operation of “contemplating” has to be performed first : Contemplation premise (CP): In order to employ one’s knowledge that p, one must contemplate the proposition p.
+@pavese2022 | § § 1.3 A Revival of the Regress Argument | If intellectualism is true, that would in turn require manifesting one’s knowledge-that.
+@pavese2022 | § § 4.1 The Details of the Intellectualist Proposal | The linguistic argument concludes that Intellectualism is true: Intellectualism about knowing how S knows how to Φ just in case S knows a proposition answering the question “how to Φ”.
+@pavese2022 | § § 5. The Action Theory Argument and the Question of Joint Action | Ryle is often interpreted as claiming that knowledge-how ascriptions are nothing more than ascriptions of an ability or a complex of dispositions to act in a skilled or intelligent manner (though see Hornsby 2011: 82 and Waights Hickman 2019 for dissent).
+@pavese2022 | § § 5. The Action Theory Argument and the Question of Joint Action | By contrast, anti-intellectualists argue that it is important to distinguish between knowing how to perform a task, which corresponds to a general ability, and being (actually and circumstantially) able to perform it (Noë 2005; Glick 2012; Setiya 2012).
+A @pavese2022: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/knowledge-assertion-and-action
+Q: What evidence favors a knowledge norm, and how do alternatives explain the same cases?
+@pagin-marsili2025 | § § 5.1.4 Which Norm of Assertion? | Further conversational patterns supporting (KNA) have been proposed, e.g., by Benton (2011).
+@pagin-marsili2025 | § § 5.1.4 Which Norm of Assertion? | It does not seem, by contrast, that the speaker has to prove that she knows (rather than merely believe) that what she said is true.
+@pagin-marsili2025 | § § 5.1.4 Which Norm of Assertion? | For instance, it appears that any linguistic phenomenon that can be explained by appeal to a knowledge norm can be equally well explained by appeal to the view that asserters represent themselves as knowing what they say, although there is no norm (cf.
+@pagin-marsili2025 | § § 5.1.4 Which Norm of Assertion? | If someone asks you the time, it seems perfectly appropriate for you to respond “4.35 pm”.
+@pagin-marsili2025 | § § 5.1.4 Which Norm of Assertion? | Their proposals are similar to (KNA), but set the condition in relation to the transmission of knowledge to the hearer.
+A @pagin-marsili2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | Moreover, were this agent to use this belief as a premise in her practical reasoning, and so infer that she should throw the ticket away without checking the lottery results in the paper for example, then we would regard her reasoning as problematic.
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | If the agent had formed her true belief by reading the results in a reliable newspaper, for example, then she would count as knowing the target proposition and can then infer that she should throw the ticket away without criticism.
+A @pritchard-etal2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@ichikawa-steup2026 | § § 12. Pragmatic Encroachment | Traditional approaches to knowledge have it that knowledge has to do with factors like truth and justification.
+@ichikawa-steup2026 | § § 12. Pragmatic Encroachment | This difference, according to pragmatic encroachment, might make it the case that Daniel knows, but Sandra does not.[36] Pragmatic encroachment can be motivated by intuitions about cases.
+@ichikawa-steup2026 | § § 12. Pragmatic Encroachment | Other, more broadly theoretical, arguments for pragmatic encroachment have been offered as well.
+@ichikawa-steup2026 | § § 12. Pragmatic Encroachment | Pragmatic encroachment on knowledge is deeply controversial.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/knowing-that-you-know
+Q: How do positive introspection, external conditions and knowledge of safety interact?
+@rendsvig-etal2025 | § § 2.6 Principles of Knowledge and Belief | They are commonly interpreted as governing of principled access to own mental states.
+A @rendsvig-etal2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@weisberg2021 | § § 4.3 Self-Knowledge | Even if we can’t know some things, might we at least have unlimited access to our own knowledge?
+@weisberg2021 | § § 4.3 Self-Knowledge | You didn’t know there were 967 jellybeans, because there could easily have been 968 jellybeans without you noticing the difference.
+@weisberg2021 | § § 4.3 Self-Knowledge | The idea is that knowledge requires a margin for error, a margin of at least one jellybean in our example.
+@weisberg2021 | § § 4.3 Self-Knowledge | Set \(n\) high enough and the jellybeans even outnumber the particles in the universe!
+@weisberg2021 | § § 4.3 Self-Knowledge | So the driving premise of this skeptical argument entails the KK thesis, which we’ve seen reason to reject.
+A @weisberg2021: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@epi-luck-iep | § 3 | Although there remains broad disagreement over how exactly to formulate the condition needed to rule out knowledge-destroying epistemic luck in a theory of knowledge, there is widespread consensus that whatever the correct condition is, S does not need to know that that condition has been met in order to know that p.
+@epi-luck-iep | § 3 | All that (K) requires for S to know that p is that conditions (i)-(iv) be met.
+A @epi-luck-iep: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@ichikawa-steup2026 | § § 1.2 The Belief Condition | Radford makes the following two claims about this example: Albert does not believe (E).
+@ichikawa-steup2026 | § § 1.2 The Belief Condition | Alternatively, one might deny (b), arguing that Albert’s correct answer is not an expression of knowledge, perhaps because it is insufficiently confident.
+@ichikawa-steup2026 | § § 5.2 Safety | An example of a safe belief that is not sensitive, according to Sosa, is the belief that a distant skeptical scenario does not obtain.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+
+== 05-the-nature-of-knowledge/why-do-we-have-the-concept-of-knowledge
+Q: How does Craig move from a purpose-relative informant role to an objectivized concept?
+@rysiew2026 | § § 5.3 The Social Role of Knowledge Ascriptions | Much of the debate surrounding EC has concerned particular uses of ‘know’ in various contexts — specifically, their intuitive truth or falsity.
+@rysiew2026 | § § 5.3 The Social Role of Knowledge Ascriptions | According to Craig, “the core of the concept of knowledge is an outcome of certain very general facts about the human situation” (1990, 10).
+@rysiew2026 | § § 5.3 The Social Role of Knowledge Ascriptions | Craig’s proposal, in brief, is that the concept of the knower is the objectivized notion of a good informant (ibid., 90–91).[24] A number of writers have suggested that broadly Craigian reflections on the social role of “knowledge” attributions provide a novel line of support for EC.
+A @rysiew2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@ichikawa-steup2026 | § § 9. Methodological Options | As our discussion so far makes clear, one standard way of evaluating attempted analyses of knowledge has given a central role to testing it against intuitions about cases.
+@ichikawa-steup2026 | § § 9. Methodological Options | Craig defends an account of knowledge that is designed to fill this role, even though it is susceptible to intuitive counterexamples.
+A @ichikawa-steup2026: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | A second author who thinks that our understanding of the concept of knowledge can have important ramifications for the value of knowledge is Edward Craig (1990).
+@pritchard-etal2025 | § § 6. Other Accounts of the Value of Knowledge | As with Hawthorne’s theory, this proposal, if correct, could potentially offer a resolution of at least the secondary value problem.
+A @pritchard-etal2025: Checked corpus passages supporting the distinctions and competing accounts discussed on this page.
