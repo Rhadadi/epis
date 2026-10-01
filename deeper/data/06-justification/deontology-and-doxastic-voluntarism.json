@@ -1,0 +1,129 @@
+{
+  "chapter": "06-justification",
+  "section": "deontology-and-doxastic-voluntarism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "Saying, imagining, accepting, believing",
+        "The argument against belief duties",
+        "Reasons-responsive agency",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Those working on doxastic voluntarism distinguish various kinds of voluntary control; here, we follow the basic contours of William Alston’s (1988) influential taxonomy.",
+          "corpus_chunk": 3121
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "While Alston refers to this kind of control as “direct” (1988: 278), many writing on doxastic voluntarism today would categorize it as indirect control, as it requires more than a volition.",
+          "corpus_chunk": 3122
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Thus, non-basic immediate control allows us to bring about something “just like that”, assuming the external conditions hold.",
+          "corpus_chunk": 3122
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The probability that these long-term intentional projects will be successful varies; in some cases, the likelihood of success may be quite high; however, in other cases, even the most sincerely committed are unlikely to succeed.",
+          "corpus_chunk": 3124
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Some authors reject doxastic voluntarism on the basis of psychological considerations.",
+          "corpus_chunk": 3159
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Can you, at this moment, start to believe that the U.S. is still a colony of Great Britain, just by deciding to do so.",
+          "corpus_chunk": 3159
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Alston concludes that we have neither basic nor non-basic control over belief (1988: 274), and also argues that we do not have reliable long-range control over our beliefs (1988: 276).",
+          "corpus_chunk": 3161
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Rik Peels (2017: ch. 2) also defends Alston’s argument against various challenges: arguments that we have direct doxastic control, indirect doxastic control, and compatibilist doxastic control.",
+          "corpus_chunk": 3162
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Similarly, even if I cannot believe that the sky is green, that doesn’t show that my disbelieving it isn’t free.",
+          "corpus_chunk": 3183
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "A number of objections have been raised to doxastic compatibilism.",
+          "corpus_chunk": 3184
+        }
+      ],
+      "annotation": "Distinguishes kinds of belief control and compares involuntarist and reasons-responsive accounts of responsibility."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "Permission, excuse, and support",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "How is the term “justification” used in ordinary language?",
+          "corpus_chunk": 1026
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Due to the inappropriateness of Tom’s question, it wasn’t Martha’s duty to tell the truth.",
+          "corpus_chunk": 1026
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Exactly what, though, must we do in the pursuit of some such distinctively epistemic aim?",
+          "corpus_chunk": 1027
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Recently, however, two chief objections have been raised against conceiving of justification deontologically.",
+          "corpus_chunk": 1028
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "According to the second objection to DJ, deontological justification cannot suffice for an agent to have a justified belief.",
+          "corpus_chunk": 1029
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "SLJ) S is justified in believing that p if and only if S believes that p in a way that makes it sufficiently likely that her belief is true.",
+          "corpus_chunk": 1030
+        }
+      ],
+      "annotation": "Introduces competing conceptions of justification and the difference between evidence and reliable sources."
+    }
+  ]
+}

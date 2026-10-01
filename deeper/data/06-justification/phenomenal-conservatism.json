@@ -1,0 +1,225 @@
+{
+  "chapter": "06-justification",
+  "section": "phenomenal-conservatism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "phen-con-iep",
+      "used_for": [
+        "An appearance you do not accept",
+        "Some support is not a complete permission to act",
+        "Biased appearances",
+        "A regress motivation has limits",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.a",
+          "basis": "full text",
+          "excerpt": "Here is a very simple theory: to say that it seems to one that P is to report a tentative sort of belief that P (Chisholm [1957, ch. 4] suggested something in this neighborhood).",
+          "corpus_chunk": 44105
+        },
+        {
+          "locator": "§ 4.a",
+          "basis": "full text",
+          "excerpt": "We are particularly unlikely to have reliable intuitions about a scenario S when (i) we never encounter or think about S in normal life, (ii) S is superficially similar to another scenario, S’, which we encounter or think about quite a bit, and (iii) the correct judgment about S’ is different from the correct judgment",
+          "corpus_chunk": 44127
+        },
+        {
+          "locator": "§ 4.a",
+          "basis": "full text",
+          "excerpt": "A further observation relevant to the religious example is that the practical consequences of a belief may impact the degree of epistemic justification that one needs in order to be justified in acting on the belief, such that a belief with extremely serious practical consequences may call for a higher degree of",
+          "corpus_chunk": 44128
+        },
+        {
+          "locator": "§ 4.b",
+          "basis": "full text",
+          "excerpt": "Some argue that its merely seeming to one that P cannot suffice (even in the absence of defeaters) to confer justification for believing P; in addition, one must have some reason for thinking that one’s appearances are reliable indicators of the truth, or that things that appear to one to be the case are likely to",
+          "corpus_chunk": 44129
+        },
+        {
+          "locator": "§ 4.b",
+          "basis": "full text",
+          "excerpt": "To begin with, if we think that appearance-based justifications require metajustifications (to wit, evidence that appearances are reliable indicators of the truth), it is unclear why we should not impose the same requirement on all justifications of any kind.",
+          "corpus_chunk": 44130
+        },
+        {
+          "locator": "§ 4.b",
+          "basis": "full text",
+          "excerpt": "One can avoid this sort of infinite regress by rejecting any general metajustification requirement.",
+          "corpus_chunk": 44130
+        },
+        {
+          "locator": "§ 4.c",
+          "basis": "full text",
+          "excerpt": "Another class of objection to PC adverts to cases of appearances that are produced by emotions, desires, irrational beliefs, or other kinds of sources that would normally render a belief unjustified (Markie 2006, pp. 119-20; Lyons 2011; Siegel 2013; McGrath 2013).",
+          "corpus_chunk": 44132
+        },
+        {
+          "locator": "§ 4.c",
+          "basis": "full text",
+          "excerpt": "This “seeing as” is not a belief but a kind of experience – that is, Jack’s face just looks to Jill like an angry face.",
+          "corpus_chunk": 44132
+        },
+        {
+          "locator": "§ 4.c",
+          "basis": "full text",
+          "excerpt": "Tucker (2010, p. 540) suggests that the person possesses justification but lacks another requirement for knowledge and is epistemically blameworthy (compare Huemer 2013a, pp. 747-8).",
+          "corpus_chunk": 44134
+        },
+        {
+          "locator": "§ 1.b",
+          "basis": "full text",
+          "excerpt": "Appearances sometimes fail to correspond to reality, as in the case of illusions, hallucinations, false memories, and mistaken intuitions.",
+          "corpus_chunk": 44096
+        },
+        {
+          "locator": "§ 1.b",
+          "basis": "full text",
+          "excerpt": "For instance, one might see a stick that appears bent when half-submerged in water.",
+          "corpus_chunk": 44096
+        },
+        {
+          "locator": "§ 1.c",
+          "basis": "full text",
+          "excerpt": "Epistemologists commonly draw a (misleadingly named) distinction between “propositional justification” and “doxastic justification”, where propositional justification is justification that one has for believing something (whether or not one in fact believes it) and doxastic justification is justification that an",
+          "corpus_chunk": 44098
+        },
+        {
+          "locator": "§ 1.c",
+          "basis": "full text",
+          "excerpt": "In that case, I would be said to have “propositional justification” but not “doxastic justification” for the theory of evolution.",
+          "corpus_chunk": 44098
+        },
+        {
+          "locator": "§ 1.c",
+          "basis": "full text",
+          "excerpt": "That is, it was advanced to explain how a person may be justified in believing that P without basing the belief that P on any other beliefs.",
+          "corpus_chunk": 44099
+        },
+        {
+          "locator": "§ 4.d",
+          "basis": "full text",
+          "excerpt": "Suppose S bases a belief in some proposition P on (his belief in) some evidence E.",
+          "corpus_chunk": 44135
+        },
+        {
+          "locator": "§ 4.d",
+          "basis": "full text",
+          "excerpt": "Another alternative is to maintain that in fact, fallacious inferences can result in justified belief.",
+          "corpus_chunk": 44136
+        },
+        {
+          "locator": "§ 4.d",
+          "basis": "full text",
+          "excerpt": "But again, PC seems to flout this requirement, since all that is needed is for S’s belief in E to cause it to seem to S that P (while S lacks defeaters for P), which might happen even if S’s belief in E is unjustified (McGrath 2013, section 5; Markie 2013, section 2).",
+          "corpus_chunk": 44138
+        },
+        {
+          "locator": "§ 4.d",
+          "basis": "full text",
+          "excerpt": "Alternately, and perhaps more naturally, the phenomenal conservative might again restrict the scope of PC to noninferential beliefs, while holding a different (but perhaps closely related) view about the justification of inferential beliefs (McGrath 2013, section 5; Tooley 2013, section 5.2.1).",
+          "corpus_chunk": 44139
+        },
+        {
+          "locator": "§ 1.a",
+          "basis": "full text",
+          "excerpt": "The following is a recent formulation of the central thesis of phenomenal conservatism: PC If it seems to S that P, then, in the absence of defeaters, S thereby has at least some justification for believing that P (Huemer 2007, p. 30; compare Huemer 2001, p. 99).",
+          "corpus_chunk": 44095
+        },
+        {
+          "locator": "§ 2.b",
+          "basis": "full text",
+          "excerpt": "Some thinkers suggest that an appearance that P might be identified with a mere inclination or disposition to believe that P (Sosa 1998, pp. 258-9; Swinburne 2001, pp. 141-2; Armstrong 1961).",
+          "corpus_chunk": 44106
+        },
+        {
+          "locator": "§ 2.c",
+          "basis": "full text",
+          "excerpt": "Some philosophers hold that its seeming to one that P is a matter of one’s believing, or being disposed to believe, that some mental state one has is evidence for P (Conee 2013; Tooley 2013).",
+          "corpus_chunk": 44107
+        },
+        {
+          "locator": "§ 2.d",
+          "basis": "full text",
+          "excerpt": "Most phenomenal conservatives hold that its seeming to one that P is a matter of one’s having a certain sort of experience, which has propositional content but is not analyzable in terms of belief (for discussion, see Tucker 2013, section 1).",
+          "corpus_chunk": 44108
+        },
+        {
+          "locator": "§ 2.d",
+          "basis": "full text",
+          "excerpt": "And it is not merely that one is inclined to believe that proposition for some reason or other.",
+          "corpus_chunk": 44109
+        },
+        {
+          "locator": "§ 2.d",
+          "basis": "full text",
+          "excerpt": "What I have done, I hope, is simply to draw attention to the commonality among all appearances by contrasting appearances with various other things that tend to produce beliefs.",
+          "corpus_chunk": 44110
+        },
+        {
+          "locator": "§ 2.e",
+          "basis": "full text",
+          "excerpt": "Appearances should be distinguished from another sort of non-doxastic mental state sometimes held to provide foundational justification for beliefs, namely, the state of acquaintance (Russell 1997, chs. 5, 9; Fumerton 1995, pp. 73-9).",
+          "corpus_chunk": 44111
+        }
+      ],
+      "annotation": "Defines appearances and defeasible support, then examines tainted sources and the limits of inferential extensions."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.",
+          "corpus_chunk": 41095
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).",
+          "corpus_chunk": 41098
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The main motivation for phenomenal conservatism is straightforward.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "And if we deny that they are good sources of justification, then how do we avoid skepticism?",
+          "corpus_chunk": 41100
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    }
+  ]
+}

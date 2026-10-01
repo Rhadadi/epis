@@ -1,0 +1,342 @@
+{
+  "chapter": "06-justification",
+  "section": "foundationalism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What supplies non-inferential support, and how do classical, modest, and externalist foundations answer the objections?"
+  ],
+  "sources": [
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "Seeing a glass, then making an inference",
+        "A foundation can move",
+        "Experience is not a hidden premise",
+        "The regress argument supports less than it first seems",
+        "Two demands can generate different regresses",
+        "Classical ambition: support that excludes error",
+        "Modest foundations: immediate and defeasible",
+        "The Sellarsian dilemma",
+        "Believing and seeming must remain distinct",
+        "Externalist foundations",
+        "Bootstrapping and easy knowledge",
+        "A structural view and its rival accounts",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "However, aside from such cases, we will treat “foundational/nonfoundational” justification and the “noninferential/inferential” justification as interchangeable.",
+          "corpus_chunk": 41045
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "For a helpful discussion, see Turri 2010.) For ease of exposition, much of our discussion is put in terms that most naturally refer to doxastic justification—e.g., “justified belief”, “being justified in believing”.",
+          "corpus_chunk": 41046
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.",
+          "corpus_chunk": 41047
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.",
+          "corpus_chunk": 41049
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Against this, the proponent of PIJ might ask us to consider an amendment to the case.",
+          "corpus_chunk": 41050
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.",
+          "corpus_chunk": 41055
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.",
+          "corpus_chunk": 41056
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "There are responses to the charge of vicious regress facing anti-foundationalists.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Some forms of coherentism might complicate our taxonomy.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).",
+          "corpus_chunk": 41063
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.",
+          "corpus_chunk": 41085
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.",
+          "corpus_chunk": 41088
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Although opponents of classical foundationalism are not always eager to admit it, we suspect that the primary dissatisfaction with classical foundationalism lies with the difficulty the view has avoiding radical skepticism.",
+          "corpus_chunk": 41093
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "As Mill (1906: 126) argued, there is a very real sense in which one doesn’t advance one’s knowledge significantly employing a form of reasoning that takes one only to conclusions that were implicitly contained in the conjunction of one’s premises.",
+          "corpus_chunk": 41094
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.",
+          "corpus_chunk": 41095
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).",
+          "corpus_chunk": 41098
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The main motivation for phenomenal conservatism is straightforward.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "And if we deny that they are good sources of justification, then how do we avoid skepticism?",
+          "corpus_chunk": 41100
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A recent objection to phenomenal conservatism and dogmatism involves appeal to cases of “cognitive penetration”, cases in which propositional attitudes (beliefs, fears, desires, etc.) that the subject already has give rise to a related seeming.",
+          "corpus_chunk": 41110
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Tucker (2013: 14) gives a useful analogy to testimony: if Bill and Jill both testify to me, at different times, that there is free pizza on the quad, then both testimonies give me more reason to believe than either of them separately, and this still holds if unbeknownst to me Jill tells me only because she heard it",
+          "corpus_chunk": 41111
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "However, externalists typically allow that in principle one could have a foundational belief in the absence of any appearance or seeming.",
+          "corpus_chunk": 41119
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "The very ease with which the externalist can potentially broaden the foundational base of knowledge or justified belief is, ironically, one of the primary concerns of those philosophers unhappy with externalist epistemology.",
+          "corpus_chunk": 41129
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "Or consider Lehrer’s (1990) case of Truetemp, who, without knowing it, has a chip implanted in his head that produces very precise and highly accurate beliefs about the ambient temperature.",
+          "corpus_chunk": 41130
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "Bergmann argues that this requirement, as tempting or intuitive as it may be, leads to serious regress problems.",
+          "corpus_chunk": 41131
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Suppose also that we accept the following intuitively plausible principle of closure: if S is justified in believing that P, knows that P entails that Q, and infers on the basis of this that Q, then S is justified in believing that Q.",
+          "corpus_chunk": 41144
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The problem of easy knowledge (or easy justification) comes in a second form as well: phenomenal conservatism and reliabilism allow one to acquire justification in the reliability of one’s perceptual appearances in a way that appears to be illegitimate: by relying on those very appearances themselves.",
+          "corpus_chunk": 41145
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Therefore (probably), acquaintance is a source of true beliefs.",
+          "corpus_chunk": 41149
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.",
+          "corpus_chunk": 41084
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Just as one needs to end epistemic regresses with foundational justification, the foundationalist will argue, so one needs to end conceptual regresses with concepts one grasps without further definition.",
+          "corpus_chunk": 41092
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Descartes is often taken to be the paradigm of a classical foundationalist.",
+          "corpus_chunk": 41066
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The first and most striking problem involves necessary truths.",
+          "corpus_chunk": 41066
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "My belief that I exist entails that I exist, that I have at least one belief, that someone has beliefs, etc.",
+          "corpus_chunk": 41067
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "It may be that classical foundationalists start off on the wrong foot if they seek foundations in logical relations between the mere fact that someone believes some proposition and the proposition’s being true.",
+          "corpus_chunk": 41069
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "There is certainly a sense in which it is something one can point to in answer to the question “What makes it true that someone has grey hair?” One cannot appropriately point to my having grey hair as something that makes it true that two plus two equals four.",
+          "corpus_chunk": 41071
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "What is it that distinguishes this belief from my belief about, say, whether it will rain next week?",
+          "corpus_chunk": 41071
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "This takes us to another classical version of foundationalism, the acquaintance theory.",
+          "corpus_chunk": 41073
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Some doubt that acquaintance with some fact is sufficient, on its own, to justify belief in a corresponding proposition.",
+          "corpus_chunk": 41074
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    },
+    {
+      "key": "descartes1637",
+      "used_for": [
+        "Classical ambition: support that excludes error",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Part II",
+          "basis": "full text",
+          "excerpt": "The first was never to accept anything for true which I did not clearly know to be such; that is to say, carefully to avoid precipitancy and prejudice, and to comprise nothing more in my judgement than what was presented to my mind so clearly and distinctly as to exclude all ground of doubt.",
+          "corpus_chunk": 34005
+        },
+        {
+          "locator": "Part II",
+          "basis": "full text",
+          "excerpt": "And as a multitude of laws often only hampers justice, so that a state is best governed when, with few laws, these are rigidly administered; in like manner, instead of the great number of precepts of which logic is composed, I believed that the four following would prove perfectly sufficient for me, provided I took",
+          "corpus_chunk": 34005
+        },
+        {
+          "locator": "Part II",
+          "basis": "full text",
+          "excerpt": "The third, to conduct my thoughts in such order that, by commencing with objects the simplest and easiest to know, I might ascend by little and little, and, as it were, step by step, to the knowledge of the more complex; assigning in thought a certain order even to those objects which in their own nature do not stand",
+          "corpus_chunk": 34006
+        },
+        {
+          "locator": "Part II",
+          "basis": "full text",
+          "excerpt": "And the _last_, in every case to make enumerations so complete, and reviews so general, that I might be assured that nothing was omitted.",
+          "corpus_chunk": 34006
+        }
+      ],
+      "annotation": "A public-domain primary statement of the rule to avoid precipitancy and restrict assent to clear presentation."
+    }
+  ]
+}

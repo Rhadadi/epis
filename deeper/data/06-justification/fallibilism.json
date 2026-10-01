@@ -1,0 +1,108 @@
+{
+  "chapter": "06-justification",
+  "section": "fallibilism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "hetherington-iep",
+      "used_for": [
+        "Supported and still vulnerable",
+        "A feeling is not a guarantee",
+        "Necessary truths and fallible methods",
+        "The awkwardness of announcing uncertainty",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In theory, a person might have or feel some doubt as to whether a particular claim is true — some doubt which she should not have or feel.",
+          "corpus_chunk": 13529
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The morality of his actions is more obviously to be explicated in terms of what his conscience should be telling him rather than of what it is telling him.) In effect, F is saying that no matter what evidence you have, no matter how carefully you have accumulated it, and no matter how rationally you use and evaluate",
+          "corpus_chunk": 13531
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The problem will also remain, no matter how you might supplement or try to improve your evidence or circumstances.",
+          "corpus_chunk": 13532
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The evidence’s content (“I am a living, breathing Superman”) does logically entail the truth of the inferred content (“I am alive”).",
+          "corpus_chunk": 13533
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Nevertheless, a modification of F (in section 3) is required, it seems, if fallibilism is to apply to beliefs like mathematical ones or to beliefs reporting theses of pure logic, for instance.",
+          "corpus_chunk": 13534
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "By definition, any truth which is not contingent is necessary.",
+          "corpus_chunk": 13535
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Yet it is clear — or so most epistemologists will aver — that mathematical believing can be fallible.",
+          "corpus_chunk": 13535
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In the meantime, we need only note schematically how F* would accommodate those possible reasons.",
+          "corpus_chunk": 13537
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "The question with which section 8 ended amounts to this: is it possible for there to be fallible knowledge?",
+          "corpus_chunk": 13582
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Hence, most epistemologists, it seems, accept that when people do gain knowledge, this usually, maybe always, involves fallibility.",
+          "corpus_chunk": 13583
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "That section reported (i) the two reasons most commonly thought to show that fallibility in one’s support for a belief is not good enough if the belief is to be knowledge, along with (ii) the explanations of why (according to most epistemologists) those reasons mentioned in (i) are not good enough to entail their",
+          "corpus_chunk": 13584
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "It is an application, to fallible knowledge in particular, of what is commonly called the Justified-True-Belief Analysis of Knowledge.",
+          "corpus_chunk": 13585
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Try saying, for example, “It’s raining, but I don’t believe that it is.” As the twentieth-century English philosopher G.",
+          "corpus_chunk": 13579
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "And the same is true (epistemologists will generally concur) of The Self-Doubting Knowledge Claim, the analogous sentence about knowledge and the possibility of being mistaken.",
+          "corpus_chunk": 13581
+        }
+      ],
+      "annotation": "Separates fallible justification from felt doubt, necessary truth, and skepticism about knowledge."
+    }
+  ]
+}

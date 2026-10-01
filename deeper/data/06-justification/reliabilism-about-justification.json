@@ -1,0 +1,194 @@
+{
+  "chapter": "06-justification",
+  "section": "reliabilism-about-justification",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "Reading and guessing",
+        "The believer need not know the reliability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Whether a belief is justified or unjustified, there is something that makes it so.",
+          "corpus_chunk": 1032
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Jack had more than four cups of coffee, then Jack had more than three cups of coffee” is true, then you have evidence for that proposition.",
+          "corpus_chunk": 1032
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "However, they deny that justification is essentially a matter of having suitable experiences.",
+          "corpus_chunk": 1034
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Consider a science fiction scenario concerning a human brain that is removed from its skull, kept alive in a vat of nutrient fluid, and electrochemically stimulated to have precisely the same total series of experiences that you have had.",
+          "corpus_chunk": 1035
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So justification involves external conditions.[30] Among those who think that justification is internal, there is no unanimity on how to understand the notion of internality—i.e., what it is about the factors that you share with your BIV doppelganger that makes those factors relevant to justification.",
+          "corpus_chunk": 1036
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Let’s call the former accessibility internalism and the latter mentalist internalism.",
+          "corpus_chunk": 1036
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The conjunction of E1 and E2 by itself implies nothing about the accessibility of justification.",
+          "corpus_chunk": 1037
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Reliabilism says that the justification of one’s beliefs is a function of the reliability of one’s belief sources such as memorial, perceptual and introspective states and processes.",
+          "corpus_chunk": 1039
+        }
+      ],
+      "annotation": "Introduces competing conceptions of justification and the difference between evidence and reliable sources."
+    },
+    {
+      "key": "goldman-beddor2021",
+      "used_for": [
+        "Reading and guessing",
+        "The believer need not know the reliability",
+        "Which process type?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Perhaps the most widely discussed problem for process reliabilism is the generality problem.",
+          "corpus_chunk": 39636
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Or perhaps something more fine-grained, such as visual experience of a maple tree on a sunny afternoon?",
+          "corpus_chunk": 39637
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "A different approach to the generality problem is to insist that a version of the problem arises for any adequate epistemology, not just reliabilists.",
+          "corpus_chunk": 39642
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "First, they show that the generality problem is very general, since some version of it arises in non-epistemic contexts.",
+          "corpus_chunk": 39644
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Another challenge for reliabilism comes from the phenomenon of epistemic defeat.",
+          "corpus_chunk": 39654
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "On this view, Alice’s belief is defeated because if she were to use the process believing her friend’s testimony, she would not have believed B.",
+          "corpus_chunk": 39655
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Similarly, Goldman suggests, group justification depends on two analogous factors: (a) the justifiedness of the members’ beliefs and (b) the conditional reliability of the belief aggregation function (a function that specifies the way in which the group’s beliefs depend on the members’ beliefs).",
+          "corpus_chunk": 39666
+        }
+      ],
+      "annotation": "Surveys process reliability with attention to process typing, defeat, and inferential inputs."
+    },
+    {
+      "key": "littlejohn2025",
+      "used_for": [
+        "Which environment?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The new evil demon objection was initially used to show that the connection to the truth that justification provides should not be understood in terms of reliability (Lehrer and Cohen 1983; Cohen 1984; Foley 1985).",
+          "corpus_chunk": 41351
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "One conclusion that might be taken from this is that justification does not require reliability where reliability is understood in terms of the ratio of success to failure in the environments in which the processes were operative.",
+          "corpus_chunk": 41352
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Because of this, it is not clear whether externalists can remain true to their views while promising to vindicate the intuitive verdicts that internalists appeal to.",
+          "corpus_chunk": 41353
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Externalists typically respond by denying that the deceived subjects have justification, trying to formulate views that accommodate the intuitions that underwrite the objection, or by conceding that the internalist is right about something whilst insisting that there is some important notion that depends upon external",
+          "corpus_chunk": 41354
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The situation in which the demon is operative is not normal, but it might be that the processes operative would produce more desirable outcomes in normal environments.",
+          "corpus_chunk": 41355
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "BonJour provides one of the first intuition pumps used to criticise externalism about knowledge, a view that he took to have implausible implications about the nature of justification and its role in securing knowledge: Norman: Norman, under certain conditions that usually obtain, is a completely reliable clairvoyant",
+          "corpus_chunk": 41316
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Externalist views about knowledge imply that Norman’s beliefs constitute knowledge.",
+          "corpus_chunk": 41317
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The host, Nour’s friend’s father, is polite and welcoming to Nour.",
+          "corpus_chunk": 41317
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Externalists might resist BonJour’s argument by rejecting (P1).",
+          "corpus_chunk": 41319
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "There is no consensus on whether knowledge requires rational belief or justification (Lasonen-Aarnio 2010).",
+          "corpus_chunk": 41320
+        }
+      ],
+      "annotation": "Defines mentalism and access views, then compares unusual faculties, deception, responsibility, and retained memory."
+    }
+  ]
+}

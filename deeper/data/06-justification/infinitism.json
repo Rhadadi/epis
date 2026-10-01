@@ -1,0 +1,175 @@
+{
+  "chapter": "06-justification",
+  "section": "infinitism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "inf-epis-iep",
+      "used_for": [
+        "Continuing without returning",
+        "Reasoning as enhancement",
+        "The arbitrariness objection remains disputed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "We often provide reasons for the things we believe in order to justify holding the beliefs.",
+          "corpus_chunk": 43548
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If both (1) and (2) are true, then the chain of reasons for any belief is potentially infinite, that is, potentially unlimited.",
+          "corpus_chunk": 43548
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "On this alternative reading, these coherentists don’t deny (1), because (1) concerns the structure, not the source, of probative reasons.",
+          "corpus_chunk": 43550
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For example, the relevant foundationalist property could be that the belief merely reports the contents of sensations or memories; or it could be that the belief is produced by a reliable cognitive faculty.",
+          "corpus_chunk": 43551
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And once a reason is challenged, then on pain of arbitrariness, a further reason must be produced in order for the challenged reason to serve as a good reason for a belief.",
+          "corpus_chunk": 43552
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As mentioned above, infinitists reject the form of coherentism – sometimes called “linear coherentism” – that endorses question-begging, circular reasoning.",
+          "corpus_chunk": 43553
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Holistic coherentism holds that individual beliefs are justified only in virtue of their membership in a coherent set of beliefs.",
+          "corpus_chunk": 43553
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This is the pattern: There are three possible, non-skeptical solutions to the regress problem: foundationalism, coherentism and infinitism.",
+          "corpus_chunk": 43554
+        }
+      ],
+      "annotation": "Distinguishes an indefinitely available chain from a completed infinite argument and introduces reason-enhanced justification."
+    },
+    {
+      "key": "comesana-klein2026",
+      "used_for": [
+        "Continuing without returning",
+        "Availability is different from completion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Infinitism, the claim that infinite evidential chains can provide justification to their members, is the answer to Agrippa’s trilemma that has received the least attention in the literature.",
+          "corpus_chunk": 29481
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Infinitists will then have to respond to many of the same objections that are leveled against coherentism—in particular, they would have to respond to the isolation objection mentioned in the next section.",
+          "corpus_chunk": 29483
+        }
+      ],
+      "annotation": "Reconstructs the skeptical premises and shows which ones foundationalists, infinitists, and hybrid accounts reject."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "The arbitrariness objection remains disputed"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.",
+          "corpus_chunk": 41047
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.",
+          "corpus_chunk": 41049
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Against this, the proponent of PIJ might ask us to consider an amendment to the case.",
+          "corpus_chunk": 41050
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.",
+          "corpus_chunk": 41055
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.",
+          "corpus_chunk": 41056
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "There are responses to the charge of vicious regress facing anti-foundationalists.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Some forms of coherentism might complicate our taxonomy.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).",
+          "corpus_chunk": 41063
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    }
+  ]
+}

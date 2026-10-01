@@ -1,0 +1,514 @@
+== 06-justification/agrippas-trilemma
+@patrick1899 | Outlines I.174 | If it is absurd to assume the thing questioned, it is also absurd to assume that upon which it rests.
+Q: Which skeptical premises are disputed, and how do the ancient modes differ from a universal skeptical doctrine?
+@morison2026 | § 3.5.2 | Sextus’ presentation of the Five Modes is brief and elliptical, which is much to be regretted, since philosophically they are the most interesting of all the modes.
+@morison2026 | § 3.5.2 | Because of this we are not able either to choose or to rule out anything, and we end up with suspension of judgment. [166] In the mode deriving from infinite regress, we say that what is brought forward as a source of conviction for the matter proposed itself needs another such source, which itself needs another, and
+@morison2026 | § 3.5.2 | The reference in the discussion of the Mode of Relativity (Ι 167) is a reference back to PH I 39 where Sextus tells us that all Ten Modes of Aenesidemus can be put under the generic heading of ‘relativity’ (not to be confused with the eighth of the Ten Modes, also known as the Mode of Relativity—although it seems as
+@morison2026 | § 3.5.2 | The Mode of Dispute is also a device for generating equal and opposing arguments, this time arguments which appeal to the authority of either ordinary life or some philosopher.
+@morison2026 | § 3.5.2 | The mode of dispute codifies a tactic in the Skeptic’s ongoing fight with dogmatists: it is a weapon to be deployed when the dogmatist employs an argument from authority.
+@morison2026 | § 3.5.2 | If D doesn’t produce an infinite regress, D must produce an argument which stops somewhere.
+@morison2026 | § 3.5.2 | There are several responses possible to these objections.
+@morison2026 | § 3.5.3 | The Two Modes probably also come from Agrippa (Barnes 1990b: 213), and represent an attempt ‘to have a neat sceptical system compounded out of three of the Five [Modes]: dispute, reciprocity and regression’ (Barnes 1990b: 215).
+A @morison2026: Explains Sextus’s modes, their historical attribution, and the interpretation of the skeptical challenge.
+@comesana-klein2026 | § 6 | There are five modes associated with Agrippa, but three of them are the most important: the mode of hypothesis (or unsupported assertion), the mode of circularity (“reciprocal”), and the mode of regression to infinity.
+@comesana-klein2026 | § 6 | Therefore, If a belief is justified, then it is justified in virtue of belonging to an inferential chain.
+@comesana-klein2026 | § 6 | Premise 5 is justified by appeal to the mode of infinite regression, and premise 6 is justified by appeal to the mode of circularity.
+@comesana-klein2026 | § 6.1 | Third, in virtue of what do experiences justify beliefs?
+@comesana-klein2026 | § 6.1 | You may well be justified in believing that there is a tomato in front of you, but only inferentially.
+@comesana-klein2026 | § 6.1 | The moderate foundationalist can reply that the traditional foundationalist must undertake a similar risk.
+@comesana-klein2026 | § 6.1 | Of course, the resolution of this dispute depends on whether, as the moderate believes, we can be mistaken about our own experiences.
+@comesana-klein2026 | § 6.2 | Infinitism, the claim that infinite evidential chains can provide justification to their members, is the answer to Agrippa’s trilemma that has received the least attention in the literature.
+@comesana-klein2026 | § 6.2 | Infinitists will then have to respond to many of the same objections that are leveled against coherentism—in particular, they would have to respond to the isolation objection mentioned in the next section.
+@comesana-klein2026 | § 6.5 | Perhaps the most interesting recent development in relation to Pyrrhonian Skepticism is that more and more epistemologists are arguing that the proper way to reply to Agrippa’s trilemma is to combine some of the positions that, for ease of exposition, we have presented as mutually exclusive.
+A @comesana-klein2026: Reconstructs the skeptical premises and shows which ones foundationalists, infinitists, and hybrid accounts reject.
+@hasan-fumerton2022 | § 1 | A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.
+@hasan-fumerton2022 | § 1 | Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.
+@hasan-fumerton2022 | § 1 | Against this, the proponent of PIJ might ask us to consider an amendment to the case.
+@hasan-fumerton2022 | § 1 | If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.
+@hasan-fumerton2022 | § 1 | And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.
+@hasan-fumerton2022 | § 1 | The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.
+@hasan-fumerton2022 | § 1 | A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.
+@hasan-fumerton2022 | § 1 | Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.
+@hasan-fumerton2022 | § 1 | There are responses to the charge of vicious regress facing anti-foundationalists.
+@hasan-fumerton2022 | § 1 | According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.
+@hasan-fumerton2022 | § 1 | Some forms of coherentism might complicate our taxonomy.
+@hasan-fumerton2022 | § 1 | For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).
+@hasan-fumerton2022 | § 4 | We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.
+@hasan-fumerton2022 | § 4 | This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then
+@hasan-fumerton2022 | § 4 | One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.
+@hasan-fumerton2022 | § 4 | According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).
+@hasan-fumerton2022 | § 4 | It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.
+@hasan-fumerton2022 | § 4 | The main motivation for phenomenal conservatism is straightforward.
+@hasan-fumerton2022 | § 4 | And if we deny that they are good sources of justification, then how do we avoid skepticism?
+@hasan-fumerton2022 | § 3.1 | According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.
+@hasan-fumerton2022 | § 3.2 | BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.
+@hasan-fumerton2022 | § 3.2 | The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.
+@hasan-fumerton2022 | § 3.2 | One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.
+@hasan-fumerton2022 | § 3.2 | This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@patrick1899 | Outlines I.164–177 | The one 165 based upon contradiction is the one from which we find, that in reference to the thing put before us for investigation, a position has been developed which is impossible to be judged, either practically, or theoretically, and therefore, as we are not able to either accept or reject anything, we end in
+@patrick1899 | Outlines I.164–177 | The one based upon relation, as we have 167 said before, is that one in which the object appears of this kind or that kind, as related to the judge and to the things regarded together with it, but we suspend our judgment as to what it is in reality.
+@patrick1899 | Outlines I.164–177 | Now we shall briefly show that it is possible to refer every thing under investigation to one or another of these Tropes, as follows: the thing before us is either sensible or intellectual; difference of opinion exists, however, as to what it is in itself, for some say that only the things of sense 170 are true,
+@patrick1899 | Outlines I.164–177 | For 171 example, the sensible, for we shall limit the argument first to this--Is it to be judged by sensible or by intellectual standards?
+@patrick1899 | Outlines I.174 | If, however, in order to escape 173 from this, the one who is speaking to us expects us to take something for granted which has not been proved, in order to prove what follows, the hypothetical Trope is introduced, which provides no way of escape.
+A @patrick1899: Contains a public-domain translation of the first book of Sextus’s Outlines; the quoted passage comes from the translation, not Patrick’s commentary.
+@olsson2025 | § 2 | The coherentist might be thought to propose that nothing prevents the regress from proceeding in a circle.
+@olsson2025 | § 2 | If she did justify \(A\) in terms of \(C\) nonetheless, her move would lack any justificatory force whatsoever.
+@olsson2025 | § 2 | This is a coherence approach because what makes a belief system justified, on this view, is precisely its coherence.
+@olsson2025 | § 2 | Second, the proposal that a singular belief is justified merely in virtue of being a member of a justified totality can be questioned because, plausibly, a belief can be a member of a sufficiently coherent system without in any way adding to the coherence of that system, e.g., if the belief is the only member which
+@olsson2025 | § 2 | This fact raises the question of what status those special beliefs have.
+@olsson2025 | § 4 | See, for example, Lycan (1988, 2012) and, for a book-length defense of explanatory coherentism, Poston (2014).
+@olsson2025 | § 1 | A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.
+@olsson2025 | § 1 | Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.
+@olsson2025 | § 1 | But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.
+@olsson2025 | § 9 | The coherence theory of justification represents an initially suggestive solution to some deeply rooted problems of epistemology.
+A @olsson2025: Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth.
+@inf-epis-iep | § 1 | We often provide reasons for the things we believe in order to justify holding the beliefs.
+@inf-epis-iep | § 1 | If both (1) and (2) are true, then the chain of reasons for any belief is potentially infinite, that is, potentially unlimited.
+@inf-epis-iep | § 1 | On this alternative reading, these coherentists don’t deny (1), because (1) concerns the structure, not the source, of probative reasons.
+@inf-epis-iep | § 1 | For example, the relevant foundationalist property could be that the belief merely reports the contents of sensations or memories; or it could be that the belief is produced by a reliable cognitive faculty.
+@inf-epis-iep | § 1 | And once a reason is challenged, then on pain of arbitrariness, a further reason must be produced in order for the challenged reason to serve as a good reason for a belief.
+@inf-epis-iep | § 1 | As mentioned above, infinitists reject the form of coherentism – sometimes called “linear coherentism” – that endorses question-begging, circular reasoning.
+@inf-epis-iep | § 1 | Holistic coherentism holds that individual beliefs are justified only in virtue of their membership in a coherent set of beliefs.
+@inf-epis-iep | § 1 | This is the pattern: There are three possible, non-skeptical solutions to the regress problem: foundationalism, coherentism and infinitism.
+A @inf-epis-iep: Distinguishes an indefinitely available chain from a completed infinite argument and introduces reason-enhanced justification.
+
+== 06-justification/coherentism
+@russell1912 | ch. XII | For the above two reasons, coherence cannot be accepted as giving the _meaning_ of truth, though it is often a most important _test_ of truth after a certain amount of truth has become known.
+Q: How does system support differ from circular argument, and what do formal truth-conduciveness results establish?
+@olsson2025 | § 1 | A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.
+@olsson2025 | § 1 | Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.
+@olsson2025 | § 1 | But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.
+@olsson2025 | § 2 | The coherentist might be thought to propose that nothing prevents the regress from proceeding in a circle.
+@olsson2025 | § 2 | If she did justify \(A\) in terms of \(C\) nonetheless, her move would lack any justificatory force whatsoever.
+@olsson2025 | § 2 | This is a coherence approach because what makes a belief system justified, on this view, is precisely its coherence.
+@olsson2025 | § 2 | Second, the proposal that a singular belief is justified merely in virtue of being a member of a justified totality can be questioned because, plausibly, a belief can be a member of a sufficiently coherent system without in any way adding to the coherence of that system, e.g., if the belief is the only member which
+@olsson2025 | § 2 | This fact raises the question of what status those special beliefs have.
+@olsson2025 | § 3 | By a traditional account of coherence we will mean one which construes coherence as a relation of mutual support or agreement among given data (propositions, beliefs, memories, testimonies etc.).
+@olsson2025 | § 3 | Consider, for instance, the set consisting of propositions \(A, B\) and \(C\), where \(A =\) “John was at the crime scene at the time of the robbery” \(B =\) “John owns a gun of the type used by the robber” \(C =\) “John deposited a large sum of money in his bank account the next day” This set is intuitively coherent,
+@olsson2025 | § 3 | Lewis’s definition of coherence, or “congruence” to use his term, can be seen as a refinement and improvement of Ewing’s basic idea.
+@olsson2025 | § 3 | Why not consider the support any subset, not just singletons, receives from the rest?
+@olsson2025 | § 3 | The coherence of a system of beliefs is diminished to the extent to which it is divided into subsystems of beliefs which are relatively unconnected to each other by inferential connections.
+@olsson2025 | § 3 | If so, which system is more coherent in an overall sense?
+@olsson2025 | § 3 | A possible modified coherence criterion could state that what is correlated with higher coherence is not the number of inferential connections but rather the inferential density of the system, where the latter is obtained by dividing the number of inferential connections by the number of beliefs in the system.
+@olsson2025 | § 5 | And antecedently, the probability of what is reported may also be small.
+@olsson2025 | § 5 | He writes, in his discussion of reports from memory, that “[i]f … there were no initial presumption attaching to the mnemically presented … then no extent of congruity with other such items would give rise to any eventual credibility” (357).
+@olsson2025 | § 5 | For an elaboration of this point the reader is referred to Olsson (2005, 65), footnote 4.
+@olsson2025 | § 6 | We recall that Lewis’s defined coherence, or congruence, not for any old set of proposition but rather for a set of supposed facts asserted.
+@olsson2025 | § 6 | That would be a paradigm case of a (highly) coherent set of reports.
+@olsson2025 | § 6 | By a (probabilistic) coherence measure, as defined for ordered sets of propositions, we shall mean any numerical measure \(C(A_1 ,\ldots ,A_n)\) defined solely in terms of the probability of \(A_1 ,\ldots ,A_n\) (and their Boolean combinations) and standard arithmetical operations (Olsson, 2002).
+@olsson2025 | § 6 | Thus, \(C(\langle A_1,A_2 , \ldots ,A_n\rangle) = C(\langle B_1,B_2 , \ldots ,B_n\rangle)\) whenever \(\langle B_1,B_2 , \ldots ,B_n\rangle\) is a permutation of \(\langle A_1,A_2 , \ldots ,A_n\rangle\).
+@olsson2025 | § 6 | And yet, the reports in the first case are more coherent from a presystematic standpoint because the witnesses are in complete agreement.
+@olsson2025 | § 8 | We must also require that when we compare two different sets of reports, we do so while keeping the degree of individual credibility fixed.
+@olsson2025 | § 8 | Furthermore, Olsson and Schubert (2007) observe that, while coherence falls short of being truth conducive, it can still be “reliability conducive”, i.e., more coherence, according to some measures, entails a higher probability that the sources are reliable, at least in a paradigmatic case (cf.
+@olsson2025 | § 8 | Moreover, Roche (2013b) has demonstrated that assuming a set to be coherent implies an increase in the probability of truth of any of its elements.
+@olsson2025 | § 8 | It should come as no surprise that he objects to the impossibility results (ibid.) on the same grounds.
+@olsson2025 | § 7 | At this point, it would be reasonable to conjecture that either Jane or Carl is not telling the truth.
+@olsson2025 | § 7 | Let: \(E_1 =\) “Jane reports that Tweety is a bird” \(E_2 =\) “Carl reports that Tweety cannot fly” \(E_3 =\) “Rick reports that Tweety is a penguin” The well-known principle of total evidence now dictates that all relevant evidence should be taken into consideration when computing probabilities.
+@olsson2025 | § 7 | One lesson emerging from the Analysis debate is that this way of construing truth conduciveness should be replaced by a notion of truth conduciveness where the relevant probabilities take all relevant evidence into account, whatever that evidence may be (beliefs, testimonies etc.).
+@olsson2025 | § 4 | See, for example, Lycan (1988, 2012) and, for a book-length defense of explanatory coherentism, Poston (2014).
+A @olsson2025: Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth.
+@russell1912 | ch. XII | It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.
+@russell1912 | ch. XII | Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.
+@russell1912 | ch. XII | Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.
+@russell1912 | ch. XIII | Thus the greater part of what would commonly pass as knowledge is more or less probable opinion.
+A @russell1912: Separates coherence as a proposed meaning of truth from its possible use as a test for probable opinion.
+
+== 06-justification/critical-rationalism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@thornton2026 | § 12 | This is strongly rejected by Popper, who differentiates his position from it by arguing that it is the acceptance of basic statements, rather than that universal theory, which is determined by convention and intersubjective agreement.
+@thornton2026 | § 12 | Yet Lakatos flatly denies that there are critical tests, in the Popperian sense, in science, and argues the point convincingly by turning the above example of an alleged critical test on its head.
+@thornton2026 | § 12 | Such theories are, it is now widely accepted, highly resistant to falsification; they are “tenaciously protected from refutation by a vast ‘protective belt’ of auxiliary hypotheses” (Lakatos 1978: 4) and so are falsified, if at all, not by Popperian critical tests, but rather within the elaborate context of the
+@thornton2026 | § 2 | What is apparently the chief source of strength of psychoanalysis, he concluded, viz. its capability to accommodate and explain every possible form of human behaviour, is in fact a critical weakness, for it entails that it is not, and could not be, genuinely predictive.
+@thornton2026 | § 4 | Popper therefore argues that there are no statements in science which cannot be interrogated: basic statements, which are used to test the universal theories of science, must themselves be inter-subjectively testable and are therefore open to the possibility of refutation.
+@thornton2026 | § 4 | If we do not come to any decision, and do not accept some basic statement or other, then the test will have led nowhere.
+@thornton2026 | § 6 | In this way, verisimilitude allowed Popper to mitigate what some saw as the pessimism of an anti-inductivist philosophy of science.
+A @thornton2026: Explains Popper’s testability approach, provisional basic statements, and the methodological objections.
+
+== 06-justification/defeaters
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@kelly2016 | § 1 | It is controversial whether any evidence is indefeasible in this sense.[5] Following Pollock (1986), we can distinguish between undercutting and rebutting defeaters.
+A @kelly2016: Introduces rebutting and undercutting evidence through contrasting testimony cases.
+@koons2025 | § 5.1 | A (Tarski) consequence relation is monotonic just in case it satisfies the following condition, for all formulas \(p\) and all sets \(\Gamma\) and \(\Delta\): Monotonicity: If \(\Gamma \vDash p\), then \(\Gamma \cup \Delta \vDash p\).
+A @koons2025: Explains why adding information can defeat a defeasible conclusion without invalidating classical entailment.
+@evidentia-iep | § 3.c.ii | Some argue that the justification of a belief depends, at least in part, on the inquiry that led to the belief.
+@evidentia-iep | § 3.c.ii | He remembers that yesterday’s paper said that Star Wars, Episode 68 was showing at 8:00.
+@evidentia-iep | § 3.c.ii | Evidentialism is a theory about the present justificatory status of propositions and beliefs for subjects.
+A @evidentia-iep: Defines evidence-relative justification and separates questions about belief, basing, evidence possession, and responsible inquiry.
+
+== 06-justification/deontology-and-doxastic-voluntarism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@boespflug-jackson2024 | § 1.1 | Those working on doxastic voluntarism distinguish various kinds of voluntary control; here, we follow the basic contours of William Alston’s (1988) influential taxonomy.
+@boespflug-jackson2024 | § 1.1 | While Alston refers to this kind of control as “direct” (1988: 278), many writing on doxastic voluntarism today would categorize it as indirect control, as it requires more than a volition.
+@boespflug-jackson2024 | § 1.1 | Thus, non-basic immediate control allows us to bring about something “just like that”, assuming the external conditions hold.
+@boespflug-jackson2024 | § 1.1 | The probability that these long-term intentional projects will be successful varies; in some cases, the likelihood of success may be quite high; however, in other cases, even the most sincerely committed are unlikely to succeed.
+@boespflug-jackson2024 | § 3.1 | Some authors reject doxastic voluntarism on the basis of psychological considerations.
+@boespflug-jackson2024 | § 3.1 | Can you, at this moment, start to believe that the U.S. is still a colony of Great Britain, just by deciding to do so.
+@boespflug-jackson2024 | § 3.1 | Alston concludes that we have neither basic nor non-basic control over belief (1988: 274), and also argues that we do not have reliable long-range control over our beliefs (1988: 276).
+@boespflug-jackson2024 | § 3.1 | Rik Peels (2017: ch. 2) also defends Alston’s argument against various challenges: arguments that we have direct doxastic control, indirect doxastic control, and compatibilist doxastic control.
+@boespflug-jackson2024 | § 4.2 | Similarly, even if I cannot believe that the sky is green, that doesn’t show that my disbelieving it isn’t free.
+@boespflug-jackson2024 | § 4.2 | A number of objections have been raised to doxastic compatibilism.
+A @boespflug-jackson2024: Distinguishes kinds of belief control and compares involuntarist and reasons-responsive accounts of responsibility.
+@steup-neta2025 | § 3.1 | How is the term “justification” used in ordinary language?
+@steup-neta2025 | § 3.1 | Due to the inappropriateness of Tom’s question, it wasn’t Martha’s duty to tell the truth.
+@steup-neta2025 | § 3.1 | Exactly what, though, must we do in the pursuit of some such distinctively epistemic aim?
+@steup-neta2025 | § 3.1 | Recently, however, two chief objections have been raised against conceiving of justification deontologically.
+@steup-neta2025 | § 3.1 | According to the second objection to DJ, deontological justification cannot suffice for an agent to have a justified belief.
+@steup-neta2025 | § 3.1 | SLJ) S is justified in believing that p if and only if S believes that p in a way that makes it sufficiently likely that her belief is true.
+A @steup-neta2025: Introduces competing conceptions of justification and the difference between evidence and reliable sources.
+
+== 06-justification/evidentialism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@evidentia-iep | preamble | Evidentialism in epistemology is defined by the following thesis about epistemic justification: (EVI) Person S is justified in believing proposition p at time t if and only if S’s evidence for p at t supports believing p.
+@evidentia-iep | § 2 | Richard Feldman and Earl Conee, two leading defenders of evidentialism, have explicitly defined evidentialism as a thesis about the justificatory status of all of the doxastic attitudes: belief, disbelief, and suspension of judgment.
+@evidentia-iep | § 2.a | Before proceeding, it is crucial to nail down more exactly what evidentialism is a theory of.
+@evidentia-iep | § 2.a | One way of putting the difference here is by saying that evidentialism is a thesis regarding propositional justification, not a thesis about doxastic justification.
+@evidentia-iep | § 2.b | As introduced above, evidentialism is a kind of theory of epistemic justification; one can formulate various divergent evidentialist theories by providing different analyses of its constituent concepts.
+@evidentia-iep | § 2.b | The evidentialist denies that such facts about mind-independent reality are evidence in the sense relevant to determining justification.
+@evidentia-iep | § 2.b | Evidentialist theories can agree on this much while still providing differing accounts of evidence.
+@evidentia-iep | § 3.c.ii | Some argue that the justification of a belief depends, at least in part, on the inquiry that led to the belief.
+@evidentia-iep | § 3.c.ii | He remembers that yesterday’s paper said that Star Wars, Episode 68 was showing at 8:00.
+@evidentia-iep | § 3.c.ii | Evidentialism is a theory about the present justificatory status of propositions and beliefs for subjects.
+@evidentia-iep | § 3.c.iii | The previous objection to evidentialism attempted to demonstrate that having evidence that supports believing p is not sufficient for being justified in believing p.
+@evidentia-iep | § 3.c.iii | Since evidentialism implies that he really ought to believe that his wife was having affairs, evidentialism is false.
+A @evidentia-iep: Defines evidence-relative justification and separates questions about belief, basing, evidence possession, and responsible inquiry.
+@steup-neta2025 | § 3.2 | Whether a belief is justified or unjustified, there is something that makes it so.
+@steup-neta2025 | § 3.2 | Jack had more than four cups of coffee, then Jack had more than three cups of coffee” is true, then you have evidence for that proposition.
+@steup-neta2025 | § 3.2 | However, they deny that justification is essentially a matter of having suitable experiences.
+A @steup-neta2025: Introduces competing conceptions of justification and the difference between evidence and reliable sources.
+
+== 06-justification/fallibilism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@hetherington-iep | § 3 | In theory, a person might have or feel some doubt as to whether a particular claim is true — some doubt which she should not have or feel.
+@hetherington-iep | § 3 | The morality of his actions is more obviously to be explicated in terms of what his conscience should be telling him rather than of what it is telling him.) In effect, F is saying that no matter what evidence you have, no matter how carefully you have accumulated it, and no matter how rationally you use and evaluate
+@hetherington-iep | § 3 | The problem will also remain, no matter how you might supplement or try to improve your evidence or circumstances.
+@hetherington-iep | § 3 | The evidence’s content (“I am a living, breathing Superman”) does logically entail the truth of the inferred content (“I am alive”).
+@hetherington-iep | § 4 | Nevertheless, a modification of F (in section 3) is required, it seems, if fallibilism is to apply to beliefs like mathematical ones or to beliefs reporting theses of pure logic, for instance.
+@hetherington-iep | § 4 | By definition, any truth which is not contingent is necessary.
+@hetherington-iep | § 4 | Yet it is clear — or so most epistemologists will aver — that mathematical believing can be fallible.
+@hetherington-iep | § 4 | In the meantime, we need only note schematically how F* would accommodate those possible reasons.
+@hetherington-iep | § 9 | The question with which section 8 ended amounts to this: is it possible for there to be fallible knowledge?
+@hetherington-iep | § 9 | Hence, most epistemologists, it seems, accept that when people do gain knowledge, this usually, maybe always, involves fallibility.
+@hetherington-iep | § 9 | That section reported (i) the two reasons most commonly thought to show that fallibility in one’s support for a belief is not good enough if the belief is to be knowledge, along with (ii) the explanations of why (according to most epistemologists) those reasons mentioned in (i) are not good enough to entail their
+@hetherington-iep | § 9 | It is an application, to fallible knowledge in particular, of what is commonly called the Justified-True-Belief Analysis of Knowledge.
+@hetherington-iep | § 8 | Try saying, for example, “It’s raining, but I don’t believe that it is.” As the twentieth-century English philosopher G.
+@hetherington-iep | § 8 | And the same is true (epistemologists will generally concur) of The Self-Doubting Knowledge Claim, the analogous sentence about knowledge and the possibility of being mistaken.
+A @hetherington-iep: Separates fallible justification from felt doubt, necessary truth, and skepticism about knowledge.
+
+== 06-justification/foundationalism
+@descartes1637 | Part II | The first was never to accept anything for true which I did not clearly know to be such; that is to say, carefully to avoid precipitancy and prejudice, and to comprise nothing more in my judgement than what was presented to my mind so clearly and distinctly as to exclude all ground of doubt.
+Q: What supplies non-inferential support, and how do classical, modest, and externalist foundations answer the objections?
+@hasan-fumerton2022 | preamble | However, aside from such cases, we will treat “foundational/nonfoundational” justification and the “noninferential/inferential” justification as interchangeable.
+@hasan-fumerton2022 | preamble | For a helpful discussion, see Turri 2010.) For ease of exposition, much of our discussion is put in terms that most naturally refer to doxastic justification—e.g., “justified belief”, “being justified in believing”.
+@hasan-fumerton2022 | § 1 | A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.
+@hasan-fumerton2022 | § 1 | Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.
+@hasan-fumerton2022 | § 1 | Against this, the proponent of PIJ might ask us to consider an amendment to the case.
+@hasan-fumerton2022 | § 1 | If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.
+@hasan-fumerton2022 | § 1 | And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.
+@hasan-fumerton2022 | § 1 | The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.
+@hasan-fumerton2022 | § 1 | A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.
+@hasan-fumerton2022 | § 1 | Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.
+@hasan-fumerton2022 | § 1 | There are responses to the charge of vicious regress facing anti-foundationalists.
+@hasan-fumerton2022 | § 1 | According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.
+@hasan-fumerton2022 | § 1 | Some forms of coherentism might complicate our taxonomy.
+@hasan-fumerton2022 | § 1 | For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).
+@hasan-fumerton2022 | § 3.2 | BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.
+@hasan-fumerton2022 | § 3.2 | The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.
+@hasan-fumerton2022 | § 3.2 | One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.
+@hasan-fumerton2022 | § 3.2 | This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.
+@hasan-fumerton2022 | § 3.4 | Although opponents of classical foundationalism are not always eager to admit it, we suspect that the primary dissatisfaction with classical foundationalism lies with the difficulty the view has avoiding radical skepticism.
+@hasan-fumerton2022 | § 3.4 | As Mill (1906: 126) argued, there is a very real sense in which one doesn’t advance one’s knowledge significantly employing a form of reasoning that takes one only to conclusions that were implicitly contained in the conjunction of one’s premises.
+@hasan-fumerton2022 | § 4 | We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.
+@hasan-fumerton2022 | § 4 | This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then
+@hasan-fumerton2022 | § 4 | One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.
+@hasan-fumerton2022 | § 4 | According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).
+@hasan-fumerton2022 | § 4 | It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.
+@hasan-fumerton2022 | § 4 | The main motivation for phenomenal conservatism is straightforward.
+@hasan-fumerton2022 | § 4 | And if we deny that they are good sources of justification, then how do we avoid skepticism?
+@hasan-fumerton2022 | § 5.1 | A recent objection to phenomenal conservatism and dogmatism involves appeal to cases of “cognitive penetration”, cases in which propositional attitudes (beliefs, fears, desires, etc.) that the subject already has give rise to a related seeming.
+@hasan-fumerton2022 | § 5.1 | Tucker (2013: 14) gives a useful analogy to testimony: if Bill and Jill both testify to me, at different times, that there is free pizza on the quad, then both testimonies give me more reason to believe than either of them separately, and this still holds if unbeknownst to me Jill tells me only because she heard it
+@hasan-fumerton2022 | § 6 | However, externalists typically allow that in principle one could have a foundational belief in the absence of any appearance or seeming.
+@hasan-fumerton2022 | § 7.1 | The very ease with which the externalist can potentially broaden the foundational base of knowledge or justified belief is, ironically, one of the primary concerns of those philosophers unhappy with externalist epistemology.
+@hasan-fumerton2022 | § 7.1 | Or consider Lehrer’s (1990) case of Truetemp, who, without knowing it, has a chip implanted in his head that produces very precise and highly accurate beliefs about the ambient temperature.
+@hasan-fumerton2022 | § 7.1 | Bergmann argues that this requirement, as tempting or intuitive as it may be, leads to serious regress problems.
+@hasan-fumerton2022 | § 8 | Suppose also that we accept the following intuitively plausible principle of closure: if S is justified in believing that P, knows that P entails that Q, and infers on the basis of this that Q, then S is justified in believing that Q.
+@hasan-fumerton2022 | § 8 | The problem of easy knowledge (or easy justification) comes in a second form as well: phenomenal conservatism and reliabilism allow one to acquire justification in the reliability of one’s perceptual appearances in a way that appears to be illegitimate: by relying on those very appearances themselves.
+@hasan-fumerton2022 | § 8 | Therefore (probably), acquaintance is a source of true beliefs.
+@hasan-fumerton2022 | § 3.1 | According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.
+@hasan-fumerton2022 | § 3.3 | Just as one needs to end epistemic regresses with foundational justification, the foundationalist will argue, so one needs to end conceptual regresses with concepts one grasps without further definition.
+@hasan-fumerton2022 | § 2.1 | Descartes is often taken to be the paradigm of a classical foundationalist.
+@hasan-fumerton2022 | § 2.1 | The first and most striking problem involves necessary truths.
+@hasan-fumerton2022 | § 2.1 | My belief that I exist entails that I exist, that I have at least one belief, that someone has beliefs, etc.
+@hasan-fumerton2022 | § 2.2 | It may be that classical foundationalists start off on the wrong foot if they seek foundations in logical relations between the mere fact that someone believes some proposition and the proposition’s being true.
+@hasan-fumerton2022 | § 2.2 | There is certainly a sense in which it is something one can point to in answer to the question “What makes it true that someone has grey hair?” One cannot appropriately point to my having grey hair as something that makes it true that two plus two equals four.
+@hasan-fumerton2022 | § 2.2 | What is it that distinguishes this belief from my belief about, say, whether it will rain next week?
+@hasan-fumerton2022 | § 2.2 | This takes us to another classical version of foundationalism, the acquaintance theory.
+@hasan-fumerton2022 | § 2.2 | Some doubt that acquaintance with some fact is sufficient, on its own, to justify belief in a corresponding proposition.
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@descartes1637 | Part II | And as a multitude of laws often only hampers justice, so that a state is best governed when, with few laws, these are rigidly administered; in like manner, instead of the great number of precepts of which logic is composed, I believed that the four following would prove perfectly sufficient for me, provided I took
+@descartes1637 | Part II | The third, to conduct my thoughts in such order that, by commencing with objects the simplest and easiest to know, I might ascend by little and little, and, as it were, step by step, to the knowledge of the more complex; assigning in thought a certain order even to those objects which in their own nature do not stand
+@descartes1637 | Part II | And the _last_, in every case to make enumerations so complete, and reviews so general, that I might be assured that nothing was omitted.
+A @descartes1637: A public-domain primary statement of the rule to avoid precipitancy and restrict assent to clear presentation.
+
+== 06-justification/foundherentism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@olsson2025 | § 4 | See, for example, Lycan (1988, 2012) and, for a book-length defense of explanatory coherentism, Poston (2014).
+@olsson2025 | § 1 | A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.
+@olsson2025 | § 1 | Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.
+@olsson2025 | § 1 | But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.
+@olsson2025 | § 5 | And antecedently, the probability of what is reported may also be small.
+@olsson2025 | § 5 | He writes, in his discussion of reports from memory, that “[i]f … there were no initial presumption attaching to the mnemically presented … then no extent of congruity with other such items would give rise to any eventual credibility” (357).
+@olsson2025 | § 5 | For an elaboration of this point the reader is referred to Olsson (2005, 65), footnote 4.
+A @olsson2025: Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth.
+@evidentia-iep | § 5.a | Evidence and Inquiry: Towards Reconstruction in Epistemology.
+A @evidentia-iep: Defines evidence-relative justification and separates questions about belief, basing, evidence possession, and responsible inquiry.
+@comesana-klein2026 | § 6.5 | Perhaps the most interesting recent development in relation to Pyrrhonian Skepticism is that more and more epistemologists are arguing that the proper way to reply to Agrippa’s trilemma is to combine some of the positions that, for ease of exposition, we have presented as mutually exclusive.
+A @comesana-klein2026: Reconstructs the skeptical premises and shows which ones foundationalists, infinitists, and hybrid accounts reject.
+
+== 06-justification/infinitism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@inf-epis-iep | § 1 | We often provide reasons for the things we believe in order to justify holding the beliefs.
+@inf-epis-iep | § 1 | If both (1) and (2) are true, then the chain of reasons for any belief is potentially infinite, that is, potentially unlimited.
+@inf-epis-iep | § 1 | On this alternative reading, these coherentists don’t deny (1), because (1) concerns the structure, not the source, of probative reasons.
+@inf-epis-iep | § 1 | For example, the relevant foundationalist property could be that the belief merely reports the contents of sensations or memories; or it could be that the belief is produced by a reliable cognitive faculty.
+@inf-epis-iep | § 1 | And once a reason is challenged, then on pain of arbitrariness, a further reason must be produced in order for the challenged reason to serve as a good reason for a belief.
+@inf-epis-iep | § 1 | As mentioned above, infinitists reject the form of coherentism – sometimes called “linear coherentism” – that endorses question-begging, circular reasoning.
+@inf-epis-iep | § 1 | Holistic coherentism holds that individual beliefs are justified only in virtue of their membership in a coherent set of beliefs.
+@inf-epis-iep | § 1 | This is the pattern: There are three possible, non-skeptical solutions to the regress problem: foundationalism, coherentism and infinitism.
+A @inf-epis-iep: Distinguishes an indefinitely available chain from a completed infinite argument and introduces reason-enhanced justification.
+@comesana-klein2026 | § 6.2 | Infinitism, the claim that infinite evidential chains can provide justification to their members, is the answer to Agrippa’s trilemma that has received the least attention in the literature.
+@comesana-klein2026 | § 6.2 | Infinitists will then have to respond to many of the same objections that are leveled against coherentism—in particular, they would have to respond to the isolation objection mentioned in the next section.
+A @comesana-klein2026: Reconstructs the skeptical premises and shows which ones foundationalists, infinitists, and hybrid accounts reject.
+@hasan-fumerton2022 | § 1 | A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.
+@hasan-fumerton2022 | § 1 | Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.
+@hasan-fumerton2022 | § 1 | Against this, the proponent of PIJ might ask us to consider an amendment to the case.
+@hasan-fumerton2022 | § 1 | If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.
+@hasan-fumerton2022 | § 1 | And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.
+@hasan-fumerton2022 | § 1 | The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.
+@hasan-fumerton2022 | § 1 | A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.
+@hasan-fumerton2022 | § 1 | Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.
+@hasan-fumerton2022 | § 1 | There are responses to the charge of vicious regress facing anti-foundationalists.
+@hasan-fumerton2022 | § 1 | According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.
+@hasan-fumerton2022 | § 1 | Some forms of coherentism might complicate our taxonomy.
+@hasan-fumerton2022 | § 1 | For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+
+== 06-justification/internalism-and-externalism
+@locke1690 | Book IV, ch. XVI, § 9 | there it is, where diligence, attention, and exactness are required, to form a right judgment, and to proportion the assent to the different evidence and probability of the thing
+Q: Which dependence claim is at issue, and how do deception, tacit competence, and retained evidence test it?
+@littlejohn2025 | § 1 | These debates about knowledge and about justification are, inter alia, disagreements about the connections between justification and knowledge, as well as disagreements about what kinds of internal conditions are necessary for knowledge and whether justification is itself an internal condition (regardless of whether
+@littlejohn2025 | § 1 | The debate about knowledge, by contrast, is not normally understood as a disagreement about a supervenience thesis.
+@littlejohn2025 | § 1 | How do epistemologists characterise the internal and the external?
+@littlejohn2025 | § 1 | The accessibilist believes that justification supervenes upon internal conditions that are understood to be accessible.
+@littlejohn2025 | § 1 | What if knowledge is itself a mental state in its own right so there is a mental difference between someone who knows that the snow has started to fall and someone who believes but doesn’t know this (Gibbons 2001; Nagel 2013; Williamson 2000)?
+@littlejohn2025 | § 1 | According to the accessibilist, the conditions that determine what a thinker has justification to believe at any given time are the ones accessible to her at that time.
+@littlejohn2025 | § 2.1 | BonJour provides one of the first intuition pumps used to criticise externalism about knowledge, a view that he took to have implausible implications about the nature of justification and its role in securing knowledge: Norman: Norman, under certain conditions that usually obtain, is a completely reliable clairvoyant
+@littlejohn2025 | § 2.1 | Externalist views about knowledge imply that Norman’s beliefs constitute knowledge.
+@littlejohn2025 | § 2.1 | The host, Nour’s friend’s father, is polite and welcoming to Nour.
+@littlejohn2025 | § 2.1 | Externalists might resist BonJour’s argument by rejecting (P1).
+@littlejohn2025 | § 2.1 | There is no consensus on whether knowledge requires rational belief or justification (Lasonen-Aarnio 2010).
+@littlejohn2025 | § 2.2 | First, some question the idea that justification should be understood in terms of duty.
+@littlejohn2025 | § 2.2 | There are live debates about whether moral duties or the justification of action should be understood along internalist lines (i.e., that internally similar agents have the same duties and the same actions would be justified for them) (P.
+@littlejohn2025 | § 2.2 | Internalists might offer an alternative characterisation of the normative character of justification (e.g., by linking justification to responsibility) or provide further arguments for thinking that normative notions used to characterise justification (e.g., duty) must be understood along internalist lines.
+@littlejohn2025 | § 2.2 | If A and B are internal duplicates and they form the same beliefs in the same ways, A is blameless for her beliefs iff B is blameless.
+@littlejohn2025 | § 2.2 | As they see it, even if a thinker forms her beliefs in responsible ways, she might nevertheless violate a norm or fail to meet some standard and do so excusably.
+@littlejohn2025 | § 2.2 | Some externalists have argued that conditions that obtained in the past might matter to whether a belief is responsibly held now.
+@littlejohn2025 | § 2.2 | Losing the grounds or information that Sally originally based her belief on does not seem to some externalists to ‘turn’ an irresponsibly formed belief into one that she can now responsibly hold (Goldman 1999).
+@littlejohn2025 | § 2.2 | If A and B are both rational in holding their beliefs, both of their beliefs are justified.
+@littlejohn2025 | § 2.3 | It might be enough, for example, that the subject’s reasons represent the good reasons there are for responding that way.
+@littlejohn2025 | § 2.3 | Suppose that Agnes knows that she has limbs and her brain in a vat counterpart falsely believes that it has limbs.
+@littlejohn2025 | § 2.4 | The new evil demon objection was initially used to show that the connection to the truth that justification provides should not be understood in terms of reliability (Lehrer and Cohen 1983; Cohen 1984; Foley 1985).
+@littlejohn2025 | § 2.4 | One conclusion that might be taken from this is that justification does not require reliability where reliability is understood in terms of the ratio of success to failure in the environments in which the processes were operative.
+@littlejohn2025 | § 2.4 | Because of this, it is not clear whether externalists can remain true to their views while promising to vindicate the intuitive verdicts that internalists appeal to.
+@littlejohn2025 | § 2.4 | Externalists typically respond by denying that the deceived subjects have justification, trying to formulate views that accommodate the intuitions that underwrite the objection, or by conceding that the internalist is right about something whilst insisting that there is some important notion that depends upon external
+@littlejohn2025 | § 2.4 | The situation in which the demon is operative is not normal, but it might be that the processes operative would produce more desirable outcomes in normal environments.
+@littlejohn2025 | § 3.2 | When Goldman proposed his reliabilist theory of justification, his aim was to give an explanatory theory of justification, a theory that: … explains in a general way why certain beliefs are counted as justified and others as unjustified … I do not try to prescribe standards for justification that differ from, or
+@littlejohn2025 | § 3.2 | So, we should prefer an externalist theory to its internalist rivals.
+@littlejohn2025 | § 3.2 | Generality: Not only do epistemic facts supervene upon non-epistemic facts, there seem to be general principles that connect non-epistemic facts to epistemic facts that identify important patterns of dependence.
+@littlejohn2025 | § 3.2 | The thinker knows now what she learned earlier without now having evidence that supports her beliefs.
+@littlejohn2025 | § 3.2 | The second challenge arises for internalists who want to offer some story that purports to explain how it is possible to have persisting justification given the loss of original supporting evidence (Goldman 1999; Greco 1990).
+@littlejohn2025 | § 3.2 | This subject forms an unjustified belief initially, but at this later time has a belief accompanied by the same pi-factors as the subject who has a justified belief.
+@littlejohn2025 | § 3.2 | Internalists can respond to these challenges by trying to defend the view that these subjects have adequate evidence presently that justifies beliefs presently held (even if, perhaps, they lacked adequate evidence initially) (Conee and Feldman 2004).
+@littlejohn2025 | § 3.2 | In this setting, there is disagreement about whether attributing testimonial knowledge to small children is a problem for reductionist views about testimonial justification according to which testimonial justification requires supporting evidence that the recipient of testimony can rely on to confirm the reliability
+@littlejohn2025 | § 3.2 | Alternatively, internalists might suggest that the beliefs of children can attain an important kind of positive status that merits the label ‘justified’ even if it differs significantly from the kind of justification that attaches to the beliefs of mature and responsible adults (Leite 2004) or that there is a kind of
+@littlejohn2025 | § 3.2 | These principles identify conditions that (defeasibly) confer justification upon our beliefs.
+@littlejohn2025 | § 3.2 | If the factors cited by such rules are internal factors (e.g., we specify them with reference to experience, apparent memory, etc.), this set-up might seem to favour the internalist, but Goldman notes that there is a question about the criteria of rightness that ultimately determines which (putative) J-rules belong to
+A @littlejohn2025: Defines mentalism and access views, then compares unusual faculties, deception, responsibility, and retained memory.
+@ichikawa-steup2026 | § 1.3.3 | It is worth noting that one might distinguish between two importantly different notions of justification, standardly referred to as “propositional justification” and “doxastic justification” (sometimes “ex ante” justification and “ex post” justification, respectively).[8] Unlike that between internalist and
+@ichikawa-steup2026 | § 1.3.3 | The precise relation between propositional and doxastic justification is subject to controversy, but it is uncontroversial that the two notions can come apart.
+A @ichikawa-steup2026: Distinguishes having evidential support from appropriately basing a belief on it and from publicly defending it.
+@hasan-fumerton2022 | § 3.1 | According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.
+@hasan-fumerton2022 | § 6 | However, externalists typically allow that in principle one could have a foundational belief in the absence of any appearance or seeming.
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@locke1690 | Book IV, ch. XVI | Experience and Testimonies clashing, infinitely vary the Degrees of Probability.
+@locke1690 | Book IV, ch. XVI, § 9 | Experience and Testimonies clashing, infinitely vary the Degrees of Probability.
+A @locke1690: A public-domain primary discussion of degrees of assent when experience and testimony conflict.
+
+== 06-justification/phenomenal-conservatism
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@phen-con-iep | § 2.a | Here is a very simple theory: to say that it seems to one that P is to report a tentative sort of belief that P (Chisholm [1957, ch. 4] suggested something in this neighborhood).
+@phen-con-iep | § 4.a | We are particularly unlikely to have reliable intuitions about a scenario S when (i) we never encounter or think about S in normal life, (ii) S is superficially similar to another scenario, S’, which we encounter or think about quite a bit, and (iii) the correct judgment about S’ is different from the correct judgment
+@phen-con-iep | § 4.a | A further observation relevant to the religious example is that the practical consequences of a belief may impact the degree of epistemic justification that one needs in order to be justified in acting on the belief, such that a belief with extremely serious practical consequences may call for a higher degree of
+@phen-con-iep | § 4.b | Some argue that its merely seeming to one that P cannot suffice (even in the absence of defeaters) to confer justification for believing P; in addition, one must have some reason for thinking that one’s appearances are reliable indicators of the truth, or that things that appear to one to be the case are likely to
+@phen-con-iep | § 4.b | To begin with, if we think that appearance-based justifications require metajustifications (to wit, evidence that appearances are reliable indicators of the truth), it is unclear why we should not impose the same requirement on all justifications of any kind.
+@phen-con-iep | § 4.b | One can avoid this sort of infinite regress by rejecting any general metajustification requirement.
+@phen-con-iep | § 4.c | Another class of objection to PC adverts to cases of appearances that are produced by emotions, desires, irrational beliefs, or other kinds of sources that would normally render a belief unjustified (Markie 2006, pp. 119-20; Lyons 2011; Siegel 2013; McGrath 2013).
+@phen-con-iep | § 4.c | This “seeing as” is not a belief but a kind of experience – that is, Jack’s face just looks to Jill like an angry face.
+@phen-con-iep | § 4.c | Tucker (2010, p. 540) suggests that the person possesses justification but lacks another requirement for knowledge and is epistemically blameworthy (compare Huemer 2013a, pp. 747-8).
+@phen-con-iep | § 1.b | Appearances sometimes fail to correspond to reality, as in the case of illusions, hallucinations, false memories, and mistaken intuitions.
+@phen-con-iep | § 1.b | For instance, one might see a stick that appears bent when half-submerged in water.
+@phen-con-iep | § 1.c | Epistemologists commonly draw a (misleadingly named) distinction between “propositional justification” and “doxastic justification”, where propositional justification is justification that one has for believing something (whether or not one in fact believes it) and doxastic justification is justification that an
+@phen-con-iep | § 1.c | In that case, I would be said to have “propositional justification” but not “doxastic justification” for the theory of evolution.
+@phen-con-iep | § 1.c | That is, it was advanced to explain how a person may be justified in believing that P without basing the belief that P on any other beliefs.
+@phen-con-iep | § 4.d | Suppose S bases a belief in some proposition P on (his belief in) some evidence E.
+@phen-con-iep | § 4.d | Another alternative is to maintain that in fact, fallacious inferences can result in justified belief.
+@phen-con-iep | § 4.d | But again, PC seems to flout this requirement, since all that is needed is for S’s belief in E to cause it to seem to S that P (while S lacks defeaters for P), which might happen even if S’s belief in E is unjustified (McGrath 2013, section 5; Markie 2013, section 2).
+@phen-con-iep | § 4.d | Alternately, and perhaps more naturally, the phenomenal conservative might again restrict the scope of PC to noninferential beliefs, while holding a different (but perhaps closely related) view about the justification of inferential beliefs (McGrath 2013, section 5; Tooley 2013, section 5.2.1).
+@phen-con-iep | § 1.a | The following is a recent formulation of the central thesis of phenomenal conservatism: PC If it seems to S that P, then, in the absence of defeaters, S thereby has at least some justification for believing that P (Huemer 2007, p. 30; compare Huemer 2001, p. 99).
+@phen-con-iep | § 2.b | Some thinkers suggest that an appearance that P might be identified with a mere inclination or disposition to believe that P (Sosa 1998, pp. 258-9; Swinburne 2001, pp. 141-2; Armstrong 1961).
+@phen-con-iep | § 2.c | Some philosophers hold that its seeming to one that P is a matter of one’s believing, or being disposed to believe, that some mental state one has is evidence for P (Conee 2013; Tooley 2013).
+@phen-con-iep | § 2.d | Most phenomenal conservatives hold that its seeming to one that P is a matter of one’s having a certain sort of experience, which has propositional content but is not analyzable in terms of belief (for discussion, see Tucker 2013, section 1).
+@phen-con-iep | § 2.d | And it is not merely that one is inclined to believe that proposition for some reason or other.
+@phen-con-iep | § 2.d | What I have done, I hope, is simply to draw attention to the commonality among all appearances by contrasting appearances with various other things that tend to produce beliefs.
+@phen-con-iep | § 2.e | Appearances should be distinguished from another sort of non-doxastic mental state sometimes held to provide foundational justification for beliefs, namely, the state of acquaintance (Russell 1997, chs. 5, 9; Fumerton 1995, pp. 73-9).
+A @phen-con-iep: Defines appearances and defeasible support, then examines tainted sources and the limits of inferential extensions.
+@hasan-fumerton2022 | § 4 | We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.
+@hasan-fumerton2022 | § 4 | This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then
+@hasan-fumerton2022 | § 4 | One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.
+@hasan-fumerton2022 | § 4 | According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).
+@hasan-fumerton2022 | § 4 | It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.
+@hasan-fumerton2022 | § 4 | The main motivation for phenomenal conservatism is straightforward.
+@hasan-fumerton2022 | § 4 | And if we deny that they are good sources of justification, then how do we avoid skepticism?
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+
+== 06-justification/reliabilism-about-justification
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@steup-neta2025 | § 3.2 | Whether a belief is justified or unjustified, there is something that makes it so.
+@steup-neta2025 | § 3.2 | Jack had more than four cups of coffee, then Jack had more than three cups of coffee” is true, then you have evidence for that proposition.
+@steup-neta2025 | § 3.2 | However, they deny that justification is essentially a matter of having suitable experiences.
+@steup-neta2025 | § 3.3 | Consider a science fiction scenario concerning a human brain that is removed from its skull, kept alive in a vat of nutrient fluid, and electrochemically stimulated to have precisely the same total series of experiences that you have had.
+@steup-neta2025 | § 3.3 | So justification involves external conditions.[30] Among those who think that justification is internal, there is no unanimity on how to understand the notion of internality—i.e., what it is about the factors that you share with your BIV doppelganger that makes those factors relevant to justification.
+@steup-neta2025 | § 3.3 | Let’s call the former accessibility internalism and the latter mentalist internalism.
+@steup-neta2025 | § 3.3 | The conjunction of E1 and E2 by itself implies nothing about the accessibility of justification.
+@steup-neta2025 | § 3.3 | Reliabilism says that the justification of one’s beliefs is a function of the reliability of one’s belief sources such as memorial, perceptual and introspective states and processes.
+A @steup-neta2025: Introduces competing conceptions of justification and the difference between evidence and reliable sources.
+@goldman-beddor2021 | § 2.3 | Perhaps the most widely discussed problem for process reliabilism is the generality problem.
+@goldman-beddor2021 | § 2.3 | Or perhaps something more fine-grained, such as visual experience of a maple tree on a sunny afternoon?
+@goldman-beddor2021 | § 2.3 | A different approach to the generality problem is to insist that a version of the problem arises for any adequate epistemology, not just reliabilists.
+@goldman-beddor2021 | § 2.3 | First, they show that the generality problem is very general, since some version of it arises in non-epistemic contexts.
+@goldman-beddor2021 | § 2.4 | Another challenge for reliabilism comes from the phenomenon of epistemic defeat.
+@goldman-beddor2021 | § 2.4 | On this view, Alice’s belief is defeated because if she were to use the process believing her friend’s testimony, she would not have believed B.
+@goldman-beddor2021 | § 3.2 | Similarly, Goldman suggests, group justification depends on two analogous factors: (a) the justifiedness of the members’ beliefs and (b) the conditional reliability of the belief aggregation function (a function that specifies the way in which the group’s beliefs depend on the members’ beliefs).
+A @goldman-beddor2021: Surveys process reliability with attention to process typing, defeat, and inferential inputs.
+@littlejohn2025 | § 2.4 | The new evil demon objection was initially used to show that the connection to the truth that justification provides should not be understood in terms of reliability (Lehrer and Cohen 1983; Cohen 1984; Foley 1985).
+@littlejohn2025 | § 2.4 | One conclusion that might be taken from this is that justification does not require reliability where reliability is understood in terms of the ratio of success to failure in the environments in which the processes were operative.
+@littlejohn2025 | § 2.4 | Because of this, it is not clear whether externalists can remain true to their views while promising to vindicate the intuitive verdicts that internalists appeal to.
+@littlejohn2025 | § 2.4 | Externalists typically respond by denying that the deceived subjects have justification, trying to formulate views that accommodate the intuitions that underwrite the objection, or by conceding that the internalist is right about something whilst insisting that there is some important notion that depends upon external
+@littlejohn2025 | § 2.4 | The situation in which the demon is operative is not normal, but it might be that the processes operative would produce more desirable outcomes in normal environments.
+@littlejohn2025 | § 2.1 | BonJour provides one of the first intuition pumps used to criticise externalism about knowledge, a view that he took to have implausible implications about the nature of justification and its role in securing knowledge: Norman: Norman, under certain conditions that usually obtain, is a completely reliable clairvoyant
+@littlejohn2025 | § 2.1 | Externalist views about knowledge imply that Norman’s beliefs constitute knowledge.
+@littlejohn2025 | § 2.1 | The host, Nour’s friend’s father, is polite and welcoming to Nour.
+@littlejohn2025 | § 2.1 | Externalists might resist BonJour’s argument by rejecting (P1).
+@littlejohn2025 | § 2.1 | There is no consensus on whether knowledge requires rational belief or justification (Lasonen-Aarnio 2010).
+A @littlejohn2025: Defines mentalism and access views, then compares unusual faculties, deception, responsibility, and retained memory.
+
+== 06-justification/the-problem-of-the-criterion
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@mccain-iep | § 1 | Michael DePaul (1988, 70) expresses a version of the Problem of the Criterion limited to moral discourse in terms of two questions: “Which of our actions are morally right?” and “What are the criteria of right action?” Since there are many versions of the Problem of the Criterion, one might worry that it will be
+@mccain-iep | § 1 | More generally: how is it possible to theorize at all without making arbitrary assumptions?
+@mccain-iep | § 1 | It is possible that one could have answers to these questions without possessing any particular theory of truth, or even taking a stand at all as to the correct theory of truth.
+@mccain-iep | § 1 | The problem yielded by the Problem of the Criterion arises because one might plausibly think that we cannot answer (1) until we have an answer to (2), but we cannot answer (2) until we have an answer to (1).
+@mccain-iep | § 1 | The extreme skepticism threatened by the Problem of the Criterion itself seems guilty of begging the question.
+@mccain-iep | § 2 | According to Chisholm, there are only three responses to the Problem of the Criterion: particularism, methodism, and skepticism.
+@mccain-iep | § 2 | The particularist assumes an answer to (1) that does not epistemically depend on an answer to (2) and uses her answer to (1) to answer (2).
+@mccain-iep | § 2 | One might think that the question-begging only occurs if the particularist tries to reason with her methodist or skeptical interlocutors.
+@mccain-iep | § 2 | So, the problem for the particularist response is much deeper than a dialectical problem that arises only when trying to deal with opposing views.
+@mccain-iep | § 2 | Since methodism begins by assuming that some criterion is a correct criterion of truth without providing any epistemic reason to prefer this response to the alternatives, it begs the question against particularism and skepticism.
+@mccain-iep | § 2 | Essentially, he thinks that there can be no good reason for starting with a broad criterion.
+@mccain-iep | § 2 | As a solution to the Problem of the Criterion, Chisholm’s particularism seems to be lacking.
+@mccain-iep | § 2 | So, Chisholm thinks that particularism is simply the best of a set of bad options—the options are bad because they beg the question; particularism is best because it allows us to make progress in epistemology.
+A @mccain-iep: Distinguishes epistemic priority from a theory of truth and examines the assumptions of cases-first, criteria-first, and skeptical responses.
+@hasan-fumerton2022 | § 1 | A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.
+@hasan-fumerton2022 | § 1 | Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.
+@hasan-fumerton2022 | § 1 | Against this, the proponent of PIJ might ask us to consider an amendment to the case.
+@hasan-fumerton2022 | § 1 | If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.
+@hasan-fumerton2022 | § 1 | And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.
+@hasan-fumerton2022 | § 1 | The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.
+@hasan-fumerton2022 | § 1 | A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.
+@hasan-fumerton2022 | § 1 | Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.
+@hasan-fumerton2022 | § 1 | There are responses to the charge of vicious regress facing anti-foundationalists.
+@hasan-fumerton2022 | § 1 | According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.
+@hasan-fumerton2022 | § 1 | Some forms of coherentism might complicate our taxonomy.
+@hasan-fumerton2022 | § 1 | For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@olsson2025 | § 1 | A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.
+@olsson2025 | § 1 | Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.
+@olsson2025 | § 1 | But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.
+A @olsson2025: Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth.
+
+== 06-justification/the-regress-problem
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@hasan-fumerton2022 | § 1 | A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.
+@hasan-fumerton2022 | § 1 | Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.
+@hasan-fumerton2022 | § 1 | Against this, the proponent of PIJ might ask us to consider an amendment to the case.
+@hasan-fumerton2022 | § 1 | If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.
+@hasan-fumerton2022 | § 1 | And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.
+@hasan-fumerton2022 | § 1 | The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.
+@hasan-fumerton2022 | § 1 | A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.
+@hasan-fumerton2022 | § 1 | Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.
+@hasan-fumerton2022 | § 1 | There are responses to the charge of vicious regress facing anti-foundationalists.
+@hasan-fumerton2022 | § 1 | According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.
+@hasan-fumerton2022 | § 1 | Some forms of coherentism might complicate our taxonomy.
+@hasan-fumerton2022 | § 1 | For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@olsson2025 | § 2 | The coherentist might be thought to propose that nothing prevents the regress from proceeding in a circle.
+@olsson2025 | § 2 | If she did justify \(A\) in terms of \(C\) nonetheless, her move would lack any justificatory force whatsoever.
+@olsson2025 | § 2 | This is a coherence approach because what makes a belief system justified, on this view, is precisely its coherence.
+@olsson2025 | § 2 | Second, the proposal that a singular belief is justified merely in virtue of being a member of a justified totality can be questioned because, plausibly, a belief can be a member of a sufficiently coherent system without in any way adding to the coherence of that system, e.g., if the belief is the only member which
+@olsson2025 | § 2 | This fact raises the question of what status those special beliefs have.
+A @olsson2025: Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth.
+@inf-epis-iep | § 1 | We often provide reasons for the things we believe in order to justify holding the beliefs.
+@inf-epis-iep | § 1 | If both (1) and (2) are true, then the chain of reasons for any belief is potentially infinite, that is, potentially unlimited.
+@inf-epis-iep | § 1 | On this alternative reading, these coherentists don’t deny (1), because (1) concerns the structure, not the source, of probative reasons.
+@inf-epis-iep | § 1 | For example, the relevant foundationalist property could be that the belief merely reports the contents of sensations or memories; or it could be that the belief is produced by a reliable cognitive faculty.
+@inf-epis-iep | § 1 | And once a reason is challenged, then on pain of arbitrariness, a further reason must be produced in order for the challenged reason to serve as a good reason for a belief.
+@inf-epis-iep | § 1 | As mentioned above, infinitists reject the form of coherentism – sometimes called “linear coherentism” – that endorses question-begging, circular reasoning.
+@inf-epis-iep | § 1 | Holistic coherentism holds that individual beliefs are justified only in virtue of their membership in a coherent set of beliefs.
+@inf-epis-iep | § 1 | This is the pattern: There are three possible, non-skeptical solutions to the regress problem: foundationalism, coherentism and infinitism.
+A @inf-epis-iep: Distinguishes an indefinitely available chain from a completed infinite argument and introduces reason-enhanced justification.
+
+== 06-justification/what-justification-is
+Q: What distinguishes the central claim from nearby views, and which objections limit its scope?
+@steup-neta2025 | § 3 | Whatever precisely is involved in knowing a fact, it is widely recognized that some of our cognitive successes fall short of knowledge: an agent may, for example, conduct herself in a way that is intellectually unimpeachable, and yet still end up thereby believing a false proposition.
+@steup-neta2025 | § 3.1 | How is the term “justification” used in ordinary language?
+@steup-neta2025 | § 3.1 | Due to the inappropriateness of Tom’s question, it wasn’t Martha’s duty to tell the truth.
+@steup-neta2025 | § 3.1 | Exactly what, though, must we do in the pursuit of some such distinctively epistemic aim?
+@steup-neta2025 | § 3.1 | Recently, however, two chief objections have been raised against conceiving of justification deontologically.
+@steup-neta2025 | § 3.1 | According to the second objection to DJ, deontological justification cannot suffice for an agent to have a justified belief.
+@steup-neta2025 | § 3.1 | SLJ) S is justified in believing that p if and only if S believes that p in a way that makes it sufficiently likely that her belief is true.
+@steup-neta2025 | § 3.2 | Whether a belief is justified or unjustified, there is something that makes it so.
+@steup-neta2025 | § 3.2 | Jack had more than four cups of coffee, then Jack had more than three cups of coffee” is true, then you have evidence for that proposition.
+@steup-neta2025 | § 3.2 | However, they deny that justification is essentially a matter of having suitable experiences.
+@steup-neta2025 | § 3.3 | Consider a science fiction scenario concerning a human brain that is removed from its skull, kept alive in a vat of nutrient fluid, and electrochemically stimulated to have precisely the same total series of experiences that you have had.
+@steup-neta2025 | § 3.3 | So justification involves external conditions.[30] Among those who think that justification is internal, there is no unanimity on how to understand the notion of internality—i.e., what it is about the factors that you share with your BIV doppelganger that makes those factors relevant to justification.
+@steup-neta2025 | § 3.3 | Let’s call the former accessibility internalism and the latter mentalist internalism.
+@steup-neta2025 | § 3.3 | The conjunction of E1 and E2 by itself implies nothing about the accessibility of justification.
+@steup-neta2025 | § 3.3 | Reliabilism says that the justification of one’s beliefs is a function of the reliability of one’s belief sources such as memorial, perceptual and introspective states and processes.
+A @steup-neta2025: Introduces competing conceptions of justification and the difference between evidence and reliable sources.
+@ichikawa-steup2026 | § 1.3.1 | Although “justification” is the standard contemporary name for the condition in question, this label is a relatively recent (20th century) development, and the name can carry some potentially misleading connotations, especially for those not already versed in the literature.
+@ichikawa-steup2026 | § 1.3.1 | This might be so, even if S has not engaged in a project of actively justifying their belief.
+@ichikawa-steup2026 | § 1.3.3 | It is worth noting that one might distinguish between two importantly different notions of justification, standardly referred to as “propositional justification” and “doxastic justification” (sometimes “ex ante” justification and “ex post” justification, respectively).[8] Unlike that between internalist and
+@ichikawa-steup2026 | § 1.3.3 | The precise relation between propositional and doxastic justification is subject to controversy, but it is uncontroversial that the two notions can come apart.
+A @ichikawa-steup2026: Distinguishes having evidential support from appropriately basing a belief on it and from publicly defending it.
+@hasan-fumerton2022 | § 4 | We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.
+@hasan-fumerton2022 | § 4 | This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then
+@hasan-fumerton2022 | § 4 | One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.
+@hasan-fumerton2022 | § 4 | According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).
+@hasan-fumerton2022 | § 4 | It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.
+@hasan-fumerton2022 | § 4 | The main motivation for phenomenal conservatism is straightforward.
+@hasan-fumerton2022 | § 4 | And if we deny that they are good sources of justification, then how do we avoid skepticism?
+A @hasan-fumerton2022: Separates the regress arguments, classical and modest foundations, and objections to non-inferential support.
+@korcz2026 | § 1 | But the causal relation as a whole between the two events does not manifest any cognitive traits, such as some sort of cognitive inference.
+@korcz2026 | § 2 | Swain argues that the complicated line of reasoning is a pseudo-overdeterminant of the lawyer’s belief that his client is innocent, and hence that there is a kind of causal connection between the complicated line of reasoning and the lawyer’s belief by virtue of which the lawyer’s belief is based on the reasoning.
+@korcz2026 | § 2 | As already noted, Swain’s theory is intended to avoid Lehrer’s objection regarding superstitious-lawyer style counterexamples.
+A @korcz2026: Surveys causal and counterfactual accounts of the relation between beliefs and their reasons.

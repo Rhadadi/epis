@@ -1,0 +1,72 @@
+{
+  "chapter": "06-justification",
+  "section": "defeaters",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "kelly2016",
+      "used_for": [
+        "A message about a canceled train",
+        "Defeat can be misleading",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It is controversial whether any evidence is indefeasible in this sense.[5] Following Pollock (1986), we can distinguish between undercutting and rebutting defeaters.",
+          "corpus_chunk": 1195
+        }
+      ],
+      "annotation": "Introduces rebutting and undercutting evidence through contrasting testimony cases."
+    },
+    {
+      "key": "koons2025",
+      "used_for": [
+        "Correcting the objection",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A (Tarski) consequence relation is monotonic just in case it satisfies the following condition, for all formulas \\(p\\) and all sets \\(\\Gamma\\) and \\(\\Delta\\): Monotonicity: If \\(\\Gamma \\vDash p\\), then \\(\\Gamma \\cup \\Delta \\vDash p\\).",
+          "corpus_chunk": 3024
+        }
+      ],
+      "annotation": "Explains why adding information can defeat a defeasible conclusion without invalidating classical entailment."
+    },
+    {
+      "key": "evidentia-iep",
+      "used_for": [
+        "The level of the challenge matters",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "Some argue that the justification of a belief depends, at least in part, on the inquiry that led to the belief.",
+          "corpus_chunk": 43296
+        },
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "He remembers that yesterday’s paper said that Star Wars, Episode 68 was showing at 8:00.",
+          "corpus_chunk": 43296
+        },
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "Evidentialism is a theory about the present justificatory status of propositions and beliefs for subjects.",
+          "corpus_chunk": 43297
+        }
+      ],
+      "annotation": "Defines evidence-relative justification and separates questions about belief, basing, evidence possession, and responsible inquiry."
+    }
+  ]
+}

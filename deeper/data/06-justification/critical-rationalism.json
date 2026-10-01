@@ -1,0 +1,66 @@
+{
+  "chapter": "06-justification",
+  "section": "critical-rationalism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "thornton2026",
+      "used_for": [
+        "A claim that can lose",
+        "Passing is different from proof",
+        "Tests have their own stopping points",
+        "Falsifiability and actual falsification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 12",
+          "basis": "full text",
+          "excerpt": "This is strongly rejected by Popper, who differentiates his position from it by arguing that it is the acceptance of basic statements, rather than that universal theory, which is determined by convention and intersubjective agreement.",
+          "corpus_chunk": 32601
+        },
+        {
+          "locator": "§ 12",
+          "basis": "full text",
+          "excerpt": "Yet Lakatos flatly denies that there are critical tests, in the Popperian sense, in science, and argues the point convincingly by turning the above example of an alleged critical test on its head.",
+          "corpus_chunk": 32605
+        },
+        {
+          "locator": "§ 12",
+          "basis": "full text",
+          "excerpt": "Such theories are, it is now widely accepted, highly resistant to falsification; they are “tenaciously protected from refutation by a vast ‘protective belt’ of auxiliary hypotheses” (Lakatos 1978: 4) and so are falsified, if at all, not by Popperian critical tests, but rather within the elaborate context of the",
+          "corpus_chunk": 32606
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "What is apparently the chief source of strength of psychoanalysis, he concluded, viz. its capability to accommodate and explain every possible form of human behaviour, is in fact a critical weakness, for it entails that it is not, and could not be, genuinely predictive.",
+          "corpus_chunk": 32535
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Popper therefore argues that there are no statements in science which cannot be interrogated: basic statements, which are used to test the universal theories of science, must themselves be inter-subjectively testable and are therefore open to the possibility of refutation.",
+          "corpus_chunk": 32546
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If we do not come to any decision, and do not accept some basic statement or other, then the test will have led nowhere.",
+          "corpus_chunk": 32547
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "In this way, verisimilitude allowed Popper to mitigate what some saw as the pessimism of an anti-inductivist philosophy of science.",
+          "corpus_chunk": 32561
+        }
+      ],
+      "annotation": "Explains Popper’s testability approach, provisional basic statements, and the methodological objections."
+    }
+  ]
+}

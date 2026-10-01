@@ -1,0 +1,258 @@
+{
+  "chapter": "06-justification",
+  "section": "coherentism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How does system support differ from circular argument, and what do formal truth-conduciveness results establish?"
+  ],
+  "sources": [
+    {
+      "key": "olsson2025",
+      "used_for": [
+        "Three observations, one explanation",
+        "Consistent does not mean well-supported",
+        "Ten retellings are not ten independent checks",
+        "Holism changes the unit of assessment",
+        "Three kinds of coherence",
+        "More connections can be cheap",
+        "A primary critic separates truth from a test of truth",
+        "The isolation objection",
+        "The Lewis–BonJour dispute",
+        "Probability makes the challenge more precise",
+        "What the impossibility results do and do not show",
+        "What the witness example simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.",
+          "corpus_chunk": 40388
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.",
+          "corpus_chunk": 40389
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.",
+          "corpus_chunk": 40389
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The coherentist might be thought to propose that nothing prevents the regress from proceeding in a circle.",
+          "corpus_chunk": 40395
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If she did justify \\(A\\) in terms of \\(C\\) nonetheless, her move would lack any justificatory force whatsoever.",
+          "corpus_chunk": 40396
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This is a coherence approach because what makes a belief system justified, on this view, is precisely its coherence.",
+          "corpus_chunk": 40396
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Second, the proposal that a singular belief is justified merely in virtue of being a member of a justified totality can be questioned because, plausibly, a belief can be a member of a sufficiently coherent system without in any way adding to the coherence of that system, e.g., if the belief is the only member which",
+          "corpus_chunk": 40398
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This fact raises the question of what status those special beliefs have.",
+          "corpus_chunk": 40399
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "By a traditional account of coherence we will mean one which construes coherence as a relation of mutual support or agreement among given data (propositions, beliefs, memories, testimonies etc.).",
+          "corpus_chunk": 40400
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Consider, for instance, the set consisting of propositions \\(A, B\\) and \\(C\\), where \\(A =\\) “John was at the crime scene at the time of the robbery” \\(B =\\) “John owns a gun of the type used by the robber” \\(C =\\) “John deposited a large sum of money in his bank account the next day” This set is intuitively coherent,",
+          "corpus_chunk": 40401
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Lewis’s definition of coherence, or “congruence” to use his term, can be seen as a refinement and improvement of Ewing’s basic idea.",
+          "corpus_chunk": 40401
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Why not consider the support any subset, not just singletons, receives from the rest?",
+          "corpus_chunk": 40403
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The coherence of a system of beliefs is diminished to the extent to which it is divided into subsystems of beliefs which are relatively unconnected to each other by inferential connections.",
+          "corpus_chunk": 40405
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "If so, which system is more coherent in an overall sense?",
+          "corpus_chunk": 40405
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A possible modified coherence criterion could state that what is correlated with higher coherence is not the number of inferential connections but rather the inferential density of the system, where the latter is obtained by dividing the number of inferential connections by the number of beliefs in the system.",
+          "corpus_chunk": 40407
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "And antecedently, the probability of what is reported may also be small.",
+          "corpus_chunk": 40420
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "He writes, in his discussion of reports from memory, that “[i]f … there were no initial presumption attaching to the mnemically presented … then no extent of congruity with other such items would give rise to any eventual credibility” (357).",
+          "corpus_chunk": 40422
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "For an elaboration of this point the reader is referred to Olsson (2005, 65), footnote 4.",
+          "corpus_chunk": 40433
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "We recall that Lewis’s defined coherence, or congruence, not for any old set of proposition but rather for a set of supposed facts asserted.",
+          "corpus_chunk": 40434
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "That would be a paradigm case of a (highly) coherent set of reports.",
+          "corpus_chunk": 40434
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "By a (probabilistic) coherence measure, as defined for ordered sets of propositions, we shall mean any numerical measure \\(C(A_1 ,\\ldots ,A_n)\\) defined solely in terms of the probability of \\(A_1 ,\\ldots ,A_n\\) (and their Boolean combinations) and standard arithmetical operations (Olsson, 2002).",
+          "corpus_chunk": 40436
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Thus, \\(C(\\langle A_1,A_2 , \\ldots ,A_n\\rangle) = C(\\langle B_1,B_2 , \\ldots ,B_n\\rangle)\\) whenever \\(\\langle B_1,B_2 , \\ldots ,B_n\\rangle\\) is a permutation of \\(\\langle A_1,A_2 , \\ldots ,A_n\\rangle\\).",
+          "corpus_chunk": 40437
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "And yet, the reports in the first case are more coherent from a presystematic standpoint because the witnesses are in complete agreement.",
+          "corpus_chunk": 40438
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "We must also require that when we compare two different sets of reports, we do so while keeping the degree of individual credibility fixed.",
+          "corpus_chunk": 40455
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Furthermore, Olsson and Schubert (2007) observe that, while coherence falls short of being truth conducive, it can still be “reliability conducive”, i.e., more coherence, according to some measures, entails a higher probability that the sources are reliable, at least in a paradigmatic case (cf.",
+          "corpus_chunk": 40463
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Moreover, Roche (2013b) has demonstrated that assuming a set to be coherent implies an increase in the probability of truth of any of its elements.",
+          "corpus_chunk": 40464
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "It should come as no surprise that he objects to the impossibility results (ibid.) on the same grounds.",
+          "corpus_chunk": 40465
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "At this point, it would be reasonable to conjecture that either Jane or Carl is not telling the truth.",
+          "corpus_chunk": 40448
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Let: \\(E_1 =\\) “Jane reports that Tweety is a bird” \\(E_2 =\\) “Carl reports that Tweety cannot fly” \\(E_3 =\\) “Rick reports that Tweety is a penguin” The well-known principle of total evidence now dictates that all relevant evidence should be taken into consideration when computing probabilities.",
+          "corpus_chunk": 40451
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "One lesson emerging from the Analysis debate is that this way of construing truth conduciveness should be replaced by a notion of truth conduciveness where the relevant probabilities take all relevant evidence into account, whatever that evidence may be (beliefs, testimonies etc.).",
+          "corpus_chunk": 40453
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "See, for example, Lycan (1988, 2012) and, for a book-length defense of explanatory coherentism, Poston (2014).",
+          "corpus_chunk": 40417
+        }
+      ],
+      "annotation": "Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "A primary critic separates truth from a test of truth",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "For the above two reasons, coherence cannot be accepted as giving the _meaning_ of truth, though it is often a most important _test_ of truth after a certain amount of truth has become known.",
+          "corpus_chunk": 10121
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.",
+          "corpus_chunk": 10120
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.",
+          "corpus_chunk": 10121
+        },
+        {
+          "locator": "ch. XIII",
+          "basis": "full text",
+          "excerpt": "Thus the greater part of what would commonly pass as knowledge is more or less probable opinion.",
+          "corpus_chunk": 10152
+        }
+      ],
+      "annotation": "Separates coherence as a proposed meaning of truth from its possible use as a test for probable opinion."
+    }
+  ]
+}

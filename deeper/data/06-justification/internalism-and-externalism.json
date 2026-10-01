@@ -1,0 +1,327 @@
+{
+  "chapter": "06-justification",
+  "section": "internalism-and-externalism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which dependence claim is at issue, and how do deception, tacit competence, and retained evidence test it?"
+  ],
+  "sources": [
+    {
+      "key": "littlejohn2025",
+      "used_for": [
+        "Two identical-looking instruments",
+        "Two meanings of internal",
+        "External does not mean no mental conditions",
+        "Identify the question before taking sides",
+        "What supervenience means here",
+        "Access to grounds and access to their adequacy",
+        "A historical first-person demand",
+        "The new evil demon argument",
+        "Norman and the other direction of pressure",
+        "Responsibility does not automatically settle the issue",
+        "Forgotten evidence and retained information",
+        "Children and theoretical sophistication",
+        "Two axes of a larger debate",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "These debates about knowledge and about justification are, inter alia, disagreements about the connections between justification and knowledge, as well as disagreements about what kinds of internal conditions are necessary for knowledge and whether justification is itself an internal condition (regardless of whether",
+          "corpus_chunk": 41301
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The debate about knowledge, by contrast, is not normally understood as a disagreement about a supervenience thesis.",
+          "corpus_chunk": 41307
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "How do epistemologists characterise the internal and the external?",
+          "corpus_chunk": 41310
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The accessibilist believes that justification supervenes upon internal conditions that are understood to be accessible.",
+          "corpus_chunk": 41311
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "What if knowledge is itself a mental state in its own right so there is a mental difference between someone who knows that the snow has started to fall and someone who believes but doesn’t know this (Gibbons 2001; Nagel 2013; Williamson 2000)?",
+          "corpus_chunk": 41313
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "According to the accessibilist, the conditions that determine what a thinker has justification to believe at any given time are the ones accessible to her at that time.",
+          "corpus_chunk": 41314
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "BonJour provides one of the first intuition pumps used to criticise externalism about knowledge, a view that he took to have implausible implications about the nature of justification and its role in securing knowledge: Norman: Norman, under certain conditions that usually obtain, is a completely reliable clairvoyant",
+          "corpus_chunk": 41316
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Externalist views about knowledge imply that Norman’s beliefs constitute knowledge.",
+          "corpus_chunk": 41317
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The host, Nour’s friend’s father, is polite and welcoming to Nour.",
+          "corpus_chunk": 41317
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Externalists might resist BonJour’s argument by rejecting (P1).",
+          "corpus_chunk": 41319
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "There is no consensus on whether knowledge requires rational belief or justification (Lasonen-Aarnio 2010).",
+          "corpus_chunk": 41320
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "First, some question the idea that justification should be understood in terms of duty.",
+          "corpus_chunk": 41322
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "There are live debates about whether moral duties or the justification of action should be understood along internalist lines (i.e., that internally similar agents have the same duties and the same actions would be justified for them) (P.",
+          "corpus_chunk": 41324
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Internalists might offer an alternative characterisation of the normative character of justification (e.g., by linking justification to responsibility) or provide further arguments for thinking that normative notions used to characterise justification (e.g., duty) must be understood along internalist lines.",
+          "corpus_chunk": 41325
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "If A and B are internal duplicates and they form the same beliefs in the same ways, A is blameless for her beliefs iff B is blameless.",
+          "corpus_chunk": 41326
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "As they see it, even if a thinker forms her beliefs in responsible ways, she might nevertheless violate a norm or fail to meet some standard and do so excusably.",
+          "corpus_chunk": 41327
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Some externalists have argued that conditions that obtained in the past might matter to whether a belief is responsibly held now.",
+          "corpus_chunk": 41328
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Losing the grounds or information that Sally originally based her belief on does not seem to some externalists to ‘turn’ an irresponsibly formed belief into one that she can now responsibly hold (Goldman 1999).",
+          "corpus_chunk": 41329
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "If A and B are both rational in holding their beliefs, both of their beliefs are justified.",
+          "corpus_chunk": 41329
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "It might be enough, for example, that the subject’s reasons represent the good reasons there are for responding that way.",
+          "corpus_chunk": 41340
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Suppose that Agnes knows that she has limbs and her brain in a vat counterpart falsely believes that it has limbs.",
+          "corpus_chunk": 41342
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The new evil demon objection was initially used to show that the connection to the truth that justification provides should not be understood in terms of reliability (Lehrer and Cohen 1983; Cohen 1984; Foley 1985).",
+          "corpus_chunk": 41351
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "One conclusion that might be taken from this is that justification does not require reliability where reliability is understood in terms of the ratio of success to failure in the environments in which the processes were operative.",
+          "corpus_chunk": 41352
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Because of this, it is not clear whether externalists can remain true to their views while promising to vindicate the intuitive verdicts that internalists appeal to.",
+          "corpus_chunk": 41353
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Externalists typically respond by denying that the deceived subjects have justification, trying to formulate views that accommodate the intuitions that underwrite the objection, or by conceding that the internalist is right about something whilst insisting that there is some important notion that depends upon external",
+          "corpus_chunk": 41354
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The situation in which the demon is operative is not normal, but it might be that the processes operative would produce more desirable outcomes in normal environments.",
+          "corpus_chunk": 41355
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "When Goldman proposed his reliabilist theory of justification, his aim was to give an explanatory theory of justification, a theory that: … explains in a general way why certain beliefs are counted as justified and others as unjustified … I do not try to prescribe standards for justification that differ from, or",
+          "corpus_chunk": 41368
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "So, we should prefer an externalist theory to its internalist rivals.",
+          "corpus_chunk": 41369
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Generality: Not only do epistemic facts supervene upon non-epistemic facts, there seem to be general principles that connect non-epistemic facts to epistemic facts that identify important patterns of dependence.",
+          "corpus_chunk": 41370
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The thinker knows now what she learned earlier without now having evidence that supports her beliefs.",
+          "corpus_chunk": 41370
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The second challenge arises for internalists who want to offer some story that purports to explain how it is possible to have persisting justification given the loss of original supporting evidence (Goldman 1999; Greco 1990).",
+          "corpus_chunk": 41372
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "This subject forms an unjustified belief initially, but at this later time has a belief accompanied by the same pi-factors as the subject who has a justified belief.",
+          "corpus_chunk": 41373
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Internalists can respond to these challenges by trying to defend the view that these subjects have adequate evidence presently that justifies beliefs presently held (even if, perhaps, they lacked adequate evidence initially) (Conee and Feldman 2004).",
+          "corpus_chunk": 41374
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "In this setting, there is disagreement about whether attributing testimonial knowledge to small children is a problem for reductionist views about testimonial justification according to which testimonial justification requires supporting evidence that the recipient of testimony can rely on to confirm the reliability",
+          "corpus_chunk": 41375
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Alternatively, internalists might suggest that the beliefs of children can attain an important kind of positive status that merits the label ‘justified’ even if it differs significantly from the kind of justification that attaches to the beliefs of mature and responsible adults (Leite 2004) or that there is a kind of",
+          "corpus_chunk": 41376
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "These principles identify conditions that (defeasibly) confer justification upon our beliefs.",
+          "corpus_chunk": 41376
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "If the factors cited by such rules are internal factors (e.g., we specify them with reference to experience, apparent memory, etc.), this set-up might seem to favour the internalist, but Goldman notes that there is a question about the criteria of rightness that ultimately determines which (putative) J-rules belong to",
+          "corpus_chunk": 41378
+        }
+      ],
+      "annotation": "Defines mentalism and access views, then compares unusual faculties, deception, responsibility, and retained memory."
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Identify the question before taking sides"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.3.3",
+          "basis": "full text",
+          "excerpt": "It is worth noting that one might distinguish between two importantly different notions of justification, standardly referred to as “propositional justification” and “doxastic justification” (sometimes “ex ante” justification and “ex post” justification, respectively).[8] Unlike that between internalist and",
+          "corpus_chunk": 2340
+        },
+        {
+          "locator": "§ 1.3.3",
+          "basis": "full text",
+          "excerpt": "The precise relation between propositional and doxastic justification is subject to controversy, but it is uncontroversial that the two notions can come apart.",
+          "corpus_chunk": 2341
+        }
+      ],
+      "annotation": "Distinguishes having evidential support from appropriately basing a belief on it and from publicly defending it."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "Access to grounds and access to their adequacy",
+        "Two axes of a larger debate",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.",
+          "corpus_chunk": 41084
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "However, externalists typically allow that in principle one could have a foundational belief in the absence of any appearance or seeming.",
+          "corpus_chunk": 41119
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    },
+    {
+      "key": "locke1690",
+      "used_for": [
+        "A historical first-person demand",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Book IV, ch. XVI, § 9",
+          "basis": "full text",
+          "excerpt": "there it is, where diligence, attention, and exactness are required, to form a right judgment, and to proportion the assent to the different evidence and probability of the thing",
+          "corpus_chunk": 6613
+        },
+        {
+          "locator": "Book IV, ch. XVI",
+          "basis": "full text",
+          "excerpt": "Experience and Testimonies clashing, infinitely vary the Degrees of Probability.",
+          "corpus_chunk": 6612
+        },
+        {
+          "locator": "Book IV, ch. XVI, § 9",
+          "basis": "full text",
+          "excerpt": "Experience and Testimonies clashing, infinitely vary the Degrees of Probability.",
+          "corpus_chunk": 6612
+        }
+      ],
+      "annotation": "A public-domain primary discussion of degrees of assent when experience and testimony conflict."
+    }
+  ]
+}

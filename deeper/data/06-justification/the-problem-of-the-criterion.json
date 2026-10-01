@@ -1,0 +1,210 @@
+{
+  "chapter": "06-justification",
+  "section": "the-problem-of-the-criterion",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "mccain-iep",
+      "used_for": [
+        "Choosing a check for a check",
+        "A classification does not validate a starting point",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Michael DePaul (1988, 70) expresses a version of the Problem of the Criterion limited to moral discourse in terms of two questions: “Which of our actions are morally right?” and “What are the criteria of right action?” Since there are many versions of the Problem of the Criterion, one might worry that it will be",
+          "corpus_chunk": 13785
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "More generally: how is it possible to theorize at all without making arbitrary assumptions?",
+          "corpus_chunk": 13785
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It is possible that one could have answers to these questions without possessing any particular theory of truth, or even taking a stand at all as to the correct theory of truth.",
+          "corpus_chunk": 13787
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The problem yielded by the Problem of the Criterion arises because one might plausibly think that we cannot answer (1) until we have an answer to (2), but we cannot answer (2) until we have an answer to (1).",
+          "corpus_chunk": 13788
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The extreme skepticism threatened by the Problem of the Criterion itself seems guilty of begging the question.",
+          "corpus_chunk": 13788
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "According to Chisholm, there are only three responses to the Problem of the Criterion: particularism, methodism, and skepticism.",
+          "corpus_chunk": 13790
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The particularist assumes an answer to (1) that does not epistemically depend on an answer to (2) and uses her answer to (1) to answer (2).",
+          "corpus_chunk": 13790
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "One might think that the question-begging only occurs if the particularist tries to reason with her methodist or skeptical interlocutors.",
+          "corpus_chunk": 13791
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "So, the problem for the particularist response is much deeper than a dialectical problem that arises only when trying to deal with opposing views.",
+          "corpus_chunk": 13793
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Since methodism begins by assuming that some criterion is a correct criterion of truth without providing any epistemic reason to prefer this response to the alternatives, it begs the question against particularism and skepticism.",
+          "corpus_chunk": 13794
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Essentially, he thinks that there can be no good reason for starting with a broad criterion.",
+          "corpus_chunk": 13800
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "As a solution to the Problem of the Criterion, Chisholm’s particularism seems to be lacking.",
+          "corpus_chunk": 13801
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "So, Chisholm thinks that particularism is simply the best of a set of bad options—the options are bad because they beg the question; particularism is best because it allows us to make progress in epistemology.",
+          "corpus_chunk": 13804
+        }
+      ],
+      "annotation": "Distinguishes epistemic priority from a theory of truth and examines the assumptions of cases-first, criteria-first, and skeptical responses."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "First-order belief and philosophical certification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.",
+          "corpus_chunk": 41047
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.",
+          "corpus_chunk": 41049
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Against this, the proponent of PIJ might ask us to consider an amendment to the case.",
+          "corpus_chunk": 41050
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.",
+          "corpus_chunk": 41055
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.",
+          "corpus_chunk": 41056
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "There are responses to the charge of vicious regress facing anti-foundationalists.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Some forms of coherentism might complicate our taxonomy.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).",
+          "corpus_chunk": 41063
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    },
+    {
+      "key": "olsson2025",
+      "used_for": [
+        "Mutual revision needs an account too",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.",
+          "corpus_chunk": 40388
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.",
+          "corpus_chunk": 40389
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.",
+          "corpus_chunk": 40389
+        }
+      ],
+      "annotation": "Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth."
+    }
+  ]
+}

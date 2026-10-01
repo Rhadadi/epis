@@ -1,0 +1,123 @@
+{
+  "chapter": "06-justification",
+  "section": "evidentialism",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes the central claim from nearby views, and which objections limit its scope?"
+  ],
+  "sources": [
+    {
+      "key": "evidentia-iep",
+      "used_for": [
+        "One envelope, three possible attitudes",
+        "Support and basing",
+        "Present evidence and responsible inquiry",
+        "Moral and practical demands",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Evidentialism in epistemology is defined by the following thesis about epistemic justification: (EVI) Person S is justified in believing proposition p at time t if and only if S’s evidence for p at t supports believing p.",
+          "corpus_chunk": 43255
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Richard Feldman and Earl Conee, two leading defenders of evidentialism, have explicitly defined evidentialism as a thesis about the justificatory status of all of the doxastic attitudes: belief, disbelief, and suspension of judgment.",
+          "corpus_chunk": 43260
+        },
+        {
+          "locator": "§ 2.a",
+          "basis": "full text",
+          "excerpt": "Before proceeding, it is crucial to nail down more exactly what evidentialism is a theory of.",
+          "corpus_chunk": 43261
+        },
+        {
+          "locator": "§ 2.a",
+          "basis": "full text",
+          "excerpt": "One way of putting the difference here is by saying that evidentialism is a thesis regarding propositional justification, not a thesis about doxastic justification.",
+          "corpus_chunk": 43262
+        },
+        {
+          "locator": "§ 2.b",
+          "basis": "full text",
+          "excerpt": "As introduced above, evidentialism is a kind of theory of epistemic justification; one can formulate various divergent evidentialist theories by providing different analyses of its constituent concepts.",
+          "corpus_chunk": 43263
+        },
+        {
+          "locator": "§ 2.b",
+          "basis": "full text",
+          "excerpt": "The evidentialist denies that such facts about mind-independent reality are evidence in the sense relevant to determining justification.",
+          "corpus_chunk": 43264
+        },
+        {
+          "locator": "§ 2.b",
+          "basis": "full text",
+          "excerpt": "Evidentialist theories can agree on this much while still providing differing accounts of evidence.",
+          "corpus_chunk": 43264
+        },
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "Some argue that the justification of a belief depends, at least in part, on the inquiry that led to the belief.",
+          "corpus_chunk": 43296
+        },
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "He remembers that yesterday’s paper said that Star Wars, Episode 68 was showing at 8:00.",
+          "corpus_chunk": 43296
+        },
+        {
+          "locator": "§ 3.c.ii",
+          "basis": "full text",
+          "excerpt": "Evidentialism is a theory about the present justificatory status of propositions and beliefs for subjects.",
+          "corpus_chunk": 43297
+        },
+        {
+          "locator": "§ 3.c.iii",
+          "basis": "full text",
+          "excerpt": "The previous objection to evidentialism attempted to demonstrate that having evidence that supports believing p is not sufficient for being justified in believing p.",
+          "corpus_chunk": 43299
+        },
+        {
+          "locator": "§ 3.c.iii",
+          "basis": "full text",
+          "excerpt": "Since evidentialism implies that he really ought to believe that his wife was having affairs, evidentialism is false.",
+          "corpus_chunk": 43299
+        }
+      ],
+      "annotation": "Defines evidence-relative justification and separates questions about belief, basing, evidence possession, and responsible inquiry."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Whether a belief is justified or unjustified, there is something that makes it so.",
+          "corpus_chunk": 1032
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Jack had more than four cups of coffee, then Jack had more than three cups of coffee” is true, then you have evidence for that proposition.",
+          "corpus_chunk": 1032
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "However, they deny that justification is essentially a matter of having suitable experiences.",
+          "corpus_chunk": 1034
+        }
+      ],
+      "annotation": "Introduces competing conceptions of justification and the difference between evidence and reliable sources."
+    }
+  ]
+}

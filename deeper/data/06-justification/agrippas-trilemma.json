@@ -1,0 +1,480 @@
+{
+  "chapter": "06-justification",
+  "section": "agrippas-trilemma",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which skeptical premises are disputed, and how do the ancient modes differ from a universal skeptical doctrine?"
+  ],
+  "sources": [
+    {
+      "key": "morison2026",
+      "used_for": [
+        "A dispute about a receipt",
+        "Five modes, three structures",
+        "Read the challenge as a procedure",
+        "Why disagreement and relativity matter",
+        "Historical and interpretive caution",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "Sextus’ presentation of the Five Modes is brief and elliptical, which is much to be regretted, since philosophically they are the most interesting of all the modes.",
+          "corpus_chunk": 33128
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "Because of this we are not able either to choose or to rule out anything, and we end up with suspension of judgment. [166] In the mode deriving from infinite regress, we say that what is brought forward as a source of conviction for the matter proposed itself needs another such source, which itself needs another, and",
+          "corpus_chunk": 33129
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "The reference in the discussion of the Mode of Relativity (Ι 167) is a reference back to PH I 39 where Sextus tells us that all Ten Modes of Aenesidemus can be put under the generic heading of ‘relativity’ (not to be confused with the eighth of the Ten Modes, also known as the Mode of Relativity—although it seems as",
+          "corpus_chunk": 33130
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "The Mode of Dispute is also a device for generating equal and opposing arguments, this time arguments which appeal to the authority of either ordinary life or some philosopher.",
+          "corpus_chunk": 33131
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "The mode of dispute codifies a tactic in the Skeptic’s ongoing fight with dogmatists: it is a weapon to be deployed when the dogmatist employs an argument from authority.",
+          "corpus_chunk": 33132
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "If D doesn’t produce an infinite regress, D must produce an argument which stops somewhere.",
+          "corpus_chunk": 33132
+        },
+        {
+          "locator": "§ 3.5.2",
+          "basis": "full text",
+          "excerpt": "There are several responses possible to these objections.",
+          "corpus_chunk": 33138
+        },
+        {
+          "locator": "§ 3.5.3",
+          "basis": "full text",
+          "excerpt": "The Two Modes probably also come from Agrippa (Barnes 1990b: 213), and represent an attempt ‘to have a neat sceptical system compounded out of three of the Five [Modes]: dispute, reciprocity and regression’ (Barnes 1990b: 215).",
+          "corpus_chunk": 33142
+        }
+      ],
+      "annotation": "Explains Sextus’s modes, their historical attribution, and the interpretation of the skeptical challenge."
+    },
+    {
+      "key": "comesana-klein2026",
+      "used_for": [
+        "A dispute about a receipt",
+        "The word basic does not answer the challenge",
+        "Make the skeptical premises visible",
+        "Infinitism's response: reasons need not arrive all at once",
+        "Different questions about standards",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "There are five modes associated with Agrippa, but three of them are the most important: the mode of hypothesis (or unsupported assertion), the mode of circularity (“reciprocal”), and the mode of regression to infinity.",
+          "corpus_chunk": 29462
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Therefore, If a belief is justified, then it is justified in virtue of belonging to an inferential chain.",
+          "corpus_chunk": 29468
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Premise 5 is justified by appeal to the mode of infinite regression, and premise 6 is justified by appeal to the mode of circularity.",
+          "corpus_chunk": 29469
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Third, in virtue of what do experiences justify beliefs?",
+          "corpus_chunk": 29471
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "You may well be justified in believing that there is a tomato in front of you, but only inferentially.",
+          "corpus_chunk": 29472
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "The moderate foundationalist can reply that the traditional foundationalist must undertake a similar risk.",
+          "corpus_chunk": 29473
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Of course, the resolution of this dispute depends on whether, as the moderate believes, we can be mistaken about our own experiences.",
+          "corpus_chunk": 29474
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Infinitism, the claim that infinite evidential chains can provide justification to their members, is the answer to Agrippa’s trilemma that has received the least attention in the literature.",
+          "corpus_chunk": 29481
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Infinitists will then have to respond to many of the same objections that are leveled against coherentism—in particular, they would have to respond to the isolation objection mentioned in the next section.",
+          "corpus_chunk": 29483
+        },
+        {
+          "locator": "§ 6.5",
+          "basis": "full text",
+          "excerpt": "Perhaps the most interesting recent development in relation to Pyrrhonian Skepticism is that more and more epistemologists are arguing that the proper way to reply to Agrippa’s trilemma is to combine some of the positions that, for ease of exposition, we have presented as mutually exclusive.",
+          "corpus_chunk": 29493
+        }
+      ],
+      "annotation": "Reconstructs the skeptical premises and shows which ones foundationalists, infinitists, and hybrid accounts reject."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "The word basic does not answer the challenge",
+        "Read the challenge as a procedure",
+        "Foundationalism's response: distinguish support from further belief",
+        "Different questions about standards",
+        "What the trilemma establishes without extra premises",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A foundationally justified belief (henceforth simply: ‘foundational belief’) is one that does not depend on any other beliefs for its justification.",
+          "corpus_chunk": 41047
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Rightly skeptical, you wonder this time what reason I have for believing that palm lines have anything whatsoever to do with length of life.",
+          "corpus_chunk": 41049
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Against this, the proponent of PIJ might ask us to consider an amendment to the case.",
+          "corpus_chunk": 41050
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If all justification is inferential, then for someone S to be justified in believing some proposition P, S must be in a position to legitimately infer it from some other proposition E1.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And so, if all justification were inferential, no one could be justified in believing anything at all to any extent whatsoever.",
+          "corpus_chunk": 41053
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The epistemic regress argument for foundationalism thus needs an additional premise, though one that all but the most radical skeptics would accept: that epistemic justification is in principle possible for beings like us.",
+          "corpus_chunk": 41055
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A number of philosophers (among them foundationalists) would argue that the second clause of PIJ confuses levels of epistemic questions.",
+          "corpus_chunk": 41056
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Similarly, even though there is in fact a connection between ingesting hemlock and dying, a person who had no reason to believe that ingesting hemlock would bring about death has no justification for believing that someone (who has just ingested hemlock) is about to die.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "There are responses to the charge of vicious regress facing anti-foundationalists.",
+          "corpus_chunk": 41059
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "According to coherentism about epistemic justification, beliefs are justified “holistically” rather than in a linear, piecemeal way.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Some forms of coherentism might complicate our taxonomy.",
+          "corpus_chunk": 41061
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For some further discussion of infinitism and challenges to it, see Klein and Turri (2014).",
+          "corpus_chunk": 41063
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "We noted above that at least many philosophers are convinced that acceptance of classical foundationalism leads inevitably to an unacceptably radical skepticism.",
+          "corpus_chunk": 41095
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This view does not imply that the mere fact that you believe something renders the belief justified, for it may be that your belief is prima facie justified but not ultima facie justified: if you have good reasons to disbelieve P, or good reasons to think that your belief that P is unreliable or untrustworthy, then",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "One of the better counterexamples involves cases in which one forms a belief in a proposition one has no evidence for or against.",
+          "corpus_chunk": 41096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "According to phenomenal conservatism, the justifying state is a “seeming” or “appearance”: if it seems to S that P, then, in the absence of defeaters, S thereby has some degree of justification for believing that P (Huemer 2001, 2007, 2013; Cullison 2010; Tucker 2010; Skene 2013).",
+          "corpus_chunk": 41098
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is worth noting that Pryor himself uses the term “dogmatism” to refer to the view that “justification is sometimes both immediate and underminable” (2013a: 96), and so uses the term in a way that is compatible with the rejection of phenomenal conservatism and dogmatism as these terms are generally understood.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The main motivation for phenomenal conservatism is straightforward.",
+          "corpus_chunk": 41099
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "And if we deny that they are good sources of justification, then how do we avoid skepticism?",
+          "corpus_chunk": 41100
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "According to Bergmann, even acquaintance with truth bearers, truth makers and a correspondence holding between them doesn’t carry with it assurance unless it is accompanied by a justified belief that all these relations obtain.",
+          "corpus_chunk": 41084
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.",
+          "corpus_chunk": 41085
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.",
+          "corpus_chunk": 41088
+        }
+      ],
+      "annotation": "Separates the regress arguments, classical and modest foundations, and objections to non-inferential support."
+    },
+    {
+      "key": "patrick1899",
+      "used_for": [
+        "Read the challenge as a procedure",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Outlines I.174",
+          "basis": "full text",
+          "excerpt": "If it is absurd to assume the thing questioned, it is also absurd to assume that upon which it rests.",
+          "corpus_chunk": 8288
+        },
+        {
+          "locator": "Outlines I.164–177",
+          "basis": "full text",
+          "excerpt": "The one 165 based upon contradiction is the one from which we find, that in reference to the thing put before us for investigation, a position has been developed which is impossible to be judged, either practically, or theoretically, and therefore, as we are not able to either accept or reject anything, we end in",
+          "corpus_chunk": 8284
+        },
+        {
+          "locator": "Outlines I.164–177",
+          "basis": "full text",
+          "excerpt": "The one based upon relation, as we have 167 said before, is that one in which the object appears of this kind or that kind, as related to the judge and to the things regarded together with it, but we suspend our judgment as to what it is in reality.",
+          "corpus_chunk": 8285
+        },
+        {
+          "locator": "Outlines I.164–177",
+          "basis": "full text",
+          "excerpt": "Now we shall briefly show that it is possible to refer every thing under investigation to one or another of these Tropes, as follows: the thing before us is either sensible or intellectual; difference of opinion exists, however, as to what it is in itself, for some say that only the things of sense 170 are true,",
+          "corpus_chunk": 8286
+        },
+        {
+          "locator": "Outlines I.164–177",
+          "basis": "full text",
+          "excerpt": "For 171 example, the sensible, for we shall limit the argument first to this--Is it to be judged by sensible or by intellectual standards?",
+          "corpus_chunk": 8286
+        },
+        {
+          "locator": "Outlines I.174",
+          "basis": "full text",
+          "excerpt": "If, however, in order to escape 173 from this, the one who is speaking to us expects us to take something for granted which has not been proved, in order to prove what follows, the hypothetical Trope is introduced, which provides no way of escape.",
+          "corpus_chunk": 8288
+        }
+      ],
+      "annotation": "Contains a public-domain translation of the first book of Sextus’s Outlines; the quoted passage comes from the translation, not Patrick’s commentary."
+    },
+    {
+      "key": "olsson2025",
+      "used_for": [
+        "Coherentism's response: question the transmission model",
+        "What the trilemma establishes without extra premises",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The coherentist might be thought to propose that nothing prevents the regress from proceeding in a circle.",
+          "corpus_chunk": 40395
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If she did justify \\(A\\) in terms of \\(C\\) nonetheless, her move would lack any justificatory force whatsoever.",
+          "corpus_chunk": 40396
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This is a coherence approach because what makes a belief system justified, on this view, is precisely its coherence.",
+          "corpus_chunk": 40396
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Second, the proposal that a singular belief is justified merely in virtue of being a member of a justified totality can be questioned because, plausibly, a belief can be a member of a sufficiently coherent system without in any way adding to the coherence of that system, e.g., if the belief is the only member which",
+          "corpus_chunk": 40398
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This fact raises the question of what status those special beliefs have.",
+          "corpus_chunk": 40399
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "See, for example, Lycan (1988, 2012) and, for a book-length defense of explanatory coherentism, Poston (2014).",
+          "corpus_chunk": 40417
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A more substantial contrasting proposal is that what justifies our beliefs is ultimately the way in which they hang together or dovetail so as to produce a coherent set.",
+          "corpus_chunk": 40388
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since a coherence theory, in its basic form, does not assign any essential role to experience, there is little reason to think that a coherent system of belief will accurately reflect the external world.",
+          "corpus_chunk": 40389
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But this observation, of course, thoroughly undermines any claim suggesting that coherence is indicative of truth.",
+          "corpus_chunk": 40389
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "The coherence theory of justification represents an initially suggestive solution to some deeply rooted problems of epistemology.",
+          "corpus_chunk": 40469
+        }
+      ],
+      "annotation": "Explains holistic justification, competing coherence measures, and the precise limits of claims connecting coherence with truth."
+    },
+    {
+      "key": "inf-epis-iep",
+      "used_for": [
+        "Infinitism's response: reasons need not arrive all at once",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "We often provide reasons for the things we believe in order to justify holding the beliefs.",
+          "corpus_chunk": 43548
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If both (1) and (2) are true, then the chain of reasons for any belief is potentially infinite, that is, potentially unlimited.",
+          "corpus_chunk": 43548
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "On this alternative reading, these coherentists don’t deny (1), because (1) concerns the structure, not the source, of probative reasons.",
+          "corpus_chunk": 43550
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For example, the relevant foundationalist property could be that the belief merely reports the contents of sensations or memories; or it could be that the belief is produced by a reliable cognitive faculty.",
+          "corpus_chunk": 43551
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And once a reason is challenged, then on pain of arbitrariness, a further reason must be produced in order for the challenged reason to serve as a good reason for a belief.",
+          "corpus_chunk": 43552
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As mentioned above, infinitists reject the form of coherentism – sometimes called “linear coherentism” – that endorses question-begging, circular reasoning.",
+          "corpus_chunk": 43553
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Holistic coherentism holds that individual beliefs are justified only in virtue of their membership in a coherent set of beliefs.",
+          "corpus_chunk": 43553
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This is the pattern: There are three possible, non-skeptical solutions to the regress problem: foundationalism, coherentism and infinitism.",
+          "corpus_chunk": 43554
+        }
+      ],
+      "annotation": "Distinguishes an indefinitely available chain from a completed infinite argument and introduces reason-enhanced justification."
+    }
+  ]
+}
