@@ -1,0 +1,811 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "epistemology-in-the-islamic-world",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did falsafa and kalām differ in their approach to knowledge and causation?",
+    "What role did demonstration play in Arabic philosophy's theory of knowledge?",
+    "What is Ibn Sīnā's theory of ḥads, and why is his epistemology called a rationalist empiricism?",
+    "What was the floating man thought experiment meant to show, and how was it received?",
+    "What was al-Ghazālī's skeptical crisis, and how did it end?",
+    "What exactly did al-Ghazālī deny about causation, and on what grounds?",
+    "How did Ibn Rushd reply on causation and on philosophy and religion?",
+    "What is Suhrawardī's knowledge by presence?",
+    "How did these ideas reach Latin Europe?"
+  ],
+  "sources": [
+    {
+      "key": "richardson2025",
+      "used_for": [
+        "Step by step",
+        "How the tradition developed",
+        "Causation: the seventeenth discussion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Falsafa is understood by our authors as an intellectual practice developed in Ancient Greece, which emphasizes the use of rational understanding and demonstration in the pursuit of knowledge (ʿilm).",
+          "corpus_chunk": 38392
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Broadly speaking, Ashʿarite theologians seem to endorse occasionalism, the view that God is the only true cause.",
+          "corpus_chunk": 38390
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "al-Ashʿarī and his followers appealed to divine omnipotence to limit agency to God alone",
+          "corpus_chunk": 38390
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Ibn Rushd (1126–1198), known to English speakers by his Latinized name, Averroes",
+          "corpus_chunk": 38395
+        }
+      ]
+    },
+    {
+      "key": "benahmed-pasnau2025",
+      "used_for": [
+        "Step by step",
+        "How the tradition developed",
+        "Causation: the seventeenth discussion",
+        "Reason and revelation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In line with the approach of his predecessors, Ibn Rushd divided logical processes into five types of argument: demonstrative, dialectical, rhetorical, poetical, and fallacious.",
+          "corpus_chunk": 35066
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The premises of demonstrative arguments are necessary",
+          "corpus_chunk": 35066
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "for it is the only procedure that leads to certainty in philosophy",
+          "corpus_chunk": 35066
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The Incoherence of the Incoherence (Tahāfut al-Tahāfut), a direct response to al-Ghazālī",
+          "corpus_chunk": 35062
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The Decisive Treatise (Faṣl al-Maqāl), an argument for the value of philosophy to Islam",
+          "corpus_chunk": 35062
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Ibn Rushd heaps scorn on this view in the Incoherence, resting his case most fundamentally on the link between a thing’s causal role and its defining nature",
+          "corpus_chunk": 35096
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If a thing did not have its specific nature, it would not have a special name nor a definition, and all things would be one",
+          "corpus_chunk": 35096
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "For truth does not oppose truth, but rather agrees with and bears witness to it",
+          "corpus_chunk": 35118
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "The implicit target of the Decisive Treatise is al-Ghazālī’s notorious fatwa against metaphysics.",
+          "corpus_chunk": 35119
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "To prohibit this path to knowledge from those who are capable of it is an injustice both to God and to these scholars.",
+          "corpus_chunk": 35119
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "but there are other paths, such as the rhetorical and dialectical, that also arrive at this truth",
+          "corpus_chunk": 35121
+        }
+      ]
+    },
+    {
+      "key": "griffel2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Causation: the seventeenth discussion",
+        "Reason and revelation",
+        "How the ideas reached Europe",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "Al-Ashʿarī (873–935), the founder of the theological school that al-Ghazālī belonged to, had rejected the existence of “natures” (tabāʾiʿ) and of causal connections among created beings.",
+          "corpus_chunk": 28544
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "“A [valid] rational demonstration is never wrong”",
+          "corpus_chunk": 28516
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Each teaching must be judged by itself, and if found sound and in accordance with revelation, should be adopted",
+          "corpus_chunk": 28514
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This attitude leads to a widespread application of Aristotelian teachings in al-Ghazālī’s works on Muslim theology and ethics.",
+          "corpus_chunk": 28515
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If demonstration proves something that violates the literal meaning of revelation, the scholar must apply “allegorical interpretation” (taʾwīl) to the outward text",
+          "corpus_chunk": 28517
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The interpretation of passages in revelation, however, whose outward meaning is not disproved by a valid demonstration, is not allowed",
+          "corpus_chunk": 28517
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Al-Ghazālī’s rule for reconciling apparent conflicts between reason and the literal meaning of revelation was widely accepted by almost all later Muslim theologians",
+          "corpus_chunk": 28518
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Ibn Taymiyya flatly denied the possibility of a conflict between reason and revelation",
+          "corpus_chunk": 28518
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Averroes accepted al-Ghazālī’s rule for reconciling conflicts between reason and the outward meaning of revelation but he did not agree with his findings on what can and cannot be demonstrated",
+          "corpus_chunk": 28519
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This work was translated twice into Latin in 1328 and 1526",
+          "corpus_chunk": 28519
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "made al-Ghazālī’s criticism of Aristotelianism known among the Averroists of the Renaissance",
+          "corpus_chunk": 28519
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "No rational argument is more convincing than any of its opposing rational arguments, the Ismāʿīlites claimed, since all rational proofs are mutually equivalent (takāfu’ al-adilla). Only the divinely guided word of the Shiite Imam conveys certainty",
+          "corpus_chunk": 28516
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Sunni theologians argue among each other, he says, because they are largely unfamiliar with the technique of demonstration.",
+          "corpus_chunk": 28516
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Observation (mushāhada) points towards a concomitant occurrence (al-husûl ‘indahu) but not to a combined occurrence (al-huṣūl bihī)",
+          "corpus_chunk": 28553
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "In the First Position of the 17th discussion al-Ghazālī brings the argument that observation cannot prove causal connections.",
+          "corpus_chunk": 28553
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "While such connections cannot be proven through observation (or through any other means), they may or may not exist.",
+          "corpus_chunk": 28554
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "This opening statement is a masterwork of philosophical literature: The connection (iqtirān) between what is habitually believed to be a cause and what is habitually believed to be an effect is not necessary (ḍarūrī), according to us.",
+          "corpus_chunk": 28550
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "(1) the connection between a cause and its effect is not necessary, (2) the effect can come to exist without this particular cause",
+          "corpus_chunk": 28551
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "(3) God creates two events concomitant, side by side, and (4) God’s creation follows a prior decision (taqdīr).",
+          "corpus_chunk": 28551
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Rather we say that the efficient cause (fāʿil) of the combustion through the creation of blackness in the cotton and through causing the separation of its parts and turning it into coal or ashes is God—either through the mediation of the angels or without mediation.",
+          "corpus_chunk": 28556
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Secondary causality is a viable option for al-Ghazālī that he is willing to accept.",
+          "corpus_chunk": 28556
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "The dispute between al-Ghazālī and Avicenna is not about causality as such, rather about the necessary nature of God’s creation.",
+          "corpus_chunk": 28558
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "For Avicenna, fire necessarily causes cotton to combust because the sentence “Fire causes cotton to combust,” was, is, and will always be true.",
+          "corpus_chunk": 28559
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "Avicenna’s view of the modalities follows the statistical model of Aristotle",
+          "corpus_chunk": 28558
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "Ashʿarite kalām developed an understanding that is closer to our modern view of the modalities as referring to synchronic alternative states of affairs.",
+          "corpus_chunk": 28559
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "realizes that all the features of the building, its height, its length, its form, etc., are actualized possibilities and could be different",
+          "corpus_chunk": 28561
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "We can imagine a world where fire does not cause cotton to combust.",
+          "corpus_chunk": 28564
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "We will see that he, like Avicenna, assumes causal connections never were and never will be different from what they are now. Still they are not necessary, he maintains.",
+          "corpus_chunk": 28564
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "God, however, did not choose to create such an alternative possible world",
+          "corpus_chunk": 28565
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "in order to counter Avicenna’s position that the necessary connection between existing causes and effects renders some miracles in the Qur’an impossible",
+          "corpus_chunk": 28566
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "By creating combustion every time fire touches cotton, God follows a certain custom (ʿāda). In real terms, however, combustion occurs only concomitantly when fire touches cotton and is not connected to this event.",
+          "corpus_chunk": 28566
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "When God wishes to perform a miracle and confirm the mission of one of His prophets, he suspends His habit",
+          "corpus_chunk": 28567
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "Here al-Ghazālī accepts the existence of “natures” (ṭabāʾiʿ) and of unchanging connections between causes and their effects.",
+          "corpus_chunk": 28567
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "we are far away from knowing all causes and explaining all processes in nature. It may well be the case that those miracles that the falāsifa deny have immanent natural causes that are unknown to us.",
+          "corpus_chunk": 28568
+        }
+      ]
+    },
+    {
+      "key": "bolyard2025",
+      "used_for": [
+        "Step by step",
+        "How the tradition developed",
+        "Al-Ghazālī's crisis",
+        "How the ideas reached Europe",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "For they could only be rebutted with a proof, and a proof can only be constructed by combining the first [principles of] knowledge.",
+          "corpus_chunk": 35799
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "that in which what is known is laid bare in such a way as to leave no room for doubt, and is unaccompanied by the possibility of error or illusion",
+          "corpus_chunk": 35798
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "First, disagreement among competing theories gives some initial doubt. Second, a few cases of sensory skepticism (e.g., a shadow cast by the sun appearing to remain still, when in fact it is slowly moving as the day passes; the apparently small size of celestial bodies)",
+          "corpus_chunk": 35798
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "reason itself—may be faulty, and he wonders whether even apparent logical truths might be false. And finally, he concludes by invoking dream skepticism.",
+          "corpus_chunk": 35798
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "This disease defied all cure and lasted for almost two months, during which I embraced the [skeptical] creed in actual fact, though not in speech or expression.",
+          "corpus_chunk": 35799
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "The rational necessary beliefs were once again accepted and trusted, both securely and certainly. This did not come about by composing a proof or by an arrangement of words, but rather by a light that God almighty cast into my breast",
+          "corpus_chunk": 35799
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Whoever supposes that enlightenment depends upon explicit proofs has narrowed the expanse of God’s mercy.",
+          "corpus_chunk": 35800
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Al-Ghazali sounds surprisingly Cartesian in an important section of his Munkidh min al-Dalal (Deliverance from Error).",
+          "corpus_chunk": 35798
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "situate Ghazali’s discussion of skepticism within a broader Islamic intellectual conversation about the subject, and downplays the supposed connections between Ghazali and the Early Moderns",
+          "corpus_chunk": 35800
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "This Humean-leaning position has been discussed widely in the secondary literature.",
+          "corpus_chunk": 35800
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Al-Ghazali (Algazel to the Latin-speaking world) (ca. 1058–1111)",
+          "corpus_chunk": 35795
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "while the Persian philosophers Rāzī (1149–1210) and Ṭūsī (1201–1274) are not skeptics, their concerns with global skepticism and the knowledge of first principles lead them to have extended discussions of skeptical arguments",
+          "corpus_chunk": 35795
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Al-Haytham (= Alhazen) (965–1039)",
+          "corpus_chunk": 35795
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "Al-Haytham held that many perceptions are inferential",
+          "corpus_chunk": 35796
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "we sometimes grasp them through sudden, “imperceptible” inferences",
+          "corpus_chunk": 35796
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "Al-Haytham even argues that seemingly self-evident propositions such as “the whole is greater than its [proper] part” are inferential.",
+          "corpus_chunk": 35796
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "the way the moon when low on the horizon appears larger than it does when higher in the sky",
+          "corpus_chunk": 35797
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "it widely read in the Latin West under the title Perspectiva or De aspectibus",
+          "corpus_chunk": 35796
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "His views about the perceptual process had a wide influence throughout the later Middle Ages.",
+          "corpus_chunk": 35796
+        }
+      ]
+    },
+    {
+      "key": "marcotte2025",
+      "used_for": [
+        "Step by step",
+        "How the tradition developed",
+        "Ibn Sīnā: knowledge as hitting the middle term",
+        "Knowledge by presence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Shihab al-Din al-Suhrawardi (1154–1191) has become the eponym of an ‘Illuminationist’ (ishraqi) philosophical tradition",
+          "corpus_chunk": 6554
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "the concepts of ‘self-awareness’ (shu‘ur bi-l-dhat) and ‘knowledge by presence’ (‘ilm huduri)",
+          "corpus_chunk": 6596
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "He begins by exploring and questioning some of the issues raised by the hypothetical thought experiment of the ‘flying’ or ‘suspended’ person",
+          "corpus_chunk": 6596
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "he criticizes and then rejects Avicenna’s Peripatetic ‘representational’ epistemology that conceives acquisition of knowledge by means of a ‘representation’ or a ‘form’ of what is known in the knower",
+          "corpus_chunk": 6596
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "a type of knowledge that is self-evident, innate and unmediated through any type of abstraction or representation of forms",
+          "corpus_chunk": 6598
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The perception of pain becomes paradigmatic of the type of apperception or awareness he envisions when discussion self- awareness as unmediated perception, i.e., a non-discursive, non-conceptual and non-propositional type of knowledge",
+          "corpus_chunk": 6598
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "a pre-cognitive level of self-consciousness or self-awareness, logically prior to any distinction between subject and object",
+          "corpus_chunk": 6599
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "as an alternative — albeit more reliable — foundation of certainty",
+          "corpus_chunk": 6603
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "it is clear that it is impossible for a human being to construct an essential definition in the way the Peripatetics require",
+          "corpus_chunk": 6580
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Now, only direct experience guarantees acquisition of true knowledge",
+          "corpus_chunk": 6582
+        }
+      ]
+    },
+    {
+      "key": "ivry2012",
+      "used_for": [
+        "Common confusions",
+        "Ibn Sīnā: knowledge as hitting the middle term",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "conceiving of a person suspended in air in total isolation from any physical or sensory experience",
+          "corpus_chunk": 30517
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The purport of this experiment is to show the ability of a person to deduce the soul's existence intellectually, without assistance from the sensory or imaginative, material faculties of the soul.",
+          "corpus_chunk": 30517
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "For Avicenna this proves that the soul is an independent intelligent substance, both prior to involvement with the world, and afterwards, when the corporeal organs that service the soul perish.",
+          "corpus_chunk": 30518
+        }
+      ]
+    },
+    {
+      "key": "adamson2024",
+      "used_for": [
+        "How the tradition developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Al-Kindi (ca. 800–870 CE) was the first self-identified philosopher in the Arabic tradition.",
+          "corpus_chunk": 37836
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Al-Kindi’s own treatises, many of them epistles addressed to members of the caliphal family, depended heavily on these translations",
+          "corpus_chunk": 37836
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Al-Kindi’s philosophical activities centered around the translation movement that had been initiated and supported by the ‘Abbasid caliphs",
+          "corpus_chunk": 37837
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "We must not be ashamed to admire the truth or to acquire it, from wherever it comes. Even if it should come from far-flung nations and foreign peoples, there is for the student of truth nothing more important than the truth, nor is the truth demeaned or diminished by the one who states or conveys it",
+          "corpus_chunk": 37847
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "al-Kindi unleashes a torrent of abuse against unnamed contemporaries who criticize the use of Greek ideas",
+          "corpus_chunk": 37847
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Interestingly he is more willing to recognize shortcomings on the part of Greek scientific thinkers, for instance in Euclid’s optics",
+          "corpus_chunk": 37847
+        }
+      ]
+    },
+    {
+      "key": "druart2024",
+      "used_for": [
+        "How the tradition developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Abū Naṣr al-Fārābī was probably born in 870 CE (AH 257)",
+          "corpus_chunk": 37781
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "died in Damascus in December 950 CE or January 951 CE (AH 339)",
+          "corpus_chunk": 37781
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Scholars interested in political philosophy have highlighted the distinctions al-Fārābī makes between (1) demonstrative discourse",
+          "corpus_chunk": 37791
+        }
+      ]
+    },
+    {
+      "key": "gutas2025",
+      "used_for": [
+        "How the tradition developed",
+        "Ibn Sīnā: knowledge as hitting the middle term",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(ca. 970–1037) was the preeminent philosopher and physician of the Islamic world",
+          "corpus_chunk": 30662
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "it represents the culmination of the Hellenic tradition, defunct in Greek after the sixth century, reborn in Arabic in the 9th",
+          "corpus_chunk": 30662
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "literally translated in the Arabic version as ḥads (guessing correctly, hitting correctly upon the answer), and made it the cornerstone of his epistemology",
+          "corpus_chunk": 30706
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "it explained why people differ in their ability to apply this syllogistic method by presupposing that they possess a varying talent for it",
+          "corpus_chunk": 30707
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "on a human level and in history it is evolutionary. Each philosopher, through his own syllogistic reasoning and ability to hit correctly upon the middle terms, modifies and completes the work of his predecessors",
+          "corpus_chunk": 30713
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "but he never claimed to have exhausted it all; in his later works he bemoaned the limitations of human knowledge",
+          "corpus_chunk": 30713
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "the senses are the means by which the human soul acquires different kinds of knowledge (maʿārif )",
+          "corpus_chunk": 30715
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "is itself actualized by the experience of particulars",
+          "corpus_chunk": 30715
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "For human knowledge, therefore, the intellect functions as a processor of the information provided by the external and internal senses.",
+          "corpus_chunk": 30715
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Instead, it must proceed to them from their perceived effects.",
+          "corpus_chunk": 30716
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Avicenna’s rationalist empiricism",
+          "corpus_chunk": 30717
+        }
+      ]
+    },
+    {
+      "key": "hasse2025",
+      "used_for": [
+        "How the tradition developed",
+        "Ibn Sīnā: knowledge as hitting the middle term",
+        "How the ideas reached Europe",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Also influential was Avicenna’s definition of the soul as a separate substance (Hasse 2008) and his thought experiment of the “Flying Man”",
+          "corpus_chunk": 40130
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The Arabic-Latin translation movements in the Middle Ages, which paralleled that from Greek into Latin, led to the transformation of almost all philosophical disciplines in the medieval Latin world.",
+          "corpus_chunk": 40091
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "assumed full pace in Toledo in the second half of the twelfth century",
+          "corpus_chunk": 40094
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In 1255, the statutes of the Parisian arts faculty declared all known works of Aristotle mandatory reading for the students – a very influential move, which much contributed to the rise of Averroes’ commentaries as the principal secondary literature of Latin university culture.",
+          "corpus_chunk": 40096
+        }
+      ]
+    },
+    {
+      "key": "rizvi2021",
+      "used_for": [
+        "How the tradition developed",
+        "What the chapter simplifies"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Yahya Qawami Shirazi (ca. 1571–1636) is arguably the most significant Islamic philosopher after Avicenna.",
+          "corpus_chunk": 28035
+        }
+      ]
+    },
+    {
+      "key": "ghazali1909",
+      "used_for": [
+        "Al-Ghazālī's crisis",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 16–17",
+          "basis": "full text",
+          "excerpt": "Then I reflected in myself : “ Since I cannot trust to the evidence of my senses, I must rely only on intellectual notions based on fundamental principles",
+          "corpus_chunk": 22281
+        },
+        {
+          "locator": "p. 17",
+          "basis": "full text",
+          "excerpt": "Who can guarantee you that you can trust to the evidence of reason more than to that of the senses ? You believed in our testimony till it was contradicted by the verdict of reason",
+          "corpus_chunk": 22282
+        },
+        {
+          "locator": "p. 17",
+          "basis": "full text",
+          "excerpt": "And if such a third arbiter is not yet apparent, it does not follow that he does not exist.",
+          "corpus_chunk": 22282
+        },
+        {
+          "locator": "p. 18",
+          "basis": "full text",
+          "excerpt": "In order to disentangle the knot of this difficulty, a proof was necessary. Now a proof must be based on primary assumptions, and it was precisely these of which I was in doubt.",
+          "corpus_chunk": 22284
+        }
+      ]
+    }
+  ]
+}

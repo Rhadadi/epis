@@ -1,0 +1,464 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "the-early-modern-revolution",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What was Descartes' method of doubt for, and what did he conclude from the cogito?",
+    "What was the \"Way of Ideas\", and who held it?",
+    "Is Descartes' argument viciously circular?",
+    "Is Hume's conclusion about induction psychological or sceptical?",
+    "What is Reid's parity argument against the skeptic?",
+    "What did Kant mean by his Copernican experiment?"
+  ],
+  "sources": [
+    {
+      "key": "newman2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the ideas developed",
+        "The arguments, step by step",
+        "Where the debate stands",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Unlike “the sceptics, who doubt only for the sake of doubting,” Descartes aims “to reach certainty – to cast aside the loose earth and sand so as to come upon rock or clay”",
+          "corpus_chunk": 34446
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Descartes’ methodical innovation is to employ demolition for constructive ends.",
+          "corpus_chunk": 34446
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Descartes thus uses sceptical doubts to test the firmness of candidates put forward for the foundations of knowledge.",
+          "corpus_chunk": 34446
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "I began by taking everything that was doubtful and throwing it out, like sand",
+          "corpus_chunk": 34436
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "from “the very fact that God is not a deceiver” there is a “consequent impossibility of there being any falsity in my opinions which cannot be corrected by some other faculty supplied by God”",
+          "corpus_chunk": 34595
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Arc 1: The conclusion that an all-perfect God exists is derived from premises that are clearly and distinctly perceived.",
+          "corpus_chunk": 34534
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Arc 2: The general veracity of propositions that are clearly and distinctly perceived (i.e., the C&D Rule) is derived from the conclusion that an all-perfect God exists.",
+          "corpus_chunk": 34534
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "The question of interest concerns whether, strictly speaking, these arcs form an epistemic circle.",
+          "corpus_chunk": 34534
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "premises that are accepted only because of having first accepted the general veracity of propositions that are clearly and distinctly perceived",
+          "corpus_chunk": 34535
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "We’ll then consider the main alternative interpretations of that arc by which commentators seek to avoid circularity.",
+          "corpus_chunk": 34535
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "more difficult to get out of than the traditional problem of circularity",
+          "corpus_chunk": 34561
+        }
+      ]
+    },
+    {
+      "key": "descartes1637",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "Read the original",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Part IV",
+          "basis": "full text",
+          "excerpt": "I think, therefore I am (COGITO ERGO SUM), was so certain and of such evidence that no ground of doubt, however extravagant, could be alleged by the sceptics capable of shaking it",
+          "corpus_chunk": 31617
+        },
+        {
+          "locator": "Part IV",
+          "basis": "full text",
+          "excerpt": "But immediately upon this I observed that, whilst I thus wished to think that all was false, it was absolutely necessary that I, who thus thought, should be somewhat",
+          "corpus_chunk": 31617
+        },
+        {
+          "locator": "Part IV",
+          "basis": "full text",
+          "excerpt": "I concluded that I might, without scruple, accept it as the first principle of the philosophy of which I was in search.",
+          "corpus_chunk": 31617
+        },
+        {
+          "locator": "Part IV",
+          "basis": "full text",
+          "excerpt": "a substance whose whole essence or nature consists only in thinking",
+          "corpus_chunk": 31618
+        },
+        {
+          "locator": "Part IV",
+          "basis": "full text",
+          "excerpt": "is wholly distinct from the body",
+          "corpus_chunk": 31618
+        }
+      ]
+    },
+    {
+      "key": "uzgalis2024",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "he cites the conformity of the proposition to our knowledge, observation and experience, and the testimony of others",
+          "corpus_chunk": 29245
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "We should, Locke also suggests, be tolerant of differing opinions as we have more reason to retain the opinions we have than to give them up to strangers or adversaries who may well have some interest in our doing so.",
+          "corpus_chunk": 29245
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Locke’s monumental An Essay Concerning Human Understanding (1689) is one of the first great defenses of modern empiricism",
+          "corpus_chunk": 29161
+        }
+      ]
+    },
+    {
+      "key": "downing-hilbert2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the ideas developed"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "to be is to be perceived (or to perceive)",
+          "corpus_chunk": 34807
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "a mind-independent thing is something whose existence is not dependent on thinking/perceiving things, and thus would exist whether or not any thinking things (minds) existed",
+          "corpus_chunk": 34807
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Berkeley charges that materialism promotes skepticism and atheism",
+          "corpus_chunk": 34807
+        },
+        {
+          "locator": "§ 2.2.2",
+          "basis": "full text",
+          "excerpt": "The same sorts of relativity arguments that were made against secondary qualities can be made against primary ones.",
+          "corpus_chunk": 34827
+        },
+        {
+          "locator": "§ 2.2.2",
+          "basis": "full text",
+          "excerpt": "contends that figure, solidity, motion and rest (the primary qualities) exist in mind-independent material bodies",
+          "corpus_chunk": 34827
+        },
+        {
+          "locator": "§ 2.2.2",
+          "basis": "full text",
+          "excerpt": "the primary/secondary quality distinction associated with mechanism and, again, locatable in the thought of Descartes and Locke",
+          "corpus_chunk": 34827
+        }
+      ]
+    },
+    {
+      "key": "qu-radcliffe2026",
+      "used_for": [
+        "Step by step",
+        "The arguments, step by step",
+        "Where the debate stands",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "any probable argument in support of the Uniformity Principle would itself have to presuppose the Uniformity Principle, rendering it circular",
+          "corpus_chunk": 28780
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Hume concludes that the Uniformity Principle is not founded on reason",
+          "corpus_chunk": 28780
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "our inductive propensities are due to “custom or habit,”",
+          "corpus_chunk": 28780
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "There is considerable debate regarding whether Hume’s argument that induction is not founded on reasoning establishes a psychological fact—that is, that reason does not cause the mind to take a crucial inductive step—or a sceptical one—that is, that reason cannot justify our inductive inferences.",
+          "corpus_chunk": 28780
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "then its negation would be inconceivable",
+          "corpus_chunk": 28779
+        }
+      ]
+    },
+    {
+      "key": "nichols-yaffe2023",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "The arguments, step by step",
+        "Where the debate stands",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Its principle commitment is to mental representations, called ‘ideas’ or ‘images’, that are believed to mediate all our experience of the world",
+          "corpus_chunk": 28293
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The model of conception received from the Way of Ideas marks its first long step into two types of skepticism.",
+          "corpus_chunk": 28293
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "my perceptual mental state is not about the pillow but rather it is about my idea or mental representation of the pillow",
+          "corpus_chunk": 28314
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "is explicitly endorsed by Descartes, Locke, Berkeley, Hume and many other Early Modern philosophers, as well as many living philosophers",
+          "corpus_chunk": 28314
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "they came both out of the same shop, and were made by the same artist",
+          "corpus_chunk": 28360
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Why, sir, should I believe the faculty of reason more than that of perception?",
+          "corpus_chunk": 28360
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Reason, says the sceptic, is the only judge of truth, and you ought to throw off every opinion and every belief that is not grounded on reason.",
+          "corpus_chunk": 28360
+        }
+      ]
+    },
+    {
+      "key": "kant1787",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "Read the original",
+        "What the chapter simplifies"
+      ],
+      "evidence": [
+        {
+          "locator": "Preface to the second edition",
+          "basis": "full text",
+          "excerpt": "It has hitherto been assumed that our cognition must conform to the objects",
+          "corpus_chunk": 9281
+        },
+        {
+          "locator": "Preface to the second edition",
+          "basis": "full text",
+          "excerpt": "Let us then make the experiment whether we may not be more successful in metaphysics, if we assume that the objects must conform to our cognition.",
+          "corpus_chunk": 9281
+        },
+        {
+          "locator": "Preface to the second edition",
+          "basis": "full text",
+          "excerpt": "tried the experiment of assuming that the spectator revolved, while the stars remained at rest",
+          "corpus_chunk": 9282
+        }
+      ]
+    },
+    {
+      "key": "hume1748",
+      "used_for": [
+        "Common confusions",
+        "How the ideas developed",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "XII.ii",
+          "basis": "full text",
+          "excerpt": "Nature is always too strong for principle.",
+          "corpus_chunk": 7051
+        },
+        {
+          "locator": "XII.iii",
+          "basis": "full text",
+          "excerpt": "There is, indeed, a more _mitigated_ scepticism or _academical_ philosophy, which may be both durable and useful",
+          "corpus_chunk": 7053
+        },
+        {
+          "locator": "XII.iii",
+          "basis": "full text",
+          "excerpt": "The greater part of mankind are naturally apt to be affirmative and dogmatical in their opinions; and while they see objects only on one side",
+          "corpus_chunk": 7053
+        }
+      ]
+    },
+    {
+      "key": "bacon1620",
+      "used_for": [
+        "How the ideas developed"
+      ],
+      "evidence": [
+        {
+          "locator": "I.39",
+          "basis": "full text",
+          "excerpt": "Four species of idols beset the human mind",
+          "corpus_chunk": 31748
+        }
+      ]
+    },
+    {
+      "key": "look2020",
+      "used_for": [
+        "How the ideas developed"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the New Essays Concerning Human Understanding (finished in 1704 but not published until 1765)",
+          "corpus_chunk": 29029
+        }
+      ]
+    },
+    {
+      "key": "leibniz1765",
+      "used_for": [
+        "How the ideas developed",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "Preface",
+          "basis": "full text",
+          "excerpt": "should indicate the figure of Hercules rather than other fig- ures, this block would be more determined thereto",
+          "corpus_chunk": 22512
+        },
+        {
+          "locator": "Preface",
+          "basis": "full text",
+          "excerpt": "although it would be needful to labor to discover these veins",
+          "corpus_chunk": 22512
+        },
+        {
+          "locator": "Preface",
+          "basis": "full text",
+          "excerpt": "Thus it is that ideas and truths are for us innate, as inclinations, dispositions, habits, or natural potentialities, and not as actions",
+          "corpus_chunk": 22512
+        }
+      ]
+    },
+    {
+      "key": "berkeley1710",
+      "used_for": [
+        "How the ideas developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "A Treatise Concerning the Principles of Human Knowledge by George Berkeley",
+          "corpus_chunk": 31182
+        }
+      ]
+    },
+    {
+      "key": "hume1739",
+      "used_for": [
+        "How the ideas developed"
+      ],
+      "evidence": [
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "An opinion, therefore, or belief may be most accurately defined, a lively idea related to or associated with a present impression.",
+          "corpus_chunk": 17732
+        }
+      ]
+    },
+    {
+      "key": "reid1764",
+      "used_for": [
+        "How the ideas developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "title page",
+          "basis": "full text",
+          "excerpt": "INTO THE HUMAN MIND, ON THE PRINCIPLES OF COMMON SENSE",
+          "corpus_chunk": 21561
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "ancient-greece",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did Socrates, Plato and Aristotle distinguish knowledge from true belief?",
+    "What are the three definitions of knowledge in the Theaetetus, and why do they fail?",
+    "How did Aristotle answer the regress argument against scientific knowledge?",
+    "How did the Stoics and the Academic skeptics argue about the cognitive impression?",
+    "Did the Pyrrhonists hold that nothing can be known?"
+  ],
+  "sources": [
+    {
+      "key": "parry2024",
+      "used_for": [
+        "Why this section is hard",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "There is an intimate positive relationship between epistêmê and technê, as well as a fundamental contrast.",
+          "corpus_chunk": 30565
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "In the Republic this knowledge is the indispensable basis for the philosophers’ craft of ruling in the city.",
+          "corpus_chunk": 30564
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "the Stoics develop the idea that virtue is a kind of technê or craft of life, one that is based on an understanding of the universe",
+          "corpus_chunk": 30565
+        }
+      ]
+    },
+    {
+      "key": "plato-apology",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the ideas developed",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "21d",
+          "basis": "full text",
+          "excerpt": "for he knows nothing, and thinks that he knows; I neither know nor think that I know",
+          "corpus_chunk": 31489
+        },
+        {
+          "locator": "21b–c",
+          "basis": "full text",
+          "excerpt": "I reflected that if I could only find a man wiser than myself, then I might go to the god with a refutation in my hand.",
+          "corpus_chunk": 31488
+        }
+      ]
+    },
+    {
+      "key": "plato-meno",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "Read the original",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "97d–98a",
+          "basis": "full text",
+          "excerpt": "they will play truant and run away",
+          "corpus_chunk": 19565
+        },
+        {
+          "locator": "97d–98a",
+          "basis": "full text",
+          "excerpt": "Now this is an illustration of the nature of true opinions: while they abide with us they are beautiful and fruitful, but they run away out of the human soul, and do not remain long, and therefore they are not of much value until they are fastened by the tie of the cause; and this fastening of them, friend Meno, is recollection, as you and I have agreed to call it. But when they are bound, in the first place, they have the nature of knowledge; and, in the second place, they are abiding.",
+          "corpus_chunk": 19566
+        }
+      ]
+    },
+    {
+      "key": "chappell-verde2025",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the ideas developed",
+        "Read the original",
+        "Where the debate stands",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Theaetetus proposes a second definition of knowledge: (D2) “Knowledge is true belief (orthê doxa).”",
+          "corpus_chunk": 36345
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "He dismisses D2 just by arguing that accidental true beliefs cannot be called knowledge, giving Athenian jurymen as an example of accidental true belief.",
+          "corpus_chunk": 36345
+        },
+        {
+          "locator": "§ 7.6",
+          "basis": "full text",
+          "excerpt": "A skilled lawyer can bring jurymen into a state of true belief without bringing them into a state of knowledge; so knowledge and true belief are different states.",
+          "corpus_chunk": 36437
+        },
+        {
+          "locator": "§ 7.6",
+          "basis": "full text",
+          "excerpt": "The jury argument seems to be a counter-example not only to D2 but also to D3",
+          "corpus_chunk": 36437
+        },
+        {
+          "locator": "§ 7.6",
+          "basis": "full text",
+          "excerpt": "Plato seems to offer two incompatible explanations of why the jury don’t know: first that they have only a limited time to hear the arguments (201b3, 172e1); and second that their judgement is second-hand (201b9)",
+          "corpus_chunk": 36437
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "as we might expect if Plato is not even trying to offer an acceptable definition of knowledge, but is rather undermining unacceptable definitions",
+          "corpus_chunk": 36438
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "One crucial question about Theaetetus 201–210 is the question whether the argument is concerned with objectual or propositional knowledge. This is a basic and central division among interpretations of the whole",
+          "corpus_chunk": 36438
+        }
+      ]
+    },
+    {
+      "key": "smith2022",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "The arguments, step by step",
+        "Where the debate stands",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Whatever is scientifically known must be demonstrated.",
+          "corpus_chunk": 33956
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Either this process continues forever, creating an infinite regress of premises, or it comes to a stop at some point.",
+          "corpus_chunk": 33956
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "If it continues forever, then there are no first premises from which the subsequent ones are demonstrated, and so nothing is demonstrated.",
+          "corpus_chunk": 33956
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "On the other hand, if it comes to a stop at some point, then the premises at which it comes to a stop are undemonstrated and therefore not scientifically known",
+          "corpus_chunk": 33956
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "circular demonstration gives us a regress that is both unending (in the sense that we never reach premises at which it comes to a stop) and finite (because it works its way round the finite circle of premises)",
+          "corpus_chunk": 33958
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Some modern interpreters have compared this position to a coherence theory of knowledge.",
+          "corpus_chunk": 33958
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "(and indeed every premise prior and posterior to itself)",
+          "corpus_chunk": 33959
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "there is another form of knowledge possible for the first premises, and this provides the starting points for demonstrations",
+          "corpus_chunk": 33959
+        },
+        {
+          "locator": "§ 6.4",
+          "basis": "full text",
+          "excerpt": "another cognitive state, nous (translated variously as “insight”, “intuition”, “intelligence”), which knows them",
+          "corpus_chunk": 33961
+        },
+        {
+          "locator": "§ 6.4",
+          "basis": "full text",
+          "excerpt": "Posterior Analytics II.19, long regarded as a difficult text to interpret",
+          "corpus_chunk": 33961
+        }
+      ]
+    },
+    {
+      "key": "brittain-osorio2026",
+      "used_for": [
+        "Step by step",
+        "How the ideas developed",
+        "The arguments, step by step",
+        "The positions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Zeno defined a cognitive impression as one that comes from what is, is stamped and impressed exactly in accordance with it, and is such that it could not be false",
+          "corpus_chunk": 33843
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "So, there are no cognitive impressions.",
+          "corpus_chunk": 33846
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "since for Zeno knowledge itself depends on assent to cognitive impressions, this argument leads to the further conclusion that nothing can be known",
+          "corpus_chunk": 33847
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "it is always possible to have a false impression with exactly the same propositional content and representational character as a true one",
+          "corpus_chunk": 33845
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "therefore, it is irrational to assent to any impressions at all",
+          "corpus_chunk": 33847
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "the conclusion doesn’t follow unless it is true that there are impressions, that some are true, that there are no other routes to cognition, that the Stoic definition of cognition gives necessary and sufficient conditions for knowledge",
+          "corpus_chunk": 33850
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "And there is reason to doubt Cicero’s testimony that Arcesilaus subscribed to these Stoic views",
+          "corpus_chunk": 33850
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "a so-called practical criterion, i.e., a theory that makes action without assent possible",
+          "corpus_chunk": 33869
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "action is impossible without assent",
+          "corpus_chunk": 33869
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "responds to two Stoic objections of ‘inaction’ (apraxia)",
+          "corpus_chunk": 33869
+        }
+      ]
+    },
+    {
+      "key": "morison2026",
+      "used_for": [
+        "Common confusions",
+        "How the ideas developed",
+        "The positions",
+        "Where the debate stands",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Myles Burnyeat denies that the Skeptic will achieve tranquillity",
+          "corpus_chunk": 36749
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "who ‘are still investigating’, with other, dogmatic, skeptics",
+          "corpus_chunk": 36749
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A Skeptic must become a global skeptic, and not just a local one.",
+          "corpus_chunk": 36749
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Sextus Empiricus was a Pyrrhonian Skeptic living probably in the second or third century CE",
+          "corpus_chunk": 36724
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "the best and fullest account we have of Pyrrhonian skepticism",
+          "corpus_chunk": 36724
+        }
+      ]
+    },
+    {
+      "key": "bonazzi2024",
+      "used_for": [
+        "Common confusions",
+        "How the ideas developed",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "His famous thesis according to which “man is the measure of all things” has been interpreted as a first stance in favour of relativism",
+          "corpus_chunk": 36475
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "His teaching had a practical and concrete goal, and many of the surviving testimonies and fragments suggest that it was mainly devoted to the development of argumentative techniques.",
+          "corpus_chunk": 36475
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "it is also unclear the relation between his teachings and the apparent relativism of his famous thesis that the man is the measure of all things",
+          "corpus_chunk": 36487
+        }
+      ]
+    },
+    {
+      "key": "nails-monoson2025",
+      "used_for": [
+        "How the ideas developed"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(469–399 B",
+          "corpus_chunk": 36857
+        }
+      ]
+    },
+    {
+      "key": "allen2024",
+      "used_for": [
+        "How the ideas developed",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Carneades (214–129/8 BCE) was a member and eventually scholarch or head of the Academy",
+          "corpus_chunk": 34358
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "defended a form of probabilism in epistemology",
+          "corpus_chunk": 34358
+        }
+      ]
+    },
+    {
+      "key": "comesana-klein2026",
+      "used_for": [
+        "How the ideas developed",
+        "What the chapter simplifies"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "There are five modes associated with Agrippa, but three of them are the most important: the mode of hypothesis (or unsupported assertion), the mode of circularity (“reciprocal”), and the mode of regression to infinity.",
+          "corpus_chunk": 29545
+        }
+      ]
+    },
+    {
+      "key": "plato-theaetetus",
+      "used_for": [
+        "Read the original",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "201b–c",
+          "basis": "full text",
+          "excerpt": "When, therefore, judges are justly persuaded about matters which you can know only by seeing them, and not in any other way, and when thus judging of them from report they attain a true opinion about them, they judge without knowledge, and yet are rightly persuaded, if they have judged well.",
+          "corpus_chunk": 12267
+        },
+        {
+          "locator": "201a",
+          "basis": "full text",
+          "excerpt": "persuade men by their art and make them think whatever they like, but they do not teach them",
+          "corpus_chunk": 12266
+        }
+      ]
+    },
+    {
+      "key": "vogt2026",
+      "used_for": [
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The Greek word skepsis means investigation. Literally, a “skeptic” is an inquirer.",
+          "corpus_chunk": 1
+        }
+      ]
+    }
+  ]
+}

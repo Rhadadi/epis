@@ -1,0 +1,286 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "the-nineteenth-century",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did Mill and Whewell disagree about induction?",
+    "What are colligation and consilience?",
+    "What did Peirce's fallibilism amount to, and how did it differ from skepticism?",
+    "What are the phases of Dewey's pattern of inquiry?",
+    "How is Mill's argument for freedom of speech structured?",
+    "What did James mean by calling truth a species of the good?",
+    "What is Comte's law of the three stages?"
+  ],
+  "sources": [
+    {
+      "key": "macleod2020",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "in cases of mathematics and geometry, for instance—we must, at some level, be reasoning inductively",
+          "corpus_chunk": 27923
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "He was a naturalist, a utilitarian, and a liberal, whose work explores the consequences of a thoroughgoing empiricist outlook.",
+          "corpus_chunk": 27901
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "there is reason to think that A is an indispensable part of the cause of a",
+          "corpus_chunk": 27934
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "a kind of philosophic text-book of a single truth",
+          "corpus_chunk": 28006
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "perhaps belies the fact that there are many distinct arguments and conclusions drawn throughout the text",
+          "corpus_chunk": 28006
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "The chapter takes the form of a proof from the exhaustion of cases.",
+          "corpus_chunk": 28007
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "P must be either: (i) true, (ii) false, or (iii) partially true",
+          "corpus_chunk": 28007
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "Whichever is the case, he argues, P’s assertion will be useful for discovering and maintaining the truth",
+          "corpus_chunk": 28007
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "Without active defence of a truth, we risk losing sense of its real meaning, with genuine knowledge becoming reduced to “phrases retained by rote”",
+          "corpus_chunk": 28009
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "it will be held as a dead dogma, not a living truth",
+          "corpus_chunk": 28009
+        }
+      ]
+    },
+    {
+      "key": "snyder2023",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Colligation, according to Whewell, is the mental operation of bringing together a number of empirical facts by “superinducing” upon them a conception which unites the facts",
+          "corpus_chunk": 37374
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Thus the known points of the Martian orbit were colligated by Kepler using the conception of an elliptical curve.",
+          "corpus_chunk": 37375
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Whewell called this type of evidence a “jumping together” or “consilience” of inductions. An induction, which results from the colligation of one class of facts, is found also to colligate successfully facts belonging to another class.",
+          "corpus_chunk": 37390
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "causing an interesting and fruitful debate between them over the nature of inductive reasoning",
+          "corpus_chunk": 37362
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "are “supplied by the mind itself”—they are not (as Mill and Herschel protested) merely received from our observations of the world",
+          "corpus_chunk": 37367
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Whewell’s view of induction has the advantage over Mill’s of allowing the inference to unobservable properties and entities",
+          "corpus_chunk": 37385
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Whewell invented the English word “scientist;” before this time the only terms in use in that language were “natural philosopher” and “man of science”",
+          "corpus_chunk": 37361
+        }
+      ]
+    },
+    {
+      "key": "burch2024",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "at any temporal point in the process of scientific inquiry we are only at a provisional stage of it",
+          "corpus_chunk": 27665
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "he is far from being an epistemological pessimist or sceptic",
+          "corpus_chunk": 27665
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "one his most important dicta, which he called his first principle of reason, is “Do not block the way of inquiry!”",
+          "corpus_chunk": 27666
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "three phases or stages: abduction (making conjectures or creating hypotheses), deduction (inferring what should be the case if the hypotheses are the case), and induction (the testing of hypotheses)",
+          "corpus_chunk": 27666
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "must have some sort of experiential “cash value,”",
+          "corpus_chunk": 27654
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "the entire meaning of a meaningful conception consisted in the totality of such specifications of possible observations",
+          "corpus_chunk": 27654
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Peirce was not a simple operationalist in his philosophy of science",
+          "corpus_chunk": 27654
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "he believed in the reality of abstractions",
+          "corpus_chunk": 27654
+        }
+      ]
+    },
+    {
+      "key": "hildebrand2026",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "inquiry begins (1) with a feeling of something amiss",
+          "corpus_chunk": 35474
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "(2) a problem must be specifically formulated; note that problems do not preexist inquiry, as typically assumed",
+          "corpus_chunk": 35474
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "(3) a hypothesis is constructed",
+          "corpus_chunk": 35474
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "(4) one reasons through the meanings involved in the hypothesis",
+          "corpus_chunk": 35475
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "(5) acting to evaluate and test the hypothesis",
+          "corpus_chunk": 35475
+        }
+      ]
+    },
+    {
+      "key": "goodman2024",
+      "used_for": [
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "Truth, James holds, is “a species of the good,” like health.",
+          "corpus_chunk": 30974
+        },
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "Truths are goods because we can “ride” on them into the future without being unpleasantly surprised.",
+          "corpus_chunk": 30974
+        },
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "he recognizes “resisting factors in every experience of truth-making” (P 117), including not only our present sensations or experiences but the whole body of our prior beliefs",
+          "corpus_chunk": 30976
+        }
+      ]
+    },
+    {
+      "key": "bourdeau2026",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "humanity passes through three successive stages: the theological, the metaphysical, and the positive. The first is the necessary starting point for the human mind; the last, its normal state",
+          "corpus_chunk": 34054
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Comtean positivism was taken over by neo-positivism in philosophy of science",
+          "corpus_chunk": 34030
+        }
+      ]
+    }
+  ]
+}

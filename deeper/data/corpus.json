@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 114 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 255 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -1120,6 +1120,1400 @@
    "source": "Internet Archive",
    "url": "https://archive.org/download/in.ernet.dli.2015.106793/2015.106793.Wisdom-Of-The-East-The-Alchemy-Of-Happiness_djvu.txt",
    "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Plato on Knowledge in the Theaetetus",
+   "authors": "Chappell, Sophie-Grace; Francesco Verde",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/plato-theaetetus/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Xenophanes",
+   "authors": "Lesher, James",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/xenophanes/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Protagoras",
+   "authors": "Bonazzi, Mauro",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/protagoras/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Parmenides",
+   "authors": "Palmer, John",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/parmenides/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Heraclitus",
+   "authors": "Graham, Daniel W.",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/heraclitus/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Socrates",
+   "authors": "Nails, Debra; S. Sara Monoson",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/socrates/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epicurus",
+   "authors": "Konstan, David",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/epicurus/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Stoicism",
+   "authors": "Durand, Marion, Simon Shogry,; Dirk Baltzly",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2023/entries/stoicism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Sextus Empiricus",
+   "authors": "Morison, Benjamin",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/sextus-empiricus/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Carneades",
+   "authors": "Allen, James",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/carneades/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Arcesilaus",
+   "authors": "Brittain, Charles; Peter Osorio",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/arcesilaus/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Pyrrho",
+   "authors": "Bett, Richard",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2022 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2022/entries/pyrrho/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Aristotle’s Logic",
+   "authors": "Smith, Robin",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2022 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2022/entries/aristotle-logic/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Augustine of Hippo",
+   "authors": "Tornau, Christian",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/augustine/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Thomas Aquinas",
+   "authors": "Pasnau, Robert",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/aquinas/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "William of Ockham",
+   "authors": "Spade, Paul Vincent, Claude Panaccio,; Jenny Pelletier",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/ockham/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Michel de Montaigne",
+   "authors": "Foglia, Marc; Emiliano Ferrari",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/montaigne/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Medieval Skepticism",
+   "authors": "Bolyard, Charles",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/skepticism-medieval/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Divine Illumination",
+   "authors": "Pasnau, Robert",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/illumination/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Descartes’ Epistemology",
+   "authors": "Newman, Lex",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/descartes-epistemology/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "George Berkeley",
+   "authors": "Downing, Lisa; David Hilbert",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/berkeley/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Immanuel Kant",
+   "authors": "Rohlf, Michael",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/kant/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Rationalism vs. Empiricism",
+   "authors": "Markie, Peter; M. Folescu",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2023/entries/rationalism-empiricism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "William Whewell",
+   "authors": "Snyder, Laura J.",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/whewell/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Auguste Comte",
+   "authors": "Bourdeau, Michel",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/comte/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ludwig Wittgenstein",
+   "authors": "Biletzki, Anat; Anat Matar",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/wittgenstein/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Karl Popper",
+   "authors": "Thornton, Stephen",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/popper/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Thomas Kuhn",
+   "authors": "Bird, Alexander",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/thomas-kuhn/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ibn Rushd [Averroes]",
+   "authors": "Ben Ahmed, Fouad; Robert Pasnau",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/ibn-rushd/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "al-Farabi",
+   "authors": "Druart, Therese-Anne",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/al-farabi/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "al-Kindi",
+   "authors": "Adamson, Peter",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/al-kindi/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "John Dewey",
+   "authors": "Hildebrand, David",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/dewey/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "George Edward Moore",
+   "authors": "Baldwin, Tom",
+   "year": "2010",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2010 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/sum2010/entries/moore/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Nāgārjuna",
+   "authors": "Westerhoff, Jan Christoph",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/nagarjuna/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Mohism",
+   "authors": "Fraser, Chris",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/mohism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Zhuangzi",
+   "authors": "Hansen, Chad",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/zhuangzi/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Xunzi",
+   "authors": "Goldin, Paul R.",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/xunzi/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Republic",
+   "authors": "Plato, 428? BCE-348? BCE",
+   "year": "",
+   "source": "Project Gutenberg",
+   "edition": "translated by Jowett, Benjamin, 1817-1893",
+   "url": "https://www.gutenberg.org/ebooks/1497",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Apology",
+   "authors": "Plato, 428? BCE-348? BCE",
+   "year": "",
+   "source": "Project Gutenberg",
+   "edition": "translated by Jowett, Benjamin, 1817-1893",
+   "url": "https://www.gutenberg.org/ebooks/1656",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+   "authors": "Descartes, René",
+   "year": "",
+   "source": "Project Gutenberg",
+   "edition": "translated by Veitch, John, 1829-1894",
+   "url": "https://www.gutenberg.org/ebooks/59",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "A Treatise Concerning the Principles of Human Knowledge",
+   "authors": "Berkeley, George",
+   "year": "",
+   "source": "Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/4723",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Novum organum",
+   "authors": "Bacon, Francis",
+   "year": "",
+   "source": "Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/45988",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Causation in Arabic and Islamic Thought",
+   "authors": "Richardson, Kara",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/arabic-islamic-causation/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Arabic and Islamic Natural Philosophy and Natural Science",
+   "authors": "McGinnis, Jon",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/arabic-islamic-natural/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Influence of Arabic and Islamic Philosophy on the Latin West",
+   "authors": "Hasse, Dag Nikolaus",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/arabic-islamic-influence/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Nicholas of Autrecourt",
+   "authors": "Thijssen, Hans",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/autrecourt/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Francis Bacon",
+   "authors": "Peltonen, Markku",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/francis-bacon/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "René Descartes",
+   "authors": "Hatfield, Gary",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/descartes/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Experimental Philosophy",
+   "authors": "Sytsma, Justin, Kevin Reuter,; Pascale Willemsen",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/experimental-philosophy/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Wilfrid Sellars",
+   "authors": "deVries, Willem; Carl Sachs",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/sellars/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Classical Logic",
+   "authors": "Shapiro, Stewart; Teresa Kouri Kissel",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/logic-classical/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Logical Consequence",
+   "authors": "Beall, Jc, Greg Restall,; Gil Sagi",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/logical-consequence/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Abduction",
+   "authors": "Douven, Igor",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/abduction/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Informal Logic",
+   "authors": "Groarke, Leo",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/logic-informal/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Propositional Logic",
+   "authors": "Franks, Curtis",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/logic-propositional/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Definitions",
+   "authors": "Gupta, Anil; Stephen Mackereth",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2023/entries/definitions/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Vagueness",
+   "authors": "Sorensen, Roy",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/vagueness/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Sorites Paradox",
+   "authors": "Raffman, Diana; Dominic Hyde",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/sorites-paradox/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ambiguity",
+   "authors": "Sennet, Adam",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/ambiguity/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Concepts",
+   "authors": "Margolis, Eric; Stephen Laurence",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2023/entries/concepts/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Thought Experiments",
+   "authors": "Brown, James Robert; Yiftach Fehige",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/thought-experiment/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Reflective Equilibrium",
+   "authors": "Knight, Carl",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/reflective-equilibrium/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Thick Ethical Concepts",
+   "authors": "Väyrynen, Pekka",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/thick-ethical-concepts/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Hume's Moral Philosophy",
+   "authors": "Cohon, Rachel",
+   "year": "2018",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2018 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/fall2018/entries/hume-moral/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Intuition",
+   "authors": "Pust, Joel",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/intuition/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Quotation",
+   "authors": "Cappelen, Herman, Ernest Lepore,; Matthew McKeever",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/quotation/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Reliabilist Epistemology",
+   "authors": "Goldman, Alvin; Bob Beddor",
+   "year": "2021",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2021 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/sum2021/entries/reliabilism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Assertion",
+   "authors": "Pagin, Peter; Neri Marsili",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/assertion/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Foundationalist Theories of Epistemic Justification",
+   "authors": "Hasan, Ali; Richard Fumerton",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2022 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2022/entries/justep-foundational/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Coherentist Theories of Epistemic Justification",
+   "authors": "Olsson, Erik",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/justep-coherence/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Internalist vs. Externalist Conceptions of Epistemic Justification",
+   "authors": "Littlejohn, Clayton",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/justep-intext/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epistemological Problems of Perception",
+   "authors": "Lyons, Jack",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/perception-episprob/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Problem of Perception",
+   "authors": "Crane, Tim; Craig French",
+   "year": "2021",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2021 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/fall2021/entries/perception-problem/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Memory",
+   "authors": "Michaelian, Kourken; John Sutton",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/memory/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Introspection",
+   "authors": "Schwitzgebel, Eric",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/introspection/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Sense Data",
+   "authors": "Hatfield, Gary",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/sense-data/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epistemic Closure",
+   "authors": "Luper, Steven",
+   "year": "2020",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2020 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/sum2020/entries/closure-epistemic/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Other Minds",
+   "authors": "Avramides, Anita",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/other-minds/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Content Externalism and Skepticism",
+   "authors": "Ebbs, Gary",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/skepticism-content-externalism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Language and Testimony in Classical Indian Philosophy",
+   "authors": "Deshpande, Madhav",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/language-india/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Dharmakīrti",
+   "authors": "Tillemans, Tom",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/dharmakiirti/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Gaṅgeśa",
+   "authors": "Phillips, Stephen",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/gangesa/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Śrīharṣa",
+   "authors": "Das, Nilanjan",
+   "year": "2021",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2021 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/win2021/entries/sriharsa/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Jaina Philosophy",
+   "authors": "Gorisse, Marie-Hélène",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/jaina-philosophy/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Logic in Classical Indian Philosophy",
+   "authors": "Gillon, Brendan",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2024/entries/logic-india/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Validity and Soundness",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/val-snd/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Argument",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/argument/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Deductive and Inductive Arguments",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/deductive-inductive-arguments/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epistemic Luck",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/epi-luck/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Infinitism in Epistemology",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/inf-epis/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Evidentialism",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/evidentia/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Phenomenal Conservatism",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/phen-con/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Foundationalism",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/found-ep/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Coherentism in Epistemology",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/coherent/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Reliabilism",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/reliabil/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Problem of Induction",
+   "authors": "Henderson, Leah",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/induction-problem/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Nelson Goodman",
+   "authors": "Cohnitz, Daniel; Marcus Rossberg",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2024/entries/goodman/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Bayes’ Theorem",
+   "authors": "Joyce, James",
+   "year": "2021",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2021 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/fall2021/entries/bayes-theorem/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Confirmation",
+   "authors": "Crupi, Vincenzo",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/confirmation/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Interpretations of Probability",
+   "authors": "Hájek, Alan",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/probability-interpret/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Philosophy of Statistics",
+   "authors": "Romeijn, Jan-Willem",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/statistics/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Dutch Book Arguments",
+   "authors": "Vineberg, Susan",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2022 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2022/entries/dutch-book/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Imre Lakatos",
+   "authors": "Musgrave, Alan; Charles Pigden",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/lakatos/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Paul Feyerabend",
+   "authors": "Oberheim, Eric; John Preston",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/feyerabend/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Underdetermination of Scientific Theory",
+   "authors": "Stanford, Kyle",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/scientific-underdetermination/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Pierre Duhem",
+   "authors": "Ariew, Roger",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/duhem/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Theory and Observation in Science",
+   "authors": "Boyd, Nora Mills; James Bogen",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/science-theory-observation/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Probabilistic Causation",
+   "authors": "Hitchcock, Christopher",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/causation-probabilistic/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Causal Models",
+   "authors": "Hitchcock, Christopher",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2024/entries/causal-models/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Counterfactual Theories of Causation",
+   "authors": "Menzies, Peter; Helen Beebee",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/causation-counterfactual/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Science and Pseudo-Science",
+   "authors": "Hansson, Sven Ove",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/pseudo-science/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Scientific Method",
+   "authors": "Hepburn, Brian; Hanne Andersen",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/scientific-method/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Reproducibility of Scientific Results",
+   "authors": "Fidler, Fiona; John Wilcox",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/scientific-reproducibility/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Coherence Theory of Truth",
+   "authors": "Young, James O.",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2026/entries/truth-coherence/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Pragmatic Theory of Truth",
+   "authors": "Capps, John",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/truth-pragmatic/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Deflationism About Truth",
+   "authors": "Armour-Garb, Bradley, Daniel Stoljar,; James Woodbridge",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/truth-deflationary/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Liar Paradox",
+   "authors": "Beall, Jc, Michael Glanzberg, Ellie Ripley,; Lorenzo Rossi",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/liar-paradox/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Relativism",
+   "authors": "Baghramian, Maria; J. Adam Carter",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/relativism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Naturalistic Approaches to Social Construction",
+   "authors": "Mallon, Ron",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/social-construction-naturalistic/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Realism",
+   "authors": "Miller, Alexander",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/realism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Friedrich Nietzsche",
+   "authors": "Anderson, R. Lanier",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2026/entries/nietzsche/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Definition of Lying and Deception",
+   "authors": "Mahon, James Edwin",
+   "year": "2016",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2016 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/win2016/entries/lying-definition/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Disagreement",
+   "authors": "Frances, Bryan; Jonathan Matheson",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/disagreement/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Trust",
+   "authors": "McLeod, Carolyn",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2023/entries/trust/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Feminist Social Epistemology",
+   "authors": "Grasswick, Heidi",
+   "year": "2018",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2018 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/fall2018/entries/feminist-social-epistemology/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Collective Intentionality",
+   "authors": "Schweikard, David P.; Hans Bernhard Schmid",
+   "year": "2021",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2021 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/fall2021/entries/collective-intentionality/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Modesty and Humility",
+   "authors": "Bommarito, Nicolas",
+   "year": "2018",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2018 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/win2018/entries/modesty-humility/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Bounded Rationality",
+   "authors": "Wheeler, Gregory",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2024/entries/bounded-rationality/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Self-Deception",
+   "authors": "Deweese-Boyd, Ian",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2023/entries/self-deception/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Implicit Bias",
+   "authors": "Brownstein, Michael",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/spr2025/entries/implicit-bias/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Instrumental Rationality",
+   "authors": "Kolodny, Niko; John Brunero",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2023/entries/rationality-instrumental/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Cognitive Science",
+   "authors": "Thagard, Paul",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/cognitive-science/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Fallacies",
+   "authors": "Hansen, Hans",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/fallacies/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Simplicity",
+   "authors": "Baker, Alan",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2022 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/sum2022/entries/simplicity/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Aristotle’s Rhetoric",
+   "authors": "Rapp, Christof",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/aristotle-rhetoric/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Artificial Intelligence",
+   "authors": "Bringsjord, Selmer; Naveen Sundar Govindarajulu",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/artificial-intelligence/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Personal Autonomy",
+   "authors": "Buss, Sarah; Andrea Westlund",
+   "year": "2018",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Spring 2018 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/spr2018/entries/personal-autonomy/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Fallacies",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/fallacy/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Conspiracy Theories",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/conspiracy-theories/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epistemic Injustice",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/epistemic-injustice/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Virtue Epistemology",
+   "authors": "",
+   "year": "",
+   "source": "Internet Encyclopedia of Philosophy",
+   "url": "https://iep.utm.edu/virtue-epistemology/",
+   "license": "free-to-read",
    "retrieved": "2026-10-01"
   }
  ]

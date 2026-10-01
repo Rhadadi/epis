@@ -1,6 +1,6 @@
 ---
 tier: B
-status: draft
+status: published
 updated: 2026-10-01
 ---
 

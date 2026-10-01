@@ -1,0 +1,324 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "medieval-and-renaissance-europe",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did Augustine answer the Academic skeptics?",
+    "What did Aquinas mean by scientia?",
+    "What did Ockham's razor actually say?",
+    "How seriously did medieval philosophers take skepticism?",
+    "What did Nicholas of Autrecourt argue, and how did Buridan reply?",
+    "How did Montaigne's skepticism differ from Sextus's?",
+    "What did Bacon say about confirming instances?"
+  ],
+  "sources": [
+    {
+      "key": "bolyard2025",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "if an internal mental image or concept of a tree’s being beside a house could be caused by a dream, then the tree’s being beside the house cannot be known, even if the tree is in fact beside the house",
+          "corpus_chunk": 35789
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "From the late 13th century onwards, however, skeptical issues began to exert a dominant and wide influence on epistemological discussions, as seen in the works of such important figures as Henry of Ghent, John Duns Scotus, William of Ockham, Peter Auriol, John Buridan, and Nicholas of Autrecourt.",
+          "corpus_chunk": 35780
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "no thinker from the Middle Ages professed an active allegiance to a systematic philosophical skepticism",
+          "corpus_chunk": 35779
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "it continued to swirl in the thoughts of many of the best philosophers of the period",
+          "corpus_chunk": 35779
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "versions of both his cogito and Evil Demon arguments may be found in the works of medieval philosophers",
+          "corpus_chunk": 35781
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "“you are not certain whether anything appears to you at all” (First Letter 11)",
+          "corpus_chunk": 35833
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "the only things of which we can be certain are the principle of non-contradiction",
+          "corpus_chunk": 35834
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "“From the fact that some thing is known to be, it cannot be inferred evidently, by evidentness reduced to the first principle, or to the certitude of the first principle, that there is some other thing”",
+          "corpus_chunk": 35834
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "Nicholas of Autrecourt espoused the most radical form of skepticism found at any point during the Middle Ages, and he was punished for it.",
+          "corpus_chunk": 35834
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "“virtual infinity of self-evident principles through the senses, or through experience",
+          "corpus_chunk": 35835
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "because of the possibility of God’s deceptiveness, at best we are capable of “conditional evidentness”",
+          "corpus_chunk": 35836
+        },
+        {
+          "locator": "§ 4.2.4",
+          "basis": "full text",
+          "excerpt": "mathematical certainty is not expected in every subject",
+          "corpus_chunk": 35836
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "These illusory experiences include such stock examples as dreams, hallucinations, mirror images, the after-images of the sun, the bent appearance of a straight stick that is immersed in water",
+          "corpus_chunk": 35825
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "the fiery circle that appears when a burning stick is whirled rapidly through the air",
+          "corpus_chunk": 35826
+        }
+      ]
+    },
+    {
+      "key": "tornau2024",
+      "used_for": [
+        "Step by step",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Augustine’s earliest surviving work is a dialogue on Academic skepticism",
+          "corpus_chunk": 34153
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Augustine’s refutation of skepticism does not aim at justifying our ordinary practices and beliefs",
+          "corpus_chunk": 34154
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "he thinks it sufficient to demonstrate the existence of some kind of knowledge that is immune to skeptical doubt",
+          "corpus_chunk": 34155
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "the certainty of self-referential knowledge (the wise person “knows wisdom”, Contra Academicos 3.6; the Academic skeptic “knows” the Stoic criterion of truth",
+          "corpus_chunk": 34155
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "I am certain that something appears white to me even if I am ignorant whether it is really white",
+          "corpus_chunk": 34155
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "the certainty of formal, logical or mathematical, structures (ib. 3.24–29), knowledge of which is possible independently of the mental state of the knower, whereas the reliability of sense impressions differs according as we are awake or dreaming",
+          "corpus_chunk": 34155
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "the Academics were in fact crypto-Platonists who hid their insight into transcendent reality and restricted themselves to skeptical arguments to combat the materialist and sensualist schools",
+          "corpus_chunk": 34157
+        }
+      ]
+    },
+    {
+      "key": "pasnau2024",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "he shows no interest in trying to define anything like knowledge in its loose and popular sense",
+          "corpus_chunk": 37170
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "Aquinas understands scientia as the apprehension, with certainty, of an entity, event or proposition, based on a demonstrative proof grounded in the essential nature of the",
+          "corpus_chunk": 37172
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "The fundamentals of Aquinas’s thinking about knowledge in this ideal sense come from Aristotle’s Posterior Analytics.",
+          "corpus_chunk": 37171
+        }
+      ]
+    },
+    {
+      "key": "spade-pelletier2025",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "according to which one “must not multiply entities beyond necessity”.[24] Although the sentiment is certainly Ockham’s, this particular formulation is nowhere to be found in his texts.",
+          "corpus_chunk": 37463
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "They are: reason (or reasoning from self-evident premises), experience, and infallible religious authority (namely, Sacred Scripture).",
+          "corpus_chunk": 37464
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "we ought not endorse a claim that supposes that sort of entity to exist",
+          "corpus_chunk": 37464
+        }
+      ]
+    },
+    {
+      "key": "pasnau2025",
+      "used_for": [
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Divine illumination played a prominent part in ancient Greek philosophy, in the later Greek commentary tradition, in neo-Platonism, and in medieval Islamic philosophy.",
+          "corpus_chunk": 34656
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Divine illumination is the oldest and most influential alternative to naturalism in the areas of mind and knowledge.",
+          "corpus_chunk": 34655
+        }
+      ]
+    },
+    {
+      "key": "bacon1620",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "I.95",
+          "basis": "full text",
+          "excerpt": "Those who have treated of the sciences have been either empirics or dogmatical.[57] The former like ants only heap up and use their store, the latter like spiders spin out their own webs.",
+          "corpus_chunk": 31856
+        },
+        {
+          "locator": "I.95",
+          "basis": "full text",
+          "excerpt": "The bee, a mean between both, extracts matter from the flowers of the garden and the field, but works and fashions it by its own efforts.",
+          "corpus_chunk": 31856
+        },
+        {
+          "locator": "I.46",
+          "basis": "full text",
+          "excerpt": "It was well answered by him[15] who was shown in a temple the votive tablets suspended by such as had escaped the peril of shipwreck",
+          "corpus_chunk": 31754
+        },
+        {
+          "locator": "I.46",
+          "basis": "full text",
+          "excerpt": "in all of which the deluded believers observe events which are fulfilled, but neglect and pass over their failure, though it be much more common",
+          "corpus_chunk": 31755
+        },
+        {
+          "locator": "I.46",
+          "basis": "full text",
+          "excerpt": "in establishing any true axiom the negative instance is the most powerful",
+          "corpus_chunk": 31755
+        },
+        {
+          "locator": "I.38, I.68",
+          "basis": "full text",
+          "excerpt": "XXXVIII.",
+          "corpus_chunk": 31747,
+          "note": "The discussion of the idols runs from aphorism XXXVIII to aphorism LXVIII."
+        }
+      ]
+    },
+    {
+      "key": "foglia-ferrari2026",
+      "used_for": [
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "he had it engraved with his age, with “Epecho” , “I abstain” in Greek, and another Sceptic motto in French: “Que sais-je?”",
+          "corpus_chunk": 35878
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Commentators now agree upon the fact that Montaigne largely transformed the type of scepticism he borrowed from Sextus. The two sides of the scale are never perfectly balanced",
+          "corpus_chunk": 35879
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This imbalance undermines the key mechanism of isosthenia, the equality of strength of two opposing arguments.",
+          "corpus_chunk": 35879
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "another interpretation of scepticism formulates it as a strategy used to confront “fideism”, as stressed by Richard Popkin",
+          "corpus_chunk": 35879
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "because reason is unable to demonstrate religious dogmas, we must rely on spiritual revelation and faith",
+          "corpus_chunk": 35879
+        }
+      ]
+    }
+  ]
+}

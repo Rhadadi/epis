@@ -1,6 +1,6 @@
 ---
 tier: A
-status: draft
+status: published
 updated: 2026-10-01
 ---
 
@@ -161,7 +161,7 @@ Three developments shape the debate now.
 
 - **From meaning to knowledge.** Since Quine, discussion of the analytic has been dominated by "the epistemological issues about justifying our beliefs in necessary truths", not by the metaphysics of meaning [@rey2026, § 2]. The question is less "Is there analytic truth?" than "How do we know logic and mathematics?"
 - **The epistemology of modality.** How we could know that something holds in *every* possible world has become a field of its own. The main proposals give conceivability a central role, and the central problem is how a fact about our minds can tell us about mind-independent possibility [@mallozzi-etal2024, § 4.1]. "Possible world" has been in the philosophical lexicon since Leibniz, but it became firmly entrenched with the formal semantics of modal logic [@menzel2025, § 1].
-- **Armchair knowledge.** Williamson argues that much of what philosophers know "from the armchair", such as what would happen in counterfactual situations, is neither strictly a priori nor strictly a posteriori, so the distinction "doesn't cut at the epistemic joints" [@mallozzi-etal2024, § 4.2].
+- **Armchair knowledge.** Williamson calls knowledge of what would happen in counterfactual situations "armchair" knowledge, and argues that much of it is neither strictly a priori nor strictly a posteriori, so the distinction "doesn't cut at the epistemic joints" [@mallozzi-etal2024, § 4.2].
 
 ## Beyond the chapter
 

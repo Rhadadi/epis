@@ -244,6 +244,12 @@
           "basis": "full text",
           "excerpt": "A common candidate here, of course, is knowledge itself",
           "corpus_chunk": 3831
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "A few philosophers and psychologists argue that simply acquiring significant truth while avoiding significant falsehood is the only aim of belief",
+          "corpus_chunk": 3830
         }
       ],
       "annotation": "The standard survey of the ethics of belief."

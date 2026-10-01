@@ -1,0 +1,179 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "epistemology-in-india",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a pramāṇa, and how did the schools disagree about them?",
+    "Is testimony reducible to inference? The Nyāya and Vaiśeṣika positions",
+    "How did Indian philosophers answer the Cārvāka and Nāgārjuna?",
+    "Gettier-style cases and epistemic luck in Indian epistemology"
+  ],
+  "sources": [
+    {
+      "key": "phillips-vaidya2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "knowledge-generating processes, called pramāṇa, “knowledge sources.” The principal candidates are perception, inference, and testimony",
+          "corpus_chunk": 5016
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p which other philosophers see as flowing from testimony as really resulting from an inference",
+          "corpus_chunk": 5074
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "conflates inferential certification of the truth of p with testimonial knowledge that p at a first or unreflective level",
+          "corpus_chunk": 5074
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Testimony is the (true) statement of an expert (āpta).",
+          "corpus_chunk": 5075
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "But pervasion is known typically through generalization from cases",
+          "corpus_chunk": 5094
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "A kitchen hearth counts as an “example” in the stock inference because of its relevant similarity to the mountain",
+          "corpus_chunk": 5094
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the Cārvāka materialist school recognizes perception as a knowledge source but not inference nor any other candidate",
+          "corpus_chunk": 5031
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Inference depends upon generalizations which outstrip perceptual evidence",
+          "corpus_chunk": 5031
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The standard response is pragmatic. We could not act as we do if we could not rely on inference",
+          "corpus_chunk": 5031
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "when he opens his mouth to voice his skepticism, by using words with repeatable meanings",
+          "corpus_chunk": 5031
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "is turned by both Buddhist and Nyāya philosophers into an argument for fallibilism about inference",
+          "corpus_chunk": 5032
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the very concept of a fallacy (hetv-ābhāsa) presupposes that of the veritable reason or sign (hetu)",
+          "corpus_chunk": 5032
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Nāgārjuna identifies a problem of a justification regress in the pramāṇa program (Vigraha-vyavārtinī, v. 33)",
+          "corpus_chunk": 5033
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The Nyāya-sūtra argues that the Nāgārjunian type of skepticism is self-defeating (4.2.26–36)",
+          "corpus_chunk": 5034
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "his intellectual inheritors such as Śrīharṣa) occupy the reflections of philosophers for centuries",
+          "corpus_chunk": 5034
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "Rumor (aitihya) is defined by Vātsyāyana (under Nyāya-sūtra 2.2.1) as a testimony chain whose originator is unknown.",
+          "corpus_chunk": 5102
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "The Nyāya attitude is to regard even it as presumptively veridical in consonance with the school’s overall theory of testimony.",
+          "corpus_chunk": 5102
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "epistemic localism, the thesis that upstream causal factors play no epistemically significant role in the production of knowledge",
+          "corpus_chunk": 5113
+        },
+        {
+          "locator": "§ 9.3",
+          "basis": "full text",
+          "excerpt": "Disjunctivism goes along with infallibility.",
+          "corpus_chunk": 5122
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "for Nyāya, analogy is restricted to a subject’s learning the meaning of a word",
+          "corpus_chunk": 5094
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "analogy, which is viewed as the pramāṇa for knowledge of similarity in Mīmāṃsā and Vedānta but is rejected by the other schools, Vedic and non-Vedic alike, except for Nyāya which however provides a radical reinterpretation",
+          "corpus_chunk": 5093
+        }
+      ]
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Such examples have actually been discussed since antiquity.",
+          "corpus_chunk": 1604
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "when we reach the spot, we are lucky and find water right there under a rock",
+          "corpus_chunk": 1604
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "if there were no water there, you would have held the same belief on the same grounds",
+          "corpus_chunk": 1616
+        }
+      ]
+    }
+  ]
+}

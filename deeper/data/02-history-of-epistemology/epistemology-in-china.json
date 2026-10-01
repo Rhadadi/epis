@@ -1,0 +1,183 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "epistemology-in-china",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did classical Chinese thinkers understand knowledge?",
+    "What are the Mohist three standards (fa), and how are they justified?",
+    "How should Zhuangzi's butterfly dream be read?",
+    "What did Xunzi say about the heart-mind and blindness?"
+  ],
+  "sources": [
+    {
+      "key": "rosker2025",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(or primarily) stems from moral training",
+          "corpus_chunk": 4879
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "epistemology is inseparable from ontology",
+          "corpus_chunk": 4920
+        }
+      ]
+    },
+    {
+      "key": "fraser2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "The three fa are that statements must have a root, a source, and a use.",
+          "corpus_chunk": 35973
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "The “source” is that statements must have an empirical basis; they must be checked against what people see and hear.",
+          "corpus_chunk": 35974
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "the statement must produce benefit",
+          "corpus_chunk": 35974
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "The “root” is the historical precedent and evidence provided by the deeds of the ancient sage kings",
+          "corpus_chunk": 35974
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "the Mohists seem to overlook the possibility of conflicts between the three, such as the likelihood that certain practices of the ancient sage-kings might not benefit society today",
+          "corpus_chunk": 35979
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "The texts that present the theory do not say, but the Mohists probably view the third standard, benefit to society, as an application of their moral theory",
+          "corpus_chunk": 35977
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "Concerns can be raised about the vagueness of the three standards",
+          "corpus_chunk": 35979
+        },
+        {
+          "locator": "§ \"The Three Fa\"",
+          "basis": "full text",
+          "excerpt": "the extent to which the Mohists apply them fairly and rigorously",
+          "corpus_chunk": 35979
+        }
+      ]
+    },
+    {
+      "key": "hansen2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.8",
+          "basis": "full text",
+          "excerpt": "dreamt of being a butterfly or a butterfly is dreaming of being Zhuangzi—though there must be a difference. This is called “things change”.",
+          "corpus_chunk": 37751
+        },
+        {
+          "locator": "§ 4.8",
+          "basis": "full text",
+          "excerpt": "The mild skepticism of our trajectory to greater knowledge is most famously illustrated in the story of Zhuangzi dreaming being a butterfly",
+          "corpus_chunk": 37751
+        },
+        {
+          "locator": "§ 4.8",
+          "basis": "full text",
+          "excerpt": "Zhuangzi’s relativism is mildly skeptical of the relativism itself.",
+          "corpus_chunk": 37751
+        },
+        {
+          "locator": "§ 4.8",
+          "basis": "full text",
+          "excerpt": "Zhuangzi’s non-ironic examples of real-life spectacular know-how",
+          "corpus_chunk": 37752
+        },
+        {
+          "locator": "§ 4.8",
+          "basis": "full text",
+          "excerpt": "The knife sang",
+          "corpus_chunk": 37752
+        }
+      ]
+    },
+    {
+      "key": "goldin2025",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "which has three cardinal attributes: “emptiness” (xu 虛) “unity” (yi 壹), and “tranquility” (jing 靜)",
+          "corpus_chunk": 37604
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "“tranquility” refers to the heart-mind’s ability to distinguish fantasy from rational thinking",
+          "corpus_chunk": 37605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "“Unity” refers to the heart-mind’s ability to synthesize diverse data into meaningful paradigms.",
+          "corpus_chunk": 37605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "we do not have to erase one datum in order to make room for another",
+          "corpus_chunk": 37605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "refers to the self-destructive acts that people undertake because they fail to employ their heart-minds correctly",
+          "corpus_chunk": 37605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The title of the relevant chapter, “Resolving Blindness”",
+          "corpus_chunk": 37605
+        }
+      ]
+    }
+  ]
+}

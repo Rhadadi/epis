@@ -1,6 +1,6 @@
 ---
 tier: B
-status: draft
+status: published
 updated: 2026-10-01
 ---
 
@@ -20,7 +20,7 @@ Ethics asks what to do; epistemology asks what to believe. So there are epistemi
 
 #### 3. What is the goal?
 
-The most popular answer is **truth**. William James noticed that this is really two goals: "*We must know the truth*; and *we must avoid error*". They "are not two ways of stating an identical commandment, they are two separable laws" [@james1897, 17–18]. Believing everything maximises the first; believing nothing maximises the second. Every standard of evidence strikes a balance between them.
+The obvious answer is **truth**. William James noticed that this is really two goals: "*We must know the truth*; and *we must avoid error*". They "are not two ways of stating an identical commandment, they are two separable laws" [@james1897, 17–18]. Believing everything maximises the first; believing nothing maximises the second. Every standard of evidence strikes a balance between them.
 
 ### Common confusions
 
@@ -42,7 +42,7 @@ The most popular answer is **truth**. William James noticed that this is really 
 
 - **"Consequentialism ↔ Veritism."** Veritism is a view about what is valuable (truth); consequentialism is a view about how value fixes what is permissible. One can hold either without the other, and Berker's objection targets the second [@steup-neta2025, § 1.2; @chignell2018, § 2.4].
 - **The parallel with ethics.** A belief is usually assessed when it is formed, while an action's rightness may depend on consequences known only much later [@chignell2018, § 3.2].
-- **"The most popular answer is truth."** Other candidates for the aim of belief are knowledge, justification, virtue and understanding [@chignell2018, § 3.2].
+- **"The most popular answer is truth."** Chignell reports that only "a few philosophers and psychologists" hold that truth is the *only* aim of belief. Other candidates are knowledge, justification, virtue and understanding [@chignell2018, § 3.2].
 
 ### Connections
 

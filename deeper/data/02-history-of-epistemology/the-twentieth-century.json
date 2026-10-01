@@ -1,0 +1,265 @@
+{
+  "chapter": "02-history-of-epistemology",
+  "section": "the-twentieth-century",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What did the verification principle require, and why did its formulations fail?",
+    "What is Popper's criterion of demarcation, and what asymmetry is it built on?",
+    "What was Moore's proof of an external world meant to show?",
+    "What are Wittgenstein's hinge propositions?",
+    "Is Quine's naturalized epistemology normative?",
+    "Were there Gettier cases before Gettier?",
+    "Did Kuhn hold that science is irrational?"
+  ],
+  "sources": [
+    {
+      "key": "creath2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "in order to be meaningful a claim must be implied by a finite number of observation sentences",
+          "corpus_chunk": 27184
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "this view had the drawback that so-called laws of nature would not be meaningful on this criterion. Schlick was prepared to bite the bullet and hold that laws were not statements at all but principles of inference.",
+          "corpus_chunk": 27185
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This more liberal or “left” wing of the Vienna Circle included Carnap, Philipp Frank, Hahn, and Neurath.",
+          "corpus_chunk": 27185
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Over the years a great many different formulations of verificationist principles ensued. Most of them came to a bad end rather quickly",
+          "corpus_chunk": 27185
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This formulation may be natural, but it is also fatally flawed. It would declare any sentence whatsoever as meaningful: For any sentence A and any observation sentence O, A would be meaningful because it could be conjoined to A ⊃ O.",
+          "corpus_chunk": 27189
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "So even a string of failures in formulating verificationist principles may mean no more than that the embedded accounts of confirmation are too simple but the link between meaningfulness and confirmation is nevertheless sound.",
+          "corpus_chunk": 27187
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Wittgenstein’s no-content theory of logic suggested that all of the real claims, the ones that had genuine content, could be appropriately supported by experience",
+          "corpus_chunk": 27183
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This seemed to open the way for a thoroughgoing empiricism",
+          "corpus_chunk": 27183
+        }
+      ]
+    },
+    {
+      "key": "thornton2026",
+      "used_for": [
+        "Step by step",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "it is logically impossible to verify a universal proposition by reference to experience (as Hume saw clearly), but a single genuine counter-instance falsifies the corresponding universal law",
+          "corpus_chunk": 35558
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "should count scientifically only if it is the positive result of a genuinely “risky” prediction, which might conceivably have been false",
+          "corpus_chunk": 35557
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "psychoanalysis is a pre-science and astrology and phrenology are pseudo-sciences",
+          "corpus_chunk": 35560
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "couched their theories in terms which made them amenable only to confirmation, while Einstein’s theory, crucially, had testable implications which, if false, would have falsified the theory itself",
+          "corpus_chunk": 35545
+        }
+      ]
+    },
+    {
+      "key": "baldwin2010",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "By holding up my two hands, and saying, as I make a certain gesture with the right hand, ‘Here is one hand’, and adding, as I make a certain gesture with the left, ‘and here is another’",
+          "corpus_chunk": 34981
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "How absurd it would be to suggest that I did not know it, but only believed it",
+          "corpus_chunk": 34982
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "But this interpretation is incorrect: Moore's avowed aim is to prove the existence of an external world, not to prove his knowledge of the existence of an external world.",
+          "corpus_chunk": 34982
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "(2) the proposition ‘Nobody knows for certain that there are any material things’",
+          "corpus_chunk": 34983
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "I do not think I have ever implied that it could be proved to be false in any such simple way",
+          "corpus_chunk": 34984
+        }
+      ]
+    },
+    {
+      "key": "biletzki-matar2026",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "On Certainty is generally accepted as a work of epistemology",
+          "corpus_chunk": 35742
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "It tackles skeptical doubts and foundational solutions but is, in typical Wittgensteinian fashion, a work of therapy which discounts presuppositions common to both.",
+          "corpus_chunk": 35742
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "These are propositions about which doubt cannot be entertained, but whether this be due to their being epistemically foundational, naturally certain, or logically unavailable to doubt is still a matter for philosophical explanation",
+          "corpus_chunk": 35743
+        }
+      ]
+    },
+    {
+      "key": "hylton-kemp2025",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "“Epistemology”, Quine says, “…is contained in natural science, as a chapter of psychology”",
+          "corpus_chunk": 27502
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Some commentators have claimed that it is not, and that this is a serious defect (see Kim, 1988).",
+          "corpus_chunk": 27555
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "are wrong in protesting that the normative element…goes by the board",
+          "corpus_chunk": 27555
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "it tells us that in drawing up scientific theories we should rely on the evidence of the senses rather than on soothsayers; that we should aim at simple theories",
+          "corpus_chunk": 27556
+        }
+      ]
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The 14th-century Italian philosopher Peter of Mantua presented this similar case: Let it be assumed that Plato is next to you and you know him to be running, but you mistakenly believe that he is Socrates",
+          "corpus_chunk": 1605
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "If you look at a clock which you believe to be going, but which in fact has stopped, and you happen to look at it at a moment when it is right, you will acquire a true belief as to the time of day, but you cannot be correctly said to have knowledge.",
+          "corpus_chunk": 1606
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Although such cases have been discussed throughout the history of Eastern and Western epistemology, they came into far more theoretical salience in the second half of the 20th century",
+          "corpus_chunk": 1606
+        }
+      ]
+    },
+    {
+      "key": "bird2025",
+      "used_for": [
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Kuhn’s claim that scientists do not employ rules in reaching their decisions appeared tantamount to the claim that science is irrational",
+          "corpus_chunk": 37254
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Kuhn (1977, 321–2) identifies five characteristics that provide the shared basis for a choice of theory: 1. accuracy; 2. consistency",
+          "corpus_chunk": 37285
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In this respect at least the accusation is wide of the mark. For to deny that some cognitive process is the outcome of applying rules of rationality is not to imply that it is an irrational process",
+          "corpus_chunk": 37279
+        }
+      ]
+    }
+  ]
+}
