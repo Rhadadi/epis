@@ -1,7 +1,7 @@
 ---
 tier: A
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** English uses one verb, "know", for at least three different achievements: knowing *that* something is the case (a fact), knowing *how* to do something (a skill), and knowing a person, place or experience *by acquaintance* (direct familiarity). The chapter treats them as three kinds. The live philosophical question is whether they really are three, or whether the second and third can be explained in terms of the first. A century of argument, from William James and Bertrand Russell to Gilbert Ryle and today's debates about skill and consciousness, turns on that question.
@@ -22,7 +22,7 @@ The examples look obvious: of course riding a bicycle is different from knowing 
 
 #### 2. Knowing how
 
-"Ana knows how to swim." What she has is shown in *doing*: in the water, she swims. Telling seems not to pass it on. If an instructor points to a swimmer and says "That is a way you could swim", you may come to know a true answer to "How could I swim?" and still drown if thrown in the pool [@pavese2022, § 2]. Knowing how also comes in degrees: you can know *partly* how to play the piano, but it is odd to know partly *that* Paris is the capital of France [@pavese2022, § 3].
+"Ana knows how to swim." What she has is shown in *doing*: in the water, she swims. Telling seems not to pass it on. If an instructor points to a swimmer and says "That is a way in which you could swim too", you may come to know a true answer to "How could I swim?" and still drown if thrown in the pool [@pavese2022, § 2]. Knowing how also comes in degrees: you can know *partly* how to play the piano, but it is odd to know partly *that* Paris is the capital of France [@pavese2022, § 3].
 
 #### 3. Knowing by acquaintance
 
@@ -32,13 +32,13 @@ The examples look obvious: of course riding a bicycle is different from knowing 
 
 - **Intellectualists** say knowing how is a kind of knowing that: to know how to swim is to know, of some way of swimming, that it is a way you could swim, grasped in a practical way [@pavese2022, § 4.1].
 - **Anti-intellectualists**, following Ryle, say knowing how is a distinct kind of knowledge, shown in intelligent doing [@pavese2022, preamble].
-- On acquaintance, Russell made it the *foundation* of all knowledge of truths, while other philosophers doubt it is knowledge at all, as opposed to experience [@hasan-fumerton2024, § 1].
+- On acquaintance, Russell made it the *foundation*: "All our knowledge, both knowledge of things and knowledge of truths, rests upon acquaintance as its foundation" [@russell1912, ch. V]. Critics, following Wilfrid Sellars, have denounced the idea that anything is simply "given" to the mind as a "myth" [@hasan-fumerton2024, § 2].
 
 ### Common confusions
 
 - **Knowing how is just being able to.** Not quite. Stanley and Williamson's ski instructor knows how to do a stunt she cannot perform herself; a pianist who loses her arms still knows how to play. Anti-intellectualists reply by distinguishing a general ability from being able here and now [@pavese2022, § 5]. Either way, "few theorists nowadays identify knowledge-how with bare abilities" [@pavese2022, § 8.2].
 - **Knowing how means being able to explain how.** No. Many experts cannot say how they do what they do, and knowing how to explain a task is a different skill from knowing how to perform it [@pavese2022, § 7.3].
-- **Intellectualism says skills are book-learning.** No. Intellectualists hold that the relevant facts must be grasped in a *practical* way; reading a manual does not suffice [@pavese2022, § 2].
+- **Intellectualism says skills are book-learning.** No. Intellectualists often hold that the relevant facts must be known in a distinctively *practical* way: knowing a way of swimming just by watching a swimmer is not enough [@pavese2022, § 2]. They do point out that people sometimes learn how to do something precisely by consulting a manual [@pavese2022, § 7.3].
 - **Acquaintance in Russell's sense means personal acquaintance.** No. For Russell, you are not acquainted with Tehran or your sister in his technical sense; you are acquainted with sense-data, your own thoughts and feelings, past experiences through memory, probably your self, and universals. Cities and people are known by description [@russell1912, ch. V].
 - **French *connaître* is acquaintance and *savoir* is knowing that, exactly.** Languages draw their lines in different places, and how to divide kinds of knowing "is not something that can be determined solely by appeal to the lexicon of any particular natural language" [@steup-neta2025, § 2].
 
@@ -47,17 +47,18 @@ The examples look obvious: of course riding a bicycle is different from knowing 
 ### How the distinctions developed
 
 ::: timeline From technē to skill science
-- **4th century BCE** · Plato and Aristotle treat *technē*, craft or skill, as a kind of knowledge, alongside *epistēmē*, scientific knowledge [@pavese2022, § 9.1].
+- **4th century BCE** · Plato and Aristotle treat *technē*, craft or skill, as a kind of knowledge, alongside *epistēmē*, scientific knowledge [@pavese2022, § 9.1; @parry2024, § 3].
+- **1472–1529** · Wang Yangming teaches the "unity of knowing and acting" [@vannorden2024, § 3].
 - **1890** · William James distinguishes "knowledge of acquaintance" from "knowledge-about" [@james1890, ch. VIII].
 - **1910–12** · Russell's "knowledge by acquaintance" and "knowledge by description" [@russell1911; @russell1912, ch. V].
 - **1946–49** · Ryle's "Knowing How and Knowing That" and *The Concept of Mind* attack the "intellectualist legend" [@ryle1946; @ryle1949].
-- **1960s–80s** · Psychology and neuroscience separate "declarative" from "procedural" memory, often citing Ryle [@pavese2022, preamble, § 7.1].
+- **1960s–80s** · Psychology and neuroscience separate "declarative" from "procedural" memory, some explicitly appealing to Ryle's distinction [@pavese2022, preamble, § 7.1].
 - **1982** · Jackson's Mary: does seeing red teach new *knowledge*? [@jackson1982].
 - **2001** · Stanley and Williamson revive intellectualism [@stanley-williamson2001].
 - **2010s–now** · Debates over skill, gradability, luck, and whether acquaintance is the most basic kind of knowledge.
 :::
 
-TODO-TECHNE
+The classic statement of the contrast is Aristotle's, at the beginning of the *Metaphysics*. A person of mere *experience* (*empeiria*) knows that a certain remedy helped Callias when he had a certain disease, and Socrates, and many others. A person with *technē* goes further, to a universal judgment: this remedy helps all people of a certain type with this disease, and knows *why* [@parry2024, § 3]. In Richard Parry's summary, Aristotle grants that the person of experience may be "more effective" than someone who has only the rational account; still, "we think the craftsman wiser than the empiric because of his knowledge of the account" [@parry2024, § 5]. The modern debate about knowing how inherits both halves of this: skill is shown in success, but the expert, unlike the lucky practitioner, can say why.
 
 ### Read the original
 
@@ -65,7 +66,7 @@ TODO-TECHNE
 
 > "*There are two kinds of knowledge* broadly and practically distinguishable: we may call them respectively *knowledge of acquaintance* and *knowledge-about*. Most languages express the distinction; thus, γνῶναι, εἰδέναι; *noscere, scire; kennen, wissen; connaître, savoir*. I am acquainted with many people and things, which I know very little about, except their presence in the places where I have met them. I know the color blue when I see it, and the flavor of a pear when I taste it ... but *about* the inner nature of these facts or what makes them what they are, I can say nothing at all. I cannot impart acquaintance with them to any one who has not already made it himself." [@james1890, ch. VIII]
 
-James is the source of the chapter's point about languages, twenty years before Russell. Two of his further claims are worth noticing. First, he thinks the two kinds are **relative**: "the same thought of a thing may be called knowledge-about it in comparison with a simpler thought, or acquaintance with it in comparison with a thought of it that is more articulate" [@james1890, ch. VIII]. Second, he sees the grammar of a sentence as a model of the relation: its subject "stands for an object of acquaintance which, by the addition of the predicate, is to get something known about it" [@james1890, ch. VIII]. And his blind man who cannot "guess what blue is like" is a direct ancestor of Jackson's Mary.
+James made the chapter's point about languages twenty years before Russell, and in a footnote to it he points back to John Grote's *Exploratio Philosophica* and to Hermann Helmholtz [@james1890, ch. VIII, n. 214]. Two of his further claims are worth noticing. First, he thinks the two kinds are **relative**: "the same thought of a thing may be called knowledge-about it in comparison with a simpler thought, or acquaintance with it in comparison with a thought of it that is more articulate" [@james1890, ch. VIII]. Second, he sees the grammar of a sentence as a model of the relation: its subject "stands for an object of acquaintance which, by the addition of the predicate, is to get something known about it" [@james1890, ch. VIII]. And his blind man who cannot "guess what blue is like" is a direct ancestor of Jackson's Mary.
 
 :::
 
@@ -103,20 +104,20 @@ Ryle had two further arguments. The **sufficiency argument**: "there is no truth
 
 ::: argument The cognitive-science argument against intellectualism
 1. The brain's procedural memory system is distinct from its declarative memory system.
-2. Motor know-how is stored entirely in the procedural system.
-3. All propositional knowledge is stored entirely in the declarative system.
+2. Motor know-how is encoded entirely in the procedural system.
+3. All propositional knowledge is encoded entirely in the declarative system.
 4. So some knowledge-how does not require propositional knowledge.
 :::
 
-[@pavese2022, § 7.1]. The evidence for premise 1 comes from amnesia. The patient known as HM, after surgery that removed much of his hippocampus, could form no new memories of facts or events. Yet over ten trials his skill at tracing a five-pointed star seen only in a mirror improved, though he could not remember having done the task before [@pavese2022, § 7.1]. Intellectualists reply that premise 3 assumes propositional knowledge must be something the subject can put into words, and that this confuses knowing how to do a task with knowing how to explain it [@pavese2022, § 7.3].
+[@pavese2022, § 7.1]. The evidence for premise 1 comes from amnesia. The patient known as HM, after surgery that removed much of his hippocampus, could form no new memories of facts or events. Yet over ten trials his skill at tracing a five-pointed star, looking only at its reflection in a mirror, improved, though his declarative knowledge of how to do the task could not change from one trial to the next [@pavese2022, § 7.1]. Some reply that a closer look at the case tells against premise 2: HM could do the task only after being reminded what it was, which suggests a declarative component [@pavese2022, § 7.1]. Intellectualists also reply that premise 3 assumes propositional knowledge must be something the subject can put into words, and that this confuses knowing how to do a task with knowing how to explain it [@pavese2022, § 7.3].
 
 ::: argument Jackson's knowledge argument (Mary's room)
 1. Before her release, Mary knows every physical fact about colour vision.
-2. On her release, seeing a red rose, she learns something new: what it is like to see red.
+2. On her release, seeing something red for the first time, she learns something new: what it is like to see red.
 3. So there are facts about colour experience that are not physical facts.
 :::
 
-[@jackson1982; @nidarumelin-oconaill2026, § 2]. The two main replies deny that what Mary gains is knowledge of a new *fact*, which is where this section's three kinds of knowing come in. On the **ability hypothesis** (David Lewis, Laurence Nemirow), Mary gains only new abilities: to imagine, remember and recognise colour experiences; "knowing what an experience is like is the same as knowing how to imagine having the experience". On the **acquaintance hypothesis** (Earl Conee), she gains acquaintance knowledge, "neither propositional knowledge nor identical to a bundle of abilities" [@nidarumelin-oconaill2026, § 4.3]. Ordinary people side with Jackson's intuition: in one survey, 82% said Mary in her room would not know what it is like to see red [@nidarumelin-oconaill2026, § 4.1]. Jackson himself later rejected his argument, concluding that it rests on a false view of sensory experience [@nidarumelin-oconaill2026, § 5].
+[@jackson1982; @nidarumelin-oconaill2026, § 2]. The two main replies deny that what Mary gains is knowledge of a new *fact*, which is where this section's three kinds of knowing come in. On the **ability hypothesis** (David Lewis, Laurence Nemirow), Mary gains only new abilities: to imagine, remember and recognise colour experiences. In Nemirow's words, "knowing what an experience is like is the same as knowing how to imagine having the experience". On the **acquaintance hypothesis** (Earl Conee), she gains acquaintance knowledge, "neither propositional knowledge nor identical to a bundle of abilities" [@nidarumelin-oconaill2026, § 4.3]. Ordinary people side with Jackson's intuition: in one survey, 82% said Mary in her room would not know what it is like to see red [@nidarumelin-oconaill2026, § 4.1]. Jackson himself later rejected his argument, concluding that it rests on a false view of sensory experience [@nidarumelin-oconaill2026, § 5].
 
 ### The positions
 
@@ -124,34 +125,38 @@ Ryle had two further arguments. The **sufficiency argument**: "there is no truth
 
 | View | Who | Core claim | The main objection |
 |---|---|---|---|
-| Anti-intellectualism (Ryle) | Ryle | Knowing how is a distinct kind of knowledge, shown in intelligent doing | Ryle's regress may cut against him too; what exactly is the extra ingredient? |
+| Anti-intellectualism (Ryle) | Ryle | Knowing how is a distinct kind of knowledge, shown in intelligent doing | Ryle's regress may cut against him too (Stanley) |
 | Ability-based anti-intellectualism | Lewis and others | Knowing how is having an ability | People know how without being able, and are able without knowing how |
 | Intellectualism | Stanley and Williamson | Knowing how is knowing a proposition about a way to act, under a practical mode of presentation | The practical mode is obscure; the swimming and amnesia cases |
-| Revisionary intellectualism | Cath and others | Knowing how is propositional, but not ordinary knowledge-that (it can survive Gettier luck) | It may concede the anti-intellectualist's point |
-| Russell's acquaintance foundationalism | Russell | All knowledge of truths rests on direct acquaintance | Its narrow list of objects; whether acquaintance is knowledge at all |
+| Revisionary intellectualism | Cath, Brogaard and others | Knowing how is propositional, but not ordinary knowledge-that (for Cath, it can survive Gettier luck) | Its versions disagree about what makes this knowledge special |
+| Russell's acquaintance foundationalism | Russell | All knowledge, of things and of truths, rests on direct acquaintance | The "given" is a myth (Sellars); even its defenders disagree about what we are acquainted with |
 
 :::
 
-[@pavese2022, §§ 1, 2, 6.2, 8.1–8.2; @hasan-fumerton2024, § 1]
+[@pavese2022, §§ 1, 2, 5, 8.1–8.2; @russell1912, ch. V; @hasan-fumerton2024, § 2]
 
 ### Where the debate stands
 
-TODO-NOW-KH
+Twenty years after Stanley and Williamson, the debate has moved in three directions.
+
+- **Back to Ryle.** A 2017 special issue on Ryle argued that the usual framing, intellectualists against anti-intellectualists, misreads him. Michael Kremer showed that "intellectualism" and "anti-intellectualism" were live positions in early twentieth-century philosophy and social science, so Ryle "was not criticizing a straw man", and that his own view was "a third way" between them, an option "that has largely gone missing" since [@kremer2017, 1]. Will Small argues that Ryle's interest in knowing how was primarily about *action*, not knowledge, and that his argument has been "misunderstood and underestimated" [@small2017, 1]. Stina Bäckström and Martin Gustafsson argue that his dispositional account "is not an instance of reductionist behaviorism", and that his regress has "a broader target" than Stanley recognises [@backstrom-gustafsson2017, 1].
+- **From knowing how to skill.** The most recent debate has merged with a debate about skill. There is no consensus on what a skill is, but skills are generally taken to be learnable and improvable through practice, and are contrasted with mere knacks and, by some, with habits [@pavese2022, § 9.1]. The phenomenological tradition, from Merleau-Ponty to Dreyfus, holds that skilled action rests on a kind of intentionality that is neither representational nor conceptual [@pavese2022, § 9.1].
+- **New middle positions.** Revisionary intellectualists accept that knowing how is propositional but deny it is ordinary knowledge-that: "practical" knowledge-that may not be undermined by the kind of luck that defeats theoretical knowledge [@pavese2022, § 8.1].
 
 ## Beyond the chapter
 
 ### What the chapter leaves out
 
-- **Knowing how without belief.** Ball players who catch a ball make quick anticipatory eye movements ahead of the ball, yet believe they are tracking it the whole time. If knowing how required true beliefs about how one does it, they would not know how to catch [@pavese2022, § 6.1].
-- **Babies and animals.** Pre-linguistic children and animals know how to do many things. Does intellectualism over-intellectualise them? Intellectualists reply that we also attribute knowledge *that* to animals ("Fido knows that its owner is arriving"), and comparative psychologists routinely credit animals with concepts [@pavese2022, § 7.4].
-- **Can knowing how be lucky?** In Cath's "lucky light bulb" case, a man learns to change a light bulb from an accurate guide that, by luck, is the only accurate one among many. If he knows how anyway, knowing how behaves differently from knowing that [@pavese2022, § 6.2].
-- **Understanding.** Some philosophers think understanding, not knowledge, is the deepest epistemic achievement. It may be harder to pass on by testimony than knowledge is [@grimm2025, § 3.2], and it may tolerate kinds of luck that knowledge does not [@grimm2025, § 2.3].
+- **Knowing how without belief.** Ball players who catch a ball make quick anticipatory eye movements ahead of the ball, yet believe they are tracking it the whole time. That looks like knowing how without the right beliefs. Intellectualists reply that a false belief about how you do something does not rule out also having a correct one [@pavese2022, § 6.1].
+- **Babies and animals.** Pre-linguistic children and animals know how to do many things. Does intellectualism over-intellectualise them? Intellectualists reply that we also attribute knowledge *that* to animals ("Fido knows that its owner is arriving"), and comparative psychologists routinely credit animals with concepts. The reply is less plausible for insects [@pavese2022, § 7.4].
+- **Can knowing how be lucky?** In Cath's "lucky light bulb" case, Charlie learns to change a light bulb from a guide whose disgruntled author filled it with misleading instructions; by sheer luck, the page he reads is accurate. Cath argues that Charlie still knows how, although his belief is "Gettiered"; if so, knowing how tolerates luck that knowing that does not. Others reply that intuitions about such cases are subtle and do not all point the same way [@pavese2022, § 6.2].
+- **Understanding.** Jonathan Kvanvig argued that understanding, unlike knowledge, is distinctively valuable from an epistemic point of view [@grimm2025, § 1.2]. Understanding may be harder to pass on by testimony than knowledge is, though some argue it is not [@grimm2025, § 3.2], and some hold that it tolerates kinds of luck that knowledge does not [@grimm2025, § 2.3].
 - **Knowledge by presence.** The Islamic tradition's *ʿilm ḥuḍūrī* is a theory of knowledge in which the known is present to the knower without any representation. Suhrawardi built it on self-awareness, against the representational theory of the Avicennian tradition [@marcotte2025, § 3.2]. It is treated in [Chapter 7](07-sources-of-knowledge.md#knowledge-by-presence).
-TODO-WANG
+- **Knowing and acting in Chinese philosophy.** Wang Yangming (1472–1529), a leading critic of Zhu Xi's orthodox Neo-Confucianism, taught the "unity of knowing and acting" against those who "separate knowing and acting into two distinct tasks to perform and think that one must first know and only then can one act"; such people, in Bryan Van Norden's summary, become "pedantic bookworms" [@vannorden2024, preamble, § 3]. Wang's example: "Seeing a lovely sight is a case of knowing, while loving a lovely sight is a case of acting"; the second follows at once, not by a further decision. A person with a stuffed-up nose does not hate the bad smell in front of him, because it does not reach him: "This is simply not to know the hateful odor" [@vannorden2024, § 4]. Van Norden notes the obvious objection: the examples show at most that knowing something is good or bad brings some motivation, and motivation need not result in action [@vannorden2024, § 3]. Wang's topic is ethical knowledge, but his challenge to the knowing/doing split parallels Ryle's.
 
 ### What the chapter simplifies
 
-- **"Russell distinguished knowledge by acquaintance from knowledge by description."** He did, but James drew the distinction first, with the same examples from other languages [@james1890, ch. VIII].
+- **"Russell distinguished knowledge by acquaintance from knowledge by description."** He did, but the contrast between acquaintance and knowledge *about* things is older: James drew it twenty years earlier, with the same examples from other languages, and credited John Grote [@james1890, ch. VIII, n. 214].
 - **"I know Tehran."** An everyday example of knowing a place, not of acquaintance in Russell's technical sense [@russell1912, ch. V].
 - **Mary.** The chapter says many people think Mary learns something new. Whether what she gains is knowledge *that*, knowledge *how*, or acquaintance is exactly what the main responses dispute [@nidarumelin-oconaill2026, § 4.3].
 

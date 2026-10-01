@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** The chapter ends with a headline, "New study: People who drink coffee live longer", and twelve questions a trained reader would ask about it. Each question belongs to a part of epistemology: testimony, causation, statistics, replication, motivated reasoning, the ethics of belief. This page shows that the questions are not just good advice: researchers have measured how much a chain of press release and news story distorts a finding, and why one study should move you only a little.
@@ -42,7 +42,7 @@ Do I want it to be true? How confident should I be, and what would change my min
 
 - **The reader alone.** The twelve questions address one reader and one story. The research suggests that some of the most effective fixes are institutional: Sumner and colleagues conclude that "improving the accuracy of academic press releases could represent a key opportunity for reducing misleading health related news" [@sumner2014, abstract]. That is social epistemology's subject [@oconnor-etal2026, preamble].
 - **Studies of studies are studies too.** Both press-release studies are observational, and their authors word their causal conclusions carefully: the chapter's question 4 applies to the evidence about question 2.
-- **"Most published findings are false."** That is Ioannidis's own provocative wording [@ioannidis2005, introduction]. What his model proves is conditional: given the assumed values of *R*, power and bias, the rest follows. Whether most findings in a given field are false depends on whether those values hold there.
+- **"It can be proven that most claimed research findings are false."** That is Ioannidis's own provocative wording [@ioannidis2005, introduction]. What his model proves is conditional: given the assumed values of *R*, power and bias, the rest follows. Whether most findings in a given field are false depends on whether those values hold there.
 
 ### Connections
 

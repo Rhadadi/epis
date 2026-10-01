@@ -67,6 +67,22 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
   },
+  "backstrom-gustafsson2017": {
+    "type": "article",
+    "authors": [
+      "Bäckström, Stina",
+      "Gustafsson, Martin"
+    ],
+    "year": 2017,
+    "title": "Skill, Drill, and Intelligent Performance: Ryle and Intellectualism",
+    "container": "Journal for the History of Analytical Philosophy",
+    "volume": "5",
+    "issue": "5",
+    "doi": "10.15173/jhap.v5i5.3205",
+    "access": "open-access",
+    "url": "https://doi.org/10.15173/jhap.v5i5.3205",
+    "verified": "Crossref record for the DOI; full text (CC BY-NC) read, 2026-10-01"
+  },
   "berker2013": {
     "type": "article",
     "authors": [
@@ -195,6 +211,22 @@
     "publisher": "Marquette University Press",
     "isbn": "9780874621389",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "chrisman2008": {
+    "type": "article",
+    "authors": [
+      "Chrisman, Matthew"
+    ],
+    "year": 2008,
+    "title": "Ought to Believe",
+    "container": "Journal of Philosophy",
+    "volume": "105",
+    "issue": "7",
+    "pages": "346–70",
+    "doi": "10.5840/jphil2008105736",
+    "access": "open-access",
+    "url": "https://www.research.ed.ac.uk/en/publications/ought-to-believe",
+    "verified": "Crossref record for the DOI; the author's pre-print (University of Edinburgh repository) read in full, cited by its pages, 2026-10-01"
   },
   "clifford1879": {
     "type": "chapter",
@@ -338,6 +370,36 @@
     "access": "subscription",
     "verified": "Crossref record for the DOI, 2026-10-01"
   },
+  "ghazali1909": {
+    "type": "book",
+    "authors": [
+      "al-Ghazali"
+    ],
+    "year": 1909,
+    "title": "The Confessions of al Ghazzali",
+    "translator": "Claud Field",
+    "edition": "Wisdom of the East series",
+    "place": "London",
+    "publisher": "John Murray",
+    "url": "https://archive.org/details/confessionsofalg00algh",
+    "access": "public-domain",
+    "verified": "Internet Archive scan (title page: translated by Claud Field; London: John Murray) and catalogue record (1909); full text read; a translation of al-Munqidh min al-dalal, cited by page, 2026-10-01"
+  },
+  "ghazali1910": {
+    "type": "book",
+    "authors": [
+      "al-Ghazali"
+    ],
+    "year": 1910,
+    "title": "The Alchemy of Happiness",
+    "translator": "Claud Field (from the Hindustani)",
+    "edition": "Wisdom of the East series",
+    "place": "London",
+    "publisher": "John Murray",
+    "url": "https://archive.org/details/in.ernet.dli.2015.106793",
+    "access": "public-domain",
+    "verified": "Internet Archive scan (title page: translated from the Hindustani by Claud Field; London: John Murray, 1910); full text read; an abridged version of the Persian Kimiya-yi sa'adat, cited by page, 2026-10-01"
+  },
   "glanzberg2025": {
     "type": "entry",
     "authors": [
@@ -366,6 +428,23 @@
     "publisher": "Clarendon Press",
     "isbn": "9780198237778",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "griffel2026": {
+    "type": "entry",
+    "authors": [
+      "Griffel, Frank"
+    ],
+    "year": 2026,
+    "title": "al-Ghazali",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/al-ghazali/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
   },
   "grimm2025": {
     "type": "entry",
@@ -648,6 +727,21 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
   },
+  "kremer2017": {
+    "type": "article",
+    "authors": [
+      "Kremer, Michael"
+    ],
+    "year": 2017,
+    "title": "Ryle's “Intellectualist Legend” in Historical Context",
+    "container": "Journal for the History of Analytical Philosophy",
+    "volume": "5",
+    "issue": "5",
+    "doi": "10.15173/jhap.v5i5.3204",
+    "access": "open-access",
+    "url": "https://doi.org/10.15173/jhap.v5i5.3204",
+    "verified": "Crossref record for the DOI; full text (CC BY-NC) read, 2026-10-01"
+  },
   "kripke1980": {
     "type": "book",
     "authors": [
@@ -725,6 +819,23 @@
     "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemology-bayesian/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "lizzini2026": {
+    "type": "entry",
+    "authors": [
+      "Lizzini, Olga"
+    ],
+    "year": 2026,
+    "title": "Ibn Sina’s Metaphysics",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/ibn-sina-metaphysics/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "locke1690": {
     "type": "book",
@@ -890,6 +1001,23 @@
     "url": "https://plato.stanford.edu/archives/fall2026/entries/epistemology-social/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "parry2024": {
+    "type": "entry",
+    "authors": [
+      "Parry, Richard"
+    ],
+    "year": 2024,
+    "title": "Episteme and Techne",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/episteme-techne/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
   },
   "pascal1670": {
     "type": "book",
@@ -1267,6 +1395,22 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
   },
+  "shah-velleman2005": {
+    "type": "article",
+    "authors": [
+      "Shah, Nishi",
+      "Velleman, J. David"
+    ],
+    "year": 2005,
+    "title": "Doxastic Deliberation",
+    "container": "Philosophical Review",
+    "volume": "114",
+    "issue": "4",
+    "pages": "497–534",
+    "doi": "10.1215/00318108-114-4-497",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
   "shah2003": {
     "type": "article",
     "authors": [
@@ -1281,6 +1425,21 @@
     "doi": "10.1215/00318108-112-4-447",
     "access": "subscription",
     "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "small2017": {
+    "type": "article",
+    "authors": [
+      "Small, Will"
+    ],
+    "year": 2017,
+    "title": "Ryle on the Explanatory Role of Knowledge How",
+    "container": "Journal for the History of Analytical Philosophy",
+    "volume": "5",
+    "issue": "5",
+    "doi": "10.15173/jhap.v5i5.3206",
+    "access": "open-access",
+    "url": "https://doi.org/10.15173/jhap.v5i5.3206",
+    "verified": "Crossref record for the DOI; full text (CC BY-NC) read, 2026-10-01"
   },
   "sorensen2024": {
     "type": "entry",
@@ -1359,6 +1518,23 @@
     "url": "https://europepmc.org/article/PMC/PMC4262123",
     "verified": "Crossref record for the DOI; full text (CC BY) and author names read through Europe PMC, PMC4262123, 2026-10-01"
   },
+  "turri-etal2018": {
+    "type": "article",
+    "authors": [
+      "Turri, John",
+      "Rose, David",
+      "Buckwalter, Wesley"
+    ],
+    "year": 2018,
+    "title": "Choosing and Refusing: Doxastic Voluntarism and Folk Psychology",
+    "container": "Philosophical Studies",
+    "volume": "175",
+    "issue": "10",
+    "pages": "2507–37",
+    "doi": "10.1007/s11098-017-0970-x",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI; abstract read, 2026-10-01"
+  },
   "turri-etal2021": {
     "type": "entry",
     "authors": [
@@ -1376,6 +1552,23 @@
     "url": "https://plato.stanford.edu/archives/win2021/entries/epistemology-virtue/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2021 Edition; full text read, 2026-10-01"
+  },
+  "vannorden2024": {
+    "type": "entry",
+    "authors": [
+      "Van Norden, Bryan"
+    ],
+    "year": 2024,
+    "title": "Wang Yangming",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/wang-yangming/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
   "vogt2026": {
     "type": "entry",

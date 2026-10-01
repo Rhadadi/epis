@@ -1,7 +1,7 @@
 ---
 tier: A
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** Three different attitudes can all look like "thinking something is true". **Belief** is taking it to be true: all-or-nothing, a settled state that guides what you say and do. **Credence** is your degree of confidence, from 0 to 1: you can be 90% sure. **Acceptance** is a decision to treat something as true for a purpose, an argument, a calculation, a plan, whether or not you believe it. The chapter introduces all three. The harder questions are how they fit together: whether belief is just high enough credence, why that idea leads to paradox, and how much bad reasoning comes from sliding between them.
@@ -39,9 +39,9 @@ To accept something is to adopt it as a premise for a purpose. Accepting usually
 
 - **"I accept your premise" means "I believe it".** No. In argument, accepting a premise "for the sake of argument" commits you to nothing; criticising someone for "assuming" what they only accepted for the sake of argument misses the point.
 - **Credence is just belief with a number.** Not quite. On the Lockean thesis it might be, but the lottery and preface paradoxes show that belief and high credence behave differently.
-- **Suspending judgment is having no attitude.** Philosophers disagree. Many now treat suspension as a real attitude of its own, and there is a debate about whether we can suspend at will any more than we can believe at will [@boespflug-jackson2024, § 3.1].
-- **Believing is a feeling of conviction.** Hume thought so, roughly; most philosophers today do not (see "The full story"). You can believe something without feeling anything about it, as with your belief that there is at least one church in Nice [@schwitzgebel2024, § 1.2].
-- **A model is believed.** Usually it is accepted. Scientists use models they know to be false in detail, because they are useful approximations.
+- **Suspending judgment is having no attitude.** Epistemologists who work with all-or-nothing attitudes count suspended judgment as one of them, alongside belief and disbelief [@carter-sosa2026, § 2.2]. Whether it is voluntary is debated: Booth argues that if we cannot believe at will, we cannot suspend judgment at will either [@boespflug-jackson2024, § 3.1].
+- **Believing is a feeling of conviction.** Some philosophers come close to this: Hume treated beliefs principally as occurrences, and Smithies argues that to believe is to be disposed to feel conviction [@schwitzgebel2024, §§ 1.2, 2.1]. But most of your beliefs are not felt at any given moment: they are held dispositionally, as when you believe that 2 + 2 = 4 while asleep [@schwitzgebel2024, § 2.1]. And some beliefs have almost no connection with what you do, like, in Eric Schwitzgebel's example, an American homebody's belief "that there is at least one church in Nice" [@schwitzgebel2024, § 1.2].
+- **A model is believed.** Usually it is accepted: scientists often work from theories they do not think are literally true, accepting them as an adequate basis for research [@schwitzgebel2024, § 2.4].
 
 ## The full story
 
@@ -56,10 +56,10 @@ To accept something is to adopt it as a premise for a purpose. Accepting usually
 - **1965** · Makinson's preface paradox [@sorensen2024, § 4].
 - **1980** · van Fraassen: scientists accept theories without believing them [@schwitzgebel2024, § 2.4].
 - **1992** · Cohen's *An Essay on Belief and Acceptance*; Bratman's "Practical Reasoning and Acceptance in a Context"; Foley states the Lockean thesis explicitly [@cohen1992; @bratman1992; @pettigrew2024, § 4.2].
-- **2000s–now** · "Credence-first" and "belief-first" programmes; suspended judgment as an attitude.
+- **2000s–now** · "Credence-first", "belief-first" and dualist programmes [@carter-sosa2026, § 2.2].
 :::
 
-TODO-HISTORY-BCA
+Three threads run through this history. The first is the question of what belief **is**: for Hume, an idea with special vivacity; for Peirce, a habit of action; for today's theorists, a stored representation, a cluster of dispositions, or a state whose essence is to be correct only if true [@schwitzgebel2024, §§ 1.1–1.2, 1.6]. The second is the rise of **degrees**: Locke already had "degrees of assent" [@locke1690, IV.xv.2], and the twentieth century gave them numbers and laws, with the Dutch book argument tying credences to fair bets [@lin2024, § 1.6]. The third is the discovery that the **all-or-nothing and the graded do not fit together easily**: the lottery and preface paradoxes show that rational high confidence cannot simply be added up into rational belief [@sorensen2024, §§ 3–4]. Acceptance entered the story as a fourth attitude, mainly to explain how scientists and planners can act on what they do not believe [@schwitzgebel2024, § 2.4].
 
 ### Read the original
 
@@ -75,7 +75,7 @@ Locke tells the story to show how degrees of assent should work. The mind, "if i
 
 > "An opinion, therefore, or belief may be most accurately defined, a lively idea related to or associated with a present impression." [@hume1739, I.iii.7]
 
-Hume thought the difference between believing that something happened and merely imagining it could not lie in the content of the idea, since you can imagine exactly what you believe. So it must lie in "the manner of its being conceived": belief is an idea with more "force and vivacity" [@hume1739, I.iii.7]. His example: two people read the same book, one taking it as history and the other as fiction. The believer "has a more lively conception of all the incidents"; the other "a more faint and languid conception" [@hume1739, I.iii.7]. Few philosophers now accept the vivacity theory, but Hume's problem, what makes a belief a belief rather than an imagining, is still open.
+Hume thought the difference between believing that something happened and merely imagining it could not lie in the content of the idea, since you can imagine exactly what you believe. So it must lie in "the manner of its being conceived": belief is an idea with more "force and vivacity" [@hume1739, I.iii.7]. His example: two people read the same book, one taking it as history and the other as fiction. The believer "has a more lively conception of all the incidents"; the other "a more faint and languid conception" [@hume1739, I.iii.7]. Hume's account treats beliefs principally as occurrences; Braithwaite and Gertler have partly followed him [@schwitzgebel2024, § 2.1]. The theories in "The positions" below look elsewhere: to what a belief represents, what it disposes you to do, or what norm governs it.
 
 :::
 
@@ -109,7 +109,7 @@ Peirce gives the dispositional view of belief its classic form: a belief is a **
 4. So she rationally believes both that all her claims are true and that not all of them are.
 :::
 
-[@sorensen2024, § 4]. Raymond Wilder apologised in the preface of his 1952 textbook for the errors it must contain; the 1982 reprint, Sorensen notes, has three pages of errata. The preface paradox matters because it "does not rely on a probabilistic acceptance rule": the author's modesty is a qualitative judgment, so restricting the Lockean threshold cannot dissolve it [@sorensen2024, § 4].
+[@sorensen2024, § 4]. Raymond Wilder apologised in the preface of his 1952 textbook for the errors in the text; the 1982 reprint, Sorensen notes, has three pages of errata. The preface paradox matters because it "does not rely on a probabilistic acceptance rule": the author's modesty is a qualitative judgment, so restricting the Lockean threshold cannot dissolve it [@sorensen2024, § 4].
 
 ::: argument The Lockean thesis from James's two goals
 1. Believing a truth has some value *R*; believing a falsehood has some cost *W*.
@@ -118,7 +118,7 @@ Peirce gives the dispositional view of belief its classic form: a belief is a **
 4. So she should believe *X* exactly when *p* > *W* / (*R* + *W*).
 :::
 
-[@pettigrew2024, §§ 4–4.2]. This derivation, due to Hempel and developed by Easwaran and Dorst, gives the Lockean thesis a rationale: the threshold is the exchange rate between James's commandments "Believe truth!" and "Shun error!". Pettigrew calls the assumption in premise 1 "Jamesian" for that reason. If error is three times as bad as truth is good, the threshold is 0.75; if they are equal, 0.5 [@pettigrew2024, §§ 4, 4.2]. See [Epistemology is normative](deeper:01-what-is-epistemology/epistemology-is-normative) for James's side of this.
+[@pettigrew2024, §§ 4–4.2]. This derivation, due to Hempel and developed by Easwaran and Dorst, gives the Lockean thesis a rationale: the threshold is the exchange rate between James's commandments "Believe truth!" and "Shun error!" [@james1897, 17–18]. Pettigrew calls the assumption in premise 1 "Jamesian" for that reason. If error is three times as bad as truth is good, the threshold is 0.75; if they are equal, 0.5 [@pettigrew2024, §§ 4, 4.2]. See [Epistemology is normative](deeper:01-what-is-epistemology/epistemology-is-normative) for James's side of this.
 
 ### The positions
 
@@ -126,17 +126,26 @@ Peirce gives the dispositional view of belief its classic form: a belief is a **
 
 | View | Who | Core claim | The main objection |
 |---|---|---|---|
-| Representationalism | Fodor, Dretske, Mandelbaum | To believe *P* is to have a stored representation with the content *P* | Beings could behave just like believers without inner representations of that kind |
+| Representationalism | Fodor, Dretske, Mandelbaum | To believe *P* is to have a stored representation with the content *P* | An alien who behaves exactly like us seems to share our beliefs, whatever is inside his head (Schwitzgebel's "Rudolfo") |
 | Dispositionalism | Braithwaite, Marcus and others | To believe *P* is to be disposed to act, speak and react as if *P* | The same belief leads to different behaviour depending on other beliefs and desires |
 | Normativism | Shah and Velleman, Engel | It is essential to belief that it is correct only if true | Gives a necessary condition, not a full account |
 | The Lockean thesis | Locke (suggested), Foley | Belief is credence above a threshold | The lottery paradox |
-| Belief and credence as separate states | (various) | Neither reduces to the other | Why have both? |
+| Belief–credence dualism | Staffel, Buchak, Jackson, Weisberg | Neither reduces to the other | The Bayesian Challenge: what does belief add? |
 
 :::
 
-[@schwitzgebel2024, §§ 1.1–1.2, 1.6; @pettigrew2024, § 4.2; @geninhuber2026, § 4.2.2]
+[@schwitzgebel2024, §§ 1.1–1.2, 1.6; @pettigrew2024, § 4.2; @geninhuber2026, §§ 4.1, 4.2.2; @carter-sosa2026, § 2.2]
 
-TODO-NOW-BCA
+### Where the debate stands
+
+Whether belief or credence is more basic is "one of the most significant divides in contemporary epistemology" [@carter-sosa2026, § 2.2]. There are four main answers:
+
+- **Eliminativism.** Get rid of one attitude. Richard Jeffrey thought talk of full belief would be superseded by degrees of belief: "I am inclined to think Ramsey sucked the marrow out of the ordinary notion" [@geninhuber2026, § 4.1]. Richard Holton holds the reverse, affirming beliefs and denying that credences exist [@carter-sosa2026, § 2.2]. Both are minority views.
+- **Credence-first.** Belief is a kind of credence or reducible to it (Wedgwood, Greco, Weatherson) [@carter-sosa2026, § 2.2].
+- **Belief-first.** Credence is a kind of belief, for instance belief about probabilities (Moon and Jackson, Holton, Easwaran) [@carter-sosa2026, § 2.2].
+- **Dualism.** Both exist and neither reduces to the other (Staffel, Buchak, Jackson, Weisberg) [@carter-sosa2026, § 2.2].
+
+The defender of full belief faces what Mark Kaplan calls the **Bayesian Challenge**: Bayesian decision theory needs only credences and utilities, so what does belief add? Genin and Huber note that this may be "an accident of history": had a theory of qualitative decision-making been developed first, "the shoe would now be on the other foot". The Bayesian's position would be weaker still if the qualitative decision-making we seem to use as a matter of course proved less cognitively demanding [@geninhuber2026, § 4.1]. Formal alternatives to probability exist too: ranking theory gives a notion of qualitative belief that "incurs no Lottery-style paradoxes" [@geninhuber2026, § 3.5].
 
 ## Beyond the chapter
 
@@ -145,13 +154,13 @@ TODO-NOW-BCA
 - **Acceptance's critics.** Chignell warns that acceptance "is typically a technical notion and characterizations of its nature and ethics differ radically in the literature" [@chignell2018, § 7]. Cohen's definition is the clearest: to accept *p* is "to have or adopt a policy of deeming, positing, or postulating that p" as a premise for deciding what to do or think in a context, "whether or not one feels it to be true that p" [@bishop-mckaughan2023, § 8; @cohen1992, 4].
 - **Faith without belief.** On "non-doxastic" accounts, faith is a practical commitment that need not include belief; William Alston suggested faith may involve acceptance rather than belief [@bishop-mckaughan2023, § 8].
 - **Imagination and supposition.** Philosophers disagree on how they differ: by content (imagining is richer and more sensory) or by function (imagining produces emotion and "imaginative resistance" to morally repugnant scenarios; supposing does not), and some doubt they differ in kind at all [@munro-etal2026, § 2.5].
-- **Belief as aiming at truth.** It is widely held that belief has a constitutive aim or norm of truth: an attitude that is not correct only if true is not a belief. Some argue that this is what distinguishes belief from acceptance [@schwitzgebel2024, § 1.6].
+- **Belief as aiming at truth.** Many philosophers hold that belief by definition aims at truth: an attitude that does not aim at truth is not a belief [@boespflug-jackson2024, § 3.2]. Engel argues that this is what distinguishes belief from acceptance: belief is the only attitude whose "correctness condition" is truth [@schwitzgebel2024, § 1.6].
 - **Clifford on acting under uncertainty.** Even the strictest evidentialist granted that "there are many cases in which it is our duty to act upon probabilities, although the evidence is not such as to justify present belief" [@clifford1879, 189]: in effect, acceptance without belief.
 
 ### What the chapter simplifies
 
 - **"Beliefs are commonly understood as dispositional."** Two claims hide here. That most beliefs are *held* dispositionally (not occurrently) is uncontroversial. That belief *is* a disposition is one theory among several [@schwitzgebel2024, §§ 1.2, 2.1].
-- **Knowledge and belief.** Gettier's famous paper stated three versions of the justified-true-belief analysis: with "believes", "accepts" and "is sure that". Epistemologists have treated them as equivalent [@ichikawa-steup2026, § 1.2]. The difference between belief and acceptance was not in view.
+- **Knowledge and belief.** Gettier's famous paper stated three versions of the justified-true-belief analysis: with "believes", "accepts" and "is sure that". Epistemologists have tended to follow him in treating them as effectively equivalent [@ichikawa-steup2026, § 1.2]. The difference between belief and acceptance was not in view.
 - **The Lockean threshold "say 0.95".** The Lockean thesis is a family of norms, one for each threshold; nothing fixes the number except, on the derivation above, how you weigh truth against error [@pettigrew2024, § 4.2].
 
 ### Connections

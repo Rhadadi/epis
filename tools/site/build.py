@@ -2543,8 +2543,36 @@ def deeper_problems(sid, pg, chapter_heads, sources, prov):
     return errs
 
 
+AFTER_BLOCK = re.compile(r"\n[ \t]*\n(\[@[^\[\]]+\])\.?[ \t]*")  # a citation opening the paragraph right after a block
+
+
+def lift_block_sources(text):
+    """Move a citation that opens the paragraph right after a block onto the block's title line."""
+    out, pos = [], 0
+    for m in BLOCK.finditer(text):
+        a = AFTER_BLOCK.match(text, m.end())
+        if a:
+            eol = text.index("\n", m.start())
+            out.append(text[pos:eol].rstrip() + " " + a.group(1) + text[eol:m.end()] + "\n\n")
+            pos = a.end()
+    return "".join(out) + text[pos:]
+
+
+def label_cells(body):
+    """Give each table cell its column heading, so a narrow screen can show a row as a small card."""
+    def table(m):
+        heads = [re.sub(r"<[^>]+>", "", h).strip() for h in re.findall(r"<th[^>]*>(.*?)</th>", m.group(0), re.S)]
+        def row(r):
+            names = iter(heads)
+            return re.sub(r"<td(?=[ >])", lambda c: f'<td data-label="{html.escape(next(names, ""), quote=True)}"', r.group(0))
+        return re.sub(r"<tr>.*?</tr>", row, m.group(0), flags=re.S)
+    return re.sub(r"<table>.*?</table>", table, body, flags=re.S)
+
+
 def deeper_blocks(text):
-    """::: original|argument|timeline|positions|box [title] ... ::: as a styled box around ordinary Markdown."""
+    """::: original|argument|timeline|positions|box [title] ... ::: as a styled box around ordinary Markdown.
+    A citation that opens the paragraph right after a block gives the block's sources; it goes on the block's title."""
+    text = lift_block_sources(text)
     def box(m):
         kind, title, inner = m.group(1), (m.group(2) or "").strip(), m.group(3)
         label = BLOCK_KINDS.get(kind, "")
@@ -2569,7 +2597,7 @@ def deeper_body(ch, sid, pg, md, sources, prov):
         m = re.match(r"^deeper:(\d\d-[\w-]+)/([\w-]+)$", href)  # another Deeper study page
         return f"../{m.group(1)}/{m.group(2)}.html" if m else href
     body, heads = md.render(text, rewrite)
-    body = polish(body)
+    body = label_cells(polish(body))
     annotations = {s["key"]: s["annotation"] for s in (prov or {}).get("sources", []) if s.get("annotation")}
     order, notes_n = [], 0
     def remember(k):
@@ -2624,6 +2652,20 @@ def deeper_body(ch, sid, pg, md, sources, prov):
     chooser = ('<nav class="deep-choose" aria-label="What brought you here?"><span class="kicker">What brought you here?</span>'
                + "".join(f'<a href="#{lid}"><b>{reason}</b><span>{what}</span></a>' for lid, _, reason, what in present) + "</nav>")
     return out[0] + chooser + "".join(out[1:]), heads
+
+
+def first_sentences(text, n):
+    """The first n sentences of text, never cut inside a quotation."""
+    inq, cuts = False, []
+    for i, c in enumerate(text):
+        if c == '"':
+            inq = not inq
+        after = text[i + 1:i + 2]
+        if not inq and (after == "" or after.isspace()) and (c in ".!?" or (c == '"' and text[i - 1:i] in (".", "!", "?"))):
+            cuts.append(i + 1)
+            if len(cuts) == n:
+                break
+    return text[:cuts[-1]].strip() if cuts else text.strip()
 
 
 def deeper_words(text):
@@ -2690,10 +2732,9 @@ def build_deeper(chapters, md, art):
             built.add(f"{slug}/{sid}.html")
             short = re.match(r"\s*> \*\*In short\.\*\*\s*(.+?)(?:\n\n|\n(?!>))", pg["text"], re.S)
             gist = re.sub(r"\s*\n>\s*", " ", short.group(1)) if short else ""
-            gist = CITE.sub("", gist)
-            gist = re.split(r"(?<=[.!?])\s", gist, maxsplit=2)
+            gist = first_sentences(CITE.sub("", gist), 2)
             rows.append(f'<li><a href="{sid}.html"><span class="kicker">{"Full study" if tier == "A" else "Short study"} · {minutes} min'
-                        f'{" · draft" if draft else ""}</span><b>{title}</b><span class="gist">{md.inline(" ".join(gist[:2]))}</span></a></li>')
+                        f'{" · draft" if draft else ""}</span><b>{title}</b><span class="gist">{md.inline(gist)}</span></a></li>')
         hub = (hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=html.escape(ch.title), cls="band",
                     lede="For when a section didn't click, or left you wanting more: each page explains the idea again, "
                          "tells the full story, fills in what the chapter leaves out, and gives the sources.")

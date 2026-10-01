@@ -1,0 +1,988 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "three-kinds-of-knowing",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What did Russell mean by knowledge by acquaintance and knowledge by description?",
+    "Mary's room: what does the knowledge argument show, and how have physicalists replied?",
+    "Knowledge by presence in Islamic philosophy: Suhrawardi's ilm huduri and self-awareness",
+    "Is understanding a kind of knowledge? Knowing why, explanatory understanding and its value",
+    "Who first drew the distinction between knowledge by acquaintance and knowledge about or by description?",
+    "What are the main arguments for and against intellectualism about knowing how, and where does the debate stand?",
+    "How do the main responses to Jackson's knowledge argument use the distinctions among kinds of knowing?",
+    "How did Aristotle contrast experience (empeiria) with craft (technē)?",
+    "What did Wang Yangming mean by the unity of knowing and acting?"
+  ],
+  "sources": [
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "knowing whether as propositional knowledge"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Sooyung can know whether the shop is open by knowing that the shop is not open.",
+          "corpus_chunk": 1578
+        }
+      ],
+      "annotation": "The SEP entry on the analysis of knowledge."
+    },
+    {
+      "key": "pavese2022",
+      "used_for": [
+        "swimming counterexample; practical modes",
+        "gradability",
+        "intellectualism and anti-intellectualism",
+        "ski instructor and pianist; general vs circumstantial ability",
+        "articulability; manuals",
+        "Ryle's regress; Ginet; Stanley",
+        "sufficiency argument",
+        "linguistic argument",
+        "cognitive-science argument and HM",
+        "ball players; lucky light bulb; animals",
+        "revisionary intellectualism; ability views",
+        "skill; technē; phenomenology",
+        "psychologists citing Ryle"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "where he raised some of the now classical objections to the so-called “intellectualist legend”: the view that knowledge-how amounts to knowledge-that",
+          "corpus_chunk": 680
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "knowledge-how and knowledge-that are distinct kinds of knowledge, and manifestations of knowledge-how are not necessarily manifestations of knowledge-that",
+          "corpus_chunk": 681
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Even psychologists and neuroscientists have explicitly appealed to Ryle’s classical distinction when discussing their empirical findings",
+          "corpus_chunk": 681
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The consideration of propositions is itself an operation the execution of which can be more or less intelligent",
+          "corpus_chunk": 684
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "it would be a logical impossibility for anyone ever to break into the circle",
+          "corpus_chunk": 684
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Exactly how to reconstruct Ryle’s argument is a matter of controversy",
+          "corpus_chunk": 684
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Ginet (1975: 7) observes that one might manifest one’s knowledge that one can get the door open by turning the knob and pushing it",
+          "corpus_chunk": 688
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "only that knowledge can be acted upon and manifested without requiring any contemplation on the part of the agent",
+          "corpus_chunk": 688
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "But employing one’s knowledge-how is an action.",
+          "corpus_chunk": 690
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "it looks like any regress generated for the intellectualist is generated for Ryle as well (Stanley 2011b: 14, 26",
+          "corpus_chunk": 692
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "there is no truth or set of truths of which we could say “If only the stupid player had been informed of them, he would be a clever player”",
+          "corpus_chunk": 698
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "my swimming instructor pointing to the swimmer says to me, “That is a way in which you could swim too”",
+          "corpus_chunk": 699
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If thrown in the swimming pool, I might still drown.",
+          "corpus_chunk": 699
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "intellectualists often appeal to “practical modes of presentation”: knowing a proposition observationally or demonstratively is not the same as knowing it practically",
+          "corpus_chunk": 700
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "on the ground that it seems excessively obscure or even question begging",
+          "corpus_chunk": 701
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Koethe (2002: 327) worries that practical modes of presentation smuggle in an antecedent notion of knowledge-how",
+          "corpus_chunk": 701
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "it is proper and normal to speak of a person knowing in part how to do something",
+          "corpus_chunk": 708
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Truths can be imparted, procedures can only be inculcated",
+          "corpus_chunk": 708
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "“S knows + Q” is true just in case S knows a proposition answering to the question expressed by Q",
+          "corpus_chunk": 713
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "knowing how to Φ requires knowing a proposition that answers the question “how can one Φ?”",
+          "corpus_chunk": 714
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "“S knows how to Φ” is true just in case S knows a proposition answering the question “How could they themselves Φ?”",
+          "corpus_chunk": 716
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "a pianist who lost their arms in a car accident may have lost her ability to play but still preserve her knowledge-how to play the piano",
+          "corpus_chunk": 735
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "a ski instructor might know how to do a ski stunt and, according to Stanley & Williamson (2001), still fail to have the ability to do it",
+          "corpus_chunk": 735
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "anti-intellectualists argue that it is important to distinguish between knowing how to perform a task, which corresponds to a general ability, and being (actually and circumstantially) able to perform it",
+          "corpus_chunk": 736
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "ability is not sufficient for knowledge-how",
+          "corpus_chunk": 736
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "When catching a ball, ball players make anticipatory saccades to shift their gaze ahead of the ball",
+          "corpus_chunk": 745
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Rather they believe that they are tracking the ball the whole time.",
+          "corpus_chunk": 745
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "from the fact that the subject has false beliefs about how she catches the ball, it does not follow that the subject does not also have correct beliefs about it",
+          "corpus_chunk": 745
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Cath (2011) responds by proposing the Lucky Light Bulb case",
+          "corpus_chunk": 748
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "for the disgruntled author of The Idiot’s Guide filled her book with otherwise misleading instructions",
+          "corpus_chunk": 749
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Cath (2011) argues that intuitively Charlie still knows how to fix the light bulb, despite his belief being Gettiered",
+          "corpus_chunk": 749
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "intuitions are subtle and not all of them favor anti-intellectualism",
+          "corpus_chunk": 750
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "C1 The procedural system is distinct from the declarative system.",
+          "corpus_chunk": 755
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "C2 Motor knowledge-how is encoded entirely by the procedural system.",
+          "corpus_chunk": 755
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "C3 All propositional knowledge is encoded entirely in the declarative system.",
+          "corpus_chunk": 755
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "HM was unable to form new memories of facts or events",
+          "corpus_chunk": 756
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "over 10 trials, HM tuned his motor skill to trace the outline of a five-pointed star based only on looking at reflection in a mirror",
+          "corpus_chunk": 756
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "HM’s declarative knowledge of the means of performing the task did not change from one trial to the next",
+          "corpus_chunk": 756
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "HM was able to perform the motor task only after being reminded of what the task consisted in",
+          "corpus_chunk": 757
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "This suggests, against C2, that there was an important declarative component",
+          "corpus_chunk": 757
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "often subjects know how to perform tasks even though they cannot explain how they do it",
+          "corpus_chunk": 759
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "there do seem to be cases in which you come to know how to do something precisely by consulting a manual",
+          "corpus_chunk": 759
+        },
+        {
+          "locator": "§ 7.3",
+          "basis": "full text",
+          "excerpt": "it seems to conflate knowing how to perform a task with knowing how to explain how the task is performed",
+          "corpus_chunk": 759
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "babies and non-human animals can know how to perform certain tasks, while lacking the concepts that are required for propositional knowledge",
+          "corpus_chunk": 762
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "we say that Fido knows that its owner is arriving",
+          "corpus_chunk": 762
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "Comparative psychologists do routinely credit many non-human and non-linguistic animals with the possession of concepts.",
+          "corpus_chunk": 762
+        },
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "This response might be less plausible, though, when it comes to lower animals, or insects.",
+          "corpus_chunk": 763
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Revisionary intellectualism, instead, contends that although knowledge-how is a kind of knowledge-that, the relevant knowledge is sui generis",
+          "corpus_chunk": 764
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Brogaard (2009, 2011) argues that, in general, knowledge can have cognitive abilities or practical abilities as its justificatory grounds",
+          "corpus_chunk": 764
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "can therefore constitute knowledge-that even if Gettierized",
+          "corpus_chunk": 765
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "knowing something in “the executive way”",
+          "corpus_chunk": 765
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "Anti-intellectualism of this sort has been voiced by Lewis (1990)",
+          "corpus_chunk": 767
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "few theorists nowadays identify knowledge-how with bare abilities",
+          "corpus_chunk": 767
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "The most recent debate on knowledge-how has intertwined with a debate on the nature of skills.",
+          "corpus_chunk": 771
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "While there is no consensus on what counts as a skill, by and large people take skills to manifest in purposeful and goal-directed activities and to be learnable and improvable through practice",
+          "corpus_chunk": 771
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "Skills are usually contrasted with knacks (or mere talents).",
+          "corpus_chunk": 771
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "Some contrast them with habits",
+          "corpus_chunk": 771
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "both Plato and Aristotle took technē to be a kind of knowledge",
+          "corpus_chunk": 772
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "Merleau-Ponty thought that motor intentionality is non-representational and non-conceptual",
+          "corpus_chunk": 773
+        },
+        {
+          "locator": "§ 9.1",
+          "basis": "full text",
+          "excerpt": "This phenomenological tradition inspires Dreyfus’",
+          "corpus_chunk": 773
+        }
+      ],
+      "annotation": "Carlotta Pavese's SEP survey of knowledge-how, the backbone of this page."
+    },
+    {
+      "key": "james1890",
+      "used_for": [
+        "two kinds of knowledge; languages; blind man",
+        "relativity; grammar",
+        "credit to Grote"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "_There are two kinds of knowledge_ broadly and practically distinguishable: we may call them respectively _knowledge of acquaintance_ and _knowledge-about_.",
+          "corpus_chunk": 20180
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "Most languages express the distinction",
+          "corpus_chunk": 20180
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "noscere, scire; kennen, wissen; connaître, savoir_.",
+          "corpus_chunk": 20180
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "I know the color blue when I see it, and the flavor of a pear when I taste it",
+          "corpus_chunk": 20180
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "but _about_ the inner nature of these facts or what makes them what they are, I can say nothing at all",
+          "corpus_chunk": 20181
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "I cannot impart acquaintance with them to any one who has not already made it himself.",
+          "corpus_chunk": 20181
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "I cannot _describe_ them, make a blind man guess what blue is like",
+          "corpus_chunk": 20181
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "the same thought of a thing may be called knowledge-about it in comparison with a simpler thought, or acquaintance with it in comparison with a thought of it that is more articulate",
+          "corpus_chunk": 20182
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "stands for an object of acquaintance which, by the addition of the predicate, is to get something known about it",
+          "corpus_chunk": 20182
+        },
+        {
+          "locator": "ch. VIII, n. 214",
+          "basis": "full text",
+          "excerpt": "Cf. John Grote: Exploratio Philosophica, p. 60; H. Helmholtz, Popular Scientific Lectures",
+          "corpus_chunk": 20189,
+          "note": "James's footnote 214 is attached to the sentence 'Most languages express the distinction'"
+        }
+      ],
+      "annotation": "James's chapter on cognition, where the acquaintance/knowledge-about distinction enters modern philosophy."
+    },
+    {
+      "key": "hasan-fumerton2024",
+      "used_for": [
+        "Russell's dates; acquaintance nonpropositional",
+        "the myth of the given; disagreement among defenders"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "let us briefly examine how its originator, Bertrand Russell, characterized it (see Russell 1910–11 and 1912: Ch. 5)",
+          "corpus_chunk": 1337
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "for Russell acquaintance is nonjudgmental or nonpropositional",
+          "corpus_chunk": 1349
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the idea that some things can simply be “given” to the subject has often been denounced as a “myth” (Sellars 1963), and those committed to acquaintance disagree about its nature and its objects",
+          "corpus_chunk": 1358
+        }
+      ],
+      "annotation": "The SEP survey of acquaintance and description."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "acquaintance defined; foundation",
+        "objects of acquaintance; places and people by description",
+        "Bismarck; fundamental principle"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "We shall say that we have _acquaintance_ with anything of which we are directly aware, without the intermediary of any process of inference or any knowledge of truths.",
+          "corpus_chunk": 5764
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "All our knowledge, both knowledge of things and knowledge of truths, rests upon acquaintance as its foundation.",
+          "corpus_chunk": 5767
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "we have acquaintance in memory with things which have been data either of the outer senses or of the inner sense",
+          "corpus_chunk": 5774
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "it is probable, though not certain, that we have acquaintance with Self",
+          "corpus_chunk": 5774
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "we also have acquaintance with what we shall call _universals_",
+          "corpus_chunk": 5774
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "among the objects with which we are acquainted are not included physical objects (as opposed to sense-data), nor other people's minds",
+          "corpus_chunk": 5775
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "All names of places--London, England, Europe, the Earth, the Solar System--similarly involve, when used, descriptions",
+          "corpus_chunk": 5783
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "His body, as a physical object, and still more his mind, were only known as the body and the mind connected with these sense-data.",
+          "corpus_chunk": 5780
+        },
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "_Every proposition which we can understand must be composed wholly of constituents with which we are acquainted_",
+          "corpus_chunk": 5787
+        }
+      ],
+      "annotation": "Russell's chapter 'Knowledge by Acquaintance and Knowledge by Description'."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "kinds of knowing not settled by the lexicon"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "is not something that can be determined solely by appeal to the lexicon of any particular natural language",
+          "corpus_chunk": 509
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology."
+    },
+    {
+      "key": "parry2024",
+      "used_for": [
+        "Aristotle on empeiria and technē",
+        "craftsman wiser than the empiric"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "At the beginning of the Metaphysics, Aristotle says that the person with epistêmê and the person with technê share an important similarity.",
+          "corpus_chunk": 30623
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The former knows that, when Callias had such and such disease, thus and such helped him, and the same for Socrates and many others.",
+          "corpus_chunk": 30624
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "the person who has a technê goes beyond experience to a universal judgment",
+          "corpus_chunk": 30624
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "the master craftsman (technitês) is wiser than the person of experience because he knows the cause",
+          "corpus_chunk": 30624
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "the one with experience may be more effective than the inexperienced person who has only the rational account",
+          "corpus_chunk": 30645
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Still, we think the craftsman wiser than the empiric because of his knowledge of the account (Metaphysics 981a 5–30)",
+          "corpus_chunk": 30645,
+          "note": "Parry's paraphrase of Aristotle, quoted as such on the page"
+        }
+      ],
+      "annotation": "The SEP entry on epistēmē and technē."
+    },
+    {
+      "key": "vannorden2024",
+      "used_for": [
+        "Wang's dates and place",
+        "unity of knowing and acting; bookworms",
+        "lovely sight; stuffed-up nose",
+        "the objection from motivation"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Wang Yangming (1472–1529) was a Chinese statesman, general, and Neo–Confucian philosopher.",
+          "corpus_chunk": 30873
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "He was one of the leading critics of the orthodox Neo–Confucianism of Zhu Xi (1130–1200).",
+          "corpus_chunk": 30873
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "unity of knowing and acting",
+          "corpus_chunk": 30896
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "“separate knowing and acting into two distinct tasks to perform and think that one must first know and only then can one act.”",
+          "corpus_chunk": 30901
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "they become nothing more than pedantic bookworms",
+          "corpus_chunk": 30901
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Seeing a lovely sight is a case of knowing, while loving a lovely sight is a case of acting.",
+          "corpus_chunk": 30911
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "As soon as one sees that lovely sight, one naturally loves it.",
+          "corpus_chunk": 30911
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is not as if you first smell it and only then, intentionally, you decide to hate it.",
+          "corpus_chunk": 30912
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Consider the case of a person with a stuffed–up nose.",
+          "corpus_chunk": 30912
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This is simply not to know the hateful odor.",
+          "corpus_chunk": 30912
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "one might object that Wang’s examples show, at most, that knowing something is good or bad requires that one have some level of appropriate motivation",
+          "corpus_chunk": 30899
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "it is possible to have an intrinsic motivation that does not result in action",
+          "corpus_chunk": 30900
+        }
+      ],
+      "annotation": "Bryan Van Norden's SEP entry on Wang Yangming."
+    },
+    {
+      "key": "nidarumelin-oconaill2026",
+      "used_for": [
+        "Mary; premise 1",
+        "survey",
+        "ability and acquaintance hypotheses",
+        "Jackson's later view"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Frank Jackson (1982) formulates the intuition underlying his Knowledge Argument in a much cited passage using his famous example of the neurophysiologist Mary",
+          "corpus_chunk": 1467
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "(1) Mary has all the physical information concerning human color vision before her release.",
+          "corpus_chunk": 1468
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "82% of respondents in a survey answered that Mary in the room would not know what it is like to see red",
+          "corpus_chunk": 1494
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "According to the Ability Hypothesis (most prominently defended in Lewis 1983, 1988 and in Nemirow 1980, 1990, 2007), Mary does not acquire any new propositional knowledge after release",
+          "corpus_chunk": 1498
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "but only a bundle of abilities (like the ability to imagine, remember and recognize colors or color experiences)",
+          "corpus_chunk": 1498
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "According to Nemirow “knowing what an experience is like is the same as knowing how to imagine having the experience”",
+          "corpus_chunk": 1498
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "According to the Acquaintance Hypothesis proposed by Conee (1994), Mary’s new knowledge after release is what he calls “acquaintance knowledge” which is neither propositional knowledge nor identical to a bundle of abilities.",
+          "corpus_chunk": 1498
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "he argues that the argument goes wrong in presupposing a false view about sensory experience",
+          "corpus_chunk": 1552
+        }
+      ],
+      "annotation": "The SEP survey of the knowledge argument."
+    },
+    {
+      "key": "kremer2017",
+      "used_for": [
+        "Ryle's targets were real; a third way"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 1",
+          "basis": "full text",
+          "excerpt": "was not criticizing a straw man",
+          "corpus_chunk": 29727
+        },
+        {
+          "locator": "p. 1",
+          "basis": "full text",
+          "excerpt": "Ryle’s position represents a third way between “intellectualism” and “anti-intellectualism,” an option that has largely gone missing",
+          "corpus_chunk": 29727
+        }
+      ],
+      "annotation": "Kremer's paper in the 2017 special issue on Ryle."
+    },
+    {
+      "key": "small2017",
+      "used_for": [
+        "Ryle's interest action-theoretical"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 1",
+          "basis": "full text",
+          "excerpt": "whose primary interest in discussing knowledge how was not epistemological but rather action-theoretical",
+          "corpus_chunk": 29594
+        },
+        {
+          "locator": "p. 1",
+          "basis": "full text",
+          "excerpt": "whose argument against intellectualism has for this reason been misunderstood and underestimated",
+          "corpus_chunk": 29594
+        }
+      ],
+      "annotation": "Small's paper in the 2017 special issue on Ryle."
+    },
+    {
+      "key": "backstrom-gustafsson2017",
+      "used_for": [
+        "Ryle not a behaviorist; broader target"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 1–2",
+          "basis": "full text",
+          "excerpt": "his dispositional account is not an instance of reductionist behaviorism",
+          "corpus_chunk": 29886
+        },
+        {
+          "locator": "pp. 1–2",
+          "basis": "full text",
+          "excerpt": "his regress argument has a broader target than Stanley appears to recognize",
+          "corpus_chunk": 29886
+        },
+        {
+          "locator": "pp. 1–2",
+          "basis": "full text",
+          "excerpt": "Special Issue: GilbertRyle:Intelligence,Practice,Skill",
+          "corpus_chunk": 29886,
+          "note": "special-issue header as extracted from the PDF"
+        }
+      ],
+      "annotation": "Bäckström and Gustafsson's paper in the 2017 special issue on Ryle."
+    },
+    {
+      "key": "grimm2025",
+      "used_for": [
+        "Kvanvig on the value of understanding",
+        "testimony",
+        "luck"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Jonathan Kvanvig forcefully argued that while understanding is distinctively valuable from an epistemic point of view",
+          "corpus_chunk": 1699
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Supposing that understanding cannot be transmitted by testimony",
+          "corpus_chunk": 1743
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Others have argued that understanding is not, in fact, so difficult to transmit.",
+          "corpus_chunk": 1743
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "philosophers such as Pritchard and Alison Hills hold that understanding does tolerate certain kinds of luck, and in a way that propositional knowledge does not",
+          "corpus_chunk": 1733
+        }
+      ],
+      "annotation": "The SEP entry on understanding."
+    },
+    {
+      "key": "marcotte2025",
+      "used_for": [
+        "Suhrawardi's knowledge by presence"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "the concepts of ‘self-awareness’ (shu‘ur bi-l-dhat) and ‘knowledge by presence’ (‘ilm huduri)",
+          "corpus_chunk": 6596
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "he criticizes and then rejects Avicenna’s Peripatetic ‘representational’ epistemology",
+          "corpus_chunk": 6596
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "introducing intellection as “the presence (hudur) of a thing for a self (dhat)”",
+          "corpus_chunk": 6601
+        }
+      ],
+      "annotation": "The SEP entry on Suhrawardi."
+    },
+    {
+      "key": "russell1911",
+      "used_for": [
+        "the 1910–11 paper"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "cited as Russell 1910–11 in hasan-fumerton2024 § 1 (corpus chunk 1337); details from Crossref"
+        }
+      ],
+      "annotation": "Russell's paper on acquaintance and description."
+    },
+    {
+      "key": "ryle1946",
+      "used_for": [
+        "Knowing How and Knowing That"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 5 (as cited)",
+          "basis": "secondary",
+          "note": "quoted as Ryle 1946: 5 in pavese2022 § 2 (corpus chunk 698); details from Crossref"
+        }
+      ],
+      "annotation": "Ryle's 1946 paper."
+    },
+    {
+      "key": "ryle1949",
+      "used_for": [
+        "the regress argument; the intellectualist legend"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 19–20 (as cited)",
+          "basis": "secondary",
+          "note": "quoted as Ryle 1949: 19–20 in pavese2022 § 1 (corpus chunk 684); details from Open Library"
+        }
+      ],
+      "annotation": "Ryle's The Concept of Mind."
+    },
+    {
+      "key": "jackson1982",
+      "used_for": [
+        "Mary"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "the Mary passage as quoted in nidarumelin-oconaill2026 § 2 (corpus chunk 1467); details from Crossref"
+        }
+      ],
+      "annotation": "Jackson's 'Epiphenomenal Qualia'."
+    },
+    {
+      "key": "stanley-williamson2001",
+      "used_for": [
+        "intellectualism revived; linguistic argument"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "the argument as reported in pavese2022 §§ 2, 4–5 (corpus chunks 700, 713–716, 735); details from Crossref"
+        }
+      ],
+      "annotation": "Stanley and Williamson's 'Knowing How'."
+    }
+  ]
+}

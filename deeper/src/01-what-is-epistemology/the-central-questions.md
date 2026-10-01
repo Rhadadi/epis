@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** Epistemology's many topics come back to a few questions: What is knowledge? What makes a belief justified? Where does knowledge come from? How much do we know? Two of them seem to come before all the rest, *What do we know?* and *How do we know?*, and they trap us in a circle: to say what we know, we need a test for knowledge; to test the test, we need cases of knowledge. This is **the problem of the criterion**, one of the oldest puzzles in philosophy, and there is still no agreed way out.

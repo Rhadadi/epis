@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** Critical thinking asks "Is this true? How do they know? Should I trust this source?" Those are epistemology's questions, asked quickly. Epistemology supplies the standards: what counts as evidence, when a belief is justified, when testimony deserves trust. But critical thinking is more than knowing the standards. It is also a set of habits and attitudes, which is why the people who study it describe it more broadly than "applied epistemology".

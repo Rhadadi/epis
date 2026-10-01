@@ -1,0 +1,837 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "belief-credence-and-acceptance",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is acceptance, as distinct from belief? Acceptance in a context and acceptance of scientific theories",
+    "How do imagination, supposition and faith differ from belief?",
+    "Should the strength of our assent match the strength of the evidence? Degrees of assent and the ethics of proportioning belief",
+    "What is belief? Representationalism, dispositionalism and normativism",
+    "What is credence, and what are the core norms of Bayesian epistemology?",
+    "What is the Lockean thesis, and what do the lottery and preface paradoxes show about it?",
+    "Is belief or credence more fundamental?",
+    "How did Locke, Hume and Peirce understand belief and its degrees?"
+  ],
+  "sources": [
+    {
+      "key": "schwitzgebel2024",
+      "used_for": [
+        "dispositional vs occurrent",
+        "acceptance: scientist, ladder, van Fraassen",
+        "representationalism; Rudolfo",
+        "dispositionalism and its objections; church in Nice",
+        "conviction view; Hume as occurrentist",
+        "normativism; Engel"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Philosophers often distinguish dispositional (alternatively, standing) from occurrent belief.",
+          "corpus_chunk": 1015
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Corina is asleep",
+          "corpus_chunk": 1015
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "David Hume (1740) famously offers an account of belief that treats beliefs principally as occurrences",
+          "corpus_chunk": 1018
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "in which he is partly followed by Braithwaite (1932–1933) and Gertler (2007)",
+          "corpus_chunk": 1018
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "a scientist, faced with evidence supporting a theory, evidence acknowledged not to be completely decisive, may choose to accept the theory or not to accept it",
+          "corpus_chunk": 1034
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "acceptance involves a decision to cease inquiry and to act as though the matter is settled",
+          "corpus_chunk": 1034
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Van Fraassen (1980) has argued that the former attitude is common in science: the scientist often does not think that some particular theory on which their work depends is the literal truth, and thus does not believe it, but nonetheless they accept it as an adequate basis for research.",
+          "corpus_chunk": 1035
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The ladder case, due to Bratman (1999), may involve belief without acceptance",
+          "corpus_chunk": 1035
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "because so much depends on it and because it is good general policy, one nonetheless does not accept that the ladder is stable until one has checked it more carefully",
+          "corpus_chunk": 1035
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "representationalists like Fodor, Dretske, and Mandelbaum contend that having the right internal, representational structure is essential to having beliefs",
+          "corpus_chunk": 979
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Imagine that we discover an alien being, of unknown constitution and origin, whose behavior and overall behavioral dispositions are perfectly normal by human standards.",
+          "corpus_chunk": 979
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "it may seem natural to say that Rudolfo has beliefs much like ours",
+          "corpus_chunk": 979
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Perhaps we can coherently imagine that Rudolfo does not manipulate sentences in a language of thought or possess internal representational structures of the right sort.",
+          "corpus_chunk": 980
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Traditional dispositional views of belief assert that for someone to believe some proposition P is for that person to possess one or more particular behavioral dispositions pertaining to P.",
+          "corpus_chunk": 980
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Braithwaite (1932–1933) and Marcus (1990) are prominent advocates of the traditional dispositional approach to belief",
+          "corpus_chunk": 982
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "People with the same belief may behave very differently, depending on their other beliefs, desires, and so forth.",
+          "corpus_chunk": 982
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "the loose connection between belief and behavior in some cases",
+          "corpus_chunk": 984
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "an American homebody’s belief that there is at least one church in Nice",
+          "corpus_chunk": 985
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "arguing that to believe is to be disposed to feel (or to occurrently feel) conviction",
+          "corpus_chunk": 987
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Shah and Velleman (2005) argue that conceiving of an attitude as a belief that P entails conceiving of it as governed by a norm of truth",
+          "corpus_chunk": 1012
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Engel (2018) argues that among propositional attitudes, belief is the only one whose “correctness condition” is truth, distinguishing it from other closely related mental states, such as acceptances and epistemic feelings.",
+          "corpus_chunk": 1012
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Since normativism commits only to one necessary condition for a mental state to qualify as a belief, it is not by itself a full positive account of the nature of belief",
+          "corpus_chunk": 1013
+        }
+      ],
+      "annotation": "Eric Schwitzgebel's SEP entry on belief, the main secondary source for this page."
+    },
+    {
+      "key": "locke1690",
+      "used_for": [
+        "degrees of assent",
+        "two grounds of probability",
+        "assent regulated by probability",
+        "the king of Siam"
+      ],
+      "evidence": [
+        {
+          "locator": "IV.xv.2",
+          "basis": "full text",
+          "excerpt": "degrees of assent from full assurance and confidence, quite down to conjecture, doubt, and distrust",
+          "corpus_chunk": 7838
+        },
+        {
+          "locator": "IV.xv.4",
+          "basis": "full text",
+          "excerpt": "First, The conformity of anything with our own knowledge, observation, and experience.",
+          "corpus_chunk": 7840
+        },
+        {
+          "locator": "IV.xv.4",
+          "basis": "full text",
+          "excerpt": "Secondly, The testimony of others, vouching their observation and experience.",
+          "corpus_chunk": 7840
+        },
+        {
+          "locator": "IV.xv.5",
+          "basis": "full text",
+          "excerpt": "the mind, if it WILL PROCEED RATIONALLY, ought to examine all the grounds of probability, and see how they make more or less for or against any proposition",
+          "corpus_chunk": 7841
+        },
+        {
+          "locator": "IV.xv.5",
+          "basis": "full text",
+          "excerpt": "with a more or less firm assent",
+          "corpus_chunk": 7841
+        },
+        {
+          "locator": "IV.xv.5",
+          "basis": "full text",
+          "excerpt": "As it happened to a Dutch ambassador, who entertaining the king of Siam with the particularities of Holland, which he was inquisitive after, amongst other things told him, that the water in his country would sometimes, in cold weather, be so hard, that men walked upon it, and that it would bear an elephant, if he were there.",
+          "corpus_chunk": 7842
+        },
+        {
+          "locator": "IV.xv.5",
+          "basis": "full text",
+          "excerpt": "To which the king replied, HITHERTO _I_ HAVE BELIEVED THE STRANGE THINGS YOU HAVE TOLD ME, BECAUSE _I_ LOOK UPON YOU AS A SOBER FAIR MAN, BUT NOW _I_ AM SURE YOU LIE.",
+          "corpus_chunk": 7843,
+          "note": "the Gutenberg text sets the king's reply in capitals"
+        },
+        {
+          "locator": "IV.xvi.1",
+          "basis": "full text",
+          "excerpt": "Our Assent ought to be regulated by the Grounds of Probability.",
+          "corpus_chunk": 7845
+        }
+      ],
+      "annotation": "Locke's chapters on probability and degrees of assent."
+    },
+    {
+      "key": "hume1739",
+      "used_for": [
+        "belief adds no new idea; force and vivacity",
+        "definition",
+        "romance vs history"
+      ],
+      "evidence": [
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "this principle, as it plainly makes no addition to our precedent ideas, can only change the manner of our",
+          "corpus_chunk": 17731
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "So that as belief does nothing but vary the manner, in which we conceive any object, it can only bestow on our ideas an additional force and vivacity.",
+          "corpus_chunk": 17732
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "An opinion, therefore, or belief may be most accurately defined, a lively idea related to or associated with a present impression.",
+          "corpus_chunk": 17732
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "an opinion or belief is nothing but an idea, that is different from a fiction, not in the nature or the order of its parts, but in the manner of its being conceived",
+          "corpus_chunk": 17736
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "belief consists not in the nature and order of our ideas, but in the manner of their conception",
+          "corpus_chunk": 17738
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "If one person sits down to read a book as a romance, and another as a true history, they plainly receive the same ideas, and in the same order",
+          "corpus_chunk": 17739
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "The latter has a more lively conception of all the incidents.",
+          "corpus_chunk": 17739
+        },
+        {
+          "locator": "I.iii.7",
+          "basis": "full text",
+          "excerpt": "a more faint and languid conception",
+          "corpus_chunk": 17740
+        }
+      ],
+      "annotation": "Hume's account of belief in the Treatise."
+    },
+    {
+      "key": "peirce1877",
+      "used_for": [
+        "belief as habit",
+        "doubt and belief",
+        "inquiry",
+        "four methods"
+      ],
+      "evidence": [
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "The feeling of believing is a more or less sure indication of there being established in our nature some habit which will determine our actions.",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "Doubt never has such an effect.",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "Belief does not make us act at once, but puts us into such a condition that we shall behave in a certain way, when the occasion arises.",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "Doubt is an un- easy and dissatisfied state",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "calm and satis- factory state which we do not wish to avoid",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ III",
+          "basis": "full text",
+          "excerpt": "not merely to believing, but to believing just what we do believe",
+          "corpus_chunk": 26532
+        },
+        {
+          "locator": "§ IV",
+          "basis": "full text",
+          "excerpt": "The irritation of doubt causes a struggle to attain a state of belief.",
+          "corpus_chunk": 26533
+        },
+        {
+          "locator": "§ IV",
+          "basis": "full text",
+          "excerpt": "I shall term this struggle inguiry",
+          "corpus_chunk": 26533,
+          "note": "'inguiry' is an OCR error for 'inquiry' in the scanned magazine"
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "this method of fixing belief, which may be called the method of tenacity",
+          "corpus_chunk": 26540
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "Such is the method of science.",
+          "corpus_chunk": 26554
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "This is the only one of the four methods which presents any dis- tinction of a right and a wrong way.",
+          "corpus_chunk": 26556
+        }
+      ],
+      "annotation": "Peirce's 'The Fixation of Belief', from the scanned Popular Science Monthly."
+    },
+    {
+      "key": "lin2024",
+      "used_for": [
+        "two core norms",
+        "Dutch book"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Now I can sketch the two core norms in Bayesian epistemology.",
+          "corpus_chunk": 1819
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "According to the first norm, called Probabilism, one’s credences in the three possibilities in figure 1 ought to fit together so nicely that they are non-negative and sum to 1.",
+          "corpus_chunk": 1819
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "According to the second norm, called the Principle of Conditionalization",
+          "corpus_chunk": 1820
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "There is a Dutch Book argument for Probabilism (Ramsey 1926, de Finetti 1937).",
+          "corpus_chunk": 1836
+        }
+      ],
+      "annotation": "Hanti Lin's SEP entry on Bayesian epistemology."
+    },
+    {
+      "key": "pettigrew2024",
+      "used_for": [
+        "Lockean thesis: name, Foley, family",
+        "Jamesian epistemic utility; threshold theorem"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Following Kenny Easwaran (2016) and Kevin Dorst (2017), who in turn generalize Carl Hempel’s (1962) approach",
+          "corpus_chunk": 4211
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "I’ll call this the Jamesian Epistemic Utility assumption",
+          "corpus_chunk": 4211
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "= pR + (1-p)(-W)",
+          "corpus_chunk": 4214
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Expectation Theorem for the Lockean Thesis (Hempel 1962; Easwaran 2016; Dorst 2017)",
+          "corpus_chunk": 4214
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Then: If \\(p \\gt \\frac{W}{R+W}\\), then believing \\(X\\) uniquely maximizes expected epistemic utility.",
+          "corpus_chunk": 4214
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It takes its name from passages in John Locke’s (1689 [1975]) An Essay on Human Understanding in which he suggests that belief is nothing more than sufficiently high credence, but it was formulated explicitly by Richard Foley (1992).",
+          "corpus_chunk": 4215
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "the Lockean Thesis is a family of putative norms",
+          "corpus_chunk": 4215
+        }
+      ],
+      "annotation": "Richard Pettigrew's SEP entry on epistemic utility arguments."
+    },
+    {
+      "key": "sorensen2024",
+      "used_for": [
+        "lottery paradox; Kyburg",
+        "preface paradox; Wilder; Makinson"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In 1961 Henry Kyburg pointed out that this policy conflicted with a principle of agglomeration",
+          "corpus_chunk": 2050
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Kyburg rejects agglomeration.",
+          "corpus_chunk": 2053
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "He promotes toleration of joint inconsistency (having beliefs that cannot all be true together) to avoid belief in contradictions.",
+          "corpus_chunk": 2053
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In the preface of Introduction to the Foundations of Mathematics, Raymond Wilder (1952, iv) apologizes for the errors in the text.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The 1982 reprint has three pages of errata that vindicate Wilder’s humility.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Makinson (1965, 205) quotes Wilder’s 1952 apology and extracts a paradox",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The preface paradox does not rely on a probabilistic acceptance rule.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The preface belief is organically generated in a qualitative fashion.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "many philosophers join Kyburg in rejecting agglomeration and conclude that it can be rational to have jointly inconsistent beliefs",
+          "corpus_chunk": 2055
+        }
+      ],
+      "annotation": "Roy Sorensen's SEP entry on epistemic paradoxes."
+    },
+    {
+      "key": "geninhuber2026",
+      "used_for": [
+        "eliminativism; Jeffrey",
+        "Bayesian Challenge",
+        "lottery and the Lockean thesis; Douven; Korb",
+        "ranking theory"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Ranking theory also naturally gives rise to a notion of qualitative belief that incurs no Lottery-style paradoxes",
+          "corpus_chunk": 1236
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Jeffrey (1970) suggests that talk of full belief is vestigial and will be entirely superseded by talk of partial belief and utility",
+          "corpus_chunk": 1237
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "I am inclined to think Ramsey sucked the marrow out of the ordinary notion",
+          "corpus_chunk": 1237
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Theorists such as Kaplan (1996) also suggests that talk of full belief is superfluous once the mechanisms of Bayesian decision theory are in place.",
+          "corpus_chunk": 1237
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Kaplan calls this the Bayesian Challenge.",
+          "corpus_chunk": 1238
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "may be an accident of history: if a qualitative theory of practical deliberation had been developed first, the shoe would now be on the other foot",
+          "corpus_chunk": 1238
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The situation would be even more severe if qualitative decision making, which we seem to implement as a matter of course, were less cognitively demanding than its Bayesian counterpart.",
+          "corpus_chunk": 1238
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "The strong Lockean thesis gives rise to the well-known Lottery paradox, due originally to Kyburg (1961, 1997).",
+          "corpus_chunk": 1256
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Many others take the lesson of the Lottery to be that the strong Lockean thesis is untenable.",
+          "corpus_chunk": 1257
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Douven (2002) says that it is sufficient except when the proposition is a member of a probabilistically self-undermining set",
+          "corpus_chunk": 1258
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "All proposals of this kind are vitiated by the following sort of example due to Korb (1992).",
+          "corpus_chunk": 1258
+        }
+      ],
+      "annotation": "Genin and Huber's SEP entry on formal representations of belief."
+    },
+    {
+      "key": "carter-sosa2026",
+      "used_for": [
+        "belief vs credence divide; four answers; suspended judgment"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "One of the most significant divides in contemporary epistemology concerns the granularity of the target psychological phenomena of interest",
+          "corpus_chunk": 888
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "make use primarily of belief and its cognates (e.g., disbelief, and suspended judgment)",
+          "corpus_chunk": 888
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Richard Holton (2008) takes the opposite position, affirming beliefs while denying that credences exist",
+          "corpus_chunk": 889
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "These eliminativist positions are the minority",
+          "corpus_chunk": 889
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "neither is more fundamental than the other (i.e., belief-credence dualism",
+          "corpus_chunk": 889
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The former kind of position is usually described as the “belief-first” position (e.g., Moon & Jackson 2020; Holton 2008; Easwaran 2016",
+          "corpus_chunk": 890
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "the latter as the “credence-first” position (e.g., Wedgwood 2012; Greco 2015; Weatherson 2005",
+          "corpus_chunk": 890
+        }
+      ],
+      "annotation": "Carter and Sosa's SEP entry on metaepistemology."
+    },
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "suspension and voluntariness",
+        "belief aims at truth"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Booth argues that belief is contingently involuntary by appealing to the nature of suspension of judgment.",
+          "corpus_chunk": 4103
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "He argues that if we cannot believe at will, we also cannot suspend judgment at will.",
+          "corpus_chunk": 4103
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "beliefs, by definition, aim at the truth; if an attitude doesn’t aim at the truth, it’s not a belief (see Moran 1988; Shah 2003; Shah & Velleman 2005",
+          "corpus_chunk": 4105
+        }
+      ],
+      "annotation": "The SEP entry on doxastic voluntarism."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "acceptance a technical notion"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "acceptance is typically a technical notion and characterizations of its nature and ethics differ radically in the literature",
+          "corpus_chunk": 3878
+        }
+      ],
+      "annotation": "The SEP entry on the ethics of belief."
+    },
+    {
+      "key": "bishop-mckaughan2023",
+      "used_for": [
+        "non-doxastic faith; Alston; Cohen's definition"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Such accounts may be described as proposing a ‘non-doxastic’ venture model of faith.",
+          "corpus_chunk": 6198
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "William Alston (1996) suggests that faith may involve an active ‘acceptance’ rather than purely receptive belief.",
+          "corpus_chunk": 6199
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "to have or adopt a policy of deeming, positing, or postulating that p",
+          "corpus_chunk": 6199
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "whether or not one feels it to be true that p’ (Cohen 1992, 4",
+          "corpus_chunk": 6199
+        }
+      ],
+      "annotation": "The SEP entry on faith."
+    },
+    {
+      "key": "munro-etal2026",
+      "used_for": [
+        "imagination vs supposition"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "There are two main options for distinguishing imagination and supposition: by their contents or by their functions.",
+          "corpus_chunk": 6288
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "imagination has a rich imagistic, experiential, or sensory element that supposition does not",
+          "corpus_chunk": 6288
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "Richard Moran (1994) contends that imagination tends to give rise to a wide range of further mental states, including affective responses, whereas supposition does not",
+          "corpus_chunk": 6289
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "Tamar Szabó Gendler (2000) contends that, while attempting to imagine morally repugnant propositions (e.g., that female infanticide is morally right) generates imaginative resistance, supposing them does not.",
+          "corpus_chunk": 6289
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "Others are skeptical that there are genuine discontinuities between imagination and supposition.",
+          "corpus_chunk": 6290
+        }
+      ],
+      "annotation": "The SEP entry on imagination."
+    },
+    {
+      "key": "clifford1879",
+      "used_for": [
+        "acting on probabilities"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 189",
+          "basis": "full text",
+          "excerpt": "there are many cases in which it is our duty to act upon proba- bihties, although the evidence is not such as to justify present behef",
+          "corpus_chunk": 13617,
+          "note": "'probabihties' and 'behef' are OCR errors for 'probabilities' and 'belief'"
+        }
+      ],
+      "annotation": "Clifford's 'The Ethics of Belief', in Lectures and Essays."
+    },
+    {
+      "key": "ichikawa-steup2026",
+      "used_for": [
+        "Gettier's three versions"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "one was given in terms of “believes”, one in terms of “accepts”, and one in terms of “is sure that”.",
+          "corpus_chunk": 1588
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Epistemologists have tended to follow Gettier in treating these as effectively equivalent.",
+          "corpus_chunk": 1588
+        }
+      ],
+      "annotation": "The SEP entry on the analysis of knowledge."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "Believe truth! Shun error!"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 17–18",
+          "basis": "full text",
+          "excerpt": "Believe truth! Shun error!",
+          "corpus_chunk": 10855
+        }
+      ],
+      "annotation": "James's 'The Will to Believe'."
+    },
+    {
+      "key": "cohen1992",
+      "used_for": [
+        "acceptance defined"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 4 (as cited)",
+          "basis": "secondary",
+          "note": "Cohen's definition as quoted in bishop-mckaughan2023 § 8 (corpus chunk 6199); details from Open Library"
+        }
+      ],
+      "annotation": "Cohen's book on belief and acceptance."
+    },
+    {
+      "key": "bratman1992",
+      "used_for": [
+        "acceptance in a context"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "catalogue",
+          "note": "listed in chignell2018's bibliography (corpus chunk 3884); the ladder case is reported from Bratman in schwitzgebel2024 § 2.4; details from Crossref"
+        }
+      ],
+      "annotation": "Bratman's paper on acceptance."
+    }
+  ]
+}

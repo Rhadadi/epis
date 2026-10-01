@@ -1,0 +1,855 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "epistemic-reasons-versus-practical-reasons",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Pascal's wager: the argument and the main objections",
+    "Clifford's ethics of belief: the shipowner and the evidentialist principle",
+    "James's will to believe: genuine options and the passional nature",
+    "Can we believe at will? Doxastic voluntarism and Williams's argument",
+    "Evidentialism versus pragmatism about reasons for belief; the transparency of belief and the wrong kind of reasons",
+    "Did al-Ghazālī give a wager-like argument, and where?",
+    "What did Kant mean by practical faith (Glaube)?",
+    "Can epistemic oughts survive doxastic involuntarism? Chrisman's rules of criticism",
+    "Are there cases in which believing at will seems possible?"
+  ],
+  "sources": [
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "Alston's experiment",
+        "Williams; Winters; Bennett",
+        "aim of belief; extrinsic reasons",
+        "Peels and Reisner cases",
+        "deontology",
+        "Rinard",
+        "religious faith; al-Ghazālī; Kālāmas; recasting"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The best-known defender of this view is William Alston (1988).",
+          "corpus_chunk": 4100
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Can you, at this moment, start to believe that the U.S. is still a colony of Great Britain, just by deciding to do so",
+          "corpus_chunk": 4100
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "In the aim of belief literature, it’s widely held that beliefs formed in cases of deliberation have a particular connection to truth.",
+          "corpus_chunk": 4105
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Bernard Williams (1973: ch. 9) provides an influential and widely-cited argument for conceptual involuntarism.",
+          "corpus_chunk": 4105
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Williams argues that belief at will would require the ability to believe p regardless of whether p is true. Furthermore, he argues that if you have this ability, then you’d know you had this ability.",
+          "corpus_chunk": 4106
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "his argument is widely held to be unsuccessful—at least without modifications",
+          "corpus_chunk": 4106
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "you could have the ability to believe p at will, but not realize you have this ability",
+          "corpus_chunk": 4106
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Jonathan Bennett (1990) presents a counterexample to Williams’ claim that you cannot form a belief voluntarily without knowing you’d done so: the Credamites.",
+          "corpus_chunk": 4107
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "as soon as they come to believe in this way, they immediately forget how their belief was acquired",
+          "corpus_chunk": 4107
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "extrinsic reasons only bear on the question of whether the belief would be good to have",
+          "corpus_chunk": 4110
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Transparent promises that he will give you $10, if you come to believe, within a minute, that you will receive $10.",
+          "corpus_chunk": 4132
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Peels’ case is one in which the truth depends on the belief",
+          "corpus_chunk": 4132
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "the belief formed at will is rational",
+          "corpus_chunk": 4132
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "the belief is formed at will (at least partially) for practical reasons",
+          "corpus_chunk": 4132
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Reisner (2013)’s case involves Alice, who participates in a psychology experiment involving a perfectly reliable mind reading machine and display.",
+          "corpus_chunk": 4132
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "It is in the context of arguing that an endorsement of doxastic voluntarism is indispensable to epistemic deontology that Alston made his seminal case against voluntarism.",
+          "corpus_chunk": 4143
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "they differ on whether deontologism requires voluntary control (Steup 2000 holds that it does; Feldman 2000 holds that it does not)",
+          "corpus_chunk": 4145
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Several authors argue that there are.",
+          "corpus_chunk": 4146
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Susanna Rinard maintains that the rationality of beliefs “is determined in precisely the same way as the rationality of other states” (2017: 123)",
+          "corpus_chunk": 4146
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "Hence, “moral or prudential considerations can be reasons for belief” (2019: s.4",
+          "corpus_chunk": 4146
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "some authors deny that we have religious doxastic obligations at all, and locate these obligations elsewhere: for example, as obligations to act on, or accept religious claims, or as obligation to make a non-doxastic religious commitment",
+          "corpus_chunk": 4156
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Other authors have made a similar move regarding Pascal’s Wager.",
+          "corpus_chunk": 4157
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "similar pragmatic arguments exist in the Islamic tradition (see Al-Ghazālī 1105 [1991: chapter IV]) and in the Buddhist tradition (in the discourse to the Kālāmas; see Holder 2006)",
+          "corpus_chunk": 4158
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "they could be framed differently: e.g., reasons to make a religious commitment or to accept that God exists",
+          "corpus_chunk": 4158
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This move is, arguably, advocated by Pascal himself",
+          "corpus_chunk": 4158
+        }
+      ],
+      "annotation": "The SEP entry on doxastic voluntarism, the backbone of this page's account of believing at will."
+    },
+    {
+      "key": "schwitzgebel2024",
+      "used_for": [
+        "Shah and Velleman's norm of truth",
+        "belief vs desire"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Shah and Velleman (2005) argue that conceiving of an attitude as a belief that P entails conceiving of it as governed by a norm of truth, that is, as an attitude that is correct if and only if P is true.",
+          "corpus_chunk": 1012
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "if you desire that P and P is false, you have not in the same way erred or made a mistake",
+          "corpus_chunk": 1014
+        }
+      ],
+      "annotation": "Eric Schwitzgebel's SEP entry on belief."
+    },
+    {
+      "key": "shah-velleman2005",
+      "used_for": [
+        "the norm of truth"
+      ],
+      "evidence": [
+        {
+          "locator": "catalogue record",
+          "basis": "catalogue",
+          "excerpt": "Citation: 114 The Philosophical Review 497-534 (2005)",
+          "corpus_chunk": 30214,
+          "note": "only the repository record is in the corpus; the thesis is reported in schwitzgebel2024 § 1.6 (chunk 1012)"
+        }
+      ],
+      "annotation": "Shah and Velleman's 'Doxastic Deliberation'."
+    },
+    {
+      "key": "clifford1879",
+      "used_for": [
+        "the ship-owner",
+        "beliefs are not private; credulity",
+        "the principle",
+        "belief by upbringing",
+        "busy man; universal sceptics; authority",
+        "acting on probabilities"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 178",
+          "basis": "full text",
+          "excerpt": "He had acquired his behef not by honestly earning it in patient investigation, but by stifling his doubts.",
+          "corpus_chunk": 13596,
+          "note": "'behef' is an OCR error for 'belief' throughout this scan"
+        },
+        {
+          "locator": "p. 178",
+          "basis": "full text",
+          "excerpt": "Let us alter the case a little, and suppose that the ship was not unsound after all ; that she made her voy- age safely, and many others after it.",
+          "corpus_chunk": 13596
+        },
+        {
+          "locator": "p. 178",
+          "basis": "full text",
+          "excerpt": "Not one jot.",
+          "corpus_chunk": 13596
+        },
+        {
+          "locator": "p. 179",
+          "basis": "full text",
+          "excerpt": "The question of right or wrong has to do with the origin of his behef, not the matter of it ; not what it was, but how he got it ; not whether it turned out to be true or false, but whether he had a right to believe on such evidence as was before him.",
+          "corpus_chunk": 13597
+        },
+        {
+          "locator": "pp. 181–182",
+          "basis": "full text",
+          "excerpt": "No real behef, however trifling and fragmentary it may seem, is ever truly insignificant ; it prepares us to receive more of its like",
+          "corpus_chunk": 13603
+        },
+        {
+          "locator": "p. 182",
+          "basis": "full text",
+          "excerpt": "And no one man's behef is. in any case a private matter which concerns himself alone.",
+          "corpus_chunk": 13603
+        },
+        {
+          "locator": "pp. 185–186",
+          "basis": "full text",
+          "excerpt": "that it should become credulous, and lose the habit of testing things",
+          "corpus_chunk": 13611
+        },
+        {
+          "locator": "p. 186",
+          "basis": "full text",
+          "excerpt": "it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence",
+          "corpus_chunk": 13613
+        },
+        {
+          "locator": "p. 186",
+          "basis": "full text",
+          "excerpt": "holding a belief which he was taught in childhood or persuaded of afterwards, keeps down and pushes away any doubts which arise about it in his mind",
+          "corpus_chunk": 13613
+        },
+        {
+          "locator": "pp. 187–188",
+          "basis": "full text",
+          "excerpt": "I am a busy man ; I have no time for the long course of study which would be necessary",
+          "corpus_chunk": 13615
+        },
+        {
+          "locator": "p. 188",
+          "basis": "full text",
+          "excerpt": "Then he should have no time to",
+          "corpus_chunk": 13615,
+          "note": "the OCR has displaced the final word 'believe' into the preceding line"
+        },
+        {
+          "locator": "p. 188",
+          "basis": "full text",
+          "excerpt": "The Weight of Authority.",
+          "corpus_chunk": 13615
+        },
+        {
+          "locator": "p. 188",
+          "basis": "full text",
+          "excerpt": "Are we then to become universal sceptics, doubting everything",
+          "corpus_chunk": 13615
+        },
+        {
+          "locator": "p. 188",
+          "basis": "full text",
+          "excerpt": "that vast body of knowledge which is daily growing upon the world",
+          "corpus_chunk": 13616
+        },
+        {
+          "locator": "p. 189",
+          "basis": "full text",
+          "excerpt": "there are many cases in which it is our duty to act upon proba- bihties, although the evidence is not such as to justify present behef",
+          "corpus_chunk": 13617,
+          "note": "'probabihties' and 'behef' are OCR errors"
+        },
+        {
+          "locator": "p. 189",
+          "basis": "full text",
+          "excerpt": "we shall now go on to inquire under what circumstances it is lawful to believe on the testimony of others",
+          "corpus_chunk": 13618
+        }
+      ],
+      "annotation": "Clifford's 'The Ethics of Belief', in Lectures and Essays (1879)."
+    },
+    {
+      "key": "pascal1670",
+      "used_for": [
+        "the Wager",
+        "holy water"
+      ],
+      "evidence": [
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "Let us weigh the gain and the loss in wagering that God is.",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "Let us estimate these two chances.",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "If you gain, you gain all; if you lose, you lose nothing.",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "Wager, then, without hesitation that He is.",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "since you are under the necessity of playing",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "But there is an eternity of life and happiness.",
+          "corpus_chunk": 8683
+        },
+        {
+          "locator": "fr. 233",
+          "basis": "full text",
+          "excerpt": "by acting as if they believed, taking the holy water, having masses said, etc.",
+          "corpus_chunk": 8687
+        }
+      ],
+      "annotation": "Pascal's Pensées, fragment 233."
+    },
+    {
+      "key": "peirce1877",
+      "used_for": [
+        "the newspaper; method of tenacity"
+      ],
+      "evidence": [
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "I remember once being en- treated not to read a certain newspaper lest it might change my opinion upon free-trade.",
+          "corpus_chunk": 26537
+        },
+        {
+          "locator": "§ V",
+          "basis": "full text",
+          "excerpt": "this method of fixing belief, which may be called the method of tenacity",
+          "corpus_chunk": 26540
+        }
+      ],
+      "annotation": "Peirce's 'The Fixation of Belief'."
+    },
+    {
+      "key": "hajek2024",
+      "used_for": [
+        "four arguments; first use of decision theory",
+        "ought to believe; prudential",
+        "Sirmond and Chillingworth; Hacking",
+        "many Gods",
+        "mixed strategies"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "in a single section of his Pensées, Pascal apparently presents four such arguments, each of which might be called a ‘wager’—it is only the third of these that is traditionally referred to as “Pascal’s Wager”",
+          "corpus_chunk": 3412
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "probability theory and decision theory, used here for almost the first time in history",
+          "corpus_chunk": 3412
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "He aims to show that we ought to believe in God, rather than that God exists.",
+          "corpus_chunk": 3414
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And he seeks to provide prudential reasons rather than evidential reasons for believing in God.",
+          "corpus_chunk": 3414
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Franklin 2018 presents striking parallels to Pascal’s Wager by Sirmond and Chillingworth from 1637 and 1638 respectively, thus predating Pascal by a few years.",
+          "corpus_chunk": 3414
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Hacking 1975 describes the Wager as “the first well-understood contribution to decision theory”",
+          "corpus_chunk": 3415
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "the many Gods objection",
+          "corpus_chunk": 3440
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "In cases where the mathematical expectations are infinite, the criterion for choosing the outcome to bet on is its probability",
+          "corpus_chunk": 3442
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "thus providing a kind of vindication of Pascal against the many Gods objection",
+          "corpus_chunk": 3445
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Any mixed strategy that gives positive and finite probability to wagering for God will likewise have infinite expectation",
+          "corpus_chunk": 3453
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "So ignoring the Wager and having a hamburger has the same expectation as outright wagering for God.",
+          "corpus_chunk": 3454
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "there is a many-way tie for first place",
+          "corpus_chunk": 3454
+        }
+      ],
+      "annotation": "Alan Hájek's SEP entry on Pascal's Wager."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "genuine options",
+        "the thesis",
+        "against Pascal",
+        "two commandments; passional life"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 3–4",
+          "basis": "full text",
+          "excerpt": "we may call an option a _genuine_ option when it is of the forced, living, and momentous kind",
+          "corpus_chunk": 10824
+        },
+        {
+          "locator": "p. 11",
+          "basis": "full text",
+          "excerpt": "_Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds; for to say, under such circumstances, \"Do not decide, but leave the question open,\" is itself a passional decision,--just like deciding yes or no,--and is attended with the same risk of losing the truth_.",
+          "corpus_chunk": 10842
+        },
+        {
+          "locator": "p. 6",
+          "basis": "full text",
+          "excerpt": "after such a mechanical calculation would lack the inner soul of faith's reality",
+          "corpus_chunk": 10830
+        },
+        {
+          "locator": "p. 6",
+          "basis": "full text",
+          "excerpt": "the option offered to the will by Pascal is not a living option",
+          "corpus_chunk": 10830
+        },
+        {
+          "locator": "pp. 17–18",
+          "basis": "full text",
+          "excerpt": "they are not two ways of stating an identical commandment, they are two separable laws",
+          "corpus_chunk": 10854
+        },
+        {
+          "locator": "p. 18",
+          "basis": "full text",
+          "excerpt": "Believe truth! Shun error!",
+          "corpus_chunk": 10855
+        },
+        {
+          "locator": "p. 18",
+          "basis": "full text",
+          "excerpt": "these feelings of our duty about either truth or error are in any case only expressions of our passional life",
+          "corpus_chunk": 10856
+        }
+      ],
+      "annotation": "James's 'The Will to Believe' (1896), in the 1897 collection; page numbers from the edition's page markers."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "James's conditions; blank check",
+        "Clifford's principle; moderate later view; iconic evidentialist",
+        "Reisner's arguments",
+        "Kant's practical faith",
+        "Pascal's prudential focus"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "At the outset of the essay, Clifford defends the stringent principle that we are all always obliged to have sufficient evidence for every one of our beliefs.",
+          "corpus_chunk": 3796
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "“Not one jot,” Clifford declares: he is equally guilty—equally blameworthy—for believing something on insufficient evidence.",
+          "corpus_chunk": 3798
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "In the later part of his essay Clifford puts forward a view about what it is for evidence to be “sufficient” that suggests a more moderate stance.",
+          "corpus_chunk": 3800
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "turned Clifford into the iconic representative of a strict “Evidentialist” position in the ethics of belief",
+          "corpus_chunk": 3800
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "James is by no means writing a blank doxastic check",
+          "corpus_chunk": 3801
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "For some recent arguments in favor of prudential evidence for belief, see Reisner 2008 and 2009",
+          "corpus_chunk": 3811
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Blaise Pascal famously argues in the Pensées that wager-like reasoning should lead us to set the goal of believing in God",
+          "corpus_chunk": 3867
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "For Immanuel Kant, by contrast, considerations that can justify belief (or faith) in the absence of sufficient theoretical evidence are typically (though not exclusively) moral.",
+          "corpus_chunk": 3867
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "it counts as “belief” (Glaube) or “acceptance” (Annehmung) rather than “knowledge” (Wissen) (Kant 1781/1787, Chignell 2007)",
+          "corpus_chunk": 3868
+        }
+      ],
+      "annotation": "Andrew Chignell's SEP entry on the ethics of belief."
+    },
+    {
+      "key": "chrisman2008",
+      "used_for": [
+        "no rewards principle",
+        "rules of criticism"
+      ],
+      "evidence": [
+        {
+          "locator": "preprint pp. 1–2",
+          "basis": "full text",
+          "excerpt": "We do not have the same sort of control over our doxastic attitudes—belief, disbelief, and suspension of belief—as we do over many ordinary actions.",
+          "corpus_chunk": 30240
+        },
+        {
+          "locator": "preprint p. 2",
+          "basis": "full text",
+          "excerpt": "(NRP) No matter how large the reward, S cannot simply decide to believe some proposition p in order to collect that reward.",
+          "corpus_chunk": 30241
+        },
+        {
+          "locator": "preprint p. 15",
+          "basis": "full text",
+          "excerpt": "Sellars’ idea of rules of criticism provides a good model for doxastic oughts",
+          "corpus_chunk": 30302
+        },
+        {
+          "locator": "preprint p. 15",
+          "basis": "full text",
+          "excerpt": "They are of the form X ought to be in doxastic attitude A towards proposition p under conditions C.",
+          "corpus_chunk": 30302
+        },
+        {
+          "locator": "preprint p. 15",
+          "basis": "full text",
+          "excerpt": "The clock’s chimes ought to strike at the quarter hour, All the beds ought to be made every morning, A child ought to be able to tie his/her shoes by age four",
+          "corpus_chunk": 30303
+        },
+        {
+          "locator": "preprint p. 15",
+          "basis": "full text",
+          "excerpt": "rules of criticism do not have as a precondition on their truth that their subjects be capable of voluntarily following the rule",
+          "corpus_chunk": 30303
+        },
+        {
+          "locator": "preprint p. 15",
+          "basis": "full text",
+          "excerpt": "By respecting both the true doxastic oughts principle and the no rewards principle, this account avoids the drastic choice between doxastic involuntarism and epistemic deontology with which I began.",
+          "corpus_chunk": 30304
+        }
+      ],
+      "annotation": "Chrisman's 'Ought to Believe', from the Edinburgh preprint."
+    },
+    {
+      "key": "ghazali1910",
+      "used_for": [
+        "benefit of the doubt; serpent venom; charm; voyages",
+        "ʿAlī's wager",
+        "act as if",
+        "Field's source; the Persian original"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 62",
+          "basis": "full text",
+          "excerpt": "But, should he say that a future life is possible but that the doctrine is so involved in doubt and mystery that it is impossible to decide whether it be true or not, then one may say to him",
+          "corpus_chunk": 31085
+        },
+        {
+          "locator": "p. 62",
+          "basis": "full text",
+          "excerpt": "Then you had better give it the benefit of the doubt",
+          "corpus_chunk": 31085
+        },
+        {
+          "locator": "p. 62",
+          "basis": "full text",
+          "excerpt": "Suppose you are about to eat food and some one tells you a serpent has spat venom on it, you would probably refrain and rather endure the pangs of hunger than eat it, though your in- formant may be in jest or lying.",
+          "corpus_chunk": 31085
+        },
+        {
+          "locator": "p. 62",
+          "basis": "full text",
+          "excerpt": "you would probably give the rupee on the chance of deriving benefit from the charm",
+          "corpus_chunk": 31086
+        },
+        {
+          "locator": "p. 63",
+          "basis": "full text",
+          "excerpt": "People take perilous voyages in ships for the sake of merely probable profit",
+          "corpus_chunk": 31087
+        },
+        {
+          "locator": "p. 63",
+          "basis": "full text",
+          "excerpt": "once, in arguing with an unbeliever, said, “ If you are right, then neither of us will be any the worse in the future ; but if we are right, then we shall escape, and you will suffer.”",
+          "corpus_chunk": 31087,
+          "note": "the scan reads 'The Lord Ah', an OCR error for 'Ali'"
+        },
+        {
+          "locator": "p. 63",
+          "basis": "full text",
+          "excerpt": "Even if he is doubtful about a future existence, reason suggests that he should act as if there were one, considering the tremendous issues at stake.",
+          "corpus_chunk": 31087
+        },
+        {
+          "locator": "title page",
+          "basis": "full text",
+          "excerpt": "TRANSLATED FROM THE HINDUSTANI BY CLAUD FIELD",
+          "corpus_chunk": 30996
+        },
+        {
+          "locator": "introduction",
+          "basis": "full text",
+          "excerpt": "Ghazzali himself wrote an abridgment of it in Persian for popular use which he entitled Kimiya’e Saadat",
+          "corpus_chunk": 31010
+        }
+      ],
+      "annotation": "Claud Field's 1910 translation of The Alchemy of Happiness (from a Hindustani version)."
+    },
+    {
+      "key": "griffel2026",
+      "used_for": [
+        "the Persian Kīmiyā as a work of ethics"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "in the Persia Kīmiyāʾ-i saʿādāt (The Alchemy of Happiness)",
+          "corpus_chunk": 28526,
+          "note": "'Persia' sic in the corpus text"
+        }
+      ],
+      "annotation": "Frank Griffel's SEP entry on al-Ghazālī."
+    },
+    {
+      "key": "ghazali1909",
+      "used_for": [
+        "belief by upbringing"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 13",
+          "basis": "full text",
+          "excerpt": "Having noticed how easily the children of Christians become Christians, and the ohildren of Moslems embrace Islam",
+          "corpus_chunk": 22277,
+          "note": "'ohildren' is an OCR error for 'children'"
+        },
+        {
+          "locator": "p. 14",
+          "basis": "full text",
+          "excerpt": "accidental beliefs imposed on him by the authority of his parents and his masters",
+          "corpus_chunk": 22277
+        }
+      ],
+      "annotation": "Claud Field's translation of al-Ghazālī's Confessions (Munqidh)."
+    },
+    {
+      "key": "turri-etal2018",
+      "used_for": [
+        "experiments on voluntary belief"
+      ],
+      "evidence": [
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "A standard view in contemporary philosophy is that belief is involuntary",
+          "corpus_chunk": 30216
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "We present seven experiments on patterns in ordinary folk-psychological judgments about belief.",
+          "corpus_chunk": 30216
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "The results provide strong evidence that voluntary belief is conceptually possible and, granted minimal charitable assumptions about folk-psychological competence, provide some evidence that voluntary belief is psychologically possible.",
+          "corpus_chunk": 30216
+        }
+      ],
+      "annotation": "Turri, Rose and Buckwalter's experimental paper (abstract only in the corpus)."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "Reisner's titles"
+      ],
+      "evidence": [
+        {
+          "locator": "bibliography",
+          "basis": "full text",
+          "excerpt": "Reisner, Andrew, 2008, “Weighing Pragmatic and Evidential Reasons for Belief”, Philosophical Studies, 138(1): 17–27.",
+          "corpus_chunk": 660
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology (bibliography)."
+    },
+    {
+      "key": "williams1973",
+      "used_for": [
+        "Deciding to Believe"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. 9 (as cited)",
+          "basis": "secondary",
+          "note": "Williams 1973: ch. 9 as reported in boespflug-jackson2024 § 3.2 (corpus chunks 4105–4106); details from Open Library"
+        }
+      ],
+      "annotation": "Williams's 'Deciding to Believe', in Problems of the Self."
+    },
+    {
+      "key": "alston1988",
+      "used_for": [
+        "Alston against voluntarism"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "Alston 1988 as reported in boespflug-jackson2024 §§ 3.1, 6.1 (corpus chunks 4100–4102, 4143); details from Crossref"
+        }
+      ],
+      "annotation": "Alston's 'The Deontological Conception of Epistemic Justification'."
+    },
+    {
+      "key": "shah2003",
+      "used_for": [
+        "How Truth Governs Belief"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "cited in boespflug-jackson2024 § 3.2 (corpus chunk 4105) among works holding that belief aims at truth; details from Crossref"
+        }
+      ],
+      "annotation": "Shah's 'How Truth Governs Belief'."
+    }
+  ]
+}

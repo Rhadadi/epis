@@ -1,0 +1,165 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "the-central-questions",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is the problem of the criterion? Particularism, methodism and the wheel",
+    "What are the central questions of epistemology: the nature, sources, structure and extent of knowledge?",
+    "Plato's Theaetetus: knowledge as perception, true judgement, true judgement with an account"
+  ],
+  "sources": [
+    {
+      "key": "mccain-iep",
+      "used_for": [
+        "the two questions",
+        "Chisholm's three responses; Amico; 'no solution'",
+        "history",
+        "one problem or several"
+      ],
+      "evidence": [
+        {
+          "locator": "introduction",
+          "basis": "full text",
+          "excerpt": "A popular form of the Problem of the Criterion can be raised by asking two seemingly innocent questions",
+          "corpus_chunk": 14064
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "there are only three responses to the Problem of the Criterion: particularism, methodism, and skepticism",
+          "corpus_chunk": 14075
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "we are forced to beg the question",
+          "corpus_chunk": 14075
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Robert Amico (1988b) argues that Chisholm’s “solution” is clearly unacceptable",
+          "corpus_chunk": 14087
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Chisholm claims that particularism is superior to methodism and skepticism because by being a particularist one can give a reasonable account of knowledge",
+          "corpus_chunk": 14088
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "“the problem of the criterion has no solution” (1988, 234)",
+          "corpus_chunk": 14088
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It comes to us from Book 2 of Sextus Empiricus’ Outlines of Pyrrhonism",
+          "corpus_chunk": 14066
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The problem resurfaced in the late 1500’s with Michael De Montaigne’s “Apology for Raymond Sebond”",
+          "corpus_chunk": 14066
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In the late 19th and early 20th centuries Cardinal D.J. Mercier (1884) and his student P. Coffey (1917) again reminded the world of the problem.",
+          "corpus_chunk": 14066
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Perhaps the Problem of the Criterion is rather a set of related problems.",
+          "corpus_chunk": 14068
+        }
+      ],
+      "annotation": "Clear encyclopedia treatment of the problem and its history."
+    },
+    {
+      "key": "chisholm1973",
+      "used_for": [
+        "the modern classic statement"
+      ],
+      "evidence": [
+        {
+          "locator": "whole lecture",
+          "basis": "secondary",
+          "note": "Described and quoted in mccain-iep (corpus chunks 14064, 14075); the lecture itself was not read; details from Open Library"
+        }
+      ],
+      "annotation": "The modern classic statement of the problem."
+    },
+    {
+      "key": "carter-sosa2026",
+      "used_for": [
+        "methodism and foundationalism in Descartes and Hume",
+        "'an oversimplified picture'"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Descartes and Hume opt for foundationalism by way of taking the particular methodist starting point",
+          "corpus_chunk": 902
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "even if strictly speaking an oversimplified picture",
+          "corpus_chunk": 897
+        }
+      ],
+      "annotation": "Survey of metaepistemology."
+    },
+    {
+      "key": "vogt2026",
+      "used_for": [
+        "Epicurus's kanon and kriterion; Zeno's cognitive impression"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The notion of a criterion is introduced into Hellenistic discussions by Epicurus, who speaks about the kanôn (literally measuring stick) and kritêrion",
+          "corpus_chunk": 45
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Zeno argues that a certain kind of impression—namely a cognitive impression (phantasia katalêptikê)—is the criterion of truth",
+          "corpus_chunk": 45
+        }
+      ],
+      "annotation": "Survey of ancient skepticism."
+    },
+    {
+      "key": "plato-theaetetus",
+      "used_for": [
+        "the jurors objection and the third definition"
+      ],
+      "evidence": [
+        {
+          "locator": "201c–d",
+          "basis": "full text",
+          "excerpt": "true opinion, combined with definition or rational explanation, is knowledge",
+          "corpus_chunk": 12271,
+          "note": "Jowett translation; Stephanus numbers supplied from the standard edition"
+        },
+        {
+          "locator": "201a–c",
+          "basis": "full text",
+          "excerpt": "the orator cannot convey a true knowledge of crimes at which the judges were not present",
+          "corpus_chunk": 11949,
+          "note": "From Jowett's introduction, which summarises the dialogue"
+        }
+      ],
+      "annotation": "The first sustained attempt to define knowledge."
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "the-basic-vocabulary",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What are propositions? Bearers of truth value and objects of belief",
+    "What is truth? The correspondence theory and Aristotle's definition",
+    "What is evidence? Mental states, propositions, knowledge, and the E=K thesis",
+    "Propositional versus doxastic justification and the basing relation",
+    "Certainty and fallibilism: psychological versus epistemic certainty",
+    "Defeaters: rebutting and undercutting defeat",
+    "Normative, motivating and explanatory reasons",
+    "What is warrant in Plantinga's sense, the property that turns true belief into knowledge?"
+  ],
+  "sources": [
+    {
+      "key": "mcgrath-frank2024",
+      "used_for": [
+        "working definition of proposition"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Propositions, we shall say, are the sharable objects of the attitudes and the primary bearers of truth and falsity.",
+          "corpus_chunk": 2246
+        }
+      ],
+      "annotation": "The standard survey of propositions."
+    },
+    {
+      "key": "kelly2016",
+      "used_for": [
+        "evidence as sign (Hacking)",
+        "Fritz/Leopold: rebutting and undercutting",
+        "defeat can be defeated",
+        "views of what evidence is",
+        "E=K rules out no truth",
+        "the probabilistic slogan leaves open what evidence is"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "‘the evidence of one thing that points beyond itself’",
+          "corpus_chunk": 2178
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "evidence which suggests that you are a pathological liar constitutes an undercutting defeater",
+          "corpus_chunk": 2132
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "credible testimony from another source that your name is not Fritz but rather Leopold constitutes a rebutting defeater",
+          "corpus_chunk": 2132
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In principle, there is no limit to the complexity of the relations of defeat",
+          "corpus_chunk": 2133
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Russell, the greatest empiricist of the first half of the twentieth century, tended to think of evidence as sense data",
+          "corpus_chunk": 2123
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Quine, the greatest empiricist of the second half of the century, maintained throughout his career that evidence consisted of the stimulation of one's sensory receptors",
+          "corpus_chunk": 2124
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "one's evidence consists of the totality of propositions that one knows (Williamson 2000)",
+          "corpus_chunk": 2124
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "one's evidence consists exclusively of one's current mental states (Conee and Feldman 2004)",
+          "corpus_chunk": 2124
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "if evidence consists of facts or known propositions, then no body of evidence rules out any truth",
+          "corpus_chunk": 2178
+        }
+      ],
+      "annotation": "Survey of philosophical theories of evidence."
+    },
+    {
+      "key": "plantinga1993",
+      "used_for": [
+        "warrant"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. 1 (as cited)",
+          "basis": "secondary",
+          "note": "Plantinga's usage as reported in forrest2025 § 6 (corpus chunk 5665); details from Crossref"
+        }
+      ],
+      "annotation": "Plantinga's survey of theories of warrant."
+    },
+    {
+      "key": "reed2022",
+      "used_for": [
+        "psychological and epistemic certainty; non-iteration"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "a subject’s being certain that p does not entail that she is certain that she is certain that p",
+          "corpus_chunk": 2808
+        }
+      ],
+      "annotation": "Survey of certainty."
+    },
+    {
+      "key": "alvarez-way2024",
+      "used_for": [
+        "normative and motivating reasons",
+        "the distinction now accepted; motivating vs explanatory"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "“a consideration that counts in favour of” someone’s acting in a certain way",
+          "corpus_chunk": 3021
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "the distinction is now accepted by most if not all contemporary philosophers who write on this topic",
+          "corpus_chunk": 3021
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "recent authors tend to distinguish motivating and explanatory reasons",
+          "corpus_chunk": 3021
+        }
+      ],
+      "annotation": "Survey of reasons for action."
+    },
+    {
+      "key": "forrest2025",
+      "used_for": [
+        "two uses of 'warrant'"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "the term “warrant” used elsewhere in philosophy as a synonym for “justified”",
+          "corpus_chunk": 5665
+        }
+      ],
+      "annotation": "Survey of the epistemology of religion."
+    },
+    {
+      "key": "williamson2000",
+      "used_for": [
+        "E = K"
+      ],
+      "evidence": [
+        {
+          "locator": "as cited",
+          "basis": "secondary",
+          "note": "Williamson's view as reported in kelly2016 (corpus chunk 2124); details from Open Library"
+        }
+      ],
+      "annotation": "The source of the thesis that one's evidence is one's knowledge."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "internalism and externalism"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "This view is what has come to be called “internalism” about justification.",
+          "corpus_chunk": 531
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Externalists say that what we want from justification is the kind of likelihood of truth needed for knowledge",
+          "corpus_chunk": 531
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology."
+    },
+    {
+      "key": "rysiew2026",
+      "used_for": [
+        "Lewis: fallible knowledge sounds contradictory"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "To speak of fallible knowledge, of knowledge despite uneliminated possibilities of error, just sounds contradictory.",
+          "corpus_chunk": 6075
+        }
+      ],
+      "annotation": "Survey of epistemic contextualism."
+    },
+    {
+      "key": "hetherington-iep",
+      "used_for": [
+        "CKAs do not show infallibilism"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Few epistemologists will think so.",
+          "corpus_chunk": 14019
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "most epistemologists, it seems, accept that when people do gain knowledge, this usually, maybe always, involves fallibility",
+          "corpus_chunk": 14024
+        }
+      ],
+      "annotation": "Encyclopedia entry on fallibilism by one of its main defenders."
+    },
+    {
+      "key": "ghazali1909",
+      "used_for": [
+        "al-Ghazali's standard of certainty"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 14–15",
+          "basis": "full text",
+          "excerpt": "although his miracle might arouse my astonishment, it would not instil any doubt into my belief",
+          "corpus_chunk": 22279
+        },
+        {
+          "locator": "p. 15",
+          "basis": "full text",
+          "excerpt": "with the exception of sense-perceptions and necessary principles",
+          "corpus_chunk": 22279
+        }
+      ],
+      "annotation": "Al-Ghazali's intellectual autobiography, in Claud Field's 1909 translation."
+    },
+    {
+      "key": "koons2025",
+      "used_for": [
+        "Pollock's defeasible reasoning"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "John L. Pollock developed Chisholm’s idea into a theory of prima facie reasons and defeaters of those reasons",
+          "corpus_chunk": 2872
+        }
+      ],
+      "annotation": "Survey of defeasible reasoning."
+    },
+    {
+      "key": "david2025",
+      "used_for": [
+        "Aristotle's definition minimal; deflationary reading; Plato"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "a muted, relatively minimal version of a correspondence theory",
+          "corpus_chunk": 2395
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "it has also been claimed as a precursor of deflationary theories of truth",
+          "corpus_chunk": 2396
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "virtually identical formulations can be found in Plato (Cratylus 385b2, Sophist 263b)",
+          "corpus_chunk": 2395
+        }
+      ],
+      "annotation": "The standard survey of the correspondence theory."
+    }
+  ]
+}

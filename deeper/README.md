@@ -90,8 +90,12 @@ A block is ordinary Markdown between `::: kind Title` and `:::`, shown as a box:
 | `original` | A passage from an original text, quoted in a blockquote and followed by a commentary. Public-domain texts can be quoted at length; anything in copyright only briefly. |
 | `argument` | An argument as a numbered list of premises and conclusion (shown as P1, P2, ...). Objections refer to premises by number. |
 | `timeline` | A bulleted list of dated events. |
-| `positions` | A table of positions: the view, who holds it, its core claim, the main objection. |
+| `positions` | A table of positions: the view, who holds it, its core claim, the main objection. On phones each row is shown as a card, so keep the first column short: it becomes the card's title. |
 | `box` | Anything else that should stand apart. |
+
+A block's sources go in a citation that opens the paragraph right after it (`[@key, § 1]. The usual replies ...`,
+or the citation alone on a line). The build moves that citation onto the block's title, so the note number sits on
+the title rather than at the start of the next paragraph.
 
 Mermaid diagrams (```` ```mermaid ````) work as in the chapters.
 

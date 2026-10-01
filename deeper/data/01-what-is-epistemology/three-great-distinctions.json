@@ -1,0 +1,925 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "three-great-distinctions",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a priori knowledge? Independence of experience and the role of enabling experience",
+    "Kant's analytic and synthetic judgments and the synthetic a priori",
+    "Quine's Two Dogmas: the attack on the analytic/synthetic distinction",
+    "Kripke on the necessary a posteriori and the contingent a priori",
+    "Hume's fork: relations of ideas and matters of fact",
+    "How did the analytic/synthetic and a priori/a posteriori distinctions develop from Leibniz and Locke to the logical empiricists?",
+    "What did Mill argue about the epistemology of arithmetic?",
+    "How did Carnap respond to Quine's 'Two Dogmas'?",
+    "What is two-dimensional semantics, and how does it treat a posteriori necessities?",
+    "How did Avicenna understand necessity and possibility?"
+  ],
+  "sources": [
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "definition of a priori justification; strict sense of experience",
+        "synthetic a priori: empiricists vs rationalists"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "S’s justification for believing that p does not depend on any experience",
+          "corpus_chunk": 580
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "the strict use of the term restricts a priori justification to justification derived solely from the use of reason",
+          "corpus_chunk": 580
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "According to this usage, the word “experiences” in the definition above includes perceptual, introspective, and memorial experiences alike.",
+          "corpus_chunk": 580
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "whether I’m thirsty or not is something I know empirically",
+          "corpus_chunk": 581
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "a priori knowledge of synthetic propositions, empiricists would say, is not possible. Rationalists deny this.",
+          "corpus_chunk": 583
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "“If a ball is green all over, then it doesn’t have black spots”",
+          "corpus_chunk": 583
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology."
+    },
+    {
+      "key": "kant1787",
+      "used_for": [
+        "bodies extended/heavy; explicative and augmentative",
+        "analytic known a priori",
+        "7 + 5 = 12",
+        "straight line",
+        "necessity and strict universality",
+        "the general problem; Hume came nearest",
+        "pure and impure"
+      ],
+      "evidence": [
+        {
+          "locator": "Introduction, B 10–11",
+          "basis": "full text",
+          "excerpt": "The former may be called explicative, the latter augmentative judgements",
+          "corpus_chunk": 9346
+        },
+        {
+          "locator": "Introduction, B 11",
+          "basis": "full text",
+          "excerpt": "the predicate is something totally different from that which I think in the mere conception of a body",
+          "corpus_chunk": 9347
+        },
+        {
+          "locator": "Introduction, B 11–12",
+          "basis": "full text",
+          "excerpt": "a necessity which I could never learn from experience",
+          "corpus_chunk": 9348
+        },
+        {
+          "locator": "Introduction, B 15–16",
+          "basis": "full text",
+          "excerpt": "add the units contained in the five given in the intuition, to the conception of seven",
+          "corpus_chunk": 9355
+        },
+        {
+          "locator": "Introduction, B 15–16",
+          "basis": "full text",
+          "excerpt": "our five fingers, for example",
+          "corpus_chunk": 9355
+        },
+        {
+          "locator": "Introduction, B 16",
+          "basis": "full text",
+          "excerpt": "“A straight line between two points is the shortest,” is a synthetical proposition.",
+          "corpus_chunk": 9356
+        },
+        {
+          "locator": "Introduction, B 3–4",
+          "basis": "full text",
+          "excerpt": "Necessity and strict universality, therefore, are infallible tests for distinguishing pure from empirical knowledge",
+          "corpus_chunk": 9334
+        },
+        {
+          "locator": "Introduction, B 19",
+          "basis": "full text",
+          "excerpt": "The proper problem of pure reason, then, is contained in the question: “How are synthetical judgements à priori possible?”",
+          "corpus_chunk": 9361
+        },
+        {
+          "locator": "Introduction, B 19",
+          "basis": "full text",
+          "excerpt": "Among philosophers, David Hume came the nearest of all to this problem",
+          "corpus_chunk": 9361
+        }
+      ],
+      "annotation": "Kant's Introduction to the Critique, the founding text of the distinctions."
+    },
+    {
+      "key": "hume1748",
+      "used_for": [
+        "Hume's fork",
+        "contrary of every matter of fact possible",
+        "causes not known a priori"
+      ],
+      "evidence": [
+        {
+          "locator": "IV.i.20",
+          "basis": "full text",
+          "excerpt": "All the objects of human reason or enquiry may naturally be divided into two kinds, to wit, _Relations of Ideas_, and _Matters of Fact_.",
+          "corpus_chunk": 6726
+        },
+        {
+          "locator": "IV.i.20",
+          "basis": "full text",
+          "excerpt": "Propositions of this kind are discoverable by the mere operation of thought",
+          "corpus_chunk": 6726
+        },
+        {
+          "locator": "IV.i.21",
+          "basis": "full text",
+          "excerpt": "The contrary of every matter of fact is still possible; because it can never imply a contradiction",
+          "corpus_chunk": 6727
+        },
+        {
+          "locator": "IV.i.23–25",
+          "basis": "full text",
+          "excerpt": "A man must be very sagacious who could discover by reasoning that crystal is the effect of heat, and ice of cold",
+          "corpus_chunk": 6741
+        }
+      ],
+      "annotation": "Hume's division of the objects of reason."
+    },
+    {
+      "key": "locke1690",
+      "used_for": [
+        "trifling vs instructive propositions; triangle",
+        "genus of species",
+        "monkey and oyster"
+      ],
+      "evidence": [
+        {
+          "locator": "IV.viii.8",
+          "basis": "full text",
+          "excerpt": "The one is, of those trifling propositions which have a certainty in them, but it is only a verbal certainty, but not instructive.",
+          "corpus_chunk": 7719
+        },
+        {
+          "locator": "IV.viii.8",
+          "basis": "full text",
+          "excerpt": "a necessary consequence of its precise complex idea, but not contained in it: as that, the external angle of all triangles is bigger than either of the opposite internal angles",
+          "corpus_chunk": 7719
+        },
+        {
+          "locator": "IV.viii.4",
+          "basis": "full text",
+          "excerpt": "a part of the definition of the word defined. Such are all propositions wherein the genus is predicated of the species",
+          "corpus_chunk": 7711
+        },
+        {
+          "locator": "IV.viii.3",
+          "basis": "full text",
+          "excerpt": "It is but like a monkey shifting his oyster from one hand to the other",
+          "corpus_chunk": 7711
+        }
+      ],
+      "annotation": "Locke's chapter 'Of Trifling Propositions'."
+    },
+    {
+      "key": "leibniz1714",
+      "used_for": [
+        "truths of reasoning and of fact"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 33",
+          "basis": "full text",
+          "excerpt": "Truths of reasoning are necessary and their opposite is impossible : truths of fact are con- tingent and their opposite is possible",
+          "corpus_chunk": 25897,
+          "note": "Latta's translation of Monadology § 33, as printed (OCR) in the 1898 edition"
+        },
+        {
+          "locator": "§ 33",
+          "basis": "full text",
+          "excerpt": "its reason can be found by analysis, resolving it into more simple ideas and truths, until we come to those which are primary",
+          "corpus_chunk": 25897
+        }
+      ],
+      "annotation": "The Monadology, in Robert Latta's 1898 translation."
+    },
+    {
+      "key": "mill1843",
+      "used_for": [
+        "arithmetic as inductive; pebbles; deductive sciences inductive"
+      ],
+      "evidence": [
+        {
+          "locator": "II.vi.2",
+          "basis": "full text",
+          "excerpt": "they by no means stand for the same physical fact",
+          "corpus_chunk": 15154
+        },
+        {
+          "locator": "II.vi.2",
+          "basis": "full text",
+          "excerpt": "It is a truth known to us by early and constant experience: an inductive truth",
+          "corpus_chunk": 15155
+        },
+        {
+          "locator": "II.vi.2",
+          "basis": "full text",
+          "excerpt": "The fundamental truths of that science all rest on the evidence of sense",
+          "corpus_chunk": 15155
+        },
+        {
+          "locator": "II.vi.2",
+          "basis": "full text",
+          "excerpt": "they are proved by showing to our eyes and our fingers that any given number of objects—ten balls, for example",
+          "corpus_chunk": 15155
+        },
+        {
+          "locator": "II.vi.2",
+          "basis": "full text",
+          "excerpt": "All the improved methods of teaching arithmetic to children proceed on a knowledge of this fact.",
+          "corpus_chunk": 15155
+        },
+        {
+          "locator": "II.vi.1",
+          "basis": "full text",
+          "excerpt": "Deductive or Demonstrative Sciences are all, without exception, Inductive Sciences",
+          "corpus_chunk": 15143
+        }
+      ],
+      "annotation": "Mill's empiricist account of mathematics."
+    },
+    {
+      "key": "creath2026",
+      "used_for": [
+        "logical empiricists: no synthetic a priori; analytic by convention; Frege on geometry"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "there was widespread agreement among the logical empiricists that there was no synthetic a priori",
+          "corpus_chunk": 27202
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "If analytic, a sentence is true in virtue of the conventions of language.",
+          "corpus_chunk": 27202
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Frege said little of geometry, but for him it was synthetic a priori.",
+          "corpus_chunk": 27201
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "it flourished in the 1920s and 30s in several centers in Europe",
+          "corpus_chunk": 27142
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "the most famous formulation of the verificationist principle, in Ayer 1936",
+          "corpus_chunk": 27187
+        }
+      ],
+      "annotation": "Survey of logical empiricism."
+    },
+    {
+      "key": "hylton-kemp2025",
+      "used_for": [
+        "Carnap's view of revision; Quine's standards of clarity"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "‘no statement is immune to revision’ (1951, 43",
+          "corpus_chunk": 27528
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Holism, which is central to Quine’s argument against Carnap",
+          "corpus_chunk": 27524
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "a revision involves a change of language, and thus of the meaning of the words used in the sentence",
+          "corpus_chunk": 27528
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Quine is asking for an explanation which is acceptable by his naturalistic standards",
+          "corpus_chunk": 27529
+        }
+      ],
+      "annotation": "Survey of Quine's philosophy."
+    },
+    {
+      "key": "rey2026",
+      "used_for": [
+        "red/colored; married; Frege's definition",
+        "precursors",
+        "logicism and Russell's paradox",
+        "epistemological focus",
+        "paradox of analysis",
+        "holism; no argument; mathematics not revised; non-Euclidean history",
+        "laundry; Grice and Strawson; lawyers/attorneys",
+        "positivists' change; black dogs; analyticity explains unrevisability"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "If Bob is married to Sue, then Sue is married to Bob.",
+          "corpus_chunk": 3130
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "It is hard to see what else to “add” – except red itself!",
+          "corpus_chunk": 3130
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "the non-logical analytic truths are those that can be converted to formal logical truths by substitution of definitions for defined terms",
+          "corpus_chunk": 3134
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "there are precursors of the contemporary notion of the analytic in Leibniz, and in Locke and Hume in their talk of “relations of ideas,”",
+          "corpus_chunk": 3123
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Gottlob Frege (1884 [1980]) tried to improve upon Kant’s formulations of the analytic",
+          "corpus_chunk": 3128
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "As Grice and Strawson (1956) and Putnam (1965 [1975]) pointed out, it is unlikely that so intuitively plausible a distinction should turn out to have no basis at all in fact.",
+          "corpus_chunk": 3184
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "there may be explanatory circularities in the best of theories, the circularity here seems particularly vicious",
+          "corpus_chunk": 3189
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Einstein simply argued in 1916 that one of these conceptual possibilities seemed to be better supported by physics than was the traditional Euclidean one",
+          "corpus_chunk": 3180
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The most immediately calamitous challenge to Logicism was, however, the famous paradox Bertrand Russell (1901) raised",
+          "corpus_chunk": 3165
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "it has been the epistemological issues about justifying our beliefs in necessary truths that have dominated philosophical discussions of the analytic",
+          "corpus_chunk": 3145
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This is “the paradox of analysis,”",
+          "corpus_chunk": 3157
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Our statements about the external world face the tribunal of sense experience not individually, but only as a corporate body.",
+          "corpus_chunk": 3175
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "it’s striking that Quine actually offers no argument for it",
+          "corpus_chunk": 3180
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "There have, historically, been in fact virtually no revisions of mathematics on empirical grounds.",
+          "corpus_chunk": 3180
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Non-Euclidean geometries were purely conceptual developments in the 19th C.",
+          "corpus_chunk": 3180
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "bringing in each other’s laundry",
+          "corpus_chunk": 3189
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "it is unlikely that so intuitively plausible a distinction should turn out to have no basis at all in fact",
+          "corpus_chunk": 3184
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "“Lawyers are attorneys,” or “A fortnight is a period of fourteen days”",
+          "corpus_chunk": 3184
+        },
+        {
+          "locator": "§ 3.6.1",
+          "basis": "full text",
+          "excerpt": "a crucial change that Quine (and earlier Positivists) casually introduced into the characterization of the a priori",
+          "corpus_chunk": 3196
+        },
+        {
+          "locator": "§ 3.6.1",
+          "basis": "full text",
+          "excerpt": "would have to regard themselves as being infallible about it",
+          "corpus_chunk": 3196
+        },
+        {
+          "locator": "§ 3.6.1",
+          "basis": "full text",
+          "excerpt": "for all the normal unrevisability of “There have been black dogs,” it’s perfectly possible to imagine it to be false",
+          "corpus_chunk": 3195
+        },
+        {
+          "locator": "§ 3.6.1",
+          "basis": "full text",
+          "excerpt": "it would seem to be analyticity that explains this peculiar unrevisability",
+          "corpus_chunk": 3195
+        }
+      ],
+      "annotation": "The standard survey of the analytic/synthetic distinction."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "a priori is not innate"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. VII",
+          "basis": "full text",
+          "excerpt": "is yet elicited and caused by experience",
+          "corpus_chunk": 5818
+        },
+        {
+          "locator": "ch. VII",
+          "basis": "full text",
+          "excerpt": "babies are born with a knowledge of everything which men know",
+          "corpus_chunk": 5818
+        },
+        {
+          "locator": "ch. VII",
+          "basis": "full text",
+          "excerpt": "the word 'innate' would not now be employed to describe our knowledge of logical principles",
+          "corpus_chunk": 5818
+        },
+        {
+          "locator": "ch. VII",
+          "basis": "full text",
+          "excerpt": "The phrase '_a priori_' is less objectionable",
+          "corpus_chunk": 5818
+        }
+      ],
+      "annotation": "Russell's introduction to philosophy."
+    },
+    {
+      "key": "mallozzi-etal2024",
+      "used_for": [
+        "kinds of necessity",
+        "epistemic modality",
+        "Kripke conditionals",
+        "conceivability; primary and secondary",
+        "Williamson"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Inflationists, such as David Chalmers (2002), hold “Modal Monism”",
+          "corpus_chunk": 3639
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Deflationists, such as Sydney Shoemaker (1998), argue that metaphysical modality coincides with physical modality.",
+          "corpus_chunk": 3639
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "since they are thought to be dependent on the epistemic subject",
+          "corpus_chunk": 3635
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Among the alethic (or objective) modalities we find logical, physical, and metaphysical modality.",
+          "corpus_chunk": 3635
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "\\(p\\) is metaphysically necessary iff \\(p\\) is true in all possible worlds.",
+          "corpus_chunk": 3636
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Alternative accounts include inflationism, deflationism, and skepticism.",
+          "corpus_chunk": 3638
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Chalmers holds that “water is not H2O” is not secondarily conceivable, though it is still primarily conceivable.",
+          "corpus_chunk": 3665
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Williamson stresses that knowledge of counterfactuals is pervasive for human decision-making, planning, and theory construction in science (2007).",
+          "corpus_chunk": 3689
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "For discussion, see e.g. Boghossian 2011, Boghossian and Williamson 2020",
+          "corpus_chunk": 3690
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Kant famously argued that what is a priori coincides with what is necessary",
+          "corpus_chunk": 3648
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "something we know “by a priori philosophical analysis”",
+          "corpus_chunk": 3648
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "it is not secondarily conceivable that water is not H2O",
+          "corpus_chunk": 3667
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "How is conceivability connected to possibility?",
+          "corpus_chunk": 3672
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In Williamson’s terminology, the kind of knowledge in question is “armchair”.",
+          "corpus_chunk": 3690
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "it “doesn’t cut at the epistemic joints”",
+          "corpus_chunk": 3690
+        }
+      ],
+      "annotation": "Survey of the epistemology of modality."
+    },
+    {
+      "key": "russell-bruce2024",
+      "used_for": [
+        "water: reference-fixing and essence",
+        "rubies",
+        "the metre stick",
+        "water is H2O contingent view"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the stuff, whatever it is, that, in the actual world, has the properties of quenching thirst",
+          "corpus_chunk": 2666
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "falling from the clouds as rain, filling the lakes and rivers",
+          "corpus_chunk": 2667
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "some philosophers think that 15bi and 15biii are not necessary truths and the relevant necessary truth that we can know a priori is that the essence of any type of matter is given by the basic elements of which it is composed",
+          "corpus_chunk": 2666
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the propositions that state those discoveries are contingent",
+          "corpus_chunk": 2666
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "While the meaning of “water” is given by this reference-fixing description, and can be known a priori",
+          "corpus_chunk": 2667
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "All rubies have chemical structure Al2O3.",
+          "corpus_chunk": 2665
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the essence of water must be discovered empirically",
+          "corpus_chunk": 2667
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the relevant necessary truth that we can know a priori is that the essence of any type of matter is given by the basic elements of which it is composed",
+          "corpus_chunk": 2666
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "“The length of S in the actual world at \\(t_0\\)” rigidly designates that length",
+          "corpus_chunk": 2668
+        }
+      ],
+      "annotation": "Survey of a priori justification; the best first reading."
+    },
+    {
+      "key": "shabel2025",
+      "used_for": [
+        "Kant's argument about 7+5",
+        "Prolegomena",
+        "non-Euclidean story",
+        "space as form of intuition"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "“no matter how long I analyze my concept of such a possible sum [of seven and five] I will still not find twelve in it”",
+          "corpus_chunk": 3368
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "In both the Preamble to the Prolegomena to Any Future Metaphysics and the B-Introduction to the Critique of Pure Reason, Kant introduces the analytic/synthetic distinction",
+          "corpus_chunk": 3367
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "broadly united in opposing a long-standard story",
+          "corpus_chunk": 3384
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "space as the pure form of our outer sensible intuition",
+          "corpus_chunk": 3391
+        }
+      ],
+      "annotation": "Survey of Kant's philosophy of mathematics."
+    },
+    {
+      "key": "laporte2026",
+      "used_for": [
+        "propositions vs sentences",
+        "contingent a priori controversial and insignificant"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "So it is controversial, though common, to say that rigidity assures that the proposition Hesperus = Phosphorus is necessarily true and a posteriori.",
+          "corpus_chunk": 3571
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "the claim that rigidity presents propositions that are necessarily true and a posteriori might be disputed (Soames 2002, pp. 240, 243; Salmon 1986, pp. 133–42",
+          "corpus_chunk": 3571
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "direct reference theorists insist that ‘Hesperus = Phosphorus’ and ‘Hesperus = Hesperus’ express the same proposition",
+          "corpus_chunk": 3570
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Kripke’s examples of the contingent a priori are perhaps more controversial than his examples of the necessary a posteriori.",
+          "corpus_chunk": 3576
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "many feel they lack much significance",
+          "corpus_chunk": 3576
+        }
+      ],
+      "annotation": "Survey of rigid designation."
+    },
+    {
+      "key": "atkins-etal2026",
+      "used_for": [
+        "natural-kind essentialism"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "in any possible world anything that is not composed of molecules of H2O is not water",
+          "corpus_chunk": 27040
+        },
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "since Kripke (1972/1980) and Putnam (1975) made essentialist claims concerning, for example, cats and water",
+          "corpus_chunk": 27040
+        }
+      ],
+      "annotation": "Survey of essential and accidental properties."
+    },
+    {
+      "key": "schroeter2021",
+      "used_for": [
+        "two-dimensional semantics and a posteriori necessities"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "by showing how such aposteriori necessities are consistent with apriori access to truth-conditions",
+          "corpus_chunk": 3905
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Influential theorists like David Lewis, Frank Jackson and David Chalmers argue that a generalized 2D semantic framework can be used to isolate an apriori aspect of meaning.",
+          "corpus_chunk": 3905
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Roughly, the idea is that speakers always have apriori access to the truth-conditions associated with their own sentences.",
+          "corpus_chunk": 3905
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "debates over the merits of generalized 2D semantics touch on broader controversies about apriority, modality, semantic theory and philosophical methodology",
+          "corpus_chunk": 3906
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Frank Jackson (1994; 1998a; 1998b; 2004) and David Chalmers (1996; 2002b; 2002c; 2004; 2006a)—who have most systematically developed and defended G2D",
+          "corpus_chunk": 3946
+        }
+      ],
+      "annotation": "Survey of two-dimensional semantics."
+    },
+    {
+      "key": "menzel2025",
+      "used_for": [
+        "possible worlds since Leibniz; modal semantics"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Although ‘possible world’ has been part of the philosophical lexicon at least since Leibniz",
+          "corpus_chunk": 27261
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "the notion became firmly entrenched in contemporary philosophy with the development of possible world semantics for the languages of propositional and first-order modal logic",
+          "corpus_chunk": 27261
+        }
+      ],
+      "annotation": "Survey of possible worlds."
+    },
+    {
+      "key": "lizzini2026",
+      "used_for": [
+        "necessary per se or per aliud; possible receives existence",
+        "essence and existence explain causation"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "every existent is necessary, either per se or per aliud",
+          "corpus_chunk": 30806
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "those that, considered in themselves require no (causal) connection with anything other than themselves",
+          "corpus_chunk": 30806
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "the First Principle is absolutely necessary",
+          "corpus_chunk": 30784
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The second property is uniqueness: the necessary has no “homologue”",
+          "corpus_chunk": 30800
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "in itself it does not exist and therefore always receives existence from something else",
+          "corpus_chunk": 30804
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "This same distinction between a possible essence and its necessary existence can, finally, explain any causal relationship",
+          "corpus_chunk": 30786
+        }
+      ],
+      "annotation": "Survey of Avicenna's metaphysics."
+    },
+    {
+      "key": "quine1951",
+      "used_for": [
+        "the attack on analyticity"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "Quine's arguments as reported in rey2026 §§ 3.4–3.6 and hylton-kemp2025 § 3.3 (corpus chunks 3175, 3189, 27528); details from Crossref"
+        }
+      ],
+      "annotation": "Quine's classic paper."
+    },
+    {
+      "key": "kripke1980",
+      "used_for": [
+        "the necessary a posteriori and contingent a priori"
+      ],
+      "evidence": [
+        {
+          "locator": "Lectures I and III (as cited)",
+          "basis": "secondary",
+          "note": "Kripke's examples as reported in laporte2026, mallozzi-etal2024 § 2.3 and russell-bruce2024 § 2; details from Open Library"
+        }
+      ],
+      "annotation": "Kripke's lectures."
+    }
+  ]
+}

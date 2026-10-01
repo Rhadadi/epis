@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** Psychology describes how people *do* reason; epistemology asks how they *ought* to: what they are entitled to believe, and what counts as good evidence. That is what "normative" means. The chapter draws a parallel with ethics: duties, virtues, blame and good outcomes have counterparts for belief. The parallel raises real problems (we cannot choose our beliefs the way we choose actions), and it has been challenged from the other side by philosophers who think epistemology should become a branch of science.

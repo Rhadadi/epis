@@ -1,0 +1,252 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "epistemology-is-normative",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Is epistemology normative? Naturalized epistemology and Kim's objection",
+    "The deontological conception of epistemic justification and its problems",
+    "What is the aim of belief and of inquiry? Truth, knowledge, understanding; veritism and epistemic value",
+    "Epistemic consequentialism and its critics; the trade-off between believing truths and avoiding errors"
+  ],
+  "sources": [
+    {
+      "key": "james1897",
+      "used_for": [
+        "the two commandments"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 17–18",
+          "basis": "full text",
+          "excerpt": "they are not two ways of stating an identical commandment, they are two separable laws",
+          "corpus_chunk": 10854
+        }
+      ],
+      "annotation": "James's essay, with the original pagination."
+    },
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "epistemic duties and moral duties"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Though this deontological conception of epistemic obligations need not entail that epistemic duties are also moral duties, there is a tradition of thinking about them in this way.",
+          "corpus_chunk": 4143
+        }
+      ],
+      "annotation": "Survey of doxastic voluntarism."
+    },
+    {
+      "key": "pritchard-etal2025",
+      "used_for": [
+        "grains of sand",
+        "Meno and the swamping problem"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "no fully rational agent is curious about the measurements of every grain of sand on a given beach",
+          "corpus_chunk": 4708
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Going all the way back to Plato’s Meno",
+          "corpus_chunk": 4632
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "this problem has been called the “swamping problem”",
+          "corpus_chunk": 4640
+        }
+      ],
+      "annotation": "Survey of the value of knowledge."
+    },
+    {
+      "key": "rysiew2021",
+      "used_for": [
+        "Quine's chapter of psychology",
+        "Kim's objection",
+        "Quine: the normative is naturalized"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Epistemology, or something like it, simply falls into place as a chapter of psychology",
+          "corpus_chunk": 4385
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The relation between the meager input and the torrential output",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For epistemology to go out of the business of justification is for it to go out of business. (Kim 1988: 391)",
+          "corpus_chunk": 4396
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "“[t]he normative is naturalized, not dropped” (1990: 229)",
+          "corpus_chunk": 4417
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "It is the technology of truth-seeking",
+          "corpus_chunk": 4417
+        }
+      ],
+      "annotation": "The standard survey of naturalized epistemology."
+    },
+    {
+      "key": "kim1988",
+      "used_for": [
+        "Kim's objection"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 391",
+          "basis": "secondary",
+          "note": "Quoted in rysiew2021 § 3.1 (corpus chunk 4396); details from Crossref"
+        }
+      ],
+      "annotation": "Kim's classic objection to naturalized epistemology."
+    },
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "objections to deontological justification; sufficient likelihood",
+        "consequentialism; Berker; permissivism"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "are akin not to actions but rather things such as digestive processes",
+          "corpus_chunk": 525
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This claim is typically supported by describing cases involving either a benighted, culturally isolated society or subjects who are cognitively deficient.",
+          "corpus_chunk": 526
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "S believes that p in a way that makes it sufficiently likely that her belief is true",
+          "corpus_chunk": 527
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "a particular way of forming one’s beliefs about the world is epistemically permissible just in so far as it promotes the possession of true belief and the avoidance of false belief",
+          "corpus_chunk": 487
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "see Berker 2013, which develops a line of argument found in Firth 1978",
+          "corpus_chunk": 487
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Permissivists argue that it does",
+          "corpus_chunk": 488
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology."
+    },
+    {
+      "key": "alston1988",
+      "used_for": [
+        "the control objection"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "Cited for the control objection in steup-neta2025 § 3.1 (corpus chunk 525); details from Crossref"
+        }
+      ],
+      "annotation": "Alston's argument against deontological justification."
+    },
+    {
+      "key": "berker2013",
+      "used_for": [
+        "argument against epistemic consequentialism"
+      ],
+      "evidence": [
+        {
+          "locator": "whole article",
+          "basis": "secondary",
+          "note": "As reported in steup-neta2025 § 1.2 (corpus chunk 487); details from Crossref"
+        }
+      ],
+      "annotation": "Berker's critique of epistemic teleology."
+    },
+    {
+      "key": "pettigrew2024",
+      "used_for": [
+        "Jamesian epistemic utility and the Lockean threshold"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "I’ll call this the Jamesian Epistemic Utility assumption",
+          "corpus_chunk": 4211
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "If \\(p \\gt \\frac{W}{R+W}\\), then believing \\(X\\) uniquely maximizes expected epistemic utility.",
+          "corpus_chunk": 4214,
+          "note": "The 0.75 and 0.5 examples are arithmetic from this formula"
+        }
+      ],
+      "annotation": "Survey of epistemic utility theory."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "veritism",
+        "timing disanalogy",
+        "other aims of belief"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "A prominent kind of monism, often called “veritism”, says that truth is the fundamental doxastic good",
+          "corpus_chunk": 3818
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "a belief’s success at achieving its aim is typically evaluated by epistemologists all at once in the moment it is formed",
+          "corpus_chunk": 3834
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "A common candidate here, of course, is knowledge itself",
+          "corpus_chunk": 3831
+        }
+      ],
+      "annotation": "The standard survey of the ethics of belief."
+    }
+  ]
+}

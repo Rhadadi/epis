@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** The chapter defines the working vocabulary of the field: proposition, truth, evidence, justification, rationality, warrant, certainty, fallibilism, defeater and reasons. Each word has a plain core that the chapter gets right, and each hides a debate. This page gives the core again with examples, then shows where philosophers disagree about what each word really picks out.
@@ -40,6 +40,7 @@ A **defeater** removes or weakens justification. Thomas Kelly's example: your te
 - **What evidence is.** Philosophers have answered very differently: sense-data (Russell), stimulations of the sensory receptors (Quine), observation statements (the logical positivists), everything one knows (Williamson's "E = K"), or one's current mental states (Conee and Feldman) [@kelly2016, preamble; @williamson2000]. The choice matters: if evidence is knowledge, no body of evidence can rule out a truth; if it is experiences or beliefs, it can [@kelly2016, § 3].
 - **Internal or external justification.** Internalists hold that justification depends only on what is inside the believer: a brain in a vat with your experiences would be just as justified as you. Externalists deny this, wanting from justification the likelihood of truth that knowledge needs [@steup-neta2025, § 3.3].
 - **The strange sound of fallible knowledge.** Fallibilism is the majority view, yet "I know it's raining, though I could be wrong" sounds odd; David Lewis said that fallible knowledge "just sounds contradictory" [@rysiew2026, § 5.1]. Stephen Hetherington argues the oddity does not show that knowledge must be infallible [@hetherington-iep, §§ 8–9].
+- **Certainty in al-Ghazālī.** Around 1100, al-Ghazālī set the bar for certain knowledge as knowledge that no possible challenge could shake: if a man insisted that three is more than ten and, "to prove it", changed a rod into a serpent, "I should remain none the less convinced of the falsity of his assertion, and although his miracle might arouse my astonishment, it would not instil any doubt into my belief". Testing what he knew against that bar, he found that nothing passed it "with the exception of sense-perceptions and necessary principles", and went on to doubt even those [@ghazali1909, 14–15].
 - **Defeat can be defeated.** Evidence that the "pathological liar" story was planted by your enemy restores your original justification: "In principle, there is no limit to the complexity of the relations of defeat" [@kelly2016, § 1]. John Pollock developed this into a theory of defeasible reasoning [@koons2025, § 1.1].
 
 ### What the chapter simplifies

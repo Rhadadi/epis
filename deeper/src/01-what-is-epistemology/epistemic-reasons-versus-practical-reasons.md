@@ -1,7 +1,7 @@
 ---
 tier: A
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** A reason to believe something can be of two kinds. An **epistemic** reason bears on whether the belief is *true*: evidence, argument, reliable testimony. A **practical** reason bears on whether *having* the belief would be good for you: comfort, reward, belonging, motivation. The chapter's billionaire offers a huge practical reason to believe the moon is made of cheese, and it does not help: you cannot simply decide to believe it. The deep questions are why practical reasons seem powerless over belief, whether they should ever count, and what to make of the famous arguments, from Pascal and al-Ghazālī to William James, that they sometimes do.
@@ -27,7 +27,7 @@ Try to believe, right now, that the moon is made of cheese. William Alston reste
 
 #### 3. When you deliberate, only truth counts
 
-When you ask yourself "Shall I believe that *p*?", the question immediately turns into "Is *p* true?". Considerations about the benefits of believing simply drop out of the deliberation. TODO-SHAH
+When you ask yourself "Shall I believe that *p*?", the question immediately turns into "Is *p* true?". Considerations about the benefits of believing simply drop out of the deliberation. In the literature on the aim of belief, it is widely held that beliefs formed by deliberation have a special connection to truth [@boespflug-jackson2024, § 3.2]. Nishi Shah and David Velleman argue that to conceive of an attitude as a belief that *p* is to conceive of it as governed by a norm of truth, as correct if and only if *p* is true [@schwitzgebel2024, § 1.6]. Desire is different: if you desire that *p* and *p* is false, you have not "erred or made a mistake" [@schwitzgebel2024, § 1.6; @shah-velleman2005].
 
 #### 4. Where practical reasons do come in
 
@@ -43,7 +43,7 @@ They do not vanish; they work at one remove.
 - **Pascal argued that God exists.** No. The Wager argues that you *ought to believe* in God, or take steps to, because it is the best bet; its reasons are prudential, not evidential [@hajek2024, § 1].
 - **James said you may believe whatever you like.** No. He allowed it only for a "genuine" option, one that is living, forced and momentous, and that "cannot by its nature be decided on intellectual grounds" [@james1897, 3–4, 11]. Chignell stresses that James "is by no means writing a blank doxastic check" [@chignell2018, § 1.1].
 - **Clifford demanded certainty.** No. He demanded *sufficient* evidence, allowed belief on trustworthy testimony, and in the later part of his essay gave a more moderate account of what "sufficient" means [@chignell2018, § 1.1; @clifford1879, 188–189].
-- **If belief is involuntary, no one can be blamed for a belief.** Not so fast. Clifford's ship-owner is blamed for how he formed his belief: by avoiding inquiry. And philosophers have argued that responsibility for belief does not require control of the kind we have over actions. TODO-HIERONYMI
+- **If belief is involuntary, no one can be blamed for a belief.** Not so fast. Clifford's ship-owner is blamed for how he formed his belief: by avoiding inquiry. And Matthew Chrisman, borrowing an idea from Wilfrid Sellars, argues that epistemic "oughts" are not rules for action at all but *rules of criticism*, like "The clock's chimes ought to strike at the quarter hour" or "A child ought to be able to tie his/her shoes by age four". They say how a believer ought to *be*, and, like the clock rule, they do not require that their subject can follow them voluntarily. That lets us keep both the "no rewards principle" (no reward, however large, can make you simply decide to believe) and genuine norms for belief [@chrisman2008, preprint pp. 1–2, 15].
 - **"Positive thinking" is a practical reason that works.** Believing a pill will help can change how you feel (a placebo), but that is a reason to *take* the pill, not evidence that it has an active ingredient. Keep "believing helps" apart from "it is true".
 
 ## The full story
@@ -51,18 +51,18 @@ They do not vanish; they work at one remove.
 ### How the debate developed
 
 ::: timeline Practical reasons for belief, from Pascal to now
-- **c. 1105** · Al-Ghazālī makes a wager-like argument for taking the next life seriously [@boespflug-jackson2024, § 7].
+- **c. 1105** · Al-Ghazālī, in his Persian *Alchemy of Happiness*, argues that a doubter should act as if there is a next life [@ghazali1910, ch. IV; @griffel2026, § 5; @boespflug-jackson2024, § 7].
 - **1670** · Pascal's *Pensées* published, with the Wager [@pascal1670, fr. 233].
-- **1781–88** · Kant: moral grounds justify practical faith (*Glaube*), which is not knowledge [@chignell2018, § 6.1].
+- **1781–87** · Kant: moral grounds justify practical faith (*Glaube*), which is not knowledge [@chignell2018, § 6.1].
 - **1877** · Clifford, "The Ethics of Belief" [@clifford1879].
 - **1896** · James, "The Will to Believe" [@james1897].
 - **1973** · Williams, "Deciding to Believe" [@williams1973, ch. 9].
 - **1988** · Alston argues belief is not under voluntary control [@alston1988].
-- **2003–05** · Shah, and Shah and Velleman, on how truth governs belief and the transparency of doxastic deliberation [@shah2003].
-- **2000s–now** · The "wrong kind of reasons" debate; defenders of pragmatic reasons for belief.
+- **2003–05** · Shah, and Shah and Velleman: belief is governed by a norm of truth [@shah2003; @schwitzgebel2024, § 1.6].
+- **2000s–now** · Defenders of practical reasons for belief, such as Andrew Reisner and Susanna Rinard, and their critics [@chignell2018, § 2.1; @boespflug-jackson2024, § 6.2].
 :::
 
-TODO-HISTORY-PR
+The debate has two strands that are often run together. One is about **permission**: may we believe on practical grounds? Pascal, James and Kant say yes, in different ways; Clifford says no. The other is about **possibility**: *can* practical considerations move belief at all? Its most influential modern statements are Williams's (1973) and Alston's (1988) [@boespflug-jackson2024, §§ 3.1–3.2], and it changes the first: if belief cannot respond to practical reasons, "ought" seems to have nothing to grip. Pascal saw this himself, which is why he recommended holy water and masses rather than an act of will [@pascal1670, fr. 233]. Some authors now recast pragmatic arguments as reasons for religious commitment or acceptance rather than belief, a move Pascal arguably made himself [@boespflug-jackson2024, § 7].
 
 ### Read the original
 
@@ -70,7 +70,17 @@ TODO-HISTORY-PR
 
 > "Let us weigh the gain and the loss in wagering that God is. Let us estimate these two chances. If you gain, you gain all; if you lose, you lose nothing. Wager, then, without hesitation that He is." [@pascal1670, fr. 233]
 
-Pascal is answering someone who has accepted that reason cannot settle whether God exists. His point is that you are "under the necessity of playing": not believing is also a bet. And since "there is an eternity of life and happiness" at stake, even a small chance of winning outweighs any finite loss [@pascal1670, fr. 233]. Hájek notes that this is really one of four arguments in the same section, and that its decision-theoretic form is what made it famous: Ian Hacking called it "the first well-understood contribution to decision theory" [@hajek2024, preamble, § 1].
+Pascal is answering someone who has accepted that reason cannot settle whether God exists. His point is that you are "under the necessity of playing": not believing is also a bet. And since "there is an eternity of life and happiness" at stake, even a small chance of winning outweighs any finite loss [@pascal1670, fr. 233]. Hájek notes that this is really the third of four arguments in the same section, and that it uses probability theory and decision theory "for almost the first time in history"; Ian Hacking called it "the first well-understood contribution to decision theory" [@hajek2024, preamble, § 1].
+
+:::
+
+::: original Al-Ghazālī, *The Alchemy of Happiness* (*Kīmiyā-yi saʿādat*), chapter IV (c. 1105)
+
+> "But, should he say that a future life is possible but that the doctrine is so involved in doubt and mystery that it is impossible to decide whether it be true or not, then one may say to him: 'Then you had better give it the benefit of the doubt! Suppose you are about to eat food and some one tells you a serpent has spat venom on it, you would probably refrain and rather endure the pangs of hunger than eat it, though your informant may be in jest or lying.'" [@ghazali1910, 62]
+>
+> "The Lord Ali once, in arguing with an unbeliever, said, 'If you are right, then neither of us will be any the worse in the future; but if we are right, then we shall escape, and you will suffer.'" [@ghazali1910, 63]
+
+Five and a half centuries before Pascal, al-Ghazālī gives the same structure in his Persian book on ethics, the *Kīmiyā-yi saʿādat* [@griffel2026, § 5]: when a question cannot be settled, weigh what you stand to lose. His examples are everyday prudence: you would skip a meal on a doubtful warning about poison, pay a charm-writer "on the chance of deriving benefit", and take "perilous voyages in ships for the sake of merely probable profit" [@ghazali1910, 62–63]. Notice his conclusion: "Even if he is doubtful about a future existence, reason suggests that he should *act as if* there were one, considering the tremendous issues at stake" [@ghazali1910, 63]. That is a practical reason for *acting*, close to what this guide calls acceptance, not a reason to believe. (Claud Field's 1910 English version was made from a Hindustani version of the work, not from the Persian original [@ghazali1910, title page].)
 
 :::
 
@@ -101,7 +111,7 @@ James's key move is the last clause. Suspending judgment is not a neutral defaul
 6. So, as long as you give God's existence some positive probability, you should wager for God.
 :::
 
-[@hajek2024, §§ 1, 5.4; @pascal1670, fr. 233]. The classic objections: the **many-gods** objection (premise 1 leaves out other possible gods with other demands), which defenders have tried to answer with more careful ways of comparing infinite rewards [@hajek2024, §§ 5.1, 5.4]; the objection that you **cannot believe at will** (which Pascal answered with his holy water); and a technical one about **mixed strategies**. If any strategy that leaves some chance of your coming to believe has infinite expected value, then ignoring the Wager and "having a hamburger" has the same expectation as wagering for God, so premise 5 picks out nothing in particular [@hajek2024, § 5.4].
+[@hajek2024, §§ 1, 5.4; @pascal1670, fr. 233]. The classic objections: the **many-gods** objection (premise 1 leaves out other possible gods with other demands), which defenders have tried to answer with more careful ways of comparing infinite rewards [@hajek2024, § 5.1]; the objection that you **cannot believe at will** (which Pascal answered with his holy water); and a technical one about **mixed strategies**. If any strategy that leaves some chance of your coming to believe has infinite expected value, then ignoring the Wager and "having a hamburger" has the same expectation as wagering for God, so premise 5 picks out nothing in particular [@hajek2024, § 5.4].
 
 ::: argument Clifford's argument for evidentialism
 1. The ship-owner, who believed his ship sound by suppressing his doubts, is guilty, whether or not the ship sinks.
@@ -120,37 +130,39 @@ James's key move is the last clause. Suspending judgment is not a neutral defaul
 5. So in such cases our "passional nature" may, and must, decide.
 :::
 
-[@james1897, 3–4, 11, 17–18]. A natural objection is to premise 3: suspending judgment *is* a way of avoiding the risk of error, and treating it as just another bet assumes the very weighting of the two commandments that is in dispute. James's reply is premise 4: the preference for avoiding error over gaining truth is itself "only [an] expression of our passional life" [@james1897, 18].
+[@james1897, 3–4, 11, 17–18]. A natural objection is to premise 3: suspending judgment *is* a way of avoiding the risk of error, and treating it as just another bet assumes the very weighting of the two commandments that is in dispute. James's reply is premise 4: our feelings of duty about truth and about error alike "are in any case only expressions of our passional life" [@james1897, 18].
 
 ### The positions
 
 ::: positions Evidence, practice and belief: the main views
 
-| View | Who | Core claim | The main objection |
+| View | Who | Core claim | The main objection or cost |
 |---|---|---|---|
-| Strict evidentialism | Clifford | Only sufficient evidence can make a belief permissible | Too demanding; ignores cases where evidence cannot settle a vital question |
-| Practical non-evidentialism (pragmatist) | Pascal, James | Prudential considerations can make a belief permissible or even required | Belief is not responsive to such reasons; it mixes up reasons to *believe* and reasons to *want* to believe |
-| Practical non-evidentialism (moral) | Kant | Moral grounds can justify practical faith (*Glaube*), which is not knowledge | Does it justify belief, or only commitment? |
-| Recasting as acceptance | many defenders of the Wager | Pragmatic arguments are reasons for commitment or acceptance, not belief | It may concede the evidentialist's point about belief |
-| Doxastic involuntarism | Alston, Williams | Belief is not under direct voluntary control, so practical reasons cannot directly move it | Contrived cases where believing at will seems possible |
+| Strict evidentialism | Clifford | Only sufficient evidence can make a belief permissible | Some vital questions cannot be settled by evidence, and suspending judgment on them is itself a risky choice (James) |
+| Practical non-evidentialism (pragmatist) | Pascal, James | Prudential considerations can make a belief permissible or even required | Belief does not respond to such reasons at will; they bear on whether a belief would be good to have, not on whether it is true |
+| Practical non-evidentialism (moral) | Kant | Moral grounds can justify a taking-to-be-true that is not knowledge | Is the result belief (*Glaube*) or only acceptance (*Annehmung*)? |
+| Recasting as acceptance | Some writers on faith and the Wager | Pragmatic arguments are reasons for commitment or acceptance, not belief | Belief itself is left to the evidence |
+| Doxastic involuntarism | Alston, Williams | Belief is not under direct voluntary control, so practical reasons cannot directly move it | Contrived cases where believing at will seems possible (Peels, Reisner) |
 
 :::
 
-[@chignell2018, §§ 1.1, 6.1, 7; @boespflug-jackson2024, §§ 3, 7]
+[@chignell2018, §§ 1.1, 6.1; @boespflug-jackson2024, §§ 3, 4.4, 7; @james1897, 11]
 
 ### Where the debate stands
 
-TODO-NOW-PR
+- **Is belief really involuntary?** The standard view in contemporary philosophy is that it is. But in seven experiments, Turri, Rose and Buckwalter found that ordinary people's judgments about belief provide "strong evidence that voluntary belief is conceptually possible", and some evidence that it is psychologically possible [@turri-etal2018, abstract]. Contrived cases in which the truth depends on what you believe point the same way [@boespflug-jackson2024, § 4.4].
+- **What "ought to believe" means.** If belief is not chosen, epistemic norms cannot be rules for action. Chrisman's proposal, that they are rules of criticism, is one way to keep them [@chrisman2008, preprint pp. 1–2, 15]. Alston made his case against voluntarism while arguing that the deontological picture of justification, in terms of duties and blame, needs voluntary control; its defenders disagree about whether it does (Steup says it does, Feldman that it does not) [@boespflug-jackson2024, § 6.1].
+- **Are practical considerations reasons for belief at all?** Several authors argue that they are. Susanna Rinard holds that the rationality of beliefs "is determined in precisely the same way as the rationality of other states", so that "moral or prudential considerations can be reasons for belief" [@boespflug-jackson2024, § 6.2]. Andrew Reisner has argued for prudential reasons for belief, including "Weighing Pragmatic and Evidential Reasons for Belief" [@chignell2018, § 2.1; @steup-neta2025, bibliography]. On the other side, practical reasons are said to bear only on whether a belief would be good to have, not on whether *p*, the question a belief answers [@boespflug-jackson2024, § 3.2].
 
 ## Beyond the chapter
 
 ### What the chapter leaves out
 
 - **Pascal's precursors and parallels.** Similar pragmatic arguments appear in al-Ghazālī and in the Buddhist discourse to the Kālāmas [@boespflug-jackson2024, § 7], and in the Christian writers Sirmond and Chillingworth a few years before Pascal [@hajek2024, § 1].
-- **Cases where belief and truth are linked.** If a perfectly reliable mind-reader will pay you only if you come to believe you will be paid, the practical reason and the evidence point the same way. Philosophers such as Rik Peels and Andrew Reisner use such cases to argue that believing for practical reasons can be possible and rational [@boespflug-jackson2024, § 4.4].
+- **Cases where belief and truth are linked.** In Rik Peels's example, Dr. Transparent promises you $10 if, within a minute, you come to believe that you will receive $10. The truth depends on the belief, so the practical reason and the evidence point the same way. Peels argues that such a belief can be formed at will, partly for practical reasons, and rationally; Andrew Reisner uses a perfectly reliable mind-reading machine to make a similar case [@boespflug-jackson2024, § 4.4].
 - **Kant's practical faith.** For Kant, moral considerations can justify a kind of belief (*Glaube*) or acceptance (*Annehmung*) that is not knowledge [@chignell2018, § 6.1].
 - **Clifford on authority.** The chapter presents Clifford as a lone sceptic; his essay's second half is about when it is right to believe on testimony [@clifford1879, 188–189].
-TODO-LEFTOUT-PR
+- **Belief by upbringing.** The most common non-evidential source of belief is not a wager but where you were born. Al-Ghazālī noticed it: "how easily the children of Christians become Christians, and the children of Moslems embrace Islam", and set out to separate the "accidental beliefs imposed on him by the authority of his parents and his masters" from what he could know for certain [@ghazali1909, 13–14]. Clifford condemns the same pattern, the man who "keeps down and pushes away any doubts" about a belief "taught in childhood" [@clifford1879, 186].
 
 ### What the chapter simplifies
 

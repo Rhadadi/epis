@@ -1,7 +1,7 @@
 ---
 tier: B
 status: draft
-updated: 2026-10-02
+updated: 2026-10-01
 ---
 
 > **In short.** Contemporary epistemology has many branches: traditional, formal, social, virtue, naturalized, feminist, and the epistemology of science, morality and religion. The chapter's diagram draws them as a tree. They are better seen as overlapping angles on the same questions, and the map is drawn from one tradition: classical Indian and Chinese philosophy have long, developed theories of knowledge of their own.

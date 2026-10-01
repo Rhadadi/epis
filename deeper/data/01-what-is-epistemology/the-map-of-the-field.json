@@ -1,0 +1,266 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "the-map-of-the-field",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is formal epistemology?",
+    "What is social epistemology?",
+    "Virtue epistemology: reliabilist and responsibilist versions",
+    "Feminist and standpoint epistemology",
+    "Epistemology in other traditions: Indian pramana theory and Chinese epistemology",
+    "Moral and religious epistemology"
+  ],
+  "sources": [
+    {
+      "key": "weisberg2021",
+      "used_for": [
+        "formal epistemology uses math and logic"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Formal epistemology explores knowledge and reasoning using “formal” tools, tools from math and logic.",
+          "corpus_chunk": 5275
+        }
+      ],
+      "annotation": "Introduction to formal epistemology."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "social epistemology's subject",
+        "Goldman's veritism; testimony and science",
+        "Fricker's two injustices"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "investigating the epistemic effects of social interactions, practices, norms, and systems",
+          "corpus_chunk": 4506
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Goldman’s “veritistic” approach, which focuses on the reliability with which various social practices produce true beliefs",
+          "corpus_chunk": 4514
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Philosophy of science, too, eventually became an important site of contemporary social epistemology",
+          "corpus_chunk": 4515
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "(Fricker’s example is the experience of women before the term “sexual harassment” was coined.)",
+          "corpus_chunk": 4586
+        }
+      ],
+      "annotation": "The standard survey of social epistemology."
+    },
+    {
+      "key": "turri-etal2021",
+      "used_for": [
+        "reliabilists and responsibilists",
+        "Sosa's apt belief"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Virtue reliabilists (e.g., Goldman, Greco, and Sosa)",
+          "corpus_chunk": 4762
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Apt belief, then, is belief that is true because competent.",
+          "corpus_chunk": 4776
+        }
+      ],
+      "annotation": "Survey of virtue epistemology."
+    },
+    {
+      "key": "anderson2024",
+      "used_for": [
+        "situated knowledge",
+        "a branch of social epistemology"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The central concept of feminist epistemology is of situated knowledge",
+          "corpus_chunk": 5140
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It is thus a branch of social epistemology.",
+          "corpus_chunk": 5144
+        }
+      ],
+      "annotation": "Survey of feminist epistemology."
+    },
+    {
+      "key": "carter-sosa2026",
+      "used_for": [
+        "Sturgeon's grid"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Formal work on rational belief and its revision (C)",
+          "corpus_chunk": 892
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Keith Lehrer’s work on comparative confidence",
+          "corpus_chunk": 891
+        }
+      ],
+      "annotation": "Survey of metaepistemology."
+    },
+    {
+      "key": "rysiew2021",
+      "used_for": [
+        "later Quine and other sciences"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "in later writings Quine cites other sciences as being relevant to epistemology naturalized",
+          "corpus_chunk": 4386
+        }
+      ],
+      "annotation": "The standard survey of naturalized epistemology."
+    },
+    {
+      "key": "phillips-vaidya2026",
+      "used_for": [
+        "pramana-sastra",
+        "Nagarjuna and self-certification",
+        "testimony"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "spanning almost twenty centuries",
+          "corpus_chunk": 5016
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "knowledge is self-certifying, svataḥ prāmāṇya",
+          "corpus_chunk": 5035
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p",
+          "corpus_chunk": 5074
+        }
+      ],
+      "annotation": "Survey of classical Indian epistemology."
+    },
+    {
+      "key": "rosker2025",
+      "used_for": [
+        "knowledge from moral training; onto-epistemology"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(or primarily) stems from moral training",
+          "corpus_chunk": 4879
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "epistemology is inseparable from ontology",
+          "corpus_chunk": 4920
+        }
+      ],
+      "annotation": "Survey of Chinese epistemology."
+    },
+    {
+      "key": "fricker2007",
+      "used_for": [
+        "testimonial and hermeneutical injustice"
+      ],
+      "evidence": [
+        {
+          "locator": "whole book",
+          "basis": "secondary",
+          "note": "As reported in oconnor-etal2026 § 5.3 (corpus chunk 4586); details from Open Library"
+        }
+      ],
+      "annotation": "The book that introduced epistemic injustice."
+    },
+    {
+      "key": "goldman1999",
+      "used_for": [
+        "veritistic social epistemology"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 5 (as cited)",
+          "basis": "secondary",
+          "note": "As reported in oconnor-etal2026 § 2 (corpus chunk 4514); details from Open Library"
+        }
+      ],
+      "annotation": "The book that set the agenda for veritistic social epistemology."
+    },
+    {
+      "key": "campbell2024",
+      "used_for": [
+        "how moral knowledge is possible, given disagreement"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "How is moral knowledge possible?",
+          "corpus_chunk": 5434
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "moral disagreements",
+          "corpus_chunk": 5434
+        }
+      ],
+      "annotation": "Survey of moral epistemology."
+    },
+    {
+      "key": "forrest2025",
+      "used_for": [
+        "reformed epistemology; Alston on religious experience"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Reformed epistemology might be thought of as a modification of evidentialism in which the permissible kinds of evidence are expanded.",
+          "corpus_chunk": 5670
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Alston’s work arguing that certain kinds of religious experience can be assimilated to perception",
+          "corpus_chunk": 5670
+        }
+      ],
+      "annotation": "Survey of the epistemology of religion."
+    }
+  ]
+}

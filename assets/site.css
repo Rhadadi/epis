@@ -1130,6 +1130,14 @@ sup.cite a{text-decoration:none;color:var(--accent);font-weight:600}
 .blk-timeline li{position:relative;padding-inline-start:18px;margin:.5em 0}
 .blk-timeline li::before{content:"";position:absolute;inset-inline-start:-6px;top:.6em;width:10px;height:10px;border-radius:50%;background:var(--accent)}
 .blk-positions .table{margin:0 0 1em}
+@media(max-width:640px){
+  .blk-positions .table{overflow:visible;border:0;background:none}
+  .blk-positions table,.blk-positions tbody,.blk-positions tr,.blk-positions td{display:block;width:100%}
+  .blk-positions thead{display:none}
+  .blk-positions tr{border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);padding:10px 12px;margin:0 0 10px}
+  .blk-positions td{border:0;padding:3px 0}
+  .blk-positions td:first-child{font-family:var(--sans);font-weight:600;color:var(--ink);padding-bottom:4px}
+  .blk-positions td+td::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}}
 .toc ol ol{border:0;margin:2px 0 6px;padding-inline-start:12px;font-size:.92em}
 .deep-pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:3em 0 0;font-family:var(--sans)}
 .deep-pager a{display:flex;flex-direction:column;gap:3px;padding:12px 14px;border:1px solid var(--rule-2);border-radius:12px;text-decoration:none;color:var(--ink)}

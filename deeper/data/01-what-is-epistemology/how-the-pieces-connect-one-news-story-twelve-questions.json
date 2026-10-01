@@ -1,0 +1,201 @@
+{
+  "chapter": "01-what-is-epistemology",
+  "section": "how-the-pieces-connect-one-news-story-twelve-questions",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Do press releases exaggerate health research? Causal claims from correlational studies in news coverage",
+    "Why might most published research findings be false?",
+    "Knowledge from the news: testimony through intermediaries, trust in experts and higher-order evidence"
+  ],
+  "sources": [
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "journalism as testimony"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.5",
+          "basis": "full text",
+          "excerpt": "articles by journalists, delivery of information on television, radio",
+          "corpus_chunk": 584
+        }
+      ],
+      "annotation": "The main SEP survey of epistemology."
+    },
+    {
+      "key": "sumner2014",
+      "used_for": [
+        "sample, rates, odds, uptake, conclusion"
+      ],
+      "evidence": [
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "Press releases (n=462) on biomedical and health related science issued by 20 leading UK universities in 2011",
+          "corpus_chunk": 14250
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "news stories (n=668)",
+          "corpus_chunk": 14250
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "40% (95% confidence interval 33% to 46%) of the press releases contained exaggerated advice, 33% (26% to 40%) contained exaggerated causal claims",
+          "corpus_chunk": 14250
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "58% (95% confidence interval 48% to 68%), 81% (70% to 93%), and 86% (77% to 95%) of news stories",
+          "corpus_chunk": 14251
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "17% (10% to 24%), 18% (9% to 27%), and 10% (0% to 19%)",
+          "corpus_chunk": 14251
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "there was little evidence that exaggeration in press releases increased the uptake of news",
+          "corpus_chunk": 14251
+        },
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "Improving the accuracy of academic press releases could represent a key opportunity for reducing misleading health related news",
+          "corpus_chunk": 14252
+        }
+      ],
+      "annotation": "Observational study of exaggeration in press releases and health news."
+    },
+    {
+      "key": "schwartz2012",
+      "used_for": [
+        "absolute risks 53% vs 9%"
+      ],
+      "evidence": [
+        {
+          "locator": "abstract",
+          "basis": "full text",
+          "excerpt": "9% of stories quantified the main result with absolute risks when this information was not in the press release, 53% did so when it was in the press release",
+          "corpus_chunk": 14200
+        }
+      ],
+      "annotation": "Retrospective cohort study of journal press releases."
+    },
+    {
+      "key": "ioannidis2005",
+      "used_for": [
+        "PPV formula",
+        "corollaries",
+        "own wording"
+      ],
+      "evidence": [
+        {
+          "locator": "“Modeling the Framework”",
+          "basis": "full text",
+          "excerpt": "PPV = (1 - β)R/(R - βR + α). A research finding is thus more likely true than false if (1 - β)R > α.",
+          "corpus_chunk": 14302
+        },
+        {
+          "locator": "corollary 1",
+          "basis": "full text",
+          "excerpt": "The smaller the studies conducted in a scientific field, the less likely the research findings are to be true.",
+          "corpus_chunk": 14312
+        },
+        {
+          "locator": "corollary 4",
+          "basis": "full text",
+          "excerpt": "The greater the flexibility in designs, definitions, outcomes, and analytical modes in a scientific field",
+          "corpus_chunk": 14315
+        },
+        {
+          "locator": "corollary 5",
+          "basis": "full text",
+          "excerpt": "The greater the financial and other interests and prejudices in a scientific field",
+          "corpus_chunk": 14317
+        },
+        {
+          "locator": "corollary 6",
+          "basis": "full text",
+          "excerpt": "The hotter a scientific field",
+          "corpus_chunk": 14318
+        },
+        {
+          "locator": "introduction",
+          "basis": "full text",
+          "excerpt": "It can be proven that most claimed research findings are false.",
+          "corpus_chunk": 14299
+        }
+      ],
+      "annotation": "The paper behind much of the replication debate."
+    },
+    {
+      "key": "reiss-sprenger2020",
+      "used_for": [
+        "p-hacking"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "substantially over its nominal 5% level",
+          "corpus_chunk": 6480
+        }
+      ],
+      "annotation": "Survey of scientific objectivity."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "higher-order evidence"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "knowing that a peer disagrees with you is a piece of higher-order evidence regarding your first-order belief",
+          "corpus_chunk": 3851
+        }
+      ],
+      "annotation": "The standard survey of the ethics of belief."
+    },
+    {
+      "key": "leonard2023",
+      "used_for": [
+        "transmission vs generation"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Gretchen does not know that the bakery is closed",
+          "corpus_chunk": 368
+        }
+      ],
+      "annotation": "The standard survey of the epistemology of testimony."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "social epistemology studies systems"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "investigating the epistemic effects of social interactions, practices, norms, and systems",
+          "corpus_chunk": 4506
+        }
+      ],
+      "annotation": "The standard survey of social epistemology."
+    }
+  ]
+}
