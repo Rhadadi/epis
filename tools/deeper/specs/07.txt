@@ -1,0 +1,295 @@
+== 07-sources-of-knowledge/basic-and-derived-sources
+Q: Which kinds of dependence distinguish a basic belief from a derived belief, and what does a source classification leave open?
+@steup-neta2025 | § 4.1 | According to foundationalism, our justified beliefs are structured like a building: they are divided into a foundation and a superstructure, the latter resting upon the former.
+@steup-neta2025 | § 4.1 | Suppose you notice (for whatever reason) someone’s hat, and you also notice that that hat looks blue to you.
+@steup-neta2025 | § 4.1 | Beliefs about external objects cannot qualify as basic, according to this kind of foundationalism, for it is impossible for such beliefs to enjoy the kind of epistemic privilege necessary for being basic.
+@steup-neta2025 | § 4.1 | But if we consider a random selection of typical beliefs we hold, it is not easy to see from which basic beliefs they could be deduced.
+@steup-neta2025 | § 4.2 | Foundationalism says that knowledge and justification are structured like a building, consisting of a superstructure that rests upon a foundation.
+A @steup-neta2025: Defines basic belief and contrasts foundational and coherent structures while allowing non-deductive support.
+@leonard2023 | § 1 | Fricker 2007).[1] Moreover, there are many interesting questions about eyewitness testimony and the law (e.g., Wells & Olson 2003 and Burroughs & Tollefsen 2016), as well as important questions about the relationship between testimony and assertion (e.g., Pagin 2007 [2016]).
+@leonard2023 | § 1 | Consider this scenario: Your friend testifies to you that your favorite team won last night’s game (= p).
+@leonard2023 | § 1.1 | Those who defend answers to this question tend to endorse one of three main positions: Reductionism, Non-Reductionism, and Hybrid Views.
+@leonard2023 | § 1.1 | Reductionists maintain that in order to acquire testimonial justification, one must have positive reasons for thinking that the speaker in question is a reliable testifier.
+@leonard2023 | § 1.1.1 | One of the primary motivations for Reductionism stems from concerns having to do with gullibility; that is, many reductionists maintain that if we could justifiably accept a speaker’s testimony without having positive reasons for thinking that they typically speak the truth, then we would be justified in accepting
+@leonard2023 | § 1.1.1 | According to Global Reductionism, in order to be justified in accepting a speaker’s testimony, you need to have positive reasons for believing that testimony is generally reliable, i.e., that accepting the reports of others is a reliable way of forming true beliefs.
+@leonard2023 | § 1.1.1 | That is, testimonial justification can be reduced to a combination of other epistemic sources because it only involves you (i) perceiving that the speaker made an utterance (ii) remembering that when people have told you things in the past, they turned out to be right most of the time and (iii) inferring on this basis
+@leonard2023 | § 1.1.1 | But in order to know that Bill can be trusted, I might need to rely on Carly to confirm that he usually says true things.
+@leonard2023 | § 1.1.1 | Coady (1992) for this worry, and see Wright (2016a, 2019) for an importantly different kind of circularity worry for all Reductionist views.
+@leonard2023 | § 1.1.1 | The problem here is that we frequently receive testimony about wildly different topics, e.g., quantum mechanics, politics, one’s own music preferences, etc.
+@leonard2023 | § 1.1.1 | For it is only when we think of testimony as being disaggregated in this way that it make sense to ask about whether receiving testimony about a particular category is a reliable source of knowledge.
+@leonard2023 | § 1.1.2 | According to Local Reductionism, in order to be justified in accepting a speaker’s testimony, the hearer needs to have non-testimonially based reasons for thinking that the speaker in question is a reliable testifier on this occasion (as opposed to having positive reasons for thinking that testimony in general is
+@leonard2023 | § 1.1.2 | For if Local Reductionism is true, then in order to be justified in accepting a parent’s testimony, a young child would need non-testimonially based reasons for thinking that this parent is a reliable testifier.
+@leonard2023 | § 1.1.2 | Second, opponents have objected to Local Reductionism on the grounds that we can be justified in believing a speaker, S’s, testimony that p even if we lack the relevant non-testimonially based reasons to support the inference from “S said that p” to “p”.
+@leonard2023 | § 1.1.2 | For insofar as the only thing that justifies your belief is your inference from “This person said that my hotel is just down the road” to “My hotel is just down the road”, then since you know next to nothing about this stranger, and since you also know very little about whether anyone in this area is likely to answer
+@leonard2023 | § 1.1.2 | Reductionists have offered responses to all of the worries mentioned above.
+@leonard2023 | § 1.2 | According to Non-Reductionists, Positive Reasons is false, i.e., we don’t need positive reasons for thinking that a speaker’s testimony is reliable in order to be justified in believing what we are told.
+@leonard2023 | § 1.2 | Ross (1986), Hardwig (1985, 1991), Coady (1992, 1994), Burge (1993, 1997, 2013), Plantinga (1993), Stevenson (1993), Webb (1993), Dummett (1994), Foley (1994), McDowell (1994), Strawson (1994), Williamson (1996, 2000), Millgram (1997), Alvin Goldman (1999), Schmitt (1999), Insole (2000), Owens (2000), Rysiew (2000),
+@leonard2023 | § 1.3 | Finally, some epistemologists reject both Reductionism and Non-Reductionism in favor of various hybrid views.
+@leonard2023 | § 1.3 | Or, one might opt for a hybrid view according to which the hearer and the speaker both have an important role to play in the hearer’s ability to acquire testimonial justification, i.e., it takes two to tango, so to speak.
+@leonard2023 | § 1.3 | The hope here is that by requiring contributions from both the speaker and the hearer, all of the worries associated with standard versions of Reductionism and Non-reductionism can be avoided.
+A @leonard2023: Surveys reduction, default entitlement, knowledge generation, evidential inheritance, assurance, and group testimony.
+@russell-bruce2024 | § 4.1 | A standard answer to the question about the difference between a priori and empirical justification is that a priori justification is independent of experience and empirical justification is not, and this seems to explain the contrasts present in the fifteen examples above.
+@russell-bruce2024 | § 4.1 | Given these considerations, perhaps “experience” should be taken to mean “sense experience of any sort, introspection, proprioception, memory, and testimony”.
+@russell-bruce2024 | § 4.1 | As noted above (see, sec. 3) and below (secs. 4.4 and 4.5), “independent of experience” should not be taken to mean independent of all experience, but, as a first approximation, to mean “independent of all experience beyond what is needed to grasp the relevant concepts involved in the proposition”.
+@russell-bruce2024 | § 4.1 | Suppose there is a significant difference between a priori and empirical justification.
+A @russell-bruce2024: Explains enabling experience, defeasibility, necessity, thought experiments, and current debates about a priori justification.
+@michaelian-sutton2026 | § 4.2 | In psychology, it is manifested in Ebbinghaus’s ([1885] 1913) foundational experimental work on memory for lists of nonsense syllables.
+@michaelian-sutton2026 | § 9 | Goldman 1999), and the problem of stored beliefs (Moon 2012).
+A @michaelian-sutton2026: Distinguishes reconstructive remembering, truth, authenticity, and unresolved problems of epistemic preservation.
+
+== 07-sources-of-knowledge/inference
+Q: What separates validity, justified premises, reliable transitions, and properly basing a belief on reasons?
+@korcz2026 | § 1 | But the causal relation as a whole between the two events does not manifest any cognitive traits, such as some sort of cognitive inference.
+A @korcz2026: Defines the basing relation between a belief and the reasons on which it is actually held.
+@steup-neta2025 | § 4.1 | According to foundationalism, our justified beliefs are structured like a building: they are divided into a foundation and a superstructure, the latter resting upon the former.
+@steup-neta2025 | § 4.1 | Suppose you notice (for whatever reason) someone’s hat, and you also notice that that hat looks blue to you.
+@steup-neta2025 | § 4.1 | Beliefs about external objects cannot qualify as basic, according to this kind of foundationalism, for it is impossible for such beliefs to enjoy the kind of epistemic privilege necessary for being basic.
+@steup-neta2025 | § 4.1 | But if we consider a random selection of typical beliefs we hold, it is not easy to see from which basic beliefs they could be deduced.
+A @steup-neta2025: Defines basic belief and contrasts foundational and coherent structures while allowing non-deductive support.
+@goldman-beddor2021 | § 2.3 | Perhaps the most widely discussed problem for process reliabilism is the generality problem.
+@goldman-beddor2021 | § 2.3 | Or perhaps something more fine-grained, such as visual experience of a maple tree on a sunny afternoon?
+@goldman-beddor2021 | § 2.3 | A different approach to the generality problem is to insist that a version of the problem arises for any adequate epistemology, not just reliabilists.
+@goldman-beddor2021 | § 2.3 | First, they show that the generality problem is very general, since some version of it arises in non-epistemic contexts.
+A @goldman-beddor2021: Distinguishes reliable inferential transitions from the status of their input beliefs.
+@ichikawa-steup2026 | § 4 | Given this further assumption, James’s belief in (d) is true.
+@ichikawa-steup2026 | § 4 | Observation from any other viewpoint would immediately reveal these structures to be fakes: devices erected for the purpose of fooling unsuspecting motorists into believing in the presence of barns.
+A @ichikawa-steup2026: Explains why excluding false lemmas does not remove all Gettier-style epistemic luck.
+
+== 07-sources-of-knowledge/introspection-and-self-knowledge
+Q: Which targets and processes are involved in self-knowledge, and how do transparency and restricted infallibility proposals differ?
+@schwitzgebel2024b | preamble | Introspection, as the term is used in contemporary philosophy of mind, is a means of learning about one’s own currently ongoing, or perhaps very recently past, mental states or processes.
+@schwitzgebel2024b | preamble | Introspection is also central to philosophy of mind, both as a process worth study in its own right and as a court of appeal for other claims about the mind.
+@schwitzgebel2024b | § 1.1 | Introspection is generally regarded as a process by means of which we learn about our own currently ongoing, or very recently past, mental states or processes.
+@schwitzgebel2024b | § 1.1 | It’s difficult to articulate exactly what directness or immediacy involves in the present context, but some examples should make the import of this condition relatively clear.
+@schwitzgebel2024b | § 2 | This section will outline several approaches to self-knowledge.
+@schwitzgebel2024b | § 4.1.1 | Historical arguments for indubitability and infallibility have tended to center on intuitive appeals to the apparent impossibility of doubting or going wrong about such matters as whether one is having a thought with a certain content or is experiencing pain or having a visual experience as of seeing red.
+A @schwitzgebel2024b: Explains competing definitions and processes of introspection and the restricted scope of proposed infallibility.
+@gertler2024 | preamble | In philosophy, “self-knowledge” standardly refers to knowledge of one’s own mental states—that is, of what one is feeling or thinking, or what one believes or desires.
+@gertler2024 | § 1.1 | The strongest epistemic claims on behalf of self-knowledge are infallibility and omniscience.
+@gertler2024 | § 3.4 | Transparency accounts are inspired by the idea discussed above in connection with Gareth Evans’ famous remark: that if asked whether you believe that there will be a third world war, you answer by directly considering the likelihood of a third world war.
+@gertler2024 | § 3.4 | Reasoning from it’s snowing to you/they believe that it’s snowing will not reliably yield true beliefs about others’ beliefs.
+@gertler2024 | § 3.7 | And our right to that assumption gives us the epistemic right to use the transparency method associated with Evans’ famous remarks: to answer the question “do you believe that p?” by considering reasons bearing on p (ibid.) So the self-ascriptions produced by the transparency method constitute knowledge.
+A @gertler2024: Separates the scope and security of self-knowledge and compares empirical transparency with agential entitlement.
+
+== 07-sources-of-knowledge/intuition-emotion-and-other-candidate-sources
+Q: Which kinds of immediate response and emotional contribution are being claimed, and how do inquiry and truth support differ?
+@pust2024 | § 1 | Consider the claim that a fully rational person does not believe both p and not-p.
+@pust2024 | § 1 | Consider recent research on “intuitions” in naturalistic decision making (Klein 1998).
+@pust2024 | § 1 | The focus of the present entry is the role of intuitions in distinctively philosophical (and other “armchair”) inquiry.
+@pust2024 | § 1.1 | Some philosophers equate intuitions with beliefs or with beliefs of some kind.
+@pust2024 | § 1.1 | If one has reasoned one’s way to a satisfactory resolution of a paradox and identified the false proposition, one often still has the intuition that the rejected proposition is true.
+@pust2024 | § 1.1 | One might, when viewing the Müller-Lyer illusion, experience one line as longer than the other even though one, having repeatedly measured the lines, firmly believes them to be of equal length.
+@pust2024 | § 1.1 | One such account, favored by many psychologists and philosophers with naturalistic inclinations, treats intuitions as beliefs without a conscious or introspectively accessible inferential etiology (Gopnik and Schwitzgebel 1998; Devitt 2006: 491; Kornblith 1998) as in [A2] S has the intuition that p if and only if S
+@pust2024 | § 1.1 | The latter problem does not appear so easily circumvented.
+@pust2024 | § 1.1 | Finally, [A3] appears to make the direct introspective judgment that one has an intuition difficult to justify, as one lacks direct introspective access to the non-conscious causes of one’s beliefs.
+A @pust2024: Separates broad uses of intuition from philosophical seemings and examines whether intuitions are beliefs.
+@turri-etal2021 | § 10.4 | It’s uncontroversial to say that many virtues are emotional dispositions, even if they involve behavior in addition to emotion.
+@turri-etal2021 | § 10.4 | VE can benefit from theorizing about epistemic emotions in at least three ways.
+A @turri-etal2021: Surveys epistemic emotions as aspects of intellectual character and motivation for further inquiry.
+
+== 07-sources-of-knowledge/knowledge-by-presence
+Q: What is present rather than represented in Suhrawardi’s and Ṣadrā’s accounts, and which later judgments remain open to error?
+@marcotte2025 | § 3.2 | At the heart of Suhrawardi’s epistemological concerns lie two important components of his ishraqi philosophy of lights: the concepts of ‘self-awareness’ (shu‘ur bi-l-dhat) and ‘knowledge by presence’ (‘ilm huduri) (PI, §§114–7).
+@marcotte2025 | § 3.2 | He rejects it as a proof for the existence of the immaterial soul, claiming that the relation enjoyed by the (material) body/(immaterial) soul is a “more intimate relationship of ‘presence’ (hudur)”, since ‘presence’ now connects (immaterial) intellection and internal (material/brain) senses activities.
+@marcotte2025 | § 3.2 | He develops his epistemological theory by providing various arguments to demonstrate the existence of a type of knowledge that is self-evident, innate and unmediated through any type of abstraction or representation of forms, whether it be through an image, a form, a notion or an attribute of the self (Marcotte 2006).
+@marcotte2025 | § 3.2 | The unmediated nature of this process characterizes both the soul’s self-awareness and the soul’s awareness or knowledge of external objects of knowledge, such as dominating (intelligible) light-entities, and even provides the conditions for possible glimpses of the Light of Lights, God, it may catch (Suh. 1993a,
+@marcotte2025 | § 3.2 | Self-awareness of human beings is equated with the self-awareness that incorporeal lights possess and share.
+@marcotte2025 | § 3.2 | Enneads V 3.6) Aristotle figure of Suhrawardi’s famous ‘dream-vision ‘ provides an illustrious example of what constitutes real knowledge based on immediate and intuitive knowledge: “return to your self (nafs)” (1993a, 70), that is, knowledge one obtains through one’s own soul.
+@marcotte2025 | § 3.2 | Mystical vision and contemplation operate through this intuitive process of knowing metaphysical lights.
+@marcotte2025 | § 3.2 | For some, like Qutb al-Din Shirazi, whereas the Peripatetics had extolled intellection, Suhrawardi brings direct intuition (dhawq) or mystical contemplation (heightened by ascetic components) to the forefront, as an alternative — albeit more reliable — foundation of certainty, where this presence can be achieved
+@marcotte2025 | § 3.2 | Prophecy becomes the ‘direct’ experience of the world of lights.
+@marcotte2025 | § 3.2 | On the whole, however, the epistemic process by which mystics such as Abu Yazid al-Bistami (d.874), Sahl al-Tustari (d.896) and Hallaj (d.912), sages such as Zarathustra and Empedocles, philosophers such as Pythagoras and Plato, or Suhrawardi himself have all had access to those metaphysical truths and divine realms
+@marcotte2025 | § 4.2 | Out of the interaction of the irradiations of the vertical and the horizontal lights, the bodies of the lower world are generated.
+@marcotte2025 | § 4.2 | Notions of intensity and gradation of light, together with notions of presence and self-manifestation, are thus central to Suhrawardi’s metaphysics.
+@marcotte2025 | § 4.2 | The concepts of self-knowledge and knowledge by presence, at the heart of the knowledge by presence of all light-beings, provides a means to explain God’s self-awareness, as the Light of Lights, as well as Its self-knowledge and It’s knowledge of all things other than itself (creation), such as particulars.
+@marcotte2025 | § 4.2 | Hence, God’s knowledge by presence is now conceived in terms of the “existence of a ‘relation’ (idafa) between it and whatever is known to it”, whereby this “purely relational” nature of God’s knowledge enables the Light of Light to know material particulars without there being any changes or effects on its light
+@marcotte2025 | § 3.2 | the presence (hudur) of a thing for a self (dhat)
+A @marcotte2025: Open survey of Suhrawardi’s nonrepresentational self-awareness and its metaphysics; the brief Intimations passage is quoted through this entry.
+@rizvi2021 | § 4.4 | Mulla Sadra inherited a variety of theories ranging from Platonic recollection (anamnesis) and division to Peripatetic syllogistics, definitions and axiomatic science.
+@rizvi2021 | § 4.4 | According to this model, knowledge is negative insofar as it is solipsistic (Mulla Sadra 2001–5, III: 318).
+@rizvi2021 | § 4.4 | One can only grasp the form in the mind since the essences of things are not available to us.
+@rizvi2021 | § 4.4 | Mulla Sadra quotes Avicenna (from al-Ta‘liqat, Avicenna 1973: 34).
+@rizvi2021 | § 4.4 | If something is known by formal knowledge, it changes the reality of it (Mulla Sadra 2001–5, I: 489).
+@rizvi2021 | § 4.4 | Whereas knowledge by presence extends the nature of divine knowledge to the human and resolves the problem of God’s knowledge of particulars by insisting upon the unitive nature of that knowledge.
+A @rizvi2021: Distinguishes presence from representation in Mullā Ṣadrā’s account and relates the epistemology to his ontology of existence.
+@russell1912 | ch. V | We have spoken of acquaintance with the contents of our minds as _self_-consciousness, but it is not, of course, consciousness of our _self_: it is consciousness of particular thoughts and feelings.
+A @russell1912: Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things.
+@hasan-fumerton2022 | § 2.2 | It may be that classical foundationalists start off on the wrong foot if they seek foundations in logical relations between the mere fact that someone believes some proposition and the proposition’s being true.
+@hasan-fumerton2022 | § 2.2 | There is certainly a sense in which it is something one can point to in answer to the question “What makes it true that someone has grey hair?” One cannot appropriately point to my having grey hair as something that makes it true that two plus two equals four.
+@hasan-fumerton2022 | § 2.2 | What is it that distinguishes this belief from my belief about, say, whether it will rain next week?
+@hasan-fumerton2022 | § 2.2 | This takes us to another classical version of foundationalism, the acquaintance theory.
+@hasan-fumerton2022 | § 2.2 | Some doubt that acquaintance with some fact is sufficient, on its own, to justify belief in a corresponding proposition.
+@hasan-fumerton2022 | § 3.2 | BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.
+@hasan-fumerton2022 | § 3.2 | The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.
+@hasan-fumerton2022 | § 3.2 | One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.
+@hasan-fumerton2022 | § 3.2 | This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.
+A @hasan-fumerton2022: Surveys acquaintance-based foundations and the problems of conceptual classification and a relation supplying justification.
+@gertler2024 | preamble | In philosophy, “self-knowledge” standardly refers to knowledge of one’s own mental states—that is, of what one is feeling or thinking, or what one believes or desires.
+@gertler2024 | § 1 | What is special about self-knowledge, compared to knowledge in other domains?
+@gertler2024 | § 1 | Statement (4) focuses on the way that self-ascriptions of mental states, such as saying “I’m in pain”, are treated by others.
+@gertler2024 | § 1.1 | The strongest epistemic claims on behalf of self-knowledge are infallibility and omniscience.
+A @gertler2024: Separates the scope and security of self-knowledge and compares empirical transparency with agential entitlement.
+
+== 07-sources-of-knowledge/memory
+Q: How do truth and authenticity differ, and why does reconstruction not by itself settle epistemic generation?
+@michaelian-sutton2026 | § 4.2 | In psychology, it is manifested in Ebbinghaus’s ([1885] 1913) foundational experimental work on memory for lists of nonsense syllables.
+@michaelian-sutton2026 | § 6.1 | Adopting Bernecker’s (2010) terminology, authenticity refers to the correspondence between the memory representation and the subject’s experience of the past event, while truth refers to the correspondence between the memory representation and the past event itself.
+@michaelian-sutton2026 | § 9 | Goldman 1999), and the problem of stored beliefs (Moon 2012).
+A @michaelian-sutton2026: Distinguishes reconstructive remembering, truth, authenticity, and unresolved problems of epistemic preservation.
+
+== 07-sources-of-knowledge/perception
+Q: Which disputed premises connect illusion and hallucination with indirect perception, and how do metaphysical and epistemic responses differ?
+@crane-french2021 | § 1.6 | Perceptual experiences are not just veridical experiences: there are illusions and hallucinations too.
+@crane-french2021 | § 1.6 | Clearly, there are differences between these categories, but from a phenomenological point of view, these experiences seem the same in at least this sense: for any veridical perception of an ordinary object, we can imagine a corresponding illusion or hallucination which cannot be told apart or distinguished, by
+@crane-french2021 | § 1.6 | Any differences between them are external to their nature as experiences (e.g., to do with how they are caused).
+@crane-french2021 | § 2.1 | Applying the above structure, the argument from illusion is: In illusory experiences, we are not directly presented with ordinary objects.
+@crane-french2021 | § 2.1 | Therefore, In veridical experience, S is not directly presented with the ordinary object supposedly being perceived.
+@crane-french2021 | § 2.1 | For it would be implausible to relinquish the idea that we are directly presented with the ordinary objects we seem to perceive in veridical experience, yet maintain that we can still somehow else be directly presented with ordinary objects, e.g., with the idea that hallucinations are direct presentations of ordinary
+@crane-french2021 | § 2.1 | This, it is held, supports the idea that experiential differences between illusions and veridical perceptions are differences of “degree and not of kind” (Ayer (1940: 8)).
+@crane-french2021 | § 2.1 | One answer is that there is something directly presented to you which is in fact elliptical.
+@crane-french2021 | § 2.1 | On these grounds, the conclusion of the base case is supposed to follow.
+@crane-french2021 | § 2.1 | One option for fixing the argument is to introduce what French and Walters call the Exclusion Assumption (cf., Snowdon (1992: 74)): If in an illusion of an ordinary object as F, a subject is directly presented with an F thing non-identical to the ordinary object, then they are not also directly presented with the
+@crane-french2021 | § 2.2 | The argument from hallucination relies on the possibility of hallucinations as understood above.
+@crane-french2021 | § 2.2 | For more on hallucinations, see Macpherson and Platchias (2013).
+@crane-french2021 | § 2.2 | The argument is that, given (A), this then rules out an account of veridical experiences as direct presentations of ordinary objects.
+@crane-french2021 | § 2.2 | For veridical and illusory experiences are more naturally grouped together anyway, unlike veridical perceptions and hallucinations.
+@crane-french2021 | § 3.3.3 | Intentionalists hold that what is in common between veridical experiences and indistinguishable hallucinations/illusions is their intentional content: roughly speaking, how the world is represented as being by the experiences.
+@crane-french2021 | § 3.3.5 | As we’ve seen, instead of presentation, the intentionalist appeals to representation.
+@crane-french2021 | § 3.3.6 | It is not as if ordinary objects and their apparent presence drops out of the picture on the intentionalist account of phenomenal character.
+@crane-french2021 | § 3.4.1 | Consider the veridical experiences involved in cases where you genuinely perceive objects as they actually are.
+@crane-french2021 | § 3.4.1 | This is worked out in different (but compatible) ways by different theorists.
+@crane-french2021 | § 3.4.1 | This is why many naive realists describe the relation at the heart of their view as a non-representational relation.
+@crane-french2021 | § 3.4.1 | We’ve noted that naive realism applies to the veridical experiences involved in genuine perception, but does it apply more widely?
+@crane-french2021 | § 3.4.2 | There are various different naive realist approaches to illusion (see e.g., Fish (2009: Chapter 6), Brewer (2008, 2011: Chapter 5), Kalderon (2011), Genone (2014), French and Phillips (2020)).
+@crane-french2021 | § 3.4.2 | That is to say, visually relevant similarities are similarities by the lights of visual processing of various kinds... very crudely, visually relevant similarities are identities in such things as the way in which light is reflected and transmitted from the objects in question, and the way in which the stimuli are
+A @crane-french2021: Separates illusion from hallucination and explains the disputed premises and competing theories of perceptual experience.
+@lyons2023 | preamble | The central problem in the epistemology of perception is that of explaining how perception could give us knowledge or justified belief about an external world, about things outside of ourselves.
+@lyons2023 | preamble | Two main types of response to the skeptical argument have traditionally been given: a metaphysical response that focuses on the nature of the world, perceptual experience, and/or the relation between them, in an effort to show that perceptual knowledge is indeed possible; and a more directly epistemological response
+@lyons2023 | § 2.4 | Additionally, the direct realist is free to impose a metaevidential demand on justified perceptual belief, a demand that we know which kind of experience we are having before that experience can serve as evidence.
+@lyons2023 | § 2.4 | An entirely metaphysical solution to the problem of the external world will not suffice.
+@lyons2023 | § 3 | Any satisfactory, non-skeptical epistemology of perception is going to deny one or more of the epistemological premises of PEW.
+@lyons2023 | § 3 | The first two are normally defended as parts of and continuous with a more general epistemological view, encompassing not just perception but also testimony, introspection, memory, inductive and deductive inference, and so on.
+@lyons2023 | § 3.3 | The pioneer of this general approach is John McDowell (1982), although it is difficult to know just what view he endorses.
+@lyons2023 | § 3.3 | A second motivation is the claim that some or all evidence is factive.
+@lyons2023 | § 3.3 | Principle, at least in a form that holds that the metaevidential knowledge/justification is prior to the perceptual knowledge/justification.
+A @lyons2023: Distinguishes epistemic from metaphysical directness and surveys evidential, etiological, and world-involving justification.
+@russell1912 | ch. I | This colour is not something which is inherent in the table, but something depending upon the table and the spectator and the way the light falls on the table.
+@russell1912 | ch. I | This colour is not something which is inherent in the table, but something depending upon the table and the spectator and the way the light falls on the table.
+A @russell1912: Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things.
+
+== 07-sources-of-knowledge/reason-and-the-a-priori
+Q: What distinguishes enabling from evidential experience, and how can a priori justification be fallible and defeasible?
+@russell-bruce2024 | § 1 | A priori justification is a certain kind of justification often contrasted with empirical, or a posteriori, justification.
+@russell-bruce2024 | § 1 | All bachelors in the U.S. are taxed at a different rate from married men. 2 a.
+@russell-bruce2024 | § 1 | No object can be red and green all over at the same time. b.
+@russell-bruce2024 | § 1 | Topaz is either blue, orange, yellow, or yellowish brown. iii.
+@russell-bruce2024 | § 2 | Philosophers generally agree that we can be justified in believing 15bi and 15biii only empirically.
+@russell-bruce2024 | § 2 | While the meaning of “water” is given by this reference-fixing description, and can be known a priori, the essence of water must be discovered empirically.
+@russell-bruce2024 | § 2 | Saul Kripke proposed that “the standard meter stick, S, in Paris is a meter long at \(t_0\)” is such an example (Kripke 1972: 274–275).
+@russell-bruce2024 | § 2 | Still, we can know a priori, that is, independent of any empirical evidence, that “S is a meter long at \(t_0\)” is true in the actual world given that we know how the reference of “one meter” is fixed by a description that refers to the length of S in the actual world.
+@russell-bruce2024 | § 2 | So we know a priori that no one could have sufficient reason to believe that an event that fits that description is now occurring.
+@russell-bruce2024 | § 3 | A type of justification (say, via perception) is fallible if and only if it is possible to be justified in that way in holding a false belief.
+@russell-bruce2024 | § 3 | You might initially be a priori justified in believing that no matter how happiness has been produced it is intrinsically good (12a), or that it is always wrong to punish an innocent person (13a).
+@russell-bruce2024 | § 3 | These examples seem to show that a priori justification is fallible and defeasible (i.e., it can be defeated by further a priori or empirical evidence).
+@russell-bruce2024 | § 3 | So this is another reason to think that a priori justification is fallible.
+@russell-bruce2024 | § 3 | The fact that a priori knowledge is not independent of all experience does not show that it is empirically defeasible, but it does defeat the argument that it is not empirically defeasible because it is independent of all experience.
+@russell-bruce2024 | § 3 | On Kitcher’s understanding of a priori justification, it is not defeasible by empirical information; on Putnam’s, it is not defeasible at all.
+@russell-bruce2024 | § 3 | Nothing in the nature of a priori justification rules out that possibility.
+@russell-bruce2024 | § 3 | One view is that a priori justification is not significantly different from empirical justification.
+@russell-bruce2024 | § 4.1 | A standard answer to the question about the difference between a priori and empirical justification is that a priori justification is independent of experience and empirical justification is not, and this seems to explain the contrasts present in the fifteen examples above.
+@russell-bruce2024 | § 4.1 | Given these considerations, perhaps “experience” should be taken to mean “sense experience of any sort, introspection, proprioception, memory, and testimony”.
+@russell-bruce2024 | § 4.1 | As noted above (see, sec. 3) and below (secs. 4.4 and 4.5), “independent of experience” should not be taken to mean independent of all experience, but, as a first approximation, to mean “independent of all experience beyond what is needed to grasp the relevant concepts involved in the proposition”.
+@russell-bruce2024 | § 4.1 | Suppose there is a significant difference between a priori and empirical justification.
+@russell-bruce2024 | § 4.2 | Anna-Sara Malmgren holds that intuitions are certain kinds of mental states some of which are candidates as justifiers of intuitive judgments that are made in response to philosophical thought experiments (2011: 267–268).
+@russell-bruce2024 | § 4.2 | Others offer as examples the judgment that it is morally permissible to unhook a violinist who has been connected to your kidneys without your consent, even if that will kill him (an example made famous by Judith Thomson in the abortion debate), the judgment that it is irrational for a man who grants that his life in
+@russell-bruce2024 | § 4.2 | Malmgren argues against Timothy Williamson’s view that the content of intuitive judgments involves counterfactual judgments.
+@russell-bruce2024 | § 4.2 | In the famous Nogot/Havit Gettier case, the issue is whether Smith knows that someone in his office owns a Ford.
+@russell-bruce2024 | § 4.2 | In that case, Smith would not be justified in believing that Nogot, and so someone in his office, owns a Ford.
+@russell-bruce2024 | § 4.2 | In the nearest possible world where the standard description of the case holds, the consequent of the counterfactual would be false.
+@russell-bruce2024 | § 4.3 | One way to answer the question about the nature of a priori justification and knowledge is to adopt a bottom up approach.
+@russell-bruce2024 | § 4.3 | But she has not yet realized that there is a relationship between distance in inches and distance in centimeters.
+@russell-bruce2024 | § 4.3 | Williamson’s argument against the significance of the distinction between a priori and a posteriori justification rests on comparing how D and A (and other similar pairs of propositions like 4a and 4b in the examples above) are justified.
+@russell-bruce2024 | § 4.3 | There is a difference, but it is not a significant difference since these three types of seeing all rely on visual perceptions.
+@russell-bruce2024 | § 4.3 | For him, intuitions are intellectual perceptions that sometimes reveal abstract reality in the way that sensory perceptions sometimes reveal concrete reality.
+@russell-bruce2024 | § 4.4 | While intuitions are non-inferential, some can appear only after much reflection and effort (see, again, Chudnoff 2020).
+@russell-bruce2024 | § 4.4 | Hawthorne’s criticisms of basing a priori justification on the understanding (as Boghossian 2020b proposes) is that there seem to be instances of a priori justification that require skill in “sophisticated proof techniques that are quite obviously not preconditions of anything in the domain” (Hawthorne 2013: 213).
+@russell-bruce2024 | § 4.4 | A few really strong intuitions seem enough by themselves to make it reasonable to reject a theory.
+@russell-bruce2024 | § 4.4 | This same ability is exercised when reason “sees” that some proposition is true, or necessarily true, simply in virtue of the person’s understanding the proposition.
+@russell-bruce2024 | § 4.5 | Recently some philosophers have thought that a person can be justified in believing, or accepting, a proposition without having any evidence to support it, and so even if there is no nonexperiential source of evidence for that belief or acceptance.
+@russell-bruce2024 | § 4.5 | Creating an image of a line nine inches long next to an image of a typical ant can bring a person to believe that the distance between the front and back legs of a typical ant is less than nine inches, but not that it must be.
+@russell-bruce2024 | § 4.5 | So even if the exercise of relevant skills can provide justification apart from evidence, how the skill is used, and in particular on what subject matter, seems to be a basis for distinguishing a priori from a posteriori (empirical) justification.
+@russell-bruce2024 | § 4.5 | On some accounts of a priori justification, namely those that hold that a priori justification is justification independent of empirical evidence, general foundationalism would imply that all of a person’s beliefs are prima facie (or weakly) a priori justified since that justification would stem merely from the fact
+@russell-bruce2024 | § 4.5 | Coherence considerations account for all things considered justification and are what upset initially equal prima facie justification.
+A @russell-bruce2024: Explains enabling experience, defeasibility, necessity, thought experiments, and current debates about a priori justification.
+@russell1912 | ch. VIII | Two physical objects and two other physical objects must make four physical objects, even if physical objects cannot be experienced.
+@russell1912 | ch. VIII | Let us take as an illustration the law of contradiction.
+@russell1912 | ch. VIII | But the conclusion that the law of contradiction is a law of _thought_ is nevertheless erroneous.
+@russell1912 | ch. VIII | The belief in the law of contradiction is a belief about things, not only about thoughts.
+A @russell1912: Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things.
+
+== 07-sources-of-knowledge/testimony
+Q: How do reduction, default entitlement, assurance, and generation explain the hearer’s epistemic standing?
+@leonard2023 | preamble | So much of what we know about the world, e.g., history, science, politics, one another, etc., comes from the testimony of others.
+@leonard2023 | preamble | When one acquires testimonial justification, is one’s belief justified by evidence, or by something else, e.g., non-evidential assurances?
+@leonard2023 | § 1 | Fricker 2007).[1] Moreover, there are many interesting questions about eyewitness testimony and the law (e.g., Wells & Olson 2003 and Burroughs & Tollefsen 2016), as well as important questions about the relationship between testimony and assertion (e.g., Pagin 2007 [2016]).
+@leonard2023 | § 1 | Consider this scenario: Your friend testifies to you that your favorite team won last night’s game (= p).
+@leonard2023 | § 1.1 | Those who defend answers to this question tend to endorse one of three main positions: Reductionism, Non-Reductionism, and Hybrid Views.
+@leonard2023 | § 1.1 | Reductionists maintain that in order to acquire testimonial justification, one must have positive reasons for thinking that the speaker in question is a reliable testifier.
+@leonard2023 | § 1.1.1 | One of the primary motivations for Reductionism stems from concerns having to do with gullibility; that is, many reductionists maintain that if we could justifiably accept a speaker’s testimony without having positive reasons for thinking that they typically speak the truth, then we would be justified in accepting
+@leonard2023 | § 1.1.1 | According to Global Reductionism, in order to be justified in accepting a speaker’s testimony, you need to have positive reasons for believing that testimony is generally reliable, i.e., that accepting the reports of others is a reliable way of forming true beliefs.
+@leonard2023 | § 1.1.1 | That is, testimonial justification can be reduced to a combination of other epistemic sources because it only involves you (i) perceiving that the speaker made an utterance (ii) remembering that when people have told you things in the past, they turned out to be right most of the time and (iii) inferring on this basis
+@leonard2023 | § 1.1.1 | But in order to know that Bill can be trusted, I might need to rely on Carly to confirm that he usually says true things.
+@leonard2023 | § 1.1.1 | Coady (1992) for this worry, and see Wright (2016a, 2019) for an importantly different kind of circularity worry for all Reductionist views.
+@leonard2023 | § 1.1.1 | The problem here is that we frequently receive testimony about wildly different topics, e.g., quantum mechanics, politics, one’s own music preferences, etc.
+@leonard2023 | § 1.1.1 | For it is only when we think of testimony as being disaggregated in this way that it make sense to ask about whether receiving testimony about a particular category is a reliable source of knowledge.
+@leonard2023 | § 1.1.2 | According to Local Reductionism, in order to be justified in accepting a speaker’s testimony, the hearer needs to have non-testimonially based reasons for thinking that the speaker in question is a reliable testifier on this occasion (as opposed to having positive reasons for thinking that testimony in general is
+@leonard2023 | § 1.1.2 | For if Local Reductionism is true, then in order to be justified in accepting a parent’s testimony, a young child would need non-testimonially based reasons for thinking that this parent is a reliable testifier.
+@leonard2023 | § 1.1.2 | Second, opponents have objected to Local Reductionism on the grounds that we can be justified in believing a speaker, S’s, testimony that p even if we lack the relevant non-testimonially based reasons to support the inference from “S said that p” to “p”.
+@leonard2023 | § 1.1.2 | For insofar as the only thing that justifies your belief is your inference from “This person said that my hotel is just down the road” to “My hotel is just down the road”, then since you know next to nothing about this stranger, and since you also know very little about whether anyone in this area is likely to answer
+@leonard2023 | § 1.1.2 | Reductionists have offered responses to all of the worries mentioned above.
+@leonard2023 | § 1.2 | According to Non-Reductionists, Positive Reasons is false, i.e., we don’t need positive reasons for thinking that a speaker’s testimony is reliable in order to be justified in believing what we are told.
+@leonard2023 | § 1.2 | Ross (1986), Hardwig (1985, 1991), Coady (1992, 1994), Burge (1993, 1997, 2013), Plantinga (1993), Stevenson (1993), Webb (1993), Dummett (1994), Foley (1994), McDowell (1994), Strawson (1994), Williamson (1996, 2000), Millgram (1997), Alvin Goldman (1999), Schmitt (1999), Insole (2000), Owens (2000), Rysiew (2000),
+@leonard2023 | § 1.3 | Finally, some epistemologists reject both Reductionism and Non-Reductionism in favor of various hybrid views.
+@leonard2023 | § 1.3 | Or, one might opt for a hybrid view according to which the hearer and the speaker both have an important role to play in the hearer’s ability to acquire testimonial justification, i.e., it takes two to tango, so to speak.
+@leonard2023 | § 1.3 | The hope here is that by requiring contributions from both the speaker and the hearer, all of the worries associated with standard versions of Reductionism and Non-reductionism can be avoided.
+@leonard2023 | § 2 | Consider this scenario: Gretchen knows that the bakery is closed.
+@leonard2023 | § 2 | Before moving on, two clarification points are in order.
+@leonard2023 | § 2.1 | According to the Transmission View, testimonial knowledge can only be transmitted from a speaker to a hearer.
+@leonard2023 | § 2.1 | One of the main motivations for the Transmission View comes from an alleged analogy between testimony and memory: Just as I cannot acquire memorial knowledge that p today if I did not know that p at some earlier point in time, I cannot acquire testimonial knowledge that p from you today if you do not know that p
+@leonard2023 | § 2.2 | Opponents have raised two importantly different kinds of arguments against TV-N.
+@leonard2023 | § 2.2 | Other school teacher cases have been discussed in Graham (2006a) and Carter and Nickel (2014).
+@leonard2023 | § 2.2 | Because Persia is a persistent believer, she forms the true belief that there is a badger in the parking lot despite Eyal’s (misleading) testimony about the unreliability of her visual faculties.
+@leonard2023 | § 2.2 | Thus, TV-N is false (This Persistent Believer case comes from Lackey [2008].
+@leonard2023 | § 2.2 | However, Quinn would also have believed Kevin even if he had massive amounts of evidence that Kevin was lying, or joking, or whatever.
+@leonard2023 | § 3.1.2 | Instead of thinking about testimonial justification in terms of the evidence that a hearer possesses, some have offered an alternative account in which the hearer’s belief is justified by evidence that is supplied by the speaker.
+@leonard2023 | § 3.1.2 | And suppose that your friend’s belief is justified by some excellent evidence, i.e., they are standing in front of the truck and can see the long lineup.
+@leonard2023 | § 3.1.2 | If you testify to me that T is true such that I come to acquire testimonial justification for believing that this is the case, then according to the Inheritance View, my belief is also based on your impeccable a priori reasoning.[10] Now, while many epistemologists are sympathetic to the idea that your
+@leonard2023 | § 3.1.2 | Suppose also that as you are walking home it appears to you that there is a small puppy playing fetch in a field (= p).
+@leonard2023 | § 3.1.2 | But, suppose that you decide to call and tell me that p anyway.
+@leonard2023 | § 3.1.2 | Graham (2006b) gives a similar objection, and Pelling (2013) offers a case in which a hearer seems to acquire testimonial justification from a speaker who has no good reason to believe what they say, but does so anyway on the basis of an irrational hunch.) To see the second problem with the Inheritance View, notice
+@leonard2023 | § 3.1.2 | Moreover, suppose that the second detective, Doris, has excellent evidence that justifies her in believing that Seth is the only one who committed the crime.
+@leonard2023 | § 3.1.2 | However—and herein lies the problem—if the Inheritance View is true, then it is hard to see how you could be justified in believing this.
+@leonard2023 | § 3.2.1 | And second, why is testimonial justification non-evidential in nature?
+@leonard2023 | § 3.2.1 | Rather, she is inviting her audience to trust her that p is true; that is, she is assuring, or guaranteeing her audience that p is the case.
+@leonard2023 | § 3.2.1 | This is because you are the only one that has been assured by your friend that p is true.
+@leonard2023 | § 6 | Third, consider If you are justified in believing that p on the basis of a group’s testimony, is your belief justified by evidence?
+@leonard2023 | § 6 | Fourth, consider, Can group testimony generate knowledge, or can it merely transmit it?
+@leonard2023 | § 6 | Does the fact that you acquired testimonial knowledge in this case entail that groups themselves can be knowers (and thus believers)?
+A @leonard2023: Surveys reduction, default entitlement, knowledge generation, evidential inheritance, assurance, and group testimony.
+@hume1748 | § X, Part I | This species of reasoning, perhaps, one may deny to be founded on the relation of cause and effect.
+@hume1748 | § X, Part I | There are many other particulars of the same kind, which may diminish or destroy the force of any argument, derived from human testimony.
+@hume1748 | § X, Part I | The reason why we place any credit in witnesses and historians, is not derived from any _connexion_, which we perceive _a priori_, between testimony and reality, but because we are accustomed to find a conformity between them.
+A @hume1748: Public-domain primary account connecting reliance on testimony with observed conformity between testimony and reality.
+@phillips-vaidya2026 | § 6 | Vaiśeṣika among the Vedic schools along with Buddhists who of course impugn the “testimony” of the Veda reject testimony as an independent knowledge source, pramāṇa.
+@phillips-vaidya2026 | § 6 | Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p which other philosophers see as flowing from testimony as really resulting from an inference having as one premise that the speaker S is trustworthy and as another that S has said p, assuming that trustworthy people who know the truth
+@phillips-vaidya2026 | § 6 | Vātsyāyana and others argue (under Nyāya-sūtra 2.1.52) that the certification conditions are different for the two knowledge sources.
+@phillips-vaidya2026 | § 6 | The commentator also brings out a certain egalitarianism in the workings of the knowledge source.
+@phillips-vaidya2026 | § 6 | A hearer H gains knowledge through a speech act of S communicating p to H, who has to be competent in the language in which p is expressed, to know the words and grammatical forms, which H has learned, on most accounts, also chiefly through testimony but also in other ways such as analogy (according to some).
+@phillips-vaidya2026 | § 6 | Thus the Lord, īśvara, is the author of the Veda (the best or only candidate, according to Udayana, eleventh century, Nyāya-kusumāñjalī).
+A @phillips-vaidya2026: Explains the Indian dispute over testimony as an independent knowledge source and its certification.
+@deshpande2026 | § 4 | The various Indian theories of meaning are closely related to the overall stances taken by the different schools.
+@deshpande2026 | § 4 | It is the artha that is brought in and it is also the artha that is eaten.
+@deshpande2026 | § 4 | It is through this established conventional relationship that a word reminds the listener of its meaning.
+@deshpande2026 | § 4 | For both Nyāya-Vaiśeṣikas and Mīmāṃsakas, language refers to external states of the world and not just to conceptual constructions.
+@deshpande2026 | § 4 | Sanskrit grammarians are thus not concerned with ontological or truth functional values of linguistic expressions.
+A @deshpande2026: Clarifies theories of linguistic meaning and why meaningful comprehension must be distinguished from establishing truth.

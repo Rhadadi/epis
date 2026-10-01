@@ -1,0 +1,43 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "memory",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do truth and authenticity differ, and why does reconstruction not by itself settle epistemic generation?"
+  ],
+  "sources": [
+    {
+      "key": "michaelian-sutton2026",
+      "used_for": [
+        "Two ways a recollection can be accurate",
+        "Reconstructive does not mean fictitious",
+        "Forgotten evidence and forgotten defeat",
+        "Does memory generate knowledge?",
+        "Connections",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In psychology, it is manifested in Ebbinghaus’s ([1885] 1913) foundational experimental work on memory for lists of nonsense syllables.",
+          "corpus_chunk": 41992
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Adopting Bernecker’s (2010) terminology, authenticity refers to the correspondence between the memory representation and the subject’s experience of the past event, while truth refers to the correspondence between the memory representation and the past event itself.",
+          "corpus_chunk": 42053
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Goldman 1999), and the problem of stored beliefs (Moon 2012).",
+          "corpus_chunk": 42085
+        }
+      ],
+      "annotation": "Distinguishes reconstructive remembering, truth, authenticity, and unresolved problems of epistemic preservation."
+    }
+  ]
+}

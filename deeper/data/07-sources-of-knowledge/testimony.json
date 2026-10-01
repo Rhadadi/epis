@@ -1,0 +1,424 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "testimony",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do reduction, default entitlement, assurance, and generation explain the hearer’s epistemic standing?"
+  ],
+  "sources": [
+    {
+      "key": "leonard2023",
+      "used_for": [
+        "A report about a closed road",
+        "Honesty and competence do different work",
+        "Why the social source is philosophically distinctive",
+        "Hume's experiential explanation",
+        "Global reductionism",
+        "Local reductionism",
+        "Non-reductionism: default does not mean immunity",
+        "Hybrid proposals",
+        "Transmission has a necessary and a sufficient direction",
+        "A speaker's defeated belief and a hearer's support",
+        "Do hearers inherit the speaker's evidence?",
+        "Assurance views: a person addresses a person",
+        "Groups complicate the pipeline metaphor",
+        "Confidence and checkability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "So much of what we know about the world, e.g., history, science, politics, one another, etc., comes from the testimony of others.",
+          "corpus_chunk": 843
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "When one acquires testimonial justification, is one’s belief justified by evidence, or by something else, e.g., non-evidential assurances?",
+          "corpus_chunk": 843
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Fricker 2007).[1] Moreover, there are many interesting questions about eyewitness testimony and the law (e.g., Wells & Olson 2003 and Burroughs & Tollefsen 2016), as well as important questions about the relationship between testimony and assertion (e.g., Pagin 2007 [2016]).",
+          "corpus_chunk": 845
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consider this scenario: Your friend testifies to you that your favorite team won last night’s game (= p).",
+          "corpus_chunk": 846
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Those who defend answers to this question tend to endorse one of three main positions: Reductionism, Non-Reductionism, and Hybrid Views.",
+          "corpus_chunk": 847
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Reductionists maintain that in order to acquire testimonial justification, one must have positive reasons for thinking that the speaker in question is a reliable testifier.",
+          "corpus_chunk": 848
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "One of the primary motivations for Reductionism stems from concerns having to do with gullibility; that is, many reductionists maintain that if we could justifiably accept a speaker’s testimony without having positive reasons for thinking that they typically speak the truth, then we would be justified in accepting",
+          "corpus_chunk": 849
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "According to Global Reductionism, in order to be justified in accepting a speaker’s testimony, you need to have positive reasons for believing that testimony is generally reliable, i.e., that accepting the reports of others is a reliable way of forming true beliefs.",
+          "corpus_chunk": 850
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "That is, testimonial justification can be reduced to a combination of other epistemic sources because it only involves you (i) perceiving that the speaker made an utterance (ii) remembering that when people have told you things in the past, they turned out to be right most of the time and (iii) inferring on this basis",
+          "corpus_chunk": 851
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "But in order to know that Bill can be trusted, I might need to rely on Carly to confirm that he usually says true things.",
+          "corpus_chunk": 851
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "Coady (1992) for this worry, and see Wright (2016a, 2019) for an importantly different kind of circularity worry for all Reductionist views.",
+          "corpus_chunk": 852
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "The problem here is that we frequently receive testimony about wildly different topics, e.g., quantum mechanics, politics, one’s own music preferences, etc.",
+          "corpus_chunk": 854
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "For it is only when we think of testimony as being disaggregated in this way that it make sense to ask about whether receiving testimony about a particular category is a reliable source of knowledge.",
+          "corpus_chunk": 855
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "According to Local Reductionism, in order to be justified in accepting a speaker’s testimony, the hearer needs to have non-testimonially based reasons for thinking that the speaker in question is a reliable testifier on this occasion (as opposed to having positive reasons for thinking that testimony in general is",
+          "corpus_chunk": 856
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "For if Local Reductionism is true, then in order to be justified in accepting a parent’s testimony, a young child would need non-testimonially based reasons for thinking that this parent is a reliable testifier.",
+          "corpus_chunk": 860
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "Second, opponents have objected to Local Reductionism on the grounds that we can be justified in believing a speaker, S’s, testimony that p even if we lack the relevant non-testimonially based reasons to support the inference from “S said that p” to “p”.",
+          "corpus_chunk": 861
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "For insofar as the only thing that justifies your belief is your inference from “This person said that my hotel is just down the road” to “My hotel is just down the road”, then since you know next to nothing about this stranger, and since you also know very little about whether anyone in this area is likely to answer",
+          "corpus_chunk": 862
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "Reductionists have offered responses to all of the worries mentioned above.",
+          "corpus_chunk": 864
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "According to Non-Reductionists, Positive Reasons is false, i.e., we don’t need positive reasons for thinking that a speaker’s testimony is reliable in order to be justified in believing what we are told.",
+          "corpus_chunk": 865
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Ross (1986), Hardwig (1985, 1991), Coady (1992, 1994), Burge (1993, 1997, 2013), Plantinga (1993), Stevenson (1993), Webb (1993), Dummett (1994), Foley (1994), McDowell (1994), Strawson (1994), Williamson (1996, 2000), Millgram (1997), Alvin Goldman (1999), Schmitt (1999), Insole (2000), Owens (2000), Rysiew (2000),",
+          "corpus_chunk": 866
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Finally, some epistemologists reject both Reductionism and Non-Reductionism in favor of various hybrid views.",
+          "corpus_chunk": 869
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Or, one might opt for a hybrid view according to which the hearer and the speaker both have an important role to play in the hearer’s ability to acquire testimonial justification, i.e., it takes two to tango, so to speak.",
+          "corpus_chunk": 870
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "The hope here is that by requiring contributions from both the speaker and the hearer, all of the worries associated with standard versions of Reductionism and Non-reductionism can be avoided.",
+          "corpus_chunk": 871
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Consider this scenario: Gretchen knows that the bakery is closed.",
+          "corpus_chunk": 872
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Before moving on, two clarification points are in order.",
+          "corpus_chunk": 872
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "According to the Transmission View, testimonial knowledge can only be transmitted from a speaker to a hearer.",
+          "corpus_chunk": 874
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "One of the main motivations for the Transmission View comes from an alleged analogy between testimony and memory: Just as I cannot acquire memorial knowledge that p today if I did not know that p at some earlier point in time, I cannot acquire testimonial knowledge that p from you today if you do not know that p",
+          "corpus_chunk": 875
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Opponents have raised two importantly different kinds of arguments against TV-N.",
+          "corpus_chunk": 876
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Other school teacher cases have been discussed in Graham (2006a) and Carter and Nickel (2014).",
+          "corpus_chunk": 876
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Because Persia is a persistent believer, she forms the true belief that there is a badger in the parking lot despite Eyal’s (misleading) testimony about the unreliability of her visual faculties.",
+          "corpus_chunk": 878
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Thus, TV-N is false (This Persistent Believer case comes from Lackey [2008].",
+          "corpus_chunk": 878
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "However, Quinn would also have believed Kevin even if he had massive amounts of evidence that Kevin was lying, or joking, or whatever.",
+          "corpus_chunk": 879
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Instead of thinking about testimonial justification in terms of the evidence that a hearer possesses, some have offered an alternative account in which the hearer’s belief is justified by evidence that is supplied by the speaker.",
+          "corpus_chunk": 884
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "And suppose that your friend’s belief is justified by some excellent evidence, i.e., they are standing in front of the truck and can see the long lineup.",
+          "corpus_chunk": 885
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "If you testify to me that T is true such that I come to acquire testimonial justification for believing that this is the case, then according to the Inheritance View, my belief is also based on your impeccable a priori reasoning.[10] Now, while many epistemologists are sympathetic to the idea that your",
+          "corpus_chunk": 886
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Suppose also that as you are walking home it appears to you that there is a small puppy playing fetch in a field (= p).",
+          "corpus_chunk": 887
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "But, suppose that you decide to call and tell me that p anyway.",
+          "corpus_chunk": 887
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Graham (2006b) gives a similar objection, and Pelling (2013) offers a case in which a hearer seems to acquire testimonial justification from a speaker who has no good reason to believe what they say, but does so anyway on the basis of an irrational hunch.) To see the second problem with the Inheritance View, notice",
+          "corpus_chunk": 889
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Moreover, suppose that the second detective, Doris, has excellent evidence that justifies her in believing that Seth is the only one who committed the crime.",
+          "corpus_chunk": 890
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "However—and herein lies the problem—if the Inheritance View is true, then it is hard to see how you could be justified in believing this.",
+          "corpus_chunk": 890
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "And second, why is testimonial justification non-evidential in nature?",
+          "corpus_chunk": 893
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "Rather, she is inviting her audience to trust her that p is true; that is, she is assuring, or guaranteeing her audience that p is the case.",
+          "corpus_chunk": 894
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "This is because you are the only one that has been assured by your friend that p is true.",
+          "corpus_chunk": 896
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Third, consider If you are justified in believing that p on the basis of a group’s testimony, is your belief justified by evidence?",
+          "corpus_chunk": 931
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Fourth, consider, Can group testimony generate knowledge, or can it merely transmit it?",
+          "corpus_chunk": 932
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Does the fact that you acquired testimonial knowledge in this case entail that groups themselves can be knowers (and thus believers)?",
+          "corpus_chunk": 933
+        }
+      ],
+      "annotation": "Surveys reduction, default entitlement, knowledge generation, evidential inheritance, assurance, and group testimony."
+    },
+    {
+      "key": "hume1748",
+      "used_for": [
+        "Hume's experiential explanation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ X, Part I",
+          "basis": "full text",
+          "excerpt": "This species of reasoning, perhaps, one may deny to be founded on the relation of cause and effect.",
+          "corpus_chunk": 5676
+        },
+        {
+          "locator": "§ X, Part I",
+          "basis": "full text",
+          "excerpt": "There are many other particulars of the same kind, which may diminish or destroy the force of any argument, derived from human testimony.",
+          "corpus_chunk": 5679
+        },
+        {
+          "locator": "§ X, Part I",
+          "basis": "full text",
+          "excerpt": "The reason why we place any credit in witnesses and historians, is not derived from any _connexion_, which we perceive _a priori_, between testimony and reality, but because we are accustomed to find a conformity between them.",
+          "corpus_chunk": 5680
+        }
+      ],
+      "annotation": "Public-domain primary account connecting reliance on testimony with observed conformity between testimony and reality."
+    },
+    {
+      "key": "phillips-vaidya2026",
+      "used_for": [
+        "An Indian comparison: knowledge and certification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Vaiśeṣika among the Vedic schools along with Buddhists who of course impugn the “testimony” of the Veda reject testimony as an independent knowledge source, pramāṇa.",
+          "corpus_chunk": 13334
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p which other philosophers see as flowing from testimony as really resulting from an inference having as one premise that the speaker S is trustworthy and as another that S has said p, assuming that trustworthy people who know the truth",
+          "corpus_chunk": 13335
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Vātsyāyana and others argue (under Nyāya-sūtra 2.1.52) that the certification conditions are different for the two knowledge sources.",
+          "corpus_chunk": 13335
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "The commentator also brings out a certain egalitarianism in the workings of the knowledge source.",
+          "corpus_chunk": 13337
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "A hearer H gains knowledge through a speech act of S communicating p to H, who has to be competent in the language in which p is expressed, to know the words and grammatical forms, which H has learned, on most accounts, also chiefly through testimony but also in other ways such as analogy (according to some).",
+          "corpus_chunk": 13338
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Thus the Lord, īśvara, is the author of the Veda (the best or only candidate, according to Udayana, eleventh century, Nyāya-kusumāñjalī).",
+          "corpus_chunk": 13339
+        }
+      ],
+      "annotation": "Explains the Indian dispute over testimony as an independent knowledge source and its certification."
+    },
+    {
+      "key": "deshpande2026",
+      "used_for": [
+        "An Indian comparison: knowledge and certification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The various Indian theories of meaning are closely related to the overall stances taken by the different schools.",
+          "corpus_chunk": 41795
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is the artha that is brought in and it is also the artha that is eaten.",
+          "corpus_chunk": 41797
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "It is through this established conventional relationship that a word reminds the listener of its meaning.",
+          "corpus_chunk": 41797
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "For both Nyāya-Vaiśeṣikas and Mīmāṃsakas, language refers to external states of the world and not just to conceptual constructions.",
+          "corpus_chunk": 41798
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Sanskrit grammarians are thus not concerned with ontological or truth functional values of linguistic expressions.",
+          "corpus_chunk": 41800
+        }
+      ],
+      "annotation": "Clarifies theories of linguistic meaning and why meaningful comprehension must be distinguished from establishing truth."
+    }
+  ]
+}

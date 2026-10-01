@@ -1,0 +1,313 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "reason-and-the-a-priori",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What distinguishes enabling from evidential experience, and how can a priori justification be fallible and defeasible?"
+  ],
+  "sources": [
+    {
+      "key": "russell-bruce2024",
+      "used_for": [
+        "A shape and an object in a room",
+        "Reason can be fallible",
+        "Three distinctions must stay separate",
+        "What independent of experience can mean",
+        "Russell: a truth known through thought is not merely about thought",
+        "Rational intuition is not every hunch",
+        "Understanding a theorem and establishing it",
+        "Fallibility and defeat are different",
+        "What an empirical check of reasoning does",
+        "Challenging the significance of the distinction",
+        "Default support is a distinct proposal",
+        "Use reason without pretending it eliminates every source question",
+        "A proof about a model and a claim about the world",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A priori justification is a certain kind of justification often contrasted with empirical, or a posteriori, justification.",
+          "corpus_chunk": 2825
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "All bachelors in the U.S. are taxed at a different rate from married men. 2 a.",
+          "corpus_chunk": 2826
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "No object can be red and green all over at the same time. b.",
+          "corpus_chunk": 2826
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Topaz is either blue, orange, yellow, or yellowish brown. iii.",
+          "corpus_chunk": 2827
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Philosophers generally agree that we can be justified in believing 15bi and 15biii only empirically.",
+          "corpus_chunk": 2829
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "While the meaning of “water” is given by this reference-fixing description, and can be known a priori, the essence of water must be discovered empirically.",
+          "corpus_chunk": 2830
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Saul Kripke proposed that “the standard meter stick, S, in Paris is a meter long at \\(t_0\\)” is such an example (Kripke 1972: 274–275).",
+          "corpus_chunk": 2831
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Still, we can know a priori, that is, independent of any empirical evidence, that “S is a meter long at \\(t_0\\)” is true in the actual world given that we know how the reference of “one meter” is fixed by a description that refers to the length of S in the actual world.",
+          "corpus_chunk": 2832
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "So we know a priori that no one could have sufficient reason to believe that an event that fits that description is now occurring.",
+          "corpus_chunk": 2833
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A type of justification (say, via perception) is fallible if and only if it is possible to be justified in that way in holding a false belief.",
+          "corpus_chunk": 2837
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "You might initially be a priori justified in believing that no matter how happiness has been produced it is intrinsically good (12a), or that it is always wrong to punish an innocent person (13a).",
+          "corpus_chunk": 2838
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "These examples seem to show that a priori justification is fallible and defeasible (i.e., it can be defeated by further a priori or empirical evidence).",
+          "corpus_chunk": 2839
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "So this is another reason to think that a priori justification is fallible.",
+          "corpus_chunk": 2839
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The fact that a priori knowledge is not independent of all experience does not show that it is empirically defeasible, but it does defeat the argument that it is not empirically defeasible because it is independent of all experience.",
+          "corpus_chunk": 2841
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "On Kitcher’s understanding of a priori justification, it is not defeasible by empirical information; on Putnam’s, it is not defeasible at all.",
+          "corpus_chunk": 2842
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Nothing in the nature of a priori justification rules out that possibility.",
+          "corpus_chunk": 2842
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "One view is that a priori justification is not significantly different from empirical justification.",
+          "corpus_chunk": 2843
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A standard answer to the question about the difference between a priori and empirical justification is that a priori justification is independent of experience and empirical justification is not, and this seems to explain the contrasts present in the fifteen examples above.",
+          "corpus_chunk": 2845
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Given these considerations, perhaps “experience” should be taken to mean “sense experience of any sort, introspection, proprioception, memory, and testimony”.",
+          "corpus_chunk": 2846
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As noted above (see, sec. 3) and below (secs. 4.4 and 4.5), “independent of experience” should not be taken to mean independent of all experience, but, as a first approximation, to mean “independent of all experience beyond what is needed to grasp the relevant concepts involved in the proposition”.",
+          "corpus_chunk": 2847
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose there is a significant difference between a priori and empirical justification.",
+          "corpus_chunk": 2847
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Anna-Sara Malmgren holds that intuitions are certain kinds of mental states some of which are candidates as justifiers of intuitive judgments that are made in response to philosophical thought experiments (2011: 267–268).",
+          "corpus_chunk": 2849
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Others offer as examples the judgment that it is morally permissible to unhook a violinist who has been connected to your kidneys without your consent, even if that will kill him (an example made famous by Judith Thomson in the abortion debate), the judgment that it is irrational for a man who grants that his life in",
+          "corpus_chunk": 2850
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Malmgren argues against Timothy Williamson’s view that the content of intuitive judgments involves counterfactual judgments.",
+          "corpus_chunk": 2850
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In the famous Nogot/Havit Gettier case, the issue is whether Smith knows that someone in his office owns a Ford.",
+          "corpus_chunk": 2852
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In that case, Smith would not be justified in believing that Nogot, and so someone in his office, owns a Ford.",
+          "corpus_chunk": 2852
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In the nearest possible world where the standard description of the case holds, the consequent of the counterfactual would be false.",
+          "corpus_chunk": 2854
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "One way to answer the question about the nature of a priori justification and knowledge is to adopt a bottom up approach.",
+          "corpus_chunk": 2855
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "But she has not yet realized that there is a relationship between distance in inches and distance in centimeters.",
+          "corpus_chunk": 2855
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Williamson’s argument against the significance of the distinction between a priori and a posteriori justification rests on comparing how D and A (and other similar pairs of propositions like 4a and 4b in the examples above) are justified.",
+          "corpus_chunk": 2857
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "There is a difference, but it is not a significant difference since these three types of seeing all rely on visual perceptions.",
+          "corpus_chunk": 2858
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "For him, intuitions are intellectual perceptions that sometimes reveal abstract reality in the way that sensory perceptions sometimes reveal concrete reality.",
+          "corpus_chunk": 2861
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "While intuitions are non-inferential, some can appear only after much reflection and effort (see, again, Chudnoff 2020).",
+          "corpus_chunk": 2864
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Hawthorne’s criticisms of basing a priori justification on the understanding (as Boghossian 2020b proposes) is that there seem to be instances of a priori justification that require skill in “sophisticated proof techniques that are quite obviously not preconditions of anything in the domain” (Hawthorne 2013: 213).",
+          "corpus_chunk": 2872
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "A few really strong intuitions seem enough by themselves to make it reasonable to reject a theory.",
+          "corpus_chunk": 2876
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "This same ability is exercised when reason “sees” that some proposition is true, or necessarily true, simply in virtue of the person’s understanding the proposition.",
+          "corpus_chunk": 2877
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "Recently some philosophers have thought that a person can be justified in believing, or accepting, a proposition without having any evidence to support it, and so even if there is no nonexperiential source of evidence for that belief or acceptance.",
+          "corpus_chunk": 2878
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "Creating an image of a line nine inches long next to an image of a typical ant can bring a person to believe that the distance between the front and back legs of a typical ant is less than nine inches, but not that it must be.",
+          "corpus_chunk": 2879
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "So even if the exercise of relevant skills can provide justification apart from evidence, how the skill is used, and in particular on what subject matter, seems to be a basis for distinguishing a priori from a posteriori (empirical) justification.",
+          "corpus_chunk": 2880
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "On some accounts of a priori justification, namely those that hold that a priori justification is justification independent of empirical evidence, general foundationalism would imply that all of a person’s beliefs are prima facie (or weakly) a priori justified since that justification would stem merely from the fact",
+          "corpus_chunk": 2881
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "Coherence considerations account for all things considered justification and are what upset initially equal prima facie justification.",
+          "corpus_chunk": 2881
+        }
+      ],
+      "annotation": "Explains enabling experience, defeasibility, necessity, thought experiments, and current debates about a priori justification."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "Russell: a truth known through thought is not merely about thought",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "Two physical objects and two other physical objects must make four physical objects, even if physical objects cannot be experienced.",
+          "corpus_chunk": 10054
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "Let us take as an illustration the law of contradiction.",
+          "corpus_chunk": 10055
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "But the conclusion that the law of contradiction is a law of _thought_ is nevertheless erroneous.",
+          "corpus_chunk": 10056
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "The belief in the law of contradiction is a belief about things, not only about thoughts.",
+          "corpus_chunk": 10057
+        }
+      ],
+      "annotation": "Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things."
+    }
+  ]
+}

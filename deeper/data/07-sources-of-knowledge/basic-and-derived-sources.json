@@ -1,0 +1,246 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "basic-and-derived-sources",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which kinds of dependence distinguish a basic belief from a derived belief, and what does a source classification leave open?"
+  ],
+  "sources": [
+    {
+      "key": "steup-neta2025",
+      "used_for": [
+        "What supports this belief?",
+        "A source map is not yet a theory of justification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "According to foundationalism, our justified beliefs are structured like a building: they are divided into a foundation and a superstructure, the latter resting upon the former.",
+          "corpus_chunk": 1041
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose you notice (for whatever reason) someone’s hat, and you also notice that that hat looks blue to you.",
+          "corpus_chunk": 1041
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Beliefs about external objects cannot qualify as basic, according to this kind of foundationalism, for it is impossible for such beliefs to enjoy the kind of epistemic privilege necessary for being basic.",
+          "corpus_chunk": 1044
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "But if we consider a random selection of typical beliefs we hold, it is not easy to see from which basic beliefs they could be deduced.",
+          "corpus_chunk": 1051
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Foundationalism says that knowledge and justification are structured like a building, consisting of a superstructure that rests upon a foundation.",
+          "corpus_chunk": 1052
+        }
+      ],
+      "annotation": "Defines basic belief and contrasts foundational and coherent structures while allowing non-deductive support."
+    },
+    {
+      "key": "leonard2023",
+      "used_for": [
+        "What supports this belief?",
+        "Three distinctions that prevent confusion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Fricker 2007).[1] Moreover, there are many interesting questions about eyewitness testimony and the law (e.g., Wells & Olson 2003 and Burroughs & Tollefsen 2016), as well as important questions about the relationship between testimony and assertion (e.g., Pagin 2007 [2016]).",
+          "corpus_chunk": 845
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consider this scenario: Your friend testifies to you that your favorite team won last night’s game (= p).",
+          "corpus_chunk": 846
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Those who defend answers to this question tend to endorse one of three main positions: Reductionism, Non-Reductionism, and Hybrid Views.",
+          "corpus_chunk": 847
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Reductionists maintain that in order to acquire testimonial justification, one must have positive reasons for thinking that the speaker in question is a reliable testifier.",
+          "corpus_chunk": 848
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "One of the primary motivations for Reductionism stems from concerns having to do with gullibility; that is, many reductionists maintain that if we could justifiably accept a speaker’s testimony without having positive reasons for thinking that they typically speak the truth, then we would be justified in accepting",
+          "corpus_chunk": 849
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "According to Global Reductionism, in order to be justified in accepting a speaker’s testimony, you need to have positive reasons for believing that testimony is generally reliable, i.e., that accepting the reports of others is a reliable way of forming true beliefs.",
+          "corpus_chunk": 850
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "That is, testimonial justification can be reduced to a combination of other epistemic sources because it only involves you (i) perceiving that the speaker made an utterance (ii) remembering that when people have told you things in the past, they turned out to be right most of the time and (iii) inferring on this basis",
+          "corpus_chunk": 851
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "But in order to know that Bill can be trusted, I might need to rely on Carly to confirm that he usually says true things.",
+          "corpus_chunk": 851
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "Coady (1992) for this worry, and see Wright (2016a, 2019) for an importantly different kind of circularity worry for all Reductionist views.",
+          "corpus_chunk": 852
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "The problem here is that we frequently receive testimony about wildly different topics, e.g., quantum mechanics, politics, one’s own music preferences, etc.",
+          "corpus_chunk": 854
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "For it is only when we think of testimony as being disaggregated in this way that it make sense to ask about whether receiving testimony about a particular category is a reliable source of knowledge.",
+          "corpus_chunk": 855
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "According to Local Reductionism, in order to be justified in accepting a speaker’s testimony, the hearer needs to have non-testimonially based reasons for thinking that the speaker in question is a reliable testifier on this occasion (as opposed to having positive reasons for thinking that testimony in general is",
+          "corpus_chunk": 856
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "For if Local Reductionism is true, then in order to be justified in accepting a parent’s testimony, a young child would need non-testimonially based reasons for thinking that this parent is a reliable testifier.",
+          "corpus_chunk": 860
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "Second, opponents have objected to Local Reductionism on the grounds that we can be justified in believing a speaker, S’s, testimony that p even if we lack the relevant non-testimonially based reasons to support the inference from “S said that p” to “p”.",
+          "corpus_chunk": 861
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "For insofar as the only thing that justifies your belief is your inference from “This person said that my hotel is just down the road” to “My hotel is just down the road”, then since you know next to nothing about this stranger, and since you also know very little about whether anyone in this area is likely to answer",
+          "corpus_chunk": 862
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "Reductionists have offered responses to all of the worries mentioned above.",
+          "corpus_chunk": 864
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "According to Non-Reductionists, Positive Reasons is false, i.e., we don’t need positive reasons for thinking that a speaker’s testimony is reliable in order to be justified in believing what we are told.",
+          "corpus_chunk": 865
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Ross (1986), Hardwig (1985, 1991), Coady (1992, 1994), Burge (1993, 1997, 2013), Plantinga (1993), Stevenson (1993), Webb (1993), Dummett (1994), Foley (1994), McDowell (1994), Strawson (1994), Williamson (1996, 2000), Millgram (1997), Alvin Goldman (1999), Schmitt (1999), Insole (2000), Owens (2000), Rysiew (2000),",
+          "corpus_chunk": 866
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Finally, some epistemologists reject both Reductionism and Non-Reductionism in favor of various hybrid views.",
+          "corpus_chunk": 869
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Or, one might opt for a hybrid view according to which the hearer and the speaker both have an important role to play in the hearer’s ability to acquire testimonial justification, i.e., it takes two to tango, so to speak.",
+          "corpus_chunk": 870
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "The hope here is that by requiring contributions from both the speaker and the hearer, all of the worries associated with standard versions of Reductionism and Non-reductionism can be avoided.",
+          "corpus_chunk": 871
+        }
+      ],
+      "annotation": "Surveys reduction, default entitlement, knowledge generation, evidential inheritance, assurance, and group testimony."
+    },
+    {
+      "key": "russell-bruce2024",
+      "used_for": [
+        "Three distinctions that prevent confusion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A standard answer to the question about the difference between a priori and empirical justification is that a priori justification is independent of experience and empirical justification is not, and this seems to explain the contrasts present in the fifteen examples above.",
+          "corpus_chunk": 2845
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Given these considerations, perhaps “experience” should be taken to mean “sense experience of any sort, introspection, proprioception, memory, and testimony”.",
+          "corpus_chunk": 2846
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As noted above (see, sec. 3) and below (secs. 4.4 and 4.5), “independent of experience” should not be taken to mean independent of all experience, but, as a first approximation, to mean “independent of all experience beyond what is needed to grasp the relevant concepts involved in the proposition”.",
+          "corpus_chunk": 2847
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose there is a significant difference between a priori and empirical justification.",
+          "corpus_chunk": 2847
+        }
+      ],
+      "annotation": "Explains enabling experience, defeasibility, necessity, thought experiments, and current debates about a priori justification."
+    },
+    {
+      "key": "michaelian-sutton2026",
+      "used_for": [
+        "Three distinctions that prevent confusion",
+        "A source map is not yet a theory of justification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In psychology, it is manifested in Ebbinghaus’s ([1885] 1913) foundational experimental work on memory for lists of nonsense syllables.",
+          "corpus_chunk": 41992
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Goldman 1999), and the problem of stored beliefs (Moon 2012).",
+          "corpus_chunk": 42085
+        }
+      ],
+      "annotation": "Distinguishes reconstructive remembering, truth, authenticity, and unresolved problems of epistemic preservation."
+    }
+  ]
+}

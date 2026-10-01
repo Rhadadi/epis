@@ -1,0 +1,257 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "perception",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which disputed premises connect illusion and hallucination with indirect perception, and how do metaphysical and epistemic responses differ?"
+  ],
+  "sources": [
+    {
+      "key": "crane-french2021",
+      "used_for": [
+        "A door seen through patterned glass",
+        "Direct does not mean physically instantaneous",
+        "Russell's table: variation without a stable appearance",
+        "Reconstruct the argument from illusion",
+        "The argument from hallucination changes the burden",
+        "Intentionalism: representation without a picture being watched",
+        "Naive realism is not blanket infallibility",
+        "Neural representation does not settle the philosophical label",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Perceptual experiences are not just veridical experiences: there are illusions and hallucinations too.",
+          "corpus_chunk": 42443
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Clearly, there are differences between these categories, but from a phenomenological point of view, these experiences seem the same in at least this sense: for any veridical perception of an ordinary object, we can imagine a corresponding illusion or hallucination which cannot be told apart or distinguished, by",
+          "corpus_chunk": 42444
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Any differences between them are external to their nature as experiences (e.g., to do with how they are caused).",
+          "corpus_chunk": 42445
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Applying the above structure, the argument from illusion is: In illusory experiences, we are not directly presented with ordinary objects.",
+          "corpus_chunk": 42449
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Therefore, In veridical experience, S is not directly presented with the ordinary object supposedly being perceived.",
+          "corpus_chunk": 42449
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "For it would be implausible to relinquish the idea that we are directly presented with the ordinary objects we seem to perceive in veridical experience, yet maintain that we can still somehow else be directly presented with ordinary objects, e.g., with the idea that hallucinations are direct presentations of ordinary",
+          "corpus_chunk": 42451
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This, it is held, supports the idea that experiential differences between illusions and veridical perceptions are differences of “degree and not of kind” (Ayer (1940: 8)).",
+          "corpus_chunk": 42452
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "One answer is that there is something directly presented to you which is in fact elliptical.",
+          "corpus_chunk": 42452
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On these grounds, the conclusion of the base case is supposed to follow.",
+          "corpus_chunk": 42454
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "One option for fixing the argument is to introduce what French and Walters call the Exclusion Assumption (cf., Snowdon (1992: 74)): If in an illusion of an ordinary object as F, a subject is directly presented with an F thing non-identical to the ordinary object, then they are not also directly presented with the",
+          "corpus_chunk": 42455
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The argument from hallucination relies on the possibility of hallucinations as understood above.",
+          "corpus_chunk": 42456
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "For more on hallucinations, see Macpherson and Platchias (2013).",
+          "corpus_chunk": 42456
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The argument is that, given (A), this then rules out an account of veridical experiences as direct presentations of ordinary objects.",
+          "corpus_chunk": 42457
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "For veridical and illusory experiences are more naturally grouped together anyway, unlike veridical perceptions and hallucinations.",
+          "corpus_chunk": 42458
+        },
+        {
+          "locator": "§ 3.3.3",
+          "basis": "full text",
+          "excerpt": "Intentionalists hold that what is in common between veridical experiences and indistinguishable hallucinations/illusions is their intentional content: roughly speaking, how the world is represented as being by the experiences.",
+          "corpus_chunk": 42497
+        },
+        {
+          "locator": "§ 3.3.5",
+          "basis": "full text",
+          "excerpt": "As we’ve seen, instead of presentation, the intentionalist appeals to representation.",
+          "corpus_chunk": 42508
+        },
+        {
+          "locator": "§ 3.3.6",
+          "basis": "full text",
+          "excerpt": "It is not as if ordinary objects and their apparent presence drops out of the picture on the intentionalist account of phenomenal character.",
+          "corpus_chunk": 42511
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "Consider the veridical experiences involved in cases where you genuinely perceive objects as they actually are.",
+          "corpus_chunk": 42513
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "This is worked out in different (but compatible) ways by different theorists.",
+          "corpus_chunk": 42513
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "This is why many naive realists describe the relation at the heart of their view as a non-representational relation.",
+          "corpus_chunk": 42515
+        },
+        {
+          "locator": "§ 3.4.1",
+          "basis": "full text",
+          "excerpt": "We’ve noted that naive realism applies to the veridical experiences involved in genuine perception, but does it apply more widely?",
+          "corpus_chunk": 42515
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "There are various different naive realist approaches to illusion (see e.g., Fish (2009: Chapter 6), Brewer (2008, 2011: Chapter 5), Kalderon (2011), Genone (2014), French and Phillips (2020)).",
+          "corpus_chunk": 42517
+        },
+        {
+          "locator": "§ 3.4.2",
+          "basis": "full text",
+          "excerpt": "That is to say, visually relevant similarities are similarities by the lights of visual processing of various kinds... very crudely, visually relevant similarities are identities in such things as the way in which light is reflected and transmitted from the objects in question, and the way in which the stimuli are",
+          "corpus_chunk": 42518
+        }
+      ],
+      "annotation": "Separates illusion from hallucination and explains the disputed premises and competing theories of perceptual experience."
+    },
+    {
+      "key": "lyons2023",
+      "used_for": [
+        "Direct does not mean physically instantaneous",
+        "Two problems that are often combined",
+        "Epistemic approaches ask a further question",
+        "Seeing that and merely seeming",
+        "Where the skeptical pressure remains",
+        "Neural representation does not settle the philosophical label",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The central problem in the epistemology of perception is that of explaining how perception could give us knowledge or justified belief about an external world, about things outside of ourselves.",
+          "corpus_chunk": 40892
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Two main types of response to the skeptical argument have traditionally been given: a metaphysical response that focuses on the nature of the world, perceptual experience, and/or the relation between them, in an effort to show that perceptual knowledge is indeed possible; and a more directly epistemological response",
+          "corpus_chunk": 40893
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Additionally, the direct realist is free to impose a metaevidential demand on justified perceptual belief, a demand that we know which kind of experience we are having before that experience can serve as evidence.",
+          "corpus_chunk": 40934
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "An entirely metaphysical solution to the problem of the external world will not suffice.",
+          "corpus_chunk": 40935
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Any satisfactory, non-skeptical epistemology of perception is going to deny one or more of the epistemological premises of PEW.",
+          "corpus_chunk": 40936
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The first two are normally defended as parts of and continuous with a more general epistemological view, encompassing not just perception but also testimony, introspection, memory, inductive and deductive inference, and so on.",
+          "corpus_chunk": 40937
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The pioneer of this general approach is John McDowell (1982), although it is difficult to know just what view he endorses.",
+          "corpus_chunk": 41013
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A second motivation is the claim that some or all evidence is factive.",
+          "corpus_chunk": 41014
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Principle, at least in a form that holds that the metaevidential knowledge/justification is prior to the perceptual knowledge/justification.",
+          "corpus_chunk": 41015
+        }
+      ],
+      "annotation": "Distinguishes epistemic from metaphysical directness and surveys evidential, etiological, and world-involving justification."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "Russell's table: variation without a stable appearance",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. I",
+          "basis": "full text",
+          "excerpt": "This colour is not something which is inherent in the table, but something depending upon the table and the spectator and the way the light falls on the table.",
+          "corpus_chunk": 9909
+        },
+        {
+          "locator": "ch. I",
+          "basis": "full text",
+          "excerpt": "This colour is not something which is inherent in the table, but something depending upon the table and the spectator and the way the light falls on the table.",
+          "corpus_chunk": 9909
+        }
+      ],
+      "annotation": "Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things."
+    }
+  ]
+}

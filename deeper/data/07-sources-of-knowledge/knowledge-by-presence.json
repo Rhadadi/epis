@@ -1,0 +1,286 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "knowledge-by-presence",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is present rather than represented in Suhrawardi’s and Ṣadrā’s accounts, and which later judgments remain open to error?"
+  ],
+  "sources": [
+    {
+      "key": "marcotte2025",
+      "used_for": [
+        "Feeling a pain and reading a report of it",
+        "More than a claim about ordinary introspection",
+        "The contrast with acquired representation",
+        "An explanatory reconstruction of the dependence problem",
+        "What Suhrawardi's alternative tries to explain",
+        "A primary passage through an open secondary source",
+        "Presence within the philosophy of illumination",
+        "Comparison with Russell's acquaintance",
+        "What would count as a good criticism?",
+        "Comparison without assimilation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "At the heart of Suhrawardi’s epistemological concerns lie two important components of his ishraqi philosophy of lights: the concepts of ‘self-awareness’ (shu‘ur bi-l-dhat) and ‘knowledge by presence’ (‘ilm huduri) (PI, §§114–7).",
+          "corpus_chunk": 14057
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "He rejects it as a proof for the existence of the immaterial soul, claiming that the relation enjoyed by the (material) body/(immaterial) soul is a “more intimate relationship of ‘presence’ (hudur)”, since ‘presence’ now connects (immaterial) intellection and internal (material/brain) senses activities.",
+          "corpus_chunk": 14058
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "He develops his epistemological theory by providing various arguments to demonstrate the existence of a type of knowledge that is self-evident, innate and unmediated through any type of abstraction or representation of forms, whether it be through an image, a form, a notion or an attribute of the self (Marcotte 2006).",
+          "corpus_chunk": 14059
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The unmediated nature of this process characterizes both the soul’s self-awareness and the soul’s awareness or knowledge of external objects of knowledge, such as dominating (intelligible) light-entities, and even provides the conditions for possible glimpses of the Light of Lights, God, it may catch (Suh. 1993a,",
+          "corpus_chunk": 14060
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Self-awareness of human beings is equated with the self-awareness that incorporeal lights possess and share.",
+          "corpus_chunk": 14060
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Enneads V 3.6) Aristotle figure of Suhrawardi’s famous ‘dream-vision ‘ provides an illustrious example of what constitutes real knowledge based on immediate and intuitive knowledge: “return to your self (nafs)” (1993a, 70), that is, knowledge one obtains through one’s own soul.",
+          "corpus_chunk": 14062
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Mystical vision and contemplation operate through this intuitive process of knowing metaphysical lights.",
+          "corpus_chunk": 14063
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "For some, like Qutb al-Din Shirazi, whereas the Peripatetics had extolled intellection, Suhrawardi brings direct intuition (dhawq) or mystical contemplation (heightened by ascetic components) to the forefront, as an alternative — albeit more reliable — foundation of certainty, where this presence can be achieved",
+          "corpus_chunk": 14064
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Prophecy becomes the ‘direct’ experience of the world of lights.",
+          "corpus_chunk": 14064
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "On the whole, however, the epistemic process by which mystics such as Abu Yazid al-Bistami (d.874), Sahl al-Tustari (d.896) and Hallaj (d.912), sages such as Zarathustra and Empedocles, philosophers such as Pythagoras and Plato, or Suhrawardi himself have all had access to those metaphysical truths and divine realms",
+          "corpus_chunk": 14066
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Out of the interaction of the irradiations of the vertical and the horizontal lights, the bodies of the lower world are generated.",
+          "corpus_chunk": 14086
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Notions of intensity and gradation of light, together with notions of presence and self-manifestation, are thus central to Suhrawardi’s metaphysics.",
+          "corpus_chunk": 14088
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The concepts of self-knowledge and knowledge by presence, at the heart of the knowledge by presence of all light-beings, provides a means to explain God’s self-awareness, as the Light of Lights, as well as Its self-knowledge and It’s knowledge of all things other than itself (creation), such as particulars.",
+          "corpus_chunk": 14089
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Hence, God’s knowledge by presence is now conceived in terms of the “existence of a ‘relation’ (idafa) between it and whatever is known to it”, whereby this “purely relational” nature of God’s knowledge enables the Light of Light to know material particulars without there being any changes or effects on its light",
+          "corpus_chunk": 14090
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "the presence (hudur) of a thing for a self (dhat)",
+          "corpus_chunk": 14062
+        }
+      ],
+      "annotation": "Open survey of Suhrawardi’s nonrepresentational self-awareness and its metaphysics; the brief Intimations passage is quoted through this entry."
+    },
+    {
+      "key": "rizvi2021",
+      "used_for": [
+        "More than a claim about ordinary introspection",
+        "Mullā Ṣadrā: a related idea with a different ontology",
+        "Comparison without assimilation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Mulla Sadra inherited a variety of theories ranging from Platonic recollection (anamnesis) and division to Peripatetic syllogistics, definitions and axiomatic science.",
+          "corpus_chunk": 29109
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "According to this model, knowledge is negative insofar as it is solipsistic (Mulla Sadra 2001–5, III: 318).",
+          "corpus_chunk": 29109
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "One can only grasp the form in the mind since the essences of things are not available to us.",
+          "corpus_chunk": 29110
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Mulla Sadra quotes Avicenna (from al-Ta‘liqat, Avicenna 1973: 34).",
+          "corpus_chunk": 29111
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "If something is known by formal knowledge, it changes the reality of it (Mulla Sadra 2001–5, I: 489).",
+          "corpus_chunk": 29113
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Whereas knowledge by presence extends the nature of divine knowledge to the human and resolves the problem of God’s knowledge of particulars by insisting upon the unitive nature of that knowledge.",
+          "corpus_chunk": 29114
+        }
+      ],
+      "annotation": "Distinguishes presence from representation in Mullā Ṣadrā’s account and relates the epistemology to his ontology of existence."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "Comparison with Russell's acquaintance",
+        "Comparison without assimilation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. V",
+          "basis": "full text",
+          "excerpt": "We have spoken of acquaintance with the contents of our minds as _self_-consciousness, but it is not, of course, consciousness of our _self_: it is consciousness of particular thoughts and feelings.",
+          "corpus_chunk": 9983
+        }
+      ],
+      "annotation": "Public-domain primary discussions of colour variation, acquaintance with the self, and logical knowledge about things."
+    },
+    {
+      "key": "hasan-fumerton2022",
+      "used_for": [
+        "Comparison with Russell's acquaintance",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "It may be that classical foundationalists start off on the wrong foot if they seek foundations in logical relations between the mere fact that someone believes some proposition and the proposition’s being true.",
+          "corpus_chunk": 41069
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "There is certainly a sense in which it is something one can point to in answer to the question “What makes it true that someone has grey hair?” One cannot appropriately point to my having grey hair as something that makes it true that two plus two equals four.",
+          "corpus_chunk": 41071
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "What is it that distinguishes this belief from my belief about, say, whether it will rain next week?",
+          "corpus_chunk": 41071
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "This takes us to another classical version of foundationalism, the acquaintance theory.",
+          "corpus_chunk": 41073
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Some doubt that acquaintance with some fact is sufficient, on its own, to justify belief in a corresponding proposition.",
+          "corpus_chunk": 41074
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "BonJour was quite aware that some classical foundationalists would attempt to avoid the regress problem raised in the previous section by appeal to the idea that some things are simply “given” to us, or that we directly “apprehend” or are “acquainted with” them.",
+          "corpus_chunk": 41085
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The episode of awareness would involve something like the acceptance of a proposition, or the categorization of experience, and such an attitude or act clearly needs justification if it is to justify anything else.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "One proposed solution to the dilemma begins by emphasizing that acquaintance with a fact is not by itself an epistemic relation.",
+          "corpus_chunk": 41086
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "This view thus grants that a single act of acquaintance with a fact does not provide justification, but rejects the dilemma’s assumption that there are no acts of acquaintance that can, singly or in any combination, make a difference to justification.",
+          "corpus_chunk": 41088
+        }
+      ],
+      "annotation": "Surveys acquaintance-based foundations and the problems of conceptual classification and a relation supplying justification."
+    },
+    {
+      "key": "gertler2024",
+      "used_for": [
+        "Comparison with Russell's acquaintance",
+        "Awareness, a belief about awareness, and a public report",
+        "Infallibility and omniscience differ",
+        "What would count as a good criticism?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "In philosophy, “self-knowledge” standardly refers to knowledge of one’s own mental states—that is, of what one is feeling or thinking, or what one believes or desires.",
+          "corpus_chunk": 27210
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "What is special about self-knowledge, compared to knowledge in other domains?",
+          "corpus_chunk": 27211
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Statement (4) focuses on the way that self-ascriptions of mental states, such as saying “I’m in pain”, are treated by others.",
+          "corpus_chunk": 27211
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The strongest epistemic claims on behalf of self-knowledge are infallibility and omniscience.",
+          "corpus_chunk": 27213
+        }
+      ],
+      "annotation": "Separates the scope and security of self-knowledge and compares empirical transparency with agential entitlement."
+    }
+  ]
+}

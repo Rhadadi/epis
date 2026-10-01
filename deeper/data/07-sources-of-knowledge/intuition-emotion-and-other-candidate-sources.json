@@ -1,0 +1,99 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "intuition-emotion-and-other-candidate-sources",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which kinds of immediate response and emotional contribution are being claimed, and how do inquiry and truth support differ?"
+  ],
+  "sources": [
+    {
+      "key": "pust2024",
+      "used_for": [
+        "Several things called intuition",
+        "A seeming need not become a belief",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consider the claim that a fully rational person does not believe both p and not-p.",
+          "corpus_chunk": 39093
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consider recent research on “intuitions” in naturalistic decision making (Klein 1998).",
+          "corpus_chunk": 39093
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The focus of the present entry is the role of intuitions in distinctively philosophical (and other “armchair”) inquiry.",
+          "corpus_chunk": 39094
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Some philosophers equate intuitions with beliefs or with beliefs of some kind.",
+          "corpus_chunk": 39096
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "If one has reasoned one’s way to a satisfactory resolution of a paradox and identified the false proposition, one often still has the intuition that the rejected proposition is true.",
+          "corpus_chunk": 39097
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "One might, when viewing the Müller-Lyer illusion, experience one line as longer than the other even though one, having repeatedly measured the lines, firmly believes them to be of equal length.",
+          "corpus_chunk": 39098
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "One such account, favored by many psychologists and philosophers with naturalistic inclinations, treats intuitions as beliefs without a conscious or introspectively accessible inferential etiology (Gopnik and Schwitzgebel 1998; Devitt 2006: 491; Kornblith 1998) as in [A2] S has the intuition that p if and only if S",
+          "corpus_chunk": 39099
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The latter problem does not appear so easily circumvented.",
+          "corpus_chunk": 39100
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Finally, [A3] appears to make the direct introspective judgment that one has an intuition difficult to justify, as one lacks direct introspective access to the non-conscious causes of one’s beliefs.",
+          "corpus_chunk": 39101
+        }
+      ],
+      "annotation": "Separates broad uses of intuition from philosophical seemings and examines whether intuitions are beliefs."
+    },
+    {
+      "key": "turri-etal2021",
+      "used_for": [
+        "Emotion has more than one epistemic role",
+        "Separate a signal from a verdict",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 10.4",
+          "basis": "full text",
+          "excerpt": "It’s uncontroversial to say that many virtues are emotional dispositions, even if they involve behavior in addition to emotion.",
+          "corpus_chunk": 5381
+        },
+        {
+          "locator": "§ 10.4",
+          "basis": "full text",
+          "excerpt": "VE can benefit from theorizing about epistemic emotions in at least three ways.",
+          "corpus_chunk": 5382
+        }
+      ],
+      "annotation": "Surveys epistemic emotions as aspects of intellectual character and motivation for further inquiry."
+    }
+  ]
+}

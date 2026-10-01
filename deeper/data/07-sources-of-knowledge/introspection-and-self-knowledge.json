@@ -1,0 +1,101 @@
+{
+  "chapter": "07-sources-of-knowledge",
+  "section": "introspection-and-self-knowledge",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Which targets and processes are involved in self-knowledge, and how do transparency and restricted infallibility proposals differ?"
+  ],
+  "sources": [
+    {
+      "key": "schwitzgebel2024b",
+      "used_for": [
+        "Knowing your mind in different ways",
+        "Security is not completeness",
+        "Looking inward is not the only proposal",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Introspection, as the term is used in contemporary philosophy of mind, is a means of learning about one’s own currently ongoing, or perhaps very recently past, mental states or processes.",
+          "corpus_chunk": 41440
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Introspection is also central to philosophy of mind, both as a process worth study in its own right and as a court of appeal for other claims about the mind.",
+          "corpus_chunk": 41441
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Introspection is generally regarded as a process by means of which we learn about our own currently ongoing, or very recently past, mental states or processes.",
+          "corpus_chunk": 41442
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "It’s difficult to articulate exactly what directness or immediacy involves in the present context, but some examples should make the import of this condition relatively clear.",
+          "corpus_chunk": 41449
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This section will outline several approaches to self-knowledge.",
+          "corpus_chunk": 41460
+        },
+        {
+          "locator": "§ 4.1.1",
+          "basis": "full text",
+          "excerpt": "Historical arguments for indubitability and infallibility have tended to center on intuitive appeals to the apparent impossibility of doubting or going wrong about such matters as whether one is having a thought with a certain content or is experiencing pain or having a visual experience as of seeing red.",
+          "corpus_chunk": 41551
+        }
+      ],
+      "annotation": "Explains competing definitions and processes of introspection and the restricted scope of proposed infallibility."
+    },
+    {
+      "key": "gertler2024",
+      "used_for": [
+        "Knowing your mind in different ways",
+        "Security is not completeness",
+        "Looking inward is not the only proposal",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "In philosophy, “self-knowledge” standardly refers to knowledge of one’s own mental states—that is, of what one is feeling or thinking, or what one believes or desires.",
+          "corpus_chunk": 27210
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The strongest epistemic claims on behalf of self-knowledge are infallibility and omniscience.",
+          "corpus_chunk": 27213
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Transparency accounts are inspired by the idea discussed above in connection with Gareth Evans’ famous remark: that if asked whether you believe that there will be a third world war, you answer by directly considering the likelihood of a third world war.",
+          "corpus_chunk": 27255
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Reasoning from it’s snowing to you/they believe that it’s snowing will not reliably yield true beliefs about others’ beliefs.",
+          "corpus_chunk": 27259
+        },
+        {
+          "locator": "§ 3.7",
+          "basis": "full text",
+          "excerpt": "And our right to that assumption gives us the epistemic right to use the transparency method associated with Evans’ famous remarks: to answer the question “do you believe that p?” by considering reasons bearing on p (ibid.) So the self-ascriptions produced by the transparency method constitute knowledge.",
+          "corpus_chunk": 27279
+        }
+      ],
+      "annotation": "Separates the scope and security of self-knowledge and compares empirical transparency with agential entitlement."
+    }
+  ]
+}
