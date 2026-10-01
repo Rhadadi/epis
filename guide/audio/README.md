@@ -22,10 +22,10 @@ To take the audiobook with you, the player page offers three ways: save the chap
 | 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 5 min | ElevenLabs |
 | 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 50 min | ElevenLabs |
 | 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 1 h 3 min | ElevenLabs |
-| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 57 min | Kokoro |
+| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 1 h 2 min | ElevenLabs |
 | 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
 
-Total: 15 h 38 min.
+Total: 15 h 43 min.
 
 ---
 

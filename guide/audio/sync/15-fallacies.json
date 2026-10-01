@@ -1,0 +1,3797 @@
+{
+"file": "15-fallacies.mp3",
+"title": "Chapter 15 — A Field Guide to Fallacies",
+"duration": 3705.339,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter fifteen. A Field Guide to Fallacies.",
+"begin": 2.116,
+"end": 5.876,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"It would be a very good thing if every trick could receive some short and obviously appropriate name, so that when a man used this or that particular trick, he could be at once reproached for it.\"",
+"begin": 7.131,
+"end": 19.851,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Arthur Schopenhauer, The Art of Controversy.",
+"begin": 20.428,
+"end": 23.708,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"No true Scotsman would do such a thing.\"",
+"begin": 24.581,
+"end": 27.461,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Antony Flew's imaginary Hamish McDonald, Thinking About Thinking.",
+"begin": 28.056,
+"end": 33.096,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A fallacy is a common pattern of bad reasoning: an argument, or move in an argument, that seems persuasive but does not give good support to its conclusion. Formal fallacies have an invalid logical form. Informal fallacies, the subject of this chapter, go wrong in their content or context: they rely on irrelevant considerations, unwarranted assumptions, or ambiguous language.",
+"begin": 33.959,
+"end": 60.519,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This chapter is a reference. Each entry gives the pattern, an example, an explanation of what goes wrong, when the same move is legitimate, and how to respond. The last point is essential. Most \"fallacies\" have respectable cousins, and a critical thinker who shouts \"Fallacy!\" at every appeal to expertise or every slippery-slope argument is not thinking critically.",
+"begin": 61.319,
+"end": 86.359,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Like a guide to birds, this chapter helps you recognize what you're looking at: more than forty fallacies and rhetorical tricks, grouped into families.",
+"begin": 87.014,
+"end": 96.294,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "For each one you'll hear what it looks like, why it's tempting, how to respond, and its legitimate cousin: the good form of reasoning it imitates. Not every appeal to authority is a fallacy, and not every slippery slope is imaginary.",
+"begin": 96.534,
+"end": 112.134,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "At the end there's a practice round, where you can test yourself on realistic examples.",
+"begin": 112.374,
+"end": 117.414,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "How to use this field guide",
+"begin": 118.674,
+"end": 120.514,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Fallacies are context-dependent. Aristotle catalogued fallacies in On Sophistical Refutations. The list grew over centuries, especially in textbooks. In Fallacies, C L Hamblin criticized what he called \"the standard treatment\" of fallacies in textbooks: lists of names and cute examples, with little theory of why the fallacies are fallacious, and no recognition that the same argument forms are often perfectly good.",
+"begin": 121.6,
+"end": 151.04,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Two later approaches improved on the standard treatment.",
+"begin": 151.76,
+"end": 155.0,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Argumentation schemes and critical questions — Douglas Walton; Walton, Chris Reed, and Fabrizio Macagno, Argumentation Schemes, two thousand eight. Many common forms of argument — from expert opinion, from consequences, from analogy, from sign — are presumptive: they create a reasonable presumption in favor of their conclusion, which can be defeated. Each scheme comes with critical questions. An argument becomes fallacious when it is used in a way that ignores or blocks its critical questions. For example, an appeal to expert opinion is reasonable if the expert really is an expert in the relevant field, is trustworthy, and represents the consensus; it is fallacious when these questions are ignored.",
+"begin": 155.28,
+"end": 202.64,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pragma-dialectics — Frans van Eemeren and Rob Grootendorst, A Systematic Theory of Argumentation, two thousand four. A fallacy is a move that violates one of the rules for a critical discussion aimed at resolving a difference of opinion on the merits. For example, a personal attack violates the \"freedom rule\" — parties must not prevent each other from advancing or questioning standpoints. The rules are listed in The ethics of discussion.",
+"begin": 202.96,
+"end": 231.64,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How to read each entry. For each fallacy.",
+"begin": 232.08,
+"end": 235.36,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pattern: the abstract form.",
+"begin": 235.84,
+"end": 238.0,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Example.",
+"begin": 238.48,
+"end": 239.12,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What goes wrong.",
+"begin": 239.6,
+"end": 240.64,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Legitimate cousin: when a similar move is reasonable.",
+"begin": 241.12,
+"end": 244.48,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Response: what to say or ask.",
+"begin": 245.04,
+"end": 247.68,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How to use it in conversation. Naming fallacies, \"That's an ad hominem!\", rarely persuades anyone and often sounds like point-scoring. It is usually better to explain the problem in plain words: \"Even if he has a financial interest, that doesn't tell us whether his numbers are right. Let's look at the numbers.\"",
+"begin": 248.16,
+"end": 267.6,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Fallacies of relevance",
+"begin": 268.878,
+"end": 270.478,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "These fallacies offer premises that are logically irrelevant to the conclusion, though they may be psychologically persuasive.",
+"begin": 271.569,
+"end": 278.929,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Ad hominem",
+"begin": 279.809,
+"end": 280.449,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Attack the person making an argument instead of the argument. Person A argues P; A has some bad feature; therefore P is false.",
+"begin": 281.313,
+"end": 292.833,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Varieties.",
+"begin": 293.713,
+"end": 294.913,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Abusive: \"Why listen to his views on tax policy? He's a failed businessman who can't even manage his own finances.\"",
+"begin": 295.233,
+"end": 302.513,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Circumstantial: \"Of course she argues for solar subsidies. She owns a solar company.\"",
+"begin": 303.393,
+"end": 308.673,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Poisoning the well: discrediting a person before they speak. \"Before you hear from my opponent, remember that he'll say anything to get elected.\"",
+"begin": 309.633,
+"end": 318.193,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Bulverism: C S Lewis's term, named after an imaginary Ezekiel Bulver, who at the age of five heard his mother tell his father, \"Oh, you say that because you are a man.\" Bulverism is assuming, without discussion, that someone is wrong, and then explaining why they hold their mistaken view — their class, gender, psychology, interests. \"You only believe in free markets because you're rich.\" \"You only support that policy because you're afraid.\"",
+"begin": 319.073,
+"end": 349.153,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: an argument's validity and the truth of its premises don't depend on who states it. A bad person can make a good argument.",
+"begin": 350.193,
+"end": 359.753,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: the person's characteristics are relevant when we rely on their testimony, not their argument. If a witness claims to have seen something, their honesty, eyesight, and interests matter. If an expert gives an opinion we can't check, their competence and conflicts of interest matter. A conflict of interest is a reason for extra scrutiny, not for rejection.",
+"begin": 360.273,
+"end": 384.633,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Suppose that's all true about him. Does it show that his argument is wrong? Which premise is false?\" Or, if testimony is at issue: \"Fair point that she has an interest. Can we check her claims against independent sources?\"",
+"begin": 385.153,
+"end": 400.753,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Tu quoque and whataboutism",
+"begin": 401.393,
+"end": 403.473,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Deflect criticism by pointing out that the critic, or someone else, does the same thing. A criticizes B for X; A, or C, also does X; therefore B's X is acceptable, or A's criticism is invalid.",
+"begin": 404.349,
+"end": 421.309,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Tu quoque — \"you too\": \"You tell me to quit smoking, but you smoked for twenty years.\"",
+"begin": 421.549,
+"end": 427.789,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Whataboutism: responding to criticism with \"What about…?\" \"You're criticizing our country's human rights record? What about yours?\" The term is associated with Cold War exchanges in which criticism of Soviet abuses was answered by pointing to racial injustice in the United States.",
+"begin": 428.029,
+"end": 446.029,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the critic's hypocrisy doesn't make the criticism false. Both parties may be doing something wrong.",
+"begin": 446.509,
+"end": 454.069,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: pointing out inconsistency is legitimate when first, it tests whether the critic sincerely holds the principle they invoke, second, it tests whether the principle is being applied consistently, a form of parity of reasoning, or third, the question is precisely whether a standard is being applied fairly.",
+"begin": 454.349,
+"end": 475.629,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Maybe we're both wrong about that. But let's deal with this issue first, and then we can discuss the other one.\"",
+"begin": 476.109,
+"end": 482.669,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Genetic fallacy",
+"begin": 483.229,
+"end": 484.349,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Judge a claim by its origin rather than its merits. P originated in, or is held because of, source S; S is bad — or good; therefore P is false — or true.",
+"begin": 485.224,
+"end": 500.024,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 500.744,
+"end": 501.704,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"The chemist August Kekulé said the idea of the ring structure of benzene came to him in a daydream of a snake seizing its own tail. So the theory is unscientific.\"",
+"begin": 501.944,
+"end": 512.024,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"That holiday has pagan roots, so it's wrong to celebrate it.\"",
+"begin": 512.664,
+"end": 516.504,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"The idea of human rights was invented by Europeans, so it doesn't apply elsewhere.\"",
+"begin": 516.824,
+"end": 522.024,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the process by which an idea was discovered is different from the process by which it is justified. The philosopher Hans Reichenbach distinguished the context of discovery from the context of justification. Kekulé's theory was accepted because of chemical evidence, not because of his dream.",
+"begin": 522.504,
+"end": 541.544,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: the origin of a belief can be relevant to whether we should trust it, when the belief is held only because of that origin and the origin is unreliable. If the only reason you believe something is a rumor, then learning that the rumor was invented undermines your belief. Debunking arguments — for example, evolutionary debunking arguments about moral beliefs — argue that a belief was produced by a process unconnected to its truth. These are legitimate forms of argument, but they undercut justification; they don't show the belief is false.",
+"begin": 542.024,
+"end": 576.984,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"That's interesting history, but what's the evidence for or against it now?\"",
+"begin": 577.464,
+"end": 583.304,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to authority",
+"begin": 583.784,
+"end": 584.984,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern — fallacious form: Authority A says P; therefore P, where A's authority is irrelevant, disputed, or used to end inquiry. John Locke called this argumentum ad verecundiam, \"argument from respect\" — Essay.",
+"begin": 585.848,
+"end": 603.888,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 604.168,
+"end": 605.128,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"A famous actor says this diet cures cancer.\"",
+"begin": 605.368,
+"end": 608.408,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"A Nobel Prize-winning physicist says this nutritional supplement works.\" Outside their field: see Expertise and its limits.",
+"begin": 608.888,
+"end": 617.768,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Experts say…\" Which experts? Where?",
+"begin": 618.008,
+"end": 621.568,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Scientist X disagrees with the consensus, so the question is open.\"",
+"begin": 621.848,
+"end": 626.088,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: authority is a source of evidence only when the authority really has expertise on this question, is trustworthy, and represents the state of expert opinion.",
+"begin": 626.648,
+"end": 637.648,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: appeal to genuine expert consensus is not a fallacy. It is how rational people learn most of what they know. Walton's critical questions for appeals to expert opinion.",
+"begin": 637.928,
+"end": 650.408,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Expertise: How credible is the source as an expert?",
+"begin": 650.728,
+"end": 655.208,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Field: Is the source an expert in the relevant field?",
+"begin": 655.768,
+"end": 659.928,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Opinion: What exactly did the expert assert?",
+"begin": 660.488,
+"end": 664.808,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Trustworthiness: Is the expert personally reliable — free of bias or conflicts?",
+"begin": 665.128,
+"end": 671.728,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Consistency: Is the claim consistent with what other experts say?",
+"begin": 672.008,
+"end": 677.288,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Backup evidence: Is the claim based on evidence?",
+"begin": 677.608,
+"end": 681.648,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Is that person an expert in this specific field? What do most experts in the field say? What's the evidence they rely on?\"",
+"begin": 681.928,
+"end": 690.888,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to popularity",
+"begin": 691.048,
+"end": 692.488,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Many, or most, people believe P; therefore P. Also called argumentum ad populum or the bandwagon fallacy.",
+"begin": 693.368,
+"end": 704.168,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples: \"Millions of people use homeopathy; it must work.\" \"Everyone knows that…\" \"Most people in this town think the new factory will be a disaster.\"",
+"begin": 704.808,
+"end": 715.368,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: popularity is not truth. Majorities have believed many false things. And popularity is especially weak evidence when beliefs are not independent.",
+"begin": 716.088,
+"end": 728.168,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: popularity can be evidence: first, when many people have independently examined the question with relevant competence — the wisdom of crowds; second, when the question is about popularity or social convention — which side of the road to drive on, what a word means; third, as weak evidence of quality when you have nothing else — a busy restaurant.",
+"begin": 728.888,
+"end": 753.928,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Why do they believe it? Have they looked at the evidence independently, or are they following each other?\"",
+"begin": 754.568,
+"end": 761.328,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to tradition and appeal to novelty",
+"begin": 761.768,
+"end": 764.488,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Appeal to tradition — argumentum ad antiquitatem: P has long been believed or done; therefore P is true or good. \"We've always done it this way.\" \"This remedy has been used for thousands of years, so it must work.\" Bloodletting was used for over two thousand years.",
+"begin": 765.362,
+"end": 784.162,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Appeal to novelty — argumentum ad novitatem: P is new; therefore P is better. \"It's the latest approach, so it must be an improvement.\"",
+"begin": 784.482,
+"end": 795.122,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousins: long-standing practices may encode accumulated wisdom that no one can fully articulate. Chesterton's fence — G K Chesterton, The Thing, nineteen twenty-nine: if you come across a fence in the middle of a road and can't see why it's there, don't remove it until you find out why it was put up. Conservatives in the tradition of Edmund Burke and economists such as Friedrich Hayek have made related arguments about social institutions. And newer scientific results often are better, when they build on and correct older ones. The fallacy lies in treating age or novelty as sufficient by themselves.",
+"begin": 795.442,
+"end": 836.162,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"What's the reason for the tradition — or the new approach? Does it still apply?\"",
+"begin": 836.482,
+"end": 842.002,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to emotion",
+"begin": 842.642,
+"end": 843.842,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Use emotion — fear, pity, anger, pride, disgust, flattery — in place of evidence on a question of fact.",
+"begin": 844.722,
+"end": 854.962,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 855.602,
+"end": 856.402,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Fear: \"If this policy passes, your family won't be safe.\"",
+"begin": 856.882,
+"end": 861.322,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Pity — ad misericordiam: \"I deserve a better grade; I've been under so much stress.\"",
+"begin": 861.602,
+"end": 867.842,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Outrage: showing a disturbing image to establish a factual claim about frequency or cause.",
+"begin": 868.322,
+"end": 874.642,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Flattery: \"A smart person like you surely sees that…\"",
+"begin": 875.122,
+"end": 879.002,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Think of the children!\"",
+"begin": 879.202,
+"end": 880.482,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: an emotional reaction to a claim is not evidence that it is true. Emotional appeals can also crowd out reflection.",
+"begin": 881.122,
+"end": 890.162,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: emotions are often relevant, especially in practical and moral questions. If a policy would cause great suffering, the suffering matters, and feeling its weight is appropriate. Some philosophers argue that emotions can be perceptions of value. Aristotle counted pathos as a legitimate mode of persuasion alongside logos and ethos. The fallacy is using emotion to substitute for evidence, or to settle a factual question.",
+"begin": 890.722,
+"end": 919.962,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"That's genuinely upsetting. But how common is it, and would this policy change it?\"",
+"begin": 920.242,
+"end": 926.482,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to consequences",
+"begin": 927.042,
+"end": 928.482,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: If P were true, the consequences would be bad — or good; therefore P is false — or true. Also called argumentum ad consequentiam.",
+"begin": 929.358,
+"end": 941.518,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 942.158,
+"end": 942.958,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Free will must exist; otherwise, nobody could be held responsible for anything.\"",
+"begin": 943.518,
+"end": 948.691,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Humans can't be causing climate change, because that would mean we'd have to change our whole economy.\"",
+"begin": 948.905,
+"end": 954.478,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"This study must be flawed; if it were true, it would be used to justify discrimination.\"",
+"begin": 954.598,
+"end": 960.478,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: whether a factual claim is true doesn't depend on whether we would like the consequences of its being true.",
+"begin": 960.598,
+"end": 967.678,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: consequences are exactly what matter for practical questions: whether to do something, adopt a policy, or act as if something is true. \"We shouldn't implement this policy because it would have bad consequences\" is a perfectly good form of argument. Consequences also matter for how much evidence to demand before acting. The fallacy is treating consequences as evidence about facts.",
+"begin": 968.398,
+"end": 994.478,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Those consequences would be serious, and we'd need to think about how to respond. But first, is it true?\"",
+"begin": 994.798,
+"end": 1002.678,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Appeal to nature",
+"begin": 1003.038,
+"end": 1004.158,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: X is natural; therefore X is good, healthy, or right. Or: X is unnatural; therefore X is bad.",
+"begin": 1005.035,
+"end": 1015.275,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples: \"This remedy is natural, so it's safe.\" \"Humans evolved to eat meat, so eating meat is morally fine.\" \"Vaccines are unnatural.\"",
+"begin": 1015.915,
+"end": 1026.715,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: \"natural\" is ambiguous, and on any reading, being natural does not guarantee being good. Arsenic, hemlock, and death cap mushrooms are natural. Eyeglasses, anesthesia, and clean drinking water are not.",
+"begin": 1027.035,
+"end": 1042.475,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Note: this is often called the \"naturalistic fallacy,\" but G E Moore used that name for a different error: defining \"good\" in terms of a natural property.",
+"begin": 1043.195,
+"end": 1052.955,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: that something is natural can be weak evidence about safety in specific contexts — foods humans have eaten for millennia have a long safety record — and knowledge of human nature is relevant to designing policies. But the argument needs those specific premises.",
+"begin": 1053.515,
+"end": 1070.715,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Lots of natural things are harmful and lots of unnatural things are good. What's the actual evidence about this one?\"",
+"begin": 1071.275,
+"end": 1079.275,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Red herring",
+"begin": 1079.595,
+"end": 1080.315,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Introduce an irrelevant topic to divert attention from the issue.",
+"begin": 1081.182,
+"end": 1085.902,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The name comes from a story, popularized by the English journalist William Cobbett in eighteen oh-seven, of using a strong-smelling smoked herring to lure hounds off a hare's scent.",
+"begin": 1086.542,
+"end": 1097.422,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example: \"Why are you worried about the city's budget deficit when there are children starving around the world?\" \"Yes, my company polluted the river, but we employ five thousand people in this region.\"",
+"begin": 1098.062,
+"end": 1110.142,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"That may be important too, but it doesn't answer the question we were discussing, which is…\"",
+"begin": 1110.702,
+"end": 1116.782,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Straw man",
+"begin": 1117.502,
+"end": 1118.062,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Misrepresent an opponent's position as something weaker or more extreme, then refute the misrepresentation.",
+"begin": 1118.929,
+"end": 1126.689,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example.",
+"begin": 1127.329,
+"end": 1128.209,
+"voice": "second"
+},
+{
+"kind": "voice1",
+"text": "\"I think we should reduce military spending by five percent and put the money into education.\"",
+"begin": 1128.647,
+"end": 1134.407,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"My opponent wants to leave our country defenseless against its enemies.\"",
+"begin": 1134.759,
+"end": 1138.759,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: refuting a position nobody holds shows nothing about the position actually held.",
+"begin": 1139.559,
+"end": 1146.399,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Prevention: the principle of charity and steelmanning. Before criticizing, restate the other person's view in a way they would accept.",
+"begin": 1146.839,
+"end": 1156.239,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"That's not my view. My view is… Can you respond to that?\"",
+"begin": 1156.599,
+"end": 1162.039,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Weak man and nut picking",
+"begin": 1162.679,
+"end": 1164.439,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A subtler relative of the straw man.",
+"begin": 1165.322,
+"end": 1167.562,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The weak man: refuting the weakest real version of a view, or its least capable real defender, and treating that as a refutation of the view. Unlike the straw man, the weak version really exists. But the strongest version is left untouched.",
+"begin": 1167.642,
+"end": 1185.082,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nut picking — a term coined by the blogger Kevin Drum in two thousand six: picking out the most extreme, foolish, or offensive members of a group and presenting them as representative. Social media makes nut picking easy: in any large group, someone can be found saying something absurd.",
+"begin": 1185.962,
+"end": 1205.082,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Sure, some people argue that badly. What's the best version of the argument, and what do most people on that side actually believe?\"",
+"begin": 1205.562,
+"end": 1214.842,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Fallacies of presumption",
+"begin": 1216.104,
+"end": 1217.784,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "These fallacies rely on an unwarranted assumption, often hidden.",
+"begin": 1218.873,
+"end": 1223.353,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Begging the question",
+"begin": 1224.233,
+"end": 1225.273,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: The premises assume the conclusion, openly or in disguise. Also called petitio principii or circular reasoning.",
+"begin": 1226.136,
+"end": 1236.256,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1236.696,
+"end": 1237.736,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"This book is infallible because it says so in the book, and an infallible book wouldn't lie.\"",
+"begin": 1238.056,
+"end": 1244.096,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Paranormal phenomena exist, because I've had experiences that can only be explained by the paranormal.\"",
+"begin": 1244.456,
+"end": 1250.616,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Capital punishment is wrong because it's wrong for the state to execute people.\"",
+"begin": 1251.256,
+"end": 1255.656,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Question-begging epithets: building the conclusion into the description. \"This unjust tax must be repealed.\" \"We must stop this reckless spending.\"",
+"begin": 1256.616,
+"end": 1267.336,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: an argument is supposed to give someone who doubts the conclusion a reason to accept it. If the premises are acceptable only to someone who already accepts the conclusion, the argument gives no such reason.",
+"begin": 1268.216,
+"end": 1281.816,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Note: in everyday English, \"begs the question\" is often used to mean \"raises the question.\" That is a different usage.",
+"begin": 1282.696,
+"end": 1290.696,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: some circularity may be unavoidable at the foundations of knowledge. And a valid argument always \"contains\" its conclusion in a logical sense; what matters is whether the premises can be known independently.",
+"begin": 1291.576,
+"end": 1307.096,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Would someone who doubts your conclusion accept your premise? Why?\"",
+"begin": 1307.576,
+"end": 1313.136,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Loaded question",
+"begin": 1313.656,
+"end": 1314.616,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: A question that presupposes something unproven, so that any direct answer concedes it. Also called the complex question.",
+"begin": 1315.5,
+"end": 1324.7,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples: \"Have you stopped cheating on your exams?\" Yes or no, you admit you cheated. \"Why is the government covering up the truth about this?\" \"How much did the new policy damage the economy?\"",
+"begin": 1325.34,
+"end": 1338.14,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: reject the presupposition. \"I don't accept that I ever cheated.\" \"What's the evidence that there is a cover-up?\"",
+"begin": 1338.78,
+"end": 1346.86,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "False dilemma",
+"begin": 1347.74,
+"end": 1348.62,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Either A or B; not A; therefore B, when A and B are not the only options. Also called a false dichotomy or black-and-white thinking.",
+"begin": 1349.486,
+"end": 1362.046,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1362.366,
+"end": 1363.326,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"You're either with us or against us.\"",
+"begin": 1363.566,
+"end": 1365.646,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Either we ban all cars from the city center, or we accept that our children will breathe toxic air.\"",
+"begin": 1366.126,
+"end": 1371.726,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"If you don't support this bill, you don't care about crime.\"",
+"begin": 1372.206,
+"end": 1375.406,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: disjunctive syllogism is valid, but only if the disjunction is true, meaning the options really are exhaustive.",
+"begin": 1376.206,
+"end": 1385.006,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: some dilemmas are genuine. \"Either p or not-p\" always holds, and some practical choices really do come down to two options.",
+"begin": 1385.726,
+"end": 1395.806,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Are those really the only two options? What about…?\"",
+"begin": 1396.526,
+"end": 1401.726,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Slippery slope",
+"begin": 1401.806,
+"end": 1402.606,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: If we allow A, it will lead to B, which will lead to C, … which will lead to Z — a disaster; therefore we must not allow A.",
+"begin": 1403.481,
+"end": 1414.681,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1415.161,
+"end": 1416.161,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"If we legalize same-day voter registration, next we'll have no voter rolls at all, and then elections will be meaningless.\"",
+"begin": 1416.441,
+"end": 1424.281,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"If we let students redo one test, soon they'll expect to redo every test, and grades will mean nothing.\"",
+"begin": 1424.601,
+"end": 1431.801,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: each step requires a separate justification, and the probability of the whole chain is the product of the probabilities of the steps. A chain of five steps each seventy percent likely has about a seventeen percent chance of going all the way — point seven to the power of five approximately point one seven.",
+"begin": 1431.881,
+"end": 1452.921,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Distinguish kinds of slippery slope argument.",
+"begin": 1453.001,
+"end": 1456.321,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Causal slopes: A will cause B, which will cause C. This is an empirical claim.",
+"begin": 1456.761,
+"end": 1463.241,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Precedent or conceptual slopes: if we allow A, we'll have no principled reason to refuse B, since there is no sharp line between them. This is a claim about vagueness and consistency.",
+"begin": 1464.041,
+"end": 1476.521,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Political or psychological slopes: allowing A will change attitudes or coalitions in a way that makes B more likely.",
+"begin": 1477.401,
+"end": 1485.561,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: slippery slope arguments are not always fallacious. Legal precedents really do get extended; norms really do erode incrementally; Volokh documents real mechanisms. A slippery slope argument is reasonable when it identifies a plausible mechanism for each step and gives evidence that the steps are likely.",
+"begin": 1486.441,
+"end": 1508.881,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"What's the mechanism that gets us from A to B? How likely is each step? Could we stop at A?\"",
+"begin": 1509.321,
+"end": 1516.841,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Hasty generalization",
+"begin": 1517.721,
+"end": 1519.161,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Draw a general conclusion from a sample that is too small or unrepresentative.",
+"begin": 1520.039,
+"end": 1526.199,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples: \"My grandfather smoked all his life and lived to ninety-five, so smoking can't be that bad.\" Also a case of survivorship bias. \"I met two rude people from that city; everyone there is rude.\" \"The first three reviews are negative, so the book must be bad.\"",
+"begin": 1526.439,
+"end": 1544.679,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: see Strength and cogency and The law of small numbers.",
+"begin": 1545.319,
+"end": 1551.039,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Related: the anecdotal fallacy: using a vivid personal experience or story in place of systematic evidence.",
+"begin": 1551.319,
+"end": 1559.439,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"How many cases is that based on? Were they representative? What does the larger data show?\"",
+"begin": 1559.719,
+"end": 1566.359,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Cherry picking",
+"begin": 1566.759,
+"end": 1567.559,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Select only the evidence that supports your conclusion and ignore the evidence against it. Also called suppressed evidence or the fallacy of incomplete evidence.",
+"begin": 1568.444,
+"end": 1580.284,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1580.604,
+"end": 1581.524,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A company advertises the two studies that found its product effective and does not mention the eight that found no effect.",
+"begin": 1581.724,
+"end": 1588.684,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "For several years, a popular argument claimed that \"global warming stopped in nineteen ninety-eight.\" The argument depended on starting the comparison at nineteen ninety-eight, an exceptionally hot year boosted by a strong El Niño. Starting from almost any other year showed a clear warming trend, and later years were substantially hotter than nineteen ninety-eight.",
+"begin": 1589.244,
+"end": 1611.324,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Quoting the one sentence of a report that supports your view.",
+"begin": 1611.404,
+"end": 1615.084,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: evidence has to be weighed as a whole. Bayesian updating requires all relevant evidence.",
+"begin": 1615.404,
+"end": 1622.684,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Is that all the evidence? What do systematic reviews or the full dataset show? Why start from that year?\"",
+"begin": 1623.244,
+"end": 1630.924,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Texas sharpshooter",
+"begin": 1631.884,
+"end": 1633.084,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Find a pattern in data after the fact and treat it as meaningful, ignoring the many data that don't fit. Named after a joke about a Texan who fires at the side of a barn, then paints a target around the tightest cluster of bullet holes and claims to be a sharpshooter.",
+"begin": 1633.959,
+"end": 1651.639,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1652.519,
+"end": 1653.319,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Discovering a \"cancer cluster\" by drawing a boundary around a group of cases after they have occurred. With enough towns and enough diseases, some clusters will occur by chance.",
+"begin": 1653.799,
+"end": 1665.039,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The \"Bible code\": in The Bible Code, Michael Drosnin claimed that hidden predictions of events such as assassinations could be found by reading letters at equal intervals in the Hebrew Bible. The mathematician Brendan McKay applied the same methods to Moby-Dick and found similar \"predictions\" of assassinations.",
+"begin": 1665.559,
+"end": 1684.919,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Noticing that a psychic's vague predictions \"came true\" in hindsight.",
+"begin": 1685.879,
+"end": 1690.199,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: patterns found after searching through data without a prior hypothesis are expected by chance.",
+"begin": 1691.159,
+"end": 1698.759,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Was this pattern predicted before you looked, or found afterwards? How many other patterns could you have found? Does it hold up in new data?\"",
+"begin": 1699.239,
+"end": 1708.439,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Special pleading",
+"begin": 1709.319,
+"end": 1710.199,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Apply a rule or standard to others while exempting yourself or a favored case, without justifying the exception.",
+"begin": 1711.073,
+"end": 1719.393,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1720.033,
+"end": 1720.993,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Conflict-of-interest rules are important, but my situation is different.\"",
+"begin": 1721.233,
+"end": 1725.713,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Psychic abilities can't be demonstrated in controlled tests, because the skeptical atmosphere interferes with them.\" Also an ad hoc hypothesis.",
+"begin": 1726.033,
+"end": 1735.153,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"All the other studies on this treatment are flawed, but the one that supports it is sound.\"",
+"begin": 1735.633,
+"end": 1740.793,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: exceptions are legitimate when they are justified by a relevant difference. The fallacy is exempting something without explaining what makes it different.",
+"begin": 1741.233,
+"end": 1751.873,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"What's the relevant difference that justifies treating this case differently?\"",
+"begin": 1752.193,
+"end": 1757.073,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "No true Scotsman",
+"begin": 1758.033,
+"end": 1759.233,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: When confronted with a counterexample to a generalization about a group, redefine the group to exclude it.",
+"begin": 1760.104,
+"end": 1767.664,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Antony Flew gave the example. Hamish McDonald, a Scotsman, reads a newspaper story about a sex criminal in Brighton and declares, \"No Scotsman would do such a thing.\" The next day he reads about a man from Aberdeen who has done something even worse. Instead of revising his view, he says, \"No true Scotsman would do such a thing.\"",
+"begin": 1767.944,
+"end": 1790.104,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Other examples: \"No real scientist doubts X.\" Defining \"real scientist\" as someone who accepts X. \"Real democracy has never been tried.\"",
+"begin": 1790.904,
+"end": 1802.024,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the generalization becomes true by definition and empty of content.",
+"begin": 1802.824,
+"end": 1808.664,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: some categories do have genuine defining criteria. \"No true vegetarian eats beef\" is not a fallacy, because not eating meat is what \"vegetarian\" means. The question is whether the criterion was part of the concept before the counterexample appeared, or was invented to exclude it.",
+"begin": 1809.384,
+"end": 1830.264,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Was that part of the definition before, or are you adding it now to exclude this case?\"",
+"begin": 1830.664,
+"end": 1837.224,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Moving the goalposts",
+"begin": 1837.864,
+"end": 1839.144,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: After evidence meeting a stated standard is provided, raise the standard.",
+"begin": 1840.013,
+"end": 1845.693,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Example: \"Show me a transitional fossil between fish and land animals.\" Tiktaalik is shown. \"Well, now show me the transitional fossils between Tiktaalik and its ancestors.\" An old joke among paleontologists: every time you find a transitional fossil, you create two new gaps.",
+"begin": 1846.013,
+"end": 1865.453,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Before I show you, tell me what evidence would change your mind.\" Agreeing on the evidentiary standard in advance is the best defense.",
+"begin": 1865.773,
+"end": 1875.573,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Argument from ignorance",
+"begin": 1876.013,
+"end": 1877.453,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: P has not been proven false; therefore P is true. Or: P has not been proven true; therefore P is false. Also called argumentum ad ignorantiam.",
+"begin": 1878.335,
+"end": 1892.335,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 1892.815,
+"end": 1893.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"No one has proven that ghosts don't exist, so they do.\"",
+"begin": 1894.015,
+"end": 1897.615,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"No one has proven this chemical is safe, so it's dangerous.\"",
+"begin": 1897.935,
+"end": 1901.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The argument from incredulity — from personal incredulity: \"I can't imagine how the eye could have evolved, so it didn't.\"",
+"begin": 1902.335,
+"end": 1910.255,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "God of the gaps: \"Science can't explain X, so it must be a divine act.\" Many religious thinkers have criticized this argument too, since the gaps tend to shrink.",
+"begin": 1910.815,
+"end": 1921.775,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: absence of proof isn't proof of absence, in general. And one's inability to imagine something is a fact about one's imagination, not about the world.",
+"begin": 1922.335,
+"end": 1933.615,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousins.",
+"begin": 1934.175,
+"end": 1935.615,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Absence of evidence can be evidence of absence when we would expect to have found evidence if the claim were true. A thorough search that finds no tumor is good evidence there is no tumor. Walton calls this knowledge-based reasoning or the lack-of-knowledge inference: \"If P were true, I would know it; I don't know it; so P is false\" is reasonable when the first premise is.",
+"begin": 1935.855,
+"end": 1960.335,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Procedural presumptions, like the presumption of innocence in criminal law, are not fallacies. They assign the burden of proof for good practical reasons.",
+"begin": 1960.815,
+"end": 1970.095,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"If it were true, would we expect to have found evidence of it by now? Who has the burden of proof here, and why?\"",
+"begin": 1970.655,
+"end": 1978.415,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The middle ground fallacy",
+"begin": 1979.055,
+"end": 1980.495,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: There are two positions, A and B; therefore the truth lies somewhere in between. Also called argument to moderation or the golden mean fallacy.",
+"begin": 1981.362,
+"end": 1993.682,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Example: \"Some say vaccines cause autism, others say they don't. The truth is probably that they cause some autism.\" The evidence strongly supports \"they don't.\"",
+"begin": 1994.002,
+"end": 2005.282,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the truth doesn't depend on where the extremes happen to be. By inventing an extreme position, anyone could shift the \"middle\" toward their view.",
+"begin": 2005.922,
+"end": 2016.162,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousin: compromise is often a good practical solution in negotiation, where the aim is agreement, not truth. And moderate positions often are correct, but because of the evidence for them, not because they are in the middle.",
+"begin": 2016.482,
+"end": 2030.802,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Being in the middle doesn't make a position right. What does the evidence show?\"",
+"begin": 2031.362,
+"end": 2036.722,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "The nirvana fallacy",
+"begin": 2037.362,
+"end": 2038.722,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Reject a realistic option because it is imperfect, by comparing it with an unattainable ideal. Also called the perfect solution fallacy. The term \"nirvana approach\" was introduced by the economist Harold Demsetz, who criticized comparing real institutions with idealized alternatives rather than with other real ones.",
+"begin": 2039.589,
+"end": 2062.629,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 2062.949,
+"end": 2063.949,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Seat belts don't prevent all traffic deaths, so why bother?\"",
+"begin": 2064.229,
+"end": 2068.029,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"This anti-fraud measure won't stop every fraudster, so it's pointless.\"",
+"begin": 2068.309,
+"end": 2072.749,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Science can't give us certainty, so it's no better than any other opinion.\"",
+"begin": 2073.029,
+"end": 2077.109,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the relevant comparison is between the available options, not between an option and perfection.",
+"begin": 2077.749,
+"end": 2084.869,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Compared with what? Is there an alternative that does better?\"",
+"begin": 2085.509,
+"end": 2089.749,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Sunk cost reasoning",
+"begin": 2090.549,
+"end": 2091.829,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Continue a course of action because of what has already been invested — money, time, effort — rather than because of its future prospects.",
+"begin": 2092.695,
+"end": 2102.815,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples: \"We've already spent a billion on this project; we can't stop now.\" \"I've been in this degree program for three years; I can't switch now, even though I hate it.\" \"I paid for the concert ticket, so I'm going even though I'm sick.\"",
+"begin": 2103.095,
+"end": 2118.735,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The biologists Richard Dawkins and Tamsin Carlisle called it the Concorde fallacy, after the supersonic airliner whose British and French government sponsors continued funding it long after it was clear that it would not be commercially viable.",
+"begin": 2119.015,
+"end": 2133.655,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: past costs are gone whatever you decide now. Rational decisions look forward: which option has the best expected future, from here?",
+"begin": 2133.975,
+"end": 2144.615,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousins: the amount already spent can be evidence about how much more will be needed, or about how committed a partner is. Keeping commitments can have value in itself — reputation, trust. And sometimes quitting has costs of its own that must be counted.",
+"begin": 2145.175,
+"end": 2163.175,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Forget what we've already spent. If we were starting today, knowing what we know now, would we choose this?\"",
+"begin": 2163.495,
+"end": 2170.615,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "False analogy",
+"begin": 2171.255,
+"end": 2172.295,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Argue from an analogy between two things that differ in ways relevant to the conclusion. Also called weak analogy.",
+"begin": 2173.179,
+"end": 2181.979,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 2182.299,
+"end": 2183.099,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Employees are like nails: just as nails must be hit on the head to make them work, so must employees.\"",
+"begin": 2183.499,
+"end": 2190.299,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"The government should be run like a household: a household can't keep borrowing, so neither can a government.\" Governments differ from households in relevant ways: they can issue currency, tax, and exist indefinitely. Whether government borrowing is wise is a real question, but the household analogy doesn't settle it.",
+"begin": 2190.859,
+"end": 2211.019,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Evaluating analogies: list the relevant similarities and the relevant differences. Does the conclusion depend on a feature the two cases share, or on one where they differ?",
+"begin": 2211.659,
+"end": 2222.539,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A special case: reductio ad Hitlerum, a term coined by the political philosopher Leo Strauss in nineteen fifty-one. \"Hitler was a vegetarian — or loved dogs, or promoted anti-smoking campaigns; therefore vegetarianism is bad.\" This is guilt by association. The lawyer Mike Godwin formulated Godwin's law: \"As an online discussion grows longer, the probability of a comparison involving Nazis or Hitler approaches one.\"",
+"begin": 2223.259,
+"end": 2254.139,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"In what relevant respects are these cases alike, and in what respects are they different?\"",
+"begin": 2254.779,
+"end": 2261.379,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Accident",
+"begin": 2261.819,
+"end": 2262.219,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Apply a general rule to a case that is an exception the rule was not meant to cover. Also called dicto simpliciter or sweeping generalization.",
+"begin": 2263.092,
+"end": 2274.532,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples: \"Cutting people with knives is a crime. Surgeons cut people with knives. So surgeons are criminals.\" \"Freedom of speech is a right, so I can shout 'Fire!' in a crowded theater as a joke.\"",
+"begin": 2274.852,
+"end": 2288.972,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: most general rules are defeasible; they hold \"other things being equal\" and have exceptions.",
+"begin": 2289.412,
+"end": 2297.492,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Does the reason behind the rule actually apply to this case?\"",
+"begin": 2297.812,
+"end": 2302.372,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Fallacies of ambiguity",
+"begin": 2303.634,
+"end": 2305.474,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "These fallacies exploit unclear language.",
+"begin": 2306.56,
+"end": 2309.6,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Equivocation",
+"begin": 2310.48,
+"end": 2311.28,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Use a word in two different senses within an argument, so that the argument seems valid but isn't.",
+"begin": 2312.15,
+"end": 2319.43,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 2320.23,
+"end": 2321.03,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"The end of a thing is its perfection. Death is the end of life. So death is the perfection of life.\" \"End\" means goal in the first premise and termination in the second.",
+"begin": 2321.59,
+"end": 2334.15,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Evolution is only a theory. A theory is just a guess. So evolution is just a guess.\"",
+"begin": 2335.03,
+"end": 2341.75,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Nothing is better than eternal happiness. A ham sandwich is better than nothing. So a ham sandwich is better than eternal happiness.\"",
+"begin": 2342.63,
+"end": 2351.27,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"The law of gravity is a law; laws require a lawgiver; so gravity requires a lawgiver.\"",
+"begin": 2352.15,
+"end": 2359.35,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"In what sense are you using that word? Does the argument work if we use the same sense throughout?\"",
+"begin": 2360.23,
+"end": 2367.11,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Amphiboly",
+"begin": 2367.75,
+"end": 2368.39,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: An argument that relies on an ambiguity of grammatical structure, rather than of a single word.",
+"begin": 2369.254,
+"end": 2375.894,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Example: According to the historian Herodotus, Histories, King Croesus of Lydia asked the Oracle at Delphi whether he should attack Persia. The Oracle replied that if he did, he would destroy a great empire. He attacked, and destroyed one: his own. More everyday examples appear in contract disputes and in headlines like \"Police Help Dog Bite Victim.\"",
+"begin": 2376.374,
+"end": 2401.574,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Which reading do you mean?\"",
+"begin": 2402.374,
+"end": 2405.214,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Composition and division",
+"begin": 2405.654,
+"end": 2407.254,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Composition: Every part of X has property P; therefore X has P.",
+"begin": 2408.124,
+"end": 2414.124,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Every player on the team is excellent, so the team is excellent.\" They might not play well together.",
+"begin": 2414.684,
+"end": 2420.924,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Each of these expenses is small, so the total is small.\"",
+"begin": 2421.484,
+"end": 2425.524,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Atoms are colorless. Cats are made of atoms. So cats are colorless.\"",
+"begin": 2425.804,
+"end": 2431.604,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Division: X has property P; therefore every part of X has P.",
+"begin": 2432.044,
+"end": 2437.804,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"The university is excellent, so every department in it is excellent.\"",
+"begin": 2438.364,
+"end": 2443.124,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "\"Americans eat more hot dogs than any other nation, so each American must eat a lot of hot dogs.\"",
+"begin": 2443.404,
+"end": 2449.964,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Legitimate cousins: some properties do transfer between parts and wholes. If every brick in a wall is red, the wall is red; if every part of a machine is made of steel, the machine is made of steel. The question is whether the property is one that transfers.",
+"begin": 2450.764,
+"end": 2468.644,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"Is this the kind of property that transfers from parts to whole — or whole to parts?\"",
+"begin": 2469.084,
+"end": 2475.084,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Motte and bailey",
+"begin": 2476.044,
+"end": 2476.924,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Advance a bold, controversial claim — the bailey; when challenged, retreat to a modest, easily defended claim, the motte, and insist that it was what you meant all along; when the challenger goes away, return to the bold claim.",
+"begin": 2477.793,
+"end": 2495.393,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The philosopher Nicholas Shackel named this tactic after a medieval castle design: a motte is a fortified tower on a mound, easy to defend but unpleasant to live in; a bailey is the pleasant, productive, but hard-to-defend land around it. When attackers come, the defenders retreat to the motte; when they leave, they return to the bailey.",
+"begin": 2495.873,
+"end": 2518.033,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 2518.993,
+"end": 2519.793,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Bailey: \"Astrology can predict your future and reveal your personality.\" Motte: \"Astrology is just a tool for self-reflection.\"",
+"begin": 2520.353,
+"end": 2529.753,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Bailey: \"Reality is socially constructed,\" meaning that the facts of physics are created by social agreement. Motte: \"Our concepts and categories are shaped by social factors.\" Shackel's own example.",
+"begin": 2530.193,
+"end": 2544.673,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Bailey: \"This supplement boosts your immune system and prevents illness.\" Motte: \"It contains vitamins that are part of a healthy diet.\"",
+"begin": 2545.313,
+"end": 2554.433,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: the motte is defended, but it is the bailey that does the work in the argument, and the bailey has never been defended.",
+"begin": 2554.913,
+"end": 2563.393,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: \"I agree with the modest claim. But earlier you said something stronger. Are you still claiming that?\" Pin down which claim is actually being defended.",
+"begin": 2563.873,
+"end": 2574.633,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Quoting out of context",
+"begin": 2575.153,
+"end": 2576.513,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: Present a quotation in a way that distorts its meaning by omitting its context. Also called contextomy.",
+"begin": 2577.398,
+"end": 2585.398,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Example: Creationist literature has often quoted Charles Darwin from On the Origin of Species: \"To suppose that the eye with all its inimitable contrivances… could have been formed by natural selection, seems, I freely confess, absurd in the highest possible degree.\" The quotation omits Darwin's next sentences, which explain how the eye could have evolved through gradual steps, each useful to its possessor. Darwin was setting up an apparent difficulty in order to answer it.",
+"begin": 2585.958,
+"end": 2617.758,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Response: find and read the original source.",
+"begin": 2618.198,
+"end": 2621.718,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Causal and statistical fallacies",
+"begin": 2622.981,
+"end": 2625.221,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Post hoc ergo propter hoc",
+"begin": 2626.299,
+"end": 2628.539,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: B happened after A; therefore A caused B. \"After this, therefore because of this.\"",
+"begin": 2629.407,
+"end": 2638.367,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples: \"I wore my lucky socks and we won.\" \"After the new mayor took office, crime fell.\" Perhaps crime was falling nationwide. \"I took this remedy and my cold went away in a week.\"",
+"begin": 2638.687,
+"end": 2651.407,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: many things happen after A. Temporal order is necessary for causation, causes precede effects, but far from sufficient. Colds go away on their own; crime rates fluctuate; see Regression to the mean.",
+"begin": 2652.047,
+"end": 2668.287,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"What would have happened without A? Is there a comparison group?\"",
+"begin": 2668.607,
+"end": 2673.327,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Correlation implies causation",
+"begin": 2673.887,
+"end": 2676.047,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: A and B are correlated; therefore A causes B. Also called cum hoc ergo propter hoc — \"with this, therefore because of this\".",
+"begin": 2676.924,
+"end": 2688.844,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "What goes wrong: correlations can be due to reverse causation, confounding, chance, or selection effects.",
+"begin": 2689.564,
+"end": 2697.324,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Could B cause A? Could something else cause both? Could this be chance? How were the cases selected?\"",
+"begin": 2697.644,
+"end": 2705.644,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Single cause fallacy",
+"begin": 2706.684,
+"end": 2707.804,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Assume that an outcome has one simple cause when it results from several jointly. Also called causal oversimplification.",
+"begin": 2708.611,
+"end": 2718.051,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples: \"The First World War was caused by the assassination of Archduke Franz Ferdinand.\" A trigger, among many causes: alliances, militarism, imperial rivalries, nationalism. \"The reason the company failed was the new CEO.\" \"Obesity is caused by laziness.\"",
+"begin": 2718.691,
+"end": 2739.331,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Is that the only cause, or one among several? What else had to be true for it to have that effect?\"",
+"begin": 2740.051,
+"end": 2747.491,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Base rate fallacy",
+"begin": 2747.971,
+"end": 2749.091,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Ignore the prior probability, base rate, when judging the probability of a specific case.",
+"begin": 2749.962,
+"end": 2757.282,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example: \"The test is ninety percent accurate and I tested positive, so there's a ninety percent chance I have the disease.\"",
+"begin": 2757.642,
+"end": 2765.602,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"How common is the condition in the first place? Let's think about a thousand people…\"",
+"begin": 2765.962,
+"end": 2772.522,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Gambler's fallacy",
+"begin": 2772.562,
+"end": 2773.562,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Believe that past independent random events affect the probability of future ones.",
+"begin": 2774.439,
+"end": 2780.839,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example: \"The roulette wheel has come up red six times in a row, so black is due.\"",
+"begin": 2781.159,
+"end": 2786.679,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Does the wheel remember?\"",
+"begin": 2787.239,
+"end": 2789.879,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Ecological fallacy",
+"begin": 2790.359,
+"end": 2791.639,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Infer facts about individuals from data about groups.",
+"begin": 2792.516,
+"end": 2797.436,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example: In a classic paper, the sociologist W S Robinson showed that across US states in nineteen thirty, the proportion of immigrants was positively correlated with the literacy rate. But at the level of individuals, immigrants were somewhat less likely to be literate than native-born Americans. Immigrants tended to settle in states with higher literacy rates. The group-level correlation said nothing reliable about individuals.",
+"begin": 2797.716,
+"end": 2824.756,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Other examples: \"Richer countries have higher rates of X, so richer people have higher rates of X.\" \"Districts that voted for candidate Y have more gun owners, so gun owners voted for Y.\"",
+"begin": 2825.396,
+"end": 2838.116,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Do we have individual-level data, or only group averages?\"",
+"begin": 2838.676,
+"end": 2843.396,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Survivorship bias",
+"begin": 2844.036,
+"end": 2845.316,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Draw conclusions from the cases that \"survived\" some selection process, ignoring those that didn't.",
+"begin": 2846.198,
+"end": 2853.478,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Examples.",
+"begin": 2853.798,
+"end": 2854.598,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "During the Second World War, the statistician Abraham Wald, working with the Statistical Research Group at Columbia University, analyzed how to protect bombers. A naive approach would add armor where returning planes showed the most bullet holes. Wald's insight, in the version usually told, was that the armor belonged where returning planes had no holes, because planes hit there did not return.",
+"begin": 2855.078,
+"end": 2880.438,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"They don't make things like they used to.\" The old things that survive are the durable ones; the shoddy ones were thrown away long ago.",
+"begin": 2880.918,
+"end": 2888.838,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "\"Bill Gates and Mark Zuckerberg dropped out of college and became billionaires, so dropping out is a good strategy.\" We don't hear about the many dropouts who didn't.",
+"begin": 2889.238,
+"end": 2898.278,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Mutual fund performance statistics that exclude funds that closed because of poor performance make the survivors look better than the average fund was.",
+"begin": 2898.918,
+"end": 2907.318,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"What about the cases we don't see? What happened to the ones that didn't make it?\"",
+"begin": 2908.118,
+"end": 2913.478,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Regression fallacy",
+"begin": 2914.118,
+"end": 2915.238,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Attribute to some intervention a change that is due to regression to the mean.",
+"begin": 2916.101,
+"end": 2921.461,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Example: \"After I scolded the team for its terrible performance, they played much better.\" \"We installed speed cameras at the ten most dangerous intersections, and accidents dropped the next year.\"",
+"begin": 2922.021,
+"end": 2934.261,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Response: \"Were these cases selected because they were extreme? What would we expect to happen with no intervention at all?\"",
+"begin": 2934.901,
+"end": 2942.261,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The prosecutor's fallacy",
+"begin": 2942.581,
+"end": 2943.941,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Pattern: Confuse the probability of the evidence given innocence with the probability of innocence given the evidence.",
+"begin": 2944.81,
+"end": 2952.25,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Rhetorical tactics that corrupt discussion",
+"begin": 2953.509,
+"end": 2956.229,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "These are not always fallacies in the strict sense, they are often not arguments at all, but they undermine honest discussion.",
+"begin": 2957.322,
+"end": 2965.002,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Gish gallop. Named by the anthropologist Eugenie Scott after the creationist debater Duane Gish: overwhelming an opponent with a rapid stream of many weak claims and arguments, none developed, so that the opponent cannot possibly answer them all in the time available. It exploits Brandolini's law. Response: don't try to answer everything. Point out the tactic, select the strongest one or two claims, and refute them thoroughly.",
+"begin": 2965.722,
+"end": 2993.882,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "\"Just asking questions.\" Making insinuations in the form of questions — \"I'm not saying the election was rigged, I'm just asking: why were the results delayed?\" — to suggest claims without taking responsibility for them or bearing the burden of proof. Response: \"What exactly are you suggesting? What's your evidence?\"",
+"begin": 2994.282,
+"end": 3014.002,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sealioning. From a twenty fourteen Wondermark comic by David Malki: persistently and politely demanding evidence and debate, while ignoring answers and showing no real interest in understanding, in order to exhaust the other person. It mimics genuine inquiry. Response: point to answers already given, and disengage if the requests continue in bad faith.",
+"begin": 3014.442,
+"end": 3038.362,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Kafkatrapping. A term coined by the software developer Eric S. Raymond, after Kafka's The Trial: treating the denial of an accusation as proof of guilt. \"Your denial that you're biased just proves how biased you are.\" The claim becomes unfalsifiable. Response: \"What would count as evidence that I'm not?\"",
+"begin": 3039.162,
+"end": 3059.682,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Thought-terminating clichés. A term from the psychiatrist Robert Jay Lifton — Thought Reform and the Psychology of Totalism, nineteen sixty-one — who studied indoctrination: short, catchy phrases that shut down thought and discussion. \"It is what it is.\" \"Everything happens for a reason.\" \"That's just your opinion.\" \"Do your own research.\" \"Trust the process.\" Response: ask what the phrase means in this case, and whether it answers the question.",
+"begin": 3060.122,
+"end": 3089.082,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Deepities. Daniel Dennett's term for a statement that seems profound because it is ambiguous: on one reading it is true but trivial; on another it would be earth-shattering if true, but it is false. Dennett's example: \"Love is just a word.\" True of the word \"love,\" which is a word; false, and profound-sounding, about love itself. Response: separate the two readings and evaluate each.",
+"begin": 3089.962,
+"end": 3117.762,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Proof by assertion — argumentum ad nauseam. Repeating a claim until it is accepted, regardless of contradiction. It exploits the illusory truth effect.",
+"begin": 3118.202,
+"end": 3128.882,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "False balance. Presenting two positions as equally supported when the evidence overwhelmingly favors one.",
+"begin": 3129.322,
+"end": 3136.882,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Shifting the burden of proof. \"Prove me wrong!\"",
+"begin": 3137.322,
+"end": 3140.842,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The Galileo gambit. \"They laughed at Galileo too.\"",
+"begin": 3140.922,
+"end": 3144.682,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The fallacy fallacy",
+"begin": 3145.874,
+"end": 3147.074,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Pattern: The argument for P is fallacious; therefore P is false. Also called the argument from fallacy.",
+"begin": 3148.147,
+"end": 3156.867,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Example: \"You argued that smoking is harmful because your doctor said so, which is an appeal to authority. So smoking isn't harmful.\"",
+"begin": 3157.187,
+"end": 3165.827,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "What goes wrong: a bad argument for a conclusion doesn't make the conclusion false. People often believe true things for bad reasons.",
+"begin": 3166.467,
+"end": 3175.507,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Related misuses of fallacy theory.",
+"begin": 3175.907,
+"end": 3178.547,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fallacy-labeling as a conversation stopper. Naming a fallacy is not an argument. Explain why the move fails in this context.",
+"begin": 3178.867,
+"end": 3187.507,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Mislabeling: calling any appeal to experts \"appeal to authority,\" any mention of an arguer's interests \"ad hominem,\" or any prediction of bad consequences \"slippery slope,\" without checking whether the legitimate cousin applies.",
+"begin": 3188.147,
+"end": 3203.147,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fallacy hunting instead of understanding: looking for fallacies can become a way of avoiding engagement with an argument's strongest form. Steelman first; critique second.",
+"begin": 3203.507,
+"end": 3215.107,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Quick reference table",
+"begin": 3216.379,
+"end": 3217.579,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "The written chapter has a quick-reference table here, listing every fallacy with its pattern and the key question to ask. It's a page worth bookmarking.",
+"begin": 3218.651,
+"end": 3227.771,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Practice: spot the fallacy",
+"begin": 3231.138,
+"end": 3233.458,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Identify the main problem in each passage. Some contain more than one; some may contain a legitimate cousin rather than a fallacy.",
+"begin": 3234.534,
+"end": 3243.734,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question one. \"The mayor says the new bike lanes have reduced accidents, but he's a cyclist himself, so of course he'd say that.\"",
+"begin": 3244.617,
+"end": 3252.937,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Circumstantial ad hominem. His interest is a reason to check the accident data, not a reason to dismiss his claim.",
+"begin": 3258.018,
+"end": 3266.498,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question two. \"We can't ban plastic bags. What's next, banning plastic bottles, then plastic toys, then all plastic? We'll be back in the Stone Age.\"",
+"begin": 3267.37,
+"end": 3278.49,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Slippery slope, without a mechanism or evidence for the steps, ending in hyperbole. Each step would need a separate argument.",
+"begin": 3283.566,
+"end": 3294.126,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question three. \"Thousands of people have been helped by crystal healing. Just read the testimonials.\"",
+"begin": 3295.007,
+"end": 3301.567,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Appeal to popularity and anecdotal evidence, hasty generalization, with survivorship bias, we hear from satisfied customers, and possible post hoc reasoning — people improve for other reasons.",
+"begin": 3306.658,
+"end": 3321.858,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question four. \"Either you support this surveillance program, or you don't care about stopping terrorism.\"",
+"begin": 3322.723,
+"end": 3329.203,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. False dilemma. One can care about stopping terrorism and oppose this particular program — for example, believing it ineffective or too costly to privacy.",
+"begin": 3334.295,
+"end": 3346.615,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question five. \"Nobody has ever shown that this food additive is harmful, so it's perfectly safe.\"",
+"begin": 3347.487,
+"end": 3354.127,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Argument from ignorance, unless it has been well tested. If thorough safety studies have been done and found nothing, the absence of evidence of harm is genuine evidence of safety — the legitimate cousin. The key question is whether it has been properly studied.",
+"begin": 3359.216,
+"end": 3377.456,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question six. \"My opponent says we should consider raising taxes on the highest earners. So he wants to punish success and destroy the economy.\"",
+"begin": 3378.338,
+"end": 3388.498,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Straw man — and loaded language: \"punish success\". The actual proposal was to consider a tax increase on one group.",
+"begin": 3393.567,
+"end": 3403.087,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question seven. \"Ninety-seven percent of climate scientists agree that recent warming is mainly human-caused, so we have strong reason to believe it is.\"",
+"begin": 3403.964,
+"end": 3414.444,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. Not a fallacy: a legitimate appeal to expert consensus in the relevant field. It would still be worth knowing what the evidence is, but the consensus is itself strong evidence for a non-expert.",
+"begin": 3419.533,
+"end": 3433.933,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eight. \"I've had three flights delayed with this airline. It's the worst airline in the world.\"",
+"begin": 3434.815,
+"end": 3441.775,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. Hasty generalization from a tiny sample, with no comparison to other airlines' delay rates.",
+"begin": 3446.857,
+"end": 3453.977,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question nine. \"Critics say our program didn't reduce homelessness. But the critics don't understand that real success can't be measured by numbers.\"",
+"begin": 3454.851,
+"end": 3464.931,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. Possibly moving the goalposts or a motte-and-bailey retreat: the program was presumably promoted as reducing homelessness, a measurable outcome. If success \"can't be measured,\" the claim becomes unfalsifiable. It's legitimate to argue for additional measures of success, but not to abandon the original claim when it fails.",
+"begin": 3470.002,
+"end": 3492.722,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question ten. \"Each ingredient in this cake is delicious, so the cake must be delicious.\"",
+"begin": 3493.59,
+"end": 3500.39,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Composition. Garlic, chocolate, and anchovies may each be delicious.",
+"begin": 3505.476,
+"end": 3512.116,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question eleven. \"After the city introduced the curfew for teenagers, juvenile crime fell by ten percent. The curfew works.\"",
+"begin": 3512.999,
+"end": 3522.359,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Answer. Post hoc. Was crime falling anyway, elsewhere too? Was the curfew introduced after an unusually bad year — regression to the mean? A comparison with similar cities without curfews is needed.",
+"begin": 3527.445,
+"end": 3541.445,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question twelve. \"You can't trust the study showing that the drug works; it was funded by the manufacturer. So the drug doesn't work.\"",
+"begin": 3542.309,
+"end": 3550.789,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's what to notice. The first part is a legitimate reason for caution, conflicts of interest are associated with favorable results, but the conclusion commits the fallacy fallacy combined with ad hominem: the study's funding doesn't show the drug doesn't work. The right conclusion is \"we need independent evidence.\"",
+"begin": 3555.866,
+"end": 3576.986,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question thirteen. \"A: No scientist accepts astrology. B: What about Doctor Smith? She's a physicist and she believes in it. A: Well, no real scientist accepts astrology.\"",
+"begin": 3577.861,
+"end": 3593.061,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "The answer. No true Scotsman. A better reply: \"Some scientists hold unusual views outside their field; what matters is the evidence, and controlled tests of astrology have found no effect.\"",
+"begin": 3598.132,
+"end": 3612.692,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question fourteen. \"We've invested five years and a huge amount of money in this research direction. Abandoning it now would waste all of that.\"",
+"begin": 3613.571,
+"end": 3623.011,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's my answer. Sunk cost reasoning. The question is whether continuing is the best use of future resources. The past investment may be relevant as evidence about the likelihood of success, or about what has been learned.",
+"begin": 3628.095,
+"end": 3642.575,
+"voice": "main"
+},
+{
+"kind": "question",
+"text": "Question fifteen. \"Why are the media ignoring the obvious connection between the new cell towers and the outbreak of headaches in our town?\"",
+"begin": 3643.455,
+"end": 3652.095,
+"voice": "second"
+},
+{
+"kind": "answer",
+"text": "Here's the answer. Loaded question — presupposes an \"obvious connection\" and that the media are \"ignoring\" it — and likely post hoc or Texas sharpshooter — headaches are common; noticing them after the towers went up is expected. The questions to ask: what's the evidence of a connection, and what are the base rates of headaches before and after?",
+"begin": 3657.091,
+"end": 3681.251,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "End of chapter fifteen",
+"begin": 3684.598,
+"end": 3686.278,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter fifteen. The written chapter also has a quick-reference table of every fallacy covered, which is worth bookmarking. In the final chapter, we'll bring everything together into a practical toolkit for analyzing discussions and building arguments of your own.",
+"begin": 3687.367,
+"end": 3703.847,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 5.904,
+"lines": [
+0,
+1
+],
+"request_id": "6MVzdGbIcjL9tdcv0vCp"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 7.131,
+"end": 19.879,
+"lines": [
+1,
+2
+],
+"request_id": "n6h9P6r8WsFri6NjlBWG"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 20.428,
+"end": 23.745,
+"lines": [
+2,
+3
+],
+"request_id": "uyzSy9onCbg1y0NjctKb"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 24.581,
+"end": 27.507,
+"lines": [
+3,
+4
+],
+"request_id": "8cl9JCafcGhWjMBKLC5G"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 28.056,
+"end": 33.123,
+"lines": [
+4,
+5
+],
+"request_id": "9ewuWkRU50aq9u3nWg9B"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 33.959,
+"end": 86.387,
+"lines": [
+5,
+7
+],
+"request_id": "h6T8OSuHt93EomQfI3Cj"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 87.014,
+"end": 117.447,
+"lines": [
+7,
+10
+],
+"request_id": "DbQsUyob3KRYz3ZKAqCT"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 118.674,
+"end": 120.555,
+"lines": [
+10,
+11
+],
+"request_id": "7GbYUxw5LnoUEPjctPf1"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 121.6,
+"end": 267.651,
+"lines": [
+11,
+22
+],
+"request_id": "9kiU38NaqiSEIxq8okVG"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 268.878,
+"end": 270.524,
+"lines": [
+22,
+23
+],
+"request_id": "QDgVwVZRB3xE25Bh0uBL"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 271.569,
+"end": 280.477,
+"lines": [
+23,
+25
+],
+"request_id": "NTY6djAFJC1aCyi9GWUf"
+},
+{
+"chunk": 12,
+"voice": "second",
+"begin": 281.313,
+"end": 403.513,
+"lines": [
+25,
+35
+],
+"request_id": "XxpgL5Zci82o7EZjOFFo"
+},
+{
+"chunk": 13,
+"voice": "second",
+"begin": 404.349,
+"end": 484.389,
+"lines": [
+35,
+42
+],
+"request_id": "fzv0aAeeP8rxhvBhw4sg"
+},
+{
+"chunk": 14,
+"voice": "second",
+"begin": 485.224,
+"end": 585.012,
+"lines": [
+42,
+51
+],
+"request_id": "4GS4fuNeCMkgZtVwm7R2"
+},
+{
+"chunk": 15,
+"voice": "second",
+"begin": 585.848,
+"end": 692.532,
+"lines": [
+51,
+67
+],
+"request_id": "98pKBDCNO3KF2yYwBROS"
+},
+{
+"chunk": 16,
+"voice": "second",
+"begin": 693.368,
+"end": 764.526,
+"lines": [
+67,
+73
+],
+"request_id": "vz8uxHPgOh91Q4NPm4gR"
+},
+{
+"chunk": 17,
+"voice": "second",
+"begin": 765.362,
+"end": 843.886,
+"lines": [
+73,
+78
+],
+"request_id": "zgx884DX3rgn7YKpVITe"
+},
+{
+"chunk": 18,
+"voice": "second",
+"begin": 844.722,
+"end": 928.522,
+"lines": [
+78,
+89
+],
+"request_id": "tuK3ox4Hd6taAr71tKUO"
+},
+{
+"chunk": 19,
+"voice": "second",
+"begin": 929.358,
+"end": 1004.199,
+"lines": [
+89,
+98
+],
+"request_id": "5ctVr2T5UTQRCayPdbZR"
+},
+{
+"chunk": 20,
+"voice": "second",
+"begin": 1005.035,
+"end": 1080.346,
+"lines": [
+98,
+105
+],
+"request_id": "d154ffppEvsOEoYCZNJC"
+},
+{
+"chunk": 21,
+"voice": "second",
+"begin": 1081.182,
+"end": 1118.093,
+"lines": [
+105,
+110
+],
+"request_id": "GBRELe0m8o4ykOLAM6o1"
+},
+{
+"chunk": 22,
+"voice": "second",
+"begin": 1118.929,
+"end": 1128.255,
+"lines": [
+110,
+112
+],
+"request_id": "TESsZ35dQoJXEwqtYMgS"
+},
+{
+"chunk": 23,
+"voice": "third",
+"begin": 1128.647,
+"end": 1134.367,
+"lines": [
+112,
+113
+],
+"request_id": "NVsQvcD8l4u00M5dV3fU"
+},
+{
+"chunk": 24,
+"voice": "second",
+"begin": 1134.759,
+"end": 1164.487,
+"lines": [
+113,
+118
+],
+"request_id": "KviqJXr6m9hEUAAdWDnt"
+},
+{
+"chunk": 25,
+"voice": "second",
+"begin": 1165.322,
+"end": 1214.877,
+"lines": [
+118,
+122
+],
+"request_id": "0g0QE6qzzkqT2KxozvWy"
+},
+{
+"chunk": 26,
+"voice": "main",
+"begin": 1216.104,
+"end": 1217.829,
+"lines": [
+122,
+123
+],
+"request_id": "InSmsRePQaIVbhboHHbl"
+},
+{
+"chunk": 27,
+"voice": "main",
+"begin": 1218.873,
+"end": 1225.3,
+"lines": [
+123,
+125
+],
+"request_id": "jLw49GRN4qkXHYl12vL6"
+},
+{
+"chunk": 28,
+"voice": "main",
+"begin": 1226.136,
+"end": 1314.664,
+"lines": [
+125,
+136
+],
+"request_id": "edam60po733A5Y40Whmb"
+},
+{
+"chunk": 29,
+"voice": "main",
+"begin": 1315.5,
+"end": 1348.65,
+"lines": [
+136,
+140
+],
+"request_id": "YwSKckblmntV5bQO7Cm2"
+},
+{
+"chunk": 30,
+"voice": "main",
+"begin": 1349.486,
+"end": 1402.645,
+"lines": [
+140,
+149
+],
+"request_id": "QXgWX18gIAFQeEVaY7Zr"
+},
+{
+"chunk": 31,
+"voice": "main",
+"begin": 1403.481,
+"end": 1519.203,
+"lines": [
+149,
+161
+],
+"request_id": "CGz3eUyrs9KV97RITnuV"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1520.039,
+"end": 1567.608,
+"lines": [
+161,
+167
+],
+"request_id": "XzTI6jHAn9spDR0YioaY"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1568.444,
+"end": 1633.123,
+"lines": [
+167,
+175
+],
+"request_id": "CrXvhKFIpSGYOwj8IeV9"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 1633.959,
+"end": 1710.237,
+"lines": [
+175,
+183
+],
+"request_id": "qdoVhjZnkdO4MzhSxTo9"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 1711.073,
+"end": 1759.269,
+"lines": [
+183,
+191
+],
+"request_id": "tCytQHIPm3Qoiut8F4GV"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1760.104,
+"end": 1839.177,
+"lines": [
+191,
+198
+],
+"request_id": "9OJogDsKpLSFom7w6qrt"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 1840.013,
+"end": 1877.499,
+"lines": [
+198,
+202
+],
+"request_id": "8Wa67GXrWCCcYirGBgDB"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 1878.335,
+"end": 1980.526,
+"lines": [
+202,
+214
+],
+"request_id": "aokGPEFZ9gS0H6r4rgyc"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 1981.362,
+"end": 2038.753,
+"lines": [
+214,
+220
+],
+"request_id": "pNVYHrmWtL5P8HR54ghb"
+},
+{
+"chunk": 40,
+"voice": "main",
+"begin": 2039.589,
+"end": 2091.86,
+"lines": [
+220,
+228
+],
+"request_id": "FoKp2XJMtSPRn2ABnKWr"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 2092.695,
+"end": 2172.343,
+"lines": [
+228,
+235
+],
+"request_id": "jaBFjGrEdIFSTBX6r7jb"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 2173.179,
+"end": 2262.256,
+"lines": [
+235,
+243
+],
+"request_id": "y85rXqnflUQVGkulv2Te"
+},
+{
+"chunk": 43,
+"voice": "main",
+"begin": 2263.092,
+"end": 2302.407,
+"lines": [
+243,
+247
+],
+"request_id": "6FG79oc3VkKiha6nrsjp"
+},
+{
+"chunk": 44,
+"voice": "main",
+"begin": 2303.634,
+"end": 2305.515,
+"lines": [
+247,
+248
+],
+"request_id": "A58Fk5UXGHG7pC7MNrGY"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 2306.56,
+"end": 2311.314,
+"lines": [
+248,
+250
+],
+"request_id": "msnNmlfSNWdxXSPovcpv"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 2312.15,
+"end": 2368.418,
+"lines": [
+250,
+258
+],
+"request_id": "hP00xXur9X4VsF4zICLg"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 2369.254,
+"end": 2407.288,
+"lines": [
+258,
+262
+],
+"request_id": "hAGbqGQ1soBJ17NvHccb"
+},
+{
+"chunk": 48,
+"voice": "main",
+"begin": 2408.124,
+"end": 2476.957,
+"lines": [
+262,
+272
+],
+"request_id": "H55Lu91mX4tC2MJJiz0R"
+},
+{
+"chunk": 49,
+"voice": "main",
+"begin": 2477.793,
+"end": 2576.562,
+"lines": [
+272,
+281
+],
+"request_id": "EelDtWAvbgJZ8V7KCSHM"
+},
+{
+"chunk": 50,
+"voice": "main",
+"begin": 2577.398,
+"end": 2621.753,
+"lines": [
+281,
+284
+],
+"request_id": "75HZ0Q7T4zGThJKXvLJI"
+},
+{
+"chunk": 51,
+"voice": "second",
+"begin": 2622.981,
+"end": 2625.254,
+"lines": [
+284,
+285
+],
+"request_id": "pNptRvX2IpR3tyqOBMcI"
+},
+{
+"chunk": 52,
+"voice": "second",
+"begin": 2626.299,
+"end": 2628.571,
+"lines": [
+285,
+286
+],
+"request_id": "r9WjOmSUsJ8RPdsiEHV2"
+},
+{
+"chunk": 53,
+"voice": "second",
+"begin": 2629.407,
+"end": 2676.088,
+"lines": [
+286,
+291
+],
+"request_id": "gKtQv96Us2ZhcX4zjlXm"
+},
+{
+"chunk": 54,
+"voice": "second",
+"begin": 2676.924,
+"end": 2707.775,
+"lines": [
+291,
+295
+],
+"request_id": "vL0QFOFWxAhWAC61QeNL"
+},
+{
+"chunk": 55,
+"voice": "second",
+"begin": 2708.611,
+"end": 2749.127,
+"lines": [
+295,
+299
+],
+"request_id": "w9fSy3KW7V1WZcDMEZqs"
+},
+{
+"chunk": 56,
+"voice": "second",
+"begin": 2749.962,
+"end": 2773.603,
+"lines": [
+299,
+303
+],
+"request_id": "BKOBjTV6j5RyrUWW3WPu"
+},
+{
+"chunk": 57,
+"voice": "second",
+"begin": 2774.439,
+"end": 2791.68,
+"lines": [
+303,
+307
+],
+"request_id": "Tr6NhmYGfdtwl6h5DUlA"
+},
+{
+"chunk": 58,
+"voice": "second",
+"begin": 2792.516,
+"end": 2845.362,
+"lines": [
+307,
+312
+],
+"request_id": "Voxy7yFKo59Xoe1USpwQ"
+},
+{
+"chunk": 59,
+"voice": "second",
+"begin": 2846.198,
+"end": 2915.265,
+"lines": [
+312,
+320
+],
+"request_id": "b85vn1Qzb01mzK9PxTUR"
+},
+{
+"chunk": 60,
+"voice": "second",
+"begin": 2916.101,
+"end": 2943.974,
+"lines": [
+320,
+324
+],
+"request_id": "OhgGrASI064X27bzPF2c"
+},
+{
+"chunk": 61,
+"voice": "second",
+"begin": 2944.81,
+"end": 2952.281,
+"lines": [
+324,
+325
+],
+"request_id": "Bwwyth8NNFcJL0LRE6Lt"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 2953.509,
+"end": 2956.278,
+"lines": [
+325,
+326
+],
+"request_id": "TDNkHkYnmPaDpbogZlzv"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 2957.322,
+"end": 3144.647,
+"lines": [
+326,
+337
+],
+"request_id": "Ib0gZbaxPji1I1UTAIAU"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3145.874,
+"end": 3147.102,
+"lines": [
+337,
+338
+],
+"request_id": "cwEsxaKP47FqQuEFsHZx"
+},
+{
+"chunk": 65,
+"voice": "main",
+"begin": 3148.147,
+"end": 3215.151,
+"lines": [
+338,
+345
+],
+"request_id": "mNHDyPlpzIDJo1rKqEM2"
+},
+{
+"chunk": 66,
+"voice": "second",
+"begin": 3216.379,
+"end": 3217.607,
+"lines": [
+345,
+346
+],
+"request_id": "KAMuf5wE06fWKE1ddQVk"
+},
+{
+"chunk": 67,
+"voice": "second",
+"begin": 3218.651,
+"end": 3227.82,
+"lines": [
+346,
+347
+],
+"request_id": "hQarG8zRqOpDGaW0kt1h"
+},
+{
+"chunk": 68,
+"voice": "main",
+"begin": 3231.138,
+"end": 3233.489,
+"lines": [
+347,
+348
+],
+"request_id": "Kis358SjBTdNyay1BnOJ"
+},
+{
+"chunk": 69,
+"voice": "main",
+"begin": 3234.534,
+"end": 3243.781,
+"lines": [
+348,
+349
+],
+"request_id": "FJtBkKLYWCrnqfIlF5SA"
+},
+{
+"chunk": 70,
+"voice": "second",
+"begin": 3244.617,
+"end": 3252.976,
+"lines": [
+349,
+350
+],
+"request_id": "VA0qNMTRCtgenxdj3VN9"
+},
+{
+"chunk": 71,
+"voice": "main",
+"begin": 3258.018,
+"end": 3266.534,
+"lines": [
+350,
+351
+],
+"request_id": "ZfD49jMevWiOuKSg0RxD"
+},
+{
+"chunk": 72,
+"voice": "second",
+"begin": 3267.37,
+"end": 3278.524,
+"lines": [
+351,
+352
+],
+"request_id": "goEfufuNp6i3aHx5Nzzw"
+},
+{
+"chunk": 73,
+"voice": "main",
+"begin": 3283.566,
+"end": 3294.171,
+"lines": [
+352,
+353
+],
+"request_id": "J4Rrpv1J9iCA3KXbFyEl"
+},
+{
+"chunk": 74,
+"voice": "second",
+"begin": 3295.007,
+"end": 3301.616,
+"lines": [
+353,
+354
+],
+"request_id": "TeYO7WfBqp9psHjf9A7z"
+},
+{
+"chunk": 75,
+"voice": "main",
+"begin": 3306.658,
+"end": 3321.887,
+"lines": [
+354,
+355
+],
+"request_id": "BAyuJE7tAu47zyXGCrUh"
+},
+{
+"chunk": 76,
+"voice": "second",
+"begin": 3322.723,
+"end": 3329.254,
+"lines": [
+355,
+356
+],
+"request_id": "qNsoWIGxf49XQe5N0ftT"
+},
+{
+"chunk": 77,
+"voice": "main",
+"begin": 3334.295,
+"end": 3346.651,
+"lines": [
+356,
+357
+],
+"request_id": "RCMwAJ3TAnhkwBCpIfbJ"
+},
+{
+"chunk": 78,
+"voice": "second",
+"begin": 3347.487,
+"end": 3354.175,
+"lines": [
+357,
+358
+],
+"request_id": "6akp5XcECWngeEN7QBP1"
+},
+{
+"chunk": 79,
+"voice": "main",
+"begin": 3359.216,
+"end": 3377.502,
+"lines": [
+358,
+359
+],
+"request_id": "gZrTUHq6vBAf0qGxB232"
+},
+{
+"chunk": 80,
+"voice": "second",
+"begin": 3378.338,
+"end": 3388.526,
+"lines": [
+359,
+360
+],
+"request_id": "R1wDHau3x7QPFxLkdKG2"
+},
+{
+"chunk": 81,
+"voice": "main",
+"begin": 3393.567,
+"end": 3403.128,
+"lines": [
+360,
+361
+],
+"request_id": "Cy9wotZkxoozFlzzYdcZ"
+},
+{
+"chunk": 82,
+"voice": "second",
+"begin": 3403.964,
+"end": 3414.491,
+"lines": [
+361,
+362
+],
+"request_id": "p92U47q9ZXvFFiNzkTSE"
+},
+{
+"chunk": 83,
+"voice": "main",
+"begin": 3419.533,
+"end": 3433.979,
+"lines": [
+362,
+363
+],
+"request_id": "XV5nJwe6vJ9PTjgDmtAR"
+},
+{
+"chunk": 84,
+"voice": "second",
+"begin": 3434.815,
+"end": 3441.815,
+"lines": [
+363,
+364
+],
+"request_id": "fuSJidKohiUX6SCc3HyM"
+},
+{
+"chunk": 85,
+"voice": "main",
+"begin": 3446.857,
+"end": 3454.015,
+"lines": [
+364,
+365
+],
+"request_id": "UGnwsVII6YybRpbuHysm"
+},
+{
+"chunk": 86,
+"voice": "second",
+"begin": 3454.851,
+"end": 3464.96,
+"lines": [
+365,
+366
+],
+"request_id": "Ukf2dHhJqK0hKUaMPexv"
+},
+{
+"chunk": 87,
+"voice": "main",
+"begin": 3470.002,
+"end": 3492.754,
+"lines": [
+366,
+367
+],
+"request_id": "r9Z1BkdHhOoApGBFgp7P"
+},
+{
+"chunk": 88,
+"voice": "second",
+"begin": 3493.59,
+"end": 3500.434,
+"lines": [
+367,
+368
+],
+"request_id": "PnGfUmR4gBsznp99UihT"
+},
+{
+"chunk": 89,
+"voice": "main",
+"begin": 3505.476,
+"end": 3512.163,
+"lines": [
+368,
+369
+],
+"request_id": "OPGwGr9TD4CPwNWa519s"
+},
+{
+"chunk": 90,
+"voice": "second",
+"begin": 3512.999,
+"end": 3522.403,
+"lines": [
+369,
+370
+],
+"request_id": "cNJMK0OfFt7ivTRUqkPN"
+},
+{
+"chunk": 91,
+"voice": "main",
+"begin": 3527.445,
+"end": 3541.473,
+"lines": [
+370,
+371
+],
+"request_id": "VT34KUpjN5hfFzG730qS"
+},
+{
+"chunk": 92,
+"voice": "second",
+"begin": 3542.309,
+"end": 3550.824,
+"lines": [
+371,
+372
+],
+"request_id": "7eZbvBFmtpZTfRUd9VN3"
+},
+{
+"chunk": 93,
+"voice": "main",
+"begin": 3555.866,
+"end": 3577.025,
+"lines": [
+372,
+373
+],
+"request_id": "UNhpfaciDbDsQq1UoVPb"
+},
+{
+"chunk": 94,
+"voice": "second",
+"begin": 3577.861,
+"end": 3593.091,
+"lines": [
+373,
+374
+],
+"request_id": "2HaforpiE5cXYUn5AMfy"
+},
+{
+"chunk": 95,
+"voice": "main",
+"begin": 3598.132,
+"end": 3612.735,
+"lines": [
+374,
+375
+],
+"request_id": "FjAre8x8TB9PH9W5NnCM"
+},
+{
+"chunk": 96,
+"voice": "second",
+"begin": 3613.571,
+"end": 3623.053,
+"lines": [
+375,
+376
+],
+"request_id": "oW0a0Qm2iJYJ5AF8PcWa"
+},
+{
+"chunk": 97,
+"voice": "main",
+"begin": 3628.095,
+"end": 3642.619,
+"lines": [
+376,
+377
+],
+"request_id": "hvFsJXEX9ksP8421ogCj"
+},
+{
+"chunk": 98,
+"voice": "second",
+"begin": 3643.455,
+"end": 3652.049,
+"lines": [
+377,
+378
+],
+"request_id": "zI7IeprSMnqi5sN6Odcq"
+},
+{
+"chunk": 99,
+"voice": "main",
+"begin": 3657.091,
+"end": 3681.28,
+"lines": [
+378,
+379
+],
+"request_id": "rkSF6GxNjIonRwyYXLti"
+},
+{
+"chunk": 100,
+"voice": "main",
+"begin": 3684.598,
+"end": 3686.322,
+"lines": [
+379,
+380
+],
+"request_id": "NAy0jzJD2tdaulpwX4XW"
+},
+{
+"chunk": 101,
+"voice": "main",
+"begin": 3687.367,
+"end": 3703.798,
+"lines": [
+380,
+381
+],
+"request_id": "ZmYLiK1J5gHK1OcDMW3w"
+}
+]
+}

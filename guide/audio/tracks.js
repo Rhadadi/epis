@@ -1012,7 +1012,7 @@ window.TRACKS = [
   "file": "15-fallacies.mp3",
   "text": "../15-fallacies.md",
   "title": "Chapter 15 — A Field Guide to Fallacies",
-  "duration": 3417.6,
+  "duration": 3705.4,
   "sections": [
    {
     "title": "Chapter fifteen. A Field Guide to Fallacies.",
@@ -1020,43 +1020,43 @@ window.TRACKS = [
    },
    {
     "title": "How to use this field guide",
-    "start": 110.8
+    "start": 118.6
    },
    {
     "title": "Fallacies of relevance",
-    "start": 251.2
+    "start": 268.9
    },
    {
     "title": "Fallacies of presumption",
-    "start": 1121.0
+    "start": 1216.1
    },
    {
     "title": "Fallacies of ambiguity",
-    "start": 2123.5
+    "start": 2303.6
    },
    {
     "title": "Causal and statistical fallacies",
-    "start": 2405.3
+    "start": 2623.0
    },
    {
     "title": "Rhetorical tactics that corrupt discussion",
-    "start": 2712.8
+    "start": 2953.5
    },
    {
     "title": "The fallacy fallacy",
-    "start": 2889.6
+    "start": 3145.8
    },
    {
     "title": "Quick reference table",
-    "start": 2956.6
+    "start": 3216.4
    },
    {
     "title": "Practice: spot the fallacy",
-    "start": 2971.4
+    "start": 3228.8
    },
    {
     "title": "End of chapter fifteen",
-    "start": 3394.2
+    "start": 3682.3
    }
   ]
  },
