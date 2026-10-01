@@ -1076,3 +1076,28 @@ html[dir="rtl"] .mnav{right:auto;left:8px}
 .ra-text .v3{border-inline-start:3px dotted color-mix(in srgb,var(--ink-2) 50%,transparent);padding-inline-start:10px}
 .ra-foot{color:var(--dim);font-size:.9rem;margin-top:30px}
 .listen .epub-note{margin:4px 2px 0;font-family:var(--sans);font-size:.8rem;color:var(--dim)}
+
+/* ---------------------------------------------------------------- scholarly companions */
+.sch-link{margin:1.4em 0 0;font-family:var(--sans);font-size:.88rem}
+.sch-link a{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--rule-2);border-radius:999px;
+  color:var(--ink-2);text-decoration:none;background:var(--surface)}
+.sch-link a::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.sch-link a:hover{border-color:var(--accent);color:var(--ink)}
+.sch-back{margin:-.4em 0 1.2em;font-family:var(--sans);font-size:.86rem}
+.sch-back a{color:var(--dim);text-decoration:none}.sch-back a:hover{color:var(--ink)}
+.sch-status{font-family:var(--sans);font-size:.88rem;color:var(--dim);margin:0 0 22px}
+.sch-status.draft{padding:10px 14px;border:1px dashed var(--accent);border-radius:10px;color:var(--ink-2)}
+sup.cite{font-family:var(--sans);font-size:.7em;line-height:0;margin-inline-start:1px}
+sup.cite a{text-decoration:none;color:var(--accent);font-weight:600}
+.sch-apparatus{margin:1.6em 0 0;padding:14px 18px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.86rem;line-height:1.55;color:var(--ink-2)}
+.prose .sch-apparatus h3.sch-ap{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:.4em 0 .5em;font-weight:500}
+.sch-notes,.sch-refs{margin:0 0 .8em;padding-inline-start:1.6em}
+.sch-notes li,.sch-refs li{margin:.25em 0}
+.sch-notes .back{text-decoration:none;color:var(--dim)}
+.sch-refs{list-style:none;padding-inline-start:0}
+.sch-refs li{padding-inline-start:1.4em;text-indent:-1.4em}
+.sch-refs .ann{display:block;text-indent:0;color:var(--dim);font-style:italic;margin-top:2px}
+.sch-refs.biblio{font-family:var(--sans);font-size:.9rem;line-height:1.55}
+.sch-refs li:target,.sch-notes li:target{background:var(--accent-wash);border-radius:6px}
+.sch-index{list-style:none;padding:0;font-family:var(--sans);font-size:1.05rem}
+.sch-index li{padding:10px 0;border-bottom:1px solid var(--rule)}

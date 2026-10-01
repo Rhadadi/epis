@@ -1,0 +1,26 @@
+{
+  "gettier1963": {
+    "type": "article",
+    "authors": ["Gettier, Edmund L."],
+    "year": 1963,
+    "title": "Is Justified True Belief Knowledge?",
+    "container": "Analysis",
+    "volume": "23",
+    "issue": "6",
+    "pages": "121–23",
+    "doi": "10.1093/analys/23.6.121",
+    "access": "subscription",
+    "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "russell1912": {
+    "type": "book",
+    "authors": ["Russell, Bertrand"],
+    "year": 1912,
+    "title": "The Problems of Philosophy",
+    "place": "London",
+    "publisher": "Williams and Norgate",
+    "url": "https://www.gutenberg.org/ebooks/5827",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #5827, full text, 2026-10-01"
+  }
+}

@@ -818,6 +818,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
             return f'<p id="{gid}" class="gterm"><strong>{m.group(1)}.</strong>' if gid else m.group(0)
         body = re.sub(r"<p><strong>(.+?)\.</strong>", gterm, body)
     collect_sections(ch, body)
+    body = scholarly_links(ch, body)
 
     more_quotes = "".join(
         f'<blockquote class="quote"><p>{md.inline(q)}</p><span class="by">— {md.inline(c)}</span></blockquote>'
@@ -2177,6 +2178,7 @@ def build_offline_list():
         paths += sorted(f"{base}concepts/{p.name}" for p in (ROOT / base / "concepts").glob("*.html"))
     for base in ("", "fa/"):
         paths += sorted(f"{base}guide/listen/{p.name}" for p in (ROOT / base / "guide" / "listen").glob("*.html"))
+    paths += sorted(f"scholarly/{p.name}" for p in (ROOT / "scholarly").glob("*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
@@ -2363,6 +2365,277 @@ def build_epub(chapters, art):
         for name, page in docs:
             add(z, f"OEBPS/{name}", page)
     return out
+
+
+# ----------------------------------------------------------------------------- scholarly companions
+
+# A second, scholarly layer beside the chapters, kept apart from them: the narrated chapters (guide/NN-*.md and
+# their audio) are frozen, and each companion (scholarly/src/NN-*.md) follows its chapter's sections by their
+# ids, with extended discussion, the scholarly debate, numbered notes and sources. The chapter page gets a
+# link at the end of each section that has a companion section; the link is added here, never in the Markdown.
+SCHOLARLY = ROOT / "scholarly"
+SCHOLARLY_DRAFTS = os.environ.get("EPIS_SCHOLARLY_DRAFTS") == "1"  # build drafts too, for a local preview
+COMPANIONS = {}  # chapter slug -> companion (English only)
+NOT_SUBSTANTIVE = {"in-this-chapter", "check-your-understanding", "further-reading"}
+CITE = re.compile(r"\[(@[^\[\]]+)\]")
+
+
+def read_front_matter(text):
+    meta = {}
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        return meta, text
+    for line in m.group(1).splitlines():
+        k, _, v = line.partition(":")
+        meta[k.strip()] = v.strip()
+    return meta, text[m.end():]
+
+
+def load_companions(md):
+    """The companions in scholarly/src/. A draft is built only with EPIS_SCHOLARLY_DRAFTS=1, so the live
+    site shows nothing of a companion until its front matter says status: published."""
+    COMPANIONS.clear()
+    for p in sorted((SCHOLARLY / "src").glob("[01][0-9]-*.md")):
+        meta, text = read_front_matter(p.read_text(encoding="utf-8"))
+        if meta.get("status") != "published" and not SCHOLARLY_DRAFTS:
+            continue
+        _, heads = md.render(CITE.sub("", text), lambda h: h)
+        COMPANIONS[p.stem] = {"meta": meta, "text": text, "path": p, "sections": [h[1] for h in heads if h[0] == 2]}
+
+
+def scholarly_links(ch, body):
+    """After each chapter section that has a companion section, a small link to it."""
+    comp = COMPANIONS.get(ch.slug) if LANG == "en" else None
+    if not comp:
+        return body
+    parts = re.split(r'(?=<h2 id=")', body)
+    for i, part in enumerate(parts):
+        m = re.match(r'<h2 id="([^"]+)"', part)
+        if m and m.group(1) in comp["sections"]:
+            parts[i] = (part.rstrip() + f'\n<p class="sch-link"><a href="../scholarly/{ch.slug}.html#{m.group(1)}">'
+                        f'<span>Scholarly discussion &amp; sources</span> <span aria-hidden="true">→</span></a></p>\n')
+    return "".join(parts)
+
+
+def scholarly_data():
+    """The shared bibliography (scholarly/data/sources.json)."""
+    p = SCHOLARLY / "data" / "sources.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def family(name):
+    return name.split(",")[0].strip() if "," in name else name.split()[-1]
+
+
+def short_cite(src):
+    names = src.get("authors") or src.get("editors") or [src.get("org", "")]
+    who = (family(names[0]) if len(names) == 1 else f"{family(names[0])} and {family(names[1])}" if len(names) == 2
+           else f"{family(names[0])} et al.")
+    return f"{who} {src.get('year', 'n.d.')}"
+
+
+def full_ref(src):
+    """A reference in author-date style, with its DOI, ISBN or stable link."""
+    x = html.escape
+    names = src.get("authors") or []
+    def name_list(ns, first_inverted=True):
+        out = [n if (i == 0 and first_inverted) or "," not in n else " ".join(reversed([t.strip() for t in n.split(",", 1)]))
+               for i, n in enumerate(ns)]
+        return out[0] if len(out) == 1 else ", ".join(out[:-1]) + (", and " if len(out) > 2 else " and ") + out[-1]
+    who = name_list(names) if names else src.get("org", "")
+    year = str(src.get("year", "n.d."))
+    if src.get("original_year"):
+        year = f"[{src['original_year']}] {year}"
+    t, title, cont = src.get("type", "book"), x(src.get("title", "")), x(src.get("container", ""))
+    eds = name_list(src["editors"], first_inverted=False) if src.get("editors") else ""
+    trans = f" Translated by {x(src['translator'])}." if src.get("translator") else ""
+    pub = ": ".join(v for v in (x(src.get("place", "")), x(src.get("publisher", ""))) if v)
+    pub = pub + "." if pub else ""
+    if t == "article":
+        vol = x(str(src.get("volume", "")))
+        vol += f" ({x(str(src['issue']))})" if src.get("issue") else ""
+        body = f"“{title}.” <i>{cont}</i> {vol}" + (f": {x(src['pages'])}" if src.get("pages") else "") + "."
+    elif t in ("chapter", "entry"):
+        body = (f"“{title}.” In <i>{cont}</i>" + (f", {x(src['edition'])}" if src.get("edition") else "")
+                + (f", edited by {x(eds)}" if eds else "") + (f", {x(src['pages'])}" if src.get("pages") else "") + "."
+                + (f" {pub}" if pub else ""))
+    else:
+        body = f"<i>{title}</i>." + (f" {x(src['edition'])}." if src.get("edition") else "") + trans + (f" {pub}" if pub else "")
+    ids = []
+    if src.get("doi"):
+        ids.append(f'<a href="https://doi.org/{x(src["doi"])}">doi:{x(src["doi"])}</a>')
+    if src.get("isbn"):
+        ids.append(f"ISBN {x(src['isbn'])}")
+    if src.get("url"):
+        label = {"open-access": "Full text (open access)", "public-domain": "Full text (public domain)"}.get(src.get("access"), "Stable link")
+        ids.append(f'<a href="{x(src["url"])}">{label}</a>')
+    return f"{x(who).rstrip('.')}. {year}. {body}" + (" " + " · ".join(ids) if ids else "")
+
+
+def companion_problems(ch, comp, chapter_heads, sources, prov):
+    """Everything wrong with a companion: sections that are not the chapter's, citations of unknown or
+    unverifiable sources, and (once published) claims without provenance."""
+    errs = []
+    h2 = [h[1] for h in chapter_heads if h[0] == 2]
+    for sid in comp["sections"]:
+        if sid not in h2:
+            errs.append(f"section #{sid} is not a section of the chapter")
+        elif sid in NOT_SUBSTANTIVE:
+            errs.append(f"section #{sid} is not a substantive section")
+    if len(set(comp["sections"])) != len(comp["sections"]):
+        errs.append("a section appears twice")
+    cited = {}
+    for chunk in re.split(r"(?m)^(?=## )", comp["text"]):
+        m = re.match(r"## (.+)", chunk)
+        sid = github_slug(CITE.sub("", m.group(1)), {}) if m else ""
+        for c in CITE.finditer(chunk):
+            for part in c.group(1).split(";"):
+                km = re.match(r"\s*@([\w:.-]+)", part)
+                if not km:
+                    errs.append(f"malformed citation [{c.group(1)}]")
+                    continue
+                cited.setdefault(sid, []).append(km.group(1))
+    for sid, keys in cited.items():
+        for k in keys:
+            src = sources.get(k)
+            if not src:
+                errs.append(f"#{sid}: unknown source @{k}")
+            elif not (src.get("doi") or src.get("isbn") or src.get("url")):
+                errs.append(f"@{k}: no DOI, ISBN or stable link")
+            elif not src.get("verified"):
+                errs.append(f"@{k}: bibliographic details not marked as verified")
+    if comp["meta"].get("status") == "published":
+        secs = (prov or {}).get("sections", {})
+        for sid in comp["sections"]:
+            if sid not in secs:
+                errs.append(f"#{sid}: no provenance record")
+        for sid in secs:
+            if sid not in comp["sections"]:
+                errs.append(f"provenance for #{sid}, which the companion does not have")
+        for sid, keys in cited.items():
+            have = {s.get("key"): s for s in secs.get(sid, {}).get("sources", [])}
+            for k in dict.fromkeys(keys):
+                if k not in have or not have[k].get("evidence"):
+                    errs.append(f"#{sid}: @{k} is cited without evidence in the provenance record")
+    return errs
+
+
+def companion_body(ch, comp, md, sources, prov, root):
+    """The companion page: its sections with numbered notes, each followed by its notes and sources."""
+    groups = []
+    def mark(m):
+        items = []
+        for part in m.group(1).split(";"):
+            km = re.match(r"\s*@([\w:.-]+)\s*(?:,\s*(.+?))?\s*$", part)
+            if km:
+                items.append((km.group(1), (km.group(2) or "").strip()))
+        groups.append(items)
+        return f"CITEMARK{len(groups) - 1}Z"
+    text = re.sub(r"[ \t]*" + CITE.pattern, mark, comp["text"])  # a note number sits right after the word
+    def rewrite(href):
+        m = re.match(r"^(\d\d-[\w-]+)\.md(#.*)?$", href)
+        return f"../guide/{m.group(1)}.html{m.group(2) or ''}" if m else href
+    body, heads = md.render(text, rewrite)
+    body = polish(body)
+    notes_n, all_keys = 0, []
+    annotations = {}
+    for sid, sec in ((prov or {}).get("sections") or {}).items():
+        for s in sec.get("sources", []):
+            if s.get("annotation"):
+                annotations[(sid, s["key"])] = s["annotation"]
+    out = []
+    for part in re.split(r'(?=<h2 id=")', body):
+        m = re.match(r'<h2 id="([^"]+)">(.*?)</h2>', part, re.S)
+        sid = m.group(1) if m else ""
+        notes, keys = [], []
+        def cite(mm):
+            nonlocal notes_n
+            items = groups[int(mm.group(1))]
+            notes_n += 1
+            n = notes_n
+            bits = []
+            for k, loc in items:
+                if k not in keys:
+                    keys.append(k)
+                src = sources.get(k, {"title": f"[unknown source {k}]"})
+                bits.append(f'<a href="#src-{sid or "intro"}-{k}">{html.escape(short_cite(src))}</a>' + (f", {html.escape(loc)}" if loc else ""))
+            notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="Back to the text">↩</a></li>')
+            return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="Note {n}">{n}</a></sup>'
+        part = re.sub(r"CITEMARK(\d+)Z", cite, part)
+        if m:
+            part = part.replace(m.group(0), f'<h2 id="{sid}"><span class="ht">{m.group(2)}</span></h2>'
+                                f'<p class="sch-back"><a href="../guide/{ch.href}#{sid}"><span aria-hidden="true">←</span> This section in the chapter</a></p>', 1)
+        if notes:
+            refs = "".join(f'<li id="src-{sid or "intro"}-{k}">{full_ref(sources.get(k, {"title": k}))}'
+                           + (f'<span class="ann">{html.escape(annotations[(sid, k)])}</span>' if (sid, k) in annotations else "") + "</li>"
+                           for k in keys)
+            part = (part.rstrip() + f'<div class="sch-apparatus"><h3 class="sch-ap">Notes</h3><ol class="sch-notes">{"".join(notes)}</ol>'
+                    f'<h3 class="sch-ap">Sources for this section</h3><ul class="sch-refs">{refs}</ul></div>')
+        all_keys += [k for k in keys if k not in all_keys]
+        out.append(part)
+    biblio = ""
+    if all_keys:
+        ordered = sorted(all_keys, key=lambda k: (family((sources.get(k, {}).get("authors") or [sources.get(k, {}).get("org", k)])[0]).lower(),
+                                                  str(sources.get(k, {}).get("year", ""))))
+        biblio = ('<h2 id="bibliography"><span class="ht">Bibliography</span></h2><ul class="sch-refs biblio">'
+                  + "".join(f"<li>{full_ref(sources.get(k, {'title': k}))}</li>" for k in ordered) + "</ul>")
+    return "".join(out) + biblio, heads
+
+
+def build_scholarly(chapters, md, art):
+    """Write scholarly/NN-*.html for each companion (and scholarly/index.html), after checking them."""
+    built = set()
+    sources = scholarly_data()
+    problems = 0
+    for slug, comp in COMPANIONS.items():
+        ch = next((c for c in chapters.values() if c.slug == slug), None)
+        if not ch:
+            print(f"  scholarly: {slug}: no such chapter")
+            problems += 1
+            continue
+        pp = SCHOLARLY / "data" / f"{slug}.json"
+        prov = json.loads(pp.read_text(encoding="utf-8")) if pp.exists() else None
+        errs = companion_problems(ch, comp, EN_HEADS.get(ch.num, []), sources, prov)
+        for e in errs:
+            print(f"  scholarly: {slug}: {e}")
+        if errs and comp["meta"].get("status") == "published":
+            problems += len(errs)
+        root = up(1)
+        body, heads = companion_body(ch, comp, md, sources, prov, root)
+        toc = "".join(f'<li><a href="#{h[1]}">{h[3]}</a></li>' for h in heads if h[0] == 2)
+        draft = comp["meta"].get("status") != "published"
+        updated = comp["meta"].get("updated", "")
+        lede = ("Extended discussion, the scholarly debate and sources for each section of the chapter. "
+                "The chapter stays the readable version; this page is for going further.")
+        head = hero(art, ch.art, root, kicker=f"Scholarly companion · {ch.label}", title=html.escape(ch.title), cls="band", lede=lede)
+        note = (f'<p class="sch-status{" draft" if draft else ""}">'
+                + ("Draft: not yet reviewed, and not linked from the live site. " if draft else "")
+                + (f"Updated {html.escape(updated)}. " if updated else "")
+                + f'<a href="../guide/{ch.href}">Back to {html.escape(ch.label)}</a>.</p>')
+        page_body = (f'{head}<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="Sections">'
+                     f'<span class="kicker">Sections</span><ol>{toc}<li><a href="#bibliography">Bibliography</a></li></ol></nav></aside>'
+                     f'<article class="scholarly">{note}<details class="mini-toc"><summary>Sections</summary><ol>{toc}</ol></details>'
+                     f'<div class="prose">{body}</div></article></main>')
+        page(f"scholarly/{slug}.html", other_rel=f"guide/{ch.href}", root=root, title=f"Scholarly companion: {ch.label}: {ch.title}",
+             desc=f"Scholarly discussion and sources for {ch.label}, {ch.title}.", body=page_body, current="guide",
+             hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True)
+        built.add(f"{slug}.html")
+    if built:
+        rows = "".join(f'<li><a href="{s}.html">{html.escape(c.label)}: {html.escape(c.title)}</a></li>'
+                       for c in sorted(chapters.values(), key=lambda c: c.num) for s in [c.slug] if f"{s}.html" in built)
+        idx = (hero(art, "guide", up(1), kicker="Scholarly companions", title="Going further", cls="band",
+                    lede="For each chapter, a companion page with the scholarly discussion behind it: the debates, the qualifications "
+                         "the chapter leaves out, and the primary and secondary sources.")
+               + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px"><ul class="sch-index">{rows}</ul></main>')
+        page("scholarly/index.html", other_rel="guide/index.html", root=up(1), title="Scholarly companions",
+             desc="Scholarly discussion and sources for the chapters of the guide.", body=idx, current="guide",
+             hero_img=(art.src("guide", up(1)), art.srcset("guide", up(1))), bar="clear")
+        built.add("index.html")
+    for p in SCHOLARLY.glob("*.html"):  # a companion no longer built (a draft, after a preview) leaves no page behind
+        if p.name not in built:
+            p.unlink()
+    if problems:
+        raise SystemExit(f"scholarly: {problems} problem(s) in published companions")
 
 
 # ----------------------------------------------------------------------------- read-along (the narration with its text)
@@ -2734,6 +3007,8 @@ def build_language(art, md, C, tracks):
         (f"{num(int(total // 3600))}٫۵ ساعت" if half else f"{num(round(total / 3600))} ساعت")
 
     print(f"[{LANG}] guide")
+    if LANG == "en":
+        load_companions(md)
     later = []
     prepare_learning(md, C, chapters)
     for ch in chapters.values():
@@ -2746,6 +3021,8 @@ def build_language(art, md, C, tracks):
         body = place_diagrams(body, md, svgs)
         page(f"guide/{ch.href}", root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=body,
              current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True)
+    if LANG == "en":
+        build_scholarly(chapters, md, art)
     page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
          desc=L("Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
                 "فهرستِ «تسلط بر معرفت‌شناسی»: شانزده فصل دربارهٔ معرفت، شواهد و تفکر نقادانه."),
