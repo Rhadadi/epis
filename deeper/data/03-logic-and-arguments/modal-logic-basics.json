@@ -1,0 +1,127 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "modal-logic-basics",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a modal, and which logics belong to the modal family?",
+    "Why can modal operators not be defined by truth tables?",
+    "How do different axioms suit different readings of the box?",
+    "What problems arise when quantifiers are added to modal logic?"
+  ],
+  "sources": [
+    {
+      "key": "garson2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "A modal is an expression (like ‘necessarily’ or ‘possibly’) that is used to qualify the truth of a judgement.",
+          "corpus_chunk": 29973
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "These include logics for belief, for tense and other temporal expressions, for the deontic (moral) expressions such as ‘it is obligatory that’",
+          "corpus_chunk": 29973
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Epistemic Logic \\(Kx\\) \\(x\\) knows that …",
+          "corpus_chunk": 29974
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "The problem is that the truth value of \\(A\\) does not determine the truth value for \\(\\Box A\\). For example, when \\(A\\) is ‘Dogs are dogs’, \\(\\Box A\\) is true, but when \\(A\\) is ‘Dogs are pets’, \\(\\Box A\\) is false.",
+          "corpus_chunk": 29992
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Nevertheless, semantics for modal logics can be defined by introducing possible worlds.",
+          "corpus_chunk": 29992
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In \\(\\bK\\), the operators \\(\\Box\\) and \\(\\Diamond\\) behave very much like the quantifiers \\(\\forall\\) (all) and \\(\\exists\\) (some).",
+          "corpus_chunk": 29976
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "while \\(\\Box A\\vee \\Box B\\) entails \\(\\Box (A\\vee B)\\), but not vice versa",
+          "corpus_chunk": 29976
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "\\((M)\\) claims that whatever is necessary is the case.",
+          "corpus_chunk": 29977
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Notice that \\((M)\\) would be incorrect were \\(\\Box\\) to be read ‘it ought to be that’, or ‘it was the case that’.",
+          "corpus_chunk": 29977
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "\\(\\mathbf{S4}\\) is the system that results from adding (4) to \\(M\\).",
+          "corpus_chunk": 29978
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Many logicians believe that \\(M\\) is still too weak to correctly formalize the logic of necessity and possibility.",
+          "corpus_chunk": 29977
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "in \\(\\mathbf{S5}\\), strings containing both boxes and diamonds are equivalent to the last operator in the string",
+          "corpus_chunk": 29978
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "the logic which results from adding the axiom (4): \\(\\Box A\\rightarrow \\Box \\Box A\\) to \\(\\bK\\)",
+          "corpus_chunk": 29998
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Seriality corresponds to the axiom \\((D): \\Box A\\rightarrow \\Diamond A\\), in the same way that transitivity corresponds to (4).",
+          "corpus_chunk": 29999
+        },
+        {
+          "locator": "§ 16",
+          "basis": "full text",
+          "excerpt": "Quine (1953) has famously argued that quantifying into modal contexts is simply incoherent",
+          "corpus_chunk": 30051
+        },
+        {
+          "locator": "§ 16",
+          "basis": "full text",
+          "excerpt": "Quine’s complaints do not carry the weight they once did.",
+          "corpus_chunk": 30051
+        },
+        {
+          "locator": "§ 16",
+          "basis": "full text",
+          "excerpt": "The simplest alternative, the fixed-domain (sometimes called the possibilist) approach, assumes a single domain of quantification that contains all the possible objects.",
+          "corpus_chunk": 30052
+        }
+      ]
+    }
+  ]
+}

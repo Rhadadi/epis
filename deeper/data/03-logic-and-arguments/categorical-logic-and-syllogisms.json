@@ -1,0 +1,134 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "categorical-logic-and-syllogisms",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How did Aristotle define a deduction, and how does it compare with modern validity?",
+    "What did Aristotle establish about the syllogistic figures?",
+    "How did Aristotle prove invalidity?",
+    "Which rules of the syllogism go back to Aristotle?"
+  ],
+  "sources": [
+    {
+      "key": "smith2022",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A deduction is speech (logos) in which, certain things having been supposed, something different from those supposed results of necessity because of their being so. (Prior Analytics I.2, 24b18–20)",
+          "corpus_chunk": 33914
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This corresponds to a modern notion of logical consequence",
+          "corpus_chunk": 33914
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "In On Interpretation, Aristotle spells out the relationships of contradiction for sentences with universal subjects as follows",
+          "corpus_chunk": 33926
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Simple as it appears, this table raises important difficulties of interpretation",
+          "corpus_chunk": 33926
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Aristotle then systematically investigates all possible combinations of two premises in each of the three figures. For each combination, he either demonstrates that some conclusion necessarily follows or demonstrates that no conclusion follows. The results he states are correct.",
+          "corpus_chunk": 33929
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Aristotle proves invalidity by constructing counterexamples. This is very much in the spirit of modern logical theory",
+          "corpus_chunk": 33935
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "he gives two triplets of terms, one of which makes the premises true and a universal affirmative “conclusion” true",
+          "corpus_chunk": 33935
+        },
+        {
+          "locator": "§ 5.5",
+          "basis": "full text",
+          "excerpt": "No deduction has two negative premises",
+          "corpus_chunk": 33939
+        },
+        {
+          "locator": "§ 5.5",
+          "basis": "full text",
+          "excerpt": "A deduction with a negative conclusion must have one negative premise.",
+          "corpus_chunk": 33939
+        },
+        {
+          "locator": "§ 5.5",
+          "basis": "full text",
+          "excerpt": "All deductions can be reduced to the two universal deductions in the first figure.",
+          "corpus_chunk": 33939
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Aristotle, however, does not use this expression and instead refers to “the arguments in the figures”.",
+          "corpus_chunk": 33936
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "The second column lists the medieval mnemonic name associated with the inference",
+          "corpus_chunk": 33936
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "we might compare the perfect deductions to the axioms or primitive rules of a deductive system",
+          "corpus_chunk": 33930
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Aristotle says that he “reduces” (anagein) each case to one of the perfect forms",
+          "corpus_chunk": 33930
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Aristotle explicitly says that what results of necessity must be different from what is supposed. This would rule out arguments in which the conclusion is identical to one of the premises. Modern notions of validity regard such arguments as valid, though trivially so.",
+          "corpus_chunk": 33916
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "taken by some ancient commentators to rule out by definition arguments with only one premise",
+          "corpus_chunk": 33916
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "ruling out arguments in which the conclusion is not ‘relevant’ to the premises",
+          "corpus_chunk": 33916
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "he gives the same analysis to “Socrates is an animal” and “Humans are animals”",
+          "corpus_chunk": 33924
+        }
+      ]
+    }
+  ]
+}

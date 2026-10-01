@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 255 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 272 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -2513,6 +2513,172 @@
    "year": "",
    "source": "Internet Encyclopedia of Philosophy",
    "url": "https://iep.utm.edu/virtue-epistemology/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Deduction, Induction, and Hypothesis",
+   "authors": "",
+   "year": "",
+   "source": "en.wikisource.org",
+   "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/August_1878/Illustrations_of_the_Logic_of_Science_VI",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Fixation of Belief",
+   "authors": "",
+   "year": "",
+   "source": "en.wikisource.org",
+   "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_12/November_1877/Illustrations_of_the_Logic_of_Science_I",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "A Study in Scarlet",
+   "authors": "Doyle, Arthur Conan",
+   "year": "",
+   "source": "Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/244",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Indicative Conditionals",
+   "authors": "Edgington, Dorothy",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/conditionals/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Russell’s Paradox",
+   "authors": "Deutsch, Harry, Oliver Marshall,; Andrew David Irvine",
+   "year": "2026",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2026 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2026/entries/russell-paradox/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Traditional Square of Opposition",
+   "authors": "Parsons, Terence; Graziana Ciola",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/square/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ancient Logic",
+   "authors": "Bobzien, Susanne",
+   "year": "2020",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2020 Edition, ed. Edward N. Zalta",
+   "url": "https://plato.stanford.edu/archives/sum2020/entries/logic-ancient/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Reference",
+   "authors": "Michaelson, Eliot",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/reference/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Descriptions",
+   "authors": "Ludlow, Peter",
+   "year": "2023",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2023 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2023/entries/descriptions/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Theories of Meaning",
+   "authors": "Speaks, Jeff",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Winter 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/win2025/entries/meaning/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "wisdom",
+   "authors": "",
+   "year": "",
+   "source": "plato.stanford.edu",
+   "url": "https://plato.stanford.edu/entries/wisdom/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "fideism",
+   "authors": "",
+   "year": "",
+   "source": "plato.stanford.edu",
+   "url": "https://plato.stanford.edu/entries/fideism/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Dialogical Logic",
+   "authors": "Clerbout, Nicolas; Zoe McConaughey",
+   "year": "2022",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2022 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2022/entries/logic-dialogical/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Donald Davidson",
+   "authors": "Malpas, Jeff",
+   "year": "2024",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2024 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2024/entries/davidson/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ontological Arguments",
+   "authors": "Oppy, Graham, Joshua Rasmussen,; Joseph Schmid",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Fall 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/fall2025/entries/ontological-arguments/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Improving analytical reasoning and argument understanding: a quasi-experimental field study of argument visualization",
+   "authors": "Cullen, Simon; Fan, Judith; van der Brugge, Eva; Elga, Adam",
+   "year": "2018",
+   "source": "npj Science of Learning",
+   "edition": "Springer Science and Business Media LLC",
+   "doi": "10.1038/s41539-018-0038-5",
+   "url": "https://doi.org/10.1038/s41539-018-0038-5",
+   "license": "open-access",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Epistemic Logic",
+   "authors": "Rendsvig, Rasmus, John Symons,; Yanjing Wang",
+   "year": "2025",
+   "source": "The Stanford Encyclopedia of Philosophy",
+   "edition": "Summer 2025 Edition, ed. Edward N. Zalta and Uri Nodelman",
+   "url": "https://plato.stanford.edu/archives/sum2025/entries/logic-epistemic/",
    "license": "free-to-read",
    "retrieved": "2026-10-01"
   }

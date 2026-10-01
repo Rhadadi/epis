@@ -1,0 +1,132 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "dialectical-moves",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How does a parody argument such as Gaunilo's work, and what does it show?",
+    "What was Locke's original ad hominem, and where does it become fallacious?",
+    "When is a tu quoque fallacious?",
+    "What is dialogical logic?"
+  ],
+  "sources": [
+    {
+      "key": "oppy-etal2025",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "beginning with Gaunilo’s ‘perfect island’ objection to Anselm’s Proslogion II argument",
+          "corpus_chunk": 51054
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "When the fool hears the words ‘that island than which no greater island can be conceived’ he understands those words.",
+          "corpus_chunk": 51055
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "Since the arguments have the same logical form, either they are both valid or they are both invalid. If they are both invalid, then the Proslogion II argument fails.",
+          "corpus_chunk": 51056
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "there must be a premise pair concerning which atheists and agnostics suppose that the premise in the first argument is true but the premise in the second argument is false",
+          "corpus_chunk": 51056
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "particular parodies are tied to particular formulations of ontological arguments, and are intended only to raise questions about the probative value of those particular formulations of ontological arguments",
+          "corpus_chunk": 51054
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "‘that score on this test than which no greater score on this test can be conceived’",
+          "corpus_chunk": 51057
+        }
+      ]
+    },
+    {
+      "key": "hansen2024b",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "His original description was that it was a way “to press a man with consequences drawn from his own principles or concessions.” That is, to argue that an opponent’s view is inconsistent, logically or pragmatically, with other things he has said or to which he is committed.",
+          "corpus_chunk": 45707
+        },
+        {
+          "locator": "§ 2.7",
+          "basis": "full text",
+          "excerpt": "From the concessions, one might prove that one’s opponent is ‘committed to p,’ but an attempt to make it seem as if this constitutes a proof of the absolute (non-relative) proposition ‘p’ would be a fallacy.",
+          "corpus_chunk": 45720
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It involves not accepting a view or a recommendation because the espouser him- or herself does not follow it.",
+          "corpus_chunk": 45673
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "the value of advice is not wholly dependent on the integrity of the advisor",
+          "corpus_chunk": 45673
+        }
+      ]
+    },
+    {
+      "key": "clerbout-mcconaughey2022",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "rooted in a research tradition that goes back to dialectics in Greek Antiquity, when problems were approached through dialogues in which opposing parties discussed a thesis through questions and answers",
+          "corpus_chunk": 50482
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The dialogical framework was first worked out in its modern form by Paul Lorenzen and Kuno Lorenz",
+          "corpus_chunk": 50482
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The game rules allow these players to challenge the other’s statements or defend their own statements in such a way that one player wins and the other loses after a finite number of moves.",
+          "corpus_chunk": 50483
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "it is shown that one player may win whatever the other player’s moves may be (winning strategy)",
+          "corpus_chunk": 50483
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The meaning of the logical constants is provided by a set of interaction rules",
+          "corpus_chunk": 50483
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "deduction-induction-and-abduction",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do deduction, induction and abduction differ?",
+    "How did Peirce relate deduction, induction and hypothesis?",
+    "What are the two senses of \"abduction\"?",
+    "Is there an agreed criterion for distinguishing deductive from inductive arguments?",
+    "Is explanatory power a mark of truth? What are the objections to inference to the best explanation?",
+    "Is Sherlock Holmes's reasoning deductive?"
+  ],
+  "sources": [
+    {
+      "key": "douven2025",
+      "used_for": [
+        "Step by step",
+        "How the idea developed",
+        "Two meanings of \"abduction\"",
+        "Is the best explanation likely to be true?",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "In deductive inferences, what is inferred is necessarily true if the premises from which it is inferred are true",
+          "corpus_chunk": 37911
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Consider, for instance, the inference of “John is rich” from “John lives in Chelsea” and “Most people living in Chelsea are rich.”",
+          "corpus_chunk": 37911
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "It is standard practice to group non-necessary inferences into inductive and abductive ones.",
+          "corpus_chunk": 37912
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "meaning that the conclusion goes beyond what is (logically) contained in the premises",
+          "corpus_chunk": 37915
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "in abduction there is an implicit or explicit appeal to explanatory considerations, whereas in induction there is not; in induction, there is only an appeal to observed frequencies or statistics",
+          "corpus_chunk": 37915
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "You may have observed many gray elephants and no non-gray ones, and infer from this that all elephants are gray, because that would provide the best explanation",
+          "corpus_chunk": 37915
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The best explanation for this that you can think of is that they made up.",
+          "corpus_chunk": 37908
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "would, if true, best explain the fact that they have just been seen jogging together",
+          "corpus_chunk": 37910
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "it violates monotonicity",
+          "corpus_chunk": 37916
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "adding the premise that Tim and Harry are former business partners who still have some financial matters to discuss",
+          "corpus_chunk": 37916
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "It should also be mentioned that Harman (1965) conceives induction as a special type of abduction.",
+          "corpus_chunk": 37914
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "in the historically first sense, it refers to the place of explanatory reasoning in generating hypotheses, while in the sense in which it is used most frequently in the modern literature it refers to the place of explanatory reasoning in justifying hypotheses",
+          "corpus_chunk": 37906
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "it does not capture what most nowadays understand by abduction",
+          "corpus_chunk": 37930
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "ABD1 Given evidence E and candidate explanations H1,…, Hn of E, infer the truth of that Hi which best explains E.",
+          "corpus_chunk": 37931
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "like simplicity, generality, and coherence with well-established theories",
+          "corpus_chunk": 37932
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The problem is that none of the said virtues is presently particularly well understood.",
+          "corpus_chunk": 37932
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "for else ABD1 may well lead us to believe “the best of a bad lot” (van Fraassen 1989, 143)",
+          "corpus_chunk": 37935
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "one may require the hypothesis whose truth is inferred to be not only the best of the available potential explanations, but also to be satisfactory (Musgrave) or good enough (Lipton)",
+          "corpus_chunk": 37940
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "which, however, we are still lacking",
+          "corpus_chunk": 37940
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "experimental studies have shown that when people are able to think of an explanation for some possible event, they tend to overestimate the likelihood that this event will actually occur",
+          "corpus_chunk": 37946
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "it is part of the meaning of “explanation” that if one theory is more explanatory than another, the former must be more informative than the latter",
+          "corpus_chunk": 37948
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "“an elementary logical point that a more informative theory cannot be more likely to be true",
+          "corpus_chunk": 37948
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "in the paradigm case in which one theory is an extension of another: clearly the extension has more ways of being false",
+          "corpus_chunk": 37949
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For instance, it is entirely unclear in what sense Special Relativity Theory “has more ways of being false” than Lorentz’s version of the æther theory, given that they make the same predictions.",
+          "corpus_chunk": 37949
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The objection is that such rules must either amount to Bayes’ rule, and thus be redundant, or be at variance with it",
+          "corpus_chunk": 37950
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "It might be, for instance, that some probabilistic version of abduction does much better, at least in our world, than Bayes’ rule, in that, on average, it approaches the truth faster",
+          "corpus_chunk": 37951
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Hardly anyone nowadays would want to subscribe to a conception of truth that posits a necessary connection between explanatory force and truth",
+          "corpus_chunk": 37953
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In the past decade, Bayesian confirmation theory has firmly established itself as the dominant view on confirmation",
+          "corpus_chunk": 37962
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "By contrast, Bayesian confirmation theory makes no reference at all to the concept of explanation.",
+          "corpus_chunk": 37962
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "as he puts it, Bayesians should also be “explanationists”",
+          "corpus_chunk": 37962
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Bayesians ought to determine their prior probabilities and, if applicable, likelihoods on the basis of explanatory considerations",
+          "corpus_chunk": 37965
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Exactly how are explanatory considerations to guide one’s choice of priors?",
+          "corpus_chunk": 37965
+        }
+      ]
+    },
+    {
+      "key": "deductive-inductive-arguments-iep",
+      "used_for": [
+        "Common confusions",
+        "How the idea developed",
+        "The distinction is in chaos",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "induction was famously advertised by Francis Bacon (1561-1626) in his New Organon (1620) as the royal road to knowledge, while Rationalist mathematician-philosophers, such as René Descartes (1596-1650) in his Discourse on the Method (1637), favored deductive methods of inquiry",
+          "corpus_chunk": 43327
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "it follows that what is ostensibly the very same argument may be equally both deductive and inductive",
+          "corpus_chunk": 43339
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If the arguer believes that the truth of the premises definitely establishes the truth of the conclusion, then the argument is deductive.",
+          "corpus_chunk": 43339
+        },
+        {
+          "locator": "§ 10",
+          "basis": "full text",
+          "excerpt": "All of these proposals entail problems of one sort or another.",
+          "corpus_chunk": 43403
+        },
+        {
+          "locator": "§ 10",
+          "basis": "full text",
+          "excerpt": "Some authors (such as Moore and Parker 2004) acknowledge that the best way of distinguishing deductive from inductive arguments is “controversial.” Yet, there seems to be remarkably little actual controversy about it. Instead, matters persist in a state of largely unacknowledged chaos.",
+          "corpus_chunk": 43404
+        },
+        {
+          "locator": "§ 10",
+          "basis": "full text",
+          "excerpt": "“Does the argument prove its conclusion, or does it only render it probable, or does it do neither?”",
+          "corpus_chunk": 43405
+        }
+      ]
+    },
+    {
+      "key": "doyle1887",
+      "used_for": [
+        "Common confusions",
+        "How the idea developed",
+        "Holmes on Watson",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. 2",
+          "basis": "full text",
+          "excerpt": "THE SCIENCE OF DEDUCTION.",
+          "corpus_chunk": 49957
+        },
+        {
+          "locator": "ch. 2",
+          "basis": "full text",
+          "excerpt": "The train of reasoning ran, ‘Here is a gentleman of a medical type, but with the air of a military man. Clearly an army doctor, then.",
+          "corpus_chunk": 49974
+        },
+        {
+          "locator": "ch. 2",
+          "basis": "full text",
+          "excerpt": "Where in the tropics could an English army doctor have seen much hardship and got his arm wounded? Clearly in Afghanistan.",
+          "corpus_chunk": 49975
+        },
+        {
+          "locator": "ch. 2",
+          "basis": "full text",
+          "excerpt": "The whole train of thought did not occupy a second.",
+          "corpus_chunk": 49975
+        },
+        {
+          "locator": "ch. 2",
+          "basis": "full text",
+          "excerpt": "I arrived at the conclusion without being conscious of intermediate steps",
+          "corpus_chunk": 49974
+        }
+      ]
+    },
+    {
+      "key": "smith2022",
+      "used_for": [
+        "How the idea developed"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The other species is induction (epagôgê). He has far less to say about this than deduction, doing little more than characterize it as “argument from the particular to the universal”.",
+          "corpus_chunk": 33915
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "it is induction, or at any rate a cognitive process that moves from particulars to their generalizations, that is the basis of knowledge of the indemonstrable first principles of sciences",
+          "corpus_chunk": 33915
+        }
+      ]
+    },
+    {
+      "key": "peirce1878",
+      "used_for": [
+        "How the idea developed",
+        "Peirce's beans",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Suppose I enter a room and there find a number of bags, containing different kinds of beans. On the table there is a handful of white beans; and, after some searching, I find one of the bags contains white beans only.",
+          "corpus_chunk": 51709
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "This sort of inference is called making an hypothesis. It is the inference of a case from a rule and result.",
+          "corpus_chunk": 51709
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "So that induction is the inference of the rule from the case and result.",
+          "corpus_chunk": 51709
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Deduction. Rule.—All the beans from this bag are white. Case.—These beans are from this bag. Result.—These beans are white.",
+          "corpus_chunk": 51709
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "As the governor of the province was the only personage I could think of who would be so greatly honored, I inferred that this was he.",
+          "corpus_chunk": 51711
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "To explain the phenomenon, we suppose the sea once washed over this land.",
+          "corpus_chunk": 51711
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Numberless documents and monuments refer to a conqueror called Napoleon Bonaparte.",
+          "corpus_chunk": 51711
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "without supposing that he really existed",
+          "corpus_chunk": 51711
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "As a general rule, hypothesis is a weak kind of argument. It often inclines our judgment so slightly toward its conclusion that we cannot say that we believe the latter to be true; we only surmise that it may be so.",
+          "corpus_chunk": 51712
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "But there is no difference except one of degree between such an inference and that by which we are led to believe that we remember the occurrences of yesterday from our feeling as if we did so.",
+          "corpus_chunk": 51712
+        }
+      ]
+    },
+    {
+      "key": "burch2024",
+      "used_for": [
+        "Peirce's beans",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "three phases or stages: abduction (making conjectures or creating hypotheses), deduction (inferring what should be the case if the hypotheses are the case), and induction (the testing of hypotheses)",
+          "corpus_chunk": 27666
+        }
+      ]
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "“Conductive” arguments support their conclusions by accumulating non-decisive reasons in their favor.",
+          "corpus_chunk": 40292
+        }
+      ]
+    }
+  ]
+}

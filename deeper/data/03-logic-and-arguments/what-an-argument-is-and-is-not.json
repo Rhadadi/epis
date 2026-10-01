@@ -1,0 +1,154 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "what-an-argument-is-and-is-not",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What makes a collection of propositions an argument?",
+    "How do arguments differ from explanations, conditionals and implications?",
+    "Must arguments aim at persuasion?"
+  ],
+  "sources": [
+    {
+      "key": "argument-iep",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A collection of propositions, P1, …, Pn, C, is an argument if and only if there is a reasoner R who puts forward the Pi as reasons in support of C.",
+          "corpus_chunk": 43218
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The structure of an argument is not a function of the syntactic and semantic features of the propositions that compose it. Rather, it is imposed on these propositions by the intentions of a reasoner",
+          "corpus_chunk": 43218
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "(i) The premises represent R’s reasons for believing that the conclusion is true and R thinks that her belief in the truth of the premises is justified. (ii) R believes that the premises make C more probable than not.",
+          "corpus_chunk": 43219
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "R believes that the premises are independent of C",
+          "corpus_chunk": 43220
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "B’s assertion of a conditional does not require that B believe either the antecedent or consequent.",
+          "corpus_chunk": 43221
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Even though few syphilis patients get paresis, we suspect that the reason for your uncle’s paresis is the syphilis he suffered from 10 years ago.",
+          "corpus_chunk": 43222
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "B: Bill will be at the party, because Bill will be at the party.",
+          "corpus_chunk": 43222
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Whereas the act of explaining is designed to increase the audience’s comprehension, the act of arguing is aimed at enhancing the acceptability of a standpoint.",
+          "corpus_chunk": 43233
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "in presenting an argument the reasoner believes that her standpoint is not yet acceptable to her audience, but in presenting an explanation the reasoner knows or believes that the explanandum is already accepted by her audience",
+          "corpus_chunk": 43234
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "It is generally accepted that the same line of reasoning can function as an explanation in one dialogical context and as an argument in another",
+          "corpus_chunk": 43234
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "these expressions do not always function in these ways, and so their mere use does not necessitate the presence of an argument",
+          "corpus_chunk": 43219
+        },
+        {
+          "locator": "§ Argument",
+          "basis": "full text",
+          "excerpt": "an argument is merely a list of statements, one of which is designated as the conclusion and the rest of which are designated as premises regardless of whether the premises are offered as reasons",
+          "corpus_chunk": 43214
+        },
+        {
+          "locator": "§ Argument",
+          "basis": "full text",
+          "excerpt": "The proposition frogs are mammals implies that frogs are not reptiles, but it is problematic to offer the former as a reason for believing the latter.",
+          "corpus_chunk": 43215
+        },
+        {
+          "locator": "§ Argument",
+          "basis": "full text",
+          "excerpt": "an inference is a form of reasoning, and as such it is distinct from an argument in the sense of a collection of propositions",
+          "corpus_chunk": 43216
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "arguments can be constructed for purposes of inquiry and as such can be used to investigate a hypothesis by seeing what reasons might be given to support a given proposition",
+          "corpus_chunk": 43229
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "a reasoner can offer premises for a conclusion C in order to get her audience to withhold assent from C, suspect that C is true",
+          "corpus_chunk": 43235
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "follow those who think that at least some explanations qualify as arguments (see Thomas 1986 who argues that all explanations are arguments)",
+          "corpus_chunk": 43229
+        }
+      ]
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "some argue that a fully comprehensive account of real-life argument must include a “multimodal” account of meaning",
+          "corpus_chunk": 40251
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "gestures, facial expressions, sounds of different sorts",
+          "corpus_chunk": 40251
+        },
+        {
+          "locator": "§ 2.6",
+          "basis": "full text",
+          "excerpt": "Glaucon uses the mythical story of “The Ring of Gyges” to prove that humans are inherently selfish",
+          "corpus_chunk": 40257
+        }
+      ]
+    }
+  ]
+}

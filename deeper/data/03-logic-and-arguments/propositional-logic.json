@@ -1,0 +1,147 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "propositional-logic",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What does propositional logic study, and why does it abstract from content?",
+    "In what sense is classical propositional logic decidable?",
+    "Does the material conditional capture the meaning of \"if ... then\"?",
+    "What alternatives to the material conditional have been proposed?"
+  ],
+  "sources": [
+    {
+      "key": "franks2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "based on the role that a specific class of logical operators called the propositional connectives have in determining those sentences’ truth or assertability conditions",
+          "corpus_chunk": 41595
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Whether B follows logically from A ought not depend, it is thought, on what words like “mortal” or “man” mean.",
+          "corpus_chunk": 41595
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "As early as Aristotle it was observed that propositional connectives have a logical significance",
+          "corpus_chunk": 41595
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "But propositional logic per se did not emerge until the nineteenth century",
+          "corpus_chunk": 41595
+        },
+        {
+          "locator": "§ 2.1.5",
+          "basis": "full text",
+          "excerpt": "Completing the truth table is therefore a finite determinate task",
+          "corpus_chunk": 41630
+        },
+        {
+          "locator": "§ 2.1.5",
+          "basis": "full text",
+          "excerpt": "each contains only a finite number, say n, of atoms",
+          "corpus_chunk": 41630
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "This truth function is often described, controversially, as giving the truth conditions for the indicative mood conditional connective “if …, then …”, or even, erroneously, for the relation “implies”.",
+          "corpus_chunk": 41622
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "B could be true but, for all that, not be implied by A because under some other situation A could be true while B is false.",
+          "corpus_chunk": 41622
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "One can readily check that \\(\\rA\\supset\\rB\\) is equivalent to the Boolean expression \\(\\neg\\rA\\vee\\rB\\).",
+          "corpus_chunk": 41623
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "\\(\\rA\\supset\\rB\\) does not express any implication relation between A and B, but the claim that \\(\\rA\\supset\\rB\\) is a classical propositional validity is such an expression of implication",
+          "corpus_chunk": 41629
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "The claim itself is apparently ancient, attributed to Philo of Melaga and referenced in Chrysippus’s early systematization of propositional logic.",
+          "corpus_chunk": 41623,
+          "note": "The entry's \"Melaga\" is a slip for Megara."
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "It has been defended in a modern context by Charles Peirce, H. P. Grice, and Frank Jackson. But its detractors have been many",
+          "corpus_chunk": 41624
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "Frege rejected the idea that this connective expressed the indicative conditional of natural language. He wrote, “the causal connection implicit in the word ‘if’ …is not expressed by our symbols”",
+          "corpus_chunk": 41627
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "Frege saw that the value of selecting the material conditional as a primitive connective not from its approximation of ordinary language expression but from its role internal to logical theory.",
+          "corpus_chunk": 41628
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "Of special interest is the suggestion, originally due to Frank Ramsey, that expressions of the form “If A, then B” in the indicative mood are best understood in terms of conditional probabilities",
+          "corpus_chunk": 41624
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "In 1976 David Lewis proved that the conditional expressions, so understood, not only fail to be truth-functional but in fact are not even propositions.",
+          "corpus_chunk": 41624
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "many of the features exhibited by the material conditional that seem like departures from speakers’ intuitions about the truth of conditional expressions stem from ascriptions of truth to conditionals whose antecedents are irrelevant to their consequents",
+          "corpus_chunk": 41698
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "they propose a “variable sharing condition”",
+          "corpus_chunk": 41698
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Connexive logicians aim instead to make good of the intuition that for a conditional statement to be true, the negation of its consequent should be incompatible with its antecedent.",
+          "corpus_chunk": 41698
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Important examples are the (strong and weak) Kleene 3-valued logics",
+          "corpus_chunk": 41680
+        }
+      ]
+    }
+  ]
+}

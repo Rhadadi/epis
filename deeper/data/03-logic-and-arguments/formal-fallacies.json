@@ -1,0 +1,128 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "formal-fallacies",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How are formal fallacies distinguished from informal ones?",
+    "Why do fallacies seem like good arguments?",
+    "Is every invalid argument a fallacy, and every fallacy invalid?",
+    "How common are formal fallacies in real argument?"
+  ],
+  "sources": [
+    {
+      "key": "hansen2024b",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Formal fallacies are those readily seen to be instances of identifiable invalid logical forms such as undistributed middle and denying the antecedent.",
+          "corpus_chunk": 45656
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "it is generally thought to be more profitable, from the points of view of both recognition and understanding, to bring their weaknesses to light through analyses that do not involve appeal to formal languages",
+          "corpus_chunk": 45656
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As an initial working definition of the subject matter, we may take a fallacy to be an argument that seems to be better than it really is.",
+          "corpus_chunk": 45659
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "Aristotle considers the fallacy of consequent to be a special case of the fallacy of accident, observing that consequence is not convertible, i.e., “if \\(A\\) is, \\(B\\) necessarily is, men also fancy that, if \\(B\\) is, \\(A\\) necessarily is”",
+          "corpus_chunk": 45689
+        },
+        {
+          "locator": "§ 2.1.4",
+          "basis": "full text",
+          "excerpt": "This fallacy is sometimes claimed as being an early statement of the formal fallacy of affirming the consequent.",
+          "corpus_chunk": 45690
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "(1) Formal fallaciousness is simply the case where the conclusion does not follow validly from the premises; this type of error can be demonstrated by producing a suitable analogous counter-example in which the premises are true and the conclusion is false.",
+          "corpus_chunk": 45740
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "it is too narrow because it excludes begging the question which is not invalid, and it is too wide because it condemns good but non-deductive arguments as fallacies",
+          "corpus_chunk": 45755
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "observing that they contain very few examples of actual fallacies",
+          "corpus_chunk": 45740
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "he thinks that “types of logically incorrect arguments”—fallacies—are probably not common",
+          "corpus_chunk": 45740
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "For that reason Finocchiaro prefers to speak of fallacious arguments",
+          "corpus_chunk": 45740
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "it is too coarse conceptually to reveal the unique character of many of the fallacies",
+          "corpus_chunk": 45751
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Inductive logic can be employed for analysis of hasty generalization and post hoc ergo propter hoc",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "dialectical game theory for begging the question and many questions. Woods (1992, 43) refers to this approach to studying the fallacies as methodological pluralism.",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Correia (2011) has taken Mill’s insight that biases are predisposing causes of fallacies a step further by connecting identifiable biases with particular fallacies.",
+          "corpus_chunk": 45798
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Correia (2011, 118) links this bias to the fallacies of hasty generalization and straw man",
+          "corpus_chunk": 45799
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "the “focussing illusion” bias inclines a person to focus on just a part of the evidence available",
+          "corpus_chunk": 45799
+        },
+        {
+          "locator": "§ 2.10",
+          "basis": "full text",
+          "excerpt": "defines a fallacy as “a form of argument that seems to be correct but which proves, upon examination, not to be so.”",
+          "corpus_chunk": 45732
+        }
+      ]
+    }
+  ]
+}

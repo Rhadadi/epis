@@ -1,0 +1,146 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "paradoxes-as-stress-tests",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a paradox, and what do epistemic paradoxes teach?",
+    "What is the preface paradox, and how have philosophers responded?",
+    "What is odd about Moore's sentence?",
+    "What has the liar paradox been taken to show?"
+  ],
+  "sources": [
+    {
+      "key": "sorensen2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A paradox is commonly defined as a set of propositions that are individually plausible but jointly inconsistent. The inconsistency is the itch that directs us to scratch out a member of the set",
+          "corpus_chunk": 2055
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A belief can only be justified by another justified belief. There are no circular chains of justification. All justificatory chains have a finite length. Some beliefs are justified. Foundationalists reject (1).",
+          "corpus_chunk": 2055
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The 1982 reprint has three pages of errata that vindicate Wilder’s humility.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Wilder rationally believes each of the assertions in his book. But since Wilder regards himself as fallible, he rationally believes the conjunction of all his assertions is false.",
+          "corpus_chunk": 2054
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "At this juncture many philosophers join Kyburg in rejecting agglomeration and conclude that it can be rational to have jointly inconsistent beliefs.",
+          "corpus_chunk": 2055
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "How can paradoxes change our minds if joint inconsistency is permitted?",
+          "corpus_chunk": 2055
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "(M) I went to the pictures last Tuesday, but I don’t believe that I did.",
+          "corpus_chunk": 2080
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "The common explanation of Moore’s absurdity is that the speaker has managed to contradict himself without uttering a contradiction.",
+          "corpus_chunk": 2080
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "There is no problem with third person counterparts of (M).",
+          "corpus_chunk": 2080
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "René Descartes sits in a bar, having a drink. The bartender asks him if he would care for another. “I think not,” he says, and disappears.",
+          "corpus_chunk": 2080
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "As manifest in Plato’s dialogues featuring Socrates, epistemic paradoxes have been discussed for twenty five hundred years.",
+          "corpus_chunk": 2019
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "In the long run, the riddle goads and guides us into correcting at least one deep error – if not directly about knowledge, then about its kindred concepts such as justification, rational belief, and evidence.",
+          "corpus_chunk": 2019
+        }
+      ]
+    },
+    {
+      "key": "beall-etal2026",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Tarski himself (1935, 1944) seems to have thought the Liar shows the ordinary notion of truth to be incoherent, and in need of replacement with a more scientifically respectable one.",
+          "corpus_chunk": 46809
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "the idea that the basic principles governing truth are more subtle than the T-schema reflects",
+          "corpus_chunk": 46809
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Notable among these are the arguments for logics that are paracomplete (e.g., Kripke 1975; Field 2008) or paraconsistent (e.g., Asenjo 1966; Priest 1984, 2006).",
+          "corpus_chunk": 46809
+        }
+      ]
+    },
+    {
+      "key": "raffman-hyde2026",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The sorites paradox has traditionally been seen as unrelated in any substantially interesting way to the semantic and set-theoretic paradoxes of self-reference.",
+          "corpus_chunk": 42394
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "McGee (1991) and Tappenden (1993) proposed a unified treatment of the liar and sorites paradoxes based on similarities between vague predicates and the truth predicate.",
+          "corpus_chunk": 42394
+        }
+      ]
+    }
+  ]
+}

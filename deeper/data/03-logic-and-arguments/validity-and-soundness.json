@@ -1,0 +1,549 @@
+{
+  "chapter": "03-logic-and-arguments",
+  "section": "validity-and-soundness",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What are validity and soundness, and how are they related?",
+    "How did Aristotle and the Stoics define a valid argument?",
+    "What kind of necessity makes an argument valid?",
+    "What makes an argument formal, and why does it matter?",
+    "How do model theory and proof theory explicate validity?",
+    "Why does a contradiction imply everything in classical logic, and who rejects this?",
+    "Is there one correct notion of validity?",
+    "Why can a valid, sound argument still fail to prove its conclusion?"
+  ],
+  "sources": [
+    {
+      "key": "val-snd-iep",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What is form?",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "A deductive argument is said to be valid if and only if it takes a form that makes it impossible for the premises to be true and the conclusion nevertheless to be false.",
+          "corpus_chunk": 43942
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "All toasters are items made of gold. All items made of gold are time-travel devices. Therefore, all toasters are time-travel devices.",
+          "corpus_chunk": 43943
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "if they were true, their truth would logically guarantee the conclusion’s truth",
+          "corpus_chunk": 43944
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "according to the dominant understanding among logicians, the validity or invalidity of an argument is determined entirely by its logical form",
+          "corpus_chunk": 43945
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "The logical form of an argument is that which remains of it when one abstracts away from the specific content of the premises and the conclusion",
+          "corpus_chunk": 43946
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "All tigers are mammals. No mammals are creatures with scales. Therefore, no tigers are creatures with scales. All spider monkeys are elephants. No elephants are animals. Therefore, no spider monkeys are animals.",
+          "corpus_chunk": 43946
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "A deductive argument is sound if and only if it is both valid, and all of its premises are actually true.",
+          "corpus_chunk": 43942
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "sound arguments always end with true conclusions",
+          "corpus_chunk": 43945
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "It should be noted that both invalid, as well as valid but unsound, arguments can nevertheless have true conclusions. One cannot reject the conclusion of an argument simply by discovering a given argument for that conclusion to be flawed.",
+          "corpus_chunk": 43945
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "All popes reside at the Vatican. John Paul II resides at the Vatican. Therefore, John Paul II is a pope.",
+          "corpus_chunk": 43947
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "note that the conclusion’s truth isn’t guaranteed by the premises’ truth",
+          "corpus_chunk": 43947
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "All basketballs are round. The Earth is round. Therefore, the Earth is a basketball.",
+          "corpus_chunk": 43947
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "Tony is a ferocious tiger. (2) Clinton is a lame duck.",
+          "corpus_chunk": 43949
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "The logical form of a statement is not always as easy to discern as one might expect.",
+          "corpus_chunk": 43949
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "an axiomatic logical calculus (in its entirety) is said to be sound if and only if all theorems derivable from the axioms of the logical calculus are semantically valid",
+          "corpus_chunk": 43953
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "My table is circular. Therefore, it is not square shaped. Juan is a bachelor. Therefore, he is not married.",
+          "corpus_chunk": 43948
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "impossible for the premises to be true while the conclusion is false",
+          "corpus_chunk": 43948
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "these arguments actually contain implicit premises such as “Nothing is both circular and square shaped” or “All bachelors are unmarried,”",
+          "corpus_chunk": 43948
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "the sort of necessity involved is something other than “logical” necessity",
+          "corpus_chunk": 43949
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "because “bachelor” is defined as “adult unmarried male”",
+          "corpus_chunk": 43949
+        },
+        {
+          "locator": "§ Validity and Soundness",
+          "basis": "full text",
+          "excerpt": "While it is accepted by most contemporary logicians that logical validity and invalidity is determined entirely by form, there is some dissent.",
+          "corpus_chunk": 43947
+        }
+      ]
+    },
+    {
+      "key": "beall-sagi2026",
+      "used_for": [
+        "Step by step",
+        "How the idea developed",
+        "What kind of \"cannot\"?",
+        "What is form?",
+        "Models and proofs",
+        "One validity or many?",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The model-centered approach to logical consequence takes the validity of an argument to be absence of counterexample.",
+          "corpus_chunk": 41147
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One way to do this is to provide an argument of the same form for which the premises are clearly true and the conclusion is clearly false. Another way to do this is to provide a circumstance in which the premises are true and the conclusion is false.",
+          "corpus_chunk": 41147
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The contemporary model-theoretic definition of logical consequence traces back to Tarski (1936).",
+          "corpus_chunk": 41148
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "an argument is valid if in any model in which the premises are true (or in any interpretation of the premises according to which they are true), the conclusion is true too",
+          "corpus_chunk": 41149
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The model-theoretic definition is one of the most successful mathematical explications of a philosophical concept to date.",
+          "corpus_chunk": 41149
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Yet, models are just sets, which are merely mathematical objects.",
+          "corpus_chunk": 41150
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "the validity of an argument amounts to there being a proof of the conclusions from the premises",
+          "corpus_chunk": 41158
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "from so-called Hilbert proofs, with simple rules and complex axioms, to natural deduction systems",
+          "corpus_chunk": 41158
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "if a reasoner has grounds for the premises of an argument, and they infer the conclusion via a series of applications of valid inference rules, they thereby obtain grounds for the conclusion",
+          "corpus_chunk": 41158
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "One can go further and subscribe to inferentialism, the view by which the meaning of expressions is determined by their role in inference.",
+          "corpus_chunk": 41159
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "in a valid argument, the truth of the conclusion follows from the truth of the premises by necessity of thought (Prawitz 2005)",
+          "corpus_chunk": 41160
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Some arguments are such that the (joint) truth of the premises is necessarily sufficient for the truth of the conclusions.",
+          "corpus_chunk": 41134
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "is necessarily truth preserving, but it seems a long way from being deductively valid. It was a genuine discovery that water is H\\(_2\\)O, one that required significant empirical investigation.",
+          "corpus_chunk": 41137
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The trouble, as Quine argued, is that the distinction between analytic and synthetic (and similarly, conceptual and non-conceptual) truths is not as straightforward as we might have thought",
+          "corpus_chunk": 41138
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Peter is Greg’s mother’s brother’s son. Therefore, Peter is Greg’s cousin.",
+          "corpus_chunk": 41138
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A constraint of apriority certainly seems to rule argument (3) out as deductively valid, and rightly so. However, it will not do to rule out argument (4).",
+          "corpus_chunk": 41139
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In inductively valid arguments, the (joint) truth of the premises is very likely (but not necessarily) sufficient for the truth of the conclusion.",
+          "corpus_chunk": 41134
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The strongest and most widespread proposal for finding a narrower criterion for logical consequence is the appeal to formality.",
+          "corpus_chunk": 41140
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "is a material consequence and not a formal one, because to make the step from the premise to the conclusion we need more than the structure or form of the claims involved",
+          "corpus_chunk": 41140
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Aristotle’s syllogistic is a proud example. Ferio: No \\(F\\) is \\(G\\). Some \\(H\\) is \\(G\\). Therefore some \\(H\\) is not \\(F\\).",
+          "corpus_chunk": 41140
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The material argument (4) is an instance of: \\(x\\) is \\(y\\)’s mother’s brother’s son. Therefore, \\(x\\) is \\(y\\)’s cousin. every instance of which is valid.",
+          "corpus_chunk": 41141
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Tarski proposed (1986) that an operation or predicate on a domain counted as general (or logical) if it was invariant under permutations of objects.",
+          "corpus_chunk": 41142
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "You can see that the identity relation is permutation invariant—if \\(x = y\\) then \\(p(x) = p(y)\\)—but the mother-of relation is not.",
+          "corpus_chunk": 41143
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Suffice to say, an operation such as negation passes the test of invariance, but an operation such as ‘JC believes that’ fails.",
+          "corpus_chunk": 41144
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "expressions such as propositional connectives and quantifiers do not add new semantic content to expressions, but instead add only ways to combine and structure semantic content",
+          "corpus_chunk": 41144
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "It is plausible to hold that no matter what we think about, it makes sense to conjoin, disjoin and negate our thoughts to make new thoughts.",
+          "corpus_chunk": 41145
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The norms of valid argument, on this picture, are those norms that apply to thought irrespective of the particular content of that thought.",
+          "corpus_chunk": 41145
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The orthodoxy, logical monism, answers affirmatively. There is one relation of deductive consequence, and different formal systems do a better or worse job of modelling that relation.",
+          "corpus_chunk": 41181
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "a use of the law of the excluded middle might be valid in a classical mathematics textbook, but not in an intuitionistic mathematics textbook, or in a context where we reason about fiction or vague matters",
+          "corpus_chunk": 41182
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The logical pluralist, on the other hand, says that of one and the same argument, in one and the same context, there are sometimes different things one should say with respect to its validity.",
+          "corpus_chunk": 41182
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "in another sense the form of the argument does not ensure that the truth of the premises leads to the truth of the conclusion",
+          "corpus_chunk": 41183
+        }
+      ]
+    },
+    {
+      "key": "shapiro-kissel2026",
+      "used_for": [
+        "Common confusions",
+        "How the idea developed",
+        "Models and proofs",
+        "Explosion: does a contradiction imply everything?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Then we establish a converse, called completeness, that an argument is valid only if it is derivable.",
+          "corpus_chunk": 38492
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Gödel [1930].",
+          "corpus_chunk": 38571
+        },
+        {
+          "locator": "§ Relevance and paraconsistency",
+          "basis": "full text",
+          "excerpt": "sometimes colorfully called “explosion”. It says that anything at all follows from a contradiction. Logics that regard (EFQ) as invalid are called paraconsistent.",
+          "corpus_chunk": 38608
+        },
+        {
+          "locator": "§ Relevance and paraconsistency",
+          "basis": "full text",
+          "excerpt": "One camp consists of logicians who insist that in a valid argument, the premises must be relevant to the conclusion.",
+          "corpus_chunk": 38608
+        },
+        {
+          "locator": "§ Relevance and paraconsistency",
+          "basis": "full text",
+          "excerpt": "advocates of dialetheism, the view that some contradictions, some sentences in the form",
+          "corpus_chunk": 38609
+        },
+        {
+          "locator": "§ Relevance and paraconsistency",
+          "basis": "full text",
+          "excerpt": "are true. One supposed example is when \\(\\Phi\\) is a statement of a semantic paradoxes, such as the Liar.",
+          "corpus_chunk": 38609
+        },
+        {
+          "locator": "§ Relevance and paraconsistency",
+          "basis": "full text",
+          "excerpt": "In a system in which (EFQ) holds, any true contradiction would entail every sentence of the formal language",
+          "corpus_chunk": 38609
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "Advocates of intuitionistic logic reject the validity of the (so-called) Law of Excluded Middle",
+          "corpus_chunk": 38606
+        }
+      ]
+    },
+    {
+      "key": "smith2022",
+      "used_for": [
+        "How the idea developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A deduction is speech (logos) in which, certain things having been supposed, something different from those supposed results of necessity because of their being so.",
+          "corpus_chunk": 33914
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Aristotle proves invalidity by constructing counterexamples.",
+          "corpus_chunk": 33935
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Aristotle explicitly says that what results of necessity must be different from what is supposed. This would rule out arguments in which the conclusion is identical to one of the premises. Modern notions of validity regard such arguments as valid, though trivially so.",
+          "corpus_chunk": 33916
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "taken by some ancient commentators to rule out by definition arguments with only one premise",
+          "corpus_chunk": 33916
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "ruling out arguments in which the conclusion is not ‘relevant’ to the premises",
+          "corpus_chunk": 33916
+        }
+      ]
+    },
+    {
+      "key": "durand-baltzly2023",
+      "used_for": [
+        "How the idea developed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "if the (Chrysippean) conditional formed from its premises as antecedent and its conclusion as consequent is true",
+          "corpus_chunk": 37021
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "An argument is sound (literally “true”) if it is valid and its premises are true.",
+          "corpus_chunk": 37021
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Chrysippus of Soli, who headed the school from around 230 until 206 BCE",
+          "corpus_chunk": 36966
+        }
+      ]
+    },
+    {
+      "key": "hansen2024b",
+      "used_for": [
+        "Validity is not enough",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "All members of the committee are old Etonians; Fortesque is a member of the committee; Fortesque is an old Etonian.",
+          "corpus_chunk": 45757
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "given the minor premise, the major cannot be known to be true unless the conclusion is known to be true",
+          "corpus_chunk": 45757
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "the second argument, despite the fact that it is valid, is non-serious, it begs the question, and it is a fallacy",
+          "corpus_chunk": 45757
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "If there was some independent way of knowing whether the major premise was true, such as that it was a bylaw that only old Etonians could be committee members, the argument would be a serious one",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "only arguments that satisfy the extra-formal requirement that premises are knowable independently of their conclusions, and are more acceptable epistemically than their conclusions",
+          "corpus_chunk": 45756
+        }
+      ]
+    },
+    {
+      "key": "gillon2024",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "first form: the reason’s definite (eva) existence in the subject; second form: the reason’s existence in subject-like things only (eva); third form: the reason’s utter (eva) non-existence in subject-unlike things",
+          "corpus_chunk": 41088
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "And finally, he identifies and classifies specious reasons in terms of the failure of a reason to satisfy one or other of the three forms.",
+          "corpus_chunk": 41092
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "the simple failure to perceive something which has H but which does not have S is no guarantee that whatever has H has S",
+          "corpus_chunk": 41087
+        }
+      ]
+    }
+  ]
+}

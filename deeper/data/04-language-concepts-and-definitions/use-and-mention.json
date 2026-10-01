@@ -1,0 +1,133 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "use-and-mention",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is the difference between using and mentioning an expression?",
+    "Why is quotation an opaque context?",
+    "How is quotation marked, and what is mixed quotation?",
+    "Can the use-mention distinction be drawn precisely?"
+  ],
+  "sources": [
+    {
+      "key": "cappelen-mckeever2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "In (D1) the word ‘Jim’ is used to talk about (or signify, or denote) a person",
+          "corpus_chunk": 41736
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Instead, ‘Jim’ is used to talk about (or signify or denote) a word",
+          "corpus_chunk": 41736
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "In (D1), ‘Jim’ is being used and in (D2) it is being mentioned.",
+          "corpus_chunk": 41736
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "a linguistic device is needed that ‘turns language on itself’. Quotation is one such device. It is our primary meta-linguistic tool",
+          "corpus_chunk": 41721
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(1) ‘Snow is white’ is true in English iff snow is white.",
+          "corpus_chunk": 41720
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "(4) ‘Bachelor’ has eight letters.",
+          "corpus_chunk": 41720
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Quotation is a paradigmatic opaque context, i.e. a context in which substitution of synonymous or co-referential expressions can fail to preserve truth-value.",
+          "corpus_chunk": 41721
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "quotation was usually introduced as a somewhat shady device, and the introduction was accompanied by a stern sermon on the sin of confusing the use and mention of expressions",
+          "corpus_chunk": 41720
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "In spoken language, no obvious correlates of quotation marks exist.",
+          "corpus_chunk": 41725
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Sometimes, for example, italicization is used instead, as in (7). Other devices employed as substitutes for quotation marks include bold face, indentation",
+          "corpus_chunk": 41725
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "(6) My name is Donald.",
+          "corpus_chunk": 41725
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "(12) Quine said that quotation ‘has a certain anomalous feature’.",
+          "corpus_chunk": 41731
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "the quoted material is used by the reporter to characterise the proposition that the reportee expressed. It must also account for the fact that the quoted material was uttered by the reportee",
+          "corpus_chunk": 41799
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "open or scroll to a newspaper and read until you find the first mixed quotation (it shouldn’t take long)",
+          "corpus_chunk": 41799
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "A problem with this is that according to some theories, an expression can be mentioned without being quoted",
+          "corpus_chunk": 41737
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "it is controversial whether standard meta-linguistic devices such as quotation are referring expressions",
+          "corpus_chunk": 41737
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Thus ‘one is a number’ is a sentence in material mode; and ‘‘one’ is a number word’ is its sentential counterpart in formal mode.",
+          "corpus_chunk": 41820
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Revealing that a statement is basically about the use of language may succeed in removing some of its metaphysical mystery.",
+          "corpus_chunk": 41820
+        }
+      ]
+    }
+  ]
+}

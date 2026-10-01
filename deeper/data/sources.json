@@ -82,6 +82,70 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
+  "anderson2026": {
+    "type": "entry",
+    "authors": [
+      "Anderson, R. Lanier"
+    ],
+    "year": 2026,
+    "title": "Friedrich Nietzsche",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/nietzsche/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "argument-iep": {
+    "type": "entry",
+    "authors": [
+      "McKeon, Matthew"
+    ],
+    "title": "Argument",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/argument/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "ariew2026": {
+    "type": "entry",
+    "authors": [
+      "Ariew, Roger"
+    ],
+    "year": 2026,
+    "title": "Pierre Duhem",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/duhem/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
+  "armourgarb-etal2026": {
+    "type": "entry",
+    "authors": [
+      "Armour-Garb, Bradley",
+      "Stoljar, Daniel",
+      "Woodbridge, James"
+    ],
+    "year": 2026,
+    "title": "Deflationism About Truth",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/truth-deflationary/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
   "atkins-etal2026": {
     "type": "entry",
     "authors": [
@@ -100,6 +164,23 @@
     "url": "https://plato.stanford.edu/archives/fall2026/entries/essential-accidental/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "avramides2023": {
+    "type": "entry",
+    "authors": [
+      "Avramides, Anita"
+    ],
+    "year": 2023,
+    "title": "Other Minds",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/other-minds/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
   },
   "backstrom-gustafsson2017": {
     "type": "article",
@@ -132,6 +213,40 @@
     "publisher": "P. F. Collier & Son",
     "original_year": 1620
   },
+  "baghramian-carter2025": {
+    "type": "entry",
+    "authors": [
+      "Baghramian, Maria",
+      "Carter, J. Adam"
+    ],
+    "year": 2025,
+    "title": "Relativism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/relativism/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2025 Edition; full text read, 2026-10-01"
+  },
+  "baker2022": {
+    "type": "entry",
+    "authors": [
+      "Baker, Alan"
+    ],
+    "year": 2022,
+    "title": "Simplicity",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2022 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2022/entries/simplicity/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2022 Edition; full text read, 2026-10-01"
+  },
   "baldwin2010": {
     "type": "entry",
     "authors": [
@@ -147,6 +262,45 @@
       "Zalta, Edward N."
     ],
     "url": "https://plato.stanford.edu/archives/sum2010/entries/moore/"
+  },
+  "beall-etal2026": {
+    "type": "entry",
+    "authors": [
+      "Beall, Jc",
+      "Glanzberg, Michael",
+      "Ripley, Ellie",
+      "Rossi, Lorenzo"
+    ],
+    "year": 2026,
+    "title": "Liar Paradox",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/liar-paradox/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "beall-sagi2026": {
+    "type": "entry",
+    "authors": [
+      "Beall, Jc",
+      "Restall, Greg",
+      "Sagi, Gil"
+    ],
+    "year": 2026,
+    "title": "Logical Consequence",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/logical-consequence/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
   },
   "benahmed-pasnau2025": {
     "type": "entry",
@@ -262,6 +416,22 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
   },
+  "bobzien2020": {
+    "type": "entry",
+    "authors": [
+      "Bobzien, Susanne"
+    ],
+    "year": 2020,
+    "title": "Ancient Logic",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2020 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2020/entries/logic-ancient/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2020 Edition; full text read, 2026-10-01"
+  },
   "boespflug-jackson2024": {
     "type": "entry",
     "authors": [
@@ -297,6 +467,22 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2025/entries/skepticism-medieval/"
   },
+  "bommarito2018": {
+    "type": "entry",
+    "authors": [
+      "Bommarito, Nicolas"
+    ],
+    "year": 2018,
+    "title": "Modesty and Humility",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2018 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2018/entries/modesty-humility/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2018 Edition; full text read, 2026-10-01"
+  },
   "bonazzi2024": {
     "type": "entry",
     "authors": [
@@ -331,6 +517,24 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2026/entries/comte/"
   },
+  "boyd-bogen2026": {
+    "type": "entry",
+    "authors": [
+      "Boyd, Nora Mills",
+      "Bogen, James"
+    ],
+    "year": 2026,
+    "title": "Theory and Observation in Science",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/science-theory-observation/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
   "bratman1992": {
     "type": "article",
     "authors": [
@@ -345,6 +549,24 @@
     "doi": "10.1093/mind/101.401.1",
     "access": "subscription",
     "verified": "Crossref record for the DOI, 2026-10-01"
+  },
+  "bringsjord-govindarajulu2026": {
+    "type": "entry",
+    "authors": [
+      "Bringsjord, Selmer",
+      "Govindarajulu, Naveen Sundar"
+    ],
+    "year": 2026,
+    "title": "Artificial Intelligence",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/artificial-intelligence/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "brittain-osorio2026": {
     "type": "entry",
@@ -364,6 +586,41 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2026/entries/arcesilaus/"
   },
+  "brown-fehige2026": {
+    "type": "entry",
+    "authors": [
+      "Brown, James Robert",
+      "Fehige, Yiftach"
+    ],
+    "year": 2026,
+    "title": "Thought Experiments",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/thought-experiment/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "brownstein2025": {
+    "type": "entry",
+    "authors": [
+      "Brownstein, Michael"
+    ],
+    "year": 2025,
+    "title": "Implicit Bias",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/implicit-bias/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2025 Edition; full text read, 2026-10-01"
+  },
   "burch2024": {
     "type": "entry",
     "authors": [
@@ -381,6 +638,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2024/entries/peirce/"
   },
+  "buss-westlund2018": {
+    "type": "entry",
+    "authors": [
+      "Buss, Sarah",
+      "Westlund, Andrea"
+    ],
+    "year": 2018,
+    "title": "Personal Autonomy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2018 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2018/entries/personal-autonomy/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2018 Edition; full text read, 2026-10-01"
+  },
   "campbell2024": {
     "type": "entry",
     "authors": [
@@ -397,6 +671,42 @@
     "url": "https://plato.stanford.edu/archives/sum2024/entries/moral-epistemology/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "cappelen-mckeever2024": {
+    "type": "entry",
+    "authors": [
+      "Cappelen, Herman",
+      "Lepore, Ernest",
+      "McKeever, Matthew"
+    ],
+    "year": 2024,
+    "title": "Quotation",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/quotation/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
+  "capps2023": {
+    "type": "entry",
+    "authors": [
+      "Capps, John"
+    ],
+    "year": 2023,
+    "title": "The Pragmatic Theory of Truth",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2023/entries/truth-pragmatic/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2023 Edition; full text read, 2026-10-01"
   },
   "carter-sosa2026": {
     "type": "entry",
@@ -495,6 +805,24 @@
     "url": "https://www.research.ed.ac.uk/en/publications/ought-to-believe",
     "verified": "Crossref record for the DOI; the author's pre-print (University of Edinburgh repository) read in full, cited by its pages, 2026-10-01"
   },
+  "clerbout-mcconaughey2022": {
+    "type": "entry",
+    "authors": [
+      "Clerbout, Nicolas",
+      "McConaughey, Zoe"
+    ],
+    "year": 2022,
+    "title": "Dialogical Logic",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2022 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2022/entries/logic-dialogical/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2022 Edition; full text read, 2026-10-01"
+  },
   "clifford1879": {
     "type": "chapter",
     "authors": [
@@ -525,6 +853,35 @@
     "publisher": "Clarendon Press",
     "isbn": "9780198242949",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "coherent-iep": {
+    "type": "entry",
+    "authors": [
+      "Murphy, Peter"
+    ],
+    "title": "Coherentism in Epistemology",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/coherent/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "cohnitz-rossberg2024": {
+    "type": "entry",
+    "authors": [
+      "Cohnitz, Daniel",
+      "Rossberg, Marcus"
+    ],
+    "year": 2024,
+    "title": "Nelson Goodman",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2024/entries/goodman/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2024 Edition; full text read, 2026-10-01"
   },
   "cohon2018": {
     "type": "entry",
@@ -560,6 +917,34 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2026/entries/skepticism/"
   },
+  "conspiracy-theories-iep": {
+    "type": "entry",
+    "authors": [
+      "Pauly, Marc"
+    ],
+    "title": "Conspiracy Theories",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/conspiracy-theories/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "crane-french2021": {
+    "type": "entry",
+    "authors": [
+      "Crane, Tim",
+      "French, Craig"
+    ],
+    "year": 2021,
+    "title": "The Problem of Perception",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2021/entries/perception-problem/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2021 Edition; full text read, 2026-10-01"
+  },
   "creath2026": {
     "type": "entry",
     "authors": [
@@ -576,6 +961,57 @@
     "url": "https://plato.stanford.edu/archives/sum2026/entries/logical-empiricism/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "crupi2025": {
+    "type": "entry",
+    "authors": [
+      "Crupi, Vincenzo"
+    ],
+    "year": 2025,
+    "title": "Confirmation",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/confirmation/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "cullen-etal2018": {
+    "type": "article",
+    "authors": [
+      "Cullen, Simon",
+      "Fan, Judith",
+      "van der Brugge, Eva",
+      "Elga, Adam"
+    ],
+    "year": 2018,
+    "title": "Improving analytical reasoning and argument understanding: a quasi-experimental field study of argument visualization",
+    "container": "npj Science of Learning",
+    "volume": "3",
+    "issue": "1",
+    "doi": "10.1038/s41539-018-0038-5",
+    "access": "free",
+    "verified": "Crossref record for the DOI; open-access full text (CC BY 4.0) read, 2026-10-01",
+    "pages": "21"
+  },
+  "das2021": {
+    "type": "entry",
+    "authors": [
+      "Das, Nilanjan"
+    ],
+    "year": 2021,
+    "title": "Śrīharṣa",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2021/entries/sriharsa/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2021 Edition; full text read, 2026-10-01"
   },
   "david2025": {
     "type": "entry",
@@ -594,6 +1030,17 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
   },
+  "deductive-inductive-arguments-iep": {
+    "type": "entry",
+    "authors": [
+      "Shanahan, Timothy"
+    ],
+    "title": "Deductive and Inductive Arguments",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/deductive-inductive-arguments/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
   "descartes1637": {
     "type": "book",
     "authors": [
@@ -604,6 +1051,77 @@
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #59, full text read; an English translation whose translator this edition does not name; cited by part, 2026-10-01",
     "url": "https://www.gutenberg.org/ebooks/59"
+  },
+  "deshpande2026": {
+    "type": "entry",
+    "authors": [
+      "Deshpande, Madhav"
+    ],
+    "year": 2026,
+    "title": "Language and Testimony in Classical Indian Philosophy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/language-india/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "deutsch-etal2026": {
+    "type": "entry",
+    "authors": [
+      "Deutsch, Harry",
+      "Marshall, Oliver",
+      "Irvine, Andrew David"
+    ],
+    "year": 2026,
+    "title": "Russell’s Paradox",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/russell-paradox/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "devries-sachs2024": {
+    "type": "entry",
+    "authors": [
+      "deVries, Willem",
+      "Sachs, Carl"
+    ],
+    "year": 2024,
+    "title": "Wilfrid Sellars",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/sellars/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
+  "deweeseboyd2023": {
+    "type": "entry",
+    "authors": [
+      "Deweese-Boyd, Ian"
+    ],
+    "year": 2023,
+    "title": "Self-Deception",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2023/entries/self-deception/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2023 Edition; full text read, 2026-10-01"
   },
   "douven2025": {
     "type": "entry",
@@ -640,6 +1158,17 @@
     ],
     "url": "https://plato.stanford.edu/archives/fall2026/entries/berkeley/"
   },
+  "doyle1887": {
+    "type": "book",
+    "authors": [
+      "Doyle, Arthur Conan"
+    ],
+    "year": 1887,
+    "title": "A Study in Scarlet",
+    "url": "https://www.gutenberg.org/ebooks/244",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #244 (first published in Beeton's Christmas Annual, 1887); full text read, 2026-10-01"
+  },
   "druart2024": {
     "type": "entry",
     "authors": [
@@ -660,7 +1189,8 @@
   "durand-baltzly2023": {
     "type": "entry",
     "authors": [
-      "Durand, Marion, Simon Shogry,",
+      "Durand, Marion",
+      "Shogry, Simon",
       "Baltzly, Dirk"
     ],
     "year": 2023,
@@ -692,6 +1222,67 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2025/entries/skepticism-content-externalism/"
   },
+  "edgington2025": {
+    "type": "entry",
+    "authors": [
+      "Edgington, Dorothy"
+    ],
+    "year": 2025,
+    "title": "Indicative Conditionals",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/conditionals/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
+  },
+  "epi-luck-iep": {
+    "type": "entry",
+    "authors": [
+      "Engel Jr., Mylan"
+    ],
+    "title": "Epistemic Luck",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/epi-luck/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "epistemic-injustice-iep": {
+    "type": "entry",
+    "authors": [
+      "Sinclair, Rob"
+    ],
+    "title": "Epistemic Injustice",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/epistemic-injustice/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "evidentia-iep": {
+    "type": "entry",
+    "authors": [
+      "Mittag, Daniel M."
+    ],
+    "title": "Evidentialism",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/evidentia/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "fallacy-iep": {
+    "type": "entry",
+    "authors": [
+      "Dowden, Bradley"
+    ],
+    "title": "Fallacies",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/fallacy/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
   "ferrier1856": {
     "type": "book",
     "authors": [
@@ -705,6 +1296,24 @@
     "url": "https://archive.org/details/institutesofmeta00ferr",
     "access": "public-domain",
     "verified": "Internet Archive scan (title page: second edition) and catalogue record (Edinburgh: W. Blackwood, 1856); first edition 1854 per the IEP entry; full text read, 2026-10-01"
+  },
+  "fidler-wilcox2026": {
+    "type": "entry",
+    "authors": [
+      "Fidler, Fiona",
+      "Wilcox, John"
+    ],
+    "year": 2026,
+    "title": "Reproducibility of Scientific Results",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/scientific-reproducibility/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "foglia-ferrari2026": {
     "type": "entry",
@@ -740,6 +1349,52 @@
     "url": "https://plato.stanford.edu/archives/win2025/entries/religion-epistemology/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "found-ep-iep": {
+    "type": "entry",
+    "authors": [
+      "Poston, Ted"
+    ],
+    "title": "Foundationalism",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/found-ep/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "frances-matheson2026": {
+    "type": "entry",
+    "authors": [
+      "Frances, Bryan",
+      "Matheson, Jonathan"
+    ],
+    "year": 2026,
+    "title": "Disagreement",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/disagreement/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "franks2024": {
+    "type": "entry",
+    "authors": [
+      "Franks, Curtis"
+    ],
+    "year": 2024,
+    "title": "Propositional Logic",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/logic-propositional/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
   },
   "fraser2024": {
     "type": "entry",
@@ -868,6 +1523,23 @@
     "access": "public-domain",
     "verified": "Internet Archive scan (title page: translated from the Hindustani by Claud Field; London: John Murray, 1910); full text read; an abridged version of the Persian Kimiya-yi sa'adat, cited by page, 2026-10-01"
   },
+  "gillon2024": {
+    "type": "entry",
+    "authors": [
+      "Gillon, Brendan"
+    ],
+    "year": 2024,
+    "title": "Logic in Classical Indian Philosophy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2024/entries/logic-india/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2024 Edition; full text read, 2026-10-01"
+  },
   "glanzberg2025": {
     "type": "entry",
     "authors": [
@@ -902,6 +1574,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2025/entries/xunzi/"
   },
+  "goldman-beddor2021": {
+    "type": "entry",
+    "authors": [
+      "Goldman, Alvin",
+      "Beddor, Bob"
+    ],
+    "year": 2021,
+    "title": "Reliabilist Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2021/entries/reliabilism/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2021 Edition; full text read, 2026-10-01"
+  },
   "goldman1999": {
     "type": "book",
     "authors": [
@@ -931,6 +1620,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2024/entries/james/"
   },
+  "gorisse2024": {
+    "type": "entry",
+    "authors": [
+      "Gorisse, Marie-Hélène"
+    ],
+    "year": 2024,
+    "title": "Jaina Philosophy",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/jaina-philosophy/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
   "graham2023": {
     "type": "entry",
     "authors": [
@@ -947,6 +1653,22 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/win2023/entries/heraclitus/"
+  },
+  "grasswick2018": {
+    "type": "entry",
+    "authors": [
+      "Grasswick, Heidi"
+    ],
+    "year": 2018,
+    "title": "Feminist Social Epistemology",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2018 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2018/entries/feminist-social-epistemology/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2018 Edition; full text read, 2026-10-01"
   },
   "griffel2026": {
     "type": "entry",
@@ -1046,6 +1768,23 @@
     "isbn": "9780791409473",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
   },
+  "hajek2023": {
+    "type": "entry",
+    "authors": [
+      "Hájek, Alan"
+    ],
+    "year": 2023,
+    "title": "Interpretations of Probability",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/probability-interpret/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
   "hajek2024": {
     "type": "entry",
     "authors": [
@@ -1095,6 +1834,40 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/sum2024/entries/zhuangzi/"
+  },
+  "hansen2024b": {
+    "type": "entry",
+    "authors": [
+      "Hansen, Hans"
+    ],
+    "year": 2024,
+    "title": "Fallacies",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/fallacies/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "hansson2025": {
+    "type": "entry",
+    "authors": [
+      "Hansson, Sven Ove"
+    ],
+    "year": 2025,
+    "title": "Science and Pseudo-Science",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/pseudo-science/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
   },
   "hasan-fumerton2022": {
     "type": "entry",
@@ -1149,6 +1922,75 @@
     ],
     "url": "https://plato.stanford.edu/archives/win2025/entries/arabic-islamic-influence/"
   },
+  "hatfield2026": {
+    "type": "entry",
+    "authors": [
+      "Hatfield, Gary"
+    ],
+    "year": 2026,
+    "title": "René Descartes",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/descartes/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "hatfield2026b": {
+    "type": "entry",
+    "authors": [
+      "Hatfield, Gary"
+    ],
+    "year": 2026,
+    "title": "Sense Data",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/sense-data/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "henderson2024": {
+    "type": "entry",
+    "authors": [
+      "Henderson, Leah"
+    ],
+    "year": 2024,
+    "title": "The Problem of Induction",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/induction-problem/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
+  "hepburn-andersen2026": {
+    "type": "entry",
+    "authors": [
+      "Hepburn, Brian",
+      "Andersen, Hanne"
+    ],
+    "year": 2026,
+    "title": "Scientific Method",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/scientific-method/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
   "hetherington-iep": {
     "type": "entry",
     "authors": [
@@ -1193,6 +2035,40 @@
     "url": "https://plato.stanford.edu/archives/sum2024/entries/critical-thinking/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "hitchcock2024b": {
+    "type": "entry",
+    "authors": [
+      "Hitchcock, Christopher"
+    ],
+    "year": 2024,
+    "title": "Causal Models",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2024/entries/causal-models/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "hitchcock2026": {
+    "type": "entry",
+    "authors": [
+      "Hitchcock, Christopher"
+    ],
+    "year": 2026,
+    "title": "Probabilistic Causation",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/causation-probabilistic/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
   },
   "hume1739": {
     "type": "book",
@@ -1253,6 +2129,18 @@
     "url": "https://plato.stanford.edu/archives/sum2026/entries/knowledge-analysis/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
+  },
+  "inf-epis-iep": {
+    "type": "entry",
+    "authors": [
+      "Klein, Peter D.",
+      "Turri, John"
+    ],
+    "title": "Infinitism in Epistemology",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/inf-epis/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
   },
   "ioannidis2005": {
     "type": "article",
@@ -1364,6 +2252,22 @@
     ],
     "url": "https://plato.stanford.edu/archives/fall2022/entries/pragmatic-belief-god/"
   },
+  "joyce2021": {
+    "type": "entry",
+    "authors": [
+      "Joyce, James"
+    ],
+    "year": 2021,
+    "title": "Bayes’ Theorem",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2021/entries/bayes-theorem/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2021 Edition; full text read, 2026-10-01"
+  },
   "kant1787": {
     "type": "book",
     "authors": [
@@ -1432,6 +2336,41 @@
       "Zalta, Edward N."
     ],
     "url": "https://plato.stanford.edu/archives/spr2021/entries/modality-varieties/"
+  },
+  "knight2025": {
+    "type": "entry",
+    "authors": [
+      "Knight, Carl"
+    ],
+    "year": 2025,
+    "title": "Reflective Equilibrium",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/reflective-equilibrium/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2025 Edition; full text read, 2026-10-01"
+  },
+  "kolodny-brunero2023": {
+    "type": "entry",
+    "authors": [
+      "Kolodny, Niko",
+      "Brunero, John"
+    ],
+    "year": 2023,
+    "title": "Instrumental Rationality",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2023/entries/rationality-instrumental/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2023 Edition; full text read, 2026-10-01"
   },
   "konstan2025": {
     "type": "entry",
@@ -1671,6 +2610,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/spr2020/entries/leibniz/"
   },
+  "ludlow2023": {
+    "type": "entry",
+    "authors": [
+      "Ludlow, Peter"
+    ],
+    "year": 2023,
+    "title": "Descriptions",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/descriptions/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
   "luper2020": {
     "type": "entry",
     "authors": [
@@ -1720,6 +2676,39 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2020/entries/mill/"
   },
+  "mahon2016": {
+    "type": "entry",
+    "authors": [
+      "Mahon, James Edwin"
+    ],
+    "year": 2016,
+    "title": "The Definition of Lying and Deception",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2016 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/win2016/entries/lying-definition/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2016 Edition; full text read, 2026-10-01"
+  },
+  "mallon2026": {
+    "type": "entry",
+    "authors": [
+      "Mallon, Ron"
+    ],
+    "year": 2026,
+    "title": "Naturalistic Approaches to Social Construction",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/social-construction-naturalistic/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
   "mallozzi-etal2024": {
     "type": "entry",
     "authors": [
@@ -1738,6 +2727,23 @@
     "url": "https://plato.stanford.edu/archives/sum2024/entries/modality-epistemology/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "malpas2024": {
+    "type": "entry",
+    "authors": [
+      "Malpas, Jeff"
+    ],
+    "year": 2024,
+    "title": "Donald Davidson",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/davidson/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
   "marcotte2025": {
     "type": "entry",
@@ -1838,6 +2844,23 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
+  "mcleod2023": {
+    "type": "entry",
+    "authors": [
+      "McLeod, Carolyn"
+    ],
+    "year": 2023,
+    "title": "Trust",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2023/entries/trust/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2023 Edition; full text read, 2026-10-01"
+  },
   "menzel2025": {
     "type": "entry",
     "authors": [
@@ -1855,6 +2878,59 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
   },
+  "menzies-beebee2025": {
+    "type": "entry",
+    "authors": [
+      "Menzies, Peter",
+      "Beebee, Helen"
+    ],
+    "year": 2025,
+    "title": "Counterfactual Theories of Causation",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2025/entries/causation-counterfactual/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "michaelian-sutton2026": {
+    "type": "entry",
+    "authors": [
+      "Michaelian, Kourken",
+      "Sutton, John"
+    ],
+    "year": 2026,
+    "title": "Memory",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/memory/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "michaelson2024": {
+    "type": "entry",
+    "authors": [
+      "Michaelson, Eliot"
+    ],
+    "year": 2024,
+    "title": "Reference",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2024/entries/reference/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
   "mill1843": {
     "type": "book",
     "authors": [
@@ -1869,6 +2945,23 @@
     "url": "https://www.gutenberg.org/ebooks/27942",
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #27942, full text and title page read; the eighth edition, cited by book, chapter and section, 2026-10-01"
+  },
+  "miller2026": {
+    "type": "entry",
+    "authors": [
+      "Miller, Alexander"
+    ],
+    "year": 2026,
+    "title": "Realism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/realism/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "morison2026": {
     "type": "entry",
@@ -1905,6 +2998,24 @@
     "url": "https://plato.stanford.edu/archives/spr2026/entries/imagination/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
+  "musgrave-pigden2026": {
+    "type": "entry",
+    "authors": [
+      "Musgrave, Alan",
+      "Pigden, Charles"
+    ],
+    "year": 2026,
+    "title": "Imre Lakatos",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/lakatos/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "nails-monoson2025": {
     "type": "entry",
@@ -1977,6 +3088,24 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
+  "oberheim-preston2025": {
+    "type": "entry",
+    "authors": [
+      "Oberheim, Eric",
+      "Preston, John"
+    ],
+    "year": 2025,
+    "title": "Paul Feyerabend",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2025/entries/feyerabend/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2025 Edition; full text read, 2026-10-01"
+  },
   "oconnor-etal2026": {
     "type": "entry",
     "authors": [
@@ -2012,6 +3141,25 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/fall2025/entries/justep-coherence/"
+  },
+  "oppy-etal2025": {
+    "type": "entry",
+    "authors": [
+      "Oppy, Graham",
+      "Rasmussen, Joshua",
+      "Schmid, Joseph"
+    ],
+    "year": 2025,
+    "title": "Ontological Arguments",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/ontological-arguments/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
   },
   "pagin-marsili2025": {
     "type": "entry",
@@ -2064,6 +3212,24 @@
     "url": "https://plato.stanford.edu/archives/win2024/entries/episteme-techne/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
+  "parsons-ciola2025": {
+    "type": "entry",
+    "authors": [
+      "Parsons, Terence",
+      "Ciola, Graziana"
+    ],
+    "year": 2025,
+    "title": "The Traditional Square of Opposition",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/square/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
   },
   "pascal1670": {
     "type": "book",
@@ -2146,6 +3312,20 @@
     "access": "public-domain",
     "verified": "Internet Archive scan of the November 1877 issue, where the essay opens the issue at p. 1; full text read; cited by Peirce's section numbers, 2026-10-01"
   },
+  "peirce1878": {
+    "type": "article",
+    "authors": [
+      "Peirce, Charles Sanders"
+    ],
+    "year": 1878,
+    "title": "Deduction, Induction, and Hypothesis",
+    "container": "Popular Science Monthly",
+    "volume": "13",
+    "pages": "470–482",
+    "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/August_1878/Illustrations_of_the_Logic_of_Science_VI",
+    "access": "public-domain",
+    "verified": "Wikisource transcription with page scans of Popular Science Monthly vol. 13 (August 1878), pp. 470–482, the sixth of the Illustrations of the Logic of Science; full text read, 2026-10-01"
+  },
   "peltonen2025": {
     "type": "entry",
     "authors": [
@@ -2179,6 +3359,17 @@
     "url": "https://plato.stanford.edu/archives/sum2024/entries/epistemic-utility/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
+  },
+  "phen-con-iep": {
+    "type": "entry",
+    "authors": [
+      "Huemer, Michael"
+    ],
+    "title": "Phenomenal Conservatism",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/phen-con/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
   },
   "phillips-vaidya2026": {
     "type": "entry",
@@ -2340,6 +3531,41 @@
     "access": "subscription",
     "verified": "Crossref record for the DOI; end page from the SEP bibliographies, 2026-10-01"
   },
+  "raffman-hyde2026": {
+    "type": "entry",
+    "authors": [
+      "Raffman, Diana",
+      "Hyde, Dominic"
+    ],
+    "year": 2026,
+    "title": "Sorites Paradox",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/sorites-paradox/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
+  "rapp2023": {
+    "type": "entry",
+    "authors": [
+      "Rapp, Christof"
+    ],
+    "year": 2023,
+    "title": "Aristotle’s Rhetoric",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/aristotle-rhetoric/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
   "reed2022": {
     "type": "entry",
     "authors": [
@@ -2387,6 +3613,36 @@
     "url": "https://plato.stanford.edu/archives/win2020/entries/scientific-objectivity/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2020 Edition; full text read, 2026-10-01"
+  },
+  "reliabil-iep": {
+    "type": "entry",
+    "authors": [
+      "Becker, Kelly"
+    ],
+    "title": "Reliabilism",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/reliabil/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
+  },
+  "rendsvig-etal2025": {
+    "type": "entry",
+    "authors": [
+      "Rendsvig, Rasmus",
+      "Symons, John",
+      "Wang, Yanjing"
+    ],
+    "year": 2025,
+    "title": "Epistemic Logic",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2025/entries/logic-epistemic/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
   },
   "rey2026": {
     "type": "entry",
@@ -2454,6 +3710,23 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/fall2024/entries/kant/"
+  },
+  "romeijn2025": {
+    "type": "entry",
+    "authors": [
+      "Romeijn, Jan-Willem"
+    ],
+    "year": 2025,
+    "title": "Philosophy of Statistics",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2025/entries/statistics/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
   },
   "rosker2025": {
     "type": "entry",
@@ -2607,6 +3880,23 @@
     "access": "open-access",
     "url": "https://europepmc.org/article/PMC/PMC3267473",
     "verified": "Crossref record for the DOI; full text (CC BY-NC) read through Europe PMC, PMC3267473, 2026-10-01"
+  },
+  "schweikard-schmid2021": {
+    "type": "entry",
+    "authors": [
+      "Schweikard, David P.",
+      "Schmid, Hans Bernhard"
+    ],
+    "year": 2021,
+    "title": "Collective Intentionality",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2021 Edition",
+    "editors": [
+      "Zalta, Edward N."
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2021/entries/collective-intentionality/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2021 Edition; full text read, 2026-10-01"
   },
   "schwitzgebel2024": {
     "type": "entry",
@@ -2774,6 +4064,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/win2023/entries/whewell/"
   },
+  "sorensen2023": {
+    "type": "entry",
+    "authors": [
+      "Sorensen, Roy"
+    ],
+    "year": 2023,
+    "title": "Vagueness",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/vagueness/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
   "sorensen2024": {
     "type": "entry",
     "authors": [
@@ -2809,6 +4116,40 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/sum2025/entries/ockham/"
+  },
+  "speaks2025": {
+    "type": "entry",
+    "authors": [
+      "Speaks, Jeff"
+    ],
+    "year": 2025,
+    "title": "Theories of Meaning",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2025/entries/meaning/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "stanford2023": {
+    "type": "entry",
+    "authors": [
+      "Stanford, Kyle"
+    ],
+    "year": 2023,
+    "title": "Underdetermination of Scientific Theory",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2023/entries/scientific-underdetermination/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2023 Edition; full text read, 2026-10-01"
   },
   "stanley-williamson2001": {
     "type": "article",
@@ -2873,7 +4214,8 @@
   "sytsma-willemsen2026": {
     "type": "entry",
     "authors": [
-      "Sytsma, Justin, Kevin Reuter,",
+      "Sytsma, Justin",
+      "Reuter, Kevin",
       "Willemsen, Pascale"
     ],
     "year": 2026,
@@ -2904,6 +4246,40 @@
       "Nodelman, Uri"
     ],
     "url": "https://plato.stanford.edu/archives/sum2026/entries/ryle/"
+  },
+  "thagard2023": {
+    "type": "entry",
+    "authors": [
+      "Thagard, Paul"
+    ],
+    "year": 2023,
+    "title": "Cognitive Science",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2023 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2023/entries/cognitive-science/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2023 Edition; full text read, 2026-10-01"
+  },
+  "thijssen2026": {
+    "type": "entry",
+    "authors": [
+      "Thijssen, Hans"
+    ],
+    "year": 2026,
+    "title": "Nicholas of Autrecourt",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/autrecourt/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
   },
   "thornton2026": {
     "type": "entry",
@@ -3008,6 +4384,16 @@
     ],
     "url": "https://plato.stanford.edu/archives/win2024/entries/locke/"
   },
+  "val-snd-iep": {
+    "type": "entry",
+    "authors": [],
+    "title": "Validity and Soundness",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/val-snd/",
+    "access": "free",
+    "verified": "Full text read; the entry states that its author is anonymous; the entry is undated, 2026-10-01",
+    "org": "Internet Encyclopedia of Philosophy"
+  },
   "vannorden2024": {
     "type": "entry",
     "authors": [
@@ -3024,6 +4410,51 @@
     "url": "https://plato.stanford.edu/archives/fall2024/entries/wang-yangming/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
+  },
+  "vayrynen2026": {
+    "type": "entry",
+    "authors": [
+      "Väyrynen, Pekka"
+    ],
+    "year": 2026,
+    "title": "Thick Ethical Concepts",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/thick-ethical-concepts/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
+  },
+  "vineberg2022": {
+    "type": "entry",
+    "authors": [
+      "Vineberg, Susan"
+    ],
+    "year": 2022,
+    "title": "Dutch Book Arguments",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2022 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2022/entries/dutch-book/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2022 Edition; full text read, 2026-10-01"
+  },
+  "virtue-epistemology-iep": {
+    "type": "entry",
+    "authors": [
+      "Baehr, Jason S."
+    ],
+    "title": "Virtue Epistemology",
+    "container": "Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/virtue-epistemology/",
+    "access": "free",
+    "verified": "Full text read; author from the entry's author information; the entry is undated, 2026-10-01"
   },
   "vogt2026": {
     "type": "entry",
@@ -3075,6 +4506,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2026/entries/nagarjuna/"
   },
+  "wheeler2024": {
+    "type": "entry",
+    "authors": [
+      "Wheeler, Gregory"
+    ],
+    "year": 2024,
+    "title": "Bounded Rationality",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Winter 2024 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/win2024/entries/bounded-rationality/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2024 Edition; full text read, 2026-10-01"
+  },
   "williams1973": {
     "type": "book",
     "authors": [
@@ -3098,6 +4546,23 @@
     "publisher": "Oxford University Press",
     "isbn": "9780198250432",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "young2026": {
+    "type": "entry",
+    "authors": [
+      "Young, James O."
+    ],
+    "year": 2026,
+    "title": "The Coherence Theory of Truth",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/spr2026/entries/truth-coherence/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Spring 2026 Edition; full text read, 2026-10-01"
   },
   "zalta2026": {
     "type": "entry",
