@@ -947,7 +947,8 @@
     if (readbar) readbar.firstChild.style.transform = "scaleX(" + lastP.toFixed(4) + ")";
     var mins = Math.ceil(parseInt(article.getAttribute("data-read-min"), 10) * (1 - lastP));
     var text = lastP > 0.97 ? T("Finished", "تمام شد") : N(mins) + T(" min left", " دقیقه مانده");
-    leftEls.forEach(function (el) { el.textContent = text; });
+    // nothing at the very top, where the hero already says how long the chapter takes
+    leftEls.forEach(function (el) { el.textContent = lastP > 0.01 ? text : ""; });
     if (chip && focused() && lastP > 0.01) {
       chip.textContent = text; chip.classList.add("on");
       clearTimeout(chipTimer); chipTimer = setTimeout(function () { chip.classList.remove("on"); }, 1600);

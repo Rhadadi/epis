@@ -653,7 +653,7 @@ def hero(art, key, root, *, kicker, title, cls="", dek=None, cite=None, lede=Non
              ('<div class="facts">' + "".join(f"<span>{f}</span>" for f in facts) + "</div>") if facts else "",
              ('<div class="actions">' + actions + "</div>") if actions else ""]
     plate = f'<div class="plate">{plate_html if plate_html is not None else art.caption(key)}</div>' if art.has(key) else ""
-    image = art.img(key, root, eager=True, alt=image_alt) if art.has(key) else ""
+    image = f'<div class="hero-art">{art.img(key, root, eager=True, alt=image_alt)}</div>' if art.has(key) else ""
     return (f'<header class="hero {cls}" style="--art:{art.color(key)};--focus:{art.focus(key)}">{image}'
             f'<div class="hero-in">{"".join(parts)}{plate}</div></header>')
 
@@ -833,7 +833,6 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     facts = [f"{icon('clock')} {num(ch.minutes)} {L('min read', 'دقیقه مطالعه')}"]
     listen_card, actions = "", f'<a class="btn primary" href="#main">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
     if ch.track:
-        facts.append(f"{icon('phones')} {minutes_label(ch.track['duration'])} {L('audio', ch_audio(ch, 'صوت', 'صوت انگلیسی'))}")
         titles = {}
         if LANG == "fa" and not fa_voice(ch):
             by_time = {t: s for s, t in at.items()}
@@ -864,13 +863,14 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                        f'<circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg></button>'
                        f'<div class="lmenu" hidden><div class="lacts"></div>'
                        f'<p class="kicker">{L("Sections", "بخش‌ها")}</p><ol class="lsecs">{secs}</ol></div></section>')
-        actions += f'<button class="btn" type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>'
+        actions += listen_card
     dek = cite = None
     if epigraphs:
         dek, cite = md.inline(epigraphs[0][0]), md.inline(epigraphs[0][1])
         if ch.fallback:
             dek, cite = f'<span dir="ltr" lang="en">{dek}</span>', f'<span dir="ltr" lang="en">{cite}</span>'
-    head = hero(art, ch.art, root, kicker=kicker, title=title_html(ch), dek=dek, cite=cite, facts=facts, actions=actions)
+    head = hero(art, ch.art, root, kicker=kicker, title=title_html(ch), dek=dek, cite=cite, facts=facts, actions=actions,
+                cls="with-listen" if ch.track else "")
 
     listen_link = (f'<button type="button" data-listen>{icon("phones")} {L("Listen", "شنیدن")}</button>' if ch.track else "")
     focus_head = (f'<div class="focus-head"><span class="kicker">{kicker}</span><div class="ftitle" role="heading" aria-level="1">{title_html(ch)}</div>'
@@ -907,7 +907,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     page = (f"{head}{label(art, ch.art)}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
             f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
-            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{chnav}{notice}{listen_card}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
+            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{chnav}{notice}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
             f'<div class="prose"{prose_attrs}>{more_quotes}{body}</div>{deeper_box(ch, C, root) if ch.num <= 16 else ""}</article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
     svgs_later.append((OUT() / "guide" / ch.href, page, root, ch, desc))

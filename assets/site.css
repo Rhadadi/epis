@@ -77,7 +77,8 @@ html[dir="rtl"] .skip{left:auto;right:8px}
   color:#fff;background:var(--art,#1d2226);overflow:hidden}
 .hero.short{min-height:min(62vh,600px)}
 .hero.band{min-height:min(52vh,470px)}
-.hero>picture,.hero>img{position:absolute;inset:0;z-index:-2}
+.hero>picture,.hero>img,.hero-art{position:absolute;inset:0;z-index:-2}
+.hero-art{overflow:hidden}.hero-art img{position:absolute;inset:0}
 .hero img.art{width:100%;height:100%;object-fit:cover;object-position:var(--focus,50% 50%);
   animation:drift 22s ease-out both;transform-origin:var(--focus,50% 50%)}
 @keyframes drift{from{transform:scale(1.07)}to{transform:scale(1)}}
@@ -114,6 +115,18 @@ html[dir="rtl"] .skip{left:auto;right:8px}
 .hero .btn:hover{background:rgba(255,255,255,.2);border-color:#fff}
 .hero .btn.primary{background:#F2B84B;border-color:#F2B84B;color:#1a1408}
 .hero .btn.primary:hover{background:#F6C970}
+/* a chapter's hero: "Start reading" and the listen card side by side; its menu may hang below the hero */
+.hero.with-listen{z-index:3;overflow:visible;overflow-x:clip}
+.hero .actions .listen{flex:0 1 400px;min-width:min(100%,300px);margin:0;padding:8px;padding-inline-start:10px;color:#fff;
+  background:rgba(8,16,24,.5);border-color:rgba(255,255,255,.34);box-shadow:none;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero .listen .play{background:#F2B84B;color:#1a1408}
+.hero .listen .lt b{color:#fff}
+.hero .listen .lt>span{color:rgba(255,255,255,.76)}
+.hero .listen .more{border-color:rgba(255,255,255,.4);color:#fff}
+.hero .listen .more:hover,.hero .listen .more[aria-expanded="true"]{border-color:#F2B84B;color:#fff}
+.hero .listen .lmenu{color:var(--ink)}.hero .listen .lmenu .kicker{text-shadow:none}
+@media(max-width:600px){.hero .actions .listen{flex-basis:100%}
+  .hero.with-listen .actions .btn{flex:1 1 100%;justify-content:center;min-height:52px}}
 
 /* museum label under a hero */
 .art-label{max-width:var(--wide);margin:0 auto;padding:18px var(--gutter) 0;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;
@@ -340,6 +353,7 @@ html[data-shade="black"]{
 /* ---------------------------------------------------------------- reading progress */
 .readbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:62;pointer-events:none}
 .readbar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+.side .left:empty{display:none}
 .side .left{margin:18px 0 0;padding-left:16px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--dim)}
 .leftchip{position:fixed;right:16px;bottom:16px;z-index:65;padding:6px 12px;border-radius:999px;border:1px solid var(--rule);
   background:var(--surface);color:var(--dim);font-family:var(--mono);font-size:.72rem;box-shadow:var(--shadow);opacity:0;transition:opacity .4s;pointer-events:none}
