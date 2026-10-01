@@ -31,7 +31,7 @@ Total: 15 h 43 min.
 
 ## The ElevenLabs edition
 
-The chapters are being re-recorded one at a time with [ElevenLabs](https://elevenlabs.io) (the `eleven_v4_turbo` model), from the same narration scripts described below. Three voices share the reading:
+Every chapter is recorded with [ElevenLabs](https://elevenlabs.io) (the `eleven_v4_turbo` model), from the narration scripts described below. This replaced an earlier edition voiced by the open Kokoro-82M model. Three voices share the reading:
 
 - **Arthur**, an American male voice, is the narrator and reads most of the text, and every quiz answer.
 - **Jane**, a British female voice, reads every third section and asks the quiz questions. In dialogues she is the second speaker.
@@ -39,7 +39,7 @@ The chapters are being re-recorded one at a time with [ElevenLabs](https://eleve
 
 Instead of chimes between sections, each heading is followed by a pause (a second after a section heading, a little less after smaller ones). A chime is kept at the opening, before the quiz and before the last section. Each chapter is checked by transcribing it back with a speech-recognition model and comparing the result with the script. The tool is `guide/fa/audio/tools/eleven_narrate.py --edition en`, shared with the Persian edition.
 
-The sections below describe how the scripts are written, and how the Kokoro chapters were voiced.
+The sections below describe how the scripts are written, and how the earlier Kokoro edition was voiced. Its tools are kept, so that edition can still be made again for free.
 
 ## What changes when the guide is read aloud
 
@@ -53,7 +53,7 @@ A page is scanned by the eye, but a recording has to be followed in order. So th
 - **Diagrams are left out.** The text around each diagram already says what it shows.
 - **"Check your understanding" becomes a spoken quiz.** Each question is followed by five seconds of silence to think. Pause the recording if you want longer. The answer follows.
 
-## How the reading is made less robotic
+## How the reading is made less robotic (Kokoro edition)
 
 Monotone text-to-speech comes from three things: every sentence has the same shape, every pause is the same length, and one voice does everything. The narration works against all three.
 
@@ -70,15 +70,18 @@ The voice is synthetic, so expect occasional oddities: a stress on the wrong syl
 |---|---|
 | `NN-*.mp3` | One track per chapter, with chapter markers |
 | `index.html`, `tracks.js` | The player page and its track list with section times |
+| `sync/NN-*.json` | Where each line of the script falls in the ElevenLabs recording, and which voice reads it |
 | `scripts/NN-*.txt` | The narration scripts: what is read, in which voice, with which pauses |
 | `tools/make_script.py` | Converts a chapter's markdown into a narration script |
 | `tools/script_extras.py` | Hand-written intros and outros, table readings, and spoken rewrites of formulas |
 | `tools/lexicon.txt` | Pronunciations for names and foreign terms |
-| `tools/narrate.py` | Renders scripts to MP3: pronunciation, voices, pacing, chimes, loudness, tags |
+| `tools/narrate.py` | Kokoro edition: renders scripts to MP3 (pronunciation, voices, pacing, chimes, loudness, tags); `--index` rebuilds `tracks.js` |
 
 ## Regenerating the audio
 
-After editing a chapter, rebuild its script and audio. Rendered sentences are cached, so only changed lines are synthesized again.
+After editing a chapter, rebuild its script with `make_script.py`. To record it again with ElevenLabs, run `python3 eleven_narrate.py --edition en --chapter 5` in `guide/fa/audio/tools/` (it needs `ELEVENLABS_API_KEY`, checks the remaining credits before each request, and only re-records the segments whose text changed), then copy the MP3 from `.eleven-en/publish/` here and its line timings to `sync/`, and rebuild the track list with `narrate.py --index`.
+
+For the Kokoro edition, rebuild the script and audio as below. Rendered sentences are cached, so only changed lines are synthesized again.
 
 ```sh
 cd guide/audio/tools
@@ -87,13 +90,14 @@ python3 narrate.py 05               # re-render chapter 5 (or --all --jobs 4)
 python3 narrate.py --phonemes "Gettier's paper"   # check a pronunciation
 ```
 
-Requirements: Python 3.10 or later with `onnxruntime`, `kokoro-onnx`, `misaki[en]`, `spacy`, `textblob`, `num2words`, `soundfile` and `numpy`, plus `espeak-ng` and `ffmpeg`. Put the Kokoro v1.0 ONNX model (`kokoro-v1.0.onnx`, or a quantized version) and the voice file (`voices-v1.0.bin`) in `tools/kokoro/`. Both are published with [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx/releases). These tracks were rendered with the full-precision (fp32) v1.0 model, which on a CPU is both faster and better-sounding than the 8-bit quantized one.
+Requirements: Python 3.10 or later with `onnxruntime`, `kokoro-onnx`, `misaki[en]`, `spacy`, `textblob`, `num2words`, `soundfile` and `numpy`, plus `espeak-ng` and `ffmpeg`. Put the Kokoro v1.0 ONNX model (`kokoro-v1.0.onnx`, or a quantized version) and the voice file (`voices-v1.0.bin`) in `tools/kokoro/`. Both are published with [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx/releases). The Kokoro tracks were rendered with the full-precision (fp32) v1.0 model, which on a CPU is both faster and better-sounding than the 8-bit quantized one.
 
 To fix a mispronunciation, add a line to `tools/lexicon.txt` and re-render the chapter. To change what is read, edit the chapter and run `make_script.py`, or add a rewrite to `script_extras.py`. Edits made by hand to a script are overwritten the next time `make_script.py` runs.
 
 ## Credits and licenses
 
-- Voice model: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) by hexgrad, Apache License 2.0.
+- Voices: Arthur, Jane and Adam Stone from [ElevenLabs](https://elevenlabs.io), used under the site's ElevenLabs subscription.
+- Earlier edition's voice model: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) by hexgrad, Apache License 2.0.
 - Grapheme-to-phoneme: [misaki](https://github.com/hexgrad/misaki), Apache License 2.0, with [espeak-ng](https://github.com/espeak-ng/espeak-ng) as a fallback for unknown words.
 - Part-of-speech tagging: the Pattern tagger bundled with [TextBlob](https://github.com/sloria/TextBlob), MIT License.
 - ONNX runtime wrapper: [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), MIT License.
