@@ -818,7 +818,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
             return f'<p id="{gid}" class="gterm"><strong>{m.group(1)}.</strong>' if gid else m.group(0)
         body = re.sub(r"<p><strong>(.+?)\.</strong>", gterm, body)
     collect_sections(ch, body)
-    body = scholarly_links(ch, body)
+    body = deeper_links(ch, body)
 
     more_quotes = "".join(
         f'<blockquote class="quote"><p>{md.inline(q)}</p><span class="by">— {md.inline(c)}</span></blockquote>'
@@ -2178,7 +2178,7 @@ def build_offline_list():
         paths += sorted(f"{base}concepts/{p.name}" for p in (ROOT / base / "concepts").glob("*.html"))
     for base in ("", "fa/"):
         paths += sorted(f"{base}guide/listen/{p.name}" for p in (ROOT / base / "guide" / "listen").glob("*.html"))
-    paths += sorted(f"scholarly/{p.name}" for p in (ROOT / "scholarly").glob("*.html"))
+    paths += sorted(f"deeper/{p.relative_to(ROOT / 'deeper').as_posix()}" for p in (ROOT / "deeper").glob("**/*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
@@ -2367,17 +2367,30 @@ def build_epub(chapters, art):
     return out
 
 
-# ----------------------------------------------------------------------------- scholarly companions
+# ----------------------------------------------------------------------------- deeper study
 
-# A second, scholarly layer beside the chapters, kept apart from them: the narrated chapters (guide/NN-*.md and
-# their audio) are frozen, and each companion (scholarly/src/NN-*.md) follows its chapter's sections by their
-# ids, with extended discussion, the scholarly debate, numbered notes and sources. The chapter page gets a
-# link at the end of each section that has a companion section; the link is added here, never in the Markdown.
-SCHOLARLY = ROOT / "scholarly"
-SCHOLARLY_DRAFTS = os.environ.get("EPIS_SCHOLARLY_DRAFTS") == "1"  # build drafts too, for a local preview
-COMPANIONS = {}  # chapter slug -> companion (English only)
+# A second layer beside the chapters, kept apart from them: the narrated chapters (guide/NN-*.md and their audio)
+# are frozen. Each substantive section of a chapter can have a Deeper study page (deeper/src/<chapter>/<section>.md),
+# written in layers for the different reasons a reader arrives: to learn the idea again, for the full story, for
+# what the chapter leaves out, or for the sources. The chapter page gets a link at the end of each section that has
+# a page; the link is added here, never in the Markdown.
+DEEPER = ROOT / "deeper"
+DEEPER_DRAFTS = os.environ.get("EPIS_DEEPER_DRAFTS") == "1"  # build drafts too, for a local preview
+DEEP = {}  # chapter slug -> {section id: page} (English only)
 NOT_SUBSTANTIVE = {"in-this-chapter", "check-your-understanding", "further-reading"}
 CITE = re.compile(r"\[(@[^\[\]]+)\]")
+# The layers, in order: id, heading, the reader's reason (the chooser), what the layer holds.
+LAYERS = [("re-learn", "Re-learn", "I didn't get it", "The idea again, step by step, and the usual confusions"),
+          ("the-full-story", "The full story", "I want the whole story",
+           "Where the idea came from, the original texts, the arguments, and where the debate stands"),
+          ("beyond-the-chapter", "Beyond the chapter", "Something felt missing",
+           "What the chapter leaves out or simplifies, and how this connects to the rest"),
+          ("sources", "Sources", "Show me the sources", "What to read next, and every work cited")]
+LAYER_IDS = [l[0] for l in LAYERS]
+REQUIRED_LAYERS = {"A": LAYER_IDS, "B": ["re-learn", "beyond-the-chapter", "sources"]}
+BLOCK = re.compile(r"(?ms)^::: *([a-z]+)(?: +([^\n]*?))? *\n(.*?)\n::: *$")
+BLOCK_KINDS = {"original": "Read the original", "argument": "The argument, step by step", "timeline": "Timeline",
+               "positions": "The positions", "box": ""}
 
 
 def read_front_matter(text):
@@ -2391,44 +2404,46 @@ def read_front_matter(text):
     return meta, text[m.end():]
 
 
-def load_companions(md):
-    """The companions in scholarly/src/. A draft is built only with EPIS_SCHOLARLY_DRAFTS=1, so the live
-    site shows nothing of a companion until its front matter says status: published."""
-    COMPANIONS.clear()
-    for p in sorted((SCHOLARLY / "src").glob("[01][0-9]-*.md")):
+def load_deeper(md):
+    """The Deeper study pages in deeper/src/. A draft is built only with EPIS_DEEPER_DRAFTS=1, so the live site
+    shows nothing of a page until its front matter says status: published."""
+    DEEP.clear()
+    for p in sorted((DEEPER / "src").glob("[01][0-9]-*/*.md")):
         meta, text = read_front_matter(p.read_text(encoding="utf-8"))
-        if meta.get("status") != "published" and not SCHOLARLY_DRAFTS:
+        if meta.get("status") != "published" and not DEEPER_DRAFTS:
             continue
-        _, heads = md.render(CITE.sub("", text), lambda h: h)
-        COMPANIONS[p.stem] = {"meta": meta, "text": text, "path": p, "sections": [h[1] for h in heads if h[0] == 2]}
+        _, heads = md.render(CITE.sub("", BLOCK.sub(lambda m: m.group(3), text)), lambda h: h)
+        DEEP.setdefault(p.parent.name, {})[p.stem] = {"meta": meta, "text": text, "path": p,
+                                                       "layers": [h[1] for h in heads if h[0] == 2]}
 
 
-def scholarly_links(ch, body):
-    """After each chapter section that has a companion section, a small link to it."""
-    comp = COMPANIONS.get(ch.slug) if LANG == "en" else None
-    if not comp:
+def deeper_links(ch, body):
+    """After each chapter section that has a Deeper study page, a small link to it."""
+    pages = DEEP.get(ch.slug) if LANG == "en" else None
+    if not pages:
         return body
     parts = re.split(r'(?=<h2 id=")', body)
     for i, part in enumerate(parts):
         m = re.match(r'<h2 id="([^"]+)"', part)
-        if m and m.group(1) in comp["sections"]:
-            parts[i] = (part.rstrip() + f'\n<p class="sch-link"><a href="../scholarly/{ch.slug}.html#{m.group(1)}">'
+        if m and m.group(1) in pages:
+            parts[i] = (part.rstrip() + f'\n<p class="sch-link"><a href="../deeper/{ch.slug}/{m.group(1)}.html">'
                         f'<span>Go deeper on this section</span> <span aria-hidden="true">→</span></a></p>\n')
     return "".join(parts)
 
 
-def scholarly_data():
-    """The shared bibliography (scholarly/data/sources.json)."""
-    p = SCHOLARLY / "data" / "sources.json"
+def deeper_data():
+    """The shared bibliography (deeper/data/sources.json)."""
+    p = DEEPER / "data" / "sources.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
 def family(name):
-    return name.split(",")[0].strip() if "," in name else name.split()[-1]
+    name = (name or "").strip()
+    return name.split(",")[0].strip() if "," in name else (name.split() or ["?"])[-1]
 
 
 def short_cite(src):
-    names = src.get("authors") or src.get("editors") or [src.get("org", "")]
+    names = src.get("authors") or src.get("editors") or [src.get("org") or src.get("title", "?")]
     who = (family(names[0]) if len(names) == 1 else f"{family(names[0])} and {family(names[1])}" if len(names) == 2
            else f"{family(names[0])} et al.")
     return f"{who} {src.get('year', 'n.d.')}"
@@ -2472,170 +2487,248 @@ def full_ref(src):
     return f"{x(who).rstrip('.')}. {year.rstrip('.')}. {body}" + (" " + " · ".join(ids) if ids else "")
 
 
-def companion_problems(ch, comp, chapter_heads, sources, prov):
-    """Everything wrong with a companion: sections that are not the chapter's, citations of unknown or
-    unverifiable sources, and (once published) claims without provenance."""
+def cited_keys(text):
+    """Every [@key, locator] in a page, as (key, locator) pairs, and any malformed citations."""
+    out, bad = [], []
+    for c in CITE.finditer(text):
+        for part in c.group(1).split(";"):
+            km = re.match(r"\s*@([\w:.-]+)\s*(?:,\s*(.+?))?\s*$", part)
+            (out.append((km.group(1), (km.group(2) or "").strip())) if km else bad.append(c.group(1)))
+    return out, bad
+
+
+def deeper_problems(sid, pg, chapter_heads, sources, prov):
+    """Everything wrong with a page: not a section of the chapter, missing or unknown layers, citations of unknown
+    or unverifiable sources, and (once published) cited sources without evidence in the provenance record."""
     errs = []
     h2 = [h[1] for h in chapter_heads if h[0] == 2]
-    for sid in comp["sections"]:
-        if sid not in h2:
-            errs.append(f"section #{sid} is not a section of the chapter")
-        elif sid in NOT_SUBSTANTIVE:
-            errs.append(f"section #{sid} is not a substantive section")
-    if len(set(comp["sections"])) != len(comp["sections"]):
-        errs.append("a section appears twice")
-    cited = {}
-    for chunk in re.split(r"(?m)^(?=## )", comp["text"]):
-        m = re.match(r"## (.+)", chunk)
-        sid = github_slug(CITE.sub("", m.group(1)), {}) if m else ""
-        for c in CITE.finditer(chunk):
-            for part in c.group(1).split(";"):
-                km = re.match(r"\s*@([\w:.-]+)", part)
-                if not km:
-                    errs.append(f"malformed citation [{c.group(1)}]")
-                    continue
-                cited.setdefault(sid, []).append(km.group(1))
-    for sid, keys in cited.items():
-        for k in keys:
-            src = sources.get(k)
-            if not src:
-                errs.append(f"#{sid}: unknown source @{k}")
-            elif not (src.get("doi") or src.get("isbn") or src.get("url")):
-                errs.append(f"@{k}: no DOI, ISBN or stable link")
-            elif not src.get("verified"):
-                errs.append(f"@{k}: bibliographic details not marked as verified")
-    if comp["meta"].get("status") == "published":
-        secs = (prov or {}).get("sections", {})
-        for sid in comp["sections"]:
-            if sid not in secs:
-                errs.append(f"#{sid}: no provenance record")
-        for sid in secs:
-            if sid not in comp["sections"]:
-                errs.append(f"provenance for #{sid}, which the companion does not have")
-        for sid, keys in cited.items():
-            have = {s.get("key"): s for s in secs.get(sid, {}).get("sources", [])}
-            for k in dict.fromkeys(keys):
-                if k not in have or not have[k].get("evidence"):
-                    errs.append(f"#{sid}: @{k} is cited without evidence in the provenance record")
+    if sid not in h2:
+        errs.append("not a section of the chapter")
+    elif sid in NOT_SUBSTANTIVE:
+        errs.append("not a substantive section")
+    tier = pg["meta"].get("tier")
+    if tier not in REQUIRED_LAYERS:
+        errs.append(f"tier must be A or B, not {tier!r}")
+    else:
+        for lid in REQUIRED_LAYERS[tier]:
+            if lid not in pg["layers"]:
+                errs.append(f"missing layer ## {dict((l[0], l[1]) for l in LAYERS)[lid]}")
+    for lid in pg["layers"]:
+        if lid not in LAYER_IDS:
+            errs.append(f"## heading #{lid} is not one of the layers ({', '.join(l[1] for l in LAYERS)})")
+    if [l for l in LAYER_IDS if l in pg["layers"]] != [l for l in pg["layers"] if l in LAYER_IDS]:
+        errs.append("layers out of order")
+    if not re.match(r"\s*> \*\*In short\.\*\*", pg["text"]):
+        errs.append("a page starts with > **In short.**")
+    for m in BLOCK.finditer(pg["text"]):
+        if m.group(1) not in BLOCK_KINDS:
+            errs.append(f"unknown block ::: {m.group(1)}")
+    keys, bad = cited_keys(pg["text"])
+    errs += [f"malformed citation [{b}]" for b in bad]
+    for k in dict.fromkeys(k for k, _ in keys):
+        src = sources.get(k)
+        if not src:
+            errs.append(f"unknown source @{k}")
+        elif not (src.get("doi") or src.get("isbn") or src.get("url")):
+            errs.append(f"@{k}: no DOI, ISBN or stable link")
+        elif not src.get("verified"):
+            errs.append(f"@{k}: bibliographic details not marked as verified")
+    if pg["meta"].get("status") == "published":
+        have = {s.get("key"): s for s in (prov or {}).get("sources", [])}
+        if not prov:
+            errs.append("no provenance record")
+        for k in dict.fromkeys(k for k, _ in keys):
+            if k not in have or not have[k].get("evidence"):
+                errs.append(f"@{k} is cited without evidence in the provenance record")
     return errs
 
 
-def companion_body(ch, comp, md, sources, prov, root):
-    """The companion page: its sections with numbered notes, each followed by its notes and sources."""
+def deeper_blocks(text):
+    """::: original|argument|timeline|positions|box [title] ... ::: as a styled box around ordinary Markdown."""
+    def box(m):
+        kind, title, inner = m.group(1), (m.group(2) or "").strip(), m.group(3)
+        label = BLOCK_KINDS.get(kind, "")
+        title = re.sub(r"\*(.+?)\*", r"<i>\1</i>", html.escape(title, quote=False))
+        head = (f'<p class="blk-k">{label}</p>' if label else "") + (f'<p class="blk-h">{title}</p>' if title else "")
+        return f'<div class="blk blk-{kind}">{head}\n\n{inner}\n\n</div>'
+    return BLOCK.sub(box, text)
+
+
+def deeper_body(ch, sid, pg, md, sources, prov):
+    """A page: In short, the chooser, then the layers. Re-learn names its sources in one line; the other layers
+    carry numbered notes; Sources ends with the works cited."""
     groups = []
     def mark(m):
-        items = []
-        for part in m.group(1).split(";"):
-            km = re.match(r"\s*@([\w:.-]+)\s*(?:,\s*(.+?))?\s*$", part)
-            if km:
-                items.append((km.group(1), (km.group(2) or "").strip()))
-        groups.append(items)
-        return f"\u2045CITEMARK{len(groups) - 1}Z\u2046"  # bracketed by punctuation so a quote before it still closes
-    text = re.sub(r"[ \t]*" + CITE.pattern, mark, comp["text"])  # a note number sits right after the word
+        groups.append(cited_keys(m.group(0))[0])
+        return f"⁅CITEMARK{len(groups) - 1}Z⁆"  # bracketed by punctuation so a quote before it still closes
+    text = re.sub(r"[ \t]*" + CITE.pattern, mark, deeper_blocks(pg["text"]))  # a note number sits right after the word
     def rewrite(href):
         m = re.match(r"^(\d\d-[\w-]+)\.md(#.*)?$", href)
-        return f"../guide/{m.group(1)}.html{m.group(2) or ''}" if m else href
+        if m:
+            return f"../../guide/{m.group(1)}.html{m.group(2) or ''}"
+        m = re.match(r"^deeper:(\d\d-[\w-]+)/([\w-]+)$", href)  # another Deeper study page
+        return f"../{m.group(1)}/{m.group(2)}.html" if m else href
     body, heads = md.render(text, rewrite)
     body = polish(body)
-    notes_n, all_keys = 0, []
-    annotations = {}
-    for sid, sec in ((prov or {}).get("sections") or {}).items():
-        for s in sec.get("sources", []):
-            if s.get("annotation"):
-                annotations[(sid, s["key"])] = s["annotation"]
+    annotations = {s["key"]: s["annotation"] for s in (prov or {}).get("sources", []) if s.get("annotation")}
+    order, notes_n = [], 0
+    def remember(k):
+        if k not in order:
+            order.append(k)
     out = []
     for part in re.split(r'(?=<h2 id=")', body):
         m = re.match(r'<h2 id="([^"]+)">(.*?)</h2>', part, re.S)
-        sid = m.group(1) if m else ""
-        notes, keys = [], []
-        def cite(mm):
-            nonlocal notes_n
-            items = groups[int(mm.group(1))]
-            notes_n += 1
-            n = notes_n
-            bits = []
-            for k, loc in items:
-                if k not in keys:
-                    keys.append(k)
-                src = sources.get(k, {"title": f"[unknown source {k}]"})
-                bits.append(f'<a href="#src-{sid or "intro"}-{k}">{html.escape(short_cite(src))}</a>' + (f", {html.escape(loc)}" if loc else ""))
-            notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="Back to the text">↩</a></li>')
-            return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="Note {n}">{n}</a></sup>'
-        part = re.sub(r"\u2045CITEMARK(\d+)Z\u2046", cite, part)
+        lid = m.group(1) if m else ""
+        if lid == "re-learn" or not m:  # no note numbers in the intro or in Re-learn: one quiet line of sources instead
+            used = []
+            def quiet(mm):
+                for k, loc in groups[int(mm.group(1))]:
+                    remember(k)
+                    if (k, loc) not in used:
+                        used.append((k, loc))
+                return ""
+            part = re.sub(r"⁅CITEMARK(\d+)Z⁆", quiet, part)
+            if used and m:
+                line = "; ".join(f'<a href="#src-{k}">{html.escape(short_cite(sources.get(k, {"title": k})))}</a>'
+                                 + (f", {html.escape(loc)}" if loc else "") for k, loc in used)
+                part = part.rstrip() + f'<p class="sch-srcline"><span>Sources for this part:</span> {line}.</p>'
+        else:
+            notes = []
+            def cite(mm):
+                nonlocal notes_n
+                notes_n += 1
+                n = notes_n
+                bits = []
+                for k, loc in groups[int(mm.group(1))]:
+                    remember(k)
+                    bits.append(f'<a href="#src-{k}">{html.escape(short_cite(sources.get(k, {"title": k})))}</a>'
+                                + (f", {html.escape(loc)}" if loc else ""))
+                notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="Back to the text">↩</a></li>')
+                return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="Note {n}">{n}</a></sup>'
+            part = re.sub(r"⁅CITEMARK(\d+)Z⁆", cite, part)
+            if notes:
+                part = (part.rstrip() + f'<div class="sch-apparatus"><h3 class="sch-ap">Notes</h3>'
+                        f'<ol class="sch-notes">{"".join(notes)}</ol></div>')
         if m:
-            part = part.replace(m.group(0), f'<h2 id="{sid}"><span class="ht">{m.group(2)}</span></h2>'
-                                f'<p class="sch-back"><a href="../guide/{ch.href}#{sid}"><span aria-hidden="true">←</span> This section in the chapter</a></p>', 1)
-        if notes:
-            refs = "".join(f'<li id="src-{sid or "intro"}-{k}">{full_ref(sources.get(k, {"title": k}))}'
-                           + (f'<span class="ann">{html.escape(annotations[(sid, k)])}</span>' if (sid, k) in annotations else "") + "</li>"
-                           for k in keys)
-            part = (part.rstrip() + f'<div class="sch-apparatus"><h3 class="sch-ap">Notes</h3><ol class="sch-notes">{"".join(notes)}</ol>'
-                    f'<h3 class="sch-ap">Sources for this section</h3><ul class="sch-refs">{refs}</ul></div>')
-        all_keys += [k for k in keys if k not in all_keys]
+            n = LAYER_IDS.index(lid) + 1 if lid in LAYER_IDS else 0
+            kicker = f'<span class="layer-k">Layer {n}</span>' if n else ""
+            part = part.replace(m.group(0), f'<h2 id="{lid}" class="layer">{kicker}<span class="ht">{m.group(2)}</span></h2>', 1)
+        if lid == "sources" and order:
+            refs = "".join(f'<li id="src-{k}">{full_ref(sources.get(k, {"title": k}))}'
+                           + (f'<span class="ann">{html.escape(annotations[k])}</span>' if k in annotations else "") + "</li>"
+                           for k in sorted(order, key=lambda k: (family((sources.get(k, {}).get("authors") or [sources.get(k, {}).get("org", k)])[0]).lower(),
+                                                               str(sources.get(k, {}).get("year", "")))))
+            part = part.rstrip() + f'<h3 id="works-cited">Works cited</h3><ul class="sch-refs biblio">{refs}</ul>'
         out.append(part)
-    biblio = ""
-    if all_keys:
-        ordered = sorted(all_keys, key=lambda k: (family((sources.get(k, {}).get("authors") or [sources.get(k, {}).get("org", k)])[0]).lower(),
-                                                  str(sources.get(k, {}).get("year", ""))))
-        biblio = ('<h2 id="bibliography"><span class="ht">Bibliography</span></h2><ul class="sch-refs biblio">'
-                  + "".join(f"<li>{full_ref(sources.get(k, {'title': k}))}</li>" for k in ordered) + "</ul>")
-    return "".join(out) + biblio, heads
+    present = [l for l in LAYERS if l[0] in pg["layers"]]
+    chooser = ('<nav class="deep-choose" aria-label="What brought you here?"><span class="kicker">What brought you here?</span>'
+               + "".join(f'<a href="#{lid}"><b>{reason}</b><span>{what}</span></a>' for lid, _, reason, what in present) + "</nav>")
+    return out[0] + chooser + "".join(out[1:]), heads
 
 
-def build_scholarly(chapters, md, art):
-    """Write scholarly/NN-*.html for each companion (and scholarly/index.html), after checking them."""
-    built = set()
-    sources = scholarly_data()
-    problems = 0
-    for slug, comp in COMPANIONS.items():
+def deeper_words(text):
+    return len(re.sub(r"\[@[^\]]+\]|[#>*_|:`-]", " ", text).split())
+
+
+def build_deeper(chapters, md, art):
+    """Write deeper/<chapter>/<section>.html for each page, a hub per chapter and deeper/index.html, after checking
+    every page. A problem in a published page stops the build."""
+    sources = deeper_data()
+    problems, built, rendered, hubs = 0, set(), [], []
+    for slug in sorted(DEEP):
         ch = next((c for c in chapters.values() if c.slug == slug), None)
         if not ch:
-            print(f"  scholarly: {slug}: no such chapter")
+            print(f"  deeper: {slug}: no such chapter")
             problems += 1
             continue
-        pp = SCHOLARLY / "data" / f"{slug}.json"
-        prov = json.loads(pp.read_text(encoding="utf-8")) if pp.exists() else None
-        errs = companion_problems(ch, comp, EN_HEADS.get(ch.num, []), sources, prov)
-        for e in errs:
-            print(f"  scholarly: {slug}: {e}")
-        if errs and comp["meta"].get("status") == "published":
-            problems += len(errs)
-        root = up(1)
-        body, heads = companion_body(ch, comp, md, sources, prov, root)
-        toc = "".join(f'<li><a href="#{h[1]}">{h[3]}</a></li>' for h in heads if h[0] == 2)
-        draft = comp["meta"].get("status") != "published"
-        updated = comp["meta"].get("updated", "")
-        lede = ("Each section of the chapter explained again from the start, with examples, common confusions, "
-                "exercises, what the chapter leaves out, and the scholarly debate with its sources.")
-        head = hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=html.escape(ch.title), cls="band", lede=lede)
-        note = (f'<p class="sch-status{" draft" if draft else ""}">'
-                + ("Draft: not yet reviewed, and not linked from the live site. " if draft else "")
-                + (f"Updated {html.escape(updated)}. " if updated else "")
-                + f'<a href="../guide/{ch.href}">Back to {html.escape(ch.label)}</a>.</p>')
-        page_body = (f'{head}<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="Sections">'
-                     f'<span class="kicker">Sections</span><ol>{toc}<li><a href="#bibliography">Bibliography</a></li></ol></nav></aside>'
-                     f'<article class="scholarly">{note}<details class="mini-toc"><summary>Sections</summary><ol>{toc}</ol></details>'
-                     f'<div class="prose">{body}</div></article></main>')
-        page(f"scholarly/{slug}.html", other_rel=f"guide/{ch.href}", root=root, title=f"Deeper study: {ch.label}: {ch.title}",
-             desc=f"{ch.label}, {ch.title}, explained further: examples, exercises, debates and sources.", body=page_body, current="guide",
-             hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True)
-        built.add(f"{slug}.html")
-    if built:
-        rows = "".join(f'<li><a href="{s}.html">{html.escape(c.label)}: {html.escape(c.title)}</a></li>'
-                       for c in sorted(chapters.values(), key=lambda c: c.num) for s in [c.slug] if f"{s}.html" in built)
+        heads = EN_HEADS.get(ch.num, [])
+        titles = {h[1]: h[3] for h in heads if h[0] == 2}
+        order = [h[1] for h in heads if h[0] == 2 and h[1] in DEEP[slug]] + sorted(s for s in DEEP[slug] if s not in titles)
+        root = up(2)
+        rows = []
+        for i, sid in enumerate(order):
+            pg = DEEP[slug][sid]
+            pp = DEEPER / "data" / slug / f"{sid}.json"
+            prov = json.loads(pp.read_text(encoding="utf-8")) if pp.exists() else None
+            errs = deeper_problems(sid, pg, heads, sources, prov)
+            for e in errs:
+                print(f"  deeper: {slug}/{sid}: {e}")
+            if errs and pg["meta"].get("status") == "published":
+                problems += len(errs)
+            title = titles.get(sid, sid)
+            body, pheads = deeper_body(ch, sid, pg, md, sources, prov)
+            toc, sub = [], []
+            for h in pheads:
+                if h[0] == 2:
+                    toc.append([h, []])
+                elif h[0] == 3 and toc:
+                    toc[-1][1].append(h)
+            toc_html = "".join(f'<li><a href="#{h[1]}">{h[3]}</a>' + (("<ol>" + "".join(f'<li><a href="#{s[1]}">{s[3]}</a></li>' for s in subs) + "</ol>") if subs else "")
+                               + "</li>" for h, subs in toc)
+            draft = pg["meta"].get("status") != "published"
+            minutes = max(1, round(deeper_words(pg["text"]) / 230))
+            tier = pg["meta"].get("tier", "B")
+            note = (f'<p class="sch-status{" draft" if draft else ""}">'
+                    + ("Draft: not yet reviewed, and not linked from the live site. " if draft else "")
+                    + f'{"Full study" if tier == "A" else "Short study"} · about {minutes} min'
+                    + (f' · updated {html.escape(pg["meta"]["updated"])}' if pg["meta"].get("updated") else "")
+                    + f'<br><a href="../../guide/{ch.href}#{sid}"><span aria-hidden="true">←</span> This section in {html.escape(ch.label)}</a>'
+                    + f' · <a href="index.html">All Deeper study for {html.escape(ch.label)}</a></p>')
+            prev_ = order[i - 1] if i else None
+            next_ = order[i + 1] if i + 1 < len(order) else None
+            pager = ('<nav class="deep-pager" aria-label="More Deeper study">'
+                     + (f'<a class="prev" href="{prev_}.html"><small>Previous</small><b>{titles.get(prev_, prev_)}</b></a>' if prev_ else "<span></span>")
+                     + (f'<a class="next" href="{next_}.html"><small>Next</small><b>{titles.get(next_, next_)}</b></a>' if next_ else "<span></span>")
+                     + "</nav>")
+            head = hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=title, cls="band",
+                        lede=f"Going deeper on a section of “{html.escape(ch.title)}”.")
+            page_body = (f'{head}<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="On this page">'
+                         f'<span class="kicker">On this page</span><ol>{toc_html}</ol></nav></aside>'
+                         f'<article class="scholarly deep-page">{note}<details class="mini-toc"><summary>On this page</summary><ol>{toc_html}</ol></details>'
+                         f'<div class="prose">{body}</div>{pager}</article></main>')
+            rendered.append((f"deeper/{slug}/{sid}.html", page_body, root, ch, title))
+            built.add(f"{slug}/{sid}.html")
+            short = re.match(r"\s*> \*\*In short\.\*\*\s*(.+?)(?:\n\n|\n(?!>))", pg["text"], re.S)
+            gist = re.sub(r"\s*\n>\s*", " ", short.group(1)) if short else ""
+            gist = CITE.sub("", gist)
+            gist = re.split(r"(?<=[.!?])\s", gist, maxsplit=2)
+            rows.append(f'<li><a href="{sid}.html"><span class="kicker">{"Full study" if tier == "A" else "Short study"} · {minutes} min'
+                        f'{" · draft" if draft else ""}</span><b>{title}</b><span class="gist">{md.inline(" ".join(gist[:2]))}</span></a></li>')
+        hub = (hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=html.escape(ch.title), cls="band",
+                    lede="For when a section didn't click, or left you wanting more: each page explains the idea again, "
+                         "tells the full story, fills in what the chapter leaves out, and gives the sources.")
+               + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px">'
+               f'<p class="sch-status"><a href="../../guide/{ch.href}"><span aria-hidden="true">←</span> Back to {html.escape(ch.label)}</a></p>'
+               f'<ul class="deep-hub">{"".join(rows)}</ul></main>')
+        rendered.append((f"deeper/{slug}/index.html", hub, root, ch, f"{ch.label}: {ch.title}"))
+        built.add(f"{slug}/index.html")
+        hubs.append((ch, len(order)))
+    svgs = render_mermaid(md, prune=False) if rendered else {}
+    for path, body, root, ch, title in rendered:
+        hub = path.endswith("/index.html")
+        page(path, other_rel=f"guide/{ch.href}", root=root, title=f"Deeper study: {title}",
+             desc=(f"Deeper study for {ch.label}, {ch.title}." if hub else f"{title}: the idea again, the full story, what the chapter leaves out, and sources."),
+             body=place_diagrams(body, md, svgs), current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)),
+             bar="clear", reader=not hub)
+    if hubs:
+        rows = "".join(f'<li><a href="{c.slug}/index.html"><span class="kicker">{html.escape(c.label)} · {n} page{"s" if n != 1 else ""}</span>'
+                       f'<b>{html.escape(c.title)}</b></a></li>' for c, n in sorted(hubs, key=lambda t: t[0].num))
         idx = (hero(art, "guide", up(1), kicker="Deeper study", title="Going deeper", cls="band",
-                    lede="For each chapter, a companion that explains every section again, with examples and exercises, "
-                         "fills in what the chapter leaves out, and gives the debates and sources behind it.")
-               + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px"><ul class="sch-index">{rows}</ul></main>')
-        page("scholarly/index.html", other_rel="guide/index.html", root=up(1), title="Deeper study",
-             desc="Every chapter of the guide explained further, with examples, exercises, debates and sources.", body=idx, current="guide",
-             hero_img=(art.src("guide", up(1)), art.srcset("guide", up(1))), bar="clear")
+                    lede="For each section of the guide that rewards it: the idea explained again, the full story behind it, "
+                         "what the chapter leaves out, and the sources.")
+               + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px"><ul class="deep-hub">{rows}</ul></main>')
+        page("deeper/index.html", other_rel="guide/index.html", root=up(1), title="Deeper study",
+             desc="The sections of the guide explained further: the full story, what the chapters leave out, and sources.",
+             body=idx, current="guide", hero_img=(art.src("guide", up(1)), art.srcset("guide", up(1))), bar="clear")
         built.add("index.html")
-    for p in SCHOLARLY.glob("*.html"):  # a companion no longer built (a draft, after a preview) leaves no page behind
-        if p.name not in built:
+    for p in DEEPER.glob("**/*.html"):  # a page no longer built (a draft, after a preview) leaves nothing behind
+        if p.relative_to(DEEPER).as_posix() not in built:
             p.unlink()
+    for d in sorted((p for p in DEEPER.glob("*/") if p.is_dir() and p.name not in ("src", "data")), reverse=True):
+        if not any(d.iterdir()):
+            d.rmdir()
     if problems:
-        raise SystemExit(f"scholarly: {problems} problem(s) in published companions")
+        raise SystemExit(f"deeper: {problems} problem(s) in published pages")
 
 
 # ----------------------------------------------------------------------------- read-along (the narration with its text)
@@ -3008,7 +3101,7 @@ def build_language(art, md, C, tracks):
 
     print(f"[{LANG}] guide")
     if LANG == "en":
-        load_companions(md)
+        load_deeper(md)
     later = []
     prepare_learning(md, C, chapters)
     for ch in chapters.values():
@@ -3022,7 +3115,7 @@ def build_language(art, md, C, tracks):
         page(f"guide/{ch.href}", root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=body,
              current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True)
     if LANG == "en":
-        build_scholarly(chapters, md, art)
+        build_deeper(chapters, md, art)
     page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
          desc=L("Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
                 "فهرستِ «تسلط بر معرفت‌شناسی»: شانزده فصل دربارهٔ معرفت، شواهد و تفکر نقادانه."),

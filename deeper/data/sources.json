@@ -48,6 +48,25 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
+  "atkins-etal2026": {
+    "type": "entry",
+    "authors": [
+      "Atkins, Philip",
+      "Correia, Fabrice",
+      "Robertson Ishii, Teresa"
+    ],
+    "year": 2026,
+    "title": "Essential vs. Accidental Properties",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2026/entries/essential-accidental/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2026 Edition; full text read, 2026-10-01"
+  },
   "berker2013": {
     "type": "article",
     "authors": [
@@ -207,6 +226,23 @@
     "publisher": "Clarendon Press",
     "isbn": "9780198242949",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
+  },
+  "creath2026": {
+    "type": "entry",
+    "authors": [
+      "Creath, Richard"
+    ],
+    "year": 2026,
+    "title": "Logical Empiricism",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Summer 2026 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/sum2026/entries/logical-empiricism/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
   "david2025": {
     "type": "entry",
@@ -423,6 +459,17 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2024 Edition; full text read, 2026-10-01"
   },
+  "hume1739": {
+    "type": "book",
+    "authors": [
+      "Hume, David"
+    ],
+    "year": "1739–40",
+    "title": "A Treatise of Human Nature",
+    "url": "https://www.gutenberg.org/ebooks/4705",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #4705, full text and title page read; cited by book, part and section, 2026-10-01"
+  },
   "hume1748": {
     "type": "book",
     "authors": [
@@ -435,6 +482,24 @@
     "url": "https://www.gutenberg.org/ebooks/9662",
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #9662, full text and title page read; cited by section and part, 2026-10-01"
+  },
+  "hylton-kemp2025": {
+    "type": "entry",
+    "authors": [
+      "Hylton, Peter",
+      "Kemp, Gary"
+    ],
+    "year": 2025,
+    "title": "Willard Van Orman Quine",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/quine/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
   },
   "ichikawa-steup2026": {
     "type": "entry",
@@ -484,6 +549,21 @@
     "doi": "10.2307/2960077",
     "access": "subscription",
     "verified": "Crossref record for the DOI; end page from the SEP bibliographies, 2026-10-01"
+  },
+  "james1890": {
+    "type": "book",
+    "authors": [
+      "James, William"
+    ],
+    "year": 1918,
+    "original_year": 1890,
+    "title": "The Principles of Psychology",
+    "edition": "Vol. 1",
+    "place": "New York",
+    "publisher": "Henry Holt and Company",
+    "url": "https://www.gutenberg.org/ebooks/57628",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #57628, full text and title page read; a 1918 printing of the 1890 work; cited by chapter, 2026-10-01"
   },
   "james1897": {
     "type": "book",
@@ -597,6 +677,21 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
+  "leibniz1714": {
+    "type": "book",
+    "authors": [
+      "Leibniz, Gottfried Wilhelm"
+    ],
+    "year": 1898,
+    "original_year": 1714,
+    "title": "The Monadology and Other Philosophical Writings",
+    "translator": "Robert Latta",
+    "place": "London",
+    "publisher": "Oxford University Press",
+    "url": "https://archive.org/details/cu31924016874038",
+    "access": "public-domain",
+    "verified": "Internet Archive scan and its catalogue record (London: Oxford University Press, 1898); full text read; cited by section of the Monadology, 2026-10-01"
+  },
   "leonard2023": {
     "type": "entry",
     "authors": [
@@ -708,6 +803,38 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2024 Edition; full text read, 2026-10-01"
   },
+  "menzel2025": {
+    "type": "entry",
+    "authors": [
+      "Menzel, Christopher"
+    ],
+    "year": 2025,
+    "title": "Possible Worlds",
+    "container": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Fall 2025 Edition",
+    "editors": [
+      "Zalta, Edward N.",
+      "Nodelman, Uri"
+    ],
+    "url": "https://plato.stanford.edu/archives/fall2025/entries/possible-worlds/",
+    "access": "free",
+    "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "mill1843": {
+    "type": "book",
+    "authors": [
+      "Mill, John Stuart"
+    ],
+    "year": 1882,
+    "original_year": 1843,
+    "title": "A System of Logic, Ratiocinative and Inductive",
+    "edition": "8th ed.",
+    "place": "New York",
+    "publisher": "Harper & Brothers",
+    "url": "https://www.gutenberg.org/ebooks/27942",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #27942, full text and title page read; the eighth edition, cited by book, chapter and section, 2026-10-01"
+  },
   "munro-etal2026": {
     "type": "entry",
     "authors": [
@@ -795,6 +922,21 @@
     "url": "https://plato.stanford.edu/archives/fall2022/entries/knowledge-how/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2022 Edition; full text read, 2026-10-01"
+  },
+  "peirce1877": {
+    "type": "article",
+    "authors": [
+      "Peirce, Charles S."
+    ],
+    "year": 1877,
+    "title": "The Fixation of Belief",
+    "container": "Popular Science Monthly",
+    "volume": "12",
+    "issue": "November",
+    "pages": "1–15",
+    "url": "https://archive.org/details/sim_popular-science_1877-11_12",
+    "access": "public-domain",
+    "verified": "Internet Archive scan of the November 1877 issue, where the essay opens the issue at p. 1; full text read; cited by Peirce's section numbers, 2026-10-01"
   },
   "pettigrew2024": {
     "type": "entry",
