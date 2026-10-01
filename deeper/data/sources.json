@@ -2466,6 +2466,21 @@
     "isbn": "9780674598454",
     "verified": "Open Library edition record for the ISBN, 2026-10-01"
   },
+  "laplace1902": {
+    "type": "book",
+    "authors": [
+      "Laplace, Pierre-Simon"
+    ],
+    "year": 1902,
+    "title": "A Philosophical Essay on Probabilities",
+    "edition": "Translated from the sixth French edition by Frederick Wilson Truscott and Frederick Lincoln Emory",
+    "place": "New York",
+    "publisher": "John Wiley & Sons",
+    "original_year": 1814,
+    "url": "https://archive.org/details/philosophicaless00lapliala",
+    "access": "public-domain",
+    "verified": "Internet Archive scan of the 1902 Wiley first edition; title page and full text read; cited by page, 2026-10-01"
+  },
   "laporte2026": {
     "type": "entry",
     "authors": [
@@ -3352,6 +3367,34 @@
     "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/August_1878/Illustrations_of_the_Logic_of_Science_VI",
     "access": "public-domain",
     "verified": "Wikisource transcription with page scans of Popular Science Monthly vol. 13 (August 1878), pp. 470–482, the sixth of the Illustrations of the Logic of Science; full text read, 2026-10-01"
+  },
+  "peirce1878b": {
+    "type": "article",
+    "authors": [
+      "Peirce, Charles Sanders"
+    ],
+    "year": 1878,
+    "title": "The Doctrine of Chances",
+    "container": "Popular Science Monthly",
+    "volume": "12",
+    "pages": "604–615",
+    "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_12/March_1878/Illustrations_of_the_Logic_of_Science_III",
+    "access": "public-domain",
+    "verified": "Wikisource transcription with page scans of Popular Science Monthly vol. 12 (March 1878), pp. 604–615, the third of the Illustrations of the Logic of Science; full text read, 2026-10-01"
+  },
+  "peirce1878c": {
+    "type": "article",
+    "authors": [
+      "Peirce, Charles Sanders"
+    ],
+    "year": 1878,
+    "title": "The Probability of Induction",
+    "container": "Popular Science Monthly",
+    "volume": "12",
+    "pages": "705–718",
+    "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_12/April_1878/Illustrations_of_the_Logic_of_Science_IV",
+    "access": "public-domain",
+    "verified": "Wikisource transcription with page scans of Popular Science Monthly vol. 12 (April 1878), pp. 705–718, the fourth of the Illustrations of the Logic of Science; full text read, 2026-10-01"
   },
   "peltonen2025": {
     "type": "entry",

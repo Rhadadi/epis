@@ -112,4 +112,5 @@ if __name__ == "__main__":
         from_isbn(a[0], a[1], json.loads(a[2]) if len(a) > 2 else {})
     elif cmd == "raw":
         e = json.loads(a[1]); assert e.get("verified"), "raw entries need a verified note"; add(a[0], e)
-    json.dump(dict(sorted(S.items())), open(SOURCES_PATH, "w"), ensure_ascii=False, indent=2)
+    with open(SOURCES_PATH, "w") as f:
+        json.dump(dict(sorted(S.items())), f, ensure_ascii=False, indent=2); f.write("\n")

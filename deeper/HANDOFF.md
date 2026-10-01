@@ -19,9 +19,26 @@ This file adds the workflow and tools.
 | 02 History of epistemology | 9 | published |
 | 03 Logic and arguments | 15 | published |
 | 04 Language, concepts and definitions | 17 | published |
-| 05–16 | 0 of about 150 | to do (list in section 8) |
+| 05–08 | 46 | published (by Codex) |
+| 09 Induction, probability and Bayes | 2 of 12 drafted | in progress: `humes-problem-of-induction` and `responses-to-hume` are written (Tier A, `status: draft`) with specs in `tools/deeper/specs/09.txt`; the other 10 sections are to do |
+| 10–16 | 0 | to do (list in section 8) |
 
-After that: the final polish pass (section 9). The Persian Deeper study comes later, after the English is done.
+After that: the final polish pass (section 9).
+
+**Notes for chapter 9.** Three sources were added for it: Laplace, *A Philosophical Essay on Probabilities*
+(`laplace1902`, the 1902 Truscott and Emory translation, Internet Archive `philosophicaless00lapliala`; cite by
+page, e.g. p. 19 for the sunrise passage, p. 196 for "common sense reduced to calculus"), and Peirce's "The
+Doctrine of Chances" (`peirce1878b`) and "The Probability of Induction" (`peirce1878c`), cited by Popular
+Science Monthly page. A machine that does not have them yet fetches them with `rebuild_corpus.py`.
+Bayes's own essay exists only as 1763 OCR with the long s ("fuppofition"), which excerpts cannot match, so
+it is not in the corpus; cite it through the SEP entries. Useful entries already in the corpus:
+`henderson2024` (induction), `cohnitz-rossberg2024` (Goodman, § 5.3–5.4), `crupi2025` (confirmation,
+ravens, old evidence), `joyce2021` (Bayes' theorem), `lin2024` (Bayesian epistemology), `hajek2023`
+(interpretations, reference class), `vineberg2022` (Dutch books), `pettigrew2024` (accuracy, Brier score),
+`geninhuber2026` (Lockean thesis, lottery), `sorensen2024` (lottery and preface), `wheeler2024` (base rates,
+conjunction fallacy), `fallacy-iep` (gambler's fallacy, regression), `hitchcock2026` (Simpson's paradox),
+`romeijn2025` (statistics), `fidler-wilcox2026` (p-values, p-hacking), `ioannidis2005`, `mill1843` (for
+Goodman: "Why is a single instance, in some cases, sufficient..."). The Persian Deeper study comes later, after the English is done.
 
 ## 2. Rules that are not negotiable
 
@@ -203,6 +220,8 @@ Look at a finished chapter before starting: `deeper/src/03-logic-and-arguments/`
 | `lexical_embed_server.py` | Embedding server that needs no model download |
 | `codex_setup.sh` | Whole setup for a sandboxed agent (Codex cloud) |
 | `corpus.py` | Regenerate `deeper/data/corpus.json` |
+| `readdoc.py RANGE` | Read consecutive passages in full, overlaps removed |
+| `verify_specs.py SPEC...` | Check every excerpt in the specs against the corpus, writing nothing |
 | `check.sh` | Strict build, frozen check, link check, EPUB timestamp restore |
 | `specs/02–04.txt` | The evidence specs for chapters 2–4 (chapter 1 was made with earlier scripts) |
 

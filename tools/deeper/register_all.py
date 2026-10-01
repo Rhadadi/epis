@@ -20,4 +20,5 @@ for r in c.execute("select id, title from docs where (url like '%plato.stanford%
         else:
             print("skip", r["id"], msg)
 import json
-json.dump(dict(sorted(S.items())), open(srcadd.SOURCES_PATH, "w"), ensure_ascii=False, indent=2)
+with open(srcadd.SOURCES_PATH, "w") as f:
+    json.dump(dict(sorted(S.items())), f, ensure_ascii=False, indent=2); f.write("\n")

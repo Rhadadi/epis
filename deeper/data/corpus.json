@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 272 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 275 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -2663,23 +2663,49 @@
    "retrieved": "2026-10-01"
   },
   {
+   "title": "Are You Living in a Computer Simulation?",
+   "authors": "Bostrom, Nick",
+   "year": "2003",
+   "source": "simulation-argument.com",
+   "doi": "10.1111/1467-9213.00309",
+   "url": "https://simulation-argument.com/simulation.pdf",
+   "license": "open-access",
+   "retrieved": "2026-10-01"
+  },
+  {
    "title": "Wisdom",
-   "authors": "Sharon Ryan",
+   "authors": "Ryan, Sharon",
    "year": "2020",
    "source": "The Stanford Encyclopedia of Philosophy",
-   "edition": "Summer 2020 Edition",
    "url": "https://plato.stanford.edu/archives/sum2020/entries/wisdom/",
    "license": "free-to-read",
    "retrieved": "2026-10-01"
   },
   {
-   "title": "Are You Living in a Computer Simulation?",
-   "authors": "Bostrom, Nick",
-   "year": "2003",
-   "source": "The Philosophical Quarterly",
-   "doi": "10.1111/1467-9213.00309",
-   "url": "https://simulation-argument.com/simulation.pdf",
-   "license": "open-access",
+   "title": "The Doctrine of Chances",
+   "authors": "Peirce, Charles Sanders",
+   "year": "1878",
+   "source": "en.wikisource.org",
+   "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_12/March_1878/Illustrations_of_the_Logic_of_Science_III",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The Probability of Induction",
+   "authors": "Peirce, Charles Sanders",
+   "year": "1878",
+   "source": "en.wikisource.org",
+   "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_12/April_1878/Illustrations_of_the_Logic_of_Science_IV",
+   "license": "public-domain",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "A Philosophical Essay on Probabilities",
+   "authors": "",
+   "year": "",
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/philosophicaless00lapliala",
+   "license": "public-domain",
    "retrieved": "2026-10-01"
   }
  ]

@@ -1,0 +1,151 @@
+== 09-induction-probability-bayes/humes-problem-of-induction
+Q: What exactly did Hume ask about inductive inference, and what was his argument?
+Q: What did Hume himself conclude, and how is the conclusion interpreted?
+Q: Why does the problem still matter?
+ok-quote: no rational justification
+ok-quote: Demonstrative
+@hume1748 | IV.ii | The bread, which I formerly eat, nourished me; that is, a body of such sensible qualities was, at that time, endued with such secret powers: but does it follow, that other bread must also nourish me at another time, and that like sensible qualities must always be attended with like secret powers? The consequence seems nowise necessary.
+@hume1748 | IV.ii | a process of thought, and an inference, which wants to be explained.
+@hume1748 | IV.ii | implies no contradiction, and can never be proved false by any demonstrative argument or abstract reasoning _a priori_.
+@hume1748 | IV.ii | all our experimental conclusions proceed upon the supposition that the future will be conformable to the past. To endeavour, therefore, the proof of this last supposition by probable arguments, or arguments regarding existence, must be evidently going in a circle, and taking that for granted, which is the very point in question.
+@hume1748 | IV.ii | those precise objects only, and that precise period of time, which fell under its cognizance: but why this experience should be extended to future times, and to other objects, which for aught we know, may be only in appearance similar; this is the main question on which I would insist.
+@hume1748 | IV.ii | For otherwise we could infer these secret powers from the first appearance of these sensible qualities, without the aid of experience
+@hume1748 | IV.ii | My practice, you say, refutes my doubts. But you mistake the purport of my question. As an agent, I am quite satisfied in the point; but as a philosopher, who has some share of curiosity, I will not say scepticism, I want to learn the foundation of this inference.
+@hume1748 | IV.ii | No reading, no enquiry has yet been able to remove my difficulty, or give me satisfaction in a matter of such importance. Can I do better than propose the difficulty to the public, even though, perhaps, I have small hopes of obtaining a solution? We shall at least, by this means, be sensible of our ignorance, if we do not augment our knowledge.
+@hume1748 | IV.ii | I may justly require you to produce that argument
+@hume1748 | IV.ii | since you confess that it is obvious to the capacity of a mere infant.
+@hume1748 | V.i | This principle is Custom or Habit.
+@hume1748 | V.i | without being impelled by any reasoning or process of the understanding
+@hume1748 | V.i | Nature will always maintain her rights, and prevail in the end over any abstract reasoning whatsoever.
+@hume1748 | V.i | there is no danger that these reasonings, on which almost all knowledge depends, will ever be affected by such a discovery.
+@hume1748 | V.ii | Here, then, is a kind of pre-established harmony between the course of nature and the succession of our ideas
+@henderson2024 | preamble | The original source of what has become known as the “problem of induction” is in Book 1, part iii, section 6 of A Treatise of Human Nature by David Hume, published in 1739 (Hume 1739). In 1748, Hume gave a shorter version of the argument in Section iv of An enquiry concerning human understanding
+@henderson2024 | preamble | Bertrand Russell, for example, expressed the view that if Hume’s problem cannot be solved, “there is no intellectual difference between sanity and insanity” (Russell 1946: 699).
+@henderson2024 | § 1 | Hume makes a distinction between relations of ideas and matters of fact.
+@henderson2024 | § 1 | For convenience, we will refer to this claim of similarity or resemblance between observed and unobserved regularities as the “Uniformity Principle (UP)”.
+@henderson2024 | § 1 | For Hume, the relation of causation is the only relation by means of which “we can go beyond the evidence of our memory and senses”
+@henderson2024 | § 1 | Rather, he claims, it is based on experience, and specifically experience of constant conjunction.
+@henderson2024 | § 1 | If such an inference is made by a “chain of reasoning” (E. 4.2.16), he says, he would like to know what that reasoning is.
+@henderson2024 | § 1 | the mind is carried by custom to expect heat or cold
+@henderson2024 | § 1 | All these operations are a species of natural instincts, which no reasoning or process of the thought and understanding is able, either to produce, or to prevent.
+@henderson2024 | § 1 | whether we are determin’d by reason to make the transition, or by a certain association and relation of perceptions?
+@henderson2024 | § 1 | Thus, it is the imagination which is taken to be responsible for underpinning the inductive inference, rather than reason.
+@henderson2024 | § 2 | Hume’s argument concerns specific inductive inferences such as: All observed instances of A have been B. The next instance of A will be B.
+@henderson2024 | § 2 | There are only two kinds of arguments: demonstrative and probable (Hume’s fork). P2. Inference I presupposes the Uniformity Principle (UP). 1st horn: P3. A demonstrative argument establishes a conclusion whose negation is a contradiction. P4. The negation of the UP is not a contradiction.
+@henderson2024 | § 2 | P5. Any probable argument for UP presupposes UP. P6. An argument for a principle may not presuppose the same principle (Non-circularity).
+@henderson2024 | § 2 | If there is no chain of reasoning from the premises to the conclusion of inference I, the inference is not justified. C5. Inference I is not justified (by C4 and P8).
+@henderson2024 | § 2 | However, under this interpretation, premise P3 would not hold, because it is possible for the conclusion of a deductive argument to be a non-necessary proposition.
+@henderson2024 | § 2 | the distinction he draws between demonstrative and probable arguments has little to do with whether or not the argument has a deductive form (Owen 1999; Garrett 2002)
+@henderson2024 | § 2 | For example, some scholars have denied that Hume should be read as invoking a premise such premise P8 at all.
+@henderson2024 | § 2 | Hume could then be, as Don Garrett and David Owen have argued, advancing a “thesis in cognitive psychology”, rather than making a normative claim about justification (Owen 1999; Garrett 2002).
+@henderson2024 | § 2 | it has been claimed that it is “an attempt to refute the rationalist belief that at least some inductive arguments are demonstrative” (Beauchamp & Rosenberg 1981: xviii)
+@henderson2024 | § 2 | Such interpretations do however struggle with the fact that Hume’s argument is explicitly a two-pronged attack, which concerns not just demonstrative arguments, but also probable arguments.
+@henderson2024 | § 2 | Hume even suggests that this operation of the mind may even be less “liable to error and mistake” than if it were entrusted to “the fallacious deductions of our reason, which is slow in its operations” (E. 5.2.22).
+@henderson2024 | § 2 | Later in the Treatise, he even gives “rules” and “logic” for characterizing what should count as a good causal inference (T. 1.3.15).
+@henderson2024 | § 2 | the fact remains that Hume has throughout history been predominantly read as presenting an argument for inductive skepticism.
+@henderson2024 | § 3.1 | Kant famously argued in response to Hume that such synthetic a priori knowledge is possible (Kant 1781, 1783).
+@henderson2024 | § 3.3 | Bayes’s essay containing the main results was published after his death in 1764 (Bayes 1764). However, it is possible that the work was done significantly earlier and was in fact written in direct response to the publication of Hume’s Enquiry in 1748
+@henderson2024 | § 3.4 | there is a well-known finding that learning algorithms are only effective if they have ‘inductive bias’
+@henderson2024 | § 3.4 | These can be interpreted as versions of the argument in Hume’s first fork since they establish that there can be no contradiction in the algorithm not performing well
+@henderson2024 | § 3.4 | any learning algorithm is expected to have a generalisation error of 1/2, and hence to do no better than guessing at random
+@henderson2024 | § 3.4 | The idea is also given formal expression in the so-called ‘No-Free-Lunch theorems’ (Wolpert 1992, 1996, 1997).
+@henderson2024 | § 4.2 | The future only resembles the past in some respects, but not others. Suppose that on all my birthdays so far, I have been under 40 years old. This does not give me a reason to expect that I will be under 40 years old on my next birthday.
+@henderson2024 | § 4.2 | Nelson Goodman is often seen as having made this point in a particularly vivid form with his “new riddle of induction” (Goodman 1955: 59–83).
+@henderson2024 | § 4.2 | One way to put this point is to say that Hume’s argument rests on a quantifier shift fallacy (Sober 1988; Okasha 2005a).
+@henderson2024 | § 4.2 | Rather there is a regress of inductive justifications, each relying on their own empirical presuppositions
+@russell1912 | ch. VI | The man who has fed the chicken every day throughout its life at last wrings its neck instead, showing that more refined views as to the uniformity of nature would have been useful to the chicken.
+@russell1912 | ch. VI | Thus our instincts certainly cause us to believe that the sun will rise to-morrow, but we may be in no better a position than the chicken which unexpectedly has its neck wrung.
+@russell1912 | ch. VI | We have therefore to distinguish the fact that past uniformities _cause_ expectations as to the future, from the question whether there is any reasonable ground for giving weight to such expectations
+@russell1912 | ch. VI | Thus probability is all we ought to seek.
+@qu-radcliffe2026 | § 2.3 | sensation cannot tell us anything about the unobserved, but only the currently observed (EHU 4.16). Intuition can also be ruled out, since the Uniformity Principle is not intuitive (EHU 4.16).
+@qu-radcliffe2026 | § 2.3 | There is considerable debate regarding whether Hume’s argument that induction is not founded on reasoning establishes a psychological fact—that is, that reason does not cause the mind to take a crucial inductive step—or a sceptical one—that is, that reason cannot justify our inductive inferences.
+@qu-radcliffe2026 | § 2.3 | Influential descriptivist accounts are Garrett 1997 and Owen 1999.
+@qu-radcliffe2026 | § 2.3 | “deductivists” take Hume’s use of “reason” to carry only deductive justification, and thus read Hume’s argument as ruling out only deductive justification for inductive inferences (Flew 1961; Stove 1973). Such accounts have been refuted (Garrett, 1997; Millican, 1995).
+@qu-radcliffe2026 | § 2.3 | Externalist interpretations see “reason” as only carrying internalist justification, leaving open the possibility of induction enjoying externalist justification (Loeb 2006; Cottrell 2024). Strongly sceptical readings see “reason” as implying any form of rational justification whatsoever (Winkler 1999; Millican 2002b).
+@qu-radcliffe2026 | § 2.3 | one may find the Treatise’s argument to be psychological and Enquiry’s to be sceptical (Qu 2020)
+A @henderson2024: The standard survey: Hume's argument, a premise-by-premise reconstruction, and every major reply.
+A @hume1748: Hume's own statement of the problem (Section IV) and of his answer, custom (Section V).
+A @qu-radcliffe2026: Maps the competing readings of what Hume's conclusion about induction amounts to.
+A @russell1912: Russell's chicken and his restatement of the problem in modern terms.
+
+== 09-induction-probability-bayes/responses-to-hume
+Q: How have philosophers tried to answer Hume, and which premise does each reply reject?
+Q: What do probabilistic replies, from Laplace to de Finetti, achieve?
+Q: What are the standard objections to each reply?
+ok-quote: Induction has worked, so it will work
+ok-quote: is induction justified?
+ok-quote: is it the best policy we have?
+@henderson2024 | § 2 | Since Hume’s argument is a dilemma, there are two main ways to resist it.
+@henderson2024 | § 2 | The second is to tackle the second horn and to argue that there is after all a probable (or empirical) argument that can justify the inductive inference.
+@henderson2024 | § 3 | One possible escape route from the first horn is to deny premise P3, which amounts to admitting the possibility of synthetic a priori propositions (section 3.1).
+@henderson2024 | § 3.1 | Kant famously argued in response to Hume that such synthetic a priori knowledge is possible (Kant 1781, 1783).
+@henderson2024 | § 3.1 | Kant argued instead that experience only comes about through the concepts or “categories” of the understanding.
+@henderson2024 | § 3.2 | The “Nomological-explanatory” solution, which has been put forward by Armstrong, BonJour and Foster (Armstrong 1983; BonJour 1998; Foster 2004) appeals to the principle of Inference to the Best Explanation (IBE).
+@henderson2024 | § 3.2 | “To infer to the best explanation is part of what it is to be rational. If that is not rational, what is?” (Armstrong 1983: 59)
+@henderson2024 | § 3.2 | However, one might alternatively view inductive inferences as a special case of IBE (Harman 1968)
+@henderson2024 | § 3.2 | For it seems to me that a law whose scope is restricted to some particular period is more mysterious, inherently more puzzling, than one which is temporally universal.
+@henderson2024 | § 3.3 | This is Laplace’s famous “rule of succession” (1814).
+@henderson2024 | § 3.3 | There has been a persistent worry that these types of assumptions, while reasonable when applied to the case of drawing balls from an urn, will not hold for other cases of inductive inference.
+@henderson2024 | § 3.3 | However, it has also been subjected to much criticism on the grounds that it can give rise to inconsistent probability assignments (Bertrand 1888; Borel 1909; Keynes 1921).
+@henderson2024 | § 3.3 | The quest for an a priori argument for the assignment of the prior has been largely abandoned.
+@henderson2024 | § 3.3 | One assumption that one can make about the observations is that they are “exchangeable”.
+@henderson2024 | § 3.3 | The assumption of exchangeability may be seen as a natural formalization of Hume’s assumption that the past resembles the future.
+@henderson2024 | § 3.3 | but it has rather allowed us to clarify what could be meant by Hume’s claim that inductive inferences rely on the Uniformity Principle.
+@henderson2024 | § 3.3 | One natural choice, which was made early on by Bayes himself and by Laplace, is to put a uniform prior over the parameter
+@henderson2024 | § 3.4 | “Inductive reasoning is justified to the extent that it is sound, given appropriate premises” (Howson 2000: 239, his emphasis).
+@henderson2024 | § 3.4 | In each instantiation, this convergence is relative to a particular specific prior.
+@henderson2024 | § 3.4 | preclude any universal model-independent justification for learning algorithms, it does not rule out partial justifications in the form of such general a priori ‘model-relative’ learning guarantees
+@henderson2024 | § 3.5 | This was first put forward by Donald C. Williams (1947) and later developed by David Stove (1986).
+@henderson2024 | § 3.5 | In other words, it is highly probable in the sense of “usually right” to say that the sample matches its population.
+@henderson2024 | § 3.5 | But this does not imply that the proposition that a small interval around the sample will contain the true population frequency is highly probable in the sense of “credible on each occasion of use”.
+@henderson2024 | § 4 | One may argue that a probable argument would not, despite what Hume says, be circular in a problematic way (we consider responses of this kind in section 4.1). Or, one might attempt to argue that probable arguments are not circular at all (section 4.2).
+@henderson2024 | § 4.1 | it relies on a rule of inference in order to reach the conclusion that that very rule is reliable.
+@henderson2024 | § 4.1 | After all, less sane inference rules such as counterinduction can support themselves in a similar fashion.
+@henderson2024 | § 4.1 | Consider then the following argument CI*: Most CI arguments have been unsuccessful
+@henderson2024 | § 4.1 | The response to these concerns is that, as Papineau puts it, the argument is “not supposed to do very much” (Papineau 1992: 18).
+@henderson2024 | § 4.1 | The inductive justification of induction provides a kind of important consistency check on our existing beliefs.
+@henderson2024 | § 4.1 | Some authors have then argued that although premise-circularity is vicious, rule-circularity is not (Cleve 1984; Papineau 1992).
+@henderson2024 | § 4.1 | They say that as long as R is in fact reliable, one can form a justified belief in the conclusion of an argument relying on R
+@henderson2024 | § 4.1 | all that we can reasonably demand of a fundamental form of reasoning is that it endorse itself.
+@henderson2024 | § 4.1 | Consider Lewis Carroll’s dialogue between Achilles and the Tortoise (Carroll 1895).
+@henderson2024 | § 4.2 | The future only resembles the past in some respects, but not others.
+@henderson2024 | § 4.2 | Okasha, for example, argues that Hume’s circularity problem can be evaded if there are “no rules” behind induction (Okasha 2005a,b). Norton puts forward the similar idea that all inductive inferences are material
+@henderson2024 | § 4.2 | One way to put this point is to say that Hume’s argument rests on a quantifier shift fallacy (Sober 1988; Okasha 2005a).
+@henderson2024 | § 4.2 | For example, Norton argues that the upshot is a dissolution of the problem of induction, since the regress of justifications benignly terminates (Norton 2003). And Okasha more mildly suggests that even if the regress is infinite, “Perhaps infinite regresses are less bad than vicious circles after all” (Okasha 2005b: 253).
+@henderson2024 | § 4.2 | Norton’s material theory of induction postulates a rule-free characterization of induction, but it is not clear whether it really can avoid any role for general rules (Achinstein 2010, Kelly 2010, Worrall 2010).
+@henderson2024 | § 4.2 | Okasha suggests that the Bayesian model of belief-updating is an illustration how induction can be characterized in a rule-free way, but this is problematic, since in this model all inductive inferences still share the common rule of Bayesian conditionalisation.
+@henderson2024 | § 5 | In this section we examine approaches which question in different ways whether premise P8 really does give a valid necessary condition for justification of inference I and propose various alternative conceptions of justification.
+@henderson2024 | § 5.1 | Crispin Wright (2004) has argued that there are certain principles, including the Uniformity Principle, that we are entitled in this sense to hold.
+@henderson2024 | § 5.1 | “admission of unjustified and unjustifiable postulates to deal with the problem is tantamount to making scientific method a matter of faith” (Salmon 1966: 48).
+@henderson2024 | § 5.2 | But it makes no sense to inquire in general whether the law of the land, the legal system as a whole, is or is not legal. For to what legal standards are we appealing?
+@henderson2024 | § 5.2 | Doing this is what “being reasonable” means in such a context.
+@henderson2024 | § 5.2 | “epistemically reasonable or justified in the sense that …there is reason to think that it is likely to be true” (BonJour 1998: 198).
+@henderson2024 | § 5.2 | In fact Strawson allows that there is a question about whether “induction will continue to be successful”, which is distinct from the question of whether induction is rational. This question he does take to hinge on a “contingent, factual matter” (Strawson 1952: 262).
+@henderson2024 | § 5.3 | Another solution based on an alternative criterion for justification is the “pragmatic” approach initiated by Reichenbach (1938 [2006]).
+@henderson2024 | § 5.3 | Shall he cast his net? Well, if he wants to fish in that place, I should advise him to cast the net, to take the chance at least.
+@henderson2024 | § 5.3 | But, he argues, if there is a limit, by following the inductive principle we will eventually find it.
+@henderson2024 | § 5.3 | But, as Reichenbach himself recognises, many other rules of inference as well as the straight rule may also converge on the limit (Salmon 1966: 53).
+@henderson2024 | § 5.3 | As Lange points out, the argument here “presumes that there is no cost to trying”.
+@henderson2024 | § 5.3 | Yet it is in the short run that inductive practice actually occurs and where it really needs justification (BonJour 1998: 194; Salmon 1966: 53).
+@henderson2024 | § 5.4 | It has then been argued that the usual inductive method, which is characterised by a preference for simpler hypotheses (Occam’s razor), can be justified since it is the unique method which meets the standards for getting to the truth in the long run as efficiently as possible, with a minimum number of retractions (Kelly 2007).
+@henderson2024 | § 5.4 | Formal learning theory can be regarded as a kind of extension of the Reichenbachian programme.
+@henderson2024 | § 5.5 | Another approach to pursuing a broadly Reichenbachian programme is Gerhard Schurz’s strategy based on meta-induction (Schurz 2008, 2017, 2019).
+@henderson2024 | § 5.5 | The main result is that the wMI strategy is long-run optimal in the sense that it converges to the maximum success rate of the accessible prediction methods.
+@henderson2024 | § 5.5 | Therefore Schurz says “it is meta-inductively justified to favor object-inductivistic strategies in the future” (Schurz 2019: 85).
+@henderson2024 | § 5.5 | the meta-inductive justification is in support of following the strategy of meta-induction, not in support of the strategy of following OI
+@henderson2024 | § 6 | Karl Popper, for instance, regarded the problem of induction as insurmountable, but he argued that science is not in fact based on inductive inferences at all (Popper 1935 [1959]).
+@henderson2024 | § 6 | We seem to need more than just deductive reasoning to support practical decision-making (Salmon 1981).
+@henderson2024 | § 6 | It appears doubtful then that pure deductivism can give an adequate account of scientific method.
+@henderson2024 | § 6 | The problem of induction then must be seen as a problem that arises only at the level of philosophical reflection.
+@laplace1902 | p. 19 | Thus we find that an event having occurred successively any number of times, the probability that it will happen again the next time is equal to this number increased by unity divided by the same number, increased by two units.
+@laplace1902 | p. 19 | Placing the most ancient epoch of history at five thousand years ago, or at 182623 days, and the sun having risen constantly in the interval at each revolution of twenty-four hours, it is a bet of 1826214 to one that it will rise again to-morrow. | note: the translation prints 182623 days; five thousand years is about 1,826,213 days
+@laplace1902 | p. 19 | But this number is incomparably greater for him who, recogniz- ing in the totality of phenomena the principal regulator of days and seasons, sees that nothing at the present moment can arrest the course of it.
+@peirce1878c | p. 712 | if one of the ancient denizens of the shores of the Mediterranean, who had never heard of tides, had gone to the bay of Biscay, and had there seen the tide rise, say m times, he could know that there was a probability equal to
+@peirce1878c | p. 712 | the solution involves the conceptualistic principle that there is an even chance of a totally unknown event.
+@peirce1878c | p. 712 | But the only possible reason for drawing any analogy between such an arrangement and that of Nature is the principle that alternatives of which we know nothing must be considered as equally probable. But this principle, is absurd.
+@peirce1878c | p. 714 | The relative probability of this or that arrangement of Nature is something which we should have a right to talk about if universes were as plenty as blackberries
+@peirce1878c | p. 718 | We may express this by saying that in the case of analytic inference we know the probability of our conclusion (if the premises are true), but in the case of synthetic inferences we only know the degree of trustworthiness of our proceeding. As all knowledge comes from synthetic inference, we must equally infer that all human certainty consists merely in our knowing that the processes by which our knowledge has been derived are such as must generally have led to true conclusions.
+@peirce1878c | p. 718 | yet that the rule of induction will hold good in the long run may be deduced from the principle that reality is only the object of the final opinion to which sufficient investigation would lead.
+A @henderson2024: Sections 3–6 survey every major reply to Hume and the objections to each.
+A @laplace1902: Laplace's rule of succession and the sunrise calculation, the classic probabilistic reply.
+A @peirce1878c: Peirce's 1878 attack on Laplace's rule and his own long-run answer, which anticipates Reichenbach.
