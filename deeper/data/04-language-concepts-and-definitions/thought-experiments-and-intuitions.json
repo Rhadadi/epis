@@ -1,0 +1,118 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "thought-experiments-and-intuitions",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How do thought experiments work, and how can they fail?",
+    "How can a thought experiment be countered?",
+    "Are intuitions about cases good evidence?"
+  ],
+  "sources": [
+    {
+      "key": "brown-fehige2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "If the spear flies through, it isn’t a boundary after all; if the spear bounces back, then there must be something beyond the supposed edge of space",
+          "corpus_chunk": 42737
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "tion that we have set up in the imagination; we let it run or we carry out an operation; we see what happens; finally, we draw a conclusion",
+          "corpus_chunk": 42737
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The example also illustrates the fallibility of thought experiments.",
+          "corpus_chunk": 42738
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "we’ve learned how to conceptualize space so that it could be both finite and unbounded",
+          "corpus_chunk": 42738
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "However, the argument, even though it has the same structure as the anti-abortion argument, does not seem convincing in this case.",
+          "corpus_chunk": 42741
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The upshot is that even if the fetus has a right to life (which Thomson does not believe but allows for the sake of the argument), it may still be morally permissible to abort.",
+          "corpus_chunk": 42742
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Instead of a red tomato, Dennett, in his version of the thought experiment, presents Mary with a bright blue banana.",
+          "corpus_chunk": 42744
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Mary does not learn anything new when she sees coloured objects for the first time",
+          "corpus_chunk": 42744
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Clearly, thought experiments are characterized by an intriguing plasticity",
+          "corpus_chunk": 42745
+        }
+      ]
+    },
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "found that East Asians often have the “wrong intuitions” regarding variations on classic philosophical thought experiments, including Gettier-type thought experiments (though see Machery et al 2017 for evidence that some of these intuitions may in fact be universal)",
+          "corpus_chunk": 38808
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "At the very least, this work suggests that philosophers should be cautious about moving from their own intuitions to claims about the proper analysis of a concept.",
+          "corpus_chunk": 38809
+        }
+      ]
+    },
+    {
+      "key": "sytsma-willemsen2026",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4.2",
+          "basis": "full text",
+          "excerpt": "One reason offered for this is that the responses are too quick and not suitably reflective (e.g., Kauppinen 2007), another that they track different concepts than philosophers are interested in (e.g., Sosa 2009, 2010).",
+          "corpus_chunk": 39527
+        },
+        {
+          "locator": "§ 4.4.2",
+          "basis": "full text",
+          "excerpt": "intuition apologists aim to defend the traditional practice more-or-less as described",
+          "corpus_chunk": 39527
+        }
+      ]
+    }
+  ]
+}

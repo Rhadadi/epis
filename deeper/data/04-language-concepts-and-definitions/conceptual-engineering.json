@@ -1,0 +1,110 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "conceptual-engineering",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is conceptual engineering, and how does it relate to Carnap's explication?",
+    "What makes an explication successful?",
+    "Why have revisionary conceptual projects grown?"
+  ],
+  "sources": [
+    {
+      "key": "gupta-mackereth2023",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "An explication aims to respect some central uses of a term but is stipulative on others. The explication may be offered as an absolute improvement of an existing, imperfect concept.",
+          "corpus_chunk": 38957
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Or, it may be offered as a “good thing to mean” by the term in a specific context for a particular purpose.",
+          "corpus_chunk": 38957
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "But the mismatch is not an objection to the explication. What is important for explication is not antecedent meaning but function. So long as the latter is preserved, the former can be let go.",
+          "corpus_chunk": 38958
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "This conditional differs from the ordinary conditional in some essential respects. Nevertheless, the truth-functional conditional can be put forward as an explication of the ordinary conditional for certain purposes in certain contexts.",
+          "corpus_chunk": 38959
+        }
+      ]
+    },
+    {
+      "key": "creath2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Since these languages and the concepts they contained were to be thought of as tools, none of which was uniquely correct, the choice among the alternatives was a practical decision about usefulness for certain purposes rather than a theoretical question.",
+          "corpus_chunk": 27198
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "It can analyze existing concepts. And since many existing concepts are vague, it can also make them more precise in a variety of ways through explication. Philosophy can also investigate wholly new concepts.",
+          "corpus_chunk": 27198
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "It becomes, thus, a kind of conceptual engineering.",
+          "corpus_chunk": 27198
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Conceptual analysis, explication, construction, and engineering continue to be fruitful ideas in philosophy, though it is not always understood how much of this was initiated or shaped by Carnap and other logical empiricists.",
+          "corpus_chunk": 27199
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "attempting to explicate two different concepts of probability",
+          "corpus_chunk": 27234
+        }
+      ]
+    },
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The critique of traditional philosophical analysis has also generated proposals for various types of normative, revisionary projects.",
+          "corpus_chunk": 38810
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Instead of asking which cases are or are not covered by a concept, they ask how a concept should be modified or what new concept should be adopted in its place, given the practical context in which the concept is used—for example, given the goal of promoting social equality (Haslanger 2012, Cappelen 2018).",
+          "corpus_chunk": 38810
+        }
+      ]
+    }
+  ]
+}

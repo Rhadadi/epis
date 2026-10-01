@@ -1,0 +1,121 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "ambiguity",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How does ambiguity affect the validity of arguments?",
+    "How does ambiguity differ from vagueness and generality?",
+    "What tests for ambiguity exist, and how reliable are they?"
+  ],
+  "sources": [
+    {
+      "key": "sennet2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Babe Ruth owned a bat. Bats have wings. Babe Ruth owned something with wings. The argument looks valid and the premises seem true, on at least one reading, but the conclusion doesn’t follow.",
+          "corpus_chunk": 38076
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Frege noted this to be the main defect of natural language and a real obstacle to trying to formalize it",
+          "corpus_chunk": 38076
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "‘bat’ is not vague but it is ambiguous. ‘Is bald’ looks to be vague but not ambiguous. A general hallmark of vagueness is that it involves borderline cases",
+          "corpus_chunk": 38008
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "While ‘is an uncle’ can be satisfied by both brothers of mothers and brothers of fathers, the phrase is not ambiguous but unspecified with respect to parent.",
+          "corpus_chunk": 37997
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Aristotle offers a test for ambiguity: try to construct a definition that encompasses both meanings and posit an ambiguity only if you fail.",
+          "corpus_chunk": 38064
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "‘Uncle’ is not ambiguous because it has a single definition that covers both",
+          "corpus_chunk": 38064
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The colours are light. The feathers are light. The following, however, seems to be zeugmatic: ?The colours and the feathers are light.",
+          "corpus_chunk": 38056
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Toronto exists. Numbers exist. Triadic relations exist. Toronto and numbers and triadic relations exist.",
+          "corpus_chunk": 38056
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "If a term can be ambiguous but in a way so subtle that competent speakers may miss it, then the zeugma might not be noticeable.",
+          "corpus_chunk": 38056
+        },
+        {
+          "locator": "§ 4.6.2",
+          "basis": "full text",
+          "excerpt": "?Judy’s dissertation is thought provoking and yellowed with age. Judy’s dissertation is still thought provoking although yellowed with age.",
+          "corpus_chunk": 38070
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "we would expect the ambiguity to be disambiguated by separate and unrelated words in some other languages",
+          "corpus_chunk": 38065
+        },
+        {
+          "locator": "§ 4.5",
+          "basis": "full text",
+          "excerpt": "(in Croatian, there is no one word translation of ‘uncle’: ‘stric’ means brother of one’s father and ‘ujak’ means an uncle from the mother’s side)",
+          "corpus_chunk": 38066
+        },
+        {
+          "locator": "§ 5.5",
+          "basis": "full text",
+          "excerpt": "the law divides between patent and latent ambiguity, where the former roughly corresponds to a case where the meaning of a law is unclear, the latter to cases where the meaning is clear but applies equally well to highly disparate things. In effect, this is the difference between ambiguity in sense and ambiguity in reference.",
+          "corpus_chunk": 38085
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Shakespeare’s “Ask for me tomorrow and you shall find me a grave man”",
+          "corpus_chunk": 37996
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Groucho Marx’s “I shot an elephant in my pajamas” is a classic example.",
+          "corpus_chunk": 37996
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "It would be logical folly, for example, to conclude from the true (on one reading) sentences ‘All bachelors are necessarily unmarried’ and ‘Adam was a bachelor’ that Adam was necessarily unmarried.",
+          "corpus_chunk": 37995
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "family-resemblance-and-prototypes",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is the prototype theory of concepts, and where did it come from?",
+    "How does it explain typicality effects?",
+    "Where does the prototype theory struggle?",
+    "What alternatives and combinations have been proposed?"
+  ],
+  "sources": [
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "According to this theory, a lexical concept C doesn’t have definitional structure but has probabilistic structure in that something falls under C just in case it satisfies a sufficient number of properties encoded by C’s constituents.",
+          "corpus_chunk": 38750
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "it has its psychological roots in Eleanor Rosch’s groundbreaking experimental treatment of much the same idea",
+          "corpus_chunk": 38750
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "the reason apples are judged to be more typical than plums is that the concept APPLE shares more of its constituents with FRUIT",
+          "corpus_chunk": 38751
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "One is that its treatment of categorization works best for quick and unreflective judgments.",
+          "corpus_chunk": 38751
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "If asked whether a dog that is surgically altered to look like a raccoon is a dog or a raccoon, the answer for most of us, and even for children, is that it is remains a dog",
+          "corpus_chunk": 38752
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "PET FISH encodes properties such as brightly colored, which have no basis in the prototype structure for either PET or FISH",
+          "corpus_chunk": 38752
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "many patently complex concepts don’t even have a prototype structure (e.g., CHAIRS THAT WERE PURCHASED ON A WEDNESDAY)",
+          "corpus_chunk": 38752
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "One general solution that addresses all of these problems is to hold that a prototype constitutes just part of the structure of a concept.",
+          "corpus_chunk": 38753
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "This is the view that concepts stand in relation to one another in the same way as the terms of a scientific theory",
+          "corpus_chunk": 38754
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "claiming that even children are in possession of a rudimentary biological theory. This theory tells them that being a dog isn’t just a matter of looking like a dog.",
+          "corpus_chunk": 38754
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "One problem that has been raised against the theory theory is that it has difficulty in allowing for different people to possess the same concepts",
+          "corpus_chunk": 38755
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "there is no reason why philosophers shouldn’t maintain that concepts have different types of structure",
+          "corpus_chunk": 38759
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "These same considerations have led some theorists to advocate concept eliminativism—the view that there are no concepts (Machery 2009).",
+          "corpus_chunk": 38765
+        },
+        {
+          "locator": "§ 2.5",
+          "basis": "full text",
+          "excerpt": "concept should be understood to be a natural kind if concepts exist at all",
+          "corpus_chunk": 38766
+        }
+      ]
+    },
+    {
+      "key": "biletzki-matar2026",
+      "used_for": [
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "from an emphasis on definition and analysis to ‘family resemblance’ and ‘language-games’",
+          "corpus_chunk": 35694
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "later Wittgenstein can be summed up as the total rejection of dogmatism",
+          "corpus_chunk": 35693
+        }
+      ]
+    }
+  ]
+}

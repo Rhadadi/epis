@@ -1,0 +1,146 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "kinds-of-definition",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What different kinds of definition are there, and what goals do they serve?",
+    "What is the difference between real and nominal definitions?",
+    "What is an explication, and how does it differ from stipulative and descriptive definitions?",
+    "What can stipulative and ostensive definitions do that others cannot?"
+  ],
+  "sources": [
+    {
+      "key": "gupta-mackereth2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "we speak of a commission as defining the boundary between two nations; of the Supreme Court as defining, through its rulings, “person” and “citizen”; of a chemist as discovering the definition of gold, and the lexicographer, that of ‘cool’",
+          "corpus_chunk": 38945
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "the boundary commission may aim to achieve precision; the Supreme Court, fairness; the chemist and the lexicographer, accuracy; the debater, clarity; and the mathematician, fecundity",
+          "corpus_chunk": 38945
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "John Locke distinguished, in his Essay, “real essence” from “nominal essence.”",
+          "corpus_chunk": 38948
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The chemist aims at real definition, whereas the lexicographer aims at nominal definition.",
+          "corpus_chunk": 38948
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Whether the search for an answer to the Socratic question “What is virtue?” is a search for real definition or one for nominal definition depends upon one’s conception of this particular philosophical activity.",
+          "corpus_chunk": 38949
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "A stipulative definition imparts a meaning to the defined term, and involves no commitment that the assigned meaning agrees with prior uses (if any) of the term.",
+          "corpus_chunk": 38953
+        },
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "Descriptive definitions, like stipulative ones, spell out meaning, but they also aim to be adequate to existing usage.",
+          "corpus_chunk": 38955
+        },
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "a lack of fit with existing usage is an objection to them",
+          "corpus_chunk": 38955
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "An explication aims to respect some central uses of a term but is stipulative on others.",
+          "corpus_chunk": 38957
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "But the mismatch is not an objection to the explication. What is important for explication is not antecedent meaning but function.",
+          "corpus_chunk": 38958
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "the truth-functional conditional can be put forward as an explication of the ordinary conditional for certain purposes in certain contexts",
+          "corpus_chunk": 38959
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "to uphold the definition of “ordered pair” as a philosophical paradigm",
+          "corpus_chunk": 38958
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Here, the pair \\(\\langle x,y\\rangle\\) is defined as the set \\(\\{\\{x\\}, \\{x,y\\}\\}\\).",
+          "corpus_chunk": 38957
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "When an epistemologist seeks a definition of “knowledge,” she is not seeking a good dictionary entry for the word ‘know’.",
+          "corpus_chunk": 38952
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "If one stipulatively defines a “raimex” as, say, a rational, imaginative, experiencing being then the judgment “raimexes are rational” is assured of being necessary, certain, and a priori.",
+          "corpus_chunk": 38953
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Philosophers have found it tempting to explain the puzzling cases of, e.g., a priori judgments, by an appeal to stipulative definitions.",
+          "corpus_chunk": 38953
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "the description serves only to fix the reference of the new name; the name is not synonymous with the description",
+          "corpus_chunk": 38953
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Unlike other familiar definitions, ostensive definitions can introduce terms that are ineliminable.",
+          "corpus_chunk": 38961
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "all nominal definitions, if pushed back far enough, must lead ultimately to terms having only ostensive definitions",
+          "corpus_chunk": 38962
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Dictionaries aim to provide definitions that contain sufficient information to impart an understanding of the term.",
+          "corpus_chunk": 38951
+        }
+      ]
+    }
+  ]
+}

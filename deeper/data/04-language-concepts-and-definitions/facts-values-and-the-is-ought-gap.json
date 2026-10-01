@@ -1,0 +1,131 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "facts-values-and-the-is-ought-gap",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What did Hume say about is and ought, and how has it been interpreted?",
+    "What is Hume's law, and why is the gap thought to exist?",
+    "Do thick concepts bridge the gap?"
+  ],
+  "sources": [
+    {
+      "key": "cohon2018",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "at some point make an unremarked transition from premises whose parts are linked only by “is” to conclusions whose parts are linked by “ought”",
+          "corpus_chunk": 40009
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Few passages in Hume’s work have generated more interpretive controversy.",
+          "corpus_chunk": 40009
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "that no ethical or indeed evaluative conclusion whatsoever may be validly inferred from any set of purely factual premises",
+          "corpus_chunk": 40010
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "A number of present-day philosophers, including R. M. Hare, endorse this putative thesis of logic, calling it “Hume’s Law.”",
+          "corpus_chunk": 40010
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "on this reading Hume must simply assume that no purely factual propositions are themselves evaluative, as he does not argue for this",
+          "corpus_chunk": 40010
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Some interpreters think Hume commits himself here to a non-propositional or noncognitivist view of moral judgment",
+          "corpus_chunk": 40010
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "which must involve the use of sentiment",
+          "corpus_chunk": 40011
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "he or she may reach some particular moral conclusions by inference from causal, factual premises",
+          "corpus_chunk": 40012
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "They point out that Hume himself makes such inferences frequently in his writings.",
+          "corpus_chunk": 40012
+        }
+      ]
+    },
+    {
+      "key": "vayrynen2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Any (non-trivial) valid argument for an evaluative conclusion must somehow (perhaps implicitly) involve evaluative content in its premises.",
+          "corpus_chunk": 42584
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "evaluative and normative statements commend things and guide action, whereas purely non-evaluative statements play no such practical role by themselves",
+          "corpus_chunk": 42585
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "note that an important gap can be held to exist even if values are a special kind of facts",
+          "corpus_chunk": 42584
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "But that debate concerns moral metaphysics rather than thick concepts.",
+          "corpus_chunk": 42594
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "O: x causes offense by indicating lack of respect So, R: x is rude",
+          "corpus_chunk": 42586
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "O*: x is an overt sexual display So, L: x is lewd",
+          "corpus_chunk": 42588
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "It is unclear whether this reply shows that the is-ought inferences Foot asks us to consider are invalid.",
+          "corpus_chunk": 42590
+        }
+      ]
+    }
+  ]
+}

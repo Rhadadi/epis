@@ -1,0 +1,335 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "sense-and-reference",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Why can \"a = b\" be informative when \"a = a\" is not?",
+    "What did Frege, Russell and Kripke say fixes the reference of a name?",
+    "Why do belief reports resist substituting co-referring names?"
+  ],
+  "sources": [
+    {
+      "key": "zalta2026",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the idea developed",
+        "Frege's system",
+        "The causal theory",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Frege’s seminal paper in the philosophy of language is ‘Über Sinn und Bedeutung’ (‘On Sense and Reference’, 1892a). In this paper, Frege considered two puzzles about language",
+          "corpus_chunk": 27855
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "We can learn that ‘Mark Twain = Mark Twain’ is true simply by inspecting it; but we can’t learn the truth of ‘Mark Twain = Samuel Clemens’ simply by inspecting it",
+          "corpus_chunk": 27857
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "how do we account for the difference in cognitive significance between",
+          "corpus_chunk": 27858
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "Therefore, Samuel Clemens was an author.",
+          "corpus_chunk": 27861
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "This argument is not valid. There are circumstances in which the premises are true and the conclusion false.",
+          "corpus_chunk": 27862
+        },
+        {
+          "locator": "§ 3.1.2",
+          "basis": "full text",
+          "excerpt": "one in which John learns the name ‘Mark Twain’ by reading Huckleberry Finn but learns the name ‘Samuel Clemens’ in the context of learning about 19th century American authors",
+          "corpus_chunk": 27862
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "names and descriptions also express a sense.[5] The sense of an expression accounts for its cognitive significance—it is the way by which one conceives of the denotation of the term.",
+          "corpus_chunk": 27864
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The name ‘Pegasus’ and the description ‘the most powerful Greek god’ both have a sense",
+          "corpus_chunk": 27864
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "it no longer denotes what it ordinarily denotes. Instead, Frege claims that in such contexts, a term denotes its ordinary sense.",
+          "corpus_chunk": 27866
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "So, on Frege’s view, the sentence ‘John loves Mary’ names a truth value.",
+          "corpus_chunk": 27869
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Frege calls the sense of a sentence a thought, and whereas there are only two truth values, he supposes that there are an infinite number of thoughts.",
+          "corpus_chunk": 27870
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "does not constitute evidence against the Principle.",
+          "corpus_chunk": 27873
+        }
+      ]
+    },
+    {
+      "key": "ludlow2023",
+      "used_for": [
+        "How the idea developed",
+        "Russell: descriptions without senses",
+        "Why this matters for knowledge",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "is shorthand for the conjunction of three claims: (3a) There is an F. (3b) At most one thing is F. (3c) Something that is F is G.",
+          "corpus_chunk": 50330
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "it is not the case that the x such that x is the present king of France exists.",
+          "corpus_chunk": 50333
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "If one wants to avoid the ontological entanglements of nonexistent objects",
+          "corpus_chunk": 50334
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "if George has gone mad and is in fact wondering about the law of identity",
+          "corpus_chunk": 50337
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Metaphysical and semantical concerns were important to Russell in his 1905 paper, but epistemological concerns were no less significant.",
+          "corpus_chunk": 50338
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In that paper, Russell distinguished between objects that we are directly acquainted with and objects that we only know under a description.",
+          "corpus_chunk": 50338
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "This in turn led Russell to extend the theory of descriptions to almost all uses of names—treating them as definite descriptions in disguise.",
+          "corpus_chunk": 50339
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Russell could have saved himself from some of the more troubling consequences of his view if he had jettisoned the Cartesianism and opted for a more liberal notion of acquaintance.",
+          "corpus_chunk": 50339
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In their view a case can be made that reference comes much cheaper than Russell imagined.",
+          "corpus_chunk": 50340
+        }
+      ]
+    },
+    {
+      "key": "michaelson2024",
+      "used_for": [
+        "How the idea developed",
+        "Kripke's objections to descriptivism",
+        "The causal theory",
+        "Why this matters for knowledge",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Hesperus is Phosphorus. Santa Claus lives at the North Pole. Fred believes that Cicero, but not Tully, was Roman. (3) is true, but it is not knowable apriori.",
+          "corpus_chunk": 51118
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "For then (3) would mean Venus is Venus",
+          "corpus_chunk": 51118
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "According to meaning descriptivism, in contrast, what (3) means is that two distinct descriptions are satisfied by the same object.",
+          "corpus_chunk": 51118
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Classical descriptivists, like Frege and Russell, were perfectly willing to acknowledge that the descriptive content in question might vary, sometimes quite markedly, from one speaker to the next.",
+          "corpus_chunk": 51115
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "it seems that I can still truly assert: David Cameron might not have called for a referendum on Brexit.",
+          "corpus_chunk": 51120
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "holding fixed that we are talking about metaphysical rather than epistemic possibility here, it should be clear enough that (7) is false",
+          "corpus_chunk": 51120
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "P.F. Strawson (1959), for instance, suggests that speakers may rely on others to provide the relevant descriptive content",
+          "corpus_chunk": 51125
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This will effectively deal with Kripke’s Feynman case, but at an intuitive cost.",
+          "corpus_chunk": 51125
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "which dates back to John Stuart Mill (1867), a name’s meaning is simply its referent. In its modern form, the view was introduced by Ruth Barcan Marcus (1961)",
+          "corpus_chunk": 51127
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "the necessity of identity statements between co-referring proper names",
+          "corpus_chunk": 51127
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Peter Geach (1969), Keith Donnellan (1970), and the aforementioned Kripke (1972)",
+          "corpus_chunk": 51128
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Reference, on this sort of view, is fixed by a dubbing.",
+          "corpus_chunk": 51129
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Subsequent speakers thus effectively ‘borrow’ their reference from speakers earlier in the chain, though borrowers needn’t be able to identify any of the lenders they are in fact relying on.",
+          "corpus_chunk": 51130
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "As Kripke points out, complications arise due to the fact that we can apparently re-use names.",
+          "corpus_chunk": 51130
+        }
+      ]
+    },
+    {
+      "key": "russell1918",
+      "used_for": [
+        "Russell: descriptions without senses",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. X",
+          "basis": "full text",
+          "excerpt": "Common words, even proper names, are usually really descriptions.",
+          "corpus_chunk": 8445
+        },
+        {
+          "locator": "ch. X",
+          "basis": "full text",
+          "excerpt": "What this person was acquainted with were certain sense-data which he connected (rightly, we will suppose) with Bismarck's body.",
+          "corpus_chunk": 8447
+        },
+        {
+          "locator": "ch. X",
+          "basis": "full text",
+          "excerpt": "some more or less vague mass of historical knowledge",
+          "corpus_chunk": 8448
+        },
+        {
+          "locator": "ch. X",
+          "basis": "full text",
+          "excerpt": "we know there is a true proposition concerning the actual Bismarck, and that, however we may vary the description (so long as the description is correct), the proposition described is still the same.",
+          "corpus_chunk": 8452
+        }
+      ]
+    },
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "Kripke's objections to descriptivism",
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "the content of a concept isn’t determined by its relation to other concepts but by its relation to the world.",
+          "corpus_chunk": 38757
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "The point is that if the description theory were correct, we would be referring to Schmitt when we say “Gödel”.",
+          "corpus_chunk": 38757
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "though see Machery et al. 2004 on whether this intuition is universal",
+          "corpus_chunk": 38758
+        }
+      ]
+    },
+    {
+      "key": "uzgalis2024",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Kretzmann, however, argues persuasively that Locke distinguishes between meaning and reference and that ideas provide the meaning but not the reference of words.",
+          "corpus_chunk": 29221
+        }
+      ]
+    }
+  ]
+}

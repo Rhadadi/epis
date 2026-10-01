@@ -3787,6 +3787,19 @@
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #5827, full text and title page read; cited by chapter, 2026-10-01"
   },
+  "russell1918": {
+    "type": "book",
+    "authors": [
+      "Russell, Bertrand"
+    ],
+    "year": 1918,
+    "title": "Mysticism and Logic and Other Essays",
+    "place": "London",
+    "publisher": "George Allen & Unwin",
+    "url": "https://www.gutenberg.org/ebooks/25447",
+    "access": "public-domain",
+    "verified": "Project Gutenberg eBook #25447; preface dated London, September 1917; chapter X reprints \"Knowledge by Acquaintance and Knowledge by Description\" (Proceedings of the Aristotelian Society, 1910–11); full text read, 2026-10-01"
+  },
   "ryle1946": {
     "type": "article",
     "authors": [

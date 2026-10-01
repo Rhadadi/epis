@@ -1,0 +1,144 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "necessary-and-sufficient-conditions-and-their-limits",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is the classical theory of concepts, and why was it attractive?",
+    "What problems does the classical theory face in psychology and philosophy?",
+    "What follows for conceptual analysis if concepts lack definitions?",
+    "Is \"featherless biped\" a bad definition?"
+  ],
+  "sources": [
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "According to the classical theory, a lexical concept C has definitional structure in that it is composed of simpler concepts that express necessary and sufficient conditions for falling under C.",
+          "corpus_chunk": 38744
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The stock example is the concept BACHELOR, which is traditionally said to have the constituents UNMARRIED and MAN.",
+          "corpus_chunk": 38744
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Much of its appeal comes from the way it offers unified treatments of concept acquisition, categorization, and reference determination.",
+          "corpus_chunk": 38744
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Paradigmatic conceptual analyses offer definitions of concepts that are to be tested against potential counterexamples that are identified via thought experiments.",
+          "corpus_chunk": 38746
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "apples are judged to be more typical than plums with respect to the category of fruit",
+          "corpus_chunk": 38747
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The problem isn’t that the classical theory is inconsistent with results like these but that it does nothing to explain them.",
+          "corpus_chunk": 38747
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Quite simply, there are too few examples of successful definitional analyses, and certainly none that are uncontroversial",
+          "corpus_chunk": 38748
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "But no one can seem to agree on what the correct definition is.",
+          "corpus_chunk": 38748
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "But another possibility—one that many philosophers are now taking seriously—is that our concepts lack definitional structure.",
+          "corpus_chunk": 38749
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "A radical alternative to all of the theories we’ve mentioned so far is conceptual atomism, the view that lexical concepts have no semantic structure",
+          "corpus_chunk": 38757
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "According to conceptual atomism, the content of a concept isn’t determined by its relation to other concepts but by its relation to the world.",
+          "corpus_chunk": 38757
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "A common theme of this work is that philosophy is supposed to be continuous with science",
+          "corpus_chunk": 38807
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Others, however, have called into question the connection between conceptual analysis and definitions (Chalmers & Jackson 2001).",
+          "corpus_chunk": 38807
+        }
+      ]
+    },
+    {
+      "key": "mill1843",
+      "used_for": [
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "The following are correct definitions of Man, according to this test: Man is a mammiferous animal, having (by nature) two hands",
+          "corpus_chunk": 14845
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "Man is an animal who cooks his food: Man is a featherless biped.",
+          "corpus_chunk": 14845
+        },
+        {
+          "locator": "ch. VIII",
+          "basis": "full text",
+          "excerpt": "should be _convertible_ with the name which it professes to define; that is, should be exactly co-extensive with it",
+          "corpus_chunk": 14845
+        }
+      ]
+    },
+    {
+      "key": "smith2022",
+      "used_for": [
+        "What the chapter simplifies"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Essential Predication and the Predicables",
+          "basis": "full text",
+          "excerpt": "Such a predicate (non-essential but counterpredicating) is a peculiar property or proprium (idion).",
+          "corpus_chunk": 33969
+        }
+      ]
+    }
+  ]
+}

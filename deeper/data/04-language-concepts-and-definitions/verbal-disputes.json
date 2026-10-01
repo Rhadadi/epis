@@ -1,0 +1,111 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "verbal-disputes",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a merely verbal dispute, and how can one be dissolved?",
+    "How did James and Bacon diagnose disputes about words?",
+    "When does recognising a verbal element fail to end a dispute?"
+  ],
+  "sources": [
+    {
+      "key": "goodman2024",
+      "used_for": [
+        "Step by step",
+        "What the chapter leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "Taking meaning as the “conceivable effects of a practical kind the object may involve,” the pragmatist philosopher finds that two “practical” meanings of “go around” are in play",
+          "corpus_chunk": 30974
+        },
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "either the man goes North, East, South, and West of the squirrel, or he faces first the squirrel’s head, then one of his sides, then his tail, then his other side",
+          "corpus_chunk": 30974
+        },
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "“Make the distinction,” James writes, “and there is no occasion for any further dispute.”",
+          "corpus_chunk": 30974
+        },
+        {
+          "locator": "§ Pragmatism (1907)",
+          "basis": "full text",
+          "excerpt": "a method of resolving philosophical disputes",
+          "corpus_chunk": 30973
+        }
+      ]
+    },
+    {
+      "key": "bacon1620",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "I.59",
+          "basis": "full text",
+          "excerpt": "Hence the great and solemn disputes of learned men often terminate in controversies about words and names",
+          "corpus_chunk": 31767
+        },
+        {
+          "locator": "I.59",
+          "basis": "full text",
+          "excerpt": "it would be better (imitating the caution of mathematicians) to proceed more advisedly in the first instance, and to bring such disputes to a regular issue by definitions",
+          "corpus_chunk": 31767
+        },
+        {
+          "locator": "I.59",
+          "basis": "full text",
+          "excerpt": "because they consist themselves of words, and these words produce others",
+          "corpus_chunk": 31767
+        }
+      ]
+    },
+    {
+      "key": "creath2026",
+      "used_for": [
+        "Step by step",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "By 1945 Carnap also distinguished the two approaches described here, insisting that they were not competitors but were attempting to explicate two different concepts of probability. One need not choose one as the only concept; both concepts were useful.",
+          "corpus_chunk": 27234
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Reichenbach, by contrast, never conceded that both concepts were needed",
+          "corpus_chunk": 27234
+        }
+      ]
+    },
+    {
+      "key": "sytsma-willemsen2026",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4.2",
+          "basis": "full text",
+          "excerpt": "another that they track different concepts than philosophers are interested in (e.g., Sosa 2009, 2010)",
+          "corpus_chunk": 39527
+        }
+      ]
+    }
+  ]
+}

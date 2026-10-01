@@ -1,0 +1,97 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "reflective-equilibrium",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is reflective equilibrium, and why was it proposed?",
+    "Which judgments does it start from?",
+    "Is the method vulnerable to bias?"
+  ],
+  "sources": [
+    {
+      "key": "knight2025",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "You and your moral interlocutors might be concerned that “what we actually accept is fraught with idiosyncrasy and vulnerable to vagaries of history and personality” (Elgin 1996: 108) or displays “irregularities and distortions” (Rawls 1971: 48).",
+          "corpus_chunk": 41836
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "John Rawls proposed to address these concerns through the method of reflective equilibrium.",
+          "corpus_chunk": 41836
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "On the standard wide reflective equilibrium, we are to consider all possible descriptions to which one might plausibly conform one’s judgments together with all relevant philosophical arguments for them.",
+          "corpus_chunk": 41836
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "with some reference to versions of the method developed in other branches of philosophy (e.g., Goodman 1965",
+          "corpus_chunk": 41839
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "These are “those judgments in which our moral capacities are most likely to be displayed without distortion” (Rawls 1971: 47).",
+          "corpus_chunk": 41842
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Rawls proposes that “we can discard those judgments made with hesitation, or in which we have little confidence” (Rawls 1971: 47).",
+          "corpus_chunk": 41844
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Such a move may increase rather than decrease the distortion of moral sensibilities that reflective equilibrium is supposed to address",
+          "corpus_chunk": 41845
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Consider someone with certain far right commitments, but not so far gone that they don’t recognize some appeal to such values as equality and liberty",
+          "corpus_chunk": 41845
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Friends of reflective equilibrium largely reject such a constraint. The basic complaint is that it makes",
+          "corpus_chunk": 41846
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "epistemological determinations in advance of the reflective process where these are rather the proper upshot of that process",
+          "corpus_chunk": 41846
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "One study found that professional philosophers were vulnerable to order and framing effects, and that this was not reduced by reflection or expertise on the topics in question (Schwitzgebel & Cushman 2015).",
+          "corpus_chunk": 41888
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "considered judgments in such cases are emotionally-driven evolved responses to circumstances that no longer obtain",
+          "corpus_chunk": 41889
+        }
+      ]
+    }
+  ]
+}

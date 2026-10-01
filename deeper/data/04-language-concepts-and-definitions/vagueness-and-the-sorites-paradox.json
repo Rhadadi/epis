@@ -1,0 +1,443 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "vagueness-and-the-sorites-paradox",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "What is a borderline case, and when can inquiry not settle one?",
+    "What are the main responses to the sorites paradox, and what does each cost?",
+    "How does vagueness bear on knowledge?"
+  ],
+  "sources": [
+    {
+      "key": "sorensen2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "How the idea developed",
+        "Degrees of truth",
+        "Contextualism",
+        "What the chapter leaves out",
+        "Connections",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "There is wide agreement that a term is vague to the extent that it has borderline cases.",
+          "corpus_chunk": 42864
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The boy will only count as an absolute borderline case of ‘obese’ if no possible method of inquiry could settle whether he is obese.",
+          "corpus_chunk": 42866
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "No amount of conceptual analysis or empirical investigation can settle whether a 1.8 meter man is tall.",
+          "corpus_chunk": 42870
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A proposition is vague when there are possible states of things concerning which it is intrinsically uncertain",
+          "corpus_chunk": 42866
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In the case of relative borderline cases, the question is determinate but our means for answering it are incomplete. For absolute borderline cases, there is incompleteness in the question itself.",
+          "corpus_chunk": 42867
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "there is normally unclarity as to where the unclarity begins.",
+          "corpus_chunk": 42870
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consequently, ‘borderline case’ has borderline cases.",
+          "corpus_chunk": 42871
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Any finite number of intermediates just delays the inevitable.",
+          "corpus_chunk": 42872
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A false attribution of indeterminacy will lead to the premature abandonment of inquiry.",
+          "corpus_chunk": 42873
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But the tail can be located by tracing down from the snake’s rib cage.",
+          "corpus_chunk": 42873
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since philosophical thought experiments often involve unfamiliar cases, there is apt to be intrinsic uncertainty.",
+          "corpus_chunk": 42868
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If a word is ambiguous, the speaker can resolve the ambiguity without departing from literal usage.",
+          "corpus_chunk": 42877
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Although relativization disambiguates, it does not eliminate borderline cases.",
+          "corpus_chunk": 42876
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The direct bearers of vagueness are a word’s full disambiguations such as ‘tall for an eighteenth-century French man’.",
+          "corpus_chunk": 42876
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The hitch is that death for the induction step is life for its negation.",
+          "corpus_chunk": 42891
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The most popular approach is to use an infinite number of truth-values represented by the real numbers between 0 (for full falsehood) and 1 (for full truth).",
+          "corpus_chunk": 42906
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Judges frequently seem to exercise and control discretion by means of vague language.",
+          "corpus_chunk": 42920
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Judges cannot confess ignorance and so are compelled to assert beyond their evidence.",
+          "corpus_chunk": 42921
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "You cannot reach the horizon because it shifts with your location.",
+          "corpus_chunk": 42927
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "However, the set of things to which the term applies (its “content”) shifts with the context.",
+          "corpus_chunk": 42928
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "The very process of trying to refute the induction step changes the context so that the instance will not come out false.",
+          "corpus_chunk": 42928
+        }
+      ]
+    },
+    {
+      "key": "raffman-hyde2026",
+      "used_for": [
+        "Step by step",
+        "How the idea developed",
+        "The epistemic theory",
+        "Supervaluationism",
+        "Degrees of truth",
+        "Contextualism",
+        "Embracing the paradox",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "1 grain of wheat does not make a heap. If 1 grain doesn’t make a heap, then 2 grains don’t.",
+          "corpus_chunk": 42324
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "The argument is a paradox because apparently impeccable reasoning from apparently impeccable premises yields a falsehood.",
+          "corpus_chunk": 42324
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "It follows, absurdly, that even a single grain makes a heap.",
+          "corpus_chunk": 42325
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The Megarian philosopher Eubulides (4th century BC) is usually credited with the first formulation of the puzzle.",
+          "corpus_chunk": 42327
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "most notably by the Sceptics against the Stoics’ claims to knowledge. Curiously, the paradox attracted little subsequent interest until the late 19th century.",
+          "corpus_chunk": 42327
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "At least three conditions must be met for an argument to be an instance of the sorites paradox.",
+          "corpus_chunk": 42329
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "the property of applying across incremental differences on a decisive dimension is often called the tolerance of a vague term.",
+          "corpus_chunk": 42329
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "If the sorites is a resolvable fallacy, as most theorists of vagueness believe",
+          "corpus_chunk": 42333
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In all likelihood, soriticality is an illusory feature of words like ‘old’ and ‘rich’; their vagueness is real.",
+          "corpus_chunk": 42335
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "As with any paradox, four broad types of response appear to be available.",
+          "corpus_chunk": 42336
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The most drastic response would be to embrace the paradox and conclude that vague terms are either incoherent or vacuous.",
+          "corpus_chunk": 42336
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "hence the vagueness of natural language, including all soritical terms, is a defect to be eliminated.",
+          "corpus_chunk": 42338
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Logic simply does not apply to them.",
+          "corpus_chunk": 42338
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "it allows us to preserve the “sweet simplicity” of classical logic",
+          "corpus_chunk": 42338
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "If logic was to have teeth, it had to apply to natural language as it stands",
+          "corpus_chunk": 42339
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "epistemicists think that vagueness is just a form of ignorance: vague terms have sharp boundaries whose locations are hidden from us.",
+          "corpus_chunk": 42340
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "e.g., Chrysippus 3rd century BC, Cargile 1969, Campbell 1974, Sorensen 1988, 2001; Williamson 1994a,b",
+          "corpus_chunk": 42340
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "And bivalence is preserved: any application of a vague term either is true or is false, though we cannot always know which.",
+          "corpus_chunk": 42340
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "meaning supervenes on use: the locations of the sharp boundaries of a vague term are a function of speakers’ dispositions to use it as they do.",
+          "corpus_chunk": 42341
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Consequently, if we classify the former shade as blue, that classification is correct by luck, and so does not constitute knowledge.",
+          "corpus_chunk": 42342
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Even its proponents grant that epistemicism is intuitively implausible; and it seems to multiply mysteries.",
+          "corpus_chunk": 42343
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "fixed by an unknowable function of their unknowable patterns of use.",
+          "corpus_chunk": 42344
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Nevertheless, epistemicism may have the feel of a “just so” story.",
+          "corpus_chunk": 42344
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "(e.g., Fine 1975; Keefe 2000)",
+          "corpus_chunk": 42349
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "a sentence is super-true (-false) just in case it is true (false) on every admissible precisification of the predicate.",
+          "corpus_chunk": 42350
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "irrespective of the vagueness of ‘heap’ it is logically true of any number of grains of wheat that it either does or does not make a heap.",
+          "corpus_chunk": 42351
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "It countenances instances of true disjunctions neither of whose disjuncts is (super) true.",
+          "corpus_chunk": 42351
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "it is nonetheless true according to supervaluation theory that some conditional is.",
+          "corpus_chunk": 42352
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "Whilst it is true that there is some cut-off point, there is no particular point of which it is true that it is the cut-off point.",
+          "corpus_chunk": 42355
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "we must also allow that some existential statements can be true without having any true instance",
+          "corpus_chunk": 42355
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "In effect, the sorites paradox is resolved only at a cost to other intuitions.",
+          "corpus_chunk": 42355
+        },
+        {
+          "locator": "§ 3.3.3",
+          "basis": "full text",
+          "excerpt": "Vague concepts appear to be concepts without boundaries at all. No finite number of divisions seems adequate.",
+          "corpus_chunk": 42366
+        },
+        {
+          "locator": "§ 3.3.3",
+          "basis": "full text",
+          "excerpt": "belonging to the extension of a vague predicate is more like being attracted to a magnetic pole than like fitting into a pigeon hole",
+          "corpus_chunk": 42366
+        },
+        {
+          "locator": "§ 3.3.3",
+          "basis": "full text",
+          "excerpt": "Goguen (1969) and Zadeh (1975), on the other hand, suggest replacing classical two-valued logic with an infinite-valued one.",
+          "corpus_chunk": 42366
+        },
+        {
+          "locator": "§ 3.3.3",
+          "basis": "full text",
+          "excerpt": "revamped in Tye 1994, uses a three-valued logic.",
+          "corpus_chunk": 42362
+        },
+        {
+          "locator": "§ 3.3.4",
+          "basis": "full text",
+          "excerpt": "Dissatisfied with many-valued and supervaluationist approaches, Kamp (1981) introduced a contextualist solution to the paradox.",
+          "corpus_chunk": 42374
+        },
+        {
+          "locator": "§ 3.3.4",
+          "basis": "full text",
+          "excerpt": "akin to a Gestalt-shift",
+          "corpus_chunk": 42376
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Dummett (1975), for example, maintains that vague observational predicates whose application is supposed to be governed by a nontransitive indiscriminability relation are incoherent.",
+          "corpus_chunk": 42391
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "However, such a view immediately runs into trouble because the paradoxes come in pairs.",
+          "corpus_chunk": 42391
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Similarly, everyone is bald and no one is; everyone is rich and no one is, and so on.",
+          "corpus_chunk": 42392
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Terms like ‘heap’, ‘bald’, ‘hirsute’, ‘rich’ and ‘poor’ apply to nothing.",
+          "corpus_chunk": 42393
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "However, McGee (1991) and Tappenden (1993) proposed a unified treatment of the liar and sorites paradoxes",
+          "corpus_chunk": 42394
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "the paradoxes of self-reference and the sorites paradox appear to have a common underlying structure",
+          "corpus_chunk": 42395
+        }
+      ]
+    },
+    {
+      "key": "allen2024",
+      "used_for": [
+        "How the idea developed"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Two accounts of Carneades’ sorites arguments against the existence of the gods have come down to us",
+          "corpus_chunk": 34401
+        }
+      ]
+    }
+  ]
+}

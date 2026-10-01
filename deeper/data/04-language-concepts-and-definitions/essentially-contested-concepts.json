@@ -1,0 +1,108 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "essentially-contested-concepts",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "How can a concept be shared while its application is permanently contested?",
+    "How do contested concepts relate to thick concepts and to culture?",
+    "How should contested epistemic concepts be compared?"
+  ],
+  "sources": [
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Its definition is contested, but the competing definitions can be understood as differing conceptions of the same basic concept: careful thinking directed to a goal.",
+          "corpus_chunk": 208
+        },
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "Conceptions differ with respect to the scope of such thinking, the type of goal, the criteria and norms for thinking carefully, and the thinking components on which they focus.",
+          "corpus_chunk": 208
+        }
+      ]
+    },
+    {
+      "key": "vayrynen2026",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "preamble",
+          "basis": "full text",
+          "excerpt": "So the application of thick terms and concepts seems somehow to involve both evaluation and non-evaluative description.",
+          "corpus_chunk": 42569
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The connection to Williams’s terminology is that many thick concepts incorporate culturally specific information",
+          "corpus_chunk": 42572
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Different societies might have sufficiently differen",
+          "corpus_chunk": 42572
+        }
+      ]
+    },
+    {
+      "key": "uzgalis2024",
+      "used_for": [
+        "Step by step"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "He also rejects the claim that there is a single classification of things in nature that the natural philosopher should seek to discover.",
+          "corpus_chunk": 29225
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "each of which might be particularly useful depending on one’s purposes",
+          "corpus_chunk": 29225
+        }
+      ]
+    },
+    {
+      "key": "margolis-laurence2023",
+      "used_for": [
+        "What the chapter leaves out"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "On what basis, then, are we to compare and evaluate these differing practices?",
+          "corpus_chunk": 38809
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Wouldn’t this just be a form of epistemic prejudice?",
+          "corpus_chunk": 38810
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "they ask how a concept should be modified or what new concept should be adopted in its place, given the practical context in which the concept is used",
+          "corpus_chunk": 38810
+        }
+      ]
+    }
+  ]
+}

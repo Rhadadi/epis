@@ -1,0 +1,118 @@
+{
+  "chapter": "04-language-concepts-and-definitions",
+  "section": "rules-for-good-definitions",
+  "updated": "2026-10-01",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "questions": [
+    "Where do the traditional rules for definitions come from?",
+    "What criteria must a stipulative definition meet?",
+    "Are circular definitions always illegitimate?"
+  ],
+  "sources": [
+    {
+      "key": "smith2022",
+      "used_for": [
+        "Step by step",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Essential Predication and the Predicables",
+          "basis": "full text",
+          "excerpt": "a definition and what it defines must “counterpredicate” (antikatêgoreisthai) with one another. \\(X\\) counterpredicates with \\(Y\\) if \\(X\\) applies to what \\(Y\\) applies to and conversely",
+          "corpus_chunk": 33969
+        },
+        {
+          "locator": "§ Essential Predication and the Predicables",
+          "basis": "full text",
+          "excerpt": "“Capable of laughing”, for example, counterpredicates with “human” but fails to be its definition. Such a predicate (non-essential but counterpredicating) is a peculiar property or proprium (idion).",
+          "corpus_chunk": 33969
+        }
+      ]
+    },
+    {
+      "key": "gupta-mackereth2023",
+      "used_for": [
+        "Step by step",
+        "Common confusions",
+        "What the chapter leaves out",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "First, a stipulative definition should not enable us to establish essentially new claims—call this the Conservativeness criterion. We should not be able to establish, by means of a mere stipulation, new things about, for example, the moon.",
+          "corpus_chunk": 38972
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Second, the definition should fix the use of the defined expression \\(X\\)—call this the Use criterion.",
+          "corpus_chunk": 38972
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "the definition must reduce each formula containing the defined term to a formula in the ground language",
+          "corpus_chunk": 38976
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The standards by which definitions are judged are thus liable to vary from case to case.",
+          "corpus_chunk": 38945
+        },
+        {
+          "locator": "§ 2.7",
+          "basis": "full text",
+          "excerpt": "Russell argued that such definitions involve a subtle kind of vicious circle.",
+          "corpus_chunk": 39011
+        },
+        {
+          "locator": "§ 2.7",
+          "basis": "full text",
+          "excerpt": "“Whatever involves all of a collection must not be one of the collection (Russell 1908, 63).”",
+          "corpus_chunk": 39012
+        },
+        {
+          "locator": "§ 2.7",
+          "basis": "full text",
+          "excerpt": "\\(z\\) is a liar \\(\\eqdf\\) all propositions asserted by \\(z\\) are false",
+          "corpus_chunk": 39011
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "let this dog be called ‘Freddie’",
+          "corpus_chunk": 38960
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "ostensive definitions can fail to meet the Eliminability criterion explained below; they can fail to meet also the Conservativeness criterion",
+          "corpus_chunk": 38962
+        },
+        {
+          "locator": "§ 2.8",
+          "basis": "full text",
+          "excerpt": "This strong parallelism suggests that since truth is manifestly a legitimate concept, so also are concepts defined by circular definitions such as (18).",
+          "corpus_chunk": 39020
+        },
+        {
+          "locator": "§ 2.8",
+          "basis": "full text",
+          "excerpt": "the semantic value of the defined term is a rule of revision, not as with non-circular definitions, a rule of application",
+          "corpus_chunk": 39020
+        },
+        {
+          "locator": "§ 2.8",
+          "basis": "full text",
+          "excerpt": "is behaving here in the way the concept of truth behaves on the Truth Teller",
+          "corpus_chunk": 39019
+        }
+      ]
+    }
+  ]
+}
