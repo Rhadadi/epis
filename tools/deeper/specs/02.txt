@@ -1,0 +1,456 @@
+== 02-history-of-epistemology/epistemology-in-india
+Q: What is a pramāṇa, and how did the schools disagree about them?
+Q: Is testimony reducible to inference? The Nyāya and Vaiśeṣika positions
+Q: How did Indian philosophers answer the Cārvāka and Nāgārjuna?
+Q: Gettier-style cases and epistemic luck in Indian epistemology
+@phillips-vaidya2026 | preamble | knowledge-generating processes, called pramāṇa, “knowledge sources.” The principal candidates are perception, inference, and testimony
+@phillips-vaidya2026 | § 6 | Vaiśeṣika and Yogācāra join together in seeing a hearer H’s knowledge that p which other philosophers see as flowing from testimony as really resulting from an inference
+@phillips-vaidya2026 | § 6 | conflates inferential certification of the truth of p with testimonial knowledge that p at a first or unreflective level
+@phillips-vaidya2026 | § 6 | Testimony is the (true) statement of an expert (āpta).
+@phillips-vaidya2026 | § 7.1 | But pervasion is known typically through generalization from cases
+@phillips-vaidya2026 | § 7.1 | A kitchen hearth counts as an “example” in the stock inference because of its relevant similarity to the mountain
+@phillips-vaidya2026 | § 2 | the Cārvāka materialist school recognizes perception as a knowledge source but not inference nor any other candidate
+@phillips-vaidya2026 | § 2 | Inference depends upon generalizations which outstrip perceptual evidence
+@phillips-vaidya2026 | § 2 | The standard response is pragmatic. We could not act as we do if we could not rely on inference
+@phillips-vaidya2026 | § 2 | when he opens his mouth to voice his skepticism, by using words with repeatable meanings
+@phillips-vaidya2026 | § 2 | is turned by both Buddhist and Nyāya philosophers into an argument for fallibilism about inference
+@phillips-vaidya2026 | § 2 | the very concept of a fallacy (hetv-ābhāsa) presupposes that of the veritable reason or sign (hetu)
+@phillips-vaidya2026 | § 2 | Nāgārjuna identifies a problem of a justification regress in the pramāṇa program (Vigraha-vyavārtinī, v. 33)
+@phillips-vaidya2026 | § 2 | The Nyāya-sūtra argues that the Nāgārjunian type of skepticism is self-defeating (4.2.26–36)
+@phillips-vaidya2026 | § 2 | his intellectual inheritors such as Śrīharṣa) occupy the reflections of philosophers for centuries
+@phillips-vaidya2026 | § 7.4 | Rumor (aitihya) is defined by Vātsyāyana (under Nyāya-sūtra 2.2.1) as a testimony chain whose originator is unknown.
+@phillips-vaidya2026 | § 7.4 | The Nyāya attitude is to regard even it as presumptively veridical in consonance with the school’s overall theory of testimony.
+@phillips-vaidya2026 | § 9.1 | epistemic localism, the thesis that upstream causal factors play no epistemically significant role in the production of knowledge
+@phillips-vaidya2026 | § 9.3 | Disjunctivism goes along with infallibility.
+@phillips-vaidya2026 | § 7.1 | for Nyāya, analogy is restricted to a subject’s learning the meaning of a word
+@phillips-vaidya2026 | § 7.1 | analogy, which is viewed as the pramāṇa for knowledge of similarity in Mīmāṃsā and Vedānta but is rejected by the other schools, Vedic and non-Vedic alike, except for Nyāya which however provides a radical reinterpretation
+@ichikawa-steup2026 | § 3 | Such examples have actually been discussed since antiquity.
+@ichikawa-steup2026 | § 3 | when we reach the spot, we are lucky and find water right there under a rock
+@ichikawa-steup2026 | § 5.1 | if there were no water there, you would have held the same belief on the same grounds
+
+== 02-history-of-epistemology/contemporary-directions
+Q: What is knowledge-first epistemology, and why did it arise?
+Q: What is pragmatic encroachment, and how does it differ from contextualism?
+Q: What have experimental studies found about Gettier, stakes and fake-barn intuitions?
+Q: What is the accuracy argument for probabilism?
+@ichikawa-steup2026 | § 11 | championed especially by Timothy Williamson’s 2000 book Knowledge and Its Limits
+@ichikawa-steup2026 | § 11 | typically suppose that the project of analyzing knowledge was a mistake
+@ichikawa-steup2026 | § 11 | There is no very straightforward argument for this conclusion; its case consists largely in the attempted demonstration of the theoretical success of the knowledge first stance.
+@ichikawa-steup2026 | § 12 | it is trivial that differences in pragmatic circumstances can cause differences in knowledge
+@ichikawa-steup2026 | § 12 | A difference in pragmatic circumstances can constitute a difference in knowledge.
+@ichikawa-steup2026 | § 12 | Jason Stanley’s 2005 book Knowledge and Practical Interests argues that it is the best explanation for pairs of cases like the following, where the contrasted cases are evidentially alike, but differ pragmatically
+@ichikawa-steup2026 | § 13 | Contextualism and pragmatic encroachment represent different strategies for addressing some of the same “shifty” patterns of intuitive data.
+@ichikawa-steup2026 | § 13 | without contextualism’s semantic commitments
+@oconnor-etal2026 | preamble | investigating the epistemic effects of social interactions, practices, norms, and systems
+@weisberg2021 | preamble | Formal epistemology explores knowledge and reasoning using “formal” tools, tools from math and logic.
+@anderson2024 | preamble | The central concept of feminist epistemology is of situated knowledge
+@anderson2024 | § 1 | It is thus a branch of social epistemology.
+@turri-etal2021 | § 5 | Apt belief, then, is belief that is true because competent.
+@carter-sosa2026 | § 3.3 | reported that participants were similarly inclined to attribute knowledge across cases with shifting stakes
+@carter-sosa2026 | § 3.3 | studies in experimental epistemology have pressed back against this orthodoxy
+@carter-sosa2026 | § 3.3 | with a majority of 80% of participants registering this view in Turri 2016b
+@carter-sosa2026 | § 3.3 | laypersons with East and South Asian cultural backgrounds were inclined (more so than those with Western backgrounds) to attribute knowledge in standard Gettier cases
+@carter-sosa2026 | § 3.3 | This paper generated debate about the philosophical import of these results, and led to further related studies.
+@carter-sosa2026 | § 3.3 | presented evidence that the Gettier intuition was present across four cultures speaking different languages: Brazil, India, Japan, and the USA
+@geninhuber2026 | § 3.1.3 | at least as accurate in each, and strictly more accurate in some, possible world
+@geninhuber2026 | § 3.1.3 | Joyce is able to prove that, given some conditions on how to measure distance or inaccuracy, a degree of belief function obeys the probability calculus if and only if there exists no alternative degree of belief function
+@rey2026 | § 4.1 | can be regarded as a far more difficult empirical question than philosophers have traditionally supposed
+@rey2026 | § 4.1 | Weinberg, Nichols and Stich (2001) found significant cultural differences between responses of Asian and Western students
+
+== 02-history-of-epistemology/the-early-modern-revolution
+Q: What was Descartes' method of doubt for, and what did he conclude from the cogito?
+Q: What was the "Way of Ideas", and who held it?
+Q: Is Descartes' argument viciously circular?
+Q: Is Hume's conclusion about induction psychological or sceptical?
+Q: What is Reid's parity argument against the skeptic?
+Q: What did Kant mean by his Copernican experiment?
+ok-quote: Kant reconciled
+@newman2023 | § 2.2 | Unlike “the sceptics, who doubt only for the sake of doubting,” Descartes aims “to reach certainty – to cast aside the loose earth and sand so as to come upon rock or clay”
+@newman2023 | § 2.2 | Descartes’ methodical innovation is to employ demolition for constructive ends.
+@newman2023 | § 2.2 | Descartes thus uses sceptical doubts to test the firmness of candidates put forward for the foundations of knowledge.
+@newman2023 | § 2 | I began by taking everything that was doubtful and throwing it out, like sand
+@newman2023 | § 8 | from “the very fact that God is not a deceiver” there is a “consequent impossibility of there being any falsity in my opinions which cannot be corrected by some other faculty supplied by God”
+@newman2023 | § 6.1 | Arc 1: The conclusion that an all-perfect God exists is derived from premises that are clearly and distinctly perceived.
+@newman2023 | § 6.1 | Arc 2: The general veracity of propositions that are clearly and distinctly perceived (i.e., the C&D Rule) is derived from the conclusion that an all-perfect God exists.
+@newman2023 | § 6.1 | The question of interest concerns whether, strictly speaking, these arcs form an epistemic circle.
+@newman2023 | § 6.1 | premises that are accepted only because of having first accepted the general veracity of propositions that are clearly and distinctly perceived
+@newman2023 | § 6.1 | We’ll then consider the main alternative interpretations of that arc by which commentators seek to avoid circularity.
+@newman2023 | § 6.3 | more difficult to get out of than the traditional problem of circularity
+@descartes1637 | Part IV | I think, therefore I am (COGITO ERGO SUM), was so certain and of such evidence that no ground of doubt, however extravagant, could be alleged by the sceptics capable of shaking it
+@descartes1637 | Part IV | But immediately upon this I observed that, whilst I thus wished to think that all was false, it was absolutely necessary that I, who thus thought, should be somewhat
+@descartes1637 | Part IV | I concluded that I might, without scruple, accept it as the first principle of the philosophy of which I was in search.
+@descartes1637 | Part IV | a substance whose whole essence or nature consists only in thinking
+@descartes1637 | Part IV | is wholly distinct from the body
+@uzgalis2024 | § 2.5 | he cites the conformity of the proposition to our knowledge, observation and experience, and the testimony of others
+@uzgalis2024 | § 2.5 | We should, Locke also suggests, be tolerant of differing opinions as we have more reason to retain the opinions we have than to give them up to strangers or adversaries who may well have some interest in our doing so.
+@uzgalis2024 | preamble | Locke’s monumental An Essay Concerning Human Understanding (1689) is one of the first great defenses of modern empiricism
+@downing-hilbert2026 | § 2 | to be is to be perceived (or to perceive)
+@downing-hilbert2026 | § 2 | a mind-independent thing is something whose existence is not dependent on thinking/perceiving things, and thus would exist whether or not any thinking things (minds) existed
+@downing-hilbert2026 | § 2 | Berkeley charges that materialism promotes skepticism and atheism
+@downing-hilbert2026 | § 2.2.2 | The same sorts of relativity arguments that were made against secondary qualities can be made against primary ones.
+@downing-hilbert2026 | § 2.2.2 | contends that figure, solidity, motion and rest (the primary qualities) exist in mind-independent material bodies
+@downing-hilbert2026 | § 2.2.2 | the primary/secondary quality distinction associated with mechanism and, again, locatable in the thought of Descartes and Locke
+@qu-radcliffe2026 | § 2.3 | any probable argument in support of the Uniformity Principle would itself have to presuppose the Uniformity Principle, rendering it circular
+@qu-radcliffe2026 | § 2.3 | Hume concludes that the Uniformity Principle is not founded on reason
+@qu-radcliffe2026 | § 2.3 | our inductive propensities are due to “custom or habit,”
+@qu-radcliffe2026 | § 2.3 | There is considerable debate regarding whether Hume’s argument that induction is not founded on reasoning establishes a psychological fact—that is, that reason does not cause the mind to take a crucial inductive step—or a sceptical one—that is, that reason cannot justify our inductive inferences.
+@qu-radcliffe2026 | § 2.3 | then its negation would be inconceivable
+@nichols-yaffe2023 | § 2 | Its principle commitment is to mental representations, called ‘ideas’ or ‘images’, that are believed to mediate all our experience of the world
+@nichols-yaffe2023 | § 2 | The model of conception received from the Way of Ideas marks its first long step into two types of skepticism.
+@nichols-yaffe2023 | § 3.1 | my perceptual mental state is not about the pillow but rather it is about my idea or mental representation of the pillow
+@nichols-yaffe2023 | § 3.1 | is explicitly endorsed by Descartes, Locke, Berkeley, Hume and many other Early Modern philosophers, as well as many living philosophers
+@nichols-yaffe2023 | § 3.5 | they came both out of the same shop, and were made by the same artist
+@nichols-yaffe2023 | § 3.5 | Why, sir, should I believe the faculty of reason more than that of perception?
+@nichols-yaffe2023 | § 3.5 | Reason, says the sceptic, is the only judge of truth, and you ought to throw off every opinion and every belief that is not grounded on reason.
+@kant1787 | Preface to the second edition | It has hitherto been assumed that our cognition must conform to the objects
+@kant1787 | Preface to the second edition | Let us then make the experiment whether we may not be more successful in metaphysics, if we assume that the objects must conform to our cognition.
+@kant1787 | Preface to the second edition | tried the experiment of assuming that the spectator revolved, while the stars remained at rest
+@hume1748 | XII.ii | Nature is always too strong for principle.
+@hume1748 | XII.iii | There is, indeed, a more _mitigated_ scepticism or _academical_ philosophy, which may be both durable and useful
+@hume1748 | XII.iii | The greater part of mankind are naturally apt to be affirmative and dogmatical in their opinions; and while they see objects only on one side
+@hume1739 | I.iii.7 | An opinion, therefore, or belief may be most accurately defined, a lively idea related to or associated with a present impression.
+@bacon1620 | I.39 | Four species of idols beset the human mind
+@look2020 | § 2 | the New Essays Concerning Human Understanding (finished in 1704 but not published until 1765)
+@leibniz1765 | Preface | should indicate the figure of Hercules rather than other fig- ures, this block would be more determined thereto
+@leibniz1765 | Preface | although it would be needful to labor to discover these veins
+@leibniz1765 | Preface | Thus it is that ideas and truths are for us innate, as inclinations, dispositions, habits, or natural potentialities, and not as actions
+@berkeley1710 | Introduction | A Treatise Concerning the Principles of Human Knowledge by George Berkeley
+@reid1764 | title page | INTO THE HUMAN MIND, ON THE PRINCIPLES OF COMMON SENSE
+
+== 02-history-of-epistemology/ancient-greece
+Q: How did Socrates, Plato and Aristotle distinguish knowledge from true belief?
+Q: What are the three definitions of knowledge in the Theaetetus, and why do they fail?
+Q: How did Aristotle answer the regress argument against scientific knowledge?
+Q: How did the Stoics and the Academic skeptics argue about the cognitive impression?
+Q: Did the Pyrrhonists hold that nothing can be known?
+@parry2024 | preamble | There is an intimate positive relationship between epistêmê and technê, as well as a fundamental contrast.
+@parry2024 | preamble | In the Republic this knowledge is the indispensable basis for the philosophers’ craft of ruling in the city.
+@parry2024 | preamble | the Stoics develop the idea that virtue is a kind of technê or craft of life, one that is based on an understanding of the universe
+@plato-apology | 21d | for he knows nothing, and thinks that he knows; I neither know nor think that I know
+@plato-apology | 21b–c | I reflected that if I could only find a man wiser than myself, then I might go to the god with a refutation in my hand.
+@plato-meno | 97d–98a | they will play truant and run away
+@plato-meno | 97d–98a | Now this is an illustration of the nature of true opinions: while they abide with us they are beautiful and fruitful, but they run away out of the human soul, and do not remain long, and therefore they are not of much value until they are fastened by the tie of the cause; and this fastening of them, friend Meno, is recollection, as you and I have agreed to call it. But when they are bound, in the first place, they have the nature of knowledge; and, in the second place, they are abiding.
+@plato-theaetetus | 201b–c | When, therefore, judges are justly persuaded about matters which you can know only by seeing them, and not in any other way, and when thus judging of them from report they attain a true opinion about them, they judge without knowledge, and yet are rightly persuaded, if they have judged well.
+@plato-theaetetus | 201a | persuade men by their art and make them think whatever they like, but they do not teach them
+@chappell-verde2025 | § 2 | Theaetetus proposes a second definition of knowledge: (D2) “Knowledge is true belief (orthê doxa).”
+@chappell-verde2025 | § 2 | He dismisses D2 just by arguing that accidental true beliefs cannot be called knowledge, giving Athenian jurymen as an example of accidental true belief.
+@chappell-verde2025 | § 7.6 | A skilled lawyer can bring jurymen into a state of true belief without bringing them into a state of knowledge; so knowledge and true belief are different states.
+@chappell-verde2025 | § 7.6 | The jury argument seems to be a counter-example not only to D2 but also to D3
+@chappell-verde2025 | § 7.6 | Plato seems to offer two incompatible explanations of why the jury don’t know: first that they have only a limited time to hear the arguments (201b3, 172e1); and second that their judgement is second-hand (201b9)
+@chappell-verde2025 | § 8 | as we might expect if Plato is not even trying to offer an acceptable definition of knowledge, but is rather undermining unacceptable definitions
+@chappell-verde2025 | § 8 | One crucial question about Theaetetus 201–210 is the question whether the argument is concerned with objectual or propositional knowledge. This is a basic and central division among interpretations of the whole
+@smith2022 | § 6.2 | Whatever is scientifically known must be demonstrated.
+@smith2022 | § 6.2 | Either this process continues forever, creating an infinite regress of premises, or it comes to a stop at some point.
+@smith2022 | § 6.2 | If it continues forever, then there are no first premises from which the subsequent ones are demonstrated, and so nothing is demonstrated.
+@smith2022 | § 6.2 | On the other hand, if it comes to a stop at some point, then the premises at which it comes to a stop are undemonstrated and therefore not scientifically known
+@smith2022 | § 6.2 | circular demonstration gives us a regress that is both unending (in the sense that we never reach premises at which it comes to a stop) and finite (because it works its way round the finite circle of premises)
+@smith2022 | § 6.2 | Some modern interpreters have compared this position to a coherence theory of knowledge.
+@smith2022 | § 6.3 | (and indeed every premise prior and posterior to itself)
+@smith2022 | § 6.3 | there is another form of knowledge possible for the first premises, and this provides the starting points for demonstrations
+@smith2022 | § 6.4 | another cognitive state, nous (translated variously as “insight”, “intuition”, “intelligence”), which knows them
+@smith2022 | § 6.4 | Posterior Analytics II.19, long regarded as a difficult text to interpret
+@brittain-osorio2026 | § 3 | Zeno defined a cognitive impression as one that comes from what is, is stamped and impressed exactly in accordance with it, and is such that it could not be false
+@brittain-osorio2026 | § 3 | So, there are no cognitive impressions.
+@brittain-osorio2026 | § 3 | since for Zeno knowledge itself depends on assent to cognitive impressions, this argument leads to the further conclusion that nothing can be known
+@brittain-osorio2026 | § 3 | it is always possible to have a false impression with exactly the same propositional content and representational character as a true one
+@brittain-osorio2026 | § 3 | therefore, it is irrational to assent to any impressions at all
+@brittain-osorio2026 | § 3 | the conclusion doesn’t follow unless it is true that there are impressions, that some are true, that there are no other routes to cognition, that the Stoic definition of cognition gives necessary and sufficient conditions for knowledge
+@brittain-osorio2026 | § 3 | And there is reason to doubt Cicero’s testimony that Arcesilaus subscribed to these Stoic views
+@brittain-osorio2026 | § 5 | a so-called practical criterion, i.e., a theory that makes action without assent possible
+@brittain-osorio2026 | § 5 | action is impossible without assent
+@brittain-osorio2026 | § 5 | responds to two Stoic objections of ‘inaction’ (apraxia)
+@morison2026 | § 3.3 | Myles Burnyeat denies that the Skeptic will achieve tranquillity
+@morison2026 | § 3.3 | who ‘are still investigating’, with other, dogmatic, skeptics
+@morison2026 | § 3.3 | A Skeptic must become a global skeptic, and not just a local one.
+@morison2026 | § 1 | Sextus Empiricus was a Pyrrhonian Skeptic living probably in the second or third century CE
+@morison2026 | § 1 | the best and fullest account we have of Pyrrhonian skepticism
+@bonazzi2024 | preamble | His famous thesis according to which “man is the measure of all things” has been interpreted as a first stance in favour of relativism
+@bonazzi2024 | preamble | His teaching had a practical and concrete goal, and many of the surviving testimonies and fragments suggest that it was mainly devoted to the development of argumentative techniques.
+@bonazzi2024 | § 2 | it is also unclear the relation between his teachings and the apparent relativism of his famous thesis that the man is the measure of all things
+@allen2024 | preamble | Carneades (214–129/8 BCE) was a member and eventually scholarch or head of the Academy
+@allen2024 | preamble | defended a form of probabilism in epistemology
+@comesana-klein2026 | § 6 | There are five modes associated with Agrippa, but three of them are the most important: the mode of hypothesis (or unsupported assertion), the mode of circularity (“reciprocal”), and the mode of regression to infinity.
+@nails-monoson2025 | preamble | (469–399 B
+@vogt2026 | preamble | The Greek word skepsis means investigation. Literally, a “skeptic” is an inquirer.
+
+== 02-history-of-epistemology/epistemology-in-china
+Q: How did classical Chinese thinkers understand knowledge?
+Q: What are the Mohist three standards (fa), and how are they justified?
+Q: How should Zhuangzi's butterfly dream be read?
+Q: What did Xunzi say about the heart-mind and blindness?
+@rosker2025 | preamble | (or primarily) stems from moral training
+@rosker2025 | § 2.3 | epistemology is inseparable from ontology
+@fraser2024 | § "The Three Fa" | The three fa are that statements must have a root, a source, and a use.
+@fraser2024 | § "The Three Fa" | The “source” is that statements must have an empirical basis; they must be checked against what people see and hear.
+@fraser2024 | § "The Three Fa" | the statement must produce benefit
+@fraser2024 | § "The Three Fa" | The “root” is the historical precedent and evidence provided by the deeds of the ancient sage kings
+@fraser2024 | § "The Three Fa" | the Mohists seem to overlook the possibility of conflicts between the three, such as the likelihood that certain practices of the ancient sage-kings might not benefit society today
+@fraser2024 | § "The Three Fa" | The texts that present the theory do not say, but the Mohists probably view the third standard, benefit to society, as an application of their moral theory
+@fraser2024 | § "The Three Fa" | Concerns can be raised about the vagueness of the three standards
+@fraser2024 | § "The Three Fa" | the extent to which the Mohists apply them fairly and rigorously
+@hansen2024 | § 4.8 | dreamt of being a butterfly or a butterfly is dreaming of being Zhuangzi—though there must be a difference. This is called “things change”.
+@hansen2024 | § 4.8 | The mild skepticism of our trajectory to greater knowledge is most famously illustrated in the story of Zhuangzi dreaming being a butterfly
+@hansen2024 | § 4.8 | Zhuangzi’s relativism is mildly skeptical of the relativism itself.
+@hansen2024 | § 4.8 | Zhuangzi’s non-ironic examples of real-life spectacular know-how
+@hansen2024 | § 4.8 | The knife sang
+@goldin2025 | § 8 | which has three cardinal attributes: “emptiness” (xu 虛) “unity” (yi 壹), and “tranquility” (jing 靜)
+@goldin2025 | § 8 | “tranquility” refers to the heart-mind’s ability to distinguish fantasy from rational thinking
+@goldin2025 | § 8 | “Unity” refers to the heart-mind’s ability to synthesize diverse data into meaningful paradigms.
+@goldin2025 | § 8 | we do not have to erase one datum in order to make room for another
+@goldin2025 | § 8 | refers to the self-destructive acts that people undertake because they fail to employ their heart-minds correctly
+@goldin2025 | § 8 | The title of the relevant chapter, “Resolving Blindness”
+
+== 02-history-of-epistemology/the-nineteenth-century
+Q: How did Mill and Whewell disagree about induction?
+Q: What are colligation and consilience?
+Q: What did Peirce's fallibilism amount to, and how did it differ from skepticism?
+Q: What are the phases of Dewey's pattern of inquiry?
+Q: How is Mill's argument for freedom of speech structured?
+Q: What did James mean by calling truth a species of the good?
+Q: What is Comte's law of the three stages?
+@macleod2020 | § 3.1 | in cases of mathematics and geometry, for instance—we must, at some level, be reasoning inductively
+@macleod2020 | preamble | He was a naturalist, a utilitarian, and a liberal, whose work explores the consequences of a thoroughgoing empiricist outlook.
+@macleod2020 | § 3.3 | there is reason to think that A is an indispensable part of the cause of a
+@macleod2020 | § 4.5 | a kind of philosophic text-book of a single truth
+@macleod2020 | § 4.5 | perhaps belies the fact that there are many distinct arguments and conclusions drawn throughout the text
+@macleod2020 | § 4.5 | The chapter takes the form of a proof from the exhaustion of cases.
+@macleod2020 | § 4.5 | P must be either: (i) true, (ii) false, or (iii) partially true
+@macleod2020 | § 4.5 | Whichever is the case, he argues, P’s assertion will be useful for discovering and maintaining the truth
+@macleod2020 | § 4.5 | Without active defence of a truth, we risk losing sense of its real meaning, with genuine knowledge becoming reduced to “phrases retained by rote”
+@macleod2020 | § 4.5 | it will be held as a dead dogma, not a living truth
+@snyder2023 | § 2 | Colligation, according to Whewell, is the mental operation of bringing together a number of empirical facts by “superinducing” upon them a conception which unites the facts
+@snyder2023 | § 2 | Thus the known points of the Martian orbit were colligated by Kepler using the conception of an elliptical curve.
+@snyder2023 | § 3 | Whewell called this type of evidence a “jumping together” or “consilience” of inductions. An induction, which results from the colligation of one class of facts, is found also to colligate successfully facts belonging to another class.
+@snyder2023 | preamble | causing an interesting and fruitful debate between them over the nature of inductive reasoning
+@snyder2023 | § 2 | are “supplied by the mind itself”—they are not (as Mill and Herschel protested) merely received from our observations of the world
+@snyder2023 | § 2 | Whewell’s view of induction has the advantage over Mill’s of allowing the inference to unobservable properties and entities
+@snyder2023 | preamble | Whewell invented the English word “scientist;” before this time the only terms in use in that language were “natural philosopher” and “man of science”
+@burch2024 | § 4 | at any temporal point in the process of scientific inquiry we are only at a provisional stage of it
+@burch2024 | § 4 | he is far from being an epistemological pessimist or sceptic
+@burch2024 | § 4 | one his most important dicta, which he called his first principle of reason, is “Do not block the way of inquiry!”
+@burch2024 | § 4 | three phases or stages: abduction (making conjectures or creating hypotheses), deduction (inferring what should be the case if the hypotheses are the case), and induction (the testing of hypotheses)
+@burch2024 | § 4 | must have some sort of experiential “cash value,”
+@burch2024 | § 4 | the entire meaning of a meaningful conception consisted in the totality of such specifications of possible observations
+@burch2024 | § 4 | Peirce was not a simple operationalist in his philosophy of science
+@burch2024 | § 4 | he believed in the reality of abstractions
+@hildebrand2026 | § 4.3 | inquiry begins (1) with a feeling of something amiss
+@hildebrand2026 | § 4.3 | (2) a problem must be specifically formulated; note that problems do not preexist inquiry, as typically assumed
+@hildebrand2026 | § 4.3 | (3) a hypothesis is constructed
+@hildebrand2026 | § 4.3 | (4) one reasons through the meanings involved in the hypothesis
+@hildebrand2026 | § 4.3 | (5) acting to evaluate and test the hypothesis
+@goodman2024 | § Pragmatism (1907) | Truth, James holds, is “a species of the good,” like health.
+@goodman2024 | § Pragmatism (1907) | Truths are goods because we can “ride” on them into the future without being unpleasantly surprised.
+@goodman2024 | § Pragmatism (1907) | he recognizes “resisting factors in every experience of truth-making” (P 117), including not only our present sensations or experiences but the whole body of our prior beliefs
+@bourdeau2026 | § 4.1 | humanity passes through three successive stages: the theological, the metaphysical, and the positive. The first is the necessary starting point for the human mind; the last, its normal state
+@bourdeau2026 | § 1 | Comtean positivism was taken over by neo-positivism in philosophy of science
+
+== 02-history-of-epistemology/the-twentieth-century
+Q: What did the verification principle require, and why did its formulations fail?
+Q: What is Popper's criterion of demarcation, and what asymmetry is it built on?
+Q: What was Moore's proof of an external world meant to show?
+Q: What are Wittgenstein's hinge propositions?
+Q: Is Quine's naturalized epistemology normative?
+Q: Were there Gettier cases before Gettier?
+Q: Did Kuhn hold that science is irrational?
+@creath2026 | § 4.1 | in order to be meaningful a claim must be implied by a finite number of observation sentences
+@creath2026 | § 4.1 | this view had the drawback that so-called laws of nature would not be meaningful on this criterion. Schlick was prepared to bite the bullet and hold that laws were not statements at all but principles of inference.
+@creath2026 | § 4.1 | This more liberal or “left” wing of the Vienna Circle included Carnap, Philipp Frank, Hahn, and Neurath.
+@creath2026 | § 4.1 | Over the years a great many different formulations of verificationist principles ensued. Most of them came to a bad end rather quickly
+@creath2026 | § 4.1 | This formulation may be natural, but it is also fatally flawed. It would declare any sentence whatsoever as meaningful: For any sentence A and any observation sentence O, A would be meaningful because it could be conjoined to A ⊃ O.
+@creath2026 | § 4.1 | So even a string of failures in formulating verificationist principles may mean no more than that the embedded accounts of confirmation are too simple but the link between meaningfulness and confirmation is nevertheless sound.
+@creath2026 | § 4.1 | Wittgenstein’s no-content theory of logic suggested that all of the real claims, the ones that had genuine content, could be appropriately supported by experience
+@creath2026 | § 4.1 | This seemed to open the way for a thoroughgoing empiricism
+@thornton2026 | § 3 | it is logically impossible to verify a universal proposition by reference to experience (as Hume saw clearly), but a single genuine counter-instance falsifies the corresponding universal law
+@thornton2026 | § 3 | should count scientifically only if it is the positive result of a genuinely “risky” prediction, which might conceivably have been false
+@thornton2026 | § 3 | psychoanalysis is a pre-science and astrology and phrenology are pseudo-sciences
+@thornton2026 | § 1 | couched their theories in terms which made them amenable only to confirmation, while Einstein’s theory, crucially, had testable implications which, if false, would have falsified the theory itself
+@baldwin2010 | § 6 | By holding up my two hands, and saying, as I make a certain gesture with the right hand, ‘Here is one hand’, and adding, as I make a certain gesture with the left, ‘and here is another’
+@baldwin2010 | § 6 | How absurd it would be to suggest that I did not know it, but only believed it
+@baldwin2010 | § 6 | But this interpretation is incorrect: Moore's avowed aim is to prove the existence of an external world, not to prove his knowledge of the existence of an external world.
+@baldwin2010 | § 6 | (2) the proposition ‘Nobody knows for certain that there are any material things’
+@baldwin2010 | § 6 | I do not think I have ever implied that it could be proved to be false in any such simple way
+@biletzki-matar2026 | § 5 | On Certainty is generally accepted as a work of epistemology
+@biletzki-matar2026 | § 5 | It tackles skeptical doubts and foundational solutions but is, in typical Wittgensteinian fashion, a work of therapy which discounts presuppositions common to both.
+@biletzki-matar2026 | § 5 | These are propositions about which doubt cannot be entertained, but whether this be due to their being epistemically foundational, naturally certain, or logically unavailable to doubt is still a matter for philosophical explanation
+@hylton-kemp2025 | § 2.1 | “Epistemology”, Quine says, “…is contained in natural science, as a chapter of psychology”
+@hylton-kemp2025 | § 4.4 | Some commentators have claimed that it is not, and that this is a serious defect (see Kim, 1988).
+@hylton-kemp2025 | § 4.4 | are wrong in protesting that the normative element…goes by the board
+@hylton-kemp2025 | § 4.4 | it tells us that in drawing up scientific theories we should rely on the evidence of the senses rather than on soothsayers; that we should aim at simple theories
+@ichikawa-steup2026 | § 3 | The 14th-century Italian philosopher Peter of Mantua presented this similar case: Let it be assumed that Plato is next to you and you know him to be running, but you mistakenly believe that he is Socrates
+@ichikawa-steup2026 | § 3 | If you look at a clock which you believe to be going, but which in fact has stopped, and you happen to look at it at a moment when it is right, you will acquire a true belief as to the time of day, but you cannot be correctly said to have knowledge.
+@ichikawa-steup2026 | § 3 | Although such cases have been discussed throughout the history of Eastern and Western epistemology, they came into far more theoretical salience in the second half of the 20th century
+@bird2025 | § 1 | Kuhn’s claim that scientists do not employ rules in reaching their decisions appeared tantamount to the claim that science is irrational
+@bird2025 | § 4.1 | Kuhn (1977, 321–2) identifies five characteristics that provide the shared basis for a choice of theory: 1. accuracy; 2. consistency
+@bird2025 | § 3 | In this respect at least the accusation is wide of the mark. For to deny that some cognitive process is the outcome of applying rules of rationality is not to imply that it is an irrational process
+
+== 02-history-of-epistemology/medieval-and-renaissance-europe
+Q: How did Augustine answer the Academic skeptics?
+Q: What did Aquinas mean by scientia?
+Q: What did Ockham's razor actually say?
+Q: How seriously did medieval philosophers take skepticism?
+Q: What did Nicholas of Autrecourt argue, and how did Buridan reply?
+Q: How did Montaigne's skepticism differ from Sextus's?
+Q: What did Bacon say about confirming instances?
+@bolyard2025 | § 2.1 | if an internal mental image or concept of a tree’s being beside a house could be caused by a dream, then the tree’s being beside the house cannot be known, even if the tree is in fact beside the house
+@tornau2024 | § 5.1 | Augustine’s earliest surviving work is a dialogue on Academic skepticism
+@tornau2024 | § 5.1 | Augustine’s refutation of skepticism does not aim at justifying our ordinary practices and beliefs
+@tornau2024 | § 5.1 | he thinks it sufficient to demonstrate the existence of some kind of knowledge that is immune to skeptical doubt
+@tornau2024 | § 5.1 | the certainty of self-referential knowledge (the wise person “knows wisdom”, Contra Academicos 3.6; the Academic skeptic “knows” the Stoic criterion of truth
+@tornau2024 | § 5.1 | I am certain that something appears white to me even if I am ignorant whether it is really white
+@tornau2024 | § 5.1 | the certainty of formal, logical or mathematical, structures (ib. 3.24–29), knowledge of which is possible independently of the mental state of the knower, whereas the reliability of sense impressions differs according as we are awake or dreaming
+@tornau2024 | § 5.1 | the Academics were in fact crypto-Platonists who hid their insight into transcendent reality and restricted themselves to skeptical arguments to combat the materialist and sensualist schools
+@pasnau2024 | § 6.3 | he shows no interest in trying to define anything like knowledge in its loose and popular sense
+@pasnau2024 | § 6.3 | Aquinas understands scientia as the apprehension, with certainty, of an entity, event or proposition, based on a demonstrative proof grounded in the essential nature of the
+@pasnau2024 | § 6.3 | The fundamentals of Aquinas’s thinking about knowledge in this ideal sense come from Aristotle’s Posterior Analytics.
+@spade-pelletier2025 | § 4.1 | according to which one “must not multiply entities beyond necessity”.[24] Although the sentiment is certainly Ockham’s, this particular formulation is nowhere to be found in his texts.
+@spade-pelletier2025 | § 4.1 | They are: reason (or reasoning from self-evident premises), experience, and infallible religious authority (namely, Sacred Scripture).
+@spade-pelletier2025 | § 4.1 | we ought not endorse a claim that supposes that sort of entity to exist
+@bolyard2025 | preamble | From the late 13th century onwards, however, skeptical issues began to exert a dominant and wide influence on epistemological discussions, as seen in the works of such important figures as Henry of Ghent, John Duns Scotus, William of Ockham, Peter Auriol, John Buridan, and Nicholas of Autrecourt.
+@bolyard2025 | preamble | no thinker from the Middle Ages professed an active allegiance to a systematic philosophical skepticism
+@bolyard2025 | preamble | it continued to swirl in the thoughts of many of the best philosophers of the period
+@bolyard2025 | preamble | versions of both his cogito and Evil Demon arguments may be found in the works of medieval philosophers
+@pasnau2025 | § 1 | Divine illumination played a prominent part in ancient Greek philosophy, in the later Greek commentary tradition, in neo-Platonism, and in medieval Islamic philosophy.
+@pasnau2025 | preamble | Divine illumination is the oldest and most influential alternative to naturalism in the areas of mind and knowledge.
+@bolyard2025 | § 4.2.4 | “you are not certain whether anything appears to you at all” (First Letter 11)
+@bolyard2025 | § 4.2.4 | the only things of which we can be certain are the principle of non-contradiction
+@bolyard2025 | § 4.2.4 | “From the fact that some thing is known to be, it cannot be inferred evidently, by evidentness reduced to the first principle, or to the certitude of the first principle, that there is some other thing”
+@bolyard2025 | § 4.2.4 | Nicholas of Autrecourt espoused the most radical form of skepticism found at any point during the Middle Ages, and he was punished for it.
+@bolyard2025 | § 4.2.4 | “virtual infinity of self-evident principles through the senses, or through experience
+@bolyard2025 | § 4.2.4 | because of the possibility of God’s deceptiveness, at best we are capable of “conditional evidentness”
+@bolyard2025 | § 4.2.4 | mathematical certainty is not expected in every subject
+@bolyard2025 | § 4.2.2 | These illusory experiences include such stock examples as dreams, hallucinations, mirror images, the after-images of the sun, the bent appearance of a straight stick that is immersed in water
+@bolyard2025 | § 4.2.2 | the fiery circle that appears when a burning stick is whirled rapidly through the air
+@bacon1620 | I.95 | Those who have treated of the sciences have been either empirics or dogmatical.[57] The former like ants only heap up and use their store, the latter like spiders spin out their own webs.
+@bacon1620 | I.95 | The bee, a mean between both, extracts matter from the flowers of the garden and the field, but works and fashions it by its own efforts.
+@bacon1620 | I.46 | It was well answered by him[15] who was shown in a temple the votive tablets suspended by such as had escaped the peril of shipwreck
+@bacon1620 | I.46 | in all of which the deluded believers observe events which are fulfilled, but neglect and pass over their failure, though it be much more common
+@bacon1620 | I.46 | in establishing any true axiom the negative instance is the most powerful
+@bacon1620 | I.38, I.68 | XXXVIII. | note: The discussion of the idols runs from aphorism XXXVIII to aphorism LXVIII.
+@foglia-ferrari2026 | § 4 | he had it engraved with his age, with “Epecho” , “I abstain” in Greek, and another Sceptic motto in French: “Que sais-je?”
+@foglia-ferrari2026 | § 4 | Commentators now agree upon the fact that Montaigne largely transformed the type of scepticism he borrowed from Sextus. The two sides of the scale are never perfectly balanced
+@foglia-ferrari2026 | § 4 | This imbalance undermines the key mechanism of isosthenia, the equality of strength of two opposing arguments.
+@foglia-ferrari2026 | § 4 | another interpretation of scepticism formulates it as a strategy used to confront “fideism”, as stressed by Richard Popkin
+@foglia-ferrari2026 | § 4 | because reason is unable to demonstrate religious dogmas, we must rely on spiritual revelation and faith
+
+== 02-history-of-epistemology/epistemology-in-the-islamic-world
+Q: How did falsafa and kalām differ in their approach to knowledge and causation?
+Q: What role did demonstration play in Arabic philosophy's theory of knowledge?
+Q: What is Ibn Sīnā's theory of ḥads, and why is his epistemology called a rationalist empiricism?
+Q: What was the floating man thought experiment meant to show, and how was it received?
+Q: What was al-Ghazālī's skeptical crisis, and how did it end?
+Q: What exactly did al-Ghazālī deny about causation, and on what grounds?
+Q: How did Ibn Rushd reply on causation and on philosophy and religion?
+Q: What is Suhrawardī's knowledge by presence?
+Q: How did these ideas reach Latin Europe?
+ok-quote: The connection (iqtirān)
+ok-quote: This anticipates Hume
+@richardson2025 | § 2.1 | Falsafa is understood by our authors as an intellectual practice developed in Ancient Greece, which emphasizes the use of rational understanding and demonstration in the pursuit of knowledge (ʿilm).
+@richardson2025 | § 1.2 | Broadly speaking, Ashʿarite theologians seem to endorse occasionalism, the view that God is the only true cause.
+@richardson2025 | § 1.2 | al-Ashʿarī and his followers appealed to divine omnipotence to limit agency to God alone
+@richardson2025 | § 2.2 | Ibn Rushd (1126–1198), known to English speakers by his Latinized name, Averroes
+@griffel2026 | § 7.1 | Al-Ashʿarī (873–935), the founder of the theological school that al-Ghazālī belonged to, had rejected the existence of “natures” (tabāʾiʿ) and of causal connections among created beings.
+@benahmed-pasnau2025 | § 2 | In line with the approach of his predecessors, Ibn Rushd divided logical processes into five types of argument: demonstrative, dialectical, rhetorical, poetical, and fallacious.
+@benahmed-pasnau2025 | § 2 | The premises of demonstrative arguments are necessary
+@benahmed-pasnau2025 | § 2 | for it is the only procedure that leads to certainty in philosophy
+@benahmed-pasnau2025 | § 1.2 | The Incoherence of the Incoherence (Tahāfut al-Tahāfut), a direct response to al-Ghazālī
+@benahmed-pasnau2025 | § 1.2 | The Decisive Treatise (Faṣl al-Maqāl), an argument for the value of philosophy to Islam
+@benahmed-pasnau2025 | § 4 | Ibn Rushd heaps scorn on this view in the Incoherence, resting his case most fundamentally on the link between a thing’s causal role and its defining nature
+@benahmed-pasnau2025 | § 4 | If a thing did not have its specific nature, it would not have a special name nor a definition, and all things would be one
+@benahmed-pasnau2025 | § 6.2 | For truth does not oppose truth, but rather agrees with and bears witness to it
+@benahmed-pasnau2025 | § 6.2 | The implicit target of the Decisive Treatise is al-Ghazālī’s notorious fatwa against metaphysics.
+@benahmed-pasnau2025 | § 6.2 | To prohibit this path to knowledge from those who are capable of it is an injustice both to God and to these scholars.
+@benahmed-pasnau2025 | § 6.2 | but there are other paths, such as the rhetorical and dialectical, that also arrive at this truth
+@griffel2026 | § 4 | “A [valid] rational demonstration is never wrong”
+@griffel2026 | § 4 | Each teaching must be judged by itself, and if found sound and in accordance with revelation, should be adopted
+@griffel2026 | § 4 | This attitude leads to a widespread application of Aristotelian teachings in al-Ghazālī’s works on Muslim theology and ethics.
+@griffel2026 | § 4 | If demonstration proves something that violates the literal meaning of revelation, the scholar must apply “allegorical interpretation” (taʾwīl) to the outward text
+@griffel2026 | § 4 | The interpretation of passages in revelation, however, whose outward meaning is not disproved by a valid demonstration, is not allowed
+@griffel2026 | § 4 | Al-Ghazālī’s rule for reconciling apparent conflicts between reason and the literal meaning of revelation was widely accepted by almost all later Muslim theologians
+@griffel2026 | § 4 | Ibn Taymiyya flatly denied the possibility of a conflict between reason and revelation
+@griffel2026 | § 4 | Averroes accepted al-Ghazālī’s rule for reconciling conflicts between reason and the outward meaning of revelation but he did not agree with his findings on what can and cannot be demonstrated
+@griffel2026 | § 4 | This work was translated twice into Latin in 1328 and 1526
+@griffel2026 | § 4 | made al-Ghazālī’s criticism of Aristotelianism known among the Averroists of the Renaissance
+@griffel2026 | § 4 | No rational argument is more convincing than any of its opposing rational arguments, the Ismāʿīlites claimed, since all rational proofs are mutually equivalent (takāfu’ al-adilla). Only the divinely guided word of the Shiite Imam conveys certainty
+@griffel2026 | § 4 | Sunni theologians argue among each other, he says, because they are largely unfamiliar with the technique of demonstration.
+@griffel2026 | § 7.2 | Observation (mushāhada) points towards a concomitant occurrence (al-husûl ‘indahu) but not to a combined occurrence (al-huṣūl bihī)
+@griffel2026 | § 7.2 | In the First Position of the 17th discussion al-Ghazālī brings the argument that observation cannot prove causal connections.
+@griffel2026 | § 7.2 | While such connections cannot be proven through observation (or through any other means), they may or may not exist.
+@griffel2026 | § 7.2 | This opening statement is a masterwork of philosophical literature: The connection (iqtirān) between what is habitually believed to be a cause and what is habitually believed to be an effect is not necessary (ḍarūrī), according to us.
+@griffel2026 | § 7.2 | (1) the connection between a cause and its effect is not necessary, (2) the effect can come to exist without this particular cause
+@griffel2026 | § 7.2 | (3) God creates two events concomitant, side by side, and (4) God’s creation follows a prior decision (taqdīr).
+@griffel2026 | § 7.2 | Rather we say that the efficient cause (fāʿil) of the combustion through the creation of blackness in the cotton and through causing the separation of its parts and turning it into coal or ashes is God—either through the mediation of the angels or without mediation.
+@griffel2026 | § 7.2 | Secondary causality is a viable option for al-Ghazālī that he is willing to accept.
+@griffel2026 | § 7.3 | The dispute between al-Ghazālī and Avicenna is not about causality as such, rather about the necessary nature of God’s creation.
+@griffel2026 | § 7.3 | For Avicenna, fire necessarily causes cotton to combust because the sentence “Fire causes cotton to combust,” was, is, and will always be true.
+@griffel2026 | § 7.3 | Avicenna’s view of the modalities follows the statistical model of Aristotle
+@griffel2026 | § 7.3 | Ashʿarite kalām developed an understanding that is closer to our modern view of the modalities as referring to synchronic alternative states of affairs.
+@griffel2026 | § 7.3 | realizes that all the features of the building, its height, its length, its form, etc., are actualized possibilities and could be different
+@griffel2026 | § 7.3 | We can imagine a world where fire does not cause cotton to combust.
+@griffel2026 | § 7.3 | We will see that he, like Avicenna, assumes causal connections never were and never will be different from what they are now. Still they are not necessary, he maintains.
+@griffel2026 | § 7.3 | God, however, did not choose to create such an alternative possible world
+@griffel2026 | § 7.4 | in order to counter Avicenna’s position that the necessary connection between existing causes and effects renders some miracles in the Qur’an impossible
+@griffel2026 | § 7.4 | By creating combustion every time fire touches cotton, God follows a certain custom (ʿāda). In real terms, however, combustion occurs only concomitantly when fire touches cotton and is not connected to this event.
+@griffel2026 | § 7.4 | When God wishes to perform a miracle and confirm the mission of one of His prophets, he suspends His habit
+@griffel2026 | § 7.4 | Here al-Ghazālī accepts the existence of “natures” (ṭabāʾiʿ) and of unchanging connections between causes and their effects.
+@griffel2026 | § 7.4 | we are far away from knowing all causes and explaining all processes in nature. It may well be the case that those miracles that the falāsifa deny have immanent natural causes that are unknown to us.
+@bolyard2025 | § 3.1.2 | For they could only be rebutted with a proof, and a proof can only be constructed by combining the first [principles of] knowledge.
+@bolyard2025 | § 3.1.2 | that in which what is known is laid bare in such a way as to leave no room for doubt, and is unaccompanied by the possibility of error or illusion
+@bolyard2025 | § 3.1.2 | First, disagreement among competing theories gives some initial doubt. Second, a few cases of sensory skepticism (e.g., a shadow cast by the sun appearing to remain still, when in fact it is slowly moving as the day passes; the apparently small size of celestial bodies)
+@bolyard2025 | § 3.1.2 | reason itself—may be faulty, and he wonders whether even apparent logical truths might be false. And finally, he concludes by invoking dream skepticism.
+@bolyard2025 | § 3.1.2 | This disease defied all cure and lasted for almost two months, during which I embraced the [skeptical] creed in actual fact, though not in speech or expression.
+@bolyard2025 | § 3.1.2 | The rational necessary beliefs were once again accepted and trusted, both securely and certainly. This did not come about by composing a proof or by an arrangement of words, but rather by a light that God almighty cast into my breast
+@bolyard2025 | § 3.1.2 | Whoever supposes that enlightenment depends upon explicit proofs has narrowed the expanse of God’s mercy.
+@bolyard2025 | § 3.1.2 | Al-Ghazali sounds surprisingly Cartesian in an important section of his Munkidh min al-Dalal (Deliverance from Error).
+@bolyard2025 | § 3.1.2 | situate Ghazali’s discussion of skepticism within a broader Islamic intellectual conversation about the subject, and downplays the supposed connections between Ghazali and the Early Moderns
+@bolyard2025 | § 3.1.2 | This Humean-leaning position has been discussed widely in the secondary literature.
+@bolyard2025 | § 3.1 | Al-Ghazali (Algazel to the Latin-speaking world) (ca. 1058–1111)
+@bolyard2025 | § 3.1 | while the Persian philosophers Rāzī (1149–1210) and Ṭūsī (1201–1274) are not skeptics, their concerns with global skepticism and the knowledge of first principles lead them to have extended discussions of skeptical arguments
+@bolyard2025 | § 3.1 | Al-Haytham (= Alhazen) (965–1039)
+@bolyard2025 | § 3.1.1 | Al-Haytham held that many perceptions are inferential
+@bolyard2025 | § 3.1.1 | we sometimes grasp them through sudden, “imperceptible” inferences
+@bolyard2025 | § 3.1.1 | Al-Haytham even argues that seemingly self-evident propositions such as “the whole is greater than its [proper] part” are inferential.
+@bolyard2025 | § 3.1.1 | the way the moon when low on the horizon appears larger than it does when higher in the sky
+@bolyard2025 | § 3.1.1 | it widely read in the Latin West under the title Perspectiva or De aspectibus
+@bolyard2025 | § 3.1.1 | His views about the perceptual process had a wide influence throughout the later Middle Ages.
+@ghazali1909 | pp. 16–17 | Then I reflected in myself : “ Since I cannot trust to the evidence of my senses, I must rely only on intellectual notions based on fundamental principles
+@ghazali1909 | p. 17 | Who can guarantee you that you can trust to the evidence of reason more than to that of the senses ? You believed in our testimony till it was contradicted by the verdict of reason
+@ghazali1909 | p. 17 | And if such a third arbiter is not yet apparent, it does not follow that he does not exist.
+@ghazali1909 | p. 18 | In order to disentangle the knot of this difficulty, a proof was necessary. Now a proof must be based on primary assumptions, and it was precisely these of which I was in doubt.
+@ivry2012 | § 3 | conceiving of a person suspended in air in total isolation from any physical or sensory experience
+@ivry2012 | § 3 | The purport of this experiment is to show the ability of a person to deduce the soul's existence intellectually, without assistance from the sensory or imaginative, material faculties of the soul.
+@ivry2012 | § 3 | For Avicenna this proves that the soul is an independent intelligent substance, both prior to involvement with the world, and afterwards, when the corporeal organs that service the soul perish.
+@hasse2025 | § 5 | Also influential was Avicenna’s definition of the soul as a separate substance (Hasse 2008) and his thought experiment of the “Flying Man”
+@hasse2025 | preamble | The Arabic-Latin translation movements in the Middle Ages, which paralleled that from Greek into Latin, led to the transformation of almost all philosophical disciplines in the medieval Latin world.
+@hasse2025 | § 1 | assumed full pace in Toledo in the second half of the twelfth century
+@hasse2025 | § 1 | In 1255, the statutes of the Parisian arts faculty declared all known works of Aristotle mandatory reading for the students – a very influential move, which much contributed to the rise of Averroes’ commentaries as the principal secondary literature of Latin university culture.
+@gutas2025 | preamble | (ca. 970–1037) was the preeminent philosopher and physician of the Islamic world
+@gutas2025 | preamble | it represents the culmination of the Hellenic tradition, defunct in Greek after the sixth century, reborn in Arabic in the 9th
+@gutas2025 | § 3 | literally translated in the Arabic version as ḥads (guessing correctly, hitting correctly upon the answer), and made it the cornerstone of his epistemology
+@gutas2025 | § 3 | it explained why people differ in their ability to apply this syllogistic method by presupposing that they possess a varying talent for it
+@gutas2025 | § 3 | on a human level and in history it is evolutionary. Each philosopher, through his own syllogistic reasoning and ability to hit correctly upon the middle terms, modifies and completes the work of his predecessors
+@gutas2025 | § 3 | but he never claimed to have exhausted it all; in his later works he bemoaned the limitations of human knowledge
+@gutas2025 | § 3 | the senses are the means by which the human soul acquires different kinds of knowledge (maʿārif )
+@gutas2025 | § 3 | is itself actualized by the experience of particulars
+@gutas2025 | § 3 | For human knowledge, therefore, the intellect functions as a processor of the information provided by the external and internal senses.
+@gutas2025 | § 3 | Instead, it must proceed to them from their perceived effects.
+@gutas2025 | § 4 | Avicenna’s rationalist empiricism
+@marcotte2025 | preamble | Shihab al-Din al-Suhrawardi (1154–1191) has become the eponym of an ‘Illuminationist’ (ishraqi) philosophical tradition
+@marcotte2025 | § 3.2 | the concepts of ‘self-awareness’ (shu‘ur bi-l-dhat) and ‘knowledge by presence’ (‘ilm huduri)
+@marcotte2025 | § 3.2 | He begins by exploring and questioning some of the issues raised by the hypothetical thought experiment of the ‘flying’ or ‘suspended’ person
+@marcotte2025 | § 3.2 | he criticizes and then rejects Avicenna’s Peripatetic ‘representational’ epistemology that conceives acquisition of knowledge by means of a ‘representation’ or a ‘form’ of what is known in the knower
+@marcotte2025 | § 3.2 | a type of knowledge that is self-evident, innate and unmediated through any type of abstraction or representation of forms
+@marcotte2025 | § 3.2 | The perception of pain becomes paradigmatic of the type of apperception or awareness he envisions when discussion self- awareness as unmediated perception, i.e., a non-discursive, non-conceptual and non-propositional type of knowledge
+@marcotte2025 | § 3.2 | a pre-cognitive level of self-consciousness or self-awareness, logically prior to any distinction between subject and object
+@marcotte2025 | § 3.2 | as an alternative — albeit more reliable — foundation of certainty
+@marcotte2025 | § 2.2 | it is clear that it is impossible for a human being to construct an essential definition in the way the Peripatetics require
+@marcotte2025 | § 2.2 | Now, only direct experience guarantees acquisition of true knowledge
+@rizvi2021 | preamble | Yahya Qawami Shirazi (ca. 1571–1636) is arguably the most significant Islamic philosopher after Avicenna.
+@adamson2024 | preamble | Al-Kindi (ca. 800–870 CE) was the first self-identified philosopher in the Arabic tradition.
+@adamson2024 | preamble | Al-Kindi’s own treatises, many of them epistles addressed to members of the caliphal family, depended heavily on these translations
+@adamson2024 | § 1.1 | Al-Kindi’s philosophical activities centered around the translation movement that had been initiated and supported by the ‘Abbasid caliphs
+@adamson2024 | § 2.1 | We must not be ashamed to admire the truth or to acquire it, from wherever it comes. Even if it should come from far-flung nations and foreign peoples, there is for the student of truth nothing more important than the truth, nor is the truth demeaned or diminished by the one who states or conveys it
+@adamson2024 | § 2.1 | al-Kindi unleashes a torrent of abuse against unnamed contemporaries who criticize the use of Greek ideas
+@adamson2024 | § 2.1 | Interestingly he is more willing to recognize shortcomings on the part of Greek scientific thinkers, for instance in Euclid’s optics
+@druart2024 | preamble | Abū Naṣr al-Fārābī was probably born in 870 CE (AH 257)
+@druart2024 | preamble | died in Damascus in December 950 CE or January 951 CE (AH 339)
+@druart2024 | § 3 | Scholars interested in political philosophy have highlighted the distinctions al-Fārābī makes between (1) demonstrative discourse

@@ -1,0 +1,470 @@
+== 03-logic-and-arguments/what-an-argument-is-and-is-not
+Q: What makes a collection of propositions an argument?
+Q: How do arguments differ from explanations, conditionals and implications?
+Q: Must arguments aim at persuasion?
+ok-quote: If they won't compromise
+@argument-iep | § 1 | A collection of propositions, P1, …, Pn, C, is an argument if and only if there is a reasoner R who puts forward the Pi as reasons in support of C.
+@argument-iep | § 1 | The structure of an argument is not a function of the syntactic and semantic features of the propositions that compose it. Rather, it is imposed on these propositions by the intentions of a reasoner
+@argument-iep | § 1 | (i) The premises represent R’s reasons for believing that the conclusion is true and R thinks that her belief in the truth of the premises is justified. (ii) R believes that the premises make C more probable than not.
+@argument-iep | § 1 | R believes that the premises are independent of C
+@argument-iep | § 1 | B’s assertion of a conditional does not require that B believe either the antecedent or consequent.
+@argument-iep | § 1 | Even though few syphilis patients get paresis, we suspect that the reason for your uncle’s paresis is the syphilis he suffered from 10 years ago.
+@argument-iep | § 1 | B: Bill will be at the party, because Bill will be at the party.
+@argument-iep | § 2 | Whereas the act of explaining is designed to increase the audience’s comprehension, the act of arguing is aimed at enhancing the acceptability of a standpoint.
+@argument-iep | § 2 | in presenting an argument the reasoner believes that her standpoint is not yet acceptable to her audience, but in presenting an explanation the reasoner knows or believes that the explanandum is already accepted by her audience
+@argument-iep | § 2 | It is generally accepted that the same line of reasoning can function as an explanation in one dialogical context and as an argument in another
+@argument-iep | § 1 | these expressions do not always function in these ways, and so their mere use does not necessitate the presence of an argument
+@argument-iep | § Argument | an argument is merely a list of statements, one of which is designated as the conclusion and the rest of which are designated as premises regardless of whether the premises are offered as reasons
+@argument-iep | § Argument | The proposition frogs are mammals implies that frogs are not reptiles, but it is problematic to offer the former as a reason for believing the latter.
+@argument-iep | § Argument | an inference is a form of reasoning, and as such it is distinct from an argument in the sense of a collection of propositions
+@argument-iep | § 1 | arguments can be constructed for purposes of inquiry and as such can be used to investigate a hypothesis by seeing what reasons might be given to support a given proposition
+@argument-iep | § 2 | a reasoner can offer premises for a conclusion C in order to get her audience to withhold assent from C, suspect that C is true
+@argument-iep | § 1 | follow those who think that at least some explanations qualify as arguments (see Thomas 1986 who argues that all explanations are arguments)
+@groarke2026 | § 2.4 | some argue that a fully comprehensive account of real-life argument must include a “multimodal” account of meaning
+@groarke2026 | § 2.4 | gestures, facial expressions, sounds of different sorts
+@groarke2026 | § 2.6 | Glaucon uses the mythical story of “The Ring of Gyges” to prove that humans are inherently selfish
+
+== 03-logic-and-arguments/standard-form
+Q: How is an argument set out in standard form?
+Q: What is the difference between linked and convergent premises?
+Q: What are extended arguments and enthymemes?
+Q: What tools beyond premise lists exist for standardizing arguments?
+@argument-iep | § 1 | The argument is presented in what is called standard form; the premises are listed first and a solid line separates them from the conclusion, which is prefaced by “∴”. This symbol means “therefore”.
+@argument-iep | § 1 | Premises [1] and [2] are linked because they do not support the conclusion independently of one another, that is, they support the conclusion jointly.
+@argument-iep | § 1 | [1] Tom is happy only if he is playing guitar. [2] Tom is not playing guitar.
+@argument-iep | § 1 | These premises are convergent, because each is a reason that supports [3] independently of the other.
+@argument-iep | § 1 | [1] Tom said that he didn’t go to Samantha’s party. [2] No one at Samantha’s party saw Tom there.
+@argument-iep | § 1 | An extended argument is an argument with at least one premise that a reasoner attempts to support explicitly.
+@argument-iep | § 1 | [1] I just searched the kitchen and I did not find the keys.
+@argument-iep | § 1 | An enthymeme is an argument which is presented with at least one component that is suppressed.
+@argument-iep | § 1 | implicitly puts forward [3] all Catholics should believe that abortion is immoral in support of [2]
+@argument-iep | § 1 | A premise that is suppressed is never a reason for a conclusion independent of another explicitly offered for that conclusion.
+@argument-iep | § 3 | If one or more premises were removed from the argument, the degree of support offered by the remaining premises would stay the same.
+@argument-iep | § 3 | Conductive arguments have been put forward as a third category of arguments
+@groarke2026 | § 3.1 | Premise: The minor penalties normally associated with misdemeanor convictions are not a sufficient deterrent in this case. Implicit Premise 1 Penalties for crimes should have a deterrent effect. Implicit Premise 2: Prison will have a more sufficient deterrent effect.
+@groarke2026 | § 3.2 | But standardizing of this sort does not distinguish between different kinds of inferences an argument may contain.
+@groarke2026 | § 3.2 | standardizing an argument with a table that catalogues an argument’s premises and conclusions (with a Key Component or “KC” table), combining it with an argument diagram (a “mapping”) that depicts the inferences it depends upon
+
+== 03-logic-and-arguments/the-toulmin-model
+Q: Where did Toulmin's model come from?
+Q: How do Toulmin's warrants and rebuttals relate to defeasible reasoning and defeaters?
+Q: What is natural language deductivism, and how does it compare with Toulmin's model?
+ok-quote: unless his parents were aliens
+ok-quote: Dr. Oz says it, so it must be true
+@koons2025 | § 1.1 | Hart pointed out that judges must take into account exceptional circumstances in which a legal principle cannot be applied at all or must be applied in a weakened form.
+@koons2025 | § 1.1 | Hart refers explicitly to conditions that can defeat (Hart 1951, p. 175) the claim that a contract exists, even when the standard definition of ‘contract’ is satisfied.
+@koons2025 | § 1.1 | Toulmin, building on Hart’s observations, argues for the importance of distinguishing between warrants and rebuttals
+@koons2025 | § 1.1 | rebutting defeaters (which give one a prima facie reason for believing the denial of the original conclusion) and undercutting defeaters (which give one a reason for doubting that the usual relationship between the premises and the conclusion hold in the given case)
+@koons2025 | § 1.1 | a judge is required to make a judgment on the basis of an incomplete set of facts: those facts that are presented to the judge by the two parties as germane to the claim
+@groarke2026 | § 3.1 | (which provide a “warrant” for the inference)
+@groarke2026 | § 1 | Toulmin’s The Uses of Argument (1958/2003) and Hamblin’s Fallacies (1970) have become theoretical touchstones
+@groarke2026 | § 1 | a premise, inference, and conclusion conception of argument; the notion that a good argument has premises which are true (or epistemically acceptable in some way) and a conclusion which follows from them
+@groarke2026 | § 4.3 | Typically, this implicit premise is an “associated” conditional of the form “If P, then C” where P is the argument’s premises and C is its conclusion.
+@groarke2026 | § 4.3 | Implicit Premise: If Dr. Oz says this, it must be true.
+@groarke2026 | § 4.3 | this makes it a valid argument with a problematic implicit premise
+@groarke2026 | § 4.3 | deductive validity ensuring only that the conclusion of an argument is as likely true (and certain) as its premises
+@groarke2026 | § 4.4 | Walton, Reed and Macagno 2008 provide a compendium of 96 schemes.
+@groarke2026 | § 4.4 | Other schemes that play a prominent role in real-life arguing include Argument by Sign, Argument by Analogy, Argument by Example, and Slippery Slope Reasoning.
+@groarke2026 | § 4.4 | The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.
+
+== 03-logic-and-arguments/propositional-logic
+Q: What does propositional logic study, and why does it abstract from content?
+Q: In what sense is classical propositional logic decidable?
+Q: Does the material conditional capture the meaning of "if ... then"?
+Q: What alternatives to the material conditional have been proposed?
+ok-quote: A ⊃ B
+ok-quote: These are the paradoxes
+ok-quote: The simplest modern logic
+@franks2024 | preamble | based on the role that a specific class of logical operators called the propositional connectives have in determining those sentences’ truth or assertability conditions
+@franks2024 | preamble | Whether B follows logically from A ought not depend, it is thought, on what words like “mortal” or “man” mean.
+@franks2024 | preamble | As early as Aristotle it was observed that propositional connectives have a logical significance
+@franks2024 | preamble | But propositional logic per se did not emerge until the nineteenth century
+@franks2024 | § 2.1.5 | Completing the truth table is therefore a finite determinate task
+@franks2024 | § 2.1.5 | each contains only a finite number, say n, of atoms
+@franks2024 | § 2.1.4 | This truth function is often described, controversially, as giving the truth conditions for the indicative mood conditional connective “if …, then …”, or even, erroneously, for the relation “implies”.
+@franks2024 | § 2.1.4 | B could be true but, for all that, not be implied by A because under some other situation A could be true while B is false.
+@franks2024 | § 2.1.4 | One can readily check that \(\rA\supset\rB\) is equivalent to the Boolean expression \(\neg\rA\vee\rB\).
+@franks2024 | § 2.1.4 | \(\rA\supset\rB\) does not express any implication relation between A and B, but the claim that \(\rA\supset\rB\) is a classical propositional validity is such an expression of implication
+@franks2024 | § 2.1.4 | The claim itself is apparently ancient, attributed to Philo of Melaga and referenced in Chrysippus’s early systematization of propositional logic. | note: The entry's "Melaga" is a slip for Megara.
+@franks2024 | § 2.1.4 | It has been defended in a modern context by Charles Peirce, H. P. Grice, and Frank Jackson. But its detractors have been many
+@franks2024 | § 2.1.4 | Frege rejected the idea that this connective expressed the indicative conditional of natural language. He wrote, “the causal connection implicit in the word ‘if’ …is not expressed by our symbols”
+@franks2024 | § 2.1.4 | Frege saw that the value of selecting the material conditional as a primitive connective not from its approximation of ordinary language expression but from its role internal to logical theory.
+@franks2024 | § 2.1.4 | Of special interest is the suggestion, originally due to Frank Ramsey, that expressions of the form “If A, then B” in the indicative mood are best understood in terms of conditional probabilities
+@franks2024 | § 2.1.4 | In 1976 David Lewis proved that the conditional expressions, so understood, not only fail to be truth-functional but in fact are not even propositions.
+@franks2024 | § 3.3 | many of the features exhibited by the material conditional that seem like departures from speakers’ intuitions about the truth of conditional expressions stem from ascriptions of truth to conditionals whose antecedents are irrelevant to their consequents
+@franks2024 | § 3.3 | they propose a “variable sharing condition”
+@franks2024 | § 3.3 | Connexive logicians aim instead to make good of the intuition that for a conditional statement to be true, the negation of its consequent should be incompatible with its antecedent.
+@franks2024 | § 3.1 | Important examples are the (strong and weak) Kleene 3-valued logics
+
+== 03-logic-and-arguments/predicate-logic-and-quantifiers
+Q: What did Frege's treatment of predication and quantification change relative to Aristotelian logic?
+Q: How do formal languages relate to natural languages?
+Q: Is classical first-order logic the one correct logic?
+Q: Was Frege the only inventor of quantifier logic?
+ok-quote: All that glitters is not gold
+ok-quote: Invented by Frege in 1879
+@zalta2026 | § 2.2.3 | In traditional Aristotelian logic, the subject of a sentence and the direct object of a verb are not on a logical par.
+@zalta2026 | § 2.2.3 | In Aristotelian logic, these inferences have nothing in common.
+@zalta2026 | § 2.2.3 | In Frege’s logic, however, a single rule governs both the inference from ‘John loves Mary’ to ‘Something loves Mary’ and the inference from ‘John loves Mary’ to ‘John loves something’.
+@zalta2026 | § 2.2.3 | freed him from the limitations of the ‘subject-predicate’ analysis of ordinary language sentences that formed the basis of Aristotelian logic
+@zalta2026 | § 2.2.3 | What is logically important is that ‘loves’ denotes a function of two arguments.
+@zalta2026 | § 2.2.2 | In the modern predicate calculus, the symbols ‘\(\forall\)’ (‘every’) and ‘\(\exists\)’ (‘some’) are called the ‘universal’ and ‘existential’ quantifier, respectively
+@zalta2026 | § 2.2.2 | or ‘variable bound by the quantifier’
+@zalta2026 | § 1 | Although the Begriffsschrift constituted a major advance in logic, it was neither widely understood nor well-received.
+@zalta2026 | § 2.1 | Though this notation was first outlined in his Begriffsschrift (1879), the most mature statement of Frege’s system was in his 2-volume Grundgesetze der Arithmetik (1893/1903).
+@zalta2026 | § 2.1.2 | Although it is a descendant of Frege’s system, the modern predicate calculus analyzes loves as a two-place relation
+@zalta2026 | § 2.1.2 | in the modern predicate calculus, this last step of analyzing predication in terms of functions is not assumed; predication is seen as more fundamental than functional application
+@shapiro-kissel2026 | § 1 | Some philosophers claim that declarative sentences of natural language have underlying logical forms and that these forms are displayed by formulas of a formal language.
+@shapiro-kissel2026 | § 1 | Another view, held at least in part by Gottlob Frege and Wilhelm Leibniz, is that because natural languages are fraught with vagueness and ambiguity, they should be replaced by formal languages.
+@shapiro-kissel2026 | § 1 | a formal language displays certain features of natural languages, or idealizations thereof, while ignoring or simplifying other features
+@shapiro-kissel2026 | preamble | Then we establish a converse, called completeness, that an argument is valid only if it is derivable.
+@shapiro-kissel2026 | § 5 | Gödel [1930].
+@shapiro-kissel2026 | § 6 | Among those, some, perhaps most, favor classical, first-order logic as uniquely correct, as the One True Logic. See, for example, Quine [1986], Resnik [1996], Rumfitt [2015], Williamson [2017]
+@shapiro-kissel2026 | § 6 | Key notions, like finitude, countability, minimal closure, natural number, and the like cannot be expressed.
+@shapiro-kissel2026 | § 6 | One instance of this is a kind of logical nihilism, a thesis that there is no correct logic. Another is a logical pluralism, the thesis that a variety of different logical all qualify as correct
+@burch2024 | § 13 | a quantifier-and-variable syntax that (except for its specific symbols) is identical to the much later Russell-Whitehead syntax
+
+== 03-logic-and-arguments/categorical-logic-and-syllogisms
+Q: How did Aristotle define a deduction, and how does it compare with modern validity?
+Q: What did Aristotle establish about the syllogistic figures?
+Q: How did Aristotle prove invalidity?
+Q: Which rules of the syllogism go back to Aristotle?
+ok-quote: Every swan is white
+ok-quote: Every A is B
+ok-quote: Barbara
+ok-quote: Not every A is B
+ok-quote: No A is B
+ok-quote: Some A is B
+@smith2022 | § 3 | A deduction is speech (logos) in which, certain things having been supposed, something different from those supposed results of necessity because of their being so. (Prior Analytics I.2, 24b18–20)
+@smith2022 | § 3 | This corresponds to a modern notion of logical consequence
+@smith2022 | § 4.3.1 | In On Interpretation, Aristotle spells out the relationships of contradiction for sentences with universal subjects as follows
+@smith2022 | § 4.3.1 | Simple as it appears, this table raises important difficulties of interpretation
+@smith2022 | § 5.1 | Aristotle then systematically investigates all possible combinations of two premises in each of the three figures. For each combination, he either demonstrates that some conclusion necessarily follows or demonstrates that no conclusion follows. The results he states are correct.
+@smith2022 | § 5.3 | Aristotle proves invalidity by constructing counterexamples. This is very much in the spirit of modern logical theory
+@smith2022 | § 5.3 | he gives two triplets of terms, one of which makes the premises true and a universal affirmative “conclusion” true
+@smith2022 | § 5.5 | No deduction has two negative premises
+@smith2022 | § 5.5 | A deduction with a negative conclusion must have one negative premise.
+@smith2022 | § 5.5 | All deductions can be reduced to the two universal deductions in the first figure.
+@smith2022 | § 5.4 | Aristotle, however, does not use this expression and instead refers to “the arguments in the figures”.
+@smith2022 | § 5.4 | The second column lists the medieval mnemonic name associated with the inference
+@smith2022 | § 5.2 | we might compare the perfect deductions to the axioms or primitive rules of a deductive system
+@smith2022 | § 5.2 | Aristotle says that he “reduces” (anagein) each case to one of the perfect forms
+@smith2022 | § 3.2 | Aristotle explicitly says that what results of necessity must be different from what is supposed. This would rule out arguments in which the conclusion is identical to one of the premises. Modern notions of validity regard such arguments as valid, though trivially so.
+@smith2022 | § 3.2 | taken by some ancient commentators to rule out by definition arguments with only one premise
+@smith2022 | § 3.2 | ruling out arguments in which the conclusion is not ‘relevant’ to the premises
+@smith2022 | § 4.3 | he gives the same analysis to “Socrates is an animal” and “Humans are animals”
+
+== 03-logic-and-arguments/modal-logic-basics
+Q: What is a modal, and which logics belong to the modal family?
+Q: Why can modal operators not be defined by truth tables?
+Q: How do different axioms suit different readings of the box?
+Q: What problems arise when quantifiers are added to modal logic?
+ok-quote: Dogs are dogs
+ok-quote: Dogs are pets
+@garson2024 | preamble | A modal is an expression (like ‘necessarily’ or ‘possibly’) that is used to qualify the truth of a judgement.
+@garson2024 | preamble | These include logics for belief, for tense and other temporal expressions, for the deontic (moral) expressions such as ‘it is obligatory that’
+@garson2024 | § 1 | Epistemic Logic \(Kx\) \(x\) knows that …
+@garson2024 | § 6 | The problem is that the truth value of \(A\) does not determine the truth value for \(\Box A\). For example, when \(A\) is ‘Dogs are dogs’, \(\Box A\) is true, but when \(A\) is ‘Dogs are pets’, \(\Box A\) is false.
+@garson2024 | § 6 | Nevertheless, semantics for modal logics can be defined by introducing possible worlds.
+@garson2024 | § 2 | In \(\bK\), the operators \(\Box\) and \(\Diamond\) behave very much like the quantifiers \(\forall\) (all) and \(\exists\) (some).
+@garson2024 | § 2 | while \(\Box A\vee \Box B\) entails \(\Box (A\vee B)\), but not vice versa
+@garson2024 | § 2 | \((M)\) claims that whatever is necessary is the case.
+@garson2024 | § 2 | Notice that \((M)\) would be incorrect were \(\Box\) to be read ‘it ought to be that’, or ‘it was the case that’.
+@garson2024 | § 2 | \(\mathbf{S4}\) is the system that results from adding (4) to \(M\).
+@garson2024 | § 2 | Many logicians believe that \(M\) is still too weak to correctly formalize the logic of necessity and possibility.
+@garson2024 | § 2 | in \(\mathbf{S5}\), strings containing both boxes and diamonds are equivalent to the last operator in the string
+@garson2024 | § 7 | the logic which results from adding the axiom (4): \(\Box A\rightarrow \Box \Box A\) to \(\bK\)
+@garson2024 | § 7 | Seriality corresponds to the axiom \((D): \Box A\rightarrow \Diamond A\), in the same way that transitivity corresponds to (4).
+@garson2024 | § 16 | Quine (1953) has famously argued that quantifying into modal contexts is simply incoherent
+@garson2024 | § 16 | Quine’s complaints do not carry the weight they once did.
+@garson2024 | § 16 | The simplest alternative, the fixed-domain (sometimes called the possibilist) approach, assumes a single domain of quantification that contains all the possible objects.
+
+== 03-logic-and-arguments/formal-fallacies
+Q: How are formal fallacies distinguished from informal ones?
+Q: Why do fallacies seem like good arguments?
+Q: Is every invalid argument a fallacy, and every fallacy invalid?
+Q: How common are formal fallacies in real argument?
+ok-quote: If my hypothesis is true, we will see this result
+@hansen2024b | preamble | Formal fallacies are those readily seen to be instances of identifiable invalid logical forms such as undistributed middle and denying the antecedent.
+@hansen2024b | preamble | it is generally thought to be more profitable, from the points of view of both recognition and understanding, to bring their weaknesses to light through analyses that do not involve appeal to formal languages
+@hansen2024b | § 1 | As an initial working definition of the subject matter, we may take a fallacy to be an argument that seems to be better than it really is.
+@hansen2024b | § 2.1.4 | Aristotle considers the fallacy of consequent to be a special case of the fallacy of accident, observing that consequence is not convertible, i.e., “if \(A\) is, \(B\) necessarily is, men also fancy that, if \(B\) is, \(A\) necessarily is”
+@hansen2024b | § 2.1.4 | This fallacy is sometimes claimed as being an early statement of the formal fallacy of affirming the consequent.
+@hansen2024b | § 3.2 | (1) Formal fallaciousness is simply the case where the conclusion does not follow validly from the premises; this type of error can be demonstrated by producing a suitable analogous counter-example in which the premises are true and the conclusion is false.
+@hansen2024b | § 3.5 | it is too narrow because it excludes begging the question which is not invalid, and it is too wide because it condemns good but non-deductive arguments as fallacies
+@hansen2024b | § 3.2 | observing that they contain very few examples of actual fallacies
+@hansen2024b | § 3.2 | he thinks that “types of logically incorrect arguments”—fallacies—are probably not common
+@hansen2024b | § 3.2 | For that reason Finocchiaro prefers to speak of fallacious arguments
+@hansen2024b | § 3.4 | it is too coarse conceptually to reveal the unique character of many of the fallacies
+@hansen2024b | § 3.4 | Inductive logic can be employed for analysis of hasty generalization and post hoc ergo propter hoc
+@hansen2024b | § 3.4 | dialectical game theory for begging the question and many questions. Woods (1992, 43) refers to this approach to studying the fallacies as methodological pluralism.
+@hansen2024b | § 4.4 | Correia (2011) has taken Mill’s insight that biases are predisposing causes of fallacies a step further by connecting identifiable biases with particular fallacies.
+@hansen2024b | § 4.4 | Correia (2011, 118) links this bias to the fallacies of hasty generalization and straw man
+@hansen2024b | § 4.4 | the “focussing illusion” bias inclines a person to focus on just a part of the evidence available
+@hansen2024b | § 2.10 | defines a fallacy as “a form of argument that seems to be correct but which proves, upon examination, not to be so.”
+
+== 03-logic-and-arguments/valid-argument-forms
+Q: Where do the standard valid argument forms come from?
+Q: How did the Stoics define validity and soundness?
+Q: What does modus tollens tell us when a prediction fails?
+Q: Which forms of argument did classical Indian logic accept?
+ok-quote: one person's modus ponens is another person's modus tollens
+@durand-baltzly2023 | § 3.4 | This definition of arguments made the Stoic system one of what we might now call propositional logic, by contrast with Aristotle’s logic of terms or predicate logic.
+@durand-baltzly2023 | § 3.4 | Syllogisms are arguments that take the form of one of the five so-called “indemonstrables”, which are axiomatic arguments, or can be reduced to one by means of one of four rules of inference, the themata.
+@durand-baltzly2023 | § 3.4 | if p then q; p; therefore q (modus ponens); if p then q; not-q; therefore not-p (modus tollens); not: both p and q; p; therefore not-q; either p or q; p; therefore not-q; either p or q; not-p; therefore q.
+@durand-baltzly2023 | § 3.4 | if the (Chrysippean) conditional formed from its premises as antecedent and its conclusion as consequent is true
+@durand-baltzly2023 | § 3.4 | An argument is sound (literally “true”) if it is valid and its premises are true.
+@durand-baltzly2023 | § 3.3 | disjunction (“p or q”), which they treated as exclusive
+@musgrave-pigden2026 | § 2.2 | But logic leaves us with a choice. The conjunction of the hard core plus the auxiliary hypotheses has to go, but we can retain either the hard core or the auxiliary hypotheses.
+@musgrave-pigden2026 | § 2.2 | The negative heuristic of the programme forbids us to direct the modus tollens at this “hard core”.
+@musgrave-pigden2026 | § 2.2 | we must redirect the modus tollens to these
+@musgrave-pigden2026 | § 2.2 | the positive heuristic of the Newtonian programme bids us look for another heavenly body whose gravitational force might be distorting the first planet’s orbit
+@gillon2024 | § 4.2 | One form, as mentioned above, is reductio ad absurdum (prasaṅga). Others include suppositional reasoning (tarka) (Bagchi 1953) and a form of reasoning akin to what contemporaries would call disjunctive syllogism (arthāpatti)
+@gillon2024 | § 4.2 | They include arguments which lead to an infinite regress (anavasthā), mentioned above, as well as various forms of circularity.
+@koons2025 | § 4.2 | from the fact that birds normally fly and Tweety does not fly, we are not licensed to infer that Tweety is not a bird
+
+== 03-logic-and-arguments/paradoxes-as-stress-tests
+Q: What is a paradox, and what do epistemic paradoxes teach?
+Q: What is the preface paradox, and how have philosophers responded?
+Q: What is odd about Moore's sentence?
+Q: What has the liar paradox been taken to show?
+ok-quote: He went to the pictures, but he doesn't believe he did
+ok-quote: Exactly three options
+@sorensen2024 | § 4 | A paradox is commonly defined as a set of propositions that are individually plausible but jointly inconsistent. The inconsistency is the itch that directs us to scratch out a member of the set
+@sorensen2024 | § 4 | A belief can only be justified by another justified belief. There are no circular chains of justification. All justificatory chains have a finite length. Some beliefs are justified. Foundationalists reject (1).
+@sorensen2024 | § 4 | The 1982 reprint has three pages of errata that vindicate Wilder’s humility.
+@sorensen2024 | § 4 | Wilder rationally believes each of the assertions in his book. But since Wilder regards himself as fallible, he rationally believes the conjunction of all his assertions is false.
+@sorensen2024 | § 4 | At this juncture many philosophers join Kyburg in rejecting agglomeration and conclude that it can be rational to have jointly inconsistent beliefs.
+@sorensen2024 | § 4 | How can paradoxes change our minds if joint inconsistency is permitted?
+@sorensen2024 | § 5.3 | (M) I went to the pictures last Tuesday, but I don’t believe that I did.
+@sorensen2024 | § 5.3 | The common explanation of Moore’s absurdity is that the speaker has managed to contradict himself without uttering a contradiction.
+@sorensen2024 | § 5.3 | There is no problem with third person counterparts of (M).
+@sorensen2024 | § 5.3 | René Descartes sits in a bar, having a drink. The bartender asks him if he would care for another. “I think not,” he says, and disappears.
+@sorensen2024 | preamble | As manifest in Plato’s dialogues featuring Socrates, epistemic paradoxes have been discussed for twenty five hundred years.
+@sorensen2024 | preamble | In the long run, the riddle goads and guides us into correcting at least one deep error – if not directly about knowledge, then about its kindred concepts such as justification, rational belief, and evidence.
+@beall-etal2026 | § 3 | Tarski himself (1935, 1944) seems to have thought the Liar shows the ordinary notion of truth to be incoherent, and in need of replacement with a more scientifically respectable one.
+@beall-etal2026 | § 3 | the idea that the basic principles governing truth are more subtle than the T-schema reflects
+@beall-etal2026 | § 3 | Notable among these are the arguments for logics that are paracomplete (e.g., Kripke 1975; Field 2008) or paraconsistent (e.g., Asenjo 1966; Priest 1984, 2006).
+@raffman-hyde2026 | § 4 | The sorites paradox has traditionally been seen as unrelated in any substantially interesting way to the semantic and set-theoretic paradoxes of self-reference.
+@raffman-hyde2026 | § 4 | McGee (1991) and Tappenden (1993) proposed a unified treatment of the liar and sorites paradoxes based on similarities between vague predicates and the truth predicate.
+
+== 03-logic-and-arguments/strength-and-cogency
+Q: What makes an inductive argument strong?
+Q: Why does variety of evidence matter?
+Q: Do inductive inferences share a formal rule?
+Q: What alternatives to the deductive/inductive classification exist?
+@argument-iep | § 3 | In an inductive argument, the premises are intended only to be so strong that, if they were true, then it would be unlikely, although possible, that the conclusion is false.
+@argument-iep | § 3 | It is inappropriate to criticize an inductively strong argument for being invalid.
+@argument-iep | § 3 | an arguer often will conclude “Jones probably voted for McX” instead of “Jones voted for McX,” because they are signaling with the word “probably” that they intend to present an argument that is inductively strong but not valid
+@argument-iep | § 3 | Charity dictates that an invalid argument which is inductively strong be evaluated as an inductive argument unless there is clear evidence to the contrary.
+@argument-iep | § 3 | A conductive argument is an argument whose premises are convergent; the premises count separately in support of the conclusion. If one or more premises were removed from the argument, the degree of support offered by the remaining premises would stay the same.
+@crupi2025 | § 3.6 | it just seems a priori less likely that species as diverse as tigers and elephants share some unspecified genetic trait as compared to tigers and lions
+@crupi2025 | § 3.6 | Indeed, the variety of evidence is a fairly central issue in the analysis of confirmation
+@crupi2025 | § 3.6 | interestingly, on experimental investigation, this pattern prevails in most people’s judgment, including children
+@henderson2024 | § 4.2 | Suppose that on all my birthdays so far, I have been under 40 years old. This does not give me a reason to expect that I will be under 40 years old on my next birthday.
+@henderson2024 | § 4.2 | Okasha, for example, argues that Hume’s circularity problem can be evaded if there are “no rules” behind induction (Okasha 2005a,b). Norton puts forward the similar idea that all inductive inferences are material, and have nothing formal in common
+@henderson2024 | § 4.2 | Rather each inductive inference presupposes some more specific empirical presupposition.
+@groarke2026 | § 4.1 | Govier 1987 dubs the deductive/inductive distinction “the great divide” and questions it
+@groarke2026 | § 4.1 | “Conductive” arguments support their conclusions by accumulating non-decisive reasons in their favor. They are valid when they collect enough reasons to warrant but not decisively prove their conclusions
+@groarke2026 | § 4.1 | making “Acceptability, Relevance and Sufficiency” the requirements for good argument
+@groarke2026 | § 4.1 | relevant when they provide some (i.e. any) support for the conclusion of the argument; and sufficient when they provide enough support to warrant its acceptance
+
+== 03-logic-and-arguments/validity-and-soundness
+Q: What are validity and soundness, and how are they related?
+Q: How did Aristotle and the Stoics define a valid argument?
+Q: What kind of necessity makes an argument valid?
+Q: What makes an argument formal, and why does it matter?
+Q: How do model theory and proof theory explicate validity?
+Q: Why does a contradiction imply everything in classical logic, and who rejects this?
+Q: Is there one correct notion of validity?
+Q: Why can a valid, sound argument still fail to prove its conclusion?
+ok-quote: Validity is not the same as persuasiveness
+ok-quote: Validity is about form, not content
+ok-quote: It is impossible for all its premises to be true and its conclusion false
+ok-quote: P, not-P, therefore Q
+@val-snd-iep | § Validity and Soundness | A deductive argument is said to be valid if and only if it takes a form that makes it impossible for the premises to be true and the conclusion nevertheless to be false.
+@val-snd-iep | § Validity and Soundness | All toasters are items made of gold. All items made of gold are time-travel devices. Therefore, all toasters are time-travel devices.
+@val-snd-iep | § Validity and Soundness | if they were true, their truth would logically guarantee the conclusion’s truth
+@val-snd-iep | § Validity and Soundness | according to the dominant understanding among logicians, the validity or invalidity of an argument is determined entirely by its logical form
+@val-snd-iep | § Validity and Soundness | The logical form of an argument is that which remains of it when one abstracts away from the specific content of the premises and the conclusion
+@val-snd-iep | § Validity and Soundness | All tigers are mammals. No mammals are creatures with scales. Therefore, no tigers are creatures with scales. All spider monkeys are elephants. No elephants are animals. Therefore, no spider monkeys are animals.
+@val-snd-iep | § Validity and Soundness | A deductive argument is sound if and only if it is both valid, and all of its premises are actually true.
+@val-snd-iep | § Validity and Soundness | sound arguments always end with true conclusions
+@val-snd-iep | § Validity and Soundness | It should be noted that both invalid, as well as valid but unsound, arguments can nevertheless have true conclusions. One cannot reject the conclusion of an argument simply by discovering a given argument for that conclusion to be flawed.
+@val-snd-iep | § Validity and Soundness | All popes reside at the Vatican. John Paul II resides at the Vatican. Therefore, John Paul II is a pope.
+@val-snd-iep | § Validity and Soundness | note that the conclusion’s truth isn’t guaranteed by the premises’ truth
+@val-snd-iep | § Validity and Soundness | All basketballs are round. The Earth is round. Therefore, the Earth is a basketball.
+@val-snd-iep | § Validity and Soundness | Tony is a ferocious tiger. (2) Clinton is a lame duck.
+@val-snd-iep | § Validity and Soundness | The logical form of a statement is not always as easy to discern as one might expect.
+@val-snd-iep | § Validity and Soundness | an axiomatic logical calculus (in its entirety) is said to be sound if and only if all theorems derivable from the axioms of the logical calculus are semantically valid
+@val-snd-iep | § Validity and Soundness | My table is circular. Therefore, it is not square shaped. Juan is a bachelor. Therefore, he is not married.
+@val-snd-iep | § Validity and Soundness | impossible for the premises to be true while the conclusion is false
+@val-snd-iep | § Validity and Soundness | these arguments actually contain implicit premises such as “Nothing is both circular and square shaped” or “All bachelors are unmarried,”
+@val-snd-iep | § Validity and Soundness | the sort of necessity involved is something other than “logical” necessity
+@val-snd-iep | § Validity and Soundness | because “bachelor” is defined as “adult unmarried male”
+@val-snd-iep | § Validity and Soundness | While it is accepted by most contemporary logicians that logical validity and invalidity is determined entirely by form, there is some dissent.
+@beall-sagi2026 | § 3.1 | The model-centered approach to logical consequence takes the validity of an argument to be absence of counterexample.
+@beall-sagi2026 | § 3.1 | One way to do this is to provide an argument of the same form for which the premises are clearly true and the conclusion is clearly false. Another way to do this is to provide a circumstance in which the premises are true and the conclusion is false.
+@beall-sagi2026 | § 3.1 | The contemporary model-theoretic definition of logical consequence traces back to Tarski (1936).
+@beall-sagi2026 | § 3.1 | an argument is valid if in any model in which the premises are true (or in any interpretation of the premises according to which they are true), the conclusion is true too
+@beall-sagi2026 | § 3.1 | The model-theoretic definition is one of the most successful mathematical explications of a philosophical concept to date.
+@beall-sagi2026 | § 3.1 | Yet, models are just sets, which are merely mathematical objects.
+@beall-sagi2026 | § 3.2 | the validity of an argument amounts to there being a proof of the conclusions from the premises
+@beall-sagi2026 | § 3.2 | from so-called Hilbert proofs, with simple rules and complex axioms, to natural deduction systems
+@beall-sagi2026 | § 3.2 | if a reasoner has grounds for the premises of an argument, and they infer the conclusion via a series of applications of valid inference rules, they thereby obtain grounds for the conclusion
+@beall-sagi2026 | § 3.2 | One can go further and subscribe to inferentialism, the view by which the meaning of expressions is determined by their role in inference.
+@beall-sagi2026 | § 3.2 | in a valid argument, the truth of the conclusion follows from the truth of the premises by necessity of thought (Prawitz 2005)
+@beall-sagi2026 | § 1 | Some arguments are such that the (joint) truth of the premises is necessarily sufficient for the truth of the conclusions.
+@beall-sagi2026 | § 1 | is necessarily truth preserving, but it seems a long way from being deductively valid. It was a genuine discovery that water is H\(_2\)O, one that required significant empirical investigation.
+@beall-sagi2026 | § 1 | The trouble, as Quine argued, is that the distinction between analytic and synthetic (and similarly, conceptual and non-conceptual) truths is not as straightforward as we might have thought
+@beall-sagi2026 | § 1 | Peter is Greg’s mother’s brother’s son. Therefore, Peter is Greg’s cousin.
+@beall-sagi2026 | § 1 | A constraint of apriority certainly seems to rule argument (3) out as deductively valid, and rightly so. However, it will not do to rule out argument (4).
+@beall-sagi2026 | § 1 | In inductively valid arguments, the (joint) truth of the premises is very likely (but not necessarily) sufficient for the truth of the conclusion.
+@beall-sagi2026 | § 2 | The strongest and most widespread proposal for finding a narrower criterion for logical consequence is the appeal to formality.
+@beall-sagi2026 | § 2 | is a material consequence and not a formal one, because to make the step from the premise to the conclusion we need more than the structure or form of the claims involved
+@beall-sagi2026 | § 2 | Aristotle’s syllogistic is a proud example. Ferio: No \(F\) is \(G\). Some \(H\) is \(G\). Therefore some \(H\) is not \(F\).
+@beall-sagi2026 | § 2 | The material argument (4) is an instance of: \(x\) is \(y\)’s mother’s brother’s son. Therefore, \(x\) is \(y\)’s cousin. every instance of which is valid.
+@beall-sagi2026 | § 2 | Tarski proposed (1986) that an operation or predicate on a domain counted as general (or logical) if it was invariant under permutations of objects.
+@beall-sagi2026 | § 2 | You can see that the identity relation is permutation invariant—if \(x = y\) then \(p(x) = p(y)\)—but the mother-of relation is not.
+@beall-sagi2026 | § 2 | Suffice to say, an operation such as negation passes the test of invariance, but an operation such as ‘JC believes that’ fails.
+@beall-sagi2026 | § 2 | expressions such as propositional connectives and quantifiers do not add new semantic content to expressions, but instead add only ways to combine and structure semantic content
+@beall-sagi2026 | § 2 | It is plausible to hold that no matter what we think about, it makes sense to conjoin, disjoin and negate our thoughts to make new thoughts.
+@beall-sagi2026 | § 2 | The norms of valid argument, on this picture, are those norms that apply to thought irrespective of the particular content of that thought.
+@beall-sagi2026 | § 5 | The orthodoxy, logical monism, answers affirmatively. There is one relation of deductive consequence, and different formal systems do a better or worse job of modelling that relation.
+@beall-sagi2026 | § 5 | a use of the law of the excluded middle might be valid in a classical mathematics textbook, but not in an intuitionistic mathematics textbook, or in a context where we reason about fiction or vague matters
+@beall-sagi2026 | § 5 | The logical pluralist, on the other hand, says that of one and the same argument, in one and the same context, there are sometimes different things one should say with respect to its validity.
+@beall-sagi2026 | § 5 | in another sense the form of the argument does not ensure that the truth of the premises leads to the truth of the conclusion
+@shapiro-kissel2026 | preamble | Then we establish a converse, called completeness, that an argument is valid only if it is derivable.
+@shapiro-kissel2026 | § 5 | Gödel [1930].
+@shapiro-kissel2026 | § Relevance and paraconsistency | sometimes colorfully called “explosion”. It says that anything at all follows from a contradiction. Logics that regard (EFQ) as invalid are called paraconsistent.
+@shapiro-kissel2026 | § Relevance and paraconsistency | One camp consists of logicians who insist that in a valid argument, the premises must be relevant to the conclusion.
+@shapiro-kissel2026 | § Relevance and paraconsistency | advocates of dialetheism, the view that some contradictions, some sentences in the form
+@shapiro-kissel2026 | § Relevance and paraconsistency | are true. One supposed example is when \(\Phi\) is a statement of a semantic paradoxes, such as the Liar.
+@shapiro-kissel2026 | § Relevance and paraconsistency | In a system in which (EFQ) holds, any true contradiction would entail every sentence of the formal language
+@shapiro-kissel2026 | § 6.3 | Advocates of intuitionistic logic reject the validity of the (so-called) Law of Excluded Middle
+@smith2022 | § 3 | A deduction is speech (logos) in which, certain things having been supposed, something different from those supposed results of necessity because of their being so.
+@smith2022 | § 5.3 | Aristotle proves invalidity by constructing counterexamples.
+@smith2022 | § 3.2 | Aristotle explicitly says that what results of necessity must be different from what is supposed. This would rule out arguments in which the conclusion is identical to one of the premises. Modern notions of validity regard such arguments as valid, though trivially so.
+@smith2022 | § 3.2 | taken by some ancient commentators to rule out by definition arguments with only one premise
+@smith2022 | § 3.2 | ruling out arguments in which the conclusion is not ‘relevant’ to the premises
+@durand-baltzly2023 | § 3.4 | if the (Chrysippean) conditional formed from its premises as antecedent and its conclusion as consequent is true
+@durand-baltzly2023 | § 3.4 | An argument is sound (literally “true”) if it is valid and its premises are true.
+@durand-baltzly2023 | § 1.1 | Chrysippus of Soli, who headed the school from around 230 until 206 BCE
+@hansen2024b | § 3.5 | All members of the committee are old Etonians; Fortesque is a member of the committee; Fortesque is an old Etonian.
+@hansen2024b | § 3.5 | given the minor premise, the major cannot be known to be true unless the conclusion is known to be true
+@hansen2024b | § 3.5 | the second argument, despite the fact that it is valid, is non-serious, it begs the question, and it is a fallacy
+@hansen2024b | § 3.5 | If there was some independent way of knowing whether the major premise was true, such as that it was a bylaw that only old Etonians could be committee members, the argument would be a serious one
+@hansen2024b | § 3.5 | only arguments that satisfy the extra-formal requirement that premises are knowable independently of their conclusions, and are more acceptable epistemically than their conclusions
+@gillon2024 | § 4.2 | first form: the reason’s definite (eva) existence in the subject; second form: the reason’s existence in subject-like things only (eva); third form: the reason’s utter (eva) non-existence in subject-unlike things
+@gillon2024 | § 4.2 | And finally, he identifies and classifies specious reasons in terms of the failure of a reason to satisfy one or other of the three forms.
+@gillon2024 | § 4.2 | the simple failure to perceive something which has H but which does not have S is no guarantee that whatever has H has S
+
+== 03-logic-and-arguments/reconstructing-real-arguments
+Q: How are implicit premises supplied in reconstruction?
+Q: What is Davidson's principle of charity, and what is its status?
+Q: What is the evidence that argument mapping improves reasoning, and what are its limits?
+ok-quote: good evidence of effectiveness
+@groarke2026 | § 3.1 | Implicit Premise 1 Penalties for crimes should have a deterrent effect. Implicit Premise 2: Prison will have a more sufficient deterrent effect.
+@groarke2026 | § 3.1 | (which provide a “warrant” for the inference)
+@malpas2024 | § 3.3 | it counsels us to interpret speakers as holding true beliefs (true by our lights at least) wherever it is plausible to do
+@malpas2024 | § 3.3 | a holistic assumption of rationality in belief (‘coherence’) and an assumption of causal relatedness between beliefs, especially perceptual beliefs, and the objects of belief (‘correspondence’)
+@malpas2024 | § 3.3 | Inasmuch as charity is taken to generate particular attributions of belief, so those attributions are, of course, always defeasible.
+@malpas2024 | § 3.3 | it remains, on the Davidsonian account, a presupposition of any interpretation whatsoever
+@malpas2024 | § 3.3 | Charity is, in this respect, both a constraint and an enabling principle in all interpretation. It is more than just a heuristic device to be employed in the opening stages of interpretative engagement.
+@malpas2024 | § 3.3 | (he refers to it briefly elsewhere as the principle of ‘rational accommodation’), a version of which is also to be found in Quine
+@cullen-etal2018 | p. 1 | We investigated the effectiveness of a 12-week undergraduate seminar in which students practiced a software-based technique for visualizing the logical structures implicit in argumentative texts.
+@cullen-etal2018 | p. 1 | We found that seminar students improved substantially more on LSAT Logical Reasoning test forms than did control students ( d = 0.71, 95% CI: [0.37, 1.04], p < 0.001)
+@cullen-etal2018 | p. 1 | revealed large differences in favor of seminar students ( d = 0.87
+@cullen-etal2018 | p. 4 | Due to institutional constraints, we could not randomize students into the seminar and control groups but had to use standard mechanisms for enrolling students; thus, our study was a quasi-experiment.
+@cullen-etal2018 | p. 4 | The present ﬁndings do not fully disentangle the contributions of the use of argument visualization from the intensive and interactive nature of the course
+@cullen-etal2018 | p. 1 | Argument visualization traces to nineteenth-century logic pedagogy
+@cullen-etal2018 | p. 1 | Princeton University
+
+== 03-logic-and-arguments/dialectical-moves
+Q: How does a parody argument such as Gaunilo's work, and what does it show?
+Q: What was Locke's original ad hominem, and where does it become fallacious?
+Q: When is a tu quoque fallacious?
+Q: What is dialogical logic?
+@oppy-etal2025 | § 11 | beginning with Gaunilo’s ‘perfect island’ objection to Anselm’s Proslogion II argument
+@oppy-etal2025 | § 11 | When the fool hears the words ‘that island than which no greater island can be conceived’ he understands those words.
+@oppy-etal2025 | § 11 | Since the arguments have the same logical form, either they are both valid or they are both invalid. If they are both invalid, then the Proslogion II argument fails.
+@oppy-etal2025 | § 11 | there must be a premise pair concerning which atheists and agnostics suppose that the premise in the first argument is true but the premise in the second argument is false
+@oppy-etal2025 | § 11 | particular parodies are tied to particular formulations of ontological arguments, and are intended only to raise questions about the probative value of those particular formulations of ontological arguments
+@oppy-etal2025 | § 11 | ‘that score on this test than which no greater score on this test can be conceived’
+@hansen2024b | § 2.4 | His original description was that it was a way “to press a man with consequences drawn from his own principles or concessions.” That is, to argue that an opponent’s view is inconsistent, logically or pragmatically, with other things he has said or to which he is committed.
+@hansen2024b | § 2.7 | From the concessions, one might prove that one’s opponent is ‘committed to p,’ but an attempt to make it seem as if this constitutes a proof of the absolute (non-relative) proposition ‘p’ would be a fallacy.
+@hansen2024b | § 1 | It involves not accepting a view or a recommendation because the espouser him- or herself does not follow it.
+@hansen2024b | § 1 | the value of advice is not wholly dependent on the integrity of the advisor
+@clerbout-mcconaughey2022 | preamble | rooted in a research tradition that goes back to dialectics in Greek Antiquity, when problems were approached through dialogues in which opposing parties discussed a thesis through questions and answers
+@clerbout-mcconaughey2022 | preamble | The dialogical framework was first worked out in its modern form by Paul Lorenzen and Kuno Lorenz
+@clerbout-mcconaughey2022 | preamble | The game rules allow these players to challenge the other’s statements or defend their own statements in such a way that one player wins and the other loses after a finite number of moves.
+@clerbout-mcconaughey2022 | preamble | it is shown that one player may win whatever the other player’s moves may be (winning strategy)
+@clerbout-mcconaughey2022 | preamble | The meaning of the logical constants is provided by a set of interaction rules
+
+== 03-logic-and-arguments/deduction-induction-and-abduction
+Q: How do deduction, induction and abduction differ?
+Q: How did Peirce relate deduction, induction and hypothesis?
+Q: What are the two senses of "abduction"?
+Q: Is there an agreed criterion for distinguishing deductive from inductive arguments?
+Q: Is explanatory power a mark of truth? What are the objections to inference to the best explanation?
+Q: Is Sherlock Holmes's reasoning deductive?
+ok-quote: Science of Deduction
+ok-quote: A term from Charles Sanders Peirce
+ok-quote: The distinction is in chaos
+@douven2025 | § 1.1 | In deductive inferences, what is inferred is necessarily true if the premises from which it is inferred are true
+@douven2025 | § 1.1 | Consider, for instance, the inference of “John is rich” from “John lives in Chelsea” and “Most people living in Chelsea are rich.”
+@douven2025 | § 1.1 | It is standard practice to group non-necessary inferences into inductive and abductive ones.
+@douven2025 | § 1.1 | meaning that the conclusion goes beyond what is (logically) contained in the premises
+@douven2025 | § 1.1 | in abduction there is an implicit or explicit appeal to explanatory considerations, whereas in induction there is not; in induction, there is only an appeal to observed frequencies or statistics
+@douven2025 | § 1.1 | You may have observed many gray elephants and no non-gray ones, and infer from this that all elephants are gray, because that would provide the best explanation
+@douven2025 | § 1 | The best explanation for this that you can think of is that they made up.
+@douven2025 | § 1 | would, if true, best explain the fact that they have just been seen jogging together
+@douven2025 | § 1.1 | it violates monotonicity
+@douven2025 | § 1.1 | adding the premise that Tim and Harry are former business partners who still have some financial matters to discuss
+@douven2025 | § 1.1 | It should also be mentioned that Harman (1965) conceives induction as a special type of abduction.
+@douven2025 | preamble | in the historically first sense, it refers to the place of explanatory reasoning in generating hypotheses, while in the sense in which it is used most frequently in the modern literature it refers to the place of explanatory reasoning in justifying hypotheses
+@douven2025 | § 2 | it does not capture what most nowadays understand by abduction
+@douven2025 | § 2 | ABD1 Given evidence E and candidate explanations H1,…, Hn of E, infer the truth of that Hi which best explains E.
+@douven2025 | § 2 | like simplicity, generality, and coherence with well-established theories
+@douven2025 | § 2 | The problem is that none of the said virtues is presently particularly well understood.
+@douven2025 | § 2 | for else ABD1 may well lead us to believe “the best of a bad lot” (van Fraassen 1989, 143)
+@douven2025 | § 2 | one may require the hypothesis whose truth is inferred to be not only the best of the available potential explanations, but also to be satisfactory (Musgrave) or good enough (Lipton)
+@douven2025 | § 2 | which, however, we are still lacking
+@douven2025 | § 3 | experimental studies have shown that when people are able to think of an explanation for some possible event, they tend to overestimate the likelihood that this event will actually occur
+@douven2025 | § 3.1 | it is part of the meaning of “explanation” that if one theory is more explanatory than another, the former must be more informative than the latter
+@douven2025 | § 3.1 | “an elementary logical point that a more informative theory cannot be more likely to be true
+@douven2025 | § 3.1 | in the paradigm case in which one theory is an extension of another: clearly the extension has more ways of being false
+@douven2025 | § 3.1 | For instance, it is entirely unclear in what sense Special Relativity Theory “has more ways of being false” than Lorentz’s version of the æther theory, given that they make the same predictions.
+@douven2025 | § 3.1 | The objection is that such rules must either amount to Bayes’ rule, and thus be redundant, or be at variance with it
+@douven2025 | § 3.1 | It might be, for instance, that some probabilistic version of abduction does much better, at least in our world, than Bayes’ rule, in that, on average, it approaches the truth faster
+@douven2025 | § 3.2 | Hardly anyone nowadays would want to subscribe to a conception of truth that posits a necessary connection between explanatory force and truth
+@douven2025 | § 4 | In the past decade, Bayesian confirmation theory has firmly established itself as the dominant view on confirmation
+@douven2025 | § 4 | By contrast, Bayesian confirmation theory makes no reference at all to the concept of explanation.
+@douven2025 | § 4 | as he puts it, Bayesians should also be “explanationists”
+@douven2025 | § 4 | Bayesians ought to determine their prior probabilities and, if applicable, likelihoods on the basis of explanatory considerations
+@douven2025 | § 4 | Exactly how are explanatory considerations to guide one’s choice of priors?
+@deductive-inductive-arguments-iep | § 1 | induction was famously advertised by Francis Bacon (1561-1626) in his New Organon (1620) as the royal road to knowledge, while Rationalist mathematician-philosophers, such as René Descartes (1596-1650) in his Discourse on the Method (1637), favored deductive methods of inquiry
+@deductive-inductive-arguments-iep | § 2 | it follows that what is ostensibly the very same argument may be equally both deductive and inductive
+@deductive-inductive-arguments-iep | § 2 | If the arguer believes that the truth of the premises definitely establishes the truth of the conclusion, then the argument is deductive.
+@deductive-inductive-arguments-iep | § 10 | All of these proposals entail problems of one sort or another.
+@deductive-inductive-arguments-iep | § 10 | Some authors (such as Moore and Parker 2004) acknowledge that the best way of distinguishing deductive from inductive arguments is “controversial.” Yet, there seems to be remarkably little actual controversy about it. Instead, matters persist in a state of largely unacknowledged chaos.
+@deductive-inductive-arguments-iep | § 10 | “Does the argument prove its conclusion, or does it only render it probable, or does it do neither?”
+@smith2022 | § 3.1 | The other species is induction (epagôgê). He has far less to say about this than deduction, doing little more than characterize it as “argument from the particular to the universal”.
+@smith2022 | § 3.1 | it is induction, or at any rate a cognitive process that moves from particulars to their generalizations, that is the basis of knowledge of the indemonstrable first principles of sciences
+@peirce1878 | § I | Suppose I enter a room and there find a number of bags, containing different kinds of beans. On the table there is a handful of white beans; and, after some searching, I find one of the bags contains white beans only.
+@peirce1878 | § I | This sort of inference is called making an hypothesis. It is the inference of a case from a rule and result.
+@peirce1878 | § I | So that induction is the inference of the rule from the case and result.
+@peirce1878 | § I | Deduction. Rule.—All the beans from this bag are white. Case.—These beans are from this bag. Result.—These beans are white.
+@peirce1878 | § I | As the governor of the province was the only personage I could think of who would be so greatly honored, I inferred that this was he.
+@peirce1878 | § I | To explain the phenomenon, we suppose the sea once washed over this land.
+@peirce1878 | § I | Numberless documents and monuments refer to a conqueror called Napoleon Bonaparte.
+@peirce1878 | § I | without supposing that he really existed
+@peirce1878 | § I | As a general rule, hypothesis is a weak kind of argument. It often inclines our judgment so slightly toward its conclusion that we cannot say that we believe the latter to be true; we only surmise that it may be so.
+@peirce1878 | § I | But there is no difference except one of degree between such an inference and that by which we are led to believe that we remember the occurrences of yesterday from our feeling as if we did so.
+@doyle1887 | ch. 2 | THE SCIENCE OF DEDUCTION.
+@doyle1887 | ch. 2 | The train of reasoning ran, ‘Here is a gentleman of a medical type, but with the air of a military man. Clearly an army doctor, then.
+@doyle1887 | ch. 2 | Where in the tropics could an English army doctor have seen much hardship and got his arm wounded? Clearly in Afghanistan.
+@doyle1887 | ch. 2 | The whole train of thought did not occupy a second.
+@doyle1887 | ch. 2 | I arrived at the conclusion without being conscious of intermediate steps
+@burch2024 | § 4 | three phases or stages: abduction (making conjectures or creating hypotheses), deduction (inferring what should be the case if the hypotheses are the case), and induction (the testing of hypotheses)
+@groarke2026 | § 4.1 | “Conductive” arguments support their conclusions by accumulating non-decisive reasons in their favor.

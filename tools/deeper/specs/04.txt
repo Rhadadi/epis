@@ -1,0 +1,438 @@
+== 04-language-concepts-and-definitions/use-and-mention
+Q: What is the difference between using and mentioning an expression?
+Q: Why is quotation an opaque context?
+Q: How is quotation marked, and what is mixed quotation?
+Q: Can the use-mention distinction be drawn precisely?
+ok-quote: Unmarried man
+ok-quote: one is a number
+ok-quote: Mentioned means
+@cappelen-mckeever2024 | § 2.2 | In (D1) the word ‘Jim’ is used to talk about (or signify, or denote) a person
+@cappelen-mckeever2024 | § 2.2 | Instead, ‘Jim’ is used to talk about (or signify or denote) a word
+@cappelen-mckeever2024 | § 2.2 | In (D1), ‘Jim’ is being used and in (D2) it is being mentioned.
+@cappelen-mckeever2024 | preamble | a linguistic device is needed that ‘turns language on itself’. Quotation is one such device. It is our primary meta-linguistic tool
+@cappelen-mckeever2024 | preamble | (1) ‘Snow is white’ is true in English iff snow is white.
+@cappelen-mckeever2024 | preamble | (4) ‘Bachelor’ has eight letters.
+@cappelen-mckeever2024 | preamble | Quotation is a paradigmatic opaque context, i.e. a context in which substitution of synonymous or co-referential expressions can fail to preserve truth-value.
+@cappelen-mckeever2024 | preamble | quotation was usually introduced as a somewhat shady device, and the introduction was accompanied by a stern sermon on the sin of confusing the use and mention of expressions
+@cappelen-mckeever2024 | § 1.2 | In spoken language, no obvious correlates of quotation marks exist.
+@cappelen-mckeever2024 | § 1.2 | Sometimes, for example, italicization is used instead, as in (7). Other devices employed as substitutes for quotation marks include bold face, indentation
+@cappelen-mckeever2024 | § 1.2 | (6) My name is Donald.
+@cappelen-mckeever2024 | § 4 | (12) Quine said that quotation ‘has a certain anomalous feature’.
+@cappelen-mckeever2024 | § 4 | the quoted material is used by the reporter to characterise the proposition that the reportee expressed. It must also account for the fact that the quoted material was uttered by the reportee
+@cappelen-mckeever2024 | § 4 | open or scroll to a newspaper and read until you find the first mixed quotation (it shouldn’t take long)
+@cappelen-mckeever2024 | § 2.2 | A problem with this is that according to some theories, an expression can be mentioned without being quoted
+@cappelen-mckeever2024 | § 2.2 | it is controversial whether standard meta-linguistic devices such as quotation are referring expressions
+@cappelen-mckeever2024 | § 7 | Thus ‘one is a number’ is a sentence in material mode; and ‘‘one’ is a number word’ is its sentential counterpart in formal mode.
+@cappelen-mckeever2024 | § 7 | Revealing that a statement is basically about the use of language may succeed in removing some of its metaphysical mystery.
+
+== 04-language-concepts-and-definitions/kinds-of-definition
+Q: What different kinds of definition are there, and what goals do they serve?
+Q: What is the difference between real and nominal definitions?
+Q: What is an explication, and how does it differ from stipulative and descriptive definitions?
+Q: What can stipulative and ostensive definitions do that others cannot?
+ok-quote: What is virtue?
+ok-quote: raimexes are rational
+ok-quote: the man who murdered X, Y and Z
+@gupta-mackereth2023 | § 1 | we speak of a commission as defining the boundary between two nations; of the Supreme Court as defining, through its rulings, “person” and “citizen”; of a chemist as discovering the definition of gold, and the lexicographer, that of ‘cool’
+@gupta-mackereth2023 | § 1 | the boundary commission may aim to achieve precision; the Supreme Court, fairness; the chemist and the lexicographer, accuracy; the debater, clarity; and the mathematician, fecundity
+@gupta-mackereth2023 | § 1.1 | John Locke distinguished, in his Essay, “real essence” from “nominal essence.”
+@gupta-mackereth2023 | § 1.1 | The chemist aims at real definition, whereas the lexicographer aims at nominal definition.
+@gupta-mackereth2023 | § 1.1 | Whether the search for an answer to the Socratic question “What is virtue?” is a search for real definition or one for nominal definition depends upon one’s conception of this particular philosophical activity.
+@gupta-mackereth2023 | § 1.3 | A stipulative definition imparts a meaning to the defined term, and involves no commitment that the assigned meaning agrees with prior uses (if any) of the term.
+@gupta-mackereth2023 | § 1.4 | Descriptive definitions, like stipulative ones, spell out meaning, but they also aim to be adequate to existing usage.
+@gupta-mackereth2023 | § 1.4 | a lack of fit with existing usage is an objection to them
+@gupta-mackereth2023 | § 1.5 | An explication aims to respect some central uses of a term but is stipulative on others.
+@gupta-mackereth2023 | § 1.5 | But the mismatch is not an objection to the explication. What is important for explication is not antecedent meaning but function.
+@gupta-mackereth2023 | § 1.5 | the truth-functional conditional can be put forward as an explication of the ordinary conditional for certain purposes in certain contexts
+@gupta-mackereth2023 | § 1.5 | to uphold the definition of “ordered pair” as a philosophical paradigm
+@gupta-mackereth2023 | § 1.5 | Here, the pair \(\langle x,y\rangle\) is defined as the set \(\{\{x\}, \{x,y\}\}\).
+@gupta-mackereth2023 | § 1.2 | When an epistemologist seeks a definition of “knowledge,” she is not seeking a good dictionary entry for the word ‘know’.
+@gupta-mackereth2023 | § 1.3 | If one stipulatively defines a “raimex” as, say, a rational, imaginative, experiencing being then the judgment “raimexes are rational” is assured of being necessary, certain, and a priori.
+@gupta-mackereth2023 | § 1.3 | Philosophers have found it tempting to explain the puzzling cases of, e.g., a priori judgments, by an appeal to stipulative definitions.
+@gupta-mackereth2023 | § 1.3 | the description serves only to fix the reference of the new name; the name is not synonymous with the description
+@gupta-mackereth2023 | § 1.6 | Unlike other familiar definitions, ostensive definitions can introduce terms that are ineliminable.
+@gupta-mackereth2023 | § 1.6 | all nominal definitions, if pushed back far enough, must lead ultimately to terms having only ostensive definitions
+@gupta-mackereth2023 | § 1.2 | Dictionaries aim to provide definitions that contain sufficient information to impart an understanding of the term.
+
+== 04-language-concepts-and-definitions/rules-for-good-definitions
+Q: Where do the traditional rules for definitions come from?
+Q: What criteria must a stipulative definition meet?
+Q: Are circular definitions always illegitimate?
+ok-quote: Not circular
+ok-quote: let this dog be called
+@smith2022 | § Essential Predication and the Predicables | a definition and what it defines must “counterpredicate” (antikatêgoreisthai) with one another. \(X\) counterpredicates with \(Y\) if \(X\) applies to what \(Y\) applies to and conversely
+@smith2022 | § Essential Predication and the Predicables | “Capable of laughing”, for example, counterpredicates with “human” but fails to be its definition. Such a predicate (non-essential but counterpredicating) is a peculiar property or proprium (idion).
+@gupta-mackereth2023 | § 2.1 | First, a stipulative definition should not enable us to establish essentially new claims—call this the Conservativeness criterion. We should not be able to establish, by means of a mere stipulation, new things about, for example, the moon.
+@gupta-mackereth2023 | § 2.1 | Second, the definition should fix the use of the defined expression \(X\)—call this the Use criterion.
+@gupta-mackereth2023 | § 2.2 | the definition must reduce each formula containing the defined term to a formula in the ground language
+@gupta-mackereth2023 | § 1 | The standards by which definitions are judged are thus liable to vary from case to case.
+@gupta-mackereth2023 | § 2.7 | Russell argued that such definitions involve a subtle kind of vicious circle.
+@gupta-mackereth2023 | § 2.7 | “Whatever involves all of a collection must not be one of the collection (Russell 1908, 63).”
+@gupta-mackereth2023 | § 2.7 | \(z\) is a liar \(\eqdf\) all propositions asserted by \(z\) are false
+@gupta-mackereth2023 | § 1.6 | let this dog be called ‘Freddie’
+@gupta-mackereth2023 | § 1.6 | ostensive definitions can fail to meet the Eliminability criterion explained below; they can fail to meet also the Conservativeness criterion
+@gupta-mackereth2023 | § 2.8 | This strong parallelism suggests that since truth is manifestly a legitimate concept, so also are concepts defined by circular definitions such as (18).
+@gupta-mackereth2023 | § 2.8 | the semantic value of the defined term is a rule of revision, not as with non-circular definitions, a rule of application
+@gupta-mackereth2023 | § 2.8 | is behaving here in the way the concept of truth behaves on the Truth Teller
+
+== 04-language-concepts-and-definitions/necessary-and-sufficient-conditions-and-their-limits
+Q: What is the classical theory of concepts, and why was it attractive?
+Q: What problems does the classical theory face in psychology and philosophy?
+Q: What follows for conceptual analysis if concepts lack definitions?
+Q: Is "featherless biped" a bad definition?
+@margolis-laurence2023 | § 2.1 | According to the classical theory, a lexical concept C has definitional structure in that it is composed of simpler concepts that express necessary and sufficient conditions for falling under C.
+@margolis-laurence2023 | § 2.1 | The stock example is the concept BACHELOR, which is traditionally said to have the constituents UNMARRIED and MAN.
+@margolis-laurence2023 | § 2.1 | Much of its appeal comes from the way it offers unified treatments of concept acquisition, categorization, and reference determination.
+@margolis-laurence2023 | § 2.1 | Paradigmatic conceptual analyses offer definitions of concepts that are to be tested against potential counterexamples that are identified via thought experiments.
+@margolis-laurence2023 | § 2.1 | apples are judged to be more typical than plums with respect to the category of fruit
+@margolis-laurence2023 | § 2.1 | The problem isn’t that the classical theory is inconsistent with results like these but that it does nothing to explain them.
+@margolis-laurence2023 | § 2.1 | Quite simply, there are too few examples of successful definitional analyses, and certainly none that are uncontroversial
+@margolis-laurence2023 | § 2.1 | But no one can seem to agree on what the correct definition is.
+@margolis-laurence2023 | § 2.1 | But another possibility—one that many philosophers are now taking seriously—is that our concepts lack definitional structure.
+@margolis-laurence2023 | § 2.4 | A radical alternative to all of the theories we’ve mentioned so far is conceptual atomism, the view that lexical concepts have no semantic structure
+@margolis-laurence2023 | § 2.4 | According to conceptual atomism, the content of a concept isn’t determined by its relation to other concepts but by its relation to the world.
+@margolis-laurence2023 | § 5.2 | A common theme of this work is that philosophy is supposed to be continuous with science
+@margolis-laurence2023 | § 5.2 | Others, however, have called into question the connection between conceptual analysis and definitions (Chalmers & Jackson 2001).
+@mill1843 | ch. VIII | The following are correct definitions of Man, according to this test: Man is a mammiferous animal, having (by nature) two hands
+@mill1843 | ch. VIII | Man is an animal who cooks his food: Man is a featherless biped.
+@mill1843 | ch. VIII | should be _convertible_ with the name which it professes to define; that is, should be exactly co-extensive with it
+@smith2022 | § Essential Predication and the Predicables | Such a predicate (non-essential but counterpredicating) is a peculiar property or proprium (idion).
+
+== 04-language-concepts-and-definitions/family-resemblance-and-prototypes
+Q: What is the prototype theory of concepts, and where did it come from?
+Q: How does it explain typicality effects?
+Q: Where does the prototype theory struggle?
+Q: What alternatives and combinations have been proposed?
+@margolis-laurence2023 | § 2.2 | According to this theory, a lexical concept C doesn’t have definitional structure but has probabilistic structure in that something falls under C just in case it satisfies a sufficient number of properties encoded by C’s constituents.
+@margolis-laurence2023 | § 2.2 | it has its psychological roots in Eleanor Rosch’s groundbreaking experimental treatment of much the same idea
+@margolis-laurence2023 | § 2.2 | the reason apples are judged to be more typical than plums is that the concept APPLE shares more of its constituents with FRUIT
+@margolis-laurence2023 | § 2.2 | One is that its treatment of categorization works best for quick and unreflective judgments.
+@margolis-laurence2023 | § 2.2 | If asked whether a dog that is surgically altered to look like a raccoon is a dog or a raccoon, the answer for most of us, and even for children, is that it is remains a dog
+@margolis-laurence2023 | § 2.2 | PET FISH encodes properties such as brightly colored, which have no basis in the prototype structure for either PET or FISH
+@margolis-laurence2023 | § 2.2 | many patently complex concepts don’t even have a prototype structure (e.g., CHAIRS THAT WERE PURCHASED ON A WEDNESDAY)
+@margolis-laurence2023 | § 2.2 | One general solution that addresses all of these problems is to hold that a prototype constitutes just part of the structure of a concept.
+@margolis-laurence2023 | § 2.3 | This is the view that concepts stand in relation to one another in the same way as the terms of a scientific theory
+@margolis-laurence2023 | § 2.3 | claiming that even children are in possession of a rudimentary biological theory. This theory tells them that being a dog isn’t just a matter of looking like a dog.
+@margolis-laurence2023 | § 2.3 | One problem that has been raised against the theory theory is that it has difficulty in allowing for different people to possess the same concepts
+@margolis-laurence2023 | § 2.5 | there is no reason why philosophers shouldn’t maintain that concepts have different types of structure
+@margolis-laurence2023 | § 2.5 | These same considerations have led some theorists to advocate concept eliminativism—the view that there are no concepts (Machery 2009).
+@margolis-laurence2023 | § 2.5 | concept should be understood to be a natural kind if concepts exist at all
+@biletzki-matar2026 | § 3.1 | from an emphasis on definition and analysis to ‘family resemblance’ and ‘language-games’
+@biletzki-matar2026 | § 3.1 | later Wittgenstein can be summed up as the total rejection of dogmatism
+
+== 04-language-concepts-and-definitions/why-language-is-an-epistemic-issue
+Q: Why did Bacon think words obstruct the understanding?
+Q: What two kinds of verbal error did Bacon distinguish?
+Q: Why did Locke devote a book of the Essay to language?
+Q: What was the linguistic turn in philosophy?
+ok-quote: the sun is the cause of the day
+@bacon1620 | I.59 | For men imagine that their reason governs words, while, in fact, words react upon the understanding
+@bacon1620 | I.59 | Words are generally formed in a popular sense
+@bacon1620 | I.59 | but when a more acute understanding or more diligent observation is anxious to vary those lines, and to adapt them more accurately to nature, words oppose it
+@bacon1620 | I.59 | The idols of the market are the most troublesome of all
+@bacon1620 | I.60 | They are either the names of things which have no existence
+@bacon1620 | I.60 | Fortune, the _primum mobile_, the planetary orbits,[25] the element of fire
+@bacon1620 | I.60 | or they are the names of actual objects, but confused, badly defined, and hastily and irregularly abstracted from things
+@bacon1620 | I.60 | in one sense flame is moist, in another air is not moist, in another fine powder is moist
+@bacon1620 | I.59 | it would be better (imitating the caution of mathematicians) to proceed more advisedly in the first instance, and to bring such disputes to a regular issue by definitions
+@bacon1620 | I.59 | Such definitions, however, cannot remedy the evil in natural and material objects, because they consist themselves of words, and these words produce others
+@bacon1620 | I.59 | so that we must necessarily have recourse to particular instances
+@bacon1620 | I.43 | words are formed at the will of the generality, and there arises from a bad and unapt formation of words a wonderful obstruction to the mind
+@uzgalis2024 | § 2.3 | Locke devotes Book III of An Essay Concerning Human Understanding to language. This is a strong indication that Locke thinks issues about language were of considerable importance in attaining knowledge.
+@uzgalis2024 | § 2.3 | Without general terms and classes we would be faced with the impossible task of trying to know a vast world of particulars.
+@uzgalis2024 | § 2.3 | He also rejects the claim that there is a single classification of things in nature that the natural philosopher should seek to discover.
+@uzgalis2024 | § 2.3 | each of which might be particularly useful depending on one’s purposes
+@uzgalis2024 | § 2.3 | There are always borderline cases.
+@uzgalis2024 | § 2.3 | words in their primary or immediate signification signify nothing but the ideas in the mind of him that uses them
+@uzgalis2024 | § 2.3 | “Locke’s main semantic thesis”
+@uzgalis2024 | § 2.3 | Kretzmann, however, argues persuasively that Locke distinguishes between meaning and reference and that ideas provide the meaning but not the reference of words.
+@uzgalis2024 | § 2.3 | When I say, ‘the sun is the cause of the day’, I do not mean that my idea of the sun causes or excites in me the idea of day
+@creath2026 | § 4.1 | What is novel is the idea that what had been seen as philosophical claims were better understood as proposals for structuring the language of science.
+@creath2026 | § 4.1 | the choice among the alternatives was a practical decision about usefulness for certain purposes rather than a theoretical question
+
+== 04-language-concepts-and-definitions/verbal-disputes
+Q: What is a merely verbal dispute, and how can one be dissolved?
+Q: How did James and Bacon diagnose disputes about words?
+Q: When does recognising a verbal element fail to end a dispute?
+ok-quote: go round
+@goodman2024 | § Pragmatism (1907) | Taking meaning as the “conceivable effects of a practical kind the object may involve,” the pragmatist philosopher finds that two “practical” meanings of “go around” are in play
+@goodman2024 | § Pragmatism (1907) | either the man goes North, East, South, and West of the squirrel, or he faces first the squirrel’s head, then one of his sides, then his tail, then his other side
+@goodman2024 | § Pragmatism (1907) | “Make the distinction,” James writes, “and there is no occasion for any further dispute.”
+@goodman2024 | § Pragmatism (1907) | a method of resolving philosophical disputes
+@bacon1620 | I.59 | Hence the great and solemn disputes of learned men often terminate in controversies about words and names
+@bacon1620 | I.59 | it would be better (imitating the caution of mathematicians) to proceed more advisedly in the first instance, and to bring such disputes to a regular issue by definitions
+@bacon1620 | I.59 | because they consist themselves of words, and these words produce others
+@creath2026 | § 4.4 | By 1945 Carnap also distinguished the two approaches described here, insisting that they were not competitors but were attempting to explicate two different concepts of probability. One need not choose one as the only concept; both concepts were useful.
+@creath2026 | § 4.4 | Reichenbach, by contrast, never conceded that both concepts were needed
+@sytsma-willemsen2026 | § 4.4.2 | another that they track different concepts than philosophers are interested in (e.g., Sosa 2009, 2010)
+
+== 04-language-concepts-and-definitions/conceptual-engineering
+Q: What is conceptual engineering, and how does it relate to Carnap's explication?
+Q: What makes an explication successful?
+Q: Why have revisionary conceptual projects grown?
+@gupta-mackereth2023 | § 1.5 | An explication aims to respect some central uses of a term but is stipulative on others. The explication may be offered as an absolute improvement of an existing, imperfect concept.
+@gupta-mackereth2023 | § 1.5 | Or, it may be offered as a “good thing to mean” by the term in a specific context for a particular purpose.
+@gupta-mackereth2023 | § 1.5 | But the mismatch is not an objection to the explication. What is important for explication is not antecedent meaning but function. So long as the latter is preserved, the former can be let go.
+@gupta-mackereth2023 | § 1.5 | This conditional differs from the ordinary conditional in some essential respects. Nevertheless, the truth-functional conditional can be put forward as an explication of the ordinary conditional for certain purposes in certain contexts.
+@creath2026 | § 4.1 | Since these languages and the concepts they contained were to be thought of as tools, none of which was uniquely correct, the choice among the alternatives was a practical decision about usefulness for certain purposes rather than a theoretical question.
+@creath2026 | § 4.1 | It can analyze existing concepts. And since many existing concepts are vague, it can also make them more precise in a variety of ways through explication. Philosophy can also investigate wholly new concepts.
+@creath2026 | § 4.1 | It becomes, thus, a kind of conceptual engineering.
+@creath2026 | § 4.1 | Conceptual analysis, explication, construction, and engineering continue to be fruitful ideas in philosophy, though it is not always understood how much of this was initiated or shaped by Carnap and other logical empiricists.
+@creath2026 | § 4.4 | attempting to explicate two different concepts of probability
+@margolis-laurence2023 | § 5.2 | The critique of traditional philosophical analysis has also generated proposals for various types of normative, revisionary projects.
+@margolis-laurence2023 | § 5.2 | Instead of asking which cases are or are not covered by a concept, they ask how a concept should be modified or what new concept should be adopted in its place, given the practical context in which the concept is used—for example, given the goal of promoting social equality (Haslanger 2012, Cappelen 2018).
+
+== 04-language-concepts-and-definitions/ambiguity
+Q: How does ambiguity affect the validity of arguments?
+Q: How does ambiguity differ from vagueness and generality?
+Q: What tests for ambiguity exist, and how reliable are they?
+ok-quote: The colours and the feathers are light
+ok-quote: Adam was necessarily unmarried
+@sennet2023 | § 5.1 | Babe Ruth owned a bat. Bats have wings. Babe Ruth owned something with wings. The argument looks valid and the premises seem true, on at least one reading, but the conclusion doesn’t follow.
+@sennet2023 | § 5.1 | Frege noted this to be the main defect of natural language and a real obstacle to trying to formalize it
+@sennet2023 | § 2.1 | ‘bat’ is not vague but it is ambiguous. ‘Is bald’ looks to be vague but not ambiguous. A general hallmark of vagueness is that it involves borderline cases
+@sennet2023 | preamble | While ‘is an uncle’ can be satisfied by both brothers of mothers and brothers of fathers, the phrase is not ambiguous but unspecified with respect to parent.
+@sennet2023 | § 4.4 | Aristotle offers a test for ambiguity: try to construct a definition that encompasses both meanings and posit an ambiguity only if you fail.
+@sennet2023 | § 4.4 | ‘Uncle’ is not ambiguous because it has a single definition that covers both
+@sennet2023 | § 4.1 | The colours are light. The feathers are light. The following, however, seems to be zeugmatic: ?The colours and the feathers are light.
+@sennet2023 | § 4.1 | Toronto exists. Numbers exist. Triadic relations exist. Toronto and numbers and triadic relations exist.
+@sennet2023 | § 4.1 | If a term can be ambiguous but in a way so subtle that competent speakers may miss it, then the zeugma might not be noticeable.
+@sennet2023 | § 4.6.2 | ?Judy’s dissertation is thought provoking and yellowed with age. Judy’s dissertation is still thought provoking although yellowed with age.
+@sennet2023 | § 4.5 | we would expect the ambiguity to be disambiguated by separate and unrelated words in some other languages
+@sennet2023 | § 4.5 | (in Croatian, there is no one word translation of ‘uncle’: ‘stric’ means brother of one’s father and ‘ujak’ means an uncle from the mother’s side)
+@sennet2023 | § 5.5 | the law divides between patent and latent ambiguity, where the former roughly corresponds to a case where the meaning of a law is unclear, the latter to cases where the meaning is clear but applies equally well to highly disparate things. In effect, this is the difference between ambiguity in sense and ambiguity in reference.
+@sennet2023 | preamble | Shakespeare’s “Ask for me tomorrow and you shall find me a grave man”
+@sennet2023 | preamble | Groucho Marx’s “I shot an elephant in my pajamas” is a classic example.
+@sennet2023 | preamble | It would be logical folly, for example, to conclude from the true (on one reading) sentences ‘All bachelors are necessarily unmarried’ and ‘Adam was a bachelor’ that Adam was necessarily unmarried.
+
+== 04-language-concepts-and-definitions/thick-and-thin-concepts
+Q: What distinguishes thick from thin evaluative concepts?
+Q: Can the descriptive content of a thick concept be separated from its evaluation?
+Q: Is evaluation part of the meaning of thick terms?
+@vayrynen2026 | preamble | Even if calling something selfish evaluates it as bad in some way or respect, not just any bad act can count as selfish; it must also involve the agent giving a certain degree of priority to herself over others.
+@vayrynen2026 | preamble | So the application of thick terms and concepts seems somehow to involve both evaluation and non-evaluative description.
+@vayrynen2026 | § 1 | The designation “thick concept” for concepts that combine evaluation and non-evaluative description originates in Bernard Williams’s Ethics and the Limits of Philosophy (Williams 1985).
+@vayrynen2026 | § 1 | Williams seems to have drawn the label “thick” from the notion of “thick description” introduced by Gilbert Ryle and adapted to other purposes by the anthropologist Clifford Geertz.
+@vayrynen2026 | preamble | practical concepts such as shrewd and imprudent, epistemic concepts such as open-minded and gullible, and aesthetic concepts such as banal and gracious
+@vayrynen2026 | § 2.2 | courageous only if it involves some risk to the agent
+@vayrynen2026 | § 2.2 | It doesn’t seem possible to state what thick terms and concepts semantically express
+@vayrynen2026 | § 2.2 | just how offensive a remark has to be to count as ‘rude’ might vary with context
+@vayrynen2026 | § 2.1 | take this to mean that there are no thick concepts, but only loaded words; see Blackburn 1992 and, on the general phenomenon, Stevenson 1938
+@vayrynen2026 | § 2.1 | using “thick” to refer to terms and concepts that characteristically involve both evaluation and non-evaluative description in some way or other
+@vayrynen2026 | § 2.1 | What one seems to be at most required to accept is that x is lewd in some non-evaluative sense.
+@vayrynen2026 | § 2.1 | such as using scare quotes or a certain tone of voice
+@vayrynen2026 | § 2.1 | Many people regard the thick terms chaste and lewd as objectionable
+@vayrynen2026 | § 6 | But Brent Kyle argues that knowledge is better understood as a thick concept and uses its thickness to cast light on why the so-called Gettier problem for definitions of knowledge arises
+
+== 04-language-concepts-and-definitions/facts-values-and-the-is-ought-gap
+Q: What did Hume say about is and ought, and how has it been interpreted?
+Q: What is Hume's law, and why is the gap thought to exist?
+Q: Do thick concepts bridge the gap?
+ok-quote: Hume's law
+ok-quote: x is rude
+@cohon2018 | § 5 | at some point make an unremarked transition from premises whose parts are linked only by “is” to conclusions whose parts are linked by “ought”
+@cohon2018 | § 5 | Few passages in Hume’s work have generated more interpretive controversy.
+@cohon2018 | § 5 | that no ethical or indeed evaluative conclusion whatsoever may be validly inferred from any set of purely factual premises
+@cohon2018 | § 5 | A number of present-day philosophers, including R. M. Hare, endorse this putative thesis of logic, calling it “Hume’s Law.”
+@cohon2018 | § 5 | on this reading Hume must simply assume that no purely factual propositions are themselves evaluative, as he does not argue for this
+@cohon2018 | § 5 | Some interpreters think Hume commits himself here to a non-propositional or noncognitivist view of moral judgment
+@cohon2018 | § 5 | which must involve the use of sentiment
+@cohon2018 | § 5 | he or she may reach some particular moral conclusions by inference from causal, factual premises
+@cohon2018 | § 5 | They point out that Hume himself makes such inferences frequently in his writings.
+@vayrynen2026 | § 2.1 | Any (non-trivial) valid argument for an evaluative conclusion must somehow (perhaps implicitly) involve evaluative content in its premises.
+@vayrynen2026 | § 2.1 | evaluative and normative statements commend things and guide action, whereas purely non-evaluative statements play no such practical role by themselves
+@vayrynen2026 | § 2.1 | note that an important gap can be held to exist even if values are a special kind of facts
+@vayrynen2026 | § 2.1 | But that debate concerns moral metaphysics rather than thick concepts.
+@vayrynen2026 | § 2.1 | O: x causes offense by indicating lack of respect So, R: x is rude
+@vayrynen2026 | § 2.1 | O*: x is an overt sexual display So, L: x is lewd
+@vayrynen2026 | § 2.1 | It is unclear whether this reply shows that the is-ought inferences Foot asks us to consider are invalid.
+
+== 04-language-concepts-and-definitions/loaded-language-euphemism-and-framing
+Q: How strong are framing effects?
+Q: How do evaluative words carry verdicts into descriptions?
+Q: What tactics did Bentham identify in political debate?
+ok-quote: If program A is adopted, 200 people will be saved
+@wheeler2024 | § 5.1 | Tversky and Kahneman report that a majority of respondents (72 percent) chose option (a), whereas a majority of respondents (78 percent) shown an equivalent reformulation of the problem in terms of the number of people who would die rather than survive chose (b).
+@wheeler2024 | § 5.1 | If program A is adopted, 200 people will be saved. If program B is adopted, there is a ⅓ probability that 600 people will be saved, and a ⅔ probability that no people will be saved
+@wheeler2024 | § 5.1 | A meta-analysis of subsequent experiments has shown that the framing condition accounts for most of the variance
+@wheeler2024 | § 5.1 | It is rash to conclude that people, rather than the peculiarities of the task or the theoretical tools available to us at the moment, are in error.
+@wheeler2024 | § 5.1 | the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood
+@vayrynen2026 | preamble | So the application of thick terms and concepts seems somehow to involve both evaluation and non-evaluative description.
+@vayrynen2026 | § 2.1 | there are no thick concepts, but only loaded words; see Blackburn 1992 and, on the general phenomenon, Stevenson 1938
+@vayrynen2026 | § 2.1 | What one seems to be at most required to accept is that x is lewd in some non-evaluative sense.
+@vayrynen2026 | § 2.1 | such as using scare quotes or a certain tone of voice
+@hansen2024b | § 2.6 | Jeremy Bentham’s Handbook of Political Fallacies (1824) was written in the years leading up to the first Reform Bill (1832).
+@hansen2024b | § 2.6 | each of the thirty or so fallacies he described
+@hansen2024b | § 2.6 | “the endeavour to draw aside attention from the measure to the man, in such a way as to cause the latter’s badness to be imputed to the measure he supports, or his goodness to his opposition”
+@bacon1620 | I.60 | They are either the names of things which have no existence
+
+== 04-language-concepts-and-definitions/essentially-contested-concepts
+Q: How can a concept be shared while its application is permanently contested?
+Q: How do contested concepts relate to thick concepts and to culture?
+Q: How should contested epistemic concepts be compared?
+@hitchcock2024 | preamble | Its definition is contested, but the competing definitions can be understood as differing conceptions of the same basic concept: careful thinking directed to a goal.
+@hitchcock2024 | preamble | Conceptions differ with respect to the scope of such thinking, the type of goal, the criteria and norms for thinking carefully, and the thinking components on which they focus.
+@vayrynen2026 | preamble | So the application of thick terms and concepts seems somehow to involve both evaluation and non-evaluative description.
+@vayrynen2026 | § 1 | The connection to Williams’s terminology is that many thick concepts incorporate culturally specific information
+@vayrynen2026 | § 1 | Different societies might have sufficiently differen
+@uzgalis2024 | § 2.3 | He also rejects the claim that there is a single classification of things in nature that the natural philosopher should seek to discover.
+@uzgalis2024 | § 2.3 | each of which might be particularly useful depending on one’s purposes
+@margolis-laurence2023 | § 5.2 | On what basis, then, are we to compare and evaluate these differing practices?
+@margolis-laurence2023 | § 5.2 | Wouldn’t this just be a form of epistemic prejudice?
+@margolis-laurence2023 | § 5.2 | they ask how a concept should be modified or what new concept should be adopted in its place, given the practical context in which the concept is used
+
+== 04-language-concepts-and-definitions/thought-experiments-and-intuitions
+Q: How do thought experiments work, and how can they fail?
+Q: How can a thought experiment be countered?
+Q: Are intuitions about cases good evidence?
+ok-quote: wrong intuitions
+ok-quote: turn the knobs
+@brown-fehige2026 | § 1 | If the spear flies through, it isn’t a boundary after all; if the spear bounces back, then there must be something beyond the supposed edge of space
+@brown-fehige2026 | § 1 | tion that we have set up in the imagination; we let it run or we carry out an operation; we see what happens; finally, we draw a conclusion
+@brown-fehige2026 | § 1 | The example also illustrates the fallibility of thought experiments.
+@brown-fehige2026 | § 1 | we’ve learned how to conceptualize space so that it could be both finite and unbounded
+@brown-fehige2026 | § 1 | However, the argument, even though it has the same structure as the anti-abortion argument, does not seem convincing in this case.
+@brown-fehige2026 | § 1 | The upshot is that even if the fetus has a right to life (which Thomson does not believe but allows for the sake of the argument), it may still be morally permissible to abort.
+@brown-fehige2026 | § 1 | Instead of a red tomato, Dennett, in his version of the thought experiment, presents Mary with a bright blue banana.
+@brown-fehige2026 | § 1 | Mary does not learn anything new when she sees coloured objects for the first time
+@brown-fehige2026 | § 1 | Clearly, thought experiments are characterized by an intriguing plasticity
+@margolis-laurence2023 | § 5.2 | found that East Asians often have the “wrong intuitions” regarding variations on classic philosophical thought experiments, including Gettier-type thought experiments (though see Machery et al 2017 for evidence that some of these intuitions may in fact be universal)
+@margolis-laurence2023 | § 5.2 | At the very least, this work suggests that philosophers should be cautious about moving from their own intuitions to claims about the proper analysis of a concept.
+@sytsma-willemsen2026 | § 4.4.2 | One reason offered for this is that the responses are too quick and not suitably reflective (e.g., Kauppinen 2007), another that they track different concepts than philosophers are interested in (e.g., Sosa 2009, 2010).
+@sytsma-willemsen2026 | § 4.4.2 | intuition apologists aim to defend the traditional practice more-or-less as described
+
+== 04-language-concepts-and-definitions/reflective-equilibrium
+Q: What is reflective equilibrium, and why was it proposed?
+Q: Which judgments does it start from?
+Q: Is the method vulnerable to bias?
+@knight2025 | preamble | You and your moral interlocutors might be concerned that “what we actually accept is fraught with idiosyncrasy and vulnerable to vagaries of history and personality” (Elgin 1996: 108) or displays “irregularities and distortions” (Rawls 1971: 48).
+@knight2025 | preamble | John Rawls proposed to address these concerns through the method of reflective equilibrium.
+@knight2025 | preamble | On the standard wide reflective equilibrium, we are to consider all possible descriptions to which one might plausibly conform one’s judgments together with all relevant philosophical arguments for them.
+@knight2025 | preamble | with some reference to versions of the method developed in other branches of philosophy (e.g., Goodman 1965
+@knight2025 | § 1.1 | These are “those judgments in which our moral capacities are most likely to be displayed without distortion” (Rawls 1971: 47).
+@knight2025 | § 1.2 | Rawls proposes that “we can discard those judgments made with hesitation, or in which we have little confidence” (Rawls 1971: 47).
+@knight2025 | § 1.2 | Such a move may increase rather than decrease the distortion of moral sensibilities that reflective equilibrium is supposed to address
+@knight2025 | § 1.2 | Consider someone with certain far right commitments, but not so far gone that they don’t recognize some appeal to such values as equality and liberty
+@knight2025 | § 1.3 | Friends of reflective equilibrium largely reject such a constraint. The basic complaint is that it makes
+@knight2025 | § 1.3 | epistemological determinations in advance of the reflective process where these are rather the proper upshot of that process
+@knight2025 | § 3.4 | One study found that professional philosophers were vulnerable to order and framing effects, and that this was not reduced by reflection or expertise on the topics in question (Schwitzgebel & Cushman 2015).
+@knight2025 | § 3.4 | considered judgments in such cases are emotionally-driven evolved responses to circumstances that no longer obtain
+
+== 04-language-concepts-and-definitions/sense-and-reference
+Q: Why can "a = b" be informative when "a = a" is not?
+Q: What did Frege, Russell and Kripke say fixes the reference of a name?
+Q: Why do belief reports resist substituting co-referring names?
+@zalta2026 | § 3.1 | Frege’s seminal paper in the philosophy of language is ‘Über Sinn und Bedeutung’ (‘On Sense and Reference’, 1892a). In this paper, Frege considered two puzzles about language
+@zalta2026 | § 3.1.1 | We can learn that ‘Mark Twain = Mark Twain’ is true simply by inspecting it; but we can’t learn the truth of ‘Mark Twain = Samuel Clemens’ simply by inspecting it
+@zalta2026 | § 3.1.1 | how do we account for the difference in cognitive significance between
+@zalta2026 | § 3.1.2 | Therefore, Samuel Clemens was an author.
+@zalta2026 | § 3.1.2 | This argument is not valid. There are circumstances in which the premises are true and the conclusion false.
+@zalta2026 | § 3.1.2 | one in which John learns the name ‘Mark Twain’ by reading Huckleberry Finn but learns the name ‘Samuel Clemens’ in the context of learning about 19th century American authors
+@zalta2026 | § 3.2 | names and descriptions also express a sense.[5] The sense of an expression accounts for its cognitive significance—it is the way by which one conceives of the denotation of the term.
+@zalta2026 | § 3.2 | The name ‘Pegasus’ and the description ‘the most powerful Greek god’ both have a sense
+@zalta2026 | § 3.2 | it no longer denotes what it ordinarily denotes. Instead, Frege claims that in such contexts, a term denotes its ordinary sense.
+@zalta2026 | § 3.2 | So, on Frege’s view, the sentence ‘John loves Mary’ names a truth value.
+@zalta2026 | § 3.2 | Frege calls the sense of a sentence a thought, and whereas there are only two truth values, he supposes that there are an infinite number of thoughts.
+@zalta2026 | § 3.2 | does not constitute evidence against the Principle.
+@ludlow2023 | § 2 | is shorthand for the conjunction of three claims: (3a) There is an F. (3b) At most one thing is F. (3c) Something that is F is G.
+@ludlow2023 | § 3.1 | it is not the case that the x such that x is the present king of France exists.
+@ludlow2023 | § 3.1 | If one wants to avoid the ontological entanglements of nonexistent objects
+@ludlow2023 | § 3.2 | if George has gone mad and is in fact wondering about the law of identity
+@ludlow2023 | § 3.3 | Metaphysical and semantical concerns were important to Russell in his 1905 paper, but epistemological concerns were no less significant.
+@ludlow2023 | § 3.3 | In that paper, Russell distinguished between objects that we are directly acquainted with and objects that we only know under a description.
+@ludlow2023 | § 3.3 | This in turn led Russell to extend the theory of descriptions to almost all uses of names—treating them as definite descriptions in disguise.
+@ludlow2023 | § 3.3 | Russell could have saved himself from some of the more troubling consequences of his view if he had jettisoned the Cartesianism and opted for a more liberal notion of acquaintance.
+@ludlow2023 | § 3.3 | In their view a case can be made that reference comes much cheaper than Russell imagined.
+@russell1918 | ch. X | Common words, even proper names, are usually really descriptions.
+@russell1918 | ch. X | What this person was acquainted with were certain sense-data which he connected (rightly, we will suppose) with Bismarck's body.
+@russell1918 | ch. X | some more or less vague mass of historical knowledge
+@russell1918 | ch. X | we know there is a true proposition concerning the actual Bismarck, and that, however we may vary the description (so long as the description is correct), the proposition described is still the same.
+@michaelson2024 | § 2.1 | Hesperus is Phosphorus. Santa Claus lives at the North Pole. Fred believes that Cicero, but not Tully, was Roman. (3) is true, but it is not knowable apriori.
+@michaelson2024 | § 2.1 | For then (3) would mean Venus is Venus
+@michaelson2024 | § 2.1 | According to meaning descriptivism, in contrast, what (3) means is that two distinct descriptions are satisfied by the same object.
+@michaelson2024 | § 2.1 | Classical descriptivists, like Frege and Russell, were perfectly willing to acknowledge that the descriptive content in question might vary, sometimes quite markedly, from one speaker to the next.
+@michaelson2024 | § 2.1 | it seems that I can still truly assert: David Cameron might not have called for a referendum on Brexit.
+@michaelson2024 | § 2.1 | holding fixed that we are talking about metaphysical rather than epistemic possibility here, it should be clear enough that (7) is false
+@michaelson2024 | § 2.1 | P.F. Strawson (1959), for instance, suggests that speakers may rely on others to provide the relevant descriptive content
+@michaelson2024 | § 2.1 | This will effectively deal with Kripke’s Feynman case, but at an intuitive cost.
+@michaelson2024 | § 2.2 | which dates back to John Stuart Mill (1867), a name’s meaning is simply its referent. In its modern form, the view was introduced by Ruth Barcan Marcus (1961)
+@michaelson2024 | § 2.2 | the necessity of identity statements between co-referring proper names
+@michaelson2024 | § 2.2 | Peter Geach (1969), Keith Donnellan (1970), and the aforementioned Kripke (1972)
+@michaelson2024 | § 2.2 | Reference, on this sort of view, is fixed by a dubbing.
+@michaelson2024 | § 2.2 | Subsequent speakers thus effectively ‘borrow’ their reference from speakers earlier in the chain, though borrowers needn’t be able to identify any of the lenders they are in fact relying on.
+@michaelson2024 | § 2.2 | As Kripke points out, complications arise due to the fact that we can apparently re-use names.
+@margolis-laurence2023 | § 2.4 | the content of a concept isn’t determined by its relation to other concepts but by its relation to the world.
+@margolis-laurence2023 | § 2.4 | The point is that if the description theory were correct, we would be referring to Schmitt when we say “Gödel”.
+@margolis-laurence2023 | § 2.4 | though see Machery et al. 2004 on whether this intuition is universal
+@uzgalis2024 | § 2.3 | Kretzmann, however, argues persuasively that Locke distinguishes between meaning and reference and that ideas provide the meaning but not the reference of words.
+
+== 04-language-concepts-and-definitions/vagueness-and-the-sorites-paradox
+Q: What is a borderline case, and when can inquiry not settle one?
+Q: What are the main responses to the sorites paradox, and what does each cost?
+Q: How does vagueness bear on knowledge?
+ok-quote: The Megarian philosopher
+@sorensen2023 | preamble | There is wide agreement that a term is vague to the extent that it has borderline cases.
+@sorensen2023 | § 1 | The boy will only count as an absolute borderline case of ‘obese’ if no possible method of inquiry could settle whether he is obese.
+@sorensen2023 | § 1 | No amount of conceptual analysis or empirical investigation can settle whether a 1.8 meter man is tall.
+@sorensen2023 | § 1 | A proposition is vague when there are possible states of things concerning which it is intrinsically uncertain
+@sorensen2023 | § 1 | In the case of relative borderline cases, the question is determinate but our means for answering it are incomplete. For absolute borderline cases, there is incompleteness in the question itself.
+@sorensen2023 | § 1 | there is normally unclarity as to where the unclarity begins.
+@sorensen2023 | § 1 | Consequently, ‘borderline case’ has borderline cases.
+@sorensen2023 | § 1 | Any finite number of intermediates just delays the inevitable.
+@sorensen2023 | § 1 | A false attribution of indeterminacy will lead to the premature abandonment of inquiry.
+@sorensen2023 | § 1 | But the tail can be located by tracing down from the snake’s rib cage.
+@sorensen2023 | § 1 | Since philosophical thought experiments often involve unfamiliar cases, there is apt to be intrinsic uncertainty.
+@sorensen2023 | § 2 | If a word is ambiguous, the speaker can resolve the ambiguity without departing from literal usage.
+@sorensen2023 | § 2 | Although relativization disambiguates, it does not eliminate borderline cases.
+@sorensen2023 | § 2 | The direct bearers of vagueness are a word’s full disambiguations such as ‘tall for an eighteenth-century French man’.
+@sorensen2023 | § 3 | The hitch is that death for the induction step is life for its negation.
+@sorensen2023 | § 4 | The most popular approach is to use an infinite number of truth-values represented by the real numbers between 0 (for full falsehood) and 1 (for full truth).
+@sorensen2023 | § 5 | Judges frequently seem to exercise and control discretion by means of vague language.
+@sorensen2023 | § 5 | Judges cannot confess ignorance and so are compelled to assert beyond their evidence.
+@sorensen2023 | § 7 | You cannot reach the horizon because it shifts with your location.
+@sorensen2023 | § 7 | However, the set of things to which the term applies (its “content”) shifts with the context.
+@sorensen2023 | § 7 | The very process of trying to refute the induction step changes the context so that the instance will not come out false.
+@raffman-hyde2026 | preamble | 1 grain of wheat does not make a heap. If 1 grain doesn’t make a heap, then 2 grains don’t.
+@raffman-hyde2026 | preamble | The argument is a paradox because apparently impeccable reasoning from apparently impeccable premises yields a falsehood.
+@raffman-hyde2026 | preamble | It follows, absurdly, that even a single grain makes a heap.
+@raffman-hyde2026 | § 1 | The Megarian philosopher Eubulides (4th century BC) is usually credited with the first formulation of the puzzle.
+@raffman-hyde2026 | § 1 | most notably by the Sceptics against the Stoics’ claims to knowledge. Curiously, the paradox attracted little subsequent interest until the late 19th century.
+@raffman-hyde2026 | § 2 | At least three conditions must be met for an argument to be an instance of the sorites paradox.
+@raffman-hyde2026 | § 2 | the property of applying across incremental differences on a decisive dimension is often called the tolerance of a vague term.
+@raffman-hyde2026 | § 2 | If the sorites is a resolvable fallacy, as most theorists of vagueness believe
+@raffman-hyde2026 | § 2 | In all likelihood, soriticality is an illusory feature of words like ‘old’ and ‘rich’; their vagueness is real.
+@raffman-hyde2026 | § 3 | As with any paradox, four broad types of response appear to be available.
+@raffman-hyde2026 | § 3 | The most drastic response would be to embrace the paradox and conclude that vague terms are either incoherent or vacuous.
+@raffman-hyde2026 | § 3.1 | hence the vagueness of natural language, including all soritical terms, is a defect to be eliminated.
+@raffman-hyde2026 | § 3.1 | Logic simply does not apply to them.
+@raffman-hyde2026 | § 3.1 | it allows us to preserve the “sweet simplicity” of classical logic
+@raffman-hyde2026 | § 3.1 | If logic was to have teeth, it had to apply to natural language as it stands
+@raffman-hyde2026 | § 3.2 | epistemicists think that vagueness is just a form of ignorance: vague terms have sharp boundaries whose locations are hidden from us.
+@raffman-hyde2026 | § 3.2 | e.g., Chrysippus 3rd century BC, Cargile 1969, Campbell 1974, Sorensen 1988, 2001; Williamson 1994a,b
+@raffman-hyde2026 | § 3.2 | And bivalence is preserved: any application of a vague term either is true or is false, though we cannot always know which.
+@raffman-hyde2026 | § 3.2 | meaning supervenes on use: the locations of the sharp boundaries of a vague term are a function of speakers’ dispositions to use it as they do.
+@raffman-hyde2026 | § 3.2 | Consequently, if we classify the former shade as blue, that classification is correct by luck, and so does not constitute knowledge.
+@raffman-hyde2026 | § 3.2 | Even its proponents grant that epistemicism is intuitively implausible; and it seems to multiply mysteries.
+@raffman-hyde2026 | § 3.2 | fixed by an unknowable function of their unknowable patterns of use.
+@raffman-hyde2026 | § 3.2 | Nevertheless, epistemicism may have the feel of a “just so” story.
+@raffman-hyde2026 | § 3.3.1 | (e.g., Fine 1975; Keefe 2000)
+@raffman-hyde2026 | § 3.3.1 | a sentence is super-true (-false) just in case it is true (false) on every admissible precisification of the predicate.
+@raffman-hyde2026 | § 3.3.1 | irrespective of the vagueness of ‘heap’ it is logically true of any number of grains of wheat that it either does or does not make a heap.
+@raffman-hyde2026 | § 3.3.1 | It countenances instances of true disjunctions neither of whose disjuncts is (super) true.
+@raffman-hyde2026 | § 3.3.1 | it is nonetheless true according to supervaluation theory that some conditional is.
+@raffman-hyde2026 | § 3.3.1 | Whilst it is true that there is some cut-off point, there is no particular point of which it is true that it is the cut-off point.
+@raffman-hyde2026 | § 3.3.1 | we must also allow that some existential statements can be true without having any true instance
+@raffman-hyde2026 | § 3.3.1 | In effect, the sorites paradox is resolved only at a cost to other intuitions.
+@raffman-hyde2026 | § 3.3.3 | Vague concepts appear to be concepts without boundaries at all. No finite number of divisions seems adequate.
+@raffman-hyde2026 | § 3.3.3 | belonging to the extension of a vague predicate is more like being attracted to a magnetic pole than like fitting into a pigeon hole
+@raffman-hyde2026 | § 3.3.3 | Goguen (1969) and Zadeh (1975), on the other hand, suggest replacing classical two-valued logic with an infinite-valued one.
+@raffman-hyde2026 | § 3.3.3 | revamped in Tye 1994, uses a three-valued logic.
+@raffman-hyde2026 | § 3.3.4 | Dissatisfied with many-valued and supervaluationist approaches, Kamp (1981) introduced a contextualist solution to the paradox.
+@raffman-hyde2026 | § 3.3.4 | akin to a Gestalt-shift
+@raffman-hyde2026 | § 3.4 | Dummett (1975), for example, maintains that vague observational predicates whose application is supposed to be governed by a nontransitive indiscriminability relation are incoherent.
+@raffman-hyde2026 | § 3.4 | However, such a view immediately runs into trouble because the paradoxes come in pairs.
+@raffman-hyde2026 | § 3.4 | Similarly, everyone is bald and no one is; everyone is rich and no one is, and so on.
+@raffman-hyde2026 | § 3.4 | Terms like ‘heap’, ‘bald’, ‘hirsute’, ‘rich’ and ‘poor’ apply to nothing.
+@raffman-hyde2026 | § 4 | However, McGee (1991) and Tappenden (1993) proposed a unified treatment of the liar and sorites paradoxes
+@raffman-hyde2026 | § 4 | the paradoxes of self-reference and the sorites paradox appear to have a common underlying structure
+@allen2024 | § 4.2 | Two accounts of Carneades’ sorites arguments against the existence of the gods have come down to us
