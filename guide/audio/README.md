@@ -4,28 +4,28 @@ Every chapter of the guide is also available as a narrated audio track. Listen i
 
 To take the audiobook with you, the player page offers three ways: save the chapters in your browser for offline listening, download them all as one ZIP of MP3 files with a playlist, or subscribe in a podcast app to the feed `https://epis.duckdns.org/guide/audio/feed.xml`.
 
-> The chapters marked ElevenLabs are read by three synthetic [ElevenLabs](https://elevenlabs.io) voices: Arthur narrates, Jane reads every third section and asks the quiz questions, and Adam Stone reads the quotations. The other chapters are narrated by the open-source [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model, and will be replaced one by one. None of it was read by a person.
+> The narration is read by three synthetic [ElevenLabs](https://elevenlabs.io) voices: Arthur narrates, Jane reads every third section and asks the quiz questions, and Adam Stone reads the quotations. None of it was read by a person.
 
-| | Chapter | Length | Narration |
-|---|---|---|---|
-| 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 39 min | ElevenLabs |
-| 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 17 min | ElevenLabs |
-| 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 56 min | ElevenLabs |
-| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 50 min | ElevenLabs |
-| 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 1 h 2 min | ElevenLabs |
-| 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 58 min | ElevenLabs |
-| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 56 min | ElevenLabs |
-| 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 58 min | ElevenLabs |
-| 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 10 min | ElevenLabs |
-| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 10 min | ElevenLabs |
-| 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 45 min | ElevenLabs |
-| 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 5 min | ElevenLabs |
-| 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 50 min | ElevenLabs |
-| 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 1 h 3 min | ElevenLabs |
-| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 1 h 2 min | ElevenLabs |
-| 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 1 min | Kokoro |
+| | Chapter | Length |
+|---|---|---|
+| 1 | [What Is Epistemology?](01-what-is-epistemology.mp3) | 39 min |
+| 2 | [A History of the Theory of Knowledge](02-history-of-epistemology.mp3) | 1 h 17 min |
+| 3 | [Logic and the Anatomy of Arguments](03-logic-and-arguments.mp3) | 56 min |
+| 4 | [Language, Concepts, and Definitions](04-language-concepts-and-definitions.mp3) | 50 min |
+| 5 | [What Is Knowledge?](05-the-nature-of-knowledge.mp3) | 1 h 2 min |
+| 6 | [Justification: The Structure of Good Reasons](06-justification.mp3) | 58 min |
+| 7 | [The Sources of Knowledge](07-sources-of-knowledge.mp3) | 56 min |
+| 8 | [Skepticism and Its Answers](08-skepticism.mp3) | 58 min |
+| 9 | [Induction, Probability, and Bayesian Reasoning](09-induction-probability-bayes.mp3) | 1 h 10 min |
+| 10 | [Science, Evidence, and Explanation](10-science-and-evidence.mp3) | 1 h 10 min |
+| 11 | [Truth, Relativism, and Objectivity](11-truth-and-relativism.mp3) | 45 min |
+| 12 | [Social Epistemology: Knowing Together](12-social-epistemology.mp3) | 1 h 5 min |
+| 13 | [Intellectual Virtue and the Ethics of Belief](13-virtues-and-ethics-of-belief.mp3) | 50 min |
+| 14 | [The Psychology of Reasoning: How Minds Actually Work](14-psychology-of-reasoning.mp3) | 1 h 3 min |
+| 15 | [A Field Guide to Fallacies](15-fallacies.mp3) | 1 h 2 min |
+| 16 | [The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments](16-critical-thinking-toolkit.mp3) | 1 h 6 min |
 
-Total: 15 h 43 min.
+Total: 15 h 48 min.
 
 ---
 

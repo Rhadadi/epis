@@ -1064,7 +1064,7 @@ window.TRACKS = [
   "file": "16-critical-thinking-toolkit.mp3",
   "text": "../16-critical-thinking-toolkit.md",
   "title": "Chapter 16 — The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
-  "duration": 3657.1,
+  "duration": 3982.3,
   "sections": [
    {
     "title": "Chapter sixteen. The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments.",
@@ -1072,75 +1072,75 @@ window.TRACKS = [
    },
    {
     "title": "The core loop",
-    "start": 106.7
+    "start": 118.0
    },
    {
     "title": "Step one: Understand before you evaluate",
-    "start": 156.9
+    "start": 169.8
    },
    {
     "title": "Step two: Identify the kind of disagreement",
-    "start": 310.4
+    "start": 340.6
    },
    {
     "title": "Stasis theory",
-    "start": 461.4
+    "start": 518.1
    },
    {
     "title": "Step three: Map the argument",
-    "start": 585.2
+    "start": 655.0
    },
    {
     "title": "Step four: Evaluate the premises and the reasoning",
-    "start": 656.2
+    "start": 731.0
    },
    {
     "title": "Step five: Evaluate the evidence",
-    "start": 729.6
+    "start": 809.8
    },
    {
     "title": "Step six: Find the crux",
-    "start": 915.0
+    "start": 1017.4
    },
    {
     "title": "Step seven: Weigh and conclude",
-    "start": 1040.1
+    "start": 1157.4
    },
    {
     "title": "Framing an argument of your own",
-    "start": 1161.9
+    "start": 1290.0
    },
    {
     "title": "Burden of proof",
-    "start": 1470.0
+    "start": 1635.1
    },
    {
     "title": "Philosophical razors and heuristics",
-    "start": 1594.0
+    "start": 1767.5
    },
    {
     "title": "The baloney detection kit",
-    "start": 1835.5
+    "start": 2038.8
    },
    {
     "title": "The ethics of discussion",
-    "start": 1923.8
+    "start": 2132.0
    },
    {
     "title": "Worked case studies",
-    "start": 2220.3
+    "start": 2455.3
    },
    {
     "title": "Checklists",
-    "start": 3387.9
+    "start": 3695.3
    },
    {
     "title": "Daily practices",
-    "start": 3512.8
+    "start": 3825.7
    },
    {
     "title": "End of chapter sixteen",
-    "start": 3624.4
+    "start": 3948.8
    }
   ]
  }

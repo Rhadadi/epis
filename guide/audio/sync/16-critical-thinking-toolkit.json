@@ -1,0 +1,4051 @@
+{
+"file": "16-critical-thinking-toolkit.mp3",
+"title": "Chapter 16 — The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+"duration": 3982.289,
+"narration": {
+"engine": "ElevenLabs",
+"model": "eleven_v4_turbo",
+"voices": {
+"main": "C1npRmjB19a6yNkEucvx",
+"second": "RILOU7YmBhvwJGDGjNmP",
+"third": "NFG5qt843uXKj4pFvR7C"
+},
+"edition": "en"
+},
+"lines": [
+{
+"kind": "opening",
+"text": "Chapter sixteen. The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments.",
+"begin": 2.116,
+"end": 8.996,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"You should attempt to re-express your target's position so clearly, vividly, and fairly that your target says, 'Thanks, I wish I'd thought of putting it that way.'\"",
+"begin": 10.266,
+"end": 20.906,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Daniel Dennett, Intuition Pumps and Other Tools for Thinking, stating Rapoport's first rule.",
+"begin": 21.499,
+"end": 27.819,
+"voice": "main"
+},
+{
+"kind": "quote",
+"text": "\"The aim of argument, or of discussion, should not be victory, but progress.\"",
+"begin": 28.682,
+"end": 34.922,
+"voice": "third"
+},
+{
+"kind": "attr",
+"text": "Joseph Joubert, Pensées.",
+"begin": 35.5,
+"end": 37.74,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The previous fifteen chapters provided the concepts. This chapter turns them into practice: a step-by-step method for analyzing any discussion, debate, article, or claim; a method for building your own arguments; tools for handling burden of proof, heuristics, and the ethics of disagreement; five fully worked case studies; and checklists and habits for daily use.",
+"begin": 38.609,
+"end": 64.609,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Think of this chapter as the workshop. Each tool links back to the chapter where its theory is explained.",
+"begin": 65.009,
+"end": 71.249,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "This is where everything comes together. In this final chapter you'll learn a seven-step method for analyzing any discussion: understand before you evaluate, identify the kind of disagreement, map the argument, evaluate the premises and the evidence, find the crux, and weigh it all up.",
+"begin": 71.915,
+"end": 92.955,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then we'll turn it around: how to frame an argument of your own, who carries the burden of proof, and a set of philosophical razors for cutting through nonsense. We'll talk about the ethics of discussion, and work through five case studies, from an herbal cold remedy to an argument on social media.",
+"begin": 93.275,
+"end": 112.395,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "We'll finish with checklists and daily habits to keep your thinking sharp.",
+"begin": 112.435,
+"end": 116.795,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The core loop",
+"begin": 118.073,
+"end": 119.033,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Whenever you meet a claim, argument, or disagreement that matters, work through these seven steps. With practice, most of them become quick and automatic.",
+"begin": 120.111,
+"end": 130.511,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A useful preliminary is to separate the three modes of persuasion Aristotle identified in the Rhetoric.",
+"begin": 130.911,
+"end": 137.191,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Logos: the argument and evidence.",
+"begin": 137.551,
+"end": 140.191,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ethos: the speaker's character and credibility.",
+"begin": 140.751,
+"end": 144.191,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pathos: the emotions of the audience.",
+"begin": 144.511,
+"end": 147.231,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "All three are legitimate parts of communication. But when you are deciding whether a claim is true, logos carries the weight, ethos matters only as evidence about testimony, and pathos should be set aside. Ask yourself: if I strip away the speaker's charisma and the emotional tone, what argument is left?",
+"begin": 147.871,
+"end": 168.591,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Step one: Understand before you evaluate",
+"begin": 169.848,
+"end": 173.448,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "You cannot evaluate a claim until you know what it is. Most bad arguments about arguments begin with a misunderstanding.",
+"begin": 174.524,
+"end": 183.004,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Restate the claim in your own words, and check your restatement with the other person if you can: \"So, if I understand you, you're saying that… Is that right?\"",
+"begin": 183.324,
+"end": 193.564,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Apply the principle of charity: when a statement can be read in several ways, choose the most reasonable reading.",
+"begin": 193.884,
+"end": 200.964,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Steelman. Go further: construct the strongest version of the opposing view, even stronger than the one presented. If you can refute the strongest version, your conclusion is secure. If you can't, you have learned something. John Stuart Mill made the argument in On Liberty: \"He who knows only his own side of the case, knows little of that\".",
+"begin": 201.244,
+"end": 224.124,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Rapoport's rules. Daniel Dennett popularized a set of rules for criticizing an opponent's view, which he attributed to the game theorist Anatol Rapoport.",
+"begin": 224.764,
+"end": 234.844,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Re-express your target's position so clearly, vividly, and fairly that your target says, \"Thanks, I wish I'd thought of putting it that way.\"",
+"begin": 235.164,
+"end": 244.604,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. List any points of agreement, especially if they are not matters of general or widespread agreement.",
+"begin": 245.244,
+"end": 251.964,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Mention anything you have learned from your target.",
+"begin": 252.284,
+"end": 255.644,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Only then are you permitted to say so much as a word of rebuttal or criticism.",
+"begin": 256.284,
+"end": 262.124,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The ideological Turing test. The economist Bryan Caplan proposed a test of whether you really understand an opposing view: could you explain it so well that members of that side could not tell you apart from a genuine believer? If you can't pass the test, you probably don't understand the view well enough to reject it confidently.",
+"begin": 262.444,
+"end": 282.884,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Attend to what is implied, not just said. The philosopher Paul Grice noted that conversation relies on a cooperative principle, with maxims of quantity — say as much as needed, no more — quality — say what you believe true, with evidence — relation, be relevant, and manner — be clear. We routinely infer meanings beyond the literal words, called implicatures. If someone says \"Some of the students passed,\" they implicate that not all did. If a reference letter says only \"He has excellent handwriting and was always punctual,\" it implicates that there is nothing better to say. Understanding a claim includes understanding its implicatures, but be careful: implicatures can be canceled — \"Some students passed; in fact, all did\" — and it is unfair to hold someone to an implicature they didn't intend.",
+"begin": 283.164,
+"end": 339.324,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Step two: Identify the kind of disagreement",
+"begin": 340.584,
+"end": 344.104,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Disagreements differ in kind, and each kind is resolved differently. Many arguments go nowhere because the parties are having different kinds of disagreement without realizing it.",
+"begin": 345.182,
+"end": 356.942,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Factual — empirical. Question: What is the case? Example: \"Did crime rise last year?\" How it can be resolved: Evidence: data, observation, experiment.",
+"begin": 356.982,
+"end": 370.062,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Causal. Question: What causes what? Example: \"Did the policy cause the drop in crime?\" How it can be resolved: Causal inference: controlled comparisons, natural experiments.",
+"begin": 370.702,
+"end": 384.502,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Predictive. Question: What will happen? Example: \"Will this policy reduce crime?\" How it can be resolved: Models, base rates, track records, forecasting.",
+"begin": 384.782,
+"end": 397.022,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Conceptual or verbal. Question: What do we mean by the term? Example: \"Is this 'censorship'?\" How it can be resolved: Clarify definitions; ban the word; separate the factual question.",
+"begin": 397.502,
+"end": 411.982,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Interpretive. Question: What does this text, law, or act mean? Example: \"What did the author of this law intend?\" How it can be resolved: Context, evidence of intent, interpretive principles.",
+"begin": 412.462,
+"end": 427.342,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Normative — values. Question: What is good, right, just? Example: \"Is it fair to tax inherited wealth?\" How it can be resolved: Moral argument, consistency tests, thought experiments, reflective equilibrium.",
+"begin": 427.662,
+"end": 444.382,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Weighting — priorities. Question: How much does each consideration matter? Example: \"Is economic growth more important than equality?\" How it can be resolved: Often irreducible; clarify trade-offs; look for options that serve both.",
+"begin": 444.942,
+"end": 462.142,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Practical — policy. Question: What should we do? Example: \"Should we build the new motorway?\" How it can be resolved: Combines all the above: facts plus predictions plus values plus weights plus feasibility.",
+"begin": 462.382,
+"end": 478.462,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Framework — deep. Question: What counts as evidence or authority? Example: \"Should scripture or science settle this?\" How it can be resolved: Hardest; look for shared commitments, immanent critique.",
+"begin": 478.782,
+"end": 493.542,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Practical disagreements decompose. Almost every disagreement about what to do contains factual, causal, predictive, conceptual, normative, and weighting components. Listing them separately is often the single most useful thing you can do in a debate. You may discover that you agree on eighty percent of the components, and that the real disagreement is narrow.",
+"begin": 493.822,
+"end": 516.862,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Stasis theory",
+"begin": 518.139,
+"end": 519.179,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The ancient rhetoricians developed a tool for exactly this purpose. Stasis theory was systematized by Hermagoras of Temnos, second century BCE, and developed by Cicero and Quintilian for use in law courts. A stasis, \"standing\" or \"stopping point\", is the point at which the parties' positions meet and the disagreement is joined. The classical stases form a sequence.",
+"begin": 520.255,
+"end": 546.375,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Conjecture — fact: Did it happen? Does it exist? \"Did the defendant take the money?\"",
+"begin": 546.815,
+"end": 553.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Definition: What is it? How should it be classified? \"Was taking the money theft, or borrowing?\"",
+"begin": 554.495,
+"end": 561.775,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Quality: Is it good or bad, justified or unjustified? How serious? \"Was taking it justified by an emergency?\"",
+"begin": 562.495,
+"end": 571.935,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Procedure — jurisdiction, policy: What should be done? Who should decide? Is this the right forum? \"Should this be handled by a criminal court, or privately?\"",
+"begin": 572.735,
+"end": 584.015,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The stases are ordered: if the parties disagree about the facts, arguing about quality is premature. The prosecutor and defense must first establish where they actually disagree.",
+"begin": 584.735,
+"end": 596.175,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Apply it to any modern debate. Take a dispute about whether a city should remove a controversial statue.",
+"begin": 596.815,
+"end": 603.135,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fact: Who was this person? What did they do? When and why was the statue erected?",
+"begin": 603.535,
+"end": 609.655,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Definition: Is the statue a historical record, a memorial honoring the person, or a political symbol? Would removal be \"erasing history\"?",
+"begin": 610.015,
+"end": 619.135,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Quality: How should we weigh the person's achievements and wrongs? Whom does the statue harm or benefit?",
+"begin": 619.855,
+"end": 626.695,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Procedure: Who should decide: the city council, a referendum, historians? Should it be removed, moved to a museum, or given explanatory context?",
+"begin": 627.055,
+"end": 637.655,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "People who seem to be arguing about the same thing are frequently arguing at different stases. Asking \"Where exactly do we disagree: about the facts, the definition, the value, or what to do?\" can transform a shouting match into a discussion.",
+"begin": 638.015,
+"end": 653.775,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Step three: Map the argument",
+"begin": 655.047,
+"end": 657.527,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Now reconstruct the argument's structure.",
+"begin": 658.599,
+"end": 660.999,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Find the main conclusion. Use the \"therefore\" test.",
+"begin": 661.639,
+"end": 666.199,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. List the stated premises. Strip away rhetoric, repetition, and asides.",
+"begin": 666.839,
+"end": 672.919,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Supply the missing premises, choosing the most plausible ones that make the argument work.",
+"begin": 673.239,
+"end": 679.359,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Identify the structure. Which premises are linked, work only together, and which are convergent — independent reasons? Are there sub-arguments supporting premises?",
+"begin": 679.719,
+"end": 690.999,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Identify the warrant that connects evidence to conclusion.",
+"begin": 691.719,
+"end": 695.879,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Add objections and replies to the map.",
+"begin": 696.599,
+"end": 700.039,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "For a quick analysis, standard form is enough.",
+"begin": 700.359,
+"end": 703.199,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Premise one: premise",
+"begin": 703.479,
+"end": 705.159,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Premise two: premise",
+"begin": 705.719,
+"end": 707.479,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Premise three: hidden premise",
+"begin": 708.039,
+"end": 710.199,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Conclusion: conclusion",
+"begin": 710.759,
+"end": 712.519,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "For a complex debate, draw a map — on paper, or with free tools such as Argdown, Kialo, or Rationale. A map makes it obvious when a conclusion depends on a single weak premise, or when an objection that seemed devastating actually attacks a side issue.",
+"begin": 713.159,
+"end": 729.719,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Step four: Evaluate the premises and the reasoning",
+"begin": 730.984,
+"end": 734.744,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Ralph Johnson and J Anthony Blair proposed three criteria for good premises, often called ARS.",
+"begin": 735.817,
+"end": 743.537,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Acceptability: Are the premises true, or at least reasonable to accept? Are they supported, or are they themselves controversial?",
+"begin": 743.817,
+"end": 752.457,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Relevance: Do the premises actually bear on the conclusion?",
+"begin": 753.017,
+"end": 756.857,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Sufficiency: Taken together, do the premises provide enough support? A relevant but weak premise may not be enough.",
+"begin": 757.417,
+"end": 765.617,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then check the reasoning.",
+"begin": 765.897,
+"end": 767.577,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's deductive: is it valid? Try to find a counterexample.",
+"begin": 767.817,
+"end": 772.057,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's inductive: is the sample large and representative? Are there counterexamples?",
+"begin": 772.537,
+"end": 777.977,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's abductive: were alternative explanations considered? Is this one really the best?",
+"begin": 778.457,
+"end": 784.377,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's an analogy: are the two cases alike in the respects that matter?",
+"begin": 784.617,
+"end": 789.217,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's causal: have reverse causation, confounding, chance, and selection been ruled out?",
+"begin": 789.497,
+"end": 795.177,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "If it's practical — we should do A to achieve G: see the critical questions under Choose the right kind of argument.",
+"begin": 795.657,
+"end": 803.377,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Finally, scan for fallacies, remembering that most have legitimate cousins.",
+"begin": 803.657,
+"end": 808.617,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Step five: Evaluate the evidence",
+"begin": 809.874,
+"end": 812.754,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Evaluate the source",
+"begin": 813.845,
+"end": 815.285,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "For any claim that rests on testimony, ask.",
+"begin": 816.17,
+"end": 819.53,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Competence: Is the source in a position to know? Does it have relevant expertise?",
+"begin": 819.93,
+"end": 825.69,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Sincerity: Does it have reasons to mislead? Is the claim against its interest?",
+"begin": 825.93,
+"end": 831.41,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Track record: How reliable has it been before, on this kind of question?",
+"begin": 831.61,
+"end": 836.13,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Independence: Is it an independent source, or repeating another? Ten reports quoting one press release are one source.",
+"begin": 836.33,
+"end": 844.81,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Chain length: How many steps separate you from the original evidence?",
+"begin": 845.05,
+"end": 849.21,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Read laterally",
+"begin": 849.61,
+"end": 850.57,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Professional fact-checkers don't judge a website by looking at it. They leave it and see what other sources say about it. Mike Caulfield's SIFT method.",
+"begin": 851.435,
+"end": 862.075,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Stop. Before reading, sharing, or reacting, pause. Do you know this source? What is your purpose?",
+"begin": 862.235,
+"end": 871.235,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Investigate the source. Spend a minute finding out who is behind it and what their expertise and agenda are. Search for the source's name in a new tab.",
+"begin": 871.675,
+"end": 882.515,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Find better coverage. Look for the same claim reported by trusted sources, or for a fact-check. Often you don't need to evaluate this source at all; you just need to find a better one.",
+"begin": 882.955,
+"end": 895.675,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Trace claims, quotes, and media to the original context. Find the original study, the full quotation, or the original photo. Much misinformation consists of real material stripped of context.",
+"begin": 896.555,
+"end": 910.795,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Older checklists such as the \"CRAAP test,\" which asks about Currency, Relevance, Authority, Accuracy, and Purpose, are still useful as reminders, but Wineburg and colleagues found that checking a site's features vertically can be misleading, since sophisticated sites can look authoritative.",
+"begin": 911.755,
+"end": 929.755,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Evaluate the study",
+"begin": 930.715,
+"end": 931.835,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "For scientific or statistical claims.",
+"begin": 932.702,
+"end": 935.462,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What kind of study is it? Randomized trial, cohort study, case-control, cross-sectional survey, case report, modeling, or opinion? Where does it sit in the hierarchy of evidence?",
+"begin": 935.742,
+"end": 950.142,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Who was studied? How many? How were they selected? Humans or animals? Do the findings apply to the people you care about?",
+"begin": 950.702,
+"end": 959.502,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Compared with what? Was there a control group?",
+"begin": 959.742,
+"end": 962.462,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "How big is the effect? In absolute terms? \"From what, to what?\"",
+"begin": 962.942,
+"end": 967.822,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "How uncertain? Confidence intervals? Sample size?",
+"begin": 968.382,
+"end": 972.382,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is it one study or many? What do systematic reviews and meta-analyses say?",
+"begin": 972.622,
+"end": 978.022,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Has it been replicated? Was it pre-registered?",
+"begin": 978.302,
+"end": 981.262,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Who funded it? Are there conflicts of interest?",
+"begin": 981.502,
+"end": 984.462,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is it plausible given prior knowledge? An extraordinary result from a single small study is more likely to be a fluke.",
+"begin": 984.702,
+"end": 992.302,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Think like a Bayesian",
+"begin": 993.182,
+"end": 994.462,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Start with the base rate. How often are claims of this kind true? The outside view.",
+"begin": 995.344,
+"end": 1001.664,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Assess the likelihood ratio. How much more likely is this evidence if the claim is true than if it's false?",
+"begin": 1001.904,
+"end": 1008.904,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Consider the alternatives. What else could explain the evidence?",
+"begin": 1009.184,
+"end": 1013.024,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Don't double-count dependent evidence.",
+"begin": 1013.584,
+"end": 1016.144,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Step six: Find the crux",
+"begin": 1017.417,
+"end": 1019.897,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "A crux is a point on which the disagreement depends: if it were settled one way, one party would change their mind.",
+"begin": 1020.97,
+"end": 1028.09,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Ask: \"What would change your mind?\" Ask it of the other person, and of yourself. If the honest answer is \"nothing,\" you have learned that the belief is not being held on the basis of evidence, and further argument about evidence may be pointless. If there is an answer, you have found a crux, and you can look for evidence on that specific point.",
+"begin": 1028.73,
+"end": 1050.61,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Double crux. The Center for Applied Rationality developed a technique called double crux for productive disagreement. Two people who disagree about a claim each look for a further, more concrete proposition such that first, if it were true, they would believe the claim, and if false, they wouldn't; and second, they disagree about it. When both people's beliefs about the claim depend on the same further proposition, it is a double crux: a shared, often testable question on which their disagreement turns.",
+"begin": 1051.13,
+"end": 1083.45,
+"voice": "second"
+},
+{
+"kind": "voice1",
+"text": "\"Our company should switch to a four-day work week.\"",
+"begin": 1083.873,
+"end": 1087.153,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"I disagree.\"",
+"begin": 1087.582,
+"end": 1088.702,
+"voice": "second"
+},
+{
+"kind": "voice1",
+"text": "\"If I became convinced it would reduce productivity by more than ten percent, I'd drop the idea.\"",
+"begin": 1089.123,
+"end": 1095.523,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"And if I were convinced productivity would stay about the same, I'd support it.\"",
+"begin": 1095.941,
+"end": 1100.421,
+"voice": "second"
+},
+{
+"kind": "aside",
+"text": "Double crux. Would productivity fall by more than ten percent? Now they can look at evidence from trials in other companies, or run a pilot.",
+"begin": 1101.061,
+"end": 1110.181,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Socratic questioning. When exploring someone's view, or your own, these kinds of questions — developed by Richard Paul and Linda Elder from the Socratic tradition — help locate cruxes.",
+"begin": 1110.821,
+"end": 1123.021,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Clarification: What do you mean by…? Can you give an example?",
+"begin": 1123.381,
+"end": 1127.621,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Assumptions: What are you assuming? Why would someone assume that?",
+"begin": 1128.261,
+"end": 1133.261,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Reasons and evidence: How do you know? What would change your mind?",
+"begin": 1133.781,
+"end": 1138.501,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Viewpoints: How would someone who disagrees respond? What's the strongest objection?",
+"begin": 1138.741,
+"end": 1144.741,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Implications: If that's true, what follows? Would you accept that consequence?",
+"begin": 1144.901,
+"end": 1150.821,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "The question itself: Why is this question important? Is this the right question?",
+"begin": 1150.901,
+"end": 1156.261,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Step seven: Weigh and conclude",
+"begin": 1157.46,
+"end": 1160.26,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Proportion your confidence to the evidence. Conclusions are rarely all-or-nothing. Use degrees of confidence, and be explicit about them.",
+"begin": 1161.352,
+"end": 1170.552,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Words like \"likely,\" \"possible,\" and \"serious chance\" are notoriously ambiguous. In nineteen fifty-one, a US National Intelligence Estimate, NIE twenty-nine to fifty-one, stated that a Soviet attack on Yugoslavia should be considered a \"serious possibility.\" Sherman Kent, a founder of American intelligence analysis, later discovered that the analysts who had agreed on this wording interpreted it as meaning anything from about a twenty percent to an eighty percent chance. The Intergovernmental Panel on Climate Change now uses a calibrated vocabulary.",
+"begin": 1171.112,
+"end": 1207.592,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Virtually certain: ninety-nine to a hundred percent.",
+"begin": 1208.152,
+"end": 1211.592,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Extremely likely: ninety-five to one hundred percent.",
+"begin": 1212.072,
+"end": 1216.232,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Very likely: ninety to one hundred percent.",
+"begin": 1216.312,
+"end": 1219.832,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Likely: sixty-six to one hundred percent.",
+"begin": 1219.912,
+"end": 1223.272,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "About as likely as not: thirty-three to sixty-six percent.",
+"begin": 1223.352,
+"end": 1227.832,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Unlikely: zero to thirty-three percent.",
+"begin": 1227.952,
+"end": 1231.352,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Very unlikely: zero to ten percent.",
+"begin": 1231.432,
+"end": 1234.872,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Extremely unlikely: zero to five percent.",
+"begin": 1234.952,
+"end": 1238.792,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Exceptionally unlikely: zero to one percent.",
+"begin": 1238.872,
+"end": 1243.032,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "When a conclusion matters, attach a rough number to it, even privately. Numbers force precision and make it possible to check your calibration later.",
+"begin": 1243.112,
+"end": 1252.312,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Suspend judgment when appropriate. \"I don't know\" and \"the evidence is mixed\" are respectable conclusions. There is no obligation to have an opinion on everything.",
+"begin": 1252.952,
+"end": 1264.072,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Record what would change your mind. This makes your belief testable and keeps you honest.",
+"begin": 1264.472,
+"end": 1270.152,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Distinguish belief from action. Sometimes you must act before the evidence is conclusive. The practical question is then not \"What is true?\" but \"What is the best action given my uncertainty, the costs of each kind of error, and the value of waiting for more information?\"",
+"begin": 1270.552,
+"end": 1288.712,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Framing an argument of your own",
+"begin": 1289.979,
+"end": 1291.979,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Everything in this guide also applies when you are the one making the argument. Here is a method.",
+"begin": 1293.061,
+"end": 1299.141,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Start with the question",
+"begin": 1299.461,
+"end": 1300.661,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "State precisely what question you are answering and what your answer is. Many poor arguments come from vague questions. Not \"What about immigration?\" but \"Would increasing the annual quota of skilled-worker visas by twenty percent raise or lower average wages for existing workers in this sector over five years?\"",
+"begin": 1301.525,
+"end": 1323.205,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Identify which stasis your claim addresses: fact, definition, quality, or procedure. If your claim is practical, \"we should…\", recognize that it depends on claims at the earlier stases.",
+"begin": 1324.005,
+"end": 1338.005,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Build it in standard form",
+"begin": 1338.965,
+"end": 1340.645,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Write your argument out.",
+"begin": 1341.518,
+"end": 1342.958,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise one: premise: often an empirical claim",
+"begin": 1343.518,
+"end": 1347.518,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise two: premise: often a normative principle",
+"begin": 1348.078,
+"end": 1352.078,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise three: premise: connecting the two to the case at hand",
+"begin": 1352.638,
+"end": 1357.038,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Conclusion: conclusion",
+"begin": 1357.598,
+"end": 1359.438,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Then check.",
+"begin": 1360.158,
+"end": 1361.318,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is it valid — or strong? If not, what premise is missing?",
+"begin": 1361.598,
+"end": 1366.238,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is every premise explicit? Are you relying on a hidden assumption that a critic would reject?",
+"begin": 1366.478,
+"end": 1372.318,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Which premise is weakest? That is where your critics will aim, and where you need the most support.",
+"begin": 1372.558,
+"end": 1379.078,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Choose the right kind of argument",
+"begin": 1379.518,
+"end": 1381.438,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Deductive: when you can establish premises that guarantee the conclusion. Rare outside logic, mathematics, and definitions, but powerful.",
+"begin": 1382.322,
+"end": 1392.002,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Inductive: generalizing from evidence. Needs good samples and background knowledge.",
+"begin": 1392.482,
+"end": 1398.442,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Abductive: arguing that your hypothesis best explains the evidence. Needs explicit comparison with rivals.",
+"begin": 1398.722,
+"end": 1406.242,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Analogical: arguing from a similar case. Needs relevant similarities and no relevant differences.",
+"begin": 1406.722,
+"end": 1413.602,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Practical reasoning — means-end: \"We want goal G; action A would achieve G; so we should do A.\" Douglas Walton's critical questions for practical reasoning are a checklist for making your own proposal robust.",
+"begin": 1414.162,
+"end": 1429.442,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Are there other goals that conflict with G?",
+"begin": 1430.002,
+"end": 1433.202,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Are there alternative actions that would achieve G better?",
+"begin": 1433.762,
+"end": 1437.602,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Is A actually possible — feasible?",
+"begin": 1438.082,
+"end": 1442.002,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. What are the side effects, negative consequences, of A?",
+"begin": 1442.162,
+"end": 1446.882,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Is there evidence that A would actually achieve G?",
+"begin": 1447.042,
+"end": 1451.442,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A policy proposal that has answered these five questions is far stronger than one that hasn't.",
+"begin": 1451.522,
+"end": 1457.242,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Anticipate objections",
+"begin": 1457.522,
+"end": 1459.122,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Before presenting your argument, write down the three strongest objections you can think of, and answer them. Better still, show your argument to someone who disagrees and ask them to find its weakest point. A premortem helps: imagine that your argument has been decisively refuted. What was the refutation?",
+"begin": 1460.088,
+"end": 1480.648,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Addressing objections openly has three benefits: it improves the argument, it shows that you understand the other side, building trust, and it deprives critics of easy responses.",
+"begin": 1480.968,
+"end": 1493.128,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Qualify appropriately",
+"begin": 1493.768,
+"end": 1495.448,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "State your conclusion with the degree of confidence your evidence supports, and note the conditions under which it holds — the Toulmin qualifier and rebuttal.",
+"begin": 1496.32,
+"end": 1505.52,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Overclaiming — \"This proves…\", \"It's obvious that…\", \"Everyone knows…\" — invites refutation and damages your credibility when a single counterexample appears.",
+"begin": 1506.16,
+"end": 1517.68,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Underclaiming, \"It might possibly be the case that perhaps…\", makes the argument useless.",
+"begin": 1518.0,
+"end": 1524.68,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Good qualification is specific: \"In cities with good public transport, congestion charges have reduced traffic by roughly a fifth; the effect would probably be smaller here, because fewer drivers have alternatives.\"",
+"begin": 1525.04,
+"end": 1538.64,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Write clearly",
+"begin": 1538.72,
+"end": 1539.68,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "George Orwell's rules from \"Politics and the English Language\" are still good advice.",
+"begin": 1540.545,
+"end": 1545.665,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.",
+"begin": 1546.545,
+"end": 1553.185,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Never use a long word where a short one will do.",
+"begin": 1554.065,
+"end": 1558.065,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. If it is possible to cut a word out, always cut it out.",
+"begin": 1558.945,
+"end": 1563.505,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Never use the passive where you can use the active.",
+"begin": 1564.305,
+"end": 1568.385,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.",
+"begin": 1569.185,
+"end": 1577.505,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Break any of these rules sooner than say anything outright barbarous.",
+"begin": 1578.385,
+"end": 1583.585,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Clarity is an epistemic virtue: vague claims cannot be tested, and they allow motte-and-bailey retreats. Steven Pinker recommends \"classic style\": write as if you are showing the reader something they can see for themselves.",
+"begin": 1584.545,
+"end": 1599.505,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "A template",
+"begin": 1600.465,
+"end": 1601.025,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Question: precise question.",
+"begin": 1601.907,
+"end": 1604.147,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "My answer: claim, with degree of confidence.",
+"begin": 1604.787,
+"end": 1608.227,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Main reasons: one… two… three….",
+"begin": 1608.787,
+"end": 1613.027,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Key evidence: sources, studies, data, and why they are reliable.",
+"begin": 1613.107,
+"end": 1618.227,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Hidden assumptions: the premises I'm relying on that some would dispute.",
+"begin": 1618.787,
+"end": 1623.467,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Strongest objections and my replies: ….",
+"begin": 1623.747,
+"end": 1626.84,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "What would change my mind: ….",
+"begin": 1626.894,
+"end": 1628.974,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Limits: this conclusion applies when… and may not apply when….",
+"begin": 1629.16,
+"end": 1633.907,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Burden of proof",
+"begin": 1635.161,
+"end": 1636.361,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The burden of proof is the obligation to support a claim. Who bears it matters, because in the absence of a decisive argument, the party with the burden loses. Disputes about who bears it are common, and often decide debates unfairly.",
+"begin": 1637.433,
+"end": 1653.033,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "General principles.",
+"begin": 1653.513,
+"end": 1654.713,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Whoever makes a claim bears the burden of supporting it. This is Hitchens's razor, below, and it is the default in most rational discussion. \"Prove me wrong\" is not an argument.",
+"begin": 1655.353,
+"end": 1668.513,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Extraordinary claims bear a heavier burden than ordinary ones, because their prior probability is lower.",
+"begin": 1668.953,
+"end": 1675.673,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Context sets presumptions. In criminal law, the prosecution bears the burden, and the defendant is presumed innocent. In medicine, a new treatment must show it is safe and effective before approval. In science, a new hypothesis must show it does better than the established one. These presumptions reflect judgments about which errors are worse.",
+"begin": 1676.553,
+"end": 1699.673,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Burden of proof is not the same as standard of proof. The burden says who must provide evidence; the standard says how much is needed — beyond reasonable doubt, balance of probabilities, and so on.",
+"begin": 1700.553,
+"end": 1714.753,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Burdens can shift. Once one party presents evidence that meets a reasonable standard, the burden shifts to the other to rebut it.",
+"begin": 1715.273,
+"end": 1724.153,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Russell's teapot illustrates the default: an unfalsifiable claim that cannot be disproved does not thereby earn belief.",
+"begin": 1724.633,
+"end": 1732.793,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Burden of proof games. Watch for.",
+"begin": 1733.273,
+"end": 1735.913,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Shifting the burden: \"You can't prove it's not true, so you should accept it.\"",
+"begin": 1736.633,
+"end": 1740.953,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Burden tennis: both parties insisting the other must prove their case, with no progress.",
+"begin": 1741.753,
+"end": 1747.953,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Asymmetric burdens: demanding overwhelming proof for claims one dislikes, and none for claims one likes.",
+"begin": 1748.393,
+"end": 1755.753,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "In practical decisions, it is often better to set burdens aside and ask directly: given all the evidence we have, which option has the best expected outcome?",
+"begin": 1756.233,
+"end": 1766.233,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Philosophical razors and heuristics",
+"begin": 1767.497,
+"end": 1770.137,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A razor is a rule of thumb that lets you \"shave off\" unlikely explanations or unnecessary claims. None is infallible. Each is a heuristic, not a law.",
+"begin": 1771.233,
+"end": 1782.633,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ockham's razor. Statement: Do not multiply entities beyond necessity. Associated with William of Ockham, around twelve eighty-seven to thirteen forty-seven; the famous wording is later. Use: Prefer the simpler explanation, other things being equal. Caution: \"Other things being equal\" is crucial. Simplicity is a tiebreaker, not a trump card. Einstein's principle, as often paraphrased: make things as simple as possible, but no simpler.",
+"begin": 1782.913,
+"end": 1813.593,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Hume's maxim. Statement: \"A wise man proportions his belief to the evidence.\" \"No testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact.\" Use: Weigh the probability that the testimony is mistaken against the improbability of the event. Caution: Requires honest estimates of both.",
+"begin": 1813.873,
+"end": 1839.073,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The Sagan standard. Statement: \"Extraordinary claims require extraordinary evidence.\" Popularized by Carl Sagan in the television series Cosmos, nineteen eighty; similar formulations appear in Marcello Truzzi, Laplace, and Hume. Use: Low prior probability requires a large likelihood ratio. Caution: \"Extraordinary\" must mean improbable given background knowledge, not merely unfamiliar or unwelcome.",
+"begin": 1839.313,
+"end": 1868.553,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Hitchens's razor. Statement: \"What can be asserted without evidence can also be dismissed without evidence.\" Use: The burden of proof lies with the claimant. Caution: Dismissing an unsupported claim is not the same as proving it false.",
+"begin": 1868.833,
+"end": 1885.273,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Russell's teapot. Statement: An unfalsifiable claim doesn't deserve belief just because it can't be disproved. Use: Resisting burden-shifting. Caution: See above.",
+"begin": 1885.553,
+"end": 1898.113,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Hanlon's razor. Statement: \"Never attribute to malice that which is adequately explained by stupidity.\" Published by Robert J. Hanlon in nineteen eighty; similar sayings are much older. Use: A check against conspiratorial thinking: incompetence and accident are common. Caution: Malice does exist; the razor is about which explanation to try first.",
+"begin": 1898.353,
+"end": 1923.393,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Chesterton's fence. Statement: Don't remove a fence until you know why it was put up. Use: Before changing a rule or institution, understand its purpose. Caution: Some fences really are pointless; the principle requires inquiry, not preservation.",
+"begin": 1923.633,
+"end": 1941.553,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Popper's falsifiability. Statement: A claim that no possible observation could contradict says nothing about the world. Use: Ask \"What would show this to be false?\" Caution: Not a complete criterion of meaning or science.",
+"begin": 1942.033,
+"end": 1958.273,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Alder's razor — \"Newton's flaming laser sword\" Statement: \"What cannot be settled by experiment or observation is not worth debating.\" Use: Focus debate on questions evidence can settle. Caution: Too strong as a general rule: ethics and mathematics are worth debating.",
+"begin": 1958.833,
+"end": 1979.193,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Brandolini's law. Statement: The effort to refute nonsense is an order of magnitude greater than the effort to produce it. Use: Choose your battles; rely on trusted sources. Caution: Not a reason to ignore all misinformation.",
+"begin": 1979.473,
+"end": 1996.473,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Cromwell's rule. Statement: Never assign probability zero or one to an empirical claim. Use: Stay open to evidence. Caution: Very small probabilities are still small.",
+"begin": 1996.753,
+"end": 2010.673,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Hume's guillotine. Statement: You can't derive an \"ought\" from an \"is\" alone. Use: Find the normative premise. Caution: Contested in its strongest form.",
+"begin": 2010.913,
+"end": 2023.433,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Sturgeon's law. Statement: \"Ninety percent of everything is crud.\" Use: Judge a field by its best work, not its worst — and vice versa. Caution: Also applies to your own side.",
+"begin": 2023.713,
+"end": 2037.713,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The baloney detection kit",
+"begin": 2038.831,
+"end": 2040.511,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "In The Demon-Haunted World, chapter twelve, \"The Fine Art of Baloney Detection,\" the astronomer Carl Sagan proposed a set of \"tools for skeptical thinking.\" Paraphrased.",
+"begin": 2041.6,
+"end": 2053.24,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. Wherever possible there must be independent confirmation of the \"facts.\"",
+"begin": 2053.52,
+"end": 2058.8,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Encourage substantive debate on the evidence by knowledgeable proponents of all points of view.",
+"begin": 2059.36,
+"end": 2065.44,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. Arguments from authority carry little weight: \"authorities\" have made mistakes in the past. — Sagan meant that authority is not a substitute for evidence.",
+"begin": 2066.0,
+"end": 2076.24,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Spin more than one hypothesis. Think of all the different ways something could be explained, then think of tests by which you might systematically disprove each.",
+"begin": 2076.8,
+"end": 2087.56,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. Try not to get overly attached to a hypothesis just because it's yours.",
+"begin": 2087.84,
+"end": 2093.2,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Quantify. If whatever it is you're explaining has some measure attached to it, you'll be better able to discriminate among competing hypotheses.",
+"begin": 2093.52,
+"end": 2102.8,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. If there's a chain of argument, every link in the chain must work, including the premise, not just most of them.",
+"begin": 2103.12,
+"end": 2110.68,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Occam's razor. When faced with two hypotheses that explain the data equally well, choose the simpler.",
+"begin": 2110.96,
+"end": 2118.4,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Nine. Always ask whether the hypothesis can be, at least in principle, falsified.",
+"begin": 2118.72,
+"end": 2124.64,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Sagan added a list of common fallacies to avoid, most of which appear in Chapter fifteen.",
+"begin": 2124.96,
+"end": 2130.8,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "The ethics of discussion",
+"begin": 2132.062,
+"end": 2133.582,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The rules of critical discussion",
+"begin": 2134.674,
+"end": 2136.674,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The pragma-dialectical theory of argumentation — Frans van Eemeren and Rob Grootendorst, A Systematic Theory of Argumentation, two thousand four — proposes ten rules for a critical discussion, a discussion aimed at resolving a difference of opinion on the merits. Violating any of them is a fallacy in their sense. Summarized.",
+"begin": 2137.548,
+"end": 2159.948,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Freedom rule: Parties must not prevent each other from advancing standpoints or casting doubt on them.",
+"begin": 2160.668,
+"end": 2167.548,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Burden-of-proof rule: A party who advances a standpoint must defend it if asked to.",
+"begin": 2168.428,
+"end": 2175.228,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Standpoint rule: An attack on a standpoint must address the standpoint actually advanced by the other party — no straw men.",
+"begin": 2175.708,
+"end": 2184.788,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Relevance rule: A party may defend a standpoint only with argumentation relevant to that standpoint.",
+"begin": 2185.308,
+"end": 2192.868,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Unexpressed premise rule: A party may not falsely attribute an unexpressed premise to the other party, nor disown a premise that they themselves left implicit.",
+"begin": 2193.388,
+"end": 2204.548,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Starting point rule: A party may not falsely present a premise as an accepted starting point, nor deny a premise that is an accepted starting point.",
+"begin": 2205.068,
+"end": 2215.588,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. Argument scheme rule: A standpoint is not conclusively defended unless the defense uses an appropriate argument scheme, correctly applied.",
+"begin": 2216.108,
+"end": 2225.548,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eight. Validity rule: The reasoning must be logically valid, or capable of being made valid by making unexpressed premises explicit.",
+"begin": 2226.428,
+"end": 2235.148,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nine. Closure rule: A failed defense of a standpoint must result in the protagonist retracting it; a successful defense must result in the antagonist retracting their doubt.",
+"begin": 2236.108,
+"end": 2247.508,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Ten. Usage rule: Parties must not use formulations that are unclear or confusingly ambiguous, and must interpret each other's formulations as carefully and accurately as possible.",
+"begin": 2248.028,
+"end": 2260.148,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Rule nine is the hardest in practice. It requires both parties to be willing to change their minds when the argument goes against them.",
+"begin": 2260.668,
+"end": 2268.788,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "The hierarchy of disagreement",
+"begin": 2269.308,
+"end": 2271.148,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "The essayist Paul Graham proposed a hierarchy of forms of disagreement, from worst to best.",
+"begin": 2272.026,
+"end": 2278.186,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H zero: Name-calling. For example: \"You're an idiot.\"",
+"begin": 2278.826,
+"end": 2283.906,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H one: Ad hominem. For example: \"Of course you'd say that; you're a lawyer.\"",
+"begin": 2284.186,
+"end": 2290.026,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H two: Responding to tone. For example: \"I can't believe how arrogant you sound.\"",
+"begin": 2290.506,
+"end": 2297.306,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H three: Contradiction. For example: \"No, that's wrong.\" — with no reasons.",
+"begin": 2297.546,
+"end": 2304.266,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H four: Counterargument. For example: Contradiction plus reasoning and evidence, but perhaps aimed at something slightly different from what was said.",
+"begin": 2304.506,
+"end": 2314.426,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H five: Refutation. For example: Quoting what the other person actually said and showing why it's mistaken.",
+"begin": 2314.666,
+"end": 2322.746,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "D H six: Refuting the central point. For example: Refuting the main claim, not a minor side point.",
+"begin": 2322.986,
+"end": 2330.906,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Aim for D H five and D H six. Most online disagreement happens at D H zero-D H three.",
+"begin": 2331.146,
+"end": 2338.186,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Know what kind of dialogue you are in",
+"begin": 2339.146,
+"end": 2341.146,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Douglas Walton and Erik Krabbe distinguished types of dialogue with different goals.",
+"begin": 2342.008,
+"end": 2347.248,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Persuasion — critical discussion: Resolve a difference of opinion.",
+"begin": 2347.528,
+"end": 2351.768,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Inquiry: Prove or disprove a hypothesis jointly.",
+"begin": 2352.168,
+"end": 2356.088,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Information-seeking: One party obtains information from another.",
+"begin": 2356.488,
+"end": 2360.728,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Deliberation: Decide what to do.",
+"begin": 2360.968,
+"end": 2363.688,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Negotiation: Reach a deal both parties accept.",
+"begin": 2363.928,
+"end": 2367.368,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eristic — quarrel: Defeat the other party; vent hostility.",
+"begin": 2367.768,
+"end": 2372.488,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Many fallacies involve an illicit shift from one type to another, for example from a persuasion dialogue about facts to a negotiation, \"let's split the difference\" on a factual question, or from inquiry to quarrel. When a discussion goes wrong, ask: what are we actually trying to do here?",
+"begin": 2372.968,
+"end": 2392.008,
+"voice": "second"
+},
+{
+"kind": "subsection",
+"text": "Practical conduct",
+"begin": 2392.248,
+"end": 2393.368,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Listen first. Ask questions before stating your view.",
+"begin": 2394.253,
+"end": 2398.493,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Separate the person from the position. Criticize ideas, not people.",
+"begin": 2398.813,
+"end": 2404.013,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Concede what's right. It's honest, it builds trust, and it narrows the disagreement.",
+"begin": 2404.253,
+"end": 2409.853,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Say \"I don't know\" and \"I was wrong\" when they are true. Doing so publicly is one of the most powerful signals of good faith.",
+"begin": 2410.333,
+"end": 2418.893,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Don't try to win. If you \"win\" an argument by making someone feel stupid, you have usually lost their willingness to consider your view.",
+"begin": 2419.373,
+"end": 2428.133,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Know when to stop. Some conversations are not persuasion dialogues. If the other person is arguing in bad faith, or the setting rewards performance over understanding, it's reasonable to disengage.",
+"begin": 2428.413,
+"end": 2441.093,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Change minds slowly. People rarely change their views during a single argument. They change them later, after reflection, if the argument was good and they didn't feel humiliated. Plant seeds.",
+"begin": 2441.373,
+"end": 2454.093,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "Worked case studies",
+"begin": 2455.353,
+"end": 2456.713,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Case study one: A health claim",
+"begin": 2457.809,
+"end": 2460.289,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Your colleague says: \"You should try ColdAway. It's a natural herbal supplement. I took it at the first sign of a cold last month, and the cold was gone in three days. Usually my colds last a week. And it's recommended by a doctor on a popular podcast.\"",
+"begin": 2461.153,
+"end": 2476.753,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step one: Understand. The claim is causal and general: ColdAway shortens colds — and implicitly, it will shorten yours. The supporting considerations are a personal anecdote, the product's naturalness, and an endorsement by a doctor.",
+"begin": 2476.913,
+"end": 2493.513,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step two: Classify. A factual causal claim, which can in principle be settled by evidence.",
+"begin": 2493.793,
+"end": 2500.953,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step three: Map.",
+"begin": 2501.233,
+"end": 2502.913,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise one: I took ColdAway and my cold lasted three days.",
+"begin": 2503.313,
+"end": 2507.833,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise two: My colds usually last a week.",
+"begin": 2508.033,
+"end": 2511.353,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise three: Hidden premise: so ColdAway caused my cold to be shorter.",
+"begin": 2511.553,
+"end": 2516.793,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise four: Hidden premise: what worked for me will work for others.",
+"begin": 2516.993,
+"end": 2522.033,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise five: It's natural. Hidden: natural products are safe or effective.",
+"begin": 2522.153,
+"end": 2528.113,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise six: A doctor recommends it. Hidden: this doctor's endorsement is reliable evidence.",
+"begin": 2528.233,
+"end": 2535.073,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Conclusion: ColdAway shortens colds, and you should take it.",
+"begin": 2535.153,
+"end": 2539.473,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step four: Evaluate the reasoning.",
+"begin": 2539.633,
+"end": 2542.433,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise three is post hoc reasoning from a single case. Cold duration varies naturally, and she may have had a milder virus.",
+"begin": 2542.553,
+"end": 2550.513,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise four is a hasty generalization from one case.",
+"begin": 2550.633,
+"end": 2554.433,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise five is an appeal to nature.",
+"begin": 2554.513,
+"end": 2557.153,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise six may be an illegitimate appeal to authority: is the doctor an expert in this area, and does their view reflect the evidence? Are they paid to promote the product — a podcast sponsor?",
+"begin": 2557.273,
+"end": 2568.593,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step five: Evaluate the evidence.",
+"begin": 2568.913,
+"end": 2571.953,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The likelihood ratio of the anecdote is only slightly above one. Colds last anywhere from a few days to two weeks; a three-day cold is not surprising without any treatment. Also consider selection: she is telling you about the time it \"worked,\" not about colds where she took it and nothing happened — survivorship. And there may be a placebo effect on how she perceived her symptoms.",
+"begin": 2572.033,
+"end": 2595.953,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What better evidence exists? Search for systematic reviews — for example, from the Cochrane Library — of the supplement's main ingredients. For many herbal cold remedies, the evidence is weak, mixed, or of low quality. Check for regulatory warnings about interactions or side effects.",
+"begin": 2596.073,
+"end": 2614.193,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Lateral reading on the doctor: What is their specialty? Do they have financial ties to the product?",
+"begin": 2614.233,
+"end": 2620.193,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step six: Find the crux. \"Would you still believe it works if good-quality randomized trials found no effect?\" If she says yes, her belief isn't based on the kind of evidence that could settle the question.",
+"begin": 2620.273,
+"end": 2633.273,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step seven: Conclude. The anecdote is very weak evidence. The claim \"ColdAway shortens colds\" is unsupported unless controlled trials show otherwise. Practical judgment: if the product is cheap and safe, taking it is a low-stakes personal choice, but it would be a mistake to believe it works on this basis, or to recommend it to others as effective.",
+"begin": 2633.633,
+"end": 2657.633,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A charitable, non-confrontational response: \"I'm glad you felt better quickly! Colds are so variable that it's hard to tell from one time. Have there been any proper trials on it? I'd be curious what they found.\"",
+"begin": 2657.953,
+"end": 2670.873,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Case study two: A policy debate",
+"begin": 2671.313,
+"end": 2673.713,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Your city is debating congestion charging: a daily fee for driving into the city center during peak hours.",
+"begin": 2674.495,
+"end": 2681.215,
+"voice": "main"
+},
+{
+"kind": "voice1",
+"text": "\"Congestion charging works. London and Stockholm both cut traffic substantially. Our city center is gridlocked and polluted. The revenue can fund better buses. We should do it.\"",
+"begin": 2681.652,
+"end": 2694.612,
+"voice": "third"
+},
+{
+"kind": "voice2",
+"text": "\"This is a tax on working people. The rich will pay and keep driving; nurses and cleaners who commute from the suburbs will be priced out. And local shops will lose customers. It's an attack on freedom.\"",
+"begin": 2695.053,
+"end": 2708.573,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Step one: Understand. Steelman each side.",
+"begin": 2709.002,
+"end": 2713.202,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "A: Pricing road space during peak hours reduces congestion and pollution; evidence from other cities supports this; revenue can improve alternatives.",
+"begin": 2713.482,
+"end": 2723.322,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "B: The charge would impose a disproportionate burden on lower-income people who lack alternatives to driving; it may harm local businesses; and it restricts people's freedom to use public roads.",
+"begin": 2723.802,
+"end": 2736.442,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step two: Classify, using stasis theory.",
+"begin": 2736.762,
+"end": 2740.362,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Fact or prediction. Questions in this debate: Would traffic fall here, and by how much? Would air quality improve? Would shop revenues fall? How many low-income commuters drive into the center, and what alternatives do they have? Type: Empirical, predictive.",
+"begin": 2740.842,
+"end": 2758.922,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Definition. Questions in this debate: Is it a \"tax\" or a \"price\"? Is it \"regressive\"? Is it a restriction of \"freedom\"? Type: Conceptual.",
+"begin": 2759.402,
+"end": 2770.282,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Quality. Questions in this debate: How should we weigh congestion and pollution against costs to drivers? What is fair? Type: Normative, weighting.",
+"begin": 2770.522,
+"end": 2781.082,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Procedure. Questions in this debate: Should revenues be ring-fenced for transit? Should low-income workers get exemptions? Should it be decided by referendum? Trialed first? Type: Practical, procedural.",
+"begin": 2781.482,
+"end": 2795.562,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step three: Map the cruxes. Much of the disagreement concerns predictions and distributional effects, which are empirical, and weights, which are normative. The \"tax versus price\" and \"freedom\" disputes are partly verbal and partly about values.",
+"begin": 2796.122,
+"end": 2812.762,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step five: Evidence.",
+"begin": 2813.322,
+"end": 2815.402,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Traffic. Evidence from other cities is relevant but must be assessed for external validity. London's scheme and Stockholm's — trialed in two thousand six, then made permanent after a referendum — both reduced traffic entering the charging zones by roughly a fifth, according to official evaluations, though effects on congestion have changed over time as road space was reallocated. Stockholm's experience is also informative on public opinion: support rose substantially after residents experienced the trial. Are the conditions here similar — public transport alternatives, city layout?",
+"begin": 2815.642,
+"end": 2852.242,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Distribution. Who actually drives into the center at peak times? In many cities, peak-hour drivers into the center have higher average incomes than public transport users, which complicates the claim that the charge is regressive; in others, shift workers without transit options are affected. This is checkable with local travel survey data.",
+"begin": 2852.522,
+"end": 2873.802,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Business effects. What happened to retail in the centers of cities that introduced charges? Evidence is mixed and hard to disentangle from other trends.",
+"begin": 2874.362,
+"end": 2883.882,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step six: Double crux. Suppose B says: \"If there were affordable, reliable alternatives for lower-income commuters, and exemptions for essential shift workers, my main objection would go away.\" And A says: \"If the evidence showed traffic here wouldn't fall meaningfully, I'd drop the proposal.\" The cruxes are now concrete: What alternatives exist, and what would the traffic impact be? A time-limited trial with evaluation, as in Stockholm, is a way to gather evidence on exactly these points.",
+"begin": 2884.202,
+"end": 2917.882,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step seven: Conclude. A reasonable conclusion might be: \"The evidence from comparable cities suggests traffic would fall substantially. The distributional effects depend on local facts we should measure. A well-designed trial, with exemptions or discounts for low-income essential workers and revenue committed to transit, would address most of B's concerns and test A's claims.\" Notice that this conclusion was reached by decomposing the disagreement, not by declaring a winner.",
+"begin": 2918.202,
+"end": 2949.562,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Case study three: A statistical headline",
+"begin": 2950.042,
+"end": 2953.002,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Headline: \"Coffee drinkers live longer, major study finds.\"",
+"begin": 2953.796,
+"end": 2958.356,
+"voice": "main"
+},
+{
+"kind": "cue",
+"text": "Article excerpt.",
+"begin": 2958.596,
+"end": 2959.796,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "hypothetical: \"In a study of four hundred thousand adults followed for ten years, those who drank two to three cups of coffee a day were twelve percent less likely to die during the study period than non-drinkers, after adjusting for age, smoking, and other factors.\"",
+"begin": 2960.457,
+"end": 2977.337,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Work through the twelve questions from Chapter one.",
+"begin": 2977.817,
+"end": 2980.537,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "One. What exactly is claimed? The headline suggests causation — \"coffee makes you live longer\". The study reports an association: coffee drinkers had lower mortality. These are different claims.",
+"begin": 2981.257,
+"end": 2995.817,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Two. Who is telling me? A journalist, likely working from a press release. Check the original paper's abstract and conclusions, which are usually more cautious.",
+"begin": 2996.217,
+"end": 3006.457,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Three. What kind of study? An observational cohort study: people chose whether to drink coffee. Not a randomized trial — it would be hard to randomize people to drink coffee or not for ten years.",
+"begin": 3007.337,
+"end": 3020.897,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Four. Could something else explain the pattern?",
+"begin": 3021.337,
+"end": 3024.297,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Confounding: coffee drinkers might differ in income, employment, social life, or health in ways not fully captured by the adjustments. \"Adjusting for other factors\" can only remove confounding by factors that were measured, and measured accurately.",
+"begin": 3024.537,
+"end": 3040.097,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Reverse causation: people who become seriously ill often stop drinking coffee, the \"sick quitter\" effect, which would make non-drinkers look less healthy.",
+"begin": 3040.457,
+"end": 3050.697,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Five. How big is the effect? \"twelve percent less likely to die\" is a relative reduction. If the ten-year risk of death in this population was about five percent, a twelve percent relative reduction means about four point four percent instead of five percent: roughly six fewer deaths per one thousand people over ten years. That's real if causal, but modest.",
+"begin": 3051.177,
+"end": 3075.417,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Six. Does it fit other evidence? Many large cohort studies in different countries have found similar associations, and meta-analyses of them agree. That consistency strengthens the finding, though consistent confounding is possible. There is also a plausible dose-response relationship in some studies, with benefits leveling off at higher intake.",
+"begin": 3075.657,
+"end": 3097.577,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Seven. What do experts say? Reviews generally conclude that moderate coffee drinking is not harmful for most adults and may be associated with modest benefits, while noting that causation has not been established. Pregnant women and some other groups are usually advised to limit caffeine.",
+"begin": 3098.457,
+"end": 3117.017,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eight. Has it been replicated? Yes, in the sense of consistent associations across cohorts. Methods such as Mendelian randomization, which use genetic variants that affect coffee consumption as natural experiments, have been applied, with mixed results.",
+"begin": 3117.497,
+"end": 3134.057,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Nine. Do I want it to be true? If you love coffee, be aware of motivated reasoning.",
+"begin": 3134.617,
+"end": 3141.097,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Ten. Am I seeing only the headline-worthy results? Studies finding \"coffee linked to longer life\" make headlines; studies finding no association often don't — publication and media bias.",
+"begin": 3141.577,
+"end": 3155.457,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Eleven. How confident should I be? Fairly confident that moderate coffee drinking is not harmful for most people; much less confident that it causes longer life.",
+"begin": 3155.737,
+"end": 3166.737,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Twelve. Does it matter for what I do? Probably not much. It is a reason not to worry about moderate coffee drinking, not a reason to start.",
+"begin": 3167.017,
+"end": 3176.697,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "A good one-sentence summary: \"Large observational studies consistently find that moderate coffee drinkers live slightly longer, which suggests coffee isn't harmful for most people, but they can't show that coffee is the cause.\"",
+"begin": 3177.017,
+"end": 3191.337,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Case study four: A philosophical argument",
+"begin": 3191.977,
+"end": 3195.177,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Nick Bostrom's simulation argument, introduced in Chapter eight, is a good exercise in reconstructing and evaluating a sophisticated argument.",
+"begin": 3195.977,
+"end": 3204.697,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step one: Understand. Bostrom does not argue that we are in a simulation. He argues that at least one of three propositions is true.",
+"begin": 3205.177,
+"end": 3215.177,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step three: Map. A reconstruction.",
+"begin": 3215.497,
+"end": 3219.097,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise one: Substrate independence: conscious experience can arise from a computational process running on any suitable hardware, not only biological brains.",
+"begin": 3219.177,
+"end": 3230.137,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise two: Computational feasibility: a technologically mature, \"posthuman\", civilization would have enough computing power to run many simulations of entire human histories, with conscious simulated people.",
+"begin": 3230.377,
+"end": 3244.137,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise three: If a significant fraction of civilizations at our stage reach maturity, and a significant fraction of mature civilizations run many such \"ancestor simulations,\" then the number of simulated minds with experiences like ours vastly exceeds the number of non-simulated minds.",
+"begin": 3244.617,
+"end": 3262.537,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Premise four: The indifference principle: if you know that a fraction x of all observers with experiences like yours are simulated, and you have no other evidence about which kind you are, your credence that you are simulated should be about x.",
+"begin": 3263.017,
+"end": 3278.097,
+"voice": "main"
+},
+{
+"kind": "aside",
+"text": "Conclusion: At least one of the following is true: first, almost no civilizations reach maturity; second, almost no mature civilizations run ancestor simulations; third, we are almost certainly simulated.",
+"begin": 3278.377,
+"end": 3294.377,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step four: Evaluate. The argument is valid, given the premises — it's essentially a probabilistic disjunction. So assess the premises.",
+"begin": 3294.697,
+"end": 3304.617,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise one is a contested thesis in the philosophy of mind. If consciousness requires biology — as some argue, for example John Searle — simulated people would not be conscious, and the argument fails.",
+"begin": 3305.017,
+"end": 3317.897,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise two is an empirical prediction about future technology. Some argue that simulating a whole world in detail may be infeasible; Bostrom replies that a simulation only needs to render what observers perceive.",
+"begin": 3318.297,
+"end": 3332.137,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Premise four raises the reference class problem: what counts as an observer \"with experiences like yours\"? And it assumes you have no evidence distinguishing the cases.",
+"begin": 3332.257,
+"end": 3342.937,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Alternative B may be more plausible than it first appears: mature civilizations might have ethical or practical reasons not to run such simulations.",
+"begin": 3343.017,
+"end": 3352.857,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step six: Find the cruxes. Whether substrate independence is true; how to assign credences among the first, the second, and the third.",
+"begin": 3353.017,
+"end": 3362.857,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step seven: Conclude. The argument is a clever and valid probabilistic structure, but its conclusion, the disjunction, is much weaker than the popular summary \"we're probably in a simulation.\" Its force depends on contested premises in philosophy of mind and on speculative predictions. A reasonable response is to accept that the disjunction is interesting, while assigning substantial credence to the first or the second, or doubting premise one. Note also David Chalmers's point that even if C were true, most of our beliefs about our world might still be true. This case shows how a valid argument with a startling conclusion can be defused by examining its premises, not by rejecting its logic.",
+"begin": 3362.937,
+"end": 3409.657,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Case study five: An online dispute",
+"begin": 3410.137,
+"end": 3413.097,
+"voice": "main"
+},
+{
+"kind": "label",
+"text": "Post.",
+"begin": 3413.891,
+"end": 3414.611,
+"voice": "main"
+},
+{
+"kind": "voice1",
+"text": "\"Social media is destroying teenagers' mental health. The data are clear.\"",
+"begin": 3415.275,
+"end": 3421.195,
+"voice": "third"
+},
+{
+"kind": "label",
+"text": "Reply.",
+"begin": 3421.623,
+"end": 3422.423,
+"voice": "main"
+},
+{
+"kind": "voice2",
+"text": "\"There's no real evidence for that. It's just a moral panic, like the panics about comic books, TV, and video games.\"",
+"begin": 3423.086,
+"end": 3430.686,
+"voice": "second"
+},
+{
+"kind": "label",
+"text": "Reply to reply.",
+"begin": 3431.105,
+"end": 3432.705,
+"voice": "main"
+},
+{
+"kind": "voice1",
+"text": "\"So you're saying it's fine for kids to be on their phones eight hours a day?\"",
+"begin": 3433.378,
+"end": 3438.098,
+"voice": "third"
+},
+{
+"kind": "label",
+"text": "Reply.",
+"begin": 3438.446,
+"end": 3439.246,
+"voice": "main"
+},
+{
+"kind": "voice2",
+"text": "\"I never said that. You people just want to ban everything.\"",
+"begin": 3439.909,
+"end": 3443.749,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Step one: Understand, and diagnose the conversation.",
+"begin": 3444.167,
+"end": 3448.247,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The third message is a straw man: the second never said heavy phone use was fine. The fourth replies with a generalization about \"you people\", a form of ad hominem, and a straw man of its own.",
+"begin": 3448.647,
+"end": 3461.607,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "The conversation has shifted from a persuasion dialogue into an eristic one.",
+"begin": 3461.687,
+"end": 3466.647,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step two: Classify the original disagreement.",
+"begin": 3466.767,
+"end": 3470.327,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Conceptual: what does \"destroying\" mean? What counts as \"mental health\" — diagnosed disorders, self-reported anxiety, well-being? Which teenagers, and which uses of social media?",
+"begin": 3470.407,
+"end": 3483.287,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Empirical and causal: is there an association between social media use and poor mental health in teenagers? How large? Is it causal?",
+"begin": 3483.527,
+"end": 3492.727,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Analogical: is the comparison with past moral panics apt?",
+"begin": 3492.967,
+"end": 3497.047,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Watch for motte and bailey on both sides.",
+"begin": 3497.527,
+"end": 3500.327,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Bailey: \"Social media is the cause of a teen mental health crisis.\" Motte: \"Heavy social media use may harm some teenagers.\"",
+"begin": 3500.567,
+"end": 3509.367,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Bailey: \"There's no evidence of any harm.\" Motte: \"The evidence doesn't show large average effects.\"",
+"begin": 3509.847,
+"end": 3516.807,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step five: What does the evidence actually say? As of the mid-twenty twenties, this is an active scientific debate, and the summary below describes positions rather than settling them.",
+"begin": 3517.367,
+"end": 3529.607,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Rates of reported anxiety and depression among teenagers, especially girls, rose in several countries in the twenty tens. Some researchers, notably Jonathan Haidt and Jean Twenge, argue that the spread of smartphones and social media was a major cause.",
+"begin": 3529.767,
+"end": 3545.847,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Other researchers have found that, averaged across the population, associations between digital technology use and adolescent well-being in large datasets are small. Amy Orben and Andrew Przybylski reported that the association was comparable in size to that of wearing glasses or eating potatoes. Critics of Haidt's thesis, such as the psychologist Candice Odgers, argue that the evidence for large causal effects is weak and that other causes are neglected.",
+"begin": 3545.967,
+"end": 3574.607,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Some quasi-experimental studies suggest causal effects. For instance, Luca Braghieri, Ro'ee Levy, and Alexey Makarin used the staggered rollout of Facebook across US colleges in the mid-two thousands and found that its arrival was associated with worse student mental health.",
+"begin": 3574.887,
+"end": 3592.647,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Effects likely vary by individual, type of use, platform, and amount. Average effects can be small while some groups are substantially affected.",
+"begin": 3593.047,
+"end": 3602.807,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The moral panic analogy is relevant — past panics about new media were largely overblown, which is a reasonable base-rate consideration — but not decisive: the analogy may fail if social media differs in relevant ways — constant availability, social comparison, algorithmic engagement.",
+"begin": 3602.887,
+"end": 3622.407,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step six: Find the cruxes. How large is the causal effect of social media on teen mental health, for whom, and for which kinds of use? And what level of evidence should justify policy action — for example, age limits or school phone bans — given the costs of acting and of not acting? The latter is partly a question about inductive risk and values.",
+"begin": 3622.887,
+"end": 3646.567,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "Step seven: Conclude. \"The data are clear\", first post, overstates the case; \"there's no real evidence\", second, also overstates it. A defensible summary: \"There is a genuine scientific debate. Average associations are small in many studies, some quasi-experimental evidence suggests real harms, and effects probably vary a lot. Reasonable people disagree about how much evidence is needed before restricting teenagers' use.\"",
+"begin": 3647.447,
+"end": 3678.327,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "How to re-enter the conversation productively: \"It seems like we might agree that very heavy use isn't great for some kids, and disagree about how big the average effect is and what to do about it. What evidence would change your mind about the size of the effect?\"",
+"begin": 3678.807,
+"end": 3694.087,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Checklists",
+"begin": 3695.282,
+"end": 3696.082,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Before you believe a claim",
+"begin": 3697.162,
+"end": 3698.922,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What exactly is being claimed? Restate it.",
+"begin": 3699.801,
+"end": 3703.361,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Who is the source, and how would they know?",
+"begin": 3703.641,
+"end": 3706.281,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What's the evidence? Is it anecdote, observational data, or controlled experiment?",
+"begin": 3706.521,
+"end": 3712.201,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "How big is the effect, in absolute terms?",
+"begin": 3712.441,
+"end": 3715.521,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What's the base rate? Is the claim extraordinary?",
+"begin": 3715.721,
+"end": 3719.081,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What alternative explanations exist?",
+"begin": 3719.321,
+"end": 3721.801,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Do independent sources confirm it?",
+"begin": 3722.041,
+"end": 3724.201,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Do I want it to be true — or false?",
+"begin": 3724.441,
+"end": 3727.241,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What would change my mind?",
+"begin": 3727.481,
+"end": 3728.841,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Before you share something",
+"begin": 3729.401,
+"end": 3730.761,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Have I read beyond the headline?",
+"begin": 3731.644,
+"end": 3733.684,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Have I checked the source laterally?",
+"begin": 3733.884,
+"end": 3736.044,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Have I traced it to the original context?",
+"begin": 3736.124,
+"end": 3738.844,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is it likely to be true, or does it just feel satisfying?",
+"begin": 3738.924,
+"end": 3743.044,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Would I be embarrassed if it turned out to be false?",
+"begin": 3743.244,
+"end": 3746.004,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "Before you argue",
+"begin": 3746.204,
+"end": 3747.324,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Can I state the other side's view in a way they'd accept?",
+"begin": 3748.206,
+"end": 3751.126,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What kind of disagreement is this — fact, concept, value, prediction, policy?",
+"begin": 3751.166,
+"end": 3758.006,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What do we agree on?",
+"begin": 3758.046,
+"end": 3759.486,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What's my strongest argument, and what's its weakest premise?",
+"begin": 3759.566,
+"end": 3763.726,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What would change my mind?",
+"begin": 3763.806,
+"end": 3765.406,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "What kind of dialogue is this, and is it worth having now?",
+"begin": 3765.406,
+"end": 3769.806,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "When evaluating a study",
+"begin": 3770.286,
+"end": 3771.726,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Study design — RCT, cohort, case-control, cross-sectional, model?",
+"begin": 3772.604,
+"end": 3778.764,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Sample size and selection?",
+"begin": 3779.244,
+"end": 3780.764,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Comparison group?",
+"begin": 3781.084,
+"end": 3782.204,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Effect size and confidence interval?",
+"begin": 3782.364,
+"end": 3784.564,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Absolute versus relative risk?",
+"begin": 3784.764,
+"end": 3786.844,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Pre-registered? Replicated? Consistent with other studies?",
+"begin": 3787.164,
+"end": 3791.204,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Funding and conflicts of interest?",
+"begin": 3791.404,
+"end": 3793.364,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Does the conclusion go beyond the data — for example, causal language from correlational data?",
+"begin": 3793.564,
+"end": 3799.604,
+"voice": "main"
+},
+{
+"kind": "subsection",
+"text": "When you notice yourself getting heated",
+"begin": 3800.044,
+"end": 3801.964,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Am I defending a belief or trying to find out what's true?",
+"begin": 3802.828,
+"end": 3806.988,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Is my identity tied to this view?",
+"begin": 3807.308,
+"end": 3809.748,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Am I applying the same standards to both sides? Selective skeptic test.",
+"begin": 3810.028,
+"end": 3815.628,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Can I explain the mechanism behind my view, step by step?",
+"begin": 3815.868,
+"end": 3819.748,
+"voice": "main"
+},
+{
+"kind": "item",
+"text": "Would I be willing to say \"I was wrong\" if the evidence went the other way?",
+"begin": 3820.028,
+"end": 3824.428,
+"voice": "main"
+},
+{
+"kind": "section",
+"text": "Daily practices",
+"begin": 3825.685,
+"end": 3826.885,
+"voice": "second"
+},
+{
+"kind": "say",
+"text": "Critical thinking is a skill, and skills are built by regular practice with feedback. Some habits that help.",
+"begin": 3827.958,
+"end": 3836.278,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "One. Keep a prediction journal. Write down predictions with probabilities — \"seventy percent: the project will be finished by March\". Check them later. Compute your calibration. This is the single best way to improve your judgment under uncertainty.",
+"begin": 3836.358,
+"end": 3853.238,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Two. Steelman one opposing view each week. Pick a view you reject and write the best case for it that you can. Check your version with someone who holds it.",
+"begin": 3853.398,
+"end": 3863.958,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Three. Read laterally. Make it a reflex: before trusting an unfamiliar source, spend thirty seconds finding out who's behind it.",
+"begin": 3864.038,
+"end": 3873.638,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Four. Explain the mechanism. When you notice a strong opinion, try to explain step by step how the thing you believe works.",
+"begin": 3873.798,
+"end": 3882.518,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Five. Write down what would change your mind about your most important beliefs.",
+"begin": 3882.958,
+"end": 3887.678,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Six. Map an argument. Once a week, take an opinion piece and put its argument in standard form, including hidden premises.",
+"begin": 3887.718,
+"end": 3896.718,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Seven. Follow smart people you disagree with. Deliberately include high-quality sources from different perspectives in your reading.",
+"begin": 3896.758,
+"end": 3905.118,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eight. Say \"I was wrong\" out loud when you are. It gets easier, and it shows others that changing your mind is normal.",
+"begin": 3905.158,
+"end": 3913.478,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Nine. Take the outside view. Before judging any specific case — a project, a claim, a forecast — ask how often things of this kind turn out a certain way.",
+"begin": 3913.918,
+"end": 3924.798,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Ten. Run premortems before important decisions.",
+"begin": 3924.838,
+"end": 3928.878,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Eleven. Sleep on it. When a decision is important and there's time, delay. Reactions formed in anger or excitement are rarely calibrated.",
+"begin": 3928.918,
+"end": 3938.878,
+"voice": "second"
+},
+{
+"kind": "item",
+"text": "Twelve. Prefer depth to volume. Read fewer breaking news items and more long-form analysis, books, and primary sources.",
+"begin": 3938.918,
+"end": 3947.798,
+"voice": "second"
+},
+{
+"kind": "section",
+"text": "End of chapter sixteen",
+"begin": 3951.073,
+"end": 3952.753,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "That's the end of chapter sixteen, and the end of the audio edition of Mastering Epistemology. Thank you for listening.",
+"begin": 3953.842,
+"end": 3961.202,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The written guide goes further, with a glossary of two hundred terms, a reading list, and a twelve-week study plan.",
+"begin": 3961.682,
+"end": 3968.562,
+"voice": "main"
+},
+{
+"kind": "say",
+"text": "The best way to make these ideas your own is to use them. In your next argument, ask what exactly is being claimed, what would support it, and what would change your mind. Including your own.",
+"begin": 3968.802,
+"end": 3980.802,
+"voice": "main"
+}
+],
+"segments": [
+{
+"chunk": 1,
+"voice": "main",
+"begin": 2.116,
+"end": 9.038,
+"lines": [
+0,
+1
+],
+"request_id": "WN4Wf3K4q2ZjfLmhnbq8"
+},
+{
+"chunk": 2,
+"voice": "third",
+"begin": 10.266,
+"end": 20.95,
+"lines": [
+1,
+2
+],
+"request_id": "lT7EmDkKSBcfnpj2gkUd"
+},
+{
+"chunk": 3,
+"voice": "main",
+"begin": 21.499,
+"end": 27.847,
+"lines": [
+2,
+3
+],
+"request_id": "SLRfoB0cuXSsZMZohFas"
+},
+{
+"chunk": 4,
+"voice": "third",
+"begin": 28.682,
+"end": 34.952,
+"lines": [
+3,
+4
+],
+"request_id": "sjciw4J7dLI9e4swJhqa"
+},
+{
+"chunk": 5,
+"voice": "main",
+"begin": 35.5,
+"end": 37.773,
+"lines": [
+4,
+5
+],
+"request_id": "3YySNNjY5tURcA7Atq8C"
+},
+{
+"chunk": 6,
+"voice": "main",
+"begin": 38.609,
+"end": 71.288,
+"lines": [
+5,
+7
+],
+"request_id": "FN8kclczW5fZ8Dfcsnc2"
+},
+{
+"chunk": 7,
+"voice": "main",
+"begin": 71.915,
+"end": 116.846,
+"lines": [
+7,
+10
+],
+"request_id": "ZCFbFUwBrMP5wkP4N1gK"
+},
+{
+"chunk": 8,
+"voice": "main",
+"begin": 118.073,
+"end": 119.066,
+"lines": [
+10,
+11
+],
+"request_id": "br56dNG6tWsqDbyCS5Yw"
+},
+{
+"chunk": 9,
+"voice": "main",
+"begin": 120.111,
+"end": 168.62,
+"lines": [
+11,
+17
+],
+"request_id": "q3OZGWTnLPfVoFRLrTVw"
+},
+{
+"chunk": 10,
+"voice": "second",
+"begin": 169.848,
+"end": 173.479,
+"lines": [
+17,
+18
+],
+"request_id": "5xQAaIzVs5vZW3HLVaNQ"
+},
+{
+"chunk": 11,
+"voice": "second",
+"begin": 174.524,
+"end": 339.357,
+"lines": [
+18,
+29
+],
+"request_id": "hHhTG2lWJ00UXbkM19nM"
+},
+{
+"chunk": 12,
+"voice": "main",
+"begin": 340.584,
+"end": 344.137,
+"lines": [
+29,
+30
+],
+"request_id": "Es0p3Xxyx6AJGlyhBq1u"
+},
+{
+"chunk": 13,
+"voice": "main",
+"begin": 345.182,
+"end": 516.911,
+"lines": [
+30,
+41
+],
+"request_id": "HDLIH5FX8b12GsT8H26C"
+},
+{
+"chunk": 14,
+"voice": "main",
+"begin": 518.139,
+"end": 519.21,
+"lines": [
+41,
+42
+],
+"request_id": "ddIqm35HK9WhXrbjPXGh"
+},
+{
+"chunk": 15,
+"voice": "main",
+"begin": 520.255,
+"end": 653.819,
+"lines": [
+42,
+54
+],
+"request_id": "OI8C9OMWVlgtZPTjpbsX"
+},
+{
+"chunk": 16,
+"voice": "second",
+"begin": 655.047,
+"end": 657.554,
+"lines": [
+54,
+55
+],
+"request_id": "ECRkfTVmgTpglK1ZUE3n"
+},
+{
+"chunk": 17,
+"voice": "second",
+"begin": 658.599,
+"end": 729.757,
+"lines": [
+55,
+68
+],
+"request_id": "VYa6th9kRG7El2HAxxkH"
+},
+{
+"chunk": 18,
+"voice": "main",
+"begin": 730.984,
+"end": 734.772,
+"lines": [
+68,
+69
+],
+"request_id": "V8anIDV8l2K6r6VDJMwR"
+},
+{
+"chunk": 19,
+"voice": "main",
+"begin": 735.817,
+"end": 808.647,
+"lines": [
+69,
+81
+],
+"request_id": "mHgJ4XheHel06KDoRorR"
+},
+{
+"chunk": 20,
+"voice": "main",
+"begin": 809.874,
+"end": 812.8,
+"lines": [
+81,
+82
+],
+"request_id": "d7no1pbe5YitKIfkKUTe"
+},
+{
+"chunk": 21,
+"voice": "main",
+"begin": 813.845,
+"end": 815.334,
+"lines": [
+82,
+83
+],
+"request_id": "W1hEpIIBZyBMzEDIvgIC"
+},
+{
+"chunk": 22,
+"voice": "main",
+"begin": 816.17,
+"end": 850.599,
+"lines": [
+83,
+90
+],
+"request_id": "XWcmvtdayW6LcoNlo4yG"
+},
+{
+"chunk": 23,
+"voice": "main",
+"begin": 851.435,
+"end": 931.866,
+"lines": [
+90,
+97
+],
+"request_id": "S3UMcDDLJndVFLT3Xozt"
+},
+{
+"chunk": 24,
+"voice": "main",
+"begin": 932.702,
+"end": 994.508,
+"lines": [
+97,
+108
+],
+"request_id": "AXE43qbWsFuHmialacAl"
+},
+{
+"chunk": 25,
+"voice": "main",
+"begin": 995.344,
+"end": 1016.189,
+"lines": [
+108,
+112
+],
+"request_id": "8D2agb8RT3P30Ot6u6F5"
+},
+{
+"chunk": 26,
+"voice": "second",
+"begin": 1017.417,
+"end": 1019.925,
+"lines": [
+112,
+113
+],
+"request_id": "iLioZFhUvo4sNa7kZYjt"
+},
+{
+"chunk": 27,
+"voice": "second",
+"begin": 1020.97,
+"end": 1083.481,
+"lines": [
+113,
+116
+],
+"request_id": "eEqbxnPkEUVvRnprvjB7"
+},
+{
+"chunk": 28,
+"voice": "third",
+"begin": 1083.873,
+"end": 1087.19,
+"lines": [
+116,
+117
+],
+"request_id": "rVeCRctDWIBopHmBoxEp"
+},
+{
+"chunk": 29,
+"voice": "second",
+"begin": 1087.582,
+"end": 1088.731,
+"lines": [
+117,
+118
+],
+"request_id": "75azSJKoOVLY7JEHFsEQ"
+},
+{
+"chunk": 30,
+"voice": "third",
+"begin": 1089.123,
+"end": 1095.549,
+"lines": [
+118,
+119
+],
+"request_id": "gfcJHKONvEoMbaWUbXZH"
+},
+{
+"chunk": 31,
+"voice": "second",
+"begin": 1095.941,
+"end": 1156.232,
+"lines": [
+119,
+128
+],
+"request_id": "sLhyHahubFGlRAAv5o0y"
+},
+{
+"chunk": 32,
+"voice": "main",
+"begin": 1157.46,
+"end": 1160.307,
+"lines": [
+128,
+129
+],
+"request_id": "KBSD1NTPKW7V8nCsK9Sn"
+},
+{
+"chunk": 33,
+"voice": "main",
+"begin": 1161.352,
+"end": 1288.751,
+"lines": [
+129,
+144
+],
+"request_id": "Yj6kkaRqz6QI2AyMEYix"
+},
+{
+"chunk": 34,
+"voice": "main",
+"begin": 1289.979,
+"end": 1292.016,
+"lines": [
+144,
+145
+],
+"request_id": "wqG8WzLKdxLAOg4lsmW4"
+},
+{
+"chunk": 35,
+"voice": "main",
+"begin": 1293.061,
+"end": 1300.689,
+"lines": [
+145,
+147
+],
+"request_id": "oNmG3IMedl2k7agyiUup"
+},
+{
+"chunk": 36,
+"voice": "main",
+"begin": 1301.525,
+"end": 1340.682,
+"lines": [
+147,
+150
+],
+"request_id": "JBHWrsdIIO9uX0AdOATi"
+},
+{
+"chunk": 37,
+"voice": "main",
+"begin": 1341.518,
+"end": 1381.486,
+"lines": [
+150,
+160
+],
+"request_id": "dQlJsEkJV7P3v8TD86gI"
+},
+{
+"chunk": 38,
+"voice": "main",
+"begin": 1382.322,
+"end": 1459.252,
+"lines": [
+160,
+172
+],
+"request_id": "XILeSJ17kdqmb7pmfQpo"
+},
+{
+"chunk": 39,
+"voice": "main",
+"begin": 1460.088,
+"end": 1495.484,
+"lines": [
+172,
+175
+],
+"request_id": "y2i7VdTpChKKC9GexRv7"
+},
+{
+"chunk": 40,
+"voice": "main",
+"begin": 1496.32,
+"end": 1539.709,
+"lines": [
+175,
+180
+],
+"request_id": "jCCLwTxIOlIN8qLNHP5T"
+},
+{
+"chunk": 41,
+"voice": "main",
+"begin": 1540.545,
+"end": 1601.071,
+"lines": [
+180,
+189
+],
+"request_id": "RYVQYiyCi7ysVLixyAyt"
+},
+{
+"chunk": 42,
+"voice": "main",
+"begin": 1601.907,
+"end": 1633.933,
+"lines": [
+189,
+197
+],
+"request_id": "8IpKRQ9c0qIOOhmh0AMU"
+},
+{
+"chunk": 43,
+"voice": "second",
+"begin": 1635.161,
+"end": 1636.389,
+"lines": [
+197,
+198
+],
+"request_id": "luHrWexp8h3o1syFmLhx"
+},
+{
+"chunk": 44,
+"voice": "second",
+"begin": 1637.433,
+"end": 1766.269,
+"lines": [
+198,
+211
+],
+"request_id": "O4EHejDNzwsQywDv1ryB"
+},
+{
+"chunk": 45,
+"voice": "main",
+"begin": 1767.497,
+"end": 1770.188,
+"lines": [
+211,
+212
+],
+"request_id": "PDzgiwnQVSFhx5Cqh55h"
+},
+{
+"chunk": 46,
+"voice": "main",
+"begin": 1771.233,
+"end": 2037.603,
+"lines": [
+212,
+226
+],
+"request_id": "FeRzYnvDs5r0XpQawcZ4"
+},
+{
+"chunk": 47,
+"voice": "main",
+"begin": 2038.831,
+"end": 2040.555,
+"lines": [
+226,
+227
+],
+"request_id": "jqf5f5EZVMkpOuToY6y7"
+},
+{
+"chunk": 48,
+"voice": "main",
+"begin": 2041.6,
+"end": 2130.834,
+"lines": [
+227,
+238
+],
+"request_id": "IH9BUAgVQTrmn05QGNEk"
+},
+{
+"chunk": 49,
+"voice": "second",
+"begin": 2132.062,
+"end": 2133.629,
+"lines": [
+238,
+239
+],
+"request_id": "1CLWI8jNEPuseEr0fRle"
+},
+{
+"chunk": 50,
+"voice": "second",
+"begin": 2134.674,
+"end": 2136.712,
+"lines": [
+239,
+240
+],
+"request_id": "iBBQ3QJtJyks82rK30Nh"
+},
+{
+"chunk": 51,
+"voice": "second",
+"begin": 2137.548,
+"end": 2271.19,
+"lines": [
+240,
+253
+],
+"request_id": "UBoYF4PJUy4kUv7xAody"
+},
+{
+"chunk": 52,
+"voice": "second",
+"begin": 2272.026,
+"end": 2341.172,
+"lines": [
+253,
+263
+],
+"request_id": "tGWgTshU0vWrgMwqhSRK"
+},
+{
+"chunk": 53,
+"voice": "second",
+"begin": 2342.008,
+"end": 2393.417,
+"lines": [
+263,
+272
+],
+"request_id": "nINOsyyM5iorLyz2xiBz"
+},
+{
+"chunk": 54,
+"voice": "second",
+"begin": 2394.253,
+"end": 2454.126,
+"lines": [
+272,
+279
+],
+"request_id": "DgtbkqSzQk9856LgF4cS"
+},
+{
+"chunk": 55,
+"voice": "main",
+"begin": 2455.353,
+"end": 2456.764,
+"lines": [
+279,
+280
+],
+"request_id": "jXrMPggkaWqwrOWoTumN"
+},
+{
+"chunk": 56,
+"voice": "main",
+"begin": 2457.809,
+"end": 2460.317,
+"lines": [
+280,
+281
+],
+"request_id": "8Mo3fqWt7CMUpPbUxvtI"
+},
+{
+"chunk": 57,
+"voice": "main",
+"begin": 2461.153,
+"end": 2673.659,
+"lines": [
+281,
+305
+],
+"request_id": "gL3TiUWfxwXhX7bEBAK2"
+},
+{
+"chunk": 58,
+"voice": "main",
+"begin": 2674.495,
+"end": 2681.26,
+"lines": [
+305,
+306
+],
+"request_id": "7QhapAsdY8HKxFN1phj6"
+},
+{
+"chunk": 59,
+"voice": "third",
+"begin": 2681.652,
+"end": 2694.661,
+"lines": [
+306,
+307
+],
+"request_id": "fL9sA4Ej73vyf0zQUKfs"
+},
+{
+"chunk": 60,
+"voice": "second",
+"begin": 2695.053,
+"end": 2708.611,
+"lines": [
+307,
+308
+],
+"request_id": "7P4RU5RRqwi41ou5Wb9x"
+},
+{
+"chunk": 61,
+"voice": "main",
+"begin": 2709.002,
+"end": 2952.96,
+"lines": [
+308,
+324
+],
+"request_id": "MjpA29Dx0QqQYFBFoH51"
+},
+{
+"chunk": 62,
+"voice": "main",
+"begin": 2953.796,
+"end": 2959.83,
+"lines": [
+324,
+326
+],
+"request_id": "m5D1KW7dOSega9r9kOrV"
+},
+{
+"chunk": 63,
+"voice": "main",
+"begin": 2960.457,
+"end": 3195.141,
+"lines": [
+326,
+344
+],
+"request_id": "DbMJsDGJHtU2TeS8i3Yv"
+},
+{
+"chunk": 64,
+"voice": "main",
+"begin": 3195.977,
+"end": 3413.055,
+"lines": [
+344,
+360
+],
+"request_id": "N2z1zjgyo9nm16h9Yjv1"
+},
+{
+"chunk": 65,
+"voice": "main",
+"begin": 3413.891,
+"end": 3414.648,
+"lines": [
+360,
+361
+],
+"request_id": "i2Q1bcohPbtMMEkPWy4h"
+},
+{
+"chunk": 66,
+"voice": "third",
+"begin": 3415.275,
+"end": 3421.231,
+"lines": [
+361,
+362
+],
+"request_id": "f9rBzlKfBXqRHQ4VRlL0"
+},
+{
+"chunk": 67,
+"voice": "main",
+"begin": 3421.623,
+"end": 3422.459,
+"lines": [
+362,
+363
+],
+"request_id": "MWRFW7NnulJEU42Dgxah"
+},
+{
+"chunk": 68,
+"voice": "second",
+"begin": 3423.086,
+"end": 3430.713,
+"lines": [
+363,
+364
+],
+"request_id": "IUsCOMoE1sDUOBg2O46k"
+},
+{
+"chunk": 69,
+"voice": "main",
+"begin": 3431.105,
+"end": 3432.751,
+"lines": [
+364,
+365
+],
+"request_id": "Bvgq1wRI2i9QhAl1HG2Z"
+},
+{
+"chunk": 70,
+"voice": "third",
+"begin": 3433.378,
+"end": 3438.054,
+"lines": [
+365,
+366
+],
+"request_id": "7ss19M1lQFgIP7kquUw4"
+},
+{
+"chunk": 71,
+"voice": "main",
+"begin": 3438.446,
+"end": 3439.282,
+"lines": [
+366,
+367
+],
+"request_id": "MWRFW7NnulJEU42Dgxah"
+},
+{
+"chunk": 72,
+"voice": "second",
+"begin": 3439.909,
+"end": 3443.775,
+"lines": [
+367,
+368
+],
+"request_id": "r8s27NWkmDhUV1KHRWm2"
+},
+{
+"chunk": 73,
+"voice": "main",
+"begin": 3444.167,
+"end": 3694.054,
+"lines": [
+368,
+387
+],
+"request_id": "nNYuEEDKptQYzn8uEqg3"
+},
+{
+"chunk": 74,
+"voice": "main",
+"begin": 3695.282,
+"end": 3696.118,
+"lines": [
+387,
+388
+],
+"request_id": "vy5KGVAvpphFZdhSYabG"
+},
+{
+"chunk": 75,
+"voice": "main",
+"begin": 3697.162,
+"end": 3698.965,
+"lines": [
+388,
+389
+],
+"request_id": "5yJOGJac0S2Us8PsMgzT"
+},
+{
+"chunk": 76,
+"voice": "main",
+"begin": 3699.801,
+"end": 3730.808,
+"lines": [
+389,
+399
+],
+"request_id": "g4juAXrD26DLByPWVzko"
+},
+{
+"chunk": 77,
+"voice": "main",
+"begin": 3731.644,
+"end": 3747.37,
+"lines": [
+399,
+405
+],
+"request_id": "RzMXM8NCUDFUlV8PKt7P"
+},
+{
+"chunk": 78,
+"voice": "main",
+"begin": 3748.206,
+"end": 3771.768,
+"lines": [
+405,
+412
+],
+"request_id": "ieKgRu5rr3l3SYe84EWq"
+},
+{
+"chunk": 79,
+"voice": "main",
+"begin": 3772.604,
+"end": 3801.992,
+"lines": [
+412,
+421
+],
+"request_id": "juR5j0Fik97kdwmztUrZ"
+},
+{
+"chunk": 80,
+"voice": "main",
+"begin": 3802.828,
+"end": 3824.457,
+"lines": [
+421,
+426
+],
+"request_id": "sOz6w5w4l6xFVyJxiUEI"
+},
+{
+"chunk": 81,
+"voice": "second",
+"begin": 3825.685,
+"end": 3826.913,
+"lines": [
+426,
+427
+],
+"request_id": "t8fJF3WmPBmB4EtJORst"
+},
+{
+"chunk": 82,
+"voice": "second",
+"begin": 3827.958,
+"end": 3947.755,
+"lines": [
+427,
+440
+],
+"request_id": "YC40XVkwBnpQhqywjAck"
+},
+{
+"chunk": 83,
+"voice": "main",
+"begin": 3951.073,
+"end": 3952.797,
+"lines": [
+440,
+441
+],
+"request_id": "DdD9R7okSOgeXnv3f3zw"
+},
+{
+"chunk": 84,
+"voice": "main",
+"begin": 3953.842,
+"end": 3980.748,
+"lines": [
+441,
+444
+],
+"request_id": "avsDDoCBenxKzM8qvQv8"
+}
+]
+}
