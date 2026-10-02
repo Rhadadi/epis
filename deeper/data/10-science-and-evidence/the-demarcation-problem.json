@@ -1,0 +1,191 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "the-demarcation-problem",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do non-science, bad science, and pseudoscience differ, and what limits single and multiple criteria?"
+  ],
+  "sources": [
+    {
+      "key": "hansson2025",
+      "used_for": [
+        "Which boundary is being drawn?",
+        "A test for a proposed test",
+        "Why a list does not eliminate judgment",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The task of distinguishing between science and pseudoscience is often called “the demarcation of science” or “the demarcation of science from pseudoscience.” These phrases are often used interchangeably, and many authors seem to have regarded them as equal in meaning.",
+          "corpus_chunk": 47011
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A comparison of the negated terms related to science can contribute to clarifying the conceptual distinctions.",
+          "corpus_chunk": 47012
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In accordance with this, the Oxford English Dictionary (OED) defines pseudoscience as follows: “A pretended or spurious science; a collection of related beliefs about the world mistakenly regarded as being based on scientific method or as having the status that scientific truths now have.”",
+          "corpus_chunk": 47013
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Many writers on pseudoscience have emphasized that pseudoscience is non-science posing as science.",
+          "corpus_chunk": 47014
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Proponents of pseudoscience often attempt to mimic science by arranging conferences, journals, and associations that share many of the superficial characteristics of science, but do not satisfy its quality criteria.",
+          "corpus_chunk": 47015
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "An immediate problem with the definition based on (1) and (2) is that it is too permissive.",
+          "corpus_chunk": 47016
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Case 2: A biochemist goes on performing one sloppy experiment after the other.",
+          "corpus_chunk": 47016
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "This explains why scientific fraud committed to boost one’s own career is not usually regarded as pseudoscientific.",
+          "corpus_chunk": 47017
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Pseudoscience is an antithesis of science in the individuated rather than the unindividuated sense.",
+          "corpus_chunk": 47019
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Philosophical discussions on the characterization of pseudoscience have usually focused on the missing scientific quality of pseudoscience (rather than on its attempt to mimic science).",
+          "corpus_chunk": 47029
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "However, philosophers have usually opted for criteria that can applied without specialized knowledge in the pertinent subject area.",
+          "corpus_chunk": 47030
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Around 1930, the logical positivists of the Vienna Circle developed various verificationist approaches to science.",
+          "corpus_chunk": 47031
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In 1933, Karl Popper published a short text in which he introduced the German term “Abgrenzungsproblem” (later translated as “demarcation problem”) for the identification of claims that should not be classified as scientific.",
+          "corpus_chunk": 47032
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In an essay published in 1962, he specified his purpose as “drawing a line of demarcation between those statements and systems of statements which could be properly described as belonging to empirical science, and others which might, perhaps, be described as ‘pseudo-scientific’ or (in certain contexts) as ‘metaphysical’, or which belonged, perhaps, to pure logic or to pure mathematics” (Popper 1962, 255).",
+          "corpus_chunk": 47033
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "This is a different task than that of providing a complete definition of pseudoscience, and also a different task than that of providing a complete definition of science (Debray 2023).",
+          "corpus_chunk": 47034
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The use of the demarcation metaphor for the identification of pseudoscience can therefore give the impression that the task of determining whether a particular claim is pseudoscientific or not can be performed without any specialized knowledge in the subject matter (Hansson 2025).",
+          "corpus_chunk": 47035
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Karl Popper described the demarcation problem as the “key to most of the fundamental problems in the philosophy of science” (Popper 1962, 42).",
+          "corpus_chunk": 47036
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Since the property of being a basic statement is a matter of logical form, this criterion of falsifiability depends entirely on logical form.",
+          "corpus_chunk": 47037
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "A (theoretical) sentence, he said, is falsifiable if and only if it logically contradicts some (empirical) sentence that describes a logically possible event that it would be logically possible to observe (Popper [1989] 1994, 83).",
+          "corpus_chunk": 47038
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Popper presented this proposal as a way to draw the line between statements belonging to the empirical sciences and “all other statements – whether they are of a religious or of a metaphysical character, or simply pseudoscientific” (Popper 1962, 39; cf.",
+          "corpus_chunk": 47039
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Several critics have pointed out that most pseudosciences are characterized by having been thoroughly falsified, rather than by being impossible or even difficult to falsify.",
+          "corpus_chunk": 47040
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "He took Marxism to be exemplary of a formerly scientific theory, which lost this status when some of its predictions were refuted.",
+          "corpus_chunk": 47040
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Many authors have proposed that a list of criteria, rather than a single criterion, should be used to identify pseudoscience.",
+          "corpus_chunk": 47053
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Unwillingness to test: A theory is not tested although it is possible to test it.",
+          "corpus_chunk": 47053
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "However, in order to cover all ways in which one can deviate from science an inordinate number of criteria may be needed.",
+          "corpus_chunk": 47055
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Several authors have proposed ways to construct a multi-criterial approach that is more unified and systematic than an unstructured list of criteria.",
+          "corpus_chunk": 47056
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Several authors have argued that the family resemblance approach can be useful in science education (Irzik and Nola 2011; Park and Brock 2023).",
+          "corpus_chunk": 47057
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Maarten Boudry has proposed another take on lists with several criteria.",
+          "corpus_chunk": 47057
+        }
+      ],
+      "annotation": "Separates non-science, bad science, and pseudoscience, examining testability, scientific pretence, warning signs, and denial."
+    }
+  ]
+}

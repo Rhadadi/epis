@@ -1,0 +1,170 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "inductivism-and-its-limits",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do classification, ideas, hypotheses, and observation interact in historical accounts of induction?"
+  ],
+  "sources": [
+    {
+      "key": "hepburn-andersen2026",
+      "used_for": [
+        "Facts do not select their own description",
+        "Discovery and testing",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In analysis, a phenomena was examined to discover its basic explanatory principles; in synthesis, explanations of a phenomena were constructed from first principles.",
+          "corpus_chunk": 47116
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The struggle to establish the new authority included methodological moves.",
+          "corpus_chunk": 47116
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Bacon aimed at the invention of new arts, principles, and directions.",
+          "corpus_chunk": 47117
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Mill, in his System of Logic, would later criticize Baconians for paying too little attention to the practices of scientists.",
+          "corpus_chunk": 47118
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Given the enormous success of his Principia Mathematica and Opticks, this is understandable.",
+          "corpus_chunk": 47119
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The Regulae counter this objection, re-defining the aims of natural philosophy by re-defining the method natural philosophers should follow.",
+          "corpus_chunk": 47120
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The emphasis was often the same, as much on the character of the scientist as on their process, a character which is still commonly assumed.",
+          "corpus_chunk": 47122
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Famous also are George Berkeley’s (1685–1753) attack on the mathematics of the new science, as well as the over-emphasis of Newtonians on observation; and David Hume’s (1711–1776) undermining of the warrant offered for scientific claims by inductive justification (see the entries on: George Berkeley; David Hume; Hume’s Newtonianism and Anti-Newtonianism).",
+          "corpus_chunk": 47123
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Not simply a debate between inductivism and hypothetico-deductivism, the role of the two methods on each side is actually more complex.",
+          "corpus_chunk": 47124
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Both elements are essential according to Whewell, and he was therefore critical of Kant for too much focus on the subjective, and John Locke (1632–1704) and Mill for too much focus on the senses.",
+          "corpus_chunk": 47125
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Whewell’s induction is not merely the collecting of objective facts.",
+          "corpus_chunk": 47125
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Mill, in his System of Logic, put forward a narrower view of induction as the essence of scientific method.",
+          "corpus_chunk": 47127
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Mill’s methods are still seen as capturing basic intuitions about experimental methods for finding the relevant explanatory factors (System of Logic (1843), see Mill entry).",
+          "corpus_chunk": 47128
+        }
+      ],
+      "annotation": "Distinguishes methods, aims, and practices, and reconstructs induction, hypothesis formation, corroboration, and theory repairs."
+    },
+    {
+      "key": "thornton2026",
+      "used_for": [
+        "Discovery and testing",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "For Popper the central problem in the philosophy of science is that of demarcation, i.e., of distinguishing between science and what he terms “non-science” (e.g., logic, metaphysics, psychoanalysis, and Adler’s individual psychology).",
+          "corpus_chunk": 32538
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In contradistinction to this, Popper holds that there is no unique methodology specific to science; rather, science, like virtually every other organic activity, consists largely of problem-solving.",
+          "corpus_chunk": 32539
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In a critical sense, Popper’s theory of demarcation is based upon his perception of the asymmetry which, at the level of logic, holds between verification and falsification: it is logically impossible to verify a universal proposition by reference to experience (as Hume saw clearly), but a single genuine counter-instance falsifies the corresponding universal law.",
+          "corpus_chunk": 32540
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "However, the universality of such laws, he argues, does rule out the possibility of their verification.",
+          "corpus_chunk": 32540
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "They can only be reached by intuition, based upon something like an intellectual love of the objects of experience.",
+          "corpus_chunk": 32541
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "For Popper, the growth of human knowledge proceeds from our problems and from our attempts to solve them.",
+          "corpus_chunk": 32551
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Such conclusions are not directly compared with the facts, Popper stresses, simply because there are no “pure” facts available; all observation-statements are theory-laden, and are as much a function of purely subjective factors (interests, expectations, wishes, etc.) as they are a function of what is objectively real.",
+          "corpus_chunk": 32552
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The third step is the comparing of the new theory with existing ones to determine whether it constitutes an advance upon them.",
+          "corpus_chunk": 32552
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "He does not, however, abandon the present theory until such time as he has a better one to substitute for it.",
+          "corpus_chunk": 32554
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Hence Popper’s emphasis on the importance of the critical spirit to science—for him critical thinking is the very essence of rationality.",
+          "corpus_chunk": 32555
+        }
+      ],
+      "annotation": "Explains Popper’s logic of testing alongside the provisional and revisable methodology of accepting observation reports."
+    }
+  ]
+}

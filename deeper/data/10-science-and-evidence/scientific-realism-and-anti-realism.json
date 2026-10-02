@@ -1,0 +1,210 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "scientific-realism-and-anti-realism",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do metaphysical, semantic, and epistemic commitments separate, and what does successful science warrant?"
+  ],
+  "sources": [
+    {
+      "key": "chakravartty2025",
+      "used_for": [
+        "Separate three commitments",
+        "Why success seems to favor realism",
+        "A history of success and replacement",
+        "Observation is a philosophical distinction here",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "It is perhaps only a slight exaggeration to say that scientific realism is characterized differently by every author who discusses it, and this presents a challenge to anyone hoping to learn what it is.",
+          "corpus_chunk": 29261
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The distinction itself has been problematized (Maxwell 1962; Churchland 1985; Musgrave 1985; Dicken & Lipton 2006) and defended (Muller 2004, 2005; cf.",
+          "corpus_chunk": 29262
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "On this approach, scientific realism is a position concerning the actual epistemic status of theories (or some components thereof), and this is described in a number of ways.",
+          "corpus_chunk": 29263
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "What all of these approaches have in common is a commitment to the idea that our best theories have a certain epistemic status: they yield knowledge of aspects of the world, including unobservable aspects.",
+          "corpus_chunk": 29264
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "There is a weak implication here to the effect that if science aims at truth, and scientific practice is at all successful, the characterization of scientific realism in terms of aim may then entail some form of characterization in terms of achievement.",
+          "corpus_chunk": 29265
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Most scientific realists commit to something more in terms of achievement, and this is assumed in what follows.",
+          "corpus_chunk": 29266
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The description of scientific realism as a positive epistemic attitude toward theories, including parts putatively concerning the unobservable, is a kind of shorthand for more precise commitments (Kukla 1998: ch. 1; Niiniluoto 1999: ch. 1; Psillos 1999: Introduction; Chakravartty 2007a: ch. 1).",
+          "corpus_chunk": 29267
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "In order to be clear about what realism in the context of the sciences amounts to, and to differentiate it from some important antirealist alternatives, it is useful to understand it in terms of three dimensions: a metaphysical (or ontological) dimension; a semantic dimension; and an epistemological dimension.",
+          "corpus_chunk": 29268
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "This sort of idealism, however, though historically important, is rarely encountered in contemporary philosophy of science.",
+          "corpus_chunk": 29268
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "It is important to note in this connection that human convention in scientific taxonomy is compatible with mind-independence.",
+          "corpus_chunk": 29269
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "This semantic commitment contrasts primarily with those of certain “instrumentalist” epistemologies of science, which interpret descriptions of unobservables simply as instruments for the prediction of observable phenomena, or for systematizing observation reports.",
+          "corpus_chunk": 29271
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "This contrasts with skeptical positions which, even if they grant the metaphysical and semantic dimensions of realism, doubt that scientific investigation is epistemologically powerful enough to yield such knowledge, or, as in the case of some antirealist positions, insist that it is only powerful enough to yield knowledge regarding observables.",
+          "corpus_chunk": 29272
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Though most realists marry their position to the successful reference of theoretical terms, including those for unobservable entities (Boyd 1983, and as described by Laudan 1981), some deny that this is a requirement (Cruse & Papineau 2002; Papineau 2010).",
+          "corpus_chunk": 29273
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The most powerful intuition motivating realism is an old idea, commonly referred to in recent discussions as the “miracle argument” or “no miracles argument”, after Putnam’s (1975a: 73) claim that realism “is the only philosophy that doesn’t make the success of science a miracle”.",
+          "corpus_chunk": 29282
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Indeed, if these theories were far from the truth, so the argument goes, the fact that they are so successful would be miraculous.",
+          "corpus_chunk": 29282
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "It is not entirely clear, however, whether the evolutionary analogy is sufficient to dissolve the intuition behind the miracle argument.",
+          "corpus_chunk": 29284
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Some authors contend that the miracle argument is, in fact, an instance of fallacious reasoning called the base rate fallacy (Howson 2000: ch. 3; Lipton [1991] 2004: 196–198; Magnus & Callender 2004).",
+          "corpus_chunk": 29285
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The lower the incidence of the disease at large, the lower the probability that a positive result signals the presence of the disease.",
+          "corpus_chunk": 29286
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Menke 2014; for a criticism of the miracle argument based on a different probabilistic framing in terms of likelihoods, see Sober 2015: 912–915).",
+          "corpus_chunk": 29287
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Worries about underdetermination and inference to the best explanation are generally conceptual in nature, but the so-called pessimistic induction (also called the “pessimistic meta-induction”, because it concerns the “ground level” inductive inferences that generate scientific theories and law statements) is intended as an argument from empirical premises.",
+          "corpus_chunk": 29311
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The general idea of the pessimistic induction has a rich pedigree.",
+          "corpus_chunk": 29311
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "For example, one might contend that if only sufficiently mature and non-ad hoc theories are considered, the number whose central terms did not refer and/or that cannot be regarded as approximately true is dramatically reduced (see references, section 1.3).",
+          "corpus_chunk": 29313
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Or, the realist might grant that the history of science presents a record of significant referential discontinuity, but contend that, nevertheless, it also presents a record of impressive continuity regarding what is properly endorsed by realism, as recommended by explanationists, entity realists, or structural realists (see references, section 2.3).",
+          "corpus_chunk": 29314
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The argument is analogous: the putative failure of reference on the part of past successful theories, or their putative lack of approximate truth, cannot be used to derive a conclusion regarding the chances that our current best theories do not refer to unobservables, or that they are not approximately true, unless one knows the base rate of non-referring or non-approximately true theories in the relevant pools.",
+          "corpus_chunk": 29315
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "One might read the argument simply as cutting a supposed link between the empirical success of scientific theories and successful reference or approximate truth, as opposed to relying on an inductive inference per se.",
+          "corpus_chunk": 29316
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The term “antirealism” (or “anti-realism”) encompasses any position that is opposed to realism along one or more of the dimensions canvassed in section 1.2: the metaphysical commitment to the existence of a mind-independent reality; the semantic commitment to interpret theories literally or at face value; and the epistemological commitment to regard theories as furnishing knowledge of both observables and unobservables.",
+          "corpus_chunk": 29323
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "It is possible to be an empiricist more broadly speaking in a way that is consistent with realism—for example, one might endorse the idea that knowledge of the world stems from empirical investigation and contend that on this basis, one can justifiably infer certain things about unobservables.",
+          "corpus_chunk": 29324
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The most influential advocates of this view were the logical empiricists (or logical positivists), including Carnap and Hempel, famously associated with the Vienna Circle group of philosophers and scientists as well as important contributors elsewhere.",
+          "corpus_chunk": 29325
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The contrast here is not merely in semantics and epistemology: a number of logical empiricists also held the neo-Kantian view that ontological questions “external” to the frameworks for knowledge represented by theories are also meaningless (the choice of a framework is made solely on pragmatic grounds), thereby rejecting the metaphysical dimension of realism (as in Carnap 1950).",
+          "corpus_chunk": 29326
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "His position, “constructive empiricism”, holds that the aim of science is empirical adequacy, where “a theory is empirically adequate exactly if what it says about the observable things and events in the world, is true” (1980: 12; p. 64 gives a more technical definition in terms of the embedding of observable structures in scientific models).",
+          "corpus_chunk": 29327
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The constructive empiricist thus recognizes claims about unobservables as true or false, but feels no need to believe or disbelieve them.",
+          "corpus_chunk": 29327
+        }
+      ],
+      "annotation": "Separates realism’s commitments and analyzes success, explanatory inference, historical replacement, and constructive empiricism."
+    }
+  ]
+}

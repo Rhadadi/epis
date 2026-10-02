@@ -1,0 +1,220 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "what-makes-science-special",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do methods, aims, and institutional criticism contribute to reliable inquiry without a universal recipe?"
+  ],
+  "sources": [
+    {
+      "key": "hepburn-andersen2026",
+      "used_for": [
+        "A method has a job to do",
+        "Diversity with standards",
+        "What the short version should not imply",
+        "Where to begin"
+      ],
+      "evidence": [
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "The study of scientific method is the attempt to discern the activities by which that success is achieved.",
+          "corpus_chunk": 47100
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Scientific method should be distinguished from the aims and products of science, such as knowledge, predictions, or control.",
+          "corpus_chunk": 47101
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Finally, method is distinct, to some degree, from the detailed and contextual practices through which methods are implemented.",
+          "corpus_chunk": 47101
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Disputes about method have therefore played out at the detail, rule, and meta-rule levels.",
+          "corpus_chunk": 47102
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Some middle degree of pluralism regarding the methods embodied in scientific practice seems appropriate.",
+          "corpus_chunk": 47104
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The lack of a singular method across all disciplines of science is a reason for its reliability as a practice, not a mark against it.",
+          "corpus_chunk": 47105
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For most of the history of scientific methodology the assumption has been that the most important output of science is knowledge and so the aim of methodology should be to discover those methods by which scientific knowledge is generated.",
+          "corpus_chunk": 47106
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In the second half of the 20th century the epistemic privilege of science faced several challenges and many philosophers of science abandoned the reconstruction of the logic of scientific method.",
+          "corpus_chunk": 47107
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The combined upshot was very few philosophers arguing any longer for a grand unified methodology of science.",
+          "corpus_chunk": 47107
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Sections 4–6 attempt to construct a cursory map of the current domains and issues of the study of methods in science.",
+          "corpus_chunk": 47108
+        }
+      ],
+      "annotation": "Distinguishes methods, aims, and practices, and reconstructs induction, hypothesis formation, corroboration, and theory repairs."
+    },
+    {
+      "key": "fidler-wilcox2026",
+      "used_for": [
+        "Correction is also an institutional achievement",
+        "Where to begin"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The causes of irreproducible results are largely the same across disciplines we have mentioned.",
+          "corpus_chunk": 46906
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Over 70% of editors from 79 social science journals said they preferred new studies over replications and over 90% said they would did not encourage the submission of replication studies (Neuliep & Crandall 1990).",
+          "corpus_chunk": 46907
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Developments in text mining techniques have led to more comprehensive estimates.",
+          "corpus_chunk": 46907
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "For example, in psychology the proportion of published results that are statistically significant is 92% despite the fact that the average power of studies in this field to detect medium effect sizes (arguably typical of the discipline) is roughly 44% (Szucs & Ioannidis 2017).",
+          "corpus_chunk": 46909
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "However, the most recent estimate of the statistical power, again of medium effect sizes, of ecology and animal behaviour is 23–26% (Smith, Hardy, & Gammell 2011) (An earlier more optimistic assessment was 40–47%, Jennions & Møller, 2003.) For a third example, the proportion of statistically significant results in neuroscience and behaviour is 85%.",
+          "corpus_chunk": 46910
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "In addition to creating the file-drawer problem described above, publication bias has been held at least partially responsible for the high prevalence of Questionable Research Practices (QRPs) uncovered in both self-report survey research (John, Loewenstein, & Prelec 2012; Agnoli 2017 et al. 2017; Fraser et al. 2018) and in journal studies that have detected, for example, unusual distributions of p values (Masicampo & Lalande 2012; Hartgerink et al. 2016).",
+          "corpus_chunk": 46911
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Simmons, Nelson, and Simonsohn (2011) explained and demonstrated with simulated results how engaging in such practices inflates the false positive error rate of the published literature, leading to a lower rate of reproducible results.",
+          "corpus_chunk": 46912
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Five of the most widespread QRPs are listed below in Table 1 (from Fraser et al. 2018), with associated survey measures of prevalence.",
+          "corpus_chunk": 46913
+        }
+      ],
+      "annotation": "Distinguishes kinds of replication and connects publication selection and flexible analysis to reforms in planning and review."
+    },
+    {
+      "key": "reiss-sprenger2020",
+      "used_for": [
+        "Correction is also an institutional achievement",
+        "Where to begin"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Traditional notions of objectivity as faithfulness to facts or freedom of contextual values have also been challenged from a feminist perspective.",
+          "corpus_chunk": 13956
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Often but not always, feminist epistemologists go beyond pointing out what they regard as androcentric bias and reject the value-free ideal altogether—with an eye on the social and moral responsibility of scientific inquiry.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Longino assigns a crucial function to social systems of criticism in securing the epistemic success of science.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Even the most implausible beliefs might be true, and even if they are false, they might contain a grain of truth which is worth preserving or helps to better articulate true beliefs (Mill 1859 [2003: 72]).",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Feminist standpoint theory builds on these ideas but focuses on gender, racial and other social relations.",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The perspectival stance can also explain why criteria for objectivity often vary with context: the relative importance of epistemic virtues is a matter of goals and interests—in other words, standpoint.",
+          "corpus_chunk": 13961
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This idea she refers to as “strong objectivity” replaces the “weak” conception of objectivity in the empiricist tradition: value-freedom, impartiality, rigorous adherence to methods of testing and inference.",
+          "corpus_chunk": 13962
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "To whom does the condition of equally shared intellectual authority apply?",
+          "corpus_chunk": 13962
+        }
+      ],
+      "annotation": "Distinguishes value-free ideals, inductive risk, social criticism, and the specific protections and limits of randomization."
+    },
+    {
+      "key": "hansson2025",
+      "used_for": [
+        "Correction is also an institutional achievement"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Many writers on pseudoscience have emphasized that pseudoscience is non-science posing as science.",
+          "corpus_chunk": 47014
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Proponents of pseudoscience often attempt to mimic science by arranging conferences, journals, and associations that share many of the superficial characteristics of science, but do not satisfy its quality criteria.",
+          "corpus_chunk": 47015
+        }
+      ],
+      "annotation": "Separates non-science, bad science, and pseudoscience, examining testability, scientific pretence, warning signs, and denial."
+    }
+  ]
+}

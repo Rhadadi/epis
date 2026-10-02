@@ -1,0 +1,674 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "causation-and-causal-inference",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which assumptions distinguish prediction, intervention effects, individual counterfactuals, and actual causation?"
+  ],
+  "sources": [
+    {
+      "key": "hitchcock2024b",
+      "used_for": [
+        "Watching a system and changing it",
+        "Draw the assumptions",
+        "Avoid the two opposite mistakes",
+        "Three questions hiding inside one association",
+        "A primary predecessor: Mill's Method of Difference",
+        "What a causal graph asserts",
+        "Structural equations and intervention",
+        "Confounders, mediators, and colliders",
+        "Learning structure from observational distributions",
+        "Counterfactuals and individual causation",
+        "Read a conclusion at the right level",
+        "What the shortcuts leave out",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "If \\(\\bV\\) is the set of variables included in a causal model, one way to represent the causal relationships among the variables in \\(\\bV\\) is by a graph.",
+          "corpus_chunk": 45205
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "A directed graph is acyclic, and hence a DAG, if there is no directed path from a variable to itself.",
+          "corpus_chunk": 45206
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "An arrow from Y to Z in a DAG represents that Y is a direct cause of \\(Z.\\) Roughly, this means that the value of Y makes some causal difference for the value of Z, and that Y influences Z through some process that is not mediated by any other variable in \\(\\bV\\).",
+          "corpus_chunk": 45207
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "We will call the system of direct causal relations represented in a DAG such as Figure 1 the causal structure on the variable set \\(\\bV\\).",
+          "corpus_chunk": 45208
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "We only need to represent missing common causes in this way when they are closest common causes.",
+          "corpus_chunk": 45208
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "The absence of double-headed arrows from Figure 1 does not show merely that we have chosen not to include latent common causes in our representation; it shows that there are no latent common causes.",
+          "corpus_chunk": 45210
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A SEM characterizes a causal system with a set of variables, and a set of equations describing how each variable depends upon its immediate causal predecessors.",
+          "corpus_chunk": 45212
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "If the meat is put on the grill, then it will get cooked according to the level of the flame: if the flame is low (Flame = 1), the meat will be rare (Meat cooked = 1), and so on.",
+          "corpus_chunk": 45213
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Our example is acyclic, as shown by the ordering of variables given above.",
+          "corpus_chunk": 45213
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Variables that are not explicitly represented in the model are assumed to be fixed at values that make the equations appropriate.",
+          "corpus_chunk": 45214
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "An acyclic SEM together with a context is a world (what Halpern 2016 calls a “causal setting”).",
+          "corpus_chunk": 45215
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For example, a randomized controlled trial to test the efficacy of a drug for hypertension aims to determine whether each subject takes the drug (rather than a placebo) by a random process such as a coin flip.",
+          "corpus_chunk": 45217
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Alternately, we could follow the approach of Lewis (1979) and think of an intervention setting the value of a variable by a minor “miracle”.",
+          "corpus_chunk": 45217
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The new system of equations can then be solved to discover what values the other variables would take as a result of the intervention.",
+          "corpus_chunk": 45218
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "We can represent interventions on multiple variables in the same way, replacing the equations for all of the variables intervened on.",
+          "corpus_chunk": 45219
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "A counterfactual is a proposition in the form of a subjunctive conditional.",
+          "corpus_chunk": 45221
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "For instance, one would not reason “If the meat had been cooked rare, then the flame would have been set to low”.",
+          "corpus_chunk": 45221
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "We interpret the counterfactual conditional \\(A \\boxright B\\) as saying that B would be true, if A were made true by an intervention.",
+          "corpus_chunk": 45222
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Consider the world of the gas grill, described in the previous section: Gas connected = 1 Gas knob = 3 Igniter = 1 Meat on = 1 Gas level = Gas connected \\(\\times\\) Gas knob Flame = Gas level \\(\\times\\) Igniter Meat cooked = Flame \\(\\times\\) Meat on To evaluate the counterfactual \\({\\textit{Flame} = 1} \\boxright {\\textit{Meat cooked} = 1}\\) (if the flame had been set to low, the meat would have been cooked rare), we replace the equation for Flame with the assignment Flame = 1.",
+          "corpus_chunk": 45224
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "In this case, the antecedent is a contradiction, and the counterfactual is considered trivially true.",
+          "corpus_chunk": 45224
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Then we change the equation for Flame again, from Flame = 1, to Flame = 2.",
+          "corpus_chunk": 45226
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Nonetheless, if we evaluate a counterfactual with antecedent Flame = 3 in this world, we replace the equation for Flame with Flame = 3.",
+          "corpus_chunk": 45226
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "For example, in our gas grill world, Flame = 3 and \\[ {\\textit{Flame} = 3} \\boxright {({\\textit{Gas level} = 2} \\boxright {\\textit{Meat cooked} = 3})} \\] are both true, but \\[ {\\textit{Gas level} = 2} \\boxright {\\textit{Meat cooked} = 3} \\] is false.",
+          "corpus_chunk": 45228
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "With this intervention in place, a further intervention on Gas level makes no difference to Flame or Meat cooked.",
+          "corpus_chunk": 45228
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "Section 3.3 above discussed counterfactuals in the context of deterministic causal models.",
+          "corpus_chunk": 45292
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "In this case, Lewis would say that the counterfactual “If Ted had not been exposed to asbestos, he would not have developed lung cancer” is determinately false.",
+          "corpus_chunk": 45293
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "If we have a complete structural equation model, we can assign probabilities to counterfactuals, in light of observations.",
+          "corpus_chunk": 45293
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "Call the restriction of this probability function to \\(\\bU\\) \\(\\Pr''\\).",
+          "corpus_chunk": 45294
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "For example, suppose that we believe that asbestos exposure causes lung cancer, so that we posit a simple DAG: Suppose also that we have data for people similar to Ted which yields the following probabilities: (We are oversimplifying, and treating asbestos and lung cancer as binary variables.) We observe that Ted was in fact exposed to asbestos and did in fact develop lung cancer.",
+          "corpus_chunk": 45296
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "He would have to persuade a jury that his exposure to asbestos caused his lung cancer.",
+          "corpus_chunk": 45296
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "However, we do not need to assume that the process is deterministic; it may be the case that each person only has a certain probability of falling into one of these categories.",
+          "corpus_chunk": 45298
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "Let us assume that the distribution of the error variable \\(U_L\\) is independent of asbestos exposure A.",
+          "corpus_chunk": 45298
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "Given the information available to us, all we can conclude is that the probability of necessity is between .45 and 1.",
+          "corpus_chunk": 45299
+        },
+        {
+          "locator": "§ 4.10",
+          "basis": "full text",
+          "excerpt": "As in the case of the probability of necessity, if one does not have a complete structural equation model, but only a Causal Bayes Net or Semi-Markov Causal Model, it is usually only possible to put upper and lower bounds on the probability of sufficiency.",
+          "corpus_chunk": 45301
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Suppose we have a SEM with endogenous variables \\(\\bV\\), exogenous variables \\(\\bU\\), probability distribution P on \\(\\bU\\) and \\(\\bV\\) as described in the previous section, and DAG \\(\\bG\\) representing the causal structure on \\(\\bV\\).",
+          "corpus_chunk": 45244
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Then \\(\\Pr(X, Y \\mid \\bZ) = \\Pr(X \\mid \\bZ) \\times \\Pr(Y \\mid \\bZ)\\) if \\(\\bZ\\) d-separates X and Y in \\(\\bG\\) (explained below).",
+          "corpus_chunk": 45244
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It follows from the probability calculus that \\[\\begin{align} \\Pr(X_1, X_2 , &\\ldots ,X_n)\\ = \\\\ &\\Pr(X_1) \\times \\Pr(X_2 \\mid X_1) \\times \\ldots \\times \\Pr(X_n \\mid X_1, X_2 , \\ldots ,X_{n-1}) \\end{align}\\] (this is a version of the theorem of total probability).",
+          "corpus_chunk": 45246
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "A variable \\(X_i , 1 \\lt i \\lt k\\) is a collider on the path just in case there is an arrow from \\(X_{i-1}\\) to \\(X_i\\) and from \\(X_{i+1}\\) to \\(X_i\\).",
+          "corpus_chunk": 45247
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "If \\(\\bZ\\) does not d-separate \\(\\bX\\) and \\(\\bY\\), then \\(\\bX\\) and \\(\\bY\\) are d-connected by \\(\\bZ\\).",
+          "corpus_chunk": 45247
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Suppose \\(V_i\\) and \\(V_j\\) share at least one common cause that is excluded from \\(\\bV\\).",
+          "corpus_chunk": 45249
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "If X represents a spin measurement on one particle, Y a spin measurement (in the same direction) on the other, then X and Y are perfectly anti-correlated.",
+          "corpus_chunk": 45250
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Z is a common cause of X and Y, and neither X nor Y causes the other.",
+          "corpus_chunk": 45251
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In Pearl’s formulation, (CMC) is just a statement of the mathematical theorem described above: If each variable in \\(\\bV\\) is a deterministic product of its parents in \\(\\bV\\), together with an error term; and the errors are probabilistically independent of each other; then the probability distribution on \\(\\bV\\) will satisfy (MC) with respect to the DAG \\(\\bG\\) representing the functional dependence relations among the variables in \\(\\bV\\).",
+          "corpus_chunk": 45252
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Thus MC characterizes a point at which we have constructed a useful approximation of the complete system.",
+          "corpus_chunk": 45253
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In particular, the use of randomized trials presupposes a special case of the MC.",
+          "corpus_chunk": 45253
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "The MC states a sufficient condition but not a necessary condition for conditional probabilistic independence.",
+          "corpus_chunk": 45255
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "This graph would satisfy the MC with respect to P: none of the independence relations mandated by the MC are absent (in fact, the MC mandates no independence relations).",
+          "corpus_chunk": 45256
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Suppose also that X and Z are unconditionally independent of one another, but dependent, conditional upon Y.",
+          "corpus_chunk": 45257
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Figure 8 Here are some other examples: In Figure 6 above, there is a path \\(W\\rightarrow X\\rightarrow Y\\); FC implies that W and Y should be probabilistically dependent.",
+          "corpus_chunk": 45258
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Nonetheless, parameter values leading to violations of FC are possible, so FC does not seem plausible as a metaphysical or conceptual constraint upon the connection between causation and probabilities.",
+          "corpus_chunk": 45259
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "See Zhang and Spirtes 2016 for comprehensive discussion of the role of FC.",
+          "corpus_chunk": 45259
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "If we have a set of variables \\(\\bV\\) and know the probability distribution P on \\(\\bV\\), what can we infer about the causal structure on \\(\\bV\\)?",
+          "corpus_chunk": 45261
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "For each variable \\(X_i\\), its parents must come from among the variables with lower time indices, call them \\(X_1 ,\\ldots ,X_{i-1}\\).",
+          "corpus_chunk": 45261
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "In general, given a probability distribution P on \\(\\bV\\), it is only possible to identify a Markov equivalence class of causal structures.",
+          "corpus_chunk": 45262
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "On the other hand, suppose the probability distribution is as follows: X and Y are dependent unconditionally, and conditional on Z Y and Z are dependent unconditionally, and conditional on X X and Z are independent unconditionally, but dependent conditional on Y Then the Markov equivalence class is: This is the only DAG relative to which the given probability distribution satisfies MC and FC.",
+          "corpus_chunk": 45264
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "A conditional probability such as \\(\\Pr(Y = y \\mid X = x)\\) gives us the probability that Y will take the value y, given that X has been observed to take the value x.",
+          "corpus_chunk": 45274
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "Information about the value of the variable will also provide us with information about its causes, and about other effects of those causes.",
+          "corpus_chunk": 45274
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "Nonetheless, Pearl (2009) distinguishes claims about interventions represented by the do operator from counterfactuals.",
+          "corpus_chunk": 45275
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "We then ask what would have happened if an intervention had been performed.",
+          "corpus_chunk": 45276
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "The answer is not necessarily zero, nor is it necessarily P(recovery",
+          "corpus_chunk": 45277
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "To represent an intervention that sets \\(X_k\\) to \\(x_k\\), we replace the equation for \\(X_k\\) with \\(X_k = x_k\\).",
+          "corpus_chunk": 45279
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "The post-intervention probability P* is the result of altering the factorization as follows: where \\(\\Pr'(X_k = x_k) = 1\\).",
+          "corpus_chunk": 45280
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "Pearl (2009: Chapter 3) develops an axiomatic system he calls the do-calculus for computing post-intervention probabilities that can be applied to systems with latent variables, where the causal structure on \\(\\bV\\) is represented by an ADMG (including double-headed arrows) instead of a DAG.",
+          "corpus_chunk": 45281
+        },
+        {
+          "locator": "§ 4.7",
+          "basis": "full text",
+          "excerpt": "That is, if we can find an appropriate conditioning set \\(\\bZ\\), the probability resulting from an intervention on X will be the same as the conditional probability corresponding to an observation of X.",
+          "corpus_chunk": 45282
+        },
+        {
+          "locator": "§ 4.9",
+          "basis": "full text",
+          "excerpt": "In the previous section, we discussed how to use knowledge (or assumptions) about the structure of a causal graph \\(\\bG\\) to make inferences about the results of interventions.",
+          "corpus_chunk": 45288
+        },
+        {
+          "locator": "§ 4.9",
+          "basis": "full text",
+          "excerpt": "If we can only intervene on one variable at a time, we may need to separately intervene on all but one of the variables before the causal structure is uniquely identified.",
+          "corpus_chunk": 45289
+        },
+        {
+          "locator": "§ 4.9",
+          "basis": "full text",
+          "excerpt": "A soft intervention influences the value of a variable without breaking the arrows into that variable.",
+          "corpus_chunk": 45289
+        },
+        {
+          "locator": "§ 4.9",
+          "basis": "full text",
+          "excerpt": "If there are no latent common causes, we can infer the true causal structure using soft interventions.",
+          "corpus_chunk": 45291
+        }
+      ],
+      "annotation": "Introduces causal graphs and equations, conditioning versus intervention, identification, and individual counterfactual probabilities."
+    },
+    {
+      "key": "mill1843",
+      "used_for": [
+        "A primary predecessor: Mill's Method of Difference",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "Book III, ch. VIII, § 2",
+          "basis": "full text",
+          "excerpt": "As this method proceeds by comparing different instances to ascertain in what they agree, I have termed it the Method of Agreement; and we may adopt as its regulating principal the following canon: FIRST CANON. _If two or more instances of the phenomenon under investigation have only one circumstance in common, the circumstance in which alone all the instances agree, is the cause (or effect) of the given phenomenon._ Quitting for the present the Method of Agreement, to which we shall almost immediately return, we proceed to a still more potent instrument of the investigation of nature, the Method of Difference. § 2.",
+          "corpus_chunk": 15222
+        },
+        {
+          "locator": "Book III, ch. VIII, § 2",
+          "basis": "full text",
+          "excerpt": "If our object be to discover the effects of an agent A, we must procure A in some set of ascertained circumstances, as A B C, and having noted the effects produced, compare them with the effect of the remaining circumstances B C, when A is absent.",
+          "corpus_chunk": 15223
+        },
+        {
+          "locator": "Book III, ch. VIII, § 2",
+          "basis": "full text",
+          "excerpt": "It is scarcely necessary to give examples of a logical process to which we owe almost all the inductive conclusions we draw in daily life.",
+          "corpus_chunk": 15224
+        },
+        {
+          "locator": "Book III, ch. VIII, § 2",
+          "basis": "full text",
+          "excerpt": "The canon which is the regulating principle of the Method of Difference may be expressed as follows: SECOND CANON. _If an instance in which the phenomenon under investigation occurs, and an instance in which it does not occur, have every circumstance in common save one, that one occurring only in the former; the circumstance in which alone the two instances differ, is the effect, or the cause, or an indispensable part of the cause, of the phenomenon._ § 3.",
+          "corpus_chunk": 15225
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "This term (employed in the theory of equations to denote the process by which one after another of the elements of a question is excluded, and the solution made to depend on the relation between the remaining elements only) is well suited to express the operation, analogous to this, which has been understood since the time of Bacon to be the foundation of experimental inquiry: namely, the successive exclusion of the various circumstances which are found to accompany a phenomenon in a given instance, in order to ascertain what are those among them which can be absent consistently with the existence of the phenomenon.",
+          "corpus_chunk": 15226
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "The Method of Difference has for its foundation, that whatever can not be eliminated, is connected with the phenomenon by a law.",
+          "corpus_chunk": 15226
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "It is true that this similarity of circumstances needs not extend to such as are already known to be immaterial to the result.",
+          "corpus_chunk": 15227
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "In the spontaneous operations of nature there is generally such complication and such obscurity, they are mostly either on so overwhelmingly large or on so inaccessibly minute a scale, we are so ignorant of a great part of the facts which really take place, and even those of which we are not ignorant are so multitudinous, and therefore so seldom exactly alike in any two cases, that a spontaneous experiment, of the kind required by the Method of Difference, is commonly not to be found.",
+          "corpus_chunk": 15229
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "A certain state of surrounding circumstances existed before we commenced the experiment; this is B C.",
+          "corpus_chunk": 15229
+        },
+        {
+          "locator": "Book III, ch. VIII, § 3",
+          "basis": "full text",
+          "excerpt": "If a bird is taken from a cage, and instantly plunged into carbonic acid gas, the experimentalist may be fully assured (at all events after one or two repetitions) that no circumstance capable of causing suffocation had supervened in the interim, except the change from immersion in the atmosphere to immersion in carbonic acid gas.",
+          "corpus_chunk": 15231
+        },
+        {
+          "locator": "Book III, ch. VIII, § 2",
+          "basis": "full text",
+          "excerpt": "If an instance in which the phenomenon under investigation occurs, and an instance in which it does not occur, have every circumstance in common save one, that one occurring only in the former; the circumstance in which alone the two instances differ, is the effect, or the cause, or an indispensable part of the cause, of the phenomenon.",
+          "corpus_chunk": 15225
+        }
+      ],
+      "annotation": "Public-domain primary source for the Method of Difference and the warning that explanatory fit may leave unseen competitors."
+    },
+    {
+      "key": "hitchcock2026",
+      "used_for": [
+        "Simpson reversals",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In the Reichenbach-Suppes definition of causation, the inequality \\(\\PP(E_{t'} \\mid C_t) \\gt \\PP(E_{t'} \\mid {\\nsim}C_t)\\) is necessary, but not sufficient, for causation.",
+          "corpus_chunk": 44398
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Letting C represent smoking, B living in the country, and E lung cancer, \\(\\PP(E \\mid C) \\lt \\PP(E \\mid {\\nsim}C)\\).",
+          "corpus_chunk": 44398
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Skyrms proposed a slightly weaker condition: a cause must raise the probability of its effect in at least one background context, and lower it in none.",
+          "corpus_chunk": 44400
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Suppose D is a causal intermediary, say the presence of tar in the lungs.",
+          "corpus_chunk": 44400
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Cartwright claimed that it is not necessary to appeal to the time order of events to distinguish causes from effects in her theory.",
+          "corpus_chunk": 44402
+        }
+      ],
+      "annotation": "Uses Simpson reversals to explain why numerical associations require a causal account of conditioning variables."
+    },
+    {
+      "key": "reiss-sprenger2020",
+      "used_for": [
+        "What randomization contributes",
+        "What the shortcuts leave out",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "The same demands calling for “mechanical objectivity” in the natural sciences and quantification in the social and policy sciences in the nineteenth century and mid-twentieth century are responsible for a recent movement in biomedical research, which, even more recently, have swept to contemporary social science and policy.",
+          "corpus_chunk": 13976
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "This movement is now very strong in biomedical research, development economics and a number of areas of social science, especially psychology, education and social policy, and especially in the English speaking world.",
+          "corpus_chunk": 13977
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "If an RCT was conducted successfully, the conclusion about the effectiveness of the treatment (or toxicity of a substance) under test is certain for the particular arrangement of factors and conditions of the trial (Cartwright 2007).",
+          "corpus_chunk": 13978
+        },
+        {
+          "locator": "§ 6.3",
+          "basis": "full text",
+          "excerpt": "While unbalanced allocations can certainly happen by chance, randomization still provides some warrant that the allocation was not done on purpose with a view to promoting somebody’s interests.",
+          "corpus_chunk": 13979
+        }
+      ],
+      "annotation": "Distinguishes value-free ideals, inductive risk, social criticism, and the specific protections and limits of randomization."
+    },
+    {
+      "key": "menzies-beebee2025",
+      "used_for": [
+        "Counterfactuals and individual causation",
+        "Read a conclusion at the right level",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Like most contemporary counterfactual theories, Lewis’s theory employs a possible world semantics for counterfactuals.",
+          "corpus_chunk": 45449
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "One world is said to be closer to actuality than another if the first resembles the actual world more than the second does.",
+          "corpus_chunk": 45449
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "This condition states that whether e occurs or not depends on whether c occurs or not.",
+          "corpus_chunk": 45451
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "There are three important things to note about the definition of causal dependence.",
+          "corpus_chunk": 45451
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "This qualification is important if spurious non-causal dependences are to be ruled out.",
+          "corpus_chunk": 45452
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Third, the counterfactuals that are employed in the analysis are to be understood according to what Lewis calls the standard interpretation.",
+          "corpus_chunk": 45454
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The right counterfactuals to be used are non-backtracking counterfactuals that typically hold the past fixed up until the time (or just before the time) at which the counterfactual’s antecedent is supposed to obtain.",
+          "corpus_chunk": 45455
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "As Lewis notes (1973b), causal dependence between actual events is sufficient for causation, but not necessary: it is possible to have causation without causal dependence.",
+          "corpus_chunk": 45463
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Lewis believes that these cases are not suitable test cases for a theory of causation since they do not elicit clear judgements.) The problem raised by this example of preemption is that both actions are on a par from the point of view of causal dependence: had neither A nor B acted, then the dictator would not have died; and if either had acted without the other, the dictator would have died (but see Northcott 2021 for the claim that pre-emption does not, in fact, undermine identifying causation with counterfactual dependence).",
+          "corpus_chunk": 45464
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Then causation is finally defined in these terms: (4) c is a cause of e if and only if there exists a causal chain leading from c to e.",
+          "corpus_chunk": 45464
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "But no corresponding intermediary can be found between b and the dictator’s death; hence b does not count as causes of the death.",
+          "corpus_chunk": 45466
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "As we shall see later, however, some authors have claimed that causation is not in fact transitive.",
+          "corpus_chunk": 45467
+        }
+      ],
+      "annotation": "Reconstructs Lewis’s dependence account and the preemption problem, separating causal chains from simple dependence."
+    }
+  ]
+}

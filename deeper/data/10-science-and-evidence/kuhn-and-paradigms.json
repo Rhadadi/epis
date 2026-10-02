@@ -1,0 +1,375 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "kuhn-and-paradigms",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do exemplars organize normal research, and what follows from methodological, perceptual, and semantic incommensurability?"
+  ],
+  "sources": [
+    {
+      "key": "bird2025",
+      "used_for": [
+        "Learning a practice before questioning it",
+        "Two meanings of paradigm",
+        "The central confusion",
+        "The historical question behind the theory",
+        "Normal science as concentrated problem solving",
+        "What an exemplar contributes",
+        "From anomaly to crisis",
+        "Why common values do not make an algorithm",
+        "Three kinds of incommensurability",
+        "The realist reply: meaning and reference",
+        "Progress without a fixed final destination",
+        "How well does the historical pattern fit?",
+        "What the stage picture leaves out",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In The Structure of Scientific Revolutions Kuhn paints a picture of the development of science quite unlike any that had gone before.",
+          "corpus_chunk": 33339
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Even so, it was becoming clear that scientific change was not always as straightforward as the standard, traditional view would have it.",
+          "corpus_chunk": 33339
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Kuhn describes normal science as ‘puzzle-solving’ (1962/1970a, 35–42).",
+          "corpus_chunk": 33340
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Not all the achievements of the preceding period of normal science are preserved in a revolution, and indeed a later period of science may find itself without an explanation for a phenomenon that in an earlier period was held to be successfully explained.",
+          "corpus_chunk": 33342
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Kuhn rejected both the traditional and Popperian views in this regard.",
+          "corpus_chunk": 33342
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The unusual emphasis on a conservative attitude distinguishes Kuhn not only from the heroic element of the standard picture but also from Popper and his depiction of the scientist forever attempting to refute her most important theories.",
+          "corpus_chunk": 33344
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "It is only the accumulation of particularly troublesome anomalies that poses a serious problem for the existing disciplinary matrix.",
+          "corpus_chunk": 33345
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "According to Popper the revolutionary overthrow of a theory is one that is logically required by an anomaly.",
+          "corpus_chunk": 33346
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This suggestion grew in the hands of some sociologists and historians of science into the thesis that the outcome of a scientific revolution, indeed of any step in the development of science, is always determined by socio-political factors.",
+          "corpus_chunk": 33347
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The revolutionary search for a replacement paradigm is driven by the failure of the existing paradigm to solve certain important anomalies.",
+          "corpus_chunk": 33347
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Kuhn is quick to deny that there is any inference from such increases to improved nearness to the truth (1962/1970a, 170–1).",
+          "corpus_chunk": 33348
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This is the basis of a Kuhnian account of specialization in science (Wray 2011).",
+          "corpus_chunk": 33349
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A mature science, according to Kuhn, experiences alternating phases of normal science and revolutions.",
+          "corpus_chunk": 33351
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Exemplary instances of science are typically to be found in books and papers, and so Kuhn often also describes great texts as paradigms—Ptolemy’s Almagest, Lavoisier’s Traité élémentaire de chimie, and Newton’s Principia Mathematica and Opticks (1962/1970a, 12).",
+          "corpus_chunk": 33352
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Revolutions Kuhn says of paradigms in this sense that they are “the most novel and least understood aspect of this book” (1962/1970a, 187).",
+          "corpus_chunk": 33352
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This success draws away adherents from the other schools, and a widespread consensus is formed around the new puzzle-solutions.",
+          "corpus_chunk": 33354
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Generating new puzzles is one thing that the paradigm puzzle-solution does; helping solve them is another.",
+          "corpus_chunk": 33354
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In each case it is similarity to the exemplar that is the scientists’ guide.",
+          "corpus_chunk": 33355
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "As regards the context of discovery, the standard view held that the philosophy of science had nothing to say on the issue of the functioning of the creative imagination.",
+          "corpus_chunk": 33357
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Perception of similarity cannot be reduced to rules, and a fortiori cannot be reduced to rules of rationality.",
+          "corpus_chunk": 33357
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The incommensurability illustrated above whereby puzzle-solutions from different eras of normal science are evaluated by reference to different paradigms, is methodological incommensurability.",
+          "corpus_chunk": 33363
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Despite the possibility of divergence, there is nonetheless widespread agreement on the desirable features of a new puzzle-solution or theory.",
+          "corpus_chunk": 33364
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Secondly, these criteria are imprecise, and so there is room for disagreement about the degree to which they hold.",
+          "corpus_chunk": 33364
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "An important focus of Kuhn’s interest in The Structure of Scientific Revolutions was on the nature of perception and how it may be that what a scientist observes can change as a result of scientific revolution.",
+          "corpus_chunk": 33366
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Kuhn asserts that Galileo and an Aristotelian when both looking at a pendulum will see different things (see quoted passage below).",
+          "corpus_chunk": 33366
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "One contains constrained bodies that fall slowly, the other pendulums that repeat their motions again and again.",
+          "corpus_chunk": 33367
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Kuhn, however, denied any constructivist import to his remarks on world-change.",
+          "corpus_chunk": 33368
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Although the theory-dependence of observation plays a significant role in The Structure of Scientific Revolutions, neither it nor methodological incommensurability could account for all the phenomena that Kuhn wanted to capture with the notion of incommensurability.",
+          "corpus_chunk": 33370
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Indeed, Kuhn spent much of his career after The Structure of Scientific Revolutions attempting to articulate a semantic conception of incommensurability.",
+          "corpus_chunk": 33371
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Only at low relative velocities may the two be measured in the same way, and even then they must not be conceived to be the same.) (1962/1970a, 102) This is important, because a standard conception of the transition from classical to relativistic physics is that although Einstein’s theory of relativity supersedes Newton’s theory, what we have is an improvement or generalization whereby Newton’s theory is a special case of Einstein’s (to a close approximation).",
+          "corpus_chunk": 33372
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Hence incommensurability is supposed to rule out convergent realism, the view that science shows ever improving approximation to the truth.",
+          "corpus_chunk": 33372
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "According to the latter, it is not the function of the theoretical part of scientific language to refer to and describe unobserved entities.",
+          "corpus_chunk": 33374
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Consequently, the meaning of a theoretical sentence is not equivalent to the meaning of any observational sentence or combination of observational sentences.",
+          "corpus_chunk": 33375
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "By insisting on the theory-dependence of observation, Kuhn in effect argued that the holism of theoretical meaning is shared by apparently observational terms also, and for this reason the problem of incommensurability cannot be solved by recourse to theory-neutral observation sentences.",
+          "corpus_chunk": 33376
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Reference of anything like the Fregean, worldly kind plays no part in Kuhn’s thinking.",
+          "corpus_chunk": 33376
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Although Kuhn asserted a semantic incommensurability thesis in The Structure of Scientific Revolutions he did not there articulate or argue for the thesis in detail.",
+          "corpus_chunk": 33378
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "It was nonetheless clear that Quine’s thesis was rather far from Kuhn’s thesis, indeed that they are incompatible.",
+          "corpus_chunk": 33378
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "The terms of the new and old taxonomies will not be inter-translatable.",
+          "corpus_chunk": 33380
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "This rules out the possibility of an all-encompassing taxonomy that incorporates both the original and the changed taxonomies.",
+          "corpus_chunk": 33380
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "In the closing pages of the first edition of The Structure of Scientific Revolutions, Kuhn articulates an evolutionary analogy for scientific change.",
+          "corpus_chunk": 33382
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "This, says Kuhn, provides a good analogy for the development of science.",
+          "corpus_chunk": 33382
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Kuhn raises the question of whether truth is among the shared criteria of evaluation.",
+          "corpus_chunk": 33384
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "But this improvement is not a matter of getting closer to the truth.",
+          "corpus_chunk": 33384
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Marcum (2015) argues that Kuhn later work amounts to an evolutionary philosophy of science that differs from his earlier historical philosophy of science.",
+          "corpus_chunk": 33386
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Incommensurability is no longer just a matter of the problems of comparability between science and its paradigms either side of a scientific revolution.",
+          "corpus_chunk": 33387
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The conceptual frameworks of related but distinct scientific specialties will thus be separate and incommensurable.",
+          "corpus_chunk": 33387
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "As a child’s language develops, its cognitive capacities and conceptual frameworks evolve.",
+          "corpus_chunk": 33388
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "In The Structure of Scientific Revolutions periods of normal science and revolutionary science are clearly distinguished.",
+          "corpus_chunk": 33397
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "Kuhn could reply that such revisions are not revisions to the paradigm but to the non-paradigm puzzle-solutions provided by normal science.",
+          "corpus_chunk": 33398
+        },
+        {
+          "locator": "§ 7.1",
+          "basis": "full text",
+          "excerpt": "Kuhn’s view is that discoveries and revolutions come about only as a consequence of the appearance of anomalies.",
+          "corpus_chunk": 33398
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Kuhn’s incommensurability thesis presented a challenge not only to positivist conceptions of scientific change but also to realist ones.",
+          "corpus_chunk": 33400
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Whether or not the key terms (such as ‘mass’) in the two theories differ in meaning, a realist and referentialist approach to theories permits one to say that Einstein’s theory is closer to the truth than Newton’s.",
+          "corpus_chunk": 33401
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Consequently, there is no inference to the inadmissibility of the comparison of theories with respect to their truth-nearness.",
+          "corpus_chunk": 33401
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Arguing that they do occur would require more, however, than merely pointing to a change in theory.",
+          "corpus_chunk": 33402
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "Of course, the referentialist response shows only that reference can be retained, not that it must be.",
+          "corpus_chunk": 33403
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "However, we never are able to escape from our current perspective.",
+          "corpus_chunk": 33404
+        },
+        {
+          "locator": "§ 7.2",
+          "basis": "full text",
+          "excerpt": "A naturalized epistemology may add that science itself is in the business of investigating and developing methods.",
+          "corpus_chunk": 33406
+        }
+      ],
+      "annotation": "Explains exemplars, normal and revolutionary research, several kinds of incommensurability, and historical and realist objections."
+    }
+  ]
+}

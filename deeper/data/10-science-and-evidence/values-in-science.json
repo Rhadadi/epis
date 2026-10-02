@@ -1,0 +1,186 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "values-in-science",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Where can values enter inquiry, and how do inductive risk, probability reporting, and social criticism bear on objectivity?"
+  ],
+  "sources": [
+    {
+      "key": "reiss-sprenger2020",
+      "used_for": [
+        "Choosing a question and accepting an answer",
+        "Inductive risk",
+        "A contested argument, with contested boundaries",
+        "Social criticism as a safeguard",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Before addressing what we will call the “value-free ideal”, it will be helpful to distinguish four stages at which values may affect science.",
+          "corpus_chunk": 13886
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This influence may make science more shallow and slow down its long-run progress, but it has benefits, too: scientists will focus on providing solutions to those intellectual problems that are considered urgent by society and they may actually improve people’s lives.",
+          "corpus_chunk": 13887
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A further complication is that these values can conflict with each other.",
+          "corpus_chunk": 13887
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Kuhn (1977) even claims that cognitive values define the shared commitments of science, that is, the standards of theory assessment that characterize the scientific approach as a whole.",
+          "corpus_chunk": 13889
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In the Third Reich, a large part of contemporary physics, such as the theory of relativity, was condemned because its inventors were Jewish; in the Soviet Union, biologist Nikolai Vavilov was sentenced to death (and died in prison) because his theories of genetic inheritance did not match Marxist-Leninist ideology.",
+          "corpus_chunk": 13890
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This preference bias, defined by Wilholt (2009) as the infringement of conventional standards of the research community with the aim of arriving at a particular result, is clearly epistemically harmful.",
+          "corpus_chunk": 13891
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "See Dorato (2004: 53–54), Ruphy (2006: 190) or Biddle (2013: 125) for alternative formulations.",
+          "corpus_chunk": 13892
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This excludes the influence of contextual values, as stated above.",
+          "corpus_chunk": 13892
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Lacey’s characterization of value-free science and the VNT were once mainstream positions in philosophy of science.",
+          "corpus_chunk": 13894
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Contextual values are restricted to a matter of individual psychology that may influence the discovery, development and proliferation of a scientific theory, but not its epistemic status.",
+          "corpus_chunk": 13895
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "First, Helen Longino (1996) has argued that traditional cognitive values such as consistency, simplicity, breadth of scope and fruitfulness are not purely cognitive or epistemic after all, and that their use imports political and social values into contexts of scientific judgment.",
+          "corpus_chunk": 13896
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "It casts the very distinction between cognitive and contextual values into doubt.",
+          "corpus_chunk": 13896
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Indeed, John Dupré has argued that thick ethical terms are ineliminable from science, at least certain parts of it (Dupré 2007).",
+          "corpus_chunk": 13897
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Rudner disputes the core of the VNT and the context of discovery/justification distinction: the idea that the acceptance of a scientific theory can in principle be value-free.",
+          "corpus_chunk": 13899
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Second, he notes that no scientific hypothesis is ever confirmed beyond reasonable doubt—some probability of error always remains.",
+          "corpus_chunk": 13900
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "This corresponds to type I and type II error in statistical inference.",
+          "corpus_chunk": 13900
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Since even strongly confirming evidence cannot fully prove a universal scientific law, we have to live with a residual “inductive risk” in inferring that law.",
+          "corpus_chunk": 13902
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "So she should just refrain from the essentially pragmatic decision to accept or reject hypotheses.",
+          "corpus_chunk": 13902
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Both defenses of the VNT focus on the impact of values in theory choice, either by denying that scientists actually choose theories (Jeffrey), or by referring to community standards and restricting the VNT to the individual scientist (Levi).",
+          "corpus_chunk": 13904
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Traditional notions of objectivity as faithfulness to facts or freedom of contextual values have also been challenged from a feminist perspective.",
+          "corpus_chunk": 13956
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Often but not always, feminist epistemologists go beyond pointing out what they regard as androcentric bias and reject the value-free ideal altogether—with an eye on the social and moral responsibility of scientific inquiry.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Longino assigns a crucial function to social systems of criticism in securing the epistemic success of science.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Even the most implausible beliefs might be true, and even if they are false, they might contain a grain of truth which is worth preserving or helps to better articulate true beliefs (Mill 1859 [2003: 72]).",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Feminist standpoint theory builds on these ideas but focuses on gender, racial and other social relations.",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The perspectival stance can also explain why criteria for objectivity often vary with context: the relative importance of epistemic virtues is a matter of goals and interests—in other words, standpoint.",
+          "corpus_chunk": 13961
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This idea she refers to as “strong objectivity” replaces the “weak” conception of objectivity in the empiricist tradition: value-freedom, impartiality, rigorous adherence to methods of testing and inference.",
+          "corpus_chunk": 13962
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "To whom does the condition of equally shared intellectual authority apply?",
+          "corpus_chunk": 13962
+        }
+      ],
+      "annotation": "Distinguishes value-free ideals, inductive risk, social criticism, and the specific protections and limits of randomization."
+    }
+  ]
+}

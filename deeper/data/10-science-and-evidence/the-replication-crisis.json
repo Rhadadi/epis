@@ -1,0 +1,137 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "the-replication-crisis",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What do different kinds of replication check, and how do reporting selection and planning reforms affect the evidence?"
+  ],
+  "sources": [
+    {
+      "key": "fidler-wilcox2026",
+      "used_for": [
+        "Reproduce what, exactly?",
+        "The published record is selected",
+        "Exploration deserves an accurate label",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A starting point in any philosophical exploration of reproducibility and related notions is to consider the conceptual question of what such notions mean.",
+          "corpus_chunk": 46872
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The Reproducibility Projects, coordinated by the Center for Open Science, redo entire studies, data collection and analysis.",
+          "corpus_chunk": 46872
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A study may be replicable in the former sense but not in the second sense: one might be able to replicate the methods, procedures and analysis of a study, but fail to successfully replicate the results of the original study.",
+          "corpus_chunk": 46874
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As suggested, this distinction may not always be known by these terms.",
+          "corpus_chunk": 46874
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Schmidt’s account has been influential and widely-cited in psychology and social sciences, where the replication crisis literature is heavily concentrated.",
+          "corpus_chunk": 46876
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The causes of irreproducible results are largely the same across disciplines we have mentioned.",
+          "corpus_chunk": 46906
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Over 70% of editors from 79 social science journals said they preferred new studies over replications and over 90% said they would did not encourage the submission of replication studies (Neuliep & Crandall 1990).",
+          "corpus_chunk": 46907
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Developments in text mining techniques have led to more comprehensive estimates.",
+          "corpus_chunk": 46907
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "For example, in psychology the proportion of published results that are statistically significant is 92% despite the fact that the average power of studies in this field to detect medium effect sizes (arguably typical of the discipline) is roughly 44% (Szucs & Ioannidis 2017).",
+          "corpus_chunk": 46909
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "However, the most recent estimate of the statistical power, again of medium effect sizes, of ecology and animal behaviour is 23–26% (Smith, Hardy, & Gammell 2011) (An earlier more optimistic assessment was 40–47%, Jennions & Møller, 2003.) For a third example, the proportion of statistically significant results in neuroscience and behaviour is 85%.",
+          "corpus_chunk": 46910
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "In addition to creating the file-drawer problem described above, publication bias has been held at least partially responsible for the high prevalence of Questionable Research Practices (QRPs) uncovered in both self-report survey research (John, Loewenstein, & Prelec 2012; Agnoli 2017 et al. 2017; Fraser et al. 2018) and in journal studies that have detected, for example, unusual distributions of p values (Masicampo & Lalande 2012; Hartgerink et al. 2016).",
+          "corpus_chunk": 46911
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Simmons, Nelson, and Simonsohn (2011) explained and demonstrated with simulated results how engaging in such practices inflates the false positive error rate of the published literature, leading to a lower rate of reproducible results.",
+          "corpus_chunk": 46912
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Five of the most widespread QRPs are listed below in Table 1 (from Fraser et al. 2018), with associated survey measures of prevalence.",
+          "corpus_chunk": 46913
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The Transparency and Openness Promotion (TOP) guidelines (Nosek et al. 2015) have, as at the end of May, 2018, almost 5,000 journals and organizations as signatories.",
+          "corpus_chunk": 46949
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The purpose is to distinguish prediction from postdiction (Nosek et al. 2018), or what is elsewhere referred to as confirmatory research from exploratory research (Wagenmakers et al. 2012) and a distinction perhaps more commonly known as hypothesis testing versus hypothesis generating research.",
+          "corpus_chunk": 46950
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Some high impact journals, having been singled out in the science media as having particularly problematic publishing practices (e.g., Schekman 2013), have taken exceptional steps to improve the completeness, transparency and reproducibility of the research they publish.",
+          "corpus_chunk": 46951
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In 2018, they produced discipline specific versions for Nature Human Behaviour and Nature Ecology & Evolution.",
+          "corpus_chunk": 46951
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Registered reports shift the point at which peer review occurs in the research process, in an effort to combat publication bias against null (negative) results.",
+          "corpus_chunk": 46953
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Well-established in some sciences like physics, the use of pre-print servers is relatively new in biological and social sciences.",
+          "corpus_chunk": 46954
+        }
+      ],
+      "annotation": "Distinguishes kinds of replication and connects publication selection and flexible analysis to reforms in planning and review."
+    }
+  ]
+}

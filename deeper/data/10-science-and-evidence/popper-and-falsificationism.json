@@ -1,0 +1,187 @@
+{
+  "chapter": "10-science-and-evidence",
+  "section": "popper-and-falsificationism",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Why does the logic of a counter-instance differ from the applied methodology of accepting a falsification?"
+  ],
+  "sources": [
+    {
+      "key": "thornton2026",
+      "used_for": [
+        "A prohibition creates a test",
+        "The practical decision is harder",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "For Popper the central problem in the philosophy of science is that of demarcation, i.e., of distinguishing between science and what he terms “non-science” (e.g., logic, metaphysics, psychoanalysis, and Adler’s individual psychology).",
+          "corpus_chunk": 32538
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In contradistinction to this, Popper holds that there is no unique methodology specific to science; rather, science, like virtually every other organic activity, consists largely of problem-solving.",
+          "corpus_chunk": 32539
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In a critical sense, Popper’s theory of demarcation is based upon his perception of the asymmetry which, at the level of logic, holds between verification and falsification: it is logically impossible to verify a universal proposition by reference to experience (as Hume saw clearly), but a single genuine counter-instance falsifies the corresponding universal law.",
+          "corpus_chunk": 32540
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "However, the universality of such laws, he argues, does rule out the possibility of their verification.",
+          "corpus_chunk": 32540
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "They can only be reached by intuition, based upon something like an intellectual love of the objects of experience.",
+          "corpus_chunk": 32541
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Popper draws a clear distinction between the logic of falsifiability and its applied methodology.",
+          "corpus_chunk": 32543
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In this connection, in the Logic of Scientific Discovery Popper introduces the technical concept of a “basic statement” or “basic proposition”, which he defines as a statement which can serve as a premise in an empirical falsification and which takes the singular existential form “There is an X at Y”.",
+          "corpus_chunk": 32544
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In essence, basic statements are for Popper logical constructs which embrace and include ‘observation statements’, but for methodological reasons he seeks to avoid that terminology, as it suggests that they are derived directly from, and known by, experience (2002: 12, footnote 2), which would conflate them with the “protocol” statements of logical positivism and reintroduce the empiricist idea that certain kinds of experiential reports are incorrigible.",
+          "corpus_chunk": 32545
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Popper therefore argues that there are no statements in science which cannot be interrogated: basic statements, which are used to test the universal theories of science, must themselves be inter-subjectively testable and are therefore open to the possibility of refutation.",
+          "corpus_chunk": 32546
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If we do not come to any decision, and do not accept some basic statement or other, then the test will have led nowhere.",
+          "corpus_chunk": 32547
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The acceptance of basic statements is compared by Popper to trial by jury: the verdict of the jury will be an agreement in accordance with the prevailing legal code and on the basis of the evidence presented, and is analogous to the acceptance of a basic statement by the research community: By its decision, the jury accepts, by agreement, a statement about a factual occurrence—a basic statement, as it were.",
+          "corpus_chunk": 32548
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This … is acknowledged in the rule allowing a verdict to be quashed or revised.",
+          "corpus_chunk": 32548
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Science does not, he maintains, rest upon any foundational bedrock.",
+          "corpus_chunk": 32549
+        }
+      ],
+      "annotation": "Explains Popper’s logic of testing alongside the provisional and revisable methodology of accepting observation reports."
+    },
+    {
+      "key": "hepburn-andersen2026",
+      "used_for": [
+        "A prohibition creates a test",
+        "Revising an auxiliary can be progress",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Another approach that took off from the difficulties with inductive inference was Karl Popper’s critical rationalism or falsificationism (Popper 1959, 1963).",
+          "corpus_chunk": 47138
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Instead, Popper introduced the notion of corroboration as a measure for how well a theory or hypothesis has survived previous testing—but without implying that this is also a measure for the probability that it is true.",
+          "corpus_chunk": 47139
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "If a consequence of a theory is inconsistent with observations, an exception can be added by introducing auxiliary hypotheses designed explicitly to save the theory, so-called ad hoc modifications.",
+          "corpus_chunk": 47140
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The more potential falsifiers of a hypothesis, the more falsifiable it would be, and the more the hypothesis claimed.",
+          "corpus_chunk": 47140
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The ad hoc hypothesis of an outer planet explained the disagreement and led to further falsifiable predictions.",
+          "corpus_chunk": 47141
+        }
+      ],
+      "annotation": "Distinguishes methods, aims, and practices, and reconstructs induction, hypothesis formation, corroboration, and theory repairs."
+    },
+    {
+      "key": "hansson2025",
+      "used_for": [
+        "Testability is not the same as good testing",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Karl Popper described the demarcation problem as the “key to most of the fundamental problems in the philosophy of science” (Popper 1962, 42).",
+          "corpus_chunk": 47036
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Since the property of being a basic statement is a matter of logical form, this criterion of falsifiability depends entirely on logical form.",
+          "corpus_chunk": 47037
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "A (theoretical) sentence, he said, is falsifiable if and only if it logically contradicts some (empirical) sentence that describes a logically possible event that it would be logically possible to observe (Popper [1989] 1994, 83).",
+          "corpus_chunk": 47038
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Popper presented this proposal as a way to draw the line between statements belonging to the empirical sciences and “all other statements – whether they are of a religious or of a metaphysical character, or simply pseudoscientific” (Popper 1962, 39; cf.",
+          "corpus_chunk": 47039
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Several critics have pointed out that most pseudosciences are characterized by having been thoroughly falsified, rather than by being impossible or even difficult to falsify.",
+          "corpus_chunk": 47040
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "He took Marxism to be exemplary of a formerly scientific theory, which lost this status when some of its predictions were refuted.",
+          "corpus_chunk": 47040
+        }
+      ],
+      "annotation": "Separates non-science, bad science, and pseudoscience, examining testability, scientific pretence, warning signs, and denial."
+    }
+  ]
+}

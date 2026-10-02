@@ -21,7 +21,8 @@ This file adds the workflow and tools.
 | 04 Language, concepts and definitions | 17 | published |
 | 05–08 | 46 | published (by Codex) |
 | 09 Induction, probability and Bayes | 12 | published |
-| 10–16 | 0 | to do (list in section 8) |
+| 10 Science and evidence | 18 | published |
+| 11–16 | 0 | to do (list in section 8) |
 
 After that: the final polish pass (section 9).
 
