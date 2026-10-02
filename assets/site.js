@@ -49,7 +49,9 @@
     var btn = document.getElementById("theme");
     if (btn) {
       var next = pref === "system" ? "light" : pref === "light" ? "dark" : "system";
-      btn.innerHTML = ICON[pref];
+      var ico = btn.querySelector(".ico"), tl = btn.querySelector(".tl");  // in the user menu: icon and label
+      if (ico) ico.innerHTML = ICON[pref]; else btn.innerHTML = ICON[pref];
+      if (tl) tl.textContent = T("Theme: ", "پوسته: ") + THEME_NAMES[shade || pref];
       btn.setAttribute("aria-label", T("Theme: ", "پوسته: ") + THEME_NAMES[shade || pref] + T(". Switch to ", ". رفتن به ") + THEME_NAMES[next] + ".");
       btn.title = T("Theme: ", "پوسته: ") + THEME_NAMES[shade || pref];
     }
@@ -106,6 +108,21 @@
     menuBtn.addEventListener("click", function (e) { e.stopPropagation(); setMenu(mnav.hidden); });
     document.addEventListener("click", function (e) { if (!mnav.hidden && !mnav.contains(e.target)) setMenu(false); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !mnav.hidden) { setMenu(false); menuBtn.focus(); } });
+  }
+
+  /* ------------------------------------------------------------ user menu (account, download, reading settings, theme) */
+  var ubtn = document.getElementById("ubtn"), umenu = document.getElementById("umenu");
+  if (ubtn && umenu) {
+    var setU = function (open) {
+      umenu.hidden = !open;
+      ubtn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open && bar) bar.classList.add("peek");
+    };
+    ubtn.addEventListener("click", function (e) { e.stopPropagation(); setU(umenu.hidden); });
+    document.addEventListener("click", function (e) { if (!umenu.hidden && !umenu.contains(e.target)) setU(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !umenu.hidden) { setU(false); ubtn.focus(); } });
+    // reading settings opens its own panel; the theme button stays, so the choice can be seen
+    umenu.addEventListener("click", function (e) { if (e.target.closest("#reader")) setU(false); }, true);
   }
 
   /* ------------------------------------------------------------ contents rail */
@@ -531,15 +548,16 @@
     });
   }
 
-  /* ------------------------------------------------------------ the chapters list at the top of a chapter */
-  document.querySelectorAll("details.chlist").forEach(function (d) {
+  /* ------------------------------------------------------------ the chapter switcher in the site bar */
+  document.querySelectorAll("details.chsw-pick").forEach(function (d) {
     document.addEventListener("click", function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && d.open) { d.open = false; d.querySelector("summary").focus(); }
     });
     d.addEventListener("toggle", function () {  // the current chapter in view
-      var cur = d.open && d.querySelector("[aria-current]");
-      if (cur) cur.scrollIntoView({ block: "center" });
+      if (d.open && bar) bar.classList.add("peek");
+      var cur = d.open && d.querySelector("[aria-current]"), list = d.querySelector("ol");
+      if (cur && list) list.scrollTop = cur.offsetTop - list.clientHeight / 2;
     });
   });
 

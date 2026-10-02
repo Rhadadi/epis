@@ -257,6 +257,8 @@ def attr(value):
 def icon(name, cls="icon"):
     paths = {
         "book": '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>',
+        "chev": '<path d="m15 18-6-6 6-6"/>',
+        "toc": '<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.1"/><circle cx="4.5" cy="12" r="1.1"/><circle cx="4.5" cy="18" r="1.1"/>',
         "map": '<circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="9" r="2"/><path d="M6.7 7 10.4 8.4M17.3 7l-3.7 1.4M12 11v5"/>',
         "grid": '<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
         "phones": '<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/>',
@@ -545,21 +547,38 @@ def polish(body):
 
 # ----------------------------------------------------------------------------- page shell
 
+_ASSET_V = {}
+def av(root, name):
+    """An asset URL with a short content hash, so browsers fetch a stylesheet or script again as soon as it changes."""
+    if name not in _ASSET_V:
+        _ASSET_V[name] = hashlib.sha1((ASSETS / name).read_bytes()).hexdigest()[:10]
+    return f"{root}assets/{name}?v={_ASSET_V[name]}"
+
+
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
-          alt=None, bilingual=False):
+          alt=None, bilingual=False, chapter_nav=""):
     h = home(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
-           ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن")),
-           ("download", f"{h}guide/download.html", "download", L("Download", "دریافت")),
-           ("account", f"{h}account/", "user", L("My study", "مطالعهٔ من"))]
+           ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن"))]
     here = ' aria-current="page"'
-    links = "".join(f'<a href="{href}"{here if key == current else ""}>{icon(ic)}<span>{label}</span></a>'
+    links = "".join(f'<a href="{href}"{here if key == current else ""} title="{label}">{icon(ic)}<span>{label}</span></a>'
                     for key, href, ic, label in nav)
     preload = (f'<link rel="preload" as="image" href="{hero_img[0]}" imagesrcset="{hero_img[1]}" imagesizes="100vw">'
                if hero_img else "")
     full_title = title if title == site_name() else f"{title} · {site_name()}"
-    reader_btn = (f'<button class="tbtn rbtn" id="reader" type="button" aria-label="{L("Reading settings", "تنظیمات خواندن")}" '
-                  f'title="{L("Reading settings (A)", "تنظیمات خواندن (A)")}" aria-expanded="false" aria-controls="rpanel">Aa</button>')
+    # the user menu: account, notebook, review, download, reading settings and theme
+    cur = lambda key: here if key == current else ""
+    reader_item = (f'<button id="reader" type="button" aria-expanded="false" aria-controls="rpanel" title="{L("Reading settings (A)", "تنظیمات خواندن (A)")}">'
+                   f'<i class="aa" aria-hidden="true">Aa</i><span>{L("Reading settings", "تنظیمات خواندن")}</span></button>') if reader else ""
+    user_menu = (f'<div class="umenu-wrap"><button class="tbtn" id="ubtn" type="button" aria-expanded="false" aria-controls="umenu" '
+                 f'aria-label="{L("Your study, downloads and settings", "مطالعهٔ شما، دریافت و تنظیمات")}" title="{L("Your study and settings", "مطالعه و تنظیمات")}">{icon("user")}</button>'
+                 f'<div class="umenu" id="umenu" hidden>'
+                 f'<a href="{h}account/"{cur("account")}>{icon("user")}<span>{L("My study", "مطالعهٔ من")}</span></a>'
+                 f'<a href="{h}notes/">{icon("pen")}<span>{L("Notebook", "دفترچه")}</span></a>'
+                 f'<a href="{h}review/">{icon("review")}<span>{L("Review questions", "مرور پرسش‌ها")}</span></a>'
+                 f'<a href="{h}guide/download.html"{cur("download")}>{icon("download")}<span>{L("Download", "دریافت")}</span></a>'
+                 f'<span class="sep"></span>{reader_item}'
+                 f'<button id="theme" type="button"><i class="ico" aria-hidden="true"></i><span class="tl">{L("Theme", "پوسته")}</span></button></div></div>')
     ask_btn = (f'<button class="tbtn" id="ask" type="button" aria-expanded="false" aria-label="{L("Ask the study companion", "پرسش از همراهِ مطالعه")}" '
                f'title="{L("Ask about this page (I)", "دربارهٔ این صفحه بپرسید (I)")}">{icon("chat")}</button>') if reader else ""
     focus_btn = (f'<button class="tbtn" id="focus" type="button" aria-pressed="false" aria-label="{L("Focus mode", "حالت تمرکز")}" '
@@ -582,30 +601,29 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <link rel="apple-touch-icon" href="{root}assets/icon-192.png">
 <link rel="manifest" href="{root}manifest.webmanifest">
 {alt_link}
-<link rel="stylesheet" href="{root}assets/fonts/fonts.css">
-<link rel="stylesheet" href="{root}assets/site.css">
+<link rel="stylesheet" href="{av(root, "fonts/fonts.css")}">
+<link rel="stylesheet" href="{av(root, "site.css")}">
 {preload}{extra_head}
 <script>{BOOT}</script>
 </head>
 <body>
 <a class="skip" href="#main">{L("Skip to content", "رفتن به متن")}</a>
-<header class="bar {bar}">
-  <a class="brand" href="{h}" aria-label="{site_name()}, {L("home", "صفحهٔ نخست")}">{LOGO}<span><b>{site_name()}</b><small>{L("Guide · Map · Audio", "راهنما · نقشه · صوت")}</small></span></a>
+<header class="bar {bar}{" has-chsw" if chapter_nav else ""}">
+  <a class="brand" href="{h}" aria-label="{site_name()}, {L("home", "صفحهٔ نخست")}">{LOGO}<span><b>{site_name()}</b><small>{L("Guide · Map · Audio", "راهنما · نقشه · صوت")}</small></span></a>{chapter_nav}
   <nav class="site-nav" aria-label="{L("Site", "سایت")}">{links}</nav>
-  <button class="tbtn" id="search" type="button" aria-label="{L("Search the guide", "جست‌وجو در راهنما")}" title="{L("Search (/)", "جست‌وجو (/)")}">{icon("search")}</button>{ask_btn}{focus_btn}{reader_btn}{lang_btn}<button class="tbtn" id="theme" type="button" aria-label="{L("Theme", "پوسته")}"></button>
+  <button class="tbtn" id="search" type="button" aria-label="{L("Search the guide", "جست‌وجو در راهنما")}" title="{L("Search (/)", "جست‌وجو (/)")}">{icon("search")}</button>{ask_btn}{focus_btn}{lang_btn}{user_menu}
   <button class="tbtn" id="menu" type="button" aria-label="{L("Menu", "فهرست")}" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
 </header>
-<nav class="mnav" id="mnav" aria-label="{L("Menu", "فهرست")}" hidden>{links}<span class="sep"></span>
-  <a href="{h}notes/">{icon("pen")}<span>{L("Notebook", "دفترچه")}</span></a><a href="{h}review/">{icon("review")}<span>{L("Review questions", "مرور پرسش‌ها")}</span></a>
-  {f'<a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else ""}</nav>
+<nav class="mnav" id="mnav" aria-label="{L("Menu", "فهرست")}" hidden>{links}
+  {f'<span class="sep"></span>' if alt else ""}{f'<a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else ""}</nav>
 {body}
 {footer(root)}
-<script src="{root}assets/site.js" defer></script>
-<script src="{root}assets/notes.js" defer></script>
-<script src="{root}assets/learn.js" defer></script>
-<script src="{root}assets/ai-config.js" defer></script>
-<script src="{root}assets/account.js" defer></script>
-<script src="{root}assets/ai.js" defer></script>
+<script src="{av(root, "site.js")}" defer></script>
+<script src="{av(root, "notes.js")}" defer></script>
+<script src="{av(root, "learn.js")}" defer></script>
+<script src="{av(root, "ai-config.js")}" defer></script>
+<script src="{av(root, "account.js")}" defer></script>
+<script src="{av(root, "ai.js")}" defer></script>
 </body>
 </html>
 """
@@ -878,19 +896,17 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                   f'<div class="fmeta"><span>{num(ch.minutes)} {L("min read", "دقیقه مطالعه")}</span>{listen_link}'
                   f'<button type="button" data-focus-toggle>{L("Leave focus mode", "خروج از حالت تمرکز")}</button></div></div>')
     prev_ch, next_ch = chapters.get(ch.num - 1), chapters.get(ch.num + 1)
-    # at the top of every chapter: the chapter before, every chapter, the chapter after
+    # in the site bar, beside the site name: the chapter before, every chapter, the chapter after
     here_ = ' aria-current="page"'
     all_chs = "".join(f'<li><a href="{c.href}"{here_ if c.num == ch.num else ""}><small>{c.label}</small><span>{esc(c.title)}</span></a></li>'
                       for _, c in sorted(chapters.items()))
-    arrow_p, arrow_n = L("←", "→"), L("→", "←")
-    side = lambda c, cls, word, arrow, rel: (
-        f'<a class="{cls}" href="{c.href}" rel="{rel}" title="{attr(c.label + ": " + c.title)}"><span class="ar" aria-hidden="true">{arrow}</span>'
-        f'<span class="w"><small>{word}</small><b>{c.label}</b></span></a>' if c else f'<span class="{cls}"></span>')
-    chnav = (f'<nav class="chnav" aria-label="{L("Chapters", "فصل‌ها")}">'
-             + side(prev_ch, "prev", L("Previous", "قبلی"), arrow_p, "prev")
-             + f'<details class="chlist"><summary>{icon("book")}<span>{L("Chapters", "فصل‌ها")}</span></summary>'
-               f'<ol>{all_chs}<li class="all"><a href="./">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></li></ol></details>'
-             + side(next_ch, "next", L("Next", "بعدی"), arrow_n, "next") + "</nav>")
+    steps_row = ((f'<a href="{prev_ch.href}" rel="prev"><small>{L("← Previous", "→ قبلی")}</small><span>{esc(prev_ch.title)}</span></a>' if prev_ch else "<span></span>")
+                 + (f'<a class="next" href="{next_ch.href}" rel="next"><small>{L("Next →", "بعدی ←")}</small><span>{esc(next_ch.title)}</span></a>' if next_ch else "<span></span>"))
+    chsw = (f'<nav class="chsw" aria-label="{L("Chapters", "فصل‌ها")}">'
+            + f'<details class="chsw-pick"><summary class="tbtn" title="{L("Chapters", "فصل‌ها")}" '
+              f'aria-label="{L("Chapters", "فصل‌ها")} ({attr(ch.label)}: {attr(ch.title)})">{icon("toc")}</summary>'
+              f'<div class="chsw-panel"><div class="chsw-steps">{steps_row}</div><ol>{all_chs}</ol>'
+              f'<a class="all" href="./">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></div></details></nav>')
     prev_w, next_w = L("← Previous", "→ قبلی"), L("Next", "بعدی")
     pager = f'<nav class="pager" aria-label="{L("Chapters", "فصل‌ها")}">'
     pager += (tile(art, prev_ch.art, root, prev_ch.href, f"{prev_w} · {prev_ch.label}", esc(prev_ch.title)) if prev_ch
@@ -908,10 +924,10 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     page = (f"{head}{label(art, ch.art)}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
             f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
-            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{chnav}{notice}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
+            f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{notice}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
             f'<div class="prose"{prose_attrs}>{more_quotes}{body}</div>{deeper_box(ch, C, root) if ch.num <= 16 else ""}</article></main>{pager}')
     desc = ch.blurb.replace("*", "") or f"{ch.label}: {ch.title}"
-    svgs_later.append((OUT() / "guide" / ch.href, page, root, ch, desc))
+    svgs_later.append((OUT() / "guide" / ch.href, page, root, ch, desc, chsw))
 
 
 # ----------------------------------------------------------------------------- concepts
@@ -3151,10 +3167,11 @@ def build_language(art, md, C, tracks):
     home_page = build_home(art, chapters, md, total_label, len(C.N))
     svgs = render_mermaid(md, prune=False)
     r1, r0, r2 = up(1), up(0), up(2)
-    for path, body, root, ch, desc in later:
+    for path, body, root, ch, desc, chsw in later:
         body = place_diagrams(body, md, svgs)
         page(f"guide/{ch.href}", root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=body,
-             current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True)
+             current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True,
+             chapter_nav=chsw)
     if LANG == "en":
         build_deeper(chapters, md, art)
     page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
