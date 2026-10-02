@@ -1,0 +1,197 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "a-catalogue-of-intellectual-virtues",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How can a catalogue identify distinct tasks and appropriate judgment without pretending to be a diagnostic scale?"
+  ],
+  "sources": [
+    {
+      "key": "turri-etal2021",
+      "used_for": [
+        "What a catalogue should explain",
+        "Good judgment between failures",
+        "From personal traits to surroundings",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Another “growth area” for VE is profiles of individual virtues and vices.",
+          "corpus_chunk": 5365
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Baehr (2011, chap. 9) likewise argues that intellectual courage is best construed as a disposition to respond well to threats to one’s epistemic well-being; he focuses in particular on the courage to inquire rather than the courage to believe or doubt.",
+          "corpus_chunk": 5366
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Having such a sense of when and how to speak one’s mind is a primary constituent of the virtue of being an effective whistleblower, an underappreciated exemplar of the current era (DesAutels 2009).",
+          "corpus_chunk": 5367
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "This conception of intellectual humility is most pertinent in the realm of disagreement.",
+          "corpus_chunk": 5368
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Samuelson and Church think that intellectual humility can be implemented as a motivating trait, but they are inclined to construe it in the dual-system framework, where it harmonizes automatic intuitive processes (heuristics, affective judgments, etc.) with slow, controlled, effortful, attentive thought and deliberation.",
+          "corpus_chunk": 5369
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Such attentiveness can be conscious, but it is grounded in an implicit sensitivity to one’s own dispositions.",
+          "corpus_chunk": 5370
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Rather than consulting their own intuitions about what the facets of intellectual humility and its opposing vices are, however, they employ a thesaurus-based psycholexical analysis, which suggests that intellectual humility has three positive facets (the sensitive self, the discreet self, and the inquisitive self) and three opposing vices (the underrated other, the underrated self, and the overrated self).",
+          "corpus_chunk": 5371
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Miranda Fricker (2003, 2007) provides a detailed case study of the virtue of epistemic justice and the opposing vice of “epistemic injustice” suffered by the marginalized and less powerful.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "The vice of testimonial injustice is a disposition to commit such acts of epistemic injustice.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Sherman (2016) agrees with Fricker about the harm caused by testimonial injustice but questions the efficacy of trying to cultivate a virtue to correct it.",
+          "corpus_chunk": 5374
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Also in response to Sherman, Davidson and Kelly (2015) argue that while it may be difficult or impossible to adjust one’s credence in the moment, taking distal ecological control (Clark 2007) over one’s material, social, and political environment can help to tamp down or eradicate the biases that lead to testimonial injustice.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Other intellectual virtues have received less attention to date, though not for lack of philosophical merit.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Start with an uncontroversial, but still informative, characterization of intellectual virtues: intellectual virtues are characteristics that promote intellectual flourishing, or which make for an excellent cognizer.",
+          "corpus_chunk": 5315
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This reliabilist/responsibilist taxonomy has attracted criticism (Fleisher 2017).",
+          "corpus_chunk": 5316
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Faculty-virtues seem indispensable in accounting for knowledge of the past and the world around us.",
+          "corpus_chunk": 5316
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Are they instrumentally, constitutively, or intrinsically valuable?",
+          "corpus_chunk": 5318
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "They neglect other-regarding intellectual virtues, such as honesty and integrity, which promote other people’s acquisition of knowledge and intellectual flourishing.",
+          "corpus_chunk": 5319
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "As mentioned above, practitioners of all stripes tend to recognize the importance of empirical findings about cognition and inquiry.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "However, if the dispositions practitioners assume to exist are never or rarely embodied by humans, then skepticism looms.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Should epistemic virtues be coarsely individuated, so that open-mindedness makes the cut, or should they be finely individuated, so that open-mindedness towards friends while in a good mood makes the cut?",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These considerations notwithstanding, the cognitive sciences might pose a threat to VE.",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Mark Alfano (2012: 234) first framed the problem as an inconsistent triad: anti-skepticism, according to which almost all humans have quite a bit of knowledge, epistemic situationism, according to which most people’s intellectual dispositions are not virtues because they are highly sensitive to seemingly trivial and epistemically irrelevant situational factors, and VE.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These factors include mood elevators, mood depressors, and social cues of unanimous versus non-unanimous agreement.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "And King (2014a) defends responsibilism by pointing out that, at least on Zagzebski’s (1996) version of VE, knowledge needn’t manifest virtue but instead needs only to arise from the sort of motivated inquiry that a virtuous person would engage in.",
+          "corpus_chunk": 5356
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Cassam (2016) argues that the extensive literature on conspiracy theories and conspiratorial thinking shows that people are prone to various intellectual vices, understood as character traits that impede effective and responsible inquiry.",
+          "corpus_chunk": 5357
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Someone who is luckily placed in their material, social, and political environment will end up with more knowledge despite less exercise of cognitive agency than someone who is unluckily placed, even if the latter exercises heroic levels of cognitive agency.",
+          "corpus_chunk": 5358
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Embedded cognition occurs in a mostly-stable natural environment; scaffolded cognition occurs in a mostly-stable artificial environment; outright extended cognition occurs in a dynamically-reactive environment.",
+          "corpus_chunk": 5359
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Alfano (2016a) and Alfano and Skorburg (2017) argue that, in some cases, pairs of agents mutually constitute each other’s character by engaging in dynamic interactions with interlocking virtues.",
+          "corpus_chunk": 5360
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Moreover, if knowledge is an achievement, then we should expect it to not require reliability, because no other achievement requires reliability (Turri 2015c).",
+          "corpus_chunk": 5361
+        }
+      ],
+      "annotation": "Main secondary map of faculty and character virtues, aptness, value, credit and testimony, situationism, particular virtues, and vice epistemology; contemporary books are not represented as independently read."
+    }
+  ]
+}

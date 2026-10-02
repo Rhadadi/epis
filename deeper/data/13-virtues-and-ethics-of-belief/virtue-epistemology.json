@@ -1,0 +1,443 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "virtue-epistemology",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do faculties, character, aptness, credit, testimony, situationism, and institutional supports explain good inquiry?"
+  ],
+  "sources": [
+    {
+      "key": "turri-etal2021",
+      "used_for": [
+        "A correct answer and a good performance",
+        "An attitude and an achievement",
+        "An older vocabulary and a modern family of theories",
+        "Faculties and character",
+        "Sosa’s performance model",
+        "Conditions of competence and environmental luck",
+        "Why knowledgeable success might have special value",
+        "Credit and the contribution of other people",
+        "Character as a guide to inquiry",
+        "Situationism and the stability of traits",
+        "Testimonial justice and structural limits",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "At least two central tendencies are evident in VE taken as a whole.",
+          "corpus_chunk": 5309
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Accordingly, VE features centrally in the recent “value turn” in epistemology (Riggs 2006; Pritchard 2007).",
+          "corpus_chunk": 5309
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Perhaps epistemology should help us appreciate and respond to forms of “epistemic injustice” (Fricker 2007).",
+          "corpus_chunk": 5310
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Virtue ethics explains an action’s moral properties in terms of the agent’s properties, such as whether it results from kindness or spite.",
+          "corpus_chunk": 5312
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Another “growth area” for VE is profiles of individual virtues and vices.",
+          "corpus_chunk": 5365
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Baehr (2011, chap. 9) likewise argues that intellectual courage is best construed as a disposition to respond well to threats to one’s epistemic well-being; he focuses in particular on the courage to inquire rather than the courage to believe or doubt.",
+          "corpus_chunk": 5366
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Having such a sense of when and how to speak one’s mind is a primary constituent of the virtue of being an effective whistleblower, an underappreciated exemplar of the current era (DesAutels 2009).",
+          "corpus_chunk": 5367
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "This conception of intellectual humility is most pertinent in the realm of disagreement.",
+          "corpus_chunk": 5368
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Samuelson and Church think that intellectual humility can be implemented as a motivating trait, but they are inclined to construe it in the dual-system framework, where it harmonizes automatic intuitive processes (heuristics, affective judgments, etc.) with slow, controlled, effortful, attentive thought and deliberation.",
+          "corpus_chunk": 5369
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Such attentiveness can be conscious, but it is grounded in an implicit sensitivity to one’s own dispositions.",
+          "corpus_chunk": 5370
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Rather than consulting their own intuitions about what the facets of intellectual humility and its opposing vices are, however, they employ a thesaurus-based psycholexical analysis, which suggests that intellectual humility has three positive facets (the sensitive self, the discreet self, and the inquisitive self) and three opposing vices (the underrated other, the underrated self, and the overrated self).",
+          "corpus_chunk": 5371
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Miranda Fricker (2003, 2007) provides a detailed case study of the virtue of epistemic justice and the opposing vice of “epistemic injustice” suffered by the marginalized and less powerful.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "The vice of testimonial injustice is a disposition to commit such acts of epistemic injustice.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Sherman (2016) agrees with Fricker about the harm caused by testimonial injustice but questions the efficacy of trying to cultivate a virtue to correct it.",
+          "corpus_chunk": 5374
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Also in response to Sherman, Davidson and Kelly (2015) argue that while it may be difficult or impossible to adjust one’s credence in the moment, taking distal ecological control (Clark 2007) over one’s material, social, and political environment can help to tamp down or eradicate the biases that lead to testimonial injustice.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Other intellectual virtues have received less attention to date, though not for lack of philosophical merit.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Practitioners draw inspiration from many important historical philosophers, including Plato (Zagzebski 1996: 139), Aristotle (Greco 2002: 311; Sosa 2009: 187; Zagzebski 1996, passim), Aquinas (Roberts & Wood 2007: 69–70; Zagzebski 1996, passim), Descartes (Sosa 2007: ch. 6), Kierkegaard (Roberts & Wood 2007: 29–30), Nietzsche (Alfano 2013a), and Peirce (Hookway 2000).",
+          "corpus_chunk": 5313
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Sosa applied his “virtue perspectivism” to adjudicate disputes in contemporary epistemology, such as the disputes between foundationalists and coherentists, and between internalists and externalists (for a review, see Turri 2013).",
+          "corpus_chunk": 5314
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Start with an uncontroversial, but still informative, characterization of intellectual virtues: intellectual virtues are characteristics that promote intellectual flourishing, or which make for an excellent cognizer.",
+          "corpus_chunk": 5315
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This reliabilist/responsibilist taxonomy has attracted criticism (Fleisher 2017).",
+          "corpus_chunk": 5316
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Faculty-virtues seem indispensable in accounting for knowledge of the past and the world around us.",
+          "corpus_chunk": 5316
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Are they instrumentally, constitutively, or intrinsically valuable?",
+          "corpus_chunk": 5318
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "They neglect other-regarding intellectual virtues, such as honesty and integrity, which promote other people’s acquisition of knowledge and intellectual flourishing.",
+          "corpus_chunk": 5319
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Disagreements about the nature of virtue are closely connected to another pair of disagreements.",
+          "corpus_chunk": 5320
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "An example of conventional VE is Ernest Sosa’s (1991: section IV) attempt to define knowledge as true belief held “out of intellectual virtue”, or to settle the dispute among internalists and externalists about epistemic justification (Sosa 2003: ch. 9), providing detailed definitions and carefully trying to disarm counterexamples.",
+          "corpus_chunk": 5321
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Another example is Jonathan Kvanvig’s (1992) argument that VE will flourish only by relinquishing the Cartesian epistemological project and instead focusing on the role that virtues play in training and education.",
+          "corpus_chunk": 5322
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Conventional practitioners likewise recognize that “alternative” questions are not only important but as old as philosophy itself, such as questions about wisdom and the social transmission of knowledge.",
+          "corpus_chunk": 5323
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Many virtue epistemologists agree that, in very general terms, knowledge is non-accidentally true belief.",
+          "corpus_chunk": 5324
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "For instance, some begin with the intuitive thought that you don’t know something if it is “largely a matter of luck” that you believe it (Riggs 2007).",
+          "corpus_chunk": 5325
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Start with a belief sufficiently justified to meet the justification condition for knowledge.",
+          "corpus_chunk": 5326
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "However, her husband was seated along the opposite wall of the living room, out of Mary’s sight, dozing in a different chair.",
+          "corpus_chunk": 5326
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The most widely discussed articulation of this view is Ernest Sosa’s AAA–model of performance assessment (Sosa 2007: 22–3; for related but subtly different approaches, see Greco 2003 & 2010 and Morton 2013).",
+          "corpus_chunk": 5328
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "For beliefs, accuracy is identified with truth, adroitness with manifesting intellectual competence, and aptness with being “true because competent”.",
+          "corpus_chunk": 5329
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "She might have luckily avoided being drugged before the competition, which would have impaired her competence.",
+          "corpus_chunk": 5329
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Some have argued that Sosa’s AAA-model is open to counterexamples.",
+          "corpus_chunk": 5330
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Had he instead set eyes on any of the numerous nearby fakes, he would have falsely believed it was a barn.",
+          "corpus_chunk": 5331
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "What is the nature of epistemic value and how is knowledge distinctively epistemically valuable?",
+          "corpus_chunk": 5333
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "The solution is to view knowledge as a credit-worthy state of the agent, produced or sustained by her virtuous agency.",
+          "corpus_chunk": 5334
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If knowing that p always entails that one deserves credit for having achieved a true belief, then this introduces something besides true belief that is valuable Carter, Jarvis and Rubin (2015) propose a taxonomy of varieties of cognitive achievement based on the relative weights given to achieving success versus avoiding failure; for example, having a suspicion that p is a cognitive attempt that puts more weight on achieving success, whereas Cartesian certainty that p is a cognitive attempt to puts almost exclusive weight on avoiding failure.",
+          "corpus_chunk": 5335
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "The successful exercise of one’s intellectual virtues is both intrinsically good and constitutive of human flourishing.",
+          "corpus_chunk": 5336
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "As we reviewed in the sections on knowledge and epistemic value, a very popular thesis in VE is that knowledge is a credit-worthy state of the agent.",
+          "corpus_chunk": 5337
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Here is a close variant of one of Lackey’s cases (Lackey 2007: 352), which she later (2009) calls “Chicago Visitor”: Morris just arrived at the Chicago train station and wants directions to the Sears Tower.",
+          "corpus_chunk": 5338
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Lackey also asks us to consider “the possibility of natural innate knowledge” (Lackey 2007: 358).",
+          "corpus_chunk": 5339
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Partial credit grounded in apt performance is a perfectly general phenomenon, as common in team sport as in testimony.",
+          "corpus_chunk": 5339
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Knowledge requires that your true belief be attributable to you as an agent, but not that you be praiseworthy for it.",
+          "corpus_chunk": 5340
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "A different kind of response proposes that knowledge-producing virtues are often seated not in the individual knower, but in the broader intellectual community.",
+          "corpus_chunk": 5342
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Greco (2020) uses a joint agency framework to understand testimonial knowledge.",
+          "corpus_chunk": 5342
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Finally, we may note that much of the forgoing discussion about knowledge transmission can be extended to knowledge generation as well.",
+          "corpus_chunk": 5344
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Either VE’s notion of creditworthiness is substantial enough to rule out credit for Gettier subjects or it isn’t.",
+          "corpus_chunk": 5344
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "As mentioned above, practitioners of all stripes tend to recognize the importance of empirical findings about cognition and inquiry.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "However, if the dispositions practitioners assume to exist are never or rarely embodied by humans, then skepticism looms.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Should epistemic virtues be coarsely individuated, so that open-mindedness makes the cut, or should they be finely individuated, so that open-mindedness towards friends while in a good mood makes the cut?",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These considerations notwithstanding, the cognitive sciences might pose a threat to VE.",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Mark Alfano (2012: 234) first framed the problem as an inconsistent triad: anti-skepticism, according to which almost all humans have quite a bit of knowledge, epistemic situationism, according to which most people’s intellectual dispositions are not virtues because they are highly sensitive to seemingly trivial and epistemically irrelevant situational factors, and VE.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These factors include mood elevators, mood depressors, and social cues of unanimous versus non-unanimous agreement.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "And King (2014a) defends responsibilism by pointing out that, at least on Zagzebski’s (1996) version of VE, knowledge needn’t manifest virtue but instead needs only to arise from the sort of motivated inquiry that a virtuous person would engage in.",
+          "corpus_chunk": 5356
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Cassam (2016) argues that the extensive literature on conspiracy theories and conspiratorial thinking shows that people are prone to various intellectual vices, understood as character traits that impede effective and responsible inquiry.",
+          "corpus_chunk": 5357
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Someone who is luckily placed in their material, social, and political environment will end up with more knowledge despite less exercise of cognitive agency than someone who is unluckily placed, even if the latter exercises heroic levels of cognitive agency.",
+          "corpus_chunk": 5358
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Embedded cognition occurs in a mostly-stable natural environment; scaffolded cognition occurs in a mostly-stable artificial environment; outright extended cognition occurs in a dynamically-reactive environment.",
+          "corpus_chunk": 5359
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Alfano (2016a) and Alfano and Skorburg (2017) argue that, in some cases, pairs of agents mutually constitute each other’s character by engaging in dynamic interactions with interlocking virtues.",
+          "corpus_chunk": 5360
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Moreover, if knowledge is an achievement, then we should expect it to not require reliability, because no other achievement requires reliability (Turri 2015c).",
+          "corpus_chunk": 5361
+        }
+      ],
+      "annotation": "Main secondary map of faculty and character virtues, aptness, value, credit and testimony, situationism, particular virtues, and vice epistemology; contemporary books are not represented as independently read."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "An older vocabulary and a modern family of theories",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "In a world where we are so certain to incur them in spite of all our caution, a certain lightness of heart seems healthier than this excessive nervousness on their behalf.",
+          "corpus_chunk": 10251
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "I fear here that some of you my hearers will begin to scent danger, and lend an inhospitable ear.",
+          "corpus_chunk": 10251
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "The attitude of sceptical balance is therefore the absolutely wise one if we would escape mistakes.",
+          "corpus_chunk": 10254
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "See for example the sagacity which Spencer and Weismann now display.",
+          "corpus_chunk": 10254
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "Such truth as that, she might repeat with Clifford, would be stolen in defiance of her duty to mankind.",
+          "corpus_chunk": 10255
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "The most useful investigator, because the most sensitive observer, is always he whose eager interest in one side of the question is balanced by an equally keen nervousness lest he become deceived.",
+          "corpus_chunk": 10255
+        }
+      ],
+      "annotation": "Public-domain original definitions, thesis, truth/error distinction, cooperation argument, and religious application; cited by essay and section rather than the corpus parser’s mistaken heading."
+    }
+  ]
+}

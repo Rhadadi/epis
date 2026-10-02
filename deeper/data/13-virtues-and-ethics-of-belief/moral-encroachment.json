@@ -1,0 +1,69 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "moral-encroachment",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do moral wronging, bad inference, inquiry methods, and changes in epistemic standards differ?"
+  ],
+  "sources": [
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "Three claims to separate",
+        "Responsibility and justification",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "This is how Descartes, for instance, is commonly understood to conceive of epistemic obligations (e.g., Plantinga 1993: 19–22), owing to his suggestive description of doxastic mistakes as a kind of “sin” (peccatum) we are “at fault” for (“Fourth Meditiation” of Meditations AT VII:58; CSM II:41).",
+          "corpus_chunk": 3203
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Other defenders of epistemic deontologism do not maintain that the epistemic ought has any moral bearing (Feldman 1988; 2000), and they differ on whether deontologism requires voluntary control (Steup 2000 holds that it does; Feldman 2000 holds that it does not).",
+          "corpus_chunk": 3204
+        }
+      ],
+      "annotation": "Provides secondary accounts of doxastic wronging, responsibility, control, and contemporary practical reasons for belief."
+    },
+    {
+      "key": "brownstein2025",
+      "used_for": [
+        "Evidence and the person",
+        "Must fairness require ignorance?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Gendler (2011) and Egan (2011) argue that implicit bias creates a conflict between our ethical and epistemic aims.",
+          "corpus_chunk": 49049
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "As Gendler puts it, if you live in a society structured by racial categories that you disavow, either you must pay the epistemic cost of failing to encode certain sorts of base-rate or background information about cultural categories, or you must expend epistemic energy regulating the inevitable associations to which that information—encoded in ways to guarantee availability—gives rise.",
+          "corpus_chunk": 49050
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "This “epistemic self-censorship on non-epistemic grounds” makes it putatively impossible for agents to be both rational and equitable (Gendler 2011: 55, 57).",
+          "corpus_chunk": 49051
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The solution to the dilemma, then, is not ignorance, but the situation-specific regulation of stereotype accessibility.",
+          "corpus_chunk": 49051
+        }
+      ],
+      "annotation": "Surveys the contested ethical–epistemic dilemma concerning social knowledge, objections to its inevitability, and situation-specific accessibility; its moral-encroachment pointer is identified as a pointer."
+    }
+  ]
+}

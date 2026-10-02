@@ -1,0 +1,248 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "epistemic-humility-and-confidence",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which accounts of humility allow justified confidence, and how do limits, competence, and disagreement interact?"
+  ],
+  "sources": [
+    {
+      "key": "turri-etal2021",
+      "used_for": [
+        "Confidence about what?",
+        "Supporting the attitude",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Another “growth area” for VE is profiles of individual virtues and vices.",
+          "corpus_chunk": 5365
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Baehr (2011, chap. 9) likewise argues that intellectual courage is best construed as a disposition to respond well to threats to one’s epistemic well-being; he focuses in particular on the courage to inquire rather than the courage to believe or doubt.",
+          "corpus_chunk": 5366
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Having such a sense of when and how to speak one’s mind is a primary constituent of the virtue of being an effective whistleblower, an underappreciated exemplar of the current era (DesAutels 2009).",
+          "corpus_chunk": 5367
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "This conception of intellectual humility is most pertinent in the realm of disagreement.",
+          "corpus_chunk": 5368
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Samuelson and Church think that intellectual humility can be implemented as a motivating trait, but they are inclined to construe it in the dual-system framework, where it harmonizes automatic intuitive processes (heuristics, affective judgments, etc.) with slow, controlled, effortful, attentive thought and deliberation.",
+          "corpus_chunk": 5369
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Such attentiveness can be conscious, but it is grounded in an implicit sensitivity to one’s own dispositions.",
+          "corpus_chunk": 5370
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Rather than consulting their own intuitions about what the facets of intellectual humility and its opposing vices are, however, they employ a thesaurus-based psycholexical analysis, which suggests that intellectual humility has three positive facets (the sensitive self, the discreet self, and the inquisitive self) and three opposing vices (the underrated other, the underrated self, and the overrated self).",
+          "corpus_chunk": 5371
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Miranda Fricker (2003, 2007) provides a detailed case study of the virtue of epistemic justice and the opposing vice of “epistemic injustice” suffered by the marginalized and less powerful.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "The vice of testimonial injustice is a disposition to commit such acts of epistemic injustice.",
+          "corpus_chunk": 5372
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Sherman (2016) agrees with Fricker about the harm caused by testimonial injustice but questions the efficacy of trying to cultivate a virtue to correct it.",
+          "corpus_chunk": 5374
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Also in response to Sherman, Davidson and Kelly (2015) argue that while it may be difficult or impossible to adjust one’s credence in the moment, taking distal ecological control (Clark 2007) over one’s material, social, and political environment can help to tamp down or eradicate the biases that lead to testimonial injustice.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 10.2",
+          "basis": "full text",
+          "excerpt": "Other intellectual virtues have received less attention to date, though not for lack of philosophical merit.",
+          "corpus_chunk": 5375
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "As mentioned above, practitioners of all stripes tend to recognize the importance of empirical findings about cognition and inquiry.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "However, if the dispositions practitioners assume to exist are never or rarely embodied by humans, then skepticism looms.",
+          "corpus_chunk": 5350
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Should epistemic virtues be coarsely individuated, so that open-mindedness makes the cut, or should they be finely individuated, so that open-mindedness towards friends while in a good mood makes the cut?",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These considerations notwithstanding, the cognitive sciences might pose a threat to VE.",
+          "corpus_chunk": 5352
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Mark Alfano (2012: 234) first framed the problem as an inconsistent triad: anti-skepticism, according to which almost all humans have quite a bit of knowledge, epistemic situationism, according to which most people’s intellectual dispositions are not virtues because they are highly sensitive to seemingly trivial and epistemically irrelevant situational factors, and VE.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These factors include mood elevators, mood depressors, and social cues of unanimous versus non-unanimous agreement.",
+          "corpus_chunk": 5354
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "And King (2014a) defends responsibilism by pointing out that, at least on Zagzebski’s (1996) version of VE, knowledge needn’t manifest virtue but instead needs only to arise from the sort of motivated inquiry that a virtuous person would engage in.",
+          "corpus_chunk": 5356
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Cassam (2016) argues that the extensive literature on conspiracy theories and conspiratorial thinking shows that people are prone to various intellectual vices, understood as character traits that impede effective and responsible inquiry.",
+          "corpus_chunk": 5357
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Someone who is luckily placed in their material, social, and political environment will end up with more knowledge despite less exercise of cognitive agency than someone who is unluckily placed, even if the latter exercises heroic levels of cognitive agency.",
+          "corpus_chunk": 5358
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Embedded cognition occurs in a mostly-stable natural environment; scaffolded cognition occurs in a mostly-stable artificial environment; outright extended cognition occurs in a dynamically-reactive environment.",
+          "corpus_chunk": 5359
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Alfano (2016a) and Alfano and Skorburg (2017) argue that, in some cases, pairs of agents mutually constitute each other’s character by engaging in dynamic interactions with interlocking virtues.",
+          "corpus_chunk": 5360
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Moreover, if knowledge is an achievement, then we should expect it to not require reliability, because no other achievement requires reliability (Turri 2015c).",
+          "corpus_chunk": 5361
+        }
+      ],
+      "annotation": "Main secondary map of faculty and character virtues, aptness, value, credit and testimony, situationism, particular virtues, and vice epistemology; contemporary books are not represented as independently read."
+    },
+    {
+      "key": "frances-matheson2026",
+      "used_for": [
+        "Humility is not automatic deference",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.",
+          "corpus_chunk": 45746
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.",
+          "corpus_chunk": 45747
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.",
+          "corpus_chunk": 45748
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We do it this way: if we disagree over whether to do action \\(X\\), we are disagreeing over the truth of the claim ‘We should do \\(X\\)’ (or ‘I should do \\(X\\)’ or ‘\\(X\\) is the best thing for us to do’; no, these aren’t all equivalent).",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "However, it is worth noting that agreement also has epistemological implications.",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?",
+          "corpus_chunk": 45751
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A person can start out with a belief that is irrational, obtain some new relevant evidence concerning that belief, respond to that new evidence in a completely reasonable way, and yet end up with an irrational belief.",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "He shouldn’t lose confidence in his belief \\(J\\) merely because he learned some facts that do not cast any doubt on his belief!",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "On the other hand, “rationality demands” that upon his acquisition of new knowledge Bub keep his belief \\(J\\) given that that acquisition—which is the only thing that’s happened to him—gives him no reason to doubt \\(J\\).",
+          "corpus_chunk": 45754
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In the first case, a state is being evaluated, in the second, an action is being evaluated.",
+          "corpus_chunk": 45754
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "These two stories show that one’s action of retaining one’s belief—that intellectual action—can be epistemically fine even though the retained belief is not.",
+          "corpus_chunk": 45756
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The latter question concerns an intellectual action (an intellectual response to the acquisition of new information), whereas the former question concerns the subsequent level of confidence itself, the new confidence level you end up with, which comes about partially as a causal result of the intellectual action.",
+          "corpus_chunk": 45757
+        }
+      ],
+      "annotation": "Distinguishes epistemic peerhood from unequal evidence or competence and explains why different disagreement situations require different assessments."
+    }
+  ]
+}

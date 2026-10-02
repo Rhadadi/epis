@@ -1,0 +1,248 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "practical-reasons-for-belief",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do evidence, benefits of possessing a belief, acceptance, action, and voluntary control differ?"
+  ],
+  "sources": [
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "Three questions hidden in one",
+        "Belief, acceptance, and action",
+        "Control is part of the dispute",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This last point makes it clear that there may be different types of norms governing practices of belief-formation, and that these will correspond to different types of value.",
+          "corpus_chunk": 4934
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The general idea is that if something is beneficial, and believing that p will help us achieve, acquire, or actualize that thing, then it is prima facie prudent for us to believe that p.",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "James refers to such cases as ones “where faith in a fact can help create the fact” (1896, 25).",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "You also have some moderate but not compelling olfactory evidence that he is using drugs in the house when you are away (in response to your queries, he claims that he has recently taken up transcendental meditation, and that the funny smell when you come home is just incense).",
+          "corpus_chunk": 4937
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On the other hand, if you regard the occasional use of recreational drugs as harmless fun that expresses a healthy contempt for overweening state authority (in some states, at least), then it might be prudent for you—confronted with the telltale odor—to form the belief that your son has indeed taken up the habit in question.",
+          "corpus_chunk": 4938
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Another closely-related debate has to do with the types of value that can generate doxastic norms and obligations.",
+          "corpus_chunk": 4945
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It's an interesting and open question whether such aesthetic, social, or political norms could be cashed out in terms of epistemic, moral, and prudential norms (e.g. perhaps being someone's lawyer or being someone's friend underwrites certain moral or prudential norms of belief regarding his or her innocence).",
+          "corpus_chunk": 4946
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "According to the interpretation of Clifford presented above, there is a strong connection between the epistemic and the moral types: the fact that there is an epistemic norm to believe always and only on sufficient evidence entails that there is an analogous moral norm.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In some places, Clifford seems simply to presume that epistemic duty is a species of ethical duty.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It was noted earlier that one way to read Locke is as arguing for (P2) via the independent theoretical premise that God's will for us is that we follow Evidentialist norms, together with a divine command theory of moral rightness (see Wolterstorff 1996).",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In addition to using theoretical arguments like these, ethicists of belief can connect doxastic norms by appealing to empirical data.",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Likewise, the moral norm to believe the best of others is often tragically in tension with the epistemic norm to believe what the evidence supports, with the prudential norm to believe whatever it takes in order to get ahead, and so on.",
+          "corpus_chunk": 4951
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Ethicists of belief who are not value monists often claim that there is a way of ordering norms or types of norms in terms of the relative strength or relative ease with which their claims on us can be defeated.",
+          "corpus_chunk": 4952
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Still others think that one category of norm collapses into another and that this can give us an all things considered conclusion (for discussion of whether epistemic rationality collapses into prudential rationality, for example, see Kelly 2003) In sum: a full-blown ethics of belief will say something about the axiological sources of the different types of norms, about the inferential relations between them, about their temporal range (synchronic/diachronic) and about what to do when norms conflict.",
+          "corpus_chunk": 4953
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "A third foundational issue related to the nature of belief has to do with whether or not belief-formation is in some way voluntary or under the control of the will.",
+          "corpus_chunk": 4968
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Some explicitly reject any parallel between free will and free belief (Wagner forthcoming).",
+          "corpus_chunk": 4968
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Finally, some ethicists of belief seek to argue that there are some obligations on direct belief-formation while also absorbing the putative empirical datum that much of it is not under the control of the will (see Feldman and Conee 1985, Feldman 2000, Adler 2005, Hieronymi 2006 and 2008).",
+          "corpus_chunk": 4970
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This last point shows that Evidentialism about belief—even of a strict and uncompromising sort—can be combined with Non-Evidentialism about some other positive, categorical propositional attitudes in order to make it seem less stern (see Audi 2008a for a list of possible meanings of “faith”).",
+          "corpus_chunk": 5005
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "There is also some dispute about whether acceptance is able to play the various roles that its advocates intend (Radford 1990, Maher 1990, Moore 1994).",
+          "corpus_chunk": 5006
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "A moderate fideist, by contrast, might argue that we are only permitted to accept that p if we lack strong evidence about p either way.",
+          "corpus_chunk": 5007
+        }
+      ],
+      "annotation": "Distinguishes moral, prudential, and epistemic norms, evidentialist versions, belief control, and voluntary acceptance; supplies a secondary map of the modern ethics of belief."
+    },
+    {
+      "key": "boespflug-jackson2024",
+      "used_for": [
+        "Control is part of the dispute",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "The idea that beliefs can wrong others—as well as James’ position that we may believe evidentially undersupported propositions for practical reasons—raises the broader issue of whether it is even possible for there to be practical reasons for (or against) believing.",
+          "corpus_chunk": 3205
+        },
+        {
+          "locator": "§ 6.2",
+          "basis": "full text",
+          "excerpt": "er belief. [T]he significance of our line on this sort of case is vulnerable to future work on “ought implies can” and doxastic voluntarism. (Maguire & Woods 2020: 244; see also Rinard 2019: s.4) After all, if it turns out that doxastic agents cannot, as a matter of psychological fact, believe on the basis of practical reasons, then the plausibility of such theories of rationality is potentially called into question.",
+          "corpus_chunk": 3206
+        }
+      ],
+      "annotation": "Provides secondary accounts of doxastic wronging, responsibility, control, and contemporary practical reasons for belief."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "Control is part of the dispute",
+        "The proposition can change the case",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "I have long defended to my own students the lawfulness of voluntarily adopted faith; but as soon as they have got well imbued with the logical spirit, they have as a rule refused to admit my contention to be lawful philosophically, even though in point of fact they were personally all the time chock-full of some faith or other themselves.",
+          "corpus_chunk": 10216
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "A live hypothesis is one which appeals as a real possibility to him to whom it is proposed.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Next, let us call the decision between two hypotheses an _option_.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Similarly, if I say, \"Either love me or hate me,\" \"Either call my theory true or call it false,\" your option is avoidable.",
+          "corpus_chunk": 10218
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "He who refuses to embrace a unique opportunity loses the prize as surely as if he tried and failed. _Per contra_, the option is trivial when the opportunity is not unique, when the stake is insignificant, or when the decision is reversible if it later prove unwise.",
+          "corpus_chunk": 10220
+        },
+        {
+          "locator": "The Will to Believe, § IV",
+          "basis": "full text",
+          "excerpt": "The thesis I defend is, briefly stated, this: _Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds; for to say, under such circumstances, \"Do not decide, but leave the question open,\" is itself a passional decision,--just like deciding yes or no,--and is attended with the same risk of losing the truth_.",
+          "corpus_chunk": 10236
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "It seems _a priori_ improbable that the truth should be so nicely adjusted to our needs and powers as that.",
+          "corpus_chunk": 10257
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "Challenge the statement, and science can only repeat it oracularly, or else prove it by showing that such ascertainment and correction bring man all sorts of other goods which man's heart in turn declares.",
+          "corpus_chunk": 10258
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "The appearance of knowingness is on their side, of naïveté and gullibility on his.",
+          "corpus_chunk": 10259
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "Whether you do or not depends, in countless instances, on whether I meet you half-way, am willing to assume that you must like me, and show you trust and expectation.",
+          "corpus_chunk": 10260
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "The desire for a certain kind of truth here brings about that special truth's existence; and so it is in innumerable cases of other sorts.",
+          "corpus_chunk": 10260
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "A whole train of passengers (individually brave enough) will be looted by a few highwaymen, simply because the latter can count on one another, while each passenger fears that if he makes a movement of resistance, he will be shot before any one else backs him up.",
+          "corpus_chunk": 10262
+        }
+      ],
+      "annotation": "Public-domain original definitions, thesis, truth/error distinction, cooperation argument, and religious application; cited by essay and section rather than the corpus parser’s mistaken heading."
+    }
+  ]
+}

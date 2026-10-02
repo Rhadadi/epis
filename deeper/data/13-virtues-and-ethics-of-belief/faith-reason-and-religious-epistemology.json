@@ -1,0 +1,864 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "faith-reason-and-religious-epistemology",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do arguments, experience, basic belief, defeaters, disagreement, and different faith models bear on religious epistemic standing?"
+  ],
+  "sources": [
+    {
+      "key": "bishop-mckaughan2023",
+      "used_for": [
+        "Identify the claim and the attitude",
+        "What faith is supposed to add",
+        "Basic belief and Reformed epistemology",
+        "James: permission under a genuine option",
+        "Trust, hope, and commitment without full belief",
+        "Traditions and the limits of this map",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "While philosophical reflection on faith of the kind exemplified in religious contexts might ideally hope to yield an agreed definition in terms of necessary and sufficient conditions that articulate the nature of faith, the present discussion proceeds by identifying key components that recur in different accounts of religious faith.",
+          "corpus_chunk": 13404
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since ‘religion’ itself may well be a ‘family resemblance’ universal, essentialism about faith of the religious kind might be misplaced.",
+          "corpus_chunk": 13404
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The present discussion, however, deals directly with the target notion of the kind of faith exemplified in religious faith, assuming the background of a working grasp of the notion as deployed in religious forms of life, and specifically in those belonging to the theist traditions.",
+          "corpus_chunk": 13406
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "An initial broad distinction is between thinking of faith just as a person’s state when that person ‘has faith’, and thinking of it as also involving a person’s act, action or activity.",
+          "corpus_chunk": 13407
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A philosophical account of faith may be expected to illuminate this apparent paradox.",
+          "corpus_chunk": 13407
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "On some models, the kind of faith exemplified by theistic faith is found only there.",
+          "corpus_chunk": 13490
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "Peirce, another influential American pragmatist, arguably held a non-doxastic view of faith (Pope 2018).",
+          "corpus_chunk": 13491
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "And James: ‘Religion says essentially two things: First, she says that the best things are the more eternal things, the overlapping things, the things in the universe that throw the last stone, so to speak, and say the final word. ... [and] the second affirmation of religion is that we are better off now if we believe her first affirmation to be true’ (James 1896 [1956, 25–6]).",
+          "corpus_chunk": 13492
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "A general—i.e., non-theologically specific—account of the religious kind of faith may have potential as a tool for criticising specific philosophical formulations of the content of religious faith.",
+          "corpus_chunk": 13493
+        },
+        {
+          "locator": "§ 11",
+          "basis": "full text",
+          "excerpt": "Tennant that ‘faith is an outcome of the inborn propensity to self-conservation and self-betterment which is a part of human nature, and is no more a miraculously superadded endowment than is sensation or understanding’ (1943 [1989, 111]) will consider that this must be a possibility.",
+          "corpus_chunk": 13494
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "One possibility is that it is a kind of knowledge, but there is then a question about the kind of knowledge that it is: e.g., is it knowledge ‘by acquaintance’, or ‘propositional’ knowledge ‘by description’, or both?",
+          "corpus_chunk": 13411
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Appeal to a special cognitive faculty ‘Reformed’ epistemologists have appealed to an externalist epistemology in order to maintain that theistic belief may be justified even though its truth is no more than basically evident to the believer—that is, its truth is not rationally inferable from other, more basic, beliefs, but is found to be immediately evident in the believer’s experience (see Plantinga and Wolterstorff 1983, Alston 1991, Plantinga 2000).",
+          "corpus_chunk": 13412
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Plantinga calls this the sensus divinitatis, using a term of Calvin’s.",
+          "corpus_chunk": 13412
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The welcome certainty of faith This appeal to a God-given ‘higher’ cognitive faculty is found (in the early 12th Century) in al-Ghazâlî’s Deliverance from Error, where it provides the key to the ‘Sufi’ resolution of his religious crisis and his sceptical doubts about the deliverances of sense perception and unassisted human reason.",
+          "corpus_chunk": 13414
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "For, on this model, faith will also have an affective/evaluative component that includes a welcoming of the knowledge received.",
+          "corpus_chunk": 13414
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "On this ‘special knowledge’ model of faith, however, this activity counts as ‘acting out’ one’s faith rather than as a part of faith itself.",
+          "corpus_chunk": 13415
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Models of faith as knowledge may be thought lacking because they admit no actional component in faith itself.",
+          "corpus_chunk": 13417
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Theist philosophers do, however, typically defend the claim that faith is not ‘contrary to reason’.",
+          "corpus_chunk": 13417
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Another way to classify models of faith, then, is in terms of their associated epistemology—and, in particular, whether and according to what norms of ‘evidential support’, they accept that faith’s cognitive component needs to meet a requirement to be grounded on available evidence.",
+          "corpus_chunk": 13419
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "And, once the deliverances of the special cognitive faculty are included amongst the believer’s basic experiential evidence, an evidential requirement on reasonable belief seems to be met.",
+          "corpus_chunk": 13420
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "From the perspective of reflective persons of faith (or would-be faith), the question of entitlement arises: are they rationally, epistemically—even, morally—entitled to adopt or continue in their faith?",
+          "corpus_chunk": 13421
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Arguably, believers must even take seriously the possibility that the God they have been worshipping is not, after all, the true God (Johnston 2009).",
+          "corpus_chunk": 13422
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Theistic truths may be directly revealed, and experienced as immediately evident, yet, on reflection, one may doubt whether such experiences are genuinely revelatory since competing ‘naturalist’ interpretations of those experiences seem available.",
+          "corpus_chunk": 13423
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "One may thus refute an objector who claims that without adequate evidence one cannot possess knowledge.",
+          "corpus_chunk": 13423
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Not all models of faith, however, identify it as primarily a matter of knowing or believing a proposition or a set of them, even with the addition of some affective or evaluative component.",
+          "corpus_chunk": 13444
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Arguably, to put or to maintain faith in God involves a readiness to act, perhaps by relying on God in relevant ways and/or grounded in a practical commitment.",
+          "corpus_chunk": 13445
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Arguably, faith understood as a combination of affective and cognitive elements would miss its essential active component.",
+          "corpus_chunk": 13445
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Yet, as noted earlier, Aquinas too takes the ultimate object of faith to be God, ‘the first reality’, and, furthermore, understands ‘formed’ faith as trusting commitment to God, motivated by, and directed towards, love of God as one’s true end (see Summa Theologiae 2a2ae, 4, 3; Aquinas [2006], 123–7).",
+          "corpus_chunk": 13447
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "It is therefore worth considering what follows about the nature of faith of the sort exemplified in theistic faith from holding it to be a kind of active trust.",
+          "corpus_chunk": 13448
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "So, if faith is trust, the venture of faith might be presumed to be the type of venture implicated in trust.",
+          "corpus_chunk": 13448
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Annette Baier makes no requirement for evidence that the trustee may prove untrustworthy, but nevertheless takes trust to involve ‘accepted vulnerability to another’s possible but not expected ill will (or lack of good will) toward one’ (Baier 1986, 235, our emphasis).",
+          "corpus_chunk": 13450
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "But, if adequate evidence of trustworthiness is not required for reasonable trust, how is reasonable trust different from ‘blind’ trust?",
+          "corpus_chunk": 13450
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "In such situations it is also often the case, as already noted, that we don’t have adequate evidence in advance that this person will be trustworthy in this particular respect.",
+          "corpus_chunk": 13452
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "In a life-threatening situation, for example, it may be rational to trust unlikely rescuers if they are the only ones available.",
+          "corpus_chunk": 13452
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "But what’s essential is the fiducial aspect, which consists in an active commitment or ‘entrusting’ to the other.",
+          "corpus_chunk": 13453
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "There are significant differences, however, between the trusting involved in theistic faith and that involved in interpersonal trust.",
+          "corpus_chunk": 13455
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "For those who reject the model of theist faith as basic knowledge and also think that the question of God’s existence cannot be settled intellectually on the basis of the available evidence, the venture involved in trusting in God (if such there be) may seem to include a doxastic venture: those who trust already venture beyond the available evidence, in their very believing or accepting that God exists and may be relied on for salvation.",
+          "corpus_chunk": 13456
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Theological non-realism One way to relieve this pressure is to offer a non-realist analysis of theological claims.",
+          "corpus_chunk": 13456
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Assuming, then, that theist faith does include (under realist assumptions) a venture in practical commitment to truth-claims about ultimate reality, the justifiability of such a venture might yet be thought defensible by analogy with interpersonal situations where practical commitment seems justifiably to be made beyond one’s evidence to the claim that a person will prove trustworthy in some relevant respect.",
+          "corpus_chunk": 13458
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "But if—as we are here assuming—one ventures beyond evidential support in taking it to be true in practical reasoning that God exists and may be trusted for salvation, this may be a venture that is not confined to initial commitment but rather persists in needing to be made.",
+          "corpus_chunk": 13459
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Doxastic venture without doxastic voluntarism Many dismiss the idea that one may venture in one’s very believing that God exists as committing a category error: ventures are voluntary, but propositional belief is not directly under voluntary control.",
+          "corpus_chunk": 13460
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Practical commitment to a faith-proposition’s truth therefore could be a venture: there is no category error in allowing this possibility.",
+          "corpus_chunk": 13460
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "James observes, however, that many beliefs have causes that do not constitute or imply an evidential grounding of their truth.",
+          "corpus_chunk": 13462
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Note that a doxastic venture model of theistic faith reconciles faith as gift with faith’s active components: taking a faith-proposition to be true in practical reasoning is a basic (mental) action (which leads on to further actions involved in trusting God and seeking to do God’s will); the gift provides the motivational resources for this basic action, namely a firm belief in the truth of the faith-proposition, despite its lack of adequate evidential support.",
+          "corpus_chunk": 13463
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Arguably, the standard ‘passional’ or ‘non-evidential’ cause of religious belief is cultural immersion within an historical faith-tradition.",
+          "corpus_chunk": 13464
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Some accounts allow that faith centrally involves practical commitment venturing beyond evidential support, yet do not require (or, even, permit) that the venturer actually believes the faith-proposition assumed to be true.",
+          "corpus_chunk": 13475
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The origins of Swinburne’s pragmatist model are to be found in a much earlier paper, Swinburne 1969.",
+          "corpus_chunk": 13475
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Decisive commitment in the absence of such assurance may nevertheless be possible, motivated (as Swinburne suggested in the first edition of his Faith and Reason) by the evaluative belief that ‘unless [faith-propositions are true], that which is most worthwhile is not to be had’ (Swinburne, 1981, 117).",
+          "corpus_chunk": 13477
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "In response to Daniel Howard-Snyder (2013a) Schellenberg allows that faith may in some instances involve belief while still maintaining that ‘non-doxastic religious faith … will turn out to be a particularly important way of having religious faith as we head into the future’ (2013, 262).",
+          "corpus_chunk": 13478
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Audi’s account is not strictly a ‘venture’ model, however, since he does not take commitment beyond the support of adequate evidence to be essential.",
+          "corpus_chunk": 13479
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Some philosophers have suggested that the epistemological challenges faced by accounts of faith as involving belief beyond the evidence may be avoided by construing theist commitment as hope.",
+          "corpus_chunk": 13480
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Hope as such is an attitude rather than an active commitment, and, as Audi observes, it contrasts with the attitude of faith at least in this respect, namely, that surprise makes little sense as a response to discovering that the object of one’s faith is indeed the case, whereas there need be nothing inappropriate in surprise at the fulfilment of one’s hopes (see Audi 2011, 74).",
+          "corpus_chunk": 13481
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "A model of faith as acting in hope shares with the doxastic and non-doxastic venture models in rejecting the view that faith requires cognitive certainty.",
+          "corpus_chunk": 13482
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "The ‘certainty’ of faith on these models is more a matter of the certainty that persons of faith find themselves conferring on the foundational claims of their faith, rather than a matter of discovering in themselves a certain knowledge or intellectual conviction of the truth of these claims.",
+          "corpus_chunk": 13483
+        }
+      ],
+      "annotation": "Distinguishes competing cognitive, practical, trust, acceptance, and hope models of faith, conditional warrant, venture, and the limits of interpersonal analogies."
+    },
+    {
+      "key": "forrest2025",
+      "used_for": [
+        "Three routes, three questions",
+        "The scope of the inquiry",
+        "Evidentialism and its versions",
+        "Natural theology: what an argument would establish",
+        "Basic belief and Reformed epistemology",
+        "Basic does not mean immune",
+        "Religious experience and the first-person perspective",
+        "Fideism and criticism",
+        "Disagreement and religious diversity",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "They are related because one reaction to the latter could be return to the former.",
+          "corpus_chunk": 4867
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "But evidentialism implies that it would not be justified to have full belief, that is belief with 100% confidence.",
+          "corpus_chunk": 4867
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Likewise it would be unjustified to believe even with less than full confidence that, say, Krishna is divine or that Mohammed is the last and most authoritative of the prophets, unless a good case can be made for these claims from the evidence.",
+          "corpus_chunk": 4869
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "This century has seen a turn in the debate, with emphasis on the implications of disagreement, “How can sincere intelligent people disagree?",
+          "corpus_chunk": 4869
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Epistemology is confusing because there are several sorts of items to be evaluated and several sorts of evaluation.",
+          "corpus_chunk": 4871
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Although these have some implications for the epistemology of religion they are primarily topics in general epistemology.",
+          "corpus_chunk": 4871
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Most contemporary epistemology of religion may be called post modern in the sense of being a reaction to the Enlightenment, in particular to the thesis of the hegemony of evidentialism.",
+          "corpus_chunk": 4873
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "For example, if Fatima had an experience that she would describe as of the presence of God she should not treat Gods presence to her as a piece of evidence.",
+          "corpus_chunk": 4874
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "So the only available evidence for these beliefs would seem to be non-religious premises, from which the religious beliefs are inferred.",
+          "corpus_chunk": 4875
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In fact it seems that many religious believers combine full belief with “doubts” in the sense of some reasons for doubting, or they combine partial belief with what they take to be weighty reasons for disbelief.",
+          "corpus_chunk": 4876
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The Enlightenment assumed two related, hegemony theses, those of epistemology and of evidentialism.",
+          "corpus_chunk": 4876
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "His position is summed up in the famous quotation: “It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence” (Clifford 1879: 186).",
+          "corpus_chunk": 4878
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Postmodernism implies more than being post modern in the above sense.",
+          "corpus_chunk": 4879
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "One response to the problematic is to separate evidentialism from the hegemony of epistemology.",
+          "corpus_chunk": 4880
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Not surprisingly the reliance of non-theist philosophers on evidentialism has been criticised.",
+          "corpus_chunk": 4880
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Or it could be argued that deriving an epistemology from a wide range of examples is evidence for it.",
+          "corpus_chunk": 4882
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Theistic philosophers may grant evidentialism and even grant its hegemony, but defend their religious convictions by providing the case which evidentialists demand.",
+          "corpus_chunk": 4883
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "And that connects with the problem of disagreement: Does somethings being self-evident to you justify your full belief in it even if you know of those of equal or greater intellectual ability to whom it is not self-evident?",
+          "corpus_chunk": 4884
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "While there are differences of approach, the common theme is that there is evidence for theism but evidence of a probable rather than a conclusive kind, justifying belief but not full belief.",
+          "corpus_chunk": 4885
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Although pre-dating the current debate, Newman’s rejection of Locke’s and Paley’s evidentialism is relevant to the problematic of contemporary epistemology of religion.",
+          "corpus_chunk": 4886
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "One difficulty with this interpretation is that even a highly probable argument differs from a demonstration in that the former is vulnerable to probabilistic counter-arguments.",
+          "corpus_chunk": 4887
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "In such cases the only available states are those of full belief and full disbelief or, perhaps, full belief, and lack of full belief.",
+          "corpus_chunk": 4887
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Another reaction to the problematic is religious fideism, the thesis that religious faith is an exception to ordinary epistemological constraints, perhaps because the believers think of themselves as chosen by God with their faith as a gift.",
+          "corpus_chunk": 4889
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Here there seems to be both an autonomy thesis and an incommensurability thesis.",
+          "corpus_chunk": 4889
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Perhaps the most obvious criticism of Wittgensteinian fideism is that even if the underlying theory of forms of life and language games is granted, it is an historical fact, itself justified by the criteria of the “game” of history, that the tradition to which the majority of Jews, Christians and Muslims belong to is a form of life with heavy metaphysical commitments, and in which such utterances as “There is a God” are intended as much like “There is a star ten times more massive than the Sun” as like “There is hope”.",
+          "corpus_chunk": 4891
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Then the Judeo-Christian-Islamic “language game” would be part of this larger, autonomous metaphysical “language game”.",
+          "corpus_chunk": 4892
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "For it must surely be granted that religious utterances are not made in a purely intellectual way.",
+          "corpus_chunk": 4892
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "This ties in with the Newmanian modification of evidentialism, mentioned above.",
+          "corpus_chunk": 4893
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Such beliefs may then themselves be used as evidence for other beliefs.",
+          "corpus_chunk": 4894
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Here it should be noted however that this requirement does not imply that we are aware of our evidence.",
+          "corpus_chunk": 4895
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "As Moon has pointed out, however, we may draw the conclusion that the de-bunker has failed to undercut religious belief (2016: 21–22).",
+          "corpus_chunk": 4896
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "This is occasioned by, but not inferred from, the evils that surround us.",
+          "corpus_chunk": 4897
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "This hypersensitivity then explains the human tendency towards supernatural beliefs, undermining the proper basicality of those beliefs.",
+          "corpus_chunk": 4899
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Reformed epistemology might be thought of as a modification of evidentialism in which the permissible kinds of evidence are expanded.",
+          "corpus_chunk": 4900
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "For he draws our attention to the experience of being guided about how we are to live and in our search for meaning (2019).",
+          "corpus_chunk": 4900
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "For instance, Mavrodes would probably not consider Ramanujan’s belief that Krishna is divine as warranted, but even if Mavrodes is correct Ramanujan would have no access to this truth about the unwarranted character of his own beliefs.",
+          "corpus_chunk": 4902
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "As in the previous cases we might note that such grounding should be partially accessible to the believer.",
+          "corpus_chunk": 4902
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "As a consequence, the probability of Christian metaphysics is less than x/(1−y) where x is the probability of Christian metaphysics given the falsity of the Aquinas/Calvin model.",
+          "corpus_chunk": 4904
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "To be sure, sometimes those who disagree with you are your intellectual inferiors in some respect.",
+          "corpus_chunk": 4905
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Such private assertions of epistemic superiority are often expressed by saying that someone “just does not get the point”.",
+          "corpus_chunk": 4906
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "I call the thesis that the general case for suspense of judgement fails to apply to religious faith religious exceptionalism.",
+          "corpus_chunk": 4907
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The only possible religious experts are the authorities that represent a tradition or the authors of scriptures held to be authoritative.",
+          "corpus_chunk": 4908
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "It is hard to see, though, how this could apply to disputes between two religions that both rely on the role of divine inspiration.",
+          "corpus_chunk": 4908
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "rgues that faith is not primarily intellectual (Again compare Moser 2019); Finally, Choi (Ch 11) argues against reliance on majority opinion  in religious disputes.",
+          "corpus_chunk": 4910
+        }
+      ],
+      "annotation": "Surveys evidentialism, natural theology, basic belief, religious experience, fideism, and disagreement, with the survey’s theistic and Western scope made explicit."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "The scope of the inquiry",
+        "Evidentialism and its versions",
+        "James: permission under a genuine option",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This last point makes it clear that there may be different types of norms governing practices of belief-formation, and that these will correspond to different types of value.",
+          "corpus_chunk": 4934
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The general idea is that if something is beneficial, and believing that p will help us achieve, acquire, or actualize that thing, then it is prima facie prudent for us to believe that p.",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "James refers to such cases as ones “where faith in a fact can help create the fact” (1896, 25).",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "You also have some moderate but not compelling olfactory evidence that he is using drugs in the house when you are away (in response to your queries, he claims that he has recently taken up transcendental meditation, and that the funny smell when you come home is just incense).",
+          "corpus_chunk": 4937
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On the other hand, if you regard the occasional use of recreational drugs as harmless fun that expresses a healthy contempt for overweening state authority (in some states, at least), then it might be prudent for you—confronted with the telltale odor—to form the belief that your son has indeed taken up the habit in question.",
+          "corpus_chunk": 4938
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Another closely-related debate has to do with the types of value that can generate doxastic norms and obligations.",
+          "corpus_chunk": 4945
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It's an interesting and open question whether such aesthetic, social, or political norms could be cashed out in terms of epistemic, moral, and prudential norms (e.g. perhaps being someone's lawyer or being someone's friend underwrites certain moral or prudential norms of belief regarding his or her innocence).",
+          "corpus_chunk": 4946
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "According to the interpretation of Clifford presented above, there is a strong connection between the epistemic and the moral types: the fact that there is an epistemic norm to believe always and only on sufficient evidence entails that there is an analogous moral norm.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In some places, Clifford seems simply to presume that epistemic duty is a species of ethical duty.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It was noted earlier that one way to read Locke is as arguing for (P2) via the independent theoretical premise that God's will for us is that we follow Evidentialist norms, together with a divine command theory of moral rightness (see Wolterstorff 1996).",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In addition to using theoretical arguments like these, ethicists of belief can connect doxastic norms by appealing to empirical data.",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Likewise, the moral norm to believe the best of others is often tragically in tension with the epistemic norm to believe what the evidence supports, with the prudential norm to believe whatever it takes in order to get ahead, and so on.",
+          "corpus_chunk": 4951
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Ethicists of belief who are not value monists often claim that there is a way of ordering norms or types of norms in terms of the relative strength or relative ease with which their claims on us can be defeated.",
+          "corpus_chunk": 4952
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Still others think that one category of norm collapses into another and that this can give us an all things considered conclusion (for discussion of whether epistemic rationality collapses into prudential rationality, for example, see Kelly 2003) In sum: a full-blown ethics of belief will say something about the axiological sources of the different types of norms, about the inferential relations between them, about their temporal range (synchronic/diachronic) and about what to do when norms conflict.",
+          "corpus_chunk": 4953
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Evidentialism of some sort is far and away the dominant ethic of belief among early modern and contemporary philosophers alike.",
+          "corpus_chunk": 4971
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Once a principle along these lines has been chosen, the relative strictness of a given Evidentialist position will be a function of how many exceptions it allows.",
+          "corpus_chunk": 4972
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "They might hold that the Cliffordian view applies, say, to the beliefs formed by a military pilot about the location of a legitimate bombing target in the midst of a residential area, or the beliefs formed by a government health official regarding the efficacy of a pharmaceutical trial, at least insofar as these beliefs lead to morally or prudentially significant actions.",
+          "corpus_chunk": 4973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As a result, the boundary between a very moderate Evidentialism and full-blown Non-Evidentialism can be quite blurry.",
+          "corpus_chunk": 4973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Perhaps the best place to make a distinction between moderate Evidentialism and full-blown Non-Evidentialism is over whether a subject can be not only permitted but also obliged to form a belief on insufficient evidence (or, depending on the reflective access conditions, on what she takes to be insufficient evidence) in certain situations.",
+          "corpus_chunk": 4975
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This last point shows that Evidentialism about belief—even of a strict and uncompromising sort—can be combined with Non-Evidentialism about some other positive, categorical propositional attitudes in order to make it seem less stern (see Audi 2008a for a list of possible meanings of “faith”).",
+          "corpus_chunk": 5005
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "There is also some dispute about whether acceptance is able to play the various roles that its advocates intend (Radford 1990, Maher 1990, Moore 1994).",
+          "corpus_chunk": 5006
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "A moderate fideist, by contrast, might argue that we are only permitted to accept that p if we lack strong evidence about p either way.",
+          "corpus_chunk": 5007
+        }
+      ],
+      "annotation": "Distinguishes moral, prudential, and epistemic norms, evidentialist versions, belief control, and voluntary acceptance; supplies a secondary map of the modern ethics of belief."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "James: permission under a genuine option",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "I have long defended to my own students the lawfulness of voluntarily adopted faith; but as soon as they have got well imbued with the logical spirit, they have as a rule refused to admit my contention to be lawful philosophically, even though in point of fact they were personally all the time chock-full of some faith or other themselves.",
+          "corpus_chunk": 10216
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "A live hypothesis is one which appeals as a real possibility to him to whom it is proposed.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Next, let us call the decision between two hypotheses an _option_.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Similarly, if I say, \"Either love me or hate me,\" \"Either call my theory true or call it false,\" your option is avoidable.",
+          "corpus_chunk": 10218
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "He who refuses to embrace a unique opportunity loses the prize as surely as if he tried and failed. _Per contra_, the option is trivial when the opportunity is not unique, when the stake is insignificant, or when the decision is reversible if it later prove unwise.",
+          "corpus_chunk": 10220
+        },
+        {
+          "locator": "The Will to Believe, § IV",
+          "basis": "full text",
+          "excerpt": "The thesis I defend is, briefly stated, this: _Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds; for to say, under such circumstances, \"Do not decide, but leave the question open,\" is itself a passional decision,--just like deciding yes or no,--and is attended with the same risk of losing the truth_.",
+          "corpus_chunk": 10236
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Yet such is the logic by which our scientific absolutists pretend to regulate our lives!",
+          "corpus_chunk": 10262
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Science says things are; morality says some things are better than other things; and religion says essentially two things.",
+          "corpus_chunk": 10263
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "If for any of you religion be a hypothesis that cannot, by any living possibility be true, then you need go no farther.",
+          "corpus_chunk": 10264
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Would he not cut himself off from that particular angel-possibility as decisively as if he went and married some one else?",
+          "corpus_chunk": 10265
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "And by what, forsooth, is the supreme wisdom of this passion warranted?",
+          "corpus_chunk": 10266
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Now, to most of us religion comes in a still further way that makes a veto on our active faith even more illogical.",
+          "corpus_chunk": 10268
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Scepticism, then, is not avoidance of option; it is option of a certain particular kind of risk.",
+          "corpus_chunk": 10266
+        }
+      ],
+      "annotation": "Public-domain original definitions, thesis, truth/error distinction, cooperation argument, and religious application; cited by essay and section rather than the corpus parser’s mistaken heading."
+    }
+  ]
+}

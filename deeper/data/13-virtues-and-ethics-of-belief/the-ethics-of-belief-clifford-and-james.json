@@ -1,0 +1,894 @@
+{
+  "chapter": "13-virtues-and-ethics-of-belief",
+  "section": "the-ethics-of-belief-clifford-and-james",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What do the original shipowner and genuine-option arguments establish, and does forced action require belief?"
+  ],
+  "sources": [
+    {
+      "key": "clifford1879",
+      "used_for": [
+        "Start with two different risks",
+        "Evidence, permission, and truth",
+        "Clifford’s shipowner and the target of blame",
+        "Why Clifford extends the duty beyond dangerous actions",
+        "Insufficient evidence does not mean lacking absolute certainty",
+        "Control, time, and responsibility",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "It has never had help from phantoms and falsehoods, and it never can want any.",
+          "corpus_chunk": 12633
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "Before the ship sailed, however, he succeeded in overcoming these melancholy reflec- tions.",
+          "corpus_chunk": 12634
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "It is admitted that he did sincerely beheve in the soundness of his ship ; but the sincerity of his conviction can in no wise help him, because he had no right to believe on such evidence as was before him.",
+          "corpus_chunk": 12636
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "The man would not have been innocent, he would only have been not found out.",
+          "corpus_chunk": 12636
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "A certain number of men formed themselves into a society for the purpose of agitating the pubhc about this matter.",
+          "corpus_chunk": 12637
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "For although they had sincerely and con- scientiously beheved in the charges they had made, yet they had no right to believe on such evidence as was before them.",
+          "corpus_chunk": 12639
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "And they might be believed, but they would not thereby become honourable men.",
+          "corpus_chunk": 12639
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "The shipowner might say, ' I am perfectly certain that my ship is sound, but still I feel it my duty to have her examined, before trusting the hves of so many people to her.' And it might be said to the agitator, ' However convinced you were of the justice of your cause and the truth of your convictions, you ought not to have made a pubhc attack upon any man's character until you had examined the evidence on both sides with the utmost patience and cai^e.' In the first place, let us admit that, so far as it goes, this view of the case is right and necessary ; right, because even when a man's behef is so fixed that he cannot think otherwise,",
+          "corpus_chunk": 12641
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "But this being premised as necessary, it becomes clear that it is not sufficient, and that our previous judgment is required to supplement it.",
+          "corpus_chunk": 12642
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "If a belief is not reahzed immediately in open deeds, it is stored up for the guidance of the future.",
+          "corpus_chunk": 12642
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "Our lives are guided by that general conception of the course of things which has been created by society for social purposes.",
+          "corpus_chunk": 12643
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "But forasmuch as no belief held by one man, however seemingly trivial the belief, and however obscure the behever, is ever actually insignificant or without its effect on the fate of mankind, we have no choice but to extend our judgment to all cases of behef whatever.",
+          "corpus_chunk": 12645
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "Then it helps to bind men together, and to strengthen and direct their common action.",
+          "corpus_chunk": 12645
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "Every hard-worked wife of an artisan may transmit to her children behefs which shall knit society together, or rend it in pieces.",
+          "corpus_chunk": 12647
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "And if we have supposed ourselves to know all about anything, and to be capable of doing what is fit in regard to it, we naturally do not like to find that we are really ignorant and powerless, that we have to begin again at the beginning, and try to learn what the thing is and how it is to be dealt ^Yith — if indeed any- thing can be learnt about it.",
+          "corpus_chunk": 12648
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "For then we may justly feel that it is common property, and holds good for others as well as for ourselves.",
+          "corpus_chunk": 12648
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "THE ETHICS OF BELIEF. 185 And, as in other such cases, it is not the risk only which has to be considered ; for a bad action is always bad at the time when it is done, no matter what happens afterwards.",
+          "corpus_chunk": 12650
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "But I cannot help doing this great wrong towards Man, that I make myself dishonest.",
+          "corpus_chunk": 12651
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "The harm which is done by creduhty in a man is not confined to the fostering of a credulous character in others, and consequent support of false beliefs.",
+          "corpus_chunk": 12652
+        },
+        {
+          "locator": "pp. 181–186",
+          "basis": "full text",
+          "excerpt": "The credulous man is father to the liar and the cheat ; he lives in the bosom of this his family, and it is no marvel if he should become even as they are.",
+          "corpus_chunk": 12653
+        },
+        {
+          "locator": "pp. 187–189",
+          "basis": "full text",
+          "excerpt": "If this judgment seems harsh when apphed to those simple souls who have never known better, who have been brought up from the cradle with a horror of doubt, and taught that their eternal welfare depends on what they believe, then it leads to the very serious question, Who hath made Israel to sin ?",
+          "corpus_chunk": 12654
+        },
+        {
+          "locator": "pp. 187–189",
+          "basis": "full text",
+          "excerpt": "It is never lawful to stifle a doubt ; for either it can be honestly answered by means of the inquiry already made, or else it proves that the inquiry was not com- plete. ' But,' says one, ' I am a busy man ; I have no time for the long course of study which would be necessary to make me in any degree a competent judge of certain ^ A^'eopagitioa. ^ Aids to Se/lection. 188 THE ETHICS OF BELIEF. questions, or even able to understand the nature of the ar^ beheve. the arguments.' Then he should have no time to //. — The Weight of Authority.",
+          "corpus_chunk": 12655
+        },
+        {
+          "locator": "pp. 187–189",
+          "basis": "full text",
+          "excerpt": "Are we to deprive ourselves of the help and guidance of that vast body of knowledge which is daily growing upon the world, because neither we nor any other one person can possibly test a hundredth part of it by immediate experiment or observation, and because it would not be completely proved if we did ?",
+          "corpus_chunk": 12656
+        },
+        {
+          "locator": "pp. 187–189",
+          "basis": "full text",
+          "excerpt": "The beliefs about right and wrong which guide our actions in deahng with men in society, and the behefs about physical nature which guide our actions in deahng with animate and inanimate bodies, these never suffer from investigation ; they can take care of themselves, without being propped up by THE ETHICS OF BELIEF. 189 ' acts of faith,' the clamour of paid advocates, or the suppression of contrary evidence.",
+          "corpus_chunk": 12657
+        },
+        {
+          "locator": "pp. 187–189",
+          "basis": "full text",
+          "excerpt": "So that we have no reason to fear lest a habit of conscientious inquiry should paralyse the actions of our daily life.",
+          "corpus_chunk": 12657
+        },
+        {
+          "locator": "pp. 177–180",
+          "basis": "full text",
+          "excerpt": "he had no right to believe on such evidence as was before him.",
+          "corpus_chunk": 12636
+        }
+      ],
+      "annotation": "Public-domain original shipowner argument, social defence of inquiry, and qualification concerning probable action; citations use printed essay pages rather than corpus record numbers."
+    },
+    {
+      "key": "james1897",
+      "used_for": [
+        "Start with two different risks",
+        "Evidence, permission, and truth",
+        "James’s genuine option",
+        "Two intellectual aims, rather than one",
+        "Commitment that helps make a truth available",
+        "From cooperation to religion",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "I have long defended to my own students the lawfulness of voluntarily adopted faith; but as soon as they have got well imbued with the logical spirit, they have as a rule refused to admit my contention to be lawful philosophically, even though in point of fact they were personally all the time chock-full of some faith or other themselves.",
+          "corpus_chunk": 10216
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "A live hypothesis is one which appeals as a real possibility to him to whom it is proposed.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Next, let us call the decision between two hypotheses an _option_.",
+          "corpus_chunk": 10217
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "Similarly, if I say, \"Either love me or hate me,\" \"Either call my theory true or call it false,\" your option is avoidable.",
+          "corpus_chunk": 10218
+        },
+        {
+          "locator": "The Will to Believe, § I",
+          "basis": "full text",
+          "excerpt": "He who refuses to embrace a unique opportunity loses the prize as surely as if he tried and failed. _Per contra_, the option is trivial when the opportunity is not unique, when the stake is insignificant, or when the decision is reversible if it later prove unwise.",
+          "corpus_chunk": 10220
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "It seems _a priori_ improbable that the truth should be so nicely adjusted to our needs and powers as that.",
+          "corpus_chunk": 10257
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "Challenge the statement, and science can only repeat it oracularly, or else prove it by showing that such ascertainment and correction bring man all sorts of other goods which man's heart in turn declares.",
+          "corpus_chunk": 10258
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "The appearance of knowingness is on their side, of naïveté and gullibility on his.",
+          "corpus_chunk": 10259
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "Whether you do or not depends, in countless instances, on whether I meet you half-way, am willing to assume that you must like me, and show you trust and expectation.",
+          "corpus_chunk": 10260
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "The desire for a certain kind of truth here brings about that special truth's existence; and so it is in innumerable cases of other sorts.",
+          "corpus_chunk": 10260
+        },
+        {
+          "locator": "The Will to Believe, § IX",
+          "basis": "full text",
+          "excerpt": "A whole train of passengers (individually brave enough) will be looted by a few highwaymen, simply because the latter can count on one another, while each passenger fears that if he makes a movement of resistance, he will be shot before any one else backs him up.",
+          "corpus_chunk": 10262
+        },
+        {
+          "locator": "The Will to Believe, § VII",
+          "basis": "full text",
+          "excerpt": "One more point, small but important, and our preliminaries are done.",
+          "corpus_chunk": 10247
+        },
+        {
+          "locator": "The Will to Believe, § VII",
+          "basis": "full text",
+          "excerpt": "Shun error!--these, we see, are two materially different laws; and by choosing between them we may end by coloring differently our whole intellectual life.",
+          "corpus_chunk": 10249
+        },
+        {
+          "locator": "The Will to Believe, § VII",
+          "basis": "full text",
+          "excerpt": "We must remember that these feelings of our duty about either truth or error are in any case only expressions of our passional life.",
+          "corpus_chunk": 10250
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "In a world where we are so certain to incur them in spite of all our caution, a certain lightness of heart seems healthier than this excessive nervousness on their behalf.",
+          "corpus_chunk": 10251
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "I fear here that some of you my hearers will begin to scent danger, and lend an inhospitable ear.",
+          "corpus_chunk": 10251
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "The attitude of sceptical balance is therefore the absolutely wise one if we would escape mistakes.",
+          "corpus_chunk": 10254
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "See for example the sagacity which Spencer and Weismann now display.",
+          "corpus_chunk": 10254
+        },
+        {
+          "locator": "The Will to Believe, § VIII",
+          "basis": "full text",
+          "excerpt": "Such truth as that, she might repeat with Clifford, would be stolen in defiance of her duty to mankind.",
+          "corpus_chunk": 10255
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Yet such is the logic by which our scientific absolutists pretend to regulate our lives!",
+          "corpus_chunk": 10262
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Science says things are; morality says some things are better than other things; and religion says essentially two things.",
+          "corpus_chunk": 10263
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "If for any of you religion be a hypothesis that cannot, by any living possibility be true, then you need go no farther.",
+          "corpus_chunk": 10264
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Would he not cut himself off from that particular angel-possibility as decisively as if he went and married some one else?",
+          "corpus_chunk": 10265
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "And by what, forsooth, is the supreme wisdom of this passion warranted?",
+          "corpus_chunk": 10266
+        },
+        {
+          "locator": "The Will to Believe, § X",
+          "basis": "full text",
+          "excerpt": "Now, to most of us religion comes in a still further way that makes a veto on our active faith even more illogical.",
+          "corpus_chunk": 10268
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "When we look at others, it seems as if they could do nothing when the intellect had once said its say.",
+          "corpus_chunk": 10220
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "We can say any of these things, but we are absolutely impotent to believe them; and of just such things is the whole fabric of the truths that we do believe in made up,--matters of fact, immediate or remote, as Hume said, and relations between ideas, which are either there or not there for us if we see them so, and which if not there cannot be put there by any action of our own.",
+          "corpus_chunk": 10222
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "A game is going on between you and the nature of things which at the day of judgment will bring out either heads or tails.",
+          "corpus_chunk": 10222
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "You probably feel that when religious faith expresses itself thus, in the language of the gaming-table, it is put to its last trumps.",
+          "corpus_chunk": 10223
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "As well might the Mahdi write to us, saying, \"I am the Expected One whom God has created in his effulgence.",
+          "corpus_chunk": 10225
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "When one turns to the magnificent edifice of the physical sciences, and sees how it was reared; what thousands of disinterested moral lives of men lie buried in its mere foundations; what patience and postponement, what choking down of preference, what submission to the icy laws of outer fact are wrought into its very stones and mortar; how absolutely impersonal it stands in its vast augustness,--then how besotted and contemptible seems every little sentimentalist who comes blowing his voluntary smoke-wreaths, and pretending to decide things from out of his private dream!",
+          "corpus_chunk": 10226
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "Can we wonder if those bred in the rugged and manly school of science should feel like spewing such subjectivism out of their mouths?",
+          "corpus_chunk": 10226
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "It fortifies my soul to know That, though I perish, Truth is so-- sings Clough, while Huxley exclaims: \"My only consolation lies in the reflection that, however bad our posterity may become, so far as they hold by the plain rule of not pretending to believe what they have no reason to believe, because it may be to their advantage so to pretend [the word 'pretend' is surely here redundant], they will not have reached the {8} lowest depth of immorality.\" And that delicious _enfant terrible_ Clifford writes; \"Belief is desecrated when given to unproved and unquestioned statements for the solace and private pleasure of the believer,...",
+          "corpus_chunk": 10228
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "If [a] belief has been accepted on insufficient evidence [even though the belief be true, as Clifford on the same page explains] the pleasure is a stolen one....",
+          "corpus_chunk": 10229
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "Free-will and simple wishing do seem, in the matter of our credences, to be only fifth wheels to the coach.",
+          "corpus_chunk": 10229
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "As a matter of fact we find ourselves believing, we hardly know how or why.",
+          "corpus_chunk": 10230
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "Our reason is quite satisfied, in nine hundred and ninety-nine cases out of every thousand of us, if it can find a few arguments that will do to recite in case our credulity is criticised by some one else.",
+          "corpus_chunk": 10232
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "But if a pyrrhonistic sceptic asks us _how we know_ all this, can our logic find a reply?",
+          "corpus_chunk": 10232
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "It would undo the uniformity of Nature and all sorts of other things without which scientists cannot carry on their pursuits.",
+          "corpus_chunk": 10233
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "Pascal's argument, instead of being powerless, then seems a regular clincher, and is the last stroke needed to make our faith in masses and holy water complete.",
+          "corpus_chunk": 10235
+        },
+        {
+          "locator": "The Will to Believe, §§ II–IV",
+          "basis": "full text",
+          "excerpt": "The thesis I defend is, briefly stated, this: _Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds; for to say, under such circumstances, \"Do not decide, but leave the question open,\" is itself a passional decision,--just like deciding yes or no,--and is attended with the same risk of losing the truth_.",
+          "corpus_chunk": 10236
+        }
+      ],
+      "annotation": "Public-domain original definitions, thesis, truth/error distinction, cooperation argument, and religious application; cited by essay and section rather than the corpus parser’s mistaken heading."
+    },
+    {
+      "key": "chignell2018",
+      "used_for": [
+        "Evidence, permission, and truth",
+        "Why Clifford extends the duty beyond dangerous actions",
+        "Insufficient evidence does not mean lacking absolute certainty",
+        "Does the option force belief?",
+        "Control, time, and responsibility",
+        "What the binary presentation leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The locus classicus of the ethics of belief debate is, unsurprisingly, the essay that christened it.",
+          "corpus_chunk": 4923
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Clifford's essay is chiefly remembered for two things: a story and a principle.",
+          "corpus_chunk": 4923
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Because, says Clifford, “he had acquired his belief not by honestly earning it in patient investigation, but by stifling his doubts” (1877, 70).",
+          "corpus_chunk": 4925
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Rather, the obligation always and only to believe on sufficient evidence governs our activities across time as well.",
+          "corpus_chunk": 4926
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "If someone violates such a diachronic obligation by “purposely avoiding the reading of books and the company of men who call in question” his presuppositions, Clifford warns, then “the life of that man is one long sin against mankind” (1877, 77).",
+          "corpus_chunk": 4927
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "James's Non-Evidentialist alternative to Clifford is far more permissive: it says that there are some contexts in which it is fine to form a belief even though we don't have sufficient evidence for it, and even though we know that we don't.",
+          "corpus_chunk": 4928
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "For instance, the option must be between “live” hypotheses—i.e. hypotheses that are “among the mind's possibilities” (thus, belief in the ancient Greek gods is not a live option for us these days).",
+          "corpus_chunk": 4929
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This last point makes it clear that there may be different types of norms governing practices of belief-formation, and that these will correspond to different types of value.",
+          "corpus_chunk": 4934
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The general idea is that if something is beneficial, and believing that p will help us achieve, acquire, or actualize that thing, then it is prima facie prudent for us to believe that p.",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "James refers to such cases as ones “where faith in a fact can help create the fact” (1896, 25).",
+          "corpus_chunk": 4935
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "You also have some moderate but not compelling olfactory evidence that he is using drugs in the house when you are away (in response to your queries, he claims that he has recently taken up transcendental meditation, and that the funny smell when you come home is just incense).",
+          "corpus_chunk": 4937
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On the other hand, if you regard the occasional use of recreational drugs as harmless fun that expresses a healthy contempt for overweening state authority (in some states, at least), then it might be prudent for you—confronted with the telltale odor—to form the belief that your son has indeed taken up the habit in question.",
+          "corpus_chunk": 4938
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Another closely-related debate has to do with the types of value that can generate doxastic norms and obligations.",
+          "corpus_chunk": 4945
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It's an interesting and open question whether such aesthetic, social, or political norms could be cashed out in terms of epistemic, moral, and prudential norms (e.g. perhaps being someone's lawyer or being someone's friend underwrites certain moral or prudential norms of belief regarding his or her innocence).",
+          "corpus_chunk": 4946
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "According to the interpretation of Clifford presented above, there is a strong connection between the epistemic and the moral types: the fact that there is an epistemic norm to believe always and only on sufficient evidence entails that there is an analogous moral norm.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In some places, Clifford seems simply to presume that epistemic duty is a species of ethical duty.",
+          "corpus_chunk": 4947
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "It was noted earlier that one way to read Locke is as arguing for (P2) via the independent theoretical premise that God's will for us is that we follow Evidentialist norms, together with a divine command theory of moral rightness (see Wolterstorff 1996).",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In addition to using theoretical arguments like these, ethicists of belief can connect doxastic norms by appealing to empirical data.",
+          "corpus_chunk": 4949
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Likewise, the moral norm to believe the best of others is often tragically in tension with the epistemic norm to believe what the evidence supports, with the prudential norm to believe whatever it takes in order to get ahead, and so on.",
+          "corpus_chunk": 4951
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Ethicists of belief who are not value monists often claim that there is a way of ordering norms or types of norms in terms of the relative strength or relative ease with which their claims on us can be defeated.",
+          "corpus_chunk": 4952
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Still others think that one category of norm collapses into another and that this can give us an all things considered conclusion (for discussion of whether epistemic rationality collapses into prudential rationality, for example, see Kelly 2003) In sum: a full-blown ethics of belief will say something about the axiological sources of the different types of norms, about the inferential relations between them, about their temporal range (synchronic/diachronic) and about what to do when norms conflict.",
+          "corpus_chunk": 4953
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "A third foundational issue related to the nature of belief has to do with whether or not belief-formation is in some way voluntary or under the control of the will.",
+          "corpus_chunk": 4968
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Some explicitly reject any parallel between free will and free belief (Wagner forthcoming).",
+          "corpus_chunk": 4968
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Finally, some ethicists of belief seek to argue that there are some obligations on direct belief-formation while also absorbing the putative empirical datum that much of it is not under the control of the will (see Feldman and Conee 1985, Feldman 2000, Adler 2005, Hieronymi 2006 and 2008).",
+          "corpus_chunk": 4970
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Evidentialism of some sort is far and away the dominant ethic of belief among early modern and contemporary philosophers alike.",
+          "corpus_chunk": 4971
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Once a principle along these lines has been chosen, the relative strictness of a given Evidentialist position will be a function of how many exceptions it allows.",
+          "corpus_chunk": 4972
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "They might hold that the Cliffordian view applies, say, to the beliefs formed by a military pilot about the location of a legitimate bombing target in the midst of a residential area, or the beliefs formed by a government health official regarding the efficacy of a pharmaceutical trial, at least insofar as these beliefs lead to morally or prudentially significant actions.",
+          "corpus_chunk": 4973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As a result, the boundary between a very moderate Evidentialism and full-blown Non-Evidentialism can be quite blurry.",
+          "corpus_chunk": 4973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Perhaps the best place to make a distinction between moderate Evidentialism and full-blown Non-Evidentialism is over whether a subject can be not only permitted but also obliged to form a belief on insufficient evidence (or, depending on the reflective access conditions, on what she takes to be insufficient evidence) in certain situations.",
+          "corpus_chunk": 4975
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It was noted earlier that doxastic norms can be either synchronic or diachronic.",
+          "corpus_chunk": 4976
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This last point shows that Evidentialism about belief—even of a strict and uncompromising sort—can be combined with Non-Evidentialism about some other positive, categorical propositional attitudes in order to make it seem less stern (see Audi 2008a for a list of possible meanings of “faith”).",
+          "corpus_chunk": 5005
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "There is also some dispute about whether acceptance is able to play the various roles that its advocates intend (Radford 1990, Maher 1990, Moore 1994).",
+          "corpus_chunk": 5006
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "A moderate fideist, by contrast, might argue that we are only permitted to accept that p if we lack strong evidence about p either way.",
+          "corpus_chunk": 5007
+        }
+      ],
+      "annotation": "Distinguishes moral, prudential, and epistemic norms, evidentialist versions, belief control, and voluntary acceptance; supplies a secondary map of the modern ethics of belief."
+    },
+    {
+      "key": "jordan-jackson2022",
+      "used_for": [
+        "Commitment that helps make a truth available",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The argument presented by William James (1842–1910) in his 1896 essay, “The Will to Believe”, extends far beyond the issue of the rationality of theistic belief to include various philosophical issues (for instance, whether to embrace determinism or indeterminism), and even matters of practical life.",
+          "corpus_chunk": 29178
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Clifford argued that: …if I let myself believe anything on insufficient evidence, there may be no great harm done by the mere belief; it may be true after all, or I may never have occasion to exhibit it in outward acts.",
+          "corpus_chunk": 29179
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "It may be worthwhile to note that Clifford’s argument here is itself a moral pragmatic argument.",
+          "corpus_chunk": 29180
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A hypothesis is live, we might say, for a person just in case that person lacks compelling evidence disconfirming that hypothesis, and the hypothesis has an intuitive appeal for that person.",
+          "corpus_chunk": 29181
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "But, Strategy B is preferable to Strategy A because Strategy A would deny us access to certain possible kinds of truth.",
+          "corpus_chunk": 29182
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Of course, accepting proposition (11), and advancing an alternative strategy of seeking truth by any available means, even at the risk of error, does not entail that anything goes.",
+          "corpus_chunk": 29183
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "His is an argument contra the prohibition of believing whenever the evidence is silent, a prohibition implied by Clifford’s Rule.",
+          "corpus_chunk": 29183
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The lack of adequate evidence is sufficient to render an option intellectually open.",
+          "corpus_chunk": 29184
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "By affirmation James means something like an abstract claim, devoid of much doctrinal content, and found in the major religions.",
+          "corpus_chunk": 29186
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Two ideas are suggested by James’s explication: sovereignty and perfection.",
+          "corpus_chunk": 29186
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Monotheism, in other words, and not polytheism is established by the third affirmation.",
+          "corpus_chunk": 29187
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "There are possible truths, James claims, belief of which is a necessary condition of obtaining evidence for them.",
+          "corpus_chunk": 29188
+        }
+      ],
+      "annotation": "Secondary reconstruction distinguishes truths dependent on commitment from evidence accessible after commitment in James’s argument."
+    },
+    {
+      "key": "bishop-mckaughan2023",
+      "used_for": [
+        "From cooperation to religion",
+        "Does the option force belief?",
+        "What the binary presentation leaves out",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "While philosophical reflection on faith of the kind exemplified in religious contexts might ideally hope to yield an agreed definition in terms of necessary and sufficient conditions that articulate the nature of faith, the present discussion proceeds by identifying key components that recur in different accounts of religious faith.",
+          "corpus_chunk": 13404
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Since ‘religion’ itself may well be a ‘family resemblance’ universal, essentialism about faith of the religious kind might be misplaced.",
+          "corpus_chunk": 13404
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The present discussion, however, deals directly with the target notion of the kind of faith exemplified in religious faith, assuming the background of a working grasp of the notion as deployed in religious forms of life, and specifically in those belonging to the theist traditions.",
+          "corpus_chunk": 13406
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "An initial broad distinction is between thinking of faith just as a person’s state when that person ‘has faith’, and thinking of it as also involving a person’s act, action or activity.",
+          "corpus_chunk": 13407
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A philosophical account of faith may be expected to illuminate this apparent paradox.",
+          "corpus_chunk": 13407
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "There are significant differences, however, between the trusting involved in theistic faith and that involved in interpersonal trust.",
+          "corpus_chunk": 13455
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "For those who reject the model of theist faith as basic knowledge and also think that the question of God’s existence cannot be settled intellectually on the basis of the available evidence, the venture involved in trusting in God (if such there be) may seem to include a doxastic venture: those who trust already venture beyond the available evidence, in their very believing or accepting that God exists and may be relied on for salvation.",
+          "corpus_chunk": 13456
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Theological non-realism One way to relieve this pressure is to offer a non-realist analysis of theological claims.",
+          "corpus_chunk": 13456
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Assuming, then, that theist faith does include (under realist assumptions) a venture in practical commitment to truth-claims about ultimate reality, the justifiability of such a venture might yet be thought defensible by analogy with interpersonal situations where practical commitment seems justifiably to be made beyond one’s evidence to the claim that a person will prove trustworthy in some relevant respect.",
+          "corpus_chunk": 13458
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "But if—as we are here assuming—one ventures beyond evidential support in taking it to be true in practical reasoning that God exists and may be trusted for salvation, this may be a venture that is not confined to initial commitment but rather persists in needing to be made.",
+          "corpus_chunk": 13459
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Doxastic venture without doxastic voluntarism Many dismiss the idea that one may venture in one’s very believing that God exists as committing a category error: ventures are voluntary, but propositional belief is not directly under voluntary control.",
+          "corpus_chunk": 13460
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Practical commitment to a faith-proposition’s truth therefore could be a venture: there is no category error in allowing this possibility.",
+          "corpus_chunk": 13460
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "James observes, however, that many beliefs have causes that do not constitute or imply an evidential grounding of their truth.",
+          "corpus_chunk": 13462
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Note that a doxastic venture model of theistic faith reconciles faith as gift with faith’s active components: taking a faith-proposition to be true in practical reasoning is a basic (mental) action (which leads on to further actions involved in trusting God and seeking to do God’s will); the gift provides the motivational resources for this basic action, namely a firm belief in the truth of the faith-proposition, despite its lack of adequate evidential support.",
+          "corpus_chunk": 13463
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "Arguably, the standard ‘passional’ or ‘non-evidential’ cause of religious belief is cultural immersion within an historical faith-tradition.",
+          "corpus_chunk": 13464
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Some accounts allow that faith centrally involves practical commitment venturing beyond evidential support, yet do not require (or, even, permit) that the venturer actually believes the faith-proposition assumed to be true.",
+          "corpus_chunk": 13475
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The origins of Swinburne’s pragmatist model are to be found in a much earlier paper, Swinburne 1969.",
+          "corpus_chunk": 13475
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Decisive commitment in the absence of such assurance may nevertheless be possible, motivated (as Swinburne suggested in the first edition of his Faith and Reason) by the evaluative belief that ‘unless [faith-propositions are true], that which is most worthwhile is not to be had’ (Swinburne, 1981, 117).",
+          "corpus_chunk": 13477
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "In response to Daniel Howard-Snyder (2013a) Schellenberg allows that faith may in some instances involve belief while still maintaining that ‘non-doxastic religious faith … will turn out to be a particularly important way of having religious faith as we head into the future’ (2013, 262).",
+          "corpus_chunk": 13478
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Audi’s account is not strictly a ‘venture’ model, however, since he does not take commitment beyond the support of adequate evidence to be essential.",
+          "corpus_chunk": 13479
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Some philosophers have suggested that the epistemological challenges faced by accounts of faith as involving belief beyond the evidence may be avoided by construing theist commitment as hope.",
+          "corpus_chunk": 13480
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Hope as such is an attitude rather than an active commitment, and, as Audi observes, it contrasts with the attitude of faith at least in this respect, namely, that surprise makes little sense as a response to discovering that the object of one’s faith is indeed the case, whereas there need be nothing inappropriate in surprise at the fulfilment of one’s hopes (see Audi 2011, 74).",
+          "corpus_chunk": 13481
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "A model of faith as acting in hope shares with the doxastic and non-doxastic venture models in rejecting the view that faith requires cognitive certainty.",
+          "corpus_chunk": 13482
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "The ‘certainty’ of faith on these models is more a matter of the certainty that persons of faith find themselves conferring on the foundational claims of their faith, rather than a matter of discovering in themselves a certain knowledge or intellectual conviction of the truth of these claims.",
+          "corpus_chunk": 13483
+        }
+      ],
+      "annotation": "Distinguishes competing cognitive, practical, trust, acceptance, and hope models of faith, conditional warrant, venture, and the limits of interpersonal analogies."
+    }
+  ]
+}
