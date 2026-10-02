@@ -1,0 +1,749 @@
+== 12-social-epistemology/conformity-cascades-and-herding
+Q: How can sequential imitation conceal private evidence and how does conformity differ from informative communication?
+@oconnor-etal2026 | § 4.1 | As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.
+@oconnor-etal2026 | § 4.1 | Suppose that a court consisting of three judges must render a judgment.
+@oconnor-etal2026 | § 4.1 | Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.
+@oconnor-etal2026 | § 4.1 | In light of these results, various “escape routes” have been proposed.
+@oconnor-etal2026 | § 4.1 | While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.
+@oconnor-etal2026 | § 4.1 | If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.
+@oconnor-etal2026 | § 4.1 | This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.
+@oconnor-etal2026 | § 4.1 | A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).
+@oconnor-etal2026 | § 4.1 | For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).
+@oconnor-etal2026 | § 4.1 | This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).
+@oconnor-etal2026 | § 4.1 | In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.
+@oconnor-etal2026 | § 4.1 | Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.
+@oconnor-etal2026 | § 4.1 | The first agent buys GM stock based on their (minority) private information.
+@oconnor-etal2026 | § 4.3 | Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.
+@oconnor-etal2026 | § 4.3 | For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.
+@oconnor-etal2026 | § 4.3 | As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.
+@oconnor-etal2026 | § 4.3 | In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.
+@oconnor-etal2026 | § 4.3 | This supports central claims from social epistemology espoused by Goldman (1999).
+@oconnor-etal2026 | § 4.3 | This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.
+@oconnor-etal2026 | § 4.3 | Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.
+@oconnor-etal2026 | § 4.3 | One truth about epistemic communities is that relationships matter.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/conspiracy-theories
+Q: How do neutral definitions, missing evidence, anomalies, scope, and institutional trust affect a specific conspiracy allegation?
+@conspiracy-theories-iep | § 2 | The definition of the term “conspiracy theory” given at the beginning of this article is neutral in the sense that it does not imply that a conspiracy theory is wrong or unlikely to be true.
+@conspiracy-theories-iep | § 2 | What Keeley has added to the minimal definition is that the group of conspirators is small.
+@conspiracy-theories-iep | § 2 | Similarly separating out the different ingredients of a conspiracy theory, Mandik (2007, p.206) states that conspiracy theories postulate “(1) explanations of (2) historical events in terms of (3) intentional states of multiple agents (the conspirators) who, among other things, (4) intended the historical events in question to occur and (5) keep their intentions and actions secret.” He sees these five conditions as necessary conditions for being a conspiracy theory, but he remains agnostic as to whether they are jointly sufficient.
+@conspiracy-theories-iep | § 2 | He sees conspiracy theories as explanations that are opposed to the official explanation of an event at a given time.
+@conspiracy-theories-iep | § 4 | A number of criteria have been offered, sometimes implicitly, in the philosophical literature to evaluate whether we should believe in a particular conspiracy theory, and these are surveyed below.
+@conspiracy-theories-iep | § 4 | Finally, while instrumentalism still has epistemic aims, we can also identify a more radical pragmatist view which focuses more generally on the consequences, for example political and social consequences, of holding a particular (conspiracy) theory or belief.
+@conspiracy-theories-iep | § 4 | Third, there are a number of other criteria neither dealing with motives nor with scientific methodology.
+@conspiracy-theories-iep | § 4 | Criteria concerning Scientific Methodology Basham (2001, p.275) advocates skepticism of a conspiracy theory if it suffers from what he calls “internal faults,” among which he lists “problems with self-consistency, explanatory gaps, appeals to unlikely or obviously weak motives and other unrealistic psychological states, poor technological claims, and the theory’s own incongruencies with observed facts it grants (including failed predictions).” Räikkä (2009a, p.196f) also refers to a similar list of criteria.
+@conspiracy-theories-iep | § 4 | Note that the list of things mentioned by Basham as internal faults is rather diverse, and one can debate whether all of these faults should really be considered internal to the theory.
+@conspiracy-theories-iep | § 4 | Clarke (2002; 2007) sees conspiracy theories as degenerating research programs in the sense developed by Lakatos (1970).
+@conspiracy-theories-iep | § 4 | Going further, Clarke (2007) also views other conspiracy theories—the controlled demolition theory of 9/11, for instance—as only proto-theories, something that is not sufficiently worked out to count as a theoretical core of a degenerating or progressive research program.
+@conspiracy-theories-iep | § 4 | Furthermore, as Lakatos’s notion of a research program comes with a hard core—the central characteristic claims not up for modification—and a protective belt—auxiliary hypotheses which can be changed—applying this notion also gives us tools to analyze a conspiracy theory in more detail.
+@conspiracy-theories-iep | § 4 | Dentith (2016) views conspiracy theories as inferences to the best explanation.
+@conspiracy-theories-iep | § 4 | There is some disagreement between authors about whether conspiracy theories may be selective in their choice of evidence.
+@conspiracy-theories-iep | § 4 | Finally, Keeley (2003, p.106) considers whether lack of evidence for a conspiracy should count against a theory positing such a conspiracy.
+@conspiracy-theories-iep | § 4 | While the previous criterion already discussed how conspiracy theories relate to data, there is a particular kind of data that receives special attention both by conspiracy theorists and in the philosophical literature about conspiracy theories.
+@conspiracy-theories-iep | § 4 | Dentith (2014, 129ff), following Coady (2006c), points out that any theory, official or unofficial, will have errant data.
+@conspiracy-theories-iep | § 4 | When it comes to evaluating a specific conspiracy theory, the conclusion is that we should be looking at the errant data of both the conspiracy theory and alternative theories.
+@conspiracy-theories-iep | § 4 | Trust plays a role in two different ways when it comes to conspiracy theories.
+@conspiracy-theories-iep | § 4 | Conversely, people who reject a particular theory as “just” a conspiracy theory may also have a motive to mislead.
+@conspiracy-theories-iep | § 4 | Levy (2007) takes a radically socialized view of knowledge: Since knowledge can only be produced by a complex network of inquiry in which the relevant epistemic authorities are embedded, a conspiracy theory conflicting with the official story coming out of this network is “prima facie unwarranted” (p.182, italics in the original).
+@conspiracy-theories-iep | § 4 | Furthermore, Dentith points out that the fact that a theory has authority in the sense of being official does not necessarily mean that it has epistemic authority, a point Levy also makes.
+@conspiracy-theories-iep | § 4 | As mentioned when discussing individual trust, when we want to assess the credibility of experts, part of that credibility judgment will depend on the extent to which we trust the institution accrediting the expertise, assuming there is such an institution to which the expert is linked.
+@conspiracy-theories-iep | § 4 | If a conspiracy theory contradicts an official theory based on scientific expertise, this produces skepticism not only with regard to the institution of science, but may also produce skepticism with regard to other public institutions, for example the press, which accepts the official story instead of uncovering the conspiracy, the parliament and the government, which produce or propagate the conspiracy theory in the first place.
+@conspiracy-theories-iep | § 4 | In any case, our trust in our public institutions will influence the extent to which we hold a particular conspiracy theory to be likely.
+@conspiracy-theories-iep | § 4 | In any case, an individual who tries to assess a particular conspiracy theory should thus also consider to what extent they trust or distrust our public institutions.
+@conspiracy-theories-iep | § 4 | A global conspiracy theory like the Flat Earth theory tends to involve more pervasive institutional distrust, since it involves multiple institutions from various societal domains, than a local conspiracy theory like the Watergate conspiracy.
+@conspiracy-theories-iep | § 4 | The general claim here is that the more agents that are supposed to be involved in a conspiracy—its size—and the longer the conspiracy is supposed to be in existence—its duration—the less likely the conspiracy theory.
+@conspiracy-theories-iep | § 4 | Furthermore, Grimes (2016) has conducted simulations showing that large conspiracies with 1000 agents or more are unlikely to succeed due to problems with maintaining secrecy.
+A @conspiracy-theories-iep: Pauly’s secondary overview distinguishes neutral and loaded definitions and presents contested evaluation criteria concerning evidence, trust, scale, and secrecy.
+
+== 12-social-epistemology/echo-chambers-and-epistemic-bubbles
+Q: How do omitted information and active discrediting differ, and why does a conceptual mechanism not establish empirical prevalence?
+@oconnor-etal2026 | § 4.3 | Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.
+@oconnor-etal2026 | § 4.3 | For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.
+@oconnor-etal2026 | § 4.3 | As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.
+@oconnor-etal2026 | § 4.3 | In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.
+@oconnor-etal2026 | § 4.3 | This supports central claims from social epistemology espoused by Goldman (1999).
+@oconnor-etal2026 | § 4.3 | This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.
+@oconnor-etal2026 | § 4.3 | Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.
+@oconnor-etal2026 | § 4.3 | One truth about epistemic communities is that relationships matter.
+@oconnor-etal2026 | § 5.2 | The latest challenge confronting the informational state of the public is the accelerating spread of misleading content on the internet.
+@oconnor-etal2026 | § 5.2 | Others have challenged the idea that disinformation needs to be misleading, as opposed to producing ignorance (Simion 2023) or otherwise blocking successful action (Harris 2023).
+@oconnor-etal2026 | § 5.2 | Lynch (2018) argues that epistemic arrogance, which involves an unwillingness to learn from others, undermines the process of public debate.
+@oconnor-etal2026 | § 5.2 | There have been concerns that various aspects of this process may exacerbate false beliefs.
+@oconnor-etal2026 | § 5.2 | This is sometimes called the “filter bubble” or “information bubble” effect (though these various phenomena are by no means clearly delineated) (Pariser 2011, Kitchens et al. 2020).
+@oconnor-etal2026 | § 5.2 | This includes understanding social aspects of knowledge and belief formation.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@mcleod2023 | § 2.3 | Although trust is paradigmatically a relation that holds between two individuals, forces larger than those individuals inevitably shape their trust and distrust in one another.
+@mcleod2023 | § 2.3 | We need such a stance because we can’t always stop to reflect carefully on when to trust (i.e., assuming that some rational reflection is required for trusting well).
+@mcleod2023 | § 2.3 | Whichever epistemology of trust we choose, it ought to be sensitive to the tension that exists between trusting somebody and rationally reflecting on the grounds for that trust.
+A @mcleod2023: Distinguishes trust from reliance, justification from actual trustworthiness, and interpersonal judgment from the surrounding social climate.
+
+== 12-social-epistemology/epistemic-autonomy-and-artificial-intelligence
+Q: What distinguishes a generated lead from established evidence and how do responsibility, expertise, and trust bear on AI reports?
+@oconnor-etal2026 | § 3.1 | When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.
+@oconnor-etal2026 | § 3.1 | Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.
+@oconnor-etal2026 | § 3.1 | Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.
+@oconnor-etal2026 | § 3.1 | In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).
+@oconnor-etal2026 | § 3.1 | Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).
+@oconnor-etal2026 | § 3.1 | A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@frances-matheson2026 | § 4 | A child has belief \(B\) that Hell is a real place located in the center of the earth.
+@frances-matheson2026 | § 4 | There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).
+@frances-matheson2026 | § 4 | The better one’s epistemic position, the more likely one is to be correct.
+@frances-matheson2026 | § 4 | If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \(B\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.
+@frances-matheson2026 | § 4 | Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.
+@frances-matheson2026 | § 4 | Suppose I also believe \(P\), that Taylor is my peer regarding \(B\) in this sense: I think we are equally likely to judge \(B\) correctly.
+@frances-matheson2026 | § 4 | After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \(B\) is false.
+@frances-matheson2026 | § 4 | But the important point here is this: if I have the view that if it turns out that she really thinks \(B\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \(B\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.
+@frances-matheson2026 | § 4 | Danny has been right, and 20% of the time they have both been wrong.
+@frances-matheson2026 | § 4 | That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \(B\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).
+@frances-matheson2026 | § 4 | But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.
+@frances-matheson2026 | § 4 | For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.
+@frances-matheson2026 | § 4 | A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.
+@frances-matheson2026 | § 4 | So for any two people it is quite unlikely that they are ‘weight peers’.
+@frances-matheson2026 | § 4 | This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).
+@frances-matheson2026 | § 4 | Evidence of the experts’ interests and biases vis-a-vis the question at issue.
+A @frances-matheson2026: Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action.
+@leonard2023 | § 5 | Here is a conversation that we might have: You: This plant is Pacific Poison Oak.
+@leonard2023 | § 5 | Broadly speaking, those working on the epistemology of authoritative testimony endorse one of two accounts: Preemptive Accounts and Non-Preemptive Accounts.
+@leonard2023 | § 5 | Proponents of the Preemptive Account, then, explain the difference between authoritative and non-authoritative testimony as follows: Authoritative testimony can provide you with a preemptive reason for belief, whereas non-authoritative testimony cannot.
+@leonard2023 | § 5 | Instead of thinking about authoritative testimony as providing preemptive reasons for belief, proponents of the Non-Preemptive Account take an authority’s testimony that p to provide a very strong reason to believe that p, where this reason is to be added to, or combined with, all of the other reasons that you have related to the proposition in question.
+A @leonard2023: Introduces authoritative testimony and competing preemptive and non-preemptive accounts, with objections and examples.
+@mcleod2023 | § 1 | Trust is an attitude we have towards people whom we hope will be trustworthy, where trustworthiness is a property not an attitude.
+@mcleod2023 | § 1 | For most philosophers, trust is a kind of reliance although it is not mere reliance (Goldberg 2020).
+@mcleod2023 | § 1 | Included at the end is some discussion about the nature of distrust.
+@mcleod2023 | § 1 | One might think that if one is relying while trusting—that is, if trust is a species of reliance—then accepted vulnerability would not be essential for trust.
+@mcleod2023 | § 1 | Annette Baier writes that “trusting can be betrayed, or at least let down, and not just disappointed” (1986: 235).
+@mcleod2023 | § 1 | To illustrate this type of trust, consider parents who trust their teenagers with the house or the family car, believing that their [children] may well abuse their trust, but hoping by such trust to elicit, in the fullness of time, more responsible and responsive trustworthy behaviour.
+A @mcleod2023: Distinguishes trust from reliance, justification from actual trustworthiness, and interpersonal judgment from the surrounding social climate.
+
+== 12-social-epistemology/epistemic-injustice
+Q: Which mechanisms distinguish reasonable doubt from testimonial, hermeneutical, contributory, and institutional injustice, and what remedies fit each?
+@epistemic-injustice-iep | § 1 | The introduction of this article is designed to highlight the existence of a distinctive type of injustice where a wrong is done to someone specifically in their capacity as a knower (Fricker 2007, 1).
+@epistemic-injustice-iep | § 1 | Of special interest is the specific type of social power called ‘identity power’ that is dependent on a shared understanding of social identities during the use of social power.
+@epistemic-injustice-iep | § 1 | The identity prejudice that leads to testimonial injustice is enabled through the use of the social power described as identity power.
+@epistemic-injustice-iep | § 1 | As we will see, experiencing this harm can result in serious negative consequences for one’s self-development.
+@epistemic-injustice-iep | § 1 | Consider the case of post-partum depression prior to its recognition as a serious medical condition.
+@epistemic-injustice-iep | § 1 | In both the cases of testimonial and interpretive injustice, identity prejudice then serves as the main cause of injustice.
+@epistemic-injustice-iep | § 2 | We have been introduced to the idea that social power as a socially situated capacity to control other’s actions further results in the use of identity power as contributing to the central case of testimonial injustice involving identity prejudice.
+@epistemic-injustice-iep | § 2 | Greenleaf interprets Marge’s suspicion as a case of ‘female intuition’, which is emotional and not based on facts.
+@epistemic-injustice-iep | § 2 | A further contrast can be drawn in terms of agential and structural power.
+@epistemic-injustice-iep | § 2 | The key point here is that all relations of power, whether agential or structural, depend on the specific social alignments of people.
+@epistemic-injustice-iep | § 2 | With the example of nonvoting groups, we see that a complex network of institutions, laws and their implementation can result in some groups engaging in forms of nonaction that undermine their basic rights.
+@epistemic-injustice-iep | § 2 | We now need to consider the more specific type of social power that Fricker calls ‘identity power’ (2007, 14-17).
+@epistemic-injustice-iep | § 2 | Identity power can further operate with other forms of social power, such as material forms of social power.
+@epistemic-injustice-iep | § 2 | This use of stereotypes may be acceptable or not depending on the actual stereotype used.
+@epistemic-injustice-iep | § 2 | Fricker argues that the central cases of testimonial injustice involve credibility deficit, precisely because it is here that one is most clearly wronged in their capacity as a knower.
+@epistemic-injustice-iep | § 2 | In sum, social power in the form of identity power plays a fundamental role in undermining the credibility of speakers.
+@epistemic-injustice-iep | § 3 | We saw that the central cases of testimonial injustice turn on the way identity power is used to prejudice the judgement of someone’s credibility as an informant.
+@epistemic-injustice-iep | § 3 | Stereotypes are defined as “widely held associations between a given social group and one or more attributes” (2007, 30).
+@epistemic-injustice-iep | § 3 | It is then, as Fricker further argues, both inevitable and desirable that hearers use generalizations based on reliable stereotypes.
+@epistemic-injustice-iep | § 3 | In his local environment, he faces no counter evidence to this view, and so he is not proceeding irrationally.
+@epistemic-injustice-iep | § 3 | A negative identity prejudicial stereotype that is at work in such cases of systematic testimonial injustice is then defined as “A widely held disparaging association between a social group and one or more attributes, where this association embodies a generalization that displays some (typically, epistemically culpable) resistance to counter-evidence owing to an ethically bad affective investment” (2007, 35).
+@epistemic-injustice-iep | § 3 | In such discussions, speakers and hearers perceive others as trustworthy, in being both sincere and competent concerning what is said.
+@epistemic-injustice-iep | § 3 | This non-doxastic mediation is further clarified with the work of Walter Lippmann who treats a stereotype as a social image creating an association between a social group and certain characteristics resulting in generalizations about this group (1965; Fricker 2007).
+@epistemic-injustice-iep | § 3 | As a result, they are very hard to detect and change, requiring a special kind of self-awareness or self-consciousness to see this kind of prejudice in one’s thinking and to take steps to correct it.
+@epistemic-injustice-iep | § 3 | The opposite may also be possible: our prejudicial beliefs can be corrected by an unprejudiced social perception.
+@epistemic-injustice-iep | § 4 | We have seen how prejudice can corrupt our credibility judgements leading to testimonial injustice.
+@epistemic-injustice-iep | § 4 | Being treated as a purveyor of knowledge is an essential human value, so that when it is violated, one suffers an intrinsic injustice.
+@epistemic-injustice-iep | § 4 | Secondary harms occur as further consequences of this primary harm and can be both practical and epistemic.
+@epistemic-injustice-iep | § 4 | Identity prejudice in the form of testimonial injustice can be further seen as a general attack on someone’s epistemic authority (2007, 48).
+@epistemic-injustice-iep | § 4 | Such a stance requires an epistemic confidence that testimonial injustice could weaken.
+@epistemic-injustice-iep | § 4 | Here we have the primary harm of testimonial injustice, where he unjustly downplays Marge’s remarks.
+@epistemic-injustice-iep | § 4 | We should further note this example highlights the way a hearer can clearly fail to correct the identity prejudice at work in their credibility assessments (2007, 89).
+@epistemic-injustice-iep | § 5 | We have been reviewing the serious harms that result from testimonial injustice, where the most serious involve the devaluing of someone’s capability as a sharer of knowledge.
+@epistemic-injustice-iep | § 5 | This section provides an overview of this core idea and its importance for overcoming the negative harms seen with testimonial injustice.
+@epistemic-injustice-iep | § 5 | Here we can revisit the example of the feminist who continues her dislike of female political candidates (2007, 83).
+@epistemic-injustice-iep | § 5 | The existence of identity prejudice presents a danger to the ongoing development of our testimonial sensibility.
+@epistemic-injustice-iep | § 5 | Our question then concerns what type of critical awareness is needed to avoid testimonial injustice (2007, 90)?
+@epistemic-injustice-iep | § 5 | This suggests that testimonial responsibility requires a distinctly reflexive critical social awareness (2007, 91).
+@epistemic-injustice-iep | § 5 | While this active reflection is the default approach, it can also be accomplished through familiarity.
+@epistemic-injustice-iep | § 6 | We now turn to a discussion of the other type of epistemic injustice described by Fricker, ‘hermeneutical injustice’, which is related in important ways to testimonial injustice, but is distinct and arguably more fundamental.
+@epistemic-injustice-iep | § 6 | This required them to develop resources to understand their experience that are largely implicit, or even absent from, the interpretive practices of their time.
+@epistemic-injustice-iep | § 6 | Fricker locates such problematic experience within the ‘credibility economy’, which concerns the distribution of epistemic resources across a domain.
+@epistemic-injustice-iep | § 6 | They represent our shared tools of social interpretation and communication (see McKinnon 2016, 441).
+@epistemic-injustice-iep | § 6 | Moreover, this marginalization could be structural, or agent centered (consider the example of ageism among employers (2007, 154).
+@epistemic-injustice-iep | § 6 | This changed with the emergence of consciousness raising movements that enabled a better understanding of such experiences and their falling under the category of harassment.
+@epistemic-injustice-iep | § 6 | In addition, hermeneutical injustice may be further worsened through the testimonial injustice that can follow in its wake.
+@epistemic-injustice-iep | § 6 | If this is based on an identity prejudice, they are then doubly wronged (2007, 159).
+@epistemic-injustice-iep | § 7 | We have been witnessing the fact that in cases of hermeneutical injustice or what will also be referred to as ‘interpretive injustice’, there exists an asymmetrical cognitive disadvantage, where a collective hermeneutical gap impacts members of different groups in different ways.
+@epistemic-injustice-iep | § 7 | We can begin by considering the analogy of a welfare state with free healthcare but no dental care health plan (2007, 161-162).
+@epistemic-injustice-iep | § 7 | The primary harm common to both involves a prejudicial exclusion from participation in the spread of knowledge.
+@epistemic-injustice-iep | § 7 | In the case of hermeneutical injustice, we must counteract a gap in the social environment that threatens not simply the reliability of what is said, but its very intelligibility.
+@epistemic-injustice-iep | § 7 | This critical awareness or sensitivity, that is, the reflexive awareness on the part of a hearer, highlights how they must be aware of the relationship between their social identity and that of the speaker and its influence on the intelligibility of what is being said (2007, 169).
+@epistemic-injustice-iep | § 7 | In other words, in hermeneutical contexts, the responsible hearer makes a credibility judgment that is an assessment of the degree to which what is said ‘makes good sense’ that is, is a truthful interpretation of what is said: “The guiding ideal is that the degree of credibility is adjusted upwards to compensate for the cognitive and expressive handicap imposed on the hermeneutically marginalized speaker by the non-inclusive hermeneutical climate, by structural identity prejudice” (2007, 170).
+@epistemic-injustice-iep | § 7 | This might obviously include engaging in a more extended, engaged discussion and a commitment to the kind of ‘epistemic humility’ toward interpretation needed to create this more inclusive setting.
+@epistemic-injustice-iep | § 7 | The aim or end of the virtue is to neutralize the impact of the structural identity prejudice on one’s credibility judgment.
+@epistemic-injustice-iep | § 8 | There have been many further extensions of these ideas, both in terms of additional clarifications of the nature of epistemic injustice and its further application in the fields of education, healthcare, law, science, religion and elsewhere.
+@epistemic-injustice-iep | § 8 | The idea that Asians are all good at mathematics, or all African Americans good at sports are two familiar examples.
+@epistemic-injustice-iep | § 8 | Related ideas are discussed by Anderson, who argues that the existence of structural, institutional forms of epistemic injustice requires greater emphasis on the need for structural remedies (2012).
+@epistemic-injustice-iep | § 8 | If different groups engaged in inquiry are segregated based on their social identities, this may then lead to systematic unjust group inequalities, where, for example, an advantaged group disregards the testimony of a less advantaged group.
+@epistemic-injustice-iep | § 8 | Members of the advantaged group will be unable to make sense of the perspective of those in the disadvantaged group.
+@epistemic-injustice-iep | § 8 | They may nevertheless suffer from hermeneutical injustice in that the more advantaged are unable to understand them.
+@epistemic-injustice-iep | § 8 | The idea that marginalized groups suffering from hermeneutical injustice can still develop an understanding of their own experience is further explored by Goetze (2018).
+@epistemic-injustice-iep | § 8 | On the basis of this disjunctive characterization of the primary harm found in hermeneutical injustice, Goetze is able to offer a further taxonomy of the various species of such injustice in terms of where the gap in our collective hermeneutical resources appears (for details see 2018, 80-85).
+A @epistemic-injustice-iep: Sinclair’s free secondary overview supplies Fricker’s central distinctions, literary examples, harms, corrective virtues, and structural and interpretive challenges; the original contemporary books are not represented as read.
+@grasswick2018 | § 4.1 | While testimony has emerged as a central topic in social epistemology generally, feminists have been major contributors to discussions of how social power plays out in the economies of credibility.
+@grasswick2018 | § 4.1 | Fricker considers our role as testifiers a core dimension of our epistemic lives, so to suffer a credibility deficit impedes one’s capacity as an epistemic agent, making it both an ethical and an epistemic wrong when one suffers a deficit due to an identity prejudice.
+@grasswick2018 | § 4.1 | In a similar vein, Nancy Daukas argues for an explicitly social form of virtue epistemology that takes as its core epistemic virtue “epistemic trustworthiness” (2006, 2011).
+@grasswick2018 | § 4.1 | For example, Elizabeth Anderson argues for the need to develop large-scale structural remedies such as ensuring broadly inclusive epistemic institutions in order to fully correct for the systemic biases that result in testimonial injustices (Anderson 2012).
+@grasswick2018 | § 4.1 | Testimonial smothering occurs when a speaker recognizes her audience as unwilling or unable to give the appropriate uptake to her testimony, and in response, limits and shapes her testimony in order to “insure that the testimony contains only content for which one’s audience demonstrates testimonial competence” (2011, 244).
+@grasswick2018 | § 4.1 | Hermeneutical injustice, involves a “structural prejudice in the economy of collective hermeneutical resources” (2007, 1).
+@grasswick2018 | § 4.1 | For example, some have argued that her analysis misrepresents hermeneutical resources as collective, failing to acknowledge the pluralism of interpretative communities and practices through which marginalized groups may have access to alternative interpretations of their experiences (Mason 2011; Medina 2012).
+@grasswick2018 | § 4.1 | Relatedly, such cases can lead to a kind of epistemic exploitation, where the dominant assume it is the responsibility of the marginalized to perform the labor necessary to educate them (the dominant) in the experiences of the oppressed (Berenstain 2016).
+@grasswick2018 | § 4.1 | Discussions of epistemic injustice offer an excellent example of work focusing on the challenges of knowing in contexts of oppression, analyzing how many of the wrongs that occur within such contexts have both epistemic and ethical dimensions.
+@grasswick2018 | § 4.1 | For example, Dotson frames many of these issues in terms of “epistemic oppression” that involves “persistent epistemic exclusion” (Dotson 2014), and Medina develops an “epistemology of resistance” in response to the epistemic dimensions of oppression (Medina 2013).
+A @grasswick2018: Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation.
+@oconnor-etal2026 | § 5.3 | Influenced by long-standing work in feminism and critical race theory, social epistemology has attempted to theorize about various types of dysfunction in the social practices through which we aim to generate, communicate, assess, and preserve knowledge.
+@oconnor-etal2026 | § 5.3 | stimonial” injustice obtains when (on the basis of identity-based prejudice) an audience gives less credence to a speaker than she deserves. (Fricker illustrated this sort of injustice with Tom Robinson, a character in To Kill a Mockingbird whose testimony, as a Black man on trial for raping a white woman, was prejudicially rejected by the all-white jury.) “Hermeneutical” injustice obtains when, owing to social forces which reflect the interests of certain social groups, a subject lacks the concepts for understanding and/or communicating socially significant aspects of her own experience. (Fricker’s example is the experience of women before
+@oconnor-etal2026 | § 5.3 | Fricker’s (2007) reflections on epistemic injustice have inspired a generation of social philosophers to pursue questions in this vicinity.
+@oconnor-etal2026 | § 5.3 | The guiding hypothesis, explicitly formulated by Mills (2007) in connection with his notion of “white ignorance,” is that ignorance in contemporary society patterns in ways that reflect the interests of dominant social groups.
+@oconnor-etal2026 | § 5.3 | For this reason, the acquisition and handling of evidence, long a topic in feminist and virtue epistemology, has recently begun to attract the attention of social epistemologists as well.
+@oconnor-etal2026 | § 5.3 | A general framework for understanding various dimensions of epistemic oppression can be found in Dotson (2014).
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@anderson2024 | § 9 | Naturalized epistemology considers the effects of our pervasive epistemic interdependence (Nelson 1990).
+@anderson2024 | § 9 | Gendered ideas about epistemic authority can distort our general models of knowledge.
+@anderson2024 | § 9 | Code argues that knowledge of other persons rather than of propositions should be taken as a primary model of knowledge.
+@anderson2024 | § 9 | Recent epistemology’s focus on the indispensability of testimony to inquiry has led feminist epistemologists to take Code’s ideas in a different direction, by investigating the dependence of propositional knowledge on knowledge of persons.
+@anderson2024 | § 9 | Other feminist epistemologists focus on the impact of gender and other hierarchical relations on attributions of epistemic authority.
+@anderson2024 | § 9 | Dotson (2011) distinguishes two kinds of testimonial injustice, silencing and smothering.
+@anderson2024 | § 9 | Davis (2021) distinguishes “identity-based” from “content-based” testimonial injustice, depending on whether a speaker’s testimony is denigrated on the basis of their own social identity or on prejudice against social groups associated with the content of their speech (e.g., dismissing a doctor’s testimony about fibromyalgia based on the assumption that the women who suffer from it are merely seeking attention).
+@anderson2024 | § 9 | An example of hermeneutical injustice is the dismissal of women as humorless or hypersensitive for getting upset at what was seen as mere cloddish courtship or joking, before the concept of sexual harassment was available to make sense of their experiences.
+@anderson2024 | § 9 | Pohlhaus (2011) argues that such ignorance can be willful, leading to contributory injustice, an intentional maintenance of inadequate hermeneutical resources that harmfully obstructs the uptake of resources the oppressed have developed to make sense of their experience (Dotson 2012).
+@anderson2024 | § 9 | Since accurate information on such matters is or was available, explanation is needed for why it is forgotten.
+@anderson2024 | § 9 | Jones (2002) proposes rules for checking such biases when confronted with surprising testimony.
+@anderson2024 | § 9 | A key theme of feminist virtue epistemology is its aspiration to cultivate dispositions that enable inquirers to produce knowledge that can overcome oppression (Daukas 2018).
+A @anderson2024: Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority.
+
+== 12-social-epistemology/epistemic-institutions
+Q: How do coordination, critical uptake, incentives, and inclusion affect institutional information and correction?
+@oconnor-etal2026 | § 4.2 | Let us now turn to three paradigms in formal social epistemology: the credit economy, network models, and models of epistemic diversity.
+@oconnor-etal2026 | § 4.2 | Truth seekers might all herd onto the most promising problem in science, while credit seekers will choose less popular topics where they are more likely to be the one generating a finding.
+@oconnor-etal2026 | § 4.2 | Higginson and Munafo (2016) and Romero (2017) argue that the priority rule strongly disincentivizes scientists from performing replications because credit is so strongly associated with new, positive findings.
+@oconnor-etal2026 | § 4.2 | Bright (2017a), though, uses a model to point out that credit-seekers who fear retaliation may publish more accurate results than truth-seekers who are convinced of some fact, despite their experimental results to the contrary.
+@oconnor-etal2026 | § 4.2 | Because famous scientists are more trusted, their discoveries do more good.
+@oconnor-etal2026 | § 4.2 | On the positive side, besides possible benefits to division of labor, the priority rule incentivizes sharing in science.
+@oconnor-etal2026 | § 4.2 | If investigators using these poor methods train their students into them, and then place those students disproportionately, they will tend to proliferate.
+@oconnor-etal2026 | § 5.1 | A good deal of social epistemology focuses on topics in political epistemology.
+@oconnor-etal2026 | § 5.1 | Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.
+@oconnor-etal2026 | § 5.1 | Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.
+@oconnor-etal2026 | § 5.1 | In addition, there is a lively discussion about the role of experts in democratic politics.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@grasswick2018 | § 3.2 | Numerous feminist social epistemologists, particularly those working in philosophy of science, have employed the underdetermination thesis to argue for the necessary role of background assumptions in theory choice (Anderson 1995b; Longino 1990, 2002; Nelson 1990; Potter 1996).
+@grasswick2018 | § 3.2 | They may also be gendered, or otherwise shaped by culturally salient social identity categories.
+@grasswick2018 | § 3.2 | According to Longino, a theory is objective if it has undergone and survived a certain social process of critical scrutiny.
+@grasswick2018 | § 3.2 | Diverse representation within the community also becomes important, since “a diversity of perspectives is necessary for vigorous and epistemically effective critical discourse” (Longino 2002, 131).
+@grasswick2018 | § 3.2 | Others describe the possibility of objectivity given the perspectival nature of knowledge in a slightly different way.
+@grasswick2018 | § 3.2 | Richmond Campbell develops these ideas further, arguing that armed with realist conceptions of truth and objective justification, we can explain (without circularity) how feminist biases can lead us closer to the truth within contexts of systematic gender bias in epistemic communities (Campbell 2001, 1998).
+@grasswick2018 | § 3.2 | Miriam Solomon characterizes such views described above as “feminist radical empiricism” because they adopt the view that not only are factual claims empirically testable (as do other feminist empiricists), but more radically they embrace the idea that the values or biases that inform our theory choices are also empirically testable themselves (Solomon 2012).
+A @grasswick2018: Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation.
+@epistemic-injustice-iep | § 8 | There have been many further extensions of these ideas, both in terms of additional clarifications of the nature of epistemic injustice and its further application in the fields of education, healthcare, law, science, religion and elsewhere.
+@epistemic-injustice-iep | § 8 | The idea that Asians are all good at mathematics, or all African Americans good at sports are two familiar examples.
+@epistemic-injustice-iep | § 8 | Related ideas are discussed by Anderson, who argues that the existence of structural, institutional forms of epistemic injustice requires greater emphasis on the need for structural remedies (2012).
+@epistemic-injustice-iep | § 8 | If different groups engaged in inquiry are segregated based on their social identities, this may then lead to systematic unjust group inequalities, where, for example, an advantaged group disregards the testimony of a less advantaged group.
+@epistemic-injustice-iep | § 8 | Members of the advantaged group will be unable to make sense of the perspective of those in the disadvantaged group.
+@epistemic-injustice-iep | § 8 | They may nevertheless suffer from hermeneutical injustice in that the more advantaged are unable to understand them.
+@epistemic-injustice-iep | § 8 | The idea that marginalized groups suffering from hermeneutical injustice can still develop an understanding of their own experience is further explored by Goetze (2018).
+@epistemic-injustice-iep | § 8 | On the basis of this disjunctive characterization of the primary harm found in hermeneutical injustice, Goetze is able to offer a further taxonomy of the various species of such injustice in terms of where the gap in our collective hermeneutical resources appears (for details see 2018, 80-85).
+A @epistemic-injustice-iep: Sinclair’s free secondary overview supplies Fricker’s central distinctions, literary examples, harms, corrective virtues, and structural and interpretive challenges; the original contemporary books are not represented as read.
+
+== 12-social-epistemology/experts-and-novices
+Q: How can a novice assess expertise through arguments, agreement, credentials, interests, and records while preserving task specificity and correction?
+@frances-matheson2026 | § 2 | They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.
+@frances-matheson2026 | § 2 | Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.
+@frances-matheson2026 | § 2 | The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.
+@frances-matheson2026 | § 2 | We do it this way: if we disagree over whether to do action \(X\), we are disagreeing over the truth of the claim ‘We should do \(X\)’ (or ‘I should do \(X\)’ or ‘\(X\) is the best thing for us to do’; no, these aren’t all equivalent).
+@frances-matheson2026 | § 2 | However, it is worth noting that agreement also has epistemological implications.
+@frances-matheson2026 | § 2 | How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?
+@frances-matheson2026 | § 4 | A child has belief \(B\) that Hell is a real place located in the center of the earth.
+@frances-matheson2026 | § 4 | There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).
+@frances-matheson2026 | § 4 | The better one’s epistemic position, the more likely one is to be correct.
+@frances-matheson2026 | § 4 | If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \(B\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.
+@frances-matheson2026 | § 4 | Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.
+@frances-matheson2026 | § 4 | Suppose I also believe \(P\), that Taylor is my peer regarding \(B\) in this sense: I think we are equally likely to judge \(B\) correctly.
+@frances-matheson2026 | § 4 | After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \(B\) is false.
+@frances-matheson2026 | § 4 | But the important point here is this: if I have the view that if it turns out that she really thinks \(B\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \(B\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.
+@frances-matheson2026 | § 4 | Danny has been right, and 20% of the time they have both been wrong.
+@frances-matheson2026 | § 4 | That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \(B\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).
+@frances-matheson2026 | § 4 | But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.
+@frances-matheson2026 | § 4 | For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.
+@frances-matheson2026 | § 4 | A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.
+@frances-matheson2026 | § 4 | So for any two people it is quite unlikely that they are ‘weight peers’.
+@frances-matheson2026 | § 4 | This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).
+@frances-matheson2026 | § 4 | Evidence of the experts’ interests and biases vis-a-vis the question at issue.
+@frances-matheson2026 | § 6 | Many disagreements are one-on-one: one person disagrees with another person and as far as they know they are the only two who have any opinion on the matter.
+@frances-matheson2026 | § 6 | When Bob learns all this about his three colleagues, what should his doxastic reaction be to this mixed bag of agreement and disagreement?
+@frances-matheson2026 | § 6 | If the numbers matter, then disagreement poses a skeptical threat for nearly every view of the significance of peer disagreement.
+@frances-matheson2026 | § 6 | Further, while appeals to personal information may be good symmetry-breakers in cases of one-to-one disagreement, when the numbers of disagreeing parties are much larger, the effectiveness of such appeals radically diminishes.
+@frances-matheson2026 | § 6 | Since according to the Right Reasons View, what one is justified in believing is entirely determined by the first-order evidence, no amount of discovered disagreement would change which controversial beliefs are rational.
+@frances-matheson2026 | § 6 | Our beliefs are shaped by a number of factors, and not all of them are epistemically relevant.
+A @frances-matheson2026: Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action.
+@leonard2023 | § 5 | Here is a conversation that we might have: You: This plant is Pacific Poison Oak.
+@leonard2023 | § 5 | Broadly speaking, those working on the epistemology of authoritative testimony endorse one of two accounts: Preemptive Accounts and Non-Preemptive Accounts.
+@leonard2023 | § 5 | Proponents of the Preemptive Account, then, explain the difference between authoritative and non-authoritative testimony as follows: Authoritative testimony can provide you with a preemptive reason for belief, whereas non-authoritative testimony cannot.
+@leonard2023 | § 5 | Instead of thinking about authoritative testimony as providing preemptive reasons for belief, proponents of the Non-Preemptive Account take an authority’s testimony that p to provide a very strong reason to believe that p, where this reason is to be added to, or combined with, all of the other reasons that you have related to the proposition in question.
+A @leonard2023: Introduces authoritative testimony and competing preemptive and non-preemptive accounts, with objections and examples.
+@anderson2024 | § 1 | Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.
+@anderson2024 | § 1 | People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.
+@anderson2024 | § 1 | Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.
+@anderson2024 | § 1 | They affect knowers’ assessment of which claims are significant or important.
+@anderson2024 | § 1 | In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).
+@anderson2024 | § 1 | Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.
+@anderson2024 | § 1 | They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.
+@anderson2024 | § 1 | This entails that women be able to recognize their lives in feminist accounts of women’s predicament.
+@anderson2024 | § 1 | For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.
+@anderson2024 | § 1 | Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?
+@anderson2024 | § 1 | Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.
+@anderson2024 | § 1 | Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?
+@anderson2024 | § 1 | These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?
+@anderson2024 | § 1 | Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?
+@anderson2024 | § 1 | Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.
+@anderson2024 | § 1 | Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.
+@anderson2024 | § 9 | Naturalized epistemology considers the effects of our pervasive epistemic interdependence (Nelson 1990).
+@anderson2024 | § 9 | Gendered ideas about epistemic authority can distort our general models of knowledge.
+@anderson2024 | § 9 | Code argues that knowledge of other persons rather than of propositions should be taken as a primary model of knowledge.
+@anderson2024 | § 9 | Recent epistemology’s focus on the indispensability of testimony to inquiry has led feminist epistemologists to take Code’s ideas in a different direction, by investigating the dependence of propositional knowledge on knowledge of persons.
+@anderson2024 | § 9 | Other feminist epistemologists focus on the impact of gender and other hierarchical relations on attributions of epistemic authority.
+@anderson2024 | § 9 | Dotson (2011) distinguishes two kinds of testimonial injustice, silencing and smothering.
+@anderson2024 | § 9 | Davis (2021) distinguishes “identity-based” from “content-based” testimonial injustice, depending on whether a speaker’s testimony is denigrated on the basis of their own social identity or on prejudice against social groups associated with the content of their speech (e.g., dismissing a doctor’s testimony about fibromyalgia based on the assumption that the women who suffer from it are merely seeking attention).
+@anderson2024 | § 9 | An example of hermeneutical injustice is the dismissal of women as humorless or hypersensitive for getting upset at what was seen as mere cloddish courtship or joking, before the concept of sexual harassment was available to make sense of their experiences.
+@anderson2024 | § 9 | Pohlhaus (2011) argues that such ignorance can be willful, leading to contributory injustice, an intentional maintenance of inadequate hermeneutical resources that harmfully obstructs the uptake of resources the oppressed have developed to make sense of their experience (Dotson 2012).
+@anderson2024 | § 9 | Since accurate information on such matters is or was available, explanation is needed for why it is forgotten.
+@anderson2024 | § 9 | Jones (2002) proposes rules for checking such biases when confronted with surprising testimony.
+@anderson2024 | § 9 | A key theme of feminist virtue epistemology is its aspiration to cultivate dispositions that enable inquirers to produce knowledge that can overcome oppression (Daukas 2018).
+A @anderson2024: Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority.
+@locke1690 | book IV, ch. XV, § 4 | The Grounds of Probability are two: Conformity with our own Experience, or the Testimony of others.
+@locke1690 | book IV, ch. XV, §§ 1–4 | But another man, who never took the pains to observe the demonstration, hearing a mathematician, a man of credit, affirm the three angles of a triangle to be equal to two right ones, assents to it, i.e. receives it for true: in which case the foundation of his assent is the probability of the thing; the proof being such as for the most part carries truth with it: the man on whose testimony he receives it, not being wont to affirm anything contrary to or besides his knowledge, especially in matters of this kind: so that that which causes his assent to this proposition, that the three angles of a triangle are equal to two right ones, that
+@locke1690 | book IV, ch. XV, §§ 1–4 | Our knowledge, as has been shown, being very narrow, and we not happy enough to find certain truth in everything which we have occasion to consider; most of the propositions we think, reason, discourse--nay, act upon, are such as we cannot have undoubted knowledge of their truth: yet some of them border so near upon certainty, that we make no act, according to the assent, as resolutely as if they were infallibly demonstrated, and that our knowledge of them was perfect and certain.
+@locke1690 | book IV, ch. XV, §§ 1–4 | But there being degrees herein, from the very neighbourhood of certainty and demonstration, quite down to improbability and unlikeness, even to the confines of impossibility; and also degrees of assent from full assurance and confidence, quite down to conjecture, doubt, and distrust: I shall come now, (having, as I think, found out THE BOUNDS OF HUMAN KNOWLEDGE AND CERTAINTY,) in the next place, to consider THE SEVERAL DEGREES AND GROUNDS OF PROBABILITY, AND ASSENT OR FAITH. 3.
+@locke1690 | book IV, ch. XV, §§ 1–4 | The entertainment the mind gives this sort of propositions is called BELIEF, ASSENT, or OPINION, which is the admitting or receiving any proposition for true, upon arguments or proofs that are found to persuade us to receive it as true, without certain knowledge that it is so.
+@locke1690 | book IV, ch. XV, §§ 1–4 | The Grounds of Probability are two: Conformity with our own Experience, or the Testimony of others.
+@locke1690 | book IV, ch. XV, § 4 | In the testimony of others is to be considered: 1. The number. 2. The integrity. 3. The skill of the witnesses. 4. The design of the author, where it is a testimony out of a book cited. 5. The consistency of the parts, and circumstances of the relation. 6. Contrary testimonies.
+A @locke1690: Public-domain primary text distinguishing mathematical demonstration from testimony and recommending fair inquiry under fallible disagreement.
+@oconnor-etal2026 | § 3.1 | When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.
+@oconnor-etal2026 | § 3.1 | Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.
+@oconnor-etal2026 | § 3.1 | Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.
+@oconnor-etal2026 | § 3.1 | In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).
+@oconnor-etal2026 | § 3.1 | Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).
+@oconnor-etal2026 | § 3.1 | A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.
+@oconnor-etal2026 | § 4.1 | As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.
+@oconnor-etal2026 | § 4.1 | Suppose that a court consisting of three judges must render a judgment.
+@oconnor-etal2026 | § 4.1 | Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.
+@oconnor-etal2026 | § 4.1 | In light of these results, various “escape routes” have been proposed.
+@oconnor-etal2026 | § 4.1 | While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.
+@oconnor-etal2026 | § 4.1 | If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.
+@oconnor-etal2026 | § 4.1 | This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.
+@oconnor-etal2026 | § 4.1 | A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).
+@oconnor-etal2026 | § 4.1 | For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).
+@oconnor-etal2026 | § 4.1 | This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).
+@oconnor-etal2026 | § 4.1 | In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.
+@oconnor-etal2026 | § 4.1 | Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.
+@oconnor-etal2026 | § 4.1 | The first agent buys GM stock based on their (minority) private information.
+@oconnor-etal2026 | § 4.3 | Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.
+@oconnor-etal2026 | § 4.3 | For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.
+@oconnor-etal2026 | § 4.3 | As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.
+@oconnor-etal2026 | § 4.3 | In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.
+@oconnor-etal2026 | § 4.3 | This supports central claims from social epistemology espoused by Goldman (1999).
+@oconnor-etal2026 | § 4.3 | This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.
+@oconnor-etal2026 | § 4.3 | Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.
+@oconnor-etal2026 | § 4.3 | One truth about epistemic communities is that relationships matter.
+@oconnor-etal2026 | § 5.1 | A good deal of social epistemology focuses on topics in political epistemology.
+@oconnor-etal2026 | § 5.1 | Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.
+@oconnor-etal2026 | § 5.1 | Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.
+@oconnor-etal2026 | § 5.1 | In addition, there is a lively discussion about the role of experts in democratic politics.
+@oconnor-etal2026 | § 5.3 | Influenced by long-standing work in feminism and critical race theory, social epistemology has attempted to theorize about various types of dysfunction in the social practices through which we aim to generate, communicate, assess, and preserve knowledge.
+@oconnor-etal2026 | § 5.3 | stimonial” injustice obtains when (on the basis of identity-based prejudice) an audience gives less credence to a speaker than she deserves. (Fricker illustrated this sort of injustice with Tom Robinson, a character in To Kill a Mockingbird whose testimony, as a Black man on trial for raping a white woman, was prejudicially rejected by the all-white jury.) “Hermeneutical” injustice obtains when, owing to social forces which reflect the interests of certain social groups, a subject lacks the concepts for understanding and/or communicating socially significant aspects of her own experience. (Fricker’s example is the experience of women before
+@oconnor-etal2026 | § 5.3 | Fricker’s (2007) reflections on epistemic injustice have inspired a generation of social philosophers to pursue questions in this vicinity.
+@oconnor-etal2026 | § 5.3 | The guiding hypothesis, explicitly formulated by Mills (2007) in connection with his notion of “white ignorance,” is that ignorance in contemporary society patterns in ways that reflect the interests of dominant social groups.
+@oconnor-etal2026 | § 5.3 | For this reason, the acquisition and handling of evidence, long a topic in feminist and virtue epistemology, has recently begun to attract the attention of social epistemologists as well.
+@oconnor-etal2026 | § 5.3 | A general framework for understanding various dimensions of epistemic oppression can be found in Dotson (2014).
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@conspiracy-theories-iep | § 4 | A number of criteria have been offered, sometimes implicitly, in the philosophical literature to evaluate whether we should believe in a particular conspiracy theory, and these are surveyed below.
+@conspiracy-theories-iep | § 4 | Finally, while instrumentalism still has epistemic aims, we can also identify a more radical pragmatist view which focuses more generally on the consequences, for example political and social consequences, of holding a particular (conspiracy) theory or belief.
+@conspiracy-theories-iep | § 4 | Third, there are a number of other criteria neither dealing with motives nor with scientific methodology.
+@conspiracy-theories-iep | § 4 | Criteria concerning Scientific Methodology Basham (2001, p.275) advocates skepticism of a conspiracy theory if it suffers from what he calls “internal faults,” among which he lists “problems with self-consistency, explanatory gaps, appeals to unlikely or obviously weak motives and other unrealistic psychological states, poor technological claims, and the theory’s own incongruencies with observed facts it grants (including failed predictions).” Räikkä (2009a, p.196f) also refers to a similar list of criteria.
+@conspiracy-theories-iep | § 4 | Note that the list of things mentioned by Basham as internal faults is rather diverse, and one can debate whether all of these faults should really be considered internal to the theory.
+@conspiracy-theories-iep | § 4 | Clarke (2002; 2007) sees conspiracy theories as degenerating research programs in the sense developed by Lakatos (1970).
+@conspiracy-theories-iep | § 4 | Going further, Clarke (2007) also views other conspiracy theories—the controlled demolition theory of 9/11, for instance—as only proto-theories, something that is not sufficiently worked out to count as a theoretical core of a degenerating or progressive research program.
+@conspiracy-theories-iep | § 4 | Furthermore, as Lakatos’s notion of a research program comes with a hard core—the central characteristic claims not up for modification—and a protective belt—auxiliary hypotheses which can be changed—applying this notion also gives us tools to analyze a conspiracy theory in more detail.
+@conspiracy-theories-iep | § 4 | Dentith (2016) views conspiracy theories as inferences to the best explanation.
+@conspiracy-theories-iep | § 4 | There is some disagreement between authors about whether conspiracy theories may be selective in their choice of evidence.
+@conspiracy-theories-iep | § 4 | Finally, Keeley (2003, p.106) considers whether lack of evidence for a conspiracy should count against a theory positing such a conspiracy.
+@conspiracy-theories-iep | § 4 | While the previous criterion already discussed how conspiracy theories relate to data, there is a particular kind of data that receives special attention both by conspiracy theorists and in the philosophical literature about conspiracy theories.
+@conspiracy-theories-iep | § 4 | Dentith (2014, 129ff), following Coady (2006c), points out that any theory, official or unofficial, will have errant data.
+@conspiracy-theories-iep | § 4 | When it comes to evaluating a specific conspiracy theory, the conclusion is that we should be looking at the errant data of both the conspiracy theory and alternative theories.
+@conspiracy-theories-iep | § 4 | Trust plays a role in two different ways when it comes to conspiracy theories.
+@conspiracy-theories-iep | § 4 | Conversely, people who reject a particular theory as “just” a conspiracy theory may also have a motive to mislead.
+@conspiracy-theories-iep | § 4 | Levy (2007) takes a radically socialized view of knowledge: Since knowledge can only be produced by a complex network of inquiry in which the relevant epistemic authorities are embedded, a conspiracy theory conflicting with the official story coming out of this network is “prima facie unwarranted” (p.182, italics in the original).
+@conspiracy-theories-iep | § 4 | Furthermore, Dentith points out that the fact that a theory has authority in the sense of being official does not necessarily mean that it has epistemic authority, a point Levy also makes.
+@conspiracy-theories-iep | § 4 | As mentioned when discussing individual trust, when we want to assess the credibility of experts, part of that credibility judgment will depend on the extent to which we trust the institution accrediting the expertise, assuming there is such an institution to which the expert is linked.
+@conspiracy-theories-iep | § 4 | If a conspiracy theory contradicts an official theory based on scientific expertise, this produces skepticism not only with regard to the institution of science, but may also produce skepticism with regard to other public institutions, for example the press, which accepts the official story instead of uncovering the conspiracy, the parliament and the government, which produce or propagate the conspiracy theory in the first place.
+@conspiracy-theories-iep | § 4 | In any case, our trust in our public institutions will influence the extent to which we hold a particular conspiracy theory to be likely.
+@conspiracy-theories-iep | § 4 | In any case, an individual who tries to assess a particular conspiracy theory should thus also consider to what extent they trust or distrust our public institutions.
+@conspiracy-theories-iep | § 4 | A global conspiracy theory like the Flat Earth theory tends to involve more pervasive institutional distrust, since it involves multiple institutions from various societal domains, than a local conspiracy theory like the Watergate conspiracy.
+@conspiracy-theories-iep | § 4 | The general claim here is that the more agents that are supposed to be involved in a conspiracy—its size—and the longer the conspiracy is supposed to be in existence—its duration—the less likely the conspiracy theory.
+@conspiracy-theories-iep | § 4 | Furthermore, Grimes (2016) has conducted simulations showing that large conspiracies with 1000 agents or more are unlikely to succeed due to problems with maintaining secrecy.
+A @conspiracy-theories-iep: Pauly’s secondary overview distinguishes neutral and loaded definitions and presents contested evaluation criteria concerning evidence, trust, scale, and secrecy.
+
+== 12-social-epistemology/group-knowledge-and-belief
+Q: How do summative, joint-commitment, distributed, and hybrid accounts differ, and how can consistent individuals aggregate inconsistently?
+@oconnor-etal2026 | § 3.3 | The cases discussed thus far focus on epistemic agents who are individuals.
+@oconnor-etal2026 | § 3.3 | First, under what conditions can a group be said to believe something or (more generally) constitute an epistemic agent in its own right?
+@oconnor-etal2026 | § 3.3 | On a simple version, a group believes something just in case all, or almost all, of its members hold the belief (Quinton 1976: 17).
+@oconnor-etal2026 | § 3.3 | Joint commitments create normative requirements for group members to emulate a single believer.
+@oconnor-etal2026 | § 3.3 | A different Collectivist approach is taken by Alexander Bird (2014, 2022) who contends that the joint acceptance model of group belief is only one of many different (but legitimate) models.
+@oconnor-etal2026 | § 3.3 | According to it, A group, G, believes that p if and only if: (1) there is a significant percentage of G’s operative members who believe that p, and (2) are such that adding together the basis of their beliefs that p yields a belief set that is not substantively incoherent.
+@oconnor-etal2026 | § 4.1 | As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.
+@oconnor-etal2026 | § 4.1 | Suppose that a court consisting of three judges must render a judgment.
+@oconnor-etal2026 | § 4.1 | Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.
+@oconnor-etal2026 | § 4.1 | In light of these results, various “escape routes” have been proposed.
+@oconnor-etal2026 | § 4.1 | While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.
+@oconnor-etal2026 | § 4.1 | If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.
+@oconnor-etal2026 | § 4.1 | This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.
+@oconnor-etal2026 | § 4.1 | A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).
+@oconnor-etal2026 | § 4.1 | For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).
+@oconnor-etal2026 | § 4.1 | This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).
+@oconnor-etal2026 | § 4.1 | In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.
+@oconnor-etal2026 | § 4.1 | Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.
+@oconnor-etal2026 | § 4.1 | The first agent buys GM stock based on their (minority) private information.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/misinformation-disinformation-and-propaganda
+Q: How do false content, intent, selection, and biased transmission differ in the assessment of misleading communication?
+@oconnor-etal2026 | § 4.3 | Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.
+@oconnor-etal2026 | § 4.3 | For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.
+@oconnor-etal2026 | § 4.3 | As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.
+@oconnor-etal2026 | § 4.3 | In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.
+@oconnor-etal2026 | § 4.3 | This supports central claims from social epistemology espoused by Goldman (1999).
+@oconnor-etal2026 | § 4.3 | This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.
+@oconnor-etal2026 | § 4.3 | Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.
+@oconnor-etal2026 | § 4.3 | One truth about epistemic communities is that relationships matter.
+@oconnor-etal2026 | § 5.2 | The latest challenge confronting the informational state of the public is the accelerating spread of misleading content on the internet.
+@oconnor-etal2026 | § 5.2 | Others have challenged the idea that disinformation needs to be misleading, as opposed to producing ignorance (Simion 2023) or otherwise blocking successful action (Harris 2023).
+@oconnor-etal2026 | § 5.2 | Lynch (2018) argues that epistemic arrogance, which involves an unwillingness to learn from others, undermines the process of public debate.
+@oconnor-etal2026 | § 5.2 | There have been concerns that various aspects of this process may exacerbate false beliefs.
+@oconnor-etal2026 | § 5.2 | This is sometimes called the “filter bubble” or “information bubble” effect (though these various phenomena are by no means clearly delineated) (Pariser 2011, Kitchens et al. 2020).
+@oconnor-etal2026 | § 5.2 | This includes understanding social aspects of knowledge and belief formation.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/peer-disagreement
+Q: How do defeat, equal weight, and independence differ, and how do steadfast, justificationist, and total-evidence approaches respond?
+@frances-matheson2026 | § 2 | They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.
+@frances-matheson2026 | § 2 | Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.
+@frances-matheson2026 | § 2 | The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.
+@frances-matheson2026 | § 2 | We do it this way: if we disagree over whether to do action \(X\), we are disagreeing over the truth of the claim ‘We should do \(X\)’ (or ‘I should do \(X\)’ or ‘\(X\) is the best thing for us to do’; no, these aren’t all equivalent).
+@frances-matheson2026 | § 2 | However, it is worth noting that agreement also has epistemological implications.
+@frances-matheson2026 | § 2 | How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?
+@frances-matheson2026 | § 3 | A person can start out with a belief that is irrational, obtain some new relevant evidence concerning that belief, respond to that new evidence in a completely reasonable way, and yet end up with an irrational belief.
+@frances-matheson2026 | § 3 | He shouldn’t lose confidence in his belief \(J\) merely because he learned some facts that do not cast any doubt on his belief!
+@frances-matheson2026 | § 3 | On the other hand, “rationality demands” that upon his acquisition of new knowledge Bub keep his belief \(J\) given that that acquisition—which is the only thing that’s happened to him—gives him no reason to doubt \(J\).
+@frances-matheson2026 | § 3 | In the first case, a state is being evaluated, in the second, an action is being evaluated.
+@frances-matheson2026 | § 3 | These two stories show that one’s action of retaining one’s belief—that intellectual action—can be epistemically fine even though the retained belief is not.
+@frances-matheson2026 | § 3 | The latter question concerns an intellectual action (an intellectual response to the acquisition of new information), whereas the former question concerns the subsequent level of confidence itself, the new confidence level you end up with, which comes about partially as a causal result of the intellectual action.
+@frances-matheson2026 | § 4 | A child has belief \(B\) that Hell is a real place located in the center of the earth.
+@frances-matheson2026 | § 4 | There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).
+@frances-matheson2026 | § 4 | The better one’s epistemic position, the more likely one is to be correct.
+@frances-matheson2026 | § 4 | If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \(B\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.
+@frances-matheson2026 | § 4 | Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.
+@frances-matheson2026 | § 4 | Suppose I also believe \(P\), that Taylor is my peer regarding \(B\) in this sense: I think we are equally likely to judge \(B\) correctly.
+@frances-matheson2026 | § 4 | After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \(B\) is false.
+@frances-matheson2026 | § 4 | But the important point here is this: if I have the view that if it turns out that she really thinks \(B\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \(B\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.
+@frances-matheson2026 | § 4 | Danny has been right, and 20% of the time they have both been wrong.
+@frances-matheson2026 | § 4 | That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \(B\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).
+@frances-matheson2026 | § 4 | But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.
+@frances-matheson2026 | § 4 | For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.
+@frances-matheson2026 | § 4 | A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.
+@frances-matheson2026 | § 4 | So for any two people it is quite unlikely that they are ‘weight peers’.
+@frances-matheson2026 | § 4 | This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).
+@frances-matheson2026 | § 4 | Evidence of the experts’ interests and biases vis-a-vis the question at issue.
+@frances-matheson2026 | § 5 | Before we begin our discussion of peer disagreements it is important to set aside a number of cases.
+@frances-matheson2026 | § 5.1 | The Equal Weight View is perhaps the most prominently discussed view on the epistemic significance of disagreement.
+@frances-matheson2026 | § 5.1 | Perhaps the best way to understand the Equal Weight View comes from exploring the motivation that has been given for the view.
+@frances-matheson2026 | § 5.1 | Meanwhile, my friend does the math in her head and becomes highly confident that our shares are $45 each.
+@frances-matheson2026 | § 5.1 | Learning of the disagreement gives him reason to revise and an opportunity for epistemic improvement.
+@frances-matheson2026 | § 5.1 | Applied to the richer doxastic picture that includes degrees of belief, if one peer has a 0.7 degree of belief that \(P\) and the other has a 0.3 degree of belief that \(P\), giving the peer opinions equal weight will call for each peer to adopt a 0.5 degree of belief that \(P\).
+@frances-matheson2026 | § 5.1 | The reasons that Christensen could have to discount his peer’s belief about the shares could include that he had a little too much to drink tonight, that he is especially tired, that Christensen double checked but his friend didn’t, etc., but could not include that the shares actually are $43, that Christensen disagrees, etc.
+@frances-matheson2026 | § 5.1 | This helps motivate Defeat, since a reason to believe the proposition when you disbelieve it amounts to a reason to believe that you have made a mistake regarding that proposition.
+@frances-matheson2026 | § 5.1 | So, if you have reason to believe that Jai’s epistemic position with respect to \(P\) is inferior to Mai’s, then discovering that Jai believes \(P\) will be a weaker reason to believe \(P\) than discovering that Mai believes \(P\).
+@frances-matheson2026 | § 5.1 | Something seems wrong with the following line of reasoning, “My peer believes not-\(P\), but I concluded \(P\), so my peer is wrong” or “I thought \(S\) was my peer, but \(S\) thinks not-\(P\), and I think \(P\), so \(S\) is not my peer after all” (see Christensen 2011).
+@frances-matheson2026 | § 5.1 | Support for the Equal Weight View has come from examining what it would be rational to believe in a case of peer thermometer disagreement.
+@frances-matheson2026 | § 5.1 | If the analogy holds, then we have reason to accept each of the three theses of the Equal Weight View.
+@frances-matheson2026 | § 5.2.1 | Defeat has been rejected by defenders of the Steadfast View in a number of ways.
+@frances-matheson2026 | § 5.2.1 | Given our limitations, peers can never fully share their evidence.
+@frances-matheson2026 | § 5.2.1 | Defenders of the Equal Weight View have noted that these considerations cut both ways (see Feldman 2006).
+@frances-matheson2026 | § 5.2.1 | He’s out there a fair amount.) I believe that the dean is standing on the quad.
+@frances-matheson2026 | § 5.2.1 | Plantinga 2000a has argued that there is a sense of justification that is simply doing the best that one can.
+@frances-matheson2026 | § 5.2.1 | Any reaction to the disagreement will contain some epistemic risk, so I might as well go with how things seem to me.
+@frances-matheson2026 | § 5.2.1 | In particular, they give you reason to doubt that the truth about the disputed belief is as it seems to you.
+@frances-matheson2026 | § 5.2.1 | A parallel account appears to apply to cases of peer disagreement.
+@frances-matheson2026 | § 5.2.1 | Kelly 2005 argues that while 3 is evidence for 2 it is not evidence for 1.
+@frances-matheson2026 | § 5.2.1 | Second, since people form beliefs on the basis of a body of evidence, to count their belief as yet another piece of evidence would amount to double-counting that original body of evidence.
+@frances-matheson2026 | § 5.2.1 | Alternatively, citing one’s own belief as evidence may exhibit hubris in a way that many would want to avoid.
+@frances-matheson2026 | § 5.2.1 | Finally, Defeat has been denied by appealing to epistemic permissiveness.
+@frances-matheson2026 | § 5.2.1 | If evidence is permissive, then you may both have justified responses to the shared evidence even though you disagree.
+@frances-matheson2026 | § 5.2.2 | The Steadfast View has also been motivated by denying Equal Weight.
+@frances-matheson2026 | § 5.2.2 | On this account, while peer disagreements have a kind of symmetry from the third-person perspective, neither party occupies that perspective.
+@frances-matheson2026 | § 5.2.2 | So, conciliation can be seen to be called for from within the first-person perspective.
+@frances-matheson2026 | § 5.2.3 | Others have rejected the Equal Weight View by denying Independence.
+@frances-matheson2026 | § 5.2.3 | Another is whether any problems with Independence also remove the skeptical threat from disagreement.
+@frances-matheson2026 | § 5.3 | On the spectrum of views of the epistemic significance of disagreement, the Justificationist View lies somewhere in between the Equal Weight View and the Steadfast View.
+@frances-matheson2026 | § 5.3 | In other words, the claim is that the Equal Weight View gives the wrong verdicts in what we might call cases of ‘extreme disagreement’.
+@frances-matheson2026 | § 5.3 | According to the Justificationist View, one’s antecedent degree of justification determines the rational response to peer disagreement.
+@frances-matheson2026 | § 5.3 | Independence only permitted information from ‘outside’ the disagreement to affect assessment of peerhood credentials, but here, the fact that your interlocutor disagrees with something you are highly justified in believing gives you a reason to discount his opinion on the matter.
+@frances-matheson2026 | § 5.3 | Since in extreme disagreements one party is severely malfunctioning, my personal information makes the best explanation of this fact that it is my peer who is malfunctioning.
+@frances-matheson2026 | § 5.3 | Meanwhile, you are adding up your numbers as well, and comparing them to the winning number.
+@frances-matheson2026 | § 5.4 | Like the Justificationist View, the Total Evidence View lies somewhere between the Steadfast View and the Equal Weight View.
+@frances-matheson2026 | § 5.4 | The justified attitude is the mean between the two peer attitudes, which ignores what their shared first-order evidence supports.
+@frances-matheson2026 | § 5.4 | At time \(t_1\), we meet and compare notes and we then split the difference and converge on a 0.8 degree of belief.
+@frances-matheson2026 | § 5.4 | Holocaust occurred, I encounter an individual who denies that the Holocaust ever occurred (because he is grossly ignorant of the evidence).
+@frances-matheson2026 | § 5.4 | Suppose that it seems to him that he has successfully completed the proof, yet he nevertheless has made a subtle error rendering the whole thing invalid.
+@frances-matheson2026 | § 5.4 | A second route of response is to emphasize the distinction between the Response Question and the Belief Question.
+@frances-matheson2026 | § 5.5.1 | A prominent objection to the Equal Weight View and other views that prescribe doxastic conciliation is that such views are self-defeating.
+@frances-matheson2026 | § 5.5.1 | For these reasons, Plantinga 2000a has claimed that such views are, ‘self-referentially inconsistent’ (522), and Elga 2010 has claimed that such views are ‘incoherent’ and ‘self-undermining’ (179).
+@frances-matheson2026 | § 5.5.1 | At its worst, the consequences here for conciliatory views is that given certain contingent circumstances they cannot be reasonably believed, but such an inability to be reasonably believed does not demonstrate their falsity.
+@frances-matheson2026 | § 5.5.1 | If such a consequence is untenable, then it would call for the rejection of principles beyond those endorsed by the Equal Weight View, the Justificationist View, and the Total Evidence View.
+@frances-matheson2026 | § 5.5.1 | Bogardus (2009) argues that we can ‘just see’ that conciliatory principles are true and this prevents them from being self-undermining.
+@frances-matheson2026 | § 5.5.4 | One potential special case of disagreement concerns deep disagreements.
+@frances-matheson2026 | § 5.5.4 | One central question here is whether deep disagreements are rationally resolvable.
+@frances-matheson2026 | § 5.5.4 | Another related issue is whether epistemic peers can be engaged in a deep disagreement (see Kappel 2021).
+@frances-matheson2026 | § 5.5.5 | As some have noted, epistemic peers are extremely rare, if not non-existent (Frances 2010, 2014; King 2011; Matheson 2014).
+@frances-matheson2026 | § 5.5.5 | There are several reasons to think about the significance of peer disagreement beyond its intrinsic appeal.
+@frances-matheson2026 | § 5.5.5 | These unknown cases may have the same epistemic significance as peer cases.
+@frances-matheson2026 | § 6 | Many disagreements are one-on-one: one person disagrees with another person and as far as they know they are the only two who have any opinion on the matter.
+@frances-matheson2026 | § 6 | When Bob learns all this about his three colleagues, what should his doxastic reaction be to this mixed bag of agreement and disagreement?
+@frances-matheson2026 | § 6 | If the numbers matter, then disagreement poses a skeptical threat for nearly every view of the significance of peer disagreement.
+@frances-matheson2026 | § 6 | Further, while appeals to personal information may be good symmetry-breakers in cases of one-to-one disagreement, when the numbers of disagreeing parties are much larger, the effectiveness of such appeals radically diminishes.
+@frances-matheson2026 | § 6 | Since according to the Right Reasons View, what one is justified in believing is entirely determined by the first-order evidence, no amount of discovered disagreement would change which controversial beliefs are rational.
+@frances-matheson2026 | § 6 | Our beliefs are shaped by a number of factors, and not all of them are epistemically relevant.
+A @frances-matheson2026: Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action.
+@locke1690 | book IV, ch. XVI, § 4 | The right Use of it, mutual Charity and Forbearance, in a necessary diversity of opinions.
+@locke1690 | book IV, ch. XVI, § 4 | For however it may often mistake, it can own no other guide but reason, nor blindly submit to the will and dictates of another.
+@locke1690 | book IV, ch. XVI, § 4 | How can we expect, I say, that opinions thus settled should be given up to the arguments or authority of a stranger or adversary, especially if there be any suspicion of interest or design, as there never fails to be, where men find themselves ill-trusted?
+@locke1690 | book IV, ch. XVI, § 4 | The necessity of believing without knowledge, nay often upon very slight grounds, in this fleeting state of action and blindness we are in, should make us more busy and careful to inform ourselves than constrain others.
+@locke1690 | book IV, ch. XVI, § 4 | We should do well to commiserate our mutual ignorance, and endeavour to remove it in all the gentle and fair ways of information; and not instantly treat others ill, as obstinate and perverse, because they will not renounce their own, and receive our opinions
+A @locke1690: Public-domain primary text distinguishing mathematical demonstration from testimony and recommending fair inquiry under fallible disagreement.
+@oconnor-etal2026 | § 3.2 | In many cases of testimony, we believe what another person tells us.
+@oconnor-etal2026 | § 3.2 | The most demanding version of Conciliationism is the Equal Weight View, according to which one ought to assign equal weight to a peer’s opinion as to one’s own (Christensen 2007, Elga 2007, Feldman 2006, 2007, and Matheson 2015).
+@oconnor-etal2026 | § 3.2 | For this very reason, learning of a peer disagreement should not affect one’s confidence on this topic at all.
+@oconnor-etal2026 | § 3.2 | Indeed, one might wonder whether you are required to give any weight to my opinion in such circumstances.
+@oconnor-etal2026 | § 3.2 | Debates over peer disagreement have branched out in interesting ways.
+@oconnor-etal2026 | § 4.1 | As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.
+@oconnor-etal2026 | § 4.1 | Suppose that a court consisting of three judges must render a judgment.
+@oconnor-etal2026 | § 4.1 | Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.
+@oconnor-etal2026 | § 4.1 | In light of these results, various “escape routes” have been proposed.
+@oconnor-etal2026 | § 4.1 | While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.
+@oconnor-etal2026 | § 4.1 | If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.
+@oconnor-etal2026 | § 4.1 | This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.
+@oconnor-etal2026 | § 4.1 | A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).
+@oconnor-etal2026 | § 4.1 | For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).
+@oconnor-etal2026 | § 4.1 | This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).
+@oconnor-etal2026 | § 4.1 | In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.
+@oconnor-etal2026 | § 4.1 | Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.
+@oconnor-etal2026 | § 4.1 | The first agent buys GM stock based on their (minority) private information.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/standpoint-and-feminist-epistemology
+Q: What must a standpoint claim specify, and how do critical reflection and social criticism bear on objectivity?
+@anderson2024 | § 1 | Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.
+@anderson2024 | § 1 | People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.
+@anderson2024 | § 1 | Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.
+@anderson2024 | § 1 | They affect knowers’ assessment of which claims are significant or important.
+@anderson2024 | § 1 | In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).
+@anderson2024 | § 1 | Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.
+@anderson2024 | § 1 | They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.
+@anderson2024 | § 1 | This entails that women be able to recognize their lives in feminist accounts of women’s predicament.
+@anderson2024 | § 1 | For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.
+@anderson2024 | § 1 | Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?
+@anderson2024 | § 1 | Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.
+@anderson2024 | § 1 | Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?
+@anderson2024 | § 1 | These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?
+@anderson2024 | § 1 | Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?
+@anderson2024 | § 1 | Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.
+@anderson2024 | § 1 | Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.
+@anderson2024 | § 2 | Standpoint theories claim to represent the world from an epistemically advantaged socially situated perspective.
+@anderson2024 | § 2 | Auto mechanics are in a better position than auto consumers to know what is wrong with their cars.
+@anderson2024 | § 2 | Marxism offers the classic model of standpoint theory, claiming an epistemic advantage over fundamental questions of social science and history, on behalf of the standpoint of the proletariat (Marx 1964, Lukács 1971).
+@anderson2024 | § 2 | Workers’ collective insight into their common predicament and the need to overcome it through revolutionary action generates a self-understanding which, when acted upon, gets realized.
+@anderson2024 | § 2 | Variants of feminist standpoint theory ground this epistemic advantage in different features of women’s social situation, by analogy with different strands of Marxist epistemology.
+@anderson2024 | § 2 | Women unmask these ideological misrepresentations by achieving and acting on a shared understanding of themselves as women—as a group unjustly constituted by sexual objectification.
+@anderson2024 | § 2 | Males acquire a masculine identity by distinguishing themselves from their mothers, through controlling and denigrating the feminine.
+@anderson2024 | § 2 | Institutionalizing feminine ways of knowing requires overcoming the division of mental, manual, and caring labor that characterizes capitalist patriarchy (Rose 1987).
+@anderson2024 | § 2 | The epistemic advantage of the oppressed is sometimes founded on“bifurcated consciousness”: the ability to see both from the perspective of the dominant and from the perspective of the oppressed (Harding 1991, Collins 1990).
+@anderson2024 | § 2 | The privileged standpoint is not that of women, but of feminists (MacKinnon 1989).
+@anderson2024 | § 2 | Longino (1993b) argues that standpoint theory cannot provide a noncircular basis for deciding which standpoints have epistemic privilege.
+A @anderson2024: Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority.
+@grasswick2018 | § 3.1 | Standpoint theorists, and many who are inspired by standpoint theory, not only maintain Haraway’s situated knowledge thesis, conceptualizing all knowledge as perspectival, but also hold a stronger thesis that some of those perspectives are epistemically more valuable than others.
+@grasswick2018 | § 3.1 | Although a few standpoint theorists argue for a women’s standpoint stemming directly from women’s experience, most influential standpoint theorists including Hartsock (1983) and Harding (1986) insist that the Marxist-inspired arguments imply that although the feminist standpoint is deeply connected to the lives of women, the epistemically privileged nature of the feminist standpoint stems from active political engagement in the feminist cause, and does not just represent the perspective of women.
+@grasswick2018 | § 3.1 | The idea of a standpoint builds upon, but is distinctive from the situated knowledge thesis that recognizes the importance of social location in shaping epistemic perspective (Wylie 2003, 31).
+@grasswick2018 | § 3.1 | Yet it maintains the situated knowledge thesis that perspectives are differentiated according to social location, and it calls on researchers to engage in reflexive analysis of how their own social location shapes their research.
+@grasswick2018 | § 3.2 | Numerous feminist social epistemologists, particularly those working in philosophy of science, have employed the underdetermination thesis to argue for the necessary role of background assumptions in theory choice (Anderson 1995b; Longino 1990, 2002; Nelson 1990; Potter 1996).
+@grasswick2018 | § 3.2 | They may also be gendered, or otherwise shaped by culturally salient social identity categories.
+@grasswick2018 | § 3.2 | According to Longino, a theory is objective if it has undergone and survived a certain social process of critical scrutiny.
+@grasswick2018 | § 3.2 | Diverse representation within the community also becomes important, since “a diversity of perspectives is necessary for vigorous and epistemically effective critical discourse” (Longino 2002, 131).
+@grasswick2018 | § 3.2 | Others describe the possibility of objectivity given the perspectival nature of knowledge in a slightly different way.
+@grasswick2018 | § 3.2 | Richmond Campbell develops these ideas further, arguing that armed with realist conceptions of truth and objective justification, we can explain (without circularity) how feminist biases can lead us closer to the truth within contexts of systematic gender bias in epistemic communities (Campbell 2001, 1998).
+@grasswick2018 | § 3.2 | Miriam Solomon characterizes such views described above as “feminist radical empiricism” because they adopt the view that not only are factual claims empirically testable (as do other feminist empiricists), but more radically they embrace the idea that the values or biases that inform our theory choices are also empirically testable themselves (Solomon 2012).
+A @grasswick2018: Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation.
+
+== 12-social-epistemology/the-wisdom-and-madness-of-crowds
+Q: Which competence and independence assumptions support majority reliability, and what limits diversity and network models?
+@oconnor-etal2026 | § 4.1 | As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.
+@oconnor-etal2026 | § 4.1 | Suppose that a court consisting of three judges must render a judgment.
+@oconnor-etal2026 | § 4.1 | Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.
+@oconnor-etal2026 | § 4.1 | In light of these results, various “escape routes” have been proposed.
+@oconnor-etal2026 | § 4.1 | While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.
+@oconnor-etal2026 | § 4.1 | If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.
+@oconnor-etal2026 | § 4.1 | This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.
+@oconnor-etal2026 | § 4.1 | A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).
+@oconnor-etal2026 | § 4.1 | For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).
+@oconnor-etal2026 | § 4.1 | This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).
+@oconnor-etal2026 | § 4.1 | In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.
+@oconnor-etal2026 | § 4.1 | Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.
+@oconnor-etal2026 | § 4.1 | The first agent buys GM stock based on their (minority) private information.
+@oconnor-etal2026 | § 4.3 | Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.
+@oconnor-etal2026 | § 4.3 | For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.
+@oconnor-etal2026 | § 4.3 | As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.
+@oconnor-etal2026 | § 4.3 | In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.
+@oconnor-etal2026 | § 4.3 | This supports central claims from social epistemology espoused by Goldman (1999).
+@oconnor-etal2026 | § 4.3 | This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.
+@oconnor-etal2026 | § 4.3 | Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.
+@oconnor-etal2026 | § 4.3 | One truth about epistemic communities is that relationships matter.
+@oconnor-etal2026 | § 4.4 | Diversity has emerged several times in our discussion of formal social epistemology.
+@oconnor-etal2026 | § 4.4 | And: do communities with diverse search strategies outperform communities with uniform ones?
+@oconnor-etal2026 | § 4.4 | Hong and Page (2004) (and following work) use a simple model to derive their famous “Diversity Trumps Ability” result.
+@oconnor-etal2026 | § 4.4 | This result has been widely cited, though there have been criticisms of the model either as insufficient to show something so complicated, as lacking crucial representational features, or as failing to show what it claims (Thompson 2014; Singer 2019).
+@oconnor-etal2026 | § 4.4 | In recent work, scholars have used models of bargaining to represent academic collaboration.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/trust-and-epistemic-dependence
+Q: How do trust, reliance, actual trustworthiness, evidence, and warranted distrust interact?
+@mcleod2023 | Preamble | It is important because it allows us to depend on others—for love, for advice, for help with our plumbing, or what have you—especially when we know that no outside force compels them to give us these things.
+@mcleod2023 | Preamble | Leaving the danger of trust aside, one could also ask whether trust is warranted in the sense of being plausible.
+@mcleod2023 | Preamble | To illustrate how each of these matters is relevant, note that trust is warranted, that is, plausible, again, only if the conditions required for trust exist (e.g., some optimism about one another’s ability).
+@mcleod2023 | Preamble | For instance, trust may not be the sort of attitude that one can will oneself to have without any evidence of a person’s trustworthiness.
+@mcleod2023 | Preamble | The assumption going forward therefore is that the dominant paradigm is interpersonal.
+@mcleod2023 | § 1 | Trust is an attitude we have towards people whom we hope will be trustworthy, where trustworthiness is a property not an attitude.
+@mcleod2023 | § 1 | For most philosophers, trust is a kind of reliance although it is not mere reliance (Goldberg 2020).
+@mcleod2023 | § 1 | Included at the end is some discussion about the nature of distrust.
+@mcleod2023 | § 1 | One might think that if one is relying while trusting—that is, if trust is a species of reliance—then accepted vulnerability would not be essential for trust.
+@mcleod2023 | § 1 | Annette Baier writes that “trusting can be betrayed, or at least let down, and not just disappointed” (1986: 235).
+@mcleod2023 | § 1 | To illustrate this type of trust, consider parents who trust their teenagers with the house or the family car, believing that their [children] may well abuse their trust, but hoping by such trust to elicit, in the fullness of time, more responsible and responsive trustworthy behaviour.
+@mcleod2023 | § 2 | Writings on this topic obviously bear on the issue of when trust is warranted (i.e., justified).
+@mcleod2023 | § 2 | People can get into serious trouble by distrusting when they ought not to, rather than just by trusting when they ought not to.
+@mcleod2023 | § 2 | This section focuses on the epistemology of trust generally rather than on trust in testimony specifically.
+@mcleod2023 | § 2 | For example, if I trust my brother not to harm anyone, I will resist the truth of any evidence to the contrary.
+@mcleod2023 | § 2 | Many philosophers respond to the skepticism about the rationality of trust by saying that rationality, when applied to trust, needs to be understood differently than it is in each of the skeptical points above.
+@mcleod2023 | § 2 | Or it could be internalist without requiring that we have done the evidence gathering just discussed.
+@mcleod2023 | § 2.3 | Although trust is paradigmatically a relation that holds between two individuals, forces larger than those individuals inevitably shape their trust and distrust in one another.
+@mcleod2023 | § 2.3 | We need such a stance because we can’t always stop to reflect carefully on when to trust (i.e., assuming that some rational reflection is required for trusting well).
+@mcleod2023 | § 2.3 | Whichever epistemology of trust we choose, it ought to be sensitive to the tension that exists between trusting somebody and rationally reflecting on the grounds for that trust.
+A @mcleod2023: Distinguishes trust from reliance, justification from actual trustworthiness, and interpersonal judgment from the surrounding social climate.
+@oconnor-etal2026 | § 3.1 | When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.
+@oconnor-etal2026 | § 3.1 | Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.
+@oconnor-etal2026 | § 3.1 | Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.
+@oconnor-etal2026 | § 3.1 | In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).
+@oconnor-etal2026 | § 3.1 | Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).
+@oconnor-etal2026 | § 3.1 | A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+
+== 12-social-epistemology/why-knowledge-is-social
+Q: How do individual justification, interpersonal information exchange, group states, and institutional coordination differ?
+@oconnor-etal2026 | § 1 | Epistemology is concerned with how people should go about the business of determining what is true.
+@oconnor-etal2026 | § 1 | As Locke put it, “other men’s opinions floating in one’s brain” do not constitute genuine knowledge.
+@oconnor-etal2026 | § 1 | One possible explanation may lie in the individualistic self-understanding of early modern science: the Royal Society of London, created in 1660 to support and promote scientific inquiry, had as its motto “Nullius in verba”—roughly, “take no one’s word for it.” Another important factor appears to have been the centrality philosophers have traditionally ascribed to the problem of skepticism.
+@oconnor-etal2026 | § 2 | Along these lines, an approach somewhat analogous to social epistemology was developed in the middle part of the 20th century.
+@oconnor-etal2026 | § 2 | This view denies the explanatory relevance of such things as facts and evidence.
+@oconnor-etal2026 | § 2 | Views emphasizing the importance of the social dimensions of knowledge also emerged in certain parts of philosophy.
+@oconnor-etal2026 | § 2 | Kuhn held that purely objective considerations could never settle disputes between competing theories, underscoring the social factors that influence the development of scientific theory (Kuhn 1962/1970).
+@oconnor-etal2026 | § 2 | Theorists in this tradition often defend proposals that are continuous with traditional epistemology.
+@oconnor-etal2026 | § 2 | While Goldman (1999) presented a framework for research in social epistemology, work on relevant topics had already begun to flourish.
+@oconnor-etal2026 | § 2 | The salience of social epistemology has also been enhanced by journals devoted in whole or in part to the topic.
+@oconnor-etal2026 | § 2 | emology journal that engaged more with “mainstream” epistemology, started Episteme: A Journal of Individual and Social Epistemology in 2004. (While it originally focused exclusively on social epistemology, it has since expanded its scope to include individual epistemology.) Finn Collin (2013) attempts to characterize the difference between Fuller’s and Goldman’s approaches to social epistemology.
+@oconnor-etal2026 | § 3.1 | When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.
+@oconnor-etal2026 | § 3.1 | Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.
+@oconnor-etal2026 | § 3.1 | Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.
+@oconnor-etal2026 | § 3.1 | In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).
+@oconnor-etal2026 | § 3.1 | Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).
+@oconnor-etal2026 | § 3.1 | A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.
+@oconnor-etal2026 | § 3.3 | The cases discussed thus far focus on epistemic agents who are individuals.
+@oconnor-etal2026 | § 3.3 | First, under what conditions can a group be said to believe something or (more generally) constitute an epistemic agent in its own right?
+@oconnor-etal2026 | § 3.3 | On a simple version, a group believes something just in case all, or almost all, of its members hold the belief (Quinton 1976: 17).
+@oconnor-etal2026 | § 3.3 | Joint commitments create normative requirements for group members to emulate a single believer.
+@oconnor-etal2026 | § 3.3 | A different Collectivist approach is taken by Alexander Bird (2014, 2022) who contends that the joint acceptance model of group belief is only one of many different (but legitimate) models.
+@oconnor-etal2026 | § 3.3 | According to it, A group, G, believes that p if and only if: (1) there is a significant percentage of G’s operative members who believe that p, and (2) are such that adding together the basis of their beliefs that p yields a belief set that is not substantively incoherent.
+@oconnor-etal2026 | § 5.1 | A good deal of social epistemology focuses on topics in political epistemology.
+@oconnor-etal2026 | § 5.1 | Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.
+@oconnor-etal2026 | § 5.1 | Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.
+@oconnor-etal2026 | § 5.1 | In addition, there is a lively discussion about the role of experts in democratic politics.
+A @oconnor-etal2026: Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions.
+@grasswick2018 | § 4.1 | While testimony has emerged as a central topic in social epistemology generally, feminists have been major contributors to discussions of how social power plays out in the economies of credibility.
+@grasswick2018 | § 4.1 | Fricker considers our role as testifiers a core dimension of our epistemic lives, so to suffer a credibility deficit impedes one’s capacity as an epistemic agent, making it both an ethical and an epistemic wrong when one suffers a deficit due to an identity prejudice.
+@grasswick2018 | § 4.1 | In a similar vein, Nancy Daukas argues for an explicitly social form of virtue epistemology that takes as its core epistemic virtue “epistemic trustworthiness” (2006, 2011).
+@grasswick2018 | § 4.1 | For example, Elizabeth Anderson argues for the need to develop large-scale structural remedies such as ensuring broadly inclusive epistemic institutions in order to fully correct for the systemic biases that result in testimonial injustices (Anderson 2012).
+@grasswick2018 | § 4.1 | Testimonial smothering occurs when a speaker recognizes her audience as unwilling or unable to give the appropriate uptake to her testimony, and in response, limits and shapes her testimony in order to “insure that the testimony contains only content for which one’s audience demonstrates testimonial competence” (2011, 244).
+@grasswick2018 | § 4.1 | Hermeneutical injustice, involves a “structural prejudice in the economy of collective hermeneutical resources” (2007, 1).
+@grasswick2018 | § 4.1 | For example, some have argued that her analysis misrepresents hermeneutical resources as collective, failing to acknowledge the pluralism of interpretative communities and practices through which marginalized groups may have access to alternative interpretations of their experiences (Mason 2011; Medina 2012).
+@grasswick2018 | § 4.1 | Relatedly, such cases can lead to a kind of epistemic exploitation, where the dominant assume it is the responsibility of the marginalized to perform the labor necessary to educate them (the dominant) in the experiences of the oppressed (Berenstain 2016).
+@grasswick2018 | § 4.1 | Discussions of epistemic injustice offer an excellent example of work focusing on the challenges of knowing in contexts of oppression, analyzing how many of the wrongs that occur within such contexts have both epistemic and ethical dimensions.
+@grasswick2018 | § 4.1 | For example, Dotson frames many of these issues in terms of “epistemic oppression” that involves “persistent epistemic exclusion” (Dotson 2014), and Medina develops an “epistemology of resistance” in response to the epistemic dimensions of oppression (Medina 2013).
+A @grasswick2018: Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation.
+
+== 12-social-epistemology/why-reasonable-people-disagree
+Q: How do information, interpretation, action, permissiveness, and deep disagreement produce different kinds of disputes?
+@frances-matheson2026 | § 2 | They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.
+@frances-matheson2026 | § 2 | Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.
+@frances-matheson2026 | § 2 | The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.
+@frances-matheson2026 | § 2 | We do it this way: if we disagree over whether to do action \(X\), we are disagreeing over the truth of the claim ‘We should do \(X\)’ (or ‘I should do \(X\)’ or ‘\(X\) is the best thing for us to do’; no, these aren’t all equivalent).
+@frances-matheson2026 | § 2 | However, it is worth noting that agreement also has epistemological implications.
+@frances-matheson2026 | § 2 | How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?
+@frances-matheson2026 | § 4 | A child has belief \(B\) that Hell is a real place located in the center of the earth.
+@frances-matheson2026 | § 4 | There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).
+@frances-matheson2026 | § 4 | The better one’s epistemic position, the more likely one is to be correct.
+@frances-matheson2026 | § 4 | If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \(B\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.
+@frances-matheson2026 | § 4 | Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.
+@frances-matheson2026 | § 4 | Suppose I also believe \(P\), that Taylor is my peer regarding \(B\) in this sense: I think we are equally likely to judge \(B\) correctly.
+@frances-matheson2026 | § 4 | After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \(B\) is false.
+@frances-matheson2026 | § 4 | But the important point here is this: if I have the view that if it turns out that she really thinks \(B\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \(B\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.
+@frances-matheson2026 | § 4 | Danny has been right, and 20% of the time they have both been wrong.
+@frances-matheson2026 | § 4 | That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \(B\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).
+@frances-matheson2026 | § 4 | But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.
+@frances-matheson2026 | § 4 | For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.
+@frances-matheson2026 | § 4 | A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.
+@frances-matheson2026 | § 4 | So for any two people it is quite unlikely that they are ‘weight peers’.
+@frances-matheson2026 | § 4 | This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).
+@frances-matheson2026 | § 4 | Evidence of the experts’ interests and biases vis-a-vis the question at issue.
+@frances-matheson2026 | § 5.2.1 | Defeat has been rejected by defenders of the Steadfast View in a number of ways.
+@frances-matheson2026 | § 5.2.1 | Given our limitations, peers can never fully share their evidence.
+@frances-matheson2026 | § 5.2.1 | Defenders of the Equal Weight View have noted that these considerations cut both ways (see Feldman 2006).
+@frances-matheson2026 | § 5.2.1 | He’s out there a fair amount.) I believe that the dean is standing on the quad.
+@frances-matheson2026 | § 5.2.1 | Plantinga 2000a has argued that there is a sense of justification that is simply doing the best that one can.
+@frances-matheson2026 | § 5.2.1 | Any reaction to the disagreement will contain some epistemic risk, so I might as well go with how things seem to me.
+@frances-matheson2026 | § 5.2.1 | In particular, they give you reason to doubt that the truth about the disputed belief is as it seems to you.
+@frances-matheson2026 | § 5.2.1 | A parallel account appears to apply to cases of peer disagreement.
+@frances-matheson2026 | § 5.2.1 | Kelly 2005 argues that while 3 is evidence for 2 it is not evidence for 1.
+@frances-matheson2026 | § 5.2.1 | Second, since people form beliefs on the basis of a body of evidence, to count their belief as yet another piece of evidence would amount to double-counting that original body of evidence.
+@frances-matheson2026 | § 5.2.1 | Alternatively, citing one’s own belief as evidence may exhibit hubris in a way that many would want to avoid.
+@frances-matheson2026 | § 5.2.1 | Finally, Defeat has been denied by appealing to epistemic permissiveness.
+@frances-matheson2026 | § 5.2.1 | If evidence is permissive, then you may both have justified responses to the shared evidence even though you disagree.
+@frances-matheson2026 | § 5.5.4 | One potential special case of disagreement concerns deep disagreements.
+@frances-matheson2026 | § 5.5.4 | One central question here is whether deep disagreements are rationally resolvable.
+@frances-matheson2026 | § 5.5.4 | Another related issue is whether epistemic peers can be engaged in a deep disagreement (see Kappel 2021).
+A @frances-matheson2026: Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action.
+@anderson2024 | § 1 | Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.
+@anderson2024 | § 1 | People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.
+@anderson2024 | § 1 | Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.
+@anderson2024 | § 1 | They affect knowers’ assessment of which claims are significant or important.
+@anderson2024 | § 1 | In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).
+@anderson2024 | § 1 | Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.
+@anderson2024 | § 1 | They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.
+@anderson2024 | § 1 | This entails that women be able to recognize their lives in feminist accounts of women’s predicament.
+@anderson2024 | § 1 | For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.
+@anderson2024 | § 1 | Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?
+@anderson2024 | § 1 | Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.
+@anderson2024 | § 1 | Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?
+@anderson2024 | § 1 | These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?
+@anderson2024 | § 1 | Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?
+@anderson2024 | § 1 | Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.
+@anderson2024 | § 1 | Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.
+A @anderson2024: Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority.
+

@@ -1,0 +1,714 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "peer-disagreement",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do defeat, equal weight, and independence differ, and how do steadfast, justificationist, and total-evidence approaches respond?"
+  ],
+  "sources": [
+    {
+      "key": "frances-matheson2026",
+      "used_for": [
+        "Reduce confidence in an answer, not necessarily change the answer's number",
+        "Peerhood needs careful specification",
+        "The equal-weight view has three moving parts",
+        "Independence blocks one easy form of dogmatism",
+        "Why some philosophers defend steadfastness",
+        "Evidence about the evidence",
+        "Intermediate views and extreme cases",
+        "Does conciliation undermine itself?",
+        "The midpoint is a model choice",
+        "From ideal peers to actual controversy",
+        "Confidence and cooperation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.",
+          "corpus_chunk": 45746
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.",
+          "corpus_chunk": 45747
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.",
+          "corpus_chunk": 45748
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We do it this way: if we disagree over whether to do action \\(X\\), we are disagreeing over the truth of the claim ‘We should do \\(X\\)’ (or ‘I should do \\(X\\)’ or ‘\\(X\\) is the best thing for us to do’; no, these aren’t all equivalent).",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "However, it is worth noting that agreement also has epistemological implications.",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?",
+          "corpus_chunk": 45751
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A person can start out with a belief that is irrational, obtain some new relevant evidence concerning that belief, respond to that new evidence in a completely reasonable way, and yet end up with an irrational belief.",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "He shouldn’t lose confidence in his belief \\(J\\) merely because he learned some facts that do not cast any doubt on his belief!",
+          "corpus_chunk": 45752
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "On the other hand, “rationality demands” that upon his acquisition of new knowledge Bub keep his belief \\(J\\) given that that acquisition—which is the only thing that’s happened to him—gives him no reason to doubt \\(J\\).",
+          "corpus_chunk": 45754
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In the first case, a state is being evaluated, in the second, an action is being evaluated.",
+          "corpus_chunk": 45754
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "These two stories show that one’s action of retaining one’s belief—that intellectual action—can be epistemically fine even though the retained belief is not.",
+          "corpus_chunk": 45756
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The latter question concerns an intellectual action (an intellectual response to the acquisition of new information), whereas the former question concerns the subsequent level of confidence itself, the new confidence level you end up with, which comes about partially as a causal result of the intellectual action.",
+          "corpus_chunk": 45757
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A child has belief \\(B\\) that Hell is a real place located in the center of the earth.",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The better one’s epistemic position, the more likely one is to be correct.",
+          "corpus_chunk": 45759
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \\(B\\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.",
+          "corpus_chunk": 45761
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.",
+          "corpus_chunk": 45762
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Suppose I also believe \\(P\\), that Taylor is my peer regarding \\(B\\) in this sense: I think we are equally likely to judge \\(B\\) correctly.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \\(B\\) is false.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But the important point here is this: if I have the view that if it turns out that she really thinks \\(B\\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \\(B\\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Danny has been right, and 20% of the time they have both been wrong.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \\(B\\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.",
+          "corpus_chunk": 45769
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "So for any two people it is quite unlikely that they are ‘weight peers’.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).",
+          "corpus_chunk": 45771
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Evidence of the experts’ interests and biases vis-a-vis the question at issue.",
+          "corpus_chunk": 45772
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Before we begin our discussion of peer disagreements it is important to set aside a number of cases.",
+          "corpus_chunk": 45774
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "The Equal Weight View is perhaps the most prominently discussed view on the epistemic significance of disagreement.",
+          "corpus_chunk": 45775
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Perhaps the best way to understand the Equal Weight View comes from exploring the motivation that has been given for the view.",
+          "corpus_chunk": 45775
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Meanwhile, my friend does the math in her head and becomes highly confident that our shares are $45 each.",
+          "corpus_chunk": 45776
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Learning of the disagreement gives him reason to revise and an opportunity for epistemic improvement.",
+          "corpus_chunk": 45777
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Applied to the richer doxastic picture that includes degrees of belief, if one peer has a 0.7 degree of belief that \\(P\\) and the other has a 0.3 degree of belief that \\(P\\), giving the peer opinions equal weight will call for each peer to adopt a 0.5 degree of belief that \\(P\\).",
+          "corpus_chunk": 45779
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "The reasons that Christensen could have to discount his peer’s belief about the shares could include that he had a little too much to drink tonight, that he is especially tired, that Christensen double checked but his friend didn’t, etc., but could not include that the shares actually are $43, that Christensen disagrees, etc.",
+          "corpus_chunk": 45780
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This helps motivate Defeat, since a reason to believe the proposition when you disbelieve it amounts to a reason to believe that you have made a mistake regarding that proposition.",
+          "corpus_chunk": 45781
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "So, if you have reason to believe that Jai’s epistemic position with respect to \\(P\\) is inferior to Mai’s, then discovering that Jai believes \\(P\\) will be a weaker reason to believe \\(P\\) than discovering that Mai believes \\(P\\).",
+          "corpus_chunk": 45782
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Something seems wrong with the following line of reasoning, “My peer believes not-\\(P\\), but I concluded \\(P\\), so my peer is wrong” or “I thought \\(S\\) was my peer, but \\(S\\) thinks not-\\(P\\), and I think \\(P\\), so \\(S\\) is not my peer after all” (see Christensen 2011).",
+          "corpus_chunk": 45783
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Support for the Equal Weight View has come from examining what it would be rational to believe in a case of peer thermometer disagreement.",
+          "corpus_chunk": 45783
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "If the analogy holds, then we have reason to accept each of the three theses of the Equal Weight View.",
+          "corpus_chunk": 45785
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Defeat has been rejected by defenders of the Steadfast View in a number of ways.",
+          "corpus_chunk": 45787
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Given our limitations, peers can never fully share their evidence.",
+          "corpus_chunk": 45787
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Defenders of the Equal Weight View have noted that these considerations cut both ways (see Feldman 2006).",
+          "corpus_chunk": 45788
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "He’s out there a fair amount.) I believe that the dean is standing on the quad.",
+          "corpus_chunk": 45789
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Plantinga 2000a has argued that there is a sense of justification that is simply doing the best that one can.",
+          "corpus_chunk": 45790
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Any reaction to the disagreement will contain some epistemic risk, so I might as well go with how things seem to me.",
+          "corpus_chunk": 45791
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "In particular, they give you reason to doubt that the truth about the disputed belief is as it seems to you.",
+          "corpus_chunk": 45793
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "A parallel account appears to apply to cases of peer disagreement.",
+          "corpus_chunk": 45793
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Kelly 2005 argues that while 3 is evidence for 2 it is not evidence for 1.",
+          "corpus_chunk": 45794
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Second, since people form beliefs on the basis of a body of evidence, to count their belief as yet another piece of evidence would amount to double-counting that original body of evidence.",
+          "corpus_chunk": 45796
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Alternatively, citing one’s own belief as evidence may exhibit hubris in a way that many would want to avoid.",
+          "corpus_chunk": 45797
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Finally, Defeat has been denied by appealing to epistemic permissiveness.",
+          "corpus_chunk": 45797
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "If evidence is permissive, then you may both have justified responses to the shared evidence even though you disagree.",
+          "corpus_chunk": 45799
+        },
+        {
+          "locator": "§ 5.2.2",
+          "basis": "full text",
+          "excerpt": "The Steadfast View has also been motivated by denying Equal Weight.",
+          "corpus_chunk": 45800
+        },
+        {
+          "locator": "§ 5.2.2",
+          "basis": "full text",
+          "excerpt": "On this account, while peer disagreements have a kind of symmetry from the third-person perspective, neither party occupies that perspective.",
+          "corpus_chunk": 45801
+        },
+        {
+          "locator": "§ 5.2.2",
+          "basis": "full text",
+          "excerpt": "So, conciliation can be seen to be called for from within the first-person perspective.",
+          "corpus_chunk": 45801
+        },
+        {
+          "locator": "§ 5.2.3",
+          "basis": "full text",
+          "excerpt": "Others have rejected the Equal Weight View by denying Independence.",
+          "corpus_chunk": 45803
+        },
+        {
+          "locator": "§ 5.2.3",
+          "basis": "full text",
+          "excerpt": "Another is whether any problems with Independence also remove the skeptical threat from disagreement.",
+          "corpus_chunk": 45803
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "On the spectrum of views of the epistemic significance of disagreement, the Justificationist View lies somewhere in between the Equal Weight View and the Steadfast View.",
+          "corpus_chunk": 45811
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "In other words, the claim is that the Equal Weight View gives the wrong verdicts in what we might call cases of ‘extreme disagreement’.",
+          "corpus_chunk": 45812
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "According to the Justificationist View, one’s antecedent degree of justification determines the rational response to peer disagreement.",
+          "corpus_chunk": 45812
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Independence only permitted information from ‘outside’ the disagreement to affect assessment of peerhood credentials, but here, the fact that your interlocutor disagrees with something you are highly justified in believing gives you a reason to discount his opinion on the matter.",
+          "corpus_chunk": 45814
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Since in extreme disagreements one party is severely malfunctioning, my personal information makes the best explanation of this fact that it is my peer who is malfunctioning.",
+          "corpus_chunk": 45815
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Meanwhile, you are adding up your numbers as well, and comparing them to the winning number.",
+          "corpus_chunk": 45816
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Like the Justificationist View, the Total Evidence View lies somewhere between the Steadfast View and the Equal Weight View.",
+          "corpus_chunk": 45817
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "The justified attitude is the mean between the two peer attitudes, which ignores what their shared first-order evidence supports.",
+          "corpus_chunk": 45817
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "At time \\(t_1\\), we meet and compare notes and we then split the difference and converge on a 0.8 degree of belief.",
+          "corpus_chunk": 45818
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Holocaust occurred, I encounter an individual who denies that the Holocaust ever occurred (because he is grossly ignorant of the evidence).",
+          "corpus_chunk": 45819
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Suppose that it seems to him that he has successfully completed the proof, yet he nevertheless has made a subtle error rendering the whole thing invalid.",
+          "corpus_chunk": 45821
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "A second route of response is to emphasize the distinction between the Response Question and the Belief Question.",
+          "corpus_chunk": 45821
+        },
+        {
+          "locator": "§ 5.5.1",
+          "basis": "full text",
+          "excerpt": "A prominent objection to the Equal Weight View and other views that prescribe doxastic conciliation is that such views are self-defeating.",
+          "corpus_chunk": 45824
+        },
+        {
+          "locator": "§ 5.5.1",
+          "basis": "full text",
+          "excerpt": "For these reasons, Plantinga 2000a has claimed that such views are, ‘self-referentially inconsistent’ (522), and Elga 2010 has claimed that such views are ‘incoherent’ and ‘self-undermining’ (179).",
+          "corpus_chunk": 45825
+        },
+        {
+          "locator": "§ 5.5.1",
+          "basis": "full text",
+          "excerpt": "At its worst, the consequences here for conciliatory views is that given certain contingent circumstances they cannot be reasonably believed, but such an inability to be reasonably believed does not demonstrate their falsity.",
+          "corpus_chunk": 45826
+        },
+        {
+          "locator": "§ 5.5.1",
+          "basis": "full text",
+          "excerpt": "If such a consequence is untenable, then it would call for the rejection of principles beyond those endorsed by the Equal Weight View, the Justificationist View, and the Total Evidence View.",
+          "corpus_chunk": 45827
+        },
+        {
+          "locator": "§ 5.5.1",
+          "basis": "full text",
+          "excerpt": "Bogardus (2009) argues that we can ‘just see’ that conciliatory principles are true and this prevents them from being self-undermining.",
+          "corpus_chunk": 45827
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "One potential special case of disagreement concerns deep disagreements.",
+          "corpus_chunk": 45834
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "One central question here is whether deep disagreements are rationally resolvable.",
+          "corpus_chunk": 45834
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "Another related issue is whether epistemic peers can be engaged in a deep disagreement (see Kappel 2021).",
+          "corpus_chunk": 45835
+        },
+        {
+          "locator": "§ 5.5.5",
+          "basis": "full text",
+          "excerpt": "As some have noted, epistemic peers are extremely rare, if not non-existent (Frances 2010, 2014; King 2011; Matheson 2014).",
+          "corpus_chunk": 45837
+        },
+        {
+          "locator": "§ 5.5.5",
+          "basis": "full text",
+          "excerpt": "There are several reasons to think about the significance of peer disagreement beyond its intrinsic appeal.",
+          "corpus_chunk": 45838
+        },
+        {
+          "locator": "§ 5.5.5",
+          "basis": "full text",
+          "excerpt": "These unknown cases may have the same epistemic significance as peer cases.",
+          "corpus_chunk": 45838
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Many disagreements are one-on-one: one person disagrees with another person and as far as they know they are the only two who have any opinion on the matter.",
+          "corpus_chunk": 45840
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "When Bob learns all this about his three colleagues, what should his doxastic reaction be to this mixed bag of agreement and disagreement?",
+          "corpus_chunk": 45840
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If the numbers matter, then disagreement poses a skeptical threat for nearly every view of the significance of peer disagreement.",
+          "corpus_chunk": 45842
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Further, while appeals to personal information may be good symmetry-breakers in cases of one-to-one disagreement, when the numbers of disagreeing parties are much larger, the effectiveness of such appeals radically diminishes.",
+          "corpus_chunk": 45843
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Since according to the Right Reasons View, what one is justified in believing is entirely determined by the first-order evidence, no amount of discovered disagreement would change which controversial beliefs are rational.",
+          "corpus_chunk": 45844
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Our beliefs are shaped by a number of factors, and not all of them are epistemically relevant.",
+          "corpus_chunk": 45844
+        }
+      ],
+      "annotation": "Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action."
+    },
+    {
+      "key": "locke1690",
+      "used_for": [
+        "Fallibility, toleration, and a newer puzzle",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "book IV, ch. XVI, § 4",
+          "basis": "full text",
+          "excerpt": "The right Use of it, mutual Charity and Forbearance, in a necessary diversity of opinions.",
+          "corpus_chunk": 6601
+        },
+        {
+          "locator": "book IV, ch. XVI, § 4",
+          "basis": "full text",
+          "excerpt": "For however it may often mistake, it can own no other guide but reason, nor blindly submit to the will and dictates of another.",
+          "corpus_chunk": 6602
+        },
+        {
+          "locator": "book IV, ch. XVI, § 4",
+          "basis": "full text",
+          "excerpt": "How can we expect, I say, that opinions thus settled should be given up to the arguments or authority of a stranger or adversary, especially if there be any suspicion of interest or design, as there never fails to be, where men find themselves ill-trusted?",
+          "corpus_chunk": 6604
+        },
+        {
+          "locator": "book IV, ch. XVI, § 4",
+          "basis": "full text",
+          "excerpt": "The necessity of believing without knowledge, nay often upon very slight grounds, in this fleeting state of action and blindness we are in, should make us more busy and careful to inform ourselves than constrain others.",
+          "corpus_chunk": 6605
+        },
+        {
+          "locator": "book IV, ch. XVI, § 4",
+          "basis": "full text",
+          "excerpt": "We should do well to commiserate our mutual ignorance, and endeavour to remove it in all the gentle and fair ways of information; and not instantly treat others ill, as obstinate and perverse, because they will not renounce their own, and receive our opinions",
+          "corpus_chunk": 6604
+        }
+      ],
+      "annotation": "Public-domain primary text distinguishing mathematical demonstration from testimony and recommending fair inquiry under fallible disagreement."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Fallibility, toleration, and a newer puzzle",
+        "Evidence about the evidence",
+        "The midpoint is a model choice",
+        "What the chapter leaves open",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "In many cases of testimony, we believe what another person tells us.",
+          "corpus_chunk": 4367
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The most demanding version of Conciliationism is the Equal Weight View, according to which one ought to assign equal weight to a peer’s opinion as to one’s own (Christensen 2007, Elga 2007, Feldman 2006, 2007, and Matheson 2015).",
+          "corpus_chunk": 4368
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "For this very reason, learning of a peer disagreement should not affect one’s confidence on this topic at all.",
+          "corpus_chunk": 4369
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Indeed, one might wonder whether you are required to give any weight to my opinion in such circumstances.",
+          "corpus_chunk": 4370
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Debates over peer disagreement have branched out in interesting ways.",
+          "corpus_chunk": 4370
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.",
+          "corpus_chunk": 4384
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose that a court consisting of three judges must render a judgment.",
+          "corpus_chunk": 4385
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of these results, various “escape routes” have been proposed.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.",
+          "corpus_chunk": 4387
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).",
+          "corpus_chunk": 4391
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).",
+          "corpus_chunk": 4392
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).",
+          "corpus_chunk": 4393
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The first agent buys GM stock based on their (minority) private information.",
+          "corpus_chunk": 4395
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    }
+  ]
+}

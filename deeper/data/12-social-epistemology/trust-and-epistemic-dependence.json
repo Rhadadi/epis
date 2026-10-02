@@ -1,0 +1,189 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "trust-and-epistemic-dependence",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do trust, reliance, actual trustworthiness, evidence, and warranted distrust interact?"
+  ],
+  "sources": [
+    {
+      "key": "mcleod2023",
+      "used_for": [
+        "Confidence needs room for vulnerability",
+        "Reasons to trust and reasons for a belief",
+        "The surrounding environment matters",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "It is important because it allows us to depend on others—for love, for advice, for help with our plumbing, or what have you—especially when we know that no outside force compels them to give us these things.",
+          "corpus_chunk": 47490
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Leaving the danger of trust aside, one could also ask whether trust is warranted in the sense of being plausible.",
+          "corpus_chunk": 47491
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "To illustrate how each of these matters is relevant, note that trust is warranted, that is, plausible, again, only if the conditions required for trust exist (e.g., some optimism about one another’s ability).",
+          "corpus_chunk": 47492
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "For instance, trust may not be the sort of attitude that one can will oneself to have without any evidence of a person’s trustworthiness.",
+          "corpus_chunk": 47493
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "The assumption going forward therefore is that the dominant paradigm is interpersonal.",
+          "corpus_chunk": 47494
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Trust is an attitude we have towards people whom we hope will be trustworthy, where trustworthiness is a property not an attitude.",
+          "corpus_chunk": 47495
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For most philosophers, trust is a kind of reliance although it is not mere reliance (Goldberg 2020).",
+          "corpus_chunk": 47495
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Included at the end is some discussion about the nature of distrust.",
+          "corpus_chunk": 47496
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "One might think that if one is relying while trusting—that is, if trust is a species of reliance—then accepted vulnerability would not be essential for trust.",
+          "corpus_chunk": 47498
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Annette Baier writes that “trusting can be betrayed, or at least let down, and not just disappointed” (1986: 235).",
+          "corpus_chunk": 47499
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "To illustrate this type of trust, consider parents who trust their teenagers with the house or the family car, believing that their [children] may well abuse their trust, but hoping by such trust to elicit, in the fullness of time, more responsible and responsive trustworthy behaviour.",
+          "corpus_chunk": 47500
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Writings on this topic obviously bear on the issue of when trust is warranted (i.e., justified).",
+          "corpus_chunk": 47544
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "People can get into serious trouble by distrusting when they ought not to, rather than just by trusting when they ought not to.",
+          "corpus_chunk": 47544
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This section focuses on the epistemology of trust generally rather than on trust in testimony specifically.",
+          "corpus_chunk": 47545
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "For example, if I trust my brother not to harm anyone, I will resist the truth of any evidence to the contrary.",
+          "corpus_chunk": 47546
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Many philosophers respond to the skepticism about the rationality of trust by saying that rationality, when applied to trust, needs to be understood differently than it is in each of the skeptical points above.",
+          "corpus_chunk": 47548
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Or it could be internalist without requiring that we have done the evidence gathering just discussed.",
+          "corpus_chunk": 47548
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Although trust is paradigmatically a relation that holds between two individuals, forces larger than those individuals inevitably shape their trust and distrust in one another.",
+          "corpus_chunk": 47566
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "We need such a stance because we can’t always stop to reflect carefully on when to trust (i.e., assuming that some rational reflection is required for trusting well).",
+          "corpus_chunk": 47567
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Whichever epistemology of trust we choose, it ought to be sensitive to the tension that exists between trusting somebody and rationally reflecting on the grounds for that trust.",
+          "corpus_chunk": 47568
+        }
+      ],
+      "annotation": "Distinguishes trust from reliance, justification from actual trustworthiness, and interpersonal judgment from the surrounding social climate."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "The surrounding environment matters",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.",
+          "corpus_chunk": 4361
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.",
+          "corpus_chunk": 4362
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.",
+          "corpus_chunk": 4363
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).",
+          "corpus_chunk": 4364
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).",
+          "corpus_chunk": 4365
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.",
+          "corpus_chunk": 4365
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    }
+  ]
+}

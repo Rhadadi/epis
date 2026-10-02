@@ -1,0 +1,255 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "why-knowledge-is-social",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do individual justification, interpersonal information exchange, group states, and institutional coordination differ?"
+  ],
+  "sources": [
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Individuals, interactions, and systems",
+        "Social explanation and epistemic assessment",
+        "Dependence makes inquiry design important",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Epistemology is concerned with how people should go about the business of determining what is true.",
+          "corpus_chunk": 4350
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As Locke put it, “other men’s opinions floating in one’s brain” do not constitute genuine knowledge.",
+          "corpus_chunk": 4350
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "One possible explanation may lie in the individualistic self-understanding of early modern science: the Royal Society of London, created in 1660 to support and promote scientific inquiry, had as its motto “Nullius in verba”—roughly, “take no one’s word for it.” Another important factor appears to have been the centrality philosophers have traditionally ascribed to the problem of skepticism.",
+          "corpus_chunk": 4352
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Along these lines, an approach somewhat analogous to social epistemology was developed in the middle part of the 20th century.",
+          "corpus_chunk": 4353
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This view denies the explanatory relevance of such things as facts and evidence.",
+          "corpus_chunk": 4353
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Views emphasizing the importance of the social dimensions of knowledge also emerged in certain parts of philosophy.",
+          "corpus_chunk": 4354
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Kuhn held that purely objective considerations could never settle disputes between competing theories, underscoring the social factors that influence the development of scientific theory (Kuhn 1962/1970).",
+          "corpus_chunk": 4356
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Theorists in this tradition often defend proposals that are continuous with traditional epistemology.",
+          "corpus_chunk": 4357
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "While Goldman (1999) presented a framework for research in social epistemology, work on relevant topics had already begun to flourish.",
+          "corpus_chunk": 4357
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The salience of social epistemology has also been enhanced by journals devoted in whole or in part to the topic.",
+          "corpus_chunk": 4358
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "emology journal that engaged more with “mainstream” epistemology, started Episteme: A Journal of Individual and Social Epistemology in 2004. (While it originally focused exclusively on social epistemology, it has since expanded its scope to include individual epistemology.) Finn Collin (2013) attempts to characterize the difference between Fuller’s and Goldman’s approaches to social epistemology.",
+          "corpus_chunk": 4360
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.",
+          "corpus_chunk": 4361
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.",
+          "corpus_chunk": 4362
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.",
+          "corpus_chunk": 4363
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).",
+          "corpus_chunk": 4364
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).",
+          "corpus_chunk": 4365
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.",
+          "corpus_chunk": 4365
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The cases discussed thus far focus on epistemic agents who are individuals.",
+          "corpus_chunk": 4372
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "First, under what conditions can a group be said to believe something or (more generally) constitute an epistemic agent in its own right?",
+          "corpus_chunk": 4372
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "On a simple version, a group believes something just in case all, or almost all, of its members hold the belief (Quinton 1976: 17).",
+          "corpus_chunk": 4373
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Joint commitments create normative requirements for group members to emulate a single believer.",
+          "corpus_chunk": 4374
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A different Collectivist approach is taken by Alexander Bird (2014, 2022) who contends that the joint acceptance model of group belief is only one of many different (but legitimate) models.",
+          "corpus_chunk": 4376
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "According to it, A group, G, believes that p if and only if: (1) there is a significant percentage of G’s operative members who believe that p, and (2) are such that adding together the basis of their beliefs that p yields a belief set that is not substantively incoherent.",
+          "corpus_chunk": 4377
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A good deal of social epistemology focuses on topics in political epistemology.",
+          "corpus_chunk": 4418
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.",
+          "corpus_chunk": 4419
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.",
+          "corpus_chunk": 4420
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "In addition, there is a lively discussion about the role of experts in democratic politics.",
+          "corpus_chunk": 4420
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    },
+    {
+      "key": "grasswick2018",
+      "used_for": [
+        "Dependence makes inquiry design important",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While testimony has emerged as a central topic in social epistemology generally, feminists have been major contributors to discussions of how social power plays out in the economies of credibility.",
+          "corpus_chunk": 45972
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Fricker considers our role as testifiers a core dimension of our epistemic lives, so to suffer a credibility deficit impedes one’s capacity as an epistemic agent, making it both an ethical and an epistemic wrong when one suffers a deficit due to an identity prejudice.",
+          "corpus_chunk": 45973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In a similar vein, Nancy Daukas argues for an explicitly social form of virtue epistemology that takes as its core epistemic virtue “epistemic trustworthiness” (2006, 2011).",
+          "corpus_chunk": 45974
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, Elizabeth Anderson argues for the need to develop large-scale structural remedies such as ensuring broadly inclusive epistemic institutions in order to fully correct for the systemic biases that result in testimonial injustices (Anderson 2012).",
+          "corpus_chunk": 45975
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Testimonial smothering occurs when a speaker recognizes her audience as unwilling or unable to give the appropriate uptake to her testimony, and in response, limits and shapes her testimony in order to “insure that the testimony contains only content for which one’s audience demonstrates testimonial competence” (2011, 244).",
+          "corpus_chunk": 45976
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Hermeneutical injustice, involves a “structural prejudice in the economy of collective hermeneutical resources” (2007, 1).",
+          "corpus_chunk": 45976
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, some have argued that her analysis misrepresents hermeneutical resources as collective, failing to acknowledge the pluralism of interpretative communities and practices through which marginalized groups may have access to alternative interpretations of their experiences (Mason 2011; Medina 2012).",
+          "corpus_chunk": 45978
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Relatedly, such cases can lead to a kind of epistemic exploitation, where the dominant assume it is the responsibility of the marginalized to perform the labor necessary to educate them (the dominant) in the experiences of the oppressed (Berenstain 2016).",
+          "corpus_chunk": 45979
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Discussions of epistemic injustice offer an excellent example of work focusing on the challenges of knowing in contexts of oppression, analyzing how many of the wrongs that occur within such contexts have both epistemic and ethical dimensions.",
+          "corpus_chunk": 45980
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, Dotson frames many of these issues in terms of “epistemic oppression” that involves “persistent epistemic exclusion” (Dotson 2014), and Medina develops an “epistemology of resistance” in response to the epistemic dimensions of oppression (Medina 2013).",
+          "corpus_chunk": 45981
+        }
+      ],
+      "annotation": "Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation."
+    }
+  ]
+}

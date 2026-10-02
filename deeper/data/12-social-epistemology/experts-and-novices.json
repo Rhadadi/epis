@@ -1,0 +1,860 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "experts-and-novices",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How can a novice assess expertise through arguments, agreement, credentials, interests, and records while preserving task specificity and correction?"
+  ],
+  "sources": [
+    {
+      "key": "frances-matheson2026",
+      "used_for": [
+        "Disagreement changes the investigation",
+        "The problem is older than modern specialization",
+        "Why expertise is relative to a question",
+        "Five kinds of evidence, with five different limits",
+        "Reconstructing the case for responsible deference",
+        "A decision can be urgent without making the evidence certain",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.",
+          "corpus_chunk": 45746
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.",
+          "corpus_chunk": 45747
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.",
+          "corpus_chunk": 45748
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We do it this way: if we disagree over whether to do action \\(X\\), we are disagreeing over the truth of the claim ‘We should do \\(X\\)’ (or ‘I should do \\(X\\)’ or ‘\\(X\\) is the best thing for us to do’; no, these aren’t all equivalent).",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "However, it is worth noting that agreement also has epistemological implications.",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?",
+          "corpus_chunk": 45751
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A child has belief \\(B\\) that Hell is a real place located in the center of the earth.",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The better one’s epistemic position, the more likely one is to be correct.",
+          "corpus_chunk": 45759
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \\(B\\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.",
+          "corpus_chunk": 45761
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.",
+          "corpus_chunk": 45762
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Suppose I also believe \\(P\\), that Taylor is my peer regarding \\(B\\) in this sense: I think we are equally likely to judge \\(B\\) correctly.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \\(B\\) is false.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But the important point here is this: if I have the view that if it turns out that she really thinks \\(B\\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \\(B\\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Danny has been right, and 20% of the time they have both been wrong.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \\(B\\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.",
+          "corpus_chunk": 45769
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "So for any two people it is quite unlikely that they are ‘weight peers’.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).",
+          "corpus_chunk": 45771
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Evidence of the experts’ interests and biases vis-a-vis the question at issue.",
+          "corpus_chunk": 45772
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Many disagreements are one-on-one: one person disagrees with another person and as far as they know they are the only two who have any opinion on the matter.",
+          "corpus_chunk": 45840
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "When Bob learns all this about his three colleagues, what should his doxastic reaction be to this mixed bag of agreement and disagreement?",
+          "corpus_chunk": 45840
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If the numbers matter, then disagreement poses a skeptical threat for nearly every view of the significance of peer disagreement.",
+          "corpus_chunk": 45842
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Further, while appeals to personal information may be good symmetry-breakers in cases of one-to-one disagreement, when the numbers of disagreeing parties are much larger, the effectiveness of such appeals radically diminishes.",
+          "corpus_chunk": 45843
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Since according to the Right Reasons View, what one is justified in believing is entirely determined by the first-order evidence, no amount of discovered disagreement would change which controversial beliefs are rational.",
+          "corpus_chunk": 45844
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Our beliefs are shaped by a number of factors, and not all of them are epistemically relevant.",
+          "corpus_chunk": 45844
+        }
+      ],
+      "annotation": "Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action."
+    },
+    {
+      "key": "leonard2023",
+      "used_for": [
+        "Disagreement changes the investigation",
+        "Reconstructing the case for responsible deference",
+        "Does authority replace your reasons?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Here is a conversation that we might have: You: This plant is Pacific Poison Oak.",
+          "corpus_chunk": 922
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Broadly speaking, those working on the epistemology of authoritative testimony endorse one of two accounts: Preemptive Accounts and Non-Preemptive Accounts.",
+          "corpus_chunk": 923
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Proponents of the Preemptive Account, then, explain the difference between authoritative and non-authoritative testimony as follows: Authoritative testimony can provide you with a preemptive reason for belief, whereas non-authoritative testimony cannot.",
+          "corpus_chunk": 924
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Instead of thinking about authoritative testimony as providing preemptive reasons for belief, proponents of the Non-Preemptive Account take an authority’s testimony that p to provide a very strong reason to believe that p, where this reason is to be added to, or combined with, all of the other reasons that you have related to the proposition in question.",
+          "corpus_chunk": 925
+        }
+      ],
+      "annotation": "Introduces authoritative testimony and competing preemptive and non-preemptive accounts, with objections and examples."
+    },
+    {
+      "key": "anderson2024",
+      "used_for": [
+        "Disagreement changes the investigation",
+        "Why expertise is relative to a question",
+        "The distribution of credibility can itself be defective",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.",
+          "corpus_chunk": 3419
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They affect knowers’ assessment of which claims are significant or important.",
+          "corpus_chunk": 3420
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.",
+          "corpus_chunk": 3424
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This entails that women be able to recognize their lives in feminist accounts of women’s predicament.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?",
+          "corpus_chunk": 3429
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?",
+          "corpus_chunk": 3430
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.",
+          "corpus_chunk": 3433
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Naturalized epistemology considers the effects of our pervasive epistemic interdependence (Nelson 1990).",
+          "corpus_chunk": 3514
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Gendered ideas about epistemic authority can distort our general models of knowledge.",
+          "corpus_chunk": 3515
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Code argues that knowledge of other persons rather than of propositions should be taken as a primary model of knowledge.",
+          "corpus_chunk": 3515
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Recent epistemology’s focus on the indispensability of testimony to inquiry has led feminist epistemologists to take Code’s ideas in a different direction, by investigating the dependence of propositional knowledge on knowledge of persons.",
+          "corpus_chunk": 3517
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Other feminist epistemologists focus on the impact of gender and other hierarchical relations on attributions of epistemic authority.",
+          "corpus_chunk": 3518
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Dotson (2011) distinguishes two kinds of testimonial injustice, silencing and smothering.",
+          "corpus_chunk": 3519
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Davis (2021) distinguishes “identity-based” from “content-based” testimonial injustice, depending on whether a speaker’s testimony is denigrated on the basis of their own social identity or on prejudice against social groups associated with the content of their speech (e.g., dismissing a doctor’s testimony about fibromyalgia based on the assumption that the women who suffer from it are merely seeking attention).",
+          "corpus_chunk": 3520
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "An example of hermeneutical injustice is the dismissal of women as humorless or hypersensitive for getting upset at what was seen as mere cloddish courtship or joking, before the concept of sexual harassment was available to make sense of their experiences.",
+          "corpus_chunk": 3521
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Pohlhaus (2011) argues that such ignorance can be willful, leading to contributory injustice, an intentional maintenance of inadequate hermeneutical resources that harmfully obstructs the uptake of resources the oppressed have developed to make sense of their experience (Dotson 2012).",
+          "corpus_chunk": 3522
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Since accurate information on such matters is or was available, explanation is needed for why it is forgotten.",
+          "corpus_chunk": 3522
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Jones (2002) proposes rules for checking such biases when confronted with surprising testimony.",
+          "corpus_chunk": 3523
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "A key theme of feminist virtue epistemology is its aspiration to cultivate dispositions that enable inquirers to produce knowledge that can overcome oppression (Daukas 2018).",
+          "corpus_chunk": 3525
+        }
+      ],
+      "annotation": "Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority."
+    },
+    {
+      "key": "locke1690",
+      "used_for": [
+        "The problem is older than modern specialization",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "book IV, ch. XV, § 4",
+          "basis": "full text",
+          "excerpt": "The Grounds of Probability are two: Conformity with our own Experience, or the Testimony of others.",
+          "corpus_chunk": 6589
+        },
+        {
+          "locator": "book IV, ch. XV, §§ 1–4",
+          "basis": "full text",
+          "excerpt": "But another man, who never took the pains to observe the demonstration, hearing a mathematician, a man of credit, affirm the three angles of a triangle to be equal to two right ones, assents to it, i.e. receives it for true: in which case the foundation of his assent is the probability of the thing; the proof being such as for the most part carries truth with it: the man on whose testimony he receives it, not being wont to affirm anything contrary to or besides his knowledge, especially in matters of this kind: so that that which causes his assent to this proposition, that the three angles of a triangle are equal to two right ones, that",
+          "corpus_chunk": 6586
+        },
+        {
+          "locator": "book IV, ch. XV, §§ 1–4",
+          "basis": "full text",
+          "excerpt": "Our knowledge, as has been shown, being very narrow, and we not happy enough to find certain truth in everything which we have occasion to consider; most of the propositions we think, reason, discourse--nay, act upon, are such as we cannot have undoubted knowledge of their truth: yet some of them border so near upon certainty, that we make no act, according to the assent, as resolutely as if they were infallibly demonstrated, and that our knowledge of them was perfect and certain.",
+          "corpus_chunk": 6587
+        },
+        {
+          "locator": "book IV, ch. XV, §§ 1–4",
+          "basis": "full text",
+          "excerpt": "But there being degrees herein, from the very neighbourhood of certainty and demonstration, quite down to improbability and unlikeness, even to the confines of impossibility; and also degrees of assent from full assurance and confidence, quite down to conjecture, doubt, and distrust: I shall come now, (having, as I think, found out THE BOUNDS OF HUMAN KNOWLEDGE AND CERTAINTY,) in the next place, to consider THE SEVERAL DEGREES AND GROUNDS OF PROBABILITY, AND ASSENT OR FAITH. 3.",
+          "corpus_chunk": 6588
+        },
+        {
+          "locator": "book IV, ch. XV, §§ 1–4",
+          "basis": "full text",
+          "excerpt": "The entertainment the mind gives this sort of propositions is called BELIEF, ASSENT, or OPINION, which is the admitting or receiving any proposition for true, upon arguments or proofs that are found to persuade us to receive it as true, without certain knowledge that it is so.",
+          "corpus_chunk": 6589
+        },
+        {
+          "locator": "book IV, ch. XV, §§ 1–4",
+          "basis": "full text",
+          "excerpt": "The Grounds of Probability are two: Conformity with our own Experience, or the Testimony of others.",
+          "corpus_chunk": 6589
+        },
+        {
+          "locator": "book IV, ch. XV, § 4",
+          "basis": "full text",
+          "excerpt": "In the testimony of others is to be considered: 1. The number. 2. The integrity. 3. The skill of the witnesses. 4. The design of the author, where it is a testimony out of a book cited. 5. The consistency of the parts, and circumstances of the relation. 6. Contrary testimonies.",
+          "corpus_chunk": 6590
+        }
+      ],
+      "annotation": "Public-domain primary text distinguishing mathematical demonstration from testimony and recommending fair inquiry under fallible disagreement."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "The problem is older than modern specialization",
+        "Why expertise is relative to a question",
+        "Five kinds of evidence, with five different limits",
+        "Does authority replace your reasons?",
+        "A consultation can change the question",
+        "The distribution of credibility can itself be defective",
+        "What the chapter simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "When it comes to the various ways we rely on others as we engage in the pursuit of truth, testimony is paradigmatic.",
+          "corpus_chunk": 4361
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Those who deny that testimony is a basic source of justification hold that testimony-based beliefs are justified only if the audience has adequate independent reasons to regard the speaker’s testimony as trustworthy.",
+          "corpus_chunk": 4362
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Such a view, known as “anti-reductionism,” was defended by Thomas Reid (1764/1983), who argued that honesty (in speakers) and credulity (in audiences) are as much a part of our natural psychological endowment, and so are as worthy of being relied upon in belief-formation, as is the faculty of perception.",
+          "corpus_chunk": 4363
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In addition to the question of whether testimony is a basic source of justification, a second question concerns whether we can specify the conditions on justified testimony-based belief in individualistic terms, that is, terms that are restricted to materials from the audience alone (the evidence in her possession, the reliability of her faculties, etc.).",
+          "corpus_chunk": 4364
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Still, anti-individualistic views remain controversial (see Gerken 2012, Leonard 2016, 2018).",
+          "corpus_chunk": 4365
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A question that has recently begun to attract more attention from social epistemologists concerns the role of technology in testimony.",
+          "corpus_chunk": 4365
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.",
+          "corpus_chunk": 4384
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose that a court consisting of three judges must render a judgment.",
+          "corpus_chunk": 4385
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of these results, various “escape routes” have been proposed.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.",
+          "corpus_chunk": 4387
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).",
+          "corpus_chunk": 4391
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).",
+          "corpus_chunk": 4392
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).",
+          "corpus_chunk": 4393
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The first agent buys GM stock based on their (minority) private information.",
+          "corpus_chunk": 4395
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.",
+          "corpus_chunk": 4404
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.",
+          "corpus_chunk": 4405
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.",
+          "corpus_chunk": 4406
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.",
+          "corpus_chunk": 4407
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "This supports central claims from social epistemology espoused by Goldman (1999).",
+          "corpus_chunk": 4407
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.",
+          "corpus_chunk": 4408
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.",
+          "corpus_chunk": 4409
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "One truth about epistemic communities is that relationships matter.",
+          "corpus_chunk": 4410
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A good deal of social epistemology focuses on topics in political epistemology.",
+          "corpus_chunk": 4418
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.",
+          "corpus_chunk": 4419
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.",
+          "corpus_chunk": 4420
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "In addition, there is a lively discussion about the role of experts in democratic politics.",
+          "corpus_chunk": 4420
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Influenced by long-standing work in feminism and critical race theory, social epistemology has attempted to theorize about various types of dysfunction in the social practices through which we aim to generate, communicate, assess, and preserve knowledge.",
+          "corpus_chunk": 4428
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "stimonial” injustice obtains when (on the basis of identity-based prejudice) an audience gives less credence to a speaker than she deserves. (Fricker illustrated this sort of injustice with Tom Robinson, a character in To Kill a Mockingbird whose testimony, as a Black man on trial for raping a white woman, was prejudicially rejected by the all-white jury.) “Hermeneutical” injustice obtains when, owing to social forces which reflect the interests of certain social groups, a subject lacks the concepts for understanding and/or communicating socially significant aspects of her own experience. (Fricker’s example is the experience of women before",
+          "corpus_chunk": 4429
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Fricker’s (2007) reflections on epistemic injustice have inspired a generation of social philosophers to pursue questions in this vicinity.",
+          "corpus_chunk": 4429
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "The guiding hypothesis, explicitly formulated by Mills (2007) in connection with his notion of “white ignorance,” is that ignorance in contemporary society patterns in ways that reflect the interests of dominant social groups.",
+          "corpus_chunk": 4431
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "For this reason, the acquisition and handling of evidence, long a topic in feminist and virtue epistemology, has recently begun to attract the attention of social epistemologists as well.",
+          "corpus_chunk": 4432
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "A general framework for understanding various dimensions of epistemic oppression can be found in Dotson (2014).",
+          "corpus_chunk": 4432
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    },
+    {
+      "key": "conspiracy-theories-iep",
+      "used_for": [
+        "Five kinds of evidence, with five different limits"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A number of criteria have been offered, sometimes implicitly, in the philosophical literature to evaluate whether we should believe in a particular conspiracy theory, and these are surveyed below.",
+          "corpus_chunk": 48450
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Finally, while instrumentalism still has epistemic aims, we can also identify a more radical pragmatist view which focuses more generally on the consequences, for example political and social consequences, of holding a particular (conspiracy) theory or belief.",
+          "corpus_chunk": 48451
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Third, there are a number of other criteria neither dealing with motives nor with scientific methodology.",
+          "corpus_chunk": 48452
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Criteria concerning Scientific Methodology Basham (2001, p.275) advocates skepticism of a conspiracy theory if it suffers from what he calls “internal faults,” among which he lists “problems with self-consistency, explanatory gaps, appeals to unlikely or obviously weak motives and other unrealistic psychological states, poor technological claims, and the theory’s own incongruencies with observed facts it grants (including failed predictions).” Räikkä (2009a, p.196f) also refers to a similar list of criteria.",
+          "corpus_chunk": 48453
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Note that the list of things mentioned by Basham as internal faults is rather diverse, and one can debate whether all of these faults should really be considered internal to the theory.",
+          "corpus_chunk": 48454
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Clarke (2002; 2007) sees conspiracy theories as degenerating research programs in the sense developed by Lakatos (1970).",
+          "corpus_chunk": 48455
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Going further, Clarke (2007) also views other conspiracy theories—the controlled demolition theory of 9/11, for instance—as only proto-theories, something that is not sufficiently worked out to count as a theoretical core of a degenerating or progressive research program.",
+          "corpus_chunk": 48456
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, as Lakatos’s notion of a research program comes with a hard core—the central characteristic claims not up for modification—and a protective belt—auxiliary hypotheses which can be changed—applying this notion also gives us tools to analyze a conspiracy theory in more detail.",
+          "corpus_chunk": 48457
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Dentith (2016) views conspiracy theories as inferences to the best explanation.",
+          "corpus_chunk": 48458
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "There is some disagreement between authors about whether conspiracy theories may be selective in their choice of evidence.",
+          "corpus_chunk": 48458
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Finally, Keeley (2003, p.106) considers whether lack of evidence for a conspiracy should count against a theory positing such a conspiracy.",
+          "corpus_chunk": 48459
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "While the previous criterion already discussed how conspiracy theories relate to data, there is a particular kind of data that receives special attention both by conspiracy theorists and in the philosophical literature about conspiracy theories.",
+          "corpus_chunk": 48461
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Dentith (2014, 129ff), following Coady (2006c), points out that any theory, official or unofficial, will have errant data.",
+          "corpus_chunk": 48462
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "When it comes to evaluating a specific conspiracy theory, the conclusion is that we should be looking at the errant data of both the conspiracy theory and alternative theories.",
+          "corpus_chunk": 48463
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Trust plays a role in two different ways when it comes to conspiracy theories.",
+          "corpus_chunk": 48466
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Conversely, people who reject a particular theory as “just” a conspiracy theory may also have a motive to mislead.",
+          "corpus_chunk": 48467
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Levy (2007) takes a radically socialized view of knowledge: Since knowledge can only be produced by a complex network of inquiry in which the relevant epistemic authorities are embedded, a conspiracy theory conflicting with the official story coming out of this network is “prima facie unwarranted” (p.182, italics in the original).",
+          "corpus_chunk": 48468
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, Dentith points out that the fact that a theory has authority in the sense of being official does not necessarily mean that it has epistemic authority, a point Levy also makes.",
+          "corpus_chunk": 48469
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "As mentioned when discussing individual trust, when we want to assess the credibility of experts, part of that credibility judgment will depend on the extent to which we trust the institution accrediting the expertise, assuming there is such an institution to which the expert is linked.",
+          "corpus_chunk": 48470
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If a conspiracy theory contradicts an official theory based on scientific expertise, this produces skepticism not only with regard to the institution of science, but may also produce skepticism with regard to other public institutions, for example the press, which accepts the official story instead of uncovering the conspiracy, the parliament and the government, which produce or propagate the conspiracy theory in the first place.",
+          "corpus_chunk": 48471
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In any case, our trust in our public institutions will influence the extent to which we hold a particular conspiracy theory to be likely.",
+          "corpus_chunk": 48471
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In any case, an individual who tries to assess a particular conspiracy theory should thus also consider to what extent they trust or distrust our public institutions.",
+          "corpus_chunk": 48473
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A global conspiracy theory like the Flat Earth theory tends to involve more pervasive institutional distrust, since it involves multiple institutions from various societal domains, than a local conspiracy theory like the Watergate conspiracy.",
+          "corpus_chunk": 48474
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The general claim here is that the more agents that are supposed to be involved in a conspiracy—its size—and the longer the conspiracy is supposed to be in existence—its duration—the less likely the conspiracy theory.",
+          "corpus_chunk": 48479
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, Grimes (2016) has conducted simulations showing that large conspiracies with 1000 agents or more are unlikely to succeed due to problems with maintaining secrecy.",
+          "corpus_chunk": 48480
+        }
+      ],
+      "annotation": "Pauly’s secondary overview distinguishes neutral and loaded definitions and presents contested evaluation criteria concerning evidence, trust, scale, and secrecy."
+    }
+  ]
+}

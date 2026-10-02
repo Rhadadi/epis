@@ -23,7 +23,8 @@ This file adds the workflow and tools.
 | 09 Induction, probability and Bayes | 12 | published |
 | 10 Science and evidence | 18 | published |
 | 11 Truth and relativism | 9 | published |
-| 12–16 | 0 | to do (list in section 8) |
+| 12 Social epistemology | 15 | published |
+| 13–16 | 0 | to do (list in section 8) |
 
 After that: the final polish pass (section 9).
 

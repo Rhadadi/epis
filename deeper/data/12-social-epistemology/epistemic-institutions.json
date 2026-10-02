@@ -1,0 +1,200 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "epistemic-institutions",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do coordination, critical uptake, incentives, and inclusion affect institutional information and correction?"
+  ],
+  "sources": [
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Criticism must receive uptake",
+        "Systems have several aims",
+        "Objectivity as an organized practice",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Let us now turn to three paradigms in formal social epistemology: the credit economy, network models, and models of epistemic diversity.",
+          "corpus_chunk": 4397
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Truth seekers might all herd onto the most promising problem in science, while credit seekers will choose less popular topics where they are more likely to be the one generating a finding.",
+          "corpus_chunk": 4398
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Higginson and Munafo (2016) and Romero (2017) argue that the priority rule strongly disincentivizes scientists from performing replications because credit is so strongly associated with new, positive findings.",
+          "corpus_chunk": 4399
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Bright (2017a), though, uses a model to point out that credit-seekers who fear retaliation may publish more accurate results than truth-seekers who are convinced of some fact, despite their experimental results to the contrary.",
+          "corpus_chunk": 4400
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Because famous scientists are more trusted, their discoveries do more good.",
+          "corpus_chunk": 4400
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "On the positive side, besides possible benefits to division of labor, the priority rule incentivizes sharing in science.",
+          "corpus_chunk": 4401
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "If investigators using these poor methods train their students into them, and then place those students disproportionately, they will tend to proliferate.",
+          "corpus_chunk": 4403
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A good deal of social epistemology focuses on topics in political epistemology.",
+          "corpus_chunk": 4418
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Elizabeth Anderson (2006), for example, addresses how the epistemic properties of democratic systems can be designed to attain the best possible form of democracy.",
+          "corpus_chunk": 4419
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Since John Stuart Mill’s On Liberty, there has been a long history of attempts to argue for free speech rights on epistemic grounds.",
+          "corpus_chunk": 4420
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "In addition, there is a lively discussion about the role of experts in democratic politics.",
+          "corpus_chunk": 4420
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    },
+    {
+      "key": "grasswick2018",
+      "used_for": [
+        "Criticism must receive uptake",
+        "Objectivity as an organized practice",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Numerous feminist social epistemologists, particularly those working in philosophy of science, have employed the underdetermination thesis to argue for the necessary role of background assumptions in theory choice (Anderson 1995b; Longino 1990, 2002; Nelson 1990; Potter 1996).",
+          "corpus_chunk": 45961
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "They may also be gendered, or otherwise shaped by culturally salient social identity categories.",
+          "corpus_chunk": 45961
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "According to Longino, a theory is objective if it has undergone and survived a certain social process of critical scrutiny.",
+          "corpus_chunk": 45962
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Diverse representation within the community also becomes important, since “a diversity of perspectives is necessary for vigorous and epistemically effective critical discourse” (Longino 2002, 131).",
+          "corpus_chunk": 45964
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Others describe the possibility of objectivity given the perspectival nature of knowledge in a slightly different way.",
+          "corpus_chunk": 45964
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Richmond Campbell develops these ideas further, arguing that armed with realist conceptions of truth and objective justification, we can explain (without circularity) how feminist biases can lead us closer to the truth within contexts of systematic gender bias in epistemic communities (Campbell 2001, 1998).",
+          "corpus_chunk": 45966
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Miriam Solomon characterizes such views described above as “feminist radical empiricism” because they adopt the view that not only are factual claims empirically testable (as do other feminist empiricists), but more radically they embrace the idea that the values or biases that inform our theory choices are also empirically testable themselves (Solomon 2012).",
+          "corpus_chunk": 45967
+        }
+      ],
+      "annotation": "Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation."
+    },
+    {
+      "key": "epistemic-injustice-iep",
+      "used_for": [
+        "Objectivity as an organized practice",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "There have been many further extensions of these ideas, both in terms of additional clarifications of the nature of epistemic injustice and its further application in the fields of education, healthcare, law, science, religion and elsewhere.",
+          "corpus_chunk": 48601
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The idea that Asians are all good at mathematics, or all African Americans good at sports are two familiar examples.",
+          "corpus_chunk": 48601
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Related ideas are discussed by Anderson, who argues that the existence of structural, institutional forms of epistemic injustice requires greater emphasis on the need for structural remedies (2012).",
+          "corpus_chunk": 48603
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "If different groups engaged in inquiry are segregated based on their social identities, this may then lead to systematic unjust group inequalities, where, for example, an advantaged group disregards the testimony of a less advantaged group.",
+          "corpus_chunk": 48604
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Members of the advantaged group will be unable to make sense of the perspective of those in the disadvantaged group.",
+          "corpus_chunk": 48605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "They may nevertheless suffer from hermeneutical injustice in that the more advantaged are unable to understand them.",
+          "corpus_chunk": 48605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The idea that marginalized groups suffering from hermeneutical injustice can still develop an understanding of their own experience is further explored by Goetze (2018).",
+          "corpus_chunk": 48607
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "On the basis of this disjunctive characterization of the primary harm found in hermeneutical injustice, Goetze is able to offer a further taxonomy of the various species of such injustice in terms of where the gap in our collective hermeneutical resources appears (for details see 2018, 80-85).",
+          "corpus_chunk": 48608
+        }
+      ],
+      "annotation": "Sinclair’s free secondary overview supplies Fricker’s central distinctions, literary examples, harms, corrective virtues, and structural and interpretive challenges; the original contemporary books are not represented as read."
+    }
+  ]
+}

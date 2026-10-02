@@ -1,0 +1,262 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "standpoint-and-feminist-epistemology",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What must a standpoint claim specify, and how do critical reflection and social criticism bear on objectivity?"
+  ],
+  "sources": [
+    {
+      "key": "anderson2024",
+      "used_for": [
+        "A standpoint is a further achievement",
+        "Several feminist projects",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.",
+          "corpus_chunk": 3419
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They affect knowers’ assessment of which claims are significant or important.",
+          "corpus_chunk": 3420
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.",
+          "corpus_chunk": 3424
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This entails that women be able to recognize their lives in feminist accounts of women’s predicament.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?",
+          "corpus_chunk": 3429
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?",
+          "corpus_chunk": 3430
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.",
+          "corpus_chunk": 3433
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Standpoint theories claim to represent the world from an epistemically advantaged socially situated perspective.",
+          "corpus_chunk": 3434
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Auto mechanics are in a better position than auto consumers to know what is wrong with their cars.",
+          "corpus_chunk": 3434
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Marxism offers the classic model of standpoint theory, claiming an epistemic advantage over fundamental questions of social science and history, on behalf of the standpoint of the proletariat (Marx 1964, Lukács 1971).",
+          "corpus_chunk": 3436
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Workers’ collective insight into their common predicament and the need to overcome it through revolutionary action generates a self-understanding which, when acted upon, gets realized.",
+          "corpus_chunk": 3437
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Variants of feminist standpoint theory ground this epistemic advantage in different features of women’s social situation, by analogy with different strands of Marxist epistemology.",
+          "corpus_chunk": 3438
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Women unmask these ideological misrepresentations by achieving and acting on a shared understanding of themselves as women—as a group unjustly constituted by sexual objectification.",
+          "corpus_chunk": 3439
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Males acquire a masculine identity by distinguishing themselves from their mothers, through controlling and denigrating the feminine.",
+          "corpus_chunk": 3439
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Institutionalizing feminine ways of knowing requires overcoming the division of mental, manual, and caring labor that characterizes capitalist patriarchy (Rose 1987).",
+          "corpus_chunk": 3441
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The epistemic advantage of the oppressed is sometimes founded on“bifurcated consciousness”: the ability to see both from the perspective of the dominant and from the perspective of the oppressed (Harding 1991, Collins 1990).",
+          "corpus_chunk": 3442
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The privileged standpoint is not that of women, but of feminists (MacKinnon 1989).",
+          "corpus_chunk": 3442
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Longino (1993b) argues that standpoint theory cannot provide a noncircular basis for deciding which standpoints have epistemic privilege.",
+          "corpus_chunk": 3443
+        }
+      ],
+      "annotation": "Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority."
+    },
+    {
+      "key": "grasswick2018",
+      "used_for": [
+        "A standpoint is a further achievement",
+        "Several feminist projects",
+        "Objectivity can require social criticism",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Standpoint theorists, and many who are inspired by standpoint theory, not only maintain Haraway’s situated knowledge thesis, conceptualizing all knowledge as perspectival, but also hold a stronger thesis that some of those perspectives are epistemically more valuable than others.",
+          "corpus_chunk": 45957
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Although a few standpoint theorists argue for a women’s standpoint stemming directly from women’s experience, most influential standpoint theorists including Hartsock (1983) and Harding (1986) insist that the Marxist-inspired arguments imply that although the feminist standpoint is deeply connected to the lives of women, the epistemically privileged nature of the feminist standpoint stems from active political engagement in the feminist cause, and does not just represent the perspective of women.",
+          "corpus_chunk": 45958
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The idea of a standpoint builds upon, but is distinctive from the situated knowledge thesis that recognizes the importance of social location in shaping epistemic perspective (Wylie 2003, 31).",
+          "corpus_chunk": 45959
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Yet it maintains the situated knowledge thesis that perspectives are differentiated according to social location, and it calls on researchers to engage in reflexive analysis of how their own social location shapes their research.",
+          "corpus_chunk": 45960
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Numerous feminist social epistemologists, particularly those working in philosophy of science, have employed the underdetermination thesis to argue for the necessary role of background assumptions in theory choice (Anderson 1995b; Longino 1990, 2002; Nelson 1990; Potter 1996).",
+          "corpus_chunk": 45961
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "They may also be gendered, or otherwise shaped by culturally salient social identity categories.",
+          "corpus_chunk": 45961
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "According to Longino, a theory is objective if it has undergone and survived a certain social process of critical scrutiny.",
+          "corpus_chunk": 45962
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Diverse representation within the community also becomes important, since “a diversity of perspectives is necessary for vigorous and epistemically effective critical discourse” (Longino 2002, 131).",
+          "corpus_chunk": 45964
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Others describe the possibility of objectivity given the perspectival nature of knowledge in a slightly different way.",
+          "corpus_chunk": 45964
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Richmond Campbell develops these ideas further, arguing that armed with realist conceptions of truth and objective justification, we can explain (without circularity) how feminist biases can lead us closer to the truth within contexts of systematic gender bias in epistemic communities (Campbell 2001, 1998).",
+          "corpus_chunk": 45966
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Miriam Solomon characterizes such views described above as “feminist radical empiricism” because they adopt the view that not only are factual claims empirically testable (as do other feminist empiricists), but more radically they embrace the idea that the values or biases that inform our theory choices are also empirically testable themselves (Solomon 2012).",
+          "corpus_chunk": 45967
+        }
+      ],
+      "annotation": "Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation."
+    }
+  ]
+}

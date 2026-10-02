@@ -1,0 +1,149 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "conformity-cascades-and-herding",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How can sequential imitation conceal private evidence and how does conformity differ from informative communication?"
+  ],
+  "sources": [
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Social pressure adds another mechanism",
+        "Independence concerns information",
+        "Models show possibilities, not universal prescriptions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.",
+          "corpus_chunk": 4384
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose that a court consisting of three judges must render a judgment.",
+          "corpus_chunk": 4385
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of these results, various “escape routes” have been proposed.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.",
+          "corpus_chunk": 4387
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).",
+          "corpus_chunk": 4391
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).",
+          "corpus_chunk": 4392
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).",
+          "corpus_chunk": 4393
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The first agent buys GM stock based on their (minority) private information.",
+          "corpus_chunk": 4395
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Another paradigm, widely used by philosophers to explore social aspects of epistemology, are epistemic network models.",
+          "corpus_chunk": 4404
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "For this reason, philosophers of science have tended to use the network epistemology framework introduced by economists Bala and Goyal (1998) to model how more rational individuals learn from neighbors.",
+          "corpus_chunk": 4405
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "As this model progresses these agents gather data, which increases their neighbors’ degrees of belief in turn.",
+          "corpus_chunk": 4406
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "In tightly connected networks, misleading evidence is widely shared, and may cause the community to pre-emptively settle on a poor theory.",
+          "corpus_chunk": 4407
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "This supports central claims from social epistemology espoused by Goldman (1999).",
+          "corpus_chunk": 4407
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "This can lead to stable, polarized camps that each ignore evidence and testimony coming from the other camp.",
+          "corpus_chunk": 4408
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Other literature investigates the role of pernicious influencers, especially from industry, on epistemic communities.",
+          "corpus_chunk": 4409
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "One truth about epistemic communities is that relationships matter.",
+          "corpus_chunk": 4410
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    }
+  ]
+}

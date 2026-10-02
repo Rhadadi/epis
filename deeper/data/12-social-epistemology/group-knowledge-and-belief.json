@@ -1,0 +1,137 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "group-knowledge-and-belief",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do summative, joint-commitment, distributed, and hybrid accounts differ, and how can consistent individuals aggregate inconsistently?"
+  ],
+  "sources": [
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Majority judgments can conflict",
+        "More than two accounts",
+        "Consistency and justification are separate",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The cases discussed thus far focus on epistemic agents who are individuals.",
+          "corpus_chunk": 4372
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "First, under what conditions can a group be said to believe something or (more generally) constitute an epistemic agent in its own right?",
+          "corpus_chunk": 4372
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "On a simple version, a group believes something just in case all, or almost all, of its members hold the belief (Quinton 1976: 17).",
+          "corpus_chunk": 4373
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "Joint commitments create normative requirements for group members to emulate a single believer.",
+          "corpus_chunk": 4374
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A different Collectivist approach is taken by Alexander Bird (2014, 2022) who contends that the joint acceptance model of group belief is only one of many different (but legitimate) models.",
+          "corpus_chunk": 4376
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "According to it, A group, G, believes that p if and only if: (1) there is a significant percentage of G’s operative members who believe that p, and (2) are such that adding together the basis of their beliefs that p yields a belief set that is not substantively incoherent.",
+          "corpus_chunk": 4377
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "As mentioned, formal epistemology has mostly focused on issues related to individual epistemology.",
+          "corpus_chunk": 4384
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose that a court consisting of three judges must render a judgment.",
+          "corpus_chunk": 4385
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Judge 1 True True True Judge 2 True False False Judge 3 False True False Group True True False In this example, each of the three judges has a logically self-consistent set of beliefs.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of these results, various “escape routes” have been proposed.",
+          "corpus_chunk": 4386
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While Wray (2014) defends deliberation as crucial to the production of group consensus, Bright et al.",
+          "corpus_chunk": 4387
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "If a rational group ought to adopt some aggregated belief, then it might also make sense for an individual in the group to adopt the same belief as a result of learning about the credences of their peers.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This averaging could respect all credences equally, or put extra weights on the opinions of, say, recognized experts.",
+          "corpus_chunk": 4389
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "A fully-fledged Bayesian approach to aggregation demands that final credences be derived by Bayesian updating in light of the opinions held by each group member (Keeney and Raiffa 1993).",
+          "corpus_chunk": 4391
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For instance, if we all have credences about the rain, and someone comes in wearing shorts, it should not matter to the final group output whether 1) they entered and we all updated our credences (in a Bayesian way) and then aggregated them, or 2) we aggregated our credences, they entered, and we updated the aggregated credence (in a Bayesian way).",
+          "corpus_chunk": 4392
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This is an important lesson for approaches to social epistemology which focus on individual topics of interest in addressing peer disagreement and testimony (Russell et al. 2015).",
+          "corpus_chunk": 4393
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In light of critiques of both geometric and linear averaging, Kinney (2022) argues that attention should be paid to the underlying models of the world that individuals are working from when combining credences.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Suppose a group of individuals form independent beliefs about a topic and they are each more than 50% likely to reach a correct judgement.",
+          "corpus_chunk": 4394
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The first agent buys GM stock based on their (minority) private information.",
+          "corpus_chunk": 4395
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    }
+  ]
+}

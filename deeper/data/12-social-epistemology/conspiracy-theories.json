@@ -1,0 +1,197 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "conspiracy-theories",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do neutral definitions, missing evidence, anomalies, scope, and institutional trust affect a specific conspiracy allegation?"
+  ],
+  "sources": [
+    {
+      "key": "conspiracy-theories-iep",
+      "used_for": [
+        "Investigate distrust too",
+        "Neutral and loaded definitions",
+        "Secrecy complicates simple tests",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The definition of the term “conspiracy theory” given at the beginning of this article is neutral in the sense that it does not imply that a conspiracy theory is wrong or unlikely to be true.",
+          "corpus_chunk": 48442
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "What Keeley has added to the minimal definition is that the group of conspirators is small.",
+          "corpus_chunk": 48443
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Similarly separating out the different ingredients of a conspiracy theory, Mandik (2007, p.206) states that conspiracy theories postulate “(1) explanations of (2) historical events in terms of (3) intentional states of multiple agents (the conspirators) who, among other things, (4) intended the historical events in question to occur and (5) keep their intentions and actions secret.” He sees these five conditions as necessary conditions for being a conspiracy theory, but he remains agnostic as to whether they are jointly sufficient.",
+          "corpus_chunk": 48444
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "He sees conspiracy theories as explanations that are opposed to the official explanation of an event at a given time.",
+          "corpus_chunk": 48444
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A number of criteria have been offered, sometimes implicitly, in the philosophical literature to evaluate whether we should believe in a particular conspiracy theory, and these are surveyed below.",
+          "corpus_chunk": 48450
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Finally, while instrumentalism still has epistemic aims, we can also identify a more radical pragmatist view which focuses more generally on the consequences, for example political and social consequences, of holding a particular (conspiracy) theory or belief.",
+          "corpus_chunk": 48451
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Third, there are a number of other criteria neither dealing with motives nor with scientific methodology.",
+          "corpus_chunk": 48452
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Criteria concerning Scientific Methodology Basham (2001, p.275) advocates skepticism of a conspiracy theory if it suffers from what he calls “internal faults,” among which he lists “problems with self-consistency, explanatory gaps, appeals to unlikely or obviously weak motives and other unrealistic psychological states, poor technological claims, and the theory’s own incongruencies with observed facts it grants (including failed predictions).” Räikkä (2009a, p.196f) also refers to a similar list of criteria.",
+          "corpus_chunk": 48453
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Note that the list of things mentioned by Basham as internal faults is rather diverse, and one can debate whether all of these faults should really be considered internal to the theory.",
+          "corpus_chunk": 48454
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Clarke (2002; 2007) sees conspiracy theories as degenerating research programs in the sense developed by Lakatos (1970).",
+          "corpus_chunk": 48455
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Going further, Clarke (2007) also views other conspiracy theories—the controlled demolition theory of 9/11, for instance—as only proto-theories, something that is not sufficiently worked out to count as a theoretical core of a degenerating or progressive research program.",
+          "corpus_chunk": 48456
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, as Lakatos’s notion of a research program comes with a hard core—the central characteristic claims not up for modification—and a protective belt—auxiliary hypotheses which can be changed—applying this notion also gives us tools to analyze a conspiracy theory in more detail.",
+          "corpus_chunk": 48457
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Dentith (2016) views conspiracy theories as inferences to the best explanation.",
+          "corpus_chunk": 48458
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "There is some disagreement between authors about whether conspiracy theories may be selective in their choice of evidence.",
+          "corpus_chunk": 48458
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Finally, Keeley (2003, p.106) considers whether lack of evidence for a conspiracy should count against a theory positing such a conspiracy.",
+          "corpus_chunk": 48459
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "While the previous criterion already discussed how conspiracy theories relate to data, there is a particular kind of data that receives special attention both by conspiracy theorists and in the philosophical literature about conspiracy theories.",
+          "corpus_chunk": 48461
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Dentith (2014, 129ff), following Coady (2006c), points out that any theory, official or unofficial, will have errant data.",
+          "corpus_chunk": 48462
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "When it comes to evaluating a specific conspiracy theory, the conclusion is that we should be looking at the errant data of both the conspiracy theory and alternative theories.",
+          "corpus_chunk": 48463
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Trust plays a role in two different ways when it comes to conspiracy theories.",
+          "corpus_chunk": 48466
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Conversely, people who reject a particular theory as “just” a conspiracy theory may also have a motive to mislead.",
+          "corpus_chunk": 48467
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Levy (2007) takes a radically socialized view of knowledge: Since knowledge can only be produced by a complex network of inquiry in which the relevant epistemic authorities are embedded, a conspiracy theory conflicting with the official story coming out of this network is “prima facie unwarranted” (p.182, italics in the original).",
+          "corpus_chunk": 48468
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, Dentith points out that the fact that a theory has authority in the sense of being official does not necessarily mean that it has epistemic authority, a point Levy also makes.",
+          "corpus_chunk": 48469
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "As mentioned when discussing individual trust, when we want to assess the credibility of experts, part of that credibility judgment will depend on the extent to which we trust the institution accrediting the expertise, assuming there is such an institution to which the expert is linked.",
+          "corpus_chunk": 48470
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If a conspiracy theory contradicts an official theory based on scientific expertise, this produces skepticism not only with regard to the institution of science, but may also produce skepticism with regard to other public institutions, for example the press, which accepts the official story instead of uncovering the conspiracy, the parliament and the government, which produce or propagate the conspiracy theory in the first place.",
+          "corpus_chunk": 48471
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In any case, our trust in our public institutions will influence the extent to which we hold a particular conspiracy theory to be likely.",
+          "corpus_chunk": 48471
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In any case, an individual who tries to assess a particular conspiracy theory should thus also consider to what extent they trust or distrust our public institutions.",
+          "corpus_chunk": 48473
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A global conspiracy theory like the Flat Earth theory tends to involve more pervasive institutional distrust, since it involves multiple institutions from various societal domains, than a local conspiracy theory like the Watergate conspiracy.",
+          "corpus_chunk": 48474
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The general claim here is that the more agents that are supposed to be involved in a conspiracy—its size—and the longer the conspiracy is supposed to be in existence—its duration—the less likely the conspiracy theory.",
+          "corpus_chunk": 48479
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Furthermore, Grimes (2016) has conducted simulations showing that large conspiracies with 1000 agents or more are unlikely to succeed due to problems with maintaining secrecy.",
+          "corpus_chunk": 48480
+        }
+      ],
+      "annotation": "Pauly’s secondary overview distinguishes neutral and loaded definitions and presents contested evaluation criteria concerning evidence, trust, scale, and secrecy."
+    }
+  ]
+}

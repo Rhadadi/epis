@@ -1,0 +1,357 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "why-reasonable-people-disagree",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do information, interpretation, action, permissiveness, and deep disagreement produce different kinds of disputes?"
+  ],
+  "sources": [
+    {
+      "key": "frances-matheson2026",
+      "used_for": [
+        "Explanation is not vindication",
+        "Uniqueness and permissiveness",
+        "A deeper dispute concerns standards",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "They disagree about two matters: whether it’s harder to get top grades in economics classes or philosophy classes, and whether they should move in together this summer.",
+          "corpus_chunk": 45746
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Some of them say surgery is the way to go, others say she should continue with medications and see what happens, but no one has a firm opinion: all the doctors agree that it’s a close call, all things considered.",
+          "corpus_chunk": 45747
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The point is this: when it comes to belief-disagreements, there are three broad options with respect to a specific claim: believe it, disbelieve it, and suspend judgment on it.",
+          "corpus_chunk": 45748
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We do it this way: if we disagree over whether to do action \\(X\\), we are disagreeing over the truth of the claim ‘We should do \\(X\\)’ (or ‘I should do \\(X\\)’ or ‘\\(X\\) is the best thing for us to do’; no, these aren’t all equivalent).",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "However, it is worth noting that agreement also has epistemological implications.",
+          "corpus_chunk": 45749
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "How must you respond to the realization in order for that response to be epistemically rational (or perhaps wise)?",
+          "corpus_chunk": 45751
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A child has belief \\(B\\) that Hell is a real place located in the center of the earth.",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "There are several ways to define the terms ‘superior’, ‘inferior’, and ‘peer’ (Elga, 2007; see section 5 below).",
+          "corpus_chunk": 45758
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "The better one’s epistemic position, the more likely one is to be correct.",
+          "corpus_chunk": 45759
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "If you are convinced that a certain person is clearly lacking compared to you on many Disagreement Factors when it comes to answering the question ‘Is \\(B\\) true?’ then you’ll probably say that you are more likely than she is to answer the question correctly provided you are not lacking compared to her on other Disagreement Factors.",
+          "corpus_chunk": 45761
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Notice that in this peer case you need not think that the two of you are equal on each Disagreement Factor.",
+          "corpus_chunk": 45762
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Suppose I also believe \\(P\\), that Taylor is my peer regarding \\(B\\) in this sense: I think we are equally likely to judge \\(B\\) correctly.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "After all, if someone asked me ‘Suppose you find out later today that Taylor sincerely thinks \\(B\\) is false.",
+          "corpus_chunk": 45763
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But the important point here is this: if I have the view that if it turns out that she really thinks \\(B\\) is false then the odds that I’m right and she’s wrong are 95%, then in some sense my view is that she’s not “fully” my peer on \\(B\\), as I think that when it comes to the possibility of disagreement I’m very confident that I will be in the right and she won’t be.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Danny has been right, and 20% of the time they have both been wrong.",
+          "corpus_chunk": 45765
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "That’s very different from the global warming case in which I thought that if I were to discover that Taylor thinks \\(B\\) is false, the probability that I’m right and she’s wrong are 19 times the probability that I’m wrong and she’s right (95% is 19 times 5%).",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "But in the math case Danny thinks Janice is his likelihood peer and his conditional peer on the relevant belief.",
+          "corpus_chunk": 45767
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "For instance, if I am discussing with a neighbor whether our property taxes will be increasing next year, and I discover that she disagrees with me, I may have very little idea how we measure up on the Disagreement Factors.",
+          "corpus_chunk": 45769
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "A related question is whether there is any important difference between cases where you are justified in believing your interlocutor is your peer and cases where you may be justified in believing that your interlocutor is not your peer but lack any reason to think that you, or your interlocutor, are in the better epistemic position.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "So for any two people it is quite unlikely that they are ‘weight peers’.",
+          "corpus_chunk": 45770
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "This is what Goldman terms the ‘novice/expert problem’ (Goldman 2001).",
+          "corpus_chunk": 45771
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Evidence of the experts’ interests and biases vis-a-vis the question at issue.",
+          "corpus_chunk": 45772
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Defeat has been rejected by defenders of the Steadfast View in a number of ways.",
+          "corpus_chunk": 45787
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Given our limitations, peers can never fully share their evidence.",
+          "corpus_chunk": 45787
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Defenders of the Equal Weight View have noted that these considerations cut both ways (see Feldman 2006).",
+          "corpus_chunk": 45788
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "He’s out there a fair amount.) I believe that the dean is standing on the quad.",
+          "corpus_chunk": 45789
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Plantinga 2000a has argued that there is a sense of justification that is simply doing the best that one can.",
+          "corpus_chunk": 45790
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Any reaction to the disagreement will contain some epistemic risk, so I might as well go with how things seem to me.",
+          "corpus_chunk": 45791
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "In particular, they give you reason to doubt that the truth about the disputed belief is as it seems to you.",
+          "corpus_chunk": 45793
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "A parallel account appears to apply to cases of peer disagreement.",
+          "corpus_chunk": 45793
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Kelly 2005 argues that while 3 is evidence for 2 it is not evidence for 1.",
+          "corpus_chunk": 45794
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Second, since people form beliefs on the basis of a body of evidence, to count their belief as yet another piece of evidence would amount to double-counting that original body of evidence.",
+          "corpus_chunk": 45796
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Alternatively, citing one’s own belief as evidence may exhibit hubris in a way that many would want to avoid.",
+          "corpus_chunk": 45797
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "Finally, Defeat has been denied by appealing to epistemic permissiveness.",
+          "corpus_chunk": 45797
+        },
+        {
+          "locator": "§ 5.2.1",
+          "basis": "full text",
+          "excerpt": "If evidence is permissive, then you may both have justified responses to the shared evidence even though you disagree.",
+          "corpus_chunk": 45799
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "One potential special case of disagreement concerns deep disagreements.",
+          "corpus_chunk": 45834
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "One central question here is whether deep disagreements are rationally resolvable.",
+          "corpus_chunk": 45834
+        },
+        {
+          "locator": "§ 5.5.4",
+          "basis": "full text",
+          "excerpt": "Another related issue is whether epistemic peers can be engaged in a deep disagreement (see Kappel 2021).",
+          "corpus_chunk": 45835
+        }
+      ],
+      "annotation": "Provides the secondary account of Goldman, Christensen, Kelly, Lackey, and competing responses to disagreement, distinguishing peerhood, updates, final beliefs, and action."
+    },
+    {
+      "key": "anderson2024",
+      "used_for": [
+        "Explanation is not vindication",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Feminist epistemology conceives of knowers as situated in particular relations to what is known and to other knowers.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People often represent objects in relation to their emotions, attitudes and interests, which differ from how others represent these objects.",
+          "corpus_chunk": 3418
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Such differences may lead a patient to interpret his symptoms as signs of a heart attack, while his doctor diagnoses heartburn.",
+          "corpus_chunk": 3419
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They affect knowers’ assessment of which claims are significant or important.",
+          "corpus_chunk": 3420
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In feminist theory, “gender” refers to systems of meanings, social identities, roles, norms, and associated behaviors, traits and virtues, ascribed or prescribed to individuals on the basis of their real or imagined sexual characteristics (Haslanger 2000).",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Finally, “gender symbolism” comprises metaphorical ascriptions of gendered ideas to animals and inanimate objects.",
+          "corpus_chunk": 3422
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "They also cause men’s and women’s experiences of gendered behaviors that both can perform to differ—in fluidity, self-consciousness, confidence, awkwardness, shame, and so forth.",
+          "corpus_chunk": 3424
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This entails that women be able to recognize their lives in feminist accounts of women’s predicament.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "For instance, they may influence how heterosexual men classify women as, e.g., differently eligible for sexual intercourse with them.",
+          "corpus_chunk": 3425
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do mainstream philosophical conceptions of objectivity, knowledge, and reason reflect an androcentric perspective (Bordo 1987; Code 1991; Flax 1983; Rooney 1991)?",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Male and female ethnographers may be admitted to different social spaces, and have different effects on their informants.",
+          "corpus_chunk": 3427
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Do actually or symbolically “feminine” skills aid the acquisition of scientific knowledge (Keller 1983, 1985a; Rose 1987; Ruetsche 2004)?",
+          "corpus_chunk": 3429
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "These phenomena raise epistemic questions: does the quest for “masculine” prestige by using “masculine” methods distort practices of knowledge acquisition (Addelson 1983; Moulton, 1983)?",
+          "corpus_chunk": 3430
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Are there epistemic obstacles to legal institutions recognizing rape and sexual harassment, insofar as they confine their thinking within a “masculine” perspective (MacKinnon 1989)?",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Each may also learn how to exercise imaginative projection more effectively, and to take up the perspective of another gender.",
+          "corpus_chunk": 3431
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Mainstream epistemology takes as paradigms of knowledge simple propositional knowledge about matters in principle equally accessible to anyone with basic cognitive and sensory apparatus: “2+2=4”; “grass is green”; “water quenches thirst.” Feminist epistemology does not claim that such knowledge is gendered.",
+          "corpus_chunk": 3433
+        }
+      ],
+      "annotation": "Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority."
+    }
+  ]
+}

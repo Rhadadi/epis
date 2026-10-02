@@ -1,0 +1,619 @@
+{
+  "chapter": "12-social-epistemology",
+  "section": "epistemic-injustice",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which mechanisms distinguish reasonable doubt from testimonial, hermeneutical, contributory, and institutional injustice, and what remedies fit each?"
+  ],
+  "sources": [
+    {
+      "key": "epistemic-injustice-iep",
+      "used_for": [
+        "Correction need not mean automatic belief",
+        "What makes the wrong epistemic?",
+        "Identity power can operate without an explicit declaration",
+        "Testimonial injustice and relevant doubt",
+        "A person may reject a stereotype and still act through it",
+        "The harm is more than a missed fact",
+        "Hermeneutical injustice concerns the tools of understanding",
+        "Understanding oneself and being understood are different",
+        "Can excess credibility also wrong someone?",
+        "A fair inquiry can still reach an unwelcome conclusion",
+        "Individual virtues and institutional repair",
+        "Avoid turning a diagnosis into a verdict about truth",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The introduction of this article is designed to highlight the existence of a distinctive type of injustice where a wrong is done to someone specifically in their capacity as a knower (Fricker 2007, 1).",
+          "corpus_chunk": 48546
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Of special interest is the specific type of social power called ‘identity power’ that is dependent on a shared understanding of social identities during the use of social power.",
+          "corpus_chunk": 48547
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The identity prejudice that leads to testimonial injustice is enabled through the use of the social power described as identity power.",
+          "corpus_chunk": 48547
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As we will see, experiencing this harm can result in serious negative consequences for one’s self-development.",
+          "corpus_chunk": 48548
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Consider the case of post-partum depression prior to its recognition as a serious medical condition.",
+          "corpus_chunk": 48550
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In both the cases of testimonial and interpretive injustice, identity prejudice then serves as the main cause of injustice.",
+          "corpus_chunk": 48550
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We have been introduced to the idea that social power as a socially situated capacity to control other’s actions further results in the use of identity power as contributing to the central case of testimonial injustice involving identity prejudice.",
+          "corpus_chunk": 48552
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Greenleaf interprets Marge’s suspicion as a case of ‘female intuition’, which is emotional and not based on facts.",
+          "corpus_chunk": 48552
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "A further contrast can be drawn in terms of agential and structural power.",
+          "corpus_chunk": 48553
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The key point here is that all relations of power, whether agential or structural, depend on the specific social alignments of people.",
+          "corpus_chunk": 48554
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "With the example of nonvoting groups, we see that a complex network of institutions, laws and their implementation can result in some groups engaging in forms of nonaction that undermine their basic rights.",
+          "corpus_chunk": 48556
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We now need to consider the more specific type of social power that Fricker calls ‘identity power’ (2007, 14-17).",
+          "corpus_chunk": 48557
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Identity power can further operate with other forms of social power, such as material forms of social power.",
+          "corpus_chunk": 48558
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "This use of stereotypes may be acceptable or not depending on the actual stereotype used.",
+          "corpus_chunk": 48558
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Fricker argues that the central cases of testimonial injustice involve credibility deficit, precisely because it is here that one is most clearly wronged in their capacity as a knower.",
+          "corpus_chunk": 48560
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In sum, social power in the form of identity power plays a fundamental role in undermining the credibility of speakers.",
+          "corpus_chunk": 48560
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "We saw that the central cases of testimonial injustice turn on the way identity power is used to prejudice the judgement of someone’s credibility as an informant.",
+          "corpus_chunk": 48562
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Stereotypes are defined as “widely held associations between a given social group and one or more attributes” (2007, 30).",
+          "corpus_chunk": 48562
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "It is then, as Fricker further argues, both inevitable and desirable that hearers use generalizations based on reliable stereotypes.",
+          "corpus_chunk": 48563
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In his local environment, he faces no counter evidence to this view, and so he is not proceeding irrationally.",
+          "corpus_chunk": 48564
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "A negative identity prejudicial stereotype that is at work in such cases of systematic testimonial injustice is then defined as “A widely held disparaging association between a social group and one or more attributes, where this association embodies a generalization that displays some (typically, epistemically culpable) resistance to counter-evidence owing to an ethically bad affective investment” (2007, 35).",
+          "corpus_chunk": 48566
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In such discussions, speakers and hearers perceive others as trustworthy, in being both sincere and competent concerning what is said.",
+          "corpus_chunk": 48566
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This non-doxastic mediation is further clarified with the work of Walter Lippmann who treats a stereotype as a social image creating an association between a social group and certain characteristics resulting in generalizations about this group (1965; Fricker 2007).",
+          "corpus_chunk": 48568
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "As a result, they are very hard to detect and change, requiring a special kind of self-awareness or self-consciousness to see this kind of prejudice in one’s thinking and to take steps to correct it.",
+          "corpus_chunk": 48569
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The opposite may also be possible: our prejudicial beliefs can be corrected by an unprejudiced social perception.",
+          "corpus_chunk": 48570
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "We have seen how prejudice can corrupt our credibility judgements leading to testimonial injustice.",
+          "corpus_chunk": 48571
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Being treated as a purveyor of knowledge is an essential human value, so that when it is violated, one suffers an intrinsic injustice.",
+          "corpus_chunk": 48571
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Secondary harms occur as further consequences of this primary harm and can be both practical and epistemic.",
+          "corpus_chunk": 48572
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Identity prejudice in the form of testimonial injustice can be further seen as a general attack on someone’s epistemic authority (2007, 48).",
+          "corpus_chunk": 48574
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Such a stance requires an epistemic confidence that testimonial injustice could weaken.",
+          "corpus_chunk": 48575
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "Here we have the primary harm of testimonial injustice, where he unjustly downplays Marge’s remarks.",
+          "corpus_chunk": 48575
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "We should further note this example highlights the way a hearer can clearly fail to correct the identity prejudice at work in their credibility assessments (2007, 89).",
+          "corpus_chunk": 48577
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "We have been reviewing the serious harms that result from testimonial injustice, where the most serious involve the devaluing of someone’s capability as a sharer of knowledge.",
+          "corpus_chunk": 48578
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "This section provides an overview of this core idea and its importance for overcoming the negative harms seen with testimonial injustice.",
+          "corpus_chunk": 48578
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Here we can revisit the example of the feminist who continues her dislike of female political candidates (2007, 83).",
+          "corpus_chunk": 48579
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The existence of identity prejudice presents a danger to the ongoing development of our testimonial sensibility.",
+          "corpus_chunk": 48580
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Our question then concerns what type of critical awareness is needed to avoid testimonial injustice (2007, 90)?",
+          "corpus_chunk": 48582
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "This suggests that testimonial responsibility requires a distinctly reflexive critical social awareness (2007, 91).",
+          "corpus_chunk": 48582
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "While this active reflection is the default approach, it can also be accomplished through familiarity.",
+          "corpus_chunk": 48583
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "We now turn to a discussion of the other type of epistemic injustice described by Fricker, ‘hermeneutical injustice’, which is related in important ways to testimonial injustice, but is distinct and arguably more fundamental.",
+          "corpus_chunk": 48585
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "This required them to develop resources to understand their experience that are largely implicit, or even absent from, the interpretive practices of their time.",
+          "corpus_chunk": 48586
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Fricker locates such problematic experience within the ‘credibility economy’, which concerns the distribution of epistemic resources across a domain.",
+          "corpus_chunk": 48587
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "They represent our shared tools of social interpretation and communication (see McKinnon 2016, 441).",
+          "corpus_chunk": 48587
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Moreover, this marginalization could be structural, or agent centered (consider the example of ageism among employers (2007, 154).",
+          "corpus_chunk": 48588
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "This changed with the emergence of consciousness raising movements that enabled a better understanding of such experiences and their falling under the category of harassment.",
+          "corpus_chunk": 48590
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "In addition, hermeneutical injustice may be further worsened through the testimonial injustice that can follow in its wake.",
+          "corpus_chunk": 48590
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If this is based on an identity prejudice, they are then doubly wronged (2007, 159).",
+          "corpus_chunk": 48591
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "We have been witnessing the fact that in cases of hermeneutical injustice or what will also be referred to as ‘interpretive injustice’, there exists an asymmetrical cognitive disadvantage, where a collective hermeneutical gap impacts members of different groups in different ways.",
+          "corpus_chunk": 48593
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "We can begin by considering the analogy of a welfare state with free healthcare but no dental care health plan (2007, 161-162).",
+          "corpus_chunk": 48593
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "The primary harm common to both involves a prejudicial exclusion from participation in the spread of knowledge.",
+          "corpus_chunk": 48594
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "In the case of hermeneutical injustice, we must counteract a gap in the social environment that threatens not simply the reliability of what is said, but its very intelligibility.",
+          "corpus_chunk": 48596
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This critical awareness or sensitivity, that is, the reflexive awareness on the part of a hearer, highlights how they must be aware of the relationship between their social identity and that of the speaker and its influence on the intelligibility of what is being said (2007, 169).",
+          "corpus_chunk": 48597
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "In other words, in hermeneutical contexts, the responsible hearer makes a credibility judgment that is an assessment of the degree to which what is said ‘makes good sense’ that is, is a truthful interpretation of what is said: “The guiding ideal is that the degree of credibility is adjusted upwards to compensate for the cognitive and expressive handicap imposed on the hermeneutically marginalized speaker by the non-inclusive hermeneutical climate, by structural identity prejudice” (2007, 170).",
+          "corpus_chunk": 48598
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "This might obviously include engaging in a more extended, engaged discussion and a commitment to the kind of ‘epistemic humility’ toward interpretation needed to create this more inclusive setting.",
+          "corpus_chunk": 48599
+        },
+        {
+          "locator": "§ 7",
+          "basis": "full text",
+          "excerpt": "The aim or end of the virtue is to neutralize the impact of the structural identity prejudice on one’s credibility judgment.",
+          "corpus_chunk": 48599
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "There have been many further extensions of these ideas, both in terms of additional clarifications of the nature of epistemic injustice and its further application in the fields of education, healthcare, law, science, religion and elsewhere.",
+          "corpus_chunk": 48601
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The idea that Asians are all good at mathematics, or all African Americans good at sports are two familiar examples.",
+          "corpus_chunk": 48601
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Related ideas are discussed by Anderson, who argues that the existence of structural, institutional forms of epistemic injustice requires greater emphasis on the need for structural remedies (2012).",
+          "corpus_chunk": 48603
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "If different groups engaged in inquiry are segregated based on their social identities, this may then lead to systematic unjust group inequalities, where, for example, an advantaged group disregards the testimony of a less advantaged group.",
+          "corpus_chunk": 48604
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Members of the advantaged group will be unable to make sense of the perspective of those in the disadvantaged group.",
+          "corpus_chunk": 48605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "They may nevertheless suffer from hermeneutical injustice in that the more advantaged are unable to understand them.",
+          "corpus_chunk": 48605
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "The idea that marginalized groups suffering from hermeneutical injustice can still develop an understanding of their own experience is further explored by Goetze (2018).",
+          "corpus_chunk": 48607
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "On the basis of this disjunctive characterization of the primary harm found in hermeneutical injustice, Goetze is able to offer a further taxonomy of the various species of such injustice in terms of where the gap in our collective hermeneutical resources appears (for details see 2018, 80-85).",
+          "corpus_chunk": 48608
+        }
+      ],
+      "annotation": "Sinclair’s free secondary overview supplies Fricker’s central distinctions, literary examples, harms, corrective virtues, and structural and interpretive challenges; the original contemporary books are not represented as read."
+    },
+    {
+      "key": "grasswick2018",
+      "used_for": [
+        "Correction need not mean automatic belief",
+        "What makes the wrong epistemic?",
+        "The harm is more than a missed fact",
+        "Hermeneutical injustice concerns the tools of understanding",
+        "Understanding oneself and being understood are different",
+        "Silencing has more than one form",
+        "Can excess credibility also wrong someone?",
+        "Individual virtues and institutional repair",
+        "Connected questions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "While testimony has emerged as a central topic in social epistemology generally, feminists have been major contributors to discussions of how social power plays out in the economies of credibility.",
+          "corpus_chunk": 45972
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Fricker considers our role as testifiers a core dimension of our epistemic lives, so to suffer a credibility deficit impedes one’s capacity as an epistemic agent, making it both an ethical and an epistemic wrong when one suffers a deficit due to an identity prejudice.",
+          "corpus_chunk": 45973
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In a similar vein, Nancy Daukas argues for an explicitly social form of virtue epistemology that takes as its core epistemic virtue “epistemic trustworthiness” (2006, 2011).",
+          "corpus_chunk": 45974
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, Elizabeth Anderson argues for the need to develop large-scale structural remedies such as ensuring broadly inclusive epistemic institutions in order to fully correct for the systemic biases that result in testimonial injustices (Anderson 2012).",
+          "corpus_chunk": 45975
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Testimonial smothering occurs when a speaker recognizes her audience as unwilling or unable to give the appropriate uptake to her testimony, and in response, limits and shapes her testimony in order to “insure that the testimony contains only content for which one’s audience demonstrates testimonial competence” (2011, 244).",
+          "corpus_chunk": 45976
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Hermeneutical injustice, involves a “structural prejudice in the economy of collective hermeneutical resources” (2007, 1).",
+          "corpus_chunk": 45976
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, some have argued that her analysis misrepresents hermeneutical resources as collective, failing to acknowledge the pluralism of interpretative communities and practices through which marginalized groups may have access to alternative interpretations of their experiences (Mason 2011; Medina 2012).",
+          "corpus_chunk": 45978
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Relatedly, such cases can lead to a kind of epistemic exploitation, where the dominant assume it is the responsibility of the marginalized to perform the labor necessary to educate them (the dominant) in the experiences of the oppressed (Berenstain 2016).",
+          "corpus_chunk": 45979
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Discussions of epistemic injustice offer an excellent example of work focusing on the challenges of knowing in contexts of oppression, analyzing how many of the wrongs that occur within such contexts have both epistemic and ethical dimensions.",
+          "corpus_chunk": 45980
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For example, Dotson frames many of these issues in terms of “epistemic oppression” that involves “persistent epistemic exclusion” (Dotson 2014), and Medina develops an “epistemology of resistance” in response to the epistemic dimensions of oppression (Medina 2013).",
+          "corpus_chunk": 45981
+        }
+      ],
+      "annotation": "Provides secondary accounts of strong objectivity, Longino’s critical norms, Fricker, Dotson, contributory injustice, and epistemic exploitation."
+    },
+    {
+      "key": "oconnor-etal2026",
+      "used_for": [
+        "Testimonial injustice and relevant doubt",
+        "Silencing has more than one form",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Influenced by long-standing work in feminism and critical race theory, social epistemology has attempted to theorize about various types of dysfunction in the social practices through which we aim to generate, communicate, assess, and preserve knowledge.",
+          "corpus_chunk": 4428
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "stimonial” injustice obtains when (on the basis of identity-based prejudice) an audience gives less credence to a speaker than she deserves. (Fricker illustrated this sort of injustice with Tom Robinson, a character in To Kill a Mockingbird whose testimony, as a Black man on trial for raping a white woman, was prejudicially rejected by the all-white jury.) “Hermeneutical” injustice obtains when, owing to social forces which reflect the interests of certain social groups, a subject lacks the concepts for understanding and/or communicating socially significant aspects of her own experience. (Fricker’s example is the experience of women before",
+          "corpus_chunk": 4429
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Fricker’s (2007) reflections on epistemic injustice have inspired a generation of social philosophers to pursue questions in this vicinity.",
+          "corpus_chunk": 4429
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "The guiding hypothesis, explicitly formulated by Mills (2007) in connection with his notion of “white ignorance,” is that ignorance in contemporary society patterns in ways that reflect the interests of dominant social groups.",
+          "corpus_chunk": 4431
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "For this reason, the acquisition and handling of evidence, long a topic in feminist and virtue epistemology, has recently begun to attract the attention of social epistemologists as well.",
+          "corpus_chunk": 4432
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "A general framework for understanding various dimensions of epistemic oppression can be found in Dotson (2014).",
+          "corpus_chunk": 4432
+        }
+      ],
+      "annotation": "Surveys testimony, group belief, aggregation, networks, institutions, misleading content, and epistemic dysfunctions; empirical model results are distinguished from general prescriptions."
+    },
+    {
+      "key": "anderson2024",
+      "used_for": [
+        "Understanding oneself and being understood are different",
+        "Can excess credibility also wrong someone?",
+        "Connected questions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Naturalized epistemology considers the effects of our pervasive epistemic interdependence (Nelson 1990).",
+          "corpus_chunk": 3514
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Gendered ideas about epistemic authority can distort our general models of knowledge.",
+          "corpus_chunk": 3515
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Code argues that knowledge of other persons rather than of propositions should be taken as a primary model of knowledge.",
+          "corpus_chunk": 3515
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Recent epistemology’s focus on the indispensability of testimony to inquiry has led feminist epistemologists to take Code’s ideas in a different direction, by investigating the dependence of propositional knowledge on knowledge of persons.",
+          "corpus_chunk": 3517
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Other feminist epistemologists focus on the impact of gender and other hierarchical relations on attributions of epistemic authority.",
+          "corpus_chunk": 3518
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Dotson (2011) distinguishes two kinds of testimonial injustice, silencing and smothering.",
+          "corpus_chunk": 3519
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Davis (2021) distinguishes “identity-based” from “content-based” testimonial injustice, depending on whether a speaker’s testimony is denigrated on the basis of their own social identity or on prejudice against social groups associated with the content of their speech (e.g., dismissing a doctor’s testimony about fibromyalgia based on the assumption that the women who suffer from it are merely seeking attention).",
+          "corpus_chunk": 3520
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "An example of hermeneutical injustice is the dismissal of women as humorless or hypersensitive for getting upset at what was seen as mere cloddish courtship or joking, before the concept of sexual harassment was available to make sense of their experiences.",
+          "corpus_chunk": 3521
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Pohlhaus (2011) argues that such ignorance can be willful, leading to contributory injustice, an intentional maintenance of inadequate hermeneutical resources that harmfully obstructs the uptake of resources the oppressed have developed to make sense of their experience (Dotson 2012).",
+          "corpus_chunk": 3522
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Since accurate information on such matters is or was available, explanation is needed for why it is forgotten.",
+          "corpus_chunk": 3522
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Jones (2002) proposes rules for checking such biases when confronted with surprising testimony.",
+          "corpus_chunk": 3523
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "A key theme of feminist virtue epistemology is its aspiration to cultivate dispositions that enable inquirers to produce knowledge that can overcome oppression (Daukas 2018).",
+          "corpus_chunk": 3525
+        }
+      ],
+      "annotation": "Explains situated access, the grounds and limits of standpoint claims, and the social distribution of epistemic authority."
+    }
+  ]
+}
