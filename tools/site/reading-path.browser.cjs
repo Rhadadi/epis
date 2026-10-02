@@ -18,6 +18,7 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
       await page.getByRole('button', { name: 'Continue →', exact: true }).click();
       await page.getByRole('button', { name: 'Continue →', exact: true }).click();
       await page.getByRole('button', { name: 'Skip · include foundations' }).click();
+      await page.getByRole('button', { name: 'Skip examples · keep foundations' }).click();
       await page.locator('input[name="minutes"][value="30"]').check();
       await page.getByRole('button', { name: 'Find my reading path →' }).click();
     }
@@ -45,13 +46,18 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
     await page.getByRole('button', { name: 'Forget this path' }).click();
     assert.equal(await page.locator('#rp-goal').inputValue(), '');
 
-    // A focus without prerequisites omits the familiarity screen.
+    // Optional education is available even when no competence question is needed.
     await page.getByRole('button', { name: 'Continue →', exact: true }).click();
     await page.locator('input[name="topic"][value="science"]').check();
     await page.getByRole('button', { name: 'Continue →', exact: true }).click();
     await page.getByRole('button', { name: 'Continue →', exact: true }).click();
+    assert.equal(await page.locator('#reading-path h2').innerText(), 'Your education and experience');
+    assert.equal(await page.locator('input[name="known"]').count(), 0);
+    await page.getByRole('button', { name: 'Skip · include foundations' }).click();
+    await page.getByRole('button', { name: 'Skip examples · keep foundations' }).click();
     assert.equal(await page.locator('#reading-path h2').innerText(), 'How much time for your first path?');
-    assert.equal(await page.locator('.rp-step').textContent(), 'Question 4 of 4');
+    assert.equal(await page.locator('.rp-step').textContent(), 'Question 5 of 5');
+    await page.getByRole('button', { name: 'Back', exact: true }).click();
     await page.getByRole('button', { name: 'Back', exact: true }).click();
     await page.getByRole('button', { name: 'Back', exact: true }).click();
     await page.getByRole('button', { name: 'Back', exact: true }).click();
@@ -62,7 +68,7 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
     await page.route('https://interview.example/reading-path', async route => {
       calls++;
       const body = route.request().postDataJSON();
-      assert.deepEqual(Object.keys(body).sort(), ['goal', 'mode']);
+      assert.deepEqual(Object.keys(body).sort(), ['goal', 'language', 'mode']);
       if (fail) return route.fulfill({ status: 503, body: '{}' });
       return route.fulfill({ contentType: 'application/json', body: JSON.stringify({ topic: invalid ? 'invented' : 'probability', question: 'Is it updating your confidence or interpreting a statistical result that matters here?' }) });
     });
@@ -108,5 +114,14 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
     await offlinePage.getByRole('button', { name: 'Continue →', exact: true }).click();
     assert.equal(await offlinePage.locator('input[name="topic"][value="probability"]').isChecked(), true);
     console.log('PASS: questionnaire loads and adapts offline after being visited.');
+    await offlineContext.setOffline(false);
+    await offlinePage.goto(origin + '/fa/reading-path/');
+    await offlinePage.locator('#reading-path h2').waitFor();
+    await offlinePage.waitForFunction(async () => { const cache = await caches.open('epis-v1'); return !!(await cache.match(location.origin + '/assets/data/reading-path-fa.json')); });
+    await offlineContext.setOffline(true);
+    await offlinePage.reload();
+    await offlinePage.getByRole('heading', { name: 'کدام موضوع با پرسش شما مرتبط است؟' }).waitFor();
+    assert.equal(await offlinePage.locator('html').getAttribute('dir'), 'rtl');
+    console.log('PASS: Persian questionnaire loads offline with its saved interview state.');
   } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

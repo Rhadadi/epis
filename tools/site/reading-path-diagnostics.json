@@ -1,0 +1,711 @@
+{
+  "priorities": {
+    "arguments/evaluate": [
+      "logic",
+      "evidence",
+      "knowledge"
+    ],
+    "arguments/discuss": [
+      "definitions",
+      "testimony",
+      "logic"
+    ],
+    "probability/update": [
+      "probability",
+      "logic",
+      "evidence"
+    ],
+    "probability/studies": [
+      "evidence",
+      "probability",
+      "testimony"
+    ],
+    "science/trust": [
+      "evidence",
+      "testimony",
+      "probability"
+    ],
+    "science/method": [
+      "logic",
+      "evidence",
+      "knowledge"
+    ],
+    "news/sources": [
+      "testimony",
+      "evidence",
+      "logic"
+    ],
+    "news/ai": [
+      "testimony",
+      "knowledge",
+      "evidence"
+    ],
+    "knowledge/know": [
+      "vocabulary",
+      "knowledge",
+      "logic"
+    ],
+    "knowledge/doubt": [
+      "knowledge",
+      "logic",
+      "vocabulary"
+    ],
+    "identity/heard": [
+      "testimony",
+      "definitions",
+      "knowledge"
+    ],
+    "identity/concepts": [
+      "definitions",
+      "testimony",
+      "logic"
+    ],
+    "belief/responsibility": [
+      "vocabulary",
+      "evidence",
+      "knowledge"
+    ],
+    "belief/values": [
+      "definitions",
+      "vocabulary",
+      "evidence"
+    ],
+    "habits/bias": [
+      "evidence",
+      "testimony",
+      "probability"
+    ],
+    "habits/confidence": [
+      "probability",
+      "knowledge",
+      "evidence"
+    ],
+    "history/overview": [
+      "vocabulary",
+      "logic",
+      "knowledge"
+    ],
+    "history/traditions": [
+      "vocabulary",
+      "knowledge",
+      "testimony"
+    ]
+  },
+  "entryByStudy": {
+    "philosophy/logic": "logic-birds",
+    "quantitative/probability": "probability-forecast",
+    "research/evidence": "evidence-reviews",
+    "social/definitions": "definitions-safe"
+  },
+  "questions": [
+    {
+      "id": "logic-rain",
+      "dimension": "logic",
+      "level": 1,
+      "title": "The wet pavement",
+      "prompt": "If it rains, the pavement gets wet. You see wet pavement. What can you conclude?",
+      "choices": [
+        "It must have rained.",
+        "It may have rained, but something else could have made it wet.",
+        "It cannot have rained."
+      ],
+      "correct": 1,
+      "explanation": "Rain would explain wet pavement, but a sprinkler could explain it too. Seeing the result does not establish which cause produced it.",
+      "review": {
+        "id": "03/validity-and-soundness",
+        "why": "Check which conclusions follow from the rule, including other possible causes of the observed result."
+      },
+      "fa": {
+        "title": "پیاده‌روی خیس",
+        "prompt": "اگر باران ببارد، پیاده‌رو خیس می‌شود. پیاده‌رو را خیس می‌بینید. چه نتیجه‌ای می‌توانید بگیرید؟",
+        "choices": [
+          "حتماً باران باریده است.",
+          "ممکن است باران باریده باشد، اما چیز دیگری هم می‌توانسته آن را خیس کند.",
+          "امکان ندارد باران باریده باشد."
+        ],
+        "explanation": "باران می‌تواند خیسی را توضیح دهد، اما آب‌پاش هم می‌تواند. دیدن نتیجه به‌تنهایی علت آن را مشخص نمی‌کند.",
+        "reviewWhy": "بررسی کنید چه نتیجه‌هایی از قانون لازم می‌آیند؛ علت‌های ممکن دیگر برای نتیجهٔ مشاهده‌شده را هم در نظر بگیرید."
+      }
+    },
+    {
+      "id": "logic-birds",
+      "dimension": "logic",
+      "level": 2,
+      "title": "An argument about penguins",
+      "prompt": "Someone says: ‘All birds fly. Penguins are birds. So penguins fly.’ Penguins do not fly. Where is the problem in this argument?",
+      "choices": [
+        "The last claim does not follow from the first two.",
+        "The ending follows from those two claims, but “all birds fly” is false.",
+        "A wrong ending means both starting claims must be wrong."
+      ],
+      "correct": 1,
+      "explanation": "If both premises were true, the conclusion would follow. The first premise is false. This separates a valid pattern from an argument with true premises.",
+      "review": {
+        "id": "03/validity-and-soundness",
+        "why": "Separate the structure of an argument from the truth of its premises."
+      },
+      "fa": {
+        "title": "استدلالی دربارهٔ پنگوئن‌ها",
+        "prompt": "کسی می‌گوید: «همهٔ پرندگان پرواز می‌کنند. پنگوئن‌ها پرنده‌اند. پس پنگوئن‌ها پرواز می‌کنند.» پنگوئن پرواز نمی‌کند. مشکل استدلال کجاست؟",
+        "choices": [
+          "ادعای آخر از دو ادعای اول نتیجه نمی‌شود.",
+          "ادعای آخر از آن دو ادعا نتیجه می‌شود، اما «همهٔ پرندگان پرواز می‌کنند» نادرست است.",
+          "نتیجهٔ نادرست یعنی هر دو ادعای آغازین باید نادرست باشند."
+        ],
+        "explanation": "اگر هر دو مقدمه درست بودند، نتیجه لازم می‌آمد. مقدمهٔ اول نادرست است. این تفاوتِ صورت معتبر و مقدمات صادق است.",
+        "reviewWhy": "ساختار استدلال را از درستی مقدماتش جدا کنید."
+      }
+    },
+    {
+      "id": "logic-cards",
+      "dimension": "logic",
+      "level": 3,
+      "title": "Which cards would you check?",
+      "prompt": "Each card has a shape on one side and a colour on the other. The rule is: every card with a circle has red on its reverse. Four cards show circle, square, red and blue. What is the smallest set you must turn over to look for a broken rule?",
+      "choices": [
+        "Circle and red.",
+        "Circle and blue.",
+        "Square and red."
+      ],
+      "correct": 1,
+      "explanation": "A circle with a blue reverse would break the rule. So would a blue card with a circle on its reverse. A red card may have any shape; the rule only requires circles to have red reverses.",
+      "review": {
+        "id": "03/valid-argument-forms",
+        "why": "Practice testing a rule by its possible counterexamples, including the case with a missing consequence."
+      },
+      "fa": {
+        "title": "کدام کارت‌ها را بررسی می‌کنید؟",
+        "prompt": "هر کارت یک شکل در یک رو و یک رنگ در روی دیگر دارد. قانون: پشت هر کارتِ دارای دایره، قرمز است. چهار کارت دایره، مربع، قرمز و آبی نشان می‌دهند. برای پیدا کردن نقض قانون، کمترین مجموعه‌ای که باید برگردانید کدام است؟",
+        "choices": [
+          "دایره و قرمز.",
+          "دایره و آبی.",
+          "مربع و قرمز."
+        ],
+        "explanation": "دایره با پشت آبی قانون را نقض می‌کند؛ کارت آبی با دایره در پشتش نیز همین‌طور. کارت قرمز می‌تواند هر شکلی داشته باشد؛ قانون فقط دربارهٔ پشت دایره‌هاست.",
+        "reviewWhy": "آزمودن قانون با مثال نقض را تمرین کنید، از جمله حالتی که پیامد لازم وجود ندارد."
+      }
+    },
+    {
+      "id": "probability-coin",
+      "dimension": "probability",
+      "level": 1,
+      "title": "Five heads in a row",
+      "prompt": "A fair coin is tossed independently each time. It has landed heads five times. What is the chance of tails on the next toss?",
+      "choices": [
+        "More than half: tails is overdue.",
+        "Half: the previous tosses do not change this one.",
+        "Less than half: heads is on a streak."
+      ],
+      "correct": 1,
+      "explanation": "With a fair coin and independent tosses, the next toss still has a one-in-two chance of tails. The question states those assumptions; without them, we might investigate the coin.",
+      "review": {
+        "id": "09/common-errors-in-probabilistic-reasoning",
+        "why": "Review how independent events differ from the feeling that a run must balance itself out."
+      },
+      "fa": {
+        "title": "پنج بار شیر پشت سر هم",
+        "prompt": "یک سکهٔ سالم هر بار مستقل پرتاب می‌شود. پنج بار شیر آمده است. احتمال خط در پرتاب بعدی چقدر است؟",
+        "choices": [
+          "بیش از نصف؛ دیگر نوبت خط است.",
+          "نصف؛ پرتاب‌های قبلی این پرتاب را تغییر نمی‌دهند.",
+          "کمتر از نصف؛ شیر در یک روند افتاده است."
+        ],
+        "explanation": "با سکهٔ سالم و پرتاب‌های مستقل، احتمال خط در پرتاب بعدی همچنان یک از دو است. این فرض‌ها در پرسش آمده‌اند؛ بدون آن‌ها ممکن است خود سکه را بررسی کنیم.",
+        "reviewWhy": "تفاوت رویدادهای مستقل را با احساسِ اینکه یک روند باید خودش را جبران کند بررسی کنید."
+      }
+    },
+    {
+      "id": "probability-forecast",
+      "dimension": "probability",
+      "level": 2,
+      "title": "A forty-percent forecast",
+      "prompt": "The forecast gives a 40% chance of rain today. It rains. Does this one outcome show that the forecast was badly judged?",
+      "choices": [
+        "Yes: it should have said 100%.",
+        "No: a 40% event can happen; judging these forecasts needs a record of comparable forecasts and outcomes.",
+        "No: a probability forecast can never be evaluated."
+      ],
+      "correct": 1,
+      "explanation": "Rain is compatible with a 40% forecast. To check calibration, compare many occasions assigned similar probabilities with how often rain occurred.",
+      "review": {
+        "id": "09/calibration-and-scoring-rules",
+        "why": "Distinguish the outcome of one event from how well confidence matches outcomes across a record."
+      },
+      "fa": {
+        "title": "پیش‌بینی چهل‌درصدی",
+        "prompt": "پیش‌بینی، احتمال باران امروز را ۴۰٪ اعلام می‌کند. باران می‌بارد. آیا همین یک نتیجه نشان می‌دهد پیش‌بینی بد بوده است؟",
+        "choices": [
+          "بله؛ باید ۱۰۰٪ می‌گفت.",
+          "نه؛ رویداد با احتمال ۴۰٪ هم رخ می‌دهد. برای ارزیابی، سابقهٔ پیش‌بینی‌ها و نتایج مشابه لازم است.",
+          "نه؛ پیش‌بینی احتمالاتی هرگز قابل‌ارزیابی نیست."
+        ],
+        "explanation": "باران با پیش‌بینی ۴۰٪ سازگار است. برای بررسی کالیبراسیون، دفعاتی با احتمال مشابه را با فراوانی واقعی باران مقایسه کنید.",
+        "reviewWhy": "نتیجهٔ یک رویداد را از هماهنگی اطمینان با نتایج در یک سابقه جدا کنید."
+      }
+    },
+    {
+      "id": "probability-test",
+      "dimension": "probability",
+      "level": 3,
+      "title": "A positive test",
+      "prompt": "In a screening of 1,000 people, 10 have a condition. The test flags 9 of those 10. It also flags 99 people who do not have the condition. Among all the people flagged, about what fraction actually have it?",
+      "choices": [
+        "9 out of 10.",
+        "9 out of 108.",
+        "99 out of 100."
+      ],
+      "correct": 1,
+      "explanation": "There are 108 flagged people: 9 with the condition and 99 without it. The fraction with the condition is 9/108. Finding most affected people is different from most flagged people being affected.",
+      "review": {
+        "id": "09/probability-the-basics",
+        "why": "Practice reading a conditional probability from actual counts before applying Bayes’ theorem."
+      },
+      "fa": {
+        "title": "نتیجهٔ مثبت آزمایش",
+        "prompt": "در غربالگری ۱۰۰۰ نفر، ۱۰ نفر یک بیماری دارند. آزمایش ۹ نفر از آن ۱۰ نفر را مثبت اعلام می‌کند. نتیجهٔ ۹۹ نفرِ بدون بیماری هم مثبت است. از میان همهٔ افراد با نتیجهٔ مثبت، تقریباً چه سهمی واقعاً بیماری دارند؟",
+        "choices": [
+          "۹ نفر از ۱۰ نفر.",
+          "۹ نفر از ۱۰۸ نفر.",
+          "۹۹ نفر از ۱۰۰ نفر."
+        ],
+        "explanation": "۱۰۸ نفر نتیجهٔ مثبت دارند: ۹ نفر با بیماری و ۹۹ نفر بدون آن. سهم بیماران ۹ از ۱۰۸ است. پیدا کردن بیشتر بیماران با بیمار بودن بیشتر افرادِ دارای نتیجهٔ مثبت فرق دارد.",
+        "reviewWhy": "پیش از به‌کاربردن قضیهٔ بیز، خواندن احتمال شرطی از شمارش واقعی را تمرین کنید."
+      }
+    },
+    {
+      "id": "knowledge-clock",
+      "dimension": "knowledge",
+      "level": 1,
+      "title": "A stopped clock",
+      "prompt": "A clock stopped yesterday at eight. You do not know it is broken. By coincidence, you look at it at exactly eight today and say the correct time. What should make us pause before saying that you knew the time?",
+      "choices": [
+        "The statement is true, so nothing else matters.",
+        "The answer was right by luck; the clock was not tracking the time.",
+        "Knowledge requires a digital clock."
+      ],
+      "correct": 1,
+      "explanation": "The answer is true, but the source was not working. This is a way to see why truth and apparent support can leave an issue of epistemic luck.",
+      "review": {
+        "id": "05/the-tripartite-analysis",
+        "why": "Distinguish a true answer from knowing it, and examine the role of a belief’s support."
+      },
+      "fa": {
+        "title": "ساعتِ ازکارافتاده",
+        "prompt": "یک ساعت دیروز روی هشت ایستاده است. شما از خرابی‌اش خبر ندارید. اتفاقاً امروز دقیقاً ساعت هشت به آن نگاه می‌کنید و زمان درست را می‌گویید. چه چیزی باید ما را پیش از اینکه بگوییم زمان را می‌دانستید به فکر بیندازد؟",
+        "choices": [
+          "گفته درست است؛ پس هیچ چیز دیگری مهم نیست.",
+          "پاسخ از روی شانس درست بود؛ ساعت زمان را دنبال نمی‌کرد.",
+          "معرفت به ساعت دیجیتال نیاز دارد."
+        ],
+        "explanation": "پاسخ درست است، اما منبع کار نمی‌کرد. این مثال نشان می‌دهد حتی با صدق و پشتوانهٔ ظاهری، مسئلهٔ شانس معرفتی باقی می‌ماند.",
+        "reviewWhy": "پاسخ درست را از دانستن آن جدا کنید و نقش پشتوانهٔ باور را بررسی کنید."
+      }
+    },
+    {
+      "id": "knowledge-timetable",
+      "dimension": "knowledge",
+      "level": 2,
+      "title": "A timetable that might change",
+      "prompt": "You checked an official train timetable this morning. It says the train leaves at six, but schedules can occasionally change. Which statement avoids jumping beyond the evidence?",
+      "choices": [
+        "Because a change is possible, the train cannot leave at six.",
+        "There is support for six; the possibility of error alone does not show the claim is false.",
+        "An official timetable makes a change impossible."
+      ],
+      "correct": 1,
+      "explanation": "Possible error is not the same as actual error. The timetable offers support while leaving room for new information that might defeat it.",
+      "review": {
+        "id": "06/fallibilism",
+        "why": "Separate being open to error from concluding that there is no support for a belief."
+      },
+      "fa": {
+        "title": "جدول زمانی که ممکن است تغییر کند",
+        "prompt": "صبح جدول رسمی حرکت قطار را بررسی کرده‌اید. نوشته قطار ساعت شش حرکت می‌کند، اما برنامه‌ها گاهی تغییر می‌کنند. کدام گفته از شواهد فراتر نمی‌رود؟",
+        "choices": [
+          "چون تغییر ممکن است، قطار نمی‌تواند ساعت شش حرکت کند.",
+          "برای ساعت شش پشتوانه داریم؛ امکان خطا به‌تنهایی نشان نمی‌دهد ادعا نادرست است.",
+          "جدول رسمی تغییر را ناممکن می‌کند."
+        ],
+        "explanation": "خطای ممکن با خطای واقعی فرق دارد. جدول پشتوانه فراهم می‌کند، اما اطلاعات تازه می‌تواند آن را کنار بزند.",
+        "reviewWhy": "امکان خطا را از نتیجه‌گیریِ نبودن هرگونه پشتوانه برای باور جدا کنید."
+      }
+    },
+    {
+      "id": "knowledge-predictor",
+      "dimension": "knowledge",
+      "level": 3,
+      "title": "The successful guess",
+      "prompt": "A friend predicted rain by tossing a coin. It rained. To judge whether the method gives a reliable basis for future predictions, what matters most?",
+      "choices": [
+        "That this prediction happened to be right.",
+        "Whether the method reliably gets predictions right across suitable checks, compared with chance.",
+        "How confident the friend felt."
+      ],
+      "correct": 1,
+      "explanation": "One successful guess does not establish a reliable method. The connection between a method and its results matters, not just one true conclusion or strong confidence.",
+      "review": {
+        "id": "05/epistemic-luck",
+        "why": "Examine the difference between a successful guess and a dependable connection to the truth."
+      },
+      "fa": {
+        "title": "حدسِ موفق",
+        "prompt": "دوستی با پرتاب سکه باران را پیش‌بینی کرده و باران آمده است. برای ارزیابیِ اینکه این روش پشتوانهٔ قابل‌اعتمادی برای پیش‌بینی بعدی می‌دهد، چه چیز مهم‌تر است؟",
+        "choices": [
+          "اینکه همین پیش‌بینی درست از آب درآمد.",
+          "اینکه روش در آزمون‌های مناسب، در مقایسه با شانس، به‌طور قابل‌اعتماد نتیجهٔ درست بدهد.",
+          "اینکه دوست چقدر مطمئن بوده است."
+        ],
+        "explanation": "یک حدس موفق، روش قابل‌اعتماد را ثابت نمی‌کند. پیوند روش با نتایج مهم است، نه فقط یک نتیجهٔ درست یا اطمینان زیاد.",
+        "reviewWhy": "تفاوت حدس موفق و پیوند قابل‌اعتماد با حقیقت را بررسی کنید."
+      }
+    },
+    {
+      "id": "vocabulary-train",
+      "dimension": "vocabulary",
+      "level": 1,
+      "title": "Hoping the train is late",
+      "prompt": "You are running late and hope your train is delayed. A delay would help you catch it. Is that benefit evidence that the train really is delayed?",
+      "choices": [
+        "Yes: a useful belief is more likely to be true.",
+        "No: a reason to want a delay is different from evidence that there is one.",
+        "No: wanting a delay proves the train is on time."
+      ],
+      "correct": 1,
+      "explanation": "A benefit explains why you want the situation to be true. It does not tell you whether it is true. Checking the departure board would address that separate question.",
+      "review": {
+        "id": "01/epistemic-reasons-versus-practical-reasons",
+        "why": "Separate reasons a belief would help you from reasons to think it is true."
+      },
+      "fa": {
+        "title": "امید به تأخیر قطار",
+        "prompt": "دیرتان شده و امیدوارید قطار تأخیر داشته باشد. تأخیر کمک می‌کند به قطار برسید. آیا همین فایده شاهدی است که قطار واقعاً تأخیر دارد؟",
+        "choices": [
+          "بله؛ باور مفید احتمالاً درست‌تر است.",
+          "نه؛ دلیلِ خواستن تأخیر با شاهدِ وجود تأخیر فرق دارد.",
+          "نه؛ خواستن تأخیر ثابت می‌کند قطار سر وقت است."
+        ],
+        "explanation": "فایده توضیح می‌دهد چرا می‌خواهید آن وضعیت برقرار باشد، نه اینکه آیا برقرار است. بررسی تابلوی حرکت به آن پرسش جداگانه پاسخ می‌دهد.",
+        "reviewWhy": "دلیل مفیدبودن یک باور را از دلیل صادق‌بودنش جدا کنید."
+      }
+    },
+    {
+      "id": "vocabulary-umbrella",
+      "dimension": "vocabulary",
+      "level": 2,
+      "title": "Packing an umbrella",
+      "prompt": "You think rain is fairly likely and pack an umbrella because getting wet would be inconvenient. Which description fits?",
+      "choices": [
+        "Packing the umbrella proves you believe rain is certain.",
+        "You can act cautiously while still being uncertain about rain.",
+        "If you are uncertain, you cannot make a reasonable decision."
+      ],
+      "correct": 1,
+      "explanation": "An action depends on both your confidence and the costs of outcomes. Packing an umbrella need not express certainty.",
+      "review": {
+        "id": "01/belief-credence-and-acceptance",
+        "why": "Distinguish degrees of confidence from outright belief and from choices made under uncertainty."
+      },
+      "fa": {
+        "title": "برداشتن چتر",
+        "prompt": "فکر می‌کنید باران نسبتاً محتمل است و چون خیس‌شدن دردسر دارد، چتر برمی‌دارید. کدام توصیف مناسب است؟",
+        "choices": [
+          "برداشتن چتر ثابت می‌کند باران را قطعی می‌دانید.",
+          "می‌توانید محتاطانه عمل کنید و همچنان دربارهٔ باران مطمئن نباشید.",
+          "اگر مطمئن نیستید، نمی‌توانید تصمیم معقولی بگیرید."
+        ],
+        "explanation": "عمل هم به میزان اطمینان و هم به هزینهٔ نتایج بستگی دارد. برداشتن چتر لازم نیست بیانگر یقین باشد.",
+        "reviewWhy": "درجات اطمینان را از باور قطعی و تصمیم‌گیری در عدم قطعیت جدا کنید."
+      }
+    },
+    {
+      "id": "vocabulary-restaurant",
+      "dimension": "vocabulary",
+      "level": 3,
+      "title": "The restaurant that closed",
+      "prompt": "You checked yesterday’s reliable listing and believe a restaurant is open. It unexpectedly closed today. You have not heard about the closure. What can be true together?",
+      "choices": [
+        "You have a reason for the belief, but the belief is false.",
+        "Having a reason makes the belief true.",
+        "A false belief shows you never had any reason for it."
+      ],
+      "correct": 0,
+      "explanation": "Support for a belief and truth are different questions. The listing can offer a reasonable basis while an unreported change makes the belief false.",
+      "review": {
+        "id": "01/the-basic-vocabulary",
+        "why": "Keep justification and truth separate rather than assuming one guarantees the other."
+      },
+      "fa": {
+        "title": "رستورانی که بسته شد",
+        "prompt": "فهرست قابل‌اعتماد دیروز را بررسی کرده‌اید و باور دارید رستورانی باز است. امروز ناگهان بسته شده، اما شما خبر ندارید. کدام دو وضعیت می‌توانند هم‌زمان برقرار باشند؟",
+        "choices": [
+          "برای باور دلیل دارید، اما باور نادرست است.",
+          "داشتن دلیل، باور را صادق می‌کند.",
+          "باور نادرست نشان می‌دهد هرگز دلیلی نداشتید."
+        ],
+        "explanation": "پشتوانهٔ باور و صدق دو پرسش متفاوت‌اند. فهرست می‌تواند مبنایی معقول بدهد و تغییرِ گزارش‌نشده باور را نادرست کند.",
+        "reviewWhy": "توجیه و صدق را جدا نگه دارید؛ یکی را تضمین‌کنندهٔ دیگری فرض نکنید."
+      }
+    },
+    {
+      "id": "evidence-coffee",
+      "dimension": "evidence",
+      "level": 1,
+      "title": "Coffee and exam marks",
+      "prompt": "A survey finds that students who drink coffee get higher exam marks. What can we conclude from that observation alone?",
+      "choices": [
+        "Coffee causes higher marks.",
+        "There is an association; other differences might explain it.",
+        "Coffee cannot affect marks."
+      ],
+      "correct": 1,
+      "explanation": "An association leaves multiple explanations open. Study habits, sleep, or other differences could matter. A causal claim needs more than this observation alone.",
+      "review": {
+        "id": "10/causation-and-causal-inference",
+        "why": "Your answer moved from an association to a causal conclusion, or ruled out causation too quickly. Compare those different claims."
+      },
+      "fa": {
+        "title": "قهوه و نمرهٔ امتحان",
+        "prompt": "یک نظرسنجی نشان می‌دهد دانشجویانِ قهوه‌خور نمره‌های بالاتری دارند. فقط از این مشاهده چه نتیجه‌ای می‌توان گرفت؟",
+        "choices": [
+          "قهوه باعث نمرهٔ بالاتر می‌شود.",
+          "همبستگی وجود دارد؛ تفاوت‌های دیگر هم می‌توانند آن را توضیح دهند.",
+          "قهوه نمی‌تواند بر نمره اثر بگذارد."
+        ],
+        "explanation": "همبستگی چند توضیح ممکن باقی می‌گذارد. عادت مطالعه، خواب یا تفاوت‌های دیگر ممکن است مهم باشند. ادعای علّی به بیش از این مشاهده نیاز دارد.",
+        "reviewWhy": "پاسخ شما از همبستگی به علیت رسید یا علیت را زود کنار گذاشت. این ادعاهای متفاوت را مقایسه کنید."
+      }
+    },
+    {
+      "id": "evidence-reviews",
+      "dimension": "evidence",
+      "level": 2,
+      "title": "A page of glowing reviews",
+      "prompt": "A seller shows 20 enthusiastic customer reviews. Before using them to estimate how satisfied all customers are, what should you ask?",
+      "choices": [
+        "Were the reviewers selected in a way that leaves unhappy customers out?",
+        "Are the reviews written in an attractive font?",
+        "Does having 20 reviews make selection irrelevant?"
+      ],
+      "correct": 0,
+      "explanation": "A sample can be misleading if its selection excludes contrary experiences. More examples from the same selected group do not automatically repair that problem.",
+      "review": {
+        "id": "16/step-5-evaluate-the-evidence",
+        "why": "Ask how examples were selected and what evidence may be missing before generalising from them."
+      },
+      "fa": {
+        "title": "صفحه‌ای پر از نظرهای عالی",
+        "prompt": "فروشنده ۲۰ نظر بسیار مثبت مشتریان را نشان می‌دهد. پیش از استفاده از آن‌ها برای برآورد رضایت همهٔ مشتریان، چه باید بپرسید؟",
+        "choices": [
+          "آیا شیوهٔ انتخاب نظرها مشتریان ناراضی را کنار گذاشته است؟",
+          "آیا نظرها با قلم زیبایی نوشته شده‌اند؟",
+          "آیا داشتن ۲۰ نظر، شیوهٔ انتخاب را بی‌اهمیت می‌کند؟"
+        ],
+        "explanation": "اگر انتخاب نمونه تجربه‌های مخالف را حذف کند، نمونه گمراه‌کننده می‌شود. مثال‌های بیشتر از همان گروهِ گزینش‌شده خودبه‌خود مشکل را حل نمی‌کنند.",
+        "reviewWhy": "پیش از تعمیم مثال‌ها، بپرسید چگونه انتخاب شده‌اند و چه شواهدی ممکن است غایب باشد."
+      }
+    },
+    {
+      "id": "evidence-programme",
+      "dimension": "evidence",
+      "level": 3,
+      "title": "Did the course help?",
+      "prompt": "People who chose an optional study course improved more than those who did not take it. The organiser says the course caused the improvement. Which missing detail most directly helps test that claim?",
+      "choices": [
+        "Whether the organiser is proud of the course.",
+        "Whether the people already differed in motivation or skill, and whether the comparison was fair.",
+        "Whether the course has a memorable name."
+      ],
+      "correct": 1,
+      "explanation": "People who chose the course may already differ in motivation, time or previous skill. A causal comparison has to address those differences.",
+      "review": {
+        "id": "10/causation-and-causal-inference",
+        "why": "Check alternative explanations and the comparison groups before attributing an improvement to an intervention."
+      },
+      "fa": {
+        "title": "آیا دوره کمک کرد؟",
+        "prompt": "کسانی که یک دورهٔ اختیاری را انتخاب کردند، بیشتر از دیگران پیشرفت کردند. برگزارکننده می‌گوید دوره باعث پیشرفت شد. کدام اطلاعاتِ غایب مستقیم‌تر به آزمودن این ادعا کمک می‌کند؟",
+        "choices": [
+          "اینکه برگزارکننده به دوره افتخار می‌کند یا نه.",
+          "اینکه افراد از قبل در انگیزه یا مهارت تفاوت داشتند و مقایسه منصفانه بود یا نه.",
+          "اینکه نام دوره به‌یادماندنی است یا نه."
+        ],
+        "explanation": "انتخاب‌کنندگان دوره ممکن است از ابتدا در انگیزه، زمان یا مهارت فرق داشته باشند. مقایسهٔ علّی باید این تفاوت‌ها را بررسی کند.",
+        "reviewWhy": "پیش از نسبت‌دادن پیشرفت به یک اقدام، توضیح‌های جایگزین و گروه‌های مقایسه را بررسی کنید."
+      }
+    },
+    {
+      "id": "testimony-reports",
+      "dimension": "testimony",
+      "level": 1,
+      "title": "Three reports, one source",
+      "prompt": "Three news sites repeat the same claim. All three copied one unverified post. How many independent sources of evidence have you found?",
+      "choices": [
+        "Three: each website counts separately.",
+        "One underlying source, repeated three times.",
+        "None: the claim must be false."
+      ],
+      "correct": 1,
+      "explanation": "The websites share a source, so their repetitions are not three independent checks. The claim might still be true, but repetition has not verified it.",
+      "review": {
+        "id": "07/testimony",
+        "why": "Trace information back to its source and distinguish repetition from independent support."
+      },
+      "fa": {
+        "title": "سه گزارش، یک منبع",
+        "prompt": "سه سایت خبری یک ادعا را تکرار می‌کنند. هر سه از یک پستِ بررسی‌نشده کپی کرده‌اند. چند منبع مستقلِ شاهد پیدا کرده‌اید؟",
+        "choices": [
+          "سه منبع؛ هر سایت جدا حساب می‌شود.",
+          "یک منبع اصلی که سه بار تکرار شده است.",
+          "هیچ؛ ادعا حتماً نادرست است."
+        ],
+        "explanation": "سایت‌ها منبع مشترک دارند؛ تکرارشان سه بررسی مستقل نیست. ادعا ممکن است درست باشد، اما تکرار آن را تأیید نکرده است.",
+        "reviewWhy": "اطلاعات را تا منبع اصلی دنبال کنید و تکرار را از پشتیبانی مستقل جدا کنید."
+      }
+    },
+    {
+      "id": "testimony-expert",
+      "dimension": "testimony",
+      "level": 2,
+      "title": "Advice from a famous expert",
+      "prompt": "A famous engineer makes a claim about a medical treatment. What would most help you decide how much weight to give the claim?",
+      "choices": [
+        "How famous the engineer is.",
+        "Relevant medical expertise, the evidence offered and independent checks.",
+        "Expertise in one field guarantees expertise in every field."
+      ],
+      "correct": 1,
+      "explanation": "Expertise has a scope. Relevant knowledge and checkable evidence matter more here than fame or expertise in an unrelated subject.",
+      "review": {
+        "id": "12/experts-and-novices",
+        "why": "Match expertise to the question and ask what supports the claim rather than relying on status alone."
+      },
+      "fa": {
+        "title": "توصیهٔ یک متخصص مشهور",
+        "prompt": "یک مهندس مشهور دربارهٔ یک درمان پزشکی ادعایی می‌کند. چه چیزی بیشتر کمک می‌کند وزن این ادعا را تعیین کنید؟",
+        "choices": [
+          "اینکه مهندس چقدر مشهور است.",
+          "تخصص پزشکیِ مرتبط، شواهد ارائه‌شده و بررسی‌های مستقل.",
+          "تخصص در یک حوزه، تخصص در همهٔ حوزه‌ها را تضمین می‌کند."
+        ],
+        "explanation": "تخصص محدوده دارد. دانش مرتبط و شاهدِ قابل‌بررسی در اینجا مهم‌تر از شهرت یا تخصص در موضوعی دیگرند.",
+        "reviewWhy": "تخصص را با پرسش هماهنگ کنید و به جای اتکای صرف به جایگاه، پشتوانهٔ ادعا را بررسی کنید."
+      }
+    },
+    {
+      "id": "testimony-correction",
+      "dimension": "testimony",
+      "level": 3,
+      "title": "A reliable friend corrects a story",
+      "prompt": "A friend who is usually reliable tells you a story. Later the friend says the original source fabricated it. What is the best response to that new information?",
+      "choices": [
+        "Keep the story because the friend is usually reliable.",
+        "Reassess the story: the new information undermines this report without proving the friend is always unreliable.",
+        "Conclude that everything the friend has ever said is false."
+      ],
+      "correct": 1,
+      "explanation": "A generally reliable source can pass on a particular bad report. New information can defeat that report’s support without discrediting every past statement.",
+      "review": {
+        "id": "06/defeaters",
+        "why": "Learn how new information can remove support for a specific belief without settling every other belief."
+      },
+      "fa": {
+        "title": "دوست قابل‌اعتماد خبر را اصلاح می‌کند",
+        "prompt": "دوستی که معمولاً قابل‌اعتماد است خبری می‌دهد. بعد می‌گوید منبع اصلی آن را ساخته بود. بهترین پاسخ به این اطلاعات تازه چیست؟",
+        "choices": [
+          "خبر را نگه داریم؛ دوست معمولاً قابل‌اعتماد است.",
+          "خبر را دوباره بسنجیم؛ اطلاعات تازه این گزارش را تضعیف می‌کند، نه اینکه دوست همیشه غیرقابل‌اعتماد باشد.",
+          "نتیجه بگیریم هرچه دوست تاکنون گفته نادرست است."
+        ],
+        "explanation": "منبع معمولاً قابل‌اعتماد هم می‌تواند یک گزارش بد منتقل کند. اطلاعات تازه ممکن است پشتوانهٔ همان گزارش را از بین ببرد، بی‌آنکه هر گفتهٔ گذشته را بی‌اعتبار کند.",
+        "reviewWhy": "ببینید اطلاعات تازه چگونه پشتوانهٔ یک باور مشخص را از بین می‌برد، بدون آنکه همهٔ باورهای دیگر را تعیین کند."
+      }
+    },
+    {
+      "id": "definitions-free",
+      "dimension": "definitions",
+      "level": 1,
+      "title": "Is the app free?",
+      "prompt": "Mina says an app is free because it costs no money. Ali says it is not free because it shows advertisements. Before treating this as a factual dispute, what should they clarify?",
+      "choices": [
+        "Whether they mean the same thing by ‘free’.",
+        "Which person speaks more confidently.",
+        "Whether an advertisement automatically proves someone is lying."
+      ],
+      "correct": 0,
+      "explanation": "They may agree on the price and the advertisements while using ‘free’ differently. Clarifying the word can reveal what, if anything, they actually disagree about.",
+      "review": {
+        "id": "04/verbal-disputes",
+        "why": "Check the meanings being used before treating a disagreement over words as a disagreement over facts."
+      },
+      "fa": {
+        "title": "آیا برنامه رایگان است؟",
+        "prompt": "مینا می‌گوید برنامه رایگان است چون پول نمی‌خواهد. علی می‌گوید رایگان نیست چون تبلیغ دارد. پیش از اینکه این را اختلاف بر سر واقعیت بدانند، چه باید روشن کنند؟",
+        "choices": [
+          "آیا منظورشان از «رایگان» یکسان است؟",
+          "کدام‌یک با اطمینان بیشتری صحبت می‌کند؟",
+          "آیا تبلیغ خودبه‌خود ثابت می‌کند کسی دروغ می‌گوید؟"
+        ],
+        "explanation": "ممکن است بر سر قیمت و تبلیغ توافق داشته باشند و «رایگان» را متفاوت به کار ببرند. روشن‌کردن واژه نشان می‌دهد واقعاً بر سر چه اختلاف دارند.",
+        "reviewWhy": "پیش از اینکه اختلاف بر سر واژه را اختلاف بر سر واقعیت بدانید، معناهای به‌کاررفته را بررسی کنید."
+      }
+    },
+    {
+      "id": "definitions-safe",
+      "dimension": "definitions",
+      "level": 2,
+      "title": "Two meanings of safe",
+      "prompt": "One person calls an activity safe because it meets an agreed safety standard. Another calls it unsafe because there is still some risk. What would help them understand their disagreement?",
+      "choices": [
+        "Separate the amount of risk from what each person counts as acceptably safe.",
+        "Assume one person must be denying the measured risk.",
+        "Assume the word ‘safe’ always means zero risk to everyone."
+      ],
+      "correct": 0,
+      "explanation": "They may agree on the risk but use different thresholds or meanings. Distinguishing those from the measured facts helps locate the real dispute.",
+      "review": {
+        "id": "04/ambiguity",
+        "why": "Separate a word’s interpretation from the facts it is being used to describe."
+      },
+      "fa": {
+        "title": "دو معنای امن",
+        "prompt": "یک نفر فعالیتی را امن می‌داند چون معیار ایمنیِ توافق‌شده را دارد. دیگری آن را ناامن می‌داند چون هنوز مقداری خطر هست. چه چیزی به فهم اختلاف کمک می‌کند؟",
+        "choices": [
+          "مقدار خطر را از آستانه‌ای که هر فرد برای ایمنی قابل‌قبول می‌داند جدا کنند.",
+          "فرض کنند یکی حتماً خطرِ اندازه‌گیری‌شده را انکار می‌کند.",
+          "فرض کنند «امن» برای همه همیشه یعنی خطر صفر."
+        ],
+        "explanation": "ممکن است بر سر خطر توافق داشته باشند، اما معنا یا آستانهٔ متفاوتی به کار ببرند. جداکردن آن‌ها از واقعیت اندازه‌گیری‌شده، محل اختلاف را روشن می‌کند.",
+        "reviewWhy": "تفسیر یک واژه را از واقعیت‌هایی که با آن توصیف می‌شوند جدا کنید."
+      }
+    },
+    {
+      "id": "definitions-values",
+      "dimension": "definitions",
+      "level": 3,
+      "title": "Same facts, different decisions",
+      "prompt": "Two people agree about a project’s likely benefits and risks. One values the benefits enough to proceed; the other gives avoiding the risks more weight. Where is their remaining disagreement?",
+      "choices": [
+        "They must disagree about the measured probabilities.",
+        "They differ about priorities and acceptable trade-offs, even with the same factual estimates.",
+        "One more factual measurement must automatically settle it."
+      ],
+      "correct": 1,
+      "explanation": "Agreement on factual estimates need not produce agreement on what to do. Judgments about priorities and acceptable trade-offs also enter the decision.",
+      "review": {
+        "id": "04/facts-values-and-the-is-ought-gap",
+        "why": "Distinguish a disagreement about factual estimates from a disagreement about what should matter in a decision."
+      },
+      "fa": {
+        "title": "واقعیت یکسان، تصمیم متفاوت",
+        "prompt": "دو نفر دربارهٔ فواید و خطرهای احتمالی یک پروژه توافق دارند. یکی فایده را برای اجرا کافی می‌داند؛ دیگری اجتناب از خطر را مهم‌تر می‌داند. اختلاف باقی‌مانده کجاست؟",
+        "choices": [
+          "حتماً دربارهٔ احتمال‌های اندازه‌گیری‌شده اختلاف دارند.",
+          "با برآورد واقعی یکسان، دربارهٔ اولویت‌ها و بده‌بستان قابل‌قبول اختلاف دارند.",
+          "یک اندازه‌گیری واقعی دیگر حتماً خودبه‌خود مسئله را حل می‌کند."
+        ],
+        "explanation": "توافق بر سر برآوردهای واقعی لازم نیست به توافق بر سر عمل برسد. اولویت‌ها و بده‌بستان‌های قابل‌قبول هم در تصمیم دخیل‌اند.",
+        "reviewWhy": "اختلاف دربارهٔ برآوردهای واقعی را از اختلاف دربارهٔ آنچه باید در تصمیم مهم باشد جدا کنید."
+      }
+    }
+  ]
+}

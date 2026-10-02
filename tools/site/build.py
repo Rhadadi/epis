@@ -615,7 +615,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
                  f'aria-label="{L("Your study, downloads and settings", "مطالعهٔ شما، دریافت و تنظیمات")}" title="{L("Your study and settings", "مطالعه و تنظیمات")}">{icon("user")}</button>'
                  f'<div class="umenu" id="umenu" hidden>'
                  f'<a href="{h}account/"{cur("account")}>{icon("user")}<span>{L("My study", "مطالعهٔ من")}</span></a>'
-                 + (f'<a href="{root}reading-path/">{icon("map")}<span>My reading path</span></a>' if LANG == "en" else '') +
+                 f'<a href="{h}reading-path/">{icon("map")}<span>{L("My reading path", "مسیر مطالعهٔ من")}</span></a>'
                  f'<a href="{h}notes/">{icon("pen")}<span>{L("Notebook", "دفترچه")}</span></a>'
                  f'<a href="{h}review/">{icon("review")}<span>{L("Review questions", "مرور پرسش‌ها")}</span></a>'
                  f'<a href="{h}guide/download.html"{cur("download")}>{icon("download")}<span>{L("Download", "دریافت")}</span></a>'
@@ -1668,7 +1668,7 @@ def build_guide_index(art, chapters, md, total_audio):
             f'<div class="prose" style="max-width:none">{connect}</div></div></section>'
             f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("Learning paths", "مسیرهای یادگیری")}</span>'
             f'<h2>{L("Where to start", "از کجا شروع کنیم")}</h2></div></div>'
-            + (f'<div id="rp-home"><p>Start with your own question, choose a study mode, and find the sections that fit your time.</p><a class="btn primary" href="{root}reading-path/">Find my reading path →</a></div>' if LANG == "en" else '') +
+            f'<div id="rp-home"><p>{L("Start with your own question, choose a study mode, and find the sections that fit your time.", "از پرسش خودتان آغاز کنید، شیوهٔ مطالعه را انتخاب کنید و بخش‌های مناسب با زمانتان را پیدا کنید.")}</p><a class="btn primary" href="{home(root)}reading-path/">{L("Find my reading path →", "مسیر مطالعه‌ام را پیدا کن ←")}</a></div>'
             f'<div class="prose" style="max-width:52rem">{paths}</div></div></section>'
             f'<section class="section alt"><div class="wrap" style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">'
             f'<div class="prose"><h2 {h2s}>{L("How each chapter works", "هر فصل چگونه کار می‌کند")}</h2>{how}</div>'
@@ -1699,7 +1699,7 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                        f"نقشهٔ دوزبانهٔ {n_c} مفهوم، و {total_audio} روایت صوتی{fa_audio('', ' به انگلیسی', ' به فارسی و انگلیسی')}."),
                 facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('map')} {L(f'{n_concepts} concepts · English &amp; فارسی', f'{n_c} مفهوم · فارسی و English')}",
                        f"{icon('phones')} {total_audio} {L('audio', 'صوت')}"],
-                actions=((f'<a class="btn primary" href="reading-path/">Find my reading path {icon("arrow")}</a>' if LANG == "en" else '') +
+                actions=(f'<a class="btn primary" href="{h}reading-path/">{L("Find my reading path", "مسیر مطالعه‌ام را پیدا کن")} {icon("arrow")}</a>'
                          f'<a class="btn" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
                          f'<a class="btn" href="{map_url(root)}">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
                          f'<a class="btn" href="{h}guide/audio/">{icon("phones")} {L("Listen", "شنیدن")}</a>'))
@@ -1717,8 +1717,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
              f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
-    body = (f'{head}<main id="main">' +
-            (f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="reading-path/">A path built around your question →</a></div>' if LANG == "en" else '') +
+    body = (f'{head}<main id="main">'
+            f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="{h}reading-path/">{L("A path built around your question →", "مسیری بر پایهٔ پرسش شما ←")}</a></div>'
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
             f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
@@ -2540,8 +2540,9 @@ def build_offline_list():
              "guide/audio/about.html", "notes/", "review/", "account/"]
     paths = list(pages) + ["fa/" + p for p in pages]
     paths += ["map/", "map/index.html", "fa/map/", "fa/map/index.html", "assets/map.js", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
-    paths += ["reading-path/", "reading-path/index.html", "assets/reading-path.css", "assets/reading-path-core.js",
-              "assets/reading-path.js", "assets/data/reading-path.json"]
+    paths += ["reading-path/", "reading-path/index.html", "fa/reading-path/", "fa/reading-path/index.html",
+              "assets/reading-path.css", "assets/reading-path-core.js", "assets/reading-path-i18n.js",
+              "assets/reading-path.js", "assets/data/reading-path.json", "assets/data/reading-path-fa.json"]
     paths += [
               "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
               "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json",
@@ -3535,23 +3536,25 @@ def build_language(art, md, C, tracks):
              chapter_nav=chsw)
     if LANG == "en":
         build_deeper(chapters, md, art)
-        build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP)
-        page("reading-path/index.html", other_rel="guide/index.html", root=r1, title="Find your reading path",
-             desc="An adaptive reading guide for your questions, prior knowledge and available time.",
-             body=reading_path_body(), current="guide",
-             extra_head=f'<link rel="stylesheet" href="{av(r1, "reading-path.css")}">'
-                        f'<script src="{av(r1, "reading-path-core.js")}" defer></script>',
-             extra_scripts=f'<script src="{av(r1, "reading-path.js")}" defer></script>')
-    path_script = f'<script src="{av(r1, "reading-path.js")}" defer></script>' if LANG == "en" else ''
+    build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP, LANG, FA_HEADS)
+    path_script = lambda root: (f'<script src="{av(root, "reading-path-i18n.js")}" defer></script>'
+                                f'<script src="{av(root, "reading-path.js")}" defer></script>')
+    page("reading-path/index.html", root=r1, title=L("Find your reading path", "مسیر مطالعهٔ خود را پیدا کنید"),
+         desc=L("An adaptive reading guide for your questions, education, prior knowledge and available time.",
+                "راهنمای مطالعه بر پایهٔ پرسش‌ها، تحصیلات، دانسته‌ها و زمان شما."),
+         body=reading_path_body(LANG), current="guide",
+         extra_head=f'<link rel="stylesheet" href="{av(r1, "reading-path.css")}">'
+                    f'<script src="{av(r1, "reading-path-core.js")}" defer></script>',
+         extra_scripts=path_script(r1))
     page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
          desc=L("Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
                 "فهرستِ «تسلط بر معرفت‌شناسی»: شانزده فصل دربارهٔ معرفت، شواهد و تفکر نقادانه."),
-         body=place_diagrams(guide_index, md, svgs), current="guide", hero_img=(art.src("guide", r1), art.srcset("guide", r1)), bar="clear", extra_scripts=path_script)
+         body=place_diagrams(guide_index, md, svgs), current="guide", hero_img=(art.src("guide", r1), art.srcset("guide", r1)), bar="clear", extra_scripts=path_script(r1))
     page("index.html", root=r0, title=site_name(),
          desc=L("A free, complete guide to epistemology and critical thinking: illustrated chapters, a bilingual concept map, and a narrated audio edition.",
                 "راهنمایی رایگان و کامل دربارهٔ معرفت‌شناسی و تفکر نقادانه: فصل‌های مصوّر، نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی."),
          body=home_page, hero_img=(art.src("home", r0), art.srcset("home", r0)), bar="clear",
-         extra_scripts=f'<script src="{av(r0, "reading-path.js")}" defer></script>' if LANG == "en" else '')
+         extra_scripts=path_script(r0))
 
     print(f"[{LANG}] concepts")
     pages = []

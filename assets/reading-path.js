@@ -3,6 +3,14 @@
   "use strict";
   var script = document.currentScript;
   var root = new URL("../", script.src).href;
+  var FA = document.documentElement.lang === "fa";
+  function T(text, values) {
+    var dictionary = window.EpisReadingPathI18n || {};
+    var translated = FA && Object.prototype.hasOwnProperty.call(dictionary, text) ? dictionary[text] : text;
+    if (values) Object.keys(values).forEach(function (key) { translated = translated.replaceAll("{" + key + "}", function () { return String(values[key]); }); });
+    return translated;
+  }
+  function N(n) { return FA ? String(n).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }) : String(n); }
   var KEY = "epis-reading-path", host = document.getElementById("reading-path"), teaser = document.getElementById("rp-home");
   var core = window.EpisReadingPath, data, reply, pending, generation = 0;
   function load() { try { var value = JSON.parse(localStorage.getItem(KEY) || "{}"); return value && value.v === 1 ? value : {}; } catch (_) { return {}; } }
@@ -14,29 +22,21 @@
   }
   function el(tag, text, className) {
     var node = document.createElement(tag);
-    if (text !== undefined && text !== null) node.textContent = text;
+    if (text !== undefined && text !== null) node.textContent = T(text);
     if (className) node.className = className;
     return node;
   }
-  function link(text, url, cls) { var a = el("a", text, cls); a.href = new URL(url, root).href; return a; }
+  function link(text, url, cls) {
+    var a = el("a", text, cls);
+    if (FA && ["reading-path/", "guide/"].includes(url)) url = "fa/" + url;
+    a.href = new URL(url, root).href; return a;
+  }
   function button(text, fn, cls) { var b = el("button", text, cls || "btn"); b.type = "button"; b.addEventListener("click", fn); return b; }
   function notice(text, error) {
     var n = document.getElementById("rp-notice");
-    if (n) { n.textContent = text; n.className = "rp-notice" + (error ? " rp-error" : ""); }
+    if (n) { n.textContent = T(text); n.className = "rp-notice" + (error ? " rp-error" : ""); }
   }
   function topic() { return data.topics.find(function (t) { return t.id === state.answers.topic; }); }
-  function relevantCompetencies() {
-    var t = topic(), focus = t && (t.focuses.find(function (f) { return f.id === state.answers.focus; }) || t.focuses[0]);
-    if (!focus) return data.competencies;
-    var ids = new Set(), visited = new Set();
-    function visit(sid) {
-      if (visited.has(sid)) return; visited.add(sid);
-      if (data.foundations[sid]) ids.add(data.foundations[sid]);
-      (data.prerequisites[sid] || []).forEach(function (p) { visit(p.id); });
-    }
-    focus.steps.forEach(function (s) { visit(s.id); });
-    return data.competencies.filter(function (c) { return ids.has(c.id); });
-  }
   function choices(form, name, values, selected, multiple, cls) {
     var group = el("fieldset"), legend = el("legend", values.title || "Choose an option"); group.append(legend);
     var list = el("div", null, "rp-choices " + (cls || "")); group.append(list);
@@ -50,8 +50,17 @@
     form.append(group); return group;
   }
   function selected(form, name, multiple) {
+    var select = form.querySelector('select[name="' + name + '"]');
+    if (select) return select.value;
     var values = Array.from(form.querySelectorAll('input[name="' + name + '"]:checked')).map(function (i) { return i.value; });
     return multiple ? values : values[0];
+  }
+  function selectChoice(form, name, title, options, selectedId) {
+    var label = el("label", title); label.htmlFor = "rp-" + name;
+    var select = el("select", null, "rp-mode-select"); select.name = name; select.id = "rp-" + name;
+    options.forEach(function (o) { var option = el("option", o.label); option.value = o.id; select.append(option); });
+    select.value = selectedId;
+    var group = el("div", null, "rp-background-field"); group.append(label, select); form.append(group);
   }
   function endpoint() {
     var config = window.EPIS_AI_CONFIG || {};
@@ -67,18 +76,18 @@
     try {
       var res = await fetch(endpoint().replace(/\/+$/, "") + "/reading-path", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ goal: state.answers.goal, mode: state.answers.mode }), signal: controller.signal
+        body: JSON.stringify({ goal: state.answers.goal, mode: state.answers.mode, language: FA ? "fa" : "en" }), signal: controller.signal
       });
       if (!res.ok) throw new Error("unavailable");
       var candidate = core.validInterview(data, await res.json());
-      if (!candidate) throw new Error("invalid");
+      if (!candidate || (FA && !/[آ-ی]/.test(candidate.question))) throw new Error("invalid");
       if (id !== generation || state.step !== 1) return;
       reply = candidate;
       notice("AI suggested a focus. Choose the area that matches your question; you can change it.");
       // Never replace a visitor's selection or interrupt an answer in progress.
       var suggestion = document.getElementById("rp-ai-suggestion");
       if (suggestion) {
-        suggestion.textContent = "AI suggests: " + data.topics.find(function (t) { return t.id === reply.topic; }).label + ".";
+        suggestion.textContent = T("AI suggests: {topic}.", { topic: data.topics.find(function (t) { return t.id === reply.topic; }).label });
         suggestion.append(document.createTextNode(" "), button("Use this suggestion", function () {
           var input = host.querySelector('input[name="topic"][value="' + reply.topic + '"]');
           if (input) input.checked = true;
@@ -91,8 +100,7 @@
   function panel(title, subtitle) {
     host.replaceChildren(); host.setAttribute("aria-busy", "false");
     var form = el("form", null, "rp-panel");
-    var short = state.step > 1 && relevantCompetencies().length === 0;
-    form.append(el("div", "Question " + (short && state.step === 4 ? 4 : state.step + 1) + (state.step < 2 ? " · a few questions to find your path" : " of " + (short ? 4 : 5)), "rp-step"));
+    form.append(el("div", state.step === 6 ? T("Example {n} · questions adapt to your answers", { n: N((state.answers.diagnosticAnswers || []).length + 1) }) : T("Question {n} of 5", { n: N(state.step + 1) }), "rp-step"));
     var heading = el("h2", title); heading.tabIndex = -1; form.append(heading);
     if (subtitle) form.append(el("p", subtitle));
     host.append(form); return form;
@@ -110,18 +118,19 @@
   function render() {
     notice("");
     if (state.step === 5 && state.planProfile) { renderPlan(); return; }
+    if (state.step === 6) { renderDiagnostic(); return; }
     var form;
     if (state.step === 0) {
       form = panel("What would you like to understand?", "A question, a situation, or a topic is enough. You can leave this blank and choose an area next.");
       var label = el("label", "Your question (optional)"); label.htmlFor = "rp-goal";
       var goal = el("textarea"); goal.id = "rp-goal"; goal.name = "goal"; goal.maxLength = 600;
-      goal.placeholder = "For example: How can I tell whether a medical study is convincing?"; goal.value = state.answers.goal;
+      goal.placeholder = T("For example: How can I tell whether a medical study is convincing?"); goal.value = state.answers.goal;
       form.append(label, goal);
       choices(form, "mode", { title: "How would you like to study?", items: Object.keys(core.modes).map(function (id) { return Object.assign({ id: id }, core.modes[id]); }) }, state.answers.mode, false, "rp-modes");
       if (endpoint()) {
         var ai = el("label", null, "rp-ai"), check = el("input"), copy = el("span", "Let AI help with the next question");
         check.type = "checkbox"; check.name = "ai"; check.checked = !!state.ai;
-        copy.append(el("small", "Optional. Your question and study mode will be sent to " + ((window.EPIS_AI_CONFIG || {}).readingPathName || "the configured AI service") + ". Recommendations still come from the reviewed chapter routes."));
+        copy.append(el("small", T("Optional. Your question and study mode will be sent to {service}. Recommendations still come from the reviewed chapter routes.", { service: (window.EPIS_AI_CONFIG || {}).readingPathName || T("the configured AI service") })));
         ai.append(check, copy); form.append(ai);
       } else form.append(el("p", "This guide uses curated questions. The optional AI interview is not enabled on this site yet.", "rp-ai-info"));
     } else if (state.step === 1) {
@@ -134,16 +143,20 @@
       form = panel(reply && reply.topic === t.id ? reply.question : t.question, "Pick the direction that would help most. These lead to different sections, even within the same chapter.");
       choices(form, "focus", { title: "Your focus", items: t.focuses }, state.answers.focus || t.focuses[0].id, false);
     } else if (state.step === 3) {
-      form = panel("What can you already use confidently?", "Select only what feels familiar in practice. Leaving everything unchecked includes the relevant foundations; this is not a test of your education.");
-      choices(form, "known", { title: "I can already explain or use…", items: relevantCompetencies() }, state.answers.known, true);
+      form = panel("Your education and experience", "Optional. Related studies help choose the examples and connect ideas. Your answers to everyday situations will help choose the starting point.");
+      selectChoice(form, "education", "Your educational background", core.education, state.answers.education);
+      selectChoice(form, "studies", "Related subjects you have studied", core.studies, state.answers.studies);
+      form.append(el("p", "Next, try a few short situations about reasoning and evidence. There is always a “not sure” option, and you can skip the examples."));
     } else {
       form = panel("How much time for your first path?", "We’ll keep the suggested reading within this total. You can return for the rest or change your time later.");
-      choices(form, "minutes", { title: "Total reading time", items: [15,30,60,120,240].map(function (n) { return { id: String(n), label: n < 60 ? n + " minutes" : n / 60 + (n === 60 ? " hour" : " hours") }; }) }, String(state.answers.minutes), false, "rp-topics");
+      choices(form, "minutes", { title: "Total reading time", items: [15,30,60,120,240].map(function (n) {
+        return { id: String(n), label: T(n < 60 ? "{n} minutes" : n === 60 ? "{n} hour" : "{n} hours", { n: N(n < 60 ? n : n / 60) }) };
+      }) }, String(state.answers.minutes), false, "rp-topics");
     }
     var actions = el("div", null, "rp-actions"), next = el("button", state.step === 4 ? "Find my reading path →" : "Continue →", "btn primary");
     next.type = "submit"; actions.append(next);
-    if (state.step > 0) actions.append(button("Back", function () { navigate(state.step === 4 && !relevantCompetencies().length ? 2 : state.step - 1); }));
-    if (state.step === 3) actions.append(button("Skip · include foundations", function () { state.answers.known = []; navigate(4); }, "rp-text-button"));
+    if (state.step > 0) actions.append(button("Back", function () { navigate(state.step - 1); }));
+    if (state.step === 3) actions.append(button("Skip · include foundations", function () { state.answers.known = []; state.answers.education = "unspecified"; state.answers.studies = "none"; navigate(6); }, "rp-text-button"));
     form.append(actions);
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -152,6 +165,7 @@
         state.answers.goal = form.elements.goal.value.trim(); state.answers.mode = selected(form, "mode") || "guided";
         state.ai = !!(form.elements.ai && form.elements.ai.checked);
         state.answers.topic = ""; state.answers.focus = "";
+        state.answers.diagnosticAnswers = []; state.answers.known = [];
         navigate(1); interview(); return;
       }
       if (state.step === 1) {
@@ -161,12 +175,51 @@
         state.answers.topic = id;
       }
       if (state.step === 2) {
+        if (state.answers.focus !== selected(form, "focus")) state.answers.diagnosticAnswers = [];
         state.answers.focus = selected(form, "focus");
-        if (!relevantCompetencies().length) { navigate(4); return; }
       }
-      if (state.step === 3) state.answers.known = selected(form, "known", true);
+      if (state.step === 3) {
+        state.answers.education = selected(form, "education") || "unspecified";
+        state.answers.studies = selected(form, "studies") || "none";
+        navigate(6); return;
+      }
       if (state.step === 4) { state.answers.minutes = +(selected(form, "minutes") || 30); generate(); return; }
       navigate(state.step + 1);
+    });
+  }
+  function renderDiagnostic() {
+    var q = core.nextQuestion(data, state.answers);
+    if (!q) { navigate(4); return; }
+    var form = panel(q.title, q.prompt);
+    form.dataset.question = q.id;
+    var options = q.choices.map(function (label, i) { return { id: String(i), label: label }; });
+    var rotation = Array.from(q.id).reduce(function (n,c) { return n+c.charCodeAt(0); },0) % options.length;
+    options = options.slice(rotation).concat(options.slice(0,rotation));
+    choices(form, "diagnostic-answer", { title: "What do you think?", items: options.concat([{ id: "unsure", label: T("Not sure / I would need help") }]) }, "", false);
+    selectChoice(form, "confidence", "How sure are you?", [{id:"tentative",label:"I am leaning toward this answer"},{id:"sure",label:"I am quite sure"}], "tentative");
+    form.addEventListener("change", function (event) {
+      if (event.target.name === "diagnostic-answer") {
+        var confidence = form.elements.confidence; confidence.disabled = event.target.value === "unsure";
+        if (confidence.disabled) confidence.value = "tentative";
+      }
+    });
+    var reasonLabel = el("label", "Why do you think so? (optional)"); reasonLabel.htmlFor = "rp-reason";
+    var reason = el("textarea"); reason.id = "rp-reason"; reason.name = "reason"; reason.maxLength = 400;
+    reason.placeholder = T("A sentence about your reasoning is enough. You can compare it with the explanation later.");
+    form.append(reasonLabel, reason);
+    var actions = el("div", null, "rp-actions"), next = el("button", "Continue →", "btn primary"); next.type = "submit";
+    actions.append(next, button("Back", function () {
+      if ((state.answers.diagnosticAnswers || []).length) { state.answers.diagnosticAnswers.pop(); navigate(6); }
+      else navigate(3);
+    }), button("Skip examples · keep foundations", function () {
+      state.answers.diagnosticAnswers = []; state.answers.known = []; navigate(4);
+    }, "rp-text-button")); form.append(actions);
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var answer = selected(form, "diagnostic-answer");
+      if (!answer) { notice("Choose an answer, or choose “not sure”.", true); return; }
+      state.answers.diagnosticAnswers = (state.answers.diagnosticAnswers || []).concat({ question: q.id, answer: answer, confidence: selected(form, "confidence"), reason: reason.value.trim() });
+      navigate(6);
     });
   }
   function renderPlan() {
@@ -186,13 +239,33 @@
       var nextMode = document.getElementById("rp-mode"); if (nextMode) nextMode.focus();
     }); box.append(modeLabel, mode);
     var done = plan.items.filter(function (s) { return state.done.includes(s.id); }).length;
-    var summary = el("p", plan.minutes + " minutes of estimated reading · " + plan.items.length + " steps · budget: " + plan.profile.minutes + " minutes", "rp-summary");
+    var summary = el("p", T("{minutes} minutes of estimated reading · {steps} steps · budget: {budget} minutes", { minutes: N(plan.minutes), steps: N(plan.items.length), budget: N(plan.profile.minutes) }), "rp-summary");
     box.append(summary);
-    if (plan.profile.known.length) box.append(el("p", "Foundations adjusted for your stated familiarity: " + data.competencies.filter(function (c) { return plan.profile.known.includes(c.id); }).map(function (c) { return c.label; }).join(", ") + ".", "rp-small"));
-    if (plan.profile.excluded.length) box.append(el("p", "You chose to skip " + plan.profile.excluded.length + " section(s). Their prerequisites are treated as familiar; edit your answers to bring them back.", "rp-small"));
+    if (plan.profile.education !== "unspecified" || plan.profile.studies !== "none") {
+      box.append(el("p", T("Background: {education}. Related study: {studies}. The examples help decide which foundations to include.", {
+        education: T(core.education.find(function (e) { return e.id === plan.profile.education; }).label),
+        studies: T(core.studies.find(function (s) { return s.id === plan.profile.studies; }).label)
+      }), "rp-small"));
+    }
+    if (plan.profile.known.length) box.append(el("p", T(plan.profile.diagnosticAnswers ? "Your answers suggest familiarity with: {subjects}." : "Foundations adjusted for your stated familiarity: {subjects}.", { subjects: data.competencies.filter(function (c) { return plan.profile.known.includes(c.id); }).map(function (c) { return c.label; }).join(FA ? "، " : ", ") }), "rp-small"));
+    if (plan.assessment.answers.length) {
+      var reflection = el("details", null, "rp-later"); reflection.append(el("summary", "What your examples showed"));
+      reflection.append(el("p", "Two consistent answers can make a foundation optional. A mixed answer or “not sure” keeps a useful introduction. You can change the suggestions."));
+      var reportList = el("ul");
+      plan.assessment.answers.forEach(function (answer) {
+        var question = data.diagnostics.questions.find(function (q) { return q.id === answer.question; });
+        var item = el("li"); item.append(el("b", question.title));
+        item.append(el("p", answer.answer === "unsure" ? "An idea to learn next" : +answer.answer === question.correct ? "This choice fits the example" : "An idea to revisit", "rp-tag"), el("p", question.explanation));
+        item.append(el("p", T("Your answer: {answer}", { answer: answer.answer === "unsure" ? T("Not sure / I would need help") : question.choices[+answer.answer] }), "rp-small"));
+        if (answer.reason) item.append(el("p", T("Your reasoning: {reason}", { reason: answer.reason }), "rp-small"));
+        if (answer.confidence === "sure" && +answer.answer !== question.correct) item.append(el("p", "You felt sure about this answer. Compare the explanation with the reason you had in mind; confidence and support can come apart.", "rp-small"));
+        item.append(link("Read about this idea →", data.sections[question.review.id].url)); reportList.append(item);
+      }); reflection.append(reportList); box.append(reflection);
+    }
+    if (plan.profile.excluded.length) box.append(el("p", T("You chose to skip {n} section(s). Their prerequisites are treated as familiar; edit your answers to bring them back.", { n: N(plan.profile.excluded.length) }), "rp-small"));
     if (plan.items.length) {
-      var progress = el("progress"); progress.max = plan.items.length; progress.value = done; progress.setAttribute("aria-label", "Reading path progress");
-      box.append(el("div", done + " of " + plan.items.length + " steps completed", "rp-completion"), progress);
+      var progress = el("progress"); progress.max = plan.items.length; progress.value = done; progress.setAttribute("aria-label", T("Reading path progress"));
+      box.append(el("div", T("{done} of {total} steps completed", { done: N(done), total: N(plan.items.length) }), "rp-completion"), progress);
       var next = plan.items.find(function (s) { return !state.done.includes(s.id); });
       if (next) { var start = link("", next.url, "rp-next"); start.append(el("span", done ? "Continue your path →" : "Start here →", "rp-step"), el("b", next.title)); box.append(start); }
       else box.append(el("p", "You’ve completed this path. Give yourself time to reflect, or use “Plan the next stretch” to continue.", "rp-empty"));
@@ -200,7 +273,7 @@
     var list = el("ol", null, "rp-list");
     plan.items.forEach(function (s) {
       var item = el("li", null, "rp-item"), content = el("div"); item.append(content);
-      content.append(el("span", "Chapter " + s.chapter + " · " + s.minutes + " min · " + (s.kind === "deep" ? "Deeper study" : s.prerequisite ? "Foundation" : "Chapter section"), "rp-tag"));
+      content.append(el("span", T("Chapter {chapter} · {minutes} min · {kind}", { chapter: N(s.chapter), minutes: N(s.minutes), kind: T(s.kind === "deep" ? "Deeper study" : s.prerequisite ? "Foundation" : "Chapter section") }) + (FA && (s.kind === "deep" || s.language === "en") ? T(" · English") : ""), "rp-tag"));
       var title = el("h3"); title.append(link(s.title, s.url)); content.append(title, el("p", s.why));
       var actions = el("div", null, "rp-actions"), completed = state.done.includes(s.id);
       var mark = button(completed ? "Done ✓ · undo" : "Mark done", function () {
@@ -216,8 +289,8 @@
     }); box.append(list);
     if (plan.later.length) {
       var details = el("details", null, "rp-later"), later = el("ul");
-      details.append(el("summary", "Beyond this first path · " + plan.later.length + " more suggestions"));
-      plan.later.forEach(function (s) { var li = el("li"); li.append(link(s.title + (s.kind === "deep" ? " · Deeper" : "") + " · " + s.minutes + " min", s.url)); later.append(li); });
+      details.append(el("summary", T("Beyond this first path · {n} more suggestions", { n: N(plan.later.length) })));
+      plan.later.forEach(function (s) { var li = el("li"); li.append(link(s.title + (s.kind === "deep" ? T(" · Deeper") : "") + T(" · {n} min", { n: N(s.minutes) }) + (FA && (s.kind === "deep" || s.language === "en") ? T(" · English") : ""), s.url)); later.append(li); });
       details.append(el("p", "These readings are outside the current time budget or mode. Foundations listed here should come before sections that depend on them."), later); box.append(details);
     }
     var actions = el("div", null, "rp-actions");
@@ -236,11 +309,11 @@
   }
   if (!host) return;
   // This page script is loaded after the global AI configuration.
-  fetch(new URL("assets/data/reading-path.json", root)).then(function (r) { if (!r.ok) throw new Error("catalogue"); return r.json(); }).then(function (catalogue) {
+  fetch(new URL("assets/data/reading-path" + (FA ? "-fa" : "") + ".json", root)).then(function (r) { if (!r.ok) throw new Error("catalogue"); return r.json(); }).then(function (catalogue) {
     data = catalogue;
     state.answers = core.normalize(data, state.answers);
     state.done = core.normalize(data, { done: state.done }).done;
-    state.step = Number.isInteger(state.step) && state.step >= 0 && state.step <= 5 ? state.step : 0;
+    state.step = Number.isInteger(state.step) && state.step >= 0 && state.step <= 6 ? state.step : 0;
     if (state.step > 1 && !topic()) state.step = 1;
     if (state.step === 5 && !state.planProfile) state.step = 0;
     render();

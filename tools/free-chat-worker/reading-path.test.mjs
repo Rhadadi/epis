@@ -46,3 +46,15 @@ test('preflight and existing chat streaming continue to work', async () => {
   const res = await worker.fetch(new Request('https://worker.example/v1/chat/completions', { method: 'POST', headers: { Origin: allowed }, body: JSON.stringify({ messages: [{ role: 'user', content: 'Hi' }] }) }), env);
   assert.equal(res.status, 200); assert.match(await res.text(), /"content":"Hello"/);
 });
+
+test('Persian interviews request Persian output and reject an English-only reply', async () => {
+  const body = { goal: 'قضیهٔ بیز را چطور یاد بگیرم؟', mode: 'guided', language: 'fa' };
+  let prompt = '';
+  const env = environment(JSON.stringify({topic:'probability',question:'می‌خواهید اطمینانتان را تغییر دهید یا یک نتیجهٔ آماری را بفهمید؟'}));
+  const original = env.AI.run;
+  env.AI.run = async (_, options) => { prompt = options.messages[0].content; return original(); };
+  assert.equal((await worker.fetch(request(body),env)).status,200);
+  assert.match(prompt,/Persian \(Farsi\)/);
+  assert.equal((await worker.fetch(request(body),environment('{"topic":"probability","question":"Which evidence would change your confidence?"}'))).status,502);
+  assert.equal((await worker.fetch(request({...body,language:'invented'}),env)).status,400);
+});
