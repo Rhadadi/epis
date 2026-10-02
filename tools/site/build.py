@@ -1250,6 +1250,17 @@ def excerpt(text, limit=230):
     return cut[:end + 1] if end > limit // 2 else cut.rsplit(" ", 1)[0].rstrip(",;:—–") + "…"
 
 
+# Sections that are reading apparatus rather than ideas (how to use the guide, summaries, timelines, checklists and exercises) stay
+# in the chapters but are left off the map's wheel.
+MAP_APPARATUS = {(2, "timeline"), (5, "summary-of-theories"), (15, "how-to-use-this-field-guide"), (15, "quick-reference-table"),
+                 (15, "practice-spot-the-fallacy"), (16, "checklists")}
+
+
+def map_title(title):
+    """A section's name for the wheel: the numbering of a sequence ('Step 3: ') is carried by the order, so it is dropped."""
+    return re.sub(r"^(?:Step|گامِ?)\s*[\d۰-۹]+\s*[:：]\s*", "", title).strip() or title
+
+
 def build_map(C, chapters, md, art):
     """The map of the guide, drawn as a planisphere by assets/map.js from the data embedded here: the sixteen chapters
     (each a medallion with its painting) in the guide's five parts, every section of every chapter on the outer orbit,
@@ -1276,10 +1287,10 @@ def build_map(C, chapters, md, art):
         cur = None
         for level, slug, plain in outline[n]:
             if level == 2:
-                cur = None if slug in NOT_SUBSTANTIVE else slug
+                cur = None if slug in NOT_SUBSTANTIVE or (n, slug) in MAP_APPARATUS else slug
                 if cur:
                     at[(n, slug)] = len(sections)
-                    sections.append({"c": n, "id": slug, "t": plain if lang == "en" else FA_HEADS.get((n, slug), plain),
+                    sections.append({"c": n, "id": slug, "t": map_title(plain if lang == "en" else FA_HEADS.get((n, slug), plain)),
                                      "x": excerpt(texts.get(f"{P}guide/{ch.href}#{slug}", "")),
                                      "d": f"../deeper/{ch.slug}/{slug}.html" if slug in pages else "", "k": [], "g": []})
             if cur:
