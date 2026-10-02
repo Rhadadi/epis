@@ -1,0 +1,60 @@
+{
+  "chapter": "15-fallacies",
+  "section": "fallacies-of-ambiguity",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "An argument needs its important terms to retain the meanings on which the inference depends. Ambiguity becomes a reasoning defect when a shift supplies an appearance of support. Clarifying a word can reveal two different arguments, each needing its own defence. Similar mistakes move between individuals and groups or between one shared thing and many different things. Rewrite the claim precisely before deciding whether it follows."
+  ],
+  "sources": [
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Keep the middle term stable",
+        "Structure can be ambiguous too",
+        "Which level carries the property?",
+        "Context is part of what was said",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Amphiboly",
+          "basis": "full text",
+          "excerpt": "This is an error due to taking a grammatically ambiguous phrase in two different ways during the reasoning.",
+          "corpus_chunk": 48653
+        },
+        {
+          "locator": "Composition",
+          "basis": "full text",
+          "excerpt": "The Composition Fallacy occurs when someone mistakenly assumes that a characteristic of some or all the individuals in a group is also a characteristic of the group itself, the group “composed” of those members.",
+          "corpus_chunk": 48688
+        },
+        {
+          "locator": "Division",
+          "basis": "full text",
+          "excerpt": "Merely because a group as a whole has a characteristic, it often doesn’t follow that individuals in the group have that characteristic.",
+          "corpus_chunk": 48701
+        },
+        {
+          "locator": "Equivocation",
+          "basis": "full text",
+          "excerpt": "Equivocation is the illegitimate switching of the meaning of a term that occurs twice during the reasoning; it is the use of one word taken in two ways.",
+          "corpus_chunk": 48703
+        },
+        {
+          "locator": "Quantifier Shift",
+          "basis": "full text",
+          "excerpt": "Confusing the phrase “For all x there is some y” with “There is some (one) y such that for all x.” Example: Everybody loves someone, so there is someone whom everybody loves.",
+          "corpus_chunk": 48770
+        },
+        {
+          "locator": "Quoting out of Context",
+          "basis": "full text",
+          "excerpt": "If you quote someone, but select the quotation so that essential context is not available and therefore the person’s views are distorted, then you’ve quoted “out of context.” Quoting out of context in an argument creates a Straw Man Fallacy.",
+          "corpus_chunk": 48773
+        }
+      ],
+      "annotation": "Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label."
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "chapter": "15-fallacies",
+  "section": "fallacies-of-relevance",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "A reason can be true and still fail to support the claim being disputed. Relevance depends on the conclusion and on how the reason is supposed to bear on it. A speaker's interests may matter to the reliability of testimony without refuting an independently checkable calculation. Emotion can identify what matters without establishing what happened. Diagnose the missing connection before attaching a fallacy label."
+  ],
+  "sources": [
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Fix the target",
+        "Feelings and practical reasons",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.",
+          "corpus_chunk": 39022
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Premise Acceptability Within informal arguments, premises may be acceptable in different ways.",
+          "corpus_chunk": 39023
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.",
+          "corpus_chunk": 39023
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Deeper philosophical issues are tied to questions about the nature of truth.",
+          "corpus_chunk": 39025
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.",
+          "corpus_chunk": 39025
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.",
+          "corpus_chunk": 39027
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Many informal logics emphasize a distinction between deductive and inductive validity.",
+          "corpus_chunk": 39028
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).",
+          "corpus_chunk": 39029
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "AV criteria are in many ways an extension of classical logic’s notion of good argument.",
+          "corpus_chunk": 39030
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Textbooks often elaborate fallacies in ways that add more specialized variants of the standard list of fallacies (“misleading vividness” designating the misuse of vivid anecdotal evidence in a hasty generalizations, and so on.) Woods and Walton 1982, Hansen and Pinto 1995, and the entry on fallacies provide detaileds accounts of fallacies.",
+          "corpus_chunk": 39031
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Battersby and Bailin 2011 view them as patterns of argument that have more persuasive (rhetorical) power than their probative value merits.",
+          "corpus_chunk": 39031
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Appeals to pity and other emotions have, to take one example, a legitimate role to play in moral, political and aesthetic debate.",
+          "corpus_chunk": 39033
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It charges an opponent with a conflict of interest, and this raises legitimate questions about the extent to which their arguments should be entertained.",
+          "corpus_chunk": 39034
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "This is a “slippery slope argument” that argues that something should not be done because it will precipitate a chain of causes that ultimately produce some undesirable end.",
+          "corpus_chunk": 39035
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In contrast, traditional fallacies like ad hominem, two wrongs reasoning, guilt by association, and appeal to pity define patterns of reasoning which can play a legitimate logical role within real life reasoning (and are, in view of this, sometimes treated as argument “schemes” rather than fallacies).",
+          "corpus_chunk": 39036
+        }
+      ],
+      "annotation": "Secondary account of premise acceptability, inference strength, context, and limitations of fallacy theory."
+    },
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Arguments and witnesses",
+        "Feelings and practical reasons",
+        "Restore the disputed claim",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Ad Hominem",
+          "basis": "full text",
+          "excerpt": "Your reasoning contains this fallacy if you make an irrelevant attack on the person arguing and suggest that this attack undermines the argument itself.",
+          "corpus_chunk": 48646
+        },
+        {
+          "locator": "Ad Hominem",
+          "basis": "full text",
+          "excerpt": "For example, attacks on a person for their immoral sexual conduct are irrelevant to the quality of the person’s reasoning about Kepler’s astronomy, but they are relevant to arguments promoting the person for a leadership position in a church or mosque or city council.",
+          "corpus_chunk": 48647
+        },
+        {
+          "locator": "Ad Hominem",
+          "basis": "full text",
+          "excerpt": "If the fallacy focuses on a complaint about the origin of the arguer’s views, then it is a kind of Genetic Fallacy.",
+          "corpus_chunk": 48647
+        },
+        {
+          "locator": "Appeal to Authority",
+          "basis": "full text",
+          "excerpt": "You appeal to authority if you back up your reasoning by saying that it is supported by what some authority says on the subject.",
+          "corpus_chunk": 48656
+        },
+        {
+          "locator": "Appeal to Authority",
+          "basis": "full text",
+          "excerpt": "Example: The moon is covered with dust because the president of our neighborhood association said so.",
+          "corpus_chunk": 48656
+        },
+        {
+          "locator": "Appeal to Emotions",
+          "basis": "full text",
+          "excerpt": "Your reasoning contains the Fallacy of Appeal to Emotions when someone’s appeal to you to accept their claim is accepted merely because the appeal arouses your feelings of anger, fear, grief, love, outrage, pity, pride, sexuality, sympathy, relief, and so forth.",
+          "corpus_chunk": 48659
+        },
+        {
+          "locator": "Appeal to Emotions",
+          "basis": "full text",
+          "excerpt": "Regarding the Fallacy of Appeal to Pity, it is proper to pity people who have had misfortunes, but if as the person’s history instructor you accept Max’s claim that he earned an A on the history quiz because he broke his wrist while playing in your college’s last basketball game, then you’ve used the fallacy of appeal to pity.",
+          "corpus_chunk": 48660
+        },
+        {
+          "locator": "Red Herring",
+          "basis": "full text",
+          "excerpt": "A red herring is a smelly fish that would distract even a bloodhound.",
+          "corpus_chunk": 48775
+        },
+        {
+          "locator": "Straw Man",
+          "basis": "full text",
+          "excerpt": "Your reasoning contains the Straw Man Fallacy whenever you attribute an easily refuted position to your opponent, one that the opponent would not endorse, and then proceed to attack the easily refuted position (the straw man) believing you have thereby undermined the real man, the opponent’s actual position.",
+          "corpus_chunk": 48800
+        },
+        {
+          "locator": "Straw Man",
+          "basis": "full text",
+          "excerpt": "That’s not what I said.” The Speaker has twisted what his Opponent said.",
+          "corpus_chunk": 48800
+        }
+      ],
+      "annotation": "Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label."
+    }
+  ]
+}

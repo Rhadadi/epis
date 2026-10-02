@@ -1,0 +1,124 @@
+== 15-fallacies/causal-and-statistical-fallacies
+Q: A numerical pattern needs an account of how the cases and measurements were produced. A change after an intervention does not by itself establish the intervention's effect. A dramatic result can reflect selective reporting, extreme-case selection, or a search through many possibilities. Different errors require different repairs: better comparisons, clearer denominators, or new evidence. Statistics becomes useful when the design supports the inference being made.
+@fallacy-iep | Common Cause | This fallacy occurs during causal reasoning when a causal connection between two kinds of events is claimed when evidence is available indicating that both are the effect of a common cause.
+@fallacy-iep | Post Hoc | Suppose we notice that an event of kind A is followed in time by an event of kind B, and then hastily leap to the conclusion that A caused B.
+@fallacy-iep | Prosecutor’s Fallacy | This is the mistake of over-emphasizing the strength of a piece of evidence while paying insufficient attention to the context.
+@fallacy-iep | Prosecutor’s Fallacy | Suppose that pool has six million people who could have committed the crime, all other things being equal.
+@fallacy-iep | Regression | This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.
+@fallacy-iep | Regression | There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.
+@fallacy-iep | Sharpshooter’s | The Sharpshooter’s Fallacy gets its name from someone shooting a rifle at the side of the barn and then going over and drawing a target and bulls eye concentrically around the bullet hole.
+@fallacy-iep | Suppressed Evidence | Intentionally failing to use information suspected of being relevant and significant is committing the fallacy of suppressed evidence.
+@fallacy-iep | Suppressed Evidence | If the relevant information is not intentionally suppressed but rather inadvertently overlooked, the fallacy of suppressed evidence also is said to occur, although the fallacy’s name is misleading in this case.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+
+== 15-fallacies/fallacies-of-ambiguity
+Q: An argument needs its important terms to retain the meanings on which the inference depends. Ambiguity becomes a reasoning defect when a shift supplies an appearance of support. Clarifying a word can reveal two different arguments, each needing its own defence. Similar mistakes move between individuals and groups or between one shared thing and many different things. Rewrite the claim precisely before deciding whether it follows.
+@fallacy-iep | Amphiboly | This is an error due to taking a grammatically ambiguous phrase in two different ways during the reasoning.
+@fallacy-iep | Composition | The Composition Fallacy occurs when someone mistakenly assumes that a characteristic of some or all the individuals in a group is also a characteristic of the group itself, the group “composed” of those members.
+@fallacy-iep | Division | Merely because a group as a whole has a characteristic, it often doesn’t follow that individuals in the group have that characteristic.
+@fallacy-iep | Equivocation | Equivocation is the illegitimate switching of the meaning of a term that occurs twice during the reasoning; it is the use of one word taken in two ways.
+@fallacy-iep | Quantifier Shift | Confusing the phrase “For all x there is some y” with “There is some (one) y such that for all x.” Example: Everybody loves someone, so there is someone whom everybody loves.
+@fallacy-iep | Quoting out of Context | If you quote someone, but select the quotation so that essential context is not available and therefore the person’s views are distorted, then you’ve quoted “out of context.” Quoting out of context in an argument creates a Straw Man Fallacy.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+
+== 15-fallacies/fallacies-of-presumption
+Q: Some arguments fail because a crucial assumption has not been earned. The inference may be valid while a premise excludes real possibilities or assumes the disputed conclusion. Questions can hide assumptions too. Expose the assumption, ask what supports it, and preserve whatever remains useful in the argument. An unsupported claim need not be false, but it cannot do the work of an established premise.
+@fallacy-iep | Appeal to Ignorance | The Fallacy of Appeal to Ignorance comes in two forms: (1) Not knowing that a certain statement is true is taken to be a proof that it is false.
+@fallacy-iep | Begging the Question | A form of circular reasoning in which a conclusion is derived from premises that presuppose the conclusion.
+@fallacy-iep | Begging the Question | It is still an open question among logicians as to why some deductively valid arguments are considered to be begging the question and others are not.
+@fallacy-iep | Begging the Question | A third group of logicians say that, in deciding whether the fallacy is present, more evidence is needed.
+@fallacy-iep | Black-or-White | The Black-or-White fallacy or Black-White fallacy is a False Dilemma Fallacy that limits you unfairly to only two choices, as if you were made to choose between black and white.
+@fallacy-iep | Black-or-White | The fallacy shows up in psychology when a person is too apt to treat people simply as friend or enemy, or smart or an idiot.
+@fallacy-iep | Complex Question | You use this fallacy when you frame a question so that some controversial presupposition is made by the wording of the question.
+@fallacy-iep | Suppressed Evidence | Intentionally failing to use information suspected of being relevant and significant is committing the fallacy of suppressed evidence.
+@fallacy-iep | Suppressed Evidence | If the relevant information is not intentionally suppressed but rather inadvertently overlooked, the fallacy of suppressed evidence also is said to occur, although the fallacy’s name is misleading in this case.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+A @groarke2026: Secondary account of premise acceptability, inference strength, context, and limitations of fallacy theory.
+
+== 15-fallacies/fallacies-of-relevance
+Q: A reason can be true and still fail to support the claim being disputed. Relevance depends on the conclusion and on how the reason is supposed to bear on it. A speaker's interests may matter to the reliability of testimony without refuting an independently checkable calculation. Emotion can identify what matters without establishing what happened. Diagnose the missing connection before attaching a fallacy label.
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+@groarke2026 | § 4.2 | AV criteria are in many ways an extension of classical logic’s notion of good argument.
+@groarke2026 | § 4.2 | Textbooks often elaborate fallacies in ways that add more specialized variants of the standard list of fallacies (“misleading vividness” designating the misuse of vivid anecdotal evidence in a hasty generalizations, and so on.) Woods and Walton 1982, Hansen and Pinto 1995, and the entry on fallacies provide detaileds accounts of fallacies.
+@groarke2026 | § 4.2 | Battersby and Bailin 2011 view them as patterns of argument that have more persuasive (rhetorical) power than their probative value merits.
+@groarke2026 | § 4.2 | Appeals to pity and other emotions have, to take one example, a legitimate role to play in moral, political and aesthetic debate.
+@groarke2026 | § 4.2 | It charges an opponent with a conflict of interest, and this raises legitimate questions about the extent to which their arguments should be entertained.
+@groarke2026 | § 4.2 | This is a “slippery slope argument” that argues that something should not be done because it will precipitate a chain of causes that ultimately produce some undesirable end.
+@groarke2026 | § 4.2 | In contrast, traditional fallacies like ad hominem, two wrongs reasoning, guilt by association, and appeal to pity define patterns of reasoning which can play a legitimate logical role within real life reasoning (and are, in view of this, sometimes treated as argument “schemes” rather than fallacies).
+A @groarke2026: Secondary account of premise acceptability, inference strength, context, and limitations of fallacy theory.
+@fallacy-iep | Ad Hominem | Your reasoning contains this fallacy if you make an irrelevant attack on the person arguing and suggest that this attack undermines the argument itself.
+@fallacy-iep | Ad Hominem | For example, attacks on a person for their immoral sexual conduct are irrelevant to the quality of the person’s reasoning about Kepler’s astronomy, but they are relevant to arguments promoting the person for a leadership position in a church or mosque or city council.
+@fallacy-iep | Ad Hominem | If the fallacy focuses on a complaint about the origin of the arguer’s views, then it is a kind of Genetic Fallacy.
+@fallacy-iep | Appeal to Authority | You appeal to authority if you back up your reasoning by saying that it is supported by what some authority says on the subject.
+@fallacy-iep | Appeal to Authority | Example: The moon is covered with dust because the president of our neighborhood association said so.
+@fallacy-iep | Appeal to Emotions | Your reasoning contains the Fallacy of Appeal to Emotions when someone’s appeal to you to accept their claim is accepted merely because the appeal arouses your feelings of anger, fear, grief, love, outrage, pity, pride, sexuality, sympathy, relief, and so forth.
+@fallacy-iep | Appeal to Emotions | Regarding the Fallacy of Appeal to Pity, it is proper to pity people who have had misfortunes, but if as the person’s history instructor you accept Max’s claim that he earned an A on the history quiz because he broke his wrist while playing in your college’s last basketball game, then you’ve used the fallacy of appeal to pity.
+@fallacy-iep | Red Herring | A red herring is a smelly fish that would distract even a bloodhound.
+@fallacy-iep | Straw Man | Your reasoning contains the Straw Man Fallacy whenever you attribute an easily refuted position to your opponent, one that the opponent would not endorse, and then proceed to attack the easily refuted position (the straw man) believing you have thereby undermined the real man, the opponent’s actual position.
+@fallacy-iep | Straw Man | That’s not what I said.” The Speaker has twisted what his Opponent said.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+
+== 15-fallacies/rhetorical-tactics-that-corrupt-discussion
+Q: Discussion can fail even when nobody has offered an invalid inference. Participants can block questions, disguise a claim, or make answering impossible. Assess what a move does to the shared inquiry before diagnosing the speaker's motives. Reasonable persuasion presents a position effectively while keeping it open to criticism. A useful response restores the claim, the evidence standard, and a fair opportunity to answer.
+@hansen2024b | § 3.6 | Some of the most active new researchers on fallacies take a dialectical and/or dialogical approach.
+@hansen2024b | § 3.6 | Barth and Martens’s paper (1977), which studied the argumentum ad hominem by extending Lorenzen’s dialogue tableaux method to include the definitions of the concepts “line of attack” and “winning strategy,” leads to a conception of fallacies as either failures to meet one of the necessary conditions of rational dialogical argumentation, or failures to satisfy sufficient conditions as specified by production rules of the dialogical method (1977, 96).
+@hansen2024b | § 3.6 | The Barth and Martens paper is a bridge between the earlier (quasi-) formal and subsequent informal dialectical theories, and is explicitly acknowledged as a major influence by the Pragma-dialectical theory, the brainchild of Frans van Eemeren and Rob Grootendorst (1984).
+@hansen2024b | § 3.6 | The Pragma-dialecticians propose that inter-personal argumentation can be analysed as two-party-discussions having four analytical stages: a confrontation stage in which the participants become aware of the content of their disagreement; an opening stage in which the parties agree (most likely implicitly) to shared starting points and a set of rules to govern the ensuing discussion; an argumentation stage wherein arguments and doubts about arguments are expressed and recognized; and a final stage in which a decision about the initial disagreement is made, if possible, based on what happened in the argumentation stage.
+@hansen2024b | § 3.6 | A set of ten rules has been proposed as constitutive of the critical-discussion ideal, and the proponents of the theory believe that rational arguers would accept them.
+@hansen2024b | § 3.6 | The rules range over all the four stages of argumentation: at the confrontation stage there is a rule which says one may not prevent the other party from expressing their view; for the argumentation stage there is a rule which requires argumentation to be logically strong and in accord with one or another of three general argumentation schemes; at the closing stage there is a rule that the participants themselves are to decide which party was successful based on the quality of the argumentation they have made: if the proponent carries the day, the opponent should acknowledge it, and vice versa.
+@hansen2024b | § 3.6 | For example, the ad baculum fallacy is a form of intimidation that violates the rule that one may not attempt to prevent one’s discussion partner from expressing their views; equivocation is a violation of the rule that formulations in arguments must be clear and unambiguous; post hoc ergo propter hoc violates the rule that arguments must be instances of schemes correctly applied.
+@hansen2024b | § 3.6 | Clearly not all the rules of critical discussions apply directly to arguments.
+@hansen2024b | § 3.6 | The Pragma-dialectical analysis of fallacies as rule-breakings in a procedure for overcoming disagreements has recently been expanded to take account of the rhetorical dimension of argumentation.
+@hansen2024b | § 3.6 | The ways of strategic maneuvering identified are basically three: topic selection, audience orientation, and the selection of presentational devices, and these can be effectively deployed at each stage of argumentation (Van Eemeren 2010, 94).
+@hansen2024b | § 3.6 | Nevertheless, Pragma-dialectics prefers to keep the appearance condition outside the definition of ‘fallacy’, treating the seeming goodness of fallacies as a sometime co-incidental property, rather than an essential one.
+@hansen2024b | § 3.6 | This approach has been challenged by Douglas Walton who has written more about fallacies and fallacy theory than anyone else.
+A @hansen2024b: Secondary account of pragma-dialectical and other dialogue theories, procedural rules, and reasonable persuasion.
+@fallacy-iep | Misplaced Burden of Proof | Committing the error of trying to get someone else to prove you are wrong, when it is your responsibility to prove you are correct.
+@fallacy-iep | Straw Man | Your reasoning contains the Straw Man Fallacy whenever you attribute an easily refuted position to your opponent, one that the opponent would not endorse, and then proceed to attack the easily refuted position (the straw man) believing you have thereby undermined the real man, the opponent’s actual position.
+@fallacy-iep | Straw Man | That’s not what I said.” The Speaker has twisted what his Opponent said.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+
+== 15-fallacies/the-fallacy-fallacy
+Q: Refuting an argument removes one route to its conclusion. It need not show that the conclusion is false. A correct claim can have a poor defence, and a mistaken defence can be improved. Distinguish rejecting support, withholding belief, and establishing the opposite. The next useful step is to ask what independent evidence bears on the claim.
+@fallacy-iep | Ad Hominem | Your reasoning contains this fallacy if you make an irrelevant attack on the person arguing and suggest that this attack undermines the argument itself.
+@fallacy-iep | Ad Hominem | For example, attacks on a person for their immoral sexual conduct are irrelevant to the quality of the person’s reasoning about Kepler’s astronomy, but they are relevant to arguments promoting the person for a leadership position in a church or mosque or city council.
+@fallacy-iep | Ad Hominem | If the fallacy focuses on a complaint about the origin of the arguer’s views, then it is a kind of Genetic Fallacy.
+@fallacy-iep | Appeal to Authority | You appeal to authority if you back up your reasoning by saying that it is supported by what some authority says on the subject.
+@fallacy-iep | Appeal to Authority | Example: The moon is covered with dust because the president of our neighborhood association said so.
+@fallacy-iep | § 1 | The first known systematic study of fallacies was due to Aristotle in his De Sophisticis Elenchis (Sophistical Refutations), an appendix to his Topics, which is one of his six works on logic.
+@fallacy-iep | § 1 | Depending on the particular theory of fallacies, it might refer either to (a) a kind of error in an argument, (b) a kind of error in reasoning (including arguments, definitions, explanations, questions, and so forth), (c) a false belief, or (d) the cause of any of the previous errors including what are normally referred to as “rhetorical techniques.” Regarding (d), being ill, being hungry, being stupid, being hypercritical, being careless, and being presumptuous are all sources of potential error in reasoning, so they could qualify as fallacies of kind (d), but they are not included in the list below, and most researchers on fallacies
+@fallacy-iep | § 1 | These sources of errors are more about why people commit a fallacy than about what the fallacy is.
+@fallacy-iep | § 1 | The fallacy literature has given some attention to the epistemic role of reasoning.
+A @fallacy-iep: Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label.
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+@groarke2026 | § 4.2 | AV criteria are in many ways an extension of classical logic’s notion of good argument.
+@groarke2026 | § 4.2 | Textbooks often elaborate fallacies in ways that add more specialized variants of the standard list of fallacies (“misleading vividness” designating the misuse of vivid anecdotal evidence in a hasty generalizations, and so on.) Woods and Walton 1982, Hansen and Pinto 1995, and the entry on fallacies provide detaileds accounts of fallacies.
+@groarke2026 | § 4.2 | Battersby and Bailin 2011 view them as patterns of argument that have more persuasive (rhetorical) power than their probative value merits.
+@groarke2026 | § 4.2 | Appeals to pity and other emotions have, to take one example, a legitimate role to play in moral, political and aesthetic debate.
+@groarke2026 | § 4.2 | It charges an opponent with a conflict of interest, and this raises legitimate questions about the extent to which their arguments should be entertained.
+@groarke2026 | § 4.2 | This is a “slippery slope argument” that argues that something should not be done because it will precipitate a chain of causes that ultimately produce some undesirable end.
+@groarke2026 | § 4.2 | In contrast, traditional fallacies like ad hominem, two wrongs reasoning, guilt by association, and appeal to pity define patterns of reasoning which can play a legitimate logical role within real life reasoning (and are, in view of this, sometimes treated as argument “schemes” rather than fallacies).
+A @groarke2026: Secondary account of premise acceptability, inference strength, context, and limitations of fallacy theory.
+
