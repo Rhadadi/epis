@@ -581,9 +581,24 @@ def av(root, name):
     return f"{root}assets/{name}?v={_ASSET_V[name]}"
 
 
+MENU_CHAPTERS = {}  # the chapters of the language being built, for the chapter menu on pages that are not chapters
+
+
+def chapter_menu(root):
+    """The chapter menu for any page that is not itself a chapter: every chapter, and the contents page."""
+    if not MENU_CHAPTERS:
+        return ""
+    g = f"{home(root)}guide/"
+    items = "".join(f'<li><a href="{g}{c.href}"><small>{c.label}</small><span>{esc(c.title)}</span></a></li>' for _, c in sorted(MENU_CHAPTERS.items()))
+    return (f'<nav class="chsw" aria-label="{L("Chapters", "فصل‌ها")}"><details class="chsw-pick"><summary class="tbtn" '
+            f'title="{L("Chapters", "فصل‌ها")}" aria-label="{L("Chapters", "فصل‌ها")}">{icon("toc")}</summary>'
+            f'<div class="chsw-panel"><ol>{items}</ol><a class="all" href="{g}">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></div></details></nav>')
+
+
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
           alt=None, bilingual=False, chapter_nav="", extra_scripts=""):
     h = home(root)
+    chapter_nav = chapter_nav or chapter_menu(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
            ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن"))]
     here = ' aria-current="page"'
@@ -3492,6 +3507,8 @@ def load_chapters(tracks):
 def build_language(art, md, C, tracks):
     reset_learning()
     chapters = load_chapters(tracks)
+    MENU_CHAPTERS.clear()
+    MENU_CHAPTERS.update(chapters)
     if LANG == "en":
         EN_CHAPTERS.clear()
         EN_CHAPTERS.update(chapters)

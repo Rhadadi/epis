@@ -168,6 +168,32 @@
   (function fitQuestion() {
     var t = svg.querySelector(".qtext"), path = svg.querySelector("#qpath");
     if (!t) return;
+    if (FA) {
+      // Persian letters join, and a browser that sets text along a curve breaks the joins: so each word is set upright
+      // by itself and placed on the arc, the first word at the right
+      var NS = "http://www.w3.org/2000/svg", words = D.q.split(/\s+/), el = [], widths = [], total = 0, GAP = 3.5;
+      var fsz = 9.5;
+      words.forEach(function (w) {
+        var x = document.createElementNS(NS, "text");
+        x.setAttribute("class", "qtext qw"); x.setAttribute("direction", "rtl"); x.textContent = w;
+        t.parentNode.insertBefore(x, t); el.push(x);
+        var len = 0; try { len = x.getComputedTextLength(); } catch (e) { len = w.length * 5; }
+        widths.push(len); total += len;
+      });
+      total += GAP * (words.length - 1);
+      var MAXS = 3.55, k = Math.min(1, R_Q * MAXS * 0.95 / total);
+      total *= k;
+      var off = -total / 2;
+      el.forEach(function (x, i) {
+        var wl = widths[i] * k, mid = off + wl / 2, a = -Math.PI / 2 + (-mid / R_Q), pp = P(R_Q, a);
+        x.style.fontSize = (fsz * k).toFixed(2) + "px";
+        x.setAttribute("transform", "translate(" + pt(pp).replace(" ", ",") + ") rotate(" + f1((a + Math.PI / 2) * 180 / Math.PI) + ")");
+        x.setAttribute("text-anchor", "middle");
+        off += wl + GAP * k;
+      });
+      t.parentNode.removeChild(t);
+      return;
+    }
     var arc = function (span) {
       var a0 = -Math.PI / 2 - span / 2, a1 = -Math.PI / 2 + span / 2;
       path.setAttribute("d", "M" + pt(P(R_Q, a0)) + "A" + R_Q + " " + R_Q + " 0 " + (span > Math.PI ? 1 : 0) + " 1 " + pt(P(R_Q, a1)));
