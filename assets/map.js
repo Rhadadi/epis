@@ -70,6 +70,47 @@
   };
   S.forEach(function (s) { s.lab = short(s.t, FA ? 30 : 34); });
 
+  var REL = D.rel || [], F = D.files || {}, SITE = new URL(D.site, location.href).href;
+  var phone = function () { return window.matchMedia("(max-width: 900px)").matches; };
+  var view = "over", trail = [];
+  var hood = chart.querySelector(".hood"), tabs = Array.prototype.slice.call(chart.querySelectorAll(".viewtabs [data-view]"));
+  var pad2 = function (n) { return (n < 10 ? "0" : "") + n; };
+  // text for matching: Persian and Arabic letter forms, digits, vowel marks and half-spaces made alike
+  var plain = function (s) {
+    return String(s || "").toLowerCase().replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/[٠-٩]/g, function (c) { return c.charCodeAt(0) - 1632; })
+      .replace(/[۰-۹]/g, function (c) { return c.charCodeAt(0) - 1776; }).replace(/[ً-ٰٟـ]/g, "").replace(/[‌‏]/g, " ").replace(/\s+/g, " ");
+  };
+
+  /* what the reader has seen, checked and saved here, kept in this browser only */
+  var MKEY = "epis-map";
+  var mem = { seen: {}, chk: {}, saved: [] };
+  try {
+    var mv = JSON.parse(localStorage.getItem(MKEY) || "{}");
+    mem = { seen: mv.seen || {}, chk: mv.chk || {}, saved: Array.isArray(mv.saved) ? mv.saved : [] };
+  } catch (e) { /* private mode */ }
+  function memSave() { try { localStorage.setItem(MKEY, JSON.stringify(mem)); } catch (e) { /* private mode */ } }
+
+  /* data fetched after the map is drawn: the idea cards, the sentences behind the cross-references, the reading-path catalogue */
+  var cards = null, passages = null, rpData = null, rpState = null;
+  function getJSON(url, cb) { fetch(url).then(function (r) { return r.ok ? r.json() : null; }).then(cb, function () { cb(null); }); }
+  function readRP() {
+    try { var v = JSON.parse(localStorage.getItem("epis-reading-path") || "{}"); rpState = v && v.v === 1 ? v : null; } catch (e) { rpState = null; }
+  }
+  readRP();
+  function rpPlan() {
+    if (!rpState || !rpState.planProfile || !rpData || !window.EpisReadingPath) return null;
+    try { var p = window.EpisReadingPath.recommend(rpData, rpState.planProfile); return p && p.items && p.items.length ? p : null; } catch (e) { return null; }
+  }
+  var keyOfRP = function (id) { var m = /^(\d\d)\/([^:]+)/.exec(id); return m ? "ch" + (+m[1]) + "/" + m[2] : ""; };
+  var rpOf = function (i) { return pad2(S[i].c) + "/" + S[i].id; };
+  var rpDone = function (id) { return !!rpState && Array.isArray(rpState.done) && rpState.done.indexOf(id) >= 0; };
+  function prereqs(i) {
+    var list = rpData && rpData.prerequisites && rpData.prerequisites[rpOf(i)] || [];
+    return list.map(function (p) { return { i: secByKey[keyOfRP(p.id)], why: p.why }; }).filter(function (p) { return p.i !== undefined; });
+  }
+  var lw = {};
+  D.links.forEach(function (l) { lw[l[0] + ">" + l[1]] = l[2]; });
+
   /* ------------------------------------------------------------ geometry (world units, centred on 0,0) */
   var R_ROOT = 42, R_Q = 56, R_HUB = 106, R_CH = 180, R_MED = 22, R_BAND = 250, R2 = 262, LBL = 8;
   var GAP_CH = 1.5, GAP_PART = 3.8, FS_MAX = 12, FS_CH = 12.5, CW = FA ? 0.52 : 0.56;
@@ -330,15 +371,17 @@
   function size() {
     var b = svg.getBoundingClientRect();
     W = b.width; H = b.height;
+    if (!W) return;
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    svg.classList.toggle("compact", phone());
   }
-  function sheetH() { return !narrow() ? 0 : panel.classList.contains("open") ? panel.getBoundingClientRect().height : 86; }
+  function sheetH() { return 0; }
   function apply() {
     world.setAttribute("transform", "translate(" + f1(tx) + "," + f1(ty) + ") scale(" + sc.toFixed(4) + ")");
   }
   var MINS = 0.2, MAXS = 3;
   function fitCam(box, maxScale) {
-    var pad = narrow() ? 10 : 18, top = narrow() ? 64 : 12, avH = H - sheetH() - top - (narrow() ? 6 : 12);
+    var pad = narrow() ? 10 : 18, top = 10, avH = H - sheetH() - top - (narrow() ? 6 : 12);
     var s = Math.min((W - 2 * pad) / (box[2] - box[0]), (avH - pad) / (box[3] - box[1]), maxScale || 1.4);
     s = clamp(s, MINS, MAXS);
     return { tx: W / 2 - (box[0] + box[2]) / 2 * s, ty: top + avH / 2 - (box[1] + box[3]) / 2 * s, sc: s };
@@ -498,15 +541,23 @@
     if (s.kind === "path") pathIdx = s.j;
     else if (s.kind === "root" && !opts.keepPath) pathIdx = -1;
     sel = s; selId = id; hover = null;
+    var idea = s.kind === "sec" || s.kind === "con" || s.kind === "ch";
+    // on a phone the wheel is for choosing; what is chosen opens in the explore view, where its labels can be read
+    if (idea && view === "list") setView("exp", { quiet: true });
+    else if (idea && view === "over" && phone()) setView("exp", { quiet: true });
     E.route.classList.toggle("on", pathIdx >= 0);
     if (pathIdx >= 0) drawRoute(true);
+    mineMap = view === "path" ? mineSteps() : {};
     markPops();
     paint();
     renderPanel();
-    if (opts.hash !== false) {
-      try { history.replaceState(null, "", id === "root" ? location.pathname + location.search : "#" + id); } catch (_) { /* file: URLs */ }
+    if (view === "exp") {
+      if (centreOf(sel) !== null && trail[trail.length - 1] !== selId) { trail.push(selId); if (trail.length > 30) trail.shift(); }
+      renderHood();
     }
-    if (opts.move === false) { renderLabels(); return; }
+    markSeen(s);
+    if (opts.hash !== false) syncHash();
+    if (!wheelVisible() || opts.move === false) { renderLabels(); return; }
     var lay = layoutFor(s);
     roomFor = lay.lw;
     animate(lay, camAfter(lay, s), opts.dur === undefined ? 760 : opts.dur);
@@ -526,6 +577,7 @@
       var L = linked(fi);
       Object.keys(L.secs).forEach(function (j) { S[j]._pop = true; });
     }
+    Object.keys(mineMap).forEach(function (i) { S[i]._pop = true; });
   }
   function paint() {
     var v = hover || sel, f = focusChapter(v), fi = focusSection(v), hiCh = {}, lnkCh = {}, lnkSec = {}, chordOn = {}, fanOn = {};
@@ -563,6 +615,7 @@
       g.classList.toggle("sel", i === fi);
       g.classList.toggle("lnk", !!lnkSec[i]);
       g.classList.toggle("here", !!latest && latest.i === i);
+      g.classList.toggle("mine", !!mineMap[i]);
       g.setAttribute("tabindex", s.c === focusCh ? "0" : "-1");
     });
     E.fan.forEach(function (p, i) { p.classList.toggle("in", !!hiCh[S[i].c]); p.classList.toggle("on", !!fanOn[i]); });
@@ -627,6 +680,15 @@
   }
   function renderPanel() {
     var s = sel, html = "";
+    if (view === "path") { renderMine(); return; }
+    var tg = cardTarget(s);
+    if (tg) {
+      panel.innerHTML = cardHtml(tg.i, tg.cid);
+      panel.scrollTop = 0;
+      panel.classList.add("open");
+      syncToggle();
+      return;
+    }
     if (s.kind === "root") {
       html = head([], U.kmap, D.root.t);
       html += '<div class="p-body">';
@@ -652,22 +714,14 @@
       var p = PARTS[s.j];
       html = head([["root", D.root.t]], p.l, p.t, s.j) + '<div class="p-body"><ul class="p-list chl">' +
              p.ch.map(function (n) { return chBtn(n, esc(chOf(n).b)); }).join("") + "</ul></div>";
-    } else if (s.kind === "ch" || (s.kind === "con" && CON[s.id].s < 0)) {
-      var n = focusChapter(s), c = chOf(n), cid = s.kind === "con" ? s.id : null;
-      if (cid) {
-        var cc = CON[cid];
-        html = head([["root", D.root.t], ["ch" + n, shortCh(n)]], U.concept + " · " + c.l, cc.t, c.p) + '<div class="p-body">';
-        if (cc.l) html += '<p class="p-line">' + esc(cc.l) + "</p>";
-        html += '<div class="p-acts"><a class="btn primary" href="../concepts/' + esc(cid) + '.html">' + esc(U.entry) + " " + ARROW + "</a></div>";
-        html += sec3(esc(U.where), '<a class="guidebox" href="' + esc(c.h) + '"><img src="' + esc(c.im) + '" alt="" loading="lazy"><span><small>' + esc(c.l) +
-                "</small><b>" + esc(c.t) + '</b><small class="sec">' + esc(U.read) + "</small></span></a>");
-        html += relatedConcepts(cid);
-        html += "</div>";
-      } else {
+    } else if (s.kind === "ch") {
+      var n = focusChapter(s), c = chOf(n);
+      {
         html = head([["root", D.root.t], ["part-" + (c.p + 1), PARTS[c.p].l]], c.l + " · " + PARTS[c.p].t, c.t, c.p) + '<div class="p-body">';
         if (c.b) html += '<p class="p-line">' + esc(c.b) + "</p>";
-        html += progressBox(c);
+        html += statusHtml(-1, null, n) + progressBox(c);
         html += '<div class="p-acts"><a class="btn primary" href="' + esc(c.h) + '">' + esc(U.read) + " " + ARROW + "</a>" +
+                '<button type="button" class="btn" data-act="explore" data-key="ch' + n + '">' + esc(U.aExplore) + "</button>" +
                 (c.a ? '<a class="btn" href="../guide/audio/#' + c.n + '">' + esc(fmt(U.listen, { n: c.a })) + "</a>" : "") + "</div>";
         var extras = (c.dp ? '<a href="' + esc(c.dp) + '">' + esc(U.deeper) + " " + ARROW + "</a>" : "") + (c.rv ? '<a href="' + esc(c.rv) + '">' + esc(U.practise) + " " + ARROW + "</a>" : "");
         if (extras) html += '<p class="p-more">' + extras + "</p>";
@@ -680,40 +734,6 @@
         if (ons.length) html += sec3(esc(U.onpaths), '<ul class="p-list">' + ons.map(function (x) {
           return "<li>" + btn("path-" + x.j, '<i class="pdot route" aria-hidden="true"></i><span><b>' + esc(x.p.t) + "</b></span>") + "</li>";
         }).join("") + "</ul>");
-        html += "</div>";
-      }
-    } else if (s.kind === "sec" || s.kind === "con") {
-      var i = focusSection(s), se = S[i], sc_ = chOf(se.c), con = s.kind === "con" ? s.id : null;
-      var crumbs = [["root", D.root.t], ["ch" + se.c, shortCh(se.c)]];
-      if (con) {
-        var co = CON[con];
-        crumbs.push([se.key, "§ " + short(se.t, 28)]);
-        html = head(crumbs, U.concept + " · " + sc_.l, co.t, sc_.p) + '<div class="p-body">';
-        if (co.l) html += '<p class="p-line">' + esc(co.l) + "</p>";
-        html += '<div class="p-acts"><a class="btn primary" href="../concepts/' + esc(con) + '.html">' + esc(U.entry) + " " + ARROW + "</a></div>";
-        html += sec3(esc(U.where), '<a class="guidebox" href="' + esc(sc_.h + "#" + (co.a || se.id)) + '"><img src="' + esc(sc_.im) + '" alt="" loading="lazy"><span><small>' +
-                esc(sc_.l) + "</small><b>" + esc(sc_.t) + '</b><small class="sec">§ ' + esc(se.t) + "</small></span></a>" +
-                '<p class="p-more">' + btn(se.key, esc(U.showsec) + " " + ARROW, "lnkbtn") + "</p>");
-        html += relatedConcepts(con);
-        var same = se.k.filter(function (x) { return x !== con; });
-        if (same.length) html += sec3(esc(U.same), '<ul class="p-list">' + same.map(conBtn).join("") + "</ul>");
-        html += "</div>";
-      } else {
-        html = head(crumbs, sc_.l + " · " + fmt(U.sec, { i: se.ord + 1, n: sc_.secs.length }), se.t, sc_.p) + '<div class="p-body">';
-        if (se.x) html += '<p class="p-ex">' + esc(se.x) + "</p>";
-        html += '<div class="p-acts"><a class="btn primary" href="' + esc(sc_.h + "#" + se.id) + '">' + esc(U.readsec) + " " + ARROW + "</a>" +
-                (se.d ? '<a class="btn" href="' + esc(se.d) + '">' + esc(U.deeper) + "</a>" : "") + "</div>";
-        if (se.k.length) html += sec3(esc(U.entries), '<ul class="p-list">' + se.k.map(conBtn).join("") + "</ul>");
-        if (se.g.length) html += sec3(esc(U.terms), '<ul class="p-tags">' + se.g.map(function (g) { return '<li><a href="' + esc(g[1]) + '">' + esc(g[0]) + "</a></li>"; }).join("") + "</ul>");
-        var outs = out[i], ins = inn[i];
-        var refList = function (list) {
-          return '<ul class="p-list">' + list.map(function (j) { return j >= 0 ? secBtn(j, shortCh(S[j].c)) : chBtn(-j); }).join("") + "</ul>";
-        };
-        if (outs.length) html += sec3(esc(U.out) + " · " + digits(outs.length), refList(outs));
-        if (ins.length) html += sec3(esc(U["in"]) + " · " + digits(ins.length), refList(ins));
-        var prev = i > 0 ? S[i - 1] : null, next = i < nS - 1 ? S[i + 1] : null;
-        html += '<nav class="p-step">' + (prev ? btn(prev.key, "<small>" + (FA ? "→ " : "← ") + esc(U.prev) + "</small><b>" + esc(short(prev.t, 30)) + "</b>", "pv") : "<span></span>") +
-                (next ? btn(next.key, "<small>" + esc(U.next) + (FA ? " ←" : " →") + "</small><b>" + esc(short(next.t, 30)) + "</b>", "nx") : "") + "</nav>";
         html += "</div>";
       }
     } else if (s.kind === "path") {
@@ -737,6 +757,20 @@
     var ks = CON[id].k.filter(function (x) { return CON[x]; });
     return ks.length ? sec3(esc(U.related), '<ul class="p-list">' + ks.map(conBtn).join("") + "</ul>") : "";
   }
+  function act(name, key) {
+    if (name === "explore") { select(key, { keepPath: true }); setView("exp"); }
+    else if (name === "save" || name === "unsave") {
+      var at_ = mem.saved.indexOf(key);
+      if (name === "unsave" || at_ >= 0) { if (at_ >= 0) mem.saved.splice(at_, 1); } else mem.saved.push(key);
+      memSave(); renderPanel();
+    } else if (name === "got" || name === "again") {
+      if (name === "got") mem.chk[key] = 1; else delete mem.chk[key];
+      memSave();
+      var tg = cardTarget(sel), chip = panel.querySelector(".p-status");
+      if (tg && chip) chip.outerHTML = statusHtml(tg.i, tg.cid, 0);
+      panel.querySelectorAll("[data-act=got]").forEach(function (b) { b.classList.toggle("on", !!mem.chk[key]); });
+    } else if (name === "leave") { pathIdx = -1; select("root"); }
+  }
   function syncToggle() {
     var t = panel.querySelector(".p-toggle");
     if (!t) return;
@@ -745,13 +779,310 @@
     t.setAttribute("aria-label", open ? U.close : U.open);
   }
   panel.addEventListener("click", function (e) {
+    var a = e.target.closest("[data-act]");
+    if (a && panel.contains(a)) { act(a.getAttribute("data-act"), a.getAttribute("data-key")); return; }
     var b = e.target.closest("[data-sel]");
     if (b) { select(b.getAttribute("data-sel"), { keepPath: true }); return; }
-    if (e.target.closest("[data-act=leave]")) { pathIdx = -1; select("root"); return; }
     if (e.target.closest(".p-toggle") || (narrow() && e.target.closest(".p-head") && !e.target.closest("a,button"))) {
       panel.classList.toggle("open"); syncToggle();
     }
   });
+
+  /* ------------------------------------------------------------ status, saving and the idea card */
+  var keyOf = function (s) { return s.kind === "sec" ? S[s.i].key : s.kind === "con" ? s.id : s.kind === "ch" ? "ch" + s.n : null; };
+  var fresh = null;  // the idea in front of you is not 'visited' until you have been somewhere else and come back
+  function markSeen(s) { var k = keyOf(s); fresh = null; if (k && !mem.seen[k]) { mem.seen[k] = 1; fresh = k; memSave(); } }
+  // the section an idea sits on, as {i, cid}: a section, a concept entry with its section, or a concept that belongs to a whole chapter
+  function cardTarget(s) {
+    if (s.kind === "sec") return { i: s.i, cid: null };
+    if (s.kind === "con") return { i: CON[s.id].s, cid: s.id };
+    return null;
+  }
+  function statusHtml(i, cid, n) {
+    var key = cid || (i >= 0 ? S[i].key : "ch" + n), chips = [];
+    if (mem.seen[key] && key !== fresh) chips.push(["seen", U.sVisited]);
+    if ((i >= 0 && rpDone(rpOf(i))) || (i < 0 && !cid && chOf(n).pr > 0.97)) chips.push(["read", U.sRead]);
+    if (mem.chk[key]) chips.push(["chk", U.sChecked]);
+    return '<p class="p-status">' + chips.map(function (c) { return '<span class="st st-' + c[0] + '">' + esc(c[1]) + "</span>"; }).join("") + "</p>";
+  }
+  function cardHtml(i, cid) {
+    var se = i >= 0 ? S[i] : null, chn = se ? se.c : CON[cid].c, c = chOf(chn), co = cid ? CON[cid] : null, cd = cid && cards ? cards[cid] || {} : {};
+    var key = cid || se.key, title = co ? co.t : se.t;
+    var crumbs = [["root", D.root.t], ["ch" + chn, shortCh(chn)]];
+    if (cid && se) crumbs.push([se.key, "§ " + short(se.t, 28)]);
+    var kicker = (cid ? U.concept + " · " : "") + c.l + (!cid && se ? " · " + fmt(U.sec, { i: se.ord + 1, n: c.secs.length }) : "");
+    var html = head(crumbs, kicker, title, c.p) + '<div class="p-body">';
+    html += statusHtml(i, cid, chn);
+    var words = cd.i || (co ? co.l : se.x);
+    if (words) html += sec3(esc(U.cWhat), '<p class="p-ex">' + esc(words) + "</p>");
+    if (cd.w) html += sec3(esc(U.cQ), '<p class="p-ex">' + esc(cd.w) + "</p>");
+    if (cd.x) html += sec3(esc(U.cEx), '<p class="p-ex">' + esc(cd.x) + "</p>");
+    var readHref = se ? c.h + "#" + (cid && co.a ? co.a : se.id) : c.h;
+    var saved = mem.saved.indexOf(key) >= 0, nconn = i >= 0 ? neighbours(i).length : 0;
+    html += '<div class="p-acts"><a class="btn primary" href="' + esc(readHref) + '">' + esc(U.aRead) + " " + ARROW + "</a>" +
+            '<button type="button" class="btn" data-act="explore" data-key="' + esc(se ? se.key : "ch" + chn) + '">' + esc(U.aExplore) + (nconn ? " · " + digits(nconn) : "") + "</button>" +
+            '<button type="button" class="btn' + (saved ? " on" : "") + '" data-act="save" data-key="' + esc(key) + '" aria-pressed="' + saved + '">' + esc(saved ? U.aSaved : U.aSave) + "</button></div>";
+    var extras = (cid ? '<a href="../concepts/' + esc(cid) + '.html">' + esc(U.entry) + " " + ARROW + "</a>" : "") + (se && se.d ? '<a href="' + esc(se.d) + '">' + esc(U.deeper) + " " + ARROW + "</a>" : "");
+    if (extras) html += '<p class="p-more">' + extras + "</p>";
+    var pre = i >= 0 ? prereqs(i) : [];
+    if (pre.length) html += sec3(esc(U.cBack), '<ul class="p-list">' + pre.map(function (p) {
+      return "<li>" + btn(S[p.i].key, dot(chOf(S[p.i].c).p) + "<span><b>" + esc(S[p.i].t) + "</b><em>" + esc(p.why) + "</em></span>") + "</li>";
+    }).join("") + "</ul>");
+    if (cd.q) {
+      html += sec3(esc(U.cCheck), '<p class="p-ex">' + esc(cd.q) + "</p>" + (cd.a ? '<details class="p-check"><summary>' + esc(U.cShow) + "</summary><p>" + esc(cd.a) + "</p>" +
+              '<div class="p-acts"><button type="button" class="btn' + (mem.chk[key] ? " on" : "") + '" data-act="got" data-key="' + esc(key) + '">' + esc(U.cGot) + "</button>" +
+              '<button type="button" class="btn" data-act="again" data-key="' + esc(key) + '">' + esc(U.cAgain) + "</button></div></details>" : ""));
+    }
+    if (se && se.k.length && !cid) html += sec3(esc(U.entries), '<ul class="p-list">' + se.k.map(conBtn).join("") + "</ul>");
+    if (cid && se) {
+      var same = se.k.filter(function (x) { return x !== cid; });
+      if (same.length) html += sec3(esc(U.same), '<ul class="p-list">' + same.map(conBtn).join("") + "</ul>");
+      html += relatedConcepts(cid);
+    }
+    if (se && se.g.length && !cid) html += sec3(esc(U.terms), '<ul class="p-tags">' + se.g.map(function (g) { return '<li><a href="' + esc(g[1]) + '">' + esc(g[0]) + "</a></li>"; }).join("") + "</ul>");
+    return html + "</div>";
+  }
+
+  /* ------------------------------------------------------------ the neighbourhood of one idea */
+  var nodeTitle = function (n) { return n >= 0 ? S[n].t : chOf(-n).sh; };
+  var nodeSub = function (n) { return n >= 0 ? chOf(S[n].c).l : chOf(-n).t; };
+  var nodeP = function (n) { return n >= 0 ? chOf(S[n].c).p : chOf(-n).p; };
+  var nodeKey = function (n) { return n >= 0 ? S[n].key : "ch" + (-n); };
+  var nodeHref = function (n) { return n >= 0 ? chOf(S[n].c).h + "#" + S[n].id : chOf(-n).h; };
+  // the four to eight ideas most worth seeing beside this one: editorial relations first, then what to read first, then the guide's own references
+  function neighbours(c) {
+    var list = [], seen = {};
+    function add(kind, side, node, text, from, to) {
+      if (seen[node]) return;
+      seen[node] = 1;
+      list.push({ kind: kind, side: side, node: node, text: text || "", from: from, to: to });
+    }
+    if (c < 0) {
+      partners(-c).slice(0, 8).forEach(function (x, k) { add("xref", k % 2 ? "out" : "in", -x.n, "", c, -x.n); if (list.length) list[list.length - 1].w = x.w; });
+      return list;
+    }
+    REL.forEach(function (r) {
+      if (r[0] === c) add(r[2], "out", r[1], r[3], c, r[1]);
+      else if (r[1] === c) add(r[2], "in", r[0], r[3], r[0], c);
+    });
+    prereqs(c).forEach(function (p) { add("pre", "in", p.i, p.why, p.i, c); });
+    // the guide's own references: the same chapter first, then the nearer chapters, then the most repeated
+    var rank = function (other) { var n = other >= 0 ? S[other].c : -other; return Math.abs(n - S[c].c); };
+    D.links.filter(function (l) { return l[0] === c; }).sort(function (a, b) { return rank(a[1]) - rank(b[1]) || b[2] - a[2]; })
+      .forEach(function (l) { add("xref", "out", l[1], "", c, l[1]); });
+    D.links.filter(function (l) { return l[1] === c; }).sort(function (a, b) { return rank(a[0]) - rank(b[0]) || b[2] - a[2]; })
+      .forEach(function (l) { add("xref", "in", l[0], "", l[0], c); });
+    list = list.slice(0, 8);
+    seen = {}; list.forEach(function (n) { seen[n.node] = 1; });
+    if (list.length < 4) {
+      if (c > 0 && S[c - 1].c === S[c].c) add("seq", "in", c - 1, "", c - 1, c);
+      if (c < nS - 1 && S[c + 1].c === S[c].c) add("seq", "out", c + 1, "", c, c + 1);
+    }
+    return list;
+  }
+  var hoodCentre = null, nbs = [], cxSel = 0;
+  function centreOf(s) {
+    if (s.kind === "sec") return s.i;
+    if (s.kind === "con") return CON[s.id].s >= 0 ? CON[s.id].s : -CON[s.id].c;
+    if (s.kind === "ch") return -s.n;
+    return null;
+  }
+  function passageFor(nb) {
+    var key = nb.from + ">" + nb.to;
+    if (!passages || !passages[key]) return null;
+    return { text: passages[key], at: nb.from };
+  }
+  function whyHtml() {
+    var nb = nbs[cxSel], c = hoodCentre;
+    if (!nb) return "";
+    var from = nb.from, to = nb.to, label = U[nb.side][nb.kind] || "";
+    var h = '<div class="why-head"><span class="kindchip k-' + nb.kind + '">' + esc(label) + "</span>" +
+            '<b class="why-pair">' + esc(nodeTitle(from)) + ' <i aria-hidden="true">' + ARROW + "</i> " + esc(nodeTitle(to)) + "</b></div>";
+    if (nb.text) h += '<p class="why-text">' + esc(nb.text) + (nb.kind !== "pre" ? ' <small class="why-tag">' + esc(U.editor) + "</small>" : "") + "</p>";
+    else if (nb.w) h += '<p class="why-text">' + esc(fmt(U.linksn, { n: nb.w })) + "</p>";
+    var ps = passageFor(nb);
+    if (ps) h += '<blockquote class="why-quote"><small>' + esc(U.passage) + '</small><p>“' + esc(ps.text) + "”</p></blockquote>";
+    else if (!nb.text && nb.kind !== "seq" && !nb.w) h += '<p class="why-text">' + esc(U.noRel) + "</p>";
+    h += '<div class="p-acts"><button type="button" class="btn primary" data-act="go" data-key="' + esc(nodeKey(nb.node)) + '">' + esc(U.exploreX) + " " + ARROW + "</button>" +
+         '<a class="btn" href="' + esc(nodeHref(ps ? ps.at : nb.node)) + '">' + esc(U.readPassage) + "</a></div>";
+    return h;
+  }
+  function nbHtml(nb, k) {
+    return '<li><button type="button" class="hn k-' + nb.kind + " p" + nodeP(nb.node) + (k === cxSel ? " on" : "") + (mem.seen[nodeKey(nb.node)] ? " seen" : "") +
+           '" data-n="' + k + '" aria-pressed="' + (k === cxSel) + '"><small>' + esc(U[nb.side][nb.kind] || "") + "</small><b>" + esc(nodeTitle(nb.node)) + "</b><em>" + esc(nodeSub(nb.node)) + "</em></button></li>";
+  }
+  function trailChips() {
+    return trail.slice(-5).map(function (id, k, arr) {
+      var s = parse(id), c = s && centreOf(s);
+      return c === null || c === undefined ? "" : '<button type="button" class="tr' + (k === arr.length - 1 ? " on" : "") + '" data-sel="' + esc(id) + '">' + esc(short(nodeTitle(c), 22)) + "</button>";
+    }).join("");
+  }
+  function renderHood() {
+    if (view !== "exp") return;
+    var c = centreOf(sel);
+    var bar = '<div class="hood-bar"><button type="button" class="hb" data-act="back"' + (trail.length > 1 ? "" : " disabled") + ">" + esc((FA ? "→ " : "← ") + U.nBack) + "</button>" +
+              '<button type="button" class="hb" data-act="overview">' + esc(U.nOver) + "</button>" +
+              '<span class="hood-trail" aria-label="' + esc(U.trail) + '">' + trailChips() + "</span>" +
+              '<button type="button" class="hb nx" data-act="next"' + (c === null ? " disabled" : "") + ">" + esc(U.nNext + (FA ? " ←" : " →")) + "</button></div>";
+    if (c === null) { hood.innerHTML = bar + '<div class="hood-empty"><p>' + esc(U.expEmpty) + "</p>" + listHtml() + "</div>"; hoodCentre = null; return; }
+    hoodCentre = c; nbs = neighbours(c); cxSel = 0;
+    var ins = [], outs = [];
+    nbs.forEach(function (nb, k) { (nb.side === "in" ? ins : outs).push(nbHtml(nb, k)); });
+    var cc = c >= 0 ? chOf(S[c].c) : chOf(-c), body = c >= 0 ? S[c].x : cc.b;
+    var cen = '<div class="hood-centre p' + cc.p + '"><small>' + esc(U.centre + " · " + cc.l) + "</small><h2>" + esc(c >= 0 ? S[c].t : cc.t) + "</h2>" +
+              (body ? "<p>" + esc(short(body, 150)) + "</p>" : "") + "</div>";
+    hood.innerHTML = bar + '<div class="hood-stage"><svg class="hood-lines" aria-hidden="true"></svg>' +
+      '<section class="hood-col in"><h3>' + esc(U.colIn) + "</h3><ul>" + ins.join("") + "</ul></section>" + cen +
+      '<section class="hood-col out"><h3>' + esc(U.colOut) + "</h3><ul>" + outs.join("") + "</ul></section></div>" +
+      '<div class="hood-why" aria-live="polite">' + whyHtml() + "</div>";
+    requestAnimationFrame(drawLines);
+  }
+  function drawLines() {
+    var stage = hood.querySelector(".hood-stage"), L = hood.querySelector(".hood-lines"), ce = hood.querySelector(".hood-centre");
+    if (!stage || !L || !ce) return;
+    var sr = stage.getBoundingClientRect(), cr = ce.getBoundingClientRect(), horiz = sr.width > 640, d = "";
+    L.setAttribute("viewBox", "0 0 " + f1(sr.width) + " " + f1(sr.height));
+    var count = { in: 0, out: 0 }, seenSide = { in: 0, out: 0 };
+    nbs.forEach(function (nb) { count[nb.side]++; });
+    var btns = hood.querySelectorAll(".hn");
+    nbs.forEach(function (nb, k) {
+      var r = btns[k].getBoundingClientRect(), rank = seenSide[nb.side]++, frac = count[nb.side] > 1 ? 0.2 + 0.6 * rank / (count[nb.side] - 1) : 0.5;
+      var x1, y1, x2, y2, p;
+      if (horiz) {
+        var left = r.left + r.width / 2 < cr.left + cr.width / 2;
+        x1 = (left ? r.right : r.left) - sr.left; y1 = r.top + r.height / 2 - sr.top;
+        x2 = (left ? cr.left : cr.right) - sr.left; y2 = cr.top + cr.height * frac - sr.top;
+        p = "M" + f1(x1) + " " + f1(y1) + "C" + f1((x1 + x2) / 2) + " " + f1(y1) + " " + f1((x1 + x2) / 2) + " " + f1(y2) + " " + f1(x2) + " " + f1(y2);
+      } else {
+        var above = r.top + r.height / 2 < cr.top + cr.height / 2;
+        x1 = r.left + r.width * 0.12 - sr.left; y1 = (above ? r.bottom : r.top) - sr.top;
+        x2 = cr.left + cr.width * frac - sr.left; y2 = (above ? cr.top : cr.bottom) - sr.top;
+        p = "M" + f1(x1) + " " + f1(y1) + "C" + f1(x1) + " " + f1((y1 + y2) / 2) + " " + f1(x2) + " " + f1((y1 + y2) / 2) + " " + f1(x2) + " " + f1(y2);
+      }
+      d += '<path class="hl k-' + nb.kind + (k === cxSel ? " on" : "") + '" d="' + p + '"/>';
+    });
+    L.innerHTML = d;
+  }
+  function chooseConnection(k) {
+    cxSel = k;
+    hood.querySelectorAll(".hn").forEach(function (b, j) { b.classList.toggle("on", j === k); b.setAttribute("aria-pressed", j === k ? "true" : "false"); });
+    hood.querySelector(".hood-why").innerHTML = whyHtml();
+    drawLines();
+  }
+  function stepFrom(c, d) {  // the idea after (or before) this one in the guide's order
+    if (c === null) return null;
+    if (c >= 0) return S[c + d] ? S[c + d].key : null;
+    var n = -c + d;
+    return n >= 1 && n <= 16 ? "ch" + n : null;
+  }
+  hood.addEventListener("click", function (e) {
+    var b = e.target.closest("button, a");
+    if (!b || !hood.contains(b)) return;
+    var n = b.getAttribute("data-n"), act = b.getAttribute("data-act"), sl = b.getAttribute("data-sel");
+    if (n !== null) { var k = +n; if (k === cxSel) select(nodeKey(nbs[k].node), { keepPath: true }); else chooseConnection(k); return; }
+    if (sl) { select(sl, { keepPath: true }); return; }
+    if (act === "go") select(b.getAttribute("data-key"), { keepPath: true });
+    else if (act === "overview") setView("over");
+    else if (act === "back") back();
+    else if (act === "next") { var nx = stepFrom(hoodCentre, 1); if (nx) select(nx, { keepPath: true }); }
+  });
+  function back() {
+    trail.pop();
+    var prev = trail.pop();
+    if (prev) select(prev, { keepPath: true }); else setView("over");
+  }
+
+  /* ------------------------------------------------------------ the list: every chapter, and its sections */
+  function listHtml() {
+    var h = "";
+    PARTS.forEach(function (p, j) {
+      h += '<section class="ls-part"><h3>' + dot(j) + esc(p.l + " · " + p.t) + '</h3><div class="ls-chs">';
+      p.ch.forEach(function (n) {
+        var c = chOf(n), pc = Math.round(c.pr * 100);
+        h += '<details class="ls-ch p' + c.p + '"><summary><img src="' + esc(c.img) + '" alt=""><span><small>' + esc(c.l) + "</small><b>" + esc(c.t) + "</b>" +
+             (pc ? '<span class="ls-bar"><i style="width:' + pc + '%"></i></span>' : "") + "</span></summary>" +
+             '<ul class="p-list"><li>' + btn("ch" + n, "<span><b>" + esc(U.aExplore) + " · " + esc(c.l) + "</b></span>") + "</li>" +
+             c.secs.map(function (i) { return secBtn(i); }).join("") + "</ul></details>";
+      });
+      h += "</div></section>";
+    });
+    return '<div class="ls">' + h + "</div>";
+  }
+  function renderList() { hood.innerHTML = '<div class="hood-empty">' + listHtml() + "</div>"; }
+
+  /* ------------------------------------------------------------ my path: the questionnaire's reading path, and saved ideas */
+  var mineMap = {};
+  function mineSteps() {
+    var plan = rpPlan(), m = {};
+    if (plan) plan.items.forEach(function (it, k) { var i = secByKey[keyOfRP(it.id)]; if (i !== undefined && it.kind !== "deep" && !m[i]) m[i] = k + 1; });
+    return m;
+  }
+  function renderMine() {
+    readRP();
+    var plan = rpPlan(), html = head([], U.kmap, U.tPath) + '<div class="p-body">';
+    if (rpState && rpState.planProfile && !rpData) html += '<p class="p-how">' + esc(U.pLoading) + "</p>";
+    else if (plan) {
+      var goal = rpState.planProfile.goal || "";
+      if (goal) html += sec3(esc(U.pYour), '<p class="p-line">“' + esc(goal) + "”</p>");
+      html += '<p class="p-stats">' + esc(fmt(U.pSteps, { n: plan.items.length, m: plan.minutes })) + "</p>";
+      var next = plan.items.find(function (it) { return !rpDone(it.id); });
+      html += '<ol class="p-list mine">' + plan.items.map(function (it, k) {
+        var key = keyOfRP(it.id), i = secByKey[key], done = rpDone(it.id), deep = it.kind === "deep", href = new URL(it.url, SITE).href;
+        var title = i !== undefined ? S[i].t : it.title, c = i !== undefined ? chOf(S[i].c) : null;
+        return '<li class="' + (done ? "done " : "") + (next && next.id === it.id ? "next" : "") + '"><b class="num">' + digits(k + 1) + "</b><div>" +
+               "<small>" + esc((c ? c.l : "") + (it.prerequisite ? " · " + U.pBg : "") + (deep ? " · " + U.pDeep : "") + " · " + fmt(U.mins, { n: it.minutes })) + "</small>" +
+               "<b>" + esc(title) + "</b><em>" + esc(it.why || "") + "</em>" +
+               '<span class="mine-acts">' + (i !== undefined ? '<button type="button" class="lnkbtn" data-act="explore" data-key="' + esc(key) + '">' + esc(U.aExplore) + "</button>" : "") +
+               '<a href="' + esc(href) + '">' + esc(U.aRead) + " " + ARROW + "</a>" + (done ? '<span class="st st-read">' + esc(U.pDone) + "</span>" : "") + "</span></div></li>";
+      }).join("") + "</ol>";
+      html += '<p class="p-more"><a href="' + esc(F.rpPage) + '">' + esc(U.pEdit) + " " + ARROW + "</a></p>";
+    } else {
+      html += '<p class="p-how">' + esc(U.pNone) + '</p><div class="p-acts"><a class="btn primary" href="' + esc(F.rpPage) + '">' + esc(U.pFind) + " " + ARROW + "</a></div>";
+    }
+    html += sec3(esc(U.pSaved), mem.saved.length ? '<ul class="p-list">' + mem.saved.map(function (key) {
+      var s = parse(key), t = s && s.kind === "sec" ? S[s.i].t : s && s.kind === "con" ? CON[s.id].t : s && s.kind === "ch" ? chOf(s.n).t : "";
+      return t ? "<li>" + btn(key, "<span><b>" + esc(t) + "</b></span>") + '<button type="button" class="lnkbtn rm" data-act="unsave" data-key="' + esc(key) + '">' + esc(U.pRemove) + "</button></li>" : "";
+    }).join("") + "</ul>" : '<p class="p-how">' + esc(U.pNoSaved) + "</p>");
+    html += sec3(esc(U.pPresets), '<ul class="p-list">' + PATHS.map(function (p, j) {
+      return "<li>" + btn("path-" + j, '<i class="pdot route" aria-hidden="true"></i><span><b>' + esc(p.t) + "</b><small>" + esc(fmt(U.steps, { n: p.st.length })) + "</small></span>") + "</li>";
+    }).join("") + "</ul>");
+    html += '<p class="p-how">' + esc(U.pNote) + "</p></div>";
+    panel.innerHTML = html;
+    panel.scrollTop = 0;
+    syncToggle();
+  }
+
+  /* ------------------------------------------------------------ views */
+  var wheelVisible = function () { return view === "over" || (view === "path" && !phone()); };
+  function syncHash() {
+    var id = view === "path" ? "me" : view === "list" ? "list" : view === "exp" ? "x:" + selId : selId === "root" ? "" : selId;
+    try { history.replaceState(null, "", id ? "#" + id : location.pathname + location.search); } catch (_) { /* file: URLs */ }
+    // the language switch keeps the same place
+    document.querySelectorAll("a[data-set-site-lang]").forEach(function (a) { a.setAttribute("href", a.getAttribute("href").split("#")[0] + location.hash); });
+  }
+  function refit() {
+    size(); settle();
+    var at_ = phone() ? { kind: "root" } : sel;  // on a phone the overview is always the whole field
+    var lay = layoutFor(at_), cam = camAfter(lay, at_);
+    st.k = lay.k; st.mk = lay.mk; st.rot = lay.rot; roomFor = lay.lw; tx = cam.tx; ty = cam.ty; sc = cam.sc;
+    render(); apply();
+  }
+  function setView(v, o) {
+    o = o || {};
+    view = v;
+    chart.setAttribute("data-view", v);
+    tabs.forEach(function (t) { var on = t.getAttribute("data-view") === v; t.setAttribute("aria-selected", on ? "true" : "false"); t.tabIndex = on ? 0 : -1; });
+    if (wheelVisible()) svg.removeAttribute("hidden"); else svg.setAttribute("hidden", "");
+    hood.hidden = !(v === "exp" || v === "list");
+    if (v === "exp") { if (!trail.length || trail[trail.length - 1] !== selId) { if (centreOf(sel) !== null) trail.push(selId); } }
+    mineMap = v === "path" ? mineSteps() : {};
+    markPops(); paint(); renderPanel();
+    if (v === "exp") renderHood(); else if (v === "list") renderList();
+    if (wheelVisible() && !o.norefit) refit();
+    if (!o.quiet) syncHash();
+    if (v === "exp" || v === "list") hood.scrollTop = 0;
+  }
+  tabs.forEach(function (t) { t.addEventListener("click", function () { setView(t.getAttribute("data-view")); }); });
 
   /* ------------------------------------------------------------ choosing on the chart */
   var drag = null, moved = false;
@@ -862,23 +1193,24 @@
   /* ------------------------------------------------------------ search */
   var q = document.getElementById("mapq"), res = document.getElementById("mapres");
   var IDX = [];
-  CH.forEach(function (c) { IDX.push({ id: "ch" + c.n, t: c.t, sub: c.l, k: U.kch, h: (c.t + " " + c.sh).toLowerCase(), r: 0 }); });
+  var idxAdd = function (o) { o.tl = plain(o.t); o.h = plain(o.h); o.hx = plain(o.hx || ""); IDX.push(o); };
+  CH.forEach(function (c) { idxAdd({ id: "ch" + c.n, t: c.t, sub: c.l, k: U.kch, h: c.t + " " + c.sh, hx: c.b, r: 0 }); });
   Object.keys(CON).forEach(function (id) {
     var c = CON[id];
-    if (id !== "root" && c.c) IDX.push({ id: id, t: c.t, sub: chOf(c.c).l, k: U.kcon, h: c.h + " " + c.t.toLowerCase(), r: 1 });
+    if (id !== "root" && c.c) idxAdd({ id: id, t: c.t, sub: chOf(c.c).l, k: U.kcon, h: c.h + " " + c.t, hx: c.l, r: 1 });
   });
-  S.forEach(function (s) {
-    IDX.push({ id: s.key, t: s.t, sub: chOf(s.c).l, k: U.ksec, h: s.t.toLowerCase(), r: 2 });
-    s.g.forEach(function (g) { IDX.push({ id: s.key, t: g[0], sub: "§ " + s.t, k: U.kterm, h: g[0].toLowerCase(), r: 3 }); });
+  S.forEach(function (s_) {
+    idxAdd({ id: s_.key, t: s_.t, sub: chOf(s_.c).l, k: U.ksec, h: s_.t, hx: s_.x, r: 2 });
+    s_.g.forEach(function (g) { idxAdd({ id: s_.key, t: g[0], sub: "§ " + s_.t, k: U.kterm, h: g[0], r: 3 }); });
   });
   var hits = [], active = -1;
   function showResults() {
-    var s = q.value.trim().toLowerCase();
-    if (!s) { res.hidden = true; q.setAttribute("aria-expanded", "false"); return; }
+    var s_ = plain(q.value.trim());
+    if (!s_) { res.hidden = true; q.setAttribute("aria-expanded", "false"); return; }
     var seen = {};
-    hits = IDX.filter(function (x) { return x.h.indexOf(s) >= 0; }).map(function (x) {
-      var t = x.t.toLowerCase();
-      return { x: x, o: (t.indexOf(s) === 0 ? 0 : t.indexOf(s) > 0 ? 1 : 2) * 10 + x.r };
+    hits = IDX.filter(function (x) { return x.h.indexOf(s_) >= 0 || x.hx.indexOf(s_) >= 0; }).map(function (x) {
+      var o = x.tl.indexOf(s_) === 0 ? 0 : x.tl.indexOf(s_) > 0 ? 1 : x.h.indexOf(s_) >= 0 ? 2 : 3;
+      return { x: x, o: o * 10 + x.r };
     }).sort(function (a, b) { return a.o - b.o || a.x.t.length - b.x.t.length; })
       .filter(function (y) { var key = y.x.id + "|" + y.x.t; if (seen[key]) return false; seen[key] = 1; return true; })
       .slice(0, 9).map(function (y) { return y.x; });
@@ -909,36 +1241,49 @@
   var hint = document.querySelector(".chart-hint");
   if (hint && window.matchMedia && matchMedia("(pointer: coarse)").matches) hint.textContent = hint.getAttribute("data-hint-touch");
   size();
-  var start = decodeURIComponent(location.hash.slice(1)), first = start && parse(start) ? start : "root";
-  if (first === "root" && !reduce) {
+  var routeOf = function (h) {
+    if (h === "me") return { view: "path", id: "root" };
+    if (h === "list") return { view: "list", id: "root" };
+    if (h.indexOf("x:") === 0) return { view: "exp", id: h.slice(2) };
+    return { view: "over", id: h };
+  };
+  var start = decodeURIComponent(location.hash.slice(1)), route = routeOf(start);
+  var first = route.id && parse(route.id) ? route.id : "root";
+  if (first === "root" && route.view === "over" && !reduce) {
     st.rot = -0.9; st.intro = 0;
     render();
     var cam0 = camAfter(layoutFor({ kind: "root" }), { kind: "root" });
     tx = cam0.tx; ty = cam0.ty; sc = cam0.sc; apply();
-    renderPanel(); paint();
+    setView("over", { quiet: true, norefit: true });
     var lay0 = layoutFor({ kind: "root" }); lay0.intro = 1;
     animate(lay0, cam0, 1700);
   } else {
     render();
     var cam1 = camAfter(layoutFor({ kind: "root" }), { kind: "root" });
     tx = cam1.tx; ty = cam1.ty; sc = cam1.sc; apply(); renderLabels();
-    select(first, { hash: false, dur: first === "root" ? 0 : 900 });
+    view = "over";
+    select(first, { hash: false, dur: first === "root" ? 0 : 900, move: route.view === "over" });
+    if (route.view !== "over") setView(route.view, { quiet: true });
+    else setView("over", { quiet: true, norefit: true });
   }
+  // what the map shows beyond the wheel arrives after it has drawn
+  getJSON(F.cards, function (d) { cards = d || {}; if (view === "exp" || view === "over") renderPanel(); });
+  getJSON(F.pass, function (d) { passages = d || {}; if (view === "exp") renderHood(); });
+  getJSON(F.rp, function (d) { rpData = d; mineMap = view === "path" ? mineSteps() : {}; markPops(); paint(); renderLabels(); renderPanel(); if (view === "exp") renderHood(); });
   var rsz = 0;
   window.addEventListener("resize", function () {
     clearTimeout(rsz);
     rsz = setTimeout(function () {
       var w0 = W, h0 = H;
       size();
-      if (Math.abs(W - w0) < 2 && Math.abs(H - h0) < 2) return;
-      settle();
-      var lay = layoutFor(sel), cam = camAfter(lay, sel);
-      st.k = lay.k; st.mk = lay.mk; st.rot = lay.rot; tx = cam.tx; ty = cam.ty; sc = cam.sc;
-      render(); apply();
+      if (view === "exp" && hoodCentre !== null) drawLines();
+      if (!wheelVisible() || (Math.abs(W - w0) < 2 && Math.abs(H - h0) < 2)) return;
+      refit();
     }, 140);
   });
   window.addEventListener("hashchange", function () {
-    var id = decodeURIComponent(location.hash.slice(1));
-    if (id && id !== selId && parse(id)) select(id, { hash: false });
+    var r = routeOf(decodeURIComponent(location.hash.slice(1)));
+    if (r.view !== view) setView(r.view, { quiet: true });
+    if (r.id && r.id !== selId && parse(r.id)) select(r.id, { hash: false });
   });
 })();

@@ -8,6 +8,7 @@ Reads
     guide/audio/tracks.js               audio tracks and their section times
     assets/data/concepts.js             the concepts: their entries, and the tree the concept pages follow
     tools/site/art.json                 artwork captions; images in assets/art/ (see fetch_art.py)
+    tools/site/map-relations.json       the editorial relations between sections that the map explains (ids are checked)
 
 Writes
     index.html                          the starting page
@@ -16,6 +17,7 @@ Writes
     guide/audio/index.html, about.html  the audio player and how the audio was made
     concepts/index.html, concepts/*.html one readable page per concept, English and Persian
     map/index.html, fa/map/index.html   the map of the guide (its data embedded; drawn by assets/map.js)
+    assets/data/map-{cards,passages}[-fa].json  what the map's idea cards and connections show, fetched after it draws
     credits.html, 404.html
     assets/art/*-{640,1200,2000}.jpg    cropped, resized artwork
     assets/diagrams/*.svg               Mermaid diagrams rendered to SVG (cached)
@@ -1144,7 +1146,28 @@ MAP_UI = {
            "back": "Back to the whole map", "kch": "Chapter", "ksec": "Section", "kcon": "Concept", "kterm": "Term",
            "how": "Choose a chapter to turn the wheel to it, then a section to see where it leads. "
                   "The arrow keys step through the sections.",
-           "stats": "{c} chapters · {s} sections · {l} cross-references · {e} concept entries", "mins": "{n} min"},
+           "stats": "{c} chapters · {s} sections · {l} cross-references · {e} concept entries", "mins": "{n} min",
+           "tOver": "Overview", "tList": "List", "tExp": "Explore", "tPath": "My path",
+           "expEmpty": "Choose an idea on the map, in the list, or in the search box, and its closest connections appear here.",
+           "colIn": "Links in", "colOut": "Links out", "centre": "Exploring",
+           "out": {"helps": "Helps you understand", "challenges": "Challenges", "rival": "Competing answer", "example": "Is an example of",
+                   "leads": "Leads on to", "xref": "The guide points to", "seq": "Next in the chapter"},
+           "in": {"helps": "Builds on", "challenges": "Is challenged by", "rival": "Competing answer", "example": "Has as an example",
+                  "leads": "Follows from", "xref": "Refers to this", "pre": "Read first", "seq": "Earlier in the chapter"},
+           "connection": "The connection", "editor": "Editor’s note, restating the guide", "passage": "Where the guide says it",
+           "exploreX": "Explore this idea", "readPassage": "Read the passage", "noRel": "The guide links these sections. Here is the sentence that does.",
+           "cWhat": "In plain words", "cQ": "The question it helps answer", "cEx": "An everyday example", "cBack": "Read first, and why",
+           "cCheck": "Check your understanding", "cShow": "Show an answer", "cGot": "I could explain it", "cAgain": "Not yet",
+           "aRead": "Read", "aExplore": "Explore connections", "aSave": "Add to my path", "aSaved": "Saved ✓",
+           "sVisited": "Visited", "sRead": "Read", "sChecked": "Understanding checked",
+           "pNone": "Answer a few short questions about what you want to understand, and the map will show a reading path built for you, in order, with a reason for each step.",
+           "pFind": "Find my reading path", "pYour": "Your question", "pSteps": "{n} steps · about {m} min", "pNext": "Next step",
+           "pEdit": "Change my path", "pSaved": "Saved ideas", "pNoSaved": "Ideas you add with “Add to my path” appear here.",
+           "pPresets": "Other routes", "pShow": "Show on the wheel", "pDeep": "Deeper study", "pBg": "Background", "pRemove": "Remove",
+           "pNote": "These are suggestions from your answers, not a measure of ability. Reading a chapter does not mean you have understood it.",
+           "pLoading": "Loading your path…", "pDone": "Done", "pMarkDone": "Mark done",
+           "nBack": "Back", "nOver": "Overview", "nNext": "Next", "trail": "Your trail", "conn": "{n} connections", "lChapters": "Chapters",
+           "wheelHint": "Tap a chapter to explore it.", "found": "This section is not on your path yet."},
     "fa": {"kmap": "نقشهٔ راهنما", "chapter": "فصل {n}", "sec": "قسمتِ {i} از {n}", "concept": "مدخلِ مفهوم",
            "path": "مسیرِ یادگیری", "read": "خواندنِ فصل", "readsec": "خواندنِ این قسمت", "entry": "خواندنِ مدخلِ کامل",
            "listen": "شنیدن · {n} دقیقه", "deeper": "مطالعهٔ عمیق‌تر", "practise": "تمرینِ پرسش‌های آن",
@@ -1159,7 +1182,28 @@ MAP_UI = {
            "open": "جزئیات", "back": "بازگشت به کلِ نقشه", "kch": "فصل", "ksec": "قسمت", "kcon": "مفهوم", "kterm": "اصطلاح",
            "how": "فصلی را برگزینید تا چرخ به سوی آن بچرخد، سپس قسمتی را تا ببینید به کجا می‌رسد. "
                   "کلیدهای جهت‌نما قسمت‌ها را یکی‌یکی پیش می‌برند.",
-           "stats": "{c} فصل · {s} قسمت · {l} ارجاع · {e} مدخلِ مفهومی", "mins": "{n} دقیقه"},
+           "stats": "{c} فصل · {s} قسمت · {l} ارجاع · {e} مدخلِ مفهومی", "mins": "{n} دقیقه",
+           "tOver": "نمای کلی", "tList": "فهرست", "tExp": "کاوش", "tPath": "مسیر من",
+           "expEmpty": "ایده‌ای را روی نقشه، در فهرست یا در کادرِ جست‌وجو برگزینید تا نزدیک‌ترین پیوندهایش این‌جا بیاید.",
+           "colIn": "پیوندهای ورودی", "colOut": "پیوندهای خروجی", "centre": "در حالِ کاوش",
+           "out": {"helps": "به فهمیدنِ این کمک می‌کند", "challenges": "به چالش می‌کشد", "rival": "پاسخی رقیب", "example": "نمونه‌ای از",
+                   "leads": "ادامه می‌یابد به", "xref": "راهنما ارجاع می‌دهد به", "seq": "قسمتِ بعدی در فصل"},
+           "in": {"helps": "بر پایهٔ", "challenges": "به چالش کشیده می‌شود با", "rival": "پاسخی رقیب", "example": "نمونه‌ای دارد:",
+                  "leads": "برخاسته از", "xref": "به این ارجاع می‌دهد", "pre": "پیش از این بخوانید", "seq": "قسمتِ پیشین در فصل"},
+           "connection": "پیوند", "editor": "یادداشتِ ویراستار، بازگویی از راهنما", "passage": "جایی که راهنما این را می‌گوید",
+           "exploreX": "کاوشِ این ایده", "readPassage": "خواندنِ عبارت", "noRel": "راهنما این دو قسمت را به هم پیوند می‌دهد. جمله‌ای که این کار را می‌کند:",
+           "cWhat": "به زبانِ ساده", "cQ": "پرسشی که به پاسخ‌دادنش کمک می‌کند", "cEx": "یک مثالِ روزمره", "cBack": "نخست بخوانید، و چرا",
+           "cCheck": "فهمتان را بسنجید", "cShow": "نمایشِ پاسخ", "cGot": "می‌توانستم توضیح بدهم", "cAgain": "هنوز نه",
+           "aRead": "خواندن", "aExplore": "کاوشِ پیوندها", "aSave": "افزودن به مسیرِ من", "aSaved": "ذخیره شد ✓",
+           "sVisited": "دیده‌شده", "sRead": "خوانده‌شده", "sChecked": "فهم سنجیده شد",
+           "pNone": "به چند پرسشِ کوتاه دربارهٔ آنچه می‌خواهید بفهمید پاسخ دهید تا نقشه مسیری برایتان بچیند، به ترتیب و با دلیلی برای هر گام.",
+           "pFind": "مسیرِ مطالعه‌ام را پیدا کن", "pYour": "پرسشِ شما", "pSteps": "{n} گام · حدودِ {m} دقیقه", "pNext": "گامِ بعد",
+           "pEdit": "تغییرِ مسیرِ من", "pSaved": "ایده‌های ذخیره‌شده", "pNoSaved": "ایده‌هایی که با «افزودن به مسیرِ من» بیفزایید این‌جا می‌آیند.",
+           "pPresets": "مسیرهای دیگر", "pShow": "نمایش روی چرخ", "pDeep": "مطالعهٔ عمیق‌تر", "pBg": "پیش‌زمینه", "pRemove": "برداشتن",
+           "pNote": "این‌ها پیشنهادهایی بر پایهٔ پاسخ‌های شماست، نه سنجشِ توانایی. خواندنِ یک فصل به معنای فهمیدنِ آن نیست.",
+           "pLoading": "در حالِ بارگیریِ مسیر…", "pDone": "انجام شد", "pMarkDone": "علامتِ انجام‌شده",
+           "nBack": "بازگشت", "nOver": "نمای کلی", "nNext": "بعدی", "trail": "ردِ شما", "conn": "{n} پیوند", "lChapters": "فصل‌ها",
+           "wheelHint": "برای کاوشِ یک فصل رویش بزنید.", "found": "این قسمت هنوز در مسیرِ شما نیست."},
 }
 
 # Short chapter names for the chart, where the full titles do not fit (the panel gives them in full).
@@ -1189,6 +1233,11 @@ def readme_question():
     """The question at the root of the contents page's diagram of how the ideas connect."""
     m = re.search(r'Q\["([^"]+)"\]', (SRC() / "README.md").read_text(encoding="utf-8"))
     return m.group(1) if m else ""
+
+
+def spaced(markup):
+    """Markup as plain text, with the breaks between paragraphs and list items kept as spaces."""
+    return html.unescape(strip_tags(re.sub(r"</(?:p|li|div|h\d)>|<br\s*/?>", " ", markup or "")))
 
 
 def excerpt(text, limit=230):
@@ -1236,12 +1285,12 @@ def build_map(C, chapters, md, art):
             if cur:
                 owner[(n, slug)] = cur
 
-    # the guide's cross-references, from section to section (or to a whole chapter, as -n)
-    weights = {}
-    for n in sorted(outline):
-        h2s = [s for lv, s, _ in outline[n] if lv == 2]
+    # the guide's cross-references, from section to section (or to a whole chapter, as -n), each with the sentence that makes it
+    weights, passages = {}, {}
+
+    def scan(text, n, h2s, visit):
         k, cur = -1, None
-        for line in clean_chapter_markdown(split_epigraphs(en[n].text)[0]).split("\n"):
+        for line in text.split("\n"):
             if line.startswith("## "):
                 k += 1
                 cur = at.get((n, h2s[k])) if k < len(h2s) else None
@@ -1257,9 +1306,40 @@ def build_map(C, chapters, md, art):
                 target = at.get((tn, owner.get((tn, m.group(2))))) if m.group(2) else None
                 to = target if target is not None else -tn
                 if to != cur and to != -n:
-                    weights[(cur, to)] = weights.get((cur, to), 0) + 1
-        if k + 1 != len(h2s):
-            print(f"  note: map: chapter {n} has {k + 1} '## ' lines but {len(h2s)} second-level headings")
+                    visit(cur, to, line, m)
+        return k + 1
+
+    def sentence(line, m):
+        """The sentence of a markdown line that holds the link ending at match m, as plain text."""
+        start = line.rfind("[", 0, m.start())
+        marked = line[:start] + "\x01" + line[start + 1:m.start()] + "\x02" + line[m.end():] if start >= 0 else line
+        marked = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", marked)
+        marked = re.sub(r"[*_`>#|]+", "", marked)
+        marked = re.sub(r"^\s*(?:[-+]|\d+\.)\s+", "", marked.strip())
+        for sent in re.split(r"(?<=[.!?؟])\s+(?=[\"“(A-Zآ-ی\x01])", marked):
+            if "\x01" in sent:
+                return re.sub(r"\s+", " ", sent.replace("\x01", "").replace("\x02", "")).strip()
+        return ""
+
+    def count(cur, to, line, m):
+        weights[(cur, to)] = weights.get((cur, to), 0) + 1
+        if (cur, to) not in passages:
+            passages[(cur, to)] = sentence(line, m)
+
+    for n in sorted(outline):
+        h2s = [s_ for lv, s_, _ in outline[n] if lv == 2]
+        if scan(clean_chapter_markdown(split_epigraphs(en[n].text)[0]), n, h2s, count) != len(h2s):
+            print(f"  note: map: chapter {n} has a different number of '## ' lines than second-level headings")
+    if lang == "fa":  # the passages in Persian, where the translation keeps the section structure
+        passages.clear()
+        for n in sorted(outline):
+            if chapters[n].fallback:
+                continue
+            h2s = [s_ for lv, s_, _ in outline[n] if lv == 2]
+            local = {}
+            if scan(clean_chapter_markdown(split_epigraphs(chapters[n].text)[0]), n, h2s,
+                    lambda cur, to, line, m: local.setdefault((cur, to), sentence(line, m))) == len(h2s):
+                passages.update({k_: v_ for k_, v_ in local.items() if v_})
     links = [[a, b, w] for (a, b), w in sorted(weights.items())]
 
     # every concept entry on the section (or chapter) that teaches it
@@ -1279,6 +1359,36 @@ def build_map(C, chapters, md, art):
             si = at.get((int(m.group(1)), owner.get((int(m.group(1)), m.group(2)))))
             if si is not None:
                 sections[si]["g"].append([v["t"], "../" + v["g"][len(P):]])
+
+    # editorial relations between sections, checked against the real headings
+    rel_path = ROOT / "tools" / "site" / "map-relations.json"
+    relations = []
+    for r_ in json.loads(rel_path.read_text(encoding="utf-8"))["relations"]:
+        ends = []
+        for key in (r_["from"], r_["to"]):
+            n_, _, slug_ = key.partition("/")
+            if (int(n_), slug_) not in at:
+                raise ValueError(f"map relation names a section that does not exist: {key}")
+            ends.append(at[(int(n_), slug_)])
+        if r_["kind"] not in ("helps", "challenges", "rival", "example", "leads"):
+            raise ValueError(f"map relation has an unknown kind: {r_['kind']}")
+        relations.append([ends[0], ends[1], r_["kind"], r_["fa" if lang == "fa" else "en"]])
+    # what each idea card needs, fetched once the map has drawn: the plain explanation, the question it answers,
+    # an everyday example and a check
+    idea_cards = {}
+    for cid, node in C.N.items():
+        if cid == "root":
+            continue
+        r_ = C.R.get(cid, {}).get(lang, {})
+        chk = r_.get("check") or {}
+        ex_ = spaced(node.get("xf" if lang == "fa" else "xe", ""))
+        card = {"w": spaced(r_.get("why", "")), "i": excerpt(spaced(r_.get("idea") or node.get(lang, "")), 680), "x": excerpt(ex_, 420),
+                "q": spaced(chk.get("q", "")), "a": spaced(chk.get("a", ""))}
+        idea_cards[cid] = {k_: v_ for k_, v_ in card.items() if v_}
+    sfx = "-fa" if lang == "fa" else ""
+    write(ASSETS / "data" / f"map-cards{sfx}.json", json.dumps(idea_cards, ensure_ascii=False, separators=(",", ":")))
+    write(ASSETS / "data" / f"map-passages{sfx}.json",
+          json.dumps({f"{a_}>{b_}": t_ for (a_, b_), t_ in sorted(passages.items()) if t_}, ensure_ascii=False, separators=(",", ":")))
 
     questions = {}
     for q in LEARN["questions"]:
@@ -1303,7 +1413,9 @@ def build_map(C, chapters, md, art):
               for name, note, steps in readme_paths(md)]
     ui = dict(MAP_UI[lang])
     data = {"lang": lang, "ui": ui, "q": readme_question(), "parts": parts, "chapters": chs, "sections": sections,
-            "links": links, "concepts": cons, "paths": paths,
+            "links": links, "rel": relations, "concepts": cons, "paths": paths, "site": root,
+            "files": {"cards": f"{root}assets/data/map-cards{sfx}.json", "pass": f"{root}assets/data/map-passages{sfx}.json",
+                      "rp": f"{root}assets/data/reading-path{sfx}.json", "rpPage": f"{h}reading-path/"},
             "root": {"t": C.title("root", lang), "u": "../concepts/root.html", "img": f"{root}assets/art/map-dot.jpg",
                      "l": strip_tags(C.line("root", lang))}}
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -1319,11 +1431,14 @@ def build_map(C, chapters, md, art):
                        "دنبال کنید تا ببینید به کجا می‌رسد، یا یکی از مسیرهای یادگیریِ راهنما را بپیمایید."),
                 actions=(f'<a class="btn primary" href="#chart">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
                          f'<a class="btn" href="{h}concepts/">{icon("grid")} {L("All concepts as pages", "همهٔ مفاهیم به صورتِ صفحه")}</a>'))
-    tools = (f'<div class="chart-tools">'
+    tab = lambda key, ico, extra="": (f'<button type="button" role="tab" data-view="{key}" aria-selected="false"{extra}>{ico}<span>{ui["t" + key[0].upper() + key[1:]]}</span></button>')
+    tools = (f'<div class="chart-head">'
              f'<div class="chart-find"><span aria-hidden="true">{icon("search")}</span>'
              f'<input id="mapq" type="search" autocomplete="off" placeholder="{attr(ui["find"])}" aria-label="{attr(ui["find"])}" '
              f'role="combobox" aria-expanded="false" aria-controls="mapres" aria-autocomplete="list">'
              f'<div class="chart-res" id="mapres" role="listbox" hidden></div></div>'
+             f'<div class="viewtabs" role="tablist" aria-label="{L("Views of the map", "نماهای نقشه")}">'
+             f'{tab("over", icon("map"))}{tab("list", icon("toc"))}{tab("exp", icon("pin"))}{tab("path", icon("clock"))}</div>'
              f'<div class="chart-zoom" role="group" aria-label="{L("Zoom", "بزرگ‌نمایی")}">'
              f'<button type="button" data-zoom="in" aria-label="{ui["zin"]}" title="{ui["zin"]}">{icon("plus")}</button>'
              f'<button type="button" data-zoom="out" aria-label="{ui["zout"]}" title="{ui["zout"]}">{icon("minus")}</button>'
@@ -1338,11 +1453,12 @@ def build_map(C, chapters, md, art):
               f'<span><i class="lg-con"></i>{L("a section with a concept entry", "قسمتی با مدخلِ مفهوم")}</span>'
               f'<span><i class="lg-chord"></i>{L("cross-references between chapters; thicker means more", "ارجاع‌های میانِ فصل‌ها؛ ضخیم‌تر یعنی بیشتر")}</span>'
               f'<span><i class="lg-prog"></i>{L("how far you have read", "چقدر خوانده‌اید")}</span></div></div>'
-              f'<p class="chart-hint" data-hint-touch="{attr(L("Tap a chapter to turn the wheel to it, then a section to follow its links. Pinch with two fingers to zoom.", "روی فصلی بزنید تا چرخ به سوی آن بچرخد، سپس روی قسمتی تا پیوندهایش را دنبال کنید. با دو انگشت بزرگ‌نمایی کنید."))}">'
+              f'<p class="chart-hint" data-hint-touch="{attr(L("Tap a chapter to explore it and its connections. Pinch with two fingers to zoom the wheel.", "روی فصلی بزنید تا آن و پیوندهایش را بکاوید. برای بزرگ‌نمایی چرخ با دو انگشت چنگ بزنید."))}">'
               f'{L("Click a chapter to turn the wheel to it, then a section to follow its links. The arrow keys step through the sections; drag to move, Ctrl + scroll to zoom.", "روی فصلی کلیک کنید تا چرخ به سوی آن بچرخد، سپس روی قسمتی تا پیوندهایش را دنبال کنید. کلیدهای جهت‌نما قسمت‌ها را پیش می‌برند؛ برای جابه‌جایی بکشید و برای بزرگ‌نمایی Ctrl و چرخِ موشواره را به کار ببرید.")}</p>')
     chart = (f'<section class="chart-wrap" id="chart" aria-label="{L("The map of the guide", "نقشهٔ راهنما")}">'
-             f'<div class="chart">{tools}'
+             f'<div class="chart" data-view="over">{tools}'
              f'<svg class="wheel" role="group" aria-label="{attr(L("Map of the guide: chapters, sections and their cross-references", "نقشهٔ راهنما: فصل‌ها، قسمت‌ها و ارجاع‌های میانِ آن‌ها"))}"></svg>'
+             f'<div class="hood" hidden></div>'
              f'<aside class="chart-panel" aria-live="polite"></aside>'
              f'<noscript><p class="chart-nojs">{L("The interactive map needs JavaScript. The contents of the guide are on", "نقشهٔ تعاملی به جاوااسکریپت نیاز دارد. فهرستِ راهنما در")} '
              f'<a href="{h}guide/">{L("the guide’s contents page", "صفحهٔ فهرستِ راهنما")}</a>.</p></noscript></div>{legend}</section>')
@@ -1364,6 +1480,7 @@ def build_map(C, chapters, md, art):
                   f'<div class="pgrid">{"".join(cards)}</div></section>')
     body = (f'{head}{label(art, "map")}<main id="main" class="mapmain">{chart}{paths_html}</main>'
             f'<script type="application/json" id="mapdata">{payload}</script>'
+            f'<script src="{av(root, "reading-path-core.js")}" defer></script>'
             f'<script src="{av(root, "map.js")}" defer></script>')
     # an old link to the shared map in Persian (/map/?lang=fa) now opens the Persian edition's own map
     redirect = ('<script>if(/[?&]lang=fa\\b/.test(location.search))location.replace("../fa/map/"+location.hash)</script>'
@@ -2539,7 +2656,7 @@ def build_offline_list():
     pages = ["", "index.html", "guide/", "guide/index.html", "concepts/", "credits.html", "guide/audio/", "guide/audio/index.html", "guide/download.html",
              "guide/audio/about.html", "notes/", "review/", "account/"]
     paths = list(pages) + ["fa/" + p for p in pages]
-    paths += ["map/", "map/index.html", "fa/map/", "fa/map/index.html", "assets/map.js", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
+    paths += ["map/", "map/index.html", "fa/map/", "fa/map/index.html", "assets/map.js", "assets/data/map-cards.json", "assets/data/map-cards-fa.json", "assets/data/map-passages.json", "assets/data/map-passages-fa.json", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
     paths += ["reading-path/", "reading-path/index.html", "fa/reading-path/", "fa/reading-path/index.html",
               "assets/reading-path.css", "assets/reading-path-core.js", "assets/reading-path-i18n.js",
               "assets/reading-path.js", "assets/data/reading-path.json", "assets/data/reading-path-fa.json"]

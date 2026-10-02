@@ -1179,15 +1179,16 @@ html[data-theme="dark"]{--p0:#94AEE6;--p1:#E0956B;--p2:#7CC3D2;--p3:#D99AC4;--p4
 .mapmain{padding:34px 0 90px}
 .chart-wrap{max-width:1440px;margin:0 auto;padding:0 var(--gutter);scroll-margin-top:calc(var(--bar-h) + 12px)}
 .chart{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 380px;height:min(calc(100vh - var(--bar-h) - 64px),940px);
-  min-height:620px;border:1px solid var(--rule-2);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
+  grid-template-rows:auto minmax(0,1fr);min-height:620px;border:1px solid var(--rule-2);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
   background:radial-gradient(circle at calc((100% - 380px) / 2) 50%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,
     var(--surface) 48%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
 html[dir="rtl"] .chart{background:radial-gradient(circle at calc(380px + (100% - 380px) / 2) 50%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,
     var(--surface) 48%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
-.wheel{grid-column:1;grid-row:1;display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.wheel{grid-column:1;grid-row:2;display:block;width:100%;height:100%;min-height:0;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .wheel.dragging{cursor:grabbing}
+.wheel[hidden]{display:none}
 .wheel:focus{outline:none}
-.chart-nojs{grid-column:1;grid-row:1;align-self:center;justify-self:center;max-width:30rem;text-align:center;color:var(--ink-2)}
+.chart-nojs{grid-column:1;grid-row:2;align-self:center;justify-self:center;max-width:30rem;text-align:center;color:var(--ink-2)}
 
 /* the drawing */
 .wheel text{font-family:var(--sans);paint-order:stroke;stroke:var(--surface);stroke-linejoin:round;stroke-width:3px}
@@ -1264,10 +1265,7 @@ html[lang="fa"] .wheel .rootn .rt{font-family:var(--fa);font-size:12.5px;font-we
 .wheel .rootn:focus-visible .halo{stroke:var(--accent);stroke-width:2.5;stroke-opacity:1}
 
 /* tools over the chart: find, zoom */
-.chart-tools{position:absolute;top:14px;inset-inline-start:14px;z-index:4;display:flex;align-items:flex-start;justify-content:space-between;
-  gap:10px;width:calc(100% - 380px - 28px);pointer-events:none}
-.chart-tools>*{pointer-events:auto}
-.chart-find{position:relative;flex:0 1 320px}
+.chart-find{position:relative;flex:0 1 290px;min-width:200px}
 .chart-find>span{position:absolute;z-index:1;top:50%;inset-inline-start:14px;transform:translateY(-50%);color:var(--dim);display:flex;pointer-events:none}
 .chart-find input{width:100%;height:44px;padding:0 16px;padding-inline-start:40px;border:1px solid var(--rule-2);border-radius:999px;
   background:color-mix(in srgb,var(--surface) 92%,transparent);color:var(--ink);font:inherit;font-family:var(--sans);font-size:.95rem;
@@ -1281,14 +1279,14 @@ html[lang="fa"] .wheel .rootn .rt{font-family:var(--fa);font-size:12.5px;font-we
 .chart-res b{display:block;font-weight:500;font-size:.93rem}
 .chart-res small{display:block;font-size:.76rem;color:var(--dim)}
 .chart-res .none{padding:8px 10px;color:var(--dim);font-size:.9rem}
-.chart-zoom{display:flex;flex-direction:column;gap:6px}
-.chart-zoom button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;
+.chart-zoom{display:flex;gap:6px;margin-inline-start:auto}
+.chart-zoom button{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
   border:1px solid var(--rule-2);background:color-mix(in srgb,var(--surface) 92%,transparent);color:var(--ink);cursor:pointer;
   -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .chart-zoom button:hover{border-color:var(--accent);color:var(--accent)}
 
 /* the panel: what is chosen, and where it leads */
-.chart-panel{position:relative;grid-column:2;grid-row:1;overflow:auto;padding:24px 24px 34px;border-inline-start:1px solid var(--rule);
+.chart-panel{position:relative;grid-column:2;grid-row:1 / span 2;overflow:auto;padding:24px 24px 34px;border-inline-start:1px solid var(--rule);
   background:var(--surface);font-family:var(--sans);overscroll-behavior:contain}
 .p-crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:4px 7px;margin-bottom:12px;font-size:.8rem;color:var(--dim)}
 .p-crumbs button{padding:0;border:0;background:none;color:var(--teal);font:inherit;cursor:pointer}
@@ -1415,29 +1413,151 @@ html[lang="fa"] .pcard h3{font-family:var(--fa);font-weight:700;font-size:1.2rem
 .pcard-foot .icon{width:16px;height:16px}
 .pcard-foot a:last-child{margin-inline-start:auto}
 
-/* phones and narrow windows: the panel becomes a sheet over the chart */
+/* the head: find, the views, zoom */
+.chart-head{grid-column:1;grid-row:1;position:relative;z-index:6;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:14px 16px 8px}
+.chart-find input{height:42px}
+.viewtabs{display:inline-flex;gap:2px;padding:3px;border:1px solid var(--rule-2);border-radius:999px;background:color-mix(in srgb,var(--surface) 92%,transparent)}
+.viewtabs button{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border:0;border-radius:999px;background:none;color:var(--ink-2);font:inherit;
+  font-family:var(--sans);font-size:.86rem;cursor:pointer;white-space:nowrap}
+.viewtabs button:hover{color:var(--ink);background:var(--accent-wash)}
+.viewtabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.viewtabs .icon{width:16px;height:16px}
+.viewtabs [data-view="list"]{display:none}
+.chart[data-view="exp"] .chart-zoom,.chart[data-view="list"] .chart-zoom{display:none}
+
+/* explore: one idea and its nearest connections, with labels that stay level */
+.hood{grid-column:1;grid-row:2;overflow:auto;padding:6px 20px 28px;font-family:var(--sans)}
+.hood[hidden]{display:none}
+.hood-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:18px}
+.hb{padding:7px 14px;border:1px solid var(--rule-2);border-radius:999px;background:var(--surface);color:var(--ink);font:inherit;font-size:.86rem;cursor:pointer}
+.hb:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.hb:disabled{opacity:.4;cursor:default}
+.hb.nx{margin-inline-start:auto}
+.hood-trail{display:flex;gap:6px;flex:1 1 0;min-width:0;overflow:hidden;white-space:nowrap}
+.hood-trail .tr{flex:none;max-width:12rem;overflow:hidden;text-overflow:ellipsis;padding:5px 10px;border:1px solid var(--rule);border-radius:999px;background:none;
+  color:var(--dim);font:inherit;font-size:.78rem;cursor:pointer}
+.hood-trail .tr.on{color:var(--ink);border-color:var(--rule-2)}
+.hood-stage{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,300px) minmax(0,1fr);gap:0 clamp(28px,6vw,80px);align-items:center;min-height:300px}
+.hood-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.hl{fill:none;stroke-width:1.8;stroke-opacity:.45;stroke-linecap:round}
+.hl.on{stroke-width:3.2;stroke-opacity:1}
+.hl.k-helps,.hl.k-pre{stroke:var(--teal)}.hl.k-challenges{stroke:var(--brick)}.hl.k-rival{stroke:var(--accent)}
+.hl.k-example{stroke:var(--p3)}.hl.k-leads{stroke:var(--ink-2)}.hl.k-xref,.hl.k-seq{stroke:var(--dim);stroke-dasharray:3 5}
+.hl.k-pre{stroke-dasharray:6 4}
+.hood-col{position:relative;z-index:1;min-width:0}
+.hood-col h3{margin:0 0 10px;font-family:var(--mono);font-size:.66rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+html[lang="fa"] .hood-col h3{font-family:var(--fa);letter-spacing:0;font-size:.8rem}
+.hood-col ul{display:grid;gap:10px;list-style:none;margin:0;padding:0}
+.hn{position:relative;display:block;width:100%;padding:10px 14px;border:1px solid var(--rule-2);border-inline-start:4px solid var(--pc,var(--rule-2));border-radius:12px;
+  background:var(--surface);color:var(--ink);font:inherit;text-align:start;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.hn:hover{border-color:var(--accent)}
+.hn.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--shadow)}
+.hn small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+html[lang="fa"] .hn small{font-family:var(--fa);letter-spacing:0;font-size:.74rem}
+.hn.k-challenges small{color:var(--brick)}.hn.k-helps small,.hn.k-pre small{color:var(--teal)}.hn.k-rival small,.hn.k-leads small{color:var(--accent)}
+.hn b{display:block;margin-top:2px;font-weight:600;font-size:.98rem;line-height:1.3}
+.hn em{display:block;margin-top:2px;font-style:normal;font-size:.8rem;color:var(--dim)}
+.hn.seen::after{content:"";position:absolute;top:9px;inset-inline-end:9px;width:7px;height:7px;border-radius:50%;background:var(--faint)}
+.hood-centre{position:relative;z-index:1;padding:20px 20px 22px;border:2px solid var(--pc,var(--accent));border-radius:18px;background:var(--surface);box-shadow:var(--shadow-lg)}
+.hood-centre small{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+html[lang="fa"] .hood-centre small{font-family:var(--fa);letter-spacing:0;font-size:.78rem}
+.hood-centre h2{margin:6px 0 0;font-family:var(--display);font-weight:600;font-size:1.65rem;line-height:1.1}
+html[lang="fa"] .hood-centre h2{font-family:var(--fa);font-weight:700;font-size:1.3rem;line-height:1.5}
+.hood-centre p{margin:10px 0 0;font-family:var(--serif);font-size:.92rem;line-height:1.55;color:var(--ink-2)}
+html[lang="fa"] .hood-centre p{font-family:var(--fa);line-height:1.9}
+.hood-why{max-width:46rem;margin:26px auto 0;padding-top:18px;border-top:1px solid var(--rule)}
+.why-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.kindchip{display:inline-block;padding:3px 10px;border-radius:999px;border:1px solid currentColor;font-size:.76rem;font-weight:600;color:var(--dim)}
+.kindchip.k-challenges{color:var(--brick)}.kindchip.k-helps,.kindchip.k-pre{color:var(--teal)}.kindchip.k-rival,.kindchip.k-leads{color:var(--accent)}.kindchip.k-example{color:var(--p3)}
+.why-pair{font-weight:600;font-size:1rem}
+.why-pair i{font-style:normal;color:var(--dim)}
+.why-text{margin:10px 0 0;font-family:var(--serif);font-size:1.02rem;line-height:1.6;color:var(--ink)}
+html[lang="fa"] .why-text{font-family:var(--fa);line-height:1.95}
+.why-tag{display:inline-block;margin-inline-start:6px;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.why-quote{margin:14px 0 0;padding:4px 0 4px 16px;border-inline-start:3px solid var(--rule-2);color:var(--ink-2)}
+.why-quote small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.why-quote p{margin:4px 0 0;font-family:var(--serif);font-style:italic;font-size:.96rem;line-height:1.6}
+html[lang="fa"] .why-quote p{font-family:var(--fa);font-style:normal;line-height:1.95}
+.hood-empty{max-width:60rem;margin:0 auto}
+.hood-empty>p{margin:0 0 18px;color:var(--dim)}
+
+/* the list: every chapter and its sections, with no drawing needed */
+.ls-part{margin:0 0 22px}
+.ls-part h3{display:flex;align-items:center;gap:9px;margin:0 0 10px;font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+html[lang="fa"] .ls-part h3{font-family:var(--fa);letter-spacing:0;font-size:.82rem}
+.ls-chs{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;align-items:start}
+.ls-ch{border:1px solid var(--rule);border-radius:14px;background:var(--surface)}
+.ls-ch[open]{border-color:var(--pc)}
+.ls-ch summary{display:flex;align-items:center;gap:12px;padding:10px 12px;cursor:pointer;list-style:none}
+.ls-ch summary::-webkit-details-marker{display:none}
+.ls-ch summary img{flex:none;width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--pc)}
+.ls-ch summary>span{flex:1;min-width:0}
+.ls-ch summary small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+html[lang="fa"] .ls-ch summary small{font-family:var(--fa);letter-spacing:0;font-size:.74rem}
+.ls-ch summary b{display:block;font-weight:600;font-size:.95rem;line-height:1.3}
+.ls-bar{display:block;height:3px;margin-top:6px;border-radius:2px;background:var(--rule)}
+.ls-bar i{display:block;height:100%;border-radius:2px;background:var(--accent)}
+.ls-ch .p-list{padding:0 6px 8px}
+
+/* the card and my path, in the panel */
+.p-status{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.p-status:empty{display:none}
+.st{display:inline-block;padding:2px 9px;border-radius:999px;border:1px solid var(--rule-2);font-size:.72rem;color:var(--dim)}
+.st-read{border-color:var(--teal);color:var(--teal)}.st-chk{border-color:var(--accent);color:var(--accent)}
+.p-acts .btn.on{background:var(--accent-wash);border-color:var(--accent);color:var(--accent)}
+.p-check{margin-top:10px;border:1px solid var(--rule);border-radius:12px;padding:8px 14px}
+.p-check summary{cursor:pointer;color:var(--teal);font-size:.92rem}
+.p-check p{margin:10px 0 0;font-family:var(--serif);font-size:.96rem;line-height:1.6;color:var(--ink-2)}
+html[lang="fa"] .p-check p{font-family:var(--fa);line-height:1.9}
+.p-check .p-acts{margin:12px 0 4px}
+.p-list li{position:relative}
+.p-list .lnkbtn{display:inline;width:auto;padding:0;border-radius:0;color:var(--teal)}
+.p-list .lnkbtn:hover{background:none;text-decoration:underline}
+.p-list .rm{position:absolute;top:7px;inset-inline-end:6px;font-size:.78rem}
+.p-list.mine li{display:flex;gap:12px;padding:12px 4px;border-bottom:1px solid var(--rule)}
+.p-list.mine .num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--surface);font-size:.8rem;line-height:26px;text-align:center}
+.p-list.mine li.next .num{background:var(--accent);color:var(--accent-ink)}
+.p-list.mine li.done .num{background:var(--teal)}
+.p-list.mine li>div{flex:1;min-width:0}
+.p-list.mine li>div>b{display:block;font-weight:600;font-size:.98rem;line-height:1.3}
+.p-list.mine em{display:block;margin-top:3px;font-style:normal;font-size:.85rem;line-height:1.45;color:var(--dim)}
+.mine-acts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:6px;font-size:.84rem}
+.mine-acts a{color:var(--teal);text-decoration:none}
+.mine-acts a:hover{text-decoration:underline}
+.wheel .sn.mine circle{fill:var(--accent);stroke:var(--surface);stroke-width:1.5}
+.wheel .sn.mine text{fill:var(--accent);font-weight:700}
+
+/* on a phone the wheel is for choosing; what is chosen opens in the explore view or the list, as a page, not a sheet over the drawing */
 @media(max-width:900px){
   .mapmain{padding-top:22px}
-  .chart{grid-template-columns:1fr;height:min(86svh,800px);min-height:560px;border-radius:18px;
-    background:radial-gradient(circle at 50% 46%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,var(--surface) 52%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
-  html[dir="rtl"] .chart{background:radial-gradient(circle at 50% 46%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,var(--surface) 52%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
-  .chart-tools{width:calc(100% - 24px);top:12px;inset-inline-start:12px}
-  .chart-zoom{flex-direction:row}
-  .chart-zoom button{width:40px;height:40px}
-  .chart-panel{position:absolute;grid-column:1;inset:auto 0 0 0;z-index:5;max-height:50%;padding:14px 18px 24px;border-inline-start:0;
-    border-top:1px solid var(--rule-2);border-radius:18px 18px 0 0;box-shadow:0 -12px 34px rgba(10,20,28,.16);
-    transform:translateY(calc(100% - 86px));transition:transform .3s cubic-bezier(.2,.8,.3,1)}
-  .chart-panel.open{transform:none}
-  .chart-panel .p-head{position:relative;min-height:58px;padding-inline-end:48px;cursor:pointer}
-  .chart-panel .p-crumbs{display:none}
-  .chart-panel.open .p-crumbs{display:flex}
-  .chart-panel h2{font-size:1.55rem}
-  .p-toggle{display:flex;align-items:center;justify-content:center;position:absolute;top:0;inset-inline-end:0;width:40px;height:40px;
-    border-radius:50%;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink);cursor:pointer}
-  .p-toggle::before{content:"";width:9px;height:9px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(2px) rotate(-135deg)}
-  .chart-panel.open .p-toggle::before{transform:translateY(-2px) rotate(45deg)}
+  .chart{display:flex;flex-direction:column;height:auto;min-height:0;border-radius:18px;
+    background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,var(--surface) 55%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
+  html[dir="rtl"] .chart{background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--accent) 8%,var(--surface)) 0,var(--surface) 55%,color-mix(in srgb,var(--surface-2) 70%,var(--bg)) 100%)}
+  .chart[data-view="over"]{height:min(82svh,780px);min-height:520px}
+  .chart-head{padding:12px 12px 6px;gap:8px}
+  .chart-find{flex:1 1 150px}
+  .chart-zoom{margin-inline-start:0}
+  .viewtabs{order:3;flex:1 0 100%;justify-content:space-between}
+  .viewtabs button{flex:1;justify-content:center;gap:5px;padding:8px 6px;font-size:.8rem}
+  .viewtabs [data-view="list"]{display:inline-flex}
+  .wheel{flex:1;min-height:0}
+  .wheel.compact .sn text,.wheel.compact .ct{display:none!important}
+  .wheel.compact .sn{pointer-events:none}
+  .wheel.compact .arc{stroke-width:10}
+  .chart[data-view="over"] .chart-panel,.chart[data-view="list"] .chart-panel{display:none}
+  .chart-panel{position:static;grid-column:auto;max-height:none;overflow:visible;padding:16px 16px 28px;border-inline-start:0;border-top:1px solid var(--rule-2)}
+  .chart-panel .p-crumbs{display:flex}
+  .chart-panel h2{font-size:1.6rem}
+  .p-toggle{display:none}
+  .hood{overflow:visible;padding:4px 14px 20px}
+  .hood-stage{display:flex;flex-direction:column;align-items:stretch;gap:26px;min-height:0}
+  .hood-lines{display:none}
+  .hood-col ul{grid-template-columns:1fr}
+  .hood-centre{order:0}
+  .hood-trail{display:none}
+  .hood-bar .nx{margin-inline-start:auto}
   .chart-legend{gap:10px 16px;font-size:.78rem}
 }
-@media(max-width:560px){.chart-find{flex:1 1 auto}.chart-zoom button[data-zoom="out"]{display:none}.lg-keys{display:none}}
+@media(max-width:560px){.chart-zoom button[data-zoom="out"]{display:none}.lg-keys{display:none}}
 @media(prefers-reduced-motion:reduce){.wheel .sn.here circle{animation:none}}
 .wheel .sn.sel .hit{fill:var(--accent);fill-opacity:.13}
