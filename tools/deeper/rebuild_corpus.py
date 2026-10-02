@@ -24,6 +24,8 @@ def target(d):
     url, host = d["url"], urlparse(d["url"]).netloc
     meta = {"title": d["title"], "authors": [a for a in d.get("authors", "").split("; ") if a], "year": d.get("year", ""),
             "license": d.get("license", "").lower() if d.get("license", "").startswith("CC") else d.get("license", "")}
+    if d.get("format"):
+        return {"url": url, "kind": d["format"], **meta, "doi": d.get("doi", "")}
     if host in ("plato.stanford.edu", "iep.utm.edu", "en.wikisource.org") or d.get("held"):
         return {"url": url, "kind": "html", **meta, "doi": d.get("doi", "")}
     if host == "www.gutenberg.org":

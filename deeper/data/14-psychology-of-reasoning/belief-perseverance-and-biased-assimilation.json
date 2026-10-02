@@ -1,0 +1,162 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "belief-perseverance-and-biased-assimilation",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How does correction alter dependent grounds, and why are perseverance, assimilation, and generalised backfire claims distinct?"
+  ],
+  "sources": [
+    {
+      "key": "mercier-sperber2011",
+      "used_for": [
+        "A withdrawn report and the story it generated",
+        "Assimilation happens during evaluation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "By contrast, participants in the other group were much less overconﬁdent.",
+          "corpus_chunk": 52708
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "The involvement of motivated reasoning in this effect can be demonstrated by providing participants with evidence both for and against a favored belief.",
+          "corpus_chunk": 52710
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "Participants were then given positive or negative feedback, but a few minutes later they were told that the feedback was actually bogus and the real aim of the experiment was explained.",
+          "corpus_chunk": 52711
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "This strongly suggests that belief persever- ance of the type just described is an instance of motivated reasoning (for applications to the domain of political beliefs, see Prasad et al. 2009). 11 4.2.4.",
+          "corpus_chunk": 52712
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "Moreover, they were given the possibility of choosing which task they would be performing, knowing that the other task would be assigned to another partici- pant.",
+          "corpus_chunk": 52713
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "The differ- ence between these two ratings is a mark of moral hypoc- risy.",
+          "corpus_chunk": 52713
+        },
+        {
+          "locator": "PDF p. 12",
+          "basis": "full text",
+          "excerpt": "Perpetrators of crimes will be tempted to “blame the victim” or ﬁnd other excuses to mitigate the effects of violating their moral intuitions (Ryan 1971; for a review, see Hafer & Begue 2005), which can in turn make it easier to commit new crimes (Baumeister 1997).",
+          "corpus_chunk": 52715
+        },
+        {
+          "locator": "PDF pp. 10–11",
+          "basis": "full text",
+          "excerpt": "In a landmark experiment, Lord and colleagues (1979) asked participants who had been previously selected as being either defenders or opponents of the death penalty to evaluate studies relating to its efﬁciency as a deterrent.",
+          "corpus_chunk": 52700
+        }
+      ],
+      "annotation": "Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors."
+    },
+    {
+      "key": "deweeseboyd2023",
+      "used_for": [
+        "Persistence is not always irrational",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Non-intentionalists argue that most ‘garden-variety’ cases of self-deception can be explained without adverting to subagents, or unconscious beliefs and intentions, which, even if they resolve the static and dynamic puzzles of self-deception, raise puzzles of their own.",
+          "corpus_chunk": 49659
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Joan is deceived into believing it will be sunny, and Sam has deceived her, albeit unintentionally.",
+          "corpus_chunk": 49659
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In such cases, Allison’s self-deceptive belief that her daughter is not having learning difficulties fulfills her desire, quells her fear, or reduces her anxiety, and it’s this function—not an intention—that explains why her belief formation process is biased.",
+          "corpus_chunk": 49661
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Others, however, argue the needed motivation can as easily be supplied by uncertainty or ignorance whether p, or suspicion that ~p (Mele 2001; Barnes 1997).",
+          "corpus_chunk": 49662
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Such approaches are ‘deflationary’ in the sense that they take self-deception to be explicable without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception.",
+          "corpus_chunk": 49663
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "ble without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception. (For more on the dual-belief requirement, see §3.2 Revision of Belief.) Mele (2001, 2012) has offered the most fully articulated deflationary account, and his view has been the target of the most scrutiny, so it is worth stating what he takes to be the jointly sufficient conditions for entering self-deception: The belief that p, which S acquires, is false S treats data relevant, or at least seemingly relevant, to the truth value of p in a motivationally biased way This biased treatment is a nondeviant",
+          "corpus_chunk": 49664
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "To support non-intentionalism, some have looked to the purposive mechanisms of deception operating in non-human organisms as a model (Smith 2014), while others have focused on neurobiological mechanisms triggered by affect to explain the peculiarly purposive responses to evidence involved in self-deception (Lauria et al. 2016).",
+          "corpus_chunk": 49665
+        }
+      ],
+      "annotation": "Secondary map of non-intentionalist and rival accounts of self-deception, selectivity, error costs, and socially sustained belief; related mechanisms are not equated with every identity-protection claim."
+    },
+    {
+      "key": "fidler-wilcox2026",
+      "used_for": [
+        "Do not turn one reviewed result into a universal law",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A starting point in any philosophical exploration of reproducibility and related notions is to consider the conceptual question of what such notions mean.",
+          "corpus_chunk": 46872
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The Reproducibility Projects, coordinated by the Center for Open Science, redo entire studies, data collection and analysis.",
+          "corpus_chunk": 46872
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "A study may be replicable in the former sense but not in the second sense: one might be able to replicate the methods, procedures and analysis of a study, but fail to successfully replicate the results of the original study.",
+          "corpus_chunk": 46874
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "As suggested, this distinction may not always be known by these terms.",
+          "corpus_chunk": 46874
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Schmidt’s account has been influential and widely-cited in psychology and social sciences, where the replication crisis literature is heavily concentrated.",
+          "corpus_chunk": 46876
+        }
+      ],
+      "annotation": "Secondary account distinguishes forms of replication and explains selection, flexible analysis, preregistration, and registered reports without certifying every named psychology effect."
+    }
+  ]
+}

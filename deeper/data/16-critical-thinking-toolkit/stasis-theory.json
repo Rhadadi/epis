@@ -1,0 +1,98 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "stasis-theory",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How does the modern four-question stasis tool locate disputes, and why should its order remain flexible?"
+  ],
+  "sources": [
+    {
+      "key": "purdue-stasis",
+      "used_for": [
+        "Four questions about one proposal",
+        "Classification needs a standard",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "Stasis theory is a four-question, pre-writing (invention) process developed in ancient Greece by Aristotle and Hermagoras.",
+          "corpus_chunk": 53220
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "The stases also help people to agree on conclusions, and they help identify where people do not agree.",
+          "corpus_chunk": 53220
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "It may also be useful to ask critical questions of your own research and conclusions: Who/what is influencing our determination of the seriousness of this problem/issue?",
+          "corpus_chunk": 53222
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "Note: Related to stasis theory are the six journalistic questions (1) Who?",
+          "corpus_chunk": 53222
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "The solution has nothing to do with (does not achieve stasis with) the issue at hand.",
+          "corpus_chunk": 53224
+        }
+      ],
+      "annotation": "Modern openly readable teaching adaptation with fact, definition, quality and policy questions; no ancient original is represented as independently read."
+    },
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Use a sequence without making it a barrier",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Despite the diversity of our 11 examples, one can recognize a common pattern.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.",
+          "corpus_chunk": 642
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.",
+          "corpus_chunk": 643
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging",
+          "corpus_chunk": 644
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).",
+          "corpus_chunk": 645
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    }
+  ]
+}

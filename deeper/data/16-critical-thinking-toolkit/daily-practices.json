@@ -1,0 +1,246 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "daily-practices",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What makes practice inspectable, and why do feedback, domain knowledge and transfer constrain its value?"
+  ],
+  "sources": [
+    {
+      "key": "mellers-etal2014",
+      "used_for": [
+        "Make one judgment recoverable",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Each group recruited participants to forecast events and devised unique methods to elicit and combine multiple opinions.",
+          "corpus_chunk": 52409
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Promising approaches include statistical training (Fong, Nisbett, & Krantz, 1986), feedback (Benson & Onkal, 1992), expo- sure to multiple perspectives (Ariely et al., 2000; Herzog & Hertwig, 2009), exposure to historical analogies (Lovallo, Clarke, & Camerer, 2012), decomposition of the problem into subsets (Fischhoff, Slovic, & Lichtenstein, 1978), and explicit consideration of contradictory evi- dence (Koriat, Lichtenstein, & Fischhoff, 1980).",
+          "corpus_chunk": 52411
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Scenario training taught forecasters to generate new futures, actively entertain more possibilities, use decision trees, and avoid biases such as overpredicting change, creating incoherent scenarios, or assigning probabilities exceed- ing 1.0 to mutually exclusive and exhaustive outcomes.",
+          "corpus_chunk": 52412
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "When one has access to many people who make forecasts, how should those people interact in order to generate the most accurate aggregations of predictions?",
+          "corpus_chunk": 52413
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "When the benefits of group interaction exceed the costs, forecasters should work in teams.",
+          "corpus_chunk": 52413
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "These approaches stake out extreme positions on the continuum of independence and interdependence.",
+          "corpus_chunk": 52414
+        },
+        {
+          "locator": "PDF p. 4",
+          "basis": "full text",
+          "excerpt": "Design In Year 1, participants were randomly assigned to condi- tions of a 3 (training: no training, scenario training, or probability training) × 4 (group influence: indepen- dent, crowd-belief, team, or prediction-market forecast- ing) factorial design.",
+          "corpus_chunk": 52417
+        },
+        {
+          "locator": "PDF p. 4",
+          "basis": "full text",
+          "excerpt": "Team forecasters received additional train- ing in how to help the group be more accurate by main- taining high standards of evidence and proof.",
+          "corpus_chunk": 52418
+        },
+        {
+          "locator": "PDF p. 4",
+          "basis": "full text",
+          "excerpt": "We examined tracking by placing the 60 top performers of Year 1 (5 from each condition) in five teams of 12 members each (super- forecaster teams).",
+          "corpus_chunk": 52419
+        },
+        {
+          "locator": "PDF p. 4",
+          "basis": "full text",
+          "excerpt": "Year 1 began with 2,246 participants (1,593 survey respondents and 653 prediction-market traders).",
+          "corpus_chunk": 52419
+        },
+        {
+          "locator": "PDF p. 4",
+          "basis": "full text",
+          "excerpt": "Year 2 started with 1,648 participants (943 survey respondents and 705 prediction-market traders who were either new recruits or returnees).",
+          "corpus_chunk": 52420
+        },
+        {
+          "locator": "PDF pp. 4–5",
+          "basis": "full text",
+          "excerpt": "Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.",
+          "corpus_chunk": 52422
+        }
+      ],
+      "annotation": "Original open tournament study supplies a specified forecasting design and scoring convention; informal habits and general transfer are not certified by it."
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Practice a bounded operation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.",
+          "corpus_chunk": 38999
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.",
+          "corpus_chunk": 38999
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.",
+          "corpus_chunk": 39001
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.",
+          "corpus_chunk": 39001
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.",
+          "corpus_chunk": 39006
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.",
+          "corpus_chunk": 39008
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).",
+          "corpus_chunk": 39009
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.",
+          "corpus_chunk": 39010
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    },
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Feedback needs interpretation",
+        "Check the limits of transfer",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "McPeck (1981) attacked the thinking skills movement of the 1970s, including the critical thinking movement.",
+          "corpus_chunk": 689
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "Nevertheless, his position that the dispositions and abilities of a critical thinker are best developed in the context of subject-matter instruction is shared by many theorists of critical thinking, including Dewey (1910, 1933), Glaser (1941), Passmore (1980), Weinstein (1990), Bailin et al.",
+          "corpus_chunk": 690
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "In particular, he took the disposition to suspend judgment in situations of cognitive dissonance to be a general disposition.) Conceptual subject-specificity is subject to obvious counter-examples, such as the general ability to recognize confusion of necessary and sufficient conditions.",
+          "corpus_chunk": 691
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "For example, the principles of hypothetico-deductive reasoning hold for all the varied fields in which such reasoning occurs.",
+          "corpus_chunk": 692
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "Proponents of empirical subject-specificity tend to argue that transfer is more likely to occur if there is critical thinking instruction in a variety of domains, with explicit attention to dispositions and abilities that cut across domains.",
+          "corpus_chunk": 693
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Educational researchers use the term ‘dispositions’ broadly for the habits of mind and attitudes that contribute causally to being a critical thinker.",
+          "corpus_chunk": 655
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Whatever their status, critical thinking dispositions need motivation for their initial formation in a child—motivation that may be external or internal.",
+          "corpus_chunk": 656
+        },
+        {
+          "locator": "§ 8",
+          "basis": "full text",
+          "excerpt": "Facione (1990a: 25) divides “affective dispositions” of critical thinking into approaches to life and living in general and approaches to specific issues, questions or problems.",
+          "corpus_chunk": 657
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "Some of the initiating dispositions, such as open-mindedness and willingness to suspend judgment, are also internal critical thinking dispositions, in the sense of mental habits or attitudes that contribute causally to doing a good job of critical thinking once one starts the process.",
+          "corpus_chunk": 664
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "For a list of identified internal critical thinking dispositions, see the Supplement on Internal Critical Thinking Dispositions.",
+          "corpus_chunk": 665
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    }
+  ]
+}

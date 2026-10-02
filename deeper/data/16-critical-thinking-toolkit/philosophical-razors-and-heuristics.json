@@ -1,0 +1,185 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "philosophical-razors-and-heuristics",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What conditions and purposes justify simplifying maxims without turning them into universal verdicts?"
+  ],
+  "sources": [
+    {
+      "key": "baker2022",
+      "used_for": [
+        "Ask what simplicity means",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Most philosophers believe that, other things being equal, simpler theories are better.",
+          "corpus_chunk": 49775
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "There is a widespread philosophical presumption that simplicity is a theoretical virtue.",
+          "corpus_chunk": 49776
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Kant—in the Critique of Pure Reason—supports the maxim that “rudiments or principles must not be unnecessarily multiplied (entia praeter necessitatem non esse multiplicanda)” and argues that this is a regulative idea of pure reason which underlies scientists’ theorizing about nature (Kant, 1781/1787, pp. 538–9).",
+          "corpus_chunk": 49777
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Newton goes on to remark that “Nature is pleased with simplicity, and affects not the pomp of superfluous causes” (Newton 1687, p. 398).",
+          "corpus_chunk": 49777
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "It is, after all, a principle of logic not to multiply entities unnecessarily (Lavoisier 1862, pp. 623–4).",
+          "corpus_chunk": 49778
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Thus materialists about the mind may use OR against dualism, on the grounds that dualism postulates an extra ontological category for mental phenomena.",
+          "corpus_chunk": 49780
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The apparent familiarity of the notion of simplicity means that it is often left unanalyzed, while its vagueness and multiplicity of meanings contributes to the challenge of pinning the notion down precisely.[1] A distinction is often made between two fundamentally distinct senses of simplicity: syntactic simplicity (roughly, the number and complexity of hypotheses), and ontological simplicity (roughly, the number and complexity of things postulated).[2] These two facets of simplicity are often referred to as elegance and parsimony respectively.",
+          "corpus_chunk": 49781
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Philosophical interest in these two notions of simplicity may be organized around answers to three basic questions; (i) How is simplicity to be defined? [Definition] (ii) What is the role of simplicity principles in different areas of inquiry? [Usage] (iii) Is there a rational justification for such simplicity principles? [Justification] As we shall see, answering the definitional question, (i), is more straightforward for parsimony than for elegance.",
+          "corpus_chunk": 49782
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "With respect to question (ii), there is an important distinction to be made between two sorts of simplicity principle.",
+          "corpus_chunk": 49782
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The first reading corresponds to parsimony, the second to elegance.",
+          "corpus_chunk": 49783
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This points to another way of characterizing the elegance/parsimony distinction, in terms of simplicity of theory versus simplicity of world respectively.[3] Sober (2001) argues that both these facets of simplicity can be interpreted in terms of minimization.",
+          "corpus_chunk": 49785
+        }
+      ],
+      "annotation": "Secondary account distinguishes elegance and parsimony, epistemic and methodological uses, and conditional justification of simplicity."
+    },
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Setting aside is different from refuting",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Misplaced Burden of Proof",
+          "basis": "full text",
+          "excerpt": "Committing the error of trying to get someone else to prove you are wrong, when it is your responsibility to prove you are correct.",
+          "corpus_chunk": 48750
+        }
+      ],
+      "annotation": "Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity."
+    },
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "A shortcut needs environmental fit",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.",
+          "corpus_chunk": 45024
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.",
+          "corpus_chunk": 45025
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.",
+          "corpus_chunk": 45026
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.",
+          "corpus_chunk": 45027
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This general goal of the Fast and Frugal program leads to a second difference between the two schools.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.",
+          "corpus_chunk": 45084
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.",
+          "corpus_chunk": 45086
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.",
+          "corpus_chunk": 45087
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Search available options and choose the first one that exceeds your aspiration level.",
+          "corpus_chunk": 45089
+        }
+      ],
+      "annotation": "Secondary account of environmental fit, resource limits and heuristic procedures; a shortcut’s success depends on the task."
+    }
+  ]
+}

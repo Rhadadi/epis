@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 275 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 286 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -2706,6 +2706,108 @@
    "url": "https://archive.org/details/philosophicaless00lapliala",
    "license": "public-domain",
    "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Psychological Strategies for Winning a Geopolitical Forecasting Tournament",
+   "authors": "Mellers, Barbara A.; Ungar, Lyle; Baron, Jonathan A.; Ramos, Jaime; Gürçay, Burcu; Fincher, Katrina M.; Scott, Sydney; Moore, Don A.; Atanasov, Pavel Dimitrov; Swift, Samuel A.; Murray, Terry; Stone, Eric M.; Tetlock, Philip E.",
+   "year": "2014",
+   "source": "Psychological Science",
+   "doi": "10.1177/0956797614524255",
+   "url": "http://www.escholarship.org/uc/item/4rg4n9vr",
+   "license": "open-access",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Judgment and Decision Making",
+   "authors": "",
+   "year": "",
+   "source": "nobaproject.com",
+   "url": "https://nobaproject.com/modules/judgment-and-decision-making",
+   "license": "CC-BY-NC-SA",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Theory of Mind",
+   "authors": "",
+   "year": "",
+   "source": "nobaproject.com",
+   "url": "https://nobaproject.com/modules/theory-of-mind",
+   "license": "CC-BY-NC-SA",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Why do humans reason? Arguments for an argumentative theory",
+   "authors": "",
+   "year": "",
+   "source": "www.dan.sperber.fr",
+   "url": "http://www.dan.sperber.fr/wp-content/uploads/2011_mercier_why-do-humans-reason.pdf",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Intuitive and reflective inferences",
+   "authors": "",
+   "year": "",
+   "source": "www.dan.sperber.fr",
+   "url": "http://www.dan.sperber.fr/wp-content/uploads/2009_mercier_intuitive_and_reflective_inferences.pdf",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Dunning–Kruger Effect",
+   "authors": "",
+   "year": "",
+   "source": "thedecisionlab.com",
+   "url": "https://thedecisionlab.com/biases/dunning-kruger-effect",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "Illusory Truth Effect",
+   "authors": "",
+   "year": "",
+   "source": "thedecisionlab.com",
+   "url": "https://thedecisionlab.com/biases/illusory-truth-effect",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "The Scout Mindset: author’s introduction",
+   "authors": "",
+   "year": "",
+   "source": "juliagalef.com",
+   "url": "https://juliagalef.com/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "The misunderstood limits of folk science: an illusion of explanatory depth (open abstract and metadata)",
+   "authors": "Rozenblit, Leonid; Keil, Frank",
+   "year": "2002",
+   "source": "api.crossref.org",
+   "url": "https://api.crossref.org/works/10.1207/s15516709cog2605_1",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02",
+   "format": "txt",
+   "held": "open abstract and metadata only"
+  },
+  {
+   "title": "Stasis Theory: Purdue OWL",
+   "authors": "",
+   "year": "",
+   "source": "owl.purdue.edu",
+   "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/stasis_theory/index.html",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "The Baloney Detection Kit: Carl Sagan’s Rules for Bullshit-Busting and Critical Thinking",
+   "authors": "",
+   "year": "",
+   "source": "www.themarginalian.org",
+   "url": "https://www.themarginalian.org/2014/01/03/baloney-detection-kit-carl-sagan/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
   }
  ]
 }

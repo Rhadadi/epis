@@ -1,0 +1,78 @@
+{
+  "chapter": "15-fallacies",
+  "section": "causal-and-statistical-fallacies",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "A numerical pattern needs an account of how the cases and measurements were produced. A change after an intervention does not by itself establish the intervention's effect. A dramatic result can reflect selective reporting, extreme-case selection, or a search through many possibilities. Different errors require different repairs: better comparisons, clearer denominators, or new evidence. Statistics becomes useful when the design supports the inference being made."
+  ],
+  "sources": [
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Compare with what would otherwise happen",
+        "Selection changes the expected pattern",
+        "Discovery and confirmation need different work",
+        "Do not reverse a conditional",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Common Cause",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs during causal reasoning when a causal connection between two kinds of events is claimed when evidence is available indicating that both are the effect of a common cause.",
+          "corpus_chunk": 48686
+        },
+        {
+          "locator": "Post Hoc",
+          "basis": "full text",
+          "excerpt": "Suppose we notice that an event of kind A is followed in time by an event of kind B, and then hastily leap to the conclusion that A caused B.",
+          "corpus_chunk": 48766
+        },
+        {
+          "locator": "Prosecutor’s Fallacy",
+          "basis": "full text",
+          "excerpt": "This is the mistake of over-emphasizing the strength of a piece of evidence while paying insufficient attention to the context.",
+          "corpus_chunk": 48768
+        },
+        {
+          "locator": "Prosecutor’s Fallacy",
+          "basis": "full text",
+          "excerpt": "Suppose that pool has six million people who could have committed the crime, all other things being equal.",
+          "corpus_chunk": 48768
+        },
+        {
+          "locator": "Regression",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.",
+          "corpus_chunk": 48776
+        },
+        {
+          "locator": "Regression",
+          "basis": "full text",
+          "excerpt": "There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.",
+          "corpus_chunk": 48777
+        },
+        {
+          "locator": "Sharpshooter’s",
+          "basis": "full text",
+          "excerpt": "The Sharpshooter’s Fallacy gets its name from someone shooting a rifle at the side of the barn and then going over and drawing a target and bulls eye concentrically around the bullet hole.",
+          "corpus_chunk": 48788
+        },
+        {
+          "locator": "Suppressed Evidence",
+          "basis": "full text",
+          "excerpt": "Intentionally failing to use information suspected of being relevant and significant is committing the fallacy of suppressed evidence.",
+          "corpus_chunk": 48805
+        },
+        {
+          "locator": "Suppressed Evidence",
+          "basis": "full text",
+          "excerpt": "If the relevant information is not intentionally suppressed but rather inadvertently overlooked, the fallacy of suppressed evidence also is said to occur, although the fallacy’s name is misleading in this case.",
+          "corpus_chunk": 48806
+        }
+      ],
+      "annotation": "Secondary explanations of specific argument errors, with context-sensitive distinctions and legitimate alternatives; no universal verdict is inferred from a label."
+    }
+  ]
+}

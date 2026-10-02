@@ -1,0 +1,207 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "heuristics-and-biases",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What makes a simplifying procedure useful or biased, and what do task interpretation and environmental fit contribute?"
+  ],
+  "sources": [
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "A shortcut with a job",
+        "The task can be represented differently",
+        "Less information is not always better",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The bias-variance trade-off refers to a particular decomposition of overall prediction error for an estimator into its central tendency (bias) and dispersion (variance).",
+          "corpus_chunk": 45043
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The bias-variance decomposition highlights a trade-off between two extreme approaches to making a prediction (see the (supplement on the bias-variance decomposition).",
+          "corpus_chunk": 45044
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Since you do not know the true function \\(r(X)\\) and only have a sample data set \\(\\mathcal{D}\\), you will aspire to construct an estimator that ideally generalizes to new, unseen data.",
+          "corpus_chunk": 45045
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The problem is to strike a balance between an underfitting model, which erroneously ignores available information about the true function r, and an overfitting model, which erroneously includes information that is noise and thus gives misleading information about the true function r.",
+          "corpus_chunk": 45046
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "What teenagers learn as children about the world through play and observing other people drive lends to them an understanding that utility poles are to be steered around, a piece of commonsense that our current machine learning systems do not have but must learn from scratch on a case-by-case basis.",
+          "corpus_chunk": 45047
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Indeed, Gigerenzer and Brighton make a stronger argument, stating that “the bias-variance dilemma shows formally why a mind can be better off with an adaptive toolbox of biased, specialized heuristics” (Gigerenzer & Brighton 2009: 120); see also section 5.2.",
+          "corpus_chunk": 45048
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "In fact, for 0-1 loss, bias and variance combine multiplicatively (J.",
+          "corpus_chunk": 45048
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.",
+          "corpus_chunk": 45075
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).",
+          "corpus_chunk": 45076
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).",
+          "corpus_chunk": 45077
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.",
+          "corpus_chunk": 45080
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.",
+          "corpus_chunk": 45081
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).",
+          "corpus_chunk": 45082
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This general goal of the Fast and Frugal program leads to a second difference between the two schools.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.",
+          "corpus_chunk": 45084
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.",
+          "corpus_chunk": 45086
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.",
+          "corpus_chunk": 45087
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Search available options and choose the first one that exceeds your aspiration level.",
+          "corpus_chunk": 45089
+        }
+      ],
+      "annotation": "Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes."
+    },
+    {
+      "key": "bazerman-noba",
+      "used_for": [
+        "A bias requires a comparison",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Anchoring",
+          "basis": "full text",
+          "excerpt": "Regarding the second problem, people vary a great deal in their final assessment of the level of executive-level management fraud, but most think that 10 out of 1,000 is too low.",
+          "corpus_chunk": 52468
+        },
+        {
+          "locator": "Framing",
+          "basis": "full text",
+          "excerpt": "Turning to Problem 3, most people choose Program A, which saves 200 lives for sure, over Program B.",
+          "corpus_chunk": 52469
+        },
+        {
+          "locator": "Framing",
+          "basis": "full text",
+          "excerpt": "People respond very differently to saving versus losing lives—even when the difference is based just on the “framing” of the choices.",
+          "corpus_chunk": 52469
+        },
+        {
+          "locator": "Framing",
+          "basis": "full text",
+          "excerpt": "These are just three of the many biases that affect even the smartest among us.",
+          "corpus_chunk": 52470
+        }
+      ],
+      "annotation": "Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions."
+    }
+  ]
+}

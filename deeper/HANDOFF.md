@@ -25,7 +25,9 @@ This file adds the workflow and tools.
 | 11 Truth and relativism | 9 | published |
 | 12 Social epistemology | 15 | published |
 | 13 Virtues and ethics of belief | 10 | published |
-| 14–16 | 0 | to do (list in section 8) |
+| 14 Psychology of reasoning | 17 | published |
+| 15 Fallacies | 6 | published |
+| 16 Critical thinking toolkit | 16 | published |
 
 After that: the final polish pass (section 9).
 

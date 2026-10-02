@@ -1,0 +1,114 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "overconfidence-and-the-illusion-of-explanatory-depth",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do confidence targets differ, and what does the open explanatory-depth abstract support?"
+  ],
+  "sources": [
+    {
+      "key": "rozenblit-keil2002-abstract",
+      "used_for": [
+        "Confidence in which claim?",
+        "Ask what the explanation connects",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Abstract",
+          "basis": "full text",
+          "excerpt": "People feel they understand complex phenomena with far greater precision, coherence, and depth than they really do",
+          "corpus_chunk": 53206
+        },
+        {
+          "locator": "Abstract",
+          "basis": "full text",
+          "excerpt": "The illusion is far stronger for explanatory knowledge than many other kinds of knowledge, such as that for facts, procedures or narratives.",
+          "corpus_chunk": 53206
+        }
+      ],
+      "annotation": "Only the openly available publisher-deposited abstract in Crossref was read; used for the explanatory-depth claim and broad domain comparison, not detailed methods, estimates, or political extensions."
+    },
+    {
+      "key": "bazerman-noba",
+      "used_for": [
+        "Confidence in which claim?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Overconfidence",
+          "basis": "full text",
+          "excerpt": "On the first problem, if you set your ranges so that you were justifiably 98 percent confident, you should expect that approximately 9.8, or nine to 10, of your ranges would include the actual value.",
+          "corpus_chunk": 52467
+        }
+      ],
+      "annotation": "Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions."
+    },
+    {
+      "key": "mellers-etal2014",
+      "used_for": [
+        "Records and feedback",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.",
+          "corpus_chunk": 52423
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "Participants were encouraged to return to the Web site and update their prediction until the question closed.",
+          "corpus_chunk": 52424
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.",
+          "corpus_chunk": 52425
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.",
+          "corpus_chunk": 52426
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "In separate regressions for Years 1 and 2, participants were treated as random effects.",
+          "corpus_chunk": 52432
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "The best performers from Year 1 (i.e., the top 2%) were placed together in elite teams in Year 2.",
+          "corpus_chunk": 52432
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "Number of questions attempted also varied with training in Year 1, F(2, 1583) = 3.65, p = .026.",
+          "corpus_chunk": 52433
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "Independent forecasters made an average of 1.4 predictions per question, and regular teams made an average of 1.6.",
+          "corpus_chunk": 52434
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "To calculate calibration, we created small proba- bility bins of .500 to .525, .526 to .575, .576 to .625, and so forth.",
+          "corpus_chunk": 52435
+        }
+      ],
+      "annotation": "Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "fluency-and-the-illusory-truth-effect",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do familiarity, informational dependence, truth judgments, and alternative explanations differ?"
+  ],
+  "sources": [
+    {
+      "key": "illusory-truth-tdl",
+      "used_for": [
+        "Familiarity and support",
+        "Feeling easy is not a measurement",
+        "Different outcomes need different evidence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Familiarity making processing easy",
+          "basis": "full text",
+          "excerpt": "What does processing fluency have to do with the illusory truth effect?",
+          "corpus_chunk": 53173
+        },
+        {
+          "locator": "Familiarity making processing easy",
+          "basis": "full text",
+          "excerpt": "After the exposure period was over, Zajonc sent out a questionnaire to both communities, asking respondents to give their impressions of 12 “unfamiliar” words.",
+          "corpus_chunk": 53174
+        },
+        {
+          "locator": "Familiarity making processing easy",
+          "basis": "full text",
+          "excerpt": "One study found that college students fell for the illusory truth effect even when a subsequent knowledge test showed that they knew the correct answer.3 This phenomenon is known as knowledge neglect: even though people knew the right answers, they could still be led astray by the illusory truth effect.",
+          "corpus_chunk": 53175
+        },
+        {
+          "locator": "How it all started",
+          "basis": "full text",
+          "excerpt": "The illusory truth effect was first discussed in a 1977 paper by Lynn Hasher, David Goldstein, and Thomas Toppino.",
+          "corpus_chunk": 53186
+        },
+        {
+          "locator": "How it all started",
+          "basis": "full text",
+          "excerpt": "Interest in the illusory truth effect grew in the late 2000s and 2010s, as the internet and social media became more and more important for disseminating information.",
+          "corpus_chunk": 53187
+        },
+        {
+          "locator": "Referential theory",
+          "basis": "full text",
+          "excerpt": "Rom proposed another interesting basis for the illusory truth effect, called referential theory, in 2017.25 Referential theory suggests that we judge the truthfulness of a statement based on coherent references in our memory.",
+          "corpus_chunk": 53176
+        },
+        {
+          "locator": "Referential theory",
+          "basis": "full text",
+          "excerpt": "The referential theory differs from theories of processing ease or familiarity, instead focusing on how words or phrases are connected semantically in our memory.",
+          "corpus_chunk": 53177
+        }
+      ],
+      "annotation": "Freely readable secondary account of repetition-related truth judgments and competing fluency/referential mechanisms; unrelated numerical and broad social claims are not used."
+    }
+  ]
+}

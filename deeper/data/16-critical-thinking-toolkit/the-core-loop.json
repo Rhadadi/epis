@@ -1,0 +1,119 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "the-core-loop",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do inspectable outputs, revision, stopping and domain knowledge limit a seven-stage inquiry?"
+  ],
+  "sources": [
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Return when the problem changes",
+        "Make the outputs inspectable",
+        "Stop with a stated limitation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "McPeck (1981) attacked the thinking skills movement of the 1970s, including the critical thinking movement.",
+          "corpus_chunk": 689
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "Nevertheless, his position that the dispositions and abilities of a critical thinker are best developed in the context of subject-matter instruction is shared by many theorists of critical thinking, including Dewey (1910, 1933), Glaser (1941), Passmore (1980), Weinstein (1990), Bailin et al.",
+          "corpus_chunk": 690
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "In particular, he took the disposition to suspend judgment in situations of cognitive dissonance to be a general disposition.) Conceptual subject-specificity is subject to obvious counter-examples, such as the general ability to recognize confusion of necessary and sufficient conditions.",
+          "corpus_chunk": 691
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "For example, the principles of hypothetico-deductive reasoning hold for all the varied fields in which such reasoning occurs.",
+          "corpus_chunk": 692
+        },
+        {
+          "locator": "§ 12.1",
+          "basis": "full text",
+          "excerpt": "Proponents of empirical subject-specificity tend to argue that transfer is more likely to occur if there is critical thinking instruction in a variety of domains, with explicit attention to dispositions and abilities that cut across domains.",
+          "corpus_chunk": 693
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Despite the diversity of our 11 examples, one can recognize a common pattern.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.",
+          "corpus_chunk": 642
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.",
+          "corpus_chunk": 643
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging",
+          "corpus_chunk": 644
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).",
+          "corpus_chunk": 645
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If one considers the critical thinking process illustrated by the 11 examples, one can identify distinct kinds of mental acts and mental states that form part of it.",
+          "corpus_chunk": 646
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Let us begin, then, by distinguishing the kinds of mental acts and mental events that can occur in a critical thinking process.",
+          "corpus_chunk": 646
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Imagining: One thinks of possible answers (bus or subway or elevated in Transit, flagpole or ornament or wireless communication aid or direction indicator in Ferryboat, allergic reaction or heat rash in Rash).",
+          "corpus_chunk": 648
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Experimenting: One designs and carries out an experiment or a systematic observation to find out whether the results deduced from a possible answer will occur (looking at the location of the flagpole in relation to the pilot’s position in Ferryboat, putting an ice cube on top of a tumbler taken from hot water in Bubbles, measuring the height to which a suction pump will draw water at different elevations in Suction pump, noticing the spacing of diamonds when movement to or from a diamond lane is allowed in Diamond).",
+          "corpus_chunk": 649
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "However, Candidate includes the activities of extracting information from sources and evaluating its credibility.",
+          "corpus_chunk": 650
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    }
+  ]
+}
