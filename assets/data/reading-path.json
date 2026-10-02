@@ -1,0 +1,3521 @@
+{
+  "competencies": [
+    {
+      "id": "vocabulary",
+      "label": "Knowledge, belief and justification",
+      "description": "I can explain the difference, with an example."
+    },
+    {
+      "id": "logic",
+      "label": "Arguments and validity",
+      "description": "I can identify premises and distinguish validity from truth."
+    },
+    {
+      "id": "probability",
+      "label": "Conditional probability",
+      "description": "I can distinguish P(A|B) from P(B|A)."
+    },
+    {
+      "id": "knowledge",
+      "label": "Theories of knowledge",
+      "description": "I am comfortable with Gettier cases and justification."
+    },
+    {
+      "id": "testimony",
+      "label": "Evidence from other people",
+      "description": "I can explain how testimony can support a belief."
+    }
+  ],
+  "foundations": {
+    "01/the-basic-vocabulary": "vocabulary",
+    "03/what-an-argument-is-and-is-not": "logic",
+    "03/validity-and-soundness": "logic",
+    "09/probability-the-basics": "probability",
+    "05/the-tripartite-analysis": "knowledge",
+    "06/what-justification-is": "knowledge",
+    "07/testimony": "testimony"
+  },
+  "prerequisites": {
+    "03/validity-and-soundness": [
+      {
+        "id": "03/what-an-argument-is-and-is-not",
+        "why": "Identify premises and conclusions before testing whether the conclusion follows."
+      }
+    ],
+    "03/formal-fallacies": [
+      {
+        "id": "03/validity-and-soundness",
+        "why": "The distinction between validity and truth makes formal errors easier to diagnose."
+      }
+    ],
+    "09/bayes-theorem": [
+      {
+        "id": "09/probability-the-basics",
+        "why": "Conditional probability supplies the notation and ideas used in Bayes’ theorem."
+      }
+    ],
+    "09/common-errors-in-probabilistic-reasoning": [
+      {
+        "id": "09/probability-the-basics",
+        "why": "Use conditional probability to see why reversing a conditional can mislead."
+      }
+    ],
+    "09/calibration-and-scoring-rules": [
+      {
+        "id": "09/probability-the-basics",
+        "why": "A probability expresses confidence; calibration compares that confidence with outcomes."
+      }
+    ],
+    "05/the-gettier-problem": [
+      {
+        "id": "05/the-tripartite-analysis",
+        "why": "Gettier cases challenge the justified-true-belief account introduced here."
+      }
+    ],
+    "06/foundationalism": [
+      {
+        "id": "06/what-justification-is",
+        "why": "Clarify what justification asks of a belief before comparing its structures."
+      }
+    ],
+    "06/coherentism": [
+      {
+        "id": "06/what-justification-is",
+        "why": "Clarify what justification asks of a belief before comparing its structures."
+      }
+    ],
+    "08/the-closure-argument": [
+      {
+        "id": "05/the-tripartite-analysis",
+        "why": "The skeptical argument concerns whether ordinary claims qualify as knowledge."
+      }
+    ],
+    "12/experts-and-novices": [
+      {
+        "id": "07/testimony",
+        "why": "Expert advice is a special case of learning from another person’s testimony."
+      }
+    ],
+    "12/trust-and-epistemic-dependence": [
+      {
+        "id": "07/testimony",
+        "why": "Start with testimony before asking when dependence on others is justified."
+      }
+    ]
+  },
+  "topics": [
+    {
+      "id": "arguments",
+      "label": "Arguments & disagreement",
+      "keywords": [
+        "argument",
+        "debate",
+        "logic",
+        "fallacy",
+        "fallacies",
+        "disagree",
+        "disagreement",
+        "reasoning"
+      ],
+      "question": "Where does the discussion usually get stuck?",
+      "focuses": [
+        {
+          "id": "evaluate",
+          "label": "I want to test whether an argument works",
+          "steps": [
+            {
+              "id": "03/validity-and-soundness",
+              "why": "Separate a conclusion that follows from premises that are actually true."
+            },
+            {
+              "id": "03/reconstructing-real-arguments",
+              "why": "Turn an everyday claim into an argument you can examine."
+            },
+            {
+              "id": "15/the-fallacy-fallacy",
+              "why": "Avoid treating a bad argument as proof that its conclusion is false."
+            },
+            {
+              "id": "16/step-4-evaluate-the-premises-and-the-reasoning",
+              "why": "Put the distinctions to work on the claim you started with."
+            },
+            {
+              "id": "03/formal-fallacies",
+              "why": "Examine recurring mistakes in the form of an inference."
+            },
+            {
+              "id": "15/fallacies-of-presumption",
+              "why": "Look for hidden assumptions in persuasive arguments."
+            }
+          ]
+        },
+        {
+          "id": "discuss",
+          "label": "We keep talking past each other",
+          "steps": [
+            {
+              "id": "16/step-2-identify-the-kind-of-disagreement",
+              "why": "Find out whether the dispute concerns facts, meanings or values."
+            },
+            {
+              "id": "04/verbal-disputes",
+              "why": "Check whether the same word is doing different jobs."
+            },
+            {
+              "id": "16/step-6-find-the-crux",
+              "why": "Locate the belief that would actually change the discussion."
+            },
+            {
+              "id": "12/peer-disagreement",
+              "why": "Consider when another person’s disagreement is evidence."
+            },
+            {
+              "id": "16/the-ethics-of-discussion",
+              "why": "Keep inquiry possible when disagreement persists."
+            },
+            {
+              "id": "13/open-mindedness-and-its-limits",
+              "why": "Balance receptiveness with standards for evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "label": "Probability & decisions",
+      "keywords": [
+        "bayes",
+        "bayesian",
+        "probability",
+        "risk",
+        "odds",
+        "forecast",
+        "prediction",
+        "statistics",
+        "statistical",
+        "uncertainty",
+        "test result"
+      ],
+      "question": "What would you like to do with uncertainty?",
+      "focuses": [
+        {
+          "id": "update",
+          "label": "Update my confidence when evidence arrives",
+          "steps": [
+            {
+              "id": "09/bayes-theorem",
+              "why": "Learn how prior confidence and new evidence combine."
+            },
+            {
+              "id": "09/common-errors-in-probabilistic-reasoning",
+              "why": "Check base rates and reversed conditionals before trusting an intuitive answer."
+            },
+            {
+              "id": "09/calibration-and-scoring-rules",
+              "why": "Test whether your confidence matches your track record."
+            },
+            {
+              "id": "14/forecasting-and-superforecasters",
+              "why": "Connect probability judgments with forecasting practice."
+            },
+            {
+              "id": "09/bayesian-epistemology",
+              "why": "Explore what probabilistic updating means for rational belief."
+            },
+            {
+              "id": "09/full-belief-and-degrees-of-belief",
+              "why": "Ask how confidence relates to outright belief."
+            }
+          ]
+        },
+        {
+          "id": "studies",
+          "label": "Understand a statistic or research result",
+          "steps": [
+            {
+              "id": "09/statistics-and-significance",
+              "why": "Distinguish statistical significance from the claims it cannot establish."
+            },
+            {
+              "id": "10/causation-and-causal-inference",
+              "why": "Check whether an association warrants a causal conclusion."
+            },
+            {
+              "id": "10/the-replication-crisis",
+              "why": "Consider how much weight to put on a single result."
+            },
+            {
+              "id": "09/common-errors-in-probabilistic-reasoning",
+              "why": "Identify probability mistakes in how the result is presented."
+            },
+            {
+              "id": "10/values-in-science",
+              "why": "Consider choices that shape scientific inquiry and interpretation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "label": "Science & evidence",
+      "keywords": [
+        "science",
+        "scientific",
+        "research",
+        "study",
+        "studies",
+        "experiment",
+        "causal",
+        "causation",
+        "medicine",
+        "medical",
+        "health",
+        "climate"
+      ],
+      "question": "Which question about science matters most right now?",
+      "focuses": [
+        {
+          "id": "trust",
+          "label": "How can I judge a scientific claim?",
+          "steps": [
+            {
+              "id": "10/what-makes-science-special",
+              "why": "Start with the practices that make scientific claims open to scrutiny."
+            },
+            {
+              "id": "10/causation-and-causal-inference",
+              "why": "Separate causal evidence from a correlation or an anecdote."
+            },
+            {
+              "id": "10/scientific-consensus",
+              "why": "Understand what expert agreement can and cannot tell you."
+            },
+            {
+              "id": "10/the-replication-crisis",
+              "why": "Look at reliability across studies rather than one striking result."
+            },
+            {
+              "id": "10/pseudoscience-and-how-to-spot-it",
+              "why": "Use standards of inquiry to assess claims of scientific authority."
+            },
+            {
+              "id": "16/step-5-evaluate-the-evidence",
+              "why": "Bring the checks together for your own example."
+            }
+          ]
+        },
+        {
+          "id": "method",
+          "label": "How does science justify its conclusions?",
+          "steps": [
+            {
+              "id": "09/humes-problem-of-induction",
+              "why": "See the philosophical difficulty in learning general rules from past observations."
+            },
+            {
+              "id": "10/popper-and-falsificationism",
+              "why": "Examine testing by attempted refutation."
+            },
+            {
+              "id": "10/the-duhem-quine-problem",
+              "why": "Ask what a failed prediction really tells us."
+            },
+            {
+              "id": "10/kuhn-and-paradigms",
+              "why": "Compare scientific change with the picture of one test at a time."
+            },
+            {
+              "id": "10/inference-to-the-best-explanation",
+              "why": "Explore why an explanatory hypothesis can be reasonable without being certain."
+            },
+            {
+              "id": "10/scientific-realism-and-anti-realism",
+              "why": "Ask what successful science licenses us to believe about reality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "label": "News, experts & AI",
+      "keywords": [
+        "news",
+        "media",
+        "misinformation",
+        "disinformation",
+        "conspiracy",
+        "expert",
+        "trust",
+        "politics",
+        "political",
+        "propaganda",
+        "chatgpt",
+        "artificial intelligence",
+        "ai"
+      ],
+      "question": "What makes this information hard to assess?",
+      "focuses": [
+        {
+          "id": "sources",
+          "label": "I need to decide which sources to trust",
+          "steps": [
+            {
+              "id": "12/experts-and-novices",
+              "why": "Assess expertise when you cannot check every technical claim yourself."
+            },
+            {
+              "id": "12/echo-chambers-and-epistemic-bubbles",
+              "why": "Distinguish missing information from systems that undermine trust in outsiders."
+            },
+            {
+              "id": "12/misinformation-disinformation-and-propaganda",
+              "why": "Examine how information can mislead and how intent changes the problem."
+            },
+            {
+              "id": "14/confirmation-bias-and-myside-bias",
+              "why": "Check whether you scrutinize unwelcome claims more than welcome ones."
+            },
+            {
+              "id": "16/step-5-evaluate-the-evidence",
+              "why": "Make an evidence check you can repeat on the next story."
+            },
+            {
+              "id": "12/epistemic-institutions",
+              "why": "Look beyond individual judgment to the institutions supporting reliable information."
+            }
+          ]
+        },
+        {
+          "id": "ai",
+          "label": "I want to use AI without outsourcing my judgment",
+          "steps": [
+            {
+              "id": "12/epistemic-autonomy-and-artificial-intelligence",
+              "why": "Examine how assistance can support or weaken your own judgment."
+            },
+            {
+              "id": "12/trust-and-epistemic-dependence",
+              "why": "Ask what justified reliance on another information source requires."
+            },
+            {
+              "id": "16/step-5-evaluate-the-evidence",
+              "why": "Check a generated answer against evidence you can inspect."
+            },
+            {
+              "id": "14/fluency-and-the-illusory-truth-effect",
+              "why": "Separate an answer that sounds natural from one that is well supported."
+            },
+            {
+              "id": "13/epistemic-humility-and-confidence",
+              "why": "Keep confidence proportionate when the source is opaque."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge & skepticism",
+      "keywords": [
+        "knowledge",
+        "epistemology",
+        "epistemological",
+        "philosophy",
+        "gettier",
+        "skepticism",
+        "scepticism",
+        "skeptic",
+        "certainty",
+        "justification",
+        "truth",
+        "relativism"
+      ],
+      "question": "Which philosophical problem draws you in?",
+      "focuses": [
+        {
+          "id": "know",
+          "label": "What makes a belief count as knowledge?",
+          "steps": [
+            {
+              "id": "05/the-gettier-problem",
+              "why": "See why justified true belief may still fall short of knowledge."
+            },
+            {
+              "id": "06/what-justification-is",
+              "why": "Clarify what having reasons for a belief amounts to."
+            },
+            {
+              "id": "06/foundationalism",
+              "why": "Explore whether chains of reasons need starting points."
+            },
+            {
+              "id": "06/coherentism",
+              "why": "Compare an alternative built around the relations among beliefs."
+            },
+            {
+              "id": "07/perception",
+              "why": "Test these accounts against a familiar source of knowledge."
+            },
+            {
+              "id": "05/the-value-of-knowledge",
+              "why": "Ask why knowledge matters beyond holding a true belief."
+            }
+          ]
+        },
+        {
+          "id": "doubt",
+          "label": "Can we know anything for certain?",
+          "steps": [
+            {
+              "id": "08/varieties-of-skepticism",
+              "why": "Distinguish different doubts before deciding how to answer them."
+            },
+            {
+              "id": "08/the-closure-argument",
+              "why": "Reconstruct a central route from skeptical possibilities to doubt."
+            },
+            {
+              "id": "08/responses-to-skepticism",
+              "why": "Compare ways of resisting the skeptical conclusion."
+            },
+            {
+              "id": "06/fallibilism",
+              "why": "Ask whether knowledge can survive the possibility of error."
+            },
+            {
+              "id": "11/theories-of-truth",
+              "why": "Keep the question of truth distinct from our certainty about it."
+            },
+            {
+              "id": "11/relativism",
+              "why": "Examine whether disagreement makes truth relative."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "Identity, power & being heard",
+      "keywords": [
+        "identity",
+        "gender",
+        "sexuality",
+        "sexual",
+        "lgbt",
+        "queer",
+        "gay",
+        "lesbian",
+        "feminism",
+        "feminist",
+        "race",
+        "racism",
+        "discrimination",
+        "injustice",
+        "marginalized",
+        "power"
+      ],
+      "question": "Which question about identity and knowledge interests you?",
+      "focuses": [
+        {
+          "id": "heard",
+          "label": "Whose experiences and testimony are taken seriously?",
+          "steps": [
+            {
+              "id": "12/epistemic-injustice",
+              "why": "Examine harms people face specifically as knowers."
+            },
+            {
+              "id": "12/standpoint-and-feminist-epistemology",
+              "why": "Explore how social position can shape access to evidence and inquiry."
+            },
+            {
+              "id": "11/perspectivism-and-objectivity",
+              "why": "Ask how situated perspectives can contribute to objective inquiry."
+            },
+            {
+              "id": "14/identity-protective-cognition",
+              "why": "Examine how group commitments can affect the assessment of evidence."
+            },
+            {
+              "id": "04/loaded-language-euphemism-and-framing",
+              "why": "Notice how descriptions shape what gets heard."
+            },
+            {
+              "id": "12/epistemic-institutions",
+              "why": "Consider changes to the conditions under which people contribute knowledge."
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "label": "How do contested concepts shape a debate?",
+          "steps": [
+            {
+              "id": "04/essentially-contested-concepts",
+              "why": "Understand why some disagreements persist even after definitions are clarified."
+            },
+            {
+              "id": "04/conceptual-engineering",
+              "why": "Ask when changing a concept might improve inquiry."
+            },
+            {
+              "id": "11/social-constructionism",
+              "why": "Distinguish claims about social formation from claims about truth."
+            },
+            {
+              "id": "12/standpoint-and-feminist-epistemology",
+              "why": "Connect conceptual disputes with perspectives and social positions."
+            },
+            {
+              "id": "16/the-ethics-of-discussion",
+              "why": "Keep differences of perspective available for inquiry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belief",
+      "label": "Faith, values & responsible belief",
+      "keywords": [
+        "religion",
+        "religious",
+        "faith",
+        "god",
+        "belief",
+        "ethics",
+        "moral",
+        "morality",
+        "value",
+        "values",
+        "spiritual"
+      ],
+      "question": "What is the main tension for you?",
+      "focuses": [
+        {
+          "id": "responsibility",
+          "label": "What do I owe the evidence when forming beliefs?",
+          "steps": [
+            {
+              "id": "13/the-ethics-of-belief-clifford-and-james",
+              "why": "Compare rival views of the responsibilities involved in believing."
+            },
+            {
+              "id": "13/practical-reasons-for-belief",
+              "why": "Separate reasons a belief would be useful from reasons it is true."
+            },
+            {
+              "id": "13/faith-reason-and-religious-epistemology",
+              "why": "Explore faith as a test case for evidence and justified belief."
+            },
+            {
+              "id": "06/evidentialism",
+              "why": "Examine the view that justification should answer to evidence."
+            },
+            {
+              "id": "13/epistemic-humility-and-confidence",
+              "why": "Hold a view with confidence that acknowledges its limits."
+            },
+            {
+              "id": "13/open-mindedness-and-its-limits",
+              "why": "Decide what openness asks of you when disagreement remains."
+            }
+          ]
+        },
+        {
+          "id": "values",
+          "label": "How do facts and values connect?",
+          "steps": [
+            {
+              "id": "04/facts-values-and-the-is-ought-gap",
+              "why": "Distinguish factual premises from the values needed for a normative conclusion."
+            },
+            {
+              "id": "13/moral-encroachment",
+              "why": "Ask whether moral stakes can affect the standards for knowing."
+            },
+            {
+              "id": "10/values-in-science",
+              "why": "Examine the roles values play in a practice built around evidence."
+            },
+            {
+              "id": "16/step-2-identify-the-kind-of-disagreement",
+              "why": "Use the distinction to understand a concrete dispute."
+            },
+            {
+              "id": "13/the-ethics-of-belief-clifford-and-james",
+              "why": "Consider whether believing itself carries ethical obligations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "habits",
+      "label": "Thinking habits & confidence",
+      "keywords": [
+        "bias",
+        "biases",
+        "confidence",
+        "overconfidence",
+        "critical thinking",
+        "mindset",
+        "thinking",
+        "decision",
+        "decisions",
+        "self improvement"
+      ],
+      "question": "What would you most like to improve?",
+      "focuses": [
+        {
+          "id": "bias",
+          "label": "Notice bias and change my mind more fairly",
+          "steps": [
+            {
+              "id": "14/confirmation-bias-and-myside-bias",
+              "why": "Notice when you apply unequal standards to evidence."
+            },
+            {
+              "id": "14/motivated-reasoning",
+              "why": "Examine how desired conclusions can shape reasoning."
+            },
+            {
+              "id": "14/debiasing-what-works",
+              "why": "Compare practices intended to reduce reasoning errors."
+            },
+            {
+              "id": "14/the-scout-mindset",
+              "why": "Treat beliefs as maps you can revise rather than positions to defend."
+            },
+            {
+              "id": "13/a-catalogue-of-intellectual-virtues",
+              "why": "Connect useful practices with longer-term intellectual habits."
+            },
+            {
+              "id": "16/daily-practices",
+              "why": "Turn a reading session into a repeatable routine."
+            }
+          ]
+        },
+        {
+          "id": "confidence",
+          "label": "Match my confidence to what I know",
+          "steps": [
+            {
+              "id": "14/overconfidence-and-the-illusion-of-explanatory-depth",
+              "why": "Check whether familiarity has been mistaken for understanding."
+            },
+            {
+              "id": "09/calibration-and-scoring-rules",
+              "why": "Compare confidence with outcomes rather than with a feeling of certainty."
+            },
+            {
+              "id": "13/epistemic-humility-and-confidence",
+              "why": "Balance appropriate confidence with recognition of limits."
+            },
+            {
+              "id": "14/forecasting-and-superforecasters",
+              "why": "Practice judgments that can be checked later."
+            },
+            {
+              "id": "16/step-7-weigh-and-conclude",
+              "why": "Make a conclusion with uncertainty stated rather than hidden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "label": "History & a broad introduction",
+      "keywords": [
+        "history",
+        "historical",
+        "tradition",
+        "course",
+        "introduction",
+        "beginner",
+        "india",
+        "islam",
+        "china",
+        "greek",
+        "descartes",
+        "kant"
+      ],
+      "question": "How would you like to enter the field?",
+      "focuses": [
+        {
+          "id": "overview",
+          "label": "Start with the central questions",
+          "steps": [
+            {
+              "id": "01/the-central-questions",
+              "why": "Get an overview of what epistemology asks before choosing a theory."
+            },
+            {
+              "id": "01/the-basic-vocabulary",
+              "why": "Build the vocabulary shared by the chapters that follow."
+            },
+            {
+              "id": "02/recurring-patterns-in-the-history",
+              "why": "See recurring problems across different periods and traditions."
+            },
+            {
+              "id": "03/validity-and-soundness",
+              "why": "Learn a distinction used throughout philosophical arguments."
+            },
+            {
+              "id": "05/the-gettier-problem",
+              "why": "Meet a compact problem that reshaped the theory of knowledge."
+            },
+            {
+              "id": "01/the-map-of-the-field",
+              "why": "Choose what you want to study next in the wider field."
+            }
+          ]
+        },
+        {
+          "id": "traditions",
+          "label": "Compare periods and traditions",
+          "steps": [
+            {
+              "id": "02/ancient-greece",
+              "why": "Explore early debates about knowledge, perception and inquiry."
+            },
+            {
+              "id": "02/epistemology-in-india",
+              "why": "Compare another tradition’s investigations of sources of knowledge."
+            },
+            {
+              "id": "02/epistemology-in-the-islamic-world",
+              "why": "Examine debates connecting reason, experience and intellectual traditions."
+            },
+            {
+              "id": "02/epistemology-in-china",
+              "why": "Broaden the comparison through debates about names and knowing."
+            },
+            {
+              "id": "02/the-early-modern-revolution",
+              "why": "See how later skeptical and scientific questions transformed inquiry."
+            },
+            {
+              "id": "02/contemporary-directions",
+              "why": "Follow historical questions into current research."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": 1,
+  "sections": {
+    "01/why-epistemology-matters-for-critical-thinking": {
+      "id": "01/why-epistemology-matters-for-critical-thinking",
+      "title": "Why epistemology matters for critical thinking",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#why-epistemology-matters-for-critical-thinking",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/why-epistemology-matters-for-critical-thinking.html",
+        "minutes": 4
+      }
+    },
+    "01/the-central-questions": {
+      "id": "01/the-central-questions",
+      "title": "The central questions",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#the-central-questions",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/the-central-questions.html",
+        "minutes": 4
+      }
+    },
+    "01/three-kinds-of-knowing": {
+      "id": "01/three-kinds-of-knowing",
+      "title": "Three kinds of knowing",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#three-kinds-of-knowing",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/three-kinds-of-knowing.html",
+        "minutes": 15
+      }
+    },
+    "01/belief-credence-and-acceptance": {
+      "id": "01/belief-credence-and-acceptance",
+      "title": "Belief, credence, and acceptance",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#belief-credence-and-acceptance",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/belief-credence-and-acceptance.html",
+        "minutes": 13
+      }
+    },
+    "01/the-basic-vocabulary": {
+      "id": "01/the-basic-vocabulary",
+      "title": "The basic vocabulary",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#the-basic-vocabulary",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/the-basic-vocabulary.html",
+        "minutes": 4
+      }
+    },
+    "01/three-great-distinctions": {
+      "id": "01/three-great-distinctions",
+      "title": "Three great distinctions",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#three-great-distinctions",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/three-great-distinctions.html",
+        "minutes": 18
+      }
+    },
+    "01/epistemic-reasons-versus-practical-reasons": {
+      "id": "01/epistemic-reasons-versus-practical-reasons",
+      "title": "Epistemic reasons versus practical reasons",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#epistemic-reasons-versus-practical-reasons",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/epistemic-reasons-versus-practical-reasons.html",
+        "minutes": 16
+      }
+    },
+    "01/epistemology-is-normative": {
+      "id": "01/epistemology-is-normative",
+      "title": "Epistemology is normative",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#epistemology-is-normative",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/epistemology-is-normative.html",
+        "minutes": 4
+      }
+    },
+    "01/the-map-of-the-field": {
+      "id": "01/the-map-of-the-field",
+      "title": "The map of the field",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#the-map-of-the-field",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/the-map-of-the-field.html",
+        "minutes": 4
+      }
+    },
+    "01/how-the-pieces-connect-one-news-story-twelve-questions": {
+      "id": "01/how-the-pieces-connect-one-news-story-twelve-questions",
+      "title": "How the pieces connect: one news story, twelve questions",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#how-the-pieces-connect-one-news-story-twelve-questions",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/01-what-is-epistemology/how-the-pieces-connect-one-news-story-twelve-questions.html",
+        "minutes": 4
+      }
+    },
+    "01/check-your-understanding": {
+      "id": "01/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#check-your-understanding",
+      "minutes": 3
+    },
+    "01/further-reading": {
+      "id": "01/further-reading",
+      "title": "Further reading",
+      "chapter": 1,
+      "chapterTitle": "What Is Epistemology?",
+      "url": "guide/01-what-is-epistemology.html#further-reading",
+      "minutes": 1
+    },
+    "02/ancient-greece": {
+      "id": "02/ancient-greece",
+      "title": "Ancient Greece",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#ancient-greece",
+      "minutes": 9,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/ancient-greece.html",
+        "minutes": 9
+      }
+    },
+    "02/epistemology-in-india": {
+      "id": "02/epistemology-in-india",
+      "title": "Epistemology in India",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#epistemology-in-india",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/epistemology-in-india.html",
+        "minutes": 4
+      }
+    },
+    "02/epistemology-in-the-islamic-world": {
+      "id": "02/epistemology-in-the-islamic-world",
+      "title": "Epistemology in the Islamic world",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#epistemology-in-the-islamic-world",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/epistemology-in-the-islamic-world.html",
+        "minutes": 16
+      }
+    },
+    "02/epistemology-in-china": {
+      "id": "02/epistemology-in-china",
+      "title": "Epistemology in China",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#epistemology-in-china",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/epistemology-in-china.html",
+        "minutes": 3
+      }
+    },
+    "02/medieval-and-renaissance-europe": {
+      "id": "02/medieval-and-renaissance-europe",
+      "title": "Medieval and Renaissance Europe",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#medieval-and-renaissance-europe",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/medieval-and-renaissance-europe.html",
+        "minutes": 5
+      }
+    },
+    "02/the-early-modern-revolution": {
+      "id": "02/the-early-modern-revolution",
+      "title": "The early modern revolution",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#the-early-modern-revolution",
+      "minutes": 12,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/the-early-modern-revolution.html",
+        "minutes": 9
+      }
+    },
+    "02/the-nineteenth-century": {
+      "id": "02/the-nineteenth-century",
+      "title": "The nineteenth century",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#the-nineteenth-century",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/the-nineteenth-century.html",
+        "minutes": 4
+      }
+    },
+    "02/the-twentieth-century": {
+      "id": "02/the-twentieth-century",
+      "title": "The twentieth century",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#the-twentieth-century",
+      "minutes": 7,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/the-twentieth-century.html",
+        "minutes": 5
+      }
+    },
+    "02/contemporary-directions": {
+      "id": "02/contemporary-directions",
+      "title": "Contemporary directions",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#contemporary-directions",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/02-history-of-epistemology/contemporary-directions.html",
+        "minutes": 3
+      }
+    },
+    "02/timeline": {
+      "id": "02/timeline",
+      "title": "Timeline",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#timeline",
+      "minutes": 2
+    },
+    "02/recurring-patterns-in-the-history": {
+      "id": "02/recurring-patterns-in-the-history",
+      "title": "Recurring patterns in the history",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#recurring-patterns-in-the-history",
+      "minutes": 1
+    },
+    "02/check-your-understanding": {
+      "id": "02/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#check-your-understanding",
+      "minutes": 3
+    },
+    "02/further-reading": {
+      "id": "02/further-reading",
+      "title": "Further reading",
+      "chapter": 2,
+      "chapterTitle": "A History of the Theory of Knowledge",
+      "url": "guide/02-history-of-epistemology.html#further-reading",
+      "minutes": 1
+    },
+    "03/what-an-argument-is-and-is-not": {
+      "id": "03/what-an-argument-is-and-is-not",
+      "title": "What an argument is and is not",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#what-an-argument-is-and-is-not",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/what-an-argument-is-and-is-not.html",
+        "minutes": 3
+      }
+    },
+    "03/standard-form": {
+      "id": "03/standard-form",
+      "title": "Standard form",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#standard-form",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/standard-form.html",
+        "minutes": 3
+      }
+    },
+    "03/deduction-induction-and-abduction": {
+      "id": "03/deduction-induction-and-abduction",
+      "title": "Deduction, induction, and abduction",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#deduction-induction-and-abduction",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/deduction-induction-and-abduction.html",
+        "minutes": 10
+      }
+    },
+    "03/validity-and-soundness": {
+      "id": "03/validity-and-soundness",
+      "title": "Validity and soundness",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#validity-and-soundness",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/validity-and-soundness.html",
+        "minutes": 11
+      }
+    },
+    "03/strength-and-cogency": {
+      "id": "03/strength-and-cogency",
+      "title": "Strength and cogency",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#strength-and-cogency",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/strength-and-cogency.html",
+        "minutes": 3
+      }
+    },
+    "03/propositional-logic": {
+      "id": "03/propositional-logic",
+      "title": "Propositional logic",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#propositional-logic",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/propositional-logic.html",
+        "minutes": 4
+      }
+    },
+    "03/valid-argument-forms": {
+      "id": "03/valid-argument-forms",
+      "title": "Valid argument forms",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#valid-argument-forms",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/valid-argument-forms.html",
+        "minutes": 3
+      }
+    },
+    "03/formal-fallacies": {
+      "id": "03/formal-fallacies",
+      "title": "Formal fallacies",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#formal-fallacies",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/formal-fallacies.html",
+        "minutes": 3
+      }
+    },
+    "03/categorical-logic-and-syllogisms": {
+      "id": "03/categorical-logic-and-syllogisms",
+      "title": "Categorical logic and syllogisms",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#categorical-logic-and-syllogisms",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/categorical-logic-and-syllogisms.html",
+        "minutes": 3
+      }
+    },
+    "03/predicate-logic-and-quantifiers": {
+      "id": "03/predicate-logic-and-quantifiers",
+      "title": "Predicate logic and quantifiers",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#predicate-logic-and-quantifiers",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/predicate-logic-and-quantifiers.html",
+        "minutes": 3
+      }
+    },
+    "03/modal-logic-basics": {
+      "id": "03/modal-logic-basics",
+      "title": "Modal logic basics",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#modal-logic-basics",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/modal-logic-basics.html",
+        "minutes": 3
+      }
+    },
+    "03/paradoxes-as-stress-tests": {
+      "id": "03/paradoxes-as-stress-tests",
+      "title": "Paradoxes as stress tests",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#paradoxes-as-stress-tests",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/paradoxes-as-stress-tests.html",
+        "minutes": 3
+      }
+    },
+    "03/reconstructing-real-arguments": {
+      "id": "03/reconstructing-real-arguments",
+      "title": "Reconstructing real arguments",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#reconstructing-real-arguments",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/reconstructing-real-arguments.html",
+        "minutes": 3
+      }
+    },
+    "03/the-toulmin-model": {
+      "id": "03/the-toulmin-model",
+      "title": "The Toulmin model",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#the-toulmin-model",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/the-toulmin-model.html",
+        "minutes": 3
+      }
+    },
+    "03/dialectical-moves": {
+      "id": "03/dialectical-moves",
+      "title": "Dialectical moves",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#dialectical-moves",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/03-logic-and-arguments/dialectical-moves.html",
+        "minutes": 3
+      }
+    },
+    "03/check-your-understanding": {
+      "id": "03/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#check-your-understanding",
+      "minutes": 3
+    },
+    "03/further-reading": {
+      "id": "03/further-reading",
+      "title": "Further reading",
+      "chapter": 3,
+      "chapterTitle": "Logic and the Anatomy of Arguments",
+      "url": "guide/03-logic-and-arguments.html#further-reading",
+      "minutes": 1
+    },
+    "04/why-language-is-an-epistemic-issue": {
+      "id": "04/why-language-is-an-epistemic-issue",
+      "title": "Why language is an epistemic issue",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#why-language-is-an-epistemic-issue",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/why-language-is-an-epistemic-issue.html",
+        "minutes": 3
+      }
+    },
+    "04/use-and-mention": {
+      "id": "04/use-and-mention",
+      "title": "Use and mention",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#use-and-mention",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/use-and-mention.html",
+        "minutes": 3
+      }
+    },
+    "04/sense-and-reference": {
+      "id": "04/sense-and-reference",
+      "title": "Sense and reference",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#sense-and-reference",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/sense-and-reference.html",
+        "minutes": 9
+      }
+    },
+    "04/kinds-of-definition": {
+      "id": "04/kinds-of-definition",
+      "title": "Kinds of definition",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#kinds-of-definition",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/kinds-of-definition.html",
+        "minutes": 3
+      }
+    },
+    "04/rules-for-good-definitions": {
+      "id": "04/rules-for-good-definitions",
+      "title": "Rules for good definitions",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#rules-for-good-definitions",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/rules-for-good-definitions.html",
+        "minutes": 3
+      }
+    },
+    "04/necessary-and-sufficient-conditions-and-their-limits": {
+      "id": "04/necessary-and-sufficient-conditions-and-their-limits",
+      "title": "Necessary and sufficient conditions and their limits",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#necessary-and-sufficient-conditions-and-their-limits",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/necessary-and-sufficient-conditions-and-their-limits.html",
+        "minutes": 3
+      }
+    },
+    "04/family-resemblance-and-prototypes": {
+      "id": "04/family-resemblance-and-prototypes",
+      "title": "Family resemblance and prototypes",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#family-resemblance-and-prototypes",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/family-resemblance-and-prototypes.html",
+        "minutes": 3
+      }
+    },
+    "04/ambiguity": {
+      "id": "04/ambiguity",
+      "title": "Ambiguity",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#ambiguity",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/ambiguity.html",
+        "minutes": 3
+      }
+    },
+    "04/vagueness-and-the-sorites-paradox": {
+      "id": "04/vagueness-and-the-sorites-paradox",
+      "title": "Vagueness and the sorites paradox",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#vagueness-and-the-sorites-paradox",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/vagueness-and-the-sorites-paradox.html",
+        "minutes": 9
+      }
+    },
+    "04/verbal-disputes": {
+      "id": "04/verbal-disputes",
+      "title": "Verbal disputes",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#verbal-disputes",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/verbal-disputes.html",
+        "minutes": 3
+      }
+    },
+    "04/loaded-language-euphemism-and-framing": {
+      "id": "04/loaded-language-euphemism-and-framing",
+      "title": "Loaded language, euphemism, and framing",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#loaded-language-euphemism-and-framing",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/loaded-language-euphemism-and-framing.html",
+        "minutes": 3
+      }
+    },
+    "04/essentially-contested-concepts": {
+      "id": "04/essentially-contested-concepts",
+      "title": "Essentially contested concepts",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#essentially-contested-concepts",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/essentially-contested-concepts.html",
+        "minutes": 2
+      }
+    },
+    "04/thick-and-thin-concepts": {
+      "id": "04/thick-and-thin-concepts",
+      "title": "Thick and thin concepts",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#thick-and-thin-concepts",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/thick-and-thin-concepts.html",
+        "minutes": 3
+      }
+    },
+    "04/facts-values-and-the-is-ought-gap": {
+      "id": "04/facts-values-and-the-is-ought-gap",
+      "title": "Facts, values, and the is-ought gap",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#facts-values-and-the-is-ought-gap",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/facts-values-and-the-is-ought-gap.html",
+        "minutes": 3
+      }
+    },
+    "04/thought-experiments-and-intuitions": {
+      "id": "04/thought-experiments-and-intuitions",
+      "title": "Thought experiments and intuitions",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#thought-experiments-and-intuitions",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/thought-experiments-and-intuitions.html",
+        "minutes": 2
+      }
+    },
+    "04/reflective-equilibrium": {
+      "id": "04/reflective-equilibrium",
+      "title": "Reflective equilibrium",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#reflective-equilibrium",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/reflective-equilibrium.html",
+        "minutes": 2
+      }
+    },
+    "04/conceptual-engineering": {
+      "id": "04/conceptual-engineering",
+      "title": "Conceptual engineering",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#conceptual-engineering",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/04-language-concepts-and-definitions/conceptual-engineering.html",
+        "minutes": 3
+      }
+    },
+    "04/check-your-understanding": {
+      "id": "04/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#check-your-understanding",
+      "minutes": 3
+    },
+    "04/further-reading": {
+      "id": "04/further-reading",
+      "title": "Further reading",
+      "chapter": 4,
+      "chapterTitle": "Language, Concepts, and Definitions",
+      "url": "guide/04-language-concepts-and-definitions.html#further-reading",
+      "minutes": 1
+    },
+    "05/the-tripartite-analysis": {
+      "id": "05/the-tripartite-analysis",
+      "title": "The tripartite analysis",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#the-tripartite-analysis",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/the-tripartite-analysis.html",
+        "minutes": 4
+      }
+    },
+    "05/the-gettier-problem": {
+      "id": "05/the-gettier-problem",
+      "title": "The Gettier problem",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#the-gettier-problem",
+      "minutes": 6,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/the-gettier-problem.html",
+        "minutes": 12
+      }
+    },
+    "05/responses-to-gettier": {
+      "id": "05/responses-to-gettier",
+      "title": "Responses to Gettier",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#responses-to-gettier",
+      "minutes": 13,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/responses-to-gettier.html",
+        "minutes": 12
+      }
+    },
+    "05/the-inescapability-of-gettier-problems": {
+      "id": "05/the-inescapability-of-gettier-problems",
+      "title": "The inescapability of Gettier problems",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#the-inescapability-of-gettier-problems",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/the-inescapability-of-gettier-problems.html",
+        "minutes": 4
+      }
+    },
+    "05/epistemic-luck": {
+      "id": "05/epistemic-luck",
+      "title": "Epistemic luck",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#epistemic-luck",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/epistemic-luck.html",
+        "minutes": 12
+      }
+    },
+    "05/the-value-of-knowledge": {
+      "id": "05/the-value-of-knowledge",
+      "title": "The value of knowledge",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#the-value-of-knowledge",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/the-value-of-knowledge.html",
+        "minutes": 12
+      }
+    },
+    "05/understanding-and-wisdom": {
+      "id": "05/understanding-and-wisdom",
+      "title": "Understanding and wisdom",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#understanding-and-wisdom",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/understanding-and-wisdom.html",
+        "minutes": 3
+      }
+    },
+    "05/knowledge-how-revisited": {
+      "id": "05/knowledge-how-revisited",
+      "title": "Knowledge-how revisited",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#knowledge-how-revisited",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/knowledge-how-revisited.html",
+        "minutes": 3
+      }
+    },
+    "05/knowledge-assertion-and-action": {
+      "id": "05/knowledge-assertion-and-action",
+      "title": "Knowledge, assertion, and action",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#knowledge-assertion-and-action",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/knowledge-assertion-and-action.html",
+        "minutes": 4
+      }
+    },
+    "05/knowing-that-you-know": {
+      "id": "05/knowing-that-you-know",
+      "title": "Knowing that you know",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#knowing-that-you-know",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/knowing-that-you-know.html",
+        "minutes": 3
+      }
+    },
+    "05/why-do-we-have-the-concept-of-knowledge": {
+      "id": "05/why-do-we-have-the-concept-of-knowledge",
+      "title": "Why do we have the concept of knowledge?",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#why-do-we-have-the-concept-of-knowledge",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/05-the-nature-of-knowledge/why-do-we-have-the-concept-of-knowledge.html",
+        "minutes": 4
+      }
+    },
+    "05/summary-of-theories": {
+      "id": "05/summary-of-theories",
+      "title": "Summary of theories",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#summary-of-theories",
+      "minutes": 1
+    },
+    "05/check-your-understanding": {
+      "id": "05/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#check-your-understanding",
+      "minutes": 4
+    },
+    "05/further-reading": {
+      "id": "05/further-reading",
+      "title": "Further reading",
+      "chapter": 5,
+      "chapterTitle": "What Is Knowledge?",
+      "url": "guide/05-the-nature-of-knowledge.html#further-reading",
+      "minutes": 1
+    },
+    "06/what-justification-is": {
+      "id": "06/what-justification-is",
+      "title": "What justification is",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#what-justification-is",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/06-justification/what-justification-is.html",
+        "minutes": 3
+      }
+    },
+    "06/defeaters": {
+      "id": "06/defeaters",
+      "title": "Defeaters",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#defeaters",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/defeaters.html",
+        "minutes": 4
+      }
+    },
+    "06/the-regress-problem": {
+      "id": "06/the-regress-problem",
+      "title": "The regress problem",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#the-regress-problem",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/the-regress-problem.html",
+        "minutes": 3
+      }
+    },
+    "06/agrippas-trilemma": {
+      "id": "06/agrippas-trilemma",
+      "title": "Agrippa’s trilemma",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#agrippas-trilemma",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/agrippas-trilemma.html",
+        "minutes": 12
+      }
+    },
+    "06/foundationalism": {
+      "id": "06/foundationalism",
+      "title": "Foundationalism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#foundationalism",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/06-justification/foundationalism.html",
+        "minutes": 12
+      }
+    },
+    "06/coherentism": {
+      "id": "06/coherentism",
+      "title": "Coherentism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#coherentism",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/06-justification/coherentism.html",
+        "minutes": 12
+      }
+    },
+    "06/infinitism": {
+      "id": "06/infinitism",
+      "title": "Infinitism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#infinitism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/infinitism.html",
+        "minutes": 3
+      }
+    },
+    "06/foundherentism": {
+      "id": "06/foundherentism",
+      "title": "Foundherentism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#foundherentism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/foundherentism.html",
+        "minutes": 3
+      }
+    },
+    "06/critical-rationalism": {
+      "id": "06/critical-rationalism",
+      "title": "Critical rationalism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#critical-rationalism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/critical-rationalism.html",
+        "minutes": 3
+      }
+    },
+    "06/comparing-the-structures": {
+      "id": "06/comparing-the-structures",
+      "title": "Comparing the structures",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#comparing-the-structures",
+      "minutes": 1
+    },
+    "06/internalism-and-externalism": {
+      "id": "06/internalism-and-externalism",
+      "title": "Internalism and externalism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#internalism-and-externalism",
+      "minutes": 7,
+      "deep": {
+        "url": "deeper/06-justification/internalism-and-externalism.html",
+        "minutes": 12
+      }
+    },
+    "06/evidentialism": {
+      "id": "06/evidentialism",
+      "title": "Evidentialism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#evidentialism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/evidentialism.html",
+        "minutes": 3
+      }
+    },
+    "06/reliabilism-about-justification": {
+      "id": "06/reliabilism-about-justification",
+      "title": "Reliabilism about justification",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#reliabilism-about-justification",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/06-justification/reliabilism-about-justification.html",
+        "minutes": 3
+      }
+    },
+    "06/phenomenal-conservatism": {
+      "id": "06/phenomenal-conservatism",
+      "title": "Phenomenal conservatism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#phenomenal-conservatism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/phenomenal-conservatism.html",
+        "minutes": 3
+      }
+    },
+    "06/the-problem-of-the-criterion": {
+      "id": "06/the-problem-of-the-criterion",
+      "title": "The problem of the criterion",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#the-problem-of-the-criterion",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/the-problem-of-the-criterion.html",
+        "minutes": 3
+      }
+    },
+    "06/deontology-and-doxastic-voluntarism": {
+      "id": "06/deontology-and-doxastic-voluntarism",
+      "title": "Deontology and doxastic voluntarism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#deontology-and-doxastic-voluntarism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/deontology-and-doxastic-voluntarism.html",
+        "minutes": 3
+      }
+    },
+    "06/fallibilism": {
+      "id": "06/fallibilism",
+      "title": "Fallibilism",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#fallibilism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/06-justification/fallibilism.html",
+        "minutes": 3
+      }
+    },
+    "06/check-your-understanding": {
+      "id": "06/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#check-your-understanding",
+      "minutes": 3
+    },
+    "06/further-reading": {
+      "id": "06/further-reading",
+      "title": "Further reading",
+      "chapter": 6,
+      "chapterTitle": "Justification: The Structure of Good Reasons",
+      "url": "guide/06-justification.html#further-reading",
+      "minutes": 1
+    },
+    "07/basic-and-derived-sources": {
+      "id": "07/basic-and-derived-sources",
+      "title": "Basic and derived sources",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#basic-and-derived-sources",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/basic-and-derived-sources.html",
+        "minutes": 4
+      }
+    },
+    "07/perception": {
+      "id": "07/perception",
+      "title": "Perception",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#perception",
+      "minutes": 8,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/perception.html",
+        "minutes": 12
+      }
+    },
+    "07/memory": {
+      "id": "07/memory",
+      "title": "Memory",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#memory",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/memory.html",
+        "minutes": 4
+      }
+    },
+    "07/introspection-and-self-knowledge": {
+      "id": "07/introspection-and-self-knowledge",
+      "title": "Introspection and self-knowledge",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#introspection-and-self-knowledge",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/introspection-and-self-knowledge.html",
+        "minutes": 3
+      }
+    },
+    "07/reason-and-the-a-priori": {
+      "id": "07/reason-and-the-a-priori",
+      "title": "Reason and the a priori",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#reason-and-the-a-priori",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/reason-and-the-a-priori.html",
+        "minutes": 12
+      }
+    },
+    "07/testimony": {
+      "id": "07/testimony",
+      "title": "Testimony",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#testimony",
+      "minutes": 9,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/testimony.html",
+        "minutes": 12
+      }
+    },
+    "07/inference": {
+      "id": "07/inference",
+      "title": "Inference",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#inference",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/inference.html",
+        "minutes": 4
+      }
+    },
+    "07/knowledge-by-presence": {
+      "id": "07/knowledge-by-presence",
+      "title": "Knowledge by presence",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#knowledge-by-presence",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/knowledge-by-presence.html",
+        "minutes": 12
+      }
+    },
+    "07/intuition-emotion-and-other-candidate-sources": {
+      "id": "07/intuition-emotion-and-other-candidate-sources",
+      "title": "Intuition, emotion, and other candidate sources",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#intuition-emotion-and-other-candidate-sources",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/07-sources-of-knowledge/intuition-emotion-and-other-candidate-sources.html",
+        "minutes": 4
+      }
+    },
+    "07/check-your-understanding": {
+      "id": "07/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#check-your-understanding",
+      "minutes": 3
+    },
+    "07/further-reading": {
+      "id": "07/further-reading",
+      "title": "Further reading",
+      "chapter": 7,
+      "chapterTitle": "The Sources of Knowledge",
+      "url": "guide/07-sources-of-knowledge.html#further-reading",
+      "minutes": 1
+    },
+    "08/why-study-skepticism": {
+      "id": "08/why-study-skepticism",
+      "title": "Why study skepticism?",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#why-study-skepticism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/08-skepticism/why-study-skepticism.html",
+        "minutes": 3
+      }
+    },
+    "08/varieties-of-skepticism": {
+      "id": "08/varieties-of-skepticism",
+      "title": "Varieties of skepticism",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#varieties-of-skepticism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/08-skepticism/varieties-of-skepticism.html",
+        "minutes": 3
+      }
+    },
+    "08/pyrrhonian-skepticism": {
+      "id": "08/pyrrhonian-skepticism",
+      "title": "Pyrrhonian skepticism",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#pyrrhonian-skepticism",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/08-skepticism/pyrrhonian-skepticism.html",
+        "minutes": 11
+      }
+    },
+    "08/cartesian-skepticism": {
+      "id": "08/cartesian-skepticism",
+      "title": "Cartesian skepticism",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#cartesian-skepticism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/08-skepticism/cartesian-skepticism.html",
+        "minutes": 3
+      }
+    },
+    "08/the-brain-in-a-vat": {
+      "id": "08/the-brain-in-a-vat",
+      "title": "The brain in a vat",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#the-brain-in-a-vat",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/08-skepticism/the-brain-in-a-vat.html",
+        "minutes": 3
+      }
+    },
+    "08/the-closure-argument": {
+      "id": "08/the-closure-argument",
+      "title": "The closure argument",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#the-closure-argument",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/08-skepticism/the-closure-argument.html",
+        "minutes": 11
+      }
+    },
+    "08/responses-to-skepticism": {
+      "id": "08/responses-to-skepticism",
+      "title": "Responses to skepticism",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#responses-to-skepticism",
+      "minutes": 17,
+      "deep": {
+        "url": "deeper/08-skepticism/responses-to-skepticism.html",
+        "minutes": 12
+      }
+    },
+    "08/skepticism-about-induction-other-minds-and-the-past": {
+      "id": "08/skepticism-about-induction-other-minds-and-the-past",
+      "title": "Skepticism about induction, other minds, and the past",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#skepticism-about-induction-other-minds-and-the-past",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/08-skepticism/skepticism-about-induction-other-minds-and-the-past.html",
+        "minutes": 3
+      }
+    },
+    "08/the-simulation-argument": {
+      "id": "08/the-simulation-argument",
+      "title": "The simulation argument",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#the-simulation-argument",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/08-skepticism/the-simulation-argument.html",
+        "minutes": 3
+      }
+    },
+    "08/healthy-and-corrosive-skepticism": {
+      "id": "08/healthy-and-corrosive-skepticism",
+      "title": "Healthy and corrosive skepticism",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#healthy-and-corrosive-skepticism",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/08-skepticism/healthy-and-corrosive-skepticism.html",
+        "minutes": 4
+      }
+    },
+    "08/check-your-understanding": {
+      "id": "08/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#check-your-understanding",
+      "minutes": 3
+    },
+    "08/further-reading": {
+      "id": "08/further-reading",
+      "title": "Further reading",
+      "chapter": 8,
+      "chapterTitle": "Skepticism and Its Answers",
+      "url": "guide/08-skepticism.html#further-reading",
+      "minutes": 1
+    },
+    "09/kinds-of-non-deductive-inference": {
+      "id": "09/kinds-of-non-deductive-inference",
+      "title": "Kinds of non-deductive inference",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#kinds-of-non-deductive-inference",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/kinds-of-non-deductive-inference.html",
+        "minutes": 3
+      }
+    },
+    "09/humes-problem-of-induction": {
+      "id": "09/humes-problem-of-induction",
+      "title": "Hume’s problem of induction",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#humes-problem-of-induction",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/humes-problem-of-induction.html",
+        "minutes": 11
+      }
+    },
+    "09/responses-to-hume": {
+      "id": "09/responses-to-hume",
+      "title": "Responses to Hume",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#responses-to-hume",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/responses-to-hume.html",
+        "minutes": 12
+      }
+    },
+    "09/goodmans-new-riddle-of-induction": {
+      "id": "09/goodmans-new-riddle-of-induction",
+      "title": "Goodman’s new riddle of induction",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#goodmans-new-riddle-of-induction",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/goodmans-new-riddle-of-induction.html",
+        "minutes": 12
+      }
+    },
+    "09/the-paradox-of-the-ravens": {
+      "id": "09/the-paradox-of-the-ravens",
+      "title": "The paradox of the ravens",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#the-paradox-of-the-ravens",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/the-paradox-of-the-ravens.html",
+        "minutes": 3
+      }
+    },
+    "09/probability-the-basics": {
+      "id": "09/probability-the-basics",
+      "title": "Probability: the basics",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#probability-the-basics",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/probability-the-basics.html",
+        "minutes": 3
+      }
+    },
+    "09/bayes-theorem": {
+      "id": "09/bayes-theorem",
+      "title": "Bayes’ theorem",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#bayes-theorem",
+      "minutes": 5,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/bayes-theorem.html",
+        "minutes": 12
+      }
+    },
+    "09/bayesian-epistemology": {
+      "id": "09/bayesian-epistemology",
+      "title": "Bayesian epistemology",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#bayesian-epistemology",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/bayesian-epistemology.html",
+        "minutes": 3
+      }
+    },
+    "09/full-belief-and-degrees-of-belief": {
+      "id": "09/full-belief-and-degrees-of-belief",
+      "title": "Full belief and degrees of belief",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#full-belief-and-degrees-of-belief",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/full-belief-and-degrees-of-belief.html",
+        "minutes": 3
+      }
+    },
+    "09/common-errors-in-probabilistic-reasoning": {
+      "id": "09/common-errors-in-probabilistic-reasoning",
+      "title": "Common errors in probabilistic reasoning",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#common-errors-in-probabilistic-reasoning",
+      "minutes": 8,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/common-errors-in-probabilistic-reasoning.html",
+        "minutes": 3
+      }
+    },
+    "09/calibration-and-scoring-rules": {
+      "id": "09/calibration-and-scoring-rules",
+      "title": "Calibration and scoring rules",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#calibration-and-scoring-rules",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/calibration-and-scoring-rules.html",
+        "minutes": 3
+      }
+    },
+    "09/statistics-and-significance": {
+      "id": "09/statistics-and-significance",
+      "title": "Statistics and significance",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#statistics-and-significance",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/09-induction-probability-bayes/statistics-and-significance.html",
+        "minutes": 3
+      }
+    },
+    "09/check-your-understanding": {
+      "id": "09/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#check-your-understanding",
+      "minutes": 3
+    },
+    "09/further-reading": {
+      "id": "09/further-reading",
+      "title": "Further reading",
+      "chapter": 9,
+      "chapterTitle": "Induction, Probability, and Bayesian Reasoning",
+      "url": "guide/09-induction-probability-bayes.html#further-reading",
+      "minutes": 1
+    },
+    "10/what-makes-science-special": {
+      "id": "10/what-makes-science-special",
+      "title": "What makes science special?",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#what-makes-science-special",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/what-makes-science-special.html",
+        "minutes": 3
+      }
+    },
+    "10/the-demarcation-problem": {
+      "id": "10/the-demarcation-problem",
+      "title": "The demarcation problem",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#the-demarcation-problem",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/the-demarcation-problem.html",
+        "minutes": 3
+      }
+    },
+    "10/inductivism-and-its-limits": {
+      "id": "10/inductivism-and-its-limits",
+      "title": "Inductivism and its limits",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#inductivism-and-its-limits",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/inductivism-and-its-limits.html",
+        "minutes": 3
+      }
+    },
+    "10/popper-and-falsificationism": {
+      "id": "10/popper-and-falsificationism",
+      "title": "Popper and falsificationism",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#popper-and-falsificationism",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/popper-and-falsificationism.html",
+        "minutes": 3
+      }
+    },
+    "10/the-duhem-quine-problem": {
+      "id": "10/the-duhem-quine-problem",
+      "title": "The Duhem-Quine problem",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#the-duhem-quine-problem",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/the-duhem-quine-problem.html",
+        "minutes": 3
+      }
+    },
+    "10/ad-hoc-hypotheses": {
+      "id": "10/ad-hoc-hypotheses",
+      "title": "Ad hoc hypotheses",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#ad-hoc-hypotheses",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/ad-hoc-hypotheses.html",
+        "minutes": 3
+      }
+    },
+    "10/kuhn-and-paradigms": {
+      "id": "10/kuhn-and-paradigms",
+      "title": "Kuhn and paradigms",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#kuhn-and-paradigms",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/kuhn-and-paradigms.html",
+        "minutes": 12
+      }
+    },
+    "10/lakatos-and-research-programmes": {
+      "id": "10/lakatos-and-research-programmes",
+      "title": "Lakatos and research programmes",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#lakatos-and-research-programmes",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/lakatos-and-research-programmes.html",
+        "minutes": 3
+      }
+    },
+    "10/feyerabend-and-laudan": {
+      "id": "10/feyerabend-and-laudan",
+      "title": "Feyerabend and Laudan",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#feyerabend-and-laudan",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/feyerabend-and-laudan.html",
+        "minutes": 3
+      }
+    },
+    "10/inference-to-the-best-explanation": {
+      "id": "10/inference-to-the-best-explanation",
+      "title": "Inference to the best explanation",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#inference-to-the-best-explanation",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/inference-to-the-best-explanation.html",
+        "minutes": 3
+      }
+    },
+    "10/theory-ladenness-of-observation": {
+      "id": "10/theory-ladenness-of-observation",
+      "title": "Theory-ladenness of observation",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#theory-ladenness-of-observation",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/theory-ladenness-of-observation.html",
+        "minutes": 3
+      }
+    },
+    "10/underdetermination": {
+      "id": "10/underdetermination",
+      "title": "Underdetermination",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#underdetermination",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/underdetermination.html",
+        "minutes": 12
+      }
+    },
+    "10/scientific-realism-and-anti-realism": {
+      "id": "10/scientific-realism-and-anti-realism",
+      "title": "Scientific realism and anti-realism",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#scientific-realism-and-anti-realism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/scientific-realism-and-anti-realism.html",
+        "minutes": 3
+      }
+    },
+    "10/causation-and-causal-inference": {
+      "id": "10/causation-and-causal-inference",
+      "title": "Causation and causal inference",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#causation-and-causal-inference",
+      "minutes": 8,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/causation-and-causal-inference.html",
+        "minutes": 12
+      }
+    },
+    "10/values-in-science": {
+      "id": "10/values-in-science",
+      "title": "Values in science",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#values-in-science",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/values-in-science.html",
+        "minutes": 3
+      }
+    },
+    "10/scientific-consensus": {
+      "id": "10/scientific-consensus",
+      "title": "Scientific consensus",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#scientific-consensus",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/scientific-consensus.html",
+        "minutes": 3
+      }
+    },
+    "10/the-replication-crisis": {
+      "id": "10/the-replication-crisis",
+      "title": "The replication crisis",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#the-replication-crisis",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/the-replication-crisis.html",
+        "minutes": 3
+      }
+    },
+    "10/pseudoscience-and-how-to-spot-it": {
+      "id": "10/pseudoscience-and-how-to-spot-it",
+      "title": "Pseudoscience and how to spot it",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#pseudoscience-and-how-to-spot-it",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/10-science-and-evidence/pseudoscience-and-how-to-spot-it.html",
+        "minutes": 3
+      }
+    },
+    "10/check-your-understanding": {
+      "id": "10/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#check-your-understanding",
+      "minutes": 3
+    },
+    "10/further-reading": {
+      "id": "10/further-reading",
+      "title": "Further reading",
+      "chapter": 10,
+      "chapterTitle": "Science, Evidence, and Explanation",
+      "url": "guide/10-science-and-evidence.html#further-reading",
+      "minutes": 2
+    },
+    "11/why-truth-matters": {
+      "id": "11/why-truth-matters",
+      "title": "Why truth matters",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#why-truth-matters",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/why-truth-matters.html",
+        "minutes": 3
+      }
+    },
+    "11/truth-bearers": {
+      "id": "11/truth-bearers",
+      "title": "Truth-bearers",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#truth-bearers",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/truth-bearers.html",
+        "minutes": 3
+      }
+    },
+    "11/theories-of-truth": {
+      "id": "11/theories-of-truth",
+      "title": "Theories of truth",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#theories-of-truth",
+      "minutes": 7,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/theories-of-truth.html",
+        "minutes": 12
+      }
+    },
+    "11/the-liar-paradox": {
+      "id": "11/the-liar-paradox",
+      "title": "The liar paradox",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#the-liar-paradox",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/the-liar-paradox.html",
+        "minutes": 3
+      }
+    },
+    "11/realism-and-anti-realism": {
+      "id": "11/realism-and-anti-realism",
+      "title": "Realism and anti-realism",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#realism-and-anti-realism",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/realism-and-anti-realism.html",
+        "minutes": 3
+      }
+    },
+    "11/relativism": {
+      "id": "11/relativism",
+      "title": "Relativism",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#relativism",
+      "minutes": 7,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/relativism.html",
+        "minutes": 12
+      }
+    },
+    "11/social-constructionism": {
+      "id": "11/social-constructionism",
+      "title": "Social constructionism",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#social-constructionism",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/social-constructionism.html",
+        "minutes": 3
+      }
+    },
+    "11/perspectivism-and-objectivity": {
+      "id": "11/perspectivism-and-objectivity",
+      "title": "Perspectivism and objectivity",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#perspectivism-and-objectivity",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/perspectivism-and-objectivity.html",
+        "minutes": 3
+      }
+    },
+    "11/post-truth-and-bullshit": {
+      "id": "11/post-truth-and-bullshit",
+      "title": "Post-truth and bullshit",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#post-truth-and-bullshit",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/11-truth-and-relativism/post-truth-and-bullshit.html",
+        "minutes": 3
+      }
+    },
+    "11/check-your-understanding": {
+      "id": "11/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#check-your-understanding",
+      "minutes": 3
+    },
+    "11/further-reading": {
+      "id": "11/further-reading",
+      "title": "Further reading",
+      "chapter": 11,
+      "chapterTitle": "Truth, Relativism, and Objectivity",
+      "url": "guide/11-truth-and-relativism.html#further-reading",
+      "minutes": 1
+    },
+    "12/why-knowledge-is-social": {
+      "id": "12/why-knowledge-is-social",
+      "title": "Why knowledge is social",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#why-knowledge-is-social",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/why-knowledge-is-social.html",
+        "minutes": 3
+      }
+    },
+    "12/trust-and-epistemic-dependence": {
+      "id": "12/trust-and-epistemic-dependence",
+      "title": "Trust and epistemic dependence",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#trust-and-epistemic-dependence",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/trust-and-epistemic-dependence.html",
+        "minutes": 3
+      }
+    },
+    "12/experts-and-novices": {
+      "id": "12/experts-and-novices",
+      "title": "Experts and novices",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#experts-and-novices",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/12-social-epistemology/experts-and-novices.html",
+        "minutes": 14
+      }
+    },
+    "12/peer-disagreement": {
+      "id": "12/peer-disagreement",
+      "title": "Peer disagreement",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#peer-disagreement",
+      "minutes": 5,
+      "deep": {
+        "url": "deeper/12-social-epistemology/peer-disagreement.html",
+        "minutes": 14
+      }
+    },
+    "12/why-reasonable-people-disagree": {
+      "id": "12/why-reasonable-people-disagree",
+      "title": "Why reasonable people disagree",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#why-reasonable-people-disagree",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/12-social-epistemology/why-reasonable-people-disagree.html",
+        "minutes": 3
+      }
+    },
+    "12/epistemic-injustice": {
+      "id": "12/epistemic-injustice",
+      "title": "Epistemic injustice",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#epistemic-injustice",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/epistemic-injustice.html",
+        "minutes": 14
+      }
+    },
+    "12/standpoint-and-feminist-epistemology": {
+      "id": "12/standpoint-and-feminist-epistemology",
+      "title": "Standpoint and feminist epistemology",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#standpoint-and-feminist-epistemology",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/standpoint-and-feminist-epistemology.html",
+        "minutes": 3
+      }
+    },
+    "12/echo-chambers-and-epistemic-bubbles": {
+      "id": "12/echo-chambers-and-epistemic-bubbles",
+      "title": "Echo chambers and epistemic bubbles",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#echo-chambers-and-epistemic-bubbles",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/echo-chambers-and-epistemic-bubbles.html",
+        "minutes": 3
+      }
+    },
+    "12/conformity-cascades-and-herding": {
+      "id": "12/conformity-cascades-and-herding",
+      "title": "Conformity, cascades, and herding",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#conformity-cascades-and-herding",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/conformity-cascades-and-herding.html",
+        "minutes": 3
+      }
+    },
+    "12/the-wisdom-and-madness-of-crowds": {
+      "id": "12/the-wisdom-and-madness-of-crowds",
+      "title": "The wisdom and madness of crowds",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#the-wisdom-and-madness-of-crowds",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/the-wisdom-and-madness-of-crowds.html",
+        "minutes": 3
+      }
+    },
+    "12/group-knowledge-and-belief": {
+      "id": "12/group-knowledge-and-belief",
+      "title": "Group knowledge and belief",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#group-knowledge-and-belief",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/group-knowledge-and-belief.html",
+        "minutes": 3
+      }
+    },
+    "12/misinformation-disinformation-and-propaganda": {
+      "id": "12/misinformation-disinformation-and-propaganda",
+      "title": "Misinformation, disinformation, and propaganda",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#misinformation-disinformation-and-propaganda",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/misinformation-disinformation-and-propaganda.html",
+        "minutes": 3
+      }
+    },
+    "12/conspiracy-theories": {
+      "id": "12/conspiracy-theories",
+      "title": "Conspiracy theories",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#conspiracy-theories",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/conspiracy-theories.html",
+        "minutes": 3
+      }
+    },
+    "12/epistemic-institutions": {
+      "id": "12/epistemic-institutions",
+      "title": "Epistemic institutions",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#epistemic-institutions",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/12-social-epistemology/epistemic-institutions.html",
+        "minutes": 3
+      }
+    },
+    "12/epistemic-autonomy-and-artificial-intelligence": {
+      "id": "12/epistemic-autonomy-and-artificial-intelligence",
+      "title": "Epistemic autonomy and artificial intelligence",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#epistemic-autonomy-and-artificial-intelligence",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/12-social-epistemology/epistemic-autonomy-and-artificial-intelligence.html",
+        "minutes": 3
+      }
+    },
+    "12/check-your-understanding": {
+      "id": "12/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#check-your-understanding",
+      "minutes": 3
+    },
+    "12/further-reading": {
+      "id": "12/further-reading",
+      "title": "Further reading",
+      "chapter": 12,
+      "chapterTitle": "Social Epistemology: Knowing Together",
+      "url": "guide/12-social-epistemology.html#further-reading",
+      "minutes": 2
+    },
+    "13/the-ethics-of-belief-clifford-and-james": {
+      "id": "13/the-ethics-of-belief-clifford-and-james",
+      "title": "The ethics of belief: Clifford and James",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#the-ethics-of-belief-clifford-and-james",
+      "minutes": 5,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/the-ethics-of-belief-clifford-and-james.html",
+        "minutes": 14
+      }
+    },
+    "13/practical-reasons-for-belief": {
+      "id": "13/practical-reasons-for-belief",
+      "title": "Practical reasons for belief",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#practical-reasons-for-belief",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/practical-reasons-for-belief.html",
+        "minutes": 3
+      }
+    },
+    "13/virtue-epistemology": {
+      "id": "13/virtue-epistemology",
+      "title": "Virtue epistemology",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#virtue-epistemology",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/virtue-epistemology.html",
+        "minutes": 13
+      }
+    },
+    "13/a-catalogue-of-intellectual-virtues": {
+      "id": "13/a-catalogue-of-intellectual-virtues",
+      "title": "A catalogue of intellectual virtues",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#a-catalogue-of-intellectual-virtues",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/a-catalogue-of-intellectual-virtues.html",
+        "minutes": 3
+      }
+    },
+    "13/intellectual-vices": {
+      "id": "13/intellectual-vices",
+      "title": "Intellectual vices",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#intellectual-vices",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/intellectual-vices.html",
+        "minutes": 3
+      }
+    },
+    "13/epistemic-humility-and-confidence": {
+      "id": "13/epistemic-humility-and-confidence",
+      "title": "Epistemic humility and confidence",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#epistemic-humility-and-confidence",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/epistemic-humility-and-confidence.html",
+        "minutes": 3
+      }
+    },
+    "13/open-mindedness-and-its-limits": {
+      "id": "13/open-mindedness-and-its-limits",
+      "title": "Open-mindedness and its limits",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#open-mindedness-and-its-limits",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/open-mindedness-and-its-limits.html",
+        "minutes": 3
+      }
+    },
+    "13/pragmatic-encroachment": {
+      "id": "13/pragmatic-encroachment",
+      "title": "Pragmatic encroachment",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#pragmatic-encroachment",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/pragmatic-encroachment.html",
+        "minutes": 3
+      }
+    },
+    "13/moral-encroachment": {
+      "id": "13/moral-encroachment",
+      "title": "Moral encroachment",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#moral-encroachment",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/moral-encroachment.html",
+        "minutes": 3
+      }
+    },
+    "13/faith-reason-and-religious-epistemology": {
+      "id": "13/faith-reason-and-religious-epistemology",
+      "title": "Faith, reason, and religious epistemology",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#faith-reason-and-religious-epistemology",
+      "minutes": 8,
+      "deep": {
+        "url": "deeper/13-virtues-and-ethics-of-belief/faith-reason-and-religious-epistemology.html",
+        "minutes": 14
+      }
+    },
+    "13/check-your-understanding": {
+      "id": "13/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#check-your-understanding",
+      "minutes": 3
+    },
+    "13/further-reading": {
+      "id": "13/further-reading",
+      "title": "Further reading",
+      "chapter": 13,
+      "chapterTitle": "Intellectual Virtue and the Ethics of Belief",
+      "url": "guide/13-virtues-and-ethics-of-belief.html#further-reading",
+      "minutes": 2
+    },
+    "14/why-psychology-matters-to-epistemology": {
+      "id": "14/why-psychology-matters-to-epistemology",
+      "title": "Why psychology matters to epistemology",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#why-psychology-matters-to-epistemology",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/why-psychology-matters-to-epistemology.html",
+        "minutes": 3
+      }
+    },
+    "14/dual-process-theories": {
+      "id": "14/dual-process-theories",
+      "title": "Dual-process theories",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#dual-process-theories",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/dual-process-theories.html",
+        "minutes": 14
+      }
+    },
+    "14/heuristics-and-biases": {
+      "id": "14/heuristics-and-biases",
+      "title": "Heuristics and biases",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#heuristics-and-biases",
+      "minutes": 6,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/heuristics-and-biases.html",
+        "minutes": 3
+      }
+    },
+    "14/confirmation-bias-and-myside-bias": {
+      "id": "14/confirmation-bias-and-myside-bias",
+      "title": "Confirmation bias and myside bias",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#confirmation-bias-and-myside-bias",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/confirmation-bias-and-myside-bias.html",
+        "minutes": 3
+      }
+    },
+    "14/motivated-reasoning": {
+      "id": "14/motivated-reasoning",
+      "title": "Motivated reasoning",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#motivated-reasoning",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/motivated-reasoning.html",
+        "minutes": 13
+      }
+    },
+    "14/belief-perseverance-and-biased-assimilation": {
+      "id": "14/belief-perseverance-and-biased-assimilation",
+      "title": "Belief perseverance and biased assimilation",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#belief-perseverance-and-biased-assimilation",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/belief-perseverance-and-biased-assimilation.html",
+        "minutes": 3
+      }
+    },
+    "14/fluency-and-the-illusory-truth-effect": {
+      "id": "14/fluency-and-the-illusory-truth-effect",
+      "title": "Fluency and the illusory truth effect",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#fluency-and-the-illusory-truth-effect",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/fluency-and-the-illusory-truth-effect.html",
+        "minutes": 3
+      }
+    },
+    "14/overconfidence-and-the-illusion-of-explanatory-depth": {
+      "id": "14/overconfidence-and-the-illusion-of-explanatory-depth",
+      "title": "Overconfidence and the illusion of explanatory depth",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#overconfidence-and-the-illusion-of-explanatory-depth",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/overconfidence-and-the-illusion-of-explanatory-depth.html",
+        "minutes": 3
+      }
+    },
+    "14/the-dunning-kruger-effect-and-its-critics": {
+      "id": "14/the-dunning-kruger-effect-and-its-critics",
+      "title": "The Dunning-Kruger effect and its critics",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#the-dunning-kruger-effect-and-its-critics",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/the-dunning-kruger-effect-and-its-critics.html",
+        "minutes": 3
+      }
+    },
+    "14/identity-protective-cognition": {
+      "id": "14/identity-protective-cognition",
+      "title": "Identity-protective cognition",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#identity-protective-cognition",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/identity-protective-cognition.html",
+        "minutes": 3
+      }
+    },
+    "14/mindreading-how-we-attribute-knowledge": {
+      "id": "14/mindreading-how-we-attribute-knowledge",
+      "title": "Mindreading: how we attribute knowledge",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#mindreading-how-we-attribute-knowledge",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/mindreading-how-we-attribute-knowledge.html",
+        "minutes": 3
+      }
+    },
+    "14/the-argumentative-theory-of-reasoning": {
+      "id": "14/the-argumentative-theory-of-reasoning",
+      "title": "The argumentative theory of reasoning",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#the-argumentative-theory-of-reasoning",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/the-argumentative-theory-of-reasoning.html",
+        "minutes": 3
+      }
+    },
+    "14/ecological-rationality": {
+      "id": "14/ecological-rationality",
+      "title": "Ecological rationality",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#ecological-rationality",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/ecological-rationality.html",
+        "minutes": 3
+      }
+    },
+    "14/replication-and-the-psychology-of-psychology": {
+      "id": "14/replication-and-the-psychology-of-psychology",
+      "title": "Replication and the psychology of psychology",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#replication-and-the-psychology-of-psychology",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/replication-and-the-psychology-of-psychology.html",
+        "minutes": 3
+      }
+    },
+    "14/debiasing-what-works": {
+      "id": "14/debiasing-what-works",
+      "title": "Debiasing: what works",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#debiasing-what-works",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/debiasing-what-works.html",
+        "minutes": 3
+      }
+    },
+    "14/the-scout-mindset": {
+      "id": "14/the-scout-mindset",
+      "title": "The scout mindset",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#the-scout-mindset",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/the-scout-mindset.html",
+        "minutes": 3
+      }
+    },
+    "14/forecasting-and-superforecasters": {
+      "id": "14/forecasting-and-superforecasters",
+      "title": "Forecasting and superforecasters",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#forecasting-and-superforecasters",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/14-psychology-of-reasoning/forecasting-and-superforecasters.html",
+        "minutes": 3
+      }
+    },
+    "14/check-your-understanding": {
+      "id": "14/check-your-understanding",
+      "title": "Check your understanding",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#check-your-understanding",
+      "minutes": 3
+    },
+    "14/further-reading": {
+      "id": "14/further-reading",
+      "title": "Further reading",
+      "chapter": 14,
+      "chapterTitle": "The Psychology of Reasoning: How Minds Actually Work",
+      "url": "guide/14-psychology-of-reasoning.html#further-reading",
+      "minutes": 1
+    },
+    "15/how-to-use-this-field-guide": {
+      "id": "15/how-to-use-this-field-guide",
+      "title": "How to use this field guide",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#how-to-use-this-field-guide",
+      "minutes": 2
+    },
+    "15/fallacies-of-relevance": {
+      "id": "15/fallacies-of-relevance",
+      "title": "Fallacies of relevance",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#fallacies-of-relevance",
+      "minutes": 10,
+      "deep": {
+        "url": "deeper/15-fallacies/fallacies-of-relevance.html",
+        "minutes": 3
+      }
+    },
+    "15/fallacies-of-presumption": {
+      "id": "15/fallacies-of-presumption",
+      "title": "Fallacies of presumption",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#fallacies-of-presumption",
+      "minutes": 12,
+      "deep": {
+        "url": "deeper/15-fallacies/fallacies-of-presumption.html",
+        "minutes": 3
+      }
+    },
+    "15/fallacies-of-ambiguity": {
+      "id": "15/fallacies-of-ambiguity",
+      "title": "Fallacies of ambiguity",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#fallacies-of-ambiguity",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/15-fallacies/fallacies-of-ambiguity.html",
+        "minutes": 3
+      }
+    },
+    "15/causal-and-statistical-fallacies": {
+      "id": "15/causal-and-statistical-fallacies",
+      "title": "Causal and statistical fallacies",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#causal-and-statistical-fallacies",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/15-fallacies/causal-and-statistical-fallacies.html",
+        "minutes": 3
+      }
+    },
+    "15/rhetorical-tactics-that-corrupt-discussion": {
+      "id": "15/rhetorical-tactics-that-corrupt-discussion",
+      "title": "Rhetorical tactics that corrupt discussion",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#rhetorical-tactics-that-corrupt-discussion",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/15-fallacies/rhetorical-tactics-that-corrupt-discussion.html",
+        "minutes": 3
+      }
+    },
+    "15/the-fallacy-fallacy": {
+      "id": "15/the-fallacy-fallacy",
+      "title": "The fallacy fallacy",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#the-fallacy-fallacy",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/15-fallacies/the-fallacy-fallacy.html",
+        "minutes": 3
+      }
+    },
+    "15/quick-reference-table": {
+      "id": "15/quick-reference-table",
+      "title": "Quick reference table",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#quick-reference-table",
+      "minutes": 3
+    },
+    "15/practice-spot-the-fallacy": {
+      "id": "15/practice-spot-the-fallacy",
+      "title": "Practice: spot the fallacy",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#practice-spot-the-fallacy",
+      "minutes": 4
+    },
+    "15/further-reading": {
+      "id": "15/further-reading",
+      "title": "Further reading",
+      "chapter": 15,
+      "chapterTitle": "A Field Guide to Fallacies",
+      "url": "guide/15-fallacies.html#further-reading",
+      "minutes": 1
+    },
+    "16/the-core-loop": {
+      "id": "16/the-core-loop",
+      "title": "The core loop",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#the-core-loop",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/the-core-loop.html",
+        "minutes": 3
+      }
+    },
+    "16/step-1-understand-before-you-evaluate": {
+      "id": "16/step-1-understand-before-you-evaluate",
+      "title": "Step 1: Understand before you evaluate",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-1-understand-before-you-evaluate",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-1-understand-before-you-evaluate.html",
+        "minutes": 3
+      }
+    },
+    "16/step-2-identify-the-kind-of-disagreement": {
+      "id": "16/step-2-identify-the-kind-of-disagreement",
+      "title": "Step 2: Identify the kind of disagreement",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-2-identify-the-kind-of-disagreement",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-2-identify-the-kind-of-disagreement.html",
+        "minutes": 3
+      }
+    },
+    "16/stasis-theory": {
+      "id": "16/stasis-theory",
+      "title": "Stasis theory",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#stasis-theory",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/stasis-theory.html",
+        "minutes": 3
+      }
+    },
+    "16/step-3-map-the-argument": {
+      "id": "16/step-3-map-the-argument",
+      "title": "Step 3: Map the argument",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-3-map-the-argument",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-3-map-the-argument.html",
+        "minutes": 3
+      }
+    },
+    "16/step-4-evaluate-the-premises-and-the-reasoning": {
+      "id": "16/step-4-evaluate-the-premises-and-the-reasoning",
+      "title": "Step 4: Evaluate the premises and the reasoning",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-4-evaluate-the-premises-and-the-reasoning",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-4-evaluate-the-premises-and-the-reasoning.html",
+        "minutes": 3
+      }
+    },
+    "16/step-5-evaluate-the-evidence": {
+      "id": "16/step-5-evaluate-the-evidence",
+      "title": "Step 5: Evaluate the evidence",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-5-evaluate-the-evidence",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-5-evaluate-the-evidence.html",
+        "minutes": 3
+      }
+    },
+    "16/step-6-find-the-crux": {
+      "id": "16/step-6-find-the-crux",
+      "title": "Step 6: Find the crux",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-6-find-the-crux",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-6-find-the-crux.html",
+        "minutes": 3
+      }
+    },
+    "16/step-7-weigh-and-conclude": {
+      "id": "16/step-7-weigh-and-conclude",
+      "title": "Step 7: Weigh and conclude",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#step-7-weigh-and-conclude",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/step-7-weigh-and-conclude.html",
+        "minutes": 3
+      }
+    },
+    "16/framing-an-argument-of-your-own": {
+      "id": "16/framing-an-argument-of-your-own",
+      "title": "Framing an argument of your own",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#framing-an-argument-of-your-own",
+      "minutes": 4,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/framing-an-argument-of-your-own.html",
+        "minutes": 3
+      }
+    },
+    "16/burden-of-proof": {
+      "id": "16/burden-of-proof",
+      "title": "Burden of proof",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#burden-of-proof",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/burden-of-proof.html",
+        "minutes": 3
+      }
+    },
+    "16/philosophical-razors-and-heuristics": {
+      "id": "16/philosophical-razors-and-heuristics",
+      "title": "Philosophical razors and heuristics",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#philosophical-razors-and-heuristics",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/philosophical-razors-and-heuristics.html",
+        "minutes": 3
+      }
+    },
+    "16/the-baloney-detection-kit": {
+      "id": "16/the-baloney-detection-kit",
+      "title": "The baloney detection kit",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#the-baloney-detection-kit",
+      "minutes": 1,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/the-baloney-detection-kit.html",
+        "minutes": 3
+      }
+    },
+    "16/the-ethics-of-discussion": {
+      "id": "16/the-ethics-of-discussion",
+      "title": "The ethics of discussion",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#the-ethics-of-discussion",
+      "minutes": 3,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/the-ethics-of-discussion.html",
+        "minutes": 3
+      }
+    },
+    "16/worked-case-studies": {
+      "id": "16/worked-case-studies",
+      "title": "Worked case studies",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#worked-case-studies",
+      "minutes": 12,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/worked-case-studies.html",
+        "minutes": 3
+      }
+    },
+    "16/checklists": {
+      "id": "16/checklists",
+      "title": "Checklists",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#checklists",
+      "minutes": 2
+    },
+    "16/daily-practices": {
+      "id": "16/daily-practices",
+      "title": "Daily practices",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#daily-practices",
+      "minutes": 2,
+      "deep": {
+        "url": "deeper/16-critical-thinking-toolkit/daily-practices.html",
+        "minutes": 3
+      }
+    },
+    "16/further-reading": {
+      "id": "16/further-reading",
+      "title": "Further reading",
+      "chapter": 16,
+      "chapterTitle": "The Critical Thinker's Toolkit: Analyzing Discussions and Framing Arguments",
+      "url": "guide/16-critical-thinking-toolkit.html#further-reading",
+      "minutes": 1
+    }
+  }
+}

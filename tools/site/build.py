@@ -39,6 +39,7 @@ from pathlib import Path
 
 from markdown_it import MarkdownIt
 from PIL import Image
+from reading_path import build_catalogue as build_reading_catalogue, page_body as reading_path_body
 
 ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
@@ -581,7 +582,7 @@ def av(root, name):
 
 
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
-          alt=None, bilingual=False, chapter_nav=""):
+          alt=None, bilingual=False, chapter_nav="", extra_scripts=""):
     h = home(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
            ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن"))]
@@ -599,6 +600,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
                  f'aria-label="{L("Your study, downloads and settings", "مطالعهٔ شما، دریافت و تنظیمات")}" title="{L("Your study and settings", "مطالعه و تنظیمات")}">{icon("user")}</button>'
                  f'<div class="umenu" id="umenu" hidden>'
                  f'<a href="{h}account/"{cur("account")}>{icon("user")}<span>{L("My study", "مطالعهٔ من")}</span></a>'
+                 + (f'<a href="{root}reading-path/">{icon("map")}<span>My reading path</span></a>' if LANG == "en" else '') +
                  f'<a href="{h}notes/">{icon("pen")}<span>{L("Notebook", "دفترچه")}</span></a>'
                  f'<a href="{h}review/">{icon("review")}<span>{L("Review questions", "مرور پرسش‌ها")}</span></a>'
                  f'<a href="{h}guide/download.html"{cur("download")}>{icon("download")}<span>{L("Download", "دریافت")}</span></a>'
@@ -649,6 +651,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <script src="{av(root, "ai-config.js")}" defer></script>
 <script src="{av(root, "account.js")}" defer></script>
 <script src="{av(root, "ai.js")}" defer></script>
+{extra_scripts}
 </body>
 </html>
 """
@@ -1649,7 +1652,9 @@ def build_guide_index(art, chapters, md, total_audio):
             f'<h2>{L("One question, many branches", "یک پرسش، شاخه‌های بسیار")}</h2></div><p>{L("Every chapter answers part of a single question: what should I believe, and how sure should I be?", "هر فصل به بخشی از یک پرسش پاسخ می‌دهد: چه باید باور کنم، و تا چه اندازه مطمئن؟")}</p></div>'
             f'<div class="prose" style="max-width:none">{connect}</div></div></section>'
             f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("Learning paths", "مسیرهای یادگیری")}</span>'
-            f'<h2>{L("Where to start", "از کجا شروع کنیم")}</h2></div></div><div class="prose" style="max-width:52rem">{paths}</div></div></section>'
+            f'<h2>{L("Where to start", "از کجا شروع کنیم")}</h2></div></div>'
+            + (f'<div id="rp-home"><p>Start with your own question, choose a study mode, and find the sections that fit your time.</p><a class="btn primary" href="{root}reading-path/">Find my reading path →</a></div>' if LANG == "en" else '') +
+            f'<div class="prose" style="max-width:52rem">{paths}</div></div></section>'
             f'<section class="section alt"><div class="wrap" style="display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">'
             f'<div class="prose"><h2 {h2s}>{L("How each chapter works", "هر فصل چگونه کار می‌کند")}</h2>{how}</div>'
             f'<div class="prose"><h2 {h2s}>{L("The companion map", "نقشهٔ همراه")}</h2>{companion}'
@@ -1679,7 +1684,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                        f"نقشهٔ دوزبانهٔ {n_c} مفهوم، و {total_audio} روایت صوتی{fa_audio('', ' به انگلیسی', ' به فارسی و انگلیسی')}."),
                 facts=[f"{icon('book')} {L('16 chapters', '۱۶ فصل')}", f"{icon('map')} {L(f'{n_concepts} concepts · English &amp; فارسی', f'{n_c} مفهوم · فارسی و English')}",
                        f"{icon('phones')} {total_audio} {L('audio', 'صوت')}"],
-                actions=(f'<a class="btn primary" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
+                actions=((f'<a class="btn primary" href="reading-path/">Find my reading path {icon("arrow")}</a>' if LANG == "en" else '') +
+                         f'<a class="btn" href="{h}guide/01-what-is-epistemology.html">{L("Start reading", "شروع خواندن")} {icon("arrow")}</a>'
                          f'<a class="btn" href="{map_url(root)}">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
                          f'<a class="btn" href="{h}guide/audio/">{icon("phones")} {L("Listen", "شنیدن")}</a>'))
     doors = (f'<div class="doors">'
@@ -1696,7 +1702,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
              f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
-    body = (f'{head}<main id="main">'
+    body = (f'{head}<main id="main">' +
+            (f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="reading-path/">A path built around your question →</a></div>' if LANG == "en" else '') +
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
             f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
@@ -1943,7 +1950,8 @@ def legal_page(art, root, kicker, title, sections, rel):
     head = hero(art, "ch18", root, kicker=kicker, title=title, cls="band")
     toc = "".join(f'<li><a href="#s{i}">{h}</a></li>' for i, (h, _) in enumerate(sections, 1))
     body = "".join(f'<h2 id="s{i}">{h}</h2>{html_}' for i, (h, html_) in enumerate(sections, 1))
-    date = L(f"Last updated: {POLICY_DATE[0]}", f"آخرین به‌روزرسانی: {POLICY_DATE[1]}")
+    policy_date = ("2 October 2026", "۲ اکتبر ۲۰۲۶ (۱۰ مهر ۱۴۰۵)") if rel == "privacy.html" else POLICY_DATE
+    date = L(f"Last updated: {policy_date[0]}", f"آخرین به‌روزرسانی: {policy_date[1]}")
     note = ("" if LANG == "en" else
             f'<p class="note">این ترجمهٔ فارسیِ متنِ انگلیسی است؛ اگر میانِ دو متن اختلافی باشد، <a href="../{rel}" lang="en">متنِ انگلیسی</a> '
             'ملاک است.</p>')
@@ -1980,11 +1988,15 @@ def build_privacy(art):
          L("<p>So that you can pick up where you left off, the site stores these in your browser's local storage: your reading progress, "
            "highlights and notes, your review deck, your reading and theme settings, your AI study companion settings and chats, and, if you choose "
            "to save them, chapters and audio for offline use. This data stays on your device. You can remove it at any time by clearing this "
-           "site's data in your browser settings.</p>",
+           "site's data in your browser settings.</p>"
+           "<p>The reading-path questionnaire also saves your question, answers, reading path and completed steps in this browser. "
+           "These are not included in Google Drive sync. Use “Forget this path” on the reading-path page to delete them.</p>",
            "<p>برای اینکه بتوانید از همان‌جا که ماندید ادامه دهید، سایت این‌ها را در حافظهٔ محلیِ مرورگرتان نگه می‌دارد: پیشرفتِ خواندن، "
            "نشانه‌گذاری‌ها و یادداشت‌ها، دستهٔ مرور، تنظیماتِ خواندن و ظاهر، تنظیمات و گفت‌وگوهای همراهِ هوشمندِ مطالعه، و اگر خودتان بخواهید، "
            "فصل‌ها و صوت برای استفادهٔ بی‌اینترنت. این داده‌ها روی دستگاهِ شما می‌مانند و هر وقت بخواهید، با پاک کردنِ دادهٔ این سایت در "
-           "تنظیماتِ مرورگر، حذف می‌شوند.</p>")),
+           "تنظیماتِ مرورگر، حذف می‌شوند.</p>"
+           "<p>پرسش‌نامهٔ مسیرِ مطالعه نیز پرسش، پاسخ‌ها، مسیر و گام‌های تکمیل‌شده را در همین مرورگر نگه می‌دارد. این داده‌ها با گوگل‌درایو "
+           "همگام نمی‌شوند. برای حذفشان، در صفحهٔ مسیرِ مطالعه «Forget this path» را بزنید.</p>")),
         (L("Google sign-in (optional)", "ورود با حساب گوگل (اختیاری)"),
          L(f"<p>Signing in (on {signin}) lets your study data follow you to other browsers and devices. Sign-in uses Google's OAuth 2.0 in your "
            "browser and asks for these permissions:</p><ul>"
@@ -2032,14 +2044,20 @@ def build_privacy(art):
            "your browser and, if you are signed in, in your own Drive sync file; it is sent only to the provider it belongs to.</p>"
            "<p>Without a key, the panel can prepare your question for you to paste into the ChatGPT or Claude website yourself. If a free "
            "on-page assistant is offered, the service answering is named in the chat panel, and your questions and the page text are sent "
-           "to it. Please do not enter sensitive personal information in the chat.</p>",
+           "to it. Please do not enter sensitive personal information in the chat.</p>"
+           "<p>If the optional AI reading-path interview is enabled, it runs only when you choose it. Your question and study mode "
+           "are sent to the AI service named beside that option to suggest a follow-up question. That provider’s privacy policy applies. "
+           "The curated questionnaire works without sending those answers to an AI service.</p>",
            "<p>کادرِ گفت‌وگو می‌تواند به پرسش‌هایتان دربارهٔ صفحه‌ای که می‌خوانید پاسخ دهد. اگر کلیدِ API خودتان را برای Anthropic (Claude)، "
            "OpenAI (ChatGPT)، OpenRouter یا خدمتِ سازگارِ دیگری وارد کنید، مرورگرتان پرسش‌ها، گفت‌وگوی تا آن لحظه و متنِ صفحه‌ای را که "
            "می‌خوانید مستقیم برای همان خدمت می‌فرستد، و سیاستِ حریم خصوصی و شرایطِ همان خدمت دربارهٔ آن‌ها صدق می‌کند. کلیدتان در مرورگرتان و، "
            "اگر وارد شده باشید، در پروندهٔ همگام‌سازیِ درایوِ خودتان نگه داشته می‌شود و فقط برای خدمتی فرستاده می‌شود که کلید از آنِ آن است.</p>"
            "<p>بدونِ کلید، کادرِ گفت‌وگو می‌تواند پرسشتان را آماده کند تا خودتان آن را در وب‌سایتِ ChatGPT یا Claude بچسبانید. اگر دستیارِ "
            "رایگانی روی همین صفحه در دسترس باشد، نامِ خدمتی که پاسخ می‌دهد در کادرِ گفت‌وگو آمده است و پرسش‌ها و متنِ صفحه برای آن فرستاده "
-           "می‌شود. لطفاً اطلاعاتِ شخصیِ حساس را در گفت‌وگو ننویسید.</p>")),
+           "می‌شود. لطفاً اطلاعاتِ شخصیِ حساس را در گفت‌وگو ننویسید.</p>"
+           "<p>اگر مصاحبهٔ هوشمندِ مسیرِ مطالعه فعال باشد، فقط با انتخاب شما اجرا می‌شود. پرسش و شیوهٔ مطالعهٔ شما برای پیشنهادِ "
+           "پرسشِ بعدی به خدمتی فرستاده می‌شود که نامش کنارِ آن گزینه آمده است؛ سیاستِ حریم خصوصیِ همان خدمت صدق می‌کند. "
+           "پرسش‌نامهٔ ازپیش‌تنظیم‌شده بدونِ فرستادنِ این پاسخ‌ها به هوش مصنوعی کار می‌کند.</p>")),
         (L("Hosting", "میزبانی"),
          L("<p>GitHub Pages serves this site's files. Like any web host, GitHub may process technical data such as your IP address when your "
            "browser requests a page; see the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">"
@@ -2507,6 +2525,8 @@ def build_offline_list():
              "guide/audio/about.html", "notes/", "review/", "account/"]
     paths = list(pages) + ["fa/" + p for p in pages]
     paths += ["map/", "map/index.html", "fa/map/", "fa/map/index.html", "assets/map.js", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
+    paths += ["reading-path/", "reading-path/index.html", "assets/reading-path.css", "assets/reading-path-core.js",
+              "assets/reading-path.js", "assets/data/reading-path.json"]
     paths += [
               "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
               "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json",
@@ -3498,14 +3518,23 @@ def build_language(art, md, C, tracks):
              chapter_nav=chsw)
     if LANG == "en":
         build_deeper(chapters, md, art)
+        build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP)
+        page("reading-path/index.html", other_rel="guide/index.html", root=r1, title="Find your reading path",
+             desc="An adaptive reading guide for your questions, prior knowledge and available time.",
+             body=reading_path_body(), current="guide",
+             extra_head=f'<link rel="stylesheet" href="{av(r1, "reading-path.css")}">'
+                        f'<script src="{av(r1, "reading-path-core.js")}" defer></script>',
+             extra_scripts=f'<script src="{av(r1, "reading-path.js")}" defer></script>')
+    path_script = f'<script src="{av(r1, "reading-path.js")}" defer></script>' if LANG == "en" else ''
     page("guide/index.html", root=r1, title=L("The guide", "راهنما"),
          desc=L("Contents of Mastering Epistemology: sixteen chapters on knowledge, evidence, and critical thinking.",
                 "فهرستِ «تسلط بر معرفت‌شناسی»: شانزده فصل دربارهٔ معرفت، شواهد و تفکر نقادانه."),
-         body=place_diagrams(guide_index, md, svgs), current="guide", hero_img=(art.src("guide", r1), art.srcset("guide", r1)), bar="clear")
+         body=place_diagrams(guide_index, md, svgs), current="guide", hero_img=(art.src("guide", r1), art.srcset("guide", r1)), bar="clear", extra_scripts=path_script)
     page("index.html", root=r0, title=site_name(),
          desc=L("A free, complete guide to epistemology and critical thinking: illustrated chapters, a bilingual concept map, and a narrated audio edition.",
                 "راهنمایی رایگان و کامل دربارهٔ معرفت‌شناسی و تفکر نقادانه: فصل‌های مصوّر، نقشهٔ دوزبانهٔ مفاهیم و نسخهٔ صوتی."),
-         body=home_page, hero_img=(art.src("home", r0), art.srcset("home", r0)), bar="clear")
+         body=home_page, hero_img=(art.src("home", r0), art.srcset("home", r0)), bar="clear",
+         extra_scripts=f'<script src="{av(r0, "reading-path.js")}" defer></script>' if LANG == "en" else '')
 
     print(f"[{LANG}] concepts")
     pages = []

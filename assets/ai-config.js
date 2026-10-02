@@ -9,6 +9,10 @@
 
    Never put a paid API key here: this file is public. */
 window.EPIS_AI_CONFIG = {
+  // Optional adaptive interview: the Worker base URL, without /v1.
+  // Keep empty until tools/free-chat-worker is deployed with /reading-path support.
+  readingPathBase: "",
+  readingPathName: "Cloudflare Workers AI",
   freeBase: "",
   freeModel: "",
   freeKey: "",

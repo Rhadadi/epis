@@ -28,3 +28,18 @@ answers "try again tomorrow"; nothing is charged unless you move to a paid plan.
 (`ALLOWED_ORIGINS`). Browsers enforce that list; to stop other programs using up
 your allowance too, add a rate-limiting rule for the worker in the Cloudflare
 dashboard.
+
+## Reading-path interview
+
+The same Worker also exposes `POST /reading-path`. Build the site before
+deploying so its generated `interview-bank.js` matches the curated reading
+routes. Set `readingPathBase` in `assets/ai-config.js` to the Worker URL **without
+`/v1`**. Keep it empty until this version of the Worker is deployed.
+
+The interview is optional and off until the visitor chooses it. It accepts
+only a question (up to 600 characters) and a study mode, returns a validated
+topic ID and a follow-up question, and never provides page URLs. It does not
+log interview bodies. Provider data handling still applies. Quota failures
+and invalid responses make the website use its curated questions instead.
+Use the Cloudflare dashboard to set rate limits and check your plan's current
+quota and billing terms before enabling a public endpoint.

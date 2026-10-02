@@ -1,0 +1,160 @@
+{
+  "competencies": [
+    {"id":"vocabulary","label":"Knowledge, belief and justification","description":"I can explain the difference, with an example."},
+    {"id":"logic","label":"Arguments and validity","description":"I can identify premises and distinguish validity from truth."},
+    {"id":"probability","label":"Conditional probability","description":"I can distinguish P(A|B) from P(B|A)."},
+    {"id":"knowledge","label":"Theories of knowledge","description":"I am comfortable with Gettier cases and justification."},
+    {"id":"testimony","label":"Evidence from other people","description":"I can explain how testimony can support a belief."}
+  ],
+  "foundations": {
+    "01/the-basic-vocabulary":"vocabulary", "03/what-an-argument-is-and-is-not":"logic",
+    "03/validity-and-soundness":"logic", "09/probability-the-basics":"probability",
+    "05/the-tripartite-analysis":"knowledge", "06/what-justification-is":"knowledge",
+    "07/testimony":"testimony"
+  },
+  "prerequisites": {
+    "03/validity-and-soundness":[{"id":"03/what-an-argument-is-and-is-not","why":"Identify premises and conclusions before testing whether the conclusion follows."}],
+    "03/formal-fallacies":[{"id":"03/validity-and-soundness","why":"The distinction between validity and truth makes formal errors easier to diagnose."}],
+    "09/bayes-theorem":[{"id":"09/probability-the-basics","why":"Conditional probability supplies the notation and ideas used in Bayes’ theorem."}],
+    "09/common-errors-in-probabilistic-reasoning":[{"id":"09/probability-the-basics","why":"Use conditional probability to see why reversing a conditional can mislead."}],
+    "09/calibration-and-scoring-rules":[{"id":"09/probability-the-basics","why":"A probability expresses confidence; calibration compares that confidence with outcomes."}],
+    "05/the-gettier-problem":[{"id":"05/the-tripartite-analysis","why":"Gettier cases challenge the justified-true-belief account introduced here."}],
+    "06/foundationalism":[{"id":"06/what-justification-is","why":"Clarify what justification asks of a belief before comparing its structures."}],
+    "06/coherentism":[{"id":"06/what-justification-is","why":"Clarify what justification asks of a belief before comparing its structures."}],
+    "08/the-closure-argument":[{"id":"05/the-tripartite-analysis","why":"The skeptical argument concerns whether ordinary claims qualify as knowledge."}],
+    "12/experts-and-novices":[{"id":"07/testimony","why":"Expert advice is a special case of learning from another person’s testimony."}],
+    "12/trust-and-epistemic-dependence":[{"id":"07/testimony","why":"Start with testimony before asking when dependence on others is justified."}]
+  },
+  "topics": [
+    {"id":"arguments","label":"Arguments & disagreement","keywords":["argument","debate","logic","fallacy","fallacies","disagree","disagreement","reasoning"],"question":"Where does the discussion usually get stuck?","focuses":[
+      {"id":"evaluate","label":"I want to test whether an argument works","steps":[
+        {"id":"03/validity-and-soundness","why":"Separate a conclusion that follows from premises that are actually true."},
+        {"id":"03/reconstructing-real-arguments","why":"Turn an everyday claim into an argument you can examine."},
+        {"id":"15/the-fallacy-fallacy","why":"Avoid treating a bad argument as proof that its conclusion is false."},
+        {"id":"16/step-4-evaluate-the-premises-and-the-reasoning","why":"Put the distinctions to work on the claim you started with."},
+        {"id":"03/formal-fallacies","why":"Examine recurring mistakes in the form of an inference."},
+        {"id":"15/fallacies-of-presumption","why":"Look for hidden assumptions in persuasive arguments."}]},
+      {"id":"discuss","label":"We keep talking past each other","steps":[
+        {"id":"16/step-2-identify-the-kind-of-disagreement","why":"Find out whether the dispute concerns facts, meanings or values."},
+        {"id":"04/verbal-disputes","why":"Check whether the same word is doing different jobs."},
+        {"id":"16/step-6-find-the-crux","why":"Locate the belief that would actually change the discussion."},
+        {"id":"12/peer-disagreement","why":"Consider when another person’s disagreement is evidence."},
+        {"id":"16/the-ethics-of-discussion","why":"Keep inquiry possible when disagreement persists."},
+        {"id":"13/open-mindedness-and-its-limits","why":"Balance receptiveness with standards for evidence."}]}]},
+    {"id":"probability","label":"Probability & decisions","keywords":["bayes","bayesian","probability","risk","odds","forecast","prediction","statistics","statistical","uncertainty","test result"],"question":"What would you like to do with uncertainty?","focuses":[
+      {"id":"update","label":"Update my confidence when evidence arrives","steps":[
+        {"id":"09/bayes-theorem","why":"Learn how prior confidence and new evidence combine."},
+        {"id":"09/common-errors-in-probabilistic-reasoning","why":"Check base rates and reversed conditionals before trusting an intuitive answer."},
+        {"id":"09/calibration-and-scoring-rules","why":"Test whether your confidence matches your track record."},
+        {"id":"14/forecasting-and-superforecasters","why":"Connect probability judgments with forecasting practice."},
+        {"id":"09/bayesian-epistemology","why":"Explore what probabilistic updating means for rational belief."},
+        {"id":"09/full-belief-and-degrees-of-belief","why":"Ask how confidence relates to outright belief."}]},
+      {"id":"studies","label":"Understand a statistic or research result","steps":[
+        {"id":"09/statistics-and-significance","why":"Distinguish statistical significance from the claims it cannot establish."},
+        {"id":"10/causation-and-causal-inference","why":"Check whether an association warrants a causal conclusion."},
+        {"id":"10/the-replication-crisis","why":"Consider how much weight to put on a single result."},
+        {"id":"09/common-errors-in-probabilistic-reasoning","why":"Identify probability mistakes in how the result is presented."},
+        {"id":"10/values-in-science","why":"Consider choices that shape scientific inquiry and interpretation."}]}]},
+    {"id":"science","label":"Science & evidence","keywords":["science","scientific","research","study","studies","experiment","causal","causation","medicine","medical","health","climate"],"question":"Which question about science matters most right now?","focuses":[
+      {"id":"trust","label":"How can I judge a scientific claim?","steps":[
+        {"id":"10/what-makes-science-special","why":"Start with the practices that make scientific claims open to scrutiny."},
+        {"id":"10/causation-and-causal-inference","why":"Separate causal evidence from a correlation or an anecdote."},
+        {"id":"10/scientific-consensus","why":"Understand what expert agreement can and cannot tell you."},
+        {"id":"10/the-replication-crisis","why":"Look at reliability across studies rather than one striking result."},
+        {"id":"10/pseudoscience-and-how-to-spot-it","why":"Use standards of inquiry to assess claims of scientific authority."},
+        {"id":"16/step-5-evaluate-the-evidence","why":"Bring the checks together for your own example."}]},
+      {"id":"method","label":"How does science justify its conclusions?","steps":[
+        {"id":"09/humes-problem-of-induction","why":"See the philosophical difficulty in learning general rules from past observations."},
+        {"id":"10/popper-and-falsificationism","why":"Examine testing by attempted refutation."},
+        {"id":"10/the-duhem-quine-problem","why":"Ask what a failed prediction really tells us."},
+        {"id":"10/kuhn-and-paradigms","why":"Compare scientific change with the picture of one test at a time."},
+        {"id":"10/inference-to-the-best-explanation","why":"Explore why an explanatory hypothesis can be reasonable without being certain."},
+        {"id":"10/scientific-realism-and-anti-realism","why":"Ask what successful science licenses us to believe about reality."}]}]},
+    {"id":"news","label":"News, experts & AI","keywords":["news","media","misinformation","disinformation","conspiracy","expert","trust","politics","political","propaganda","chatgpt","artificial intelligence","ai"],"question":"What makes this information hard to assess?","focuses":[
+      {"id":"sources","label":"I need to decide which sources to trust","steps":[
+        {"id":"12/experts-and-novices","why":"Assess expertise when you cannot check every technical claim yourself."},
+        {"id":"12/echo-chambers-and-epistemic-bubbles","why":"Distinguish missing information from systems that undermine trust in outsiders."},
+        {"id":"12/misinformation-disinformation-and-propaganda","why":"Examine how information can mislead and how intent changes the problem."},
+        {"id":"14/confirmation-bias-and-myside-bias","why":"Check whether you scrutinize unwelcome claims more than welcome ones."},
+        {"id":"16/step-5-evaluate-the-evidence","why":"Make an evidence check you can repeat on the next story."},
+        {"id":"12/epistemic-institutions","why":"Look beyond individual judgment to the institutions supporting reliable information."}]},
+      {"id":"ai","label":"I want to use AI without outsourcing my judgment","steps":[
+        {"id":"12/epistemic-autonomy-and-artificial-intelligence","why":"Examine how assistance can support or weaken your own judgment."},
+        {"id":"12/trust-and-epistemic-dependence","why":"Ask what justified reliance on another information source requires."},
+        {"id":"16/step-5-evaluate-the-evidence","why":"Check a generated answer against evidence you can inspect."},
+        {"id":"14/fluency-and-the-illusory-truth-effect","why":"Separate an answer that sounds natural from one that is well supported."},
+        {"id":"13/epistemic-humility-and-confidence","why":"Keep confidence proportionate when the source is opaque."}]}]},
+    {"id":"knowledge","label":"Knowledge & skepticism","keywords":["knowledge","epistemology","epistemological","philosophy","gettier","skepticism","scepticism","skeptic","certainty","justification","truth","relativism"],"question":"Which philosophical problem draws you in?","focuses":[
+      {"id":"know","label":"What makes a belief count as knowledge?","steps":[
+        {"id":"05/the-gettier-problem","why":"See why justified true belief may still fall short of knowledge."},
+        {"id":"06/what-justification-is","why":"Clarify what having reasons for a belief amounts to."},
+        {"id":"06/foundationalism","why":"Explore whether chains of reasons need starting points."},
+        {"id":"06/coherentism","why":"Compare an alternative built around the relations among beliefs."},
+        {"id":"07/perception","why":"Test these accounts against a familiar source of knowledge."},
+        {"id":"05/the-value-of-knowledge","why":"Ask why knowledge matters beyond holding a true belief."}]},
+      {"id":"doubt","label":"Can we know anything for certain?","steps":[
+        {"id":"08/varieties-of-skepticism","why":"Distinguish different doubts before deciding how to answer them."},
+        {"id":"08/the-closure-argument","why":"Reconstruct a central route from skeptical possibilities to doubt."},
+        {"id":"08/responses-to-skepticism","why":"Compare ways of resisting the skeptical conclusion."},
+        {"id":"06/fallibilism","why":"Ask whether knowledge can survive the possibility of error."},
+        {"id":"11/theories-of-truth","why":"Keep the question of truth distinct from our certainty about it."},
+        {"id":"11/relativism","why":"Examine whether disagreement makes truth relative."}]}]},
+    {"id":"identity","label":"Identity, power & being heard","keywords":["identity","gender","sexuality","sexual","lgbt","queer","gay","lesbian","feminism","feminist","race","racism","discrimination","injustice","marginalized","power"],"question":"Which question about identity and knowledge interests you?","focuses":[
+      {"id":"heard","label":"Whose experiences and testimony are taken seriously?","steps":[
+        {"id":"12/epistemic-injustice","why":"Examine harms people face specifically as knowers."},
+        {"id":"12/standpoint-and-feminist-epistemology","why":"Explore how social position can shape access to evidence and inquiry."},
+        {"id":"11/perspectivism-and-objectivity","why":"Ask how situated perspectives can contribute to objective inquiry."},
+        {"id":"14/identity-protective-cognition","why":"Examine how group commitments can affect the assessment of evidence."},
+        {"id":"04/loaded-language-euphemism-and-framing","why":"Notice how descriptions shape what gets heard."},
+        {"id":"12/epistemic-institutions","why":"Consider changes to the conditions under which people contribute knowledge."}]},
+      {"id":"concepts","label":"How do contested concepts shape a debate?","steps":[
+        {"id":"04/essentially-contested-concepts","why":"Understand why some disagreements persist even after definitions are clarified."},
+        {"id":"04/conceptual-engineering","why":"Ask when changing a concept might improve inquiry."},
+        {"id":"11/social-constructionism","why":"Distinguish claims about social formation from claims about truth."},
+        {"id":"12/standpoint-and-feminist-epistemology","why":"Connect conceptual disputes with perspectives and social positions."},
+        {"id":"16/the-ethics-of-discussion","why":"Keep differences of perspective available for inquiry."}]}]},
+    {"id":"belief","label":"Faith, values & responsible belief","keywords":["religion","religious","faith","god","belief","ethics","moral","morality","value","values","spiritual"],"question":"What is the main tension for you?","focuses":[
+      {"id":"responsibility","label":"What do I owe the evidence when forming beliefs?","steps":[
+        {"id":"13/the-ethics-of-belief-clifford-and-james","why":"Compare rival views of the responsibilities involved in believing."},
+        {"id":"13/practical-reasons-for-belief","why":"Separate reasons a belief would be useful from reasons it is true."},
+        {"id":"13/faith-reason-and-religious-epistemology","why":"Explore faith as a test case for evidence and justified belief."},
+        {"id":"06/evidentialism","why":"Examine the view that justification should answer to evidence."},
+        {"id":"13/epistemic-humility-and-confidence","why":"Hold a view with confidence that acknowledges its limits."},
+        {"id":"13/open-mindedness-and-its-limits","why":"Decide what openness asks of you when disagreement remains."}]},
+      {"id":"values","label":"How do facts and values connect?","steps":[
+        {"id":"04/facts-values-and-the-is-ought-gap","why":"Distinguish factual premises from the values needed for a normative conclusion."},
+        {"id":"13/moral-encroachment","why":"Ask whether moral stakes can affect the standards for knowing."},
+        {"id":"10/values-in-science","why":"Examine the roles values play in a practice built around evidence."},
+        {"id":"16/step-2-identify-the-kind-of-disagreement","why":"Use the distinction to understand a concrete dispute."},
+        {"id":"13/the-ethics-of-belief-clifford-and-james","why":"Consider whether believing itself carries ethical obligations."}]}]},
+    {"id":"habits","label":"Thinking habits & confidence","keywords":["bias","biases","confidence","overconfidence","critical thinking","mindset","thinking","decision","decisions","self improvement"],"question":"What would you most like to improve?","focuses":[
+      {"id":"bias","label":"Notice bias and change my mind more fairly","steps":[
+        {"id":"14/confirmation-bias-and-myside-bias","why":"Notice when you apply unequal standards to evidence."},
+        {"id":"14/motivated-reasoning","why":"Examine how desired conclusions can shape reasoning."},
+        {"id":"14/debiasing-what-works","why":"Compare practices intended to reduce reasoning errors."},
+        {"id":"14/the-scout-mindset","why":"Treat beliefs as maps you can revise rather than positions to defend."},
+        {"id":"13/a-catalogue-of-intellectual-virtues","why":"Connect useful practices with longer-term intellectual habits."},
+        {"id":"16/daily-practices","why":"Turn a reading session into a repeatable routine."}]},
+      {"id":"confidence","label":"Match my confidence to what I know","steps":[
+        {"id":"14/overconfidence-and-the-illusion-of-explanatory-depth","why":"Check whether familiarity has been mistaken for understanding."},
+        {"id":"09/calibration-and-scoring-rules","why":"Compare confidence with outcomes rather than with a feeling of certainty."},
+        {"id":"13/epistemic-humility-and-confidence","why":"Balance appropriate confidence with recognition of limits."},
+        {"id":"14/forecasting-and-superforecasters","why":"Practice judgments that can be checked later."},
+        {"id":"16/step-7-weigh-and-conclude","why":"Make a conclusion with uncertainty stated rather than hidden."}]}]},
+    {"id":"history","label":"History & a broad introduction","keywords":["history","historical","tradition","course","introduction","beginner","india","islam","china","greek","descartes","kant"],"question":"How would you like to enter the field?","focuses":[
+      {"id":"overview","label":"Start with the central questions","steps":[
+        {"id":"01/the-central-questions","why":"Get an overview of what epistemology asks before choosing a theory."},
+        {"id":"01/the-basic-vocabulary","why":"Build the vocabulary shared by the chapters that follow."},
+        {"id":"02/recurring-patterns-in-the-history","why":"See recurring problems across different periods and traditions."},
+        {"id":"03/validity-and-soundness","why":"Learn a distinction used throughout philosophical arguments."},
+        {"id":"05/the-gettier-problem","why":"Meet a compact problem that reshaped the theory of knowledge."},
+        {"id":"01/the-map-of-the-field","why":"Choose what you want to study next in the wider field."}]},
+      {"id":"traditions","label":"Compare periods and traditions","steps":[
+        {"id":"02/ancient-greece","why":"Explore early debates about knowledge, perception and inquiry."},
+        {"id":"02/epistemology-in-india","why":"Compare another tradition’s investigations of sources of knowledge."},
+        {"id":"02/epistemology-in-the-islamic-world","why":"Examine debates connecting reason, experience and intellectual traditions."},
+        {"id":"02/epistemology-in-china","why":"Broaden the comparison through debates about names and knowing."},
+        {"id":"02/the-early-modern-revolution","why":"See how later skeptical and scientific questions transformed inquiry."},
+        {"id":"02/contemporary-directions","why":"Follow historical questions into current research."}]}]}
+  ]
+}

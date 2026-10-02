@@ -292,7 +292,7 @@
       a.download = "epistemology-backup.json"; document.body.appendChild(a); a.click(); a.remove();
     } else if (act === "wipe") {
       if (!confirm(T("Delete all your progress, notes, review deck, chats and settings from this browser? Anything already synced stays in your Google Drive.", "همهٔ پیشرفت، یادداشت‌ها، دستهٔ مرور، گفت‌وگوها و تنظیمات از این مرورگر پاک شوند؟ آنچه همگام‌سازی شده در گوگل‌درایو می‌ماند."))) return;
-      ["epis-notes", "epis-progress", "epis-review", "epis-reader", "epis-shade", "epis-prefs-ts", "epis-ai", "epis-chats", "epis-focus"].forEach(function (k) { set(k, null); });
+      ["epis-notes", "epis-progress", "epis-review", "epis-reader", "epis-shade", "epis-prefs-ts", "epis-ai", "epis-chats", "epis-focus", "epis-reading-path"].forEach(function (k) { set(k, null); });
       location.reload();
     }
   });
