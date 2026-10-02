@@ -373,7 +373,6 @@
     W = b.width; H = b.height;
     if (!W) return;
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-    svg.classList.toggle("compact", phone());
   }
   function sheetH() { return 0; }
   function apply() {
@@ -409,15 +408,20 @@
       var f = focusChapter(s), fi = focusSection(s), b = [1e9, 1e9, -1e9, -1e9];
       var add = function (p) { b[0] = Math.min(b[0], p[0]); b[1] = Math.min(b[1], p[1]); b[2] = Math.max(b[2], p[0]); b[3] = Math.max(b[3], p[1]); };
       if (fi >= 0 && s.kind !== "path") {
-        var a = ang[fi], len = S[fi].lab.length * Math.max(slotFs(f), 10) * CW, mid = P(R2, a);
+        var a = ang[fi], mid = P(R2, a), len = 0;
+        chOf(f).secs.forEach(function (i) { len = Math.max(len, S[i].lab.length * Math.max(slotFs(f), 10) * CW); });  // room for the longest neighbour label
         add(P(R2 - 46, a)); add(P(R2 + LBL + len + 6, a)); add([mid[0], mid[1] - 80]); add([mid[0], mid[1] + 80]);
-        return fitCam(b, 1.3);
-      }
-      if (f && s.kind !== "path") {
-        var mr = R_MED * st.mk[f] + 8;
-        add([medAt[f][0] - mr, medAt[f][1] - mr]); add([medAt[f][0] + mr, medAt[f][1] + mr]);
-        chOf(f).secs.forEach(function (i) { add(P(R2 + 4, ang[i])); add(P(R2 + 120, ang[i])); });
         return fitCam(b, 1.2);
+      }
+      var group = f ? [f] : s.kind === "part" ? PARTS[s.j].ch : [];
+      if (group.length) {
+        group.forEach(function (n) {
+          var mr = R_MED * st.mk[n] + 8, fs_ = Math.max(slotFs(n), 9);
+          add([medAt[n][0] - mr, medAt[n][1] - mr]); add([medAt[n][0] + mr, medAt[n][1] + mr]);
+          chOf(n).secs.forEach(function (i) { add(P(R2 + 4, ang[i])); if (f) add(P(R2 + LBL + S[i].lab.length * fs_ * CW + 4, ang[i])); });
+          if (!f) add(P(R2 + LBL + 6 + (chOf(n).sh.length + 3) * FS_CH * CW, cA[n]));
+        });
+        return fitCam(b, f ? 1.25 : 1.1);
       }
       var R = R2 + 8;
       return fitCam([-R, -R, R, R], 1.2);
@@ -542,9 +546,8 @@
     else if (s.kind === "root" && !opts.keepPath) pathIdx = -1;
     sel = s; selId = id; hover = null;
     var idea = s.kind === "sec" || s.kind === "con" || s.kind === "ch";
-    // on a phone the wheel is for choosing; what is chosen opens in the explore view, where its labels can be read
+    // from the list, a chosen idea opens in Explore; from the wheel it stays on the wheel, which zooms in so its labels can be read
     if (idea && view === "list") setView("exp", { quiet: true });
-    else if (idea && view === "over" && phone()) setView("exp", { quiet: true });
     E.route.classList.toggle("on", pathIdx >= 0);
     if (pathIdx >= 0) drawRoute(true);
     mineMap = view === "path" ? mineSteps() : {};
@@ -558,6 +561,7 @@
     markSeen(s);
     if (opts.hash !== false) syncHash();
     if (!wheelVisible() || opts.move === false) { renderLabels(); return; }
+    if (phone()) size();  // the strip under the wheel changes its height
     var lay = layoutFor(s);
     roomFor = lay.lw;
     animate(lay, camAfter(lay, s), opts.dur === undefined ? 760 : opts.dur);
@@ -597,6 +601,8 @@
     if (pathIdx >= 0) PATHS[pathIdx].st.forEach(function (x, k) { onPath[x[0]] = 1; if (!steps[x[0]]) steps[x[0]] = k + 1; });
     var focused = v.kind !== "root" && v.kind !== "path";
     svg.classList.toggle("focused", focused);
+    svg.classList.toggle("compact", phone() && !focused);
+    chart.classList.toggle("has-sel", sel.kind !== "root");
     svg.classList.toggle("pathing", pathIdx >= 0);
     var selCh = sel.kind === "ch" ? sel.n : 0;
     E.med.forEach(function (g, k) {
@@ -1062,8 +1068,7 @@
   }
   function refit() {
     size(); settle();
-    var at_ = phone() ? { kind: "root" } : sel;  // on a phone the overview is always the whole field
-    var lay = layoutFor(at_), cam = camAfter(lay, at_);
+    var lay = layoutFor(sel), cam = camAfter(lay, sel);
     st.k = lay.k; st.mk = lay.mk; st.rot = lay.rot; roomFor = lay.lw; tx = cam.tx; ty = cam.ty; sc = cam.sc;
     render(); apply();
   }

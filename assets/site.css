@@ -1545,6 +1545,14 @@ html[lang="fa"] .p-check p{font-family:var(--fa);line-height:1.9}
   .wheel.compact .sn{pointer-events:none}
   .wheel.compact .arc{stroke-width:10}
   .chart[data-view="over"] .chart-panel,.chart[data-view="list"] .chart-panel{display:none}
+  /* on the wheel, a chosen idea gets a short strip under the drawing, not a sheet over it */
+  .chart[data-view="over"].has-sel .chart-panel{display:block;flex:none;max-height:34%;overflow:auto;padding:10px 16px 14px;border-top:1px solid var(--rule-2)}
+  .chart[data-view="over"] .chart-panel .p-body>*:not(.p-acts):not(.p-status):not(.p-more){display:none}
+  .chart[data-view="over"] .chart-panel .p-crumbs{display:none}
+  .chart[data-view="over"] .chart-panel h2{font-size:1.35rem}
+  .chart[data-view="over"] .chart-panel .p-acts{margin-top:10px}
+  .chart[data-view="over"] .chart-panel .p-acts .btn{min-height:38px;padding:0 14px;font-size:.84rem}
+  .chart[data-view="over"] .chart-panel .p-acts a.btn:not(.primary),.chart[data-view="over"] .chart-panel [data-act="save"],.chart[data-view="over"] .chart-panel .p-more{display:none}
   .chart-panel{position:static;grid-column:auto;max-height:none;overflow:visible;padding:16px 16px 28px;border-inline-start:0;border-top:1px solid var(--rule-2)}
   .chart-panel .p-crumbs{display:flex}
   .chart-panel h2{font-size:1.6rem}
