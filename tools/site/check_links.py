@@ -46,7 +46,9 @@ for p, x in parsed.items():
         checked += 1
         if not target.exists():
             bad.append(f"{p.relative_to(ROOT)}: {k}={u} -> missing {target}"); continue
-        if s.fragment and target.suffix == ".html" and k == "href" and target not in (ROOT / "map/index.html", ROOT / "review/index.html", ROOT / "fa/review/index.html"):
+        # the map's and the review page's fragments are routes their scripts follow (#ch5, #gettier), not element ids
+        if s.fragment and target.suffix == ".html" and k == "href" and target not in (
+                ROOT / "map/index.html", ROOT / "fa/map/index.html", ROOT / "review/index.html", ROOT / "fa/review/index.html"):
             t = parsed.get(target)
             if t is None:
                 t = P(); t.feed(target.read_text(encoding="utf-8")); parsed[target] = t

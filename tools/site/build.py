@@ -6,7 +6,7 @@
 Reads
     guide/NN-*.md, guide/README.md      the guide (the markdown stays the source of truth)
     guide/audio/tracks.js               audio tracks and their section times
-    assets/data/concepts.js             the concept map's data (also used by map/index.html)
+    assets/data/concepts.js             the concepts: their entries, and the tree the concept pages follow
     tools/site/art.json                 artwork captions; images in assets/art/ (see fetch_art.py)
 
 Writes
@@ -15,6 +15,7 @@ Writes
     guide/index.html, guide/NN-*.html   the guide as web pages
     guide/audio/index.html, about.html  the audio player and how the audio was made
     concepts/index.html, concepts/*.html one readable page per concept, English and Persian
+    map/index.html, fa/map/index.html   the map of the guide (its data embedded; drawn by assets/map.js)
     credits.html, 404.html
     assets/art/*-{640,1200,2000}.jpg    cropped, resized artwork
     assets/diagrams/*.svg               Mermaid diagrams rendered to SVG (cached)
@@ -195,8 +196,8 @@ def mmss(seconds):
 
 
 def map_url(root, frag=""):
-    """The concept map (shared by both languages), opened in the language being built."""
-    return f"{root}map/" + ("?lang=fa" if LANG == "fa" else "") + (f"#{frag}" if frag else "")
+    """The concept map of the language being built (/map/ or /fa/map/)."""
+    return f"{home(root)}map/" + (f"#{frag}" if frag else "")
 
 
 def site_name():
@@ -258,6 +259,10 @@ def icon(name, cls="icon"):
     paths = {
         "book": '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>',
         "chev": '<path d="m15 18-6-6 6-6"/>',
+        "plus": '<path d="M12 5v14M5 12h14"/>',
+        "minus": '<path d="M5 12h14"/>',
+        "fit": '<path d="M9 4H4v5M15 4h5v5M20 15v5h-5M9 20H4v-5"/>',
+        "close": '<path d="m6 6 12 12M18 6 6 18"/>',
         "toc": '<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.1"/><circle cx="4.5" cy="12" r="1.1"/><circle cx="4.5" cy="18" r="1.1"/>',
         "map": '<circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="9" r="2"/><path d="M6.7 7 10.4 8.4M17.3 7l-3.7 1.4M12 11v5"/>',
         "grid": '<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
@@ -363,6 +368,26 @@ class Art:
                 im = img if img.width <= w else img.resize((w, round(img.height * w / img.width)), Image.LANCZOS)
                 im.save(out, "JPEG", quality=78 if w > 700 else 76, optimize=True, progressive=True)
             print(f"  art {key}: {img.width}x{img.height}")
+
+    DOT = 160  # px, the square crop shown in the map's medallions: the chapters' paintings and, at the centre, the map's own
+    DOT_KEYS = {f"ch{n:02d}" for n in range(1, 17)} | {"map"}
+    DOT_SIDE = {"map": 0.36}  # share of the shorter side kept; the map's own plate shows just its sun
+
+    def derive_dots(self):
+        for key, spec in self.info.items():
+            if key not in self.DOT_KEYS:
+                continue
+            src, out = ART_DIR / f"{key}-640.jpg", ART_DIR / f"{key}-dot.jpg"
+            if not src.exists() or (out.exists() and out.stat().st_mtime >= src.stat().st_mtime):
+                continue
+            img = Image.open(src).convert("RGB")
+            fx, fy = (float(v.rstrip("%")) / 100 for v in spec.get("focus", "50% 50%").split())
+            side = round(min(img.size) * self.DOT_SIDE.get(key, 0.8))
+            cx, cy = fx * img.width, fy * img.height
+            left = min(max(0, round(cx - side / 2)), img.width - side)
+            top = min(max(0, round(cy - side / 2)), img.height - side)
+            img.crop((left, top, left + side, top + side)).resize((self.DOT, self.DOT), Image.LANCZOS) \
+                .save(out, "JPEG", quality=80, optimize=True, progressive=True)
 
     def color(self, key):
         return self.credits.get(key, {}).get("color", "#2a2f33")
@@ -998,6 +1023,55 @@ def best_section(title, branch_ch, idx):
     return best if score >= 3 else None
 
 
+# Where the guide teaches each concept whose title is not one of its headings: (chapter, heading id), or
+# (chapter, None) for a branch entry that a whole chapter is about.
+CONCEPT_HOME = {
+    "know": (5, None), "truth": (11, None), "sources": (7, None), "skep": (8, None), "formal": (9, None),
+    "phsci": (10, None), "social": (12, None), "natur": (14, None), "logic": (3, None),
+    "trilemma": (6, "agrippas-trilemma"), "virtue": (13, "virtue-epistemology"),
+    "relig": (13, "faith-reason-and-religious-epistemology"),
+    "jtb": (5, "the-tripartite-analysis"), "kinds": (1, "three-kinds-of-knowing"), "just": (6, "what-justification-is"),
+    "intext": (6, "internalism-and-externalism"), "deont": (6, "deontology-and-doxastic-voluntarism"),
+    "basicality": (6, "foundationalism"), "reliab": (6, "reliabilism-about-justification"),
+    "prag": (11, "pragmatist-theories"), "defl": (11, "deflationism"), "object": (11, "perspectivism-and-objectivity"),
+    "ratemp": (7, "rationalism-and-empiricism-about-the-a-priori"), "ansyn": (1, "analytic-and-synthetic"),
+    "synapr": (1, "putting-the-three-distinctions-together"), "reid": (7, "anti-reductionism"),
+    "closure": (8, "the-closure-argument"), "moore": (8, "mooreanism"),
+    "cred": (9, "full-belief-and-degrees-of-belief"), "dutch": (9, "credences-and-coherence"),
+    "probint": (9, "what-is-probability"), "lottery": (9, "full-belief-and-degrees-of-belief"),
+    "preface": (9, "full-belief-and-degrees-of-belief"), "raven": (9, "the-paradox-of-the-ravens"),
+    "pval": (9, "p-values"), "forking": (9, "multiple-comparisons-and-p-hacking"),
+    "popper": (10, "popper-and-falsificationism"), "risky": (10, "popper-and-falsificationism"),
+    "corrob": (10, "popper-and-falsificationism"), "adhoc": (10, "ad-hoc-hypotheses"),
+    "duhem": (10, "the-duhem-quine-problem"), "normal": (10, "kuhn-and-paradigms"), "incomm": (10, "kuhn-and-paradigms"),
+    "expl": (10, "inference-to-the-best-explanation"), "realism": (10, "scientific-realism-and-anti-realism"),
+    "miracle": (10, "scientific-realism-and-anti-realism"), "pmi": (10, "scientific-realism-and-anti-realism"),
+    "constemp": (10, "scientific-realism-and-anti-realism"), "ladder": (10, "counterfactuals-and-interventions"),
+    "confound": (10, "correlation-and-causation"), "collider": (10, "correlation-and-causation"),
+    "pubbias": (10, "the-replication-crisis"),
+    "expert": (12, "the-novice-expert-problem"), "aumann": (12, "peer-disagreement"),
+    "echo": (12, "echo-chambers-and-epistemic-bubbles"), "condorcet": (12, "the-wisdom-of-crowds"),
+    "bs": (11, "frankfurt-on-bullshit"), "moral": (7, "moral-knowledge"),
+    "ivice": (13, "intellectual-vices"), "evidfid": (13, "the-evidentialist-challenge"),
+    "properly": (13, "reformed-epistemology"), "flew": (13, "falsification-and-religious-language"),
+    "fideism": (13, "fideism"), "blind": (14, "other-well-documented-biases"), "scout": (14, "the-scout-mindset"),
+    "valid": (3, "validity-and-soundness"), "modus": (3, "valid-argument-forms"), "affirm": (3, "formal-fallacies"),
+    "steel": (3, "the-principle-of-charity"),
+}
+
+
+def concept_home(C, cid, idx):
+    """The chapter and heading that teach a concept, as (chapter, heading id, heading); the heading id is None when
+    the whole chapter is about it, and the result is None for the root."""
+    if cid == "root":
+        return None
+    if cid in CONCEPT_HOME:
+        n, slug = CONCEPT_HOME[cid]
+        return (n, slug, next((p for m, s, p in idx if m == n and s == slug), "")) if slug else (n, None, "")
+    sec = best_section(C.title(cid), BRANCH_CHAPTER.get(C.branch(cid), 1), idx)
+    return sec or (BRANCH_CHAPTER.get(C.branch(cid), 1), None, "")
+
+
 def concept_body(C, cid, lang):
     UI = C.UI[lang]
     n, r = C.N[cid], C.R.get(cid, {}).get(lang, {})
@@ -1035,6 +1109,252 @@ def concept_body(C, cid, lang):
         out.append(blk(nxt(), "check", UI["check"],
                        f'<p class="cq">{r["check"]["q"]}</p><details><summary>{UI["show"]}</summary><p>{r["check"]["a"]}</p></details>'))
     return "".join(out)
+
+
+MAP_UI = {
+    "en": {"kmap": "The map of the guide", "chapter": "Chapter {n}", "sec": "Section {i} of {n}", "concept": "Concept entry",
+           "path": "Learning path", "read": "Read the chapter", "readsec": "Read this section", "entry": "Read the full entry",
+           "listen": "Listen · {n} min", "deeper": "Deeper study", "practise": "Practise its questions",
+           "sections": "Sections", "connected": "Most connected chapters", "linksn": "{n} links",
+           "entries": "Concept entries", "terms": "Terms explained here", "out": "Points to", "in": "Referred to from",
+           "where": "Where the guide explains it", "related": "Related concepts", "same": "Also in this section",
+           "parts": "Five parts", "paths": "Ways through the guide", "onpaths": "On these learning paths",
+           "steps": "{n} chapters", "start": "Start reading", "closepath": "Leave the path", "read_p": "You have read {n}%",
+           "stopped": "You stopped at", "continue": "Continue reading", "prev": "Previous", "next": "Next",
+           "showsec": "Show the section on the map", "find": "Search the map…", "none": "Nothing matches.",
+           "zin": "Zoom in", "zout": "Zoom out", "fit": "Show the whole map", "close": "Close", "open": "Details",
+           "back": "Back to the whole map", "kch": "Chapter", "ksec": "Section", "kcon": "Concept", "kterm": "Term",
+           "how": "Choose a chapter to turn the wheel to it, then a section to see where it leads. "
+                  "The arrow keys step through the sections.",
+           "stats": "{c} chapters · {s} sections · {l} cross-references · {e} concept entries", "mins": "{n} min"},
+    "fa": {"kmap": "نقشهٔ راهنما", "chapter": "فصل {n}", "sec": "قسمتِ {i} از {n}", "concept": "مدخلِ مفهوم",
+           "path": "مسیرِ یادگیری", "read": "خواندنِ فصل", "readsec": "خواندنِ این قسمت", "entry": "خواندنِ مدخلِ کامل",
+           "listen": "شنیدن · {n} دقیقه", "deeper": "مطالعهٔ عمیق‌تر", "practise": "تمرینِ پرسش‌های آن",
+           "sections": "قسمت‌ها", "connected": "فصل‌هایی با بیشترین پیوند", "linksn": "{n} پیوند",
+           "entries": "مدخل‌های مفهومی", "terms": "اصطلاح‌هایی که این‌جا شرح داده می‌شوند", "out": "ارجاع می‌دهد به",
+           "in": "ارجاع‌شده از", "where": "جایی که راهنما آن را شرح می‌دهد", "related": "مفاهیمِ مرتبط",
+           "same": "همچنین در این قسمت", "parts": "پنج بخش", "paths": "مسیرهایی در راهنما",
+           "onpaths": "در این مسیرهای یادگیری", "steps": "{n} فصل", "start": "شروعِ خواندن", "closepath": "بیرون آمدن از مسیر",
+           "read_p": "{n}٪ را خوانده‌اید", "stopped": "جایی که ماندید", "continue": "ادامهٔ خواندن", "prev": "قبلی",
+           "next": "بعدی", "showsec": "نمایشِ این قسمت روی نقشه", "find": "جست‌وجو در نقشه…",
+           "none": "چیزی پیدا نشد.", "zin": "بزرگ‌نمایی", "zout": "کوچک‌نمایی", "fit": "نمایشِ کلِ نقشه", "close": "بستن",
+           "open": "جزئیات", "back": "بازگشت به کلِ نقشه", "kch": "فصل", "ksec": "قسمت", "kcon": "مفهوم", "kterm": "اصطلاح",
+           "how": "فصلی را برگزینید تا چرخ به سوی آن بچرخد، سپس قسمتی را تا ببینید به کجا می‌رسد. "
+                  "کلیدهای جهت‌نما قسمت‌ها را یکی‌یکی پیش می‌برند.",
+           "stats": "{c} فصل · {s} قسمت · {l} ارجاع · {e} مدخلِ مفهومی", "mins": "{n} دقیقه"},
+}
+
+# Short chapter names for the chart, where the full titles do not fit (the panel gives them in full).
+CH_SHORT = {1: ("What is epistemology?", "معرفت‌شناسی چیست؟"), 2: ("History", "تاریخ"),
+            3: ("Logic and arguments", "منطق و استدلال"), 4: ("Language and definitions", "زبان و تعریف"),
+            5: ("What is knowledge?", "معرفت چیست؟"), 6: ("Justification", "توجیه"), 7: ("Sources of knowledge", "منابع معرفت"),
+            8: ("Skepticism", "شکاکیت"), 9: ("Probability and Bayes", "احتمال و بیز"), 10: ("Science and evidence", "علم و شواهد"),
+            11: ("Truth and relativism", "حقیقت و نسبی‌گرایی"), 12: ("Social epistemology", "معرفت‌شناسی اجتماعی"),
+            13: ("Virtue and belief", "فضیلت و اخلاقِ باور"), 14: ("Psychology of reasoning", "روان‌شناسیِ استدلال"),
+            15: ("Fallacies", "مغالطه‌ها"), 16: ("The toolkit", "جعبه‌ابزار")}
+
+
+def readme_paths(md):
+    """The learning paths on the guide's contents page, as (name, note, [(chapter, note), ...])."""
+    text = (SRC() / "README.md").read_text(encoding="utf-8")
+    out = []
+    for m in re.finditer(r"^\*\*(.+?)\*\*\s*(?:\(([^)]*)\))?\s*:\s*(.+)$", text, re.M):
+        steps = [(int(s.group(1)), (s.group(2) or "").strip())
+                 for s in re.finditer(r"\[[^\]]+\]\((\d\d)-[\w-]+\.md\)(?:\s*\(([^)]*)\))?", m.group(3))]
+        steps = [s for s in steps if s[0] <= 16]
+        if len(steps) >= 3:
+            out.append((plain_inline(md, m.group(1)), (m.group(2) or "").strip(), steps))
+    return out
+
+
+def readme_question():
+    """The question at the root of the contents page's diagram of how the ideas connect."""
+    m = re.search(r'Q\["([^"]+)"\]', (SRC() / "README.md").read_text(encoding="utf-8"))
+    return m.group(1) if m else ""
+
+
+def excerpt(text, limit=230):
+    """The opening of a section, cut at a sentence if one ends late enough."""
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    end = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "), cut.rfind("؟ "))
+    return cut[:end + 1] if end > limit // 2 else cut.rsplit(" ", 1)[0].rstrip(",;:—–") + "…"
+
+
+def build_map(C, chapters, md, art):
+    """The map of the guide, drawn as a planisphere by assets/map.js from the data embedded here: the sixteen chapters
+    (each a medallion with its painting) in the guide's five parts, every section of every chapter on the outer orbit,
+    the guide's own cross-references between them, its learning paths, and each concept entry on the section that
+    teaches it."""
+    root = up(1)
+    h = home(root)
+    lang = LANG
+    P = lang_prefix()
+    en = EN_CHAPTERS or chapters
+    outline = {}
+    for ch in en.values():
+        if ch.num <= 16:
+            _, heads = md.render(clean_chapter_markdown(split_epigraphs(ch.text)[0]), lambda x: x)
+            outline[ch.num] = [(hd[0], hd[1], hd[2]) for hd in heads]
+    idx = [(n, s, p) for n, hs in outline.items() for _, s, p in hs]
+    texts = {e["u"]: e["x"] for e in LEARN["search"] if e["k"] == "s"}
+
+    # the sections: each chapter's second-level headings, less the ones that only frame it
+    sections, at, owner = [], {}, {}
+    for n in sorted(outline):
+        ch = chapters[n]
+        pages = DEEP.get(ch.slug, {}) if lang == "en" else {}
+        cur = None
+        for level, slug, plain in outline[n]:
+            if level == 2:
+                cur = None if slug in NOT_SUBSTANTIVE else slug
+                if cur:
+                    at[(n, slug)] = len(sections)
+                    sections.append({"c": n, "id": slug, "t": plain if lang == "en" else FA_HEADS.get((n, slug), plain),
+                                     "x": excerpt(texts.get(f"{P}guide/{ch.href}#{slug}", "")),
+                                     "d": f"../deeper/{ch.slug}/{slug}.html" if slug in pages else "", "k": [], "g": []})
+            if cur:
+                owner[(n, slug)] = cur
+
+    # the guide's cross-references, from section to section (or to a whole chapter, as -n)
+    weights = {}
+    for n in sorted(outline):
+        h2s = [s for lv, s, _ in outline[n] if lv == 2]
+        k, cur = -1, None
+        for line in clean_chapter_markdown(split_epigraphs(en[n].text)[0]).split("\n"):
+            if line.startswith("## "):
+                k += 1
+                cur = at.get((n, h2s[k])) if k < len(h2s) else None
+                continue
+            if cur is None:
+                continue
+            for m in re.finditer(r"\]\((?:(\d\d)-[\w-]+\.md)?(?:#([\w-]+))?\)", line):
+                if not m.group(1) and not m.group(2):
+                    continue
+                tn = int(m.group(1)) if m.group(1) else n
+                if tn > 16:
+                    continue
+                target = at.get((tn, owner.get((tn, m.group(2))))) if m.group(2) else None
+                to = target if target is not None else -tn
+                if to != cur and to != -n:
+                    weights[(cur, to)] = weights.get((cur, to), 0) + 1
+        if k + 1 != len(h2s):
+            print(f"  note: map: chapter {n} has {k + 1} '## ' lines but {len(h2s)} second-level headings")
+    links = [[a, b, w] for (a, b), w in sorted(weights.items())]
+
+    # every concept entry on the section (or chapter) that teaches it
+    cons = {}
+    for cid, node in C.N.items():
+        home_ = concept_home(C, cid, idx)
+        si = at.get((home_[0], owner.get((home_[0], home_[1]))), -1) if home_ and home_[1] else -1
+        cons[cid] = {"t": C.title(cid, lang), "l": strip_tags(C.line(cid, lang)), "c": home_[0] if home_ else 0, "s": si,
+                     "a": (home_[1] or "") if home_ else "", "k": [x for x in node.get("k", []) if x in C.N],
+                     "h": " ".join([C.title(cid), C.title(cid, "fa"), node.get("q", ""), node.get("w", "")]).lower()}
+        if si >= 0:
+            sections[si]["k"].append(cid)
+    # and the glossary's terms on the sections that explain them
+    for v in LEARN["terms"].values():
+        m = re.search(r"guide/(\d\d)-[\w-]+\.html#([\w-]+)", v.get("s", ""))
+        if v["id"].startswith("g-") and m:
+            si = at.get((int(m.group(1)), owner.get((int(m.group(1)), m.group(2)))))
+            if si is not None:
+                sections[si]["g"].append([v["t"], "../" + v["g"][len(P):]])
+
+    questions = {}
+    for q in LEARN["questions"]:
+        questions[q["ch"]] = questions.get(q["ch"], 0) + 1
+    romans = [r for r, _, nums in PARTS if r]
+    chs = []
+    for n in range(1, 17):
+        ch = chapters[n]
+        chs.append({"n": n, "p": romans.index(PART_OF[n][0]), "t": ch.title, "sh": L(*CH_SHORT[n]), "l": ch.label,
+                    "h": f"../guide/{ch.href}", "img": f"{root}assets/art/{ch.art}-dot.jpg", "im": art.src(ch.art, root, 640),
+                    "b": plain_inline(md, ch.blurb) if ch.blurb else "", "m": ch.minutes, "slug": ch.slug,
+                    "a": round(ch.track["duration"] / 60) if ch.track else 0,
+                    "dp": f"../deeper/{ch.slug}/" if lang == "en" and DEEP.get(ch.slug) else "",
+                    "rv": f"../review/#{ch.slug}" if questions.get(n) else ""})
+    parts = [{"r": r, "t": L(name, PARTS_FA[r][1]), "l": L(f"Part {r}", f"بخشِ {PARTS_FA[r][0]}"), "ch": nums}
+             for r, name, nums in PARTS if r]
+    hours = round(sum(chapters[n].minutes for n in range(1, 17)) / 60)
+    paths = [{"t": L("Cover to cover", "از آغاز تا پایان"),
+              "m": L(f"all sixteen chapters in order, about {hours} hours of reading", f"همهٔ شانزده فصل به ترتیب، حدودِ {num(hours)} ساعت خواندن"),
+              "st": [[n, ""] for n in range(1, 17)]}]
+    paths += [{"t": name, "m": note, "st": [[n, plain_inline(md, s) if s else ""] for n, s in steps]}
+              for name, note, steps in readme_paths(md)]
+    ui = dict(MAP_UI[lang])
+    data = {"lang": lang, "ui": ui, "q": readme_question(), "parts": parts, "chapters": chs, "sections": sections,
+            "links": links, "concepts": cons, "paths": paths,
+            "root": {"t": C.title("root", lang), "u": "../concepts/root.html", "img": f"{root}assets/art/map-dot.jpg",
+                     "l": strip_tags(C.line("root", lang))}}
+    payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    refs = sum(w for _, _, w in links)
+
+    head = hero(art, "map", root, kicker=L("The map of the guide", "نقشهٔ راهنما"),
+                title=L("A planisphere of knowledge", "نقشهٔ آسمانیِ دانش"), cls="short",
+                lede=L(f"The whole guide on one chart: its sixteen chapters in five parts, all {len(sections)} sections, and the "
+                       f"{refs} cross-references that tie them together. Turn the wheel to a chapter to see what it covers, "
+                       "follow a section to where it leads, or take one of the guide’s learning paths.",
+                       f"کلِ راهنما روی یک نقشه: شانزده فصل در پنج بخش، همهٔ {num(len(sections))} قسمت، و {num(refs)} ارجاعی که "
+                       "آن‌ها را به هم می‌پیوندد. چرخ را به سوی فصلی بچرخانید تا ببینید چه چیزهایی را در بر می‌گیرد، قسمتی را "
+                       "دنبال کنید تا ببینید به کجا می‌رسد، یا یکی از مسیرهای یادگیریِ راهنما را بپیمایید."),
+                actions=(f'<a class="btn primary" href="#chart">{icon("map")} {L("Explore the map", "کاوش در نقشه")}</a>'
+                         f'<a class="btn" href="{h}concepts/">{icon("grid")} {L("All concepts as pages", "همهٔ مفاهیم به صورتِ صفحه")}</a>'))
+    tools = (f'<div class="chart-tools">'
+             f'<div class="chart-find"><span aria-hidden="true">{icon("search")}</span>'
+             f'<input id="mapq" type="search" autocomplete="off" placeholder="{attr(ui["find"])}" aria-label="{attr(ui["find"])}" '
+             f'role="combobox" aria-expanded="false" aria-controls="mapres" aria-autocomplete="list">'
+             f'<div class="chart-res" id="mapres" role="listbox" hidden></div></div>'
+             f'<div class="chart-zoom" role="group" aria-label="{L("Zoom", "بزرگ‌نمایی")}">'
+             f'<button type="button" data-zoom="in" aria-label="{ui["zin"]}" title="{ui["zin"]}">{icon("plus")}</button>'
+             f'<button type="button" data-zoom="out" aria-label="{ui["zout"]}" title="{ui["zout"]}">{icon("minus")}</button>'
+             f'<button type="button" data-zoom="fit" aria-label="{ui["fit"]}" title="{ui["fit"]}">{icon("fit")}</button></div></div>')
+    part_keys = "".join(f'<button type="button" class="lg-part p{i}" data-map-go="part-{i + 1}"><i></i>{esc(p["r"] if lang == "en" else PARTS_FA[p["r"]][0])} · {esc(p["t"])}</button>'
+                        for i, p in enumerate(parts))
+    legend = (f'<div class="chart-legend">'
+              f'<div class="lg-parts" role="group" aria-label="{L("The five parts", "پنج بخش")}">{part_keys}</div>'
+              f'<div class="lg-keys" aria-hidden="true">'
+              f'<span><i class="lg-med"></i>{L("a chapter, with its painting", "یک فصل، با نقاشیِ آن")}</span>'
+              f'<span><i class="lg-dot"></i>{L("a section", "یک قسمت")}</span>'
+              f'<span><i class="lg-con"></i>{L("a section with a concept entry", "قسمتی با مدخلِ مفهوم")}</span>'
+              f'<span><i class="lg-chord"></i>{L("cross-references between chapters; thicker means more", "ارجاع‌های میانِ فصل‌ها؛ ضخیم‌تر یعنی بیشتر")}</span>'
+              f'<span><i class="lg-prog"></i>{L("how far you have read", "چقدر خوانده‌اید")}</span></div></div>'
+              f'<p class="chart-hint" data-hint-touch="{attr(L("Tap a chapter to turn the wheel to it, then a section to follow its links. Pinch with two fingers to zoom.", "روی فصلی بزنید تا چرخ به سوی آن بچرخد، سپس روی قسمتی تا پیوندهایش را دنبال کنید. با دو انگشت بزرگ‌نمایی کنید."))}">'
+              f'{L("Click a chapter to turn the wheel to it, then a section to follow its links. The arrow keys step through the sections; drag to move, Ctrl + scroll to zoom.", "روی فصلی کلیک کنید تا چرخ به سوی آن بچرخد، سپس روی قسمتی تا پیوندهایش را دنبال کنید. کلیدهای جهت‌نما قسمت‌ها را پیش می‌برند؛ برای جابه‌جایی بکشید و برای بزرگ‌نمایی Ctrl و چرخِ موشواره را به کار ببرید.")}</p>')
+    chart = (f'<section class="chart-wrap" id="chart" aria-label="{L("The map of the guide", "نقشهٔ راهنما")}">'
+             f'<div class="chart">{tools}'
+             f'<svg class="wheel" role="group" aria-label="{attr(L("Map of the guide: chapters, sections and their cross-references", "نقشهٔ راهنما: فصل‌ها، قسمت‌ها و ارجاع‌های میانِ آن‌ها"))}"></svg>'
+             f'<aside class="chart-panel" aria-live="polite"></aside>'
+             f'<noscript><p class="chart-nojs">{L("The interactive map needs JavaScript. The contents of the guide are on", "نقشهٔ تعاملی به جاوااسکریپت نیاز دارد. فهرستِ راهنما در")} '
+             f'<a href="{h}guide/">{L("the guide’s contents page", "صفحهٔ فهرستِ راهنما")}</a>.</p></noscript></div>{legend}</section>')
+
+    cards = []
+    for i, p in enumerate(paths):
+        chain = "".join(f'<li><img src="{root}assets/art/{chapters[n].art}-dot.jpg" alt="" loading="lazy" width="44" height="44">'
+                        f'<span>{num(n)}</span></li>' for n, _ in p["st"])
+        first = chapters[p["st"][0][0]]
+        note = f'<p>{esc(p["m"])}</p>' if p["m"] else ""
+        cards.append(f'<article class="pcard"><span class="kicker">{ui["path"]} · {ui["steps"].format(n=num(len(p["st"])))}</span>'
+                     f'<h3>{esc(p["t"])}</h3>{note}<ol class="pchain" aria-label="{attr(", ".join(chapters[n].label for n, _ in p["st"]))}">{chain}</ol>'
+                     f'<div class="pcard-foot"><a href="#chart" data-map-go="path-{i}">{icon("map")} {L("Show on the map", "نمایش روی نقشه")}</a>'
+                     f'<a href="../guide/{first.href}">{L("Start with", "شروع با")} {esc(first.label)} {L("→", "←")}</a></div></article>')
+    paths_html = (f'<section class="wrap map-paths" aria-labelledby="mp-h"><header class="sec-head">'
+                  f'<span class="kicker">{ui["paths"]}</span>'
+                  f'<h2 id="mp-h">{L("Routes across the map", "مسیرهایی روی نقشه")}</h2>'
+                  f'<p>{L("The guide can be read from start to finish, but its contents page also suggests shorter routes for particular goals. Show one on the map to see which chapters it visits, and in what order.", "راهنما را می‌توان از آغاز تا پایان خواند، اما صفحهٔ فهرستِ آن مسیرهای کوتاه‌تری هم برای هدف‌های خاص پیشنهاد می‌کند. هر کدام را روی نقشه ببینید تا بدانید از کدام فصل‌ها و به چه ترتیبی می‌گذرد.")}</p></header>'
+                  f'<div class="pgrid">{"".join(cards)}</div></section>')
+    body = (f'{head}{label(art, "map")}<main id="main" class="mapmain">{chart}{paths_html}</main>'
+            f'<script type="application/json" id="mapdata">{payload}</script>'
+            f'<script src="{av(root, "map.js")}" defer></script>')
+    # an old link to the shared map in Persian (/map/?lang=fa) now opens the Persian edition's own map
+    redirect = ('<script>if(/[?&]lang=fa\\b/.test(location.search))location.replace("../fa/map/"+location.hash)</script>'
+                if lang == "en" else "")
+    page("map/index.html", root=root, title=L("Map of the guide", "نقشهٔ راهنما"),
+         desc=L(f"An interactive map of Mastering Epistemology: sixteen chapters, {len(sections)} sections, the cross-references "
+                "between them, and every concept entry.",
+                f"نقشهٔ تعاملیِ «تسلط بر معرفت‌شناسی»: شانزده فصل، {num(len(sections))} قسمت، ارجاع‌های میانِ آن‌ها و همهٔ مدخل‌های مفهومی."),
+         body=body, current="map", hero_img=(art.src("map", root), art.srcset("map", root)), bar="clear", extra_head=redirect)
 
 
 def build_concepts(C, chapters, md, art, pages):
@@ -1083,7 +1403,9 @@ def build_concepts(C, chapters, md, art, pages):
             side.append(f'<section class="box"><h2 class="l-en">Connects across the map</h2><h2 class="l-fa">پیوندها در سراسر نقشه</h2>'
                         f'<ul class="l-en">{li_en}</ul><ul class="l-fa">{li_fa}</ul></section>')
         ch = chapters[chn]
-        sec = best_section(n["t"], chn, idx) if cid != "root" else None
+        home_ = concept_home(C, cid, idx)
+        ch = chapters[home_[0]] if home_ else ch
+        sec = home_ if home_ and home_[1] else None
         if sec:
             ch = chapters[sec[0]]
             href = f"../guide/{ch.href}#{sec[1]}"
@@ -1187,7 +1509,9 @@ def build_concepts_fa(C, chapters, md, art, pages):
             li = "".join(f'<li><a href="{k}.html"><b>↖ {esc(C.title(k, "fa"))}</b></a></li>' for k in links)
             side.append(f'<section class="box"><h2>پیوندها در سراسر نقشه</h2><ul>{li}</ul></section>')
         ch = chapters[chn]
-        sec = best_section(n["t"], chn, idx) if cid != "root" else None
+        home_ = concept_home(C, cid, idx)
+        ch = chapters[home_[0]] if home_ else ch
+        sec = home_ if home_ and home_[1] else None
         if sec:
             ch = chapters[sec[0]]
             head_fa = next((h[2] for h in EN_HEADS.get(sec[0], []) if h[1] == sec[1]), sec[2])
@@ -2016,9 +2340,9 @@ def prepare_learning(md, C, chapters):
     for cid, n in C.N.items():
         if cid == "root" or cid in BRANCH_CHAPTER:
             continue
-        branch = C.branch(cid)
-        sec = best_section(C.title(cid), BRANCH_CHAPTER.get(branch, 1), idx)
-        num_ = sec[0] if sec else BRANCH_CHAPTER.get(branch, 1)
+        home_ = concept_home(C, cid, idx)
+        sec = home_ if home_[1] else None
+        num_ = home_[0]
         deeper.setdefault(num_, []).append(cid)
         where = f"{P}guide/{chapters[sec[0]].href}#{sec[1]}" if sec else ""
         key = by_en.get(norm(C.title(cid))) or by_en.get(re.sub(r"s$", "", norm(C.title(cid))))
@@ -2116,15 +2440,14 @@ def write_learning_data(C):
 
 def deeper_box(ch, C, root):
     ids = LEARN["deeper"].get(ch.num, [])
-    branch = next((b for b, n in BRANCH_CHAPTER.items() if n == ch.num), None)
-    if not ids and not branch:
-        return ""
     lang = "fa" if LANG == "fa" else "en"
     chips = "".join(f'<a href="../concepts/{cid}.html" data-term="{attr(next((k for k, v in LEARN["terms"].items() if v.get("c") == cid), ""))}">'
                     f'{esc(C.title(cid, lang))}</a>' for cid in ids)
-    links = [f'<a href="{map_url(root, branch)}">{icon("map")} {L("Explore this part of the concept map", "این بخش از نقشهٔ مفاهیم را ببینید")}</a>'] if branch else []
+    links = [f'<a href="{map_url(root, f"ch{ch.num}")}">{icon("map")} {L("See this chapter on the map of the guide", "این فصل را روی نقشهٔ راهنما ببینید")}</a>']
     if any(q["ch"] == ch.num for q in LEARN["questions"]):
         links.append(f'<a href="../review/#{ch.slug}">{icon("clock")} {L("Practise this chapter&#39;s questions", "تمرینِ پرسش‌های این فصل")}</a>')
+    if not ids:
+        return f'<section class="deeper"><span class="kicker">{L("Go deeper", "عمیق‌تر شوید")}</span><div class="more">{"".join(links)}</div></section>'
     return (f'<section class="deeper"><span class="kicker">{L("Go deeper", "عمیق‌تر شوید")}</span><h2>{L("Concepts from this chapter", "مفاهیمِ این فصل")}</h2>'
             f'<p>{L("Each has its own page with the key idea, objections and replies, common mistakes, and a self-check, in English and Persian.", "هر یک صفحهٔ خود را دارد، با ایدهٔ اصلی، اعتراض‌ها و پاسخ‌ها، خطاهای رایج و یک خودآزمایی.")}</p>'
             f'<div class="chips">{chips}</div><div class="more">{"".join(links)}</div></section>')
@@ -2183,12 +2506,12 @@ def build_offline_list():
     pages = ["", "index.html", "guide/", "guide/index.html", "concepts/", "credits.html", "guide/audio/", "guide/audio/index.html", "guide/download.html",
              "guide/audio/about.html", "notes/", "review/", "account/"]
     paths = list(pages) + ["fa/" + p for p in pages]
-    paths += ["map/", "map/index.html", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
+    paths += ["map/", "map/index.html", "fa/map/", "fa/map/index.html", "assets/map.js", "guide/audio/tracks.js"] + (["guide/fa/audio/tracks.js"] if FA_AUDIO else [])
     paths += [
               "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
               "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json",
               "assets/data/terms-fa.json", "assets/data/search-fa.json", "assets/data/questions-fa.json",
-              "assets/favicon.svg", "assets/data/concepts.js", "assets/fonts/fonts.css", "manifest.webmanifest", "assets/icon-192.png"]
+              "assets/favicon.svg", "assets/fonts/fonts.css", "manifest.webmanifest", "assets/icon-192.png"]
     for base in ("", "fa/"):
         paths += sorted(f"{base}guide/{p.name}" for p in (ROOT / base / "guide").glob("[01][0-9]-*.html"))
         paths += sorted(f"{base}concepts/{p.name}" for p in (ROOT / base / "concepts").glob("*.html"))
@@ -2197,6 +2520,7 @@ def build_offline_list():
     paths += sorted(f"deeper/{p.relative_to(ROOT / 'deeper').as_posix()}" for p in (ROOT / "deeper").glob("**/*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
+    paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-dot.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-1200.jpg"))
     return list(dict.fromkeys(paths))
 
@@ -3190,6 +3514,9 @@ def build_language(art, md, C, tracks):
         page(str(path.relative_to(OUT())), root=root, title=title, desc=desc, body=body, current=current,
              hero_img=(art.src(key, root), art.srcset(key, root)), bar="clear", reader=True, bilingual=(LANG == "en"))
 
+    print(f"[{LANG}] concept map")
+    build_map(C, chapters, md, art)
+
     print(f"[{LANG}] audio, credits, study pages")
     feed = build_feed(chapters, tracks, md)
     page("guide/audio/index.html", root=r2, title=L("Listen", "شنیدن"), desc=L("The narrated audio edition of Mastering Epistemology.", "نسخهٔ صوتیِ «تسلط بر معرفت‌شناسی»."),
@@ -3230,6 +3557,7 @@ def main():
     art = Art()
     print("artwork")
     art.derive()
+    art.derive_dots()
     audiobook_cover()
     (ASSETS / "favicon.svg").write_text(FAVICON, encoding="utf-8")
     md = Markdown()
