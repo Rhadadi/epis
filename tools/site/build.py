@@ -258,6 +258,7 @@ def icon(name, cls="icon"):
     paths = {
         "book": '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>',
         "chev": '<path d="m15 18-6-6 6-6"/>',
+        "toc": '<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.1"/><circle cx="4.5" cy="12" r="1.1"/><circle cx="4.5" cy="18" r="1.1"/>',
         "map": '<circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="12" cy="9" r="2"/><path d="M6.7 7 10.4 8.4M17.3 7l-3.7 1.4M12 11v5"/>',
         "grid": '<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
         "phones": '<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/>',
@@ -899,22 +900,13 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
     here_ = ' aria-current="page"'
     all_chs = "".join(f'<li><a href="{c.href}"{here_ if c.num == ch.num else ""}><small>{c.label}</small><span>{esc(c.title)}</span></a></li>'
                       for _, c in sorted(chapters.items()))
-    prev_word, next_word = L("Previous chapter", "فصل قبلی"), L("Next chapter", "فصل بعدی")
-    step = lambda c, cls, word, rel: (
-        f'<a class="chsw-step {cls}" href="{c.href}" rel="{rel}" title="{attr(word + ": " + c.label + " · " + c.title)}" '
-        f'aria-label="{attr(word + ": " + c.label + ", " + c.title)}">{icon("chev")}</a>' if c
-        else f'<span class="chsw-step {cls}" aria-hidden="true"></span>')
-    short = (L(f"Ch. {ch.num}", f"فصل {num(ch.num)}") if ch.num <= 16 else ch.label)
     steps_row = ((f'<a href="{prev_ch.href}" rel="prev"><small>{L("← Previous", "→ قبلی")}</small><span>{esc(prev_ch.title)}</span></a>' if prev_ch else "<span></span>")
                  + (f'<a class="next" href="{next_ch.href}" rel="next"><small>{L("Next →", "بعدی ←")}</small><span>{esc(next_ch.title)}</span></a>' if next_ch else "<span></span>"))
     chsw = (f'<nav class="chsw" aria-label="{L("Chapters", "فصل‌ها")}">'
-            + step(prev_ch, "prev", prev_word, "prev")
-            + f'<details class="chsw-pick"><summary title="{L("All chapters", "همهٔ فصل‌ها")}">'
-              f'<span class="lbl"><span class="k">{ch.label}</span><span class="s">{short}</span><span class="t">{esc(ch.title)}</span></span>'
-              f'{icon("chev", "icon chev")}</summary>'
+            + f'<details class="chsw-pick"><summary class="tbtn" title="{L("Chapters", "فصل‌ها")}" '
+              f'aria-label="{L("Chapters", "فصل‌ها")} ({attr(ch.label)}: {attr(ch.title)})">{icon("toc")}</summary>'
               f'<div class="chsw-panel"><div class="chsw-steps">{steps_row}</div><ol>{all_chs}</ol>'
-              f'<a class="all" href="./">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></div></details>'
-            + step(next_ch, "next", next_word, "next") + "</nav>")
+              f'<a class="all" href="./">{L("The guide’s contents →", "فهرستِ راهنما ←")}</a></div></details></nav>')
     prev_w, next_w = L("← Previous", "→ قبلی"), L("Next", "بعدی")
     pager = f'<nav class="pager" aria-label="{L("Chapters", "فصل‌ها")}">'
     pager += (tile(art, prev_ch.art, root, prev_ch.href, f"{prev_w} · {prev_ch.label}", esc(prev_ch.title)) if prev_ch

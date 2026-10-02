@@ -1125,30 +1125,16 @@ sup.cite a{text-decoration:none;color:var(--accent);font-weight:600}
 .deep-hub b{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--ink)}
 .deep-hub .gist{font-size:.92rem;line-height:1.5;color:var(--ink-2)}
 
-/* ---------------------------------------------------------------- chapter switcher (site bar, chapter pages) */
+/* ---------------------------------------------------------------- chapter list (site bar, chapter pages) */
 .bar.has-chsw .brand{margin-inline-end:0;flex:none}
-.bar.has-chsw .brand small{display:none}
-.chsw{display:flex;align-items:center;gap:2px;min-width:0;margin-inline-end:auto;font-family:var(--sans)}
+.chsw{display:flex;align-items:center;min-width:0;margin-inline-end:auto;font-family:var(--sans)}
 .chsw::before{content:"";flex:none;width:1px;height:26px;background:currentColor;opacity:.25;margin-inline:12px 6px}
-.chsw-step{display:inline-flex;align-items:center;justify-content:center;flex:none;width:34px;height:34px;border-radius:999px;
-  color:inherit;border:1px solid transparent}
-a.chsw-step:hover{border-color:currentColor}
-.chsw-step .icon{width:18px;height:18px}
-.chsw-step.next .icon,html[dir="rtl"] .chsw-step.prev .icon{transform:scaleX(-1)}
-html[dir="rtl"] .chsw-step.next .icon{transform:none}
-.chsw-pick{position:relative;min-width:0}
-.chsw-pick>summary{list-style:none;display:flex;align-items:center;gap:8px;height:42px;padding:0 10px;border-radius:12px;
-  border:1px solid transparent;cursor:pointer;min-width:0}
+.chsw-pick{position:relative}
+.chsw-pick>summary{list-style:none}
 .chsw-pick>summary::-webkit-details-marker{display:none}
-.chsw-pick>summary:hover,.chsw-pick[open]>summary{border-color:currentColor}
-.chsw-pick .lbl{display:flex;flex-direction:column;min-width:0;line-height:1.2}
-.chsw-pick .k{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;opacity:.75}
-.chsw-pick .s{display:none;font-weight:600;font-size:.92rem;white-space:nowrap}
-.chsw-pick .t{font-size:.92rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:30ch}
-.chsw-pick .chev{width:15px;height:15px;transform:rotate(-90deg);opacity:.8}
-.chsw-pick[open] .chev{transform:rotate(90deg)}
-.chsw-panel{position:absolute;top:calc(100% + 9px);inset-inline-start:0;z-index:90;width:min(440px,calc(100vw - 24px));
-  max-height:min(72vh,580px);display:flex;flex-direction:column;padding:8px;color:var(--ink);background:var(--surface);
+.chsw-pick[open]>summary{border-color:currentColor}
+.chsw-panel{position:absolute;top:calc(100% + 10px);inset-inline-start:0;z-index:90;width:min(440px,calc(100vw - 24px));
+  max-height:min(72vh,600px);display:flex;flex-direction:column;padding:8px;color:var(--ink);background:var(--surface);
   border:1px solid var(--rule-2);border-radius:16px;box-shadow:var(--shadow-lg)}
 .chsw-panel ol{list-style:none;margin:0;padding:0;overflow:auto;position:relative}
 .chsw-panel ol a,.chsw-steps a{display:flex;gap:12px;align-items:baseline;padding:8px 10px;border-radius:8px;color:var(--ink-2);
@@ -1158,22 +1144,13 @@ html[dir="rtl"] .chsw-step.next .icon{transform:none}
 .chsw-panel small{flex:none;min-width:5.6em;font-size:.72rem;color:var(--dim)}
 .chsw-panel .all{display:block;margin-top:6px;padding:10px 10px 4px;border-top:1px solid var(--rule);color:var(--accent);
   text-decoration:none;font-size:.9rem}
-.chsw-steps{display:none;grid-template-columns:1fr 1fr;gap:6px;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid var(--rule)}
+.chsw-steps{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid var(--rule)}
 .chsw-steps a{flex-direction:column;gap:2px}
 .chsw-steps a span{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .chsw-steps a.next{text-align:end;align-items:flex-end}
-/* make room: site links become icons on chapter pages until the window is wide */
-@media(max-width:1380px){.bar.has-chsw .site-nav a{width:40px;padding:0;justify-content:center}
-  .bar.has-chsw .site-nav a span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
-@media(max-width:980px){.chsw-pick .k{display:none}.chsw-pick .t{max-width:18ch}}
-@media(max-width:860px){.chsw-pick .t{display:none}.chsw-pick .s{display:block}}
 @media(max-width:560px){
   .chsw::before{display:none}
-  .chsw-step{display:none}
-  .chsw-steps{display:grid}
-  .chsw-pick>summary{padding:0 8px;gap:5px}
   .chsw-panel{position:fixed;top:calc(var(--bar-h) + 6px);left:8px;right:8px;width:auto}
-  .bar.has-chsw #lang{display:none}
 }
 
 /* ---------------------------------------------------------------- user menu */
