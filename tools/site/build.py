@@ -546,6 +546,14 @@ def polish(body):
 
 # ----------------------------------------------------------------------------- page shell
 
+_ASSET_V = {}
+def av(root, name):
+    """An asset URL with a short content hash, so browsers fetch a stylesheet or script again as soon as it changes."""
+    if name not in _ASSET_V:
+        _ASSET_V[name] = hashlib.sha1((ASSETS / name).read_bytes()).hexdigest()[:10]
+    return f"{root}assets/{name}?v={_ASSET_V[name]}"
+
+
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
           alt=None, bilingual=False, chapter_nav=""):
     h = home(root)
@@ -592,8 +600,8 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <link rel="apple-touch-icon" href="{root}assets/icon-192.png">
 <link rel="manifest" href="{root}manifest.webmanifest">
 {alt_link}
-<link rel="stylesheet" href="{root}assets/fonts/fonts.css">
-<link rel="stylesheet" href="{root}assets/site.css">
+<link rel="stylesheet" href="{av(root, "fonts/fonts.css")}">
+<link rel="stylesheet" href="{av(root, "site.css")}">
 {preload}{extra_head}
 <script>{BOOT}</script>
 </head>
@@ -609,12 +617,12 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
   {f'<span class="sep"></span>' if alt else ""}{f'<a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else ""}</nav>
 {body}
 {footer(root)}
-<script src="{root}assets/site.js" defer></script>
-<script src="{root}assets/notes.js" defer></script>
-<script src="{root}assets/learn.js" defer></script>
-<script src="{root}assets/ai-config.js" defer></script>
-<script src="{root}assets/account.js" defer></script>
-<script src="{root}assets/ai.js" defer></script>
+<script src="{av(root, "site.js")}" defer></script>
+<script src="{av(root, "notes.js")}" defer></script>
+<script src="{av(root, "learn.js")}" defer></script>
+<script src="{av(root, "ai-config.js")}" defer></script>
+<script src="{av(root, "account.js")}" defer></script>
+<script src="{av(root, "ai.js")}" defer></script>
 </body>
 </html>
 """
