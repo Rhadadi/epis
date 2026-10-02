@@ -1,0 +1,156 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "step-5-evaluate-the-evidence",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do provenance, denominators, selection, causal alternatives and scope constrain evidence?"
+  ],
+  "sources": [
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Trace the support",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Argument (or “argumentation”) schemes are recurring patterns of reasoning.",
+          "corpus_chunk": 39043
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.",
+          "corpus_chunk": 39043
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Taking this approach, the scheme Argument from Authority can be defined as follows.",
+          "corpus_chunk": 39045
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    },
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Check what the numbers measure",
+        "Account for selection",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Common Cause",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs during causal reasoning when a causal connection between two kinds of events is claimed when evidence is available indicating that both are the effect of a common cause.",
+          "corpus_chunk": 48686
+        },
+        {
+          "locator": "Post Hoc",
+          "basis": "full text",
+          "excerpt": "Suppose we notice that an event of kind A is followed in time by an event of kind B, and then hastily leap to the conclusion that A caused B.",
+          "corpus_chunk": 48766
+        },
+        {
+          "locator": "Regression",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.",
+          "corpus_chunk": 48776
+        },
+        {
+          "locator": "Regression",
+          "basis": "full text",
+          "excerpt": "There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.",
+          "corpus_chunk": 48777
+        },
+        {
+          "locator": "Suppressed Evidence",
+          "basis": "full text",
+          "excerpt": "Intentionally failing to use information suspected of being relevant and significant is committing the fallacy of suppressed evidence.",
+          "corpus_chunk": 48805
+        },
+        {
+          "locator": "Suppressed Evidence",
+          "basis": "full text",
+          "excerpt": "If the relevant information is not intentionally suppressed but rather inadvertently overlooked, the fallacy of suppressed evidence also is said to occur, although the fallacy’s name is misleading in this case.",
+          "corpus_chunk": 48806
+        }
+      ],
+      "annotation": "Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity."
+    },
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Match evidence to scope",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Some theorists postulate skills, i.e., acquired abilities, as operative in critical thinking.",
+          "corpus_chunk": 666
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Amalgamating these lists would produce a confusing and chaotic cornucopia of more than 50 possible educational objectives, with only partial overlap among them.",
+          "corpus_chunk": 667
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "The abilities described in the remaining paragraphs of this section emerge from reflection on the general abilities needed to do well the thinking activities identified in section 6 as components of the critical thinking process described in section 5.",
+          "corpus_chunk": 668
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "It helps in exercising them to be able to recognize and take into account factors that make one’s observation less trustworthy, such as prior framing of the situation, inadequate time, deficient senses, poor observation conditions, and the like.",
+          "corpus_chunk": 669
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "These abilities come into play as well when one thinks about whether and with what degree of confidence to accept an observation report, for example in the study of history or in a criminal investigation or in assessing news reports.",
+          "corpus_chunk": 670
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Children experience these emotions at an early age, without being trained to do so.",
+          "corpus_chunk": 670
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Domain knowledge is required for such creative activity, but a general ability to imagine alternatives is helpful and can be nurtured so as to become easier, quicker, more extensive, and deeper (Dewey 1910: 34–39; 1933: 40–47).",
+          "corpus_chunk": 672
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Rather, they are licensed by general, sometimes qualified substantive rules of inference (Toulmin 1958) that rest on domain knowledge—that a bus trip takes about the same time in each direction, that the terminal of a wireless telegraph would be located on the highest possible place, that sudden cooling is often followed by rain, that an allergic reaction to a sulfa drug generally shows up soon after one starts taking it.",
+          "corpus_chunk": 673
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Dewey (1933) locates logical forms in setting out the products of reflection rather than in the process of reflection.",
+          "corpus_chunk": 673
+        },
+        {
+          "locator": "§ 9",
+          "basis": "full text",
+          "excerpt": "Items testing inferential abilities constitute two of the five subtests of the Watson Glaser Critical Thinking Appraisal (Watson & Glaser 1980a, 1980b, 1994), two of the four sections in the Cornell Critical Thinking Test Level X (Ennis & Millman 1971; Ennis, Millman, & Tomko 1985, 2005), three of the seven sections in the Cornell Critical Thinking Test Level Z (Ennis & Millman 1971; Ennis, Millman, & Tomko 1985, 2005), 11 of the 34 items on Forms A and B of the California Critical Thinking Skills Test (Facione 1990b, 1992), and a high but variable proportion of the 25 selected-response questions in the Collegiate Learning Assessment",
+          "corpus_chunk": 675
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    }
+  ]
+}

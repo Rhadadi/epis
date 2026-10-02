@@ -1,0 +1,152 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "step-6-find-the-crux",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What makes a proposition consequential, and how do multiple supports or differing criteria limit a shared crux?"
+  ],
+  "sources": [
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Test the counterfactual",
+        "Some conclusions have several supports",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.",
+          "corpus_chunk": 39006
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.",
+          "corpus_chunk": 39008
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).",
+          "corpus_chunk": 39009
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.",
+          "corpus_chunk": 39010
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Standardizing arguments by listing their premises and conclusions is one way to delineate the content of an argument and prepare it for evaluation.",
+          "corpus_chunk": 39011
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The diagram that follows depicts the relationships between the argument’s key components, using arrows to indicate the inferences it includes.",
+          "corpus_chunk": 39012
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 11 When arguments have non-verbal key components, visual and multimodal premises and conclusions can be recognized in a key component table by ostension, or by reproducing them in some way.",
+          "corpus_chunk": 39013
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The utility of diagramming is already recognized in Whately 1826 and, in the early twentieth century, in Wigmore 1913.",
+          "corpus_chunk": 39013
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    },
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "Make room for uncertain answers",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Despite the diversity of our 11 examples, one can recognize a common pattern.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.",
+          "corpus_chunk": 642
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.",
+          "corpus_chunk": 643
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging",
+          "corpus_chunk": 644
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).",
+          "corpus_chunk": 645
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "Some of the initiating dispositions, such as open-mindedness and willingness to suspend judgment, are also internal critical thinking dispositions, in the sense of mental habits or attitudes that contribute causally to doing a good job of critical thinking once one starts the process.",
+          "corpus_chunk": 664
+        },
+        {
+          "locator": "§ 8.2",
+          "basis": "full text",
+          "excerpt": "For a list of identified internal critical thinking dispositions, see the Supplement on Internal Critical Thinking Dispositions.",
+          "corpus_chunk": 665
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    }
+  ]
+}

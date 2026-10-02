@@ -1,0 +1,372 @@
+== 16-critical-thinking-toolkit/burden-of-proof
+Q: How do responsibility, standard, procedural outcome, presumption and factual truth differ?
+@fallacy-iep | Appeal to Ignorance | The Fallacy of Appeal to Ignorance comes in two forms: (1) Not knowing that a certain statement is true is taken to be a proof that it is false.
+@fallacy-iep | Misplaced Burden of Proof | Committing the error of trying to get someone else to prove you are wrong, when it is your responsibility to prove you are correct.
+A @fallacy-iep: Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity.
+@hansen2024b | § 3.6 | Some of the most active new researchers on fallacies take a dialectical and/or dialogical approach.
+@hansen2024b | § 3.6 | Barth and Martens’s paper (1977), which studied the argumentum ad hominem by extending Lorenzen’s dialogue tableaux method to include the definitions of the concepts “line of attack” and “winning strategy,” leads to a conception of fallacies as either failures to meet one of the necessary conditions of rational dialogical argumentation, or failures to satisfy sufficient conditions as specified by production rules of the dialogical method (1977, 96).
+@hansen2024b | § 3.6 | The Barth and Martens paper is a bridge between the earlier (quasi-) formal and subsequent informal dialectical theories, and is explicitly acknowledged as a major influence by the Pragma-dialectical theory, the brainchild of Frans van Eemeren and Rob Grootendorst (1984).
+@hansen2024b | § 3.6 | The Pragma-dialecticians propose that inter-personal argumentation can be analysed as two-party-discussions having four analytical stages: a confrontation stage in which the participants become aware of the content of their disagreement; an opening stage in which the parties agree (most likely implicitly) to shared starting points and a set of rules to govern the ensuing discussion; an argumentation stage wherein arguments and doubts about arguments are expressed and recognized; and a final stage in which a decision about the initial disagreement is made, if possible, based on what happened in the argumentation stage.
+@hansen2024b | § 3.6 | A set of ten rules has been proposed as constitutive of the critical-discussion ideal, and the proponents of the theory believe that rational arguers would accept them.
+@hansen2024b | § 3.6 | The rules range over all the four stages of argumentation: at the confrontation stage there is a rule which says one may not prevent the other party from expressing their view; for the argumentation stage there is a rule which requires argumentation to be logically strong and in accord with one or another of three general argumentation schemes; at the closing stage there is a rule that the participants themselves are to decide which party was successful based on the quality of the argumentation they have made: if the proponent carries the day, the opponent should acknowledge it, and vice versa.
+@hansen2024b | § 3.6 | For example, the ad baculum fallacy is a form of intimidation that violates the rule that one may not attempt to prevent one’s discussion partner from expressing their views; equivocation is a violation of the rule that formulations in arguments must be clear and unambiguous; post hoc ergo propter hoc violates the rule that arguments must be instances of schemes correctly applied.
+@hansen2024b | § 3.6 | Clearly not all the rules of critical discussions apply directly to arguments.
+@hansen2024b | § 3.6 | The Pragma-dialectical analysis of fallacies as rule-breakings in a procedure for overcoming disagreements has recently been expanded to take account of the rhetorical dimension of argumentation.
+@hansen2024b | § 3.6 | The ways of strategic maneuvering identified are basically three: topic selection, audience orientation, and the selection of presentational devices, and these can be effectively deployed at each stage of argumentation (Van Eemeren 2010, 94).
+@hansen2024b | § 3.6 | Nevertheless, Pragma-dialectics prefers to keep the appearance condition outside the definition of ‘fallacy’, treating the seeming goodness of fallacies as a sometime co-incidental property, rather than an essential one.
+@hansen2024b | § 3.6 | This approach has been challenged by Douglas Walton who has written more about fallacies and fallacy theory than anyone else.
+A @hansen2024b: Secondary account of dialogue models, rules and reasonable persuasion; theory is distinguished from a measured universal effect.
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/daily-practices
+Q: What makes practice inspectable, and why do feedback, domain knowledge and transfer constrain its value?
+@mellers-etal2014 | PDF p. 3 | Each group recruited participants to forecast events and devised unique methods to elicit and combine multiple opinions.
+@mellers-etal2014 | PDF p. 3 | Promising approaches include statistical training (Fong, Nisbett, & Krantz, 1986), feedback (Benson & Onkal, 1992), expo- sure to multiple perspectives (Ariely et al., 2000; Herzog & Hertwig, 2009), exposure to historical analogies (Lovallo, Clarke, & Camerer, 2012), decomposition of the problem into subsets (Fischhoff, Slovic, & Lichtenstein, 1978), and explicit consideration of contradictory evi- dence (Koriat, Lichtenstein, & Fischhoff, 1980).
+@mellers-etal2014 | PDF p. 3 | Scenario training taught forecasters to generate new futures, actively entertain more possibilities, use decision trees, and avoid biases such as overpredicting change, creating incoherent scenarios, or assigning probabilities exceed- ing 1.0 to mutually exclusive and exhaustive outcomes.
+@mellers-etal2014 | PDF p. 3 | When one has access to many people who make forecasts, how should those people interact in order to generate the most accurate aggregations of predictions?
+@mellers-etal2014 | PDF p. 3 | When the benefits of group interaction exceed the costs, forecasters should work in teams.
+@mellers-etal2014 | PDF p. 3 | These approaches stake out extreme positions on the continuum of independence and interdependence.
+@mellers-etal2014 | PDF p. 4 | Design In Year 1, participants were randomly assigned to condi- tions of a 3 (training: no training, scenario training, or probability training) × 4 (group influence: indepen- dent, crowd-belief, team, or prediction-market forecast- ing) factorial design.
+@mellers-etal2014 | PDF p. 4 | Team forecasters received additional train- ing in how to help the group be more accurate by main- taining high standards of evidence and proof.
+@mellers-etal2014 | PDF p. 4 | We examined tracking by placing the 60 top performers of Year 1 (5 from each condition) in five teams of 12 members each (super- forecaster teams).
+@mellers-etal2014 | PDF p. 4 | Year 1 began with 2,246 participants (1,593 survey respondents and 653 prediction-market traders).
+@mellers-etal2014 | PDF p. 4 | Year 2 started with 1,648 participants (943 survey respondents and 705 prediction-market traders who were either new recruits or returnees).
+@mellers-etal2014 | PDF pp. 4–5 | Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.
+A @mellers-etal2014: Original open tournament study supplies a specified forecasting design and scoring convention; informal habits and general transfer are not certified by it.
+@groarke2026 | § 3 | The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.
+@groarke2026 | § 3 | This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.
+@groarke2026 | § 3 | EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.
+@groarke2026 | § 3 | Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+@hitchcock2024 | § 12.1 | McPeck (1981) attacked the thinking skills movement of the 1970s, including the critical thinking movement.
+@hitchcock2024 | § 12.1 | Nevertheless, his position that the dispositions and abilities of a critical thinker are best developed in the context of subject-matter instruction is shared by many theorists of critical thinking, including Dewey (1910, 1933), Glaser (1941), Passmore (1980), Weinstein (1990), Bailin et al.
+@hitchcock2024 | § 12.1 | In particular, he took the disposition to suspend judgment in situations of cognitive dissonance to be a general disposition.) Conceptual subject-specificity is subject to obvious counter-examples, such as the general ability to recognize confusion of necessary and sufficient conditions.
+@hitchcock2024 | § 12.1 | For example, the principles of hypothetico-deductive reasoning hold for all the varied fields in which such reasoning occurs.
+@hitchcock2024 | § 12.1 | Proponents of empirical subject-specificity tend to argue that transfer is more likely to occur if there is critical thinking instruction in a variety of domains, with explicit attention to dispositions and abilities that cut across domains.
+@hitchcock2024 | § 8 | Educational researchers use the term ‘dispositions’ broadly for the habits of mind and attitudes that contribute causally to being a critical thinker.
+@hitchcock2024 | § 8 | Whatever their status, critical thinking dispositions need motivation for their initial formation in a child—motivation that may be external or internal.
+@hitchcock2024 | § 8 | Facione (1990a: 25) divides “affective dispositions” of critical thinking into approaches to life and living in general and approaches to specific issues, questions or problems.
+@hitchcock2024 | § 8.2 | Some of the initiating dispositions, such as open-mindedness and willingness to suspend judgment, are also internal critical thinking dispositions, in the sense of mental habits or attitudes that contribute causally to doing a good job of critical thinking once one starts the process.
+@hitchcock2024 | § 8.2 | For a list of identified internal critical thinking dispositions, see the Supplement on Internal Critical Thinking Dispositions.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/framing-an-argument-of-your-own
+Q: How do explicit bridges, alternatives, objections and qualifications support a practical proposal?
+@groarke2026 | § 3 | The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.
+@groarke2026 | § 3 | This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.
+@groarke2026 | § 3 | EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.
+@groarke2026 | § 3 | Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+@groarke2026 | § 4.4 | Argument (or “argumentation”) schemes are recurring patterns of reasoning.
+@groarke2026 | § 4.4 | The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.
+@groarke2026 | § 4.4 | Taking this approach, the scheme Argument from Authority can be defined as follows.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/philosophical-razors-and-heuristics
+Q: What conditions and purposes justify simplifying maxims without turning them into universal verdicts?
+@baker2022 | Preamble | Most philosophers believe that, other things being equal, simpler theories are better.
+@baker2022 | § 1 | There is a widespread philosophical presumption that simplicity is a theoretical virtue.
+@baker2022 | § 1 | Kant—in the Critique of Pure Reason—supports the maxim that “rudiments or principles must not be unnecessarily multiplied (entia praeter necessitatem non esse multiplicanda)” and argues that this is a regulative idea of pure reason which underlies scientists’ theorizing about nature (Kant, 1781/1787, pp. 538–9).
+@baker2022 | § 1 | Newton goes on to remark that “Nature is pleased with simplicity, and affects not the pomp of superfluous causes” (Newton 1687, p. 398).
+@baker2022 | § 1 | It is, after all, a principle of logic not to multiply entities unnecessarily (Lavoisier 1862, pp. 623–4).
+@baker2022 | § 1 | Thus materialists about the mind may use OR against dualism, on the grounds that dualism postulates an extra ontological category for mental phenomena.
+@baker2022 | § 1 | The apparent familiarity of the notion of simplicity means that it is often left unanalyzed, while its vagueness and multiplicity of meanings contributes to the challenge of pinning the notion down precisely.[1] A distinction is often made between two fundamentally distinct senses of simplicity: syntactic simplicity (roughly, the number and complexity of hypotheses), and ontological simplicity (roughly, the number and complexity of things postulated).[2] These two facets of simplicity are often referred to as elegance and parsimony respectively.
+@baker2022 | § 1 | Philosophical interest in these two notions of simplicity may be organized around answers to three basic questions; (i) How is simplicity to be defined? [Definition] (ii) What is the role of simplicity principles in different areas of inquiry? [Usage] (iii) Is there a rational justification for such simplicity principles? [Justification] As we shall see, answering the definitional question, (i), is more straightforward for parsimony than for elegance.
+@baker2022 | § 1 | With respect to question (ii), there is an important distinction to be made between two sorts of simplicity principle.
+@baker2022 | § 1 | The first reading corresponds to parsimony, the second to elegance.
+@baker2022 | § 1 | This points to another way of characterizing the elegance/parsimony distinction, in terms of simplicity of theory versus simplicity of world respectively.[3] Sober (2001) argues that both these facets of simplicity can be interpreted in terms of minimization.
+A @baker2022: Secondary account distinguishes elegance and parsimony, epistemic and methodological uses, and conditional justification of simplicity.
+@fallacy-iep | Misplaced Burden of Proof | Committing the error of trying to get someone else to prove you are wrong, when it is your responsibility to prove you are correct.
+A @fallacy-iep: Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity.
+@wheeler2024 | § 3.1 | Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.
+@wheeler2024 | § 3.1 | For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.
+@wheeler2024 | § 3.1 | Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.
+@wheeler2024 | § 3.1 | In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.
+@wheeler2024 | § 5.2 | The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.
+@wheeler2024 | § 5.2 | This general goal of the Fast and Frugal program leads to a second difference between the two schools.
+@wheeler2024 | § 5.2 | For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.
+@wheeler2024 | § 5.2 | If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.
+@wheeler2024 | § 5.2 | Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.
+@wheeler2024 | § 5.2 | The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.
+@wheeler2024 | § 5.2 | People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).
+@wheeler2024 | § 5.2 | Search available options and choose the first one that exceeds your aspiration level.
+A @wheeler2024: Secondary account of environmental fit, resource limits and heuristic procedures; a shortcut’s success depends on the task.
+
+== 16-critical-thinking-toolkit/stasis-theory
+Q: How does the modern four-question stasis tool locate disputes, and why should its order remain flexible?
+@purdue-stasis | Introduction | Stasis theory is a four-question, pre-writing (invention) process developed in ancient Greece by Aristotle and Hermagoras.
+@purdue-stasis | Introduction | The stases also help people to agree on conclusions, and they help identify where people do not agree.
+@purdue-stasis | Introduction | It may also be useful to ask critical questions of your own research and conclusions: Who/what is influencing our determination of the seriousness of this problem/issue?
+@purdue-stasis | Introduction | Note: Related to stasis theory are the six journalistic questions (1) Who?
+@purdue-stasis | Introduction | The solution has nothing to do with (does not achieve stasis with) the issue at hand.
+A @purdue-stasis: Modern openly readable teaching adaptation with fact, definition, quality and policy questions; no ancient original is represented as independently read.
+@hitchcock2024 | § 5 | Despite the diversity of our 11 examples, one can recognize a common pattern.
+@hitchcock2024 | § 5 | The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.
+@hitchcock2024 | § 5 | People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.
+@hitchcock2024 | § 5 | Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.
+@hitchcock2024 | § 5 | These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging
+@hitchcock2024 | § 5 | Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/step-1-understand-before-you-evaluate
+Q: How do fidelity, scope, charity, implicit assumptions and a sentence’s function constrain interpretation?
+@fallacy-iep | Straw Man | Your reasoning contains the Straw Man Fallacy whenever you attribute an easily refuted position to your opponent, one that the opponent would not endorse, and then proceed to attack the easily refuted position (the straw man) believing you have thereby undermined the real man, the opponent’s actual position.
+@fallacy-iep | Straw Man | That’s not what I said.” The Speaker has twisted what his Opponent said.
+A @fallacy-iep: Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity.
+@groarke2026 | § 3 | The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.
+@groarke2026 | § 3 | This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.
+@groarke2026 | § 3 | EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.
+@groarke2026 | § 3 | Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/step-2-identify-the-kind-of-disagreement
+Q: How can factual, conceptual and evaluative components be separated without assuming a single root?
+@hitchcock2024 | § 5 | Despite the diversity of our 11 examples, one can recognize a common pattern.
+@hitchcock2024 | § 5 | The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.
+@hitchcock2024 | § 5 | People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.
+@hitchcock2024 | § 5 | Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.
+@hitchcock2024 | § 5 | These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging
+@hitchcock2024 | § 5 | Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/step-3-map-the-argument
+Q: How do linked/convergent support, objections, implicit premises and source dependence differ?
+@groarke2026 | § 3 | The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.
+@groarke2026 | § 3 | This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.
+@groarke2026 | § 3 | EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.
+@groarke2026 | § 3 | Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+@groarke2026 | § 3.2 | Standardizing arguments by listing their premises and conclusions is one way to delineate the content of an argument and prepare it for evaluation.
+@groarke2026 | § 3.2 | The diagram that follows depicts the relationships between the argument’s key components, using arrows to indicate the inferences it includes.
+@groarke2026 | § 3.2 | EXAMPLE 11 When arguments have non-verbal key components, visual and multimodal premises and conclusions can be recognized in a key component table by ostension, or by reproducing them in some way.
+@groarke2026 | § 3.2 | The utility of diagramming is already recognized in Whately 1826 and, in the early twentieth century, in Wigmore 1913.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/step-4-evaluate-the-premises-and-the-reasoning
+Q: How do premise standards, inference kinds and critical questions identify a concrete defect?
+@groarke2026 | § 4.1 | In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.
+@groarke2026 | § 4.1 | Premise Acceptability Within informal arguments, premises may be acceptable in different ways.
+@groarke2026 | § 4.1 | In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.
+@groarke2026 | § 4.1 | Deeper philosophical issues are tied to questions about the nature of truth.
+@groarke2026 | § 4.1 | America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.
+@groarke2026 | § 4.1 | In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.
+@groarke2026 | § 4.1 | Many informal logics emphasize a distinction between deductive and inductive validity.
+@groarke2026 | § 4.1 | In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).
+@groarke2026 | § 4.2 | AV criteria are in many ways an extension of classical logic’s notion of good argument.
+@groarke2026 | § 4.2 | Textbooks often elaborate fallacies in ways that add more specialized variants of the standard list of fallacies (“misleading vividness” designating the misuse of vivid anecdotal evidence in a hasty generalizations, and so on.) Woods and Walton 1982, Hansen and Pinto 1995, and the entry on fallacies provide detaileds accounts of fallacies.
+@groarke2026 | § 4.2 | Battersby and Bailin 2011 view them as patterns of argument that have more persuasive (rhetorical) power than their probative value merits.
+@groarke2026 | § 4.2 | Appeals to pity and other emotions have, to take one example, a legitimate role to play in moral, political and aesthetic debate.
+@groarke2026 | § 4.2 | It charges an opponent with a conflict of interest, and this raises legitimate questions about the extent to which their arguments should be entertained.
+@groarke2026 | § 4.2 | This is a “slippery slope argument” that argues that something should not be done because it will precipitate a chain of causes that ultimately produce some undesirable end.
+@groarke2026 | § 4.2 | In contrast, traditional fallacies like ad hominem, two wrongs reasoning, guilt by association, and appeal to pity define patterns of reasoning which can play a legitimate logical role within real life reasoning (and are, in view of this, sometimes treated as argument “schemes” rather than fallacies).
+@groarke2026 | § 4.4 | Argument (or “argumentation”) schemes are recurring patterns of reasoning.
+@groarke2026 | § 4.4 | The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.
+@groarke2026 | § 4.4 | Taking this approach, the scheme Argument from Authority can be defined as follows.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/step-5-evaluate-the-evidence
+Q: How do provenance, denominators, selection, causal alternatives and scope constrain evidence?
+@groarke2026 | § 4.4 | Argument (or “argumentation”) schemes are recurring patterns of reasoning.
+@groarke2026 | § 4.4 | The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.
+@groarke2026 | § 4.4 | Taking this approach, the scheme Argument from Authority can be defined as follows.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+@fallacy-iep | Common Cause | This fallacy occurs during causal reasoning when a causal connection between two kinds of events is claimed when evidence is available indicating that both are the effect of a common cause.
+@fallacy-iep | Post Hoc | Suppose we notice that an event of kind A is followed in time by an event of kind B, and then hastily leap to the conclusion that A caused B.
+@fallacy-iep | Regression | This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.
+@fallacy-iep | Regression | There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.
+@fallacy-iep | Suppressed Evidence | Intentionally failing to use information suspected of being relevant and significant is committing the fallacy of suppressed evidence.
+@fallacy-iep | Suppressed Evidence | If the relevant information is not intentionally suppressed but rather inadvertently overlooked, the fallacy of suppressed evidence also is said to occur, although the fallacy’s name is misleading in this case.
+A @fallacy-iep: Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity.
+@hitchcock2024 | § 9 | Some theorists postulate skills, i.e., acquired abilities, as operative in critical thinking.
+@hitchcock2024 | § 9 | Amalgamating these lists would produce a confusing and chaotic cornucopia of more than 50 possible educational objectives, with only partial overlap among them.
+@hitchcock2024 | § 9 | The abilities described in the remaining paragraphs of this section emerge from reflection on the general abilities needed to do well the thinking activities identified in section 6 as components of the critical thinking process described in section 5.
+@hitchcock2024 | § 9 | It helps in exercising them to be able to recognize and take into account factors that make one’s observation less trustworthy, such as prior framing of the situation, inadequate time, deficient senses, poor observation conditions, and the like.
+@hitchcock2024 | § 9 | These abilities come into play as well when one thinks about whether and with what degree of confidence to accept an observation report, for example in the study of history or in a criminal investigation or in assessing news reports.
+@hitchcock2024 | § 9 | Children experience these emotions at an early age, without being trained to do so.
+@hitchcock2024 | § 9 | Domain knowledge is required for such creative activity, but a general ability to imagine alternatives is helpful and can be nurtured so as to become easier, quicker, more extensive, and deeper (Dewey 1910: 34–39; 1933: 40–47).
+@hitchcock2024 | § 9 | Rather, they are licensed by general, sometimes qualified substantive rules of inference (Toulmin 1958) that rest on domain knowledge—that a bus trip takes about the same time in each direction, that the terminal of a wireless telegraph would be located on the highest possible place, that sudden cooling is often followed by rain, that an allergic reaction to a sulfa drug generally shows up soon after one starts taking it.
+@hitchcock2024 | § 9 | Dewey (1933) locates logical forms in setting out the products of reflection rather than in the process of reflection.
+@hitchcock2024 | § 9 | Items testing inferential abilities constitute two of the five subtests of the Watson Glaser Critical Thinking Appraisal (Watson & Glaser 1980a, 1980b, 1994), two of the four sections in the Cornell Critical Thinking Test Level X (Ennis & Millman 1971; Ennis, Millman, & Tomko 1985, 2005), three of the seven sections in the Cornell Critical Thinking Test Level Z (Ennis & Millman 1971; Ennis, Millman, & Tomko 1985, 2005), 11 of the 34 items on Forms A and B of the California Critical Thinking Skills Test (Facione 1990b, 1992), and a high but variable proportion of the 25 selected-response questions in the Collegiate Learning Assessment
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/step-6-find-the-crux
+Q: What makes a proposition consequential, and how do multiple supports or differing criteria limit a shared crux?
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+@groarke2026 | § 3.2 | Standardizing arguments by listing their premises and conclusions is one way to delineate the content of an argument and prepare it for evaluation.
+@groarke2026 | § 3.2 | The diagram that follows depicts the relationships between the argument’s key components, using arrows to indicate the inferences it includes.
+@groarke2026 | § 3.2 | EXAMPLE 11 When arguments have non-verbal key components, visual and multimodal premises and conclusions can be recognized in a key component table by ostension, or by reproducing them in some way.
+@groarke2026 | § 3.2 | The utility of diagramming is already recognized in Whately 1826 and, in the early twentieth century, in Wigmore 1913.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+@hitchcock2024 | § 5 | Despite the diversity of our 11 examples, one can recognize a common pattern.
+@hitchcock2024 | § 5 | The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.
+@hitchcock2024 | § 5 | People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.
+@hitchcock2024 | § 5 | Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.
+@hitchcock2024 | § 5 | These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging
+@hitchcock2024 | § 5 | Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).
+@hitchcock2024 | § 8.2 | Some of the initiating dispositions, such as open-mindedness and willingness to suspend judgment, are also internal critical thinking dispositions, in the sense of mental habits or attitudes that contribute causally to doing a good job of critical thinking once one starts the process.
+@hitchcock2024 | § 8.2 | For a list of identified internal critical thinking dispositions, see the Supplement on Internal Critical Thinking Dispositions.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/step-7-weigh-and-conclude
+Q: How do scope, suspension, confidence, scoring and action differ in a revisable conclusion?
+@hitchcock2024 | § 5 | Despite the diversity of our 11 examples, one can recognize a common pattern.
+@hitchcock2024 | § 5 | The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.
+@hitchcock2024 | § 5 | People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.
+@hitchcock2024 | § 5 | Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.
+@hitchcock2024 | § 5 | These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging
+@hitchcock2024 | § 5 | Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).
+@hitchcock2024 | § 6 | If one considers the critical thinking process illustrated by the 11 examples, one can identify distinct kinds of mental acts and mental states that form part of it.
+@hitchcock2024 | § 6 | Let us begin, then, by distinguishing the kinds of mental acts and mental events that can occur in a critical thinking process.
+@hitchcock2024 | § 6 | Imagining: One thinks of possible answers (bus or subway or elevated in Transit, flagpole or ornament or wireless communication aid or direction indicator in Ferryboat, allergic reaction or heat rash in Rash).
+@hitchcock2024 | § 6 | Experimenting: One designs and carries out an experiment or a systematic observation to find out whether the results deduced from a possible answer will occur (looking at the location of the flagpole in relation to the pilot’s position in Ferryboat, putting an ice cube on top of a tumbler taken from hot water in Bubbles, measuring the height to which a suction pump will draw water at different elevations in Suction pump, noticing the spacing of diamonds when movement to or from a diamond lane is allowed in Diamond).
+@hitchcock2024 | § 6 | However, Candidate includes the activities of extracting information from sources and evaluating its credibility.
+@hitchcock2024 | § 8.1 | Using the strategy of considering factors that would block people with the ability to think critically from doing so, we can identify as initiating dispositions for thinking critically attentiveness, a habit of inquiry, self-confidence, courage, open-mindedness, willingness to suspend judgment, trust in reason, wanting evidence for one’s beliefs, and seeking the truth.
+@hitchcock2024 | § 8.1 | Habit of inquiry: Inquiry is effortful, and one needs an internal push to engage in it.
+@hitchcock2024 | § 8.1 | Self-confidence: Lack of confidence in one’s abilities can block critical thinking.
+@hitchcock2024 | § 8.1 | Thus willingness to think critically requires open-mindedness, in the sense of a willingness to examine questions to which one already accepts an answer but which further evidence or reasoning might cause one to answer differently (Dewey 1933; Facione 1990a; Ennis 1991; Bailin et al. 1999b; Halpern 1998, Facione, Facione, & Giancarlo 2001).
+@hitchcock2024 | § 8.1 | Willingness to suspend judgment: Premature closure on an initial solution will block critical thinking.
+@hitchcock2024 | § 8.1 | From her point of view, critical thinking requires trust not only in reason but also in intuition, imagination, and emotion.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+@mellers-etal2014 | PDF pp. 4–5 | Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.
+A @mellers-etal2014: Original open tournament study supplies a specified forecasting design and scoring convention; informal habits and general transfer are not certified by it.
+
+== 16-critical-thinking-toolkit/the-baloney-detection-kit
+Q: What do the openly excerpted Sagan tools contribute, and how do expertise and support structure qualify their use?
+@popova2014-sagan | By Maria Popova | Through their training, scientists are equipped with what Sagan calls a “baloney detection kit” — a set of cognitive tools and techniques that fortify the mind against penetration by falsehoods: The kit is brought out as a matter of course whenever new ideas are offered for consideration.
+@popova2014-sagan | By Maria Popova | By adopting the kit, we can all shield ourselves against clueless guile and deliberate manipulation.
+@popova2014-sagan | By Maria Popova | Try not to get overly attached to a hypothesis just because it’s yours.
+@popova2014-sagan | By Maria Popova | This convenient rule-of-thumb urges us when faced with two hypotheses that explain the data equally well to choose the simpler.
+A @popova2014-sagan: Openly readable secondary path to selected Sagan passages; the full Demon-Haunted World was not independently read.
+@groarke2026 | § 3.2 | Standardizing arguments by listing their premises and conclusions is one way to delineate the content of an argument and prepare it for evaluation.
+@groarke2026 | § 3.2 | The diagram that follows depicts the relationships between the argument’s key components, using arrows to indicate the inferences it includes.
+@groarke2026 | § 3.2 | EXAMPLE 11 When arguments have non-verbal key components, visual and multimodal premises and conclusions can be recognized in a key component table by ostension, or by reproducing them in some way.
+@groarke2026 | § 3.2 | The utility of diagramming is already recognized in Whately 1826 and, in the early twentieth century, in Wigmore 1913.
+@groarke2026 | § 4.4 | Argument (or “argumentation”) schemes are recurring patterns of reasoning.
+@groarke2026 | § 4.4 | The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.
+@groarke2026 | § 4.4 | Taking this approach, the scheme Argument from Authority can be defined as follows.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+
+== 16-critical-thinking-toolkit/the-core-loop
+Q: How do inspectable outputs, revision, stopping and domain knowledge limit a seven-stage inquiry?
+@hitchcock2024 | § 12.1 | McPeck (1981) attacked the thinking skills movement of the 1970s, including the critical thinking movement.
+@hitchcock2024 | § 12.1 | Nevertheless, his position that the dispositions and abilities of a critical thinker are best developed in the context of subject-matter instruction is shared by many theorists of critical thinking, including Dewey (1910, 1933), Glaser (1941), Passmore (1980), Weinstein (1990), Bailin et al.
+@hitchcock2024 | § 12.1 | In particular, he took the disposition to suspend judgment in situations of cognitive dissonance to be a general disposition.) Conceptual subject-specificity is subject to obvious counter-examples, such as the general ability to recognize confusion of necessary and sufficient conditions.
+@hitchcock2024 | § 12.1 | For example, the principles of hypothetico-deductive reasoning hold for all the varied fields in which such reasoning occurs.
+@hitchcock2024 | § 12.1 | Proponents of empirical subject-specificity tend to argue that transfer is more likely to occur if there is critical thinking instruction in a variety of domains, with explicit attention to dispositions and abilities that cut across domains.
+@hitchcock2024 | § 5 | Despite the diversity of our 11 examples, one can recognize a common pattern.
+@hitchcock2024 | § 5 | The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.
+@hitchcock2024 | § 5 | People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.
+@hitchcock2024 | § 5 | Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.
+@hitchcock2024 | § 5 | These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging
+@hitchcock2024 | § 5 | Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).
+@hitchcock2024 | § 6 | If one considers the critical thinking process illustrated by the 11 examples, one can identify distinct kinds of mental acts and mental states that form part of it.
+@hitchcock2024 | § 6 | Let us begin, then, by distinguishing the kinds of mental acts and mental events that can occur in a critical thinking process.
+@hitchcock2024 | § 6 | Imagining: One thinks of possible answers (bus or subway or elevated in Transit, flagpole or ornament or wireless communication aid or direction indicator in Ferryboat, allergic reaction or heat rash in Rash).
+@hitchcock2024 | § 6 | Experimenting: One designs and carries out an experiment or a systematic observation to find out whether the results deduced from a possible answer will occur (looking at the location of the flagpole in relation to the pilot’s position in Ferryboat, putting an ice cube on top of a tumbler taken from hot water in Bubbles, measuring the height to which a suction pump will draw water at different elevations in Suction pump, noticing the spacing of diamonds when movement to or from a diamond lane is allowed in Diamond).
+@hitchcock2024 | § 6 | However, Candidate includes the activities of extracting information from sources and evaluating its credibility.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/the-ethics-of-discussion
+Q: How do freedom, accurate concession, dialogue purpose, correction and reasonable endpoints support fair inquiry?
+@hansen2024b | § 3.6 | Some of the most active new researchers on fallacies take a dialectical and/or dialogical approach.
+@hansen2024b | § 3.6 | Barth and Martens’s paper (1977), which studied the argumentum ad hominem by extending Lorenzen’s dialogue tableaux method to include the definitions of the concepts “line of attack” and “winning strategy,” leads to a conception of fallacies as either failures to meet one of the necessary conditions of rational dialogical argumentation, or failures to satisfy sufficient conditions as specified by production rules of the dialogical method (1977, 96).
+@hansen2024b | § 3.6 | The Barth and Martens paper is a bridge between the earlier (quasi-) formal and subsequent informal dialectical theories, and is explicitly acknowledged as a major influence by the Pragma-dialectical theory, the brainchild of Frans van Eemeren and Rob Grootendorst (1984).
+@hansen2024b | § 3.6 | The Pragma-dialecticians propose that inter-personal argumentation can be analysed as two-party-discussions having four analytical stages: a confrontation stage in which the participants become aware of the content of their disagreement; an opening stage in which the parties agree (most likely implicitly) to shared starting points and a set of rules to govern the ensuing discussion; an argumentation stage wherein arguments and doubts about arguments are expressed and recognized; and a final stage in which a decision about the initial disagreement is made, if possible, based on what happened in the argumentation stage.
+@hansen2024b | § 3.6 | A set of ten rules has been proposed as constitutive of the critical-discussion ideal, and the proponents of the theory believe that rational arguers would accept them.
+@hansen2024b | § 3.6 | The rules range over all the four stages of argumentation: at the confrontation stage there is a rule which says one may not prevent the other party from expressing their view; for the argumentation stage there is a rule which requires argumentation to be logically strong and in accord with one or another of three general argumentation schemes; at the closing stage there is a rule that the participants themselves are to decide which party was successful based on the quality of the argumentation they have made: if the proponent carries the day, the opponent should acknowledge it, and vice versa.
+@hansen2024b | § 3.6 | For example, the ad baculum fallacy is a form of intimidation that violates the rule that one may not attempt to prevent one’s discussion partner from expressing their views; equivocation is a violation of the rule that formulations in arguments must be clear and unambiguous; post hoc ergo propter hoc violates the rule that arguments must be instances of schemes correctly applied.
+@hansen2024b | § 3.6 | Clearly not all the rules of critical discussions apply directly to arguments.
+@hansen2024b | § 3.6 | The Pragma-dialectical analysis of fallacies as rule-breakings in a procedure for overcoming disagreements has recently been expanded to take account of the rhetorical dimension of argumentation.
+@hansen2024b | § 3.6 | The ways of strategic maneuvering identified are basically three: topic selection, audience orientation, and the selection of presentational devices, and these can be effectively deployed at each stage of argumentation (Van Eemeren 2010, 94).
+@hansen2024b | § 3.6 | Nevertheless, Pragma-dialectics prefers to keep the appearance condition outside the definition of ‘fallacy’, treating the seeming goodness of fallacies as a sometime co-incidental property, rather than an essential one.
+@hansen2024b | § 3.6 | This approach has been challenged by Douglas Walton who has written more about fallacies and fallacy theory than anyone else.
+A @hansen2024b: Secondary account of dialogue models, rules and reasonable persuasion; theory is distinguished from a measured universal effect.
+@hitchcock2024 | § 8.2 | Some of the initiating dispositions, such as open-mindedness and willingness to suspend judgment, are also internal critical thinking dispositions, in the sense of mental habits or attitudes that contribute causally to doing a good job of critical thinking once one starts the process.
+@hitchcock2024 | § 8.2 | For a list of identified internal critical thinking dispositions, see the Supplement on Internal Critical Thinking Dispositions.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+
+== 16-critical-thinking-toolkit/worked-case-studies
+Q: What do constructed causal, practical and forecasting cases establish and leave open?
+@fallacy-iep | Common Cause | This fallacy occurs during causal reasoning when a causal connection between two kinds of events is claimed when evidence is available indicating that both are the effect of a common cause.
+@fallacy-iep | Post Hoc | Suppose we notice that an event of kind A is followed in time by an event of kind B, and then hastily leap to the conclusion that A caused B.
+A @fallacy-iep: Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity.
+@groarke2026 | § 3.1 | One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.
+@groarke2026 | § 3.1 | Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.
+@groarke2026 | § 3.1 | Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.
+@groarke2026 | § 3.1 | Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.
+@groarke2026 | § 3.1 | As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.
+@groarke2026 | § 3.1 | EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.
+@groarke2026 | § 3.1 | So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).
+@groarke2026 | § 3.1 | One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.
+A @groarke2026: Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony.
+@mellers-etal2014 | PDF pp. 4–5 | Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.
+A @mellers-etal2014: Original open tournament study supplies a specified forecasting design and scoring convention; informal habits and general transfer are not certified by it.
+@hitchcock2024 | § 12.1 | McPeck (1981) attacked the thinking skills movement of the 1970s, including the critical thinking movement.
+@hitchcock2024 | § 12.1 | Nevertheless, his position that the dispositions and abilities of a critical thinker are best developed in the context of subject-matter instruction is shared by many theorists of critical thinking, including Dewey (1910, 1933), Glaser (1941), Passmore (1980), Weinstein (1990), Bailin et al.
+@hitchcock2024 | § 12.1 | In particular, he took the disposition to suspend judgment in situations of cognitive dissonance to be a general disposition.) Conceptual subject-specificity is subject to obvious counter-examples, such as the general ability to recognize confusion of necessary and sufficient conditions.
+@hitchcock2024 | § 12.1 | For example, the principles of hypothetico-deductive reasoning hold for all the varied fields in which such reasoning occurs.
+@hitchcock2024 | § 12.1 | Proponents of empirical subject-specificity tend to argue that transfer is more likely to occur if there is critical thinking instruction in a variety of domains, with explicit attention to dispositions and abilities that cut across domains.
+A @hitchcock2024: Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits.
+

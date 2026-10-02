@@ -3650,6 +3650,17 @@
     "access": "public-domain",
     "verified": "Project Gutenberg eBook #1726, full text and title page read; cited by the standard Stephanus pages, which this edition does not print, 2026-10-01"
   },
+  "popova2014-sagan": {
+    "type": "web",
+    "authors": [
+      "Popova, Maria"
+    ],
+    "year": 2014,
+    "title": "The Baloney Detection Kit: Carl Sagan’s Rules for Bullshit-Busting and Critical Thinking",
+    "url": "https://www.themarginalian.org/2014/01/03/baloney-detection-kit-carl-sagan/",
+    "access": "free",
+    "verified": "Title and byline checked in the freely readable article, 2026-10-02; date 2014-01-03 identified by the article permalink. Sagan read through the excerpts presented here; the full book was not independently read."
+  },
   "pritchard-etal2025": {
     "type": "entry",
     "authors": [
@@ -3668,6 +3679,14 @@
     "url": "https://plato.stanford.edu/archives/fall2025/entries/knowledge-value/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2025 Edition; full text read, 2026-10-01"
+  },
+  "purdue-stasis": {
+    "type": "web",
+    "org": "Purdue Online Writing Lab",
+    "title": "Stasis Theory",
+    "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/stasis_theory/index.html",
+    "access": "free",
+    "verified": "Title, institutional attribution and four-category account checked against the freely readable Purdue OWL page, 2026-10-02; no publication date asserted. A modern teaching adaptation, not an edition of ancient rhetoric."
   },
   "pust2024": {
     "type": "entry",

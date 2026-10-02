@@ -1,6 +1,6 @@
 {
  "name": "search/epistemology",
- "note": "The texts the Deeper study pages were researched from: 284 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
+ "note": "The texts the Deeper study pages were researched from: 286 documents, all open access, free to read or in the public domain. The corpus itself is not redistributed here. Where a document is held only in part, 'held' says so; a page cites such a work only for what that part shows.",
  "documents": [
   {
    "title": "Epistemology",
@@ -2790,6 +2790,24 @@
    "retrieved": "2026-10-02",
    "format": "txt",
    "held": "open abstract and metadata only"
+  },
+  {
+   "title": "Stasis Theory: Purdue OWL",
+   "authors": "",
+   "year": "",
+   "source": "owl.purdue.edu",
+   "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/stasis_theory/index.html",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
+  },
+  {
+   "title": "The Baloney Detection Kit: Carl Sagan’s Rules for Bullshit-Busting and Critical Thinking",
+   "authors": "",
+   "year": "",
+   "source": "www.themarginalian.org",
+   "url": "https://www.themarginalian.org/2014/01/03/baloney-detection-kit-carl-sagan/",
+   "license": "free-to-read",
+   "retrieved": "2026-10-02"
   }
  ]
 }

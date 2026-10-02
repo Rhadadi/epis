@@ -1,0 +1,99 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "the-baloney-detection-kit",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What do the openly excerpted Sagan tools contribute, and how do expertise and support structure qualify their use?"
+  ],
+  "sources": [
+    {
+      "key": "popova2014-sagan",
+      "used_for": [
+        "Give an attractive explanation rivals",
+        "Expertise supports inquiry",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "By Maria Popova",
+          "basis": "full text",
+          "excerpt": "Through their training, scientists are equipped with what Sagan calls a “baloney detection kit” — a set of cognitive tools and techniques that fortify the mind against penetration by falsehoods: The kit is brought out as a matter of course whenever new ideas are offered for consideration.",
+          "corpus_chunk": 53238
+        },
+        {
+          "locator": "By Maria Popova",
+          "basis": "full text",
+          "excerpt": "By adopting the kit, we can all shield ourselves against clueless guile and deliberate manipulation.",
+          "corpus_chunk": 53238
+        },
+        {
+          "locator": "By Maria Popova",
+          "basis": "full text",
+          "excerpt": "Try not to get overly attached to a hypothesis just because it’s yours.",
+          "corpus_chunk": 53240
+        },
+        {
+          "locator": "By Maria Popova",
+          "basis": "full text",
+          "excerpt": "This convenient rule-of-thumb urges us when faced with two hypotheses that explain the data equally well to choose the simpler.",
+          "corpus_chunk": 53240
+        }
+      ],
+      "annotation": "Openly readable secondary path to selected Sagan passages; the full Demon-Haunted World was not independently read."
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Expertise supports inquiry",
+        "Check each necessary link",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "Standardizing arguments by listing their premises and conclusions is one way to delineate the content of an argument and prepare it for evaluation.",
+          "corpus_chunk": 39011
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The diagram that follows depicts the relationships between the argument’s key components, using arrows to indicate the inferences it includes.",
+          "corpus_chunk": 39012
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 11 When arguments have non-verbal key components, visual and multimodal premises and conclusions can be recognized in a key component table by ostension, or by reproducing them in some way.",
+          "corpus_chunk": 39013
+        },
+        {
+          "locator": "§ 3.2",
+          "basis": "full text",
+          "excerpt": "The utility of diagramming is already recognized in Whately 1826 and, in the early twentieth century, in Wigmore 1913.",
+          "corpus_chunk": 39013
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Argument (or “argumentation”) schemes are recurring patterns of reasoning.",
+          "corpus_chunk": 39043
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "The most common approach to argument schemes combines a pattern of argument with a set of “critical questions” with which it is associated.",
+          "corpus_chunk": 39043
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Taking this approach, the scheme Argument from Authority can be defined as follows.",
+          "corpus_chunk": 39045
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    }
+  ]
+}

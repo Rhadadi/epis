@@ -1,0 +1,173 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "burden-of-proof",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do responsibility, standard, procedural outcome, presumption and factual truth differ?"
+  ],
+  "sources": [
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Separate three questions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Appeal to Ignorance",
+          "basis": "full text",
+          "excerpt": "The Fallacy of Appeal to Ignorance comes in two forms: (1) Not knowing that a certain statement is true is taken to be a proof that it is false.",
+          "corpus_chunk": 48661
+        },
+        {
+          "locator": "Misplaced Burden of Proof",
+          "basis": "full text",
+          "excerpt": "Committing the error of trying to get someone else to prove you are wrong, when it is your responsibility to prove you are correct.",
+          "corpus_chunk": 48750
+        }
+      ],
+      "annotation": "Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity."
+    },
+    {
+      "key": "hansen2024b",
+      "used_for": [
+        "Rules serve particular purposes",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Some of the most active new researchers on fallacies take a dialectical and/or dialogical approach.",
+          "corpus_chunk": 48933
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Barth and Martens’s paper (1977), which studied the argumentum ad hominem by extending Lorenzen’s dialogue tableaux method to include the definitions of the concepts “line of attack” and “winning strategy,” leads to a conception of fallacies as either failures to meet one of the necessary conditions of rational dialogical argumentation, or failures to satisfy sufficient conditions as specified by production rules of the dialogical method (1977, 96).",
+          "corpus_chunk": 48934
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "The Barth and Martens paper is a bridge between the earlier (quasi-) formal and subsequent informal dialectical theories, and is explicitly acknowledged as a major influence by the Pragma-dialectical theory, the brainchild of Frans van Eemeren and Rob Grootendorst (1984).",
+          "corpus_chunk": 48935
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "The Pragma-dialecticians propose that inter-personal argumentation can be analysed as two-party-discussions having four analytical stages: a confrontation stage in which the participants become aware of the content of their disagreement; an opening stage in which the parties agree (most likely implicitly) to shared starting points and a set of rules to govern the ensuing discussion; an argumentation stage wherein arguments and doubts about arguments are expressed and recognized; and a final stage in which a decision about the initial disagreement is made, if possible, based on what happened in the argumentation stage.",
+          "corpus_chunk": 48936
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "A set of ten rules has been proposed as constitutive of the critical-discussion ideal, and the proponents of the theory believe that rational arguers would accept them.",
+          "corpus_chunk": 48937
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "The rules range over all the four stages of argumentation: at the confrontation stage there is a rule which says one may not prevent the other party from expressing their view; for the argumentation stage there is a rule which requires argumentation to be logically strong and in accord with one or another of three general argumentation schemes; at the closing stage there is a rule that the participants themselves are to decide which party was successful based on the quality of the argumentation they have made: if the proponent carries the day, the opponent should acknowledge it, and vice versa.",
+          "corpus_chunk": 48938
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "For example, the ad baculum fallacy is a form of intimidation that violates the rule that one may not attempt to prevent one’s discussion partner from expressing their views; equivocation is a violation of the rule that formulations in arguments must be clear and unambiguous; post hoc ergo propter hoc violates the rule that arguments must be instances of schemes correctly applied.",
+          "corpus_chunk": 48939
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Clearly not all the rules of critical discussions apply directly to arguments.",
+          "corpus_chunk": 48939
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "The Pragma-dialectical analysis of fallacies as rule-breakings in a procedure for overcoming disagreements has recently been expanded to take account of the rhetorical dimension of argumentation.",
+          "corpus_chunk": 48941
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "The ways of strategic maneuvering identified are basically three: topic selection, audience orientation, and the selection of presentational devices, and these can be effectively deployed at each stage of argumentation (Van Eemeren 2010, 94).",
+          "corpus_chunk": 48942
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Nevertheless, Pragma-dialectics prefers to keep the appearance condition outside the definition of ‘fallacy’, treating the seeming goodness of fallacies as a sometime co-incidental property, rather than an essential one.",
+          "corpus_chunk": 48943
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "This approach has been challenged by Douglas Walton who has written more about fallacies and fallacy theory than anyone else.",
+          "corpus_chunk": 48944
+        }
+      ],
+      "annotation": "Secondary account of dialogue models, rules and reasonable persuasion; theory is distinguished from a measured universal effect."
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Evidence can alter what needs answering",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In classical logic, an argument is (deductively) valid if it is impossible for its premises to be true and its conclusion false.",
+          "corpus_chunk": 39022
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Premise Acceptability Within informal arguments, premises may be acceptable in different ways.",
+          "corpus_chunk": 39023
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In cases in which truth is a criterion for acceptability, there may be other criteria that must be satisfied as well.",
+          "corpus_chunk": 39023
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Deeper philosophical issues are tied to questions about the nature of truth.",
+          "corpus_chunk": 39025
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "America, virtually recreates an incidence of domestic abuse in support of the claim that the issues raised by such abuse must be addressed.",
+          "corpus_chunk": 39025
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In defense of a yes answer in both cases, it can be said that the account of what happened is scrupulously founded on court records and 911 calls recorded at the time, and presented in a balanced way that provokes the feelings of empathy it elicits.",
+          "corpus_chunk": 39027
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Many informal logics emphasize a distinction between deductive and inductive validity.",
+          "corpus_chunk": 39028
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In a particular case, different elements of evidence may suggest but not prove that someone charged with murder is guilty but make the conclusion likely if enough evidence of this sort is accumulated (a witness claims he pulled the trigger, the ballistics report shows that the bullet came from a gun he owned, he wrote an e-mail saying he would “get” the victim, etc.).",
+          "corpus_chunk": 39029
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    }
+  ]
+}

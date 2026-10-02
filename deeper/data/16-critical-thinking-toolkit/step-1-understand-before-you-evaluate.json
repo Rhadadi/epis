@@ -1,0 +1,117 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "step-1-understand-before-you-evaluate",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do fidelity, scope, charity, implicit assumptions and a sentence’s function constrain interpretation?"
+  ],
+  "sources": [
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Keep the qualifications",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Straw Man",
+          "basis": "full text",
+          "excerpt": "Your reasoning contains the Straw Man Fallacy whenever you attribute an easily refuted position to your opponent, one that the opponent would not endorse, and then proceed to attack the easily refuted position (the straw man) believing you have thereby undermined the real man, the opponent’s actual position.",
+          "corpus_chunk": 48800
+        },
+        {
+          "locator": "Straw Man",
+          "basis": "full text",
+          "excerpt": "That’s not what I said.” The Speaker has twisted what his Opponent said.",
+          "corpus_chunk": 48800
+        }
+      ],
+      "annotation": "Secondary account of particular errors and contextual alternatives; failed support is distinguished from falsity."
+    },
+    {
+      "key": "groarke2026",
+      "used_for": [
+        "Keep the qualifications",
+        "Interpret without silently improving",
+        "Find the function of a sentence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The ultimate aim of informal logic is normative: i.e. logics that provide us with tools that can be used to evaluate real life arguments and the key elements they contain.",
+          "corpus_chunk": 38999
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This can be a complex process that must untangle issues that obscure the structure and content of a real-life argument.",
+          "corpus_chunk": 38999
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 6: The weather report indicates heavy rain this afternoon, so you should take an umbrella to work.",
+          "corpus_chunk": 39001
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Verbal inference indicators are a helpful, but not necessary or sufficient, sign of argument.",
+          "corpus_chunk": 39001
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One issue that frequently arises in standardization is an argument’s dependence on premises and conclusions which are not explicitly stated.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Conclusion: A prison sentence, but not the minor penalties normally associated with misdemeanor convictions, is appropriate.",
+          "corpus_chunk": 39003
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Arguments with implicit premises or conclusions are recognized in traditional discussions of enthymemes: syllogisms with unstated premises.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Implicit Premise: All people who deserve to be treated as prisoners of war are people who are lawful combatants.",
+          "corpus_chunk": 39005
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "As in the case of verbal arguments, implicit premises and conclusions play a role in visual and multimodal arguments.",
+          "corpus_chunk": 39006
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "EXAMPLE 9: (Visual) Premise: The image [which conveys the message that adding vodka can transform your sleepy night life, as it transforms the quiet village in the image into an exciting urban landscape] Implicit Premise: An exciting urban nightlife is preferable to a quiet night in a village.",
+          "corpus_chunk": 39008
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "So understood, we can critique the argument in poster, for this analysis reveals it as an argument with a dubious visual premise (that vodka can transform your sleepy life into one of urban excitement); a questionable implicit premise (for one might in many ways argue that life in a quiet village is a better life than one in the middle of a bustling metropolis), and an inference which is an instance of the fallacy “Affirming the Consequent”(for there are better ways to secure an exciting nightlife, if that is what one is after).",
+          "corpus_chunk": 39009
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "One principle often used in choosing between alternative interpretations of an implicit argument component is the “Principle of Charity.” It favors an interpretation of an argument which makes the argument as credible as possible.",
+          "corpus_chunk": 39010
+        }
+      ],
+      "annotation": "Secondary account of reconstruction, implicit premises, support structure, positive standards, fallacy-theory limits, and critical questions for expert testimony."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "chapter": "16-critical-thinking-toolkit",
+  "section": "step-7-weigh-and-conclude",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do scope, suspension, confidence, scoring and action differ in a revisable conclusion?"
+  ],
+  "sources": [
+    {
+      "key": "hitchcock2024",
+      "used_for": [
+        "State the supported scope",
+        "Confidence is not a decision rule by itself",
+        "Record the route back",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Despite the diversity of our 11 examples, one can recognize a common pattern.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "The term ‘phases’ replaced the term ‘steps’ (Dewey 1910: 72), thus removing the earlier suggestion of an invariant sequence.",
+          "corpus_chunk": 640
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "People with a hypothesis in mind, even one to which they have a very weak commitment, have a so-called “confirmation bias” (Nickerson 1998): they are likely to pay attention to evidence that confirms the hypothesis and to ignore evidence that counts against it or for some competing hypothesis.",
+          "corpus_chunk": 642
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Further, given the great variety of kinds of problems for which reflection is appropriate, there is likely to be variation in its component events.",
+          "corpus_chunk": 643
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "These component events might include (1) noticing a difficulty, (2) defining the problem, (3) dividing the problem into manageable sub-problems, (4) formulating a variety of possible solutions to the problem or sub-problem, (5) determining what evidence is relevant to deciding among possible solutions to the problem or sub-problem, (6) devising a plan of systematic observation or experiment that will uncover the relevant evidence, (7) carrying out the plan of systematic observation or experimentation, (8) noting the results of the systematic observation or experiment, (9) gathering relevant testimony and information from others, (10) judging",
+          "corpus_chunk": 644
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "Checklist conceptions of the process of critical thinking are open to the objection that they are too mechanical and procedural to fit the multi-dimensional and emotionally charged issues for which critical thinking is urgently needed (Paul 1984).",
+          "corpus_chunk": 645
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "If one considers the critical thinking process illustrated by the 11 examples, one can identify distinct kinds of mental acts and mental states that form part of it.",
+          "corpus_chunk": 646
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Let us begin, then, by distinguishing the kinds of mental acts and mental events that can occur in a critical thinking process.",
+          "corpus_chunk": 646
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Imagining: One thinks of possible answers (bus or subway or elevated in Transit, flagpole or ornament or wireless communication aid or direction indicator in Ferryboat, allergic reaction or heat rash in Rash).",
+          "corpus_chunk": 648
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "Experimenting: One designs and carries out an experiment or a systematic observation to find out whether the results deduced from a possible answer will occur (looking at the location of the flagpole in relation to the pilot’s position in Ferryboat, putting an ice cube on top of a tumbler taken from hot water in Bubbles, measuring the height to which a suction pump will draw water at different elevations in Suction pump, noticing the spacing of diamonds when movement to or from a diamond lane is allowed in Diamond).",
+          "corpus_chunk": 649
+        },
+        {
+          "locator": "§ 6",
+          "basis": "full text",
+          "excerpt": "However, Candidate includes the activities of extracting information from sources and evaluating its credibility.",
+          "corpus_chunk": 650
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Using the strategy of considering factors that would block people with the ability to think critically from doing so, we can identify as initiating dispositions for thinking critically attentiveness, a habit of inquiry, self-confidence, courage, open-mindedness, willingness to suspend judgment, trust in reason, wanting evidence for one’s beliefs, and seeking the truth.",
+          "corpus_chunk": 658
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Habit of inquiry: Inquiry is effortful, and one needs an internal push to engage in it.",
+          "corpus_chunk": 658
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Self-confidence: Lack of confidence in one’s abilities can block critical thinking.",
+          "corpus_chunk": 659
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Thus willingness to think critically requires open-mindedness, in the sense of a willingness to examine questions to which one already accepts an answer but which further evidence or reasoning might cause one to answer differently (Dewey 1933; Facione 1990a; Ennis 1991; Bailin et al. 1999b; Halpern 1998, Facione, Facione, & Giancarlo 2001).",
+          "corpus_chunk": 661
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "Willingness to suspend judgment: Premature closure on an initial solution will block critical thinking.",
+          "corpus_chunk": 662
+        },
+        {
+          "locator": "§ 8.1",
+          "basis": "full text",
+          "excerpt": "From her point of view, critical thinking requires trust not only in reason but also in intuition, imagination, and emotion.",
+          "corpus_chunk": 662
+        }
+      ],
+      "annotation": "Secondary account of flexible inquiry, judgment and decision, dispositions, observational abilities, domain knowledge and transfer limits."
+    },
+    {
+      "key": "mellers-etal2014",
+      "used_for": [
+        "Make a probability assessable",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF pp. 4–5",
+          "basis": "full text",
+          "excerpt": "Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.",
+          "corpus_chunk": 52422
+        }
+      ],
+      "annotation": "Original open tournament study supplies a specified forecasting design and scoring convention; informal habits and general transfer are not certified by it."
+    }
+  ]
+}
