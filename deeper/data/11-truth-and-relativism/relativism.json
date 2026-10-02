@@ -1,0 +1,484 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "relativism",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What distinguishes scope, framework dependence, changed content, and changed assessment, and which objections target each thesis?"
+  ],
+  "sources": [
+    {
+      "key": "baghramian-carter2025",
+      "used_for": [
+        "First identify the disagreement",
+        "Four claims that need different arguments",
+        "Scope comes before the verdict",
+        "A family of theses",
+        "The hidden-parameter proposal",
+        "Global and local scope",
+        "Strong and weak relativity",
+        "Diversity and disagreement",
+        "A primary text: Plato turns Protagoras's claim around",
+        "Logical and dialectical objections differ",
+        "No neutral ground",
+        "Boghossian and his critics",
+        "Context of use and context of assessment",
+        "Assertion and communication remain constraints",
+        "Tolerance and relativism",
+        "What the quick refutations leave out",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "A standard way of defining and distinguishing between different types of relativism is to begin with the claim that a phenomenon x (e.g., values, epistemic, aesthetic and ethical norms, experiences, judgments, and even the world) is somehow dependent on and co-varies with some underlying, independent variable y (e.g., paradigms, cultures, conceptual schemes, belief systems, language).",
+          "corpus_chunk": 46669
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "However, of the three examples cited above, normally only (a) and (b) are deemed relevant to philosophical discussions of relativism, for one main attraction of relativism is that it offers a way of settling (or explaining away) what appear to be profound disagreements on questions of value, knowledge and ontology and the relativizing parameter often involves people, their beliefs, cultures or languages.",
+          "corpus_chunk": 46670
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Such classifications have been proposed by Haack (1996), O’Grady (2002), Baghramian (2004), Swoyer (2010), and Baghramian & Coliva (2019).",
+          "corpus_chunk": 46671
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "s different relativistic positions according to what is being relativized, or its objects, and what is being relativized to, or its domains. (I) Individual’s viewpoints and preferences (II) Historical Epochs (III) Cultures, society, social groupings (IV) Conceptual schemes, languages, frameworks (V) Context of assessment, e.g., taste parameter, assessor’s/agent’s set of beliefs (A) Cognitive norms, e.g., rationality, logic Alethic Subjectivism/ Epistemic Subjectivism Alethic and Epistemic Historicism Alethic Cultural Relativism/ Epistemic Cultural Relativism Alethic Relativism/Epistemic Relativism Alethic Relativism (B) Moral values Moral",
+          "corpus_chunk": 46672
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "In practice, however, much contemporary discussions of relativism focus on subjectivism, historicism, cultural relativism and conceptual relativism, along the axis of y, and cognitive/epistemic relativism, ethical or moral relativism and aesthetic relativism, along the axis of x.",
+          "corpus_chunk": 46673
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "A second approach to defining relativism casts its net more widely by focusing primarily on what relativists deny.",
+          "corpus_chunk": 46674
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Monism or the view that, in any given area or topic subject to disagreement, there can be no more than one correct opinion, judgment, or norm.",
+          "corpus_chunk": 46675
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "What justifies the appellation ‘relativist’, rather than ‘skeptic’, is not only these philosophers’ suspicion of the possibility of objectivity but their insistence on the role of socio-historical, psychological and textual contexts in accounts of ‘truth’ and ‘knowledge’ claims.",
+          "corpus_chunk": 46676
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "What also binds various forms of relativism is an underlying idea that claims to truth, knowledge or justification have an implicit, maybe even unnoticed, relationship to a parameter or domain.",
+          "corpus_chunk": 46677
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "The resulting sentence(s) turns out to be true, according to the relativist, depending on how we fill in the “…”.",
+          "corpus_chunk": 46678
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Thus on the hidden parameter account, a consequence is that the relevant claims will be true, if at all, only relative to some parameter.",
+          "corpus_chunk": 46678
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Relativism, according to this approach, is the claim that a statement of the form “A is P” within a given domain (e.g., science, ethics, metaphysics, etc.) is elliptical for the statement “A is P in relation to C”, where A stands for an assertion, belief, judgment or action, P stands for a predicate such as “true”, “beautiful”, “right”, “rational”, “logical”, “known” etc., and C stands for a specific culture, epistemic framework, language, belief-system, etc.",
+          "corpus_chunk": 46680
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Moreover, as we shall see, since various subdivisions of relativism appearing in table 1 could, with appropriate modification, be expressed as claims about the truth of sentences falling in a particular domain, then the hidden predicate approach is applicable to them as well.",
+          "corpus_chunk": 46681
+        },
+        {
+          "locator": "§ 1.4.1",
+          "basis": "full text",
+          "excerpt": "A further consideration relevant to defining relativism is its scope.",
+          "corpus_chunk": 46682
+        },
+        {
+          "locator": "§ 1.4.1",
+          "basis": "full text",
+          "excerpt": "As we will see, global relativism is open to the charge of inconsistency and self-refutation, for if all is relative, then so is relativism.",
+          "corpus_chunk": 46683
+        },
+        {
+          "locator": "§ 1.4.2",
+          "basis": "full text",
+          "excerpt": "A further distinction is made between weak and strong forms of relativism.",
+          "corpus_chunk": 46684
+        },
+        {
+          "locator": "§ 1.4.2",
+          "basis": "full text",
+          "excerpt": "Such truths need not be true in a relativized sense—true relative to some parameters, false relative to others; rather, such truths are perspectival: real but visible only from a certain angle, i.e., for people who adopt a certain way of life.",
+          "corpus_chunk": 46685
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Data regarding diversity of belief systems, conceptual frameworks and ways of life have frequently been used by philosophers and anthropologists alike to give credibility to philosophical arguments for relativism (For example see Hollis & Lukes 1982 and Wilson 1970).",
+          "corpus_chunk": 46687
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The observed radical differences among cultures, it is argued, show the need for a relativistic assessment of value systems and conceptual commitments.",
+          "corpus_chunk": 46688
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "The anti-relativist may concede the point and insist that where such disagreements exist, at most one view is correct and the rest mistaken.",
+          "corpus_chunk": 46688
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "There is not only a marked diversity of views on questions of right and wrong, truth and falsehood, etc., but more significantly, many disputes arising from such differences seem intractable.",
+          "corpus_chunk": 46690
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Their disagreement is faultless (Kölbel 2004; Brogaard 2007; Hales 2014).",
+          "corpus_chunk": 46690
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Relativism accordingly offers a revisionary account of what it means to disagree (e.g., MacFarlane 2007, 2014; see §5 where the point has been discussed in some detail); but it is not clear if the account can explain what is left of a disagreement to preserve once we allow that both parties to a disagreement could be right (Carter 2013; Dreier 2009).",
+          "corpus_chunk": 46692
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "According to Rovane, relativism is motivated by the existence of truths that cannot be embraced together, not because they contradict and hence disagree with each other but because they are not universal truths.",
+          "corpus_chunk": 46693
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Furthermore, some relativists argue that the pervasiveness of seemingly intractable moral disagreements observed within and across cultures supports relativism, suggesting that deep ethical disputes indicate multiple, equally valid moral truths relative to different frameworks.",
+          "corpus_chunk": 46694
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "This suggests that (moral) relativism stands in tension with the very notion of substantive moral disagreement we regularly appeal to describe our commitments to contested moral claims.",
+          "corpus_chunk": 46695
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Additionally, the relativistically inclined find further support for their position in the contention that there is no meta-justification of our evaluative or normative systems, that all justifications have to start and end somewhere (see Sankey 2010 and 2011) and that there are no higher-order or meta-level standards available for adjudicating clashes between systems in a non-question begging way.",
+          "corpus_chunk": 46696
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "The scientific revolution of the early 20th century, brought about by, for instance, the advent of Relativity Theory and Quantum Mechanics and the loss of faith in lasting religious or political truths (Marxism in particular), as well as the failure of foundationalist philosophical programs have been used in arguments to vindicate relativistic views (for relativism about science see §4.4.3).",
+          "corpus_chunk": 46697
+        },
+        {
+          "locator": "§ 2.6",
+          "basis": "full text",
+          "excerpt": "Advocates of relativism, particularly outside philosophical circles, often cite tolerance as a key normative reason for becoming a relativist.",
+          "corpus_chunk": 46702
+        },
+        {
+          "locator": "§ 2.6",
+          "basis": "full text",
+          "excerpt": "Relativists counter that they are not defending a global version of relativism regarding all truths and justification but local versions concerning the ethics and politics of belief and the usefulness of relativism in our attempt to become better, or at least more flexible and less dogmatic, thinkers and more tolerant citizens (e.g., Feyerabend 1978: 82–84).",
+          "corpus_chunk": 46703
+        },
+        {
+          "locator": "§ 2.6",
+          "basis": "full text",
+          "excerpt": "As Knobe and Nichols point out, simply being made aware of radically different view points can lead to a: …crisis akin to that of the [Christian] child confronted with religious diversity… For the discovery of religious diversity can prompt the thought that it’s in some sense accidental that one happens to be raised in a Christian household rather than a Hindu household.",
+          "corpus_chunk": 46704
+        },
+        {
+          "locator": "§ 2.6",
+          "basis": "full text",
+          "excerpt": "The idea that a relativistic stance involves the manifesting of intellectually beneficial attitudes has been championed by, along with Bloor, Feyerabend (1975) and Code (1995), the latter of whom have emphasised the value of emancipatory thinking, e.g., thinking that is not artificially constrained by attempts to “enforce a universalist truth”.",
+          "corpus_chunk": 46705
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Relativism about truth, or alethic relativism, at its simplest, is the claim that what is true for one individual or social group may not be true for another, and there is no context-independent vantage point to adjudicate the matter.",
+          "corpus_chunk": 46737
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Ethical relativism can be seen as the claim that the truth of ethical judgments, if such truths exist, is relative to context or culture.",
+          "corpus_chunk": 46737
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "And within the broad camp of alethic relativists, the matter of how it is that which we should opt for “P-is-true-for-X”, rather than “P is true”, simpliciter, is developed in different ways (e.g., see Meiland 1977; MacFarlane 2014: ch. 5; Egan 2007; Ferrari & Moruzzi 2018; Merlo & Pravato 2020).",
+          "corpus_chunk": 46739
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Much of the work of New Relativists such as John MacFarlane (see §5) can be see as an attempt to clarify this thorny issue.",
+          "corpus_chunk": 46740
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "The strongest and most persistent charge leveled against all types of relativism, but (global) alethic relativism in particular, is the accusation of self-refutation.",
+          "corpus_chunk": 46741
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Constructing a conception of relative truth such that “p is relatively true” (or “p is true for S”, or “p is true for members of culture C”) amounts to something stronger than “S believes that p” (or “members of culture C believe that p”), but weaker than “p is true (simpliciter)”, has proved to be quite difficult, and is arguably beyond the conceptual resources available to the relativist.",
+          "corpus_chunk": 46742
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "By his own doctrine, Protagoras must believe that his opponents’ view is true.",
+          "corpus_chunk": 46742
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Ordinarily, the very act of defending a philosophical position commits us to the dialectical move of attempting to convince our interlocutors of the superior value of what we are arguing for.",
+          "corpus_chunk": 46744
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "In other words, if Protagoras really believes in relativism why would he bother to argue for it?",
+          "corpus_chunk": 46745
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "However, it is not clear how the relativist could share a framework with the absolutist on the nature of truth or what argumentative strategies he can use to convert the absolutist without presupposing a shared (relativist or absolutist) conceptions of truth.",
+          "corpus_chunk": 46746
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "A good example of such a defense is Hales’ (1997)—who uses a “u” operator to represent “It is true in some perspectives that” and a “n” operator to represent “It is true in all perspectives that”—in order to establish that there could indeed be a consistent relativist logic which avoids the charge of self-refutation.",
+          "corpus_chunk": 46747
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "It has also been claimed that alethic relativism gives rise to what J.L.",
+          "corpus_chunk": 46747
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "The relativists however, could respond that truth is relative to a group (conceptual scheme, framework) and they take speakers to be aiming a truth relative to the scheme that they and their interlocutors are presumed to share.",
+          "corpus_chunk": 46749
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Languages are either inter-translatable and hence not radically different from ours, or incommensurable and beyond our ability to recognize them as languages (Davidson 1974).",
+          "corpus_chunk": 46750
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Claims to knowledge and justification have proven receptive to relativistic interpretations.",
+          "corpus_chunk": 46751
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Carter 2015) The epistemic relativist, as Paul Boghossian in developing his trenchant criticisms of relativism points out, is committed to a “doctrine of equal validity” (though cf., Pérez-Navarro 2022), the view that “there are many radically different, incompatible, yet, ‘equally valid’ ways of knowing the world, with science being just one of them” (Boghossian 2006a: 2).",
+          "corpus_chunk": 46752
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "A simple and quite commonly used example is the contrast between scientific and religious belief systems.",
+          "corpus_chunk": 46753
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "The question of whether disagreements between interlocutors who embrace different frameworks are genuinely intractable or “epistemically incommensurable” has been a significant point of debate in recent hinge epistemology (Pritchard 2011, 2021; Ranalli 2020; Piedrahita 2021; Carter 2017; Coliva 2019).",
+          "corpus_chunk": 46754
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "If—and this remains a point of dispute among hinge epistemologists—there are genuinely alternative sets of hinge propositions (propositions of which one is most certain), then the Wittgensteinian idea that we can justify the less certain only by the more certain may problematize the very possibility of avoiding epistemic incommensurability when interlocutors begin with fundamentally different frameworks.",
+          "corpus_chunk": 46755
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Boghossian has been criticized however for his characterization of epistemic relativism.",
+          "corpus_chunk": 46756
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "And on this basis, Boghossian concludes that there is no coherent way to formulate the position because the relativist in formulating his position and setting up the opposition between two or more alternative non-convergent epistemic systems cannot but assume the universality of at least some epistemic principles, including deduction, induction, warrant through empirical evidence, etc.",
+          "corpus_chunk": 46757
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "ail to take seriously the thesis that claims such as [Evidence E justifies belief B] can indeed by true or false, albeit only relatively so. (Wright 2008: 383, our italics) Moreover, Wright argues, the epistemic relationist clause Boghossian includes in the kind of epistemic relativism he challenges betrays a failure to distinguish between (i) making a judgment in the light of certain standards and (ii) judging that those standards mandate that judgment. (See also MacFarlane (2008b and Carter & McKenna forthcoming for different critiques of Boghossian’s argument against the epistemic relativist.) Conceptions of rationality, and its key",
+          "corpus_chunk": 46758
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "It is a commonplace that the truth-value of an utterance can depend on the context in which it is uttered.",
+          "corpus_chunk": 46793
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "On this point, New Relativists claim an important advantage over contextualists.",
+          "corpus_chunk": 46793
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "And, as a further point of clarification here: while the contextualist can, no less than the relativist, recognize a “standards” or “judge” parameter, for the contextualist, its value will be supplied by the context of use, whereas the relativist takes it to be supplied completely independently of the context of use, by the context of evaluation (or, as MacFarlane calls it, the context of assessment).",
+          "corpus_chunk": 46795
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A utters, “Pretzels are tasty”, and B utters, “Pretzels are not tasty”.",
+          "corpus_chunk": 46795
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This maneuver avoids the result that at least one of the two parties has uttered something false, but (as the new relativist points out) this result comes at the price of being unable to offer a clear explanation of our intuition that there is some uniform content about which A and B disagree.",
+          "corpus_chunk": 46797
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Unlike the truth-absolutist, however, the new relativist will add that the disagreement is faultless because the proposition affirmed in A’s utterance has a truth value only relative to a judge or standards parameter, and in this case: A’s standards, when A is the assessor, B’s standards, when B is the assessor.",
+          "corpus_chunk": 46798
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "New Relativist views, which endorse truth-relativism locally for some domain of discourse, stand in opposition to the more traditional view of propositional content (what Cappelen & Hawthorne call “The Simple View”) according to which propositions bear truth and falsity as monadic properties (cf. however, MacFarlane 2011a for some resistance to Cappelen & Hawthorne’s claim that this simple characterization should be regarded as the “received” view.) A key source of philosophical motivation for relativizing truth in the fashion of New Relativism traces to Lewis’s (1980) and Kaplan’s (1989) foundational work in semantics, according to which",
+          "corpus_chunk": 46799
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "New Relativists inherit the formal apparatus of Lewis and Kaplan and add another parameter, but their reasons for doing so are quite different from the reasons that motivated the framework in the first place.",
+          "corpus_chunk": 46800
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Kaplan’s view specifically was that the need for particular parameters in the circumstance of evaluation was a function of the non-specificity of certain propositional contents with respect to world, time and location (see Kaplan’s (1989) analysis of indexicals).",
+          "corpus_chunk": 46801
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This move would open up room for the truth value of a proposition to vary with these “subjective” factors in much the same way that it varies with the world of evaluation.",
+          "corpus_chunk": 46802
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "It is with respect to this general question that different families of New Relativism are generated.",
+          "corpus_chunk": 46803
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "The motivations for truth-relativism in each of these domains include various considerations unique to those domains.",
+          "corpus_chunk": 46803
+        },
+        {
+          "locator": "§ 5.6.1",
+          "basis": "full text",
+          "excerpt": "Two assertion-related objections to New Relativism arise from work by Gareth Evans (1985) and Robert Stalnaker (1978), respectively.",
+          "corpus_chunk": 46827
+        },
+        {
+          "locator": "§ 5.6.1",
+          "basis": "full text",
+          "excerpt": "A related assertion-based challenge to truth-relativism emerges by appeal to Stalnaker’s (1978) belief transfer model of assertion (cf. 2011).",
+          "corpus_chunk": 46828
+        },
+        {
+          "locator": "§ 5.6.1",
+          "basis": "full text",
+          "excerpt": "Thus, and more generally, it’s not clear what, exactly, could be said to be transferred and a fortiori asserted.",
+          "corpus_chunk": 46829
+        }
+      ],
+      "annotation": "Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics."
+    },
+    {
+      "key": "plato-theaetetus",
+      "used_for": [
+        "A primary text: Plato turns Protagoras's claim around",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "171a–c",
+          "basis": "full text",
+          "excerpt": "THEODORUS: Yes, indeed, Socrates, thousands and tens of thousands, as Homer says, who give me a world of trouble.",
+          "corpus_chunk": 11211
+        },
+        {
+          "locator": "171a–c",
+          "basis": "full text",
+          "excerpt": "THEODORUS: That would follow if the truth is supposed to vary with individual opinion.",
+          "corpus_chunk": 11211
+        },
+        {
+          "locator": "171a–c",
+          "basis": "full text",
+          "excerpt": "SOCRATES: And the truth of Protagoras being doubted by all, will be true neither to himself to any one else?",
+          "corpus_chunk": 11213
+        },
+        {
+          "locator": "171a–c",
+          "basis": "full text",
+          "excerpt": "And does he not allow that his own opinion is false, if he admits that the opinion of those who think him false is true?",
+          "corpus_chunk": 11212
+        }
+      ],
+      "annotation": "Public-domain Jowett translation of Socrates’s self-application objection in the Protagoras discussion."
+    }
+  ]
+}

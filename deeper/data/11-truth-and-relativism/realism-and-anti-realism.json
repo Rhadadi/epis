@@ -1,0 +1,103 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "realism-and-anti-realism",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do knowability, bivalence, verification, and semantic adequacy interact in particular formulations of realism?"
+  ],
+  "sources": [
+    {
+      "key": "glanzberg2025",
+      "used_for": [
+        "What if no check survives?",
+        "Verification and assertibility",
+        "The T-schema leaves work to do",
+        "An ideal is more than current acceptance",
+        "Keep the domain visible",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "In discussing the approach to correspondence of section 3.1, we noted that it has few ontological requirements.",
+          "corpus_chunk": 2629
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "The world that we represent in our thoughts or language is an objective world.",
+          "corpus_chunk": 2629
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Any theory that provides objective relations of reference and satisfaction, and builds up a theory of truth from them, would give a form of realism.",
+          "corpus_chunk": 2631
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "At the very least, it captures a great deal of what is more loosely put in the statement of realism above.",
+          "corpus_chunk": 2632
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Devitt (1984) offers an opposing view to the kind we have sketched here, which rejects any characterization of realism in terms of truth or other semantic concepts.) In light of our discussion in section 1.1.1, we should pause to note that the connection between realism and the correspondence theory of truth is not absolute.",
+          "corpus_chunk": 2633
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "For more on realism and truth, see Fumerton 2002 and the entry on realism.",
+          "corpus_chunk": 2634
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It should come as no surprise that the relation between truth and metaphysics seen by modern realists can also be exploited by anti-realists.",
+          "corpus_chunk": 2635
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The claim is not that verification is the most important epistemic notion, but that truth just is verifiability.",
+          "corpus_chunk": 2635
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Insofar as this really would be in principle unverifiable, we have no reason to maintain it is true or false according to the verificationist theory of truth.",
+          "corpus_chunk": 2637
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "At the same time, the idea of truth as warranted assertibility or verifiability reiterates a theme from the pragmatist views of truth we surveyed in section 1.3.",
+          "corpus_chunk": 2638
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "How an anti-realist is to explain the basic concepts that go into a Tarskian theory is a delicate matter.",
+          "corpus_chunk": 2638
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Many commentators see a close connection between Dummett’s anti-realism and the pragmatists’ views of truth, in that both put great weight on ideas of verifiability or assertibility.",
+          "corpus_chunk": 2640
+        },
+        {
+          "locator": "§ 4.3",
+          "basis": "full text",
+          "excerpt": "Insofar as these are human attitudes or relate to human actions, Davidson grants there is some affinity between his views and those of some pragmatists (especially, he says, Dewey).",
+          "corpus_chunk": 2641
+        }
+      ],
+      "annotation": "Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms."
+    }
+  ]
+}

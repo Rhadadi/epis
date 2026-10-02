@@ -1,0 +1,234 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "why-truth-matters",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do correctness, sincerity, evidential support, and norms of assertion differ?"
+  ],
+  "sources": [
+    {
+      "key": "russell1912",
+      "used_for": [
+        "Three ways a report can go wrong",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "How are we to know, in a given case, that our belief is not erroneous?",
+          "corpus_chunk": 10113
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.",
+          "corpus_chunk": 10115
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.",
+          "corpus_chunk": 10116
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.",
+          "corpus_chunk": 10118
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.",
+          "corpus_chunk": 10120
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.",
+          "corpus_chunk": 10121
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Hence his belief cannot possibly consist in a relation to this object.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.",
+          "corpus_chunk": 10124
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.",
+          "corpus_chunk": 10125
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We are now in a position to understand what it is that distinguishes a true judgement from a false one.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.",
+          "corpus_chunk": 10130
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.",
+          "corpus_chunk": 10133
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.",
+          "corpus_chunk": 10133
+        }
+      ],
+      "annotation": "Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence."
+    },
+    {
+      "key": "glanzberg2025",
+      "used_for": [
+        "A norm is not a description of everyone's motive",
+        "Norms can compete or overlap",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "The relation between truth and meaning is not the only place where truth and language relate closely.",
+          "corpus_chunk": 2678
+        },
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "The platitude holds that it is constitutive of the practice of making assertions that assertions aim at truth.",
+          "corpus_chunk": 2678
+        },
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "But among those who accept that it does, the place of truth in the constitutive rules is itself controversial.",
+          "corpus_chunk": 2680
+        }
+      ],
+      "annotation": "Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms."
+    },
+    {
+      "key": "armourgarb-etal2026",
+      "used_for": [
+        "A modest theory need not make truth unimportant",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "It is commonly said that our beliefs and assertions aim at truth, or present things as being true, and that truth is therefore a norm of assertion and belief.",
+          "corpus_chunk": 45667
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "We might say that there is a norm of assertion that implies that Mary is still open to criticism in this case.",
+          "corpus_chunk": 45667
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "To state the norm in general we would need to be able to do something we seem unable to do in ordinary language, namely, employ sentential variables and quantifiers for them.",
+          "corpus_chunk": 45669
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Or, to put it as some philosophers might: (N) Truth is a norm of assertion.",
+          "corpus_chunk": 45669
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "He points out that not having warrant to assert some sentence does not yield having warrant to assert its negation.",
+          "corpus_chunk": 45670
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Rejecting Wright’s argument for the instability of deflationism, Ian Rumfitt (1995, 103) notes that if we add the ideas of denying something and of having warrant for doing so (“anti-warrant”) to Wright’s characterization of deflationism, this would make ‘is not true’ simply a device of rejection governed by the norm that “[t]he predicate ‘is not true’ may be applied to any sentence for which one has an anti-warrant”.",
+          "corpus_chunk": 45672
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Field (1994a, 264–5) offers a deflationary response to Wright’s challenge (as well as to a similar objection regarding normativity from Putnam 1983a, 279–80), pointing again to the generalizing role of the truth predicate in such normative desires as one to utter only true sentences or one to have only true beliefs.",
+          "corpus_chunk": 45673
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Like Field, Horwich claims that Wright missed the point that, in the expression of such a norm, the truth predicate is just playing its generalizing role.",
+          "corpus_chunk": 45674
+        }
+      ],
+      "annotation": "Explains the generalizing function of truth and the dispute over whether deflationism accommodates normative roles."
+    }
+  ]
+}

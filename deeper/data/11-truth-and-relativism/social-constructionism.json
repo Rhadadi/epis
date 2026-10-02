@@ -1,0 +1,126 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "social-constructionism",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What is constructed, by which causal or constitutive relation, and how can classifications affect their subjects?"
+  ],
+  "sources": [
+    {
+      "key": "mallon2026",
+      "used_for": [
+        "Name what was produced",
+        "Cause and constitution",
+        "Classifications can change their subjects",
+        "Construction and criticism are different conclusions",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Social constructionist claims are made about so many different objects that it is perhaps not surprising to find that such claims have different implications depending upon the different objects at which they are directed.",
+          "corpus_chunk": 46465
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "But “construction” talk has a more or less independent, but equally contentious life in the “human nature wars” where it labels the position that human traits (for example the emotions) or human kinds (which we can think of categories whose members share traits or clusters of traits, including, especially, dispositions to think and behave) are produced by culture rather than by biology or nature.",
+          "corpus_chunk": 46466
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The most pronounced disputes are prima facie concerned with whether the clustering of traits in, for example, sex difference, emotional behavior, or mental illness, are caused by a cultural practice of differentiating persons or are instead caused by natural processes operating in relative independence from culture.",
+          "corpus_chunk": 46467
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Contemporary Philosophical Debates” in the entry on race.) We consider naturalistic approaches to the construction of representations and human traits in more detail below, but it is useful to first distinguish global constructionist claims that hold that every fact is a social construction, from local constructionist claims that hold that only particular facts are.[3] Because of their provocative nature, many philosophers associate the term “social construction” with a global thesis, and a standard argument against global constructionism concerns whether such a program is sustainable in the face of the regress such a global thesis engenders",
+          "corpus_chunk": 46468
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Philosophers may have focused on these more radical claims in part because of the recognition that, relying on something like the general idea of construction sketched above, claims that are relatively global in scope are quite provocative and surprising while claims that would count as locally socially constructionist are quite familiar in many areas of philosophy, perhaps most importantly in meta-ethics, aesthetics, and social ontology.",
+          "corpus_chunk": 46469
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "This is the role that they play in the philosophy of psychiatry (Hacking 1995a, Scheff 1984, Showalter 1996, cf.",
+          "corpus_chunk": 46470
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "We have already suggested that the core idea of constructionism is that some social agent produces or controls some object.",
+          "corpus_chunk": 46471
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "The first, and more straightforward idea is causal construction: X causally constructs Y if and only if X causes Y to exist or to persist or X controls the kind-typical properties of Y.[8] There is no special problem posed by the claim that human social and linguistic activities cause certain things to exist or persist, or to cause certain facts to be.",
+          "corpus_chunk": 46472
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "In this vein, most discussions of social construction have thus distinguished causal from constitutive forms of determination.",
+          "corpus_chunk": 46473
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "It is metaphysically possible, however unlikely, that we could walk across a heath and find (something with the intrinsic features of) a watch that had “always been there.” In contrast, the best candidates for constitutive construction are social facts: For social facts, the attitude that we take toward the phenomenon is partly constitutive of the phenomenon … Part of being a cocktail party is being thought to be a cocktail party; part of being a war is being thought to be a war.",
+          "corpus_chunk": 46474
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "A similar idea has been influential in constructionist discussions.",
+          "corpus_chunk": 46474
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "Naturalist interpretations of constructionism have also taken up the distinct, open-ended, empirical project of defending substantive claims regarding the development and distribution of human traits via the suggestions that human socio-linguistic behaviors shape human traits (including behavior) via different avenues, both developmental and situational.",
+          "corpus_chunk": 46503
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "The idea is that the conception of a certain kind of person shapes both a widespread social response (e.g. one that exculpates and perhaps encourages kind-typical behaviors), while at the same time, the conception shapes individual “performances” of the behavior in question (by suggesting highly specific avenues of behavior).",
+          "corpus_chunk": 46504
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "On Hacking’s model, one he calls “the looping effect of human kinds,” the conception of the behavior may be part of an epistemic project of understanding a human kind that in turn gives rise to the clusters of traits that the theory represents (thereby providing epistemic support for the conception).[12] Much of Hacking’s own recent work has been aimed at providing detailed historical and cultural evidence that suggests that looping effects really are a feature of (at least modern) human social life, e.g. for the American epidemic of multiple personality disorder that started in the 1980s (Hacking 1995) or the European epidemic of fugue in",
+          "corpus_chunk": 46505
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "Hacking makes further claims about the “looping effect,” for example, that looping effects mark “a cardinal difference between the traditional natural and social sciences” because “the targets of the natural sciences are stationary” while “the targets of the social sciences are on the move” (1999, 108) ),claims that themselves have spurred lively discussions over the nature of looping effects (e.g.",
+          "corpus_chunk": 46506
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "Together with Hacking’s work, these accounts provide partial, causal interpretation of even quite radical claims about kinds of person.",
+          "corpus_chunk": 46506
+        },
+        {
+          "locator": "§ 3.2.2",
+          "basis": "full text",
+          "excerpt": "Such a causal model of the way in which social roles might shape behavior is at least arguably naturalistic in all of the above senses.",
+          "corpus_chunk": 46507
+        }
+      ],
+      "annotation": "Distinguishes targets, causal and constitutive construction, and the mechanisms and disputes surrounding looping effects."
+    }
+  ]
+}

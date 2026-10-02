@@ -1,0 +1,926 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "theories-of-truth",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which tasks do correspondence, coherence, pragmatism, semantic definitions, deflationism, and pluralism address, and where do their commitments overlap?"
+  ],
+  "sources": [
+    {
+      "key": "russell1912",
+      "used_for": [
+        "Three questions about one claim",
+        "A primary text: Russell's distinction",
+        "Coherence: which system, and which relation?",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "How are we to know, in a given case, that our belief is not erroneous?",
+          "corpus_chunk": 10113
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.",
+          "corpus_chunk": 10115
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.",
+          "corpus_chunk": 10116
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.",
+          "corpus_chunk": 10118
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.",
+          "corpus_chunk": 10120
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.",
+          "corpus_chunk": 10121
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Hence his belief cannot possibly consist in a relation to this object.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.",
+          "corpus_chunk": 10124
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.",
+          "corpus_chunk": 10125
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We are now in a position to understand what it is that distinguishes a true judgement from a false one.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.",
+          "corpus_chunk": 10130
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.",
+          "corpus_chunk": 10133
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.",
+          "corpus_chunk": 10133
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "What makes a belief true is a _fact_, and this fact does not (except in exceptional cases) in any way involve the mind of the person who has the belief.",
+          "corpus_chunk": 10134
+        }
+      ],
+      "annotation": "Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence."
+    },
+    {
+      "key": "glanzberg2025",
+      "used_for": [
+        "Three questions about one claim",
+        "A small schema with a large use",
+        "The important limit",
+        "Begin with the bearer and the explanatory task",
+        "Correspondence: the world enters the explanation",
+        "Coherence: which system, and which relation?",
+        "Truth and justification in the coherence argument",
+        "Peirce: inquiry as a constraint",
+        "Tarski: a definition for a language",
+        "Deflationism and generalization",
+        "Pluralism: one role, several realizations?",
+        "Two useful qualifications",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "Truth has been a topic of discussion in its own right for thousands of years.",
+          "corpus_chunk": 2573
+        },
+        {
+          "locator": "Preamble",
+          "basis": "full text",
+          "excerpt": "There are a number of book-length surveys of the topics discussed here, including Beall & Middleton 2024, Blackburn 2018, Burgess & Burgess 2011, Kirkham 1992, and Künne 2003.",
+          "corpus_chunk": 2574
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Much of the contemporary literature on truth takes as its starting point some ideas which were prominent in the early part of the 20th century.",
+          "corpus_chunk": 2575
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In some cases, the received forms of these theories depart from the views that were actually defended in the early 20th century.",
+          "corpus_chunk": 2576
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "The basic idea of the correspondence theory is that what we believe or say is true if it corresponds to the way things actually are – to the facts.",
+          "corpus_chunk": 2578
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "An overview of these issues is given in Baldwin 2018.) In this period, Moore and Russell hold a version of the identity theory of truth.",
+          "corpus_chunk": 2578
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "Furthermore, taking up an idea familiar to readers of Moore, the property of truth is a simple unanalyzable property.",
+          "corpus_chunk": 2579
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "A full answer to this question is a point of scholarship that would take us too far afield.",
+          "corpus_chunk": 2581
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "As Russell (1956, p. 223) later says, propositions seem to be at best “curious shadowy things” in addition to facts.",
+          "corpus_chunk": 2581
+        },
+        {
+          "locator": "§ 1.1.1",
+          "basis": "full text",
+          "excerpt": "But let us put the assessment of the arguments aside, and continue the story.",
+          "corpus_chunk": 2582
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "The correspondence theory of truth is at its core an ontological thesis: a belief is true if there exists an appropriate entity – a fact – to which it corresponds.",
+          "corpus_chunk": 2584
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "For more recent extensive discussions of facts, see Armstrong 1997 and Neale 2001.) Consider, for example, the belief that Ramey sings.",
+          "corpus_chunk": 2585
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "One of the standing objections to the classical correspondence theory is that a fully adequate explanation of correspondence proves elusive.",
+          "corpus_chunk": 2585
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "At least, for simple beliefs like that Ramey sings, the proposition has the same subject predicate structure as the sentence.",
+          "corpus_chunk": 2586
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "We have sketched this view for simple propositions like the proposition that Ramey sings.",
+          "corpus_chunk": 2587
+        },
+        {
+          "locator": "§ 1.1.2",
+          "basis": "full text",
+          "excerpt": "This theory offers us a paradigm example of a correspondence theory of truth.",
+          "corpus_chunk": 2589
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Though initially the correspondence theory was seen by its developers as a competitor to the identity theory of truth, it was also understood as opposed to the coherence theory of truth.",
+          "corpus_chunk": 2590
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "We will not attempt a full exposition of Joachim’s view, which would take us well beyond the discussion of truth into the details of British idealism.",
+          "corpus_chunk": 2591
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "To flesh out Joachim’s theory, we would have to explain what a significant whole is.",
+          "corpus_chunk": 2592
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "As with the correspondence theory, it can be put in a slogan: A belief is true if and only if it is part of a coherent system of beliefs.",
+          "corpus_chunk": 2592
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Far from being a matter of whether the world provides a suitable object to mirror a proposition, truth is a matter of how beliefs are related to each-other.",
+          "corpus_chunk": 2594
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Combining this with the thesis that a fully justified belief is true forms an argument for the coherence theory of truth.",
+          "corpus_chunk": 2594
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "See Baldwin 1991 for some discussion.) However, it is hard to see much of a way to hold the coherence theory of truth without maintaining some form of idealism.",
+          "corpus_chunk": 2596
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The coherence theory requires some metaphysics which can make the world somehow reflect this, and idealism appears to be it.",
+          "corpus_chunk": 2597
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "A different perspective on truth was offered by the American pragmatists.",
+          "corpus_chunk": 2598
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "However, the contemporary literature does not seem to have firmly settled upon a received ‘neo-classical’ pragmatist theory.",
+          "corpus_chunk": 2598
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "As Haack also notes, James maintains an important verificationist idea: truth is what is verifiable.",
+          "corpus_chunk": 2600
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Many of these modern theories, notably correspondence theories, draw on ideas developed by Tarski.",
+          "corpus_chunk": 2601
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "In the classical debate on truth at the beginning of the 20th century we considered in section 1, the issue of truth-bearers was of great significance.",
+          "corpus_chunk": 2602
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "But it should be stressed that for this discussion, sentences are fully interpreted sentences, having meanings.",
+          "corpus_chunk": 2603
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "In some places (e.g., 1944), Tarski refers to his view as the ‘semantic conception of truth’.",
+          "corpus_chunk": 2603
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Let us suppose we have a fixed language \\(\\mathbf{L}\\) whose sentences are fully interpreted.",
+          "corpus_chunk": 2605
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Given the assumption that \\(\\mathbf{L}\\) is fully interpreted, we may assume that each sentence \\(\\ulcorner \\phi \\urcorner\\) in fact has a truth value.",
+          "corpus_chunk": 2606
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "Tarski does not merely propose a condition of adequacy for theories of truth, he also shows how to meet it.",
+          "corpus_chunk": 2607
+        },
+        {
+          "locator": "§ 2.3",
+          "basis": "full text",
+          "excerpt": "\\urcorner\\) is true. \\(\\ulcorner \\neg \\phi \\urcorner\\) is true if and only if it is not the case that \\(\\ulcorner \\phi \\urcorner\\) is true. This theory satisfies Convention T.",
+          "corpus_chunk": 2608
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "This may look trivial, but in defining an extensionally correct truth predicate for an infinite language with four clauses, we have made a modest application of a very powerful technique.",
+          "corpus_chunk": 2609
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Base clauses: ‘Snow’ refers to snow. ‘Grass’ refers to grass. a satisfies ‘is white’ if and only if a is white. a satisfies ‘is green’ if and only if a is green.",
+          "corpus_chunk": 2610
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Tarski goes on to demonstrate some key applications of such a theory of truth.",
+          "corpus_chunk": 2610
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It should come as no surprise that the relation between truth and metaphysics seen by modern realists can also be exploited by anti-realists.",
+          "corpus_chunk": 2635
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The claim is not that verification is the most important epistemic notion, but that truth just is verifiability.",
+          "corpus_chunk": 2635
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Insofar as this really would be in principle unverifiable, we have no reason to maintain it is true or false according to the verificationist theory of truth.",
+          "corpus_chunk": 2637
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "At the same time, the idea of truth as warranted assertibility or verifiability reiterates a theme from the pragmatist views of truth we surveyed in section 1.3.",
+          "corpus_chunk": 2638
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "How an anti-realist is to explain the basic concepts that go into a Tarskian theory is a delicate matter.",
+          "corpus_chunk": 2638
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Another view that has grown out of the literature on realism and anti-realism, and has become increasingly important in the current literature, is that of pluralism about truth.",
+          "corpus_chunk": 2642
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "In particular, Lynch (2001b, 2009) develops a version of pluralism which takes truth to be a functional role concept.",
+          "corpus_chunk": 2642
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Such multiple realizability has been one of the hallmarks of functional role concepts discussed in the philosophy of mind.",
+          "corpus_chunk": 2643
+        },
+        {
+          "locator": "§ 5",
+          "basis": "full text",
+          "excerpt": "We began in section 1 with the neo-classical theories, which explained the nature of truth within wider metaphysical systems.",
+          "corpus_chunk": 2645
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Deflationist ideas appear quite early on, including a well-known argument against correspondence in Frege 1918–19.",
+          "corpus_chunk": 2646
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This view was advanced by Strawson (1949, 1950), though Strawson also argues that there are other important aspects of speech acts involving ‘true’ beyond what is asserted.",
+          "corpus_chunk": 2647
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The equivalence principle looks familiar: it has something like the form of the Tarski biconditionals discussed in section 2.2.",
+          "corpus_chunk": 2648
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Officially, this is the name of the view of Horwich (1990), but we will apply it somewhat more widely.",
+          "corpus_chunk": 2648
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Another variety of deflationism, that has become particularly important in recent discussions, goes under the label disquotationalism, initially developed by Leeds (1978) and Quine (1970), and more recently defended by such authors as Beall (e.g., 2005) and Field (e.g., 1994).",
+          "corpus_chunk": 2650
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "If there is no substantial property of truth, or a strong form of the equivalence thesis holds, what role does our term ‘true’ play?",
+          "corpus_chunk": 2650
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "A truth predicate allows us to express what would otherwise be (potentially) infinite conjunctions or disjunctions.",
+          "corpus_chunk": 2651
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "so construe the clauses of a recursive Tarskian theory as stipulated. (There are some significant logical differences between these options. See Halbach 1999, Ketland 1999, and Shapiro 1998 for discussion.)",
+          "corpus_chunk": 2653
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "There have been many debates in the literature over what the primary bearers of truth are.",
+          "corpus_chunk": 2660
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "No assumptions about just what stands in relations to what objects are required to see truth-bearers as meaningful.) It is in virtue of being meaningful that truth-bearers are able to enter into correspondence relations.",
+          "corpus_chunk": 2661
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Though a coherence theory will hardly talk of beliefs representing the facts, it is crucial to the coherence theory that beliefs are contentful beliefs of agents, and that they can enter into coherence relations.",
+          "corpus_chunk": 2662
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "They characterize the world as being some way or another, and this in turn determines whether they are true or false.",
+          "corpus_chunk": 2662
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Different metaphysical assumptions may place primary weight on some particular node in the circle, and some metaphysical views still challenge the existence of some of the nodes.",
+          "corpus_chunk": 2664
+        }
+      ],
+      "annotation": "Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms."
+    },
+    {
+      "key": "capps2023",
+      "used_for": [
+        "Three questions about one claim",
+        "Begin with the bearer and the explanatory task",
+        "Peirce: inquiry as a constraint",
+        "James and Dewey: verification and practical use",
+        "Pluralism: one role, several realizations?",
+        "Two useful qualifications",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "The American philosopher, logician and scientist Charles Sanders Peirce (1839–1914) is generally recognized for first proposing a “pragmatic” theory of truth.",
+          "corpus_chunk": 47386
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Peirce’s answer to this question is that true beliefs eventually gain general acceptance by withstanding future inquiry.",
+          "corpus_chunk": 47386
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Over time Peirce moderated his position, referring less to fate and unanimous agreement and more to scientific investigation and general consensus (Misak 2004).",
+          "corpus_chunk": 47388
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Some beliefs may in fact be very durable but would not stand up to inquiry and investigation (this is true of many cognitive biases, such as the Dunning-Kruger effect where people remain blissfully unaware of their own incompetence).",
+          "corpus_chunk": 47389
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "By focusing on the practical dimension of having true beliefs, Peirce plays down the significance of more theoretical questions about the nature of truth.",
+          "corpus_chunk": 47390
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "For Peirce, the importance of truth rests not on a “transcendental” (1901a [1935: 5.572]) connection between beliefs on the one hand and reality on the other, but rather on the practical connection between doubt and belief, and the processes of inquiry that take us from the former to the latter: If by truth and falsity you mean something not definable in terms of doubt and belief in any way, then you are talking of entities of whose existence you can know nothing, and which Ockham’s razor would clean shave off.",
+          "corpus_chunk": 47391
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "In other words, if we were to reach a stage where we could no longer improve upon a belief, there is no point in withholding the title “true” from it.",
+          "corpus_chunk": 47392
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Peirce’s contemporary, the psychologist and philosopher William James (1842–1910), often gets credit for popularizing the pragmatic theory of truth.",
+          "corpus_chunk": 47393
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "James adds to the previous quote by making the connection between truth and utility explicit: Any idea upon which we can ride, so to speak; any idea that will carry us prosperously from any one part of our experience to any other part, linking things satisfactorily, working securely, simplifying, saving labor; is true for just so much, true in so far forth, true instrumentally.",
+          "corpus_chunk": 47394
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "True beliefs, he suggests, are useful and dependable in ways that false beliefs are not: you can say of it then either that “it is useful because it is true” or that “it is true because it is useful”.",
+          "corpus_chunk": 47395
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Such an account might also be viewed as obviously wrong, given the undeniable existence of useless truths and useful falsehoods.",
+          "corpus_chunk": 47396
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "This means that, while James’ theory might give a psychologically realistic account of why we care about the truth (true ideas help us get things done) his theory fails to shed much light on what the concept of truth exactly is or on what makes an idea true.",
+          "corpus_chunk": 47397
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "It often seems that James understands the concept of truth in terms of verification: thus, “true is the name for whatever idea starts the verification-process, useful is the name for its completed function in experience” (1907 [1975: 98]).",
+          "corpus_chunk": 47398
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "For pragmatists, this agreement consists in being led “towards that reality and no other” in a way that yields “satisfaction as a result” (1909 [1975: 104]).",
+          "corpus_chunk": 47399
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "John Dewey (1859–1952), the third figure from the golden era of classical American pragmatism, had surprisingly little to say about the concept of truth especially given his voluminous writings on other topics.",
+          "corpus_chunk": 47400
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "By that I mean that if a scientific man were asked to point to samples of what he meant by truth, he would pick…beliefs which were the outcome of the best technique of inquiry available in some particular field; and he would do this no matter what his conception of the Nature of Truth.",
+          "corpus_chunk": 47401
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "For Dewey, science emerges from and is continuous with everyday processes of trial and error—cooking and small-engine repair count as “scientific” on his account—which means he should not be taken too strictly when he equates truth with scientific verification.",
+          "corpus_chunk": 47402
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "As a result, in his later writings Dewey largely avoids speaking of “truth” or “knowledge” while focusing instead on the functions played by these concepts.",
+          "corpus_chunk": 47403
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "His point is that it makes little difference, pragmatically, whether we describe the goal of inquiry as “acquiring more knowledge”, “acquiring more truth”, or better yet, “making more warrantably assertible judgments”.",
+          "corpus_chunk": 47404
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Some objections are as old as the pragmatic theory of truth itself.",
+          "corpus_chunk": 47448
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "So whether truth is defined in terms of utility, long-term durability or assertibility (etc.), it is still an open question whether a useful or durable or assertible belief is, in fact, really true.",
+          "corpus_chunk": 47449
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This seems initially plausible and might even serve as a reasonable response to the first objection above.",
+          "corpus_chunk": 47449
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Putting aside the question of whether pragmatic theories of truth adequately address the metaphysical project (or address it at all), there is also a problem with the criteria of truth they propose for addressing the justification project.",
+          "corpus_chunk": 47451
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Determining whether a belief is really useful is no easier than determining whether it is really true: “it is so often harder to determine whether a belief is useful than whether it is true” (Russell 1910 [1994: 121]; also 1946: 817).",
+          "corpus_chunk": 47452
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "It has been argued that pragmatic theories are not about finding a word or concept that can substitute for truth but that they are, rather, focused on tracing the implications of using this concept in practical contexts.",
+          "corpus_chunk": 47453
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "To be sure, pragmatic theories of truth have often been framed as providing criteria for distinguishing true from false beliefs.",
+          "corpus_chunk": 47454
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "However, one might question the underlying distinction: as Haack (1976) argues, the pragmatists’ view of meaning is such that a dichotomy between definitions and criteria would have been entirely unacceptable to them.",
+          "corpus_chunk": 47455
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "If this concern is valid, then pragmatic criteria, ironically, fail the pragmatic test of making a difference to our understanding of truth.",
+          "corpus_chunk": 47455
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This has the benefit of showing how the concept of truth—operating as a norm of assertion, say—makes a real difference to our understanding of the conditions on assertoric discourse.",
+          "corpus_chunk": 47457
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This does not bode well for pragmatic attempts to address the metaphysical project.",
+          "corpus_chunk": 47457
+        }
+      ],
+      "annotation": "Distinguishes Peirce, James, and Dewey, with classic objections and different pragmatic explanatory projects."
+    },
+    {
+      "key": "beall-etal2026",
+      "used_for": [
+        "Why the liar changes the scope"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Consider a sentence named ‘FLiar’, which says of itself (i.e., says of FLiar) that it is false.",
+          "corpus_chunk": 46234
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "An obvious response is to deny that every sentence is true or false, i.e., to deny the principle of bivalence.",
+          "corpus_chunk": 46234
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "The tradition, going back to Tarski (1935), is that the behavior of the truth predicate \\(\\Tr\\) is described by the following biconditional.",
+          "corpus_chunk": 46248
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Thus, we should stop to consider what principles should govern the truth predicate \\(\\Tr\\) if classical logic is not to hold.",
+          "corpus_chunk": 46248
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "For our discussion, we think of it in so-called rule form: that the argument from A to B is valid, which we record (as above) via the turnstile.",
+          "corpus_chunk": 46250
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "As we discuss more in section 4.1, this is important to some views of the nature of truth.",
+          "corpus_chunk": 46250
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "We prefer the broader terminology, since it highlights a general form of behavior common to a great variety of predicates and operators, e.g., knowledge releases but doesn’t capture; possibility captures but doesn’t release; and so on; and truth is special in doing both.)",
+          "corpus_chunk": 46252
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "One of the leading ideas for how to resolve the Liar paradox is that it shows us something about logic, in fact, something far-reaching about logic.",
+          "corpus_chunk": 46265
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "This makes capture and release, in unrestricted form applying to all sentences of a language, a requirement for truth (at least where we have \\(A \\vdash A\\) or, more strongly, \\(\\vdash A \\rightarrow A)\\).[9] We note that, more recently, some deflationists have shifted the emphasis from the minimal principles traditionally taken to characterize truth (such as the T-schema) to the function truth serves in enabling generalizations (a role that has been highlighted at least since Quine).",
+          "corpus_chunk": 46266
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "To see this, suppose a theory S is accepted: how can one state their agreement with all of S’s infinitely many consequences?",
+          "corpus_chunk": 46266
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Classical solutions to the Liar must give up at least one of unrestricted capture and unrestricted release.",
+          "corpus_chunk": 46305
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "In fact, Tarski notices that, if the language in which A is defined could define truth for itself, then a paradox – the Liar paradox – would immediately ensue.",
+          "corpus_chunk": 46306
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "This means that, in the above schema, \\(Ax\\) should belong to \\(\\mathcal{L}_1\\), and B to \\(\\mathcal{L}_0\\).",
+          "corpus_chunk": 46306
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "Such sentences, however, are inert, since truth-theoretical principles do not apply to them.",
+          "corpus_chunk": 46307
+        },
+        {
+          "locator": "§ 4.3.1",
+          "basis": "full text",
+          "excerpt": "One way to ameliorate the situation is to iterate the typed construction.",
+          "corpus_chunk": 46308
+        }
+      ],
+      "annotation": "Reconstructs the simple and strengthened liars, truth principles, and typed, paracomplete, and paraconsistent responses."
+    },
+    {
+      "key": "armourgarb-etal2026",
+      "used_for": [
+        "Deflationism and generalization",
+        "Can deflationism explain truth's normative role?",
+        "Pluralism: one role, several realizations?",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "In light of the two central ideas discussed so far – the idea that the equivalence schema is exhaustive of the notion of truth and the idea that there is no substantive truth property – you might wonder why we have a concept of truth in the first place.",
+          "corpus_chunk": 45589
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "In the following discussion we will not discriminate between questions about the concept of truth and questions about the word ‘true’ and will move back and forth between them.) The question of why we have the concept of truth allows us to introduce a third central theme in deflationism, which is an emphasis not merely on the property of truth but on the concept of truth, or, equivalently for present purposes, on the word ‘true’ (cf.",
+          "corpus_chunk": 45590
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Suppose, for example, that Jones for whatever reason decides that Smith is an infallible guide to the nature of reality.",
+          "corpus_chunk": 45591
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "So, we need a (declarative) sentential variable, ‘\\(p\\)’, and a universal quantifier governing it.",
+          "corpus_chunk": 45591
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "Or, to put the same thing more colloquially: (9) Everything Smith says is true.",
+          "corpus_chunk": 45592
+        },
+        {
+          "locator": "§ 1.3",
+          "basis": "full text",
+          "excerpt": "In fact, for most deflationists, it is this feature of the concept of truth – its role in the formation of these sorts of generalizations – that explains why we have a concept of truth at all.",
+          "corpus_chunk": 45594
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "It is commonly said that our beliefs and assertions aim at truth, or present things as being true, and that truth is therefore a norm of assertion and belief.",
+          "corpus_chunk": 45667
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "We might say that there is a norm of assertion that implies that Mary is still open to criticism in this case.",
+          "corpus_chunk": 45667
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "To state the norm in general we would need to be able to do something we seem unable to do in ordinary language, namely, employ sentential variables and quantifiers for them.",
+          "corpus_chunk": 45669
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Or, to put it as some philosophers might: (N) Truth is a norm of assertion.",
+          "corpus_chunk": 45669
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "He points out that not having warrant to assert some sentence does not yield having warrant to assert its negation.",
+          "corpus_chunk": 45670
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Rejecting Wright’s argument for the instability of deflationism, Ian Rumfitt (1995, 103) notes that if we add the ideas of denying something and of having warrant for doing so (“anti-warrant”) to Wright’s characterization of deflationism, this would make ‘is not true’ simply a device of rejection governed by the norm that “[t]he predicate ‘is not true’ may be applied to any sentence for which one has an anti-warrant”.",
+          "corpus_chunk": 45672
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Field (1994a, 264–5) offers a deflationary response to Wright’s challenge (as well as to a similar objection regarding normativity from Putnam 1983a, 279–80), pointing again to the generalizing role of the truth predicate in such normative desires as one to utter only true sentences or one to have only true beliefs.",
+          "corpus_chunk": 45673
+        },
+        {
+          "locator": "§ 4.4",
+          "basis": "full text",
+          "excerpt": "Like Field, Horwich claims that Wright missed the point that, in the expression of such a norm, the truth predicate is just playing its generalizing role.",
+          "corpus_chunk": 45674
+        }
+      ],
+      "annotation": "Explains the generalizing function of truth and the dispute over whether deflationism accommodates normative roles."
+    }
+  ]
+}

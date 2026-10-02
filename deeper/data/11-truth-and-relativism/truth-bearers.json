@@ -1,0 +1,288 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "truth-bearers",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do sentences, contents, utterances, and beliefs change across occasions without automatically producing relative truth?"
+  ],
+  "sources": [
+    {
+      "key": "glanzberg2025",
+      "used_for": [
+        "Expression and content",
+        "Different theoretical jobs",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "In the classical debate on truth at the beginning of the 20th century we considered in section 1, the issue of truth-bearers was of great significance.",
+          "corpus_chunk": 2602
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "But it should be stressed that for this discussion, sentences are fully interpreted sentences, having meanings.",
+          "corpus_chunk": 2603
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "In some places (e.g., 1944), Tarski refers to his view as the ‘semantic conception of truth’.",
+          "corpus_chunk": 2603
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "There have been many debates in the literature over what the primary bearers of truth are.",
+          "corpus_chunk": 2660
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "No assumptions about just what stands in relations to what objects are required to see truth-bearers as meaningful.) It is in virtue of being meaningful that truth-bearers are able to enter into correspondence relations.",
+          "corpus_chunk": 2661
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Though a coherence theory will hardly talk of beliefs representing the facts, it is crucial to the coherence theory that beliefs are contentful beliefs of agents, and that they can enter into coherence relations.",
+          "corpus_chunk": 2662
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "They characterize the world as being some way or another, and this in turn determines whether they are true or false.",
+          "corpus_chunk": 2662
+        },
+        {
+          "locator": "§ 6.1",
+          "basis": "full text",
+          "excerpt": "Different metaphysical assumptions may place primary weight on some particular node in the circle, and some metaphysical views still challenge the existence of some of the nodes.",
+          "corpus_chunk": 2664
+        }
+      ],
+      "annotation": "Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms."
+    },
+    {
+      "key": "baghramian-carter2025",
+      "used_for": [
+        "Specify what changed",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "It is a commonplace that the truth-value of an utterance can depend on the context in which it is uttered.",
+          "corpus_chunk": 46793
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "On this point, New Relativists claim an important advantage over contextualists.",
+          "corpus_chunk": 46793
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "And, as a further point of clarification here: while the contextualist can, no less than the relativist, recognize a “standards” or “judge” parameter, for the contextualist, its value will be supplied by the context of use, whereas the relativist takes it to be supplied completely independently of the context of use, by the context of evaluation (or, as MacFarlane calls it, the context of assessment).",
+          "corpus_chunk": 46795
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "A utters, “Pretzels are tasty”, and B utters, “Pretzels are not tasty”.",
+          "corpus_chunk": 46795
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This maneuver avoids the result that at least one of the two parties has uttered something false, but (as the new relativist points out) this result comes at the price of being unable to offer a clear explanation of our intuition that there is some uniform content about which A and B disagree.",
+          "corpus_chunk": 46797
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Unlike the truth-absolutist, however, the new relativist will add that the disagreement is faultless because the proposition affirmed in A’s utterance has a truth value only relative to a judge or standards parameter, and in this case: A’s standards, when A is the assessor, B’s standards, when B is the assessor.",
+          "corpus_chunk": 46798
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "New Relativist views, which endorse truth-relativism locally for some domain of discourse, stand in opposition to the more traditional view of propositional content (what Cappelen & Hawthorne call “The Simple View”) according to which propositions bear truth and falsity as monadic properties (cf. however, MacFarlane 2011a for some resistance to Cappelen & Hawthorne’s claim that this simple characterization should be regarded as the “received” view.) A key source of philosophical motivation for relativizing truth in the fashion of New Relativism traces to Lewis’s (1980) and Kaplan’s (1989) foundational work in semantics, according to which",
+          "corpus_chunk": 46799
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "New Relativists inherit the formal apparatus of Lewis and Kaplan and add another parameter, but their reasons for doing so are quite different from the reasons that motivated the framework in the first place.",
+          "corpus_chunk": 46800
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Kaplan’s view specifically was that the need for particular parameters in the circumstance of evaluation was a function of the non-specificity of certain propositional contents with respect to world, time and location (see Kaplan’s (1989) analysis of indexicals).",
+          "corpus_chunk": 46801
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "This move would open up room for the truth value of a proposition to vary with these “subjective” factors in much the same way that it varies with the world of evaluation.",
+          "corpus_chunk": 46802
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "It is with respect to this general question that different families of New Relativism are generated.",
+          "corpus_chunk": 46803
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "The motivations for truth-relativism in each of these domains include various considerations unique to those domains.",
+          "corpus_chunk": 46803
+        }
+      ],
+      "annotation": "Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics."
+    },
+    {
+      "key": "russell1912",
+      "used_for": [
+        "A change of belief is another change",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "How are we to know, in a given case, that our belief is not erroneous?",
+          "corpus_chunk": 10113
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.",
+          "corpus_chunk": 10115
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.",
+          "corpus_chunk": 10116
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.",
+          "corpus_chunk": 10117
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.",
+          "corpus_chunk": 10118
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.",
+          "corpus_chunk": 10120
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.",
+          "corpus_chunk": 10121
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Hence his belief cannot possibly consist in a relation to this object.",
+          "corpus_chunk": 10122
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.",
+          "corpus_chunk": 10124
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.",
+          "corpus_chunk": 10125
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We are now in a position to understand what it is that distinguishes a true judgement from a false one.",
+          "corpus_chunk": 10126
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.",
+          "corpus_chunk": 10128
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.",
+          "corpus_chunk": 10130
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.",
+          "corpus_chunk": 10131
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.",
+          "corpus_chunk": 10133
+        },
+        {
+          "locator": "ch. XII",
+          "basis": "full text",
+          "excerpt": "Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.",
+          "corpus_chunk": 10133
+        }
+      ],
+      "annotation": "Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence."
+    }
+  ]
+}

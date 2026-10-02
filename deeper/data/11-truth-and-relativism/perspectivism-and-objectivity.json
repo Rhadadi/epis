@@ -1,0 +1,141 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "perspectivism-and-objectivity",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "When can situated inquiry expose limitations and improve criticism without establishing equal accuracy?"
+  ],
+  "sources": [
+    {
+      "key": "baghramian-carter2025",
+      "used_for": [
+        "Two observers, one target",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.4.2",
+          "basis": "full text",
+          "excerpt": "A further distinction is made between weak and strong forms of relativism.",
+          "corpus_chunk": 46684
+        },
+        {
+          "locator": "§ 1.4.2",
+          "basis": "full text",
+          "excerpt": "Such truths need not be true in a relativized sense—true relative to some parameters, false relative to others; rather, such truths are perspectival: real but visible only from a certain angle, i.e., for people who adopt a certain way of life.",
+          "corpus_chunk": 46685
+        }
+      ],
+      "annotation": "Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics."
+    },
+    {
+      "key": "reiss-sprenger2020",
+      "used_for": [
+        "Objectivity has different jobs",
+        "Criticism rather than a pretend absence of position",
+        "Diversity needs a connection to the question",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Before addressing what we will call the “value-free ideal”, it will be helpful to distinguish four stages at which values may affect science.",
+          "corpus_chunk": 13886
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This influence may make science more shallow and slow down its long-run progress, but it has benefits, too: scientists will focus on providing solutions to those intellectual problems that are considered urgent by society and they may actually improve people’s lives.",
+          "corpus_chunk": 13887
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "A further complication is that these values can conflict with each other.",
+          "corpus_chunk": 13887
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Kuhn (1977) even claims that cognitive values define the shared commitments of science, that is, the standards of theory assessment that characterize the scientific approach as a whole.",
+          "corpus_chunk": 13889
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In the Third Reich, a large part of contemporary physics, such as the theory of relativity, was condemned because its inventors were Jewish; in the Soviet Union, biologist Nikolai Vavilov was sentenced to death (and died in prison) because his theories of genetic inheritance did not match Marxist-Leninist ideology.",
+          "corpus_chunk": 13890
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This preference bias, defined by Wilholt (2009) as the infringement of conventional standards of the research community with the aim of arriving at a particular result, is clearly epistemically harmful.",
+          "corpus_chunk": 13891
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "See Dorato (2004: 53–54), Ruphy (2006: 190) or Biddle (2013: 125) for alternative formulations.",
+          "corpus_chunk": 13892
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "This excludes the influence of contextual values, as stated above.",
+          "corpus_chunk": 13892
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Traditional notions of objectivity as faithfulness to facts or freedom of contextual values have also been challenged from a feminist perspective.",
+          "corpus_chunk": 13956
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Often but not always, feminist epistemologists go beyond pointing out what they regard as androcentric bias and reject the value-free ideal altogether—with an eye on the social and moral responsibility of scientific inquiry.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Longino assigns a crucial function to social systems of criticism in securing the epistemic success of science.",
+          "corpus_chunk": 13957
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Even the most implausible beliefs might be true, and even if they are false, they might contain a grain of truth which is worth preserving or helps to better articulate true beliefs (Mill 1859 [2003: 72]).",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Feminist standpoint theory builds on these ideas but focuses on gender, racial and other social relations.",
+          "corpus_chunk": 13959
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The perspectival stance can also explain why criteria for objectivity often vary with context: the relative importance of epistemic virtues is a matter of goals and interests—in other words, standpoint.",
+          "corpus_chunk": 13961
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This idea she refers to as “strong objectivity” replaces the “weak” conception of objectivity in the empiricist tradition: value-freedom, impartiality, rigorous adherence to methods of testing and inference.",
+          "corpus_chunk": 13962
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "To whom does the condition of equally shared intellectual authority apply?",
+          "corpus_chunk": 13962
+        }
+      ],
+      "annotation": "Separates value-free ideals and examines the contribution and limits of social criticism and standpoint proposals."
+    }
+  ]
+}

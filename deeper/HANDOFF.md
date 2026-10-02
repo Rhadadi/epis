@@ -22,7 +22,8 @@ This file adds the workflow and tools.
 | 05–08 | 46 | published (by Codex) |
 | 09 Induction, probability and Bayes | 12 | published |
 | 10 Science and evidence | 18 | published |
-| 11–16 | 0 | to do (list in section 8) |
+| 11 Truth and relativism | 9 | published |
+| 12–16 | 0 | to do (list in section 8) |
 
 After that: the final polish pass (section 9).
 

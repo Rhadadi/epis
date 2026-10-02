@@ -1,0 +1,409 @@
+== 11-truth-and-relativism/perspectivism-and-objectivity
+Q: When can situated inquiry expose limitations and improve criticism without establishing equal accuracy?
+@baghramian-carter2025 | § 1.4.2 | A further distinction is made between weak and strong forms of relativism.
+@baghramian-carter2025 | § 1.4.2 | Such truths need not be true in a relativized sense—true relative to some parameters, false relative to others; rather, such truths are perspectival: real but visible only from a certain angle, i.e., for people who adopt a certain way of life.
+A @baghramian-carter2025: Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics.
+@reiss-sprenger2020 | § 3.1 | Before addressing what we will call the “value-free ideal”, it will be helpful to distinguish four stages at which values may affect science.
+@reiss-sprenger2020 | § 3.1 | This influence may make science more shallow and slow down its long-run progress, but it has benefits, too: scientists will focus on providing solutions to those intellectual problems that are considered urgent by society and they may actually improve people’s lives.
+@reiss-sprenger2020 | § 3.1 | A further complication is that these values can conflict with each other.
+@reiss-sprenger2020 | § 3.1 | Kuhn (1977) even claims that cognitive values define the shared commitments of science, that is, the standards of theory assessment that characterize the scientific approach as a whole.
+@reiss-sprenger2020 | § 3.1 | In the Third Reich, a large part of contemporary physics, such as the theory of relativity, was condemned because its inventors were Jewish; in the Soviet Union, biologist Nikolai Vavilov was sentenced to death (and died in prison) because his theories of genetic inheritance did not match Marxist-Leninist ideology.
+@reiss-sprenger2020 | § 3.1 | This preference bias, defined by Wilholt (2009) as the infringement of conventional standards of the research community with the aim of arriving at a particular result, is clearly epistemically harmful.
+@reiss-sprenger2020 | § 3.1 | See Dorato (2004: 53–54), Ruphy (2006: 190) or Biddle (2013: 125) for alternative formulations.
+@reiss-sprenger2020 | § 3.1 | This excludes the influence of contextual values, as stated above.
+@reiss-sprenger2020 | § 5.2 | Traditional notions of objectivity as faithfulness to facts or freedom of contextual values have also been challenged from a feminist perspective.
+@reiss-sprenger2020 | § 5.2 | Often but not always, feminist epistemologists go beyond pointing out what they regard as androcentric bias and reject the value-free ideal altogether—with an eye on the social and moral responsibility of scientific inquiry.
+@reiss-sprenger2020 | § 5.2 | Longino assigns a crucial function to social systems of criticism in securing the epistemic success of science.
+@reiss-sprenger2020 | § 5.2 | Even the most implausible beliefs might be true, and even if they are false, they might contain a grain of truth which is worth preserving or helps to better articulate true beliefs (Mill 1859 [2003: 72]).
+@reiss-sprenger2020 | § 5.2 | Feminist standpoint theory builds on these ideas but focuses on gender, racial and other social relations.
+@reiss-sprenger2020 | § 5.2 | The perspectival stance can also explain why criteria for objectivity often vary with context: the relative importance of epistemic virtues is a matter of goals and interests—in other words, standpoint.
+@reiss-sprenger2020 | § 5.2 | This idea she refers to as “strong objectivity” replaces the “weak” conception of objectivity in the empiricist tradition: value-freedom, impartiality, rigorous adherence to methods of testing and inference.
+@reiss-sprenger2020 | § 5.2 | To whom does the condition of equally shared intellectual authority apply?
+A @reiss-sprenger2020: Separates value-free ideals and examines the contribution and limits of social criticism and standpoint proposals.
+
+== 11-truth-and-relativism/post-truth-and-bullshit
+Q: How does truth-indifference differ from error and deception, and what evidence supports judgments of accountability?
+@hansson2025 | § 7.4 | The term “bullshit” was introduced into philosophy by Harry Frankfurt, who first discussed it in a 1986 essay and later developed the discussion into a book (Frankfurt 1986; 2005).
+A @hansson2025: Provides a short secondary account of Frankfurt’s truth-indifference distinction and Moberger’s proposal about pseudoscience.
+@glanzberg2025 | § 6.6 | The relation between truth and meaning is not the only place where truth and language relate closely.
+@glanzberg2025 | § 6.6 | The platitude holds that it is constitutive of the practice of making assertions that assertions aim at truth.
+@glanzberg2025 | § 6.6 | But among those who accept that it does, the place of truth in the constitutive rules is itself controversial.
+A @glanzberg2025: Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms.
+
+== 11-truth-and-relativism/realism-and-anti-realism
+Q: How do knowability, bivalence, verification, and semantic adequacy interact in particular formulations of realism?
+@glanzberg2025 | § 4.1 | In discussing the approach to correspondence of section 3.1, we noted that it has few ontological requirements.
+@glanzberg2025 | § 4.1 | The world that we represent in our thoughts or language is an objective world.
+@glanzberg2025 | § 4.1 | Any theory that provides objective relations of reference and satisfaction, and builds up a theory of truth from them, would give a form of realism.
+@glanzberg2025 | § 4.1 | At the very least, it captures a great deal of what is more loosely put in the statement of realism above.
+@glanzberg2025 | § 4.1 | Devitt (1984) offers an opposing view to the kind we have sketched here, which rejects any characterization of realism in terms of truth or other semantic concepts.) In light of our discussion in section 1.1.1, we should pause to note that the connection between realism and the correspondence theory of truth is not absolute.
+@glanzberg2025 | § 4.1 | For more on realism and truth, see Fumerton 2002 and the entry on realism.
+@glanzberg2025 | § 4.2 | It should come as no surprise that the relation between truth and metaphysics seen by modern realists can also be exploited by anti-realists.
+@glanzberg2025 | § 4.2 | The claim is not that verification is the most important epistemic notion, but that truth just is verifiability.
+@glanzberg2025 | § 4.2 | Insofar as this really would be in principle unverifiable, we have no reason to maintain it is true or false according to the verificationist theory of truth.
+@glanzberg2025 | § 4.2 | At the same time, the idea of truth as warranted assertibility or verifiability reiterates a theme from the pragmatist views of truth we surveyed in section 1.3.
+@glanzberg2025 | § 4.2 | How an anti-realist is to explain the basic concepts that go into a Tarskian theory is a delicate matter.
+@glanzberg2025 | § 4.3 | Many commentators see a close connection between Dummett’s anti-realism and the pragmatists’ views of truth, in that both put great weight on ideas of verifiability or assertibility.
+@glanzberg2025 | § 4.3 | Insofar as these are human attitudes or relate to human actions, Davidson grants there is some affinity between his views and those of some pragmatists (especially, he says, Dewey).
+A @glanzberg2025: Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms.
+
+== 11-truth-and-relativism/relativism
+Q: What distinguishes scope, framework dependence, changed content, and changed assessment, and which objections target each thesis?
+@baghramian-carter2025 | § 1.1 | A standard way of defining and distinguishing between different types of relativism is to begin with the claim that a phenomenon x (e.g., values, epistemic, aesthetic and ethical norms, experiences, judgments, and even the world) is somehow dependent on and co-varies with some underlying, independent variable y (e.g., paradigms, cultures, conceptual schemes, belief systems, language).
+@baghramian-carter2025 | § 1.1 | However, of the three examples cited above, normally only (a) and (b) are deemed relevant to philosophical discussions of relativism, for one main attraction of relativism is that it offers a way of settling (or explaining away) what appear to be profound disagreements on questions of value, knowledge and ontology and the relativizing parameter often involves people, their beliefs, cultures or languages.
+@baghramian-carter2025 | § 1.1 | Such classifications have been proposed by Haack (1996), O’Grady (2002), Baghramian (2004), Swoyer (2010), and Baghramian & Coliva (2019).
+@baghramian-carter2025 | § 1.1 | s different relativistic positions according to what is being relativized, or its objects, and what is being relativized to, or its domains. (I) Individual’s viewpoints and preferences (II) Historical Epochs (III) Cultures, society, social groupings (IV) Conceptual schemes, languages, frameworks (V) Context of assessment, e.g., taste parameter, assessor’s/agent’s set of beliefs (A) Cognitive norms, e.g., rationality, logic Alethic Subjectivism/ Epistemic Subjectivism Alethic and Epistemic Historicism Alethic Cultural Relativism/ Epistemic Cultural Relativism Alethic Relativism/Epistemic Relativism Alethic Relativism (B) Moral values Moral
+@baghramian-carter2025 | § 1.1 | In practice, however, much contemporary discussions of relativism focus on subjectivism, historicism, cultural relativism and conceptual relativism, along the axis of y, and cognitive/epistemic relativism, ethical or moral relativism and aesthetic relativism, along the axis of x.
+@baghramian-carter2025 | § 1.2 | A second approach to defining relativism casts its net more widely by focusing primarily on what relativists deny.
+@baghramian-carter2025 | § 1.2 | Monism or the view that, in any given area or topic subject to disagreement, there can be no more than one correct opinion, judgment, or norm.
+@baghramian-carter2025 | § 1.2 | What justifies the appellation ‘relativist’, rather than ‘skeptic’, is not only these philosophers’ suspicion of the possibility of objectivity but their insistence on the role of socio-historical, psychological and textual contexts in accounts of ‘truth’ and ‘knowledge’ claims.
+@baghramian-carter2025 | § 1.3 | What also binds various forms of relativism is an underlying idea that claims to truth, knowledge or justification have an implicit, maybe even unnoticed, relationship to a parameter or domain.
+@baghramian-carter2025 | § 1.3 | The resulting sentence(s) turns out to be true, according to the relativist, depending on how we fill in the “…”.
+@baghramian-carter2025 | § 1.3 | Thus on the hidden parameter account, a consequence is that the relevant claims will be true, if at all, only relative to some parameter.
+@baghramian-carter2025 | § 1.3 | Relativism, according to this approach, is the claim that a statement of the form “A is P” within a given domain (e.g., science, ethics, metaphysics, etc.) is elliptical for the statement “A is P in relation to C”, where A stands for an assertion, belief, judgment or action, P stands for a predicate such as “true”, “beautiful”, “right”, “rational”, “logical”, “known” etc., and C stands for a specific culture, epistemic framework, language, belief-system, etc.
+@baghramian-carter2025 | § 1.3 | Moreover, as we shall see, since various subdivisions of relativism appearing in table 1 could, with appropriate modification, be expressed as claims about the truth of sentences falling in a particular domain, then the hidden predicate approach is applicable to them as well.
+@baghramian-carter2025 | § 1.4.1 | A further consideration relevant to defining relativism is its scope.
+@baghramian-carter2025 | § 1.4.1 | As we will see, global relativism is open to the charge of inconsistency and self-refutation, for if all is relative, then so is relativism.
+@baghramian-carter2025 | § 1.4.2 | A further distinction is made between weak and strong forms of relativism.
+@baghramian-carter2025 | § 1.4.2 | Such truths need not be true in a relativized sense—true relative to some parameters, false relative to others; rather, such truths are perspectival: real but visible only from a certain angle, i.e., for people who adopt a certain way of life.
+@baghramian-carter2025 | § 2.1 | Data regarding diversity of belief systems, conceptual frameworks and ways of life have frequently been used by philosophers and anthropologists alike to give credibility to philosophical arguments for relativism (For example see Hollis & Lukes 1982 and Wilson 1970).
+@baghramian-carter2025 | § 2.1 | The observed radical differences among cultures, it is argued, show the need for a relativistic assessment of value systems and conceptual commitments.
+@baghramian-carter2025 | § 2.1 | The anti-relativist may concede the point and insist that where such disagreements exist, at most one view is correct and the rest mistaken.
+@baghramian-carter2025 | § 2.2 | There is not only a marked diversity of views on questions of right and wrong, truth and falsehood, etc., but more significantly, many disputes arising from such differences seem intractable.
+@baghramian-carter2025 | § 2.2 | Their disagreement is faultless (Kölbel 2004; Brogaard 2007; Hales 2014).
+@baghramian-carter2025 | § 2.2 | Relativism accordingly offers a revisionary account of what it means to disagree (e.g., MacFarlane 2007, 2014; see §5 where the point has been discussed in some detail); but it is not clear if the account can explain what is left of a disagreement to preserve once we allow that both parties to a disagreement could be right (Carter 2013; Dreier 2009).
+@baghramian-carter2025 | § 2.2 | According to Rovane, relativism is motivated by the existence of truths that cannot be embraced together, not because they contradict and hence disagree with each other but because they are not universal truths.
+@baghramian-carter2025 | § 2.2 | Furthermore, some relativists argue that the pervasiveness of seemingly intractable moral disagreements observed within and across cultures supports relativism, suggesting that deep ethical disputes indicate multiple, equally valid moral truths relative to different frameworks.
+@baghramian-carter2025 | § 2.2 | This suggests that (moral) relativism stands in tension with the very notion of substantive moral disagreement we regularly appeal to describe our commitments to contested moral claims.
+@baghramian-carter2025 | § 2.3 | Additionally, the relativistically inclined find further support for their position in the contention that there is no meta-justification of our evaluative or normative systems, that all justifications have to start and end somewhere (see Sankey 2010 and 2011) and that there are no higher-order or meta-level standards available for adjudicating clashes between systems in a non-question begging way.
+@baghramian-carter2025 | § 2.3 | The scientific revolution of the early 20th century, brought about by, for instance, the advent of Relativity Theory and Quantum Mechanics and the loss of faith in lasting religious or political truths (Marxism in particular), as well as the failure of foundationalist philosophical programs have been used in arguments to vindicate relativistic views (for relativism about science see §4.4.3).
+@baghramian-carter2025 | § 2.6 | Advocates of relativism, particularly outside philosophical circles, often cite tolerance as a key normative reason for becoming a relativist.
+@baghramian-carter2025 | § 2.6 | Relativists counter that they are not defending a global version of relativism regarding all truths and justification but local versions concerning the ethics and politics of belief and the usefulness of relativism in our attempt to become better, or at least more flexible and less dogmatic, thinkers and more tolerant citizens (e.g., Feyerabend 1978: 82–84).
+@baghramian-carter2025 | § 2.6 | As Knobe and Nichols point out, simply being made aware of radically different view points can lead to a: …crisis akin to that of the [Christian] child confronted with religious diversity… For the discovery of religious diversity can prompt the thought that it’s in some sense accidental that one happens to be raised in a Christian household rather than a Hindu household.
+@baghramian-carter2025 | § 2.6 | The idea that a relativistic stance involves the manifesting of intellectually beneficial attitudes has been championed by, along with Bloor, Feyerabend (1975) and Code (1995), the latter of whom have emphasised the value of emancipatory thinking, e.g., thinking that is not artificially constrained by attempts to “enforce a universalist truth”.
+@baghramian-carter2025 | § 4.3 | Relativism about truth, or alethic relativism, at its simplest, is the claim that what is true for one individual or social group may not be true for another, and there is no context-independent vantage point to adjudicate the matter.
+@baghramian-carter2025 | § 4.3 | Ethical relativism can be seen as the claim that the truth of ethical judgments, if such truths exist, is relative to context or culture.
+@baghramian-carter2025 | § 4.3 | And within the broad camp of alethic relativists, the matter of how it is that which we should opt for “P-is-true-for-X”, rather than “P is true”, simpliciter, is developed in different ways (e.g., see Meiland 1977; MacFarlane 2014: ch. 5; Egan 2007; Ferrari & Moruzzi 2018; Merlo & Pravato 2020).
+@baghramian-carter2025 | § 4.3 | Much of the work of New Relativists such as John MacFarlane (see §5) can be see as an attempt to clarify this thorny issue.
+@baghramian-carter2025 | § 4.3.1 | The strongest and most persistent charge leveled against all types of relativism, but (global) alethic relativism in particular, is the accusation of self-refutation.
+@baghramian-carter2025 | § 4.3.1 | Constructing a conception of relative truth such that “p is relatively true” (or “p is true for S”, or “p is true for members of culture C”) amounts to something stronger than “S believes that p” (or “members of culture C believe that p”), but weaker than “p is true (simpliciter)”, has proved to be quite difficult, and is arguably beyond the conceptual resources available to the relativist.
+@baghramian-carter2025 | § 4.3.1 | By his own doctrine, Protagoras must believe that his opponents’ view is true.
+@baghramian-carter2025 | § 4.3.1 | Ordinarily, the very act of defending a philosophical position commits us to the dialectical move of attempting to convince our interlocutors of the superior value of what we are arguing for.
+@baghramian-carter2025 | § 4.3.1 | In other words, if Protagoras really believes in relativism why would he bother to argue for it?
+@baghramian-carter2025 | § 4.3.1 | However, it is not clear how the relativist could share a framework with the absolutist on the nature of truth or what argumentative strategies he can use to convert the absolutist without presupposing a shared (relativist or absolutist) conceptions of truth.
+@baghramian-carter2025 | § 4.3.1 | A good example of such a defense is Hales’ (1997)—who uses a “u” operator to represent “It is true in some perspectives that” and a “n” operator to represent “It is true in all perspectives that”—in order to establish that there could indeed be a consistent relativist logic which avoids the charge of self-refutation.
+@baghramian-carter2025 | § 4.3.1 | It has also been claimed that alethic relativism gives rise to what J.L.
+@baghramian-carter2025 | § 4.3.1 | The relativists however, could respond that truth is relative to a group (conceptual scheme, framework) and they take speakers to be aiming a truth relative to the scheme that they and their interlocutors are presumed to share.
+@baghramian-carter2025 | § 4.3.1 | Languages are either inter-translatable and hence not radically different from ours, or incommensurable and beyond our ability to recognize them as languages (Davidson 1974).
+@baghramian-carter2025 | § 4.4 | Claims to knowledge and justification have proven receptive to relativistic interpretations.
+@baghramian-carter2025 | § 4.4 | Carter 2015) The epistemic relativist, as Paul Boghossian in developing his trenchant criticisms of relativism points out, is committed to a “doctrine of equal validity” (though cf., Pérez-Navarro 2022), the view that “there are many radically different, incompatible, yet, ‘equally valid’ ways of knowing the world, with science being just one of them” (Boghossian 2006a: 2).
+@baghramian-carter2025 | § 4.4 | A simple and quite commonly used example is the contrast between scientific and religious belief systems.
+@baghramian-carter2025 | § 4.4 | The question of whether disagreements between interlocutors who embrace different frameworks are genuinely intractable or “epistemically incommensurable” has been a significant point of debate in recent hinge epistemology (Pritchard 2011, 2021; Ranalli 2020; Piedrahita 2021; Carter 2017; Coliva 2019).
+@baghramian-carter2025 | § 4.4 | If—and this remains a point of dispute among hinge epistemologists—there are genuinely alternative sets of hinge propositions (propositions of which one is most certain), then the Wittgensteinian idea that we can justify the less certain only by the more certain may problematize the very possibility of avoiding epistemic incommensurability when interlocutors begin with fundamentally different frameworks.
+@baghramian-carter2025 | § 4.4 | Boghossian has been criticized however for his characterization of epistemic relativism.
+@baghramian-carter2025 | § 4.4 | And on this basis, Boghossian concludes that there is no coherent way to formulate the position because the relativist in formulating his position and setting up the opposition between two or more alternative non-convergent epistemic systems cannot but assume the universality of at least some epistemic principles, including deduction, induction, warrant through empirical evidence, etc.
+@baghramian-carter2025 | § 4.4 | ail to take seriously the thesis that claims such as [Evidence E justifies belief B] can indeed by true or false, albeit only relatively so. (Wright 2008: 383, our italics) Moreover, Wright argues, the epistemic relationist clause Boghossian includes in the kind of epistemic relativism he challenges betrays a failure to distinguish between (i) making a judgment in the light of certain standards and (ii) judging that those standards mandate that judgment. (See also MacFarlane (2008b and Carter & McKenna forthcoming for different critiques of Boghossian’s argument against the epistemic relativist.) Conceptions of rationality, and its key
+@baghramian-carter2025 | § 5.1 | It is a commonplace that the truth-value of an utterance can depend on the context in which it is uttered.
+@baghramian-carter2025 | § 5.1 | On this point, New Relativists claim an important advantage over contextualists.
+@baghramian-carter2025 | § 5.1 | And, as a further point of clarification here: while the contextualist can, no less than the relativist, recognize a “standards” or “judge” parameter, for the contextualist, its value will be supplied by the context of use, whereas the relativist takes it to be supplied completely independently of the context of use, by the context of evaluation (or, as MacFarlane calls it, the context of assessment).
+@baghramian-carter2025 | § 5.1 | A utters, “Pretzels are tasty”, and B utters, “Pretzels are not tasty”.
+@baghramian-carter2025 | § 5.1 | This maneuver avoids the result that at least one of the two parties has uttered something false, but (as the new relativist points out) this result comes at the price of being unable to offer a clear explanation of our intuition that there is some uniform content about which A and B disagree.
+@baghramian-carter2025 | § 5.1 | Unlike the truth-absolutist, however, the new relativist will add that the disagreement is faultless because the proposition affirmed in A’s utterance has a truth value only relative to a judge or standards parameter, and in this case: A’s standards, when A is the assessor, B’s standards, when B is the assessor.
+@baghramian-carter2025 | § 5.1 | New Relativist views, which endorse truth-relativism locally for some domain of discourse, stand in opposition to the more traditional view of propositional content (what Cappelen & Hawthorne call “The Simple View”) according to which propositions bear truth and falsity as monadic properties (cf. however, MacFarlane 2011a for some resistance to Cappelen & Hawthorne’s claim that this simple characterization should be regarded as the “received” view.) A key source of philosophical motivation for relativizing truth in the fashion of New Relativism traces to Lewis’s (1980) and Kaplan’s (1989) foundational work in semantics, according to which
+@baghramian-carter2025 | § 5.1 | New Relativists inherit the formal apparatus of Lewis and Kaplan and add another parameter, but their reasons for doing so are quite different from the reasons that motivated the framework in the first place.
+@baghramian-carter2025 | § 5.1 | Kaplan’s view specifically was that the need for particular parameters in the circumstance of evaluation was a function of the non-specificity of certain propositional contents with respect to world, time and location (see Kaplan’s (1989) analysis of indexicals).
+@baghramian-carter2025 | § 5.1 | This move would open up room for the truth value of a proposition to vary with these “subjective” factors in much the same way that it varies with the world of evaluation.
+@baghramian-carter2025 | § 5.1 | It is with respect to this general question that different families of New Relativism are generated.
+@baghramian-carter2025 | § 5.1 | The motivations for truth-relativism in each of these domains include various considerations unique to those domains.
+@baghramian-carter2025 | § 5.6.1 | Two assertion-related objections to New Relativism arise from work by Gareth Evans (1985) and Robert Stalnaker (1978), respectively.
+@baghramian-carter2025 | § 5.6.1 | A related assertion-based challenge to truth-relativism emerges by appeal to Stalnaker’s (1978) belief transfer model of assertion (cf. 2011).
+@baghramian-carter2025 | § 5.6.1 | Thus, and more generally, it’s not clear what, exactly, could be said to be transferred and a fortiori asserted.
+A @baghramian-carter2025: Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics.
+@plato-theaetetus | 171a–c | THEODORUS: Yes, indeed, Socrates, thousands and tens of thousands, as Homer says, who give me a world of trouble.
+@plato-theaetetus | 171a–c | THEODORUS: That would follow if the truth is supposed to vary with individual opinion.
+@plato-theaetetus | 171a–c | SOCRATES: And the truth of Protagoras being doubted by all, will be true neither to himself to any one else?
+@plato-theaetetus | 171a–c | And does he not allow that his own opinion is false, if he admits that the opinion of those who think him false is true?
+A @plato-theaetetus: Public-domain Jowett translation of Socrates’s self-application objection in the Protagoras discussion.
+
+== 11-truth-and-relativism/social-constructionism
+Q: What is constructed, by which causal or constitutive relation, and how can classifications affect their subjects?
+@mallon2026 | § 1.2 | Social constructionist claims are made about so many different objects that it is perhaps not surprising to find that such claims have different implications depending upon the different objects at which they are directed.
+@mallon2026 | § 1.2 | But “construction” talk has a more or less independent, but equally contentious life in the “human nature wars” where it labels the position that human traits (for example the emotions) or human kinds (which we can think of categories whose members share traits or clusters of traits, including, especially, dispositions to think and behave) are produced by culture rather than by biology or nature.
+@mallon2026 | § 1.2 | The most pronounced disputes are prima facie concerned with whether the clustering of traits in, for example, sex difference, emotional behavior, or mental illness, are caused by a cultural practice of differentiating persons or are instead caused by natural processes operating in relative independence from culture.
+@mallon2026 | § 1.2 | Contemporary Philosophical Debates” in the entry on race.) We consider naturalistic approaches to the construction of representations and human traits in more detail below, but it is useful to first distinguish global constructionist claims that hold that every fact is a social construction, from local constructionist claims that hold that only particular facts are.[3] Because of their provocative nature, many philosophers associate the term “social construction” with a global thesis, and a standard argument against global constructionism concerns whether such a program is sustainable in the face of the regress such a global thesis engenders
+@mallon2026 | § 1.2 | Philosophers may have focused on these more radical claims in part because of the recognition that, relying on something like the general idea of construction sketched above, claims that are relatively global in scope are quite provocative and surprising while claims that would count as locally socially constructionist are quite familiar in many areas of philosophy, perhaps most importantly in meta-ethics, aesthetics, and social ontology.
+@mallon2026 | § 1.2 | This is the role that they play in the philosophy of psychiatry (Hacking 1995a, Scheff 1984, Showalter 1996, cf.
+@mallon2026 | § 1.3 | We have already suggested that the core idea of constructionism is that some social agent produces or controls some object.
+@mallon2026 | § 1.3 | The first, and more straightforward idea is causal construction: X causally constructs Y if and only if X causes Y to exist or to persist or X controls the kind-typical properties of Y.[8] There is no special problem posed by the claim that human social and linguistic activities cause certain things to exist or persist, or to cause certain facts to be.
+@mallon2026 | § 1.3 | In this vein, most discussions of social construction have thus distinguished causal from constitutive forms of determination.
+@mallon2026 | § 1.3 | It is metaphysically possible, however unlikely, that we could walk across a heath and find (something with the intrinsic features of) a watch that had “always been there.” In contrast, the best candidates for constitutive construction are social facts: For social facts, the attitude that we take toward the phenomenon is partly constitutive of the phenomenon … Part of being a cocktail party is being thought to be a cocktail party; part of being a war is being thought to be a war.
+@mallon2026 | § 1.3 | A similar idea has been influential in constructionist discussions.
+@mallon2026 | § 3.2.2 | Naturalist interpretations of constructionism have also taken up the distinct, open-ended, empirical project of defending substantive claims regarding the development and distribution of human traits via the suggestions that human socio-linguistic behaviors shape human traits (including behavior) via different avenues, both developmental and situational.
+@mallon2026 | § 3.2.2 | The idea is that the conception of a certain kind of person shapes both a widespread social response (e.g. one that exculpates and perhaps encourages kind-typical behaviors), while at the same time, the conception shapes individual “performances” of the behavior in question (by suggesting highly specific avenues of behavior).
+@mallon2026 | § 3.2.2 | On Hacking’s model, one he calls “the looping effect of human kinds,” the conception of the behavior may be part of an epistemic project of understanding a human kind that in turn gives rise to the clusters of traits that the theory represents (thereby providing epistemic support for the conception).[12] Much of Hacking’s own recent work has been aimed at providing detailed historical and cultural evidence that suggests that looping effects really are a feature of (at least modern) human social life, e.g. for the American epidemic of multiple personality disorder that started in the 1980s (Hacking 1995) or the European epidemic of fugue in
+@mallon2026 | § 3.2.2 | Hacking makes further claims about the “looping effect,” for example, that looping effects mark “a cardinal difference between the traditional natural and social sciences” because “the targets of the natural sciences are stationary” while “the targets of the social sciences are on the move” (1999, 108) ),claims that themselves have spurred lively discussions over the nature of looping effects (e.g.
+@mallon2026 | § 3.2.2 | Together with Hacking’s work, these accounts provide partial, causal interpretation of even quite radical claims about kinds of person.
+@mallon2026 | § 3.2.2 | Such a causal model of the way in which social roles might shape behavior is at least arguably naturalistic in all of the above senses.
+A @mallon2026: Distinguishes targets, causal and constitutive construction, and the mechanisms and disputes surrounding looping effects.
+
+== 11-truth-and-relativism/the-liar-paradox
+Q: Which principles generate the simple and strengthened liar, and what do typed and non-classical responses change?
+@beall-etal2026 | § 1.1 | Consider a sentence named ‘FLiar’, which says of itself (i.e., says of FLiar) that it is false.
+@beall-etal2026 | § 1.1 | An obvious response is to deny that every sentence is true or false, i.e., to deny the principle of bivalence.
+@beall-etal2026 | § 1.2 | Rather than work with falsehood, we can construct a Liar sentence with the complex predicate ‘not true’.[2] Consider a sentence named ‘ULiar’ (for ‘un-true’), which says of itself that it is not true.
+@beall-etal2026 | § 1.2 | Even so, every sentence is either true or something other than true, i.e. not true.
+@beall-etal2026 | § 1.2 | But this is what ULiar says, so we conclude ULiar, from which we infer that ULiar is true, which is a contradiction.
+@beall-etal2026 | § 2.2 | The tradition, going back to Tarski (1935), is that the behavior of the truth predicate \(\Tr\) is described by the following biconditional.
+@beall-etal2026 | § 2.2 | Thus, we should stop to consider what principles should govern the truth predicate \(\Tr\) if classical logic is not to hold.
+@beall-etal2026 | § 2.2 | For our discussion, we think of it in so-called rule form: that the argument from A to B is valid, which we record (as above) via the turnstile.
+@beall-etal2026 | § 2.2 | As we discuss more in section 4.1, this is important to some views of the nature of truth.
+@beall-etal2026 | § 2.2 | We prefer the broader terminology, since it highlights a general form of behavior common to a great variety of predicates and operators, e.g., knowledge releases but doesn’t capture; possibility captures but doesn’t release; and so on; and truth is special in doing both.)
+@beall-etal2026 | § 4.1.1 | According to paracomplete approaches to the Liar, the main lesson of the Liar is that LEM ‘fails’ in some sense.
+@beall-etal2026 | § 4.1.1 | There have been many proposals for using such non-classical logics to address the Liar.
+@beall-etal2026 | § 4.1.1 | In fact, there are no logical truths (or valid sentences) according to \(K_3\), even though there are valid inferences in it.
+@beall-etal2026 | § 4.1.1 | The predicate \(\Tr\) is taken to be applicable to every sentence of the expanded language \(\mathcal{L}^{+}_0\), including those of the original \(\mathcal{L}_0\).
+@beall-etal2026 | § 4.1.1 | The extension and anti-extension are mutually exclusive, but they need not jointly exhaust the domain of \(\mathcal{M}_0\).
+@beall-etal2026 | § 4.1.2 | As we mentioned, two important approaches to the Liar paradox that focus on non-classical logics are paracomplete and paraconsistent approaches.
+@beall-etal2026 | § 4.1.2 | Indeed, Priest (2006) argues that this (non-transparency) view of truth motivates both the T-schema and LEM, and that this implies that the Liar sentence L is both true and not true.
+@beall-etal2026 | § 4.1.2 | However, as we discuss further in section 4.1.3, just how to describe both gaps and gluts is a delicate matter.
+@beall-etal2026 | § 4.3.1 | Classical solutions to the Liar must give up at least one of unrestricted capture and unrestricted release.
+@beall-etal2026 | § 4.3.1 | In fact, Tarski notices that, if the language in which A is defined could define truth for itself, then a paradox – the Liar paradox – would immediately ensue.
+@beall-etal2026 | § 4.3.1 | This means that, in the above schema, \(Ax\) should belong to \(\mathcal{L}_1\), and B to \(\mathcal{L}_0\).
+@beall-etal2026 | § 4.3.1 | Such sentences, however, are inert, since truth-theoretical principles do not apply to them.
+@beall-etal2026 | § 4.3.1 | One way to ameliorate the situation is to iterate the typed construction.
+A @beall-etal2026: Reconstructs the simple and strengthened liars, truth principles, and typed, paracomplete, and paraconsistent responses.
+
+== 11-truth-and-relativism/theories-of-truth
+Q: Which tasks do correspondence, coherence, pragmatism, semantic definitions, deflationism, and pluralism address, and where do their commitments overlap?
+@russell1912 | ch. XII | How are we to know, in a given case, that our belief is not erroneous?
+@russell1912 | ch. XII | There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.
+@russell1912 | ch. XII | If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.
+@russell1912 | ch. XII | If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.
+@russell1912 | ch. XII | It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.
+@russell1912 | ch. XII | The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.
+@russell1912 | ch. XII | Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.
+@russell1912 | ch. XII | Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.
+@russell1912 | ch. XII | The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.
+@russell1912 | ch. XII | Hence his belief cannot possibly consist in a relation to this object.
+@russell1912 | ch. XII | Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.
+@russell1912 | ch. XII | When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.
+@russell1912 | ch. XII | This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.
+@russell1912 | ch. XII | We are now in a position to understand what it is that distinguishes a true judgement from a false one.
+@russell1912 | ch. XII | Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.
+@russell1912 | ch. XII | We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.
+@russell1912 | ch. XII | Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.
+@russell1912 | ch. XII | Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.
+@russell1912 | ch. XII | Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.
+@russell1912 | ch. XII | A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.
+@russell1912 | ch. XII | Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.
+@russell1912 | ch. XII | What makes a belief true is a _fact_, and this fact does not (except in exceptional cases) in any way involve the mind of the person who has the belief.
+A @russell1912: Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence.
+@glanzberg2025 | Preamble | Truth has been a topic of discussion in its own right for thousands of years.
+@glanzberg2025 | Preamble | There are a number of book-length surveys of the topics discussed here, including Beall & Middleton 2024, Blackburn 2018, Burgess & Burgess 2011, Kirkham 1992, and Künne 2003.
+@glanzberg2025 | § 1 | Much of the contemporary literature on truth takes as its starting point some ideas which were prominent in the early part of the 20th century.
+@glanzberg2025 | § 1 | In some cases, the received forms of these theories depart from the views that were actually defended in the early 20th century.
+@glanzberg2025 | § 1.1.1 | The basic idea of the correspondence theory is that what we believe or say is true if it corresponds to the way things actually are – to the facts.
+@glanzberg2025 | § 1.1.1 | An overview of these issues is given in Baldwin 2018.) In this period, Moore and Russell hold a version of the identity theory of truth.
+@glanzberg2025 | § 1.1.1 | Furthermore, taking up an idea familiar to readers of Moore, the property of truth is a simple unanalyzable property.
+@glanzberg2025 | § 1.1.1 | A full answer to this question is a point of scholarship that would take us too far afield.
+@glanzberg2025 | § 1.1.1 | As Russell (1956, p. 223) later says, propositions seem to be at best “curious shadowy things” in addition to facts.
+@glanzberg2025 | § 1.1.1 | But let us put the assessment of the arguments aside, and continue the story.
+@glanzberg2025 | § 1.1.2 | The correspondence theory of truth is at its core an ontological thesis: a belief is true if there exists an appropriate entity – a fact – to which it corresponds.
+@glanzberg2025 | § 1.1.2 | For more recent extensive discussions of facts, see Armstrong 1997 and Neale 2001.) Consider, for example, the belief that Ramey sings.
+@glanzberg2025 | § 1.1.2 | One of the standing objections to the classical correspondence theory is that a fully adequate explanation of correspondence proves elusive.
+@glanzberg2025 | § 1.1.2 | At least, for simple beliefs like that Ramey sings, the proposition has the same subject predicate structure as the sentence.
+@glanzberg2025 | § 1.1.2 | We have sketched this view for simple propositions like the proposition that Ramey sings.
+@glanzberg2025 | § 1.1.2 | This theory offers us a paradigm example of a correspondence theory of truth.
+@glanzberg2025 | § 1.2 | Though initially the correspondence theory was seen by its developers as a competitor to the identity theory of truth, it was also understood as opposed to the coherence theory of truth.
+@glanzberg2025 | § 1.2 | We will not attempt a full exposition of Joachim’s view, which would take us well beyond the discussion of truth into the details of British idealism.
+@glanzberg2025 | § 1.2 | To flesh out Joachim’s theory, we would have to explain what a significant whole is.
+@glanzberg2025 | § 1.2 | As with the correspondence theory, it can be put in a slogan: A belief is true if and only if it is part of a coherent system of beliefs.
+@glanzberg2025 | § 1.2 | Far from being a matter of whether the world provides a suitable object to mirror a proposition, truth is a matter of how beliefs are related to each-other.
+@glanzberg2025 | § 1.2 | Combining this with the thesis that a fully justified belief is true forms an argument for the coherence theory of truth.
+@glanzberg2025 | § 1.2 | See Baldwin 1991 for some discussion.) However, it is hard to see much of a way to hold the coherence theory of truth without maintaining some form of idealism.
+@glanzberg2025 | § 1.2 | The coherence theory requires some metaphysics which can make the world somehow reflect this, and idealism appears to be it.
+@glanzberg2025 | § 1.3 | A different perspective on truth was offered by the American pragmatists.
+@glanzberg2025 | § 1.3 | However, the contemporary literature does not seem to have firmly settled upon a received ‘neo-classical’ pragmatist theory.
+@glanzberg2025 | § 1.3 | As Haack also notes, James maintains an important verificationist idea: truth is what is verifiable.
+@glanzberg2025 | § 2 | Many of these modern theories, notably correspondence theories, draw on ideas developed by Tarski.
+@glanzberg2025 | § 2.1 | In the classical debate on truth at the beginning of the 20th century we considered in section 1, the issue of truth-bearers was of great significance.
+@glanzberg2025 | § 2.1 | But it should be stressed that for this discussion, sentences are fully interpreted sentences, having meanings.
+@glanzberg2025 | § 2.1 | In some places (e.g., 1944), Tarski refers to his view as the ‘semantic conception of truth’.
+@glanzberg2025 | § 2.2 | Let us suppose we have a fixed language \(\mathbf{L}\) whose sentences are fully interpreted.
+@glanzberg2025 | § 2.2 | Given the assumption that \(\mathbf{L}\) is fully interpreted, we may assume that each sentence \(\ulcorner \phi \urcorner\) in fact has a truth value.
+@glanzberg2025 | § 2.3 | Tarski does not merely propose a condition of adequacy for theories of truth, he also shows how to meet it.
+@glanzberg2025 | § 2.3 | \urcorner\) is true. \(\ulcorner \neg \phi \urcorner\) is true if and only if it is not the case that \(\ulcorner \phi \urcorner\) is true. This theory satisfies Convention T.
+@glanzberg2025 | § 2.4 | This may look trivial, but in defining an extensionally correct truth predicate for an infinite language with four clauses, we have made a modest application of a very powerful technique.
+@glanzberg2025 | § 2.4 | Base clauses: ‘Snow’ refers to snow. ‘Grass’ refers to grass. a satisfies ‘is white’ if and only if a is white. a satisfies ‘is green’ if and only if a is green.
+@glanzberg2025 | § 2.4 | Tarski goes on to demonstrate some key applications of such a theory of truth.
+@glanzberg2025 | § 4.2 | It should come as no surprise that the relation between truth and metaphysics seen by modern realists can also be exploited by anti-realists.
+@glanzberg2025 | § 4.2 | The claim is not that verification is the most important epistemic notion, but that truth just is verifiability.
+@glanzberg2025 | § 4.2 | Insofar as this really would be in principle unverifiable, we have no reason to maintain it is true or false according to the verificationist theory of truth.
+@glanzberg2025 | § 4.2 | At the same time, the idea of truth as warranted assertibility or verifiability reiterates a theme from the pragmatist views of truth we surveyed in section 1.3.
+@glanzberg2025 | § 4.2 | How an anti-realist is to explain the basic concepts that go into a Tarskian theory is a delicate matter.
+@glanzberg2025 | § 4.4 | Another view that has grown out of the literature on realism and anti-realism, and has become increasingly important in the current literature, is that of pluralism about truth.
+@glanzberg2025 | § 4.4 | In particular, Lynch (2001b, 2009) develops a version of pluralism which takes truth to be a functional role concept.
+@glanzberg2025 | § 4.4 | Such multiple realizability has been one of the hallmarks of functional role concepts discussed in the philosophy of mind.
+@glanzberg2025 | § 5 | We began in section 1 with the neo-classical theories, which explained the nature of truth within wider metaphysical systems.
+@glanzberg2025 | § 5.1 | Deflationist ideas appear quite early on, including a well-known argument against correspondence in Frege 1918–19.
+@glanzberg2025 | § 5.1 | This view was advanced by Strawson (1949, 1950), though Strawson also argues that there are other important aspects of speech acts involving ‘true’ beyond what is asserted.
+@glanzberg2025 | § 5.2 | The equivalence principle looks familiar: it has something like the form of the Tarski biconditionals discussed in section 2.2.
+@glanzberg2025 | § 5.2 | Officially, this is the name of the view of Horwich (1990), but we will apply it somewhat more widely.
+@glanzberg2025 | § 5.3 | Another variety of deflationism, that has become particularly important in recent discussions, goes under the label disquotationalism, initially developed by Leeds (1978) and Quine (1970), and more recently defended by such authors as Beall (e.g., 2005) and Field (e.g., 1994).
+@glanzberg2025 | § 5.3 | If there is no substantial property of truth, or a strong form of the equivalence thesis holds, what role does our term ‘true’ play?
+@glanzberg2025 | § 5.3 | A truth predicate allows us to express what would otherwise be (potentially) infinite conjunctions or disjunctions.
+@glanzberg2025 | § 5.3 | so construe the clauses of a recursive Tarskian theory as stipulated. (There are some significant logical differences between these options. See Halbach 1999, Ketland 1999, and Shapiro 1998 for discussion.)
+@glanzberg2025 | § 6.1 | There have been many debates in the literature over what the primary bearers of truth are.
+@glanzberg2025 | § 6.1 | No assumptions about just what stands in relations to what objects are required to see truth-bearers as meaningful.) It is in virtue of being meaningful that truth-bearers are able to enter into correspondence relations.
+@glanzberg2025 | § 6.1 | Though a coherence theory will hardly talk of beliefs representing the facts, it is crucial to the coherence theory that beliefs are contentful beliefs of agents, and that they can enter into coherence relations.
+@glanzberg2025 | § 6.1 | They characterize the world as being some way or another, and this in turn determines whether they are true or false.
+@glanzberg2025 | § 6.1 | Different metaphysical assumptions may place primary weight on some particular node in the circle, and some metaphysical views still challenge the existence of some of the nodes.
+A @glanzberg2025: Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms.
+@capps2023 | § 1.1 | The American philosopher, logician and scientist Charles Sanders Peirce (1839–1914) is generally recognized for first proposing a “pragmatic” theory of truth.
+@capps2023 | § 1.1 | Peirce’s answer to this question is that true beliefs eventually gain general acceptance by withstanding future inquiry.
+@capps2023 | § 1.1 | Over time Peirce moderated his position, referring less to fate and unanimous agreement and more to scientific investigation and general consensus (Misak 2004).
+@capps2023 | § 1.1 | Some beliefs may in fact be very durable but would not stand up to inquiry and investigation (this is true of many cognitive biases, such as the Dunning-Kruger effect where people remain blissfully unaware of their own incompetence).
+@capps2023 | § 1.1 | By focusing on the practical dimension of having true beliefs, Peirce plays down the significance of more theoretical questions about the nature of truth.
+@capps2023 | § 1.1 | For Peirce, the importance of truth rests not on a “transcendental” (1901a [1935: 5.572]) connection between beliefs on the one hand and reality on the other, but rather on the practical connection between doubt and belief, and the processes of inquiry that take us from the former to the latter: If by truth and falsity you mean something not definable in terms of doubt and belief in any way, then you are talking of entities of whose existence you can know nothing, and which Ockham’s razor would clean shave off.
+@capps2023 | § 1.1 | In other words, if we were to reach a stage where we could no longer improve upon a belief, there is no point in withholding the title “true” from it.
+@capps2023 | § 1.2 | Peirce’s contemporary, the psychologist and philosopher William James (1842–1910), often gets credit for popularizing the pragmatic theory of truth.
+@capps2023 | § 1.2 | James adds to the previous quote by making the connection between truth and utility explicit: Any idea upon which we can ride, so to speak; any idea that will carry us prosperously from any one part of our experience to any other part, linking things satisfactorily, working securely, simplifying, saving labor; is true for just so much, true in so far forth, true instrumentally.
+@capps2023 | § 1.2 | True beliefs, he suggests, are useful and dependable in ways that false beliefs are not: you can say of it then either that “it is useful because it is true” or that “it is true because it is useful”.
+@capps2023 | § 1.2 | Such an account might also be viewed as obviously wrong, given the undeniable existence of useless truths and useful falsehoods.
+@capps2023 | § 1.2 | This means that, while James’ theory might give a psychologically realistic account of why we care about the truth (true ideas help us get things done) his theory fails to shed much light on what the concept of truth exactly is or on what makes an idea true.
+@capps2023 | § 1.2 | It often seems that James understands the concept of truth in terms of verification: thus, “true is the name for whatever idea starts the verification-process, useful is the name for its completed function in experience” (1907 [1975: 98]).
+@capps2023 | § 1.2 | For pragmatists, this agreement consists in being led “towards that reality and no other” in a way that yields “satisfaction as a result” (1909 [1975: 104]).
+@capps2023 | § 1.3 | John Dewey (1859–1952), the third figure from the golden era of classical American pragmatism, had surprisingly little to say about the concept of truth especially given his voluminous writings on other topics.
+@capps2023 | § 1.3 | By that I mean that if a scientific man were asked to point to samples of what he meant by truth, he would pick…beliefs which were the outcome of the best technique of inquiry available in some particular field; and he would do this no matter what his conception of the Nature of Truth.
+@capps2023 | § 1.3 | For Dewey, science emerges from and is continuous with everyday processes of trial and error—cooking and small-engine repair count as “scientific” on his account—which means he should not be taken too strictly when he equates truth with scientific verification.
+@capps2023 | § 1.3 | As a result, in his later writings Dewey largely avoids speaking of “truth” or “knowledge” while focusing instead on the functions played by these concepts.
+@capps2023 | § 1.3 | His point is that it makes little difference, pragmatically, whether we describe the goal of inquiry as “acquiring more knowledge”, “acquiring more truth”, or better yet, “making more warrantably assertible judgments”.
+@capps2023 | § 5.1 | Some objections are as old as the pragmatic theory of truth itself.
+@capps2023 | § 5.1 | So whether truth is defined in terms of utility, long-term durability or assertibility (etc.), it is still an open question whether a useful or durable or assertible belief is, in fact, really true.
+@capps2023 | § 5.1 | This seems initially plausible and might even serve as a reasonable response to the first objection above.
+@capps2023 | § 5.1 | Putting aside the question of whether pragmatic theories of truth adequately address the metaphysical project (or address it at all), there is also a problem with the criteria of truth they propose for addressing the justification project.
+@capps2023 | § 5.1 | Determining whether a belief is really useful is no easier than determining whether it is really true: “it is so often harder to determine whether a belief is useful than whether it is true” (Russell 1910 [1994: 121]; also 1946: 817).
+@capps2023 | § 5.1 | It has been argued that pragmatic theories are not about finding a word or concept that can substitute for truth but that they are, rather, focused on tracing the implications of using this concept in practical contexts.
+@capps2023 | § 5.1 | To be sure, pragmatic theories of truth have often been framed as providing criteria for distinguishing true from false beliefs.
+@capps2023 | § 5.1 | However, one might question the underlying distinction: as Haack (1976) argues, the pragmatists’ view of meaning is such that a dichotomy between definitions and criteria would have been entirely unacceptable to them.
+@capps2023 | § 5.1 | If this concern is valid, then pragmatic criteria, ironically, fail the pragmatic test of making a difference to our understanding of truth.
+@capps2023 | § 5.1 | This has the benefit of showing how the concept of truth—operating as a norm of assertion, say—makes a real difference to our understanding of the conditions on assertoric discourse.
+@capps2023 | § 5.1 | This does not bode well for pragmatic attempts to address the metaphysical project.
+A @capps2023: Distinguishes Peirce, James, and Dewey, with classic objections and different pragmatic explanatory projects.
+@beall-etal2026 | § 1.1 | Consider a sentence named ‘FLiar’, which says of itself (i.e., says of FLiar) that it is false.
+@beall-etal2026 | § 1.1 | An obvious response is to deny that every sentence is true or false, i.e., to deny the principle of bivalence.
+@beall-etal2026 | § 2.2 | The tradition, going back to Tarski (1935), is that the behavior of the truth predicate \(\Tr\) is described by the following biconditional.
+@beall-etal2026 | § 2.2 | Thus, we should stop to consider what principles should govern the truth predicate \(\Tr\) if classical logic is not to hold.
+@beall-etal2026 | § 2.2 | For our discussion, we think of it in so-called rule form: that the argument from A to B is valid, which we record (as above) via the turnstile.
+@beall-etal2026 | § 2.2 | As we discuss more in section 4.1, this is important to some views of the nature of truth.
+@beall-etal2026 | § 2.2 | We prefer the broader terminology, since it highlights a general form of behavior common to a great variety of predicates and operators, e.g., knowledge releases but doesn’t capture; possibility captures but doesn’t release; and so on; and truth is special in doing both.)
+@beall-etal2026 | § 4.1 | One of the leading ideas for how to resolve the Liar paradox is that it shows us something about logic, in fact, something far-reaching about logic.
+@beall-etal2026 | § 4.1 | This makes capture and release, in unrestricted form applying to all sentences of a language, a requirement for truth (at least where we have \(A \vdash A\) or, more strongly, \(\vdash A \rightarrow A)\).[9] We note that, more recently, some deflationists have shifted the emphasis from the minimal principles traditionally taken to characterize truth (such as the T-schema) to the function truth serves in enabling generalizations (a role that has been highlighted at least since Quine).
+@beall-etal2026 | § 4.1 | To see this, suppose a theory S is accepted: how can one state their agreement with all of S’s infinitely many consequences?
+@beall-etal2026 | § 4.3.1 | Classical solutions to the Liar must give up at least one of unrestricted capture and unrestricted release.
+@beall-etal2026 | § 4.3.1 | In fact, Tarski notices that, if the language in which A is defined could define truth for itself, then a paradox – the Liar paradox – would immediately ensue.
+@beall-etal2026 | § 4.3.1 | This means that, in the above schema, \(Ax\) should belong to \(\mathcal{L}_1\), and B to \(\mathcal{L}_0\).
+@beall-etal2026 | § 4.3.1 | Such sentences, however, are inert, since truth-theoretical principles do not apply to them.
+@beall-etal2026 | § 4.3.1 | One way to ameliorate the situation is to iterate the typed construction.
+A @beall-etal2026: Reconstructs the simple and strengthened liars, truth principles, and typed, paracomplete, and paraconsistent responses.
+@armourgarb-etal2026 | § 1.3 | In light of the two central ideas discussed so far – the idea that the equivalence schema is exhaustive of the notion of truth and the idea that there is no substantive truth property – you might wonder why we have a concept of truth in the first place.
+@armourgarb-etal2026 | § 1.3 | In the following discussion we will not discriminate between questions about the concept of truth and questions about the word ‘true’ and will move back and forth between them.) The question of why we have the concept of truth allows us to introduce a third central theme in deflationism, which is an emphasis not merely on the property of truth but on the concept of truth, or, equivalently for present purposes, on the word ‘true’ (cf.
+@armourgarb-etal2026 | § 1.3 | Suppose, for example, that Jones for whatever reason decides that Smith is an infallible guide to the nature of reality.
+@armourgarb-etal2026 | § 1.3 | So, we need a (declarative) sentential variable, ‘\(p\)’, and a universal quantifier governing it.
+@armourgarb-etal2026 | § 1.3 | Or, to put the same thing more colloquially: (9) Everything Smith says is true.
+@armourgarb-etal2026 | § 1.3 | In fact, for most deflationists, it is this feature of the concept of truth – its role in the formation of these sorts of generalizations – that explains why we have a concept of truth at all.
+@armourgarb-etal2026 | § 4.4 | It is commonly said that our beliefs and assertions aim at truth, or present things as being true, and that truth is therefore a norm of assertion and belief.
+@armourgarb-etal2026 | § 4.4 | We might say that there is a norm of assertion that implies that Mary is still open to criticism in this case.
+@armourgarb-etal2026 | § 4.4 | To state the norm in general we would need to be able to do something we seem unable to do in ordinary language, namely, employ sentential variables and quantifiers for them.
+@armourgarb-etal2026 | § 4.4 | Or, to put it as some philosophers might: (N) Truth is a norm of assertion.
+@armourgarb-etal2026 | § 4.4 | He points out that not having warrant to assert some sentence does not yield having warrant to assert its negation.
+@armourgarb-etal2026 | § 4.4 | Rejecting Wright’s argument for the instability of deflationism, Ian Rumfitt (1995, 103) notes that if we add the ideas of denying something and of having warrant for doing so (“anti-warrant”) to Wright’s characterization of deflationism, this would make ‘is not true’ simply a device of rejection governed by the norm that “[t]he predicate ‘is not true’ may be applied to any sentence for which one has an anti-warrant”.
+@armourgarb-etal2026 | § 4.4 | Field (1994a, 264–5) offers a deflationary response to Wright’s challenge (as well as to a similar objection regarding normativity from Putnam 1983a, 279–80), pointing again to the generalizing role of the truth predicate in such normative desires as one to utter only true sentences or one to have only true beliefs.
+@armourgarb-etal2026 | § 4.4 | Like Field, Horwich claims that Wright missed the point that, in the expression of such a norm, the truth predicate is just playing its generalizing role.
+A @armourgarb-etal2026: Explains the generalizing function of truth and the dispute over whether deflationism accommodates normative roles.
+
+== 11-truth-and-relativism/truth-bearers
+Q: How do sentences, contents, utterances, and beliefs change across occasions without automatically producing relative truth?
+@glanzberg2025 | § 2.1 | In the classical debate on truth at the beginning of the 20th century we considered in section 1, the issue of truth-bearers was of great significance.
+@glanzberg2025 | § 2.1 | But it should be stressed that for this discussion, sentences are fully interpreted sentences, having meanings.
+@glanzberg2025 | § 2.1 | In some places (e.g., 1944), Tarski refers to his view as the ‘semantic conception of truth’.
+@glanzberg2025 | § 6.1 | There have been many debates in the literature over what the primary bearers of truth are.
+@glanzberg2025 | § 6.1 | No assumptions about just what stands in relations to what objects are required to see truth-bearers as meaningful.) It is in virtue of being meaningful that truth-bearers are able to enter into correspondence relations.
+@glanzberg2025 | § 6.1 | Though a coherence theory will hardly talk of beliefs representing the facts, it is crucial to the coherence theory that beliefs are contentful beliefs of agents, and that they can enter into coherence relations.
+@glanzberg2025 | § 6.1 | They characterize the world as being some way or another, and this in turn determines whether they are true or false.
+@glanzberg2025 | § 6.1 | Different metaphysical assumptions may place primary weight on some particular node in the circle, and some metaphysical views still challenge the existence of some of the nodes.
+A @glanzberg2025: Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms.
+@baghramian-carter2025 | § 5.1 | It is a commonplace that the truth-value of an utterance can depend on the context in which it is uttered.
+@baghramian-carter2025 | § 5.1 | On this point, New Relativists claim an important advantage over contextualists.
+@baghramian-carter2025 | § 5.1 | And, as a further point of clarification here: while the contextualist can, no less than the relativist, recognize a “standards” or “judge” parameter, for the contextualist, its value will be supplied by the context of use, whereas the relativist takes it to be supplied completely independently of the context of use, by the context of evaluation (or, as MacFarlane calls it, the context of assessment).
+@baghramian-carter2025 | § 5.1 | A utters, “Pretzels are tasty”, and B utters, “Pretzels are not tasty”.
+@baghramian-carter2025 | § 5.1 | This maneuver avoids the result that at least one of the two parties has uttered something false, but (as the new relativist points out) this result comes at the price of being unable to offer a clear explanation of our intuition that there is some uniform content about which A and B disagree.
+@baghramian-carter2025 | § 5.1 | Unlike the truth-absolutist, however, the new relativist will add that the disagreement is faultless because the proposition affirmed in A’s utterance has a truth value only relative to a judge or standards parameter, and in this case: A’s standards, when A is the assessor, B’s standards, when B is the assessor.
+@baghramian-carter2025 | § 5.1 | New Relativist views, which endorse truth-relativism locally for some domain of discourse, stand in opposition to the more traditional view of propositional content (what Cappelen & Hawthorne call “The Simple View”) according to which propositions bear truth and falsity as monadic properties (cf. however, MacFarlane 2011a for some resistance to Cappelen & Hawthorne’s claim that this simple characterization should be regarded as the “received” view.) A key source of philosophical motivation for relativizing truth in the fashion of New Relativism traces to Lewis’s (1980) and Kaplan’s (1989) foundational work in semantics, according to which
+@baghramian-carter2025 | § 5.1 | New Relativists inherit the formal apparatus of Lewis and Kaplan and add another parameter, but their reasons for doing so are quite different from the reasons that motivated the framework in the first place.
+@baghramian-carter2025 | § 5.1 | Kaplan’s view specifically was that the need for particular parameters in the circumstance of evaluation was a function of the non-specificity of certain propositional contents with respect to world, time and location (see Kaplan’s (1989) analysis of indexicals).
+@baghramian-carter2025 | § 5.1 | This move would open up room for the truth value of a proposition to vary with these “subjective” factors in much the same way that it varies with the world of evaluation.
+@baghramian-carter2025 | § 5.1 | It is with respect to this general question that different families of New Relativism are generated.
+@baghramian-carter2025 | § 5.1 | The motivations for truth-relativism in each of these domains include various considerations unique to those domains.
+A @baghramian-carter2025: Separates relativisms by target and scope, reconstructs self-refutation and epistemic disputes, and introduces assessment-sensitive semantics.
+@russell1912 | ch. XII | How are we to know, in a given case, that our belief is not erroneous?
+@russell1912 | ch. XII | There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.
+@russell1912 | ch. XII | If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.
+@russell1912 | ch. XII | If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.
+@russell1912 | ch. XII | It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.
+@russell1912 | ch. XII | The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.
+@russell1912 | ch. XII | Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.
+@russell1912 | ch. XII | Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.
+@russell1912 | ch. XII | The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.
+@russell1912 | ch. XII | Hence his belief cannot possibly consist in a relation to this object.
+@russell1912 | ch. XII | Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.
+@russell1912 | ch. XII | When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.
+@russell1912 | ch. XII | This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.
+@russell1912 | ch. XII | We are now in a position to understand what it is that distinguishes a true judgement from a false one.
+@russell1912 | ch. XII | Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.
+@russell1912 | ch. XII | We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.
+@russell1912 | ch. XII | Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.
+@russell1912 | ch. XII | Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.
+@russell1912 | ch. XII | Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.
+@russell1912 | ch. XII | A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.
+@russell1912 | ch. XII | Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.
+A @russell1912: Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence.
+
+== 11-truth-and-relativism/why-truth-matters
+Q: How do correctness, sincerity, evidential support, and norms of assertion differ?
+@russell1912 | ch. XII | How are we to know, in a given case, that our belief is not erroneous?
+@russell1912 | ch. XII | There are three points to observe in the attempt to discover the nature of truth, three requisites which any theory must fulfil.
+@russell1912 | ch. XII | If we imagine a world of mere matter, there would be no room for falsehood in such a world, and although it would contain what may be called 'facts', it would not contain any truths, in the sense in which truths are things of the same kind as falsehoods.
+@russell1912 | ch. XII | If I believe that Charles I died in his bed, I believe falsely: no degree of vividness in my belief, or of care in arriving at it, prevents it from being false, again because of what happened long ago, and not because of any intrinsic property of my belief.
+@russell1912 | ch. XII | It is, however, by no means an easy matter to discover a form of correspondence to which there are no irrefutable objections.
+@russell1912 | ch. XII | The first is that there is no reason to suppose that only _one_ coherent body of beliefs is possible.
+@russell1912 | ch. XII | Thus coherence as the definition of truth fails because there is no proof that there can be only one coherent system.
+@russell1912 | ch. XII | Thus the laws of logic supply the skeleton or framework within which the test of coherence applies, and they themselves cannot be established by this test.
+@russell1912 | ch. XII | The necessity of allowing for falsehood makes it impossible to regard belief as a relation of the mind to a single object, which could be said to be what is believed.
+@russell1912 | ch. XII | Hence his belief cannot possibly consist in a relation to this object.
+@russell1912 | ch. XII | Similarly _jealousy_ requires three people: there can be no such relation that does not involve three at least.
+@russell1912 | ch. XII | When Othello believes that Desdemona loves Cassio, he must not have before his mind a single object, 'Desdemona's love for Cassio', or 'that Desdemona loves Cassio ', for that would require that there should be objective falsehoods, which subsist independently of any minds; and this, though not logically refutable, is a theory to be avoided if possible.
+@russell1912 | ch. XII | This may be true of some other relation than believing; but believing, plainly, is not a relation which Othello has to _each_ of the three terms concerned, but to _all_ of them together: there is only one example of the relation of believing involved, but this one example knits together four terms.
+@russell1912 | ch. XII | We are now in a position to understand what it is that distinguishes a true judgement from a false one.
+@russell1912 | ch. XII | Similarly, if Cassio judges that Desdemona loves Othello, the constituents of the judgement are still the same, but their order is different.
+@russell1912 | ch. XII | We spoke of the relation called 'judging' or 'believing' as knitting together into one complex whole the subject and the objects.
+@russell1912 | ch. XII | Among the objects, as we saw in considering 'Othello believes that Desdemona loves Cassio', one must be a relation--in this instance, the relation 'loving'.
+@russell1912 | ch. XII | Thus, e.g., if Othello believes _truly_ that Desdemona loves Cassio, then there is a complex unity, 'Desdemona's love for Cassio', which is composed exclusively of the _objects_ of the belief, in the same order as they had in the belief, with the relation which was one of the objects occurring now as the cement that binds together the other objects of the belief.
+@russell1912 | ch. XII | Thus a belief is _true_ when it _corresponds_ to a certain associated complex, and _false_ when it does not.
+@russell1912 | ch. XII | A mind, which believes, believes truly when there is a _corresponding_ complex not involving the mind, but only its objects.
+@russell1912 | ch. XII | Thus a belief is true when there is a corresponding fact, and is false when there is no corresponding fact.
+A @russell1912: Primary public-domain discussion separating the meaning of truth from its discovery and defending correspondence against coherence.
+@glanzberg2025 | § 6.6 | The relation between truth and meaning is not the only place where truth and language relate closely.
+@glanzberg2025 | § 6.6 | The platitude holds that it is constitutive of the practice of making assertions that assertions aim at truth.
+@glanzberg2025 | § 6.6 | But among those who accept that it does, the place of truth in the constitutive rules is itself controversial.
+A @glanzberg2025: Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms.
+@armourgarb-etal2026 | § 4.4 | It is commonly said that our beliefs and assertions aim at truth, or present things as being true, and that truth is therefore a norm of assertion and belief.
+@armourgarb-etal2026 | § 4.4 | We might say that there is a norm of assertion that implies that Mary is still open to criticism in this case.
+@armourgarb-etal2026 | § 4.4 | To state the norm in general we would need to be able to do something we seem unable to do in ordinary language, namely, employ sentential variables and quantifiers for them.
+@armourgarb-etal2026 | § 4.4 | Or, to put it as some philosophers might: (N) Truth is a norm of assertion.
+@armourgarb-etal2026 | § 4.4 | He points out that not having warrant to assert some sentence does not yield having warrant to assert its negation.
+@armourgarb-etal2026 | § 4.4 | Rejecting Wright’s argument for the instability of deflationism, Ian Rumfitt (1995, 103) notes that if we add the ideas of denying something and of having warrant for doing so (“anti-warrant”) to Wright’s characterization of deflationism, this would make ‘is not true’ simply a device of rejection governed by the norm that “[t]he predicate ‘is not true’ may be applied to any sentence for which one has an anti-warrant”.
+@armourgarb-etal2026 | § 4.4 | Field (1994a, 264–5) offers a deflationary response to Wright’s challenge (as well as to a similar objection regarding normativity from Putnam 1983a, 279–80), pointing again to the generalizing role of the truth predicate in such normative desires as one to utter only true sentences or one to have only true beliefs.
+@armourgarb-etal2026 | § 4.4 | Like Field, Horwich claims that Wright missed the point that, in the expression of such a norm, the truth predicate is just playing its generalizing role.
+A @armourgarb-etal2026: Explains the generalizing function of truth and the dispute over whether deflationism accommodates normative roles.
+

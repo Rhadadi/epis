@@ -1,0 +1,56 @@
+{
+  "chapter": "11-truth-and-relativism",
+  "section": "post-truth-and-bullshit",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How does truth-indifference differ from error and deception, and what evidence supports judgments of accountability?"
+  ],
+  "sources": [
+    {
+      "key": "hansson2025",
+      "used_for": [
+        "The falsehood does not identify the motive",
+        "Confidence can substitute for inquiry",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 7.4",
+          "basis": "full text",
+          "excerpt": "The term “bullshit” was introduced into philosophy by Harry Frankfurt, who first discussed it in a 1986 essay and later developed the discussion into a book (Frankfurt 1986; 2005).",
+          "corpus_chunk": 47067
+        }
+      ],
+      "annotation": "Provides a short secondary account of Frankfurt’s truth-indifference distinction and Moberger’s proposal about pseudoscience."
+    },
+    {
+      "key": "glanzberg2025",
+      "used_for": [
+        "The problem behind the label",
+        "A reading path"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "The relation between truth and meaning is not the only place where truth and language relate closely.",
+          "corpus_chunk": 2678
+        },
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "The platitude holds that it is constitutive of the practice of making assertions that assertions aim at truth.",
+          "corpus_chunk": 2678
+        },
+        {
+          "locator": "§ 6.6",
+          "basis": "full text",
+          "excerpt": "But among those who accept that it does, the place of truth in the constitutive rules is itself controversial.",
+          "corpus_chunk": 2680
+        }
+      ],
+      "annotation": "Maps substantial, semantic, deflationary, and pluralist theories, distinguishing truth-bearers, Convention T, and assertion norms."
+    }
+  ]
+}
