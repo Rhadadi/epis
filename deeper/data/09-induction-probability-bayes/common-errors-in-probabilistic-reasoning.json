@@ -1,0 +1,254 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "common-errors-in-probabilistic-reasoning",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which assumptions distinguish probability errors from legitimate learning about an uncertain process?"
+  ],
+  "sources": [
+    {
+      "key": "joyce2021",
+      "used_for": [
+        "Reversing a condition and forgetting the base rate",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, \"An Essay Toward Solving a Problem in the Doctrine of Chances\" (Bayes 1764).",
+          "corpus_chunk": 42700
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000 is a fairly strong predictor of senior citizenship.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.",
+          "corpus_chunk": 42702
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The test's specificity, its \"true negative\" rate, is the proportion of healthy patients who test negative.",
+          "corpus_chunk": 42703
+        }
+      ],
+      "annotation": "Derives the conditional-probability and odds forms and distinguishes incremental from total support."
+    },
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "Reversing a condition and forgetting the base rate",
+        "Adding detail cannot increase a conjunction's probability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.",
+          "corpus_chunk": 45075
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).",
+          "corpus_chunk": 45076
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).",
+          "corpus_chunk": 45077
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.",
+          "corpus_chunk": 45080
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.",
+          "corpus_chunk": 45081
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).",
+          "corpus_chunk": 45082
+        }
+      ],
+      "annotation": "Reviews probability-judgment experiments and objections about interpretation, sampling, and generalization."
+    },
+    {
+      "key": "hajek2023",
+      "used_for": [
+        "Adding detail cannot increase a conjunction's probability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Probability theory was a relative latecomer in intellectual history.",
+          "corpus_chunk": 43619
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Call \\(P\\) a probability function, and \\((\\Omega , \\mathbf{F}, P)\\) a probability space.",
+          "corpus_chunk": 43620
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Under the natural assignment of probabilities to members of \\(\\mathbf{F}\\), we obtain such welcome results as the following: and so on.",
+          "corpus_chunk": 43620
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But more advanced treatments in mathematics, statistics, and science require more mathematical sophistication involving countable infinite extensions.",
+          "corpus_chunk": 43622
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This axiom is the cornerstone of the assimilation of probability theory to measure theory.",
+          "corpus_chunk": 43622
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Popper 1959b, Rényi 1970, van Fraassen 1976, Spohn 1986, and Roeper and Leblanc 1999).",
+          "corpus_chunk": 43623
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Given certain probabilities as inputs, the axioms and theorems allow us to compute various further probabilities.",
+          "corpus_chunk": 43624
+        }
+      ],
+      "annotation": "Introduces the calculus and separates classical, subjective, frequency, and propensity interpretations."
+    },
+    {
+      "key": "fallacy-iep",
+      "used_for": [
+        "Independent trials do not owe compensation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ Gambler’s",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs when the gambler falsely assumes that the history of outcomes will affect future outcomes.",
+          "corpus_chunk": 48718
+        },
+        {
+          "locator": "§ Regression",
+          "basis": "full text",
+          "excerpt": "This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.",
+          "corpus_chunk": 48776
+        },
+        {
+          "locator": "§ Regression",
+          "basis": "full text",
+          "excerpt": "There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.",
+          "corpus_chunk": 48777
+        }
+      ],
+      "annotation": "Defines gambler’s and regression fallacies with their essential process assumptions."
+    },
+    {
+      "key": "hitchcock2026",
+      "used_for": [
+        "Aggregation can reverse a comparison",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "In the Reichenbach-Suppes definition of causation, the inequality \\(\\PP(E_{t'} \\mid C_t) \\gt \\PP(E_{t'} \\mid {\\nsim}C_t)\\) is necessary, but not sufficient, for causation.",
+          "corpus_chunk": 44398
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Letting C represent smoking, B living in the country, and E lung cancer, \\(\\PP(E \\mid C) \\lt \\PP(E \\mid {\\nsim}C)\\).",
+          "corpus_chunk": 44398
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Skyrms proposed a slightly weaker condition: a cause must raise the probability of its effect in at least one background context, and lower it in none.",
+          "corpus_chunk": 44400
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Suppose D is a causal intermediary, say the presence of tar in the lungs.",
+          "corpus_chunk": 44400
+        },
+        {
+          "locator": "§ 2.4",
+          "basis": "full text",
+          "excerpt": "Note also that we have dropped the subscripts referring to times.",
+          "corpus_chunk": 44402
+        }
+      ],
+      "annotation": "Explains Simpson reversals and why selecting adjustment factors requires causal information."
+    }
+  ]
+}

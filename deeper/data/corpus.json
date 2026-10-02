@@ -942,98 +942,6 @@
    "retrieved": "2026-10-01"
   },
   {
-   "title": "Ryle on the Explanatory Role of Knowledge How",
-   "authors": "Small, Will",
-   "year": "2017",
-   "source": "Journal for the History of Analytical Philosophy",
-   "doi": "10.15173/jhap.v5i5.3206",
-   "url": "https://doi.org/10.15173/jhap.v5i5.3206",
-   "license": "CC-BY-NC",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Skill, Drill, and Intelligent Performance: Ryle and Intellectualism",
-   "authors": "Bäckström, Stina; Gustafsson, Martin A.",
-   "year": "2017",
-   "source": "Journal for the History of Analytical Philosophy",
-   "doi": "10.15173/jhap.v5i5.3205",
-   "url": "https://doi.org/10.15173/jhap.v5i5.3205",
-   "license": "CC-BY-NC",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Ryle’s “Intellectualist Legend” in Historical Context",
-   "authors": "Kremer, Michael Joseph",
-   "year": "2017",
-   "source": "Journal for the History of Analytical Philosophy",
-   "doi": "10.15173/jhap.v5i5.3204",
-   "url": "https://doi.org/10.15173/jhap.v5i5.3204",
-   "license": "CC-BY-NC",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Doxastic Deliberation",
-   "authors": "Shah, Nishi; Velleman, J. David",
-   "year": "2005",
-   "source": "The Philosophical Review",
-   "doi": "10.1215/00318108-114-4-497",
-   "url": "http://archive.nyu.edu/handle/2451/34638",
-   "license": "open-access",
-   "retrieved": "2026-10-01",
-   "held": "repository record only; the article itself could not be fetched"
-  },
-  {
-   "title": "Choosing and refusing: doxastic voluntarism and folk psychology",
-   "authors": "Turri, John; Rose, David Charles; Buckwalter, Wesley",
-   "year": "2017",
-   "source": "Philosophical Studies",
-   "doi": "10.1007/s11098-017-0970-x",
-   "url": "https://doi.org/10.1007/s11098-017-0970-x",
-   "license": "open-access",
-   "retrieved": "2026-10-01",
-   "held": "abstract only"
-  },
-  {
-   "title": "Ought to Believe",
-   "authors": "Chrisman, Matthew",
-   "year": "2008",
-   "source": "The Journal of Philosophy",
-   "doi": "10.5840/jphil2008105736",
-   "url": "https://www.research.ed.ac.uk/en/publications/1bbdfd9a-f69e-494d-969b-93599db78fa7",
-   "license": "open-access",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Doxastic voluntarism and self-deception",
-   "authors": "Booth, Anthony Robert",
-   "year": "2007",
-   "source": "Disputatio",
-   "doi": "10.2478/disp-2007-0003",
-   "url": "https://doi.org/10.2478/disp-2007-0003",
-   "license": "CC-BY-NC-ND",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "Kripke: Names, Necessity, and Identity",
-   "authors": "Preti, Consuelo",
-   "year": "2005",
-   "source": "Disputatio",
-   "doi": "10.2478/disp-2005-0017",
-   "url": "https://doi.org/10.2478/disp-2005-0017",
-   "license": "CC-BY-NC-ND",
-   "retrieved": "2026-10-01"
-  },
-  {
-   "title": "The analytic-synthetic distinction and the classical model of science: Kant, Bolzano and Frege",
-   "authors": "Jong, Willem Remmelt De",
-   "year": "2008",
-   "source": "Synthese",
-   "doi": "10.1007/s11229-008-9420-9",
-   "url": "https://doi.org/10.1007/s11229-008-9420-9",
-   "license": "CC-BY-NC",
-   "retrieved": "2026-10-01"
-  },
-  {
    "title": "William James",
    "authors": "Goodman, Russell",
    "year": "2024",
@@ -2642,17 +2550,6 @@
    "retrieved": "2026-10-01"
   },
   {
-   "title": "Improving analytical reasoning and argument understanding: a quasi-experimental field study of argument visualization",
-   "authors": "Cullen, Simon; Fan, Judith; van der Brugge, Eva; Elga, Adam",
-   "year": "2018",
-   "source": "npj Science of Learning",
-   "edition": "Springer Science and Business Media LLC",
-   "doi": "10.1038/s41539-018-0038-5",
-   "url": "https://doi.org/10.1038/s41539-018-0038-5",
-   "license": "open-access",
-   "retrieved": "2026-10-01"
-  },
-  {
    "title": "Epistemic Logic",
    "authors": "Rendsvig, Rasmus, John Symons,; Yanjing Wang",
    "year": "2025",
@@ -2663,22 +2560,124 @@
    "retrieved": "2026-10-01"
   },
   {
-   "title": "Are You Living in a Computer Simulation?",
-   "authors": "Bostrom, Nick",
-   "year": "2003",
-   "source": "simulation-argument.com",
-   "doi": "10.1111/1467-9213.00309",
-   "url": "https://simulation-argument.com/simulation.pdf",
-   "license": "open-access",
-   "retrieved": "2026-10-01"
-  },
-  {
    "title": "Wisdom",
    "authors": "Ryan, Sharon",
    "year": "2020",
    "source": "The Stanford Encyclopedia of Philosophy",
    "url": "https://plato.stanford.edu/archives/sum2020/entries/wisdom/",
    "license": "free-to-read",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Are You Living in a Computer Simulation?",
+   "authors": "Bostrom, Nick",
+   "year": "2003",
+   "source": "simulation-argument.com",
+   "url": "https://simulation-argument.com/simulation.pdf",
+   "license": "open-access",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ryle on the Explanatory Role of Knowledge How",
+   "authors": "Small, Will",
+   "year": "2017",
+   "source": "Journal for the History of Analytical Philosophy",
+   "doi": "10.15173/jhap.v5i5.3206",
+   "url": "https://doi.org/10.15173/jhap.v5i5.3206",
+   "license": "CC-BY-NC",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Skill, Drill, and Intelligent Performance: Ryle and Intellectualism",
+   "authors": "Bäckström, Stina; Gustafsson, Martin A.",
+   "year": "2017",
+   "source": "Journal for the History of Analytical Philosophy",
+   "doi": "10.15173/jhap.v5i5.3205",
+   "url": "https://doi.org/10.15173/jhap.v5i5.3205",
+   "license": "CC-BY-NC",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Ryle’s “Intellectualist Legend” in Historical Context",
+   "authors": "Kremer, Michael Joseph",
+   "year": "2017",
+   "source": "Journal for the History of Analytical Philosophy",
+   "doi": "10.15173/jhap.v5i5.3204",
+   "url": "https://doi.org/10.15173/jhap.v5i5.3204",
+   "license": "CC-BY-NC",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Doxastic Deliberation",
+   "authors": "Shah, Nishi; Velleman, J. David",
+   "year": "2005",
+   "source": "The Philosophical Review",
+   "doi": "10.1215/00318108-114-4-497",
+   "url": "http://archive.nyu.edu/handle/2451/34638",
+   "license": "open-access",
+   "retrieved": "2026-10-01",
+   "held": "repository record only; the article itself could not be fetched"
+  },
+  {
+   "title": "Choosing and refusing: doxastic voluntarism and folk psychology",
+   "authors": "Turri, John; Rose, David Charles; Buckwalter, Wesley",
+   "year": "2017",
+   "source": "Philosophical Studies",
+   "doi": "10.1007/s11098-017-0970-x",
+   "url": "https://doi.org/10.1007/s11098-017-0970-x",
+   "license": "open-access",
+   "retrieved": "2026-10-01",
+   "held": "abstract only"
+  },
+  {
+   "title": "Ought to Believe",
+   "authors": "Chrisman, Matthew",
+   "year": "2008",
+   "source": "The Journal of Philosophy",
+   "doi": "10.5840/jphil2008105736",
+   "url": "https://www.research.ed.ac.uk/en/publications/1bbdfd9a-f69e-494d-969b-93599db78fa7",
+   "license": "open-access",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Doxastic voluntarism and self-deception",
+   "authors": "Booth, Anthony Robert",
+   "year": "2007",
+   "source": "Disputatio",
+   "doi": "10.2478/disp-2007-0003",
+   "url": "https://doi.org/10.2478/disp-2007-0003",
+   "license": "CC-BY-NC-ND",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Kripke: Names, Necessity, and Identity",
+   "authors": "Preti, Consuelo",
+   "year": "2005",
+   "source": "Disputatio",
+   "doi": "10.2478/disp-2005-0017",
+   "url": "https://doi.org/10.2478/disp-2005-0017",
+   "license": "CC-BY-NC-ND",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "The analytic-synthetic distinction and the classical model of science: Kant, Bolzano and Frege",
+   "authors": "Jong, Willem Remmelt De",
+   "year": "2008",
+   "source": "Synthese",
+   "doi": "10.1007/s11229-008-9420-9",
+   "url": "https://doi.org/10.1007/s11229-008-9420-9",
+   "license": "CC-BY-NC",
+   "retrieved": "2026-10-01"
+  },
+  {
+   "title": "Improving analytical reasoning and argument understanding: a quasi-experimental field study of argument visualization",
+   "authors": "Cullen, Simon; Fan, Judith E.; Brugge, Eva van der; Elga, Adam",
+   "year": "2018",
+   "source": "npj Science of Learning",
+   "edition": "Springer Science and Business Media LLC",
+   "doi": "10.1038/s41539-018-0038-5",
+   "url": "https://doi.org/10.1038/s41539-018-0038-5",
+   "license": "CC-BY",
    "retrieved": "2026-10-01"
   },
   {

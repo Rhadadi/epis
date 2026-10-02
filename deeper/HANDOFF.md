@@ -20,7 +20,7 @@ This file adds the workflow and tools.
 | 03 Logic and arguments | 15 | published |
 | 04 Language, concepts and definitions | 17 | published |
 | 05–08 | 46 | published (by Codex) |
-| 09 Induction, probability and Bayes | 2 of 12 drafted | in progress: `humes-problem-of-induction` and `responses-to-hume` are written (Tier A, `status: draft`) with specs in `tools/deeper/specs/09.txt`; the other 10 sections are to do |
+| 09 Induction, probability and Bayes | 12 | published |
 | 10–16 | 0 | to do (list in section 8) |
 
 After that: the final polish pass (section 9).

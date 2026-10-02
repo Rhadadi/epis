@@ -1,0 +1,258 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "bayesian-epistemology",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which norms govern coherence and learning, and which defenses and prior constraints remain disputed?"
+  ],
+  "sources": [
+    {
+      "key": "lin2024",
+      "used_for": [
+        "Coherence and change are separate",
+        "Why should we follow those norms?",
+        "The problem of priors remains",
+        "Learning need not produce certainty",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The two Bayesian norms sketched above can be stated a bit more generally as follows.",
+          "corpus_chunk": 215
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "While this norm is synchronic in that it constrains your credences at each time, the next norm is diachronic.",
+          "corpus_chunk": 216
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "It is designed to ensure compliance with Probabilism, but it also has an independent, intuitive appeal.",
+          "corpus_chunk": 217
+        },
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "Probabilism is often regarded as a coherence norm, which says how one’s opinions ought to fit together on pain of incoherence.",
+          "corpus_chunk": 222
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.",
+          "corpus_chunk": 223
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "This point just made generalizes to most applications of Bayesian epistemology.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.",
+          "corpus_chunk": 226
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "There have been a number of arguments advanced in support of the two core Bayesian norms.",
+          "corpus_chunk": 227
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "The hope is that, through this bridge principle or perhaps a refined one, bad credences generate bad symptoms in betting dispositions.",
+          "corpus_chunk": 228
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "So the agent is willing to accept each of those two offers.",
+          "corpus_chunk": 228
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "You should follow such and such a credence-betting bridge principle (or, due to the nature of credences, you do so necessarily).",
+          "corpus_chunk": 230
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Consider a person who loathes very much the anxiety caused by placing a bet.",
+          "corpus_chunk": 230
+        },
+        {
+          "locator": "§ 1.6",
+          "basis": "full text",
+          "excerpt": "Some Bayesians still think that Dutch Book arguments are good, and address the present worry by trying to give a non-pragmatic reformulation of Dutch Book arguments (Christensen 1996; Christensen 2004: sec. 5.3).",
+          "corpus_chunk": 232
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "A second proposed type of foundation for Bayesian epistemology is based on the idea of accurate estimation.",
+          "corpus_chunk": 233
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "This approach has also been extended to argue for the Principle of Conditionalization (Briggs & Pettigrew 2020).",
+          "corpus_chunk": 233
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "With such bridge principles, a Bayesian may argue from norms for comparative probabilities to norms for credences, such as Probabilism.",
+          "corpus_chunk": 234
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "But those accounts of credences are apparently vulnerable to counterexamples.",
+          "corpus_chunk": 235
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "If this Bayesian normative system is so good that, of the known competitors, it strikes the best balance of those two virtues just mentioned—comprehensiveness and simplicity—then that is a good reason for accepting the two core Bayesian norms.",
+          "corpus_chunk": 237
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Subjective Bayesianism is the view that every prior is permitted unless it fails to be coherent (de Finetti 1970 [1974]; Savage 1972; Jeffrey 1965; van Fraassen 1989: ch. 7).",
+          "corpus_chunk": 288
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Under just Probabilism and the Principal Principle, there is a prior that follows Ockham’s razor in statistical model selection but there also is a prior that does not (Forster 1995: sec. 3; Sober 2002: sec. 6).[7] So, although subjective Bayesianism does not really say that anything goes, it seems to permit too much, failing to account for some important aspects of scientific objectivity—or so the worry goes.",
+          "corpus_chunk": 289
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "What ought to be the case is, rather, that people’s opinions be brought closer and closer to each other as their shared evidence accumulates.",
+          "corpus_chunk": 290
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "That is, they prove so-called merging-of-opinions theorems (Blackwell & Dubins 1962; Gaifman & Snir 1982).",
+          "corpus_chunk": 290
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Whether or not merging-of-opinions theorems can capture the intended kind of scientific objectivity, it is still debated whether there are other kinds of scientific objectivity that elude subjective Bayesianism.",
+          "corpus_chunk": 292
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Second, just as premises are inputs into a deductive reasoning process, prior credences are inputs into the process of an inquiry.",
+          "corpus_chunk": 293
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Indeed, the anti-subjectivists to be discussed below—objective Bayesians and forward-looking Bayesians—all think that a substantive account of inductive inferences is furnished by norms that go beyond the consideration of coherence.",
+          "corpus_chunk": 294
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Objective Bayesians contend that, in addition to coherence, there is another epistemic virtue or ideal that needs to be codified into a norm for prior credences: freedom from bias and avoidance of overly strong opinions (Jeffreys 1939; Carnap 1945; Jaynes 1957, 1968; Rosenkrantz 1981; J.",
+          "corpus_chunk": 295
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "More generally, objective Bayesians are sympathetic to this norm: The Principle of Indifference.",
+          "corpus_chunk": 295
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Now, have a look at the two groups of propositions listed in the table below.",
+          "corpus_chunk": 296
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In reply, objective Bayesians may reply that Bertrand’s paradox provides no conclusive reason against the Indifference Principle and perhaps the fault lies elsewhere.",
+          "corpus_chunk": 298
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "So perhaps the fault lies not with the Indifference Principle but with one of the two inputs—after all, garbage in, garbage out.",
+          "corpus_chunk": 298
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Those two aspects of the symmetry—physical and permutational—are extended by two influential approaches to the Indifference Principle, respectively, which are presented in turn below.",
+          "corpus_chunk": 300
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "He maintains, for example, that two sentences ought to be assigned equal prior credences if one differs from the other only by a permutation of the names in use.",
+          "corpus_chunk": 301
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The Indifference Principle has been challenged for another reason.",
+          "corpus_chunk": 301
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "When we change our credences, the Principle of Conditionalization requires us to raise the credence in some proposition, such as the credence in the new evidence, all the way to 1.",
+          "corpus_chunk": 328
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Recall that conditionalization has a defining feature: it preserves the credence ratios of the possibilities inside new evidence E while the credence in E is raised all the way to 1.",
+          "corpus_chunk": 329
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "It ought to be that, if the direct experiential impact on one’s credences causes the credence in E to rise to a real number e (which might be less than 1), then one’s credences are changed as follows: For the possibilities inside E, rescale their credences upward by a common factor so that they sum to e; for the possibilities outside E, rescale their credences downward by a common factor so that they sum to \\(1-e\\) (to obey the rule of Sum-to-One).",
+          "corpus_chunk": 330
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Jeffrey conditionalization is flexible enough to accommodate the Mudrunner Case.",
+          "corpus_chunk": 330
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "This is how Jeffrey conditionalization accommodates the Mudrunner Case.",
+          "corpus_chunk": 331
+        }
+      ],
+      "annotation": "Separates coherence, learning norms, their defenses, priors, and uncertain learning."
+    }
+  ]
+}

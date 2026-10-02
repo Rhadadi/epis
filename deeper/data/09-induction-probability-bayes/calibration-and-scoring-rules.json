@@ -1,0 +1,102 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "calibration-and-scoring-rules",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What do calibration and strictly proper scores measure, and what does an expected-score guarantee leave open?"
+  ],
+  "sources": [
+    {
+      "key": "pettigrew2024",
+      "used_for": [
+        "Calibration asks about a collection",
+        "The Brier loss makes confidence count",
+        "Properness concerns an expectation",
+        "A comparison needs a shared task",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "An epistemic utility function for the states considered in the precise credence model takes a credence function on an agenda and a state of the world relative to that same agenda, and returns a real number or \\(-\\infty\\) or \\(\\infty\\) that measures the epistemic utility of that credence function at that state of the world.",
+          "corpus_chunk": 3295
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Here’s the quadratic scoring rule: \\(q(1, p) = -(1-p)^2\\) \\(q(0, p) = -p^2\\) One way to understand this: If a proposition is true, then credence 1 is the ideal credence in it; if it’s false, then credence 0 is the ideal.",
+          "corpus_chunk": 3296
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "We might think of \\(V_w\\) as the ideal or omniscient credence function at world \\(w\\).",
+          "corpus_chunk": 3296
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Strict Propriety (for epistemic utility functions) We say that an epistemic utility measure \\(EU\\) is strictly proper if, for any probabilistic credence function \\(P\\) defined on \\(\\mathcal{F}\\), \\[ \\sum_{w \\in \\mathcal{W}_\\mathcal{F}} P(w)EU(C, w) \\] is maximized uniquely, among credence functions defined on \\(\\mathcal{F}\\), at \\(C = P\\).",
+          "corpus_chunk": 3298
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Additivity (for epistemic utility functions) We say that an epistemic utility measure \\(EU\\) is additive if, for each \\(X\\) in \\(\\mathcal{F}\\), there is a scoring rule \\(s_X\\) such that \\[ EU(C, w) = \\sum_{X \\in \\mathcal{F}} s_X(V_w(X), C(X)) \\] (That is, the epistemic utility of an entire credence function is the sum of the epistemic utilities of the individual credences, where these can be given by different scoring rules for each proposition in the agenda.) Suppose \\(EU\\)",
+          "corpus_chunk": 3299
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "They roughly divide into two sorts: The first sort of argument is based on a veritist account of epistemic value, which says that the sole fundamental source of epistemic value is what Joyce (1998) calls gradational accuracy.",
+          "corpus_chunk": 3300
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "So, for veritists, epistemic utility functions measure the accuracy of a credence function, and characterizing the legitimate epistemic utility functions is characterizing the legitimate ways of measuring accuracy.",
+          "corpus_chunk": 3301
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Ramsey (1926 [1931]) that connects accuracy and calibration, and Williams and Pettigrew (2023) improve on that characterization.",
+          "corpus_chunk": 3301
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "The second sort of argument does not commit to a particular account of epistemic value.",
+          "corpus_chunk": 3302
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Hájek (2008) criticizes this argument and Pettigrew (2016) defends Joyce.",
+          "corpus_chunk": 3303
+        },
+        {
+          "locator": "§ 5.1.1",
+          "basis": "full text",
+          "excerpt": "According to Additivity, which is assumed by many of the accounts of epistemic utility, the epistemic utility of a whole credence function is the sum of the epistemic utilities of the individual credences it comprises; and which scoring rule measures the epistemic utility of a credence in a proposition at a world can depend on the proposition, but not on the world.",
+          "corpus_chunk": 3305
+        },
+        {
+          "locator": "§ 5.1.1",
+          "basis": "full text",
+          "excerpt": "But Ben Levinstein (2018) argues that the importance of a proposition does sometimes depend on which world we inhabit: in worlds where I meet a particular person and fall in love with them, propositions that concern their well-being have great importance to me, and the epistemic utility of my credences in those propositions should contribute greatly to the epistemic utility of my whole credence function; in worlds where I never meet that person, on the other hand, the",
+          "corpus_chunk": 3306
+        },
+        {
+          "locator": "§ 5.1.1",
+          "basis": "full text",
+          "excerpt": "And so the weights we assign to the scores of the individual credences must also depend on the worlds; something that Additivity rules out.",
+          "corpus_chunk": 3306
+        }
+      ],
+      "annotation": "Defines quadratic scores, strict propriety, accuracy rationales, and objections about the importance of propositions."
+    }
+  ]
+}

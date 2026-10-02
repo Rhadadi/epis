@@ -1,6 +1,6 @@
 ---
 tier: A
-status: draft
+status: published
 updated: 2026-10-01
 ---
 
@@ -59,7 +59,7 @@ Hume assumed one Uniformity Principle behind all inductions. Critics point out t
 ::: original Laplace, *A Philosophical Essay on Probabilities* (1814), chapter III
 > Thus we find that an event having occurred successively any number of times, the probability that it will happen again the next time is equal to this number increased by unity divided by the same number, increased by two units. Placing the most ancient epoch of history at five thousand years ago, or at 182623 days, and the sun having risen constantly in the interval at each revolution of twenty-four hours, it is a bet of 1826214 to one that it will rise again to-morrow. But this number is incomparably greater for him who, recognizing in the totality of phenomena the principal regulator of days and seasons, sees that nothing at the present moment can arrest the course of it.
 
-The rule gives (n + 1)/(n + 2) after n successes. Laplace's last sentence matters as much as the number: someone who knows the astronomy behind sunrise has far better grounds than the bare count. That is the material theory of induction in a single clause, a century and a half early. (The 1902 translation prints the number of days as 182623; five thousand years is about 1,826,213 days, which gives the odds Laplace states.)
+The rule gives (n + 1)/(n + 2) after n successes. Laplace's last sentence matters as much as the number: someone who knows the astronomy behind sunrise has far better grounds than the bare count. The contrast anticipates a concern of later material accounts: background facts can support an inference more strongly than a bare count. It does not make Laplace an advocate of Norton's later theory. (The 1902 translation prints the number of days as 182623; five thousand years is about 1,826,213 days, which gives the odds Laplace states.)
 :::
 
 [@laplace1902, p. 19]. The calculation looks like an a priori answer to Hume. It rests on three assumptions: the rules of probability, a model of the data as independent draws, and a prior. "There has been a persistent worry" that the urn model will not fit other cases of inductive inference, and the uniform prior relies on the principle of indifference, which can "give rise to inconsistent probability assignments" depending on how the possibilities are carved up [@henderson2024, § 3.3]. "The quest for an a priori argument for the assignment of the prior has been largely abandoned" [@henderson2024, § 3.3].
@@ -87,7 +87,7 @@ The later Bayesian tradition made the assumption explicit rather than removing i
 ::: original Peirce, "The Probability of Induction" (1878)
 > We may express this by saying that in the case of analytic inference we know the probability of our conclusion (if the premises are true), but in the case of synthetic inferences we only know the degree of trustworthiness of our proceeding. As all knowledge comes from synthetic inference, we must equally infer that all human certainty consists merely in our knowing that the processes by which our knowledge has been derived are such as must generally have led to true conclusions.
 
-Peirce gives up on assigning probabilities to inductive conclusions and asks instead how often the method of sampling leads to the truth. That is the shape of Reichenbach's vindication sixty years later, and of reliabilism a century later. Peirce adds that induction will hold good "in the long run", which he grounds in his account of reality as "the object of the final opinion to which sufficient investigation would lead".
+Peirce gives up on assigning probabilities to inductive conclusions and asks instead how often the method of sampling leads to the truth. This emphasis on a method's trustworthiness invites comparison with later pragmatic vindication and externalist justification, without identifying Peirce's theory with either. Peirce adds that induction will hold good "in the long run", which he grounds in his account of reality as "the object of the final opinion to which sufficient investigation would lead".
 :::
 
 [@peirce1878c, p. 718]

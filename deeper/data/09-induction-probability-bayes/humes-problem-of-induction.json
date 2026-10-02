@@ -1,8 +1,8 @@
 {
   "chapter": "09-induction-probability-bayes",
   "section": "humes-problem-of-induction",
-  "updated": "2026-10-01",
-  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
   "questions": [
     "What exactly did Hume ask about inductive inference, and what was his argument?",
     "What did Hume himself conclude, and how is the conclusion interpreted?",
@@ -15,6 +15,7 @@
         "Step by step",
         "Common confusions",
         "Hume's question",
+        "Unobserved does not always mean future",
         "The argument, premise by premise",
         "Where to go next"
       ],
@@ -23,91 +24,91 @@
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "The bread, which I formerly eat, nourished me; that is, a body of such sensible qualities was, at that time, endued with such secret powers: but does it follow, that other bread must also nourish me at another time, and that like sensible qualities must always be attended with like secret powers? The consequence seems nowise necessary.",
-          "corpus_chunk": 6746
+          "corpus_chunk": 5496
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "a process of thought, and an inference, which wants to be explained.",
-          "corpus_chunk": 6746
+          "corpus_chunk": 5496
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "implies no contradiction, and can never be proved false by any demonstrative argument or abstract reasoning _a priori_.",
-          "corpus_chunk": 6749
+          "corpus_chunk": 5499
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "all our experimental conclusions proceed upon the supposition that the future will be conformable to the past. To endeavour, therefore, the proof of this last supposition by probable arguments, or arguments regarding existence, must be evidently going in a circle, and taking that for granted, which is the very point in question.",
-          "corpus_chunk": 6750
+          "corpus_chunk": 5500
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "those precise objects only, and that precise period of time, which fell under its cognizance: but why this experience should be extended to future times, and to other objects, which for aught we know, may be only in appearance similar; this is the main question on which I would insist.",
-          "corpus_chunk": 6746
+          "corpus_chunk": 5496
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "For otherwise we could infer these secret powers from the first appearance of these sensible qualities, without the aid of experience",
-          "corpus_chunk": 6753
+          "corpus_chunk": 5503
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "My practice, you say, refutes my doubts. But you mistake the purport of my question. As an agent, I am quite satisfied in the point; but as a philosopher, who has some share of curiosity, I will not say scepticism, I want to learn the foundation of this inference.",
-          "corpus_chunk": 6756
+          "corpus_chunk": 5506
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "No reading, no enquiry has yet been able to remove my difficulty, or give me satisfaction in a matter of such importance. Can I do better than propose the difficulty to the public, even though, perhaps, I have small hopes of obtaining a solution? We shall at least, by this means, be sensible of our ignorance, if we do not augment our knowledge.",
-          "corpus_chunk": 6756
+          "corpus_chunk": 5506
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "I may justly require you to produce that argument",
-          "corpus_chunk": 6758
+          "corpus_chunk": 5508
         },
         {
           "locator": "IV.ii",
           "basis": "full text",
           "excerpt": "since you confess that it is obvious to the capacity of a mere infant.",
-          "corpus_chunk": 6758
+          "corpus_chunk": 5508
         },
         {
           "locator": "V.i",
           "basis": "full text",
           "excerpt": "This principle is Custom or Habit.",
-          "corpus_chunk": 6766
+          "corpus_chunk": 5516
         },
         {
           "locator": "V.i",
           "basis": "full text",
           "excerpt": "without being impelled by any reasoning or process of the understanding",
-          "corpus_chunk": 6766
+          "corpus_chunk": 5516
         },
         {
           "locator": "V.i",
           "basis": "full text",
           "excerpt": "Nature will always maintain her rights, and prevail in the end over any abstract reasoning whatsoever.",
-          "corpus_chunk": 6763
+          "corpus_chunk": 5513
         },
         {
           "locator": "V.i",
           "basis": "full text",
           "excerpt": "there is no danger that these reasonings, on which almost all knowledge depends, will ever be affected by such a discovery.",
-          "corpus_chunk": 6763
+          "corpus_chunk": 5513
         },
         {
           "locator": "V.ii",
           "basis": "full text",
           "excerpt": "Here, then, is a kind of pre-established harmony between the course of nature and the succession of our ideas",
-          "corpus_chunk": 6794
+          "corpus_chunk": 5544
         }
       ],
       "annotation": "Hume's own statement of the problem (Section IV) and of his answer, custom (Section V)."
@@ -119,6 +120,7 @@
         "Common confusions",
         "How the problem developed",
         "Hume's question",
+        "Unobserved does not always mean future",
         "The argument, premise by premise",
         "Custom and the pre-established harmony",
         "What did Hume conclude?",
@@ -133,205 +135,205 @@
           "locator": "preamble",
           "basis": "full text",
           "excerpt": "The original source of what has become known as the “problem of induction” is in Book 1, part iii, section 6 of A Treatise of Human Nature by David Hume, published in 1739 (Hume 1739). In 1748, Hume gave a shorter version of the argument in Section iv of An enquiry concerning human understanding",
-          "corpus_chunk": 48983
+          "corpus_chunk": 44595
         },
         {
           "locator": "preamble",
           "basis": "full text",
           "excerpt": "Bertrand Russell, for example, expressed the view that if Hume’s problem cannot be solved, “there is no intellectual difference between sanity and insanity” (Russell 1946: 699).",
-          "corpus_chunk": 48985
+          "corpus_chunk": 44597
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "Hume makes a distinction between relations of ideas and matters of fact.",
-          "corpus_chunk": 48989
+          "corpus_chunk": 44601
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "For convenience, we will refer to this claim of similarity or resemblance between observed and unobserved regularities as the “Uniformity Principle (UP)”.",
-          "corpus_chunk": 48989
+          "corpus_chunk": 44601
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "For Hume, the relation of causation is the only relation by means of which “we can go beyond the evidence of our memory and senses”",
-          "corpus_chunk": 48987
+          "corpus_chunk": 44599
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "Rather, he claims, it is based on experience, and specifically experience of constant conjunction.",
-          "corpus_chunk": 48988
+          "corpus_chunk": 44600
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "If such an inference is made by a “chain of reasoning” (E. 4.2.16), he says, he would like to know what that reasoning is.",
-          "corpus_chunk": 48988
+          "corpus_chunk": 44600
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "the mind is carried by custom to expect heat or cold",
-          "corpus_chunk": 48994
+          "corpus_chunk": 44606
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "All these operations are a species of natural instincts, which no reasoning or process of the thought and understanding is able, either to produce, or to prevent.",
-          "corpus_chunk": 48995
+          "corpus_chunk": 44607
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "whether we are determin’d by reason to make the transition, or by a certain association and relation of perceptions?",
-          "corpus_chunk": 48993
+          "corpus_chunk": 44605
         },
         {
           "locator": "§ 1",
           "basis": "full text",
           "excerpt": "Thus, it is the imagination which is taken to be responsible for underpinning the inductive inference, rather than reason.",
-          "corpus_chunk": 48993
+          "corpus_chunk": 44605
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Hume’s argument concerns specific inductive inferences such as: All observed instances of A have been B. The next instance of A will be B.",
-          "corpus_chunk": 48996
+          "corpus_chunk": 44608
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "There are only two kinds of arguments: demonstrative and probable (Hume’s fork). P2. Inference I presupposes the Uniformity Principle (UP). 1st horn: P3. A demonstrative argument establishes a conclusion whose negation is a contradiction. P4. The negation of the UP is not a contradiction.",
-          "corpus_chunk": 48997
+          "corpus_chunk": 44609
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "P5. Any probable argument for UP presupposes UP. P6. An argument for a principle may not presuppose the same principle (Non-circularity).",
-          "corpus_chunk": 48997
+          "corpus_chunk": 44609
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "If there is no chain of reasoning from the premises to the conclusion of inference I, the inference is not justified. C5. Inference I is not justified (by C4 and P8).",
-          "corpus_chunk": 48998
+          "corpus_chunk": 44610
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "However, under this interpretation, premise P3 would not hold, because it is possible for the conclusion of a deductive argument to be a non-necessary proposition.",
-          "corpus_chunk": 48998
+          "corpus_chunk": 44610
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "the distinction he draws between demonstrative and probable arguments has little to do with whether or not the argument has a deductive form (Owen 1999; Garrett 2002)",
-          "corpus_chunk": 49000
+          "corpus_chunk": 44612
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "For example, some scholars have denied that Hume should be read as invoking a premise such premise P8 at all.",
-          "corpus_chunk": 49003
+          "corpus_chunk": 44615
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Hume could then be, as Don Garrett and David Owen have argued, advancing a “thesis in cognitive psychology”, rather than making a normative claim about justification (Owen 1999; Garrett 2002).",
-          "corpus_chunk": 49004
+          "corpus_chunk": 44616
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "it has been claimed that it is “an attempt to refute the rationalist belief that at least some inductive arguments are demonstrative” (Beauchamp & Rosenberg 1981: xviii)",
-          "corpus_chunk": 49005
+          "corpus_chunk": 44617
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Such interpretations do however struggle with the fact that Hume’s argument is explicitly a two-pronged attack, which concerns not just demonstrative arguments, but also probable arguments.",
-          "corpus_chunk": 49005
+          "corpus_chunk": 44617
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Hume even suggests that this operation of the mind may even be less “liable to error and mistake” than if it were entrusted to “the fallacious deductions of our reason, which is slow in its operations” (E. 5.2.22).",
-          "corpus_chunk": 49006
+          "corpus_chunk": 44618
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Later in the Treatise, he even gives “rules” and “logic” for characterizing what should count as a good causal inference (T. 1.3.15).",
-          "corpus_chunk": 49007
+          "corpus_chunk": 44619
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "the fact remains that Hume has throughout history been predominantly read as presenting an argument for inductive skepticism.",
-          "corpus_chunk": 49007
+          "corpus_chunk": 44619
         },
         {
           "locator": "§ 3.1",
           "basis": "full text",
           "excerpt": "Kant famously argued in response to Hume that such synthetic a priori knowledge is possible (Kant 1781, 1783).",
-          "corpus_chunk": 49011
+          "corpus_chunk": 44623
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "Bayes’s essay containing the main results was published after his death in 1764 (Bayes 1764). However, it is possible that the work was done significantly earlier and was in fact written in direct response to the publication of Hume’s Enquiry in 1748",
-          "corpus_chunk": 49018
+          "corpus_chunk": 44630
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "there is a well-known finding that learning algorithms are only effective if they have ‘inductive bias’",
-          "corpus_chunk": 49035
+          "corpus_chunk": 44647
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "These can be interpreted as versions of the argument in Hume’s first fork since they establish that there can be no contradiction in the algorithm not performing well",
-          "corpus_chunk": 49035
+          "corpus_chunk": 44647
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "any learning algorithm is expected to have a generalisation error of 1/2, and hence to do no better than guessing at random",
-          "corpus_chunk": 49036
+          "corpus_chunk": 44648
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "The idea is also given formal expression in the so-called ‘No-Free-Lunch theorems’ (Wolpert 1992, 1996, 1997).",
-          "corpus_chunk": 49035
+          "corpus_chunk": 44647
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "The future only resembles the past in some respects, but not others. Suppose that on all my birthdays so far, I have been under 40 years old. This does not give me a reason to expect that I will be under 40 years old on my next birthday.",
-          "corpus_chunk": 49056
+          "corpus_chunk": 44668
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "Nelson Goodman is often seen as having made this point in a particularly vivid form with his “new riddle of induction” (Goodman 1955: 59–83).",
-          "corpus_chunk": 49057
+          "corpus_chunk": 44669
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "One way to put this point is to say that Hume’s argument rests on a quantifier shift fallacy (Sober 1988; Okasha 2005a).",
-          "corpus_chunk": 49059
+          "corpus_chunk": 44671
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "Rather there is a regress of inductive justifications, each relying on their own empirical presuppositions",
-          "corpus_chunk": 49059
+          "corpus_chunk": 44671
         }
       ],
       "annotation": "The standard survey: Hume's argument, a premise-by-premise reconstruction, and every major reply."
@@ -349,25 +351,25 @@
           "locator": "ch. VI",
           "basis": "full text",
           "excerpt": "The man who has fed the chicken every day throughout its life at last wrings its neck instead, showing that more refined views as to the uniformity of nature would have been useful to the chicken.",
-          "corpus_chunk": 5795
+          "corpus_chunk": 10007
         },
         {
           "locator": "ch. VI",
           "basis": "full text",
           "excerpt": "Thus our instincts certainly cause us to believe that the sun will rise to-morrow, but we may be in no better a position than the chicken which unexpectedly has its neck wrung.",
-          "corpus_chunk": 5796
+          "corpus_chunk": 10008
         },
         {
           "locator": "ch. VI",
           "basis": "full text",
           "excerpt": "We have therefore to distinguish the fact that past uniformities _cause_ expectations as to the future, from the question whether there is any reasonable ground for giving weight to such expectations",
-          "corpus_chunk": 5796
+          "corpus_chunk": 10008
         },
         {
           "locator": "ch. VI",
           "basis": "full text",
           "excerpt": "Thus probability is all we ought to seek.",
-          "corpus_chunk": 5801
+          "corpus_chunk": 10013
         }
       ],
       "annotation": "Russell's chicken and his restatement of the problem in modern terms."
@@ -384,37 +386,37 @@
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "sensation cannot tell us anything about the unobserved, but only the currently observed (EHU 4.16). Intuition can also be ruled out, since the Uniformity Principle is not intuitive (EHU 4.16).",
-          "corpus_chunk": 28779
+          "corpus_chunk": 27945
         },
         {
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "There is considerable debate regarding whether Hume’s argument that induction is not founded on reasoning establishes a psychological fact—that is, that reason does not cause the mind to take a crucial inductive step—or a sceptical one—that is, that reason cannot justify our inductive inferences.",
-          "corpus_chunk": 28780
+          "corpus_chunk": 27946
         },
         {
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "Influential descriptivist accounts are Garrett 1997 and Owen 1999.",
-          "corpus_chunk": 28781
+          "corpus_chunk": 27947
         },
         {
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "“deductivists” take Hume’s use of “reason” to carry only deductive justification, and thus read Hume’s argument as ruling out only deductive justification for inductive inferences (Flew 1961; Stove 1973). Such accounts have been refuted (Garrett, 1997; Millican, 1995).",
-          "corpus_chunk": 28781
+          "corpus_chunk": 27947
         },
         {
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "Externalist interpretations see “reason” as only carrying internalist justification, leaving open the possibility of induction enjoying externalist justification (Loeb 2006; Cottrell 2024). Strongly sceptical readings see “reason” as implying any form of rational justification whatsoever (Winkler 1999; Millican 2002b).",
-          "corpus_chunk": 28782
+          "corpus_chunk": 27948
         },
         {
           "locator": "§ 2.3",
           "basis": "full text",
           "excerpt": "one may find the Treatise’s argument to be psychological and Enquiry’s to be sceptical (Qu 2020)",
-          "corpus_chunk": 28782
+          "corpus_chunk": 27948
         }
       ],
       "annotation": "Maps the competing readings of what Hume's conclusion about induction amounts to."

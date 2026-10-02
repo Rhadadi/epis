@@ -1,0 +1,265 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "probability-the-basics",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do overlap, dependence, conditioning, and interpretation affect an elementary probability assignment?"
+  ],
+  "sources": [
+    {
+      "key": "hajek2023",
+      "used_for": [
+        "Begin with a space of possibilities",
+        "Addition requires checking overlap",
+        "What does the number represent?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Probability theory was a relative latecomer in intellectual history.",
+          "corpus_chunk": 43619
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Call \\(P\\) a probability function, and \\((\\Omega , \\mathbf{F}, P)\\) a probability space.",
+          "corpus_chunk": 43620
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Under the natural assignment of probabilities to members of \\(\\mathbf{F}\\), we obtain such welcome results as the following: and so on.",
+          "corpus_chunk": 43620
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "But more advanced treatments in mathematics, statistics, and science require more mathematical sophistication involving countable infinite extensions.",
+          "corpus_chunk": 43622
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This axiom is the cornerstone of the assimilation of probability theory to measure theory.",
+          "corpus_chunk": 43622
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Popper 1959b, Rényi 1970, van Fraassen 1976, Spohn 1986, and Roeper and Leblanc 1999).",
+          "corpus_chunk": 43623
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Given certain probabilities as inputs, the axioms and theorems allow us to compute various further probabilities.",
+          "corpus_chunk": 43624
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "The classical interpretation owes its name to its early and august pedigree.",
+          "corpus_chunk": 43635
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "It is often presupposed (usually tacitly) in textbook probability puzzles.",
+          "corpus_chunk": 43635
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Intuitively, ‘heads’ and ‘tails’ are equally likely outcomes of tossing a fair coin; but if their kind is ‘ways the coin could land’, then ‘edge’ should presumably be counted alongside them.",
+          "corpus_chunk": 43637
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Yet he means to characterize the objective probability assignment of a rational agent in an epistemically neutral position with respect to a set of “equally possible” cases.",
+          "corpus_chunk": 43638
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "Nearly a century before Ramsey, De Morgan wrote: “By degree of probability, we really mean, or ought to mean, degree of belief” (1847, 172).",
+          "corpus_chunk": 43673
+        },
+        {
+          "locator": "§ 3.3.1",
+          "basis": "full text",
+          "excerpt": "More promising, however, is the thought that the suitable agents must be, in a strong sense, rational.",
+          "corpus_chunk": 43673
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Gamblers, actuaries and scientists have long understood that relative frequencies bear an intimate relationship to probabilities.",
+          "corpus_chunk": 43703
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "The crucial difference, however, is that where the classical interpretation counted all the possible outcomes of a given experiment, finite frequentism counts actual outcomes.",
+          "corpus_chunk": 43704
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "More than that, it seems to be built into the very notion of probability that such misleading results can arise.",
+          "corpus_chunk": 43705
+        },
+        {
+          "locator": "§ 3.4",
+          "basis": "full text",
+          "excerpt": "Famous enough to merit a name of its own, these are instances of the so-called ‘problem of the single case’.",
+          "corpus_chunk": 43706
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Like the frequency interpretations, propensity interpretations regard probabilities as objective properties of entities in the real world.",
+          "corpus_chunk": 43722
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "We might think of various habits coming in different degrees, measuring their various strengths.",
+          "corpus_chunk": 43723
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "For him, a probability \\(p\\) of an outcome of a certain type is a propensity of a repeatable experiment to produce outcomes of that type with limiting relative frequency \\(p\\).",
+          "corpus_chunk": 43724
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "This, however, creates the opposite problem to Popper’s: how, then, do we get the desired connection between probabilities and frequencies?",
+          "corpus_chunk": 43725
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Fetzer (1982, 1983) and Miller (1994) offer single-case propensity theories.",
+          "corpus_chunk": 43725
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "According to Giere, on the other hand, the die has a weak tendency to land ‘3’.",
+          "corpus_chunk": 43726
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "But this is the sort of ‘uniformity of nature’ presupposition that Hume argued could not be known either a priori, or empirically.",
+          "corpus_chunk": 43728
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "There is some property of this coin tossing arrangement such that this coin would land heads with a certain long-run frequency, say.",
+          "corpus_chunk": 43728
+        }
+      ],
+      "annotation": "Introduces the calculus and separates classical, subjective, frequency, and propensity interpretations."
+    },
+    {
+      "key": "joyce2021",
+      "used_for": [
+        "Multiplication requires checking dependence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, \"An Essay Toward Solving a Problem in the Doctrine of Chances\" (Bayes 1764).",
+          "corpus_chunk": 42700
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000 is a fairly strong predictor of senior citizenship.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.",
+          "corpus_chunk": 42702
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The test's specificity, its \"true negative\" rate, is the proportion of healthy patients who test negative.",
+          "corpus_chunk": 42703
+        }
+      ],
+      "annotation": "Derives the conditional-probability and odds forms and distinguishes incremental from total support."
+    },
+    {
+      "key": "lin2024",
+      "used_for": [
+        "What does the number represent?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A contingent proposition is true in some cases, while a logical falsehood is true in no cases at all.",
+          "corpus_chunk": 265
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In reply, defenders of Regularity can replace conditionalization by a generalization of it called Jeffrey Conditionalization, which need not drop any credence down to zero.",
+          "corpus_chunk": 266
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So “the coin is fair” is assigned credence \\(0.5 - 0.5\\), which equals 0 and violates Regularity.",
+          "corpus_chunk": 267
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The above response to the Coin Case implements a general strategy.",
+          "corpus_chunk": 267
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So, in the Coin Case, the contingent proposition “the coin is fair” is assigned credence 0, the same credence as a logical falsehood is assigned.",
+          "corpus_chunk": 269
+        }
+      ],
+      "annotation": "Separates coherence, learning norms, their defenses, priors, and uncertain learning."
+    }
+  ]
+}

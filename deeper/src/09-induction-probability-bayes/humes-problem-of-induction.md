@@ -1,10 +1,10 @@
 ---
 tier: A
-status: draft
+status: published
 updated: 2026-10-01
 ---
 
-> **In short.** Bread has always nourished you, so you expect the next loaf to nourish you too. Hume asked what reasoning takes you from the first fact to the second, and argued that none can. A priori reasoning cannot show that nature will stay the same, because its changing involves no contradiction. Reasoning from experience cannot show it either, because every such argument already assumes that the future will resemble the past. Hume did not conclude that we should stop expecting bread to nourish us. He concluded that the expectation comes from custom, not reason. Whether that verdict is a fact about psychology or a sceptical judgment about justification is still argued over.
+> **In short.** Bread has always nourished you, so you expect the next loaf to nourish you too. Hume asked what reasoning takes you from the first fact to the second, and argued that none can. A priori reasoning cannot show that nature will stay the same, because its changing involves no contradiction. Reasoning from experience cannot show it either, because every such argument already assumes that the future will resemble the past. Hume did not conclude that we should stop expecting bread to nourish us. He traced the expectation to custom, while the psychological and normative readings of his verdict remain disputed.
 
 ## Re-learn
 
@@ -51,6 +51,12 @@ Hume's own answer is that the step is taken by habit. "This principle is Custom 
 Hume introduces the problem while analysing cause and effect. For him causation is the only relation by which "we can go beyond the evidence of our memory and senses" [@henderson2024, § 1]. Suppose gunpowder is in front of you and you expect an explosion. That expectation rests on past experience of a "constant conjunction" between the two. What Hume wants is the reasoning that links the past conjunction to the present expectation: if the inference is made by a "chain of reasoning", he would like to know what that reasoning is [@henderson2024, § 1].
 
 The bread example locates the gap precisely. Experience tells us about "those precise objects only, and that precise period of time, which fell under its cognizance: but why this experience should be extended to future times, and to other objects, which for aught we know, may be only in appearance similar; this is the main question on which I would insist" [@hume1748, IV.ii]. The colour and texture of bread do not reveal its "secret powers" of nourishment. If they did, "we could infer these secret powers from the first appearance of these sensible qualities, without the aid of experience" [@hume1748, IV.ii].
+
+### Unobserved does not always mean future
+
+An invented example concerns a sealed jar of grain. The grains sampled from the top are sound, and you infer that grains lower down are sound too. The conclusion concerns something present but uninspected, rather than something that will happen tomorrow. The gap is still between the checked cases and the unchecked cases. Hume explicitly includes other objects as well as future times in the question quoted above. [@hume1748, IV.ii]
+
+Suppose you then discover that moisture collects at the bottom. That information changes the relevant similarity between the sample and the remaining grain. More observations from the top might leave the issue unresolved. The example helps separate three tasks: describing the evidence, identifying what licenses its extension, and testing whether a specific extension is reasonable. Hume's general challenge concerns the foundation of that extension; it need not imply that every particular inference has equal standing. His later rules for causal inference leave room to assess particular reasoning. [@henderson2024, § 2]
 
 ### The argument, premise by premise
 
@@ -110,7 +116,7 @@ Russell draws Hume's distinction sharply: we must separate "the fact that past u
 
 ### Why it still matters
 
-The problem has a modern form in machine learning. Learning algorithms work only if they have "inductive bias", built-in assumptions about the domain, and the "No-Free-Lunch theorems" make the point formally. They "can be interpreted as versions of the argument in Hume's first fork since they establish that there can be no contradiction in the algorithm not performing well" [@henderson2024, § 3.4]. If every logically possible future is weighted equally, any learning algorithm "is expected to have a generalisation error of 1/2, and hence to do no better than guessing at random" [@henderson2024, § 3.4].
+The problem has a modern form in machine learning. Learning algorithms work only if they have "inductive bias", built-in assumptions about the domain, and the "No-Free-Lunch theorems" make the point formally. They "can be interpreted as versions of the argument in Hume's first fork since they establish that there can be no contradiction in the algorithm not performing well" [@henderson2024, § 3.4]. In the binary prediction setting surveyed by Henderson, if possible target functions are uniformly weighted, any learning algorithm "is expected to have a generalisation error of 1/2, and hence to do no better than guessing at random" [@henderson2024, § 3.4].
 
 ## Beyond the chapter
 

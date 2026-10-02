@@ -1,0 +1,82 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "full-belief-and-degrees-of-belief",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Why do certainty and threshold bridges face different problems of revision and aggregation?"
+  ],
+  "sources": [
+    {
+      "key": "geninhuber2026",
+      "used_for": [
+        "An attitude and its strength",
+        "The lottery puts combination under pressure",
+        "Why not reserve belief for probability one?",
+        "The preface has a different structure",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4.2.1",
+          "basis": "full text",
+          "excerpt": "Yet there does not seem to be anything wrong with saying that I fully believe each of (1), (2) and (3).",
+          "corpus_chunk": 1471
+        },
+        {
+          "locator": "§ 4.2.1",
+          "basis": "full text",
+          "excerpt": "Roorda’s final challenge to extremal probability appeals to corrigibility, according to which it is reasonable to believe that at least some of my beliefs may need to be abandoned in light of new information.",
+          "corpus_chunk": 1473
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "More recent work, especially Leitgeb (2017), adopts the weaker thesis.",
+          "corpus_chunk": 1474
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "In light of deductive cogency, that corresponds to the orthographically ungainly \\(\\text{WLT}^{\\Pr(\\cap \\Bel)}\\).",
+          "corpus_chunk": 1475
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Since cogency requires belief to be closed under conjunction, she ought to believe that all the tickets are losers.",
+          "corpus_chunk": 1476
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Broadly speaking, they propose that a high degree of belief is sufficient to warrant full belief unless some defeating condition holds.",
+          "corpus_chunk": 1477
+        }
+      ],
+      "annotation": "Examines certainty and threshold bridges between categorical belief and credence, with the lottery objection."
+    },
+    {
+      "key": "sorensen2024",
+      "used_for": [
+        "The preface has a different structure",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "In the preface of Introduction to the Foundations of Mathematics, Raymond Wilder (1952, iv) apologizes for the errors in the text.",
+          "corpus_chunk": 776
+        },
+        {
+          "locator": "§ 4",
+          "basis": "full text",
+          "excerpt": "At this juncture many philosophers join Kyburg in rejecting agglomeration and conclude that it can be rational to have jointly inconsistent beliefs.",
+          "corpus_chunk": 777
+        }
+      ],
+      "annotation": "Explains why the preface paradox concerns aggregation without relying on a numerical threshold."
+    }
+  ]
+}

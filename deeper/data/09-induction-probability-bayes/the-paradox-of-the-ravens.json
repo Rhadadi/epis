@@ -1,0 +1,72 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "the-paradox-of-the-ravens",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which confirmation principles generate the apple inference, and how does the sampling background change it?"
+  ],
+  "sources": [
+    {
+      "key": "crupi2025",
+      "used_for": [
+        "The apple enters through equivalence",
+        "Two observations that look alike can ask different questions",
+        "A Bayesian answer is qualified",
+        "Equivalence does not erase a procedure",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "Consider the following statements: (\\(h\\)) \\(\\forall x(raven(x) \\rightarrow black(x))\\), i.e., all ravens are black; (\\(e\\)) \\(raven(a) \\wedge black(a)\\), i.e., \\(a\\) is a black raven; (\\(e^*\\)) \\(\\neg black(a^*) \\wedge \\neg raven(a^*)\\), i.e., \\(a^*\\) is a non-black non-raven (say, a green apple).",
+          "corpus_chunk": 42851
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "But \\(h^* \\vDash h\\) (\\(h\\) and \\(h^*\\) are just logically equivalent).",
+          "corpus_chunk": 42851
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "One attractive feature of HD-confirmation is that it largely eludes the ravens paradox.",
+          "corpus_chunk": 42868
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "By the same token, \\(\\neg black(a)\\) HD-disconfirms \\(h\\) relative to the same assumption \\(k = raven(a)\\).",
+          "corpus_chunk": 42869
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Posit \\(h = \\forall x(raven(x)\\rightarrow black(x))\\) once again.",
+          "corpus_chunk": 42948
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Accordingly, (SP) implies that \\(h\\) is indeed more strongly confirmed by \\(black(a)\\) given \\(raven(a)\\) than it is by \\(\\neg raven(b)\\) given \\(\\neg black(b)\\)—that is, \\(C_{P}(h, e\\mid k)\\gt C_{P}(h, e^*\\mid k^*)\\)—as long as the assumption \\(P(e\\mid k)\\lt P(e^*\\mid k^*)\\) applies.",
+          "corpus_chunk": 42950
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Consider the following conditions: \\(P[raven(a)\\mid h] = P[raven(a)] \\gt 0\\) \\(P[\\neg raven(a) \\wedge black(a)\\mid h] = P[\\neg raven(a) \\wedge black(a)]\\) Roughly, (i) says that the size of the ravens population does not depend on their color (in fact, on \\(h\\)), and (ii) that the size of the population of black non-raven objects also does not depend on the color of ravens.",
+          "corpus_chunk": 42951
+        },
+        {
+          "locator": "§ 3.6",
+          "basis": "full text",
+          "excerpt": "Notably, their results include the full specification of the sufficient and necessary conditions for the main inequality \\(C_{P}(h, e) \\gt C_{P}(h, e^*)\\).) In general, Bayesian (relevance) confirmation theory implies that the evidential import of an instance of some generalization will often depend on the credence structure, and relies on its formal representation, \\(P\\), as a tool for more systematic analyses.",
+          "corpus_chunk": 42952
+        }
+      ],
+      "annotation": "Reconstructs the raven paradox and analyzes how sampling and background probabilities change its evidential result."
+    }
+  ]
+}

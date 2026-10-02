@@ -1,8 +1,8 @@
 {
   "chapter": "09-induction-probability-bayes",
   "section": "responses-to-hume",
-  "updated": "2026-10-01",
-  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-01.",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
   "questions": [
     "How have philosophers tried to answer Hume, and which premise does each reply reject?",
     "What do probabilistic replies, from Laplace to de Finetti, achieve?",
@@ -28,373 +28,373 @@
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "Since Hume’s argument is a dilemma, there are two main ways to resist it.",
-          "corpus_chunk": 49002
+          "corpus_chunk": 44614
         },
         {
           "locator": "§ 2",
           "basis": "full text",
           "excerpt": "The second is to tackle the second horn and to argue that there is after all a probable (or empirical) argument that can justify the inductive inference.",
-          "corpus_chunk": 49003
+          "corpus_chunk": 44615
         },
         {
           "locator": "§ 3",
           "basis": "full text",
           "excerpt": "One possible escape route from the first horn is to deny premise P3, which amounts to admitting the possibility of synthetic a priori propositions (section 3.1).",
-          "corpus_chunk": 49009
+          "corpus_chunk": 44621
         },
         {
           "locator": "§ 3.1",
           "basis": "full text",
           "excerpt": "Kant famously argued in response to Hume that such synthetic a priori knowledge is possible (Kant 1781, 1783).",
-          "corpus_chunk": 49011
+          "corpus_chunk": 44623
         },
         {
           "locator": "§ 3.1",
           "basis": "full text",
           "excerpt": "Kant argued instead that experience only comes about through the concepts or “categories” of the understanding.",
-          "corpus_chunk": 49012
+          "corpus_chunk": 44624
         },
         {
           "locator": "§ 3.2",
           "basis": "full text",
           "excerpt": "The “Nomological-explanatory” solution, which has been put forward by Armstrong, BonJour and Foster (Armstrong 1983; BonJour 1998; Foster 2004) appeals to the principle of Inference to the Best Explanation (IBE).",
-          "corpus_chunk": 49013
+          "corpus_chunk": 44625
         },
         {
           "locator": "§ 3.2",
           "basis": "full text",
           "excerpt": "“To infer to the best explanation is part of what it is to be rational. If that is not rational, what is?” (Armstrong 1983: 59)",
-          "corpus_chunk": 49013
+          "corpus_chunk": 44625
         },
         {
           "locator": "§ 3.2",
           "basis": "full text",
           "excerpt": "However, one might alternatively view inductive inferences as a special case of IBE (Harman 1968)",
-          "corpus_chunk": 49016
+          "corpus_chunk": 44628
         },
         {
           "locator": "§ 3.2",
           "basis": "full text",
           "excerpt": "For it seems to me that a law whose scope is restricted to some particular period is more mysterious, inherently more puzzling, than one which is temporally universal.",
-          "corpus_chunk": 49017
+          "corpus_chunk": 44629
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "This is Laplace’s famous “rule of succession” (1814).",
-          "corpus_chunk": 49023
+          "corpus_chunk": 44635
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "There has been a persistent worry that these types of assumptions, while reasonable when applied to the case of drawing balls from an urn, will not hold for other cases of inductive inference.",
-          "corpus_chunk": 49026
+          "corpus_chunk": 44638
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "However, it has also been subjected to much criticism on the grounds that it can give rise to inconsistent probability assignments (Bertrand 1888; Borel 1909; Keynes 1921).",
-          "corpus_chunk": 49027
+          "corpus_chunk": 44639
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "The quest for an a priori argument for the assignment of the prior has been largely abandoned.",
-          "corpus_chunk": 49028
+          "corpus_chunk": 44640
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "One assumption that one can make about the observations is that they are “exchangeable”.",
-          "corpus_chunk": 49029
+          "corpus_chunk": 44641
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "The assumption of exchangeability may be seen as a natural formalization of Hume’s assumption that the past resembles the future.",
-          "corpus_chunk": 49031
+          "corpus_chunk": 44643
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "but it has rather allowed us to clarify what could be meant by Hume’s claim that inductive inferences rely on the Uniformity Principle.",
-          "corpus_chunk": 49033
+          "corpus_chunk": 44645
         },
         {
           "locator": "§ 3.3",
           "basis": "full text",
           "excerpt": "One natural choice, which was made early on by Bayes himself and by Laplace, is to put a uniform prior over the parameter",
-          "corpus_chunk": 49022
+          "corpus_chunk": 44634
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "“Inductive reasoning is justified to the extent that it is sound, given appropriate premises” (Howson 2000: 239, his emphasis).",
-          "corpus_chunk": 49034
+          "corpus_chunk": 44646
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "In each instantiation, this convergence is relative to a particular specific prior.",
-          "corpus_chunk": 49037
+          "corpus_chunk": 44649
         },
         {
           "locator": "§ 3.4",
           "basis": "full text",
           "excerpt": "preclude any universal model-independent justification for learning algorithms, it does not rule out partial justifications in the form of such general a priori ‘model-relative’ learning guarantees",
-          "corpus_chunk": 49038
+          "corpus_chunk": 44650
         },
         {
           "locator": "§ 3.5",
           "basis": "full text",
           "excerpt": "This was first put forward by Donald C. Williams (1947) and later developed by David Stove (1986).",
-          "corpus_chunk": 49039
+          "corpus_chunk": 44651
         },
         {
           "locator": "§ 3.5",
           "basis": "full text",
           "excerpt": "In other words, it is highly probable in the sense of “usually right” to say that the sample matches its population.",
-          "corpus_chunk": 49044
+          "corpus_chunk": 44656
         },
         {
           "locator": "§ 3.5",
           "basis": "full text",
           "excerpt": "But this does not imply that the proposition that a small interval around the sample will contain the true population frequency is highly probable in the sense of “credible on each occasion of use”.",
-          "corpus_chunk": 49045
+          "corpus_chunk": 44657
         },
         {
           "locator": "§ 4",
           "basis": "full text",
           "excerpt": "One may argue that a probable argument would not, despite what Hume says, be circular in a problematic way (we consider responses of this kind in section 4.1). Or, one might attempt to argue that probable arguments are not circular at all (section 4.2).",
-          "corpus_chunk": 49047
+          "corpus_chunk": 44659
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "it relies on a rule of inference in order to reach the conclusion that that very rule is reliable.",
-          "corpus_chunk": 49050
+          "corpus_chunk": 44662
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "After all, less sane inference rules such as counterinduction can support themselves in a similar fashion.",
-          "corpus_chunk": 49054
+          "corpus_chunk": 44666
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "Consider then the following argument CI*: Most CI arguments have been unsuccessful",
-          "corpus_chunk": 49054
+          "corpus_chunk": 44666
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "The response to these concerns is that, as Papineau puts it, the argument is “not supposed to do very much” (Papineau 1992: 18).",
-          "corpus_chunk": 49054
+          "corpus_chunk": 44666
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "The inductive justification of induction provides a kind of important consistency check on our existing beliefs.",
-          "corpus_chunk": 49055
+          "corpus_chunk": 44667
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "Some authors have then argued that although premise-circularity is vicious, rule-circularity is not (Cleve 1984; Papineau 1992).",
-          "corpus_chunk": 49051
+          "corpus_chunk": 44663
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "They say that as long as R is in fact reliable, one can form a justified belief in the conclusion of an argument relying on R",
-          "corpus_chunk": 49051
+          "corpus_chunk": 44663
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "all that we can reasonably demand of a fundamental form of reasoning is that it endorse itself.",
-          "corpus_chunk": 49052
+          "corpus_chunk": 44664
         },
         {
           "locator": "§ 4.1",
           "basis": "full text",
           "excerpt": "Consider Lewis Carroll’s dialogue between Achilles and the Tortoise (Carroll 1895).",
-          "corpus_chunk": 49052
+          "corpus_chunk": 44664
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "The future only resembles the past in some respects, but not others.",
-          "corpus_chunk": 49056
+          "corpus_chunk": 44668
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "Okasha, for example, argues that Hume’s circularity problem can be evaded if there are “no rules” behind induction (Okasha 2005a,b). Norton puts forward the similar idea that all inductive inferences are material",
-          "corpus_chunk": 49056
+          "corpus_chunk": 44668
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "One way to put this point is to say that Hume’s argument rests on a quantifier shift fallacy (Sober 1988; Okasha 2005a).",
-          "corpus_chunk": 49059
+          "corpus_chunk": 44671
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "For example, Norton argues that the upshot is a dissolution of the problem of induction, since the regress of justifications benignly terminates (Norton 2003). And Okasha more mildly suggests that even if the regress is infinite, “Perhaps infinite regresses are less bad than vicious circles after all” (Okasha 2005b: 253).",
-          "corpus_chunk": 49060
+          "corpus_chunk": 44672
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "Norton’s material theory of induction postulates a rule-free characterization of induction, but it is not clear whether it really can avoid any role for general rules (Achinstein 2010, Kelly 2010, Worrall 2010).",
-          "corpus_chunk": 49061
+          "corpus_chunk": 44673
         },
         {
           "locator": "§ 4.2",
           "basis": "full text",
           "excerpt": "Okasha suggests that the Bayesian model of belief-updating is an illustration how induction can be characterized in a rule-free way, but this is problematic, since in this model all inductive inferences still share the common rule of Bayesian conditionalisation.",
-          "corpus_chunk": 49061
+          "corpus_chunk": 44673
         },
         {
           "locator": "§ 5",
           "basis": "full text",
           "excerpt": "In this section we examine approaches which question in different ways whether premise P8 really does give a valid necessary condition for justification of inference I and propose various alternative conceptions of justification.",
-          "corpus_chunk": 49062
+          "corpus_chunk": 44674
         },
         {
           "locator": "§ 5.1",
           "basis": "full text",
           "excerpt": "Crispin Wright (2004) has argued that there are certain principles, including the Uniformity Principle, that we are entitled in this sense to hold.",
-          "corpus_chunk": 49064
+          "corpus_chunk": 44676
         },
         {
           "locator": "§ 5.1",
           "basis": "full text",
           "excerpt": "“admission of unjustified and unjustifiable postulates to deal with the problem is tantamount to making scientific method a matter of faith” (Salmon 1966: 48).",
-          "corpus_chunk": 49065
+          "corpus_chunk": 44677
         },
         {
           "locator": "§ 5.2",
           "basis": "full text",
           "excerpt": "But it makes no sense to inquire in general whether the law of the land, the legal system as a whole, is or is not legal. For to what legal standards are we appealing?",
-          "corpus_chunk": 49068
+          "corpus_chunk": 44680
         },
         {
           "locator": "§ 5.2",
           "basis": "full text",
           "excerpt": "Doing this is what “being reasonable” means in such a context.",
-          "corpus_chunk": 49069
+          "corpus_chunk": 44681
         },
         {
           "locator": "§ 5.2",
           "basis": "full text",
           "excerpt": "“epistemically reasonable or justified in the sense that …there is reason to think that it is likely to be true” (BonJour 1998: 198).",
-          "corpus_chunk": 49070
+          "corpus_chunk": 44682
         },
         {
           "locator": "§ 5.2",
           "basis": "full text",
           "excerpt": "In fact Strawson allows that there is a question about whether “induction will continue to be successful”, which is distinct from the question of whether induction is rational. This question he does take to hinge on a “contingent, factual matter” (Strawson 1952: 262).",
-          "corpus_chunk": 49071
+          "corpus_chunk": 44683
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "Another solution based on an alternative criterion for justification is the “pragmatic” approach initiated by Reichenbach (1938 [2006]).",
-          "corpus_chunk": 49072
+          "corpus_chunk": 44684
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "Shall he cast his net? Well, if he wants to fish in that place, I should advise him to cast the net, to take the chance at least.",
-          "corpus_chunk": 49081
+          "corpus_chunk": 44693
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "But, he argues, if there is a limit, by following the inductive principle we will eventually find it.",
-          "corpus_chunk": 49076
+          "corpus_chunk": 44688
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "But, as Reichenbach himself recognises, many other rules of inference as well as the straight rule may also converge on the limit (Salmon 1966: 53).",
-          "corpus_chunk": 49077
+          "corpus_chunk": 44689
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "As Lange points out, the argument here “presumes that there is no cost to trying”.",
-          "corpus_chunk": 49081
+          "corpus_chunk": 44693
         },
         {
           "locator": "§ 5.3",
           "basis": "full text",
           "excerpt": "Yet it is in the short run that inductive practice actually occurs and where it really needs justification (BonJour 1998: 194; Salmon 1966: 53).",
-          "corpus_chunk": 49082
+          "corpus_chunk": 44694
         },
         {
           "locator": "§ 5.4",
           "basis": "full text",
           "excerpt": "It has then been argued that the usual inductive method, which is characterised by a preference for simpler hypotheses (Occam’s razor), can be justified since it is the unique method which meets the standards for getting to the truth in the long run as efficiently as possible, with a minimum number of retractions (Kelly 2007).",
-          "corpus_chunk": 49084
+          "corpus_chunk": 44696
         },
         {
           "locator": "§ 5.4",
           "basis": "full text",
           "excerpt": "Formal learning theory can be regarded as a kind of extension of the Reichenbachian programme.",
-          "corpus_chunk": 49083
+          "corpus_chunk": 44695
         },
         {
           "locator": "§ 5.5",
           "basis": "full text",
           "excerpt": "Another approach to pursuing a broadly Reichenbachian programme is Gerhard Schurz’s strategy based on meta-induction (Schurz 2008, 2017, 2019).",
-          "corpus_chunk": 49087
+          "corpus_chunk": 44699
         },
         {
           "locator": "§ 5.5",
           "basis": "full text",
           "excerpt": "The main result is that the wMI strategy is long-run optimal in the sense that it converges to the maximum success rate of the accessible prediction methods.",
-          "corpus_chunk": 49089
+          "corpus_chunk": 44701
         },
         {
           "locator": "§ 5.5",
           "basis": "full text",
           "excerpt": "Therefore Schurz says “it is meta-inductively justified to favor object-inductivistic strategies in the future” (Schurz 2019: 85).",
-          "corpus_chunk": 49090
+          "corpus_chunk": 44702
         },
         {
           "locator": "§ 5.5",
           "basis": "full text",
           "excerpt": "the meta-inductive justification is in support of following the strategy of meta-induction, not in support of the strategy of following OI",
-          "corpus_chunk": 49092
+          "corpus_chunk": 44704
         },
         {
           "locator": "§ 6",
           "basis": "full text",
           "excerpt": "Karl Popper, for instance, regarded the problem of induction as insurmountable, but he argued that science is not in fact based on inductive inferences at all (Popper 1935 [1959]).",
-          "corpus_chunk": 49095
+          "corpus_chunk": 44707
         },
         {
           "locator": "§ 6",
           "basis": "full text",
           "excerpt": "We seem to need more than just deductive reasoning to support practical decision-making (Salmon 1981).",
-          "corpus_chunk": 49096
+          "corpus_chunk": 44708
         },
         {
           "locator": "§ 6",
           "basis": "full text",
           "excerpt": "It appears doubtful then that pure deductivism can give an adequate account of scientific method.",
-          "corpus_chunk": 49097
+          "corpus_chunk": 44709
         },
         {
           "locator": "§ 6",
           "basis": "full text",
           "excerpt": "The problem of induction then must be seen as a problem that arises only at the level of philosophical reflection.",
-          "corpus_chunk": 49095
+          "corpus_chunk": 44707
         }
       ],
       "annotation": "Sections 3–6 survey every major reply to Hume and the objections to each."
@@ -413,37 +413,37 @@
           "locator": "p. 712",
           "basis": "full text",
           "excerpt": "if one of the ancient denizens of the shores of the Mediterranean, who had never heard of tides, had gone to the bay of Biscay, and had there seen the tide rise, say m times, he could know that there was a probability equal to",
-          "corpus_chunk": 51944
+          "corpus_chunk": 52383
         },
         {
           "locator": "p. 712",
           "basis": "full text",
           "excerpt": "the solution involves the conceptualistic principle that there is an even chance of a totally unknown event.",
-          "corpus_chunk": 51945
+          "corpus_chunk": 52384
         },
         {
           "locator": "p. 712",
           "basis": "full text",
           "excerpt": "But the only possible reason for drawing any analogy between such an arrangement and that of Nature is the principle that alternatives of which we know nothing must be considered as equally probable. But this principle, is absurd.",
-          "corpus_chunk": 51945
+          "corpus_chunk": 52384
         },
         {
           "locator": "p. 714",
           "basis": "full text",
           "excerpt": "The relative probability of this or that arrangement of Nature is something which we should have a right to talk about if universes were as plenty as blackberries",
-          "corpus_chunk": 51951
+          "corpus_chunk": 52390
         },
         {
           "locator": "p. 718",
           "basis": "full text",
           "excerpt": "We may express this by saying that in the case of analytic inference we know the probability of our conclusion (if the premises are true), but in the case of synthetic inferences we only know the degree of trustworthiness of our proceeding. As all knowledge comes from synthetic inference, we must equally infer that all human certainty consists merely in our knowing that the processes by which our knowledge has been derived are such as must generally have led to true conclusions.",
-          "corpus_chunk": 51964
+          "corpus_chunk": 52403
         },
         {
           "locator": "p. 718",
           "basis": "full text",
           "excerpt": "yet that the rule of induction will hold good in the long run may be deduced from the principle that reality is only the object of the final opinion to which sufficient investigation would lead.",
-          "corpus_chunk": 51964
+          "corpus_chunk": 52403
         }
       ],
       "annotation": "Peirce's 1878 attack on Laplace's rule and his own long-run answer, which anticipates Reichenbach."
@@ -459,20 +459,20 @@
           "locator": "p. 19",
           "basis": "full text",
           "excerpt": "Thus we find that an event having occurred successively any number of times, the probability that it will happen again the next time is equal to this number increased by unity divided by the same number, increased by two units.",
-          "corpus_chunk": 52009
+          "corpus_chunk": 51875
         },
         {
           "locator": "p. 19",
           "basis": "full text",
           "excerpt": "Placing the most ancient epoch of history at five thousand years ago, or at 182623 days, and the sun having risen constantly in the interval at each revolution of twenty-four hours, it is a bet of 1826214 to one that it will rise again to-morrow.",
-          "corpus_chunk": 52010,
+          "corpus_chunk": 51876,
           "note": "the translation prints 182623 days; five thousand years is about 1,826,213 days"
         },
         {
           "locator": "p. 19",
           "basis": "full text",
           "excerpt": "But this number is incomparably greater for him who, recogniz- ing in the totality of phenomena the principal regulator of days and seasons, sees that nothing at the present moment can arrest the course of it.",
-          "corpus_chunk": 52010
+          "corpus_chunk": 51876
         }
       ],
       "annotation": "Laplace's rule of succession and the sunrise calculation, the classic probabilistic reply."

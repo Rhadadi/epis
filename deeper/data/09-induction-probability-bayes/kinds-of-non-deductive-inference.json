@@ -1,0 +1,114 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "kinds-of-non-deductive-inference",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "What distinguishes statistical, enumerative, analogical, and explanatory support, and how can further evidence defeat it?"
+  ],
+  "sources": [
+    {
+      "key": "douven2025",
+      "used_for": [
+        "Four routes beyond the premises",
+        "Defeat is compatible with earlier support",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Abduction is normally thought of as being one of three major types of inference, the other two being deduction and induction.",
+          "corpus_chunk": 37920
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "Differently put, it is not necessarily the case that if the premises are true, then so is the conclusion: it is logically compatible with the truth of the premises that John is a member of the minority of non-rich inhabitants of Chelsea.",
+          "corpus_chunk": 37921
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "It is standard practice to group non-necessary inferences into inductive and abductive ones.",
+          "corpus_chunk": 37921
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "However, the relevant statistical information may also be more vaguely given, as in the premise, “Most people living in Chelsea are rich.” (There is much discussion about whether the conclusion of an inductive argument can be stated in purely qualitative terms or whether it should be a quantitative one—for instance, that it holds with a probability of .96 that Louise speaks both Dutch and French—or whether it can sometimes be stated in qualitative terms—for instance, if the",
+          "corpus_chunk": 37923
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "You may have observed many gray elephants and no non-gray ones, and infer from this that all elephants are gray, because that would provide the best explanation for why you have observed so many gray elephants and no non-gray ones.",
+          "corpus_chunk": 37924
+        },
+        {
+          "locator": "§ 1.1",
+          "basis": "full text",
+          "excerpt": "For instance, adding the premise that Tim and Harry are former business partners who still have some financial matters to discuss, to the premises that they had a terrible row some time ago and that they were just seen jogging together may no longer warrant you to infer that they are friends again, even if—let us suppose—the last two premises alone do warrant that inference.",
+          "corpus_chunk": 37925
+        }
+      ],
+      "annotation": "Distinguishes statistical and explanatory support, while explaining their disputed boundaries and nonmonotonicity."
+    },
+    {
+      "key": "peirce1878",
+      "used_for": [
+        "A historical comparison",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "But, because all inference may be reduced in some way to Barbara, it does not follow that this is the most appropriate form in which to represent every kind of inference.",
+          "corpus_chunk": 48504
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "All deduction is of this character; it is merely the application of general rules to particular cases.",
+          "corpus_chunk": 48504
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "Result.—This bean has been drawn in such a way that in the long run it would turn out white 23 of the time.",
+          "corpus_chunk": 48506
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "So that induction is the inference of the rule from the case and result.",
+          "corpus_chunk": 48507
+        },
+        {
+          "locator": "§ I",
+          "basis": "full text",
+          "excerpt": "We, accordingly, classify all inference as follows: Inference.",
+          "corpus_chunk": 48508
+        }
+      ],
+      "annotation": "Primary bean example distinguishes rule, case, and result in deduction, induction, and hypothesis."
+    },
+    {
+      "key": "deductive-inductive-arguments-iep",
+      "used_for": [
+        "A historical comparison",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "First, there appear to be other forms of argument that do not fit neatly into the classification of deductive or inductive arguments.",
+          "corpus_chunk": 40595
+        }
+      ],
+      "annotation": "Explains why a sharp binary classification does not capture every ordinary argument."
+    }
+  ]
+}

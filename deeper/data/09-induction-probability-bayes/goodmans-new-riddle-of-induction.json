@@ -1,0 +1,326 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "goodmans-new-riddle-of-induction",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Why do matched observations leave incompatible projections, and what do language symmetry and entrenchment add?"
+  ],
+  "sources": [
+    {
+      "key": "cohnitz-rossberg2024",
+      "used_for": [
+        "Two descriptions of the same notebook",
+        "Counting matches does not settle the issue",
+        "Why an odd word is not an answer",
+        "A problem about differences between inductions",
+        "Lawlike and accidental generalizations",
+        "The new riddle, premise by premise",
+        "Three tempting replies and what they owe",
+        "Goodman's answer: entrenchment",
+        "Rules and judgments can correct each other",
+        "Categories are part of a prediction",
+        "Familiarity and innovation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "If the problem of induction is not how to justify induction in the sense mentioned above, then what is it?",
+          "corpus_chunk": 43854
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "We have to take into account that the rules must remain coherent and not too complicated to apply.",
+          "corpus_chunk": 43854
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "According to Goodman, nothing more can be demanded or achieved.",
+          "corpus_chunk": 43855
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Before presenting Goodman’s solution, we first have to discuss Goodman’s own challenge, the so-called “New Riddle of Induction”.",
+          "corpus_chunk": 43857
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Lawlike statements, in contrast to accidentally true general statements, are confirmed by their instances and support counterfactuals.",
+          "corpus_chunk": 43857
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Your special interest lies in the color properties of certain gemstones, in particular, emeralds.",
+          "corpus_chunk": 43858
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Each of these statements is analytically equivalent with the corresponding one in your notebook.",
+          "corpus_chunk": 43859
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "We could obviously define infinitely many grue-like predicates that would all lead to new, similarly incompatible predictions.",
+          "corpus_chunk": 43860
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "The problem is to explain why some general statements (such as L3) are confirmed by their instances, whereas others (such as L4) are not.",
+          "corpus_chunk": 43861
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "The trouble is that this reply makes it relative to a language whether or not a predicate is projectible.",
+          "corpus_chunk": 43862
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "So the positionality of predicates is not invariant with respect to linguistically equivalent transformations.",
+          "corpus_chunk": 43863
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "Goodman’s solution to the new riddle of induction resembles Hume’s solution in an important way.",
+          "corpus_chunk": 43865
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "A hypothesis is unprojectible iff it is unsupported, exhausted, violated, or overridden.",
+          "corpus_chunk": 43866
+        },
+        {
+          "locator": "§ 5.4",
+          "basis": "full text",
+          "excerpt": "The discussion of course continued after the 1990s and the literature is still growing.",
+          "corpus_chunk": 43866
+        }
+      ],
+      "annotation": "Reconstructs the grue riddle, language symmetry, reflective equilibrium, and Goodman’s entrenchment account."
+    },
+    {
+      "key": "henderson2024",
+      "used_for": [
+        "A problem about differences between inductions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Hume introduces the problem of induction as part of an analysis of the notions of cause and effect.",
+          "corpus_chunk": 44599
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Suppose we have an object present to our senses: say gunpowder.",
+          "corpus_chunk": 44599
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Sometimes it is also called the “Resemblance Principle”, or the “Principle of Uniformity of Nature”.",
+          "corpus_chunk": 44601
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Hume makes a distinction between relations of ideas and matters of fact.",
+          "corpus_chunk": 44601
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "And, he says, it implies no contradiction that the course of nature may change, and that an object seemingly like those which we have experienced, may be attended with different or contrary effects.",
+          "corpus_chunk": 44603
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The second type of reasoning then fails to provide a chain of reasoning which is not circular.",
+          "corpus_chunk": 44604
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This consists of an explanation of what the inductive inferences are driven by, if not reason.",
+          "corpus_chunk": 44604
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "In the Enquiry, Hume suggests that the step taken by the mind, which is not supported by any argument, or process of the understanding … must be induced by some other principle of equal weight and authority.",
+          "corpus_chunk": 44606
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "This belief is the necessary result of placing the mind in such circumstances.",
+          "corpus_chunk": 44606
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "It is possible to go even further in an attempt to dismantle the Humean circularity.",
+          "corpus_chunk": 44668
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "There seems then to be a major lacuna in Hume’s account.",
+          "corpus_chunk": 44668
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "But equally, we could describe the same results by saying that all observed emeralds are grue.",
+          "corpus_chunk": 44670
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Rather each inductive inference presupposes some more specific empirical presupposition.",
+          "corpus_chunk": 44670
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Different inductive inferences then rest on different empirical presuppositions, and the problem of circularity is evaded.",
+          "corpus_chunk": 44671
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Any dissolution of Hume’s circularity does not depend only on arguing that the UP should be replaced by empirical presuppositions which are specific to each inductive inference.",
+          "corpus_chunk": 44673
+        }
+      ],
+      "annotation": "Distinguishes Hume’s justification problem from disputes about the presuppositions of particular projections."
+    },
+    {
+      "key": "mill1843",
+      "used_for": [
+        "A problem about differences between inductions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "Moral and political inquiry, indeed, are as yet far behind that conception.",
+          "corpus_chunk": 14996
+        },
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "That all swans are white, can not have been a good induction, since the conclusion has turned out erroneous.",
+          "corpus_chunk": 14997
+        },
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "As there were black swans, though civilized people had existed for three thousand years on the earth without meeting with them, may there not also be “men whose heads do grow beneath their shoulders,” notwithstanding a rather less perfect unanimity of negative testimony from observers?",
+          "corpus_chunk": 14999
+        },
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "In some we feel complete assurance that the future will resemble the past, the unknown be precisely similar to the known.",
+          "corpus_chunk": 14999
+        },
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "Here, then, is a general law of nature, inferred without hesitation from a single instance; a universal proposition from a singular one.",
+          "corpus_chunk": 15000
+        },
+        {
+          "locator": "Book III, ch. III, § 3",
+          "basis": "full text",
+          "excerpt": "Why is a single instance, in some cases, sufficient for a complete induction, while in others, myriads of concurring instances, without a single exception known or presumed, go such a very little way toward establishing a universal proposition?",
+          "corpus_chunk": 15001
+        }
+      ],
+      "annotation": "Public-domain primary contrast between single-instance generalization and extensively observed but defeasible regularities."
+    },
+    {
+      "key": "lin2024",
+      "used_for": [
+        "Three tempting replies and what they owe",
+        "Rules and judgments can correct each other",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.",
+          "corpus_chunk": 223
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "This point just made generalizes to most applications of Bayesian epistemology.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.",
+          "corpus_chunk": 226
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "A second proposed type of foundation for Bayesian epistemology is based on the idea of accurate estimation.",
+          "corpus_chunk": 233
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "This approach has also been extended to argue for the Principle of Conditionalization (Briggs & Pettigrew 2020).",
+          "corpus_chunk": 233
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "With such bridge principles, a Bayesian may argue from norms for comparative probabilities to norms for credences, such as Probabilism.",
+          "corpus_chunk": 234
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "But those accounts of credences are apparently vulnerable to counterexamples.",
+          "corpus_chunk": 235
+        },
+        {
+          "locator": "§ 1.7",
+          "basis": "full text",
+          "excerpt": "If this Bayesian normative system is so good that, of the known competitors, it strikes the best balance of those two virtues just mentioned—comprehensiveness and simplicity—then that is a good reason for accepting the two core Bayesian norms.",
+          "corpus_chunk": 237
+        }
+      ],
+      "annotation": "Separates coherence, learning norms, their defenses, priors, and uncertain learning."
+    }
+  ]
+}

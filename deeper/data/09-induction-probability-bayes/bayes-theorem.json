@@ -1,0 +1,541 @@
+{
+  "chapter": "09-induction-probability-bayes",
+  "section": "bayes-theorem",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do prior, likelihood, alternatives, dependence, and the learning rule determine a posterior?"
+  ],
+  "sources": [
+    {
+      "key": "joyce2021",
+      "used_for": [
+        "Read the condition first",
+        "An invented alarm example",
+        "The equation preserves both routes to the evidence",
+        "A relation derived from shared probability",
+        "Four quantities, four jobs",
+        "Why the base rate matters",
+        "Odds show the evidential multiplier",
+        "Confirmation is a change, not a finishing line",
+        "Repeated evidence and dependence",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.",
+          "corpus_chunk": 42698
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, \"An Essay Toward Solving a Problem in the Doctrine of Chances\" (Bayes 1764).",
+          "corpus_chunk": 42700
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "Doe died during 2000 is a fairly strong predictor of senior citizenship.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.",
+          "corpus_chunk": 42701
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.",
+          "corpus_chunk": 42702
+        },
+        {
+          "locator": "§ 1",
+          "basis": "full text",
+          "excerpt": "The test's specificity, its \"true negative\" rate, is the proportion of healthy patients who test negative.",
+          "corpus_chunk": 42703
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Bayes' Theorem can be expressed in a variety of forms that are useful for different purposes.",
+          "corpus_chunk": 42705
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Since P(E)) = PT(E)) where T is any truth of logic, we can think of (1.4) as telling us that The probability of a hypothesis conditional on a body of data is equal to the unconditional probability of the hypothesis multiplied by the degree to which the hypothesis surpasses a tautology as a predictor of the data.",
+          "corpus_chunk": 42706
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In the jargon of bookies, the \"odds\" of a hypothesis is its probability divided by the probability of its negation: O(H) = P(H)/P(~H).",
+          "corpus_chunk": 42706
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Thus, the difference between \"probability talk\" and \"odds talk\" corresponds to the difference between saying \"we are two thirds of the way there\" and saying \"we have gone twice as far as we have yet to go.\" The analogue of the probability ratio is the odds ratio OR(H, E) = OE(H)/O(H), the factor by which H's unconditional odds must be multiplied to obtain its odds conditional on E.",
+          "corpus_chunk": 42708
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The quantity LR(H, E) = PH(E)/P~H(E) that appears in (1.5) is the likelihood ratio of H given E.",
+          "corpus_chunk": 42708
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "Doe example, LR(H, E) is obtained by comparing the predictability of senior status given that J.",
+          "corpus_chunk": 42710
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "We can also generalize the likelihood ratio by setting LR(H, H*; E) = PH(E)/PH*(E).",
+          "corpus_chunk": 42711
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "In each case, though, the underlying message is the same: conditional probability = unconditional probability × predictive power (1.2) – (1.6) are multiplicative forms of Bayes' Theorem that use division to compare the disparities between unconditional and conditional probabilities.",
+          "corpus_chunk": 42712
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "The following table gives the additive analogue of each ratio measure.",
+          "corpus_chunk": 42712
+        },
+        {
+          "locator": "§ 2",
+          "basis": "full text",
+          "excerpt": "While the results of this section are useful to anyone who employs the probability calculus, they have a special relevance for subjectivist or \"Bayesian\" approaches to statistics, epistemology, and inductive inference.[5] Subjectivists lean heavily on conditional probabilities in their theory of evidential support and their account of empirical learning.",
+          "corpus_chunk": 42714
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Subjectivists maintain that beliefs come in varying gradations of strength, and that an ideally rational person's graded beliefs can be represented by a subjective probability function P.",
+          "corpus_chunk": 42715
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Incremental Confirmation.[9] A body of data provides incremental evidence for H to the extent that conditioning on the data raises H's probability.",
+          "corpus_chunk": 42716
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Nevertheless, the idea that incremental evidence is reflected in disparities between conditional and unconditional probabilities only makes sense if differences in subjective probability mirror differences in total evidence.",
+          "corpus_chunk": 42717
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "It will be useful to distinguish two subsidiary concepts related to total evidence.",
+          "corpus_chunk": 42718
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Readers may consult Table 3 (in the supplementary document) for a complete list of the possibilities.",
+          "corpus_chunk": 42718
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "The net evidence for Red is then the disparity between our total evidence for Red and our total evidence against Red.",
+          "corpus_chunk": 42719
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Philosophers interested in characterizing correct patterns of inductive reasoning and in providing \"rational reconstructions\" of scientific methodology have tended to focus on incremental evidence as crucial to their enterprise.",
+          "corpus_chunk": 42721
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Relative to a subjective probability function P, E incrementally confirms (disconfirms, is irrelevant to) H if and only if PE(H) is greater than (less than, equal to) P(H).",
+          "corpus_chunk": 42722
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "E provides incremental evidence for H if and only if PH(E) > P~H(E).",
+          "corpus_chunk": 42723
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "According to this model, hypotheses are incrementally confirmed by any evidence they entail.",
+          "corpus_chunk": 42724
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "This explains why scientists so often seek to design experiments that fit the H-D paradigm.",
+          "corpus_chunk": 42724
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "If H entails both E and E*, say, then Bayes' Theorem entails that the least probable of the two supports H more strongly.",
+          "corpus_chunk": 42726
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "According to the weak likelihood principle, hypotheses that are uniformly better predictors of the data are better supported by the data.",
+          "corpus_chunk": 42726
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Thus, all four measures agree with the comparative account of incremental evidence given in (2.1).",
+          "corpus_chunk": 42727
+        }
+      ],
+      "annotation": "Derives the conditional-probability and odds forms and distinguishes incremental from total support."
+    },
+    {
+      "key": "lin2024",
+      "used_for": [
+        "A relation derived from shared probability",
+        "Updating is an additional rule",
+        "Which priors are permissible?",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "The two Bayesian norms sketched above can be stated a bit more generally as follows.",
+          "corpus_chunk": 215
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "While this norm is synchronic in that it constrains your credences at each time, the next norm is diachronic.",
+          "corpus_chunk": 216
+        },
+        {
+          "locator": "§ 1.2",
+          "basis": "full text",
+          "excerpt": "It is designed to ensure compliance with Probabilism, but it also has an independent, intuitive appeal.",
+          "corpus_chunk": 217
+        },
+        {
+          "locator": "§ 1.4",
+          "basis": "full text",
+          "excerpt": "Probabilism is often regarded as a coherence norm, which says how one’s opinions ought to fit together on pain of incoherence.",
+          "corpus_chunk": 222
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.",
+          "corpus_chunk": 223
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "This point just made generalizes to most applications of Bayesian epistemology.",
+          "corpus_chunk": 224
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.",
+          "corpus_chunk": 226
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "A contingent proposition is true in some cases, while a logical falsehood is true in no cases at all.",
+          "corpus_chunk": 265
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "In reply, defenders of Regularity can replace conditionalization by a generalization of it called Jeffrey Conditionalization, which need not drop any credence down to zero.",
+          "corpus_chunk": 266
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So “the coin is fair” is assigned credence \\(0.5 - 0.5\\), which equals 0 and violates Regularity.",
+          "corpus_chunk": 267
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "The above response to the Coin Case implements a general strategy.",
+          "corpus_chunk": 267
+        },
+        {
+          "locator": "§ 3.3",
+          "basis": "full text",
+          "excerpt": "So, in the Coin Case, the contingent proposition “the coin is fair” is assigned credence 0, the same credence as a logical falsehood is assigned.",
+          "corpus_chunk": 269
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Subjective Bayesianism is the view that every prior is permitted unless it fails to be coherent (de Finetti 1970 [1974]; Savage 1972; Jeffrey 1965; van Fraassen 1989: ch. 7).",
+          "corpus_chunk": 288
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Under just Probabilism and the Principal Principle, there is a prior that follows Ockham’s razor in statistical model selection but there also is a prior that does not (Forster 1995: sec. 3; Sober 2002: sec. 6).[7] So, although subjective Bayesianism does not really say that anything goes, it seems to permit too much, failing to account for some important aspects of scientific objectivity—or so the worry goes.",
+          "corpus_chunk": 289
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "What ought to be the case is, rather, that people’s opinions be brought closer and closer to each other as their shared evidence accumulates.",
+          "corpus_chunk": 290
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "That is, they prove so-called merging-of-opinions theorems (Blackwell & Dubins 1962; Gaifman & Snir 1982).",
+          "corpus_chunk": 290
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Whether or not merging-of-opinions theorems can capture the intended kind of scientific objectivity, it is still debated whether there are other kinds of scientific objectivity that elude subjective Bayesianism.",
+          "corpus_chunk": 292
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Second, just as premises are inputs into a deductive reasoning process, prior credences are inputs into the process of an inquiry.",
+          "corpus_chunk": 293
+        },
+        {
+          "locator": "§ 4.1",
+          "basis": "full text",
+          "excerpt": "Indeed, the anti-subjectivists to be discussed below—objective Bayesians and forward-looking Bayesians—all think that a substantive account of inductive inferences is furnished by norms that go beyond the consideration of coherence.",
+          "corpus_chunk": 294
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Objective Bayesians contend that, in addition to coherence, there is another epistemic virtue or ideal that needs to be codified into a norm for prior credences: freedom from bias and avoidance of overly strong opinions (Jeffreys 1939; Carnap 1945; Jaynes 1957, 1968; Rosenkrantz 1981; J.",
+          "corpus_chunk": 295
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "More generally, objective Bayesians are sympathetic to this norm: The Principle of Indifference.",
+          "corpus_chunk": 295
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Now, have a look at the two groups of propositions listed in the table below.",
+          "corpus_chunk": 296
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "In reply, objective Bayesians may reply that Bertrand’s paradox provides no conclusive reason against the Indifference Principle and perhaps the fault lies elsewhere.",
+          "corpus_chunk": 298
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "So perhaps the fault lies not with the Indifference Principle but with one of the two inputs—after all, garbage in, garbage out.",
+          "corpus_chunk": 298
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Those two aspects of the symmetry—physical and permutational—are extended by two influential approaches to the Indifference Principle, respectively, which are presented in turn below.",
+          "corpus_chunk": 300
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "He maintains, for example, that two sentences ought to be assigned equal prior credences if one differs from the other only by a permutation of the names in use.",
+          "corpus_chunk": 301
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "The Indifference Principle has been challenged for another reason.",
+          "corpus_chunk": 301
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "When we change our credences, the Principle of Conditionalization requires us to raise the credence in some proposition, such as the credence in the new evidence, all the way to 1.",
+          "corpus_chunk": 328
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Recall that conditionalization has a defining feature: it preserves the credence ratios of the possibilities inside new evidence E while the credence in E is raised all the way to 1.",
+          "corpus_chunk": 329
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "It ought to be that, if the direct experiential impact on one’s credences causes the credence in E to rise to a real number e (which might be less than 1), then one’s credences are changed as follows: For the possibilities inside E, rescale their credences upward by a common factor so that they sum to e; for the possibilities outside E, rescale their credences downward by a common factor so that they sum to \\(1-e\\) (to obey the rule of Sum-to-One).",
+          "corpus_chunk": 330
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "Jeffrey conditionalization is flexible enough to accommodate the Mudrunner Case.",
+          "corpus_chunk": 330
+        },
+        {
+          "locator": "§ 5.3",
+          "basis": "full text",
+          "excerpt": "This is how Jeffrey conditionalization accommodates the Mudrunner Case.",
+          "corpus_chunk": 331
+        }
+      ],
+      "annotation": "Separates coherence, learning norms, their defenses, priors, and uncertain learning."
+    },
+    {
+      "key": "laplace1902",
+      "used_for": [
+        "A relation derived from shared probability",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "p. 196",
+          "basis": "full text",
+          "excerpt": "I have collected all these methods in my TJieorie analytique des Probabilite's, in which I have proposed to expound in the most general manner the principles and the analysis of the calculus of probabilities, like- wise the solutions of the most interesting and most difficult problems which calculus presents.",
+          "corpus_chunk": 52219
+        },
+        {
+          "locator": "p. 196",
+          "basis": "full text",
+          "excerpt": "It is seen in this essay that the theory of probabilities is at bottom only common sense reduced to calculus; it makes us appreciate with exactitude that which exact minds feel by a sort of instinct without being able ofttimes to give a reason for it.",
+          "corpus_chunk": 52219
+        }
+      ],
+      "annotation": "Public-domain primary statement of the ambition to discipline judgment through probability calculus."
+    },
+    {
+      "key": "romeijn2025",
+      "used_for": [
+        "Probability and action answer different questions",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "The procedure of Fisher’s null hypothesis test was already discussed briefly in the foregoing.",
+          "corpus_chunk": 44189
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "In standard null hypothesis testing little can be said about error rates if the null hypothesis is in fact false.",
+          "corpus_chunk": 44190
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "The decision to accept or reject a hypothesis is associated with the possibility of error.",
+          "corpus_chunk": 44190
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "We can also make the converse type-II error of accepting the null hypothesis when in fact the alternative is true.",
+          "corpus_chunk": 44191
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "The example of the tea tasting student allows for an easy illustration of the likelihood ratio test.",
+          "corpus_chunk": 44192
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "For any individual sample \\(s\\) and for the aforementioned sets of sequences \\(S_{k/n}\\), the likelihood ratio becomes \\(3^{k} / 2^{5}\\).",
+          "corpus_chunk": 44194
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "In some cases, e.g., so-called one-sided tests, the test function relies on a further structuring of the sample space.",
+          "corpus_chunk": 44195
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "It includes the sequence of fifteen correct guesses, the singleton \\(S_{15/15}\\), but also the set of all 15 sequences with one failure, \\(S_{14/15}\\), the set of all 105 sequences with two failures, \\(S_{13/15}\\), and the set of all 455 sequences with three failures, \\(S_{12/15}\\).",
+          "corpus_chunk": 44196
+        },
+        {
+          "locator": "§ 3.1.1",
+          "basis": "full text",
+          "excerpt": "We can then reject the null hypothesis at 2% significance level, because the sample falls within \\(R_{r}\\).",
+          "corpus_chunk": 44196
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "Consider the likelihood ratio test of Neyman and Pearson.",
+          "corpus_chunk": 44211
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "An attempt to provide it with an interpretation in terms of support has been undertaken by Cox and Mayo (2006).",
+          "corpus_chunk": 44211
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "By comparison, imagine that all the students enter a lottery.",
+          "corpus_chunk": 44212
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "But it is hardly believable that the student will in the long run be 100% accurate.",
+          "corpus_chunk": 44213
+        },
+        {
+          "locator": "§ 3.2.1",
+          "basis": "full text",
+          "excerpt": "Neyman 1957), so it may be argued that the problems disappear if only scientists abandon their faulty epistemic use of classical statistics.",
+          "corpus_chunk": 44214
+        }
+      ],
+      "annotation": "Explains error rates, p-values, confidence procedures, and the contested transition from statistical results to belief."
+    }
+  ]
+}

@@ -149,3 +149,372 @@ ok-quote: is it the best policy we have?
 A @henderson2024: Sections 3–6 survey every major reply to Hume and the objections to each.
 A @laplace1902: Laplace's rule of succession and the sunrise calculation, the classic probabilistic reply.
 A @peirce1878c: Peirce's 1878 attack on Laplace's rule and his own long-run answer, which anticipates Reichenbach.
+
+== 09-induction-probability-bayes/goodmans-new-riddle-of-induction
+Q: Why do matched observations leave incompatible projections, and what do language symmetry and entrenchment add?
+@cohnitz-rossberg2024 | § 5.2 | If the problem of induction is not how to justify induction in the sense mentioned above, then what is it?
+@cohnitz-rossberg2024 | § 5.2 | We have to take into account that the rules must remain coherent and not too complicated to apply.
+@cohnitz-rossberg2024 | § 5.2 | According to Goodman, nothing more can be demanded or achieved.
+@cohnitz-rossberg2024 | § 5.3 | Before presenting Goodman’s solution, we first have to discuss Goodman’s own challenge, the so-called “New Riddle of Induction”.
+@cohnitz-rossberg2024 | § 5.3 | Lawlike statements, in contrast to accidentally true general statements, are confirmed by their instances and support counterfactuals.
+@cohnitz-rossberg2024 | § 5.3 | Your special interest lies in the color properties of certain gemstones, in particular, emeralds.
+@cohnitz-rossberg2024 | § 5.3 | Each of these statements is analytically equivalent with the corresponding one in your notebook.
+@cohnitz-rossberg2024 | § 5.3 | We could obviously define infinitely many grue-like predicates that would all lead to new, similarly incompatible predictions.
+@cohnitz-rossberg2024 | § 5.3 | The problem is to explain why some general statements (such as L3) are confirmed by their instances, whereas others (such as L4) are not.
+@cohnitz-rossberg2024 | § 5.3 | The trouble is that this reply makes it relative to a language whether or not a predicate is projectible.
+@cohnitz-rossberg2024 | § 5.3 | So the positionality of predicates is not invariant with respect to linguistically equivalent transformations.
+@cohnitz-rossberg2024 | § 5.4 | Goodman’s solution to the new riddle of induction resembles Hume’s solution in an important way.
+@cohnitz-rossberg2024 | § 5.4 | A hypothesis is unprojectible iff it is unsupported, exhausted, violated, or overridden.
+@cohnitz-rossberg2024 | § 5.4 | The discussion of course continued after the 1990s and the literature is still growing.
+A @cohnitz-rossberg2024: Reconstructs the grue riddle, language symmetry, reflective equilibrium, and Goodman’s entrenchment account.
+@henderson2024 | § 1 | Hume introduces the problem of induction as part of an analysis of the notions of cause and effect.
+@henderson2024 | § 1 | Suppose we have an object present to our senses: say gunpowder.
+@henderson2024 | § 1 | Sometimes it is also called the “Resemblance Principle”, or the “Principle of Uniformity of Nature”.
+@henderson2024 | § 1 | Hume makes a distinction between relations of ideas and matters of fact.
+@henderson2024 | § 1 | And, he says, it implies no contradiction that the course of nature may change, and that an object seemingly like those which we have experienced, may be attended with different or contrary effects.
+@henderson2024 | § 1 | The second type of reasoning then fails to provide a chain of reasoning which is not circular.
+@henderson2024 | § 1 | This consists of an explanation of what the inductive inferences are driven by, if not reason.
+@henderson2024 | § 1 | In the Enquiry, Hume suggests that the step taken by the mind, which is not supported by any argument, or process of the understanding … must be induced by some other principle of equal weight and authority.
+@henderson2024 | § 1 | This belief is the necessary result of placing the mind in such circumstances.
+@henderson2024 | § 4.2 | It is possible to go even further in an attempt to dismantle the Humean circularity.
+@henderson2024 | § 4.2 | There seems then to be a major lacuna in Hume’s account.
+@henderson2024 | § 4.2 | But equally, we could describe the same results by saying that all observed emeralds are grue.
+@henderson2024 | § 4.2 | Rather each inductive inference presupposes some more specific empirical presupposition.
+@henderson2024 | § 4.2 | Different inductive inferences then rest on different empirical presuppositions, and the problem of circularity is evaded.
+@henderson2024 | § 4.2 | Any dissolution of Hume’s circularity does not depend only on arguing that the UP should be replaced by empirical presuppositions which are specific to each inductive inference.
+A @henderson2024: Distinguishes Hume’s justification problem from disputes about the presuppositions of particular projections.
+@mill1843 | Book III, ch. III, § 3 | Moral and political inquiry, indeed, are as yet far behind that conception.
+@mill1843 | Book III, ch. III, § 3 | That all swans are white, can not have been a good induction, since the conclusion has turned out erroneous.
+@mill1843 | Book III, ch. III, § 3 | As there were black swans, though civilized people had existed for three thousand years on the earth without meeting with them, may there not also be “men whose heads do grow beneath their shoulders,” notwithstanding a rather less perfect unanimity of negative testimony from observers?
+@mill1843 | Book III, ch. III, § 3 | In some we feel complete assurance that the future will resemble the past, the unknown be precisely similar to the known.
+@mill1843 | Book III, ch. III, § 3 | Here, then, is a general law of nature, inferred without hesitation from a single instance; a universal proposition from a singular one.
+@mill1843 | Book III, ch. III, § 3 | Why is a single instance, in some cases, sufficient for a complete induction, while in others, myriads of concurring instances, without a single exception known or presumed, go such a very little way toward establishing a universal proposition?
+A @mill1843: Public-domain primary contrast between single-instance generalization and extensively observed but defeasible regularities.
+@lin2024 | § 1.5 | The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.
+@lin2024 | § 1.5 | As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.
+@lin2024 | § 1.5 | This point just made generalizes to most applications of Bayesian epistemology.
+@lin2024 | § 1.5 | Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.
+@lin2024 | § 1.7 | A second proposed type of foundation for Bayesian epistemology is based on the idea of accurate estimation.
+@lin2024 | § 1.7 | This approach has also been extended to argue for the Principle of Conditionalization (Briggs & Pettigrew 2020).
+@lin2024 | § 1.7 | With such bridge principles, a Bayesian may argue from norms for comparative probabilities to norms for credences, such as Probabilism.
+@lin2024 | § 1.7 | But those accounts of credences are apparently vulnerable to counterexamples.
+@lin2024 | § 1.7 | If this Bayesian normative system is so good that, of the known competitors, it strikes the best balance of those two virtues just mentioned—comprehensiveness and simplicity—then that is a good reason for accepting the two core Bayesian norms.
+A @lin2024: Separates coherence, learning norms, their defenses, priors, and uncertain learning.
+
+== 09-induction-probability-bayes/bayes-theorem
+Q: How do prior, likelihood, alternatives, dependence, and the learning rule determine a posterior?
+@joyce2021 | § 1 | The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.
+@joyce2021 | § 1 | Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.
+@joyce2021 | § 1 | P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, "An Essay Toward Solving a Problem in the Doctrine of Chances" (Bayes 1764).
+@joyce2021 | § 1 | Doe died during 2000 is a fairly strong predictor of senior citizenship.
+@joyce2021 | § 1 | People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.
+@joyce2021 | § 1 | When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.
+@joyce2021 | § 1 | The test's specificity, its "true negative" rate, is the proportion of healthy patients who test negative.
+@joyce2021 | § 2 | Bayes' Theorem can be expressed in a variety of forms that are useful for different purposes.
+@joyce2021 | § 2 | Since P(E)) = PT(E)) where T is any truth of logic, we can think of (1.4) as telling us that The probability of a hypothesis conditional on a body of data is equal to the unconditional probability of the hypothesis multiplied by the degree to which the hypothesis surpasses a tautology as a predictor of the data.
+@joyce2021 | § 2 | In the jargon of bookies, the "odds" of a hypothesis is its probability divided by the probability of its negation: O(H) = P(H)/P(~H).
+@joyce2021 | § 2 | Thus, the difference between "probability talk" and "odds talk" corresponds to the difference between saying "we are two thirds of the way there" and saying "we have gone twice as far as we have yet to go." The analogue of the probability ratio is the odds ratio OR(H, E) = OE(H)/O(H), the factor by which H's unconditional odds must be multiplied to obtain its odds conditional on E.
+@joyce2021 | § 2 | The quantity LR(H, E) = PH(E)/P~H(E) that appears in (1.5) is the likelihood ratio of H given E.
+@joyce2021 | § 2 | Doe example, LR(H, E) is obtained by comparing the predictability of senior status given that J.
+@joyce2021 | § 2 | We can also generalize the likelihood ratio by setting LR(H, H*; E) = PH(E)/PH*(E).
+@joyce2021 | § 2 | In each case, though, the underlying message is the same: conditional probability = unconditional probability × predictive power (1.2) – (1.6) are multiplicative forms of Bayes' Theorem that use division to compare the disparities between unconditional and conditional probabilities.
+@joyce2021 | § 2 | The following table gives the additive analogue of each ratio measure.
+@joyce2021 | § 2 | While the results of this section are useful to anyone who employs the probability calculus, they have a special relevance for subjectivist or "Bayesian" approaches to statistics, epistemology, and inductive inference.[5] Subjectivists lean heavily on conditional probabilities in their theory of evidential support and their account of empirical learning.
+@joyce2021 | § 3 | Subjectivists maintain that beliefs come in varying gradations of strength, and that an ideally rational person's graded beliefs can be represented by a subjective probability function P.
+@joyce2021 | § 3 | Incremental Confirmation.[9] A body of data provides incremental evidence for H to the extent that conditioning on the data raises H's probability.
+@joyce2021 | § 3 | Nevertheless, the idea that incremental evidence is reflected in disparities between conditional and unconditional probabilities only makes sense if differences in subjective probability mirror differences in total evidence.
+@joyce2021 | § 3 | It will be useful to distinguish two subsidiary concepts related to total evidence.
+@joyce2021 | § 3 | Readers may consult Table 3 (in the supplementary document) for a complete list of the possibilities.
+@joyce2021 | § 3 | The net evidence for Red is then the disparity between our total evidence for Red and our total evidence against Red.
+@joyce2021 | § 3 | Philosophers interested in characterizing correct patterns of inductive reasoning and in providing "rational reconstructions" of scientific methodology have tended to focus on incremental evidence as crucial to their enterprise.
+@joyce2021 | § 3 | Relative to a subjective probability function P, E incrementally confirms (disconfirms, is irrelevant to) H if and only if PE(H) is greater than (less than, equal to) P(H).
+@joyce2021 | § 3 | E provides incremental evidence for H if and only if PH(E) > P~H(E).
+@joyce2021 | § 3 | According to this model, hypotheses are incrementally confirmed by any evidence they entail.
+@joyce2021 | § 3 | This explains why scientists so often seek to design experiments that fit the H-D paradigm.
+@joyce2021 | § 3 | If H entails both E and E*, say, then Bayes' Theorem entails that the least probable of the two supports H more strongly.
+@joyce2021 | § 3 | According to the weak likelihood principle, hypotheses that are uniformly better predictors of the data are better supported by the data.
+@joyce2021 | § 3 | Thus, all four measures agree with the comparative account of incremental evidence given in (2.1).
+A @joyce2021: Derives the conditional-probability and odds forms and distinguishes incremental from total support.
+@lin2024 | § 1.2 | The two Bayesian norms sketched above can be stated a bit more generally as follows.
+@lin2024 | § 1.2 | While this norm is synchronic in that it constrains your credences at each time, the next norm is diachronic.
+@lin2024 | § 1.2 | It is designed to ensure compliance with Probabilism, but it also has an independent, intuitive appeal.
+@lin2024 | § 1.4 | Probabilism is often regarded as a coherence norm, which says how one’s opinions ought to fit together on pain of incoherence.
+@lin2024 | § 1.5 | The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.
+@lin2024 | § 1.5 | As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.
+@lin2024 | § 1.5 | This point just made generalizes to most applications of Bayesian epistemology.
+@lin2024 | § 1.5 | Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.
+@lin2024 | § 3.3 | A contingent proposition is true in some cases, while a logical falsehood is true in no cases at all.
+@lin2024 | § 3.3 | In reply, defenders of Regularity can replace conditionalization by a generalization of it called Jeffrey Conditionalization, which need not drop any credence down to zero.
+@lin2024 | § 3.3 | So “the coin is fair” is assigned credence \(0.5 - 0.5\), which equals 0 and violates Regularity.
+@lin2024 | § 3.3 | The above response to the Coin Case implements a general strategy.
+@lin2024 | § 3.3 | So, in the Coin Case, the contingent proposition “the coin is fair” is assigned credence 0, the same credence as a logical falsehood is assigned.
+@lin2024 | § 4.1 | Subjective Bayesianism is the view that every prior is permitted unless it fails to be coherent (de Finetti 1970 [1974]; Savage 1972; Jeffrey 1965; van Fraassen 1989: ch. 7).
+@lin2024 | § 4.1 | Under just Probabilism and the Principal Principle, there is a prior that follows Ockham’s razor in statistical model selection but there also is a prior that does not (Forster 1995: sec. 3; Sober 2002: sec. 6).[7] So, although subjective Bayesianism does not really say that anything goes, it seems to permit too much, failing to account for some important aspects of scientific objectivity—or so the worry goes.
+@lin2024 | § 4.1 | What ought to be the case is, rather, that people’s opinions be brought closer and closer to each other as their shared evidence accumulates.
+@lin2024 | § 4.1 | That is, they prove so-called merging-of-opinions theorems (Blackwell & Dubins 1962; Gaifman & Snir 1982).
+@lin2024 | § 4.1 | Whether or not merging-of-opinions theorems can capture the intended kind of scientific objectivity, it is still debated whether there are other kinds of scientific objectivity that elude subjective Bayesianism.
+@lin2024 | § 4.1 | Second, just as premises are inputs into a deductive reasoning process, prior credences are inputs into the process of an inquiry.
+@lin2024 | § 4.1 | Indeed, the anti-subjectivists to be discussed below—objective Bayesians and forward-looking Bayesians—all think that a substantive account of inductive inferences is furnished by norms that go beyond the consideration of coherence.
+@lin2024 | § 4.2 | Objective Bayesians contend that, in addition to coherence, there is another epistemic virtue or ideal that needs to be codified into a norm for prior credences: freedom from bias and avoidance of overly strong opinions (Jeffreys 1939; Carnap 1945; Jaynes 1957, 1968; Rosenkrantz 1981; J.
+@lin2024 | § 4.2 | More generally, objective Bayesians are sympathetic to this norm: The Principle of Indifference.
+@lin2024 | § 4.2 | Now, have a look at the two groups of propositions listed in the table below.
+@lin2024 | § 4.2 | In reply, objective Bayesians may reply that Bertrand’s paradox provides no conclusive reason against the Indifference Principle and perhaps the fault lies elsewhere.
+@lin2024 | § 4.2 | So perhaps the fault lies not with the Indifference Principle but with one of the two inputs—after all, garbage in, garbage out.
+@lin2024 | § 4.2 | Those two aspects of the symmetry—physical and permutational—are extended by two influential approaches to the Indifference Principle, respectively, which are presented in turn below.
+@lin2024 | § 4.2 | He maintains, for example, that two sentences ought to be assigned equal prior credences if one differs from the other only by a permutation of the names in use.
+@lin2024 | § 4.2 | The Indifference Principle has been challenged for another reason.
+@lin2024 | § 5.3 | When we change our credences, the Principle of Conditionalization requires us to raise the credence in some proposition, such as the credence in the new evidence, all the way to 1.
+@lin2024 | § 5.3 | Recall that conditionalization has a defining feature: it preserves the credence ratios of the possibilities inside new evidence E while the credence in E is raised all the way to 1.
+@lin2024 | § 5.3 | It ought to be that, if the direct experiential impact on one’s credences causes the credence in E to rise to a real number e (which might be less than 1), then one’s credences are changed as follows: For the possibilities inside E, rescale their credences upward by a common factor so that they sum to e; for the possibilities outside E, rescale their credences downward by a common factor so that they sum to \(1-e\) (to obey the rule of Sum-to-One).
+@lin2024 | § 5.3 | Jeffrey conditionalization is flexible enough to accommodate the Mudrunner Case.
+@lin2024 | § 5.3 | This is how Jeffrey conditionalization accommodates the Mudrunner Case.
+A @lin2024: Separates coherence, learning norms, their defenses, priors, and uncertain learning.
+@laplace1902 | p. 196 | I have collected all these methods in my TJieorie analytique des Probabilite's, in which I have proposed to expound in the most general manner the principles and the analysis of the calculus of probabilities, like- wise the solutions of the most interesting and most difficult problems which calculus presents.
+@laplace1902 | p. 196 | It is seen in this essay that the theory of probabilities is at bottom only common sense reduced to calculus; it makes us appreciate with exactitude that which exact minds feel by a sort of instinct without being able ofttimes to give a reason for it.
+A @laplace1902: Public-domain primary statement of the ambition to discipline judgment through probability calculus.
+@romeijn2025 | § 3.1.1 | The procedure of Fisher’s null hypothesis test was already discussed briefly in the foregoing.
+@romeijn2025 | § 3.1.1 | In standard null hypothesis testing little can be said about error rates if the null hypothesis is in fact false.
+@romeijn2025 | § 3.1.1 | The decision to accept or reject a hypothesis is associated with the possibility of error.
+@romeijn2025 | § 3.1.1 | We can also make the converse type-II error of accepting the null hypothesis when in fact the alternative is true.
+@romeijn2025 | § 3.1.1 | The example of the tea tasting student allows for an easy illustration of the likelihood ratio test.
+@romeijn2025 | § 3.1.1 | For any individual sample \(s\) and for the aforementioned sets of sequences \(S_{k/n}\), the likelihood ratio becomes \(3^{k} / 2^{5}\).
+@romeijn2025 | § 3.1.1 | In some cases, e.g., so-called one-sided tests, the test function relies on a further structuring of the sample space.
+@romeijn2025 | § 3.1.1 | It includes the sequence of fifteen correct guesses, the singleton \(S_{15/15}\), but also the set of all 15 sequences with one failure, \(S_{14/15}\), the set of all 105 sequences with two failures, \(S_{13/15}\), and the set of all 455 sequences with three failures, \(S_{12/15}\).
+@romeijn2025 | § 3.1.1 | We can then reject the null hypothesis at 2% significance level, because the sample falls within \(R_{r}\).
+@romeijn2025 | § 3.2.1 | Consider the likelihood ratio test of Neyman and Pearson.
+@romeijn2025 | § 3.2.1 | An attempt to provide it with an interpretation in terms of support has been undertaken by Cox and Mayo (2006).
+@romeijn2025 | § 3.2.1 | By comparison, imagine that all the students enter a lottery.
+@romeijn2025 | § 3.2.1 | But it is hardly believable that the student will in the long run be 100% accurate.
+@romeijn2025 | § 3.2.1 | Neyman 1957), so it may be argued that the problems disappear if only scientists abandon their faulty epistemic use of classical statistics.
+A @romeijn2025: Explains error rates, p-values, confidence procedures, and the contested transition from statistical results to belief.
+
+== 09-induction-probability-bayes/kinds-of-non-deductive-inference
+Q: What distinguishes statistical, enumerative, analogical, and explanatory support, and how can further evidence defeat it?
+@douven2025 | § 1.1 | Abduction is normally thought of as being one of three major types of inference, the other two being deduction and induction.
+@douven2025 | § 1.1 | Differently put, it is not necessarily the case that if the premises are true, then so is the conclusion: it is logically compatible with the truth of the premises that John is a member of the minority of non-rich inhabitants of Chelsea.
+@douven2025 | § 1.1 | It is standard practice to group non-necessary inferences into inductive and abductive ones.
+@douven2025 | § 1.1 | However, the relevant statistical information may also be more vaguely given, as in the premise, “Most people living in Chelsea are rich.” (There is much discussion about whether the conclusion of an inductive argument can be stated in purely qualitative terms or whether it should be a quantitative one—for instance, that it holds with a probability of .96 that Louise speaks both Dutch and French—or whether it can sometimes be stated in qualitative terms—for instance, if the
+@douven2025 | § 1.1 | You may have observed many gray elephants and no non-gray ones, and infer from this that all elephants are gray, because that would provide the best explanation for why you have observed so many gray elephants and no non-gray ones.
+@douven2025 | § 1.1 | For instance, adding the premise that Tim and Harry are former business partners who still have some financial matters to discuss, to the premises that they had a terrible row some time ago and that they were just seen jogging together may no longer warrant you to infer that they are friends again, even if—let us suppose—the last two premises alone do warrant that inference.
+A @douven2025: Distinguishes statistical and explanatory support, while explaining their disputed boundaries and nonmonotonicity.
+@peirce1878 | § I | But, because all inference may be reduced in some way to Barbara, it does not follow that this is the most appropriate form in which to represent every kind of inference.
+@peirce1878 | § I | All deduction is of this character; it is merely the application of general rules to particular cases.
+@peirce1878 | § I | Result.—This bean has been drawn in such a way that in the long run it would turn out white 23 of the time.
+@peirce1878 | § I | So that induction is the inference of the rule from the case and result.
+@peirce1878 | § I | We, accordingly, classify all inference as follows: Inference.
+A @peirce1878: Primary bean example distinguishes rule, case, and result in deduction, induction, and hypothesis.
+@deductive-inductive-arguments-iep | § 1 | First, there appear to be other forms of argument that do not fit neatly into the classification of deductive or inductive arguments.
+A @deductive-inductive-arguments-iep: Explains why a sharp binary classification does not capture every ordinary argument.
+
+== 09-induction-probability-bayes/the-paradox-of-the-ravens
+Q: Which confirmation principles generate the apple inference, and how does the sampling background change it?
+@crupi2025 | § 1.2 | Consider the following statements: (\(h\)) \(\forall x(raven(x) \rightarrow black(x))\), i.e., all ravens are black; (\(e\)) \(raven(a) \wedge black(a)\), i.e., \(a\) is a black raven; (\(e^*\)) \(\neg black(a^*) \wedge \neg raven(a^*)\), i.e., \(a^*\) is a non-black non-raven (say, a green apple).
+@crupi2025 | § 1.2 | But \(h^* \vDash h\) (\(h\) and \(h^*\) are just logically equivalent).
+@crupi2025 | § 2.2 | One attractive feature of HD-confirmation is that it largely eludes the ravens paradox.
+@crupi2025 | § 2.2 | By the same token, \(\neg black(a)\) HD-disconfirms \(h\) relative to the same assumption \(k = raven(a)\).
+@crupi2025 | § 3.6 | Posit \(h = \forall x(raven(x)\rightarrow black(x))\) once again.
+@crupi2025 | § 3.6 | Accordingly, (SP) implies that \(h\) is indeed more strongly confirmed by \(black(a)\) given \(raven(a)\) than it is by \(\neg raven(b)\) given \(\neg black(b)\)—that is, \(C_{P}(h, e\mid k)\gt C_{P}(h, e^*\mid k^*)\)—as long as the assumption \(P(e\mid k)\lt P(e^*\mid k^*)\) applies.
+@crupi2025 | § 3.6 | Consider the following conditions: \(P[raven(a)\mid h] = P[raven(a)] \gt 0\) \(P[\neg raven(a) \wedge black(a)\mid h] = P[\neg raven(a) \wedge black(a)]\) Roughly, (i) says that the size of the ravens population does not depend on their color (in fact, on \(h\)), and (ii) that the size of the population of black non-raven objects also does not depend on the color of ravens.
+@crupi2025 | § 3.6 | Notably, their results include the full specification of the sufficient and necessary conditions for the main inequality \(C_{P}(h, e) \gt C_{P}(h, e^*)\).) In general, Bayesian (relevance) confirmation theory implies that the evidential import of an instance of some generalization will often depend on the credence structure, and relies on its formal representation, \(P\), as a tool for more systematic analyses.
+A @crupi2025: Reconstructs the raven paradox and analyzes how sampling and background probabilities change its evidential result.
+
+== 09-induction-probability-bayes/probability-the-basics
+Q: How do overlap, dependence, conditioning, and interpretation affect an elementary probability assignment?
+@hajek2023 | § 1 | Probability theory was a relative latecomer in intellectual history.
+@hajek2023 | § 1 | Call \(P\) a probability function, and \((\Omega , \mathbf{F}, P)\) a probability space.
+@hajek2023 | § 1 | Under the natural assignment of probabilities to members of \(\mathbf{F}\), we obtain such welcome results as the following: and so on.
+@hajek2023 | § 1 | But more advanced treatments in mathematics, statistics, and science require more mathematical sophistication involving countable infinite extensions.
+@hajek2023 | § 1 | This axiom is the cornerstone of the assimilation of probability theory to measure theory.
+@hajek2023 | § 1 | Popper 1959b, Rényi 1970, van Fraassen 1976, Spohn 1986, and Roeper and Leblanc 1999).
+@hajek2023 | § 1 | Given certain probabilities as inputs, the axioms and theorems allow us to compute various further probabilities.
+@hajek2023 | § 3.1 | The classical interpretation owes its name to its early and august pedigree.
+@hajek2023 | § 3.1 | It is often presupposed (usually tacitly) in textbook probability puzzles.
+@hajek2023 | § 3.1 | Intuitively, ‘heads’ and ‘tails’ are equally likely outcomes of tossing a fair coin; but if their kind is ‘ways the coin could land’, then ‘edge’ should presumably be counted alongside them.
+@hajek2023 | § 3.1 | Yet he means to characterize the objective probability assignment of a rational agent in an epistemically neutral position with respect to a set of “equally possible” cases.
+@hajek2023 | § 3.3.1 | Nearly a century before Ramsey, De Morgan wrote: “By degree of probability, we really mean, or ought to mean, degree of belief” (1847, 172).
+@hajek2023 | § 3.3.1 | More promising, however, is the thought that the suitable agents must be, in a strong sense, rational.
+@hajek2023 | § 3.4 | Gamblers, actuaries and scientists have long understood that relative frequencies bear an intimate relationship to probabilities.
+@hajek2023 | § 3.4 | The crucial difference, however, is that where the classical interpretation counted all the possible outcomes of a given experiment, finite frequentism counts actual outcomes.
+@hajek2023 | § 3.4 | More than that, it seems to be built into the very notion of probability that such misleading results can arise.
+@hajek2023 | § 3.4 | Famous enough to merit a name of its own, these are instances of the so-called ‘problem of the single case’.
+@hajek2023 | § 3.5 | Like the frequency interpretations, propensity interpretations regard probabilities as objective properties of entities in the real world.
+@hajek2023 | § 3.5 | We might think of various habits coming in different degrees, measuring their various strengths.
+@hajek2023 | § 3.5 | For him, a probability \(p\) of an outcome of a certain type is a propensity of a repeatable experiment to produce outcomes of that type with limiting relative frequency \(p\).
+@hajek2023 | § 3.5 | This, however, creates the opposite problem to Popper’s: how, then, do we get the desired connection between probabilities and frequencies?
+@hajek2023 | § 3.5 | Fetzer (1982, 1983) and Miller (1994) offer single-case propensity theories.
+@hajek2023 | § 3.5 | According to Giere, on the other hand, the die has a weak tendency to land ‘3’.
+@hajek2023 | § 3.5 | But this is the sort of ‘uniformity of nature’ presupposition that Hume argued could not be known either a priori, or empirically.
+@hajek2023 | § 3.5 | There is some property of this coin tossing arrangement such that this coin would land heads with a certain long-run frequency, say.
+A @hajek2023: Introduces the calculus and separates classical, subjective, frequency, and propensity interpretations.
+@joyce2021 | § 1 | The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.
+@joyce2021 | § 1 | Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.
+@joyce2021 | § 1 | P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, "An Essay Toward Solving a Problem in the Doctrine of Chances" (Bayes 1764).
+@joyce2021 | § 1 | Doe died during 2000 is a fairly strong predictor of senior citizenship.
+@joyce2021 | § 1 | People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.
+@joyce2021 | § 1 | When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.
+@joyce2021 | § 1 | The test's specificity, its "true negative" rate, is the proportion of healthy patients who test negative.
+A @joyce2021: Derives the conditional-probability and odds forms and distinguishes incremental from total support.
+@lin2024 | § 3.3 | A contingent proposition is true in some cases, while a logical falsehood is true in no cases at all.
+@lin2024 | § 3.3 | In reply, defenders of Regularity can replace conditionalization by a generalization of it called Jeffrey Conditionalization, which need not drop any credence down to zero.
+@lin2024 | § 3.3 | So “the coin is fair” is assigned credence \(0.5 - 0.5\), which equals 0 and violates Regularity.
+@lin2024 | § 3.3 | The above response to the Coin Case implements a general strategy.
+@lin2024 | § 3.3 | So, in the Coin Case, the contingent proposition “the coin is fair” is assigned credence 0, the same credence as a logical falsehood is assigned.
+A @lin2024: Separates coherence, learning norms, their defenses, priors, and uncertain learning.
+
+== 09-induction-probability-bayes/bayesian-epistemology
+Q: Which norms govern coherence and learning, and which defenses and prior constraints remain disputed?
+@lin2024 | § 1.2 | The two Bayesian norms sketched above can be stated a bit more generally as follows.
+@lin2024 | § 1.2 | While this norm is synchronic in that it constrains your credences at each time, the next norm is diachronic.
+@lin2024 | § 1.2 | It is designed to ensure compliance with Probabilism, but it also has an independent, intuitive appeal.
+@lin2024 | § 1.4 | Probabilism is often regarded as a coherence norm, which says how one’s opinions ought to fit together on pain of incoherence.
+@lin2024 | § 1.5 | The package of Probabilism and the Principle of Conditionalization seems to explain well why one’s credence in General Relativity ought to rise in Eddington’s Observation Case.
+@lin2024 | § 1.5 | As a result of conditionalization, the possibilities incompatible with E will have their credences be dropped down to zero; those compatible, scaled up.
+@lin2024 | § 1.5 | This point just made generalizes to most applications of Bayesian epistemology.
+@lin2024 | § 1.5 | Those Bayesians think that freedom from bias requires at least that, roughly speaking, one’s credences be evenly distributed to certain possibilities unless there is a reason not to.
+@lin2024 | § 1.6 | There have been a number of arguments advanced in support of the two core Bayesian norms.
+@lin2024 | § 1.6 | The hope is that, through this bridge principle or perhaps a refined one, bad credences generate bad symptoms in betting dispositions.
+@lin2024 | § 1.6 | So the agent is willing to accept each of those two offers.
+@lin2024 | § 1.6 | You should follow such and such a credence-betting bridge principle (or, due to the nature of credences, you do so necessarily).
+@lin2024 | § 1.6 | Consider a person who loathes very much the anxiety caused by placing a bet.
+@lin2024 | § 1.6 | Some Bayesians still think that Dutch Book arguments are good, and address the present worry by trying to give a non-pragmatic reformulation of Dutch Book arguments (Christensen 1996; Christensen 2004: sec. 5.3).
+@lin2024 | § 1.7 | A second proposed type of foundation for Bayesian epistemology is based on the idea of accurate estimation.
+@lin2024 | § 1.7 | This approach has also been extended to argue for the Principle of Conditionalization (Briggs & Pettigrew 2020).
+@lin2024 | § 1.7 | With such bridge principles, a Bayesian may argue from norms for comparative probabilities to norms for credences, such as Probabilism.
+@lin2024 | § 1.7 | But those accounts of credences are apparently vulnerable to counterexamples.
+@lin2024 | § 1.7 | If this Bayesian normative system is so good that, of the known competitors, it strikes the best balance of those two virtues just mentioned—comprehensiveness and simplicity—then that is a good reason for accepting the two core Bayesian norms.
+@lin2024 | § 4.1 | Subjective Bayesianism is the view that every prior is permitted unless it fails to be coherent (de Finetti 1970 [1974]; Savage 1972; Jeffrey 1965; van Fraassen 1989: ch. 7).
+@lin2024 | § 4.1 | Under just Probabilism and the Principal Principle, there is a prior that follows Ockham’s razor in statistical model selection but there also is a prior that does not (Forster 1995: sec. 3; Sober 2002: sec. 6).[7] So, although subjective Bayesianism does not really say that anything goes, it seems to permit too much, failing to account for some important aspects of scientific objectivity—or so the worry goes.
+@lin2024 | § 4.1 | What ought to be the case is, rather, that people’s opinions be brought closer and closer to each other as their shared evidence accumulates.
+@lin2024 | § 4.1 | That is, they prove so-called merging-of-opinions theorems (Blackwell & Dubins 1962; Gaifman & Snir 1982).
+@lin2024 | § 4.1 | Whether or not merging-of-opinions theorems can capture the intended kind of scientific objectivity, it is still debated whether there are other kinds of scientific objectivity that elude subjective Bayesianism.
+@lin2024 | § 4.1 | Second, just as premises are inputs into a deductive reasoning process, prior credences are inputs into the process of an inquiry.
+@lin2024 | § 4.1 | Indeed, the anti-subjectivists to be discussed below—objective Bayesians and forward-looking Bayesians—all think that a substantive account of inductive inferences is furnished by norms that go beyond the consideration of coherence.
+@lin2024 | § 4.2 | Objective Bayesians contend that, in addition to coherence, there is another epistemic virtue or ideal that needs to be codified into a norm for prior credences: freedom from bias and avoidance of overly strong opinions (Jeffreys 1939; Carnap 1945; Jaynes 1957, 1968; Rosenkrantz 1981; J.
+@lin2024 | § 4.2 | More generally, objective Bayesians are sympathetic to this norm: The Principle of Indifference.
+@lin2024 | § 4.2 | Now, have a look at the two groups of propositions listed in the table below.
+@lin2024 | § 4.2 | In reply, objective Bayesians may reply that Bertrand’s paradox provides no conclusive reason against the Indifference Principle and perhaps the fault lies elsewhere.
+@lin2024 | § 4.2 | So perhaps the fault lies not with the Indifference Principle but with one of the two inputs—after all, garbage in, garbage out.
+@lin2024 | § 4.2 | Those two aspects of the symmetry—physical and permutational—are extended by two influential approaches to the Indifference Principle, respectively, which are presented in turn below.
+@lin2024 | § 4.2 | He maintains, for example, that two sentences ought to be assigned equal prior credences if one differs from the other only by a permutation of the names in use.
+@lin2024 | § 4.2 | The Indifference Principle has been challenged for another reason.
+@lin2024 | § 5.3 | When we change our credences, the Principle of Conditionalization requires us to raise the credence in some proposition, such as the credence in the new evidence, all the way to 1.
+@lin2024 | § 5.3 | Recall that conditionalization has a defining feature: it preserves the credence ratios of the possibilities inside new evidence E while the credence in E is raised all the way to 1.
+@lin2024 | § 5.3 | It ought to be that, if the direct experiential impact on one’s credences causes the credence in E to rise to a real number e (which might be less than 1), then one’s credences are changed as follows: For the possibilities inside E, rescale their credences upward by a common factor so that they sum to e; for the possibilities outside E, rescale their credences downward by a common factor so that they sum to \(1-e\) (to obey the rule of Sum-to-One).
+@lin2024 | § 5.3 | Jeffrey conditionalization is flexible enough to accommodate the Mudrunner Case.
+@lin2024 | § 5.3 | This is how Jeffrey conditionalization accommodates the Mudrunner Case.
+A @lin2024: Separates coherence, learning norms, their defenses, priors, and uncertain learning.
+
+== 09-induction-probability-bayes/full-belief-and-degrees-of-belief
+Q: Why do certainty and threshold bridges face different problems of revision and aggregation?
+@geninhuber2026 | § 4.2.1 | Yet there does not seem to be anything wrong with saying that I fully believe each of (1), (2) and (3).
+@geninhuber2026 | § 4.2.1 | Roorda’s final challenge to extremal probability appeals to corrigibility, according to which it is reasonable to believe that at least some of my beliefs may need to be abandoned in light of new information.
+@geninhuber2026 | § 4.2.2 | More recent work, especially Leitgeb (2017), adopts the weaker thesis.
+@geninhuber2026 | § 4.2.2 | In light of deductive cogency, that corresponds to the orthographically ungainly \(\text{WLT}^{\Pr(\cap \Bel)}\).
+@geninhuber2026 | § 4.2.2 | Since cogency requires belief to be closed under conjunction, she ought to believe that all the tickets are losers.
+@geninhuber2026 | § 4.2.2 | Broadly speaking, they propose that a high degree of belief is sufficient to warrant full belief unless some defeating condition holds.
+A @geninhuber2026: Examines certainty and threshold bridges between categorical belief and credence, with the lottery objection.
+@sorensen2024 | § 4 | In the preface of Introduction to the Foundations of Mathematics, Raymond Wilder (1952, iv) apologizes for the errors in the text.
+@sorensen2024 | § 4 | At this juncture many philosophers join Kyburg in rejecting agglomeration and conclude that it can be rational to have jointly inconsistent beliefs.
+A @sorensen2024: Explains why the preface paradox concerns aggregation without relying on a numerical threshold.
+
+== 09-induction-probability-bayes/common-errors-in-probabilistic-reasoning
+Q: Which assumptions distinguish probability errors from legitimate learning about an uncertain process?
+@joyce2021 | § 1 | The probability of a hypothesis H conditional on a given body of data E is the ratio of the unconditional probability of the conjunction of the hypothesis with the data to the unconditional probability of the data alone.
+@joyce2021 | § 1 | Doe died during 2000, H, is just the population-wide mortality rate P(H) = 2.4M/275M = 0.00873.
+@joyce2021 | § 1 | P(H) = P(E)PE(H) + P(~E)P~E(H).[3] The most important fact about conditional probabilities is undoubtedly Bayes' Theorem, whose significance was first appreciated by the British cleric Thomas Bayes in his posthumously published masterwork, "An Essay Toward Solving a Problem in the Doctrine of Chances" (Bayes 1764).
+@joyce2021 | § 1 | Doe died during 2000 is a fairly strong predictor of senior citizenship.
+@joyce2021 | § 1 | People with different views about the unconditional probabilities of E and H often disagree about E's value as an indicator of H.
+@joyce2021 | § 1 | When both PH(E) and P~H(E) are known an experimenter need not even know E's probability to determine a value for PE(H) using Bayes' Theorem.
+@joyce2021 | § 1 | The test's specificity, its "true negative" rate, is the proportion of healthy patients who test negative.
+A @joyce2021: Derives the conditional-probability and odds forms and distinguishes incremental from total support.
+@wheeler2024 | § 5.1 | Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).
+@wheeler2024 | § 5.1 | Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.
+@wheeler2024 | § 5.1 | Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.
+@wheeler2024 | § 5.1 | Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).
+@wheeler2024 | § 5.1 | For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).
+@wheeler2024 | § 5.1 | Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.
+@wheeler2024 | § 5.1 | Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.
+@wheeler2024 | § 5.1 | Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.
+@wheeler2024 | § 5.1 | Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.
+@wheeler2024 | § 5.1 | More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).
+A @wheeler2024: Reviews probability-judgment experiments and objections about interpretation, sampling, and generalization.
+@hajek2023 | § 1 | Probability theory was a relative latecomer in intellectual history.
+@hajek2023 | § 1 | Call \(P\) a probability function, and \((\Omega , \mathbf{F}, P)\) a probability space.
+@hajek2023 | § 1 | Under the natural assignment of probabilities to members of \(\mathbf{F}\), we obtain such welcome results as the following: and so on.
+@hajek2023 | § 1 | But more advanced treatments in mathematics, statistics, and science require more mathematical sophistication involving countable infinite extensions.
+@hajek2023 | § 1 | This axiom is the cornerstone of the assimilation of probability theory to measure theory.
+@hajek2023 | § 1 | Popper 1959b, Rényi 1970, van Fraassen 1976, Spohn 1986, and Roeper and Leblanc 1999).
+@hajek2023 | § 1 | Given certain probabilities as inputs, the axioms and theorems allow us to compute various further probabilities.
+A @hajek2023: Introduces the calculus and separates classical, subjective, frequency, and propensity interpretations.
+@fallacy-iep | § Gambler’s | This fallacy occurs when the gambler falsely assumes that the history of outcomes will affect future outcomes.
+@fallacy-iep | § Regression | This fallacy occurs when regression to the mean is mistaken for a sign of a causal connection.
+@fallacy-iep | § Regression | There is most probably nothing causing people from Dayton to be more like the average resident of the U.S.; but rather what is happening is that averages are regressing to the mean.
+A @fallacy-iep: Defines gambler’s and regression fallacies with their essential process assumptions.
+@hitchcock2026 | § 2.4 | In the Reichenbach-Suppes definition of causation, the inequality \(\PP(E_{t'} \mid C_t) \gt \PP(E_{t'} \mid {\nsim}C_t)\) is necessary, but not sufficient, for causation.
+@hitchcock2026 | § 2.4 | Letting C represent smoking, B living in the country, and E lung cancer, \(\PP(E \mid C) \lt \PP(E \mid {\nsim}C)\).
+@hitchcock2026 | § 2.4 | Skyrms proposed a slightly weaker condition: a cause must raise the probability of its effect in at least one background context, and lower it in none.
+@hitchcock2026 | § 2.4 | Suppose D is a causal intermediary, say the presence of tar in the lungs.
+@hitchcock2026 | § 2.4 | Note also that we have dropped the subscripts referring to times.
+A @hitchcock2026: Explains Simpson reversals and why selecting adjustment factors requires causal information.
+
+== 09-induction-probability-bayes/calibration-and-scoring-rules
+Q: What do calibration and strictly proper scores measure, and what does an expected-score guarantee leave open?
+@pettigrew2024 | § 5.1 | An epistemic utility function for the states considered in the precise credence model takes a credence function on an agenda and a state of the world relative to that same agenda, and returns a real number or \(-\infty\) or \(\infty\) that measures the epistemic utility of that credence function at that state of the world.
+@pettigrew2024 | § 5.1 | Here’s the quadratic scoring rule: \(q(1, p) = -(1-p)^2\) \(q(0, p) = -p^2\) One way to understand this: If a proposition is true, then credence 1 is the ideal credence in it; if it’s false, then credence 0 is the ideal.
+@pettigrew2024 | § 5.1 | We might think of \(V_w\) as the ideal or omniscient credence function at world \(w\).
+@pettigrew2024 | § 5.1 | Strict Propriety (for epistemic utility functions) We say that an epistemic utility measure \(EU\) is strictly proper if, for any probabilistic credence function \(P\) defined on \(\mathcal{F}\), \[ \sum_{w \in \mathcal{W}_\mathcal{F}} P(w)EU(C, w) \] is maximized uniquely, among credence functions defined on \(\mathcal{F}\), at \(C = P\).
+@pettigrew2024 | § 5.1 | Additivity (for epistemic utility functions) We say that an epistemic utility measure \(EU\) is additive if, for each \(X\) in \(\mathcal{F}\), there is a scoring rule \(s_X\) such that \[ EU(C, w) = \sum_{X \in \mathcal{F}} s_X(V_w(X), C(X)) \] (That is, the epistemic utility of an entire credence function is the sum of the epistemic utilities of the individual credences, where these can be given by different scoring rules for each proposition in the agenda.) Suppose \(EU\)
+@pettigrew2024 | § 5.1 | They roughly divide into two sorts: The first sort of argument is based on a veritist account of epistemic value, which says that the sole fundamental source of epistemic value is what Joyce (1998) calls gradational accuracy.
+@pettigrew2024 | § 5.1 | So, for veritists, epistemic utility functions measure the accuracy of a credence function, and characterizing the legitimate epistemic utility functions is characterizing the legitimate ways of measuring accuracy.
+@pettigrew2024 | § 5.1 | Ramsey (1926 [1931]) that connects accuracy and calibration, and Williams and Pettigrew (2023) improve on that characterization.
+@pettigrew2024 | § 5.1 | The second sort of argument does not commit to a particular account of epistemic value.
+@pettigrew2024 | § 5.1 | Hájek (2008) criticizes this argument and Pettigrew (2016) defends Joyce.
+@pettigrew2024 | § 5.1.1 | According to Additivity, which is assumed by many of the accounts of epistemic utility, the epistemic utility of a whole credence function is the sum of the epistemic utilities of the individual credences it comprises; and which scoring rule measures the epistemic utility of a credence in a proposition at a world can depend on the proposition, but not on the world.
+@pettigrew2024 | § 5.1.1 | But Ben Levinstein (2018) argues that the importance of a proposition does sometimes depend on which world we inhabit: in worlds where I meet a particular person and fall in love with them, propositions that concern their well-being have great importance to me, and the epistemic utility of my credences in those propositions should contribute greatly to the epistemic utility of my whole credence function; in worlds where I never meet that person, on the other hand, the
+@pettigrew2024 | § 5.1.1 | And so the weights we assign to the scores of the individual credences must also depend on the worlds; something that Additivity rules out.
+A @pettigrew2024: Defines quadratic scores, strict propriety, accuracy rationales, and objections about the importance of propositions.
+
+== 09-induction-probability-bayes/statistics-and-significance
+Q: How do p-values, error rates, confidence intervals, power, and selection differ from posterior belief?
+@romeijn2025 | § 3.1.1 | The procedure of Fisher’s null hypothesis test was already discussed briefly in the foregoing.
+@romeijn2025 | § 3.1.1 | In standard null hypothesis testing little can be said about error rates if the null hypothesis is in fact false.
+@romeijn2025 | § 3.1.1 | The decision to accept or reject a hypothesis is associated with the possibility of error.
+@romeijn2025 | § 3.1.1 | We can also make the converse type-II error of accepting the null hypothesis when in fact the alternative is true.
+@romeijn2025 | § 3.1.1 | The example of the tea tasting student allows for an easy illustration of the likelihood ratio test.
+@romeijn2025 | § 3.1.1 | For any individual sample \(s\) and for the aforementioned sets of sequences \(S_{k/n}\), the likelihood ratio becomes \(3^{k} / 2^{5}\).
+@romeijn2025 | § 3.1.1 | In some cases, e.g., so-called one-sided tests, the test function relies on a further structuring of the sample space.
+@romeijn2025 | § 3.1.1 | It includes the sequence of fifteen correct guesses, the singleton \(S_{15/15}\), but also the set of all 15 sequences with one failure, \(S_{14/15}\), the set of all 105 sequences with two failures, \(S_{13/15}\), and the set of all 455 sequences with three failures, \(S_{12/15}\).
+@romeijn2025 | § 3.1.1 | We can then reject the null hypothesis at 2% significance level, because the sample falls within \(R_{r}\).
+@romeijn2025 | § 3.1.3 | Often the estimation is coupled to a so-called confidence interval.
+@romeijn2025 | § 3.1.3 | We may choose the value of \(\Delta\) in such a way that the region of probable estimation \(R_{\Delta}\) covers a large portion of the sample space, as measured by the true distribution \(P_{\theta^{\star}}\): where \(\alpha\) is a margin of error.
+@romeijn2025 | § 3.1.3 | We can now define the confidence interval around an estimate.
+@romeijn2025 | § 3.1.3 | We have to be very careful when interpreting confidence intervals.
+@romeijn2025 | § 3.1.3 | The true parameter value stays fixed, and therefore it does or does not fall within the given interval, period.
+@romeijn2025 | § 3.1.3 | Accordingly, on repeating the data collection and repeatedly constructing a confidence interval around the newly obtained estimate \(\hat{\theta}\), maintaining the assumption that \(\Delta_{1-\alpha}\) is constant from one confidence interval to the next, the true parameter value is included in a fraction \(1 - \alpha\) of this sequence of confidence intervals.
+@romeijn2025 | § 3.1.3 | However, in itself the estimator functions do not present guidelines for beliefs about the accuracy of any given estimate and, importantly, confidence intervals do not either.
+@romeijn2025 | § 3.2.1 | Consider the likelihood ratio test of Neyman and Pearson.
+@romeijn2025 | § 3.2.1 | An attempt to provide it with an interpretation in terms of support has been undertaken by Cox and Mayo (2006).
+@romeijn2025 | § 3.2.1 | By comparison, imagine that all the students enter a lottery.
+@romeijn2025 | § 3.2.1 | But it is hardly believable that the student will in the long run be 100% accurate.
+@romeijn2025 | § 3.2.1 | Neyman 1957), so it may be argued that the problems disappear if only scientists abandon their faulty epistemic use of classical statistics.
+A @romeijn2025: Explains error rates, p-values, confidence procedures, and the contested transition from statistical results to belief.
+@ioannidis2005 | Modeling the Framework for False Positive Findings | It can be proven that most claimed research findings are false.
+@ioannidis2005 | Modeling the Framework for False Positive Findings | Research findings are defined here as any relationship reaching formal statistical significance, e.g., effective interventions, informative predictors, risk factors, or associations.
+@ioannidis2005 | Modeling the Framework for False Positive Findings | In a research field both true and false hypotheses can be made about the presence of relationships.
+@ioannidis2005 | Modeling the Framework for False Positive Findings | The probability of claiming a relationship when none truly exists reflects the Type I error rate, α.
+@ioannidis2005 | Modeling the Framework for False Positive Findings | According to the 2 × 2 table, one gets PPV = (1 - β)R/(R - βR + α).
+@ioannidis2005 | Modeling the Framework for False Positive Findings | Bias should not be confused with chance variability that causes some findings to be false by chance even though the study design, data, analysis, and presentation are perfect.
+A @ioannidis2005: Primary open-access model of positive findings in terms of pre-study odds, power, false positives, and bias.
+@fidler-wilcox2026 | § 2.2 | The causes of irreproducible results are largely the same across disciplines we have mentioned.
+@fidler-wilcox2026 | § 2.2 | Over 70% of editors from 79 social science journals said they preferred new studies over replications and over 90% said they would did not encourage the submission of replication studies (Neuliep & Crandall 1990).
+@fidler-wilcox2026 | § 2.2 | Developments in text mining techniques have led to more comprehensive estimates.
+@fidler-wilcox2026 | § 2.2 | For example, in psychology the proportion of published results that are statistically significant is 92% despite the fact that the average power of studies in this field to detect medium effect sizes (arguably typical of the discipline) is roughly 44% (Szucs & Ioannidis 2017).
+@fidler-wilcox2026 | § 2.2 | However, the most recent estimate of the statistical power, again of medium effect sizes, of ecology and animal behaviour is 23–26% (Smith, Hardy, & Gammell 2011) (An earlier more optimistic assessment was 40–47%, Jennions & Møller, 2003.) For a third example, the proportion of statistically significant results in neuroscience and behaviour is 85%.
+@fidler-wilcox2026 | § 2.3 | In addition to creating the file-drawer problem described above, publication bias has been held at least partially responsible for the high prevalence of Questionable Research Practices (QRPs) uncovered in both self-report survey research (John, Loewenstein, & Prelec 2012; Agnoli 2017 et al. 2017; Fraser et al. 2018) and in journal studies that have detected, for example, unusual distributions of p values (Masicampo & Lalande 2012; Hartgerink et al. 2016).
+@fidler-wilcox2026 | § 2.3 | Simmons, Nelson, and Simonsohn (2011) explained and demonstrated with simulated results how engaging in such practices inflates the false positive error rate of the published literature, leading to a lower rate of reproducible results.
+@fidler-wilcox2026 | § 2.3 | Five of the most widespread QRPs are listed below in Table 1 (from Fraser et al. 2018), with associated survey measures of prevalence.
+@fidler-wilcox2026 | § 2.4 | Null Hypothesis Significance Testing (NHST)—discussed above—is a commonly diagnosed cause of the current replication crisis (see Szucs & Ioannidis 2017).
+@fidler-wilcox2026 | § 2.4 | As already mentioned, the average statistical power in various disciplines is low.
+@fidler-wilcox2026 | § 2.4 | A reply from a different set of 88 authors was published in the same journal, arguing against this proposal and stating instead that researchers should justify their alpha level based on context (Lakens et al. 2018).
+@fidler-wilcox2026 | § 2.4 | The exchange has become known on social media as the Alpha Wars (e.g., in the Barely Significant blog, Other Internet Resources)).
+A @fidler-wilcox2026: Connects publication selection, analysis practices, and disputes about significance thresholds.
