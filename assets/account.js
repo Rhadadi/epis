@@ -196,7 +196,7 @@
   window.EpisAccount = { signedIn: signedIn, user: user, token: token, signIn: signIn, signOut: signOut, sync: sync, status: status };
 
   /* ------------------------------------------------------------ on every page */
-  var navLinks = document.querySelectorAll('.bar nav a[href$="account/"], #mnav a[href$="account/"]');
+  var navLinks = document.querySelectorAll('#umenu a[href$="account/"], #ubtn, #mnav a[href$="account/"]');
   function paintNav() { Array.prototype.forEach.call(navLinks, paintLink); }
   function paintLink(navLink) {
     var u = user();
