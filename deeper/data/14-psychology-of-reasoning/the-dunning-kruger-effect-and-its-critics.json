@@ -1,0 +1,46 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "the-dunning-kruger-effect-and-its-critics",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Why does a performance/self-assessment pattern not uniquely establish a metacognitive mechanism or a universal learning curve?"
+  ],
+  "sources": [
+    {
+      "key": "dunning-kruger-tdl",
+      "used_for": [
+        "A discrepancy and a theory",
+        "Grouping can conceal information",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Dunning-Kruger effect controversies",
+          "basis": "full text",
+          "excerpt": "The underlying cause of the Dunning-Kruger effect is widely disputed.",
+          "corpus_chunk": 53127
+        },
+        {
+          "locator": "Dunning-Kruger effect controversies",
+          "basis": "full text",
+          "excerpt": "As more samples are collected both “expert” and “novice” data points begin to rank closer to the average.",
+          "corpus_chunk": 53127
+        },
+        {
+          "locator": "How it all started",
+          "basis": "full text",
+          "excerpt": "The Dunning-Kruger effect was first discovered and written about in 1999 by researchers David Dunning and Justin Kruger at Cornell University.",
+          "corpus_chunk": 53141
+        },
+        {
+          "locator": "How it all started",
+          "basis": "full text",
+          "excerpt": "In effect, improving the skills of the participants—on humor, grammar, and logical reasoning—helped them recognize the limitations of their own metacognitive abilities and predict their own scores better on subsequent trials.",
+          "corpus_chunk": 53142
+        }
+      ],
+      "annotation": "Freely readable secondary map of the original self-assessment proposal and statistical objections; the original papers were not independently read and unsupported stage diagrams are excluded."
+    }
+  ]
+}

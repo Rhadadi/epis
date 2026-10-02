@@ -1,0 +1,125 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "the-scout-mindset",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How does Galef’s public ideal connect with evidence-responsive practice without serving as a validated intervention?"
+  ],
+  "sources": [
+    {
+      "key": "galef2021-introduction",
+      "used_for": [
+        "A map that can disappoint its maker",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Welcome!",
+          "basis": "full text",
+          "excerpt": "I’m Julia Galef, host of the Rationally Speaking podcast, and author of THE SCOUT MINDSET, out April 13th, 2021.",
+          "corpus_chunk": 53202
+        },
+        {
+          "locator": "Welcome!",
+          "basis": "full text",
+          "excerpt": "The Scout Mindset is about how, concretely, to keep from fooling yourself.",
+          "corpus_chunk": 53202
+        },
+        {
+          "locator": "Welcome!",
+          "basis": "full text",
+          "excerpt": "Nor is it an attempt to scold you into thinking “correctly.” It’s a tour of a different way of being — one that’s rooted in an appetite for truth.",
+          "corpus_chunk": 53204
+        }
+      ],
+      "annotation": "Galef’s own public book introduction supplies her description of scout mindset; the full book and its research claims are not represented as read."
+    },
+    {
+      "key": "mercier-sperber2011",
+      "used_for": [
+        "The attitude and the method",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.",
+          "corpus_chunk": 52692
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.",
+          "corpus_chunk": 52694
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).",
+          "corpus_chunk": 52695
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.",
+          "corpus_chunk": 52696
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).",
+          "corpus_chunk": 52697
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "They modify their causal theories to defend some favored belief (Kunda 1987).",
+          "corpus_chunk": 52697
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.",
+          "corpus_chunk": 52698
+        }
+      ],
+      "annotation": "Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors."
+    },
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "Supporting an ideal",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.",
+          "corpus_chunk": 44989
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.",
+          "corpus_chunk": 44990
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.",
+          "corpus_chunk": 44991
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.",
+          "corpus_chunk": 44992
+        }
+      ],
+      "annotation": "Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes."
+    }
+  ]
+}

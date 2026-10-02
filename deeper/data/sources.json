@@ -263,6 +263,23 @@
     ],
     "url": "https://plato.stanford.edu/archives/sum2010/entries/moore/"
   },
+  "bazerman-noba": {
+    "type": "entry",
+    "authors": [
+      "Bazerman, Max H."
+    ],
+    "year": 2026,
+    "title": "Judgment and Decision Making",
+    "container": "Noba textbook series: Psychology",
+    "editors": [
+      "Biswas-Diener, Robert",
+      "Diener, Edward"
+    ],
+    "url": "https://nobaproject.com/modules/judgment-and-decision-making",
+    "access": "free",
+    "license": "CC-BY-NC-SA-4.0",
+    "verified": "Author, title, editors, year, and licence checked against the module’s own recommended citation and biography, 2026-10-02; year is the site’s suggested citation year, not a claim about initial publication."
+  },
   "beall-etal2026": {
     "type": "entry",
     "authors": [
@@ -1202,6 +1219,14 @@
     ],
     "url": "https://plato.stanford.edu/archives/fall2024/entries/al-farabi/"
   },
+  "dunning-kruger-tdl": {
+    "type": "entry",
+    "org": "The Decision Lab",
+    "title": "Dunning–Kruger Effect",
+    "url": "https://thedecisionlab.com/biases/dunning-kruger-effect",
+    "access": "free",
+    "verified": "Title and publisher checked on the freely readable article, 2026-10-02; used as a secondary account, with unverified generalisations and stage diagrams excluded."
+  },
   "durand-baltzly2023": {
     "type": "entry",
     "authors": [
@@ -1441,6 +1466,17 @@
     "isbn": "9780198237907",
     "doi": "10.1093/acprof:oso/9780198237907.001.0001",
     "verified": "Open Library edition record for the ISBN; DOI from the SEP bibliography, 2026-10-01"
+  },
+  "galef2021-introduction": {
+    "type": "web",
+    "authors": [
+      "Galef, Julia"
+    ],
+    "year": 2021,
+    "title": "The Scout Mindset: author’s introduction",
+    "url": "https://juliagalef.com/",
+    "access": "free",
+    "verified": "Author’s own description and announced publication date read on her home page, 2026-10-02; the full book is not represented as read."
   },
   "garson2024": {
     "type": "entry",
@@ -2146,6 +2182,14 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2026 Edition; full text read, 2026-10-01"
   },
+  "illusory-truth-tdl": {
+    "type": "entry",
+    "org": "The Decision Lab",
+    "title": "Illusory Truth Effect",
+    "url": "https://thedecisionlab.com/biases/illusory-truth-effect",
+    "access": "free",
+    "verified": "Title and publisher checked on the freely readable article, 2026-10-02; used as a secondary account, with unverified generalisations and stage diagrams excluded."
+  },
   "inf-epis-iep": {
     "type": "entry",
     "authors": [
@@ -2723,6 +2767,23 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2016 Edition; full text read, 2026-10-01"
   },
+  "malle-noba": {
+    "type": "entry",
+    "authors": [
+      "Malle, Bertram"
+    ],
+    "year": 2026,
+    "title": "Theory of Mind",
+    "container": "Noba textbook series: Psychology",
+    "editors": [
+      "Biswas-Diener, Robert",
+      "Diener, Edward"
+    ],
+    "url": "https://nobaproject.com/modules/theory-of-mind",
+    "access": "free",
+    "license": "CC-BY-NC-SA-4.0",
+    "verified": "Author, title, editors, year, and licence checked against the module’s own recommended citation and biography, 2026-10-02; year is the site’s suggested citation year, not a claim about initial publication."
+  },
   "mallon2026": {
     "type": "entry",
     "authors": [
@@ -2892,6 +2953,34 @@
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Fall 2023 Edition; full text read, 2026-10-01"
   },
+  "mellers-etal2014": {
+    "type": "article",
+    "authors": [
+      "Mellers, Barbara",
+      "Ungar, Lyle",
+      "Baron, Jonathan",
+      "Ramos, Jaime",
+      "Gurcay, Burcu",
+      "Fincher, Katrina",
+      "Scott, Sydney E.",
+      "Moore, Don",
+      "Atanasov, Pavel",
+      "Swift, Samuel A.",
+      "Murray, Terry",
+      "Stone, Eric",
+      "Tetlock, Philip E."
+    ],
+    "year": 2014,
+    "title": "Psychological Strategies for Winning a Geopolitical Forecasting Tournament",
+    "container": "Psychological Science",
+    "volume": "25",
+    "issue": "5",
+    "pages": "1106–1115",
+    "doi": "10.1177/0956797614524255",
+    "access": "open",
+    "verified": "Crossref record for the DOI; open-access full text read (open-access), 2026-10-02",
+    "url": "http://www.escholarship.org/uc/item/4rg4n9vr"
+  },
   "menzel2025": {
     "type": "entry",
     "authors": [
@@ -2926,6 +3015,35 @@
     "url": "https://plato.stanford.edu/archives/win2025/entries/causation-counterfactual/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Winter 2025 Edition; full text read, 2026-10-01"
+  },
+  "mercier-sperber2009": {
+    "type": "chapter",
+    "authors": [
+      "Mercier, Hugo",
+      "Sperber, Dan"
+    ],
+    "year": 2009,
+    "title": "Intuitive and reflective inferences",
+    "url": "http://www.dan.sperber.fr/wp-content/uploads/2009_mercier_intuitive_and_reflective_inferences.pdf",
+    "access": "free",
+    "verified": "Authors and chapter title checked in the freely readable author-hosted text; year checked against the author’s publication list (https://www.dan.sperber.fr/?p=740), 2026-10-02."
+  },
+  "mercier-sperber2011": {
+    "type": "article",
+    "authors": [
+      "Mercier, Hugo",
+      "Sperber, Dan"
+    ],
+    "year": 2011,
+    "title": "Why do humans reason? Arguments for an argumentative theory",
+    "container": "Behavioral and Brain Sciences",
+    "volume": "34",
+    "issue": "2",
+    "pages": "57–74",
+    "doi": "10.1017/s0140525x10000968",
+    "access": "free",
+    "verified": "Crossref record for the DOI, 2026-10-02; author-hosted target article read in the corpus; the accompanying commentaries are not attributed to the target authors.",
+    "url": "http://www.dan.sperber.fr/wp-content/uploads/2011_mercier_why-do-humans-reason.pdf"
   },
   "michaelian-sutton2026": {
     "type": "entry",
@@ -3814,6 +3932,23 @@
     "url": "https://plato.stanford.edu/archives/sum2025/entries/chinese-epistemology/",
     "access": "free",
     "verified": "Citation details from the encyclopedia's own citation record for the archived Summer 2025 Edition; full text read, 2026-10-01"
+  },
+  "rozenblit-keil2002-abstract": {
+    "type": "article",
+    "authors": [
+      "Rozenblit, Leonid",
+      "Keil, Frank"
+    ],
+    "year": 2002,
+    "title": "The misunderstood limits of folk science: an illusion of explanatory depth",
+    "container": "Cognitive Science",
+    "volume": "26",
+    "issue": "5",
+    "pages": "521–562",
+    "doi": "10.1207/s15516709cog2605_1",
+    "url": "https://api.crossref.org/works/10.1207/s15516709cog2605_1",
+    "access": "free",
+    "verified": "Bibliographic details and publisher-deposited abstract checked in the public Crossref record, 2026-10-02; only the abstract was read, not the full article."
   },
   "russell-bruce2024": {
     "type": "entry",

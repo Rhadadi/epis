@@ -1,0 +1,567 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "dual-process-theories",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do process types, feature bundles, representations of reasons, task interpretation, and advice differ, and what does an error establish?"
+  ],
+  "sources": [
+    {
+      "key": "bazerman-noba",
+      "used_for": [
+        "An answer that arrives and an answer that is checked",
+        "From useful labels to specified mechanisms",
+        "Environments can support checking",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Ample evidence documents that even smart people are routinely impaired by biases.",
+          "corpus_chunk": 52474
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "But, preferably, System 2 logic should influence our most important decisions.",
+          "corpus_chunk": 52475
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Fortunately, it is possible to identify conditions where we rely on intuition at our peril and substitute more deliberative thought.",
+          "corpus_chunk": 52475
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Another important direction for improving decisions comes from Thaler and Sunstein’s (2008) book Nudge: Improving Decisions about Health, Wealth, and Happiness.",
+          "corpus_chunk": 52477
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "When, instead, companies automatically enroll their employees in 401(k) programs and give them the opportunity to “opt out,” the net enrollment rate rises significantly.",
+          "corpus_chunk": 52478
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "In contrast, changing the decision architecture to an opt-out policy improves consent rates to 85.9% to 99.98%.",
+          "corpus_chunk": 52478
+        }
+      ],
+      "annotation": "Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions."
+    },
+    {
+      "key": "mercier-sperber2009",
+      "used_for": [
+        "Different distinctions can travel together",
+        "Why a two-process picture is attractive",
+        "From useful labels to specified mechanisms",
+        "Systems, types, and levels of explanation",
+        "Intuitive inference is not necessarily a guess",
+        "Reflection can contain intuitive components",
+        "What the familiar table simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "A deliberate reiterated use of a perception module, for instance of the face recognition module when looking for a specific face in a crowd, is also slow and effortful without this implying in any way that the basic mechanism involved is non-modular.",
+          "corpus_chunk": 52562
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "Intuitive inferences are the direct output of many different modules.",
+          "corpus_chunk": 52562
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "These two ways of spelling out the contrast are of course compatible.",
+          "corpus_chunk": 52563
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "So, modern humans can live in an urban environment and encounter new faces continually without having their attention preempted by these stimuli, even if they have dedicated modules to interpret them.",
+          "corpus_chunk": 52566
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "So, the argumentation module is not unique in being much less dependent on bottom-up than on top-down factors of acti- vation, even if it is likely to be towards one end of this particular gradient.",
+          "corpus_chunk": 52567
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "Moreover, since reasoning takes the form of a series of inferential steps the output of each of which consists in a justification for infe rring a given conclusion, reasoning may appear to consciousness as a series of epistemically justified operations performed on explicit representations.",
+          "corpus_chunk": 52568
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "The idea that reason- ing involves not one but two mental systems (see Evans and Over, 1996; Sloman, 1996; Stanovich, 2004 for reasoning, and Kahneman and Frederick, 2005 for decision mak- ing) makes better sense of this evidence. ‘System 1’ reasoning is fast, automatic, and mostly unconscious; it relies on ‘fast and frugal’ heuristics (to use Gigerenzer’s expres- sion (Gigerenzer et al., 1999)) offering seemingly effortless conclusions that are gener- ally appropriate in most settings, but may be faulty, for instance in experimental situations devised to test the limits of human reasoning abilities. ‘System 2’ reasoning is slow, consciously",
+          "corpus_chunk": 52532
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "The occurrence of both sound and unsound inferences in reasoning experiments and more generally in everyday human thinking can be explained by the roles played by these two kinds of processes.",
+          "corpus_chunk": 52533
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "There is, however, some vagueness in the way the two systems are characterized.",
+          "corpus_chunk": 52533
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "For instance, knowing that a competent meteorologist believes that it will rain is a reason to believe that it will rain.",
+          "corpus_chunk": 52549
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "It is just that the domain-specific inferences they perform may result in the fixation of beliefs in any domain.",
+          "corpus_chunk": 52549
+        },
+        {
+          "locator": "PDF p. 7",
+          "basis": "full text",
+          "excerpt": "Is massive modularity similarly incompatible with a dualistic view?",
+          "corpus_chunk": 52550
+        },
+        {
+          "locator": "PDF p. 9",
+          "basis": "full text",
+          "excerpt": "The direct output of all inferen tial modules, including the argumentation module, is intuitive in the clear sense that we just trust our own mental mechanisms and that we are disposed to treat as true their output without attending to reasons for this acceptance, or even without having access to such reasons.",
+          "corpus_chunk": 52557
+        },
+        {
+          "locator": "PDF p. 9",
+          "basis": "full text",
+          "excerpt": "Here, for reasons of space, we consider only the audience’s perspective.",
+          "corpus_chunk": 52557
+        },
+        {
+          "locator": "PDF p. 9",
+          "basis": "full text",
+          "excerpt": "It allows a conclusion that has already been derived to be stored and used on its own. 2 What, at a personal level, looks like a decision to accept a con- clusion, is, we suggest, realised at the subpersonal level by this data management oper- ation.",
+          "corpus_chunk": 52559
+        },
+        {
+          "locator": "PDF p. 9",
+          "basis": "full text",
+          "excerpt": "Conclusions accepted for a reason are not intuitive but are, we will say, ‘reflective’ (Sperber, 1997) and the mental act of accepting a reflective conclusion through an examination of the reasons one has to do so is an act of reflection.3 There is thus, within a massive-modularist framework, a subtle but unambiguous way to distinguish two categories of inferences: intuitive inferences the conclusion of which are the direct output of all inferential modules (including the argumentation module), and reflective inferences the conclusions of which are an indirect output INTUITIVE AND REFLECTIVE INFERENCE 155 2 Dan Sperber (1985, chapter 2) has",
+          "corpus_chunk": 52560
+        },
+        {
+          "locator": "PDF pp. 3–4",
+          "basis": "full text",
+          "excerpt": "We ground this distinction in a massively modular view of the human mind where 07-Evans-Chap07 9/10/08 12:30 PM Page 149 metarepresentational modules play an important role in explaining the peculiarities of human psychological evolution.",
+          "corpus_chunk": 52535
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "There is, however, some vagueness in the way the two systems are characterized.",
+          "corpus_chunk": 52533
+        }
+      ],
+      "annotation": "Author-hosted original theoretical chapter proposes intuitive/reflective inference, critiques feature bundles, and discusses modularity; it is presented as a proposal, not established anatomy."
+    },
+    {
+      "key": "mercier-sperber2011",
+      "used_for": [
+        "Intuitive inference is not necessarily a guess",
+        "Reflection can defend a preferred answer"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.",
+          "corpus_chunk": 52692
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.",
+          "corpus_chunk": 52694
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).",
+          "corpus_chunk": 52695
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.",
+          "corpus_chunk": 52696
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).",
+          "corpus_chunk": 52697
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "They modify their causal theories to defend some favored belief (Kunda 1987).",
+          "corpus_chunk": 52697
+        },
+        {
+          "locator": "PDF p. 10",
+          "basis": "full text",
+          "excerpt": "All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.",
+          "corpus_chunk": 52698
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "This phenomenon is known as biased assimila- tion or biased evaluation.",
+          "corpus_chunk": 52701
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "Several other experiments have studied the way people evaluate arguments depending on whether they agree or disagree with the conclusions.",
+          "corpus_chunk": 52701
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "In all these cases, motivated reasoning leads to a biased assessment: Arguments with unfavored conclusions are rated as less sound and less persuasive than arguments with favored conclusions.",
+          "corpus_chunk": 52703
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "Their knowl- edge makes it possible for these participants to ﬁnd more counterarguments, leading to more biased evaluations. 4.2.2.",
+          "corpus_chunk": 52704
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "As expected, the opinions were more extreme (in both directions) when participants had to think about the individual.",
+          "corpus_chunk": 52704
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "These results demonstrate that reasoning contributes to attitude polarization and strongly suggest that it may be its main factor.",
+          "corpus_chunk": 52706
+        },
+        {
+          "locator": "PDF p. 11",
+          "basis": "full text",
+          "excerpt": "According to the argumentative theory, reasoning should be even more biased once the reasoner has already stated her opinion, thereby increasing the pressure on her to justify it rather than moving away from it.",
+          "corpus_chunk": 52707
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "According to a long philosophical tradition, reasoning is what enables the human mind to go beyond mere perception, habit, and instinct.",
+          "corpus_chunk": 52626
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Intuitive inference and argument Since the 1960s, much work in the psychology of reasoning has suggested that, in fact, humans reason rather poorly, failing at simple logical tasks (Evans 2002), committing egregious mistakes in probabilistic reasoning (Kahneman & Tversky 1972; Tversky & Kahneman 1983), and being subject to sundry irrational biases in decision making (Kahneman et al. 1982).",
+          "corpus_chunk": 52628
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Here we outline our own dual-process approach: We contend in particular that the arguments used in reasoning are the output of a mechanism of intuitive inference (Mercier & Sperber 2009; Sperber 1997; 2001).",
+          "corpus_chunk": 52629
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "The inferential pro- cesses carried out by these mechanisms are unconscious: They are not mental acts that individuals decide to perform, but processes that take place inside their brain, at a “sub-personal” level (in the sense of Dennett 1969).",
+          "corpus_chunk": 52630
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Such beliefs, held with awareness of one’s reasons to hold them, are better described not as intuitive but as reﬂective beliefs (Sperber 1997).",
+          "corpus_chunk": 52631
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "We suggest, however, that arguments exploited in reasoning are the output of an intuitive infer- ential mechanism.",
+          "corpus_chunk": 52631
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "In particular, humans have a mechanism for representing mental representations and for drawing intuitive inferences about them.",
+          "corpus_chunk": 52632
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "An inference is a process the output of which is a representation.",
+          "corpus_chunk": 52633
+        }
+      ],
+      "annotation": "Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors."
+    },
+    {
+      "key": "brownstein2025",
+      "used_for": [
+        "Association and proposition: another distinction",
+        "Environments can support checking",
+        "What the familiar table simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "Influenced by dual process theories of mind, RIM (“Reflective-Impulsive Model”; Strack & Deutsche 2004) and APE (“Associative-Propositional Evaluation”; Gawronski & Bodenhausen 2006, 2011) suggest that implicit measures assess distinctive cognitive processes.",
+          "corpus_chunk": 49011
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "In sum, the key distinction between associative and propositional processes according to RIM and APE is that propositional processing alone depends on an agent’s assessment of the truth of a given representation.[8] APE in particular aims to explain the interactions between and mutual influences of associative and propositional processes in judgment and behavior.",
+          "corpus_chunk": 49012
+        },
+        {
+          "locator": "§ 2.2",
+          "basis": "full text",
+          "excerpt": "It does not posit the existence of two distinct attitudes or two distinct co-existing representations of the same entity.",
+          "corpus_chunk": 49013
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "Researchers working in applied ethics may be less concerned with questions about in-principle culpability and more concerned with investigating how to change or control our implicit biases.",
+          "corpus_chunk": 49070
+        },
+        {
+          "locator": "§ 4.2",
+          "basis": "full text",
+          "excerpt": "An emerging body of laboratory-based research suggests that strategies are available for regulating implicit biases, however.",
+          "corpus_chunk": 49070
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Implementation intentions (Gollwitzer & Sheeran 2006; Stewart & Payne 2008; Mendoza et al. 2010; Webb et al. 2012): “if-then” plans that specify a goal-directed response that an individual plans to perform on encountering an anticipated cue.",
+          "corpus_chunk": 49074
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Kawakami 2012): priming egalitarian goals, multicultural ideologies, or particular moods can lower scores of prejudice on implicit measures.",
+          "corpus_chunk": 49074
+        },
+        {
+          "locator": "§ 4.2.2",
+          "basis": "full text",
+          "excerpt": "Some have voiced optimism about the role lab-based interventions like these can play as elements of broader efforts to combat prejudice and discrimination (e.g., Kelly et al. 2010a; Madva 2017).",
+          "corpus_chunk": 49076
+        }
+      ],
+      "annotation": "Secondary account distinguishes associative/propositional process models, learning/storage/expression, and the targets and limits of implicit-bias interventions."
+    },
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "What an error can and cannot diagnose",
+        "Content and response format",
+        "Resources and the relevant standard",
+        "Heuristics do not belong automatically to one side",
+        "What the familiar table simplifies",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.",
+          "corpus_chunk": 44989
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.",
+          "corpus_chunk": 44990
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.",
+          "corpus_chunk": 44991
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.",
+          "corpus_chunk": 44992
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Good were each among the first to call attention to the cognitive demands of subjective expected utility theory, although neither one in his early writings abandoned the principle of expected utility as the normative standard for rational choice.",
+          "corpus_chunk": 44995
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "So reasoning judged deficient without considering the associated costs may be found meritorious once all those costs are accounted for—a conclusion that a range of authors endorsed, including Amos Tversky: It seems impossible to reach any definitive conclusions concerning human rationality in the absence of a detailed analysis of the sensitivity of the criterion and the cost involved in evaluating the alternatives.",
+          "corpus_chunk": 44996
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On this view boundedly rational agents are utility maximizers after all, once all the constraints are made clear (Arrow 2004).",
+          "corpus_chunk": 44997
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Simon’s focus on computationally efficient methods that yield solutions that are good enough contrasts with Friedman’s as if methodology, since evaluating whether a solution is “good enough”, in Simon’s terms, involves search procedures, stopping criteria, and how information is integrated in the course of making a decision.",
+          "corpus_chunk": 44998
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Simon’s question is to explain how human beings manage to solve complicated problems in an uncertain world given their meager resources.",
+          "corpus_chunk": 44998
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This approach, along with models with better predictive power, sought to more accurately reflect how decisions are made in practice.",
+          "corpus_chunk": 45000
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.",
+          "corpus_chunk": 45075
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).",
+          "corpus_chunk": 45076
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).",
+          "corpus_chunk": 45077
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.",
+          "corpus_chunk": 45080
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.",
+          "corpus_chunk": 45081
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).",
+          "corpus_chunk": 45082
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This general goal of the Fast and Frugal program leads to a second difference between the two schools.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.",
+          "corpus_chunk": 45084
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.",
+          "corpus_chunk": 45086
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.",
+          "corpus_chunk": 45087
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Search available options and choose the first one that exceeds your aspiration level.",
+          "corpus_chunk": 45089
+        }
+      ],
+      "annotation": "Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes."
+    }
+  ]
+}

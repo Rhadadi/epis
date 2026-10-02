@@ -1,0 +1,535 @@
+== 14-psychology-of-reasoning/belief-perseverance-and-biased-assimilation
+Q: How does correction alter dependent grounds, and why are perseverance, assimilation, and generalised backfire claims distinct?
+@mercier-sperber2011 | PDF p. 12 | By contrast, participants in the other group were much less overconﬁdent.
+@mercier-sperber2011 | PDF p. 12 | The involvement of motivated reasoning in this effect can be demonstrated by providing participants with evidence both for and against a favored belief.
+@mercier-sperber2011 | PDF p. 12 | Participants were then given positive or negative feedback, but a few minutes later they were told that the feedback was actually bogus and the real aim of the experiment was explained.
+@mercier-sperber2011 | PDF p. 12 | This strongly suggests that belief persever- ance of the type just described is an instance of motivated reasoning (for applications to the domain of political beliefs, see Prasad et al. 2009). 11 4.2.4.
+@mercier-sperber2011 | PDF p. 12 | Moreover, they were given the possibility of choosing which task they would be performing, knowing that the other task would be assigned to another partici- pant.
+@mercier-sperber2011 | PDF p. 12 | The differ- ence between these two ratings is a mark of moral hypoc- risy.
+@mercier-sperber2011 | PDF p. 12 | Perpetrators of crimes will be tempted to “blame the victim” or ﬁnd other excuses to mitigate the effects of violating their moral intuitions (Ryan 1971; for a review, see Hafer & Begue 2005), which can in turn make it easier to commit new crimes (Baumeister 1997).
+@mercier-sperber2011 | PDF pp. 10–11 | In a landmark experiment, Lord and colleagues (1979) asked participants who had been previously selected as being either defenders or opponents of the death penalty to evaluate studies relating to its efﬁciency as a deterrent.
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@deweeseboyd2023 | § 3.1 | Non-intentionalists argue that most ‘garden-variety’ cases of self-deception can be explained without adverting to subagents, or unconscious beliefs and intentions, which, even if they resolve the static and dynamic puzzles of self-deception, raise puzzles of their own.
+@deweeseboyd2023 | § 3.1 | Joan is deceived into believing it will be sunny, and Sam has deceived her, albeit unintentionally.
+@deweeseboyd2023 | § 3.1 | In such cases, Allison’s self-deceptive belief that her daughter is not having learning difficulties fulfills her desire, quells her fear, or reduces her anxiety, and it’s this function—not an intention—that explains why her belief formation process is biased.
+@deweeseboyd2023 | § 3.1 | Others, however, argue the needed motivation can as easily be supplied by uncertainty or ignorance whether p, or suspicion that ~p (Mele 2001; Barnes 1997).
+@deweeseboyd2023 | § 3.1 | Such approaches are ‘deflationary’ in the sense that they take self-deception to be explicable without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception.
+@deweeseboyd2023 | § 3.1 | ble without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception. (For more on the dual-belief requirement, see §3.2 Revision of Belief.) Mele (2001, 2012) has offered the most fully articulated deflationary account, and his view has been the target of the most scrutiny, so it is worth stating what he takes to be the jointly sufficient conditions for entering self-deception: The belief that p, which S acquires, is false S treats data relevant, or at least seemingly relevant, to the truth value of p in a motivationally biased way This biased treatment is a nondeviant
+@deweeseboyd2023 | § 3.1 | To support non-intentionalism, some have looked to the purposive mechanisms of deception operating in non-human organisms as a model (Smith 2014), while others have focused on neurobiological mechanisms triggered by affect to explain the peculiarly purposive responses to evidence involved in self-deception (Lauria et al. 2016).
+A @deweeseboyd2023: Secondary map of non-intentionalist and rival accounts of self-deception, selectivity, error costs, and socially sustained belief; related mechanisms are not equated with every identity-protection claim.
+@fidler-wilcox2026 | § 1 | A starting point in any philosophical exploration of reproducibility and related notions is to consider the conceptual question of what such notions mean.
+@fidler-wilcox2026 | § 1 | The Reproducibility Projects, coordinated by the Center for Open Science, redo entire studies, data collection and analysis.
+@fidler-wilcox2026 | § 1 | A study may be replicable in the former sense but not in the second sense: one might be able to replicate the methods, procedures and analysis of a study, but fail to successfully replicate the results of the original study.
+@fidler-wilcox2026 | § 1 | As suggested, this distinction may not always be known by these terms.
+@fidler-wilcox2026 | § 1 | Schmidt’s account has been influential and widely-cited in psychology and social sciences, where the replication crisis literature is heavily concentrated.
+A @fidler-wilcox2026: Secondary account distinguishes forms of replication and explains selection, flexible analysis, preregistration, and registered reports without certifying every named psychology effect.
+
+== 14-psychology-of-reasoning/confirmation-bias-and-myside-bias
+Q: How do tests discriminate alternatives, and how do prior positions, supporting reasons, and motivations differ?
+@bazerman-noba | Framing | Turning to Problem 3, most people choose Program A, which saves 200 lives for sure, over Program B.
+@bazerman-noba | Framing | People respond very differently to saving versus losing lives—even when the difference is based just on the “framing” of the choices.
+@bazerman-noba | Framing | These are just three of the many biases that affect even the smartest among us.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+@mercier-sperber2011 | PDF p. 10 | If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.
+@mercier-sperber2011 | PDF p. 10 | While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.
+@mercier-sperber2011 | PDF p. 10 | Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).
+@mercier-sperber2011 | PDF p. 10 | This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.
+@mercier-sperber2011 | PDF p. 10 | This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).
+@mercier-sperber2011 | PDF p. 10 | They modify their causal theories to defend some favored belief (Kunda 1987).
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.
+@mercier-sperber2011 | PDF p. 11 | This phenomenon is known as biased assimila- tion or biased evaluation.
+@mercier-sperber2011 | PDF p. 11 | Several other experiments have studied the way people evaluate arguments depending on whether they agree or disagree with the conclusions.
+@mercier-sperber2011 | PDF p. 11 | In all these cases, motivated reasoning leads to a biased assessment: Arguments with unfavored conclusions are rated as less sound and less persuasive than arguments with favored conclusions.
+@mercier-sperber2011 | PDF p. 11 | Their knowl- edge makes it possible for these participants to ﬁnd more counterarguments, leading to more biased evaluations. 4.2.2.
+@mercier-sperber2011 | PDF p. 11 | As expected, the opinions were more extreme (in both directions) when participants had to think about the individual.
+@mercier-sperber2011 | PDF p. 11 | These results demonstrate that reasoning contributes to attitude polarization and strongly suggest that it may be its main factor.
+@mercier-sperber2011 | PDF p. 11 | According to the argumentative theory, reasoning should be even more biased once the reasoner has already stated her opinion, thereby increasing the pressure on her to justify it rather than moving away from it.
+@mercier-sperber2011 | PDF p. 6 | BEHAVIORAL AND BRAIN SCIENCES (2011) 34:2 61 Hahn 2004; Rips 2002).
+@mercier-sperber2011 | PDF p. 6 | After being left to think for a few minutes, they had to state and defend their view to the experimenter.
+@mercier-sperber2011 | PDF p. 6 | In a normal argumentative setting, a good argument is an argument that is not refuted.
+@mercier-sperber2011 | PDF p. 6 | For these two authors, and indeed the critical thinking tra- dition, this is a very serious failing.
+@mercier-sperber2011 | PDF p. 6 | Indeed, when mock jurors were asked to reach a verdict and were then presented with an alterna- tive verdict, nearly all of them were able to ﬁnd counterar- guments against it (Kuhn et al. 1994).
+@mercier-sperber2011 | PDF p. 6 | Participants . . . appear to build complex arguments and attack structure.
+@mercier-sperber2011 | PDF p. 6 | Many types of tasks have been studied in group settings, with very mixed results (for recent reviews, 4 see Kerr & Tindale 2004; Kerr et al. 1996).
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@wheeler2024 | § 5.1 | Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).
+@wheeler2024 | § 5.1 | Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.
+@wheeler2024 | § 5.1 | Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.
+@wheeler2024 | § 5.1 | Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).
+@wheeler2024 | § 5.1 | For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).
+@wheeler2024 | § 5.1 | Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.
+@wheeler2024 | § 5.1 | Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.
+@wheeler2024 | § 5.1 | Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.
+@wheeler2024 | § 5.1 | Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.
+@wheeler2024 | § 5.1 | More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+
+== 14-psychology-of-reasoning/debiasing-what-works
+Q: How do task outcomes, random assignment, selection, persistence and transfer constrain intervention claims?
+@bazerman-noba | Fixing Our Decisions | Ample evidence documents that even smart people are routinely impaired by biases.
+@bazerman-noba | Fixing Our Decisions | But, preferably, System 2 logic should influence our most important decisions.
+@bazerman-noba | Fixing Our Decisions | Fortunately, it is possible to identify conditions where we rely on intuition at our peril and substitute more deliberative thought.
+@bazerman-noba | Fixing Our Decisions | Another important direction for improving decisions comes from Thaler and Sunstein’s (2008) book Nudge: Improving Decisions about Health, Wealth, and Happiness.
+@bazerman-noba | Fixing Our Decisions | When, instead, companies automatically enroll their employees in 401(k) programs and give them the opportunity to “opt out,” the net enrollment rate rises significantly.
+@bazerman-noba | Fixing Our Decisions | In contrast, changing the decision architecture to an opt-out policy improves consent rates to 85.9% to 99.98%.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+@brownstein2025 | § 4.2 | Researchers working in applied ethics may be less concerned with questions about in-principle culpability and more concerned with investigating how to change or control our implicit biases.
+@brownstein2025 | § 4.2 | An emerging body of laboratory-based research suggests that strategies are available for regulating implicit biases, however.
+@brownstein2025 | § 4.2.2 | Implementation intentions (Gollwitzer & Sheeran 2006; Stewart & Payne 2008; Mendoza et al. 2010; Webb et al. 2012): “if-then” plans that specify a goal-directed response that an individual plans to perform on encountering an anticipated cue.
+@brownstein2025 | § 4.2.2 | Kawakami 2012): priming egalitarian goals, multicultural ideologies, or particular moods can lower scores of prejudice on implicit measures.
+@brownstein2025 | § 4.2.2 | Some have voiced optimism about the role lab-based interventions like these can play as elements of broader efforts to combat prejudice and discrimination (e.g., Kelly et al. 2010a; Madva 2017).
+A @brownstein2025: Secondary account distinguishes associative/propositional process models, learning/storage/expression, and the targets and limits of implicit-bias interventions.
+@mellers-etal2014 | PDF p. 4 | Design In Year 1, participants were randomly assigned to condi- tions of a 3 (training: no training, scenario training, or probability training) × 4 (group influence: indepen- dent, crowd-belief, team, or prediction-market forecast- ing) factorial design.
+@mellers-etal2014 | PDF p. 4 | Team forecasters received additional train- ing in how to help the group be more accurate by main- taining high standards of evidence and proof.
+@mellers-etal2014 | PDF p. 4 | We examined tracking by placing the 60 top performers of Year 1 (5 from each condition) in five teams of 12 members each (super- forecaster teams).
+@mellers-etal2014 | PDF p. 4 | Year 1 began with 2,246 participants (1,593 survey respondents and 653 prediction-market traders).
+@mellers-etal2014 | PDF p. 4 | Year 2 started with 1,648 participants (943 survey respondents and 705 prediction-market traders who were either new recruits or returnees).
+@mellers-etal2014 | PDF p. 5 | If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.
+@mellers-etal2014 | PDF p. 5 | Participants were encouraged to return to the Web site and update their prediction until the question closed.
+@mellers-etal2014 | PDF p. 5 | These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.
+@mellers-etal2014 | PDF p. 5 | In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.
+@mellers-etal2014 | PDF p. 7 | In separate regressions for Years 1 and 2, participants were treated as random effects.
+@mellers-etal2014 | PDF p. 7 | The best performers from Year 1 (i.e., the top 2%) were placed together in elite teams in Year 2.
+@mellers-etal2014 | PDF p. 7 | Number of questions attempted also varied with training in Year 1, F(2, 1583) = 3.65, p = .026.
+@mellers-etal2014 | PDF p. 7 | Independent forecasters made an average of 1.4 predictions per question, and regular teams made an average of 1.6.
+@mellers-etal2014 | PDF p. 7 | To calculate calibration, we created small proba- bility bins of .500 to .525, .526 to .575, .576 to .625, and so forth.
+A @mellers-etal2014: Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit.
+
+== 14-psychology-of-reasoning/dual-process-theories
+Q: How do process types, feature bundles, representations of reasons, task interpretation, and advice differ, and what does an error establish?
+@bazerman-noba | Fixing Our Decisions | Ample evidence documents that even smart people are routinely impaired by biases.
+@bazerman-noba | Fixing Our Decisions | But, preferably, System 2 logic should influence our most important decisions.
+@bazerman-noba | Fixing Our Decisions | Fortunately, it is possible to identify conditions where we rely on intuition at our peril and substitute more deliberative thought.
+@bazerman-noba | Fixing Our Decisions | Another important direction for improving decisions comes from Thaler and Sunstein’s (2008) book Nudge: Improving Decisions about Health, Wealth, and Happiness.
+@bazerman-noba | Fixing Our Decisions | When, instead, companies automatically enroll their employees in 401(k) programs and give them the opportunity to “opt out,” the net enrollment rate rises significantly.
+@bazerman-noba | Fixing Our Decisions | In contrast, changing the decision architecture to an opt-out policy improves consent rates to 85.9% to 99.98%.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+@mercier-sperber2009 | PDF p. 10 | A deliberate reiterated use of a perception module, for instance of the face recognition module when looking for a specific face in a crowd, is also slow and effortful without this implying in any way that the basic mechanism involved is non-modular.
+@mercier-sperber2009 | PDF p. 10 | Intuitive inferences are the direct output of many different modules.
+@mercier-sperber2009 | PDF p. 10 | These two ways of spelling out the contrast are of course compatible.
+@mercier-sperber2009 | PDF p. 11 | So, modern humans can live in an urban environment and encounter new faces continually without having their attention preempted by these stimuli, even if they have dedicated modules to interpret them.
+@mercier-sperber2009 | PDF p. 11 | So, the argumentation module is not unique in being much less dependent on bottom-up than on top-down factors of acti- vation, even if it is likely to be towards one end of this particular gradient.
+@mercier-sperber2009 | PDF p. 11 | Moreover, since reasoning takes the form of a series of inferential steps the output of each of which consists in a justification for infe rring a given conclusion, reasoning may appear to consciousness as a series of epistemically justified operations performed on explicit representations.
+@mercier-sperber2009 | PDF p. 3 | The idea that reason- ing involves not one but two mental systems (see Evans and Over, 1996; Sloman, 1996; Stanovich, 2004 for reasoning, and Kahneman and Frederick, 2005 for decision mak- ing) makes better sense of this evidence. ‘System 1’ reasoning is fast, automatic, and mostly unconscious; it relies on ‘fast and frugal’ heuristics (to use Gigerenzer’s expres- sion (Gigerenzer et al., 1999)) offering seemingly effortless conclusions that are gener- ally appropriate in most settings, but may be faulty, for instance in experimental situations devised to test the limits of human reasoning abilities. ‘System 2’ reasoning is slow, consciously
+@mercier-sperber2009 | PDF p. 3 | The occurrence of both sound and unsound inferences in reasoning experiments and more generally in everyday human thinking can be explained by the roles played by these two kinds of processes.
+@mercier-sperber2009 | PDF p. 3 | There is, however, some vagueness in the way the two systems are characterized.
+@mercier-sperber2009 | PDF p. 7 | For instance, knowing that a competent meteorologist believes that it will rain is a reason to believe that it will rain.
+@mercier-sperber2009 | PDF p. 7 | It is just that the domain-specific inferences they perform may result in the fixation of beliefs in any domain.
+@mercier-sperber2009 | PDF p. 7 | Is massive modularity similarly incompatible with a dualistic view?
+@mercier-sperber2009 | PDF p. 9 | The direct output of all inferen tial modules, including the argumentation module, is intuitive in the clear sense that we just trust our own mental mechanisms and that we are disposed to treat as true their output without attending to reasons for this acceptance, or even without having access to such reasons.
+@mercier-sperber2009 | PDF p. 9 | Here, for reasons of space, we consider only the audience’s perspective.
+@mercier-sperber2009 | PDF p. 9 | It allows a conclusion that has already been derived to be stored and used on its own. 2 What, at a personal level, looks like a decision to accept a con- clusion, is, we suggest, realised at the subpersonal level by this data management oper- ation.
+@mercier-sperber2009 | PDF p. 9 | Conclusions accepted for a reason are not intuitive but are, we will say, ‘reflective’ (Sperber, 1997) and the mental act of accepting a reflective conclusion through an examination of the reasons one has to do so is an act of reflection.3 There is thus, within a massive-modularist framework, a subtle but unambiguous way to distinguish two categories of inferences: intuitive inferences the conclusion of which are the direct output of all inferential modules (including the argumentation module), and reflective inferences the conclusions of which are an indirect output INTUITIVE AND REFLECTIVE INFERENCE 155 2 Dan Sperber (1985, chapter 2) has
+@mercier-sperber2009 | PDF pp. 3–4 | We ground this distinction in a massively modular view of the human mind where 07-Evans-Chap07 9/10/08 12:30 PM Page 149 metarepresentational modules play an important role in explaining the peculiarities of human psychological evolution.
+@mercier-sperber2009 | PDF p. 3 | There is, however, some vagueness in the way the two systems are characterized.
+A @mercier-sperber2009: Author-hosted original theoretical chapter proposes intuitive/reflective inference, critiques feature bundles, and discusses modularity; it is presented as a proposal, not established anatomy.
+@mercier-sperber2011 | PDF p. 10 | If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.
+@mercier-sperber2011 | PDF p. 10 | While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.
+@mercier-sperber2011 | PDF p. 10 | Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).
+@mercier-sperber2011 | PDF p. 10 | This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.
+@mercier-sperber2011 | PDF p. 10 | This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).
+@mercier-sperber2011 | PDF p. 10 | They modify their causal theories to defend some favored belief (Kunda 1987).
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.
+@mercier-sperber2011 | PDF p. 11 | This phenomenon is known as biased assimila- tion or biased evaluation.
+@mercier-sperber2011 | PDF p. 11 | Several other experiments have studied the way people evaluate arguments depending on whether they agree or disagree with the conclusions.
+@mercier-sperber2011 | PDF p. 11 | In all these cases, motivated reasoning leads to a biased assessment: Arguments with unfavored conclusions are rated as less sound and less persuasive than arguments with favored conclusions.
+@mercier-sperber2011 | PDF p. 11 | Their knowl- edge makes it possible for these participants to ﬁnd more counterarguments, leading to more biased evaluations. 4.2.2.
+@mercier-sperber2011 | PDF p. 11 | As expected, the opinions were more extreme (in both directions) when participants had to think about the individual.
+@mercier-sperber2011 | PDF p. 11 | These results demonstrate that reasoning contributes to attitude polarization and strongly suggest that it may be its main factor.
+@mercier-sperber2011 | PDF p. 11 | According to the argumentative theory, reasoning should be even more biased once the reasoner has already stated her opinion, thereby increasing the pressure on her to justify it rather than moving away from it.
+@mercier-sperber2011 | PDF p. 2 | According to a long philosophical tradition, reasoning is what enables the human mind to go beyond mere perception, habit, and instinct.
+@mercier-sperber2011 | PDF p. 2 | Intuitive inference and argument Since the 1960s, much work in the psychology of reasoning has suggested that, in fact, humans reason rather poorly, failing at simple logical tasks (Evans 2002), committing egregious mistakes in probabilistic reasoning (Kahneman & Tversky 1972; Tversky & Kahneman 1983), and being subject to sundry irrational biases in decision making (Kahneman et al. 1982).
+@mercier-sperber2011 | PDF p. 2 | Here we outline our own dual-process approach: We contend in particular that the arguments used in reasoning are the output of a mechanism of intuitive inference (Mercier & Sperber 2009; Sperber 1997; 2001).
+@mercier-sperber2011 | PDF p. 2 | The inferential pro- cesses carried out by these mechanisms are unconscious: They are not mental acts that individuals decide to perform, but processes that take place inside their brain, at a “sub-personal” level (in the sense of Dennett 1969).
+@mercier-sperber2011 | PDF p. 2 | Such beliefs, held with awareness of one’s reasons to hold them, are better described not as intuitive but as reﬂective beliefs (Sperber 1997).
+@mercier-sperber2011 | PDF p. 2 | We suggest, however, that arguments exploited in reasoning are the output of an intuitive infer- ential mechanism.
+@mercier-sperber2011 | PDF p. 2 | In particular, humans have a mechanism for representing mental representations and for drawing intuitive inferences about them.
+@mercier-sperber2011 | PDF p. 2 | An inference is a process the output of which is a representation.
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@brownstein2025 | § 2.2 | Influenced by dual process theories of mind, RIM (“Reflective-Impulsive Model”; Strack & Deutsche 2004) and APE (“Associative-Propositional Evaluation”; Gawronski & Bodenhausen 2006, 2011) suggest that implicit measures assess distinctive cognitive processes.
+@brownstein2025 | § 2.2 | In sum, the key distinction between associative and propositional processes according to RIM and APE is that propositional processing alone depends on an agent’s assessment of the truth of a given representation.[8] APE in particular aims to explain the interactions between and mutual influences of associative and propositional processes in judgment and behavior.
+@brownstein2025 | § 2.2 | It does not posit the existence of two distinct attitudes or two distinct co-existing representations of the same entity.
+@brownstein2025 | § 4.2 | Researchers working in applied ethics may be less concerned with questions about in-principle culpability and more concerned with investigating how to change or control our implicit biases.
+@brownstein2025 | § 4.2 | An emerging body of laboratory-based research suggests that strategies are available for regulating implicit biases, however.
+@brownstein2025 | § 4.2.2 | Implementation intentions (Gollwitzer & Sheeran 2006; Stewart & Payne 2008; Mendoza et al. 2010; Webb et al. 2012): “if-then” plans that specify a goal-directed response that an individual plans to perform on encountering an anticipated cue.
+@brownstein2025 | § 4.2.2 | Kawakami 2012): priming egalitarian goals, multicultural ideologies, or particular moods can lower scores of prejudice on implicit measures.
+@brownstein2025 | § 4.2.2 | Some have voiced optimism about the role lab-based interventions like these can play as elements of broader efforts to combat prejudice and discrimination (e.g., Kelly et al. 2010a; Madva 2017).
+A @brownstein2025: Secondary account distinguishes associative/propositional process models, learning/storage/expression, and the targets and limits of implicit-bias interventions.
+@wheeler2024 | § 1.5 | It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.
+@wheeler2024 | § 1.5 | Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.
+@wheeler2024 | § 1.5 | Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.
+@wheeler2024 | § 1.5 | Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.
+@wheeler2024 | § 2.1 | Good were each among the first to call attention to the cognitive demands of subjective expected utility theory, although neither one in his early writings abandoned the principle of expected utility as the normative standard for rational choice.
+@wheeler2024 | § 2.1 | So reasoning judged deficient without considering the associated costs may be found meritorious once all those costs are accounted for—a conclusion that a range of authors endorsed, including Amos Tversky: It seems impossible to reach any definitive conclusions concerning human rationality in the absence of a detailed analysis of the sensitivity of the criterion and the cost involved in evaluating the alternatives.
+@wheeler2024 | § 2.1 | On this view boundedly rational agents are utility maximizers after all, once all the constraints are made clear (Arrow 2004).
+@wheeler2024 | § 2.1 | Simon’s focus on computationally efficient methods that yield solutions that are good enough contrasts with Friedman’s as if methodology, since evaluating whether a solution is “good enough”, in Simon’s terms, involves search procedures, stopping criteria, and how information is integrated in the course of making a decision.
+@wheeler2024 | § 2.1 | Simon’s question is to explain how human beings manage to solve complicated problems in an uncertain world given their meager resources.
+@wheeler2024 | § 2.1 | This approach, along with models with better predictive power, sought to more accurately reflect how decisions are made in practice.
+@wheeler2024 | § 5.1 | Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).
+@wheeler2024 | § 5.1 | Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.
+@wheeler2024 | § 5.1 | Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.
+@wheeler2024 | § 5.1 | Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).
+@wheeler2024 | § 5.1 | For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).
+@wheeler2024 | § 5.1 | Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.
+@wheeler2024 | § 5.1 | Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.
+@wheeler2024 | § 5.1 | Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.
+@wheeler2024 | § 5.1 | Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.
+@wheeler2024 | § 5.1 | More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).
+@wheeler2024 | § 5.2 | The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.
+@wheeler2024 | § 5.2 | This general goal of the Fast and Frugal program leads to a second difference between the two schools.
+@wheeler2024 | § 5.2 | For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.
+@wheeler2024 | § 5.2 | If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.
+@wheeler2024 | § 5.2 | Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.
+@wheeler2024 | § 5.2 | The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.
+@wheeler2024 | § 5.2 | People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).
+@wheeler2024 | § 5.2 | Search available options and choose the first one that exceeds your aspiration level.
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+
+== 14-psychology-of-reasoning/ecological-rationality
+Q: Which environmental regularities, algorithmic rules, costs, and outcome standards determine a procedure’s fit?
+@wheeler2024 | § 1.5 | It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.
+@wheeler2024 | § 1.5 | Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.
+@wheeler2024 | § 1.5 | Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.
+@wheeler2024 | § 1.5 | Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.
+@wheeler2024 | § 3 | In a similar fashion, a decision-making environment might be more favorable for one decision-making strategy than to another.
+@wheeler2024 | § 3 | Unsurprisingly, people who draw the correct inferences about the true causal model do better than those who infer the wrong causal model (Meder, Mayrhofer, and Waldmann 2014).
+@wheeler2024 | § 3 | Finally, we review the bias-variance trade-off, which is frequently mentioned in the Fast and Frugal Heuristics literature (section 5.2).
+@wheeler2024 | § 3.1 | Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.
+@wheeler2024 | § 3.1 | For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.
+@wheeler2024 | § 3.1 | Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.
+@wheeler2024 | § 3.1 | In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.
+@wheeler2024 | § 3.5 | The bias-variance trade-off refers to a particular decomposition of overall prediction error for an estimator into its central tendency (bias) and dispersion (variance).
+@wheeler2024 | § 3.5 | The bias-variance decomposition highlights a trade-off between two extreme approaches to making a prediction (see the (supplement on the bias-variance decomposition).
+@wheeler2024 | § 3.5 | Since you do not know the true function \(r(X)\) and only have a sample data set \(\mathcal{D}\), you will aspire to construct an estimator that ideally generalizes to new, unseen data.
+@wheeler2024 | § 3.5 | The problem is to strike a balance between an underfitting model, which erroneously ignores available information about the true function r, and an overfitting model, which erroneously includes information that is noise and thus gives misleading information about the true function r.
+@wheeler2024 | § 3.5 | What teenagers learn as children about the world through play and observing other people drive lends to them an understanding that utility poles are to be steered around, a piece of commonsense that our current machine learning systems do not have but must learn from scratch on a case-by-case basis.
+@wheeler2024 | § 3.5 | Indeed, Gigerenzer and Brighton make a stronger argument, stating that “the bias-variance dilemma shows formally why a mind can be better off with an adaptive toolbox of biased, specialized heuristics” (Gigerenzer & Brighton 2009: 120); see also section 5.2.
+@wheeler2024 | § 3.5 | In fact, for 0-1 loss, bias and variance combine multiplicatively (J.
+@wheeler2024 | § 5.2 | The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.
+@wheeler2024 | § 5.2 | This general goal of the Fast and Frugal program leads to a second difference between the two schools.
+@wheeler2024 | § 5.2 | For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.
+@wheeler2024 | § 5.2 | If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.
+@wheeler2024 | § 5.2 | Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.
+@wheeler2024 | § 5.2 | The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.
+@wheeler2024 | § 5.2 | People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).
+@wheeler2024 | § 5.2 | Search available options and choose the first one that exceeds your aspiration level.
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+
+== 14-psychology-of-reasoning/fluency-and-the-illusory-truth-effect
+Q: How do familiarity, informational dependence, truth judgments, and alternative explanations differ?
+@illusory-truth-tdl | Familiarity making processing easy | What does processing fluency have to do with the illusory truth effect?
+@illusory-truth-tdl | Familiarity making processing easy | After the exposure period was over, Zajonc sent out a questionnaire to both communities, asking respondents to give their impressions of 12 “unfamiliar” words.
+@illusory-truth-tdl | Familiarity making processing easy | One study found that college students fell for the illusory truth effect even when a subsequent knowledge test showed that they knew the correct answer.3 This phenomenon is known as knowledge neglect: even though people knew the right answers, they could still be led astray by the illusory truth effect.
+@illusory-truth-tdl | How it all started | The illusory truth effect was first discussed in a 1977 paper by Lynn Hasher, David Goldstein, and Thomas Toppino.
+@illusory-truth-tdl | How it all started | Interest in the illusory truth effect grew in the late 2000s and 2010s, as the internet and social media became more and more important for disseminating information.
+@illusory-truth-tdl | Referential theory | Rom proposed another interesting basis for the illusory truth effect, called referential theory, in 2017.25 Referential theory suggests that we judge the truthfulness of a statement based on coherent references in our memory.
+@illusory-truth-tdl | Referential theory | The referential theory differs from theories of processing ease or familiarity, instead focusing on how words or phrases are connected semantically in our memory.
+A @illusory-truth-tdl: Freely readable secondary account of repetition-related truth judgments and competing fluency/referential mechanisms; unrelated numerical and broad social claims are not used.
+
+== 14-psychology-of-reasoning/forecasting-and-superforecasters
+Q: What do tournament design, scoring, calibration, training, selection and task-specific performance show?
+@mellers-etal2014 | PDF p. 3 | Each group recruited participants to forecast events and devised unique methods to elicit and combine multiple opinions.
+@mellers-etal2014 | PDF p. 3 | Promising approaches include statistical training (Fong, Nisbett, & Krantz, 1986), feedback (Benson & Onkal, 1992), expo- sure to multiple perspectives (Ariely et al., 2000; Herzog & Hertwig, 2009), exposure to historical analogies (Lovallo, Clarke, & Camerer, 2012), decomposition of the problem into subsets (Fischhoff, Slovic, & Lichtenstein, 1978), and explicit consideration of contradictory evi- dence (Koriat, Lichtenstein, & Fischhoff, 1980).
+@mellers-etal2014 | PDF p. 3 | Scenario training taught forecasters to generate new futures, actively entertain more possibilities, use decision trees, and avoid biases such as overpredicting change, creating incoherent scenarios, or assigning probabilities exceed- ing 1.0 to mutually exclusive and exhaustive outcomes.
+@mellers-etal2014 | PDF p. 3 | When one has access to many people who make forecasts, how should those people interact in order to generate the most accurate aggregations of predictions?
+@mellers-etal2014 | PDF p. 3 | When the benefits of group interaction exceed the costs, forecasters should work in teams.
+@mellers-etal2014 | PDF p. 3 | These approaches stake out extreme positions on the continuum of independence and interdependence.
+@mellers-etal2014 | PDF p. 4 | Design In Year 1, participants were randomly assigned to condi- tions of a 3 (training: no training, scenario training, or probability training) × 4 (group influence: indepen- dent, crowd-belief, team, or prediction-market forecast- ing) factorial design.
+@mellers-etal2014 | PDF p. 4 | Team forecasters received additional train- ing in how to help the group be more accurate by main- taining high standards of evidence and proof.
+@mellers-etal2014 | PDF p. 4 | We examined tracking by placing the 60 top performers of Year 1 (5 from each condition) in five teams of 12 members each (super- forecaster teams).
+@mellers-etal2014 | PDF p. 4 | Year 1 began with 2,246 participants (1,593 survey respondents and 653 prediction-market traders).
+@mellers-etal2014 | PDF p. 4 | Year 2 started with 1,648 participants (943 survey respondents and 705 prediction-market traders who were either new recruits or returnees).
+@mellers-etal2014 | PDF p. 5 | If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.
+@mellers-etal2014 | PDF p. 5 | Participants were encouraged to return to the Web site and update their prediction until the question closed.
+@mellers-etal2014 | PDF p. 5 | These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.
+@mellers-etal2014 | PDF p. 5 | In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.
+@mellers-etal2014 | PDF p. 7 | In separate regressions for Years 1 and 2, participants were treated as random effects.
+@mellers-etal2014 | PDF p. 7 | The best performers from Year 1 (i.e., the top 2%) were placed together in elite teams in Year 2.
+@mellers-etal2014 | PDF p. 7 | Number of questions attempted also varied with training in Year 1, F(2, 1583) = 3.65, p = .026.
+@mellers-etal2014 | PDF p. 7 | Independent forecasters made an average of 1.4 predictions per question, and regular teams made an average of 1.6.
+@mellers-etal2014 | PDF p. 7 | To calculate calibration, we created small proba- bility bins of .500 to .525, .526 to .575, .576 to .625, and so forth.
+@mellers-etal2014 | PDF pp. 4–5 | Attrition in Year 2 was only 3%, presumably because most participants (86%) were returnees and quite familiar with the task.
+A @mellers-etal2014: Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit.
+
+== 14-psychology-of-reasoning/heuristics-and-biases
+Q: What makes a simplifying procedure useful or biased, and what do task interpretation and environmental fit contribute?
+@wheeler2024 | § 3.5 | The bias-variance trade-off refers to a particular decomposition of overall prediction error for an estimator into its central tendency (bias) and dispersion (variance).
+@wheeler2024 | § 3.5 | The bias-variance decomposition highlights a trade-off between two extreme approaches to making a prediction (see the (supplement on the bias-variance decomposition).
+@wheeler2024 | § 3.5 | Since you do not know the true function \(r(X)\) and only have a sample data set \(\mathcal{D}\), you will aspire to construct an estimator that ideally generalizes to new, unseen data.
+@wheeler2024 | § 3.5 | The problem is to strike a balance between an underfitting model, which erroneously ignores available information about the true function r, and an overfitting model, which erroneously includes information that is noise and thus gives misleading information about the true function r.
+@wheeler2024 | § 3.5 | What teenagers learn as children about the world through play and observing other people drive lends to them an understanding that utility poles are to be steered around, a piece of commonsense that our current machine learning systems do not have but must learn from scratch on a case-by-case basis.
+@wheeler2024 | § 3.5 | Indeed, Gigerenzer and Brighton make a stronger argument, stating that “the bias-variance dilemma shows formally why a mind can be better off with an adaptive toolbox of biased, specialized heuristics” (Gigerenzer & Brighton 2009: 120); see also section 5.2.
+@wheeler2024 | § 3.5 | In fact, for 0-1 loss, bias and variance combine multiplicatively (J.
+@wheeler2024 | § 5.1 | Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).
+@wheeler2024 | § 5.1 | Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.
+@wheeler2024 | § 5.1 | Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.
+@wheeler2024 | § 5.1 | Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).
+@wheeler2024 | § 5.1 | For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).
+@wheeler2024 | § 5.1 | Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.
+@wheeler2024 | § 5.1 | Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.
+@wheeler2024 | § 5.1 | Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.
+@wheeler2024 | § 5.1 | Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.
+@wheeler2024 | § 5.1 | More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).
+@wheeler2024 | § 5.2 | The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.
+@wheeler2024 | § 5.2 | This general goal of the Fast and Frugal program leads to a second difference between the two schools.
+@wheeler2024 | § 5.2 | For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.
+@wheeler2024 | § 5.2 | If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.
+@wheeler2024 | § 5.2 | Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.
+@wheeler2024 | § 5.2 | The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.
+@wheeler2024 | § 5.2 | People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).
+@wheeler2024 | § 5.2 | Search available options and choose the first one that exceeds your aspiration level.
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+@bazerman-noba | Anchoring | Regarding the second problem, people vary a great deal in their final assessment of the level of executive-level management fraud, but most think that 10 out of 1,000 is too low.
+@bazerman-noba | Framing | Turning to Problem 3, most people choose Program A, which saves 200 lives for sure, over Program B.
+@bazerman-noba | Framing | People respond very differently to saving versus losing lives—even when the difference is based just on the “framing” of the choices.
+@bazerman-noba | Framing | These are just three of the many biases that affect even the smartest among us.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+
+== 14-psychology-of-reasoning/identity-protective-cognition
+Q: What distinguishes social incentives, public expression, shared evidence, and motivationally distorted belief?
+@deweeseboyd2023 | § 7.1 | Understood summatively, we might define collective self-deception as the holding of a false belief in the face of evidence to the contrary by a group of people as a result of shared desires, emotions, or intentions (depending upon the account of self-deception) favoring that belief.
+@deweeseboyd2023 | § 7.1 | Merely sharing desires, emotions, or intentions favoring a belief with a group does not entail that the self-deception is properly social since these individuals may well self-deceive regardless of the fact that their motivations are shared with others (Dings 2017; Funkhouser 2019); they are just individually self-deceiving in parallel.
+@deweeseboyd2023 | § 7.1 | Within highly homogeneous social groups, however, it may be difficult to tell who is using the group instrumentally in these ways, especially when that use is unwitting.
+@deweeseboyd2023 | § 7.1 | Virtually all self-deception has a social component, being wittingly or unwittingly supported by one’s associates (see Ruddick 1988).
+@deweeseboyd2023 | § 7.1 | In such a case, I unwittingly support my friend’s self-deceptive belief, and she mine—our self-deceptions are mutually reinforcing.
+@deweeseboyd2023 | § 7.1 | Despite our being at least generally aware of these social and environmental ramifications of our consumptive practices, we hold the overly optimistic beliefs that the world will be fine, that its peril is overstated, that the suffering caused by the exploitive and ecologically degrading practices are overblown, that our own consumption habits are unconnected to these sufferings, and even that our minimal efforts at conscientious consumption are an adequate remedy (see Goleman 1989).
+@deweeseboyd2023 | § 7.1 | There are, however, limits to how entrenched such beliefs can become and remain.
+@deweeseboyd2023 | § 7.1 | For instance, I might be motivated to believe that climate change is not a serious problem and form that false belief as a consequence.
+@deweeseboyd2023 | § 7.1 | Determining how superable this challenge is will affect our assessment of individual responsibility for self-deception as well as the prospects of unassisted escape from it.
+A @deweeseboyd2023: Secondary map of non-intentionalist and rival accounts of self-deception, selectivity, error costs, and socially sustained belief; related mechanisms are not equated with every identity-protection claim.
+@mercier-sperber2011 | PDF p. 10 | If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.
+@mercier-sperber2011 | PDF p. 10 | While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.
+@mercier-sperber2011 | PDF p. 10 | Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).
+@mercier-sperber2011 | PDF p. 10 | This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.
+@mercier-sperber2011 | PDF p. 10 | This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).
+@mercier-sperber2011 | PDF p. 10 | They modify their causal theories to defend some favored belief (Kunda 1987).
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+
+== 14-psychology-of-reasoning/mindreading-how-we-attribute-knowledge
+Q: How do perspective, projection, access, uptake and explicit mental-state inference contribute to epistemic attribution?
+@malle-noba | Explicit Mental State Inference | The ability to truly take another person’s perspective requires that we separate what we want, feel, and know from what the other person is likely to want, feel, and know.
+@malle-noba | Explicit Mental State Inference | The child is shown a picture story of Sally, who puts her ball in a basket and leaves the room.
+@malle-noba | Explicit Mental State Inference | But people need to recognize when to step out of their own perspective and truly represent the other person’s perspective—which may harbor very different thoughts, feelings, and intentions.
+@malle-noba | Introduction | One of the most fascinating human capacities is the ability to perceive and interpret other people’s behavior in terms of their mental states.
+@malle-noba | Introduction | And what is known about the mental processes that underlie such understanding?
+@malle-noba | Joint Attention, Visual Perspective Taking | Going beyond the automatic, humans are capable of actively engaging with other people’s mental states, such as when they enter into situations of joint attention—like Marissa and Noah, who are each looking at an object and are both aware that each of them is looking at the object.
+@malle-noba | Joint Attention, Visual Perspective Taking | I then say it’s called “Tastatur” in German, you know that I am referring to the keyboard and not to the table on which it had been resting.
+@malle-noba | Projection, Simulation (and the Specter of Egocentrism) | When imagining what it might be like to be in another person’s psychological position, humans have to go beyond mental rotation.
+@malle-noba | Projection, Simulation (and the Specter of Egocentrism) | Let’s say you know that Brianna doesn’t like Fred’s new curtains, but you hear her exclaim to Fred, “These are beautiful!” Now you have to predict whether Fred can figure out that Brianna was being sarcastic.
+@malle-noba | Projection, Simulation (and the Specter of Egocentrism) | And though they often do so correctly, they also get things wrong at times.
+A @malle-noba: Freely licensed overview distinguishes mentalising components, perspective, projection, and explicit mental-state inference; reviewed experiments are secondary readings.
+
+== 14-psychology-of-reasoning/motivated-reasoning
+Q: How can preference shape search, interpretation and stopping, and what evidence distinguishes motivated distortion from alternative explanations?
+@mercier-sperber2011 | PDF p. 10 | If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.
+@mercier-sperber2011 | PDF p. 10 | While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.
+@mercier-sperber2011 | PDF p. 10 | Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).
+@mercier-sperber2011 | PDF p. 10 | This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.
+@mercier-sperber2011 | PDF p. 10 | This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).
+@mercier-sperber2011 | PDF p. 10 | They modify their causal theories to defend some favored belief (Kunda 1987).
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.
+@mercier-sperber2011 | PDF p. 11 | This phenomenon is known as biased assimila- tion or biased evaluation.
+@mercier-sperber2011 | PDF p. 11 | Several other experiments have studied the way people evaluate arguments depending on whether they agree or disagree with the conclusions.
+@mercier-sperber2011 | PDF p. 11 | In all these cases, motivated reasoning leads to a biased assessment: Arguments with unfavored conclusions are rated as less sound and less persuasive than arguments with favored conclusions.
+@mercier-sperber2011 | PDF p. 11 | Their knowl- edge makes it possible for these participants to ﬁnd more counterarguments, leading to more biased evaluations. 4.2.2.
+@mercier-sperber2011 | PDF p. 11 | As expected, the opinions were more extreme (in both directions) when participants had to think about the individual.
+@mercier-sperber2011 | PDF p. 11 | These results demonstrate that reasoning contributes to attitude polarization and strongly suggest that it may be its main factor.
+@mercier-sperber2011 | PDF p. 11 | According to the argumentative theory, reasoning should be even more biased once the reasoner has already stated her opinion, thereby increasing the pressure on her to justify it rather than moving away from it.
+@mercier-sperber2011 | PDF p. 12 | By contrast, participants in the other group were much less overconﬁdent.
+@mercier-sperber2011 | PDF p. 12 | The involvement of motivated reasoning in this effect can be demonstrated by providing participants with evidence both for and against a favored belief.
+@mercier-sperber2011 | PDF p. 12 | Participants were then given positive or negative feedback, but a few minutes later they were told that the feedback was actually bogus and the real aim of the experiment was explained.
+@mercier-sperber2011 | PDF p. 12 | This strongly suggests that belief persever- ance of the type just described is an instance of motivated reasoning (for applications to the domain of political beliefs, see Prasad et al. 2009). 11 4.2.4.
+@mercier-sperber2011 | PDF p. 12 | Moreover, they were given the possibility of choosing which task they would be performing, knowing that the other task would be assigned to another partici- pant.
+@mercier-sperber2011 | PDF p. 12 | The differ- ence between these two ratings is a mark of moral hypoc- risy.
+@mercier-sperber2011 | PDF p. 12 | Perpetrators of crimes will be tempted to “blame the victim” or ﬁnd other excuses to mitigate the effects of violating their moral intuitions (Ryan 1971; for a review, see Hafer & Begue 2005), which can in turn make it easier to commit new crimes (Baumeister 1997).
+@mercier-sperber2011 | PDF p. 6 | BEHAVIORAL AND BRAIN SCIENCES (2011) 34:2 61 Hahn 2004; Rips 2002).
+@mercier-sperber2011 | PDF p. 6 | After being left to think for a few minutes, they had to state and defend their view to the experimenter.
+@mercier-sperber2011 | PDF p. 6 | In a normal argumentative setting, a good argument is an argument that is not refuted.
+@mercier-sperber2011 | PDF p. 6 | For these two authors, and indeed the critical thinking tra- dition, this is a very serious failing.
+@mercier-sperber2011 | PDF p. 6 | Indeed, when mock jurors were asked to reach a verdict and were then presented with an alterna- tive verdict, nearly all of them were able to ﬁnd counterar- guments against it (Kuhn et al. 1994).
+@mercier-sperber2011 | PDF p. 6 | Participants . . . appear to build complex arguments and attack structure.
+@mercier-sperber2011 | PDF p. 6 | Many types of tasks have been studied in group settings, with very mixed results (for recent reviews, 4 see Kerr & Tindale 2004; Kerr et al. 1996).
+@mercier-sperber2011 | PDF pp. 10–11 | In a landmark experiment, Lord and colleagues (1979) asked participants who had been previously selected as being either defenders or opponents of the death penalty to evaluate studies relating to its efﬁciency as a deterrent.
+@mercier-sperber2011 | PDF pp. 11–12 | Koriat and his col- leagues (1980) have tested this hypothesis by using general knowledge questions such as “the Sabines were part of (a) ancient India or (b) ancient Rome.” After answering the question, participants had to produce reasons relevant to their answers.
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people sometimes look for reasons to justify an opinion they are eager to uphold.
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@deweeseboyd2023 | Deflationary Worries and Modifications | Critics contend these deflationary accounts do not adequately distinguish self-deception from other sorts of motivated believing (such as wishful thinking), nor can they explain the peculiar selectivity associated with self-deception, its characteristic ‘tension,’ the way it involves a failure of self-knowledge, or the agency of the self-deceiver.
+@deweeseboyd2023 | Deflationary Worries and Modifications | In either case, self-deceivers exert more agency than wishful thinkers over their belief formation.
+@deweeseboyd2023 | Deflationary Worries and Modifications | Why is it, such intentionalists ask, that we are not rendered biased in favor of the belief that p in many cases where we have a very strong desire that p (or anxiety or some other motivation related to p)?
+@deweeseboyd2023 | Deflationary Worries and Modifications | Because Josh considers the cost of erroneously believing his favorite chocolate is tainted by exploitation to be very high—no other chocolate gives him the same pleasure—it takes a great deal more evidence to convince him that his chocolate is so tainted than it does to convince him otherwise.
+@deweeseboyd2023 | Deflationary Worries and Modifications | Say, for example, he works for an organization promoting fair trade and non-exploitive labor practices among chocolate producers and believes he has an obligation to accurately represent the labor practices of the producer of his favorite chocolate and would, furthermore, lose credibility if the chocolate he himself consumes is tainted by exploitation.
+@deweeseboyd2023 | Deflationary Worries and Modifications | Some non-intentionalist respond that these conditions are as complete an explanation of self-deception as is possible.
+@deweeseboyd2023 | Deflationary Worries and Modifications | Research on the role of dopamine regulation and negative somatic markers provides some empirical support for this sort of affective model (Lauria et al. 2016; Lauria and Preissmann 2018).
+@deweeseboyd2023 | Deflationary Worries and Modifications | Take Ellen, who says she is doing well in her biology class but systematically avoids looking at the results on her quizzes and tests.
+@deweeseboyd2023 | § 3.1 | Non-intentionalists argue that most ‘garden-variety’ cases of self-deception can be explained without adverting to subagents, or unconscious beliefs and intentions, which, even if they resolve the static and dynamic puzzles of self-deception, raise puzzles of their own.
+@deweeseboyd2023 | § 3.1 | Joan is deceived into believing it will be sunny, and Sam has deceived her, albeit unintentionally.
+@deweeseboyd2023 | § 3.1 | In such cases, Allison’s self-deceptive belief that her daughter is not having learning difficulties fulfills her desire, quells her fear, or reduces her anxiety, and it’s this function—not an intention—that explains why her belief formation process is biased.
+@deweeseboyd2023 | § 3.1 | Others, however, argue the needed motivation can as easily be supplied by uncertainty or ignorance whether p, or suspicion that ~p (Mele 2001; Barnes 1997).
+@deweeseboyd2023 | § 3.1 | Such approaches are ‘deflationary’ in the sense that they take self-deception to be explicable without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception.
+@deweeseboyd2023 | § 3.1 | ble without reaching for exotic cognitive architecture since neither intentions nor dual-beliefs are required to account for self-deception. (For more on the dual-belief requirement, see §3.2 Revision of Belief.) Mele (2001, 2012) has offered the most fully articulated deflationary account, and his view has been the target of the most scrutiny, so it is worth stating what he takes to be the jointly sufficient conditions for entering self-deception: The belief that p, which S acquires, is false S treats data relevant, or at least seemingly relevant, to the truth value of p in a motivationally biased way This biased treatment is a nondeviant
+@deweeseboyd2023 | § 3.1 | To support non-intentionalism, some have looked to the purposive mechanisms of deception operating in non-human organisms as a model (Smith 2014), while others have focused on neurobiological mechanisms triggered by affect to explain the peculiarly purposive responses to evidence involved in self-deception (Lauria et al. 2016).
+@deweeseboyd2023 | § 7.1 | Understood summatively, we might define collective self-deception as the holding of a false belief in the face of evidence to the contrary by a group of people as a result of shared desires, emotions, or intentions (depending upon the account of self-deception) favoring that belief.
+@deweeseboyd2023 | § 7.1 | Merely sharing desires, emotions, or intentions favoring a belief with a group does not entail that the self-deception is properly social since these individuals may well self-deceive regardless of the fact that their motivations are shared with others (Dings 2017; Funkhouser 2019); they are just individually self-deceiving in parallel.
+@deweeseboyd2023 | § 7.1 | Within highly homogeneous social groups, however, it may be difficult to tell who is using the group instrumentally in these ways, especially when that use is unwitting.
+@deweeseboyd2023 | § 7.1 | Virtually all self-deception has a social component, being wittingly or unwittingly supported by one’s associates (see Ruddick 1988).
+@deweeseboyd2023 | § 7.1 | In such a case, I unwittingly support my friend’s self-deceptive belief, and she mine—our self-deceptions are mutually reinforcing.
+@deweeseboyd2023 | § 7.1 | Despite our being at least generally aware of these social and environmental ramifications of our consumptive practices, we hold the overly optimistic beliefs that the world will be fine, that its peril is overstated, that the suffering caused by the exploitive and ecologically degrading practices are overblown, that our own consumption habits are unconnected to these sufferings, and even that our minimal efforts at conscientious consumption are an adequate remedy (see Goleman 1989).
+@deweeseboyd2023 | § 7.1 | There are, however, limits to how entrenched such beliefs can become and remain.
+@deweeseboyd2023 | § 7.1 | For instance, I might be motivated to believe that climate change is not a serious problem and form that false belief as a consequence.
+@deweeseboyd2023 | § 7.1 | Determining how superable this challenge is will affect our assessment of individual responsibility for self-deception as well as the prospects of unassisted escape from it.
+A @deweeseboyd2023: Secondary map of non-intentionalist and rival accounts of self-deception, selectivity, error costs, and socially sustained belief; related mechanisms are not equated with every identity-protection claim.
+@mellers-etal2014 | PDF p. 4 | Design In Year 1, participants were randomly assigned to condi- tions of a 3 (training: no training, scenario training, or probability training) × 4 (group influence: indepen- dent, crowd-belief, team, or prediction-market forecast- ing) factorial design.
+@mellers-etal2014 | PDF p. 4 | Team forecasters received additional train- ing in how to help the group be more accurate by main- taining high standards of evidence and proof.
+@mellers-etal2014 | PDF p. 4 | We examined tracking by placing the 60 top performers of Year 1 (5 from each condition) in five teams of 12 members each (super- forecaster teams).
+@mellers-etal2014 | PDF p. 4 | Year 1 began with 2,246 participants (1,593 survey respondents and 653 prediction-market traders).
+@mellers-etal2014 | PDF p. 4 | Year 2 started with 1,648 participants (943 survey respondents and 705 prediction-market traders who were either new recruits or returnees).
+@mellers-etal2014 | PDF p. 5 | If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.
+@mellers-etal2014 | PDF p. 5 | Participants were encouraged to return to the Web site and update their prediction until the question closed.
+@mellers-etal2014 | PDF p. 5 | These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.
+@mellers-etal2014 | PDF p. 5 | In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.
+A @mellers-etal2014: Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit.
+@brownstein2025 | § 4.2.2 | Implementation intentions (Gollwitzer & Sheeran 2006; Stewart & Payne 2008; Mendoza et al. 2010; Webb et al. 2012): “if-then” plans that specify a goal-directed response that an individual plans to perform on encountering an anticipated cue.
+@brownstein2025 | § 4.2.2 | Kawakami 2012): priming egalitarian goals, multicultural ideologies, or particular moods can lower scores of prejudice on implicit measures.
+@brownstein2025 | § 4.2.2 | Some have voiced optimism about the role lab-based interventions like these can play as elements of broader efforts to combat prejudice and discrimination (e.g., Kelly et al. 2010a; Madva 2017).
+A @brownstein2025: Secondary account distinguishes associative/propositional process models, learning/storage/expression, and the targets and limits of implicit-bias interventions.
+
+== 14-psychology-of-reasoning/overconfidence-and-the-illusion-of-explanatory-depth
+Q: How do confidence targets differ, and what does the open explanatory-depth abstract support?
+@rozenblit-keil2002-abstract | Abstract | People feel they understand complex phenomena with far greater precision, coherence, and depth than they really do
+@rozenblit-keil2002-abstract | Abstract | The illusion is far stronger for explanatory knowledge than many other kinds of knowledge, such as that for facts, procedures or narratives.
+A @rozenblit-keil2002-abstract: Only the openly available publisher-deposited abstract in Crossref was read; used for the explanatory-depth claim and broad domain comparison, not detailed methods, estimates, or political extensions.
+@bazerman-noba | Overconfidence | On the first problem, if you set your ranges so that you were justifiably 98 percent confident, you should expect that approximately 9.8, or nine to 10, of your ranges would include the actual value.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+@mellers-etal2014 | PDF p. 5 | If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.
+@mellers-etal2014 | PDF p. 5 | Participants were encouraged to return to the Web site and update their prediction until the question closed.
+@mellers-etal2014 | PDF p. 5 | These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.
+@mellers-etal2014 | PDF p. 5 | In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.
+@mellers-etal2014 | PDF p. 7 | In separate regressions for Years 1 and 2, participants were treated as random effects.
+@mellers-etal2014 | PDF p. 7 | The best performers from Year 1 (i.e., the top 2%) were placed together in elite teams in Year 2.
+@mellers-etal2014 | PDF p. 7 | Number of questions attempted also varied with training in Year 1, F(2, 1583) = 3.65, p = .026.
+@mellers-etal2014 | PDF p. 7 | Independent forecasters made an average of 1.4 predictions per question, and regular teams made an average of 1.6.
+@mellers-etal2014 | PDF p. 7 | To calculate calibration, we created small proba- bility bins of .500 to .525, .526 to .575, .576 to .625, and so forth.
+A @mellers-etal2014: Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit.
+
+== 14-psychology-of-reasoning/replication-and-the-psychology-of-psychology
+Q: What do reproduction, replication, selection and research reforms establish or leave unresolved?
+@fidler-wilcox2026 | § 1 | A starting point in any philosophical exploration of reproducibility and related notions is to consider the conceptual question of what such notions mean.
+@fidler-wilcox2026 | § 1 | The Reproducibility Projects, coordinated by the Center for Open Science, redo entire studies, data collection and analysis.
+@fidler-wilcox2026 | § 1 | A study may be replicable in the former sense but not in the second sense: one might be able to replicate the methods, procedures and analysis of a study, but fail to successfully replicate the results of the original study.
+@fidler-wilcox2026 | § 1 | As suggested, this distinction may not always be known by these terms.
+@fidler-wilcox2026 | § 1 | Schmidt’s account has been influential and widely-cited in psychology and social sciences, where the replication crisis literature is heavily concentrated.
+@fidler-wilcox2026 | § 2.2 | The causes of irreproducible results are largely the same across disciplines we have mentioned.
+@fidler-wilcox2026 | § 2.2 | Over 70% of editors from 79 social science journals said they preferred new studies over replications and over 90% said they would did not encourage the submission of replication studies (Neuliep & Crandall 1990).
+@fidler-wilcox2026 | § 2.2 | Developments in text mining techniques have led to more comprehensive estimates.
+@fidler-wilcox2026 | § 2.2 | For example, in psychology the proportion of published results that are statistically significant is 92% despite the fact that the average power of studies in this field to detect medium effect sizes (arguably typical of the discipline) is roughly 44% (Szucs & Ioannidis 2017).
+@fidler-wilcox2026 | § 2.2 | However, the most recent estimate of the statistical power, again of medium effect sizes, of ecology and animal behaviour is 23–26% (Smith, Hardy, & Gammell 2011) (An earlier more optimistic assessment was 40–47%, Jennions & Møller, 2003.) For a third example, the proportion of statistically significant results in neuroscience and behaviour is 85%.
+@fidler-wilcox2026 | § 2.3 | In addition to creating the file-drawer problem described above, publication bias has been held at least partially responsible for the high prevalence of Questionable Research Practices (QRPs) uncovered in both self-report survey research (John, Loewenstein, & Prelec 2012; Agnoli 2017 et al. 2017; Fraser et al. 2018) and in journal studies that have detected, for example, unusual distributions of p values (Masicampo & Lalande 2012; Hartgerink et al. 2016).
+@fidler-wilcox2026 | § 2.3 | Simmons, Nelson, and Simonsohn (2011) explained and demonstrated with simulated results how engaging in such practices inflates the false positive error rate of the published literature, leading to a lower rate of reproducible results.
+@fidler-wilcox2026 | § 2.3 | Five of the most widespread QRPs are listed below in Table 1 (from Fraser et al. 2018), with associated survey measures of prevalence.
+@fidler-wilcox2026 | § 4.2 | The Transparency and Openness Promotion (TOP) guidelines (Nosek et al. 2015) have, as at the end of May, 2018, almost 5,000 journals and organizations as signatories.
+@fidler-wilcox2026 | § 4.2 | The purpose is to distinguish prediction from postdiction (Nosek et al. 2018), or what is elsewhere referred to as confirmatory research from exploratory research (Wagenmakers et al. 2012) and a distinction perhaps more commonly known as hypothesis testing versus hypothesis generating research.
+@fidler-wilcox2026 | § 4.2 | Some high impact journals, having been singled out in the science media as having particularly problematic publishing practices (e.g., Schekman 2013), have taken exceptional steps to improve the completeness, transparency and reproducibility of the research they publish.
+@fidler-wilcox2026 | § 4.2 | In 2018, they produced discipline specific versions for Nature Human Behaviour and Nature Ecology & Evolution.
+@fidler-wilcox2026 | § 4.3 | Registered reports shift the point at which peer review occurs in the research process, in an effort to combat publication bias against null (negative) results.
+@fidler-wilcox2026 | § 4.3 | Well-established in some sciences like physics, the use of pre-print servers is relatively new in biological and social sciences.
+A @fidler-wilcox2026: Secondary account distinguishes forms of replication and explains selection, flexible analysis, preregistration, and registered reports without certifying every named psychology effect.
+
+== 14-psychology-of-reasoning/the-argumentative-theory-of-reasoning
+Q: How do argument production/evaluation, present performance, and a historical function hypothesis differ?
+@mercier-sperber2011 | PDF p. 1 | Arguments for an argumentative theory Hugo Mercier Philosophy, Politics and Economics Program, University of Pennsylvania, Philadelphia, PA 19104 hmercier@sas.upenn.edu http: //sites.google.com/site/hugomercier/ Dan Sperber Jean Nicod Institute (EHESS-ENS-CNRS), 75005 Paris, France; Department of Philosophy, Central European University, Budapest, Hungary dan@sperber.fr http: //www.dan.sperber.fr Abstract: Reasoning is generally seen as a means to improve knowledge and make better decisions.
+@mercier-sperber2011 | PDF p. 1 | Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation.
+@mercier-sperber2011 | PDF p. 1 | Proactively used reasoning also favors decisions that are easy to justify but not necessarily better.
+@mercier-sperber2011 | PDF p. 1 | It is at work not only in conceptual thinking but also in percep- tion and in motor control (Kersten et al. 2004; Wolpert & Kawato 1998).
+@mercier-sperber2011 | PDF p. 1 | These two questions are mutually relevant, since the mechanisms for reasoning should be adjusted to its function.
+@mercier-sperber2011 | PDF p. 2 | According to a long philosophical tradition, reasoning is what enables the human mind to go beyond mere perception, habit, and instinct.
+@mercier-sperber2011 | PDF p. 2 | Intuitive inference and argument Since the 1960s, much work in the psychology of reasoning has suggested that, in fact, humans reason rather poorly, failing at simple logical tasks (Evans 2002), committing egregious mistakes in probabilistic reasoning (Kahneman & Tversky 1972; Tversky & Kahneman 1983), and being subject to sundry irrational biases in decision making (Kahneman et al. 1982).
+@mercier-sperber2011 | PDF p. 2 | Here we outline our own dual-process approach: We contend in particular that the arguments used in reasoning are the output of a mechanism of intuitive inference (Mercier & Sperber 2009; Sperber 1997; 2001).
+@mercier-sperber2011 | PDF p. 2 | The inferential pro- cesses carried out by these mechanisms are unconscious: They are not mental acts that individuals decide to perform, but processes that take place inside their brain, at a “sub-personal” level (in the sense of Dennett 1969).
+@mercier-sperber2011 | PDF p. 2 | Such beliefs, held with awareness of one’s reasons to hold them, are better described not as intuitive but as reﬂective beliefs (Sperber 1997).
+@mercier-sperber2011 | PDF p. 2 | We suggest, however, that arguments exploited in reasoning are the output of an intuitive infer- ential mechanism.
+@mercier-sperber2011 | PDF p. 2 | In particular, humans have a mechanism for representing mental representations and for drawing intuitive inferences about them.
+@mercier-sperber2011 | PDF p. 2 | An inference is a process the output of which is a representation.
+@mercier-sperber2011 | PDF p. 6 | BEHAVIORAL AND BRAIN SCIENCES (2011) 34:2 61 Hahn 2004; Rips 2002).
+@mercier-sperber2011 | PDF p. 6 | After being left to think for a few minutes, they had to state and defend their view to the experimenter.
+@mercier-sperber2011 | PDF p. 6 | In a normal argumentative setting, a good argument is an argument that is not refuted.
+@mercier-sperber2011 | PDF p. 6 | For these two authors, and indeed the critical thinking tra- dition, this is a very serious failing.
+@mercier-sperber2011 | PDF p. 6 | Indeed, when mock jurors were asked to reach a verdict and were then presented with an alterna- tive verdict, nearly all of them were able to ﬁnd counterar- guments against it (Kuhn et al. 1994).
+@mercier-sperber2011 | PDF p. 6 | Participants . . . appear to build complex arguments and attack structure.
+@mercier-sperber2011 | PDF p. 6 | Many types of tasks have been studied in group settings, with very mixed results (for recent reviews, 4 see Kerr & Tindale 2004; Kerr et al. 1996).
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@mellers-etal2014 | PDF p. 3 | Each group recruited participants to forecast events and devised unique methods to elicit and combine multiple opinions.
+@mellers-etal2014 | PDF p. 3 | Promising approaches include statistical training (Fong, Nisbett, & Krantz, 1986), feedback (Benson & Onkal, 1992), expo- sure to multiple perspectives (Ariely et al., 2000; Herzog & Hertwig, 2009), exposure to historical analogies (Lovallo, Clarke, & Camerer, 2012), decomposition of the problem into subsets (Fischhoff, Slovic, & Lichtenstein, 1978), and explicit consideration of contradictory evi- dence (Koriat, Lichtenstein, & Fischhoff, 1980).
+@mellers-etal2014 | PDF p. 3 | Scenario training taught forecasters to generate new futures, actively entertain more possibilities, use decision trees, and avoid biases such as overpredicting change, creating incoherent scenarios, or assigning probabilities exceed- ing 1.0 to mutually exclusive and exhaustive outcomes.
+@mellers-etal2014 | PDF p. 3 | When one has access to many people who make forecasts, how should those people interact in order to generate the most accurate aggregations of predictions?
+@mellers-etal2014 | PDF p. 3 | When the benefits of group interaction exceed the costs, forecasters should work in teams.
+@mellers-etal2014 | PDF p. 3 | These approaches stake out extreme positions on the continuum of independence and interdependence.
+@mellers-etal2014 | PDF p. 5 | If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.
+@mellers-etal2014 | PDF p. 5 | Participants were encouraged to return to the Web site and update their prediction until the question closed.
+@mellers-etal2014 | PDF p. 5 | These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.
+@mellers-etal2014 | PDF p. 5 | In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.
+A @mellers-etal2014: Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit.
+
+== 14-psychology-of-reasoning/the-dunning-kruger-effect-and-its-critics
+Q: Why does a performance/self-assessment pattern not uniquely establish a metacognitive mechanism or a universal learning curve?
+@dunning-kruger-tdl | Dunning-Kruger effect controversies | The underlying cause of the Dunning-Kruger effect is widely disputed.
+@dunning-kruger-tdl | Dunning-Kruger effect controversies | As more samples are collected both “expert” and “novice” data points begin to rank closer to the average.
+@dunning-kruger-tdl | How it all started | The Dunning-Kruger effect was first discovered and written about in 1999 by researchers David Dunning and Justin Kruger at Cornell University.
+@dunning-kruger-tdl | How it all started | In effect, improving the skills of the participants—on humor, grammar, and logical reasoning—helped them recognize the limitations of their own metacognitive abilities and predict their own scores better on subsequent trials.
+A @dunning-kruger-tdl: Freely readable secondary map of the original self-assessment proposal and statistical objections; the original papers were not independently read and unsupported stage diagrams are excluded.
+
+== 14-psychology-of-reasoning/the-scout-mindset
+Q: How does Galef’s public ideal connect with evidence-responsive practice without serving as a validated intervention?
+@galef2021-introduction | Welcome! | I’m Julia Galef, host of the Rationally Speaking podcast, and author of THE SCOUT MINDSET, out April 13th, 2021.
+@galef2021-introduction | Welcome! | The Scout Mindset is about how, concretely, to keep from fooling yourself.
+@galef2021-introduction | Welcome! | Nor is it an attempt to scold you into thinking “correctly.” It’s a tour of a different way of being — one that’s rooted in an appetite for truth.
+A @galef2021-introduction: Galef’s own public book introduction supplies her description of scout mindset; the full book and its research claims are not represented as read.
+@mercier-sperber2011 | PDF p. 10 | If this were not the case, the success of group reasoning reviewed in section 2.3 would be very hard to explain. 4.
+@mercier-sperber2011 | PDF p. 10 | While we think of most of our beliefs – to the extent that we think about them at all – not as beliefs but just as pieces of knowledge, we are also aware that some of them are unli- kely to be universally shared, or to be accepted on trust just because we express them.
+@mercier-sperber2011 | PDF p. 10 | Motivated reasoning A series of experiments by Ditto and his colleagues, invol- ving reasoning in the context of a fake medical result, illus- trate the notion of motivated reasoning (Ditto & Lopez 1992; Ditto et al. 1998; 2003).
+@mercier-sperber2011 | PDF p. 10 | This same high rate of false positives was dis- counted by participants who were motivated to accept the conclusion.
+@mercier-sperber2011 | PDF p. 10 | This experiment, and many others to be reviewed in this article, demonstrate also that motivated reasoning is not mere wishful thinking (a form of thinking that, if it were common, would in any case be quite dele- terious to ﬁtness and would not be coherent with the present theory).
+@mercier-sperber2011 | PDF p. 10 | They modify their causal theories to defend some favored belief (Kunda 1987).
+@mercier-sperber2011 | PDF p. 10 | All these experiments demonstrate that people some- times look for reasons to justify an opinion they are eager to uphold.
+A @mercier-sperber2011: Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors.
+@wheeler2024 | § 1.5 | It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.
+@wheeler2024 | § 1.5 | Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.
+@wheeler2024 | § 1.5 | Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.
+@wheeler2024 | § 1.5 | Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+
+== 14-psychology-of-reasoning/why-psychology-matters-to-epistemology
+Q: How do description, normative standards, practical advice, reliability, explanation, and intervention testing differ?
+@wheeler2024 | § 1.5 | It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.
+@wheeler2024 | § 1.5 | Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.
+@wheeler2024 | § 1.5 | Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.
+@wheeler2024 | § 1.5 | Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.
+@wheeler2024 | § 2.1 | Good were each among the first to call attention to the cognitive demands of subjective expected utility theory, although neither one in his early writings abandoned the principle of expected utility as the normative standard for rational choice.
+@wheeler2024 | § 2.1 | So reasoning judged deficient without considering the associated costs may be found meritorious once all those costs are accounted for—a conclusion that a range of authors endorsed, including Amos Tversky: It seems impossible to reach any definitive conclusions concerning human rationality in the absence of a detailed analysis of the sensitivity of the criterion and the cost involved in evaluating the alternatives.
+@wheeler2024 | § 2.1 | On this view boundedly rational agents are utility maximizers after all, once all the constraints are made clear (Arrow 2004).
+@wheeler2024 | § 2.1 | Simon’s focus on computationally efficient methods that yield solutions that are good enough contrasts with Friedman’s as if methodology, since evaluating whether a solution is “good enough”, in Simon’s terms, involves search procedures, stopping criteria, and how information is integrated in the course of making a decision.
+@wheeler2024 | § 2.1 | Simon’s question is to explain how human beings manage to solve complicated problems in an uncertain world given their meager resources.
+@wheeler2024 | § 2.1 | This approach, along with models with better predictive power, sought to more accurately reflect how decisions are made in practice.
+@wheeler2024 | § 3.1 | Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.
+@wheeler2024 | § 3.1 | For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.
+@wheeler2024 | § 3.1 | Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.
+@wheeler2024 | § 3.1 | In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.
+@wheeler2024 | § 5.1 | Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).
+@wheeler2024 | § 5.1 | Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.
+@wheeler2024 | § 5.1 | Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.
+@wheeler2024 | § 5.1 | Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).
+@wheeler2024 | § 5.1 | For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).
+@wheeler2024 | § 5.1 | Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.
+@wheeler2024 | § 5.1 | Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.
+@wheeler2024 | § 5.1 | Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.
+@wheeler2024 | § 5.1 | Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.
+@wheeler2024 | § 5.1 | More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).
+A @wheeler2024: Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes.
+@bazerman-noba | Fixing Our Decisions | Ample evidence documents that even smart people are routinely impaired by biases.
+@bazerman-noba | Fixing Our Decisions | But, preferably, System 2 logic should influence our most important decisions.
+@bazerman-noba | Fixing Our Decisions | Fortunately, it is possible to identify conditions where we rely on intuition at our peril and substitute more deliberative thought.
+@bazerman-noba | Fixing Our Decisions | Another important direction for improving decisions comes from Thaler and Sunstein’s (2008) book Nudge: Improving Decisions about Health, Wealth, and Happiness.
+@bazerman-noba | Fixing Our Decisions | When, instead, companies automatically enroll their employees in 401(k) programs and give them the opportunity to “opt out,” the net enrollment rate rises significantly.
+@bazerman-noba | Fixing Our Decisions | In contrast, changing the decision architecture to an opt-out policy improves consent rates to 85.9% to 99.98%.
+A @bazerman-noba: Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions.
+

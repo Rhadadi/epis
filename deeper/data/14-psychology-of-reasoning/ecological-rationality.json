@@ -1,0 +1,180 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "ecological-rationality",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "Which environmental regularities, algorithmic rules, costs, and outcome standards determine a procedure’s fit?"
+  ],
+  "sources": [
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "A rule and the world it uses",
+        "Make the algorithm inspectable",
+        "Simplicity and prediction",
+        "Rationality does not mean whatever happens",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.",
+          "corpus_chunk": 44989
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.",
+          "corpus_chunk": 44990
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.",
+          "corpus_chunk": 44991
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.",
+          "corpus_chunk": 44992
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "In a similar fashion, a decision-making environment might be more favorable for one decision-making strategy than to another.",
+          "corpus_chunk": 45021
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Unsurprisingly, people who draw the correct inferences about the true causal model do better than those who infer the wrong causal model (Meder, Mayrhofer, and Waldmann 2014).",
+          "corpus_chunk": 45022
+        },
+        {
+          "locator": "§ 3",
+          "basis": "full text",
+          "excerpt": "Finally, we review the bias-variance trade-off, which is frequently mentioned in the Fast and Frugal Heuristics literature (section 5.2).",
+          "corpus_chunk": 45023
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.",
+          "corpus_chunk": 45024
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.",
+          "corpus_chunk": 45025
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.",
+          "corpus_chunk": 45026
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.",
+          "corpus_chunk": 45027
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The bias-variance trade-off refers to a particular decomposition of overall prediction error for an estimator into its central tendency (bias) and dispersion (variance).",
+          "corpus_chunk": 45043
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The bias-variance decomposition highlights a trade-off between two extreme approaches to making a prediction (see the (supplement on the bias-variance decomposition).",
+          "corpus_chunk": 45044
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Since you do not know the true function \\(r(X)\\) and only have a sample data set \\(\\mathcal{D}\\), you will aspire to construct an estimator that ideally generalizes to new, unseen data.",
+          "corpus_chunk": 45045
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "The problem is to strike a balance between an underfitting model, which erroneously ignores available information about the true function r, and an overfitting model, which erroneously includes information that is noise and thus gives misleading information about the true function r.",
+          "corpus_chunk": 45046
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "What teenagers learn as children about the world through play and observing other people drive lends to them an understanding that utility poles are to be steered around, a piece of commonsense that our current machine learning systems do not have but must learn from scratch on a case-by-case basis.",
+          "corpus_chunk": 45047
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "Indeed, Gigerenzer and Brighton make a stronger argument, stating that “the bias-variance dilemma shows formally why a mind can be better off with an adaptive toolbox of biased, specialized heuristics” (Gigerenzer & Brighton 2009: 120); see also section 5.2.",
+          "corpus_chunk": 45048
+        },
+        {
+          "locator": "§ 3.5",
+          "basis": "full text",
+          "excerpt": "In fact, for 0-1 loss, bias and variance combine multiplicatively (J.",
+          "corpus_chunk": 45048
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Fast and Frugal school and the Biases and Heuristics school both agree that heuristics are biased.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "This general goal of the Fast and Frugal program leads to a second difference between the two schools.",
+          "corpus_chunk": 45083
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "For example, Take-the-Best (Gigerenzer & Goldstein 1996), is a heuristic applied to binary, forced-choice problems.",
+          "corpus_chunk": 45084
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "If all cues fail to discriminate, that is, if all cue values are the same, then predict the alternative randomly by a coin flip.",
+          "corpus_chunk": 45086
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Because Fast and Frugal heuristics are computational models, this leads to a third difference between the two schools.",
+          "corpus_chunk": 45087
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "The Linear Optical Trajectory (LOT) heuristic (McBeath, Shaffer, & Kaiser 1995) that baseball players use intuitively, without deliberation, to catch fly balls, and which some animals appear to use to intercept prey, is the same heuristic that the “Miracle on the Hudson” airline pilots used deliberatively to infer that they could not reach an airport runway and decided instead to land their crippled plane in the Hudson river.",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "People have a strong tendency to imitate the successful members of their communities (Henrich & Gil-White 2001).",
+          "corpus_chunk": 45088
+        },
+        {
+          "locator": "§ 5.2",
+          "basis": "full text",
+          "excerpt": "Search available options and choose the first one that exceeds your aspiration level.",
+          "corpus_chunk": 45089
+        }
+      ],
+      "annotation": "Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "why-psychology-matters-to-epistemology",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do description, normative standards, practical advice, reliability, explanation, and intervention testing differ?"
+  ],
+  "sources": [
+    {
+      "key": "wheeler2024",
+      "used_for": [
+        "A standard and a way to meet it",
+        "What reliability asks",
+        "An error and its explanation",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "It is common to distinguish how people actually render judgements or make decisions from how they should ideally do so.",
+          "corpus_chunk": 44989
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Alternative standards include Robinson’s induction-free fragment of Peano arithmetic (Tarski, Mostowski, and Robinson 1953) and various systems of cardinal arithmetic in the hierarchy for large cardinals.",
+          "corpus_chunk": 44990
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Finally, consider developing a pedagogy for teaching cardinal arithmetic to children, based on an effective method for teaching arithmetic.",
+          "corpus_chunk": 44991
+        },
+        {
+          "locator": "§ 1.5",
+          "basis": "full text",
+          "excerpt": "Separating the choice of a normative standard from the evaluation or description of behavior is crucial for avoiding misunderstandings in discussions of bounded rationality.",
+          "corpus_chunk": 44992
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Good were each among the first to call attention to the cognitive demands of subjective expected utility theory, although neither one in his early writings abandoned the principle of expected utility as the normative standard for rational choice.",
+          "corpus_chunk": 44995
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "So reasoning judged deficient without considering the associated costs may be found meritorious once all those costs are accounted for—a conclusion that a range of authors endorsed, including Amos Tversky: It seems impossible to reach any definitive conclusions concerning human rationality in the absence of a detailed analysis of the sensitivity of the criterion and the cost involved in evaluating the alternatives.",
+          "corpus_chunk": 44996
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "On this view boundedly rational agents are utility maximizers after all, once all the constraints are made clear (Arrow 2004).",
+          "corpus_chunk": 44997
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Simon’s focus on computationally efficient methods that yield solutions that are good enough contrasts with Friedman’s as if methodology, since evaluating whether a solution is “good enough”, in Simon’s terms, involves search procedures, stopping criteria, and how information is integrated in the course of making a decision.",
+          "corpus_chunk": 44998
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "Simon’s question is to explain how human beings manage to solve complicated problems in an uncertain world given their meager resources.",
+          "corpus_chunk": 44998
+        },
+        {
+          "locator": "§ 2.1",
+          "basis": "full text",
+          "excerpt": "This approach, along with models with better predictive power, sought to more accurately reflect how decisions are made in practice.",
+          "corpus_chunk": 45000
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Simon thought that both behavioral constraints and environmental structure ought to figure in a theory of bounded rationality, yet he cautioned against identifying behavioral and environmental properties with features of an organism and features of its physical environment, respectively: what we call “the environment” may lie, in part, within the skin of the biological organisms.",
+          "corpus_chunk": 45024
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "For example, one computational approach to bounded rationality, computational rationality theory (Lewis, Howes, and Singh 2014), classifies the cost to an organism of executing an optimal program as a behavioral constraint, classifies limits on memory as an environmental constraint, and treats the costs associated with searching for an optimal program to execute as exogenous.",
+          "corpus_chunk": 45025
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "Signal processing methods typically presume the sharp distinction between device and world that Simon cautioned against adopting, however.",
+          "corpus_chunk": 45026
+        },
+        {
+          "locator": "§ 3.1",
+          "basis": "full text",
+          "excerpt": "In doing so theories of bounded rationality have traditionally focused on at least some of the following features, under this rough classification: Behavioral Constraints—may refer to bounds on computation, such as the cost of searching the best algorithm to run, an appropriate rule to apply, or a satisficing option to choose; the cost of executing an optimal algorithm, appropriate rule, or satisficing choice; and costs of storing the data structure of an algorithm, the constitutive elements of a rule, or the objects of a decision problem.",
+          "corpus_chunk": 45027
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Beginning in the 1970s, Kahneman and Tversky conducted a series of experiments showing various ways that human participants’ responses to decision tasks deviate from answers purportedly derived from the appropriate normative standards (sections 2.4 and 5.1).",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Tversky’s Taxi-cab problem, which purports to show that subjects neglect base rates: A cab was involved in a hit-and-run accident at night.",
+          "corpus_chunk": 45073
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Thus, the intuitive judgment of probability coincides with the credibility of the witness and ignores the relevant base-rate, i.e., the relative frequency of Green and Blue cabs.",
+          "corpus_chunk": 45075
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Other cognitive biases have been ensnared in the replication crises (Camerer, et al. 2018; Wiggins and Christopherson 2019), such as implicit bias (Oswald, Mitchell, et al. 2013; Forscher, Lai et al. 2017) and social priming (Doyen, Klein, et al. 2012; Kahneman 2017 [Other Internet Resources]).",
+          "corpus_chunk": 45076
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "For example, consider the systematic biases in people’s perception of randomness reported in some of Kahneman and Tversky’s earliest work (Kahneman & Tversky 1972).",
+          "corpus_chunk": 45077
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Specifically, people only ever experience finite sequence of outputs from a randomizer, such as a sequence of fair coin tosses, and the limits to their memory (section 5.1) of past outcomes in a sequence will mean that not all possible sequences of a given length with appear to them with equal probability.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Consider also the risky-choice framing effect that was mentioned briefly in section 2.4.",
+          "corpus_chunk": 45078
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Furthermore, the use of an indicative conditional in this and other experiments to express the consequences is also not adequately understood.",
+          "corpus_chunk": 45080
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "Lastly, the third type of response is to accept the experimental results but challenge the claim that they are generalizable.",
+          "corpus_chunk": 45081
+        },
+        {
+          "locator": "§ 5.1",
+          "basis": "full text",
+          "excerpt": "More generally, a majority of people presented with the Linda example appear to interpret ‘probability’ non-mathematically but switch to a mathematical interpretation when asked for frequency judgments (Hertwig & Gigerenzer 1999).",
+          "corpus_chunk": 45082
+        }
+      ],
+      "annotation": "Secondary account distinguishes description, standards, advice, resource limits, task interpretation, environmental fit, and two heuristic research programmes."
+    },
+    {
+      "key": "bazerman-noba",
+      "used_for": [
+        "Testing the remedy",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Ample evidence documents that even smart people are routinely impaired by biases.",
+          "corpus_chunk": 52474
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "But, preferably, System 2 logic should influence our most important decisions.",
+          "corpus_chunk": 52475
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Fortunately, it is possible to identify conditions where we rely on intuition at our peril and substitute more deliberative thought.",
+          "corpus_chunk": 52475
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "Another important direction for improving decisions comes from Thaler and Sunstein’s (2008) book Nudge: Improving Decisions about Health, Wealth, and Happiness.",
+          "corpus_chunk": 52477
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "When, instead, companies automatically enroll their employees in 401(k) programs and give them the opportunity to “opt out,” the net enrollment rate rises significantly.",
+          "corpus_chunk": 52478
+        },
+        {
+          "locator": "Fixing Our Decisions",
+          "basis": "full text",
+          "excerpt": "In contrast, changing the decision architecture to an opt-out policy improves consent rates to 85.9% to 99.98%.",
+          "corpus_chunk": 52478
+        }
+      ],
+      "annotation": "Freely licensed introductory psychology module; provides a secondary account of System 1/System 2, framing, anchoring, and decision interventions."
+    }
+  ]
+}

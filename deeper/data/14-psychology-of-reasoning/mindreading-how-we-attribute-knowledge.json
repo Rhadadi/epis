@@ -1,0 +1,83 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "mindreading-how-we-attribute-knowledge",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do perspective, projection, access, uptake and explicit mental-state inference contribute to epistemic attribution?"
+  ],
+  "sources": [
+    {
+      "key": "malle-noba",
+      "used_for": [
+        "Two informational positions",
+        "Projection can be useful and misleading",
+        "Shared attention is another contribution",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "Explicit Mental State Inference",
+          "basis": "full text",
+          "excerpt": "The ability to truly take another person’s perspective requires that we separate what we want, feel, and know from what the other person is likely to want, feel, and know.",
+          "corpus_chunk": 52509
+        },
+        {
+          "locator": "Explicit Mental State Inference",
+          "basis": "full text",
+          "excerpt": "The child is shown a picture story of Sally, who puts her ball in a basket and leaves the room.",
+          "corpus_chunk": 52510
+        },
+        {
+          "locator": "Explicit Mental State Inference",
+          "basis": "full text",
+          "excerpt": "But people need to recognize when to step out of their own perspective and truly represent the other person’s perspective—which may harbor very different thoughts, feelings, and intentions.",
+          "corpus_chunk": 52511
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "One of the most fascinating human capacities is the ability to perceive and interpret other people’s behavior in terms of their mental states.",
+          "corpus_chunk": 52491
+        },
+        {
+          "locator": "Introduction",
+          "basis": "full text",
+          "excerpt": "And what is known about the mental processes that underlie such understanding?",
+          "corpus_chunk": 52491
+        },
+        {
+          "locator": "Joint Attention, Visual Perspective Taking",
+          "basis": "full text",
+          "excerpt": "Going beyond the automatic, humans are capable of actively engaging with other people’s mental states, such as when they enter into situations of joint attention—like Marissa and Noah, who are each looking at an object and are both aware that each of them is looking at the object.",
+          "corpus_chunk": 52504
+        },
+        {
+          "locator": "Joint Attention, Visual Perspective Taking",
+          "basis": "full text",
+          "excerpt": "I then say it’s called “Tastatur” in German, you know that I am referring to the keyboard and not to the table on which it had been resting.",
+          "corpus_chunk": 52504
+        },
+        {
+          "locator": "Projection, Simulation (and the Specter of Egocentrism)",
+          "basis": "full text",
+          "excerpt": "When imagining what it might be like to be in another person’s psychological position, humans have to go beyond mental rotation.",
+          "corpus_chunk": 52506
+        },
+        {
+          "locator": "Projection, Simulation (and the Specter of Egocentrism)",
+          "basis": "full text",
+          "excerpt": "Let’s say you know that Brianna doesn’t like Fred’s new curtains, but you hear her exclaim to Fred, “These are beautiful!” Now you have to predict whether Fred can figure out that Brianna was being sarcastic.",
+          "corpus_chunk": 52507
+        },
+        {
+          "locator": "Projection, Simulation (and the Specter of Egocentrism)",
+          "basis": "full text",
+          "excerpt": "And though they often do so correctly, they also get things wrong at times.",
+          "corpus_chunk": 52508
+        }
+      ],
+      "annotation": "Freely licensed overview distinguishes mentalising components, perspective, projection, and explicit mental-state inference; reviewed experiments are secondary readings."
+    }
+  ]
+}

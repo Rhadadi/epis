@@ -1,0 +1,213 @@
+{
+  "chapter": "14-psychology-of-reasoning",
+  "section": "the-argumentative-theory-of-reasoning",
+  "updated": "2026-10-02",
+  "method": "Questions were researched with an evidence-only retrieval tool over one corpus of open-access and public-domain texts (see corpus.json). Each excerpt was checked word for word against the corpus passage it cites when this file was written; corpus_chunk numbers that passage in the corpus snapshot of 2026-10-02.",
+  "questions": [
+    "How do argument production/evaluation, present performance, and a historical function hypothesis differ?"
+  ],
+  "sources": [
+    {
+      "key": "mercier-sperber2011",
+      "used_for": [
+        "Two roles in an exchange",
+        "Production is not evaluation",
+        "From present performance to historical function",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 1",
+          "basis": "full text",
+          "excerpt": "Arguments for an argumentative theory Hugo Mercier Philosophy, Politics and Economics Program, University of Pennsylvania, Philadelphia, PA 19104 hmercier@sas.upenn.edu http: //sites.google.com/site/hugomercier/ Dan Sperber Jean Nicod Institute (EHESS-ENS-CNRS), 75005 Paris, France; Department of Philosophy, Central European University, Budapest, Hungary dan@sperber.fr http: //www.dan.sperber.fr Abstract: Reasoning is generally seen as a means to improve knowledge and make better decisions.",
+          "corpus_chunk": 52621
+        },
+        {
+          "locator": "PDF p. 1",
+          "basis": "full text",
+          "excerpt": "Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation.",
+          "corpus_chunk": 52621
+        },
+        {
+          "locator": "PDF p. 1",
+          "basis": "full text",
+          "excerpt": "Proactively used reasoning also favors decisions that are easy to justify but not necessarily better.",
+          "corpus_chunk": 52622
+        },
+        {
+          "locator": "PDF p. 1",
+          "basis": "full text",
+          "excerpt": "It is at work not only in conceptual thinking but also in percep- tion and in motor control (Kersten et al. 2004; Wolpert & Kawato 1998).",
+          "corpus_chunk": 52624
+        },
+        {
+          "locator": "PDF p. 1",
+          "basis": "full text",
+          "excerpt": "These two questions are mutually relevant, since the mechanisms for reasoning should be adjusted to its function.",
+          "corpus_chunk": 52624
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "According to a long philosophical tradition, reasoning is what enables the human mind to go beyond mere perception, habit, and instinct.",
+          "corpus_chunk": 52626
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Intuitive inference and argument Since the 1960s, much work in the psychology of reasoning has suggested that, in fact, humans reason rather poorly, failing at simple logical tasks (Evans 2002), committing egregious mistakes in probabilistic reasoning (Kahneman & Tversky 1972; Tversky & Kahneman 1983), and being subject to sundry irrational biases in decision making (Kahneman et al. 1982).",
+          "corpus_chunk": 52628
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Here we outline our own dual-process approach: We contend in particular that the arguments used in reasoning are the output of a mechanism of intuitive inference (Mercier & Sperber 2009; Sperber 1997; 2001).",
+          "corpus_chunk": 52629
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "The inferential pro- cesses carried out by these mechanisms are unconscious: They are not mental acts that individuals decide to perform, but processes that take place inside their brain, at a “sub-personal” level (in the sense of Dennett 1969).",
+          "corpus_chunk": 52630
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "Such beliefs, held with awareness of one’s reasons to hold them, are better described not as intuitive but as reﬂective beliefs (Sperber 1997).",
+          "corpus_chunk": 52631
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "We suggest, however, that arguments exploited in reasoning are the output of an intuitive infer- ential mechanism.",
+          "corpus_chunk": 52631
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "In particular, humans have a mechanism for representing mental representations and for drawing intuitive inferences about them.",
+          "corpus_chunk": 52632
+        },
+        {
+          "locator": "PDF p. 2",
+          "basis": "full text",
+          "excerpt": "An inference is a process the output of which is a representation.",
+          "corpus_chunk": 52633
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "BEHAVIORAL AND BRAIN SCIENCES (2011) 34:2 61 Hahn 2004; Rips 2002).",
+          "corpus_chunk": 52659
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "After being left to think for a few minutes, they had to state and defend their view to the experimenter.",
+          "corpus_chunk": 52661
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "In a normal argumentative setting, a good argument is an argument that is not refuted.",
+          "corpus_chunk": 52662
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "For these two authors, and indeed the critical thinking tra- dition, this is a very serious failing.",
+          "corpus_chunk": 52662
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "Indeed, when mock jurors were asked to reach a verdict and were then presented with an alterna- tive verdict, nearly all of them were able to ﬁnd counterar- guments against it (Kuhn et al. 1994).",
+          "corpus_chunk": 52664
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "Participants . . . appear to build complex arguments and attack structure.",
+          "corpus_chunk": 52664
+        },
+        {
+          "locator": "PDF p. 6",
+          "basis": "full text",
+          "excerpt": "Many types of tasks have been studied in group settings, with very mixed results (for recent reviews, 4 see Kerr & Tindale 2004; Kerr et al. 1996).",
+          "corpus_chunk": 52666
+        }
+      ],
+      "annotation": "Author-hosted original target article supplies the argumentative hypothesis and a secondary review of earlier experiments on argument production, motivated reasoning, assimilation, and perseverance; accompanying commentaries are not attributed to the target authors."
+    },
+    {
+      "key": "mellers-etal2014",
+      "used_for": [
+        "The group must permit the correction",
+        "Where to go next"
+      ],
+      "evidence": [
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Each group recruited participants to forecast events and devised unique methods to elicit and combine multiple opinions.",
+          "corpus_chunk": 52409
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Promising approaches include statistical training (Fong, Nisbett, & Krantz, 1986), feedback (Benson & Onkal, 1992), expo- sure to multiple perspectives (Ariely et al., 2000; Herzog & Hertwig, 2009), exposure to historical analogies (Lovallo, Clarke, & Camerer, 2012), decomposition of the problem into subsets (Fischhoff, Slovic, & Lichtenstein, 1978), and explicit consideration of contradictory evi- dence (Koriat, Lichtenstein, & Fischhoff, 1980).",
+          "corpus_chunk": 52411
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "Scenario training taught forecasters to generate new futures, actively entertain more possibilities, use decision trees, and avoid biases such as overpredicting change, creating incoherent scenarios, or assigning probabilities exceed- ing 1.0 to mutually exclusive and exhaustive outcomes.",
+          "corpus_chunk": 52412
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "When one has access to many people who make forecasts, how should those people interact in order to generate the most accurate aggregations of predictions?",
+          "corpus_chunk": 52413
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "When the benefits of group interaction exceed the costs, forecasters should work in teams.",
+          "corpus_chunk": 52413
+        },
+        {
+          "locator": "PDF p. 3",
+          "basis": "full text",
+          "excerpt": "These approaches stake out extreme positions on the continuum of independence and interdependence.",
+          "corpus_chunk": 52414
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "If the event did not occur, the Brier score would be (.9 − 0)2 + (.1 − 1)2, which equals 1.62.",
+          "corpus_chunk": 52423
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "Participants were encouraged to return to the Web site and update their prediction until the question closed.",
+          "corpus_chunk": 52424
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "These rules differ in how severely they penalize extreme overconfidence, with the spherical rule being the most lenient, the logarithmic rule the most punitive, and the Brier scale intermediate.",
+          "corpus_chunk": 52425
+        },
+        {
+          "locator": "PDF p. 5",
+          "basis": "full text",
+          "excerpt": "In Year 2, accuracy was better among partici- pants with probability training than among those with no training, F(1, 882) = 19.12, p < .001.",
+          "corpus_chunk": 52426
+        }
+      ],
+      "annotation": "Original open study of a two-year forecasting tournament; supports design, scoring, training and teaming comparisons, and performance-selected elite groups, with selection and transfer limits explicit."
+    }
+  ]
+}
