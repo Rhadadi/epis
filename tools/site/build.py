@@ -728,11 +728,11 @@ def label(art, key):
     sep = L(", ", "، ")
     place = f"{sep}{esc(i['place'])}" if i.get("place") else ""
     source = art.credits.get(key, {}).get("source")
-    source_label = L("Original image and source details (opens in a new tab)",
-                     "تصویر اصلی و اطلاعات منبع (در زبانهٔ جدید)")
+    source_label = L("View artwork source and full-resolution image (opens in a new tab)",
+                     "مشاهدهٔ منبع تصویر و نسخهٔ باکیفیت (در زبانهٔ جدید)")
     source_link = (f' <a class="art-source" href="{attr(source)}" target="_blank" rel="noopener noreferrer" '
                    f'aria-label="{attr(source_label)}" title="{attr(source_label)}">'
-                   f'{L("Original image", "تصویر اصلی")} {icon("ext")}</a>') if source else ""
+                   f'{icon("ext")}</a>') if source else ""
     return (f'<div class="art-label"><span class="kicker">{L("On the cover", "روی جلد")}</span>'
             f'<p><cite>{art.caption(key)}{place}.</cite> {esc(i["note"])}{source_link}</p></div>')
 

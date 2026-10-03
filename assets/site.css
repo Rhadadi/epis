@@ -136,11 +136,10 @@ html[dir="rtl"] .skip{left:auto;right:8px}
 .art-label .kicker{color:var(--accent);font-size:.66rem;padding-top:.35em;white-space:nowrap}
 .art-label p{margin:0;font-style:italic;max-width:62rem}
 .art-label cite{font-style:normal;color:var(--ink-2)}
-.art-source{display:inline-flex;align-items:center;gap:.25em;min-height:32px;margin-inline-start:.5em;
-  font-family:var(--sans);font-size:.82rem;font-style:normal;white-space:nowrap;color:var(--teal);
-  text-decoration:underline;text-underline-offset:.18em}
+.art-source{display:inline-flex;align-items:center;justify-content:center;width:32px;min-height:32px;
+  margin-inline-start:.2em;vertical-align:middle;color:var(--teal);text-decoration:none}
 .art-source:hover{color:var(--ink)}
-.art-source .icon{width:13px;height:13px;flex:none}
+.art-source .icon{width:15px;height:15px;flex:none}
 .art-source:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 @media(max-width:600px){.art-label{grid-template-columns:1fr}}
 
