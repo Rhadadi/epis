@@ -1583,11 +1583,11 @@
       "chapter": 2,
       "chapterTitle": "تاریخِ نظریهٔ معرفت",
       "url": "fa/guide/02-history-of-epistemology.html#ancient-greece",
-      "minutes": 10,
+      "minutes": 11,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/ancient-greece.html",
-        "minutes": 9,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/ancient-greece.html",
+        "minutes": 11,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1599,9 +1599,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#epistemology-in-india",
       "minutes": 4,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/epistemology-in-india.html",
+        "url": "fa/deeper/02-history-of-epistemology/epistemology-in-india.html",
         "minutes": 4,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1613,9 +1613,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#epistemology-in-the-islamic-world",
       "minutes": 3,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/epistemology-in-the-islamic-world.html",
-        "minutes": 16,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/epistemology-in-the-islamic-world.html",
+        "minutes": 18,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1627,9 +1627,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#epistemology-in-china",
       "minutes": 2,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/epistemology-in-china.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/epistemology-in-china.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1641,9 +1641,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#medieval-and-renaissance-europe",
       "minutes": 3,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/medieval-and-renaissance-europe.html",
-        "minutes": 5,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/medieval-and-renaissance-europe.html",
+        "minutes": 6,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1655,9 +1655,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#the-early-modern-revolution",
       "minutes": 14,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/the-early-modern-revolution.html",
-        "minutes": 9,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/the-early-modern-revolution.html",
+        "minutes": 11,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1669,9 +1669,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#the-nineteenth-century",
       "minutes": 5,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/the-nineteenth-century.html",
-        "minutes": 4,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/the-nineteenth-century.html",
+        "minutes": 5,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1683,9 +1683,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#the-twentieth-century",
       "minutes": 8,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/the-twentieth-century.html",
-        "minutes": 5,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/the-twentieth-century.html",
+        "minutes": 6,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1697,9 +1697,9 @@
       "url": "fa/guide/02-history-of-epistemology.html#contemporary-directions",
       "minutes": 2,
       "deep": {
-        "url": "deeper/02-history-of-epistemology/contemporary-directions.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/02-history-of-epistemology/contemporary-directions.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
