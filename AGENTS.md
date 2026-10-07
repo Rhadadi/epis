@@ -4,6 +4,8 @@ This repository is *Mastering Epistemology*, a bilingual guide published at http
 
 - **Current job:** writing the Deeper study pages for chapters 5–16. Read `deeper/HANDOFF.md` (workflow, setup,
   rules, remaining sections) and `deeper/README.md` (page format) before changing anything.
+- **Children's section** (`kids/`, published at /kids/ and /fa/kids/): read `kids/STYLE.md` first; `tools/kids/check.py` runs in
+  `tools/deeper/check.sh`.
 - **Branch:** `claude/epistemology-learning-guide-s6zuob`. Fetch and merge; never rebase or force-push. No pull
   request unless asked.
 - **Never edit** the narrated chapters (`guide/NN-*.md`, `guide/fa/`, audio). `python3 tools/site/frozen.py`

@@ -1,0 +1,30 @@
+{
+  "quests": [
+    {"id": "knowing", "n": 1, "title": "Knowing", "blurb": "What it means to know something, and where knowing comes from.",
+     "fa": {"title": "دانستن", "blurb": "دانستن یعنی چه، و دانسته‌های ما از کجا می‌آیند."}},
+    {"id": "tools", "n": 2, "title": "Thinking tools", "blurb": "Words, reasons and the traps that trick our thinking.",
+     "fa": {"title": "ابزارهای فکر", "blurb": "واژه‌ها، دلیل‌ها، و تله‌هایی که فکرمان را گول می‌زنند."}},
+    {"id": "finding", "n": 3, "title": "Finding out", "blurb": "Patterns, chance, fair tests, and what is true for everyone.",
+     "fa": {"title": "کشف کردن", "blurb": "الگوها، احتمال، آزمایشِ منصفانه، و آنچه برای همه درست است."}},
+    {"id": "together", "n": 4, "title": "Thinking together", "blurb": "Whom to trust, checking what we see online, and good thinking habits.",
+     "fa": {"title": "با هم فکر کردن", "blurb": "به چه کسی اعتماد کنیم، وارسیِ چیزهایی که در اینترنت می‌بینیم، و عادت‌های خوبِ فکر کردن."}}
+  ],
+  "units": [
+    {"id": "u01-how-do-you-know", "n": 1, "quest": "knowing", "status": "published", "title": "How do you know?", "fa": {"title": "از کجا می‌دانی؟"}},
+    {"id": "u02-what-makes-you-say-that", "n": 2, "quest": "knowing", "status": "planned", "title": "What makes you say that?", "fa": {"title": "چرا این را می‌گویی؟"}},
+    {"id": "u03-eyes-ears-memory", "n": 3, "quest": "knowing", "status": "planned", "title": "Eyes, ears, memory and other people", "fa": {"title": "چشم، گوش، حافظه و آدم‌های دیگر"}},
+    {"id": "u04-could-i-be-dreaming", "n": 4, "quest": "knowing", "status": "planned", "title": "Could I be dreaming?", "fa": {"title": "نکند خواب باشم؟"}},
+    {"id": "u05-words-that-wobble", "n": 5, "quest": "tools", "status": "planned", "title": "Words that wobble", "fa": {"title": "واژه‌های لرزان"}},
+    {"id": "u06-because-so", "n": 6, "quest": "tools", "status": "planned", "title": "Because… so…", "fa": {"title": "چون… پس…"}},
+    {"id": "u07-thinking-traps", "n": 7, "quest": "tools", "status": "planned", "title": "Thinking traps", "fa": {"title": "تله‌های فکری"}},
+    {"id": "u08-brain-shortcuts", "n": 8, "quest": "tools", "status": "planned", "title": "My brain's shortcuts", "fa": {"title": "میان‌برهای مغزِ من"}},
+    {"id": "u09-patterns-and-predictions", "n": 9, "quest": "finding", "status": "planned", "title": "Patterns and predictions", "fa": {"title": "الگوها و پیش‌بینی‌ها"}},
+    {"id": "u10-chance", "n": 10, "quest": "finding", "status": "planned", "title": "Chance!", "fa": {"title": "احتمال!"}},
+    {"id": "u11-science-detectives", "n": 11, "quest": "finding", "status": "planned", "title": "Science detectives", "fa": {"title": "کارآگاه‌های علم"}},
+    {"id": "u12-true-for-everyone", "n": 12, "quest": "finding", "status": "planned", "title": "True for everyone?", "fa": {"title": "برای همه درست است؟"}},
+    {"id": "u13-who-can-we-trust", "n": 13, "quest": "together", "status": "planned", "title": "Who can we trust?", "fa": {"title": "به چه کسی اعتماد کنیم؟"}},
+    {"id": "u14-online-detectives", "n": 14, "quest": "together", "status": "planned", "title": "Online detectives", "fa": {"title": "کارآگاه‌های اینترنت"}},
+    {"id": "u15-good-thinking-habits", "n": 15, "quest": "together", "status": "planned", "title": "Good thinking habits", "fa": {"title": "عادت‌های خوبِ فکر کردن"}},
+    {"id": "u16-my-thinking-toolkit", "n": 16, "quest": "together", "status": "planned", "title": "My thinking toolkit", "fa": {"title": "جعبه‌ابزارِ فکرِ من"}}
+  ]
+}

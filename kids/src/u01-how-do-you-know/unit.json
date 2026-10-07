@@ -1,0 +1,23 @@
+{
+  "id": "u01-how-do-you-know",
+  "story": "shangul-mangul",
+  "adult": ["01-what-is-epistemology.md", "05-the-nature-of-knowledge.md"],
+  "shots": [
+    {"id": "s01", "art": "u01-s01", "alt": "Grandma Mehri telling a story to Ava and Nima; in the picture-book page, a mother goat and her three kids at their little house by the woods.",
+     "fa": {"alt": "مادربزرگ مهری برای آوا و نیما قصه می‌گوید؛ در صفحهٔ کتاب، بزِ مادر و سه بزغاله‌اش کنارِ خانهٔ کوچکشان در کنارِ جنگل."}},
+    {"id": "s02", "art": "u01-s02", "alt": "Mother Goat at the door, saying goodbye to her three kids before she goes to find grass.",
+     "fa": {"alt": "بزِ مادر دمِ در، پیش از رفتن برای پیدا کردنِ علف، با سه بزغاله‌اش خداحافظی می‌کند."}},
+    {"id": "s03", "art": "u01-s03", "alt": "A knock at the closed door; the three kids listen behind it, looking unsure.",
+     "fa": {"alt": "کسی به درِ بسته می‌زند؛ سه بزغاله پشتِ در گوش می‌دهند و مطمئن نیستند."}},
+    {"id": "s04", "art": "u01-s04", "alt": "A big black paw shows under the door; the kids point at it.",
+     "fa": {"alt": "یک پای بزرگ و سیاه از زیرِ در پیدا شده؛ بزغاله‌ها به آن اشاره می‌کنند."}},
+    {"id": "s05", "art": "u01-s05", "alt": "The wolf at the bakery, dipping his paws in white flour, looking sneaky.",
+     "fa": {"alt": "گرگ در نانوایی پاهایش را توی آردِ سفید می‌زند و زیرچشمی نگاه می‌کند."}},
+    {"id": "s06", "art": "u01-s06", "alt": "Little Grape stands in front of the door, holding up a hoof: \"Wait!\"",
+     "fa": {"alt": "حبه‌ی انگور جلوی در ایستاده و سمش را بالا گرفته: «صبر کنید!»"}},
+    {"id": "s07", "art": "u01-s07", "alt": "The wolf running off into the woods, grumbling, with flour still on his feet.",
+     "fa": {"alt": "گرگ غرغرکنان به جنگل فرار می‌کند و هنوز روی پاهایش آرد است."}},
+    {"id": "s08", "art": "u01-s08", "alt": "Mother Goat home again, hugging her three kids in the doorway.",
+     "fa": {"alt": "بزِ مادر برگشته و دمِ در سه بزغاله‌اش را بغل کرده است."}}
+  ]
+}

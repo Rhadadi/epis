@@ -1,0 +1,14 @@
+{
+  "shangul-mangul": {
+    "title": "Shangul, Mangul and Little Grape",
+    "tradition": "Iranian folk tale «شنگول و منگول و حبه‌ی انگور» (oral tradition); the same tale type as the Brothers Grimm's \"The Wolf and the Seven Young Kids\" (Kinder- und Hausmärchen, no. 5, 1812).",
+    "source": "https://www.gutenberg.org/ebooks/2591",
+    "source_note": "Grimms' Fairy Tales, Project Gutenberg eBook #2591 (19th-century English translation): \"The Wolf and the Seven Little Kids\" — the rough voice, the black feet, the floured paws.",
+    "public_domain": "Folk tale; the Grimm text and its 19th-century translation are in the public domain.",
+    "changes": "Retold for this site: three kids as in the Persian tale, a secret song as the final check, and a gentle ending (nobody is eaten).",
+    "verified": {"by": "Claude (text checked against the Gutenberg file)", "on": "2026-10-07"},
+    "note": "An old Iranian folk tale, also told by the Brothers Grimm as \"The Wolf and the Seven Young Kids\". We retold it with a gentler ending.",
+    "fa": {"title": "شنگول و منگول و حبه‌ی انگور",
+           "note": "قصه‌ای قدیمی و ایرانی که برادران گریم هم آن را با نامِ «گرگ و هفت بزغاله» نوشته‌اند. ما آن را با پایانی مهربان‌تر بازگو کرده‌ایم."}
+  }
+}

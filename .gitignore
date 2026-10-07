@@ -2,3 +2,6 @@ node_modules/
 .venv/
 __pycache__/
 assets/diagrams/.jobs.json
+
+# kids narration cache (generated audio segments)
+tools/kids/.eleven-kids/

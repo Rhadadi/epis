@@ -1,0 +1,13 @@
+{
+  "ava": {"name": "Ava", "fa": {"name": "آوا"}, "about": "9, curious; always asks \"How do you know?\""},
+  "nima": {"name": "Nima", "fa": {"name": "نیما"}, "about": "6, Ava's little brother; asks \"why?\""},
+  "kian": {"name": "Kian", "fa": {"name": "کیان"}, "about": "12, their neighbour; quick and very sure of himself"},
+  "grandma": {"name": "Grandma Mehri", "fa": {"name": "مادربزرگ مهری"}, "about": "tells the old stories; asks the best questions"},
+  "hudhud": {"name": "Hudhud", "fa": {"name": "هدهد"}, "about": "the hoopoe from Attar's Conference of the Birds; answers with questions"},
+  "mother": {"name": "Mother Goat", "fa": {"name": "بزِ مادر"}},
+  "wolf": {"name": "Wolf", "fa": {"name": "گرگ"}},
+  "shangul": {"name": "Shangul", "fa": {"name": "شنگول"}},
+  "mangul": {"name": "Mangul", "fa": {"name": "منگول"}},
+  "grape": {"name": "Little Grape", "fa": {"name": "حبه‌ی انگور"}},
+  "kids": {"name": "The kids", "fa": {"name": "بزغاله‌ها"}}
+}
