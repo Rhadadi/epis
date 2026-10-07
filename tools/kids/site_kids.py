@@ -64,7 +64,7 @@ def build(b, art, md):
             story_html = render_story(b, uid, meta, st, sync, root)
             switch = level_switch(b, level)
             pager = unit_pager(b, prev_u, next_u, level, lang)
-            body = (f'<main id="main" class="kmain"><header class="khead">'
+            body = (f'<main id="main" class="kmain kunit q{quest["n"]}"><header class="khead kband">{HUDHUD}'
                     f'<p class="kicker">{L("Quest", "ماجرای")} {num(quest["n"])} · {esc(quest["title"])} · {L("Unit", "درس")} {num(u["n"])}</p>'
                     f'<h1>{esc(title_u)}</h1>{switch}'
                     f'<p class="kstars" data-unit="{uid}" data-level="{level}" aria-live="polite"></p></header>'
@@ -217,7 +217,7 @@ def render_story(b, uid, meta, st, sync, root):
     if sync:
         audio = (f'<div class="kplayer" data-audio="{root}assets/kids/audio/{esc(sync["file"])}">'
                  f'<button type="button" class="kplay" aria-pressed="false">{L("Listen to the story", "قصه را گوش کن")}</button>'
-                 f'<span class="kdur">{b.mmss(sync.get("duration", 0))}</span></div>')
+                 f'<span class="kdur">{b.num(b.mmss(sync.get("duration", 0)))}</span></div>')
     source = K.read_json(K.KIDS / "stories.json").get(meta["story"], {})
     note = K.pick(source, lang).get("note", "") if source else ""
     return (f'<section class="kstory" id="story" aria-labelledby="story-h"><h2 id="story-h"><span class="kicker">{L("The story", "قصه")}</span>'
@@ -330,13 +330,26 @@ def unit_pager(b, prev_u, next_u, level, lang):
     return f'<nav class="kpager">{"".join(cells)}</nav>'
 
 
+HUDHUD = ('<svg class="hudhud" viewBox="0 0 120 120" aria-hidden="true">'
+          '<path d="M52 30 L40 6 L50 26 L44 2 L56 24 L56 0 L62 26 L70 6 L66 30Z" fill="#F08A24"/>'
+          '<path d="M44 8 l3 6M51 4 l2 6M58 2 l1 7M67 8 l-3 6" stroke="#1B2730" stroke-width="3" stroke-linecap="round"/>'
+          '<ellipse cx="60" cy="76" rx="32" ry="30" fill="#F4A64A"/>'
+          '<path d="M38 70 Q60 64 86 78 Q78 100 52 98 Q40 92 38 70Z" fill="#1B2730"/>'
+          '<path d="M44 76h34M46 84h30M50 92h22" stroke="#fff" stroke-width="4" stroke-linecap="round"/>'
+          '<circle cx="58" cy="44" r="20" fill="#F8B865"/>'
+          '<circle cx="64" cy="40" r="7" fill="#fff"/><circle cx="66" cy="40" r="3.6" fill="#1B2730"/><circle cx="67.2" cy="38.8" r="1.2" fill="#fff"/>'
+          '<path d="M76 46 Q98 50 112 64 Q94 56 76 52Z" fill="#5A3A1E"/>'
+          '<circle cx="52" cy="50" r="3.5" fill="#F37A8B" opacity=".6"/>'
+          '<path d="M50 104l-4 12M66 104l4 12" stroke="#5A3A1E" stroke-width="4" stroke-linecap="round"/></svg>')
+
 QUESTIONS = [("What exactly is being said?", "دقیقاً چه گفته می‌شود؟"), ("How do they know?", "از کجا می‌داند؟"),
              ("What else could explain it?", "چه توضیحِ دیگری ممکن است؟"), ("How sure should I be?", "چقدر باید مطمئن باشم؟")]
 
 
 def home_body(b, data, quests):
     L, num, lang = b.L, b.num, b.LANG
-    qs = "".join(f'<li><b>{num(i)}</b>{L(en, fa)}</li>' for i, (en, fa) in enumerate(QUESTIONS, 1))
+    hello = L("Hi! I'm Hudhud. Let's find out how we know things!", "سلام! من هدهدم. بیا با هم بفهمیم از کجا چیزها را می‌دانیم!")
+    qs = "".join(f'<li class="kq{i}"><b>{num(i)}</b><span>{L(en, fa)}</span></li>' for i, (en, fa) in enumerate(QUESTIONS, 1))
     rows = []
     for q in data["quests"]:
         qq = K.pick(q, lang)
@@ -350,7 +363,8 @@ def home_body(b, data, quests):
                 stops.append(f'<li class="kstop"><span class="soon"><b>{num(u["n"])}</b><span>{t}</span><i>{L("coming soon", "به‌زودی")}</i></span></li>')
         rows.append(f'<section class="kquest q{q["n"]}"><h3><span class="kicker">{L("Quest", "ماجرای")} {num(q["n"])}</span>{esc(qq["title"])}</h3>'
                     f'<p>{esc(qq.get("blurb", ""))}</p><ol class="ktrail">{"".join(stops)}</ol></section>')
-    return (f'<main id="main" class="kmain khome"><header class="khero"><h1>{L("How do you know?", "از کجا می‌دانی؟")}</h1>'
+    return (f'<main id="main" class="kmain khome"><header class="khero"><div class="kblobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>'
+            f'<div class="khero-mascot">{HUDHUD}<p class="kbubble">{hello}</p></div><h1>{L("How do you know?", "از کجا می‌دانی؟")}</h1>'
             f'<p class="kdek">{L("Stories, games and puzzles about the biggest little question in the world.", "قصه، بازی و معما دربارهٔ کوچک‌ترین سؤالِ بزرگِ دنیا.")}</p>'
             f'<div class="kchoose" role="group" aria-label="{L("Choose your level", "سطحت را انتخاب کن")}">'
             f'<button type="button" data-set-level="explorers"><b>{L("Explorers", "کاوشگرها")}</b><span>{L("ages 7–10", "۷ تا ۱۰ سال")}</span></button>'
@@ -358,7 +372,7 @@ def home_body(b, data, quests):
             f'<p class="ktotal" aria-live="polite"></p></header>'
             f'<section class="kfour"><h2>{L("The detective questions", "سؤال‌های کارآگاهی")}</h2><ol>{qs}</ol></section>'
             f'<section class="kmap"><h2>{L("Your quests", "ماجراهای تو")}</h2>{"".join(rows)}</section>'
-            f'<p class="kmore"><a href="words/">{L("Picture dictionary", "واژه‌نامهٔ تصویری")}</a> · <a href="books/">{L("Book club", "باشگاهِ کتاب")}</a> · '
+            f'<p class="kmore"><a href="words/">{L("Picture dictionary", "واژه‌نامهٔ تصویری")}</a><a href="books/">{L("Book club", "باشگاهِ کتاب")}</a>'
             f'<a href="grownups/">{L("For grown-ups", "برای بزرگ‌ترها")}</a></p></main>')
 
 
