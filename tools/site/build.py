@@ -1289,7 +1289,7 @@ def build_map(C, chapters, md, art):
     sections, at, owner = [], {}, {}
     for n in sorted(outline):
         ch = chapters[n]
-        pages = DEEP.get(ch.slug, {}) if lang == "en" else {}
+        pages = (DEEP_FA if lang == "fa" else DEEP).get(ch.slug, {})
         cur = None
         for level, slug, plain in outline[n]:
             if level == 2:
@@ -1418,7 +1418,7 @@ def build_map(C, chapters, md, art):
                     "h": f"../guide/{ch.href}", "img": f"{root}assets/art/{ch.art}-dot.jpg", "im": art.src(ch.art, root, 640),
                     "b": plain_inline(md, ch.blurb) if ch.blurb else "", "m": ch.minutes, "slug": ch.slug,
                     "a": round(ch.track["duration"] / 60) if ch.track else 0,
-                    "dp": f"../deeper/{ch.slug}/" if lang == "en" and DEEP.get(ch.slug) else "",
+                    "dp": f"../deeper/{ch.slug}/" if (DEEP_FA if lang == "fa" else DEEP).get(ch.slug) else "",
                     "rv": f"../review/#{ch.slug}" if questions.get(n) else ""})
     parts = [{"r": r, "t": L(name, PARTS_FA[r][1]), "l": L(f"Part {r}", f"بخشِ {PARTS_FA[r][0]}"), "ch": nums}
              for r, name, nums in PARTS if r]
@@ -2688,6 +2688,7 @@ def build_offline_list():
     for base in ("", "fa/"):
         paths += sorted(f"{base}guide/listen/{p.name}" for p in (ROOT / base / "guide" / "listen").glob("*.html"))
     paths += sorted(f"deeper/{p.relative_to(ROOT / 'deeper').as_posix()}" for p in (ROOT / "deeper").glob("**/*.html"))
+    paths += sorted(f"fa/deeper/{p.relative_to(ROOT / 'fa' / 'deeper').as_posix()}" for p in (ROOT / "fa" / "deeper").glob("**/*.html"))
     paths += sorted(f"assets/fonts/{p.name}" for p in (ASSETS / "fonts").glob("*.woff2"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-640.jpg"))
     paths += sorted(f"assets/art/{p.name}" for p in ART_DIR.glob("*-dot.jpg"))
@@ -2886,7 +2887,8 @@ def build_epub(chapters, art):
 # a page; the link is added here, never in the Markdown.
 DEEPER = ROOT / "deeper"
 DEEPER_DRAFTS = os.environ.get("EPIS_DEEPER_DRAFTS") == "1"  # build drafts too, for a local preview
-DEEP = {}  # chapter slug -> {section id: page} (English only)
+DEEP = {}  # chapter slug -> {section id: page}, the English pages
+DEEP_FA = {}  # the same for the Persian translations (deeper/src-fa/), which follow the English page one for one
 NOT_SUBSTANTIVE = {"in-this-chapter", "check-your-understanding", "further-reading"}
 CITE = re.compile(r"\[(@[^\[\]]+)\]")
 # The layers, in order: id, heading, the reader's reason (the chooser), what the layer holds.
@@ -2896,11 +2898,18 @@ LAYERS = [("re-learn", "Re-learn", "I didn't get it", "The idea again, step by s
           ("beyond-the-chapter", "Beyond the chapter", "Something felt missing",
            "What the chapter leaves out or simplifies, and how this connects to the rest"),
           ("sources", "Sources", "Show me the sources", "What to read next, and every work cited")]
+# the chooser's wording in Persian: the reader's reason and what the layer holds (a page's own layer headings are its translator's)
+LAYERS_FA = {"re-learn": ("نفهمیدم", "ایده را دوباره، گام‌به‌گام و با کژفهمی‌های رایجش مرور می‌کنیم"),
+             "the-full-story": ("همهٔ ماجرا را می‌خواهم", "ایده از کجا آمد، متن‌های اصلی، استدلال‌ها و جای امروزِ بحث"),
+             "beyond-the-chapter": ("چیزی کم بود", "آنچه فصل نیاورده یا ساده کرده، و پیوندِ این بحث با بقیه"),
+             "sources": ("منبع‌ها را نشانم بده", "چه بخوانید، و همهٔ کارهای ذکرشده")}
 LAYER_IDS = [l[0] for l in LAYERS]
 REQUIRED_LAYERS = {"A": LAYER_IDS, "B": ["re-learn", "beyond-the-chapter", "sources"]}
 BLOCK = re.compile(r"(?ms)^::: *([a-z]+)(?: +([^\n]*?))? *\n(.*?)\n::: *$")
 BLOCK_KINDS = {"original": "Read the original", "argument": "The argument, step by step", "timeline": "Timeline",
                "positions": "The positions", "box": ""}
+BLOCK_LABELS_FA = {"original": "متنِ اصلی را بخوانید", "argument": "استدلال، گام‌به‌گام", "timeline": "گاه‌شمار",
+                   "positions": "دیدگاه‌ها", "box": ""}
 
 
 def read_front_matter(text):
@@ -2914,10 +2923,31 @@ def read_front_matter(text):
     return meta, text[m.end():]
 
 
+def fa_normalize(text, layers):
+    """A Persian page, made ready to build like the English one: its i-th ## heading takes the English layer heading (which
+    gives the layer its id), its opening note takes the English marker, and the translator's own wording is returned to be
+    shown in their place. Returns (text, {layer id: Persian heading}, Persian marker)."""
+    titles, lids = {}, list(layers)
+    def heading(m):
+        i = len(titles)
+        if i >= len(lids):
+            return m.group(0)
+        titles[lids[i]] = m.group(1).strip()
+        return "## " + dict((l[0], l[1]) for l in LAYERS)[lids[i]]
+    text = re.sub(r"(?m)^## (.+?)\s*$", heading, text)
+    marker = []
+    def short(m):
+        marker.append(m.group(2))
+        return m.group(1) + "> **In short.**"
+    text = re.sub(r"^(\s*)> \*\*(.+?)\*\*", short, text, count=1)
+    return text, titles, marker[0] if marker else ""
+
+
 def load_deeper(md):
-    """The Deeper study pages in deeper/src/. A draft is built only with EPIS_DEEPER_DRAFTS=1, so the live site
-    shows nothing of a page until its front matter says status: published."""
+    """The Deeper study pages in deeper/src/ (English) and deeper/src-fa/ (their Persian translations). A draft is built only
+    with EPIS_DEEPER_DRAFTS=1, so the live site shows nothing of a page until its front matter says status: published."""
     DEEP.clear()
+    DEEP_FA.clear()
     for p in sorted((DEEPER / "src").glob("[01][0-9]-*/*.md")):
         meta, text = read_front_matter(p.read_text(encoding="utf-8"))
         if meta.get("status") != "published" and not DEEPER_DRAFTS:
@@ -2925,11 +2955,20 @@ def load_deeper(md):
         _, heads = md.render(CITE.sub("", BLOCK.sub(lambda m: m.group(3), text)), lambda h: h)
         DEEP.setdefault(p.parent.name, {})[p.stem] = {"meta": meta, "text": text, "path": p,
                                                        "layers": [h[1] for h in heads if h[0] == 2]}
+    for p in sorted((DEEPER / "src-fa").glob("[01][0-9]-*/*.md")):
+        meta, raw = read_front_matter(p.read_text(encoding="utf-8"))
+        en = DEEP.get(p.parent.name, {}).get(p.stem)
+        if not en or (meta.get("status") != "published" and not DEEPER_DRAFTS):
+            continue
+        text, titles, label = fa_normalize(raw, en["layers"])
+        _, heads = md.render(CITE.sub("", BLOCK.sub(lambda m: m.group(3), text)), lambda h: h)
+        DEEP_FA.setdefault(p.parent.name, {})[p.stem] = {"meta": meta, "text": text, "raw": raw, "path": p, "titles": titles, "label": label,
+                                                          "layers": [h[1] for h in heads if h[0] == 2], "of": en}
 
 
 def deeper_links(ch, body):
     """After each chapter section that has a Deeper study page, a small link to it."""
-    pages = DEEP.get(ch.slug) if LANG == "en" else None
+    pages = (DEEP_FA if LANG == "fa" else DEEP).get(ch.slug)
     if not pages:
         return body
     parts = re.split(r'(?=<h2 id=")', body)
@@ -2937,7 +2976,7 @@ def deeper_links(ch, body):
         m = re.match(r'<h2 id="([^"]+)"', part)
         if m and m.group(1) in pages:
             parts[i] = (part.rstrip() + f'\n<p class="sch-link"><a href="../deeper/{ch.slug}/{m.group(1)}.html">'
-                        f'<span>Go deeper on this section</span> <span aria-hidden="true">→</span></a></p>\n')
+                        f'<span>{L("Go deeper on this section", "این بخش را عمیق‌تر بخوانید")}</span> <span aria-hidden="true">{L("→", "←")}</span></a></p>\n')
     return "".join(parts)
 
 
@@ -3053,6 +3092,40 @@ def deeper_problems(sid, pg, chapter_heads, sources, prov):
     return errs
 
 
+def deeper_problems_fa(sid, pg, chapter_heads):
+    """What is wrong with a Persian page: anything that makes it differ in structure from the English page it translates, whose
+    provenance it shares. It must cite the same sources, have the same layers, blocks and links, and carry the same tier."""
+    en, errs = pg["of"], []
+    if sid not in [h[1] for h in chapter_heads if h[0] == 2]:
+        errs.append("not a section of the chapter")
+    if pg["meta"].get("tier") != en["meta"].get("tier"):
+        errs.append("tier differs from the English page")
+    if pg["layers"] != en["layers"]:
+        errs.append(f"layers differ from the English page ({len(pg['layers'])} vs {len(en['layers'])} ## headings)")
+    if not pg.get("label"):
+        errs.append("a page starts with > **به‌کوتاهی.** (its opening note)")
+    if sorted(k for k, _ in cited_keys(pg["text"])[0]) != sorted(k for k, _ in cited_keys(en["text"])[0]):
+        a, b = {k for k, _ in cited_keys(pg["text"])[0]}, {k for k, _ in cited_keys(en["text"])[0]}
+        errs.append("citations differ from the English page: missing " + (", ".join(sorted(b - a)) or "none") + "; extra " + (", ".join(sorted(a - b)) or "none"))
+    kinds = lambda t: sorted(m.group(1) for m in BLOCK.finditer(t))
+    if kinds(pg["text"]) != kinds(en["text"]):
+        errs.append("blocks differ from the English page")
+    links = lambda t: sorted(m.group(1) for m in re.finditer(r"\]\(((?:\d\d-[\w-]+\.md|deeper:)[^)\s]*)\)", t))
+    if links(pg["text"]) != links(en["text"]):
+        errs.append("links to chapters and Deeper study pages differ from the English page")
+    if len(re.findall(r"(?m)^### ", pg["text"])) != len(re.findall(r"(?m)^### ", en["text"])):
+        errs.append("### headings differ in number from the English page")
+    if not pg["meta"].get("of"):
+        errs.append("front matter lacks `of:` (the fingerprint of the English page it translates; tools/deeper/fa_fingerprint.py writes it)")
+    elif pg["meta"]["of"] != fingerprint(en["text"]):
+        print(f"  deeper: note: the English page changed since {pg['path'].relative_to(ROOT)} was translated")
+    return errs
+
+
+def fingerprint(text):
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
+
+
 AFTER_BLOCK = re.compile(r"\n[ \t]*\n(\[@[^\[\]]+\])\.?[ \t]*")  # a citation opening the paragraph right after a block
 
 
@@ -3085,7 +3158,7 @@ def deeper_blocks(text):
     text = lift_block_sources(text)
     def box(m):
         kind, title, inner = m.group(1), (m.group(2) or "").strip(), m.group(3)
-        label = BLOCK_KINDS.get(kind, "")
+        label = (BLOCK_LABELS_FA if LANG == "fa" else BLOCK_KINDS).get(kind, "")
         title = re.sub(r"\*(.+?)\*", r"<i>\1</i>", html.escape(title, quote=False))
         head = (f'<p class="blk-k">{label}</p>' if label else "") + (f'<p class="blk-h">{title}</p>' if title else "")
         return f'<div class="blk blk-{kind}">{head}\n\n{inner}\n\n</div>'
@@ -3105,8 +3178,12 @@ def deeper_body(ch, sid, pg, md, sources, prov):
         if m:
             return f"../../guide/{m.group(1)}.html{m.group(2) or ''}"
         m = re.match(r"^deeper:(\d\d-[\w-]+)/([\w-]+)$", href)  # another Deeper study page
+        if m and LANG == "fa" and m.group(2) not in DEEP_FA.get(m.group(1), {}):  # not yet translated: the English page
+            return f"../../../deeper/{m.group(1)}/{m.group(2)}.html"
         return f"../{m.group(1)}/{m.group(2)}.html" if m else href
     body, heads = md.render(text, rewrite)
+    if LANG == "fa":
+        body = body.replace("<strong>In short.</strong>", f"<strong>{html.escape(pg.get('label', ''))}</strong>", 1)
     body = label_cells(polish(body))
     annotations = {s["key"]: s["annotation"] for s in (prov or {}).get("sources", []) if s.get("annotation")}
     order, notes_n = [], 0
@@ -3129,7 +3206,7 @@ def deeper_body(ch, sid, pg, md, sources, prov):
             if used and m:
                 line = "; ".join(f'<a href="#src-{k}">{html.escape(short_cite(sources.get(k, {"title": k})))}</a>'
                                  + (f", {html.escape(loc)}" if loc else "") for k, loc in used)
-                part = part.rstrip() + f'<p class="sch-srcline"><span>Sources for this part:</span> {line}.</p>'
+                part = part.rstrip() + f'<p class="sch-srcline"><span>{L("Sources for this part:", "منبع‌های این بخش:")}</span> {line}.</p>'
         else:
             notes = []
             def cite(mm):
@@ -3141,25 +3218,28 @@ def deeper_body(ch, sid, pg, md, sources, prov):
                     remember(k)
                     bits.append(f'<a href="#src-{k}">{html.escape(short_cite(sources.get(k, {"title": k})))}</a>'
                                 + (f", {html.escape(loc)}" if loc else ""))
-                notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="Back to the text">↩</a></li>')
-                return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="Note {n}">{n}</a></sup>'
+                notes.append(f'<li id="note-{n}" value="{n}">{"; ".join(bits)}. <a class="back" href="#cite-{n}" aria-label="{L("Back to the text", "بازگشت به متن")}">↩</a></li>')
+                return f'<sup class="cite"><a id="cite-{n}" href="#note-{n}" aria-label="{L("Note", "یادداشت")} {n}">{num(n)}</a></sup>'
             part = re.sub(r"⁅CITEMARK(\d+)Z⁆", cite, part)
             if notes:
-                part = (part.rstrip() + f'<div class="sch-apparatus"><h3 class="sch-ap">Notes</h3>'
+                part = (part.rstrip() + f'<div class="sch-apparatus"><h3 class="sch-ap">{L("Notes", "یادداشت‌ها")}</h3>'
                         f'<ol class="sch-notes">{"".join(notes)}</ol></div>')
         if m:
             n = LAYER_IDS.index(lid) + 1 if lid in LAYER_IDS else 0
-            kicker = f'<span class="layer-k">Layer {n}</span>' if n else ""
-            part = part.replace(m.group(0), f'<h2 id="{lid}" class="layer">{kicker}<span class="ht">{m.group(2)}</span></h2>', 1)
+            kicker = f'<span class="layer-k">{L("Layer", "لایهٔ")} {num(n)}</span>' if n else ""
+            shown = html.escape(pg.get("titles", {}).get(lid, "")) if LANG == "fa" and pg.get("titles", {}).get(lid) else m.group(2)
+            part = part.replace(m.group(0), f'<h2 id="{lid}" class="layer">{kicker}<span class="ht">{shown}</span></h2>', 1)
         if lid == "sources" and order:
             refs = "".join(f'<li id="src-{k}">{full_ref(sources.get(k, {"title": k}))}'
                            + (f'<span class="ann">{html.escape(annotations[k])}</span>' if k in annotations else "") + "</li>"
                            for k in sorted(order, key=lambda k: (family((sources.get(k, {}).get("authors") or [sources.get(k, {}).get("org", k)])[0]).lower(),
                                                                str(sources.get(k, {}).get("year", "")))))
-            part = part.rstrip() + f'<h3 id="works-cited">Works cited</h3><ul class="sch-refs biblio">{refs}</ul>'
+            part = part.rstrip() + f'<h3 id="works-cited">{L("Works cited", "منبع‌های ذکرشده")}</h3><ul class="sch-refs biblio" dir="ltr">{refs}</ul>'
         out.append(part)
     present = [l for l in LAYERS if l[0] in pg["layers"]]
-    chooser = ('<nav class="deep-choose" aria-label="What brought you here?"><span class="kicker">What brought you here?</span>'
+    if LANG == "fa":
+        present = [(lid, t, *LAYERS_FA[lid]) for lid, t, _, _ in present]
+    chooser = (f'<nav class="deep-choose" aria-label="{L("What brought you here?", "چه چیزی شما را به این‌جا آورد؟")}"><span class="kicker">{L("What brought you here?", "چه چیزی شما را به این‌جا آورد؟")}</span>'
                + "".join(f'<a href="#{lid}"><b>{reason}</b><span>{what}</span></a>' for lid, _, reason, what in present) + "</nav>")
     return out[0] + chooser + "".join(out[1:]), heads
 
@@ -3170,8 +3250,12 @@ def first_sentences(text, n):
     for i, c in enumerate(text):
         if c == '"':
             inq = not inq
+        elif c == "«":
+            inq = True
+        elif c == "»":
+            inq = False
         after = text[i + 1:i + 2]
-        if not inq and (after == "" or after.isspace()) and (c in ".!?" or (c == '"' and text[i - 1:i] in (".", "!", "?"))):
+        if not inq and (after == "" or after.isspace()) and (c in ".!?؟" or (c in '"»' and text[i - 1:i] in (".", "!", "?", "؟"))):
             cuts.append(i + 1)
             if len(cuts) == n:
                 break
@@ -3183,28 +3267,32 @@ def deeper_words(text):
 
 
 def build_deeper(chapters, md, art):
-    """Write deeper/<chapter>/<section>.html for each page, a hub per chapter and deeper/index.html, after checking
-    every page. A problem in a published page stops the build."""
+    """Write deeper/<chapter>/<section>.html for each page (fa/deeper/ for the Persian translations), a hub per chapter and
+    deeper/index.html, after checking every page. A problem in a published page stops the build."""
     sources = deeper_data()
+    fa = LANG == "fa"
+    deep = DEEP_FA if fa else DEEP
     problems, built, rendered, hubs = 0, set(), [], []
-    for slug in sorted(DEEP):
+    for slug in sorted(deep):
         ch = next((c for c in chapters.values() if c.slug == slug), None)
         if not ch:
             print(f"  deeper: {slug}: no such chapter")
             problems += 1
             continue
         heads = EN_HEADS.get(ch.num, [])
-        titles = {h[1]: h[3] for h in heads if h[0] == 2}
-        order = [h[1] for h in heads if h[0] == 2 and h[1] in DEEP[slug]] + sorted(s for s in DEEP[slug] if s not in titles)
+        titles = ({sid: html.escape(FA_HEADS.get((ch.num, sid), sid)) for sid in deep[slug]} if fa
+                  else {h[1]: h[3] for h in heads if h[0] == 2})
+        order_ids = [h[1] for h in heads if h[0] == 2 and h[1] in deep[slug]]
+        order = order_ids + sorted(s_ for s_ in deep[slug] if s_ not in order_ids)
         root = up(2)
         rows = []
         for i, sid in enumerate(order):
-            pg = DEEP[slug][sid]
+            pg = deep[slug][sid]
             pp = DEEPER / "data" / slug / f"{sid}.json"
             prov = json.loads(pp.read_text(encoding="utf-8")) if pp.exists() else None
-            errs = deeper_problems(sid, pg, heads, sources, prov)
+            errs = deeper_problems_fa(sid, pg, heads) if fa else deeper_problems(sid, pg, heads, sources, prov)
             for e in errs:
-                print(f"  deeper: {slug}/{sid}: {e}")
+                print(f"  deeper: {'fa/' if fa else ''}{slug}/{sid}: {e}")
             if errs and pg["meta"].get("status") == "published":
                 problems += len(errs)
             title = titles.get(sid, sid)
@@ -3215,69 +3303,90 @@ def build_deeper(chapters, md, art):
                     toc.append([h, []])
                 elif h[0] == 3 and toc:
                     toc[-1][1].append(h)
-            toc_html = "".join(f'<li><a href="#{h[1]}">{h[3]}</a>' + (("<ol>" + "".join(f'<li><a href="#{s[1]}">{s[3]}</a></li>' for s in subs) + "</ol>") if subs else "")
+            toc_html = "".join(f'<li><a href="#{h[1]}">{(html.escape(pg["titles"].get(h[1], "")) if fa and pg["titles"].get(h[1]) else h[3])}</a>'
+                               + (("<ol>" + "".join(f'<li><a href="#{s_[1]}">{s_[3]}</a></li>' for s_ in subs) + "</ol>") if subs else "")
                                + "</li>" for h, subs in toc)
             draft = pg["meta"].get("status") != "published"
-            minutes = max(1, round(deeper_words(pg["text"]) / 230))
+            minutes = max(1, round(deeper_words(pg["text"]) / (200 if fa else 230)))
             tier = pg["meta"].get("tier", "B")
+            full_ = L("Full study", "مطالعهٔ کامل") if tier == "A" else L("Short study", "مطالعهٔ کوتاه")
             note = (f'<p class="sch-status{" draft" if draft else ""}">'
-                    + ("Draft: not yet reviewed, and not linked from the live site. " if draft else "")
-                    + f'{"Full study" if tier == "A" else "Short study"} · about {minutes} min'
-                    + (f' · updated {html.escape(pg["meta"]["updated"])}' if pg["meta"].get("updated") else "")
-                    + f'<br><a href="../../guide/{ch.href}#{sid}"><span aria-hidden="true">←</span> This section in {html.escape(ch.label)}</a>'
-                    + f' · <a href="index.html">All Deeper study for {html.escape(ch.label)}</a></p>')
+                    + (L("Draft: not yet reviewed, and not linked from the live site. ", "پیش‌نویس: هنوز بازبینی نشده و در سایتِ زنده پیوندی به آن نیست. ") if draft else "")
+                    + f'{full_} · {L("about", "حدود")} {num(minutes)} {L("min", "دقیقه")}'
+                    + (f' · {L("updated", "به‌روزرسانی")} <bdi dir="ltr">{num(html.escape(pg["meta"]["updated"]))}</bdi>' if pg["meta"].get("updated") else "")
+                    + f'<br><a href="../../guide/{ch.href}#{sid}"><span aria-hidden="true">{L("←", "→")}</span> {L("This section in", "این بخش در")} {html.escape(ch.label)}</a>'
+                    + f' · <a href="index.html">{L("All Deeper study for", "همهٔ مطالعه‌های عمیق‌ترِ")} {html.escape(ch.label)}</a></p>')
             prev_ = order[i - 1] if i else None
             next_ = order[i + 1] if i + 1 < len(order) else None
-            pager = ('<nav class="deep-pager" aria-label="More Deeper study">'
-                     + (f'<a class="prev" href="{prev_}.html"><small>Previous</small><b>{titles.get(prev_, prev_)}</b></a>' if prev_ else "<span></span>")
-                     + (f'<a class="next" href="{next_}.html"><small>Next</small><b>{titles.get(next_, next_)}</b></a>' if next_ else "<span></span>")
+            pager = (f'<nav class="deep-pager" aria-label="{L("More Deeper study", "مطالعه‌های عمیق‌ترِ بیشتر")}">'
+                     + (f'<a class="prev" href="{prev_}.html"><small>{L("Previous", "قبلی")}</small><b>{titles.get(prev_, prev_)}</b></a>' if prev_ else "<span></span>")
+                     + (f'<a class="next" href="{next_}.html"><small>{L("Next", "بعدی")}</small><b>{titles.get(next_, next_)}</b></a>' if next_ else "<span></span>")
                      + "</nav>")
-            head = hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=title, cls="band",
-                        lede=f"Going deeper on a section of “{html.escape(ch.title)}”.")
-            page_body = (f'{head}<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="On this page">'
-                         f'<span class="kicker">On this page</span><ol>{toc_html}</ol></nav></aside>'
-                         f'<article class="scholarly deep-page">{note}<details class="mini-toc"><summary>On this page</summary><ol>{toc_html}</ol></details>'
+            head = hero(art, ch.art, root, kicker=f"{L('Deeper study', 'مطالعهٔ عمیق‌تر')} · {ch.label}", title=title, cls="band",
+                        lede=L(f"Going deeper on a section of “{html.escape(ch.title)}”.", f"ژرف‌تر رفتن در یکی از بخش‌های «{html.escape(ch.title)}»."))
+            page_body = (f'{head}<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{L("On this page", "در این صفحه")}">'
+                         f'<span class="kicker">{L("On this page", "در این صفحه")}</span><ol>{toc_html}</ol></nav></aside>'
+                         f'<article class="scholarly deep-page">{note}<details class="mini-toc"><summary>{L("On this page", "در این صفحه")}</summary><ol>{toc_html}</ol></details>'
                          f'<div class="prose">{body}</div>{pager}</article></main>')
-            rendered.append((f"deeper/{slug}/{sid}.html", page_body, root, ch, title))
+            rendered.append((f"deeper/{slug}/{sid}.html", page_body, root, ch, title, sid))
             built.add(f"{slug}/{sid}.html")
             short = re.match(r"\s*> \*\*In short\.\*\*\s*(.+?)(?:\n\n|\n(?!>))", pg["text"], re.S)
             gist = re.sub(r"\s*\n>\s*", " ", short.group(1)) if short else ""
             gist = first_sentences(CITE.sub("", gist), 2)
-            rows.append(f'<li><a href="{sid}.html"><span class="kicker">{"Full study" if tier == "A" else "Short study"} · {minutes} min'
-                        f'{" · draft" if draft else ""}</span><b>{title}</b><span class="gist">{md.inline(gist)}</span></a></li>')
-        hub = (hero(art, ch.art, root, kicker=f"Deeper study · {ch.label}", title=html.escape(ch.title), cls="band",
-                    lede="For when a section didn't click, or left you wanting more: each page explains the idea again, "
-                         "tells the full story, fills in what the chapter leaves out, and gives the sources.")
+            rows.append(f'<li><a href="{sid}.html"><span class="kicker">{full_} · {num(minutes)} {L("min", "دقیقه")}'
+                        f'{L(" · draft", " · پیش‌نویس") if draft else ""}</span><b>{title}</b><span class="gist">{md.inline(gist)}</span></a></li>')
+        hub = (hero(art, ch.art, root, kicker=f"{L('Deeper study', 'مطالعهٔ عمیق‌تر')} · {ch.label}", title=html.escape(ch.title), cls="band",
+                    lede=L("For when a section didn't click, or left you wanting more: each page explains the idea again, "
+                           "tells the full story, fills in what the chapter leaves out, and gives the sources.",
+                           "برای وقتی که بخشی جا نیفتاد یا دلتان بیشتر خواست: هر صفحه ایده را دوباره توضیح می‌دهد، "
+                           "داستانِ کاملش را می‌گوید، آنچه فصل نیاورده را پر می‌کند و منبع‌ها را می‌دهد."))
                + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px">'
-               f'<p class="sch-status"><a href="../../guide/{ch.href}"><span aria-hidden="true">←</span> Back to {html.escape(ch.label)}</a></p>'
+               f'<p class="sch-status"><a href="../../guide/{ch.href}"><span aria-hidden="true">{L("←", "→")}</span> {L("Back to", "بازگشت به")} {html.escape(ch.label)}</a></p>'
                f'<ul class="deep-hub">{"".join(rows)}</ul></main>')
-        rendered.append((f"deeper/{slug}/index.html", hub, root, ch, f"{ch.label}: {ch.title}"))
+        rendered.append((f"deeper/{slug}/index.html", hub, root, ch, f"{ch.label}: {ch.title}", None))
         built.add(f"{slug}/index.html")
         hubs.append((ch, len(order)))
     svgs = render_mermaid(md, prune=False) if rendered else {}
-    for path, body, root, ch, title in rendered:
+    for path, body, root, ch, title, sid in rendered:
         hub = path.endswith("/index.html")
-        page(path, other_rel=f"guide/{ch.href}", root=root, title=f"Deeper study: {title}",
-             desc=(f"Deeper study for {ch.label}, {ch.title}." if hub else f"{title}: the idea again, the full story, what the chapter leaves out, and sources."),
+        slug = path.split("/")[1]
+        # the same page in the other language: Persian for an English page that has a translation, the English page for a Persian one
+        if fa:
+            other = path
+        elif hub:
+            other = path if DEEP_FA.get(slug) else f"guide/{ch.href}"
+        else:
+            other = path if sid in DEEP_FA.get(slug, {}) else f"guide/{ch.href}"
+        page(path, other_rel=other, root=root, title=L("Deeper study: ", "مطالعهٔ عمیق‌تر: ") + title,
+             desc=((L(f"Deeper study for {ch.label}, {ch.title}.", f"مطالعهٔ عمیق‌تر برای {ch.label}، {ch.title}.")) if hub else
+                   L(f"{title}: the idea again, the full story, what the chapter leaves out, and sources.",
+                     f"{title}: ایده را دوباره بیاموزید، داستانِ کامل، آنچه فصل نیاورده و منبع‌ها.")),
              body=place_diagrams(body, md, svgs), current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)),
              bar="clear", reader=not hub)
     if hubs:
-        rows = "".join(f'<li><a href="{c.slug}/index.html"><span class="kicker">{html.escape(c.label)} · {n} page{"s" if n != 1 else ""}</span>'
+        rows = "".join(f'<li><a href="{c.slug}/index.html"><span class="kicker">{html.escape(c.label)} · {num(n)} {L("page" + ("s" if n != 1 else ""), "صفحه")}</span>'
                        f'<b>{html.escape(c.title)}</b></a></li>' for c, n in sorted(hubs, key=lambda t: t[0].num))
-        idx = (hero(art, "guide", up(1), kicker="Deeper study", title="Going deeper", cls="band",
-                    lede="For each section of the guide that rewards it: the idea explained again, the full story behind it, "
-                         "what the chapter leaves out, and the sources.")
+        idx = (hero(art, "guide", up(1), kicker=L("Deeper study", "مطالعهٔ عمیق‌تر"), title=L("Going deeper", "ژرف‌تر برویم"), cls="band",
+                    lede=L("For each section of the guide that rewards it: the idea explained again, the full story behind it, "
+                           "what the chapter leaves out, and the sources.",
+                           "برای هر بخشِ راهنما که ارزشش را دارد: ایده دوباره توضیح داده می‌شود، داستانِ کامل پشتِ آن، "
+                           "آنچه فصل نیاورده، و منبع‌ها."))
                + f'<main id="main" class="wrap" style="padding-top:30px;padding-bottom:80px"><ul class="deep-hub">{rows}</ul></main>')
-        page("deeper/index.html", other_rel="guide/index.html", root=up(1), title="Deeper study",
-             desc="The sections of the guide explained further: the full story, what the chapters leave out, and sources.",
+        page("deeper/index.html", other_rel="deeper/index.html" if (DEEP_FA and not fa) or fa else "guide/index.html", root=up(1),
+             title=L("Deeper study", "مطالعهٔ عمیق‌تر"),
+             desc=L("The sections of the guide explained further: the full story, what the chapters leave out, and sources.",
+                    "بخش‌های راهنما با توضیحِ بیشتر: داستانِ کامل، آنچه فصل‌ها نیاورده‌اند، و منبع‌ها."),
              body=idx, current="guide", hero_img=(art.src("guide", up(1)), art.srcset("guide", up(1))), bar="clear")
         built.add("index.html")
-    for p in DEEPER.glob("**/*.html"):  # a page no longer built (a draft, after a preview) leaves nothing behind
-        if p.relative_to(DEEPER).as_posix() not in built:
+    ddir = OUT() / "deeper"
+    skip = ("src", "src-fa", "data", "fa") if not fa else ()
+    for p in ddir.glob("**/*.html"):  # a page no longer built (a draft, after a preview) leaves nothing behind
+        if p.relative_to(ddir).parts[0] not in skip and p.relative_to(ddir).as_posix() not in built:
             p.unlink()
-    for d in sorted((p for p in DEEPER.glob("*/") if p.is_dir() and p.name not in ("src", "data")), reverse=True):
-        if not any(d.iterdir()):
-            d.rmdir()
+    if ddir.exists():
+        for d in sorted((p for p in ddir.glob("*/") if p.is_dir() and p.name not in skip), reverse=True):
+            if not any(d.iterdir()):
+                d.rmdir()
     if problems:
         raise SystemExit(f"deeper: {problems} problem(s) in published pages")
 
@@ -3654,7 +3763,7 @@ def build_language(art, md, C, tracks):
 
     print(f"[{LANG}] guide")
     if LANG == "en":
-        load_deeper(md)
+        load_deeper(md)  # both languages' pages: the Persian build uses what the English build loaded
     later = []
     prepare_learning(md, C, chapters)
     for ch in chapters.values():
@@ -3668,8 +3777,7 @@ def build_language(art, md, C, tracks):
         page(f"guide/{ch.href}", root=root, title=f"{ch.label}: {ch.title}" if ch.num <= 16 else ch.title, desc=desc, body=body,
              current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True,
              chapter_nav=chsw)
-    if LANG == "en":
-        build_deeper(chapters, md, art)
+    build_deeper(chapters, md, art)
     build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP, LANG, FA_HEADS)
     path_script = lambda root: (f'<script src="{av(root, "reading-path-i18n.js")}" defer></script>'
                                 f'<script src="{av(root, "reading-path.js")}" defer></script>')

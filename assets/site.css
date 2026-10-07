@@ -1105,6 +1105,8 @@ sup.cite a{text-decoration:none;color:var(--accent);font-weight:600}
 .blk-original blockquote p{margin:.5em 0}
 .blk-argument ol{counter-reset:prem;list-style:none;padding-inline-start:0}
 .blk-argument ol>li{counter-increment:prem;position:relative;padding-inline-start:2.6em;margin:.45em 0}
+html[lang="fa"] .blk-argument ol{list-style:none}
+html[lang="fa"] .blk-argument ol>li::before{content:"م" counter(prem,persian);letter-spacing:0;font-family:var(--fa)}
 .blk-argument ol>li::before{content:"P" counter(prem);position:absolute;inset-inline-start:0;top:.1em;font-family:var(--mono);font-size:.78rem;
   color:var(--accent);border:1px solid var(--rule-2);border-radius:6px;padding:0 5px}
 .blk-timeline ul{list-style:none;padding-inline-start:0;border-inline-start:2px solid var(--rule-2);margin-inline-start:6px}
