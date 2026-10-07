@@ -40,8 +40,17 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
     assert.equal(await page.getByRole('button',{name:'انجام شد ✓ · لغو'}).count(),1);
     await page.locator('#rp-mode').selectOption('deep');
     const deep = page.locator('.rp-item').filter({hasText:'مطالعهٔ بیشتر'}).first();
-    assert.match(await deep.innerText(),/انگلیسی/);
-    assert.match(await deep.locator('h3 a').getAttribute('href'),/\/deeper\//);
+    const deepHref = await deep.locator('h3 a').getAttribute('href');
+    assert.match(deepHref,/\/deeper\//);
+    if (deepHref.includes('/fa/deeper/')) {
+      assert.ok(!(await deep.innerText()).includes(' · انگلیسی'));
+      await deep.locator('h3 a').click();
+      assert.equal(await page.locator('html').getAttribute('lang'),'fa');
+      await page.locator('.deep-translation').waitFor();
+      await page.goBack(); await page.locator('.rp-list').waitFor();
+    } else {
+      assert.match(await deep.innerText(),/انگلیسی/);
+    }
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'RTL mobile overflow');
     await page.setViewportSize({width:1440,height:1000});
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'RTL desktop overflow');
@@ -49,6 +58,6 @@ const origin = process.env.READING_PATH_TEST_URL || 'http://127.0.0.1:8765';
     await page.locator('#rp-home').getByRole('link',{name:'ادامهٔ مسیر مطالعهٔ شما ←'}).waitFor();
     assert.match(await page.locator('#rp-home a').getAttribute('href'),/\/fa\/reading-path\//);
     assert.equal(errors.length,0,errors.join('\n'));
-    console.log('PASS: Persian navigation, RTL/mobile, educational introduction, localized links/reasons, saved progress, language switching and English Deeper labels.');
+    console.log('PASS: Persian navigation, RTL/mobile, educational introduction, localized links/reasons, saved progress, language switching and localized Deeper destinations.');
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -6,6 +6,7 @@ cd "$(dirname "$0")/../.."
 PY=${PYTHON:-python3}
 unset EPIS_DEEPER_DRAFTS   # the strict build: published pages must have full provenance
 timeout 900 "$PY" tools/site/build.py
+"$PY" tools/deeper/check_fa.py
 "$PY" tools/site/frozen.py
 "$PY" tools/site/check_links.py
 for f in guide/mastering-epistemology.epub fa/guide/mastering-epistemology-fa.epub; do

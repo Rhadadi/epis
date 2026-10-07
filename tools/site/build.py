@@ -3119,6 +3119,18 @@ def deeper_problems_fa(sid, pg, chapter_heads):
         errs.append("front matter lacks `of:` (the fingerprint of the English page it translates; tools/deeper/fa_fingerprint.py writes it)")
     elif pg["meta"]["of"] != fingerprint(en["text"]):
         print(f"  deeper: note: the English page changed since {pg['path'].relative_to(ROOT)} was translated")
+    if pg["meta"].get("translation_of") and pg["meta"].get("status") == "published":
+        if pg["meta"]["translation_of"] != f"{pg['path'].parent.name}/{sid}":
+            errs.append("translation_of does not identify the matching English page")
+        sys.path.insert(0, str(ROOT / "tools" / "deeper"))
+        from check_fa import validate_page
+        sys.path.pop(0)
+        provenance_path = DEEPER / "data" / pg["path"].parent.name / f"{sid}.json"
+        annotation_path = DEEPER / "data-fa" / pg["path"].parent.name / f"{sid}.json"
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8")) if provenance_path.exists() else {}
+        annotations = json.loads(annotation_path.read_text(encoding="utf-8")) if annotation_path.exists() else {}
+        errs.extend(validate_page(en["path"].read_text(encoding="utf-8"),
+                                  pg["path"].read_text(encoding="utf-8"), provenance, annotations))
     return errs
 
 
@@ -3186,6 +3198,10 @@ def deeper_body(ch, sid, pg, md, sources, prov):
         body = body.replace("<strong>In short.</strong>", f"<strong>{html.escape(pg.get('label', ''))}</strong>", 1)
     body = label_cells(polish(body))
     annotations = {s["key"]: s["annotation"] for s in (prov or {}).get("sources", []) if s.get("annotation")}
+    if LANG == "fa":
+        annotation_path = DEEPER / "data-fa" / ch.slug / f"{sid}.json"
+        if annotation_path.exists():
+            annotations = json.loads(annotation_path.read_text(encoding="utf-8")).get("annotations", {})
     order, notes_n = [], 0
     def remember(k):
         if k not in order:
@@ -3231,7 +3247,7 @@ def deeper_body(ch, sid, pg, md, sources, prov):
             part = part.replace(m.group(0), f'<h2 id="{lid}" class="layer">{kicker}<span class="ht">{shown}</span></h2>', 1)
         if lid == "sources" and order:
             refs = "".join(f'<li id="src-{k}">{full_ref(sources.get(k, {"title": k}))}'
-                           + (f'<span class="ann">{html.escape(annotations[k])}</span>' if k in annotations else "") + "</li>"
+                           + (f'<span class="ann" dir="{L("ltr", "rtl")}">{html.escape(annotations[k])}</span>' if k in annotations else "") + "</li>"
                            for k in sorted(order, key=lambda k: (family((sources.get(k, {}).get("authors") or [sources.get(k, {}).get("org", k)])[0]).lower(),
                                                                str(sources.get(k, {}).get("year", "")))))
             part = part.rstrip() + f'<h3 id="works-cited">{L("Works cited", "منبع‌های ذکرشده")}</h3><ul class="sch-refs biblio" dir="ltr">{refs}</ul>'
@@ -3316,6 +3332,10 @@ def build_deeper(chapters, md, art):
                     + (f' · {L("updated", "به‌روزرسانی")} <bdi dir="ltr">{num(html.escape(pg["meta"]["updated"]))}</bdi>' if pg["meta"].get("updated") else "")
                     + f'<br><a href="../../guide/{ch.href}#{sid}"><span aria-hidden="true">{L("←", "→")}</span> {L("This section in", "این بخش در")} {html.escape(ch.label)}</a>'
                     + f' · <a href="index.html">{L("All Deeper study for", "همهٔ مطالعه‌های عمیق‌ترِ")} {html.escape(ch.label)}</a></p>')
+            if fa:
+                note += (f'<p class="deep-translation">نقل‌قول‌های این صفحه برگردان فارسی‌اند. '
+                         f'<a href="{root}deeper/{slug}/{sid}.html" hreflang="en">متن انگلیسی و ارجاع‌های آن</a> '
+                         'در نسخهٔ انگلیسی در دسترس است؛ مشخصات کتاب‌شناختی به زبان منبع حفظ شده‌اند.</p>')
             prev_ = order[i - 1] if i else None
             next_ = order[i + 1] if i + 1 < len(order) else None
             pager = (f'<nav class="deep-pager" aria-label="{L("More Deeper study", "مطالعه‌های عمیق‌ترِ بیشتر")}">'
@@ -3778,7 +3798,7 @@ def build_language(art, md, C, tracks):
              current="guide", hero_img=(art.src(ch.art, root), art.srcset(ch.art, root)), bar="clear", reader=True, focus=True,
              chapter_nav=chsw)
     build_deeper(chapters, md, art)
-    build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP, LANG, FA_HEADS)
+    build_reading_catalogue(ROOT, chapters, md, clean_chapter_markdown, DEEP, LANG, FA_HEADS, DEEP_FA)
     path_script = lambda root: (f'<script src="{av(root, "reading-path-i18n.js")}" defer></script>'
                                 f'<script src="{av(root, "reading-path.js")}" defer></script>')
     page("reading-path/index.html", root=r1, title=L("Find your reading path", "مسیر مطالعهٔ خود را پیدا کنید"),

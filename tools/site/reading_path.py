@@ -5,9 +5,9 @@ import re
 from copy import deepcopy
 
 
-def build_catalogue(root, chapters, md, clean, deep, lang='en', fa_heads=None):
+def build_catalogue(root, chapters, md, clean, deep, lang='en', fa_heads=None, fa_deep=None):
     if lang == 'fa':
-        return build_persian_catalogue(root, chapters, fa_heads or {})
+        return build_persian_catalogue(root, chapters, fa_heads or {}, fa_deep or {})
     config = json.loads((root / 'tools/site/reading-path-routes.json').read_text())
     diagnostics = json.loads((root / 'tools/site/reading-path-diagnostics.json').read_text())
     config['diagnostics'] = diagnostics
@@ -66,7 +66,7 @@ def build_catalogue(root, chapters, md, clean, deep, lang='en', fa_heads=None):
         + 'export default ' + json.dumps(bank, ensure_ascii=False, indent=2) + ';\n')
 
 
-def build_persian_catalogue(root, chapters, fa_heads):
+def build_persian_catalogue(root, chapters, fa_heads, fa_deep=None):
     config = deepcopy(json.loads((root / 'assets/data/reading-path.json').read_text()))
     fa = json.loads((root / 'tools/site/reading-path-fa.json').read_text())
     for c in config['competencies']:
@@ -111,7 +111,12 @@ def build_persian_catalogue(root, chapters, fa_heads):
         section['minutes'] = max(1, math.ceil(len(plain.split()) / 200))
         section['language'] = 'en' if ch.fallback else 'fa'
         if 'deep' in section:
-            section['deep']['language'] = 'en'
+            translation = (fa_deep or {}).get(ch.slug, {}).get(slug)
+            if translation and translation['meta'].get('status') == 'published':
+                section['deep'].update(url=f'fa/deeper/{ch.slug}/{slug}.html', language='fa',
+                                       minutes=max(1, math.ceil(len(translation['text'].split()) / 200)))
+            else:
+                section['deep']['language'] = 'en'
     config['language'] = 'fa'
     config['deepReason'] = fa['deepReason']
     config['unsureReason'] = 'از توضیح این ایده آغاز کنید، چون در مثال گزینهٔ «مطمئن نیستم» را انتخاب کردید.'
@@ -144,7 +149,8 @@ def page_body(lang='en'):
                 پاسخ‌ها، پرسش بعدی و مقدمات پیشنهادی را تغییر می‌دهند. تحصیلات و موضوعاتی که خوانده‌اید نیز به انتخاب مثال‌ها کمک می‌کنند.</p>
               <h3>با سرعت خودتان</h3><p>زمان خواندن متن فارسی با سرعت تقریبی ۲۰۰ واژه در دقیقه برآورد می‌شود.
                 فکر کردن، تمرین و شنیدن ممکن است زمان بیشتری بخواهد. هر بخش را وقتی آماده‌اید تکمیل‌شده علامت بزنید.</p>
-              <p class="rp-small">صفحه‌های «مطالعهٔ بیشتر» فعلاً انگلیسی‌اند و با همین برچسب مشخص می‌شوند.</p>
+              <p class="rp-small">«مطالعهٔ بیشتر» شما را به شرح گسترده‌ترِ همان بخش و منابع آن می‌برد.
+                اگر نسخهٔ فارسیِ صفحه‌ای هنوز آماده نباشد، پیوند انگلیسی با برچسب مشخص می‌شود.</p>
               <p class="rp-small">پاسخ‌ها و پیشرفت در همین مرورگر می‌مانند. هوش مصنوعی اختیاری است؛ با فعال‌کردنش،
                 پرسش و شیوهٔ مطالعه برای سرویس تعیین‌شده فرستاده می‌شوند. اطلاعات خصوصی وارد نکنید.</p>
               <a href="../guide/">دیدن همهٔ شانزده فصل ←</a>

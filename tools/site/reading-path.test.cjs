@@ -95,7 +95,11 @@ test('Persian topics, reasons and all recommended chapter links are localized', 
       const seen = new Set();
       for (const s of plan.items) {
         assert.match(s.title, /[آ-ی]/); assert.match(s.why, /[آ-ی]/);
-        if (s.kind === 'deep') { assert.ok(seen.has(s.id.replace(/:deep$/, ''))); assert.equal(s.language, 'en'); }
+        if (s.kind === 'deep') {
+          assert.ok(seen.has(s.id.replace(/:deep$/, '')));
+          assert.equal(s.language, s.url.startsWith('fa/deeper/') ? 'fa' : 'en');
+          assert.ok(s.url.startsWith('fa/deeper/') || s.url.startsWith('deeper/'));
+        }
         else { assert.ok(s.url.startsWith('fa/guide/')); for (const p of fa.prerequisites[s.id] || []) assert.ok(seen.has(p.id)); }
         seen.add(s.id);
         const [url, anchor] = s.url.split('#');
