@@ -16,6 +16,8 @@ never to the Markdown. `tools/site/frozen.py` checks this.
 | `src/<chapter>/<section>.md` | One page: `<chapter>` is the chapter's file name (`01-what-is-epistemology`), `<section>` the id of one of its `##` sections (`three-great-distinctions`) |
 | `data/sources.json` | The shared bibliography: every work any page cites, with checked details |
 | `data/<chapter>/<section>.json` | Provenance for one page: the research questions and, for every source cited, what it was used for and the evidence behind it |
+| `src-fa/<chapter>/<section>.md` | The complete Persian edition, paired with its English source |
+| `data-fa/<chapter>/<section>.json` | Persian reader-facing source annotations; citation evidence stays in the shared English provenance |
 | `data/corpus.json` | The research corpus: every text the pages were researched from, with its link and licence |
 | `<chapter>/<section>.html`, `<chapter>/index.html`, `index.html` | Generated pages (do not edit) |
 
@@ -140,7 +142,22 @@ while the locator and excerpt identify it in the source itself. `basis` says how
 
 ## Checks
 
+### Persian editions
+
+All 200 pages have published Persian editions. Preserve the English page's study tier, sections, examples,
+argument and quotation blocks, citations (including locators), and canonical reading links. Translate the prose
+and source annotations into clear standard Iranian Persian. Bibliographic titles retain the source language.
+Persian quotations are explicitly identified on the page as translations; the word-for-word corpus evidence
+belongs to their English originals. Do not create Persian “evidence” that pretends to occur in the source corpus.
+
+New translations record `translation_of`, the complete English file's `source_sha256`, and the existing `of`
+fingerprint of its body. Earlier published editions use `of`. An English revision requires editorial review of
+the Persian edition before updating either fingerprint. `tools/deeper/check_fa.py --complete` verifies publication
+coverage and edition identity; for new translations it also checks structure, citations, links and source notes.
+These checks supplement semantic and stylistic review.
+
 ```sh
+python3 tools/deeper/check_fa.py --complete # Persian publication coverage and translation checks
 python3 tools/site/frozen.py        # the narrated text and audio are unchanged
 python3 tools/site/build.py         # builds the site; fails on problems in a published page
 python3 tools/site/check_links.py   # every link and anchor on the site resolves

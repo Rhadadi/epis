@@ -31,6 +31,13 @@ This file adds the workflow and tools.
 
 After that: the final polish pass (section 9).
 
+**Persian editions (2026-10-07).** All 200 Deeper pages now have published Persian editions. Codex completed
+chapters 01–09 (109 pages) and reviewed chapter 10 (18 pages), including translated source annotations.
+Claude's editions for chapters 11–16 remain in place. The new translations preserve the English sections,
+examples, citations and reading links; their quotation wording is Persian translation, not an English-corpus
+excerpt. See the Persian-edition workflow in `README.md`. `check_fa.py --complete` checks publication coverage;
+`check.sh` checks the bilingual build, frozen narrated files and links.
+
 **Notes for chapter 9.** Three sources were added for it: Laplace, *A Philosophical Essay on Probabilities*
 (`laplace1902`, the 1902 Truscott and Emory translation, Internet Archive `philosophicaless00lapliala`; cite by
 page, e.g. p. 19 for the sunrise passage, p. 196 for "common sense reduced to calculus"), and Peirce's "The
@@ -44,7 +51,7 @@ ravens, old evidence), `joyce2021` (Bayes' theorem), `lin2024` (Bayesian epistem
 `geninhuber2026` (Lockean thesis, lottery), `sorensen2024` (lottery and preface), `wheeler2024` (base rates,
 conjunction fallacy), `fallacy-iep` (gambler's fallacy, regression), `hitchcock2026` (Simpson's paradox),
 `romeijn2025` (statistics), `fidler-wilcox2026` (p-values, p-hacking), `ioannidis2005`, `mill1843` (for
-Goodman: "Why is a single instance, in some cases, sufficient..."). The Persian Deeper study comes later, after the English is done.
+Goodman: "Why is a single instance, in some cases, sufficient..."). Persian editions reuse this checked English evidence.
 
 ## 2. Rules that are not negotiable
 
@@ -276,8 +283,8 @@ throughout. Chapters 17 (glossary) and 18 (reading list) get no pages.
    overstates a source.
 2. Run `check.sh`, then check a few pages on a phone-sized window (blocks, `positions` tables shown as cards).
 3. Update the Tier A list in `README.md` if any choice changed, and this file's status table.
-4. Persian: the Persian Deeper study is planned after the English is complete; it is not part of this
-   handoff.
+4. Persian editions are published. When changing an English page, review its translation and update its edition
+   fingerprint only after checking the changed passages; run `check_fa.py --complete` as well as `check.sh`.
 
 ## 10. Links
 
