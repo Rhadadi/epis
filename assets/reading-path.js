@@ -273,7 +273,7 @@
     var list = el("ol", null, "rp-list");
     plan.items.forEach(function (s) {
       var item = el("li", null, "rp-item"), content = el("div"); item.append(content);
-      content.append(el("span", T("Chapter {chapter} · {minutes} min · {kind}", { chapter: N(s.chapter), minutes: N(s.minutes), kind: T(s.kind === "deep" ? "Deeper study" : s.prerequisite ? "Foundation" : "Chapter section") }) + (FA && (s.kind === "deep" || s.language === "en") ? T(" · English") : ""), "rp-tag"));
+      content.append(el("span", T("Chapter {chapter} · {minutes} min · {kind}", { chapter: N(s.chapter), minutes: N(s.minutes), kind: T(s.kind === "deep" ? "Deeper study" : s.prerequisite ? "Foundation" : "Chapter section") }) + (FA && s.language === "en" ? T(" · English") : ""), "rp-tag"));
       var title = el("h3"); title.append(link(s.title, s.url)); content.append(title, el("p", s.why));
       var actions = el("div", null, "rp-actions"), completed = state.done.includes(s.id);
       var mark = button(completed ? "Done ✓ · undo" : "Mark done", function () {
@@ -290,7 +290,7 @@
     if (plan.later.length) {
       var details = el("details", null, "rp-later"), later = el("ul");
       details.append(el("summary", T("Beyond this first path · {n} more suggestions", { n: N(plan.later.length) })));
-      plan.later.forEach(function (s) { var li = el("li"); li.append(link(s.title + (s.kind === "deep" ? T(" · Deeper") : "") + T(" · {n} min", { n: N(s.minutes) }) + (FA && (s.kind === "deep" || s.language === "en") ? T(" · English") : ""), s.url)); later.append(li); });
+      plan.later.forEach(function (s) { var li = el("li"); li.append(link(s.title + (s.kind === "deep" ? T(" · Deeper") : "") + T(" · {n} min", { n: N(s.minutes) }) + (FA && s.language === "en" ? T(" · English") : ""), s.url)); later.append(li); });
       details.append(el("p", "These readings are outside the current time budget or mode. Foundations listed here should come before sections that depend on them."), later); box.append(details);
     }
     var actions = el("div", null, "rp-actions");
