@@ -1588,3 +1588,5 @@ html[lang="fa"] .p-check p{font-family:var(--fa);line-height:1.9}
 html[dir="rtl"] .playband .go .icon{transform:scaleX(-1)}
 @media(max-width:700px){.playband{flex-direction:column;align-items:flex-start}.playband .go{margin-inline-start:0}.playband-art{width:120px}}
 @media (prefers-reduced-motion:reduce){.playband:hover{transform:none}}
+.playband-art.pic{padding:0;overflow:hidden;width:190px}
+.playband-art.pic img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}

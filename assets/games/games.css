@@ -192,3 +192,29 @@ html[data-theme="dark"] .sim-ctl output{color:#8DBBFF}
   box-shadow:0 4px 0 var(--k-orange-d);justify-self:start;align-self:center}
 .sim-run:active{transform:translateY(3px);box-shadow:0 1px 0 var(--k-orange-d)}
 @media print{.kgame{display:none !important}}
+
+/* ------------------------------------------------------------------ the headline as a newspaper clipping, with its picture */
+.cs-clip{position:relative;padding:14px 14px 4px;border-radius:6px 20px 8px 18px;background:#FFFDF6;color:#1E2A3B;
+  box-shadow:0 2px 0 rgba(0,0,0,.06),6px 8px 0 var(--k-ink);border:2px solid var(--k-ink);transform:rotate(-.6deg)}
+html[dir="rtl"] .cs-clip{transform:rotate(.6deg)}
+html[data-theme="dark"] .cs-clip{background:#F4EEDD;box-shadow:6px 8px 0 #000}
+.cs-mast{margin:0 0 10px;padding-bottom:6px;border-bottom:3px double #1E2A3B;font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;
+  font-size:1.15rem;letter-spacing:.04em;text-align:center;color:#1E2A3B}
+html[lang="fa"] .cs-mast{font-family:'Vazirmatn',serif;letter-spacing:0;font-weight:800}
+.cs-pic{margin:0 0 8px;border-radius:6px;overflow:hidden;border:2px solid #1E2A3B}
+.cs-pic img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+@media (max-width:600px){.cs-pic img{aspect-ratio:2/1}.cs-clip{padding:10px 10px 2px}.cs-mast{margin-bottom:6px;font-size:1rem}}
+.cs-clip .cs-headline{padding:6px 6px 12px;border:0;box-shadow:none;background:none;border-radius:0;color:#1E2A3B}
+/* the guide reacts in the verdict */
+.cs-verdict{position:relative}
+.cs-mascot{float:inline-end;width:96px;height:96px;margin:-30px 0 6px 12px;border-radius:50%;object-fit:cover;border:4px solid #fff;
+  box-shadow:0 5px 0 rgba(0,0,0,.12);background:#FFF3DF}
+html[dir="rtl"] .cs-mascot{margin:-30px 12px 6px 0}
+@media (prefers-reduced-motion:no-preference){.cs-mascot{animation:cspop .5s cubic-bezier(.2,1.5,.4,1) both}}
+/* confetti at the end */
+.cs-done{position:relative;overflow:hidden}
+.cs-confetti{position:absolute;inset:0;pointer-events:none}
+.cs-confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;animation:csfall linear forwards}
+@keyframes csfall{to{transform:translate(var(--x),340px) rotate(var(--r));opacity:0}}
+.gcard-art.pic img{transition:transform .5s ease}
+@media (prefers-reduced-motion:no-preference){.gcard > a:hover .gcard-art.pic img{transform:scale(1.06) rotate(-.6deg)}}

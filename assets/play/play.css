@@ -32,3 +32,25 @@ html[data-play] .plearn h2{font-size:1.25rem;margin:0 0 8px}
 .plearn li{margin:.25em 0}
 .kgame .knojs{color:var(--k-ink-2)}
 .kfoot{border-top:2px solid var(--k-line)}
+
+/* ------------------------------------------------------------------ illustrated: the banner and the picture cards */
+.phero.has-pic{position:relative;padding:0 0 30px}
+.phero-pic{border-radius:28px;overflow:hidden;border:3px solid var(--k-ink);box-shadow:8px 10px 0 var(--k-ink);background:#F7EFD9}
+.phero-pic img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.phero.has-pic .phero-t{position:absolute;top:7%;left:0;right:0;padding:0 16px;text-align:center}
+.phero.has-pic h1{font-size:clamp(2.4rem,7vw,5rem);color:#1E2A3B}
+.phero.has-pic .ptag{color:#3A4658}
+@media (max-width:760px){
+  .phero-pic{border-radius:18px;box-shadow:5px 6px 0 var(--k-ink)}
+  .phero.has-pic .phero-t{position:relative;top:auto;margin:-22px 10px 0;padding:14px;border-radius:18px;background:var(--k-bg);
+    border:3px solid var(--k-ink);box-shadow:5px 6px 0 var(--k-pink);transform:rotate(-1deg)}
+  .phero.has-pic h1{color:var(--k-ink)}
+  .phero.has-pic .ptag{color:var(--k-ink-2)}
+}
+html[data-theme="dark"] .phero.has-pic .phero-t{color:#1E2A3B}
+.gcard.soon .gcard-art.pic img{filter:saturate(.5)}
+.gcard.soon > div{position:relative}
+.gcard.soon .psoon{position:absolute;top:28px;inset-inline-end:28px;margin:0;background:var(--k-bg);border-style:solid;transform:rotate(8deg);font-size:.9rem;
+  box-shadow:3px 3px 0 var(--k-ink);border-color:var(--k-ink);color:var(--k-ink)}
+html[dir="rtl"] .gcard.soon .psoon{transform:rotate(-8deg)}
+@media (min-width:761px){.phero-pic img{aspect-ratio:16/8;object-position:center 75%}.phero.has-pic .phero-t{top:5%}}

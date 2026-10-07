@@ -1976,7 +1976,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                     L(f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.",
                       f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio}{fa_audio('', ' به انگلیسی', ' به فارسی یا انگلیسی')}، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
              + "</div>")
-    play = (f'<a class="playband" href="{h}play/"><span class="playband-art">{site_play.ART["detective"]}</span>'
+    band_pic = site_play.picture(root, "play/play-correlation", sizes="200px", widths=(800,))
+    play = (f'<a class="playband" href="{h}play/"><span class="playband-art{" pic" if band_pic else ""}">{band_pic or site_play.ART["detective"]}</span>'
             f'<span class="playband-t"><span class="kicker">{L("Play", "بازی کنید")}</span><b>{L("Baloney Detector", "چرندسنج")}</b>'
             f'<span class="sub">{L("Games for people who enjoy being wrong. First up: coffee drinkers live 18% longer. Did the coffee do it?", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید. اولین بازی: قهوه‌خورها ۱۸٪ بیشتر عمر می‌کنند. کارِ قهوه بود؟")}</span></span>'
             f'<span class="go">{L("Play", "بازی کنید")} {icon("arrow")}</span></a>')
@@ -2218,6 +2219,11 @@ def build_credits(art):
             f'<div class="prose" style="max-width:46rem;margin-top:40px"><h2>{L("Sound", "صدا")}</h2><p>'
             + L(f'{en_voices_credit()}See <a href="{audio}">how the audio was made</a>.',
                 fa_audio(fa_voices_credit(), '') + en_voices_credit() + f'<a href="{audio}">صوت چگونه ساخته شد</a> را ببینید.')
+            + f'</p><h2>{L("Pictures for children and games", "تصویرهای بخشِ کودکان و بازی‌ها")}</h2><p>'
+            + L(f'The illustrations in the children\'s section (<a href="{home(root)}kids/">How Do You Know?</a>) and in the games (<a href="{home(root)}play/">Baloney Detector</a>) '
+                'are made with OpenAI\'s image model from written descriptions, and each one is looked at before it is used. They show original characters and contain no text.',
+                f'تصویرهای بخشِ کودکان (<a href="{home(root)}kids/">از کجا می‌دانی؟</a>) و بازی‌ها (<a href="{home(root)}play/">چرندسنج</a>) با مدلِ تصویرسازیِ OpenAI '
+                'از روی توصیف‌های نوشتاری ساخته شده‌اند و هر کدام پیش از استفاده دیده و وارسی می‌شود. شخصیت‌هایشان ساختهٔ خودِ این سایت‌اند و هیچ نوشته‌ای در آن‌ها نیست.')
             + f'</p><h2>{L("Type", "حروف")}</h2><p>{fonts}{L(", all under the SIL Open Font License (follow a name for its licence).", "؛ همه با مجوزِ SIL Open Font License (برای دیدنِ مجوز، روی نام کلیک کنید).")}</p></div></main>')
     return body
 

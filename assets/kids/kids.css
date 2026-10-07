@@ -286,3 +286,68 @@ html[data-kids] .klevels a[aria-current]{color:var(--k-q-d)}
 .kstop .pgo{margin-top:10px;font-size:.92rem;padding:4px 14px}
 .kstop.on a{border:3px solid var(--k-q)}
 .karcade .ggrid{max-width:540px;margin:0 auto;grid-template-columns:1fr}
+
+/* ------------------------------------------------------------------ illustrated pages (pictures: tools/art/make_art.py) */
+.hudhud.pic{border-radius:50%;object-fit:cover;background:#FFF3DF;border:4px solid #fff;box-shadow:0 5px 0 rgba(0,0,0,.12)}
+.kband .hudhud.pic{width:104px;height:104px;top:-14px;inset-inline-end:-6px;transform:rotate(6deg)}
+html[dir="rtl"] .kband .hudhud.pic{transform:rotate(-6deg)}
+@media (max-width:560px){.kband .hudhud.pic{width:76px;height:76px}}
+/* the home page: a painted scene, with the title on a card over its lower edge */
+.khome .khero.has-pic{padding:0;background:none;text-align:start;overflow:visible;border-radius:0}
+.khero-art{border-radius:34px;overflow:hidden;box-shadow:0 10px 0 var(--k-orange-t)}
+.khero-art img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.khero.has-pic .khero-panel{position:relative;margin:-110px 22px 0;padding:22px 24px 20px;border-radius:28px;background:var(--k-card);
+  box-shadow:0 8px 0 var(--k-orange),0 20px 40px rgba(30,42,59,.12);text-align:center}
+html[data-kids] .khero.has-pic h1{color:var(--k-ink);text-shadow:none;font-size:clamp(2.3rem,7.5vw,3.8rem)}
+.khero.has-pic .kdek{color:var(--k-ink-2)}
+.khero.has-pic .khero-mascot{flex-direction:row;justify-content:flex-start;margin:-84px 0 6px;gap:10px}
+.khero.has-pic .khero-mascot .kbubble{margin-top:30px}
+.khero.has-pic .khero-mascot .hudhud{width:112px;height:112px;flex:none}
+.khero.has-pic .kbubble{box-shadow:0 4px 0 var(--k-line);max-width:230px;font-size:.95rem}
+.khero.has-pic .kchoose button{background:var(--k-orange-t);color:var(--k-orange-d);box-shadow:0 5px 0 var(--k-orange)}
+.khero.has-pic .kchoose button[aria-pressed="true"]{background:var(--k-orange);color:#fff;box-shadow:0 5px 0 var(--k-orange-d),0 0 0 4px var(--k-orange-t)}
+.khero.has-pic .ktotal{color:var(--k-orange-d)}
+@media (max-width:640px){
+  .khero-art{border-radius:24px}
+  .khero.has-pic .khero-panel{margin:-40px 8px 0;padding:16px 16px 18px}
+  .khero.has-pic .khero-mascot{margin-top:-62px}
+  .khero.has-pic .khero-mascot .kbubble{margin-top:34px}
+  .khero.has-pic .khero-mascot .hudhud{width:86px;height:86px}
+  .khero.has-pic .kbubble{font-size:.85rem;max-width:190px}
+}
+/* meet the detectives: the cast picture with name tags */
+.kcast{margin:44px 0 10px}
+.kcast h2,.kmap h2{font-size:1.7rem;margin:0 0 14px;text-align:center}
+.kcast figure{position:relative;margin:0;border-radius:28px;overflow:hidden;background:#FBF0D9;box-shadow:0 8px 0 var(--k-yellow)}
+.kcast-pic{display:block;width:100%;height:auto}
+.kcast ul{list-style:none;margin:0;padding:0}
+.kcast li{position:absolute;bottom:4%;left:var(--x);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;
+  max-width:19%;text-align:center}
+.kcast li b{font-family:var(--k-display);font-weight:600;font-size:clamp(.72rem,2.2vw,1.05rem);background:var(--k-ink);color:#fff;
+  padding:2px 12px;border-radius:999px;white-space:nowrap}
+.kcast li span{font-size:.82rem;line-height:1.2;margin-top:4px;background:#fff;color:var(--k-ink);padding:4px 8px;border-radius:12px;
+  box-shadow:0 3px 0 var(--k-line);opacity:0;transform:translateY(6px);transition:opacity .2s,transform .2s}
+.kcast figure:hover li span,.kcast li:focus-within span{opacity:1;transform:none}
+@media (max-width:640px){.kcast li span{display:none}}
+/* quests: a painted banner, and picture tiles for the units */
+.kquest{padding:0;overflow:hidden}
+.kquest-pic{display:block;width:100%;height:180px;object-fit:cover;object-position:center 40%}
+.kquest-in{padding:18px 20px 22px}
+html[data-kids] .kstop a,.kstop .soon{padding-top:0;overflow:hidden}
+.kstop-pic{display:block;width:calc(100% + 32px);margin:0 -16px 10px;height:110px;object-fit:cover}
+.kstop-pic.p0{object-position:10% 50%}.kstop-pic.p1{object-position:40% 50%}.kstop-pic.p2{object-position:65% 50%}.kstop-pic.p3{object-position:92% 50%}
+.kstop .soon .kstop-pic{filter:saturate(.35) brightness(1.06);opacity:.75}
+.kstop .kstop-pic + b{margin-top:-30px;position:relative;box-shadow:0 0 0 4px var(--k-card)}
+.kstop.on .kstop-pic{height:130px}
+.gcard-art.pic{padding:0;overflow:hidden}
+.gcard-art.pic img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+@media (prefers-reduced-motion:no-preference){
+  .khero-art img{animation:kdrift 24s ease-in-out infinite alternate;transform-origin:60% 40%}
+  .kquest-pic{transition:transform .6s ease}.kquest:hover .kquest-pic{transform:scale(1.04)}
+  html[data-kids] .kstop a:hover .kstop-pic{transform:scale(1.06)}.kstop-pic{transition:transform .4s ease}
+}
+@keyframes kdrift{from{transform:scale(1)}to{transform:scale(1.07) translate(-1%,1%)}}
+.khome .khero.has-pic{box-shadow:none}
+.kband .hudhud.pic{top:12px;inset-inline-end:12px}
+.hudhud.pic{object-position:50% 30%}
+html[data-theme="dark"] .khome .khero.has-pic{background:none}

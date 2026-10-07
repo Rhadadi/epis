@@ -35,6 +35,39 @@ def game_data(gid):
     return K.read_json(PLAY / "data" / f"{gid}.json")
 
 
+def art_src(root, key, width=800):
+    """The URL of an illustration (key "kids/<id>" or "play/<id>", made by tools/art/make_art.py), or None."""
+    base, iid = key.split("/", 1)
+    if not (ROOT / "assets" / base / "art" / f"{iid}-{width}.webp").exists():
+        return None
+    return f"{root}assets/{base}/art/{iid}-{width}.webp"
+
+
+def picture(root, key, alt="", cls="", sizes="(max-width: 760px) 100vw, 760px", lazy=True, widths=(800, 1440)):
+    """An <img> for an illustration at the widths that exist, or "" if it hasn't been made yet."""
+    urls = [(w, art_src(root, key, w)) for w in widths]
+    urls = [(w, u) for w, u in urls if u]
+    if not urls:
+        return ""
+    srcset = ", ".join(f"{u} {w}w" for w, u in urls)
+    loading = ' loading="lazy"' if lazy else ""
+    return f'<img class="{cls}" src="{urls[0][1]}" srcset="{srcset}" sizes="{sizes}" alt="{esc(alt)}"{loading} decoding="async">'
+
+
+def with_art(root, g):
+    """Cases with an "art" key get an "img" ({src, srcset, alt}) for the case engine, once the picture exists."""
+    if "cases" not in g:
+        return g
+    cases = []
+    for c in g["cases"]:
+        small = art_src(root, c["art"]) if c.get("art") else None
+        if small:
+            big = art_src(root, c["art"], 1440)
+            c = dict(c, img={"src": small, "srcset": f"{small} 800w" + (f", {big} 1440w" if big else ""), "alt": c.get("alt", "")})
+        cases.append(c)
+    return dict(g, cases=cases)
+
+
 def scripts_for(b, root, g):
     """The engine and simulation scripts a game needs."""
     files = [ENGINE_JS[g["engine"]]]
@@ -51,9 +84,10 @@ def game_box(b, gid, g, level, unit="play"):
             f'<p class="knojs">{b.L("This game needs JavaScript turned on.", "این بازی به جاوااسکریپت نیاز دارد.")}</p></div>')
 
 
-def card(b, c):
+def card(b, c, root=""):
     L = b.L
-    art = f'<span class="gcard-art">{ART.get(c.get("art"), "")}</span>'
+    pic = picture(root, c["img"], sizes="(max-width: 700px) 100vw, 360px", widths=(800,)) if c.get("img") else ""
+    art = f'<span class="gcard-art{" pic" if pic else ""}">{pic or ART.get(c.get("art"), "")}</span>'
     if c.get("live"):
         meta = f'<small>{esc(c["time"])}</small>' if c.get("time") else ""
         return (f'<li class="gcard c-{c["color"]}"><a href="{c["id"]}/">{art}<b>{esc(c["title"])}</b>'
@@ -82,7 +116,8 @@ def build(b, art, md):
     for n, c in enumerate(live, 1):
         root = b.up(2)
         h = b.home(root)
-        g = site_kids.for_level(K.pick(game_data(c["id"]), lang), "play")
+        g = with_art(root, site_kids.for_level(K.pick(game_data(c["id"]), lang), "play"))
+        g["masthead"] = L("The Daily Claim", "ادعای روز")
         learn = "".join(f'<li><a href="{h}{esc(x["href"])}">{esc(x["title"])}</a></li>' for x in c.get("learn", []))
         body = (f'<main id="main" class="pmain pgame c-{c["color"]}"><header class="pghead">'
                 f'<p class="pkick"><a href="../">{L("All games", "همهٔ بازی‌ها")}</a></p>'
@@ -95,10 +130,12 @@ def build(b, art, md):
 
     root = b.up(1)
     h = b.home(root)
-    cards = "".join(card(b, c) for c in games)
-    body = (f'<main id="main" class="pmain phome"><header class="phero">'
-            f'<h1>{L("Baloney Detector", "چرندسنج")}</h1>'
-            f'<p class="ptag">{L("Games for people who enjoy being wrong.", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید.")}</p></header>'
+    cards = "".join(card(b, c, root) for c in games)
+    hero = picture(root, "play/play-hero", sizes="(max-width: 1100px) 100vw, 1080px", lazy=False)
+    body = (f'<main id="main" class="pmain phome"><header class="phero{" has-pic" if hero else ""}">'
+            + (f'<div class="phero-pic">{hero}</div>' if hero else "")
+            + f'<div class="phero-t"><h1>{L("Baloney Detector", "چرندسنج")}</h1>'
+            f'<p class="ptag">{L("Games for people who enjoy being wrong.", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید.")}</p></div></header>'
             f'<ul class="ggrid">{cards}</ul>'
             f'<p class="pnote">{L("Every headline in these games is made up, to practise on. Nothing you do here is collected.", "همهٔ تیترهای این بازی‌ها ساختگی‌اند، برای تمرین. هیچ چیزی از کارهای شما این‌جا جمع نمی‌شود.")} '
             f'<a href="{h}">{L("The ideas behind the games: the guide", "ایده‌های پشتِ بازی‌ها: راهنما")}</a></p></main>')
@@ -116,7 +153,7 @@ def build(b, art, md):
 
 # ----------------------------------------------------------------------------- checks (also run by tools/play/check.py)
 
-NON_TEXT = {"id", "engine", "kind", "art", "color", "href", "levels", "best", "unit", "sim", "controls", "params", "values", "hi"}
+NON_TEXT = {"id", "engine", "kind", "art", "img", "color", "href", "levels", "best", "unit", "sim", "controls", "params", "values", "hi"}
 
 
 def missing_fa(obj, path=""):

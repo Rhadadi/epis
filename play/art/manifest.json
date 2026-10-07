@@ -1,0 +1,106 @@
+{
+ "play-charts": {
+  "model": "gpt-image-2",
+  "prompt_sha": "180f33e8fc298148",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-coffee": {
+  "model": "gpt-image-2",
+  "prompt_sha": "e1aa7a6ed374e05e",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "play-correlation": {
+  "model": "gpt-image-2",
+  "prompt_sha": "846e17e93c554396",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-fallforit": {
+  "model": "gpt-image-2",
+  "prompt_sha": "2b2cbc7b526901c7",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-hero": {
+  "model": "gpt-image-2",
+  "prompt_sha": "adee7dd6d9c9b84d",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "play-probability": {
+  "model": "gpt-image-2",
+  "prompt_sha": "ff2a3570e044260f",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-storks": {
+  "model": "gpt-image-2",
+  "prompt_sha": "0e016bf428d68890",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "play-sunkcost": {
+  "model": "gpt-image-2",
+  "prompt_sha": "9615b1b0706610bf",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-trust": {
+  "model": "gpt-image-2",
+  "prompt_sha": "7ab1f9e796291a19",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "play-tutors": {
+  "model": "gpt-image-2",
+  "prompt_sha": "afca1905b170dcd0",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ }
+}

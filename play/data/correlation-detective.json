@@ -344,8 +344,11 @@
    "fa": {
     "label": "یک تیترِ ساختگی",
     "q": "نظرت چیست؟",
-    "headline": "کسانی که روزی دو فنجان قهوه می‌نوشند ۱۸٪ بیشتر عمر می‌کنند"
-   }
+    "headline": "کسانی که روزی دو فنجان قهوه می‌نوشند ۱۸٪ بیشتر عمر می‌کنند",
+    "alt": "کافه‌ای شلوغ پر از آدم‌های مسنِ سرحال؛ از پشتِ پنجره، آدمی خسته در مطبِ دکتر فنجانی را رد می‌کند."
+   },
+   "art": "play/play-coffee",
+   "alt": "A busy café full of lively older people; through a window, a tired person at the doctor's turns down a cup."
   },
   {
    "id": "breakfast",
@@ -559,8 +562,11 @@
    "fa": {
     "label": "یک تیترِ ساختگی",
     "q": "نظرت چیست؟",
-    "headline": "بچه‌هایی که صبحانه می‌خورند نمره‌های بهتری می‌گیرند"
-   }
+    "headline": "بچه‌هایی که صبحانه می‌خورند نمره‌های بهتری می‌گیرند",
+    "alt": "چپ: آوا سرحال صبحانه می‌خورد؛ راست: کیان با زنگِ ساعت با عجله از رختخواب بیرون می‌پرد."
+   },
+   "art": "kids/kids-breakfast",
+   "alt": "Left: Ava, well rested, eats breakfast; right: Kian rushes out of bed while the alarm rings."
   },
   {
    "id": "tutors",
@@ -719,8 +725,11 @@
    "fa": {
     "label": "یک تیترِ ساختگی",
     "q": "نظرت چیست؟",
-    "headline": "دانش‌آموزانی که معلمِ خصوصی دارند نمره‌های پایین‌تری می‌گیرند"
-   }
+    "headline": "دانش‌آموزانی که معلمِ خصوصی دارند نمره‌های پایین‌تری می‌گیرند",
+    "alt": "نوجوانی با معلمِ خصوصی پشتِ میز درس می‌خواند و کارنامه‌ای مچاله روی دیوار است."
+   },
+   "art": "play/play-tutors",
+   "alt": "A teenager working with a tutor at a desk, a crumpled report card on the wall."
   },
   {
    "id": "storks",
@@ -870,8 +879,11 @@
    "fa": {
     "label": "یک تیترِ ساختگی",
     "q": "نظرت چیست؟",
-    "headline": "شهرهایی که لک‌لکِ بیشتری دارند بچه‌های بیشتری به دنیا می‌آورند"
-   }
+    "headline": "شهرهایی که لک‌لکِ بیشتری دارند بچه‌های بیشتری به دنیا می‌آورند",
+    "alt": "لک‌لک‌ها روی دودکش‌های یک شهرِ بزرگ لانه کرده‌اند و در خیابان‌های پایین پدر و مادرها کالسکه هل می‌دهند."
+   },
+   "art": "play/play-storks",
+   "alt": "Storks nesting on the chimneys of a big town, and parents pushing prams in the streets below."
   },
   {
    "id": "feet",
@@ -1039,8 +1051,11 @@
    "fa": {
     "label": "یک خبرِ ساختگی",
     "q": "چرا ممکن است این‌طور باشد؟",
-    "headline": "بچه‌هایی که پاهای بزرگ‌تری دارند بهتر کتاب می‌خوانند!"
-   }
+    "headline": "بچه‌هایی که پاهای بزرگ‌تری دارند بهتر کتاب می‌خوانند!",
+    "alt": "بچه‌هایی با سن‌های مختلف بی‌کفش روی نیمکتِ کتابخانه نشسته‌اند؛ نیما با خط‌کش یک پای بزرگ را اندازه می‌گیرد."
+   },
+   "art": "kids/kids-feet",
+   "alt": "Children of different ages on a library bench with their shoes off; Nima measures a big foot with a ruler."
   },
   {
    "id": "icecream",
@@ -1136,8 +1151,11 @@
    "fa": {
     "label": "یک خبرِ ساختگی",
     "q": "چرا ممکن است این‌طور باشد؟",
-    "headline": "وقتی بچه‌ها بستنیِ بیشتری می‌خورند، بچه‌های بیشتری آفتاب‌سوخته می‌شوند!"
-   }
+    "headline": "وقتی بچه‌ها بستنیِ بیشتری می‌خورند، بچه‌های بیشتری آفتاب‌سوخته می‌شوند!",
+    "alt": "یک روزِ گرم و آفتابی کنارِ دریا: بچه‌ها جلوی گاریِ بستنی صف کشیده‌اند؛ گونه‌های نیما از آفتاب صورتی شده."
+   },
+   "art": "kids/kids-icecream",
+   "alt": "A hot sunny day by the sea: children queue at an ice-cream cart; Nima has pink cheeks from the sun."
   },
   {
    "id": "umbrellas",
@@ -1208,8 +1226,11 @@
    "fa": {
     "label": "یک خبرِ ساختگی",
     "q": "چرا ممکن است این‌طور باشد؟",
-    "headline": "هر چه چترِ بیشتری می‌بینیم، کفش‌های خیسِ بیشتری هست!"
-   }
+    "headline": "هر چه چترِ بیشتری می‌بینیم، کفش‌های خیسِ بیشتری هست!",
+    "alt": "خیابانی بارانی پر از چترهای رنگی و چاله‌های آب؛ نیما با کفش‌های خیس توی آب می‌پرد."
+   },
+   "art": "kids/kids-umbrellas",
+   "alt": "A rainy street full of colourful umbrellas and puddles; Nima splashes in wet sneakers."
   }
  ]
 }

@@ -1,0 +1,214 @@
+{
+ "model": "gpt-image-2",
+ "out": "assets/kids/art",
+ "style": "Warm hand-painted children's picture-book illustration in gouache with a little coloured pencil, soft paper grain, rounded friendly shapes, rich but gentle colours (saffron yellow, turquoise, pomegranate red, leaf green, warm cream, dusty pink), soft daylight, lively expressive faces, plenty of small charming details. Setting: a cosy Iranian-inspired town and countryside (blue-tiled doorways, a courtyard with a little pool and potted geraniums, pomegranate and mulberry trees, rolling golden hills). Absolutely no text, letters, numbers, signs with writing or speech bubbles anywhere. Nothing frightening or violent. Original characters only: not in the style of any living illustrator, no famous characters or logos.",
+ "images": [
+  {
+   "id": "ref-cast",
+   "publish": true,
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A character sheet on a plain warm-cream background: the five characters standing side by side in a row, full body, facing the viewer, evenly spaced, each clearly separate, friendly poses. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "ref-goats",
+   "publish": false,
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A character sheet on a plain warm-cream background: the five story animals standing side by side in a row, full body, facing the viewer, evenly spaced, each clearly separate. The story's animals, always drawn the same way: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face; and the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "kids-hero",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "Use the attached character sheet for how everyone looks. A joyful wide scene: Ava, Nima, Kian and Grandma Mehri set off along a winding path over golden hills at sunrise, following Hudhud, who flies ahead. Ava points at something far away, Nima peers through his toy magnifying glass, Kian carries a map, Grandma waves them on. Along the path: a little bridge, a tree full of pomegranates, a kite, an old well, a tiny observatory dome on a hill. Leave calm open sky in the upper left third. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "quest-1",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. In a courtyard under a big mulberry tree at dusk with lanterns, Grandma Mehri reads from a large open picture book; Ava and Nima sit close, wide-eyed; Hudhud perches on the book's edge. Wide composition with space on both sides. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "quest-2",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A playful inventor's workshop: Kian and Ava build a big wooden contraption of gears, a balance scale and pulleys, Nima holds up a giant magnifying glass, Hudhud inspects a cog with his beak. Tools, bottles and jars on shelves. Wide composition. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "quest-3",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A sunny garden laboratory: Ava waters two identical potted bean plants, one in sun and one in shade; Nima flips a big coin; Kian looks through a brass telescope; Hudhud watches from a watering can. Wide composition. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "quest-4",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A circle of children sitting on a big Persian carpet in a sunny room, talking and listening to each other kindly: Ava raises her hand, Kian listens thoughtfully with his chin on his hand, Nima sits cross-legged holding his toy magnifying glass; two classmates join them, a girl in a yellow sweater holding a tablet with a blank glowing screen and a boy in a green shirt. Grandma Mehri smiles from an armchair with Hudhud on her shoulder. Each named character appears exactly once. Wide composition. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "kids-feet",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A funny, gentle scene in a school library: a row of children of different ages and heights sitting on a bench with their shoes off, the older children with bigger feet reading thick books, the little ones with small feet holding picture books; Nima measures a big foot with a wooden ruler while Ava takes notes; Hudhud peers at the feet through a tiny magnifying glass. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "kids-icecream",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A blazing sunny summer day at a seaside promenade: an ice-cream cart with a striped umbrella and a queue of children; Nima licks a dripping ice cream, his cheeks a little pink from the sun; Ava, wearing a sun hat, holds up sunscreen; a big smiling sun. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "kids-umbrellas",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A rainy afternoon on a town street with blue-tiled doorways: many colourful umbrellas, puddles everywhere, Nima splashing in a puddle in wet sneakers, Ava under a yellow umbrella laughing, Hudhud sheltering under a leaf. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "kids-breakfast",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A split picture with a clear dividing line. Left half: a calm early-morning kitchen where only Ava, well rested and smiling, eats bread, cheese, walnuts and tea at the table while a cat stretches. Right half: only Kian in his bedroom, rushing, hair messy, one shoe on, yawning, an alarm clock ringing. Each character appears exactly once; nobody else is in the picture. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "u01-s01",
+   "refs": [
+    "ref-cast",
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. Grandma Mehri (a human grandmother, exactly as on the first character sheet) sits in her armchair reading a big picture book to Ava and Nima (human children, as on the first sheet). From the open pages rises a small glowing vision: a little white house with a blue door at the edge of a wood, with a tiny mother goat and three tiny kids in front of it. In this picture: Grandma Mehri, Ava, Nima, and the tiny goats inside the book's glow. Not in this picture: the wolf. Character looks: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u01-s02",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. Outside the little white house with a blue door, Mother Goat, a basket on her back, says goodbye to her three kids and wags a hoof as a gentle warning; the kids wave from the doorway. In this picture: Mother Goat and her three kids only. Not in this picture: the wolf, any people. Character looks: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u01-s03",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. Inside the cosy house: the three kids crowd behind the closed blue front door, ears up, listening to a knock from outside, looking unsure and a little curious. In this picture: only the three kids, indoors. Not in this picture: Mother Goat (she is away), the wolf (he is outside, unseen), any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u01-s04",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. Inside the house: a big black furry paw pokes in under the closed blue door; the three kids point at it in surprise, Little Grape frowning thoughtfully. In this picture: the three kids and just the paw under the door. Not in this picture: Mother Goat, the rest of the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u01-s05",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet only for how the wolf looks; draw just the wolf. A picture-book page from the old Persian folk tale of the three little goats. The wolf in a village bakery with flat breads hanging on the wall, dipping his paws into a big sack of white flour and looking sneakily over his shoulder; flour puffs up comically. In this picture: only the wolf. Not in this picture: any goats, any people. Character look: the WOLF, a scruffy grey cartoon wolf, more silly and sneaky than scary, long nose, droopy ears, a sheepish grin, no sharp teeth showing."
+  },
+  {
+   "id": "u01-s06",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. Inside the house at the closed blue door: Little Grape stands bravely in front of it, holding up one hoof to stop the others, as if saying 'wait!'; Shangul and Mangul stop and listen to her. In this picture: only the three kids, indoors. Not in this picture: Mother Goat, the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u01-s07",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet for how the animals look. A picture-book page from the old Persian folk tale of the three little goats. The wolf runs off into the woods, grumbling, flour still on his feet, while the three kids peek out of the window and giggle. The story's animals, always drawn the same way: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face; and the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "u01-s08",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from the old Persian folk tale of the three little goats. At golden sunset, Mother Goat is home again and hugs all three kids in the doorway of the little white house; flowers by the door; everyone happy and safe. In this picture: Mother Goat and her three kids only. Not in this picture: the wolf, any people. Character looks: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "hudhud-wave",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320,
+    640
+   ],
+   "prompt": "Use the attached character sheet for how Hudhud looks. Only Hudhud the hoopoe, alone, centred, full body, waving one wing hello, beak open in a cheerful smile, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "hudhud-think",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320,
+    640
+   ],
+   "prompt": "Use the attached character sheet for how Hudhud looks. Only Hudhud the hoopoe, alone, centred, full body, tilting his head, one wing under his beak, thinking hard, a curious look, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "hudhud-cheer",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320,
+    640
+   ],
+   "prompt": "Use the attached character sheet for how Hudhud looks. Only Hudhud the hoopoe, alone, centred, full body, jumping with joy, both wings up, crest fanned out, delighted, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  }
+ ]
+}

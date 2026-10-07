@@ -124,10 +124,18 @@ automatically. Ordinary Markdown may sit between the blocks.
 
 ## Pictures
 
-AI-generated (the service is chosen before the first pictures are made), with one style block and the
-approved character sheet as a reference for every scene. No text inside pictures (all words stay in HTML so
-both languages share one picture). Nothing frightening for Explorers. Every picture is reviewed by a person and
-has English and Persian alt text. Until a picture exists, the page shows a drawn placeholder panel.
+Painted with OpenAI's image model (gpt-image-2) by `tools/art/make_art.py`; the key comes only from the
+`OPENAI_API_KEY` environment variable. Prompts live in `kids/art/prompts.json` (the kids' gouache picture-book
+style) and `play/art/prompts.json` (Baloney Detector's screen-print style): one style block, then each picture's
+prompt. Two character sheets (`ref-cast`: Ava, Nima, Kian, Grandma Mehri, Hudhud; `ref-goats`: the goats and the
+wolf) are sent along with every scene so the characters always look the same. Originals stay in
+`tools/art/.cache/` (not committed); the site gets WebP files in `assets/kids/art/` and `assets/play/art/`, and
+`manifest.json` next to the prompts records model, date and review status.
+
+No text inside pictures (all words stay in HTML so both languages share one picture). Nothing frightening for
+Explorers. Every picture is looked at before it goes on a page (wrong details are fixed by changing the prompt and
+making it again, never by hand), and has English and Persian alt text. Until a picture exists, the page shows a
+drawn placeholder.
 
 ## Sound
 

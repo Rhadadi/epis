@@ -5,3 +5,6 @@ assets/diagrams/.jobs.json
 
 # kids narration cache (generated audio segments)
 tools/kids/.eleven-kids/
+
+# illustration originals (tools/art/make_art.py); the published WebP files are committed
+tools/art/.cache/

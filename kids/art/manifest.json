@@ -1,0 +1,189 @@
+{
+ "hudhud-cheer": {
+  "model": "gpt-image-2",
+  "prompt_sha": "ebd2887163ae98f3",
+  "size": "1024x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   320,
+   640
+  ]
+ },
+ "hudhud-think": {
+  "model": "gpt-image-2",
+  "prompt_sha": "627ffe0504253966",
+  "size": "1024x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   320,
+   640
+  ]
+ },
+ "hudhud-wave": {
+  "model": "gpt-image-2",
+  "prompt_sha": "38904c141e52e311",
+  "size": "1024x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   320,
+   640
+  ]
+ },
+ "kids-breakfast": {
+  "model": "gpt-image-2",
+  "prompt_sha": "3ef080d687da524c",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "kids-feet": {
+  "model": "gpt-image-2",
+  "prompt_sha": "6658e8ead9c1e2c5",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "kids-hero": {
+  "model": "gpt-image-2",
+  "prompt_sha": "b28ede1d9b952725",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "kids-icecream": {
+  "model": "gpt-image-2",
+  "prompt_sha": "4d55c005b0e4cea2",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "kids-umbrellas": {
+  "model": "gpt-image-2",
+  "prompt_sha": "78f3edff8b09b3a2",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "quest-1": {
+  "model": "gpt-image-2",
+  "prompt_sha": "c24e1fc66df82501",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "quest-2": {
+  "model": "gpt-image-2",
+  "prompt_sha": "4ed830e57b5dbf49",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "quest-3": {
+  "model": "gpt-image-2",
+  "prompt_sha": "eabd850b17a5dbd9",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "quest-4": {
+  "model": "gpt-image-2",
+  "prompt_sha": "a2d4e9b397e5befe",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "ref-cast": {
+  "model": "gpt-image-2",
+  "prompt_sha": "3a6eff76d3bf6a7a",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s01": {
+  "model": "gpt-image-2",
+  "prompt_sha": "63a1e7857f02b21d",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s02": {
+  "model": "gpt-image-2",
+  "prompt_sha": "cf3bd8b6beedbf28",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s03": {
+  "model": "gpt-image-2",
+  "prompt_sha": "4625f44ab2ab88d7",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s07": {
+  "model": "gpt-image-2",
+  "prompt_sha": "0a62f8ac277ff3e5",
+  "size": "1536x1024",
+  "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ }
+}

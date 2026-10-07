@@ -1,6 +1,6 @@
 {
  "games": [
-  {"id": "correlation-detective", "live": true, "color": "pink", "art": "detective", "time": "5–8 minutes",
+  {"id": "correlation-detective", "img": "play/play-correlation", "live": true, "color": "pink", "art": "detective", "time": "5–8 minutes",
    "title": "Correlation Detective", "hook": "Coffee drinkers live longer. Did the coffee do it?",
    "learn": [
     {"href": "guide/10-science-and-evidence.html", "title": "Chapter 10: Science, evidence and explanation",
@@ -11,19 +11,19 @@
      "fa": {"title": "مطالعهٔ عمیق‌تر: علیت و استنتاجِ علّی"}}
    ],
    "fa": {"title": "کارآگاهِ همبستگی", "hook": "قهوه‌خورها بیشتر عمر می‌کنند. کارِ قهوه بود؟", "time": "۵ تا ۸ دقیقه"}},
-  {"id": "probability-is-weird", "color": "blue", "art": "dice",
+  {"id": "probability-is-weird", "img": "play/play-probability", "color": "blue", "art": "dice",
    "title": "Probability Is Weird", "hook": "Make bets against the machine.",
    "fa": {"title": "احتمال عجیب است", "hook": "با ماشین شرط ببند."}},
-  {"id": "chart-crimes", "color": "yellow", "art": "chart",
+  {"id": "chart-crimes", "img": "play/play-charts", "color": "yellow", "art": "chart",
    "title": "Chart Crimes", "hook": "Find what's wrong with the graph.",
    "fa": {"title": "جنایت‌های نمودار", "hook": "پیدا کن این نمودار چه ایرادی دارد."}},
-  {"id": "trust-game", "color": "green", "art": "trust",
+  {"id": "trust-game", "img": "play/play-trust", "color": "green", "art": "trust",
    "title": "The Trust Game", "hook": "Cheat or cooperate? Watch trust grow, or fall apart.",
    "fa": {"title": "بازیِ اعتماد", "hook": "کلک بزنی یا همکاری کنی؟ ببین اعتماد چطور جان می‌گیرد یا از هم می‌پاشد."}},
-  {"id": "sunk-cost-casino", "color": "purple", "art": "slots",
+  {"id": "sunk-cost-casino", "img": "play/play-sunkcost", "color": "purple", "art": "slots",
    "title": "The Sunk Cost Casino", "hook": "How long will you keep paying to win back what's gone?",
    "fa": {"title": "کازینوی هزینهٔ ازدست‌رفته", "hook": "تا کی پول می‌دهی تا چیزی را که رفته پس بگیری؟"}},
-  {"id": "would-you-fall-for-it", "color": "orange", "art": "news",
+  {"id": "would-you-fall-for-it", "img": "play/play-fallforit", "color": "orange", "art": "news",
    "title": "Would You Fall For It?", "hook": "Spot the trick in the headline.",
    "fa": {"title": "گولش را می‌خوری؟", "hook": "ترفندِ تیتر را پیدا کن."}}
  ]

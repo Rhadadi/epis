@@ -4,9 +4,9 @@
    Nothing is marked right or wrong until the end, and the end shows how your answer moved.
 
    Data (one language, already picked by the build):
-   {title, again, done, share, good, catch (the verdict headings), cases: [{id, label, headline, q,
+   {title, again, done, share, good, catch (the verdict headings), masthead, mascot: {good, catch} (image URLs), cases: [{id, label, headline, q,
      choices: [{id, text, short, why}], best: [choice ids],
-     clues: [{title, text, chart: {kind: "bars"|"strip", …}}],
+     img: {src, srcset, alt}, clues: [{title, text, chart: {kind: "bars"|"strip", …}}],
      surprise: {text, after, params}, ideas: [{name, text}], sim: {…}, sandbox: {intro, params, controls},
      next: {text, href}}]} */
 (function () {
@@ -142,6 +142,9 @@
       var last = picks[picks.length - 1], ok = (c.best || []).indexOf(last) >= 0;
       if (ok) good++;
       var v = el("div", "cs-verdict " + (ok ? "good" : "catch"));
+      if (data.mascot && data.mascot[ok ? "good" : "catch"]) {  // the guide reacts (kids' site: Hudhud)
+        var m = el("img", "cs-mascot"); m.src = data.mascot[ok ? "good" : "catch"]; m.alt = ""; v.appendChild(m);
+      }
       v.appendChild(el("b", "", ok ? data.good || T("Well reasoned!", "خوب فکر کردی!") : data.catch || T("Here's the catch", "نکته این‌جاست")));
       v.appendChild(el("p", "", choiceOf(c, last).why || ""));
       if (!ok && c.best && c.best.length) {
@@ -182,8 +185,27 @@
       show(end.firstChild, true);
     }
 
+    function confetti(host) {  // a short burst of paper; none with reduced motion
+      if (G.reduced()) return;
+      var colors = ["#FF4F8B", "#FFC92E", "#2F86FF", "#1FB57A", "#8B5CF6", "#FF7A2F"], layer = el("div", "cs-confetti");
+      layer.setAttribute("aria-hidden", "true");
+      for (var i = 0; i < 46; i++) {
+        var bit = el("i");
+        bit.style.left = (Math.random() * 100) + "%";
+        bit.style.background = colors[i % colors.length];
+        bit.style.animationDelay = (Math.random() * 0.35) + "s";
+        bit.style.animationDuration = (1.1 + Math.random() * 0.9) + "s";
+        bit.style.setProperty("--x", (Math.random() * 160 - 80) + "px");
+        bit.style.setProperty("--r", (Math.random() * 720 - 360) + "deg");
+        layer.appendChild(bit);
+      }
+      host.appendChild(layer);
+      setTimeout(function () { layer.remove(); }, 2600);
+    }
+
     function summary() {
       var d = el("div", "cs-done");
+      setTimeout(function () { confetti(d); }, 60);
       d.appendChild(el("span", "kg-star", "★"));
       d.appendChild(el("p", "", T("You changed your mind ", "") + N(changes) + T(changes === 1 ? " time." : " times.", " بار نظرت را عوض کردی.")));
       if (cases.length > 1) d.appendChild(el("p", "", T("Your final answer was a good one in ", "جوابِ آخرت در ") + N(good) + T(" of ", " پرونده از ") + N(cases.length) + T(" cases.", " پرونده خوب بود.")));
@@ -217,7 +239,17 @@
       if (cases.length > 1) top.appendChild(el("span", "cs-count", T("Case ", "پروندهٔ ") + N(ci + 1) + T(" of ", " از ") + N(cases.length)));
       if (c.label) top.appendChild(el("span", "cs-label", c.label));
       wrap.appendChild(top);
-      wrap.appendChild(el("p", "cs-headline", c.headline));
+      // the headline, as a clipping from a (made-up) newspaper, with its picture
+      var clip = el("div", "cs-clip" + (c.img ? " has-pic" : ""));
+      if (data.masthead) clip.appendChild(el("p", "cs-mast", data.masthead));
+      if (c.img) {
+        var fig = el("figure", "cs-pic"), im = el("img");
+        im.src = c.img.src; if (c.img.srcset) { im.srcset = c.img.srcset; im.sizes = "(max-width: 820px) 100vw, 780px"; }
+        im.alt = c.img.alt || ""; im.decoding = "async"; if (ci) im.loading = "lazy";
+        fig.appendChild(im); clip.appendChild(fig);
+      }
+      clip.appendChild(el("p", "cs-headline", c.headline));
+      wrap.appendChild(clip);
       box.appendChild(wrap);
       function step(id) {
         if (picks.length && id !== picks[picks.length - 1]) changes++;

@@ -1,0 +1,101 @@
+{
+ "model": "gpt-image-2",
+ "out": "assets/play/art",
+ "style": "Bold, witty editorial illustration in a flat screen-print (risograph) style: a limited palette of hot pink, sunflower yellow, cobalt blue, mint green and deep navy on warm off-white paper; visible print grain and slight colour misregistration; chunky simple shapes, clever visual jokes, quirky characters with simple dot eyes and expressive poses; generous empty space around the subject. Absolutely no text, letters, numbers or logos anywhere. Original characters only, not in the style of any living illustrator.",
+ "images": [
+  {
+   "id": "play-correlation",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a pink accent dominating the composition. The detective dog examines an enormous steaming coffee cup through his magnifying glass, while two tiny old people do yoga on the saucer's rim, looking suspiciously healthy. The recurring detective: a small, eager detective dog (a scruffy beagle mix) in a mustard trench coat and a tiny deerstalker hat, holding a huge magnifying glass."
+  },
+  {
+   "id": "play-probability",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a blue accent dominating the composition. A cheeky vintage robot slot machine with a grin deals out giant dice and coins to a puzzled person, who bets on a coin that has landed on its edge."
+  },
+  {
+   "id": "play-charts",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a yellow accent dominating the composition. A bar chart standing in a police line-up like a suspect, its bars dramatically stretched and one bar wearing a fake moustache; a magnifying glass looms."
+  },
+  {
+   "id": "play-trust",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a green accent dominating the composition. Two round cartoon creatures each hold a coin behind their back, eyeing each other across a little table, one hopeful and one sly, a handshake hovering in between."
+  },
+  {
+   "id": "play-sunkcost",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a purple accent dominating the composition. A person keeps feeding coins into a ridiculous towering casino machine that is already overflowing with their coins, sweating, while a tiny alarm clock and an exit door wait patiently behind them."
+  },
+  {
+   "id": "play-fallforit",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "A game-card illustration, centred, with a orange accent dominating the composition. A fish in a business suit happily reads a newspaper dangling from a fishing hook, while the fisherman above the water grins."
+  },
+  {
+   "id": "play-coffee",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800,
+    1440
+   ],
+   "prompt": "A busy little café: lively older people chatting over coffee at outdoor tables; behind them, through a window, a doctor's office where a tired person in a cardigan politely refuses a cup. The recurring detective: a small, eager detective dog (a scruffy beagle mix) in a mustard trench coat and a tiny deerstalker hat, holding a huge magnifying glass. The dog peeks in from the corner."
+  },
+  {
+   "id": "play-tutors",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800,
+    1440
+   ],
+   "prompt": "A teenager at a desk with a tutor pointing at a notebook; on the wall behind them, a crumpled report card with a sad face drawn on it (no letters); a calendar page torn off. The recurring detective: a small, eager detective dog (a scruffy beagle mix) in a mustard trench coat and a tiny deerstalker hat, holding a huge magnifying glass. The dog sniffs the report card."
+  },
+  {
+   "id": "play-storks",
+   "size": "1536x1024",
+   "quality": "medium",
+   "widths": [
+    800,
+    1440
+   ],
+   "prompt": "A rooftop view of a big town full of chimneys with stork nests on many of them, storks standing proudly; in the streets below, parents push lots of prams. The recurring detective: a small, eager detective dog (a scruffy beagle mix) in a mustard trench coat and a tiny deerstalker hat, holding a huge magnifying glass. The dog looks up from a rooftop, puzzled."
+  },
+  {
+   "id": "play-hero",
+   "size": "1536x1024",
+   "quality": "high",
+   "widths": [
+    800,
+    1440
+   ],
+   "prompt": "A joyful wide banner: the detective dog leads a parade of odd suspects across the page: a coffee cup on legs, a stork carrying a bundle, a bar chart with a moustache, a pair of dice, a slot machine, a newspaper on a fishing hook. Lots of empty off-white space in the middle top for a title. The recurring detective: a small, eager detective dog (a scruffy beagle mix) in a mustard trench coat and a tiny deerstalker hat, holding a huge magnifying glass."
+  }
+ ]
+}
