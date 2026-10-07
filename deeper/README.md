@@ -69,8 +69,7 @@ updated: 2026-10-02
 ```
 
 The `##` headings are the layers and must be exactly these, in this order (Tier B leaves out The full story). The
-build adds the "What brought you here?" chooser after In short, numbers the layers, and ends Sources with the
-works cited. Within a layer, the `###` sections are free.
+build numbers the layers and ends Sources with the works cited. Within a layer, the `###` sections are free.
 
 - **Layer 1, Re-learn**, is for the reader who didn't get it: plain language, new examples, one concept at a time.
   Its citations appear as one line of sources at its end, not as note numbers.
