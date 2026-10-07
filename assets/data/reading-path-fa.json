@@ -2661,11 +2661,11 @@
       "chapter": 7,
       "chapterTitle": "سرچشمه‌های معرفت",
       "url": "fa/guide/07-sources-of-knowledge.html#basic-and-derived-sources",
-      "minutes": 1,
+      "minutes": 2,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/basic-and-derived-sources.html",
+        "url": "fa/deeper/07-sources-of-knowledge/basic-and-derived-sources.html",
         "minutes": 4,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2677,9 +2677,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#perception",
       "minutes": 10,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/perception.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/perception.html",
+        "minutes": 14,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2691,9 +2691,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#memory",
       "minutes": 4,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/memory.html",
+        "url": "fa/deeper/07-sources-of-knowledge/memory.html",
         "minutes": 4,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2705,9 +2705,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#introspection-and-self-knowledge",
       "minutes": 3,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/introspection-and-self-knowledge.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/introspection-and-self-knowledge.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2719,9 +2719,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#reason-and-the-a-priori",
       "minutes": 4,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/reason-and-the-a-priori.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/reason-and-the-a-priori.html",
+        "minutes": 14,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2733,9 +2733,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#testimony",
       "minutes": 11,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/testimony.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/testimony.html",
+        "minutes": 15,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2747,9 +2747,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#inference",
       "minutes": 1,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/inference.html",
+        "url": "fa/deeper/07-sources-of-knowledge/inference.html",
         "minutes": 4,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2761,9 +2761,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#knowledge-by-presence",
       "minutes": 3,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/knowledge-by-presence.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/knowledge-by-presence.html",
+        "minutes": 14,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2775,9 +2775,9 @@
       "url": "fa/guide/07-sources-of-knowledge.html#intuition-emotion-and-other-candidate-sources",
       "minutes": 2,
       "deep": {
-        "url": "deeper/07-sources-of-knowledge/intuition-emotion-and-other-candidate-sources.html",
-        "minutes": 4,
-        "language": "en"
+        "url": "fa/deeper/07-sources-of-knowledge/intuition-emotion-and-other-candidate-sources.html",
+        "minutes": 5,
+        "language": "fa"
       },
       "language": "fa"
     },
