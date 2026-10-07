@@ -4,7 +4,7 @@
    Nothing is marked right or wrong until the end, and the end shows how your answer moved.
 
    Data (one language, already picked by the build):
-   {title, again, done, share, cases: [{id, label, headline, q,
+   {title, again, done, share, good, catch (the verdict headings), cases: [{id, label, headline, q,
      choices: [{id, text, short, why}], best: [choice ids],
      clues: [{title, text, chart: {kind: "bars"|"strip", …}}],
      surprise: {text, after, params}, ideas: [{name, text}], sim: {…}, sandbox: {intro, params, controls},
@@ -142,7 +142,7 @@
       var last = picks[picks.length - 1], ok = (c.best || []).indexOf(last) >= 0;
       if (ok) good++;
       var v = el("div", "cs-verdict " + (ok ? "good" : "catch"));
-      v.appendChild(el("b", "", ok ? T("Well reasoned!", "خوب فکر کردی!") : T("Here's the catch", "نکته این‌جاست")));
+      v.appendChild(el("b", "", ok ? data.good || T("Well reasoned!", "خوب فکر کردی!") : data.catch || T("Here's the catch", "نکته این‌جاست")));
       v.appendChild(el("p", "", choiceOf(c, last).why || ""));
       if (!ok && c.best && c.best.length) {
         v.appendChild(el("p", "cs-best", T("Better answer: ", "جوابِ بهتر: ") + c.best.map(function (id) { return "“" + choiceOf(c, id).text + "”"; }).join(T(" or ", " یا "))));

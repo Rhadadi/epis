@@ -6,6 +6,8 @@ This repository is *Mastering Epistemology*, a bilingual guide published at http
   rules, remaining sections) and `deeper/README.md` (page format) before changing anything.
 - **Children's section** (`kids/`, published at /kids/ and /fa/kids/): read `kids/STYLE.md` first; `tools/kids/check.py` runs in
   `tools/deeper/check.sh`.
+- **Games section** (Baloney Detector, `play/`, published at /play/ and /fa/play/): `tools/play/site_play.py` builds
+  it, `tools/play/check.py` checks it; the engines in `assets/games/` are shared with the kids' site.
 - **Branch:** `claude/epistemology-learning-guide-s6zuob`. Fetch and merge; never rebase or force-push. No pull
   request unless asked.
 - **Never edit** the narrated chapters (`guide/NN-*.md`, `guide/fa/`, audio). `python3 tools/site/frozen.py`

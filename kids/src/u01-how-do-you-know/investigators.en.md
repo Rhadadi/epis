@@ -2,6 +2,9 @@
 desc: Evidence, lucky guesses and the stopped clock: what it takes to really know something.
 ---
 
+::: opener u01-door
+:::
+
 ## Three clues, three strengths
 
 The kids in the story did something smart: they didn't just trust the visitor's words. They asked for **evidence**. But not all evidence is equally strong.

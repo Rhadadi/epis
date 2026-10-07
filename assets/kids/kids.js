@@ -30,7 +30,7 @@
     var total = document.querySelector(".ktotal");
     if (total) {
       var all = Object.keys(state.stars).length;
-      total.textContent = all ? T("You have " + all + " stars so far. Keep going!", "تا حالا " + N(all) + " ستاره گرفته‌ای. ادامه بده!") : "";
+      total.textContent = all ? T("You have " + all + (all === 1 ? " star" : " stars") + " so far. Keep going!", "تا حالا " + N(all) + " ستاره گرفته‌ای. ادامه بده!") : "";
     }
   }
 

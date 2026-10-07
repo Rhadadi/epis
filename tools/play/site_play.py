@@ -200,6 +200,12 @@ ART = {
                   '<path d="M46 42c-5-6 5-10 0-17M62 42c-5-6 5-10 0-17" fill="none"/>'
                   '<circle cx="112" cy="50" r="21" fill="#FFF3C7"/><path d="M127 65l17 17" stroke-width="9"/>'
                   '<path d="M104 46a9 9 0 0 1 9-8" fill="none" stroke="#fff" stroke-width="4"/></g></svg>'),
+    "feet": (f'<svg viewBox="0 0 160 120" aria-hidden="true"><g {_S}>'
+             '<ellipse cx="44" cy="74" rx="15" ry="24" fill="#fff"/><ellipse cx="78" cy="62" rx="12" ry="19" fill="#fff"/>'
+             '<circle cx="112" cy="50" r="21" fill="#FFF3C7"/><path d="M127 65l17 17" stroke-width="9"/></g>'
+             '<g fill="#fff" stroke="#1E2A3B" stroke-width="3"><circle cx="34" cy="42" r="5"/><circle cx="45" cy="39" r="5"/><circle cx="56" cy="43" r="4.5"/>'
+             '<circle cx="70" cy="37" r="4"/><circle cx="79" cy="35" r="4"/><circle cx="88" cy="38" r="3.5"/></g>'
+             '<path d="M104 46a9 9 0 0 1 9-8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>'),
     "dice": (f'<svg viewBox="0 0 160 120" aria-hidden="true"><g {_S}>'
              '<rect x="24" y="34" width="54" height="54" rx="12" fill="#fff" transform="rotate(-12 51 61)"/>'
              '<rect x="84" y="26" width="54" height="54" rx="12" fill="#FFF3C7" transform="rotate(10 111 53)"/></g>'

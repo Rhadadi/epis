@@ -1,0 +1,85 @@
+{
+ "engine": "case",
+ "title": "Who's at the door?",
+ "again": "What do you do now?",
+ "fa": {
+  "title": "کی پشتِ در است؟",
+  "again": "حالا چه کار می‌کنی؟"
+ },
+ "cases": [
+  {
+   "id": "door",
+   "headline": "Knock, knock! A rough voice says: “It's Mum! Open the door!”",
+   "q": "You are a little goat at home. What do you do?",
+   "choices": [
+    {
+     "id": "open",
+     "text": "Open the door",
+     "short": "Open it",
+     "why": "Hmm. Anyone can say “It's Mum”. Saying it is not proof.",
+     "fa": {
+      "text": "در را باز می‌کنم",
+      "short": "باز می‌کنم",
+      "why": "هوم. هر کسی می‌تواند بگوید «منم، مامان». گفتن، مدرک نیست."
+     }
+    },
+    {
+     "id": "proof",
+     "text": "Ask for proof first",
+     "short": "Ask for proof",
+     "why": "Good detectives check before they believe. You asked for proof!",
+     "fa": {
+      "text": "اول نشانه می‌خواهم",
+      "short": "نشانه می‌خواهم",
+      "why": "کارآگاهِ خوب پیش از باور کردن وارسی می‌کند. تو هم نشانه خواستی!"
+     }
+    },
+    {
+     "id": "hide",
+     "text": "Hide under the bed",
+     "short": "Hide",
+     "why": "That is safe. But now you will never find out who it is. Asking for proof is better.",
+     "fa": {
+      "text": "زیرِ تخت قایم می‌شوم",
+      "short": "قایم می‌شوم",
+      "why": "این امن است. ولی هیچ‌وقت نمی‌فهمی کی بود. نشانه خواستن بهتر است."
+     }
+    }
+   ],
+   "best": [
+    "proof"
+   ],
+   "clues": [
+    {
+     "title": "Listen!",
+     "text": "Mum's voice is soft and kind. This voice is rough and low.",
+     "fa": {
+      "title": "گوش کن!",
+      "text": "صدای مامان نرم و مهربان است. این صدا کلفت و خشن است."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "Saying is not proof",
+     "text": "Anyone can say “It's me”. Look for a clue that only the real one would have.",
+     "fa": {
+      "name": "گفتن، مدرک نیست",
+      "text": "هر کسی می‌تواند بگوید «منم». دنبالِ سرنخی بگرد که فقط مامانِ واقعی دارد."
+     }
+    }
+   ],
+   "next": {
+    "text": "Now see what Shangul and Mangul did!",
+    "href": "#story",
+    "fa": {
+     "text": "حالا ببین شنگول و منگول چه کار کردند!"
+    }
+   },
+   "fa": {
+    "headline": "تق‌تق! یک صدای کلفت می‌گوید: «منم، مامان! در را باز کنید!»",
+    "q": "تو یک بزغالهٔ کوچولو توی خانه‌ای. چه کار می‌کنی؟"
+   }
+  }
+ ]
+}

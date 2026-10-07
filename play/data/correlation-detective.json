@@ -348,9 +348,225 @@
    }
   },
   {
+   "id": "breakfast",
+   "levels": [
+    "investigators"
+   ],
+   "label": "A made-up headline",
+   "q": "What do you make of it?",
+   "headline": "Kids who eat breakfast get better marks",
+   "choices": [
+    {
+     "id": "cause",
+     "text": "Breakfast makes you smarter",
+     "short": "Breakfast did it",
+     "why": "Maybe a little, but this study can't show it. Kids who eat breakfast may differ in other ways.",
+     "fa": {
+      "text": "صبحانه آدم را باهوش‌تر می‌کند",
+      "short": "کارِ صبحانه است",
+      "why": "شاید کمی، ولی این پژوهش نمی‌تواند نشانش دهد. بچه‌هایی که صبحانه می‌خورند شاید از جهت‌های دیگری هم فرق داشته باشند."
+     }
+    },
+    {
+     "id": "differ",
+     "text": "Breakfast eaters may differ in other ways",
+     "short": "The groups differ",
+     "why": "Yes. For example, they may sleep more, and sleep helps marks too.",
+     "fa": {
+      "text": "صبحانه‌خورها شاید از جهت‌های دیگری هم فرق داشته باشند",
+      "short": "گروه‌ها فرق دارند",
+      "why": "بله. مثلاً شاید بیشتر بخوابند، و خواب هم به نمره کمک می‌کند."
+     }
+    },
+    {
+     "id": "nothing",
+     "text": "It proves nothing",
+     "short": "Proves nothing",
+     "why": "Too harsh. It's a real clue. It just doesn't show the cause.",
+     "fa": {
+      "text": "هیچ چیزی را ثابت نمی‌کند",
+      "short": "هیچ چیز",
+      "why": "زیادی سخت‌گیرانه است. سرنخِ واقعی است، فقط علت را نشان نمی‌دهد."
+     }
+    },
+    {
+     "id": "more",
+     "text": "I need more information",
+     "short": "Need more info",
+     "why": "Good. Ask: how else are the two groups different?",
+     "fa": {
+      "text": "اطلاعاتِ بیشتری لازم دارم",
+      "short": "اطلاعاتِ بیشتر",
+      "why": "خوب است. بپرس: دو گروه از چه جهت‌های دیگری با هم فرق دارند؟"
+     }
+    }
+   ],
+   "best": [
+    "differ",
+    "more"
+   ],
+   "clues": [
+    {
+     "title": "Who skips breakfast?",
+     "text": "Many kids who skip breakfast went to bed late and woke up in a rush.",
+     "chart": {
+      "kind": "bars",
+      "unit": " h",
+      "max": 12,
+      "caption": "Hours of sleep a night (made-up numbers)",
+      "bars": [
+       {
+        "label": "Breakfast eaters",
+        "value": 9,
+        "fa": {
+         "label": "صبحانه‌خورها"
+        },
+        "hi": true
+       },
+       {
+        "label": "No breakfast",
+        "value": 7,
+        "fa": {
+         "label": "بی‌صبحانه‌ها"
+        }
+       }
+      ],
+      "fa": {
+       "unit": " ساعت",
+       "caption": "ساعتِ خواب در شب (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "چه کسانی صبحانه نمی‌خورند؟",
+      "text": "خیلی از بچه‌هایی که صبحانه نمی‌خورند دیر خوابیده‌اند و با عجله بیدار شده‌اند."
+     }
+    }
+   ],
+   "surprise": {
+    "text": "Here's a made-up school where breakfast does nothing. Only sleep matters, and kids who sleep more have time for breakfast. We ran the same study there:",
+    "after": "Breakfast did nothing here, and breakfast eaters still got better marks. Sleep did it.",
+    "params": {
+     "link": 90,
+     "effect": 0,
+     "n": 2000,
+     "seed": 7,
+     "show": true
+    },
+    "fa": {
+     "text": "این یک مدرسهٔ ساختگی است که در آن صبحانه هیچ اثری ندارد. فقط خواب مهم است، و بچه‌هایی که بیشتر می‌خوابند وقتِ صبحانه خوردن دارند. همان پژوهش را آن‌جا انجام دادیم:",
+     "after": "این‌جا صبحانه هیچ کاری نکرد، و باز صبحانه‌خورها نمرهٔ بهتری گرفتند. کارِ خواب بود."
+    }
+   },
+   "ideas": [
+    {
+     "name": "A hidden factor",
+     "text": "Sleep affects both who eats breakfast and how well kids do at school.",
+     "fa": {
+      "name": "عاملِ پنهان",
+      "text": "خواب هم بر این اثر می‌گذارد که چه کسی صبحانه بخورد و هم بر نمره‌های مدرسه."
+     }
+    },
+    {
+     "name": "The fair test",
+     "text": "To find what breakfast itself does, let a coin decide who eats it. Then the groups differ only by breakfast.",
+     "fa": {
+      "name": "آزمایشِ منصفانه",
+      "text": "برای این‌که بفهمی خودِ صبحانه چه می‌کند، بگذار سکه تعیین کند چه کسی بخورد. آن‌وقت دو گروه فقط در صبحانه فرق دارند."
+     }
+    }
+   ],
+   "sim": {
+    "kind": "confounder",
+    "groups": [
+     "Breakfast eaters",
+     "No breakfast"
+    ],
+    "outcome": "Marks out of 100",
+    "base": 45,
+    "spread": 35,
+    "sd": 8,
+    "lo": 20,
+    "hi": 100,
+    "unit": " marks",
+    "hidden": "Sleep",
+    "hidden_low": "too little",
+    "hidden_high": "plenty",
+    "more": "Breakfast eaters got {pct}% better marks",
+    "less": "Breakfast eaters got {pct}% worse marks",
+    "same": "No difference between the groups",
+    "people": "{n} kids compared",
+    "luck_yes": "a gap this small could be luck",
+    "luck_no": "too big to be luck",
+    "luck_small": "with so few kids, luck can make big gaps",
+    "fixed": "only kids who sleep about the same",
+    "labels": {
+     "link": "How much sleep decides who eats breakfast",
+     "effect": "What breakfast really does",
+     "n": "Kids in the study",
+     "coin": "Flip a coin to decide who eats breakfast",
+     "fix": "Compare only kids who sleep the same",
+     "show": "Show sleep (the hidden factor)",
+     "run": "Run the study again",
+     "fa": {
+      "link": "خواب چقدر تعیین می‌کند چه کسی صبحانه بخورد",
+      "effect": "اثرِ واقعیِ صبحانه",
+      "n": "تعدادِ بچه‌های پژوهش",
+      "coin": "با سکه تعیین کن چه کسی صبحانه بخورد",
+      "fix": "فقط بچه‌هایی با خوابِ یکسان را مقایسه کن",
+      "show": "خواب (عاملِ پنهان) را نشان بده",
+      "run": "پژوهش را دوباره انجام بده"
+     }
+    },
+    "fa": {
+     "groups": [
+      "صبحانه‌خورها",
+      "بی‌صبحانه‌ها"
+     ],
+     "outcome": "نمره از ۱۰۰",
+     "unit": " نمره",
+     "hidden": "خواب",
+     "hidden_low": "کم",
+     "hidden_high": "کافی",
+     "more": "صبحانه‌خورها {pct}٪ نمرهٔ بهتری گرفتند",
+     "less": "صبحانه‌خورها {pct}٪ نمرهٔ بدتری گرفتند",
+     "same": "میانِ دو گروه فرقی نبود",
+     "people": "{n} بچه مقایسه شدند",
+     "luck_yes": "فاصله‌ای به این کوچکی ممکن است شانسی باشد",
+     "luck_no": "بزرگ‌تر از آن است که شانسی باشد",
+     "luck_small": "با این تعدادِ کم، شانس می‌تواند فاصله‌های بزرگ بسازد",
+     "fixed": "فقط بچه‌هایی که تقریباً یک‌اندازه می‌خوابند"
+    }
+   },
+   "sandbox": {
+    "intro": "Your turn. Can you make the gap vanish? Then give breakfast a real effect and see if a fair test finds it.",
+    "params": {
+     "link": 90,
+     "effect": 0,
+     "n": 1000,
+     "seed": 7
+    },
+    "controls": [
+     "coin",
+     "fix",
+     "show",
+     "effect",
+     "n"
+    ],
+    "fa": {
+     "intro": "نوبتِ توست. می‌توانی فاصله را ناپدید کنی؟ بعد به صبحانه اثری واقعی بده و ببین آزمایشِ منصفانه پیدایش می‌کند یا نه."
+    }
+   },
+   "fa": {
+    "label": "یک تیترِ ساختگی",
+    "q": "نظرت چیست؟",
+    "headline": "بچه‌هایی که صبحانه می‌خورند نمره‌های بهتری می‌گیرند"
+   }
+  },
+  {
    "id": "tutors",
    "levels": [
-    "play"
+    "play",
+    "investigators"
    ],
    "label": "A made-up headline",
    "q": "What do you make of it?",
@@ -509,7 +725,8 @@
   {
    "id": "storks",
    "levels": [
-    "play"
+    "play",
+    "investigators"
    ],
    "label": "A made-up headline",
    "q": "What do you make of it?",
@@ -654,6 +871,344 @@
     "label": "یک تیترِ ساختگی",
     "q": "نظرت چیست؟",
     "headline": "شهرهایی که لک‌لکِ بیشتری دارند بچه‌های بیشتری به دنیا می‌آورند"
+   }
+  },
+  {
+   "id": "feet",
+   "levels": [
+    "explorers"
+   ],
+   "label": "A made-up fact",
+   "q": "Why could that be?",
+   "headline": "Kids with bigger feet are better at reading!",
+   "choices": [
+    {
+     "id": "feet",
+     "text": "Big feet help you read",
+     "short": "Big feet help",
+     "why": "Feet don't read! Something else is going on.",
+     "fa": {
+      "text": "پای بزرگ به کتاب خواندن کمک می‌کند",
+      "short": "کارِ پاهاست",
+      "why": "پا که کتاب نمی‌خواند! یک چیزِ دیگر در کار است."
+     }
+    },
+    {
+     "id": "age",
+     "text": "Older kids have bigger feet, and they read better",
+     "short": "Older kids",
+     "why": "Yes! Age is the hidden cause. It makes feet grow, and it makes reading better too.",
+     "fa": {
+      "text": "بچه‌های بزرگ‌تر هم پای بزرگ‌تری دارند هم بهتر می‌خوانند",
+      "short": "بچه‌های بزرگ‌تر",
+      "why": "آفرین! سن علتِ پنهان است. هم پا را بزرگ می‌کند و هم خواندن را بهتر."
+     }
+    },
+    {
+     "id": "luck",
+     "text": "It's just luck",
+     "short": "Luck",
+     "why": "Not luck. It happens every time. But feet are not the reason.",
+     "fa": {
+      "text": "فقط شانس است",
+      "short": "شانس",
+      "why": "شانس نیست. هر بار همین‌طور است. ولی دلیلش پا نیست."
+     }
+    }
+   ],
+   "best": [
+    "age"
+   ],
+   "clues": [
+    {
+     "title": "Look at the kids",
+     "text": "The kids with big feet are about 10 years old. The kids with small feet are about 6.",
+     "chart": {
+      "kind": "bars",
+      "unit": " years",
+      "max": 12,
+      "caption": "How old are they? (made-up numbers)",
+      "bars": [
+       {
+        "label": "Big feet",
+        "value": 10,
+        "fa": {
+         "label": "پای بزرگ"
+        },
+        "hi": true
+       },
+       {
+        "label": "Small feet",
+        "value": 6,
+        "fa": {
+         "label": "پای کوچک"
+        }
+       }
+      ],
+      "fa": {
+       "unit": " سال",
+       "caption": "چند سالشان است؟ (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "بچه‌ها را نگاه کن",
+      "text": "بچه‌های پابزرگ حدودِ ۱۰ سال دارند. بچه‌های پاکوچک حدودِ ۶ سال."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "A hidden cause",
+     "text": "Something else can make two things go up together. Look for it before you blame one on the other.",
+     "fa": {
+      "name": "علتِ پنهان",
+      "text": "یک چیزِ دیگر می‌تواند دو چیز را با هم بالا ببرد. پیش از این‌که یکی را تقصیرِ دیگری بدانی، دنبالش بگرد."
+     }
+    }
+   ],
+   "sim": {
+    "kind": "confounder",
+    "groups": [
+     "Big feet",
+     "Small feet"
+    ],
+    "outcome": "Reading score",
+    "base": 20,
+    "spread": 60,
+    "sd": 8,
+    "lo": 0,
+    "hi": 100,
+    "unit": " points",
+    "hidden": "Age",
+    "hidden_low": "younger",
+    "hidden_high": "older",
+    "more": "Big-feet kids read {pct}% better",
+    "less": "Big-feet kids read {pct}% worse",
+    "same": "No difference!",
+    "people": "{n} kids",
+    "luck_yes": "this could just be luck",
+    "luck_no": "too big to be luck",
+    "luck_small": "with so few kids, luck can make big gaps",
+    "fixed": "only 8-year-olds",
+    "labels": {
+     "fix": "Only look at 8-year-olds",
+     "show": "Show age (the hidden cause)",
+     "run": "Measure again",
+     "fa": {
+      "fix": "فقط بچه‌های ۸ ساله را نگاه کن",
+      "show": "سن (علتِ پنهان) را نشان بده",
+      "run": "دوباره اندازه بگیر"
+     }
+    },
+    "fa": {
+     "groups": [
+      "پای بزرگ",
+      "پای کوچک"
+     ],
+     "outcome": "امتیازِ خواندن",
+     "unit": " امتیاز",
+     "hidden": "سن",
+     "hidden_low": "کوچک‌تر",
+     "hidden_high": "بزرگ‌تر",
+     "more": "بچه‌های پابزرگ {pct}٪ بهتر خواندند",
+     "less": "بچه‌های پابزرگ {pct}٪ بدتر خواندند",
+     "same": "هیچ فرقی نیست!",
+     "people": "{n} بچه",
+     "luck_yes": "این ممکن است فقط شانس باشد",
+     "luck_no": "بزرگ‌تر از آن است که شانس باشد",
+     "luck_small": "با این تعدادِ کم، شانس می‌تواند فاصله‌های بزرگ بسازد",
+     "fixed": "فقط بچه‌های ۸ ساله"
+    }
+   },
+   "sandbox": {
+    "intro": "Your turn! Tap “Only look at 8-year-olds”. What happens to the gap?",
+    "params": {
+     "link": 100,
+     "effect": 0,
+     "n": 1000,
+     "seed": 7
+    },
+    "controls": [
+     "fix",
+     "show"
+    ],
+    "fa": {
+     "intro": "نوبتِ توست! روی «فقط بچه‌های ۸ ساله را نگاه کن» بزن. فاصله چه می‌شود؟"
+    }
+   },
+   "fa": {
+    "label": "یک خبرِ ساختگی",
+    "q": "چرا ممکن است این‌طور باشد؟",
+    "headline": "بچه‌هایی که پاهای بزرگ‌تری دارند بهتر کتاب می‌خوانند!"
+   }
+  },
+  {
+   "id": "icecream",
+   "levels": [
+    "explorers"
+   ],
+   "label": "A made-up fact",
+   "q": "Why could that be?",
+   "headline": "When kids eat more ice cream, more kids get sunburnt!",
+   "choices": [
+    {
+     "id": "ice",
+     "text": "Ice cream causes sunburn",
+     "short": "Ice cream did it",
+     "why": "Ice cream can't burn your skin. Look for something that causes both.",
+     "fa": {
+      "text": "بستنی آدم را آفتاب‌سوخته می‌کند",
+      "short": "کارِ بستنی است",
+      "why": "بستنی که پوست را نمی‌سوزاند. دنبالِ چیزی بگرد که هر دو را باعث می‌شود."
+     }
+    },
+    {
+     "id": "sun",
+     "text": "Sunny days bring both",
+     "short": "Sunny days",
+     "why": "Yes! On hot, sunny days we eat ice cream, and we also get sunburnt.",
+     "fa": {
+      "text": "روزهای آفتابی هر دو را می‌آورند",
+      "short": "روزِ آفتابی",
+      "why": "آفرین! روزهای گرم و آفتابی هم بستنی می‌خوریم و هم آفتاب‌سوخته می‌شویم."
+     }
+    },
+    {
+     "id": "burn",
+     "text": "Sunburn makes you want ice cream",
+     "short": "Sunburn first",
+     "why": "Funny idea! But the real cause is the sunny weather.",
+     "fa": {
+      "text": "آفتاب‌سوختگی آدم را هوسِ بستنی می‌اندازد",
+      "short": "اول آفتاب‌سوختگی",
+      "why": "فکرِ بامزه‌ای است! ولی علتِ واقعی هوای آفتابی است."
+     }
+    }
+   ],
+   "best": [
+    "sun"
+   ],
+   "clues": [
+    {
+     "title": "Look at the weather",
+     "text": "Most ice creams are eaten on hot, sunny days. That is when we get sunburnt, too.",
+     "chart": {
+      "kind": "bars",
+      "unit": "",
+      "caption": "Ice creams sold in a day (made-up numbers)",
+      "bars": [
+       {
+        "label": "Sunny days",
+        "value": 90,
+        "fa": {
+         "label": "روزهای آفتابی"
+        },
+        "hi": true
+       },
+       {
+        "label": "Rainy days",
+        "value": 15,
+        "fa": {
+         "label": "روزهای بارانی"
+        }
+       }
+      ],
+      "fa": {
+       "caption": "بستنیِ فروخته‌شده در یک روز (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "هوا را نگاه کن",
+      "text": "بیشترِ بستنی‌ها در روزهای گرم و آفتابی خورده می‌شوند. همان روزهایی که آفتاب‌سوخته هم می‌شویم."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "A hidden cause",
+     "text": "Something else can make two things go up together. Look for it before you blame one on the other.",
+     "fa": {
+      "name": "علتِ پنهان",
+      "text": "یک چیزِ دیگر می‌تواند دو چیز را با هم بالا ببرد. پیش از این‌که یکی را تقصیرِ دیگری بدانی، دنبالش بگرد."
+     }
+    }
+   ],
+   "fa": {
+    "label": "یک خبرِ ساختگی",
+    "q": "چرا ممکن است این‌طور باشد؟",
+    "headline": "وقتی بچه‌ها بستنیِ بیشتری می‌خورند، بچه‌های بیشتری آفتاب‌سوخته می‌شوند!"
+   }
+  },
+  {
+   "id": "umbrellas",
+   "levels": [
+    "explorers"
+   ],
+   "label": "A made-up fact",
+   "q": "Why could that be?",
+   "headline": "The more umbrellas we see, the more wet shoes there are!",
+   "choices": [
+    {
+     "id": "umb",
+     "text": "Umbrellas make shoes wet",
+     "short": "Umbrellas did it",
+     "why": "An umbrella keeps you dry! Something else makes shoes wet.",
+     "fa": {
+      "text": "چتر کفش را خیس می‌کند",
+      "short": "کارِ چترهاست",
+      "why": "چتر آدم را خشک نگه می‌دارد! چیزِ دیگری کفش را خیس می‌کند."
+     }
+    },
+    {
+     "id": "rain",
+     "text": "Rain brings umbrellas and wet shoes",
+     "short": "Rain",
+     "why": "Right! Rain is the hidden cause of both.",
+     "fa": {
+      "text": "باران هم چتر می‌آورد هم کفشِ خیس",
+      "short": "باران",
+      "why": "درست است! باران علتِ پنهانِ هر دو است."
+     }
+    },
+    {
+     "id": "luck",
+     "text": "It just happens",
+     "short": "It just happens",
+     "why": "It happens for a reason: the rain.",
+     "fa": {
+      "text": "همین‌طوری پیش می‌آید",
+      "short": "همین‌طوری",
+      "why": "دلیل دارد: باران."
+     }
+    }
+   ],
+   "best": [
+    "rain"
+   ],
+   "clues": [
+    {
+     "title": "Look outside",
+     "text": "On days with lots of umbrellas, it is raining.",
+     "fa": {
+      "title": "بیرون را نگاه کن",
+      "text": "روزهایی که چترِ زیادی می‌بینیم، باران می‌بارد."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "A hidden cause",
+     "text": "Something else can make two things go up together. Look for it before you blame one on the other.",
+     "fa": {
+      "name": "علتِ پنهان",
+      "text": "یک چیزِ دیگر می‌تواند دو چیز را با هم بالا ببرد. پیش از این‌که یکی را تقصیرِ دیگری بدانی، دنبالش بگرد."
+     }
+    }
+   ],
+   "fa": {
+    "label": "یک خبرِ ساختگی",
+    "q": "چرا ممکن است این‌طور باشد؟",
+    "headline": "هر چه چترِ بیشتری می‌بینیم، کفش‌های خیسِ بیشتری هست!"
    }
   }
  ]

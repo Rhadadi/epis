@@ -2,6 +2,9 @@
 desc: Knowing or guessing? An old Persian tale about three young goats, a sneaky wolf and the best clue of all.
 ---
 
+::: opener u01-door
+:::
+
 ## Knowing or guessing?
 
 Ava's cookie is gone!

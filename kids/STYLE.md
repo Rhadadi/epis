@@ -38,8 +38,12 @@ kids/src/<unit>/explorers.<lang>.md   the Explorers lesson (ages 7–10)
 kids/src/<unit>/investigators.<lang>.md  the Investigators lesson (ages 11–14)
 kids/src/<unit>/grownups.<lang>.md    notes for parents and teachers
 kids/games/<id>.json                  games and quizzes: English at the top level, Persian under "fa";
-                                      cards and questions may carry "levels"
+                                      cards, questions and cases may carry "levels"
+kids/arcade.json                      "Play now" games on the kids' home, shared with Baloney Detector (/play/);
+                                      their data are in play/data/<id>.json, with cases for "explorers" and
+                                      "investigators" next to the grown-ups' ("play")
 kids/words.json, stories.json, books.json, cast.json, voices.json, grownups.<lang>.md
+kids/units.json "hook"                the curious question on each quest card ("Knock, knock! Who's at the door?")
 tools/kids/                           kidslib.py, site_kids.py (pages), check.py, narrate.py
 assets/kids/                          kids.css, kids.js, player.js, games/*.js, audio/, sync/, art/
 ```
@@ -49,9 +53,12 @@ A draft unit is built only with `EPIS_KIDS_DRAFTS=1`. Narrate a story with
 
 ## Lesson anatomy (blocks, in this order)
 
-The story comes first on both level pages automatically. Ordinary Markdown may sit between the blocks.
+Game first: a unit opens with a quick decision (the `opener`, a case game: a situation, a first guess, a clue,
+a second chance, then "let's see what happened" into the story). The story comes next on both level pages
+automatically. Ordinary Markdown may sit between the blocks.
 
 ```
+::: opener <game-id>   a case game (assets/games/case.js) shown above the story; one case, one clue
 ::: think              2–3 open questions (no single right answer)
 ::: bigidea            one sentence
 ::: words              word ids from kids/words.json, separated by commas

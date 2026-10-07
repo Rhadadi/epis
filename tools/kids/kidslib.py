@@ -24,7 +24,7 @@ SRC = KIDS / "src"
 LANGS = ("en", "fa")
 LEVELS = ("explorers", "investigators")
 # the blocks of a lesson page, in the order they must appear (further: Investigators only)
-BLOCK_ORDER = ["think", "bigidea", "words", "tryit", "check", "talk", "further"]
+BLOCK_ORDER = ["opener", "think", "bigidea", "words", "tryit", "check", "talk", "further"]
 REQUIRED = {"explorers": ["think", "bigidea", "words", "tryit", "check", "talk"],
             "investigators": ["think", "bigidea", "words", "tryit", "check", "talk", "further"]}
 BLOCK = re.compile(r"(?ms)^::: *([a-z]+)(?: +([^\n]*?))? *\n(.*?)^::: *$\n?")
@@ -189,5 +189,11 @@ def missing_fa(obj, path=""):
     return out
 
 
+def game_path(gid):
+    """A game's data: the kids' own (kids/games/) or one shared with Baloney Detector (play/data/)."""
+    own = KIDS / "games" / f"{gid}.json"
+    return own if own.exists() else ROOT / "play" / "data" / f"{gid}.json"
+
+
 def game(gid):
-    return read_json(KIDS / "games" / f"{gid}.json")
+    return read_json(game_path(gid))

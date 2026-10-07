@@ -12,8 +12,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "play"))
 import kidslib as K  # noqa: E402
 import site_kids  # noqa: E402
+import site_play  # noqa: E402
 
 LIMITS = {  # reading level: English Flesch–Kincaid grade; Persian average sentence length (words)
     "explorers": {"fk": 4.5, "fa_sentence": 12.0, "new_words": 5},
@@ -69,8 +71,9 @@ def check_unit(u, words):
             for k, arg, inner in K.lesson_blocks(text):
                 if k == "words":
                     ids += [w.strip() for w in re.split(r"[,\s]+", inner.strip()) if w.strip()]
-                if k in ("tryit", "check"):
-                    errs += [f"kids/games/{arg}.json: {e}" for e in game_problems(arg)]
+                if k in ("tryit", "check", "opener"):
+                    errs += [f"{K.game_path(arg).relative_to(K.ROOT)}: {e}" for e in game_problems(arg)]
+                    errs += [f"{K.game_path(arg).relative_to(K.ROOT)}: {e}" for e in case_level_problems(arg, level, lang)]
             if len(ids) > lim["new_words"]:
                 errs.append(f"{level}.{lang}.md: {len(ids)} new words (limit {lim['new_words']})")
             for w in ids:
@@ -84,8 +87,41 @@ def check_unit(u, words):
     return sorted(set(errs))
 
 
+def case_text(g):
+    """Everything a child reads in a case game (one language, one level), as plain sentences."""
+    out = []
+    for c in g.get("cases", []):
+        out += [c.get("headline", ""), c.get("q", "")]
+        out += [x for ch in c.get("choices", []) for x in (ch.get("text", ""), ch.get("why", ""))]
+        out += [x for cl in c.get("clues", []) for x in (cl.get("title", ""), cl.get("text", ""))]
+        out += [x for it in c.get("ideas", []) for x in (it.get("name", ""), it.get("text", ""))]
+        out += [(c.get("surprise") or {}).get("text", ""), (c.get("surprise") or {}).get("after", ""), (c.get("sandbox") or {}).get("intro", "")]
+    # a heading or choice without a full stop still ends a sentence
+    return "\n\n".join(t if t.rstrip().endswith((".", "!", "?", "؟", ":")) else t + "." for t in out if t.strip())
+
+
+def case_level_problems(gid, level, lang):
+    g = K.game(gid)
+    if g.get("engine") != "case":
+        return []
+    lim = LIMITS[level]
+    text = case_text(site_kids.for_level(K.pick(g, lang), level))
+    if not text:
+        return [f"{level}: no cases for this level"]
+    if lang == "en":
+        fk = K.flesch_kincaid(text)
+        return [f"{level}: reading level {fk:.1f} is above grade {lim['fk']}"] if fk > lim["fk"] else []
+    avg, _ = K.persian_level(text)
+    errs = [f"{level} (fa): sentences average {avg:.1f} words (limit {lim['fa_sentence']})"] if avg > lim["fa_sentence"] else []
+    if re.search(r"[يك]", text):
+        errs.append(f"{level} (fa): Arabic ي or ك (use ی and ک)")
+    return errs
+
+
 def game_problems(gid):
     g = K.game(gid)
+    if g.get("engine") == "case":
+        return [f"no Persian for {p}" for p in site_play.missing_fa(g)] + site_play.case_problems(g)
     errs = [f"no Persian for {p}" for p in K.missing_fa(g)]
     if g.get("engine") == "sorter":
         bins = {b["id"] for b in g.get("buckets", [])}
@@ -179,6 +215,12 @@ def main():
     live = [u for u in K.units()["units"] if site_kids.published(u)]
     for u in live:
         errs += [f"{u['id']}: {e}" for e in check_unit(u, words)]
+    for a in K.read_json(K.KIDS / "arcade.json")["games"]:
+        errs += [f"kids/arcade.json {a['id']}: no Persian for {p}" for p in site_play.missing_fa(a)]
+        errs += [f"arcade {a['id']}: {e}" for e in game_problems(a["id"])]
+        for level in K.LEVELS:
+            for lang in K.LANGS:
+                errs += [f"arcade {a['id']}: {e}" for e in case_level_problems(a["id"], level, lang)]
     errs += check_books()
     errs += check_built()
     mb = media_mb()

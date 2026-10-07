@@ -268,3 +268,21 @@ html[data-kids] .kmore a{padding:10px 20px;border-radius:999px;background:var(--
 html[data-kids] .klevels a{color:#fff}
 html[data-kids] .klevels a[aria-current]{color:var(--k-q-d)}
 .kstory h2 .kicker{display:table}
+
+/* game first: the opener before the story, the arcade, and quest cards with a hook question */
+.k-opener{background:var(--k-card);box-shadow:0 6px 0 var(--k-pink);border:3px solid var(--k-pink-t)}
+.k-opener .kblk-k{background:var(--k-pink);color:#fff}
+.k-opener .kblk-k::before{background-color:#fff;content:"!";color:var(--k-pink);display:flex;align-items:center;justify-content:center;font-weight:800}
+.kopen{padding-bottom:20px}
+.karc{--k-q:var(--k-pink);--k-q-d:var(--k-pink-d);--k-q-t:var(--k-pink-t)}
+.karc .kblk.kopen{margin-top:1.2em}
+.karcade{margin:34px 0 10px}
+.karcade h2{font-size:1.7rem;margin:0 0 14px;text-align:center}
+
+.ktrail{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+.khook{font-family:var(--k-display);font-weight:600;font-size:1.12rem;line-height:1.25;color:var(--k-ink)}
+.kstop-t{font-family:var(--k-font);font-size:.85rem;color:var(--k-ink-2);margin-top:2px}
+.kstop .soon .khook{color:var(--k-ink-2)}
+.kstop .pgo{margin-top:10px;font-size:.92rem;padding:4px 14px}
+.kstop.on a{border:3px solid var(--k-q)}
+.karcade .ggrid{max-width:540px;margin:0 auto;grid-template-columns:1fr}
