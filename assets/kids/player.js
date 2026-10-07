@@ -15,7 +15,7 @@
     var wb = words.map(function (w) { return +w.getAttribute("data-b"); });
     var lb = lines.map(function (l) { return +l.getAttribute("data-b"); });
     var curW = -1, curL = -1, raf = 0, userScroll = 0;
-    var T = window.Kids ? Kids.T : function (en) { return en; };
+    var T = window.Games ? Games.T : function (en) { return en; };
     function find(arr, t) { var lo = 0, hi = arr.length - 1, r = -1; while (lo <= hi) { var m = (lo + hi) >> 1; if (arr[m] <= t) { r = m; lo = m + 1; } else hi = m - 1; } return r; }
     function tick() {
       var t = audio.currentTime;

@@ -1,25 +1,6 @@
-/* How Do You Know? — the children's section. Loaded after site.css on kids pages only (html[data-kids]).
+/* How Do You Know? — the children's section. Loaded after site.css and games/games.css (the colour tokens) on
+   kids pages only (html[data-kids]).
    Bright, rounded and playful: chunky buttons with a "pressable" edge, one colour per quest, big type. */
-html[data-kids]{
-  --k-bg:#FFF8EE; --k-card:#FFFFFF; --k-ink:#1E2A3B; --k-ink-2:#4A5568; --k-line:rgba(30,42,59,.10);
-  --k-orange:#FF7A2F; --k-orange-d:#D85E17; --k-orange-t:#FFE9D9;
-  --k-blue:#2F86FF;   --k-blue-d:#1B66D1;   --k-blue-t:#DDEBFF;
-  --k-green:#1FB57A;  --k-green-d:#148B5C;  --k-green-t:#D6F5E8;
-  --k-purple:#8B5CF6; --k-purple-d:#6D3FD8; --k-purple-t:#EBE3FF;
-  --k-pink:#FF4F8B;   --k-pink-d:#D93570;   --k-pink-t:#FFE0EC;
-  --k-yellow:#FFC92E; --k-yellow-d:#E0A800; --k-yellow-t:#FFF3C7;
-  --k-q:var(--k-orange); --k-q-d:var(--k-orange-d); --k-q-t:var(--k-orange-t);
-  --k-display:'Fredoka','Atkinson Hyperlegible',system-ui,sans-serif;
-  --k-font:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-  --k-r:22px;
-  --bg:var(--k-bg); --surface:var(--k-card); --ink:var(--k-ink); --accent:var(--k-orange-d);
-}
-html[data-kids][lang="fa"]{--k-display:'Vazirmatn',Tahoma,sans-serif;--k-font:'Vazirmatn',Tahoma,sans-serif}
-html[data-kids][data-theme="dark"]{
-  --k-bg:#131A2A; --k-card:#1C2538; --k-ink:#F2F5FA; --k-ink-2:#B8C2D3; --k-line:rgba(255,255,255,.10);
-  --k-orange-t:#3A2A22; --k-blue-t:#1D2C49; --k-green-t:#173A31; --k-purple-t:#2B2450; --k-pink-t:#3D2032; --k-yellow-t:#3A321A;
-  --accent:#FFA060;
-}
 html[data-kids] body{font-family:var(--k-font);font-size:19px;line-height:1.62;color:var(--k-ink);
   background:var(--k-bg) radial-gradient(circle at 1px 1px,var(--k-line) 1px,transparent 0) 0 0/26px 26px}
 html[data-kids] .prose{font-family:var(--k-font);color:var(--k-ink)}

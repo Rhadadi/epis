@@ -1,7 +1,7 @@
 /* Quick check: one question at a time; every answer, right or wrong, gets an explanation. A star for finishing. */
 (function () {
   "use strict";
-  Kids.register("quiz", function (box, data, K) {
+  Games.register("quiz", function (box, data, K) {
     var T = K.T, N = K.N, el = K.el;
     var items = data.items, i, right;
     function start() { i = 0; right = 0; show(); }

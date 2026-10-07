@@ -1,7 +1,7 @@
 /* Sorter: one card at a time; tap the bucket it belongs in; every answer is explained. A star for finishing. */
 (function () {
   "use strict";
-  Kids.register("sorter", function (box, data, K) {
+  Games.register("sorter", function (box, data, K) {
     var T = K.T, N = K.N, el = K.el;
     var cards, i, right;
     function start() { cards = K.shuffle(data.cards); i = 0; right = 0; show(); }
