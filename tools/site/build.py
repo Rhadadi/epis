@@ -1976,13 +1976,17 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                     L(f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.",
                       f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio}{fa_audio('', ' به انگلیسی', ' به فارسی یا انگلیسی')}، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
              + "</div>")
+    play = (f'<a class="playband" href="{h}play/"><span class="playband-art">{site_play.ART["detective"]}</span>'
+            f'<span class="playband-t"><span class="kicker">{L("Play", "بازی کنید")}</span><b>{L("Baloney Detector", "چرندسنج")}</b>'
+            f'<span class="sub">{L("Games for people who enjoy being wrong. First up: coffee drinkers live 18% longer. Did the coffee do it?", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید. اولین بازی: قهوه‌خورها ۱۸٪ بیشتر عمر می‌کنند. کارِ قهوه بود؟")}</span></span>'
+            f'<span class="go">{L("Play", "بازی کنید")} {icon("arrow")}</span></a>')
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
              f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
     body = (f'{head}<main id="main">'
             f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="{h}reading-path/">{L("A path built around your question →", "مسیری بر پایهٔ پرسش شما ←")}</a></div>'
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
-            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
+            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}{play}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
             + about_site(root) +
             f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("The course", "دوره")}</span>'
@@ -2201,7 +2205,7 @@ def build_credits(art):
     head = hero(art, "ch18", root, kicker=L("Credits", "منابع"), title=L("Artwork, sound and type", "آثار هنری، صدا و حروف"), cls="band")
     faces = [("Cormorant Garamond", "cormorant-garamond"), ("Source Serif 4", "source-serif-4"), ("Space Grotesk", "space-grotesk"),
              ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Noto Naskh Arabic", "noto-naskh-arabic"),
-             ("Atkinson Hyperlegible", "atkinson-hyperlegible")]
+             ("Atkinson Hyperlegible", "atkinson-hyperlegible"), ("Fredoka", "fredoka")]
     names = [f'<a href="{root}assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
     fonts = L(", ".join(names[:-1]) + " and " + names[-1], "، ".join(names[:-1]) + " و " + names[-1])
     audio = f"{home(root)}guide/audio/about.html"

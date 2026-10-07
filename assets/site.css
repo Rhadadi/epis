@@ -1571,3 +1571,20 @@ html[lang="fa"] .p-check p{font-family:var(--fa);line-height:1.9}
 @media(max-width:560px){.chart-zoom button[data-zoom="out"]{display:none}.lg-keys{display:none}}
 @media(prefers-reduced-motion:reduce){.wheel .sn.here circle{animation:none}}
 .wheel .sn.sel .hit{fill:var(--accent);fill-opacity:.13}
+
+/* home: the way into the games section (Baloney Detector) */
+.playband{display:flex;align-items:center;gap:24px;margin-top:24px;padding:18px 24px;border-radius:14px;background:#FF4F8B;color:#1E2A3B;
+  text-decoration:none;box-shadow:0 6px 0 #D93570;transition:transform .15s ease,box-shadow .15s ease}
+.playband:hover{transform:translateY(-3px);box-shadow:0 9px 0 #D93570}
+.playband:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.playband-art{flex:none;width:150px;background:rgba(255,255,255,.28);border-radius:12px;padding:6px}
+.playband-art svg{display:block;width:100%;height:auto}
+.playband .kicker{color:#1E2A3B;opacity:.85}
+.playband b{display:block;font-family:var(--display);font-size:2rem;line-height:1.1;color:#1E2A3B}
+.playband .sub{display:block;margin-top:6px;font-family:var(--sans);font-size:1rem;line-height:1.45;color:#1E2A3B;max-width:52ch}
+.playband .go{margin-inline-start:auto;flex:none;display:inline-flex;align-items:center;gap:8px;background:#1E2A3B;color:#fff;padding:10px 20px;
+  border-radius:999px;font-family:var(--sans);font-weight:600}
+.playband .go .icon{width:16px;height:16px}
+html[dir="rtl"] .playband .go .icon{transform:scaleX(-1)}
+@media(max-width:700px){.playband{flex-direction:column;align-items:flex-start}.playband .go{margin-inline-start:0}.playband-art{width:120px}}
+@media (prefers-reduced-motion:reduce){.playband:hover{transform:none}}
