@@ -1,0 +1,36 @@
+{
+  "engine": "sorter",
+  "title": "Easy to fake, or hard to fake?",
+  "done": "The best checks are the ones a faker would fail, like the secret song.",
+  "fa": {"title": "قلابی کردنش راحت است یا سخت؟", "done": "بهترین امتحان‌ها آن‌هایی‌اند که آدمِ حقه‌باز در آن‌ها رد شود، مثلِ آوازِ مخصوص."},
+  "buckets": [
+    {"id": "easy", "label": "Easy to fake", "hint": "a wolf could pass it", "fa": {"label": "قلابی کردنش راحت است", "hint": "گرگ هم قبول می‌شود"}},
+    {"id": "hard", "label": "Hard to fake", "hint": "only Mother could pass it", "fa": {"label": "قلابی کردنش سخت است", "hint": "فقط مادر قبول می‌شود"}}
+  ],
+  "cards": [
+    {"text": "She has a soft voice.", "bucket": "easy",
+     "why": "The wolf made his voice soft with honey.",
+     "fa": {"text": "صدایش نرم است.", "why": "گرگ با عسل صدایش را نرم کرد."}},
+    {"text": "She has white feet.", "bucket": "easy",
+     "why": "A little flour made the wolf's feet white.",
+     "fa": {"text": "پاهایش سفید است.", "why": "کمی آرد پاهای گرگ را سفید کرد."}},
+    {"text": "She sings our secret song, every word.", "bucket": "hard",
+     "why": "Only Mother knows the song, so a wolf would fail.",
+     "fa": {"text": "آوازِ مخصوصِ ما را کامل می‌خواند.", "why": "فقط مادر آواز را بلد است، پس گرگ رد می‌شود."}},
+    {"text": "She says, \"It's me, your mother!\"", "bucket": "easy",
+     "why": "Anyone can say \"It's me\". Saying it isn't evidence.",
+     "fa": {"text": "می‌گوید: «منم، مادرتان!»", "why": "هر کسی می‌تواند بگوید «منم». گفتنش نشانه نیست."}},
+    {"text": "She brought some grass.", "bucket": "easy",
+     "why": "A wolf can pick grass too.",
+     "fa": {"text": "کمی علف آورده.", "why": "گرگ هم می‌تواند علف بچیند."}},
+    {"text": "She answers a secret question only our family knows.", "bucket": "hard",
+     "why": "Like the song: a stranger wouldn't know the answer.",
+     "fa": {"text": "به سؤالی رمزی جواب می‌دهد که فقط خانوادهٔ ما می‌داند.", "why": "مثلِ آواز: غریبه جوابش را نمی‌داند."}},
+    {"text": "She knocks three times.", "bucket": "easy", "levels": ["investigators"],
+     "why": "If the wolf has heard her knock before, he can copy it. A pattern that others can hear is easy to fake.",
+     "fa": {"text": "سه بار در می‌زند.", "why": "اگر گرگ قبلاً در زدنش را شنیده باشد، می‌تواند تقلیدش کند. الگویی که دیگران می‌شنوند، راحت قلابی می‌شود."}},
+    {"text": "Through the window you can see her whole face and her horns.", "bucket": "hard", "levels": ["investigators"],
+     "why": "Hard to fake: a wolf can whiten a paw, but not turn into a goat. (Unless the window is dirty…)",
+     "fa": {"text": "از پنجره کلِ صورت و شاخ‌هایش را می‌بینی.", "why": "قلابی کردنش سخت است: گرگ می‌تواند پایش را سفید کند، ولی نمی‌تواند بز شود. (مگر این‌که شیشه کثیف باشد…)"}}
+  ]
+}

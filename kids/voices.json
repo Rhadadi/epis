@@ -1,0 +1,24 @@
+{
+  "model": "eleven_v4_turbo",
+  "note": "One ElevenLabs voice per role, per language. Persian has two native voices in the account (Roya, Kourosh); the other Persian roles share Roya until more Persian voices are designed.",
+  "en": {
+    "narrator": {"id": "JBFqnCBsd6RMkjVDRZzb", "name": "George"},
+    "grandma": {"id": "RILOU7YmBhvwJGDGjNmP", "name": "Jane"},
+    "mother": {"id": "pFZP5JQG7iQjIQuC4Bku", "name": "Lily"},
+    "wolf": {"id": "N2lVS1w4EtoT3dr4eOWO", "name": "Callum"},
+    "shangul": {"id": "FGY2WhTYpPnrIDTdsKH5", "name": "Laura"},
+    "mangul": {"id": "TX3LPaxmHKxFdv7VOQHJ", "name": "Liam"},
+    "grape": {"id": "cgSgspJ2msm6clMCkdW9", "name": "Jessica"},
+    "kids": {"id": "cgSgspJ2msm6clMCkdW9", "name": "Jessica"}
+  },
+  "fa": {
+    "narrator": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"},
+    "grandma": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"},
+    "mother": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"},
+    "wolf": {"id": "VKDkQOjcRZb7aNtJGaWt", "name": "Kourosh"},
+    "shangul": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"},
+    "mangul": {"id": "VKDkQOjcRZb7aNtJGaWt", "name": "Kourosh"},
+    "grape": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"},
+    "kids": {"id": "ndcUYGFbbd96WXiZVVaQ", "name": "Roya"}
+  }
+}

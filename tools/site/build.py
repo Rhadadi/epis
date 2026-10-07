@@ -27,6 +27,7 @@ diagrams also needs Node with the playwright-core and mermaid packages and a
 Chromium (see render_mermaid.cjs); diagrams already in assets/diagrams/ are reused.
 """
 
+import base64
 import hashlib
 import html
 import json
@@ -42,6 +43,8 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 from PIL import Image
 from reading_path import build_catalogue as build_reading_catalogue, page_body as reading_path_body
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "kids"))
+import site_kids  # noqa: E402  the children's section (tools/kids/)
 
 ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
@@ -598,7 +601,10 @@ def chapter_menu(root):
 
 
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
-          alt=None, bilingual=False, chapter_nav="", extra_scripts=""):
+          alt=None, bilingual=False, chapter_nav="", extra_scripts="", kids=False):
+    if kids:  # the children's section has its own shell: no sign-in, notes, AI or adult search
+        return kids_shell(root=root, title=title, desc=desc, body=body, current=current, extra_head=extra_head, alt=alt,
+                          extra_scripts=extra_scripts)
     h = home(root)
     chapter_nav = chapter_nav or chapter_menu(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
@@ -672,6 +678,87 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 </body>
 </html>
 """
+
+
+def kids_shell(*, root, title, desc, body, current="", extra_head="", alt=None, extra_scripts=""):
+    """The shell of a page in the children's section (kids/): the site's head, theme and fonts, a simple header
+    (quests, words, books, grown-ups, language, theme) and a small footer. It loads no account, notes, AI or
+    learning scripts (so nothing signs anyone in or sends anything anywhere), and a content-security policy
+    lets the page load nothing but this site's own files."""
+    h = home(root)
+    k = f"{h}kids/"
+    here = ' aria-current="page"'
+    nav = [("quests", k, "map", L("Quests", "ماجراها")), ("words", f"{k}words/", "grid", L("Words", "واژه‌ها")),
+           ("books", f"{k}books/", "book", L("Books", "کتاب‌ها")), ("grownups", f"{k}grownups/", "user", L("Grown-ups", "بزرگ‌ترها"))]
+    links = "".join(f'<a href="{href}"{here if key == current else ""} title="{label}">{icon(ic)}<span>{label}</span></a>'
+                    for key, href, ic, label in nav)
+    lang_btn = (f'<a class="tbtn lang" id="lang" href="{alt}" hreflang="{L("fa", "en")}" lang="{L("fa", "en")}" '
+                f'data-set-site-lang="{L("fa", "en")}" title="{L("فارسی", "English")}">{L("فا", "EN")}</a>') if alt else ""
+    alt_link = f'<link rel="alternate" hreflang="{L("fa", "en")}" href="{alt}">' if alt else ""
+    attrs = ' lang="fa" dir="rtl" data-lang="fa"' if LANG == "fa" else ' lang="en"'
+    boot_hash = base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
+    csp = (f"default-src 'self'; script-src 'self' 'sha256-{boot_hash}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
+           "media-src 'self'; connect-src 'self'; font-src 'self'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'")
+    name = L("How Do You Know?", "از کجا می‌دانی؟")
+    full_title = title if title == name else f"{title} · {name}"
+    return f"""<!doctype html>
+<html{attrs} data-theme="light" data-kids>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{csp}">
+<meta name="referrer" content="no-referrer">
+<title>{esc(full_title)}</title>
+<meta name="description" content="{attr(desc)}">
+<meta name="theme-color" content="#F6F3EC">
+<link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{root}assets/icon-192.png">
+<link rel="manifest" href="{root}manifest.webmanifest">
+{alt_link}
+<link rel="stylesheet" href="{av(root, "fonts/fonts.css")}">
+<link rel="stylesheet" href="{av(root, "site.css")}">
+<link rel="stylesheet" href="{av(root, "kids/kids.css")}">
+{extra_head}
+<script>{BOOT}</script>
+</head>
+<body>
+<a class="skip" href="#main">{L("Skip to content", "رفتن به متن")}</a>
+<header class="bar solid kbar">
+  <a class="brand kbrand" href="{k}" aria-label="{name}, {L("home", "صفحهٔ نخست")}">{KIDS_LOGO}<span><b>{name}</b><small>{L("Thinking adventures for ages 7–14", "ماجراهای فکری برای ۷ تا ۱۴ ساله‌ها")}</small></span></a>
+  <nav class="site-nav" aria-label="{L("Kids' site", "سایتِ بچه‌ها")}">{links}</nav>
+  {lang_btn}<button class="tbtn" id="theme" type="button" aria-label="{L("Light or dark", "روشن یا تاریک")}" title="{L("Light or dark", "روشن یا تاریک")}"><i class="ico" aria-hidden="true"></i></button>
+  <button class="tbtn" id="menu" type="button" aria-label="{L("Menu", "فهرست")}" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>
+</header>
+<nav class="mnav" id="mnav" aria-label="{L("Menu", "فهرست")}" hidden>{links}
+  {f'<span class="sep"></span><a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else ""}</nav>
+{body}
+{kids_footer(root)}
+<script src="{av(root, "site.js")}" defer></script>
+<script src="{av(root, "kids/kids.js")}" defer></script>
+{extra_scripts}
+</body>
+</html>
+"""
+
+
+KIDS_LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.6" fill="#F2B84B" stroke="currentColor" stroke-width="1.3"/>'
+             '<circle cx="12.4" cy="14" r="5" fill="#fff" stroke="currentColor" stroke-width="1.3"/><circle cx="12.4" cy="14" r="2" fill="currentColor"/>'
+             '<path d="M16.6 17.6l4.6 4.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>')
+
+
+def kids_footer(root):
+    h = home(root)
+    return f"""<footer class="foot kfoot">
+  <div class="wrap">
+    <div>
+      <p>{L("How Do You Know? is the children's part of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: your stars stay on this device.",
+            "«از کجا می‌دانی؟» بخشِ کودکانِ «تسلط بر معرفت‌شناسی» است. بی‌ثبت‌نام، بی‌تبلیغ، و چیزی جمع نمی‌شود: ستاره‌هایت فقط روی همین دستگاه می‌ماند.")}</p>
+      <p>{L("The pictures are made with AI and checked by people; the old stories are retold from public-domain originals; the voices are synthetic.",
+            "تصویرها با هوشِ مصنوعی ساخته و به دستِ آدم‌ها وارسی شده‌اند؛ قصه‌های قدیمی از متن‌های آزادِ قدیمی بازگو شده‌اند؛ صداها ساختگی‌اند.")}</p>
+    </div>
+  </div>
+  <div class="wrap legal"><a href="{h}kids/grownups/">{L("For grown-ups", "برای بزرگ‌ترها")}</a><span aria-hidden="true">·</span><a href="{h}privacy.html#children">{L("Privacy", "حریم خصوصی")}</a><span aria-hidden="true">·</span><a href="{h}credits.html">{L("Credits", "منابع")}</a><span aria-hidden="true">·</span><a href="{h}">{L("The grown-up guide", "راهنمای بزرگ‌سالان")}</a></div>
+</footer>"""
 
 
 def footer(root):
@@ -2099,7 +2186,7 @@ def legal_page(art, root, kicker, title, sections, rel):
     head = hero(art, "ch18", root, kicker=kicker, title=title, cls="band")
     toc = "".join(f'<li><a href="#s{i}">{h}</a></li>' for i, (h, _) in enumerate(sections, 1))
     body = "".join(f'<h2 id="s{i}">{h}</h2>{html_}' for i, (h, html_) in enumerate(sections, 1))
-    policy_date = ("2 October 2026", "۲ اکتبر ۲۰۲۶ (۱۰ مهر ۱۴۰۵)") if rel == "privacy.html" else POLICY_DATE
+    policy_date = ("7 October 2026", "۷ اکتبر ۲۰۲۶ (۱۵ مهر ۱۴۰۵)") if rel == "privacy.html" else POLICY_DATE
     date = L(f"Last updated: {policy_date[0]}", f"آخرین به‌روزرسانی: {policy_date[1]}")
     note = ("" if LANG == "en" else
             f'<p class="note">این ترجمهٔ فارسیِ متنِ انگلیسی است؛ اگر میانِ دو متن اختلافی باشد، <a href="../{rel}" lang="en">متنِ انگلیسی</a> '
@@ -2216,10 +2303,16 @@ def build_privacy(art):
            "<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">بیانیهٔ حریم خصوصیِ گیت‌هاب</a> "
            "را ببینید. قلم‌ها، تصویرها و صوت از خودِ همین سایت ارائه می‌شوند، نه از خدماتِ دیگر.</p>")),
         (L("Children", "کودکان"),
-         L("<p>The site is an educational resource for a general audience and is not directed at children under 13. We do not knowingly "
-           "collect personal information from children.</p>",
-           "<p>این سایت منبعی آموزشی برای عمومِ مخاطبان است و برای کودکانِ زیرِ ۱۳ سال طراحی نشده است. ما آگاهانه اطلاعاتِ شخصیِ کودکان را "
-           "گردآوری نمی‌کنیم.</p>")),
+         L("<p id=\"children\">The main guide is written for a general audience. Its children's section, <i>How Do You Know?</i> "
+           "(<a href=\"kids/\">kids/</a>), is written for ages 7 to 14 and collects nothing: it has no sign-in, forms, chat, AI features, "
+           "analytics or advertising, and its pages load nothing from other services. A child's stars, chosen level and game progress are kept "
+           "only in that browser's local storage, under the name <code>epis-kids</code>; they are never sent anywhere or synced, and clearing "
+           "this site's data in the browser removes them. We do not knowingly collect personal information from anyone under 13.</p>",
+           "<p id=\"children\">راهنمای اصلی برای عمومِ مخاطبان نوشته شده است. بخشِ کودکانِ آن، «از کجا می‌دانی؟» "
+           "(<a href=\"kids/\">kids/</a>)، برای ۷ تا ۱۴ ساله‌ها نوشته شده و هیچ چیزی گردآوری نمی‌کند: ثبت‌نام، فرم، گفت‌وگو، "
+           "امکاناتِ هوشِ مصنوعی، آمارگیری و تبلیغ ندارد، و صفحه‌هایش چیزی از خدماتِ دیگر بار نمی‌کنند. ستاره‌ها، سطحِ انتخاب‌شده و پیشرفتِ "
+           "بازی‌های کودک فقط در حافظهٔ محلیِ همان مرورگر، با نامِ <code>epis-kids</code>، نگه داشته می‌شود؛ هرگز به جایی فرستاده یا همگام نمی‌شود، "
+           "و پاک کردنِ داده‌های این سایت در مرورگر آن را پاک می‌کند. ما آگاهانه اطلاعاتِ شخصیِ هیچ کسِ زیرِ ۱۳ سال را گردآوری نمی‌کنیم.</p>")),
         (L("Changes to this policy", "تغییرِ این سیاست"),
          L("<p>If this policy changes, the new version will be posted on this page with a new date. The history of every change is public "
            f"in the site's <a href=\"{REPO}\">source repository</a>.</p>",
@@ -3840,6 +3933,7 @@ def build_language(art, md, C, tracks):
          desc=L("Sign in, sync your notes and progress, and set up the AI study companion.", "ورود، همگام‌سازیِ یادداشت‌ها و پیشرفت، و راه‌اندازیِ همراهِ هوشمندِ مطالعه."),
          body=build_account(art), current="account", bar="clear")
     write_learning_data(C)
+    site_kids.build(sys.modules[__name__], art, md)
     build_epub(chapters, art)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     for ch in chapters.values():
