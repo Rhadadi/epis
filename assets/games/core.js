@@ -8,7 +8,7 @@
   var FA = document.documentElement.lang === "fa";
   var KEY = document.documentElement.getAttribute("data-store") || "epis-games";
   function T(en, fa) { return FA ? fa : en; }
-  function N(x) { return FA ? String(x).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }) : String(x); }
+  function N(x) { return FA ? String(x).replace(/\d/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹"[d]; }).replace(/(\S)\.(\S)/g, "$1٫$2") : String(x); }
   function load() {
     try { var s = JSON.parse(localStorage.getItem(KEY) || "{}"); return s && typeof s === "object" ? s : {}; } catch (e) { return {}; }
   }

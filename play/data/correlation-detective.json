@@ -1,0 +1,660 @@
+{
+ "engine": "case",
+ "title": "Correlation Detective",
+ "hook": "Did the coffee really do it?",
+ "again": "Has your mind changed?",
+ "done": "Good detectives move with the evidence.",
+ "share": true,
+ "fa": {
+  "title": "کارآگاهِ همبستگی",
+  "hook": "واقعاً کارِ قهوه بود؟",
+  "again": "نظرت عوض شد؟",
+  "done": "کارآگاهِ خوب همراهِ شواهد جلو می‌رود."
+ },
+ "cases": [
+  {
+   "id": "coffee",
+   "levels": [
+    "play"
+   ],
+   "label": "A made-up headline",
+   "q": "What do you make of it?",
+   "headline": "People who drink two cups of coffee a day live 18% longer",
+   "choices": [
+    {
+     "id": "cause",
+     "text": "Coffee makes you live longer",
+     "short": "Coffee did it",
+     "why": "That's what the headline wants you to think. But the study only shows that two groups are different, not what made them different.",
+     "fa": {
+      "text": "قهوه عمر را طولانی می‌کند",
+      "short": "کارِ قهوه است",
+      "why": "تیتر همین را می‌خواهد به ذهنت بیاورد. ولی پژوهش فقط نشان می‌دهد دو گروه با هم فرق دارند، نه این‌که چه چیزی این فرق را ساخته."
+     }
+    },
+    {
+     "id": "differ",
+     "text": "Coffee drinkers may differ from non-drinkers in other ways",
+     "short": "The groups differ",
+     "why": "Yes, that's the heart of it. A hidden difference between the two groups can produce the whole 18% on its own.",
+     "fa": {
+      "text": "قهوه‌خورها شاید از جهت‌های دیگری هم با بقیه فرق داشته باشند",
+      "short": "گروه‌ها فرق دارند",
+      "why": "بله، اصلِ ماجرا همین است. یک تفاوتِ پنهان میانِ دو گروه می‌تواند به‌تنهایی همهٔ آن ۱۸٪ را بسازد."
+     }
+    },
+    {
+     "id": "nothing",
+     "text": "The study proves nothing",
+     "short": "Proves nothing",
+     "why": "Too harsh. The study found a real difference, and that's a clue worth following. It just can't tell you the cause by itself.",
+     "fa": {
+      "text": "این پژوهش هیچ چیزی را ثابت نمی‌کند",
+      "short": "هیچ چیز",
+      "why": "زیادی سخت‌گیرانه است. پژوهش فرقی واقعی پیدا کرده و این سرنخی است که ارزشِ دنبال کردن دارد. فقط به‌تنهایی علت را نشان نمی‌دهد."
+     }
+    },
+    {
+     "id": "more",
+     "text": "I need more information",
+     "short": "Need more info",
+     "why": "Good instinct, as long as you know what to ask: who is in each group, and how else do they differ?",
+     "fa": {
+      "text": "اطلاعاتِ بیشتری لازم دارم",
+      "short": "اطلاعاتِ بیشتر",
+      "why": "غریزهٔ خوبی است، به شرطِ این‌که بدانی چه بپرسی: چه کسانی در هر گروه‌اند و از چه جهت‌های دیگری با هم فرق دارند؟"
+     }
+    }
+   ],
+   "best": [
+    "differ",
+    "more"
+   ],
+   "clues": [
+    {
+     "title": "Who doesn't drink coffee?",
+     "text": "The “no coffee” group includes people who used to drink it and stopped. Many stopped because a doctor told them to: they were already ill.",
+     "chart": {
+      "kind": "bars",
+      "unit": "%",
+      "max": 100,
+      "caption": "Why people in the “no coffee” group don't drink it (made-up numbers)",
+      "bars": [
+       {
+        "label": "Never liked it",
+        "value": 55,
+        "fa": {
+         "label": "هیچ‌وقت دوستش نداشتند"
+        }
+       },
+       {
+        "label": "Stopped for health reasons",
+        "value": 30,
+        "fa": {
+         "label": "به خاطرِ بیماری کنار گذاشتند"
+        },
+        "hi": true
+       },
+       {
+        "label": "Other reasons",
+        "value": 15,
+        "fa": {
+         "label": "دلیل‌های دیگر"
+        }
+       }
+      ],
+      "fa": {
+       "caption": "چرا افرادِ گروهِ «بی‌قهوه» قهوه نمی‌نوشند (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "چه کسانی قهوه نمی‌نوشند؟",
+      "text": "گروهِ «بی‌قهوه» کسانی را هم در بر می‌گیرد که قبلاً قهوه می‌نوشیدند و کنار گذاشتند. بسیاری از آن‌ها چون دکتر گفته بود کنار گذاشتند: از پیش بیمار بودند."
+     }
+    },
+    {
+     "title": "Coffee drinkers smoke more",
+     "text": "Smoking shortens lives, so this should make coffee drinkers look worse. The researchers “adjusted” for it by comparing smokers with smokers. But you can only adjust for the things you measured.",
+     "chart": {
+      "kind": "bars",
+      "unit": "%",
+      "max": 100,
+      "caption": "Smokers in each group (made-up numbers)",
+      "bars": [
+       {
+        "label": "Coffee drinkers",
+        "value": 30,
+        "fa": {
+         "label": "قهوه‌خورها"
+        },
+        "hi": true
+       },
+       {
+        "label": "No coffee",
+        "value": 15,
+        "fa": {
+         "label": "بی‌قهوه‌ها"
+        }
+       }
+      ],
+      "fa": {
+       "caption": "سیگاری‌ها در هر گروه (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "قهوه‌خورها بیشتر سیگار می‌کشند",
+      "text": "سیگار عمر را کوتاه می‌کند، پس این باید قهوه‌خورها را بدتر نشان دهد. پژوهشگرها این را «تعدیل» کردند: سیگاری‌ها را با سیگاری‌ها مقایسه کردند. ولی فقط چیزهایی را می‌شود تعدیل کرد که اندازه گرفته شده‌اند."
+     }
+    },
+    {
+     "title": "They tested 40 foods",
+     "text": "The same team compared 40 foods and drinks, from tea to tomatoes. The headline is about the one with the biggest gap.",
+     "chart": {
+      "kind": "strip",
+      "unit": "%",
+      "min": -20,
+      "max": 20,
+      "values": [
+       -9,
+       4,
+       -3,
+       7,
+       1,
+       -12,
+       2,
+       9,
+       -5,
+       0,
+       6,
+       -7,
+       3,
+       -1,
+       11,
+       -4,
+       5,
+       -2,
+       8,
+       -10,
+       2,
+       -6,
+       13,
+       -3,
+       1,
+       4,
+       -8,
+       0,
+       18,
+       -1,
+       6,
+       -4,
+       3,
+       -11,
+       7,
+       2,
+       -5,
+       10,
+       -2,
+       5
+      ],
+      "hi": 28,
+      "hi_label": "Coffee",
+      "caption": "The gap in lifespan for each of the 40 foods (made-up numbers)",
+      "fa": {
+       "hi_label": "قهوه",
+       "caption": "فاصلهٔ طولِ عمر برای هر یک از ۴۰ خوراکی (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "۴۰ خوراکی را آزمودند",
+      "text": "همین گروه ۴۰ خوراکی و نوشیدنی را، از چای تا گوجه‌فرنگی، مقایسه کردند. تیتر دربارهٔ همانی است که بزرگ‌ترین فاصله را داشت."
+     }
+    }
+   ],
+   "surprise": {
+    "text": "Here's a made-up town where we wrote the rules. In it, coffee does nothing at all. Only health decides how long people live, and ill people tend to give up coffee. We ran the same study there:",
+    "after": "Coffee did nothing, and the headline still came out. The 18% was made entirely by the hidden difference in health: look how much greener the coffee drinkers' lane is.",
+    "params": {
+     "link": 95,
+     "effect": 0,
+     "n": 5000,
+     "seed": 7,
+     "show": true
+    },
+    "fa": {
+     "text": "این شهری ساختگی است که قانون‌هایش را خودمان نوشته‌ایم. در آن، قهوه هیچ اثری ندارد. فقط سلامت تعیین می‌کند آدم‌ها چقدر عمر کنند، و آدم‌های بیمار معمولاً قهوه را کنار می‌گذارند. همان پژوهش را آن‌جا انجام دادیم:",
+     "after": "قهوه هیچ کاری نکرد و باز همان تیتر درآمد. آن ۱۸٪ را فقط تفاوتِ پنهان در سلامت ساخته بود: ببین ردیفِ قهوه‌خورها چقدر سبزتر است."
+    }
+   },
+   "ideas": [
+    {
+     "name": "A hidden factor (a confounder)",
+     "text": "Something else, here health, affects both who drinks coffee and how long they live.",
+     "fa": {
+      "name": "عاملِ پنهان (مخدوش‌گر)",
+      "text": "چیزِ دیگری، این‌جا سلامت، هم بر این اثر می‌گذارد که چه کسی قهوه بنوشد و هم بر این‌که چقدر عمر کند."
+     }
+    },
+    {
+     "name": "Reverse causation",
+     "text": "Being ill can stop people drinking coffee, rather than coffee keeping people well.",
+     "fa": {
+      "name": "علیتِ وارونه",
+      "text": "بیماری می‌تواند آدم‌ها را از قهوه دور کند، نه این‌که قهوه آن‌ها را سالم نگه دارد."
+     }
+    },
+    {
+     "name": "Many tries",
+     "text": "Test 40 foods and one of them will look impressive by luck alone. Ask how many things were tested.",
+     "fa": {
+      "name": "آزمونِ زیاد",
+      "text": "۴۰ خوراکی را بیازمایی، یکی‌شان فقط از شانس چشمگیر به نظر می‌رسد. بپرس چند چیز آزموده شده."
+     }
+    },
+    {
+     "name": "The fair test",
+     "text": "To find what coffee itself does, let a coin decide who drinks it. Then the groups differ only by coffee.",
+     "fa": {
+      "name": "آزمایشِ منصفانه",
+      "text": "برای این‌که بفهمی خودِ قهوه چه می‌کند، بگذار سکه تعیین کند چه کسی بنوشد. آن‌وقت دو گروه فقط در قهوه با هم فرق دارند."
+     }
+    }
+   ],
+   "sim": {
+    "kind": "confounder",
+    "groups": [
+     "Coffee drinkers",
+     "No coffee"
+    ],
+    "outcome": "Years lived after 50",
+    "base": 20,
+    "spread": 24,
+    "sd": 6,
+    "lo": 4,
+    "hi": 56,
+    "unit": " years",
+    "hidden": "Health",
+    "hidden_low": "ill",
+    "hidden_high": "healthy",
+    "more": "Coffee drinkers lived {pct}% longer",
+    "less": "Coffee drinkers lived {pct}% shorter lives",
+    "same": "No difference between the groups",
+    "people": "{n} people compared",
+    "luck_yes": "a gap this small could easily be luck",
+    "luck_no": "too big to be luck alone",
+    "luck_small": "with so few people, luck alone can make big gaps",
+    "fixed": "only people with middling health",
+    "labels": {
+     "link": "How much health decides who drinks coffee",
+     "effect": "What coffee really does",
+     "n": "People in the study",
+     "coin": "Flip a coin to decide who drinks coffee",
+     "fix": "Compare only people with the same health",
+     "show": "Show health (the hidden factor)",
+     "run": "Run the study again",
+     "fa": {
+      "link": "سلامت چقدر تعیین می‌کند چه کسی قهوه بنوشد",
+      "effect": "اثرِ واقعیِ قهوه",
+      "n": "تعدادِ افرادِ پژوهش",
+      "coin": "با سکه تعیین کن چه کسی قهوه بنوشد",
+      "fix": "فقط آدم‌هایی با سلامتِ یکسان را مقایسه کن",
+      "show": "سلامت (عاملِ پنهان) را نشان بده",
+      "run": "پژوهش را دوباره انجام بده"
+     }
+    },
+    "fa": {
+     "groups": [
+      "قهوه‌خورها",
+      "بی‌قهوه‌ها"
+     ],
+     "outcome": "سال‌های عمر پس از ۵۰ سالگی",
+     "unit": " سال",
+     "hidden": "سلامت",
+     "hidden_low": "بیمار",
+     "hidden_high": "سالم",
+     "more": "قهوه‌خورها {pct}٪ بیشتر عمر کردند",
+     "less": "قهوه‌خورها {pct}٪ کمتر عمر کردند",
+     "same": "میانِ دو گروه فرقی نبود",
+     "people": "{n} نفر مقایسه شدند",
+     "luck_yes": "فاصله‌ای به این کوچکی به‌راحتی می‌تواند از شانس باشد",
+     "luck_no": "بزرگ‌تر از آن است که فقط شانس باشد",
+     "luck_small": "با این تعدادِ کم، شانس به‌تنهایی می‌تواند فاصله‌های بزرگ بسازد",
+     "fixed": "فقط آدم‌هایی با سلامتِ متوسط"
+    }
+   },
+   "sandbox": {
+    "intro": "Now you make the rules. Try to make the 18% vanish. Then give coffee a real effect and see whether a fair test finds it.",
+    "params": {
+     "link": 95,
+     "effect": 0,
+     "n": 1000,
+     "seed": 7
+    },
+    "controls": [
+     "coin",
+     "fix",
+     "show",
+     "link",
+     "effect",
+     "n"
+    ],
+    "fa": {
+     "intro": "حالا قانون‌ها را تو می‌نویسی. سعی کن آن ۱۸٪ را ناپدید کنی. بعد به قهوه اثری واقعی بده و ببین آزمایشِ منصفانه پیدایش می‌کند یا نه."
+    }
+   },
+   "fa": {
+    "label": "یک تیترِ ساختگی",
+    "q": "نظرت چیست؟",
+    "headline": "کسانی که روزی دو فنجان قهوه می‌نوشند ۱۸٪ بیشتر عمر می‌کنند"
+   }
+  },
+  {
+   "id": "tutors",
+   "levels": [
+    "play"
+   ],
+   "label": "A made-up headline",
+   "q": "What do you make of it?",
+   "headline": "Students who have a tutor get lower marks",
+   "choices": [
+    {
+     "id": "cause",
+     "text": "Tutors make students worse",
+     "short": "Tutors hurt",
+     "why": "Unlikely. Look at the order of events: the low marks usually came first.",
+     "fa": {
+      "text": "معلمِ خصوصی دانش‌آموز را بدتر می‌کند",
+      "short": "معلمِ خصوصی ضرر دارد",
+      "why": "بعید است. ترتیبِ اتفاق‌ها را ببین: معمولاً نمرهٔ پایین اول آمده."
+     }
+    },
+    {
+     "id": "reverse",
+     "text": "Low marks are why students get a tutor",
+     "short": "Low marks came first",
+     "why": "Exactly. Families hire tutors when marks drop, so the tutored group starts lower. The arrow points the other way.",
+     "fa": {
+      "text": "نمرهٔ پایین دلیلِ گرفتنِ معلمِ خصوصی است",
+      "short": "اول نمرهٔ پایین",
+      "why": "دقیقاً. خانواده‌ها وقتی نمره پایین می‌آید معلمِ خصوصی می‌گیرند، پس گروهِ دارای معلم از پایین‌تر شروع می‌کند. پیکان برعکس است."
+     }
+    },
+    {
+     "id": "nothing",
+     "text": "Tutoring makes no difference",
+     "short": "No effect",
+     "why": "The data can't show that either. To see what tutoring does, you have to compare like with like.",
+     "fa": {
+      "text": "معلمِ خصوصی هیچ فرقی ایجاد نمی‌کند",
+      "short": "بی‌اثر",
+      "why": "داده‌ها این را هم نشان نمی‌دهند. برای دیدنِ اثرِ معلمِ خصوصی باید چیزهای هم‌سان را با هم مقایسه کرد."
+     }
+    },
+    {
+     "id": "more",
+     "text": "I need more information",
+     "short": "Need more info",
+     "why": "Fair. The key question is: which came first, the tutor or the low marks?",
+     "fa": {
+      "text": "اطلاعاتِ بیشتری لازم دارم",
+      "short": "اطلاعاتِ بیشتر",
+      "why": "منصفانه است. پرسشِ اصلی این است: اول کدام آمد، معلم یا نمرهٔ پایین؟"
+     }
+    }
+   ],
+   "best": [
+    "reverse",
+    "more"
+   ],
+   "clues": [
+    {
+     "title": "When did the tutoring start?",
+     "text": "Most families in the study hired a tutor right after a bad report card.",
+     "chart": {
+      "kind": "bars",
+      "unit": "%",
+      "max": 100,
+      "caption": "Why tutoring started (made-up numbers)",
+      "bars": [
+       {
+        "label": "After a low mark",
+        "value": 70,
+        "fa": {
+         "label": "بعد از یک نمرهٔ پایین"
+        },
+        "hi": true
+       },
+       {
+        "label": "To get ahead",
+        "value": 20,
+        "fa": {
+         "label": "برای جلو افتادن"
+        }
+       },
+       {
+        "label": "Other reasons",
+        "value": 10,
+        "fa": {
+         "label": "دلیل‌های دیگر"
+        }
+       }
+      ],
+      "fa": {
+       "caption": "چرا کلاسِ خصوصی شروع شد (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "معلمِ خصوصی از کی شروع شد؟",
+      "text": "بیشترِ خانواده‌های این پژوهش درست بعد از یک کارنامهٔ بد معلمِ خصوصی گرفتند."
+     }
+    },
+    {
+     "title": "Follow the same students",
+     "text": "Track the tutored students over a year, and their marks go up.",
+     "chart": {
+      "kind": "bars",
+      "unit": "",
+      "max": 100,
+      "caption": "Average mark of tutored students, out of 100 (made-up numbers)",
+      "bars": [
+       {
+        "label": "Before tutoring",
+        "value": 52,
+        "fa": {
+         "label": "پیش از کلاسِ خصوصی"
+        }
+       },
+       {
+        "label": "A year later",
+        "value": 61,
+        "fa": {
+         "label": "یک سال بعد"
+        },
+        "hi": true
+       }
+      ],
+      "fa": {
+       "caption": "میانگینِ نمرهٔ دانش‌آموزانِ دارای معلم، از ۱۰۰ (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "همان دانش‌آموزان را دنبال کن",
+      "text": "اگر دانش‌آموزانِ دارای معلم را یک سال دنبال کنی، نمره‌هایشان بالا می‌رود."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "Reverse causation",
+     "text": "The low marks came first and led to the tutor, not the other way round.",
+     "fa": {
+      "name": "علیتِ وارونه",
+      "text": "نمرهٔ پایین اول آمد و به معلمِ خصوصی انجامید، نه برعکس."
+     }
+    },
+    {
+     "name": "Compare like with like",
+     "text": "Follow the same students over time, or compare students who started with the same marks.",
+     "fa": {
+      "name": "هم‌سان را با هم‌سان مقایسه کن",
+      "text": "همان دانش‌آموزان را در طولِ زمان دنبال کن، یا دانش‌آموزانی را مقایسه کن که با نمره‌های یکسان شروع کردند."
+     }
+    }
+   ],
+   "fa": {
+    "label": "یک تیترِ ساختگی",
+    "q": "نظرت چیست؟",
+    "headline": "دانش‌آموزانی که معلمِ خصوصی دارند نمره‌های پایین‌تری می‌گیرند"
+   }
+  },
+  {
+   "id": "storks",
+   "levels": [
+    "play"
+   ],
+   "label": "A made-up headline",
+   "q": "What do you make of it?",
+   "headline": "Towns with more storks have more babies",
+   "choices": [
+    {
+     "id": "cause",
+     "text": "Storks bring babies (or help somehow)",
+     "short": "Storks did it",
+     "why": "A lovely old story, but no. Something else is behind both numbers.",
+     "fa": {
+      "text": "لک‌لک‌ها بچه می‌آورند (یا یک‌جوری کمک می‌کنند)",
+      "short": "کارِ لک‌لک‌هاست",
+      "why": "قصهٔ قدیمیِ قشنگی است، ولی نه. چیزِ دیگری پشتِ هر دو عدد است."
+     }
+    },
+    {
+     "id": "common",
+     "text": "Something else drives both",
+     "short": "A common cause",
+     "why": "Yes. Bigger towns have more roofs for nests and more people to have babies. Town size drives both.",
+     "fa": {
+      "text": "چیزِ دیگری هر دو را بالا می‌برد",
+      "short": "علتِ مشترک",
+      "why": "بله. شهرهای بزرگ‌تر هم بامِ بیشتری برای لانه دارند و هم آدمِ بیشتری که بچه‌دار شوند. اندازهٔ شهر هر دو را بالا می‌برد."
+     }
+    },
+    {
+     "id": "chance",
+     "text": "It's just a coincidence",
+     "short": "Coincidence",
+     "why": "Not quite. The pattern is real and shows up again and again. It just has a different cause.",
+     "fa": {
+      "text": "فقط تصادف است",
+      "short": "تصادف",
+      "why": "نه دقیقاً. این الگو واقعی است و بارها تکرار می‌شود. فقط علتش چیزِ دیگری است."
+     }
+    },
+    {
+     "id": "more",
+     "text": "I need more information",
+     "short": "Need more info",
+     "why": "Good. Ask what else differs between towns with many storks and towns with few.",
+     "fa": {
+      "text": "اطلاعاتِ بیشتری لازم دارم",
+      "short": "اطلاعاتِ بیشتر",
+      "why": "خوب است. بپرس شهرهای پرلک‌لک و کم‌لک‌لک از چه جهت‌های دیگری با هم فرق دارند."
+     }
+    }
+   ],
+   "best": [
+    "common",
+    "more"
+   ],
+   "clues": [
+    {
+     "title": "Where do storks nest?",
+     "text": "Storks build nests on roofs and chimneys. Big towns have more of both, and more people too.",
+     "chart": {
+      "kind": "bars",
+      "unit": "",
+      "caption": "Stork nests per town (made-up numbers)",
+      "bars": [
+       {
+        "label": "Small towns",
+        "value": 3,
+        "fa": {
+         "label": "شهرهای کوچک"
+        }
+       },
+       {
+        "label": "Big towns",
+        "value": 25,
+        "fa": {
+         "label": "شهرهای بزرگ"
+        },
+        "hi": true
+       }
+      ],
+      "fa": {
+       "caption": "لانهٔ لک‌لک در هر شهر (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "لک‌لک‌ها کجا لانه می‌کنند؟",
+      "text": "لک‌لک‌ها روی بام‌ها و دودکش‌ها لانه می‌سازند. شهرهای بزرگ هر دو را بیشتر دارند، و آدم‌های بیشتری هم دارند."
+     }
+    },
+    {
+     "title": "Count per person",
+     "text": "Count babies per 1,000 people instead of in total, and the gap disappears.",
+     "chart": {
+      "kind": "bars",
+      "unit": "",
+      "max": 20,
+      "caption": "Babies per 1,000 people each year (made-up numbers)",
+      "bars": [
+       {
+        "label": "Towns with many storks",
+        "value": 11,
+        "fa": {
+         "label": "شهرهای پرلک‌لک"
+        }
+       },
+       {
+        "label": "Towns with few storks",
+        "value": 11,
+        "fa": {
+         "label": "شهرهای کم‌لک‌لک"
+        }
+       }
+      ],
+      "fa": {
+       "caption": "بچه‌ها به ازای هر هزار نفر در سال (عددهای ساختگی)"
+      }
+     },
+     "fa": {
+      "title": "به ازای هر نفر بشمار",
+      "text": "به‌جای شمارِ کل، بچه‌ها را به ازای هر هزار نفر بشمار؛ فاصله ناپدید می‌شود."
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "A common cause",
+     "text": "Town size drives both the storks and the babies.",
+     "fa": {
+      "name": "علتِ مشترک",
+      "text": "اندازهٔ شهر هم لک‌لک‌ها را زیاد می‌کند و هم بچه‌ها را."
+     }
+    },
+    {
+     "name": "Rates, not totals",
+     "text": "Compare per person. Big places have more of almost everything.",
+     "fa": {
+      "name": "نسبت، نه شمارِ کل",
+      "text": "به ازای هر نفر مقایسه کن. جاهای بزرگ تقریباً از همه چیز بیشتر دارند."
+     }
+    }
+   ],
+   "fa": {
+    "label": "یک تیترِ ساختگی",
+    "q": "نظرت چیست؟",
+    "headline": "شهرهایی که لک‌لکِ بیشتری دارند بچه‌های بیشتری به دنیا می‌آورند"
+   }
+  }
+ ]
+}

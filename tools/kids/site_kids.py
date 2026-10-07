@@ -292,11 +292,11 @@ def render_lesson(b, md, text, uid, level, words, engines):
 
 
 def for_level(g, level):
-    """Keep only the cards, buckets and questions meant for this level (items without "levels" are for both)."""
+    """Keep only the cards, buckets, questions and cases meant for this level (items without "levels" are for every level)."""
     def keep(x):
         return not isinstance(x, dict) or "levels" not in x or level in x["levels"]
     g = dict(g)
-    for k in ("cards", "buckets", "items"):
+    for k in ("cards", "buckets", "items", "cases"):
         if k in g:
             g[k] = [x for x in g[k] if keep(x)]
     return g

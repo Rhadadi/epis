@@ -45,6 +45,8 @@ from PIL import Image
 from reading_path import build_catalogue as build_reading_catalogue, page_body as reading_path_body
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "kids"))
 import site_kids  # noqa: E402  the children's section (tools/kids/)
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "play"))
+import site_play  # noqa: E402  the games section, Baloney Detector (tools/play/)
 
 ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
@@ -2352,6 +2354,15 @@ def build_privacy(art):
            "امکاناتِ هوشِ مصنوعی، آمارگیری و تبلیغ ندارد، و صفحه‌هایش چیزی از خدماتِ دیگر بار نمی‌کنند. ستاره‌ها، سطحِ انتخاب‌شده و پیشرفتِ "
            "بازی‌های کودک فقط در حافظهٔ محلیِ همان مرورگر، با نامِ <code>epis-kids</code>، نگه داشته می‌شود؛ هرگز به جایی فرستاده یا همگام نمی‌شود، "
            "و پاک کردنِ داده‌های این سایت در مرورگر آن را پاک می‌کند. ما آگاهانه اطلاعاتِ شخصیِ هیچ کسِ زیرِ ۱۳ سال را گردآوری نمی‌کنیم.</p>")),
+        (L("Games", "بازی‌ها"),
+         L("<p id=\"games\">The games section, <i>Baloney Detector</i> (<a href=\"play/\">play/</a>), works the same way: no sign-in, "
+           "forms, chat, AI features, analytics or advertising, and nothing loaded from other services. Which games you have finished is kept "
+           "only in your browser's local storage, under the name <code>epis-play</code>, and is never sent anywhere. The share button uses "
+           "your device's own share sheet or copies the page's address; it sends nothing to this site.</p>",
+           "<p id=\"games\">بخشِ بازی‌ها، «چرندسنج» (<a href=\"play/\">play/</a>)، هم همین‌طور است: ثبت‌نام، فرم، گفت‌وگو، "
+           "امکاناتِ هوشِ مصنوعی، آمارگیری و تبلیغ ندارد و چیزی از خدماتِ دیگر بار نمی‌کند. این‌که کدام بازی‌ها را تمام کرده‌اید فقط در حافظهٔ "
+           "محلیِ مرورگرِ خودتان، با نامِ <code>epis-play</code>، نگه داشته می‌شود و هرگز به جایی فرستاده نمی‌شود. دکمهٔ «بفرست» از برگهٔ "
+           "اشتراک‌گذاریِ خودِ دستگاه‌تان استفاده می‌کند یا نشانیِ صفحه را کپی می‌کند؛ چیزی به این سایت نمی‌فرستد.</p>")),
         (L("Changes to this policy", "تغییرِ این سیاست"),
          L("<p>If this policy changes, the new version will be posted on this page with a new date. The history of every change is public "
            f"in the site's <a href=\"{REPO}\">source repository</a>.</p>",
@@ -3973,6 +3984,7 @@ def build_language(art, md, C, tracks):
          body=build_account(art), current="account", bar="clear")
     write_learning_data(C)
     site_kids.build(sys.modules[__name__], art, md)
+    site_play.build(sys.modules[__name__], art, md)
     build_epub(chapters, art)
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     for ch in chapters.values():

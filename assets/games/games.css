@@ -20,3 +20,139 @@ html[data-games][data-theme="dark"]{
   --k-orange-t:#3A2A22; --k-blue-t:#1D2C49; --k-green-t:#173A31; --k-purple-t:#2B2450; --k-pink-t:#3D2032; --k-yellow-t:#3A321A;
   --accent:#FFA060;
 }
+.kbar .kbrand svg{width:38px;height:38px;flex:none}
+.kbar .kbrand b{font-family:var(--k-display);font-weight:600;font-size:1.25rem;color:var(--k-ink)}
+.kbar .kbrand small{font-family:var(--k-font);letter-spacing:0;text-transform:none;font-size:.74rem;color:var(--k-ink-2)}
+.kbar #theme .ico{display:inline-block;width:18px;height:18px;border-radius:50%;background:linear-gradient(90deg,currentColor 50%,transparent 50%);border:1.6px solid currentColor}
+.kspacer{flex:1}
+
+/* ------------------------------------------------------------------ the case engine (assets/games/case.js) */
+.cs{display:flex;flex-direction:column;gap:16px}
+.cs-top{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-family:var(--k-display);font-weight:600;font-size:.88rem}
+.cs-count{color:var(--k-ink-2)}
+.cs-label{background:var(--k-yellow-t);color:var(--k-ink);padding:3px 12px;border-radius:999px}
+.cs-headline{margin:0;padding:20px 22px;border-radius:20px;background:var(--k-card);border:3px solid var(--k-ink);box-shadow:6px 6px 0 var(--k-ink);
+  font-family:var(--k-display);font-weight:600;font-size:clamp(1.3rem,4.4vw,1.85rem);line-height:1.22;color:var(--k-ink)}
+html[lang="fa"] .cs-headline{font-weight:800;line-height:1.5}
+.cs-ask{display:grid;gap:10px}
+.cs-q{margin:0;font-family:var(--k-display);font-weight:600;font-size:1.1rem}
+.cs-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:10px}
+.cs-choice{font:inherit;text-align:start;cursor:pointer;padding:13px 16px;border-radius:16px;background:var(--k-card);color:var(--k-ink);border:3px solid var(--k-line);
+  box-shadow:0 5px 0 var(--k-line);font-weight:600;font-size:1rem;line-height:1.3;display:flex;flex-direction:column;gap:4px;
+  transition:transform .08s ease,box-shadow .08s ease,border-color .15s}
+.cs-choice:hover:not(:disabled){border-color:var(--k-blue)}
+.cs-choice:active:not(:disabled){transform:translateY(3px);box-shadow:0 2px 0 var(--k-line)}
+.cs-choice:focus-visible,.cs-go:focus-visible,.sim-tog:focus-visible,.sim-run:focus-visible{outline:4px solid var(--k-yellow);outline-offset:3px}
+.cs-choice.current{border-color:var(--k-blue);border-style:dashed}
+.cs-tag{font-size:.75rem;font-weight:700;color:var(--k-blue-d)}
+html[data-theme="dark"] .cs-tag{color:#8DBBFF}
+.cs-choice:disabled{cursor:default}
+.cs-ask.answered .cs-q{color:var(--k-ink-2);font-size:.95rem}
+.cs-ask.answered .cs-choice:not(.picked){display:none}
+.cs-choice.picked{background:var(--k-blue);border-color:var(--k-blue-d);box-shadow:0 5px 0 var(--k-blue-d);color:#fff;border-style:solid}
+.cs-choice.picked .cs-tag{display:none}
+.cs-clue{padding:18px 20px;border-radius:22px;background:var(--k-yellow-t)}
+.cs-clue:focus,.cs-surprise:focus,.cs-end > :focus,.cs:focus{outline:none}
+.cs-clue-k{margin:0 0 4px;font-family:var(--k-display);font-weight:600;font-size:.85rem;color:var(--k-orange-d);letter-spacing:.03em}
+html[data-theme="dark"] .cs-clue-k{color:#FFA060}
+.cs-clue h3{margin:0 0 6px;font-size:1.25rem}
+.cs-clue p{margin:0 0 10px}
+.cs-chart-cap{font-size:.85rem;color:var(--k-ink-2);margin:4px 0 6px !important}
+.cs-bars{display:grid;gap:8px;margin-top:6px}
+.cs-bar{display:grid;grid-template-columns:minmax(96px,38%) 1fr auto;gap:10px;align-items:center;font-size:.92rem;line-height:1.25}
+.cs-bar-t{height:16px;border-radius:999px;background:var(--k-line);overflow:hidden}
+.cs-bar-t i{display:block;height:100%;border-radius:999px;background:var(--k-ink-2)}
+.cs-bar.hi .cs-bar-t i{background:var(--k-pink)}
+.cs-bar.hi .cs-bar-l{font-weight:700}
+.cs-bar-v{font-family:var(--k-display);font-weight:600;min-width:3ch;text-align:end}
+.cs-strip{display:block;width:100%;height:auto;direction:ltr}
+.cs-strip .axis{stroke:var(--k-ink-2);stroke-width:2}
+.cs-strip .zero{stroke:var(--k-ink-2);stroke-width:2;stroke-dasharray:3 4}
+.cs-strip .dot{fill:var(--k-ink-2);opacity:.45}
+.cs-strip .hi{fill:var(--k-pink);stroke:var(--k-card);stroke-width:2}
+.cs-strip .lab{font:600 15px var(--k-display);fill:var(--k-pink-d)}
+.cs-strip .tick{font:13px var(--k-font);fill:var(--k-ink-2)}
+.cs-end{display:flex;flex-direction:column;gap:16px}
+.cs-surprise{padding:18px 20px;border-radius:22px;background:var(--k-purple-t)}
+.cs-surprise .cs-clue-k{color:var(--k-purple-d)}
+html[data-theme="dark"] .cs-surprise .cs-clue-k{color:#B9A2FF}
+.cs-surprise > p{margin:0 0 8px}
+.cs-after{font-weight:700;margin-top:12px !important}
+.cs-ideas{display:grid;gap:12px;padding:18px 20px;border-radius:22px;background:var(--k-card);border:2px solid var(--k-line)}
+.cs-ideas .cs-clue-k{color:var(--k-green-d);margin:0}
+.cs-idea{display:grid;gap:2px;padding-inline-start:14px;border-inline-start:5px solid var(--k-green)}
+.cs-idea b{font-family:var(--k-display);font-weight:600;font-size:1.08rem}
+.cs-verdict{padding:18px 20px;border-radius:22px}
+.cs-verdict.good{background:var(--k-green-t)}
+.cs-verdict.catch{background:var(--k-orange-t)}
+.cs-verdict > b{display:block;font-family:var(--k-display);font-weight:600;font-size:1.3rem}
+.cs-verdict.good > b{color:var(--k-green-d)}
+.cs-verdict.catch > b{color:var(--k-orange-d)}
+html[data-theme="dark"] .cs-verdict.good > b{color:#6FE0AE}
+html[data-theme="dark"] .cs-verdict.catch > b{color:#FFA060}
+.cs-verdict p{margin:4px 0}
+.cs-best{font-weight:700}
+.cs-path{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.cs-path li{display:flex;flex-direction:column;padding:8px 12px;border-radius:14px;background:var(--k-card);font-size:.9rem;line-height:1.25;font-weight:600}
+.cs-path li small{color:var(--k-ink-2);font-size:.74rem;font-weight:700}
+.cs-path li.moved{box-shadow:inset 0 0 0 3px var(--k-blue)}
+.cs-sandbox{padding:18px 20px;border-radius:22px;background:var(--k-blue-t)}
+.cs-sandbox .cs-clue-k{color:var(--k-blue-d)}
+html[data-theme="dark"] .cs-sandbox .cs-clue-k{color:#8DBBFF}
+.cs-sandbox > p{margin:0 0 6px}
+.cs-nav{display:flex;justify-content:center}
+.cs-go{display:inline-block;font:inherit;font-family:var(--k-display);font-weight:600;font-size:1.1rem;cursor:pointer;border:0;border-radius:999px;padding:12px 26px;
+  background:var(--k-green);color:#fff !important;box-shadow:0 5px 0 var(--k-green-d);text-decoration:none;transition:transform .08s ease,box-shadow .08s ease}
+.cs-go:active{transform:translateY(3px);box-shadow:0 2px 0 var(--k-green-d)}
+.cs-go.alt{background:var(--k-blue);box-shadow:0 5px 0 var(--k-blue-d)}
+.cs-done{width:100%;text-align:center;padding:22px;border-radius:24px;background:linear-gradient(135deg,var(--k-yellow-t),var(--k-green-t))}
+.cs-done .kg-star{display:block;font-size:3.4rem;line-height:1;color:var(--k-yellow);text-shadow:0 4px 0 var(--k-yellow-d);margin-bottom:6px}
+.cs-done p{font-family:var(--k-display);font-weight:500;font-size:1.15rem;margin:.3em 0}
+.cs-done .cs-moral{font-weight:700}
+.cs-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+@keyframes csin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes cspop{0%{transform:scale(.6) rotate(-40deg);opacity:0}100%{transform:none;opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+  .cs-clue,.cs-end > *,.cs-ask,.cs-headline{animation:csin .35s ease-out both}
+  .cs-done .kg-star{animation:cspop .5s cubic-bezier(.2,1.5,.4,1) both}
+}
+
+/* ------------------------------------------------------------------ the sandbox (assets/games/sims/confounder.js) */
+.sim{display:grid;gap:10px;margin-top:10px;padding:14px;border-radius:18px;background:var(--k-card)}
+.sim-headline{margin:0;font-family:var(--k-display);font-weight:600;font-size:clamp(1.12rem,4vw,1.45rem);line-height:1.25;padding:10px 14px;border-radius:12px;
+  border:3px solid var(--k-ink);box-shadow:4px 4px 0 var(--k-ink);background:var(--k-card)}
+html[lang="fa"] .sim-headline{font-weight:800}
+.sim-headline.same{border-color:var(--k-green-d);box-shadow:4px 4px 0 var(--k-green-d)}
+.sim-sub{margin:0;font-size:.9rem;color:var(--k-ink-2)}
+.sim-svg{display:block;width:100%;height:auto;direction:ltr}
+.sim-svg .lane{fill:var(--k-bg)}
+.sim-svg .lane-t{font:600 14px var(--k-display);fill:var(--k-ink)}
+.sim-svg .pp{opacity:.85}
+.sim-svg .g0,.sim-legend i.g0{fill:#8B5A2B;background:#8B5A2B}
+.sim-svg .g1,.sim-legend i.g1{fill:var(--k-blue);background:var(--k-blue)}
+.sim-svg .h0,.sim-legend i.h0{fill:#E25C5C;background:#E25C5C}
+.sim-svg .h1,.sim-legend i.h1{fill:#F2B84B;background:#F2B84B}
+.sim-svg .h2,.sim-legend i.h2{fill:var(--k-green);background:var(--k-green)}
+html[data-theme="dark"] .sim-svg .g0,html[data-theme="dark"] .sim-legend i.g0{fill:#C8925A;background:#C8925A}
+.sim-svg .mean{stroke:var(--k-ink);stroke-width:3}
+.sim-svg .mean-t{font:700 13px var(--k-font);fill:var(--k-ink)}
+.sim-svg .tick{font:13px var(--k-font);fill:var(--k-ink-2)}
+.sim-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0;font-size:.88rem;align-items:center}
+.sim-legend span{display:inline-flex;gap:6px;align-items:center}
+.sim-legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.sim-ctls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:10px;align-items:stretch}
+.sim-tog{position:relative;font:inherit;font-weight:600;font-size:.95rem;line-height:1.3;text-align:start;cursor:pointer;min-height:52px;
+  padding:10px 14px;padding-inline-start:46px;border-radius:14px;border:2px solid var(--k-line);background:var(--k-bg);color:var(--k-ink)}
+.sim-tog::before{content:"";position:absolute;inset-inline-start:12px;top:50%;width:24px;height:24px;margin-top:-12px;border-radius:8px;
+  border:2px solid var(--k-ink-2);background:var(--k-card);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:800;line-height:1}
+.sim-tog[aria-pressed="true"]{border-color:var(--k-green);background:var(--k-green-t)}
+.sim-tog[aria-pressed="true"]::before{content:"✓";background:var(--k-green);border-color:var(--k-green-d)}
+.sim-ctl{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:8px 12px;border-radius:14px;background:var(--k-bg);font-size:.92rem;font-weight:600;line-height:1.3}
+.sim-ctl input{grid-column:1/-1;width:100%;accent-color:var(--k-blue);margin:6px 0 2px}
+.sim-ctl output{font-family:var(--k-display);color:var(--k-blue-d)}
+html[data-theme="dark"] .sim-ctl output{color:#8DBBFF}
+.sim-ctl.off{opacity:.45}
+.sim-run{font:inherit;font-family:var(--k-display);font-weight:600;cursor:pointer;border:0;border-radius:999px;padding:10px 20px;background:var(--k-orange);color:#fff;
+  box-shadow:0 4px 0 var(--k-orange-d);justify-self:start;align-self:center}
+.sim-run:active{transform:translateY(3px);box-shadow:0 1px 0 var(--k-orange-d)}
+@media print{.kgame{display:none !important}}
