@@ -2891,18 +2891,9 @@ DEEP = {}  # chapter slug -> {section id: page}, the English pages
 DEEP_FA = {}  # the same for the Persian translations (deeper/src-fa/), which follow the English page one for one
 NOT_SUBSTANTIVE = {"in-this-chapter", "check-your-understanding", "further-reading"}
 CITE = re.compile(r"\[(@[^\[\]]+)\]")
-# The layers, in order: id, heading, the reader's reason (the chooser), what the layer holds.
-LAYERS = [("re-learn", "Re-learn", "I didn't get it", "The idea again, step by step, and the usual confusions"),
-          ("the-full-story", "The full story", "I want the whole story",
-           "Where the idea came from, the original texts, the arguments, and where the debate stands"),
-          ("beyond-the-chapter", "Beyond the chapter", "Something felt missing",
-           "What the chapter leaves out or simplifies, and how this connects to the rest"),
-          ("sources", "Sources", "Show me the sources", "What to read next, and every work cited")]
-# the chooser's wording in Persian: the reader's reason and what the layer holds (a page's own layer headings are its translator's)
-LAYERS_FA = {"re-learn": ("نفهمیدم", "ایده را دوباره، گام‌به‌گام و با کژفهمی‌های رایجش مرور می‌کنیم"),
-             "the-full-story": ("همهٔ ماجرا را می‌خواهم", "ایده از کجا آمد، متن‌های اصلی، استدلال‌ها و جای امروزِ بحث"),
-             "beyond-the-chapter": ("چیزی کم بود", "آنچه فصل نیاورده یا ساده کرده، و پیوندِ این بحث با بقیه"),
-             "sources": ("منبع‌ها را نشانم بده", "چه بخوانید، و همهٔ کارهای ذکرشده")}
+# The layers, in order: id and heading.
+LAYERS = [("re-learn", "Re-learn"), ("the-full-story", "The full story"),
+          ("beyond-the-chapter", "Beyond the chapter"), ("sources", "Sources")]
 LAYER_IDS = [l[0] for l in LAYERS]
 REQUIRED_LAYERS = {"A": LAYER_IDS, "B": ["re-learn", "beyond-the-chapter", "sources"]}
 BLOCK = re.compile(r"(?ms)^::: *([a-z]+)(?: +([^\n]*?))? *\n(.*?)\n::: *$")
@@ -3166,7 +3157,7 @@ def deeper_blocks(text):
 
 
 def deeper_body(ch, sid, pg, md, sources, prov):
-    """A page: In short, the chooser, then the layers. Re-learn names its sources in one line; the other layers
+    """A page: In short, then the layers. Re-learn names its sources in one line; the other layers
     carry numbered notes; Sources ends with the works cited."""
     groups = []
     def mark(m):
@@ -3236,12 +3227,7 @@ def deeper_body(ch, sid, pg, md, sources, prov):
                                                                str(sources.get(k, {}).get("year", "")))))
             part = part.rstrip() + f'<h3 id="works-cited">{L("Works cited", "منبع‌های ذکرشده")}</h3><ul class="sch-refs biblio" dir="ltr">{refs}</ul>'
         out.append(part)
-    present = [l for l in LAYERS if l[0] in pg["layers"]]
-    if LANG == "fa":
-        present = [(lid, t, *LAYERS_FA[lid]) for lid, t, _, _ in present]
-    chooser = (f'<nav class="deep-choose" aria-label="{L("What brought you here?", "چه چیزی شما را به این‌جا آورد؟")}"><span class="kicker">{L("What brought you here?", "چه چیزی شما را به این‌جا آورد؟")}</span>'
-               + "".join(f'<a href="#{lid}"><b>{reason}</b><span>{what}</span></a>' for lid, _, reason, what in present) + "</nav>")
-    return out[0] + chooser + "".join(out[1:]), heads
+    return "".join(out), heads
 
 
 def first_sentences(text, n):
