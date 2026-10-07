@@ -2965,9 +2965,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#kinds-of-non-deductive-inference",
       "minutes": 2,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/kinds-of-non-deductive-inference.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/kinds-of-non-deductive-inference.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2979,9 +2979,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#humes-problem-of-induction",
       "minutes": 2,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/humes-problem-of-induction.html",
-        "minutes": 11,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/humes-problem-of-induction.html",
+        "minutes": 13,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -2993,9 +2993,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#responses-to-hume",
       "minutes": 4,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/responses-to-hume.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/responses-to-hume.html",
+        "minutes": 15,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3007,9 +3007,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#goodmans-new-riddle-of-induction",
       "minutes": 3,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/goodmans-new-riddle-of-induction.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/goodmans-new-riddle-of-induction.html",
+        "minutes": 15,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3019,11 +3019,11 @@
       "chapter": 9,
       "chapterTitle": "استقرا، احتمال و استدلالِ بیزی",
       "url": "fa/guide/09-induction-probability-bayes.html#the-paradox-of-the-ravens",
-      "minutes": 2,
+      "minutes": 3,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/the-paradox-of-the-ravens.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/the-paradox-of-the-ravens.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3035,9 +3035,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#probability-the-basics",
       "minutes": 4,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/probability-the-basics.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/probability-the-basics.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3049,9 +3049,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#bayes-theorem",
       "minutes": 9,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/bayes-theorem.html",
-        "minutes": 12,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/bayes-theorem.html",
+        "minutes": 14,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3063,9 +3063,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#bayesian-epistemology",
       "minutes": 4,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/bayesian-epistemology.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/bayesian-epistemology.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3077,9 +3077,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#full-belief-and-degrees-of-belief",
       "minutes": 2,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/full-belief-and-degrees-of-belief.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/full-belief-and-degrees-of-belief.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3091,9 +3091,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#common-errors-in-probabilistic-reasoning",
       "minutes": 10,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/common-errors-in-probabilistic-reasoning.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/common-errors-in-probabilistic-reasoning.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3105,9 +3105,9 @@
       "url": "fa/guide/09-induction-probability-bayes.html#calibration-and-scoring-rules",
       "minutes": 3,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/calibration-and-scoring-rules.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/calibration-and-scoring-rules.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -3117,11 +3117,11 @@
       "chapter": 9,
       "chapterTitle": "استقرا، احتمال و استدلالِ بیزی",
       "url": "fa/guide/09-induction-probability-bayes.html#statistics-and-significance",
-      "minutes": 5,
+      "minutes": 6,
       "deep": {
-        "url": "deeper/09-induction-probability-bayes/statistics-and-significance.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/09-induction-probability-bayes/statistics-and-significance.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
