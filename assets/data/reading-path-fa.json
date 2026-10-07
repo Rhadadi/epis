@@ -1747,9 +1747,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#what-an-argument-is-and-is-not",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/what-an-argument-is-and-is-not.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/what-an-argument-is-and-is-not.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1761,9 +1761,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#standard-form",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/standard-form.html",
+        "url": "fa/deeper/03-logic-and-arguments/standard-form.html",
         "minutes": 3,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1775,9 +1775,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#deduction-induction-and-abduction",
       "minutes": 3,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/deduction-induction-and-abduction.html",
-        "minutes": 10,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/deduction-induction-and-abduction.html",
+        "minutes": 12,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1789,9 +1789,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#validity-and-soundness",
       "minutes": 3,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/validity-and-soundness.html",
-        "minutes": 11,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/validity-and-soundness.html",
+        "minutes": 13,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1803,9 +1803,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#strength-and-cogency",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/strength-and-cogency.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/strength-and-cogency.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1817,9 +1817,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#propositional-logic",
       "minutes": 5,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/propositional-logic.html",
+        "url": "fa/deeper/03-logic-and-arguments/propositional-logic.html",
         "minutes": 4,
-        "language": "en"
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1831,9 +1831,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#valid-argument-forms",
       "minutes": 3,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/valid-argument-forms.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/valid-argument-forms.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1845,9 +1845,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#formal-fallacies",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/formal-fallacies.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/formal-fallacies.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1859,9 +1859,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#categorical-logic-and-syllogisms",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/categorical-logic-and-syllogisms.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/categorical-logic-and-syllogisms.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1873,9 +1873,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#predicate-logic-and-quantifiers",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/predicate-logic-and-quantifiers.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/predicate-logic-and-quantifiers.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1887,9 +1887,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#modal-logic-basics",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/modal-logic-basics.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/modal-logic-basics.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1901,9 +1901,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#paradoxes-as-stress-tests",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/paradoxes-as-stress-tests.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/paradoxes-as-stress-tests.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1915,9 +1915,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#reconstructing-real-arguments",
       "minutes": 7,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/reconstructing-real-arguments.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/reconstructing-real-arguments.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1929,9 +1929,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#the-toulmin-model",
       "minutes": 4,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/the-toulmin-model.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/the-toulmin-model.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
@@ -1943,9 +1943,9 @@
       "url": "fa/guide/03-logic-and-arguments.html#dialectical-moves",
       "minutes": 2,
       "deep": {
-        "url": "deeper/03-logic-and-arguments/dialectical-moves.html",
-        "minutes": 3,
-        "language": "en"
+        "url": "fa/deeper/03-logic-and-arguments/dialectical-moves.html",
+        "minutes": 4,
+        "language": "fa"
       },
       "language": "fa"
     },
