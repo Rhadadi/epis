@@ -335,3 +335,50 @@ html[dir="rtl"] .pg-bar em{left:auto;right:100%}
 .pg-leg{margin:0 0 6px;font-size:.95rem;color:#555}.pg-sw{display:inline-block;width:22px;height:10px;border-radius:5px;vertical-align:middle}.pg-sw.foot{background:#F29A4A}.pg-sw.read{background:#3E7FD0}
 /* belt and braces: if a dark theme ever applies, use the paper colours anyway */
 html[data-games][data-theme="dark"]{--k-bg:#fff;--k-card:#fff;--k-ink:#222;--k-ink-2:#666;--k-line:rgba(0,0,0,.22);--k-orange-t:#FFF1E6;--k-blue-t:#EAF2FF;--k-green-t:#E9F8F0;--k-purple-t:#F3EEFF;--k-pink-t:#FFEDF3;--k-yellow-t:#FFF8DD}
+
+/* ======================================================================================================
+   Cases, redesigned: one clear column, no boxes inside boxes. A clue, a surprise or an idea is plain text with a bar beside it;
+   the headline is a big line under the picture; charts have large, dark labels; choices are wide and easy to tap. */
+body.paper .cs{gap:20px;align-items:stretch;max-width:40em;margin-inline:auto}
+body.paper .cs-clue,body.paper .cs-surprise,body.paper .cs-sandbox,body.paper .cs-ideas,body.paper .cs-verdict{
+  background:none;border:0;border-inline-start:5px solid #222;border-radius:0;padding:2px 0 2px 16px;box-shadow:none}
+html[dir="rtl"] body.paper .cs-clue,html[dir="rtl"] body.paper .cs-surprise,html[dir="rtl"] body.paper .cs-sandbox,html[dir="rtl"] body.paper .cs-ideas,html[dir="rtl"] body.paper .cs-verdict{padding:2px 16px 2px 0}
+body.paper .cs-surprise{border-inline-start-color:#8B5CF6}body.paper .cs-sandbox{border-inline-start-color:#3E7FD0}
+body.paper .cs-verdict.good{border:0;border-inline-start:5px solid #1FB57A}body.paper .cs-verdict.catch{border:0;border-inline-start:5px solid #E5484D}
+body.paper .cs-done{background:none;border:0;text-align:center}
+body.paper .cs-clue-k{margin:0 0 6px;color:#666}
+body.paper .cs-clue h3{font-size:1.5rem;margin:0 0 6px}
+body.paper .cs-clue p,body.paper .cs-surprise > p,body.paper .cs-sandbox > p{font-size:1.15rem;line-height:1.55;margin:0 0 10px}
+html[lang="fa"] body.paper .cs-clue p,html[lang="fa"] body.paper .cs-surprise > p,html[lang="fa"] body.paper .cs-sandbox > p{font-size:1rem;line-height:1.95}
+/* the headline: a plain big line (the newspaper frame is only for the very first screen) */
+body.paper .cs-clip.compact{border:0;border-radius:0;padding:0;text-align:center}
+body.paper .cs-clip.compact .cs-headline{border:0;padding:0 0 8px;font:400 clamp(1.4rem,5vw,1.9rem)/1.25 var(--hand);border-bottom:2.5px solid #E5484D;display:inline-block}
+html[lang="fa"] body.paper .cs-clip.compact .cs-headline{font:800 1.2rem/1.7 var(--hand)}
+body.paper .cs-clip .cs-headline{font-size:clamp(1.3rem,4.4vw,1.7rem)}
+/* choices: wide and easy to tap */
+body.paper .cs-choices{grid-template-columns:1fr}
+body.paper .cs-choice{padding:12px 20px;font-size:1.25rem;text-align:center;justify-content:center}
+html[lang="fa"] body.paper .cs-choice{font-size:1.05rem}
+/* the drawn stage: bigger, with speech bubbles that cannot collide */
+body.paper .cs-stage{aspect-ratio:16/10 !important;max-height:38vh}
+body.paper .cs-stage .bub{max-width:min(11em,42vw);width:max-content;font-size:.95rem;padding:.3em .7em}
+html[lang="fa"] body.paper .cs-stage .bub{font-size:.85rem}
+/* bars and charts */
+body.paper .cs-bar{font-size:1.05rem;grid-template-columns:minmax(110px,40%) 1fr auto}
+body.paper .cs-bar-t{height:20px}
+body.paper .cs-chart-cap{font-size:1rem;color:#444}
+body.paper .sim{background:none;border:0;padding:0;margin-top:6px;gap:12px}
+body.paper .sim-headline{border:0;border-radius:0;padding:0;font:400 clamp(1.35rem,4.8vw,1.8rem)/1.25 var(--hand);text-align:center;background:none;border-bottom:2.5px solid #222;padding-bottom:6px}
+body.paper .sim-headline.same{border-bottom-color:#1FB57A}
+html[lang="fa"] body.paper .sim-headline{font:800 1.15rem/1.7 var(--hand)}
+body.paper .sim-sub{font-size:1.02rem;color:#444;text-align:center}
+body.paper .sim-svg .lane{fill:#fff;stroke:#bbb;stroke-width:1.5;stroke-dasharray:none}
+body.paper .sim-svg .lane-t,body.paper .sim-svg .mean-t{font-size:15px;font-weight:700;fill:#222}
+body.paper .sim-svg .tick{font-size:14px;fill:#444}
+body.paper .sim-legend{font-size:1.05rem;justify-content:center}
+body.paper .sim-ctls{grid-template-columns:1fr}
+body.paper .sim-tog{font-size:1.15rem;min-height:56px}
+html[lang="fa"] body.paper .sim-tog{font-size:1rem}
+body.paper .sim-ctl{border:0;background:#F4F4F2;border-radius:12px;padding:10px 14px;font-size:1.05rem}
+body.paper .sim-run{justify-self:center}
+body.paper .cs-top{justify-content:center}
