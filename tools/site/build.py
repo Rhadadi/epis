@@ -1128,10 +1128,7 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                   'تا آماده شود، متن انگلیسی را می‌بینید. بقیهٔ سایت به فارسی است.</div>')
         prose_attrs = ' dir="ltr" lang="en"'
     in_ch = L("In this chapter", "در این فصل")
-    deck_html = guide_deck(f"chapters/{ch.num:02d}", root) if 1 <= ch.num <= 16 else ""
-    deck_section = (f'<section class="chdeck" aria-label="{L("This chapter in two minutes", "این فصل در دو دقیقه")}"><div class="wrap">'
-                    f'<p class="kicker">{L("This chapter in two minutes", "این فصل در دو دقیقه")}</p>{deck_html}</div></section>') if deck_html else ""
-    page = (f"{head}{label(art, ch.art)}{deck_section}"
+    page = (f"{head}{label(art, ch.art)}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
             f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
             f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{notice}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
@@ -2008,24 +2005,16 @@ def build_home(art, chapters, md, total_audio, n_concepts):
                     L(f"Every chapter narrated, {total_audio} in all, with section markers and a quiz after each chapter.",
                       f"همهٔ فصل‌ها روایت شده‌اند، روی‌هم {total_audio}{fa_audio('', ' به انگلیسی', ' به فارسی یا انگلیسی')}، با نشانگرِ بخش‌ها و آزمونکی در پایان هر فصل."), cls="tile door")
              + "</div>")
-    band_pic = site_play.picture(root, "play/play-correlation", sizes="200px", widths=(800,))
-    play = (f'<a class="playband" href="{h}play/"><span class="playband-art{" pic" if band_pic else ""}">{band_pic or site_play.ART["detective"]}</span>'
-            f'<span class="playband-t"><span class="kicker">{L("Play", "بازی کنید")}</span><b>{L("Baloney Detector", "چرندسنج")}</b>'
-            f'<span class="sub">{L("Games for people who enjoy being wrong. First up: coffee drinkers live 18% longer. Did the coffee do it?", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید. اولین بازی: قهوه‌خورها ۱۸٪ بیشتر عمر می‌کنند. کارِ قهوه بود؟")}</span></span>'
-            f'<span class="go">{L("Play", "بازی کنید")} {icon("arrow")}</span></a>')
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
              f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
     sites = [L(f"{n_chapters} chapters, from the Gettier problem to Bayes' theorem", f"{num(n_chapters)} فصل، از مسئلهٔ گتیه تا قضیهٔ بیز"),
              L(f"a living map of {n_concepts} ideas, in English and Persian", f"نقشهٔ زندهٔ {n_c} ایده، به فارسی و انگلیسی"),
              L(f"{total_audio} of narrated audio, chapter by chapter", f"{total_audio} روایتِ صوتی، فصل به فصل")]
-    home_deck = guide_deck("home", root, {"site": {"list": sites}})
-    home_deck = (f'<section class="chdeck" aria-label="{L("A two-minute start", "شروعی دو دقیقه‌ای")}"><div class="wrap">'
-                 f'<p class="kicker">{L("A two-minute start", "شروعی دو دقیقه‌ای")}</p>{home_deck}</div></section>') if home_deck else ""
-    body = (f'{head}<main id="main">{home_deck}'
+    body = (f'{head}<main id="main">'
             f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="{h}reading-path/">{L("A path built around your question →", "مسیری بر پایهٔ پرسش شما ←")}</a></div>'
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
-            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}{play}'
+            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}'
             f'<div style="margin-top:28px">{stats}</div></div></section>'
             + about_site(root) +
             f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("The course", "دوره")}</span>'
