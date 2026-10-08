@@ -2,6 +2,11 @@
    progress circles into #tprog and the sound switch into #tsound (assets/scenes/deck.js). */
 (function () {
   "use strict";
+  // these pages are always white paper: if anything flips the theme (the system's dark mode), flip it straight back
+  var d = document.documentElement;
+  function light() { if (d.getAttribute("data-theme") !== "light") d.setAttribute("data-theme", "light"); }
+  light();
+  if (window.MutationObserver) new MutationObserver(light).observe(d, { attributes: true, attributeFilter: ["data-theme"] });
   var b = document.getElementById("tmenu"), p = document.getElementById("tpanel");
   if (!b || !p) return;
   function set(open) {

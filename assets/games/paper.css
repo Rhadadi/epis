@@ -333,3 +333,5 @@ html[dir="rtl"] .pg-bar em{left:auto;right:100%}
 .pg-svg{width:100%;height:auto}.pg-svg .pg-t{font:14px 'Patrick Hand',var(--hand);fill:#444}.pg-svg .pg-n{font:700 8px system-ui;fill:#fff;pointer-events:none}
 .pg-qa{display:flex;flex-direction:column;gap:8px;align-items:center;max-width:40em}
 .pg-leg{margin:0 0 6px;font-size:.95rem;color:#555}.pg-sw{display:inline-block;width:22px;height:10px;border-radius:5px;vertical-align:middle}.pg-sw.foot{background:#F29A4A}.pg-sw.read{background:#3E7FD0}
+/* belt and braces: if a dark theme ever applies, use the paper colours anyway */
+html[data-games][data-theme="dark"]{--k-bg:#fff;--k-card:#fff;--k-ink:#222;--k-ink-2:#666;--k-line:rgba(0,0,0,.22);--k-orange-t:#FFF1E6;--k-blue-t:#EAF2FF;--k-green-t:#E9F8F0;--k-purple-t:#F3EEFF;--k-pink-t:#FFEDF3;--k-yellow-t:#FFF8DD}

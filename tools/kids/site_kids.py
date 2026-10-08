@@ -543,6 +543,8 @@ def for_level(g, level):
     for k in ("cards", "buckets", "items", "cases"):
         if k in g:
             g[k] = [x for x in g[k] if keep(x)]
+    if level == "explorers" and g.get("cases"):  # the dot-chart sandbox is for older children; younger ones have the Feet Lab
+        g["cases"] = [{k: v for k, v in c.items() if k not in ("sandbox", "surprise", "sim")} for c in g["cases"]]
     return g
 
 
