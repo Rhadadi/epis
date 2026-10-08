@@ -380,6 +380,90 @@
    "size": "1536x1024",
    "quality": "medium",
    "prompt": "Use the attached character sheet. A wide page-banner illustration with calm space at the top. A warm evening scene in a courtyard: a mother and a teacher (two adult women, one in a cardigan, one with a notebook) sit at a table with tea, chatting happily, while in the background Ava, Nima and Kian play a board game on the steps and Grandma Mehri watches with Hudhud on her shoulder. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "ref-fox",
+   "publish": false,
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A character sheet on a plain warm-cream background: the fox shown three times side by side, full body, in three poses (standing and looking up, jumping with arms stretched up, sitting with his nose in the air). Always drawn the same way: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary. Nothing else in the picture."
+  },
+  {
+   "id": "u02-s01",
+   "refs": [
+    "ref-cast",
+    "ref-fox"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. Grandma Mehri (a human grandmother, exactly as on the first character sheet) sits in her armchair reading a big picture book to Ava and Nima (human children, as on the first sheet). From the open pages rises a small glowing vision: a tiny hungry fox beside a tiny garden wall with a vine of purple grapes. In this picture: Grandma Mehri, Ava, Nima, and the tiny fox inside the book's glow. Not in this picture: any goat. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary."
+  },
+  {
+   "id": "u02-s02",
+   "refs": [
+    "ref-fox"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. The fox stands on the grass below a sunny stone garden wall covered by a leafy vine heavy with big, round, purple grapes that hang high above the ground, gazing up at the grapes with shining eyes, licking his lips. In this picture: only the fox. Not in this picture: any other animal or person. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary."
+  },
+  {
+   "id": "u02-s03",
+   "refs": [
+    "ref-fox"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. The fox leaps as high as he can with his paws stretched up, below a sunny stone garden wall covered by a leafy vine heavy with big, round, purple grapes that hang high above the ground, but the grapes are still far above his paws. A few little puffs of dust and a funny, determined face. In this picture: only the fox. Not in this picture: any other animal or person. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary."
+  },
+  {
+   "id": "u02-s04",
+   "refs": [
+    "ref-fox"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. The fox sits on the grass with his nose lifted high and his eyes half closed, pretending he does not care, with his back half turned to a sunny stone garden wall covered by a leafy vine heavy with big, round, purple grapes that hang high above the ground; he is panting a little. In this picture: only the fox. Not in this picture: any other animal or person. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary."
+  },
+  {
+   "id": "u02-s05",
+   "refs": [
+    "ref-fox",
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. Beside the garden wall, LITTLE GRAPE the small goat kid tilts her head and looks up at the fox with a curious question; the fox sits with his nose in the air and does not notice her yet. a sunny stone garden wall covered by a leafy vine heavy with big, round, purple grapes that hang high above the ground behind them. In this picture: the fox and Little Grape only. Not in this picture: Mother Goat, the other goat kids, the wolf, any people. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary; LITTLE GRAPE, the smallest goat kid, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u02-s06",
+   "refs": [
+    "ref-fox",
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. The fox scratches his head and looks a little embarrassed, ears drooping; Little Grape points a hoof up at a sunny stone garden wall covered by a leafy vine heavy with big, round, purple grapes that hang high above the ground, friendly and helpful. In this picture: the fox and Little Grape only. Not in this picture: Mother Goat, the other goat kids, the wolf, any people. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary; LITTLE GRAPE, the smallest goat kid, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u02-s07",
+   "refs": [
+    "ref-fox",
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. A wooden ladder leans against the garden wall. The fox stands near the top of the ladder, just picking one purple grape from the vine; Little Grape stands at the bottom holding the ladder steady with both front hooves, looking up and smiling. In this picture: the fox and Little Grape only. Not in this picture: Mother Goat, the other goat kids, the wolf, any people. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary; LITTLE GRAPE, the smallest goat kid, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "u02-s08",
+   "refs": [
+    "ref-fox",
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet(s) only for how the characters look; draw just the characters listed. A picture-book page from Aesop's fable of the fox and the grapes, retold gently. The fox and Little Grape sit side by side in the sun on the grass at the foot of the wall, sharing a pile of sweet purple grapes, both smiling happily; the ladder rests on the wall behind them. In this picture: the fox and Little Grape only. Not in this picture: Mother Goat, the other goat kids, the wolf, any people. Character looks: THE FOX, a slim, clever, russet-orange fox with a white chest and white-tipped bushy tail, black socks on his legs, big expressive amber eyes and tall pointed ears with dark tips; friendly and a little vain, not scary; LITTLE GRAPE, the smallest goat kid, cream-coloured, with a purple bell collar and a brave little face."
   }
  ]
 }
