@@ -1986,7 +1986,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
         paths.append(f'<div class="path"><h4>{esc(name)}</h4><p>{esc(note)}</p><ol>{chips}</ol></div>')
     n_c = num(n_concepts)
     n_chapters = sum(1 for k in chapters if 1 <= k <= 16)
-    head = hero(art, "home", root, kicker=L("A free course in the theory of knowledge", "دوره‌ای رایگان در نظریهٔ معرفت"),
+    head = ""
+    _unused = lambda: hero(art, "home", root, kicker=L("A free course in the theory of knowledge", "دوره‌ای رایگان در نظریهٔ معرفت"),
                 title=L("How do you know?", "از کجا می‌دانید؟"),
                 lede=L(f"<b>{SITE}</b> is a complete guide to knowledge, evidence, and critical thinking: sixteen illustrated chapters, "
                        f"a bilingual map of {n_concepts} concepts, and {total_audio} of narrated audio.",
@@ -2021,27 +2022,8 @@ def build_home(art, chapters, md, total_audio, n_concepts):
              L(f"a living map of {n_concepts} ideas, in English and Persian", f"نقشهٔ زندهٔ {n_c} ایده، به فارسی و انگلیسی"),
              L(f"{total_audio} of narrated audio, chapter by chapter", f"{total_audio} روایتِ صوتی، فصل به فصل")]
     home_deck = guide_deck("home", root, {"site": {"list": sites}})
-    home_deck = (f'<section class="chdeck" aria-label="{L("A two-minute start", "شروعی دو دقیقه‌ای")}"><div class="wrap">'
-                 f'<p class="kicker">{L("A two-minute start", "شروعی دو دقیقه‌ای")}</p>{home_deck}</div></section>') if home_deck else ""
-    body = (f'{head}<main id="main">{home_deck}'
-            f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="{h}reading-path/">{L("A path built around your question →", "مسیری بر پایهٔ پرسش شما ←")}</a></div>'
-            f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
-            f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}{play}'
-            f'<div style="margin-top:28px">{stats}</div></div></section>'
-            + about_site(root) +
-            f'<section class="section alt"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("The course", "دوره")}</span>'
-            f'<h2>{L("Sixteen chapters, each with a masterpiece", "شانزده فصل، هر یک با یک شاهکار")}</h2></div><p>'
-            + L("Every chapter opens with a painting or photograph that captures its question, from Raphael's <i>School of Athens</i> to the <i>Earthrise</i> photograph.",
-                "هر فصل با نقاشی یا عکسی آغاز می‌شود که پرسشِ آن را در خود دارد، از «مکتب آتن» رافائل تا عکسِ «طلوع زمین».")
-            + f'</p></div>{contents_parts(art, chapters, root)}</div></section>'
-            f'<section class="quoteband"><img src="{art.src("cave", root, 2000)}" alt="{attr(art.alt("cave"))}" loading="lazy">'
-            f'<div class="wrap"><blockquote><p>'
-            + L("“The duty of the man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads.”",
-                "«وظیفهٔ کسی که نوشته‌های دانشمندان را می‌کاود، اگر هدفش شناختِ حقیقت است، این است که خود را دشمنِ هر آنچه می‌خوانَد کند.»")
-            + f'</p><footer>{L("— Ibn al-Haytham, Doubts Concerning Ptolemy, c. 1025", "— ابن هیثم، «الشکوک علی بطلمیوس»، حدود ۱۰۲۵")}</footer></blockquote></div></section>'
-            f'<section class="section"><div class="wrap"><div class="section-head"><div><span class="kicker">{L("Learning paths", "مسیرهای یادگیری")}</span>'
-            f'<h2>{L("Short on time?", "وقت کمی دارید؟")}</h2></div><p>{L("Follow a path through the chapters that fits your goal.", "مسیری از میان فصل‌ها را دنبال کنید که با هدفتان جور است.")}</p></div><div class="paths">{"".join(paths)}</div></div></section>'
-            f'</main>')
+    # the home page is the deck: a title screen, a few scenes, and the way in (as ncase.me/trust)
+    body = f'<main id="main" class="pdeck"><h1 class="sr-h">{L("How do you know?", "از کجا می‌دانید؟")}</h1>{home_deck}</main>'
     return body
 
 

@@ -1,6 +1,27 @@
 {
  "scenes": [
   {
+   "id": "title",
+   "title": {
+    "big": [
+     "THE QUESTION",
+     "HOW DO YOU",
+     "KNOW?"
+    ],
+    "sub": "a free course in the theory of knowledge",
+    "go": "Play",
+    "fa": {
+     "big": [
+      "پرسشِ بزرگ",
+      "از کجا",
+      "می‌دانید؟"
+     ],
+     "sub": "دوره‌ای رایگان در نظریهٔ معرفت",
+     "go": "شروع"
+    }
+   }
+  },
+  {
    "id": "claim",
    "text": [
     "You read a headline: **“People who drink two cups of coffee a day live 18% longer.”**",
@@ -304,23 +325,58 @@
    "links": [
     {
      "home": "reading-path/",
-     "t": "Find a reading path built around your question",
+     "t": "A reading path for your question",
      "fa": {
-      "t": "مسیرِ مطالعه‌ای پیدا کنید که بر پایهٔ پرسشِ شما ساخته شده"
+      "t": "مسیرِ مطالعه برای پرسشِ شما"
      }
     },
     {
      "guide": "01-what-is-epistemology.html",
-     "t": "Start with Chapter 1: What is epistemology?",
+     "t": "Chapter 1: What is epistemology?",
      "fa": {
-      "t": "با فصلِ ۱ شروع کنید: معرفت‌شناسی چیست؟"
+      "t": "فصل ۱: معرفت‌شناسی چیست؟"
      }
     },
     {
      "play": "correlation-detective/",
-     "t": "Or play: Correlation Detective",
+     "t": "Play: Correlation Detective",
      "fa": {
-      "t": "یا بازی کنید: کارآگاهِ همبستگی"
+      "t": "بازی: کارآگاهِ همبستگی"
+     }
+    },
+    {
+     "home": "guide/",
+     "t": "All sixteen chapters",
+     "fa": {
+      "t": "هر شانزده فصل"
+     }
+    },
+    {
+     "home": "map/",
+     "t": "The concept map",
+     "fa": {
+      "t": "نقشهٔ مفاهیم"
+     }
+    },
+    {
+     "home": "concepts/",
+     "t": "135 concepts",
+     "fa": {
+      "t": "۱۳۵ مفهوم"
+     }
+    },
+    {
+     "home": "guide/audio/",
+     "t": "Listen",
+     "fa": {
+      "t": "شنیدن"
+     }
+    },
+    {
+     "home": "kids/",
+     "t": "For children",
+     "fa": {
+      "t": "برای بچه‌ها"
      }
     }
    ],

@@ -64,3 +64,59 @@ html[lang="fa"] .deck .dbtn{font:700 1rem var(--hand);letter-spacing:0;text-tran
 .deck .ddot{border-color:var(--ink)}.deck .ddot.done{background:var(--rule-2)}.deck .ddot.on{background:var(--ink);border-color:var(--ink)}
 .deck .dstage{background:var(--bg);border-color:var(--ink)}
 .deck .dtext{color:var(--ink)}
+
+/* ---- the bar moves to the bottom, black, icons only (as on ncase.me/trust); the pages lose their top gap */
+:root{--bar-h:0px;--tbh:56px}
+body{padding-bottom:var(--tbh)}
+.bar,.bar.solid,.bar.clear{inset:auto 0 0 0;top:auto;height:var(--tbh);background:#111;color:#fff;border:0;padding:0 10px}
+.bar a,.bar button,.bar summary{color:#fff}
+.bar .site-nav a,.bar .tbtn{color:#fff;border-color:transparent}
+.bar .site-nav a:hover,.bar .tbtn:hover,.bar .site-nav a[aria-current="page"]{border-color:#fff}
+.bar .brand small{display:none}
+.bar .brand b{color:#fff;font-size:1.05rem}
+@media (max-width:760px){.bar .brand b{display:none}.bar .site-nav a span{display:none}}
+.mnav,.chsw-panel{top:auto !important;bottom:calc(var(--tbh) + 6px)}
+.chsw-panel{position:fixed;inset-inline-start:8px}
+.rpanel{top:auto;bottom:calc(var(--tbh) + 8px);max-height:calc(100vh - var(--tbh) - 24px)}
+.chat{top:10px;bottom:calc(var(--tbh) + 10px)}
+.chart{height:min(calc(100vh - var(--tbh) - 64px),940px)}
+.hero-in{padding-top:44px}
+.mnav,.chsw-panel,.rpanel,.chat{background:var(--bg);color:var(--ink);border:2.5px solid var(--ink);border-radius:var(--hp);box-shadow:none}
+.mnav a,.chsw-panel a{color:var(--ink)}
+
+/* ---- scene decks as whole pages: title screen, age/menus, links as buttons */
+.pdeck{min-height:calc(100dvh - var(--tbh));display:flex;flex-direction:column;justify-content:center;max-width:920px;margin:0 auto;padding:10px 16px 18px}
+.pdeck > .deck{margin:0;flex:none}
+.deck .dwrap.is-title .dttl{display:block;position:fixed;inset:0 0 var(--tbh) 0;z-index:30;background:var(--bg)}
+.dttl{display:none}
+.dttl-art{position:absolute;inset:0}
+.dttl-art .crowd{display:block}
+.dttl-art .crowd path[stroke="#CFCFCF"]{stroke:var(--rule-2);opacity:.5}
+.dttl-art .cw{animation:dcrowd 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes dcrowd{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-4px) rotate(3deg)}}
+@media (prefers-reduced-motion:reduce){.dttl-art .cw{animation:none}}
+.dttl-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;pointer-events:none}
+.dttl-in > *{pointer-events:auto}
+.dttl-h{margin:0 0 6px;display:flex;flex-direction:column;align-items:center;font-weight:400;text-transform:uppercase;color:var(--ink);line-height:1;letter-spacing:.04em;background:var(--bg);padding:12px 18px;border-radius:50%/40%}
+.dttl-h .tl{display:block}
+.dttl-h .tl0{font-size:clamp(1.5rem,5.5vw,2.5rem)}.dttl-h .tl1{font-size:clamp(2.6rem,12vw,5.8rem)}.dttl-h .tl2{font-size:clamp(1.8rem,7.4vw,3.6rem)}
+html[lang="fa"] .dttl-h{text-transform:none;letter-spacing:0;font-weight:800;line-height:1.35}
+html[lang="fa"] .dttl-h .tl0{font-size:clamp(1.1rem,4.4vw,1.8rem)}html[lang="fa"] .dttl-h .tl1{font-size:clamp(2.2rem,10vw,4.6rem)}html[lang="fa"] .dttl-h .tl2{font-size:clamp(1.4rem,6vw,2.8rem)}
+.dttl-sub{margin:0 0 22px;font-size:1.05rem;color:var(--faint);max-width:24em;background:var(--bg);padding:0 8px}
+.dplay .arr{display:inline-block}
+.deck .dlinks{display:flex;flex-direction:column;gap:12px;align-items:center;margin:14px 0 0}
+.deck .dlinks li::before{content:none}
+.deck .dlinks a{display:inline-flex;flex-direction:column;align-items:center;min-width:min(100%,19em);padding:8px 26px;border:2.5px solid var(--ink);border-radius:var(--hb);text-decoration:none;font:400 1.4rem/1.15 var(--hand);color:var(--ink)}
+html[lang="fa"] .deck .dlinks a{font-size:1.1rem;font-weight:700}
+.deck .dlinks a:hover{background:var(--ink);color:var(--bg)}
+.deck .dlinks small{font-size:.72em;color:var(--dim);font-family:var(--hand);font-weight:400}
+.deck .dlinks a:hover small{color:var(--bg)}
+.deck .dstage{border:0;border-radius:0;overflow:visible;--aw:13%;--pw:11%}
+.deck .dstage.haspic{border:2.5px solid var(--ink);border-radius:var(--hp);overflow:hidden}
+@media (max-width:640px){.deck .dstage{--aw:21%;--pw:15%}}
+.deck .dtext{font-family:var(--hand);text-align:center;margin-inline:auto;font-size:clamp(1.35rem,4vw,1.9rem)}
+html[lang="fa"] .deck .dtext{font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.9}
+.deck .bub{border-color:var(--ink);box-shadow:none;background:#fff;color:#222}
+.deck .bub::after{border-top-color:var(--ink)}
+.sr-h{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dttl-sub{font-family:var(--hand)}
