@@ -14,8 +14,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "kids"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scenes"))
 import kidslib as K  # noqa: E402
 import site_kids  # noqa: E402
+import scenes as SC  # noqa: E402
 
 ROOT = K.ROOT
 PLAY = ROOT / "play"
@@ -73,6 +75,8 @@ def scripts_for(b, root, g):
     files = [ENGINE_JS[g["engine"]]]
     sims = sorted({c["sim"]["kind"] for c in g.get("cases", []) if c.get("sim")})
     files += [SIM_JS[s] for s in sims]
+    if any(c.get("stages") for c in g.get("cases", [])):  # drawn stages need the puppets and the stage code
+        files += ["scenes/puppets.js", "scenes/deck.js"]
     return "".join(f'<script src="{b.av(root, f)}" defer></script>' for f in files)
 
 
@@ -153,7 +157,7 @@ def build(b, art, md):
 
 # ----------------------------------------------------------------------------- checks (also run by tools/play/check.py)
 
-NON_TEXT = {"id", "engine", "kind", "art", "img", "color", "href", "levels", "best", "unit", "sim", "controls", "params", "values", "hi"}
+NON_TEXT = {"id", "engine", "kind", "art", "img", "color", "who", "what", "bg", "face", "anim", "stages", "href", "levels", "best", "unit", "sim", "controls", "params", "values", "hi"}
 
 
 def missing_fa(obj, path=""):
@@ -207,6 +211,13 @@ def case_problems(g):
         for k in (c.get("sandbox") or {}).get("controls", []):
             if k not in ("link", "effect", "n", "coin", "fix", "show"):
                 errs.append(f"case {cid}: unknown sandbox control {k!r}")
+        if c.get("stages"):
+            for lang in ("en", "fa"):
+                stg = K.pick(c["stages"], lang)
+                flat = [*(stg.get("clues") or []), *[stg[k] for k in ("twist", "verdict") if stg.get(k)]]
+                errs += [f"case {cid} stages [{lang}]: {e}" for e in SC.validate(flat, need_text=False)]
+            if len(c["stages"].get("clues", [])) > len(c.get("clues", [])):
+                errs.append(f"case {cid}: more drawn clue stages than clues")
         for lv in c.get("levels", []):
             if lv not in ("explorers", "investigators", "play"):
                 errs.append(f"case {cid}: unknown level {lv!r}")

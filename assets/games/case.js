@@ -119,17 +119,27 @@
       return true;
     }
 
+    // the stage at the top of a case (puppets, as in the scene decks): set per step; none without c.stages
+    var stageEl = null, st = null;
+    function pose(scene) {
+      if (!st || !scene) return;
+      stageEl.hidden = false; st.set(scene, false);
+    }
+    function pastSteps(wrap) { wrap.querySelectorAll(".cs-clue, .cs-ask, .cs-end").forEach(function (n) { n.classList.add("past"); }); }
+
     function finish(wrap, c, picks) {
-      var end = el("section", "cs-end");
-      if (c.surprise) {
+      var last = picks[picks.length - 1], ok = (c.best || []).indexOf(last) >= 0;
+      if (ok) good++;
+      var paged = !!st;
+      function mkTwist() {
         var sp = el("div", "cs-surprise");
         sp.appendChild(el("p", "cs-clue-k", T("The twist", "پیچِ ماجرا")));
         sp.appendChild(el("p", "", c.surprise.text));
         simulate(sp, c, "surprise");
         if (c.surprise.after) sp.appendChild(el("p", "cs-after", c.surprise.after));
-        end.appendChild(sp);
+        return sp;
       }
-      if (c.ideas && c.ideas.length) {
+      function mkIdeas() {
         var ideas = el("div", "cs-ideas");
         ideas.appendChild(el("p", "cs-clue-k", T("What was going on", "ماجرا چه بود")));
         c.ideas.forEach(function (it) {
@@ -137,52 +147,90 @@
           d.appendChild(el("b", "", it.name)); d.appendChild(el("span", "", it.text));
           ideas.appendChild(d);
         });
-        end.appendChild(ideas);
+        return ideas;
       }
-      var last = picks[picks.length - 1], ok = (c.best || []).indexOf(last) >= 0;
-      if (ok) good++;
-      var v = el("div", "cs-verdict " + (ok ? "good" : "catch"));
-      if (data.mascot && data.mascot[ok ? "good" : "catch"]) {  // the guide reacts (kids' site: Hudhud)
-        var m = el("img", "cs-mascot"); m.src = data.mascot[ok ? "good" : "catch"]; m.alt = ""; v.appendChild(m);
+      function mkVerdict() {
+        var v = el("div", "cs-verdict " + (ok ? "good" : "catch"));
+        if (data.mascot && data.mascot[ok ? "good" : "catch"]) {  // the guide reacts (kids' site: Hoopy)
+          var m = el("img", "cs-mascot"); m.src = data.mascot[ok ? "good" : "catch"]; m.alt = ""; v.appendChild(m);
+        }
+        v.appendChild(el("b", "", ok ? data.good || T("Well reasoned!", "خوب فکر کردی!") : data.catch || T("Here's the catch", "نکته این‌جاست")));
+        v.appendChild(el("p", "", choiceOf(c, last).why || ""));
+        if (!ok && c.best && c.best.length) {
+          v.appendChild(el("p", "cs-best", T("Better answer: ", "جوابِ بهتر: ") + c.best.map(function (id) { return "“" + choiceOf(c, id).text + "”"; }).join(T(" or ", " یا "))));
+        }
+        if (picks.length > 1) {
+          var path = el("ol", "cs-path");
+          path.setAttribute("aria-label", T("How your answer moved", "جوابت چطور عوض شد"));
+          picks.forEach(function (id, i) {
+            var li = el("li", i && id !== picks[i - 1] ? "moved" : "");
+            li.appendChild(el("small", "", i === 0 ? T("First guess", "حدسِ اول") : T("After clue ", "بعد از سرنخِ ") + N(i)));
+            li.appendChild(el("span", "", choiceOf(c, id).short || choiceOf(c, id).text));
+            path.appendChild(li);
+          });
+          v.appendChild(path);
+        }
+        return v;
       }
-      v.appendChild(el("b", "", ok ? data.good || T("Well reasoned!", "خوب فکر کردی!") : data.catch || T("Here's the catch", "نکته این‌جاست")));
-      v.appendChild(el("p", "", choiceOf(c, last).why || ""));
-      if (!ok && c.best && c.best.length) {
-        v.appendChild(el("p", "cs-best", T("Better answer: ", "جوابِ بهتر: ") + c.best.map(function (id) { return "“" + choiceOf(c, id).text + "”"; }).join(T(" or ", " یا "))));
-      }
-      if (picks.length > 1) {
-        var path = el("ol", "cs-path");
-        path.setAttribute("aria-label", T("How your answer moved", "جوابت چطور عوض شد"));
-        picks.forEach(function (id, i) {
-          var li = el("li", i && id !== picks[i - 1] ? "moved" : "");
-          li.appendChild(el("small", "", i === 0 ? T("First guess", "حدسِ اول") : T("After clue ", "بعد از سرنخِ ") + N(i)));
-          li.appendChild(el("span", "", choiceOf(c, id).short || choiceOf(c, id).text));
-          path.appendChild(li);
-        });
-        v.appendChild(path);
-      }
-      end.appendChild(v);
-      if (c.sandbox && c.sim) {
+      function mkSandbox() {
         var sb = el("div", "cs-sandbox");
         sb.appendChild(el("p", "cs-clue-k", T("Your turn", "نوبتِ تو")));
         if (c.sandbox.intro) sb.appendChild(el("p", "", c.sandbox.intro));
-        if (!simulate(sb, c, "sandbox")) sb.remove(); else end.appendChild(sb);
+        return simulate(sb, c, "sandbox") ? sb : null;
       }
-      var nav = el("div", "cs-nav");
-      if (c.next && c.next.href) {
-        var a = el("a", "cs-go", c.next.text); a.href = c.next.href;
-        a.addEventListener("click", function () { G.star(box); });
-        nav.appendChild(a);
-      } else if (ci + 1 < cases.length) {
-        var nb = el("button", "cs-go", T("Next case", "پروندهٔ بعدی")); nb.type = "button";
-        nb.onclick = function () { ci++; start(); };
-        nav.appendChild(nb);
-      } else {
-        nav.appendChild(summary());
+      function mkNav() {
+        var nav = el("div", "cs-nav");
+        if (c.next && c.next.href) {
+          var a = el("a", "cs-go", c.next.text); a.href = c.next.href;
+          a.addEventListener("click", function () { G.star(box); });
+          nav.appendChild(a);
+        } else if (ci + 1 < cases.length) {
+          var nb = el("button", "cs-go", T("Next case", "پروندهٔ بعدی")); nb.type = "button";
+          nb.onclick = function () { ci++; start(); };
+          nav.appendChild(nb);
+        } else {
+          nav.appendChild(summary());
+        }
+        return nav;
       }
-      end.appendChild(nav);
+      var end = el("section", "cs-end");
+      pastSteps(wrap);
       wrap.appendChild(end);
-      show(end.firstChild, true);
+      if (!paged) {  // everything at once (the plain mode)
+        if (c.surprise) end.appendChild(mkTwist());
+        if (c.ideas && c.ideas.length) end.appendChild(mkIdeas());
+        end.appendChild(mkVerdict());
+        if (c.sandbox && c.sim) { var sb = mkSandbox(); if (sb) end.appendChild(sb); }
+        end.appendChild(mkNav());
+        show(end.firstChild, true);
+        return;
+      }
+      // one step at a time: the twist, the ideas, the verdict, your turn; the stage follows
+      var steps = [];
+      if (c.surprise) steps.push({ make: mkTwist, pose: c.stages.twist });
+      if (c.ideas && c.ideas.length) steps.push({ make: mkIdeas });
+      steps.push({ make: mkVerdict, pose: c.stages.verdict });
+      if (c.sandbox && c.sim) steps.push({ make: mkSandbox, hideStage: true });
+      var si = 0;
+      function showStep() {
+        end.innerHTML = "";
+        var stp = steps[si], node = stp.make();
+        if (!node) { si++; return showStep(); }
+        if (stp.hideStage && stageEl) stageEl.hidden = true;
+        if (stp.pose) pose(stp.pose);
+        end.appendChild(node);
+        var nav = el("div", "cs-nav");
+        if (si < steps.length - 1) {
+          var go = el("button", "cs-go", data.cont || T("Continue", "ادامه")); go.type = "button";
+          go.onclick = function () { si++; showStep(); };
+          nav.appendChild(go);
+        } else {
+          nav.appendChild(mkNav());
+        }
+        end.appendChild(nav);
+        show(wrap.firstChild, true);
+      }
+      showStep();
     }
 
     function confetti(host) {  // a short burst of paper; none with reduced motion
@@ -239,6 +287,11 @@
       if (cases.length > 1) top.appendChild(el("span", "cs-count", T("Case ", "پروندهٔ ") + N(ci + 1) + T(" of ", " از ") + N(cases.length)));
       if (c.label) top.appendChild(el("span", "cs-label", c.label));
       wrap.appendChild(top);
+      stageEl = st = null;
+      if (c.stages && window.Scenes) {
+        stageEl = el("div", "dstage cs-stage"); stageEl.hidden = true; stageEl.setAttribute("aria-hidden", "true");
+        wrap.appendChild(stageEl); st = Scenes.Stage(stageEl); wrap.classList.add("paged");
+      }
       // the headline, as a clipping from a (made-up) newspaper, with its picture
       var clip = el("div", "cs-clip" + (c.img ? " has-pic" : ""));
       if (data.masthead) clip.appendChild(el("p", "cs-mast", data.masthead));
@@ -255,6 +308,7 @@
         if (picks.length && id !== picks[picks.length - 1]) changes++;
         picks.push(id);
         if (k < (c.clues || []).length) {
+          if (st) { wrap.querySelectorAll(".cs-clue, .cs-ask").forEach(function (n) { n.classList.add("past"); }); clip.classList.add("compact"); pose((c.stages.clues || [])[k]); }
           var card = clue(c, k++);
           wrap.appendChild(card);
           ask(wrap, data.again || T("Has your mind changed?", "نظرت عوض شد؟"), c, id, step);

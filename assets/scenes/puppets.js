@@ -63,7 +63,13 @@
       hair: '<path d="M25 46 Q24 12 50 12 Q76 12 75 46 Q72 28 50 27 Q28 28 25 46Z" fill="#E88FA6"/><g fill="#fff" opacity=".7"><circle cx="34" cy="22" r="2.4"/><circle cx="48" cy="17" r="2.4"/><circle cx="62" cy="21" r="2.4"/><circle cx="70" cy="31" r="2.4"/></g>',
       glasses: glass("#6B4A2B") }); },
     person: function () { return person({ shirt: "#7B8BA6", sleeve: "#7B8BA6", pants: "#46526B", shoes: "#2A2F3A",
-      hair: '<path d="M29 38 Q50 6 71 38 Q50 26 29 38Z" fill="#4A3B33"/>' }); }
+      hair: '<path d="M29 38 Q50 6 71 38 Q50 26 29 38Z" fill="#4A3B33"/>' }); },
+    person2: function () { return person({ shirt: "#E5646A", sleeve: "#E5646A", pants: "#3B3F58", shoes: "#2A2F3A", skin: "#C98B5E",
+      hair: '<path d="M27 40 Q27 10 50 10 Q73 10 73 40 Q60 22 50 24 Q40 22 27 40Z" fill="#1D1A22"/>' }); },
+    person3: function () { return person({ shirt: "#4FA37A", sleeve: "#4FA37A", pants: "#5A4A3A", shoes: "#EDEDED", skin: "#F1C9A5",
+      hair: '<path d="M28 38 Q30 8 50 8 Q70 8 72 38 Q58 18 50 24 Q42 18 28 38Z" fill="#B5651D"/>' }); },
+    person4: function () { return person({ shirt: "#F2B84B", sleeve: "#F2B84B", pants: "#4A5A8A", shoes: "#8A5A3C", skin: "#8A5A3C",
+      hair: '<g fill="#1D1A22"><circle cx="34" cy="24" r="9"/><circle cx="50" cy="18" r="10"/><circle cx="66" cy="24" r="9"/></g>' }); }
   };
   // ---- animals and Hudhud (viewBox 0 0 100 110 / 120)
   function goat(body, patch, collar, scarf, big) {

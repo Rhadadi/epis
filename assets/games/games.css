@@ -163,7 +163,9 @@ html[lang="fa"] .sim-headline{font-weight:800}
 .sim-svg{display:block;width:100%;height:auto;direction:ltr}
 .sim-svg .lane{fill:var(--k-bg)}
 .sim-svg .lane-t{font:600 14px var(--k-display);fill:var(--k-ink)}
-.sim-svg .pp{opacity:.85}
+.sim-svg .pp{opacity:.85;transition:cx .9s cubic-bezier(.4,0,.2,1),cy .9s cubic-bezier(.4,0,.2,1),opacity .5s,fill .5s}
+@media (prefers-reduced-motion:reduce){.sim-svg .pp{transition:none}}
+.sim-svg .mean,.sim-svg .mean-t{transition:opacity .3s}
 .sim-svg .g0,.sim-legend i.g0{fill:#8B5A2B;background:#8B5A2B}
 .sim-svg .g1,.sim-legend i.g1{fill:var(--k-blue);background:var(--k-blue)}
 .sim-svg .h0,.sim-legend i.h0{fill:#E25C5C;background:#E25C5C}
@@ -218,3 +220,12 @@ html[dir="rtl"] .cs-mascot{margin:-30px 12px 6px 0}
 @keyframes csfall{to{transform:translate(var(--x),340px) rotate(var(--r));opacity:0}}
 .gcard-art.pic img{transition:transform .5s ease}
 @media (prefers-reduced-motion:no-preference){.gcard > a:hover .gcard-art.pic img{transform:scale(1.06) rotate(-.6deg)}}
+
+/* paged cases: one step at a time, with a drawn stage that follows the story */
+.cs.paged .past{display:none}
+.cs-clip.compact .cs-pic,.cs-clip.compact .cs-mast{display:none}
+.cs-clip.compact{transform:none;box-shadow:3px 4px 0 var(--k-ink)}
+.cs-clip.compact .cs-headline{font-size:1.05rem;padding-bottom:6px}
+.cs-stage{aspect-ratio:16/8 !important}
+@media (max-width:640px){.cs-stage{aspect-ratio:16/10 !important}}
+.cs.paged .cs-end .cs-nav{margin-top:6px}

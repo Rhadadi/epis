@@ -50,12 +50,12 @@ def missing_fa(obj, path=""):
     return out
 
 
-def validate(scenes):
-    """Problems in a list of picked (one-language) scenes."""
+def validate(scenes, need_text=True):
+    """Problems in a list of picked (one-language) scenes (need_text=False: stages, which only draw)."""
     errs, seen = [], set()
     for i, sc in enumerate(scenes):
         w = f"scene {sc.get('id', i + 1)}"
-        sid = sc.get("id")
+        sid = sc.get("id", f"stage{i + 1}" if not need_text else None)
         if not sid:
             errs.append(f"{w}: no id")
         elif sid in seen:
@@ -94,7 +94,7 @@ def validate(scenes):
             oks = sum(1 for o in a.get("options", []) if o.get("ok"))
             if oks != 1:
                 errs.append(f"{w}: a question needs exactly one right option")
-        if not any(sc.get(k) for k in ("text", "lines", "list", "cards", "ask", "game", "links")):
+        if need_text and not any(sc.get(k) for k in ("text", "lines", "list", "cards", "ask", "game", "links")):
             errs.append(f"{w}: nothing to read")
     return errs
 

@@ -22,16 +22,21 @@
   }
   function gauss(r) { var u = 1 - r(), v = r(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
 
-  // the town and the study: returns both groups (people with hidden factor h and outcome y) and the headline numbers
+  // the town and the study. Everyone has a fixed place in the random stream, so the same person is the same person when
+  // the rules change (the picture lets them walk to their new place). Returns every person (with group g, hidden factor h,
+  // outcome y, row j, and keep: false for people left out by "compare only the same health") and the headline numbers.
   function study(sim, p) {
-    var r = rng(p.seed || 7), groups = [[], []];
+    var r = rng(p.seed || 7), people = [], groups = [[], []];
     for (var i = 0; i < p.n; i++) {
       var h = r();
       var pin = p.coin ? 0.5 : 0.5 + (p.link / 100) * 0.35 * (2 * h - 1);
       var g = r() < pin ? 0 : 1;
       var y = sim.base + sim.spread * h + (g === 0 ? p.effect : 0) + sim.sd * gauss(r);
-      if (p.fix && (h < 0.42 || h > 0.58)) continue;
-      groups[g].push({ h: h, y: y, j: r() });
+      var j = r();
+      var keep = !(p.fix && (h < 0.42 || h > 0.58));
+      var d = { i: i, h: h, g: g, y: y, j: j, keep: keep };
+      people.push(d);
+      if (keep) groups[g].push(d);
     }
     var st = groups.map(function (g) {
       var m = g.reduce(function (s, x) { return s + x.y; }, 0) / Math.max(1, g.length);
@@ -40,7 +45,7 @@
     });
     var diff = st[0].mean - st[1].mean;
     var se = Math.sqrt(st[0].v / Math.max(1, st[0].n) + st[1].v / Math.max(1, st[1].n));
-    return { groups: groups, st: st, pct: 100 * diff / st[1].mean, luck: Math.abs(diff) < 2 * se };
+    return { people: people, groups: groups, st: st, pct: 100 * diff / st[1].mean, luck: Math.abs(diff) < 2 * se };
   }
 
   function make(parent, sim, opts) {
@@ -54,6 +59,7 @@
     var svg = document.createElementNS(NS, "svg");
     svg.setAttribute("class", "sim-svg"); svg.setAttribute("role", "img");
     box.appendChild(svg);
+    var dots = [], meanLines = [], axis = [];
     var legend = el("p", "sim-legend");
     box.appendChild(legend);
 
@@ -107,28 +113,44 @@
       }
       if (inputs.effect) inputs.effect.out.textContent = (p.effect > 0 ? "+" : "") + N(p.effect) + (sim.unit || "");
       if (inputs.n) inputs.n.out.textContent = N(p.n);
-      // the picture: one lane per group, a dot per person (up to 110 per lane), the group's average as a line;
-      // drawn at the width it is shown, so its labels stay readable on a phone
-      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      // the picture: one lane per group, a dot per person (the first 220 people), the group's average as a line.
+      // The dots are kept between drawings, so when the rules change people walk to their new place.
       var W = Math.max(280, Math.round(box.clientWidth - 28) || 600);
-      svg.setAttribute("viewBox", "0 0 " + W + " 182");
       var lo = sim.lo, hi = sim.hi, x = function (v) { return 14 + (W - 28) * Math.max(0, Math.min(1, (v - lo) / (hi - lo))); };
-      [0, 1].forEach(function (g) {
-        var top = g ? 96 : 14, people = res.groups[g].slice(0, 110);
-        svgAdd("rect", { x: 6, y: top - 6, width: W - 12, height: 72, rx: 14, "class": "lane l" + g });
-        svgAdd("text", { x: 16, y: top + 10, "class": "lane-t" }, sim.groups[g] + " · " + N(st[g].n));
-        people.forEach(function (d) {
-          var cls = p.show ? (d.h < 0.34 ? "h0" : d.h < 0.67 ? "h1" : "h2") : "g" + g;
-          svgAdd("circle", { cx: x(d.y), cy: top + 22 + d.j * 36, r: 4.2, "class": "pp " + cls });
+      var shown = res.people.slice(0, 220), count = shown.length;
+      if (!svg.firstChild || svg.getAttribute("data-n") !== String(count) || svg.getAttribute("data-w") !== String(W)) {
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+        svg.setAttribute("viewBox", "0 0 " + W + " 182"); svg.setAttribute("data-n", count); svg.setAttribute("data-w", W);
+        [0, 1].forEach(function (g) {
+          var top = g ? 96 : 14;
+          svgAdd("rect", { x: 6, y: top - 6, width: W - 12, height: 72, rx: 14, "class": "lane l" + g });
+          svgAdd("text", { x: 16, y: top + 10, "class": "lane-t lane-t" + g }, "");
         });
+        dots = shown.map(function () { return svgAdd("circle", { r: 4.2, "class": "pp", cx: W / 2, cy: 90 }); });
+        meanLines = [0, 1].map(function (g) {
+          return [svgAdd("line", { "class": "mean", y1: (g ? 96 : 14) + 14, y2: (g ? 96 : 14) + 62, x1: 0, x2: 0 }),
+                  svgAdd("text", { "text-anchor": "middle", "class": "mean-t", x: 0, y: (g ? 96 : 14) + 70 }, "")];
+        });
+        axis = [svgAdd("text", { x: 14, y: 178, "class": "tick" }, N(lo)),
+                svgAdd("text", { x: W / 2, y: 178, "text-anchor": "middle", "class": "tick" }, sim.outcome + " →"),
+                svgAdd("text", { x: W - 14, y: 178, "text-anchor": "end", "class": "tick" }, N(hi))];
+      }
+      [0, 1].forEach(function (g) {
+        svg.querySelector(".lane-t" + g).textContent = sim.groups[g] + " · " + N(st[g].n);
+        var ml = meanLines[g];
         if (st[g].n) {
-          svgAdd("line", { x1: x(st[g].mean), x2: x(st[g].mean), y1: top + 14, y2: top + 62, "class": "mean" });
-          svgAdd("text", { x: x(st[g].mean), y: top + 74 - 4, "text-anchor": "middle", "class": "mean-t" }, N(st[g].mean.toFixed(1)));
-        }
+          var mx = x(st[g].mean);
+          ml[0].setAttribute("x1", mx); ml[0].setAttribute("x2", mx); ml[1].setAttribute("x", mx); ml[1].textContent = N(st[g].mean.toFixed(1));
+          ml[0].style.opacity = ml[1].style.opacity = 1;
+        } else { ml[0].style.opacity = ml[1].style.opacity = 0; }
       });
-      svgAdd("text", { x: 14, y: 178, "class": "tick" }, N(lo));
-      svgAdd("text", { x: W / 2, y: 178, "text-anchor": "middle", "class": "tick" }, sim.outcome + " →");
-      svgAdd("text", { x: W - 14, y: 178, "text-anchor": "end", "class": "tick" }, N(hi));
+      shown.forEach(function (d, k) {
+        var c = dots[k], top = d.g ? 96 : 14, cx = x(d.y), cy = top + 22 + d.j * 36;
+        c.style.cx = cx + "px"; c.style.cy = cy + "px";  // CSS transitions animate the walk
+        c.setAttribute("cx", cx); c.setAttribute("cy", cy);
+        c.style.opacity = d.keep ? .85 : .12;
+        c.setAttribute("class", "pp " + (p.show ? (d.h < 0.34 ? "h0" : d.h < 0.67 ? "h1" : "h2") : "g" + d.g));
+      });
       svg.setAttribute("aria-label", head.textContent + ". " + sub.textContent);
       legend.innerHTML = "";
       if (p.show) {

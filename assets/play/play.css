@@ -54,3 +54,5 @@ html[data-theme="dark"] .phero.has-pic .phero-t{color:#1E2A3B}
   box-shadow:3px 3px 0 var(--k-ink);border-color:var(--k-ink);color:var(--k-ink)}
 html[dir="rtl"] .gcard.soon .psoon{transform:rotate(-8deg)}
 @media (min-width:761px){.phero-pic img{aspect-ratio:16/8;object-position:center 75%}.phero.has-pic .phero-t{top:5%}}
+@media (prefers-reduced-motion:no-preference){.phero-pic img{animation:pdrift 26s ease-in-out infinite alternate}}
+@keyframes pdrift{from{transform:scale(1)}to{transform:scale(1.06) translateX(-1.5%)}}

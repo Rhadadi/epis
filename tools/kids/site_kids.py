@@ -16,12 +16,26 @@ import kidslib as K
 ASSETS_KIDS = K.ROOT / "assets" / "kids"
 LEVEL_FILE = {"explorers": "index.html", "investigators": "investigators.html"}
 SCRIPTS = {"case": "games/case.js", "sorter": "kids/games/sorter.js", "quiz": "kids/games/quiz.js",
-           "sim:confounder": "games/sims/confounder.js"}
+           "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js")}
+
+
+def game_engines(g):
+    """The script keys a game needs: its engine, its simulations, and the scene stage if its cases have drawn stages."""
+    keys = {g["engine"]}
+    keys.update(f'sim:{c["sim"]["kind"]}' for c in g.get("cases", []) if c.get("sim"))
+    if any(c.get("stages") for c in g.get("cases", [])):
+        keys.add("stages")
+    return keys
 
 
 def engine_scripts(b, root, engines):
     """The script tags for the game engines (and simulations) a page uses."""
-    return "".join(f'<script src="{b.av(root, SCRIPTS[e])}" defer></script>' for e in sorted(engines))
+    files = []
+    for e in sorted(engines):
+        for f in ([SCRIPTS[e]] if isinstance(SCRIPTS[e], str) else SCRIPTS[e]):
+            if f not in files:
+                files.append(f)
+    return "".join(f'<script src="{b.av(root, f)}" defer></script>' for f in files)
 ENGINE_OF = {}  # game id -> engine, filled while building
 
 
@@ -128,8 +142,7 @@ def build(b, art, md):
             engines = set()
             g = kid_friendly(b, for_level(K.pick(K.game(a["id"]), lang), level), root)
             g["title"] = a["title"]
-            engines.add(g["engine"])
-            engines.update(f'sim:{c["sim"]["kind"]}' for c in g.get("cases", []) if c.get("sim"))
+            engines.update(game_engines(g))
             unit = f"arcade-{a['id']}"
             body = (f'<main id="main" class="kmain kunit karc c-{a["color"]}"><header class="khead kband">{hudhud(root)}'
                     f'<p class="kicker">{L("Play now", "حالا بازی کن")}</p><h1>{esc(a["title"])}</h1>{level_switch(b, level)}'
@@ -290,8 +303,7 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
             sc["cards"] = cards
         if sc.get("game"):
             g = kid_friendly(b, for_level(K.pick(K.game(sc["game"]), lang), level), root)
-            engines.add(g["engine"])
-            engines.update(f'sim:{c["sim"]["kind"]}' for c in g.get("cases", []) if c.get("sim"))
+            engines.update(game_engines(g))
             boxes[sc["id"]] = site_play.game_box(b, sc["game"], g, level, uid)
             sc.setdefault("nostage", True)
             if sc.get("text") is None and g.get("title") and not sc.get("label"):
@@ -392,8 +404,7 @@ def render_lesson(b, md, text, uid, level, words, engines):
             content = f'<div class="kwords">{cards}</div>'
         elif kind in ("tryit", "check", "opener"):
             g = K.pick(K.game(arg), lang)
-            engines.add(g["engine"])
-            engines.update(f'sim:{c["sim"]["kind"]}' for c in for_level(g, level).get("cases", []) if c.get("sim"))
+            engines.update(game_engines(for_level(g, level)))
             g = kid_friendly(b, for_level(g, level), b.up(2))
             intro = render_md(b, md, inner, uid) if inner.strip() else ""
             payload = json.dumps(g, ensure_ascii=False).replace("</", "<\\/")

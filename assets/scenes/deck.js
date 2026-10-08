@@ -18,45 +18,11 @@
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function rich(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>"); }
 
-  function Deck(root) {
-    var data;
-    try { data = JSON.parse(root.querySelector("script.dscript").textContent); } catch (e) { return; }
-    var scenes = data.scenes, n = scenes.length, cur = -1, ui = data.ui || {};
-    var list = root.querySelector(".dlist");
-    var boxes = {};  // game boxes the server rendered inside the list, by scene id
-    Array.prototype.forEach.call(list.querySelectorAll("li[data-scene]"), function (li) {
-      var box = li.querySelector(".kgame"); if (box) { boxes[li.getAttribute("data-scene")] = box; box.setAttribute("data-scene-id", li.getAttribute("data-scene")); }
-    });
-    root.classList.add("live");
-    list.hidden = true;
-
-    var wrap = el("div", "dwrap");
-    var stage = el("div", "dstage"); stage.setAttribute("aria-hidden", "true");
+  // ---- the stage: actors and props keep their element between scenes, so they can glide.
+  // Stage(el) fills a .dstage element; .set(scene, instant) arranges a scene; .face(id, mood) changes a mood.
+  function Stage(stage) {
     var bgLayer = el("div", "dbg"), picLayer = el("div", "dpic"), items = el("div", "ditems");
     stage.appendChild(bgLayer); stage.appendChild(picLayer); stage.appendChild(items);
-    var label = el("p", "dlabel");
-    var listen = el("button", "dlisten"); listen.type = "button"; listen.hidden = true;
-    var scene = el("div", "dscene"); scene.setAttribute("tabindex", "-1");
-    var text = el("div", "dtext"); text.setAttribute("aria-live", "polite");
-    var ask = el("div", "dask");
-    var gameSlot = el("div", "dgame");
-    scene.appendChild(text); scene.appendChild(ask); scene.appendChild(gameSlot);
-    var nav = el("nav", "dnav"); nav.setAttribute("aria-label", ui.nav || T("Scenes", "صحنه‌ها"));
-    var back = el("button", "dbtn dback", ui.back || T("Back", "قبلی")); back.type = "button";
-    var dots = el("div", "ddots"); dots.setAttribute("role", "tablist");
-    var next = el("button", "dbtn dnext", ui.next || T("Next", "بعدی")); next.type = "button";
-    nav.appendChild(back); nav.appendChild(dots); nav.appendChild(next);
-    wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(listen); wrap.appendChild(scene); wrap.appendChild(nav);
-    root.appendChild(wrap);
-
-    var dotEls = scenes.map(function (s, i) {
-      var d = el("button", "ddot"); d.type = "button";
-      d.setAttribute("aria-label", (ui.scene || T("Scene", "صحنه")) + " " + N(i + 1) + " / " + N(n));
-      d.onclick = function () { go(i); };
-      dots.appendChild(d); return d;
-    });
-
-    // ---- the stage: actors and props keep their element between scenes, so they can glide
     var live = {};  // id → element
     function place(node, o, kind) {
       node.style.left = o.x + "%"; node.style.top = (o.y == null ? 100 : o.y) + "%";
@@ -121,6 +87,50 @@
       requestAnimationFrame(function () { im.classList.add("on"); });
       stage.setAttribute("aria-label", pic.alt || "");
     }
+
+    return {
+      set: function (sc, instant) { setBg(sc.bg); setPic(sc.pic); buildStage(sc, instant); },
+      face: function (id, f) { if (live[id]) setFace(live[id], f); }
+    };
+  }
+
+  function Deck(root) {
+    var data;
+    try { data = JSON.parse(root.querySelector("script.dscript").textContent); } catch (e) { return; }
+    var scenes = data.scenes, n = scenes.length, cur = -1, ui = data.ui || {};
+    var list = root.querySelector(".dlist");
+    var boxes = {};  // game boxes the server rendered inside the list, by scene id
+    Array.prototype.forEach.call(list.querySelectorAll("li[data-scene]"), function (li) {
+      var box = li.querySelector(".kgame"); if (box) { boxes[li.getAttribute("data-scene")] = box; box.setAttribute("data-scene-id", li.getAttribute("data-scene")); }
+    });
+    root.classList.add("live");
+    list.hidden = true;
+
+    var wrap = el("div", "dwrap");
+    var stage = el("div", "dstage"); stage.setAttribute("aria-hidden", "true");
+    var label = el("p", "dlabel");
+    var listen = el("button", "dlisten"); listen.type = "button"; listen.hidden = true;
+    var scene = el("div", "dscene"); scene.setAttribute("tabindex", "-1");
+    var text = el("div", "dtext"); text.setAttribute("aria-live", "polite");
+    var ask = el("div", "dask");
+    var gameSlot = el("div", "dgame");
+    scene.appendChild(text); scene.appendChild(ask); scene.appendChild(gameSlot);
+    var nav = el("nav", "dnav"); nav.setAttribute("aria-label", ui.nav || T("Scenes", "صحنه‌ها"));
+    var back = el("button", "dbtn dback", ui.back || T("Back", "قبلی")); back.type = "button";
+    var dots = el("div", "ddots"); dots.setAttribute("role", "tablist");
+    var next = el("button", "dbtn dnext", ui.next || T("Next", "بعدی")); next.type = "button";
+    nav.appendChild(back); nav.appendChild(dots); nav.appendChild(next);
+    wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(listen); wrap.appendChild(scene); wrap.appendChild(nav);
+    root.appendChild(wrap);
+
+    var dotEls = scenes.map(function (s, i) {
+      var d = el("button", "ddot"); d.type = "button";
+      d.setAttribute("aria-label", (ui.scene || T("Scene", "صحنه")) + " " + N(i + 1) + " / " + N(n));
+      d.onclick = function () { go(i); };
+      dots.appendChild(d); return d;
+    });
+
+    var st = Stage(stage);
 
     // ---- narration: each scene may play its own stretch of one audio file, lighting the words as they are read
     var audio = null, rafId = 0, segEnd = 0, words = [], wb = [];
@@ -195,7 +205,7 @@
           if (!o.ok) { var good = opts.querySelector("[data-ok]"); if (good) good.classList.add("right"); }
           fb.hidden = false; fb.className = "dwhy " + (o.ok ? "yes" : "no");
           fb.innerHTML = "<b>" + esc(o.ok ? (ui.yes || T("Yes!", "آفرین!")) : (ui.notquite || T("Not quite.", "نه دقیقاً."))) + "</b> " + rich(o.why || "");
-          if (o.face && sc.ask.who && live[sc.ask.who]) setFace(live[sc.ask.who], o.face);
+          if (o.face && sc.ask.who) st.face(sc.ask.who, o.face);
           next.classList.add("pulse");
         };
         if (o.ok) b.setAttribute("data-ok", "1");
@@ -238,7 +248,7 @@
       stopAudio();
       var sc = scenes[i];
       cur = i;
-      setBg(sc.bg); setPic(sc.pic); buildStage(sc, first);
+      st.set(sc, first);
       label.textContent = sc.label || ""; label.hidden = !sc.label;
       showText(sc); showAsk(sc); showGame(sc);
       listen.hidden = !sc.audio; setListenText(false);
@@ -280,6 +290,7 @@
     root.deck = { go: go, count: n };
   }
 
+  window.Scenes = { Stage: Stage, rich: rich };
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-deck]").forEach(Deck);
   });
