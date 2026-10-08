@@ -72,19 +72,34 @@ def build(b, art, md):
             if m:  # game first: the opener comes before the story
                 opener = render_lesson(b, md, m.group(0), uid, level, words, engines).replace("kblk k-opener", "kblk k-opener kopen", 1)
                 text = text[:m.start()] + text[m.end():]
-            lesson = render_lesson(b, md, text, uid, level, words, engines)
-            story_html = render_story(b, uid, meta, st, sync, root)
+            deck = None
+            if deck_path(uid, level).exists():
+                import scenes as SC
+                engines = set()
+                scenes_, boxes = expand_deck(b, uid, level, root, meta, st, sync, words, engines)
+                probs = SC.validate(scenes_)
+                if probs:
+                    raise SystemExit(f"kids {uid} {level}: problems in the scene deck:\n  " + "\n  ".join(probs))
+                deck = SC.render(scenes_, boxes, ui={"listen": L("Listen", "گوش کن"), "next": L("Next", "بعدی"), "back": L("Back", "قبلی"),
+                                                    "again": L("Start again", "دوباره از اول")},
+                                 audio_src=f'{root}assets/kids/audio/{sync["file"]}' if sync else None,
+                                 attrs=f'data-unit="{uid}" data-level="{level}" data-game="deck"')
+            lesson = render_lesson(b, md, text, uid, level, words, set()) if deck is None else ""
+            story_html = render_story(b, uid, meta, st, sync, root) if deck is None else ""
             switch = level_switch(b, level)
             pager = unit_pager(b, prev_u, next_u, level, lang)
-            body = (f'<main id="main" class="kmain kunit q{quest["n"]}"><header class="khead kband">{hudhud(root)}'
+            body = (f'<main id="main" class="kmain kunit q{quest["n"]}{" kdeckpage" if deck else ""}"><header class="khead kband">{hudhud(root)}'
                     f'<p class="kicker">{L("Quest", "ماجرای")} {num(quest["n"])} · {esc(quest["title"])} · {L("Unit", "درس")} {num(u["n"])}</p>'
                     f'<h1>{esc(title_u)}</h1>{switch}'
                     f'<p class="kstars" data-unit="{uid}" data-level="{level}" aria-live="polite"></p></header>'
-                    f'{opener}{story_html}<div class="klesson prose">{lesson}</div>'
+                    + (deck if deck else f'{opener}{story_html}<div class="klesson prose">{lesson}</div>') +
                     f'<p class="kgrown"><a href="grownups.html">{L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم")} →</a></p>'
                     f'{pager}</main>')
             scripts = engine_scripts(b, root, engines)
-            if sync:
+            if deck:
+                scripts += (f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script>'
+                            f'<script src="{b.av(root, "scenes/deck.js")}" defer></script>')
+            elif sync:
                 scripts += f'<script src="{b.av(root, "kids/player.js")}" defer></script>'
             lvl_name = L("Explorers", "کاوشگرها") if level == "explorers" else L("Investigators", "کارآگاه‌ها")
             kpage(f"{uid}/{LEVEL_FILE[level]}", root=root, title=f"{title_u} ({lvl_name})",
@@ -214,6 +229,77 @@ def role_name(role, lang):
     cast = K.read_json(K.KIDS / "cast.json")
     c = cast.get(role)
     return K.pick(c, lang)["name"] if c else ""
+
+
+def deck_path(uid, level):
+    return K.unit_dir(uid) / f"deck.{level}.json"
+
+
+def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
+    """The unit's deck (kids/src/<unit>/deck.<level>.json) as ordinary scenes: the story becomes one painted scene per
+    picture (with its stretch of the narration), word lists become picture cards, games become game boxes, and guide links
+    get their addresses. Returns (scenes, {scene id: game box html})."""
+    import site_play
+    import scenes as SC
+    lang, L = b.LANG, b.L
+    raw = K.read_json(deck_path(uid, level))["scenes"]
+    out, boxes = [], {}
+    shots = [K.pick(x, lang) for x in meta.get("shots", [])]
+    times = {x["id"]: x for x in (sync or {}).get("lines", [])}
+    starts = (sync or {}).get("shots", {})
+    for sc in raw:
+        if "levels" in sc and level not in sc["levels"]:
+            continue
+        sc = K.pick(sc, lang)
+        if sc.get("story"):
+            order = [x["id"] for x in shots]
+            for k, sh in enumerate(shots):
+                lines = []
+                for ln in [l for l in st["lines"] if l["shot"] == sh["id"]]:
+                    who = role_name(ln["role"], lang) if ln["role"] != "narrator" else ""
+                    ws, tm = K.words_of(ln["text"]), times.get(ln["id"])
+                    item = {"role": ln["role"], "who": who}
+                    if tm and len(tm.get("w", [])) == len(ws):
+                        item["w"] = [[w, a, e] for w, (a, e) in zip(ws, tm["w"])]
+                    else:
+                        item["t"] = ln["text"]
+                    lines.append(item)
+                small = site_play.art_src(root, f'kids/{sh.get("art", sh["id"])}', 800)
+                big = site_play.art_src(root, f'kids/{sh.get("art", sh["id"])}', 1440)
+                scene = {"id": sh["id"], "lines": lines, "bg": "plain"}
+                if small:
+                    scene["pic"] = {"src": small, "srcset": f"{small} 800w" + (f", {big} 1440w" if big else ""), "alt": sh.get("alt", "")}
+                if k == 0:
+                    scene["anchor"] = "story"
+                    scene["label"] = st["title"]
+                if sync and sh["id"] in starts:
+                    end = starts[order[k + 1]] if k + 1 < len(order) and order[k + 1] in starts else sync.get("duration", 0)
+                    scene["audio"] = [starts[sh["id"]], end]
+                out.append(scene)
+            continue
+        if sc.get("words"):
+            ids = [w.strip() for w in re.split(r"[,\s]+", sc["words"]) if w.strip()]
+            cards = []
+            for wid in ids:
+                w = words.get(wid)
+                if not w:
+                    continue
+                img = site_play.art_src(root, f'kids/{w["art"]}', 800) if w.get("art") else None
+                cards.append({"word": w["word"], "def": w["def"], **({"img": img} if img else {})})
+            sc = {k: v for k, v in sc.items() if k != "words"}
+            sc["cards"] = cards
+        if sc.get("game"):
+            g = kid_friendly(b, for_level(K.pick(K.game(sc["game"]), lang), level), root)
+            engines.add(g["engine"])
+            engines.update(f'sim:{c["sim"]["kind"]}' for c in g.get("cases", []) if c.get("sim"))
+            boxes[sc["id"]] = site_play.game_box(b, sc["game"], g, level, uid)
+            sc.setdefault("nostage", True)
+            if sc.get("text") is None and g.get("title") and not sc.get("label"):
+                sc["label"] = g["title"]
+        if sc.get("links"):
+            sc["links"] = [{"t": l["t"], "href": f'{b.home(root)}guide/{l["guide"]}'} for l in sc["links"]]
+        out.append(sc)
+    return out, boxes
 
 
 def render_story(b, uid, meta, st, sync, root):

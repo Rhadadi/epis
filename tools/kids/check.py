@@ -13,9 +13,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "play"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scenes"))
 import kidslib as K  # noqa: E402
 import site_kids  # noqa: E402
 import site_play  # noqa: E402
+import scenes as SC  # noqa: E402
 
 LIMITS = {  # reading level: English Flesch–Kincaid grade; Persian average sentence length (words)
     "explorers": {"fk": 4.5, "fa_sentence": 12.0, "new_words": 5},
@@ -33,8 +35,56 @@ def prose_of(text):
     return "\n".join(line for line in text.splitlines() if not line.lstrip().startswith("|"))
 
 
+def deck_text(scenes):
+    """What a child reads in a deck (one language, one level): scene text, lists, questions, words, bubbles."""
+    out = []
+    for sc in scenes:
+        t = sc.get("text")
+        out += [t] if isinstance(t, str) else list(t or [])
+        out += sc.get("list", [])
+        for a in sc.get("actors", []):
+            out.append(a.get("say", ""))
+        if sc.get("ask"):
+            out.append(sc["ask"].get("q", ""))
+            for o in sc["ask"]["options"]:
+                out += [o["t"], o.get("why", "")]
+        for c in sc.get("cards", []):
+            out += [c.get("def", "")]
+    out = [re.sub(r"[*_]", "", x) for x in out if x and x.strip()]
+    return "\n\n".join(x if x.rstrip().endswith((".", "!", "?", "؟", ":", "…")) else x + "." for x in out)
+
+
+def check_decks(uid):
+    """Scene decks (kids/src/<unit>/deck.<level>.json): Persian for every text, known drawings, reading level."""
+    errs = []
+    for level in K.LEVELS:
+        path = site_kids.deck_path(uid, level)
+        if not path.exists():
+            continue
+        raw = K.read_json(path)["scenes"]
+        errs += [f"{path.name}: no Persian for {p}" for p in SC.missing_fa(raw)]
+        for lang in K.LANGS:
+            scenes = [K.pick(x, lang) for x in raw if level in x.get("levels", [level])]
+            plain = [x for x in scenes if not any(x.get(k) for k in ("story", "words", "game"))]
+            errs += [f"{path.name} [{lang}]: {e}" for e in SC.validate(plain)]
+            text = deck_text(plain)
+            lim = LIMITS[level]
+            if lang == "en":
+                fk = K.flesch_kincaid(text)
+                if fk > lim["fk"]:
+                    errs.append(f"{path.name}: reading level {fk:.1f} is above grade {lim['fk']}")
+            else:
+                avg, _ = K.persian_level(text)
+                if avg > lim["fa_sentence"]:
+                    errs.append(f"{path.name}: sentences average {avg:.1f} words (limit {lim['fa_sentence']})")
+                if re.search(r"[يك]", text):
+                    errs.append(f"{path.name}: Arabic ي or ك (use ی and ک)")
+    return errs
+
+
 def check_unit(u, words):
     uid, errs = u["id"], []
+    errs += check_decks(uid)
     errs += site_kids.unit_problems(uid)
     if errs:
         return errs

@@ -16,7 +16,7 @@
   function updateStars() {
     document.querySelectorAll(".kstars[data-unit]").forEach(function (p) {
       var unit = p.getAttribute("data-unit"), level = p.getAttribute("data-level");
-      var total = document.querySelectorAll('.kgame[data-unit="' + unit + '"]').length;
+      var total = document.querySelectorAll('.kgame[data-unit="' + unit + '"]').length + document.querySelectorAll('[data-deck][data-unit="' + unit + '"]').length;
       var got = starsFor(unit, level);
       p.innerHTML = "";
       var b = el("b", "", "★ " + N(got) + " / " + N(total));

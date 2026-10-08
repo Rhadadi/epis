@@ -1,0 +1,655 @@
+{
+ "scenes": [
+  {
+   "id": "door",
+   "game": "u01-door",
+   "label": "Quick! What would you do?",
+   "fa": {
+    "label": "زود باش! تو چه می‌کردی؟"
+   }
+  },
+  {
+   "story": true
+  },
+  {
+   "id": "cookie1",
+   "label": "Knowing or guessing?",
+   "text": [
+    "Ava's cookie is gone!",
+    "\"Sam ate it,\" says Max."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 26,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "wobble",
+     "say": "My cookie is gone!",
+     "fa": {
+      "say": "کلوچه‌ام کو؟!"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 74,
+     "y": 92,
+     "s": 1.1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "Sam ate it!",
+     "fa": {
+      "say": "کارِ نیماست!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "cookie",
+     "what": "cookie",
+     "x": 50,
+     "y": 88,
+     "s": 0.9,
+     "anim": "float"
+    },
+    {
+     "id": "q",
+     "what": "exclaim",
+     "x": 50,
+     "y": 52,
+     "s": 0.7,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "text": [
+     "کلوچهٔ آوا غیبش زده!",
+     "کیان می‌گوید: «کارِ نیماست!»"
+    ],
+    "label": "دانستن یا حدس زدن؟"
+   }
+  },
+  {
+   "id": "cookie2",
+   "text": [
+    "Ava asks the most important question on this whole website:",
+    "**\"How do you know?\"**"
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 32,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point",
+     "say": "How do you know?",
+     "fa": {
+      "say": "از کجا می‌دانی؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 74,
+     "y": 92,
+     "s": 1.1,
+     "face": "surprised",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "q",
+     "what": "question",
+     "x": 52,
+     "y": 62,
+     "s": 0.9,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "آوا مهم‌ترین سؤالِ این سایت را می‌پرسد:",
+     "**«از کجا می‌دانی؟»**"
+    ]
+   }
+  },
+  {
+   "id": "cookie3",
+   "text": [
+    "Max thinks. \"Well… Sam loves cookies.\"",
+    "That is a *reason*. But is it enough to *know*? Maybe Sam ate it. Maybe the cat did. Max is **guessing**."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 28,
+     "y": 92,
+     "s": 1.1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Well… Sam loves cookies.",
+     "fa": {
+      "say": "خب… نیما عاشقِ کلوچه است."
+     }
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 60,
+     "y": 92,
+     "s": 0.8,
+     "face": "surprised",
+     "anim": "wobble",
+     "say": "Me?!",
+     "fa": {
+      "say": "من؟!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "cat",
+     "what": "cat",
+     "x": 86,
+     "y": 92,
+     "s": 0.9,
+     "anim": "bob"
+    },
+    {
+     "id": "q",
+     "what": "question",
+     "x": 44,
+     "y": 50,
+     "s": 0.7,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "کیان کمی فکر می‌کند: «خب… نیما عاشقِ کلوچه است.»",
+     "این یک *دلیل* است. ولی برای *دانستن* کافی است؟ شاید نیما خورده باشد. شاید هم گربه! کیان دارد **حدس می‌زند**."
+    ]
+   }
+  },
+  {
+   "id": "cookie4",
+   "text": [
+    "Then Ava finds crumbs on Sam's shirt. Now there is a clue.",
+    "A clue that helps show what is true is called **evidence**."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "point",
+     "say": "Crumbs!",
+     "fa": {
+      "say": "خرده‌کلوچه!"
+     }
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 62,
+     "y": 92,
+     "s": 0.8,
+     "face": "sad",
+     "anim": "none",
+     "say": "Oops.",
+     "fa": {
+      "say": "اوه."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "crumbs",
+     "what": "crumbs",
+     "x": 62,
+     "y": 70,
+     "s": 0.55,
+     "anim": "none"
+    },
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 44,
+     "y": 80,
+     "s": 0.8,
+     "anim": "wobble"
+    },
+    {
+     "id": "b",
+     "what": "bulb",
+     "x": 82,
+     "y": 52,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "بعد آوا روی پیراهنِ نیما خرده‌کلوچه پیدا می‌کند. حالا یک سرنخ هست.",
+     "به سرنخی که کمک می‌کند بفهمیم چه چیزی درست است، **نشانه** می‌گوییم."
+    ]
+   }
+  },
+  {
+   "id": "clue1",
+   "label": "Good clues and tricky clues",
+   "text": "In the story, the kids used three clues: the voice, the foot and the song.",
+   "bg": "room",
+   "actors": [
+    {
+     "id": "kids",
+     "who": "shangul",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Who is it?",
+     "fa": {
+      "say": "کیه؟"
+     }
+    },
+    {
+     "id": "k2",
+     "who": "grape",
+     "x": 52,
+     "y": 92,
+     "s": 0.85,
+     "face": "thinking",
+     "anim": "bob"
+    },
+    {
+     "id": "wolf",
+     "who": "wolf",
+     "x": 78,
+     "y": 92,
+     "s": 1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "It's me, Mum!",
+     "fa": {
+      "say": "منم، مامان!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "what": "door",
+     "x": 64,
+     "y": 90,
+     "s": 1.5,
+     "anim": "none"
+    }
+   ],
+   "fa": {
+    "text": "در قصه، بزغاله‌ها از سه سرنخ استفاده کردند: صدا، پا و آواز.",
+    "label": "سرنخِ خوب و سرنخِ حقه‌ای"
+   }
+  },
+  {
+   "id": "clue2",
+   "text": [
+    "The voice and the foot were tricky clues.",
+    "The wolf could fake them with honey and flour."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "wolf",
+     "who": "wolf",
+     "x": 36,
+     "y": 92,
+     "s": 1,
+     "face": "sly",
+     "anim": "wobble",
+     "say": "Honey and flour!",
+     "fa": {
+      "say": "عسل و آرد!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "fl",
+     "what": "flour",
+     "x": 66,
+     "y": 92,
+     "s": 1.1,
+     "anim": "none"
+    },
+    {
+     "id": "x",
+     "what": "cross",
+     "x": 82,
+     "y": 64,
+     "s": 0.7,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "text": [
+     "صدا و پا سرنخ‌های حقه‌ای بودند.",
+     "گرگ توانست با عسل و آرد قلابی‌شان را درست کند."
+    ]
+   }
+  },
+  {
+   "id": "clue3",
+   "text": [
+    "The song was a good clue. Only Mother knew it.",
+    "A good clue is one that a faker can't copy."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "mother",
+     "who": "mother",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "La la la!",
+     "fa": {
+      "say": "لا لا لا!"
+     }
+    },
+    {
+     "id": "wolf",
+     "who": "wolf",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "sad",
+     "anim": "none",
+     "say": "I don't know it…",
+     "fa": {
+      "say": "من بلد نیستم…"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "t",
+     "what": "tick",
+     "x": 52,
+     "y": 70,
+     "s": 0.8,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "text": [
+     "آواز سرنخِ خوبی بود. فقط مادر بلدش بود.",
+     "سرنخِ خوب سرنخی است که آدمِ حقه‌باز نتواند تقلیدش کند."
+    ]
+   }
+  },
+  {
+   "id": "think",
+   "label": "Think about it",
+   "list": [
+    "How did Jingle know the first visitor was the wolf?",
+    "What almost tricked the kids the third time?",
+    "Why was the secret song a better check than the white foot?"
+   ],
+   "actors": [
+    {
+     "id": "hudhud",
+     "who": "hudhud",
+     "x": 30,
+     "y": 92,
+     "s": 0.9,
+     "face": "thinking",
+     "anim": "float"
+    },
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 66,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "bg": "sky",
+   "fa": {
+    "label": "فکر کن",
+    "list": [
+     "شنگول از کجا فهمید که مهمانِ اول گرگ است؟",
+     "بارِ سوم چه چیزی نزدیک بود بزغاله‌ها را گول بزند؟",
+     "چرا آوازِ مخصوص از پای سفید بهتر بود؟"
+    ]
+   }
+  },
+  {
+   "id": "idea",
+   "label": "The big idea",
+   "text": "To **know** something, you need a good reason: a clue that is hard to fake.",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "grandma",
+     "who": "grandma",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "A good reason!",
+     "fa": {
+      "say": "دلیلِ خوب!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "s1",
+     "what": "star",
+     "x": 26,
+     "y": 60,
+     "s": 0.6,
+     "anim": "float"
+    },
+    {
+     "id": "s2",
+     "what": "star",
+     "x": 76,
+     "y": 50,
+     "s": 0.7,
+     "anim": "float"
+    },
+    {
+     "id": "b",
+     "what": "bulb",
+     "x": 74,
+     "y": 88,
+     "s": 0.7,
+     "anim": "bob"
+    }
+   ],
+   "fa": {
+    "text": "برای این‌که چیزی را **بدانی**، دلیلِ خوب لازم داری: سرنخی که قلابی کردنش سخت باشد.",
+    "label": "ایدهٔ اصلی"
+   }
+  },
+  {
+   "id": "words",
+   "words": "know, guess, hope, evidence",
+   "label": "New words",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 50,
+     "y": 92,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "hop"
+    }
+   ],
+   "fa": {
+    "label": "واژه‌های تازه"
+   },
+   "nostage": true
+  },
+  {
+   "id": "sort",
+   "game": "know-or-guess",
+   "label": "Try it!",
+   "fa": {
+    "label": "امتحان کن!",
+    "text": "آن را *می‌دانی*، داری *حدس می‌زنی*، یا فقط *امیدواری*؟ کارت‌ها را دسته‌بندی کن."
+   },
+   "text": "Do you *know* it, are you *guessing*, or do you just *hope* so? Sort the cards."
+  },
+  {
+   "id": "paw",
+   "game": "paw-check",
+   "label": "Try it!",
+   "text": "Mother Goat wants a better door rule. Which checks are easy to fake, and which are hard to fake?",
+   "fa": {
+    "label": "امتحان کن!",
+    "text": "بزِ مادر یک قانونِ بهتر برای باز کردنِ در می‌خواهد. کدام امتحان‌ها را راحت می‌شود قلابی کرد و کدام‌ها را نه؟"
+   }
+  },
+  {
+   "id": "quiz",
+   "game": "quiz-u01",
+   "label": "Quick check",
+   "fa": {
+    "label": "خودت را بسنج"
+   }
+  },
+  {
+   "id": "talk",
+   "label": "Talk about it",
+   "bg": "room",
+   "list": [
+    "Tell someone at home about a time you guessed and were wrong.",
+    "Make up a secret question for your family. Why would a stranger not know the answer?"
+   ],
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Tell me!",
+     "fa": {
+      "say": "بگو ببینم!"
+     }
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 66,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "fa": {
+    "label": "با هم حرف بزنید",
+    "list": [
+     "برای یکی از اهلِ خانه تعریف کن یک بار حدس زدی و اشتباه کردی.",
+     "برای خانواده‌ات یک سؤالِ رمزی بساز. چرا یک غریبه جوابش را نمی‌داند؟"
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "label": "Great job, detective!",
+   "text": "You asked the best question in the world: **How do you know?**",
+   "bg": "field",
+   "end": true,
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 18,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 36,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 54,
+     "y": 92,
+     "s": 1.1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "grandma",
+     "who": "grandma",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "hudhud",
+     "who": "hudhud",
+     "x": 88,
+     "y": 80,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "s",
+     "what": "star",
+     "x": 50,
+     "y": 40,
+     "s": 0.8,
+     "anim": "spin"
+    }
+   ],
+   "fa": {
+    "text": "تو بهترین سؤالِ دنیا را پرسیدی: **از کجا می‌دانی؟**",
+    "label": "آفرین، کارآگاه!"
+   }
+  }
+ ]
+}

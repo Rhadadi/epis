@@ -362,3 +362,12 @@ html[dir="rtl"] .kblk-k .kav{margin:-10px -10px -10px 0}
   box-shadow:0 8px 0 var(--k-yellow-t)}
 @media (max-width:640px){.kpage-pic{aspect-ratio:2/1;border-radius:20px}}
 .kword-img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:16px;margin-bottom:8px}
+/* unit pages made of scenes: a slimmer header, the stage is the star */
+.kdeckpage{max-width:900px}
+.kdeckpage .kband{padding:14px 18px 12px;margin-bottom:16px;border-radius:22px}
+.kdeckpage .kband h1{font-size:clamp(1.5rem,5vw,2.2rem);margin:.05em 0 .25em;padding-inline-end:80px}
+.kdeckpage .kband .kicker{font-size:.8rem}
+.kdeckpage .kband .hudhud,.kdeckpage .kband .hudhud.pic{width:64px;height:64px;top:8px;inset-inline-end:10px}
+.kdeckpage .klevels{margin:4px 0 2px}.kdeckpage .klevels a{padding:6px 12px;flex-basis:120px}
+.kdeckpage .klevels a b{font-size:.95rem}.kdeckpage .klevels a span{display:none}
+.kdeckpage .kstars{margin:4px 0 0;font-size:.85rem}

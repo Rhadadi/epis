@@ -10,7 +10,7 @@ desc: Evidence, lucky guesses and the stopped clock: what it takes to really kno
 The kids in the story did something smart: they didn't just trust the visitor's words. They asked for **evidence**. But not all evidence is equally strong.
 
 - **The voice.** A rough voice was good evidence that the visitor was *not* Mother. A soft voice was weak evidence that it *was* her, because a wolf can soften his voice with honey.
-- **The foot.** The same again. A black foot ruled the wolf out. A white foot proved very little, because flour is easy to find.
+- **The foot.** The same again. A black foot gave the wolf away. A white foot proved very little, because flour is easy to find.
 - **The song.** This was the strongest test. Only Mother knew the song, so only Mother could pass it.
 
 Notice the pattern. A good test is one that the wrong answer would *fail*. After a trip to the bakery, the wolf could pass the voice test and the foot test. He could never pass the song test.

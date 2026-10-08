@@ -47,6 +47,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "kids"))
 import site_kids  # noqa: E402  the children's section (tools/kids/)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "play"))
 import site_play  # noqa: E402  the games section, Baloney Detector (tools/play/)
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scenes"))
+import scenes as scene_decks  # noqa: E402  scene decks: one idea per screen (tools/scenes/)
 
 ROOT = Path(__file__).resolve().parents[2]
 GUIDE = ROOT / "guide"
@@ -740,6 +742,7 @@ def safe_shell(*, section, root, title, desc, body, current="", extra_head="", a
 <link rel="stylesheet" href="{av(root, "fonts/fonts.css")}">
 <link rel="stylesheet" href="{av(root, "site.css")}">
 <link rel="stylesheet" href="{av(root, "games/games.css")}">
+<link rel="stylesheet" href="{av(root, "scenes/scenes.css")}">
 <link rel="stylesheet" href="{av(root, sheet)}">
 {extra_head}
 <script>{BOOT}</script>
