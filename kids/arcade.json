@@ -22,6 +22,17 @@
     "title": "آزمایشگاهِ پا",
     "hook": "آیا پای بزرگ به خواندن کمک می‌کند؟ آزمایش کن."
    }
+  },
+  {
+   "id": "build-mystery",
+   "color": "purple",
+   "art": "feet",
+   "title": "Build a Mystery",
+   "hook": "Make a case for a grown-up to solve.",
+   "fa": {
+    "title": "یک معما بساز",
+    "hook": "معمایی بساز تا یک بزرگ‌تر حل کند."
+   }
   }
  ]
 }

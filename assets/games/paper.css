@@ -401,3 +401,11 @@ body.paper .kbooks{display:flex;flex-direction:column;gap:6px}
 /* the dictionary's pictures are all the same cast painting until each word has its own, so show clean text cards for now */
 body.paper .kword .kword-img{display:none}
 body.paper .kword{justify-content:center;padding:14px 10px;min-height:7em}
+
+/* ---- Build a mystery (assets/games/builder.js) */
+.bd{display:flex;flex-direction:column;gap:10px}
+.bd-list{display:flex;flex-direction:column;gap:8px;width:100%}
+.bd-clue{display:flex;flex-direction:column;gap:2px;text-align:start;padding:10px 16px;background:#fff;border:2.5px solid #222;border-radius:var(--hp);cursor:pointer;font:inherit}
+.bd-clue b{font-weight:400;font-size:1.15rem}.bd-clue small{color:#666;font-size:.9rem}
+html[lang="en"] body.paper .bd-clue b{font-family:var(--read);font-size:1.05rem}
+.bd-clue[aria-pressed="true"]{background:#222;color:#fff}.bd-clue[aria-pressed="true"] small{color:#ccc}

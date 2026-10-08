@@ -1,0 +1,116 @@
+{
+ "engine": "builder",
+ "title": "Build a mystery",
+ "bg": "room",
+ "take": {
+  "explorers": 2,
+  "investigators": 3
+ },
+ "intro": "Someone took the cookie from the jar! You will make a mystery for your parent or friend to solve.",
+ "culprit_q": "Who took the cookie? Choose the culprit in secret.",
+ "suspects": [
+  {
+   "id": "fox",
+   "who": "fox",
+   "name": "Fox",
+   "fa": {
+    "name": "روباه"
+   }
+  },
+  {
+   "id": "dog",
+   "who": "dog",
+   "name": "Dog",
+   "fa": {
+    "name": "سگ"
+   }
+  },
+  {
+   "id": "goat",
+   "who": "grape",
+   "name": "Little Goat",
+   "fa": {
+    "name": "بزغاله"
+   }
+  }
+ ],
+ "clues": [
+  {
+   "id": "fox-fur",
+   "kind": "supports",
+   "about": "fox",
+   "text": "Orange fur is stuck to the cookie jar.",
+   "fa": {
+    "text": "موی نارنجی به ظرفِ کلوچه چسبیده."
+   }
+  },
+  {
+   "id": "fox-pond",
+   "kind": "rules_out",
+   "about": "fox",
+   "text": "The frog saw the fox at the pond all morning.",
+   "fa": {
+    "text": "قورباغه دیده بود روباه تمامِ صبح لبِ برکه بود."
+   }
+  },
+  {
+   "id": "dog-crumbs",
+   "kind": "supports",
+   "about": "dog",
+   "text": "Crumbs lead to the dog's bed.",
+   "fa": {
+    "text": "خردهٔ کلوچه تا جایِ خوابِ سگ می‌رسد."
+   }
+  },
+  {
+   "id": "dog-shelf",
+   "kind": "rules_out",
+   "about": "dog",
+   "text": "The jar is on a high shelf, and the dog cannot reach it.",
+   "fa": {
+    "text": "ظرف روی طاقچهٔ بلند است و سگ به آن نمی‌رسد."
+   }
+  },
+  {
+   "id": "goat-bell",
+   "kind": "supports",
+   "about": "goat",
+   "text": "A little bell was heard near the kitchen.",
+   "fa": {
+    "text": "صدای یک زنگوله‌ٔ کوچک نزدیکِ آشپزخانه شنیده شد."
+   }
+  },
+  {
+   "id": "goat-rope",
+   "kind": "rules_out",
+   "about": "goat",
+   "text": "The goat was tied up outside all morning.",
+   "fa": {
+    "text": "بزغاله تمامِ صبح بیرون بسته شده بود."
+   }
+  },
+  {
+   "id": "sunny",
+   "kind": "neutral",
+   "about": null,
+   "text": "It was a sunny morning.",
+   "fa": {
+    "text": "صبحِ آفتابی بود."
+   }
+  },
+  {
+   "id": "window",
+   "kind": "neutral",
+   "about": null,
+   "text": "The kitchen window was open.",
+   "fa": {
+    "text": "پنجرهٔ آشپزخانه باز بود."
+   }
+  }
+ ],
+ "fa": {
+  "title": "یک معما بساز",
+  "intro": "یک نفر کلوچه را از ظرف برداشته! تو برای پدر و مادر یا دوستت یک معما می‌سازی تا حل کند.",
+  "culprit_q": "چه کسی کلوچه را برداشت؟ گناهکار را پنهانی انتخاب کن."
+ }
+}

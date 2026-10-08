@@ -21,7 +21,7 @@ def LEVELS_OF(level):
     """The page's own level and where both levels live, for the shell (a child who chose the other age is sent there)."""
     return {"this": level, "explorers": "./", "investigators": "investigators.html"}
 SCRIPTS = {"case": "games/case.js", "sorter": "kids/games/sorter.js", "quiz": "kids/games/quiz.js",
-           "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js"), "playground": "games/playground.js", "mystery": ("scenes/puppets.js", "scenes/deck.js", "games/mystery.js")}
+           "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js"), "playground": "games/playground.js", "builder": ("scenes/puppets.js", "scenes/deck.js", "games/builder.js"), "mystery": ("scenes/puppets.js", "scenes/deck.js", "games/mystery.js")}
 
 
 def game_engines(g):

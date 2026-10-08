@@ -200,6 +200,14 @@ def game_problems(gid):
                 errs.append(f"{lv}: no questions for this level")
     elif g.get("engine") == "mystery":
         errs += mystery_problems(g)
+    elif g.get("engine") == "builder":
+        ids = {x["id"] for x in g.get("suspects", [])}
+        for c in g.get("clues", []):
+            if c.get("kind") != "neutral" and c.get("about") not in ids:
+                errs.append(f"builder: clue {c.get('id')} is about {c.get('about')!r}, who is not a suspect")
+        for lv, n in (g.get("take") or {}).items():
+            if n > len(g.get("clues", [])):
+                errs.append(f"builder: {lv} takes more clues than there are")
     elif g.get("engine") == "playground":
         if len(g.get("kids", [])) < 6:
             errs.append("playground: needs at least six kids")
