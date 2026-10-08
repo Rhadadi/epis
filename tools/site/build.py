@@ -2239,7 +2239,7 @@ def build_credits(art):
     head = hero(art, "ch18", root, kicker=L("Credits", "منابع"), title=L("Artwork, sound and type", "آثار هنری، صدا و حروف"), cls="band")
     faces = [("Cormorant Garamond", "cormorant-garamond"), ("Source Serif 4", "source-serif-4"), ("Space Grotesk", "space-grotesk"),
              ("IBM Plex Mono", "ibm-plex-mono"), ("Vazirmatn", "vazirmatn"), ("Noto Naskh Arabic", "noto-naskh-arabic"),
-             ("Atkinson Hyperlegible", "atkinson-hyperlegible"), ("Fredoka", "fredoka")]
+             ("Atkinson Hyperlegible", "atkinson-hyperlegible"), ("Fredoka", "fredoka"), ("Patrick Hand", "patrick-hand")]
     names = [f'<a href="{root}assets/fonts/licenses/{slug}-OFL.txt">{name}</a>' for name, slug in faces]
     fonts = L(", ".join(names[:-1]) + " and " + names[-1], "، ".join(names[:-1]) + " و " + names[-1])
     audio = f"{home(root)}guide/audio/about.html"

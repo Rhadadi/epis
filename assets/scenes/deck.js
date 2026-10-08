@@ -255,6 +255,7 @@
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
       stage.hidden = !!sc.nostage; label.classList.toggle("over", false);
       dotEls.forEach(function (d, k) { d.classList.toggle("on", k === i); d.classList.toggle("done", k < i); d.setAttribute("aria-current", k === i ? "step" : "false"); });
+      nav.style.setProperty("--p", n > 1 ? (100 * i / (n - 1)).toFixed(1) + "%" : "100%");
       back.disabled = i === 0;
       next.disabled = false;
       next.classList.remove("pulse");
@@ -289,6 +290,17 @@
     if (!fromHash()) go(0, { quiet: true });
     root.deck = { go: go, count: n };
   }
+
+  // the hand-drawn wobble: every line on the stage is pushed a little off true by this filter (see scenes.css)
+  function roughen() {
+    if (document.getElementById("d-rough")) return;
+    var d = document.createElement("div");
+    d.setAttribute("aria-hidden", "true"); d.style.cssText = "position:absolute;width:0;height:0;overflow:hidden";
+    d.innerHTML = '<svg width="0" height="0"><filter id="d-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>' +
+      '<feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/></filter></svg>';
+    document.body.appendChild(d);
+  }
+  if (document.body) roughen(); else document.addEventListener("DOMContentLoaded", roughen);
 
   window.Scenes = { Stage: Stage, rich: rich };
   document.addEventListener("DOMContentLoaded", function () {
