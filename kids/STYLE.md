@@ -72,6 +72,15 @@ automatically. Ordinary Markdown may sit between the blocks.
 ::: further            Investigators only: links to the grown-up guide
 ```
 
+## Missions (investigate, don't just choose)
+
+`kids/games/mission-*.json` use the `mystery` engine (assets/games/mystery.js): a drawn scene, a first guess with a confidence,
+a limited number of things to look at (each a clue: weak, strong, or tricky), a reconsidering step, and feedback that shows how
+the answer moved, what each clue can and cannot show, and whether the confidence fits the clues. "Not enough evidence yet" and
+"keep your answer" must sometimes be the best outcomes (the `rules`, first match wins, last is the default). Badges reward useful
+reasoning only (a strong clue checked, another explanation sought, the right amount of sure), never changing an answer by itself.
+A mission has a second case with a new situation, to test transfer. Say "better supported" and "still uncertain", not "proof".
+
 ## Writing rules
 
 - Story first, then the question, then the idea, then the word: "This is called *evidence*."
