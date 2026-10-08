@@ -28,6 +28,7 @@ sys.path.insert(0, str(ROOT / "tools" / "kids"))
 sys.path.insert(0, str(ROOT / "tools" / "video"))
 import narrate as N  # noqa: E402  (narrator_module, ffmpeg, seconds, STATE)
 import veo as V  # noqa: E402
+import pruna as P  # noqa: E402
 
 LEAD, GAP = 0.5, 0.35
 VOICE = ["-ac", "1", "-ar", "24000", "-c:a", "libmp3lame", "-b:a", "40k"]
@@ -120,6 +121,28 @@ def join(lines, model, ids, lang, out, tmp):
     return times
 
 
+def veo_raw(ep, c):
+    png = V.frame_png(ep, c)
+    if not png:
+        return None
+    k = V.key_of(ep["veo"]["model"], V.prompt_of(ep, c), ep["veo"].get("negative", ""), c.get("seconds", 8),
+                 V.frame_bytes(png, ep["veo"].get("aspect", "16:9")))
+    raw = V.CACHE / f"{ep['id']}-{c['id']}-{k}.mp4"
+    return raw if raw.exists() else None
+
+
+def raw_clip(ep, c):
+    """(the clip's video file, the file whose sound to use): from the engine the episode (or the clip) names."""
+    video = {**ep.get("video", {"engine": "veo"}), **c.get("video", {})}
+    vr = veo_raw(ep, c)
+    if video["engine"] == "pruna":
+        if not V.frame_png(ep, c):
+            return None, None
+        pr = P.cache_path(ep, c, video.get("model", "p-video-2"), video.get("hold", True))
+        return (pr if pr.exists() else None), vr
+    return vr, vr
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("episode")
@@ -133,23 +156,21 @@ def main():
     out = ROOT / "assets" / "kids" / "episodes" / ep["id"]
     out.mkdir(parents=True, exist_ok=True)
     media = {"v": 1, "clips": {}, "lines": {},
-             "made": {"video": ep["veo"]["model"], "voices": f"ElevenLabs {model}",
+             "made": {"video": ep.get("video", {}).get("model", ep["veo"]["model"]), "voices": f"ElevenLabs {model}",
                       "voice_names": ep["voices"]}}
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         for c in ep["clips"]:
-            png = V.frame_png(ep, c)
-            raw = None
-            if png:
-                prompt = V.prompt_of(ep, c)
-                k = V.key_of(ep["veo"]["model"], prompt, ep["veo"].get("negative", ""), c.get("seconds", 8),
-                             V.frame_bytes(png, ep["veo"].get("aspect", "16:9")))
-                raw = V.CACHE / f"{ep['id']}-{c['id']}-{k}.mp4"
-            if not raw or not raw.exists():
-                print(f"{c['id']}: no clip yet (tools/video/veo.py), skipped")
+            raw, sound = raw_clip(ep, c)
+            if not raw:
+                print(f"{c['id']}: no clip yet (tools/video/pruna.py or veo.py), skipped")
                 continue
             mp4 = out / f"{c['id']}.mp4"
-            N.ffmpeg("-i", str(raw), "-vf", "scale=960:540:flags=lanczos", "-c:v", "libx264", "-preset", "slow", "-crf", "27",
+            # the picture from the chosen clip; the soft film sound from the Veo clip when there is one (Pruna's is
+            # near silent), otherwise silence
+            snd = ["-i", str(sound)] if sound else ["-f", "lavfi", "-t", "8", "-i", "anullsrc=r=44100:cl=mono"]
+            N.ffmpeg("-i", str(raw), *snd, "-map", "0:v", "-map", "1:a", "-shortest",
+                     "-vf", "scale=960:540:flags=lanczos,setsar=1", "-c:v", "libx264", "-preset", "slow", "-crf", "27",
                      "-pix_fmt", "yuv420p", "-profile:v", "main", "-movflags", "+faststart",
                      "-af", "loudnorm=I=-30:TP=-6", "-c:a", "aac", "-b:a", "48k", "-ac", "1", str(mp4))
             N.ffmpeg("-sseof", "-0.1", "-i", str(raw), "-frames:v", "1", "-vf", "scale=960:540:flags=lanczos", "-q:v", "80", str(out / f"{c['id']}.last.webp"))

@@ -7,6 +7,7 @@
   "hook": "کیان می‌گوید پای بزرگ آدم را کتاب‌خوانِ بهتری می‌کند. تماشا کن، اندازه بگیر و علتِ پنهان را پیدا کن."
  },
  "frames": "kids/episodes/big-feet.frames.json",
+ "video": {"engine": "pruna", "model": "p-video-2", "hold": true},
  "veo": {
   "model": "veo-3.1-fast-generate-preview",
   "aspect": "16:9",
@@ -21,6 +22,7 @@
  "clips": [
   {
    "id": "c1",
+   "video": {"engine": "veo"},
    "motion": "The tall boy in the blue hoodie spreads his arms proudly on the crate and points at the drawing; the crowd of children leans in and some clap; the girl with red glasses raises an eyebrow and taps her notebook; the hoopoe tilts its head and lifts its crest. Static camera.",
    "lines": [
     {"who": "kian", "en": "Everybody, listen! I've made a huge discovery.", "fa": "همه گوش کنید! یک کشفِ بزرگ کرده‌ام."},
@@ -46,6 +48,7 @@
   },
   {
    "id": "c4",
+   "video": {"engine": "veo"},
    "motion": "The little curly-haired boy takes a few wobbly, flapping steps in the enormous shoes, nearly trips and sits down with a soft bump, still holding the book upside down; the children laugh kindly; the hoopoe covers its eyes with one wing. Static camera, playful.",
    "lines": [
     {"who": "narrator", "en": "So Sam tried on the biggest shoes in town.", "fa": "پس نیما بزرگ‌ترین کفش‌های شهر را پوشید."},
@@ -69,6 +72,7 @@
   },
   {
    "id": "c7",
+   "video": {"engine": "veo"},
    "motion": "The tall boy in the blue hoodie laughs and gives the girl with red glasses a high five; the little curly-haired boy measures the hoopoe's tiny foot and the hoopoe hops happily; the grandmother hands out cookies; warm and joyful. Slow, gentle push-in.",
    "lines": [
     {"who": "kian", "en": "Okay, okay. It wasn't the feet. It was age!", "fa": "باشه، باشه. کارِ پا نبود. کارِ سن بود!"},
@@ -107,9 +111,9 @@
   {"id": "feet", "do": "tap", "say": "ask-measure", "q": {"en": "Tap each foot to measure it.", "fa": "روی هر پا بزن تا اندازه‌اش را بگیری."},
    "after": "r-measured",
    "spots": [
-    {"x": 22, "y": 88, "t": {"en": "18 cm", "fa": "۱۸ سانت"}},
-    {"x": 38, "y": 87, "t": {"en": "21 cm", "fa": "۲۱ سانت"}},
-    {"x": 55, "y": 86, "t": {"en": "24 cm", "fa": "۲۴ سانت"}}
+    {"x": 32, "y": 88, "t": {"en": "18 cm", "fa": "۱۸ سانت"}},
+    {"x": 49, "y": 87, "t": {"en": "21 cm", "fa": "۲۱ سانت"}},
+    {"x": 64, "y": 86, "t": {"en": "24 cm", "fa": "۲۴ سانت"}}
    ]},
   {"id": "read", "clip": "c3"},
   {"id": "why", "do": "choose", "say": "ask-why", "q": {"en": "Why does the kid with the biggest feet read best?", "fa": "چرا بچه‌ای که بزرگ‌ترین پا را دارد، بهتر از همه می‌خواند؟"},
@@ -123,16 +127,16 @@
   {"id": "ages", "do": "drag", "say": "ask-ages", "q": {"en": "Drag each age to a child.", "fa": "هر سن را بکش و روی یک بچه بگذار."},
    "miss": "r-age-miss", "after": "r-ages", "reveal": "cause",
    "cards": [{"t": {"en": "6", "fa": "۶"}, "to": 0}, {"t": {"en": "9", "fa": "۹"}, "to": 1}, {"t": {"en": "12", "fa": "۱۲"}, "to": 2}],
-   "targets": [{"x": 38, "y": 32}, {"x": 49, "y": 29}, {"x": 60, "y": 21}],
+   "targets": [{"x": 38, "y": 33}, {"x": 49, "y": 27}, {"x": 61, "y": 20}],
    "cause": {"top": {"en": "Age", "fa": "سن"}, "left": {"en": "bigger feet", "fa": "پای بزرگ‌تر"}, "right": {"en": "more years of reading", "fa": "سال‌های بیشترِ کتاب‌خواندن"}}},
   {"id": "fair", "clip": "c6"},
   {"id": "inspect", "do": "tap", "levels": ["investigators"], "say": "ask-inspect", "q": {"en": "Tap each kid: feet and books.", "fa": "روی هر بچه بزن: پا و کتاب‌ها."},
    "spots": [
-    {"x": 17, "y": 52, "t": {"en": "feet 19 cm · 6 books", "fa": "پا ۱۹ سانت · ۶ کتاب"}},
-    {"x": 31, "y": 52, "t": {"en": "feet 20 cm · 2 books", "fa": "پا ۲۰ سانت · ۲ کتاب"}},
-    {"x": 45, "y": 52, "t": {"en": "feet 21 cm · 4 books", "fa": "پا ۲۱ سانت · ۴ کتاب"}},
-    {"x": 59, "y": 52, "t": {"en": "feet 22 cm · 3 books", "fa": "پا ۲۲ سانت · ۳ کتاب"}},
-    {"x": 71, "y": 52, "t": {"en": "feet 23 cm · 5 books", "fa": "پا ۲۳ سانت · ۵ کتاب"}}
+    {"x": 17, "y": 50, "t": {"en": "feet 19 cm · 6 books", "fa": "پا ۱۹ سانت · ۶ کتاب"}},
+    {"x": 30, "y": 50, "t": {"en": "feet 20 cm · 2 books", "fa": "پا ۲۰ سانت · ۲ کتاب"}},
+    {"x": 44, "y": 50, "t": {"en": "feet 21 cm · 4 books", "fa": "پا ۲۱ سانت · ۴ کتاب"}},
+    {"x": 59, "y": 50, "t": {"en": "feet 22 cm · 3 books", "fa": "پا ۲۲ سانت · ۳ کتاب"}},
+    {"x": 71, "y": 50, "t": {"en": "feet 23 cm · 5 books", "fa": "پا ۲۳ سانت · ۵ کتاب"}}
    ]},
   {"id": "same", "do": "choose", "say": "ask-same", "q": {"en": "All nine years old. Do bigger feet read better?", "fa": "همه نُه ساله. آیا پای بزرگ‌تر بهتر می‌خواند؟"},
    "options": [

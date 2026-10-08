@@ -93,9 +93,14 @@ The episode ends on a clue card, the child's first guess recalled ("At the start
   painted first frame of every clip), `kids/episodes/list.json` (what is published). Media in
   `assets/kids/episodes/<id>/`.
 - Making one: `tools/art/make_art.py` paints the frames (cast sheet as reference, each frame names only the
-  characters in it); `tools/video/veo.py` animates each frame with Google Veo (key `GEMINI_API_KEY`, from the
-  environment only); `tools/video/qa.py` has Gemini watch each clip for speech, writing on screen, morphing and
-  anything unsuitable (a person still watches every clip); `tools/video/episode.py` voices the lines (ElevenLabs)
+  characters in it); `tools/video/pruna.py --hold` animates each frame with Pruna p-video-2 (key `PRUNA_API_KEY`,
+  from the environment only; about $0.20 per 8-second clip; `--hold` makes the clip end on the painted frame, so
+  characters end where they started and the tap spots line up); `tools/video/veo.py` (Google Veo, key
+  `GEMINI_API_KEY`) is the older, dearer engine, still used for clips 1, 4 and 7 of the pilot. The episode's
+  `"video"` block (or a clip's) names the engine. `tools/video/qa.py` has Gemini watch each clip for speech,
+  writing on screen, morphing and anything unsuitable (a person still watches every clip; contact sheets of
+  frames from start to end catch duplicates and wandering characters); `tools/video/episode.py` voices the lines
+  (ElevenLabs), takes the soft film sound from the Veo clip when there is one (Pruna's is near silent),
   and writes the web files. Then place the tap spots and drop targets on each clip's `.last.webp`.
 - One idea per episode, spoken, few words on screen. Questions before answers (predict, then see). Every
   interaction is something the hands do. No timers, no losing, no streaks.
