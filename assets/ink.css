@@ -33,7 +33,7 @@ html[lang="fa"] .btn,html[lang="fa"] .hero .btn{font-weight:700;font-size:1rem;l
 .btn.primary:hover,.hero .btn.primary:hover{background:none;color:var(--ink)}
 /* heroes: no paintings, just the title on paper */
 .hero,.hero.short,.hero.band{min-height:0;background:var(--bg);color:var(--ink);border-bottom:2px solid var(--ink)}
-.hero-art,.hero>picture,.hero>img,.hero::after,.hero .plate,.hero .dek-cite{display:none}
+.hero::after,.hero .plate,.hero .dek-cite{display:none}
 .hero-in{padding:calc(var(--bar-h) + 38px) var(--gutter) 34px;text-align:center}
 .hero .kicker{color:var(--dim);text-shadow:none}
 .hero h1{color:var(--ink);text-shadow:none;font-size:clamp(2.6rem,8vw,5.6rem);line-height:1;text-transform:uppercase;letter-spacing:.03em}
@@ -51,7 +51,7 @@ html[lang="fa"] .hero h1{text-transform:none;line-height:1.3}
 .card,.chcard{border:2px solid var(--ink);border-radius:var(--hp)}
 a{text-underline-offset:3px}
 .hero h1{max-width:none;margin-inline:auto}
-.art-label{display:none}
+
 .hero .listen{background:none;border:2.5px solid var(--ink);border-radius:var(--hb)}
 .listen{background:none !important;border:2.5px solid var(--ink);border-radius:var(--hb);color:var(--ink)}
 .listen .lt b{color:var(--ink)}.listen .lt>span{color:var(--dim)}
@@ -122,3 +122,13 @@ html[lang="fa"] .deck .dtext{font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.
 .dttl-sub{font-family:var(--hand)}
 /* the grown-up guide's figures are plain: a round head, two dots, a fez; no blush */
 .deck .pp circle[fill="#F37A8B"]{display:none}
+
+/* the chapter painting, quietly: a small framed picture under the title */
+.hero{display:flex;flex-direction:column;align-items:stretch}
+.hero-in{order:1}
+.hero-art,.hero>picture{display:block;position:relative;inset:auto;z-index:0;order:2;width:min(86%,520px);height:auto;aspect-ratio:3/2;margin:0 auto 30px;
+  border:2.5px solid var(--ink);border-radius:var(--hp);overflow:hidden;filter:grayscale(.55) contrast(.95);opacity:.92}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero.band .hero-art,.hero.short .hero-art{width:min(70%,380px)}
+.art-label{max-width:520px;margin:8px auto 0;text-align:center;font-size:.9rem;color:var(--dim)}
+.art-label .kicker{display:none}
