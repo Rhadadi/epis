@@ -503,3 +503,25 @@ html[lang="fa"] .ep-node{direction:rtl}
 .ep-confetti i{position:absolute;top:-6%;width:9px;height:14px;border-radius:2px;animation:ep-fall 2.6s ease-in forwards}
 @keyframes ep-fall{to{transform:translateY(120vh) rotate(720deg)}}
 @media (prefers-reduced-motion:reduce){.ep-play,.ep-spot,.ep-target{animation:none}.ep-arrow{animation:none;stroke-dashoffset:0}.rewinding .ep-still{animation:none}}
+/* in-picture choices, the bells of the secret song, a tune played over the picture */
+.ep-opt.ep-pin{position:absolute;transform:translate(-50%,-50%);flex-direction:row;gap:6px;padding:6px 12px 6px 8px;font-size:clamp(.85rem,2.2vw,1.1rem);max-width:44%;box-shadow:2px 3px 0 #222;background:rgba(255,255,255,.94);animation:ep-pop2 .4s cubic-bezier(.3,1.6,.6,1) both}
+html[lang="fa"] .ep-opt.ep-pin span{direction:rtl}
+.ep-opt.ep-pin .ep-ico{width:30px;height:30px}
+.ep-opt.ep-pin:hover{transform:translate(-50%,-52%) rotate(-1deg)}
+.ep-opt.ep-pin.tried{opacity:.45}
+@media (max-width:560px){.ep-opt.ep-pin{padding:3px 8px 3px 4px;font-size:.78rem}.ep-opt.ep-pin .ep-ico{width:22px;height:22px}}
+.ep-bells{display:flex;gap:clamp(10px,3vw,22px);justify-content:center}
+.ep-bell{width:clamp(58px,15vw,84px);height:clamp(58px,15vw,84px);border-radius:50%;border:3px solid #222;cursor:pointer;box-shadow:3px 4px 0 #222;padding:10px}
+.ep-bell svg{width:100%;height:100%;fill:#fff;stroke:#222;stroke-width:2;stroke-linejoin:round}
+.ep-bell:active{transform:translate(2px,3px);box-shadow:1px 1px 0 #222}
+.ep-bell.ring{animation:ep-ringbell .5s}
+.ep-bell.hint{outline:4px dashed #222;outline-offset:4px}
+@keyframes ep-ringbell{20%{transform:rotate(-14deg) scale(1.12)}50%{transform:rotate(12deg) scale(1.12)}80%{transform:rotate(-5deg)}}
+.ep-dots{display:flex;gap:8px;justify-content:center}
+.ep-dots i{width:14px;height:14px;border-radius:50%;border:2px solid #222;background:#fff}
+.ep-dots i.ok{background:#ffcf3f}
+.ep-tune{position:absolute;left:50%;top:8%;transform:translateX(-50%);display:flex;gap:.5em;padding:.1em .6em;background:rgba(255,255,255,.9);border:2px solid #222;border-radius:var(--hp);font:400 clamp(1.6rem,5vw,2.6rem) var(--hand);color:#ccc}
+.ep-tune i{font-style:normal;transition:transform .2s}
+.ep-tune i.on{transform:translateY(-6px) scale(1.2)}
+.ep-tune i.sour{transform:translateY(-4px) rotate(-25deg) scale(1.1)}
+@media (prefers-reduced-motion:reduce){.ep-bell.ring{animation:none}}

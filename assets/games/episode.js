@@ -28,8 +28,17 @@
     ding: function () { tone(880, 880, 0.18, "triangle", 0.16); tone(1320, 1320, 0.3, "triangle", 0.14, 0.12); },
     boing: function () { tone(300, 90, 0.35, "sine", 0.22); },
     rewind: function () { for (var i = 0; i < 6; i++) tone(900 - i * 110, 700 - i * 100, 0.09, "sawtooth", 0.05, i * 0.1); },
+    knock: function () { [0, 0.32, 0.64].forEach(function (d) { tone(140, 55, 0.16, "sine", 0.5, d); tone(90, 40, 0.12, "square", 0.08, d); }); },
     tada: function () { [523, 659, 784, 1047].forEach(function (f, i) { tone(f, f, 0.25, "triangle", 0.15, i * 0.11); }); }
   };
+
+  // the bells of the secret song (episode "door"): four notes, the colours of the goats' collars and scarf
+  var BELL = [{ f: 523.25, c: "#d9433b" }, { f: 659.25, c: "#3f9a4a" }, { f: 783.99, c: "#8a4fc0" }, { f: 987.77, c: "#2f6fc4" }];
+  function bell(i, sour) {
+    var a = actx(); if (!a || G.state.sound === false) return;
+    var f = BELL[i].f * (sour ? (i % 2 ? 0.94 : 1.06) : 1);
+    [1, 2.76, 5.4].forEach(function (h, k) { tone(f * h, f * h * (sour ? 0.97 : 1), sour ? 0.5 : 0.9 - k * 0.25, sour ? "sawtooth" : "sine", [0.22, 0.07, 0.03][k] * (sour ? 0.6 : 1)); });
+  }
 
   // ---- doodle icons for the answer cards
   var ICON = {
@@ -38,7 +47,11 @@
     hmm: '<circle cx="20" cy="20" r="14"/><path d="M14 16h.01M26 16h.01"/><path d="M14 26h12"/>',
     foot: '<path d="M14 36c-5 0-6-6-5-12 1-7 3-12 8-12s7 6 6 12c-1 5 0 12-9 12z"/><circle cx="12" cy="6" r="2"/><circle cx="17" cy="4" r="2"/><circle cx="22" cy="5" r="2"/><circle cx="26" cy="8" r="1.6"/>',
     shoe: '<path d="M4 26c0-4 2-8 6-8 3 0 5 3 9 3 6 0 10 2 15 4 3 1 3 6-1 6H6c-2 0-2-2-2-5z"/><path d="M12 18l3-6"/>',
-    q: '<path d="M14 13c0-5 4-8 8-8s7 3 7 7c0 6-8 6-8 12"/><path d="M21 31h.01"/>'
+    q: '<path d="M14 13c0-5 4-8 8-8s7 3 7 7c0 6-8 6-8 12"/><path d="M21 31h.01"/>',
+    door: '<path d="M10 36V6h20v30"/><path d="M6 36h28"/><circle cx="25" cy="22" r="1.6"/>',
+    ear: '<path d="M14 15c0-6 4-10 9-10s9 4 9 10c0 5-4 6-5 10-1 5-4 9-8 9-3 0-5-2-5-4"/><path d="M19 16c0-3 2-5 4-5s4 2 4 5-3 3-3 6"/>',
+    note: '<path d="M16 30V9l16-4v21"/><circle cx="12" cy="30" r="4"/><circle cx="28" cy="26" r="4"/>',
+    key: '<circle cx="12" cy="20" r="6"/><path d="M18 20h16M29 20v6M34 20v4"/>'
   };
   function icon(name) {
     if (!ICON[name]) return null;
@@ -143,6 +156,7 @@
       });
       var p = video.play();
       if (p && p.catch) p.catch(function () { /* blocked: the still shows; the voice timer carries on */ });
+      if (C.fx && fx[C.fx]) setTimeout(fx[C.fx], 300);
       video.onplaying = function () { still.hidden = true; };
       var V = C.voice;
       voice.ontimeupdate = function () {
@@ -175,11 +189,13 @@
           if (s.after) return say(s.after);
         }).then(function () {
           if (s.rewind) return rewindTo(s.rewind);
-          go(nextOf(s));
+          go(s.back || nextOf(s));
         });
       } else if (s.do === "choose") choose(s);
       else if (s.do === "tap") tap(s);
       else if (s.do === "drag") drag(s);
+      else if (s.do === "song") song(s);
+      else if (s.do === "tune") tune(s).then(function () { go(nextOf(s)); });
       else if (s.do === "finish") finish(s);
     }
     function nextOf(s) {
@@ -212,11 +228,12 @@
     // ---- pick an answer
     function choose(s) {
       question(s);
-      var row = el("div", "ep-opts" + (s.options.length > 2 ? " three" : ""));
-      ask.appendChild(row);
+      var row = s.inpic ? layer : el("div", "ep-opts" + (s.options.length > 2 ? " three" : ""));
+      if (s.inpic) layer.innerHTML = ""; else ask.appendChild(row);
       var busy = false;
       s.options.forEach(function (o) {
-        var b = el("button", "ep-opt"); b.type = "button";
+        var b = el("button", "ep-opt" + (s.inpic ? " ep-pin" : "")); b.type = "button"; b.setAttribute("data-id", o.id);
+        if (s.inpic) { b.style.left = o.x + "%"; b.style.top = o.y + "%"; }
         var ic = icon(o.icon); if (ic) b.appendChild(ic);
         b.appendChild(el("span", "", o.t));
         if (off[s.id + "/" + o.id]) { b.disabled = true; b.classList.add("tried"); }
@@ -234,7 +251,7 @@
               b.classList.add("tried");
               row.querySelectorAll(".ep-opt").forEach(function (x) { x.classList.remove("dim", "picked", "shake"); });
             }, 450);
-            if (o.say) say(o.say);
+            (o.say ? say(o.say) : wait(300)).then(function () { if (o.replay && byId[o.replay]) tune(byId[o.replay]); });
             return;
           }
           (o.say ? say(o.say) : wait(400)).then(function () {
@@ -355,6 +372,75 @@
       art.appendChild(el("span", "ep-node ep-r", c.right));
       layer.innerHTML = ""; layer.appendChild(art);
       G.say(c.top + " → " + c.left + ", " + c.right);
+    }
+
+    // ---- the secret song: listen, then play it back on the bells
+    var learned = {};
+    function notesOf(s) {
+      if (s.song) return learned[s.song] || notesOf(byId[s.song]);
+      return Array.isArray(s.notes) ? s.notes : s.notes[level];
+    }
+    function tune(s) {  // play a tune over the picture (sour: the wolf's)
+      var notes = notesOf(s), row = el("div", "ep-tune");
+      notes.forEach(function () { row.appendChild(el("i", "", "♪")); });
+      layer.appendChild(row);
+      var i = 0;
+      return new Promise(function (resolve) {
+        (function next() {
+          if (i >= notes.length) { setTimeout(function () { row.remove(); resolve(); }, 600); return; }
+          var k = notes[i], n = row.children[i];
+          bell(k, !!s.wobble); n.style.color = BELL[k].c; n.classList.add("on");
+          if (s.wobble) n.classList.add("sour");
+          i++; setTimeout(next, 560);
+        })();
+      });
+    }
+    function song(s) {
+      var notes = notesOf(s); learned[s.id] = notes;
+      question(s);
+      var bells = el("div", "ep-bells"); ask.appendChild(bells);
+      var pos = 0, misses = 0, locked = true;
+      var btns = BELL.map(function (b, i) {
+        var x = el("button", "ep-bell"); x.type = "button"; x.style.background = b.c;
+        x.setAttribute("aria-label", T("Bell", "زنگوله") + " " + (i + 1));
+        x.innerHTML = '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 29c3-3 3-7 3-12a7 7 0 0 1 14 0c0 5 0 9 3 12z"/><circle cx="20" cy="32" r="2.6"/><path d="M20 8V5"/></svg>';
+        x.onclick = function () {
+          if (locked) return;
+          actx(); bell(i); flash(x);
+          if (i === notes[pos]) {
+            dots.children[pos].classList.add("ok");
+            if (++pos === notes.length) {
+              locked = true; fx.ding();
+              wait(500).then(function () { return say(s.after); }).then(function () { go(nextOf(s)); });
+            }
+          } else {
+            locked = true; fx.boing(); misses++;
+            Array.prototype.forEach.call(dots.children, function (d) { d.classList.remove("ok"); });
+            pos = 0;
+            ((misses === 1 && s.miss) ? say(s.miss) : wait(500)).then(demo);
+          }
+        };
+        bells.appendChild(x);
+        return x;
+      });
+      var dots = el("div", "ep-dots"); notes.forEach(function () { dots.appendChild(el("i")); }); ask.appendChild(dots);
+      function flash(x) { x.classList.remove("ring"); void x.offsetWidth; x.classList.add("ring"); }
+      function demo() {  // the song played on the bells themselves; after three misses the next bell to tap glows
+        locked = true;
+        var i = 0;
+        (function next() {
+          if (i >= notes.length) { locked = false; if (misses >= 3) btns[notes[0]].classList.add("hint"); return; }
+          bell(notes[i]); flash(btns[notes[i]]); i++; setTimeout(next, 650);
+        })();
+      }
+      var again = ask.querySelector(".ep-again");
+      if (again) again.onclick = function () { if (!locked) { pos = 0; Array.prototype.forEach.call(dots.children, function (d) { d.classList.remove("ok"); }); demo(); } };
+      // after three misses, each next bell glows
+      bells.addEventListener("click", function () {
+        btns.forEach(function (b) { b.classList.remove("hint"); });
+        if (misses >= 3 && !locked && pos < notes.length) btns[notes[pos]].classList.add("hint");
+      });
+      say(s.say, true).then(function () { return wait(300); }).then(demo);
     }
 
     // ---- the end: the clue card, the star, the first guess remembered, and the next case

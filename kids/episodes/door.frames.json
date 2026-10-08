@@ -1,0 +1,120 @@
+{
+ "model": "gpt-image-2",
+ "style": "Warm hand-painted children's picture-book illustration in gouache with a little coloured pencil, soft paper grain, rounded friendly shapes, rich but gentle colours (saffron yellow, turquoise, pomegranate red, leaf green, warm cream, dusty pink), soft daylight, lively expressive faces, plenty of small charming details. Setting: a cosy Iranian-inspired town and countryside (blue-tiled doorways, a courtyard with a little pool and potted geraniums, pomegranate and mulberry trees, rolling golden hills). Absolutely no text, letters, numbers, signs with writing or speech bubbles anywhere. Nothing frightening or violent. Original characters only: not in the style of any living illustrator, no famous characters or logos.",
+ "out": "assets/kids/episodes",
+ "images": [
+  {
+   "id": "ref-goats",
+   "publish": false,
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A character sheet on a plain warm-cream background: the five story animals standing side by side in a row, full body, facing the viewer, evenly spaced, each clearly separate. The story's animals, always drawn the same way: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face; and the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "door-c1",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Outside the little white house with a blue door at the edge of a sunny wood: Mother Goat, a basket on her back, stands on the path waving goodbye with one hoof; her three kids wave from the open doorway. Morning light, wildflowers. In this picture: Mother Goat, the three kids only. Not in this picture: the wolf, any people. Character looks: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin; her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "door-c2",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Inside the cosy little goat house: whitewashed walls, a woven rug, a small window, and the closed blue wooden front door with an iron knocker standing in the LEFT half of the picture (centred about 40% from the left edge), with a clear gap of light under it; the three kids stand together on the RIGHT side of the room, Little Grape nearest the viewer at the right. The kids look towards the door with their ears up, a little worried, huddled together. In this picture: the three kids only. Not in this picture: Mother Goat, the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "door-c3",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). In a sunny clearing in the woods near a beehive on a tree stump, the wolf holds a big wooden spoon dripping with golden honey up to his mouth, eyes closed with delight. Comic and gentle. In this picture: the wolf only. Not in this picture: Mother Goat, the three kids, any people. Character looks: the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "door-c4",
+   "refs": [
+    "ref-goats",
+    "door-c2"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Inside the cosy little goat house: whitewashed walls, a woven rug, a small window, and the closed blue wooden front door with an iron knocker standing in the LEFT half of the picture (centred about 40% from the left edge), with a clear gap of light under it; the three kids stand together on the RIGHT side of the room, Little Grape nearest the viewer at the right. The kids lean forward looking at the gap under the door, where the very tip of something dark is just appearing. Same room, same door, same places as the attached room picture. In this picture: the three kids only. Not in this picture: Mother Goat, the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "door-c5",
+   "refs": [
+    "ref-goats"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). In a village bakery with flat breads hanging on the wall, the wolf stands next to a big open sack of white flour, about to dip his front paws in, looking sneakily over his shoulder. In this picture: the wolf only. Not in this picture: Mother Goat, the three kids, any people. Character looks: the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "door-c6",
+   "refs": [
+    "ref-goats",
+    "door-c2"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Inside the cosy little goat house: whitewashed walls, a woven rug, a small window, and the closed blue wooden front door with an iron knocker standing in the LEFT half of the picture (centred about 40% from the left edge), with a clear gap of light under it; the three kids stand together on the RIGHT side of the room, Little Grape nearest the viewer at the right. The kids lean forward looking at the gap under the door; a little white flour dust lies on the floor by the gap. Same room, same door, same places as the attached room picture. In this picture: the three kids only. Not in this picture: Mother Goat, the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "door-c7",
+   "refs": [
+    "ref-goats",
+    "door-c1"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Outside the same little white house with the closed blue door (as in the attached house picture): the wolf stands at the door with one paw raised like a singer, mouth open, eyes half closed, trying to sing; two little birds sit on the roof. His feet are white with flour. In this picture: the wolf only. Not in this picture: Mother Goat, the three kids, any people. Character looks: the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing)."
+  },
+  {
+   "id": "door-c8",
+   "refs": [
+    "ref-goats",
+    "door-c1"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Outside the same little white house (as in the attached house picture): the wolf, flour on his feet, stomps grumpily away along the path towards the woods on the right; the three kids peek out of the small window of the house on the left, giggling. In this picture: the wolf, the three kids only. Not in this picture: Mother Goat, any people. Character looks: the WOLF, a scruffy grey cartoon wolf who is more silly and sneaky than scary, with a long nose, droopy ears and a too-wide sheepish grin (no sharp teeth showing); her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  },
+  {
+   "id": "door-c9",
+   "refs": [
+    "ref-goats",
+    "door-c1"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Outside the same little white house (as in the attached house picture) at golden sunset: Mother Goat stands at the closed blue door, smiling, about to be let in; flowers by the door. In this picture: Mother Goat only. Not in this picture: the three kids, the wolf, any people. Character looks: MOTHER GOAT, a white nanny goat with soft brown patches, kind eyes and a small blue headscarf knotted under her chin."
+  },
+  {
+   "id": "door-c10",
+   "refs": [
+    "ref-goats",
+    "door-c2"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached picture(s) only for how the characters and places look; draw just the characters listed. A still from a hand-painted animated film of the old Persian folk tale of the three little goats, wide 16:9 composition: keep everything important inside the middle band (nothing important in the top or bottom eighth). Inside the cosy little goat house: whitewashed walls, a woven rug, a small window, and the closed blue wooden front door with an iron knocker standing in the LEFT half of the picture (centred about 40% from the left edge), with a clear gap of light under it; the three kids stand together on the RIGHT side of the room, Little Grape nearest the viewer at the right. The kids stand close to the closed door, ready to push it. Same room, same door, same places as the attached room picture. In this picture: the three kids only. Not in this picture: Mother Goat, the wolf, any people. Character looks: her three kids: SHANGUL, a white kid with a red bell collar; MANGUL, a light-brown kid with a green bell collar; and LITTLE GRAPE, the smallest, cream-coloured, with a purple bell collar and a brave little face."
+  }
+ ]
+}

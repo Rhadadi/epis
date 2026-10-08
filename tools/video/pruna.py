@@ -91,8 +91,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("episode")
     ap.add_argument("--only", action="append", default=[])
-    ap.add_argument("--model", default="p-video-2")
-    ap.add_argument("--hold", action="store_true")
+    ap.add_argument("--model", help="default: the episode's (or the clip's) video block, else p-video-2")
+    ap.add_argument("--hold", action="store_true", help="force hold (default: the video block's \"hold\")")
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
     ep = json.loads((V.ROOT / args.episode).read_text())
@@ -103,17 +103,20 @@ def main():
         if not V.frame_png(ep, c):
             print(f"{c['id']}: no painted first frame yet")
             continue
+        video = {**ep.get("video", {}), **c.get("video", {})}
+        model = args.model or video.get("model", "p-video-2")
+        hold = args.hold or video.get("hold", True)
         frame = V.frame_bytes(V.frame_png(ep, c), ep["veo"].get("aspect", "16:9"))
         prompt = V.prompt_of(ep, c)
         secs = c.get("seconds", 8)
-        out = cache_path(ep, c, args.model, args.hold)
+        out = cache_path(ep, c, model, hold)
         if out.exists() and not args.force:
-            print(f"{c['id']} {args.model}: cached {out.name}")
+            print(f"{c['id']} {model}: cached {out.name}")
             continue
         img = upload(frame)
-        data, took = make(args.model, inputs(args.model, prompt, img, secs, args.hold))
+        data, took = make(model, inputs(model, prompt, img, secs, hold))
         out.write_bytes(data)
-        print(f"{c['id']} {args.model}{' hold' if args.hold else ''}: {took}s, {len(data) // 1024} KB -> {out.relative_to(V.ROOT)}", flush=True)
+        print(f"{c['id']} {model}{' hold' if hold else ''}: {took}s, {len(data) // 1024} KB -> {out.relative_to(V.ROOT)}", flush=True)
 
 
 if __name__ == "__main__":

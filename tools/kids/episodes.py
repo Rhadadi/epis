@@ -41,10 +41,11 @@ def data_of(ep, level, lang, root, kids_root):
     base = f"{root}assets/kids/episodes/{ep['id']}/"
     cast = K.read_json(K.KIDS / "cast.json")
     names = {r: K.pick(cast[r], lang)["name"] for r in ep["voices"][lang] if r in cast}
+    names.update({r: v[lang] for r, v in ep.get("names", {}).items()})  # e.g. "At the door" for a voice not yet known
     clips = {}
     for cid, m in media["clips"].items():
         v = m["voice"][lang]
-        clips[cid] = {"video": f"{base}{cid}.mp4", "first": f"{base}{cid}.first.webp", "last": f"{base}{cid}.last.webp",
+        clips[cid] = {"fx": next((c.get("fx") for c in ep["clips"] if c["id"] == cid), None), "video": f"{base}{cid}.mp4", "first": f"{base}{cid}.first.webp", "last": f"{base}{cid}.last.webp",
                       "dur": m["dur"], "voice": {"src": f"{base}{cid}.{lang}.mp3", "dur": v["dur"], "lines": v["lines"]}}
     lines = {k: {"who": ln["who"], "t": ln[lang], "src": f"{base}{k}.{lang}.mp3", "dur": media["lines"][k][lang]["dur"]}
              for k, ln in ep["lines"].items()}
@@ -57,7 +58,8 @@ def data_of(ep, level, lang, root, kids_root):
             s["card"] = {"title": s["card"]["title"], "text": s["card"][level]}
             if s.get("next"):
                 n = s["next"]
-                s["next"] = {"t": n["t"], "href": f'{kids_root}arcade/{n["game"]}/{"" if level == "explorers" else LEVEL_FILE[level]}',
+                where = f'watch/{n["episode"]}' if n.get("episode") else f'arcade/{n["game"]}'
+                s["next"] = {"t": n["t"], "href": f'{kids_root}{where}/{"" if level == "explorers" else LEVEL_FILE[level]}',
                              "img": f'{root}assets/kids/art/{n["img"].split("/")[-1]}-800.webp' if n.get("img") else None}
         steps.append(s)
     used = {s["clip"] for s in steps if s.get("clip")}
@@ -89,6 +91,16 @@ def problems(ep):
                 errs.append(f"{ep['id']}: step {s['id']} goes to unknown step {o['go']}")
             if o.get("say") and o["say"] not in ep["lines"]:
                 errs.append(f"{ep['id']}: step {s['id']} option {o['id']} says unknown line {o['say']}")
+        for key in ("back", "song"):
+            if s.get(key) and s[key] not in ids:
+                errs.append(f"{ep['id']}: step {s['id']} {key} names unknown step {s[key]}")
+        for o in s.get("options", []):
+            if o.get("replay") and o["replay"] not in ids:
+                errs.append(f"{ep['id']}: step {s['id']} option {o['id']} replays unknown step {o['replay']}")
+            if s.get("inpic") and not ("x" in o and "y" in o):
+                errs.append(f"{ep['id']}: step {s['id']} option {o['id']} needs x and y (it sits in the picture)")
+        if s.get("do") in ("song", "tune") and not (s.get("notes") or s.get("song")):
+            errs.append(f"{ep['id']}: step {s['id']} has no notes")
         if s.get("rewind") and s["rewind"] not in ids:
             errs.append(f"{ep['id']}: step {s['id']} rewinds to unknown step {s['rewind']}")
         if s.get("do") == "choose" and not any(o.get("right") or not o.get("retry") for o in s["options"]):
