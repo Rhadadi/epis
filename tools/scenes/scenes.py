@@ -136,3 +136,31 @@ def render(scenes, boxes=None, ui=None, audio_src=None, attrs=""):
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return (f'<section class="deck" data-deck {attrs}><ol class="dlist">{"".join(lis)}</ol>'
             f'<script type="application/json" class="dscript">{payload}</script></section>')
+
+
+def pick(obj, lang):
+    """The language-specific view of a bilingual record: English at the top level, Persian under "fa"."""
+    if isinstance(obj, list):
+        return [pick(x, lang) for x in obj]
+    if not isinstance(obj, dict):
+        return obj
+    fa = obj.get("fa") if lang == "fa" and isinstance(obj.get("fa"), dict) else {}
+    return {k: (fa[k] if k in fa else pick(v, lang)) for k, v in obj.items() if k != "fa"}
+
+
+def load(path, lang):
+    """A deck file (scenes.json style) as one language's scenes."""
+    return [pick(sc, lang) for sc in json.loads(Path(path).read_text(encoding="utf-8"))["scenes"]]
+
+
+def resolve_links(scenes, home, play=None):
+    """Turn {"guide": "01-….html#x"}, {"play": "game/"} and {"href"} links into addresses (home: the language's site root)."""
+    for sc in scenes:
+        for l in sc.get("links", []):
+            if "guide" in l:
+                l["href"] = f'{home}guide/{l.pop("guide")}'
+            elif "play" in l:
+                l["href"] = f'{home}play/{l.pop("play")}'
+            elif "home" in l:
+                l["href"] = f'{home}{l.pop("home")}'
+    return scenes

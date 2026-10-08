@@ -610,6 +610,10 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
         return safe_shell(section=safe or "kids", root=root, title=title, desc=desc, body=body, current=current,
                           extra_head=extra_head, alt=alt, extra_scripts=extra_scripts)
     h = home(root)
+    if "data-deck" in body:  # scene decks (assets/scenes/): their styles, characters and stage code
+        extra_head = (f'<link rel="stylesheet" href="{av(root, "games/games.css")}"><link rel="stylesheet" href="{av(root, "scenes/scenes.css")}">' + extra_head)
+        extra_scripts = (f'<script src="{av(root, "games/core.js")}" defer></script><script src="{av(root, "scenes/puppets.js")}" defer></script>'
+                         f'<script src="{av(root, "scenes/deck.js")}" defer></script>' + extra_scripts)
     chapter_nav = chapter_nav or chapter_menu(root)
     nav = [("guide", f"{h}guide/", "book", L("Guide", "راهنما")), ("concepts", f"{h}concepts/", "grid", L("Concepts", "مفاهیم")),
            ("map", map_url(root), "map", L("Map", "نقشه")), ("audio", f"{h}guide/audio/", "phones", L("Listen", "شنیدن"))]
@@ -682,6 +686,22 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 </body>
 </html>
 """
+
+
+def guide_deck(name, root, extra=None):
+    """A scene deck for the guide's own pages (scenes/<name>.json): the HTML, or "" if there is none. extra: {scene id: {…}}
+    patches for numbers only the build knows (counts of chapters, concepts, hours)."""
+    path = ROOT / "scenes" / f"{name}.json"
+    if not path.exists():
+        return ""
+    scenes = scene_decks.resolve_links(scene_decks.load(path, LANG), home(root))
+    for sc in scenes:
+        sc.update((extra or {}).get(sc["id"], {}))
+    probs = scene_decks.validate(scenes)
+    if probs:
+        raise SystemExit(f"scenes/{name}.json [{LANG}]: problems:\n  " + "\n  ".join(probs))
+    return scene_decks.render(scenes, ui={"listen": L("Listen", "گوش کن"), "next": L("Next", "بعدی"), "back": L("Back", "قبلی"),
+                                          "again": L("Start again", "دوباره از اول"), "yes": L("Yes!", "درست!"), "notquite": L("Not quite.", "نه کاملاً.")})
 
 
 def kids_shell(**kw):
@@ -1103,7 +1123,10 @@ def build_chapter(ch, chapters, md, art, svgs_later, C):
                   'تا آماده شود، متن انگلیسی را می‌بینید. بقیهٔ سایت به فارسی است.</div>')
         prose_attrs = ' dir="ltr" lang="en"'
     in_ch = L("In this chapter", "در این فصل")
-    page = (f"{head}{label(art, ch.art)}"
+    deck_html = guide_deck(f"chapters/{ch.num:02d}", root) if 1 <= ch.num <= 16 else ""
+    deck_section = (f'<section class="chdeck" aria-label="{L("This chapter in two minutes", "این فصل در دو دقیقه")}"><div class="wrap">'
+                    f'<p class="kicker">{L("This chapter in two minutes", "این فصل در دو دقیقه")}</p>{deck_html}</div></section>') if deck_html else ""
+    page = (f"{head}{label(art, ch.art)}{deck_section}"
             f'<main id="main" class="page"><aside class="side"><nav class="toc" aria-label="{in_ch}">'
             f'<span class="kicker">{in_ch}</span><ol{prose_attrs}>{toc}</ol></nav></aside>'
             f'<article data-slug="{ch.slug}" data-read-min="{ch.minutes}">{focus_head}{notice}<details class="mini-toc"><summary>{in_ch}</summary><ol{prose_attrs}>{toc}</ol></details>'
@@ -1956,6 +1979,7 @@ def build_home(art, chapters, md, total_audio, n_concepts):
         chips = "".join(f'<li><a href="{h}guide/{slug}.html" title="{attr(chapters[int(n)].title)}">{n}</a></li>' for n, slug in nums)
         paths.append(f'<div class="path"><h4>{esc(name)}</h4><p>{esc(note)}</p><ol>{chips}</ol></div>')
     n_c = num(n_concepts)
+    n_chapters = sum(1 for k in chapters if 1 <= k <= 16)
     head = hero(art, "home", root, kicker=L("A free course in the theory of knowledge", "دوره‌ای رایگان در نظریهٔ معرفت"),
                 title=L("How do you know?", "از کجا می‌دانید؟"),
                 lede=L(f"<b>{SITE}</b> is a complete guide to knowledge, evidence, and critical thinking: sixteen illustrated chapters, "
@@ -1987,7 +2011,13 @@ def build_home(art, chapters, md, total_audio, n_concepts):
     stats = (f'<div class="statline"><div><b>{L("16", "۱۶")}</b><span>{L("chapters in five parts", "فصل در پنج بخش")}</span></div>'
              f'<div><b>{n_c}</b><span>{L("concepts, in English and Persian", "مفهوم، به فارسی و انگلیسی")}</span></div>'
              f'<div><b>{total_audio.split()[0]}</b><span>{L("hours of narration", "ساعت روایت صوتی")}</span></div><div><b>{L("200", "۲۰۰")}</b><span>{L("glossary terms", "اصطلاح در واژه‌نامه")}</span></div></div>')
-    body = (f'{head}<main id="main">'
+    sites = [L(f"{n_chapters} chapters, from the Gettier problem to Bayes' theorem", f"{num(n_chapters)} فصل، از مسئلهٔ گتیه تا قضیهٔ بیز"),
+             L(f"a living map of {n_concepts} ideas, in English and Persian", f"نقشهٔ زندهٔ {n_c} ایده، به فارسی و انگلیسی"),
+             L(f"{total_audio} of narrated audio, chapter by chapter", f"{total_audio} روایتِ صوتی، فصل به فصل")]
+    home_deck = guide_deck("home", root, {"site": {"list": sites}})
+    home_deck = (f'<section class="chdeck" aria-label="{L("A two-minute start", "شروعی دو دقیقه‌ای")}"><div class="wrap">'
+                 f'<p class="kicker">{L("A two-minute start", "شروعی دو دقیقه‌ای")}</p>{home_deck}</div></section>') if home_deck else ""
+    body = (f'{head}<main id="main">{home_deck}'
             f'<div class="wrap" id="rp-home" style="padding-top:28px"><a class="btn" href="{h}reading-path/">{L("A path built around your question →", "مسیری بر پایهٔ پرسش شما ←")}</a></div>'
             f'<section class="section"><div class="wrap"><div id="resume"></div><div class="section-head"><div><span class="kicker">{L("Three ways in", "سه راهِ ورود")}</span>'
             f'<h2>{L("Read it, map it, or hear it", "بخوانید، روی نقشه ببینید، یا بشنوید")}</h2></div><p>{L("The same ideas, three ways. Start wherever suits you; everything is cross-linked.", "همان ایده‌ها، از سه راه. از هر جا که مناسب شماست آغاز کنید؛ همه‌چیز به هم پیوند خورده است.")}</p></div>{doors}{play}'

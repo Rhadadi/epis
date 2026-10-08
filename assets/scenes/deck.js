@@ -256,7 +256,7 @@
       stage.hidden = !!sc.nostage; label.classList.toggle("over", false);
       dotEls.forEach(function (d, k) { d.classList.toggle("on", k === i); d.classList.toggle("done", k < i); d.setAttribute("aria-current", k === i ? "step" : "false"); });
       back.disabled = i === 0;
-      next.disabled = i === n - 1 && !sc.end;
+      next.disabled = false;
       next.classList.remove("pulse");
       next.textContent = i === n - 1 ? (ui.again || T("Start again", "دوباره از اول")) : (sc.next || ui.next || T("Next", "بعدی"));
       next.classList.toggle("last", i === n - 1);

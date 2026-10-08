@@ -1,0 +1,333 @@
+{
+ "scenes": [
+  {
+   "id": "claim",
+   "text": [
+    "You read a headline: **“People who drink two cups of coffee a day live 18% longer.”**",
+    "Do you believe it?"
+   ],
+   "bg": "cafe",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "Coffee makes you live longer!",
+     "fa": {
+      "say": "قهوه عمر را طولانی می‌کند!"
+     }
+    },
+    {
+     "id": "b",
+     "who": "person3",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Hmm…",
+     "fa": {
+      "say": "هوم…"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "n",
+     "what": "news",
+     "x": 50,
+     "y": 62,
+     "s": 0.8,
+     "anim": "float"
+    },
+    {
+     "id": "c",
+     "what": "coffee",
+     "x": 28,
+     "y": 70,
+     "s": 0.4,
+     "anim": "none"
+    }
+   ],
+   "fa": {
+    "text": [
+     "تیتری می‌خوانید: **«کسانی که روزی دو فنجان قهوه می‌نوشند ۱۸٪ بیشتر عمر می‌کنند.»**",
+     "باورش می‌کنید؟"
+    ]
+   }
+  },
+  {
+   "id": "guess",
+   "label": "Your first guess",
+   "bg": "cafe",
+   "actors": [
+    {
+     "id": "dog",
+     "who": "dog",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "n",
+     "what": "news",
+     "x": 62,
+     "y": 84,
+     "s": 0.9,
+     "anim": "float"
+    }
+   ],
+   "ask": {
+    "q": "Did the coffee do it?",
+    "who": "dog",
+    "fa": {
+     "q": "کارِ قهوه بود؟"
+    },
+    "options": [
+     {
+      "t": "Yes, coffee makes you live longer",
+      "why": "Maybe. But the study only shows two groups differ, not what made them differ.",
+      "fa": {
+       "t": "بله، قهوه عمر را طولانی می‌کند",
+       "why": "شاید. ولی پژوهش فقط نشان می‌دهد دو گروه فرق دارند، نه این‌که چه چیزی این فرق را ساخته."
+      }
+     },
+     {
+      "t": "Maybe something else explains it",
+      "why": "Good instinct. Coffee drinkers may differ from non-drinkers in other ways. The question is: how do you know?",
+      "fa": {
+       "t": "شاید چیزِ دیگری توضیحش بدهد",
+       "why": "غریزهٔ خوبی است. قهوه‌خورها شاید از جهت‌های دیگری هم با بقیه فرق داشته باشند. پرسش این است: از کجا می‌دانید؟"
+      },
+      "ok": true
+     },
+     {
+      "t": "No, it proves nothing",
+      "why": "Too harsh. It is a real clue; it just can't show the cause on its own.",
+      "fa": {
+       "t": "نه، چیزی را ثابت نمی‌کند",
+       "why": "زیادی سخت‌گیرانه است. سرنخِ واقعی است؛ فقط به‌تنهایی علت را نشان نمی‌دهد."
+      }
+     }
+    ]
+   },
+   "fa": {
+    "label": "حدسِ اول"
+   }
+  },
+  {
+   "id": "what",
+   "label": "That question has a name",
+   "text": [
+    "**Epistemology** is the study of how we know: knowledge, belief, evidence, justification and rationality.",
+    "It sits under every other field, because every field makes claims to know."
+   ],
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "dog",
+     "who": "dog",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "point",
+     "say": "How do you know?",
+     "fa": {
+      "say": "از کجا می‌دانید؟"
+     }
+    },
+    {
+     "id": "p",
+     "who": "person4",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "b",
+     "what": "book",
+     "x": 52,
+     "y": 82,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "**معرفت‌شناسی** بررسیِ این است که چطور می‌دانیم: دانش، باور، شواهد، توجیه و عقلانیت.",
+     "زیرِ هر رشتهٔ دیگری است، چون هر رشته ادعای دانستنِ چیزهایی را دارد."
+    ],
+    "label": "این پرسش نام دارد"
+   }
+  },
+  {
+   "id": "site",
+   "label": "What you will find here",
+   "bg": "sky",
+   "list": [
+    "16 chapters",
+    "a map",
+    "audio"
+   ],
+   "actors": [
+    {
+     "id": "h",
+     "who": "hudhud",
+     "x": 84,
+     "y": 92,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "wave"
+    }
+   ],
+   "props": [
+    {
+     "id": "b",
+     "what": "book",
+     "x": 20,
+     "y": 84,
+     "s": 0.8,
+     "anim": "float"
+    },
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 44,
+     "y": 86,
+     "s": 0.8,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "label": "این‌جا چه پیدا می‌کنید",
+    "list": [
+     "۱۶ فصل",
+     "یک نقشه",
+     "صوت"
+    ]
+   }
+  },
+  {
+   "id": "ways",
+   "label": "Three ways in",
+   "text": "Read it, map it or hear it. Start wherever suits you: everything is cross-linked.",
+   "bg": "room",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 22,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "b",
+     "who": "person3",
+     "x": 46,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "c",
+     "who": "person4",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "p_b",
+     "what": "book",
+     "x": 22,
+     "y": 62,
+     "s": 0.45,
+     "anim": "float"
+    },
+    {
+     "id": "p_m",
+     "what": "magnifier",
+     "x": 46,
+     "y": 62,
+     "s": 0.45,
+     "anim": "float"
+    },
+    {
+     "id": "p_cl",
+     "what": "cloud",
+     "x": 70,
+     "y": 58,
+     "s": 0.45,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": "بخوانید، روی نقشه ببینید یا بشنوید. از هر جا که مناسب شماست شروع کنید؛ همه‌چیز به هم پیوند خورده است.",
+    "label": "سه راهِ ورود"
+   }
+  },
+  {
+   "id": "start",
+   "label": "Pick one",
+   "text": "Where to start?",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "dog",
+     "who": "dog",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    }
+   ],
+   "links": [
+    {
+     "home": "reading-path/",
+     "t": "Find a reading path built around your question",
+     "fa": {
+      "t": "مسیرِ مطالعه‌ای پیدا کنید که بر پایهٔ پرسشِ شما ساخته شده"
+     }
+    },
+    {
+     "guide": "01-what-is-epistemology.html",
+     "t": "Start with Chapter 1: What is epistemology?",
+     "fa": {
+      "t": "با فصلِ ۱ شروع کنید: معرفت‌شناسی چیست؟"
+     }
+    },
+    {
+     "play": "correlation-detective/",
+     "t": "Or play: Correlation Detective",
+     "fa": {
+      "t": "یا بازی کنید: کارآگاهِ همبستگی"
+     }
+    }
+   ],
+   "fa": {
+    "text": "از کجا شروع کنیم؟",
+    "label": "یکی را انتخاب کنید"
+   }
+  }
+ ]
+}

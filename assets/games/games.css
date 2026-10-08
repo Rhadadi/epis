@@ -26,6 +26,13 @@ html[data-games][data-theme="dark"]{
 .kbar #theme .ico{display:inline-block;width:18px;height:18px;border-radius:50%;background:linear-gradient(90deg,currentColor 50%,transparent 50%);border:1.6px solid currentColor}
 .kspacer{flex:1}
 
+/* the guide's pages borrow the same pieces (scene decks): map the tokens onto the guide's own colours */
+html:not([data-games]) .deck{--k-ink:var(--ink);--k-ink-2:var(--dim);--k-card:var(--surface);--k-line:var(--rule);--k-bg:var(--bg);
+  --k-blue:#12788F;--k-blue-d:#0B6075;--k-green:#12788F;--k-green-d:#0B4E60;--k-orange:#B8651B;--k-orange-d:#8A4F00;--k-yellow:#F2B84B;--k-yellow-d:#C98B1F;
+  --k-pink:#C2415F;--k-pink-d:#9D2F4A;--k-purple:#6D55C9;--k-purple-d:#4F3BA6;
+  --k-yellow-t:var(--accent-wash);--k-green-t:var(--teal-wash);--k-orange-t:var(--accent-wash);--k-blue-t:var(--teal-wash);--k-pink-t:rgba(194,65,95,.1);--k-purple-t:rgba(109,85,201,.1);
+  --k-display:var(--display);--k-font:var(--sans);--k-q:var(--accent)}
+html[data-theme="dark"]:not([data-games]) .deck{--k-pink-t:rgba(255,145,135,.12);--k-green:#1B8CA6;--k-green-d:#0F5F73;--k-blue:#1B8CA6;--k-orange:#E0A04A}
 /* ------------------------------------------------------------------ game cards (Baloney Detector home, kids' arcade) */
 .c-pink{--c:var(--k-pink);--c-d:var(--k-pink-d);--c-t:var(--k-pink-t)}
 .c-blue{--c:var(--k-blue);--c-d:var(--k-blue-d);--c-t:var(--k-blue-t)}

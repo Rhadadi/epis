@@ -123,3 +123,9 @@ html[dir="rtl"] .dnav .dnext svg{transform:scaleX(-1)}
 .dcard img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:12px;margin-bottom:4px}
 .dcard b{font:600 1.25rem var(--d-display);color:var(--k-purple-d,var(--d-acc))}
 .dcard i{color:var(--d-ink2);font-size:.92rem}
+
+.chdeck{padding:34px 0 6px}
+.chdeck .wrap{max-width:900px;margin:0 auto;padding:0 var(--gutter,16px)}
+.chdeck .kicker{margin:0 0 12px;color:var(--accent,var(--d-acc))}
+html:not([data-games]) .deck .dtext{font-family:var(--serif,inherit)}
+html:not([data-games]) .deck .dlabel{font-family:var(--sans)}

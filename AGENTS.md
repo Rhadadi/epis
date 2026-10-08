@@ -8,6 +8,10 @@ This repository is *Mastering Epistemology*, a bilingual guide published at http
   `tools/deeper/check.sh`.
 - **Games section** (Baloney Detector, `play/`, published at /play/ and /fa/play/): `tools/play/site_play.py` builds
   it, `tools/play/check.py` checks it; the engines in `assets/games/` are shared with the kids' site.
+- **Scene decks** (one idea per screen, animated drawings; `assets/scenes/`, `tools/scenes/`): the guide's home page (`scenes/home.json`)
+  and chapter pages (`scenes/chapters/NN.json`, a "this chapter in two minutes" deck before the unchanged chapter text) and the kids'
+  units (`kids/src/<unit>/deck.<level>.json`). Decks only retell what the chapter says and cite nothing new. `tools/scenes/check.py` runs in
+  `tools/deeper/check.sh`.
 - **Branch:** `claude/epistemology-learning-guide-s6zuob`. Fetch and merge; never rebase or force-push. No pull
   request unless asked.
 - **Never edit** the narrated chapters (`guide/NN-*.md`, `guide/fa/`, audio). `python3 tools/site/frozen.py`
