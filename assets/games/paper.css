@@ -382,3 +382,22 @@ html[lang="fa"] body.paper .sim-tog{font-size:1rem}
 body.paper .sim-ctl{border:0;background:#F4F4F2;border-radius:12px;padding:10px 14px;font-size:1.05rem}
 body.paper .sim-run{justify-self:center}
 body.paper .cs-top{justify-content:center}
+
+/* ---- the picture dictionary and the book club, tidied: small pictures in a grid, big words, plain sections */
+body.paper .kwords,body.paper .kwords-all{display:grid !important;grid-template-columns:repeat(2,1fr);gap:14px;margin:12px 0}
+@media (min-width:700px){body.paper .kwords,body.paper .kwords-all{grid-template-columns:repeat(3,1fr)}}
+body.paper .kword{display:flex;flex-direction:column;gap:6px;padding:8px;text-align:center}
+body.paper .kword .kword-img{width:100%;height:auto;aspect-ratio:4/3;max-height:130px;object-fit:cover;margin:0 !important}
+body.paper .kword .kw{font-size:1.6rem;line-height:1.1;margin:2px 0 0}
+html[lang="fa"] body.paper .kword .kw{font-size:1.25rem}
+body.paper .kword .kd{font-size:.98rem;line-height:1.4;color:#333}
+html[lang="en"] body.paper .kword .kd{font-family:var(--read)}
+body.paper .kbook{border:0;border-radius:0;border-top:2.5px solid #222;padding:16px 4px;background:none}
+body.paper .kbook h3{font-size:1.7rem;margin:4px 0}
+html[lang="en"] body.paper .kbook,html[lang="en"] body.paper .kbook p,html[lang="en"] body.paper .kbook li,html[lang="en"] body.paper .kbook .kby{font-family:var(--read);font-size:1.05rem;line-height:1.55}
+html[lang="en"] body.paper .kbook .kicker,html[lang="en"] body.paper .kbook h3{font-family:var(--hand)}
+html[lang="en"] body.paper .kbook .kby{color:#555}
+body.paper .kbooks{display:flex;flex-direction:column;gap:6px}
+/* the dictionary's pictures are all the same cast painting until each word has its own, so show clean text cards for now */
+body.paper .kword .kword-img{display:none}
+body.paper .kword{justify-content:center;padding:14px 10px;min-height:7em}
