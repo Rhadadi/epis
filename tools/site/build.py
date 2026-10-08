@@ -662,6 +662,7 @@ def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", 
 <link rel="stylesheet" href="{av(root, "fonts/fonts.css")}">
 <link rel="stylesheet" href="{av(root, "site.css")}">
 {preload}{extra_head}
+<link rel="stylesheet" href="{av(root, "ink.css")}">
 <script>{BOOT}</script>
 </head>
 <body>
@@ -2869,7 +2870,7 @@ def build_offline_list():
               "assets/reading-path.css", "assets/reading-path-core.js", "assets/reading-path-i18n.js",
               "assets/reading-path.js", "assets/data/reading-path.json", "assets/data/reading-path-fa.json"]
     paths += [
-              "assets/site.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
+              "assets/site.css", "assets/ink.css", "assets/site.js", "assets/notes.js", "assets/learn.js", "assets/ai-config.js", "assets/account.js", "assets/ai.js",
               "assets/data/terms.json", "assets/data/search.json", "assets/data/questions.json",
               "assets/data/terms-fa.json", "assets/data/search-fa.json", "assets/data/questions-fa.json",
               "assets/favicon.svg", "assets/fonts/fonts.css", "manifest.webmanifest", "assets/icon-192.png"]
