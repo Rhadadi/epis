@@ -51,6 +51,228 @@
      "dur": 13.08
     }
    }
+  },
+  "c2": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.86,
+       "who": "ava",
+       "t": "Let's test it. First, we measure everyone's feet."
+      },
+      {
+       "b": 4.21,
+       "e": 5.97,
+       "who": "nima",
+       "t": "Hold still, please!"
+      }
+     ],
+     "dur": 6.34
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.22,
+       "who": "ava",
+       "t": "بیایید امتحانش کنیم. اول پای همه را اندازه می‌گیریم."
+      },
+      {
+       "b": 5.57,
+       "e": 7.09,
+       "who": "nima",
+       "t": "لطفاً تکان نخور!"
+      }
+     ],
+     "dur": 7.44
+    }
+   }
+  },
+  "c3": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.5,
+       "who": "narrator",
+       "t": "Next came the reading test."
+      },
+      {
+       "b": 2.85,
+       "e": 6.53,
+       "who": "kian",
+       "t": "See? The biggest feet read best. I told you!"
+      }
+     ],
+     "dur": 6.89
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.7,
+       "who": "narrator",
+       "t": "بعد، نوبتِ مسابقه‌ی کتاب‌خوانی بود."
+      },
+      {
+       "b": 4.05,
+       "e": 8.85,
+       "who": "kian",
+       "t": "دیدید؟ بزرگ‌ترین پا، بهترین کتاب‌خوان. گفته بودم!"
+      }
+     ],
+     "dur": 9.22
+    }
+   }
+  },
+  "c4": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.62,
+       "who": "narrator",
+       "t": "So Sam tried on the biggest shoes in town."
+      },
+      {
+       "b": 3.97,
+       "e": 6.37,
+       "who": "nima",
+       "t": "I still can't read the long words!"
+      }
+     ],
+     "dur": 6.72
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.34,
+       "who": "narrator",
+       "t": "پس نیما بزرگ‌ترین کفش‌های شهر را پوشید."
+      },
+      {
+       "b": 4.69,
+       "e": 8.05,
+       "who": "nima",
+       "t": "هنوز کلمه‌های بلند را نمی‌توانم بخوانم!"
+      }
+     ],
+     "dur": 8.4
+    }
+   }
+  },
+  "c5": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.06,
+       "who": "grandma",
+       "t": "What a clever test, my dears!"
+      },
+      {
+       "b": 3.41,
+       "e": 6.13,
+       "who": "grandma",
+       "t": "But tell me: how old is each of them?"
+      }
+     ],
+     "dur": 6.48
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.78,
+       "who": "grandma",
+       "t": "چه آزمایشِ زیرکانه‌ای، عزیزانم!"
+      },
+      {
+       "b": 4.13,
+       "e": 7.81,
+       "who": "grandma",
+       "t": "ولی بگویید ببینم: هر کدام چند سال دارند؟"
+      }
+     ],
+     "dur": 8.16
+    }
+   }
+  },
+  "c6": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.74,
+       "who": "ava",
+       "t": "So let's be fair. We'll only compare kids who are the same age."
+      }
+     ],
+     "dur": 5.09
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 6.18,
+       "who": "ava",
+       "t": "پس بیایید منصف باشیم. فقط بچه‌هایی را مقایسه می‌کنیم که هم‌سن‌اند."
+      }
+     ],
+     "dur": 6.53
+    }
+   }
+  },
+  "c7": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.42,
+       "who": "kian",
+       "t": "Okay, okay. It wasn't the feet. It was age!"
+      },
+      {
+       "b": 4.77,
+       "e": 8.37,
+       "who": "narrator",
+       "t": "Case closed, Detective! You found a hidden cause."
+      }
+     ],
+     "dur": 8.74
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.82,
+       "who": "kian",
+       "t": "باشه، باشه. کارِ پا نبود. کارِ سن بود!"
+      },
+      {
+       "b": 5.17,
+       "e": 10.05,
+       "who": "narrator",
+       "t": "پرونده بسته شد، کارآگاه! تو یک علتِ پنهان پیدا کردی."
+      }
+     ],
+     "dur": 10.42
+    }
+   }
   }
  },
  "lines": {

@@ -35,7 +35,7 @@
   var ICON = {
     up: '<path d="M14 30V18l6-10c2-3 6-1 5 2l-2 8h9c3 0 4 3 3 5l-4 9c-1 2-2 3-4 3H14z"/><path d="M6 18h8v16H6z"/>',
     down: '<path d="M14 10v12l6 10c2 3 6 1 5-2l-2-8h9c3 0 4-3 3-5l-4-9c-1-2-2-3-4-3H14z"/><path d="M6 6h8v16H6z"/>',
-    hmm: '<circle cx="20" cy="20" r="14"/><path d="M14 16h.01M26 16h.01"/><path d="M14 27c4-2 8-2 12 1"/>',
+    hmm: '<circle cx="20" cy="20" r="14"/><path d="M14 16h.01M26 16h.01"/><path d="M14 26h12"/>',
     foot: '<path d="M14 36c-5 0-6-6-5-12 1-7 3-12 8-12s7 6 6 12c-1 5 0 12-9 12z"/><circle cx="12" cy="6" r="2"/><circle cx="17" cy="4" r="2"/><circle cx="22" cy="5" r="2"/><circle cx="26" cy="8" r="1.6"/>',
     shoe: '<path d="M4 26c0-4 2-8 6-8 3 0 5 3 9 3 6 0 10 2 15 4 3 1 3 6-1 6H6c-2 0-2-2-2-5z"/><path d="M12 18l3-6"/>',
     q: '<path d="M14 13c0-5 4-8 8-8s7 3 7 7c0 6-8 6-8 12"/><path d="M21 31h.01"/>'
@@ -70,6 +70,11 @@
     var ask = el("div", "ep-ask"); ask.hidden = true;
     wrap.appendChild(stage); wrap.appendChild(ask);
     box.appendChild(wrap);
+    // on a phone the picture is small: the caption goes under it instead of over it
+    var narrow = window.matchMedia ? matchMedia("(max-width: 640px)") : null;
+    function placeCap() { if (narrow && narrow.matches) wrap.insertBefore(cap, ask); else stage.appendChild(cap); }
+    placeCap();
+    if (narrow && narrow.addEventListener) narrow.addEventListener("change", placeCap);
     var voice = new Audio(); voice.preload = "auto";
     var line = new Audio(); line.preload = "auto";
 
@@ -115,10 +120,10 @@
       });
     }
     // one spoken line (a question or a reaction), captioned
-    function say(id) {
+    function say(id, quiet) {  // quiet: the question is already written under the picture, so no caption
       var L = D.lines[id];
       if (!L) return Promise.resolve();
-      showCap(L.who, L.t);
+      if (quiet) cap.hidden = true; else showCap(L.who, L.t);
       return playTo(line, L.src, L.dur).then(function () { return wait(250); });
     }
 
@@ -198,7 +203,7 @@
       ask.innerHTML = ""; ask.hidden = false;
       var q = el("p", "ep-q", s.q);
       var again = el("button", "ep-again", "↻"); again.type = "button"; again.setAttribute("aria-label", T("Hear it again", "دوباره بشنو"));
-      again.onclick = function () { say(s.say); };
+      again.onclick = function () { say(s.say, true); };
       q.appendChild(again);
       ask.appendChild(q);
       return q;
@@ -222,20 +227,24 @@
           row.querySelectorAll(".ep-opt").forEach(function (x) { x.classList.toggle("dim", x !== b); });
           b.classList.add("picked");
           if (o.right) { fx.ding(); b.classList.add("right"); }
-          if (o.retry) { fx.boing(); b.classList.add("shake"); }
-          (o.say ? say(o.say) : wait(400)).then(function () {
-            if (o.retry) {
-              off[s.id + "/" + o.id] = 1; busy = false; b.disabled = true; b.classList.add("tried");
+          if (o.retry) {  // not right: say why, and the other answers can be tapped at once
+            fx.boing(); b.classList.add("shake");
+            off[s.id + "/" + o.id] = 1; b.disabled = true; busy = false;
+            setTimeout(function () {
+              b.classList.add("tried");
               row.querySelectorAll(".ep-opt").forEach(function (x) { x.classList.remove("dim", "picked", "shake"); });
-              return;
-            }
+            }, 450);
+            if (o.say) say(o.say);
+            return;
+          }
+          (o.say ? say(o.say) : wait(400)).then(function () {
             if (o.go && byId[o.go] && !o.right) off[s.id + "/" + o.id] = 1;
             go(o.go || nextOf(s));
           });
         };
         row.appendChild(b);
       });
-      say(s.say);
+      say(s.say, true);
     }
 
     // ---- tap things in the picture (measure feet, inspect children)
@@ -251,7 +260,8 @@
           if (b.classList.contains("seen")) return;
           actx(); fx.pop();
           b.classList.add("seen"); b.disabled = true;
-          var tag = el("span", "ep-tag", sp.t); tag.style.left = sp.x + "%"; tag.style.top = sp.y + "%";
+          var tag = el("span", "ep-tag" + (s.spots.length > 3 && i % 2 ? " low" : ""), sp.t.split(" · ").join("\n"));
+          tag.style.left = sp.x + "%"; tag.style.top = sp.y + "%";
           layer.appendChild(tag);
           G.say(sp.t);
           if (--left === 0) {
@@ -262,7 +272,7 @@
         };
         layer.appendChild(b);
       });
-      say(s.say);
+      say(s.say, true);
     }
 
     // ---- drag cards onto people (tap a card, then a person, works too)
@@ -291,7 +301,7 @@
         return false;
       }
       function done() {
-        tray.remove();
+        tray.remove(); ask.innerHTML = "";
         if (s.reveal === "cause") causeArt(s.cause);
         wait(600).then(function () { return say(s.after); }).then(function () { return wait(400); }).then(function () {
           var b = el("button", "ep-go", T("Next", "بعدی") + " ▸"); b.type = "button";
@@ -321,20 +331,24 @@
             if (!moved) return;
             card.style.transform = "";
             var hit = -1;
-            targets.forEach(function (t, k) { var r = t.getBoundingClientRect(); if (u.clientX > r.left - 20 && u.clientX < r.right + 20 && u.clientY > r.top - 20 && u.clientY < r.bottom + 20) hit = k; });
+            var best = 1e9;  // the nearest circle, if the card was let go close enough to it
+            targets.forEach(function (t, k) {
+              var r = t.getBoundingClientRect(), dx = u.clientX - (r.left + r.width / 2), dy = u.clientY - (r.top + r.height / 2), d = Math.sqrt(dx * dx + dy * dy);
+              if (d < Math.max(r.width, 56) && d < best) { best = d; hit = k; }
+            });
             if (hit >= 0) place(card, hit);
             setTimeout(function () { card.classList.remove("sel"); if (chosen === card) chosen = null; }, 0);
           };
         };
       });
-      say(s.say);
+      say(s.say, true);
     }
 
     // the hidden cause, drawn over the picture: Age → bigger feet, Age → more years of reading
     function causeArt(c) {
       var svg = '<svg viewBox="0 0 100 56" class="ep-cause" aria-hidden="true">' +
-        '<path class="ep-arrow" d="M44 14 C34 22 26 30 20 41"/><path class="ep-arrow" d="M56 14 C66 22 74 30 80 41"/>' +
-        '<path class="ep-arrow" d="M17 36 l3 5 4-4"/><path class="ep-arrow" d="M76 37 l4 4 2-5"/></svg>';
+        '<path class="ep-arrow" d="M44 13 C34 18 26 24 21 30"/><path class="ep-arrow" d="M56 13 C66 18 74 24 79 30"/>' +
+        '<path class="ep-arrow" d="M18 26 l3 4 4-2"/><path class="ep-arrow" d="M75 28 l4 2 1-4"/></svg>';
       var art = el("div", "ep-causewrap"); art.innerHTML = svg;
       art.appendChild(el("span", "ep-node ep-top", c.top));
       art.appendChild(el("span", "ep-node ep-l", c.left));
