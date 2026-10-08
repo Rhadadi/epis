@@ -1,0 +1,730 @@
+{
+ "scenes": [
+  {
+   "id": "conv",
+   "label": "A long conversation",
+   "text": [
+    "Philosophy is a long conversation.",
+    "Each idea was invented to answer **a specific problem raised by a specific person**."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 26,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Why was this idea needed?",
+     "fa": {
+      "say": "چرا به این ایده نیاز بود؟"
+     }
+    },
+    {
+     "id": "b",
+     "who": "person3",
+     "x": 74,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "c",
+     "what": "book",
+     "x": 50,
+     "y": 80,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "یک گفت‌وگوی طولانی",
+    "text": [
+     "فلسفه یک گفت‌وگوی طولانی است.",
+     "هر ایده برای پاسخ به **مسئله‌ای مشخص که کسی مشخص مطرح کرده** ساخته شد."
+    ]
+   }
+  },
+  {
+   "id": "why",
+   "label": "Why history helps",
+   "text": "If you know *why* an idea was needed, you remember it. And you will not mistake a view that was refuted three hundred years ago for something fresh and obvious.",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Refuted 300 years ago!",
+     "fa": {
+      "say": "سیصد سال پیش رد شد!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "c",
+     "what": "clock",
+     "x": 24,
+     "y": 82,
+     "s": 0.8,
+     "anim": "wobble"
+    },
+    {
+     "id": "b",
+     "what": "bulb",
+     "x": 78,
+     "y": 70,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "چرا تاریخ کمک می‌کند",
+    "text": "اگر بدانید ایده‌ای *چرا* لازم بود، آن را به یاد می‌سپارید. و دیدگاهی را که سیصد سال پیش رد شده، تازه و بدیهی نمی‌پندارید."
+   }
+  },
+  {
+   "id": "xeno",
+   "label": "Xenophanes: opinion is allotted to all",
+   "text": "Already in the 6th century BCE, **Xenophanes** said that even someone who spoke the complete truth would not *know* it. But by seeking, in time, we discover better.",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person4",
+     "x": 34,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Opinion is allotted to all.",
+     "fa": {
+      "say": "گمان نصیبِ همه است."
+     }
+    },
+    {
+     "id": "b",
+     "who": "person2",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "…but seeking helps!",
+     "fa": {
+      "say": "…اما جست‌وجو کمک می‌کند!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "s",
+     "what": "sun",
+     "x": 86,
+     "y": 40,
+     "s": 0.9,
+     "anim": "spin"
+    }
+   ],
+   "fa": {
+    "label": "گزنوفانس: گمان نصیبِ همه است",
+    "text": "همان قرنِ ششمِ پیش از میلاد، **گزنوفانس** گفت حتی کسی که حقیقتِ کامل را بگوید آن را *نمی‌داند*. اما با جست‌وجو، با گذشتِ زمان، بهتر را پیدا می‌کنیم."
+   }
+  },
+  {
+   "id": "socrates",
+   "label": "Socrates asks",
+   "text": "**Socrates** wrote nothing. He asked: *What is courage? What is justice?* Then he drew out consequences until the answer contradicted itself.",
+   "bg": "town",
+   "actors": [
+    {
+     "id": "s",
+     "who": "person3",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "What is courage?",
+     "fa": {
+      "say": "شجاعت چیست؟"
+     }
+    },
+    {
+     "id": "t",
+     "who": "person2",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "wobble",
+     "say": "Hmm… I thought I knew.",
+     "fa": {
+      "say": "هوم… فکر می‌کردم می‌دانم."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "q",
+     "what": "question",
+     "x": 50,
+     "y": 60,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "سقراط می‌پرسد",
+    "text": "**سقراط** چیزی ننوشت. می‌پرسید: *شجاعت چیست؟ عدالت چیست؟* و پیامدها را بیرون می‌کشید تا پاسخ با خودش تناقض پیدا کند."
+   }
+  },
+  {
+   "id": "counter",
+   "label": "Test it with a counterexample",
+   "text": "Someone says “X is Y.” **Look for a case that is X but not Y, or Y but not X.** That is Socrates' method, and it still works.",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 24,
+     "y": 84,
+     "s": 1,
+     "anim": "wobble"
+    }
+   ],
+   "ask": {
+    "q": "Someone says “A teacher is someone who works at a school.” What would Socrates do?",
+    "fa": {
+     "q": "کسی می‌گوید «معلم کسی است که در مدرسه کار می‌کند». سقراط چه می‌کرد؟"
+    },
+    "options": [
+     {
+      "t": "Look for a counterexample: a school guard works there but is not a teacher.",
+      "ok": true,
+      "why": "A case that fits the definition's words but not the idea shows the definition is too wide.",
+      "fa": {
+       "t": "مثالِ نقض می‌جست: نگهبانِ مدرسه آنجا کار می‌کند اما معلم نیست.",
+       "why": "موردی که با واژه‌های تعریف جور است اما با مقصود نه، نشان می‌دهد تعریف زیادی گسترده است."
+      }
+     },
+     {
+      "t": "Agree, because it sounds right.",
+      "why": "Socrates never accepted a definition just because it sounded right.",
+      "fa": {
+       "t": "موافقت می‌کرد، چون درست به نظر می‌رسد.",
+       "why": "سقراط هیچ تعریفی را فقط چون درست به نظر می‌آمد نمی‌پذیرفت."
+      }
+     },
+     {
+      "t": "Say nothing and walk away.",
+      "why": "He stayed and asked more questions.",
+      "fa": {
+       "t": "چیزی نمی‌گفت و می‌رفت.",
+       "why": "او می‌ماند و پرسشِ بیشتری می‌کرد."
+      }
+     }
+    ]
+   },
+   "fa": {
+    "label": "با مثالِ نقض بیازمایید",
+    "text": "کسی می‌گوید «X همان Y است». **موردی را پیدا کنید که X است اما Y نیست، یا Y است اما X نیست.** این روشِ سقراط است و هنوز کار می‌کند."
+   }
+  },
+  {
+   "id": "east",
+   "label": "Four traditions, one question",
+   "text": "**India:** a *pramāṇa* is a reliable means of knowing, and schools argued about how many there are. **The Islamic world:** Ibn al-Haytham told us to attack every text from every side. **China:** Confucius said knowing is holding that you know what you know, and that you do not know what you do not.",
+   "bg": "sky",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person",
+     "x": 18,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Perception? Inference? Testimony?",
+     "fa": {
+      "say": "دیدن؟ استنتاج؟ گواهی؟"
+     }
+    },
+    {
+     "id": "b",
+     "who": "person2",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "Test everything.",
+     "fa": {
+      "say": "همه‌چیز را بیازما."
+     }
+    },
+    {
+     "id": "c",
+     "who": "person3",
+     "x": 82,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "Know what you know.",
+     "fa": {
+      "say": "بدان آنچه می‌دانی."
+     }
+    }
+   ],
+   "fa": {
+    "label": "چهار سنت، یک پرسش",
+    "text": "**هند:** *پرامانا* راهی قابل‌اعتماد برای دانستن است و مکتب‌ها بر سرِ تعدادش بحث داشتند. **جهانِ اسلام:** ابن‌هیثم گفت هر متنی را از هر سو بیازمایید. **چین:** کنفوسیوس گفت دانستن یعنی بدانی آنچه را می‌دانی و بدانی آنچه را نمی‌دانی."
+   }
+  },
+  {
+   "id": "descartes",
+   "label": "Descartes doubts everything",
+   "text": "**Descartes** wanted a foundation that could not be doubted. He doubted the senses, then even waking itself, then imagined an evil demon who deceives him about everything.",
+   "bg": "night",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 40,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "wobble",
+     "say": "What if I am dreaming?",
+     "fa": {
+      "say": "اگر خواب باشم چه؟"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "moon",
+     "x": 82,
+     "y": 34,
+     "s": 0.9,
+     "anim": "float"
+    },
+    {
+     "id": "q",
+     "what": "question",
+     "x": 66,
+     "y": 58,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "دکارت در همه‌چیز شک می‌کند",
+    "text": "**دکارت** پایه‌ای می‌خواست که نشود در آن شک کرد. در حواس شک کرد، بعد در خودِ بیداری، بعد دیوی فریبکار را تصور کرد که او را دربارهٔ همه‌چیز می‌فریبد."
+   }
+  },
+  {
+   "id": "cogito",
+   "label": "I think, therefore I am",
+   "text": "One thing the demon cannot touch: if I am being deceived, **I must exist** to be deceived. *Cogito, ergo sum.*",
+   "bg": "night",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop",
+     "say": "I think, therefore I am.",
+     "fa": {
+      "say": "می‌اندیشم، پس هستم."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "moon",
+     "x": 82,
+     "y": 34,
+     "s": 0.9,
+     "anim": "float"
+    },
+    {
+     "id": "b",
+     "what": "bulb",
+     "x": 70,
+     "y": 60,
+     "s": 0.9,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "می‌اندیشم، پس هستم",
+    "text": "یک چیز هست که دیو نمی‌تواند به آن دست بزند: اگر فریب می‌خورم، **باید وجود داشته باشم** تا فریب بخورم. *کوگیتو، ارگو سوم.*"
+   }
+  },
+  {
+   "id": "hume",
+   "label": "Hume: we never see the glue",
+   "text": "**Hume** noticed that when one billiard ball strikes another, we see motion, contact, motion, but **never the necessary connection**. It comes from a feeling of expectation built by habit.",
+   "bg": "room",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person3",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Where is the “must”?",
+     "fa": {
+      "say": "«باید» کجاست؟"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "b1",
+     "what": "dice",
+     "x": 56,
+     "y": 84,
+     "s": 0.7,
+     "anim": "hop"
+    },
+    {
+     "id": "b2",
+     "what": "dice",
+     "x": 76,
+     "y": 84,
+     "s": 0.7,
+     "anim": "bob"
+    },
+    {
+     "id": "ar",
+     "what": "arrow",
+     "x": 66,
+     "y": 62,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "هیوم: چسب را هرگز نمی‌بینیم",
+    "text": "**هیوم** دید که وقتی توپی به توپِ دیگر می‌خورد، حرکت و برخورد و حرکت را می‌بینیم اما **پیوندِ ضروری را هرگز**. آن از احساسِ انتظاری می‌آید که عادت ساخته."
+   }
+  },
+  {
+   "id": "kant",
+   "label": "Kant: the mind adds the frame",
+   "text": "**Kant** said reading Hume woke him from his dogmatic slumber. His answer: experience must fit the structure of our minds, with space, time and causality as the frame. *Thoughts without content are empty, intuitions without concepts are blind.*",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person4",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "point",
+     "say": "Senses give content. Mind gives form.",
+     "fa": {
+      "say": "حواس محتوا می‌دهند. ذهن شکل."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "w",
+     "what": "window",
+     "x": 24,
+     "y": 70,
+     "s": 1,
+     "anim": "none"
+    }
+   ],
+   "fa": {
+    "label": "کانت: ذهن قاب را می‌افزاید",
+    "text": "**کانت** گفت خواندنِ هیوم او را از خوابِ جزمی بیدار کرد. پاسخش: تجربه باید با ساختارِ ذهنِ ما جور باشد، با مکان و زمان و علیت به‌عنوان قاب. *فکرهای بی‌محتوا خالی‌اند، شهودهای بی‌مفهوم کورند.*"
+   }
+  },
+  {
+   "id": "popper",
+   "label": "Popper: a good theory takes a risk",
+   "text": "**Popper** said a theory is scientific if it **forbids** some possible observations. Einstein's prediction that starlight bends near the sun could have failed in 1919. A theory that explains *any* behaviour is a weakness.",
+   "bg": "sky",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person",
+     "x": 36,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point",
+     "say": "It could have been wrong!",
+     "fa": {
+      "say": "می‌توانست غلط درآید!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "s",
+     "what": "sun",
+     "x": 78,
+     "y": 36,
+     "s": 1,
+     "anim": "spin"
+    },
+    {
+     "id": "st",
+     "what": "star",
+     "x": 58,
+     "y": 24,
+     "s": 0.6,
+     "anim": "float"
+    },
+    {
+     "id": "c",
+     "what": "cross",
+     "x": 58,
+     "y": 60,
+     "s": 0.6,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "label": "پوپر: نظریهٔ خوب ریسک می‌کند",
+    "text": "**پوپر** گفت نظریه‌ای علمی است که برخی مشاهده‌های ممکن را **ممنوع** کند. پیش‌بینیِ اینشتین دربارهٔ خمیدگیِ نور ستاره کنارِ خورشید در ۱۹۱۹ می‌توانست شکست بخورد. نظریه‌ای که *هر* رفتاری را توضیح دهد ضعف دارد."
+   }
+  },
+  {
+   "id": "gettier",
+   "label": "Gettier: three pages, thirty years",
+   "text": "In 1963 **Edmund Gettier** published a three-page paper with two counterexamples to *knowledge = justified true belief*. Epistemologists then spent decades hunting for a fourth condition.",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 34,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "hop",
+     "say": "Justified, true… and still luck?",
+     "fa": {
+      "say": "موجه و درست… و باز هم شانس؟"
+     }
+    },
+    {
+     "id": "b",
+     "who": "person4",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "p",
+     "what": "book",
+     "x": 52,
+     "y": 84,
+     "s": 0.8,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "label": "گتیه: سه صفحه، سی سال",
+    "text": "در ۱۹۶۳ **ادموند گتیه** مقاله‌ای سه‌صفحه‌ای با دو مثالِ نقض بر *معرفت = باورِ صادقِ موجه* منتشر کرد. معرفت‌شناسان دهه‌ها دنبالِ شرطِ چهارم گشتند."
+   }
+  },
+  {
+   "id": "kuhn",
+   "label": "Kuhn: science grows in jumps",
+   "text": "**Kuhn** argued that science does not simply pile up. Long periods of *normal science* under one paradigm are broken by *revolutions*, from Ptolemy to Copernicus, from Newton to Einstein.",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person3",
+     "x": 32,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Normal science…",
+     "fa": {
+      "say": "علمِ عادی…"
+     }
+    },
+    {
+     "id": "b",
+     "who": "person4",
+     "x": 68,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "hop",
+     "say": "Revolution!",
+     "fa": {
+      "say": "انقلاب!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "s",
+     "what": "star",
+     "x": 50,
+     "y": 40,
+     "s": 0.7,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "label": "کوهن: علم جهشی رشد می‌کند",
+    "text": "**کوهن** استدلال کرد که علم فقط انباشته نمی‌شود. دوره‌های بلندِ *علمِ عادی* زیرِ یک پارادایم با *انقلاب‌ها* شکسته می‌شوند، از بطلمیوس به کوپرنیک، از نیوتن به اینشتین."
+   }
+  },
+  {
+   "id": "patterns",
+   "label": "Eight arguments that keep coming back",
+   "text": "Reason versus experience. The regress of justification. The skeptical challenge. Knowledge versus lucky belief. Relativism versus objectivity. The individual versus the community. The causal link we never see. The mind's own distortions.",
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "Spot them and the chapters connect.",
+     "fa": {
+      "say": "وقتی ببینیدشان فصل‌ها به هم وصل می‌شوند."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "c1",
+     "what": "arrow",
+     "x": 20,
+     "y": 80,
+     "s": 0.7,
+     "anim": "float"
+    },
+    {
+     "id": "c2",
+     "what": "arrow",
+     "x": 80,
+     "y": 80,
+     "s": 0.7,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "label": "هشت استدلالی که برمی‌گردند",
+    "text": "عقل در برابر تجربه. تسلسلِ توجیه. چالشِ شکاکانه. معرفت در برابر باورِ اتفاقیِ درست. نسبی‌گرایی در برابر عینیت. فرد در برابر جامعه. پیوندِ علّی که هرگز نمی‌بینیم. تحریف‌های خودِ ذهن."
+   }
+  },
+  {
+   "id": "go",
+   "label": "Now try it",
+   "text": "Next time you meet a big idea, ask: **what problem was it invented to answer, and who raised it?**",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "a",
+     "who": "person2",
+     "x": 24,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "b",
+     "who": "person3",
+     "x": 42,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "c",
+     "who": "person4",
+     "x": 60,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "d",
+     "who": "person",
+     "x": 80,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "wave"
+    }
+   ],
+   "links": [
+    {
+     "href": "#main",
+     "t": "Read the whole chapter ↓",
+     "fa": {
+      "t": "خواندنِ کاملِ فصل ↓"
+     }
+    },
+    {
+     "guide": "03-logic-and-arguments.html",
+     "t": "Next: Chapter 3, logic and arguments",
+     "fa": {
+      "t": "بعدی: فصل ۳، منطق و استدلال"
+     }
+    }
+   ],
+   "fa": {
+    "label": "حالا امتحان کنید",
+    "text": "دفعهٔ بعد که به ایده‌ای بزرگ رسیدید بپرسید: **برای پاسخ به چه مسئله‌ای ساخته شد و چه کسی آن را مطرح کرد؟**"
+   }
+  }
+ ]
+}
