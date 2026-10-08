@@ -6,8 +6,8 @@ a plain list of the scenes (what you get without JavaScript, and in print) plus 
 stage. Kids' units, Baloney Detector and the guide each expand their own special scenes (story, words, games, …)
 into ordinary scenes first and then call render().
 
-Scene: {id, bg, pic{src,srcset,alt}, actors[{id,who,x,y,s,face,anim,say,flip,z}], props[{id,what,x,y,s,anim,z}], label,
-        text (string or list), lines[{role,who,t,w[[word,b,e]…]}], list[], cards[{word,def,img,eg}], links[{t,href}],
+Scene: {title{big[],sub,go} (the ring-of-people title screen), pick{q,options[{t,sub,level}],skip} (the age question), id, bg, pic{src,srcset,alt}, actors[{id,who,x,y,s,face,anim,say,flip,z}], props[{id,what,x,y,s,anim,z}], label,
+        text (string or list), lines[{role,who,t,w[[word,b,e]…]}], list[], cards[{word,def,img,eg}], links[{t,sub,href | hrefs{explorers,investigators}}],
         ask{q,who,options[{t,ok,why,face}]}, game (id; the box is passed to render), audio[b,e], anchor, end, nostage, next}"""
 import html
 import json
@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 VOCAB = json.loads((ROOT / "assets" / "scenes" / "vocab.json").read_text(encoding="utf-8"))
-TEXT_KEYS = {"text", "label", "say", "q", "t", "why", "next", "list", "def", "word", "eg"}
+TEXT_KEYS = {"text", "label", "say", "q", "t", "why", "next", "list", "def", "word", "eg", "big", "sub", "go"}
 
 
 def esc(s):
@@ -94,7 +94,10 @@ def validate(scenes, need_text=True):
             oks = sum(1 for o in a.get("options", []) if o.get("ok"))
             if oks != 1:
                 errs.append(f"{w}: a question needs exactly one right option")
-        if need_text and not any(sc.get(k) for k in ("text", "lines", "list", "cards", "ask", "game", "links")):
+        pk = sc.get("pick")
+        if pk and len({o.get("level") for o in pk.get("options", [])}) != len(pk.get("options", [])):
+            errs.append(f"{w}: each option of a pick needs its own level")
+        if need_text and not any(sc.get(k) for k in ("text", "lines", "list", "cards", "ask", "game", "links", "title", "pick")):
             errs.append(f"{w}: nothing to read")
     return errs
 
@@ -102,6 +105,9 @@ def validate(scenes, need_text=True):
 def _li(sc):
     """One scene as plain HTML (no JavaScript, print)."""
     parts = []
+    if sc.get("title"):
+        t = sc["title"]
+        parts.append("<h2>" + " ".join(esc(x) for x in t.get("big", [])) + "</h2>" + (f'<p>{esc(t["sub"])}</p>' if t.get("sub") else ""))
     if sc.get("label"):
         parts.append(f'<p class="dlabel">{esc(sc["label"])}</p>')
     if sc.get("pic"):
@@ -117,10 +123,12 @@ def _li(sc):
         parts.append("<ul>" + "".join(f"<li>{rich(x)}</li>" for x in sc["list"]) + "</ul>")
     if sc.get("cards"):
         parts.append("<ul>" + "".join(f'<li><b>{esc(c["word"])}</b>: {rich(c["def"])}</li>' for c in sc["cards"]) + "</ul>")
+    if sc.get("pick"):
+        parts.append(f'<p><b>{esc(sc["pick"].get("q", ""))}</b></p><ul>' + "".join(f'<li>{esc(o["t"])} {esc(o.get("sub", ""))}</li>' for o in sc["pick"]["options"]) + "</ul>")
     if sc.get("ask"):
         parts.append(f'<p><b>{esc(sc["ask"].get("q", ""))}</b></p><ul>' + "".join(f'<li>{esc(o["t"])}</li>' for o in sc["ask"]["options"]) + "</ul>")
     if sc.get("links"):
-        parts.append("<ul>" + "".join(f'<li><a href="{esc(l["href"])}">{esc(l["t"])}</a></li>' for l in sc["links"]) + "</ul>")
+        parts.append("<ul>" + "".join(f'<li><a href="{esc(l.get("href") or l["hrefs"]["explorers"])}">{esc(l["t"])}</a> {esc(l.get("sub", ""))}</li>' for l in sc["links"]) + "</ul>")
     return parts
 
 
@@ -129,7 +137,8 @@ def render(scenes, boxes=None, ui=None, audio_src=None, attrs=""):
     boxes = boxes or {}
     lis = []
     for sc in scenes:
-        lis.append(f'<li data-scene="{esc(sc["id"])}">' + "".join(_li(sc)) + boxes.get(sc["id"], "") + "</li>")
+        anchor = f' id="{esc(sc["anchor"])}"' if sc.get("anchor") else ""  # so a link to #anchor works before the script runs
+        lis.append(f'<li data-scene="{esc(sc["id"])}"{anchor}>' + "".join(_li(sc)) + boxes.get(sc["id"], "") + "</li>")
     data = {"scenes": scenes, "ui": ui or {}}
     if audio_src:
         data["audio"] = {"src": audio_src}

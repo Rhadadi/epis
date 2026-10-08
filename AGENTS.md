@@ -12,6 +12,11 @@ This repository is *Mastering Epistemology*, a bilingual guide published at http
   and chapter pages (`scenes/chapters/NN.json`, a "this chapter in two minutes" deck before the unchanged chapter text) and the kids'
   units (`kids/src/<unit>/deck.<level>.json`). Decks only retell what the chapter says and cite nothing new. `tools/scenes/check.py` runs in
   `tools/deeper/check.sh`.
+- **Look of the kids' site and Baloney Detector** (white paper, black line, hand lettering, bottom bar, after ncase.me/trust):
+  `assets/games/paper.css` and `paper.js`, the shell is `safe_shell()` in `tools/site/build.py`. A child picks the age once (the age
+  scene of `kids/home.deck.json`, kept in `localStorage["epis-kids"].level`); pages that exist per age (`index.html` = Explorers,
+  `investigators.html`) send a child who chose the other age to the right file (`LEVEL_BOOT`) and have **no** Explorers/Investigators
+  switch. Title screens use the `title` scene (ring of tiny people, `Puppets.crowd`), the age question the `pick` scene.
 - **Branch:** `claude/epistemology-learning-guide-s6zuob`. Fetch and merge; never rebase or force-push. No pull
   request unless asked.
 - **Never edit** the narrated chapters (`guide/NN-*.md`, `guide/fa/`, audio). `python3 tools/site/frozen.py`

@@ -1,0 +1,189 @@
+{
+ "scenes": [
+  {
+   "id": "title",
+   "title": {
+    "big": [
+     "THE QUESTION",
+     "HOW DO YOU",
+     "KNOW?"
+    ],
+    "sub": "a thinking adventure · ages 7–14",
+    "go": "Play",
+    "fa": {
+     "big": [
+      "پرسشِ بزرگ",
+      "از کجا",
+      "می‌دانی؟"
+     ],
+     "sub": "یک ماجرای فکری · ۷ تا ۱۴ سال",
+     "go": "بازی"
+    }
+   }
+  },
+  {
+   "id": "age",
+   "anchor": "age",
+   "bg": "plain",
+   "pick": {
+    "q": "How old are you?",
+    "skip": true,
+    "options": [
+     {
+      "t": "7–10",
+      "sub": "Explorers",
+      "level": "explorers",
+      "fa": {
+       "t": "۷ تا ۱۰",
+       "sub": "کاوشگرها"
+      }
+     },
+     {
+      "t": "11–14",
+      "sub": "Investigators",
+      "level": "investigators",
+      "fa": {
+       "t": "۱۱ تا ۱۴",
+       "sub": "کارآگاه‌ها"
+      }
+     }
+    ],
+    "fa": {
+     "q": "چند سال داری؟"
+    }
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "wave"
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 70,
+     "y": 92,
+     "s": 1.1,
+     "face": "happy",
+     "anim": "bob",
+     "flip": true
+    }
+   ]
+  },
+  {
+   "id": "hello",
+   "label": "Meet the detectives",
+   "bg": "room",
+   "text": "I'm Hoopy. Let's find out how we know things!",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 14,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "How do you know?",
+     "fa": {
+      "say": "از کجا می‌دانی؟"
+     }
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 32,
+     "y": 92,
+     "s": 0.8,
+     "face": "surprised",
+     "anim": "hop",
+     "say": "Why? Why? Why?",
+     "fa": {
+      "say": "چرا؟ چرا؟ چرا؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 50,
+     "y": 92,
+     "s": 1.1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "I'm sure! …Am I?",
+     "fa": {
+      "say": "مطمئنم! …هستم؟"
+     }
+    },
+    {
+     "id": "grandma",
+     "who": "grandma",
+     "x": 68,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "say": "Let me tell you a story.",
+     "fa": {
+      "say": "بگذار یک قصه برایت بگویم."
+     }
+    },
+    {
+     "id": "hudhud",
+     "who": "hudhud",
+     "x": 87,
+     "y": 84,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "float",
+     "say": "What do you think?",
+     "fa": {
+      "say": "تو چه فکر می‌کنی؟"
+     }
+    }
+   ],
+   "fa": {
+    "label": "با کارآگاه‌ها آشنا شو",
+    "text": "من هدهدم. بیا با هم بفهمیم از کجا چیزها را می‌دانیم!"
+   }
+  },
+  {
+   "id": "menu",
+   "label": "Where to?",
+   "bg": "plain",
+   "nostage": true,
+   "nonext": true,
+   "auto": true,
+   "links": [
+    {
+     "t": "Picture dictionary",
+     "href": "words/",
+     "fa": {
+      "t": "واژه‌نامهٔ تصویری"
+     }
+    },
+    {
+     "t": "Book club",
+     "href": "books/",
+     "fa": {
+      "t": "باشگاهِ کتاب"
+     }
+    },
+    {
+     "t": "For grown-ups",
+     "href": "grownups/",
+     "fa": {
+      "t": "برای بزرگ‌ترها"
+     }
+    }
+   ],
+   "fa": {
+    "label": "کجا برویم؟"
+   }
+  }
+ ]
+}

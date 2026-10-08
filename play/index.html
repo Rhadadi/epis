@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Th01z/qnW3X/26nOa/9nA0VL5Yqt/m+WmeEGkSVR4t0='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'self'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EJQInzO3oVnDqXH9z/Q+/f0Xq4eq1urb9ntD4uEOyyU='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'self'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'">
 <meta name="referrer" content="no-referrer">
 <title>Baloney Detector</title>
 <meta name="description" content="Games for people who enjoy being wrong: spot the trick in the headline, the graph and the study.">
-<meta name="theme-color" content="#F6F3EC">
+<meta name="theme-color" content="#111111">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/icon-192.png">
 <link rel="manifest" href="../manifest.webmanifest">
@@ -16,32 +16,28 @@
 <link rel="stylesheet" href="../assets/site.css?v=9704b2068f">
 <link rel="stylesheet" href="../assets/games/games.css?v=da8a018d52">
 <link rel="stylesheet" href="../assets/scenes/scenes.css?v=fc810d9596">
-<link rel="stylesheet" href="../assets/play/play.css?v=b67c9a153e">
 
-<script>(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};var p=g("epistemology-theme")||"system",sh=g("epis-shade")||"";var k=p==="dark"||(p==="system"&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);if(sh==="sepia")k=false;if(sh==="black")k=true;d.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);if(sh)d.setAttribute("data-shade",sh);if(d.lang==="fa"||(g("epistemology-lang")==="fa"&&d.getAttribute("data-bilingual")!==null))d.setAttribute("data-lang","fa");try{var r=JSON.parse(g("epis-reader")||"{}");if(r.scale)d.style.setProperty("--read-scale",r.scale);var L=r.lead;if(typeof L==="number")L=L<1.7?"compact":L>1.8?"airy":"";if(L&&L!=="normal")d.setAttribute("data-lead",L);if(r.width)d.setAttribute("data-width",r.width);if(r.font)d.setAttribute("data-font",r.font)}catch(e){}if(g("epis-focus")==="1"&&/\/guide\/\d\d-[^\/.]+(\.html)?$/.test(location.pathname))d.setAttribute("data-focus","")})();</script>
+<link rel="stylesheet" href="../assets/games/paper.css?v=c7b0aed221">
+<script>(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};var p=g("epistemology-theme")||"system",sh=g("epis-shade")||"";var k=p==="dark"||(p==="system"&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches);if(sh==="sepia")k=false;if(sh==="black")k=true;d.setAttribute("data-theme",k?"dark":"light");d.setAttribute("data-theme-preference",p);if(sh)d.setAttribute("data-shade",sh);if(d.lang==="fa"||(g("epistemology-lang")==="fa"&&d.getAttribute("data-bilingual")!==null))d.setAttribute("data-lang","fa");try{var r=JSON.parse(g("epis-reader")||"{}");if(r.scale)d.style.setProperty("--read-scale",r.scale);var L=r.lead;if(typeof L==="number")L=L<1.7?"compact":L>1.8?"airy":"";if(L&&L!=="normal")d.setAttribute("data-lead",L);if(r.width)d.setAttribute("data-width",r.width);if(r.font)d.setAttribute("data-font",r.font)}catch(e){}if(g("epis-focus")==="1"&&/\/guide\/\d\d-[^\/.]+(\.html)?$/.test(location.pathname))d.setAttribute("data-focus","")})();;document.documentElement.setAttribute("data-theme","light")</script>
+
 </head>
-<body>
+<body class="paper">
 <a class="skip" href="#main">Skip to content</a>
-<header class="bar solid kbar">
-  <a class="brand kbrand" href="../play/" aria-label="Baloney Detector, home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="9" fill="#FF4F8B" stroke="currentColor" stroke-width="1.3"/><circle cx="13.5" cy="13.5" r="6.2" fill="#fff" stroke="currentColor" stroke-width="1.3"/><path d="M11 13.5h5M13.5 11v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M18.2 18.2l6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span><b>Baloney Detector</b><small>Games for people who enjoy being wrong</small></span></a>
-  <span class="kspacer"></span>
-  <a class="tbtn lang" id="lang" href="../fa/play/" hreflang="fa" lang="fa" data-set-site-lang="fa" title="فارسی">فا</a><button class="tbtn" id="theme" type="button" aria-label="Light or dark" title="Light or dark"><i class="ico" aria-hidden="true"></i></button>
-  
-</header>
-
-<main id="main" class="pmain phome"><header class="phero has-pic"><div class="phero-pic"><img class="" src="../assets/play/art/play-hero-800.webp" srcset="../assets/play/art/play-hero-800.webp 800w, ../assets/play/art/play-hero-1440.webp 1440w" sizes="(max-width: 1100px) 100vw, 1080px" alt="" decoding="async"></div><div class="phero-t"><h1>Baloney Detector</h1><p class="ptag">Games for people who enjoy being wrong.</p></div></header><ul class="ggrid"><li class="gcard c-pink"><a href="correlation-detective/"><span class="gcard-art pic"><img class="" src="../assets/play/art/play-correlation-800.webp" srcset="../assets/play/art/play-correlation-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>Correlation Detective</b><span>Coffee drinkers live longer. Did the coffee do it?</span><small>5–8 minutes</small><em class="pgo">Play</em></a></li><li class="gcard c-blue soon"><div><span class="gcard-art pic"><img class="" src="../assets/play/art/play-probability-800.webp" srcset="../assets/play/art/play-probability-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>Probability Is Weird</b><span>Make bets against the machine.</span><em class="psoon">Coming soon</em></div></li><li class="gcard c-yellow soon"><div><span class="gcard-art pic"><img class="" src="../assets/play/art/play-charts-800.webp" srcset="../assets/play/art/play-charts-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>Chart Crimes</b><span>Find what&#x27;s wrong with the graph.</span><em class="psoon">Coming soon</em></div></li><li class="gcard c-green soon"><div><span class="gcard-art pic"><img class="" src="../assets/play/art/play-trust-800.webp" srcset="../assets/play/art/play-trust-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>The Trust Game</b><span>Cheat or cooperate? Watch trust grow, or fall apart.</span><em class="psoon">Coming soon</em></div></li><li class="gcard c-purple soon"><div><span class="gcard-art pic"><img class="" src="../assets/play/art/play-sunkcost-800.webp" srcset="../assets/play/art/play-sunkcost-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>The Sunk Cost Casino</b><span>How long will you keep paying to win back what&#x27;s gone?</span><em class="psoon">Coming soon</em></div></li><li class="gcard c-orange soon"><div><span class="gcard-art pic"><img class="" src="../assets/play/art/play-fallforit-800.webp" srcset="../assets/play/art/play-fallforit-800.webp 800w" sizes="(max-width: 700px) 100vw, 360px" alt="" loading="lazy" decoding="async"></span><b>Would You Fall For It?</b><span>Spot the trick in the headline.</span><em class="psoon">Coming soon</em></div></li></ul><p class="pnote">Every headline in these games is made up, to practise on. Nothing you do here is collected. <a href="../">The ideas behind the games: the guide</a></p></main>
-<footer class="foot kfoot">
-  <div class="wrap">
-    <div>
-      <p>Baloney Detector is the games corner of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: what you play stays on this device.</p>
-      <p>Every headline in these games is made up, to practise on.</p>
-    </div>
-  </div>
-  <div class="wrap legal"><a href="../">The guide</a><span aria-hidden="true">·</span><a href="../kids/">For children</a><span aria-hidden="true">·</span><a href="../privacy.html#games">Privacy</a><span aria-hidden="true">·</span><a href="../credits.html">Credits</a></div>
-</footer>
+<main id="main" class="pdeck"><h1 class="sr-h">Baloney Detector</h1><section class="deck" data-deck data-unit="play-home"><ol class="dlist"><li data-scene="title"><h2>THE BALONEY DETECTOR</h2><p>games for people who enjoy being wrong</p></li><li data-scene="hello"><p>Someone says it with a straight face. <b>Is it true?</b></p></li><li data-scene="menu"><p class="dlabel">Pick a game</p><p>Every headline here is made up, to practise on. Nothing you do is collected.</p><p>Coming soon: Probability Is Weird · Chart Crimes · The Trust Game · The Sunk Cost Casino · Would You Fall For It?</p><ul><li><a href="correlation-detective/">Correlation Detective</a> Coffee drinkers live longer. Did the coffee do it?</li></ul></li></ol><script type="application/json" class="dscript">{"scenes":[{"id":"title","title":{"big":["THE","BALONEY","DETECTOR"],"sub":"games for people who enjoy being wrong","go":"Play"}},{"id":"hello","bg":"desk","text":"Someone says it with a straight face. **Is it true?**","actors":[{"id":"dog","who":"dog","x":50,"y":92,"s":1.15,"face":"thinking","anim":"bob","say":"Let's check the evidence."}],"props":[{"id":"news","what":"news","x":24,"y":88,"s":1,"anim":"wobble"},{"id":"mag","what":"magnifier","x":76,"y":86,"s":1,"anim":"float"}]},{"id":"menu","label":"Pick a game","bg":"plain","nostage":true,"nonext":true,"text":["Every headline here is made up, to practise on. Nothing you do is collected.","Coming soon: Probability Is Weird · Chart Crimes · The Trust Game · The Sunk Cost Casino · Would You Fall For It?"],"links":[{"t":"Correlation Detective","sub":"Coffee drinkers live longer. Did the coffee do it?","href":"correlation-detective/"}]}],"ui":{"next":"Next","back":"Back","again":"Start again"}}</script></section></main>
+<div class="tbar">
+  <div class="tl"><a class="tb tb-home" href="../play/" title="Baloney Detector" aria-label="Baloney Detector, home"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5"/></svg></a>
+    <button class="tb" id="tmenu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="tpanel"><span class="i-open"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><span class="i-close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></div>
+  <div class="tprog" id="tprog" aria-live="off"></div>
+  <div class="tr"><button class="tb tsound" id="tsound" type="button" aria-pressed="true" hidden><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h4L13 5v14l-5-4.5H4z" fill="currentColor"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg><span>ON</span></button><a class="tlang" id="lang" href="../fa/play/" hreflang="fa" lang="fa" data-set-site-lang="fa" title="فارسی">فا</a></div>
+</div>
+<nav class="tpanel" id="tpanel" aria-label="Menu" hidden>
+  <div class="tpanel-in"><a href="../play/">All games</a><a href="../kids/">For children</a><a href="../">The guide</a><a href="../fa/play/" hreflang="fa" lang="fa" data-set-site-lang="fa">فارسی</a><div class="tfoot"><div class="tabout"><p>Baloney Detector is the games corner of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: what you play stays on this device.</p>
+<p>Every headline in these games is made up, to practise on.</p></div><p class="tlegal"><a href="../privacy.html#games">Privacy</a><a href="../credits.html">Credits</a></p></div></div>
+</nav>
 <script src="../assets/site.js?v=4f95691f59" defer></script>
 <script src="../assets/games/core.js?v=58417a198d" defer></script>
+<script src="../assets/games/paper.js?v=872919c355" defer></script>
 
-
+<script src="../assets/scenes/puppets.js?v=d562ac8920" defer></script><script src="../assets/scenes/deck.js?v=ccd417e318" defer></script>
 </body>
 </html>

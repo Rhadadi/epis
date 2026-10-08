@@ -1,0 +1,79 @@
+{
+ "scenes": [
+  {
+   "id": "title",
+   "title": {
+    "big": [
+     "THE",
+     "BALONEY",
+     "DETECTOR"
+    ],
+    "sub": "games for people who enjoy being wrong",
+    "go": "Play",
+    "fa": {
+     "big": [
+      "بازیِ",
+      "چرندسنج"
+     ],
+     "sub": "بازی برای کسانی که از اشتباه کردن خوششان می‌آید",
+     "go": "بازی"
+    }
+   }
+  },
+  {
+   "id": "hello",
+   "bg": "desk",
+   "text": "Someone says it with a straight face. **Is it true?**",
+   "actors": [
+    {
+     "id": "dog",
+     "who": "dog",
+     "x": 50,
+     "y": 92,
+     "s": 1.15,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "Let's check the evidence.",
+     "fa": {
+      "say": "بیا شواهد را بررسی کنیم."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "news",
+     "what": "news",
+     "x": 24,
+     "y": 88,
+     "s": 1,
+     "anim": "wobble"
+    },
+    {
+     "id": "mag",
+     "what": "magnifier",
+     "x": 76,
+     "y": 86,
+     "s": 1,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": "یکی با قیافهٔ جدی می‌گوید. **راست است؟**"
+   }
+  },
+  {
+   "id": "menu",
+   "label": "Pick a game",
+   "bg": "plain",
+   "nostage": true,
+   "nonext": true,
+   "auto": true,
+   "text": "Every headline here is made up, to practise on. Nothing you do is collected.",
+   "links": [],
+   "fa": {
+    "label": "یک بازی انتخاب کن",
+    "text": "همهٔ تیترهای این‌جا ساختگی‌اند، برای تمرین. هیچ چیزی جمع نمی‌شود."
+   }
+  }
+ ]
+}

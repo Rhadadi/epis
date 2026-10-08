@@ -17,6 +17,10 @@ Explorers use three: *What? How do you know? How sure?* / *چه؟ از کجا م
 
 ## The two levels
 
+A child chooses the age **once**, on the home screen (the "How old are you?" scene), and the choice is remembered on the device. Every
+page after that is the child's own level: the quest map links go to the right file, and a page of the other level sends the child on.
+No page shows an Explorers/Investigators switch; the small age badge in the bottom bar goes back to the question.
+
 | | Explorers (7–10) | Investigators (11–14) |
 |---|---|---|
 | Reading level (English) | Flesch–Kincaid grade ≤ 4 | Flesch–Kincaid grade ≤ 7 |

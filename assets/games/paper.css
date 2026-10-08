@@ -1,0 +1,216 @@
+/* Paper: the look of the kids' site and Baloney Detector (html[data-games]), after ncase.me/trust by Nicky Case:
+   white page, black line, hand lettering, outlined buttons with hand-drawn corners, a black bar at the bottom.
+   Loaded last, so it re-colours everything games.css, kids.css and play.css drew. */
+html[data-games]{
+  --k-bg:#fff;--k-card:#fff;--k-ink:#222;--k-ink-2:#666;--k-line:rgba(0,0,0,.22);
+  --k-orange-t:#FFF1E6;--k-blue-t:#EAF2FF;--k-green-t:#E9F8F0;--k-purple-t:#F3EEFF;--k-pink-t:#FFEDF3;--k-yellow-t:#FFF8DD;
+  --hand:'Patrick Hand','Atkinson Hyperlegible',system-ui,sans-serif;
+  --k-display:var(--hand);--k-font:var(--hand);
+  --hb:255px 15px 225px 15px/15px 225px 15px 255px;   /* the hand-drawn corners of a button */
+  --hp:16px 9px 14px 10px/10px 14px 9px 16px;          /* … and of a panel */
+  color-scheme:light}
+html[data-games][lang="fa"]{--hand:'Vazirmatn',Tahoma,sans-serif;--k-display:var(--hand);--k-font:var(--hand)}
+html[data-games] body.paper{background:#fff;color:#222;font-family:var(--hand);font-size:21px;line-height:1.4;padding-bottom:64px;margin:0}
+html[lang="fa"][data-games] body.paper{font-size:18px;line-height:1.9}
+body.paper a{color:#222}
+body.paper h1,body.paper h2,body.paper h3{font-family:var(--hand);font-weight:400;letter-spacing:.02em;color:#222}
+html[lang="fa"] body.paper h1,html[lang="fa"] body.paper h2,html[lang="fa"] body.paper h3{font-weight:800;letter-spacing:0}
+body.paper .prose{font-family:var(--hand);color:#222}
+body.paper .skip{position:absolute}
+.sr-h{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---- the bar at the bottom */
+.tbar{position:fixed;inset:auto 0 0 0;height:56px;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 10px;background:#111;color:#fff}
+body.paper .tbar a,body.paper .tbar button{color:#fff}
+body.paper .tbar a.tage:hover,body.paper .tbar a.tlang:hover{color:#111}
+.tl,.tr{display:flex;align-items:center;gap:4px;flex:none;min-width:0}
+.tb{display:inline-flex;align-items:center;gap:6px;height:40px;min-width:40px;justify-content:center;padding:0 8px;border:0;border-radius:10px;background:none;cursor:pointer;font:400 1.05rem var(--hand);letter-spacing:.06em;text-decoration:none}
+.tb:hover{background:#333}
+.tb:focus-visible,.tlang:focus-visible,.tage:focus-visible,.ddot:focus-visible{outline:3px solid #FFC92E;outline-offset:2px}
+.tb .i-close,#tmenu[aria-expanded="true"] .i-open{display:none}
+#tmenu[aria-expanded="true"] .i-close{display:inline}
+.tsound[hidden]{display:none}
+.tsound[aria-pressed="false"] svg{opacity:.5}
+.tage,.tlang{display:inline-flex;align-items:center;height:30px;padding:0 12px;border:2px solid #fff;border-radius:var(--hb);font:400 1rem var(--hand);letter-spacing:.06em;color:#fff;text-decoration:none}
+html[lang="fa"] .tage,html[lang="fa"] .tlang{font-size:.9rem;letter-spacing:0}
+.tage:hover,.tlang:hover{background:#fff;color:#111}
+.tprog{flex:1;display:flex;justify-content:center;align-items:center;min-width:0;overflow:hidden}
+.tprog .ddots{display:flex;gap:7px;flex-wrap:nowrap;justify-content:center;flex:0 1 auto}
+.tprog .ddot{flex:none;width:13px;height:13px;border:2px solid #fff;background:none}
+.tprog .ddot.done{background:rgba(255,255,255,.45)}
+.tprog .ddot.on{background:#fff;border-color:#fff;transform:scale(1.2)}
+.dcount{display:none;font:400 1.05rem var(--hand);letter-spacing:.1em;color:#fff}
+.tprog.many .ddots{gap:5px}.tprog.many .ddot{width:9px;height:9px;border-width:1.5px}
+@media (max-width:700px){.tprog.many .ddots{display:none}.tprog.many .dcount{display:block}.tprog .ddot{width:11px;height:11px}.tprog .ddots{gap:5px}}
+@media (max-width:420px){.tage{display:none}.tprog .ddots{gap:4px}}
+/* the menu panel */
+.tpanel{position:fixed;inset:0 0 56px 0;z-index:55;background:#fff;overflow:auto;display:flex;justify-content:center;padding:28px 18px}
+.tpanel[hidden]{display:none}
+.tpanel-in{width:min(100%,520px);display:flex;flex-direction:column;gap:6px;text-align:center}
+.tpanel-in > a{font:400 clamp(1.6rem,6vw,2.2rem)/1.2 var(--hand);padding:8px 0;color:#222;text-decoration:none;border-bottom:2px solid transparent}
+html[lang="fa"] .tpanel-in > a{font-weight:700;font-size:1.4rem}
+.tpanel-in > a:hover{border-bottom-color:#222}
+.tfoot{margin-top:24px;font-size:.9rem;color:#666;line-height:1.5}
+.tfoot p{margin:.5em 0}
+.tlegal{display:flex;gap:18px;justify-content:center}.tlegal a{color:#666}
+body.tmenu-open{overflow:hidden}
+
+/* ---- scene decks, on paper */
+.pdeck{min-height:calc(100dvh - 56px);display:flex;flex-direction:column;justify-content:center;max-width:920px;margin:0 auto;padding:10px 16px 18px}
+.pdeck > .deck{margin:0;flex:none}
+body.paper .deck{--d-ink:#222;--d-ink2:#666;--d-card:#fff;--d-line:rgba(0,0,0,.25);--d-acc:#E5484D;--d-display:var(--hand);--d-font:var(--hand)}
+body.paper .dstage{--aw:13%;--pw:11%;border:0;border-radius:0;background:#fff;overflow:visible}
+body.paper .dstage.haspic{border:2.5px solid #222;border-radius:var(--hp);overflow:hidden;--aw:18%}
+@media (max-width:640px){body.paper .dstage{--aw:21%;--pw:15%}body.paper .dstage.haspic{--aw:23%}}
+body.paper .dstage .bgsvg{opacity:.55}
+body.paper .dwrap{gap:6px}
+body.paper .dlabel{color:#666}
+body.paper .dtext{font-size:clamp(1.35rem,4vw,1.9rem);line-height:1.3}
+html[lang="fa"] body.paper .dtext{font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.9}
+body.paper .bub{border-color:#222;box-shadow:none;background:#fff}
+body.paper .bub::after{border-top-color:#222}
+body.paper .dnav{background:none;color:#222;padding:6px 0 0;justify-content:center;gap:18px;border-radius:0}
+body.paper .dnav::before{display:none}
+body.paper .dbtn{background:none;color:#222;border:2.5px solid #222;border-radius:var(--hb);padding:6px 26px;font-size:1.3rem;box-shadow:none}
+html[lang="fa"] body.paper .dbtn{font-size:1.05rem}
+body.paper .dbtn:hover:not(:disabled){background:#222;color:#fff}
+body.paper .dnext{min-width:8.5em;flex:none !important}
+body.paper .dnext.pulse,body.paper .dnext.last:not(:disabled){animation:dpulsep 1.2s ease-in-out infinite}
+@keyframes dpulsep{0%,100%{box-shadow:0 0 0 0 rgba(0,0,0,.25)}50%{box-shadow:0 0 0 9px rgba(0,0,0,0)}}
+body.paper .dlisten{border-color:#222;color:#222}
+body.paper .dwhy{border:2px dashed #222;border-radius:var(--hp);background:#fff;font-size:1.1rem}
+body.paper .dwhy.yes{border-color:#1FB57A}body.paper .dwhy.no{border-color:#E5484D}
+body.paper .cs-choice.right{border-color:#1FB57A;background:#E9F8F0}body.paper .cs-choice.wrong{border-color:#E5484D;background:#FFEDED}
+body.paper .dcard{border:2px solid #222;border-radius:var(--hp);box-shadow:none;background:#fff}
+body.paper .dcard b{color:#222;font-weight:400}
+body.paper .dcard img{border-radius:8px}
+/* the list of links of a scene becomes a column of big buttons */
+body.paper .dlinks{display:flex;flex-direction:column;gap:12px;align-items:center;margin:14px 0 0}
+body.paper .dlinks li::before{content:none}
+body.paper .dlinks a{display:inline-flex;flex-direction:column;align-items:center;min-width:min(100%,19em);padding:8px 26px;border:2.5px solid #222;border-radius:var(--hb);text-decoration:none;font:400 1.4rem/1.15 var(--hand);color:#222}
+html[lang="fa"] body.paper .dlinks a{font-size:1.1rem;font-weight:700}
+body.paper .dlinks small{font-family:var(--hand);font-weight:400}
+body.paper .dlinks a:hover{background:#222;color:#fff}
+body.paper .dlinks small{font-size:.72em;color:#777;margin-top:2px}
+body.paper .dlinks a:hover small{color:#ccc}
+/* the age question */
+.dpick:empty{display:none}
+.dpick-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+body.paper .dchoice{display:flex;flex-direction:column;align-items:center;gap:0;padding:12px 30px;min-width:9em}
+body.paper .dchoice b{font-weight:400;font-size:2.2rem;line-height:1.1}
+html[lang="fa"] body.paper .dchoice b{font-weight:800;font-size:1.7rem}
+body.paper .dchoice small{font-size:.95rem;letter-spacing:.1em;text-transform:uppercase}
+html[lang="fa"] body.paper .dchoice small{letter-spacing:0;text-transform:none}
+body.paper .dchoice[aria-pressed="true"]{background:#222;color:#fff}
+/* the title screen: a ring of tiny people, the name of the game in the middle */
+.dttl{display:none}
+body.paper .dwrap.is-title .dttl{display:block;position:fixed;inset:0 0 56px 0;z-index:30;background:#fff;overflow:hidden}
+.dttl-art{position:absolute;inset:0}
+.dttl-art .crowd{display:block}
+.dttl-art .cw{animation:dcrowd 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes dcrowd{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-4px) rotate(3deg)}}
+@media (prefers-reduced-motion:reduce){.dttl-art .cw{animation:none}}
+.dttl-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;pointer-events:none}
+.dttl-in > *{pointer-events:auto}
+.dttl-h{margin:0 0 6px;display:flex;flex-direction:column;align-items:center;font-weight:400;text-transform:uppercase;color:#222;line-height:1;letter-spacing:.04em;background:#fff;padding:12px 18px;border-radius:50%/40%}
+.dttl-h .tl{display:block}
+.dttl-h .tl0{font-size:clamp(1.5rem,5.5vw,2.5rem)}.dttl-h .tl1{font-size:clamp(2.6rem,12vw,5.8rem)}.dttl-h .tl2{font-size:clamp(1.8rem,7.4vw,3.6rem)}
+html[lang="fa"] .dttl-h{text-transform:none;letter-spacing:0;font-weight:800;line-height:1.35}
+html[lang="fa"] .dttl-h .tl0{font-size:clamp(1.1rem,4.4vw,1.8rem)}html[lang="fa"] .dttl-h .tl1{font-size:clamp(2.2rem,10vw,4.6rem)}html[lang="fa"] .dttl-h .tl2{font-size:clamp(1.4rem,6vw,2.8rem)}
+.dttl-sub{margin:0 0 22px;font-size:1rem;color:#8a8a8a;max-width:24em;background:#fff;padding:0 8px}
+html[lang="fa"] .dttl-sub{font-size:.9rem}
+.dplay .arr{display:inline-block;transition:transform .2s}.dplay:hover .arr{transform:translateX(4px)}
+html[dir="rtl"] .dplay:hover .arr{transform:translateX(-4px)}
+
+/* ---- pages that are not decks */
+.pmain,.kmain{max-width:760px;margin:0 auto;padding:28px 18px 40px;background:none}
+.pmain h1,.kmain h1{font-size:clamp(2rem,7vw,3.2rem);line-height:1.1;margin:.2em 0 .3em}
+.kband,.khead.kband{background:none;color:#222;box-shadow:none;border-radius:0;padding:0;overflow:visible}
+html[data-kids] .kband h1{color:#222;padding-inline-end:0}
+.kband .kicker,.kicker,.pkick{color:#666;letter-spacing:.14em;text-transform:uppercase;font-family:var(--hand);font-size:1rem}
+html[lang="fa"] .kicker,html[lang="fa"] .pkick{letter-spacing:0;text-transform:none}
+.kband .hudhud{display:none}
+
+/* ---- games on paper (case engine, sorter, quiz, sandbox) */
+body.paper b,body.paper strong{font-weight:400}
+html[lang="fa"] body.paper b,html[lang="fa"] body.paper strong{font-weight:700}
+body.paper .prose b,body.paper .dtext b{background:linear-gradient(transparent 62%,rgba(255,201,46,.65) 62%)}
+.pgame{max-width:760px}
+body.paper .kgame{margin:6px 0}
+body.paper .kblk{background:none;box-shadow:none;border-radius:0;padding:0;margin:0}
+body.paper .kblk-k{display:none}
+body.paper .cs,body.paper .kg-card{font-family:var(--hand)}
+body.paper .cs-headline,body.paper .sim-headline{border:2.5px solid #222;box-shadow:none;border-radius:var(--hp);font-weight:400;background:#fff}
+html[lang="fa"] body.paper .cs-headline,html[lang="fa"] body.paper .sim-headline{font-weight:800}
+body.paper .sim-headline.same{border-color:#1FB57A;box-shadow:none}
+body.paper .cs-clip{background:#fff;border:2.5px solid #222;border-radius:var(--hp);box-shadow:none;transform:none}
+body.paper .cs-mast{font-family:var(--hand);font-weight:400;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;border-bottom:2px solid #222;color:#666}
+html[lang="fa"] body.paper .cs-mast{letter-spacing:0;text-transform:none;font-weight:700}
+body.paper .cs-pic{border:2px solid #222;border-radius:10px}
+body.paper .cs-top{font-weight:400;font-size:1rem}
+body.paper .cs-label{background:none;border:2px solid #222;border-radius:var(--hb);padding:0 12px}
+body.paper .cs-q,body.paper .dq{font:400 1.5rem/1.2 var(--hand)}
+html[lang="fa"] body.paper .cs-q,html[lang="fa"] body.paper .dq{font:700 1.1rem/1.7 var(--hand)}
+body.paper .cs-choice,body.paper .kg-choice,body.paper .kg-bin,body.paper .sim-tog,body.paper .sim-run,body.paper .cs-go,body.paper .kg-next{
+  background:#fff;color:#222 !important;border:2.5px solid #222;border-radius:var(--hb);box-shadow:none;font:400 1.2rem/1.25 var(--hand);text-transform:none}
+html[lang="fa"] body.paper .cs-choice,html[lang="fa"] body.paper .kg-choice,html[lang="fa"] body.paper .kg-bin,html[lang="fa"] body.paper .sim-tog,html[lang="fa"] body.paper .sim-run,html[lang="fa"] body.paper .cs-go,html[lang="fa"] body.paper .kg-next{font:700 1rem/1.7 var(--hand)}
+body.paper .cs-choice{padding:10px 20px}
+body.paper .cs-choice:hover:not(:disabled),body.paper .kg-choice:hover:not(:disabled),body.paper .kg-bin:hover:not(:disabled),body.paper .cs-go:hover,body.paper .kg-next:hover{background:#222;color:#fff !important;border-color:#222}
+body.paper .cs-choice.current{border-style:dashed}
+body.paper .cs-choice.picked,body.paper .sim-tog[aria-pressed="true"]{background:#222;color:#fff !important;border-color:#222;box-shadow:none}
+body.paper .cs-tag{color:#777}
+body.paper .cs-choice.picked .cs-tag{display:none}
+body.paper .kg-choice.right,body.paper .cs-choice.right{background:#E9F8F0;border-color:#1FB57A;box-shadow:none}
+body.paper .kg-choice.wrong,body.paper .cs-choice.wrong{background:#FFEDED;border-color:#E5484D;box-shadow:none}
+body.paper .kg-bin.right{outline:3px solid #1FB57A;outline-offset:3px}body.paper .kg-bin.wrong{outline:3px solid #E5484D;outline-offset:3px}
+body.paper .kg-bin small{font-family:var(--hand)}
+body.paper .cs-clue,body.paper .cs-surprise,body.paper .cs-sandbox,body.paper .cs-verdict,body.paper .cs-ideas,body.paper .cs-done,body.paper .kg-done,body.paper .kg-feedback,body.paper .sim,body.paper .kg-card{
+  background:#fff;border:2px dashed #222;border-radius:var(--hp);box-shadow:none}
+body.paper .cs-clue-k{color:#666;letter-spacing:.14em;text-transform:uppercase;font-weight:400;font-size:.95rem}
+html[lang="fa"] body.paper .cs-clue-k{letter-spacing:0;text-transform:none;font-weight:700}
+body.paper .cs-verdict.good,body.paper .kg-feedback.yes{border:2.5px solid #1FB57A}
+body.paper .cs-verdict.catch,body.paper .kg-feedback.no{border:2.5px solid #E5484D}
+body.paper .cs-verdict > b,body.paper .cs-idea b,body.paper .kg-feedback b{color:#222;font-weight:400}
+html[lang="fa"] body.paper .cs-verdict > b,html[lang="fa"] body.paper .cs-idea b{font-weight:800}
+body.paper .cs-idea{border-inline-start:4px solid #222}
+body.paper .cs-path li{background:#fff;border:1.5px solid #222;border-radius:10px}
+body.paper .cs-path li.moved{box-shadow:none;border-width:3px}
+body.paper .cs-done .kg-star,body.paper .kg-done .kg-star{color:#FFC92E;text-shadow:none}
+body.paper .cs-mascot{border:2.5px solid #222;box-shadow:none}
+body.paper .cs-bar-t{background:#eee;border:1.5px solid #222}
+body.paper .cs-bar-t i{background:#222}body.paper .cs-bar.hi .cs-bar-t i{background:#E5484D}
+body.paper .sim{border-style:solid}
+body.paper .sim-svg .lane{fill:#fff;stroke:#222;stroke-width:1.5;stroke-dasharray:5 5}
+body.paper .sim-ctl{background:#fff;border:2px solid #222;border-radius:var(--hp)}
+body.paper .sim-ctl output{color:#222}
+body.paper .sim-tog::before{border:2px solid #222}
+body.paper .sim-tog[aria-pressed="true"]::before{background:#fff;color:#222;border-color:#fff}
+body.paper .cs-stage{border:0}
+body.paper .cs-clip.compact{box-shadow:none}
+body.paper input[type="range"]{accent-color:#222}
+body.paper .cs-clip .cs-headline{border:0}
+.plearn{margin:34px 0 10px;text-align:center}
+.plearn h2{font-size:1.5rem;margin:0 0 .4em}
+.plearn ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;align-items:center}
+.plearn a{font-size:1.1rem;color:#222;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+
+/* ---- the plain pages: dictionary, book club, notes for grown-ups */
+body.paper .kpage-pic{display:none}
+body.paper .khead{text-align:center;margin-bottom:18px}
+body.paper .khead p{color:#666}
+body.paper .kword,body.paper .kbook{background:#fff;border:2.5px solid #222;border-radius:var(--hp);box-shadow:none;border-top-width:2.5px}
+body.paper .kword .kw{color:#222;font-weight:400;font-size:1.5rem}
+html[lang="fa"] body.paper .kword .kw{font-weight:800;font-size:1.2rem}
+body.paper .kword .kword-img{border-radius:8px;border:2px solid #222}
+body.paper .kbook .kicker{background:none;border:0;padding:0}
+body.paper .kbook .kby{color:#666}
+body.paper .kbook-find a,body.paper .kgrownups a,body.paper .prose a{color:#222;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+body.paper .kmore a{border:2.5px solid #222;border-radius:var(--hb);box-shadow:none;background:#fff}
+body.paper .kgrown{text-align:center}
+body.paper .kleave > div{border:2.5px solid #222;border-radius:var(--hp);box-shadow:none;background:#fff;font-family:var(--hand)}
+body.paper .kleave button{border:2.5px solid #222;border-radius:var(--hb);background:#fff;color:#222;font:400 1.15rem var(--hand);box-shadow:none}
+body.paper .kleave button.go{background:#222;color:#fff}
+body.paper .kpager a{border:2.5px solid #222;border-radius:var(--hb);box-shadow:none;background:#fff;color:#222}
+body.paper .kword{padding:10px 12px}
+body.paper .kwords-all{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+body.paper .kword .kd{font-size:.95rem;line-height:1.3}

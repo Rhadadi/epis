@@ -115,18 +115,24 @@
     var ask = el("div", "dask");
     var gameSlot = el("div", "dgame");
     scene.appendChild(text); scene.appendChild(ask); scene.appendChild(gameSlot);
+    var paper = document.body.classList.contains("paper"), tprog = document.getElementById("tprog"), tsound = document.getElementById("tsound");
+    var ttl = el("div", "dttl"), pickBox = el("div", "dpick");
     var nav = el("nav", "dnav"); nav.setAttribute("aria-label", ui.nav || T("Scenes", "صحنه‌ها"));
     var back = el("button", "dbtn dback", ui.back || T("Back", "قبلی")); back.type = "button";
     var dots = el("div", "ddots"); dots.setAttribute("role", "tablist");
     var next = el("button", "dbtn dnext", ui.next || T("Next", "بعدی")); next.type = "button";
-    nav.appendChild(back); nav.appendChild(dots); nav.appendChild(next);
-    wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(listen); wrap.appendChild(scene); wrap.appendChild(nav);
+    var count = el("span", "dcount");
+    if (paper && tprog) { tprog.innerHTML = ""; tprog.appendChild(dots); tprog.appendChild(count); tprog.classList.toggle("many", n > 12); root.classList.add("tbdeck"); }
+    else nav.appendChild(dots);
+    nav.insertBefore(back, nav.firstChild); nav.appendChild(next);
+    scene.appendChild(pickBox);
+    wrap.appendChild(ttl); wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(listen); wrap.appendChild(scene); wrap.appendChild(nav);
     root.appendChild(wrap);
 
     var dotEls = scenes.map(function (s, i) {
       var d = el("button", "ddot"); d.type = "button";
       d.setAttribute("aria-label", (ui.scene || T("Scene", "صحنه")) + " " + N(i + 1) + " / " + N(n));
-      d.onclick = function () { go(i); };
+      d.onclick = function () { go(i, { noskip: true }); };
       dots.appendChild(d); return d;
     });
 
@@ -143,14 +149,34 @@
       if (t >= segEnd - .05) { audio.pause(); listen.setAttribute("aria-pressed", "false"); setListenText(false); words.forEach(function (w) { w.classList.remove("now"); }); return; }
       if (!audio.paused) rafId = requestAnimationFrame(tick);
     }
-    listen.onclick = function () {
-      var sc = scenes[cur]; if (!sc.audio) return;
+    function playScene(sc) {
+      if (!sc.audio) return;
       if (!audio) { audio = new Audio(data.audio.src); audio.preload = "none"; audio.addEventListener("play", function () { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(tick); }); }
-      if (!audio.paused) { stopAudio(); return; }
       segEnd = sc.audio[1];
       if (audio.currentTime < sc.audio[0] - .2 || audio.currentTime > sc.audio[1]) audio.currentTime = sc.audio[0];
-      audio.play(); listen.setAttribute("aria-pressed", "true"); setListenText(true);
+      var pr = audio.play();
+      if (pr && pr.catch) pr.catch(function () { listen.setAttribute("aria-pressed", "false"); setListenText(false); });  // the browser wants a tap first
+      listen.setAttribute("aria-pressed", "true"); setListenText(true);
+    }
+    listen.onclick = function () {
+      var sc = scenes[cur]; if (!sc.audio) return;
+      if (audio && !audio.paused) { stopAudio(); return; }
+      playScene(sc);
     };
+    // the sound switch of the bottom bar (paper pages): on = each scene reads itself aloud
+    var sound = G.state.sound !== false;
+    function soundBtn() {
+      if (!tsound) return;
+      tsound.setAttribute("aria-pressed", sound ? "true" : "false");
+      tsound.querySelector("span").textContent = sound ? T("ON", "روشن") : T("OFF", "خاموش");
+    }
+    if (paper && tsound && data.audio) {
+      tsound.hidden = false; soundBtn();
+      tsound.onclick = function () {
+        sound = !sound; G.state.sound = sound; G.save(); soundBtn();
+        if (!sound) stopAudio(); else if (scenes[cur] && scenes[cur].audio) playScene(scenes[cur]);
+      };
+    }
 
     // ---- text, question, game, end
     function showText(sc) {
@@ -187,9 +213,55 @@
       }
       if (sc.links) {
         var nl = el("ul", "dl dlinks");
-        sc.links.forEach(function (l) { var li = el("li"), a = el("a", "", l.t); a.href = l.href; li.appendChild(a); nl.appendChild(li); });
+        sc.links.forEach(function (l) {
+          var li = el("li"), a = el("a", "", l.t); a.href = l.hrefs ? (l.hrefs[G.state.level] || l.hrefs.explorers) : l.href;
+          if (l.hrefs) a.setAttribute("data-hrefs", JSON.stringify(l.hrefs));
+          if (l.sub) a.appendChild(el("small", "", l.sub));
+          li.appendChild(a); nl.appendChild(li);
+        });
         text.appendChild(nl);
       }
+    }
+    function showTitle(sc) {
+      ttl.innerHTML = "";
+      wrap.classList.toggle("is-title", !!sc.title);
+      if (!sc.title) return;
+      var t = sc.title, box = el("div", "dttl-in");
+      var h = el("h2", "dttl-h");
+      (t.big || []).forEach(function (line, k) { h.appendChild(el("span", "tl tl" + k, line)); });
+      box.appendChild(h);
+      if (t.sub) box.appendChild(el("p", "dttl-sub", t.sub));
+      var go1 = el("button", "dbtn dplay", (t.go || T("Play", "بازی")) + " "); go1.type = "button";
+      go1.appendChild(el("span", "arr", FA ? "←" : "→"));
+      go1.onclick = function () { go(cur + 1, { dir: 1 }); };
+      box.appendChild(go1);
+      var art = el("div", "dttl-art"); ttl.appendChild(art); ttl.appendChild(box);
+      var draw = function () { var r = ttl.getBoundingClientRect(); if (r.width) art.innerHTML = P.crowd(Math.round(r.width), Math.round(r.height), 11); };
+      redraw = draw; draw(); requestAnimationFrame(draw);
+    }
+    var redraw = null, rt = 0;
+    window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { if (redraw && wrap.classList.contains("is-title")) redraw(); }, 150); });
+    function applyLevel() {
+      document.querySelectorAll("a[data-hrefs]").forEach(function (a) { try { var h = JSON.parse(a.getAttribute("data-hrefs")); a.href = h[G.state.level] || h.explorers; } catch (e) { /* ignore */ } });
+      document.querySelectorAll(".tage").forEach(function (a) { a.textContent = G.state.level === "investigators" ? N("11–14") : G.state.level ? N("7–10") : N("7–14"); });
+    }
+    function showPick(sc) {
+      pickBox.innerHTML = "";
+      if (!sc.pick) return;
+      if (sc.pick.q) pickBox.appendChild(el("p", "dq", sc.pick.q));
+      var row = el("div", "dpick-row"); row.setAttribute("role", "group");
+      sc.pick.options.forEach(function (o) {
+        var b = el("button", "dbtn dchoice"); b.type = "button"; b.appendChild(el("b", "", o.t)); if (o.sub) b.appendChild(el("small", "", o.sub));
+        b.setAttribute("aria-pressed", G.state.level === o.level ? "true" : "false");
+        b.onclick = function () {
+          G.state.level = o.level; G.save(); applyLevel();
+          row.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+          document.dispatchEvent(new CustomEvent("games:level"));
+          go(cur + 1, { dir: 1, noskip: true });
+        };
+        row.appendChild(b);
+      });
+      pickBox.appendChild(row);
     }
     function showAsk(sc) {
       ask.innerHTML = "";
@@ -244,20 +316,22 @@
       opts = opts || {};
       i = Math.max(0, Math.min(n - 1, i));
       if (i === cur) return;
+      if (scenes[i].pick && scenes[i].pick.skip && G.state.level && !opts.noskip && i + (opts.dir || 1) >= 0 && i + (opts.dir || 1) < n) { return go(i + (opts.dir || 1), opts); }
       var first = cur < 0;
       stopAudio();
       var sc = scenes[i];
       cur = i;
       st.set(sc, first);
       label.textContent = sc.label || ""; label.hidden = !sc.label;
-      showText(sc); showAsk(sc); showGame(sc);
-      listen.hidden = !sc.audio; setListenText(false);
+      showText(sc); showAsk(sc); showGame(sc); showTitle(sc); showPick(sc);
+      listen.hidden = !sc.audio || (paper && !!tsound); setListenText(false);
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
-      stage.hidden = !!sc.nostage; label.classList.toggle("over", false);
+      stage.hidden = !!sc.nostage || !!sc.title; label.classList.toggle("over", false);
+      count.textContent = N(i + 1) + " / " + N(n);
       dotEls.forEach(function (d, k) { d.classList.toggle("on", k === i); d.classList.toggle("done", k < i); d.setAttribute("aria-current", k === i ? "step" : "false"); });
       nav.style.setProperty("--p", n > 1 ? (100 * i / (n - 1)).toFixed(1) + "%" : "100%");
       back.disabled = i === 0;
-      next.disabled = false;
+      next.disabled = false; next.hidden = !!sc.title || !!sc.nonext; back.hidden = !!sc.title;
       next.classList.remove("pulse");
       next.textContent = i === n - 1 ? (ui.again || T("Start again", "دوباره از اول")) : (sc.next || ui.next || T("Next", "بعدی"));
       next.classList.toggle("last", i === n - 1);
@@ -265,28 +339,29 @@
       if (!first && !opts.quiet) { scene.focus({ preventScroll: true }); root.scrollIntoView({ block: "start", behavior: G.reduced() ? "auto" : "smooth" }); }
       if (history.replaceState && !opts.quiet) { try { history.replaceState(null, "", "#scene-" + (i + 1)); } catch (e) { /* ignore */ } }
     }
-    next.onclick = function () { if (cur === n - 1) { go(0); } else go(cur + 1); };
-    back.onclick = function () { go(cur - 1); };
+    next.onclick = function () { if (cur === n - 1) { go(0, { noskip: true }); } else go(cur + 1, { dir: 1 }); };
+    back.onclick = function () { go(cur - 1, { dir: -1 }); };
     var dir = FA ? -1 : 1;
     root.addEventListener("keydown", function (e) {
       if (e.target.closest && e.target.closest("input, textarea, select")) return;
-      if (e.key === "ArrowRight") { go(cur + dir); e.preventDefault(); }
-      if (e.key === "ArrowLeft") { go(cur - dir); e.preventDefault(); }
+      if (e.key === "ArrowRight") { go(cur + dir, { dir: dir }); e.preventDefault(); }
+      if (e.key === "ArrowLeft") { go(cur - dir, { dir: -dir }); e.preventDefault(); }
     });
     var sx = null;
     wrap.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
     wrap.addEventListener("touchend", function (e) {
       if (sx === null) return;
       var dx = e.changedTouches[0].clientX - sx; sx = null;
-      if (Math.abs(dx) > 70 && !(e.target.closest && e.target.closest(".dgame, .dask"))) go(cur + (dx < 0 ? dir : -dir));
+      if (Math.abs(dx) > 70 && !(e.target.closest && e.target.closest(".dgame, .dask"))) go(cur + (dx < 0 ? dir : -dir), { dir: dx < 0 ? dir : -dir });
     }, { passive: true });
     function fromHash() {
       var h = location.hash.replace("#", ""), m = /^scene-(\d+)$/.exec(h);
       if (m) { go(+m[1] - 1, { quiet: true }); return true; }
-      for (var k = 0; k < n; k++) if (scenes[k].anchor === h) { go(k); return true; }
+      for (var k = 0; k < n; k++) if (scenes[k].anchor === h) { go(k, { noskip: true }); return true; }
       return false;
     }
     window.addEventListener("hashchange", fromHash);
+    applyLevel();
     if (!fromHash()) go(0, { quiet: true });
     root.deck = { go: go, count: n };
   }

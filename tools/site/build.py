@@ -605,10 +605,10 @@ def chapter_menu(root):
 
 
 def shell(*, root, title, desc, body, current="", hero_img=None, extra_head="", bar="solid", reader=False, focus=False,
-          alt=None, bilingual=False, chapter_nav="", extra_scripts="", kids=False, safe=""):
+          alt=None, bilingual=False, chapter_nav="", extra_scripts="", kids=False, safe="", levels=None):
     if kids or safe:  # the children's and games sections have their own shell: no sign-in, notes, AI or adult search
         return safe_shell(section=safe or "kids", root=root, title=title, desc=desc, body=body, current=current,
-                          extra_head=extra_head, alt=alt, extra_scripts=extra_scripts)
+                          extra_head=extra_head, alt=alt, extra_scripts=extra_scripts, levels=levels)
     h = home(root)
     if "data-deck" in body:  # scene decks (assets/scenes/): their styles, characters and stage code
         extra_head = (f'<link rel="stylesheet" href="{av(root, "games/games.css")}"><link rel="stylesheet" href="{av(root, "scenes/scenes.css")}">' + extra_head)
@@ -708,43 +708,63 @@ def kids_shell(**kw):
     return safe_shell(section="kids", **kw)
 
 
-def safe_shell(*, section, root, title, desc, body, current="", extra_head="", alt=None, extra_scripts=""):
-    """The shell of a page in the children's section (kids/) or the games section (play/, Baloney Detector): the
-    site's head, theme and fonts, a simple header and a small footer. It loads no account, notes, AI or learning
-    scripts (so nothing signs anyone in or sends anything anywhere), and a content-security policy lets the page
-    load nothing but this site's own files. Games run on assets/games/core.js, which keeps progress in this
-    browser only, under the section's own storage key."""
+PAPER_BOOT = BOOT + ';document.documentElement.setAttribute("data-theme","light")'  # these pages are always white paper
+LEVEL_BOOT = ('(function(){try{var h=document.documentElement,p=h.getAttribute("data-lvl"),s=JSON.parse(localStorage.getItem("epis-kids")||"{}"),l=s.level,a=l&&h.getAttribute("data-lvl-"+l);'
+              'if(p&&a&&l!==p)location.replace(a+location.hash)}catch(e){}})();')
+BAR_ICONS = {
+    "home": '<path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5"/>',
+    "menu": '<path d="M4 7h16M4 12h16M4 17h16"/>',
+    "close": '<path d="m6 6 12 12M18 6 6 18"/>',
+    "sound": '<path d="M4 9.5h4L13 5v14l-5-4.5H4z" fill="currentColor"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/>',
+}
+
+
+def bar_icon(name):
+    return f'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{BAR_ICONS[name]}</svg>'
+
+
+def safe_shell(*, section, root, title, desc, body, current="", extra_head="", alt=None, extra_scripts="", levels=None):
+    """The shell of a page in the children's section (kids/) or the games section (play/, Baloney Detector): white paper, no
+    header, and a black bar at the bottom (home, menu, progress, sound, age, language), after ncase.me/trust. It loads no
+    account, notes, AI or learning scripts (so nothing signs anyone in or sends anything anywhere), and a content-security
+    policy lets the page load nothing but this site's own files. Games run on assets/games/core.js, which keeps progress in
+    this browser only, under the section's own storage key. levels: for a page that exists once per age group, its own
+    level and the file names of both ({"this": "explorers", "explorers": "index.html", "investigators": "investigators.html"});
+    a child who chose the other age is sent there before the page paints."""
     h = home(root)
-    here = ' aria-current="page"'
     if section == "kids":
         k = f"{h}kids/"
-        nav = [("quests", k, "map", L("Quests", "ماجراها")), ("words", f"{k}words/", "grid", L("Words", "واژه‌ها")),
-               ("books", f"{k}books/", "book", L("Books", "کتاب‌ها")), ("grownups", f"{k}grownups/", "user", L("Grown-ups", "بزرگ‌ترها"))]
-        name, tagline = L("How Do You Know?", "از کجا می‌دانی؟"), L("Thinking adventures for ages 7–14", "ماجراهای فکری برای ۷ تا ۱۴ ساله‌ها")
-        logo, sheet, script, foot = KIDS_LOGO, "kids/kids.css", "kids/kids.js", kids_footer(root)
-        marks, nav_label = ' data-kids data-store="epis-kids"', L("Kids' site", "سایتِ بچه‌ها")
+        name = L("How Do You Know?", "از کجا می‌دانی؟")
+        marks = ' data-kids data-store="epis-kids"'
+        menu_links = [(k, L("Start", "شروع")), (f"{k}#age", L("Change my age", "عوض کردن سن")), (f"{k}words/", L("Picture dictionary", "واژه‌نامهٔ تصویری")),
+                      (f"{k}books/", L("Book club", "باشگاهِ کتاب")), (f"{k}grownups/", L("For grown-ups", "برای بزرگ‌ترها")),
+                      (h, L("The grown-up guide", "راهنمای بزرگ‌سالان"))]
+        foot_html = kids_footer(root)
+        age = f'<a class="tage" href="{k}#age" title="{L("Change my age", "عوض کردن سن")}">{L("7–14", "۷–۱۴")}</a>'
     else:
         k = f"{h}play/"
-        nav = []
-        name, tagline = L("Baloney Detector", "چرندسنج"), L("Games for people who enjoy being wrong", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید")
-        logo, sheet, script, foot = PLAY_LOGO, "play/play.css", "", play_footer(root)
-        marks, nav_label = ' data-play data-store="epis-play"', L("Games", "بازی‌ها")
-    links = "".join(f'<a href="{href}"{here if key == current else ""} title="{label}">{icon(ic)}<span>{label}</span></a>'
-                    for key, href, ic, label in nav)
-    lang_btn = (f'<a class="tbtn lang" id="lang" href="{alt}" hreflang="{L("fa", "en")}" lang="{L("fa", "en")}" '
+        name = L("Baloney Detector", "چرندسنج")
+        marks = ' data-play data-store="epis-play"'
+        menu_links = [(k, L("All games", "همهٔ بازی‌ها")), (f"{h}kids/", L("For children", "برای بچه‌ها")), (h, L("The guide", "راهنما"))]
+        foot_html = play_footer(root)
+        age = ""
+    legal = [(f"{h}privacy.html#{'children' if section == 'kids' else 'games'}", L("Privacy", "حریم خصوصی")), (f"{h}credits.html", L("Credits", "منابع"))]
+    mlinks = "".join(f'<a href="{href}">{label}</a>' for href, label in menu_links)
+    if alt:
+        mlinks += f'<a href="{alt}" hreflang="{L("fa", "en")}" lang="{L("fa", "en")}" data-set-site-lang="{L("fa", "en")}">{L("فارسی", "English")}</a>'
+    legal_links = "".join(f'<a href="{href}">{label}</a>' for href, label in legal)
+    lang_btn = (f'<a class="tlang" id="lang" href="{alt}" hreflang="{L("fa", "en")}" lang="{L("fa", "en")}" '
                 f'data-set-site-lang="{L("fa", "en")}" title="{L("فارسی", "English")}">{L("فا", "EN")}</a>') if alt else ""
     alt_link = f'<link rel="alternate" hreflang="{L("fa", "en")}" href="{alt}">' if alt else ""
     attrs = (' lang="fa" dir="rtl" data-lang="fa"' if LANG == "fa" else ' lang="en"') + marks
-    boot_hash = base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
-    csp = (f"default-src 'self'; script-src 'self' 'sha256-{boot_hash}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
+    lvl_boot = ""
+    if levels:
+        attrs += (f' data-lvl="{levels["this"]}" data-lvl-explorers="{levels["explorers"]}" data-lvl-investigators="{levels["investigators"]}"')
+        lvl_boot = f"<script>{LEVEL_BOOT}</script>"
+    hashes = " ".join(f"'sha256-{base64.b64encode(hashlib.sha256(x.encode()).digest()).decode()}'" for x in ([PAPER_BOOT] + ([LEVEL_BOOT] if levels else [])))
+    csp = (f"default-src 'self'; script-src 'self' {hashes}; style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
            "media-src 'self'; connect-src 'self'; font-src 'self'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'")
     full_title = title if title == name else f"{title} · {name}"
-    menu = (f'<button class="tbtn" id="menu" type="button" aria-label="{L("Menu", "فهرست")}" aria-expanded="false" aria-controls="mnav">{icon("menu")}</button>'
-            if nav else "")
-    mnav = (f'<nav class="mnav" id="mnav" aria-label="{L("Menu", "فهرست")}" hidden>{links}\n  '
-            + (f'<span class="sep"></span><a href="{alt}" data-set-site-lang="{L("fa", "en")}" lang="{L("fa", "en")}">{icon("globe")}<span>{L("فارسی", "English")}</span></a>' if alt else "")
-            + '</nav>') if nav else ""
-    nav_html = f'<nav class="site-nav" aria-label="{nav_label}">{links}</nav>' if nav else '<span class="kspacer"></span>'
     return f"""<!doctype html>
 <html{attrs} data-theme="light" data-games>
 <head>
@@ -754,7 +774,7 @@ def safe_shell(*, section, root, title, desc, body, current="", extra_head="", a
 <meta name="referrer" content="no-referrer">
 <title>{esc(full_title)}</title>
 <meta name="description" content="{attr(desc)}">
-<meta name="theme-color" content="#F6F3EC">
+<meta name="theme-color" content="#111111">
 <link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{root}assets/icon-192.png">
 <link rel="manifest" href="{root}manifest.webmanifest">
@@ -763,24 +783,27 @@ def safe_shell(*, section, root, title, desc, body, current="", extra_head="", a
 <link rel="stylesheet" href="{av(root, "site.css")}">
 <link rel="stylesheet" href="{av(root, "games/games.css")}">
 <link rel="stylesheet" href="{av(root, "scenes/scenes.css")}">
-<link rel="stylesheet" href="{av(root, sheet)}">
 {extra_head}
-<script>{BOOT}</script>
+<link rel="stylesheet" href="{av(root, "games/paper.css")}">
+<script>{PAPER_BOOT}</script>
+{lvl_boot}
 </head>
-<body>
+<body class="paper">
 <a class="skip" href="#main">{L("Skip to content", "رفتن به متن")}</a>
-<header class="bar solid kbar">
-  <a class="brand kbrand" href="{k}" aria-label="{name}, {L("home", "صفحهٔ نخست")}">{logo}<span><b>{name}</b><small>{tagline}</small></span></a>
-  {nav_html}
-  {lang_btn}<button class="tbtn" id="theme" type="button" aria-label="{L("Light or dark", "روشن یا تاریک")}" title="{L("Light or dark", "روشن یا تاریک")}"><i class="ico" aria-hidden="true"></i></button>
-  {menu}
-</header>
-{mnav}
 {body}
-{foot}
+<div class="tbar">
+  <div class="tl"><a class="tb tb-home" href="{k}" title="{name}" aria-label="{name}, {L("home", "صفحهٔ نخست")}">{bar_icon("home")}</a>
+    <button class="tb" id="tmenu" type="button" aria-label="{L("Menu", "فهرست")}" aria-expanded="false" aria-controls="tpanel"><span class="i-open">{bar_icon("menu")}</span><span class="i-close">{bar_icon("close")}</span></button></div>
+  <div class="tprog" id="tprog" aria-live="off"></div>
+  <div class="tr">{age}<button class="tb tsound" id="tsound" type="button" aria-pressed="true" hidden>{bar_icon("sound")}<span>{L("ON", "روشن")}</span></button>{lang_btn}</div>
+</div>
+<nav class="tpanel" id="tpanel" aria-label="{L("Menu", "فهرست")}" hidden>
+  <div class="tpanel-in">{mlinks}<div class="tfoot">{foot_html}<p class="tlegal">{legal_links}</p></div></div>
+</nav>
 <script src="{av(root, "site.js")}" defer></script>
 <script src="{av(root, "games/core.js")}" defer></script>
-{f'<script src="{av(root, script)}" defer></script>' if script else ""}
+<script src="{av(root, "games/paper.js")}" defer></script>
+{f'<script src="{av(root, "kids/kids.js")}" defer></script>' if section == "kids" else ""}
 {extra_scripts}
 </body>
 </html>
@@ -793,18 +816,8 @@ KIDS_LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16
 
 
 def kids_footer(root):
-    h = home(root)
-    return f"""<footer class="foot kfoot">
-  <div class="wrap">
-    <div>
-      <p>{L("How Do You Know? is the children's part of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: your stars stay on this device.",
-            "«از کجا می‌دانی؟» بخشِ کودکانِ «تسلط بر معرفت‌شناسی» است. بی‌ثبت‌نام، بی‌تبلیغ، و چیزی جمع نمی‌شود: ستاره‌هایت فقط روی همین دستگاه می‌ماند.")}</p>
-      <p>{L("The pictures are made with AI and checked by people; the old stories are retold from public-domain originals; the voices are synthetic.",
-            "تصویرها با هوشِ مصنوعی ساخته و به دستِ آدم‌ها وارسی شده‌اند؛ قصه‌های قدیمی از متن‌های آزادِ قدیمی بازگو شده‌اند؛ صداها ساختگی‌اند.")}</p>
-    </div>
-  </div>
-  <div class="wrap legal"><a href="{h}kids/grownups/">{L("For grown-ups", "برای بزرگ‌ترها")}</a><span aria-hidden="true">·</span><a href="{h}privacy.html#children">{L("Privacy", "حریم خصوصی")}</a><span aria-hidden="true">·</span><a href="{h}credits.html">{L("Credits", "منابع")}</a><span aria-hidden="true">·</span><a href="{h}">{L("The grown-up guide", "راهنمای بزرگ‌سالان")}</a></div>
-</footer>"""
+    return (f"""<div class="tabout"><p>{L("How Do You Know? is the children's part of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: your stars stay on this device.", "«از کجا می‌دانی؟» بخشِ کودکانِ «تسلط بر معرفت‌شناسی» است. بی‌ثبت‌نام، بی‌تبلیغ، و چیزی جمع نمی‌شود: ستاره‌هایت فقط روی همین دستگاه می‌ماند.")}</p>
+<p>{L("The pictures are made with AI and checked by people; the old stories are retold from public-domain originals; the voices are synthetic.", "تصویرها با هوشِ مصنوعی ساخته و به دستِ آدم‌ها وارسی شده‌اند؛ قصه‌های قدیمی از متن‌های آزادِ قدیمی بازگو شده‌اند؛ صداها ساختگی‌اند.")}</p></div>""")
 
 
 PLAY_LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="9" fill="#FF4F8B" stroke="currentColor" stroke-width="1.3"/>'
@@ -813,17 +826,9 @@ PLAY_LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" widt
 
 
 def play_footer(root):
-    h = home(root)
-    return f"""<footer class="foot kfoot">
-  <div class="wrap">
-    <div>
-      <p>{L("Baloney Detector is the games corner of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: what you play stays on this device.",
-            "«چرندسنج» گوشهٔ بازیِ «تسلط بر معرفت‌شناسی» است. بی‌ثبت‌نام، بی‌تبلیغ، و چیزی جمع نمی‌شود: هرچه بازی می‌کنید روی همین دستگاه می‌ماند.")}</p>
-      <p>{L("Every headline in these games is made up, to practise on.", "همهٔ تیترهای این بازی‌ها ساختگی‌اند، برای تمرین.")}</p>
-    </div>
-  </div>
-  <div class="wrap legal"><a href="{h}">{L("The guide", "راهنما")}</a><span aria-hidden="true">·</span><a href="{h}kids/">{L("For children", "برای بچه‌ها")}</a><span aria-hidden="true">·</span><a href="{h}privacy.html#games">{L("Privacy", "حریم خصوصی")}</a><span aria-hidden="true">·</span><a href="{h}credits.html">{L("Credits", "منابع")}</a></div>
-</footer>"""
+    return (f"""<div class="tabout"><p>{L("Baloney Detector is the games corner of <i>Mastering Epistemology</i>. No sign-in, no adverts, nothing collected: what you play stays on this device.", "«چرندسنج» گوشهٔ بازیِ «تسلط بر معرفت‌شناسی» است. بی‌ثبت‌نام، بی‌تبلیغ، و چیزی جمع نمی‌شود: هرچه بازی می‌کنید روی همین دستگاه می‌ماند.")}</p>
+<p>{L("Every headline in these games is made up, to practise on.", "همهٔ تیترهای این بازی‌ها ساختگی‌اند، برای تمرین.")}</p></div>""")
+
 
 def footer(root):
     h = home(root)

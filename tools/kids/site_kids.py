@@ -15,6 +15,11 @@ import kidslib as K
 
 ASSETS_KIDS = K.ROOT / "assets" / "kids"
 LEVEL_FILE = {"explorers": "index.html", "investigators": "investigators.html"}
+
+
+def LEVELS_OF(level):
+    """The page's own level and where both levels live, for the shell (a child who chose the other age is sent there)."""
+    return {"this": level, "explorers": "./", "investigators": "investigators.html"}
 SCRIPTS = {"case": "games/case.js", "sorter": "kids/games/sorter.js", "quiz": "kids/games/quiz.js",
            "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js")}
 
@@ -100,15 +105,13 @@ def build(b, art, md):
                                  attrs=f'data-unit="{uid}" data-level="{level}" data-game="deck"')
             lesson = render_lesson(b, md, text, uid, level, words, set()) if deck is None else ""
             story_html = render_story(b, uid, meta, st, sync, root) if deck is None else ""
-            switch = level_switch(b, level)
             pager = unit_pager(b, prev_u, next_u, level, lang)
-            body = (f'<main id="main" class="kmain kunit q{quest["n"]}{" kdeckpage" if deck else ""}"><header class="khead kband">{hudhud(root)}'
-                    f'<p class="kicker">{L("Quest", "ماجرای")} {num(quest["n"])} · {esc(quest["title"])} · {L("Unit", "درس")} {num(u["n"])}</p>'
-                    f'<h1>{esc(title_u)}</h1>{switch}'
-                    f'<p class="kstars" data-unit="{uid}" data-level="{level}" aria-live="polite"></p></header>'
-                    + (deck if deck else f'{opener}{story_html}<div class="klesson prose">{lesson}</div>') +
-                    f'<p class="kgrown"><a href="grownups.html">{L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم")} →</a></p>'
-                    f'{pager}</main>')
+            if deck:
+                body = (f'<main id="main" class="pdeck"><h1 class="sr-h">{esc(title_u)}</h1>{deck}</main>')
+            else:
+                body = (f'<main id="main" class="kmain kunit q{quest["n"]}"><header class="khead"><p class="kicker">{L("Quest", "ماجرای")} {num(quest["n"])} · {esc(quest["title"])} · {L("Unit", "درس")} {num(u["n"])}</p>'
+                        f'<h1>{esc(title_u)}</h1></header>{opener}{story_html}<div class="klesson prose">{lesson}</div>'
+                        f'<p class="kgrown"><a href="grownups.html">{L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم")} →</a></p>{pager}</main>')
             scripts = engine_scripts(b, root, engines)
             if deck:
                 scripts += (f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script>'
@@ -118,7 +121,7 @@ def build(b, art, md):
             lvl_name = L("Explorers", "کاوشگرها") if level == "explorers" else L("Investigators", "کارآگاه‌ها")
             kpage(f"{uid}/{LEVEL_FILE[level]}", root=root, title=f"{title_u} ({lvl_name})",
                   desc=fm.get("desc") or L("A thinking adventure for children.", "یک ماجرای فکری برای بچه‌ها."),
-                  body=body, current="quests", extra_scripts=scripts)
+                  body=body, current="quests", extra_scripts=scripts, levels=LEVELS_OF(level))
         # grown-ups notes for the unit
         root = b.up(2)
         text = (K.unit_dir(uid) / f"grownups.{lang}.md").read_text(encoding="utf-8")
@@ -144,20 +147,18 @@ def build(b, art, md):
             g["title"] = a["title"]
             engines.update(game_engines(g))
             unit = f"arcade-{a['id']}"
-            body = (f'<main id="main" class="kmain kunit karc c-{a["color"]}"><header class="khead kband">{hudhud(root)}'
-                    f'<p class="kicker">{L("Play now", "حالا بازی کن")}</p><h1>{esc(a["title"])}</h1>{level_switch(b, level)}'
-                    f'<p class="kstars" data-unit="{unit}" data-level="{level}" aria-live="polite"></p></header>'
-                    f'<section class="kblk k-opener kopen">{site_play.game_box(b, a["id"], g, level, unit)}</section>'
-                    f'<p class="kgrown"><a href="../../">{L("Back to the quests", "برگشت به ماجراها")}</a></p></main>')
+            body = (f'<main id="main" class="pdeck pgame c-{a["color"]}"><h1 class="sr-h">{esc(a["title"])}</h1>'
+                    f'<section class="kblk k-opener kopen">{site_play.game_box(b, a["id"], g, level, unit)}</section></main>')
             kpage(f"arcade/{a['id']}/{LEVEL_FILE[level]}", root=root, title=a["title"], desc=a["hook"], body=body,
-                  current="quests", extra_scripts=engine_scripts(b, root, engines))
+                  current="quests", extra_scripts=engine_scripts(b, root, engines), levels=LEVELS_OF(level))
 
-    # home: the quest map
+    # home: the title screen, the age question, the cast, the menu
     root = b.up(1)
     kpage("index.html", root=root, title=L("How Do You Know?", "از کجا می‌دانی؟"),
           desc=L("Thinking adventures for ages 7–14: stories, games and questions about how we know what we know.",
                  "ماجراهای فکری برای ۷ تا ۱۴ ساله‌ها: قصه، بازی و پرسش دربارهٔ این‌که از کجا می‌دانیم."),
-          body=home_body(b, data, quests, arcade, root), current="quests")
+          body=home_body(b, live, arcade, root), current="quests",
+          extra_scripts=f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script><script src="{b.av(root, "scenes/deck.js")}" defer></script>')
     kpage("words/index.html", root=b.up(2), title=L("Picture dictionary", "واژه‌نامهٔ تصویری"),
           desc=L("The thinking words, with pictures, in English and Persian.", "واژه‌های فکر کردن، با تصویر، به فارسی و انگلیسی."),
           body=words_body(b, live, words), current="words")
@@ -310,6 +311,9 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
                 sc["label"] = g["title"]
         if sc.get("links"):
             sc["links"] = [{"t": l["t"], "href": f'{b.home(root)}guide/{l["guide"]}'} for l in sc["links"]]
+        if sc.get("end"):  # the last scene: where to go next
+            sc["links"] = [*sc.get("links", []), {"t": L("More games", "بازی‌های بیشتر"), "href": "../"},
+                           {"t": L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم"), "href": "grownups.html"}]
         out.append(sc)
     return out, boxes
 
@@ -528,57 +532,28 @@ CAST_TAGS = [  # who is who on the cast picture (the middle of each figure, as a
     ("hudhud", 91, "What do you think?", "تو چه فکر می‌کنی؟")]
 
 
-def home_body(b, data, quests, arcade, root):
-    import site_play
-    L, num, lang = b.L, b.num, b.LANG
-    pic = site_play.picture
-    hello = L("Hi! I'm Hoopy. Let's find out how we know things!", "سلام! من هدهدم. بیا با هم بفهمیم از کجا چیزها را می‌دانیم!")
-    qs = "".join(f'<li class="kq{i}"><b>{num(i)}</b><span>{L(en, fa)}</span></li>' for i, (en, fa) in enumerate(QUESTIONS, 1))
-    games = "".join(f'<li class="gcard c-{a["color"]}"><a href="arcade/{a["id"]}/" data-unit-link="arcade/{a["id"]}">'
-                    f'<span class="gcard-art{" pic" if a.get("img") and site_play.art_src(root, a["img"]) else ""}">'
-                    f'{(pic(root, a["img"], sizes="(max-width: 700px) 100vw, 540px", widths=(800,)) if a.get("img") else "") or site_play.ART.get(a.get("art"), "")}</span>'
-                    f'<b>{esc(a["title"])}</b><span>{esc(a["hook"])}</span>'
-                    f'<em class="pgo">{L("Play", "بازی کن")}</em></a></li>' for a in arcade)
-    rows = []
-    thumbs = {"u01-how-do-you-know": "kids/u01-s03"}
-    for q in data["quests"]:
-        qq = K.pick(q, lang)
-        banner = pic(root, f'kids/quest-{q["n"]}', cls="kquest-pic", sizes="(max-width: 820px) 100vw, 800px")
-        stops = []
-        for j, u in enumerate([u for u in data["units"] if u["quest"] == q["id"]]):
-            uu = K.pick(u, lang)
-            t, hook = esc(uu["title"]), esc(uu.get("hook", ""))
-            thumb_key = thumbs.get(u["id"]) or f'kids/quest-{q["n"]}'
-            thumb = pic(root, thumb_key, cls=f"kstop-pic p{j}", sizes="200px", widths=(800,))
-            if published(u):
-                stops.append(f'<li class="kstop on"><a href="{u["id"]}/" data-unit-link="{u["id"]}">{thumb}<b>{num(u["n"])}</b>'
-                             f'<span class="khook">{hook}</span><span class="kstop-t">{t}</span>'
-                             f'<em class="pgo">{L("Play", "بازی کن")}</em><i class="kstop-stars" data-unit="{u["id"]}"></i></a></li>')
-            else:
-                stops.append(f'<li class="kstop"><span class="soon">{thumb}<b>{num(u["n"])}</b><span class="khook">{hook}</span>'
-                             f'<span class="kstop-t">{t}</span><i>{L("coming soon", "به‌زودی")}</i></span></li>')
-        rows.append(f'<section class="kquest q{q["n"]}">{banner}<div class="kquest-in"><h3><span class="kicker">{L("Quest", "ماجرای")} {num(q["n"])}</span>{esc(qq["title"])}</h3>'
-                    f'<p>{esc(qq.get("blurb", ""))}</p><ol class="ktrail">{"".join(stops)}</ol></div></section>')
-    hero = pic(root, "kids/kids-hero", cls="khero-pic", sizes="(max-width: 1100px) 100vw, 1080px", lazy=False)
-    cast_img = pic(root, "kids/ref-cast", cls="kcast-pic", sizes="(max-width: 820px) 100vw, 800px")
-    cast = K.read_json(K.KIDS / "cast.json")
-    cast_tags = "".join(f'<li style="--x:{x}%"><b>{esc(K.pick(cast[who], lang)["name"])}</b><span>{L(en, fa)}</span></li>'
-                        for who, x, en, fa in CAST_TAGS)
-    choose = (f'<div class="kchoose" role="group" aria-label="{L("Choose your level", "سطحت را انتخاب کن")}">'
-              f'<button type="button" data-set-level="explorers"><b>{L("Explorers", "کاوشگرها")}</b><span>{L("ages 7–10", "۷ تا ۱۰ سال")}</span></button>'
-              f'<button type="button" data-set-level="investigators"><b>{L("Investigators", "کارآگاه‌ها")}</b><span>{L("ages 11–14", "۱۱ تا ۱۴ سال")}</span></button></div>')
-    return (f'<main id="main" class="kmain khome"><header class="khero{" has-pic" if hero else ""}">'
-            + (f'<div class="khero-art">{hero}</div>' if hero else '<div class="kblobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>')
-            + f'<div class="khero-panel"><div class="khero-mascot">{hudhud(root)}<p class="kbubble">{hello}</p></div>'
-            f'<h1>{L("How do you know?", "از کجا می‌دانی؟")}</h1>'
-            f'<p class="kdek">{L("Stories, games and puzzles about the biggest little question in the world.", "قصه، بازی و معما دربارهٔ کوچک‌ترین سؤالِ بزرگِ دنیا.")}</p>'
-            f'{choose}<p class="ktotal" aria-live="polite"></p></div></header>'
-            + (f'<section class="karcade"><h2>{L("Play now", "حالا بازی کن")}</h2><ul class="ggrid">{games}</ul></section>' if games else "")
-            + (f'<section class="kcast"><h2>{L("Meet the detectives", "با کارآگاه‌ها آشنا شو")}</h2><figure>{cast_img}<ul>{cast_tags}</ul></figure></section>' if cast_img else "")
-            + f'<section class="kmap"><h2>{L("Your quests", "ماجراهای تو")}</h2>{"".join(rows)}</section>'
-            f'<section class="kfour"><h2>{L("The detective questions", "سؤال‌های کارآگاهی")}</h2><ol>{qs}</ol></section>'
-            f'<p class="kmore"><a href="words/">{L("Picture dictionary", "واژه‌نامهٔ تصویری")}</a><a href="books/">{L("Book club", "باشگاهِ کتاب")}</a>'
-            f'<a href="grownups/">{L("For grown-ups", "برای بزرگ‌ترها")}</a></p></main>')
+def home_body(b, live, arcade, root):
+    """The home page is a scene deck: the title screen (a ring of tiny people), the age question (asked once, remembered),
+    the cast, and the menu of units and games, whose links go to the page for the age that was chosen."""
+    import scenes as SC
+    L, lang = b.L, b.LANG
+    raw = SC.load(K.KIDS / "home.deck.json", lang)
+    scenes = []
+    for sc in raw:
+        if sc.pop("auto", False):
+            go = [{"t": K.pick(u, lang)["title"], "sub": K.pick(u, lang).get("hook", ""),
+                   "hrefs": {"explorers": f'{u["id"]}/', "investigators": f'{u["id"]}/investigators.html'}} for u in live]
+            go += [{"t": a["title"], "sub": a["hook"], "hrefs": {"explorers": f'arcade/{a["id"]}/', "investigators": f'arcade/{a["id"]}/investigators.html'}}
+                   for a in arcade]
+            for l in go:
+                l["href"] = l["hrefs"]["explorers"]
+            sc["links"] = go + sc["links"]
+        scenes.append(sc)
+    probs = SC.validate(scenes)
+    if probs:
+        raise SystemExit("kids home deck:\n  " + "\n  ".join(probs))
+    deck = SC.render(scenes, ui={"next": L("Next", "بعدی"), "back": L("Back", "قبلی"), "again": L("Start again", "دوباره از اول")}, attrs='data-unit="home"')
+    return f'<main id="main" class="pdeck"><h1 class="sr-h">{L("How do you know?", "از کجا می‌دانی؟")}</h1>{deck}</main>'
 
 
 def words_body(b, live, words):

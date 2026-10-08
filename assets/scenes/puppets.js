@@ -145,7 +145,7 @@
     people: '<g fill="#7B8BA6"><circle cx="28" cy="38" r="12"/><rect x="14" y="52" width="28" height="36" rx="12"/><circle cx="72" cy="38" r="12"/><rect x="58" y="52" width="28" height="36" rx="12"/></g><circle cx="50" cy="30" r="12" fill="#F2B84B"/><rect x="36" y="44" width="28" height="44" rx="12" fill="#F2B84B"/>'
   };
   // ---- backdrops: just a few lines on white paper
-  var L1 = 'fill="none" stroke="' + INK + '" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"';
+  var L1 = 'fill="none" stroke="' + INK + '" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"';
   var GROUND = '<path d="M4 80 Q40 78 80 80 T156 79" ' + L1 + '/>';
   var BGS = {
     plain: GROUND,
@@ -157,7 +157,38 @@
     desk: '<path d="M4 72 H156" ' + L1 + '/><path d="M16 72 V88 M144 72 V88" ' + L1 + '/>',
     cafe: GROUND + '<path d="M0 6 H160 M0 6 V14 Q10 22 20 14 Q30 22 40 14 Q50 22 60 14 Q70 22 80 14 Q90 22 100 14 Q110 22 120 14 Q130 22 140 14 Q150 22 160 14 V6" ' + L1 + '/>'
   };
+  // ---- the crowd of the title screen: tiny doodle people scattered round a ring and joined by faint lines (ncase.me/trust).
+  // crowd(w, h, seed) → SVG markup for a w × h box; the middle is left empty for the title.
+  function crowd(w, h, seed) {
+    var r = (function (a) { return function () { a = (a + 0x6D2B79F5) | 0; var t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })(seed || 5);
+    var cx = w / 2, cy = h / 2, rx = Math.max(w, h * .8) * .62, ry = Math.max(h, w * .8) * .62;
+    var hole = Math.min(w * .5, h * .33) , size = Math.max(26, Math.min(40, Math.min(w, h) / 11)), pts = [], tries = 0, want = Math.round(Math.min(90, w * h / 7000));
+    while (pts.length < want && tries++ < 4000) {
+      var a = r() * Math.PI * 2, d = Math.sqrt(r()), x = cx + Math.cos(a) * rx * (.30 + .7 * d), y = cy + Math.sin(a) * ry * (.30 + .7 * d);
+      var ex = (x - cx) / (w * .5 * .92), ey = (y - cy) / (hole * 1.15 + size);
+      if (ex * ex + ey * ey < 1 && (Math.abs(x - cx) < w * .46)) continue;
+      if (x < -size || y < -size || x > w + size || y > h + size) continue;
+      if (pts.some(function (q) { return Math.hypot(q.x - x, q.y - y) < size * 1.5; })) continue;
+      pts.push({ x: x, y: y, a: (r() - .5) * 120, hat: r() < .22 ? (r() < .5 ? "#E5484D" : "#3E7FD0") : "", d: r() * 3, t: 2.4 + r() * 2 });
+    }
+    var g = '<g stroke="#CFCFCF" stroke-width="1" fill="none">';
+    pts.forEach(function (p, i) {
+      pts.map(function (q, j) { return { j: j, d: Math.hypot(q.x - p.x, q.y - p.y) }; }).filter(function (o) { return o.j > i; })
+        .sort(function (a, b) { return a.d - b.d; }).slice(0, 3).forEach(function (o) { if (o.d < size * 5) g += '<path d="M' + p.x.toFixed(1) + " " + p.y.toFixed(1) + "L" + pts[o.j].x.toFixed(1) + " " + pts[o.j].y.toFixed(1) + '"/>'; });
+    });
+    g += "</g>";
+    var k = size / 30, who = pts.map(function (p) {
+      return '<g transform="translate(' + p.x.toFixed(1) + " " + p.y.toFixed(1) + ") rotate(" + p.a.toFixed(0) + ") scale(" + k.toFixed(2) + ')"><g class="cw" style="animation-delay:-' + p.d.toFixed(2) + "s;animation-duration:" + p.t.toFixed(2) + 's">' +
+        '<path d="M-4 9 L-5 17 M4 9 L5 17" stroke="#444" stroke-width="2" stroke-linecap="round" fill="none"/>' +
+        '<path d="M-7 8 Q0 5 7 8 L6 14 Q0 16 -6 14Z" fill="#fff" stroke="#444" stroke-width="2"/><path d="M7 9 L13 14" stroke="#444" stroke-width="2" stroke-linecap="round"/>' +
+        '<circle cx="0" cy="-4" r="9" fill="#fff" stroke="#444" stroke-width="2"/><circle cx="-3" cy="-4" r="1.3" fill="#333"/><circle cx="3" cy="-4" r="1.3" fill="#333"/>' +
+        (p.hat ? '<path d="M-6 -11 L-4 -19 H4 L6 -11Z" fill="' + p.hat + '" stroke="#444" stroke-width="1.6"/>' : "") + "</g></g>";
+    }).join("");
+    return '<svg viewBox="0 0 ' + w + " " + h + '" width="' + w + '" height="' + h + '" class="crowd" aria-hidden="true">' + g + who + "</svg>";
+  }
+
   window.Puppets = {
+    crowd: crowd,
     actor: function (who) { return (WHOS[who] || WHOS.person)(); },
     prop: function (what) { return '<svg viewBox="0 0 100 100" class="pr" aria-hidden="true">' + doodleProp(PROPS[what] || "") + "</svg>"; },
     bg: function (name) { return '<svg viewBox="0 0 160 90" preserveAspectRatio="xMidYMax meet" class="bgsvg" aria-hidden="true">' + (BGS[name] || BGS.plain) + "</svg>"; },

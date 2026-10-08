@@ -123,9 +123,7 @@ def build(b, art, md):
         g = with_art(root, site_kids.for_level(K.pick(game_data(c["id"]), lang), "play"))
         g["masthead"] = L("The Daily Claim", "ادعای روز")
         learn = "".join(f'<li><a href="{h}{esc(x["href"])}">{esc(x["title"])}</a></li>' for x in c.get("learn", []))
-        body = (f'<main id="main" class="pmain pgame c-{c["color"]}"><header class="pghead">'
-                f'<p class="pkick"><a href="../">{L("All games", "همهٔ بازی‌ها")}</a></p>'
-                f'<h1>{esc(c["title"])}</h1></header>'
+        body = (f'<main id="main" class="pdeck pgame c-{c["color"]}"><h1 class="sr-h">{esc(c["title"])}</h1>'
                 f'{game_box(b, c["id"], g, "play")}'
                 + (f'<section class="plearn"><h2>{L("Want to go deeper?", "می‌خواهید عمیق‌تر شوید؟")}</h2><ul>{learn}</ul></section>' if learn else "")
                 + '</main>')
@@ -134,19 +132,24 @@ def build(b, art, md):
 
     root = b.up(1)
     h = b.home(root)
-    cards = "".join(card(b, c, root) for c in games)
-    hero = picture(root, "play/play-hero", sizes="(max-width: 1100px) 100vw, 1080px", lazy=False)
-    body = (f'<main id="main" class="pmain phome"><header class="phero{" has-pic" if hero else ""}">'
-            + (f'<div class="phero-pic">{hero}</div>' if hero else "")
-            + f'<div class="phero-t"><h1>{L("Baloney Detector", "چرندسنج")}</h1>'
-            f'<p class="ptag">{L("Games for people who enjoy being wrong.", "بازی برای کسانی که از اشتباه کردن خوششان می‌آید.")}</p></div></header>'
-            f'<ul class="ggrid">{cards}</ul>'
-            f'<p class="pnote">{L("Every headline in these games is made up, to practise on. Nothing you do here is collected.", "همهٔ تیترهای این بازی‌ها ساختگی‌اند، برای تمرین. هیچ چیزی از کارهای شما این‌جا جمع نمی‌شود.")} '
-            f'<a href="{h}">{L("The ideas behind the games: the guide", "ایده‌های پشتِ بازی‌ها: راهنما")}</a></p></main>')
+    raw = SC.load(PLAY / "home.deck.json", lang)
+    scenes = []
+    for sc in raw:
+        if sc.pop("auto", False):
+            sc["links"] = [{"t": c["title"], "sub": c["hook"], "href": f'{c["id"]}/'} for c in games if c.get("live")]
+            soon = [c["title"] for c in games if not c.get("live")]
+            if soon:
+                sc["text"] = [sc["text"], L("Coming soon: ", "به‌زودی: ") + " · ".join(soon)]
+        scenes.append(sc)
+    probs = SC.validate(scenes)
+    if probs:
+        raise SystemExit("play home deck:\n  " + "\n  ".join(probs))
+    deck = SC.render(scenes, ui={"next": L("Next", "بعدی"), "back": L("Back", "قبلی"), "again": L("Start again", "دوباره از اول")}, attrs='data-unit="play-home"')
+    body = f'<main id="main" class="pdeck"><h1 class="sr-h">{L("Baloney Detector", "چرندسنج")}</h1>{deck}</main>'
     ppage("index.html", root=root, title=L("Baloney Detector", "چرندسنج"),
           desc=L("Games for people who enjoy being wrong: spot the trick in the headline, the graph and the study.",
                  "بازی برای کسانی که از اشتباه کردن خوششان می‌آید: ترفندِ تیتر و نمودار و پژوهش را پیدا کنید."),
-          body=body)
+          body=body, extra_scripts=f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script><script src="{b.av(root, "scenes/deck.js")}" defer></script>')
 
     if out_dir.exists():
         for p in out_dir.rglob("*.html"):
