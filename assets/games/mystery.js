@@ -125,7 +125,7 @@
         moved.appendChild(el("span", "", T("Before: ", "پیش از این: ") + text(S.first) + " (" + cn[S.firstConf] + ")"));
         moved.appendChild(el("span", "", T("Now: ", "حالا: ") + text(S.final) + " (" + cn[S.finalConf] + ")"));
         panel.appendChild(moved);
-        var v = el("div", "my-verdict " + (ok ? "good" : "catch"));
+        var v = el("div", "my-verdict " + (ok || under ? "good" : "catch"));
         var title = ok ? T("Well reasoned!", "خوب استدلال کردی!") : over ? T("Right answer, but your clues only allow “" + cn[rule.conf] + "”.", "جواب درست است، ولی سرنخ‌هایت فقط «" + cn[rule.conf] + "» را می‌پذیرند.")
           : under ? T("Right answer! Your clues were strong enough to be surer.", "جواب درست است! سرنخ‌هایت برای مطمئن‌تر بودن به‌اندازهٔ کافی قوی بودند.")
           : T("Not quite. Here is what your clues show.", "نه دقیقاً. ببین سرنخ‌هایت چه نشان می‌دهند.");

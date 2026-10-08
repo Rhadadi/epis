@@ -2,7 +2,7 @@
 desc: Claims, reasons, evidence and sour grapes: how to tell a real reason from a reason that only wants to be one.
 ---
 
-::: opener u02-grapes
+::: opener mission-club
 :::
 
 ## Claims need reasons

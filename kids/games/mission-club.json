@@ -1,0 +1,429 @@
+{
+ "engine": "mystery",
+ "title": "Was it really boring? Was it really unfair?",
+ "done": "You investigated like a detective!",
+ "offline": "At home today: next time you say “that was unfair” or “that was boring”, ask yourself: “Would I say it if I had won?”",
+ "fa": {
+  "title": "واقعاً خسته‌کننده بود؟ واقعاً ناعادلانه بود؟",
+  "done": "مثلِ کارآگاه بررسی کردی!",
+  "offline": "امروز در خانه: دفعهٔ بعد که گفتی «ناعادلانه بود» یا «خسته‌کننده بود»، از خودت بپرس: «اگر برده بودم هم همین را می‌گفتم؟»"
+ },
+ "rounds": [
+  {
+   "intro": "Lena did not get into the school robotics club. She says: “That club is boring anyway.”",
+   "given": null,
+   "fa": {
+    "intro": "لنا در باشگاه رباتیکِ مدرسه پذیرفته نشد. می‌گوید: «آن باشگاه که خسته‌کننده است.»"
+   },
+   "stage": {
+    "bg": "room",
+    "actors": [
+     {
+      "id": "lena",
+      "who": "ava",
+      "x": 26,
+      "y": 92,
+      "s": 1,
+      "face": "sad",
+      "anim": "bob"
+     },
+     {
+      "id": "sam",
+      "who": "kian",
+      "x": 74,
+      "y": 92,
+      "s": 1.1,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "board",
+      "what": "chart",
+      "x": 52,
+      "y": 60,
+      "s": 0.9,
+      "anim": "none"
+     },
+     {
+      "id": "notice",
+      "what": "news",
+      "x": 86,
+      "y": 70,
+      "s": 0.8,
+      "anim": "wobble"
+     },
+     {
+      "id": "bulb",
+      "what": "bulb",
+      "x": 52,
+      "y": 92,
+      "s": 0.6,
+      "anim": "float"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "boring",
+     "text": "The club is boring",
+     "fa": {
+      "text": "باشگاه خسته‌کننده است"
+     }
+    },
+    {
+     "id": "fine",
+     "text": "The club is interesting",
+     "fa": {
+      "text": "باشگاه جالب است"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "Not enough evidence yet",
+     "fa": {
+      "text": "هنوز نشانهٔ کافی نیست"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 3,
+   "sources": [
+    {
+     "id": "ask",
+     "target": "lena",
+     "label": "Ask Lena: “What makes you say that?”",
+     "clue": "Lena says: “I didn't get in, so who cares.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "This is about Lena's disappointment, not about the club. A feeling can explain why she says it, but it does not show the club is boring.",
+     "fa": {
+      "label": "از لنا بپرس: «از کجا می‌گویی؟»",
+      "clue": "لنا می‌گوید: «قبول نشدم، پس مهم نیست.»",
+      "tricky": "این دربارهٔ ناامیدیِ لناست، نه باشگاه. حس می‌تواند توضیح بدهد چرا این را می‌گوید، ولی نشان نمی‌دهد باشگاه خسته‌کننده است."
+     }
+    },
+    {
+     "id": "members",
+     "target": "sam",
+     "label": "Ask a club member",
+     "clue": "Sam, who is in the club, says: “We built a robot that draws. I love it.”",
+     "pts": {
+      "fine": 2
+     },
+     "kind": "weak",
+     "tricky": "A member may like it more than most people. This leans “interesting”, but it is one person who chose to join.",
+     "fa": {
+      "label": "از یکی از اعضا بپرس",
+      "clue": "کیان که عضو باشگاه است می‌گوید: «ما رباتی ساختیم که نقاشی می‌کشد. عاشقش هستم.»",
+      "tricky": "شاید عضو بیشتر از بیشترِ آدم‌ها دوستش داشته باشد. این به «جالب است» می‌گراید، ولی یک نفر است که خودش عضو شده."
+     }
+    },
+    {
+     "id": "board",
+     "target": "board",
+     "label": "Read the club's plan on the board",
+     "clue": "The plan lists: building a robot, a coding contest, a trip to a fair.",
+     "pts": {
+      "fine": 1
+     },
+     "kind": "weak",
+     "tricky": "A plan shows what the club does, not whether it is fun. It is a small clue.",
+     "fa": {
+      "label": "برنامهٔ باشگاه را روی تابلو بخوان",
+      "clue": "برنامه می‌گوید: ساختنِ یک ربات، مسابقهٔ برنامه‌نویسی، سفر به یک نمایشگاه.",
+      "tricky": "برنامه نشان می‌دهد باشگاه چه می‌کند، نه این‌که سرگرم‌کننده است یا نه. سرنخِ کوچکی است."
+     }
+    },
+    {
+     "id": "trial",
+     "target": "notice",
+     "label": "Visit a trial session (the notice says anyone can)",
+     "clue": "You try the session. It is a bit slow at first, then the robot moves and everyone cheers.",
+     "pts": {
+      "fine": 2
+     },
+     "kind": "strong",
+     "tricky": "Trying it yourself could have shown “boring”, so it is a strong clue. One session might not be typical.",
+     "fa": {
+      "label": "به یک جلسهٔ آزمایشی برو (اطلاعیه می‌گوید هر کسی می‌تواند)",
+      "clue": "جلسه را امتحان می‌کنی. اولش کمی کند است، بعد ربات حرکت می‌کند و همه هورا می‌کشند.",
+      "tricky": "خودت امتحان کردن می‌توانست «خسته‌کننده» نشان بدهد، پس سرنخِ قوی است. شاید یک جلسه نمونهٔ همه نباشد."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "trial",
+     "text": "Trying a session myself",
+     "good": true,
+     "fa": {
+      "text": "خودم یک جلسه را امتحان کنم"
+     }
+    },
+    {
+     "id": "again",
+     "text": "Lena saying it again",
+     "good": false,
+     "fa": {
+      "text": "دوباره گفتنِ لنا"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "trial",
+      "members"
+     ],
+     "best": "fine",
+     "conf": 2,
+     "why": "A session you tried and a member who loves it point the same way. “The club is interesting” is well supported. You can be very sure, for you. (Lena's feelings are real, but they are not a reason against it.)",
+     "fa": {
+      "why": "جلسه‌ای که خودت امتحان کردی و عضوی که عاشقش است به یک سو اشاره می‌کنند. «باشگاه جالب است» خوب پشتیبانی می‌شود. می‌توانی خیلی مطمئن باشی. (حسِ لنا واقعی است، ولی دلیلی علیهِ آن نیست.)"
+     }
+    },
+    {
+     "if": [
+      "trial"
+     ],
+     "best": "fine",
+     "conf": 1,
+     "why": "Trying it yourself is a strong clue, but one session is small. “Pretty sure” fits.",
+     "fa": {
+      "why": "خودت امتحان کردن سرنخِ قوی است، ولی یک جلسه کوچک است. «نسبتاً مطمئن» جور است."
+     }
+    },
+    {
+     "if": [
+      "members"
+     ],
+     "best": "fine",
+     "conf": 1,
+     "why": "A member's love is a hint, not a test. “Pretty sure” is about right.",
+     "fa": {
+      "why": "علاقهٔ یک عضو اشاره است، نه آزمون. «نسبتاً مطمئن» تقریباً درست است."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "What you checked does not show whether the club is boring. Lena's words are about her disappointment. “Not enough evidence yet” is a good answer; try a session.",
+     "fa": {
+      "why": "آنچه وارسی کردی نشان نمی‌دهد باشگاه خسته‌کننده است یا نه. حرفِ لنا دربارهٔ ناامیدی‌اش است. «هنوز نشانهٔ کافی نیست» جواب خوبی است؛ یک جلسه را امتحان کن."
+     }
+    }
+   ]
+  },
+  {
+   "intro": "Omid scored low on the maths test. He says: “That test was totally unfair.”",
+   "given": null,
+   "fa": {
+    "intro": "امید در امتحانِ ریاضی نمره‌اش کم شد. می‌گوید: «آن امتحان کاملاً ناعادلانه بود.»"
+   },
+   "stage": {
+    "bg": "desk",
+    "actors": [
+     {
+      "id": "omid",
+      "who": "kian",
+      "x": 28,
+      "y": 92,
+      "s": 1.1,
+      "face": "sad",
+      "anim": "bob"
+     },
+     {
+      "id": "ava",
+      "who": "ava",
+      "x": 72,
+      "y": 92,
+      "s": 1,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "test",
+      "what": "news",
+      "x": 52,
+      "y": 80,
+      "s": 0.9,
+      "anim": "wobble"
+     },
+     {
+      "id": "clock",
+      "what": "clock",
+      "x": 86,
+      "y": 70,
+      "s": 0.8,
+      "anim": "none"
+     },
+     {
+      "id": "chart",
+      "what": "chart",
+      "x": 14,
+      "y": 70,
+      "s": 0.8,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "unfair",
+     "text": "The test was unfair",
+     "fa": {
+      "text": "امتحان ناعادلانه بود"
+     }
+    },
+    {
+     "id": "fair",
+     "text": "The test was fair",
+     "fa": {
+      "text": "امتحان عادلانه بود"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "Not enough evidence yet",
+     "fa": {
+      "text": "هنوز نشانهٔ کافی نیست"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 3,
+   "sources": [
+    {
+     "id": "ask",
+     "target": "omid",
+     "label": "Ask Omid: “What makes you say that?”",
+     "clue": "Omid says: “I got a low mark.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "A low mark could mean an unfair test, or not enough practice. Saying it is unfair does not tell us which.",
+     "fa": {
+      "label": "از امید بپرس: «از کجا می‌گویی؟»",
+      "clue": "امید می‌گوید: «نمرهٔ کمی گرفتم.»",
+      "tricky": "نمرهٔ کم می‌تواند یعنی امتحان ناعادلانه بود یا تمرینِ کم. گفتنِ «ناعادلانه» نشان نمی‌دهد کدام."
+     }
+    },
+    {
+     "id": "others",
+     "target": "ava",
+     "label": "Ask how others did",
+     "clue": "Most of the class scored well. Two others scored low.",
+     "pts": {
+      "fair": 2
+     },
+     "kind": "weak",
+     "tricky": "If most students did fine, the test was probably doable. It does not show every question was fair.",
+     "fa": {
+      "label": "بپرس بقیه چطور شدند",
+      "clue": "بیشترِ کلاس نمرهٔ خوب گرفتند. دو نفرِ دیگر نمرهٔ کم گرفتند.",
+      "tricky": "اگر بیشترِ دانش‌آموزان خوب شدند، امتحان احتمالاً شدنی بوده. نشان نمی‌دهد همهٔ سؤال‌ها عادلانه بودند."
+     }
+    },
+    {
+     "id": "topics",
+     "target": "test",
+     "label": "Check the questions against what the class learned",
+     "clue": "Every question is about a topic taught in class.",
+     "pts": {
+      "fair": 2
+     },
+     "kind": "strong",
+     "tricky": "If a test asks about things never taught, it is unfair. Here it matched, so this is a strong clue.",
+     "fa": {
+      "label": "سؤال‌ها را با آنچه در کلاس یاد گرفتند مقایسه کن",
+      "clue": "هر سؤال دربارهٔ موضوعی است که در کلاس تدریس شد.",
+      "tricky": "اگر امتحان دربارهٔ چیزهایی بپرسد که تدریس نشده، ناعادلانه است. این‌جا جور بود، پس سرنخِ قوی است."
+     }
+    },
+    {
+     "id": "prep",
+     "target": "chart",
+     "label": "Look at how Omid prepared",
+     "clue": "Omid started revising the night before and skipped the practice sheet.",
+     "pts": {
+      "fair": 1
+     },
+     "kind": "weak",
+     "tricky": "This could explain a low mark. It does not mean the test was fair, but it gives another explanation.",
+     "fa": {
+      "label": "ببین امید چطور آماده شد",
+      "clue": "امید شبِ قبل شروع به مرور کرد و برگهٔ تمرین را حل نکرد.",
+      "tricky": "این می‌تواند نمرهٔ کم را توضیح بدهد. یعنی امتحان عادلانه بود نیست، ولی توضیحِ دیگری می‌دهد."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "topics",
+     "text": "The questions matching what was taught",
+     "good": true,
+     "fa": {
+      "text": "جور بودنِ سؤال‌ها با آنچه تدریس شد"
+     }
+    },
+    {
+     "id": "shout",
+     "text": "Omid repeating it louder",
+     "good": false,
+     "fa": {
+      "text": "بلندتر تکرار کردنِ امید"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "topics",
+      "others"
+     ],
+     "best": "fair",
+     "conf": 2,
+     "why": "The questions matched the lessons and most of the class did well. “The test was fair” is well supported: you can be very sure. (Omid can still be upset, and he can still ask for help.)",
+     "fa": {
+      "why": "سؤال‌ها با درس‌ها جور بود و بیشترِ کلاس خوب شدند. «امتحان عادلانه بود» خوب پشتیبانی می‌شود: می‌توانی خیلی مطمئن باشی. (امید می‌تواند ناراحت باشد و هنوز کمک بخواهد.)"
+     }
+    },
+    {
+     "if": [
+      "topics"
+     ],
+     "best": "fair",
+     "conf": 1,
+     "why": "Matching the lessons is a strong clue. “Pretty sure” fits; seeing how the others did would help.",
+     "fa": {
+      "why": "جور بودن با درس‌ها سرنخِ قوی است. «نسبتاً مطمئن» جور است؛ دیدنِ نتیجهٔ بقیه کمک می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "others"
+     ],
+     "best": "fair",
+     "conf": 1,
+     "why": "Most of the class did fine, which suggests the test was doable. “Pretty sure” fits; checking the questions would help.",
+     "fa": {
+      "why": "بیشترِ کلاس خوب شدند، که نشان می‌دهد امتحان شدنی بود. «نسبتاً مطمئن» جور است؛ وارسی سؤال‌ها کمک می‌کرد."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "A low mark can mean an unfair test or too little practice, and you have not checked which. “Not enough evidence yet” is a good answer.",
+     "fa": {
+      "why": "نمرهٔ کم می‌تواند یعنی امتحانِ ناعادلانه یا تمرینِ کم، و هنوز وارسی نکرده‌ای کدام. «هنوز نشانهٔ کافی نیست» جواب خوبی است."
+     }
+    }
+   ]
+  }
+ ]
+}

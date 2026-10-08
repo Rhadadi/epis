@@ -1,0 +1,417 @@
+{
+ "engine": "mystery",
+ "title": "Were the grapes sour?",
+ "done": "You investigated like a detective!",
+ "offline": "At home today: next time someone says “I didn't want it anyway”, ask “What makes you say that?” kindly.",
+ "fa": {
+  "title": "انگورها ترش بودند؟",
+  "done": "مثلِ کارآگاه بررسی کردی!",
+  "offline": "امروز در خانه: دفعهٔ بعد که کسی گفت «اصلاً نمی‌خواستمش»، مهربان بپرس «از کجا می‌گویی؟»"
+ },
+ "rounds": [
+  {
+   "intro": "The fox cannot reach the grapes. He says: “Those grapes are sour anyway!”",
+   "given": null,
+   "fa": {
+    "intro": "روباه به انگورها نمی‌رسد. می‌گوید: «این انگورها که ترش‌اند!»"
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 26,
+      "y": 92,
+      "s": 1,
+      "face": "sly",
+      "anim": "bob"
+     },
+     {
+      "id": "goat",
+      "who": "grape",
+      "x": 56,
+      "y": 92,
+      "s": 0.7,
+      "face": "thinking",
+      "anim": "bob"
+     },
+     {
+      "id": "bird",
+      "who": "hudhud",
+      "x": 88,
+      "y": 84,
+      "s": 0.8,
+      "face": "happy",
+      "anim": "float"
+     }
+    ],
+    "props": [
+     {
+      "id": "grapes",
+      "what": "grapes",
+      "x": 62,
+      "y": 40,
+      "s": 1.1,
+      "anim": "float"
+     },
+     {
+      "id": "ladder",
+      "what": "ladder",
+      "x": 78,
+      "y": 92,
+      "s": 1.1,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "sour",
+     "text": "The grapes are sour",
+     "fa": {
+      "text": "انگورها ترش‌اند"
+     }
+    },
+    {
+     "id": "sweet",
+     "text": "The grapes are sweet",
+     "fa": {
+      "text": "انگورها شیرین‌اند"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "I can't tell yet",
+     "fa": {
+      "text": "هنوز نمی‌توانم بفهمم"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 2,
+   "sources": [
+    {
+     "id": "ask",
+     "target": "fox",
+     "label": "Ask the fox: “What makes you say that?”",
+     "clue": "The fox says: “They are very high up, and I am tired.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "These reasons are about the fox, not the grapes. They would be exactly the same if the grapes were sweet.",
+     "fa": {
+      "label": "از روباه بپرس: «از کجا می‌گویی؟»",
+      "clue": "روباه می‌گوید: «خیلی بالا هستند و من هم خسته‌ام.»",
+      "tricky": "این دلیل‌ها دربارهٔ روباه‌اند، نه انگور. اگر انگورها شیرین بودند هم دقیقاً همین بودند."
+     }
+    },
+    {
+     "id": "look",
+     "target": "grapes",
+     "label": "Look closely at the grapes",
+     "clue": "They are deep purple and plump.",
+     "pts": {
+      "sweet": 1
+     },
+     "kind": "weak",
+     "tricky": "Colour is a hint about ripeness, but not a sure one.",
+     "fa": {
+      "label": "انگورها را دقیق نگاه کن",
+      "clue": "بنفشِ پررنگ و پُرند.",
+      "tricky": "رنگ اشاره‌ای به رسیده بودن است، ولی قطعی نیست."
+     }
+    },
+    {
+     "id": "bird",
+     "target": "bird",
+     "label": "Watch the bird",
+     "clue": "A bird pecks a grape and keeps on eating.",
+     "pts": {
+      "sweet": 2
+     },
+     "kind": "weak",
+     "tricky": "Birds do eat some sour fruit too, so this helps but is not final.",
+     "fa": {
+      "label": "پرنده را تماشا کن",
+      "clue": "پرنده‌ای یک انگور را نوک می‌زند و می‌خورد.",
+      "tricky": "پرنده‌ها بعضی میوه‌های ترش را هم می‌خورند، پس این کمک می‌کند ولی قطعی نیست."
+     }
+    },
+    {
+     "id": "taste",
+     "target": "ladder",
+     "label": "Climb the ladder and taste one",
+     "clue": "You taste one. It is sweet!",
+     "pts": {
+      "sweet": 3
+     },
+     "kind": "strong",
+     "tricky": "A taste test could have said “sour”. That is why it is the strongest clue.",
+     "fa": {
+      "label": "از نردبان برو بالا و یکی را بچش",
+      "clue": "یکی را می‌چشی. شیرین است!",
+      "tricky": "آزمونِ چشیدن می‌توانست بگوید «ترش». برای همین قوی‌ترین سرنخ است."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "taste",
+     "text": "Tasting one",
+     "good": true,
+     "fa": {
+      "text": "چشیدنِ یکی"
+     }
+    },
+    {
+     "id": "louder",
+     "text": "The fox saying it louder",
+     "good": false,
+     "fa": {
+      "text": "بلندتر گفتنِ روباه"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "taste"
+     ],
+     "best": "sweet",
+     "conf": 2,
+     "why": "You tasted it, and a taste test could have said sour. You can be very sure.",
+     "fa": {
+      "why": "چشیدی و آزمونِ چشیدن می‌توانست بگوید ترش. می‌توانی خیلی مطمئن باشی."
+     }
+    },
+    {
+     "if": [
+      "look",
+      "bird"
+     ],
+     "best": "sweet",
+     "conf": 1,
+     "why": "Plump purple grapes and a bird eating them both point to sweet. “Pretty sure” fits; tasting would make you surer.",
+     "fa": {
+      "why": "انگورِ بنفشِ پُر و پرنده‌ای که می‌خورد هر دو به شیرین اشاره می‌کنند. «نسبتاً مطمئن» جور است؛ چشیدن تو را مطمئن‌تر می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "bird"
+     ],
+     "best": "sweet",
+     "conf": 1,
+     "why": "A bird eating them points to sweet. “Pretty sure” fits.",
+     "fa": {
+      "why": "پرنده‌ای که می‌خورد به شیرین اشاره می‌کند. «نسبتاً مطمئن» جور است."
+     }
+    },
+    {
+     "if": [
+      "look"
+     ],
+     "best": "sweet",
+     "conf": 0,
+     "why": "Colour is only a hint. It leans sweet, but “just a guess” is the honest amount of sure.",
+     "fa": {
+      "why": "رنگ فقط اشاره است. به شیرین می‌گراید، ولی «فقط حدس» به‌اندازهٔ درستِ اطمینان است."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "The fox's reasons are about the fox, not the grapes. “I can't tell yet” is a good answer. Look at the grapes or taste one.",
+     "fa": {
+      "why": "دلیل‌های روباه دربارهٔ خودِ روباه است، نه انگور. «هنوز نمی‌توانم بفهمم» جواب خوبی است. به انگورها نگاه کن یا یکی را بچش."
+     }
+    }
+   ]
+  },
+  {
+   "intro": "Sam loses the race. He says: “I didn't want to win anyway!”",
+   "given": null,
+   "fa": {
+    "intro": "نیما در مسابقه می‌بازد. می‌گوید: «اصلاً نمی‌خواستم ببرم!»"
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "sam",
+      "who": "nima",
+      "x": 30,
+      "y": 92,
+      "s": 0.9,
+      "face": "sad",
+      "anim": "bob"
+     },
+     {
+      "id": "ava",
+      "who": "ava",
+      "x": 72,
+      "y": 92,
+      "s": 1,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "medal",
+      "what": "star",
+      "x": 52,
+      "y": 60,
+      "s": 0.8,
+      "anim": "float"
+     },
+     {
+      "id": "clock",
+      "what": "clock",
+      "x": 86,
+      "y": 70,
+      "s": 0.8,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "wanted",
+     "text": "He did want to win",
+     "fa": {
+      "text": "او می‌خواست ببرد"
+     }
+    },
+    {
+     "id": "didnt",
+     "text": "He didn't want to win",
+     "fa": {
+      "text": "او نمی‌خواست ببرد"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "I can't tell yet",
+     "fa": {
+      "text": "هنوز نمی‌توانم بفهمم"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 2,
+   "sources": [
+    {
+     "id": "ask",
+     "target": "sam",
+     "label": "Ask Sam: “What makes you say that?”",
+     "clue": "Sam says: “Because I lost.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "Losing is about what happened, not about what he wanted. It would be the same either way.",
+     "fa": {
+      "label": "از نیما بپرس: «از کجا می‌گویی؟»",
+      "clue": "نیما می‌گوید: «چون باختم.»",
+      "tricky": "باختن دربارهٔ چیزی است که شد، نه چیزی که می‌خواست. در هر دو حالت همین بود."
+     }
+    },
+    {
+     "id": "practise",
+     "target": "ava",
+     "label": "Ask Ava what she saw",
+     "clue": "Ava says: “Sam practised running every day this week!”",
+     "pts": {
+      "wanted": 2
+     },
+     "kind": "weak",
+     "tricky": "Ava saw it herself, which helps. But she could be wrong about why Sam practised.",
+     "fa": {
+      "label": "از آوا بپرس چه دید",
+      "clue": "آوا می‌گوید: «نیما این هفته هر روز دویدن تمرین کرد!»",
+      "tricky": "آوا خودش دیده، که کمک می‌کند. ولی ممکن است دربارهٔ دلیلِ تمرینِ نیما اشتباه کند."
+     }
+    },
+    {
+     "id": "before",
+     "target": "medal",
+     "label": "Remember what Sam said before the race",
+     "clue": "Before the race Sam asked: “Do you think I can win the medal?”",
+     "pts": {
+      "wanted": 2
+     },
+     "kind": "weak",
+     "tricky": "What someone says before the result is a better clue than what they say after.",
+     "fa": {
+      "label": "یادت بیاور نیما پیش از مسابقه چه گفت",
+      "clue": "پیش از مسابقه نیما پرسید: «فکر می‌کنی می‌توانم مدال را ببرم؟»",
+      "tricky": "آنچه کسی پیش از نتیجه می‌گوید سرنخِ بهتری است از آنچه بعدش می‌گوید."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "before",
+     "text": "What Sam said before the race",
+     "good": true,
+     "fa": {
+      "text": "آنچه نیما پیش از مسابقه گفت"
+     }
+    },
+    {
+     "id": "again",
+     "text": "Sam saying it again",
+     "good": false,
+     "fa": {
+      "text": "دوباره گفتنِ نیما"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "practise",
+      "before"
+     ],
+     "best": "wanted",
+     "conf": 2,
+     "why": "Two clues from before the race agree: Sam wanted it. You can be very sure. (It is fine that he feels sad; that is not a reason against it.)",
+     "fa": {
+      "why": "دو سرنخ از پیش از مسابقه هم‌نظرند: نیما می‌خواست. می‌توانی خیلی مطمئن باشی. (اشکالی ندارد که غمگین است؛ این دلیلی علیهِ آن نیست.)"
+     }
+    },
+    {
+     "if": [
+      "practise"
+     ],
+     "best": "wanted",
+     "conf": 1,
+     "why": "Ava's story points to “he wanted it”. “Pretty sure” fits.",
+     "fa": {
+      "why": "حرفِ آوا به «او می‌خواست» اشاره می‌کند. «نسبتاً مطمئن» جور است."
+     }
+    },
+    {
+     "if": [
+      "before"
+     ],
+     "best": "wanted",
+     "conf": 1,
+     "why": "What Sam said before the race points to “he wanted it”. “Pretty sure” fits.",
+     "fa": {
+      "why": "آنچه نیما پیش از مسابقه گفت به «او می‌خواست» اشاره می‌کند. «نسبتاً مطمئن» جور است."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "“Because I lost” does not show whether he wanted to win. “I can't tell yet” is a good answer. Ask what he said or did before the race.",
+     "fa": {
+      "why": "«چون باختم» نشان نمی‌دهد او می‌خواست ببرد یا نه. «هنوز نمی‌توانم بفهمم» جواب خوبی است. بپرس پیش از مسابقه چه گفت یا چه کرد."
+     }
+    }
+   ]
+  }
+ ]
+}

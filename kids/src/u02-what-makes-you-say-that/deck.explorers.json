@@ -2,10 +2,10 @@
  "scenes": [
   {
    "id": "grapes",
-   "game": "u02-grapes",
-   "label": "Quick! What do you say?",
+   "game": "mission-grapes",
+   "label": "Were the grapes sour?",
    "fa": {
-    "label": "زود باش! تو چه می‌گویی؟"
+    "label": "انگورها ترش بودند؟"
    }
   },
   {
