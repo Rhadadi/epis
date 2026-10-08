@@ -7,7 +7,11 @@
   "hook": "کیان می‌گوید پای بزرگ آدم را کتاب‌خوانِ بهتری می‌کند. تماشا کن، اندازه بگیر و علتِ پنهان را پیدا کن."
  },
  "frames": "kids/episodes/big-feet.frames.json",
- "video": {"engine": "pruna", "model": "p-video-2", "hold": true},
+ "video": {
+  "engine": "pruna",
+  "model": "p-video-2",
+  "hold": true
+ },
  "veo": {
   "model": "veo-3.1-fast-generate-preview",
   "aspect": "16:9",
@@ -16,138 +20,562 @@
   "negative": "text, letters, words, numbers, captions, subtitles, signs with writing, logos, watermark, speech, talking, lip sync, distorted faces, extra limbs, morphing, photorealistic, 3D render, scary, dark"
  },
  "voices": {
-  "en": {"ava": "Jessica", "nima": "Laura", "kian": "Liam", "grandma": "Jane", "hudhud": "Callum", "narrator": "George"},
-  "fa": {"ava": "Roya", "nima": "Roya", "kian": "Kourosh", "grandma": "Roya", "hudhud": "Kourosh", "narrator": "Roya"}
+  "en": {
+   "ava": "Jessica",
+   "nima": "Laura",
+   "kian": "Liam",
+   "grandma": "Jane",
+   "hudhud": "Callum",
+   "narrator": "George"
+  },
+  "fa": {
+   "ava": "Sara (fa, kids)",
+   "nima": "Arash (fa, kids)",
+   "kian": "Kourosh",
+   "grandma": "Mehri (fa, elder)",
+   "hudhud": "Bahram (fa, storyteller)",
+   "narrator": "Roya"
+  }
  },
  "clips": [
   {
    "id": "c1",
-   "video": {"engine": "veo"},
+   "video": {
+    "engine": "veo"
+   },
    "motion": "The tall boy in the blue hoodie spreads his arms proudly on the crate and points at the drawing; the crowd of children leans in and some clap; the girl with red glasses raises an eyebrow and taps her notebook; the hoopoe tilts its head and lifts its crest. Static camera.",
    "lines": [
-    {"who": "kian", "en": "Everybody, listen! I've made a huge discovery.", "fa": "همه گوش کنید! یک کشفِ بزرگ کرده‌ام."},
-    {"who": "kian", "en": "Kids with bigger feet are better readers!", "fa": "بچه‌هایی که پای بزرگ‌تری دارند، بهتر کتاب می‌خوانند!"},
-    {"who": "hudhud", "en": "Hmm. Is that true?", "fa": "هوم. یعنی واقعاً درست است؟"}
-   ]
+    {
+     "who": "kian",
+     "en": "Everybody, listen! I've made a huge discovery.",
+     "fa": "همه گوش کنید! یک کشفِ بزرگ کرده‌ام."
+    },
+    {
+     "who": "kian",
+     "en": "Kids with bigger feet are better readers!",
+     "fa": "بچه‌هایی که پای بزرگ‌تری دارند، بهتر کتاب می‌خوانند!"
+    },
+    {
+     "who": "hudhud",
+     "en": "Hmm. Is that true?",
+     "fa": "هوم. یعنی واقعاً درست است؟"
+    }
+   ],
+   "sound": "Sunny courtyard with a small fountain: a group of children go ooh and clap excitedly, birds chirping, water trickling"
   },
   {
    "id": "c2",
    "motion": "The little curly-haired boy slides the wooden ruler along each child's bare foot in turn, from the smallest foot to the biggest; the children wiggle their toes and giggle; the girl with red glasses writes in her notebook; the single hoopoe stays on the ground where it is and only turns its head (there is only ever one hoopoe). Static camera; everyone stays in place, with no cut and no jump back to the start.",
    "lines": [
-    {"who": "ava", "en": "Let's test it. First, we measure everyone's feet.", "fa": "بیایید امتحانش کنیم. اول پای همه را اندازه می‌گیریم."},
-    {"who": "nima", "en": "Hold still, please!", "fa": "لطفاً تکان نخور!"}
-   ]
+    {
+     "who": "ava",
+     "en": "Let's test it. First, we measure everyone's feet.",
+     "fa": "بیایید امتحانش کنیم. اول پای همه را اندازه می‌گیریم."
+    },
+    {
+     "who": "nima",
+     "en": "Hold still, please!",
+     "fa": "لطفاً تکان نخور!"
+    }
+   ],
+   "sound": "Sunny courtyard: children giggling softly, a wooden ruler tapping on stone tiles, paper rustling, birds chirping"
   },
   {
    "id": "c3",
    "motion": "The three children read their books: the little girl frowns and traces the words with her finger, the boy turns a page, the tall girl reads easily and smiles; the tall boy in the blue hoodie pumps his fist in triumph. Static camera.",
    "lines": [
-    {"who": "narrator", "en": "Next came the reading test.", "fa": "بعد، نوبتِ مسابقه‌ی کتاب‌خوانی بود."},
-    {"who": "kian", "en": "See? The biggest feet read best. I told you!", "fa": "دیدید؟ بزرگ‌ترین پا، بهترین کتاب‌خوان. گفته بودم!"}
-   ]
+    {
+     "who": "narrator",
+     "en": "Next came the reading test.",
+     "fa": "بعد، نوبتِ مسابقه‌ی کتاب‌خوانی بود."
+    },
+    {
+     "who": "kian",
+     "en": "See? The biggest feet read best. I told you!",
+     "fa": "دیدید؟ بزرگ‌ترین پا، بهترین کتاب‌خوان. گفته بودم!"
+    }
+   ],
+   "sound": "Quiet sunny courtyard: book pages turning, soft murmur of children reading, birds chirping, one cheerful cheer at the end"
   },
   {
    "id": "c4",
-   "video": {"engine": "veo"},
+   "video": {
+    "engine": "veo"
+   },
    "motion": "The little curly-haired boy takes a few wobbly, flapping steps in the enormous shoes, nearly trips and sits down with a soft bump, still holding the book upside down; the children laugh kindly; the hoopoe covers its eyes with one wing. Static camera, playful.",
    "lines": [
-    {"who": "narrator", "en": "So Sam tried on the biggest shoes in town.", "fa": "پس نیما بزرگ‌ترین کفش‌های شهر را پوشید."},
-    {"who": "nima", "en": "I still can't read the long words!", "fa": "هنوز کلمه‌های بلند را نمی‌توانم بخوانم!"}
-   ]
+    {
+     "who": "narrator",
+     "en": "So Sam tried on the biggest shoes in town.",
+     "fa": "پس نیما بزرگ‌ترین کفش‌های شهر را پوشید."
+    },
+    {
+     "who": "nima",
+     "en": "I still can't read the long words!",
+     "fa": "هنوز کلمه‌های بلند را نمی‌توانم بخوانم!"
+    }
+   ],
+   "sound": "Loud comic flapping of giant clown shoes slapping on stone tiles with every wobbly step, a soft thump as a child sits down, then children laughing kindly"
   },
   {
    "id": "c5",
    "motion": "The grandmother walks slowly in from the doorway with her tray and stops, smiling warmly; the three children turn their heads to look at her. Static camera; at the end the three children stand still in the same places as at the start.",
    "lines": [
-    {"who": "grandma", "en": "What a clever test, my dears!", "fa": "چه آزمایشِ زیرکانه‌ای، عزیزانم!"},
-    {"who": "grandma", "en": "But tell me: how old is each of them?", "fa": "ولی بگویید ببینم: هر کدام چند سال دارند؟"}
-   ]
+    {
+     "who": "grandma",
+     "en": "What a clever test, my dears!",
+     "fa": "چه آزمایشِ زیرکانه‌ای، عزیزانم!"
+    },
+    {
+     "who": "grandma",
+     "en": "But tell me: how old is each of them?",
+     "fa": "ولی بگویید ببینم: هر کدام چند سال دارند؟"
+    }
+   ],
+   "sound": "Clear footsteps on stone tiles, tea glasses clinking together on a metal tray, birds singing, a small fountain splashing"
   },
   {
    "id": "c6",
    "motion": "The five children on the bench read quietly and gently swing their bare feet; one turns a page. Nobody gets up and nobody moves along the bench: all five children stay exactly where they sit, and no one joins them. The girl with red glasses stays standing at the far right, nods and writes in her notebook; the single hoopoe on her shoulder bobs its crest. Static camera, calm.",
    "lines": [
-    {"who": "ava", "en": "So let's be fair. We'll only compare kids who are the same age.", "fa": "پس بیایید منصف باشیم. فقط بچه‌هایی را مقایسه می‌کنیم که هم‌سن‌اند."}
-   ]
+    {
+     "who": "ava",
+     "en": "So let's be fair. We'll only compare kids who are the same age.",
+     "fa": "پس بیایید منصف باشیم. فقط بچه‌هایی را مقایسه می‌کنیم که هم‌سن‌اند."
+    }
+   ],
+   "sound": "Shady quiet courtyard: book pages turning, bare feet swinging, a pencil scribbling, birds chirping, a small fountain trickling"
   },
   {
    "id": "c7",
-   "video": {"engine": "veo"},
+   "video": {
+    "engine": "veo"
+   },
    "motion": "The tall boy in the blue hoodie laughs and gives the girl with red glasses a high five; the little curly-haired boy measures the hoopoe's tiny foot and the hoopoe hops happily; the grandmother hands out cookies; warm and joyful. Slow, gentle push-in.",
    "lines": [
-    {"who": "kian", "en": "Okay, okay. It wasn't the feet. It was age!", "fa": "باشه، باشه. کارِ پا نبود. کارِ سن بود!"},
-    {"who": "narrator", "en": "Case closed, Detective! You found a hidden cause.", "fa": "پرونده بسته شد، کارآگاه! تو یک علتِ پنهان پیدا کردی."}
-   ]
+    {
+     "who": "kian",
+     "en": "Okay, okay. It wasn't the feet. It was age!",
+     "fa": "باشه، باشه. کارِ پا نبود. کارِ سن بود!"
+    },
+    {
+     "who": "narrator",
+     "en": "Case closed, Detective! You found a hidden cause.",
+     "fa": "پرونده بسته شد، کارآگاه! تو یک علتِ پنهان پیدا کردی."
+    }
+   ],
+   "sound": "Golden sunset courtyard: children laughing happily, a high five clap, a little bird hopping, cookies crunching, warm and joyful"
   }
  ],
  "lines": {
-  "ask-believe": {"who": "hudhud", "en": "What do you think?", "fa": "تو چه فکر می‌کنی؟"},
-  "r-yes": {"who": "hudhud", "en": "Lots of people would believe it. But a detective checks first. Let's test it!", "fa": "خیلی‌ها باورش می‌کنند. ولی کارآگاه اول بررسی می‌کند. بیا امتحانش کنیم!"},
-  "r-unsure": {"who": "hudhud", "en": "Not sure yet? That's exactly how detectives start. Let's test it!", "fa": "هنوز مطمئن نیستی؟ کارآگاه‌ها هم دقیقاً همین‌طور شروع می‌کنند. بیا امتحانش کنیم!"},
-  "r-no": {"who": "hudhud", "en": "Maybe you're right. But how could we know for sure? Let's test it!", "fa": "شاید حق با تو باشد. ولی از کجا مطمئن شویم؟ بیا امتحانش کنیم!"},
-  "ask-measure": {"who": "ava", "en": "Your turn. Tap each foot to measure it.", "fa": "حالا نوبتِ توست. روی هر پا بزن تا اندازه‌اش را بگیری."},
-  "r-measured": {"who": "nima", "en": "Small, middle, and big!", "fa": "کوچک، متوسط، و بزرگ!"},
-  "ask-why": {"who": "hudhud", "en": "Why does the kid with the biggest feet read best?", "fa": "چرا بچه‌ای که بزرگ‌ترین پا را دارد، بهتر از همه می‌خواند؟"},
-  "r-rewind": {"who": "hudhud", "en": "Big shoes don't change what's in your head. Let's rewind and think again!", "fa": "کفشِ بزرگ چیزی را که توی سرت است عوض نمی‌کند. برگردیم عقب و دوباره فکر کنیم!"},
-  "r-else": {"who": "hudhud", "en": "Yes! A good detective asks: what else is different?", "fa": "آفرین! کارآگاهِ خوب می‌پرسد: دیگر چه چیزی فرق دارد؟"},
-  "ask-ages": {"who": "grandma", "en": "Can you guess? Drag each age to a child.", "fa": "می‌توانی حدس بزنی؟ هر سن را بکش و روی یک بچه بگذار."},
-  "r-age-miss": {"who": "grandma", "en": "Hmm, look at how tall they are.", "fa": "هوم، ببین قدشان چقدر است."},
-  "r-ages": {"who": "grandma", "en": "Yes! Older kids have bigger feet. And older kids have been reading for more years. Age is the hidden cause!", "fa": "درست است! بچه‌های بزرگ‌تر پای بزرگ‌تری دارند. و سال‌های بیشتری است که کتاب می‌خوانند. سن، علتِ پنهان است!"},
-  "ask-inspect": {"who": "ava", "en": "Tap each kid to check their feet and their books.", "fa": "روی هر بچه بزن و پا و کتاب‌هایش را ببین."},
-  "ask-same": {"who": "ava", "en": "They're all nine. Do bigger feet read better now?", "fa": "همه نُه ساله‌اند. حالا پای بزرگ‌تر یعنی کتاب‌خوانِ بهتر؟"},
-  "r-same-no": {"who": "ava", "en": "Look again: the girl with the smallest feet read the most books!", "fa": "دوباره نگاه کن: دختری که کوچک‌ترین پا را دارد، بیشترین کتاب را خوانده!"},
-  "r-same-yes": {"who": "hudhud", "en": "Right! When everyone is the same age, the pattern disappears.", "fa": "درست است! وقتی همه هم‌سن‌اند، آن الگو ناپدید می‌شود."},
-  "teaser": {"who": "hudhud", "en": "Next case: on days when lots of ice cream is sold, more people get sunburned. Does ice cream cause sunburn?", "fa": "پرونده‌ی بعدی: روزهایی که بستنیِ زیادی فروخته می‌شود، آدم‌های بیشتری آفتاب‌سوخته می‌شوند. یعنی بستنی باعثِ آفتاب‌سوختگی است؟"}
+  "ask-believe": {
+   "who": "hudhud",
+   "en": "What do you think?",
+   "fa": "تو چه فکر می‌کنی؟"
+  },
+  "r-yes": {
+   "who": "hudhud",
+   "en": "Lots of people would believe it. But a detective checks first. Let's test it!",
+   "fa": "خیلی‌ها باورش می‌کنند. ولی کارآگاه اول بررسی می‌کند. بیا امتحانش کنیم!"
+  },
+  "r-unsure": {
+   "who": "hudhud",
+   "en": "Not sure yet? That's exactly how detectives start. Let's test it!",
+   "fa": "هنوز مطمئن نیستی؟ کارآگاه‌ها هم دقیقاً همین‌طور شروع می‌کنند. بیا امتحانش کنیم!"
+  },
+  "r-no": {
+   "who": "hudhud",
+   "en": "Maybe you're right. But how could we know for sure? Let's test it!",
+   "fa": "شاید حق با تو باشد. ولی از کجا مطمئن شویم؟ بیا امتحانش کنیم!"
+  },
+  "ask-measure": {
+   "who": "ava",
+   "en": "Your turn. Tap each foot to measure it.",
+   "fa": "حالا نوبتِ توست. روی هر پا بزن تا اندازه‌اش را بگیری."
+  },
+  "r-measured": {
+   "who": "nima",
+   "en": "Small, middle, and big!",
+   "fa": "کوچک، متوسط، و بزرگ!"
+  },
+  "ask-why": {
+   "who": "hudhud",
+   "en": "Why does the kid with the biggest feet read best?",
+   "fa": "چرا بچه‌ای که بزرگ‌ترین پا را دارد، بهتر از همه می‌خواند؟"
+  },
+  "r-rewind": {
+   "who": "hudhud",
+   "en": "Big shoes don't change what's in your head. Let's rewind and think again!",
+   "fa": "کفشِ بزرگ چیزی را که توی سرت است عوض نمی‌کند. برگردیم عقب و دوباره فکر کنیم!"
+  },
+  "r-else": {
+   "who": "hudhud",
+   "en": "Yes! A good detective asks: what else is different?",
+   "fa": "آفرین! کارآگاهِ خوب می‌پرسد: دیگر چه چیزی فرق دارد؟"
+  },
+  "ask-ages": {
+   "who": "grandma",
+   "en": "Can you guess? Drag each age to a child.",
+   "fa": "می‌توانی حدس بزنی؟ هر سن را بکش و روی یک بچه بگذار."
+  },
+  "r-age-miss": {
+   "who": "grandma",
+   "en": "Hmm, look at how tall they are.",
+   "fa": "هوم، ببین قدشان چقدر است."
+  },
+  "r-ages": {
+   "who": "grandma",
+   "en": "Yes! Older kids have bigger feet. And older kids have been reading for more years. Age is the hidden cause!",
+   "fa": "درست است! بچه‌های بزرگ‌تر پای بزرگ‌تری دارند. و سال‌های بیشتری است که کتاب می‌خوانند. سن، علتِ پنهان است!"
+  },
+  "ask-inspect": {
+   "who": "ava",
+   "en": "Tap each kid to check their feet and their books.",
+   "fa": "روی هر بچه بزن و پا و کتاب‌هایش را ببین."
+  },
+  "ask-same": {
+   "who": "ava",
+   "en": "They're all nine. Do bigger feet read better now?",
+   "fa": "همه نُه ساله‌اند. حالا پای بزرگ‌تر یعنی کتاب‌خوانِ بهتر؟"
+  },
+  "r-same-no": {
+   "who": "ava",
+   "en": "Look again: the girl with the smallest feet read the most books!",
+   "fa": "دوباره نگاه کن: دختری که کوچک‌ترین پا را دارد، بیشترین کتاب را خوانده!"
+  },
+  "r-same-yes": {
+   "who": "hudhud",
+   "en": "Right! When everyone is the same age, the pattern disappears.",
+   "fa": "درست است! وقتی همه هم‌سن‌اند، آن الگو ناپدید می‌شود."
+  },
+  "teaser": {
+   "who": "hudhud",
+   "en": "Next case: on days when lots of ice cream is sold, more people get sunburned. Does ice cream cause sunburn?",
+   "fa": "پرونده‌ی بعدی: روزهایی که بستنیِ زیادی فروخته می‌شود، آدم‌های بیشتری آفتاب‌سوخته می‌شوند. یعنی بستنی باعثِ آفتاب‌سوختگی است؟"
+  }
  },
  "steps": [
-  {"id": "open", "clip": "c1"},
-  {"id": "believe", "do": "choose", "say": "ask-believe", "q": {"en": "What do you think?", "fa": "تو چه فکر می‌کنی؟"},
+  {
+   "id": "open",
+   "clip": "c1"
+  },
+  {
+   "id": "believe",
+   "do": "choose",
+   "say": "ask-believe",
+   "q": {
+    "en": "What do you think?",
+    "fa": "تو چه فکر می‌کنی؟"
+   },
    "options": [
-    {"id": "yes", "icon": "up", "t": {"en": "Yes, I believe it!", "fa": "آره، باور می‌کنم!"}, "say": "r-yes"},
-    {"id": "unsure", "icon": "hmm", "t": {"en": "I'm not sure yet", "fa": "هنوز مطمئن نیستم"}, "say": "r-unsure"},
-    {"id": "no", "icon": "down", "t": {"en": "No way!", "fa": "امکان ندارد!"}, "say": "r-no"}
-   ]},
-  {"id": "measure", "clip": "c2"},
-  {"id": "feet", "do": "tap", "say": "ask-measure", "q": {"en": "Tap each foot to measure it.", "fa": "روی هر پا بزن تا اندازه‌اش را بگیری."},
+    {
+     "id": "yes",
+     "icon": "up",
+     "t": {
+      "en": "Yes, I believe it!",
+      "fa": "آره، باور می‌کنم!"
+     },
+     "say": "r-yes"
+    },
+    {
+     "id": "unsure",
+     "icon": "hmm",
+     "t": {
+      "en": "I'm not sure yet",
+      "fa": "هنوز مطمئن نیستم"
+     },
+     "say": "r-unsure"
+    },
+    {
+     "id": "no",
+     "icon": "down",
+     "t": {
+      "en": "No way!",
+      "fa": "امکان ندارد!"
+     },
+     "say": "r-no"
+    }
+   ]
+  },
+  {
+   "id": "measure",
+   "clip": "c2"
+  },
+  {
+   "id": "feet",
+   "do": "tap",
+   "say": "ask-measure",
+   "q": {
+    "en": "Tap each foot to measure it.",
+    "fa": "روی هر پا بزن تا اندازه‌اش را بگیری."
+   },
    "after": "r-measured",
    "spots": [
-    {"x": 32, "y": 88, "t": {"en": "18 cm", "fa": "۱۸ سانت"}},
-    {"x": 49, "y": 87, "t": {"en": "21 cm", "fa": "۲۱ سانت"}},
-    {"x": 64, "y": 86, "t": {"en": "24 cm", "fa": "۲۴ سانت"}}
-   ]},
-  {"id": "read", "clip": "c3"},
-  {"id": "why", "do": "choose", "say": "ask-why", "q": {"en": "Why does the kid with the biggest feet read best?", "fa": "چرا بچه‌ای که بزرگ‌ترین پا را دارد، بهتر از همه می‌خواند؟"},
+    {
+     "x": 32,
+     "y": 88,
+     "t": {
+      "en": "18 cm",
+      "fa": "۱۸ سانت"
+     }
+    },
+    {
+     "x": 49,
+     "y": 87,
+     "t": {
+      "en": "21 cm",
+      "fa": "۲۱ سانت"
+     }
+    },
+    {
+     "x": 64,
+     "y": 86,
+     "t": {
+      "en": "24 cm",
+      "fa": "۲۴ سانت"
+     }
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "clip": "c3"
+  },
+  {
+   "id": "why",
+   "do": "choose",
+   "say": "ask-why",
+   "q": {
+    "en": "Why does the kid with the biggest feet read best?",
+    "fa": "چرا بچه‌ای که بزرگ‌ترین پا را دارد، بهتر از همه می‌خواند؟"
+   },
    "options": [
-    {"id": "push", "icon": "foot", "t": {"en": "Big feet push words up into your brain", "fa": "پای بزرگ کلمه‌ها را به مغز هل می‌دهد"}, "go": "shoes"},
-    {"id": "magic", "icon": "shoe", "t": {"en": "Big shoes are magic", "fa": "کفشِ بزرگ جادویی است"}, "go": "shoes"},
-    {"id": "else", "icon": "q", "t": {"en": "Something else is different about these kids", "fa": "یک چیزِ دیگر در این بچه‌ها فرق دارد"}, "say": "r-else", "go": "grandma", "right": true}
-   ]},
-  {"id": "shoes", "side": true, "clip": "c4", "after": "r-rewind", "rewind": "why"},
-  {"id": "grandma", "clip": "c5"},
-  {"id": "ages", "do": "drag", "say": "ask-ages", "q": {"en": "Drag each age to a child.", "fa": "هر سن را بکش و روی یک بچه بگذار."},
-   "miss": "r-age-miss", "after": "r-ages", "reveal": "cause",
-   "cards": [{"t": {"en": "6", "fa": "۶"}, "to": 0}, {"t": {"en": "9", "fa": "۹"}, "to": 1}, {"t": {"en": "12", "fa": "۱۲"}, "to": 2}],
-   "targets": [{"x": 38, "y": 33}, {"x": 49, "y": 27}, {"x": 61, "y": 20}],
-   "cause": {"top": {"en": "Age", "fa": "سن"}, "left": {"en": "bigger feet", "fa": "پای بزرگ‌تر"}, "right": {"en": "more years of reading", "fa": "سال‌های بیشترِ کتاب‌خواندن"}}},
-  {"id": "fair", "clip": "c6"},
-  {"id": "inspect", "do": "tap", "levels": ["investigators"], "say": "ask-inspect", "q": {"en": "Tap each kid: feet and books.", "fa": "روی هر بچه بزن: پا و کتاب‌ها."},
+    {
+     "id": "push",
+     "icon": "foot",
+     "t": {
+      "en": "Big feet push words up into your brain",
+      "fa": "پای بزرگ کلمه‌ها را به مغز هل می‌دهد"
+     },
+     "go": "shoes"
+    },
+    {
+     "id": "magic",
+     "icon": "shoe",
+     "t": {
+      "en": "Big shoes are magic",
+      "fa": "کفشِ بزرگ جادویی است"
+     },
+     "go": "shoes"
+    },
+    {
+     "id": "else",
+     "icon": "q",
+     "t": {
+      "en": "Something else is different about these kids",
+      "fa": "یک چیزِ دیگر در این بچه‌ها فرق دارد"
+     },
+     "say": "r-else",
+     "go": "grandma",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "shoes",
+   "side": true,
+   "clip": "c4",
+   "after": "r-rewind",
+   "rewind": "why"
+  },
+  {
+   "id": "grandma",
+   "clip": "c5"
+  },
+  {
+   "id": "ages",
+   "do": "drag",
+   "say": "ask-ages",
+   "q": {
+    "en": "Drag each age to a child.",
+    "fa": "هر سن را بکش و روی یک بچه بگذار."
+   },
+   "miss": "r-age-miss",
+   "after": "r-ages",
+   "reveal": "cause",
+   "cards": [
+    {
+     "t": {
+      "en": "6",
+      "fa": "۶"
+     },
+     "to": 0
+    },
+    {
+     "t": {
+      "en": "9",
+      "fa": "۹"
+     },
+     "to": 1
+    },
+    {
+     "t": {
+      "en": "12",
+      "fa": "۱۲"
+     },
+     "to": 2
+    }
+   ],
+   "targets": [
+    {
+     "x": 38,
+     "y": 33
+    },
+    {
+     "x": 49,
+     "y": 27
+    },
+    {
+     "x": 61,
+     "y": 20
+    }
+   ],
+   "cause": {
+    "top": {
+     "en": "Age",
+     "fa": "سن"
+    },
+    "left": {
+     "en": "bigger feet",
+     "fa": "پای بزرگ‌تر"
+    },
+    "right": {
+     "en": "more years of reading",
+     "fa": "سال‌های بیشترِ کتاب‌خواندن"
+    }
+   }
+  },
+  {
+   "id": "fair",
+   "clip": "c6"
+  },
+  {
+   "id": "inspect",
+   "do": "tap",
+   "levels": [
+    "investigators"
+   ],
+   "say": "ask-inspect",
+   "q": {
+    "en": "Tap each kid: feet and books.",
+    "fa": "روی هر بچه بزن: پا و کتاب‌ها."
+   },
    "spots": [
-    {"x": 17, "y": 50, "t": {"en": "feet 19 cm · 6 books", "fa": "پا ۱۹ سانت · ۶ کتاب"}},
-    {"x": 30, "y": 50, "t": {"en": "feet 20 cm · 2 books", "fa": "پا ۲۰ سانت · ۲ کتاب"}},
-    {"x": 44, "y": 50, "t": {"en": "feet 21 cm · 4 books", "fa": "پا ۲۱ سانت · ۴ کتاب"}},
-    {"x": 59, "y": 50, "t": {"en": "feet 22 cm · 3 books", "fa": "پا ۲۲ سانت · ۳ کتاب"}},
-    {"x": 71, "y": 50, "t": {"en": "feet 23 cm · 5 books", "fa": "پا ۲۳ سانت · ۵ کتاب"}}
-   ]},
-  {"id": "same", "do": "choose", "say": "ask-same", "q": {"en": "All nine years old. Do bigger feet read better?", "fa": "همه نُه ساله. آیا پای بزرگ‌تر بهتر می‌خواند؟"},
+    {
+     "x": 17,
+     "y": 50,
+     "t": {
+      "en": "feet 19 cm · 6 books",
+      "fa": "پا ۱۹ سانت · ۶ کتاب"
+     }
+    },
+    {
+     "x": 30,
+     "y": 50,
+     "t": {
+      "en": "feet 20 cm · 2 books",
+      "fa": "پا ۲۰ سانت · ۲ کتاب"
+     }
+    },
+    {
+     "x": 44,
+     "y": 50,
+     "t": {
+      "en": "feet 21 cm · 4 books",
+      "fa": "پا ۲۱ سانت · ۴ کتاب"
+     }
+    },
+    {
+     "x": 59,
+     "y": 50,
+     "t": {
+      "en": "feet 22 cm · 3 books",
+      "fa": "پا ۲۲ سانت · ۳ کتاب"
+     }
+    },
+    {
+     "x": 71,
+     "y": 50,
+     "t": {
+      "en": "feet 23 cm · 5 books",
+      "fa": "پا ۲۳ سانت · ۵ کتاب"
+     }
+    }
+   ]
+  },
+  {
+   "id": "same",
+   "do": "choose",
+   "say": "ask-same",
+   "q": {
+    "en": "All nine years old. Do bigger feet read better?",
+    "fa": "همه نُه ساله. آیا پای بزرگ‌تر بهتر می‌خواند؟"
+   },
    "options": [
-    {"id": "yes", "icon": "up", "t": {"en": "Yes", "fa": "آره"}, "say": "r-same-no", "retry": true},
-    {"id": "no", "icon": "down", "t": {"en": "No", "fa": "نه"}, "say": "r-same-yes", "go": "end", "right": true}
-   ]},
-  {"id": "end", "clip": "c7"},
-  {"id": "finish", "do": "finish", "say": "teaser",
-   "card": {"title": {"en": "Hidden cause", "fa": "علتِ پنهان"},
-            "explorers": {"en": "Sometimes a secret third thing makes two things go together.", "fa": "گاهی یک چیزِ سومِ پنهان باعث می‌شود دو چیز با هم دیده شوند."},
-            "investigators": {"en": "Two things can go together because a third thing pushes both. Compare like with like to find it.", "fa": "دو چیز ممکن است با هم دیده شوند چون چیزِ سومی هر دو را جلو می‌برد. برای پیدا کردنش، چیزهای هم‌شکل را با هم مقایسه کن."}},
-   "next": {"img": "kids/kids-icecream", "game": "correlation-detective", "t": {"en": "Next case: ice cream and sunburn", "fa": "پرونده‌ی بعد: بستنی و آفتاب‌سوختگی"}}}
- ]
+    {
+     "id": "yes",
+     "icon": "up",
+     "t": {
+      "en": "Yes",
+      "fa": "آره"
+     },
+     "say": "r-same-no",
+     "retry": true
+    },
+    {
+     "id": "no",
+     "icon": "down",
+     "t": {
+      "en": "No",
+      "fa": "نه"
+     },
+     "say": "r-same-yes",
+     "go": "end",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "clip": "c7"
+  },
+  {
+   "id": "finish",
+   "do": "finish",
+   "say": "teaser",
+   "card": {
+    "title": {
+     "en": "Hidden cause",
+     "fa": "علتِ پنهان"
+    },
+    "explorers": {
+     "en": "Sometimes a secret third thing makes two things go together.",
+     "fa": "گاهی یک چیزِ سومِ پنهان باعث می‌شود دو چیز با هم دیده شوند."
+    },
+    "investigators": {
+     "en": "Two things can go together because a third thing pushes both. Compare like with like to find it.",
+     "fa": "دو چیز ممکن است با هم دیده شوند چون چیزِ سومی هر دو را جلو می‌برد. برای پیدا کردنش، چیزهای هم‌شکل را با هم مقایسه کن."
+    }
+   },
+   "next": {
+    "img": "kids/kids-icecream",
+    "game": "correlation-detective",
+    "t": {
+     "en": "Next case: ice cream and sunburn",
+     "fa": "پرونده‌ی بعد: بستنی و آفتاب‌سوختگی"
+    }
+   }
+  }
+ ],
+ "sound_style": "Gentle, warm sound for a children's animated film set in a sunny courtyard; no clear speech, no words, no music with lyrics."
 }

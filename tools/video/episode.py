@@ -143,6 +143,35 @@ def raw_clip(ep, c):
     return vr, vr
 
 
+SFX_API = "https://api.elevenlabs.io/v1/sound-generation"
+
+
+def sound_effect(ep, c, seconds):
+    """The clip's own sound (birds, knocks, bells, footsteps) made from its "sound" description with ElevenLabs sound
+    effects, kept in tools/video/.cache/ by a hash of the description and length; None when the clip has none."""
+    text = c.get("sound")
+    if not text:
+        return None
+    seconds = round(min(22.0, max(1.0, seconds)), 1)
+    h = hashlib.sha1(json.dumps([text, seconds, ep.get("sound_style", "")], ensure_ascii=False).encode()).hexdigest()[:16]
+    out = V.CACHE / f"{ep['id']}-{c['id']}-sfx-{h}.mp3"
+    if out.exists():
+        return out
+    import os
+    import requests
+    key = os.environ.get("ELEVENLABS_API_KEY")
+    if not key:
+        raise SystemExit("ELEVENLABS_API_KEY is not set")
+    prompt = f"{text}. {ep.get('sound_style', '')}".strip()
+    r = requests.post(SFX_API, headers={"xi-api-key": key, "Content-Type": "application/json"}, timeout=180,
+                      json={"text": prompt, "duration_seconds": seconds, "prompt_influence": 0.55})
+    if r.status_code != 200:
+        raise SystemExit(f"sound effect refused for {c['id']} ({r.status_code}): {r.text[:300]}")
+    out.write_bytes(r.content)
+    print(f"  {c['id']}: sound made ({r.headers.get('character-cost', '?')} credits)", flush=True)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("episode")
@@ -168,11 +197,14 @@ def main():
             mp4 = out / f"{c['id']}.mp4"
             # the picture from the chosen clip; the soft film sound from the Veo clip when there is one (Pruna's is
             # near silent), otherwise silence
+            fx = sound_effect(ep, c, N.seconds(raw))
+            if fx:
+                sound = fx
             snd = ["-i", str(sound)] if sound else ["-f", "lavfi", "-t", "8", "-i", "anullsrc=r=44100:cl=mono"]
             N.ffmpeg("-i", str(raw), *snd, "-map", "0:v", "-map", "1:a", "-shortest",
                      "-vf", "scale=960:540:flags=lanczos,setsar=1", "-c:v", "libx264", "-preset", "slow", "-crf", "27",
                      "-pix_fmt", "yuv420p", "-profile:v", "main", "-movflags", "+faststart",
-                     "-af", "loudnorm=I=-30:TP=-6", "-c:a", "aac", "-b:a", "48k", "-ac", "1", str(mp4))
+                     "-af", "loudnorm=I=-29:TP=-5", "-c:a", "aac", "-b:a", "48k", "-ac", "1", str(mp4))
             N.ffmpeg("-sseof", "-0.1", "-i", str(raw), "-frames:v", "1", "-vf", "scale=960:540:flags=lanczos", "-q:v", "80", str(out / f"{c['id']}.last.webp"))
             N.ffmpeg("-i", str(raw), "-frames:v", "1", "-vf", "scale=960:540:flags=lanczos", "-q:v", "75", str(out / f"{c['id']}.first.webp"))
             entry = {"dur": round(N.seconds(mp4), 2), "voice": {}}

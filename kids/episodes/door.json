@@ -46,11 +46,11 @@
    "wolf": "Kourosh",
    "door": "Kourosh",
    "doorsweet": "Roya",
-   "shangul": "Roya",
-   "mangul": "Kourosh",
-   "grape": "Roya",
-   "kids": "Roya",
-   "narrator": "Roya"
+   "shangul": "Arash (fa, kids)",
+   "mangul": "Arash (fa, kids)",
+   "grape": "Sara (fa, kids)",
+   "kids": "Sara (fa, kids)",
+   "narrator": "Bahram (fa, storyteller)"
   }
  },
  "clips": [
@@ -71,7 +71,8 @@
      "en": "Remember: I have a soft voice and white feet. And only I know our secret song.",
      "fa": "یادتان باشد: صدای من نرم است و پاهایم سفید. و فقط من آهنگِ رازمان را بلدم."
     }
-   ]
+   ],
+   "sound": "Sunny countryside morning: birds chirping, a soft breeze in leaves, little goat bells jingling, small goats bleating goodbye, light hoof footsteps walking away on a dirt path"
   },
   {
    "id": "c2",
@@ -83,7 +84,8 @@
      "en": "Eek! Who's that?",
      "fa": "وای! کیه؟"
     }
-   ]
+   ],
+   "sound": "Inside a quiet cosy cottage: three loud firm knocks on a wooden door, then little goats bleat in surprise and their small bells jingle nervously"
   },
   {
    "id": "c3",
@@ -99,7 +101,8 @@
      "en": "The wolf ate a big spoon of honey, to make his voice soft and sweet.",
      "fa": "گرگ یک قاشقِ بزرگ عسل خورد تا صدایش نرم و شیرین شود."
     }
-   ]
+   ],
+   "sound": "Sunny forest clearing: bees buzzing around a hive, a loud comic slurp of honey from a wooden spoon, a satisfied lip smack, birds chirping"
   },
   {
    "id": "c4",
@@ -113,7 +116,8 @@
      "en": "Ooh! What's that?",
      "fa": "اوه! این چیه؟"
     }
-   ]
+   ],
+   "sound": "Inside a quiet cottage: a furry paw scraping and scratching across a wooden floor under a door, little goats gasp, tiny bells jingle"
   },
   {
    "id": "c5",
@@ -129,7 +133,8 @@
      "en": "Then the wolf ran to the baker, and rubbed his feet in white flour.",
      "fa": "بعد گرگ دوید پیشِ نانوا و پاهایش را توی آردِ سفید مالید."
     }
-   ]
+   ],
+   "sound": "Village bakery: a soft powdery whoosh as paws plunge into a sack of flour, a puff of flour, then one big comic sneeze, quiet bakery ambience"
   },
   {
    "id": "c6",
@@ -143,7 +148,8 @@
      "en": "Look! A foot!",
      "fa": "نگاه کن! یک پا!"
     }
-   ]
+   ],
+   "sound": "Inside a quiet cottage: a soft brushing, scraping sound under a door, a light sprinkle of flour, little goat bells jingle, a curious small bleat"
   },
   {
    "id": "c7",
@@ -154,7 +160,8 @@
      "en": "Ahem. La la... la? Laaa!",
      "fa": "اِهِم. لا لا... لا؟ لااا!"
     }
-   ]
+   ],
+   "sound": "Outside a cottage: birds chirping, then birds fluttering away in alarm, a comic slide whistle going down, a little cough"
   },
   {
    "id": "c8",
@@ -178,7 +185,8 @@
      "en": "Hee hee hee!",
      "fa": "هی هی هی!"
     }
-   ]
+   ],
+   "sound": "Grumpy heavy stomping footsteps on a dirt path fading away into the woods, little goats giggling bleats from a window, birds chirping"
   },
   {
    "id": "c9",
@@ -194,7 +202,8 @@
      "en": "A voice can be copied. A white foot can be faked. But nobody else knows our song!",
      "fa": "صدا را می‌شود تقلید کرد. پای سفید را می‌شود ساختگی درست کرد. ولی هیچ‌کس دیگر آهنگِ ما را بلد نیست!"
     }
-   ]
+   ],
+   "sound": "Golden evening outdoors: happy little goats bleating softly, goat bells jingling, crickets and evening birds, warm and gentle"
   },
   {
    "id": "c10",
@@ -205,7 +214,8 @@
      "en": "Eek! Shut it, shut it!",
      "fa": "وای! ببندیدش، ببندیدش!"
     }
-   ]
+   ],
+   "sound": "A wooden door creaks open a crack, a comic sniff sniff, little goats squeal and bleat, the door slams shut with a bump, bells jingle"
   }
  ],
  "lines": {
@@ -721,5 +731,6 @@
     }
    }
   }
- ]
+ ],
+ "sound_style": "Gentle, warm sound for a children's animated film; no speech, no words, no music with lyrics."
 }

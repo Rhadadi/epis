@@ -1,6 +1,6 @@
 {
  "model": "eleven_v4_turbo",
- "note": "One ElevenLabs voice per role, per language. Persian has two native voices in the account (Roya, Kourosh); the other Persian roles share Roya until more Persian voices are designed.",
+ "note": "One ElevenLabs voice per role, per language. Persian has two native voices in the account (Roya, Kourosh); the other Persian roles share Roya until more Persian voices are designed. Four Persian voices were designed with ElevenLabs voice design (Sara and Arash for the young characters, Mehri for grandmothers, Bahram for the storyteller); children's voices cannot be designed, so young characters are voiced by light, youthful adult voices, as in cartoons.",
  "en": {
   "narrator": {
    "id": "JBFqnCBsd6RMkjVDRZzb",
@@ -75,6 +75,22 @@
   "fox": {
    "id": "VKDkQOjcRZb7aNtJGaWt",
    "name": "Kourosh"
+  },
+  "kid_girl": {
+   "id": "Cto1t391bnDyLyWmwbBR",
+   "name": "Sara (fa, kids)"
+  },
+  "kid_boy": {
+   "id": "wch7PVl2C1oHOba4B3oT",
+   "name": "Arash (fa, kids)"
+  },
+  "elder": {
+   "id": "qdyEA3sG385rwUTOwhtc",
+   "name": "Mehri (fa, elder)"
+  },
+  "teller": {
+   "id": "H5pmokzAQf8wQsJ1l22W",
+   "name": "Bahram (fa, storyteller)"
   }
  }
 }

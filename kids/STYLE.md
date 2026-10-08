@@ -107,6 +107,14 @@ The episode ends on a clue card, the child's first guess recalled ("At the start
   `drag` (cards onto people), `song` (listen, then play a tune back on bells) and `tune` (a tune played over the
   picture; `"wobble"` makes it sour). A wrong idea can play its own clip and then `rewind` to the question, or
   `back` to a later step.
+- Sound: every clip has a `"sound"` description (birds, knocks, bells, footsteps; no words) that
+  `tools/video/episode.py` turns into the film's own sound with ElevenLabs sound effects (about 90 credits per
+  8 seconds); the player plays it under the voices. Characters who act on screen should also say something, even a
+  squeal or a sneeze, so the film never moves in silence.
+- Persian voices: Roya and Kourosh (stock) plus four designed voices in `kids/voices.json`: Sara and Arash for
+  young characters (children's voices cannot be designed, so they are light, youthful adult voices, as in
+  cartoons), Mehri for grandmothers, Bahram for the storyteller. Give each character in an episode its own voice
+  where possible.
 - One idea per episode, spoken, few words on screen. Questions before answers (predict, then see). Every
   interaction is something the hands do. No timers, no losing, no streaks.
 

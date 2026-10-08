@@ -96,6 +96,7 @@
     // the bar's sound switch: off = no voices or film sound (the captions stay)
     var tsound = document.getElementById("tsound");
     function mute() { video.muted = !sound; voice.muted = !sound; line.muted = !sound; }
+    video.volume = 0.6;  // the film's own sound (birds, knocks, bells) sits under the voices
     if (tsound) {
       tsound.hidden = false;
       var paint = function () { tsound.setAttribute("aria-pressed", sound ? "true" : "false"); tsound.querySelector("span").textContent = sound ? T("ON", "روشن") : T("OFF", "خاموش"); };
