@@ -1,4 +1,44 @@
 {
+ "avatar-ava": {
+  "model": "gpt-image-2",
+  "prompt_sha": "758032b2834b6253",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   320
+  ]
+ },
+ "avatar-grandma": {
+  "model": "gpt-image-2",
+  "prompt_sha": "ab19176b0d0b75fd",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   320
+  ]
+ },
+ "avatar-kian": {
+  "model": "gpt-image-2",
+  "prompt_sha": "eb409653c7c963d6",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   320
+  ]
+ },
+ "avatar-nima": {
+  "model": "gpt-image-2",
+  "prompt_sha": "6673c36ff2d2a9d3",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   320
+  ]
+ },
  "hudhud-cheer": {
   "model": "gpt-image-2",
   "prompt_sha": "ebd2887163ae98f3",
@@ -81,6 +121,39 @@
   "prompt_sha": "78f3edff8b09b3a2",
   "size": "1536x1024",
   "made": "2026-10-07",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "page-books": {
+  "model": "gpt-image-2",
+  "prompt_sha": "f1e487e31982cdd8",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "page-grownups": {
+  "model": "gpt-image-2",
+  "prompt_sha": "3c7ac57a740a50f9",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "page-words": {
+  "model": "gpt-image-2",
+  "prompt_sha": "e1ce5a6e45c91315",
+  "size": "1536x1024",
+  "made": "2026-10-08",
   "reviewed": "pending",
   "widths": [
    800,
@@ -175,6 +248,39 @@
    1440
   ]
  },
+ "u01-s04": {
+  "model": "gpt-image-2",
+  "prompt_sha": "91244f090e55162a",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s05": {
+  "model": "gpt-image-2",
+  "prompt_sha": "e72c1e99909e4323",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "u01-s06": {
+  "model": "gpt-image-2",
+  "prompt_sha": "d356b8d985d5a8e1",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
  "u01-s07": {
   "model": "gpt-image-2",
   "prompt_sha": "0a62f8ac277ff3e5",
@@ -184,6 +290,97 @@
   "widths": [
    800,
    1440
+  ]
+ },
+ "u01-s08": {
+  "model": "gpt-image-2",
+  "prompt_sha": "c63cfa2165daa10a",
+  "size": "1536x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800,
+   1440
+  ]
+ },
+ "word-believe": {
+  "model": "gpt-image-2",
+  "prompt_sha": "9fdc32ac5d654c0e",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-evidence": {
+  "model": "gpt-image-2",
+  "prompt_sha": "5a8ef58a6113f518",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-fake": {
+  "model": "gpt-image-2",
+  "prompt_sha": "2adbc598db7c3dbf",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-guess": {
+  "model": "gpt-image-2",
+  "prompt_sha": "3d7b88d1afbfe01c",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-hope": {
+  "model": "gpt-image-2",
+  "prompt_sha": "2f6f0ec4e666e473",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-know": {
+  "model": "gpt-image-2",
+  "prompt_sha": "37c322e6690ac812",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-lucky-guess": {
+  "model": "gpt-image-2",
+  "prompt_sha": "25bb8ad6ac5fb077",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
+  ]
+ },
+ "word-reason": {
+  "model": "gpt-image-2",
+  "prompt_sha": "421c161dfb7e50e3",
+  "size": "1024x1024",
+  "made": "2026-10-08",
+  "reviewed": "pending",
+  "widths": [
+   800
   ]
  }
 }

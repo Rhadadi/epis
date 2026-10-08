@@ -241,7 +241,7 @@ def render_story(b, uid, meta, st, sync, root):
         else:
             inner, span = esc(ln["text"]), ""
         who = role_name(ln["role"], lang) if ln["role"] not in ("narrator",) else ""
-        tag = f'<b class="who">{esc(who)}</b>' if who else ""
+        tag = f'<b class="who">{avatar(root, ln["role"], "who-pic")}{esc(who)}</b>' if who else ""
         parts.append(f'<p class="line r-{ln["role"]}" id="{ln["id"]}"{span}>{tag}{inner}</p>')
     if cur is not None:
         parts.append("</div></figure>")
@@ -318,7 +318,8 @@ def render_lesson(b, md, text, uid, level, words, engines):
                 label = f'{label} <span class="kgame-t">{esc(g.get("title", ""))}</span>'
         else:
             content = render_md(b, md, inner, uid)
-        return f'\n\n<section class="kblk k-{kind}"><p class="kblk-k">{label}</p>{content}</section>\n\n'
+        face = avatar(b.up(2), BLOCK_GUIDE.get(kind, ""))
+        return f'\n\n<section class="kblk k-{kind}"><p class="kblk-k{" has-pic" if face else ""}">{face}{label}</p>{content}</section>\n\n'
 
     text = K.BLOCK.sub(block, text)
     out, _ = md.render(text, link_rewriter(b, uid))
@@ -347,6 +348,26 @@ def hudhud(root, pose="wave", cls="hudhud"):
     big = site_play.art_src(root, f"kids/hudhud-{pose}", 640)
     return (f'<img class="{cls} pic" src="{src}"' + (f' srcset="{src} 320w, {big} 640w" sizes="160px"' if big else "")
             + ' alt="" decoding="async">')
+
+
+AVATAR = {"ava": "avatar-ava", "nima": "avatar-nima", "kian": "avatar-kian", "grandma": "avatar-grandma",
+          "hudhud": "hudhud-wave", "hudhud-cheer": "hudhud-cheer", "hudhud-think": "hudhud-think"}
+BLOCK_GUIDE = {"opener": "hudhud", "think": "ava", "bigidea": "grandma", "words": "nima", "tryit": "hudhud-cheer",
+               "check": "hudhud-think", "talk": "kian", "further": "kian"}
+
+
+def page_banner(b, key):
+    """A painted banner at the top of a section page (kids/<page>/index.html)."""
+    import site_play
+    return site_play.picture(b.up(2), f"kids/{key}", cls="kpage-pic", sizes="(max-width: 820px) 100vw, 800px", lazy=False)
+
+
+def avatar(root, who, cls="kav"):
+    """A small round portrait of a cast member (assets/kids/art/), or "" until it has been painted."""
+    import site_play
+    key = AVATAR.get(who)
+    src = site_play.art_src(root, f"kids/{key}", 320) if key else None
+    return f'<img class="{cls}" src="{src}" alt="" decoding="async" loading="lazy">' if src else ""
 
 
 def for_level(g, level):
@@ -474,7 +495,7 @@ def words_body(b, live, words):
                     used += [w.strip() for w in re.split(r"[,\s]+", inner.strip()) if w.strip()]
     ids = list(dict.fromkeys(w for w in used if w in words))
     cards = "".join(word_card(b, words[w]) for w in sorted(ids, key=lambda w: words[w]["word"]))
-    return (f'<main id="main" class="kmain"><header class="khead"><h1>{L("Picture dictionary", "واژه‌نامهٔ تصویری")}</h1>'
+    return (f'<main id="main" class="kmain"><header class="khead">{page_banner(b, "page-words")}<h1>{L("Picture dictionary", "واژه‌نامهٔ تصویری")}</h1>'
             f'<p>{L("Every thinking word from the lessons, in plain words.", "همهٔ واژه‌های فکری درس‌ها، به زبانِ ساده.")}</p></header>'
             f'<div class="kwords kwords-all">{cards}</div></main>')
 
@@ -490,7 +511,7 @@ def books_body(b):
         cards.append(f'<article class="kbook"><p class="kicker">{esc(bk.get("ages", ""))} · {L("Unit", "درس")} {b.num(bk.get("unit", ""))}</p>'
                      f'<h3>{esc(bk["title"])}</h3><p class="kby">{esc(bk["author"])}, {b.num(bk["year"])}</p>'
                      f'<p>{esc(bk.get("why", ""))}</p><p class="kblk-k">{L("Talk about it", "با هم حرف بزنید")}</p><ul>{qs}</ul>{link}</article>')
-    return (f'<main id="main" class="kmain"><header class="khead"><h1>{L("Book club", "باشگاهِ کتاب")}</h1>'
+    return (f'<main id="main" class="kmain"><header class="khead">{page_banner(b, "page-books")}<h1>{L("Book club", "باشگاهِ کتاب")}</h1>'
             f'<p>{L("Famous books to read alongside the quests. We never copy them: borrow them from a library or a friend, then use the questions to talk.", "کتاب‌های معروف برای خواندن همراهِ ماجراها. ما از آن‌ها رونوشت نمی‌گذاریم: از کتابخانه یا دوست قرض بگیر و بعد با این پرسش‌ها درباره‌شان حرف بزنید.")}</p>'
             f'</header><div class="kbooks">{"".join(cards)}</div></main>')
 
@@ -500,5 +521,5 @@ def grownups_body(b, md, data, live):
     _, text = K.front_matter((K.KIDS / f"grownups.{lang}.md").read_text(encoding="utf-8"))
     body, _ = md.render(text, link_rewriter(b, ""))
     units = "".join(f'<li><a href="../{u["id"]}/grownups.html">{esc(K.pick(u, lang)["title"])}</a></li>' for u in live)
-    return (f'<main id="main" class="kmain"><header class="khead"><h1>{L("For grown-ups", "برای بزرگ‌ترها")}</h1></header>'
+    return (f'<main id="main" class="kmain"><header class="khead">{page_banner(b, "page-grownups")}<h1>{L("For grown-ups", "برای بزرگ‌ترها")}</h1></header>'
             f'<div class="prose kgrownups">{body}<h2>{L("Notes for each unit", "یادداشتِ هر درس")}</h2><ul>{units}</ul></div></main>')

@@ -209,6 +209,177 @@
     640
    ],
    "prompt": "Use the attached character sheet for how Hudhud looks. Only Hudhud the hoopoe, alone, centred, full body, jumping with joy, both wings up, crest fanned out, delighted, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-know",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Ava looks out of a window at pouring rain and nods confidently while already holding her umbrella: she can see it, so she knows. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-guess",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Nima holds a wrapped present close to his ear, eyes squeezed shut, shrugging and smiling as he guesses what is inside. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-hope",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Kian crosses his fingers tightly, holding his breath, as a football flies towards a goal in a schoolyard. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-believe",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. At night on a quiet street, Nima walks along looking up over his shoulder at the full moon, sure that it is following him; Ava smiles beside him. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-evidence",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Muddy paw prints lead across a clean kitchen floor to a guilty-looking cat with muddy paws; Ava follows the prints while Nima studies one through his magnifying glass. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-reason",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Under a sky of dark grey clouds, Ava points up at the clouds and hands Kian an umbrella; he takes it, convinced. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-fake",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Kian wears an obviously fake disguise (a stick-on moustache and big novelty glasses) and pretends to be a stranger; Nima squints at him, not fooled at all. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "word-lucky-guess",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    800
+   ],
+   "prompt": "Use the attached character sheet. A small square picture-dictionary illustration, simple and clear, one idea only, a few characters, uncluttered background. Blindfolded, Nima throws a soft dart and hits the very centre of a target by pure luck; Ava and Kian gasp in surprise. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "avatar-ava",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320
+   ],
+   "prompt": "Use the attached character sheet for how the character looks. A head-and-shoulders portrait, centred, of Ava, smiling with a curious look, one finger raised as if asking a question, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "avatar-nima",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320
+   ],
+   "prompt": "Use the attached character sheet for how the character looks. A head-and-shoulders portrait, centred, of Nima, grinning, peeking through his toy magnifying glass so one eye looks huge, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "avatar-kian",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320
+   ],
+   "prompt": "Use the attached character sheet for how the character looks. A head-and-shoulders portrait, centred, of Kian, confident grin, one eyebrow raised, arms folded, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "avatar-grandma",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1024x1024",
+   "quality": "medium",
+   "widths": [
+    320
+   ],
+   "prompt": "Use the attached character sheet for how the character looks. A head-and-shoulders portrait, centred, of Grandma Mehri, warm smile, reading glasses on the tip of her nose, on a plain flat warm-cream background with nothing else. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "page-words",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A wide page-banner illustration with calm space at the top. Ava, Nima and Kian sit on a giant open dictionary as if it were a meadow, little painted pictures floating up out of its pages like butterflies (a magnifying glass, a lightbulb, a footprint, a question-shaped cloud, a puzzle piece); Hudhud catches one in his beak. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "page-books",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A wide page-banner illustration with calm space at the top. A cosy book corner in a sunny room: shelves of colourful books with blank spines, cushions on a Persian carpet; Grandma Mehri reads aloud while Ava, Nima and Kian listen, each holding a different book; Hudhud perches on a stack of books. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "page-grownups",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "medium",
+   "prompt": "Use the attached character sheet. A wide page-banner illustration with calm space at the top. A warm evening scene in a courtyard: a mother and a teacher (two adult women, one in a cardigan, one with a notebook) sit at a table with tea, chatting happily, while in the background Ava, Nima and Kian play a board game on the steps and Grandma Mehri watches with Hudhud on her shoulder. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
   }
  ]
 }

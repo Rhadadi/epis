@@ -351,3 +351,14 @@ html[data-kids] .kstop a,.kstop .soon{padding-top:0;overflow:hidden}
 .kband .hudhud.pic{top:12px;inset-inline-end:12px}
 .hudhud.pic{object-position:50% 30%}
 html[data-theme="dark"] .khome .khero.has-pic{background:none}
+/* portraits: who is speaking in the story, and who guides each part of a lesson */
+.line .who{display:inline-flex;align-items:center;gap:6px}
+.who-pic{width:30px;height:30px;margin-inline-start:-10px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:2px solid #fff;background:#FFF3DF}
+.kblk-k.has-pic::before{display:none}
+.kblk-k .kav{width:44px;height:44px;margin:-10px 0 -10px -10px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:3px solid #fff;
+  background:#FFF3DF;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+html[dir="rtl"] .kblk-k .kav{margin:-10px -10px -10px 0}
+.kpage-pic{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;object-position:center 45%;border-radius:28px;margin:0 0 16px;
+  box-shadow:0 8px 0 var(--k-yellow-t)}
+@media (max-width:640px){.kpage-pic{aspect-ratio:2/1;border-radius:20px}}
+.kword-img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:16px;margin-bottom:8px}
