@@ -93,12 +93,19 @@ def word_times(text, alignment, total):
     return [(total * a / n, total * (b + 1) / n) for a, b in spans], True
 
 
-def narrate(uid, lang, args, en, voices_all):
+def narrate(uid, lang, args, en, voices_all, level=None):
+    """level None: the story alone (kids/audio/<unit>.<lang>.mp3); a level: the whole scene deck of that level (story and
+    lessons, <unit>.<level>.<lang>.mp3), which is what the unit pages play."""
     voices = voices_all[lang]
     story = K.story(uid, lang)
+    name = f"{uid}.{lang}" if not level else f"{uid}.{level}.{lang}"
+    order = None
+    if level:
+        lines, order = K.deck_script(uid, level, lang)
+        story = {"title": story["title"], "lines": lines, "shots": order}
     segs = segments_of(story, voices)
     chars = sum(len(s["text"]) for s in segs)
-    print(f"{uid} [{lang}]: {len(story['lines'])} lines, {len(segs)} segments, {chars} characters")
+    print(f"{name}: {len(story['lines'])} lines, {len(segs)} segments, {chars} characters")
     STATE.mkdir(exist_ok=True)
     todo = []
     for s in segs:
@@ -168,14 +175,17 @@ def narrate(uid, lang, args, en, voices_all):
         listing.write_text("".join(f"file '{p}'\n" for p in pieces), encoding="utf-8")
         AUDIO.mkdir(parents=True, exist_ok=True)
         SYNC.mkdir(parents=True, exist_ok=True)
-        out = AUDIO / f"{uid}.{lang}.mp3"
+        out = AUDIO / f"{name}.mp3"
         ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), *WEB, "-metadata", f"title={story['title']}",
                "-metadata", "artist=How Do You Know?", str(out))
     sync = {"v": 1, "file": out.name, "lang": lang, "duration": round(seconds(out), 2), "approx": approx,
             "narration": {"engine": "ElevenLabs", "model": voices_all["model"],
                           "voices": {r: v["name"] for r, v in voices.items() if any(ln["role"] == r for ln in story["lines"])}},
             "shots": shots, "lines": lines}
-    (SYNC / f"{uid}.{lang}.json").write_text(json.dumps(sync, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if order:
+        sync["order"] = order
+        sync["level"] = level
+    (SYNC / f"{name}.json").write_text(json.dumps(sync, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"  wrote {out.relative_to(ROOT)} ({sync['duration']:.1f} s, {out.stat().st_size // 1024} KB){' — approximate word times' if approx else ''}")
 
 
@@ -183,12 +193,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("unit")
     ap.add_argument("--lang", choices=["en", "fa", "both"], default="both")
+    ap.add_argument("--level", choices=["explorers", "investigators", "deck", "story"], default="story",
+                    help="story: the story alone; explorers / investigators: that level's whole scene deck; deck: both levels")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     voices_all = K.read_json(K.KIDS / "voices.json")
     en = None if args.dry_run else narrator_module()
+    levels = [None] if args.level == "story" else (list(K.LEVELS) if args.level == "deck" else [args.level])
     for lang in (K.LANGS if args.lang == "both" else (args.lang,)):
-        narrate(args.unit, lang, args, en, voices_all)
+        for level in levels:
+            narrate(args.unit, lang, args, en, voices_all, level)
 
 
 if __name__ == "__main__":

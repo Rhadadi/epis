@@ -197,3 +197,44 @@ def game_path(gid):
 
 def game(gid):
     return read_json(game_path(gid))
+
+
+def plain(t):
+    """Scene text as it is spoken: without the **bold** and *italic* marks."""
+    return re.sub(r"\*+", "", str(t)).strip()
+
+
+def deck_script(uid, level, lang):
+    """Everything a unit's scene deck says aloud, in scene order, as narration lines: {id, role, text, shot}.
+    The story keeps its own line ids and shots (so it is the same as story.<lang>.md); every other scene is read by the
+    narrator under its scene id: its text, list, new words (word, then meaning) and question. Games and links stay silent."""
+    raw = read_json(deck_path_of(uid, level))["scenes"]
+    words = {w["id"]: pick(w, lang) for w in read_json(KIDS / "words.json")}
+    out, order = [], []
+    for sc in raw:
+        if "levels" in sc and level not in sc["levels"]:
+            continue
+        sc = pick(sc, lang)
+        if sc.get("story"):
+            st = story(uid, lang)
+            for ln in st["lines"]:
+                out.append({"id": ln["id"], "role": ln["role"], "text": ln["text"], "shot": ln["shot"]})
+            order += st["shots"]
+            continue
+        lines = []
+        t = sc.get("text")
+        lines += [plain(x) for x in ([t] if isinstance(t, str) else t or [])]
+        lines += [plain(x) for x in sc.get("list", [])]
+        for wid in [w.strip() for w in re.split(r"[,\s]+", sc.get("words", "")) if w.strip()]:
+            if wid in words:
+                lines.append(f"{plain(words[wid]['word'])}. {plain(words[wid]['def'])}")
+        if sc.get("ask") and sc["ask"].get("q"):
+            lines.append(plain(sc["ask"]["q"]))
+        if lines:
+            order.append(sc["id"])
+            out += [{"id": f"{sc['id']}-{i + 1}", "role": "narrator", "text": x, "shot": sc["id"]} for i, x in enumerate(lines)]
+    return out, order
+
+
+def deck_path_of(uid, level):
+    return unit_dir(uid) / f"deck.{level}.json"

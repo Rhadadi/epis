@@ -92,16 +92,17 @@ def build(b, art, md):
                 opener = render_lesson(b, md, m.group(0), uid, level, words, engines).replace("kblk k-opener", "kblk k-opener kopen", 1)
                 text = text[:m.start()] + text[m.end():]
             deck = None
+            dsync = load_sync(uid, lang, level) or sync
             if deck_path(uid, level).exists():
                 import scenes as SC
                 engines = set()
-                scenes_, boxes = expand_deck(b, uid, level, root, meta, st, sync, words, engines)
+                scenes_, boxes = expand_deck(b, uid, level, root, meta, st, dsync, words, engines)
                 probs = SC.validate(scenes_)
                 if probs:
                     raise SystemExit(f"kids {uid} {level}: problems in the scene deck:\n  " + "\n  ".join(probs))
                 deck = SC.render(scenes_, boxes, ui={"listen": L("Listen", "گوش کن"), "next": L("Next", "بعدی"), "back": L("Back", "قبلی"),
                                                     "again": L("Start again", "دوباره از اول")},
-                                 audio_src=f'{root}assets/kids/audio/{sync["file"]}' if sync else None,
+                                 audio_src=f'{root}assets/kids/audio/{dsync["file"]}' if dsync else None,
                                  attrs=f'data-unit="{uid}" data-level="{level}" data-game="deck"')
             lesson = render_lesson(b, md, text, uid, level, words, set()) if deck is None else ""
             story_html = render_story(b, uid, meta, st, sync, root) if deck is None else ""
@@ -224,8 +225,9 @@ def unit_problems(uid):
 
 # ----------------------------------------------------------------------------- pieces
 
-def load_sync(uid, lang):
-    p = ASSETS_KIDS / "sync" / f"{uid}.{lang}.json"
+def load_sync(uid, lang, level=None):
+    """The narration timing of a unit: with a level, that level's whole deck (story and lessons) if it was narrated."""
+    p = ASSETS_KIDS / "sync" / (f"{uid}.{level}.{lang}.json" if level else f"{uid}.{lang}.json")
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
@@ -261,6 +263,14 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
     shots = [K.pick(x, lang) for x in meta.get("shots", [])]
     times = {x["id"]: x for x in (sync or {}).get("lines", [])}
     starts = (sync or {}).get("shots", {})
+    order_all = (sync or {}).get("order") or []  # every narrated scene, in order (a whole-deck narration)
+
+    def audio_of(key):
+        if not (sync and key in starts):
+            return None
+        i = order_all.index(key) if key in order_all else -1
+        nxt = order_all[i + 1] if 0 <= i and i + 1 < len(order_all) and order_all[i + 1] in starts else None
+        return [starts[key], starts[nxt] if nxt else sync.get("duration", 0)]
     for sc in raw:
         if "levels" in sc and level not in sc["levels"]:
             continue
@@ -289,8 +299,11 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
                     scene["anchor"] = "story"
                     scene["label"] = st["title"]
                 if sync and sh["id"] in starts:
-                    end = starts[order[k + 1]] if k + 1 < len(order) and order[k + 1] in starts else sync.get("duration", 0)
-                    scene["audio"] = [starts[sh["id"]], end]
+                    if order_all:
+                        scene["audio"] = audio_of(sh["id"])
+                    else:
+                        end = starts[order[k + 1]] if k + 1 < len(order) and order[k + 1] in starts else sync.get("duration", 0)
+                        scene["audio"] = [starts[sh["id"]], end]
                 out.append(scene)
             continue
         if sc.get("words"):
@@ -313,6 +326,8 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
                 sc["label"] = g["title"]
         if sc.get("links"):
             sc["links"] = [{"t": l["t"], "href": f'{b.home(root)}guide/{l["guide"]}'} for l in sc["links"]]
+        if sc.get("id") and audio_of(sc["id"]):
+            sc["audio"] = audio_of(sc["id"])
         if sc.get("end"):  # the last scene: where to go next
             sc["links"] = [*sc.get("links", []), {"t": L("More games", "بازی‌های بیشتر"), "href": "../"},
                            {"t": L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم"), "href": "grownups.html"}]
