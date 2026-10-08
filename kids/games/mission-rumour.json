@@ -1,0 +1,461 @@
+{
+ "engine": "mystery",
+ "title": "Rumour or fact?",
+ "done": "You investigated like a detective!",
+ "offline": "At home today: find a claim in an advert and ask “What would a fair test look like?”",
+ "fa": {
+  "title": "شایعه یا واقعیت؟",
+  "done": "مثلِ کارآگاه بررسی کردی!",
+  "offline": "امروز در خانه: ادعایی در یک تبلیغ پیدا کن و بپرس «آزمایشِ منصفانه چه شکلی می‌شود؟»"
+ },
+ "rounds": [
+  {
+   "intro": "A rumour is going round: “Tap the game's logo ten times and you get 500 free coins!” Max says it works.",
+   "given": null,
+   "fa": {
+    "intro": "یک شایعه دهان‌به‌دهان می‌چرخد: «ده بار روی آرمِ بازی بزن و ۵۰۰ سکهٔ رایگان بگیر!» کیان می‌گوید کار می‌کند."
+   },
+   "stage": {
+    "bg": "room",
+    "actors": [
+     {
+      "id": "max",
+      "who": "kian",
+      "x": 24,
+      "y": 92,
+      "s": 1.1,
+      "face": "sly",
+      "anim": "bob"
+     },
+     {
+      "id": "ava",
+      "who": "ava",
+      "x": 72,
+      "y": 92,
+      "s": 1,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "coin",
+      "what": "coin",
+      "x": 48,
+      "y": 86,
+      "s": 1,
+      "anim": "float"
+     },
+     {
+      "id": "clip",
+      "what": "news",
+      "x": 50,
+      "y": 50,
+      "s": 0.9,
+      "anim": "wobble"
+     },
+     {
+      "id": "page",
+      "what": "chart",
+      "x": 86,
+      "y": 70,
+      "s": 0.8,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "true",
+     "text": "It works: free coins",
+     "fa": {
+      "text": "کار می‌کند: سکهٔ رایگان"
+     }
+    },
+    {
+     "id": "fake",
+     "text": "It is a fake rumour",
+     "fa": {
+      "text": "شایعهٔ دروغ است"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "Not enough evidence yet",
+     "fa": {
+      "text": "هنوز نشانهٔ کافی نیست"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 3,
+   "sources": [
+    {
+     "id": "who",
+     "target": "max",
+     "label": "Ask Max who told him",
+     "clue": "Max heard it from a boy, who heard it from his cousin. Nobody Max knows saw it work.",
+     "pts": {
+      "fake": 1
+     },
+     "kind": "weak",
+     "tricky": "A story passed along many people can drift or be made up. It does not prove the rumour false either.",
+     "fa": {
+      "label": "از کیان بپرس چه کسی به او گفته",
+      "clue": "کیان از پسری شنیده که از پسرخاله‌اش شنیده. هیچ‌کس از آدم‌هایی که کیان می‌شناسد ندیده کار کند.",
+      "tricky": "داستانی که دست‌به‌دست می‌گردد ممکن است عوض شود یا ساختگی باشد. این هم دروغ بودنِ شایعه را ثابت نمی‌کند."
+     }
+    },
+    {
+     "id": "video",
+     "target": "clip",
+     "label": "Watch the video of someone getting 500 coins",
+     "clue": "The video shows 500 coins. But the clip has a cut exactly at the moment of the last tap.",
+     "pts": {
+      "fake": 1
+     },
+     "kind": "weak",
+     "tricky": "A cut is a warning sign, not proof. Videos can be edited, and a real one could also be cut for length.",
+     "fa": {
+      "label": "ویدئوی کسی را که ۵۰۰ سکه می‌گیرد ببین",
+      "clue": "ویدئو ۵۰۰ سکه نشان می‌دهد. ولی درست لحظهٔ آخرین ضربه برش خورده.",
+      "tricky": "برش علامتِ هشدار است، نه مدرک. ویدئو را می‌شود دست‌کاری کرد، ولی ویدئوی واقعی هم ممکن است برای کوتاه‌شدن برش بخورد."
+     }
+    },
+    {
+     "id": "official",
+     "target": "page",
+     "label": "Check the game's own news page",
+     "clue": "The page says nothing about free coins, and it warns players about fake tricks.",
+     "pts": {
+      "fake": 2
+     },
+     "kind": "strong",
+     "tricky": "A company that gives out free coins would likely announce it. Silence plus a warning is a fairly strong clue, but not perfect: new features are sometimes secret.",
+     "fa": {
+      "label": "صفحهٔ خبرِ خودِ بازی را ببین",
+      "clue": "صفحه دربارهٔ سکهٔ رایگان چیزی نگفته و به بازیکن‌ها دربارهٔ ترفندهای قلابی هشدار می‌دهد.",
+      "tricky": "شرکتی که سکهٔ رایگان بدهد احتمالاً اعلامش می‌کند. سکوت و هشدار سرنخِ نسبتاً قوی است، ولی کامل نیست: امکاناتِ تازه گاهی مخفی‌اند."
+     }
+    },
+    {
+     "id": "test",
+     "target": "coin",
+     "label": "Try it yourself: tap the logo ten times",
+     "clue": "You tap ten times. Nothing happens. You try again: nothing.",
+     "pts": {
+      "fake": 3
+     },
+     "kind": "strong",
+     "tricky": "A test that could have worked and did not is a strong clue. But it only tells you about your own copy of the game.",
+     "fa": {
+      "label": "خودت امتحان کن: ده بار روی آرم بزن",
+      "clue": "ده بار می‌زنی. هیچ اتفاقی نمی‌افتد. دوباره امتحان می‌کنی: هیچ.",
+      "tricky": "آزمونی که می‌توانست جواب بدهد و نداد سرنخِ قوی است. ولی فقط دربارهٔ نسخهٔ خودِ تو از بازی چیزی می‌گوید."
+     }
+    },
+    {
+     "id": "players",
+     "target": "ava",
+     "label": "Ask other players online",
+     "clue": "Three players say it worked for them. Two say it did not.",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "People say “it worked” to look cool or to be funny, and you cannot see their screens. This clue leaves both answers open.",
+     "fa": {
+      "label": "از بازیکن‌های دیگر آنلاین بپرس",
+      "clue": "سه بازیکن می‌گویند برایشان کار کرد. دو نفر می‌گویند نه.",
+      "tricky": "آدم‌ها «کار کرد» می‌گویند تا باحال به نظر بیایند یا شوخی کنند، و صفحهٔ آن‌ها را نمی‌بینی. این سرنخ هر دو جواب را باز می‌گذارد."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "test",
+     "text": "A test that could have worked but didn't",
+     "good": true,
+     "fa": {
+      "text": "آزمونی که می‌توانست جواب بدهد ولی نداد"
+     }
+    },
+    {
+     "id": "count",
+     "text": "More people saying it worked",
+     "good": false,
+     "fa": {
+      "text": "آدم‌های بیشتری که می‌گویند کار کرد"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "test",
+      "official"
+     ],
+     "best": "fake",
+     "conf": 2,
+     "why": "Your own test failed, and the game's page says nothing and warns about fake tricks. Two different strong clues agree: you can be very sure (for your version of the game).",
+     "fa": {
+      "why": "آزمونِ خودت جواب نداد و صفحهٔ بازی چیزی نمی‌گوید و دربارهٔ ترفندهای قلابی هشدار می‌دهد. دو سرنخِ قویِ جدا هم‌نظرند: می‌توانی خیلی مطمئن باشی (برای نسخهٔ بازیِ خودت)."
+     }
+    },
+    {
+     "if": [
+      "test"
+     ],
+     "best": "fake",
+     "conf": 1,
+     "why": "A test that did not work is strong, but it only covers your copy. “Pretty sure” fits; the game's page would make you surer.",
+     "fa": {
+      "why": "آزمونی که جواب نداد قوی است، ولی فقط نسخهٔ خودت را می‌گیرد. «نسبتاً مطمئن» جور است؛ صفحهٔ بازی تو را مطمئن‌تر می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "official"
+     ],
+     "best": "fake",
+     "conf": 1,
+     "why": "The page's silence and warning point to a fake. “Pretty sure” fits; trying it yourself would make you surer.",
+     "fa": {
+      "why": "سکوت و هشدارِ صفحه به دروغ بودن اشاره می‌کند. «نسبتاً مطمئن» جور است؛ خودت امتحان کردن تو را مطمئن‌تر می‌کرد."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "What you checked is weak: a rumour passed along, an edited clip, players who might be joking. “Not enough evidence yet” is the best answer. Find a test that could have worked.",
+     "fa": {
+      "why": "آنچه وارسی کردی ضعیف است: شایعه‌ای دست‌به‌دست، کلیپی برش‌خورده، بازیکن‌هایی که شاید شوخی کنند. «هنوز نشانهٔ کافی نیست» بهترین جواب است. آزمونی پیدا کن که می‌توانست جواب بدهد."
+     }
+    }
+   ]
+  },
+  {
+   "intro": "An advert says: “Brain Juice makes you smarter! 9 out of 10 kids said so!”",
+   "given": null,
+   "fa": {
+    "intro": "یک تبلیغ می‌گوید: «آب‌میوهٔ هوش تو را باهوش‌تر می‌کند! ۹ نفر از ۱۰ بچه گفتند!»"
+   },
+   "stage": {
+    "bg": "cafe",
+    "actors": [
+     {
+      "id": "kid",
+      "who": "nima",
+      "x": 30,
+      "y": 92,
+      "s": 0.9,
+      "face": "thinking",
+      "anim": "bob"
+     },
+     {
+      "id": "ava",
+      "who": "ava",
+      "x": 72,
+      "y": 92,
+      "s": 1,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "juice",
+      "what": "cup",
+      "x": 50,
+      "y": 86,
+      "s": 1,
+      "anim": "float"
+     },
+     {
+      "id": "ad",
+      "what": "news",
+      "x": 50,
+      "y": 48,
+      "s": 1,
+      "anim": "wobble"
+     },
+     {
+      "id": "lab",
+      "what": "chart",
+      "x": 86,
+      "y": 70,
+      "s": 0.8,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "works",
+     "text": "The juice makes kids smarter",
+     "fa": {
+      "text": "آب‌میوه بچه‌ها را باهوش‌تر می‌کند"
+     }
+    },
+    {
+     "id": "nope",
+     "text": "The advert doesn't show that",
+     "fa": {
+      "text": "تبلیغ این را نشان نمی‌دهد"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "Not enough evidence yet",
+     "fa": {
+      "text": "هنوز نشانهٔ کافی نیست"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 3,
+   "sources": [
+    {
+     "id": "who",
+     "target": "ad",
+     "label": "Who asked the kids?",
+     "clue": "The juice company asked them.",
+     "pts": {
+      "nope": 1
+     },
+     "kind": "weak",
+     "tricky": "A company has a reason to ask in a way that gets a “yes”. This does not make the juice useless, but it is not a neutral source.",
+     "fa": {
+      "label": "چه کسی از بچه‌ها پرسید؟",
+      "clue": "شرکتِ آب‌میوه از آن‌ها پرسید.",
+      "tricky": "شرکت دلیل دارد جوری بپرسد که جواب «بله» بیاید. این آب‌میوه را بی‌فایده نمی‌کند، ولی منبعِ بی‌طرف نیست."
+     }
+    },
+    {
+     "id": "many",
+     "target": "kid",
+     "label": "How many kids, and what did they get?",
+     "clue": "Ten kids, who each got free juice and were asked if they felt smarter.",
+     "pts": {
+      "nope": 2
+     },
+     "kind": "weak",
+     "tricky": "Feeling smarter is not the same as being smarter, and ten kids is very few. This is a weak test.",
+     "fa": {
+      "label": "چند بچه، و به آن‌ها چه دادند؟",
+      "clue": "ده بچه که هر کدام آب‌میوهٔ رایگان گرفتند و پرسیدند احساسِ باهوش‌تر شدن دارند یا نه.",
+      "tricky": "احساسِ باهوش‌تر شدن با باهوش‌تر شدن فرق دارد و ده بچه خیلی کم است. این آزمونِ ضعیفی است."
+     }
+    },
+    {
+     "id": "compare",
+     "target": "lab",
+     "label": "Was there a group without the juice?",
+     "clue": "No. Nobody was compared with kids who drank plain water.",
+     "pts": {
+      "nope": 2
+     },
+     "kind": "strong",
+     "tricky": "Without a comparison you cannot tell if the juice mattered, or if kids would say the same after plain water.",
+     "fa": {
+      "label": "آیا گروهی بدون آب‌میوه بود؟",
+      "clue": "نه. هیچ‌کس با بچه‌هایی که آبِ ساده خوردند مقایسه نشد.",
+      "tricky": "بدون مقایسه نمی‌شود فهمید آب‌میوه اثر داشت یا بچه‌ها بعد از آبِ ساده هم همین را می‌گفتند."
+     }
+    },
+    {
+     "id": "fair",
+     "target": "juice",
+     "label": "Run a fair test: juice or plain water",
+     "clue": "Kids get juice or plain water by a coin toss. Their puzzle scores come out the same.",
+     "pts": {
+      "nope": 3
+     },
+     "kind": "strong",
+     "tricky": "A fair test that could have shown a difference, and did not, is a strong clue. (One small test can still miss a small effect.)",
+     "fa": {
+      "label": "آزمایشِ منصفانه: آب‌میوه یا آبِ ساده",
+      "clue": "بچه‌ها با شیر یا خط آب‌میوه یا آبِ ساده می‌گیرند. امتیاز معماهایشان یکی درمی‌آید.",
+      "tricky": "آزمایشِ منصفانه‌ای که می‌توانست تفاوت نشان بدهد و نداد سرنخِ قوی است. (یک آزمایشِ کوچک باز هم ممکن است اثرِ کوچک را از دست بدهد.)"
+     }
+    },
+    {
+     "id": "friend",
+     "target": "ava",
+     "label": "Ask a friend who drinks it",
+     "clue": "“I feel the same as before,” she says. “But I do like the taste.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "One friend's feeling is not a test. This clue leaves both answers open.",
+     "fa": {
+      "label": "از دوستی که می‌خورد بپرس",
+      "clue": "می‌گوید: «مثلِ قبل احساس می‌کنم. ولی مزه‌اش را دوست دارم.»",
+      "tricky": "حسِ یک دوست آزمایش نیست. این سرنخ هر دو جواب را باز می‌گذارد."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "fair",
+     "text": "A fair test with a comparison group",
+     "good": true,
+     "fa": {
+      "text": "آزمایشِ منصفانه با گروهِ مقایسه"
+     }
+    },
+    {
+     "id": "shout",
+     "text": "The advert shouting louder",
+     "good": false,
+     "fa": {
+      "text": "تبلیغ که بلندتر فریاد بزند"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "fair"
+     ],
+     "best": "nope",
+     "conf": 2,
+     "why": "A fair test with a comparison group showed no difference. The advert's claim is not supported: you can be very sure.",
+     "fa": {
+      "why": "آزمایشِ منصفانه با گروهِ مقایسه تفاوتی نشان نداد. ادعای تبلیغ پشتیبانی نمی‌شود: می‌توانی خیلی مطمئن باشی."
+     }
+    },
+    {
+     "if": [
+      "compare",
+      "many"
+     ],
+     "best": "nope",
+     "conf": 1,
+     "why": "The advert has no comparison group and very few kids. “The advert doesn't show it” fits, and “pretty sure” is right. A fair test would make you surer.",
+     "fa": {
+      "why": "تبلیغ گروهِ مقایسه ندارد و بچه‌های خیلی کمی دارد. «تبلیغ این را نشان نمی‌دهد» جور است و «نسبتاً مطمئن» درست است. آزمایشِ منصفانه تو را مطمئن‌تر می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "compare"
+     ],
+     "best": "nope",
+     "conf": 1,
+     "why": "With no comparison group the advert cannot show the juice mattered. “Pretty sure” fits.",
+     "fa": {
+      "why": "بدون گروهِ مقایسه تبلیغ نمی‌تواند نشان بدهد آب‌میوه اثر داشت. «نسبتاً مطمئن» جور است."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "You do not know yet how the advert was tested. “Not enough evidence yet” is the best answer. Ask who asked, how many, and compared with what.",
+     "fa": {
+      "why": "هنوز نمی‌دانی تبلیغ چطور آزموده شده. «هنوز نشانهٔ کافی نیست» بهترین جواب است. بپرس چه کسی پرسید، چند نفر، و با چه چیزی مقایسه شد."
+     }
+    }
+   ]
+  }
+ ]
+}

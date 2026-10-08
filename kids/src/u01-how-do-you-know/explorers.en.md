@@ -2,7 +2,7 @@
 desc: Knowing or guessing? An old Persian tale about three young goats, a sneaky wolf and the best clue of all.
 ---
 
-::: opener u01-door
+::: opener mission-door
 :::
 
 ## Knowing or guessing?
@@ -25,7 +25,7 @@ In the story, the kids used three clues: the voice, the foot and the song.
 
 The voice and the foot were tricky clues. The wolf could fake them with honey and flour.
 
-The song was a good clue. Only Mother knew it. A good clue is one that a faker can't copy.
+The song was a good clue. Only Mother knew it. A stronger clue helps us tell the possibilities apart.
 
 ::: think
 - How did Jingle know the first visitor was the wolf?
@@ -34,7 +34,7 @@ The song was a good clue. Only Mother knew it. A good clue is one that a faker c
 :::
 
 ::: bigidea
-To **know** something, you need a good reason: a clue that is hard to fake.
+To **know** something, you need a good reason: a clue that helps us tell the possibilities apart.
 :::
 
 ::: words

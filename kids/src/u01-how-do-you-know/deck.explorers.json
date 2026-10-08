@@ -2,10 +2,10 @@
  "scenes": [
   {
    "id": "door",
-   "game": "u01-door",
-   "label": "Quick! What would you do?",
+   "game": "mission-door",
+   "label": "Who's at the door?",
    "fa": {
-    "label": "زود باش! تو چه می‌کردی؟"
+    "label": "کی پشتِ در است؟"
    }
   },
   {
@@ -357,7 +357,7 @@
    "id": "clue3",
    "text": [
     "The song was a good clue. Only Mother knew it.",
-    "A good clue is one that a faker can't copy."
+    "A stronger clue helps us tell the possibilities apart."
    ],
    "bg": "field",
    "actors": [
@@ -401,7 +401,7 @@
    "fa": {
     "text": [
      "آواز سرنخِ خوبی بود. فقط مادر بلدش بود.",
-     "سرنخِ خوب سرنخی است که آدمِ حقه‌باز نتواند تقلیدش کند."
+     "سرنخِ قوی‌تر کمک می‌کند حالت‌های ممکن را از هم جدا کنیم."
     ]
    }
   },
@@ -444,9 +444,59 @@
    }
   },
   {
+   "id": "howsure",
+   "label": "How sure are you?",
+   "bg": "desk",
+   "text": [
+    "A clue can make you **more sure** or **less sure**.",
+    "Sometimes the best answer is: “We don't know yet. Let's look for more clues.”"
+   ],
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "What would change my mind?",
+     "fa": {
+      "say": "چه چیزی نظرم را عوض می‌کند؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 52,
+     "y": 84,
+     "s": 0.9,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "label": "چقدر مطمئنی؟",
+    "text": [
+     "یک سرنخ می‌تواند تو را **مطمئن‌تر** یا **کم‌اطمینان‌تر** کند.",
+     "گاهی بهترین جواب این است: «هنوز نمی‌دانیم. بیا سرنخ‌های بیشتری پیدا کنیم.»"
+    ]
+   }
+  },
+  {
    "id": "idea",
    "label": "The big idea",
-   "text": "To **know** something, you need a good reason: a clue that is hard to fake.",
+   "text": "To **know** something, you need a good reason: a clue that helps us tell the possibilities apart.",
    "bg": "field",
    "actors": [
     {
@@ -490,7 +540,7 @@
     }
    ],
    "fa": {
-    "text": "برای این‌که چیزی را **بدانی**، دلیلِ خوب لازم داری: سرنخی که قلابی کردنش سخت باشد.",
+    "text": "برای این‌که چیزی را **بدانی**، دلیلِ خوب لازم داری: سرنخی که کمک کند حالت‌های ممکن را از هم جدا کنیم.",
     "label": "ایدهٔ اصلی"
    }
   },

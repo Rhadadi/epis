@@ -1708,11 +1708,11 @@
      "id": "age",
      "text": "Older kids have bigger feet, and they read better",
      "short": "Older kids",
-     "why": "Yes! Age is the hidden cause. It makes feet grow, and it makes reading better too.",
+     "why": "Good thinking! Age helps explain both: older kids have bigger feet, and they have also had more school and practice at reading. To check, compare kids of the same age.",
      "fa": {
       "text": "بچه‌های بزرگ‌تر هم پای بزرگ‌تری دارند هم بهتر می‌خوانند",
       "short": "بچه‌های بزرگ‌تر",
-      "why": "آفرین! سن علتِ پنهان است. هم پا را بزرگ می‌کند و هم خواندن را بهتر."
+      "why": "آفرین! سن هر دو را توضیح می‌دهد: بچه‌های بزرگ‌تر پای بزرگ‌تری دارند و مدرسه و تمرینِ خواندنِ بیشتری هم داشته‌اند. برای وارسی، بچه‌های هم‌سن را با هم مقایسه کن."
      }
     },
     {
@@ -1910,9 +1910,9 @@
        "s": 0.9,
        "face": "happy",
        "anim": "hop",
-       "say": "Age is the hidden cause!",
+       "say": "Age might explain both!",
        "fa": {
-        "say": "سن علتِ پنهان است!"
+        "say": "شاید سن هر دو را توضیح بدهد!"
        }
       }
      ],

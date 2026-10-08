@@ -91,10 +91,10 @@
  {
   "id": "excuse",
   "word": "excuse",
-  "def": "An excuse sounds like a reason, but it is really about how we feel.",
+  "def": "An excuse sounds like a reason, but it does not really show that the claim is true.",
   "fa": {
    "word": "بهانه",
-   "def": "بهانه شبیهِ دلیل است، ولی در واقع دربارهٔ حسِ ماست."
+   "def": "بهانه شبیهِ دلیل است، ولی واقعاً نشان نمی‌دهد ادعا درست است."
   }
  },
  {

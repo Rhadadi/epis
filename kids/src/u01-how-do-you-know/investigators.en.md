@@ -2,7 +2,7 @@
 desc: Evidence, lucky guesses and the stopped clock: what it takes to really know something.
 ---
 
-::: opener u01-door
+::: opener mission-rumour
 :::
 
 ## Three clues, three strengths
@@ -13,7 +13,7 @@ The kids in the story did something smart: they didn't just trust the visitor's 
 - **The foot.** The same again. A black foot gave the wolf away. A white foot proved very little, because flour is easy to find.
 - **The song.** This was the strongest test. Only Mother knew the song, so only Mother could pass it.
 
-Notice the pattern. A good test is one that the wrong answer would *fail*. After a trip to the bakery, the wolf could pass the voice test and the foot test. He could never pass the song test.
+Notice the pattern. A good test is one that the wrong answer would *fail*. After a trip to the bakery, the wolf could pass the voice test and the foot test. The song test was much harder for him.
 
 Detectives, doctors and scientists all look for tests like this. A test that everybody passes, whether they are right or wrong, can't tell you much.
 
@@ -52,6 +52,7 @@ At the door, the kids asked question 2: *how do we know this is Mother?* Little 
 ::: think
 - The kids' first two tests could rule the wolf *out*, but they couldn't rule Mother *in*. Why not?
 - Think of a test in real life that is easy to pass even when the answer is wrong.
+- What if the wolf had overheard the song? What new check could the kids make?
 - Sam was right about the time. Why do most people say he didn't know it?
 :::
 

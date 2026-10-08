@@ -1,0 +1,433 @@
+{
+ "engine": "mystery",
+ "title": "Who's at the door?",
+ "done": "You investigated like a detective!",
+ "offline": "At home today: find one thing someone says, and ask “What makes you say that?”",
+ "fa": {
+  "title": "کی پشتِ در است؟",
+  "done": "مثلِ کارآگاه بررسی کردی!",
+  "offline": "امروز در خانه: یک حرف از کسی پیدا کن و بپرس «از کجا می‌گویی؟»"
+ },
+ "rounds": [
+  {
+   "intro": "Knock, knock! A rough voice says: “It's Mum! Open the door!”",
+   "given": null,
+   "fa": {
+    "intro": "تق‌تق! یک صدای کلفت می‌گوید: «منم، مامان! در را باز کنید!»"
+   },
+   "stage": {
+    "bg": "room",
+    "actors": [
+     {
+      "id": "jingle",
+      "who": "shangul",
+      "x": 20,
+      "y": 92,
+      "s": 0.9,
+      "face": "thinking",
+      "anim": "bob"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 34,
+      "y": 92,
+      "s": 0.7,
+      "face": "thinking",
+      "anim": "bob"
+     },
+     {
+      "id": "hoopy",
+      "who": "hudhud",
+      "x": 86,
+      "y": 82,
+      "s": 0.9,
+      "face": "happy",
+      "anim": "float"
+     }
+    ],
+    "props": [
+     {
+      "id": "door",
+      "what": "door",
+      "x": 58,
+      "y": 92,
+      "s": 2.0,
+      "anim": "none"
+     },
+     {
+      "id": "paw",
+      "what": "paw",
+      "x": 58,
+      "y": 95,
+      "s": 0.6,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "mother",
+     "text": "It's Mother",
+     "fa": {
+      "text": "مادر است"
+     }
+    },
+    {
+     "id": "wolf",
+     "text": "It's the wolf",
+     "fa": {
+      "text": "گرگ است"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "I can't tell yet",
+     "fa": {
+      "text": "هنوز نمی‌توانم بفهمم"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 2,
+   "sources": [
+    {
+     "id": "listen",
+     "target": "door",
+     "label": "Listen to the voice",
+     "clue": "The voice is rough and low.",
+     "pts": {
+      "wolf": 1
+     },
+     "kind": "weak",
+     "tricky": "Careful: a cold can make anyone's voice rough, and a wolf can soften his voice with honey.",
+     "fa": {
+      "label": "به صدا گوش کن",
+      "clue": "صدا کلفت و خشن است.",
+      "tricky": "مراقب باش: سرماخوردگی صدای هر کسی را کلفت می‌کند و گرگ هم با عسل صدایش را نرم می‌کند."
+     }
+    },
+    {
+     "id": "foot",
+     "target": "paw",
+     "label": "Look at the foot under the door",
+     "clue": "A big black paw shows under the door.",
+     "pts": {
+      "wolf": 2
+     },
+     "kind": "weak",
+     "tricky": "A black paw is a stronger sign than a rough voice. But a white paw would prove little, because flour is easy to find.",
+     "fa": {
+      "label": "به پایی که زیر در است نگاه کن",
+      "clue": "یک پای بزرگ و سیاه زیر در پیداست.",
+      "tricky": "پای سیاه از صدای کلفت نشانهٔ قوی‌تری است. ولی پای سفید چیز زیادی را ثابت نمی‌کرد، چون آرد پیدا کردنش راحت است."
+     }
+    },
+    {
+     "id": "song",
+     "target": "grape",
+     "label": "Ask for the secret song",
+     "clue": "The visitor sings the wrong song.",
+     "pts": {
+      "wolf": 3
+     },
+     "kind": "strong",
+     "tricky": "Only Mother knows the song, so this clue separates her from the wolf best. (What if the wolf had overheard it? Then you would need a new check.)",
+     "fa": {
+      "label": "آوازِ مخصوص را بخواه",
+      "clue": "مهمان آوازِ اشتباهی می‌خواند.",
+      "tricky": "فقط مادر آواز را بلد است، پس این سرنخ مادر را از گرگ بهتر جدا می‌کند. (اگر گرگ آن را شنیده بود چه؟ آن‌وقت امتحانِ تازه‌ای لازم بود.)"
+     }
+    },
+    {
+     "id": "help",
+     "target": "hoopy",
+     "label": "Ask Hoopy, who saw something",
+     "clue": "Hoopy says: “I saw the wolf at the bakery, dipping his paws in flour!”",
+     "pts": {
+      "wolf": 2
+     },
+     "kind": "weak",
+     "tricky": "Hoopy is helpful, but Hoopy did not see who is at your door. This clue makes the wolf more likely, not certain.",
+     "fa": {
+      "label": "از هدهد بپرس، او چیزی دیده",
+      "clue": "هدهد می‌گوید: «گرگ را توی نانوایی دیدم که پاهایش را توی آرد می‌زد!»",
+      "tricky": "هدهد کمک‌کننده است، ولی ندیده چه کسی پشتِ در شماست. این سرنخ گرگ را محتمل‌تر می‌کند، نه قطعی."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "another",
+     "text": "A clue that only Mother could give",
+     "good": true,
+     "fa": {
+      "text": "سرنخی که فقط مادر می‌توانست بدهد"
+     }
+    },
+    {
+     "id": "louder",
+     "text": "The visitor knocking louder",
+     "good": false,
+     "fa": {
+      "text": "در زدنِ بلندتر"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "song"
+     ],
+     "best": "wolf",
+     "conf": 2,
+     "why": "The wrong song is a clue that Mother would never get wrong. You can be very sure.",
+     "fa": {
+      "why": "آوازِ اشتباه سرنخی است که مادر هیچ‌وقت اشتباه نمی‌خواند. می‌توانی خیلی مطمئن باشی."
+     }
+    },
+    {
+     "if": [
+      "foot",
+      "help"
+     ],
+     "best": "wolf",
+     "conf": 1,
+     "why": "Two different clues point to the wolf, but each could be wrong. “Pretty sure” fits, and the secret song would make you surer.",
+     "fa": {
+      "why": "دو سرنخِ جدا به گرگ اشاره می‌کنند، ولی هر کدام ممکن است غلط باشد. «نسبتاً مطمئن» جور است و آوازِ مخصوص تو را مطمئن‌تر می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "foot"
+     ],
+     "best": "wolf",
+     "conf": 1,
+     "why": "A black paw points to the wolf. “Pretty sure” fits, and one more clue would help.",
+     "fa": {
+      "why": "پای سیاه به گرگ اشاره می‌کند. «نسبتاً مطمئن» جور است و یک سرنخِ دیگر کمک می‌کرد."
+     }
+    },
+    {
+     "if": [
+      "help"
+     ],
+     "best": "wolf",
+     "conf": 1,
+     "why": "Hoopy's news makes the wolf likely. “Pretty sure” fits. A clue from the door itself would help.",
+     "fa": {
+      "why": "خبرِ هدهد گرگ را محتمل می‌کند. «نسبتاً مطمئن» جور است. سرنخی از خودِ در کمک می‌کرد."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "A rough voice alone is not enough: a cold could do that. “Not enough evidence yet” is a good answer. Look for a stronger clue.",
+     "fa": {
+      "why": "فقط صدای کلفت کافی نیست: سرماخوردگی هم همین کار را می‌کند. «هنوز نشانهٔ کافی نیست» جواب خوبی است. دنبالِ سرنخِ قوی‌تری بگرد."
+     }
+    }
+   ]
+  },
+  {
+   "intro": "Knock, knock! A soft voice sings the secret song, every word. But Hoopy whispers: “The wolf was hiding by the wall earlier…”",
+   "given": "The visitor sang the secret song perfectly.",
+   "fa": {
+    "intro": "تق‌تق! یک صدای نرم آوازِ مخصوص را کامل می‌خواند. ولی هدهد پچ‌پچ می‌کند: «گرگ پیش‌تر کنارِ دیوار قایم شده بود…»",
+    "given": "مهمان آوازِ مخصوص را کامل خواند."
+   },
+   "stage": {
+    "bg": "room",
+    "actors": [
+     {
+      "id": "jingle",
+      "who": "shangul",
+      "x": 20,
+      "y": 92,
+      "s": 0.9,
+      "face": "surprised",
+      "anim": "bob"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 34,
+      "y": 92,
+      "s": 0.7,
+      "face": "thinking",
+      "anim": "bob"
+     },
+     {
+      "id": "hoopy",
+      "who": "hudhud",
+      "x": 86,
+      "y": 82,
+      "s": 0.9,
+      "face": "thinking",
+      "anim": "float"
+     }
+    ],
+    "props": [
+     {
+      "id": "door",
+      "what": "door",
+      "x": 58,
+      "y": 92,
+      "s": 2.0,
+      "anim": "none"
+     },
+     {
+      "id": "win",
+      "what": "window",
+      "x": 20,
+      "y": 60,
+      "s": 1.2,
+      "anim": "none"
+     }
+    ]
+   },
+   "hyps": [
+    {
+     "id": "mother",
+     "text": "It's Mother",
+     "fa": {
+      "text": "مادر است"
+     }
+    },
+    {
+     "id": "wolf",
+     "text": "It's the wolf",
+     "fa": {
+      "text": "گرگ است"
+     }
+    },
+    {
+     "id": "unsure",
+     "text": "I can't tell yet",
+     "fa": {
+      "text": "هنوز نمی‌توانم بفهمم"
+     },
+     "unsure": true
+    }
+   ],
+   "limit": 2,
+   "sources": [
+    {
+     "id": "question",
+     "target": "door",
+     "label": "Ask: “What did I give you for breakfast?”",
+     "clue": "The visitor answers: “Um… bread?” (Mother gave you warm milk and honey.)",
+     "pts": {
+      "wolf": 3
+     },
+     "kind": "strong",
+     "tricky": "A question only Mother can answer is a new check. The wolf could not have overheard the answer.",
+     "fa": {
+      "label": "بپرس: «صبحانه چه به شما دادم؟»",
+      "clue": "مهمان جواب می‌دهد: «ام… نان؟» (مادر برایتان شیرِ گرم و عسل گذاشته بود.)",
+      "tricky": "سؤالی که فقط مادر جوابش را می‌داند امتحانِ تازه‌ای است. گرگ نمی‌توانست جواب را شنیده باشد."
+     }
+    },
+    {
+     "id": "window",
+     "target": "win",
+     "label": "Peek through the window",
+     "clue": "You see grey fur and a long nose.",
+     "pts": {
+      "wolf": 3
+     },
+     "kind": "strong",
+     "tricky": "Seeing the visitor is a strong clue, because fur is much harder to fake than a voice.",
+     "fa": {
+      "label": "از پنجره نگاه کن",
+      "clue": "پوستِ خاکستری و یک دماغِ بلند می‌بینی.",
+      "tricky": "دیدنِ مهمان سرنخِ قوی است، چون پوست را سخت‌تر از صدا می‌شود قلابی کرد."
+     }
+    },
+    {
+     "id": "voice",
+     "target": "grape",
+     "label": "Listen to how sweet the voice is",
+     "clue": "The voice is soft and sweet, like Mother's.",
+     "pts": {
+      "mother": 1
+     },
+     "kind": "weak",
+     "tricky": "A soft voice is easy to fake with honey, so it does not help much.",
+     "fa": {
+      "label": "به شیرینیِ صدا گوش کن",
+      "clue": "صدا نرم و شیرین است، مثلِ صدای مادر.",
+      "tricky": "صدای نرم را با عسل راحت می‌شود قلابی کرد، پس کمکِ زیادی نمی‌کند."
+     }
+    },
+    {
+     "id": "foot",
+     "target": "hoopy",
+     "label": "Ask Hoopy about the feet",
+     "clue": "Hoopy says: “White feet… but the wolf was near the bakery today.”",
+     "pts": {},
+     "kind": "weak",
+     "tricky": "White feet could be flour. This clue leaves both answers open.",
+     "fa": {
+      "label": "از هدهد دربارهٔ پاها بپرس",
+      "clue": "هدهد می‌گوید: «پاهای سفید… ولی گرگ امروز نزدیکِ نانوایی بود.»",
+      "tricky": "پای سفید ممکن است آرد باشد. این سرنخ هر دو جواب را باز می‌گذارد."
+     }
+    }
+   ],
+   "changers": [
+    {
+     "id": "another",
+     "text": "A new question that only Mother could answer",
+     "good": true,
+     "fa": {
+      "text": "پرسشِ تازه‌ای که فقط مادر می‌توانست جواب بدهد"
+     }
+    },
+    {
+     "id": "again",
+     "text": "Hearing the song again",
+     "good": false,
+     "fa": {
+      "text": "دوباره شنیدنِ آواز"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "if": [
+      "question"
+     ],
+     "best": "wolf",
+     "conf": 2,
+     "why": "A question the wolf could not have overheard is a new, strong check, and he failed it. You can be very sure.",
+     "fa": {
+      "why": "پرسشی که گرگ نمی‌توانست شنیده باشد امتحانِ تازه و قوی است و او در آن رد شد. می‌توانی خیلی مطمئن باشی."
+     }
+    },
+    {
+     "if": [
+      "window"
+     ],
+     "best": "wolf",
+     "conf": 2,
+     "why": "Seeing grey fur is a strong clue. You can be very sure.",
+     "fa": {
+      "why": "دیدنِ پوستِ خاکستری سرنخِ قوی است. می‌توانی خیلی مطمئن باشی."
+     }
+    },
+    {
+     "if": [],
+     "best": "unsure",
+     "conf": 0,
+     "why": "The song might have been overheard, and a soft voice and white feet are easy to fake. “Not enough evidence yet” is the best answer. Find a check that the wolf could not have prepared for.",
+     "fa": {
+      "why": "شاید آواز را شنیده باشد، و صدای نرم و پای سفید را راحت می‌شود قلابی کرد. «هنوز نشانهٔ کافی نیست» بهترین جواب است. امتحانی پیدا کن که گرگ برایش آماده نشده باشد."
+     }
+    }
+   ]
+  }
+ ]
+}

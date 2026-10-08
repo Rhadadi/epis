@@ -198,8 +198,42 @@ def game_problems(gid):
         for lv in K.LEVELS:
             if not site_kids.for_level(g, lv)["items"]:
                 errs.append(f"{lv}: no questions for this level")
+    elif g.get("engine") == "mystery":
+        errs += mystery_problems(g)
     else:
         errs.append(f"unknown engine {g.get('engine')!r}")
+    return errs
+
+
+def mystery_problems(g):
+    """A mission's structure: sources point at things on its stage and at answers it offers; the rules end with a default."""
+    errs = []
+    for k, r in enumerate(g.get("rounds", []), 1):
+        w = f"round {k}"
+        hyps = {h["id"] for h in r.get("hyps", [])}
+        items = {x["id"] for x in r.get("stage", {}).get("actors", []) + r.get("stage", {}).get("props", [])}
+        ids = [x["id"] for x in r.get("sources", [])]
+        if len(set(ids)) != len(ids):
+            errs.append(f"{w}: two sources with the same id")
+        for x in r.get("sources", []):
+            if x.get("target") not in items:
+                errs.append(f"{w}: source {x['id']} points at {x.get('target')!r}, which is not on the stage")
+            for h in x.get("pts", {}):
+                if h not in hyps:
+                    errs.append(f"{w}: source {x['id']} favours unknown answer {h!r}")
+        if not 1 <= r.get("limit", 0) <= len(ids):
+            errs.append(f"{w}: the limit must be between 1 and the number of sources")
+        for ru in r.get("rules", []):
+            if ru.get("best") not in hyps:
+                errs.append(f"{w}: a rule's best answer {ru.get('best')!r} is not offered")
+            if any(i not in ids for i in ru.get("if", [])):
+                errs.append(f"{w}: a rule needs an unknown source")
+            if ru.get("conf") not in (0, 1, 2):
+                errs.append(f"{w}: confidence must be 0, 1 or 2")
+        if not r.get("rules") or r["rules"][-1].get("if"):
+            errs.append(f"{w}: the last rule must be the default (if: [])")
+        if not any(h.get("unsure") for h in r.get("hyps", [])):
+            errs.append(f"{w}: offer a 'not enough evidence yet' answer")
     return errs
 
 

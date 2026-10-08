@@ -2,10 +2,10 @@
  "scenes": [
   {
    "id": "door",
-   "game": "u01-door",
-   "label": "Quick! What would you do?",
+   "game": "mission-rumour",
+   "label": "Rumour or fact?",
    "fa": {
-    "label": "زود باش! تو چه می‌کردی؟"
+    "label": "شایعه یا واقعیت؟"
    }
   },
   {
@@ -227,10 +227,10 @@
     }
    ],
    "ask": {
-    "q": "After a trip to the bakery, the wolf could pass two of the tests. Which test could he never pass?",
+    "q": "After a trip to the bakery, the wolf could pass two of the tests. Which test was hardest for him to pass?",
     "who": "dog",
     "fa": {
-     "q": "گرگ بعد از سری به نانوایی از دو امتحان قبول می‌شد. از کدام امتحان هیچ‌وقت نمی‌توانست قبول شود؟"
+     "q": "گرگ بعد از سری به نانوایی از دو امتحان قبول می‌شد. از کدام امتحان سخت‌تر قبول می‌شد؟"
     },
     "options": [
      {
@@ -678,7 +678,8 @@
    "list": [
     "The kids' first two tests could rule the wolf *out*, but they couldn't rule Mother *in*. Why not?",
     "Think of a test in real life that is easy to pass even when the answer is wrong.",
-    "Sam was right about the time. Why do most people say he didn't know it?"
+    "Sam was right about the time. Why do most people say he didn't know it?",
+    "What if the wolf had overheard the song? What new check could the kids make?"
    ],
    "actors": [
     {
@@ -705,7 +706,58 @@
     "list": [
      "دو امتحانِ اولِ بزغاله‌ها می‌توانست ثابت کند مهمان گرگ *است*، ولی نمی‌توانست ثابت کند مادر *است*. چرا؟",
      "در زندگیِ واقعی امتحانی پیدا کن که حتی وقتی جواب غلط است، راحت از آن قبول می‌شوی.",
-     "نیما ساعت را درست گفت. چرا بیشترِ آدم‌ها می‌گویند آن را نمی‌دانست؟"
+     "نیما ساعت را درست گفت. چرا بیشترِ آدم‌ها می‌گویند آن را نمی‌دانست؟",
+     "اگر گرگ آواز را شنیده بود چه می‌شد؟ بزغاله‌ها چه امتحانِ تازه‌ای می‌توانستند بکنند؟"
+    ]
+   }
+  },
+  {
+   "id": "howsure",
+   "label": "How sure are you?",
+   "bg": "desk",
+   "text": [
+    "Clues can make us **more sure** or **less sure**. They almost never make us completely sure.",
+    "Say: “better supported” or “still uncertain”. Then ask: **What would change my mind?**"
+   ],
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "What would change my mind?",
+     "fa": {
+      "say": "چه چیزی نظرم را عوض می‌کند؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 52,
+     "y": 84,
+     "s": 0.9,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "label": "چقدر مطمئنی؟",
+    "text": [
+     "سرنخ‌ها می‌توانند ما را **مطمئن‌تر** یا **کم‌اطمینان‌تر** کنند. تقریباً هیچ‌وقت ما را کاملاً مطمئن نمی‌کنند.",
+     "بگو: «بهتر پشتیبانی شده» یا «هنوز نامطمئن». بعد بپرس: **چه چیزی نظرم را عوض می‌کند؟**"
     ]
    }
   },

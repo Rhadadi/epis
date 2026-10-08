@@ -9,7 +9,7 @@ Each unit starts from a classic story (an old folk tale, a fable, a poem, a true
 
 ## What children learn
 
-By the end of the sixteen units, a child can ask *How do you know?*; tell knowing from guessing and hoping; say where an idea came from and how that source can fail; give reasons and evidence; sort facts, opinions and tastes; spot common thinking traps; run a fair test; talk sensibly about chance; check what people, screens and AI say; notice the brain's shortcuts; hold the right amount of confidence and change their mind; and disagree kindly.
+**What is ready now:** two units (Unit 1, *How do you know?*, and Unit 2, *What makes you say that?*) and one game (Cause Detective). The other fourteen units are planned and will appear as they are finished. When all sixteen are done, a child can ask *How do you know?*; tell knowing from guessing and hoping; say where an idea came from and how that source can fail; give reasons and evidence; sort facts, opinions and tastes; spot common thinking traps; run a fair test; talk sensibly about chance; check what people, screens and AI say; notice the brain's shortcuts; hold the right amount of confidence and change their mind; and disagree kindly.
 
 Every unit uses the same four detective questions: *What exactly is being said? How do they know? What else could explain it? How sure should I be?*
 

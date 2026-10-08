@@ -1,50 +1,181 @@
 {
-  "engine": "sorter",
-  "title": "Know, guess or hope?",
-  "done": "You sorted them all! Knowing needs a good reason; guessing and hoping don't.",
-  "fa": {"title": "دانستن، حدس یا امید؟", "done": "همه را دسته‌بندی کردی! دانستن دلیلِ خوب لازم دارد؛ حدس و امید نه."},
-  "buckets": [
-    {"id": "know", "label": "I know", "hint": "right, for a good reason", "fa": {"label": "می‌دانم", "hint": "درست، با دلیلِ خوب"}},
-    {"id": "believe", "label": "I believe", "hint": "some reason, not checked", "levels": ["investigators"], "fa": {"label": "باور دارم", "hint": "کمی دلیل، وارسی‌نشده"}},
-    {"id": "guess", "label": "I'm guessing", "hint": "little or no reason", "fa": {"label": "حدس می‌زنم", "hint": "دلیلِ کم یا بی‌دلیل"}},
-    {"id": "hope", "label": "I hope", "hint": "I want it to be true", "fa": {"label": "امیدوارم", "hint": "می‌خواهم درست باشد"}}
-  ],
-  "cards": [
-    {"text": "It's raining. I can see it and hear it right now.", "bucket": "know",
-     "why": "You can see and hear the rain at this moment. That's a very good reason.",
-     "fa": {"text": "باران می‌بارد. همین الان دارم می‌بینمش و صدایش را می‌شنوم.", "why": "همین حالا باران را می‌بینی و می‌شنوی. این دلیلِ خیلی خوبی است."}},
-    {"text": "There's a toy in this box. It's about the right size.", "bucket": "guess",
-     "why": "The size is a small clue, but lots of things fit in a box. You'd need to look inside to know.",
-     "fa": {"text": "توی این جعبه یک اسباب‌بازی هست. اندازه‌اش جور است.", "why": "اندازه سرنخِ کوچکی است، ولی چیزهای زیادی توی جعبه جا می‌شوند. برای دانستن باید داخلش را ببینی."}},
-    {"text": "I hope it will be sunny for the picnic tomorrow.", "bucket": "hope",
-     "why": "Wanting sunshine doesn't make it sunny. That's a hope.",
-     "fa": {"text": "امیدوارم فردا برای پیک‌نیک آفتابی باشد.", "why": "خواستنِ آفتاب، هوا را آفتابی نمی‌کند. این یک امید است."}},
-    {"text": "Two plus two is four.", "bucket": "know",
-     "why": "You can check it with your fingers, every time, and it always works.",
-     "fa": {"text": "دو به‌علاوهٔ دو می‌شود چهار.", "why": "هر بار می‌توانی با انگشت‌هایت امتحانش کنی، و همیشه درست درمی‌آید."}},
-    {"text": "Our new teacher likes cats. (I haven't asked her.)", "bucket": "guess",
-     "why": "With no clue at all, this is just a guess. You could ask her!",
-     "fa": {"text": "معلمِ جدیدمان گربه دوست دارد. (از او نپرسیده‌ام.)", "why": "وقتی هیچ سرنخی نداری، این فقط یک حدس است. می‌توانی از خودش بپرسی!"}},
-    {"text": "I hope my team wins the match.", "bucket": "hope",
-     "why": "This is about what you want, not about a reason.",
-     "fa": {"text": "امیدوارم تیمم مسابقه را ببرد.", "why": "این دربارهٔ چیزی است که می‌خواهی، نه دربارهٔ یک دلیل."}},
-    {"text": "The red marble is in my left hand. I just looked.", "bucket": "know",
-     "why": "You just looked. That's a good reason, and it's easy to check again.",
-     "fa": {"text": "تیلهٔ قرمز توی دستِ چپم است. همین الان نگاه کردم.", "why": "همین الان نگاه کردی. این دلیلِ خوبی است و دوباره هم می‌شود وارسی‌اش کرد."}},
-    {"text": "The answer is C. I just picked one.", "bucket": "guess",
-     "why": "Picking without a reason is guessing, even if C turns out right.",
-     "fa": {"text": "جواب گزینهٔ ج است. همین‌طوری یکی را انتخاب کردم.", "why": "انتخابِ بی‌دلیل حدس زدن است، حتی اگر گزینهٔ ج درست از آب دربیاید."}},
-    {"text": "Max is at football practice. He usually is on Tuesdays.", "bucket": "believe", "levels": ["investigators"],
-     "why": "\"Usually\" is a real reason, but today might be different. A good reason, not yet checked: a belief.",
-     "fa": {"text": "کیان سرِ تمرینِ فوتبال است. سه‌شنبه‌ها معمولاً آن‌جاست.", "why": "«معمولاً» دلیلِ واقعی است، ولی شاید امروز فرق کند. دلیلِ خوب ولی وارسی‌نشده: یک باور."}},
-    {"text": "The bridge is open. The radio said so this morning.", "bucket": "believe", "levels": ["investigators"],
-     "why": "The radio is a good source, but things change during the day. You have a reason; you haven't checked.",
-     "fa": {"text": "پل باز است. رادیو امروز صبح این را گفت.", "why": "رادیو منبعِ خوبی است، ولی در طولِ روز چیزها عوض می‌شوند. دلیل داری، ولی وارسی نکرده‌ای."}},
-    {"text": "Grandma's clock says three, so it's three o'clock.", "bucket": "believe", "levels": ["investigators"],
-     "why": "A clock is usually a good reason, but only if it's working. Check a second clock to know.",
-     "fa": {"text": "ساعتِ مادربزرگ ۳ را نشان می‌دهد، پس ساعت ۳ است.", "why": "ساعت معمولاً دلیلِ خوبی است، ولی فقط اگر کار کند. برای دانستن، یک ساعتِ دیگر را هم نگاه کن."}},
-    {"text": "The coin will land heads. I have a feeling.", "bucket": "guess", "levels": ["investigators"],
-     "why": "A feeling isn't evidence. A fair coin has the same chance either way.",
-     "fa": {"text": "سکه شیر می‌آید. به دلم افتاده.", "why": "به دل افتادن نشانه نیست. سکهٔ سالم شانسِ یکسانی برای هر دو طرف دارد."}}
-  ]
+ "engine": "sorter",
+ "title": "Know, guess or hope?",
+ "done": "You sorted them all! Knowing needs a good reason; guessing and hoping don't.",
+ "fa": {
+  "title": "دانستن، حدس یا امید؟",
+  "done": "همه را دسته‌بندی کردی! دانستن دلیلِ خوب لازم دارد؛ حدس و امید نه."
+ },
+ "buckets": [
+  {
+   "id": "know",
+   "label": "I know",
+   "hint": "right, for a good reason",
+   "fa": {
+    "label": "می‌دانم",
+    "hint": "درست، با دلیلِ خوب"
+   }
+  },
+  {
+   "id": "believe",
+   "label": "I believe",
+   "hint": "some reason, not checked",
+   "levels": [
+    "investigators"
+   ],
+   "fa": {
+    "label": "باور دارم",
+    "hint": "کمی دلیل، وارسی‌نشده"
+   }
+  },
+  {
+   "id": "guess",
+   "label": "I'm guessing",
+   "hint": "little or no reason",
+   "fa": {
+    "label": "حدس می‌زنم",
+    "hint": "دلیلِ کم یا بی‌دلیل"
+   }
+  },
+  {
+   "id": "hope",
+   "label": "I hope",
+   "hint": "I want it to be true",
+   "fa": {
+    "label": "امیدوارم",
+    "hint": "می‌خواهم درست باشد"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "text": "It's raining. I can see it and hear it right now.",
+   "bucket": "know",
+   "why": "You can see and hear the rain at this moment. That's a very good reason.",
+   "fa": {
+    "text": "باران می‌بارد. همین الان دارم می‌بینمش و صدایش را می‌شنوم.",
+    "why": "همین حالا باران را می‌بینی و می‌شنوی. این دلیلِ خیلی خوبی است."
+   }
+  },
+  {
+   "text": "There's a toy in this box. It's about the right size.",
+   "bucket": "guess",
+   "why": "The size is a small clue, but lots of things fit in a box. You'd need to look inside to know.",
+   "fa": {
+    "text": "توی این جعبه یک اسباب‌بازی هست. اندازه‌اش جور است.",
+    "why": "اندازه سرنخِ کوچکی است، ولی چیزهای زیادی توی جعبه جا می‌شوند. برای دانستن باید داخلش را ببینی."
+   }
+  },
+  {
+   "text": "Maya packed sunglasses for tomorrow's picnic. She hasn't checked the forecast. She says it will be sunny.",
+   "bucket": "guess",
+   "why": "She has no forecast, only a wish. The sunglasses show what she hopes. A forecast would give her a real reason.",
+   "fa": {
+    "text": "مایا برای پیک‌نیکِ فردا عینکِ آفتابی برداشته. پیش‌بینیِ هوا را ندیده. می‌گوید فردا آفتابی است.",
+    "why": "او پیش‌بینیِ هوا ندارد، فقط آرزو دارد. عینکِ آفتابی نشان می‌دهد چه چیزی را امیدوار است. پیش‌بینیِ هوا دلیلِ واقعی به او می‌دهد."
+   }
+  },
+  {
+   "text": "The forecast says rain is very likely tomorrow. Maya says, “It will be sunny anyway!”",
+   "bucket": "hope",
+   "why": "Now she has a clue, and it points the other way. Saying “sunny anyway” is hoping, not knowing.",
+   "fa": {
+    "text": "پیش‌بینی می‌گوید فردا احتمالِ بارانِ زیاد است. مایا می‌گوید: «با این حال آفتابی است!»",
+    "why": "حالا او سرنخی دارد که به سمتِ دیگری اشاره می‌کند. گفتنِ «با این حال آفتابی است» امید است، نه دانستن."
+   }
+  },
+  {
+   "text": "Two plus two is four.",
+   "bucket": "know",
+   "why": "You can check it with your fingers, every time, and it always works.",
+   "fa": {
+    "text": "دو به‌علاوهٔ دو می‌شود چهار.",
+    "why": "هر بار می‌توانی با انگشت‌هایت امتحانش کنی، و همیشه درست درمی‌آید."
+   }
+  },
+  {
+   "text": "Our new teacher likes cats. (I haven't asked her.)",
+   "bucket": "guess",
+   "why": "With no clue at all, this is just a guess. You could ask her!",
+   "fa": {
+    "text": "معلمِ جدیدمان گربه دوست دارد. (از او نپرسیده‌ام.)",
+    "why": "وقتی هیچ سرنخی نداری، این فقط یک حدس است. می‌توانی از خودش بپرسی!"
+   }
+  },
+  {
+   "text": "I hope my team wins the match.",
+   "bucket": "hope",
+   "why": "This is about what you want, not about a reason.",
+   "fa": {
+    "text": "امیدوارم تیمم مسابقه را ببرد.",
+    "why": "این دربارهٔ چیزی است که می‌خواهی، نه دربارهٔ یک دلیل."
+   }
+  },
+  {
+   "text": "The red marble is in my left hand. I just looked.",
+   "bucket": "know",
+   "why": "You just looked. That's a good reason, and it's easy to check again.",
+   "fa": {
+    "text": "تیلهٔ قرمز توی دستِ چپم است. همین الان نگاه کردم.",
+    "why": "همین الان نگاه کردی. این دلیلِ خوبی است و دوباره هم می‌شود وارسی‌اش کرد."
+   }
+  },
+  {
+   "text": "The answer is C. I just picked one.",
+   "bucket": "guess",
+   "why": "Picking without a reason is guessing, even if C turns out right.",
+   "fa": {
+    "text": "جواب گزینهٔ ج است. همین‌طوری یکی را انتخاب کردم.",
+    "why": "انتخابِ بی‌دلیل حدس زدن است، حتی اگر گزینهٔ ج درست از آب دربیاید."
+   }
+  },
+  {
+   "text": "Max is at football practice. He usually is on Tuesdays.",
+   "bucket": "believe",
+   "levels": [
+    "investigators"
+   ],
+   "why": "\"Usually\" is a real reason, but today might be different. A good reason, not yet checked: a belief.",
+   "fa": {
+    "text": "کیان سرِ تمرینِ فوتبال است. سه‌شنبه‌ها معمولاً آن‌جاست.",
+    "why": "«معمولاً» دلیلِ واقعی است، ولی شاید امروز فرق کند. دلیلِ خوب ولی وارسی‌نشده: یک باور."
+   }
+  },
+  {
+   "text": "The bridge is open. The radio said so this morning.",
+   "bucket": "believe",
+   "levels": [
+    "investigators"
+   ],
+   "why": "The radio is a good source, but things change during the day. You have a reason; you haven't checked.",
+   "fa": {
+    "text": "پل باز است. رادیو امروز صبح این را گفت.",
+    "why": "رادیو منبعِ خوبی است، ولی در طولِ روز چیزها عوض می‌شوند. دلیل داری، ولی وارسی نکرده‌ای."
+   }
+  },
+  {
+   "text": "Grandma's clock says three, so it's three o'clock.",
+   "bucket": "believe",
+   "levels": [
+    "investigators"
+   ],
+   "why": "A clock is usually a good reason, but only if it's working. Check a second clock to know.",
+   "fa": {
+    "text": "ساعتِ مادربزرگ ۳ را نشان می‌دهد، پس ساعت ۳ است.",
+    "why": "ساعت معمولاً دلیلِ خوبی است، ولی فقط اگر کار کند. برای دانستن، یک ساعتِ دیگر را هم نگاه کن."
+   }
+  },
+  {
+   "text": "The coin will land heads. I have a feeling.",
+   "bucket": "guess",
+   "levels": [
+    "investigators"
+   ],
+   "why": "A feeling isn't evidence. A fair coin has the same chance either way.",
+   "fa": {
+    "text": "سکه شیر می‌آید. به دلم افتاده.",
+    "why": "به دل افتادن نشانه نیست. سکهٔ سالم شانسِ یکسانی برای هر دو طرف دارد."
+   }
+  }
+ ]
 }

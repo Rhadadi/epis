@@ -84,7 +84,7 @@
     "A fact about grapes"
    ],
    "correct": 0,
-   "explain": "An excuse feels like a reason but is about our feelings.",
+   "explain": "An excuse sounds like a reason, but it does not show the claim is true.",
    "fa": {
     "q": "روباه چون نمی‌رسد می‌گوید «ترش». این یک…",
     "choices": [
@@ -92,7 +92,7 @@
      "آزمونِ مزه است",
      "واقعیتی دربارهٔ انگور است"
     ],
-    "explain": "بهانه شبیهِ دلیل است ولی دربارهٔ حسِ ماست."
+    "explain": "بهانه شبیهِ دلیل است ولی نشان نمی‌دهد ادعا درست است."
    }
   },
   {

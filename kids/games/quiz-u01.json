@@ -1,43 +1,206 @@
 {
-  "engine": "quiz",
-  "title": "Quick check",
-  "done": "Well done, detective!",
-  "fa": {"title": "خودت را بسنج", "done": "آفرین، کارآگاه!"},
-  "items": [
-    {"q": "How did Jingle know the first visitor was the wolf?", "levels": ["explorers"],
-     "choices": ["The voice was rough", "The wolf said his name", "The door was open"], "correct": 0,
-     "explain": "Mother had told them: her voice is soft, the wolf's is rough.",
-     "fa": {"q": "شنگول از کجا فهمید مهمانِ اول گرگ است؟", "choices": ["صدایش کلفت بود", "گرگ اسمش را گفت", "در باز بود"],
-            "explain": "مادر گفته بود: صدای او نرم است و صدای گرگ کلفت."}},
-    {"q": "The wolf made his foot white with flour. What does that show?", "levels": ["explorers"],
-     "choices": ["Some clues can be faked", "Wolves like baking", "Feet are always white"], "correct": 0,
-     "explain": "A white foot looked like a good clue, but the wolf could fake it.",
-     "fa": {"q": "گرگ با آرد پایش را سفید کرد. این چه چیزی را نشان می‌دهد؟", "choices": ["بعضی سرنخ‌ها را می‌شود قلابی کرد", "گرگ‌ها نانوایی دوست دارند", "پاها همیشه سفیدند"],
-            "explain": "پای سفید شبیهِ سرنخِ خوبی بود، ولی گرگ توانست قلابی‌اش کند."}},
-    {"q": "Which one is a guess?", "levels": ["explorers"],
-     "choices": ["I can see the rain outside", "I think there's a toy in the box", "Two plus two is four"], "correct": 1,
-     "explain": "You can't see inside the box, so you don't have a good reason yet.",
-     "fa": {"q": "کدام‌یک حدس است؟", "choices": ["باران را بیرون می‌بینم", "فکر می‌کنم توی جعبه اسباب‌بازی هست", "دو به‌علاوهٔ دو می‌شود چهار"],
-            "explain": "داخلِ جعبه را نمی‌بینی، پس هنوز دلیلِ خوبی نداری."}},
-    {"q": "What was the best check at the door?",
-     "choices": ["The soft voice", "The white foot", "The secret song"], "correct": 2,
-     "explain": "Only Mother knew the song, so a wolf would fail that test.",
-     "fa": {"q": "بهترین امتحانِ دمِ در کدام بود؟", "choices": ["صدای نرم", "پای سفید", "آوازِ مخصوص"],
-            "explain": "فقط مادر آواز را بلد بود، پس گرگ در این امتحان رد می‌شد."}},
-    {"q": "Sam looks at a stopped clock that happens to show the right time. Does he know the time?", "levels": ["investigators"],
-     "choices": ["Yes, because he's right", "Not really: he's right only by luck", "Yes, because clocks never lie"], "correct": 1,
-     "explain": "His belief is true, but the clock would show three whatever the time was. Being right by luck isn't knowing.",
-     "fa": {"q": "نیما به ساعتی خوابیده نگاه می‌کند که از قضا ساعتِ درست را نشان می‌دهد. آیا ساعت را می‌داند؟", "choices": ["بله، چون درست می‌گوید", "نه واقعاً: فقط از شانس درست می‌گوید", "بله، چون ساعت‌ها هیچ‌وقت دروغ نمی‌گویند"],
-            "explain": "باورش درست است، ولی ساعت هر وقتی که بود ۳ را نشان می‌داد. درست بودنِ شانسی دانستن نیست."}},
-    {"q": "Why was the secret song strong evidence?", "levels": ["investigators"],
-     "choices": ["It was loud", "A faker could not easily pass it", "It was a happy song"], "correct": 1,
-     "explain": "A good test is one that the wrong answer would fail.",
-     "fa": {"q": "چرا آوازِ مخصوص نشانهٔ قوی‌ای بود؟", "choices": ["بلند بود", "آدمِ حقه‌باز نمی‌توانست راحت از آن قبول شود", "آوازِ شادی بود"],
-            "explain": "امتحانِ خوب امتحانی است که جوابِ غلط در آن رد شود."}},
-    {"q": "Max believes the bridge is open because the radio said so this morning. Which is the best description?", "levels": ["investigators"],
-     "choices": ["He knows it for certain", "He has a good reason, but it could be out of date", "He's only hoping"], "correct": 1,
-     "explain": "The radio is a good source, but bridges can close during the day. It's a belief with a reason.",
-     "fa": {"q": "کیان باور دارد پل باز است چون رادیو صبح این را گفت. بهترین توصیف کدام است؟", "choices": ["با اطمینان می‌داند", "دلیلِ خوبی دارد، ولی شاید قدیمی شده باشد", "فقط امیدوار است"],
-            "explain": "رادیو منبعِ خوبی است، ولی پل‌ها ممکن است وسطِ روز بسته شوند. این باوری است با دلیل."}}
-  ]
+ "engine": "quiz",
+ "title": "Quick check",
+ "done": "Well done, detective!",
+ "fa": {
+  "title": "خودت را بسنج",
+  "done": "آفرین، کارآگاه!"
+ },
+ "items": [
+  {
+   "q": "How did Jingle know the first visitor was the wolf?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "The voice was rough",
+    "The wolf said his name",
+    "The door was open"
+   ],
+   "correct": 0,
+   "explain": "Mother had told them: her voice is soft, the wolf's is rough.",
+   "fa": {
+    "q": "شنگول از کجا فهمید مهمانِ اول گرگ است؟",
+    "choices": [
+     "صدایش کلفت بود",
+     "گرگ اسمش را گفت",
+     "در باز بود"
+    ],
+    "explain": "مادر گفته بود: صدای او نرم است و صدای گرگ کلفت."
+   }
+  },
+  {
+   "q": "The wolf made his foot white with flour. What does that show?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "Some clues can be faked",
+    "Wolves like baking",
+    "Feet are always white"
+   ],
+   "correct": 0,
+   "explain": "A white foot looked like a good clue, but the wolf could fake it.",
+   "fa": {
+    "q": "گرگ با آرد پایش را سفید کرد. این چه چیزی را نشان می‌دهد؟",
+    "choices": [
+     "بعضی سرنخ‌ها را می‌شود قلابی کرد",
+     "گرگ‌ها نانوایی دوست دارند",
+     "پاها همیشه سفیدند"
+    ],
+    "explain": "پای سفید شبیهِ سرنخِ خوبی بود، ولی گرگ توانست قلابی‌اش کند."
+   }
+  },
+  {
+   "q": "Which one is a guess?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "I can see the rain outside",
+    "I think there's a toy in the box",
+    "Two plus two is four"
+   ],
+   "correct": 1,
+   "explain": "You can't see inside the box, so you don't have a good reason yet.",
+   "fa": {
+    "q": "کدام‌یک حدس است؟",
+    "choices": [
+     "باران را بیرون می‌بینم",
+     "فکر می‌کنم توی جعبه اسباب‌بازی هست",
+     "دو به‌علاوهٔ دو می‌شود چهار"
+    ],
+    "explain": "داخلِ جعبه را نمی‌بینی، پس هنوز دلیلِ خوبی نداری."
+   }
+  },
+  {
+   "q": "What was the best check at the door?",
+   "choices": [
+    "The soft voice",
+    "The white foot",
+    "The secret song"
+   ],
+   "correct": 2,
+   "explain": "Only Mother knew the song, so a wolf would fail that test.",
+   "fa": {
+    "q": "بهترین امتحانِ دمِ در کدام بود؟",
+    "choices": [
+     "صدای نرم",
+     "پای سفید",
+     "آوازِ مخصوص"
+    ],
+    "explain": "فقط مادر آواز را بلد بود، پس گرگ در این امتحان رد می‌شد."
+   }
+  },
+  {
+   "q": "Sam looks at a stopped clock that happens to show the right time. Does he know the time?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Yes, because he's right",
+    "Not really: he's right only by luck",
+    "Yes, because clocks never lie"
+   ],
+   "correct": 1,
+   "explain": "His belief is true, but the clock would show three whatever the time was. Being right by luck isn't knowing.",
+   "fa": {
+    "q": "نیما به ساعتی خوابیده نگاه می‌کند که از قضا ساعتِ درست را نشان می‌دهد. آیا ساعت را می‌داند؟",
+    "choices": [
+     "بله، چون درست می‌گوید",
+     "نه واقعاً: فقط از شانس درست می‌گوید",
+     "بله، چون ساعت‌ها هیچ‌وقت دروغ نمی‌گویند"
+    ],
+    "explain": "باورش درست است، ولی ساعت هر وقتی که بود ۳ را نشان می‌داد. درست بودنِ شانسی دانستن نیست."
+   }
+  },
+  {
+   "q": "Why was the secret song strong evidence?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "It was loud",
+    "A faker could not easily pass it",
+    "It was a happy song"
+   ],
+   "correct": 1,
+   "explain": "A good test is one that the wrong answer would fail.",
+   "fa": {
+    "q": "چرا آوازِ مخصوص نشانهٔ قوی‌ای بود؟",
+    "choices": [
+     "بلند بود",
+     "آدمِ حقه‌باز نمی‌توانست راحت از آن قبول شود",
+     "آوازِ شادی بود"
+    ],
+    "explain": "امتحانِ خوب امتحانی است که جوابِ غلط در آن رد شود."
+   }
+  },
+  {
+   "q": "Max believes the bridge is open because the radio said so this morning. Which is the best description?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "He knows it for certain",
+    "He has a good reason, but it could be out of date",
+    "He's only hoping"
+   ],
+   "correct": 1,
+   "explain": "The radio is a good source, but bridges can close during the day. It's a belief with a reason.",
+   "fa": {
+    "q": "کیان باور دارد پل باز است چون رادیو صبح این را گفت. بهترین توصیف کدام است؟",
+    "choices": [
+     "با اطمینان می‌داند",
+     "دلیلِ خوبی دارد، ولی شاید قدیمی شده باشد",
+     "فقط امیدوار است"
+    ],
+    "explain": "رادیو منبعِ خوبی است، ولی پل‌ها ممکن است وسطِ روز بسته شوند. این باوری است با دلیل."
+   }
+  },
+  {
+   "q": "Max says it will rain tomorrow. He has not looked at the sky or the forecast. What is the best answer?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "We don't have enough evidence yet",
+    "He is wrong",
+    "He is right"
+   ],
+   "correct": 0,
+   "explain": "“Not enough evidence yet” is a good answer. We can look at the forecast to find out.",
+   "fa": {
+    "q": "کیان می‌گوید فردا باران می‌بارد. به آسمان یا پیش‌بینیِ هوا نگاه نکرده. بهترین جواب چیست؟",
+    "choices": [
+     "هنوز نشانهٔ کافی نداریم",
+     "اشتباه می‌کند",
+     "درست می‌گوید"
+    ],
+    "explain": "«هنوز نشانهٔ کافی نداریم» جواب خوبی است. می‌توانیم پیش‌بینیِ هوا را ببینیم."
+   }
+  },
+  {
+   "q": "You guessed that it will rain. Then the forecast also says rain is very likely. What now?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Keep your answer, and be a bit more sure",
+    "Change to “sunny”",
+    "Ignore the forecast"
+   ],
+   "correct": 0,
+   "explain": "A new clue that agrees with you is a good reason to keep your answer. Changing it just to change would not be.",
+   "fa": {
+    "q": "حدس زدی باران می‌بارد. بعد پیش‌بینیِ هوا هم می‌گوید باران خیلی محتمل است. حالا چه؟",
+    "choices": [
+     "جوابت را نگه می‌دارم و کمی مطمئن‌تر می‌شوم",
+     "به «آفتابی» عوض می‌کنم",
+     "پیش‌بینی را نادیده می‌گیرم"
+    ],
+    "explain": "سرنخِ تازه‌ای که با تو هم‌نظر است دلیلِ خوبی برای نگه‌داشتنِ جواب است. فقط برای عوض‌کردن عوض‌کردن دلیل نیست."
+   }
+  }
+ ]
 }

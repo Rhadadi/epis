@@ -90,7 +90,8 @@
 
     return {
       set: function (sc, instant) { setBg(sc.bg); setPic(sc.pic); buildStage(sc, instant); },
-      face: function (id, f) { if (live[id]) setFace(live[id], f); }
+      face: function (id, f) { if (live[id]) setFace(live[id], f); },
+      node: function (id) { return live[id] || null; }
     };
   }
 
@@ -121,8 +122,18 @@
     var back = el("button", "dbtn dback", ui.back || T("Back", "قبلی")); back.type = "button";
     var dots = el("div", "ddots"); dots.setAttribute("role", "tablist");
     var next = el("button", "dbtn dnext", ui.next || T("Next", "بعدی")); next.type = "button";
-    var count = el("span", "dcount");
-    if (paper && tprog) { tprog.innerHTML = ""; tprog.appendChild(dots); tprog.appendChild(count); tprog.classList.toggle("many", n > 12); root.classList.add("tbdeck"); }
+    var count = el("span", "dcount"), chips = null, partLabels = ui.parts || null;
+    if (paper && tprog && partLabels && scenes.some(function (x) { return x.part; })) {  // a mission in parts: Story / Investigate / Try it
+      chips = el("div", "dparts"); chips.setAttribute("role", "tablist");
+      var seen = {};
+      scenes.forEach(function (x, i) {
+        if (!x.part || seen[x.part]) return;
+        seen[x.part] = el("button", "dpart", partLabels[x.part] || x.part); seen[x.part].type = "button"; seen[x.part].setAttribute("data-part", x.part);
+        seen[x.part].onclick = function () { go(i, { noskip: true }); };
+        chips.appendChild(seen[x.part]);
+      });
+    }
+    if (paper && tprog) { tprog.innerHTML = ""; if (chips) tprog.appendChild(chips); else tprog.appendChild(dots); tprog.appendChild(count); if (chips) tprog.classList.add("parts"); tprog.classList.toggle("many", n > 12 && !chips); root.classList.add("tbdeck"); }
     else nav.appendChild(dots);
     nav.insertBefore(back, nav.firstChild); nav.appendChild(next);
     scene.appendChild(pickBox);
@@ -215,6 +226,10 @@
       }
       if (sc.links) {
         var nl = el("ul", "dl dlinks");
+        if (sc.continue && G.state.last && G.state.last.href) {  // pick up where the child left off
+          var cli = el("li", "dcont"), ca = el("a", "", (ui.cont || T("Continue your case", "ادامهٔ پرونده")) + ": " + G.state.last.t);
+          ca.href = G.state.last.href + "#scene-" + G.state.last.scene; cli.appendChild(ca); nl.appendChild(cli);
+        }
         sc.links.forEach(function (l) {
           var li = el("li"), a = el("a", "", l.t); a.href = l.hrefs ? (l.hrefs[G.state.level] || l.hrefs.explorers) : l.href;
           if (l.hrefs) a.setAttribute("data-hrefs", JSON.stringify(l.hrefs));
@@ -318,6 +333,7 @@
       opts = opts || {};
       i = Math.max(0, Math.min(n - 1, i));
       if (i === cur) return;
+      if (scenes[i].skip === "seen" && G.state.seen && !opts.noskip && i + (opts.dir || 1) >= 0 && i + (opts.dir || 1) < n) { return go(i + (opts.dir || 1), opts); }
       if (scenes[i].pick && scenes[i].pick.skip && G.state.level && !opts.noskip && i + (opts.dir || 1) >= 0 && i + (opts.dir || 1) < n) { return go(i + (opts.dir || 1), opts); }
       var first = cur < 0;
       stopAudio();
@@ -331,6 +347,10 @@
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
       stage.hidden = !!sc.nostage || !!sc.title; label.classList.toggle("over", false);
       count.textContent = N(i + 1) + " / " + N(n);
+      var h1 = document.querySelector("h1.sr-h");
+      if (paper && root.getAttribute("data-level") && h1 && !opts.quiet && i > 0) { G.state.last = { href: location.pathname, scene: i + 1, t: h1.textContent, n: n }; G.save(); }
+      if (sc.continue) { G.state.seen = true; G.save(); }
+      if (chips) Array.prototype.forEach.call(chips.children, function (c) { c.classList.toggle("on", c.getAttribute("data-part") === sc.part); c.setAttribute("aria-current", c.getAttribute("data-part") === sc.part ? "step" : "false"); });
       dotEls.forEach(function (d, k) { d.classList.toggle("on", k === i); d.classList.toggle("done", k < i); d.setAttribute("aria-current", k === i ? "step" : "false"); });
       nav.style.setProperty("--p", n > 1 ? (100 * i / (n - 1)).toFixed(1) + "%" : "100%");
       back.disabled = i === 0;

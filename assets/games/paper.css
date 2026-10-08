@@ -214,3 +214,67 @@ body.paper .kpager a{border:2.5px solid #222;border-radius:var(--hb);box-shadow:
 body.paper .kword{padding:10px 12px}
 body.paper .kwords-all{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
 body.paper .kword .kd{font-size:.95rem;line-height:1.3}
+
+/* the parts of a mission in the bar: Story / Investigate / Try it, with a readable count */
+.tprog.parts{gap:10px}
+.dparts{display:flex;gap:4px}
+.dpart{font:400 1.05rem var(--hand);letter-spacing:.06em;color:#fff;background:none;border:2px solid transparent;border-radius:var(--hb);padding:2px 12px;cursor:pointer;opacity:.6}
+.dpart.on{opacity:1;border-color:#fff}
+.dpart:hover{opacity:1}
+html[lang="fa"] .dpart{font-size:.9rem;letter-spacing:0}
+.tprog.parts .dcount{display:block;opacity:.7;font-size:.95rem}
+@media (max-width:520px){.dpart{padding:2px 7px;font-size:.92rem}.tprog.parts .dcount{display:none}}
+/* artwork gives way so the question and its choices stay on screen */
+@media (min-width:700px){body.paper .dstage.haspic{width:min(100%,calc(44vh * 1.5));margin-inline:auto}body.paper .cs-pic img{max-height:34vh;aspect-ratio:auto}}
+body.paper .dgame .cs-clip .cs-pic img{max-height:30vh;object-fit:cover}
+@media (min-width:700px){body.paper .dstage:not(.haspic){width:min(100%,calc(38vh * 16 / 9));margin-inline:auto}}
+
+/* ---- the mission engine (assets/games/mystery.js) */
+.my{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.my-count{margin:0;text-align:center;color:#666;letter-spacing:.14em;text-transform:uppercase;font-size:1rem}
+html[lang="fa"] .my-count{letter-spacing:0}
+.my-stage{--aw:13%;--pw:12%;border:0;border-radius:0;overflow:visible;background:#fff;position:relative;aspect-ratio:16/8;max-height:36vh;width:min(100%,calc(36vh * 2));margin-inline:auto}
+.my-stage .act,.my-stage .prp{overflow:visible}
+.my-panel{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;max-width:42em;margin-inline:auto}
+.my-intro{font-size:clamp(1.3rem,3.8vw,1.8rem);line-height:1.3;margin:0}
+html[lang="fa"] .my-intro{font-size:1.15rem;line-height:1.9}
+.my-given,.my-q,.my-q2{margin:0}.my-q{font-size:1.5rem}.my-q2{font-size:1.2rem;color:#555}
+html[lang="fa"] .my-q{font-size:1.15rem;font-weight:700}html[lang="fa"] .my-q2{font-size:1rem}
+.my-given{border-bottom:2.5px solid #E5484D;padding-bottom:2px}
+.my-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.my-chip,.my-go,.my-src{font:400 1.2rem/1.2 var(--hand);background:#fff;color:#222;border:2.5px solid #222;border-radius:var(--hb);padding:7px 20px;cursor:pointer}
+html[lang="fa"] .my-chip,html[lang="fa"] .my-go,html[lang="fa"] .my-src{font:700 1rem/1.6 var(--hand)}
+.my-chip:hover,.my-go:hover:not(:disabled),.my-src:hover:not(:disabled){background:#222;color:#fff}
+.my-chip[aria-pressed="true"]{background:#222;color:#fff}
+.my-chip.unsure{border-style:dashed}
+.my-conf .my-chip{font-size:1.05rem;padding:4px 16px}
+.my-go{align-self:center;margin-top:6px;background:#222;color:#fff}
+.my-go:hover:not(:disabled){background:#fff;color:#222}
+.my-go:disabled{opacity:.3;cursor:default}
+.my-left{margin:0;color:#555}
+.my-list{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.my-src.done{background:#E9F8F0;border-color:#1FB57A;color:#222;opacity:1}.my-src:disabled:not(.done){opacity:.35;cursor:default}
+.my-hot{position:absolute;inset:-6px;background:none;border:2.5px dashed transparent;border-radius:14px;cursor:pointer;z-index:40;padding:0}
+.my-hot.avail{border-color:rgba(229,72,77,.85);animation:myhot 1.4s ease-in-out infinite}
+.my-hot.done{border-color:#1FB57A;border-style:solid;animation:none;cursor:default}
+.my-hot:disabled:not(.done){border-color:transparent;animation:none;cursor:default}
+@keyframes myhot{0%,100%{box-shadow:0 0 0 0 rgba(229,72,77,.35)}50%{box-shadow:0 0 0 8px rgba(229,72,77,0)}}
+@media (prefers-reduced-motion:reduce){.my-hot.avail{animation:none}}
+.my-clues{display:flex;flex-direction:column;gap:8px;width:100%}
+.my-clue,.my-moved,.my-verdict,.my-tricks{border:2px dashed #222;border-radius:var(--hp);padding:10px 16px;display:flex;flex-direction:column;gap:2px;text-align:start;width:100%}
+.my-clue b,.my-moved b,.my-verdict b,.my-tricks b{font-weight:400;font-size:1.15rem;color:#666;letter-spacing:.04em}
+html[lang="fa"] .my-clue b,html[lang="fa"] .my-moved b,html[lang="fa"] .my-verdict b,html[lang="fa"] .my-tricks b{font-weight:800;font-size:1rem}
+.my-clue.strong{border-style:solid;border-color:#222}.my-clue.given{border-color:#8B5CF6}
+.my-verdict.good{border:2.5px solid #1FB57A}.my-verdict.catch{border:2.5px solid #E5484D}
+.my-verdict > b{color:#222;font-size:1.35rem}
+html[lang="fa"] .my-verdict > b{font-size:1.1rem}
+.my-keep{color:#1B8A5C}
+.my-trick{margin:.2em 0;font-size:1.02rem;line-height:1.35}.my-trick i{font-style:normal;font-weight:700}.my-trick.unseen{color:#777}
+html[lang="fa"] .my-trick{font-size:.95rem;line-height:1.8}
+.my-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0}
+.my-badge{border:2px solid #FFC92E;background:#FFF8DD;border-radius:var(--hb);padding:2px 14px;font-size:1.05rem}
+.my-done{text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px}
+.my-done .kg-star{font-size:3.4rem;line-height:1;color:#FFC92E}
+.my-done p{margin:.2em 0;font-size:1.4rem}.my-offline{border-top:2px dashed #222;padding-top:10px;margin-top:6px;font-size:1.15rem !important}
+body.paper .dlinks .dcont a{background:#222;color:#fff}
+body.paper .dlinks .dcont a:hover{background:#fff;color:#222}

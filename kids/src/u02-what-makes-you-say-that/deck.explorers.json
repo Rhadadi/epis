@@ -361,7 +361,7 @@
   {
    "id": "ex2",
    "text": [
-    "That is an **excuse**. It feels like a reason, but it is not about the thing. It is about how we feel.",
+    "That is an **excuse**. It sounds like a reason, but it does not show the claim is true. A feeling can explain why we say it. It cannot show that it is true.",
     "Everybody does it. The clever part is to notice."
    ],
    "bg": "town",
@@ -388,7 +388,7 @@
    ],
    "fa": {
     "text": [
-     "این **بهانه** است. شبیهِ دلیل است، ولی دربارهٔ آن چیز نیست. دربارهٔ حسِ خودمان است.",
+     "این **بهانه** است. شبیهِ دلیل است، ولی نشان نمی‌دهد ادعا درست است. حس می‌تواند توضیح بدهد چرا آن را می‌گوییم، ولی نمی‌تواند نشان بدهد درست است.",
      "همه این کار را می‌کنند. کارِ باهوشانه این است که متوجه شوی."
     ]
    }

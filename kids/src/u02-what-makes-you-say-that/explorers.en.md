@@ -31,7 +31,7 @@ A good reason is about the grapes. "I tasted one and it was sour." "A bird spat 
 
 Sometimes we want something and can't have it. Then we say, "I didn't want it anyway!"
 
-That is an **excuse**. It feels like a reason, but it is not about the thing. It is about how we feel.
+That is an **excuse**. It sounds like a reason, but it does not show the claim is true. A feeling can explain why we say it. It cannot show that it is true.
 
 Everybody does it. The clever part is to notice it, and ask: **"Is this a reason about the thing, or about me?"**
 

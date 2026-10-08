@@ -21,7 +21,7 @@ def LEVELS_OF(level):
     """The page's own level and where both levels live, for the shell (a child who chose the other age is sent there)."""
     return {"this": level, "explorers": "./", "investigators": "investigators.html"}
 SCRIPTS = {"case": "games/case.js", "sorter": "kids/games/sorter.js", "quiz": "kids/games/quiz.js",
-           "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js")}
+           "sim:confounder": "games/sims/confounder.js", "stages": ("scenes/puppets.js", "scenes/deck.js"), "mystery": ("scenes/puppets.js", "scenes/deck.js", "games/mystery.js")}
 
 
 def game_engines(g):
@@ -101,6 +101,7 @@ def build(b, art, md):
                 if probs:
                     raise SystemExit(f"kids {uid} {level}: problems in the scene deck:\n  " + "\n  ".join(probs))
                 deck = SC.render(scenes_, boxes, ui={"listen": L("Listen", "گوش کن"), "next": L("Next", "بعدی"), "back": L("Back", "قبلی"),
+                                                    "parts": {"story": L("Story", "قصه"), "investigate": L("Investigate", "کاوش"), "try": L("Try it", "امتحان کن")},
                                                     "again": L("Start again", "دوباره از اول")},
                                  audio_src=f'{root}assets/kids/audio/{dsync["file"]}' if dsync else None,
                                  attrs=f'data-unit="{uid}" data-level="{level}" data-game="deck"')
@@ -115,8 +116,10 @@ def build(b, art, md):
                         f'<p class="kgrown"><a href="grownups.html">{L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم")} →</a></p>{pager}</main>')
             scripts = engine_scripts(b, root, engines)
             if deck:
-                scripts += (f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script>'
-                            f'<script src="{b.av(root, "scenes/deck.js")}" defer></script>')
+                for f in ("scenes/puppets.js", "scenes/deck.js"):
+                    tag = f'<script src="{b.av(root, f)}" defer></script>'
+                    if tag not in scripts:
+                        scripts += tag
             elif sync:
                 scripts += f'<script src="{b.av(root, "kids/player.js")}" defer></script>'
             lvl_name = L("Explorers", "کاوشگرها") if level == "explorers" else L("Investigators", "کارآگاه‌ها")
@@ -332,6 +335,14 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
             sc["links"] = [*sc.get("links", []), {"t": L("More games", "بازی‌های بیشتر"), "href": "../"},
                            {"t": L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم"), "href": "grownups.html"}]
         out.append(sc)
+    for i, sc in enumerate(out):  # the three parts of a mission, shown in the bar
+        sid = sc.get("id", "")
+        if i == 0 or sid in {x["id"] for x in shots} or sc.get("story"):
+            sc["part"] = "story"
+        elif sid in ("talk", "end", "further") or (sc.get("game") and i > 1):
+            sc["part"] = "try"
+        else:
+            sc["part"] = "investigate"
     return out, boxes
 
 
@@ -569,7 +580,7 @@ def home_body(b, live, arcade, root):
     probs = SC.validate(scenes)
     if probs:
         raise SystemExit("kids home deck:\n  " + "\n  ".join(probs))
-    deck = SC.render(scenes, ui={"next": L("Next", "بعدی"), "back": L("Back", "قبلی"), "again": L("Start again", "دوباره از اول")}, attrs='data-unit="home"')
+    deck = SC.render(scenes, ui={"next": L("Next", "بعدی"), "back": L("Back", "قبلی"), "again": L("Start again", "دوباره از اول"), "cont": L("Continue your case", "ادامهٔ پرونده")}, attrs='data-unit="home"')
     return f'<main id="main" class="pdeck"><h1 class="sr-h">{L("How do you know?", "از کجا می‌دانی؟")}</h1>{deck}</main>'
 
 
