@@ -65,7 +65,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 30,
      "y": 92,
      "s": 1,
@@ -118,7 +118,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 82,
      "y": 92,
      "s": 0.9,
@@ -769,7 +769,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 28,
      "y": 92,
      "s": 1,
@@ -842,7 +842,7 @@
     },
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 80,
      "y": 92,
      "s": 0.9,

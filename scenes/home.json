@@ -88,7 +88,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 28,
      "y": 92,
      "s": 1,
@@ -108,7 +108,7 @@
    ],
    "ask": {
     "q": "Did the coffee do it?",
-    "who": "dog",
+    "who": "person",
     "fa": {
      "q": "کارِ قهوه بود؟"
     },
@@ -155,7 +155,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 30,
      "y": 92,
      "s": 1,
@@ -314,7 +314,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "dog",
+     "who": "person",
      "x": 50,
      "y": 92,
      "s": 1,

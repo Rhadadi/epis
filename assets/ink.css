@@ -120,3 +120,5 @@ html[lang="fa"] .deck .dtext{font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.
 .deck .bub::after{border-top-color:var(--ink)}
 .sr-h{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .dttl-sub{font-family:var(--hand)}
+/* the grown-up guide's figures are plain: a round head, two dots, a fez; no blush */
+.deck .pp circle[fill="#F37A8B"]{display:none}
