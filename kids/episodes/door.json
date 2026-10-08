@@ -7,7 +7,11 @@
   "hook": "گرگ می‌تواند صدا را تقلید کند و پایش را سفید کند. می‌توانی سرنخی را پیدا کنی که او نمی‌تواند تقلید کند؟"
  },
  "frames": "kids/episodes/door.frames.json",
- "video": {"engine": "pruna", "model": "p-video-2", "hold": true},
+ "video": {
+  "engine": "pruna",
+  "model": "p-video-2",
+  "hold": true
+ },
  "veo": {
   "model": "veo-3.1-fast-generate-preview",
   "aspect": "16:9",
@@ -16,21 +20,57 @@
   "negative": "text, letters, words, numbers, captions, logos, watermark, speech, distorted faces, extra limbs, morphing, photorealistic, 3D render, scary, sharp teeth, blood, dark"
  },
  "names": {
-  "door": {"en": "At the door", "fa": "پشتِ در"},
-  "doorsweet": {"en": "At the door", "fa": "پشتِ در"}
+  "door": {
+   "en": "At the door",
+   "fa": "پشتِ در"
+  },
+  "doorsweet": {
+   "en": "At the door",
+   "fa": "پشتِ در"
+  }
  },
  "voices": {
-  "en": {"mother": "Lily", "wolf": "Callum", "door": "Callum", "doorsweet": "Lily", "shangul": "Laura", "mangul": "Liam", "grape": "Jessica", "kids": "Jessica", "narrator": "George"},
-  "fa": {"mother": "Roya", "wolf": "Kourosh", "door": "Kourosh", "doorsweet": "Roya", "shangul": "Roya", "mangul": "Kourosh", "grape": "Roya", "kids": "Roya", "narrator": "Roya"}
+  "en": {
+   "mother": "Lily",
+   "wolf": "Callum",
+   "door": "Callum",
+   "doorsweet": "Lily",
+   "shangul": "Laura",
+   "mangul": "Liam",
+   "grape": "Jessica",
+   "kids": "Jessica",
+   "narrator": "George"
+  },
+  "fa": {
+   "mother": "Roya",
+   "wolf": "Kourosh",
+   "door": "Kourosh",
+   "doorsweet": "Roya",
+   "shangul": "Roya",
+   "mangul": "Kourosh",
+   "grape": "Roya",
+   "kids": "Roya",
+   "narrator": "Roya"
+  }
  },
  "clips": [
   {
    "id": "c1",
-   "video": {"hold": false},
+   "video": {
+    "hold": false
+   },
    "motion": "The mother goat with the blue headscarf waves goodbye with one hoof, turns and walks slowly away down the path with her basket; the three little kids wave from the doorway and their bells jingle. Static camera.",
    "lines": [
-    {"who": "mother", "en": "I must go and find grass. Lock the door, and open it only for me.", "fa": "من باید بروم علف پیدا کنم. در را قفل کنید و فقط برای من باز کنید."},
-    {"who": "mother", "en": "Remember: I have a soft voice and white feet. And only I know our secret song.", "fa": "یادتان باشد: صدای من نرم است و پاهایم سفید. و فقط من آهنگِ رازمان را بلدم."}
+    {
+     "who": "mother",
+     "en": "I must go and find grass. Lock the door, and open it only for me.",
+     "fa": "من باید بروم علف پیدا کنم. در را قفل کنید و فقط برای من باز کنید."
+    },
+    {
+     "who": "mother",
+     "en": "Remember: I have a soft voice and white feet. And only I know our secret song.",
+     "fa": "یادتان باشد: صدای من نرم است و پاهایم سفید. و فقط من آهنگِ رازمان را بلدم."
+    }
    ]
   },
   {
@@ -43,12 +83,18 @@
    "id": "c3",
    "motion": "The grey cartoon wolf gulps a big wooden spoonful of golden honey, smacks his lips happily and clears his throat, looking very pleased with himself. Static camera, comic.",
    "lines": [
-    {"who": "narrator", "en": "The wolf ate a big spoon of honey, to make his voice soft and sweet.", "fa": "گرگ یک قاشقِ بزرگ عسل خورد تا صدایش نرم و شیرین شود."}
+    {
+     "who": "narrator",
+     "en": "The wolf ate a big spoon of honey, to make his voice soft and sweet.",
+     "fa": "گرگ یک قاشقِ بزرگ عسل خورد تا صدایش نرم و شیرین شود."
+    }
    ]
   },
   {
    "id": "c4",
-   "video": {"hold": false},
+   "video": {
+    "hold": false
+   },
    "motion": "A big black furry paw slowly slides in under the closed blue door and wiggles its toes; the three little kids lean in to look, then point at it. Static camera.",
    "lines": []
   },
@@ -56,136 +102,586 @@
    "id": "c5",
    "motion": "The grey cartoon wolf dips both front paws into the big sack of white flour; a soft white cloud puffs up and he sneezes comically, then admires his white paws. Static camera.",
    "lines": [
-    {"who": "narrator", "en": "Then the wolf ran to the baker, and rubbed his feet in white flour.", "fa": "بعد گرگ دوید پیشِ نانوا و پاهایش را توی آردِ سفید مالید."}
+    {
+     "who": "narrator",
+     "en": "Then the wolf ran to the baker, and rubbed his feet in white flour.",
+     "fa": "بعد گرگ دوید پیشِ نانوا و پاهایش را توی آردِ سفید مالید."
+    }
    ]
   },
   {
    "id": "c6",
-   "video": {"hold": false},
-   "motion": "A big paw covered in white flour slowly slides in under the closed blue door, leaving a little dusting of flour; the three little kids lean in, surprised. Static camera.",
+   "video": {
+    "hold": false
+   },
+   "motion": "The blue door stays firmly shut and does not move or open at all. Only at the very bottom, a big paw covered in white flour slowly slides in through the narrow gap under the closed door, leaving a little dusting of flour on the floor; the three little goat kids lean in and look at it, surprised. Static camera.",
    "lines": []
   },
   {
    "id": "c7",
    "motion": "Outside the blue door the grey cartoon wolf tries to sing: he opens his mouth, hums, coughs, waves a paw like a conductor and sings badly; two little birds on the roof cover their ears with their wings. Static camera, comic.",
    "lines": [
-    {"who": "wolf", "en": "Ahem. La la... la? Laaa!", "fa": "اِهِم. لا لا... لا؟ لااا!"}
+    {
+     "who": "wolf",
+     "en": "Ahem. La la... la? Laaa!",
+     "fa": "اِهِم. لا لا... لا؟ لااا!"
+    }
    ]
   },
   {
    "id": "c8",
-   "video": {"hold": false},
+   "video": {
+    "hold": false
+   },
    "motion": "The grey cartoon wolf stomps off grumpily along the path into the woods, little puffs of flour coming off his feet, and disappears between the trees; the three little kids peek out of the window and giggle. Static camera.",
    "lines": [
-    {"who": "narrator", "en": "The wolf was so cross that he ran far into the woods, and he never came back.", "fa": "گرگ آن‌قدر عصبانی شد که دوید و رفت توی جنگل، و دیگر هیچ‌وقت برنگشت."}
+    {
+     "who": "narrator",
+     "en": "The wolf was so cross that he ran far into the woods, and he never came back.",
+     "fa": "گرگ آن‌قدر عصبانی شد که دوید و رفت توی جنگل، و دیگر هیچ‌وقت برنگشت."
+    }
    ]
   },
   {
    "id": "c9",
-   "video": {"hold": false},
-   "motion": "The blue door swings open and the three little kids run out and hug the mother goat with the blue headscarf; she nuzzles them happily, their bells jingle, warm golden light. Slow gentle push-in.",
+   "motion": "The mother goat with the blue headscarf gently nuzzles her three little goat kids in the doorway; they snuggle closer, their tails wag and their bells jingle; warm golden sunset light. All four stay goats exactly as in the picture. Static camera.",
    "lines": [
-    {"who": "mother", "en": "My clever kids! How did you know it was really me?", "fa": "بچه‌های باهوشم! از کجا فهمیدید که واقعاً خودم هستم؟"},
-    {"who": "grape", "en": "A voice can be copied. A white foot can be faked. But nobody else knows our song!", "fa": "صدا را می‌شود تقلید کرد. پای سفید را می‌شود ساختگی درست کرد. ولی هیچ‌کس دیگر آهنگِ ما را بلد نیست!"}
+    {
+     "who": "mother",
+     "en": "My clever kids! How did you know it was really me?",
+     "fa": "بچه‌های باهوشم! از کجا فهمیدید که واقعاً خودم هستم؟"
+    },
+    {
+     "who": "grape",
+     "en": "A voice can be copied. A white foot can be faked. But nobody else knows our song!",
+     "fa": "صدا را می‌شود تقلید کرد. پای سفید را می‌شود ساختگی درست کرد. ولی هیچ‌کس دیگر آهنگِ ما را بلد نیست!"
+    }
    ]
   },
   {
    "id": "c10",
    "motion": "The blue door opens just a crack and the grey cartoon wolf's long nose pokes in, sniffing; the three little kids squeal, then all push the door shut together with a bump, and the nose pops back out. Silly and funny, not scary. Static camera.",
    "lines": [
-    {"who": "kids", "en": "Eek! Shut it, shut it!", "fa": "وای! ببندیدش، ببندیدش!"}
+    {
+     "who": "kids",
+     "en": "Eek! Shut it, shut it!",
+     "fa": "وای! ببندیدش، ببندیدش!"
+    }
    ]
   }
  ],
  "lines": {
-  "ask-song": {"who": "mother", "en": "Here is our secret song. Can you play it back on the bells?", "fa": "این آهنگِ رازِ ماست. می‌توانی با زنگوله‌ها دوباره بزنی‌اش؟"},
-  "r-song-miss": {"who": "mother", "en": "Almost! Listen once more.", "fa": "نزدیک بود! یک بارِ دیگر گوش کن."},
-  "r-song": {"who": "mother", "en": "Perfect! Never tell it to anyone.", "fa": "عالی بود! هیچ‌وقت آن را به کسی نگو."},
-  "door-rough": {"who": "door", "en": "Open the door, my dears. It's your mother!", "fa": "در را باز کنید، عزیزانم. مادرتان هستم!"},
-  "ask-door": {"who": "grape", "en": "Someone is at the door! What will you do?", "fa": "یک نفر پشتِ در است! چه کار می‌کنی؟"},
-  "r-rough": {"who": "shangul", "en": "That voice is rough and loud. Mother's voice is soft. You're the wolf!", "fa": "این صدا زبر و بلند است. صدای مادر نرم است. تو گرگی!"},
-  "r-oops": {"who": "grape", "en": "Oops! Never open the door before you check. Let's go back!", "fa": "اوه! هیچ‌وقت قبل از بررسی در را باز نکن. برگردیم عقب!"},
-  "door-sweet": {"who": "doorsweet", "en": "Open the door, my dears. It's your mother!", "fa": "در را باز کنید، عزیزانم. مادرتان هستم!"},
-  "r-sweet": {"who": "grape", "en": "Hmm. That sounds just like Mother. What else can we check?", "fa": "هوم. درست مثلِ صدای مادر است. دیگر چه چیزی را می‌شود بررسی کرد؟"},
-  "r-black": {"who": "mangul", "en": "A black foot! Mother has white feet. You're the wolf!", "fa": "پای سیاه! پاهای مادر سفید است. تو گرگی!"},
-  "door-sweet2": {"who": "doorsweet", "en": "It's me, my dears! Look, my feet are white!", "fa": "خودمم، عزیزانم! نگاه کنید، پاهایم سفید است!"},
-  "r-white": {"who": "grape", "en": "A white foot, just like Mother's. But the wolf tricked us before. What can't he copy?", "fa": "پای سفید، درست مثلِ پای مادر. ولی گرگ قبلاً هم ما را گول زد. چه چیزی را نمی‌تواند تقلید کند؟"},
-  "r-asksong": {"who": "grape", "en": "If you are our mother, sing our secret song!", "fa": "اگر مادرِ ما هستی، آهنگِ رازمان را بخوان!"},
-  "ask-wolfsong": {"who": "grape", "en": "Listen carefully. Is that our song?", "fa": "خوب گوش کن. این آهنگِ ماست؟"},
-  "r-wolfsong-yes": {"who": "grape", "en": "Listen again: those are not our notes!", "fa": "دوباره گوش کن: این‌ها نت‌های ما نیستند!"},
-  "r-wolfsong-no": {"who": "kids", "en": "That's not our song! You're the wolf! Go away!", "fa": "این آهنگِ ما نیست! تو گرگی! برو پی کارت!"},
-  "ask-why": {"who": "grape", "en": "Why was the song the best clue?", "fa": "چرا آهنگ بهترین سرنخ بود؟"},
-  "r-why-right": {"who": "grape", "en": "Yes! Only Mother knows it. A clue that can't be copied is the one to trust.", "fa": "آفرین! فقط مادر آن را بلد است. سرنخی که نمی‌شود تقلیدش کرد، قابلِ اعتماد است."},
-  "r-why-wrong": {"who": "grape", "en": "Hmm. Think again: could the wolf copy it?", "fa": "هوم. دوباره فکر کن: گرگ می‌توانست تقلیدش کند؟"},
-  "door-mother": {"who": "mother", "en": "My dears, it's me. Listen to our song!", "fa": "عزیزانم، خودمم. به آهنگمان گوش کنید!"},
-  "ask-mothersong": {"who": "grape", "en": "Is that our song?", "fa": "این آهنگِ ماست؟"},
-  "r-mothersong-no": {"who": "grape", "en": "Listen again. Those are our notes!", "fa": "دوباره گوش کن. این‌ها نت‌های خودِ ما هستند!"},
-  "r-mothersong-yes": {"who": "kids", "en": "It's our song! It's really Mother!", "fa": "آهنگِ خودمان است! واقعاً مادر است!"},
-  "teaser": {"who": "grape", "en": "Next case: Max says kids with bigger feet read better. Is he right?", "fa": "پرونده‌ی بعدی: کیان می‌گوید بچه‌هایی که پای بزرگ‌تری دارند بهتر کتاب می‌خوانند. حق با اوست؟"}
+  "ask-song": {
+   "who": "mother",
+   "en": "Here is our secret song. Can you play it back on the bells?",
+   "fa": "این آهنگِ رازِ ماست. می‌توانی با زنگوله‌ها دوباره بزنی‌اش؟"
+  },
+  "r-song-miss": {
+   "who": "mother",
+   "en": "Almost! Listen once more.",
+   "fa": "نزدیک بود! یک بارِ دیگر گوش کن."
+  },
+  "r-song": {
+   "who": "mother",
+   "en": "Perfect! Never tell it to anyone.",
+   "fa": "عالی بود! هیچ‌وقت آن را به کسی نگو."
+  },
+  "door-rough": {
+   "who": "door",
+   "en": "Open the door, my dears. It's your mother!",
+   "fa": "در را باز کنید، عزیزانم. مادرتان هستم!"
+  },
+  "ask-door": {
+   "who": "grape",
+   "en": "Someone is at the door! What will you do?",
+   "fa": "یک نفر پشتِ در است! چه کار می‌کنی؟"
+  },
+  "r-rough": {
+   "who": "shangul",
+   "en": "That voice is rough and loud. Mother's voice is soft. You're the wolf!",
+   "fa": "این صدا زبر و بلند است. صدای مادر نرم است. تو گرگی!"
+  },
+  "r-oops": {
+   "who": "grape",
+   "en": "Oops! Never open the door before you check. Let's go back!",
+   "fa": "اوه! هیچ‌وقت قبل از بررسی در را باز نکن. برگردیم عقب!"
+  },
+  "door-sweet": {
+   "who": "doorsweet",
+   "en": "Open the door, my dears. It's your mother!",
+   "fa": "در را باز کنید، عزیزانم. مادرتان هستم!"
+  },
+  "r-sweet": {
+   "who": "grape",
+   "en": "Hmm. That sounds just like Mother. What else can we check?",
+   "fa": "هوم. درست مثلِ صدای مادر است. دیگر چه چیزی را می‌شود بررسی کرد؟"
+  },
+  "r-black": {
+   "who": "mangul",
+   "en": "A black foot! Mother has white feet. You're the wolf!",
+   "fa": "پای سیاه! پاهای مادر سفید است. تو گرگی!"
+  },
+  "door-sweet2": {
+   "who": "doorsweet",
+   "en": "It's me, my dears! Look, my feet are white!",
+   "fa": "خودمم، عزیزانم! نگاه کنید، پاهایم سفید است!"
+  },
+  "r-white": {
+   "who": "grape",
+   "en": "A white foot, just like Mother's. But the wolf tricked us before. What can't he copy?",
+   "fa": "پای سفید، درست مثلِ پای مادر. ولی گرگ قبلاً هم ما را گول زد. چه چیزی را نمی‌تواند تقلید کند؟"
+  },
+  "r-asksong": {
+   "who": "grape",
+   "en": "If you are our mother, sing our secret song!",
+   "fa": "اگر مادرِ ما هستی، آهنگِ رازمان را بخوان!"
+  },
+  "ask-wolfsong": {
+   "who": "grape",
+   "en": "Listen carefully. Is that our song?",
+   "fa": "خوب گوش کن. این آهنگِ ماست؟"
+  },
+  "r-wolfsong-yes": {
+   "who": "grape",
+   "en": "Listen again: those are not our notes!",
+   "fa": "دوباره گوش کن: این‌ها نت‌های ما نیستند!"
+  },
+  "r-wolfsong-no": {
+   "who": "kids",
+   "en": "That's not our song! You're the wolf! Go away!",
+   "fa": "این آهنگِ ما نیست! تو گرگی! برو پی کارت!"
+  },
+  "ask-why": {
+   "who": "grape",
+   "en": "Why was the song the best clue?",
+   "fa": "چرا آهنگ بهترین سرنخ بود؟"
+  },
+  "r-why-right": {
+   "who": "grape",
+   "en": "Yes! Only Mother knows it. A clue that can't be copied is the one to trust.",
+   "fa": "آفرین! فقط مادر آن را بلد است. سرنخی که نمی‌شود تقلیدش کرد، قابلِ اعتماد است."
+  },
+  "r-why-wrong": {
+   "who": "grape",
+   "en": "Hmm. Think again: could the wolf copy it?",
+   "fa": "هوم. دوباره فکر کن: گرگ می‌توانست تقلیدش کند؟"
+  },
+  "door-mother": {
+   "who": "mother",
+   "en": "My dears, it's me. Listen to our song!",
+   "fa": "عزیزانم، خودمم. به آهنگمان گوش کنید!"
+  },
+  "ask-mothersong": {
+   "who": "grape",
+   "en": "Is that our song?",
+   "fa": "این آهنگِ ماست؟"
+  },
+  "r-mothersong-no": {
+   "who": "grape",
+   "en": "Listen again. Those are our notes!",
+   "fa": "دوباره گوش کن. این‌ها نت‌های خودِ ما هستند!"
+  },
+  "r-mothersong-yes": {
+   "who": "kids",
+   "en": "It's our song! It's really Mother!",
+   "fa": "آهنگِ خودمان است! واقعاً مادر است!"
+  },
+  "teaser": {
+   "who": "grape",
+   "en": "Next case: Max says kids with bigger feet read better. Is he right?",
+   "fa": "پرونده‌ی بعدی: کیان می‌گوید بچه‌هایی که پای بزرگ‌تری دارند بهتر کتاب می‌خوانند. حق با اوست؟"
+  }
  },
  "steps": [
-  {"id": "open", "clip": "c1"},
-  {"id": "learn", "do": "song", "say": "ask-song", "miss": "r-song-miss", "after": "r-song",
-   "q": {"en": "Play the secret song!", "fa": "آهنگِ راز را بزن!"},
-   "notes": {"explorers": [0, 2, 1, 3], "investigators": [0, 2, 1, 3, 2]}},
-
-  {"id": "knock1", "clip": "c2", "after": "door-rough"},
-  {"id": "check1", "do": "choose", "inpic": true, "say": "ask-door", "q": {"en": "Someone is at the door!", "fa": "یک نفر پشتِ در است!"},
+  {
+   "id": "open",
+   "clip": "c1"
+  },
+  {
+   "id": "learn",
+   "do": "song",
+   "say": "ask-song",
+   "miss": "r-song-miss",
+   "after": "r-song",
+   "q": {
+    "en": "Play the secret song!",
+    "fa": "آهنگِ راز را بزن!"
+   },
+   "notes": {
+    "explorers": [
+     0,
+     2,
+     1,
+     3
+    ],
+    "investigators": [
+     0,
+     2,
+     1,
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "id": "knock1",
+   "clip": "c2",
+   "after": "door-rough"
+  },
+  {
+   "id": "check1",
+   "do": "choose",
+   "inpic": true,
+   "say": "ask-door",
+   "q": {
+    "en": "Someone is at the door!",
+    "fa": "یک نفر پشتِ در است!"
+   },
    "options": [
-    {"id": "open", "icon": "door", "x": 25, "y": 58, "t": {"en": "Open the door", "fa": "در را باز کن"}, "go": "oops1"},
-    {"id": "listen", "icon": "ear", "x": 25, "y": 30, "t": {"en": "Listen to the voice", "fa": "به صدا گوش کن"}, "say": "r-rough", "go": "honey", "right": true}
-   ]},
-  {"id": "oops1", "side": true, "clip": "c10", "after": "r-oops", "rewind": "check1"},
-  {"id": "honey", "clip": "c3"},
-
-  {"id": "knock2", "clip": "c2", "after": "door-sweet"},
-  {"id": "check2", "do": "choose", "inpic": true, "say": "ask-door", "q": {"en": "Someone is at the door again!", "fa": "باز یک نفر پشتِ در است!"},
+    {
+     "id": "open",
+     "icon": "door",
+     "x": 25,
+     "y": 58,
+     "t": {
+      "en": "Open the door",
+      "fa": "در را باز کن"
+     },
+     "go": "oops1"
+    },
+    {
+     "id": "listen",
+     "icon": "ear",
+     "x": 25,
+     "y": 30,
+     "t": {
+      "en": "Listen to the voice",
+      "fa": "به صدا گوش کن"
+     },
+     "say": "r-rough",
+     "go": "honey",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "oops1",
+   "side": true,
+   "clip": "c10",
+   "after": "r-oops",
+   "rewind": "check1"
+  },
+  {
+   "id": "honey",
+   "clip": "c3"
+  },
+  {
+   "id": "knock2",
+   "clip": "c2",
+   "after": "door-sweet"
+  },
+  {
+   "id": "check2",
+   "do": "choose",
+   "inpic": true,
+   "say": "ask-door",
+   "q": {
+    "en": "Someone is at the door again!",
+    "fa": "باز یک نفر پشتِ در است!"
+   },
    "options": [
-    {"id": "open", "icon": "door", "x": 25, "y": 58, "t": {"en": "Open the door", "fa": "در را باز کن"}, "go": "oops2"},
-    {"id": "listen", "icon": "ear", "x": 25, "y": 30, "t": {"en": "Listen to the voice", "fa": "به صدا گوش کن"}, "say": "r-sweet", "retry": true},
-    {"id": "foot", "icon": "foot", "x": 25, "y": 86, "t": {"en": "Look under the door", "fa": "زیرِ در را نگاه کن"}, "go": "paw1", "right": true}
-   ]},
-  {"id": "oops2", "side": true, "clip": "c10", "after": "r-oops", "rewind": "check2"},
-  {"id": "paw1", "side": true, "clip": "c4", "after": "r-black", "back": "flour"},
-  {"id": "flour", "clip": "c5"},
-
-  {"id": "knock3", "clip": "c2", "after": "door-sweet2"},
-  {"id": "check3", "do": "choose", "inpic": true, "say": "ask-door", "q": {"en": "A soft voice… and a white foot?", "fa": "صدای نرم... و پای سفید؟"},
+    {
+     "id": "open",
+     "icon": "door",
+     "x": 25,
+     "y": 58,
+     "t": {
+      "en": "Open the door",
+      "fa": "در را باز کن"
+     },
+     "go": "oops2"
+    },
+    {
+     "id": "listen",
+     "icon": "ear",
+     "x": 25,
+     "y": 30,
+     "t": {
+      "en": "Listen to the voice",
+      "fa": "به صدا گوش کن"
+     },
+     "say": "r-sweet",
+     "retry": true
+    },
+    {
+     "id": "foot",
+     "icon": "foot",
+     "x": 25,
+     "y": 86,
+     "t": {
+      "en": "Look under the door",
+      "fa": "زیرِ در را نگاه کن"
+     },
+     "go": "paw1",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "oops2",
+   "side": true,
+   "clip": "c10",
+   "after": "r-oops",
+   "rewind": "check2"
+  },
+  {
+   "id": "paw1",
+   "side": true,
+   "clip": "c4",
+   "after": "r-black",
+   "back": "flour"
+  },
+  {
+   "id": "flour",
+   "clip": "c5"
+  },
+  {
+   "id": "knock3",
+   "clip": "c2",
+   "after": "door-sweet2"
+  },
+  {
+   "id": "check3",
+   "do": "choose",
+   "inpic": true,
+   "say": "ask-door",
+   "q": {
+    "en": "A soft voice… and a white foot?",
+    "fa": "صدای نرم... و پای سفید؟"
+   },
    "options": [
-    {"id": "open", "icon": "door", "x": 25, "y": 58, "t": {"en": "Open the door", "fa": "در را باز کن"}, "go": "oops3"},
-    {"id": "foot", "icon": "foot", "x": 25, "y": 86, "t": {"en": "Look under the door", "fa": "زیرِ در را نگاه کن"}, "go": "paw2"},
-    {"id": "song", "icon": "note", "x": 78, "y": 38, "t": {"en": "Ask for the secret song", "fa": "آهنگِ راز را بخواه"}, "say": "r-asksong", "go": "sing", "right": true}
-   ]},
-  {"id": "oops3", "side": true, "clip": "c10", "after": "r-oops", "rewind": "check3"},
-  {"id": "paw2", "side": true, "clip": "c6", "after": "r-white", "back": "check3"},
-
-  {"id": "sing", "clip": "c7"},
-  {"id": "wolfsong", "do": "tune", "notes": [3, 0, 3, 1, 0], "wobble": true},
-  {"id": "judge1", "do": "choose", "say": "ask-wolfsong", "q": {"en": "Is that our song?", "fa": "این آهنگِ ماست؟"},
+    {
+     "id": "open",
+     "icon": "door",
+     "x": 25,
+     "y": 58,
+     "t": {
+      "en": "Open the door",
+      "fa": "در را باز کن"
+     },
+     "go": "oops3"
+    },
+    {
+     "id": "foot",
+     "icon": "foot",
+     "x": 25,
+     "y": 86,
+     "t": {
+      "en": "Look under the door",
+      "fa": "زیرِ در را نگاه کن"
+     },
+     "go": "paw2"
+    },
+    {
+     "id": "song",
+     "icon": "note",
+     "x": 78,
+     "y": 38,
+     "t": {
+      "en": "Ask for the secret song",
+      "fa": "آهنگِ راز را بخواه"
+     },
+     "say": "r-asksong",
+     "go": "sing",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "oops3",
+   "side": true,
+   "clip": "c10",
+   "after": "r-oops",
+   "rewind": "check3"
+  },
+  {
+   "id": "paw2",
+   "side": true,
+   "clip": "c6",
+   "after": "r-white",
+   "back": "check3"
+  },
+  {
+   "id": "sing",
+   "clip": "c7"
+  },
+  {
+   "id": "wolfsong",
+   "do": "tune",
+   "notes": [
+    3,
+    0,
+    3,
+    1,
+    0
+   ],
+   "wobble": true
+  },
+  {
+   "id": "judge1",
+   "do": "choose",
+   "say": "ask-wolfsong",
+   "q": {
+    "en": "Is that our song?",
+    "fa": "این آهنگِ ماست؟"
+   },
    "options": [
-    {"id": "yes", "icon": "up", "t": {"en": "Yes", "fa": "آره"}, "say": "r-wolfsong-yes", "retry": true, "replay": "wolfsong"},
-    {"id": "no", "icon": "down", "t": {"en": "No!", "fa": "نه!"}, "say": "r-wolfsong-no", "go": "away", "right": true}
-   ]},
-  {"id": "away", "clip": "c8"},
-  {"id": "why", "do": "choose", "levels": ["investigators"], "say": "ask-why", "q": {"en": "Why was the song the best clue?", "fa": "چرا آهنگ بهترین سرنخ بود؟"},
+    {
+     "id": "yes",
+     "icon": "up",
+     "t": {
+      "en": "Yes",
+      "fa": "آره"
+     },
+     "say": "r-wolfsong-yes",
+     "retry": true,
+     "replay": "wolfsong"
+    },
+    {
+     "id": "no",
+     "icon": "down",
+     "t": {
+      "en": "No!",
+      "fa": "نه!"
+     },
+     "say": "r-wolfsong-no",
+     "go": "away",
+     "right": true
+    }
+   ]
+  },
+  {
+   "id": "away",
+   "clip": "c8"
+  },
+  {
+   "id": "why",
+   "do": "choose",
+   "levels": [
+    "investigators"
+   ],
+   "say": "ask-why",
+   "q": {
+    "en": "Why was the song the best clue?",
+    "fa": "چرا آهنگ بهترین سرنخ بود؟"
+   },
    "options": [
-    {"id": "loud", "icon": "ear", "t": {"en": "Songs are loud", "fa": "آهنگ بلند است"}, "say": "r-why-wrong", "retry": true},
-    {"id": "only", "icon": "key", "t": {"en": "Only Mother knows it, so it can't be copied", "fa": "فقط مادر بلدش است، پس نمی‌شود تقلیدش کرد"}, "say": "r-why-right", "right": true, "go": "knock4"},
-    {"id": "magic", "icon": "note", "t": {"en": "Songs are magic", "fa": "آهنگ جادویی است"}, "say": "r-why-wrong", "retry": true}
-   ]},
-
-  {"id": "knock4", "clip": "c2", "after": "door-mother"},
-  {"id": "mothersong", "do": "tune", "song": "learn"},
-  {"id": "judge2", "do": "choose", "say": "ask-mothersong", "q": {"en": "Is that our song?", "fa": "این آهنگِ ماست؟"},
+    {
+     "id": "loud",
+     "icon": "ear",
+     "t": {
+      "en": "Songs are loud",
+      "fa": "آهنگ بلند است"
+     },
+     "say": "r-why-wrong",
+     "retry": true
+    },
+    {
+     "id": "only",
+     "icon": "key",
+     "t": {
+      "en": "Only Mother knows it, so it can't be copied",
+      "fa": "فقط مادر بلدش است، پس نمی‌شود تقلیدش کرد"
+     },
+     "say": "r-why-right",
+     "right": true,
+     "go": "knock4"
+    },
+    {
+     "id": "magic",
+     "icon": "note",
+     "t": {
+      "en": "Songs are magic",
+      "fa": "آهنگ جادویی است"
+     },
+     "say": "r-why-wrong",
+     "retry": true
+    }
+   ]
+  },
+  {
+   "id": "knock4",
+   "clip": "c2",
+   "after": "door-mother"
+  },
+  {
+   "id": "mothersong",
+   "do": "tune",
+   "song": "learn"
+  },
+  {
+   "id": "judge2",
+   "do": "choose",
+   "say": "ask-mothersong",
+   "q": {
+    "en": "Is that our song?",
+    "fa": "این آهنگِ ماست؟"
+   },
    "options": [
-    {"id": "yes", "icon": "up", "t": {"en": "Yes! Open the door!", "fa": "آره! در را باز کن!"}, "say": "r-mothersong-yes", "go": "home", "right": true},
-    {"id": "no", "icon": "down", "t": {"en": "No", "fa": "نه"}, "say": "r-mothersong-no", "retry": true, "replay": "mothersong"}
-   ]},
-  {"id": "home", "clip": "c9"},
-  {"id": "finish", "do": "finish", "say": "teaser",
-   "card": {"title": {"en": "A clue that can't be faked", "fa": "سرنخی که نمی‌شود جعلش کرد"},
-            "explorers": {"en": "Some clues can be copied, like a voice or a white foot. Check the clue nobody else can copy.", "fa": "بعضی سرنخ‌ها را می‌شود تقلید کرد، مثلِ صدا یا پای سفید. سرنخی را بررسی کن که هیچ‌کس دیگر نمی‌تواند تقلیدش کند."},
-            "investigators": {"en": "Good evidence is hard to fake. Before you believe, ask: could someone copy this clue?", "fa": "شاهدِ خوب سخت جعل می‌شود. پیش از باور کردن بپرس: کسی می‌تواند این سرنخ را تقلید کند؟"}},
-   "next": {"img": "kids/kids-feet", "episode": "big-feet", "t": {"en": "Next case: the big feet mystery", "fa": "پرونده‌ی بعد: معمای پاهای بزرگ"}}}
+    {
+     "id": "yes",
+     "icon": "up",
+     "t": {
+      "en": "Yes! Open the door!",
+      "fa": "آره! در را باز کن!"
+     },
+     "say": "r-mothersong-yes",
+     "go": "home",
+     "right": true
+    },
+    {
+     "id": "no",
+     "icon": "down",
+     "t": {
+      "en": "No",
+      "fa": "نه"
+     },
+     "say": "r-mothersong-no",
+     "retry": true,
+     "replay": "mothersong"
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "clip": "c9"
+  },
+  {
+   "id": "finish",
+   "do": "finish",
+   "say": "teaser",
+   "card": {
+    "title": {
+     "en": "A clue that can't be faked",
+     "fa": "سرنخی که نمی‌شود جعلش کرد"
+    },
+    "explorers": {
+     "en": "Some clues can be copied, like a voice or a white foot. Check the clue nobody else can copy.",
+     "fa": "بعضی سرنخ‌ها را می‌شود تقلید کرد، مثلِ صدا یا پای سفید. سرنخی را بررسی کن که هیچ‌کس دیگر نمی‌تواند تقلیدش کند."
+    },
+    "investigators": {
+     "en": "Good evidence is hard to fake. Before you believe, ask: could someone copy this clue?",
+     "fa": "شاهدِ خوب سخت جعل می‌شود. پیش از باور کردن بپرس: کسی می‌تواند این سرنخ را تقلید کند؟"
+    }
+   },
+   "next": {
+    "img": "kids/kids-feet",
+    "episode": "big-feet",
+    "t": {
+     "en": "Next case: the big feet mystery",
+     "fa": "پرونده‌ی بعد: معمای پاهای بزرگ"
+    }
+   }
+  }
  ]
 }

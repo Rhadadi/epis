@@ -1,6 +1,259 @@
 {
  "v": 1,
- "clips": {},
+ "clips": {
+  "c1": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.38,
+       "who": "mother",
+       "t": "I must go and find grass. Lock the door, and open it only for me."
+      },
+      {
+       "b": 5.73,
+       "e": 12.77,
+       "who": "mother",
+       "t": "Remember: I have a soft voice and white feet. And only I know our secret song."
+      }
+     ],
+     "dur": 13.13
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 6.5,
+       "who": "mother",
+       "t": "من باید بروم علف پیدا کنم. در را قفل کنید و فقط برای من باز کنید."
+      },
+      {
+       "b": 6.85,
+       "e": 14.93,
+       "who": "mother",
+       "t": "یادتان باشد: صدای من نرم است و پاهایم سفید. و فقط من آهنگِ رازمان را بلدم."
+      }
+     ],
+     "dur": 15.29
+    }
+   }
+  },
+  "c2": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [],
+     "dur": 0.86
+    },
+    "fa": {
+     "lines": [],
+     "dur": 0.86
+    }
+   }
+  },
+  "c3": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.46,
+       "who": "narrator",
+       "t": "The wolf ate a big spoon of honey, to make his voice soft and sweet."
+      }
+     ],
+     "dur": 5.81
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 6.18,
+       "who": "narrator",
+       "t": "گرگ یک قاشقِ بزرگ عسل خورد تا صدایش نرم و شیرین شود."
+      }
+     ],
+     "dur": 6.53
+    }
+   }
+  },
+  "c4": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [],
+     "dur": 0.86
+    },
+    "fa": {
+     "lines": [],
+     "dur": 0.86
+    }
+   }
+  },
+  "c5": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.9,
+       "who": "narrator",
+       "t": "Then the wolf ran to the baker, and rubbed his feet in white flour."
+      }
+     ],
+     "dur": 5.26
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 6.1,
+       "who": "narrator",
+       "t": "بعد گرگ دوید پیشِ نانوا و پاهایش را توی آردِ سفید مالید."
+      }
+     ],
+     "dur": 6.46
+    }
+   }
+  },
+  "c6": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [],
+     "dur": 0.86
+    },
+    "fa": {
+     "lines": [],
+     "dur": 0.86
+    }
+   }
+  },
+  "c7": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.22,
+       "who": "wolf",
+       "t": "Ahem. La la... la? Laaa!"
+      }
+     ],
+     "dur": 5.57
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.74,
+       "who": "wolf",
+       "t": "اِهِم. لا لا... لا؟ لااا!"
+      }
+     ],
+     "dur": 5.09
+    }
+   }
+  },
+  "c8": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.78,
+       "who": "narrator",
+       "t": "The wolf was so cross that he ran far into the woods, and he never came back."
+      }
+     ],
+     "dur": 6.14
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 7.62,
+       "who": "narrator",
+       "t": "گرگ آن‌قدر عصبانی شد که دوید و رفت توی جنگل، و دیگر هیچ‌وقت برنگشت."
+      }
+     ],
+     "dur": 7.97
+    }
+   }
+  },
+  "c9": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 4.5,
+       "who": "mother",
+       "t": "My clever kids! How did you know it was really me?"
+      },
+      {
+       "b": 4.85,
+       "e": 11.09,
+       "who": "grape",
+       "t": "A voice can be copied. A white foot can be faked. But nobody else knows our song!"
+      }
+     ],
+     "dur": 11.45
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 5.38,
+       "who": "mother",
+       "t": "بچه‌های باهوشم! از کجا فهمیدید که واقعاً خودم هستم؟"
+      },
+      {
+       "b": 5.73,
+       "e": 15.01,
+       "who": "grape",
+       "t": "صدا را می‌شود تقلید کرد. پای سفید را می‌شود ساختگی درست کرد. ولی هیچ‌کس دیگر آهنگِ ما را بلد نیست!"
+      }
+     ],
+     "dur": 15.36
+    }
+   }
+  },
+  "c10": {
+   "dur": 8.0,
+   "voice": {
+    "en": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.66,
+       "who": "kids",
+       "t": "Eek! Shut it, shut it!"
+      }
+     ],
+     "dur": 3.02
+    },
+    "fa": {
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 3.62,
+       "who": "kids",
+       "t": "وای! ببندیدش، ببندیدش!"
+      }
+     ],
+     "dur": 3.98
+    }
+   }
+  }
+ },
  "lines": {
   "ask-song": {
    "en": {

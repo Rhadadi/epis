@@ -182,6 +182,7 @@
 
     function go(id) {
       var s = id ? byId[id] : null;
+      stage.classList.remove("captop");
       if (!s) return;
       if (s.levels && s.levels.indexOf(level) < 0) return go(nextOf(s));
       if (s.clip) {
@@ -229,7 +230,7 @@
     function choose(s) {
       question(s);
       var row = s.inpic ? layer : el("div", "ep-opts" + (s.options.length > 2 ? " three" : ""));
-      if (s.inpic) layer.innerHTML = ""; else ask.appendChild(row);
+      if (s.inpic) { layer.innerHTML = ""; stage.classList.add("captop"); } else ask.appendChild(row);
       var busy = false;
       s.options.forEach(function (o) {
         var b = el("button", "ep-opt" + (s.inpic ? " ep-pin" : "")); b.type = "button"; b.setAttribute("data-id", o.id);

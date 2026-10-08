@@ -102,6 +102,11 @@ The episode ends on a clue card, the child's first guess recalled ("At the start
   frames from start to end catch duplicates and wandering characters); `tools/video/episode.py` voices the lines
   (ElevenLabs), takes the soft film sound from the Veo clip when there is one (Pruna's is near silent),
   and writes the web files. Then place the tap spots and drop targets on each clip's `.last.webp`.
+- Interactions a step can use: `choose` (cards under the picture, or with `"inpic": true` buttons placed on
+  things in the picture: the door, the knocker, the gap under the door), `tap` (measure or inspect things),
+  `drag` (cards onto people), `song` (listen, then play a tune back on bells) and `tune` (a tune played over the
+  picture; `"wobble"` makes it sour). A wrong idea can play its own clip and then `rewind` to the question, or
+  `back` to a later step.
 - One idea per episode, spoken, few words on screen. Questions before answers (predict, then see). Every
   interaction is something the hands do. No timers, no losing, no streaks.
 
