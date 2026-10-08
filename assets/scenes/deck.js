@@ -111,8 +111,9 @@
     var stage = el("div", "dstage"); stage.setAttribute("aria-hidden", "true");
     var label = el("p", "dlabel");
     var listen = el("button", "dlisten"); listen.type = "button";
-    var replay = el("button", "dlisten dreplay", ui.replay || T("Replay", "دوباره")); replay.type = "button";
-    var ctl = el("div", "dctl"); ctl.hidden = true; ctl.appendChild(listen); ctl.appendChild(replay);
+    // one small replay icon (no pause, no big button); it shows only on scenes that are read aloud
+    var replay = el("button", "dreplay", "↻"); replay.type = "button"; replay.setAttribute("aria-label", ui.replay || T("Replay", "دوباره")); replay.title = ui.replay || T("Replay", "دوباره");
+    var ctl = el("div", "dctl"); ctl.hidden = true; ctl.appendChild(replay);
     var scene = el("div", "dscene"); scene.setAttribute("tabindex", "-1");
     var text = el("div", "dtext"); text.setAttribute("aria-live", "polite");
     var ask = el("div", "dask");
@@ -369,7 +370,7 @@
       st.set(sc, first);
       label.textContent = sc.label || ""; label.hidden = !sc.label;
       showText(sc); showAsk(sc); showGame(sc); showTitle(sc); showPick(sc);
-      ctl.hidden = !sc.audio; setListenText(false);
+      ctl.hidden = !sc.audio || !!sc.game || !!sc.title; setListenText(false);
       if (paper && tsound && sound && sc.audio && !opts.quiet) playScene(sc, 1000);  // with the sound on, each scene reads itself when it arrives
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
       stage.hidden = !!sc.nostage || !!sc.title; label.classList.toggle("over", false);
