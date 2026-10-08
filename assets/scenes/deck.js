@@ -151,11 +151,13 @@
     }
     function playScene(sc) {
       if (!sc.audio) return;
-      if (!audio) { audio = new Audio(data.audio.src); audio.preload = "none"; audio.addEventListener("play", function () { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(tick); }); }
+      if (!audio) { audio = new Audio(data.audio.src); audio.preload = "auto"; audio.addEventListener("play", function () { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(tick); }); }
       segEnd = sc.audio[1];
-      if (audio.currentTime < sc.audio[0] - .2 || audio.currentTime > sc.audio[1]) audio.currentTime = sc.audio[0];
-      var pr = audio.play();
-      if (pr && pr.catch) pr.catch(function () { listen.setAttribute("aria-pressed", "false"); setListenText(false); });  // the browser wants a tap first
+      var start = sc.audio[0];
+      var seek = function () { if (audio.currentTime < start - .2 || audio.currentTime > sc.audio[1]) audio.currentTime = start; };
+      var pr = audio.play();  // called straight from the tap, as phones require
+      if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", function once() { audio.removeEventListener("loadedmetadata", once); seek(); });
+      if (pr && pr.catch) pr.catch(function () { listen.setAttribute("aria-pressed", "false"); setListenText(false); });
       listen.setAttribute("aria-pressed", "true"); setListenText(true);
     }
     listen.onclick = function () {
@@ -325,6 +327,7 @@
       label.textContent = sc.label || ""; label.hidden = !sc.label;
       showText(sc); showAsk(sc); showGame(sc); showTitle(sc); showPick(sc);
       listen.hidden = !sc.audio || (paper && !!tsound); setListenText(false);
+      if (paper && tsound && sound && sc.audio && !opts.quiet) playScene(sc);  // with the sound on, each scene reads itself when it arrives
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
       stage.hidden = !!sc.nostage || !!sc.title; label.classList.toggle("over", false);
       count.textContent = N(i + 1) + " / " + N(n);
@@ -363,7 +366,7 @@
     window.addEventListener("hashchange", fromHash);
     applyLevel();
     if (!fromHash()) go(0, { quiet: true });
-    root.deck = { go: go, count: n };
+    root.deck = { go: go, count: n, audio: function () { return audio; } };
   }
 
   // the hand-drawn wobble: every line on the stage is pushed a little off true by this filter (see scenes.css)
