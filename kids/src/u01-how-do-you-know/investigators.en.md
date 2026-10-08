@@ -19,9 +19,9 @@ Detectives, doctors and scientists all look for tests like this. A test that eve
 
 ## Being right isn't the same as knowing
 
-Here's a puzzle. Grandma Mehri's kitchen clock stopped at exactly three o'clock, but nobody noticed. One afternoon, Nima glances at it, and it happens to be exactly three o'clock. He believes it's three, and he's right.
+Here's a puzzle. Grandma Rose's kitchen clock stopped at exactly three o'clock, but nobody noticed. One afternoon, Sam glances at it, and it happens to be exactly three o'clock. He believes it's three, and he's right.
 
-Does Nima *know* the time?
+Does Sam *know* the time?
 
 Most people say no. His belief is true, but only by luck. The clock would have said "three" whatever the time was. The philosopher Bertrand Russell described a clock like this in 1948, and in 1963 Edmund Gettier made puzzles of this kind famous. They show that knowing needs more than being right. It also needs a good reason: one that connects your belief to the truth.
 
@@ -52,7 +52,7 @@ At the door, the kids asked question 2: *how do we know this is Mother?* Little 
 ::: think
 - The kids' first two tests could rule the wolf *out*, but they couldn't rule Mother *in*. Why not?
 - Think of a test in real life that is easy to pass even when the answer is wrong.
-- Nima was right about the time. Why do most people say he didn't know it?
+- Sam was right about the time. Why do most people say he didn't know it?
 :::
 
 ::: bigidea

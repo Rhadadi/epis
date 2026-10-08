@@ -42,13 +42,17 @@
       document.dispatchEvent(new CustomEvent("games:star", { detail: id }));
     }
   };
+  // mount one game box (also used by scene decks, which build their game boxes as they are reached)
+  Games.mount = function (box) {
+    var init = engines[box.getAttribute("data-engine")], data;
+    try { data = JSON.parse(box.querySelector('script[type="application/json"]').textContent); } catch (e) { return; }
+    if (!init) return;
+    var nojs = box.querySelector(".knojs"); if (nojs) nojs.remove();
+    init(box, data, Games);
+  };
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".kgame[data-engine]").forEach(function (box) {
-      var init = engines[box.getAttribute("data-engine")], data;
-      try { data = JSON.parse(box.querySelector('script[type="application/json"]').textContent); } catch (e) { return; }
-      if (!init) return;
-      var nojs = box.querySelector(".knojs"); if (nojs) nojs.remove();
-      init(box, data, Games);
+      if (!box.closest("[data-deck]")) Games.mount(box);
     });
   });
 })();

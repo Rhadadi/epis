@@ -435,7 +435,7 @@ def home_body(b, data, quests, arcade, root):
     import site_play
     L, num, lang = b.L, b.num, b.LANG
     pic = site_play.picture
-    hello = L("Hi! I'm Hudhud. Let's find out how we know things!", "سلام! من هدهدم. بیا با هم بفهمیم از کجا چیزها را می‌دانیم!")
+    hello = L("Hi! I'm Hoopy. Let's find out how we know things!", "سلام! من هدهدم. بیا با هم بفهمیم از کجا چیزها را می‌دانیم!")
     qs = "".join(f'<li class="kq{i}"><b>{num(i)}</b><span>{L(en, fa)}</span></li>' for i, (en, fa) in enumerate(QUESTIONS, 1))
     games = "".join(f'<li class="gcard c-{a["color"]}"><a href="arcade/{a["id"]}/" data-unit-link="arcade/{a["id"]}">'
                     f'<span class="gcard-art{" pic" if a.get("img") and site_play.art_src(root, a["img"]) else ""}">'

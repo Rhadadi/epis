@@ -9,15 +9,15 @@ desc: Knowing or guessing? An old Persian tale about three young goats, a sneaky
 
 Ava's cookie is gone!
 
-"Nima ate it," says Kian.
+"Sam ate it," says Max.
 
 Ava asks the most important question on this whole website: **"How do you know?"**
 
-Kian thinks. "Well… Nima loves cookies."
+Max thinks. "Well… Sam loves cookies."
 
-That is a *reason*. But is it enough to *know*? Maybe Nima ate it. Maybe the cat did. Kian is **guessing**.
+That is a *reason*. But is it enough to *know*? Maybe Sam ate it. Maybe the cat did. Max is **guessing**.
 
-Then Ava finds crumbs on Nima's shirt. Now there is a clue. A clue that helps show what is true is called **evidence**.
+Then Ava finds crumbs on Sam's shirt. Now there is a clue. A clue that helps show what is true is called **evidence**.
 
 ## Good clues and tricky clues
 
@@ -28,7 +28,7 @@ The voice and the foot were tricky clues. The wolf could fake them with honey an
 The song was a good clue. Only Mother knew it. A good clue is one that a faker can't copy.
 
 ::: think
-- How did Shangul know the first visitor was the wolf?
+- How did Jingle know the first visitor was the wolf?
 - What almost tricked the kids the third time?
 - Why was the secret song a better check than the white foot?
 :::

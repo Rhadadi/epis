@@ -34,10 +34,10 @@ Epistemology asks what knowledge is and how we get it. The traditional starting 
 
 ## Answers
 
-- Shangul knew because the voice was rough (Mother had described the wolf's voice).
+- Jingle knew because the voice was rough (Mother had described the wolf's voice).
 - The soft voice and white paw were evidence a faker could produce; the secret song was not.
-- Nima's belief about the time was true but not knowledge: the clock would have shown three whatever the time.
-- Kian's belief about the bridge rests on a good but possibly out-of-date source: a reasonable belief, not yet checked.
+- Sam's belief about the time was true but not knowledge: the clock would have shown three whatever the time.
+- Max's belief about the bridge rests on a good but possibly out-of-date source: a reasonable belief, not yet checked.
 
 ## Rubric
 

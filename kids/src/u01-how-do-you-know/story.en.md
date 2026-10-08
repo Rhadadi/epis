@@ -1,12 +1,12 @@
 ---
-title: Shangul, Mangul and Little Grape
+title: Jingle, Jangle and Little Grape
 ---
 
 @shot s01
 
 @grandma: Here is a very old story. Children in Iran have heard it for a long, long time.
 
-Once upon a time, a mother goat lived in a little house near the woods. She had three kids. Their names were Shangul, Mangul and Little Grape.
+Once upon a time, a mother goat lived in a little house near the woods. She had three kids. Their names were Jingle, Jangle and Little Grape.
 
 @shot s02
 
@@ -26,7 +26,7 @@ Soon there was a knock at the door. Knock, knock, knock!
 
 @wolf: Open the door, my dears. It's your mother!
 
-The voice was rough and loud. Shangul looked at Mangul.
+The voice was rough and loud. Jingle looked at Jangle.
 
 @shangul: You are not our mother. Our mother has a soft voice. You are the wolf!
 
@@ -36,7 +36,7 @@ The wolf ran off. He ate a big spoon of honey to make his voice sweet. Then he c
 
 @wolf: Open the door, my dears. It's your mother!
 
-Now the voice was soft and sweet. Mangul was not sure. "Show us your foot," he said. A big black foot came under the door.
+Now the voice was soft and sweet. Jangle was not sure. "Show us your foot," he said. A big black foot came under the door.
 
 @mangul: You are not our mother. Our mother has white feet. You are the wolf!
 
@@ -46,7 +46,7 @@ The wolf ran to the baker. He rubbed his feet in white flour. Then he came back 
 
 @wolf: Open the door, my dears. It's your mother! Look at my white feet.
 
-The voice was soft. The foot was white. Shangul and Mangul ran to open the door.
+The voice was soft. The foot was white. Jingle and Jangle ran to open the door.
 
 @shot s06
 
@@ -68,4 +68,4 @@ At last, Mother Goat came home. She sang the secret song, every word. The kids o
 
 @grape: A voice can be copied. A white foot can be faked. But nobody else knows our song!
 
-@grandma: In some old books the wolf is very scary. In our story, he just goes away. Now, Ava, Nima: how did Little Grape know?
+@grandma: In some old books the wolf is very scary. In our story, he just goes away. Now, Ava, Sam: how did Little Grape know?

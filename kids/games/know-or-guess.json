@@ -34,7 +34,7 @@
     {"text": "The answer is C. I just picked one.", "bucket": "guess",
      "why": "Picking without a reason is guessing, even if C turns out right.",
      "fa": {"text": "جواب گزینهٔ ج است. همین‌طوری یکی را انتخاب کردم.", "why": "انتخابِ بی‌دلیل حدس زدن است، حتی اگر گزینهٔ ج درست از آب دربیاید."}},
-    {"text": "Kian is at football practice. He usually is on Tuesdays.", "bucket": "believe", "levels": ["investigators"],
+    {"text": "Max is at football practice. He usually is on Tuesdays.", "bucket": "believe", "levels": ["investigators"],
      "why": "\"Usually\" is a real reason, but today might be different. A good reason, not yet checked: a belief.",
      "fa": {"text": "کیان سرِ تمرینِ فوتبال است. سه‌شنبه‌ها معمولاً آن‌جاست.", "why": "«معمولاً» دلیلِ واقعی است، ولی شاید امروز فرق کند. دلیلِ خوب ولی وارسی‌نشده: یک باور."}},
     {"text": "The bridge is open. The radio said so this morning.", "bucket": "believe", "levels": ["investigators"],

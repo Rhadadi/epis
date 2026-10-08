@@ -113,13 +113,15 @@ automatically. Ordinary Markdown may sit between the blocks.
 
 ## The cast
 
+English pages use English names; Persian pages keep the Persian ones (Ava is the same in both).
+
 - **Ava** (آوا), 9: curious, asks "How do you know?" — the Explorers' guide.
-- **Nima** (نیما), 6: her little brother, the "why? why? why?" kid.
-- **Kian** (کیان), 12: their neighbour; quick, confident, often too fast — learns the most. The Investigators' guide.
-- **Grandma Mehri** (مادربزرگ مهری): patient; asks the best questions; tells the old stories.
-- **Hudhud the hoopoe** (هدهد): the guide bird from Attar's *Conference of the Birds*; answers questions with
+- **Sam** (English) / **Nima** (نیما), 6: her little brother, the "why? why? why?" kid.
+- **Max** (English) / **Kian** (کیان), 12: their neighbour; quick, confident, often too fast — learns the most. The Investigators' guide.
+- **Grandma Rose** (English) / **Grandma Mehri** (مادربزرگ مهری): patient; asks the best questions; tells the old stories.
+- **Hoopy the hoopoe** (English) / **Hudhud** (هدهد): the guide bird from Attar's *Conference of the Birds*; answers questions with
   questions. (Not an owl: in Iran the owl is an unlucky bird.)
-- Animal friends step out of the fables: the goat kids Shangul and Mangul, the fox (sour grapes), the hare who
+- Animal friends step out of the fables: the goat kids Jingle and Jangle (Persian: Shangul and Mangul), the fox (sour grapes), the hare who
   tricked the lion, Rumi's parrot.
 
 ## Pictures

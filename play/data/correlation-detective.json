@@ -566,7 +566,7 @@
     "alt": "چپ: آوا سرحال صبحانه می‌خورد؛ راست: کیان با زنگِ ساعت با عجله از رختخواب بیرون می‌پرد."
    },
    "art": "kids/kids-breakfast",
-   "alt": "Left: Ava, well rested, eats breakfast; right: Kian rushes out of bed while the alarm rings."
+   "alt": "Left: Ava, well rested, eats breakfast; right: Max rushes out of bed while the alarm rings."
   },
   {
    "id": "tutors",
@@ -1055,7 +1055,7 @@
     "alt": "بچه‌هایی با سن‌های مختلف بی‌کفش روی نیمکتِ کتابخانه نشسته‌اند؛ نیما با خط‌کش یک پای بزرگ را اندازه می‌گیرد."
    },
    "art": "kids/kids-feet",
-   "alt": "Children of different ages on a library bench with their shoes off; Nima measures a big foot with a ruler."
+   "alt": "Children of different ages on a library bench with their shoes off; Sam measures a big foot with a ruler."
   },
   {
    "id": "icecream",
@@ -1155,7 +1155,7 @@
     "alt": "یک روزِ گرم و آفتابی کنارِ دریا: بچه‌ها جلوی گاریِ بستنی صف کشیده‌اند؛ گونه‌های نیما از آفتاب صورتی شده."
    },
    "art": "kids/kids-icecream",
-   "alt": "A hot sunny day by the sea: children queue at an ice-cream cart; Nima has pink cheeks from the sun."
+   "alt": "A hot sunny day by the sea: children queue at an ice-cream cart; Sam has pink cheeks from the sun."
   },
   {
    "id": "umbrellas",
@@ -1230,7 +1230,7 @@
     "alt": "خیابانی بارانی پر از چترهای رنگی و چاله‌های آب؛ نیما با کفش‌های خیس توی آب می‌پرد."
    },
    "art": "kids/kids-umbrellas",
-   "alt": "A rainy street full of colourful umbrellas and puddles; Nima splashes in wet sneakers."
+   "alt": "A rainy street full of colourful umbrellas and puddles; Sam splashes in wet sneakers."
   }
  ]
 }

@@ -3,7 +3,7 @@
   "story": "shangul-mangul",
   "adult": ["01-what-is-epistemology.md", "05-the-nature-of-knowledge.md"],
   "shots": [
-    {"id": "s01", "art": "u01-s01", "alt": "Grandma Mehri telling a story to Ava and Nima; in the picture-book page, a mother goat and her three kids at their little house by the woods.",
+    {"id": "s01", "art": "u01-s01", "alt": "Grandma Rose telling a story to Ava and Sam; in the picture-book page, a mother goat and her three kids at their little house by the woods.",
      "fa": {"alt": "مادربزرگ مهری برای آوا و نیما قصه می‌گوید؛ در صفحهٔ کتاب، بزِ مادر و سه بزغاله‌اش کنارِ خانهٔ کوچکشان در کنارِ جنگل."}},
     {"id": "s02", "art": "u01-s02", "alt": "Mother Goat at the door, saying goodbye to her three kids before she goes to find grass.",
      "fa": {"alt": "بزِ مادر دمِ در، پیش از رفتن برای پیدا کردنِ علف، با سه بزغاله‌اش خداحافظی می‌کند."}},
