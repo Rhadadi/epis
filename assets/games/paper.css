@@ -289,3 +289,24 @@ body.paper .dlisten{font-size:1.05rem;padding:3px 16px}
 .dtext .w.bd{font-weight:700}
 body.paper .dtext .line.li::before{content:"· ";color:#E5484D}
 body.paper .dlisten:hover,body.paper .dlisten[aria-pressed="true"]{background:#222;color:#fff;border-color:#222}
+
+/* ---- reading text: Atkinson Hyperlegible (made for legibility) for anything longer than a heading; the hand lettering stays
+   for titles, labels, buttons and speech bubbles. Persian already uses Vazirmatn throughout. */
+html[data-games]:not([lang="fa"]){--read:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+html[lang="en"] body.paper .dtext,html[lang="en"] body.paper .dtext p,
+html[lang="en"] body.paper .my-intro,html[lang="en"] body.paper .my-clue span,html[lang="en"] body.paper .my-moved span,
+html[lang="en"] body.paper .my-verdict span,html[lang="en"] body.paper .my-trick,html[lang="en"] body.paper .my-given,
+html[lang="en"] body.paper .my-done p,html[lang="en"] body.paper .my-offline,
+html[lang="en"] body.paper .dwhy,html[lang="en"] body.paper .cs-clue p,html[lang="en"] body.paper .cs-surprise p,
+html[lang="en"] body.paper .cs-verdict p,html[lang="en"] body.paper .cs-idea span,html[lang="en"] body.paper .cs-headline,
+html[lang="en"] body.paper .kg-feedback,html[lang="en"] body.paper .kg-card,
+html[lang="en"] body.paper .kword .kd,html[lang="en"] body.paper .kbook p,html[lang="en"] body.paper .kbook li,
+html[lang="en"] body.paper .prose,html[lang="en"] body.paper .prose p,html[lang="en"] body.paper .prose li,
+html[lang="en"] body.paper .tabout,html[lang="en"] body.paper .dcard span{font-family:var(--read)}
+html[lang="en"] body.paper .dtext{font-size:clamp(1.15rem,3.3vw,1.5rem);line-height:1.5;font-weight:400}
+html[lang="en"] body.paper .my-intro{font-size:clamp(1.15rem,3.3vw,1.45rem);line-height:1.45}
+html[lang="en"] body.paper .my-clue span,html[lang="en"] body.paper .my-moved span,html[lang="en"] body.paper .my-verdict span{font-size:1.05rem;line-height:1.5}
+html[lang="en"] body.paper .my-trick{font-size:.98rem;line-height:1.5}
+html[lang="en"] body.paper .dtext .w.bd,html[lang="en"] body.paper .dtext b{font-weight:700;background:none}
+html[lang="en"] body.paper .dtext .line .who{font-family:var(--hand)}
+html[lang="en"] body.paper .cs-headline{font-size:clamp(1.15rem,3.6vw,1.5rem);line-height:1.35}
