@@ -1,27 +1,6 @@
 {
  "scenes": [
   {
-   "id": "title",
-   "title": {
-    "big": [
-     "THE QUESTION",
-     "HOW DO YOU",
-     "KNOW?"
-    ],
-    "sub": "a free course in the theory of knowledge",
-    "go": "Play",
-    "fa": {
-     "big": [
-      "پرسشِ بزرگ",
-      "از کجا",
-      "می‌دانید؟"
-     ],
-     "sub": "دوره‌ای رایگان در نظریهٔ معرفت",
-     "go": "شروع"
-    }
-   }
-  },
-  {
    "id": "claim",
    "text": [
     "You read a headline: **“People who drink two cups of coffee a day live 18% longer.”**",
@@ -88,7 +67,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "person",
+     "who": "dog",
      "x": 28,
      "y": 92,
      "s": 1,
@@ -108,7 +87,7 @@
    ],
    "ask": {
     "q": "Did the coffee do it?",
-    "who": "person",
+    "who": "dog",
     "fa": {
      "q": "کارِ قهوه بود؟"
     },
@@ -155,7 +134,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "person",
+     "who": "dog",
      "x": 30,
      "y": 92,
      "s": 1,
@@ -314,7 +293,7 @@
    "actors": [
     {
      "id": "dog",
-     "who": "person",
+     "who": "dog",
      "x": 50,
      "y": 92,
      "s": 1,
@@ -325,58 +304,23 @@
    "links": [
     {
      "home": "reading-path/",
-     "t": "A reading path for your question",
+     "t": "Find a reading path built around your question",
      "fa": {
-      "t": "مسیرِ مطالعه برای پرسشِ شما"
+      "t": "مسیرِ مطالعه‌ای پیدا کنید که بر پایهٔ پرسشِ شما ساخته شده"
      }
     },
     {
      "guide": "01-what-is-epistemology.html",
-     "t": "Chapter 1: What is epistemology?",
+     "t": "Start with Chapter 1: What is epistemology?",
      "fa": {
-      "t": "فصل ۱: معرفت‌شناسی چیست؟"
+      "t": "با فصلِ ۱ شروع کنید: معرفت‌شناسی چیست؟"
      }
     },
     {
      "play": "correlation-detective/",
-     "t": "Play: Correlation Detective",
+     "t": "Or play: Correlation Detective",
      "fa": {
-      "t": "بازی: کارآگاهِ همبستگی"
-     }
-    },
-    {
-     "home": "guide/",
-     "t": "All sixteen chapters",
-     "fa": {
-      "t": "هر شانزده فصل"
-     }
-    },
-    {
-     "home": "map/",
-     "t": "The concept map",
-     "fa": {
-      "t": "نقشهٔ مفاهیم"
-     }
-    },
-    {
-     "home": "concepts/",
-     "t": "135 concepts",
-     "fa": {
-      "t": "۱۳۵ مفهوم"
-     }
-    },
-    {
-     "home": "guide/audio/",
-     "t": "Listen",
-     "fa": {
-      "t": "شنیدن"
-     }
-    },
-    {
-     "home": "kids/",
-     "t": "For children",
-     "fa": {
-      "t": "برای بچه‌ها"
+      "t": "یا بازی کنید: کارآگاهِ همبستگی"
      }
     }
    ],
