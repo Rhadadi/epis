@@ -156,12 +156,23 @@ def build(b, art, md):
             kpage(f"arcade/{a['id']}/{LEVEL_FILE[level]}", root=root, title=a["title"], desc=a["hook"], body=body,
                   current="quests", extra_scripts=engine_scripts(b, root, engines), levels=LEVELS_OF(level))
 
+    # episodes: films the child plays inside (kids/watch/<id>/)
+    import episodes as EP
+    films = EP.live()
+    for e in films:
+        root = b.up(3)
+        for level in K.LEVELS:
+            p = K.pick(e["ep"], lang)
+            kpage(f"watch/{e['id']}/{LEVEL_FILE[level]}", root=root, title=p["title"], desc=p["hook"],
+                  body=EP.page_body(b, e, level, root, b.up(2)), current="quests",
+                  extra_scripts=f'<script src="{b.av(root, "games/episode.js")}" defer></script>', levels=LEVELS_OF(level))
+
     # home: the title screen, the age question, the cast, the menu
     root = b.up(1)
     kpage("index.html", root=root, title=L("How Do You Know?", "از کجا می‌دانی؟"),
           desc=L("Thinking adventures for ages 7–14: stories, games and questions about how we know what we know.",
                  "ماجراهای فکری برای ۷ تا ۱۴ ساله‌ها: قصه، بازی و پرسش دربارهٔ این‌که از کجا می‌دانیم."),
-          body=home_body(b, live, arcade, root), current="quests",
+          body=home_body(b, live, arcade, root, films), current="quests",
           extra_scripts=f'<script src="{b.av(root, "scenes/puppets.js")}" defer></script><script src="{b.av(root, "scenes/deck.js")}" defer></script>')
     kpage("words/index.html", root=b.up(2), title=L("Picture dictionary", "واژه‌نامهٔ تصویری"),
           desc=L("The thinking words, with pictures, in English and Persian.", "واژه‌های فکر کردن، با تصویر، به فارسی و انگلیسی."),
@@ -598,7 +609,7 @@ CAST_TAGS = [  # who is who on the cast picture (the middle of each figure, as a
     ("hudhud", 91, "What do you think?", "تو چه فکر می‌کنی؟")]
 
 
-def home_body(b, live, arcade, root):
+def home_body(b, live, arcade, root, films=()):
     """The home page is a scene deck: the title screen (a ring of tiny people), the age question (asked once, remembered),
     the cast, and the menu of units and games, whose links go to the page for the age that was chosen."""
     import scenes as SC
@@ -609,6 +620,8 @@ def home_body(b, live, arcade, root):
         if sc.pop("auto", False):
             go = [{"t": K.pick(u, lang)["title"], "sub": K.pick(u, lang).get("hook", ""),
                    "hrefs": {"explorers": f'{u["id"]}/', "investigators": f'{u["id"]}/investigators.html'}} for u in live]
+            go = [{"t": "▶ " + K.pick(e["ep"], lang)["title"], "sub": K.pick(e["ep"], lang)["hook"],
+                   "hrefs": {"explorers": f'watch/{e["id"]}/', "investigators": f'watch/{e["id"]}/investigators.html'}} for e in films] + go
             go += [{"t": a["title"], "sub": a["hook"], "hrefs": {"explorers": f'arcade/{a["id"]}/', "investigators": f'arcade/{a["id"]}/investigators.html'}}
                    for a in arcade]
             for l in go:

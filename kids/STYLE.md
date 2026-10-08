@@ -81,6 +81,25 @@ the answer moved, what each clue can and cannot show, and whether the confidence
 reasoning only (a strong clue checked, another explanation sought, the right amount of sure), never changing an answer by itself.
 A mission has a second case with a new situation, to test transfer. Say "better supported" and "still uncertain", not "proof".
 
+## Episodes (watch, then act inside the film)
+
+An episode is a 2–4 minute animated film, cut into clips of up to 8 seconds, that the child plays inside. Each clip
+plays with the characters' voices and a caption; then the picture holds on its last frame and the child acts in it:
+picks an answer, taps things in the picture (measure, inspect), or drags cards onto people. Answers change what
+plays next: a wrong idea plays out as a funny scene, then the film rewinds to the question (never a red cross).
+The episode ends on a clue card, the child's first guess recalled ("At the start you said …"), and the next case.
+
+- Files: `kids/episodes/<id>.json` (clips, lines in both languages, steps), `kids/episodes/<id>.frames.json` (the
+  painted first frame of every clip), `kids/episodes/list.json` (what is published). Media in
+  `assets/kids/episodes/<id>/`.
+- Making one: `tools/art/make_art.py` paints the frames (cast sheet as reference, each frame names only the
+  characters in it); `tools/video/veo.py` animates each frame with Google Veo (key `GEMINI_API_KEY`, from the
+  environment only); `tools/video/qa.py` has Gemini watch each clip for speech, writing on screen, morphing and
+  anything unsuitable (a person still watches every clip); `tools/video/episode.py` voices the lines (ElevenLabs)
+  and writes the web files. Then place the tap spots and drop targets on each clip's `.last.webp`.
+- One idea per episode, spoken, few words on screen. Questions before answers (predict, then see). Every
+  interaction is something the hands do. No timers, no losing, no streaks.
+
 ## Writing rules
 
 - Story first, then the question, then the idea, then the word: "This is called *evidence*."

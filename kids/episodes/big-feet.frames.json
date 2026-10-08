@@ -1,0 +1,84 @@
+{
+ "model": "gpt-image-2",
+ "style": "Warm hand-painted children's picture-book illustration in gouache with a little coloured pencil, soft paper grain, rounded friendly shapes, rich but gentle colours (saffron yellow, turquoise, pomegranate red, leaf green, warm cream, dusty pink), soft daylight, lively expressive faces, plenty of small charming details. Setting: a cosy Iranian-inspired town and countryside (blue-tiled doorways, a courtyard with a little pool and potted geraniums, pomegranate and mulberry trees, rolling golden hills). Absolutely no text, letters, numbers, signs with writing or speech bubbles anywhere. Nothing frightening or violent. Original characters only: not in the style of any living illustrator, no famous characters or logos.",
+ "out": "assets/kids/episodes",
+ "images": [
+  {
+   "id": "ref-cast",
+   "publish": false,
+   "size": "1536x1024",
+   "quality": "high",
+   "prompt": "A character sheet on a plain warm-cream background: the five characters standing side by side in a row, full body, facing the viewer, evenly spaced, each clearly separate, friendly poses. The recurring cast, always drawn the same way: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; and HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes."
+  },
+  {
+   "id": "big-feet-c1",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). A sunny Iranian-style courtyard with a little turquoise pool, potted geraniums and a pomegranate tree. KIAN stands on an upturned wooden crate in the middle, arms wide, proudly presenting a big sheet of paper on an easel that shows only drawings: three footprints from small to big beside three stacks of books from short to tall (no writing at all). A small crowd of neighbourhood children looks up at him, some amazed, some giggling. AVA stands at the left holding her notebook, one eyebrow raised, doubtful; NIMA beside her with his toy magnifying glass; HUDHUD perched on the rim of the pool, head tilted. Wide eye-level shot. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. Not in this picture: Grandma Mehri."
+  },
+  {
+   "id": "big-feet-c2",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). The same sunny courtyard. THE THREE NEIGHBOUR CHILDREN stand barefoot in a row on a long strip of plain paper laid on the floor tiles, well apart, from left to right: the small 6-year-old girl, the 9-year-old boy, the tall 12-year-old girl. All three are fully visible from head to toe and their bare feet are clearly visible and clearly different sizes. NIMA kneels in front of them holding a long wooden ruler next to the little girl's foot; AVA stands at the far right writing in her notebook; HUDHUD hops near the feet. Wide, static, eye-level shot. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. Not in this picture: Kian, Grandma Mehri. THE THREE NEIGHBOUR CHILDREN, always drawn the same way and clearly different in age and height: a small 6-year-old girl with two short black pigtails and a sunflower-yellow dress; a 9-year-old boy with short wavy brown hair and a leaf-green T-shirt with blue shorts; and a tall 12-year-old girl with a long dark braid and a pomegranate-red tunic over jeans."
+  },
+  {
+   "id": "big-feet-c3",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). The same sunny courtyard, a cosy reading corner on a long patterned carpet. THE THREE NEIGHBOUR CHILDREN sit on a long wooden bench, well apart, left to right: the small 6-year-old girl, the 9-year-old boy, the tall 12-year-old girl, each holding an open book: the little girl frowns and follows the lines with her finger, puzzled; the boy reads steadily; the tall girl reads confidently with a smile. KIAN stands at the right, pumping his fist triumphantly. AVA and NIMA watch from the left; HUDHUD sits on the back of the bench. Wide static shot. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. Not in this picture: Grandma Mehri. THE THREE NEIGHBOUR CHILDREN, always drawn the same way and clearly different in age and height: a small 6-year-old girl with two short black pigtails and a sunflower-yellow dress; a 9-year-old boy with short wavy brown hair and a leaf-green T-shirt with blue shorts; and a tall 12-year-old girl with a long dark braid and a pomegranate-red tunic over jeans."
+  },
+  {
+   "id": "big-feet-c4",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). The same sunny courtyard. NIMA proudly wears enormous, comically long grown-up shoes, many times too big for him, wobbling as he tries to read a book that he holds upside down; THE THREE NEIGHBOUR CHILDREN laugh kindly behind him; HUDHUD covers its eyes with one wing; AVA giggles behind her notebook. Funny, warm and gentle. Wide static shot. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. Not in this picture: Kian, Grandma Mehri. THE THREE NEIGHBOUR CHILDREN, always drawn the same way and clearly different in age and height: a small 6-year-old girl with two short black pigtails and a sunflower-yellow dress; a 9-year-old boy with short wavy brown hair and a leaf-green T-shirt with blue shorts; and a tall 12-year-old girl with a long dark braid and a pomegranate-red tunic over jeans."
+  },
+  {
+   "id": "big-feet-c5",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). The same courtyard in warm late-afternoon light. GRANDMA MEHRI walks in from a blue-tiled doorway at the far left carrying a tray with tea glasses and a plate of cookies, smiling knowingly. THE THREE NEIGHBOUR CHILDREN stand in a row across the middle of the picture, well apart, full body visible, left to right: the small 6-year-old girl, the 9-year-old boy, the tall 12-year-old girl, looking towards Grandma curiously. KIAN, AVA and NIMA stand together at the far right. Wide static eye-level shot with plenty of space above the children's heads. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain. Not in this picture: Hudhud. THE THREE NEIGHBOUR CHILDREN, always drawn the same way and clearly different in age and height: a small 6-year-old girl with two short black pigtails and a sunflower-yellow dress; a 9-year-old boy with short wavy brown hair and a leaf-green T-shirt with blue shorts; and a tall 12-year-old girl with a long dark braid and a pomegranate-red tunic over jeans."
+  },
+  {
+   "id": "big-feet-c6",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). A shady corner of the same courtyard: FIVE NEW CHILDREN who are all the same age, about nine, all about the same height, sit side by side on a long wooden bench, well apart, barefoot, each with a pile of books beside them. Each child looks clearly different (different hair, clothes and skin tones). Their feet are slightly different sizes, growing from smallest on the left to biggest on the right, and their book piles from left to right are: very tall, very short, medium, short, tall. AVA stands at the far right comparing them, with HUDHUD on her shoulder. Wide static shot, all five children fully visible. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. Not in this picture: Nima, Kian, Grandma Mehri."
+  },
+  {
+   "id": "big-feet-c7",
+   "refs": [
+    "ref-cast"
+   ],
+   "size": "1536x1024",
+   "quality": "high",
+   "publish": false,
+   "prompt": "Use the attached character sheet only for how the cast looks; draw just the characters listed. A still from a hand-painted animated film, wide 16:9 composition: keep all characters and important things inside the middle band of the picture (nothing important in the top or bottom eighth). The same courtyard at golden sunset. KIAN laughs and scratches his head while giving AVA a high five; NIMA kneels measuring HUDHUD's tiny foot with the wooden ruler while the bird lifts its foot politely; GRANDMA MEHRI hands cookies to THE THREE NEIGHBOUR CHILDREN; everyone is happy. Wide static shot. Character looks: AVA, a 9-year-old girl with shoulder-length dark wavy hair held by a mustard-yellow hairband, round red glasses, a teal pinafore dress over a white T-shirt, jeans and red sneakers, often holding a small notebook; NIMA, her 6-year-old brother, curly black hair, big round eyes, an orange-and-white striped T-shirt, green shorts and a toy magnifying glass; KIAN, their 12-year-old neighbour, tall and lanky, short neat black hair, a cobalt-blue hoodie and a backpack, a confident grin; GRANDMA MEHRI, a kind round-faced grandmother with silver hair under a loosely worn floral scarf, a long plum-coloured cardigan and reading glasses on a chain; HUDHUD, a small friendly hoopoe bird with a tall orange-pink crest tipped in black, black-and-white striped wings, a long thin curved beak and big bright eyes. THE THREE NEIGHBOUR CHILDREN, always drawn the same way and clearly different in age and height: a small 6-year-old girl with two short black pigtails and a sunflower-yellow dress; a 9-year-old boy with short wavy brown hair and a leaf-green T-shirt with blue shorts; and a tall 12-year-old girl with a long dark braid and a pomegranate-red tunic over jeans."
+  }
+ ]
+}

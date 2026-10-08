@@ -8,3 +8,4 @@ tools/kids/.eleven-kids/
 
 # illustration originals (tools/art/make_art.py); the published WebP files are committed
 tools/art/.cache/
+tools/video/.cache/

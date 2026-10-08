@@ -318,6 +318,11 @@ def main():
         for level in K.LEVELS:
             for lang in K.LANGS:
                 errs += [f"arcade {a['id']}: {e}" for e in case_level_problems(a["id"], level, lang)]
+    import episodes as EP
+    for path in sorted((K.KIDS / "episodes").glob("*.json")):
+        ep = K.read_json(path)
+        if isinstance(ep, dict) and "steps" in ep:  # (the folder also holds the list and the frames' prompts)
+            errs += [f"kids/episodes/{path.name}: {e}" for e in EP.problems(ep)]
     errs += check_books()
     errs += check_built()
     mb = media_mb()
@@ -326,7 +331,7 @@ def main():
     if errs:
         print("kids: problems:\n  " + "\n  ".join(errs))
         sys.exit(1)
-    print(f"kids: OK, {len(live)} published unit(s), {mb:.1f} MB")
+    print(f"kids: OK, {len(live)} published unit(s), {len(EP.live())} episode(s), {mb:.1f} MB")
 
 
 if __name__ == "__main__":
