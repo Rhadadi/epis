@@ -101,7 +101,7 @@ def build(b, art, md):
                 if probs:
                     raise SystemExit(f"kids {uid} {level}: problems in the scene deck:\n  " + "\n  ".join(probs))
                 deck = SC.render(scenes_, boxes, ui={"listen": L("Listen", "گوش کن"), "next": L("Next", "بعدی"), "back": L("Back", "قبلی"),
-                                                    "parts": {"story": L("Story", "قصه"), "investigate": L("Investigate", "کاوش"), "try": L("Try it", "امتحان کن")},
+                                                    "replay": L("Replay", "دوباره"), "parts": {"story": L("Story", "قصه"), "investigate": L("Investigate", "کاوش"), "try": L("Try it", "امتحان کن")},
                                                     "again": L("Start again", "دوباره از اول")},
                                  audio_src=f'{root}assets/kids/audio/{dsync["file"]}' if dsync else None,
                                  attrs=f'data-unit="{uid}" data-level="{level}" data-game="deck"')
@@ -304,6 +304,9 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
                 if sync and sh["id"] in starts:
                     if order_all:
                         scene["audio"] = audio_of(sh["id"])
+                        fw = next((x["w"][0][1] for x in lines if x.get("w")), None)
+                        if fw is not None:
+                            scene["audio"][0] = max(0, fw - 0.25)
                     else:
                         end = starts[order[k + 1]] if k + 1 < len(order) and order[k + 1] in starts else sync.get("duration", 0)
                         scene["audio"] = [starts[sh["id"]], end]
@@ -331,6 +334,7 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
             sc["links"] = [{"t": l["t"], "href": f'{b.home(root)}guide/{l["guide"]}'} for l in sc["links"]]
         if sc.get("id") and audio_of(sc["id"]):
             sc["audio"] = audio_of(sc["id"])
+            _read_along(sc, times)
         if sc.get("end"):  # the last scene: where to go next
             sc["links"] = [*sc.get("links", []), {"t": L("More games", "بازی‌های بیشتر"), "href": "../"},
                            {"t": L("Notes for parents and teachers", "یادداشت برای پدر و مادر و معلم"), "href": "grownups.html"}]
@@ -344,6 +348,38 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
         else:
             sc["part"] = "investigate"
     return out, boxes
+
+
+def _read_along(sc, times):
+    """Give a narrated lesson scene its text as timed lines (so words and sentences light up as they are read). Bold terms stay
+    bold; list items stay marked as items. Scenes with other things to show (cards, a question) keep their own layout."""
+    if sc.get("cards") or sc.get("ask") or sc.get("game"):
+        return
+    t = sc.get("text")
+    raw = ([t] if isinstance(t, str) else list(t or []))
+    n_text = len(raw)
+    raw += list(sc.get("list", []))
+    if not raw:
+        return
+    lines = []
+    for k, r in enumerate(raw):
+        tm = times.get(f"{sc['id']}-{k + 1}")
+        toks = r.split()
+        if not tm or len(tm.get("w", [])) != len(toks):
+            return
+        bold, ws = False, []
+        for tok, (b, e) in zip(toks, tm["w"]):
+            if tok.startswith("**"):
+                bold = True
+            word = K.plain(tok)
+            ws.append([word, b, e, 1] if bold else [word, b, e])
+            if tok.rstrip(".,;:!?؟،»”)").endswith("**"):
+                bold = False
+        lines.append({"role": "narrator", "who": "", "w": ws, **({"li": True} if k >= n_text else {})})
+    sc.pop("text", None)
+    sc.pop("list", None)
+    sc["lines"] = lines
+    sc["audio"] = [max(0, lines[0]["w"][0][1] - 0.25), sc["audio"][1]]
 
 
 def render_story(b, uid, meta, st, sync, root):

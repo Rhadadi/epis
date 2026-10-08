@@ -280,3 +280,12 @@ body.paper .dlinks .dcont a{background:#222;color:#fff}
 body.paper .dlinks .dcont a:hover{background:#fff;color:#222}
 .dpart{white-space:nowrap}.dparts{flex:none}
 @media (max-width:520px){.tsound span{display:none}.dpart{padding:2px 6px;font-size:.88rem}.tb{min-width:34px;padding:0 5px}.tbar{padding:0 6px;gap:4px}}
+
+/* narration controls and sentence highlighting */
+.dctl{display:flex;gap:10px;justify-content:center;align-self:center}
+body.paper .dlisten{font-size:1.05rem;padding:3px 16px}
+.dtext .w.now-s{background:rgba(255,201,46,.3);border-radius:4px}
+.dtext .w.now{background:#FFC92E;color:#222;box-shadow:0 0 0 2px #FFC92E}
+.dtext .w.bd{font-weight:700}
+body.paper .dtext .line.li::before{content:"· ";color:#E5484D}
+body.paper .dlisten:hover,body.paper .dlisten[aria-pressed="true"]{background:#222;color:#fff;border-color:#222}

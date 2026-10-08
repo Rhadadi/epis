@@ -110,7 +110,9 @@
     var wrap = el("div", "dwrap");
     var stage = el("div", "dstage"); stage.setAttribute("aria-hidden", "true");
     var label = el("p", "dlabel");
-    var listen = el("button", "dlisten"); listen.type = "button"; listen.hidden = true;
+    var listen = el("button", "dlisten"); listen.type = "button";
+    var replay = el("button", "dlisten dreplay", ui.replay || T("Replay", "دوباره")); replay.type = "button";
+    var ctl = el("div", "dctl"); ctl.hidden = true; ctl.appendChild(listen); ctl.appendChild(replay);
     var scene = el("div", "dscene"); scene.setAttribute("tabindex", "-1");
     var text = el("div", "dtext"); text.setAttribute("aria-live", "polite");
     var ask = el("div", "dask");
@@ -137,7 +139,7 @@
     else nav.appendChild(dots);
     nav.insertBefore(back, nav.firstChild); nav.appendChild(next);
     scene.appendChild(pickBox);
-    wrap.appendChild(ttl); wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(listen); wrap.appendChild(scene); wrap.appendChild(nav);
+    wrap.appendChild(ttl); wrap.appendChild(stage); wrap.appendChild(label); wrap.appendChild(ctl); wrap.appendChild(scene); wrap.appendChild(nav);
     root.appendChild(wrap);
 
     var dotEls = scenes.map(function (s, i) {
@@ -150,32 +152,54 @@
     var st = Stage(stage);
 
     // ---- narration: each scene may play its own stretch of one audio file, lighting the words as they are read
-    var audio = null, rafId = 0, segEnd = 0, words = [], wb = [];
-    function stopAudio() { if (audio) audio.pause(); cancelAnimationFrame(rafId); listen.setAttribute("aria-pressed", "false"); setListenText(false); }
+    var audio = null, rafId = 0, segEnd = 0, words = [], wb = [], sentOf = [], playTimer = 0, gen = 0;
     function setListenText(on) { listen.textContent = on ? (ui.pause || T("Pause", "مکث")) : (ui.listen || T("Listen", "گوش کن")); }
+    function clearMarks() { words.forEach(function (w) { w.classList.remove("now"); w.classList.remove("now-s"); }); }
+    function stopAudio() {
+      gen++; clearTimeout(playTimer); if (audio) audio.pause(); cancelAnimationFrame(rafId);
+      listen.setAttribute("aria-pressed", "false"); setListenText(false); clearMarks();
+    }
     function tick() {
       var t = audio.currentTime, cw = -1;
       for (var i = 0; i < wb.length; i++) { if (wb[i][0] <= t && t <= wb[i][1] + .25) { cw = i; } }
-      words.forEach(function (w, i) { w.classList.toggle("now", i === cw); });
-      if (t >= segEnd - .05) { audio.pause(); listen.setAttribute("aria-pressed", "false"); setListenText(false); words.forEach(function (w) { w.classList.remove("now"); }); return; }
+      var cs = cw >= 0 ? sentOf[cw] : -1;
+      words.forEach(function (w, i) { w.classList.toggle("now", i === cw); w.classList.toggle("now-s", cs >= 0 && sentOf[i] === cs); });
+      if (t >= segEnd - .05) { audio.pause(); listen.setAttribute("aria-pressed", "false"); setListenText(false); clearMarks(); return; }
       if (!audio.paused) rafId = requestAnimationFrame(tick);
     }
-    function playScene(sc) {
-      if (!sc.audio) return;
+    function ensureAudio() {
       if (!audio) { audio = new Audio(data.audio.src); audio.preload = "auto"; audio.addEventListener("play", function () { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(tick); }); }
-      segEnd = sc.audio[1];
-      var start = sc.audio[0];
-      var seek = function () { if (audio.currentTime < start - .2 || audio.currentTime > sc.audio[1]) audio.currentTime = start; };
-      var pr = audio.play();  // called straight from the tap, as phones require
-      if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", function once() { audio.removeEventListener("loadedmetadata", once); seek(); });
-      if (pr && pr.catch) pr.catch(function () { listen.setAttribute("aria-pressed", "false"); setListenText(false); });
-      listen.setAttribute("aria-pressed", "true"); setListenText(true);
+      return audio;
+    }
+    // a tap on Next/the sound switch "unlocks" the audio for phones, so a timed start a moment later is allowed
+    function unlock() { if (!data.audio || audio) return; ensureAudio(); var pr = audio.play(); audio.pause(); if (pr && pr.catch) pr.catch(function () { /* fine */ }); }
+    // read a scene: get the audio to its place first (seek finished), wait `delay` ms, then play. Replay uses no delay.
+    function playScene(sc, delay) {
+      if (!sc.audio) return;
+      stopAudio(); var my = gen; ensureAudio(); segEnd = sc.audio[1];
+      var start = sc.audio[0], waited = false, ready = false;
+      function fire() {
+        if (my !== gen || !waited || !ready) return;
+        var pr = audio.play();
+        if (pr && pr.catch) pr.catch(function () { listen.setAttribute("aria-pressed", "false"); setListenText(false); });
+        listen.setAttribute("aria-pressed", "true"); setListenText(true);
+      }
+      function prep() {
+        if (my !== gen) return;
+        if (Math.abs(audio.currentTime - start) > .03) {
+          audio.addEventListener("seeked", function f() { audio.removeEventListener("seeked", f); ready = true; fire(); });
+          audio.currentTime = start;
+        } else { ready = true; fire(); }
+      }
+      if (audio.readyState >= 1) prep(); else audio.addEventListener("loadedmetadata", function f() { audio.removeEventListener("loadedmetadata", f); prep(); });
+      playTimer = setTimeout(function () { waited = true; fire(); }, delay || 0);
     }
     listen.onclick = function () {
       var sc = scenes[cur]; if (!sc.audio) return;
       if (audio && !audio.paused) { stopAudio(); return; }
-      playScene(sc);
+      playScene(sc, 0);
     };
+    replay.onclick = function () { var sc = scenes[cur]; if (sc.audio) playScene(sc, 0); };
     // the sound switch of the bottom bar (paper pages): on = each scene reads itself aloud
     var sound = G.state.sound !== false;
     function soundBtn() {
@@ -187,21 +211,24 @@
       tsound.hidden = false; soundBtn();
       tsound.onclick = function () {
         sound = !sound; G.state.sound = sound; G.save(); soundBtn();
-        if (!sound) stopAudio(); else if (scenes[cur] && scenes[cur].audio) playScene(scenes[cur]);
+        unlock(); if (!sound) stopAudio(); else if (scenes[cur] && scenes[cur].audio) playScene(scenes[cur], 0);
       };
     }
 
     // ---- text, question, game, end
     function showText(sc) {
-      text.innerHTML = ""; words = []; wb = [];
+      text.innerHTML = ""; words = []; wb = []; sentOf = []; var sentCount = 0;
       if (sc.lines) {
         sc.lines.forEach(function (ln) {
-          var p = el("p", "line r-" + (ln.role || "narrator"));
+          var p = el("p", "line r-" + (ln.role || "narrator") + (ln.li ? " li" : ""));
           if (ln.who) p.appendChild(el("b", "who", ln.who));
+          var sid = sentCount;
           (ln.w || []).forEach(function (w, i) {
-            var s = el("span", "w", w[0]); p.appendChild(s); if (i < ln.w.length - 1) p.appendChild(document.createTextNode(" "));
-            words.push(s); wb.push([w[1], w[2]]);
+            var s = el("span", "w" + (w[3] ? " bd" : ""), w[0]); p.appendChild(s); if (i < ln.w.length - 1) p.appendChild(document.createTextNode(" "));
+            words.push(s); wb.push([w[1], w[2]]); sentOf.push(sid);
+            if (/[.!?؟…:]["”»')]*$/.test(w[0])) sid = ++sentCount;
           });
+          if (sid === sentCount) sentCount++;
           if (!ln.w) p.appendChild(document.createTextNode(ln.t));
           text.appendChild(p);
         });
@@ -342,8 +369,8 @@
       st.set(sc, first);
       label.textContent = sc.label || ""; label.hidden = !sc.label;
       showText(sc); showAsk(sc); showGame(sc); showTitle(sc); showPick(sc);
-      listen.hidden = !sc.audio || (paper && !!tsound); setListenText(false);
-      if (paper && tsound && sound && sc.audio && !opts.quiet) playScene(sc);  // with the sound on, each scene reads itself when it arrives
+      ctl.hidden = !sc.audio; setListenText(false);
+      if (paper && tsound && sound && sc.audio && !opts.quiet) playScene(sc, 1000);  // with the sound on, each scene reads itself when it arrives
       scene.className = "dscene" + (sc.game ? " has-game" : "") + (sc.pic ? " has-pic" : "");
       stage.hidden = !!sc.nostage || !!sc.title; label.classList.toggle("over", false);
       count.textContent = N(i + 1) + " / " + N(n);
@@ -362,7 +389,7 @@
       if (!first && !opts.quiet) { scene.focus({ preventScroll: true }); root.scrollIntoView({ block: "start", behavior: G.reduced() ? "auto" : "smooth" }); }
       if (history.replaceState && !opts.quiet) { try { history.replaceState(null, "", "#scene-" + (i + 1)); } catch (e) { /* ignore */ } }
     }
-    next.onclick = function () { if (cur === n - 1) { go(0, { noskip: true }); } else go(cur + 1, { dir: 1 }); };
+    next.onclick = function () { unlock(); if (cur === n - 1) { go(0, { noskip: true }); } else go(cur + 1, { dir: 1 }); };
     back.onclick = function () { go(cur - 1, { dir: -1 }); };
     var dir = FA ? -1 : 1;
     root.addEventListener("keydown", function (e) {
