@@ -1,0 +1,775 @@
+{
+ "scenes": [
+  {
+   "id": "grapes",
+   "game": "u02-grapes",
+   "label": "Quick! What do you say?",
+   "fa": {
+    "label": "زود باش! تو چه می‌گویی؟"
+   }
+  },
+  {
+   "story": true
+  },
+  {
+   "id": "c1",
+   "label": "Claims need reasons",
+   "text": [
+    "A **claim** says that something is true. “The grapes are sour.” “This game is boring.” “The bridge is closed.”"
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "The bridge is closed.",
+     "fa": {
+      "say": "پل بسته است."
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "sly",
+     "anim": "bob"
+    }
+   ],
+   "fa": {
+    "text": [
+     "**ادعا** می‌گوید چیزی درست است. «انگورها ترش‌اند.» «این بازی خسته‌کننده است.» «پل بسته است.»"
+    ],
+    "label": "ادعا دلیل می‌خواهد"
+   }
+  },
+  {
+   "id": "c2",
+   "text": [
+    "A claim stands or falls on its **reasons**.",
+    " So the best short question is: **“What makes you say that?”**"
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point",
+     "say": "What makes you say that?",
+     "fa": {
+      "say": "از کجا می‌گویی؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "q",
+     "what": "question",
+     "x": 50,
+     "y": 60,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "ادعا به **دلیل‌هایش** بند است.",
+     "پس بهترین سؤالِ کوتاه این است: **«از کجا می‌گویی؟»**"
+    ]
+   }
+  },
+  {
+   "id": "c3",
+   "text": [
+    "It is not rude. It does not say “you're wrong”. It just asks to see the reason, so both of you can look at it together."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 50,
+     "y": 84,
+     "s": 1,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "text": [
+     "بی‌ادبی نیست. نمی‌گوید «اشتباه می‌کنی». فقط می‌خواهد دلیل را ببیند تا هر دو با هم نگاهش کنید."
+    ]
+   }
+  },
+  {
+   "id": "f1",
+   "label": "The fox's reasons",
+   "text": [
+    "The fox's claim: *the grapes are sour*.",
+    "Little Grape asked what made him say it. He had two reasons: the grapes were high, and he was tired."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "High up! And I'm tired!",
+     "fa": {
+      "say": "بالا هستند! و خسته‌ام!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 76,
+     "y": 92,
+     "s": 0.8,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 54,
+     "y": 38,
+     "s": 1,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "ادعای روباه: *انگورها ترش‌اند*.",
+     "حبه‌ی انگور پرسید از کجا می‌گوید. دو دلیل داشت: انگورها بالا بودند و او خسته بود."
+    ],
+    "label": "دلیل‌های روباه"
+   }
+  },
+  {
+   "id": "f2",
+   "text": [
+    "Look at what those reasons are about: the fox's position and the fox's energy. They say nothing about grapes."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "sad",
+     "anim": "bob"
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 76,
+     "y": 92,
+     "s": 0.8,
+     "face": "talk",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 54,
+     "y": 38,
+     "s": 1,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "ببین این دلیل‌ها دربارهٔ چیست: جای روباه و انرژیِ روباه. دربارهٔ انگور چیزی نمی‌گویند."
+    ]
+   }
+  },
+  {
+   "id": "f3",
+   "text": [
+    "If the grapes had been sweet, they would be just as high and he would be just as tired.",
+    "A reason that stays the same whether the claim is true or false does not help the claim."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 50,
+     "y": 92,
+     "s": 0.9,
+     "face": "talk",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "g1",
+     "what": "grapes",
+     "x": 22,
+     "y": 40,
+     "s": 0.7,
+     "anim": "float"
+    },
+    {
+     "id": "g2",
+     "what": "grapes",
+     "x": 78,
+     "y": 40,
+     "s": 0.7,
+     "anim": "float"
+    }
+   ],
+   "ask": {
+    "q": "Which reason would be different if the grapes were sweet?",
+    "fa": {
+     "q": "اگر انگورها شیرین بودند کدام دلیل فرق می‌کرد؟"
+    },
+    "options": [
+     {
+      "t": "“I tasted one and it was sour.”",
+      "ok": true,
+      "why": "If the grapes were sweet, the taste would be sweet. This reason changes with the truth, so it is evidence.",
+      "fa": {
+       "t": "«یکی‌اش را چشیدم و ترش بود.»",
+       "why": "اگر انگورها شیرین بودند مزه شیرین بود. این دلیل با حقیقت فرق می‌کند، پس نشانه است."
+      }
+     },
+     {
+      "t": "“They are very high up.”",
+      "ok": false,
+      "why": "Sweet grapes would be just as high. This reason stays the same either way.",
+      "fa": {
+       "t": "«خیلی بالا هستند.»",
+       "why": "انگورِ شیرین هم همان‌قدر بالا بود. این دلیل در هر دو حالت یکسان می‌ماند."
+      }
+     }
+    ]
+   },
+   "fa": {
+    "text": [
+     "اگر انگورها شیرین بودند، باز هم همان‌قدر بالا بودند و او هم همان‌قدر خسته بود.",
+     "دلیلی که چه ادعا درست باشد چه غلط یکسان بماند، به ادعا کمکی نمی‌کند."
+    ]
+   }
+  },
+  {
+   "id": "sg1",
+   "label": "Sour grapes",
+   "text": [
+    "The fox did not lie on purpose. He wanted the grapes and could not get them, and “they are sour” made that feel better."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "say": "They are sour. They must be.",
+     "fa": {
+      "say": "ترش‌اند. حتماً ترش‌اند."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 78,
+     "y": 38,
+     "s": 0.9,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "روباه عمداً دروغ نگفت. انگورها را می‌خواست و به آن‌ها نمی‌رسید و «ترش‌اند» حالش را بهتر می‌کرد."
+    ],
+    "label": "انگورِ ترش"
+   }
+  },
+  {
+   "id": "sg2",
+   "text": [
+    "We build reasons for what we already want to believe. This is called **motivated reasoning**. The reasons look real, but they were picked *after* the answer."
+   ],
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "b",
+     "what": "bulb",
+     "x": 78,
+     "y": 60,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "برای چیزی که از قبل می‌خواهیم باور کنیم دلیل می‌سازیم. به این **دلیل‌تراشی** می‌گویند. دلیل‌ها واقعی به نظر می‌رسند، ولی *بعد از* جواب انتخاب شده‌اند."
+    ]
+   }
+  },
+  {
+   "id": "sg3",
+   "text": [
+    "It works the other way too. Someone who fails a test may decide the test was “unfair” before looking at it."
+   ],
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 50,
+     "y": 92,
+     "s": 1.1,
+     "face": "sad",
+     "anim": "bob",
+     "say": "Totally unfair!",
+     "fa": {
+      "say": "کاملاً ناعادلانه!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "c",
+     "what": "cross",
+     "x": 78,
+     "y": 56,
+     "s": 0.6,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "text": [
+     "برعکسش هم پیش می‌آید. کسی که در امتحان رد شده ممکن است پیش از دیدنِ برگه تصمیم بگیرد امتحان «ناعادلانه» بود."
+    ]
+   }
+  },
+  {
+   "id": "q2",
+   "text": [
+    "A second question joins the first. After “What makes you say that?” ask:",
+    "**“Would I say this if I wanted the opposite?”**",
+    "If yes, the reason is not carrying any weight."
+   ],
+   "bg": "desk",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "q",
+     "what": "question",
+     "x": 78,
+     "y": 56,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "سؤالِ دومی به اولی اضافه می‌شود. بعد از «از کجا می‌گویی؟» بپرس:",
+     "**«اگر عکسش را می‌خواستم هم همین را می‌گفتم؟»**",
+     "اگر بله، آن دلیل هیچ وزنی ندارد."
+    ]
+   }
+  },
+  {
+   "id": "t1",
+   "label": "A fair test",
+   "text": [
+    "Little Grape did something even better than asking. She helped the fox **check**.",
+    "A ladder let him taste one grape, and the claim could finally be tested."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 42,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "hop",
+     "say": "Sweet!",
+     "fa": {
+      "say": "شیرین است!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 78,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "l",
+     "what": "ladder",
+     "x": 24,
+     "y": 92,
+     "s": 1,
+     "anim": "none"
+    },
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 56,
+     "y": 34,
+     "s": 0.9,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "حبه‌ی انگور کاری بهتر از پرسیدن کرد. به روباه کمک کرد **وارسی** کند.",
+     "نردبان گذاشت تا روباه یک انگور بچشد و بالاخره بشود ادعا را آزمود."
+    ],
+    "label": "آزمایشِ منصفانه"
+   }
+  },
+  {
+   "id": "t2",
+   "text": [
+    "Notice the order: ask for the reason, see that it is weak, then find a test that the claim could fail."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 50,
+     "y": 92,
+     "s": 0.9,
+     "face": "talk",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "l",
+     "what": "ladder",
+     "x": 22,
+     "y": 92,
+     "s": 0.9,
+     "anim": "none"
+    },
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 78,
+     "y": 40,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "ترتیب را ببین: دلیل را بخواه، ببین ضعیف است، بعد آزمونی پیدا کن که ادعا بتواند در آن رد شود."
+    ]
+   }
+  },
+  {
+   "id": "think",
+   "label": "Think about it",
+   "bg": "room",
+   "list": [
+    "List the fox's two reasons. Which sentence would still be true if the grapes were sweet?",
+    "When have you decided something was “boring” or “unfair” before you really tried it?",
+    "Is it always wrong to say “I don't want it anyway”? When might it be true?"
+   ],
+   "fa": {
+    "label": "فکر کن",
+    "list": [
+     "دو دلیلِ روباه را بنویس. کدام جمله حتی اگر انگورها شیرین بودند هم درست بود؟",
+     "کی پیش از آن‌که واقعاً امتحان کنی تصمیم گرفتی چیزی «خسته‌کننده» یا «ناعادلانه» است؟",
+     "آیا همیشه بد است که بگوییم «اصلاً نمی‌خواستمش»؟ کی ممکن است درست باشد؟"
+    ]
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "flip": true
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "label": "The big idea",
+   "text": [
+    "A reason helps a claim only if it would be different when the claim is false.",
+    "Ask: “What makes you say that?” and “Would I say it if I wanted the opposite?”"
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "point"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "flip": true
+    }
+   ],
+   "fa": {
+    "text": [
+     "دلیل فقط وقتی به ادعا کمک می‌کند که اگر ادعا غلط بود فرق می‌کرد.",
+     "بپرس: «از کجا می‌گویی؟» و «اگر عکسش را می‌خواستم هم همین را می‌گفتم؟»"
+    ],
+    "label": "ایدهٔ بزرگ"
+   }
+  },
+  {
+   "id": "words",
+   "words": "claim, reason, evidence, excuse, sour-grapes, motivated-reasoning",
+   "label": "New words",
+   "bg": "desk",
+   "nostage": true,
+   "fa": {
+    "label": "واژه‌های تازه"
+   }
+  },
+  {
+   "id": "sort",
+   "game": "about-grapes",
+   "label": "Try it",
+   "text": "“The grapes are sour.” Sort each reason: is it about the grapes, about the fox, or just someone's say-so? Read the explanations.",
+   "fa": {
+    "label": "امتحان کن",
+    "text": "«انگورها ترش‌اند.» هر دلیل را دسته‌بندی کن: دربارهٔ انگورهاست، دربارهٔ روباه است، یا فقط حرفِ یک نفر است؟ توضیح‌ها را بخوان."
+   }
+  },
+  {
+   "id": "quiz",
+   "game": "quiz-u02",
+   "label": "Quick check",
+   "fa": {
+    "label": "خودت را بسنج"
+   }
+  },
+  {
+   "id": "talk",
+   "label": "Talk about it",
+   "bg": "room",
+   "list": [
+    "Pick something you believe strongly. Write down your reasons. Which ones would still be there if you believed the opposite?",
+    "Why is “What makes you say that?” a kinder question than “That's wrong”?"
+   ],
+   "fa": {
+    "label": "با هم حرف بزنید",
+    "list": [
+     "چیزی را که شدید باور داری انتخاب کن. دلیل‌هایت را بنویس. کدام‌ها اگر عکسش را باور داشتی هم می‌ماندند؟",
+     "چرا «از کجا می‌گویی؟» پرسشِ مهربان‌تری از «اشتباه می‌کنی» است؟"
+    ]
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Tell me!",
+     "fa": {
+      "say": "بگو ببینم!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 70,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ]
+  },
+  {
+   "id": "further",
+   "label": "Go deeper",
+   "bg": "desk",
+   "links": [
+    {
+     "guide": "06-justification.html",
+     "t": "Reasons and what makes them good: Justification",
+     "fa": {
+      "t": "دلیل‌ها و این‌که چه چیزی دلیل را خوب می‌کند: توجیه"
+     }
+    },
+    {
+     "guide": "14-psychology-of-reasoning.html#motivated-reasoning",
+     "t": "Reasoning that works backwards: Motivated reasoning",
+     "fa": {
+      "t": "استدلالی که به عقب می‌رود: استدلالِ انگیزه‌دار"
+     }
+    }
+   ],
+   "fa": {
+    "label": "عمیق‌تر برو"
+   }
+  },
+  {
+   "id": "end",
+   "label": "Great job, detective!",
+   "text": "You can tell a real reason from a reason that only wants to be one.",
+   "bg": "field",
+   "end": true,
+   "fa": {
+    "label": "آفرین، کارآگاه!",
+    "text": "تو می‌توانی دلیلِ واقعی را از دلیلی که فقط می‌خواهد دلیل باشد جدا کنی."
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 18,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 36,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 54,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "grandma",
+     "who": "grandma",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "hudhud",
+     "who": "hudhud",
+     "x": 88,
+     "y": 80,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "float"
+    }
+   ]
+  }
+ ]
+}

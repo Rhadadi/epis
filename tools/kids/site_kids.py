@@ -281,6 +281,8 @@ def expand_deck(b, uid, level, root, meta, st, sync, words, engines):
                 small = site_play.art_src(root, f'kids/{sh.get("art", sh["id"])}', 800)
                 big = site_play.art_src(root, f'kids/{sh.get("art", sh["id"])}', 1440)
                 scene = {"id": sh["id"], "lines": lines, "bg": "plain"}
+                if not small and sh.get("stage"):  # no painted picture yet: the drawn stage tells the story
+                    scene.update({k: v for k, v in sh["stage"].items() if k in ("bg", "actors", "props")})
                 if small:
                     scene["pic"] = {"src": small, "srcset": f"{small} 800w" + (f", {big} 1440w" if big else ""), "alt": sh.get("alt", "")}
                 if k == 0:

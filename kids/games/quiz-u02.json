@@ -1,0 +1,231 @@
+{
+ "engine": "quiz",
+ "title": "Quick check",
+ "done": "Well done, detective!",
+ "fa": {
+  "title": "خودت را بسنج",
+  "done": "آفرین، کارآگاه!"
+ },
+ "items": [
+  {
+   "q": "What is a claim?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "Something a person says is true",
+    "A kind of grape",
+    "A question"
+   ],
+   "correct": 0,
+   "explain": "A claim is something someone says is true.",
+   "fa": {
+    "q": "ادعا چیست؟",
+    "choices": [
+     "چیزی که یک نفر می‌گوید درست است",
+     "یک نوع انگور",
+     "یک سؤال"
+    ],
+    "explain": "ادعا چیزی است که یک نفر می‌گوید درست است."
+   }
+  },
+  {
+   "q": "What is the magic question?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "What makes you say that?",
+    "Who is the tallest?",
+    "Is it lunchtime?"
+   ],
+   "correct": 0,
+   "explain": "It helps us see the reason behind a claim.",
+   "fa": {
+    "q": "سؤالِ جادویی کدام است؟",
+    "choices": [
+     "از کجا می‌گویی؟",
+     "چه کسی بلندتر است؟",
+     "وقتِ ناهار است؟"
+    ],
+    "explain": "به ما کمک می‌کند دلیلِ پشتِ ادعا را ببینیم."
+   }
+  },
+  {
+   "q": "Which is a reason about the grapes?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "They are high up",
+    "I tasted one and it was sour",
+    "I am tired"
+   ],
+   "correct": 1,
+   "explain": "Tasting is about the grapes. High up and tired are about the fox.",
+   "fa": {
+    "q": "کدام دلیل دربارهٔ انگورهاست؟",
+    "choices": [
+     "بالا هستند",
+     "یکی را چشیدم و ترش بود",
+     "خسته‌ام"
+    ],
+    "explain": "چشیدن دربارهٔ انگور است. بالا بودن و خسته بودن دربارهٔ روباه است."
+   }
+  },
+  {
+   "q": "The fox says “sour” because he can't reach them. That is…",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "An excuse",
+    "A taste test",
+    "A fact about grapes"
+   ],
+   "correct": 0,
+   "explain": "An excuse feels like a reason but is about our feelings.",
+   "fa": {
+    "q": "روباه چون نمی‌رسد می‌گوید «ترش». این یک…",
+    "choices": [
+     "بهانه است",
+     "آزمونِ مزه است",
+     "واقعیتی دربارهٔ انگور است"
+    ],
+    "explain": "بهانه شبیهِ دلیل است ولی دربارهٔ حسِ ماست."
+   }
+  },
+  {
+   "q": "How could the fox really find out?",
+   "levels": [
+    "explorers"
+   ],
+   "choices": [
+    "Taste one",
+    "Jump higher",
+    "Say it louder"
+   ],
+   "correct": 0,
+   "explain": "A taste test could show if the claim is right or wrong.",
+   "fa": {
+    "q": "روباه چطور واقعاً می‌توانست بفهمد؟",
+    "choices": [
+     "یکی را بچشد",
+     "بلندتر بپرد",
+     "بلندتر بگوید"
+    ],
+    "explain": "آزمونِ مزه نشان می‌داد ادعا درست است یا غلط."
+   }
+  },
+  {
+   "q": "A reason helps a claim only if it…",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Would be different if the claim were false",
+    "Is said loudly",
+    "Comes from someone older"
+   ],
+   "correct": 0,
+   "explain": "If the reason stays the same whether the claim is true or false, it carries no weight.",
+   "fa": {
+    "q": "دلیل فقط وقتی به ادعا کمک می‌کند که…",
+    "choices": [
+     "اگر ادعا غلط بود فرق می‌کرد",
+     "بلند گفته شود",
+     "از کسی بزرگ‌تر بیاید"
+    ],
+    "explain": "اگر دلیل چه ادعا درست باشد چه غلط یکسان بماند، وزنی ندارد."
+   }
+  },
+  {
+   "q": "“They are very high up.” If the grapes were sweet, this reason would be…",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Exactly the same",
+    "Different",
+    "False"
+   ],
+   "correct": 0,
+   "explain": "The grapes would be just as high, so the reason does not help the claim.",
+   "fa": {
+    "q": "«خیلی بالا هستند.» اگر انگورها شیرین بودند این دلیل…",
+    "choices": [
+     "دقیقاً همان بود",
+     "فرق می‌کرد",
+     "غلط بود"
+    ],
+    "explain": "انگورها همان‌قدر بالا بودند، پس دلیل به ادعا کمکی نمی‌کند."
+   }
+  },
+  {
+   "q": "What is “motivated reasoning”?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Finding reasons for what we already want to be true",
+    "Reasoning very fast",
+    "Reasoning with a friend"
+   ],
+   "correct": 0,
+   "explain": "The reasons are picked after the answer, because we want that answer.",
+   "fa": {
+    "q": "«دلیل‌تراشی» چیست؟",
+    "choices": [
+     "پیدا کردنِ دلیل برای چیزی که از قبل می‌خواهیم درست باشد",
+     "خیلی سریع دلیل آوردن",
+     "با دوست دلیل آوردن"
+    ],
+    "explain": "دلیل‌ها بعد از جواب انتخاب می‌شوند، چون آن جواب را می‌خواهیم."
+   }
+  },
+  {
+   "q": "Which extra question catches sour grapes?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "Would I say this if I wanted the opposite?",
+    "Who is louder?",
+    "Is it near?"
+   ],
+   "correct": 0,
+   "explain": "If you would say it either way, the reason is not doing any work.",
+   "fa": {
+    "q": "کدام سؤالِ اضافی «انگورِ ترش» را رو می‌کند؟",
+    "choices": [
+     "اگر عکسش را می‌خواستم هم همین را می‌گفتم؟",
+     "چه کسی بلندتر است؟",
+     "نزدیک است؟"
+    ],
+    "explain": "اگر در هر دو حالت همین را می‌گفتی، دلیل کاری نمی‌کند."
+   }
+  },
+  {
+   "q": "A friend says the new game is “boring” but has never played it. What is the best reply?",
+   "levels": [
+    "investigators"
+   ],
+   "choices": [
+    "What makes you say that? Have you tried it?",
+    "You're wrong.",
+    "OK, then I won't play."
+   ],
+   "correct": 0,
+   "explain": "Ask for the reason, then look for a test, like trying it.",
+   "fa": {
+    "q": "دوستی می‌گوید بازیِ تازه «خسته‌کننده» است ولی هیچ‌وقت بازی‌اش نکرده. بهترین جواب چیست؟",
+    "choices": [
+     "از کجا می‌گویی؟ امتحانش کرده‌ای؟",
+     "اشتباه می‌کنی.",
+     "باشد، پس من هم بازی نمی‌کنم."
+    ],
+    "explain": "دلیل را بخواه، بعد دنبالِ آزمون بگرد، مثلِ امتحان کردنش."
+   }
+  }
+ ]
+}

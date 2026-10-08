@@ -1,0 +1,121 @@
+{
+ "engine": "sorter",
+ "title": "About the grapes, or about the fox?",
+ "done": "A good reason is about the grapes. Reasons about the fox's feelings don't tell us how they taste.",
+ "fa": {
+  "title": "دربارهٔ انگورهاست یا دربارهٔ روباه؟",
+  "done": "دلیلِ خوب دربارهٔ انگورهاست. دلیل‌هایی دربارهٔ حسِ روباه نمی‌گویند مزه‌شان چطور است."
+ },
+ "buckets": [
+  {
+   "id": "grapes",
+   "label": "About the grapes",
+   "hint": "it would change if they were sweet",
+   "fa": {
+    "label": "دربارهٔ انگورها",
+    "hint": "اگر شیرین بودند فرق می‌کرد"
+   }
+  },
+  {
+   "id": "fox",
+   "label": "About the fox",
+   "hint": "true even if they were sweet",
+   "fa": {
+    "label": "دربارهٔ روباه",
+    "hint": "حتی اگر شیرین بودند هم درست است"
+   }
+  },
+  {
+   "id": "say",
+   "label": "Just someone's say-so",
+   "hint": "someone told me",
+   "levels": [
+    "investigators"
+   ],
+   "fa": {
+    "label": "فقط حرفِ یک نفر",
+    "hint": "یکی به من گفت"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "text": "I tasted one and my mouth puckered.",
+   "bucket": "grapes",
+   "why": "Tasting is a reason about the grapes. Sweet grapes would taste sweet.",
+   "fa": {
+    "text": "یکی را چشیدم و دهانم جمع شد.",
+    "why": "چشیدن دلیلی دربارهٔ انگور است. انگورِ شیرین شیرین مزه می‌داد."
+   }
+  },
+  {
+   "text": "They are very high up.",
+   "bucket": "fox",
+   "why": "High up tells us about the fox's reach, not the taste.",
+   "fa": {
+    "text": "خیلی بالا هستند.",
+    "why": "بالا بودن دربارهٔ دسترسیِ روباه است، نه مزه."
+   }
+  },
+  {
+   "text": "A bird took a bite and spat it out.",
+   "bucket": "grapes",
+   "why": "What a bird does with a grape tells us something about the grape.",
+   "fa": {
+    "text": "پرنده‌ای گازی زد و تُفش کرد.",
+    "why": "کارِ پرنده با انگور چیزی دربارهٔ انگور به ما می‌گوید."
+   }
+  },
+  {
+   "text": "I am tired from jumping.",
+   "bucket": "fox",
+   "why": "Being tired is true whether the grapes are sweet or sour.",
+   "fa": {
+    "text": "از پریدن خسته‌ام.",
+    "why": "خسته بودن چه انگور شیرین باشد چه ترش درست است."
+   }
+  },
+  {
+   "text": "They are small and green, like the sour ones I know.",
+   "bucket": "grapes",
+   "why": "The look of the grapes is a clue about them (not a sure one, but it is about them).",
+   "fa": {
+    "text": "کوچک و سبزند، مثلِ انگورهای ترشی که می‌شناسم.",
+    "why": "شکلِ انگورها سرنخی دربارهٔ آن‌هاست (نه قطعی، ولی دربارهٔ خودِ آن‌هاست)."
+   }
+  },
+  {
+   "text": "I really wanted them, and now I feel silly.",
+   "bucket": "fox",
+   "why": "This is about the fox's feelings. It says nothing about the taste.",
+   "fa": {
+    "text": "خیلی می‌خواستمشان و حالا احساسِ بی‌عرضگی می‌کنم.",
+    "why": "این دربارهٔ حسِ روباه است. چیزی دربارهٔ مزه نمی‌گوید."
+   }
+  },
+  {
+   "text": "My cousin said they were sour. He never tried them.",
+   "bucket": "say",
+   "why": "It is someone's say-so, and he did not taste them either. Ask him what makes him say that.",
+   "fa": {
+    "text": "پسرخاله‌ام گفت ترش‌اند. او هم هیچ‌وقت نخورده بود.",
+    "why": "فقط حرفِ یک نفر است و او هم نچشیده. از او بپرس از کجا می‌گوید."
+   },
+   "levels": [
+    "investigators"
+   ]
+  },
+  {
+   "text": "The farmer who grew them said they are sweet this year.",
+   "bucket": "say",
+   "why": "The farmer may know, but it is still say-so until you ask how he knows (does he taste them?).",
+   "fa": {
+    "text": "کشاورزی که پرورششان داده می‌گوید امسال شیرین‌اند.",
+    "why": "شاید کشاورز بداند، ولی تا نپرسی از کجا می‌داند، باز هم حرفِ یک نفر است (آیا خودش می‌چشد؟)."
+   },
+   "levels": [
+    "investigators"
+   ]
+  }
+ ]
+}

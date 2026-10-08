@@ -1,13 +1,79 @@
 {
-  "ava": {"name": "Ava", "fa": {"name": "آوا"}, "about": "9, curious; always asks \"How do you know?\""},
-  "nima": {"name": "Sam", "fa": {"name": "نیما"}, "about": "6, Ava's little brother; asks \"why?\""},
-  "kian": {"name": "Max", "fa": {"name": "کیان"}, "about": "12, their neighbour; quick and very sure of himself"},
-  "grandma": {"name": "Grandma Rose", "fa": {"name": "مادربزرگ مهری"}, "about": "tells the old stories; asks the best questions"},
-  "hudhud": {"name": "Hoopy", "fa": {"name": "هدهد"}, "about": "the hoopoe from Attar's Conference of the Birds; answers with questions"},
-  "mother": {"name": "Mother Goat", "fa": {"name": "بزِ مادر"}},
-  "wolf": {"name": "Wolf", "fa": {"name": "گرگ"}},
-  "shangul": {"name": "Jingle", "fa": {"name": "شنگول"}},
-  "mangul": {"name": "Jangle", "fa": {"name": "منگول"}},
-  "grape": {"name": "Little Grape", "fa": {"name": "حبه‌ی انگور"}},
-  "kids": {"name": "The kids", "fa": {"name": "بزغاله‌ها"}}
+ "ava": {
+  "name": "Ava",
+  "fa": {
+   "name": "آوا"
+  },
+  "about": "9, curious; always asks \"How do you know?\""
+ },
+ "nima": {
+  "name": "Sam",
+  "fa": {
+   "name": "نیما"
+  },
+  "about": "6, Ava's little brother; asks \"why?\""
+ },
+ "kian": {
+  "name": "Max",
+  "fa": {
+   "name": "کیان"
+  },
+  "about": "12, their neighbour; quick and very sure of himself"
+ },
+ "grandma": {
+  "name": "Grandma Rose",
+  "fa": {
+   "name": "مادربزرگ مهری"
+  },
+  "about": "tells the old stories; asks the best questions"
+ },
+ "hudhud": {
+  "name": "Hoopy",
+  "fa": {
+   "name": "هدهد"
+  },
+  "about": "the hoopoe from Attar's Conference of the Birds; answers with questions"
+ },
+ "mother": {
+  "name": "Mother Goat",
+  "fa": {
+   "name": "بزِ مادر"
+  }
+ },
+ "wolf": {
+  "name": "Wolf",
+  "fa": {
+   "name": "گرگ"
+  }
+ },
+ "shangul": {
+  "name": "Jingle",
+  "fa": {
+   "name": "شنگول"
+  }
+ },
+ "mangul": {
+  "name": "Jangle",
+  "fa": {
+   "name": "منگول"
+  }
+ },
+ "grape": {
+  "name": "Little Grape",
+  "fa": {
+   "name": "حبه‌ی انگور"
+  }
+ },
+ "kids": {
+  "name": "The kids",
+  "fa": {
+   "name": "بزغاله‌ها"
+  }
+ },
+ "fox": {
+  "name": "Fox",
+  "fa": {
+   "name": "روباه"
+  }
+ }
 }

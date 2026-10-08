@@ -1,0 +1,328 @@
+{
+ "id": "u02-what-makes-you-say-that",
+ "story": "fox-and-grapes",
+ "adult": [
+  "06-justification.md",
+  "14-psychology-of-reasoning.md"
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "art": "u02-s01",
+   "alt": "Grandma Rose telling a story to Ava and Sam; in the picture-book page, a hungry fox beside a garden wall.",
+   "fa": {
+    "alt": "مادربزرگ مهری برای آوا و نیما قصه می‌گوید؛ در صفحهٔ کتاب، روباهی گرسنه کنارِ دیوارِ باغ."
+   },
+   "stage": {
+    "bg": "room",
+    "actors": [
+     {
+      "id": "ava",
+      "who": "ava",
+      "x": 24,
+      "y": 92,
+      "s": 1,
+      "face": "happy",
+      "anim": "bob"
+     },
+     {
+      "id": "nima",
+      "who": "nima",
+      "x": 44,
+      "y": 92,
+      "s": 0.8,
+      "face": "happy",
+      "anim": "bob"
+     },
+     {
+      "id": "grandma",
+      "who": "grandma",
+      "x": 72,
+      "y": 92,
+      "s": 1,
+      "face": "talk",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "b",
+      "what": "book",
+      "x": 56,
+      "y": 86,
+      "s": 0.8,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "art": "u02-s02",
+   "alt": "A fox looks up at big purple grapes hanging high on a vine above a garden wall.",
+   "fa": {
+    "alt": "روباهی به خوشه‌های درشتِ انگورِ بنفش نگاه می‌کند که بالای دیوارِ باغ از تاک آویزان است."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 34,
+      "y": 92,
+      "s": 1,
+      "face": "happy",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 64,
+      "y": 36,
+      "s": 1.1,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "art": "u02-s03",
+   "alt": "The fox jumps as high as he can, but the grapes are still far above his paws.",
+   "fa": {
+    "alt": "روباه تا جایی که می‌تواند بالا می‌پرد، ولی انگورها هنوز خیلی بالاتر از دست‌هایش هستند."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 34,
+      "y": 92,
+      "s": 1,
+      "face": "surprised",
+      "anim": "hop"
+     }
+    ],
+    "props": [
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 64,
+      "y": 30,
+      "s": 1.1,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s04",
+   "art": "u02-s04",
+   "alt": "The fox sits down with his nose in the air, pretending he does not care about the grapes.",
+   "fa": {
+    "alt": "روباه با دماغِ بالا نشسته و وانمود می‌کند اصلاً به انگورها اهمیتی نمی‌دهد."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 40,
+      "y": 92,
+      "s": 1,
+      "face": "sly",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 70,
+      "y": 34,
+      "s": 1,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s05",
+   "art": "u02-s05",
+   "alt": "Little Grape, a small cream goat with a purple bell, asks the fox a question with her head tilted.",
+   "fa": {
+    "alt": "حبه‌ی انگور، یک بزغالهٔ کوچکِ کرم‌رنگ با زنگوله‌ای بنفش، سرش را کج می‌کند و از روباه سؤالی می‌پرسد."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 30,
+      "y": 92,
+      "s": 1,
+      "face": "sly",
+      "anim": "bob"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 70,
+      "y": 92,
+      "s": 0.8,
+      "face": "thinking",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "q",
+      "what": "question",
+      "x": 52,
+      "y": 56,
+      "s": 0.8,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "art": "u02-s06",
+   "alt": "The fox scratches his head and looks a little embarrassed while Little Grape points at the grapes.",
+   "fa": {
+    "alt": "روباه سرش را می‌خاراند و کمی خجالت‌زده است، و حبه‌ی انگور به انگورها اشاره می‌کند."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 30,
+      "y": 92,
+      "s": 1,
+      "face": "sad",
+      "anim": "bob"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 70,
+      "y": 92,
+      "s": 0.8,
+      "face": "talk",
+      "anim": "point"
+     }
+    ],
+    "props": [
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 52,
+      "y": 36,
+      "s": 0.9,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "art": "u02-s07",
+   "alt": "The fox on a ladder against the wall, picking a grape, with Little Grape holding the ladder.",
+   "fa": {
+    "alt": "روباه روی نردبانی که به دیوار تکیه داده یک انگور می‌چیند و حبه‌ی انگور نردبان را نگه داشته است."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 44,
+      "y": 92,
+      "s": 1,
+      "face": "surprised",
+      "anim": "bob"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 76,
+      "y": 92,
+      "s": 0.8,
+      "face": "happy",
+      "anim": "bob"
+     }
+    ],
+    "props": [
+     {
+      "id": "l",
+      "what": "ladder",
+      "x": 24,
+      "y": 92,
+      "s": 1.1,
+      "anim": "none"
+     },
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 58,
+      "y": 28,
+      "s": 0.9,
+      "anim": "float"
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08",
+   "art": "u02-s08",
+   "alt": "The fox and Little Grape sharing sweet grapes in the sun, both smiling.",
+   "fa": {
+    "alt": "روباه و حبه‌ی انگور زیرِ آفتاب انگورهای شیرین را با هم می‌خورند و هر دو لبخند می‌زنند."
+   },
+   "stage": {
+    "bg": "field",
+    "actors": [
+     {
+      "id": "fox",
+      "who": "fox",
+      "x": 32,
+      "y": 92,
+      "s": 1,
+      "face": "happy",
+      "anim": "hop"
+     },
+     {
+      "id": "grape",
+      "who": "grape",
+      "x": 68,
+      "y": 92,
+      "s": 0.8,
+      "face": "happy",
+      "anim": "hop"
+     }
+    ],
+    "props": [
+     {
+      "id": "g",
+      "what": "grapes",
+      "x": 50,
+      "y": 60,
+      "s": 0.8,
+      "anim": "float"
+     }
+    ]
+   }
+  }
+ ]
+}

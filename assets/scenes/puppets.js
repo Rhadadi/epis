@@ -81,6 +81,14 @@
       '<ellipse cx="50" cy="96" rx="24" ry="30" fill="#D5D8DE" ' + LINE + '/><g class="arm arm-r" fill="none" ' + LINE + '><path d="M68 80 L80 106"/></g>' +
       '<g class="head"><path d="M28 32 L30 4 L44 22Z M72 32 L70 4 L56 22Z" fill="#D5D8DE" ' + LINE + '/><circle cx="50" cy="42" r="22" fill="#D5D8DE" ' + LINE + '/>' +
       '<ellipse cx="50" cy="55" rx="13" ry="9" fill="#fff" ' + LINE + ' stroke-width="2.4"/><ellipse cx="50" cy="50" rx="5" ry="3.6" fill="' + INK + '"/>' + face(50, 38, .95) + '</g></svg>'; },
+    fox: function () { return '<svg viewBox="0 0 100 150" class="pp"><path d="M24 148 H76" ' + LINE + ' opacity=".25"/>' +
+      '<path d="M70 104 Q100 96 96 130 Q88 120 72 120Z" fill="#F29A4A" ' + LINE + '/><path d="M90 116 Q96 126 94 130 Q90 126 88 122Z" fill="#fff"/>' +
+      '<g fill="none" ' + LINE + '><path d="M42 116 V146 M38 147 H48 M58 116 V146 M54 147 H64"/></g>' +
+      '<g class="arm arm-l" fill="none" ' + LINE + '><path d="M33 82 L20 108"/></g>' +
+      '<ellipse cx="50" cy="98" rx="23" ry="30" fill="#F29A4A" ' + LINE + '/><ellipse cx="50" cy="104" rx="11" ry="20" fill="#fff"/>' +
+      '<g class="arm arm-r" fill="none" ' + LINE + '><path d="M67 82 L80 108"/></g>' +
+      '<g class="head"><path d="M28 34 L30 6 L44 24Z M72 34 L70 6 L56 24Z" fill="#F29A4A" ' + LINE + '/><path d="M32 28 L33 14 L40 24Z M68 28 L67 14 L60 24Z" fill="#fff"/>' +
+      '<path d="M28 44 Q50 18 72 44 Q74 62 50 66 Q26 62 28 44Z" fill="#F29A4A" ' + LINE + '/><path d="M36 54 Q50 70 64 54 Q50 58 36 54Z" fill="#fff"/><ellipse cx="50" cy="60" rx="4.5" ry="3.4" fill="' + INK + '"/>' + face(50, 44, .9) + '</g></svg>'; },
     dog: function () { return '<svg viewBox="0 0 100 150" class="pp"><path d="M24 148 H76" ' + LINE + ' opacity=".25"/>' +
       '<g fill="none" ' + LINE + '><path d="M42 116 V146 M38 147 H48 M58 116 V146 M54 147 H64"/></g>' +
       '<g class="arm arm-l" fill="none" ' + LINE + '><path d="M33 82 L20 108"/></g>' +
@@ -109,6 +117,8 @@
   // ---- props (viewBox 0 0 100 100 unless noted)
   var S = 'stroke="' + INK + '" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"';
   var PROPS = {
+    grapes: '<path d="M50 12 Q56 6 64 10 M50 12 V26" fill="none" stroke="' + INK + '" stroke-width="3" stroke-linecap="round"/><path d="M52 14 Q70 10 76 22 Q62 26 52 20Z" fill="#4FA35B" ' + S + '/><g fill="#8B5CF6" ' + S + '><circle cx="34" cy="36" r="10"/><circle cx="54" cy="36" r="10"/><circle cx="72" cy="38" r="9"/><circle cx="44" cy="54" r="10"/><circle cx="63" cy="54" r="10"/><circle cx="53" cy="72" r="10"/></g>',
+    ladder: '<path d="M32 94 L42 6 M62 94 L72 6" fill="none" stroke="' + INK + '" stroke-width="4" stroke-linecap="round"/><path d="M35 76 H65 M37 58 H67 M39 40 H69 M41 22 H70" fill="none" stroke="' + INK + '" stroke-width="3.4" stroke-linecap="round"/>',
     cookie: '<circle cx="50" cy="50" r="30" fill="#D9A15E" ' + S + '/><g fill="#5A3622"><circle cx="40" cy="42" r="4"/><circle cx="58" cy="38" r="4"/><circle cx="52" cy="58" r="4"/><circle cx="38" cy="60" r="3.4"/><circle cx="64" cy="55" r="3.4"/></g>',
     crumbs: '<g fill="#D9A15E" ' + S.replace('stroke-width="3"', 'stroke-width="1.5"') + '><circle cx="30" cy="60" r="5"/><circle cx="52" cy="50" r="4"/><circle cx="68" cy="64" r="5.5"/><circle cx="46" cy="72" r="3.5"/><circle cx="76" cy="46" r="3"/></g>',
     cat: '<g ' + S + '><path d="M22 90 Q16 52 40 44 Q50 40 60 44 Q84 52 78 90Z" fill="#F29A4A"/><path d="M34 46 L30 24 L44 38Z M66 46 L70 24 L56 38Z" fill="#F29A4A"/><path d="M78 88 Q98 80 92 56" fill="none" stroke="#F29A4A" stroke-width="8"/></g><circle cx="42" cy="56" r="2.6" fill="' + INK + '"/><circle cx="58" cy="56" r="2.6" fill="' + INK + '"/><path d="M46 63 Q50 67 54 63" stroke="' + INK + '" stroke-width="2.4" fill="none"/>',

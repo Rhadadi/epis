@@ -1,0 +1,88 @@
+{
+ "engine": "case",
+ "title": "The fox and the grapes",
+ "again": "What do you do now?",
+ "fa": {
+  "title": "روباه و انگورها",
+  "again": "حالا چه کار می‌کنی؟"
+ },
+ "cases": [
+  {
+   "id": "grapes",
+   "headline": "The fox can't reach the grapes. He says: “Those grapes are sour anyway!”",
+   "q": "You hear the fox. What do you say?",
+   "choices": [
+    {
+     "id": "agree",
+     "text": "“OK, they must be sour.”",
+     "short": "Agree",
+     "why": "Hmm. He did not say how he knows. Saying “sour” is not the same as tasting.",
+     "fa": {
+      "text": "«باشد، حتماً ترش‌اند.»",
+      "short": "موافقت می‌کنم",
+      "why": "هوم. او نگفت از کجا می‌داند. گفتنِ «ترش» با چشیدن فرق دارد."
+     }
+    },
+    {
+     "id": "ask",
+     "text": "“What makes you say that?”",
+     "short": "Ask why",
+     "why": "Good detective! A good question helps the fox look at his own reason.",
+     "fa": {
+      "text": "«از کجا می‌گویی؟»",
+      "short": "می‌پرسم",
+      "why": "کارآگاهِ خوب! سؤالِ خوب به روباه کمک می‌کند دلیلِ خودش را ببیند."
+     }
+    },
+    {
+     "id": "no",
+     "text": "“No! They are sweet!”",
+     "short": "Say no",
+     "why": "Maybe. But you did not taste them either. A fight is not a reason.",
+     "fa": {
+      "text": "«نه! شیرین‌اند!»",
+      "short": "نه می‌گویم",
+      "why": "شاید. ولی تو هم نچشیده‌ای. دعوا دلیل نیست."
+     }
+    }
+   ],
+   "best": [
+    "ask"
+   ],
+   "clues": [
+    {
+     "title": "Listen to the fox",
+     "text": "The fox says: “They are very high up. And I am very tired.”",
+     "fa": {
+      "title": "به روباه گوش کن",
+      "text": "روباه می‌گوید: «خیلی بالا هستند. من هم خیلی خسته‌ام.»"
+     }
+    }
+   ],
+   "ideas": [
+    {
+     "name": "A reason about the thing",
+     "text": "High and tired are about the fox, not the grapes. Look for a reason about the grapes: a taste, a colour, a bird.",
+     "fa": {
+      "name": "دلیلی دربارهٔ خودِ چیز",
+      "text": "بالا بودن و خسته بودن دربارهٔ روباه است، نه انگور. دنبالِ دلیلی دربارهٔ انگور بگرد: مزه، رنگ، یک پرنده."
+     }
+    }
+   ],
+   "next": {
+    "text": "Now see what Little Grape did!",
+    "href": "#story",
+    "fa": {
+     "text": "حالا ببین حبه‌ی انگور چه کار کرد!"
+    }
+   },
+   "fa": {
+    "headline": "روباه به انگورها نمی‌رسد. می‌گوید: «این انگورها که ترش‌اند!»",
+    "q": "صدای روباه را می‌شنوی. چه می‌گویی؟",
+    "alt": "روباهی زیرِ تاکی ایستاده، دماغش را بالا گرفته و انگورهای بلند را نگاه می‌کند."
+   },
+   "art": "kids/u02-s04",
+   "alt": "A fox stands under a vine with his nose in the air, looking at grapes that are too high."
+  }
+ ]
+}

@@ -1,0 +1,648 @@
+{
+ "scenes": [
+  {
+   "id": "grapes",
+   "game": "u02-grapes",
+   "label": "Quick! What do you say?",
+   "fa": {
+    "label": "زود باش! تو چه می‌گویی؟"
+   }
+  },
+  {
+   "story": true
+  },
+  {
+   "id": "soup1",
+   "label": "A claim and a reason",
+   "text": [
+    "Ava's friend says, “That soup is yucky.”"
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "surprised",
+     "anim": "wobble"
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "Yucky!",
+     "fa": {
+      "say": "بد مزه!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "c",
+     "what": "cup",
+     "x": 50,
+     "y": 84,
+     "s": 0.8,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "text": [
+     "دوستِ آوا می‌گوید: «این سوپ مزه‌اش بد است.»"
+    ],
+    "label": "ادعا و دلیل"
+   }
+  },
+  {
+   "id": "soup2",
+   "text": [
+    "That is a **claim**.",
+    "A claim is something a person says is true."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point",
+     "say": "What makes you say that?",
+     "fa": {
+      "say": "از کجا می‌گویی؟"
+     }
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "q",
+     "what": "question",
+     "x": 50,
+     "y": 60,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "این یک **ادعا** است.",
+     "ادعا یعنی چیزی که یک نفر می‌گوید درست است."
+    ]
+   }
+  },
+  {
+   "id": "soup3",
+   "text": [
+    "“It has carrots. I never tried it.”",
+    "Did he taste the soup? No. His reason is not a good one yet."
+   ],
+   "bg": "room",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 28,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    },
+    {
+     "id": "kian",
+     "who": "kian",
+     "x": 72,
+     "y": 92,
+     "s": 1.1,
+     "face": "sad",
+     "anim": "bob",
+     "say": "I never tried it.",
+     "fa": {
+      "say": "نخورده‌ام."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "c",
+     "what": "cup",
+     "x": 50,
+     "y": 84,
+     "s": 0.8,
+     "anim": "none"
+    },
+    {
+     "id": "x",
+     "what": "cross",
+     "x": 50,
+     "y": 58,
+     "s": 0.6,
+     "anim": "pop"
+    }
+   ],
+   "fa": {
+    "text": [
+     "«توی آن هویج هست. هیچ‌وقت نخورده‌ام.»",
+     "سوپ را چشیده؟ نه. دلیلش هنوز دلیلِ خوبی نیست."
+    ]
+   }
+  },
+  {
+   "id": "fox1",
+   "label": "About the thing, or about me?",
+   "text": [
+    "The fox said, “The grapes are sour.”",
+    "That was his claim."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "sly",
+     "anim": "bob",
+     "say": "Those grapes are sour!",
+     "fa": {
+      "say": "این انگورها ترش‌اند!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 76,
+     "y": 92,
+     "s": 0.8,
+     "face": "thinking",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 56,
+     "y": 40,
+     "s": 1,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "روباه گفت: «انگورها ترش‌اند.»",
+     "این ادعای او بود."
+    ],
+    "label": "دربارهٔ خودِ چیز یا دربارهٔ من؟"
+   }
+  },
+  {
+   "id": "fox2",
+   "text": [
+    "The fox said the grapes were high. He said he was tired.",
+    "Those reasons are about **the fox**. They do not tell us how the grapes taste."
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "sad",
+     "anim": "bob",
+     "say": "I'm tired!",
+     "fa": {
+      "say": "خسته‌ام!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 76,
+     "y": 92,
+     "s": 0.8,
+     "face": "talk",
+     "anim": "point",
+     "say": "About YOU, not the grapes.",
+     "fa": {
+      "say": "دربارهٔ تو است، نه انگورها."
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 56,
+     "y": 34,
+     "s": 1,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "روباه گفت انگورها بالا هستند. گفت خسته است.",
+     "این دلیل‌ها دربارهٔ **روباه**‌اند. به ما نمی‌گویند مزهٔ انگور چطور است."
+    ]
+   }
+  },
+  {
+   "id": "fox3",
+   "label": "Good reasons",
+   "bg": "field",
+   "actors": [
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 50,
+     "y": 92,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "point",
+     "say": "Reasons about the grapes!",
+     "fa": {
+      "say": "دلیل‌هایی دربارهٔ انگورها!"
+     }
+    }
+   ],
+   "props": [
+    {
+     "id": "g",
+     "what": "grapes",
+     "x": 22,
+     "y": 40,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "list": [
+    "“I tasted one and it was sour.”",
+    "“A bird spat one out.”",
+    "“They are small and green, and green grapes are often sour.”"
+   ],
+   "fa": {
+    "label": "دلیل‌های خوب",
+    "list": [
+     "«یکی‌اش را چشیدم و ترش بود.»",
+     "«یک پرنده یکی‌اش را تُف کرد.»",
+     "«کوچک و سبزند و انگورِ سبز اغلب ترش است.»"
+    ]
+   }
+  },
+  {
+   "id": "ex1",
+   "label": "Excuses",
+   "text": [
+    "Sometimes we want something and can't have it.",
+    "Then we say, “I didn't want it anyway!”"
+   ],
+   "bg": "town",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "sad",
+     "anim": "bob",
+     "say": "I didn't want it anyway!",
+     "fa": {
+      "say": "اصلاً نمی‌خواستمش!"
+     }
+    },
+    {
+     "id": "nima",
+     "who": "nima",
+     "x": 72,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ],
+   "props": [
+    {
+     "id": "b",
+     "what": "cookie",
+     "x": 52,
+     "y": 86,
+     "s": 0.8,
+     "anim": "float"
+    }
+   ],
+   "fa": {
+    "text": [
+     "گاهی چیزی را می‌خواهیم و نمی‌توانیم داشته باشیم.",
+     "آن‌وقت می‌گوییم: «اصلاً نمی‌خواستمش!»"
+    ],
+    "label": "بهانه"
+   }
+  },
+  {
+   "id": "ex2",
+   "text": [
+    "That is an **excuse**. It feels like a reason, but it is not about the thing. It is about how we feel.",
+    "Everybody does it. The clever part is to notice."
+   ],
+   "bg": "town",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "point"
+    }
+   ],
+   "props": [
+    {
+     "id": "m",
+     "what": "magnifier",
+     "x": 24,
+     "y": 84,
+     "s": 1,
+     "anim": "wobble"
+    }
+   ],
+   "fa": {
+    "text": [
+     "این **بهانه** است. شبیهِ دلیل است، ولی دربارهٔ آن چیز نیست. دربارهٔ حسِ خودمان است.",
+     "همه این کار را می‌کنند. کارِ باهوشانه این است که متوجه شوی."
+    ]
+   }
+  },
+  {
+   "id": "ex3",
+   "text": [
+    "Ask yourself: **Is this a reason about the thing, or about me?**"
+   ],
+   "bg": "town",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 50,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "point"
+    }
+   ],
+   "ask": {
+    "q": "“I don't like that game. I lost.” Is that about the game, or about me?",
+    "fa": {
+     "q": "«آن بازی را دوست ندارم. باختم.» این دربارهٔ بازی است یا دربارهٔ من؟"
+    },
+    "options": [
+     {
+      "t": "About me: I feel bad about losing.",
+      "ok": true,
+      "why": "Losing is about how I feel. It says nothing about whether the game is good.",
+      "fa": {
+       "t": "دربارهٔ من است: از باختن بدم آمده.",
+       "why": "باختن دربارهٔ حسِ من است. نمی‌گوید بازی خوب است یا نه."
+      }
+     },
+     {
+      "t": "About the game: it is a bad game.",
+      "ok": false,
+      "why": "Hmm. Losing does not make a game bad. Try asking what is wrong with the game itself.",
+      "fa": {
+       "t": "دربارهٔ بازی است: بازیِ بدی است.",
+       "why": "هوم. باختن بازی را بد نمی‌کند. بپرس خودِ بازی چه ایرادی دارد."
+      }
+     }
+    ]
+   },
+   "fa": {
+    "text": [
+     "از خودت بپرس: **این دلیل دربارهٔ خودِ چیز است یا دربارهٔ من؟**"
+    ]
+   }
+  },
+  {
+   "id": "think",
+   "label": "Think about it",
+   "bg": "room",
+   "list": [
+    "What was the fox's claim? What were his reasons?",
+    "How could the fox have found out if the grapes were sour?",
+    "Can you think of a time you said “I didn't want it anyway”?"
+   ],
+   "fa": {
+    "label": "فکر کن",
+    "list": [
+     "ادعای روباه چه بود؟ دلیل‌هایش چه بودند؟",
+     "روباه چطور می‌توانست بفهمد انگورها ترش‌اند یا نه؟",
+     "یادت می‌آید یک بار گفتی «اصلاً نمی‌خواستمش»؟"
+    ]
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "thinking",
+     "anim": "bob",
+     "flip": true
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "label": "The big idea",
+   "text": [
+    "A good reason is about the thing.",
+    "Ask: **“What makes you say that?”**"
+   ],
+   "bg": "field",
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "point"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 70,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob",
+     "flip": true
+    }
+   ],
+   "fa": {
+    "text": [
+     "دلیلِ خوب دربارهٔ خودِ چیز است.",
+     "بپرس: **«از کجا می‌گویی؟»**"
+    ],
+    "label": "ایدهٔ بزرگ"
+   }
+  },
+  {
+   "id": "words",
+   "words": "claim, reason, excuse, evidence",
+   "label": "New words",
+   "bg": "desk",
+   "nostage": true,
+   "fa": {
+    "label": "واژه‌های تازه"
+   }
+  },
+  {
+   "id": "sort",
+   "game": "about-grapes",
+   "label": "Try it",
+   "text": "The fox says, “The grapes are sour.” Is each reason about the grapes, or about the fox? Sort the cards.",
+   "fa": {
+    "label": "امتحان کن",
+    "text": "روباه می‌گوید: «انگورها ترش‌اند.» هر دلیل دربارهٔ انگورهاست یا دربارهٔ روباه؟ کارت‌ها را دسته‌بندی کن."
+   }
+  },
+  {
+   "id": "quiz",
+   "game": "quiz-u02",
+   "label": "Quick check",
+   "fa": {
+    "label": "خودت را بسنج"
+   }
+  },
+  {
+   "id": "talk",
+   "label": "Talk about it",
+   "bg": "room",
+   "list": [
+    "Ask someone at home, “What makes you say that?” about something they said today.",
+    "Tell a story about a time you gave an excuse. What was the real reason?"
+   ],
+   "fa": {
+    "label": "با هم حرف بزنید",
+    "list": [
+     "از یکی از اهلِ خانه دربارهٔ حرفی که امروز زده بپرس: «از کجا می‌گویی؟»",
+     "یک ماجرا تعریف کن که بهانه آورده‌ای. دلیلِ واقعی چه بود؟"
+    ]
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 30,
+     "y": 92,
+     "s": 1,
+     "face": "talk",
+     "anim": "bob",
+     "say": "Tell me!",
+     "fa": {
+      "say": "بگو ببینم!"
+     }
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 70,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "bob"
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "label": "Great job, detective!",
+   "text": "You can ask the best question: **What makes you say that?**",
+   "bg": "field",
+   "end": true,
+   "fa": {
+    "label": "آفرین، کارآگاه!",
+    "text": "تو می‌توانی بهترین سؤال را بپرسی: **از کجا می‌گویی؟**"
+   },
+   "actors": [
+    {
+     "id": "ava",
+     "who": "ava",
+     "x": 18,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "fox",
+     "who": "fox",
+     "x": 36,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "grape",
+     "who": "grape",
+     "x": 54,
+     "y": 92,
+     "s": 0.8,
+     "face": "happy",
+     "anim": "hop"
+    },
+    {
+     "id": "grandma",
+     "who": "grandma",
+     "x": 72,
+     "y": 92,
+     "s": 1,
+     "face": "happy",
+     "anim": "bob"
+    },
+    {
+     "id": "hudhud",
+     "who": "hudhud",
+     "x": 88,
+     "y": 80,
+     "s": 0.9,
+     "face": "happy",
+     "anim": "float"
+    }
+   ]
+  }
+ ]
+}
