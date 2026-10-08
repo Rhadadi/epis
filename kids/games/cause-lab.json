@@ -1,0 +1,112 @@
+{
+ "engine": "playground",
+ "title": "The feet lab",
+ "intro": "Fourteen made-up kids. Does a bigger foot help you read? Try the buttons and see.",
+ "question": "What do you think now?",
+ "choices": [
+  {
+   "text": "Big feet make you read better",
+   "ok": false,
+   "why": "Look again: inside the same age, bigger feet did not read better. Something else is going on.",
+   "fa": {
+    "text": "پای بزرگ باعث می‌شود بهتر بخوانی",
+    "why": "دوباره نگاه کن: درونِ یک سن، پای بزرگ‌تر بهتر نمی‌خواند. چیزِ دیگری در کار است."
+   }
+  },
+  {
+   "text": "Age may explain both feet and reading",
+   "ok": true,
+   "why": "Older kids have bigger feet and have also had more school and practice. Comparing kids of the same age is a fair check. (Other things could matter too, so keep testing.)",
+   "fa": {
+    "text": "شاید سن هر دو، یعنی پا و خواندن، را توضیح بدهد",
+    "why": "بچه‌های بزرگ‌تر پای بزرگ‌تری دارند و مدرسه و تمرینِ بیشتری هم داشته‌اند. مقایسهٔ بچه‌های هم‌سن وارسیِ منصفانه‌ای است. (چیزهای دیگر هم می‌توانند مؤثر باشند، پس آزمودن را ادامه بده.)"
+   }
+  },
+  {
+   "text": "I can't tell yet",
+   "unsure": true,
+   "why": "That is fair: this lab has only fourteen kids. But the same-age check already points away from feet.",
+   "fa": {
+    "text": "هنوز نمی‌توانم بفهمم",
+    "why": "منصفانه است: این آزمایشگاه فقط چهارده بچه دارد. ولی وارسیِ هم‌سن‌ها همین حالا هم از پا دور می‌شود."
+   }
+  }
+ ],
+ "kids": [
+  {
+   "age": 6,
+   "foot": 14.9,
+   "read": 23
+  },
+  {
+   "age": 6,
+   "foot": 15.8,
+   "read": 22
+  },
+  {
+   "age": 7,
+   "foot": 16.6,
+   "read": 32
+  },
+  {
+   "age": 7,
+   "foot": 16.0,
+   "read": 31
+  },
+  {
+   "age": 8,
+   "foot": 18.3,
+   "read": 43
+  },
+  {
+   "age": 8,
+   "foot": 17.4,
+   "read": 36
+  },
+  {
+   "age": 9,
+   "foot": 18.9,
+   "read": 52
+  },
+  {
+   "age": 9,
+   "foot": 20.0,
+   "read": 41
+  },
+  {
+   "age": 10,
+   "foot": 22.1,
+   "read": 63
+  },
+  {
+   "age": 10,
+   "foot": 21.5,
+   "read": 58
+  },
+  {
+   "age": 11,
+   "foot": 22.1,
+   "read": 58
+  },
+  {
+   "age": 11,
+   "foot": 22.8,
+   "read": 58
+  },
+  {
+   "age": 12,
+   "foot": 23.7,
+   "read": 69
+  },
+  {
+   "age": 12,
+   "foot": 23.5,
+   "read": 72
+  }
+ ],
+ "fa": {
+  "title": "آزمایشگاهِ پا",
+  "intro": "چهارده بچهٔ ساختگی. آیا پای بزرگ‌تر به خواندن کمک می‌کند؟ دکمه‌ها را امتحان کن و ببین.",
+  "question": "حالا چه فکر می‌کنی؟"
+ }
+}

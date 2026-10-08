@@ -1,7 +1,27 @@
 {
  "games": [
-  {"id": "correlation-detective", "color": "pink", "art": "feet", "img": "kids/kids-feet",
-   "title": "Cause Detective", "hook": "Big feet, better readers? Find the hidden cause!",
-   "fa": {"title": "کارآگاهِ علت", "hook": "پای بزرگ‌تر، کتاب‌خوانِ بهتر؟ علتِ پنهان را پیدا کن!"}}
+  {
+   "id": "correlation-detective",
+   "color": "pink",
+   "art": "feet",
+   "img": "kids/kids-feet",
+   "title": "Cause Detective",
+   "hook": "Big feet, better readers? Find the hidden cause!",
+   "fa": {
+    "title": "کارآگاهِ علت",
+    "hook": "پای بزرگ‌تر، کتاب‌خوانِ بهتر؟ علتِ پنهان را پیدا کن!"
+   }
+  },
+  {
+   "id": "cause-lab",
+   "color": "green",
+   "art": "feet",
+   "title": "The Feet Lab",
+   "hook": "Does a big foot help you read? Run the experiment.",
+   "fa": {
+    "title": "آزمایشگاهِ پا",
+    "hook": "آیا پای بزرگ به خواندن کمک می‌کند؟ آزمایش کن."
+   }
+  }
  ]
 }

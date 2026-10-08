@@ -310,3 +310,26 @@ html[lang="en"] body.paper .my-trick{font-size:.98rem;line-height:1.5}
 html[lang="en"] body.paper .dtext .w.bd,html[lang="en"] body.paper .dtext b{font-weight:700;background:none}
 html[lang="en"] body.paper .dtext .line .who{font-family:var(--hand)}
 html[lang="en"] body.paper .cs-headline{font-size:clamp(1.15rem,3.6vw,1.5rem);line-height:1.35}
+
+/* ---- the feet lab (assets/games/playground.js) */
+.pg{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center}
+.pg-intro{margin:0;font-size:1.25rem}
+html[lang="en"] body.paper .pg-intro,html[lang="en"] body.paper .pg-note{font-family:var(--read)}
+.pg-ctl{display:flex;flex-direction:column;gap:8px;align-items:center}
+.pg-only{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:1rem}
+.pg-only input{width:min(60vw,260px);accent-color:#222}
+.pg-view{width:100%;max-width:640px}
+.pg-groups{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:flex-start}
+.pg-group{display:flex;flex-direction:column;gap:6px;padding:6px;border:2px dashed #222;border-radius:var(--hp);min-width:92px}
+.pg-groups:not(:has(.pg-age)) .pg-group{border:0;flex-direction:row;flex-wrap:wrap;justify-content:center}
+.pg-age{font-weight:400;font-size:1.05rem;color:#666}
+.pg-kid{display:flex;flex-direction:column;gap:2px;align-items:flex-start;padding:4px 6px;border:1.5px solid #222;border-radius:10px;min-width:84px}
+.pg-face{font-size:1.1rem;line-height:1}
+.pg-bar{display:block;height:11px;border-radius:6px;position:relative;margin:1px 0}
+.pg-bar.foot{background:#F29A4A}.pg-bar.read{background:#3E7FD0}
+.pg-bar em{position:absolute;left:100%;margin-inline-start:4px;font-size:.62rem;font-style:normal;color:#555;line-height:11px;white-space:nowrap}
+html[dir="rtl"] .pg-bar em{left:auto;right:100%}
+.pg-note{margin:0;min-height:2.6em;font-size:1.1rem;max-width:34em}
+.pg-svg{width:100%;height:auto}.pg-svg .pg-t{font:14px 'Patrick Hand',var(--hand);fill:#444}.pg-svg .pg-n{font:700 8px system-ui;fill:#fff;pointer-events:none}
+.pg-qa{display:flex;flex-direction:column;gap:8px;align-items:center;max-width:40em}
+.pg-leg{margin:0 0 6px;font-size:.95rem;color:#555}.pg-sw{display:inline-block;width:22px;height:10px;border-radius:5px;vertical-align:middle}.pg-sw.foot{background:#F29A4A}.pg-sw.read{background:#3E7FD0}

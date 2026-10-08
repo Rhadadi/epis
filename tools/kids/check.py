@@ -200,6 +200,11 @@ def game_problems(gid):
                 errs.append(f"{lv}: no questions for this level")
     elif g.get("engine") == "mystery":
         errs += mystery_problems(g)
+    elif g.get("engine") == "playground":
+        if len(g.get("kids", [])) < 6:
+            errs.append("playground: needs at least six kids")
+        if not any(c.get("ok") for c in g.get("choices", [])):
+            errs.append("playground: one choice must be the good answer")
     else:
         errs.append(f"unknown engine {g.get('engine')!r}")
     return errs
