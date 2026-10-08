@@ -44,12 +44,26 @@
    "dur": 8.0,
    "voice": {
     "en": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.18,
+       "who": "kids",
+       "t": "Eek! Who's that?"
+      }
+     ],
+     "dur": 2.54
     },
     "fa": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.58,
+       "who": "kids",
+       "t": "وای! کیه؟"
+      }
+     ],
+     "dur": 2.93
     }
    }
   },
@@ -60,23 +74,35 @@
      "lines": [
       {
        "b": 0.5,
-       "e": 5.46,
+       "e": 4.82,
+       "who": "wolf",
+       "t": "Mmm, yummy honey! Ahem... ahem."
+      },
+      {
+       "b": 5.17,
+       "e": 10.13,
        "who": "narrator",
        "t": "The wolf ate a big spoon of honey, to make his voice soft and sweet."
       }
      ],
-     "dur": 5.81
+     "dur": 10.49
     },
     "fa": {
      "lines": [
       {
        "b": 0.5,
-       "e": 6.18,
+       "e": 5.7,
+       "who": "wolf",
+       "t": "به‌به، چه عسلِ خوشمزه‌ای! اِهِم... اِهِم."
+      },
+      {
+       "b": 6.05,
+       "e": 11.73,
        "who": "narrator",
        "t": "گرگ یک قاشقِ بزرگ عسل خورد تا صدایش نرم و شیرین شود."
       }
      ],
-     "dur": 6.53
+     "dur": 12.1
     }
    }
   },
@@ -84,12 +110,26 @@
    "dur": 8.0,
    "voice": {
     "en": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 1.94,
+       "who": "kids",
+       "t": "Ooh! What's that?"
+      }
+     ],
+     "dur": 2.3
     },
     "fa": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.26,
+       "who": "kids",
+       "t": "اوه! این چیه؟"
+      }
+     ],
+     "dur": 2.62
     }
    }
   },
@@ -100,23 +140,35 @@
      "lines": [
       {
        "b": 0.5,
-       "e": 4.9,
+       "e": 2.66,
+       "who": "wolf",
+       "t": "Ah... ah... achoo!"
+      },
+      {
+       "b": 3.01,
+       "e": 7.41,
        "who": "narrator",
        "t": "Then the wolf ran to the baker, and rubbed his feet in white flour."
       }
      ],
-     "dur": 5.26
+     "dur": 7.78
     },
     "fa": {
      "lines": [
       {
        "b": 0.5,
-       "e": 6.1,
+       "e": 2.74,
+       "who": "wolf",
+       "t": "آ... آ... آچّه!"
+      },
+      {
+       "b": 3.09,
+       "e": 8.69,
        "who": "narrator",
        "t": "بعد گرگ دوید پیشِ نانوا و پاهایش را توی آردِ سفید مالید."
       }
      ],
-     "dur": 6.46
+     "dur": 9.05
     }
    }
   },
@@ -124,12 +176,26 @@
    "dur": 8.0,
    "voice": {
     "en": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.02,
+       "who": "kids",
+       "t": "Look! A foot!"
+      }
+     ],
+     "dur": 2.38
     },
     "fa": {
-     "lines": [],
-     "dur": 0.86
+     "lines": [
+      {
+       "b": 0.5,
+       "e": 2.5,
+       "who": "kids",
+       "t": "نگاه کن! یک پا!"
+      }
+     ],
+     "dur": 2.86
     }
    }
   },
@@ -170,9 +236,21 @@
        "e": 5.78,
        "who": "narrator",
        "t": "The wolf was so cross that he ran far into the woods, and he never came back."
+      },
+      {
+       "b": 6.13,
+       "e": 8.13,
+       "who": "wolf",
+       "t": "Hmph! Silly goats!"
+      },
+      {
+       "b": 8.48,
+       "e": 9.76,
+       "who": "kids",
+       "t": "Hee hee hee!"
       }
      ],
-     "dur": 6.14
+     "dur": 10.13
     },
     "fa": {
      "lines": [
@@ -181,9 +259,21 @@
        "e": 7.62,
        "who": "narrator",
        "t": "گرگ آن‌قدر عصبانی شد که دوید و رفت توی جنگل، و دیگر هیچ‌وقت برنگشت."
+      },
+      {
+       "b": 7.97,
+       "e": 10.37,
+       "who": "wolf",
+       "t": "هه! بزغاله‌های لوس!"
+      },
+      {
+       "b": 10.72,
+       "e": 12.0,
+       "who": "kids",
+       "t": "هی هی هی!"
       }
      ],
-     "dur": 7.97
+     "dur": 12.36
     }
    }
   },

@@ -89,7 +89,9 @@
     placeCap();
     if (narrow && narrow.addEventListener) narrow.addEventListener("change", placeCap);
     var voice = new Audio(); voice.preload = "auto";
-    var line = new Audio(); line.preload = "auto";
+    // one audio element for every voice (the clips' lines and the questions and answers in between): phones only
+    // let a page play sound on an element that a tap has started, and the Play tap starts this one
+    var line = voice;
 
     // the bar's sound switch: off = no voices or film sound (the captions stay)
     var tsound = document.getElementById("tsound");
@@ -497,13 +499,7 @@
     layer.appendChild(title);
     play.onclick = function () {
       actx();
-      // unlock the media elements on this tap, so the later, timed starts are allowed on phones
-      // (the film and its voices start right below, on this same tap; the lines element is woken here, silently)
-      try {
-        line.src = D.lines[Object.keys(D.lines)[0]].src; line.muted = true;
-        var q = line.play();
-        if (q && q.then) q.then(function () { line.pause(); line.muted = !sound; }, function () { line.muted = !sound; });
-      } catch (e) { line.muted = !sound; }
+      // this tap starts the film and its voices (right below), which lets phones play them, and every later line, too
       title.remove();
       go(steps[0].id);
     };

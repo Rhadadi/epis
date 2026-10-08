@@ -77,12 +77,23 @@
    "id": "c2",
    "fx": "knock",
    "motion": "The closed blue wooden door shakes a little three times, as if someone outside is knocking; the three little kids jump, their ears go up and they huddle together, staring at the door. The door stays closed the whole time. Static camera.",
-   "lines": []
+   "lines": [
+    {
+     "who": "kids",
+     "en": "Eek! Who's that?",
+     "fa": "وای! کیه؟"
+    }
+   ]
   },
   {
    "id": "c3",
    "motion": "The grey cartoon wolf gulps a big wooden spoonful of golden honey, smacks his lips happily and clears his throat, looking very pleased with himself. Static camera, comic.",
    "lines": [
+    {
+     "who": "wolf",
+     "en": "Mmm, yummy honey! Ahem... ahem.",
+     "fa": "به‌به، چه عسلِ خوشمزه‌ای! اِهِم... اِهِم."
+    },
     {
      "who": "narrator",
      "en": "The wolf ate a big spoon of honey, to make his voice soft and sweet.",
@@ -96,12 +107,23 @@
     "hold": false
    },
    "motion": "A big black furry paw slowly slides in under the closed blue door and wiggles its toes; the three little kids lean in to look, then point at it. Static camera.",
-   "lines": []
+   "lines": [
+    {
+     "who": "kids",
+     "en": "Ooh! What's that?",
+     "fa": "اوه! این چیه؟"
+    }
+   ]
   },
   {
    "id": "c5",
    "motion": "The grey cartoon wolf dips both front paws into the big sack of white flour; a soft white cloud puffs up and he sneezes comically, then admires his white paws. Static camera.",
    "lines": [
+    {
+     "who": "wolf",
+     "en": "Ah... ah... achoo!",
+     "fa": "آ... آ... آچّه!"
+    },
     {
      "who": "narrator",
      "en": "Then the wolf ran to the baker, and rubbed his feet in white flour.",
@@ -115,7 +137,13 @@
     "hold": false
    },
    "motion": "The blue door stays firmly shut and does not move or open at all. Only at the very bottom, a big paw covered in white flour slowly slides in through the narrow gap under the closed door, leaving a little dusting of flour on the floor; the three little goat kids lean in and look at it, surprised. Static camera.",
-   "lines": []
+   "lines": [
+    {
+     "who": "kids",
+     "en": "Look! A foot!",
+     "fa": "نگاه کن! یک پا!"
+    }
+   ]
   },
   {
    "id": "c7",
@@ -139,6 +167,16 @@
      "who": "narrator",
      "en": "The wolf was so cross that he ran far into the woods, and he never came back.",
      "fa": "گرگ آن‌قدر عصبانی شد که دوید و رفت توی جنگل، و دیگر هیچ‌وقت برنگشت."
+    },
+    {
+     "who": "wolf",
+     "en": "Hmph! Silly goats!",
+     "fa": "هه! بزغاله‌های لوس!"
+    },
+    {
+     "who": "kids",
+     "en": "Hee hee hee!",
+     "fa": "هی هی هی!"
     }
    ]
   },
